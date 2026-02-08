@@ -1,0 +1,25 @@
+/* css styles */
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Print-friendly adjustments */
+@media print {
+  .navbar, .nav-footer, .callout {
+    break-inside: avoid;
+  }
+  
+  .card {
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+}
+
+/* Subtitle styling */
+.subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 400;
+}

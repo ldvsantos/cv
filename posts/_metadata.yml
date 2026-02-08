@@ -1,0 +1,25 @@
+author:
+  - id: dv
+    number: 1
+    name:
+      given: Luiz Diego
+      family: Vidal Santos
+      literal: Luiz Diego Vidal Santos
+    orcid: 0000-0001-8659-8557
+    email: ldvsantos@uefs.br
+
+execute:
+  enabled: false
+
+format:
+  html:
+    df-print: paged
+    toc: true
+    lang: en-GB
+    code-overflow: wrap
+    mermaid:
+      theme: neutral
+citation:
+  type: article
+reference-location: margin
+citation-location: margin

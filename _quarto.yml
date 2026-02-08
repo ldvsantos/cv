@@ -1,0 +1,61 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "!scripts/"
+resources:
+  - CNAME
+
+website:
+  title: "Luiz Diego Vidal Santos"
+  description: "Engenheiro Agrônomo, Doutor em Propriedade Intelectual e Inovação, Professor Visitante (UEFS). Líder do grupo PLANeT-Inova."
+  favicon: img/portrait_2x3midres.jpeg
+  navbar:
+    background: dark
+    left:
+      - href: index.qmd
+        text: "{{< fa house >}} Início"
+      - href: papers/index.qmd
+        text: "{{< fa file-lines >}} Publicações"
+      - href: teaching/index.qmd
+        text: "{{< fa chalkboard-user >}} Ensino"
+      - href: talks/index.qmd
+        text: "{{< fa microphone >}} Palestras"
+      - href: media/index.qmd
+        text: "{{< fa newspaper >}} Mídia"
+      - href: posts/index.qmd
+        text: "{{< fa pen-nib >}} Blog"
+    right:
+      - icon: envelope-fill
+        url: mailto:ldvsantos@uefs.br
+        aria-label: Email
+      - text: "{{< ai orcid >}}"
+        url: https://orcid.org/0000-0001-8659-8557
+        aria-label: ORCID
+  page-footer:
+    left: "© Luiz Diego Vidal Santos, 2025–2026. [Disclaimer](disclaimer)"
+    right: "Feito com [Quarto](https://quarto.org)"
+  twitter-card: true
+  open-graph: true
+  google-analytics: "395640625"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - custom.scss
+    css: styles.css
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    toc_smooth_scroll: true
+    toc_highlight: true
+    fig-align: center
+    lang: pt-BR
+    include-in-header:
+      text: |
+        <script type='application/ld+json'>{"@context":"http://www.schema.org","@type":"person","name":"Luiz Diego Vidal Santos","jobTitle":"Professor Visitante e Pesquisador","gender":"male","description":"Engenheiro Agrônomo, Doutor em Propriedade Intelectual e Inovação. Professor Visitante no PPG em Planejamento Territorial da UEFS. Líder do grupo PLANeT-Inova.","address":{"@type":"PostalAddress","addressLocality":"Aracaju","addressRegion":"SE","addressCountry":"Brasil"},"worksFor":[{"@type":"Organization","name":"UEFS"}]}</script>
+
+
+
+
