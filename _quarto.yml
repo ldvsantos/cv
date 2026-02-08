@@ -4,9 +4,13 @@ project:
     - "*.qmd"
     - "!scripts/"
     - "!cv-pdf.qmd"
+    - "!cv-pdf-en.qmd"
+    - "!cv-pdf-es.qmd"
 resources:
   - CNAME
   - cv-luiz-diego.pdf
+  - cv-luiz-diego-en.pdf
+  - cv-luiz-diego-es.pdf
 
 website:
   title: "Luiz Diego Vidal Santos"

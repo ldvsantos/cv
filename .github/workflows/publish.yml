@@ -35,13 +35,18 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
-      - name: Generate CV PDF
-        run: quarto render cv-pdf.qmd --to pdf --output cv-luiz-diego.pdf
+      - name: Generate CV PDFs
+        run: |
+          quarto render cv-pdf.qmd --to pdf --output cv-luiz-diego.pdf
+          quarto render cv-pdf-en.qmd --to pdf --output cv-luiz-diego-en.pdf
+          quarto render cv-pdf-es.qmd --to pdf --output cv-luiz-diego-es.pdf
 
-      - name: Move PDF to site output
+      - name: Move PDFs to site output
         run: |
           mkdir -p _site
           cp cv-luiz-diego.pdf _site/cv-luiz-diego.pdf
+          cp cv-luiz-diego-en.pdf _site/cv-luiz-diego-en.pdf
+          cp cv-luiz-diego-es.pdf _site/cv-luiz-diego-es.pdf
 
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2

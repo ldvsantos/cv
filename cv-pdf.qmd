@@ -1,37 +1,52 @@
 ---
-title: "Luiz Diego Vidal Santos"
-subtitle: "Currículo Acadêmico"
+title: ""
 format:
   pdf:
     documentclass: article
     papersize: a4
     geometry:
-      - top=2cm
-      - bottom=2cm
-      - left=2.5cm
-      - right=2.5cm
-    fontsize: 11pt
+      - top=1.8cm
+      - bottom=1.8cm
+      - left=2.2cm
+      - right=2.2cm
+    fontsize: 10pt
     colorlinks: true
     linkcolor: NavyBlue
     urlcolor: NavyBlue
     toc: false
     number-sections: false
     keep-tex: false
+    include-in-header:
+      text: |
+        \usepackage{graphicx}
+        \usepackage{wrapfig}
+        \usepackage{enumitem}
+        \setlist{nosep, leftmargin=*}
 ---
 
 \begin{center}
+\begin{minipage}{0.22\textwidth}
+\includegraphics[width=\linewidth]{img/portrait_2x3midres.jpeg}
+\end{minipage}\hfill
+\begin{minipage}{0.73\textwidth}
 {\Large\textbf{Luiz Diego Vidal Santos}} \\[4pt]
-Engenheiro Agrônomo $\cdot$ Doutor em Propriedade Intelectual e Inovação $\cdot$ Professor Visitante (UEFS) \\[4pt]
+Engenheiro Agrônomo $\cdot$ Doutor em Propriedade Intelectual e Inovação \\
+Professor Visitante — UEFS \\[4pt]
 \href{mailto:ldvsantos@uefs.br}{ldvsantos@uefs.br} $\cdot$
 \href{https://orcid.org/0000-0001-8659-8557}{ORCID: 0000-0001-8659-8557} $\cdot$
 \href{http://lattes.cnpq.br/7491112603328096}{Lattes: 7491112603328096}
+\end{minipage}
 \end{center}
 
-\vspace{0.5cm}
+\vspace{0.3cm}
+\hrule
+\vspace{0.3cm}
 
 ## Sobre mim
 
-Engenheiro Agrônomo (UFS) e Doutor em Propriedade Intelectual e Inovação (UFS, 2023), com ênfase em comercialização agroflorestal sustentável. Professor Visitante no Programa de Pós-Graduação em Planejamento Territorial da Universidade Estadual de Feira de Santana (UEFS) e pesquisador na Incubadora de Iniciativas da Economia Popular e Solidária (UEFS). Líder do grupo PLANeT-Inova (Planejamento Territorial, Nature-Based Solutions e Inovação Sustentável).
+Engenheiro Agrônomo (UFS) e Doutor em Propriedade Intelectual e Inovação (UFS, 2023), com ênfase em comercialização agroflorestal sustentável. Professor Visitante no Programa de Pós-Graduação em Planejamento Territorial da Universidade Estadual de Feira de Santana (UEFS) e pesquisador na Incubadora de Iniciativas da Economia Popular e Solidária (UEFS).
+
+Líder do grupo **PLANeT-Inova** (Planejamento Territorial, Nature-Based Solutions e Inovação Sustentável). Integra os Grupos de Pesquisa em Gerenciamento Hidroambiental do Baixo São Francisco e em Manejo de Solos e Sustentabilidade, ambos vinculados à UFS. Cofundador da Liga Acadêmica do Agro Sustentável (L-AGROS) e da Unidade de Difusão de Tecnologia e Inovação em Conservação do Solo e da Água (UDTI).
 
 ## Formação Acadêmica
 
@@ -47,9 +62,28 @@ Engenheiro Agrônomo (UFS) e Doutor em Propriedade Intelectual e Inovação (UFS
 ## Experiência Profissional
 
 - **Universidade Estadual de Feira de Santana (UEFS)** — Professor Visitante (2024 – Atual). PPG em Planejamento Territorial, Dedicação Exclusiva.
-- **Universidade Federal de Sergipe (UFS)** — Pós-Doutorando / Pesquisador (2019 – Atual). Centro de Ciências Agrárias Aplicadas.
-- **Conselho Regional de Educação Física (CREF 13)** — Supervisor de Fiscalização (2021–2024).
-- **Instituto Federal de Sergipe (IFS)** — Professor (2021–2023).
+- **Universidade Federal de Sergipe (UFS)** — Pós-Doutorando / Pesquisador (2019 – Atual). Centro de Ciências Agrárias Aplicadas — Pesquisa, Extensão e Desenvolvimento.
+- **Conselho Regional de Educação Física (CREF 13)** — Supervisor de Fiscalização (2021–2024). Servidor público, regime integral.
+- **Instituto Federal de Sergipe (IFS) — Campus São Cristóvão** — Professor (2021–2023).
+
+## Projetos em Andamento
+
+### Pesquisa
+
+- **Salvaguarda de Sistemas Agrícolas Tradicionais** (2025 – Atual) — Desenvolvimento e aplicação de questionários de mapeamento, criação de banco de dados georreferenciado e escala de avaliação (Likert) em cinco construtos para proteção de saberes tradicionais no Semiárido Nordestino. Equipe: L.D.V. Santos (Resp.), C.O.V. Santana, P.R. Gagá, S.K.A. Sousa, R.A.S. Machado, T.C. Azevedo.
+- **Unidade de Referência Técnica em Geotêxteis para Controle de Erosão** (2025 – Atual) — Unidade técnica de referência para aplicação de geotêxteis no controle de erosão do solo. Equipe: L.D.V. Santos (Resp.), R.H. Marino, F.S.R. Holanda, A.S.N. Souza, R.A.S. Machado, T.C. Azevedo, K.R. Andrade, V.P. Neto, E.S. Santos.
+
+### Desenvolvimento Tecnológico
+
+- **CLEANBONER: Sistema Inteligente de Monitoramento** (2025 – Atual) — Sistema inteligente de monitoramento ambiental. Equipe: L.D.V. Santos (Resp.), C.O.V. Santana, S.K.A. Sousa.
+- **Biospeckle Laser — Análise de Frequências** (2017–2020, Concluído) — Aplicação de biospeckle laser para análise de frequências e correlação com umidade do solo. Desenvolvimento de algoritmos de triagem e análise por Transformada de Fourier.
+- **Inoculantes Micorrízicos em Tomate Cereja** (Concluído) — Efeito de fungos micorrízicos no desenvolvimento e produção de tomate cereja.
+
+### Extensão
+
+- **Empreenda AgroCast** (2020 – Atual) — Podcast educacional para promoção do empreendedorismo agrícola, criado durante a pandemia de COVID-19.
+- **Liga Acadêmica do Agro Sustentável (L-AGROS)** (2020 – Atual) — Extensão universitária na UFS promovendo agricultura sustentável e inovação.
+- **Salvaguarda de Sistemas Agrícolas — Extensão** (2024 – Atual) — Proteção de sistemas agrícolas tradicionais no Semiárido Nordestino.
 
 ## Áreas de Pesquisa
 
@@ -58,13 +92,19 @@ Engenheiro Agrônomo (UFS) e Doutor em Propriedade Intelectual e Inovação (UFS
 - Propriedade intelectual, prospecção tecnológica e patentometria
 - Inovação sustentável, empreendedorismo e transferência de tecnologia
 
-## Projetos em Andamento
+## Ensino e Orientação
 
-- **Salvaguarda de Sistemas Agrícolas Tradicionais** (2025 – Atual) — Proteção de saberes tradicionais no Semiárido Nordestino.
-- **Unidade de Referência Técnica em Geotêxteis para Controle de Erosão** (2025 – Atual) — Aplicação de geotêxteis no controle de erosão.
-- **CLEANBONER: Sistema Inteligente de Monitoramento** (2025 – Atual) — Monitoramento ambiental inteligente.
-- **Empreenda AgroCast** (2020 – Atual) — Podcast educacional sobre empreendedorismo agrícola.
-- **Liga Acadêmica do Agro Sustentável (L-AGROS)** (2020 – Atual) — Extensão universitária em agricultura sustentável.
+Professor Visitante na UEFS no PPG em Planejamento Territorial, orientando estudantes de graduação, mestrado e doutorado. Anteriormente atuou como professor no IFS — Campus São Cristóvão (2021–2023) e professor visitante na Escola Estadual Agrotécnica de Jeremoabo (2011–2012).
+
+Áreas de orientação: agricultura sustentável e nature-based solutions; conservação de solos e biodiversidade; propriedade intelectual e inovação tecnológica; empreendedorismo no agronegócio; planejamento territorial.
+
+## Grupos de Pesquisa
+
+| Grupo | Vínculo |
+|-------|---------|
+| PLANeT-Inova — Planejamento Territorial, NBS e Inovação Sustentável | Líder (UEFS) |
+| Gerenciamento Hidroambiental do Baixo São Francisco | Pesquisador (UFS) |
+| Manejo de Solos e Sustentabilidade | Pesquisador (UFS) |
 
 ## Prêmios e Distinções
 
@@ -78,6 +118,13 @@ Engenheiro Agrônomo (UFS) e Doutor em Propriedade Intelectual e Inovação (UFS
 
 ## Publicações
 
-Mais de 60 artigos publicados em periódicos de alto impacto, abrangendo conservação do solo, bioengenharia, propriedade intelectual, inovação sustentável e branding ambiental.
+Mais de 98 publicações acadêmicas, incluindo 69 artigos em periódicos nacionais e internacionais, 3 capítulos de livros e 26 trabalhos em eventos. Áreas: conservação do solo, bioengenharia, propriedade intelectual, inovação sustentável e branding ambiental.
 
-Lista completa disponível em: [https://orcid.org/0000-0001-8659-8557](https://orcid.org/0000-0001-8659-8557)
+Lista completa: [https://orcid.org/0000-0001-8659-8557](https://orcid.org/0000-0001-8659-8557)
+
+## Contato
+
+- **Email:** [ldvsantos@uefs.br](mailto:ldvsantos@uefs.br)
+- **Instituição:** UEFS — PPG em Planejamento Territorial
+- **ORCID:** [0000-0001-8659-8557](https://orcid.org/0000-0001-8659-8557)
+- **Lattes:** [7491112603328096](http://lattes.cnpq.br/7491112603328096)
