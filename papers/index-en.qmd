@@ -1,0 +1,30 @@
+---
+title: "Academic Publications"
+bibliography: bibliography.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+nocite: |
+  @*
+lang: en
+---
+
+::: {.text-end .mb-3}
+[Português](index.qmd) | **English** | [Español](index-es.qmd)
+:::
+
+Academic publications by **Luiz Diego Vidal Santos**. For complete and up-to-date information, visit:
+
+- {{< ai orcid >}} [ORCID — 0000-0001-8659-8557](https://orcid.org/0000-0001-8659-8557)
+- {{< fa graduation-cap >}} [Lattes Platform](http://lattes.cnpq.br/7491112603328096)
+
+::: {.callout-tip}
+## Summary
+- **69** journal articles
+- **3** book chapters
+- **26** conference papers
+- **98** total publications
+
+Data automatically extracted from the Lattes Curriculum (XML).
+:::
+
+::: {#refs}
+:::

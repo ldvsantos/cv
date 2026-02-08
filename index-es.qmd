@@ -3,7 +3,7 @@ title: "Luiz Diego Vidal Santos"
 subtitle: "Ingeniero Agrónomo · Doctor en Propiedad Intelectual e Innovación · Profesor Visitante (UEFS)"
 about:
     template: solana
-    image-width: 14em
+    image-width: 10em
     image-shape: rounded
     links:
         - icon: envelope-fill
@@ -24,6 +24,10 @@ toc: true
 toc-title: "Navegación"
 lang: es
 ---
+
+<script type='application/ld+json'>
+{"@context":"http://www.schema.org","@type":"person","name":"Luiz Diego Vidal Santos","jobTitle":"Profesor Visitante e Investigador","gender":"male","description":"Ingeniero Agrónomo (UFS), Doctor en Propiedad Intelectual e Innovación (UFS, 2023). Profesor Visitante en el Posgrado en Planificación Territorial de la UEFS. Líder del grupo PLANeT-Inova.","address":{"@type":"PostalAddress","addressLocality":"Aracaju","addressRegion":"SE","addressCountry":"Brasil"},"worksFor":[{"@type":"Organization","name":"UEFS"}]}
+</script>
 
 ::: {.text-end .mb-3}
 [Português](index.qmd) | [English](index-en.qmd) | **Español** | [{{< fa file-pdf >}} Descargar CV](cv-luiz-diego.pdf){.btn .btn-outline-primary .btn-sm}
@@ -201,7 +205,7 @@ Actúo en la [UEFS](https://www.uefs.br/) en el **Posgrado en Planificación Ter
 - Propiedad intelectual e innovación tecnológica
 - Emprendimiento en el agronegocio
 
-Más información en la sección [Enseñanza](teaching).
+Más información en la sección [Enseñanza](teaching/index-es.qmd).
 
 ---
 
@@ -209,7 +213,7 @@ Más información en la sección [Enseñanza](teaching).
 
 Tengo **más de 60 artículos** publicados en revistas nacionales e internacionales, abarcando áreas de conservación del suelo, bioingeniería, propiedad intelectual, innovación sostenible y branding ambiental.
 
-Consulte la lista completa en la sección [Publicaciones](papers) o acceda a mi perfil en [ORCID](https://orcid.org/0000-0001-8659-8557).
+Consulte la lista completa en la sección [Publicaciones](papers/index-es.qmd) o acceda a mi perfil en [ORCID](https://orcid.org/0000-0001-8659-8557).
 
 ---
 
