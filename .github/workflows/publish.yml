@@ -23,6 +23,8 @@ jobs:
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -32,6 +34,14 @@ jobs:
 
       - name: Install Python dependencies
         run: pip install -r requirements.txt
+
+      - name: Generate CV PDF
+        run: quarto render cv-pdf.qmd --to pdf --output cv-luiz-diego.pdf
+
+      - name: Move PDF to site output
+        run: |
+          mkdir -p _site
+          cp cv-luiz-diego.pdf _site/cv-luiz-diego.pdf
 
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2

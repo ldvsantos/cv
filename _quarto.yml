@@ -3,8 +3,10 @@ project:
   render:
     - "*.qmd"
     - "!scripts/"
+    - "!cv-pdf.qmd"
 resources:
   - CNAME
+  - cv-luiz-diego.pdf
 
 website:
   title: "Luiz Diego Vidal Santos"
@@ -27,6 +29,13 @@ website:
       - href: posts/index.qmd
         text: "{{< fa pen-nib >}} Blog"
     right:
+      - text: "EN"
+        href: index-en.qmd
+      - text: "ES"
+        href: index-es.qmd
+      - icon: file-earmark-pdf
+        url: cv-luiz-diego.pdf
+        aria-label: Download CV
       - icon: envelope-fill
         url: mailto:ldvsantos@uefs.br
         aria-label: Email
