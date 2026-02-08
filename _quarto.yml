@@ -6,11 +6,13 @@ project:
     - "!cv-pdf.qmd"
     - "!cv-pdf-en.qmd"
     - "!cv-pdf-es.qmd"
+    - "!cv-resume-en.qmd"
 resources:
   - CNAME
   - cv-luiz-diego.pdf
   - cv-luiz-diego-en.pdf
   - cv-luiz-diego-es.pdf
+  - cv-resume-en.pdf
 
 website:
   title: "Luiz Diego Vidal Santos"
@@ -68,6 +70,7 @@ format:
     lang: pt-BR
     include-in-header:
       text: |
+        <a class="skip-link" href="#quarto-content">Pular para o conteúdo</a>
         <script type='application/ld+json'>{"@context":"http://www.schema.org","@type":"person","name":"Luiz Diego Vidal Santos","jobTitle":"Professor Visitante e Pesquisador","gender":"male","description":"Engenheiro Agrônomo, Doutor em Propriedade Intelectual e Inovação. Professor Visitante no PPG em Planejamento Territorial da UEFS. Líder do grupo PLANeT-Inova.","address":{"@type":"PostalAddress","addressLocality":"Aracaju","addressRegion":"SE","addressCountry":"Brasil"},"worksFor":[{"@type":"Organization","name":"UEFS"}]}</script>
 
 

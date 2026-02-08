@@ -1,6 +1,7 @@
 ---
 title: "Luiz Diego Vidal Santos"
 subtitle: "Agricultural Engineer · PhD in Intellectual Property and Innovation"
+description: "Specialist in Territorial Planning, Sustainable Innovation, and Nature-Based Solutions. Visiting Professor (UEFS), leader of PLANeT-Inova group, with 98+ academic publications."
 about:
     template: solana
     image-width: 10em
@@ -30,7 +31,16 @@ lang: en
 </script>
 
 ::: {.text-end .mb-3}
-[Português](index.qmd) | **English** | [Español](index-es.qmd) | [{{< fa file-pdf >}} Download CV](cv-luiz-diego-en.pdf){.btn .btn-outline-primary .btn-sm}
+[Português](index.qmd) | **English** | [Español](index-es.qmd) | [{{< fa file-pdf >}} Download CV](cv-luiz-diego-en.pdf){.btn .btn-outline-primary .btn-sm} | [{{< fa file-pdf >}} Short Résumé](cv-resume-en.pdf){.btn .btn-outline-secondary .btn-sm}
+:::
+
+::: {.hero-value-statement}
+> **I transform territories with nature-based solutions, intellectual property and sustainable innovation — bridging scientific research and real-world impact in Brazil's Semi-Arid and beyond.**
+:::
+
+::: {.text-center .mb-4}
+[{{< fa envelope >}} Hire Me](mailto:ldvsantos@uefs.br?subject=Professional%20Opportunity%20-%20Luiz%20Diego%20Vidal%20Santos){.btn .btn-primary .btn-lg .me-2}
+[{{< fa brands whatsapp >}} WhatsApp](https://wa.me/5579999063350?text=Hello%20Prof.%20Luiz%20Diego%2C%20I'd%20like%20to%20discuss%20an%20opportunity.){.btn .btn-success .btn-lg}
 :::
 
 ## {{< fa user >}} About me
@@ -182,6 +192,62 @@ Extension project aimed at protecting traditional agricultural systems in the No
 
 ---
 
+## {{< fa star >}} Featured Projects
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card .featured-project}
+![Safeguarding Traditional Agricultural Systems](img/projeto-salvaguarda.jpg){.project-img fig-alt="Field research on traditional agricultural systems in Brazil's Semi-Arid"}
+
+#### Safeguarding Traditional Agricultural Systems
+
+Protecting traditional knowledge of Semi-Arid communities. Georeferenced database with 5-construct Likert scale.
+
+**Result:** Community mapping and creation of an unprecedented safeguarding protocol in Brazil.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card .featured-project}
+![Geotextiles for Erosion Control](img/projeto-geotexteis.jpg){.project-img fig-alt="Technical reference unit for geotextile-based erosion control"}
+
+#### Geotextiles for Erosion Control
+
+Development of technical reference unit for geotextile application in soil erosion control.
+
+**Result:** Measurable soil loss reduction in critical areas of the Lower São Francisco.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card .featured-project}
+![CLEANBONER — Environmental Monitoring](img/projeto-cleanboner.jpg){.project-img fig-alt="CLEANBONER intelligent environmental monitoring system"}
+
+#### CLEANBONER: Intelligent Monitoring
+
+IoT-based intelligent environmental monitoring system with real-time data analysis.
+
+**Result:** Functional IoT prototype applied to semi-arid conditions.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card .featured-project}
+![Empreenda AgroCast](img/projeto-agrocast.jpg){.project-img fig-alt="Empreenda AgroCast podcast on agricultural entrepreneurship"}
+
+#### Empreenda AgroCast
+
+Educational podcast on agricultural entrepreneurship. Created during COVID-19 as an alternative training tool.
+
+**Result:** 50+ episodes published, reaching 5 Brazilian states.
+:::
+:::
+
+:::
+
+---
+
 ## {{< fa trophy >}} Awards and Distinctions
 
 | Year | Award |
@@ -211,7 +277,7 @@ Learn more in the [Teaching](teaching/index-en.qmd) section.
 
 ## {{< fa file-lines >}} Publications
 
-I have published **over 60 articles** in national and international journals, covering areas such as soil conservation, bioengineering, intellectual property, sustainable innovation and environmental branding.
+I have published **over 98 articles** in national and international journals, covering areas such as soil conservation, bioengineering, intellectual property, sustainable innovation and environmental branding.
 
 See the full list in the [Publications](papers/index-en.qmd) section or visit my [ORCID](https://orcid.org/0000-0001-8659-8557) profile.
 
@@ -233,4 +299,55 @@ See the full list in the [Publications](papers/index-en.qmd) section or visit my
 **Lattes:** [7491112603328096](http://lattes.cnpq.br/7491112603328096)
 :::
 
+:::
+
+---
+
+## {{< fa tools >}} Skills and Tools
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+**Research & Analysis**
+
+![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white){fig-alt="R"}
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white){fig-alt="Python"}
+![SPSS](https://img.shields.io/badge/SPSS-052FAD?style=flat-square&logo=ibm&logoColor=white){fig-alt="SPSS"}
+![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white){fig-alt="Excel"}
+:::
+
+::: {.g-col-12 .g-col-md-4}
+**GIS & Geospatial**
+
+![QGIS](https://img.shields.io/badge/QGIS-589632?style=flat-square&logo=qgis&logoColor=white){fig-alt="QGIS"}
+![ArcGIS](https://img.shields.io/badge/ArcGIS-2C7AC3?style=flat-square&logo=arcgis&logoColor=white){fig-alt="ArcGIS"}
+![Google Earth Engine](https://img.shields.io/badge/Google_Earth_Engine-4285F4?style=flat-square&logo=google-earth&logoColor=white){fig-alt="Google Earth Engine"}
+:::
+
+::: {.g-col-12 .g-col-md-4}
+**IP & Management**
+
+![PatentSight](https://img.shields.io/badge/PatentSight-1a5276?style=flat-square){fig-alt="PatentSight"}
+![Scopus](https://img.shields.io/badge/Scopus-E9711C?style=flat-square&logo=elsevier&logoColor=white){fig-alt="Scopus"}
+![Web of Science](https://img.shields.io/badge/Web_of_Science-5C6BC0?style=flat-square){fig-alt="Web of Science"}
+![Project Management](https://img.shields.io/badge/Project_Management-FF6F00?style=flat-square){fig-alt="Project Management"}
+:::
+
+:::
+
+::: {.text-center .mt-2}
+![ORCID](https://img.shields.io/badge/ORCID-0000--0001--8659--8557-A6CE39?style=flat-square&logo=orcid&logoColor=white){fig-alt="ORCID"}
+![Lattes](https://img.shields.io/badge/Lattes-CNPq-blue?style=flat-square){fig-alt="Lattes CNPq"}
+![CNPq Fellow](https://img.shields.io/badge/Fellow-CNPq-003366?style=flat-square){fig-alt="CNPq Fellow"}
+:::
+
+---
+
+## {{< fa handshake >}} Let's Talk?
+
+I’m open to **academic partnerships**, **consulting**, **supervision**, and **professional opportunities** in my areas of expertise.
+
+::: {.text-center .mt-3}
+[{{< fa envelope >}} Send Email](mailto:ldvsantos@uefs.br?subject=Contact%20via%20Website%20-%20Luiz%20Diego){.btn .btn-primary .btn-lg .me-2}
+[{{< fa brands whatsapp >}} WhatsApp](https://wa.me/5579999063350?text=Hello%20Prof.%20Luiz%20Diego%2C%20I%20saw%20your%20website%20and%20would%20like%20to%20talk.){.btn .btn-success .btn-lg}
 :::

@@ -40,6 +40,7 @@ jobs:
           quarto render cv-pdf.qmd --to pdf --output cv-luiz-diego.pdf
           quarto render cv-pdf-en.qmd --to pdf --output cv-luiz-diego-en.pdf
           quarto render cv-pdf-es.qmd --to pdf --output cv-luiz-diego-es.pdf
+          quarto render cv-resume-en.qmd --to pdf --output cv-resume-en.pdf
 
       - name: Move PDFs to site output
         run: |
@@ -47,6 +48,7 @@ jobs:
           cp cv-luiz-diego.pdf _site/cv-luiz-diego.pdf
           cp cv-luiz-diego-en.pdf _site/cv-luiz-diego-en.pdf
           cp cv-luiz-diego-es.pdf _site/cv-luiz-diego-es.pdf
+          cp cv-resume-en.pdf _site/cv-resume-en.pdf
 
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2

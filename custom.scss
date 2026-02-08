@@ -88,6 +88,95 @@ table th {
   padding: 0.35rem 0;
 }
 
+/* ===== Value Statement ===== */
+.hero-value-statement {
+  background: linear-gradient(135deg, rgba($primary, 0.06) 0%, rgba($primary, 0.02) 100%);
+  border-left: 4px solid $primary;
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1.05rem;
+}
+
+.hero-value-statement blockquote {
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: #2c3e50;
+}
+
+/* ===== CTA Buttons ===== */
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: darken($primary, 10%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba($primary, 0.35);
+}
+
+.btn-success {
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.35);
+}
+
+/* ===== Featured Projects ===== */
+.featured-project {
+  border-left: 4px solid $primary;
+  overflow: hidden;
+}
+
+.featured-project .project-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px 4px 0 0;
+  margin: -1rem -1.25rem 1rem -1.25rem;
+  width: calc(100% + 2.5rem);
+}
+
+.featured-project h4 {
+  margin-top: 0.5rem;
+}
+
+/* ===== Skills Badges ===== */
+.grid img[src*="shields.io"] {
+  margin: 2px 4px;
+  vertical-align: middle;
+}
+
+/* ===== Vamos Conversar CTA ===== */
+h2:has(+ p:first-of-type) + p + .text-center {
+  margin-bottom: 2rem;
+}
+
+/* ===== Skip to content (Acessibilidade) ===== */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: $primary;
+  color: white;
+  padding: 8px 16px;
+  z-index: 10000;
+  transition: top 0.3s;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 /* Footer */
 .nav-footer {
   font-size: 0.85rem;
@@ -101,5 +190,14 @@ table th {
   
   table {
     font-size: 0.82rem;
+  }
+
+  .btn-lg {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .featured-project .project-img {
+    height: 140px;
   }
 }

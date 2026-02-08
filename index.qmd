@@ -1,6 +1,7 @@
 ---
 title: "Luiz Diego Vidal Santos"
 subtitle: "Engenheiro Agrônomo · Doutor em Propriedade Intelectual e Inovação"
+description: "Especialista em Planejamento Territorial, Inovação Sustentável e Nature-Based Solutions. Professor Visitante (UEFS), líder do grupo PLANeT-Inova, com +98 publicações acadêmicas."
 about:
     template: solana
     image-width: 10em
@@ -29,7 +30,16 @@ toc-title: "Navegação"
 </script>
 
 ::: {.text-end .mb-3}
-**Português** | [English](index-en.qmd) | [Español](index-es.qmd) | [{{< fa file-pdf >}} Baixar CV](cv-luiz-diego.pdf){.btn .btn-outline-primary .btn-sm}
+**Português** | [English](index-en.qmd) | [Español](index-es.qmd) | [{{< fa file-pdf >}} Baixar CV](cv-luiz-diego.pdf){.btn .btn-outline-primary .btn-sm} | [{{< fa file-pdf >}} Short Résumé (EN)](cv-resume-en.pdf){.btn .btn-outline-secondary .btn-sm}
+:::
+
+::: {.hero-value-statement}
+> **Transformo territórios com soluções baseadas na natureza, propriedade intelectual e inovação sustentável — unindo pesquisa científica a impacto real no Semiárido e além.**
+:::
+
+::: {.text-center .mb-4}
+[{{< fa envelope >}} Contrate-me](mailto:ldvsantos@uefs.br?subject=Oportunidade%20Profissional%20-%20Luiz%20Diego%20Vidal%20Santos){.btn .btn-primary .btn-lg .me-2}
+[{{< fa brands whatsapp >}} WhatsApp](https://wa.me/5579999063350?text=Ol%C3%A1%20Prof.%20Luiz%20Diego%2C%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade.){.btn .btn-success .btn-lg}
 :::
 
 ## {{< fa user >}} Sobre mim
@@ -181,6 +191,62 @@ Projeto de extensão voltado para proteção de sistemas agrícolas tradicionais
 
 ---
 
+## {{< fa star >}} Projetos de Destaque
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card .featured-project}
+![Salvaguarda de Sistemas Agrícolas Tradicionais](img/projeto-salvaguarda.jpg){.project-img fig-alt="Pesquisa de campo sobre sistemas agrícolas tradicionais no Semiárido"}
+
+#### Salvaguarda de Sistemas Agrícolas Tradicionais
+
+Proteção de saberes tradicionais de povos do Semiárido Nordestino. Banco de dados georreferenciado com escala Likert em 5 construtos.
+
+**Resultado:** Mapeamento de comunidades tradicionais e criação de protocolo de salvaguarda inédito no Brasil.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card .featured-project}
+![Geotêxteis para Controle de Erosão](img/projeto-geotexteis.jpg){.project-img fig-alt="Unidade de referência técnica em geotêxteis aplicados ao controle de erosão"}
+
+#### Geotêxteis para Controle de Erosão
+
+Desenvolvimento de unidade técnica de referência para aplicação de geotêxteis no controle de erosão do solo.
+
+**Resultado:** Redução mensurável da perda de solo em áreas críticas do Baixo São Francisco.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card .featured-project}
+![CLEANBONER — Monitoramento Ambiental](img/projeto-cleanboner.jpg){.project-img fig-alt="Sistema inteligente de monitoramento ambiental CLEANBONER"}
+
+#### CLEANBONER: Monitoramento Inteligente
+
+Sistema inteligente de monitoramento ambiental com sensores e análise de dados em tempo real.
+
+**Resultado:** Protótipo funcional de IoT aplicado ao semiárido.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card .featured-project}
+![Empreenda AgroCast](img/projeto-agrocast.jpg){.project-img fig-alt="Podcast Empreenda AgroCast sobre empreendedorismo agrícola"}
+
+#### Empreenda AgroCast
+
+Podcast educacional sobre empreendedorismo agrícola. Criado durante a pandemia de COVID-19 como ferramenta de formação.
+
+**Resultado:** +50 episódios publicados, alcance em 5 estados brasileiros.
+:::
+:::
+
+:::
+
+---
+
 ## {{< fa trophy >}} Prêmios e Distinções
 
 | Ano | Prêmio |
@@ -232,4 +298,55 @@ Consulte a lista completa na seção [Publicações](papers) ou acesse meu perfi
 **Lattes:** [7491112603328096](http://lattes.cnpq.br/7491112603328096)
 :::
 
+:::
+
+---
+
+## {{< fa tools >}} Habilidades e Ferramentas
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+**Pesquisa & Análise**
+
+![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white){fig-alt="R"}
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white){fig-alt="Python"}
+![SPSS](https://img.shields.io/badge/SPSS-052FAD?style=flat-square&logo=ibm&logoColor=white){fig-alt="SPSS"}
+![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white){fig-alt="Excel"}
+:::
+
+::: {.g-col-12 .g-col-md-4}
+**Geoprocessamento & SIG**
+
+![QGIS](https://img.shields.io/badge/QGIS-589632?style=flat-square&logo=qgis&logoColor=white){fig-alt="QGIS"}
+![ArcGIS](https://img.shields.io/badge/ArcGIS-2C7AC3?style=flat-square&logo=arcgis&logoColor=white){fig-alt="ArcGIS"}
+![Google Earth Engine](https://img.shields.io/badge/Google_Earth_Engine-4285F4?style=flat-square&logo=google-earth&logoColor=white){fig-alt="Google Earth Engine"}
+:::
+
+::: {.g-col-12 .g-col-md-4}
+**Propriedade Intelectual & Gestão**
+
+![PatentSight](https://img.shields.io/badge/PatentSight-1a5276?style=flat-square){fig-alt="PatentSight"}
+![Scopus](https://img.shields.io/badge/Scopus-E9711C?style=flat-square&logo=elsevier&logoColor=white){fig-alt="Scopus"}
+![Web of Science](https://img.shields.io/badge/Web_of_Science-5C6BC0?style=flat-square){fig-alt="Web of Science"}
+![Gestão de Projetos](https://img.shields.io/badge/Gestão_de_Projetos-FF6F00?style=flat-square){fig-alt="Gestão de Projetos"}
+:::
+
+:::
+
+::: {.text-center .mt-2}
+![ORCID](https://img.shields.io/badge/ORCID-0000--0001--8659--8557-A6CE39?style=flat-square&logo=orcid&logoColor=white){fig-alt="ORCID"}
+![Lattes](https://img.shields.io/badge/Lattes-CNPq-blue?style=flat-square){fig-alt="Lattes CNPq"}
+![Bolsista CNPq](https://img.shields.io/badge/Bolsista-CNPq-003366?style=flat-square){fig-alt="Bolsista CNPq"}
+:::
+
+---
+
+## {{< fa handshake >}} Vamos Conversar?
+
+Estou aberto a **parcerias acadêmicas**, **consultorias**, **orientações** e **oportunidades profissionais** nas minhas áreas de atuação.
+
+::: {.text-center .mt-3}
+[{{< fa envelope >}} Enviar Email](mailto:ldvsantos@uefs.br?subject=Contato%20via%20Site%20-%20Luiz%20Diego){.btn .btn-primary .btn-lg .me-2}
+[{{< fa brands whatsapp >}} WhatsApp](https://wa.me/5579999063350?text=Ol%C3%A1%20Prof.%20Luiz%20Diego%2C%20vi%20seu%20site%20e%20gostaria%20de%20conversar.){.btn .btn-success .btn-lg}
 :::
