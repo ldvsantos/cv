@@ -4,7 +4,7 @@ subtitle: "Engenheiro Agrônomo · Doutor em Propriedade Intelectual e Inovaçã
 about:
     template: solana
     image-width: 14em
-    image-shape: round
+    image-shape: rounded
     links:
         - icon: envelope-fill
           text: Email
@@ -28,7 +28,7 @@ toc-title: "Navegação"
 {"@context":"http://www.schema.org","@type":"person","name":"Luiz Diego Vidal Santos","jobTitle":"Professor Visitante e Pesquisador","gender":"male","description":"Engenheiro Agrônomo (UFS), Doutor em Propriedade Intelectual e Inovação (UFS, 2023). Professor Visitante no PPG em Planejamento Territorial da UEFS. Líder do grupo PLANeT-Inova.","address":{"@type":"PostalAddress","addressLocality":"Aracaju","addressRegion":"SE","addressCountry":"Brasil"},"worksFor":[{"@type":"Organization","name":"UEFS"}]}
 </script>
 
-## {{< fa user >}} Sobre mim
+## Sobre mim
 
 Sou **Engenheiro Agrônomo** (UFS) e **Doutor em Propriedade Intelectual e Inovação** (UFS, 2023), com ênfase em comercialização agroflorestal sustentável. Atualmente, sou Professor Visitante no Programa de Pós-Graduação em Planejamento Territorial da [Universidade Estadual de Feira de Santana (UEFS)](https://www.uefs.br/) e pesquisador na Incubadora de Iniciativas da Economia Popular e Solidária (UEFS).
 
@@ -38,7 +38,7 @@ Cofundei a Liga Acadêmica do Agro Sustentável **(L-AGROS)** e a Unidade de Dif
 
 ---
 
-## {{< fa graduation-cap >}} Formação Acadêmica
+## Formação Acadêmica
 
 | Período | Título | Instituição |
 |---------|--------|-------------|
@@ -48,50 +48,49 @@ Cofundei a Liga Acadêmica do Agro Sustentável **(L-AGROS)** e a Unidade de Dif
 | 2019–2022 | **Especialização** — Produção e Desenvolvimento Rural | Unyleya |
 | 2013–2014 | **Especialização** — Gestão de Qualidade, Saúde e Meio Ambiente | AVM Educacional |
 | 2016–2021 | **Graduação** — Engenharia Agronômica | UFS |
-| 2006–2009 | **Graduação** — Educação Física | FFPA |
 
 : {.striped .hover}
 
 ---
 
-## {{< fa briefcase >}} Experiência Profissional
+## Experiência Profissional
 
 ::: {.callout-note appearance="minimal" icon=false}
-### {{< fa building-columns >}} Universidade Estadual de Feira de Santana (UEFS)
+### Universidade Estadual de Feira de Santana (UEFS)
 **Professor Visitante** · 2024 – Atual
 
 PPG em Planejamento Territorial · Dedicação Exclusiva
 :::
 
 ::: {.callout-note appearance="minimal" icon=false}
-### {{< fa building-columns >}} Universidade Federal de Sergipe (UFS)
+### Universidade Federal de Sergipe (UFS)
 **Pós-Doutorando / Pesquisador** · 2019 – Atual
 
 Centro de Ciências Agrárias Aplicadas — Pesquisa, Extensão e Desenvolvimento
 :::
 
 ::: {.callout-note appearance="minimal" icon=false}
-### {{< fa landmark >}} Conselho Regional de Educação Física (CREF 13)
+### Conselho Regional de Educação Física (CREF 13)
 **Supervisor de Fiscalização** · 2021–2024
 
 Servidor público — Regime integral
 :::
 
 ::: {.callout-note appearance="minimal" icon=false}
-### {{< fa school >}} Instituto Federal de Sergipe (IFS) — Campus São Cristóvão
-**Professor Voluntário** · 2021–2023
+### Instituto Federal de Sergipe (IFS) — Campus São Cristóvão
+**Professor** · 2021–2023
 :::
 
 ---
 
-## {{< fa diagram-project >}} Projetos em Andamento {#projetos}
+## Projetos em Andamento {#projetos}
 
 ::: {.panel-tabset}
 
 ### Pesquisa
 
 ::: {.card .mb-3}
-#### 🌾 Salvaguarda de Sistemas Agrícolas Tradicionais
+#### Salvaguarda de Sistemas Agrícolas Tradicionais
 **2025 – Atual**
 
 Desenvolvimento e aplicação de questionários de mapeamento, criação de banco de dados georreferenciado e desenvolvimento de escala de avaliação (*Likert*) em cinco construtos. O projeto visa proteger saberes tradicionais de povos e comunidades do Semiárido Nordestino.
@@ -100,7 +99,7 @@ Desenvolvimento e aplicação de questionários de mapeamento, criação de banc
 :::
 
 ::: {.card .mb-3}
-#### 🏗️ Unidade de Referência Técnica em Geotêxteis para Controle de Erosão
+#### Unidade de Referência Técnica em Geotêxteis para Controle de Erosão
 **2025 – Atual**
 
 Desenvolvimento de unidade técnica de referência para aplicação de geotêxteis no controle de erosão do solo, envolvendo alunos de graduação, mestrado e doutorado.
@@ -111,7 +110,7 @@ Desenvolvimento de unidade técnica de referência para aplicação de geotêxte
 ### Desenvolvimento Tecnológico
 
 ::: {.card .mb-3}
-#### 🤖 CLEANBONER: Sistema Inteligente de Monitoramento
+#### CLEANBONER: Sistema Inteligente de Monitoramento
 **2025 – Atual**
 
 Projeto de desenvolvimento tecnológico de sistema inteligente de monitoramento ambiental.
@@ -120,14 +119,14 @@ Projeto de desenvolvimento tecnológico de sistema inteligente de monitoramento 
 :::
 
 ::: {.card .mb-3}
-#### 🔬 Biospeckle Laser — Análise de Frequências
+#### Biospeckle Laser — Análise de Frequências
 **2017–2020** (Concluído)
 
 Série de projetos sobre aplicação de biospeckle laser para análise de frequências e correlação com valores de umidade do solo. Desenvolvimento de algoritmos de triagem e análise por Transformada de Fourier.
 :::
 
 ::: {.card .mb-3}
-#### 🍅 Inoculantes Micorrízicos em Tomate Cereja
+#### Inoculantes Micorrízicos em Tomate Cereja
 **Concluído**
 
 Estudo do efeito de fungos micorrízicos no desenvolvimento e produção de tomate tipo cereja comum.
@@ -136,21 +135,21 @@ Estudo do efeito de fungos micorrízicos no desenvolvimento e produção de toma
 ### Extensão
 
 ::: {.card .mb-3}
-#### 🎙️ Empreenda AgroCast
+#### Empreenda AgroCast
 **2020 – Atual**
 
 Ferramenta educacional (podcast) para promoção do empreendedorismo no setor agrícola. Criado em resposta à pandemia de COVID-19 como alternativa para formação de competências empreendedoras nas Ciências Agrárias.
 :::
 
 ::: {.card .mb-3}
-#### 🌱 Liga Acadêmica do Agro Sustentável (L-AGROS)
+#### Liga Acadêmica do Agro Sustentável (L-AGROS)
 **2020 – Atual**
 
 Extensão universitária no Centro de Ciências Agrárias Aplicadas da UFS, promovendo agricultura sustentável e inovação.
 :::
 
 ::: {.card .mb-3}
-#### 🌍 Salvaguarda de Sistemas Agrícolas — Extensão
+#### Salvaguarda de Sistemas Agrícolas — Extensão
 **2024 – Atual**
 
 Projeto de extensão voltado para proteção de sistemas agrícolas tradicionais no Semiárido Nordestino.
@@ -160,39 +159,39 @@ Projeto de extensão voltado para proteção de sistemas agrícolas tradicionais
 
 ---
 
-## {{< fa microscope >}} Áreas de Pesquisa
+## Áreas de Pesquisa
 
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-6}
-- {{< fa earth-americas >}} **Planejamento territorial** e soluções baseadas na natureza (*Nature-Based Solutions*)
-- {{< fa seedling >}} **Conservação do solo e da água** e manejo sustentável
+- **Planejamento territorial** e soluções baseadas na natureza (*Nature-Based Solutions*)
+- **Conservação do solo e da água** e manejo sustentável
 :::
 
 ::: {.g-col-12 .g-col-md-6}
-- {{< fa lightbulb >}} **Propriedade intelectual**, prospecção tecnológica e patentometria
-- {{< fa rocket >}} **Inovação sustentável**, empreendedorismo e transferência de tecnologia
+- **Propriedade intelectual**, prospecção tecnológica e patentometria
+- **Inovação sustentável**, empreendedorismo e transferência de tecnologia
 :::
 
 :::
 
 ---
 
-## {{< fa trophy >}} Prêmios e Distinções
+## Prêmios e Distinções
 
 | Ano | Prêmio |
 |-----|--------|
-| 2020 | 🥇 1º Lugar — Menção Honrosa (Apresentação Oral), Congresso Brasileiro de Engenharia Agrícola |
-| 2020 | 🥇 1º Lugar — Menção Honrosa (Pôster), Congresso Brasileiro de Engenharia Agrícola |
-| 2019 | 🏆 Best Paper, International Symposium on Technological Innovation |
-| 2018 | ⭐ Prêmio Destaque do Ano SEMAC, UFS |
-| 2017 | ⭐ Prêmio Destaque do Ano SEMAC, UFS |
+| 2020 | 1º Lugar — Menção Honrosa (Apresentação Oral), Congresso Brasileiro de Engenharia Agrícola |
+| 2020 | 1º Lugar — Menção Honrosa (Pôster), Congresso Brasileiro de Engenharia Agrícola |
+| 2019 | Best Paper, International Symposium on Technological Innovation |
+| 2018 | Prêmio Destaque do Ano SEMAC, UFS |
+| 2017 | Prêmio Destaque do Ano SEMAC, UFS |
 
 : {.striped .hover}
 
 ---
 
-## {{< fa chalkboard-user >}} Ensino e Orientação
+## Ensino e Orientação
 
 Atuo na [UEFS](https://www.uefs.br/) no **PPG em Planejamento Territorial**, orientando estudantes de graduação, mestrado e doutorado em temas como:
 
@@ -205,7 +204,7 @@ Saiba mais na seção [Ensino](teaching).
 
 ---
 
-## {{< fa file-lines >}} Publicações
+## Publicações
 
 Tenho **mais de 60 artigos** publicados em periódicos nacionais e internacionais, abrangendo áreas de conservação do solo, bioengenharia, propriedade intelectual, inovação sustentável e branding ambiental.
 
@@ -213,20 +212,20 @@ Consulte a lista completa na seção [Publicações](papers) ou acesse meu perfi
 
 ---
 
-## {{< fa address-card >}} Contato
+## Contato
 
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-6}
-**{{< fa envelope >}} Email:** [ldvsantos@uefs.br](mailto:ldvsantos@uefs.br)
+**Email:** [ldvsantos@uefs.br](mailto:ldvsantos@uefs.br)
 
-**{{< fa building-columns >}} Instituição:** [UEFS](https://www.uefs.br/) — PPG em Planejamento Territorial
+**Instituição:** [UEFS](https://www.uefs.br/) — PPG em Planejamento Territorial
 :::
 
 ::: {.g-col-12 .g-col-md-6}
-**{{< ai orcid >}} ORCID:** [0000-0001-8659-8557](https://orcid.org/0000-0001-8659-8557)
+**ORCID:** [0000-0001-8659-8557](https://orcid.org/0000-0001-8659-8557)
 
-**{{< fa graduation-cap >}} Lattes:** [7491112603328096](http://lattes.cnpq.br/7491112603328096)
+**Lattes:** [7491112603328096](http://lattes.cnpq.br/7491112603328096)
 :::
 
 :::
