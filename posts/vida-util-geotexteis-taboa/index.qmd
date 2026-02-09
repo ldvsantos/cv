@@ -4,9 +4,11 @@ author: "Luiz Diego Vidal Santos"
 date: "2025-02-04"
 categories: [geotêxteis, Typha, Weibull, bioengenharia, durabilidade]
 description: "Nosso modelo hierárquico mostra que a razão lignina/celulose permite prever a vida útil funcional de geotêxteis de taboa — eliminando a necessidade de testes de campo prolongados."
-image: "../../img/Fibra%20sisal%201.JPEG"
+image: "abstract-grafico.png"
 lang: pt-BR
 ---
+
+![Resumo gráfico — modelo hierárquico L/C → cinética → VUF](abstract-grafico.png){fig-alt="Resumo gráfico do modelo hierárquico de vida útil" width="100%"}
 
 Uma das perguntas mais frequentes quando propomos geotêxteis de fibra natural para controle de erosão é: **"Quanto tempo esse material vai durar?"** É uma pergunta legítima — se o geotêxtil se degrada antes da vegetação se estabelecer, o investimento é perdido.
 
@@ -29,9 +31,15 @@ Toda fibra vegetal é uma arquitetura de três componentes:
 Nossa hipótese é que a **razão lignina/celulose (L/C)** determina a recalcitrância química da fibra. Quanto mais lignina relativa à celulose, mais lenta a degradação.
 
 ::: {layout-ncol=2}
+![Coleta de fibras de taboa em campo](coleta-fibras.png){fig-alt="Coleta de fibras de Typha domingensis"}
+
+![Geotêxtil de taboa instalado em talude](talude-campo.jpg){fig-alt="Geotêxtil de taboa em talude experimental"}
+:::
+
+::: {layout-ncol=2}
 ![Geotêxteis de taboa expostos em talude experimental](../../img/Geotexteis%20expostos.jpg){fig-alt="Geotêxteis de taboa expostos em talude"}
 
-![Detalhe da exposição de geotêxtil em campo](../../img/geotexteis%20exposicao%202.jpg){fig-alt="Geotêxtil exposto em detalhe"}
+![Ensaio de tração (tear test) em fibra de taboa](tear-geotextil.jpg){fig-alt="Ensaio de tração em geotêxtil de taboa"}
 :::
 
 ## Tratamento alcalino: engenharia da composição
@@ -43,6 +51,8 @@ Para testar essa hipótese, tratamos as fibras de taboa com **NaOH** em três co
 - Reduz a hidrofilicidade
 - Modifica a razão L/C
 
+![Efeito dos tratamentos com NaOH nas propriedades das fibras de taboa](tratamentos-naoh.png){fig-alt="Gráfico do efeito dos tratamentos alcalinos" width="80%"}
+
 ## Modelo hierárquico: composição → degradação → confiabilidade
 
 O modelo funciona em três níveis:
@@ -52,6 +62,8 @@ Composição química (L/C) → Cinética de degradação → Vida Útil Funcion
 ```
 
 A **VUF** é definida como o tempo até que 10% das amostras falhem (percentil P10 da distribuição Weibull). É um critério conservador de engenharia: não esperamos que todas falhem, mas que a probabilidade de falha seja aceitavelmente baixa.
+
+![Curvas de confiabilidade Weibull para diferentes tratamentos](weibull-confiabilidade.png){fig-alt="Gráfico de confiabilidade Weibull" width="80%"}
 
 ## Resultados
 
@@ -70,6 +82,8 @@ O tratamento com **NaOH a 6%** é o ponto ótimo:
 - Pegada de carbono **60-70% menor** que geossintéticos petroquímicos
 
 A concentração de 9%, embora aumente a VUF, causa **fragilização** — a fibra fica rígida e perde a capacidade de acomodar deformações do solo.
+
+![Painel comparativo de MEV — microestrutura das fibras antes e após tratamento](mev-painel.png){fig-alt="Painel de microscopia eletrônica das fibras" width="80%"}
 
 ## A implicação prática: ensaio rápido no lab, previsão de campo
 

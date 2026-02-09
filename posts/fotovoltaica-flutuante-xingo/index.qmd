@@ -4,7 +4,7 @@ author: "Luiz Diego Vidal Santos"
 date: "2025-02-08"
 categories: [energia renovável, fotovoltaica flutuante, planejamento territorial, Xingó]
 description: "Reservatórios hidrelétricos podem abrigar fazendas solares flutuantes, mas onde instalar? Nosso estudo no reservatório de Xingó mostra como a geometria do cânion determina zonas seguras e perigosas para painéis fotovoltaicos."
-image: "../../img/Canal%20escoamento.JPEG"
+image: "mapa-zoneamento.png"
 lang: pt-BR
 ---
 
@@ -12,13 +12,15 @@ Imagine painéis solares flutuando sobre a superfície de um reservatório hidre
 
 Mas há um problema que poucos consideram: **onde exatamente instalar os painéis?** Nem toda superfície de água é igual. Nosso estudo recente no **reservatório de Xingó**, no Baixo São Francisco, mostra por quê.
 
-![Canal de escoamento — dinâmica hídrica que também governa reservatórios](../../img/Canal%20escoamento.JPEG){fig-alt="Canal de escoamento hídrico" width="80%"}
+![Mapa de localização do reservatório de Xingó no Baixo São Francisco](mapa-localizacao.png){fig-alt="Mapa de localização do reservatório de Xingó" width="100%"}
 
 ## O desafio: ondas em reservatórios de cânion
 
 Quando pensamos em ondas, imaginamos o mar. Mas reservatórios em vales encaixados — como Xingó, com sua geometria de cânion — também geram ondas significativas. O vento canalizado pelo vale transfere energia à superfície da água, criando um **clima de ondas** que varia imensamente de um ponto a outro do reservatório.
 
 Essas ondas podem parecer pequenas, mas representam **milhões de ciclos de carga** sobre as linhas de amarração dos painéis flutuantes. Com o tempo, isso causa **fadiga estrutural** — o mesmo fenômeno que faz um clipe de papel quebrar quando dobrado repetidamente.
+
+![Climatologia de ventos no reservatório de Xingó](climatologia.png){fig-alt="Climatologia de ventos no reservatório" width="80%"}
 
 ## Nossa abordagem: zoneamento hidrodinâmico
 
@@ -30,6 +32,8 @@ Desenvolvemos um procedimento de apoio à decisão que integra:
 4. **Restrições batimétricas** — profundidade do reservatório
 
 O resultado é um **mapa de zoneamento** que mostra onde as ondas são aceitáveis para FPV e onde não são.
+
+![Mapa de fetch efetivo — distância de atuação do vento](mapa-fetch.png){fig-alt="Mapa de fetch efetivo no reservatório de Xingó" width="100%"}
 
 ## Resultados: enseadas vs. canal principal
 
@@ -45,6 +49,10 @@ As enseadas laterais do cânion oferecem **abrigo topográfico natural** contra 
 - **Menor custo de amarração** (o CAPEX estrutural cai drasticamente)
 - **Menor risco de falha** por fadiga ao longo da vida útil
 - **Coexistência** possível com navegação turística e comercial
+
+![Mapa de ondas — altura significativa ($H_s$) simulada pelo método SMB](mapa-ondas.png){fig-alt="Mapa de altura de onda significativa no reservatório" width="100%"}
+
+![Zoneamento hidrodinâmico para fotovoltaica flutuante](mapa-zoneamento.png){fig-alt="Mapa de zoneamento para FPV no reservatório de Xingó" width="100%"}
 
 ## Por que isso importa?
 

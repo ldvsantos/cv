@@ -4,11 +4,19 @@ author: "Luiz Diego Vidal Santos"
 date: "2025-02-03"
 categories: [erosão, UAV, classificação, Plintossolo, geomorfologia]
 description: "Classificar feições erosivas no campo é mais complexo do que parece. Combinamos voo de drone com a Elementary Gully Classification (EGC) em Plintossolo de São Cristóvão-SE e encontramos feições que desafiam a classificação tradicional."
-image: "../../img/Talude%201.jpg"
+image: "foto-aerea.png"
 lang: pt-BR
 ---
 
+![Foto aérea por drone das feições erosivas em Tabuleiros Costeiros](foto-aerea.png){fig-alt="Ortomosaico mostrando feições erosivas" width="100%"}
+
 Ravina ou voçoroca? Parece uma pergunta simples, mas a verdade é que a **classificação de feições erosivas** é uma das áreas mais controversas da geomorfologia. Nosso estudo em Tabuleiros Costeiros de Sergipe mostra por quê — e propõe caminhos para resolver a confusão.
+
+::: {layout-ncol=2}
+![Detalhe de ravina ativa no Plintossolo](ravina-detalhe.jpg){fig-alt="Ravina ativa em Plintossolo"}
+
+![Perfil de solo exposto pela erosão](perfil-solo.jpg){fig-alt="Perfil de solo em feição erosiva"}
+:::
 
 ## O campo: Plintossolo em São Cristóvão
 
@@ -78,6 +86,8 @@ A interação entre o solo e a erosão é chave. No Plintossolo:
 - **Infiltração muito baixa** → gera escoamento concentrado rapidamente
 - **Argila coesiva** → taludes resistem quando secos, mas colapsam quando saturados
 - **Sazonalidade** → chuvas concentradas de abril a setembro criam pulsos erosivos
+
+![Série temporal de precipitação (2005–2025) — pulsos erosivos sazonais](precipitacao.png){fig-alt="Gráfico de série temporal de precipitação" width="80%"}
 
 Essa dinâmica cria feições que evoluem episodicamente — avançam durante a estação chuvosa e estabilizam superficialmente na seca, mascarando a severidade real do processo.
 
