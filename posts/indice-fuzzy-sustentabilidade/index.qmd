@@ -43,11 +43,7 @@ O resultado é um índice contínuo de 0 a 10, onde valores altos significam que
 
 ## O experimento: 22 anos de dados
 
-O estudo foi conduzido na **Estação Experimental da UFS** em São Cristóvão-SE, em um experimento de longa duração iniciado em 2001 — são **22 anos de dados contínuos**. Testamos:
-
-- **3 sistemas de plantio**: convencional (PC), cultivo mínimo (CM) e plantio direto (PD)
-- **4 plantas de cobertura**: crotalária, feijão-caupi, guandu e milheto
-- **Milho biuso** (híbrido SHS7990 PRO3) — para grão e silagem
+O estudo foi conduzido na **Estação Experimental da UFS** em São Cristóvão, em um experimento de longa duração iniciado em 2001 (são **22 anos de dados contínuos**). Testamos **3 sistemas de plantio** (convencional, cultivo mínimo e plantio direto), **4 plantas de cobertura** (crotálaria, feijão-caupi, guandu e milheto) e **milho biuso** (híbrido SHS7990 PRO3, para grão e silagem).
 
 ## Resultados: quem venceu?
 
@@ -61,12 +57,7 @@ O plantio convencional teve produtividades competitivas no curto prazo, mas seus
 
 ### Análise de ablação: o que mais importa?
 
-Uma contribuição inédita do estudo foi a **análise de ablação** — removemos cada componente do índice para ver o quanto ele contribui:
-
-- **Produtividade de grãos** é o principal driver (MARS = 12,2)
-- **Atributos de conservação do solo** funcionam como moduladores estruturais (MARS = 5,8)
-
-Isso significa que a produtividade puxa o índice para cima, mas sem conservação, o sistema não se sustenta no tempo.
+Uma contribuição inédita do estudo foi a **análise de ablação**, removendo cada componente do índice para ver o quanto ele contribui: **produtividade de grãos** é o principal driver (MARS = 12,2), enquanto **atributos de conservação do solo** funcionam como moduladores estruturais (MARS = 5,8). Isso significa que a produtividade puxa o índice para cima, mas sem conservação, o sistema não se sustenta no tempo.
 
 ::: {layout-ncol=2}
 ![Análise de ablação — contribuição de cada componente](ablation-study.png){fig-alt="Gráfico de análise de ablação do APSWCI"}
