@@ -2,3 +2,10 @@
 /_site/
 .env
 **/*.quarto_ipynb
+
+# Vídeos e HEIC (pesados demais para GitHub)
+*.MOV
+*.MP4
+*.mp4
+*.HEIC
+_galeria.*
