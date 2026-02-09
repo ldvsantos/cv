@@ -1,0 +1,71 @@
+---
+title: "Terroir Digital: Quando a Inteligência Artificial Audita a Sustentabilidade das Indicações Geográficas"
+author: "Luiz Diego Vidal Santos"
+date: "2025-02-07"
+categories: [machine learning, indicações geográficas, sustentabilidade, inteligência artificial]
+description: "Como o Aprendizado de Máquina pode transformar Indicações Geográficas em sistemas verificáveis de sustentabilidade — e por que a maioria dos modelos ainda não está pronta para isso."
+image: "terroir-thumbnail.jpg"
+lang: pt-BR
+---
+
+Quando você compra um vinho com Denominação de Origem, um queijo artesanal certificado ou um café de terroir, está pagando um prêmio pela **promessa** de que aquele produto é autêntico — que ele carrega a identidade do território onde foi produzido. Mas quem verifica essa promessa?
+
+Nosso estudo de revisão, analisando **148 publicações científicas** (2010–2025), investigou se o **Aprendizado de Máquina (ML)** está pronto para ser o auditor digital das Indicações Geográficas. A resposta é: **quase, mas ainda não**.
+
+## O Conceito: Terroir Digital como Gêmeo Digital
+
+Propomos o conceito de **Terroir Digital** — um *Gêmeo Digital Inferencial* que reconstrói computacionalmente as interações entre solo, clima e biota (o "genótipo territorial") e as assinaturas quimiométricas do produto (o "fenótipo"). A ideia é converter alegações difusas de sustentabilidade em **evidências auditáveis**.
+
+Isso é urgente porque o *greenwashing* — a certificação de sustentabilidade sem verificação real — corrói a confiança nos selos de origem e penaliza produtores legítimos.
+
+## O Paradoxo da Generalização
+
+A análise dos 148 estudos revelou um resultado paradoxal:
+
+> **Modelos de ML alcançam 80-100% de acurácia em laboratório, mas desmoronam quando testados em condições reais.**
+
+Quando submetidos a validação **espacialmente independente** (treinar em uma região, testar em outra), a acurácia cai 11,8% — mais que o dobro da queda com validação convencional (5,6%). Isso significa que os modelos estão aprendendo **artefatos locais** em vez de padrões genuínos do terroir.
+
+### Os números que preocupam
+
+| Indicador | Valor |
+|-----------|-------|
+| Acurácia *in vitro* | 80–100% |
+| Queda em validação espacial | -11,8% |
+| Fragmentação metodológica (Modularidade Q) | 0,62 |
+| Heterogeneidade entre estudos (I²) | 58% |
+| Conformidade FAIR média | 34,2/100 |
+
+## Os Três Requisitos para o Terroir Digital Funcionar
+
+Com base na análise, definimos três condições **sine qua non**:
+
+### 1. Robustez inferencial
+Os modelos devem ser validados com dados **espacialmente e temporalmente independentes**. Degradação de acurácia acima de 8% deve ser considerada inaceitável para fins regulatórios.
+
+### 2. Explicabilidade (XAI)
+Não basta classificar — é preciso **explicar**. Métodos de Inteligência Artificial Explicável devem identificar quais marcadores (pH do solo, composição mineral, perfil espectral) são verdadeiros indicadores do terroir vs. correlações espúrias.
+
+### 3. Soberania de dados (FAIR ≥ 60/100)
+Dados de treinamento devem ser **Findable, Accessible, Interoperable, Reusable**. Com a média atual de 34,2/100, a maioria dos estudos não pode ser reproduzida, auditada ou contestada.
+
+## O que Indicações Geográficas Brasileiras Podem Aprender
+
+O Brasil possui dezenas de IGs registradas — do café do Cerrado Mineiro ao queijo da Canastra, do arroz do Litoral Norte Gaúcho às cachaças de Paraty. O conceito de Terroir Digital pode:
+
+- **Proteger** produtores contra fraudes e falsificações
+- **Comprovar** cientificamente que o produto reflete o território
+- **Auditar** automaticamente se práticas sustentáveis estão sendo seguidas
+- **Reduzir** assimetrias informacionais entre produtores, certificadores e consumidores
+
+Mas para isso, precisamos sair dos classificadores estáticos e caminhar para **modelos adaptativos**, auditáveis e transparentes.
+
+## Conclusão
+
+O Terroir Digital não é ficção científica — é uma necessidade regulatória. Em um mundo onde *greenwashing* e fraudes alimentares crescem, as Indicações Geográficas precisam de **evidências computacionais verificáveis**, não apenas de selos e tradições.
+
+O Aprendizado de Máquina tem o poder analítico necessário. O que falta é a disciplina metodológica: validação rigorosa, explicabilidade obrigatória e dados abertos. Sem esses três pilares, corremos o risco de trocar a fé no terroir pela fé no algoritmo — e nenhuma das duas é auditável.
+
+---
+
+*Este post é baseado em revisão de escopo PRISMA-ScR em processo de publicação. Para saber mais, visite nossas [publicações](/papers/) ou entre em [contato](mailto:ldvsantos@uefs.br).*

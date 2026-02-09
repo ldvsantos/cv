@@ -1,0 +1,89 @@
+---
+title: "Ravinas ou Voçorocas? Classificando Feições Erosivas com Drones em Tabuleiros Costeiros"
+author: "Luiz Diego Vidal Santos"
+date: "2025-02-03"
+categories: [erosão, UAV, classificação, Plintossolo, geomorfologia]
+description: "Classificar feições erosivas no campo é mais complexo do que parece. Combinamos voo de drone com a Elementary Gully Classification (EGC) em Plintossolo de São Cristóvão-SE e encontramos feições que desafiam a classificação tradicional."
+image: "../../img/Talude%201.jpg"
+lang: pt-BR
+---
+
+Ravina ou voçoroca? Parece uma pergunta simples, mas a verdade é que a **classificação de feições erosivas** é uma das áreas mais controversas da geomorfologia. Nosso estudo em Tabuleiros Costeiros de Sergipe mostra por quê — e propõe caminhos para resolver a confusão.
+
+## O campo: Plintossolo em São Cristóvão
+
+Trabalhamos em uma área de tabuleiros costeiros no **Campus Rural da UFS**, em São Cristóvão-SE, onde feições erosivas avançam há pelo menos **16 anos** (análise multitemporal 2007-2023). O solo predominante é um **Plintossolo Háplico Distrófico** — argiloso, com baixa condutividade hidráulica, que gera escoamento superficial rápido quando chove.
+
+São exatamente as condições perfeitas para erosão linear: a água não infiltra, concentra-se em linhas preferenciais e escava o solo.
+
+## O problema: terminologia confusa
+
+Na literatura, os termos "ravina" (*rill/gully*) e "voçoroca" (*gully/mega-gully*) são usados de forma inconsistente. Diferentes autores usam critérios diferentes:
+
+- **Por profundidade**: > 50 cm = voçoroca? > 30 cm?
+- **Por durabilidade**: feições permanentes vs. efêmeras
+- **Por fluxo**: fluxo permanente vs. intermitente
+- **Por posição**: topo de vale, encosta, fundo de vale
+
+Essa confusão terminológica prejudica a comunicação científica e, mais importante, as **decisões de manejo** — porque o tratamento para uma ravina ativa é completamente diferente do tratamento para uma voçoroca estabilizada.
+
+## A ferramenta: Elementary Gully Classification (EGC)
+
+Aplicamos a **EGC** de Thwaites et al. (2022), um sistema de classificação que integra múltiplos atributos em uma **chave decisória** sequencial:
+
+1. **Posição na paisagem** → topo de vale, encosta, fundo de vale
+2. **Atividade** → ativa ou inativa
+3. **Forma em planta** → linear, composta/digitada
+4. **Seção transversal** → V, U, trapezoidal
+5. **Tipo de cabeça** → abrupta, gradual, difusa
+6. **Profundidade** → rasa, moderada, profunda
+
+## A tecnologia: drone + fotogrametria
+
+Para medir as feições com precisão, usamos um **DJI Phantom 4 PRO** com voos planejados (80% sobreposição longitudinal, 60% lateral), gerando:
+
+- Ortomosaicos com resolução de 1 m
+- Modelo Digital de Elevação (MDE)
+- Nuvem densa de pontos
+
+Isso permite medir largura, comprimento, profundidade e volume de cada incisão com precisão centimétrica — muito além do que se consegue com trena em campo.
+
+## Resultados: feições intermediárias
+
+Das 6 feições inventariadas, encontramos um padrão que desafia a classificação binária:
+
+- **Todas** classificadas como permanentes e ativas
+- Morfologia predominantemente em **V** (material argiloso coesivo)
+- **Feição 1**: composta/digitada com múltiplas ramificações (a mais complexa)
+- **Feições 4 e 5**: lineares em topo de vale
+
+O problema é que as feições apresentam **características intermediárias** entre ravina e voçoroca. A seção em V e o material coesivo sugerem ravina; a permanência, profundidade e atividade contínua sugerem voçoroca.
+
+### O papel do Plintossolo
+
+A interação entre o solo e a erosão é chave. No Plintossolo:
+
+- **Infiltração muito baixa** → gera escoamento concentrado rapidamente
+- **Argila coesiva** → taludes resistem quando secos, mas colapsam quando saturados
+- **Sazonalidade** → chuvas concentradas de abril a setembro criam pulsos erosivos
+
+Essa dinâmica cria feições que evoluem episodicamente — avançam durante a estação chuvosa e estabilizam superficialmente na seca, mascarando a severidade real do processo.
+
+## Limitações da EGC em solos tropicais
+
+A EGC foi desenvolvida principalmente para ambientes temperados e semiáridos. Em Plintossolos de Tabuleiros Costeiros, identificamos limitações:
+
+- **Não diferencia** claramente ravinas de voçorocas em estágios intermediários
+- **Não incorpora** comprimento como critério (uma feição de 80 m é diferente de 5 m!)
+- **Não considera** clima regional (concentração de chuvas, potencial erosivo)
+- **Não captura** a dinâmica saturação-dessecação que governa a estabilidade de taludes argilosos
+
+## Conclusão
+
+Classificar erosão não é apenas um exercício acadêmico — é a base para decidir o tratamento correto. Nosso estudo mostra que as feições erosivas em Plintossolos de Tabuleiros Costeiros ocupam uma **zona cinzenta** entre ravinas e voçorocas, que os sistemas classificatórios atuais não capturam bem.
+
+Propomos que a EGC seja adaptada para contextos tropicais, incorporando comprimento, regime pluviométrico e propriedades hidráulicas do solo como critérios adicionais. Enquanto isso, a combinação de **drones + fotogrametria + análise de solo** oferece a base de dados necessária para classificações mais robustas.
+
+---
+
+*Este post é baseado em artigo em preparação. Para saber mais sobre nossos projetos de conservação do solo, visite a [página de projetos](/#projetos) ou entre em [contato](mailto:ldvsantos@uefs.br).*
