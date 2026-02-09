@@ -2,7 +2,8 @@
 title: "Talks and Presentations"
 description: "Talks, presentations, and academic event participations by Luiz Diego Vidal Santos on sustainable innovation and territorial planning."
 listing:
-    contents: .
+    contents:
+      - "*/index.qmd"
     sort: date desc
     type: default
     categories: true

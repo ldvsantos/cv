@@ -2,7 +2,8 @@
 title: "Conferencias y Presentaciones"
 description: "Conferencias, presentaciones y participaciones en eventos académicos de Luiz Diego Vidal Santos sobre innovación sostenible y planificación territorial."
 listing:
-    contents: .
+    contents:
+      - "*/index.qmd"
     sort: date desc
     type: default
     categories: true
