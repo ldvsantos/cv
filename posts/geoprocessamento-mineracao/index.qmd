@@ -1,0 +1,33 @@
+---
+title: "Geoprocessamento no Monitoramento de Impactos Ambientais da Mineração"
+author: "Luiz Diego Vidal Santos"
+date: "2025-08-05"
+categories: [geoprocessamento, mineração, MDE, impacto ambiental, SIG, PRAD]
+description: "MDEs multitemporais, assinaturas espectrais de drenagem ácida e sobreposição de zonas de exclusão legal convertem o SIG em sistema de contabilidade ambiental para a mineração no semiárido."
+image: "mineracao-cover.png"
+lang: pt-BR
+---
+
+A atividade de mineração impõe uma alteração disruptiva na topologia e na termodinâmica da paisagem, caracterizada pela remoção abrupta de cobertura vegetal e pela movimentação massiva de regolito. A engenharia de monitoramento, nesse contexto, não visa impedir a alteração (inerente à lavra), mas assegurar a rastreabilidade espacial e temporal das intervenções, de modo que o Geoprocessamento atua como a ferramenta de auditoria por excelência ao permitir o cotejamento entre o projeto licenciado e a execução real, consolidando a segurança jurídica e ambiental do empreendimento.
+
+## Análise morfológica e volumetria
+
+O impacto mais tangível da mineração é a alteração da geometria do terreno. O monitoramento moderno emprega Modelos Digitais de Elevação multitemporais para calcular o balanço de massas, aferindo se o volume de rejeito depositado ou minério extraído condiz com o autorizado. O cálculo volumétrico ($\Delta V = \sum_{i=1}^{n} (Z_{t2,i} - Z_{t1,i}) \cdot A_{celula}$) integra as diferenças de cota pixel a pixel, resultando em métrica vital para monitorar a estabilidade de pilhas de estéril e a vida útil de barragens de rejeito, prevenindo falhas geotécnicas catastróficas. A obtenção dos MDEs por fotogrametria com aeronaves remotamente pilotadas (RPAs) permite resoluções centimétricas a custos operacionais compatíveis com ciclos de monitoramento mensais, enquanto levantamentos LiDAR oferecem penetração em vegetação residual e precisão vertical inferior a 15 cm.
+
+## Assinaturas espectrais e qualidade da água
+
+Além da geometria, a mineração altera a composição físico-química da superfície. O sensoriamento remoto detecta a oxidação de sulfetos (drenagem ácida) através de anomalias espectrais em bandas do visível e infravermelho, uma vez que precipitados de oxi-hidróxidos de ferro (jarosita, goethita) exibem feições de absorção características em 0,48 µm e 0,90 µm. Nos corpos hídricos adjacentes, a correlação entre a reflectância espectral e a turbidez permite o rastreamento de plumas de sedimentos, indicando falhas nos sistemas de contenção de finos. A gestão integrada exige que esses dados espaciais sejam cruzados com parâmetros hidrogeoquímicos *in situ*, validando o modelo conceitual de dispersão de contaminantes e fornecendo materialidade probatória à fiscalização.
+
+## Gestão de risco e conformidade legal
+
+A espacialização dos impactos define as Áreas de Influência Direta e Indireta, delimitadas nos estudos de impacto (EIA/RIMA) exigidos pela Resolução CONAMA nº 01/1986. O SIG operacionaliza essa gestão ao sobrepor as plumas de impacto com zonas de exclusão legal (APPs, Unidades de Conservação), de modo que a licença ambiental deixa de ser um documento estático e torna-se um algoritmo dinâmico de conformidade, onde cada pixel carrega uma regra de uso e uma responsabilidade legal. No semiárido, onde a recuperação natural é lenta e a competição pelo uso da água impõe restrições adicionais, essa precisão é mandatória para garantir a execução eficaz dos Planos de Recuperação de Áreas Degradadas (PRAD), assegurando que o passivo ambiental deixado seja termodinamicamente estável e quimicamente inerte.
+
+<!--
+SUGESTÕES DE IMAGENS PARA GERAÇÃO POR IA:
+
+1. **mineracao-cover.png** (imagem de capa): Vista aérea oblíqua de cava de mineração a céu aberto com bancadas visíveis, sobreposta a grid de MDE com heatmap de diferenças volumétricas (vermelho = remoção, azul = deposição).
+
+2. **mde-multitemporal.png**: Par de MDEs (antes/depois) com mapa de diferença volumétrica entre eles, escala de cores divergente, barra lateral mostrando ΔV em m³.
+
+3. **drenagem-acida.png**: Corpo d'água adjacente a área de mineração com pluma de sedimentos visível, falsa-cor realçando a assinatura espectral de oxi-hidróxidos de ferro em tons alaranjados.
+-->

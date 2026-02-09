@@ -1,0 +1,35 @@
+---
+title: "Intemperismo, Erosão e Formação de Solos"
+author: "Luiz Diego Vidal Santos"
+date: "2025-07-15"
+categories: [pedologia, erosão, intemperismo, RUSLE, solos tropicais]
+description: "O solo como sistema termodinâmico multifásico na interface litosfera-biosfera, dos mecanismos geoquímicos de intemperismo à modelagem erosiva pela RUSLE, com implicações para a engenharia de conservação em ambientes semiáridos."
+image: "intemperismo-cover.png"
+lang: pt-BR
+---
+
+O solo constitui um sistema termodinâmico multifásico cuja evolução resulta da dissipação de energia livre na interface litosfera-atmosfera-biosfera, e sua arquitetura governa a partição dos fluxos de água e energia na bacia hidrográfica. A equação de fatores de estado proposta por Jenny (1941), $S = f(cl, o, r, p, t)$, sintetiza os vetores de formação pedológica (clima, organismos, relevo, material de origem e tempo), enquanto a compreensão dos mecanismos de intemperismo, da gênese de horizontes diagnósticos e da modelagem hidrossedimentológica configura condição para o dimensionamento de infraestrutura hídrica e o planejamento de uso da terra em regiões tropicais onde a variabilidade climática amplifica extremos erosivos.
+
+## Processos de intemperismo e quantificação geoquímica
+
+Segundo a Série de Goldich (1938), a suscetibilidade dos silicatos à dissolução decresce de olivinas e piroxênios para feldspatos potássicos e quartzo, hierarquia que orienta a previsão de neoformação de gibbsita, caulinita e óxidos de ferro em clima tropical. Hidrólise ácido-base, carbonatação ($\text{CO}_2 + \text{H}_2\text{O} \leftrightarrow \text{H}_2\text{CO}_3$), oxirredução de Fe²⁺-Fe³⁺ e complexação orgânica constituem as reações dominantes do intemperismo químico, cujo efeito sobre a mineralogia primária se complementa pela fragmentação física que amplia a área específica, gerando argilas e óxidos cuja interação com os reservatórios de carbono promove a agregação e cria a porosidade funcional do perfil.
+
+Para quantificar o grau de alteração, o Chemical Index of Alteration (CIA = Al₂O₃ / [Al₂O₃ + CaO* + Na₂O + K₂O] × 100) constitui a métrica mais difundida, com valores superiores a 80 indicando extrema lixiviação de álcalis típica de lateritas. Na escala de perfil, a análise de Brimhall-Chadwick utiliza elemento imóvel (Ti ou Zr) para calcular fluxo de massa ($\tau_i$) e deformação volumétrica ($\varepsilon$), distinguindo processos isométricos de colapsivos e permitindo a reconstrução quantitativa da história de alteração do manto de intemperismo.
+
+## Dinâmica erosiva e modelagem
+
+A erosão hídrica se instala quando a energia cinética do impacto da chuva ou a tensão cisalhante do escoamento supera a resistência coesiva dos agregados. Sua predição em escala de planejamento ainda é dominada pela RUSLE ($A = R \cdot K \cdot L \cdot S \cdot C \cdot P$), embora modelos fisicamente baseados como WEPP e USPED integrem fluxos de energia cinética com resolução intra-evento, derivando o fator LS por algoritmos D-∞ aplicados a MDEs. No domínio semiárido brasileiro, chuvas convectivas produzem erosividade elevada ($R > 7\,000$ MJ mm ha⁻¹ h⁻¹ ano⁻¹), e a prevalência de Neossolos Litólicos e solos com horizonte B textural, associada a crostas superficiais, favorece escoamento Hortoniano e erosão laminar, resultando em alta conectividade hidrossedimentológica e assoreamento de reservatórios.
+
+## Conservação e engenharia de mitigação
+
+Manipular simultaneamente os fatores da RUSLE em eixos sinérgicos constitui o princípio da engenharia de conservação. A manutenção de palhada superior a 6 t ha⁻¹ e sistemas agroflorestais reduz o fator C, enquanto o incremento do carbono orgânico acima de 3% e a aplicação de silicato de cálcio melhoram a resistência intrínseca do solo (fator K). Complementarmente, o controle hidrológico (fatores LS e P) integra terraceamento, cultivos em contorno e barraginhas, cuja priorização pode ser conduzida por modelagem AHP em microbacias criticamente degradadas, garantindo que a engenharia de restauração transcenda a prática agrícola e se configure como estratégia de segurança hídrica, energética e alimentar.
+
+<!--
+SUGESTÕES DE IMAGENS PARA GERAÇÃO POR IA:
+
+1. **intemperismo-cover.png** (imagem de capa): Perfil de solo tropical com horizontes A, E, Bt, C claramente diferenciados em cores naturais, raízes expostas, rocha-mãe na base, com setas indicando processos de eluviação/iluviação, estilo diagrama técnico.
+
+2. **goldich-serie.png**: Diagrama da Série de Goldich mostrando a sequência de dissolução dos silicatos (olivina → piroxênio → anfibólio → biotita → feldspato → quartzo) com indicação de suscetibilidade ao intemperismo.
+
+3. **rusle-fatores.png**: Infográfico mostrando os seis fatores da RUSLE (R, K, L, S, C, P) como componentes de um sistema, cada um com ícone representativo (chuva, solo, encosta, vegetação, prática conservacionista).
+-->

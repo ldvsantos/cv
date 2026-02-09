@@ -1,0 +1,33 @@
+---
+title: "SIG Aplicado à Exploração dos Recursos Minerais"
+author: "Luiz Diego Vidal Santos"
+date: "2025-07-10"
+categories: [SIG, mineração, prospectividade, lógica fuzzy, sensoriamento remoto]
+description: "Mapeamento de prospectividade mineral por fusão probabilística de evidências geológicas, geofísicas e geoquímicas em SIG, com modelagem difusa e Pesos de Evidência para otimização de campanhas exploratórias."
+image: "sig-mineral-cover.png"
+lang: pt-BR
+---
+
+A exploração mineral contemporânea transcendeu o paradigma da prospecção fortuita para consolidar-se como engenharia de sistemas preditivos orientada à redução progressiva da área de busca. O conceito de sistema mineral, formalizado por Wyborn et al. (1994), representa essa mudança paradigmática ao substituir a análise de depósitos isolados pela modelagem integrada de processos geodinâmicos, na qual cada mineralização é decomposta em três componentes funcionais (fonte, transporte e armadilha). Nesse arcabouço, o Sistema de Informação Geográfica opera como integrador da infraestrutura de dados espaciais, convertendo evidências geológicas, geofísicas, geoquímicas e de sensoriamento remoto em camadas preditoras cujo cruzamento probabilístico gera mapas de favorabilidade mineral que otimizam a alocação de capital exploratório.
+
+## Fontes de dados e pré-processamento
+
+A robustez preditiva do modelo depende da qualidade e complementaridade das camadas de evidência construídas a partir de sensores e amostragens heterogêneas. A aeromagnetometria revela a susceptibilidade magnética do substrato, permitindo delinear lineamentos estruturais e contatos litológicos encobertos por regolito, enquanto a gamaespectrometria quantifica as razões K/Th, K/U e Th/U, cujas anomalias positivas de potássio associam-se a halos de alteração potássica diagnósticos de sistemas pórfiro-epitermais. Na esfera geoquímica, a análise multielementar de sedimentos de corrente identifica dispersões secundárias cuja cinética de adsorção e lixiviação preferencial nos perfis de alteração introduz histerese espacial, fenômeno que o variograma experimental captura através do alcance e do patamar, parâmetros essenciais para a krigagem ordinária.
+
+O sensoriamento remoto complementa essa infraestrutura ao explorar a resposta espectral de minerais de alteração hidrotermal. Sensores hiperespectrais como AVIRIS e ASTER discriminam feições de absorção diagnósticas de caulinita (2,2 µm), montmorilonita e alunita (1,48 µm), viabilizando o mapeamento de zonas de alteração propilítica, argílica e silicificada com resolução subpixel por algoritmos de desmistura espectral linear.
+
+## Métodos de integração e modelagem preditiva
+
+A combinação algébrica das camadas de evidência fundamenta-se em duas famílias metodológicas. Quando o número de depósitos conhecidos é insuficiente para treinamento estatístico, os métodos knowledge-driven derivam pesos a partir de modelos conceituais de metalogênese, sendo a lógica Fuzzy e o Processo Analítico Hierárquico (AHP) seus representantes mais difundidos. Na modelagem difusa, cada camada de evidência é convertida em função de pertinência $\mu(x) \in [0,1]$ e as camadas são combinadas por operadores Fuzzy Gamma, onde o parâmetro $\gamma$ controla o compromisso entre incremento e diminuição, mitigando a ambiguidade inerente a dados não-lineares.
+
+Em contrapartida, os métodos data-driven (Pesos de Evidência) empregam o teorema de Bayes para calcular o Contraste ($C = W^+ - W^-$), cuja magnitude positiva confirma associação espacial com a mineralização, eliminando subjetivismo na ponderação. Redes neurais artificiais e máquinas de vetores de suporte ampliam o arsenal ao capturar não-linearidades complexas, e a área sob a curva ROC (AUC > 0,85) constitui o indicador padrão de capacidade discriminante, desde que a validação cruzada k-fold espacial garanta que blocos sejam espacialmente disjuntos. No semiárido nordestino, o mapa de favorabilidade mineral deve ser cruzado com camadas de APPs, Unidades de Conservação e zonas de recarga hídrica, resultando em um modelo de aptidão multiobjetivo que antecipa conflitos de licenciamento e demonstra, de forma auditável, a compatibilidade da exploração com a segurança hídrica e a conservação do bioma Caatinga.
+
+<!--
+SUGESTÕES DE IMAGENS PARA GERAÇÃO POR IA:
+
+1. **sig-mineral-cover.png** (imagem de capa): Mapa de prospectividade mineral com gradiente de cores (azul frio = baixa favorabilidade, vermelho quente = alta favorabilidade) sobre fundo geológico estilizado, com pontos de depósitos conhecidos marcados.
+
+2. **fuzzy-gamma-operador.png**: Diagrama conceitual mostrando camadas de evidência (geofísica, geoquímica, estrutural) entrando em funções de pertinência fuzzy e sendo combinadas pelo operador Gamma.
+
+3. **alteracao-hidrotermal.png**: Composição de falsa cor de imagem ASTER mostrando zonas de alteração hidrotermal (propilítica em verde, argílica em magenta, silicificada em branco) sobre terreno minerado.
+-->
