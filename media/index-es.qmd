@@ -1,14 +1,6 @@
 ---
 title: "En los Medios"
 description: "Apariciones en medios, entrevistas y reportajes sobre el trabajo de Luiz Diego Vidal Santos en innovación sostenible y planificación territorial."
-listing:
-    contents: .
-    sort: date desc
-    type: default
-    categories: true
-    sort-ui: true
-    filter-ui: true
-    feed: true
 page-layout: full
 title-block-banner: false
 lang: es
@@ -16,4 +8,10 @@ lang: es
 
 ::: {.text-end .mb-3}
 [Português](index.qmd) | [English](index-en.qmd) | **Español**
+:::
+
+::: {.callout-note}
+## Contenido en Portugués
+
+El contenido de medios está disponible actualmente solo en portugués. Por favor visite la [versión en portugués](index.qmd) para ver entrevistas y apariciones en medios.
 :::
