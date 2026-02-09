@@ -28,8 +28,8 @@ website:
         text: "{{< fa file-lines >}} Publicações"
       - href: teaching/index.qmd
         text: "{{< fa chalkboard-user >}} Ensino"
-      - href: talks/index.qmd
-        text: "{{< fa microphone >}} Palestras"
+      # - href: talks/index.qmd
+      #   text: "{{< fa microphone >}} Palestras"
       - href: media/index.qmd
         text: "{{< fa newspaper >}} Mídia"
       - href: posts/index.qmd
