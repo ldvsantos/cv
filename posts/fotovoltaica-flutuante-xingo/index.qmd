@@ -8,7 +8,7 @@ image: "mapa-zoneamento.png"
 lang: pt-BR
 ---
 
-Imagine painéis solares flutuando sobre a superfície de um reservatório hidrelétrico, gerando energia limpa onde antes havia apenas água parada. Essa é a **fotovoltaica flutuante (FPV)** — uma tecnologia que cresce rapidamente no mundo e tem potencial enorme no Brasil, país com mais de 1.200 reservatórios de usinas hidrelétricas.
+Imagine painéis solares flutuando sobre a superfície de um reservatório hidrelétrico, gerando energia limpa onde antes havia apenas água parada. Essa é a **fotovoltaica flutuante (FPV)**, uma tecnologia que cresce rapidamente no mundo e tem potencial enorme no Brasil, país com mais de 1.200 reservatórios de usinas hidrelétricas.
 
 Mas há um problema que poucos consideram: **onde exatamente instalar os painéis?** Nem toda superfície de água é igual. Nosso estudo recente no **reservatório de Xingó**, no Baixo São Francisco, mostra por quê.
 
@@ -16,22 +16,15 @@ Mas há um problema que poucos consideram: **onde exatamente instalar os painéi
 
 ## O desafio: ondas em reservatórios de cânion
 
-Quando pensamos em ondas, imaginamos o mar. Mas reservatórios em vales encaixados — como Xingó, com sua geometria de cânion — também geram ondas significativas. O vento canalizado pelo vale transfere energia à superfície da água, criando um **clima de ondas** que varia imensamente de um ponto a outro do reservatório.
+Quando pensamos em ondas, imaginamos o mar. Mas reservatórios em vales encaixados (como Xingó, com sua geometria de cânion) também geram ondas significativas. O vento canalizado pelo vale transfere energia à superfície da água, criando um **clima de ondas** que varia imensamente de um ponto a outro do reservatório.
 
-Essas ondas podem parecer pequenas, mas representam **milhões de ciclos de carga** sobre as linhas de amarração dos painéis flutuantes. Com o tempo, isso causa **fadiga estrutural** — o mesmo fenômeno que faz um clipe de papel quebrar quando dobrado repetidamente.
+Essas ondas podem parecer pequenas, mas representam **milhões de ciclos de carga** sobre as linhas de amarração dos painéis flutuantes. Com o tempo, isso causa **fadiga estrutural**, o mesmo fenômeno que faz um clipe de papel quebrar quando dobrado repetidamente.
 
 ![Climatologia de ventos no reservatório de Xingó](climatologia.png){fig-alt="Climatologia de ventos no reservatório" width="80%"}
 
 ## Nossa abordagem: zoneamento hidrodinâmico
 
-Desenvolvemos um procedimento de apoio à decisão que integra:
-
-1. **Climatologia de ventos** — direção e intensidade predominantes
-2. **Fetch efetivo** — a distância sobre a qual o vento sopra sem obstáculo (quanto maior, maiores as ondas)
-3. **Método SMB** (*Sverdrup–Munk–Bretschneider*) — modelo clássico que converte vento e fetch em altura de onda ($H_s$)
-4. **Restrições batimétricas** — profundidade do reservatório
-
-O resultado é um **mapa de zoneamento** que mostra onde as ondas são aceitáveis para FPV e onde não são.
+Desenvolvemos um procedimento de apoio à decisão que integra **climatologia de ventos** (direção e intensidade predominantes), **fetch efetivo** (a distância sobre a qual o vento sopra sem obstáculo, quanto maior, maiores as ondas), **método SMB** (*Sverdrup–Munk–Bretschneider*, modelo clássico que converte vento e fetch em altura de onda $H_s$) e **restrições batimétricas** (profundidade do reservatório). O resultado é um **mapa de zoneamento** que mostra onde as ondas são aceitáveis para FPV e onde não são.
 
 ![Mapa de fetch efetivo — distância de atuação do vento](mapa-fetch.png){fig-alt="Mapa de fetch efetivo no reservatório de Xingó" width="100%"}
 
@@ -44,11 +37,7 @@ Os resultados revelaram um contraste dramático:
 | **Enseadas abrigadas (R1–R5)** | < 0,09 m | Muito baixo | **Excelente** |
 | **Canal principal** | Até 10× maior | Elevado | **Desfavorável** |
 
-As enseadas laterais do cânion oferecem **abrigo topográfico natural** contra as ondas, reduzindo a demanda de amarração em mais de 90% comparado ao canal principal. Isso significa:
-
-- **Menor custo de amarração** (o CAPEX estrutural cai drasticamente)
-- **Menor risco de falha** por fadiga ao longo da vida útil
-- **Coexistência** possível com navegação turística e comercial
+As enseadas laterais do cânion oferecem **abrigo topográfico natural** contra as ondas, reduzindo a demanda de amarração em mais de 90% comparado ao canal principal. Isso significa **menor custo de amarração** (o CAPEX estrutural cai drasticamente), **menor risco de falha** por fadiga ao longo da vida útil e **coexistência** possível com navegação turística e comercial.
 
 ![Mapa de ondas — altura significativa ($H_s$) simulada pelo método SMB](mapa-ondas.png){fig-alt="Mapa de altura de onda significativa no reservatório" width="100%"}
 
