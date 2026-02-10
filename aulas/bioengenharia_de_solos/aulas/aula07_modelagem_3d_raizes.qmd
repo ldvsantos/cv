@@ -1,0 +1,361 @@
+---
+title: "Modelagem 3D de Sistemas Radiculares"
+subtitle: "Fotogrametria e CloudCompare para Controle de Erosão<br>Bioengenharia de Solos"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../assets/logo-uefs.webp
+    footer: "UEFS | Bioengenharia de Solos | Modelagem 3D de Raízes"
+    slide-number: true
+    theme: [simple, ../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos Principais
+
+- [1]{.circle} Importância do sistema radicular na estabilidade
+- [2]{.circle} Fundamentos de fotogrametria digital
+- [3]{.circle} Coleta de imagens em campo — protocolo
+- [4]{.circle} Processamento no Meshroom/OpenDroneMap
+- [5]{.circle} Análise da nuvem de pontos no CloudCompare
+- [6]{.circle} Parâmetros mecânicos da raiz e controle de erosão
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo Central**
+
+Aprender a construir modelos 3D de sistemas radiculares expostos usando fotogrametria digital de baixo custo, processá-los no CloudCompare e extrair parâmetros relevantes para avaliação do controle de erosão.
+:::
+:::
+:::
+
+---
+
+# [1 — RAÍZES E ESTABILIDADE DE TALUDES]{.section-header}
+
+---
+
+## O papel mecânico das raízes {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+As raízes aumentam a resistência ao cisalhamento do solo por dois mecanismos:
+
+### Reforço mecânico
+
+$$\Delta c_r = t_R \times (A_R / A)$$
+
+Onde:
+
+- $\Delta c_r$ = incremento de coesão pela raiz (kPa)
+- $t_R$ = resistência à tração da raiz (kPa)
+- $A_R / A$ = razão de área radicular (*Root Area Ratio* — RAR)
+
+### Efeito hidráulico
+
+- Raízes extraem água → reduzem poropressão
+- Aumento da sucção mátrica → estabilidade
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Modelo de Wu (1979)
+
+O acréscimo de coesão é estimado como:
+
+$$\Delta c_r = 1{,}2 \times \overline{t_R} \times RAR$$
+
+O fator 1,2 corrige a orientação aleatória das raízes.
+
+### Valores típicos
+
+| Espécie | $\Delta c_r$ (kPa) |
+|---------|:---:|
+| Vetiver | 5 – 18 |
+| Ingá | 3 – 12 |
+| Leucena | 4 – 15 |
+| Gramíneas nativas | 1 – 6 |
+
+: {.striped .hover}
+:::
+:::
+:::
+
+---
+
+## Por que modelar em 3D? {.smaller-text}
+
+A análise bidimensional (cortes, fotografias frontais) perde informação sobre:
+
+- **Distribuição espacial** das raízes no volume de solo
+- **Densidade volumétrica** (RVD — *Root Volume Density*)
+- **Conectividade** entre raízes — resistência à arrancamento
+- **Assimetria** da distribuição — taludes têm raízes predominantes a jusante
+
+A **fotogrametria SfM** (*Structure from Motion*) permite reconstruir a geometria 3D completa com:
+
+- Equipamento de baixo custo (câmera de celular ou DSLR)
+- Software livre (Meshroom, OpenDroneMap)
+- Análise em software gratuito (CloudCompare)
+
+---
+
+# [2 — FOTOGRAMETRIA DIGITAL SfM]{.section-header}
+
+---
+
+## Conceito de Structure from Motion {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+### Princípio
+
+A partir de **múltiplas fotografias** de um mesmo objeto, tomadas de ângulos diferentes, o software identifica **pontos homólogos** e reconstrói a geometria 3D.
+
+### Etapas do processamento
+
+1. **Detecção de features** — SIFT/SURF em cada imagem
+2. **Correspondência** — emparelhar features entre imagens
+3. **Estimativa de câmera** — posição e orientação de cada foto
+4. **Nuvem densa** — triangulação de milhares de pontos 3D
+5. **Malha (mesh)** — superfície poligonal contínua
+6. **Textura** — projeção das cores sobre a malha
+:::
+
+::: {.column width="45%"}
+::: {.info-box}
+### Softwares livres recomendados
+
+| Software | Uso |
+|----------|-----|
+| **Meshroom** | Fotogrametria SfM (Nuvem densa) |
+| **OpenDroneMap** | Alternativa (melhor para drones) |
+| **COLMAP** | Motor SfM robusto |
+| **CloudCompare** | Visualização e análise 3D |
+
+: {.striped .hover}
+:::
+:::
+:::
+
+---
+
+# [3 — PROTOCOLO DE COLETA EM CAMPO]{.section-header}
+
+---
+
+## Preparação do local {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Etapa 1 — Exposição da raiz
+
+1. Selecione o talude ou trincheira com raízes expostas
+2. Se necessário, use **jato de água** a baixa pressão para remover o solo aderido sem danificar as raízes
+3. Delimite a área de interesse com **estacas de referência coloridas** (mínimo 4 pontos)
+4. Posicione uma **escala métrica** (trena ou régua graduada) visível em todas as fotos
+:::
+
+::: {.column width="50%"}
+### Etapa 2 — Aquisição das fotos
+
+- **Equipamento:** câmera ≥ 12 MP (celular serve)
+- **Nº de fotos:** 60–120 (quanto mais, melhor)
+- **Sobreposição:** ≥ 70% entre fotos consecutivas
+- **Ângulos:** circundar o objeto em pelo menos 2 alturas
+- **Iluminação:** difusa (céu nublado ideal) — evitar sombras duras
+- **Foco:** fixar foco manual se possível
+:::
+:::
+
+::: {.highlight-box}
+**Dica prática:** fotografe em círculos concêntricos (raster orbital) ao redor da raiz. Comece mais longe (contexto) e feche o enquadramento progressivamente.
+:::
+
+---
+
+# [4 — PROCESSAMENTO NO MESHROOM]{.section-header}
+
+---
+
+## Fluxo de trabalho no Meshroom {.smaller-text}
+
+| Passo | Nó (node) | Ação |
+|-------|-----------|------|
+| 1 | **CameraInit** | Importar fotos, detectar parâmetros da câmera |
+| 2 | **FeatureExtraction** | Extrair features SIFT de cada imagem |
+| 3 | **ImageMatching** | Emparelhar imagens por vocabulário visual |
+| 4 | **FeatureMatching** | Correspondência de features entre pares |
+| 5 | **StructureFromMotion** | Estimar posição das câmeras e nuvem esparsa |
+| 6 | **DepthMap** | Calcular mapa de profundidade |
+| 7 | **Meshing** | Gerar malha triangular |
+| 8 | **Texturing** | Aplicar textura fotográfica à malha |
+
+: {.striped .hover}
+
+**Saída final:** arquivo `.obj` ou `.ply` com a malha texturizada do sistema radicular.
+
+---
+
+## Dicas de processamento {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Configurações recomendadas
+
+- **DepthMap:** resolução "Normal" (não "High" — evita tempo excessivo)
+- **Meshing:** `maxPoints = 5 000 000` para raízes (detalhe suficiente)
+- **Texturing:** resolução 4096 × 4096 por atlas
+
+### Tempo estimado
+
+- 80 fotos (12 MP) → ~30 min em GPU média
+- 120 fotos (20 MP) → ~1–2 h
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Alternativa sem GPU
+
+Se não tiver placa de vídeo dedicada:
+
+1. Use **COLMAP** (CPU mode)
+2. Ou processe no **Google Colab** com GPU gratuita
+3. Ou use **OpenDroneMap** via WebODM (Docker)
+:::
+:::
+:::
+
+---
+
+# [5 — ANÁLISE NO CLOUDCOMPARE]{.section-header}
+
+---
+
+## Importação e limpeza {.smaller-text}
+
+1. **File → Open** → carregar `.ply` ou `.obj`
+2. **Edit → Segment** → remover pontos do solo/fundo (selecionar e deletar)
+3. **Edit → Subsample** → reduzir a nuvem para análise (min. spacing = 1 mm)
+
+### Escalonamento
+
+Se a escala não foi calibrada na fotogrametria:
+
+1. Usar ferramenta **Point Picking** para medir a distância entre dois pontos conhecidos (régua no campo)
+2. **Edit → Multiply/Scale** → aplicar fator de correção
+
+---
+
+## Extração de parâmetros {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Parâmetros geométricos
+
+| Parâmetro | Como extrair |
+|-----------|-------------|
+| Volume radicular (cm³) | Convex Hull → Properties |
+| Área superficial (cm²) | Mesh → Compute → Surface |
+| Diâmetro médio | Cortes transversais → fit circle |
+| Profundidade máxima (cm) | Bounding Box → dimensão Z |
+| RAR por camada | Cortes horizontais a cada 10 cm |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+### Cálculo do RAR por camada
+
+1. **Tools → Segmentation → Cross Section** → corte horizontal
+2. Em cada corte, calcular área total do corte e área ocupada por raízes
+3. $RAR = A_{raiz} / A_{total}$
+
+::: {.highlight-box}
+O RAR tipicamente diminui com a profundidade. Valores de 0,05–0,30% na camada 0–30 cm são comuns para gramíneas.
+:::
+:::
+:::
+
+---
+
+## Relação RAR × Coesão adicional {.smaller-text}
+
+Com o RAR estimado por camada, aplica-se o modelo de Wu (1979):
+
+$$\Delta c_r(z) = 1{,}2 \times \overline{t_R} \times RAR(z)$$
+
+| Profundidade (cm) | RAR (%) | $\overline{t_R}$ (MPa) | $\Delta c_r$ (kPa) |
+|:---:|:---:|:---:|:---:|
+| 0–10 | 0,25 | 15 | 4,5 |
+| 10–20 | 0,18 | 15 | 3,2 |
+| 20–30 | 0,10 | 15 | 1,8 |
+| 30–50 | 0,04 | 15 | 0,7 |
+
+: {.striped .hover}
+
+::: {.info-box}
+Esses valores de $\Delta c_r$ são somados à coesão do solo natural para análise de estabilidade de taludes.
+:::
+
+---
+
+## Exercício proposto {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+### Atividade de campo + laboratório
+
+1. Em grupo (3–4 alunos), selecione uma planta com raízes expostas no campus
+2. Siga o protocolo de coleta (mín. 60 fotos, escala métrica)
+3. Processe no Meshroom e gere o modelo 3D
+4. Importe no CloudCompare e calcule o RAR em 3 camadas
+5. Estime $\Delta c_r$ usando o modelo de Wu
+6. Apresente os resultados em relatório técnico com figuras 3D
+:::
+
+::: {.column width="40%"}
+::: {.highlight-box}
+### Entrega
+
+- **Formato:** relatório PDF + arquivo `.ply` da nuvem limpa
+- **Prazo:** 21 dias
+- **Avaliação:** protocolo de campo (20%), modelo 3D (30%), cálculos (30%), discussão (20%)
+:::
+:::
+:::
+
+---
+
+## Referências {.smaller-text}
+
+- Wu, T. H., McKinnell, W. P., & Swanston, D. N. (1979). Strength of tree roots and landslides on Prince of Wales Island. *Can. Geotech. J.*, 16(1), 19–33.
+- Stokes, A. et al. (2009). Desirable plant root traits for protecting natural and engineered slopes. *Plant and Soil*, 324, 1–30.
+- Meshroom (2024). AliceVision — Photogrammetric Computer Vision Framework. [alicevision.org](https://alicevision.org/)
+- CloudCompare (2024). 3D Point Cloud and Mesh Processing Software. [cloudcompare.org](https://www.cloudcompare.org/)
+
+---
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::

@@ -1,0 +1,447 @@
+---
+title: "Avaliação de Incerteza em Classificação"
+subtitle: "Matriz de Confusão, Kappa e Mapas de Probabilidade<br>Geotecnologias e SIG"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../assets/logo-uefs.webp
+    footer: "UEFS | Geotecnologias e SIG | Avaliação de Incerteza em Classificação"
+    slide-number: true
+    theme: [simple, ../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+    code-fold: false
+---
+
+## Visão Geral {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos Principais
+
+- [1]{.circle} Por que avaliar a acurácia de mapas?
+- [2]{.circle} Amostragem de referência para validação
+- [3]{.circle} Matriz de confusão — conceitos e métricas
+- [4]{.circle} Índice Kappa e suas limitações
+- [5]{.circle} Mapas de probabilidade de classe
+- [6]{.circle} Prática no Google Earth Engine
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo Central**
+
+Compreender as métricas de avaliação da qualidade de mapas de uso e cobertura da terra produzidos por classificação supervisionada, e implementar uma avaliação completa no Google Earth Engine.
+:::
+:::
+:::
+
+---
+
+# [1 — POR QUE AVALIAR ACURÁCIA?]{.section-header}
+
+---
+
+## O problema da confiabilidade {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+Um mapa de uso da terra produzido por classificação supervisionada é uma **estimativa**, não a "verdade".
+
+### Fontes de erro
+
+- **Treinamento inadequado** — poucas amostras ou classes confusas
+- **Resolução espacial** — pixels mistos (mixels)
+- **Resolução temporal** — imagem fora da época ideal
+- **Algoritmo** — cada classificador tem vieses próprios
+- **Pré-processamento** — correção atmosférica, nuvens residuais
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Consequências práticas
+
+Mapas sem avaliação de acurácia podem levar a:
+
+- Estimativas erradas de desmatamento
+- Planejamento territorial inadequado
+- Decisões de manejo sem respaldo
+- Publicações científicas rejeitadas
+
+> *"A map without accuracy assessment is just a pretty picture."* — Foody, 2002
+:::
+:::
+:::
+
+---
+
+## Fluxo de avaliação {.smaller-text}
+
+O processo de avaliação segue quatro etapas principais:
+
+| Etapa | Descrição |
+|-------|-----------|
+| 1. Plano amostral | Definir quantidade e distribuição espacial das amostras de referência |
+| 2. Coleta de referência | Classificar visualmente cada ponto amostral (verdade de campo) |
+| 3. Matriz de confusão | Comparar classe mapeada × classe de referência |
+| 4. Métricas de acurácia | Calcular acurácia global, do produtor, do usuário e Kappa |
+
+: {.striped .hover}
+
+---
+
+# [2 — AMOSTRAGEM DE REFERÊNCIA]{.section-header}
+
+---
+
+## Tipos de amostragem {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Aleatória simples
+
+- Cada pixel tem igual probabilidade de seleção
+- Pode sub-representar classes raras
+- Recomendada para mapas homogêneos
+
+### Estratificada por classe
+
+- Distribui amostras proporcionalmente (ou fixas) por classe mapeada
+- **Mais adequada** para estudos com classes desbalanceadas
+- Recomendação: mínimo de **25–30 amostras** por classe (Congalton & Green, 2019)
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Quantas amostras?
+
+Fórmula de Cochran (1977) adaptada:
+
+$$n = \frac{Z^2 \times p \times (1-p)}{e^2}$$
+
+Onde:
+
+- $Z = 1{,}96$ (95% de confiança)
+- $p = 0{,}5$ (proporção esperada — pior caso)
+- $e = 0{,}05$ (margem de erro de 5%)
+
+$n \approx 384$ amostras (mínimo global)
+:::
+:::
+:::
+
+---
+
+# [3 — MATRIZ DE CONFUSÃO]{.section-header}
+
+---
+
+## Estrutura da matriz {.smaller-text}
+
+A **matriz de confusão** (ou de erro) cruza as classes **mapeadas** (linhas) com as classes de **referência** (colunas):
+
+|  | Ref: Floresta | Ref: Agricultura | Ref: Água | **Total Mapeado** |
+|--|:---:|:---:|:---:|:---:|
+| **Map: Floresta** | 85 | 10 | 2 | 97 |
+| **Map: Agricultura** | 5 | 78 | 3 | 86 |
+| **Map: Água** | 0 | 2 | 45 | 47 |
+| **Total Referência** | 90 | 90 | 50 | **230** |
+
+: {.striped .hover}
+
+- **Diagonal principal** → classificações corretas
+- **Fora da diagonal** → erros de comissão e omissão
+
+---
+
+## Métricas derivadas {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Acurácia Global (OA)
+
+$$OA = \frac{\sum_{i=1}^{k} n_{ii}}{N}$$
+
+Exemplo: $\frac{85 + 78 + 45}{230} = 0{,}904 = 90{,}4\%$
+
+### Acurácia do Produtor (PA)
+
+$$PA_j = \frac{n_{jj}}{\sum_{i=1}^{k} n_{ij}}$$
+
+Mede a probabilidade de uma classe real ser corretamente mapeada (omissão).
+:::
+
+::: {.column width="50%"}
+### Acurácia do Usuário (UA)
+
+$$UA_i = \frac{n_{ii}}{\sum_{j=1}^{k} n_{ij}}$$
+
+Mede a probabilidade de um pixel mapeado realmente pertencer àquela classe (comissão).
+
+::: {.highlight-box}
+### Resumo
+
+| Métrica | Perspectiva | Erro associado |
+|---------|-------------|----------------|
+| PA | Quem está no campo | Omissão |
+| UA | Quem usa o mapa | Comissão |
+
+: {.striped .hover}
+:::
+:::
+:::
+
+---
+
+# [4 — ÍNDICE KAPPA]{.section-header}
+
+---
+
+## O coeficiente Kappa de Cohen {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+O **Kappa** ($\kappa$) mede a concordância entre classificação e referência, descontando o **acerto por acaso**:
+
+$$\kappa = \frac{OA - P_e}{1 - P_e}$$
+
+Onde $P_e$ é a concordância esperada ao acaso:
+
+$$P_e = \frac{\sum_{i=1}^{k} (n_{i+} \times n_{+i})}{N^2}$$
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+### Interpretação do Kappa
+
+| Kappa | Qualidade |
+|-------|-----------|
+| < 0,20 | Ruim |
+| 0,21 – 0,40 | Razoável |
+| 0,41 – 0,60 | Moderada |
+| 0,61 – 0,80 | Boa |
+| 0,81 – 1,00 | Excelente |
+
+: {.striped .hover}
+
+Fonte: Landis & Koch (1977)
+:::
+:::
+:::
+
+---
+
+## Limitações do Kappa {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Críticas recentes
+
+Pontius & Millones (2011) argumentam que o Kappa:
+
+- É **redundante** — a OA já contém a informação
+- Mistura **quantidade** e **alocação** de erros
+- A "correção pelo acaso" é **conceitualmente inadequada** para sensoriamento remoto
+:::
+
+::: {.column width="50%"}
+### Alternativas recomendadas
+
+- **Quantity Disagreement** — quanto se erra em área total da classe
+- **Allocation Disagreement** — quanto se erra na posição dos pixels
+- **F1-Score** por classe — combina PA e UA em uma métrica única
+
+$$F1_i = 2 \times \frac{PA_i \times UA_i}{PA_i + UA_i}$$
+:::
+:::
+
+::: {.info-box}
+**Na graduação:** aprendam Kappa (ainda amplamente usado), mas conheçam as limitações e citem as alternativas em relatórios e TCC.
+:::
+
+---
+
+# [5 — MAPAS DE PROBABILIDADE]{.section-header}
+
+---
+
+## O que são mapas de probabilidade? {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+Classificadores como **Random Forest** e **SVM** atribuem a cada pixel não apenas uma **classe vencedora**, mas também a **probabilidade** de pertencer a cada classe.
+
+### Mapa de probabilidade máxima
+
+Atribui a cada pixel o valor de probabilidade da classe com maior score. Indica a **confiança** da classificação:
+
+- Probabilidade alta (> 0,8) → classificação confiável
+- Probabilidade baixa (0,3–0,5) → pixel em área de transição ou confusão
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Utilidade prática
+
+1. Identificar **áreas de incerteza** no mapa
+2. Direcionar **trabalho de campo** para regiões de baixa confiança
+3. Comunicar a **qualidade espacial** do mapa
+4. Auxiliar na **melhoria iterativa** da classificação (coletar mais amostras nas áreas incertas)
+:::
+:::
+:::
+
+---
+
+# [6 — PRÁTICA NO GOOGLE EARTH ENGINE]{.section-header}
+
+---
+
+## Roteiro no GEE — Parte 1 {.smaller-text}
+
+```javascript
+// 1. Área de estudo: Feira de Santana, BA
+var municipio = ee.FeatureCollection('FAO/GAUL/2015/level2')
+  .filter(ee.Filter.eq('ADM2_NAME', 'Feira de Santana'));
+
+// 2. Imagem Sentinel-2 (2024, período seco)
+var s2 = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')
+  .filterBounds(municipio)
+  .filterDate('2024-06-01', '2024-09-30')
+  .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE', 10))
+  .median()
+  .clip(municipio);
+
+// 3. Bandas para classificação
+var bandas = ['B2', 'B3', 'B4', 'B8', 'B11', 'B12'];
+var imagem = s2.select(bandas);
+```
+
+---
+
+## Roteiro no GEE — Parte 2: Classificação {.smaller-text}
+
+```javascript
+// 4. Amostras de treinamento (FeatureCollection com propriedade 'classe')
+//    0=Água, 1=Vegetação, 2=Solo_exposto, 3=Urbano
+var treinamento = imagem.sampleRegions({
+  collection: amostras_treino,
+  properties: ['classe'],
+  scale: 10
+});
+
+// 5. Treinar Random Forest
+var classificador = ee.Classifier.smileRandomForest(100)
+  .train(treinamento, 'classe', bandas);
+
+// 6. Classificar imagem
+var classificado = imagem.classify(classificador);
+Map.addLayer(classificado, {min: 0, max: 3,
+  palette: ['blue', 'green', 'brown', 'gray']}, 'Classificação');
+```
+
+---
+
+## Roteiro no GEE — Parte 3: Avaliação {.smaller-text}
+
+```javascript
+// 7. Amostras de validação (independentes do treinamento)
+var validacao = imagem.sampleRegions({
+  collection: amostras_validacao,
+  properties: ['classe'],
+  scale: 10
+});
+
+// 8. Classificar amostras de validação
+var validado = validacao.classify(classificador);
+
+// 9. Matriz de confusão
+var matriz = validado.errorMatrix('classe', 'classification');
+print('Matriz de Confusão:', matriz);
+print('Acurácia Global:', matriz.accuracy());
+print('Kappa:', matriz.kappa());
+print('Acurácia do Produtor:', matriz.producersAccuracy());
+print('Acurácia do Usuário:', matriz.consumersAccuracy());
+```
+
+---
+
+## Roteiro no GEE — Parte 4: Mapa de probabilidade {.smaller-text}
+
+```javascript
+// 10. Classificação com probabilidades (Random Forest)
+var classificador_prob = ee.Classifier.smileRandomForest(100)
+  .setOutputMode('MULTIPROBABILITY')
+  .train(treinamento, 'classe', bandas);
+
+var probabilidades = imagem.classify(classificador_prob);
+
+// 11. Extrair probabilidade máxima por pixel
+var prob_max = probabilidades.arrayReduce(ee.Reducer.max(), [0])
+  .arrayGet([0])
+  .rename('prob_max');
+
+// 12. Visualizar mapa de confiança
+Map.addLayer(prob_max, {min: 0.3, max: 1.0,
+  palette: ['red', 'yellow', 'green']}, 'Confiança da Classificação');
+```
+
+::: {.info-box}
+**Interpretação:** áreas em **vermelho** indicam baixa confiança do classificador — priorize coleta de campo nessas regiões.
+:::
+
+---
+
+## Exercício proposto {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+### Atividade
+
+1. No GEE, selecione uma imagem Sentinel-2 do seu município
+2. Colete pelo menos **30 amostras por classe** (mínimo 3 classes)
+3. Divida em 70% treino / 30% validação
+4. Classifique com Random Forest (100 árvores)
+5. Gere a matriz de confusão e calcule OA, Kappa, PA e UA
+6. Produza o mapa de probabilidade máxima
+7. Discuta: onde o mapa é confiável? Onde falha?
+:::
+
+::: {.column width="40%"}
+::: {.highlight-box}
+### Entrega
+
+- **Formato:** relatório (PDF) com capturas de tela do GEE + código
+- **Prazo:** 14 dias
+- **Critérios:** métricas corretas, interpretação coerente, mapa de incerteza
+:::
+:::
+:::
+
+---
+
+## Referências {.smaller-text}
+
+- Congalton, R. G., & Green, K. (2019). *Assessing the Accuracy of Remotely Sensed Data*, 3ª ed. CRC Press.
+- Foody, G. M. (2002). Status of land cover classification accuracy assessment. *Remote Sensing of Environment*, 80(1), 185–201.
+- Pontius, R. G., & Millones, M. (2011). Death to Kappa. *Int. J. Remote Sensing*, 32(21), 6321–6338.
+- Landis, J. R., & Koch, G. G. (1977). The measurement of observer agreement for categorical data. *Biometrics*, 33, 159–174.
+- Gorelick, N. et al. (2017). Google Earth Engine. *Remote Sensing of Environment*, 202, 18–27.
+
+---
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::
