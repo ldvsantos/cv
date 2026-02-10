@@ -8,6 +8,8 @@ image: "../../posts/terroir-digital-ml/network-communities.png"
 lang: pt-BR
 ---
 
+![Área revegetada após protocolo de NBS, exemplo de resultado ambiental mensurável cuja validação depende de modelos preditivos robustos e dados FAIR](../../img/Revegetacao.JPEG){fig-alt="Área revegetada como resultado de intervenção ambiental mensurável" width="80%"}
+
 A aplicação da Inteligência Artificial nas ciências ambientais não constitui uma ruptura epistemológica, mas uma evolução dos métodos estatísticos para a aproximação de funções não lineares em espaços de alta dimensionalidade. O desafio central da pesquisa de qualidade não reside no ajuste dos dados de treino, mas na capacidade de generalização do modelo para cenários não observados. Em termos de engenharia de dados, o Erro de Generalização decompõe-se no dilema Viés-Variância ($E[(y - \hat{f}(x))^2] = \text{Viés}^2 + \text{Variância} + \sigma^2$), onde modelos excessivamente complexos tendem a ter baixo viés porém alta variância (overfitting), memorizando o ruído estocástico dos dados em vez de aprender o sinal determinístico do fenômeno ambiental. A qualidade científica é, portanto, medida pela robustez do modelo em manter o erro controlado quando exposto a novos dados, evitando conclusões espúrias que poderiam fundamentar decisões de gestão equivocadas.
 
 ## Autocorrelação espacial e validação
@@ -22,12 +24,15 @@ A credibilidade da IA ambiental depende de sua auditabilidade. Modelos de tipo "
 
 No contexto do semiárido brasileiro, a escassez de séries históricas longas e a alta variabilidade climática impõem restrições adicionais à modelagem. A aplicação de algoritmos complexos (Redes Neurais Profundas) em datasets pequenos (*small data*) frequentemente resulta em soluções instáveis, razão pela qual a engenharia de conhecimento deve priorizar modelos mais parcimoniosos, como Random Forests, que oferecem melhor interpretabilidade e resistência ao ruído. A validação não deve se limitar a métricas de acurácia global, mas investigar a distribuição espacial do erro e a sensibilidade do modelo às variáveis de entrada. Somente através de uma governança de algoritmos transparente e tecnicamente fundamentada será possível transformar dados massivos em inteligência acionável para a conservação da biodiversidade e a gestão de recursos hídricos.
 
-<!--
-SUGESTÕES DE IMAGENS PARA GERAÇÃO POR IA:
+![Visão reticular de dados geoespaciais processados por algoritmos de análise espacial](../../img/visao_reticulo.png){fig-alt="Visão reticular de dados geoespaciais processados" width="80%"}
 
-1. **ia-ambiental-cover.png** (imagem de capa): Composição conceitual mesclando rede neural estilizada (nós e conexões) com paisagem ambiental (floresta, rio, solo), transmitindo a fusão IA + meio ambiente, estilo tech/ciência.
+::: {.callout-tip}
+## 📷 Sugestão de imagem
+**vies-variancia.png** — Diagrama clássico do dilema viés-variância (alvo com tiros agrupados mas deslocados vs. dispersos vs. centrados e agrupados).
 
-2. **vies-variancia.png**: Diagrama clássico do dilema viés-variância (alvo com tiros agrupados mas deslocados = alto viés; tiros dispersos = alta variância; tiros centrados e agrupados = modelo ideal).
+**spatial-block-cv.png** — Mapa com área de estudo dividida em blocos espaciais coloridos (treino em azul, teste em laranja), ilustrando validação cruzada espacial vs. sorteio aleatório.
+:::
 
-3. **spatial-block-cv.png**: Mapa mostrando uma área de estudo dividida em blocos espaciais coloridos (treino em azul, teste em laranja), ilustrando a validação cruzada por blocos espaciais vs. sorteio aleatório.
--->
+---
+
+*Para saber mais, confira os posts sobre [Terroir Digital e Machine Learning](/posts/terroir-digital-ml/), [Sensoriamento Remoto](/posts/sensoriamento-remoto-uso-cobertura/) e [Índice Fuzzy de Sustentabilidade](/posts/indice-fuzzy-sustentabilidade/). Visite também nossas [publicações](/papers/) e [projetos](/#projetos).*

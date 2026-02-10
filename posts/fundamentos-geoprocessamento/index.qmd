@@ -8,6 +8,8 @@ image: "../../posts/fotovoltaica-flutuante-xingo/mapa-zoneamento.png"
 lang: pt-BR
 ---
 
+![Vista do permeâmetro de campo utilizado para determinação de condutividade hidráulica, parâmetro crítico para modelagem espacial em SIG](../../img/Figura_1_permeametro.jpg){fig-alt="Permeâmetro de campo para determinação de condutividade hidráulica" width="80%"}
+
 A consolidação do geoprocessamento como disciplina científica resulta da convergência entre cartografia analítica, geodésia de precisão e teoria da informação espacial. Da cartografia temática de Humboldt à formalização da álgebra de mapas por Tomlin (1990), o espaço geográfico deixou de constituir suporte passivo para tornar-se variável de estado central na modelagem de sistemas ambientais. Nesse paradigma, o geoprocessamento articula ontologias espaciais, estruturas de dados, algoritmos numéricos e inferência estatística em cadeia capaz de traduzir observações físicas em estimativas quantitativas verificáveis. No semiárido, a sazonalidade fenológica e a intermitência hidrológica exigem que recorte espacial e janela de aquisição sejam coerentes com o mecanismo físico investigado, sob pena de invalidar o produto resultante.
 
 ## Representação do espaço geográfico
@@ -28,12 +30,15 @@ A dependência espacial impõe violação controlada do pressuposto de independ�
 
 A geoestatística modela a continuidade espacial pelo semivariograma $\gamma(h) = \frac{1}{2}\operatorname{Var}[Z(s) - Z(s+h)]$, que alimenta a krigagem ordinária como estimador linear não enviesado de variância mínima. A superioridade desse estimador sobre métodos determinísticos reside na entrega simultânea de superfície estimada e superfície de variância, permitindo incorporar o risco associado a cada predição, condição essencial para a gestão adaptativa de sistemas naturais sob variabilidade climática.
 
-<!--
-SUGESTÕES DE IMAGENS PARA GERAÇÃO POR IA:
+::: {.callout-tip}
+## 📷 Sugestão de imagem
+**algebra-mapas.png** — Diagrama conceitual de operações de álgebra de mapas (camadas empilhadas com operadores +, ×, overlay) sobre paisagem semiárida estilizada.
 
-1. **geoprocessamento-cover.png** (imagem de capa): Visualização 3D de um modelo digital de terreno com camadas sobrepostas (vetorial + raster), cores de heatmap, grade geodésica ao fundo, estilo técnico/científico.
+**kriging-semivariograma.png** — Semivariograma experimental com ajuste esférico, ao lado de superfície interpolada por krigagem com mapa de variância associado.
 
-2. **algebra-mapas.png**: Diagrama conceitual mostrando operações de álgebra de mapas (camadas empilhadas com operadores +, ×, overlay) sobre uma paisagem semiárida estilizada.
+**geoprocessamento-cover.png** — Visualização 3D de MDE com camadas sobrepostas (vetorial + raster), cores de heatmap e grade geodésica.
+:::
 
-3. **kriging-semivariograma.png**: Ilustração de um semivariograma experimental com ajuste de modelo esférico, ao lado de uma superfície interpolada por krigagem com mapa de variância associado.
--->
+---
+
+*Para saber mais, confira os posts sobre [SIG na Exploração Mineral](/posts/sig-exploracao-mineral/), [Geoprocessamento na Mineração](/posts/geoprocessamento-mineracao/) e [Sensoriamento Remoto](/posts/sensoriamento-remoto-uso-cobertura/). Visite também nossas [publicações](/papers/) e [projetos](/#projetos).*

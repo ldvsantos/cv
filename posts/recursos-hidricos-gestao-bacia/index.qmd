@@ -8,6 +8,8 @@ image: "../../img/Canal%20escoamento.JPEG"
 lang: pt-BR
 ---
 
+![Canal de escoamento protegido com geossintéticos como parte de sistema integrado de gestão hídrica no Baixo São Francisco](../../img/Canal%20escoamento.JPEG){fig-alt="Canal de escoamento com geossintéticos para controle hídrico" width="80%"}
+
 A bacia hidrográfica não deve ser compreendida apenas como uma circunscrição geográfica, mas como um volume de controle termodinâmico onde ocorrem interações de massa e energia. Sob a ótica da engenharia hidrológica, ela opera como um sistema aberto regido pelo princípio da conservação de massa, no qual a entrada (precipitação) é particionada entre saídas (evapotranspiração e escoamento) e variação de armazenamento ($P - E_a - Q = dS/dt$). Essa definição física justifica a adoção da bacia como unidade territorial de planejamento pela Lei nº 9.433/1997, uma vez que qualquer intervenção antrópica a montante propaga efeitos cumulativos a jusante, alterando a disponibilidade de água e transportando passivos ambientais de forma determinística e rastreável.
 
 ## Dinâmica hidrológica e uso do solo
@@ -22,12 +24,15 @@ A Política Nacional de Recursos Hídricos estabelece a infraestrutura legal que
 
 No semiárido, onde a intermitência dos rios é a regra e a evapotranspiração frequentemente supera a precipitação, a gestão por bacia exige engenharia de convivência baseada em dados robustos. O planejamento deve priorizar a maximização do armazenamento através da revitalização de bacias e da proteção de áreas de recarga, mitigando a vulnerabilidade a eventos extremos. A eficácia da gestão depende da transposição do entendimento físico da bacia para a esfera decisória, e a governança participativa materializada nos Comitês de Bacia só é efetiva quando subsidiada por monitoramento hidrológico consistente que permita calibrar os instrumentos de comando e controle frente à variabilidade climática. A segurança hídrica, nesse contexto, não é um estado estático, mas o resultado de um gerenciamento dinâmico que harmoniza os usos múltiplos com a integridade do ciclo hidrológico.
 
-<!--
-SUGESTÕES DE IMAGENS PARA GERAÇÃO POR IA:
+![Área revegetada integrando controle de erosão e gestão hídrica por meio de NBS no Semiárido](../../img/Revegetacao.JPEG){fig-alt="Área revegetada com protocolo de gestão hídrica e controle de erosão" width="80%"}
 
-1. **bacia-cover.png** (imagem de capa): Vista aérea estilizada de uma bacia hidrográfica com rede de drenagem em azul, divisores de água em linhas brancas, uso do solo em mosaico de cores (agricultura, vegetação, urbano), setas indicando fluxo P → Q.
+::: {.callout-tip}
+## 📷 Sugestão de imagem
+**balanco-hidrico.png** — Diagrama do balanço hídrico (precipitação, evapotranspiração, escoamento superficial/subterrâneo, armazenamento no solo).
 
-2. **balanco-hidrico.png**: Diagrama esquemático do balanço hídrico (precipitação entrando pelo topo, evapotranspiração saindo por setas ascendentes, escoamento superficial e subterrâneo, armazenamento no solo).
+**diluicao-qualidade.png** — Gráfico da relação vazão vs. concentração de poluentes (curva hiperbólica) com linha de limite de classe de enquadramento.
+:::
 
-3. **diluicao-qualidade.png**: Gráfico conceitual mostrando a relação entre vazão do rio e concentração de poluentes (curva hiperbólica), com linha de limite da classe de enquadramento.
--->
+---
+
+*Para saber mais, confira os posts sobre [Monitoramento Hidrológico e Geotecnologias](/posts/monitoramento-hidrologico/), [Geotecnologias na Seca](/posts/geotecnologias-seca-recursos-hidricos/) e [Degradação do Solo e Desertificação](/posts/degradacao-desertificacao-clima/). Visite também nossas [publicações](/papers/) e [projetos](/#projetos).*

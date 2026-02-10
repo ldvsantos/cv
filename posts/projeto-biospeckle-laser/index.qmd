@@ -1,0 +1,38 @@
+---
+title: "Biospeckle Laser: Análise de Frequências e Umidade do Solo por Interferometria Óptica"
+author: "Luiz Diego Vidal Santos"
+date: "2020-06-15"
+categories: [biospeckle, laser, análise não destrutiva, umidade do solo, FFT, processamento de imagens]
+description: "Aplicação de biospeckle laser para análise de frequências e correlação com valores de umidade do solo, utilizando algoritmos de triagem e Transformada de Fourier."
+image: "../../img/Biospecke 1.jpg"
+lang: pt-BR
+---
+
+A análise não destrutiva de propriedades do solo por métodos ópticos representa uma fronteira na instrumentação agrícola e ambiental. O projeto Biospeckle Laser investiga a aplicação de interferometria por speckle (granulação óptica) para correlacionar padrões de atividade de superfície com os estados hídricos do solo, por meio de algoritmos de processamento de imagem baseados na Transformada Rápida de Fourier (FFT) e em índices de atividade temporal.
+
+![Montagem experimental do sistema Biospeckle Laser com fonte coerente iluminando amostra de solo, câmera CCD e sistema de aquisição para captura de padrões de interferência](../../img/Biospecke%201.jpg){fig-alt="Equipamento de biospeckle laser montado para análise de amostras de solo" width="80%"}
+
+## Princípio físico e montagem experimental
+
+O biospeckle fundamenta-se no fenômeno de granulação óptica que ocorre quando luz laser coerente é refletida ou transmitida por superfícies opticamente rugosas. Variações temporais no padrão de speckle refletem atividade na superfície analisada, seja por movimento de partículas, processos biológicos ou alterações no índice de refração associados ao teor de água. A montagem experimental utiliza um laser de He-Ne como fonte coerente, câmera CCD para aquisição de sequências de imagens dos padrões de speckle, e softwares dedicados para processamento temporal dos dados.
+
+![Detalhe do padrão de speckle capturado durante análise de amostra, evidenciando a granulação óptica cuja variação temporal é correlacionada com propriedades da matriz porosa do solo](../../img/Biospecke%202.jpg){fig-alt="Padrão de biospeckle capturado em amostra de solo" width="80%"}
+
+## Algoritmos de processamento e análise espectral
+
+O processamento dos dados envolve a construção de matrizes espaco-temporais de atividade (THSP, *Time History of Speckle Pattern*), sobre as quais são aplicados índices de atividade como o Momento de Inércia e a Diferença Generalizada. A análise espectral por FFT decompõe os sinais de atividade em componentes de frequência, permitindo a identificação de assinaturas espectrais associadas a diferentes faixas de umidade. Os algoritmos de triagem desenvolvidos automatizam a classificação das amostras em categorias de estado hídrico com base nos perfis espectrais obtidos.
+
+## Resultados e correlação com umidade
+
+O método demonstrou sensibilidade para distinguir amostras de solo em diferentes estados de saturação, com correlações significativas entre os índices de atividade de speckle e as medições gravimétricas de umidade. A resolução temporal do método permite acompanhar processos de secagem e reumedecimento em tempo real, abrindo perspectivas para aplicações em monitoramento contínuo e não invasivo de condições hídricas em laboratório e, potencialmente, em campo.
+
+::: {.callout-tip}
+## 📷 Sugestão de imagem
+**biospeckle-thsp.png** — Exemplo de matriz THSP (Time History of Speckle Pattern) mostrando variação temporal do padrão de speckle em diferentes umidades.
+
+**biospeckle-fft-espectro.png** — Espectro de frequências obtido por FFT mostrando picos associados a diferentes teores de água no solo.
+:::
+
+---
+
+*Para saber mais sobre análise de propriedades do solo, confira os posts sobre [Propriedades Físicas e Hidrológicas](/posts/prop-fisicas-hidrologicas/) e [Infiltração e Hidrologia de Campo](/posts/infiltracao-hidrologia/). Visite também nossas [publicações](/papers/) e [projetos](/#projetos).*

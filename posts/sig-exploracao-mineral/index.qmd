@@ -8,6 +8,12 @@ image: "../../img/Bloco%20cisalhaento%201.jpg"
 lang: pt-BR
 ---
 
+::: {layout-ncol=2}
+![Bloco de solo cisalhado expondo a mineralogia e a estrutura interna do substrato, dado fundamental para a modelagem de prospectividade mineral](../../img/Bloco%20cisalhaento%201.jpg){fig-alt="Bloco de solo cisalhado revelando mineralogia do substrato"}
+
+![Amostra geológica em ensaio de laboratório, evidenciando as características texturais e composicionais do material](../../img/Bloco%20cisalhaento%206.jpg){fig-alt="Amostra geológica em ensaio laboratorial"}
+:::
+
 A exploração mineral contemporânea transcendeu o paradigma da prospecção fortuita para consolidar-se como engenharia de sistemas preditivos orientada à redução progressiva da área de busca. O conceito de sistema mineral, formalizado por Wyborn et al. (1994), representa essa mudança paradigmática ao substituir a análise de depósitos isolados pela modelagem integrada de processos geodinâmicos, na qual cada mineralização é decomposta em três componentes funcionais (fonte, transporte e armadilha). Nesse arcabouço, o Sistema de Informação Geográfica opera como integrador da infraestrutura de dados espaciais, convertendo evidências geológicas, geofísicas, geoquímicas e de sensoriamento remoto em camadas preditoras cujo cruzamento probabilístico gera mapas de favorabilidade mineral que otimizam a alocação de capital exploratório.
 
 ## Fontes de dados e pré-processamento
@@ -22,12 +28,15 @@ A combinação algébrica das camadas de evidência fundamenta-se em duas famíl
 
 Em contrapartida, os métodos data-driven (Pesos de Evidência) empregam o teorema de Bayes para calcular o Contraste ($C = W^+ - W^-$), cuja magnitude positiva confirma associação espacial com a mineralização, eliminando subjetivismo na ponderação. Redes neurais artificiais e máquinas de vetores de suporte ampliam o arsenal ao capturar não-linearidades complexas, e a área sob a curva ROC (AUC > 0,85) constitui o indicador padrão de capacidade discriminante, desde que a validação cruzada k-fold espacial garanta que blocos sejam espacialmente disjuntos. No semiárido nordestino, o mapa de favorabilidade mineral deve ser cruzado com camadas de APPs, Unidades de Conservação e zonas de recarga hídrica, resultando em um modelo de aptidão multiobjetivo que antecipa conflitos de licenciamento e demonstra, de forma auditável, a compatibilidade da exploração com a segurança hídrica e a conservação do bioma Caatinga.
 
-<!--
-SUGESTÕES DE IMAGENS PARA GERAÇÃO POR IA:
+::: {.callout-tip}
+## 📷 Sugestão de imagem
+**fuzzy-gamma-operador.png** — Diagrama conceitual mostrando camadas de evidência (geofísica, geoquímica, estrutural) entrando em funções de pertinência Fuzzy e combinadas pelo operador Gamma.
 
-1. **sig-mineral-cover.png** (imagem de capa): Mapa de prospectividade mineral com gradiente de cores (azul frio = baixa favorabilidade, vermelho quente = alta favorabilidade) sobre fundo geológico estilizado, com pontos de depósitos conhecidos marcados.
+**alteracao-hidrotermal.png** — Composição de falsa cor de imagem ASTER mostrando zonas de alteração hidrotermal (propilítica em verde, argílica em magenta, silicificada em branco).
 
-2. **fuzzy-gamma-operador.png**: Diagrama conceitual mostrando camadas de evidência (geofísica, geoquímica, estrutural) entrando em funções de pertinência fuzzy e sendo combinadas pelo operador Gamma.
+**sig-mineral-cover.png** — Mapa de prospectividade mineral com gradiente de cores (azul = baixa, vermelho = alta favorabilidade) sobre fundo geológico.
+:::
 
-3. **alteracao-hidrotermal.png**: Composição de falsa cor de imagem ASTER mostrando zonas de alteração hidrotermal (propilítica em verde, argílica em magenta, silicificada em branco) sobre terreno minerado.
--->
+---
+
+*Para saber mais, confira os posts sobre [Fundamentos do Geoprocessamento](/posts/fundamentos-geoprocessamento/), [Geoprocessamento na Mineração](/posts/geoprocessamento-mineracao/) e [Sensoriamento Remoto](/posts/sensoriamento-remoto-uso-cobertura/). Visite também nossas [publicações](/papers/) e [projetos](/#projetos).*

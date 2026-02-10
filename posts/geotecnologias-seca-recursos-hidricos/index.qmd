@@ -8,6 +8,8 @@ image: "../../posts/fotovoltaica-flutuante-xingo/mapa-localizacao.png"
 lang: pt-BR
 ---
 
+![Cordões de contorno como infraestrutura de convivência com a seca, interceptando escoamento e promovendo infiltração no Solo](../../img/Cordao%20contorno%202.JPEG){fig-alt="Cordão de contorno em área experimental para gestão hídrica" width="80%"}
+
 A escalada da crise hídrica resulta da convergência de teleconexões climáticas intensificadas e pressões antrópicas crescentes sobre aquíferos e reservatórios, exigindo a transição de um paradigma reativo para um modelo preventivo orientado pelo cálculo de risco. Com a promulgação da Lei 9.433/1997, a Política Nacional de Recursos Hídricos conferiu status legal à gestão integrada por bacia hidrográfica e consagrou cinco instrumentos operacionais (planos de recursos hídricos, enquadramento de corpos d'água, outorga, cobrança pelo uso e o Sistema Nacional de Informações), porém o arcabouço tecnológico da década de noventa não permitia a visualização sinótica das variáveis críticas do ciclo hidrológico. A constelação de satélites multiespectrais, radares de abertura sintética, gravímetros orbitais e termômetros radiométricos metamorfoseou geotecnologias antes restritas a cartas temáticas estáticas em sistemas de suporte à decisão alimentando plataformas analíticas em tempo quase real, condição essencial para o semiárido brasileiro, cuja intermitência hidrológica e sazonalidade pluviométrica impõem restrições severas ao planejamento de longo prazo.
 
 ## Monitoramento de reservatórios e aquíferos
@@ -24,12 +26,15 @@ No domínio agrícola, a seca manifesta-se na queda do potencial matricial do so
 
 Governança hídrica baseada em risco apoia-se na capacidade institucional de antecipar choques, não no volume absoluto disponível. Construído sobre SIG corporativo, o DSS integra grades de precipitação satelital calibrada (CHIRPS, GPM), malhas termais, redes de fluxo raster e cadastros de outorga, permitindo que algoritmos de otimização estocástica resolvam a alocação multi-usuário sob restrições de segurança hídrica, energia firme e vazão ecológica. Políticas de tarifação escalonada e seguro paramétrico utilizam como gatilho índices remotos auditáveis (SPI, VCI, anomalias de $ET_r$), reduzindo a assimetria de informação entre regulador e usuários e substituindo a improvisação por engenharia institucional de resiliência. Deslocar o foco de respostas emergenciais para a resiliência planejada consolida um ciclo virtuoso em que a tomada de decisão é inseparável da inteligência geoespacial.
 
-<!--
-SUGESTÕES DE IMAGENS PARA GERAÇÃO POR IA:
+![Canal de escoamento monitorado com geossintéticos, integrando controle hidrossedimentológico e gestão hídrica](../../img/Canal%20escoamento.JPEG){fig-alt="Canal de escoamento monitorado no Baixo São Francisco" width="80%"}
 
-1. **geotecnologias-seca-cover.png** (imagem de capa): Composição mostrando reservatório do semiárido com nível baixo, overlays de grades de precipitação satelital em cores de heatmap (CHIRPS), e silhueta de satélite no canto superior.
+::: {.callout-tip}
+## 📷 Sugestão de imagem
+**grace-aquiferos.png** — Mapa da América do Sul com anomalias gravimétricas GRACE (vermelho = perda de água subterrânea, azul = ganho), foco no Nordeste brasileiro.
 
-2. **grace-aquiferos.png**: Mapa da América do Sul com anomalias gravimétricas GRACE em escala de cores (vermelho = perda de água subterrânea, azul = ganho), foco no Nordeste brasileiro.
+**indices-seca-timeline.png** — Diagrama da cascata dos tipos de seca (meteorológica → agrícola → hidrológica → socioeconômica) com índices respectivos (SPI, NDVI/VCI, SEBAL).
+:::
 
-3. **indices-seca-timeline.png**: Diagrama conceitual mostrando a cascata dos tipos de seca (meteorológica → agrícola → hidrológica → socioeconômica) com os respectivos índices de monitoramento (SPI, NDVI/VCI, SEBAL).
--->
+---
+
+*Para saber mais, confira os posts sobre [Recursos Hídricos e Gestão por Bacia](/posts/recursos-hidricos-gestao-bacia/), [Monitoramento Hidrológico](/posts/monitoramento-hidrologico/) e [Sensoriamento Remoto](/posts/sensoriamento-remoto-uso-cobertura/). Visite também nossas [publicações](/papers/) e [projetos](/#projetos).*

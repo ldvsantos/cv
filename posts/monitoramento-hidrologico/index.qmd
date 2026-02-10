@@ -8,6 +8,8 @@ image: "../../posts/classificacao-feicoes-erosivas/precipitacao.png"
 lang: pt-BR
 ---
 
+![Canal de escoamento instrumentado como parte do sistema de monitoramento hidrológico no Baixo São Francisco](../../img/Canal%20escoamento.JPEG){fig-alt="Canal de escoamento instrumentado para monitoramento hidrológico" width="80%"}
+
 O monitoramento hidrológico não se resume à coleta passiva de dados, mas constitui a base para a resolução de um problema inverso engenheirístico que consiste em inferir as propriedades e o estado do sistema a partir de observações pontuais das variáveis de saída. Sob a ótica de sistemas dinâmicos, a rede de monitoramento deve ser desenhada para capturar a variabilidade espaço-temporal dos processos determinísticos e estocásticos que regem o ciclo da água, e a falha nesse desenho resulta em uma representação enviesada do fenômeno, comprometendo a calibração de modelos e a segurança de obras hidráulicas. A concepção da rede como ativo estratégico de infraestrutura implica que cada estação hidrométrica gera valor econômico ao reduzir a entropia do processo decisório em cenários de incerteza climática.
 
 ## Hidrometria e a curva-chave
@@ -22,12 +24,15 @@ Em bacias extensas ou de difícil acesso, como ocorre frequentemente no semiári
 
 A utilidade da série histórica para o dimensionamento de obras e a emissão de outorgas depende diretamente de sua consistência estatística. Procedimentos de QA/QC são aplicados para identificar outliers, preencher falhas e detectar tendências não naturais como a deriva instrumental. Uma série consistente reduz a incerteza nos cálculos de recorrência de cheias e nas curvas de permanência, fundamentais para a definição de vazões outorgáveis e ecológicas. A integração de sensores telemétricos, modelagem hidráulica rigorosa da curva-chave e sensoriamento remoto compõe um sistema de suporte à decisão robusto, capaz de antecipar eventos críticos e transformar dados brutos em informações processadas e validadas para a gestão hídrica eficiente.
 
-<!--
-SUGESTÕES DE IMAGENS PARA GERAÇÃO POR IA:
+::: {.callout-tip}
+## 📷 Sugestão de imagem
+**curva-chave.png** — Gráfico da curva-chave (nível H vs. vazão Q) com pontos de medição de campo e curva ajustada, anotando parâmetros a, b, H₀.
 
-1. **monitoramento-cover.png** (imagem de capa): Estação hidrométrica em rio semiárido (régua linimétrica, sensor de nível, painel solar), com sobreposição de grade de precipitação satelital GPM em cores.
+**rede-monitoramento.png** — Mapa de bacia hidrográfica com distribuição de estações pluviométricas (azul) e fluviométricas (vermelho), mostrando cobertura e lacunas.
 
-2. **curva-chave.png**: Gráfico da curva-chave (nível H no eixo x, vazão Q no eixo y) com pontos de medição de campo e curva ajustada, anotando os parâmetros a, b, H0.
+**monitoramento-cover.png** — Estação hidrométrica em rio semiárido (régua linimétrica, sensor de nível, painel solar) com sobreposição de grade de precipitação GPM.
+:::
 
-3. **rede-monitoramento.png**: Mapa de bacia hidrográfica com distribuição de estações pluviométricas (pontos azuis) e fluviométricas (triângulos vermelhos), mostrando a cobertura espacial e as lacunas.
--->
+---
+
+*Para saber mais, confira os posts sobre [Recursos Hídricos e Gestão por Bacia](/posts/recursos-hidricos-gestao-bacia/), [Geotecnologias na Seca](/posts/geotecnologias-seca-recursos-hidricos/) e [Fundamentos do Geoprocessamento](/posts/fundamentos-geoprocessamento/). Visite também nossas [publicações](/papers/) e [projetos](/#projetos).*

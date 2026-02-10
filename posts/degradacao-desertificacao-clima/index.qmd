@@ -8,9 +8,17 @@ image: "../../img/Talude%201.jpg"
 lang: pt-BR
 ---
 
+![Processo erosivo avançado em talude do Baixo São Francisco, evidenciando a exposição do horizonte C e a perda irreversível de solo superficial](../../img/Talude%206.jpg){fig-alt="Processo erosivo avançado em talude degradado no Baixo São Francisco" width="80%"}
+
 A degradação do solo configura-se como processo termodinâmico irreversível quando a dissipação de energia excede a capacidade do sistema edáfico de reorganizar suas estruturas físicas, químicas e biológicas, deslocando-o de um estado metaestável para um regime entrópico de difícil reversão. O conceito de Neutralidade da Degradação da Terra (Land Degradation Neutrality, LDN), introduzido pela UNCCD dentro da Meta 15.3 dos Objetivos de Desenvolvimento Sustentável, postula que a área anualmente restaurada deve ao menos compensar a superfície que ingressa em degradação, exigindo métrica tridimensional baseada em tendências de cobertura da terra, produtividade e estoques de carbono orgânico. Quando se transita para ambientes de déficit hídrico crônico, caracterizados por um Índice de Aridez inferior a 0,65 ($IA = P / ETP$), o colapso estrutural assume contornos de desertificação, e a perda de material fino rico em compostos húmicos aumenta o albedo regional, esfriando a troposfera inferior e inibindo a convecção úmida conforme o mecanismo de Charney (1975), de modo que a própria erosão fecha um ciclo de retroalimentação climática que endossa a aridificação progressiva.
 
 ## Mecânica da perda de solo e retroalimentação climática
+
+::: {layout-ncol=2}
+![Bloco de solo cisalhado revelando a estrutura interna comprometida e a suscetibilidade à desagregação sob escoamento concentrado](../../img/Bloco%20cisalhaento%201.jpg){fig-alt="Bloco de solo cisalhado em ensaio de laboratório"}
+
+![Talude com perfil íngreme e sinais de erosão ativa, onde a perda de cobertura vegetal amplifica o albedo e fecha o ciclo de retroalimentação climática](../../img/Talude%203.JPEG){fig-alt="Talude degradado com erosão ativa e perda de cobertura"}
+:::
 
 No plano físico, sob cenários de mudança climática o fator R (Erosividade) da USLE cresce exponencialmente em resposta à concentração de energia cinética das chuvas intensas, enquanto o fator C (Uso e Manejo) se eleva na esteira do desmatamento que acompanha a expansão agropecuária desordenada. A exportação preferencial da fração coloidal empobrece a capacidade de troca catiônica do sistema e converte o solo, outrora sumidouro de carbono, em emissor líquido de CO₂, pois a perda de Carbono Orgânico do Solo diminui a estabilidade de agregados via ruptura das pontes de cátions, acelerando a erodibilidade e criando um ciclo vicioso cuja externalidade alcança os corpos d'água a jusante pela eutrofização de nutrientes dissolvidos.
 
@@ -22,12 +30,15 @@ Em zonas onde a lâmina de recarga é insuficiente para promover lixiviação de
 
 A detecção precoce da mudança de estado exige indicadores biológicos complementares à análise físico-química convencional. A biomassa microbiana funciona como proxy da atividade metabólica fundamental à ciclagem de nutrientes, enquanto o Quociente Metabólico ($qCO_2$) eleva-se em sistemas estressados, indicando ineficiência energética da microbiota. Enzimas hidrolíticas como a $\beta$-glucosidase e a fosfatase ácida oferecem sinais de alerta antes que alterações na densidade ou no pH se tornem mensuráveis por métodos convencionais. A integração desses parâmetros com índices de sensoriamento remoto (NDVI, SAVI, albedo de superfície) permite identificar hotspots de degradação com acurácia espacial compatível com a gestão adaptativa prescrita pela LDN, orientando a alocação de recursos em Planos de Recuperação de Áreas Degradadas onde o retorno hidrológico e climático é maximizado.
 
-<!--
-SUGESTÕES DE IMAGENS PARA GERAÇÃO POR IA:
+![Área revegetada após protocolo integrado de restauração, demonstrando a viabilidade de reversão do processo degradativo quando monitoramento e engenharia de restauração são aplicados de forma integrada](../../img/Revegetacao.JPEG){fig-alt="Área restaurada com protocolo de NBS no Baixo São Francisco" width="80%"}
 
-1. **degradacao-cover.png** (imagem de capa): Paisagem dividida ao meio, lado esquerdo com solo degradado/rachado/desertificado sob sol quente, lado direito com solo restaurado com vegetação, estilo fotorrealista aéreo.
+::: {.callout-tip}
+## 📷 Sugestão de imagem
+**charney-feedback.png** — Diagrama cíclico do mecanismo de retroalimentação albedo-precipitação de Charney (erosão → perda de cobertura → aumento de albedo → redução de convecção → menos chuva → mais erosão).
 
-2. **charney-feedback.png**: Diagrama cíclico mostrando o mecanismo de retroalimentação albedo-precipitação (erosão → perda de cobertura → aumento de albedo → redução de convecção → menos chuva → mais erosão).
+**salinizacao-perfil.png** — Corte transversal de solo irrigado mostrando o gradiente capilar ascendente, acúmulo de sais na superfície e zonas de salinização/sodificação.
+:::
 
-3. **salinizacao-perfil.png**: Corte transversal de solo irrigado mostrando o gradiente capilar ascendente, acúmulo de sais na superfície, com indicação das zonas de salinização e sodificação.
--->
+---
+
+*Para saber mais sobre controle de erosão e restauração, confira os posts sobre [Retaludamento como NBS](/posts/nbs-retaludamento/), [Intemperismo, Erosão e Formação de Solos](/posts/intemperismo-erosao-formacao-solos/) e [Classificação de Feições Erosivas com Drones](/posts/classificacao-feicoes-erosivas/). Visite também nossas [publicações](/papers/) e [projetos](/#projetos).*
