@@ -1,0 +1,339 @@
+﻿---
+title: "Medidas de Posição"
+subtitle: "Aula VI — Média, Moda e Mediana"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Federal de Sergipe"
+format: 
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UFS — Introdução à Estatística | Tema 3 — Medidas de Posição"
+    slide-number: true
+    theme: [simple, assets/ufs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+    code-fold: false
+    code-tools: true
+execute:
+  echo: true
+  eval: false
+---
+
+# [I. Introdução]{.section-header}
+
+---
+
+## Medidas de Posição {.smaller-text}
+
+As medidas de posição permitem **resumir e localizar** informações centrais em distribuições de dados. Elas orientam quanto à posição da distribuição em relação ao eixo horizontal.
+
+### Principais medidas:
+
+- **Média**
+- **Moda**
+- **Mediana**
+- **Separatrizes** (quartis, decis, percentis)
+
+---
+
+# [1 — Média]{.section-header}
+
+---
+
+## Caso 1 — Dados não agrupados {.smaller-text}
+
+$$\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}$$
+
+### Exemplo:
+
+Calcule o tempo médio de vida útil de 10 smartphones, sabendo que os tempos em meses são: 10, 29, 26, 28, 15, 23, 25, 17, 0, 20
+
+$$\bar{x} = \frac{10 + 29 + 26 + 28 + 15 + 23 + 25 + 17 + 0 + 20}{10} = 19{,}3$$
+
+```{r}
+#| eval: false
+dados <- c(10, 29, 26, 28, 15, 23, 25, 17, 0, 20)
+mean(dados)
+```
+
+---
+
+## Caso 2 — Dados agrupados por valores {.smaller-text}
+
+Média ponderada:
+
+$$\bar{x} = \frac{\sum_{i=1}^{k} x_i \cdot f_i}{N}$$
+
+::: {.columns}
+::: {.column width="50%"}
+### Exemplo:
+
+| Computadores ($x_i$) | $f_i$ |
+|----------------------|-------|
+| 0 | 2 |
+| 1 | 6 |
+| 2 | 10 |
+| 3 | 12 |
+| 4 | 4 |
+| **Total** | **34** |
+:::
+
+::: {.column width="50%"}
+$$\bar{x} = \frac{1 \cdot 6 + 2 \cdot 10 + 3 \cdot 12 + 4 \cdot 4}{34} = 2{,}3$$
+
+```{r}
+#| eval: false
+pc <- c(0, 1, 2, 3, 4)
+fi <- c(2, 6, 10, 12, 4)
+weighted.mean(pc, fi)
+```
+:::
+:::
+
+---
+
+## Caso 3 — Dados agrupados por classes {.smaller-text}
+
+Utilizamos o **ponto médio** de cada classe ($p_i$):
+
+$$\bar{x} = \frac{\sum_{i=1}^{k} p_i \cdot f_i}{N}, \quad p_i = \frac{L_i + L_s}{2}$$
+
+::: {.columns}
+::: {.column width="50%"}
+### Exemplo:
+
+| Classe | $f_i$ |
+|--------|-------|
+| 20 -- 40 | 50 |
+| 40 -- 60 | 90 |
+| 60 -- 80 | 60 |
+| **Total** | **200** |
+:::
+
+::: {.column width="50%"}
+$$\bar{x} = \frac{30 \cdot 50 + 50 \cdot 90 + 70 \cdot 60}{200} = 51$$
+
+```{r}
+#| eval: false
+fi <- c(50, 90, 60)
+pontos_medios <- c(30, 50, 70)
+media_idades <- weighted.mean(pontos_medios, fi)
+media_idades
+```
+:::
+:::
+
+---
+
+# [2 — Moda]{.section-header}
+
+---
+
+## Conceito e Classificação {.smaller-text}
+
+A **moda** (Mo) é o valor que ocorre com **maior frequência** em um conjunto de dados.
+
+### Classificação:
+
+::: {.columns}
+::: {.column width="33%"}
+::: {.info-box}
+**Amodal**
+
+Não existe moda
+
+Ex: 18, 25, 32, 14
+:::
+:::
+
+::: {.column width="33%"}
+::: {.highlight-box}
+**Unimodal**
+
+Apenas um valor
+
+Ex: 18, **25**, **25**, 14
+:::
+:::
+
+::: {.column width="33%"}
+::: {.info-box}
+**Bimodal/Polimodal**
+
+Dois ou mais valores
+
+Ex: **18**, **18**, **25**, **25**, 32
+:::
+:::
+:::
+
+```{r}
+#| eval: false
+moda <- function(x) {
+  ux <- unique(x)
+  ux[which.max(tabulate(match(x, ux)))]
+}
+dados <- c(18, 25, 25, 14)
+moda(dados)
+```
+
+---
+
+## Moda — Fórmula de King (dados agrupados) {.smaller-text}
+
+$$Mo = L_i^* + \frac{f_{i+1}}{f_{i+1} + f_{i-1}} \cdot h^*$$
+
+::: {.columns}
+::: {.column width="50%"}
+### Exemplo:
+
+| Classe | $f_i$ |
+|--------|-------|
+| 150–158 | 13 |
+| **158–166** | **19** |
+| 166–174 | 8 |
+| **Total** | **40** |
+
+Classe modal = **158–166**
+:::
+
+::: {.column width="50%"}
+```{r}
+#| eval: false
+Li  <- 158
+h   <- 8
+fi_ <- 19
+fi_anterior <- 13
+fi_posterior <- 8
+
+d1 <- fi_ - fi_anterior
+d2 <- fi_ - fi_posterior
+
+Mo_king <- Li + (d1 / (d1 + d2)) * h
+Mo_king
+```
+:::
+:::
+
+---
+
+## Moda — Fórmula de Czuber (dados agrupados) {.smaller-text}
+
+$$Mo = L_i^* + \frac{\Delta_1}{\Delta_1 + \Delta_2} \cdot h^*$$
+
+Onde:
+
+- $\Delta_1 = f_i^* - f_{i-1}$
+- $\Delta_2 = f_i^* - f_{i+1}$
+
+```{r}
+#| eval: false
+Li  <- 158
+h   <- 8
+fi_ <- 19
+fi_anterior <- 13
+fi_posterior <- 8
+
+Delta1 <- fi_ - fi_anterior
+Delta2 <- fi_ - fi_posterior
+
+Mo <- Li + (Delta1 / (Delta1 + Delta2)) * h
+Mo
+```
+
+$$Mo = 158 + \frac{6}{6 + 11} \cdot 8 = 158 + 2{,}82 = 160{,}8$$
+
+---
+
+# [3 — Mediana]{.section-header}
+
+---
+
+## Caso 1 — Dados não agrupados {.smaller-text}
+
+A **mediana** (Md) é o valor que divide o conjunto em duas partes iguais.
+
+::: {.columns}
+::: {.column width="50%"}
+### Se $n$ é ímpar:
+
+$$Md = x_{\frac{n+1}{2}}$$
+
+### Se $n$ é par:
+
+$$Md = \frac{x_{\frac{n}{2}} + x_{\frac{n}{2}+1}}{2}$$
+:::
+
+::: {.column width="50%"}
+### Exemplo:
+
+- A = {2, 6, 7, 10, 12, 13, 18, 21} → $Md = \frac{10+12}{2} = 11$
+- B = {6, 8, 10, 12, 14} → $Md = 10$
+
+```{r}
+#| eval: false
+A <- c(2, 6, 7, 10, 12, 13, 18, 21)
+B <- c(6, 8, 10, 12, 14)
+median(A)
+median(B)
+```
+:::
+:::
+
+---
+
+## Caso 3 — Dados agrupados por classes {.smaller-text}
+
+$$Md = L_i^* + \frac{\frac{\sum f_i}{2} - F_i'}{f_i^*} \cdot h^*$$
+
+::: {.columns}
+::: {.column width="50%"}
+### Exemplo:
+
+| Classe | $f_i$ | $F_i$ |
+|--------|-------|-------|
+| 0 -- 2 | 5 | 5 |
+| 2 -- 4 | 2 | 7 |
+| **4 -- 6** | **4** | **11** |
+| 6 -- 8 | 2 | 13 |
+| 8 -- 10 | 7 | 20 |
+
+Classe mediana = **4–6**
+:::
+
+::: {.column width="50%"}
+$$Md = 4 + \frac{\frac{20}{2} - 7}{4} \cdot 2$$
+
+```{r}
+#| eval: false
+n  <- 20
+Li <- 4
+h  <- 2
+fi <- 4
+Fi <- 7
+
+Md <- Li + (((n/2) - Fi) / fi) * h
+Md
+```
+:::
+:::
+
+---
+
+## {.centered-content}
+
+::: {style="text-align: center; font-size: 2.5em; color: var(--ufs-azul); margin-top: 150px;"}
+**Obrigado!**
+:::
+
+::: {style="text-align: center; font-size: 1.2em; margin-top: 50px; color: var(--ufs-cinza-escuro);"}
+**Luiz Diego Vidal Santos**
+
+Universidade Federal de Sergipe
+
+[diego@academico.ufs.br](mailto:diego@academico.ufs.br)
+:::

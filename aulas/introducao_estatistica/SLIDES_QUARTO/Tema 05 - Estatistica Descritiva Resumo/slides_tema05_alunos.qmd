@@ -1,0 +1,216 @@
+﻿---
+title: "Estatística Descritiva"
+subtitle: "Aulas VI e VIII — Versão Alunos"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Federal de Sergipe"
+format: 
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UFS — Introdução à Estatística | Tema 5 — Estatística Descritiva (Alunos)"
+    slide-number: true
+    theme: [simple, assets/ufs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: true
+  eval: false
+---
+
+# [Estatística Descritiva]{.section-header}
+
+---
+
+## O que são {.smaller-text}
+
+A **estatística descritiva** é um ramo da estatística que aplica várias técnicas para **descrever e sumarizar** um conjunto de dados.
+
+::: {.highlight-box}
+Enquanto a estatística descritiva se limita a **resumir e apresentar** os dados, a estatística inferencial busca fazer **afirmações sobre uma população** com base em informações de uma amostra.
+:::
+
+---
+
+## O que aprenderemos {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### 🔹 Medidas de tendência central
+
+- Média simples
+- Moda
+- Mediana
+
+### 🔹 Separatrizes
+
+- Mediana, Quartis, Decis, Percentis
+:::
+
+::: {.column width="50%"}
+### 🔹 Medidas de dispersão
+
+- Variância
+- Desvio-padrão
+- Erro-padrão
+- Intervalo de Confiança
+
+### 🔹 Escore Z
+
+- Transformação em unidades de desvio-padrão
+:::
+:::
+
+---
+
+# [II. Medidas de Dispersão]{.section-header}
+
+---
+
+## Objetivos e Principais Medidas {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Objetivos
+
+- **Quantificar a variabilidade**
+- **Comparar grupos**
+- **Detectar outliers**
+- **Apoiar a tomada de decisão**
+:::
+
+::: {.column width="50%"}
+### Principais Medidas
+
+- **Variância** ($s^2$): média dos quadrados dos desvios
+- **Desvio-Padrão** ($s$): raiz quadrada da variância
+- **Erro-Padrão** (EP): precisão da média amostral
+:::
+:::
+
+---
+
+## Exemplo — Criando os Dados {.smaller-text}
+
+```{r}
+#| eval: false
+dados <- data.frame(
+  cidade = c('Feira de Santana', 'Salvador', 'Vitória da Conquista',
+             'Juazeiro', 'Itabuna', 'Paulo Afonso'),
+  altitude_m = c(234, 8, 923, 368, 110, 80),
+  temp_media_c = c(24.8, 26.3, 21.2, 27.1, 25.4, 38.5)
+)
+dados
+```
+
+---
+
+## 1.1 — Média {.smaller-text}
+
+$$\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i$$
+
+```{r}
+#| eval: false
+media_alt <- mean(dados$altitude_m)
+media_alt
+```
+
+---
+
+## 1.2 — Variância {.smaller-text}
+
+$$s^2 = \frac{\sum(x_i - \bar{x})^2}{n-1}$$
+
+```{r}
+#| eval: false
+# Complete o código para calcular a variância da temperatura
+
+```
+
+---
+
+## 2.1 — Desvio-Padrão {.smaller-text}
+
+$$s = \sqrt{s^2}$$
+
+```{r}
+#| eval: false
+sd_alt <- sd(dados$altitude_m)
+# Complete: calcule o desvio-padrão da temperatura
+
+```
+
+---
+
+## 2.3 — Coeficiente de Variação {.smaller-text}
+
+$$CV = \frac{s}{\bar{x}} \times 100\%$$
+
+::: {.info-box}
+Útil para comparar variabilidade entre variáveis com **unidades diferentes** (ex: m vs. °C).
+:::
+
+```{r}
+#| eval: false
+# Complete: crie uma função para calcular o CV
+
+```
+
+---
+
+## 2.2 — Erro-Padrão {.smaller-text}
+
+$$EP = \frac{s}{\sqrt{n}}$$
+
+```{r}
+#| eval: false
+ep <- function(x, na.rm = TRUE) {
+  if (na.rm) x <- x[!is.na(x)]
+  sd(x) / sqrt(length(x))
+}
+EP_alt <- ep(dados$altitude_m)
+EP_alt
+```
+
+---
+
+## 2.2 — Escore Z {.smaller-text}
+
+$$Z_i = \frac{x_i - \bar{x}}{s}$$
+
+```{r}
+#| eval: false
+# Complete: calcule o escore Z para altitude
+
+```
+
+---
+
+## 2.3 — Intervalo de Confiança {.smaller-text}
+
+$$IC = \bar{x} \pm Z_{\alpha/2} \times EP$$
+
+```{r}
+#| eval: false
+# Complete: calcule o IC 90%, 95% e 99%
+
+```
+
+---
+
+## {.centered-content}
+
+::: {style="text-align: center; font-size: 2.5em; color: var(--ufs-azul); margin-top: 150px;"}
+**Obrigado!**
+:::
+
+::: {style="text-align: center; font-size: 1.2em; margin-top: 50px; color: var(--ufs-cinza-escuro);"}
+**Luiz Diego Vidal Santos**
+
+Universidade Federal de Sergipe
+
+[diego@academico.ufs.br](mailto:diego@academico.ufs.br)
+:::

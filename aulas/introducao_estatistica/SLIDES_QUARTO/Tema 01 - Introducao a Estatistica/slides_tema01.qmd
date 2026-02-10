@@ -1,0 +1,475 @@
+﻿---
+title: "Introdução à Estatística"
+subtitle: "Aulas I a IV — Conceitos Fundamentais"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Federal de Sergipe"
+format: 
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UFS — Introdução à Estatística | Tema 1 — Conceitos Fundamentais"
+    slide-number: true
+    theme: [simple, assets/ufs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+    code-fold: false
+    code-tools: true
+execute:
+  echo: true
+  eval: false
+---
+
+# [I. Introdução]{.section-header}
+
+---
+
+## 1.1 — Etimologia {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Definição
+
+- Inferência estatística refere-se aos resultados derivados da **análise estatística** dos dados coletados
+- A inferência estatística advém de uma relação entre a **teoria estatística** e os **dados reais**
+- A palavra **ESTATÍSTICA** vem de *STATUS* (latim = estudo), criada pelo acadêmico alemão **Gottfried Achenwall** em meados do século XVIII
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Conceito Central
+
+A Estatística é uma ciência que oferece uma **coleção de métodos** para:
+
+- Planejar experimentos e levantamentos
+- Obter dados
+- Organizar e resumir
+- Analisar e interpretar dados
+- Extrair **conhecimento**
+:::
+:::
+:::
+
+---
+
+## 1.2 — Processos Estatísticos em Pesquisas {.smaller-text}
+
+Quando solicitados a investigar um fenômeno coletivo, podemos optar por:
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.info-box}
+### Censo
+
+Estudo de **todos** os componentes de uma população
+:::
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Amostragem
+
+Estudo de **alguns** elementos de uma população cujo objetivo é fazer **inferência** sobre a população
+:::
+:::
+:::
+
+---
+
+## Tipos de Amostragem {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### 1. Amostragem Não-Probabilística
+
+Escolha dos elementos depende dos **critérios e julgamento** do pesquisador.
+
+**Exemplos:**
+
+- Amostragem por conveniência
+- Amostragem intencional
+- Amostragem por cotas
+:::
+
+::: {.column width="50%"}
+### 2. Amostragem Probabilística
+
+Escolha dos elementos é **aleatória**. Cada elemento tem probabilidade conhecida.
+
+**Exemplos:**
+
+- Amostragem Aleatória Simples (AAS)
+- Amostragem Sistemática (AS)
+- Amostragem Estratificada (AE)
+- Amostragem por Conglomerados (AC)
+:::
+:::
+
+---
+
+## Ramos da Estatística {.smaller-text}
+
+A Estatística pode ser dividida em duas grandes áreas:
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.info-box}
+### Estatística Descritiva
+
+Trata da **organização**, **resumo** e **apresentação** dos dados.
+:::
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Estatística Inferencial
+
+Trata de tirar **conclusões sobre uma população** a partir de uma amostra.
+
+A ferramenta básica é a **probabilidade**, que permite avaliar e controlar o tamanho do erro cometido ao se fazer generalizações.
+:::
+:::
+:::
+
+---
+
+## 1.3 — Conjunto de Dados, População e Amostra {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+### Conjunto de dados
+
+Coleção de observações onde cada **coluna** representa uma variável e cada **linha** uma unidade de análise.
+
+### População
+
+Conjunto **completo** de elementos que compartilham uma característica; representa o universo do estudo.
+
+### Amostra
+
+**Subconjunto** da população selecionado para representar o todo, utilizado quando o acesso à população é impraticável.
+:::
+
+::: {.column width="40%"}
+::: {.info-box}
+### Definição
+
+- Inferência estatística refere-se aos resultados derivados da **análise estatística** dos dados coletados
+- A inferência estatística advém de uma relação entre a **teoria estatística** e os **dados reais**
+:::
+:::
+:::
+
+---
+
+## Exercício 1 {.smaller-text}
+
+**Identifique a população e a amostra para os casos a seguir:**
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.info-box}
+**a)** Em uma pesquisa recente, foi perguntado a **1.708 adultos** se eles consideram o aquecimento global um problema que exige ação imediata do governo. **939** deles responderam que sim.
+:::
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**b)** Uma pesquisa conduzida entre **1.071 homens e mulheres** pela Corporação Internacional de Pesquisa de Opinião descobriu que **76% das mulheres** e **60% dos homens** haviam passado por exames físicos em 2013.
+:::
+:::
+:::
+
+---
+
+# [1.4 — Tipos de Variáveis]{.section-header}
+
+---
+
+## Variáveis Nominais {.smaller-text}
+
+Uma variável totalmente **qualitativa**
+
+- Não significa que não pode ser feita análises quantitativas
+- Os valores apenas **diferenciam categorias** qualitativas diferentes, mas **não há relação** entre as categorias
+- Os números atribuídos **não têm significado matemático**
+
+**Exemplos:** nacionalidade, religião, estado civil
+
+---
+
+## Variáveis Ordinais {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Características
+
+- Estabelece uma **ordem ou hierarquia** entre as categorias
+- O **intervalo** entre as categorias **não é regular**
+- Ex: A ordem de chegada dos corredores na linha de chegada
+
+**Exemplo:** Escolaridade
+
+1. Ensino fundamental
+2. Ensino médio
+3. Ensino superior
+:::
+
+::: {.column width="50%"}
+### Escala Likert
+
+| 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|
+| Discordo totalmente | Discordo | Neutro | Concordo | Concordo totalmente |
+
+```{r}
+#| eval: false
+dados <- read.csv('dados.csv', header = TRUE, sep = ",")
+escolaridade <- cut(dados$Anos.de.Estudo,
+                    breaks = c(3, 9, 13, Inf),
+                    right = TRUE,
+                    labels = c("Fundamental", "Medio", "Superior"))
+table(escolaridade)
+```
+:::
+:::
+
+---
+
+## Variáveis Escalares e de Razão {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Variáveis Escalares
+
+- O intervalo entre os valores é **sempre constante**
+- O zero é um **valor arbitrário**
+- Ex: 0°C, nota de teste de matemática
+
+::: {.info-box}
+Uma nota zero **não corresponde** a ausência de conhecimento matemático
+:::
+:::
+
+::: {.column width="50%"}
+### Escala de Razão
+
+- O valor zero significa **total ausência** do atributo mensurado
+- Ex: Segundos, Salário, Volume de vendas, Distâncias
+:::
+:::
+
+### Procedimento de análises
+
+| Tipo | Capacidade |
+|------|-----------|
+| Nominal | Distinção |
+| Ordinal | Distinção + Ordem |
+| Escalar/Razão | Distinção + Ordem + Distância |
+
+---
+
+## 1.5 — Classificação de uma Variável {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+De acordo com **Stevens (1946)**, as variáveis podem ser classificadas como:
+
+- **Nominal**
+- **Ordinal**
+- **Escalar**
+- **Razão**
+
+::: {.highlight-box}
+O **tipo de variável** determina a **análise** a ser utilizada
+:::
+:::
+
+::: {.column width="50%"}
+### Exercício 2
+
+Classifique as variáveis abaixo:
+
+a) O nº de latinhas consumidas por alunos de uma academia
+
+b) O total de ml's consumidos por aluno
+
+c) O total de alunos que consomem 1, 2-5 ou +5 latinhas
+
+d) O nº de alunos que bebem vs. não bebem
+:::
+:::
+
+---
+
+# [II. Organização e Análise Descritiva]{.section-header}
+
+---
+
+## 2 — Distribuição de Frequências {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+### Conceito
+
+- Organiza os dados em **categorias ou intervalos** e mostra quantas observações pertencem a cada classe
+- Configura um caso particular das **séries estatísticas**
+- Utilizada para **resumir** toda a informação obtida
+:::
+
+::: {.column width="45%"}
+### Exemplo
+
+| $x_i$ | $f_i$ | $fr_i$ | $fr_i$% | $F_i$ | $Fr_i$ | $Fr_i$% |
+|-------|-------|---------|---------|-------|---------|---------|
+| 0 | 2 | 0,0588 | 5,88 | 2 | 0,0588 | 5,88 |
+| 1 | 6 | 0,1765 | 17,65 | 8 | 0,2353 | 23,53 |
+| 2 | 10 | 0,2941 | 29,41 | 18 | 0,5294 | 52,94 |
+| 3 | 12 | 0,3529 | 35,29 | 30 | 0,8823 | 88,23 |
+| 4 | 4 | 0,1177 | 11,77 | 34 | 1,0000 | 100,00 |
+| **Total** | **34** | **1,0000** | **100** | — | — | — |
+:::
+:::
+
+---
+
+## Conceitos Essenciais {.smaller-text}
+
+| Conceito | Definição |
+|----------|-----------|
+| **Dados Brutos** | Dados disponíveis logo após a coleta, não organizados numericamente |
+| **Rol** | Dados ordenados de forma crescente ou decrescente |
+| **Amplitude Total** | $AT = X_{max} - X_{min}$ |
+| **$X_{min}$** | Menor valor assumido pela variável |
+| **$X_{max}$** | Maior valor assumido pela variável |
+| **Frequência Absoluta ($f_i$)** | Nº de vezes que o elemento aparece. $\sum_{i=1}^{k} f_i = n$ |
+
+---
+
+## Caso 1 — Dados Brutos {.smaller-text}
+
+Nesse caso os dados dessa natureza **não configuram** Distribuição de Frequências.
+
+---
+
+## Caso 2 — Dados agrupados por valores {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Variável Qualitativa Ordinal
+
+| Grau de Instrução | $f_i$ | $F_i$ | $fr_i$ | $fr_i$% |
+|-------------------|-------|-------|---------|---------|
+| Fundamental | 12 | 12 | 0,333 | 33,3 |
+| Médio | 18 | 30 | 0,500 | 50,0 |
+| Superior | 6 | 36 | 0,167 | 16,7 |
+| **Total** | **36** | **36** | **1,000** | **100,0** |
+
+$$fr = \frac{f_i}{n}, \quad n = \sum_{i=1}^{k} f_i$$
+:::
+
+::: {.column width="50%"}
+### Variável Quantitativa Discreta
+
+| Anos | $f_i$ | $F_i$ | $fr_i$ | $fr_i$% |
+|------|-------|-------|---------|---------|
+| 05 | 18 | 18 | 0,500 | 50,0 |
+| 06 | 10 | 28 | 0,278 | 27,8 |
+| 08 | 8 | 36 | 0,222 | 22,2 |
+| **Total** | **36** | **36** | **1,000** | **100,0** |
+:::
+:::
+
+---
+
+## Caso 3 — Dados agrupados por intervalos {.smaller-text}
+
+Constroem-se **classes de valores** quando a variabilidade dos dados é grande.
+
+| Classes | $f_i$ | $fr_i$ | $fr_i$% |
+|---------|-------|---------|---------|
+| 04 \|-- 08 | 10 | 0,2778 | 27,78 |
+| 08 \|-- 12 | 12 | 0,3333 | 33,33 |
+| 12 \|-- 16 | 8 | 0,2222 | 22,22 |
+| 16 \|-- 20 | 6 | 0,1667 | 16,67 |
+| **Total** | **36** | **1,0000** | **100,00** |
+
+::: {.info-box}
+Ao resumir dados de variável contínua **perde-se alguma informação**, já que a unidade bruta passa a ser vista como um grupo.
+:::
+
+---
+
+## Regras para Distribuição de Frequências {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+**1º passo** — Organizar em **Rol** (crescente/decrescente)
+
+**2º passo** — Calcular a **Amplitude Total**:
+$$AT = X_{max} - X_{min}$$
+
+**3º passo** — Determinar o **nº de classes** ($k$):
+
+- Se $n < 25$: $k \approx \sqrt{n}$
+- Se $n \geq 25$ (Regra de Sturges):
+$$k = 1 + \frac{10}{3}\log_{10}n$$
+:::
+
+::: {.column width="50%"}
+**4º passo** — Calcular a **amplitude da classe**:
+$$h = \frac{AT}{k}$$
+
+**5º passo** — Construir as **classes**:
+
+- 1ª Classe: $l_{i1} = X_{min}$, $L_{s1} = l_{i1} + h$
+- 2ª Classe: $l_{i2} = L_{s1}$, $L_{s2} = l_{i2} + h$
+
+Repetir até cobrir todo o intervalo.
+:::
+:::
+
+---
+
+## Exercício 3 {.smaller-text}
+
+**A tabela apresenta notas de 20 alunos na disciplina de Geografia. Obtenha a frequência da variável contínua.**
+
+```{r}
+#| eval: false
+dados <- read.csv('dados.csv', header = TRUE, sep = ",")
+
+renda <- cut(dados$Renda,
+             breaks = c(1087, 3900, 12600, 20000, Inf),
+             right = FALSE,
+             labels = c("Classe D", "Classe C", "Classe B", "Classe A"))
+
+# Frequência Absoluta
+freq_abs <- table(renda)
+freq_abs
+
+# Frequência Absoluta Acumulada
+freq_abs_acum <- cumsum(freq_abs)
+
+# Frequência Relativa
+freq_rel <- prop.table(freq_abs)
+```
+
+---
+
+## {.centered-content}
+
+::: {style="text-align: center; font-size: 2.5em; color: var(--ufs-azul); margin-top: 150px;"}
+**Obrigado!**
+:::
+
+::: {style="text-align: center; font-size: 1.2em; margin-top: 50px; color: var(--ufs-cinza-escuro);"}
+**Luiz Diego Vidal Santos**
+
+Universidade Federal de Sergipe
+
+[diego@academico.ufs.br](mailto:diego@academico.ufs.br)
+:::
