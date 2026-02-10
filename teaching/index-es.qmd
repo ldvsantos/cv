@@ -224,41 +224,25 @@ Presentaciones en formato HTML (RevealJS) orientadas a la Ingeniería Agronómic
 
 ---
 
-### Introducción a la Estadística
+### Estadística Aplicada a la Ingeniería Agronómica
 
-Presentaciones en formato HTML (RevealJS) utilizadas en las clases. Versiones para profesor (con soluciones) y para alumnos (ejercicios en blanco) están disponibles cuando corresponda.
+Presentaciones en formato HTML (RevealJS) orientadas a la aplicación de estadística en el área de Ingeniería Agronómica. Haga clic en cada tarjeta para abrir las diapositivas.
 
 ```{=html}
 <div class="slide-grid">
 <a class="slide-card" href="../aulas/introducao_estatistica/SLIDES_QUARTO/Tema 01 - Introducao a Estatistica/slides_tema01.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Clase 01 — Introducción a la Estadística</h4>
-<p>Conceptos fundamentales: etimología, muestreo, variables y distribuciones de frecuencia.</p>
-</div>
-</a>
-
-<a class="slide-card" href="../aulas/introducao_estatistica/SLIDES_QUARTO/Tema 01 - Introducao a Estatistica/slides_tema01_alunos.html" target="_blank">
-<div class="slide-icon"><i class="fa-solid fa-user-graduate"></i></div>
-<div class="slide-info">
-<h4>Clase 01 — Introducción a la Estadística <span class="badge-soon">alumnos</span></h4>
-<p>Versión para alumnos con ejercicios en blanco.</p>
+<h4>Clase 01 — Introducción a la Estadística Agronómica</h4>
+<p>Conceptos fundamentales: muestreo, variables y distribuciones de frecuencia aplicadas a la agronomía.</p>
 </div>
 </a>
 
 <a class="slide-card" href="../aulas/introducao_estatistica/SLIDES_QUARTO/Tema 02 - Organizacao e Analise Descritiva/slides_tema02.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Clase 02 — Organización y Análisis Descriptivo</h4>
-<p>Normas de tablas, series estadísticas (históricas, geográficas, específicas).</p>
-</div>
-</a>
-
-<a class="slide-card" href="../aulas/introducao_estatistica/SLIDES_QUARTO/Tema 02 - Organizacao e Analise Descritiva/slides_tema02_alunos.html" target="_blank">
-<div class="slide-icon"><i class="fa-solid fa-user-graduate"></i></div>
-<div class="slide-info">
-<h4>Clase 02 — Organización y Análisis Descriptivo <span class="badge-soon">alumnos</span></h4>
-<p>Versión para alumnos con ejercicios en blanco.</p>
+<h4>Clase 02 — Organización y Análisis Descriptivo de Datos Agrícolas</h4>
+<p>Normas de tablas y series estadísticas para datos agronómicos.</p>
 </div>
 </a>
 
@@ -266,7 +250,7 @@ Presentaciones en formato HTML (RevealJS) utilizadas en las clases. Versiones pa
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Clase 03 — Medidas de Posición</h4>
-<p>Media (3 casos), Moda (King y Czuber) y Mediana con código R.</p>
+<p>Media, Moda y Mediana con ejemplos en R para datos agrícolas.</p>
 </div>
 </a>
 
@@ -274,7 +258,7 @@ Presentaciones en formato HTML (RevealJS) utilizadas en las clases. Versiones pa
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Clase 04 — Medidas de Dispersión y Precisión</h4>
-<p>Amplitud, varianza, desviación estándar, CV, error estándar e IC con R y ggplot2.</p>
+<p>Varianza, desviación estándar, CV, error estándar e IC con R y ggplot2.</p>
 </div>
 </a>
 
@@ -286,19 +270,11 @@ Presentaciones en formato HTML (RevealJS) utilizadas en las clases. Versiones pa
 </div>
 </a>
 
-<a class="slide-card" href="../aulas/introducao_estatistica/SLIDES_QUARTO/Tema 05 - Estatistica Descritiva Resumo/slides_tema05_alunos.html" target="_blank">
-<div class="slide-icon"><i class="fa-solid fa-user-graduate"></i></div>
-<div class="slide-info">
-<h4>Clase 05 — Estadística Descriptiva (Resumen) <span class="badge-soon">alumnos</span></h4>
-<p>Versión para alumnos con ejercicios en blanco.</p>
-</div>
-</a>
-
 <a class="slide-card" href="../aulas/introducao_estatistica/SLIDES_QUARTO/Tema 06 - Curso Estatistica Python/slides_tema06.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Clase 06 — Curso de Estadística con Python</h4>
-<p>Análisis con pandas, numpy y seaborn usando datos de la PNAD 2015.</p>
+<h4>Clase 06 — Estadística con Python para Datos Agronómicos</h4>
+<p>Análisis con pandas, numpy y seaborn aplicado a datos agropecuarios.</p>
 </div>
 </a>
 
