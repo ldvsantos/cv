@@ -8,52 +8,35 @@ image: "abstract-grafico.png"
 lang: pt-BR
 ---
 
-Quando você compra um vinho com Denominação de Origem, um queijo artesanal certificado ou um café de terroir, está pagando um prêmio pela **promessa** de que aquele produto é autêntico, que ele carrega a identidade do território onde foi produzido. Mas quem verifica essa promessa?
+Quando se adquire um vinho com Denominação de Origem, um queijo artesanal certificado ou um café de terroir, paga-se um prêmio pela promessa de que aquele produto é autêntico, de que ele carrega a identidade do território onde foi produzido. A questão central, no entanto, reside em quem verifica essa promessa.
 
-Nosso estudo de revisão, analisando **148 publicações científicas** (2010–2025), investigou se o **Aprendizado de Máquina (ML)** está pronto para ser o auditor digital das Indicações Geográficas. A resposta é: **quase, mas ainda não**.
+A revisão de 148 publicações científicas (2010–2025) investigou se o Aprendizado de Máquina (ML) está pronto para funcionar como auditor digital das Indicações Geográficas. A resposta é que a tecnologia se aproxima da maturidade necessária, porém ainda não a atingiu.
 
 ![Resumo gráfico — conceito de Terroir Digital como Gêmeo Digital Inferencial](abstract-grafico.png){fig-alt="Resumo gráfico do conceito de Terroir Digital" width="100%"}
 
-## O Conceito: Terroir Digital como Gêmeo Digital
+## Conceito de Terroir Digital
 
-Propomos o conceito de **Terroir Digital**, um *Gêmeo Digital Inferencial* que reconstrói computacionalmente as interações entre solo, clima e biota (o "genótipo territorial") e as assinaturas quimiométricas do produto (o "fenótipo"). A ideia é converter alegações difusas de sustentabilidade em **evidências auditáveis**.
+O conceito de Terroir Digital é proposto como um *Gêmeo Digital Inferencial* que reconstrói computacionalmente as interações entre solo, clima e biota (o "genótipo territorial") e as assinaturas quimiométricas do produto (o "fenótipo"). O objetivo é converter alegações difusas de sustentabilidade em evidências auditáveis.
 
-Isso é urgente porque o *greenwashing* (a certificação de sustentabilidade sem verificação real) corrói a confiança nos selos de origem e penaliza produtores legítimos.
+A urgência dessa abordagem decorre do *greenwashing* (a certificação de sustentabilidade sem verificação real), que corroi a confiança nos selos de origem e penaliza produtores legítimos.
 
 ![Fluxograma PRISMA-ScR da seleção dos 148 estudos](prisma-flowchart.png){fig-alt="Diagrama PRISMA de seleção de estudos" width="80%"}
 
-## O Paradoxo da Generalização
+## Paradoxo da generalização
 
-A análise dos 148 estudos revelou um resultado paradoxal:
+A análise dos 148 estudos revelou um resultado paradoxal, no qual modelos de ML alcançam 80 a 100% de acurácia em laboratório porém desmoronam quando testados em condições reais.
 
-> **Modelos de ML alcançam 80-100% de acurácia em laboratório, mas desmoronam quando testados em condições reais.**
-
-Quando submetidos a validação **espacialmente independente** (treinar em uma região, testar em outra), a acurácia cai 11,8%, mais que o dobro da queda com validação convencional (5,6%). Isso significa que os modelos estão aprendendo **artefatos locais** em vez de padrões genuínos do terroir.
+Quando submetidos a validação espacialmente independente (treinar em uma região, testar em outra), a acurácia cai 11,8%, mais que o dobro da queda com validação convencional (5,6%). Isso significa que os modelos estão aprendendo artefatos locais em vez de padrões genuínos do terroir.
 
 ![Validação espacial — queda de acurácia em condições reais](validacao-espacial.png){fig-alt="Gráfico de validação espacial mostrando queda de acurácia" width="80%"}
 
-### Os números que preocupam
+### Indicadores críticos
 
-| Indicador | Valor |
-|-----------|-------|
-| Acurácia *in vitro* | 80–100% |
-| Queda em validação espacial | -11,8% |
-| Fragmentação metodológica (Modularidade Q) | 0,62 |
-| Heterogeneidade entre estudos (I²) | 58% |
-| Conformidade FAIR média | 34,2/100 |
+Os indicadores mais preocupantes incluem acurácia *in vitro* de 80 a 100%, queda de 11,8% em validação espacial, fragmentação metodológica (Modularidade Q = 0,62), heterogeneidade entre estudos (I² = 58%) e conformidade FAIR média de apenas 34,2/100.
 
-## Os Três Requisitos para o Terroir Digital Funcionar
+## Requisitos para o Terroir Digital funcionar
 
-Com base na análise, definimos três condições **sine qua non**:
-
-### 1. Robustez inferencial
-Os modelos devem ser validados com dados **espacialmente e temporalmente independentes**. Degradação de acurácia acima de 8% deve ser considerada inaceitável para fins regulatórios.
-
-### 2. Explicabilidade (XAI)
-Não basta classificar, é preciso **explicar**. Métodos de Inteligência Artificial Explicável devem identificar quais marcadores (pH do solo, composição mineral, perfil espectral) são verdadeiros indicadores do terroir vs. correlações espúrias.
-
-### 3. Soberania de dados (FAIR ≥ 60/100)
-Dados de treinamento devem ser **Findable, Accessible, Interoperable, Reusable**. Com a média atual de 34,2/100, a maioria dos estudos não pode ser reproduzida, auditada ou contestada.
+Com base na análise, foram definidas três condições *sine qua non*. A primeira é a robustez inferencial, dado que os modelos devem ser validados com dados espacialmente e temporalmente independentes, e degradação de acurácia acima de 8% deve ser considerada inaceitável para fins regulatórios. A segunda condição é a explicabilidade (XAI), pois não basta classificar, sendo necessário que métodos de Inteligência Artificial Explicável identifiquem quais marcadores (pH do solo, composição mineral, perfil espectral) são verdadeiros indicadores do terroir versus correlações espúrias. A terceira condição é a soberania de dados (FAIR ≥ 60/100), pois dados de treinamento devem ser Findable, Accessible, Interoperable e Reusable, e com a média atual de 34,2/100, a maioria dos estudos não pode ser reproduzida, auditada ou contestada.
 
 ::: {layout-ncol=2}
 ![Meta-análise dos estudos](meta-analise.png){fig-alt="Forest plot da meta-análise"}
@@ -63,15 +46,15 @@ Dados de treinamento devem ser **Findable, Accessible, Interoperable, Reusable**
 
 ![Rede de comunidades dos estudos analisados](network-communities.png){fig-alt="Rede bibliométrica de comunidades" width="80%"}
 
-## O que Indicações Geográficas Brasileiras Podem Aprender
+## Aplicações para Indicações Geográficas brasileiras
 
-O Brasil possui dezenas de IGs registradas, do café do Cerrado Mineiro ao queijo da Canastra, do arroz do Litoral Norte Gaúcho às cachaças de Paraty. O conceito de Terroir Digital pode **proteger** produtores contra fraudes e falsificações, **comprovar** cientificamente que o produto reflete o território, **auditar** automaticamente se práticas sustentáveis estão sendo seguidas e **reduzir** assimetrias informacionais entre produtores, certificadores e consumidores. Mas para isso, precisamos sair dos classificadores estáticos e caminhar para **modelos adaptativos**, auditáveis e transparentes.
+O Brasil possui dezenas de IGs registradas, do café do Cerrado Mineiro ao queijo da Canastra, do arroz do Litoral Norte Gaúcho às cachaças de Paraty. O conceito de Terroir Digital pode proteger produtores contra fraudes e falsificações, comprovar cientificamente que o produto reflete o território, auditar automaticamente se práticas sustentáveis estão sendo seguidas e reduzir assimetrias informacionais entre produtores, certificadores e consumidores. Para tanto, é necessário sair dos classificadores estáticos e caminhar para modelos adaptativos, auditáveis e transparentes.
 
 ## Conclusão
 
-O Terroir Digital não é ficção científica, é uma necessidade regulatória. Em um mundo onde *greenwashing* e fraudes alimentares crescem, as Indicações Geográficas precisam de **evidências computacionais verificáveis**, não apenas de selos e tradições.
+O Terroir Digital não é ficção científica, mas uma necessidade regulatória. Em um mundo onde *greenwashing* e fraudes alimentares crescem, as Indicações Geográficas necessitam de evidências computacionais verificáveis, não apenas de selos e tradições.
 
-O Aprendizado de Máquina tem o poder analítico necessário. O que falta é a disciplina metodológica: validação rigorosa, explicabilidade obrigatória e dados abertos. Sem esses três pilares, corremos o risco de trocar a fé no terroir pela fé no algoritmo, e nenhuma das duas é auditável.
+O Aprendizado de Máquina possui o poder analítico necessário, porém carece da disciplina metodológica que engloba validação rigorosa, explicabilidade obrigatória e dados abertos. Sem esses três pilares, corre-se o risco de trocar a fé no terroir pela fé no algoritmo, e nenhuma das duas é auditável.
 
 ---
 

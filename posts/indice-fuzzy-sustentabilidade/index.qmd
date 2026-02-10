@@ -8,56 +8,35 @@ image: "esquema-fuzzy.png"
 lang: pt-BR
 ---
 
-Como saber se um sistema de plantio é realmente sustentável? Medir apenas a produtividade ignora a saúde do solo. Medir apenas o solo ignora se o sistema é economicamente viável. O que precisamos é de um **indicador integrado** — e foi isso que desenvolvemos.
+Como determinar se um sistema de plantio é realmente sustentável? Medir apenas a produtividade ignora a saúde do solo, enquanto medir apenas o solo ignora a viabilidade econômica. A necessidade de um indicador integrado motivou o desenvolvimento do APSWCI.
 
 ![Esquema do sistema de inferência fuzzy Mamdani para cálculo do APSWCI](esquema-fuzzy.png){fig-alt="Esquema do sistema fuzzy APSWCI" width="100%"}
 
-## O problema: indicadores isolados mentem
+## Limitações de indicadores isolados
 
-Na agronomia, é comum avaliar uma prática de manejo por **uma única métrica**: toneladas por hectare, estabilidade de agregados ou carbono orgânico. Mas essas métricas, isoladamente, podem ser enganosas:
-
-- Um plantio convencional pode ter **alta produtividade** no curto prazo — mas à custa da degradação do solo
-- Um plantio direto pode ter **excelentes indicadores de solo** — mas produtividade inferior
-- Uma cobertura vegetal pode melhorar o carbono — mas **não compensar** o investimento
-
-A pergunta real é: **em quais cenários produtividade e conservação estão alinhadas?**
+Na agronomia, é comum avaliar uma prática de manejo por uma única métrica (toneladas por hectare, estabilidade de agregados ou carbono orgânico), porém essas métricas, isoladamente, podem ser enganosas. Um plantio convencional pode apresentar alta produtividade no curto prazo à custa da degradação do solo, um plantio direto pode exibir excelentes indicadores de solo porém produtividade inferior, e uma cobertura vegetal pode melhorar o carbono sem compensar o investimento. A pergunta real consiste em identificar em quais cenários produtividade e conservação estão alinhadas.
 
 ![Vista da área experimental — Estação Experimental da UFS](area-experimental.png){fig-alt="Área experimental do ensaio de longa duração na UFS" width="80%"}
 
-## O APSWCI: um índice baseado em lógica fuzzy
+## Arquitetura do APSWCI
 
-Criamos o **Agricultural Productivity and Soil and Water Conservation Index (APSWCI)** — um índice que integra, em um único número, indicadores de quatro dimensões:
+O Agricultural Productivity and Soil and Water Conservation Index (APSWCI) integra, em um único número, indicadores de quatro dimensões. A dimensão física engloba diâmetro médio geométrico (DMG), diâmetro médio ponderado (DMP) e estabilidade de agregados. A dimensão química abrange carbono orgânico total, estoque de carbono e pH. A dimensão biológica contempla atividade microbiana e respiração do solo. A dimensão agronômica incorpora produtividade de grãos, número de espigas e estande de plantas.
 
-### As quatro dimensões do APSWCI
+Esses indicadores são normalizados, transformados em funções de pertinência fuzzy (linguagem com níveis "baixo", "médio", "alto") e combinados por regras de inferência em um sistema Mamdani. O resultado é um índice contínuo de 0 a 10, onde valores altos significam que conservação e produtividade estão simultaneamente otimizadas.
 
-| Dimensão | Indicadores |
-|----------|-------------|
-| **Física** | Diâmetro médio geométrico (DMG), diâmetro médio ponderado (DMP), estabilidade de agregados |
-| **Química** | Carbono orgânico total, estoque de carbono, pH |
-| **Biológica** | Atividade microbiana, respiração do solo |
-| **Agronômica** | Produtividade de grãos, número de espigas, estande de plantas |
+## Base experimental
 
-Esses indicadores são **normalizados**, transformados em **funções de pertinência fuzzy** (linguagem: "baixo", "médio", "alto") e combinados por **regras de inferência** em um sistema Mamdani.
+O estudo foi conduzido na Estação Experimental da UFS em São Cristóvão, em um experimento de longa duração iniciado em 2001 (22 anos de dados contínuos), testando 3 sistemas de plantio (convencional, cultivo mínimo e plantio direto), 4 plantas de cobertura (crotalária, feijão-caupi, guandu e milheto) e milho biuso (híbrido SHS7990 PRO3, para grão e silagem).
 
-O resultado é um índice contínuo de 0 a 10, onde valores altos significam que **conservação e produtividade estão simultaneamente otimizadas**.
+## Resultados
 
-## O experimento: 22 anos de dados
-
-O estudo foi conduzido na **Estação Experimental da UFS** em São Cristóvão, em um experimento de longa duração iniciado em 2001 (são **22 anos de dados contínuos**). Testamos **3 sistemas de plantio** (convencional, cultivo mínimo e plantio direto), **4 plantas de cobertura** (crotálaria, feijão-caupi, guandu e milheto) e **milho biuso** (híbrido SHS7990 PRO3, para grão e silagem).
-
-## Resultados: quem venceu?
-
-### Cultivo mínimo é o campeão
-
-O **cultivo mínimo** com guandu ou milheto apresentou os maiores escores de APSWCI — combinando boa produtividade com conservação superior do solo.
-
-O plantio convencional teve produtividades competitivas no curto prazo, mas seus indicadores de solo foram consistentemente piores, resultando em APSWCI inferior.
+O cultivo mínimo com guandu ou milheto apresentou os maiores escores de APSWCI, combinando boa produtividade com conservação superior do solo. O plantio convencional obteve produtividades competitivas no curto prazo, mas seus indicadores de solo foram consistentemente piores, resultando em APSWCI inferior.
 
 ![Boxplot dos escores APSWCI por sistema de plantio e cobertura](boxplot-apswci.png){fig-alt="Boxplot comparativo dos escores APSWCI" width="80%"}
 
-### Análise de ablação: o que mais importa?
+## Análise de ablação
 
-Uma contribuição inédita do estudo foi a **análise de ablação**, removendo cada componente do índice para ver o quanto ele contribui: **produtividade de grãos** é o principal driver (MARS = 12,2), enquanto **atributos de conservação do solo** funcionam como moduladores estruturais (MARS = 5,8). Isso significa que a produtividade puxa o índice para cima, mas sem conservação, o sistema não se sustenta no tempo.
+Uma contribuição inédita do estudo foi a análise de ablação, que consiste em remover cada componente do índice para avaliar sua contribuição relativa. A produtividade de grãos configurou-se como o principal driver (MARS = 12,2), enquanto os atributos de conservação do solo funcionam como moduladores estruturais (MARS = 5,8). Isso significa que a produtividade puxa o índice para cima, porém sem conservação o sistema não se sustenta no tempo.
 
 ::: {layout-ncol=2}
 ![Análise de ablação — contribuição de cada componente](ablation-study.png){fig-alt="Gráfico de análise de ablação do APSWCI"}
@@ -65,29 +44,19 @@ Uma contribuição inédita do estudo foi a **análise de ablação**, removendo
 ![Dispersão do valor adicionado por componente](scatter-added-value.png){fig-alt="Scatter plot do valor adicionado"}
 :::
 
-## Por que lógica fuzzy e não estatística convencional?
+## Vantagens da lógica fuzzy
 
-A lógica fuzzy é ideal para esse tipo de problema porque:
-
-1. **Lida com imprecisão** — dados agronômicos são inerentemente variáveis
-2. **Traduz conhecimento especialista** — regras como "SE carbono é alto E agregados são estáveis ENTÃO sustentabilidade é alta" são intuitivas
-3. **Integra dimensões diferentes** — misturar kg/ha com mm de diâmetro de agregado não faz sentido em uma média, mas faz sentido em regras fuzzy
-4. **Gera um índice contínuo** — não uma classificação binária de "sustentável/insustentável"
+A lógica fuzzy é ideal para esse tipo de problema porque lida com a imprecisão inerente a dados agronômicos, traduz conhecimento especialista em regras intuítivas (como "SE carbono é alto E agregados são estáveis ENTÃO sustentabilidade é alta"), integra dimensões com unidades distintas (misturar kg/ha com mm de diâmetro de agregado não faz sentido em uma média, mas faz sentido em regras fuzzy) e gera um índice contínuo em vez de uma classificação binária de "sustentável/insustentável".
 
 ## Aplicação prática
 
-O APSWCI pode ser usado por:
-
-- **Pesquisadores** — para comparar sistemas de manejo de forma holística
-- **Extensionistas** — para recomendar práticas com evidência multidimensional
-- **Gestores de políticas** — para orientar incentivos a práticas conservacionistas
-- **Produtores** — para entender o trade-off real entre produção e conservação
+O APSWCI pode ser empregado por pesquisadores (para comparação holística de sistemas de manejo), extensionistas (para recomendações com evidência multidimensional), gestores de políticas (para orientação de incentivos a práticas conservacionistas) e produtores (para compreensão do trade-off real entre produção e conservação).
 
 ## Conclusão
 
-A sustentabilidade agrícola não é uma dimensão única — é um **espaço fuzzy** onde produtividade, conservação do solo e viabilidade econômica se sobrepõem. O APSWCI oferece uma ferramenta objetiva para navegar esse espaço e tomar decisões informadas.
+A sustentabilidade agrícola não é uma dimensão única, mas um espaço fuzzy onde produtividade, conservação do solo e viabilidade econômica se sobrepõem. O APSWCI oferece uma ferramenta objetiva para navegar esse espaço e tomar decisões informadas.
 
-Nossa mensagem é clara: **cultivo mínimo com cobertura adequada não é apenas "melhor para o solo" — é o sistema com maior escore integrado de sustentabilidade em 22 anos de dados**.
+A mensagem central é clara, pois o cultivo mínimo com cobertura adequada não é apenas "melhor para o solo", mas o sistema com maior escore integrado de sustentabilidade em 22 anos de dados.
 
 ---
 

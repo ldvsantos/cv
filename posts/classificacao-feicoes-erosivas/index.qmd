@@ -10,7 +10,7 @@ lang: pt-BR
 
 ![Foto aérea por drone das feições erosivas em Tabuleiros Costeiros](foto-aerea.png){fig-alt="Ortomosaico mostrando feições erosivas" width="100%"}
 
-Ravina ou voçoroca? Parece uma pergunta simples, mas a verdade é que a **classificação de feições erosivas** é uma das áreas mais controversas da geomorfologia. Nosso estudo em Tabuleiros Costeiros de Sergipe mostra por quê, e propõe caminhos para resolver a confusão.
+Ravina ou voçoroca? Parece uma pergunta simples, mas a classificação de feições erosivas constitui uma das áreas mais controversas da geomorfologia. O estudo conduzido em Tabuleiros Costeiros de Sergipe demonstra as razões dessa ambiguidade e propõe caminhos para resolvê-la.
 
 ::: {layout-ncol=2}
 ![Detalhe de ravina ativa no Plintossolo](ravina-detalhe.jpg){fig-alt="Ravina ativa em Plintossolo"}
@@ -18,9 +18,9 @@ Ravina ou voçoroca? Parece uma pergunta simples, mas a verdade é que a **class
 ![Perfil de solo exposto pela erosão](perfil-solo.jpg){fig-alt="Perfil de solo em feição erosiva"}
 :::
 
-## O campo: Plintossolo em São Cristóvão
+## Área de estudo em Plintossolo
 
-Trabalhamos em uma área de tabuleiros costeiros no **Campus Rural da UFS**, em São Cristóvão, onde feições erosivas avançam há pelo menos **16 anos** (análise multitemporal 2007 a 2023). O solo predominante é um **Plintossolo Háplico Distrófico**, argiloso, com baixa condutividade hidráulica, que gera escoamento superficial rápido quando chove.
+O trabalho de campo foi conduzido em uma área de tabuleiros costeiros no Campus Rural da UFS, em São Cristóvão, onde feições erosivas avançam há pelo menos 16 anos (análise multitemporal 2007 a 2023). O solo predominante é um Plintossolo Háplico Distrófico, argiloso, com baixa condutividade hidráulica, que gera escoamento superficial rápido quando chove.
 
 São exatamente as condições perfeitas para erosão linear: a água não infiltra, concentra-se em linhas preferenciais e escava o solo.
 
@@ -30,20 +30,13 @@ São exatamente as condições perfeitas para erosão linear: a água não infil
 ![Retaludamento como técnica de preparação](../../img/Retaludamento%205.JPEG){fig-alt="Retaludamento de encosta em área experimental"}
 :::
 
-## O problema: terminologia confusa
+## Ambiguidade terminológica
 
-Na literatura, os termos "ravina" (*rill/gully*) e "voçoroca" (*gully/mega-gully*) são usados de forma inconsistente. Diferentes autores usam critérios diferentes: **por profundidade** (> 50 cm = voçoroca? > 30 cm?), **por durabilidade** (feições permanentes vs. efêmeras), **por fluxo** (fluxo permanente vs. intermitente) ou **por posição** (topo de vale, encosta, fundo de vale). Essa confusão terminológica prejudica a comunicação científica e, mais importante, as **decisões de manejo**, porque o tratamento para uma ravina ativa é completamente diferente do tratamento para uma voçoroca estabilizada.
+Na literatura, os termos "ravina" (*rill/gully*) e "voçoroca" (*gully/mega-gully*) são usados de forma inconsistente. Diferentes autores empregam critérios distintos, baseando-se ora na profundidade (acima de 50 cm configura voçoroca, ou de 30 cm?), ora na durabilidade (feições permanentes vs. efêmeras), ora no regime de fluxo (permanente vs. intermitente), ora na posição na paisagem (topo de vale, encosta, fundo de vale). Essa confusão terminológica prejudica a comunicação científica e, mais importante, as decisões de manejo, pois o tratamento para uma ravina ativa difere completamente do tratamento para uma voçoroca estabilizada.
 
-## A ferramenta: Elementary Gully Classification (EGC)
+## Elementary Gully Classification (EGC)
 
-Aplicamos a **EGC** de Thwaites et al. (2022), um sistema de classificação que integra múltiplos atributos em uma **chave decisória** sequencial:
-
-1. **Posição na paisagem** → topo de vale, encosta, fundo de vale
-2. **Atividade** → ativa ou inativa
-3. **Forma em planta** → linear, composta/digitada
-4. **Seção transversal** → V, U, trapezoidal
-5. **Tipo de cabeça** → abrupta, gradual, difusa
-6. **Profundidade** → rasa, moderada, profunda
+Foi aplicada a EGC de Thwaites et al. (2022), um sistema de classificação que integra múltiplos atributos em uma chave decisória sequencial, avaliando progressivamente a posição na paisagem (topo de vale, encosta, fundo de vale), a atividade (ativa ou inativa), a forma em planta (linear, composta/digitada), a seção transversal (V, U, trapezoidal), o tipo de cabeça (abrupta, gradual, difusa) e a profundidade (rasa, moderada, profunda).
 
 ::: {layout-ncol=2}
 ![Cisalhamento do solo em talude](../../img/Cisalhamento.jpg){fig-alt="Cisalhamento do solo em talude de Plintossolo"}
@@ -51,27 +44,17 @@ Aplicamos a **EGC** de Thwaites et al. (2022), um sistema de classificação que
 ![Bloco de cisalhamento em detalhe](../../img/Bloco%20cisalhaento%201.jpg){fig-alt="Bloco de cisalhamento em ensaio de campo"}
 :::
 
-## A tecnologia: drone + fotogrametria
+## Aquisição de dados com drone e fotogrametria
 
-Para medir as feições com precisão, usamos um **DJI Phantom 4 PRO** com voos planejados (80% sobreposição longitudinal, 60% lateral), gerando:
+Para medir as feições com precisão, empregou-se um DJI Phantom 4 PRO com voos planejados (80% sobreposição longitudinal, 60% lateral), gerando ortomosaicos com resolução de 1 m, Modelo Digital de Elevação (MDE) e nuvem densa de pontos. Essa abordagem permite medir largura, comprimento, profundidade e volume de cada incisão com precisão centimétrica, muito além do que se consegue com trena em campo.
 
-- Ortomosaicos com resolução de 1 m
-- Modelo Digital de Elevação (MDE)
-- Nuvem densa de pontos
+## Resultados e feições intermediárias
 
-Isso permite medir largura, comprimento, profundidade e volume de cada incisão com precisão centimétrica, muito além do que se consegue com trena em campo.
+Das 6 feições inventariadas, emergiu um padrão que desafia a classificação binária, pois todas foram classificadas como permanentes e ativas, com morfologia predominantemente em V (material argiloso coesivo), sendo a feição 1 composta ou digitada com múltiplas ramificações (a mais complexa) e as feições 4 e 5 lineares em topo de vale. O problema reside no fato de que as feições apresentam características intermediárias entre ravina e voçoroca, dado que a seção em V e o material coesivo sugerem ravina, enquanto a permanência, profundidade e atividade contínua apontam para voçoroca.
 
-## Resultados: feições intermediárias
+## Interação solo-erosão no Plintossolo
 
-Das 6 feições inventariadas, encontramos um padrão que desafia a classificação binária: **todas** classificadas como permanentes e ativas, morfologia predominantemente em **V** (material argiloso coesivo), **feição 1** composta ou digitada com múltiplas ramificações (a mais complexa) e **feições 4 e 5** lineares em topo de vale. O problema é que as feições apresentam **características intermediárias** entre ravina e voçoroca. A seção em V e o material coesivo sugerem ravina; a permanência, profundidade e atividade contínua sugerem voçoroca.
-
-### O papel do Plintossolo
-
-A interação entre o solo e a erosão é chave. No Plintossolo:
-
-- **Infiltração muito baixa** → gera escoamento concentrado rapidamente
-- **Argila coesiva** → taludes resistem quando secos, mas colapsam quando saturados
-- **Sazonalidade** → chuvas concentradas de abril a setembro criam pulsos erosivos
+A interação entre o solo e a erosão é determinante nesse contexto. No Plintossolo, a infiltração muito baixa gera escoamento concentrado rapidamente, a argila coesiva confere resistência aos taludes quando secos porém colapso quando saturados, e a sazonalidade marcada (chuvas concentradas de abril a setembro) cria pulsos erosivos cíclicos.
 
 ![Série temporal de precipitação (2005–2025) — pulsos erosivos sazonais](precipitacao.png){fig-alt="Gráfico de série temporal de precipitação" width="80%"}
 
@@ -79,18 +62,13 @@ Essa dinâmica cria feições que evoluem episodicamente — avançam durante a 
 
 ## Limitações da EGC em solos tropicais
 
-A EGC foi desenvolvida principalmente para ambientes temperados e semiáridos. Em Plintossolos de Tabuleiros Costeiros, identificamos limitações:
-
-- **Não diferencia** claramente ravinas de voçorocas em estágios intermediários
-- **Não incorpora** comprimento como critério (uma feição de 80 m é diferente de 5 m!)
-- **Não considera** clima regional (concentração de chuvas, potencial erosivo)
-- **Não captura** a dinâmica saturação-dessecação que governa a estabilidade de taludes argilosos
+A EGC foi desenvolvida principalmente para ambientes temperados e semiáridos. Em Plintossolos de Tabuleiros Costeiros, foram identificadas limitações significativas, uma vez que o sistema não diferencia claramente ravinas de voçorocas em estágios intermediários, não incorpora comprimento como critério (uma feição de 80 m é qualitativamente distinta de uma de 5 m), não considera o clima regional (concentração de chuvas, potencial erosivo) e não captura a dinâmica de saturação-dessecação que governa a estabilidade de taludes argilosos.
 
 ## Conclusão
 
-Classificar erosão não é apenas um exercício acadêmico — é a base para decidir o tratamento correto. Nosso estudo mostra que as feições erosivas em Plintossolos de Tabuleiros Costeiros ocupam uma **zona cinzenta** entre ravinas e voçorocas, que os sistemas classificatórios atuais não capturam bem.
+Classificar erosão não se resume a exercício acadêmico, constituindo antes a base para decidir o tratamento correto. O estudo demonstra que as feições erosivas em Plintossolos de Tabuleiros Costeiros ocupam uma zona cinzenta entre ravinas e voçorocas, que os sistemas classificatórios atuais não capturam adequadamente.
 
-Propomos que a EGC seja adaptada para contextos tropicais, incorporando comprimento, regime pluviométrico e propriedades hidráulicas do solo como critérios adicionais. Enquanto isso, a combinação de **drones + fotogrametria + análise de solo** oferece a base de dados necessária para classificações mais robustas.
+Propõe-se que a EGC seja adaptada para contextos tropicais, incorporando comprimento, regime pluviométrico e propriedades hidráulicas do solo como critérios adicionais. Enquanto isso, a combinação de drones, fotogrametria e análise de solo fornece a base de dados necessária para classificações mais robustas.
 
 ---
 

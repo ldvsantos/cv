@@ -29,7 +29,8 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="aula14_metanalise_files/libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
+  <link rel="stylesheet" href="aula14_metanalise_files/libs/revealjs/dist/theme/quarto-1069e3a2b2e34d57315e2c58b53d0fe6.css">
+  <link rel="stylesheet" href="assets/custom.css">
   <link href="aula14_metanalise_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="aula14_metanalise_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="aula14_metanalise_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -750,8 +751,9 @@ Luiz Diego Vidal Santos
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="../../assets/logo-uefs.webp" class="slide-logo"></p>
 <div class="footer footer-default">
-
+<p>UEFS — Análise de Dados Ambientais</p>
 </div>
 </div></div>
 
@@ -776,8 +778,8 @@ Luiz Diego Vidal Santos
       // Full list of configuration options available at:
       // https://revealjs.com/config/
       Reveal.initialize({
-'controlsAuto': true,
-'previewLinksAuto': false,
+'controlsAuto': false,
+'previewLinksAuto': true,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -787,7 +789,7 @@ Luiz Diego Vidal Santos
 'smaller': false,
  
         // Display controls in the bottom right corner
-        controls: false,
+        controls: true,
 
         // Help the user learn the controls by providing hints, for example by
         // bouncing the down arrow when they first encounter a vertical slide
@@ -804,7 +806,7 @@ Luiz Diego Vidal Santos
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: false,
+        slideNumber: 'c/t',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -909,14 +911,14 @@ Luiz Diego Vidal Santos
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'none',
+        transition: 'slide',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
 
         // Transition style for full page slide backgrounds
         // (none/fade/slide/convex/concave/zoom)
-        backgroundTransition: 'none',
+        backgroundTransition: 'fade',
 
         // Number of slides away from the current that are visible
         viewDistance: 3,
@@ -929,9 +931,9 @@ Luiz Diego Vidal Santos
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1050,
+        width: 1280,
 
-        height: 700,
+        height: 720,
 
         // Factor of the display size that should remain empty around the content
         margin: 0.1,

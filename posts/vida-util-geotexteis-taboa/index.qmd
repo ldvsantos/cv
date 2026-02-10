@@ -10,21 +10,21 @@ lang: pt-BR
 
 ![Resumo gráfico — modelo hierárquico L/C → cinética → VUF](abstract-grafico.png){fig-alt="Resumo gráfico do modelo hierárquico de vida útil" width="100%"}
 
-Uma das perguntas mais frequentes quando propomos geotêxteis de fibra natural para controle de erosão é: **"Quanto tempo esse material vai durar?"** É uma pergunta legítima — se o geotêxtil se degrada antes da vegetação se estabelecer, o investimento é perdido.
+Uma das perguntas mais frequentes quando se propõem geotêxteis de fibra natural para controle de erosão é quanto tempo o material vai durar. A pergunta é legítima, pois se o geotêxtil se degrada antes da vegetação se estabelecer, o investimento é perdido.
 
-Nosso estudo propõe uma resposta baseada não em testes de campo prolongados, mas na **composição química** da própria fibra.
+O estudo aqui apresentado propõe uma resposta baseada não em testes de campo prolongados, mas na composição química da própria fibra.
 
-## O material: fibras de *Typha domingensis*
+## Material e hipótese
 
-A taboa (*Typha domingensis*) é uma macrófita aquática abundante em zonas úmidas tropicais. Suas fibras, quando trançadas em geotêxteis do tipo geogrelha, protegem taludes contra erosão — é a mesma abordagem que usamos no nosso [projeto de campo no Baixo São Francisco](/posts/geotexteis-controle-erosao/).
+A taboa (*Typha domingensis*) é uma macrófita aquática abundante em zonas úmidas tropicais. Suas fibras, quando trançadas em geotêxteis do tipo geogrelha, protegem taludes contra erosão seguindo a mesma abordagem empregada no [projeto de campo no Baixo São Francisco](/posts/geotexteis-controle-erosao/).
 
-Mas fibras naturais degradam. A pergunta é: **quão rápido, e podemos controlar isso?**
+Fibras naturais, no entanto, degradam, e a questão central consiste em determinar a velocidade dessa degradação e a possibilidade de controlá-la.
 
-## A hipótese: lignina/celulose governa a durabilidade
+## Hipótese da razão lignina/celulose
 
-Toda fibra vegetal é uma arquitetura de três componentes: **celulose cristalina** (o esqueleto estrutural), **hemicelulose amorfa** (preenchimento entre fibrilas) e **lignina aromática** (a "armadura" que protege contra degradação).
+Toda fibra vegetal se organiza como uma arquitetura de três componentes, reunindo celulose cristalina (o esqueleto estrutural), hemicelulose amorfa (preenchimento entre fibrilas) e lignina aromática (a armadura protetora contra degradação).
 
-Nossa hipótese é que a **razão lignina/celulose (L/C)** determina a recalcitrância química da fibra. Quanto mais lignina relativa à celulose, mais lenta a degradação.
+A hipótese testada postula que a razão lignina/celulose (L/C) determina a recalcitrância química da fibra, de modo que quanto mais lignina relativa à celulose, mais lenta a degradação.
 
 ::: {layout-ncol=2}
 ![Coleta de fibras de taboa em campo](coleta-fibras.png){fig-alt="Coleta de fibras de Typha domingensis"}
@@ -38,21 +38,17 @@ Nossa hipótese é que a **razão lignina/celulose (L/C)** determina a recalcitr
 ![Ensaio de tração (tear test) em fibra de taboa](tear-geotextil.jpg){fig-alt="Ensaio de tração em geotêxtil de taboa"}
 :::
 
-## Tratamento alcalino: engenharia da composição
+## Tratamento alcalino e engenharia da composição
 
-Para testar essa hipótese, tratamos as fibras de taboa com **NaOH** em três concentrações (3%, 6% e 9%) e acompanhamos a degradação mecânica ao longo de **180 dias**. O tratamento alcalino remove seletivamente hemiceluloses, aumenta a cristalinidade (de 48,5% para 62,3%), reduz a hidrofilicidade e modifica a razão L/C.
+Para testar essa hipótese, as fibras de taboa foram tratadas com NaOH em três concentrações (3%, 6% e 9%) e a degradação mecânica foi acompanhada ao longo de 180 dias. O tratamento alcalino remove seletivamente hemiceluloses, aumenta a cristalinidade (de 48,5% para 62,3%), reduz a hidrofilicidade e modifica a razão L/C.
 
 ![Efeito dos tratamentos com NaOH nas propriedades das fibras de taboa](tratamentos-naoh.png){fig-alt="Gráfico do efeito dos tratamentos alcalinos" width="80%"}
 
-## Modelo hierárquico: composição → degradação → confiabilidade
+## Modelo hierárquico de previsão
 
-O modelo funciona em três níveis:
+O modelo funciona em três níveis, partindo da composição química (L/C) para a cinética de degradação e, finalmente, para a Vida Útil Funcional (VUF).
 
-```
-Composição química (L/C) → Cinética de degradação → Vida Útil Funcional (VUF)
-```
-
-A **VUF** é definida como o tempo até que 10% das amostras falhem (percentil P10 da distribuição Weibull). É um critério conservador de engenharia: não esperamos que todas falhem, mas que a probabilidade de falha seja aceitavelmente baixa.
+A VUF é definida como o tempo até que 10% das amostras falhem (percentil P10 da distribuição Weibull), configurando um critério conservador de engenharia que não pressupõe a falha de todas as amostras, mas assegura que a probabilidade de falha permaneça aceitavelmente baixa.
 
 ![Curvas de confiabilidade Weibull para diferentes tratamentos](weibull-confiabilidade.png){fig-alt="Gráfico de confiabilidade Weibull" width="80%"}
 
@@ -65,25 +61,25 @@ A **VUF** é definida como o tempo até que 10% das amostras falhem (percentil P
 | **NaOH 6%** | **95** | **+127%** | **2,8%** |
 | NaOH 9% | 87 | +107% | 1,9% (fragilização) |
 
-O tratamento com **NaOH a 6%** é o ponto ótimo, resultando em VUF de **95 dias** (+127% vs. controle) com ductilidade preservada (2,8%), sem fragilização excessiva e pegada de carbono **60-70% menor** que geossintéticos petroquímicos.
+O tratamento com NaOH a 6% configura o ponto ótimo, resultando em VUF de 95 dias (+127% vs. controle) com ductilidade preservada (2,8%), sem fragilização excessiva e pegada de carbono 60-70% menor que geossintéticos petroquímicos.
 
-A concentração de 9%, embora aumente a VUF, causa **fragilização**, visto que a fibra fica rígida e perde a capacidade de acomodar deformações do solo.
+A concentração de 9%, embora aumente a VUF, causa fragilização, visto que a fibra adquire rigidez excessiva e perde a capacidade de acomodar deformações do solo.
 
 ![Painel comparativo de MEV (microestrutura das fibras antes e após tratamento)](mev-painel.png){fig-alt="Painel de microscopia eletrônica das fibras" width="80%"}
 
-## A implicação prática: ensaio rápido no lab, previsão de campo
+## Implicação prática para certificação
 
-A grande contribuição é que, ao validar a hierarquia composição → degradação → confiabilidade, demonstramos que **ensaios composicionais rápidos** (FTIR, DRX) podem substituir testes de campo de meses. Caracterize a razão L/C em laboratório → preveja a VUF com incerteza aceitável.
+A grande contribuição reside no fato de que, ao validar a hierarquia composição → degradação → confiabilidade, fica demonstrado que ensaios composicionais rápidos (FTIR, DRX) podem substituir testes de campo de meses. Caracteriza-se a razão L/C em laboratório e prevê-se a VUF com incerteza aceitável.
 
-Isso muda o paradigma de certificação de geotêxteis naturais: em vez de esperar 6-12 meses de exposição em campo, o fabricante pode estimar a durabilidade em **dias**.
+Isso altera o paradigma de certificação de geotêxteis naturais, pois em vez de aguardar 6 a 12 meses de exposição em campo, o fabricante pode estimar a durabilidade em dias.
 
-## Economia circular em ação
+## Economia circular
 
-Este trabalho consolida fibras de taboa tratadas alcalinamente como alternativa viável aos geossintéticos de base petroquímica. A matéria-prima é renovável (taboa é invasora e abundante), com biodegradação programada entre 2 e 5 anos, custo competitivo em escala e pegada de carbono 60 a 70% menor.
+Este trabalho consolida fibras de taboa tratadas alcalinamente como alternativa viável aos geossintéticos de base petroquímica, com matéria-prima renovável (taboa é invasora e abundante), biodegradação programada entre 2 e 5 anos, custo competitivo em escala e pegada de carbono 60 a 70% menor.
 
 ## Conclusão
 
-A durabilidade de geotêxteis naturais não precisa ser um mistério. Com o modelo hierárquico L/C → cinética → VUF, podemos **projetar** a vida útil como fazemos com qualquer material de engenharia. A taboa deixa de ser planta invasora e se torna **matéria-prima de engenharia com durabilidade previsível**.
+A durabilidade de geotêxteis naturais não precisa permanecer como incógnita. Com o modelo hierárquico L/C → cinética → VUF, é possível projetar a vida útil como se faz com qualquer material de engenharia. A taboa deixa de ser planta invasora e se torna matéria-prima de engenharia com durabilidade previsível.
 
 ---
 

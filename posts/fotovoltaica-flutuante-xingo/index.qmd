@@ -8,61 +8,53 @@ image: "mapa-zoneamento.png"
 lang: pt-BR
 ---
 
-Imagine painéis solares flutuando sobre a superfície de um reservatório hidrelétrico, gerando energia limpa onde antes havia apenas água parada. Essa é a **fotovoltaica flutuante (FPV)**, uma tecnologia que cresce rapidamente no mundo e tem potencial enorme no Brasil, país com mais de 1.200 reservatórios de usinas hidrelétricas.
+Imagine painéis solares flutuando sobre a superfície de um reservatório hidrelétrico, gerando energia limpa onde antes havia apenas água parada. Essa é a fotovoltaica flutuante (FPV), uma tecnologia que cresce rapidamente no mundo e possui potencial enorme no Brasil, país com mais de 1.200 reservatórios de usinas hidrelétricas.
 
-Mas há um problema que poucos consideram: **onde exatamente instalar os painéis?** Nem toda superfície de água é igual. Nosso estudo recente no **reservatório de Xingó**, no Baixo São Francisco, mostra por quê.
+No entanto, uma questão crítica permanece frequentemente desconsiderada, a saber, onde exatamente instalar os painéis. Nem toda superfície de água é hidrodinamicamente equivalente, e o estudo conduzido no reservatório de Xingó, no Baixo São Francisco, demonstra as razões dessa heterogeneidade.
 
 ![Mapa de localização do reservatório de Xingó no Baixo São Francisco](mapa-localizacao.png){fig-alt="Mapa de localização do reservatório de Xingó" width="100%"}
 
-## O desafio: ondas em reservatórios de cânion
+## Clima de ondas em reservatórios de cânion
 
-Quando pensamos em ondas, imaginamos o mar. Mas reservatórios em vales encaixados (como Xingó, com sua geometria de cânion) também geram ondas significativas. O vento canalizado pelo vale transfere energia à superfície da água, criando um **clima de ondas** que varia imensamente de um ponto a outro do reservatório.
+Quando se pensa em ondas, a referência usual é o mar. No entanto, reservatórios em vales encaixados (como Xingó, com sua geometria de cânion) também geram ondas significativas, pois o vento canalizado pelo vale transfere energia à superfície da água, criando um clima de ondas que varia imensamente de um ponto a outro do reservatório.
 
-Essas ondas podem parecer pequenas, mas representam **milhões de ciclos de carga** sobre as linhas de amarração dos painéis flutuantes. Com o tempo, isso causa **fadiga estrutural**, o mesmo fenômeno que faz um clipe de papel quebrar quando dobrado repetidamente.
+Essas ondas podem parecer pequenas, mas representam milhões de ciclos de carga sobre as linhas de amarração dos painéis flutuantes. Com o tempo, esse carregamento cíclico causa fadiga estrutural, o mesmo fenômeno que faz um clipe de papel quebrar quando dobrado repetidamente.
 
 ![Climatologia de ventos no reservatório de Xingó](climatologia.png){fig-alt="Climatologia de ventos no reservatório" width="80%"}
 
-## Nossa abordagem: zoneamento hidrodinâmico
+## Abordagem metodológica e zoneamento hidrodinâmico
 
-Desenvolvemos um procedimento de apoio à decisão que integra **climatologia de ventos** (direção e intensidade predominantes), **fetch efetivo** (a distância sobre a qual o vento sopra sem obstáculo, quanto maior, maiores as ondas), **método SMB** (*Sverdrup–Munk–Bretschneider*, modelo clássico que converte vento e fetch em altura de onda $H_s$) e **restrições batimétricas** (profundidade do reservatório). O resultado é um **mapa de zoneamento** que mostra onde as ondas são aceitáveis para FPV e onde não são.
+O procedimento de apoio à decisão desenvolvido integra climatologia de ventos (direção e intensidade predominantes), fetch efetivo (a distância sobre a qual o vento sopra sem obstáculo, que determina a magnitude das ondas), método SMB (*Sverdrup–Munk–Bretschneider*, modelo clássico que converte vento e fetch em altura de onda $H_s$) e restrições batimétricas (profundidade do reservatório). O resultado é um mapa de zoneamento que indica as zonas de ondas aceitáveis para FPV e as zonas de exclusão.
 
 ![Mapa de fetch efetivo — distância de atuação do vento](mapa-fetch.png){fig-alt="Mapa de fetch efetivo no reservatório de Xingó" width="100%"}
 
-## Resultados: enseadas vs. canal principal
+## Resultados comparativos
 
-Os resultados revelaram um contraste dramático:
+Os resultados revelaram um contraste dramático entre as zonas do reservatório. As enseadas abrigadas (R1–R5) apresentaram altura de onda ($H_s$) inferior a 0,09 m, com risco de fadiga muito baixo e aptidão excelente para FPV. Em contrapartida, o canal principal registrou alturas de onda até 10 vezes maiores, com risco de fadiga elevado que o torna desfavorável para a instalação.
 
-| Zona | Altura de onda ($H_s$) | Risco de fadiga | Aptidão para FPV |
-|------|------------------------|-----------------|-------------------|
-| **Enseadas abrigadas (R1–R5)** | < 0,09 m | Muito baixo | **Excelente** |
-| **Canal principal** | Até 10× maior | Elevado | **Desfavorável** |
-
-As enseadas laterais do cânion oferecem **abrigo topográfico natural** contra as ondas, reduzindo a demanda de amarração em mais de 90% comparado ao canal principal. Isso significa **menor custo de amarração** (o CAPEX estrutural cai drasticamente), **menor risco de falha** por fadiga ao longo da vida útil e **coexistência** possível com navegação turística e comercial.
+As enseadas laterais do cânion oferecem abrigo topográfico natural contra as ondas, reduzindo a demanda de amarração em mais de 90% comparado ao canal principal, o que implica menor custo de amarração (o CAPEX estrutural cai drasticamente), menor risco de falha por fadiga ao longo da vida útil e possibilidade de coexistência com navegação turística e comercial.
 
 ![Mapa de ondas — altura significativa ($H_s$) simulada pelo método SMB](mapa-ondas.png){fig-alt="Mapa de altura de onda significativa no reservatório" width="100%"}
 
 ![Zoneamento hidrodinâmico para fotovoltaica flutuante](mapa-zoneamento.png){fig-alt="Mapa de zoneamento para FPV no reservatório de Xingó" width="100%"}
 
-## Por que isso importa?
+## Relevância do zoneamento
 
-O Brasil possui condições excepcionais para FPV: alta irradiação solar, extensa rede de reservatórios e infraestrutura de conexão elétrica já existente nas usinas. Mas decisões de localização baseadas apenas em potencial energético, sem considerar a **heterogeneidade hidrodinâmica**, podem levar a:
+O Brasil possui condições excepcionais para FPV, reunindo alta irradiação solar, extensa rede de reservatórios e infraestrutura de conexão elétrica já existente nas usinas. Decisões de localização baseadas apenas em potencial energético, sem considerar a heterogeneidade hidrodinâmica, podem levar a subdimensionamento (falha prematura das amarrações) ou sobredimensionamento (custo proibitivo que inviabiliza o projeto).
 
-- **Subdimensionamento** → falha prematura das amarrações
-- **Sobredimensionamento** → custo proibitivo que inviabiliza o projeto
-
-Nosso trabalho demonstra que o método SMB, uma ferramenta relativamente simples da engenharia costeira, pode ser adaptado para reservatórios e transformar a geometria em **critério de decisão espacial**, reduzindo a arbitrariedade na seleção de sítios.
+O trabalho demonstra que o método SMB, uma ferramenta relativamente simples da engenharia costeira, pode ser adaptado para reservatórios e transformar a geometria em critério de decisão espacial, reduzindo a arbitrariedade na seleção de sítios.
 
 ## Implicações para o Baixo São Francisco
 
-O reservatório de Xingó já é palco de usos múltiplos: geração hidrelétrica, navegação, pesca e turismo. A fotovoltaica flutuante pode ser incorporada a esse mosaico de usos **sem conflito**, desde que instalada nas enseadas identificadas pelo zoneamento.
+O reservatório de Xingó já é palco de usos múltiplos, abrangendo geração hidrelétrica, navegação, pesca e turismo. A fotovoltaica flutuante pode ser incorporada a esse mosaico de usos sem conflito, desde que instalada nas enseadas identificadas pelo zoneamento.
 
-Além de gerar energia renovável, a cobertura parcial da superfície reduz a **evaporação** — um benefício especialmente relevante no Semiárido, onde cada metro cúbico de água importa.
+Além de gerar energia renovável, a cobertura parcial da superfície reduz a evaporação, benefício especialmente relevante no Semiárido, onde cada metro cúbico de água importa.
 
 ## Conclusão
 
-A fotovoltaica flutuante é mais do que colocar painéis sobre a água. É um problema de **engenharia de risco** que exige compreensão da dinâmica hidrodinâmica local. Nosso estudo mostra que a geometria determina o destino: enseadas abrigadas são refúgios estruturais; o canal aberto é zona de exclusão.
+A fotovoltaica flutuante transcende a simples colocação de painéis sobre a água, configurando um problema de engenharia de risco que exige compreensão da dinâmica hidrodinâmica local. Os resultados demonstram que a geometria determina o destino dos projetos, pois enseadas abrigadas funcionam como refúgios estruturais enquanto o canal aberto constitui zona de exclusão.
 
-Para quem trabalha com **planejamento territorial**, **energia renovável** ou **engenharia de reservatórios**, integrar o zoneamento hidrodinâmico ao processo de decisão não é opcional — é condição para viabilidade técnica e econômica.
+Para profissionais de planejamento territorial, energia renovável ou engenharia de reservatórios, integrar o zoneamento hidrodinâmico ao processo de decisão não é opcional, mas condição para viabilidade técnica e econômica.
 
 ---
 
