@@ -42,89 +42,180 @@ Si tiene interés en orientación o alianzas académicas, entre en contacto por 
 
 ## {{< fa book-open >}} Material Didáctico
 
-### Propiedad Intelectual e Innovación
+### Extensión Rural y Sociología Rural
 
-Presentaciones en formato HTML (RevealJS) utilizadas en las clases. Haga clic en cada tarjeta para abrir las diapositivas en el navegador.
+Presentaciones en formato HTML (RevealJS) utilizadas en las clases de Extensión Rural, dirigidas al programa de Ingeniería Agronómica. Haga clic en cada tarjeta para abrir las diapositivas en el navegador.
+
+```{=html}
+<div class="slide-grid">
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula01_sociologia_rural.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Clase 01 — Sociología Rural en Brasil</h4>
+<p>Actores, temas, objetos de estudio y teorías de la sociología rural.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula02_organizacao_social_agricultura.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Clase 02 — Organización Social de la Agricultura Familiar</h4>
+<p>Lógicas productivas, pluriactividad y estrategias de producción.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula03_politicas_publicas_meio_rural.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Clase 03 — Políticas Públicas para el Medio Rural</h4>
+<p>Agendas, programas e institucionalización de las políticas rurales.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula04_novas_ruralidades.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Clase 04 — Nuevas Ruralidades y Revalorización del Campo</h4>
+<p>Nuevos actores, pluriactividad y la transición rural-urbana.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula05_desenvolvimento_rural.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Clase 05 — Desarrollo Rural</h4>
+<p>Antiguos y nuevos enfoques del desarrollo rural sostenible.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula06_capitalismo_campo.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Clase 06 — Capitalismo en el Campo</h4>
+<p>Modernización agrícola e implicaciones para la estructura agraria.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula07_movimentos_sociais_campo.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Clase 07 — Movimientos Sociales en el Campo</h4>
+<p>Estructura agraria, reforma agraria y asentamientos rurales.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula08_politicas_extensao_rural.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Clase 08 — Políticas de Extensión Rural en Brasil</h4>
+<p>De la difusión a la participación: PNATER, andragogía y enfoques sistémicos.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula09_ater_digital_difusao.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Clase 09 — ATER Digital y Difusión Tecnológica</h4>
+<p>Innovación, inclusión digital y nuevos paradigmas de extensión rural.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula10_comunicacao_metodologias_participativas.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Clase 10 — Comunicación Rural y Metodologías Participativas</h4>
+<p>De la extensión a la comunicación dialógica: Freire, andragogía y DRP.</p>
+</div>
+</a>
+
+</div>
+```
+
+---
+
+### Propiedad Intelectual e Innovación en Ingeniería Agronómica
+
+Presentaciones en formato HTML (RevealJS) orientadas a la Ingeniería Agronómica, abordando innovación, propiedad intelectual y emprendimiento en el sector agropecuario. Haga clic en cada tarjeta para abrir las diapositivas.
 
 ```{=html}
 <div class="slide-grid">
 <a class="slide-card" href="../aulas/ciencia_pi/SLIDES_QUARTO/Tema 01 - Gestao da Inovacao Tecnologica/tema01_apresentacao.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Clase 01 — Gestión de la Innovación Tecnológica</h4>
-<p>Fundamentos y prácticas de la gestión de la innovación.</p>
+<h4>Clase 01 — Gestión de la Innovación Tecnológica Agropecuaria</h4>
+<p>Fundamentos y prácticas de la innovación tecnológica en el sector agronómico.</p>
 </div>
 </a>
 
 <a class="slide-card" href="#" onclick="return false;" style="opacity: 0.6; cursor: default;">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Clase 02 — PI como Activo Estratégico <span class="badge-soon">próximamente</span></h4>
-<p>Valorización y gestión estratégica de la Propiedad Intelectual.</p>
+<h4>Clase 02 — PI como Activo Estratégico en el Agronegocio <span class="badge-soon">próximamente</span></h4>
+<p>Valorización y gestión estratégica de la PI en el contexto agrícola.</p>
 </div>
 </a>
 
 <a class="slide-card" href="../aulas/ciencia_pi/SLIDES_QUARTO/Tema 03 - Empreendedorismo tecnologico/tema03_apresentacao.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Clase 03 — Emprendimiento Tecnológico</h4>
-<p>Innovación y creación de nuevos negocios tecnológicos.</p>
+<h4>Clase 03 — Emprendimiento Tecnológico Agrícola</h4>
+<p>Innovación y creación de negocios tecnológicos en el sector agronómico.</p>
 </div>
 </a>
 
 <a class="slide-card" href="../aulas/ciencia_pi/SLIDES_QUARTO/Tema 04 - Politicas de inovacao/tema04_apresentacao.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Clase 04 — Políticas de Innovación</h4>
-<p>Instrumentos y sistemas nacionales de innovación.</p>
+<h4>Clase 04 — Políticas de Innovación para la Agropecuaria</h4>
+<p>Instrumentos y sistemas de innovación para el sector agrícola.</p>
 </div>
 </a>
 
 <a class="slide-card" href="../aulas/ciencia_pi/SLIDES_QUARTO/Tema 05 - Gestao de Projetos inovacao/tema05_apresentacao.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Clase 05 — Gestión de Proyectos de Innovación</h4>
-<p>Gestión de proyectos con enfoque en Propiedad Intelectual.</p>
+<h4>Clase 05 — Gestión de Proyectos de Innovación Agrícola</h4>
+<p>Gestión de proyectos con enfoque en PI aplicada a la Ingeniería Agronómica.</p>
 </div>
 </a>
 
 <a class="slide-card" href="../aulas/ciencia_pi/SLIDES_QUARTO/Tema 06 - Valoracao de ativos/tema06_apresentacao.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Clase 06 — Valoración de Activos de PI</h4>
-<p>Métodos y aplicaciones de valoración de activos intangibles.</p>
+<h4>Clase 06 — Valoración de Activos de PI en el Agronegocio</h4>
+<p>Métodos de valoración de activos intangibles en el contexto agropecuario.</p>
 </div>
 </a>
 
 <a class="slide-card" href="../aulas/ciencia_pi/SLIDES_QUARTO/Tema 07 - Transferencia de tecnologia/tema07_apresentacao.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Clase 07 — Transferencia de Tecnología</h4>
-<p>Procesos y estrategias de transferencia de tecnología.</p>
+<h4>Clase 07 — Transferencia de Tecnología Agrícola</h4>
+<p>Procesos y estrategias de transferencia de tecnología en el sector agrícola.</p>
 </div>
 </a>
 
 <a class="slide-card" href="../aulas/ciencia_pi/SLIDES_QUARTO/Tema 08 - Gestao Estrategica PI PME/tema08_apresentacao.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Clase 08 — Gestión Estratégica de PI en PYMEs</h4>
-<p>PI para pequeñas y medianas empresas.</p>
+<h4>Clase 08 — Gestión Estratégica de PI en Empresas Rurales</h4>
+<p>PI para pequeñas y medianas empresas del sector agropecuario.</p>
 </div>
 </a>
 
 <a class="slide-card" href="#" onclick="return false;" style="opacity: 0.6; cursor: default;">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Clase 09 — Spin-offs Académicas <span class="badge-soon">próximamente</span></h4>
-<p>Emprendimiento universitario y creación de spin-offs.</p>
+<h4>Clase 09 — Spin-offs Académicas en la Agropecuaria <span class="badge-soon">próximamente</span></h4>
+<p>Emprendimiento universitario y spin-offs en el agronegocio.</p>
 </div>
 </a>
 
 <a class="slide-card" href="#" onclick="return false;" style="opacity: 0.6; cursor: default;">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Clase 10 — PI en la Economía Digital <span class="badge-soon">próximamente</span></h4>
-<p>Desafíos y nuevas fronteras de la PI en el contexto digital.</p>
+<h4>Clase 10 — PI en la Agricultura Digital <span class="badge-soon">próximamente</span></h4>
+<p>Desafíos y fronteras de la PI en la tecnología agropecuaria.</p>
 </div>
 </a>
 

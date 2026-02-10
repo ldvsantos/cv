@@ -42,89 +42,180 @@ If you are interested in supervision or academic partnerships, please get in tou
 
 ## {{< fa book-open >}} Course Materials
 
-### Intellectual Property and Innovation
+### Rural Extension and Rural Sociology
 
-HTML slide presentations (RevealJS) used in my courses. Click each card to open the slides in your browser.
+HTML (RevealJS) slide presentations used in the Rural Extension course for the Agricultural Engineering program. Click each card to open the slides in your browser.
+
+```{=html}
+<div class="slide-grid">
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula01_sociologia_rural.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Lesson 01 — Rural Sociology in Brazil</h4>
+<p>Actors, themes, objects of study and theories of rural sociology.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula02_organizacao_social_agricultura.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Lesson 02 — Social Organization of Family Farming</h4>
+<p>Productive logics, pluriactivity and production strategies.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula03_politicas_publicas_meio_rural.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Lesson 03 — Public Policies for Rural Areas</h4>
+<p>Agendas, programs and institutionalization of rural policies.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula04_novas_ruralidades.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Lesson 04 — New Ruralities and Rural Revaluation</h4>
+<p>New actors, pluriactivity and rural-urban transition.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula05_desenvolvimento_rural.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Lesson 05 — Rural Development</h4>
+<p>Old and new approaches to sustainable rural development.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula06_capitalismo_campo.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Lesson 06 — Capitalism in the Countryside</h4>
+<p>Agricultural modernization and implications for agrarian structure.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula07_movimentos_sociais_campo.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Lesson 07 — Social Movements in the Countryside</h4>
+<p>Agrarian structure, land reform and rural settlements.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula08_politicas_extensao_rural.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Lesson 08 — Rural Extension Policies in Brazil</h4>
+<p>From diffusion to participation: PNATER, andragogy and systemic approaches.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula09_ater_digital_difusao.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Lesson 09 — Digital ATER and Technology Diffusion</h4>
+<p>Innovation, digital inclusion and new paradigms for rural extension.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula10_comunicacao_metodologias_participativas.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Lesson 10 — Rural Communication and Participatory Methods</h4>
+<p>From extension to dialogic communication: Freire, andragogy and PRA.</p>
+</div>
+</a>
+
+</div>
+```
+
+---
+
+### Intellectual Property and Innovation in Agricultural Engineering
+
+HTML slide presentations (RevealJS) focused on Agricultural Engineering, covering innovation, intellectual property and entrepreneurship in the agricultural sector. Click each card to open the slides.
 
 ```{=html}
 <div class="slide-grid">
 <a class="slide-card" href="../aulas/ciencia_pi/SLIDES_QUARTO/Tema 01 - Gestao da Inovacao Tecnologica/tema01_apresentacao.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Lesson 01 — Innovation Management</h4>
-<p>Foundations and practices of technological innovation management.</p>
+<h4>Lesson 01 — Innovation Management in Agriculture</h4>
+<p>Foundations and practices of technological innovation in the agricultural sector.</p>
 </div>
 </a>
 
 <a class="slide-card" href="#" onclick="return false;" style="opacity: 0.6; cursor: default;">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Lesson 02 — IP as a Strategic Asset <span class="badge-soon">coming soon</span></h4>
-<p>Valuation and strategic management of Intellectual Property.</p>
+<h4>Lesson 02 — IP as a Strategic Asset in Agribusiness <span class="badge-soon">coming soon</span></h4>
+<p>Valuation and strategic IP management in the agricultural context.</p>
 </div>
 </a>
 
 <a class="slide-card" href="../aulas/ciencia_pi/SLIDES_QUARTO/Tema 03 - Empreendedorismo tecnologico/tema03_apresentacao.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Lesson 03 — Technological Entrepreneurship</h4>
-<p>Innovation and creation of technology-based ventures.</p>
+<h4>Lesson 03 — Agricultural Technology Entrepreneurship</h4>
+<p>Innovation and creation of tech-based ventures in the agronomic sector.</p>
 </div>
 </a>
 
 <a class="slide-card" href="../aulas/ciencia_pi/SLIDES_QUARTO/Tema 04 - Politicas de inovacao/tema04_apresentacao.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Lesson 04 — Innovation Policy</h4>
-<p>National innovation systems and policy instruments.</p>
+<h4>Lesson 04 — Innovation Policy for Agriculture</h4>
+<p>Innovation systems and policy instruments for the agricultural sector.</p>
 </div>
 </a>
 
 <a class="slide-card" href="../aulas/ciencia_pi/SLIDES_QUARTO/Tema 05 - Gestao de Projetos inovacao/tema05_apresentacao.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Lesson 05 — Innovation Project Management</h4>
-<p>Project management with focus on Intellectual Property.</p>
+<h4>Lesson 05 — Agricultural Innovation Project Management</h4>
+<p>Project management with focus on IP applied to Agricultural Engineering.</p>
 </div>
 </a>
 
 <a class="slide-card" href="../aulas/ciencia_pi/SLIDES_QUARTO/Tema 06 - Valoracao de ativos/tema06_apresentacao.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Lesson 06 — IP Asset Valuation</h4>
-<p>Methods and applications of intangible asset valuation.</p>
+<h4>Lesson 06 — IP Asset Valuation in Agribusiness</h4>
+<p>Intangible asset valuation methods in the agricultural context.</p>
 </div>
 </a>
 
 <a class="slide-card" href="../aulas/ciencia_pi/SLIDES_QUARTO/Tema 07 - Transferencia de tecnologia/tema07_apresentacao.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Lesson 07 — Technology Transfer</h4>
-<p>Technology transfer processes and strategies.</p>
+<h4>Lesson 07 — Agricultural Technology Transfer</h4>
+<p>Technology transfer processes and strategies in the agricultural sector.</p>
 </div>
 </a>
 
 <a class="slide-card" href="../aulas/ciencia_pi/SLIDES_QUARTO/Tema 08 - Gestao Estrategica PI PME/tema08_apresentacao.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Lesson 08 — Strategic IP Management for SMEs</h4>
-<p>IP strategies for small and medium enterprises.</p>
+<h4>Lesson 08 — Strategic IP Management for Rural Enterprises</h4>
+<p>IP strategies for small and medium agricultural businesses.</p>
 </div>
 </a>
 
 <a class="slide-card" href="#" onclick="return false;" style="opacity: 0.6; cursor: default;">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Lesson 09 — Academic Spin-offs <span class="badge-soon">coming soon</span></h4>
-<p>University entrepreneurship and spin-off creation.</p>
+<h4>Lesson 09 — Academic Spin-offs in Agriculture <span class="badge-soon">coming soon</span></h4>
+<p>University entrepreneurship and spin-offs in agribusiness.</p>
 </div>
 </a>
 
 <a class="slide-card" href="#" onclick="return false;" style="opacity: 0.6; cursor: default;">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Lesson 10 — IP in the Digital Economy <span class="badge-soon">coming soon</span></h4>
-<p>Challenges and new frontiers of IP in the digital context.</p>
+<h4>Lesson 10 — IP in Digital Agriculture <span class="badge-soon">coming soon</span></h4>
+<p>Challenges and frontiers of IP in agricultural technology.</p>
 </div>
 </a>
 
