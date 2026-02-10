@@ -1,0 +1,458 @@
+---
+title: "Canal Escoadouro – Teoria"
+subtitle: "Dimensionamento e Cálculo de Canais Escoadouros<br>Bioengenharia de Solos"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../assets/logo-uefs.webp
+    footer: "UEFS | Bioengenharia de Solos | Canal Escoadouro – Teoria"
+    slide-number: true
+    theme: [simple, assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## {.smaller-text}
+
+::: {.callout-note}
+Slide original contém 2 imagem(ns) ilustrativa(s).
+:::
+
+**Disciplina: anejo e Conservação da gua e do Solo**
+
+**Controle  de  Erosão Hídrica –**
+
+**Clculo de Canal Escoadouro – Terraços em Gradiente**
+
+
+|  | UNIVERSIDADE FEDERAL DE SERGIPE – UFS
+CENTRO DE CIÊNCIAS AGRÁRIAS APLICADAS - CCAA
+DEPARTAENTO DE ENGENHARIA AGRONICA - DEA |
+| --- | --- |
+
+
+---
+
+## CANAISESCOADOUROS {.smaller-text}
+
+**Definição: O canal escoadouro é um canal dedimensões  apropriadas, rasos e largos, geralmente de pequena  declividade e com leito resistente àerosão**
+
+**Finalidade: Receber gua dos terraços com gradiente e  transport-la para fora da rea sem causar problemas de  erosão nos terrenos por ondepassa.**
+
+**Tipos de canal escoadouro: Escoadouro Naturale**
+
+**EscoadouroArtificial**
+
+
+---
+
+## {.smaller-text}
+
+Localização do CanalEscoadouro
+
+
+---
+
+## {.smaller-text}
+
+Características da vegetação de revestimento do CanalEscoadouro
+
+**- Ser de fcilestabelecimento;**
+
+**- Ser rustica e de crescimentorpido;**
+
+**- Dar cobertura completa e uniforme ao solo;e**
+
+**- Não ser daninha, nem hospedeira de pragas edoenças**
+
+**ESPECIES**
+
+**Revestimento docanal:**
+
+**Grama batatais; Capim quicuiu; gengibre; rodes;centrosema;**
+
+**kudzu comum ou kudzutropical;**
+
+**Barreiras ou Dissipadores deenergia**
+
+**Cana-de-açucar; capim-limão; capimelefante**
+
+
+---
+
+## Clculo do CanalEscoadouro {.smaller-text}
+
+**Revestimento do canal escoadouro: Gramíneas de densidade média com estande ótimo **
+
+
+---
+
+## {.smaller-text}
+
+**1° Passo:**
+
+**Calcular EspaçamentoVertical**
+
+**EV =( (D/X) + 2) x 0,305(Bentley)**
+
+**EV= ((10/3,5))x0,305 = 1,46m, se D=(EV/EH) x 100,então:**
+
+**EH =14,60m,**
+
+**Logo:**
+
+**200/14,60 = 14terraços**
+
+
+---
+
+## 2° Passo: {.smaller-text}
+
+**Determinar o volume (vazão) de gua escoado pelocanal.**
+
+**Qmax=**
+
+𝑪𝑰𝑨
+
+𝟑𝟔𝟎
+
+**Emque:**
+
+**Q = Vazão do canal escoadouro , emm³.**𝒔−𝟏**;**
+
+**C= Coeficiente	deenxurrada;**
+
+**I = intensidade de chuva (**𝒎𝒎𝒉−𝟏);𝒆
+
+**A=Áreadecontribuiçãodeenxurradaparaoterraço(rea**
+
+**acima dele)(m²).**
+
+
+---
+
+## {.smaller-text}
+
+ÁREA DO TERRAÇO 1 = 500 X 14,60 = 7.300 **m² **=0,73ha
+
+VAZÃO DO TERRAÇO 1=
+
+Q1 =CIA/360
+
+Q1 = (0,58 x 190 x0,73)/360
+
+**Q1 = 0,22m³.**𝒔−𝟏
+
+**CALCULO PARA CADA TERRAÇOINDIVIDUALENTE**
+
+**Considerando todos os terraços com mesmo comprimento e largura, então:  A1=A2=A3=A4=A5=A6**
+
+**Se “C” e “I”, permanecem constante,então:**
+
+**Q2= Q1 + Q1, logo Q2=2Q1 = 2 x 0,22 = 0,44 m³.**𝒔−𝟏**,então**
+
+**Q3 = 3 Q1 = 0,66m³.**𝒔−𝟏
+
+**Então: 14 Q1 = 3,08m³.**𝒔−𝟏
+
+
+---
+
+## 3° Passo: {.smaller-text}
+
+**Calcular a seção docanal.**
+
+**Q = S xV**
+
+**Em que:**
+
+**Q = Vazão, volume de gua a ser escoado(m³**𝒔−𝟏**);**
+
+**V = Velocidade mxima permitida dentro do canal(m³**𝒔−𝟏**);**
+
+**S = Área da seção(m²)**
+
+
+---
+
+## {.smaller-text}
+
+**Então,se**
+
+**Q = S xV,**
+
+**logo**
+
+**Conhecendo-se Q1, Q2, Q3, Q4, Q5 e Q6, e sendo V=1,35m.**𝒔−𝟏
+
+**S1 = 0,22/1,35,então**
+
+**S1 = 0,16m²,**
+
+**S2 = Q2/V = 0,32 m2, e assim sucessivamente até o 14ºterraço:**
+
+**S14 = Q14/V = 2,24m²**
+
+**Se h =0,25m	e Y = 2h, tem-seque**
+
+**A = (( B + b)/2) xh**
+
+**S = Q/V**
+
+
+---
+
+## {.smaller-text}
+
+**Calculando B1 e b1 para o 1º.Terraço**
+
+B = b + 4h , B = b + 4 x 0,25, então B = b +1
+
+Substituindo“B”por	“b + 1” e tendo S1 = 0,16 **m2 **, se **S = ((b + 1 + b)/2) xh**
+
+então:
+
+0,16 = ((b + 1 + b)/2) x 0,25, então **b1 =0,14**,
+
+Desse modo se B = b + 1, então B = 0,14 + 1= **B1 =1,14**
+
+**Para o segundo terraço, S2=0,32, logo 0,32 = ((b+1+b)/2) x 0,25  Então : b2=0,78 e B2=1,78**
+
+**E assim são calculadas as bases maior e menor até o 14º terraço, ou  seja:**
+
+**S14= 2,24**
+
+**2,24 = ((b+1+b)/2) x 0,25, então b14= 8,46 e B14=9,46**
+
+
+---
+
+## {.smaller-text}
+
+**“b”**
+
+**“B”**
+
+S12
+
+S2
+
+S3
+
+S4
+
+S5
+
+S6
+
+S7
+
+S8
+
+S9
+
+S10
+
+S11
+
+S1
+
+S13
+
+S14
+
+Q1
+
+Q2=2Q1
+
+Q3=3Q1
+
+Q4=4Q1
+
+Q5=5Q1
+
+Q6=6Q1
+
+Q7=7Q1
+
+Q8=8Q1
+
+Q9=9Q1
+
+Q10=10Q1
+
+Q11=11Q1
+
+Q12=12Q1
+
+Q13=13Q1
+
+Q14=14Q1
+
+
+---
+
+## LOCAÇÃO {.smaller-text}
+
+** DE ESTACAS**
+
+
+---
+
+## 4° Passo: {.smaller-text}
+
+**Calcular a velocidade daenxurrada**:
+
+Para calcular a velocidade da enxurrada, emprega-se a fórmula propostapor**anning:**
+
+𝑹𝟐/𝟑𝒙𝑰𝟏/𝟐
+
+**V =	**𝒏
+
+Emque:
+
+V = Velocidade média da enxurrada (m𝑠−1);
+
+R = Raio hidrulico(m);
+
+I = Declividade do canal ( m 𝑚−1);e
+
+n = coeficiente derugosidade.
+
+
+---
+
+## R =𝑃 {.smaller-text}
+
+O **Raio hidrulico **(R) pode ser obtido em quadros, porém, como  no exemplo o canal escoadouro não possui seção uniforme em  toda sua extensão, essa informação deve ser obtida através da  formula:
+
+𝐴
+
+Em que:
+
+R = Raio hidrulico (m);
+
+A = S = Áreada seção transversaldocanal
+
+A=((B+b)/2)xh;
+
+P = Perímetro molhado(m).
+
+
+---
+
+## {.smaller-text}
+
+O **Perímetro olhado **, por sua vez é obtido pelafórmula:
+
+**P = b+2h√**𝟏+𝒁𝟐
+
+Emque:
+
+**P = Perímetro molhado(m);**
+
+**b = Base menor(m);**
+
+**h = Altura (m);e**
+
+**Z = Talude, sendo que**:
+
+**Z=Y/h**
+
+
+---
+
+## {.smaller-text}
+
+Então, como Y = 2h, Zser:
+
+Z=Y/h = 2h/h = 2x0,25/0,25 = 2,logo,
+
+P = b + 2h√5,então
+
+P1 = 0,14 +2 x 0,25 √5 =P1=1,26
+
+P2 = 0,78 + 2 x 0,25 √5 = P2 = 1,90,  Então P14= 8,46 + 0,25 √5 = P14 =9,58
+
+
+---
+
+## 𝑷𝑴 {.smaller-text}
+
+Os **Raios Hidrulicos**serão:
+
+𝑨
+
+**R =**
+
+E assim até o ultimo terraço, em que seteria:
+
+R1= A1/P1....Rn = Na/Pn
+
+Então:
+
+R1=A1/P1 = 0,16/1,26 = 0,127  R2=A2/P2 = 0,78/1,90 =0,168
+
+**E assim até o 14º terraço = R14=A14/P14=2,24/9,58 =	R14 =0,234**
+
+
+---
+
+## {.smaller-text}
+
+Admitindo-se que o canal ser de terra, com fundo e  lateral com vegetação densa , consulta-se o Quadro  17, para Coeficiente de rugosidade(n)
+
+
+---
+
+## {.smaller-text}
+
+Considerando:
+
+n=0,100
+
+I=6% = 0,06m.m-1, então I½ =0,2449,
+
+Aplicandona Formula deanningteremos:
+
+Velocidademédia do 1o.Terraço:
+
+V1=(0,127 2/3 x 0,06 ½)/0,1  V1= 0,62m.s-1,
+
+Se 0,62 m.s-1 é menor que a velocidade mxima permitida,  ou seja 0,62<1,35 m.s-1, est dentro do limite permitido  para esse tipo decanal
+
+
+---
+
+## {.smaller-text}
+
+Clculo de “V” para os demais terraços:  Segundoterraço:
+
+V2=(0,1682/3	x 0,06 ½)/ n=
+
+V2= 0,75 m.s-1
+
+E assim sucessivamente até o 14ºterraço,
+
+V14=(0,234 2/3 x 0,06½)/0,1	=  V14= 0,93 m.s-1
+
+
+---
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::

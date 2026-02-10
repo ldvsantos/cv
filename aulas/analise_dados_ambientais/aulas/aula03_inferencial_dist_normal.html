@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Luiz Diego Vidal Santos">
+
+<title>aula03_inferencial_dist_normal</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="aula03_inferencial_dist_normal_files/libs/clipboard/clipboard.min.js"></script>
+<script src="aula03_inferencial_dist_normal_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="aula03_inferencial_dist_normal_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="aula03_inferencial_dist_normal_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="aula03_inferencial_dist_normal_files/libs/quarto-html/popper.min.js"></script>
+<script src="aula03_inferencial_dist_normal_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="aula03_inferencial_dist_normal_files/libs/quarto-html/anchor.min.js"></script>
+<link href="aula03_inferencial_dist_normal_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="aula03_inferencial_dist_normal_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="aula03_inferencial_dist_normal_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="aula03_inferencial_dist_normal_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="aula03_inferencial_dist_normal_files/libs/bootstrap/bootstrap-9e3ffae467580fdb927a41352e75a2e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Estatística Inferencial e Distribuição Normal</h1>
+<p class="subtitle lead">Fundamentos da Inferência Estatística<br>Análise de Dados Ambientais</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Luiz Diego Vidal Santos </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Universidade Estadual de Feira de Santana (UEFS)
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="section" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section"></h2>
+<p>ESTATÍSTICA INFERENCIAL</p>
+<hr>
+</section>
+<section id="estatística-inferencial" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="estatística-inferencial">ESTATÍSTICA INFERENCIAL</h2>
+<p><strong>Definição</strong>:</p>
+<p>Inferência estatística refere-se aos resultados derivados da análise estatística dos dados coletados.</p>
+<p>Ou seja, a inferência estatística advém de uma relação entre a teoria estatística e os dados reais.</p>
+<hr>
+</section>
+<section id="estatística-inferencial-cont." class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="estatística-inferencial-cont.">ESTATÍSTICA INFERENCIAL (cont.)</h2>
+<p><strong>Métodos</strong>** ****de**** ****inferência**** ****estatística**** ****para**** ****testes**** ****de**** ****hipóteses**</p>
+<ul>
+<li><ol type="1">
+<li>Inferências frequentistas (TSHN [Ho]; <em>p-<strong>value<em>; </em>p</strong> </em>&lt; .05)</li>
+</ol></li>
+<li><ol start="2" type="1">
+<li>Estimação Bayesiana</li>
+</ol></li>
+<li><ol start="3" type="1">
+<li>Estimação por meio de <em>Bootstrapping</em> (intervalo de confiança das diferenças/das magnitudes)</li>
+</ol></li>
+</ul>
+<hr>
+</section>
+<section id="estatística-inferencial-cont.-1" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="estatística-inferencial-cont.-1">ESTATÍSTICA INFERENCIAL (cont.)</h2>
+<p><strong>Testes</strong>** ****de**** ****hipóteses**</p>
+<p>Hipótese</p>
+<ul>
+<li>Uma expectativa sobre as características morfológicas de uma nova cultivar</li>
+<li>Ex: A cultivar Abacaxi BRS Ajubá apresenta maior nível de controle da fusariose que a cultivar BRS Vitória</li>
+<li>Teste de hipótese</li>
+<li>Avaliação, por meio de métodos científicos, a hipótese estabelecida.</li>
+</ul>
+<hr>
+</section>
+<section id="estatística-inferencial-cont.-2" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="estatística-inferencial-cont.-2">ESTATÍSTICA INFERENCIAL (cont.)</h2>
+<p><strong>Testes</strong>** ****de**** ****hipóteses**</p>
+<p>Passo a passo para o teste de hipóteses:</p>
+<ol type="1">
+<li><p>Crie uma ou mais hipóteses;</p></li>
+<li><p>Colete dados úteis para testar as hipóteses criadas;</p></li>
+<li><p>Análise seus dados com testes estatísticos adequados;</p></li>
+<li><p>Avalie os resultados para ver se eles suportam as hipóteses iniciais.</p></li>
+</ol>
+<hr>
+</section>
+<section id="estatística-inferencial-cont.-3" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="estatística-inferencial-cont.-3">ESTATÍSTICA INFERENCIAL (cont.)</h2>
+<p><strong>Testes</strong>** ****de**** ****hipóteses**</p>
+<p>Ao coletar dados, você se depara com duas possibilidades:</p>
+<p>Hipótese Nula (Ho) O efeito não existe</p>
+<p>Hipótese Alternativa (Ha) O efeito existe</p>
+<hr>
+</section>
+<section id="estatística-inferencial-cont.-4" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="estatística-inferencial-cont.-4">ESTATÍSTICA INFERENCIAL (cont.)</h2>
+<p><strong>Testes</strong>** ****de**** ****hipóteses**</p>
+<p>Erro Tipo I: Rejeito a hipótese nula (Ho), quando Ho é verdadeira;</p>
+<ul>
+<li><p>Afirmo que há efeito, quando não há Erro Tipo II: Aceito a hipótese nula (Ho) ; quando Ho é falsa</p></li>
+<li><p>Afirmo que não há efeito, quando há <strong>Verdadeira</strong></p></li>
+</ul>
+<p><strong>Falsa</strong></p>
+<p><strong>Rejeito</strong></p>
+<p><strong>Aceito</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Erro Tipo I</th>
+<th>OK</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>OK</td>
+<td>Erro Tipo II</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="estatística-inferencial-cont.-5" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="estatística-inferencial-cont.-5">ESTATÍSTICA INFERENCIAL (cont.)</h2>
+<p><strong>Testes</strong>** ****de**** ****hipóteses**</p>
+<p>Erro Tipo I: Rejeito a hipótese nula (Ho), quando Ho é verdadeira;</p>
+<ul>
+<li><p>Afirmo que há efeito, quando não há Erro Tipo II: Aceito a hipótese nula (Ho) ; quando Ho é falsa</p></li>
+<li><p>Afirmo que não há efeito, quando há Você está grávido!</p></li>
+</ul>
+<p>Você não está grávida!</p>
+<hr>
+</section>
+<section id="estatística-inferencial-cont.-6" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="estatística-inferencial-cont.-6">ESTATÍSTICA INFERENCIAL (cont.)</h2>
+<p><strong>Inferência</strong>** ****frequentista**** ****(valor-*****p*****)**</p>
+<p>Ronald Fisher (1935)</p>
+<ul>
+<li><p>Critério probabilístico objetivo (valor de *p** *&lt; 0,05)</p></li>
+<li><p>Teste de significância da hipótese nula (TSHN)</p></li>
+</ul>
+<hr>
+</section>
+<section id="estatística-inferencial-cont.-7" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="estatística-inferencial-cont.-7">ESTATÍSTICA INFERENCIAL (cont.)</h2>
+<p><strong>Inferência</strong>** ****frequentista**** ****(valor-*****p*****)**</p>
+<p>O critério do valor-*p** *de Fisher assume, arbitrariamente uma probabilidade de 5%</p>
+<p>de chance de erro na inferência</p>
+<p>Método de inferência estatística mais empregado na Psicologia</p>
+<hr>
+</section>
+<section id="estatística-inferencial-cont.-8" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="estatística-inferencial-cont.-8">ESTATÍSTICA INFERENCIAL (cont.)</h2>
+<p><strong>Inferência</strong>** ****frequentista**** ****(valor-*****p*****)**</p>
+<p>A cultivar Abacaxi BRS Ajubá apresenta maior nível (<em>M<strong> <em>= 6,32; </em>DP</strong> </em>= 1,33) de controle da fusariose quando comparada a cultivar Abacaxi BRS Vitória(<em>M<strong> <em>= 8.79; </em>DP</strong> </em>= 1.19; *p** *&lt; 0,05);</p>
+<hr>
+</section>
+<section id="estatística-inferencial-cont.-9" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="estatística-inferencial-cont.-9">ESTATÍSTICA INFERENCIAL (cont.)</h2>
+<p><strong>Inferência</strong>** ****frequentista**** ****(valor-*****p*****)**</p>
+<p>Todas as vezes que fazemos uma análise inferencial, você avalia se o efeito foi</p>
+<p>estatisticamente significativo (*p** *&lt; 0,05)</p>
+<ul>
+<li>Vetiver com sistema radicular maior que paspalum (*p** *&lt; 0,05)</li>
+<li>Depressão se associou com baixa motivação no laboratório (*p** *&lt; 0,01)</li>
+<li>Não houve associação entre consumo de maconha e perda de libido (*p** *= 0,18).</li>
+<li>A associação entre consumo de maconha e diminuição na memória foi marginalmente significativa (*p** *= 0,06)</li>
+</ul>
+<hr>
+</section>
+<section id="estatística-inferencial-cont.-10" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="estatística-inferencial-cont.-10">ESTATÍSTICA INFERENCIAL (cont.)</h2>
+<p><strong>Inferência</strong>** ****frequentista**** ****(valor-*****p*****)**</p>
+<p>Frequentemente usamos o valor de p como forma de inferência estatística, mas precisamos ter alguns cuidados</p>
+<ul>
+<li>O valor de p é fortemente influenciado pelo tamanho amostral
+<ul>
+<li>Quanto maior a amostra, maior é a chance de você encontrar valores de p &lt; 0,05. (erro do tipo I)</li>
+<li>Valor de p não reflete, por si só, a magnitude do achado (força)</li>
+<li><em>r = </em>0,245 , p = 0,495 (n = 10)</li>
+<li><em>r = </em>0,245 , p = 0,298 (n = 20)</li>
+<li><em>r = </em>0,245 , p = 0,086 (n = 50)</li>
+<li><em>r = </em>0,245 , p = 0,041 (n = 70)</li>
+<li><em>r = </em>0,245 , p = 0,003 (n = 150)</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="estatística-inferencial-cont.-11" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="estatística-inferencial-cont.-11">ESTATÍSTICA INFERENCIAL (cont.)</h2>
+<p><strong>Erro</strong>** ****Tipo**** ****II:**</p>
+<ul>
+<li>Acatar a Ho, quando ela é falsa.</li>
+<li>Probabilidade de erro aceitável: 0,20 Poder amostral</li>
+</ul>
+<p>O poder de um experimento é a probabilidade de detectar um efeito do</p>
+<p>tratamento, se estiver presente.</p>
+<p>O efeito não existe</p>
+<p>*p** *= 0,08</p>
+<p><em></em> probabilidade de detectar o efeito</p>
+<p>1 – 0,20 = 0,80.</p>
+<p>(Cohen, 1988, 1992)</p>
+<p>35</p>
+<p>30</p>
+<p>25</p>
+<p>20</p>
+<p>15</p>
+<p>10</p>
+<p>5</p>
+<p>0</p>
+<p>BRS Ajubá</p>
+<p>BRS Vitória</p>
+<hr>
+</section>
+<section id="estatística-inferencial-cont.-12" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="estatística-inferencial-cont.-12">ESTATÍSTICA INFERENCIAL (cont.)</h2>
+<p><strong>Relação</strong>** ****direta**** ****entre**** ****** <strong>(significância)</strong>** ****e**** ** <strong>(poder <em>b</em>)</strong></p>
+<ul>
+<li>0.05 e 0.80 são os valores mais comumente aceitos na literatura <strong>Amostra</strong></li>
+</ul>
+<p><strong>Pequena</strong></p>
+<p><strong>Grande</strong></p>
+<p><strong>Pequeno (sig)</strong></p>
+<p><strong>Grande (n-sig)</strong></p>
+<p><strong>Valor de p</strong></p>
+<p><strong>Efeito alto</strong></p>
+<p><strong>Efeito baixo </strong></p>
+<p><strong>Efeito alto (erro tipo II)</strong></p>
+<p><strong>Efeito alto</strong></p>
+<p><strong>Efeito alto </strong></p>
+<p><strong>Efeito baixo (erro tipo I)</strong></p>
+<hr>
+</section>
+<section id="estatística-inferencial-cont.-13" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="estatística-inferencial-cont.-13">ESTATÍSTICA INFERENCIAL (cont.)</h2>
+<p><strong>Outras situações que nos leva a cometer Erro Tipo I e Erro Tipo II</strong></p>
+<p>Pressupostos dos testes não acatados</p>
+<p>Amostras problemáticas (vieses de seleção)</p>
+<p>Instrumento de pesquisa ruim</p>
+<hr>
+</section>
+<section id="section-1" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-1"></h2>
+<p>TAMANHO DA AMOSTRA</p>
+<hr>
+</section>
+<section id="tamanho-da-amostra" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="tamanho-da-amostra">TAMANHO DA AMOSTRA</h2>
+<p><strong>Erro Tipo I</strong></p>
+<ul>
+<li>Efeito existe quando na verdade não: (a = 0,05)</li>
+<li><strong>Erro Tipo II</strong></li>
+<li><strong>Efeito não existe quando na verdade existe.</strong></li>
+<li><strong>Poder amostral</strong>
+<ul>
+<li>Poder = 1 – Beta (Prob. de Erro Tipo II) (1 – 0,20) = 0,80</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="tamanho-da-amostra-cont." class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="tamanho-da-amostra-cont.">TAMANHO DA AMOSTRA (cont.)</h2>
+<p><strong>Tamanho do efeito </strong></p>
+<p>O 𝑑𝑧​ é uma medida padronizada da diferença entre duas condições em um estudo de medidas repetidas.</p>
+<p><strong>𝑑𝑧: </strong>quanto maior, mais facilmente detectável é a diferença, necessitando de menos amostras.</p>
+<p><strong>Erro Tipo I</strong></p>
+<ul>
+<li>Efeito existe quando na verdade não: (a = 0,05)</li>
+<li><strong>Poder amostral</strong>
+<ul>
+<li>Poder = 1 – Beta (Prob. de Erro Tipo II) (1 – 0,20) = 0,80</li>
+<li>Baixar G*Power</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="distribuição-normal" class="level1">
+<h1><span class="section-header">DISTRIBUIÇÃO NORMAL</span></h1>
+<hr>
+<section id="distribuição-normal-cont." class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="distribuição-normal-cont.">DISTRIBUIÇÃO NORMAL (cont.)</h2>
+<p>O que é</p>
+<ul>
+<li><p>A Distribuição Normal é uma das distribuições de probabilidade mais utilizadas para modelar fenômenos naturais.</p></li>
+<li><p>Isso se deve ao fato de que um grande número de fenômenos naturais apresenta esse tipo de distribuição.</p></li>
+</ul>
+<hr>
+</section>
+<section id="distribuição-normal-cont.-1" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="distribuição-normal-cont.-1">DISTRIBUIÇÃO NORMAL (cont.)</h2>
+<p>Como acontece</p>
+<p>Como acontece a distribuição normal</p>
+<hr>
+</section>
+<section id="distribuição-normal-cont.-2" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="distribuição-normal-cont.-2">DISTRIBUIÇÃO NORMAL (cont.)</h2>
+<p>O que é</p>
+<ul>
+<li>A curva normal representa a forma como diferentes valores se agrupam em torno de um determinado ponto.</li>
+<li>A forma como diferentes pessoas se agrupam em torno de determinada pontuação ou escore, para uma determinada variável.</li>
+</ul>
+<hr>
+</section>
+<section id="distribuição-normal-cont.-3" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="distribuição-normal-cont.-3">DISTRIBUIÇÃO NORMAL (cont.)</h2>
+<p>O que é</p>
+<ul>
+<li>A curva normal é definida por meio de duas informações: média e desvio-padrão</li>
+<li>Tamanho radicular Capim vetier</li>
+<li>Média: 76,62cm</li>
+<li>Desvio-Padrão: 3,72cm</li>
+</ul>
+<hr>
+</section>
+<section id="distribuição-normal-cont.-4" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="distribuição-normal-cont.-4">DISTRIBUIÇÃO NORMAL (cont.)</h2>
+<p>Média</p>
+<p>Média = 613 = 76,62</p>
+<p>8</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>55</th>
+<th>64</th>
+<th>72</th>
+<th>80</th>
+<th>70</th>
+<th>100</th>
+<th>98</th>
+<th>74</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="distribuição-normal-cont.-5" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="distribuição-normal-cont.-5">DISTRIBUIÇÃO NORMAL (cont.)</h2>
+<p>Desvio-Padrão</p>
+<p>Estimativa de variabilidade em torno da média</p>
+<p>Média</p>
+<p>76cm</p>
+<p>245 = 15,66</p>
+<p>7</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>55</th>
+<th>64</th>
+<th>70</th>
+<th>72</th>
+<th>74</th>
+<th>80</th>
+<th>98</th>
+<th>100</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="distribuição-normal-cont.-6" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="distribuição-normal-cont.-6">DISTRIBUIÇÃO NORMAL (cont.)</h2>
+<p>A curva normal é definida por meio de duas informações: média e desvio-padrão</p>
+<p>Média = 170; DP = 5,72</p>
+<p>Frequência (<em>n)</em></p>
+<p>+-1 DP (68.3%) = [164,28– 175,72]</p>
+<p>+-2 DP (95,4%) = [158,56– 181,44]</p>
+<p>+-3 DP (99,7%) = [152,84 – 187,16]</p>
+<hr>
+</section>
+<section id="distribuição-normal-cont.-7" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="distribuição-normal-cont.-7">DISTRIBUIÇÃO NORMAL (cont.)</h2>
+<p>DESVIOS DE DISTRIBUIÇÃO DE NORMALIDADE</p>
+<p>Renda no Brasil</p>
+<p>Mais pobres</p>
+<p>Mais ricos</p>
+<p>Quantidade de pessoas</p>
+<p>Renda</p>
+<hr>
+</section>
+<section id="distribuição-normal-cont.-8" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="distribuição-normal-cont.-8">DISTRIBUIÇÃO NORMAL (cont.)</h2>
+<p>DESVIOS DE DISTRIBUIÇÃO DE NORMALIDADE</p>
+<p>DESVIO POR ASSIMETRIA</p>
+<hr>
+</section>
+<section id="distribuição-normal-cont.-9" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="distribuição-normal-cont.-9">DISTRIBUIÇÃO NORMAL (cont.)</h2>
+<p>DESVIOS DE DISTRIBUIÇÃO DE NORMALIDADE</p>
+<p>DESVIO POR CURTOSE</p>
+<p><strong>Leptocúrtica</strong>: Dados muito concentrados junto à media;</p>
+<p><strong>Mesocúrtica</strong>: Distribuição normal</p>
+<p><strong>Platicúrtica</strong>: Dados muito dispersos; muitas pessoas muito afastadas da média.</p>
+<hr>
+</section>
+<section id="section-2" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-2"></h2>
+<p>TESTANDO A DISTRIBUIÇÃO NORMAL NO JASP</p>
+<p>Luiz Diego Vidal - vidal.center@academico.ufs.br - CPF: 033.281.915-93</p>
+<hr>
+</section>
+<section id="distribuição-normal-cont.-10" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="distribuição-normal-cont.-10">DISTRIBUIÇÃO NORMAL (cont.)</h2>
+<p>COMO SABER SE SEUS DADOS SÃO NORMALMENTE DISTRIBUÍDOS?</p>
+<p><strong>Critérios</strong>** ****descritivos**** (****Tabachnick**** ****and**** ****Fidell****, 2019)**</p>
+<p>Transforme o escore da Assimetria e Curtose em escore Z</p>
+<p>Calcule: Assimetria e Curtose / Erro padrão</p>
+<p>Valor maior que |1.96| é significativo *p** *&lt; .05</p>
+<p>Valor acima que |2.58| é significativo *p** *&lt; .01</p>
+<p>Valor acima que |3.29| é significativo *p** *&lt; .001</p>
+<hr>
+</section>
+<section id="distribuição-normal-cont.-11" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="distribuição-normal-cont.-11">DISTRIBUIÇÃO NORMAL (cont.)</h2>
+<p>COMO SABER SE SEUS DADOS SÃO NORMALMENTE DISTRIBUÍDOS?</p>
+<p><strong>Critérios</strong>** ****estatísticos**** ****(**Testes de significância)</p>
+<ul>
+<li><p>Kolmogorov-Smirnov e Shapiro-Wilk</p></li>
+<li><p>Hipotese nula: Dados não são normalmente distribuídos Espera-se rejeitar a hipótese nula → Dados são normalmente distribuídos</p></li>
+<li><p>Nos testes de K-S e S-W, espera-se que *p** *&gt; 0,05 (maior que) para acatar a distribuição de normalidade dos dados.</p></li>
+</ul>
+<hr>
+</section>
+<section id="distribuição-normal-cont.-12" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="distribuição-normal-cont.-12">DISTRIBUIÇÃO NORMAL (cont.)</h2>
+<p>QUAIS DOS TESTES ESTATÍSTICOS UTILIZAR?</p>
+<ul>
+<li>Shapiro-Wilk &gt; Anderson-Darling &gt; Kolmogorov-Smirnov (Liliefors) &gt; Kolmogorov-Smirnov</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="tamanho-amostral" class="level1">
+<h1><span class="section-header">TAMANHO AMOSTRAL</span></h1>
+<hr>
+</section>
+<section id="section-3" class="level1" data-background-color="#034EA2">
+<h1 data-background-color="#034EA2"></h1>
+<p><span class="obrigado-fit-text" style="color: white;">Obrigado!</span></p>
+<div style="text-align: center; color: white; font-size: 0.7em;">
+<p>Luiz Diego Vidal Santos</p>
+<p>Universidade Estadual de Feira de Santana (UEFS)</p>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

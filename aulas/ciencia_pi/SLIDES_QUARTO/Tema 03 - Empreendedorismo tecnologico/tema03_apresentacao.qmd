@@ -1,0 +1,470 @@
+﻿---
+title: "Propriedade Intelectual e Inovação"
+subtitle: "Empreendedorismo Tecnológico<br>Inovação e Criação de Novos Negócios"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format: 
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS - Universidade Estadual de Feira de Santana | Tema 3 - Empreendedorismo Tecnológico"
+    slide-number: true
+    theme: [simple, assets/ufs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos Principais
+
+- [1]{.circle} Conceitos de Empreendedorismo Tecnológico
+- [2]{.circle} Lean Startup e Customer Development
+- [3]{.circle} Modelos de Negócio Inovadores
+- [4]{.circle} Ecossistemas Empreendedores
+- [5]{.circle} Financiamento e Aceleração
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo Central**
+
+Explorar os fundamentos do empreendedorismo tecnológico e as estratégias para criação de startups de sucesso.
+:::
+:::
+:::
+
+---
+
+## [Introdução]{.section-header}
+
+---
+
+## Empreendedorismo Tecnológico: ideia à startup {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+### Conceito
+
+- Criação de novas combinações sob incerteza e com potencial de escalabilidade
+- Conversão de conhecimento científico-tecnológico em solução adotável
+
+::: {.info-box}
+**Schumpeter (1942)**: destruição criativa como motor de renovação competitiva
+:::
+
+::: {.highlight-box}
+**Bailetti (2012)**: diferencia-se por depender de conhecimento, intangíveis e coordenação de rede
+:::
+:::
+
+::: {.column width="45%"}
+### Por que é diferente em base tecnológica
+
+- Parte do valor está em **intangíveis** (PI, *know-how*)
+- A solução percorre uma jornada de maturação
+
+**Evidências típicas de maturação**
+- Prova de conceito → protótipo → validação em ambiente relevante → mercado
+
+::: {.info-box}
+Referências: Vedovello (2000), FINEP (2006)
+:::
+:::
+:::
+
+---
+
+## Da incerteza ao processo: governança do aprendizado {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Ideia central
+
+- Startup não é só “boa ideia”, é **processo de produzir evidência**
+- Hipótese técnica e hipótese de valor precisam avançar juntas
+- Decisão deve ser baseada em sinais de mercado e de viabilidade
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Regra prática**
+
+Quanto maior a incerteza, maior a necessidade de ciclos curtos e registros simples de hipóteses, testes e aprendizados, de modo que falhas sejam identificadas cedo e o desperdício de recursos seja minimizado.
+:::
+:::
+:::
+
+---
+
+## [Problema e Proposição de Valor]{.section-header}
+
+---
+
+## Problema → oportunidade → proposição de valor {.smaller-text}
+
+::: {.slide-scroll}
+
+::: {.highlight-box}
+**Transformação decisiva**
+
+- Problema real vira **hipótese testável de valor**
+- Definir claramente
+  - Quem sofre o problema
+  - Contexto de uso
+  - Alternativas existentes
+  - Restrições (técnicas e regulatórias)
+:::
+
+::: {.info-box}
+Base: Drucker (1985), Hisrich et al. (2017)
+:::
+
+::: {.highlight-box}
+**Critério de qualidade**
+
+Uma proposição de valor forte combina
+
+- Escuta de clientes
+- Inteligência competitiva
+- Inteligência tecnológica
+
+e reduz o risco de construir tecnologia sofisticada para um problema fraco.
+:::
+
+:::
+
+---
+
+## Inovação como combinação de fontes de conhecimento {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+### Manual de Oslo
+
+- Inovação depende de integrar fontes internas e externas
+- Em startups, tempo e orçamento são limitados
+- Portanto, essa integração precisa virar método, com hipóteses testadas cedo em ciclos curtos, aceitando falhar precocemente para reduzir desperdício
+
+::: {.info-box}
+OCDE e Eurostat (2005)
+:::
+:::
+
+::: {.column width="40%"}
+::: {.highlight-box}
+**Tradução prática**
+
+Operacionalizar como validação iterativa, com ciclo construir, medir e aprender, MVP como experimento e decisão de perseverar ou pivotar com base em evidências.
+:::
+:::
+:::
+
+---
+
+## Mapa didático da jornada (ponte teoria → prática) {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+::: {.highlight-box}
+**Ideia-chave**
+
+Tratar o modelo de negócio como um “mapa” que se atualiza, porque cada etapa da startup pede evidências e ferramentas diferentes.
+:::
+
+O mapa explicita hipóteses e reduz autoengano, ao mesmo tempo em que ajuda a escolher o próximo experimento com menos desperdício de tempo e recursos.
+:::
+
+::: {.column width="45%"}
+Uma leitura didática organiza a jornada em cinco etapas, ideação ligada a dores e alternativas, validação ancorada em MVP e ciclos curtos, operação centrada em entrega consistente, tração voltada ao motor de crescimento e scale-up associado à expansão com governança.
+:::
+:::
+
+---
+
+## Exemplos por fase (casos ilustrativos) {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.highlight-box}
+**Ideação** aparece quando um problema concreto vira hipótese de valor, e o caso do Airbnb é frequentemente citado como exemplo de observação de demanda e restrição de oferta em um contexto específico, a partir do qual uma solução simples foi formulada para testar interesse real.
+:::
+
+::: {.info-box}
+**Validação** tende a ficar mais nítida quando a startup usa um MVP para checar disposição a pagar e comportamento, e o exemplo clássico do Dropbox costuma ser lembrado por usar uma demonstração inicial para validar demanda antes de construir toda a solução em escala.
+:::
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Operação** se evidencia quando a entrega precisa ser repetível e previsível, e casos como Uber são frequentemente associados ao desafio de transformar um serviço em rotina operacional com padrões, onboarding e controle de qualidade compatíveis com crescimento.
+:::
+
+::: {.info-box}
+**Tração** se torna visível quando existe um motor de aquisição e retenção que funciona de forma consistente, e o Airbnb é comumente usado como referência de crescimento apoiado em canais e mecanismos de expansão que evoluem com experimentação contínua.
+
+**Scale-up** passa a depender de governança, capital e capacidade organizacional, e exemplos como Nubank são frequentemente citados pela combinação entre expansão, robustez regulatória e maturidade de processos ao longo do crescimento.
+:::
+:::
+:::
+
+## [Validação Iterativa]{.section-header}
+
+---
+
+## Lean Startup e Customer Development {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+### Princípios
+
+- Priorizar **aprendizado validado** antes de escalar
+- Tratar MVP como **experimento**, não como produto final
+- Iterar com base em evidência
+
+::: {.info-box}
+Ries (2011), Blank (2013)
+:::
+:::
+
+::: {.column width="45%"}
+### O que o MVP testa
+
+- Disposição a pagar
+- Aderência ao problema
+- Canais de aquisição
+- Custos e restrições de operação
+
+::: {.highlight-box}
+MVP bom reduz incerteza, não “enche checklist”.
+:::
+:::
+:::
+
+---
+
+## Ciclo Build–Measure–Learn (visão didática) {.smaller-text}
+
+```{mermaid}
+graph LR
+    I[IDEIAS] --> B[BUILD\nMVP]
+    B --> P[PRODUTO]
+    P --> M[MEASURE\nDados]
+    M --> D[DATA]
+    D --> L[LEARN\nValidação]
+    L --> I
+```
+
+::: {.info-box}
+Objetivo do ciclo: transformar opinião em evidência e decisão
+:::
+
+---
+
+## Governança dos experimentos {.smaller-text}
+
+::: {.highlight-box}
+**Práticas leves, mas decisivas**
+
+- Backlog de hipóteses e testes
+- Cadências curtas (inspiração Scrum)
+- Kanban para visualizar gargalos
+- Registro simples de riscos para evitar autoengano
+:::
+
+::: {.info-box}
+Sinal de maturidade é reduzir incerteza de forma cumulativa, não apenas “fazer muito”.
+:::
+
+---
+
+## Processo P Start (Souza, 2022) {.smaller-text}
+
+```{mermaid}
+graph TB
+    A[Fase 1\nIdentificação de Oportunidade] --> B[Fase 2\nValidação Técnico-Mercadológica]
+    B --> C[Fase 3\nDesenvolvimento MVP]
+    C --> D[Fase 4\nEscalabilidade e Crescimento]
+    A --> A1[Prospecção tecnológica\nVigilância de patentes\nCruzamento mercado-tech]
+    B --> B1[Lean Startup\nCustomer Development\nCiclos curtos]
+    C --> C1[Protótipo funcional\nCaracterísticas essenciais\nFeedback usuários]
+    D --> D1[Planejamento estratégico\nFinanciamento\nProteção PI]
+```
+
+---
+
+## [Modelo de Negócio]{.section-header}
+
+---
+
+## Modelo de negócio coerente com tecnologia {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+### Coerência que evita desperdício
+
+- Forma de monetização precisa combinar com custo e ritmo de maturação
+- Em hard tech, pode exigir:
+  - certificações
+  - integração com cadeia produtiva
+  - contratos de longo prazo
+- Em software escalável, a prioridade tende a ser:
+  - aquisição e retenção
+  - custo de servir
+  - risco de dependência de plataforma
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**Critério**
+
+Alinhamento entre maturação técnica, proposta de valor e captura de valor.
+:::
+:::
+:::
+
+---
+
+## [PI e Transferência de Tecnologia]{.section-header}
+
+---
+
+## Propriedade intelectual como ativo de escala {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+### Função estratégica
+
+- PI é apropriabilidade, não burocracia
+- Aumenta poder de barganha e reduz vulnerabilidade à imitação
+- Decisões típicas
+  - segredo vs depósito vs publicação
+
+::: {.info-box}
+Bailetti (2012)
+:::
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**Ponto de atenção**
+
+PI deve acompanhar o ritmo de validação e o modelo de negócio.
+:::
+:::
+:::
+
+---
+
+## Rotas de escala via transferência de tecnologia {.smaller-text}
+
+### Quando a ciência encontra o mercado
+
+- Licenciamento
+- Parcerias universidade–empresa
+- *Joint ventures*
+- *Spin-offs*
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.info-box}
+**Bozeman (2000)**: efetividade mede absorção e geração de valor
+:::
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Arora et al. (2001)**: estrutura do mercado de tecnologia condiciona a negociação
+:::
+:::
+:::
+
+---
+
+## [Ecossistema e Execução]{.section-header}
+
+---
+
+## Ecossistema reduz incerteza e acelera execução {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+### Infraestrutura e rede
+
+- Incubadoras, parques e laboratórios abertos
+- Aceleram prototipagem e validação
+- Tornam evidência mais barata e rápida
+
+::: {.info-box}
+Vedovello (2000)
+:::
+:::
+
+::: {.column width="45%"}
+### Recorte local (SE)
+
+- UFS e Sergipetec como articulação científica e mentoria
+- Agitte.se como mediação de PI e parcerias
+- FAPITEC-SE e Centelha como fomento para experimentos e execução
+:::
+:::
+
+---
+
+## Financiamento e aceleração {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+### Dinâmica típica
+
+- Pré-seed/seed para testar hipóteses e validar mercado
+- Capital de risco para escalar quando há tração
+- Fomento público pode financiar evidências e reduzir “vale” entre protótipo e mercado
+
+::: {.info-box}
+FINEP (2006)
+:::
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**Ambiente regulatório**
+
+Instrumentos tributários e de simplificação podem reduzir custo de conformidade, mas não substituem mercado.
+:::
+:::
+:::
+
+---
+
+## [Síntese]{.section-header}
+
+---
+
+## Mensagens finais {.smaller-text}
+
+- Empreender em tecnologia é **governar incerteza** com evidências
+- Problema e proposição de valor precisam caminhar com viabilidade técnica
+- MVP e ciclos curtos reduzem risco antes de escalar
+- PI, modelo de negócio e ecossistema precisam ser coerentes
+
+---
+
+## Referências-chave (base da redação) {.smaller-text}
+
+- Schumpeter (1942)
+- Drucker (1985); Hisrich et al. (2017)
+- OCDE e Eurostat (2005)
+- Ries (2011); Blank (2013)
+- Souza (2022)
+- Bailetti (2012)
+- Bozeman (2000); Arora et al. (2001)
+- Vedovello (2000); FINEP (2006)

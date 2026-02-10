@@ -1,0 +1,442 @@
+﻿---
+title: "ANOVA de Uma Via"
+subtitle: "Análise de Variância One-Way<br>Análise de Dados Ambientais"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../assets/logo-uefs.webp
+    footer: "UEFS | Análise de Dados Ambientais | ANOVA de Uma Via"
+    slide-number: true
+    theme: [simple, assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+# [ANÁLISE DE VARIÂNCIA]{.section-header}
+
+---
+
+## ANÁLISE DE VARIÂNCIA {.smaller-text}
+
+Comparação de 3 (ou mais) grupos
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE DE VARIÂNCIA
+
+**O**** ****que**** ****é**
+
+ANOVA refere-se à um conjunto de testes de diferenças de grupos, utilizado para avaliar
+
+em que medida três ou mais grupos diferem em relação à uma variável de interesse.
+
+OU
+
+O quanto uma mesma variável mensurada em três ou mais vezes variou ao longo do tempo.
+
+
+---
+
+## {.smaller-text}
+
+ANOVAS
+
+
+| Nome | Característica | Exemplo |
+| --- | --- | --- |
+| ANOVA | Uma variável independente (categórica) e uma variável dependente | [Geotêxtil] x Efeito splash |
+| ANOVA FATORIAL | Duas (ou +) variáveis independentes e uma variável dependente | [Geotêxtil x Cobertura do solo (Ter/Não ter)] x Efeito splash |
+| ANCOVA | Uma variável independente, uma variável dependente (e uma ou mais variáveis de controle) | [Geotêxtil] x splash (Controlado por ter ou não ter cobertura) |
+
+
+---
+
+## {.smaller-text}
+
+ANOVAS
+
+
+| Nome | Característica | Exemplo |
+| --- | --- | --- |
+| ANOVA-MR | Uma variável dependente mensurada 3 (ou +) vezes | Efeito splash (pré-teste, pós-teste e follow-up) |
+| ANOVA FATORIAL-
+MR | Duas (ou +) variáveis de grupo mensuradas 3 (ou +) vezes | Splash  e Crescimento da vegetação (pré-
+teste, pós-teste e follow-up) |
+| MANOVA-MR | Uma variável de grupo e duas (ou +) variáveis dependentes | Geotêxtil e Resina protetora (pré- teste, pós-teste e follow-up) |
+
+
+---
+
+## {.smaller-text}
+
+ANOVA
+
+Porque realizar uma ANOVA
+
+  - Em uma única análise você compara todos os grupos que você tiver;
+  - Controla o Erro Tipo I por meio de análises denominadas testes de post-hoc
+- Para cada análise estatística, se estipula um 5% de chance de erro como aceitável (significância estatística). Múltiplas comparações aumenta essa chance de erro (e.g., 3 comparações → 15% a chance de erro ao acaso).
+
+---
+
+## {.smaller-text}
+
+ANOVA
+
+Por que realizar uma ANOVA
+
+3 comparações: G1-G2;
+
+G1-G3;
+
+G2-G3.
+
+Aumento do Erro Tipo I
+
+3 comparações
+
+**Taboa**
+
+**Juncos**
+
+**Ouricuri**
+
+
+---
+
+## {.smaller-text}
+
+ANOVA
+
+Distribuição de normalidade dos resíduos
+
+- Os resíduos dos grupos nas variáveis de interesse distribuem-se normalmente.
+- Avaliação de curtose e assimetria; Testes de normalidade (Kolgomorov-Smirnov; Shapiro-Wilk)
+Homogeneidade de variância
+
+- As variâncias dentro de cada grupo é igual (ou pelo menos aproximada) àquela dentro de todos os grupos.
+- Teste de Levene
+Amostras independentes
+
+- As fibras analisadas respondem de maneira independente.
+- Delineamento metodológico / Coleta de dados
+- Tamanho de efeito Eta parcial
+
+---
+
+## ANÁLISE DE VARIÂNCIA SIMPLES {.smaller-text}
+
+ANOVA DE UMA VIA (ANOVA ONE-WAY)
+
+
+---
+
+## {.smaller-text}
+
+ANOVA *ONE-**WAY*
+
+Níveis de perda de solo entre parcelas com diferentes
+
+tipos de cobertura de solo
+
+VD
+
+FATOR
+
+(VI)
+
+Uma variável categórica (Estado civil)
+
+Uma variável métrica/ordinal (Satisfação com a vida)
+
+
+| Cobertura de solo | Variável métrica/ordinal |
+| --- | --- |
+| Sem cobertura | Perda de solos |
+| Cobertura parcial |  |
+| Cobertura densa |  |
+
+
+---
+
+## {.smaller-text}
+
+ANOVA *ONE-**WAY*
+
+Como se calcula a ANOVA
+
+Na ANOVA, comparamos a variância entre grupos (***between-group)****** ***com a variância intragupo (***within-******group).***
+
+Ao comparar essas duas medidas de variância, podemos dizer se os repetições de
+
+diferentes grupos são diferentes entre si para determinada variável de interesse
+
+
+---
+
+## {.smaller-text}
+
+ANOVA *ONE-**WAY*
+
+Como se calcula a ANOVA
+
+Variância intragrupo (*within)** *– O quanto os repetições de cada grupo se diferem entre si
+
+Variância entre grupos (*between*) – O quanto os repetições dos diferentes grupos se diferem entre si
+
+
+---
+
+## {.smaller-text}
+
+ANOVA *O**NE-**WAY*
+
+Soma dos quadrados (*Sum** **of** **Squares*)
+
+**=**** ****Média =**** ****4,777**
+
+
+| Sujeito | Grupo | Escore | Média | Diferença |
+| --- | --- | --- | --- | --- |
+| 1 | 1 | 5 | 4,77 | 0,222 |
+| 2 | 1 | 3 |  | -1,778 |
+| 3 | 1 | 6 |  | 1,222 |
+| 4 | 2 | 4 |  | -0,778 |
+| 5 | 2 | 3 |  | -1,778 |
+| 6 | 2 | 2 |  | -2,778 |
+| 7 | 3 | 5 |  | 0,222 |
+| 8 | 3 | 6 |  | 1,222 |
+| 9 | 3 | 9 |  | 4,222 |
+| Soma | - | 43 |  | 0 |
+
+
+---
+
+## {.smaller-text}
+
+ANOVA *ONE-**WAY*
+
+Soma dos quadrados totais (*Sum** **of** **Squares** **SS**t*)
+
+
+| Sujeito7 | Grupo | Escore | Média | Diferença | Diferença2 |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 1 | 5 | 4,777 | 0,222 | 0,049 |
+| 2 | 1 | 3 |  | -1,778 | 3,160 |
+| 3 | 1 | 6 |  | 1,222 | 1,494 |
+| 4 | 2 | 4 |  | -0,778 | 0,605 |
+| 5 | 2 | 3 |  | -1,778 | 3,160 |
+| 6 | 2 | 2 |  | -2,778 | 7,716 |
+| 7 | 3 | 5 |  | 0,222 | 0,049 |
+| 8 | 3 | 6 |  | 1,222 | 1,494 |
+| 9 | 3 | 9 |  | 4,222 | 17,827 |
+| Soma | - | 43 |  | 0 | 35,556 |
+
+
+---
+
+## {.smaller-text}
+
+ANOVA *ONE-**WAY*
+
+Soma dos quadrados do modelo (*Sum** **of** **Squares** **SS**m*)
+
+SQM =Σ*nk** *(𝑥ҧ*k** *− 𝑥ҧ geral)2
+
+SQM1 = 3*(0,10)2 = 0,03
+
+SQM2 = 3*(1,77)2 = 9,40
+
+SQM3 = 3*(-1,90)2 = 10,83
+
+SQM = 20,26
+
+
+| Sujeito7 | Grupo | Escore | Média | Média do
+Grupo | SQM |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 1 | 5 | 4,777 | 4,67 | 0,03 |
+| 2 | 1 | 3 |  |  |  |
+| 3 | 1 | 6 |  |  |  |
+| 4 | 2 | 4 |  | 3,00 | 9,4 |
+| 5 | 2 | 3 |  |  |  |
+| 6 | 2 | 2 |  |  |  |
+| 7 | 3 | 5 |  | 6,66 | 10,83 |
+| 8 | 3 | 6 |  |  |  |
+| 9 | 3 | 9 |  |  |  |
+| Total | - | 43 |  |  | 20,26 |
+
+
+---
+
+## {.smaller-text}
+
+ANOVA *ONE-**WAY*
+
+O que sabemos até agora:
+
+- A variância total (SSt) nos dados é de 35,56
+- A variância entre grupos (between; SSM) é de 20,26
+- Variância residual (*within*) é de 15,30
+
+---
+
+## {.smaller-text}
+
+ANOVA	ONE-WAY
+
+* Um ponto importante: gl do grupo (k-1) = 2
+
+gl
+
+2
+
+Média da Soma dos Quadrados (Sum of Squares Mean)
+
+  - MSQM = SQM = 20,26 = 10,13
+
+---
+
+## {.smaller-text}
+
+ANOVA	ONE-WAY
+
+* Um ponto importante:
+
+Gl da amostra = Número de repetições – número de grupos → (9-3) = 6
+
+gl
+
+6
+
+Média dos Quadrados dos Resíduos (Sum of Squares of Residuals)
+
+MSQR = MSQ = 15,30 = 2,55
+
+
+---
+
+## {.smaller-text}
+
+ANOVA *ONE-**WAY*
+
+Chegamos à nossa tão esperada estatística F
+
+*F** *(2, 6) = MSQM =	10,13 = 3,97
+
+Como saber se o valor de F é significativo ou não?
+
+Observando a tabela normativa.
+
+MSQR
+
+2,55
+
+
+---
+
+## {.smaller-text}
+
+ANOVA *ONE-**WAY*
+
+POST-HOC
+
+  - A ANOVA é um teste generalista (omnibus). A estatística F indica se há diferenças estatisticamente
+significativas, mas não nos informa aonde estão as diferenças.
+
+- Grupo 1 se diferencia do Grupo 2, mas não do Grupo 3;
+- Grupo 3 se diferencia do Grupo 2, mas não do Grupo 1;
+- Todos os grupos se diferenciam entre si;
+O que testaremos?
+
+- Os grupos diferem entre si? Sim/Não? (Estatística F)
+- Quais grupos diferem entre si? (Testes post-hoc)
+
+---
+
+## {.smaller-text}
+
+ANOVA *ONE-**WAY*
+
+Vamos à prática
+
+
+---
+
+## {.smaller-text}
+
+ANOVA *ONE-**WAY*
+
+Tamanhos de efeito ANOVA
+
+
+| Magnitude | ω² (Field, 2013) | ω² (Cohen, 1992) |
+| --- | --- | --- |
+| Muito pequena | < 0,01 | < 0,02 |
+| Pequena | 0,01 – 0,06 | 0,02 – 0,13 |
+| Média | 0,06 – 0,14 | 0,13 – 0,26 |
+| Grande | ≥ 0,14 | ≥ 0,26 |
+
+
+---
+
+## {.smaller-text}
+
+ANOVA *ONE-**WAY*
+
+Tamanhos de efeito post-hoc
+
+D de Cohen:
+
+  - Tamanhos (N) e desvios-padrão equivalentes entre os grupos;
+Hedge´s G:
+
+Diferentes tamanhos amostrais;
+
+Glass Delta:
+
+Diferentes desvios-padrão entre os grupos;
+
+
+---
+
+## {.smaller-text}
+
+ANOVA *ONE-**WAY*
+
+Tamanhos de efeito post-hoc
+
+Cohen (1992)
+
+
+| Tamanho de Efeito | d de Cohen | Δ Glass | g de Hedges |
+| --- | --- | --- | --- |
+| Pequeno | 0,20 | 0,20 | 0,20 |
+| Médio | 0,50 | 0,50 | 0,50 |
+| Grande | 0,80 | 0,80 | 0,80 |
+| Muito Grande | ≥ 1,30 | ≥ 1,30 | ≥ 1,30 |
+
+
+---
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::
+

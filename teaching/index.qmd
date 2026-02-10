@@ -216,3 +216,295 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina. V
 </a>
 
 :::
+
+---
+
+### Análise de Dados Ambientais
+
+Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de Análise de Dados Ambientais. Clique em cada card para abrir os slides diretamente no navegador.
+
+::: {.slide-grid}
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula01_introducao_etimologia.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 01 — Introdução e Etimologia Estatística</h4>
+<p>Conceitos fundamentais de estatística.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula02_estatistica_descritiva.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 02 — Estatística Descritiva</h4>
+<p>Medidas de tendência central e dispersão.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula03_inferencial_dist_normal.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 03 — Estatística Inferencial e Distribuição Normal</h4>
+<p>Fundamentos da inferência estatística.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula04_escolha_do_teste.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 04 — A Escolha do Teste Estatístico</h4>
+<p>Como selecionar a análise adequada.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula05_taxonomia_bloom.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 05 — Taxonomia de Bloom</h4>
+<p>Níveis de aprendizagem e pesquisa.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula06_correlacao.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 06 — Análise de Correlação</h4>
+<p>Correlação de Pearson, Spearman e Kendall.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula07_teste_t.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 07 — Teste T</h4>
+<p>Teste T para amostras independentes e pareadas.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula08_anova_uma_via.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 08 — ANOVA de Uma Via</h4>
+<p>Análise de variância one-way.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula09_bootstrapping.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 09 — Bootstrapping</h4>
+<p>Técnicas de reamostragem.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula10_anova_fatorial.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 10 — ANOVA Fatorial</h4>
+<p>Análise de variância com múltiplos fatores.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula11_anova_completo.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 11 — ANOVA Completa</h4>
+<p>Análise de variância aprofundada.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula12_anova_medidas_repetidas.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 12 — ANOVA de Medidas Repetidas</h4>
+<p>Delineamentos com medidas repetidas.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula13_ancova.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 13 — ANCOVA</h4>
+<p>Análise de covariância.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula14_metanalise.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 14 — Metanálise</h4>
+<p>Fundamentos de metanálise.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula15_regressao.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 15 — Regressão</h4>
+<p>Modelos de regressão linear e múltipla.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula16_qui_quadrado.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 16 — Testes de Qui-Quadrado</h4>
+<p>Teste de independência e aderência.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula17_glm_gee.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 17 — GLM e GEE</h4>
+<p>Modelos lineares generalizados e equações de estimação generalizadas.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula18_construcao_instrumentos.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 18 — Construção de Instrumentos</h4>
+<p>Desenvolvimento de escalas e questionários.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula19_adaptacao_instrumentos.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 19 — Adaptação de Instrumentos</h4>
+<p>Tradução e adaptação transcultural.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula20_evidencias_validade.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 20 — Evidências de Validade</h4>
+<p>Validade de conteúdo, construto e critério.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula21_validade_instrumento.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 21 — Validade de Instrumentos</h4>
+<p>Propriedades psicométricas.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula22_analise_fatorial.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 22 — Análise Fatorial Exploratória</h4>
+<p>AFE — fundamentos e aplicações.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula23_tri_introducao.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 23 — Introdução à TRI</h4>
+<p>Teoria de resposta ao item.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula24_tri_rasch.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 24 — Modelo de Rasch</h4>
+<p>TRI — Modelo de Rasch.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula25_analise_bi_multivariada.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 25 — Análise Bi e Multivariada</h4>
+<p>Técnicas multivariadas completas.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula26_bootstrap_avancado.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 26 — Bootstrap Avançado</h4>
+<p>Técnicas avançadas de reamostragem.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula27_associacao_dependencia.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 27 — Modelos de Associação e Dependência</h4>
+<p>Relações entre variáveis.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula28_nao_parametricos.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 28 — Testes Não Paramétricos</h4>
+<p>Alternativas aos testes paramétricos.</p>
+</div>
+</a>
+
+:::
+
+---
+
+### Bioengenharia de Solos
+
+Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de Bioengenharia de Solos. Clique em cada card para abrir os slides diretamente no navegador.
+
+::: {.slide-grid}
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula01_o_solo.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 01 — O Solo</h4>
+<p>Classificação e propriedades dos solos brasileiros.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula02_solo_erosao.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 02 — Solo e Erosão</h4>
+<p>Processos erosivos e fatores condicionantes.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula03_declividade_equipamentos.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 03 — Declividade – Equipamentos</h4>
+<p>Aspectos metodológicos e instrumentos de medição.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula04_controle_erosao_hidrica.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 04 — Controle de Erosão Hídrica</h4>
+<p>Práticas mecânicas e terraceamento.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula05_canal_escoadouro_teoria.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 05 — Canal Escoadouro – Teoria</h4>
+<p>Dimensionamento e cálculo de canais escoadouros.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula06_canal_escoadouro_pratica.html" target="_blank">
+<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-info">
+<h4>Aula 06 — Canal Escoadouro – Passo a Passo</h4>
+<p>Exercício prático de cálculo e construção.</p>
+</div>
+</a>
+
+:::

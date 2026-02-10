@@ -1,0 +1,443 @@
+﻿---
+title: "Testes de Hipóteses - Teste T"
+subtitle: "Teste T para Amostras Independentes e Pareadas<br>Análise de Dados Ambientais"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../assets/logo-uefs.webp
+    footer: "UEFS | Análise de Dados Ambientais | Testes de Hipóteses - Teste T"
+    slide-number: true
+    theme: [simple, assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+# [TESTE T DE STUDENT]{.section-header}
+
+---
+
+## TESTE T DE STUDENT {.smaller-text}
+
+Testes de Comparação de Médias
+
+
+---
+
+## {.smaller-text}
+
+TESTE T STUDENT
+
+Definição
+
+Refere-se a um conjunto de testes estatísticos paramétricos que são utilizados para comparar médias.
+
+Desenvolvido por Student (William Sealy Gosset), que não podia usar seu nome verdadeiro para publicar trabalhos enquanto trabalhava para a cervejaria Guinness.
+
+William Sealy Gosset (Student) (1876-1937)
+
+
+---
+
+## {.smaller-text}
+
+TESTE T STUDENT
+
+Três tipos de teste T (ou testes de diferenças de médias)
+
+Amostra única
+
+  - Um único grupo é comparado com um escore pré-determinado.
+    - Ex: Saber se a temperatura média de 2020 foi maior do que a temperatura média de 2000 (Média = 25,3ºC)
+Amostras independentes
+
+  - Compara os escores de uma determinada variável em dois grupos distintos
+    - Ex: Avaliar se os níveis de resistência a cisalhamento são diferentes entre geotêxteis sintéticos e geotêxteis naturais
+Amostra dependente
+
+  - Compara os escores de uma determinada variável em um grupo distinto, mensurado duas vezes;
+    - Ex: Avaliar se os escores do volume radicular se modificaram antes e após a aplicação de adubação nitrogenada
+
+---
+
+## {.smaller-text}
+
+Tipos de teste T ( ou testes de diferenças de médias)
+
+TESTE T STUDENT
+
+
+| Tipos de teste t | Característica |
+| --- | --- |
+| Amostra única | Medida de uma variável do banco de dados contrastada com uma medida externa pré-determinada |
+| Amostra independente | Uma variável contínua e uma variável dicotômica (2 grupos) |
+| Amostras dependentes (medidas repetidas) | Uma variável contínua, coletada duas vezes nos mesmos participantes/amostra |
+
+
+---
+
+## {.smaller-text}
+
+Pressupostos do Teste t
+
+TESTE T ESTUDENT
+
+
+|  |
+| --- |
+| 1. Distribuição normal |
+| 2. A medida deve estar em nível intervalar (Aceita-se contínua) |
+| 3. Independência das respostas
+
+Amostra independente
+O comportamento de uma repetição não influencia o comportamento de outro)
+
+Amostra dependente
+A resposta da amostra em T1 não influencia a resposta do amostra em T2 |
+| 4. Homogeneidade das variâncias/ homoscedasticidade (amostras independentes) |
+
+
+---
+
+## TESTE T DE STUDENT (cont.) {.smaller-text}
+
+Amostra Única (One-Sample *t** *test)
+
+
+---
+
+## {.smaller-text}
+
+Quando se utiliza:
+
+Comparação de um único grupo em relação a valores determinados
+
+É utilizado para saber se os dados que você obteve na sua amostra é estatisticamente equivalente ou diferente dos dados populacionais.
+
+**Valores**** ****externos ****já**** ****conhecidos**
+
+**comparado ****à**
+
+TESTE T STUDENT
+
+AMOSTRA ÚNICA
+
+
+---
+
+## {.smaller-text}
+
+TESTE T STUDENTAMOSTRA ÚNICA
+
+**Exemplo**** ****prático:**
+
+Um professor desconfia que o nível de satisfação dos seus alunos durante sua disciplina é inferior à sua meta (Nota 9,0). Para testar essa hipótese, ele entrevistou 20 alunos e questionou os seus níveis de satisfação, conforme abaixo:
+
+(A diferença não existe)
+
+(A diferença existe. A média dele seria menor do que 9)
+
+
+| MANHÃ | 7 | 9 | 9,5 | 8,9 | 10 | 9,8 | 7,9 | 8,9 | 9,1 | 9,3 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| TARDE | 9,4 | 7,9 | 8,7 | 8,8 | 8,5 | 9 | 9,1 | 7,6 | 7,5 | 8 |
+
+
+---
+
+## {.smaller-text}
+
+TESTE T STUDENTAMOSTRA ÚNICA
+
+**Exemplo**** ****prático:**
+
+
+| MANHÃ | 7 | 9 | 9,5 | 8,9 | 10 | 9,8 | 7,9 | 8,9 | 9,1 | 9,3 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| TARDE | 9,4 | 7,9 | 8,7 | 8,8 | 8,5 | 9 | 9,1 | 7,6 | 7,5 | 8 |
+
+
+---
+
+## {.smaller-text}
+
+**Exemplo**** ****prático:**
+
+O valor tabelado de *t** *depende do intervalo do valor obtido e o nível de significância (5%; *p** *< 0,05) e dos graus de liberdade, que dependem do tamanho da amostra (gl = n – 1 = 19).
+
+Nesse exemplo, *t** *tabelado = 2,093
+
+**(VER**** ****TABELA**** ****T)**
+
+**- 1,693**
+
+TESTE T STUDENT
+
+AMOSTRA ÚNICA
+
+
+---
+
+## {.smaller-text}
+
+TESTE T STUDENTAMOSTRA ÚNICA
+
+**Tamanho de efeito****:**
+
+
+| D de Cohen para Teste t de Amostra única |  |
+| --- | --- |
+| < 0,2 | Irrisório |
+| 0,20 a 0,49 | Baixo |
+| 0,5 a 0,79 | Médio |
+| > 0,8 | Alto |
+
+
+---
+
+## {.smaller-text}
+
+**VAMOS**** ****À**** ****PRÁTICA!**
+
+TESTE T STUDENT
+
+AMOSTRA ÚNICA
+
+
+---
+
+## TESTE T DE STUDENT (cont.) {.smaller-text}
+
+Amostras independentes
+
+
+---
+
+## {.smaller-text}
+
+**Dois**** ****grupos**** ****de**** repetições**
+
+Avalia a diferença nos níveis de uma variável X entre dois
+
+grupos independentes
+
+TESTE T STUDENT
+
+AMOSTRAS INDEPENDENTES
+
+
+---
+
+## {.smaller-text}
+
+**Exemplos**** ****de ****pesquisa:**
+
+Uma variável dicotômica
+
+Uma variável ordinal/escalar
+
+TESTE T STUDENT
+
+AMOSTRAS INDEPENDENTES
+
+
+| Pergunta Inicial | Variável métrica/ordinal | Grupos |
+| --- | --- | --- |
+| Existem diferenças nos níveis de | níveis de intensificação do pastejo | bovinos de corte sob sistema intermitente? |
+| Existem diferenças na | capacidade de contenção da erosão | em repetições de geogrid com e sem aplicação de resina? |
+| Existem diferenças nos níveis de | Salpicamento em pinos | em solos com e sem cobertura vegetal? |
+
+
+---
+
+## {.smaller-text}
+
+Existem diferenças nos níveis de erosão em latossolos com e sem cobertura do solo?
+
+Média = 6,86
+
+*DP** *= 2,03
+
+Média = 9,57
+
+*DP** *= 2,22
+
+TESTE T DE STUDENT
+
+AMOSTRAS INDEPENDENTES
+
+
+| Coberto | Não coberto |
+| --- | --- |
+| 12 | 10 |
+| 9 | 8 |
+| 6 | 8 |
+| 11 | 4 |
+| 12 | 5 |
+| 9 | 7 |
+| 8 | 6 |
+
+
+---
+
+## {.smaller-text}
+
+Existem diferenças nos níves de erosão por salpicamento em latossolos com e sem cobertura do solo?
+
+TESTE T DE STUDENT
+
+AMOSTRAS INDEPENDENTES
+
+Média = 6,86
+
+*DP** *= 2,03
+
+Média = 9,57
+
+*DP** *= 2,22
+
+
+| Coberto | Não coberto |
+| --- | --- |
+| 12 | 10 |
+| 9 | 8 |
+| 6 | 8 |
+| 11 | 4 |
+| 12 | 5 |
+| 9 | 7 |
+| 8 | 6 |
+
+
+---
+
+## {.smaller-text}
+
+Pressupostos
+
+  - Normalidade dos dados
+  - Homogeneidade de variância
+  - Independência das observações
+TESTE T DE STUDENT
+
+AMOSTRAS INDEPENDENTES
+
+
+---
+
+## {.smaller-text}
+
+Homogeneidade de variância (homoscedasticidade)
+
+  - A variabilidade dos escores do grupo em torno da média são equivalentes.
+  - Não significa que as médias são equivalentes.
+Médias
+
+Médias
+
+TESTE T DE STUDENT
+
+AMOSTRAS INDEPENDENTES
+
+
+---
+
+## {.smaller-text}
+
+Homogeneidade de variância (homoscedasticidade)
+
+  - A variabilidade dos escores do grupo em torno da média são equivalentes.
+  - Não significa que as médias são equivalentes.
+*Médias iguais
+
+Médias
+
+TESTE T DE STUDENT
+
+AMOSTRAS INDEPENDENTES
+
+
+---
+
+## {.smaller-text}
+
+Homogeneidade de variância (homoscedasticidade)
+
+OBS.: Os teste *t** **de** *Student aceita que o pressuposto da homogeneidade de variâncias não seja acatado, pois ele tem, embutido na análise do JAPS, a correção de Welch*  *(dados normais)*.*
+
+TESTE T DE STUDENT
+
+AMOSTRAS INDEPENDENTES
+
+
+---
+
+## {.smaller-text}
+
+Vamos à prática
+
+TESTE T DE STUDENT
+
+AMOSTRAS INDEPENDENTES
+
+
+---
+
+## {.smaller-text}
+
+**Tamanho de efeito**
+
+***d***** de Cohen:** Usado quando os grupos têm tamanhos amostrais e variâncias semelhantes, assumindo a homogeneidade de variância;
+
+***Delta de Glass*****:** indicado quando os desvios-padrão entre os grupos são muito diferentes; utiliza o desvio-padrão do grupo controle como referência;
+
+***g de Hedges*****: **Preferível para amostras de tamanhos diferentes ou quando há heterogeneidade de variância; ajusta o tamanho do efeito para corrigir viés de pequena amostra.
+
+TESTE T DE STUDENT
+
+AMOSTRAS INDEPENDENTES
+
+
+---
+
+## TESTE T DE STUDENT (cont.) {.smaller-text}
+
+Amostras dependentes (pareadas/medidas repetidas)
+
+
+---
+
+## {.smaller-text}
+
+TESTE T DE STUDENT
+
+AMOSTRAS DEPENDENTES
+
+Amostras dependentes / pareadas ou medidas repetidas
+
+Avalia em que medida há mudanças no escore **de**** ****um**** ****mesmo**** ****grupo**, em dois momentos distintos
+
+  - Pré e pós-teste
+Tempo 1
+
+Tempo 2
+
+
+---
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::
+

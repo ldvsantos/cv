@@ -1,0 +1,94 @@
+﻿---
+title: "ANOVA Fatorial"
+subtitle: "Análise de Variância com Múltiplos Fatores<br>Análise de Dados Ambientais"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../assets/logo-uefs.webp
+    footer: "UEFS | Análise de Dados Ambientais | ANOVA Fatorial"
+    slide-number: true
+    theme: [simple, assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+# [ANOVA FATORIAL]{.section-header}
+
+---
+
+## ANOVA FATORIAL {.smaller-text}
+
+ANOVA FATORIAL
+
+
+---
+
+## {.smaller-text}
+
+ANOVA FATORIAL
+
+Níveis de resistência entre duas fibras (natural e sintética) com diferentes tipos de aditivos
+
+VD
+
+FATORES (VI)
+
+
+| Variáveis de Grupo Fatores
+VIs |  | Variável métrica/ordinal |
+| --- | --- | --- |
+| Tratamentos | Sem Resina | Resistência a tração [...] |
+|  | 1x Resina |  |
+|  | 2x Resina |  |
+| Tempos | 1ºa 180º dias |  |
+
+
+---
+
+## {.smaller-text}
+
+ANOVA	FATORIAL
+
+Níveis de resistência entre as aplicações de resina em diferentes tempos de degradação
+
+
+---
+
+## {.smaller-text}
+
+ANOVA	FATORIAL
+
+ANOVA 2X2 = 4 condições testadas
+
+ANOVA 3X2
+
+ANOVA 4X4
+
+ANOVA 4X4X2 → 32 condições testadas
+
+  - ETC...
+Por mais tentador que seja colocar muitas variáveis em uma ANOVA, lembre-se que as
+
+múltiplas comparações irão tornar a discussão dos seus resultados um caos.
+
+
+---
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::
+

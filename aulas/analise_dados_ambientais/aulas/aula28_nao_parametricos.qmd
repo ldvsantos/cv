@@ -1,0 +1,396 @@
+﻿---
+title: "Testes Não Paramétricos"
+subtitle: "Alternativas aos Testes Paramétricos<br>Análise de Dados Ambientais"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../assets/logo-uefs.webp
+    footer: "UEFS | Análise de Dados Ambientais | Testes Não Paramétricos"
+    slide-number: true
+    theme: [simple, assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+# [TESTES NÃO-PARAMÉTRICOS]{.section-header}
+
+---
+
+## TESTES NÃO-PARAMÉTRICOS {.smaller-text}
+
+Testes de Comparação de Grupos
+
+
+---
+
+## {.smaller-text}
+
+TESTES NÃO-PARAMÉTRICOS
+
+DE DIFERENÇAS DE GRUPOS
+
+O que são:
+
+  - Testes não paramétricos são utilizados quando os pressupostos dos testes paramétricos não
+são acatados:
+
+    - Distribuição normal
+    - Homogeneidade de variância
+Vantagens
+
+- Possui menos pressupostos e mais simples
+- Lógica matemática incrivelmente simples
+- Estrutura dos dados mais simples (e realista)
+- Possibilidade de utilização do teste em amostras muito pequenas
+
+---
+
+## {.smaller-text}
+
+Entendendo as equivalências entre os testes
+
+TESTES NÃO-PARAMÉTRICOS
+
+DE DIFERENÇAS DE GRUPOS
+
+
+| Paramétricos | Não-paramétricos |
+| --- | --- |
+| Teste t para amostras independentes | Mann-Whitney |
+| Análise de Variância | Kruskal-Wallis |
+| Teste t para amostras dependentes | Wilcoxon Signed Rank |
+| Análise de Variância de Medidas Repetidas | ANOVA de Friedman |
+
+
+---
+
+## {.smaller-text}
+
+Algumas questões iniciais importantes:
+
+  - Testes não-paramétricos não utilizam os escores originais dos repetições;
+  - Fazem uma reorganização em torno de rank (posicionamento) e atribui novos valores em termos de ordenação do rank;
+  - Estatísticas de Média e Desvio-Padrão perdem o sentido, de modo que é importante apresentar outras informações da análise, quando se reporta os resultados.
+TESTES NÃO-PARAMÉTRICOS
+
+DE DIFERENÇAS DE GRUPOS
+
+
+---
+
+## MANN-WHITNEY {.smaller-text}
+
+Comparação entre dois grupos independentes
+
+
+---
+
+## {.smaller-text}
+
+MANN-WHITNEY
+
+DOIS GRUPOS INDEPENDENTES
+
+Comparação de 2 grupos independentes
+
+  - Substitui o teste *t** *de Student
+
+| Sujeito | Tratamento | Escore |
+| --- | --- | --- |
+| 1 | A | 4 |
+| 2 | B | 6 |
+| 3 | A | 5 |
+| 4 | B | 9 |
+| 5 | B | 7 |
+| 6 | A | 11 |
+| 7 | B | 11 |
+| 8 | A | 5 |
+| 9 | B | 13 |
+| 10 | A | 12 |
+
+
+---
+
+## {.smaller-text}
+
+Soma de postos:
+
+Grupo A: 22,5
+
+Grupo B: 32,5
+
+MANN-WHITNEY
+
+DOIS GRUPOS INDEPENDENTES
+
+
+| Tratamento | Escore | Posto | Posto Real |
+| --- | --- | --- | --- |
+| A | 4 | 1 | 1 |
+| A | 5 | 2 | 2,5 |
+| A | 5 | 3 | 2,5 |
+| B | 6 | 4 | 4 |
+| B | 7 | 5 | 5 |
+| B | 9 | 6 | 6 |
+| A | 11 | 7 | 7,5 |
+| B | 11 | 8 | 7,5 |
+| A | 12 | 9 | 9 |
+| B | 13 | 10 | 10 |
+
+
+---
+
+## {.smaller-text}
+
+Cálculo do Mann-Whitney
+
+Uma das fórmulas para se calcular o valor de U (quando o número de repetições por grupo
+
+é menor que 20)
+
+*Onde:*
+
+U = estatística a ser calculada;
+
+*N** **=** **número** **de** **participantes** **por** **grupo*
+
+*R** **=** **valor** **da** **soma** **dos** **postos*
+
+*2*
+
+*U**i** **=** **N**1**N**2** **+** **N**1** **(N**1** **+** **1)** **–** **R*
+
+*2*
+
+*A*
+
+*U** **=** **25** **+** **5(6)** **–** **22,5** **=** 17,5*
+
+*U**B** **=** **25** **+** **5(6)** **–** **32,5** **=** 7,5*
+
+*2*
+
+MANN-WHITNEY
+
+DOIS GRUPOS INDEPENDENTES
+
+
+---
+
+## {.smaller-text}
+
+*U**B** **=** **25** **+** **5(6)** **–** **32,5** **=** 7,5*
+
+*2*
+
+MANN-WHITNEY
+
+DOIS GRUPOS INDEPENDENTES
+
+
+---
+
+## {.smaller-text}
+
+Opções alternativas do Mann-Whitney
+
+  - Kolmogorov-Smirnov Z: Maior poder quando N < 25 por grupo;
+  - Moses Extreme Reaction: Compara a variabilidade dos escores entre os grupos (relativamente
+semelhante a um teste de homogeneidade de variância)
+
+  - Wald-Wolfowitz runs: A derivação de significância é um pouco diferente do Mann-Whitney. Aqui, se avalia a ordenação dos postos e não a sua soma. Raramente utilizado.
+MANN-WHITNEY
+
+DOIS GRUPOS INDEPENDENTES
+
+
+---
+
+## KRUSKAL-WALLIS {.smaller-text}
+
+Comparação entre três (ou +) grupos independentes
+
+
+---
+
+## {.smaller-text}
+
+Kruskall-Wallis
+
+  - Substitui a Análise de Variância (ANOVA) para comparar 3 ou + grupos;
+Soma de postos: Grupo A: 16
+
+Grupo B: 20
+
+Grupo C: 19
+
+A estatística H é calculada, considerando a soma de postos de cada
+
+grupo, ponderando pelo total de participantes por grupo (N);
+
+A significância do teste de Kruskall-Wallis é baseada na tabela de significância do qui-quadrado, e portanto, leva em consideração os graus de liberdade (kgrupos - 1)
+
+MANN-WHITNEY
+
+DOIS GRUPOS INDEPENDENTES
+
+
+| Tratamento | Escore | Posto | Posto Real |
+| --- | --- | --- | --- |
+| A | 4 | 1 | 1 |
+| C | 5 | 2 | 2,5 |
+| B | 5 | 3 | 2,5 |
+| C | 6 | 4 | 4 |
+| C | 7 | 5 | 5 |
+| A | 9 | 6 | 6 |
+| B | 11 | 7 | 7,5 |
+| C | 11 | 8 | 7,5 |
+| A | 12 | 9 | 9 |
+| B | 13 | 10 | 10 |
+
+
+---
+
+## {.smaller-text}
+
+Kruskall-Wallis
+
+  - Na medida que o valor de H é estatisticamente significativo, isso significa que existem diferenças entre
+os grupos
+
+  - Segunda etapa: achar as diferenças (*pairwise** **comparisons*)
+    - G1 com G2
+    - G1 com G3
+    - G2 com G3
+  - Controle do Erro Tipo I
+    - SPSS calcula o p-valor ajustado para a quantidade de comparações;
+MANN-WHITNEY
+
+DOIS GRUPOS INDEPENDENTES
+
+
+---
+
+## WILCOXON SIGNED-RANK {.smaller-text}
+
+Comparação entre dois grupos dependents (medidas repetidas)
+
+
+---
+
+## {.smaller-text}
+
+WILCOXON SIGNED-RANK
+
+DOIS GRUPOS DEPENDENTES
+
+Wilcoxon Signed Rank Test (1947): Substitui o Teste t de Student para Medidas
+
+Repetidas
+
+Comparação nos escores entre um grupo que respondeu à pesquisa duas vezes
+
+**Tempo**** ****1****	****Tempo**** ****2**
+
+**Nível**** ****de**
+
+**Estresse**
+
+**Nível**** ****de**
+
+**Estresse**
+
+**Nível**** ****1**
+
+**Nível**** ****2**
+
+
+---
+
+## {.smaller-text}
+
+Wilcoxon Signed Rank Test (1947)
+
+                - Postos são ordenados;
+Empates (Diff = 0) são excluídos;
+
+O sinal da diferença (positivo ou negativo) é considerada no rankeamento;
+
+É calculada uma soma dos ranks positivos (T+) e negativos (T-);
+
+A estatística *T** *geral e o erro padrão é computado;
+
+Escore *T** *é transformado em um escore Z para se avaliar a significância estatística.
+
+WILCOXON SIGNED-RANK
+
+DOIS GRUPOS DEPENDENTES
+
+
+| Sujeito | Pré | Pós | Diff | Sinal |
+| --- | --- | --- | --- | --- |
+| 1 | 5 | 7 | 2 | + |
+| 2 | 6 | 6 | 0 | Tie |
+| 3 | 2 | 3 | 1 | + |
+| 4 | 4 | 8 | 4 | + |
+| 5 | 6 | 7 | 1 | + |
+| 6 | 7 | 6 | 1 | - |
+| 7 | 3 | 7 | 4 | + |
+| 8 | 5 | 8 | 3 | + |
+| 9 | 5 | 5 | 0 | Tie |
+| 10 | 5 | 8 | 3 | + |
+
+
+---
+
+## ANOVA DE FRIEDMAN {.smaller-text}
+
+Comparação entre três ou + grupos dependentes (medidas repetidas)
+
+
+---
+
+## {.smaller-text}
+
+ANOVA DE FRIEDMAN
+
+TRÊS GRUPOS DEPENDENTES
+
+ANOVA de Friedman: Substitui a ANOVA de Medidas Repetidas
+
+
+| Sujeito | Pré | Pós | Follow-up | Rank_Pré | Rank_Pós | Rank_Follow |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | 7 | 6 | 8 | 2 | 1 | 3 |
+| 2 | 5 | 6 | 8 | 1 | 2 | 3 |
+| 3 | 2 | 3 | 5 | 1 | 2 | 3 |
+| 4 | 6 | 7 | 8 | 1 | 2 | 3 |
+| 5 | 7 | 6 | 4 | 3 | 2 | 1 |
+| 6 | 5 | 7 | 9 | 1 | 2 | 3 |
+| 7 | 5 | 8 | 6 | 1 | 3 | 2 |
+| 8 | 5 | 8 | 9 | 1 | 2 | 3 |
+| 9 | 4 | 8 | 5 | 1 | 3 | 2 |
+| 10 | 3 | 6 | 7 | 1 | 2 | 3 |
+| Soma |  |  |  | 13 | 21 | 26 |
+
+
+---
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::
+

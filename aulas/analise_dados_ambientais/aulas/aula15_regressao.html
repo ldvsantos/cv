@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Luiz Diego Vidal Santos">
+
+<title>aula15_regressao</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="aula15_regressao_files/libs/clipboard/clipboard.min.js"></script>
+<script src="aula15_regressao_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="aula15_regressao_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="aula15_regressao_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="aula15_regressao_files/libs/quarto-html/popper.min.js"></script>
+<script src="aula15_regressao_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="aula15_regressao_files/libs/quarto-html/anchor.min.js"></script>
+<link href="aula15_regressao_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="aula15_regressao_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="aula15_regressao_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="aula15_regressao_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="aula15_regressao_files/libs/bootstrap/bootstrap-9e3ffae467580fdb927a41352e75a2e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Regressão</h1>
+<p class="subtitle lead">Modelos de Regressão Linear e Múltipla<br>Análise de Dados Ambientais</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Luiz Diego Vidal Santos </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Universidade Estadual de Feira de Santana (UEFS)
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="regressão" class="level1">
+<h1><span class="section-header">REGRESSÃO</span></h1>
+<hr>
+<section id="section" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section"></h2>
+<p>REGRESSÃO</p>
+<p>Definição</p>
+<ul>
+<li><p>Técnica de análise de dados que explica quanto uma ou mais variáveis preditoras (VIs) explicam ou estão associadas com um desfecho (VD)</p></li>
+<li><p>Regressão linear simples Uma variável dependente e uma variável independente</p></li>
+<li><p>Regressão linear múltipla Uma variável dependente e várias variáveis independentes</p></li>
+<li><p>Regressão logística Uma variável dependente (dicotômica) e uma ou mais variáveis independentes</p></li>
+<li><p>Regressão multinomial Uma variável dependente (politômica) e uma ou mais variáveis independentes</p></li>
+</ul>
+<hr>
+</section>
+<section id="regressão-linear" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-linear">REGRESSÃO LINEAR</h2>
+<p>O quanto uma ou mais variáveis explicam outra</p>
+<hr>
+</section>
+<section id="section-1" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-1"></h2>
+<p>REGRESSÃO LINEAR</p>
+<p>Definição</p>
+<ul>
+<li>Diferentemente da correlação, a regressão tem uma direcionalidade Autoestima</li>
+</ul>
+<p>Conquistas educacionais</p>
+<p>Autoestima</p>
+<p>Conquistas educacionais</p>
+<p>Variável dependente Variável desfecho</p>
+<p>Variável independente Variável preditora</p>
+<hr>
+</section>
+<section id="section-2" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-2"></h2>
+<p>REGRESSÃO LINEAR</p>
+<p>Como se calcula a regressão</p>
+<p>Y = B0 + BxX + E</p>
+<p>Em que:</p>
+<p>Y = variável dependente.</p>
+<p>B0 = intercepto (constante).</p>
+<p>Bx = o nível sobre o quanto X impacta Y. X = variável independente.</p>
+<p>E = erro aleatório.</p>
+<hr>
+</section>
+<section id="section-3" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-3"></h2>
+<p>REGRESSÃO LINEAR</p>
+<p>Um empresário quer saber o quanto o investimento em propagandas aumentou as suas</p>
+<p>vendas ao longo do mês.</p>
+<p>Propaganda (VI)</p>
+<p>Vendas (VD)</p>
+<hr>
+</section>
+<section id="section-4" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-4"></h2>
+<p>REGRESSÃO LINEAR</p>
+<p>Um empresário quer saber o quanto o investimento em propagandas aumentou as suas</p>
+<p>vendas ao longo do mês.</p>
+<p>Y = o desfecho (vendas)</p>
+<p>B0 = intercepto (constante) -&gt; o escore no desfecho quando o preditor tem valor = 0 (quando</p>
+<p>ele não investia em propaganda, qual era o valor de y (vendas)?</p>
+<p>X = o nível do preditor (o quanto foi investido em propaganda).</p>
+<p>Bx = o grau sobre o quanto X (propaganda) impacta Y (venda).</p>
+<p>E = a porção de variância não explicada pela variável independente (o quanto a propaganda não foi útil para aumentar a venda)</p>
+<hr>
+</section>
+<section id="section-5" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-5"></h2>
+<p>REGRESSÃO LINEAR</p>
+<p>Um empresário quer saber o quanto o investimento em propagandas aumentou as suas</p>
+<p>vendas ao longo do mês.</p>
+<p>Constante (Bo)</p>
+<p>A regressão irá traçar a linha que explica a influência da variável preditora no desfecho.</p>
+<p>As variações se dão por razões externas que explicam a venda (para além da propaganda).</p>
+<p>Por causa dessas influências externas, nenhum modelo é perfeito (livre de erro), e por isso nenhum preditor é capaz de prever 100% o desfecho.</p>
+<hr>
+</section>
+<section id="section-6" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-6"></h2>
+<p>REGRESSÃO LINEAR</p>
+<p><strong>Informações</strong>** ****que**** ****a**** ****regressão**** ****traz****:**</p>
+<ul>
+<li>Sabemos o quanto Y (desfecho) aumenta para cada valor de X (variável preditora)</li>
+<li>Para cada um real investido em propaganda, as vendas aumentaram <em>x</em>R$.</li>
+<li>Sabemos o quanto (em %) Y aumenta quando da presença da variável X;</li>
+<li>No total, o investimento em propaganda aumentou as vendas em X% (<em>R</em>2 → poder explicativo do modelo).</li>
+</ul>
+<hr>
+</section>
+<section id="section-7" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-7"></h2>
+<p>REGRESSÃO LINEAR</p>
+<p><strong>Tipos</strong>** ****de**** ****variáveis**</p>
+<p>Variável dependente</p>
+<ul>
+<li><p>Sempre ordinal ou escalar (ou seja, uma variável crescente) Variável independente</p></li>
+<li><p>Pode ser de diferentes categorias</p></li>
+<li><p>Ordinal, escalar ou categórica (dicotômica; se politômica, usar dummy)</p></li>
+</ul>
+<hr>
+</section>
+<section id="section-8" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-8"></h2>
+<p>REGRESSÃO LINEAR</p>
+<p><strong>Principais</strong>** ****pressupostos**</p>
+<ul>
+<li>Linearidade</li>
+<li>Variância não nula</li>
+<li>Homocedasticidade dos resíduos</li>
+<li>Independência dos resíduos (colinealidade)</li>
+<li>Distribuição normal dos resíduos</li>
+</ul>
+<hr>
+</section>
+<section id="section-9" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-9"></h2>
+<p>REGRESSÃO LINEAR</p>
+<p><strong>Vamos</strong>** ****à**** ****prática…**</p>
+<hr>
+</section>
+<section id="section-10" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-10"></h2>
+<p>REGRESSÃO LINEAR MÚLTIPLA</p>
+<hr>
+</section>
+<section id="regressão-linear-cont." class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-linear-cont.">REGRESSÃO LINEAR (cont.)</h2>
+<p>MÚLTIPLA</p>
+<p>Equivalente à regressão linear simples, com a diferença de que são adicionados</p>
+<p>vários preditores</p>
+<ul>
+<li>Sistema de preparo do solo (Plantio Direto, Cultivo Mínimo, Convencional)</li>
+<li>Tipo de cultura antecedente (leguminosas, gramíneas, sem cobertura)</li>
+<li>Uso de adubação verde</li>
+<li>Inoculação com microrganismos (ex: Azospirillum brasilense)</li>
+<li>Mecanização</li>
+<li>Rotação de culturas vs.&nbsp;monocultura</li>
+</ul>
+<hr>
+</section>
+<section id="regressão-linear-cont.-1" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-linear-cont.-1">REGRESSÃO LINEAR (cont.)</h2>
+<p>MÚLTIPLA</p>
+<p><strong>Simples:</strong>** **Y = B0 + BxX + E</p>
+<p><strong>Múltipla:</strong>** <strong>Y = B0 + </strong><em>B</em>*****1******X******1****** ******+****** ******B******2******X******2****** ******+****** ******…****** ******+****** ******B******n******X******n****** ***+ E</p>
+<hr>
+</section>
+<section id="regressão-linear-cont.-2" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-linear-cont.-2">REGRESSÃO LINEAR (cont.)</h2>
+<p>MÚLTIPLA</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Métodos de Entrada</th>
+<th>Característica</th>
+<th>Vantagens</th>
+<th>Desvantagens</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Enter (Inserir)</td>
+<td>Todas as variáveis são</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>inseridas de uma vez</td>
+<td>Simplicidade</td>
+<td>Multicolinearidade</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Não apresenta o R2 de cada variável |</p>
+<hr>
+</section>
+<section id="regressão-linear-cont.-3" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-linear-cont.-3">REGRESSÃO LINEAR (cont.)</h2>
+<p>MÚLTIPLA</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Métodos de Entrada</th>
+<th>Característica</th>
+<th>Vantagens</th>
+<th>Desvantagens</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Enter (Inserir)</td>
+<td>Todas as variáveis são</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>inseridas de uma vez</td>
+<td>Simplicidade</td>
+<td>Multicolinearidade</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Não apresenta o R2 de cada variável | | Stepwise (Por etapa) | Variáveis inseridas passo-a-passo, com base na significância do F | Modelo mais parcimonioso Apresenta o R2 de cada variável | A significância de F sofre efeito do tamanho amostral. Efeito supressor* |</p>
+<hr>
+</section>
+<section id="regressão-linear-cont.-4" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-linear-cont.-4">REGRESSÃO LINEAR (cont.)</h2>
+<p>MÚLTIPLA</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Métodos de Entrada</th>
+<th>Característica</th>
+<th>Vantagens</th>
+<th>Desvantagens</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Enter (Inserir)</td>
+<td>Todas as variáveis são</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>inseridas de uma vez</td>
+<td>Simplicidade</td>
+<td>Multicolinearidade</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Não apresenta o R2 de cada variável | | Stepwise (Por etapa) | Variáveis inseridas passo-a-passo, com base na significância do F | Modelo mais parcimonioso Apresenta o R2 de cada variável | A significância de F sofre efeito do tamanho amostral. Efeito supressor* | | Forward (Avançar) | Variáveis inseridas passo-a-passo, com base na correlação parcial da VI com a VD | Modelo mais parcimonioso Apresenta o R2 de cada variável | Sofre influência das variáveis do modelo. Efeito supressor |</p>
+<hr>
+</section>
+<section id="regressão-linear-cont.-5" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-linear-cont.-5">REGRESSÃO LINEAR (cont.)</h2>
+<p>MÚLTIPLA</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Métodos de Entrada</th>
+<th>Característica</th>
+<th>Vantagens</th>
+<th>Desvantagens</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Backward</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>(Retroceder)</td>
+<td>Variáveis excluídas</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>passo a-passo</td>
+<td>Elimina possíveis erros de inserção dos métodos stepwise e forward</td>
+<td>-</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="regressão-linear-cont.-6" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-linear-cont.-6">REGRESSÃO LINEAR (cont.)</h2>
+<p>MÚLTIPLA</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Métodos de Entrada</th>
+<th>Característica</th>
+<th>Vantagens</th>
+<th>Desvantagens</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Backward</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>(Retroceder)</td>
+<td>Variáveis excluídas</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>passo a-passo</td>
+<td>Elimina possíveis erros de inserção dos métodos stepwise e forward</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Remove (Remover)</td>
+<td>Escolha manual de quais variáveis serão excluídas para comparar modelos</td>
+<td>Pesquisador testa os modelos que gostaria</td>
+<td>Escolhas arbitrárias podem ser perigosas</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="regressão-linear-cont.-7" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-linear-cont.-7">REGRESSÃO LINEAR (cont.)</h2>
+<p>PROBLEMAS DAS VARIÁVEIS</p>
+<p><strong>Problema das variáveis </strong></p>
+<p><strong>Independência</strong>** ****entre**** ****as**** ****variáveis**** (****multicolinearidade****)**</p>
+<p>Variáveis independentes (não deve haver muita multicolinearidade).</p>
+<ul>
+<li>Índice de tolerância: 1 – R² (não é o do modelo).
+<ul>
+<li>Deve ficar o mais próximo de 1,0 possível.</li>
+</ul></li>
+<li>Também através do VIF
+<ul>
+<li>Valores de VIF &gt; 10 → Multicolinearidade</li>
+<li>Se Média de VIF for substancialmente &gt; 1, Modelo tendencioso (Statitics → Colinearity Diagnosis). Próximo a 1, bom modelo.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="regressão-linear-cont.-8" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-linear-cont.-8">REGRESSÃO LINEAR (cont.)</h2>
+<p>PROBLEMAS DAS VARIÁVEIS</p>
+<p><strong>Problemas das variáveis</strong></p>
+<p><strong>Independência</strong>** ****entre**** ****os**** ****resíduos**.</p>
+<ul>
+<li>Coeficiente de Durbin-Watson.</li>
+<li>Deve ficar entre 1,5 e 2,5.</li>
+</ul>
+<hr>
+</section>
+<section id="regressão-linear-cont.-9" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-linear-cont.-9">REGRESSÃO LINEAR (cont.)</h2>
+<p>PROBLEMAS DAS AMOSTRAS</p>
+<p><strong>Problemas da amostra </strong></p>
+<p><strong>Resíduos</strong>** ****padronizados****: **Resíduos em valores Z, para que todas as variáveis sejam igualmente consideradas.</p>
+<p><strong>Resíduo</strong>** ****padronizado: **Acima de 3 → Outlier</p>
+<ul>
+<li>Se 1% (99% de padrão) da amostra apresentar Resíduo padronizado acima de 2,5, → Problemas no modelo</li>
+<li>Se 5% (95% de padrão) da amostra apresentar Resíduo padronizado acima de 2 → Problemas no modelo</li>
+</ul>
+<hr>
+</section>
+<section id="regressão-linear-cont.-10" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-linear-cont.-10">REGRESSÃO LINEAR (cont.)</h2>
+<p>PROBLEMAS DAS AMOSTRAS</p>
+<p><strong>Problemas</strong>** ****da**** ****amostra**</p>
+<p><strong>Cook´s</strong>** ****Distance**</p>
+<ul>
+<li><p>Avalia o efeito de um único caso no modelo como um todo. Valores maiores que 1 merecem atenção! <strong>Mahalanobis</strong>** ****Distance:**</p></li>
+<li><p>N = 500; 5 Vis → Mahalanobis = 25 valor problemático;</p></li>
+<li><p>N = 100; 3 Vis → Mahalanobis = 15 valor problemático;</p></li>
+<li><p>N = 30; 2 Vis → Mahalanobis = 11 valor problemático;</p></li>
+</ul>
+<hr>
+</section>
+<section id="regressão-linear-cont.-11" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-linear-cont.-11">REGRESSÃO LINEAR (cont.)</h2>
+<p>PROBLEMAS DAS VARIÁVEIS</p>
+<p><strong>Tamanho</strong>** ****amostral**</p>
+<ul>
+<li>Regra geral → 50 + 8k, sendo k o número de variáveis. (Tabachnick &amp; Fidell, 2019)</li>
+</ul>
+<p>Mais confiável calcular no G*Power</p>
+<hr>
+</section>
+<section id="regressão-linear-cont.-12" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-linear-cont.-12">REGRESSÃO LINEAR (cont.)</h2>
+<p>MÚLTIPLA</p>
+<p><strong>Vamos</strong>** ****à**** prática…**</p>
+<hr>
+</section>
+<section id="section-11" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-11"></h2>
+<p>REGRESSÃO MÚLTIPLA</p>
+<p>Com variáveis DUMMY</p>
+<hr>
+</section>
+<section id="regressão-múltipla-com-dummy" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-múltipla-com-dummy">REGRESSÃO MÚLTIPLA COM DUMMY</h2>
+<p>REGRESSÃO MÚLTIPLA COM DUMMY</p>
+<p>Quando temos um preditor categórico politômico</p>
+<ul>
+<li>Variáveis nominais:
+<ul>
+<li>Estado Civil
+<ul>
+<li>1 = Solteiro; 2 = Noivo; 3 = Casado; 4 = Separado/Divorciado; 5 = Viúvo</li>
+</ul></li>
+<li>Sistema de Cultivo
+<ul>
+<li>1 = CC ; 2 = CM; 3 = PD</li>
+<li>Números não apresentam sentido matemático e também não apresentam uma ordem</li>
+<li>Não faz sentido, portanto, inserir o preditor nominal tal qual ele é DUMMY</li>
+</ul></li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="regressão-múltipla-com-dummy-cont." class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-múltipla-com-dummy-cont.">REGRESSÃO MÚLTIPLA COM DUMMY (cont.)</h2>
+<p>REGRESSÃO MÚLTIPLA COM DUMMY</p>
+<p><strong>Dummy</strong></p>
+<ul>
+<li>Contrastar todas as categorias contra uma categoria de referência para que tenhamos todos os cenários</li>
+<li>Criação de variáveis dummy (K -1)
+<ul>
+<li>Cultura antecedente
+<ul>
+<li>1 = Controle ; 2 = Caupi; 3 = Crotalária; 4 = Millheto; 5 = Guandu</li>
+</ul></li>
+<li>4 variáveis dummy</li>
+<li>Sempre k-1 (evitar multicolinearidade perfeita) DUMMY</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="regressão-múltipla-com-dummy-cont.-1" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-múltipla-com-dummy-cont.-1">REGRESSÃO MÚLTIPLA COM DUMMY (cont.)</h2>
+<p>REGRESSÃO MÚLTIPLA COM DUMMY</p>
+<p>Criando uma tabela dummy</p>
+<p>Controle Mata (variável de referência)</p>
+<ul>
+<li>Categoria de referência sempre = 0</li>
+<li>Caupi comparado com mata</li>
+<li>Milheto comparado com mata</li>
+<li>Guandu comparado com mata</li>
+<li>Crotalária comparado com mata DUMMY</li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Original</th>
+<th>Dummy_1</th>
+<th>Dummy_2</th>
+<th>Dummy_3</th>
+<th>Dummy_4</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Controle</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>Controle</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>Controle</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>Caupi</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>Caupi</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>Caupi</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>Milheto</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>Milheto</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>Milheto</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>Guandu</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>Guandu</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>Guandu</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>Crotalária</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Crotalária</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>Crotalária</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="section-12" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-12"></h2>
+<p>REGRESSÃO LOGÍSTICA BINÁRIA</p>
+<hr>
+</section>
+<section id="regressão-logística" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística">REGRESSÃO LOGÍSTICA</h2>
+<p>BINÁRIA</p>
+<p>Diferença entre Regressão Linear X Regressão Logística</p>
+<p>Diferentes tipos de regressão logística</p>
+<ul>
+<li>Binária</li>
+<li>Multinomial/Polinomial</li>
+</ul>
+<hr>
+</section>
+<section id="regressão-logística-cont." class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística-cont.">REGRESSÃO LOGÍSTICA (cont.)</h2>
+<p>BINÁRIA</p>
+<p>A regressão logística tem por finalidade modelar a probabilidade de ocorrência de um desfecho binário — ex: presença de praga (sim/não) — em função de um conjunto de variáveis explicativas, tais como umidade do solo, rotação de cultura, incidência de insetos benéficos, entre outras.</p>
+<p><strong>O que está sendo testado?</strong></p>
+<p><strong>Hipótese nula (H₀):</strong> O modelo completo não melhora a predição em relação ao modelo nulo (sem preditores).→ As variáveis independentes não têm efeito conjunto significativo.</p>
+<p><strong>Hipótese alternativa (H₁):</strong> O modelo completo melhora significativamente a predição.→ Pelo menos uma variável independente contribui para explicar o desfecho.</p>
+<hr>
+</section>
+<section id="regressão-logística-cont.-1" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística-cont.-1">REGRESSÃO LOGÍSTICA (cont.)</h2>
+<p>BINÁRIA</p>
+<p>Tem por objetivo quantificar a probabilidade de um evento acontecer, de acordo com</p>
+<p>os preditores inseridos no modelo</p>
+<p>Regressão logística binária refere-se a um modelo onde a variável dependente tem</p>
+<p>duas categorias</p>
+<ul>
+<li>Depressivo Sim / Não</li>
+<li>Morreu / Não morreu</li>
+<li>Diabético / Não Diabético</li>
+<li>Com ideação suicida / Sem ideação suicida</li>
+</ul>
+<hr>
+</section>
+<section id="regressão-logística-cont.-2" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística-cont.-2">REGRESSÃO LOGÍSTICA (cont.)</h2>
+<p>BINÁRIA</p>
+<p>Tem por objetivo quantificar a probabilidade de um evento acontecer, de acordo com os</p>
+<p>preditores inseridos no modelo</p>
+<p>Transformação logarítimica (logit) do modelo de regressão simples</p>
+<p>*P(Y)** *=</p>
+<p>1</p>
+<p>1 1</p>
+<p>1+𝑒−(𝑏𝑜+𝑏 𝑥 )</p>
+<p>Regressão Simples</p>
+<p>Regressão Múltipla</p>
+<p>*P(Y)** *=</p>
+<p>1</p>
+<p>1 11 2 2</p>
+<p>1+𝑒−(𝑏𝑜+𝑏 𝑥 +𝑏 𝑥 + …+𝑏𝑛𝑥𝑛)</p>
+<hr>
+</section>
+<section id="regressão-logística-cont.-3" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística-cont.-3">REGRESSÃO LOGÍSTICA (cont.)</h2>
+<p>BINÁRIA</p>
+<p>Cada sujeito está ou não está em um grupo</p>
+<ul>
+<li><p>Exemplo: A probabilidade que pessoas que fumam terem desenvolvido câncer, comparado com os que não fumam.</p></li>
+<li><p>Variável Desfecho: Não teve câncer de Pulmão (0) x Teve câncer de pulmão (1)</p></li>
+<li><p>Variável preditora: Fumou x Não Fumou (Dicotômica)</p></li>
+<li><p>Variável preditora: Número de cigarros fumado por mês (Contínua)</p></li>
+<li><p>Variável preditora (Dummy): Marca do cigarro fumado (Hollywood, Marlboro, Camel, LuckyStrike)</p></li>
+</ul>
+<hr>
+</section>
+<section id="regressão-logística-cont.-4" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística-cont.-4">REGRESSÃO LOGÍSTICA (cont.)</h2>
+<p>BINÁRIA</p>
+<p>A probabilidade que pessoas que fumam terem desenvolvido câncer, comparado</p>
+<p>com os que não fumam.</p>
+<ul>
+<li>Variável preditora: Número de cigarros fumado por mês (Contínua) Número de cigarros</li>
+</ul>
+<p>0</p>
+<p>600</p>
+<ul>
+<li><strong>Teve câncer (1)</strong></li>
+<li><strong>Não teve câncer (0) </strong></li>
+<li>Soma dos logaritmos das probabilidades preditas para cada observação, levando em conta a resposta observada</li>
+</ul>
+<hr>
+</section>
+<section id="regressão-logística-cont.-5" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística-cont.-5">REGRESSÃO LOGÍSTICA (cont.)</h2>
+<p>BINÁRIA</p>
+<p>Log-likelihood é uma estatística baseada em variância não explicada (resíduos)</p>
+<ul>
+<li><p>Quanto menor o valor, melhor o modelo.</p></li>
+<li><p>A qualidade do modelo é calculado através de uma estatística chamada -<em>2LL</em></p></li>
+<li><p>Ao adicionar novas variáveis, o valor do 2LL deve diminuir, atestando que a variável é capaz de <strong>melhorar</strong>** **o poder de predição do modelo;</p></li>
+<li><p>Essa diminuição precisa ser estatisticamente significativa (distribuição qui-quadrado);</p></li>
+</ul>
+<hr>
+</section>
+<section id="regressão-logística-cont.-6" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística-cont.-6">REGRESSÃO LOGÍSTICA (cont.)</h2>
+<p><strong>Problema das variáveis </strong></p>
+<p><strong>Independência</strong>** ****entre**** ****as**** ****variáveis**** (****multicolinearidade****)**</p>
+<p>Variáveis independentes (não deve haver muita multicolinearidade).</p>
+<ul>
+<li>Índice de tolerância: 1 – R² (não é o do modelo).
+<ul>
+<li>Deve ficar o mais próximo de 1,0 possível.</li>
+</ul></li>
+<li>Também através do VIF
+<ul>
+<li>Valores de VIF &gt; 10 → Multicolinearidade</li>
+<li>Se Média de VIF for substancialmente &gt; 1, Modelo tendencioso (Statitics → Colinearity Diagnosis). Próximo a 1, bom modelo. BINÁRIA</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="regressão-logística-cont.-7" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística-cont.-7">REGRESSÃO LOGÍSTICA (cont.)</h2>
+<p><strong>Problemas da amostra </strong></p>
+<p><strong>Resíduos</strong>** ****padronizados****: **Resíduos em valores Z, para que todas as variáveis sejam igualmente consideradas.</p>
+<p><strong>Resíduo</strong>** ****padronizado: **Acima de 3 → Outlier</p>
+<ul>
+<li>Se 1% (99% de padrão) da amostra apresentar Resíduo padronizado acima de 2,5, → Problemas no modelo</li>
+<li>Se 5% (95% de padrão) da amostra apresentar Resíduo padronizado acima de 2 → Problemas no modelo BINÁRIA</li>
+</ul>
+<hr>
+</section>
+<section id="regressão-linear-1" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-linear-1">REGRESSÃO LINEAR</h2>
+<p>PROBLEMAS DAS AMOSTRAS</p>
+<p><strong>Problemas</strong>** ****da**** ****amostra**</p>
+<p><strong>Cook´s</strong>** ****Distance**</p>
+<ul>
+<li><p>Avalia o efeito de um único caso no modelo como um todo. Valores maiores que 1 merecem atenção! <strong>Mahalanobis</strong>** ****Distance:**</p></li>
+<li><p>N = 500; 5 Vis → Mahalanobis = 25 valor problemático;</p></li>
+<li><p>N = 100; 3 Vis → Mahalanobis = 15 valor problemático;</p></li>
+<li><p>N = 30; 2 Vis → Mahalanobis = 11 valor problemático;</p></li>
+</ul>
+<hr>
+</section>
+<section id="regressão-logística-1" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística-1">REGRESSÃO LOGÍSTICA</h2>
+<p>BINÁRIA</p>
+<p><strong>Acessando</strong>** ****a**** ****qualidade**** ****do**** ****modelo**** (tamanho de efeito modelo)**</p>
+<ul>
+<li>Quantifica o ganho informacional do modelo completo (com preditores) em relação a um modelo sem preditores. <strong>Pseudo</strong>** R****2**</li>
+</ul>
+<p>Cox &amp; Snell R2 (1989): Não atinge o valor de 1;</p>
+<p>Nagelkerke R2 (1991) : Corrige a medida de Cox &amp; Snell</p>
+<p>McFradden R2(1974): Tende a puxar os valores para baixo</p>
+<p>Tjur R2 (2009): Mais recente, menos utilizado, mas provavelmente o melhor indicador.</p>
+<hr>
+</section>
+<section id="regressão-logística-cont.-8" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística-cont.-8">REGRESSÃO LOGÍSTICA (cont.)</h2>
+<p>BINÁRIA</p>
+<p><strong>Cox &amp; Snell R2 (SPSS, JASP, JAMOVI, R)</strong></p>
+<p>Não atinge o valor de 1</p>
+<ul>
+<li>Impossibilita interpretações</li>
+<li>Pouco usado na literatura</li>
+</ul>
+<hr>
+</section>
+<section id="regressão-logística-cont.-9" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística-cont.-9">REGRESSÃO LOGÍSTICA (cont.)</h2>
+<p>BINÁRIA</p>
+<p><strong>Nagelkerke</strong>** R****2**** (SPSS, JASP, JAMOVI, R)**</p>
+<ul>
+<li>Explica em termos de %, o quanto o modelo com as Vis inclusas melhora a explicação em comparação ao modelo nulo;</li>
+<li>Se o valor de R2 de nagelkerke for 0.30, isso significa que o modelo completo (que inclui as Vis) explica 30% da variação na probabilidade de ter câncer em comparação ao modelo nulo;</li>
+<li>Em outras palavras, adicionando essas variáveis preditoras ao modelo, conseguimos melhorar a previsão do modelo em 30% em comparação a um modelo que não considera essas variáveis</li>
+</ul>
+<hr>
+</section>
+<section id="regressão-logística-cont.-10" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística-cont.-10">REGRESSÃO LOGÍSTICA (cont.)</h2>
+<p>BINÁRIA</p>
+<p><strong>McFadden R2</strong>** (JASP, JAMOVI, R)**</p>
+<ul>
+<li>Explica em termos de %, o quanto o modelo com as Vis inclusas melhora a explicação em comparação ao modelo nulo;</li>
+<li>Em sua fórmula, tende a puxar “para baixo” o valor de R2</li>
+</ul>
+<hr>
+</section>
+<section id="regressão-logística-cont.-11" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística-cont.-11">REGRESSÃO LOGÍSTICA (cont.)</h2>
+<p>BINÁRIA</p>
+<p><strong>Tjur´s</strong>** R****2**** (JASP, R)**</p>
+<ul>
+<li>Refere-se à diferença absoluta entre as médias das probabilidade para cada grupo. Cada sujeito vai ter uma probabilidade de ser categorizado em uma outra categoria.</li>
+<li>Exemplo de pesquisa</li>
+<li>VD (Não ter câncer/tem câncer)</li>
+<li>Vis (número de cigarros fumados, prática de exercícios físicos e idade);</li>
+<li>N = 100 pessoas (50 com câncer 50 sem câncer);
+<ul>
+<li>Para as pessoas que tem câncer (VD =1), suas probabilidades previstas variam d 0.6 a 0.9;</li>
+<li>Para as pessoas que não tem câncer (VD =0), suas probabilidades previstas podem variar de, digamos 0.1 a 0.4.</li>
+<li>Serão computadas a média dessas probabilidades para o grupo 0 e para o grupo 1.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="regressão-logística-cont.-12" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística-cont.-12">REGRESSÃO LOGÍSTICA (cont.)</h2>
+<p>BINÁRIA</p>
+<p><strong>Tjur´s</strong>** R****2**** (JASP, R)**</p>
+<ul>
+<li>Para o grupo que teve câncer (VD = 1), a média das probabilidades previstas foi de 0.75. Para o grupo que não teve câncer (VD = 0), a média das probabilidades previstas foi de 0.25;</li>
+<li>O R2 de Tjur é então calculado como a diferença absoluta entre essa duas médias, o que nete caso seria 0.75 – 0.25 = 0.50</li>
+<li><strong>Interpretação:</strong></li>
+<li>Em média, o modelo prevê uma probabilidade de 50% maior dos sujeitos do gurpo 1 estarem corretamente classificados no grupo 1.</li>
+</ul>
+<hr>
+</section>
+<section id="regressão-logística-cont.-13" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística-cont.-13">REGRESSÃO LOGÍSTICA (cont.)</h2>
+<p>BINÁRIA</p>
+<p><strong>Acessando</strong>** ****o**** ****poder**** ****de**** ****predição**** ****das**** ****variáveis**</p>
+<ul>
+<li>Avalia o quanto as variáveis são capazes de predizer o desfecho</li>
+<li>Wald: Informa se o preditor é significativo ou não;</li>
+<li>B e Exp(b): Razão da probabilidade</li>
+</ul>
+<hr>
+</section>
+<section id="regressão-logística-cont.-14" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística-cont.-14">REGRESSÃO LOGÍSTICA (cont.)</h2>
+<p>BINÁRIA</p>
+<p><strong>Acessando</strong>** ****o**** ****poder**** ****de**** ****predição**** ****das**** ****variáveis**</p>
+<ul>
+<li>Exp(<em>b</em>): Indica a probabilidade de o evento acontecer com base naquele preditor específico
+<ul>
+<li>Exp*(b)** *&gt; 1: Quanto mais o preditor aumenta, <strong>maior </strong>a probabilidade do desfecho acontecer</li>
+<li>Exp(<em>b</em>) &lt; 1: Quanto mais o preditor aumenta, <strong>menor</strong>** **a probabilidade do desfecho acontecer</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="regressão-logística-cont.-15" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística-cont.-15">REGRESSÃO LOGÍSTICA (cont.)</h2>
+<p>BINÁRIA</p>
+<p><strong>Análises</strong>** ****da**** ****capacidade**** ****de**** ****predição**** ****do**** ****modelo**</p>
+<ul>
+<li><p>Probabilities e Group Membership</p></li>
+<li><p>Avalia a probabilidade de cada caso ser adequadamente categorizado, de acordo com o seu próprio padrão de resposta Classification plots</p></li>
+<li><p>Histograma dos valores reais e previstos para o desfecho;</p></li>
+</ul>
+<hr>
+</section>
+<section id="regressão-logística-cont.-16" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística-cont.-16">REGRESSÃO LOGÍSTICA (cont.)</h2>
+<p>BINÁRIA</p>
+<p><strong>Métricas de performance</strong></p>
+<p><strong>Accuracy</strong>** ****(Acurácia)**:</p>
+<ul>
+<li>Valor: <strong>0.836</strong></li>
+<li><strong>O</strong>** ****que**** ****é?**** **Mede a proporção total de previsões corretas.</li>
+<li><strong>Interpretação</strong>:
+<ul>
+<li>Uma acurácia de 83,6% significa que o modelo classificou corretamente 84,2% dos casos (positivos e negativos combinados).</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="regressão-logística-cont.-17" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística-cont.-17">REGRESSÃO LOGÍSTICA (cont.)</h2>
+<p>BINÁRIA</p>
+<p><strong>Métricas de performance</strong></p>
+<p><strong>AUC</strong>** ****(Área**** ****sob**** ****a**** ****Curva**** ****ROC)**:</p>
+<ul>
+<li>Valor: <strong>0.886</strong></li>
+<li><strong>O que é? </strong>Mede a capacidade do modelo de distinguir entre as classes (por exemplo, “Sim” e “Não”).</li>
+<li><strong>Interpretação</strong>:
+<ul>
+<li>Um AUC de <strong>0.886 </strong>significa que há 88,4% de chance de o modelo atribuir uma probabilidade maior ao caso positivo (classe 1) do que ao caso negativo (classe 0).</li>
+<li>AUC próximo de 1 indica excelente desempenho.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="regressão-logística-cont.-18" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística-cont.-18">REGRESSÃO LOGÍSTICA (cont.)</h2>
+<p>BINÁRIA</p>
+<p><strong>Métricas de performance</strong></p>
+<p><strong>Recall</strong>** ****(Sensibilidade)**:</p>
+<ul>
+<li>Valor: <strong>0.768</strong></li>
+<li><strong>O</strong>** ****que**** ****é?**** **Mede a proporção de verdadeiros positivos que foram corretamente identificados.</li>
+<li><strong>Interpretação</strong>:
+<ul>
+<li>Com sensibilidade de 76,8%, significa que o modelo identificou corretamente 76,8% dos casos positivos reais.</li>
+</ul></li>
+<li><strong>Relevante</strong>** ****quando**** ****é**** ****importante**** ****não**** ****perder**** ****casos**** ****positivos**** **(ex.: diagnóstico médico).</li>
+</ul>
+<hr>
+</section>
+<section id="regressão-logística-cont.-19" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística-cont.-19">REGRESSÃO LOGÍSTICA (cont.)</h2>
+<p>BINÁRIA</p>
+<p><strong>Métricas de performance</strong></p>
+<p><strong>Specificity</strong>** ****(Especificidade)**:</p>
+<ul>
+<li>Valor: <strong>0.885</strong></li>
+<li><strong>O</strong>** ****que**** ****é?**** **Mede a proporção de verdadeiros negativos corretamente identificados.</li>
+<li><strong>Interpretação</strong>:
+<ul>
+<li>Uma especificidade de 88,5% significa que o modelo identificou corretamente 88,2% dos casos negativos reais.</li>
+</ul></li>
+<li><strong>Relevante</strong>** ****quando**** ****é**** ****importante**** ****evitar**** ****falsos**** ****positivos**.</li>
+</ul>
+<hr>
+</section>
+<section id="regressão-logística-cont.-20" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="regressão-logística-cont.-20">REGRESSÃO LOGÍSTICA (cont.)</h2>
+<p>BINÁRIA</p>
+<p><strong>Métricas de performance</strong></p>
+<p><strong>Precision</strong>** ****(Precisão)**:</p>
+<ul>
+<li>Valor: <strong>0.831</strong></li>
+<li><strong>O</strong>** ****que**** ****é?**** **Mede a proporção de verdadeiros positivos entre todas as previsões positivas.</li>
+<li><strong>Interpretação</strong>:
+<ul>
+<li>Com precisão de 83,1%, significa que, entre os casos previstos como “Sim”, 83,1% eram realmente positivos.</li>
+</ul></li>
+<li><strong>Relevante quando os dados estão</strong>** ****desbalanceados**, pois a precisão mostra quão confiáveis são as previsões positivas.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="section-13" class="level1" data-background-color="#034EA2">
+<h1 data-background-color="#034EA2"></h1>
+<p><span class="obrigado-fit-text" style="color: white;">Obrigado!</span></p>
+<div style="text-align: center; color: white; font-size: 0.7em;">
+<p>Luiz Diego Vidal Santos</p>
+<p>Universidade Estadual de Feira de Santana (UEFS)</p>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

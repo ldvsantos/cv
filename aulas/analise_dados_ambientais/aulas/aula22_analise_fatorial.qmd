@@ -1,0 +1,909 @@
+﻿---
+title: "Análise Fatorial Exploratória"
+subtitle: "AFE - Fundamentos e Aplicações<br>Análise de Dados Ambientais"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../assets/logo-uefs.webp
+    footer: "UEFS | Análise de Dados Ambientais | Análise Fatorial Exploratória"
+    slide-number: true
+    theme: [simple, assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+# [ANÁLISE FATORIAL EXPLORATÓRIA]{.section-header}
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+O QUE É
+
+  - A análise fatorial exploratória (AFE) é um conjunto de técnicas estatísticas amplamente utilizadas nas pesquisas em Psicologia
+  - Durante sua execução, diversas decisões precisam ser tomadas a fim de se obter uma estrutura
+fatorial adequada
+
+  - Diferenças entre análise fatorial exploratória e análise de componentes principais
+  - Retenção e rotação fatorial
+  - Tamanho da amostra ideal
+  - Variância explicada
+  - Confiabilidade da solução fatorial
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+O QUE VOCÊ PRECISA ENTENDER
+
+  - A análise fatorial exploratória (AFE) não para de evoluir
+  - O SPSS tem péssimas opções
+  - Utilizaremos o software FACTOR (Urbano & Lorenzo-Seva)
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+Objetivo da AFE
+
+  - Define-se AFE como um conjunto de técnicas multivariadas que tem como objetivo encontrar a estrutura subjacente em uma matriz de dados e determinar o número e a natureza das variáveis latentes (fatores) que melhor representam um conjunto de variáveis observadas (Brown, 2006).
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+Objetivo da AFE
+
+
+| Eu me sinto exausto só de pensar em trabalhar | 1 | 2 | 3 | 4 | 5 |
+| --- | --- | --- | --- | --- | --- |
+| Não tenho tido paciência para lidar com as pessoas no meu trabalho | 1 | 2 | 3 | 4 | 5 |
+| Sinto que meu trabalho não tem valor | 1 | 2 | 3 | 4 | 5 |
+| Cada dia de trabalho parece uma tortura pra mim | 1 | 2 | 3 | 4 | 5 |
+| Tenho me tornado frio com as pessoas as quais preciso lidar no meu trabalho | 1 | 2 | 3 | 4 | 5 |
+| Meu trabalho me realiza | 1 | 2 | 3 | 4 | 5 |
+| Após um dia de trabalho, não tenho ânimo para mais nada | 1 | 2 | 3 | 4 | 5 |
+| Por vezes, chego a sentir raiva das pessoas do meu trabalho | 1 | 2 | 3 | 4 | 5 |
+| Meu trabalho complementa positivamente a minha vida | 1 | 2 | 3 | 4 | 5 |
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+Objetivo da AFE
+
+  - Define-se AFE como um conjunto de técnicas multivariadas que tem como objetivo encontrar a estrutura subjacente em uma matriz de dados e determinar o número e a natureza das variáveis latentes (fatores) que melhor representam um conjunto de variáveis observadas (Brown, 2006).
+  - As variáveis observadas “pertencem” a um mesmo fator quando, e se, elas partilham uma variância
+em comum (i.e., são influenciadas pelo mesmo construto subjacente) (Brown, 2006).
+
+  - Fator é uma variável latente (e.g., autoestima) que influencia mais de uma variável observada
+    - ‘Estou satisfeito comigo’
+    - ‘Tenho boas qualidades’
+    - ‘Sou uma pessoa de valor’
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+Objetivo da AFE
+
+  - A AFE é geralmente conduzida quando:
+  - 1) O pesquisador não possui uma teoria prévia subjacente ou evidências empíricas suficientes que explicitem como os itens de determinado instrumento devem ser agrupados e avaliados;
+  - 2) Quando o pesquisador quer confirmar ou refutar a estrutura fatorial de determinado instrumento (Brown, 2006).
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**Análises**** Fatoriais**** ****Exploratórias**** ****vs**** ****Análise**** ****de**** ****Componentes**** ****Principais**
+
+  - A AFE e a ACP são duas técnicas que têm por objetivo reduzir um determinado número de itens a um menor número de variáveis
+  - A ACP foi por muito tempo o método de redução de dados mais utilizado nas pesquisas em
+Psicologia
+
+  - Cálculos computacionais da ACP mais simples, mais rápidos e mais baratos → Amplo uso
+  - ACP é, ainda hoje, o método padrão de redução de dados em muitos dos principais programas estatísticos (por exemplo, SPSS e SAS)
+
+---
+
+## EXPLORATÓRIA {.smaller-text}
+
+ANÁLISE FATORIAL
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**Análises**** Fatoriais**** ****Exploratórias**** ****vs**** ****Análise**** ****de**** ****Componentes**** ****Principais**
+
+  - AFEs geram fatores
+  - ACPs geram componentes
+  - A diferença entre componentes e fatores está relacionada à forma como os itens são
+retidos.
+
+  - Ambos os métodos de redução de dados assumem que a variância de uma variável é composta por três aspectos: variância específica; variância comum; e variância de erro.
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+Retirado de Damásio (2012).
+
+**específica:**
+
+**Análises**** Fatoriais**** ****Exploratórias**** ****vs**** ****Análise**** ****de**** ****Componentes**** ****Principais**
+
+**Variância**
+
+variância
+
+Porção	de
+
+é
+
+do		item	que	não com
+
+nenhuma
+
+outra
+
+compartilhada variável.
+
+**Variância****	****comum:****	**Variância	que	é compartilhada entre todos os itens que
+
+determinado	fator	ou
+
+compõem componente.
+
+**Variância**** ****de**** ****erro:**** **Parcela do item não explicada pelo componente ou fator
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**Análises**** Fatoriais**** ****Exploratórias**** ****vs**** ****Análise**** ****de**** ****Componentes**** ****Principais**
+
+  - A ACP está baseada apenas na correlação linear das variáveis observadas, e não diferencia a variância comum da variância específica entre os itens, incluindo ambos os tipos de variância (comum e específica (na Figura 1, Ai + B) na análise dos dados.
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**Análises**** Fatoriais**** ****Exploratórias**** ****vs**** ****Análise**** ****de**** ****Componentes**** ****Principais**
+
+Compo-
+
+nente
+
+*x*1
+
+*x*2
+
+*x*3
+
+*x*4
+
+*Os** **indicadores** **que** **criam** **o(s)** **componente(s)*
+
+*Exemplos:*
+
+Nível socioeconômico
+
+Escolaridade
+
+Renda
+
+Bens materiais
+
+Emprego (Classificação ISEI)
+
+Qualidade de um supermercado
+
+Preços
+
+Atendimento dos funcionários
+
+Espaço físico
+
+Estacionamento
+
+Segurança da região
+
+Variedade de produtos (...)
+
+Modelo Formativo
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**Análises**** Fatoriais**** ****Exploratórias**** ****vs**** ****Análise**** ****de**** ****Componentes**** ****Principais**
+
+Fator
+
+Modelo Reflexivo
+
+*x*1
+
+*x*2
+
+*x*3
+
+*x*4
+
+Depressão
+
+*O** **traço** **latente** **que** **gera** **o** **comportamento*
+
+Tristeza Frequente
+
+Falta de sentido na vida
+
+Choro constante
+
+Apatia
+
+Problemas de sono
+
+Problemas de alimentação
+
+Baixa Autoestima
+
+Ideação suicida
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**Análises**** Fatoriais**** ****Exploratórias**** ****vs**** ****Análise**** ****de**** ****Componentes**** ****Principais**
+
+*Exemplos:** *Depressão
+
+Tristeza Frequente Baixa Autoestima
+
+Falta de sentido na vida Problemas de alimentação
+
+Apatia
+
+Problemas de sono Choro constante Ideação suicida
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**Análises**** Fatoriais**** ****Exploratórias**** ****vs**** ****Análise**** ****de**** ****Componentes**** ****Principais**
+
+Fator
+
+Modelo Reflexivo
+
+*x*1
+
+*x*2
+
+*x*3
+
+*x*4
+
+*O** **traço** **latente** **que** **gera** **o** **comportamento*
+
+Depressão
+
+Tristeza Frequente
+
+Falta de sentido na vida
+
+Choro constante
+
+Apatia
+
+Problemas de sono
+
+Problemas de alimentação
+
+Baixa Autoestima
+
+Ideação suicida
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**Análises**** Fatoriais**** ****Exploratórias**** ****vs**** ****Análise**** ****de**** ****Componentes**** ****Principais**
+
+Compo
+
+- nente
+*x*1
+
+*x*2
+
+*x*3
+
+*x*4
+
+Componentes Principais Modelo Formativo
+
+Fator / Traço Latente
+
+*x*1
+
+*x*2
+
+*x*3
+
+*x*4
+
+Análise Fatorial Modelo Reflexivo
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**Análises**** Fatoriais**** ****Exploratórias**** ****vs**** ****Análise**** ****de**** ****Componentes**** ****Principais**
+
+Em termos práticos...
+
+  - São duas técnicas com racionais teóricos subjacentes completamente distintos, embora seja similar apenas em seu objetivo: reduzir um número maior de indicadores a um número menor de variáveis (componentes ou fatores)
+  - A ACP tende a gerar maior carga componencial dos itens, quando comparado com a AF, porque mais fontes de variância são adicionadas
+  - É muito difícil conceber modelos formativos (componentes) na Psicologia. Mas em outras áreas
+(administração, economia, etc.) é totalmente plausível.
+
+
+---
+
+# [FATORABILIDADE DA MATRIZ]{.section-header}
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**Kaiser**** ****Meyer-****Olkmin**** ****(KMO)**
+
+  - Índice de adequação da amostra
+  - Avalia se a matriz de dados é passível de fatoração
+  - Sugere a proporção de variância dos itens que pode estar sendo explicada por uma variável latente
+(Lorenzo-Seva, Timmerman, & Kiers, 2011).
+
+  - Valores variam de 0 a 1.
+    - < 0,5 são considerados inaceitáveis;
+    - > 0,5 e < 0,7 são considerados medíocres;
+    - > 0,7 e < 0,8 são considerados bons;
+    - > 0,8 e 0,9 são considerados ótimos e excelentes.
+(Hutcheson & Sofroniou, 1999)
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**Teste**** ****de**** ****esfericidade**** ****de ****Barlett**
+
+Avalia em que medida a matriz de (co)variância é similar a uma matriz-identidade (i.e., os elementos da diagonal principal tem valor igual a um, e os demais elementos da matriz são aproximadamente zero, ou seja, não apresentam correlações entre si, Field, 2005).
+
+Valores do teste de esfericidade de Bartlett com níveis de significância *p** *< 0,05
+
+indicam que a matriz é fatorável (Tabachnick & Fidell, 2007),
+
+
+---
+
+# [RETENÇÃO FATORIAL]{.section-header}
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**Retenção**** ****Fatorial**
+
+Uma das mais importantes decisões a ser tomada
+
+Uma extração inadequada impossibilita a interpretação dos resultados de maneira apropriada
+
+(Hayton, Allen & Scarpello, 2004).
+
+1) Superestimação de fatores
+
+  - Resultados não-parcimoniosos, baseados em construtos supérfluos, com reduzido ou inadequado poder explicativo
+(Patil e cols., 2008)
+
+2) Subestimação de fatores
+
+  - Subestimação de fatores retidos resulta em perda significativa de informação
+(Franklin, Gibson, Robertson, Pohlmann & Fralish, 1995)
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**Retenção**** ****Fatorial**
+
+Péssimos métodos de retenção fatorial
+
+  - *Eigenvalue** *> 1
+Ótimos métodos de retenção
+
+  - Análise Paralela
+  - Método Hull
+  - BIC
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**Eigenvalue**** ****>**** ****1**
+
+Possivelmente um dos critérios mais utilizados até os dias atuais
+
+  - Cada fator retido apresenta um eigenvalue que se relaciona ao total de variância explicada por este fator
+  - A soma total dos eigenvalues é sempre igual ao número de itens utilizados na análise (utilizando uma escala de 29 itens, a soma dos 29 eigenvalues é igual a 29)
+  - Fator com eigenvalue < 1 apresenta um total de variância explicada menor do que
+um único item.
+
+    - Apenas fatores com eigenvalue > 1 são retidos
+(Floyd & Widaman, 1995).
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**Eigenvalue**** ****>**** ****1**
+
+Apesar da simplicidade, da objetividade e do amplo uso desse critério, há forte consenso na literatura de
+
+que seus resultados são imprecisos
+
+(Costello & Osbourne, 2005; Floyd & Widaman; 1995; Patil e cols., 2008; Reise, Waller &Comrey, 2000).
+
+Critério do eigenvalue > 1 superestimou em 36% dos casos o número de fatores retidos.
+
+(Costello & Osborne, 2005)
+
+O critério do eigenvalue > 1 tende a superestimar o número de fatores a ser retido devido ao erro amostral
+
+(Laher, 2010; Ledesma & ValeroMora, 2007).
+
+O critério de Kaiser-Guttman como método de retenção fatorial não é recomendado
+
+(Patil e cols., 2008; Velicer e cols., 2000).
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**Análise**** ****Paralela**
+
+A AP é um procedimento estatístico de simulação Monte-Carlo que compara os eigenvalues dos dados originais, com eigenvalues gerados por matrizes aleatórias construídas no processo de simulação.
+
+A base aleatória possui:
+
+  - mesma dimensionalidade
+  - o mesmo número p de variáveis
+  - O mesmo número n de sujeitos do conjunto de dados reais
+(Laros, 2004)
+
+John Horn
+
+(1928 - 2006)
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**Análise**** ****Paralela**
+
+Implementação Clássica (Horn, 1965)
+
+- Baseada em Eigenvalues
+- Simulação Monte-Carlo
+Implementação Otimizada (Timmerman & Lorenzo-Seva, 2011)
+
+- Baseada em variância explicada dos fatores
+- Permutação aleatória dos valores amostrais (Bootstrapping)
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**Análise**** ****Paralela**
+
+  - Os resultados das matrizes aleatórias são contrastados com os dados originais e passa-se a reter
+apenas os fatores dos dados originais que sejam ‘mais fortes’ que dos dados aleatórios
+
+    - Maiores eigenvalues (Método tradicional
+    - Maior variância explicada (Método da permutação)
+
+---
+
+## RETENÇÃO FATORIAL (cont.) {.smaller-text}
+
+MÉTODO HULL
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**Método**** ****Hull**
+
+Tem apresentado grande potencial enquanto método de retenção fatorial.
+
+Determina a amplitude de fatores a serem avaliados (Análise Paralela);
+
+Avalia os índices de adequação de ajuste de todas as soluções fatoriais, bem como os graus de liberdade
+
+de cada um dos modelos.
+
+  - Os valores de adequação de ajuste podem ser obtidos por meio de diferentes índices (CFI e CAF);
+Fórmula matemática pondera a relação entre o índice de adequação de ajuste e os graus de liberdade de um modelo, em comparação com um modelo prévio, informando o modelo mais adequado
+
+(Ceuleman & Kiers, 2006; Ceulemans, Timmerman & Kiers, 2010; Lorenzo-Seva e cols., 2011).
+
+
+---
+
+## RETENÇÃO FATORIAL (cont.) {.smaller-text}
+
+MÉTODO BIC DIMENSIONALITY TEST
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**BIC**
+
+Schwarz´s Bayesian Information Criterion (BIC; Schwarz, 1978).
+
+  - Índice de ajuste desenvolvido especificamente para escolha de modelos (model selection framework)
+  - Busca avaliar o modelo mais próximo à estrutura verdadeira *(quasi-true** *model; Kullback-Leibler
+information; )
+
+  - Foco em modelos parcimoniosos
+  - Estrutura com menor valor de BIC é selecionada
+
+---
+
+# [ROTAÇÃO FATORIAL]{.section-header}
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**ROTAÇÃO**** ****DE**** FATORES**
+
+  - As rotações fatoriais têm o objetivo de facilitar a interpretação dos fatores, visto que muitas vezes as variáveis analisadas apresentam cargas fatoriais elevadas em mais de um fator.
+  - As rotações fatoriais podem ser de duas ordens:
+    - Ortogonais e Oblíquas
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**ROTAÇÃO**** ****ORTOGONAL**
+
+  - Assumem que os fatores extraídos são independentes uns dos outros (i.e, não apresentam
+correlações entre si; *r** *= 0).
+
+    - Ex: Varimax
+    - Fatores totalmente independentes uns dos outros.
+    - Pressuposto raramente obtido nas pesquisas das ciências humanas e da saúde.
+    - Aspectos humanos e sociais (comportamentos; sintomas; entre outros) raramente são divididos em unidades que funcionam independentes umas das outras
+    - Métodos ortogonais, em geral, resultam em perda de confiabilidade se os fatores forem correlacionados
+    - Tendem à superestimação de variância explicada, visto que possíveis interseções entre os
+diferentes fatores não são consideradas.
+
+(Schmitt & Sass, 2011).
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**ROTAÇÃO**** ****OBLÍQUA**
+
+  - Permitem que os fatores se correlacionem entre si
+    - Ex: Oblimin
+    - Não delimitam a interação entre os fatores *a** **priori*.
+    - Se os fatores não forem correlacionados entre si, os resultados obtidos mediante as rotações oblíquas serão bastante semelhantes aos que seriam obtidos por meio das rotações ortogonais
+(Fabrigar e colaboradores, 1999; Sass & Schmitt, 2010).
+
+
+---
+
+# [TAMANHO AMOSTRAL]{.section-header}
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**A**specto de divergência de opiniões e controvérsias na literatura científica, principalmente no que diz respeito ao número mínimo de sujeitos necessários.
+
+Gorsuch (1983) e Hair et al. (2005)
+
+  - *N** *> 100 sujeitos e um número mínimo de cinco respondentes por item.
+Cattell (1978)
+
+  - N < 250, 3 a 6 respondentes por item
+Everitt (1975)
+
+  - 10 respostas para cada item avaliado
+Não houve experimentos de simulação que corroborassem ou refutassem estas informações
+
+(MacCallum, Widaman, Zhang, & Hong, 1999)
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**O**** ****que**** se**** ****sabe**** ****hoje:**
+
+Amostras grandes tende a fornecer resultados mais precisos, diminuindo o efeito do erro amostral
+
+Fornecem resultados mais próximos ao índice populacional, tanto no que se refere à estrutura fatorial, quanto à carga fatorial e à comunalidade dos itens
+
+(MacCallum e colaboradores, 1999).
+
+Porém, em relação ao **tamanho**** ****mínimo**...
+
+Barrett e Kline (1981) demonstraram que soluções fatoriais estáveis foram encontradas com um número variando de 1,2 a 3 respondentes por item
+
+Resultados semelhantes foram encontrados por MacCallum e colaboradores (1999).
+
+O que está por trás é mais a qualidade do instrumento do que o N
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+O grau em que um fator é claramente representado por um número suficiente de itens e pela qualidade (nível) das suas cargas fatoriais e comunalidades.
+
+  - Se um fator é representado por um bom número de itens (tipicamente quatro ou mais)
+  - Se estes itens tendem a ser fortemente explicados pelo fator (i.e., apresentam cargas fatoriais elevadas, > 0,60)
+Número de respondentes tende a ser menos importante na obtenção de uma boa estrutura fatorial
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+
+---
+
+# [VARIÂNCIA EXPLICADA]{.section-header}
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+m construto hipotético
+
+**VARIÂNCIA**** ****EXPLICADA**
+
+  - Tópico com certa lacuna na li
+  - O que é uma variância explica
+  - Nenhum instrumento será ca
+    - Se não chega a 100%, como se
+teratura
+
+da alta? O que é baixa?
+
+paz de estimar 100% da variância de u
+
+interpreta o número?
+
+(Peterson, 2000)
+
+
+---
+
+# [FIDEDIGNIDADE]{.section-header}
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**FIDEDIGNIDADE**** (**Confiabilidade, Precisão, Consistência interna)
+
+  - Forma de avaliar o quanto os itens estão agrupados entre si
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**FIDEDIGNIDADE**** (**Confiabilidade, Precisão, Consistência interna)
+
+  - Quanto mais próximo for o padrão de respostas dos itens de um determinado fator, maior será a
+fidedignidade.
+
+  - Fidedignidade não garante validade
+“Os escores do teste podem ser relativamente livres de erros de mensuração, e ainda assim, não serem úteis como base para as inferências que precisamos fazer”
+
+(Urbina, 2007, p. 159)
+
+Validade
+
+Fidedignidade
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**Coeficiente**** ****Alpha**** ****(Cronbach,**** ****1951)**
+
+O coeficiente alfa de Cronbach é uma forma de estimar a confiabilidade de um questionário aplicado em uma pesquisa.
+
+Mede a correlação entre respostas em um questionário, apresentando uma estimativa de
+
+correlação média entre as perguntas.
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**Coeficiente**** ****Alpha**** ****(Cronbach,**** ****1951)**
+
+Pressuposto da tau-equivalência: todos os itens tem a mesma importância para o fator (Sijstma, 2009)
+
+Coeficiente alpha puxa a fidedignidade para baixo (Green & Yang, 2009)
+
+Alternativas
+
+  - Estimativas que considerem a importância relativa do item
+  - **Fidedignidade**** ****Composta**
+  - **Fidedignidade**** ****Ômega**** ****(McDonald,**** ****1999)**
+
+---
+
+## {.smaller-text}
+
+ANÁLISE FATORIAL EXPLORATÓRIA
+
+**VAMOS**** ****A**** ****PRÁTICA**
+
+**Na**** ****descrição**** ****da**** ****aula**** ****você**** ****encontra**
+
+  - **SOFTWARE**** ****FACTOR**
+  - **BANCO**** ****DE**** ****DADOS**
+
+---
+
+## {.smaller-text}
+
+REFERÊNCIAS
+
+Claeskens G, Hjort NL. Model Selection and Model Averaging. Cambridge: University Press; 2008
+
+Green S. B., Yang Y. (2009a). Commentary on coefficient alpha: a cautionary tale. Psychometrika 74, 121–135. 10.1007/s11336-008-9098-4
+
+McDonald R. (1999). Test Theory: a Unified Treatment. Mahwah, NJ: Lawrence Erlbaum Associates.
+
+Neath, A. A., & Cavanaugh, J. E. (2011). The Bayesian information criterion: background, derivation, and applications. Wiley Interdisciplinary Reviews: Computational Statistics, 4(2), 199–203. doi:10.1002/wics.199
+
+Raykov T. (1997). Scale reliability, cronbach's coefficient alpha, and violations of essential tau- equivalence with fixed congeneric
+
+components. Multivariate Behavioral Research, 32, 329–353. doi:10.1207/s15327906mbr3204_2
+
+Schwarz G. (1978). Estimating the dimension of a model. Annual Statistics, 6, 461–464.
+
+Sijtsma K. (2009). On the use, the misuse, and the very limited usefulness of Cronbach's alpha. Psychometrika 74, 107–120. 10.1007/s11336- 008-9101-0
+
+Timmerman, M. E., & Lorenzo-Seva, U. (2011). Dimensionality assessment of ordered polytomous items with parallel analysis. Psychological
+
+Methods, 16(2), 209-220. doi:https://dx.doi. org/10.1037/a0023353
+
+
+---
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::
+

@@ -1,0 +1,519 @@
+﻿---
+title: "Análise de Correlação"
+subtitle: "Correlação de Pearson, Spearman e Kendall<br>Análise de Dados Ambientais"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../assets/logo-uefs.webp
+    footer: "UEFS | Análise de Dados Ambientais | Análise de Correlação"
+    slide-number: true
+    theme: [simple, assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+# [ANÁLISE DE CORRELAÇÃO]{.section-header}
+
+---
+
+## ANÁLISE DE CORRELAÇÃO {.smaller-text}
+
+Investigando a associação entre duas variáveis
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+Definição
+
+- Técnica de análise de dados que avalia a associação entre duas ou mais variáveis
+- A princípio, a natureza dessas variáveis devem ser métricas ou ordinais (ou seja, variáveis crescentes, tais como peso, altura, nível de felicidade, valores de glicemia, etc)
+- Existem casos especiais de correlação com dados categóricos*
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+Exemplo:
+
+Qual a relação entre o estresse no trabalho e o número de cigarros fumados em uma amostra de fumantes?
+
+Três características da correlação:
+
+Significância estatística (verificar se p < 0,05)
+
+Direção (positiva ou negativa)
+
+Grau (força: fraca, média e forte)
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIREÇÃO:
+
+**Positiva****:**** **Valores altos em uma variável (x) são associados a valores altos na outra (y). Valores baixos de x tendem a ser associados a valores baixos de y
+
+Ex.: Idade da criança e capacidade de montar lego
+
+**Negativa****:**** **valores altos de uma variável (x) são associados a valores baixos da outra variável (y)
+
+Ex.: Depressão e motivação para trabalhar
+
+**Nula:**** **Não existe um relacionamento
+
+Ex.: Altura e número de relacionamentos amorosos
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIREÇÃO:
+
+Correlações
+
+Positivas
+
+Correlação Nula
+
+Correlações Negativas
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIREÇÃO:
+
+Correlações
+
+Positivas
+
+Correlação Nula
+
+Correlações Negativas
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIREÇÃO:
+
+Correlações
+
+Positivas
+
+Correlações Negativas
+
+Correlação Nula
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIREÇÃO:
+
+Correlações
+
+Positivas
+
+Correlações Negativas
+
+Correlação Nula
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIREÇÃO:
+
+Correlação perfeita
+
+Sua idade e idade de sua irmã
+
+Correlação imperfeita Inteligência lógico-matemática e nota
+
+na prova de matemática
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIREÇÃO:
+
+Pode ser que não se encontre correlação entre duas variáveis (usando método de cálculo de correlação linear) porque a relação existente é não-linear.
+
+Teria que se usar outro método para cálculo da correlação (não-linear)
+
+Ex. Idade vs. Força física (ou memória; ou comportamentos disruptivos)
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+COEFICIENTE DE CORRELAÇÃO
+
+- 1
+**Correlação**** ****perfeita negativa**
+
+0
+
++1
+
+**Correlação**** ****perfeita positiva**
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+COEFICIENTE DE CORRELAÇÃO
+
+Cohen (1988, 1992)
+
+
+| Magnitude | Valor absoluto |
+| --- | --- |
+| Nula | 0,00 |
+| Fraca | |0,10 – 0,30| |
+| Moderada | |0,30 – 0,50| |
+| Forte | |> 0,50 | |
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+COEFICIENTE DE CORRELAÇÃO
+
+
+| Magnitude | Valor absoluto |
+| --- | --- |
+| Nula | 0,00 |
+| Fraca | |0,10 – 0,39| |
+| Moderada | |0,40 – 0,70| |
+| Forte | |0,70 – 0,80| |
+| Muito Forte | |0,80 - 0,99| |
+| Perfeita | 1,00 |
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+**TAMANHO**** ****DE**** ****EFEITO**
+
+Tamanho de efeito avalia o quanto duas variáveis estão, de fato, correlacionadas.
+
+O tamanho de efeito da correlação explicita o quanto de variância compartilhada
+
+duas variáveis apresentam entre si
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+TAMANHO DE EFEITO (COEFICIENTE DE DETERMINAÇÃO)
+
+*r** *= 0,60
+
+*Coeficiente** **de** **Correlação*
+
+*r**2** *= 0,36
+
+36,0%
+
+*Tamanho** **de** **efeito*
+
+*ou*
+
+*Variância** **compartilhada*
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+3%
+
+17%
+
+9%
+
+
+| Coeficiente de Correlação
+(r) | Variância compartilhada (tamanho de efeito, r2) |
+| --- | --- |
+| r = 0,10 | r2 = 0,01 = 1% |
+| r = 0,20 | r2 = 0,04 = 4% |
+| r = 0,30 | r2 = 0,09 = 9% |
+| r = 0,40 | r2 = 0,16 = 16% |
+| r = 0,50 | r2 = 0,25 = 25% |
+| r = 0,60 | r2 = 0,36 = 36% |
+| r = 0,70 | r2 = 0,49 = 49% |
+| r = 0,80 | r2 = 0,64 = 64% |
+| r = 0,90 | r2 = 0,81 = 81% |
+| r = 1,00 | r2 = 10,0 = 100% |
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+CORRELAÇÃO PARAMÉTRICA VS NÃO-PARAMÉTRICA
+
+Karl Pearson
+
+(1857-1936)
+
+Charles Spearman (1863-1945)
+
+Correlação de Pearson vs.
+
+Correlação de Spearman Correlação Kendall Tau-*b*
+
+Maurice Kendall
+
+(1907-1983)
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+CORRELAÇÃO PARAMÉTRICA VS NÃO-PARAMÉTRICA
+
+
+| Correlação de Pearson | Correlação de Spearman
+Kendall (Tau) |
+| --- | --- |
+| Paramétrica | Não–paramétrica |
+| Quando usar |  |
+| Quando os dados têm distribuição normal | Quando os dados não tem distribuição normal |
+| Quando o número de participantes é alto | Útil também quando o número de participantes é baixo |
+| Medida escalar/intervalar | Medida ordinal |
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+**VAMOS**** ****À**** ****PRÁTICA?**
+
+**HIPÓTESE**:
+
+  - Os valores de resistência à tração e do módulo de Young apresentam associação significativa em fibras de geotêxteis produzidos com fibras naturais de Taboa quando expostos a degradação natural.
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+Tabela de Correlação
+
+
+|  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Variável |  | Deformação | Rigidez Secante | Módulo Yong |  | Máxima Carga |  | Resistencia tração |  |
+| Deformação | r de Pearson | — |  |  |  |  |  |  |  |
+| Rigidez Secante | r de Pearson | 0.194 | — |  |  |  |  |  |  |
+| Módulo Yong | r de Pearson | -0.275 * | 0.415 *** | — |  |  |  |  |  |
+| Máxima Carga | r de Pearson | 0.410 *** | 0.809 *** | 0.308 ** |  | — |  |  |  |
+| Resistencia tração | r de Pearson | 0.410 *** | 0.809 *** | 0.308 ** |  | 1.000 *** |  | — |  |
+|  |  |  |  |  |  |  |  |  |  |
+| * p < .05, ** p < .01, *** p < .001, n.s = Não significativo |  |  |  |  |  |  |  |  |  |
+
+
+---
+
+## {.smaller-text}
+
+TÓPICOS ESPECIAIS DE CORRELAÇÃO
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIFERENÇAS NOS NÍVEIS DE CORRELAÇÃO
+
+Muitas vezes, quando realizamos análises de correlação, queremos entender, do
+
+nosso conjunto de variáveis, quais são as que mais fortemente se correlacionam.
+
+Os efeitos da deformação da fibra apresentaram associação positiva e significativa com a resistência à tração (r = 0,410; p < 0,001) e significativa e negativa para o Módulo Yong (r = -0,275; p < 0,05), sendo o primeiro mais fortemente correlacionado.
+
+Forma de meia verdade!
+
+
+|  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Variável | Deformação | Rigidez Secante | Módulo Yong |  | Máxima Carga |  | Resistencia tração |  |
+| Deformação | — |  |  |  |  |  |  |  |
+| Rigidez Secante | 0.194 | — |  |  |  |  |  |  |
+| Módulo Yong | -0.275 * | 0.415 *** | — |  |  |  |  |  |
+| Máxima Carga | 0.410 *** | 0.809 *** | 0.308 ** |  | — |  |  |  |
+| Resistencia tração | 0.410 *** | 0.809 *** | 0.308 ** |  | 1.000 *** |  | — |  |
+|  |  |  |  |  |  |  |  |  |
+| * p < .05, ** p < .01, *** p < .001, n.s = Não significativo |  |  |  |  |  |  |  |  |
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIFERENÇAS NOS NÍVEIS DE CORRELAÇÃO
+
+Muitas vezes, quando realizamos análises de correlação, queremos entender, do
+
+nosso conjunto de variáveis, quais são as que mais fortemente se correlacionam.
+
+Fisher´s r-to-z transformation test
+
+http://psychometrica.de/correlation.htm
+
+
+|  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Variável | Deformação | Rigidez Secante | Módulo Yong |  | Máxima Carga |  | Resistencia tração |  |
+| Deformação | — |  |  |  |  |  |  |  |
+| Rigidez Secante | 0.194 | — |  |  |  |  |  |  |
+| Módulo Yong | -0.275 * | 0.415 *** | — |  |  |  |  |  |
+| Máxima Carga | 0.410 *** | 0.809 *** | 0.308 ** |  | — |  |  |  |
+| Resistencia tração | 0.410 *** | 0.809 *** | 0.308 ** |  | 1.000 *** |  | — |  |
+|  |  |  |  |  |  |  |  |  |
+| * p < .05, ** p < .01, *** p < .001, n.s = Não significativo |  |  |  |  |  |  |  |  |
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIFERENÇAS NOS NÍVEIS DE CORRELAÇÃO
+
+Muitas vezes, quando realizamos análises de correlação, queremos entender, do
+
+nosso conjunto de variáveis, quais são as que mais fortemente se correlacionam.
+
+A análise de correlação indicou que a deformação das fibras apresentou correlação positiva e significativa com a resistência à tração (r = 0,410; p < 0,001), bem como correlação negativa e significativa com o módulo de Young (r = –0,275; p < 0,05). No entanto, dados de  r-to-z de Fisher quanto a comparação entre os coeficientes de correlação não revelou diferença estatisticamente significativa entre essas associações (z = –2,885; p = 0,149).
+
+
+|  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Variável | Deformação | Rigidez Secante | Módulo Yong |  | Máxima Carga |  | Resistencia tração |  |
+| Deformação | — |  |  |  |  |  |  |  |
+| Rigidez Secante | 0.194 | — |  |  |  |  |  |  |
+| Módulo Yong | -0.275 * | 0.415 *** | — |  |  |  |  |  |
+| Máxima Carga | 0.410 *** | 0.809 *** | 0.308 ** |  | — |  |  |  |
+| Resistencia tração | 0.410 *** | 0.809 *** | 0.308 ** |  | 1.000 *** |  | — |  |
+|  |  |  |  |  |  |  |  |  |
+| * p < .05, ** p < .01, *** p < .001, n.s = Não significativo |  |  |  |  |  |  |  |  |
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+TIPO	ESPECIAL	DE	CORRELAÇÃO	(**PONTO**
+
+**BISSERIAL)**
+
+Utilizada  quando  se  pretende  avaliar  a  relação entre uma variável ordinal (ou escalar, ex: altura) com outra variável dicotômica (ex: sexo – masculino e feminino).
+
+Serve  como  um  indício  para  saber  se  existem diferenças nos escores dos grupos em relação à variável de interesse.
+
+Diferença do teste t (teste de média)
+
+Resistência a punção
+
+Sem Resina
+
+Com Resina
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+**CORRELAÇÃO**** ****NÃO**** ****É**** ****CAUSALIDADE**
+
+Correlação não é sinônimo de causalidade
+
+A correlação entre duas variáveis pode ser causada por uma terceira variável oculta;
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+**CORRELAÇÃO**** ****NÃO**** ****É**** ****CAUSALIDADE**
+
+Spurious Correlations
+
+Ir à praia
+
+Tomar
+
+sorvete
+
+TEMPERA TURA
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+**CORRELAÇÃO**** ****NÃO**** ****É**** ****CAUSALIDADE**
+
+É possível encontrar uma correlação completamente espúria entre duas variáveis.
+
+Spurious Correlations
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+CORRELAÇÃO	(PARCIAL)
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+CORRELAÇÃO PARCIAL
+
+Felicidade e Sentido de vida
+
+  - r = 0,518 r2 = 0,268; 26,8%
+  - Felicidade e Sentido de vida (controlado por otimismo)
+  - r = 0,362 r2 = 0,131; 13,10%
+
+---
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::
+

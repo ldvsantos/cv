@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Luiz Diego Vidal Santos">
+
+<title>aula22_analise_fatorial</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="aula22_analise_fatorial_files/libs/clipboard/clipboard.min.js"></script>
+<script src="aula22_analise_fatorial_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="aula22_analise_fatorial_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="aula22_analise_fatorial_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="aula22_analise_fatorial_files/libs/quarto-html/popper.min.js"></script>
+<script src="aula22_analise_fatorial_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="aula22_analise_fatorial_files/libs/quarto-html/anchor.min.js"></script>
+<link href="aula22_analise_fatorial_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="aula22_analise_fatorial_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="aula22_analise_fatorial_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="aula22_analise_fatorial_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="aula22_analise_fatorial_files/libs/bootstrap/bootstrap-9e3ffae467580fdb927a41352e75a2e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Análise Fatorial Exploratória</h1>
+<p class="subtitle lead">AFE - Fundamentos e Aplicações<br>Análise de Dados Ambientais</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Luiz Diego Vidal Santos </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Universidade Estadual de Feira de Santana (UEFS)
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="análise-fatorial-exploratória" class="level1">
+<h1><span class="section-header">ANÁLISE FATORIAL EXPLORATÓRIA</span></h1>
+<hr>
+<section id="section" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p>O QUE É</p>
+<ul>
+<li><p>A análise fatorial exploratória (AFE) é um conjunto de técnicas estatísticas amplamente utilizadas nas pesquisas em Psicologia</p></li>
+<li><p>Durante sua execução, diversas decisões precisam ser tomadas a fim de se obter uma estrutura fatorial adequada</p></li>
+<li><p>Diferenças entre análise fatorial exploratória e análise de componentes principais</p></li>
+<li><p>Retenção e rotação fatorial</p></li>
+<li><p>Tamanho da amostra ideal</p></li>
+<li><p>Variância explicada</p></li>
+<li><p>Confiabilidade da solução fatorial</p></li>
+</ul>
+<hr>
+</section>
+<section id="section-1" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-1"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p>O QUE VOCÊ PRECISA ENTENDER</p>
+<ul>
+<li>A análise fatorial exploratória (AFE) não para de evoluir</li>
+<li>O SPSS tem péssimas opções</li>
+<li>Utilizaremos o software FACTOR (Urbano &amp; Lorenzo-Seva)</li>
+</ul>
+<hr>
+</section>
+<section id="section-2" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-2"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p>Objetivo da AFE</p>
+<ul>
+<li>Define-se AFE como um conjunto de técnicas multivariadas que tem como objetivo encontrar a estrutura subjacente em uma matriz de dados e determinar o número e a natureza das variáveis latentes (fatores) que melhor representam um conjunto de variáveis observadas (Brown, 2006).</li>
+</ul>
+<hr>
+</section>
+<section id="section-3" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-3"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p>Objetivo da AFE</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Eu me sinto exausto só de pensar em trabalhar</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Não tenho tido paciência para lidar com as pessoas no meu trabalho</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Sinto que meu trabalho não tem valor</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>Cada dia de trabalho parece uma tortura pra mim</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Tenho me tornado frio com as pessoas as quais preciso lidar no meu trabalho</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>Meu trabalho me realiza</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Após um dia de trabalho, não tenho ânimo para mais nada</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>Por vezes, chego a sentir raiva das pessoas do meu trabalho</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Meu trabalho complementa positivamente a minha vida</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="section-4" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-4"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p>Objetivo da AFE</p>
+<ul>
+<li><p>Define-se AFE como um conjunto de técnicas multivariadas que tem como objetivo encontrar a estrutura subjacente em uma matriz de dados e determinar o número e a natureza das variáveis latentes (fatores) que melhor representam um conjunto de variáveis observadas (Brown, 2006).</p></li>
+<li><p>As variáveis observadas “pertencem” a um mesmo fator quando, e se, elas partilham uma variância em comum (i.e., são influenciadas pelo mesmo construto subjacente) (Brown, 2006).</p></li>
+<li><p>Fator é uma variável latente (e.g., autoestima) que influencia mais de uma variável observada</p>
+<ul>
+<li>‘Estou satisfeito comigo’</li>
+<li>‘Tenho boas qualidades’</li>
+<li>‘Sou uma pessoa de valor’</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="section-5" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-5"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p>Objetivo da AFE</p>
+<ul>
+<li>A AFE é geralmente conduzida quando:</li>
+<li><ol type="1">
+<li>O pesquisador não possui uma teoria prévia subjacente ou evidências empíricas suficientes que explicitem como os itens de determinado instrumento devem ser agrupados e avaliados;</li>
+</ol></li>
+<li><ol start="2" type="1">
+<li>Quando o pesquisador quer confirmar ou refutar a estrutura fatorial de determinado instrumento (Brown, 2006).</li>
+</ol></li>
+</ul>
+<hr>
+</section>
+<section id="section-6" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-6"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>Análises</strong>** Fatoriais**** ****Exploratórias**** ****vs**** ****Análise**** ****de**** ****Componentes**** ****Principais**</p>
+<ul>
+<li><p>A AFE e a ACP são duas técnicas que têm por objetivo reduzir um determinado número de itens a um menor número de variáveis</p></li>
+<li><p>A ACP foi por muito tempo o método de redução de dados mais utilizado nas pesquisas em Psicologia</p></li>
+<li><p>Cálculos computacionais da ACP mais simples, mais rápidos e mais baratos → Amplo uso</p></li>
+<li><p>ACP é, ainda hoje, o método padrão de redução de dados em muitos dos principais programas estatísticos (por exemplo, SPSS e SAS)</p></li>
+</ul>
+<hr>
+</section>
+<section id="exploratória" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="exploratória">EXPLORATÓRIA</h2>
+<p>ANÁLISE FATORIAL</p>
+<hr>
+</section>
+<section id="section-7" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-7"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>Análises</strong>** Fatoriais**** ****Exploratórias**** ****vs**** ****Análise**** ****de**** ****Componentes**** ****Principais**</p>
+<ul>
+<li><p>AFEs geram fatores</p></li>
+<li><p>ACPs geram componentes</p></li>
+<li><p>A diferença entre componentes e fatores está relacionada à forma como os itens são retidos.</p></li>
+<li><p>Ambos os métodos de redução de dados assumem que a variância de uma variável é composta por três aspectos: variância específica; variância comum; e variância de erro.</p></li>
+</ul>
+<hr>
+</section>
+<section id="section-8" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-8"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p>Retirado de Damásio (2012).</p>
+<p><strong>específica:</strong></p>
+<p><strong>Análises</strong>** Fatoriais**** ****Exploratórias**** ****vs**** ****Análise**** ****de**** ****Componentes**** ****Principais**</p>
+<p><strong>Variância</strong></p>
+<p>variância</p>
+<p>Porção de</p>
+<p>é</p>
+<p>do item que não com</p>
+<p>nenhuma</p>
+<p>outra</p>
+<p>compartilhada variável.</p>
+<p><strong>Variância</strong>** ****comum:**** **Variância que é compartilhada entre todos os itens que</p>
+<p>determinado fator ou</p>
+<p>compõem componente.</p>
+<p><strong>Variância</strong>** ****de**** ****erro:**** **Parcela do item não explicada pelo componente ou fator</p>
+<hr>
+</section>
+<section id="section-9" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-9"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>Análises</strong>** Fatoriais**** ****Exploratórias**** ****vs**** ****Análise**** ****de**** ****Componentes**** ****Principais**</p>
+<ul>
+<li>A ACP está baseada apenas na correlação linear das variáveis observadas, e não diferencia a variância comum da variância específica entre os itens, incluindo ambos os tipos de variância (comum e específica (na Figura 1, Ai + B) na análise dos dados.</li>
+</ul>
+<hr>
+</section>
+<section id="section-10" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-10"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>Análises</strong>** Fatoriais**** ****Exploratórias**** ****vs**** ****Análise**** ****de**** ****Componentes**** ****Principais**</p>
+<p>Compo-</p>
+<p>nente</p>
+<p><em>x</em>1</p>
+<p><em>x</em>2</p>
+<p><em>x</em>3</p>
+<p><em>x</em>4</p>
+<p><em>Os<strong> </strong>indicadores<strong> </strong>que<strong> </strong>criam<strong> </strong>o(s)<strong> </strong>componente(s)</em></p>
+<p><em>Exemplos:</em></p>
+<p>Nível socioeconômico</p>
+<p>Escolaridade</p>
+<p>Renda</p>
+<p>Bens materiais</p>
+<p>Emprego (Classificação ISEI)</p>
+<p>Qualidade de um supermercado</p>
+<p>Preços</p>
+<p>Atendimento dos funcionários</p>
+<p>Espaço físico</p>
+<p>Estacionamento</p>
+<p>Segurança da região</p>
+<p>Variedade de produtos (…)</p>
+<p>Modelo Formativo</p>
+<hr>
+</section>
+<section id="section-11" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-11"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>Análises</strong>** Fatoriais**** ****Exploratórias**** ****vs**** ****Análise**** ****de**** ****Componentes**** ****Principais**</p>
+<p>Fator</p>
+<p>Modelo Reflexivo</p>
+<p><em>x</em>1</p>
+<p><em>x</em>2</p>
+<p><em>x</em>3</p>
+<p><em>x</em>4</p>
+<p>Depressão</p>
+<p><em>O<strong> </strong>traço<strong> </strong>latente<strong> </strong>que<strong> </strong>gera<strong> </strong>o<strong> </strong>comportamento</em></p>
+<p>Tristeza Frequente</p>
+<p>Falta de sentido na vida</p>
+<p>Choro constante</p>
+<p>Apatia</p>
+<p>Problemas de sono</p>
+<p>Problemas de alimentação</p>
+<p>Baixa Autoestima</p>
+<p>Ideação suicida</p>
+<hr>
+</section>
+<section id="section-12" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-12"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>Análises</strong>** Fatoriais**** ****Exploratórias**** ****vs**** ****Análise**** ****de**** ****Componentes**** ****Principais**</p>
+<p>*Exemplos:** *Depressão</p>
+<p>Tristeza Frequente Baixa Autoestima</p>
+<p>Falta de sentido na vida Problemas de alimentação</p>
+<p>Apatia</p>
+<p>Problemas de sono Choro constante Ideação suicida</p>
+<hr>
+</section>
+<section id="section-13" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-13"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>Análises</strong>** Fatoriais**** ****Exploratórias**** ****vs**** ****Análise**** ****de**** ****Componentes**** ****Principais**</p>
+<p>Fator</p>
+<p>Modelo Reflexivo</p>
+<p><em>x</em>1</p>
+<p><em>x</em>2</p>
+<p><em>x</em>3</p>
+<p><em>x</em>4</p>
+<p><em>O<strong> </strong>traço<strong> </strong>latente<strong> </strong>que<strong> </strong>gera<strong> </strong>o<strong> </strong>comportamento</em></p>
+<p>Depressão</p>
+<p>Tristeza Frequente</p>
+<p>Falta de sentido na vida</p>
+<p>Choro constante</p>
+<p>Apatia</p>
+<p>Problemas de sono</p>
+<p>Problemas de alimentação</p>
+<p>Baixa Autoestima</p>
+<p>Ideação suicida</p>
+<hr>
+</section>
+<section id="section-14" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-14"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>Análises</strong>** Fatoriais**** ****Exploratórias**** ****vs**** ****Análise**** ****de**** ****Componentes**** ****Principais**</p>
+<p>Compo</p>
+<ul>
+<li>nente <em>x</em>1</li>
+</ul>
+<p><em>x</em>2</p>
+<p><em>x</em>3</p>
+<p><em>x</em>4</p>
+<p>Componentes Principais Modelo Formativo</p>
+<p>Fator / Traço Latente</p>
+<p><em>x</em>1</p>
+<p><em>x</em>2</p>
+<p><em>x</em>3</p>
+<p><em>x</em>4</p>
+<p>Análise Fatorial Modelo Reflexivo</p>
+<hr>
+</section>
+<section id="section-15" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-15"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>Análises</strong>** Fatoriais**** ****Exploratórias**** ****vs**** ****Análise**** ****de**** ****Componentes**** ****Principais**</p>
+<p>Em termos práticos…</p>
+<ul>
+<li>São duas técnicas com racionais teóricos subjacentes completamente distintos, embora seja similar apenas em seu objetivo: reduzir um número maior de indicadores a um número menor de variáveis (componentes ou fatores)</li>
+<li>A ACP tende a gerar maior carga componencial dos itens, quando comparado com a AF, porque mais fontes de variância são adicionadas</li>
+<li>É muito difícil conceber modelos formativos (componentes) na Psicologia. Mas em outras áreas (administração, economia, etc.) é totalmente plausível.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="fatorabilidade-da-matriz" class="level1">
+<h1><span class="section-header">FATORABILIDADE DA MATRIZ</span></h1>
+<hr>
+<section id="section-16" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-16"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>Kaiser</strong>** ****Meyer-****Olkmin**** ****(KMO)**</p>
+<ul>
+<li><p>Índice de adequação da amostra</p></li>
+<li><p>Avalia se a matriz de dados é passível de fatoração</p></li>
+<li><p>Sugere a proporção de variância dos itens que pode estar sendo explicada por uma variável latente (Lorenzo-Seva, Timmerman, &amp; Kiers, 2011).</p></li>
+<li><p>Valores variam de 0 a 1.</p>
+<ul>
+<li>&lt; 0,5 são considerados inaceitáveis;</li>
+<li><blockquote class="blockquote">
+<p>0,5 e &lt; 0,7 são considerados medíocres;</p>
+</blockquote></li>
+<li><blockquote class="blockquote">
+<p>0,7 e &lt; 0,8 são considerados bons;</p>
+</blockquote></li>
+<li><blockquote class="blockquote">
+<p>0,8 e 0,9 são considerados ótimos e excelentes. (Hutcheson &amp; Sofroniou, 1999)</p>
+</blockquote></li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="section-17" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-17"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>Teste</strong>** ****de**** ****esfericidade**** ****de ****Barlett**</p>
+<p>Avalia em que medida a matriz de (co)variância é similar a uma matriz-identidade (i.e., os elementos da diagonal principal tem valor igual a um, e os demais elementos da matriz são aproximadamente zero, ou seja, não apresentam correlações entre si, Field, 2005).</p>
+<p>Valores do teste de esfericidade de Bartlett com níveis de significância *p** *&lt; 0,05</p>
+<p>indicam que a matriz é fatorável (Tabachnick &amp; Fidell, 2007),</p>
+<hr>
+</section>
+</section>
+<section id="retenção-fatorial" class="level1">
+<h1><span class="section-header">RETENÇÃO FATORIAL</span></h1>
+<hr>
+<section id="section-18" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-18"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>Retenção</strong>** ****Fatorial**</p>
+<p>Uma das mais importantes decisões a ser tomada</p>
+<p>Uma extração inadequada impossibilita a interpretação dos resultados de maneira apropriada</p>
+<p>(Hayton, Allen &amp; Scarpello, 2004).</p>
+<ol type="1">
+<li>Superestimação de fatores</li>
+</ol>
+<ul>
+<li>Resultados não-parcimoniosos, baseados em construtos supérfluos, com reduzido ou inadequado poder explicativo (Patil e cols., 2008)</li>
+</ul>
+<ol start="2" type="1">
+<li>Subestimação de fatores</li>
+</ol>
+<ul>
+<li>Subestimação de fatores retidos resulta em perda significativa de informação (Franklin, Gibson, Robertson, Pohlmann &amp; Fralish, 1995)</li>
+</ul>
+<hr>
+</section>
+<section id="section-19" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-19"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>Retenção</strong>** ****Fatorial**</p>
+<p>Péssimos métodos de retenção fatorial</p>
+<ul>
+<li><p>*Eigenvalue** *&gt; 1 Ótimos métodos de retenção</p></li>
+<li><p>Análise Paralela</p></li>
+<li><p>Método Hull</p></li>
+<li><p>BIC</p></li>
+</ul>
+<hr>
+</section>
+<section id="section-20" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-20"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>Eigenvalue</strong>** ****&gt;**** ****1**</p>
+<p>Possivelmente um dos critérios mais utilizados até os dias atuais</p>
+<ul>
+<li><p>Cada fator retido apresenta um eigenvalue que se relaciona ao total de variância explicada por este fator</p></li>
+<li><p>A soma total dos eigenvalues é sempre igual ao número de itens utilizados na análise (utilizando uma escala de 29 itens, a soma dos 29 eigenvalues é igual a 29)</p></li>
+<li><p>Fator com eigenvalue &lt; 1 apresenta um total de variância explicada menor do que um único item.</p>
+<ul>
+<li>Apenas fatores com eigenvalue &gt; 1 são retidos (Floyd &amp; Widaman, 1995).</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="section-21" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-21"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>Eigenvalue</strong>** ****&gt;**** ****1**</p>
+<p>Apesar da simplicidade, da objetividade e do amplo uso desse critério, há forte consenso na literatura de</p>
+<p>que seus resultados são imprecisos</p>
+<p>(Costello &amp; Osbourne, 2005; Floyd &amp; Widaman; 1995; Patil e cols., 2008; Reise, Waller &amp;Comrey, 2000).</p>
+<p>Critério do eigenvalue &gt; 1 superestimou em 36% dos casos o número de fatores retidos.</p>
+<p>(Costello &amp; Osborne, 2005)</p>
+<p>O critério do eigenvalue &gt; 1 tende a superestimar o número de fatores a ser retido devido ao erro amostral</p>
+<p>(Laher, 2010; Ledesma &amp; ValeroMora, 2007).</p>
+<p>O critério de Kaiser-Guttman como método de retenção fatorial não é recomendado</p>
+<p>(Patil e cols., 2008; Velicer e cols., 2000).</p>
+<hr>
+</section>
+<section id="section-22" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-22"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>Análise</strong>** ****Paralela**</p>
+<p>A AP é um procedimento estatístico de simulação Monte-Carlo que compara os eigenvalues dos dados originais, com eigenvalues gerados por matrizes aleatórias construídas no processo de simulação.</p>
+<p>A base aleatória possui:</p>
+<ul>
+<li>mesma dimensionalidade</li>
+<li>o mesmo número p de variáveis</li>
+<li>O mesmo número n de sujeitos do conjunto de dados reais (Laros, 2004)</li>
+</ul>
+<p>John Horn</p>
+<p>(1928 - 2006)</p>
+<hr>
+</section>
+<section id="section-23" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-23"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>Análise</strong>** ****Paralela**</p>
+<p>Implementação Clássica (Horn, 1965)</p>
+<ul>
+<li><p>Baseada em Eigenvalues</p></li>
+<li><p>Simulação Monte-Carlo Implementação Otimizada (Timmerman &amp; Lorenzo-Seva, 2011)</p></li>
+<li><p>Baseada em variância explicada dos fatores</p></li>
+<li><p>Permutação aleatória dos valores amostrais (Bootstrapping)</p></li>
+</ul>
+<hr>
+</section>
+<section id="section-24" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-24"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>Análise</strong>** ****Paralela**</p>
+<ul>
+<li><p>Os resultados das matrizes aleatórias são contrastados com os dados originais e passa-se a reter apenas os fatores dos dados originais que sejam ‘mais fortes’ que dos dados aleatórios</p>
+<ul>
+<li>Maiores eigenvalues (Método tradicional</li>
+<li>Maior variância explicada (Método da permutação)</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="retenção-fatorial-cont." class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="retenção-fatorial-cont.">RETENÇÃO FATORIAL (cont.)</h2>
+<p>MÉTODO HULL</p>
+<hr>
+</section>
+<section id="section-25" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-25"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>Método</strong>** ****Hull**</p>
+<p>Tem apresentado grande potencial enquanto método de retenção fatorial.</p>
+<p>Determina a amplitude de fatores a serem avaliados (Análise Paralela);</p>
+<p>Avalia os índices de adequação de ajuste de todas as soluções fatoriais, bem como os graus de liberdade</p>
+<p>de cada um dos modelos.</p>
+<ul>
+<li>Os valores de adequação de ajuste podem ser obtidos por meio de diferentes índices (CFI e CAF); Fórmula matemática pondera a relação entre o índice de adequação de ajuste e os graus de liberdade de um modelo, em comparação com um modelo prévio, informando o modelo mais adequado</li>
+</ul>
+<p>(Ceuleman &amp; Kiers, 2006; Ceulemans, Timmerman &amp; Kiers, 2010; Lorenzo-Seva e cols., 2011).</p>
+<hr>
+</section>
+<section id="retenção-fatorial-cont.-1" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="retenção-fatorial-cont.-1">RETENÇÃO FATORIAL (cont.)</h2>
+<p>MÉTODO BIC DIMENSIONALITY TEST</p>
+<hr>
+</section>
+<section id="section-26" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-26"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>BIC</strong></p>
+<p>Schwarz´s Bayesian Information Criterion (BIC; Schwarz, 1978).</p>
+<ul>
+<li><p>Índice de ajuste desenvolvido especificamente para escolha de modelos (model selection framework)</p></li>
+<li><p>Busca avaliar o modelo mais próximo à estrutura verdadeira *(quasi-true** *model; Kullback-Leibler information; )</p></li>
+<li><p>Foco em modelos parcimoniosos</p></li>
+<li><p>Estrutura com menor valor de BIC é selecionada</p></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="rotação-fatorial" class="level1">
+<h1><span class="section-header">ROTAÇÃO FATORIAL</span></h1>
+<hr>
+<section id="section-27" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-27"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>ROTAÇÃO</strong>** ****DE**** FATORES**</p>
+<ul>
+<li>As rotações fatoriais têm o objetivo de facilitar a interpretação dos fatores, visto que muitas vezes as variáveis analisadas apresentam cargas fatoriais elevadas em mais de um fator.</li>
+<li>As rotações fatoriais podem ser de duas ordens:
+<ul>
+<li>Ortogonais e Oblíquas</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="section-28" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-28"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>ROTAÇÃO</strong>** ****ORTOGONAL**</p>
+<ul>
+<li><p>Assumem que os fatores extraídos são independentes uns dos outros (i.e, não apresentam correlações entre si; *r** *= 0).</p>
+<ul>
+<li>Ex: Varimax</li>
+<li>Fatores totalmente independentes uns dos outros.</li>
+<li>Pressuposto raramente obtido nas pesquisas das ciências humanas e da saúde.</li>
+<li>Aspectos humanos e sociais (comportamentos; sintomas; entre outros) raramente são divididos em unidades que funcionam independentes umas das outras</li>
+<li>Métodos ortogonais, em geral, resultam em perda de confiabilidade se os fatores forem correlacionados</li>
+<li>Tendem à superestimação de variância explicada, visto que possíveis interseções entre os diferentes fatores não são consideradas.</li>
+</ul></li>
+</ul>
+<p>(Schmitt &amp; Sass, 2011).</p>
+<hr>
+</section>
+<section id="section-29" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-29"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>ROTAÇÃO</strong>** ****OBLÍQUA**</p>
+<ul>
+<li>Permitem que os fatores se correlacionem entre si
+<ul>
+<li>Ex: Oblimin</li>
+<li>Não delimitam a interação entre os fatores <em>a<strong> </strong>priori</em>.</li>
+<li>Se os fatores não forem correlacionados entre si, os resultados obtidos mediante as rotações oblíquas serão bastante semelhantes aos que seriam obtidos por meio das rotações ortogonais (Fabrigar e colaboradores, 1999; Sass &amp; Schmitt, 2010).</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="tamanho-amostral" class="level1">
+<h1><span class="section-header">TAMANHO AMOSTRAL</span></h1>
+<hr>
+<section id="section-30" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-30"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>A</strong>specto de divergência de opiniões e controvérsias na literatura científica, principalmente no que diz respeito ao número mínimo de sujeitos necessários.</p>
+<p>Gorsuch (1983) e Hair et al.&nbsp;(2005)</p>
+<ul>
+<li><p>*N** *&gt; 100 sujeitos e um número mínimo de cinco respondentes por item. Cattell (1978)</p></li>
+<li><p>N &lt; 250, 3 a 6 respondentes por item Everitt (1975)</p></li>
+<li><p>10 respostas para cada item avaliado Não houve experimentos de simulação que corroborassem ou refutassem estas informações</p></li>
+</ul>
+<p>(MacCallum, Widaman, Zhang, &amp; Hong, 1999)</p>
+<hr>
+</section>
+<section id="section-31" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-31"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>O</strong>** ****que**** se**** ****sabe**** ****hoje:**</p>
+<p>Amostras grandes tende a fornecer resultados mais precisos, diminuindo o efeito do erro amostral</p>
+<p>Fornecem resultados mais próximos ao índice populacional, tanto no que se refere à estrutura fatorial, quanto à carga fatorial e à comunalidade dos itens</p>
+<p>(MacCallum e colaboradores, 1999).</p>
+<p>Porém, em relação ao <strong>tamanho</strong>** ****mínimo**…</p>
+<p>Barrett e Kline (1981) demonstraram que soluções fatoriais estáveis foram encontradas com um número variando de 1,2 a 3 respondentes por item</p>
+<p>Resultados semelhantes foram encontrados por MacCallum e colaboradores (1999).</p>
+<p>O que está por trás é mais a qualidade do instrumento do que o N</p>
+<hr>
+</section>
+<section id="section-32" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-32"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p>O grau em que um fator é claramente representado por um número suficiente de itens e pela qualidade (nível) das suas cargas fatoriais e comunalidades.</p>
+<ul>
+<li>Se um fator é representado por um bom número de itens (tipicamente quatro ou mais)</li>
+<li>Se estes itens tendem a ser fortemente explicados pelo fator (i.e., apresentam cargas fatoriais elevadas, &gt; 0,60) Número de respondentes tende a ser menos importante na obtenção de uma boa estrutura fatorial</li>
+</ul>
+<hr>
+</section>
+<section id="section-33" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-33"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<hr>
+</section>
+</section>
+<section id="variância-explicada" class="level1">
+<h1><span class="section-header">VARIÂNCIA EXPLICADA</span></h1>
+<hr>
+<section id="section-34" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-34"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p>m construto hipotético</p>
+<p><strong>VARIÂNCIA</strong>** ****EXPLICADA**</p>
+<ul>
+<li>Tópico com certa lacuna na li</li>
+<li>O que é uma variância explica</li>
+<li>Nenhum instrumento será ca
+<ul>
+<li>Se não chega a 100%, como se teratura</li>
+</ul></li>
+</ul>
+<p>da alta? O que é baixa?</p>
+<p>paz de estimar 100% da variância de u</p>
+<p>interpreta o número?</p>
+<p>(Peterson, 2000)</p>
+<hr>
+</section>
+</section>
+<section id="fidedignidade" class="level1">
+<h1><span class="section-header">FIDEDIGNIDADE</span></h1>
+<hr>
+<section id="section-35" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-35"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>FIDEDIGNIDADE</strong>** (**Confiabilidade, Precisão, Consistência interna)</p>
+<ul>
+<li>Forma de avaliar o quanto os itens estão agrupados entre si</li>
+</ul>
+<hr>
+</section>
+<section id="section-36" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-36"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>FIDEDIGNIDADE</strong>** (**Confiabilidade, Precisão, Consistência interna)</p>
+<ul>
+<li><p>Quanto mais próximo for o padrão de respostas dos itens de um determinado fator, maior será a fidedignidade.</p></li>
+<li><p>Fidedignidade não garante validade “Os escores do teste podem ser relativamente livres de erros de mensuração, e ainda assim, não serem úteis como base para as inferências que precisamos fazer”</p></li>
+</ul>
+<p>(Urbina, 2007, p.&nbsp;159)</p>
+<p>Validade</p>
+<p>Fidedignidade</p>
+<hr>
+</section>
+<section id="section-37" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-37"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>Coeficiente</strong>** ****Alpha**** ****(Cronbach,**** ****1951)**</p>
+<p>O coeficiente alfa de Cronbach é uma forma de estimar a confiabilidade de um questionário aplicado em uma pesquisa.</p>
+<p>Mede a correlação entre respostas em um questionário, apresentando uma estimativa de</p>
+<p>correlação média entre as perguntas.</p>
+<hr>
+</section>
+<section id="section-38" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-38"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>Coeficiente</strong>** ****Alpha**** ****(Cronbach,**** ****1951)**</p>
+<p>Pressuposto da tau-equivalência: todos os itens tem a mesma importância para o fator (Sijstma, 2009)</p>
+<p>Coeficiente alpha puxa a fidedignidade para baixo (Green &amp; Yang, 2009)</p>
+<p>Alternativas</p>
+<ul>
+<li>Estimativas que considerem a importância relativa do item</li>
+<li><strong>Fidedignidade</strong>** ****Composta**</li>
+<li><strong>Fidedignidade</strong>** ****Ômega**** ****(McDonald,**** ****1999)**</li>
+</ul>
+<hr>
+</section>
+<section id="section-39" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-39"></h2>
+<p>ANÁLISE FATORIAL EXPLORATÓRIA</p>
+<p><strong>VAMOS</strong>** ****A**** ****PRÁTICA**</p>
+<p><strong>Na</strong>** ****descrição**** ****da**** ****aula**** ****você**** ****encontra**</p>
+<ul>
+<li><strong>SOFTWARE</strong>** ****FACTOR**</li>
+<li><strong>BANCO</strong>** ****DE**** ****DADOS**</li>
+</ul>
+<hr>
+</section>
+<section id="section-40" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section-40"></h2>
+<p>REFERÊNCIAS</p>
+<p>Claeskens G, Hjort NL. Model Selection and Model Averaging. Cambridge: University Press; 2008</p>
+<p>Green S. B., Yang Y. (2009a). Commentary on coefficient alpha: a cautionary tale. Psychometrika 74, 121–135. 10.1007/s11336-008-9098-4</p>
+<p>McDonald R. (1999). Test Theory: a Unified Treatment. Mahwah, NJ: Lawrence Erlbaum Associates.</p>
+<p>Neath, A. A., &amp; Cavanaugh, J. E. (2011). The Bayesian information criterion: background, derivation, and applications. Wiley Interdisciplinary Reviews: Computational Statistics, 4(2), 199–203. doi:10.1002/wics.199</p>
+<p>Raykov T. (1997). Scale reliability, cronbach’s coefficient alpha, and violations of essential tau- equivalence with fixed congeneric</p>
+<p>components. Multivariate Behavioral Research, 32, 329–353. doi:10.1207/s15327906mbr3204_2</p>
+<p>Schwarz G. (1978). Estimating the dimension of a model. Annual Statistics, 6, 461–464.</p>
+<p>Sijtsma K. (2009). On the use, the misuse, and the very limited usefulness of Cronbach’s alpha. Psychometrika 74, 107–120. 10.1007/s11336- 008-9101-0</p>
+<p>Timmerman, M. E., &amp; Lorenzo-Seva, U. (2011). Dimensionality assessment of ordered polytomous items with parallel analysis. Psychological</p>
+<p>Methods, 16(2), 209-220. doi:https://dx.doi. org/10.1037/a0023353</p>
+<hr>
+</section>
+</section>
+<section id="section-41" class="level1" data-background-color="#034EA2">
+<h1 data-background-color="#034EA2"></h1>
+<p><span class="obrigado-fit-text" style="color: white;">Obrigado!</span></p>
+<div style="text-align: center; color: white; font-size: 0.7em;">
+<p>Luiz Diego Vidal Santos</p>
+<p>Universidade Estadual de Feira de Santana (UEFS)</p>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

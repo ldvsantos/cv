@@ -1,0 +1,414 @@
+﻿---
+title: "ANOVA - Visão Completa"
+subtitle: "Análise de Variância Aprofundada<br>Análise de Dados Ambientais"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../assets/logo-uefs.webp
+    footer: "UEFS | Análise de Dados Ambientais | ANOVA - Visão Completa"
+    slide-number: true
+    theme: [simple, assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+# [ANOVA FATORIAL]{.section-header}
+
+---
+
+## ANOVA FATORIAL {.smaller-text}
+
+ANOVA FATORIAL
+
+
+---
+
+## {.smaller-text}
+
+ANOVA FATORIAL
+
+Níveis de resistência entre duas fibras (natural e sintética) com diferentes tipos de aditivos
+
+VD
+
+FATORES (VI)
+
+
+| Variáveis de Grupo Fatores
+VIs |  | Variável métrica/ordinal |
+| --- | --- | --- |
+| Tratamentos | Sem Resina | Resistência a tração [...] |
+|  | 1x Resina |  |
+|  | 2x Resina |  |
+| Tempos | 1ºa 180º dias |  |
+
+
+---
+
+## {.smaller-text}
+
+ANOVA	FATORIAL
+
+Níveis de resistência entre as aplicações de resina em diferentes tempos de degradação
+
+
+---
+
+## {.smaller-text}
+
+ANOVA	FATORIAL
+
+ANOVA 2X2 = 4 condições testadas
+
+ANOVA 3X2
+
+ANOVA 4X4
+
+ANOVA 4X4X2 → 32 condições testadas
+
+  - ETC...
+Por mais tentador que seja colocar muitas variáveis em uma ANOVA, lembre-se que as
+
+múltiplas comparações irão tornar a discussão dos seus resultados um caos.
+
+
+---
+
+## ANÁLISE DE COVARIÂNCIA {.smaller-text}
+
+ANCOVA
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE DE COVARIÂNCIA
+
+Análise de Covariância
+
+  - Erosão > Precipitação
+  - Quais são as outras variáveis que influência na erosão?
+    - Níveis de cobertura natural
+    - Características do solo
+    - Topografia
+    - Uso e manejo do solo
+    - Na ANCOVA, você busca controlar o efeito de variáveis intervenientes na relação
+entre a VI e a VD;
+
+
+---
+
+## {.smaller-text}
+
+ANOVA FATORIAL
+
+Análise de Covariância
+
+  - Habilidades Matemáticas (VI)
+  - Aprovação no IME (Passou ou não Passou)
+    - Covariável: Compreensão de Texto
+
+---
+
+## {.smaller-text}
+
+ANOVA FATORIAL
+
+Análise de Covariância
+
+  - Pelo menos três variáveis
+  - VI (Grupo)
+  - VD (Desfecho)
+  - Co-variável (categórica ou ordinal)
+
+---
+
+## ANÁLISE DE VARIÂNCIA {.smaller-text}
+
+MEDIDAS REPETIDAS
+
+
+---
+
+## {.smaller-text}
+
+ANOVA MEDIDAS REPETIDAS
+
+Assim como nas ANOVAS anteriores, o objetivo da ANOVA – MR continua sendo comparar médias.
+
+Entretanto, o escore a ser comparado não é entre diferentes grupos, mas sim de um único grupo comparado com si próprio.
+
+  - Condições diferentes
+  - Momentos diferentes
+
+---
+
+## {.smaller-text}
+
+ANOVA MEDIDAS REPETIDAS
+
+Mesmos repetições (Condições diferentes)
+
+
+| Taboa | Sem resina | 1x resina | 2x resina |
+| --- | --- | --- | --- |
+| Amostra 1 | 7 | 6 | 8 |
+| Amostra 2 | 4 | 9 | 9 |
+| Amostra 3 | 6 | 5 | 6 |
+| Amostra 4 | 8 | 7 | 7 |
+| Amostra 5 | 9 | 4 | 4 |
+| Amostra 6 | 8 | 8 | 5 |
+| Amostra 7 | 5 | 10 | 8 |
+| Amostra 8 | 6 | 8 | 7 |
+
+
+---
+
+## {.smaller-text}
+
+ANOVA MEDIDAS REPETIDAS
+
+Pressuposto de normalidade (S-K, K-W);
+
+Pressuposto de homogeneidade (Levene);
+
+Esfericidade (Com três ou mais condições/tempo) (Mauchly);
+
+Distribuição normal dos resíduos.
+
+
+---
+
+## {.smaller-text}
+
+Novo pressuposto: **Esfericidade**** **(Com três ou mais condições/tempo)
+
+  - Como se dá a independência dos resultados em medidas repetidas?
+    - Quase impossível
+    - Teste de esfericidade entra como uma solução para quando a homogeneidade de variância não é
+acatada
+
+    - Teste de esfericidade de Mauchly
+      - Avalia a igualdade da diferença das variâncias entre os diferentes tempos ou condições
+        - *p** *< 0,05 (Esfericidade não assumida)
+        - *p** *> 0,05 (Esfericidade assumida) Isso que você deve esperar
+ANOVA MEDIDAS REPETIDAS
+
+
+---
+
+## {.smaller-text}
+
+Correções ao pressuposto da esfericidade
+
+  - Greenhouse–Geisser: Esfericidade < 0.75
+  - Huynh–Feldt Esfericidade > 0.75
+ANOVA MEDIDAS REPETIDAS
+
+
+---
+
+## {.smaller-text}
+
+Importante:
+
+Normalidade dos dados
+
+Não se refere mais à distribuição da variável, mas sim, **dos**** **resíduos (i.e., variância não explicada pelo modelo)
+
+ANOVA MEDIDAS REPETIDAS
+
+
+---
+
+## {.smaller-text}
+
+Expected Maximization (Maximização Esperada):
+
+Os dados de todos os respondentes são utilizados para tentar estimar a melhor resposta do sujeito aos dados faltantes;
+
+O processo se incia com a média dos itens e com o padrão de covariância das variáveis.
+
+É gerado o primeiro banco sem missing;
+
+Com esse novo banco completo, um novo processo é feito, buscando substituir novamente os valores que anteriormente tinham missing;
+
+É repetido “N” vezes, até que não haja mais diferenças estatisticamente significativas.
+
+MISSING
+
+
+---
+
+## {.smaller-text}
+
+Substituição pela média
+
+A média dos itens permanece a mesma
+
+Aumenta o poder da amostra
+
+**Desvantagem:**
+
+  - Ignora completamente o sujeito, e não leva em consideração o seu próprio padrão de resposta
+  - É um método “completamente fake”.
+MISSING
+
+
+---
+
+## {.smaller-text}
+
+Multiple Imputation (Imputação Múltipla):
+
+  - Considerado um avanço no método da Maximização esperada, porque, gera erros-padrões e intervalos de confiança para imputações realizadas;
+Ao invés de um único banco, são gerados vários bancos de dados imputados
+
+MISSING
+
+
+---
+
+## ANÁLISE	MULTIVARIADA DE VARIÂNCIA {.smaller-text}
+
+MANOVA
+
+
+---
+
+## {.smaller-text}
+
+MANOVA
+
+A MANOVA é uma extensão da ANOVA e se diferencia por ter várias variáveis dependentes
+
+ANOVA → TESTE T
+
+MANOVA → ANOVA
+
+Vantagens da MANOVA:
+
+  - Diminuição do Erro Tipo I (por múltiplas comparações)
+  - Combinação linear das VIs
+
+---
+
+## {.smaller-text}
+
+MANOVA
+
+O poder da combinação linear das variáveis
+
+Exemplo com os geotêsteis
+
+Grupo: Taboa, Ouricuri, Junco
+
+VIs:
+
+- Resistência a tração;
+- Resistência a punção;
+- Rigidez secante.
+Eventualmente, nenhuma VI isolada seria suficiente para distinguir os grupos, mas apenas a
+
+sua combinação linear.
+
+
+---
+
+## {.smaller-text}
+
+MANOVA
+
+Novos pressupostos
+
+Normalidade uni e multivariada
+
+Homogeneidade de variância e co-variância
+
+  - A covariância entre as VDs é equivalente para os diferentes grupos
+
+---
+
+## {.smaller-text}
+
+MANOVA
+
+Diferentes formas de extrair os resultados da MANOVA
+
+**Traço**** ****de**** ****Pillai**** ****(Pillai´s**** ****Trace)**
+
+**Lamba**** ****de**** ****Wilks**** ****(Wilk´s**** ****Lambda)**
+
+T2 de Hotelling (Hotelling´s T2)
+
+Maior raiz de Roy (Roy´s Largest Root)
+
+  - Há evidências de que o Traço de Pillai é o mais robusto quando os pressupostos da MANOVA não são acatados
+    - Olson, C. L. 1974. Comparative Robustness of Six Tests in Multivariate Analysis of Variance. *Journal** **of** **the** **American** **Statistical **Association,** *69:348, 894-908.
+
+---
+
+## {.smaller-text}
+
+MANOVA-MR
+
+Vamos à prática
+
+
+---
+
+## {.smaller-text}
+
+DADOS
+
+
+---
+
+## {.smaller-text}
+
+DADOS
+
+
+---
+
+## {.smaller-text}
+
+Dados faltantes(missing):
+
+Indicam que, pro algum motivo, as amostras se perderam;
+
+Nesta pesquisa está mais ligado ao rompimento do corpo de prova antes do desfecho.
+
+MISSING
+
+
+---
+
+## {.smaller-text}
+
+MANOVA
+
+Vamos à prática:
+
+
+---
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::
+

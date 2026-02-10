@@ -1,0 +1,86 @@
+﻿---
+title: "ANCOVA"
+subtitle: "Análise de Covariância<br>Análise de Dados Ambientais"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../assets/logo-uefs.webp
+    footer: "UEFS | Análise de Dados Ambientais | ANCOVA"
+    slide-number: true
+    theme: [simple, assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+# [ANÁLISE DE COVARIÂNCIA]{.section-header}
+
+---
+
+## ANÁLISE DE COVARIÂNCIA {.smaller-text}
+
+ANCOVA
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE DE COVARIÂNCIA
+
+Análise de Covariância
+
+  - Erosão > Precipitação
+  - Quais são as outras variáveis que influência na erosão?
+    - Níveis de cobertura natural
+    - Características do solo
+    - Topografia
+    - Uso e manejo do solo
+    - Na ANCOVA, você busca controlar o efeito de variáveis intervenientes na relação
+entre a VI e a VD;
+
+
+---
+
+## {.smaller-text}
+
+ANOVA FATORIAL
+
+Análise de Covariância
+
+  - Habilidades Matemáticas (VI)
+  - Aprovação no IME (Passou ou não Passou)
+    - Covariável: Compreensão de Texto
+
+---
+
+## {.smaller-text}
+
+ANOVA FATORIAL
+
+Análise de Covariância
+
+  - Pelo menos três variáveis
+  - VI (Grupo)
+  - VD (Desfecho)
+  - Co-variável (categórica ou ordinal)
+
+---
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::
+

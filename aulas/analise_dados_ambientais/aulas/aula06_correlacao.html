@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Luiz Diego Vidal Santos">
+
+<title>aula06_correlacao</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="aula06_correlacao_files/libs/clipboard/clipboard.min.js"></script>
+<script src="aula06_correlacao_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="aula06_correlacao_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="aula06_correlacao_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="aula06_correlacao_files/libs/quarto-html/popper.min.js"></script>
+<script src="aula06_correlacao_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="aula06_correlacao_files/libs/quarto-html/anchor.min.js"></script>
+<link href="aula06_correlacao_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="aula06_correlacao_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="aula06_correlacao_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="aula06_correlacao_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="aula06_correlacao_files/libs/bootstrap/bootstrap-9e3ffae467580fdb927a41352e75a2e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Análise de Correlação</h1>
+<p class="subtitle lead">Correlação de Pearson, Spearman e Kendall<br>Análise de Dados Ambientais</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Luiz Diego Vidal Santos </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Universidade Estadual de Feira de Santana (UEFS)
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="análise-de-correlação" class="level1">
+<h1><span class="section-header">ANÁLISE DE CORRELAÇÃO</span></h1>
+<hr>
+<section id="análise-de-correlação-1" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-1">ANÁLISE DE CORRELAÇÃO</h2>
+<p>Investigando a associação entre duas variáveis</p>
+<hr>
+</section>
+<section id="análise-de-correlação-cont." class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>Definição</p>
+<ul>
+<li>Técnica de análise de dados que avalia a associação entre duas ou mais variáveis</li>
+<li>A princípio, a natureza dessas variáveis devem ser métricas ou ordinais (ou seja, variáveis crescentes, tais como peso, altura, nível de felicidade, valores de glicemia, etc)</li>
+<li>Existem casos especiais de correlação com dados categóricos*</li>
+</ul>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-1" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-1">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>Exemplo:</p>
+<p>Qual a relação entre o estresse no trabalho e o número de cigarros fumados em uma amostra de fumantes?</p>
+<p>Três características da correlação:</p>
+<p>Significância estatística (verificar se p &lt; 0,05)</p>
+<p>Direção (positiva ou negativa)</p>
+<p>Grau (força: fraca, média e forte)</p>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-2" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-2">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>DIREÇÃO:</p>
+<p><strong>Positiva:</strong>** **Valores altos em uma variável (x) são associados a valores altos na outra (y). Valores baixos de x tendem a ser associados a valores baixos de y</p>
+<p>Ex.: Idade da criança e capacidade de montar lego</p>
+<p><strong>Negativa:</strong>** **valores altos de uma variável (x) são associados a valores baixos da outra variável (y)</p>
+<p>Ex.: Depressão e motivação para trabalhar</p>
+<p><strong>Nula:</strong>** **Não existe um relacionamento</p>
+<p>Ex.: Altura e número de relacionamentos amorosos</p>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-3" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-3">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>DIREÇÃO:</p>
+<p>Correlações</p>
+<p>Positivas</p>
+<p>Correlação Nula</p>
+<p>Correlações Negativas</p>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-4" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-4">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>DIREÇÃO:</p>
+<p>Correlações</p>
+<p>Positivas</p>
+<p>Correlação Nula</p>
+<p>Correlações Negativas</p>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-5" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-5">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>DIREÇÃO:</p>
+<p>Correlações</p>
+<p>Positivas</p>
+<p>Correlações Negativas</p>
+<p>Correlação Nula</p>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-6" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-6">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>DIREÇÃO:</p>
+<p>Correlações</p>
+<p>Positivas</p>
+<p>Correlações Negativas</p>
+<p>Correlação Nula</p>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-7" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-7">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>DIREÇÃO:</p>
+<p>Correlação perfeita</p>
+<p>Sua idade e idade de sua irmã</p>
+<p>Correlação imperfeita Inteligência lógico-matemática e nota</p>
+<p>na prova de matemática</p>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-8" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-8">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>DIREÇÃO:</p>
+<p>Pode ser que não se encontre correlação entre duas variáveis (usando método de cálculo de correlação linear) porque a relação existente é não-linear.</p>
+<p>Teria que se usar outro método para cálculo da correlação (não-linear)</p>
+<p>Ex. Idade vs.&nbsp;Força física (ou memória; ou comportamentos disruptivos)</p>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-9" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-9">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>COEFICIENTE DE CORRELAÇÃO</p>
+<ul>
+<li>1 <strong>Correlação</strong>** ****perfeita negativa**</li>
+</ul>
+<p>0</p>
+<p>+1</p>
+<p><strong>Correlação</strong>** ****perfeita positiva**</p>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-10" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-10">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>COEFICIENTE DE CORRELAÇÃO</p>
+<p>Cohen (1988, 1992)</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Magnitude</th>
+<th>Valor absoluto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nula</td>
+<td>0,00</td>
+</tr>
+<tr class="even">
+<td>Fraca</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Moderada</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Forte</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-11" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-11">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>COEFICIENTE DE CORRELAÇÃO</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Magnitude</th>
+<th>Valor absoluto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nula</td>
+<td>0,00</td>
+</tr>
+<tr class="even">
+<td>Fraca</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Moderada</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Forte</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Muito Forte</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Perfeita</td>
+<td>1,00</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-12" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-12">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p><strong>TAMANHO</strong>** ****DE**** ****EFEITO**</p>
+<p>Tamanho de efeito avalia o quanto duas variáveis estão, de fato, correlacionadas.</p>
+<p>O tamanho de efeito da correlação explicita o quanto de variância compartilhada</p>
+<p>duas variáveis apresentam entre si</p>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-13" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-13">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>TAMANHO DE EFEITO (COEFICIENTE DE DETERMINAÇÃO)</p>
+<p>*r** *= 0,60</p>
+<p><em>Coeficiente<strong> </strong>de<strong> </strong>Correlação</em></p>
+<p><em>r<strong>2</strong> </em>= 0,36</p>
+<p>36,0%</p>
+<p><em>Tamanho<strong> </strong>de<strong> </strong>efeito</em></p>
+<p><em>ou</em></p>
+<p><em>Variância<strong> </strong>compartilhada</em></p>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-14" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-14">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>3%</p>
+<p>17%</p>
+<p>9%</p>
+<div class="line-block">Coeficiente de Correlação</div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>(r)</th>
+<th>Variância compartilhada (tamanho de efeito, r2)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>r = 0,10</td>
+<td>r2 = 0,01 = 1%</td>
+</tr>
+<tr class="even">
+<td>r = 0,20</td>
+<td>r2 = 0,04 = 4%</td>
+</tr>
+<tr class="odd">
+<td>r = 0,30</td>
+<td>r2 = 0,09 = 9%</td>
+</tr>
+<tr class="even">
+<td>r = 0,40</td>
+<td>r2 = 0,16 = 16%</td>
+</tr>
+<tr class="odd">
+<td>r = 0,50</td>
+<td>r2 = 0,25 = 25%</td>
+</tr>
+<tr class="even">
+<td>r = 0,60</td>
+<td>r2 = 0,36 = 36%</td>
+</tr>
+<tr class="odd">
+<td>r = 0,70</td>
+<td>r2 = 0,49 = 49%</td>
+</tr>
+<tr class="even">
+<td>r = 0,80</td>
+<td>r2 = 0,64 = 64%</td>
+</tr>
+<tr class="odd">
+<td>r = 0,90</td>
+<td>r2 = 0,81 = 81%</td>
+</tr>
+<tr class="even">
+<td>r = 1,00</td>
+<td>r2 = 10,0 = 100%</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-15" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-15">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>CORRELAÇÃO PARAMÉTRICA VS NÃO-PARAMÉTRICA</p>
+<p>Karl Pearson</p>
+<p>(1857-1936)</p>
+<p>Charles Spearman (1863-1945)</p>
+<p>Correlação de Pearson vs.</p>
+<p>Correlação de Spearman Correlação Kendall Tau-<em>b</em></p>
+<p>Maurice Kendall</p>
+<p>(1907-1983)</p>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-16" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-16">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>CORRELAÇÃO PARAMÉTRICA VS NÃO-PARAMÉTRICA</p>
+<div class="line-block">Correlação de Pearson | Correlação de Spearman</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Kendall (Tau)</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Paramétrica</td>
+<td>Não–paramétrica</td>
+</tr>
+<tr class="even">
+<td>Quando usar</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Quando os dados têm distribuição normal</td>
+<td>Quando os dados não tem distribuição normal</td>
+</tr>
+<tr class="even">
+<td>Quando o número de participantes é alto</td>
+<td>Útil também quando o número de participantes é baixo</td>
+</tr>
+<tr class="odd">
+<td>Medida escalar/intervalar</td>
+<td>Medida ordinal</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-17" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-17">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p><strong>VAMOS</strong>** ****À**** ****PRÁTICA?**</p>
+<p><strong>HIPÓTESE</strong>:</p>
+<ul>
+<li>Os valores de resistência à tração e do módulo de Young apresentam associação significativa em fibras de geotêxteis produzidos com fibras naturais de Taboa quando expostos a degradação natural.</li>
+</ul>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-18" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-18">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>Tabela de Correlação</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Variável</td>
+<td></td>
+<td>Deformação</td>
+<td>Rigidez Secante</td>
+<td>Módulo Yong</td>
+<td></td>
+<td>Máxima Carga</td>
+<td></td>
+<td>Resistencia tração</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Deformação</td>
+<td>r de Pearson</td>
+<td>—</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Rigidez Secante</td>
+<td>r de Pearson</td>
+<td>0.194</td>
+<td>—</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Módulo Yong</td>
+<td>r de Pearson</td>
+<td>-0.275 *</td>
+<td>0.415 ***</td>
+<td>—</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Máxima Carga</td>
+<td>r de Pearson</td>
+<td>0.410 ***</td>
+<td>0.809 ***</td>
+<td>0.308 **</td>
+<td></td>
+<td>—</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Resistencia tração</td>
+<td>r de Pearson</td>
+<td>0.410 ***</td>
+<td>0.809 ***</td>
+<td>0.308 **</td>
+<td></td>
+<td>1.000 ***</td>
+<td></td>
+<td>—</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><em>&nbsp;p &lt; .05, <strong> p &lt; .01, </strong></em> p &lt; .001, n.s = Não significativo</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="section" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="section"></h2>
+<p>TÓPICOS ESPECIAIS DE CORRELAÇÃO</p>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-19" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-19">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>DIFERENÇAS NOS NÍVEIS DE CORRELAÇÃO</p>
+<p>Muitas vezes, quando realizamos análises de correlação, queremos entender, do</p>
+<p>nosso conjunto de variáveis, quais são as que mais fortemente se correlacionam.</p>
+<p>Os efeitos da deformação da fibra apresentaram associação positiva e significativa com a resistência à tração (r = 0,410; p &lt; 0,001) e significativa e negativa para o Módulo Yong (r = -0,275; p &lt; 0,05), sendo o primeiro mais fortemente correlacionado.</p>
+<p>Forma de meia verdade!</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Variável</td>
+<td>Deformação</td>
+<td>Rigidez Secante</td>
+<td>Módulo Yong</td>
+<td></td>
+<td>Máxima Carga</td>
+<td></td>
+<td>Resistencia tração</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Deformação</td>
+<td>—</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Rigidez Secante</td>
+<td>0.194</td>
+<td>—</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Módulo Yong</td>
+<td>-0.275 *</td>
+<td>0.415 ***</td>
+<td>—</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Máxima Carga</td>
+<td>0.410 ***</td>
+<td>0.809 ***</td>
+<td>0.308 **</td>
+<td></td>
+<td>—</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Resistencia tração</td>
+<td>0.410 ***</td>
+<td>0.809 ***</td>
+<td>0.308 **</td>
+<td></td>
+<td>1.000 ***</td>
+<td></td>
+<td>—</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><em>&nbsp;p &lt; .05, <strong> p &lt; .01, </strong></em> p &lt; .001, n.s = Não significativo</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-20" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-20">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>DIFERENÇAS NOS NÍVEIS DE CORRELAÇÃO</p>
+<p>Muitas vezes, quando realizamos análises de correlação, queremos entender, do</p>
+<p>nosso conjunto de variáveis, quais são as que mais fortemente se correlacionam.</p>
+<p>Fisher´s r-to-z transformation test</p>
+<p>http://psychometrica.de/correlation.htm</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Variável</td>
+<td>Deformação</td>
+<td>Rigidez Secante</td>
+<td>Módulo Yong</td>
+<td></td>
+<td>Máxima Carga</td>
+<td></td>
+<td>Resistencia tração</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Deformação</td>
+<td>—</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Rigidez Secante</td>
+<td>0.194</td>
+<td>—</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Módulo Yong</td>
+<td>-0.275 *</td>
+<td>0.415 ***</td>
+<td>—</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Máxima Carga</td>
+<td>0.410 ***</td>
+<td>0.809 ***</td>
+<td>0.308 **</td>
+<td></td>
+<td>—</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Resistencia tração</td>
+<td>0.410 ***</td>
+<td>0.809 ***</td>
+<td>0.308 **</td>
+<td></td>
+<td>1.000 ***</td>
+<td></td>
+<td>—</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><em>&nbsp;p &lt; .05, <strong> p &lt; .01, </strong></em> p &lt; .001, n.s = Não significativo</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-21" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-21">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>DIFERENÇAS NOS NÍVEIS DE CORRELAÇÃO</p>
+<p>Muitas vezes, quando realizamos análises de correlação, queremos entender, do</p>
+<p>nosso conjunto de variáveis, quais são as que mais fortemente se correlacionam.</p>
+<p>A análise de correlação indicou que a deformação das fibras apresentou correlação positiva e significativa com a resistência à tração (r = 0,410; p &lt; 0,001), bem como correlação negativa e significativa com o módulo de Young (r = –0,275; p &lt; 0,05). No entanto, dados de r-to-z de Fisher quanto a comparação entre os coeficientes de correlação não revelou diferença estatisticamente significativa entre essas associações (z = –2,885; p = 0,149).</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Variável</td>
+<td>Deformação</td>
+<td>Rigidez Secante</td>
+<td>Módulo Yong</td>
+<td></td>
+<td>Máxima Carga</td>
+<td></td>
+<td>Resistencia tração</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Deformação</td>
+<td>—</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Rigidez Secante</td>
+<td>0.194</td>
+<td>—</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Módulo Yong</td>
+<td>-0.275 *</td>
+<td>0.415 ***</td>
+<td>—</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Máxima Carga</td>
+<td>0.410 ***</td>
+<td>0.809 ***</td>
+<td>0.308 **</td>
+<td></td>
+<td>—</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Resistencia tração</td>
+<td>0.410 ***</td>
+<td>0.809 ***</td>
+<td>0.308 **</td>
+<td></td>
+<td>1.000 ***</td>
+<td></td>
+<td>—</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><em>&nbsp;p &lt; .05, <strong> p &lt; .01, </strong></em> p &lt; .001, n.s = Não significativo</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-22" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-22">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>TIPO ESPECIAL DE CORRELAÇÃO (<strong>PONTO</strong></p>
+<p><strong>BISSERIAL)</strong></p>
+<p>Utilizada quando se pretende avaliar a relação entre uma variável ordinal (ou escalar, ex: altura) com outra variável dicotômica (ex: sexo – masculino e feminino).</p>
+<p>Serve como um indício para saber se existem diferenças nos escores dos grupos em relação à variável de interesse.</p>
+<p>Diferença do teste t (teste de média)</p>
+<p>Resistência a punção</p>
+<p>Sem Resina</p>
+<p>Com Resina</p>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-23" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-23">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p><strong>CORRELAÇÃO</strong>** ****NÃO**** ****É**** ****CAUSALIDADE**</p>
+<p>Correlação não é sinônimo de causalidade</p>
+<p>A correlação entre duas variáveis pode ser causada por uma terceira variável oculta;</p>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-24" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-24">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p><strong>CORRELAÇÃO</strong>** ****NÃO**** ****É**** ****CAUSALIDADE**</p>
+<p>Spurious Correlations</p>
+<p>Ir à praia</p>
+<p>Tomar</p>
+<p>sorvete</p>
+<p>TEMPERA TURA</p>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-25" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-25">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p><strong>CORRELAÇÃO</strong>** ****NÃO**** ****É**** ****CAUSALIDADE**</p>
+<p>É possível encontrar uma correlação completamente espúria entre duas variáveis.</p>
+<p>Spurious Correlations</p>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-26" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-26">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>CORRELAÇÃO (PARCIAL)</p>
+<hr>
+</section>
+<section id="análise-de-correlação-cont.-27" class="level2 smaller-text">
+<h2 class="smaller-text anchored" data-anchor-id="análise-de-correlação-cont.-27">ANÁLISE DE CORRELAÇÃO (cont.)</h2>
+<p>CORRELAÇÃO PARCIAL</p>
+<p>Felicidade e Sentido de vida</p>
+<ul>
+<li>r = 0,518 r2 = 0,268; 26,8%</li>
+<li>Felicidade e Sentido de vida (controlado por otimismo)</li>
+<li>r = 0,362 r2 = 0,131; 13,10%</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="section-1" class="level1" data-background-color="#034EA2">
+<h1 data-background-color="#034EA2"></h1>
+<p><span class="obrigado-fit-text" style="color: white;">Obrigado!</span></p>
+<div style="text-align: center; color: white; font-size: 0.7em;">
+<p>Luiz Diego Vidal Santos</p>
+<p>Universidade Estadual de Feira de Santana (UEFS)</p>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

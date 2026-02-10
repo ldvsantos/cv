@@ -1,0 +1,516 @@
+﻿---
+title: "Propriedade Intelectual e Inovação"
+subtitle: "Gestão Estratégica de PI em <br> Pequenos e Médios Negócios"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format: 
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS - Universidade Estadual de Feira de Santana | Tema 8 - Gestão Estratégica de PI em PMEs"
+    slide-number: true
+    theme: [simple, assets/ufs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos Principais
+
+- [1]{.circle} Fundamentos Teóricos (VBR e Apropriabilidade)
+- [2]{.circle} Estrutura Metodológica: ISO 56005 e ISO 30401
+- [3]{.circle} Gestão Prática em PMEs
+- [4]{.circle} Apoio Institucional e Políticas Públicas
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo Central**
+
+Analisar a gestão estratégica de propriedade intelectual em pequenas e médias empresas através de normas internacionais e métodos técnicos robustos.
+:::
+:::
+:::
+
+
+# Fundamentos Teóricos {.section-header}
+
+## Visão Baseada em Recursos (VBR) e Apropriabilidade
+
+::: {.smaller-text}
+::: {.columns}
+::: {.column width="60%"}
+### VBR (Penrose, 1959; Barney, 1991)
+
+Vantagem competitiva resulta do controle de recursos **VRIN**:
+
+- **V**aliosos
+- **R**aros
+- **I**nimitáveis
+- I**n**substituíveis (ou **O**rganizacionais)
+
+::: {.info-box}
+**Em PMEs:** Recursos predominantemente **intangíveis** (conhecimento técnico, reputação, design)
+:::
+:::
+
+::: {.column width="40%"}
+### Apropriabilidade (Teece, 1986)
+
+::: {.highlight-box}
+**Definição:** Aptidão para **capturar retornos econômicos** da inovação e **impedir imitação**
+
+**Mecanismos:**
+
+- Formais: patentes, marcas
+- Informais: segredo comercial, NDAs
+:::
+:::
+:::
+:::
+
+---
+
+## Barreiras à Inovação em PMEs (Manual de Oslo, 2018) {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Barreiras Identificadas
+
+1. **Econômicas:** Custos elevados de P&D e registro de PI
+2. **Cognitivas:** Carência de pessoal qualificado e conhecimento técnico
+3. **Mercadológicas:** Mercados concentrados, assimetria de informação
+4. **Institucionais:** Deficiências na proteção de PI, burocracia
+
+::: {.info-box}
+**Impacto:** Limitam potencial inovador das PMEs
+:::
+:::
+
+::: {.column width="50%"}
+### Papel da Gestão Estratégica de PI
+
+::: {.highlight-box}
+**Mitigação de Obstáculos:**
+
+- Fortalece **apropriabilidade**
+- Amplia acesso a **financiamento** (PI como garantia)
+- Reduz riscos em **cooperações tecnológicas**
+- Facilita inserção em **APLs** e redes
+:::
+
+**Burrone (2005); Byma & Leiponen (2009):** Vantagem competitiva deriva mais da **capacidade de gerir ativos intangíveis** do que do tamanho organizacional.
+:::
+:::
+
+---
+
+## Inovação Aberta e Arranjos Produtivos Locais {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Inovação Aberta (Chesbrough, 2003)
+
+::: {.info-box}
+**Conceito:** Fluxos de conhecimento atravessam fronteiras organizacionais
+
+**Para PMEs:**
+
+- Acesso a conhecimento externo (universidades, fornecedores)
+- Compartilhamento de riscos e custos
+- **PI como governança:** equilibra colaboração e proteção
+:::
+:::
+
+::: {.column width="50%"}
+### APLs (Cassiolato & Lastres, 2003)
+
+::: {.highlight-box}
+**Benefícios para PMEs:**
+
+- **Aprendizado coletivo** e troca de conhecimento
+- Infraestrutura compartilhada
+- Fortalecimento de **competências distintivas**
+- **PI funciona como mecanismo de governança**, permitindo cooperação sem perda de controle intelectual
+:::
+:::
+:::
+
+
+
+# Estrutura Metodológica ISO 56005 e ISO 30401 {.section-header}
+
+## Processo Cíclico de Gestão de PI (Gatto, 2021; INPI, 2024)
+
+::: {.smaller-text}
+```{mermaid}
+%%| fig-width: 10
+%%| fig-height: 6
+graph LR
+    A[Diagnóstico] --> B[Formulação]
+    B --> C[Implementação]
+    C --> D[Monitoramento]
+    D --> A
+    
+    style A fill:#034EA2,stroke:#FDB913,stroke-width:3px,color:#fff
+    style B fill:#034EA2,stroke:#FDB913,stroke-width:3px,color:#fff
+    style C fill:#034EA2,stroke:#FDB913,stroke-width:3px,color:#fff
+    style D fill:#034EA2,stroke:#FDB913,stroke-width:3px,color:#fff
+```
+
+::: {.info-box}
+**Processo contínuo** que integra gestão de PI à estratégia de inovação, alinhado às normas ISO 56005 e ISO 30401.
+:::
+:::
+
+---
+
+## ISO 56005: Quatro Eixos de Atuação (1/2) {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### [1]{.circle} Identificação
+
+::: {.info-box}
+**Objetivo:** Mapeamento sistemático de ativos de conhecimento e inovação
+
+**Métodos Técnicos:**
+
+- Matriz VRIO para classificação de recursos intangíveis
+- Vigilância tecnológica
+- Inventário de ativos (invenções, marcas, segredos comerciais, *know-how*)
+
+**Resultado:** Priorização de ativos com potencial de proteção
+:::
+:::
+
+::: {.column width="50%"}
+### [2]{.circle} Proteção
+
+::: {.highlight-box}
+**Objetivo:** Definição de mecanismos formais e informais de apropriabilidade
+
+**Formais:**
+
+- Registro de marcas, patentes, desenhos industriais
+- **INPI (2023):** Para micro e pequenas empresas, priorizar **marcas** e **desenhos industriais** (custo reduzido, proteção rápida)
+
+**Informais:**
+
+- Segredo comercial
+- Acordos de Não Divulgação (NDAs)
+- Confidencialidade de processos
+:::
+:::
+:::
+
+---
+
+## ISO 56005: Quatro Eixos de Atuação (2/2) {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### [3]{.circle} Valorização
+
+::: {.info-box}
+**Objetivo:** Mensuração do valor econômico e potencial de mercado dos ativos de PI
+
+**Importância:**
+
+- Acesso a **crédito** e financiamento
+- Negociação de **licenciamento**
+- Atração de **investidores**
+
+**Métodos:** Avaliação de ativos intangíveis, análise de mercado
+:::
+:::
+
+::: {.column width="50%"}
+### [4]{.circle} Aproveitamento
+
+::: {.highlight-box}
+**Objetivo:** Utilização efetiva dos ativos de PI para geração de valor
+
+**Estratégias:**
+
+- **Exploração exclusiva:** manufatura e venda direta
+- **Licenciamento:** royalties e parcerias
+- **Venda de ativos:** transferência de direitos
+- **Integração ao marketing:** gestão de marca e fidelização
+
+**Resultado:** PI integrada ao plano de negócios
+:::
+:::
+:::
+
+---
+
+## ISO 30401: Sistema de Gestão do Conhecimento (SGC) {.smaller-text}
+
+::: {.columns}
+::: {.column width="33%"}
+### Captura e Retenção
+
+::: {.info-box}
+**Métodos Técnicos:**
+
+- Bases de dados de lições aprendidas
+- Documentação de processos
+- Registro de conhecimento tácito
+
+**Crucial para PMEs:** Conhecimento concentrado em poucos indivíduos
+:::
+:::
+
+::: {.column width="33%"}
+### Compartilhamento e Transferência
+
+::: {.info-box}
+**Métodos:**
+
+- Comunidades de prática
+- Plataformas de colaboração
+- Mentorias internas
+
+**Benefício:** Reduz dependência de pessoal, acelera inovação
+:::
+:::
+
+::: {.column width="34%"}
+### Criação e Aplicação
+
+::: {.highlight-box}
+**Objetivo:** Conhecimento novo (invenções, melhorias) é imediatamente identificado e canalizado para os eixos de **Identificação** e **Proteção** da ISO 56005
+
+**Ciclo Virtuoso:** Conhecimento → PI → Apropriabilidade → Novos recursos → Mais conhecimento
+:::
+:::
+:::
+
+---
+
+## Integração ISO 56005 + ISO 30401: Ciclo Virtuoso
+
+::: {.smaller-text}
+<div style="overflow-x: auto; overflow-y: hidden; width: 100%; height: 8000px;">
+
+```{mermaid}
+%%{init: { 'theme': 'base', 'themeVariables': { 'fontSize': '30px', 'fontFamily': 'Ubuntu, sans-serif' } } }%%
+%%| fig-width: 80
+%%| fig-height: 12
+graph LR
+    A["ISO 30401:<br/>Captura de<br/>Conhecimento"] --> B["ISO 30401:<br/>Compartilhamento"]
+    B --> C["ISO 30401:<br/>Criação de Novo<br/>Conhecimento"]
+    C --> D["ISO 56005:<br/>Identificação de<br/>Ativos de PI"]
+    D --> E["ISO 56005:<br/>Proteção<br/>Formal/Informal"]
+    E --> F["ISO 56005:<br/>Valorização<br/>Econômica"]
+    F --> G["ISO 56005:<br/>Aproveitamento<br/>Licenciamento/<br/>Exploração"]
+    G --> H["Apropriabilidade:<br/>Retornos<br/>Econômicos"]
+    H --> I["Reinvestimento<br/>em P&D"]
+    I --> A
+    
+    style A fill:#034EA2,stroke:#FDB913,stroke-width:3px,color:#fff
+    style B fill:#034EA2,stroke:#FDB913,stroke-width:3px,color:#fff
+    style C fill:#034EA2,stroke:#FDB913,stroke-width:3px,color:#fff
+    style D fill:#ED1C24,stroke:#FDB913,stroke-width:3px,color:#fff
+    style E fill:#ED1C24,stroke:#FDB913,stroke-width:3px,color:#fff
+    style F fill:#ED1C24,stroke:#FDB913,stroke-width:3px,color:#fff
+    style G fill:#ED1C24,stroke:#FDB913,stroke-width:3px,color:#fff
+    style H fill:#FDB913,stroke:#034EA2,stroke-width:4px,color:#000
+    style I fill:#034EA2,stroke:#FDB913,stroke-width:3px,color:#fff
+```
+
+</div>
+:::
+
+
+# Gestão Prática em PMEs {.section-header}
+
+## Implementação: Soluções Operacionais Simples {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Ferramentas Iniciais
+
+::: {.info-box}
+**1. Planilhas de Controle de Ativos:**
+
+- Registro de ativos (marcas, patentes, segredos)
+- Tipos de proteção
+- Datas de depósito, renovação, custos
+- **Benefício:** Previne perda de prazos, permite acompanhamento estratégico
+
+**2. Acordos de Não Divulgação (NDAs):**
+
+- Método técnico informal de proteção
+- Uso antes de compartilhar informações sensíveis
+:::
+:::
+
+::: {.column width="50%"}
+### Governança Interna (ISO 56005: Proteção)
+
+::: {.highlight-box}
+**Contratos de Trabalho:**
+
+- Titularidade da PI à empresa
+- Cláusulas de confidencialidade
+- Cláusulas de não concorrência
+
+**Cessões de Direitos:**
+
+- Propriedade sobre criações de terceiros
+
+**Política Interna de PI:**
+
+- Define responsabilidades
+- Reforça cultura de proteção
+- Mitiga riscos de litígio
+:::
+:::
+:::
+
+---
+
+## Apoio Institucional e Regulatório no Brasil {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Instituições de Apoio
+
+::: {.info-box}
+**SEBRAE:**
+
+- Consultorias em gestão de ativos intangíveis
+- Capacitação para PMEs
+
+**INPI:**
+
+- Capacitações em PI
+- Taxas reduzidas para PMEs e startups
+- Orientações técnicas (Guias, Manuais)
+:::
+:::
+
+::: {.column width="50%"}
+### Marco Regulatório
+
+::: {.highlight-box}
+**Legislações Específicas:**
+
+- **Lei da Inovação** (10.973/2004)
+- **Marco Legal da CT&I** (13.243/2016)
+- **Simples Nacional** (LC 123/2006)
+- **Marco Legal das Startups** (LC 182/2021)
+- **Inova Simples** (LC 167/2019)
+
+**Lei do Bem** (11.196/2005): Dedução fiscal de até **160%** dos gastos com P&D, depreciação acelerada, amortização de registros de PI
+:::
+:::
+:::
+
+---
+
+## Convergência com Princípios de Inovação {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Inovação Aberta (Chesbrough, 2003)
+
+::: {.info-box}
+**PI como mecanismo de governança:**
+
+- Gerencia fluxos de conhecimento
+- Viabiliza transferência de tecnologia
+- Facilita licenciamento de resultados de pesquisa
+
+**Para PMEs:** Inserção em redes de cooperação e APLs amplia acesso a conhecimento e infraestrutura
+:::
+:::
+
+::: {.column width="50%"}
+### Tríplice Hélice (Etzkowitz & Leydesdorff, 1990)
+
+::: {.highlight-box}
+**Interação Universidade-Indústria-Governo:**
+
+- PI estrutura colaborações
+- Protege resultados de pesquisas conjuntas
+- Estimula valorização de ativos intangíveis e aprendizado coletivo (Cassiolato & Lastres, 2003)
+
+**Dinamismo dos Sistemas de Inovação:** Articulação entre atores transforma conhecimento em desenvolvimento socioeconômico (Freeman, 1991)
+:::
+:::
+:::
+
+
+
+# Conclusão {.section-header}
+
+## Síntese: Gestão Estratégica de PI em PMEs {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Equilíbrio Teoria-Prática
+
+::: {.info-box}
+**Fundamentos Teóricos:**
+
+- VBR e VRIN (recursos intangíveis)
+- Apropriabilidade (Teece, 1986)
+- Manual de Oslo (barreiras à inovação)
+
+**Métodos Técnicos Robustos:**
+
+- ISO 56005: 4 eixos (Identificação, Proteção, Valorização, Aproveitamento)
+- ISO 30401: SGC (Captura, Compartilhamento, Aplicação)
+:::
+:::
+
+::: {.column width="50%"}
+### Integração Estratégica
+
+::: {.highlight-box}
+**PMEs podem transformar ativos intangíveis em resultados tangíveis:**
+
+- Ciclo virtuoso: Conhecimento → PI → Apropriabilidade → Inovação
+- Alinhamento entre normas ISO, políticas públicas (Lei do Bem, Marco Legal) e orientações INPI/SEBRAE
+- PI como **ativo essencial** para desenvolvimento sustentável e inserção global
+:::
+:::
+:::
+
+---
+
+## Mensagem Final {.smaller-text}
+
+::: {.info-box}
+A **Propriedade Intelectual** é **acessível e necessária** a todos os portes empresariais. 
+
+A adoção de métodos técnicos estruturados pelas **ISOs 56005 e 30401** oferece o caminho para **competitividade** e **apropriação de valor** em mercados globais.
+:::
+
+---
+
+## {.center-text}
+
+::: {.obrigado-fit-text}
+**Obrigado!**
+:::
+
+::: {.info-box}
+**Luiz Diego Vidal Santos**  
+Universidade Federal de Sergipe
+
+📧 ldvsantos@uefs.br
+:::
+

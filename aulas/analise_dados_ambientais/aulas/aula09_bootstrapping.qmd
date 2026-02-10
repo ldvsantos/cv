@@ -1,0 +1,196 @@
+﻿---
+title: "Bootstrapping"
+subtitle: "Técnicas de Reamostragem<br>Análise de Dados Ambientais"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../assets/logo-uefs.webp
+    footer: "UEFS | Análise de Dados Ambientais | Bootstrapping"
+    slide-number: true
+    theme: [simple, assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+# [BOOTSTRAPPING]{.section-header}
+
+---
+
+## BOOTSTRAPPING {.smaller-text}
+
+Reamostragem
+
+
+---
+
+## {.smaller-text}
+
+BOOTSTRAPPING
+
+Histórico
+
+  - Bradley Efron (1938 - )
+    - Procedimento de re-amostragem
+Objetivo
+
+    - Apresentar intervalos de confiança para estimativas amostrais, e realizar inferências estatísticas a partir desses resultados;
+    - Corrige distribuição e normalidade para os dados;
+    - Aprimorar estimativas de erro-padrão dos dados.
+
+---
+
+## {.smaller-text}
+
+BOOTSTRAPPING
+
+Como funciona
+
+  - No final dos anos 70, o estatístico Brandley Efron fez uma sugestão engenhosa;
+  - A maior parte (às vezes tudo) do que sabemos sobre a “verdadeira” distribuição da probabilidade vem dos dados amostrais.
+  - Portanto, vamos tratar os dados como um *proxy *da verdadeira distribuição;
+  - Replicamos várias amostras de *proxy ...*
+    - Isso é chamado de “reamostragem”
+    - E calcula a estatística de interesse em cada um dos bancos de dados gerados
+
+---
+
+## {.smaller-text}
+
+BOOTSTRAPPING
+
+Reorganização dos dados
+
+*Figura 1. Médias e medianas de três amostras obtidas por reamostragem.*
+
+
+---
+
+## {.smaller-text}
+
+BOOTSTRAPPING
+
+Reorganização dos dados
+
+*Figura 2. **Representação esquemática das etapas do método bootstrap não paramétrico**.*
+
+
+---
+
+## {.smaller-text}
+
+BOOTSTRAPPING
+
+Reorganização dos dados
+
+*Figura 4. Distribuição dos escores amostrais (painel esquerdo) e do logaritmo natural desses escores (painel direito). Os valores no interior do painel esquerdo representam as estatísticas amostrais, que, compreensivelmente, diferem dos parâmetros populacionais.*
+
+
+---
+
+## {.smaller-text}
+
+BOOTSTRAPPING
+
+Reorganização dos dados
+
+*Figura 5. Exemplo de cinco amostras **bootstrapping*
+
+
+---
+
+## {.smaller-text}
+
+BOOTSTRAPPING
+
+Reorganização dos dados
+
+*Figura 6. Distribuições amostrais empíricas da média (painel esquerdo) e da mediana (painel direito).*
+
+
+---
+
+## {.smaller-text}
+
+BOOTSTRAPPING
+
+Como funciona
+
+  - No caso dos estudos com dois ou mais grupos, o procedimento de bootstrapping calcula o intervalo de confiança (IC) para a média de cada um dos grupos;
+
+---
+
+## {.smaller-text}
+
+BOOTSTRAPPING
+
+Exemplo Mediação
+
+Foram coletados dados de 120 propriedades rurais em uma região com histórico de práticas convencionais e agroecológicas. Três variáveis principais foram analisadas:
+
+**Variável independente (X):** Grau de adoção de práticas agroecológicas (índice composto com base em número e intensidade das práticas adotadas).
+
+**Variável mediadora (M):** Qualidade do solo (indicador baseado em teores de matéria orgânica, compactação e atividade microbiana).
+
+**Variável dependente (Y):** Produtividade agrícola (kg/ha de culturas principais da região).
+
+
+---
+
+## {.smaller-text}
+
+BOOTSTRAPPING
+
+Exemplo
+
+**A = 0,12 **
+
+**Y - Produtividade**
+
+**M - Qualidade do Solo**
+
+**X - Práticas Agroecológicas**
+
+**B = 0,60 **
+
+**C**** = 0,40 **
+
+**C’**** = 0,33 **
+
+*C – C’** *= 0,07: 7,5% do efeito entre X e Y e mediado por M
+
+Bootstrapping:*  C – C’  *=  0,04 [ 99% IC: -0,03 – 0,11]
+
+
+---
+
+## {.smaller-text}
+
+BOOTSTRAPPING
+
+Por vezes o bootstrap apresenta valores de p,  por vezes não;
+
+Inferência realizada por meio do intervalo de confiança;
+
+Exemplo comparações de média Diâmetro Médio geométrico
+
+
+---
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::
+
