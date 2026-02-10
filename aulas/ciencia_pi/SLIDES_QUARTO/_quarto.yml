@@ -2,8 +2,8 @@ project:
   type: default
 format:
   revealjs:
-    theme: [simple, assets/ufs.scss]
-    css: assets/custom.css
+    theme: [simple, ../../../assets/uefs.scss]
+    css: ../../../assets/custom.css
     width: 1280
     height: 720
     transition: slide
