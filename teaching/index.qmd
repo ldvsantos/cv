@@ -51,10 +51,10 @@ Se você tem interesse em orientação ou parcerias acadêmicas, entre em contat
 
 Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina. Clique em cada card para abrir os slides diretamente no navegador.
 
-::: {.slide-grid}
-
+```{=html}
+<div class="slide-grid">
 <a class="slide-card" href="../aulas/ciencia_pi/SLIDES_QUARTO/Tema 01 - Gestao da Inovacao Tecnologica/tema01_apresentacao.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Tema 01 — Gestão da Inovação Tecnológica</h4>
 <p>Fundamentos e práticas da gestão da inovação tecnológica.</p>
@@ -62,7 +62,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina. C
 </a>
 
 <a class="slide-card" href="#" onclick="return false;" style="opacity: 0.6; cursor: default;">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Tema 02 — PI como Ativo Estratégico <span class="badge-soon">em breve</span></h4>
 <p>Valorização e gestão estratégica da Propriedade Intelectual.</p>
@@ -70,7 +70,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina. C
 </a>
 
 <a class="slide-card" href="../aulas/ciencia_pi/SLIDES_QUARTO/Tema 03 - Empreendedorismo tecnologico/tema03_apresentacao.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Tema 03 — Empreendedorismo Tecnológico</h4>
 <p>Inovação e criação de novos negócios de base tecnológica.</p>
@@ -78,7 +78,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina. C
 </a>
 
 <a class="slide-card" href="../aulas/ciencia_pi/SLIDES_QUARTO/Tema 04 - Politicas de inovacao/tema04_apresentacao.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Tema 04 — Políticas de Inovação</h4>
 <p>Instrumentos e sistemas nacionais de inovação.</p>
@@ -86,7 +86,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina. C
 </a>
 
 <a class="slide-card" href="../aulas/ciencia_pi/SLIDES_QUARTO/Tema 05 - Gestao de Projetos inovacao/tema05_apresentacao.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Tema 05 — Gestão de Projetos de Inovação</h4>
 <p>Gestão de projetos com foco em Propriedade Intelectual.</p>
@@ -94,7 +94,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina. C
 </a>
 
 <a class="slide-card" href="../aulas/ciencia_pi/SLIDES_QUARTO/Tema 06 - Valoracao de ativos/tema06_apresentacao.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Tema 06 — Valoração de Ativos de PI</h4>
 <p>Métodos e aplicações de valoração de ativos intangíveis.</p>
@@ -102,7 +102,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina. C
 </a>
 
 <a class="slide-card" href="../aulas/ciencia_pi/SLIDES_QUARTO/Tema 07 - Transferencia de tecnologia/tema07_apresentacao.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Tema 07 — Transferência de Tecnologia</h4>
 <p>Processos e estratégias de transferência de tecnologia.</p>
@@ -110,7 +110,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina. C
 </a>
 
 <a class="slide-card" href="../aulas/ciencia_pi/SLIDES_QUARTO/Tema 08 - Gestao Estrategica PI PME/tema08_apresentacao.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Tema 08 — Gestão Estratégica de PI em PMEs</h4>
 <p>PI para pequenos e médios negócios.</p>
@@ -118,7 +118,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina. C
 </a>
 
 <a class="slide-card" href="#" onclick="return false;" style="opacity: 0.6; cursor: default;">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Tema 09 — Spin-offs Acadêmicas <span class="badge-soon">em breve</span></h4>
 <p>Empreendedorismo universitário e criação de spin-offs.</p>
@@ -126,14 +126,15 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina. C
 </a>
 
 <a class="slide-card" href="#" onclick="return false;" style="opacity: 0.6; cursor: default;">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Tema 10 — PI na Economia Digital <span class="badge-soon">em breve</span></h4>
 <p>Desafios e novas fronteiras da PI no contexto digital.</p>
 </div>
 </a>
 
-:::
+</div>
+```
 
 ---
 
@@ -141,10 +142,10 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina. C
 
 Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina. Versões para professor (com soluções) e para alunos (exercícios em branco) estão disponíveis quando aplicável.
 
-::: {.slide-grid}
-
+```{=html}
+<div class="slide-grid">
 <a class="slide-card" href="../aulas/introducao_estatistica/SLIDES_QUARTO/Tema 01 - Introducao a Estatistica/slides_tema01.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Tema 01 — Introdução à Estatística</h4>
 <p>Conceitos fundamentais: etimologia, amostragem, variáveis e distribuições de frequência.</p>
@@ -152,7 +153,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina. V
 </a>
 
 <a class="slide-card" href="../aulas/introducao_estatistica/SLIDES_QUARTO/Tema 01 - Introducao a Estatistica/slides_tema01_alunos.html" target="_blank">
-<div class="slide-icon">{{< fa user-graduate >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-user-graduate"></i></div>
 <div class="slide-info">
 <h4>Tema 01 — Introdução à Estatística <span class="badge-soon">alunos</span></h4>
 <p>Versão para alunos com exercícios em branco.</p>
@@ -160,7 +161,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina. V
 </a>
 
 <a class="slide-card" href="../aulas/introducao_estatistica/SLIDES_QUARTO/Tema 02 - Organizacao e Analise Descritiva/slides_tema02.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Tema 02 — Organização e Análise Descritiva</h4>
 <p>Normas de tabelas, séries estatísticas (históricas, geográficas, específicas).</p>
@@ -168,7 +169,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina. V
 </a>
 
 <a class="slide-card" href="../aulas/introducao_estatistica/SLIDES_QUARTO/Tema 02 - Organizacao e Analise Descritiva/slides_tema02_alunos.html" target="_blank">
-<div class="slide-icon">{{< fa user-graduate >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-user-graduate"></i></div>
 <div class="slide-info">
 <h4>Tema 02 — Organização e Análise Descritiva <span class="badge-soon">alunos</span></h4>
 <p>Versão para alunos com exercícios em branco.</p>
@@ -176,7 +177,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina. V
 </a>
 
 <a class="slide-card" href="../aulas/introducao_estatistica/SLIDES_QUARTO/Tema 03 - Medidas de Posicao/slides_tema03.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Tema 03 — Medidas de Posição</h4>
 <p>Média (3 casos), Moda (King e Czuber) e Mediana com código R.</p>
@@ -184,7 +185,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina. V
 </a>
 
 <a class="slide-card" href="../aulas/introducao_estatistica/SLIDES_QUARTO/Tema 04 - Medidas de Dispersao e Precisao/slides_tema04.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Tema 04 — Medidas de Dispersão e Precisão</h4>
 <p>Amplitude, variância, desvio padrão, CV, erro padrão e IC com R e ggplot2.</p>
@@ -192,7 +193,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina. V
 </a>
 
 <a class="slide-card" href="../aulas/introducao_estatistica/SLIDES_QUARTO/Tema 05 - Estatistica Descritiva Resumo/slides_tema05.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Tema 05 — Estatística Descritiva (Resumo)</h4>
 <p>Resumo completo: posição, dispersão, escore Z e intervalo de confiança.</p>
@@ -200,7 +201,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina. V
 </a>
 
 <a class="slide-card" href="../aulas/introducao_estatistica/SLIDES_QUARTO/Tema 05 - Estatistica Descritiva Resumo/slides_tema05_alunos.html" target="_blank">
-<div class="slide-icon">{{< fa user-graduate >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-user-graduate"></i></div>
 <div class="slide-info">
 <h4>Tema 05 — Estatística Descritiva (Resumo) <span class="badge-soon">alunos</span></h4>
 <p>Versão para alunos com exercícios em branco.</p>
@@ -208,14 +209,15 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina. V
 </a>
 
 <a class="slide-card" href="../aulas/introducao_estatistica/SLIDES_QUARTO/Tema 06 - Curso Estatistica Python/slides_tema06.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Tema 06 — Curso de Estatística com Python</h4>
 <p>Análise com pandas, numpy e seaborn usando dados da PNAD 2015.</p>
 </div>
 </a>
 
-:::
+</div>
+```
 
 ---
 
@@ -223,10 +225,10 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina. V
 
 Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de Análise de Dados Ambientais. Clique em cada card para abrir os slides diretamente no navegador.
 
-::: {.slide-grid}
-
+```{=html}
+<div class="slide-grid">
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula01_introducao_etimologia.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 01 — Introdução e Etimologia Estatística</h4>
 <p>Conceitos fundamentais de estatística.</p>
@@ -234,7 +236,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula02_estatistica_descritiva.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 02 — Estatística Descritiva</h4>
 <p>Medidas de tendência central e dispersão.</p>
@@ -242,7 +244,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula03_inferencial_dist_normal.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 03 — Estatística Inferencial e Distribuição Normal</h4>
 <p>Fundamentos da inferência estatística.</p>
@@ -250,7 +252,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula04_escolha_do_teste.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 04 — A Escolha do Teste Estatístico</h4>
 <p>Como selecionar a análise adequada.</p>
@@ -258,7 +260,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula05_taxonomia_bloom.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 05 — Taxonomia de Bloom</h4>
 <p>Níveis de aprendizagem e pesquisa.</p>
@@ -266,7 +268,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula06_correlacao.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 06 — Análise de Correlação</h4>
 <p>Correlação de Pearson, Spearman e Kendall.</p>
@@ -274,7 +276,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula07_teste_t.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 07 — Teste T</h4>
 <p>Teste T para amostras independentes e pareadas.</p>
@@ -282,7 +284,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula08_anova_uma_via.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 08 — ANOVA de Uma Via</h4>
 <p>Análise de variância one-way.</p>
@@ -290,7 +292,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula09_bootstrapping.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 09 — Bootstrapping</h4>
 <p>Técnicas de reamostragem.</p>
@@ -298,7 +300,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula10_anova_fatorial.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 10 — ANOVA Fatorial</h4>
 <p>Análise de variância com múltiplos fatores.</p>
@@ -306,7 +308,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula11_anova_completo.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 11 — ANOVA Completa</h4>
 <p>Análise de variância aprofundada.</p>
@@ -314,7 +316,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula12_anova_medidas_repetidas.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 12 — ANOVA de Medidas Repetidas</h4>
 <p>Delineamentos com medidas repetidas.</p>
@@ -322,7 +324,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula13_ancova.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 13 — ANCOVA</h4>
 <p>Análise de covariância.</p>
@@ -330,7 +332,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula14_metanalise.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 14 — Metanálise</h4>
 <p>Fundamentos de metanálise.</p>
@@ -338,7 +340,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula15_regressao.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 15 — Regressão</h4>
 <p>Modelos de regressão linear e múltipla.</p>
@@ -346,7 +348,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula16_qui_quadrado.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 16 — Testes de Qui-Quadrado</h4>
 <p>Teste de independência e aderência.</p>
@@ -354,7 +356,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula17_glm_gee.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 17 — GLM e GEE</h4>
 <p>Modelos lineares generalizados e equações de estimação generalizadas.</p>
@@ -362,7 +364,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula18_construcao_instrumentos.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 18 — Construção de Instrumentos</h4>
 <p>Desenvolvimento de escalas e questionários.</p>
@@ -370,7 +372,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula19_adaptacao_instrumentos.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 19 — Adaptação de Instrumentos</h4>
 <p>Tradução e adaptação transcultural.</p>
@@ -378,7 +380,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula20_evidencias_validade.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 20 — Evidências de Validade</h4>
 <p>Validade de conteúdo, construto e critério.</p>
@@ -386,7 +388,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula21_validade_instrumento.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 21 — Validade de Instrumentos</h4>
 <p>Propriedades psicométricas.</p>
@@ -394,7 +396,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula22_analise_fatorial.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 22 — Análise Fatorial Exploratória</h4>
 <p>AFE — fundamentos e aplicações.</p>
@@ -402,7 +404,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula23_tri_introducao.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 23 — Introdução à TRI</h4>
 <p>Teoria de resposta ao item.</p>
@@ -410,7 +412,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula24_tri_rasch.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 24 — Modelo de Rasch</h4>
 <p>TRI — Modelo de Rasch.</p>
@@ -418,7 +420,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula25_analise_bi_multivariada.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 25 — Análise Bi e Multivariada</h4>
 <p>Técnicas multivariadas completas.</p>
@@ -426,7 +428,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula26_bootstrap_avancado.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 26 — Bootstrap Avançado</h4>
 <p>Técnicas avançadas de reamostragem.</p>
@@ -434,7 +436,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula27_associacao_dependencia.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 27 — Modelos de Associação e Dependência</h4>
 <p>Relações entre variáveis.</p>
@@ -442,14 +444,15 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula28_nao_parametricos.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 28 — Testes Não Paramétricos</h4>
 <p>Alternativas aos testes paramétricos.</p>
 </div>
 </a>
 
-:::
+</div>
+```
 
 ---
 
@@ -457,10 +460,10 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 
 Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de Bioengenharia de Solos. Clique em cada card para abrir os slides diretamente no navegador.
 
-::: {.slide-grid}
-
+```{=html}
+<div class="slide-grid">
 <a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula01_o_solo.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 01 — O Solo</h4>
 <p>Classificação e propriedades dos solos brasileiros.</p>
@@ -468,7 +471,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula02_solo_erosao.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 02 — Solo e Erosão</h4>
 <p>Processos erosivos e fatores condicionantes.</p>
@@ -476,7 +479,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula03_declividade_equipamentos.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 03 — Declividade – Equipamentos</h4>
 <p>Aspectos metodológicos e instrumentos de medição.</p>
@@ -484,7 +487,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula04_controle_erosao_hidrica.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 04 — Controle de Erosão Hídrica</h4>
 <p>Práticas mecânicas e terraceamento.</p>
@@ -492,7 +495,7 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula05_canal_escoadouro_teoria.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 05 — Canal Escoadouro – Teoria</h4>
 <p>Dimensionamento e cálculo de canais escoadouros.</p>
@@ -500,11 +503,12 @@ Apresentações em formato HTML (RevealJS) utilizadas nas aulas da disciplina de
 </a>
 
 <a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula06_canal_escoadouro_pratica.html" target="_blank">
-<div class="slide-icon">{{< fa display >}}</div>
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <h4>Aula 06 — Canal Escoadouro – Passo a Passo</h4>
 <p>Exercício prático de cálculo e construção.</p>
 </div>
 </a>
 
-:::
+</div>
+```

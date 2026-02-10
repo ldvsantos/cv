@@ -9,3 +9,12 @@
 *.mp4
 *.HEIC
 _galeria.*
+
+# Materiais de referência e relatórios (binários pesados)
+aulas/analise_dados_ambientais/referencias/
+aulas/bioengenharia_de_solos/*.pptx
+aulas/bioengenharia_de_solos/*.pdf
+aulas/bioengenharia_de_solos/Aulas */
+aulas/bioengenharia_de_solos/Exercicios/
+aulas/bioengenharia_de_solos/Provas/
+aulas/bioengenharia_de_solos/Relat*/
