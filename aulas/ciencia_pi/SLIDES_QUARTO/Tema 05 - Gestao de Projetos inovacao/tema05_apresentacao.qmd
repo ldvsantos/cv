@@ -419,6 +419,24 @@ Cada atividade de inovação do Manual de Oslo é acompanhada de verificações 
 
 ---
 
+## Exemplo: Amostrador de Solo {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+Exemplo de invenção que completou o ciclo TRL (1–9) com proteção patentária:
+
+- **TRL 1–3:** Concepção e prova de conceito em laboratório
+- **TRL 4–6:** Validação em campo e proteção provisória
+- **TRL 7–9:** Patente definitiva e transferência
+:::
+
+::: {.column width="45%"}
+![Desenho técnico — Patente de amostrador de solo](../img/patente_amostrador.png){width="100%"}
+:::
+:::
+
+---
+
 # [Stage-Gate]{.section-header}
 ::: {style="text-align: right; padding-top: 100px; padding-right: 50px;"}
 ![](Figuras/stage_gate_process.png){width="25%"}
@@ -512,6 +530,24 @@ graph TB
     style M fill:#FF8C00,color:#fff
     style P fill:#0066CC,color:#fff
 ```
+
+---
+
+## Exemplo: Permeâmetro Patenteado {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+O permeâmetro ilustra uma invenção que percorreu todo o fluxo Stage-Gate + TRL:
+
+- **Stage 1 (Scoping):** Identificação da necessidade de medir permeabilidade *in situ*
+- **Stage 3 (Desenvolvimento):** Protótipo funcional + depósito provisório
+- **Stage 5 (Lançamento):** Patente concedida + licenciamento
+:::
+
+::: {.column width="45%"}
+![Figura de patente — Permeâmetro de campo](../img/patente_permeametro.jpg){width="100%"}
+:::
+:::
 
 ---
 
@@ -922,6 +958,8 @@ Elemento essencial previsto na norma, sustentado pelas capacidades absortiva e d
 
 A ISO 56005 é apoiada por ferramentas que padronizam coleta de informações e subsidiam decisões técnicas e estratégicas
 :::
+
+![Aparelho de vistada de amostra de solo — exemplo de invenção sujeita a análise FTO e Patent Landscape](../img/patente_vistada_solo.png){fig-align="center" width="50%"}
 
 :::: {.columns}
 ::: {.column width="50%"}
