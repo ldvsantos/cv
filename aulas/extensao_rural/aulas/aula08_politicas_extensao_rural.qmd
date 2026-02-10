@@ -66,6 +66,22 @@ A extensão rural, especialmente nas fases iniciais, foi caracterizada por um **
 - Transvestida de **transferência de tecnologia**
 - Abordagem "do **topo para baixo**" (Peixoto, 2008)
 
+```{mermaid}
+%%| fig-cap: "Comparação entre os modelos de extensão rural"
+flowchart LR
+    subgraph DIF["MODELO DIFUSIONISTA"]
+        direction LR
+        A["Pesquisador"] -->|transfere| B["Extensionista"]
+        B -->|transmite| C["Agricultor"]
+    end
+    subgraph PART["MODELO PARTICIPATIVO"]
+        direction LR
+        D["Pesquisador"] <-->|dialoga| E["Extensionista"]
+        E <-->|co-constrói| F["Agricultor"]
+        D <-.->|retroalimenta| F
+    end
+```
+
 **Consequências:**
 
 - Agricultor como **receptor passivo**
@@ -149,6 +165,19 @@ Voltada para a **melhoria das condições de vida** da população rural, apoian
 2. Capacitação de **agricultores familiares**
 3. Programas **estaduais de ATER**
 4. ATER **Setorial**
+
+```{mermaid}
+%%| fig-cap: "Estrutura PNATER → PRONATER (MDA, 2013)"
+flowchart TD
+    A["PNATER\nLei 12.188/2010"]:::pol --> B["PRONATER"]:::prog
+    B --> C["1. Capacitação\nAgentes de ATER"]:::sub
+    B --> D["2. Capacitação\nAgricultores Familiares"]:::sub
+    B --> E["3. Programas\nEstaduais de ATER"]:::sub
+    B --> F["4. ATER\nSetorial"]:::sub
+    classDef pol fill:#1a5276,stroke:#fff,color:#fff
+    classDef prog fill:#2e86c1,stroke:#fff,color:#fff
+    classDef sub fill:#85c1e9,stroke:#2e86c1,color:#1a5276
+```
 
 *(MDA, 2013)*
 

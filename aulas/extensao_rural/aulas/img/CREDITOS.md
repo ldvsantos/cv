@@ -28,3 +28,16 @@ Todas as imagens nesta pasta são de fontes abertas (Creative Commons ou domíni
 ## Uso acadêmico
 
 Estas imagens são utilizadas exclusivamente para fins educacionais em apresentações acadêmicas da disciplina de Extensão e Sociologia Rural (UEFS/UFS). Os créditos devem ser mantidos nos slides conforme as licenças Creative Commons exigem.
+
+## Diagramas e Gráficos Mermaid (gerados)
+
+Os seguintes diagramas foram criados como blocos Mermaid nativos (`{mermaid}`) diretamente nos arquivos QMD, renderizados como SVG pelo Quarto:
+
+| Aula | Tipo | Descrição | Fonte dos Dados |
+|------|------|-----------|-----------------|
+| Aula 08 | Flowchart | Modelo Difusionista vs Participativo | Peixoto (2008); Caporal (2003) |
+| Aula 08 | Flowchart | Estrutura PNATER → PRONATER | Lei 12.188/2010; MDA (2013) |
+| Aula 09 | XY Chart | Acesso à Internet — Rural vs Urbano (2017–2022) | PNAD Contínua TIC — IBGE |
+| Aula 13 | XY Chart | Meios de Comunicação no Campo Brasileiro | Adaptado de PNAD Contínua TIC — IBGE, 2022 |
+| Aula 14 | XY Chart | Trabalhadores Resgatados (1995–2023) | MTE/SIT — Grupo Especial de Fiscalização Móvel |
+| Aula 14 | XY Chart | Conflitos por Terra no Brasil (2018–2022) | CPT — Caderno Conflitos no Campo Brasil |

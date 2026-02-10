@@ -127,6 +127,16 @@ A comunicação social, diferentemente da comunicação de massa, enfatiza o **c
 
 ## COMUNICAÇÃO SOCIAL NO MEIO RURAL {.smaller-text}
 
+```{mermaid}
+%%| fig-cap: "Adaptado de PNAD Contínua TIC — IBGE, 2022"
+%%{init: {"themeVariables": {"xyChart": {"plotColorPalette": "#27ae60, #1a5276, #e67e22, #7f8c8d, #2ecc71, #c0392b"}}} }%%
+xychart-beta horizontal
+    title "Meios de Comunicacao no Campo (PNAD TIC/IBGE 2022)"
+    x-axis ["Celular", "TV Aberta", "WhatsApp", "YouTube", "Radio", "Internet fixa"]
+    y-axis "Utilizacao pela pop. rural (%)" 0 --> 100
+    bar [87, 95, 79, 45, 43, 21]
+```
+
 ::: {.columns}
 ::: {.column width="50%"}
 ### Meios Tradicionais

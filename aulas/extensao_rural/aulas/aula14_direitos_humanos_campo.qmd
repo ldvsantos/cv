@@ -128,6 +128,16 @@ O Grupo Especial de Fiscalização Móvel resgatou:
 - Setores mais frequentes no campo: pecuária, cana-de-açúcar, soja, café, carvão vegetal
 - Estados com maior incidência: Pará, Maranhão, Mato Grosso, Minas Gerais
 
+```{mermaid}
+%%| fig-cap: "Fonte: MTE/SIT — Grupo Especial de Fiscalização Móvel. Total: 59.564 resgatados"
+%%{init: {"themeVariables": {"xyChart": {"plotColorPalette": "#c0392b"}}} }%%
+xychart-beta
+    title "Trabalhadores Resgatados - Condicao Analoga a Escravidao (MTE/SIT)"
+    x-axis ["1995-99", "2000-04", "2005-09", "2010-14", "2015-19", "2020-23"]
+    y-axis "Trabalhadores resgatados" 0 --> 20000
+    bar [2285, 13244, 17405, 10998, 9156, 6476]
+```
+
 A "Lista Suja" do trabalho escravo (Cadastro de Empregadores) é instrumento de **transparência e accountability**.
 :::
 :::
@@ -158,6 +168,16 @@ A Comissão Pastoral da Terra documenta anualmente os conflitos no campo brasile
 - **47 assassinatos** de lideranças e trabalhadores rurais em 2022
 - Aumento de ameaças e intimidações contra defensores de direitos no campo
 - Invasões de territórios indígenas e quilombolas
+
+```{mermaid}
+%%| fig-cap: "Fonte: CPT — Caderno Conflitos no Campo Brasil"
+%%{init: {"themeVariables": {"xyChart": {"plotColorPalette": "#e67e22, #c0392b"}}} }%%
+xychart-beta
+    title "Conflitos por Terra e Assassinatos no Campo (CPT)"
+    x-axis [2018, 2019, 2020, 2021, 2022]
+    y-axis "Conflitos por terra" 0 --> 2100
+    bar [1489, 1254, 1576, 1768, 1893]
+```
 :::
 
 ::: {.column width="50%"}
