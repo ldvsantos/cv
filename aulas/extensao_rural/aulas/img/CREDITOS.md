@@ -18,6 +18,12 @@ Todas as imagens nesta pasta são de fontes abertas (Creative Commons ou domíni
 | `ilpf_integracao_lavoura.jpg` | Integração Lavoura-Pecuária-Floresta (iLPF), Faz. Vereda, Cachoeira Dourada/GO | Túllio F | CC-BY-SA 4.0 | [Wikimedia](https://commons.wikimedia.org/wiki/File:Integração_Lavoura_Pecuária_Floresta_(ILPF).jpg) |
 | `matopiba_mapa_areas.png` | Mapa MATOPIBA — Áreas e Territórios Legalmente Atribuídos (UC, TI, Assentamentos, Quilombos) | Evaristomiranda / Embrapa | CC-BY-SA 4.0 | [Wikimedia](https://commons.wikimedia.org/wiki/File:MATOPIBA_Areas_Legalmente_Atribuidas.png) |
 | `emater_logo.png` | Logotipo da EMATER-MG (Empresa de Assistência Técnica e Extensão Rural) | Inovate / EMATER-MG | CC-BY-SA 4.0 | [Wikimedia](https://commons.wikimedia.org/wiki/File:Emater_Logo.svg) |
+| `gini_mapa_mundial.png` | Mapa mundial do coeficiente de Gini — desigualdade de renda por país (World Bank, 2014) | M Tracy Hunter | CC-BY-SA 3.0 | [Wikimedia](https://commons.wikimedia.org/wiki/File:2014_Gini_Index_World_Map,_income_inequality_distribution_by_country_per_World_Bank.svg) |
+| `aviao_pulverizacao_nara.jpg` | Avião pulverizador em operação sobre lavoura, Imperial Valley, Califórnia (maio 1972) | Charles O'Rear / NARA | Domínio Público | [Wikimedia](https://commons.wikimedia.org/wiki/File:CROP_DUSTER_PLANE_AT_WORK_IN_IMPERIAL_VALLEY_-_NARA_-_548884.jpg) |
+| `paulo_freire_1977.jpg` | Paulo Freire, educador brasileiro, 1977 | Slobodan Dimitro | CC-BY-SA 3.0 | [Wikimedia](https://commons.wikimedia.org/wiki/File:Paulo_Freire_1977.jpg) |
+| `metodo_paulo_freire.jpg` | Ilustração do Método Paulo Freire — educação dialógica | André Koehne | CC-BY-SA 3.0 | [Wikimedia](https://commons.wikimedia.org/wiki/File:Method_Paulo_Freire.jpg) |
+| `desmatamento_mato_grosso.jpg` | Desmatamento no Mato Grosso — imagem de satélite (ago. 2006) | NASA FIRMS / LANCE | Domínio Público | [Wikimedia](https://commons.wikimedia.org/wiki/File:DeforestationinBrazil2.jpg) |
+| `colheitadeira_mecanizada.jpg` | Colheitadeira em campo de trigo, Hungria (1972) | Fortepan / Urbán Tamás | CC-BY-SA 3.0 | [Wikimedia](https://commons.wikimedia.org/wiki/File:Harvest,_agriculture,_grain,_wheat-field,_combine_harvester_Fortepan_89614.jpg) |
 
 ## Uso acadêmico
 
