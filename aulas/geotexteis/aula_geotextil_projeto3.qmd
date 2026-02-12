@@ -10,6 +10,7 @@ format:
     slide-number: true
     theme: [simple, assets/uefs.scss]
     controls: true
+    navigation-mode: linear
     width: 1280
     height: 720
     css: assets/custom.css
@@ -382,8 +383,6 @@ execute:
 - **c)**
 - **b)**
 - **a)**
----
-
 # {background-color="#034EA2"}
 
 [Obrigado!]{.obrigado-fit-text style="color: white;"}

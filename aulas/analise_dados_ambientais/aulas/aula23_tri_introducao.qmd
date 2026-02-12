@@ -8,11 +8,11 @@ format:
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS | Análise de Dados Ambientais | Introdução à TRI"
     slide-number: true
-    theme: [simple, assets/uefs.scss]
+    theme: [simple, ../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -21,8 +21,6 @@ execute:
 ---
 
 # [INTRODUÇÃO	À TEORIA DE RESPOSTA AO ITEM]{.section-header}
-
----
 
 ## {.smaller-text}
 
@@ -1131,8 +1129,6 @@ TAMANHO AMOSTRAL NECESSÁRIO (1-PL)
 
 TAMANHO AMOSTRAL NECESSÁRIO
 
-
----
 
 # {background-color="#034EA2"}
 

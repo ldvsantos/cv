@@ -8,11 +8,11 @@ format:
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS | Análise de Dados Ambientais | ANOVA de Uma Via"
     slide-number: true
-    theme: [simple, assets/uefs.scss]
+    theme: [simple, ../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -21,8 +21,6 @@ execute:
 ---
 
 # [ANÁLISE DE VARIÂNCIA]{.section-header}
-
----
 
 ## ANÁLISE DE VARIÂNCIA {.smaller-text}
 
@@ -427,8 +425,6 @@ Cohen (1992)
 | Grande | 0,80 | 0,80 | 0,80 |
 | Muito Grande | ≥ 1,30 | ≥ 1,30 | ≥ 1,30 |
 
-
----
 
 # {background-color="#034EA2"}
 

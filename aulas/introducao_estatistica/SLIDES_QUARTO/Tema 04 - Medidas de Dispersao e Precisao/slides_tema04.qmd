@@ -26,8 +26,6 @@ execute:
 
 # [Medidas de Dispersão e Precisão]{.section-header}
 
----
-
 ## Objetivos da Aula {.smaller-text}
 
 ::: {.columns}
@@ -71,11 +69,7 @@ dados <- data.frame(
 dados
 ```
 
----
-
 # [1) Amplitude (Range)]{.section-header}
-
----
 
 ## Amplitude {.smaller-text}
 
@@ -94,11 +88,7 @@ AT_tmp <- max(dados$temp_media_c) - min(dados$temp_media_c)
 AT_alt; AT_tmp
 ```
 
----
-
 # [2) Média (Mean) — Apoio]{.section-header}
-
----
 
 ## Média {.smaller-text}
 
@@ -115,11 +105,7 @@ media_tmp <- mean(dados$temp_media_c)
 media_alt; media_tmp
 ```
 
----
-
 # [3) Variância e Desvio-Padrão]{.section-header}
-
----
 
 ## Variância e Desvio-Padrão {.smaller-text}
 
@@ -155,11 +141,7 @@ c(var_alt = var_alt, sd_alt = sd_alt)
 c(var_tmp = var_tmp, sd_tmp = sd_tmp)
 ```
 
----
-
 # [4) Coeficiente de Variação (CV)]{.section-header}
-
----
 
 ## Coeficiente de Variação {.smaller-text}
 
@@ -183,11 +165,7 @@ CV_tmp <- cv(dados$temp_media_c)
 CV_alt; CV_tmp
 ```
 
----
-
 # [5) Erro Padrão da Média (SE)]{.section-header}
-
----
 
 ## Erro Padrão {.smaller-text}
 
@@ -220,11 +198,7 @@ SE_alt; SE_tmp
 :::
 :::
 
----
-
 # [6) Intervalo de Confiança (IC 95%)]{.section-header}
-
----
 
 ## Intervalo de Confiança {.smaller-text}
 
@@ -248,11 +222,7 @@ IC95_tmp <- c(
 IC95_alt; IC95_tmp
 ```
 
----
-
 # [7) Visualizações]{.section-header}
-
----
 
 ## Barras com Linha de Média (Altitude) {.smaller-text}
 
@@ -285,11 +255,7 @@ boxplot(dados$temp_media_c,
 par(mfrow = c(1, 1))
 ```
 
----
-
 # [8) Resumo Integrado]{.section-header}
-
----
 
 ## Resumo e Interpretação {.smaller-text}
 

@@ -8,11 +8,11 @@ format:
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS | Análise de Dados Ambientais | ANOVA Fatorial"
     slide-number: true
-    theme: [simple, assets/uefs.scss]
+    theme: [simple, ../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -21,8 +21,6 @@ execute:
 ---
 
 # [ANOVA FATORIAL]{.section-header}
-
----
 
 ## ANOVA FATORIAL {.smaller-text}
 
@@ -79,8 +77,6 @@ Por mais tentador que seja colocar muitas variáveis em uma ANOVA, lembre-se que
 
 múltiplas comparações irão tornar a discussão dos seus resultados um caos.
 
-
----
 
 # {background-color="#034EA2"}
 

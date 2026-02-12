@@ -8,11 +8,11 @@ format:
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS | Bioengenharia de Solos | O Solo"
     slide-number: true
-    theme: [simple, assets/uefs.scss]
+    theme: [simple, ../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -21,8 +21,6 @@ execute:
 ---
 
 # [O Solo]{.section-header}
-
----
 
 ## O Solo {.smaller-text}
 
@@ -58,15 +56,9 @@ Slide original contém 4 imagem(ns) ilustrativa(s).
 **CONSERVAÇÃO DO SOLO**
 
 
----
-
 # [OS SOLOS SÃO IGUAIS OU DIFERENTES?]{.section-header}
 
----
-
 # [O SOLO]{.section-header}
-
----
 
 ## {.smaller-text}
 
@@ -302,11 +294,7 @@ Slide original contém 1 imagem(ns) ilustrativa(s).
 **A baixa permeabilidade em subsuperfície condiciona ciclos de redução e oxidação do ferro, propiciando as cores acinzentadas ou variegadas e mosqueados. De maneira geral observa-se um horizonte eluvial e de cor clara sobrepondo o horizonte subsuperficial.**
 
 
----
-
 # [O SOLO]{.section-header}
-
----
 
 # {background-color="#034EA2"}
 

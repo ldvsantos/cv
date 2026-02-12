@@ -26,11 +26,7 @@ execute:
 
 # [Curso de Estatística — Parte 1 e 2]{.section-header}
 
----
-
 # [1 — Conhecendo os Dados]{.section-header}
-
----
 
 ## 1.1 — Dataset do Projeto {.smaller-text}
 
@@ -77,11 +73,7 @@ dados.shape
 dados.info()
 ```
 
----
-
 # [1.2 — Tipos de Dados]{.section-header}
-
----
 
 ## Variáveis Qualitativas {.smaller-text}
 
@@ -149,11 +141,7 @@ dados['Renda'].describe()
 :::
 :::
 
----
-
 # [2 — Distribuição de Frequências]{.section-header}
-
----
 
 ## 2.1 — Variáveis Qualitativas {.smaller-text}
 
@@ -253,11 +241,7 @@ ax.set(title='Distribuição da Renda', xlabel='Renda (R$)', ylabel='Frequência
 plt.show()
 ```
 
----
-
 # [3 — Medidas de Tendência Central]{.section-header}
-
----
 
 ## DataFrame de Exemplo {.smaller-text}
 
@@ -363,11 +347,7 @@ plt.show()
 :::
 :::
 
----
-
 # [4 — Medidas Separatrizes]{.section-header}
-
----
 
 ## 4.1 — Quartis, Decis e Percentis {.smaller-text}
 
@@ -409,11 +389,7 @@ ax.set(title='Box-plot: Renda', xlabel='Renda (R$)')
 plt.show()
 ```
 
----
-
 # [5 — Medidas de Dispersão]{.section-header}
-
----
 
 ## 5.1 — Desvio Médio Absoluto {.smaller-text}
 

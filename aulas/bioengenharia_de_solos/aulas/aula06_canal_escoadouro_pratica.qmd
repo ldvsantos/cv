@@ -8,11 +8,11 @@ format:
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS | Bioengenharia de Solos | Canal Escoadouro – Passo a Passo"
     slide-number: true
-    theme: [simple, assets/uefs.scss]
+    theme: [simple, ../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -102,8 +102,6 @@ Slide original contém 1 imagem(ns) ilustrativa(s).
 
 **D= (EV/EH) X 100**
 
-
----
 
 # {background-color="#034EA2"}
 

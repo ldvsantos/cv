@@ -8,11 +8,11 @@ format:
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS | Bioengenharia de Solos | Solo e Erosão"
     slide-number: true
-    theme: [simple, assets/uefs.scss]
+    theme: [simple, ../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -21,8 +21,6 @@ execute:
 ---
 
 # [Solo x Erosão]{.section-header}
-
----
 
 ## Solo x Erosão {.smaller-text}
 
@@ -39,11 +37,7 @@ DEPARTAENTO DE ENGENHARIA AGRONICA - DEA |
 | --- | --- |
 
 
----
-
 # [Erosão]{.section-header}
-
----
 
 ## ANEJO INADEQUADO DO SOLO {.smaller-text}
 
@@ -184,8 +178,6 @@ Fonte: NUÑEZ ET AL, 2003
 
 **USAR DESCOPACTADORES**
 
-
----
 
 # {background-color="#034EA2"}
 

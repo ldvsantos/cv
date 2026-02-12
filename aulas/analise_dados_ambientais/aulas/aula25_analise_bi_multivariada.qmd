@@ -8,11 +8,11 @@ format:
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS | Análise de Dados Ambientais | Análise Bi e Multivariada"
     slide-number: true
-    theme: [simple, assets/uefs.scss]
+    theme: [simple, ../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -21,8 +21,6 @@ execute:
 ---
 
 # [ESTATÍSTICA DESCRITIVA]{.section-header}
-
----
 
 ## ESTATÍSTICA DESCRITIVA {.smaller-text}
 
@@ -805,11 +803,7 @@ BRS Vitória
 **Tamanho de efeito: **
 
 
----
-
 # [DISTRIBUIÇÃO NORMAL]{.section-header}
-
----
 
 ## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
 
@@ -1438,11 +1432,7 @@ TEMPERA TURA
 Spurious Correlations
 
 
----
-
 # [REGRESSÃO]{.section-header}
-
----
 
 ## {.smaller-text}
 
@@ -3488,8 +3478,6 @@ ANOVA de Friedman: Substitui a ANOVA de Medidas Repetidas
 | 10 | 3 | 6 | 7 | 1 | 2 | 3 |
 | Soma |  |  |  | 13 | 21 | 26 |
 
-
----
 
 # {background-color="#034EA2"}
 

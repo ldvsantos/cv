@@ -8,11 +8,11 @@ format:
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS | Análise de Dados Ambientais | A Escolha do Teste Estatístico"
     slide-number: true
-    theme: [simple, assets/uefs.scss]
+    theme: [simple, ../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -202,8 +202,6 @@ Mínimo: 4 e máximo: 20
 
 **Por que tratamos a escala Likert como variável contínua?**
 
-
----
 
 # {background-color="#034EA2"}
 

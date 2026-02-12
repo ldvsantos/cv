@@ -10,6 +10,7 @@ format:
     slide-number: true
     theme: [simple, assets/uefs.scss]
     controls: true
+    navigation-mode: linear
     width: 1280
     height: 720
     css: assets/custom.css
@@ -255,8 +256,6 @@ execute:
 ![](images/slide22_3.png){fig-alt="Slide 22 imagem 3"}
 
 - **Geotira**** “****Geo-strip****”**** (GST)**
----
-
 # {background-color="#034EA2"}
 
 [Obrigado!]{.obrigado-fit-text style="color: white;"}

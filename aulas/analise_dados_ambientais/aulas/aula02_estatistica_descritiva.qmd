@@ -8,11 +8,11 @@ format:
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS | Análise de Dados Ambientais | Estatística Descritiva"
     slide-number: true
-    theme: [simple, assets/uefs.scss]
+    theme: [simple, ../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -21,8 +21,6 @@ execute:
 ---
 
 # [ESTATÍSTICA DESCRITIVA]{.section-header}
-
----
 
 ## ESTATÍSTICA DESCRITIVA {.smaller-text}
 
@@ -501,8 +499,6 @@ Média e EP fora da média populacional
 
 Site didático sobre Intervalo de Confiança: https://rpsychologist.com/d3/ci/
 
-
----
 
 # {background-color="#034EA2"}
 

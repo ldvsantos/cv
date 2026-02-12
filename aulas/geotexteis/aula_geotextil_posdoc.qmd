@@ -10,6 +10,7 @@ format:
     slide-number: true
     theme: [simple, assets/uefs.scss]
     controls: true
+    navigation-mode: linear
     width: 1280
     height: 720
     css: assets/custom.css
@@ -488,8 +489,6 @@ execute:
 - **Classificação do solo**
 - **Granulometria (areia, silte, argila, pedregulho): **indica susceptibilidade à erosão e estabilidade geral. **(****NBR 7181:2025).**
 - **Sistemas de classificação (****SiBCS****, HRB, classes texturais): **auxiliam na comparação com casos análogos e prescrições normativas.
----
-
 # {background-color="#034EA2"}
 
 [Obrigado!]{.obrigado-fit-text style="color: white;"}

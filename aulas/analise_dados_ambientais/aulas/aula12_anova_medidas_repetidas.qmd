@@ -8,11 +8,11 @@ format:
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS | Análise de Dados Ambientais | ANOVA de Medidas Repetidas"
     slide-number: true
-    theme: [simple, assets/uefs.scss]
+    theme: [simple, ../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -21,8 +21,6 @@ execute:
 ---
 
 # [ANÁLISE DE VARIÂNCIA]{.section-header}
-
----
 
 ## ANÁLISE DE VARIÂNCIA {.smaller-text}
 
@@ -175,8 +173,6 @@ Ao invés de um único banco, são gerados vários bancos de dados imputados
 
 MISSING
 
-
----
 
 # {background-color="#034EA2"}
 

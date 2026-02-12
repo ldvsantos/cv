@@ -8,11 +8,11 @@ format:
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS | Análise de Dados Ambientais | Estatística Inferencial e Distribuição Normal"
     slide-number: true
-    theme: [simple, assets/uefs.scss]
+    theme: [simple, ../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -329,11 +329,7 @@ O 𝑑𝑧​  é uma medida padronizada da diferença entre duas condições em
     - Poder = 1 – Beta (Prob. de Erro Tipo II) (1 – 0,20) = 0,80
     - Baixar G*Power
 
----
-
 # [DISTRIBUIÇÃO NORMAL]{.section-header}
-
----
 
 ## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
 
@@ -521,11 +517,7 @@ QUAIS DOS TESTES ESTATÍSTICOS UTILIZAR?
 
   - Shapiro-Wilk  > Anderson-Darling >  Kolmogorov-Smirnov (Liliefors) > Kolmogorov-Smirnov
 
----
-
 # [TAMANHO AMOSTRAL]{.section-header}
-
----
 
 # {background-color="#034EA2"}
 

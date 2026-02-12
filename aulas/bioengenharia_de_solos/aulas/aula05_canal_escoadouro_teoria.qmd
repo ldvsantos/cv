@@ -8,11 +8,11 @@ format:
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS | Bioengenharia de Solos | Canal Escoadouro – Teoria"
     slide-number: true
-    theme: [simple, assets/uefs.scss]
+    theme: [simple, ../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -444,8 +444,6 @@ E assim sucessivamente até o 14ºterraço,
 
 V14=(0,234 2/3 x 0,06½)/0,1	=  V14= 0,93 m.s-1
 
-
----
 
 # {background-color="#034EA2"}
 

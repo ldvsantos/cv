@@ -8,11 +8,11 @@ format:
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS | Análise de Dados Ambientais | Análise Fatorial Exploratória"
     slide-number: true
-    theme: [simple, assets/uefs.scss]
+    theme: [simple, ../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -21,8 +21,6 @@ execute:
 ---
 
 # [ANÁLISE FATORIAL EXPLORATÓRIA]{.section-header}
-
----
 
 ## {.smaller-text}
 
@@ -398,11 +396,7 @@ Em termos práticos...
 (administração, economia, etc.) é totalmente plausível.
 
 
----
-
 # [FATORABILIDADE DA MATRIZ]{.section-header}
-
----
 
 ## {.smaller-text}
 
@@ -438,11 +432,7 @@ Valores do teste de esfericidade de Bartlett com níveis de significância *p** 
 indicam que a matriz é fatorável (Tabachnick & Fidell, 2007),
 
 
----
-
 # [RETENÇÃO FATORIAL]{.section-header}
-
----
 
 ## {.smaller-text}
 
@@ -636,11 +626,7 @@ information; )
   - Foco em modelos parcimoniosos
   - Estrutura com menor valor de BIC é selecionada
 
----
-
 # [ROTAÇÃO FATORIAL]{.section-header}
-
----
 
 ## {.smaller-text}
 
@@ -689,11 +675,7 @@ ANÁLISE FATORIAL EXPLORATÓRIA
 (Fabrigar e colaboradores, 1999; Sass & Schmitt, 2010).
 
 
----
-
 # [TAMANHO AMOSTRAL]{.section-header}
-
----
 
 ## {.smaller-text}
 
@@ -758,11 +740,7 @@ Número de respondentes tende a ser menos importante na obtenção de uma boa es
 ANÁLISE FATORIAL EXPLORATÓRIA
 
 
----
-
 # [VARIÂNCIA EXPLICADA]{.section-header}
-
----
 
 ## {.smaller-text}
 
@@ -787,11 +765,7 @@ interpreta o número?
 (Peterson, 2000)
 
 
----
-
 # [FIDEDIGNIDADE]{.section-header}
-
----
 
 ## {.smaller-text}
 
@@ -894,8 +868,6 @@ Timmerman, M. E., & Lorenzo-Seva, U. (2011). Dimensionality assessment of ordere
 
 Methods, 16(2), 209-220. doi:https://dx.doi. org/10.1037/a0023353
 
-
----
 
 # {background-color="#034EA2"}
 

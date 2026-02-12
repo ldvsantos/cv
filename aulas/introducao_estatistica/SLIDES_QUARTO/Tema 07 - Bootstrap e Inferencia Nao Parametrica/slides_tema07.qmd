@@ -42,11 +42,7 @@ Compreender o método bootstrap como alternativa não paramétrica para inferên
 :::
 :::
 
----
-
 # [1 — POR QUE BOOTSTRAP?]{.section-header}
-
----
 
 ## Limitações da inferência clássica {.smaller-text}
 
@@ -90,11 +86,7 @@ Dado um conjunto de dados observados $\mathbf{x} = (x_1, x_2, \ldots, x_n)$, o b
 2. Calcular a estatística de interesse $\hat{\theta}^{*}_b$ em cada amostra
 3. Usar a distribuição de $\hat{\theta}^{*}_1, \ldots, \hat{\theta}^{*}_B$ para estimar o **erro padrão** e o **intervalo de confiança** de $\hat{\theta}$
 
----
-
 # [2 — BOOTSTRAP NÃO PARAMÉTRICO]{.section-header}
-
----
 
 ## Algoritmo passo a passo {.smaller-text}
 
@@ -146,11 +138,7 @@ $$IC = \hat{\theta} \pm z_{\alpha/2} \times SE_{boot}$$
 
 Assume normalidade da distribuição bootstrap — geralmente válido para $B$ grande.
 
----
-
 # [3 — LABORATÓRIO EM R]{.section-header}
-
----
 
 ## Instalação e carregamento {.smaller-text}
 
@@ -351,8 +339,6 @@ Aplique para cada espécie usando `subset()` ou `dplyr::filter()`.
 - Efron, B., & Tibshirani, R. J. (1993). *An Introduction to the Bootstrap*. Chapman & Hall.
 - Davison, A. C., & Hinkley, D. V. (1997). *Bootstrap Methods and Their Application*. Cambridge University Press.
 - Canty, A., & Ripley, B. D. (2024). boot: Bootstrap R Functions. R package.
-
----
 
 # {background-color="#034EA2"}
 

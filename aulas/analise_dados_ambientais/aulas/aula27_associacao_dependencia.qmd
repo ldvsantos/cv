@@ -8,11 +8,11 @@ format:
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS | Análise de Dados Ambientais | Modelos de Associação e Dependência"
     slide-number: true
-    theme: [simple, assets/uefs.scss]
+    theme: [simple, ../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -21,8 +21,6 @@ execute:
 ---
 
 # [DISTRIBUIÇÃO NORMAL]{.section-header}
-
----
 
 ## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
 
@@ -642,11 +640,7 @@ TEMPERA TURA
 Spurious Correlations
 
 
----
-
 # [REGRESSÃO]{.section-header}
-
----
 
 ## {.smaller-text}
 
@@ -1205,8 +1199,6 @@ BINÁRIA
 Classification plots
 
   - Histograma dos valores reais e previstos para o desfecho;
-
----
 
 # {background-color="#034EA2"}
 

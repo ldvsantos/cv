@@ -8,11 +8,11 @@ format:
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS | Análise de Dados Ambientais | Regressão"
     slide-number: true
-    theme: [simple, assets/uefs.scss]
+    theme: [simple, ../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -21,8 +21,6 @@ execute:
 ---
 
 # [REGRESSÃO]{.section-header}
-
----
 
 ## {.smaller-text}
 
@@ -886,8 +884,6 @@ BINÁRIA
   - **Interpretação**:
     - Com precisão de 83,1%, significa que, entre os casos previstos como "Sim", 83,1% eram realmente positivos.
   - **Relevante quando os ****dados estão**** ****desbalanceados**, pois a precisão mostra quão confiáveis são as previsões positivas.
-
----
 
 # {background-color="#034EA2"}
 

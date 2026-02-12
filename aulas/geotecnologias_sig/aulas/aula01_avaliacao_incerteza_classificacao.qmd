@@ -42,11 +42,7 @@ Compreender as métricas de avaliação da qualidade de mapas de uso e cobertura
 :::
 :::
 
----
-
 # [1 — POR QUE AVALIAR ACURÁCIA?]{.section-header}
-
----
 
 ## O problema da confiabilidade {.smaller-text}
 
@@ -94,11 +90,7 @@ O processo de avaliação segue quatro etapas principais:
 
 : {.striped .hover}
 
----
-
 # [2 — AMOSTRAGEM DE REFERÊNCIA]{.section-header}
-
----
 
 ## Tipos de amostragem {.smaller-text}
 
@@ -136,11 +128,7 @@ $n \approx 384$ amostras (mínimo global)
 :::
 :::
 
----
-
 # [3 — MATRIZ DE CONFUSÃO]{.section-header}
-
----
 
 ## Estrutura da matriz {.smaller-text}
 
@@ -197,11 +185,7 @@ Mede a probabilidade de um pixel mapeado realmente pertencer àquela classe (com
 :::
 :::
 
----
-
 # [4 — ÍNDICE KAPPA]{.section-header}
-
----
 
 ## O coeficiente Kappa de Cohen {.smaller-text}
 
@@ -265,11 +249,7 @@ $$F1_i = 2 \times \frac{PA_i \times UA_i}{PA_i + UA_i}$$
 **Na graduação:** aprendam Kappa (ainda amplamente usado), mas conheçam as limitações e citem as alternativas em relatórios e TCC.
 :::
 
----
-
 # [5 — MAPAS DE PROBABILIDADE]{.section-header}
-
----
 
 ## O que são mapas de probabilidade? {.smaller-text}
 
@@ -297,11 +277,7 @@ Atribui a cada pixel o valor de probabilidade da classe com maior score. Indica 
 :::
 :::
 
----
-
 # [6 — PRÁTICA NO GOOGLE EARTH ENGINE]{.section-header}
-
----
 
 ## Roteiro no GEE — Parte 1 {.smaller-text}
 
@@ -433,8 +409,6 @@ Map.addLayer(prob_max, {min: 0.3, max: 1.0,
 - Pontius, R. G., & Millones, M. (2011). Death to Kappa. *Int. J. Remote Sensing*, 32(21), 6321–6338.
 - Landis, J. R., & Koch, G. G. (1977). The measurement of observer agreement for categorical data. *Biometrics*, 33, 159–174.
 - Gorelick, N. et al. (2017). Google Earth Engine. *Remote Sensing of Environment*, 202, 18–27.
-
----
 
 # {background-color="#034EA2"}
 

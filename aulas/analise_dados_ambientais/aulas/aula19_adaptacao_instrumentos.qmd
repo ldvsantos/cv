@@ -8,11 +8,11 @@ format:
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS | Análise de Dados Ambientais | Adaptação de Instrumentos de Medida"
     slide-number: true
-    theme: [simple, assets/uefs.scss]
+    theme: [simple, ../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -21,8 +21,6 @@ execute:
 ---
 
 # [ADAPTAÇÃO]{.section-header}
-
----
 
 ## ADAPTAÇÃO {.smaller-text}
 
@@ -303,8 +301,6 @@ Estudo piloto quantitativo?
   - Se acontecer um problema, o problema está na medida ou no *N*?
 Back-translation
 
-
----
 
 # {background-color="#034EA2"}
 

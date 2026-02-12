@@ -8,11 +8,11 @@ format:
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS | Análise de Dados Ambientais | Introdução e Etimologia Estatística"
     slide-number: true
-    theme: [simple, assets/uefs.scss]
+    theme: [simple, ../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -248,8 +248,6 @@ Moda: 9, 10, 13
 | 15 | 1 | 19 | 5.0% |
 | 16 | 1 | 20 | 5.0% |
 
-
----
 
 # {background-color="#034EA2"}
 

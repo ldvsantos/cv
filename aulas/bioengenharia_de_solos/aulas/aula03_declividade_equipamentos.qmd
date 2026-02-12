@@ -8,11 +8,11 @@ format:
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS | Bioengenharia de Solos | Declividade – Equipamentos"
     slide-number: true
-    theme: [simple, assets/uefs.scss]
+    theme: [simple, ../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -21,8 +21,6 @@ execute:
 ---
 
 # [Disciplina: anejo e Conservação da gua e do Solo]{.section-header}
-
----
 
 ## Disciplina: anejo e Conservação da gua e do Solo {.smaller-text}
 
@@ -117,8 +115,6 @@ Clculo de Declividade:
 
 D= ((L1-L2) + (L3-L4) + (L5-L6)... (Ln – Ln+1))/ H1+H2+ H3... + Hn)) *100
 
-
----
 
 # {background-color="#034EA2"}
 

@@ -8,11 +8,11 @@ format:
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS | Análise de Dados Ambientais | ANCOVA"
     slide-number: true
-    theme: [simple, assets/uefs.scss]
+    theme: [simple, ../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -21,8 +21,6 @@ execute:
 ---
 
 # [ANÁLISE DE COVARIÂNCIA]{.section-header}
-
----
 
 ## ANÁLISE DE COVARIÂNCIA {.smaller-text}
 
@@ -71,8 +69,6 @@ Análise de Covariância
   - VI (Grupo)
   - VD (Desfecho)
   - Co-variável (categórica ou ordinal)
-
----
 
 # {background-color="#034EA2"}
 

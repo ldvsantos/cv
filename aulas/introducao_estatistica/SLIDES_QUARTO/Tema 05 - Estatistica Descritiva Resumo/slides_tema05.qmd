@@ -26,8 +26,6 @@ execute:
 
 # [Estatística Descritiva]{.section-header}
 
----
-
 ## O que são {.smaller-text}
 
 A **estatística descritiva** é um ramo da estatística que aplica várias técnicas para **descrever e sumarizar** um conjunto de dados.
@@ -73,11 +71,7 @@ Enquanto a estatística descritiva se limita a **resumir e apresentar** os dados
 :::
 :::
 
----
-
 # [I. Medidas de Posição (Tendência Central)]{.section-header}
-
----
 
 ## Objetivo e Dados de Exemplo {.smaller-text}
 
@@ -167,11 +161,7 @@ mediana <- median(dados)
 mediana
 ```
 
----
-
 # [II. Medidas de Dispersão]{.section-header}
-
----
 
 ## Objetivos {.smaller-text}
 

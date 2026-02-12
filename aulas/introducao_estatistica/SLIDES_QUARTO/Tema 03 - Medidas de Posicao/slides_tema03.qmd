@@ -26,8 +26,6 @@ execute:
 
 # [I. Introdução]{.section-header}
 
----
-
 ## Medidas de Posição {.smaller-text}
 
 As medidas de posição permitem **resumir e localizar** informações centrais em distribuições de dados. Elas orientam quanto à posição da distribuição em relação ao eixo horizontal.
@@ -39,11 +37,7 @@ As medidas de posição permitem **resumir e localizar** informações centrais 
 - **Mediana**
 - **Separatrizes** (quartis, decis, percentis)
 
----
-
 # [1 — Média]{.section-header}
-
----
 
 ## Caso 1 — Dados não agrupados {.smaller-text}
 
@@ -128,11 +122,7 @@ media_idades
 :::
 :::
 
----
-
 # [2 — Moda]{.section-header}
-
----
 
 ## Conceito e Classificação {.smaller-text}
 
@@ -248,11 +238,7 @@ Mo
 
 $$Mo = 158 + \frac{6}{6 + 11} \cdot 8 = 158 + 2{,}82 = 160{,}8$$
 
----
-
 # [3 — Mediana]{.section-header}
-
----
 
 ## Caso 1 — Dados não agrupados {.smaller-text}
 

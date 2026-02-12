@@ -8,11 +8,11 @@ format:
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS | Análise de Dados Ambientais | Modelo de Rasch"
     slide-number: true
-    theme: [simple, assets/uefs.scss]
+    theme: [simple, ../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -21,8 +21,6 @@ execute:
 ---
 
 # [ANÁLISE DE RASCH]{.section-header}
-
----
 
 ## ANÁLISE DE RASCH {.smaller-text}
 
@@ -1086,8 +1084,6 @@ Zhu, W. (2002). A confirmatory study of Rasch-based optimal categorization of a 
 
 REFERÊNCIAS
 
-
----
 
 # {background-color="#034EA2"}
 

@@ -8,11 +8,11 @@ format:
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS | Análise de Dados Ambientais | Evidências de Validade"
     slide-number: true
-    theme: [simple, assets/uefs.scss]
+    theme: [simple, ../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -21,8 +21,6 @@ execute:
 ---
 
 # [EVIDÊNCIAS DE]{.section-header}
-
----
 
 ## EVIDÊNCIAS DE {.smaller-text}
 
@@ -114,11 +112,7 @@ Modelo atual (AERA, APA, & NCME, 1999; 2014)
 VALIDADE DE INSTRUMENTOS
 
 
----
-
 # [VALIDADE DE CONTEÚDO]{.section-header}
-
----
 
 ## {.smaller-text}
 
@@ -176,11 +170,7 @@ VALIDADE DE CONTEÚDO
 | Bland-Altman |
 
 
----
-
 # [ESTRUTURA INTERNA]{.section-header}
-
----
 
 ## {.smaller-text}
 
@@ -604,11 +594,7 @@ não serem úteis como base para as inferências que precisamos fazer”
 CONFIABILIDADE
 
 
----
-
 # [RELAÇÕES COM MEDIDAS EXTERNAS]{.section-header}
-
----
 
 ## {.smaller-text}
 
@@ -902,11 +888,7 @@ Acidentes no trânsito Desempenho acadêmico Desempenho profissional Queda em Id
 CONFIABILIDADE
 
 
----
-
 # [EVIDÊNCIAS BASEADAS NO	PROCESSO DE RESPOSTA]{.section-header}
-
----
 
 ## {.smaller-text}
 
@@ -987,11 +969,7 @@ Desordenação de Thresholds
 EVIDÊNCIAS BASEADAS NO PROCESSO DE RESPOSTA
 
 
----
-
 # [VALIDADE CONSEQUENCIAL]{.section-header}
-
----
 
 ## {.smaller-text}
 
@@ -1092,8 +1070,6 @@ Urbina, S. (2007). Fundamentos da testagem psicológica. Porto Alegre: Artmed.
 
 REFERENCIAS
 
-
----
 
 # {background-color="#034EA2"}
 

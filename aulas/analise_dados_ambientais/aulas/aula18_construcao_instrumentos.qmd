@@ -8,11 +8,11 @@ format:
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS | Análise de Dados Ambientais | Construção de Instrumentos de Medida"
     slide-number: true
-    theme: [simple, assets/uefs.scss]
+    theme: [simple, ../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -21,8 +21,6 @@ execute:
 ---
 
 # [CONSTRUÇÃO E ADAPTAÇÃO]{.section-header}
-
----
 
 ## CONSTRUÇÃO E ADAPTAÇÃO {.smaller-text}
 
@@ -969,8 +967,6 @@ Rubio DM, Berg-Weger M, Tebb SS, Lee S, Rauch S. Objectifying content validity: 
 
 Wilson, F. R., Pan, W., & Schumsky, D. A. (2012). *Recalculation **of **the **Critical **Values** **for **Lawshe’s **Content **Validity **Ratio.** **Measurement** **and ** **Evaluation** **in** **Counseling** **and** **Development,** **45(3),** **197–210.** *doi:10.1177/0748175612440286
 
-
----
 
 # {background-color="#034EA2"}
 
