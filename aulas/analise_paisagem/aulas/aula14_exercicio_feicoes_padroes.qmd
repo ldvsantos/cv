@@ -1,0 +1,424 @@
+---
+title: "Análise da Paisagem"
+subtitle: "Aula 14 — Exercício: Identificação de Feições e Padrões<br>Curso de Geografia"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026-04-08"
+format:
+  revealjs:
+    logo: ../../assets/logo-uefs.webp
+    footer: "UEFS | Análise da Paisagem | Aula 14"
+    slide-number: true
+    theme: [simple, ../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Roteiro do exercício prático
+- [2]{.circle} Composições coloridas na área de estudo
+- [3]{.circle} Cálculo e interpretação de índices (NDVI, NDWI)
+- [4]{.circle} Identificação e mapeamento de feições
+- [5]{.circle} Comparação com MapBiomas
+- [6]{.circle} Discussão e síntese
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Aplicar os fundamentos de sensoriamento remoto da Aula 13 em **exercício prático orientado**: acessar imagens Sentinel-2, gerar composições e índices, identificar feições e padrões de uso/cobertura na área de estudo.
+:::
+:::
+:::
+
+---
+
+# [1 — ROTEIRO DO EXERCÍCIO]{.section-header}
+
+---
+
+## Estrutura da atividade prática {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Etapas (80 min)
+
+| Etapa | Atividade | Tempo |
+|:-----:|----------|:-----:|
+| 1 | Acesso à imagem e composições | 15 min |
+| 2 | Cálculo de NDVI e NDWI | 15 min |
+| 3 | Identificação de feições | 20 min |
+| 4 | Comparação com MapBiomas | 15 min |
+| 5 | Discussão e síntese | 15 min |
+
+: {.striped .hover}
+
+### Materiais necessários
+
+- Computador com acesso à internet
+- Conta no **Google Earth Engine** (GEE)
+- **QGIS** instalado (opcional para visualização local)
+- Shapefile/GeoJSON da **área de estudo** (Aula 08)
+- Slides da Aula 13 (referência)
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### O que será produzido
+
+Ao final da aula, cada estudante terá:
+
+1. **Três composições coloridas** da área de estudo:
+   - Cor verdadeira (B4-B3-B2)
+   - Falsa cor vegetação (B8-B4-B3)
+   - SWIR (B12-B8-B4)
+
+2. **Dois mapas de índices**:
+   - NDVI (com legenda de classes)
+   - NDWI (com delimitação de corpos d'água)
+
+3. **Tabela de feições identificadas** com:
+   - Tipo de feição (classe)
+   - Localização (coordenadas ou descrição)
+   - Evidência espectral (como foi identificada)
+   - Observações
+
+4. **Comparação qualitativa** com MapBiomas
+
+> Esse material será incorporado ao **dossiê** como evidência de sensoriamento remoto.
+:::
+:::
+:::
+
+---
+
+# [2 — COMPOSIÇÕES COLORIDAS]{.section-header}
+
+---
+
+## Etapa 1: acessar imagem e gerar composições {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### No Google Earth Engine
+
+```javascript
+// 1. Definir área de estudo
+var area = ee.FeatureCollection('projects/...')
+  // ou usar geometria desenhada
+
+// 2. Filtrar Sentinel-2 (Level-2A)
+var imagem = ee.ImageCollection('COPERNICUS/S2_SR')
+  .filterBounds(area)
+  .filterDate('2025-06-01', '2025-12-31')
+  .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE', 20))
+  .median()
+  .clip(area);
+
+// 3. Composição cor verdadeira
+Map.addLayer(imagem, 
+  {bands: ['B4','B3','B2'], min: 0, max: 3000},
+  'Cor verdadeira');
+
+// 4. Composição falsa cor (vegetação)
+Map.addLayer(imagem, 
+  {bands: ['B8','B4','B3'], min: 0, max: 4000},
+  'Falsa cor vegetação');
+
+// 5. Composição SWIR
+Map.addLayer(imagem, 
+  {bands: ['B12','B8','B4'], min: 0, max: 4000},
+  'SWIR');
+```
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### O que observar em cada composição
+
+**Cor verdadeira (B4-B3-B2):**
+
+- Vegetação aparece em tons de **verde**
+- Solo exposto em **bege/marrom**
+- Água em **azul escuro/preto**
+- Semelhante ao que o olho vê
+
+**Falsa cor vegetação (B8-B4-B3):**
+
+- Vegetação densa em **vermelho vivo**
+- Vegetação rala em **rosa/vermelho claro**
+- Solo exposto em **ciano/azul claro**
+- Água em **preto**
+
+**SWIR (B12-B8-B4):**
+
+- Vegetação em **verde**
+- Solo seco/exposto em **magenta/rosa**
+- Áreas queimadas em **vermelho escuro**
+- Água em **azul escuro**
+:::
+:::
+:::
+
+---
+
+# [3 — ÍNDICES ESPECTRAIS]{.section-header}
+
+---
+
+## Etapa 2: cálculo de NDVI e NDWI {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### NDVI no GEE
+
+```javascript
+// Calcular NDVI
+var ndvi = imagem.normalizedDifference(['B8','B4'])
+  .rename('NDVI');
+
+// Visualizar com paleta de cores
+var paletaNDVI = {
+  min: -0.2, max: 0.8,
+  palette: ['red','orange','yellow',
+            'lightgreen','green','darkgreen']
+};
+Map.addLayer(ndvi, paletaNDVI, 'NDVI');
+```
+
+### Interpretação do NDVI
+
+| Classe | Faixa | Cor na paleta |
+|--------|:-----:|:------------:|
+| Água/solo nu | < 0,1 | Vermelho |
+| Solo exposto / veg. rala | 0,1–0,2 | Laranja |
+| Pastagem degradada | 0,2–0,3 | Amarelo |
+| Pastagem / caatinga aberta | 0,3–0,5 | Verde claro |
+| Vegetação arbórea | 0,5–0,7 | Verde |
+| Floresta densa | > 0,7 | Verde escuro |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+### NDWI no GEE
+
+```javascript
+// Calcular NDWI
+var ndwi = imagem.normalizedDifference(['B3','B8'])
+  .rename('NDWI');
+
+// Visualizar
+var paletaNDWI = {
+  min: -0.5, max: 0.5,
+  palette: ['brown','white','cyan','blue']
+};
+Map.addLayer(ndwi, paletaNDWI, 'NDWI');
+
+// Máscara de água (NDWI > 0)
+var agua = ndwi.gt(0);
+Map.addLayer(agua.selfMask(), 
+  {palette: ['blue']}, 'Corpos d\'água');
+```
+
+::: {.highlight-box}
+### Tarefa
+
+1. Gere os mapas de NDVI e NDWI
+2. Identifique as faixas de NDVI predominantes na área
+3. Delimite corpos d'água com a máscara NDWI > 0
+4. Exporte ou capture as imagens para o dossiê
+5. Registre: qual a faixa de NDVI mais frequente? O que isso indica sobre a paisagem?
+:::
+:::
+:::
+
+---
+
+# [4 — IDENTIFICAÇÃO DE FEIÇÕES]{.section-header}
+
+---
+
+## Etapa 3: mapeamento de feições {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Roteiro de identificação
+
+Usando as composições e índices, identifique na área de estudo:
+
+1. **Fragmentos de vegetação nativa**
+   - Localização, tamanho aproximado, forma
+   - Evidência: cor vermelha em falsa cor; NDVI > 0,5
+
+2. **Matriz da paisagem**
+   - Classe dominante (pastagem? agricultura?)
+   - Evidência: NDVI, composição, contexto
+
+3. **Corpos d'água**
+   - Rios, açudes, reservatórios
+   - Evidência: NDWI > 0; cor escura em infravermelho
+
+4. **Solo exposto / áreas degradadas**
+   - Manchas claras em falsa cor; NDVI < 0,2
+   - Contexto: encosta? margem? estrada?
+
+5. **Infraestrutura / área urbana**
+   - Padrão geométrico, textura lisa
+   - Evidência: NDBI, composição SWIR
+
+6. **Feições lineares**
+   - Rios, estradas, limites de propriedade, cercas vivas
+:::
+
+::: {.column width="50%"}
+### Tabela de feições (modelo)
+
+| # | Feição | Classe | Evidência espectral | Observação |
+|:-:|--------|--------|-------------------|-----------|
+| 1 | Fragmento mata ciliar | Vegetação arbórea | NDVI 0,62; vermelho vivo em falsa cor | ~ 5 ha, margens do rio principal |
+| 2 | Pastagem degradada | Solo exposto/pastagem | NDVI 0,15; tom rosado em falsa cor | Encosta com sinais de erosão |
+| 3 | Açude | Água | NDWI 0,35; preto em NIR | ~ 1 ha, próximo à sede da fazenda |
+| 4 | Pivô de irrigação | Agricultura | NDVI 0,55; padrão circular | Cultura irrigada |
+| 5 | Estrada vicinal | Infraestrutura | NDVI ~0; linha clara em todas composições | Conecta BR a comunidade |
+
+: {.striped .hover}
+
+::: {.info-box}
+**Mínimo:** 6 feições identificadas, com evidência espectral documentada.
+:::
+:::
+:::
+
+---
+
+# [5 — COMPARAÇÃO COM MAPBIOMAS]{.section-header}
+
+---
+
+## Etapa 4: validação cruzada {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Acesso ao MapBiomas
+
+1. Acessar [mapbiomas.org](https://mapbiomas.org)
+2. Ir em **Mapas e Dados → Plataforma**
+3. Navegar até a área de estudo
+4. Selecionar ano mais recente disponível
+5. Comparar as classes MapBiomas com as feições identificadas
+
+### Perguntas-guia
+
+- As classes que você identificou **coincidem** com as do MapBiomas?
+- Há **discordâncias**? Onde e por quê?
+- O MapBiomas **omite** alguma feição que você identificou?
+- Alguma classe do MapBiomas **não faz sentido** na sua análise?
+
+> Discordâncias são normais e esperadas — diferenças de resolução (30 m MapBiomas vs. 10 m Sentinel-2) e método (automático vs. visual).
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Modelo de comparação
+
+| Feição | Sua classificação | MapBiomas | Concorda? | Comentário |
+|--------|------------------|-----------|:---------:|-----------|
+| Fragmento 1 | Mata ciliar | Formação florestal | ✅ Sim | Boa concordância |
+| Pastagem N | Pastagem degradada | Pastagem | ✅ Parcial | MapBiomas não distingue degradação |
+| Solo exposto | Solo exposto (erosão) | Pastagem | ❌ Não | Resolução 30 m não detectou |
+| Açude | Corpo d'água | Corpo d'água | ✅ Sim | — |
+| Pivô | Cultura irrigada | Agricultura | ✅ Sim | — |
+
+: {.striped .hover}
+
+### Reflexão
+
+> *"O mapa não é o território."* A classificação automática tem **limitações** (resolução, método, época). A interpretação visual do analista **complementa** a classificação automática — e vice-versa.
+:::
+:::
+:::
+
+---
+
+# [6 — DISCUSSÃO E SÍNTESE]{.section-header}
+
+---
+
+## Etapa 5: discussão coletiva {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Questões para discussão
+
+1. **Composição mais útil:** qual composição foi mais informativa para a sua área? Por quê?
+
+2. **NDVI como evidência:** que informação o NDVI trouxe que não era visível na composição RGB?
+
+3. **Limitações:** que feições foram **difíceis de identificar** por SR? O que seria necessário para melhorar?
+
+4. **Escala e resolução:** se usássemos Landsat (30 m) em vez de Sentinel-2 (10 m), que feições seriam perdidas?
+
+5. **Temporal:** em que época do ano a imagem foi adquirida? Como a **sazonalidade** pode afetar a interpretação?
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Entrega da Aula 14
+
+**Formato:** documento ou pasta digital contendo:
+
+1. Capturas das 3 composições coloridas (com legenda)
+2. Mapas de NDVI e NDWI (com legenda)
+3. Tabela de feições identificadas (≥ 6 feições)
+4. Tabela de comparação com MapBiomas
+5. 1 parágrafo de síntese: "O que o SR revelou sobre a paisagem da área de estudo?"
+
+**Prazo:** próxima semana (antes da Aula 15)
+
+> Este material será incorporado ao **dossiê** como segunda camada de evidência (após a cartografia temática da Aula 08).
+:::
+:::
+:::
+
+---
+
+## Síntese da Aula 14 {.smaller-text}
+
+::: {.info-box}
+### O que fizemos hoje
+
+1. **Acessamos imagem Sentinel-2** no GEE para a área de estudo
+2. **Geramos composições coloridas** — cor verdadeira, falsa cor, SWIR
+3. **Calculamos índices** — NDVI (vegetação) e NDWI (água)
+4. **Identificamos feições** — fragmentos, pastagem, solo exposto, água, infraestrutura
+5. **Comparamos com MapBiomas** — concordâncias e discordâncias
+6. **Discutimos limitações** — resolução, sazonalidade, método
+:::
+
+---
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+
+Análise da Paisagem — Aula 14
+:::

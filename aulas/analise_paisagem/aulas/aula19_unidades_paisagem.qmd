@@ -1,0 +1,371 @@
+---
+title: "Análise da Paisagem"
+subtitle: "Aula 19 — Unidades de Paisagem: Delimitação e Caracterização<br>Curso de Geografia"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026-04-29"
+format:
+  revealjs:
+    logo: ../../assets/logo-uefs.webp
+    footer: "UEFS | Análise da Paisagem | Aula 19"
+    slide-number: true
+    theme: [simple, ../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} O que são unidades de paisagem
+- [2]{.circle} Critérios de delimitação
+- [3]{.circle} Métodos de delimitação
+- [4]{.circle} Caracterização e ficha descritiva
+- [5]{.circle} Integração de evidências
+- [6]{.circle} Oficina: delimitação na área de estudo
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Compreender o conceito de **unidades de paisagem**, aplicar **critérios de delimitação** e elaborar **fichas descritivas** integrando evidências cartográficas, espectrais e métricas para a área de estudo — etapa central do dossiê.
+:::
+:::
+:::
+
+---
+
+# [1 — O QUE SÃO UNIDADES DE PAISAGEM]{.section-header}
+
+---
+
+## Conceito e finalidade {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Definição
+
+**Unidades de paisagem** são porções do território delimitadas com base na **homogeneidade relativa** de seus componentes (relevo, cobertura, uso, processos) e nas **relações funcionais** que os integram.
+
+### Outros nomes
+
+- Unidades geoambientais (Ab'Sáber)
+- Geocomplexos (Bertrand)
+- Geofácies / Geótopos (hierarquia escalar)
+- Unidades de terra (land units)
+- Paisagens elementares (escola soviética)
+
+### Finalidade
+
+1. **Síntese espacial** — organizar a diversidade da paisagem em unidades manejáveis
+2. **Diagnóstico** — cada unidade permite avaliação específica de potencialidades e limitações
+3. **Planejamento** — base para zoneamentos e diretrizes diferenciadas
+4. **Comunicação** — facilitar a leitura do território por diferentes atores
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Unidade de paisagem ≠ classe de uso
+
+| Aspecto | Classe de uso | Unidade de paisagem |
+|---------|-------------|-------------------|
+| **Base** | Cobertura/uso | Integração de componentes |
+| **Critério** | Espectral/visual | Funcional/estrutural |
+| **Limite** | Pixel/polígono | Gradiente/transição |
+| **Conteúdo** | Uma variável | Múltiplas variáveis |
+| **Produto** | Mapa temático | Mapa-síntese |
+
+: {.striped .hover}
+
+### Exemplo
+
+Uma **"Planície fluvial com pastagem degradada e fragmentos de mata ciliar"** é uma unidade de paisagem que integra:
+
+- Relevo (planície)
+- Geomorfologia (fluvial)
+- Uso (pastagem)
+- Estado (degradada)
+- Vegetação remanescente (mata ciliar)
+- Processo (erosão fluvial, assoreamento)
+
+> A unidade não é apenas "pastagem" — é a **articulação** de componentes em um espaço funcional.
+:::
+:::
+:::
+
+---
+
+# [2 — CRITÉRIOS DE DELIMITAÇÃO]{.section-header}
+
+---
+
+## Que variáveis usar? {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Critérios de 1ª ordem (estruturais)
+
+| Critério | Variável | Fonte |
+|----------|---------|-------|
+| **Relevo** | Classes de declividade, formas, altitude | MDE (TOPODATA, SRTM) |
+| **Geomorfologia** | Compartimentos, modelados | Mapa geomorfológico (IBGE, CPRM) |
+| **Geologia/solos** | Litologia, tipo de solo | CPRM, EMBRAPA |
+| **Hidrografia** | Rede de drenagem, bacias | ANA, bases topográficas |
+
+: {.striped .hover}
+
+### Critérios de 2ª ordem (cobertura/uso)
+
+| Critério | Variável | Fonte |
+|----------|---------|-------|
+| **Cobertura vegetal** | Tipo, estado, proporção | MapBiomas, Sentinel-2 |
+| **Uso da terra** | Atividade dominante | Interpretação visual, IBGE |
+| **Padrão espacial** | Fragmentação, conectividade | Métricas (Aulas 17–18) |
+| **Dinâmica** | Tendência de mudança | Série temporal (Aulas 15–16) |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+### Critérios de 3ª ordem (processos/pressões)
+
+| Critério | Variável | Fonte |
+|----------|---------|-------|
+| **Erosão** | Cicatrizes, voçorocas | Imagem, campo |
+| **Urbanização** | Expansão, impermeabilização | Imagem, dados censitários |
+| **Disponibilidade hídrica** | Perenidade, açudes | ANA, campo |
+| **Pressão antrópica** | Intensidade de uso | Interpretação integrada |
+
+: {.striped .hover}
+
+::: {.info-box}
+### Princípio-chave
+
+> *"A delimitação de unidades de paisagem é um ato de SÍNTESE, não de soma."*
+
+Não se trata de sobrepor todos os mapas. Trata-se de identificar **padrões recorrentes** — combinações de relevo + cobertura + uso + processo que se repetem e definem porções funcionalmente distintas do território.
+:::
+:::
+:::
+
+---
+
+# [3 — MÉTODOS DE DELIMITAÇÃO]{.section-header}
+
+---
+
+## Abordagens práticas {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Método 1: Sobreposição ponderada (overlay)
+
+1. Reunir mapas temáticos (relevo, uso, vegetação, processos)
+2. Sobrepor em GIS (QGIS)
+3. Identificar **zonas de convergência** — onde vários fatores mudam simultaneamente
+4. Delimitar limites com base nos gradientes
+
+**Vantagem:** reproduzível, particiável
+**Limitação:** depende da qualidade e resolução dos dados
+
+### Método 2: Interpretação integrada (expert)
+
+1. Visualizar composições de imagem + MDE + mapas
+2. Identificar **padrões visuais** — textura, tonalidade, forma, arranjo
+3. Delimitar unidades por **julgamento do especialista**
+4. Validar com dados e/ou campo
+
+**Vantagem:** capta nuances que algoritmos perdem
+**Limitação:** subjetividade, difícil replicar
+:::
+
+::: {.column width="50%"}
+### Método 3: Combinação (recomendado)
+
+1. Usar overlay como **base inicial**
+2. Ajustar por **interpretação integrada**
+3. Validar com **métricas e campo**
+
+### Hierarquia escalar (Bertrand adaptado)
+
+| Nível | Escala | Critério dominante | Exemplo |
+|-------|:------:|-------------------|---------|
+| **1 — Domínio** | Regional | Clima + bioma | Semiárido / Caatinga |
+| **2 — Região** | Sub-regional | Geomorfologia | Depressão sertaneja |
+| **3 — Geossistema** | Paisagem | Relevo + cobertura | Pediplano com caatinga |
+| **4 — Geofácies** | Local | Uso + vegetação | Pastagem em glacis |
+| **5 — Geótopo** | Sítio | Microprocesso | Voçoroca em vertente |
+
+: {.striped .hover}
+
+::: {.highlight-box}
+**Para a disciplina:** trabalharemos no nível **3–4** (geossistema/geofácies), que corresponde à escala de análise da área de estudo.
+:::
+:::
+:::
+
+---
+
+# [4 — FICHA DESCRITIVA]{.section-header}
+
+---
+
+## Modelo de caracterização {.smaller-text}
+
+::: {.columns}
+::: {.column width="100%"}
+
+### Ficha descritiva da Unidade de Paisagem
+
+| Campo | Conteúdo |
+|-------|---------|
+| **Nome/código** | UP-1: Planície fluvial com pastagem degradada |
+| **Localização** | Porção central da área, ao longo do rio principal |
+| **Área** | ~320 ha (6,4% da área total) |
+| **Relevo** | Planície aluvial, declividade < 3%, altitude 250–260 m |
+| **Cobertura** | Pastagem degradada (70%), mata ciliar (15%), solo exposto (15%) |
+| **Uso** | Pecuária extensiva de baixa produtividade |
+| **Processos** | Erosão marginal, assoreamento, compactação do solo |
+| **Pressões** | Sobrepastejo, supressão de mata ciliar, eventos de cheia |
+| **Vulnerabilidade** | Alta — solo exposto em margem, APP desprotegida |
+| **Potencialidade** | Restauração de APP, pasto com manejo, corredor ecológico |
+| **NDVI médio** | 0,22 (pastagem degradada) |
+| **Evidências** | Mapa uso/cobertura, NDVI, imagem Sentinel-2, MDE |
+| **Conexão** | Conecta UP-2 (encosta) e UP-4 (reservatório) |
+
+: {.striped .hover}
+
+:::
+:::
+
+---
+
+## Exemplo: mapa de unidades (esquemático) {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Unidades delimitadas (exemplo)
+
+| Código | Nome | Área (%) |
+|:------:|------|:--------:|
+| UP-1 | Planície fluvial com pastagem degradada | 6,4% |
+| UP-2 | Encosta com caatinga remanescente | 12,0% |
+| UP-3 | Pediplano com pastagem extensiva | 48,0% |
+| UP-4 | Entorno do reservatório (açude) | 3,0% |
+| UP-5 | Topo de serra com caatinga preservada | 8,0% |
+| UP-6 | Agricultura irrigada (pivôs) | 12,0% |
+| UP-7 | Núcleo urbano e periurbano | 4,6% |
+| UP-8 | Áreas degradadas (solo exposto + erosão) | 6,0% |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Critérios de qualidade do mapa
+
+- ✅ Unidades mutuamente exclusivas (sem sobreposição)
+- ✅ Cobertura total (toda a área classificada)
+- ✅ Nome descritivo (relevo + cobertura/uso + estado)
+- ✅ Legenda com cores distintas
+- ✅ Cada unidade com ficha descritiva
+- ✅ Limites justificados (que variável muda?)
+
+### Quantas unidades?
+
+- **Muito poucas** (2–3) → perda de informação
+- **Muitas** (> 10) → dificulta síntese e comunicação
+- **Ideal:** 5–8 unidades para uma área de estudo local
+
+> O número depende da **heterogeneidade** da paisagem e da **escala** de análise.
+:::
+:::
+:::
+
+---
+
+# [5 — OFICINA PRÁTICA]{.section-header}
+
+---
+
+## Atividade: delimitar unidades na área de estudo {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+### Etapas (50 min)
+
+1. **Preparar camadas** (10 min)
+   - Abrir no QGIS: MDE, mapa de uso/cobertura, NDVI, imagem Sentinel-2
+   - Verificar dados das aulas anteriores
+
+2. **Identificar padrões** (10 min)
+   - Com interpretação visual integrada
+   - Anotar combinações recorrentes (relevo × uso × cobertura)
+
+3. **Delimitar unidades** (15 min)
+   - Criar camada vetorial (polígono)
+   - Traçar limites entre unidades (usar gradientes)
+   - Nomear cada unidade
+
+4. **Preencher fichas** (10 min)
+   - Uma ficha por unidade (modelo fornecido)
+   - Incluir evidências (métricas, NDVI, classe MapBiomas)
+
+5. **Revisão** (5 min)
+   - Cobertura total? Sobreposição? Nomes descritivos?
+:::
+
+::: {.column width="40%"}
+::: {.highlight-box}
+### Entrega
+
+- Mapa de unidades de paisagem (PNG ou PDF)
+- Fichas descritivas (1 por unidade)
+- Mínimo: **4 unidades**;  ideal: **5–8 unidades**
+
+**Prazo:** até Aula 20 (mesma semana)
+
+> Este produto será a peça-chave do dossiê — o **mapa-síntese** que organiza toda a análise.
+:::
+:::
+:::
+
+---
+
+## Síntese da Aula 19 {.smaller-text}
+
+::: {.info-box}
+### O que vimos hoje
+
+1. **Unidades de paisagem** — conceito: porções homogêneas e funcionalmente integradas
+2. **Critérios** — 3 ordens: estruturais (relevo/solo), cobertura/uso, processos/pressões
+3. **Métodos** — overlay, interpretação integrada, combinação
+4. **Hierarquia escalar** — domínio → região → geossistema → geofácies → geótopo
+5. **Ficha descritiva** — modelo com 13 campos (nome, relevo, cobertura, processos, vulnerabilidade...)
+6. **Oficina** — delimitação e caracterização na área de estudo
+:::
+
+---
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+
+Análise da Paisagem — Aula 19
+:::

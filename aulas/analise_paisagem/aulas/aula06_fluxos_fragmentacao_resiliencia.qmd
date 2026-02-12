@@ -1,0 +1,582 @@
+---
+title: "Análise da Paisagem"
+subtitle: "Aula 06 — Fluxos, Fragmentação, Resiliência e Vulnerabilidade<br>Curso de Geografia"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026-03-11"
+format:
+  revealjs:
+    logo: ../../assets/logo-uefs.webp
+    footer: "UEFS | Análise da Paisagem | Aula 06"
+    slide-number: true
+    theme: [simple, ../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Fluxos na paisagem: matéria, energia e organismos
+- [2]{.circle} Permeabilidade da matriz e movimento
+- [3]{.circle} Bordas: efeitos e consequências
+- [4]{.circle} Fragmentação como processo multiescalar
+- [5]{.circle} Resiliência e vulnerabilidade socioambiental
+- [6]{.circle} Limiares em paisagens sob pressão
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Compreender os **fluxos** que atravessam a paisagem, os efeitos da **fragmentação** e dos **bordas** sobre esses fluxos, e os conceitos de **resiliência** e **vulnerabilidade** aplicados ao diagnóstico territorial.
+:::
+:::
+:::
+
+---
+
+# [1 — FLUXOS NA PAISAGEM]{.section-header}
+
+---
+
+## A paisagem como sistema de fluxos {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Fluxos de matéria
+
+| Fluxo | Origem → Destino | Condicionante |
+|-------|:---:|:---:|
+| **Água** | Precipitação → escoamento → drenagem | Permeabilidade do solo, cobertura vegetal |
+| **Sedimentos** | Erosão → transporte → deposição | Declividade, proteção do solo |
+| **Nutrientes** | Rocha → solo → planta → serrapilheira | Ciclagem biogeoquímica |
+| **Poluentes** | Fonte → dispersão → acumulação | Vento, água, relevo |
+
+: {.striped .hover}
+
+### Fluxos de energia
+
+- Radiação solar → fotossíntese → biomassa
+- Energia cinética da chuva → impacto → erosividade
+- Energia gravitacional → movimentos de massa
+- Calor → balanço de energia → evapotranspiração
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Fluxos de organismos
+
+Os organismos se movimentam pela paisagem em função de:
+
+- **Dispersão** — juvenis procurando novos territórios
+- **Migração** — movimentos sazonais
+- **Forrageamento** — busca diária por alimento
+- **Polinização** — insetos entre plants
+
+### O que controla os fluxos?
+
+1. **Estrutura da paisagem** — arranjo de manchas, corredores e matriz
+2. **Conectividade** — existência de vias de conexão
+3. **Barreiras** — elementos que impedem ou filtram
+4. **Permeabilidade** — grau em que a matriz permite passagem
+
+> *"Modificar a estrutura da paisagem é modificar seus fluxos — e vice-versa."*
+:::
+:::
+:::
+
+---
+
+## Fluxos e arranjo espacial {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### O arranjo muda o fluxo
+
+Considere duas paisagens com a **mesma proporção** de floresta (30%) e pastagem (70%):
+
+**Paisagem A:** floresta concentrada em um grande bloco
+
+- Fluxo de organismos: alto **dentro**, baixo **entre** (não há manchas separadas)
+- Proteção do solo: concentrada
+- Serviços ecossistêmicos: localizados
+
+**Paisagem B:** floresta distribuída em muitos fragmentos pequenos
+
+- Fluxo de organismos: depende da conectividade
+- Proteção do solo: dispersa, mas cada mancha protege pouco
+- Serviços ecossistêmicos: difusos, mas possivelmente insuficientes
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Configuração importa
+
+A **composição** (quanto de cada cobertura) não é suficiente — a **configuração** (como estão arranjadas) é igualmente importante.
+
+| Aspecto | Composição | Configuração |
+|---------|:---:|:---:|
+| **O que mede** | Proporção de cada classe | Arranjo espacial das classes |
+| **Exemplo** | 30% floresta, 70% pastagem | 1 fragmento grande vs. 100 pequenos |
+| **Métrica** | % de cobertura | Fragmentação, isolamento, forma |
+
+: {.striped .hover}
+
+> A ecologia da paisagem mostrou que **configuração** pode ser tão determinante quanto composição para os processos ecológicos.
+:::
+:::
+:::
+
+---
+
+# [2 — PERMEABILIDADE DA MATRIZ]{.section-header}
+
+---
+
+## Conceito de permeabilidade {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Definição
+
+A **permeabilidade** é o grau em que a matriz permite o movimento de organismos entre manchas de habitat.
+
+### Fatores que determinam a permeabilidade
+
+1. **Tipo de cobertura** da matriz
+   - Vegetação secundária → alta permeabilidade
+   - Pastagem com árvores → média
+   - Monocultura mecanizada → baixa
+   - Área urbana densa → muito baixa
+
+2. **Estrutura vertical** — presença de estratos (herbáceo, arbustivo, arbóreo)
+3. **Presença de obstáculos** — cercas, estradas, cursos d'água sem mata ciliar
+4. **Espécie focal** — cada espécie tem diferente sensibilidade à matriz
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Classificação da matriz
+
+| Tipo de matriz | Permeabilidade | Custo de deslocamento |
+|---------------|:---:|:---:|
+| Floresta secundária | Alta | Baixo (1–5) |
+| Silvicultura (eucalipto) | Média-alta | Baixo-médio (5–15) |
+| Pastagem com árvores | Média | Médio (20–40) |
+| Pastagem limpa | Baixa | Alto (40–80) |
+| Monocultura (soja, cana) | Muito baixa | Muito alto (60–100) |
+| Área urbana | Variável (pode ser barreira) | Muito alto (100–500) |
+| Rodovia pavimentada | Barreira | Máximo (1000) |
+
+: {.striped .hover}
+
+> Melhorar a **qualidade da matriz** (agrofloresta, cercas vivas, silvipastoril) é uma estratégia de conservação **tão importante** quanto criar novas áreas protegidas.
+:::
+:::
+:::
+
+---
+
+# [3 — BORDAS: EFEITOS E CONSEQUÊNCIAS]{.section-header}
+
+---
+
+## Efeito de borda em detalhe {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Gradiente de borda
+
+A borda não é uma **linha** — é uma **zona de transição** com gradiente:
+
+| Variável | Interior | Borda | Matriz |
+|----------|:---:|:---:|:---:|
+| Temperatura | Baixa, estável | Intermediária | Alta, variável |
+| Umidade | Alta | Intermediária | Baixa |
+| Luminosidade | Baixa | Alta | Muito alta |
+| Vento | Fraco | Forte | Forte |
+| Espécies de interior | Muitas | Poucas | Ausentes |
+| Espécies generalistas | Poucas | Muitas | Muitas |
+| Invasoras | Raras | Frequentes | Comuns |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Profundidade do efeito de borda
+
+A penetração do efeito depende do **tipo de efeito** e do **ecossistema**:
+
+| Efeito | Penetração típica |
+|--------|:---:|
+| Microclima (T, umidade) | 50–100 m |
+| Invasão de espécies | 100–200 m |
+| Mortalidade de árvores | 100–300 m |
+| Mudança na composição de aves | 200–500 m |
+| Alteração na ciclagem de nutrientes | 50–150 m |
+
+: {.striped .hover}
+
+### Consequência
+
+Em fragmento florestal de **10 ha** (circular, raio ~178 m):
+
+- Se o efeito de borda penetra **100 m**, a **área-núcleo** é apenas **~1,9 ha** (19%)!
+- Fragmentos &lt; 25 ha em Mata Atlântica podem ser **100% borda**
+
+> Fragmentos pequenos podem ser **inteiramente dominados** pelo efeito de borda.
+:::
+:::
+:::
+
+---
+
+# [4 — FRAGMENTAÇÃO COMO PROCESSO]{.section-header}
+
+---
+
+## Estágios da fragmentação {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Modelo de Forman (1995)
+
+A fragmentação típica segue estágios:
+
+1. **Perfuração** (*perforation*) — surgem "buracos" na cobertura original
+2. **Dissecção** (*dissection*) — vias lineares cortam a cobertura (estradas, canais)
+3. **Fragmentação** (*fragmentation*) — a cobertura se divide em manchas menores
+4. **Encolhimento** (*shrinkage*) — manchas remanescentes diminuem
+5. **Atricção/eliminação** (*attrition*) — manchas menores desaparecem
+
+### Obs.: nem toda paisagem segue essa sequência
+
+Processos podem ocorrer **simultaneamente** ou em ordem diferente — o modelo é uma **referência**, não uma lei.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Limiares de fragmentação
+
+A teoria das **percolações** sugere que:
+
+- Quando a paisagem tem **≥ 60% de habitat**, a cobertura tende a ser **conectada** (contínua)
+- Abaixo de **~30%**, os fragmentos ficam **isolados** e a conectividade colapsa
+- Entre **30–60%**, a paisagem está numa zona crítica — pequenas mudanças provocam grandes efeitos
+
+### Limiar de extinção
+
+- Para muitas espécies, existir **20–30% de habitat** na paisagem é o **mínimo** para manter populações viáveis
+- Abaixo disso, a extinção local se torna provável ("dívida de extinção")
+
+> *"A fragmentação não é um problema linear — é um problema de limiares. Cruzar o limiar pode ser irreversível."*
+:::
+:::
+:::
+
+---
+
+## Métricas de fragmentação (introdução) {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Métricas-chave (serão aprofundadas nas Aulas 17-18)
+
+| Métrica | O que mede | Interpretação |
+|---------|-----------|---------------|
+| **Número de manchas** (NP) | Quantidade de fragmentos | Mais manchas = mais fragmentado |
+| **Área média** (AREA_MN) | Tamanho médio dos fragmentos | Menor = mais fragmentado |
+| **Distância ao vizinho** (ENN_MN) | Isolamento entre manchas | Maior = mais isolado |
+| **Índice de forma** (SHAPE) | Complexidade do formato | Mais irregular = mais borda |
+| **Área-núcleo** (CORE) | Área livre de efeito de borda | Menor = mais degradado |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Onde calcular?
+
+- **FRAGSTATS** — software clássico (McGarigal et al., 2012)
+- **landscapemetrics** — pacote em R
+- **LecoS** — plugin para QGIS
+- **Graphab** — conectividade funcional
+
+### Dados necessários
+
+1. Mapa de **uso e cobertura** da terra (raster classificado)
+2. Definição da **classe de interesse** (habitat)
+3. Resolução adequada (pixel 10–30 m para escala de paisagem)
+
+> Na **Aula 17** trabalharemos com essas métricas em exercício prático.
+:::
+:::
+:::
+
+---
+
+# [5 — RESILIÊNCIA E VULNERABILIDADE]{.section-header}
+
+---
+
+## Resiliência da paisagem {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Definição
+
+> **Resiliência** é a capacidade de um sistema (paisagem) de absorver perturbação e manter suas funções essenciais, ou de retornar a um estado funcional após o distúrbio.
+
+### Dois tipos de resiliência
+
+| Tipo | Significado |
+|------|-------------|
+| **Engenharia** | Velocidade de retorno ao estado original após perturbação |
+| **Ecológica** | Magnitude da perturbação que o sistema suporta antes de mudar de estado |
+
+: {.striped .hover}
+
+### O que aumenta a resiliência?
+
+- **Heterogeneidade** — paisagens diversas têm mais opções de resposta
+- **Conectividade** — permite recolonização após distúrbio
+- **Redundância funcional** — várias espécies desempenham funções similares
+- **Área protegida** — refúgio para espécies e processos
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### O que reduz a resiliência?
+
+- **Fragmentação intensa** — isolamento, perda de espécies
+- **Simplificação** — monocultura, homogeneização
+- **Degradação acumulada** — erosão, perda de solo, desertificação
+- **Pressão contínua** — sem tempo de recuperação
+- **Mudanças climáticas** — stress adicional ao sistema
+
+### Exemplo: resiliência da caatinga
+
+A caatinga possui alta resiliência **natural** (plantas deciduais, banco de sementes, rebrota). Porém:
+
+- Sobrepastejo + corte raso + queimadas → esgotam a capacidade de rebrota
+- Solo exposto → erosão → perda irreversível
+- Desertificação como **mudança de estado** — nova paisagem, não mais reversível
+
+> *"A resiliência não é infinita. Toda paisagem tem um limiar."*
+:::
+:::
+:::
+
+---
+
+## Vulnerabilidade socioambiental {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Definição (IPCC, adaptada)
+
+> **Vulnerabilidade** = f(Exposição, Sensibilidade, Capacidade adaptativa)
+
+| Componente | Significado | Exemplo na paisagem |
+|-----------|-------------|---------------------|
+| **Exposição** | Grau em que o sistema está sujeito a pressões | Área em zona de risco climático, leito de inundação |
+| **Sensibilidade** | Grau em que o sistema é afetado pela pressão | Solo frágil, vegetação degradada, encosta íngreme |
+| **Capacidade adaptativa** | Capacidade de ajuste ou resposta | Vegetação resiliente, gestão eficiente, recursos financeiros |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Avaliação da vulnerabilidade da paisagem
+
+Para diagnosticar vulnerabilidade:
+
+1. **Mapear exposição** — quais áreas estão sob pressão? (seca, inundação, expansão urbana)
+2. **Avaliar sensibilidade** — características que amplificam o impacto (declividade, tipo de solo, cobertura)
+3. **Estimar capacidade adaptativa** — fatores que mitigam (vegetação conservada, gestão, infraestrutura)
+
+### Resultado
+
+**Vulnerabilidade alta** = exposição alta + sensibilidade alta + capacidade adaptativa baixa
+
+> Paisagens do semiárido baiano com solo raso, vegetação degradada e sem gestão ambiental = **alta vulnerabilidade** à desertificação.
+:::
+:::
+:::
+
+---
+
+# [6 — LIMIARES EM PAISAGENS SOB PRESSÃO]{.section-header}
+
+---
+
+## Mudanças de estado e irreversibilidade {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Conceito de limiar (*threshold*)
+
+> Ponto a partir do qual uma pequena mudança adicional na pressão provoca uma transformação **abrupta e potencialmente irreversível** no estado do sistema.
+
+### Exemplos de limiares
+
+| Paisagem | Limiar | Novo estado |
+|----------|--------|-------------|
+| Floresta → pastagem | ~30% de habitat residual | Extinção massiva, perda de polinização |
+| Caatinga → deserto | Perda do banco de sementes + erosão do solo | Desertificação irreversível |
+| Bacia florestada → degradada | Assoreamento > capacidade de autodepuração | Rio morto |
+| Urbana → ilha de calor permanente | > 80% impermeabilizado | Microclima permanentemente alterado |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Implicações para o diagnóstico
+
+Na análise da paisagem, devemos avaliar:
+
+1. **Em que estado** está a paisagem atualmente?
+2. **Quão próxima** está de um limiar crítico?
+3. **Quais indicadores** sinalizam proximidade do limiar?
+4. **Que intervenções** podem evitar a ultrapassagem?
+
+### Indicadores de alerta
+
+- Perda acelerada de cobertura vegetal
+- Aumento de manchas de solo exposto
+- Desconexão entre fragmentos
+- Surgimento de voçorocas
+- Redução de vazão em nascentes
+- Perda de espécies indicadoras
+
+> O melhor diagnóstico identifica os limiares **antes** de serem ultrapassados.
+:::
+:::
+:::
+
+---
+
+## Atividade prática: cenários de pressão {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+### Proposta (em grupos de 3-4, 25 min)
+
+Considere uma paisagem hipotética com:
+
+- **50% de caatinga preservada** (fragmentada)
+- **40% de pastagem extensiva** (matriz)
+- **5% de área urbana**
+- **5% de corpos d'água e APPs**
+
+Cenários de pressão (próximos 20 anos):
+
+- **Cenário A:** expansão da pastagem para 60%, caatinga reduz a 30%
+- **Cenário B:** conversão de 15% da pastagem em agricultura irrigada
+- **Cenário C:** restauração de 10% da pastagem em corredores ecológicos
+
+Para cada cenário, avalie:
+
+1. Como mudam os **fluxos** (água, sedimentos, organismos)?
+2. Algum cenário se aproxima de um **limiar**?
+3. Como fica a **resiliência** e a **vulnerabilidade**?
+4. Que **diretrizes** você proporia?
+:::
+
+::: {.column width="40%"}
+::: {.info-box}
+### Discussão (15 min)
+
+Cada grupo apresenta um cenário. Compare:
+
+- Em qual cenário a paisagem é mais **resiliente**?
+- Em qual é mais **vulnerável**?
+- A **conectividade** se mantém em algum cenário?
+- Se você fosse gestor, qual cenário escolheria e por quê?
+
+> Este exercício antecipa o tipo de análise que será feita no **serious game** (Aula 23-24).
+:::
+:::
+:::
+
+---
+
+## Revisão preparatória para a 1ª Avaliação {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Conteúdo até aqui (Aulas 01–06)
+
+1. **Conceito de paisagem** — polissemia, tradições, distinções
+2. **Evolução do conceito** — Humboldt → Troll → Sochava → Bertrand → Forman
+3. **Geossistema** — potencial ecológico + exploração biológica + ação antrópica
+4. **Ecologia da paisagem** — matriz–mancha–corredor
+5. **Escala** — extensão, grão, hierarquia, multiescalaridade
+6. **Padrão e processo** — relação bidirecional
+7. **Fluxos, bordas, fragmentação** — permeabilidade, efeito de borda, limiares
+8. **Resiliência e vulnerabilidade** — conceitos e avaliação
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Nas próximas aulas (antes da prova)
+
+- **Aula 07** — Cartografia temática aplicada
+- **Aula 08** — Exercício: delimitação e caracterização da área
+- **Aula 09** — Interpretação visual da paisagem
+- **Aula 10** — Matriz de evidências e síntese descritivo-interpretativa
+
+**Avaliação (Aulas 11-12) — 01/04**
+
+Questões objetivas e discursivas sobre os conteúdos das **Aulas 01 a 10**.
+
+> Estudem os fichamentos, as notas de aula e os exercícios práticos.
+:::
+:::
+:::
+
+---
+
+## Síntese da Aula 06 {.smaller-text}
+
+::: {.info-box}
+### O que vimos hoje
+
+1. **Fluxos** — matéria, energia, organismos e informação atravessam a paisagem
+2. **Composição vs. configuração** — o arranjo espacial importa tanto quanto a proporção
+3. **Permeabilidade** — qualidade da matriz determina movimentação; melhoria da matriz como estratégia de conservação
+4. **Efeito de borda** — zona de transição que degrada fragmentos; fragmentos pequenos podem ser 100% borda
+5. **Fragmentação** — estágios (perfuração → dissecção → fragmentação → encolhimento → eliminação)
+6. **Limiares** — 30% e 60% como referências; limiar de extinção
+7. **Resiliência** — capacidade de absorver perturbação; heterogeneidade e conectividade aumentam resiliência
+8. **Vulnerabilidade** — f(exposição, sensibilidade, capacidade adaptativa)
+9. **Limiares e irreversibilidade** — diagnóstico precoce é fundamental
+:::
+
+---
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+
+Análise da Paisagem — Aula 06
+:::

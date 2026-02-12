@@ -1,0 +1,345 @@
+---
+title: "Análise da Paisagem"
+subtitle: "Aula 22 — Zoneamentos Aplicados: Critérios, Limites e Exercício<br>Curso de Geografia"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026-05-06"
+format:
+  revealjs:
+    logo: ../../assets/logo-uefs.webp
+    footer: "UEFS | Análise da Paisagem | Aula 22"
+    slide-number: true
+    theme: [simple, ../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} O que são zoneamentos
+- [2]{.circle} Tipos: geoambiental, risco e aptidão
+- [3]{.circle} Critérios e variáveis de entrada
+- [4]{.circle} Métodos de integração
+- [5]{.circle} Exercício: zoneamento da área de estudo
+- [6]{.circle} Preparação para o *serious game* (Aula 23)
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Compreender os tipos de **zoneamento** aplicados à análise da paisagem (geoambiental, de risco, de aptidão), seus **critérios e métodos**, e elaborar uma **proposta preliminar de zoneamento** para a área de estudo.
+:::
+:::
+:::
+
+---
+
+# [1 — O QUE SÃO ZONEAMENTOS]{.section-header}
+
+---
+
+## Conceito e finalidade {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Definição
+
+**Zoneamento** é a divisão do território em **zonas funcionais** diferenciadas, cada uma com **normas, restrições ou recomendações** de uso específicas, fundamentadas em critérios técnicos.
+
+### Finalidade
+
+1. **Ordenar** — distribuir atividades no espaço de forma racional
+2. **Proteger** — resguardar áreas sensíveis ou estratégicas
+3. **Regular** — estabelecer regras de uso por zona
+4. **Orientar** — subsidiar decisões de gestão e investimento
+5. **Comunicar** — traduzir diagnóstico em mapa de ação
+
+### Relação com a análise da paisagem
+
+```
+Diagnóstico → Unidades de Paisagem → Zoneamento → Diretrizes
+  (Aula 20)     (Aula 19)            (Aula 22)    (Aula 21)
+```
+
+O zoneamento é a **tradução do diagnóstico em mapa propositivo**.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Zoneamentos no marco legal brasileiro
+
+| Instrumento | Base legal | Escala |
+|-----------|----------|:------:|
+| **ZEE** (Zoneamento Ecológico-Econômico) | Decreto 4.297/2002 | Regional/estadual |
+| **Zoneamento de UC** (Plano de Manejo) | SNUC - Lei 9.985/2000 | Local (UC) |
+| **Zoneamento urbano** (Plano Diretor) | Estatuto da Cidade | Municipal |
+| **Zoneamento agrícola de risco climático** (ZARC) | MAPA | Nacional/municipal |
+| **Aptidão agrícola** (RADAM/EMBRAPA) | Levantamentos oficiais | Regional |
+
+: {.striped .hover}
+
+> Na disciplina, trabalharemos com zoneamentos **simplificados** (geoambiental, risco, aptidão) aplicados à escala da área de estudo — não à escala de instrumento legal formal.
+:::
+:::
+:::
+
+---
+
+# [2 — TIPOS DE ZONEAMENTO]{.section-header}
+
+---
+
+## Geoambiental, risco e aptidão {.smaller-text}
+
+::: {.columns}
+::: {.column width="33%"}
+### Zoneamento Geoambiental
+
+**Pergunta:** como é o meio?
+
+**Critérios:**
+
+- Geologia/solo
+- Geomorfologia
+- Vegetação/cobertura
+- Hidrografia
+- Processos atuantes
+
+**Resultado:** mapa de unidades geoambientais com descrição de potencialidades e limitações naturais.
+
+**Uso:** subsidiar qualquer tipo de planejamento; base para ZEE.
+:::
+
+::: {.column width="33%"}
+### Zoneamento de Risco
+
+**Pergunta:** onde há perigo?
+
+**Critérios:**
+
+- Declividade e forma da encosta
+- Tipo de solo/rocha
+- Cobertura vegetal
+- Histórico de eventos
+- Ocupação humana
+
+**Resultado:** mapa de áreas de risco (baixo, médio, alto, muito alto) para processos específicos (erosão, inundação, deslizamento).
+
+**Uso:** gestão de desastres, defesa civil, orientação de ocupação.
+:::
+
+::: {.column width="33%"}
+### Zoneamento de Aptidão
+
+**Pergunta:** o que cabe aqui?
+
+**Critérios:**
+
+- Solo (fertilidade, profundidade)
+- Relevo (declividade)
+- Água (disponibilidade)
+- Clima (precipitação, temperatura)
+- Infraestrutura (acesso)
+
+**Resultado:** mapa de aptidão para usos específicos (agricultura, pastagem, silvicultura, conservação, urbanização).
+
+**Uso:** orientar conversão de uso, investimentos, regularização ambiental.
+:::
+:::
+
+---
+
+# [3 — CRITÉRIOS E VARIÁVEIS]{.section-header}
+
+---
+
+## Como construir um zoneamento {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Variáveis de entrada
+
+| Variável | Fonte | Tipo |
+|---------|-------|------|
+| Declividade | MDE (TOPODATA) | Contínua |
+| Altitude | MDE | Contínua |
+| Tipo de solo | EMBRAPA, IBGE | Categórica |
+| Cobertura vegetal | MapBiomas | Categórica |
+| Distância à drenagem | Hidrografia (ANA) | Contínua |
+| NDVI médio | Sentinel-2 | Contínua |
+| Vulnerabilidade | Diagnóstico (Aula 20) | Ordinal |
+| Diretrizes | Priorização (Aula 21) | Categórica |
+
+: {.striped .hover}
+
+### Reclassificação
+
+Transformar variáveis contínuas em **classes** (ex: declividade em 5 classes de aptidão) para permitir cruzamento:
+
+| Declividade | Aptidão agrícola |
+|:-----------:|:---------------:|
+| 0–3% | Alta |
+| 3–8% | Média-alta |
+| 8–20% | Média |
+| 20–45% | Baixa |
+| > 45% | Inapta |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Métodos de integração
+
+**1. Sobreposição temática (overlay simples)**
+
+- Cruzar N mapas reclassificados
+- Resultado: combinações únicas de classes
+- Agrupar combinações em zonas
+
+**2. Álgebra de mapas (ponderação)**
+
+$$Z = w_1 \cdot V_1 + w_2 \cdot V_2 + ... + w_n \cdot V_n$$
+
+Onde $V_i$ = variável normalizada (0–1) e $w_i$ = peso relativo.
+
+**3. Fatiamento qualitativo**
+
+- Intérprete atribui zona a cada UP com base no diagnóstico
+- Mais simples, adequado para escala da disciplina
+
+### Para a disciplina
+
+Usaremos o **método 3 (fatiamento qualitativo)** com apoio de **overlay** quando possível no QGIS.
+:::
+:::
+:::
+
+---
+
+# [4 — MODELO DE ZONEAMENTO]{.section-header}
+
+---
+
+## Proposta de zonas (modelo) {.smaller-text}
+
+::: {.columns}
+::: {.column width="100%"}
+
+| Zona | Cor | Critério principal | Norma / Diretriz |
+|------|:---:|-------------------|----------------|
+| **Z1 — Proteção integral** | 🟢 Verde escuro | Fragmentos em bom estado, topos, nascentes | Proibido uso direto; restauração do entorno |
+| **Z2 — Conservação com uso sustentável** | 🟢 Verde | Remanescentes com uso compatível, RL, SAF | Uso de baixo impacto; manutenção de cobertura |
+| **Z3 — Restauração prioritária** | 🟡 Amarelo | APP sem mata ciliar, corredores potenciais | Recomposição obrigatória; incentivos à restauração |
+| **Z4 — Uso agropecuário com restrições** | 🟠 Laranja | Pastagem/agricultura em área sensível | Manejo conservacionista; boas práticas |
+| **Z5 — Uso agropecuário consolidado** | 🟤 Marrom | Pastagem/agricultura em área apta | Uso permitido com manejo; monitoramento |
+| **Z6 — Recuperação de áreas degradadas** | 🔴 Vermelho | Solo exposto, erosão ativa, voçorocas | Intervenção obrigatória; retaludamento, NbS |
+| **Z7 — Expansão urbana controlada** | ⚫ Cinza | Perímetro urbano e periurbano | Plano de ocupação; drenagem; áreas verdes |
+
+: {.striped .hover}
+
+::: {.highlight-box}
+As zonas devem ser **mutuamente exclusivas** e cobrir **toda a área**. A legenda deve indicar claramente os **usos permitidos, restritos e proibidos** em cada zona.
+:::
+
+:::
+:::
+
+---
+
+# [5 — EXERCÍCIO]{.section-header}
+
+---
+
+## Oficina: zoneamento da área de estudo {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+### Roteiro (60 min)
+
+1. **Preparação** (10 min)
+   - Abrir mapa de UPs (Aula 19)
+   - Ter em mãos: diagnóstico (Aula 20), diretrizes (Aula 21)
+
+2. **Atribuir zonas** (15 min)
+   - Para cada UP, definir a zona correspondente
+   - Justificar com evidências do diagnóstico
+   - Uma UP pode ser subdivida se necessário
+
+3. **Produzir mapa de zoneamento** (15 min)
+   - No QGIS: duplicar camada de UPs → renomear atributos
+   - Aplicar cores-padrão (ver tabela modelo)
+   - Incluir legenda completa
+
+4. **Redigir quadro de normas** (15 min)
+   - Para cada zona: usos permitidos, restritos, proibidos
+   - Prioridades de ação
+
+5. **Revisão** (5 min)
+   - Cobertura total? Coerência com diagnóstico?
+:::
+
+::: {.column width="40%"}
+::: {.info-box}
+### Entrega
+
+- Mapa de zoneamento (PNG ou PDF)
+- Quadro de zonas × normas × usos
+- Texto de justificativa (1–2 parágrafos)
+
+**Formato:** documento digital
+**Prazo:** até **Aula 23** (13/05)
+
+> Este material completa o dossiê: *localização → caracterização → SR → mudanças → métricas → UPs → diagnóstico → diretrizes → **zoneamento***.
+
+### Preparação para Aula 23
+
+A **Aula 23** será o ***serious game*** (avaliação prática em grupo). Revise todos os conteúdos das Aulas 13–22. O desafio envolverá:
+
+- Diagnóstico territorial sob pressão simulada
+- Tomada de decisão baseada em evidências
+- Proposição e defesa técnica de diretrizes
+:::
+:::
+:::
+
+---
+
+## Síntese da Aula 22 {.smaller-text}
+
+::: {.info-box}
+### O que vimos hoje
+
+1. **Zoneamento** — divisão do território em zonas funcionais com regras diferenciadas
+2. **Tipos** — geoambiental (como é?), risco (onde há perigo?), aptidão (o que cabe?)
+3. **Critérios** — variáveis de entrada, reclassificação, integração
+4. **Métodos** — overlay, álgebra de mapas, fatiamento qualitativo
+5. **Modelo de zonas** — 7 zonas tipo: proteção, conservação, restauração, uso, recuperação, urbano
+6. **Exercício** — zoneamento da área de estudo com mapa e quadro de normas
+:::
+
+---
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+
+Análise da Paisagem — Aula 22
+:::

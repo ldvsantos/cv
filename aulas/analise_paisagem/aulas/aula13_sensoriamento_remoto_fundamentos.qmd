@@ -1,0 +1,479 @@
+---
+title: "Análise da Paisagem"
+subtitle: "Aula 13 — Sensoriamento Remoto Aplicado I: Fundamentos Operacionais<br>Curso de Geografia"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026-04-08"
+format:
+  revealjs:
+    logo: ../../assets/logo-uefs.webp
+    footer: "UEFS | Análise da Paisagem | Aula 13"
+    slide-number: true
+    theme: [simple, ../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Sensoriamento remoto na análise da paisagem
+- [2]{.circle} Imagens orbitais: sensores e plataformas
+- [3]{.circle} Resoluções: espacial, espectral, temporal, radiométrica
+- [4]{.circle} Bandas espectrais e composições coloridas
+- [5]{.circle} Índices espectrais: NDVI, NDWI, NDBI
+- [6]{.circle} Uso e cobertura da terra: leitura e classificação
+- [7]{.circle} Bases de dados e acesso: GEE, MapBiomas, INPE
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Compreender os **fundamentos operacionais** do sensoriamento remoto orbital aplicado à análise da paisagem: tipos de sensores, resoluções, composições de bandas e índices espectrais, capacitando o estudante a **ler e interpretar imagens de satélite** como fonte de evidência.
+:::
+:::
+:::
+
+---
+
+# [1 — SR NA ANÁLISE DA PAISAGEM]{.section-header}
+
+---
+
+## Por que sensoriamento remoto? {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### O SR como ferramenta para a paisagem
+
+O sensoriamento remoto permite:
+
+- **Visão sinóptica** — coberturas extensas em um único registro
+- **Repetibilidade** — séries temporais para detectar mudanças
+- **Multiscalaridade** — do metro ao quilômetro
+- **Registro objetivo** — dados mensuráveis e reproduzíveis
+- **Cobertura de áreas inacessíveis** — semiárido, floresta densa, zonas remotas
+
+### Na análise da paisagem
+
+| Ferramenta | O que fornece |
+|-----------|--------------|
+| Imagem óptica | Padrões de uso/cobertura, feições visíveis |
+| Série temporal | Trajetórias de mudança, sazonalidade |
+| Índices espectrais | Vigor da vegetação, umidade, urbanização |
+| Classificação | Mapa temático → base para métricas |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### De onde observamos?
+
+```
+         🛰️ Satélite (órbita ~700 km)
+              ↓
+        Sensor → Registra energia
+              ↓
+        Imagem → Pixels geolocalizados
+              ↓
+        Análise → Informação sobre a paisagem
+```
+
+### Princípio fundamental
+
+Todo corpo com temperatura acima do zero absoluto **emite** radiação eletromagnética. Além disso, objetos **refletem** a radiação solar de forma diferente:
+
+- Vegetação → alta reflectância no infravermelho
+- Água → baixa reflectância no infravermelho
+- Solo exposto → reflectância crescente
+- Área urbana → padrão misto
+
+> *"Cada cobertura da terra tem uma 'assinatura espectral'."*
+:::
+:::
+:::
+
+---
+
+# [2 — IMAGENS ORBITAIS]{.section-header}
+
+---
+
+## Principais sensores e plataformas {.smaller-text}
+
+::: {.columns}
+::: {.column width="100%"}
+
+| Sensor/Satélite | Operador | Resolução espacial | Resolução temporal | Bandas | Uso típico |
+|----------------|----------|-------------------|-------------------|--------|-----------|
+| **Landsat 8/9** | USGS/NASA | 30 m (15 m Pan) | 16 dias | 11 | Série histórica (1984–) |
+| **Sentinel-2** | ESA (Copernicus) | 10–20 m | 5 dias | 13 | Uso/cobertura detalhado |
+| **CBERS-4A** | INPE/China | 2–64 m | 26 dias | Variável | Monitoramento regional |
+| **MODIS** | NASA | 250–1000 m | 1–2 dias | 36 | Monitoramento global |
+| **Planet** (comercial) | Planet Labs | 3–5 m | Diária | 4–8 | Alta frequência |
+| **Google Earth** | Google | Variável | Variável | RGB | Visualização e contexto |
+
+: {.striped .hover}
+
+::: {.info-box}
+**Para a disciplina:** trabalharemos principalmente com **Sentinel-2** (alta resolução, gratuito, recente) e **MapBiomas** (classificação anual do uso/cobertura da terra no Brasil, baseada em Landsat desde 1985).
+:::
+
+:::
+:::
+
+---
+
+## As 4 resoluções {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### 1. Resolução Espacial
+
+Tamanho do **pixel** no terreno.
+
+| Classe | Pixel | Exemplo |
+|--------|-------|---------|
+| Muito alta | < 1 m | Imagens comerciais (WorldView) |
+| Alta | 1–10 m | Sentinel-2 (10 m), Planet (3 m) |
+| Média | 10–100 m | Landsat (30 m) |
+| Baixa | > 100 m | MODIS (250–1000 m) |
+
+: {.striped .hover}
+
+> Menor pixel → mais detalhe, mas mais dados e menor área.
+
+### 2. Resolução Temporal
+
+Intervalo entre revisitas ao mesmo ponto.
+
+- Sentinel-2: **5 dias** (com 2 satélites)
+- Landsat: **16 dias**
+- MODIS: **diária**
+
+> Maior frequência → mais chances de imagem sem nuvem.
+:::
+
+::: {.column width="50%"}
+### 3. Resolução Espectral
+
+Número e largura das **bandas** do sensor.
+
+- **Multiespectral** (4–13 bandas): Landsat, Sentinel-2
+- **Hiperespectral** (> 100 bandas): PRISMA, EnMAP
+- **Pancromática** (1 banda larga): fusão para nitidez
+
+> Mais bandas → mais informação sobre composição de alvos.
+
+### 4. Resolução Radiométrica
+
+Número de **níveis de cinza** por pixel.
+
+- 8 bits → 256 níveis (0–255)
+- 12 bits → 4096 níveis
+- 16 bits → 65.536 níveis
+
+> Mais bits → melhor discriminação de alvos com reflectância semelhante.
+
+::: {.info-box}
+**Resumo:** A escolha do sensor depende do **objetivo da análise**. Para a análise da paisagem, buscamos equilíbrio entre resolução espacial (detalhe), temporal (mudanças) e espectral (discriminação de alvos).
+:::
+:::
+:::
+
+---
+
+# [3 — BANDAS E COMPOSIÇÕES]{.section-header}
+
+---
+
+## Bandas espectrais do Sentinel-2 {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+| Banda | Nome | Faixa (nm) | Resolução | O que detecta |
+|:-----:|------|:----------:|:---------:|-------------|
+| B2 | Azul | 490 | 10 m | Água, atmosfera |
+| B3 | Verde | 560 | 10 m | Vegetação verde |
+| B4 | Vermelho | 665 | 10 m | Clorofila (absorção) |
+| B8 | NIR | 842 | 10 m | Vegetação (alta reflectância) |
+| B11 | SWIR-1 | 1610 | 20 m | Umidade, solo |
+| B12 | SWIR-2 | 2190 | 20 m | Minerais, solo seco |
+
+: {.striped .hover}
+
+:::
+
+::: {.column width="50%"}
+### Composições coloridas
+
+Atribuímos bandas aos canais **R-G-B** do monitor:
+
+| Composição | R | G | B | O que destaca |
+|-----------|---|---|---|-------------|
+| **Cor verdadeira** | B4 | B3 | B2 | Como o olho vê |
+| **Falsa cor (veg.)** | B8 | B4 | B3 | Vegetação em vermelho |
+| **SWIR** | B12 | B8 | B4 | Solo, queimadas, umidade |
+| **Agricultura** | B11 | B8 | B2 | Cultura/solo/água |
+
+: {.striped .hover}
+
+::: {.highlight-box}
+**Na prática:** A composição **falsa cor (B8-B4-B3)** é a mais útil para análise da paisagem: **vegetação aparece em vermelho vivo**, solo exposto em tons claros e água em tons escuros.
+:::
+
+:::
+:::
+
+---
+
+# [4 — ÍNDICES ESPECTRAIS]{.section-header}
+
+---
+
+## Principais índices para a paisagem {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### NDVI — Índice de Vegetação
+
+$$NDVI = \frac{NIR - RED}{NIR + RED} = \frac{B8 - B4}{B8 + B4}$$
+
+| Valor | Interpretação |
+|:-----:|-------------|
+| -1 a 0 | Água, solo nu, nuvens |
+| 0 a 0,2 | Solo exposto, vegetação rala |
+| 0,2 a 0,5 | Pastagem, caatinga aberta |
+| 0,5 a 0,8 | Vegetação densa, cultura irrigada |
+| > 0,8 | Floresta densa, alta atividade fotossintética |
+
+: {.striped .hover}
+
+### NDWI — Índice de Água
+
+$$NDWI = \frac{GREEN - NIR}{GREEN + NIR} = \frac{B3 - B8}{B3 + B8}$$
+
+- Valores positivos → superfícies de água
+- Valores negativos → superfícies secas
+:::
+
+::: {.column width="50%"}
+### NDBI — Índice de Área Construída
+
+$$NDBI = \frac{SWIR - NIR}{SWIR + NIR} = \frac{B11 - B8}{B11 + B8}$$
+
+- Valores positivos → áreas urbanizadas/construídas
+- Valores negativos → vegetação
+
+### Para que usar índices?
+
+1. **Quantificar** atributos da paisagem (vigor, umidade, impermeabilização)
+2. **Comparar** áreas ou períodos temporais
+3. **Mapear** classes de cobertura com mais objetividade
+4. **Detectar** mudanças (ex: queda do NDVI = desmatamento)
+
+::: {.info-box}
+**Importante:** Índices são **aproximações**. Devem ser interpretados com cautela e, sempre que possível, **validados** com dados de campo ou fontes independentes.
+:::
+:::
+:::
+
+---
+
+# [5 — USO E COBERTURA DA TERRA]{.section-header}
+
+---
+
+## Da imagem ao mapa temático {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Classificação de imagens
+
+| Método | Descrição | Quando usar |
+|--------|----------|------------|
+| **Visual** | Intérprete identifica e delimita classes | Áreas pequenas, alta precisão |
+| **Supervisionada** | Algoritmo treinado com amostras do intérprete | Áreas médias, classes conhecidas |
+| **Não supervisionada** | Algoritmo agrupa pixels sem amostras | Exploração inicial, áreas desconhecidas |
+| **Orientada a objetos** | Segmenta imagem em objetos, depois classifica | Imagens de alta resolução |
+
+: {.striped .hover}
+
+### Classes típicas na paisagem
+
+1. **Floresta/mata** — vegetação natural arbórea
+2. **Campo/cerrado/caatinga** — vegetação natural não-arbórea
+3. **Pastagem** — uso agropecuário
+4. **Agricultura** — lavouras anuais/perenes
+5. **Solo exposto** — sem cobertura vegetal
+6. **Água** — corpos hídricos
+7. **Área urbana** — edificações, vias
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### MapBiomas: a base de referência
+
+O **MapBiomas** é a mais completa base de uso/cobertura da terra no Brasil:
+
+- **35+ anos** de série anual (1985–presente)
+- Baseado em **Landsat** (30 m)
+- Classificação automática com **Random Forest**
+- Validação com ~75.000 amostras (acurácia global > 85%)
+- **Biomas completos** do Brasil
+- **Mapas de transição** (classe A → classe B)
+- Dados **abertos e gratuitos**
+- Acesso: [mapbiomas.org](https://mapbiomas.org)
+
+### Plataformas de acesso
+
+| Plataforma | Tipo | Acesso |
+|-----------|------|--------|
+| **Google Earth Engine** | Processamento em nuvem | [earthengine.google.com](https://earthengine.google.com) |
+| **MapBiomas** | Classificação pronta | [mapbiomas.org](https://mapbiomas.org) |
+| **INPE/Catálogo** | Download de imagens | [www.dgi.inpe.br/catalogo](http://www.dgi.inpe.br/catalogo) |
+| **Copernicus Open Access Hub** | Sentinel-2 | [scihub.copernicus.eu](https://scihub.copernicus.eu) |
+
+: {.striped .hover}
+:::
+:::
+:::
+
+---
+
+# [6 — REALCES E PRÉ-PROCESSAMENTO]{.section-header}
+
+---
+
+## Técnicas básicas de realce {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Contraste e brilho
+
+- **Estiramento de histograma** — amplia o intervalo de cinza para melhorar visualização
+- **Equalização** — distribui uniformemente os valores de cinza
+- **Estiramento linear** entre percentis (2%–98%)
+
+### Filtragem
+
+| Tipo | Função | Uso |
+|------|--------|-----|
+| **Passa-baixa** | Suaviza (média) | Remover ruído |
+| **Passa-alta** | Realça bordas | Detectar limites/feições |
+| **Mediana** | Suaviza preservando bordas | Reduzir "sal e pimenta" |
+
+: {.striped .hover}
+
+### Correção atmosférica
+
+- Remove efeitos de espalhamento e absorção atmosférica
+- Converte valores digitais (DN) em **reflectância de superfície**
+- Essencial para comparação temporal
+- Sentinel-2 Level-2A já vem corrigido
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Fluxo básico de trabalho
+
+```
+1. Obter imagem (download/GEE)
+       ↓
+2. Verificar qualidade (nuvens, sombra)
+       ↓
+3. Correção atmosférica (se necessário)
+       ↓
+4. Recortar área de estudo
+       ↓
+5. Composição colorida (visualização)
+       ↓
+6. Cálculo de índices (NDVI, NDWI...)
+       ↓
+7. Classificação (se necessário)
+       ↓
+8. Interpretação e validação
+       ↓
+9. Mapa temático final
+```
+
+### Ferramentas que usaremos
+
+- **QGIS** (visualização, análise, layout)
+- **Google Earth Engine** (processamento em nuvem)
+- **MapBiomas** (classificação pronta)
+:::
+:::
+:::
+
+---
+
+## Para a próxima aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Atividade prática (Aula 14)
+
+Na próxima aula, faremos exercício de **identificação de feições** na área de estudo:
+
+1. Acessar imagem Sentinel-2 recente
+2. Aplicar diferentes composições coloridas
+3. Calcular NDVI e NDWI
+4. Identificar e mapear feições
+5. Comparar com MapBiomas
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Preparação
+
+- Ter conta no **Google Earth Engine** (solicitar acesso se necessário)
+- Revisar a **delimitação da área de estudo** (Aula 08)
+- Trazer os **limites da área** em formato shapefile ou GeoJSON
+- Livro de referência: Jensen (2000), cap. 1–4
+:::
+:::
+:::
+
+---
+
+## Síntese da Aula 13 {.smaller-text}
+
+::: {.info-box}
+### O que vimos hoje
+
+1. **SR na análise da paisagem** — visão sinóptica, repetibilidade, multiscalaridade
+2. **Sensores e plataformas** — Landsat, Sentinel-2, CBERS, MODIS, MapBiomas
+3. **Quatro resoluções** — espacial, espectral, temporal, radiométrica
+4. **Bandas e composições** — cor verdadeira vs. falsa cor; B8-B4-B3 para vegetação
+5. **Índices espectrais** — NDVI, NDWI, NDBI: quantificação e comparação
+6. **Uso e cobertura** — métodos de classificação; MapBiomas como referência
+7. **Realce e pré-processamento** — contraste, filtragem, correção atmosférica
+:::
+
+---
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+
+Análise da Paisagem — Aula 13
+:::
