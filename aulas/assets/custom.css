@@ -204,6 +204,13 @@ section.title-slide .date,
   font-size: 0.7em;
 }
 
+/* ---- Overflow: permitir scroll em slides com muito conteúdo ---- */
+.reveal .slide-background + section,
+.reveal .slides section.smaller-text,
+.reveal .slides section.slide.level2 {
+  overflow-y: auto !important;
+}
+
 /* ---- Scroll Container ---- */
 .diagram-scroll {
   max-height: 600px;
