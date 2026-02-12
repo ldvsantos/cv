@@ -728,15 +728,183 @@ Aulas voltadas à disciplina de Geotêxteis e Soluções baseadas na Natureza (N
 
 ### {{< fa mountain-sun >}} Ciência da Paisagem
 
-Aulas voltadas à disciplina de Ciência da Paisagem e Ecologia da Paisagem.
+Aulas voltadas à disciplina de Análise da Paisagem — abordagem sistêmica, ecologia da paisagem, sensoriamento remoto, métricas espaciais, diagnóstico integrado e planejamento territorial.
 
 ```{=html}
 <div class="slide-grid">
-<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula01_conectividade_funcional.html" target="_blank">
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula01_apresentacao_conceito_paisagem.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 01 — Conectividade Funcional da Paisagem</h4>
-<p>Métricas, corredores ecológicos e Graphab.</p>
+<h4>Aula 01 — Apresentação e Conceito de Paisagem</h4>
+<p>Múltiplas definições: artística, geográfica, ecológica e sistêmica.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula02_evolucao_conceito_distincoes.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 02 — Evolução do Conceito e Distinções</h4>
+<p>Paisagem vs. ecossistema vs. bioma; vertentes europeia e norte-americana.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula03_geossistema_leitura_sistemica.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 03 — Geossistema e Leitura Sistêmica</h4>
+<p>Modelo de Bertrand, epigeossistema e interações biofísicas.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula04_ecologia_paisagem.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 04 — Ecologia da Paisagem</h4>
+<p>Modelo mancha–corredor–matriz; estrutura, função e mudança.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula05_escala_padrao_processo.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 05 — Escalas Espaço-Temporais</h4>
+<p>Extensão, grão, hierarquia e MAUP na análise da paisagem.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula06_fluxos_fragmentacao_resiliencia.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 06 — Fluxos, Fragmentação e Resiliência</h4>
+<p>Conectividade estrutural e funcional; limiares de percolação.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula07_cartografia_tematica.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 07 — Cartografia Temática Aplicada</h4>
+<p>Mapas de uso do solo, hipsometria, declividade e cobertura vegetal.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula08_exercicio_delimitacao_area.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 08 — Exercício: Delimitação da Área</h4>
+<p>Roteiro prático no QGIS para delimitar a área de estudo.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula09_interpretacao_visual.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 09 — Interpretação Visual de Imagens</h4>
+<p>Chaves de interpretação: textura, forma, padrão e contexto espacial.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula10_matriz_evidencias_sintese.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 10 — Matriz de Evidências e Síntese</h4>
+<p>Triangulação de dados geoespaciais, documentais e de campo.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula13_sensoriamento_remoto_fundamentos.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 13 — Sensoriamento Remoto: Fundamentos</h4>
+<p>Espectro eletromagnético, sensores orbitais e índices espectrais.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula14_exercicio_feicoes_padroes.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 14 — Exercício: Feições e Padrões</h4>
+<p>Classificação supervisionada e cálculo de métricas no QGIS.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula15_sensoriamento_remoto_mudancas.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 15 — SR: Mudanças e Trajetórias</h4>
+<p>Detecção de mudanças multitemporal com GEE e MapBiomas.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula16_produto_parcial_mudancas.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 16 — Produto Parcial: Mapa de Mudanças</h4>
+<p>Elaboração do mapa multitemporal de uso e cobertura.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula17_conectividade_funcional.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 17 — Conectividade Funcional</h4>
+<p>Métricas de grafos, corredores ecológicos e Graphab.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula18_exercicio_indicadores.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 18 — Exercício: Indicadores de Paisagem</h4>
+<p>Cálculo de métricas FRAGSTATS e interpretação dos resultados.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula19_unidades_paisagem.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 19 — Unidades de Paisagem</h4>
+<p>Delimitação, tipologias e álgebra de mapas no QGIS.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula20_diagnostico_integrado.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 20 — Diagnóstico Integrado</h4>
+<p>Matrizes SWOT/FOFA espacializadas e indicadores compostos.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula21_planejamento_territorial.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 21 — Planejamento Territorial</h4>
+<p>Do diagnóstico à proposta: NbS, legislação ambiental e ODS.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula22_zoneamentos_aplicados.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 22 — Zoneamentos Aplicados</h4>
+<p>ZEE, ZEEC, planos de bacia e APA com álgebra de mapas.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula25_trabalho_campo.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 25 — Trabalho de Campo</h4>
+<p>Planejamento, coleta com apps móveis e validação in loco.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/aula26_organizacao_evidencias.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 26 — Organização de Evidências</h4>
+<p>Compilação do portfólio, checklist e preparação da apresentação final.</p>
 </div>
 </a>
 
