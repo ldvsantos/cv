@@ -1,0 +1,296 @@
+﻿---
+title: "Estatística Descritiva"
+subtitle: "Aulas VI e VIII — Medidas de Posição e Dispersão"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+footer: "UEFS — Introdução à Estatística | Tema 5 — Estatística Descritiva Completa"
+format: 
+  revealjs:
+    logo: ../../../../../assets/logo-uefs.webp
+    footer: "UEFS — Introdução à Estatística | Tema 5 — Estatística Descritiva Completa"
+    slide-number: true
+    theme: [simple, assets/ufs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+    code-fold: false
+    code-tools: true
+execute:
+  echo: true
+  eval: false
+---
+
+# [Estatística Descritiva]{.section-header}
+
+## O que são {.smaller-text}
+
+A **estatística descritiva** é um ramo da estatística que aplica várias técnicas para **descrever e sumarizar** um conjunto de dados.
+
+::: {.highlight-box}
+### Diferença para a estatística inferencial:
+
+Enquanto a estatística descritiva se limita a **resumir e apresentar** os dados, a estatística inferencial busca fazer **afirmações sobre uma população** com base em informações de uma amostra.
+:::
+
+---
+
+## O que aprenderemos {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### 🔹 Medidas de tendência central
+
+- Média simples
+- Moda
+- Mediana
+
+### 🔹 Separatrizes
+
+- A própria Mediana
+- Quartis
+- Decis
+- Percentis ou Centis
+:::
+
+::: {.column width="50%"}
+### 🔹 Medidas de dispersão
+
+- Variância
+- Desvio-padrão
+- Erro-padrão
+- Intervalo de Confiança
+
+### 🔹 Escore Z
+
+- Transformação em unidades de desvio-padrão
+- Interpretação de probabilidades (68%, 95%, 99,7%)
+:::
+:::
+
+# [I. Medidas de Posição (Tendência Central)]{.section-header}
+
+## Objetivo e Dados de Exemplo {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Objetivo
+
+Encontrar um valor que resuma a variabilidade de um conjunto de dados, ou seja, um **único número** que represente o "centro" da distribuição.
+
+### Exemplo de Pesquisa
+
+Investigação dos níveis de crescimento radicular de plantas frente ao uso de **fungos micorrízicos arbusculares**.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Detalhes da amostra:**
+
+- Tamanho: N = 17
+- Instrumento: 17 amostras independentes
+- Variável: Comprimento da raiz (cm)
+- Variação: 34 cm a 170 cm
+:::
+:::
+:::
+
+---
+
+## 1.1 — Criando os Dados de Exemplo {.smaller-text}
+
+```{r}
+#| eval: false
+dados <- c(94, 104, 107, 109, 113, 117, 117, 121, 
+           127, 128, 130, 132, 137, 143, 153, 154, 162)
+dados
+length(dados)
+```
+
+---
+
+## 1.2 — Média {.smaller-text}
+
+A média representa o **valor central** de um conjunto de dados.
+
+$$\bar{x} = \frac{\sum x_i}{n}$$
+
+```{r}
+#| eval: false
+media <- mean(dados)
+media
+```
+
+---
+
+## 1.3 — Moda {.smaller-text}
+
+A moda é o valor que ocorre com **maior frequência** no conjunto.
+
+$$Moda = x_i \;|\; \max(frequência(x_i))$$
+
+Podendo ser:
+
+- **Unimodal:** 2, 3, **3**, 4, 5 → Moda = 3
+- **Bimodal:** 2, **3**, **3**, **4**, **4**, 5 → Modas = 3 e 4
+- **Amodal:** 2, 3, 4, 5, 6 → Nenhum valor se repete
+
+```{r}
+#| eval: false
+moda <- function(x) {
+  ux <- unique(x)
+  ux[which.max(tabulate(match(x, ux)))]
+}
+moda(dados)
+```
+
+---
+
+## 1.4 — Mediana {.smaller-text}
+
+A mediana divide os dados ordenados em **duas metades iguais**.
+
+$$Mediana = \begin{cases} x_{\frac{n+1}{2}}, & n \text{ ímpar} \\ \frac{x_{\frac{n}{2}} + x_{\frac{n}{2}+1}}{2}, & n \text{ par} \end{cases}$$
+
+```{r}
+#| eval: false
+mediana <- median(dados)
+mediana
+```
+
+# [II. Medidas de Dispersão]{.section-header}
+
+## Objetivos {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+- **Quantificar a variabilidade**: escores concentrados ou espalhados?
+- **Interpretar semelhanças e diferenças**: heterogeneidade vs. homogeneidade
+- **Comparar grupos**: variabilidade semelhante?
+:::
+
+::: {.column width="50%"}
+- **Detectar outliers**: valores muito afastados da média
+- **Apoiar a tomada de decisão**: dados com pouca dispersão são mais previsíveis
+
+### Principais Medidas
+
+- **Variância** ($s^2$)
+- **Desvio-Padrão** ($s$)
+- **Erro-Padrão** (EP)
+:::
+:::
+
+---
+
+## 1.5 — Variância {.smaller-text}
+
+A variância mede a **dispersão** dos valores em relação à média.
+
+$$s^2 = \frac{\sum (x_i - \bar{x})^2}{n-1}$$
+
+```{r}
+#| eval: false
+variancia <- var(dados)
+variancia
+```
+
+---
+
+## 2.1 — Desvio-Padrão {.smaller-text}
+
+O desvio-padrão é a **raiz quadrada da variância**, expresso na mesma unidade dos dados.
+
+$$s = \sqrt{s^2}$$
+
+```{r}
+#| eval: false
+desvio_padrao <- sd(dados)
+desvio_padrao
+```
+
+---
+
+## 2.2 — Erro-Padrão {.smaller-text}
+
+O erro-padrão estima a **variabilidade da média amostral**.
+
+$$EP = \frac{s}{\sqrt{n}}$$
+
+```{r}
+#| eval: false
+n <- length(dados)
+erro_padrao <- desvio_padrao / sqrt(n)
+erro_padrao
+```
+
+---
+
+## 2.2 — Escore Z {.smaller-text}
+
+O escore Z indica a posição de cada valor em **unidades de desvio-padrão**.
+
+$$Z_i = \frac{x_i - \bar{x}}{s}$$
+
+```{r}
+#| eval: false
+escore_z <- (dados - media) / desvio_padrao
+escore_z
+```
+
+---
+
+## 2.3 — Intervalo de Confiança {.smaller-text}
+
+O intervalo de confiança indica a faixa onde a **média populacional** provavelmente se encontra.
+
+$$IC = \bar{x} \pm Z_{\alpha/2} \times EP$$
+
+```{r}
+#| eval: false
+alpha_90 <- qnorm(0.95)
+alpha_95 <- qnorm(0.975)
+alpha_99 <- qnorm(0.995)
+
+ic_90 <- c(media - alpha_90 * erro_padrao, media + alpha_90 * erro_padrao)
+ic_95 <- c(media - alpha_95 * erro_padrao, media + alpha_95 * erro_padrao)
+ic_99 <- c(media - alpha_99 * erro_padrao, media + alpha_99 * erro_padrao)
+
+list(IC_90 = ic_90, IC_95 = ic_95, IC_99 = ic_99)
+```
+
+---
+
+## 2.4 — Visualização {.smaller-text}
+
+```{r}
+#| eval: false
+hist(dados,
+     main = "Distribuição dos Dados",
+     xlab = "Valores",
+     col = "lightblue",
+     border = "white")
+abline(v = media, col = "red", lwd = 2)
+abline(v = ic_95, col = "darkgreen", lty = 2, lwd = 2)
+legend("topright", legend = c("Média", "IC 95%"),
+       col = c("red", "darkgreen"), lty = c(1, 2), lwd = 2)
+```
+
+---
+
+## {.centered-content}
+
+::: {style="text-align: center; font-size: 2.5em; color: var(--ufs-azul); margin-top: 150px;"}
+**Obrigado!**
+:::
+
+::: {style="text-align: center; font-size: 1.2em; margin-top: 50px; color: var(--ufs-cinza-escuro);"}
+**Luiz Diego Vidal Santos**
+
+Universidade Federal de Sergipe
+
+[diego@academico.ufs.br](mailto:diego@academico.ufs.br)
+:::

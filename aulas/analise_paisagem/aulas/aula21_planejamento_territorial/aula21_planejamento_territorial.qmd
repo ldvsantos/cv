@@ -1,0 +1,318 @@
+﻿---
+title: "Análise da Paisagem"
+subtitle: "Aula 21 — Planejamento Territorial: Diretrizes, Prioridades e Medidas<br>Curso de Geografia"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026-05-06"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise da Paisagem | Aula 21"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Do diagnóstico à proposição
+- [2]{.circle} Planejamento territorial e paisagem
+- [3]{.circle} Tipos de diretrizes
+- [4]{.circle} Conservação, conectividade e restauração
+- [5]{.circle} Priorização: critérios e matriz
+- [6]{.circle} Exercício: diretrizes para a área de estudo
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Compreender como a análise da paisagem fundamenta o **planejamento territorial**, formular **diretrizes** de conservação, conectividade, restauração e uso sustentável, e aplicar critérios de **priorização** à área de estudo.
+:::
+:::
+:::
+
+# [1 — DO DIAGNÓSTICO À PROPOSIÇÃO]{.section-header}
+
+## O terceiro nível de leitura {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Relembrando os três níveis (Aula 10)
+
+| Nível | O que faz | Status |
+|:-----:|----------|:------:|
+| **Descrição** | Relata o que se vê/mede | ✅ Feito |
+| **Interpretação** | Explica por que e como | ✅ Feito |
+| **Proposição** | Sugere o que fazer | ⬆️ **Agora** |
+
+: {.striped .hover}
+
+### A etapa propositiva
+
+Agora que temos:
+
+- Caracterização da paisagem (Aulas 07–09)
+- Evidências de SR e mudanças (Aulas 13–16)
+- Métricas de estrutura e conectividade (Aulas 17–18)
+- Unidades de paisagem (Aula 19)
+- Diagnóstico integrado (Aula 20)
+
+É hora de responder: **o que fazer?**
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### O papel da análise da paisagem no planejamento
+
+A análise da paisagem contribui com:
+
+1. **Base territorial** — delimitação de unidades para gestão diferenciada
+2. **Evidências** — dados espacializados para fundamentar decisões
+3. **Diagnóstico** — identificação de problemas e oportunidades
+4. **Conectividade** — visão da paisagem como sistema funcional
+5. **Cenários** — projeção de consequências de diferentes opções
+6. **Priorização** — critérios técnicos para alocação de recursos
+
+### Instrumentos que se beneficiam
+
+- Planos Diretores Municipais
+- Zoneamento Ecológico-Econômico (ZEE)
+- Planos de Bacia Hidrográfica
+- Planos de Manejo de UC
+- CAR e Programas de Regularização Ambiental (PRA)
+- Estudos de Impacto Ambiental (EIA/RIMA)
+:::
+:::
+:::
+
+# [2 — TIPOS DE DIRETRIZES]{.section-header}
+
+## Categorias de ação {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### 1. Conservação
+
+| Ação | Quando aplicar | Exemplo |
+|------|-------------|---------|
+| **Proteção integral** | Remanescentes em bom estado, alta biodiversidade | UC, RPPN, APP |
+| **Uso sustentável** | Áreas com potencial produtivo + conservação | Reserva Legal, extrativismo |
+| **Manutenção de matriz permeável** | Matriz com alguma cobertura | Sistemas agroflorestais |
+
+: {.striped .hover}
+
+### 2. Restauração
+
+| Ação | Quando aplicar | Exemplo |
+|------|-------------|---------|
+| **Restauração ecológica** | Área degradada com potencial de regeneração | Plantio de nativas, nucleação |
+| **Restauração de APP** | Mata ciliar ausente ou insuficiente | Recomposição de faixa de 30 m |
+| **Recuperação de solo** | Erosão ativa, compactação | Retaludamento, terraceamento |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+### 3. Conectividade
+
+| Ação | Quando aplicar | Exemplo |
+|------|-------------|---------|
+| **Corredor ecológico** | Fragmentos isolados (ENN alto) | Faixa de vegetação entre fragmentos |
+| **Trampolim (stepping stone)** | Distâncias grandes entre manchas | Pequenas manchas ao longo do caminho |
+| **Melhoria da matriz** | Matriz impermeável | Agrofloresta, silvipastoril |
+
+: {.striped .hover}
+
+### 4. Uso e gestão
+
+| Ação | Quando aplicar | Exemplo |
+|------|-------------|---------|
+| **Intensificação sustentável** | Pastagem extensiva de baixa produtividade | Manejo de pasto, irrigação eficiente |
+| **Requalificação** | Área urbana/periurbana desorganizada | Plano de ordenamento, drenagem |
+| **Monitoramento** | Áreas com tendência de degradação | Alertas por SR, fiscalização |
+
+: {.striped .hover}
+:::
+:::
+
+# [3 — PRIORIZAÇÃO]{.section-header}
+
+## Como definir prioridades? {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Critérios de priorização
+
+| Critério | Pergunta | Peso sugerido |
+|----------|---------|:-------------:|
+| **Urgência** | A degradação é reversível? Há risco iminente? | Alto |
+| **Importância ecológica** | Biodiversidade, serviços ecossistêmicos, conectividade | Alto |
+| **Viabilidade** | É técnica e economicamente viável? | Médio |
+| **Legalidade** | Há obrigação legal (APP, RL, UC)? | Alto |
+| **Abrangência** | Quantas UPs ou processos são afetados? | Médio |
+| **Custo-benefício** | Relação entre investimento e resultado esperado | Médio |
+| **Aceitação social** | A comunidade local apoia? | Médio |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+### Matriz de priorização (modelo)
+
+| Ação | Urgência | Importância | Viabilidade | Legal | **Total** |
+|------|:--------:|:---------:|:-----------:|:----:|:--------:|
+| Restaurar APP rio principal | 5 | 5 | 4 | 5 | **19** |
+| Proteger fragmento topo serra | 3 | 5 | 5 | 4 | **17** |
+| Corredor entre fragmentos | 4 | 5 | 3 | 3 | **15** |
+| Manejo de pastagem (UP-3) | 3 | 3 | 4 | 2 | **12** |
+| Recuperar voçorocas (UP-8) | 5 | 4 | 2 | 3 | **14** |
+
+: {.striped .hover}
+
+::: {.info-box}
+Escala: 1 (baixo) a 5 (alto). Total = soma dos critérios. **Maior total = maior prioridade.**
+
+> A matriz não substitui o julgamento técnico — ela **organiza e transparenta** os critérios da decisão.
+:::
+:::
+:::
+
+# [4 — CONSERVAÇÃO E CONECTIVIDADE]{.section-header}
+
+## Estratégias espaciais {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Conservação baseada em evidências
+
+A análise da paisagem indica **onde** conservar:
+
+1. **Fragmentos com maior dPC** (importância para conectividade) → prioridade de proteção
+2. **Maior mancha (LPI)** → refúgio e fonte de propágulos
+3. **Fragmentos em topos e encostas** → proteção de nascentes e controle de erosão
+4. **APPs e Reservas Legais** → obrigação legal
+
+### Conectividade: de onde a onde?
+
+- Identificar **núcleos-fonte** (manchas grandes, em bom estado)
+- Identificar **caminhos de menor custo** (Graphab, Linkage Mapper)
+- Definir **tipo de corredor** (ripário, terrestre, stepping stones)
+- Dimensionar **largura mínima** (30–100 m para corredor funcional)
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Restauração estratégica
+
+Restaurar **onde** dará mais resultado:
+
+| Critério | Prioridade de restauração |
+|----------|-------------------------|
+| APP sem mata ciliar | 🔴 Máxima (legal + funcional) |
+| Conexão entre fragmentos grandes | 🔴 Alta (conectividade) |
+| Entorno de nascentes | 🟠 Alta (proteção hídrica) |
+| Encostas com erosão | 🟠 Alta (controle de degradação) |
+| Áreas abandonadas próximas a fragmentos | 🟡 Média (regeneração natural) |
+
+: {.striped .hover}
+
+### Ferramentas de apoio
+
+- **Graphab / Conefor** → identificar manchas prioritárias para conectividade
+- **QGIS** → análise de custo-distância, rotas de corredor
+- **MapBiomas Alerta** → monitorar novos desmatamentos
+- **CAR** → identificar déficits de APP e Reserva Legal
+:::
+:::
+:::
+
+# [5 — EXERCÍCIO]{.section-header}
+
+## Diretrizes para a área de estudo {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+### Roteiro (50 min)
+
+1. **Retomar o diagnóstico** (5 min)
+   - Reler pressões, vulnerabilidades, potencialidades (Aula 20)
+   - Ter o mapa de unidades de paisagem em mãos (Aula 19)
+
+2. **Propor diretrizes por UP** (15 min)
+   - Para cada UP: pelo menos 1 diretriz principal
+   - Classificar por tipo: conservação, restauração, conectividade, uso/gestão
+
+3. **Preencher a matriz de priorização** (15 min)
+   - Pontuar cada diretriz nos 4+ critérios
+   - Ordenar por total
+
+4. **Redigir texto propositivo** (10 min)
+   - 2 parágrafos: prioridades + justificativa técnica
+   - Referenciar métricas e evidências
+
+5. **Discussão em sala** (5 min)
+   - Comparar prioridades entre equipes/áreas de estudo
+:::
+
+::: {.column width="40%"}
+::: {.info-box}
+### Entrega
+
+- Tabela de diretrizes por UP
+- Matriz de priorização preenchida
+- Texto propositivo (2 parágrafos)
+
+**Prazo:** até Aula 22 (mesma semana)
+
+### Modelo de tabela
+
+| UP | Tipo | Diretriz | Justificativa |
+|:--:|------|---------|-------------|
+| UP-1 | Restauração | Recompor APP | Mata ciliar < 30 m |
+| UP-3 | Uso | Manejo de pastagem | NDVI < 0,2 |
+| UP-5 | Conservação | Criar RPPN | Alta biodiversidade |
+| UP-2↔UP-5 | Conectividade | Corredor | ENN = 850 m |
+
+: {.striped .hover}
+:::
+:::
+:::
+
+---
+
+## Síntese da Aula 21 {.smaller-text}
+
+::: {.info-box}
+### O que vimos hoje
+
+1. **Do diagnóstico à proposição** — o terceiro nível de leitura da paisagem
+2. **Tipos de diretrizes** — conservação, restauração, conectividade, uso/gestão
+3. **Priorização** — critérios (urgência, importância, viabilidade, legalidade) e matriz
+4. **Estratégias espaciais** — onde conservar, onde restaurar, onde conectar
+5. **Exercício** — diretrizes e priorização para a área de estudo
+:::
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+
+Análise da Paisagem — Aula 21
+:::

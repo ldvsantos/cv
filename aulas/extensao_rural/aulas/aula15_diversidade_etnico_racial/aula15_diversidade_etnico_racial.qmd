@@ -1,0 +1,374 @@
+﻿---
+title: "Extensão e Sociologia Rural"
+subtitle: "Diversidade Étnico-Racial no Espaço Rural<br>Cultura Afro-Brasileira, Indígena e Comunidades Tradicionais"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Federal de Sergipe (UFS)"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UFS — Extensão e Sociologia Rural | Aula 15 — Diversidade Étnico-Racial no Campo"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos Principais
+
+- [1]{.circle} Formação Étnico-Racial do Campo Brasileiro
+- [2]{.circle} Comunidades Quilombolas — Território e Produção
+- [3]{.circle} Povos Indígenas — Terra e Agroecologia
+- [4]{.circle} Marcos Legais — Lei 10.639/03 e Lei 11.645/08
+- [5]{.circle} ATER e Diversidade Étnico-Cultural
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo Central**
+
+Compreender a formação étnico-racial do campo brasileiro, o papel das comunidades tradicionais na produção e conservação, e as obrigações legais do ensino de história e cultura afro-brasileira e indígena na formação do engenheiro agrônomo.
+:::
+:::
+:::
+
+---
+
+## FORMAÇÃO ÉTNICO-RACIAL DO CAMPO {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+O espaço rural brasileiro foi constituído historicamente pela **interação e exploração** de três matrizes étnicas:
+
+- **Indígena:** povos originários com saberes milenares sobre manejo de ecossistemas
+- **Africana:** trabalhadores escravizados que trouxeram e desenvolveram técnicas agrícolas, pecuárias e alimentares
+- **Europeia:** colonizadores que impuseram modelos de propriedade e produção
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Herança no Campo
+
+A agropecuária brasileira carrega contribuições invisibilizadas:
+
+- **Dendê, inhame, quiabo, café** — culturas de origem africana
+- **Mandioca, milho, amendoim** — domesticação indígena
+- **Roça de coivara, sistemas agroflorestais** — técnicas ancestrais
+- **Terreiro e quintal produtivo** — espaço de resistência alimentar
+:::
+:::
+:::
+
+---
+
+## ESCRAVIDÃO E ESTRUTURA AGRÁRIA {.smaller-text}
+
+A compreensão da questão étnico-racial no campo exige a análise das **raízes coloniais** da estrutura fundiária:
+
+**Período colonial (1500–1822):**
+
+- Sistema de Capitanias Hereditárias e Sesmarias — concentração de terras na elite branca
+- Mão de obra escravizada como base produtiva (engenhos, mineração, pecuária)
+
+**Lei de Terras (1850):**
+
+- Transformou a terra em **mercadoria**, impedindo que os futuros libertos da Lei Áurea (1888) acessassem a propriedade por ocupação
+- Política deliberada de **embranquecimento** — estímulo à imigração europeia para substituir o trabalho negro
+
+**Resultado:** a abolição sem reforma agrária condenou a população negra à condição de **trabalhadores sem terra**, realidade que persiste estruturalmente até hoje (Almeida, 2019).
+
+---
+
+## COMUNIDADES QUILOMBOLAS {.smaller-text}
+
+![Comunidade quilombola do Curiaú, Amapá (CC-BY 3.0 BR, Agência Brasil)](img/quilombolas_curiau_amapa.jpg){width="40%"}
+
+**Definição (Art. 68 ADCT/CF-88 + Decreto 4.887/2003):**
+
+Comunidades remanescentes de quilombos são grupos étnico-raciais com trajetória histórica própria, dotados de relações territoriais específicas e presumida ancestralidade negra.
+
+**Dados:**
+
+- Mais de **6.300 comunidades** identificadas pela Fundação Cultural Palmares (2023)
+- **2.849 processos** de titulação abertos no INCRA
+- Apenas **145 títulos** emitidos até 2023 (cobrindo cerca de 310 comunidades)
+- Concentração no Maranhão, Bahia, Minas Gerais e Pará
+
+> A titulação quilombola é condição para a **segurança territorial** que viabiliza qualquer ação produtiva ou de ATER no território (Almeida, 2008).
+
+---
+
+## QUILOMBOLAS — SISTEMAS PRODUTIVOS {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Características Produtivas
+
+Os quilombos apresentam sistemas produtivos baseados em:
+
+- **Roça de toco** (coivara controlada)
+- Extrativismo vegetal (babaçu, buriti, mangaba, licuri)
+- Pesca artesanal e mariscagem
+- Pecuária de subsistência (aves, suínos, caprinos)
+- **Quintais produtivos** com alta agrobiodiversidade
+:::
+
+::: {.column width="50%"}
+### Agrobiodiversidade
+
+As comunidades quilombolas são guardiãs de **variedades crioulas e saberes tradicionais**:
+
+- Arroz-vermelho (quilombos do MA e PA)
+- Feijão de corda, milho crioulo, mandioca multivarietal
+- Plantas medicinais e fitoterápicos
+- Sistemas agroflorestais ancestrais
+
+Essa agrobiodiversidade é patrimônio genético e cultural que interessa diretamente à **engenharia agronômica** e à segurança alimentar nacional.
+:::
+:::
+
+---
+
+## POVOS INDÍGENAS — TERRITÓRIO E PRODUÇÃO {.smaller-text}
+
+O Brasil abriga **305 povos indígenas**, falantes de 274 línguas, com uma população de **1.693.535 pessoas** (Censo 2022), das quais cerca de **460 mil** vivem em terras indígenas rurais.
+
+**Relação com a terra:**
+
+- A terra indígena não é **propriedade individual** — é território coletivo de reprodução cultural, espiritual e material
+- Os sistemas de manejo indígenas são reconhecidos como formas sofisticadas de **agroecologia** (Posey, 1985)
+- A "floresta cultural" amazônica é resultado de milênios de manejo indígena (Balée, 2006)
+
+**Marco legal:** CF/1988, Art. 231 — reconhece o direito originário dos povos indígenas sobre as terras que tradicionalmente ocupam.
+
+---
+
+## INDÍGENAS — SABERES AGRÍCOLAS {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Contribuições à Agronômia
+
+Os povos indígenas contribuíram decisivamente para a agricultura mundial:
+
+- **Domesticação da mandioca** — mais de 400 variedades
+- **Domesticação do milho** — seleção milenar a partir do teosinto
+- **Sistemas agroflorestais** complexos e multiestratos
+- **Roça indígena** — manejo de capoeira e fertilidade
+- Conhecimento sobre **bioindicadores** ambientais
+:::
+
+::: {.column width="50%"}
+### Desafios Contemporâneos
+
+- Invasão de terras por garimpeiros, grileiros e madeireiros
+- Contaminação de rios por **mercúrio e agrotóxicos**
+- Desmatamento em terras não homologadas
+- Pressão para integração ao modelo produtivo hegemônico
+- Insegurança alimentar em terras degradadas
+
+> As terras indígenas representam **13,8% do território nacional** e são responsáveis pela **conservação de 80%** da biodiversidade brasileira em áreas protegidas (ISA, 2023).
+:::
+:::
+
+---
+
+## COMUNIDADES TRADICIONAIS {.smaller-text}
+
+Além de quilombolas e indígenas, o campo brasileiro abriga diversas **comunidades tradicionais** reconhecidas pelo Decreto 6.040/2007 (PNPCT):
+
+| Comunidade | Região Principal | Atividade Produtiva |
+| --- | --- | --- |
+| **Ribeirinhos** | Amazônia | Pesca, extrativismo, várzea |
+| **Quebradeiras de coco babaçu** | MA, PI, TO | Extrativismo do babaçu |
+| **Faxinalenses** | PR | Criação extensiva em terras comuns |
+| **Geraizeiros** | MG, BA | Agropecuária de cerrado |
+| **Vazanteiros** | MG, BA | Agricultura de vazante |
+| **Catadoras de mangaba** | SE, BA, AL | Extrativismo de mangaba |
+| **Pescadores artesanais** | Litoral e rios | Pesca e maricultura |
+
+Cada grupo possui sistemas produtivos e saberes específicos que a extensão rural deve reconhecer e respeitar.
+
+---
+
+## LEI 10.639/2003 — HISTÓRIA E CULTURA AFRO-BRASILEIRA {.smaller-text}
+
+A **Lei 10.639/2003** tornou obrigatório o ensino de história e cultura afro-brasileira em todos os níveis educacionais:
+
+**Implicações para a Engenharia Agronômica:**
+
+- Reconhecimento das **contribuições africanas** à agropecuária brasileira
+- Estudo dos sistemas produtivos quilombolas como modelo de **resiliência e agrobiodiversidade**
+- Compreensão do **racismo estrutural** como determinante de desigualdades no acesso à terra, crédito e assistência técnica
+- Visibilização da produção intelectual de pesquisadores e pesquisadoras negras no campo das ciências agrárias
+
+**Resolução CNE/CP nº 1/2004:** estabelece Diretrizes Curriculares Nacionais para a Educação das Relações Étnico-Raciais e para o Ensino de História e Cultura Afro-Brasileira e Africana.
+
+---
+
+## LEI 11.645/2008 — INCLUSÃO DA HISTÓRIA INDÍGENA {.smaller-text}
+
+A **Lei 11.645/2008** ampliou a Lei 10.639/2003, incluindo a obrigatoriedade do ensino de **história e cultura indígena**:
+
+**Implicações para a Engenharia Agronômica:**
+
+- Estudo dos sistemas de **manejo ambiental indígena** como referência para práticas sustentáveis
+- Reconhecimento dos **direitos territoriais** como pré-condição para qualquer intervenção agronômica
+- Compreensão da **consulta prévia** (Convenção 169/OIT) como obrigação legal em projetos que afetem terras e comunidades indígenas
+- Formação intercultural do extensionista que atua em regiões com presença indígena
+
+> O agrônomo que desconhece a contribuição indígena à agricultura é um profissional **incompleto**.
+
+---
+
+## RACISMO ESTRUTURAL E O CAMPO {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Dados e Indicadores
+
+O racismo estrutural (Almeida, 2019) se materializa no campo em desigualdades mensuráveis:
+
+- **Renda:** agricultores negros ganham em média 40% menos que brancos (IBGE, 2017)
+- **Terra:** famílias negras possuem propriedades menores e em piores condições edáficas
+- **ATER:** comunidades negras rurais recebem menos assistência técnica proporcionalmente
+- **Crédito:** menor acesso ao PRONAF e taxas mais altas de inadimplência forçada
+:::
+
+::: {.column width="50%"}
+### Políticas Afirmativas
+
+Instrumentos de enfrentamento das desigualdades:
+
+- **PRONAF B e Semiárido** — cobertura prioritária de comunidades vulneráveis
+- **Chamadas de ATER Quilombola** — editais específicos do MDA
+- **PAA e PNAE** — compras institucionais com cota para quilombolas e indígenas
+- **Selos e certificações** — origem quilombola, indígena, orgânico
+- **Territórios da Cidadania** — programa de desenvolvimento territorial integrado
+:::
+:::
+
+---
+
+## ATER CULTURALMENTE ADEQUADA {.smaller-text}
+
+A PNATER (Lei 12.188/2010) e a Lei 11.326/2006 reconhecem que a extensão rural deve atender a **diversidade étnica e cultural** dos povos do campo:
+
+**Princípios para uma ATER intercultural:**
+
+- **Respeito aos calendários tradicionais** — tempo do plantio, festas, rituais
+- **Valorização dos saberes locais** — o agricultor quilombola/indígena não é tábula rasa
+- **Abordagem coletiva** — territórios são comunitários, não individuais
+- **Linguagem acessível** — adaptação ao universo cultural do grupo
+- **Equipe diversa** — presença de técnicos negros e indígenas na ATER
+- **Consulta prévia** — nenhuma intervenção sem consentimento da comunidade
+
+---
+
+## CASO — CATADORAS DE MANGABA EM SERGIPE {.smaller-text}
+
+![Fruto da mangaba — *Hancornia speciosa* (CC, Wikimedia)](img/mangaba_fruto_hancornia.jpg){width="30%"}
+
+::: {.columns}
+::: {.column width="50%"}
+### Contexto
+
+As catadoras de mangaba de Sergipe são mulheres, majoritariamente negras, que praticam o extrativismo da mangaba (Hancornia speciosa) em áreas de restinga e tabuleiros costeiros.
+
+- Reconhecidas como comunidade tradicional (Lei Estadual 7.082/2010)
+- Ameaçadas pela especulação imobiliária e monocultura de cana e coco
+- Organização em associações e movimentos sociais
+:::
+
+::: {.column width="50%"}
+### Extensão Rural e Mangaba
+
+A experiência das catadoras demonstra:
+
+- A importância de reconhecer **saberes femininos e negros** sobre o manejo de ecossistemas
+- A necessidade de políticas que protejam áreas de **extrativismo coletivo**
+- A potencialidade de **cadeias produtivas curtas** (polpas, geleias, beneficiamento)
+- O papel da Embrapa Tabuleiros Costeiros na pesquisa participativa com catadoras
+
+> O fruto da mangaba é, em Sergipe, **patrimônio cultural** e meio de vida para milhares de famílias.
+:::
+:::
+
+---
+
+## CASO — TERRA INDÍGENA XOCÓ (SE) {.smaller-text}
+
+Os **Xocó** são o único povo indígena com terra demarcada em Sergipe, na Ilha de São Pedro, município de Porto da Folha, às margens do Rio São Francisco.
+
+**Características:**
+
+- População de aproximadamente **600 pessoas**
+- Economia baseada em agricultura irrigada, pesca e artesanato
+- Conflitos históricos com fazendeiros pela posse da ilha
+- Demarcação conquistada em 1991 após décadas de luta
+
+**Relevância para o agrônomo:** o caso Xocó ilustra que a questão indígena em Sergipe é real e próxima, não se restringe à Amazônia. O profissional formado pela UFS deve estar preparado para atuar com **sensibilidade intercultural** em seu próprio estado.
+
+---
+
+## O PAPEL DO ENGENHEIRO AGRÔNOMO {.smaller-text}
+
+A formação do engenheiro agrônomo comprometido com a diversidade étnico-racial implica:
+
+**Na prática profissional:**
+
+- Reconhecer e respeitar os sistemas produtivos tradicionais antes de propor inovações
+- Incorporar a **consulta prévia** como procedimento padrão em projetos que afetem comunidades tradicionais
+- Emitir receituário agronômico com atenção à saúde de populações vulneráveis
+- Articular-se com órgãos de proteção (FUNAI, Fundação Palmares, INCRA)
+
+**Na postura ética:**
+
+- Combater o racismo institucional nas entidades de ATER
+- Promover a visibilidade de técnicos e pesquisadores negros e indígenas
+- Contribuir para a inclusão produtiva de comunidades historicamente marginalizadas
+
+---
+
+## CONCLUSÃO {.smaller-text}
+
+A diversidade étnico-racial do campo brasileiro é constitutiva da nossa agricultura, da nossa alimentação e da nossa paisagem. Invisibilizar essa contribuição é reproduzir a violência colonial que fundou a estrutura agrária desigual.
+
+O engenheiro agrônomo formado pela UFS deve compreender que quilombolas, indígenas e comunidades tradicionais não são "público-alvo" da extensão rural, mas **sujeitos de direitos** e **co-autores de conhecimento** agrícola, cuja participação é condição para qualquer desenvolvimento rural que se pretenda sustentável, justo e democrático.
+
+---
+
+## REFERÊNCIAS {.smaller-text}
+
+- Almeida, A. W. B. Terras tradicionalmente ocupadas (2008)
+- Almeida, S. L. Racismo Estrutural (2019)
+- Balée, W. The Research Program of Historical Ecology (2006)
+- Brasil. Constituição Federal (1988) — Art. 68 ADCT, Art. 231
+- Brasil. Lei 10.639/2003 — Ensino de História e Cultura Afro-Brasileira
+- Brasil. Lei 11.645/2008 — Inclusão da Temática Indígena
+- Brasil. Decreto 4.887/2003 — Regulamentação de Terras Quilombolas
+- Brasil. Decreto 6.040/2007 — PNPCT
+- Fundação Palmares. Certidões de autodefinição quilombola (2023)
+- IBGE. Censo 2022 — Populações Indígenas (2023)
+- ISA. Terras Indígenas no Brasil (2023)
+- Posey, D. A. Indigenous management of tropical forest ecosystems (1985)
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Federal de Sergipe (UFS)
+:::

@@ -1,0 +1,324 @@
+﻿---
+title: "Introdução à Estatística"
+subtitle: "Aulas I a IV — Versão Alunos"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+footer: "UEFS — Introdução à Estatística | Tema 1 — Conceitos Fundamentais (Alunos)"
+format: 
+  revealjs:
+    logo: ../../../../../assets/logo-uefs.webp
+    footer: "UEFS — Introdução à Estatística | Tema 1 — Conceitos Fundamentais (Alunos)"
+    slide-number: true
+    theme: [simple, assets/ufs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+    code-fold: false
+    code-tools: true
+execute:
+  echo: true
+  eval: false
+---
+
+# [I. Introdução]{.section-header}
+
+## 1.1 — Etimologia {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Definição
+
+- Inferência estatística refere-se aos resultados derivados da **análise estatística** dos dados coletados
+- A inferência estatística advém de uma relação entre a **teoria estatística** e os **dados reais**
+- A palavra **ESTATÍSTICA** vem de *STATUS* (latim = estudo), criada pelo acadêmico alemão **Gottfried Achenwall** em meados do século XVIII
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Conceito Central
+
+A Estatística é uma ciência que oferece uma **coleção de métodos** para:
+
+- Planejar experimentos e levantamentos
+- Obter dados
+- Organizar e resumir
+- Analisar e interpretar dados
+- Extrair **conhecimento**
+:::
+:::
+:::
+
+---
+
+## 1.2 — Processos Estatísticos em Pesquisas {.smaller-text}
+
+Quando solicitados a investigar um fenômeno coletivo, podemos optar por:
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.info-box}
+### Censo
+
+Estudo de **todos** os componentes de uma população
+:::
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Amostragem
+
+Estudo de **alguns** elementos de uma população cujo objetivo é fazer **inferência** sobre a população
+:::
+:::
+:::
+
+---
+
+## Tipos de Amostragem {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### 1. Amostragem Não-Probabilística
+
+Escolha dos elementos depende dos **critérios e julgamento** do pesquisador.
+
+**Exemplos:**
+
+- Amostragem por conveniência
+- Amostragem intencional
+- Amostragem por cotas
+:::
+
+::: {.column width="50%"}
+### 2. Amostragem Probabilística
+
+Escolha dos elementos é **aleatória**. Cada elemento tem probabilidade conhecida.
+
+**Exemplos:**
+
+- Amostragem Aleatória Simples (AAS)
+- Amostragem Sistemática (AS)
+- Amostragem Estratificada (AE)
+- Amostragem por Conglomerados (AC)
+:::
+:::
+
+---
+
+## Ramos da Estatística {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.info-box}
+### Estatística Descritiva
+
+Trata da **organização**, **resumo** e **apresentação** dos dados.
+:::
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Estatística Inferencial
+
+Trata de tirar **conclusões sobre uma população** a partir de uma amostra.
+
+A ferramenta básica é a **probabilidade**, que permite avaliar e controlar o tamanho do erro.
+:::
+:::
+:::
+
+---
+
+## 1.3 — Conjunto de Dados, População e Amostra {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+### Conjunto de dados
+
+Coleção de observações onde cada **coluna** representa uma variável e cada **linha** uma unidade de análise.
+
+### População
+
+Conjunto **completo** de elementos que compartilham uma característica.
+
+### Amostra
+
+**Subconjunto** da população selecionado para representar o todo.
+:::
+
+::: {.column width="40%"}
+::: {.info-box}
+### Definição
+
+Inferência estatística advém de uma relação entre a **teoria estatística** e os **dados reais**
+:::
+:::
+:::
+
+---
+
+## Exercício 1 {.smaller-text}
+
+**Identifique a população e a amostra para os casos a seguir:**
+
+**a)** Em uma pesquisa recente, foi perguntado a **1.708 adultos** se eles consideram o aquecimento global um problema que exige ação imediata do governo. **939** deles responderam que sim.
+
+**b)** Uma pesquisa conduzida entre **1.071 homens e mulheres** pela Corporação Internacional de Pesquisa de Opinião descobriu que **76% das mulheres** e **60% dos homens** haviam passado por exames físicos em 2013.
+
+# [1.4 — Tipos de Variáveis]{.section-header}
+
+## Variáveis Nominais e Ordinais {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Nominais
+
+- Variável totalmente **qualitativa**
+- Valores apenas **diferenciam categorias**
+- Sem relação entre as categorias
+- Ex: nacionalidade, religião, estado civil
+:::
+
+::: {.column width="50%"}
+### Ordinais
+
+- Estabelece **ordem ou hierarquia**
+- Intervalo entre categorias **não é regular**
+- Ex: Escolaridade (Fundamental, Médio, Superior)
+
+### Escala Likert
+
+| 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|
+:::
+:::
+
+---
+
+## Variáveis Escalares e de Razão {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Escalares
+
+- Intervalo entre valores é **constante**
+- Zero é **arbitrário** (ex: 0°C)
+:::
+
+::: {.column width="50%"}
+### Razão
+
+- Zero = **total ausência** do atributo
+- Ex: Segundos, Salário, Distâncias
+:::
+:::
+
+| Tipo | Capacidade |
+|------|-----------|
+| Nominal | Distinção |
+| Ordinal | Distinção + Ordem |
+| Escalar/Razão | Distinção + Ordem + Distância |
+
+---
+
+## Exercício 2 {.smaller-text}
+
+Classifique as variáveis abaixo:
+
+a) O nº de latinhas consumidas por alunos de uma academia
+
+b) O total de ml's consumidos por aluno
+
+c) O total de alunos que consomem 1, 2-5 ou +5 latinhas
+
+d) O nº de alunos que bebem vs. não bebem
+
+```{r}
+#| eval: false
+# Sua resposta aqui
+
+```
+
+# [II. Distribuição de Frequências]{.section-header}
+
+## Conceito {.smaller-text}
+
+- Organiza os dados em **categorias ou intervalos**
+- Mostra quantas observações pertencem a cada classe
+- Utilizada para **resumir** toda a informação obtida
+
+---
+
+## Regras para Distribuição de Frequências {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+**1º passo** — Organizar em **Rol**
+
+**2º passo** — Amplitude Total:
+$$AT = X_{max} - X_{min}$$
+
+**3º passo** — Nº de classes ($k$):
+
+- Se $n < 25$: $k \approx \sqrt{n}$
+- Se $n \geq 25$:
+$$k = 1 + \frac{10}{3}\log_{10}n$$
+:::
+
+::: {.column width="50%"}
+**4º passo** — Amplitude da classe:
+$$h = \frac{AT}{k}$$
+
+**5º passo** — Construir as **classes**:
+
+- 1ª Classe: $l_{i1} = X_{min}$, $L_{s1} = l_{i1} + h$
+- 2ª Classe: $l_{i2} = L_{s1}$, $L_{s2} = l_{i2} + h$
+:::
+:::
+
+---
+
+## Exercício 3 {.smaller-text}
+
+**A tabela apresenta notas de 20 alunos. Obtenha a frequência da variável contínua.**
+
+```{r}
+#| eval: false
+dados <- read.csv('notas.csv', header = TRUE, sep = ";")
+head(dados)
+```
+
+**Questões:**
+
+1. 1º Passo: Organizar em Rol
+2. 2º Passo: Cálculo da Amplitude Total (AT)
+3. 3º Passo: Determinação do nº de Classes (k)
+4. 4º Passo: Cálculo da amplitude da classe (h)
+
+**Apresente:** $f_i$, $F_i$, $fr$, $fr$%
+
+```{r}
+#| eval: false
+# Sua resolução aqui
+
+```
+
+---
+
+## {.centered-content}
+
+::: {style="text-align: center; font-size: 2.5em; color: var(--ufs-azul); margin-top: 150px;"}
+**Obrigado!**
+:::
+
+::: {style="text-align: center; font-size: 1.2em; margin-top: 50px; color: var(--ufs-cinza-escuro);"}
+**Luiz Diego Vidal Santos**
+
+Universidade Federal de Sergipe
+
+[diego@academico.ufs.br](mailto:diego@academico.ufs.br)
+:::

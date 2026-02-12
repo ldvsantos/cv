@@ -1,0 +1,1097 @@
+﻿---
+title: "Modelo de Rasch"
+subtitle: "TRI - Modelo de Rasch<br>Análise de Dados Ambientais"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise de Dados Ambientais | Modelo de Rasch"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+# [ANÁLISE DE RASCH]{.section-header}
+
+## ANÁLISE DE RASCH {.smaller-text}
+
+INTRODUÇÃO E ANÁLISE PARA DADOS DICOTÔMICOS
+
+
+---
+
+## MODELO RASCH {.smaller-text}
+
+Georg Rasch (1901-1980)
+
+- Matemático, Estatístico e Psicometrista
+- Desenvolveu o Modelo de Rasch
+- Desenvolve o seu modelo, separando a estimativa de dificuldade dos itens do parâmetro de habilidade das pessoas.
+- Foca apenas na dificuldade dos itens.
+
+---
+
+## RASCH É TRI? {.smaller-text}
+
+Diferentemente de outros modelos da TRI, na análise de Rasch os dados devem se ajustar ao modelo e não o contrário
+
+*“O** modelo** de** **Rasch** **é** **uma** **descrição** **matemática** **teórica** **de** **como** **uma** **medição **fundamental** **deve **operar** **com** **variáveis** **sociais/psicológicas.** **Sua** **tarefa** **não** **é** **explicar** **os **dados** **disponíveis,** **mas** **especificar** **quais** **tipos** **de** **dados** **estão** **em** **conformidade** **com** **as **prescrições** **rígidas** **da** medição** **científica”** *(Bond & Fox, 2015, p. 339).
+
+
+---
+
+## RASCH É TRI? (cont.) {.smaller-text}
+
+O quadrado da hipotenusa é igual à soma do quadrado dos catetos (a2 = b2 + c2).
+
+Edifícios lineares eram construídos antes da formalização matemática de Pitágoras.
+
+Mesmo que os edifícios não sejam perfeitamente retilíneos, se se aproximarem da formulação teórica, os edifícios parecerão retos.
+
+Nenhum dado real vai se ajustar perfeitamente ao modelo Rasch. Mas precisam se ajustar suficientemente bem para respaldar as decisões empíricas.
+
+
+---
+
+## RASCH É TRI? (cont.) {.smaller-text}
+
+“Uma pessoa que tem maior habilidade que outra deve ter a maior probabilidade de solucionar qualquer item do tipo em questão, e, similarmente, um item ser mais difícil que outro significa que, para qualquer pessoa, a probabilidade de solucionar o segundo item é maior (Rasch, 1960, p. 117)
+
+Foco total na diferença entre o nível de traço latente e a dificuldade do item
+
+
+---
+
+## RASCH É TRI? (cont.) {.smaller-text}
+
+A principal diferença do modelo Rasch para modelos de TRI 1-PL é o tratamento que se dá à discriminação do item
+
+  - Rasch = 1
+  - TRI = variável (mas fixo para todos os itens)
+  - Modelo de Rasch rejeita a lógica envolvida no cálculo da discriminação variável entre os itens
+(parâmetro a) e no acerto ao acaso (parâmetro c)
+
+
+---
+
+## RASCH É TRI? (cont.) {.smaller-text}
+
+Modelo de Rasch rejeita a lógica envolvida no cálculo da discriminação variável entre os itens (parâmetro a) e no acerto ao acaso (parâmetro c)
+
+Em relação ao parâmetro a (discriminação)
+
+
+---
+
+## RASCH É TRI? (cont.) {.smaller-text}
+
+Sujeito X (•  1.5)
+
+Modelo de Rasch rejeita a lógica envolvida no cálculo da discriminação variável entre os itens (parâmetro a) e no acerto ao acaso (parâmetro c)
+
+Em relação ao parâmetro c (acerto ao acaso)
+
+Item 2 ( = 1.0)
+
+Item 3 ( = 1.8)
+
+Item 2 ( = 1.0)
+
+Item 1 ( = 0.3)
+
+
+---
+
+## {.smaller-text}
+
+PRESSUPOSTOS MODELO RASCH
+
+Independência local
+
+  - O padrão de resposta a um item não influencia a resposta a outro item.
+    - A correlação entre os itens deve ser totalmente controlada pelo traço latente.
+Discriminação monotônica
+
+  - A probabilidade de endosso ao item apenas cresce com o aumento da
+habilidade, nunca retrocede.
+
+Unidimensionalidade
+
+  - Apenas um traço latente deve estar sendo mensurado por vez
+    - Estruturas unifatoriais
+    - Estruturas multifatoriais (Adam et al., 1997)
+
+---
+
+## {.smaller-text}
+
+MODELO RASCH
+
+
+---
+
+## {.smaller-text}
+
+Padrão de respostas
+
+✘ = errado; ✓ = certo Pessoa que mais acertou: N Pessoa que menos acertou: M
+
+MODELO RASCH
+
+
+---
+
+## {.smaller-text}
+
+Escalograma (Guttman, 1944)
+
+Mais difícil
+
+Mais hábil
+
+MODELO RASCH
+
+
+---
+
+## {.smaller-text}
+
+Escalograma (Guttman, 1944)
+
+Mais difícil
+
+Mais hábil
+
+Não é possível estimar adequadamente o nível de traço latente de M;
+
+Se M é excluído, não é possível estimar a dificuldade do item C;
+
+MODELO RASCH
+
+
+---
+
+## {.smaller-text}
+
+Escalograma (Guttman, 1944)
+
+MODELO RASCH
+
+
+---
+
+## {.smaller-text}
+
+Escalograma perfeito (Guttman, 1944)
+
+Mais difícil
+
+Mais hábil
+
+Sujeitos
+
+Itens
+
+MODELO RASCH
+
+
+---
+
+## {.smaller-text}
+
+§ Escalograma (Guttman, 1944)
+
+Padrão de erros e acertos inadequados;
+
+Pessoa A segue padrão perfeito
+
+  - Quando começa a errar, não acerta mais
+Números pontilhados são erros ou acertos
+
+inesperados
+
+Células sombreadas são erros e acertos 	não esperados, mas em ‘menor zona de 	erro’
+
+Acertos inesperados do caso ‘F’
+
+Erros totalmente inesperados dos casos ‘J’, 	‘E’, ‘L’
+
+MODELO RASCH
+
+
+---
+
+## {.smaller-text}
+
+§ Escalograma (Guttman, 1944)
+
+Itens *i, b h *e g são os únicos que separam 100% corretamente os respondentes
+
+Item d bastante errático
+
+  - Não se sabe quem vai acertá-lo ou não
+MODELO RASCH
+
+
+---
+
+## {.smaller-text}
+
+**Transformando**** ****escores**** ****ordinais**** ****em *****log*****s**** ****intervalares**
+
+  - Passo 1) Transformar % em odds-ratio (razão de chance)
+    - 91% = 91/09 = 10,111
+  - Passo 2) Converter em escala logarítimica (log natural)
+    - Loge(10,11) = 2.313
+    - Odds-ratio:
+      - Porcentagem de acerto (91) / porcentagem de erro (09)
+MODELO RASCH
+
+
+---
+
+## {.smaller-text}
+
+**Transformando**** ****escores**** ****ordinais**** em**
+
+***log*****s**** ****intervalares**
+
+A ordem das pontuações continuam as mesmas;
+
+A distância entre elas muda
+
+consideravelmente.
+
+**9%**
+
+**9%**
+
+MODELO RASCH
+
+
+---
+
+## {.smaller-text}
+
+AFUNÇÃO PROBABILÍSTICA NO MODELO RASCH
+
+Modelo deriva de uma função logística da diferença entre o nível de dificuldade e nível de habilidade da amostra
+
+Onde:
+
+é a probabilidade de que a pessoa *n** *no item *i** *marque a resposta correta (x=1):
+
+Constante log natural (*e** *= 2,7183), elevada à diferença entre *B**n** *e
+
+*D**i** *, dividido por 1 mais esse mesmo valor.
+
+
+---
+
+## {.smaller-text}
+
+Modelo deriva de uma função logística da diferença entre o nível de dificuldade e nível de habilidade da amostra
+
+AFUNÇÃO PROBABILÍSTICA NO MODELO RASCH
+
+
+---
+
+## {.smaller-text}
+
+0
+
+1
+
+2
+
+3
+
+- 3
+- 2
+- 1
+**Dificuldade**** ****/**** ****localização**** ****do**** item**
+
+Item 1 →   - • Item 2 →   -  Item 3 →    •
+
+AFUNÇÃO PROBABILÍSTICA NO MODELO RASCH
+
+
+---
+
+## {.smaller-text}
+
+Modelo deriva de uma função logística da diferença entre o nível de dificuldade e nível de habilidade da amostra
+
+AFUNÇÃO PROBABILÍSTICA NO MODELO RASCH
+
+
+---
+
+## {.smaller-text}
+
+AFUNÇÃO PROBABILÍSTICA NO MODELO RASCH
+
+
+---
+
+## {.smaller-text}
+
+Medidas de Ajuste
+
+  - Controle de qualidade dos dados
+  - Avalia se os itens estão mensurando adequadamente o traço e se as pessoas estão respondendo da maneira esperada
+    - Ajuste dos itens e das pessoas
+MODELO RASCH
+
+
+---
+
+## {.smaller-text}
+
+MODELO RASCH
+
+**Destrinchando**** ****a**** ****Figura**** ****(Bubble**** ****Chart)**
+
+O item S é muito mais difícil ou mais fácil que o item N?
+
+Em qual item há maior probabilidade de acerto
+
+dos alunos?
+
+Em qual item há maior probabilidade de erro dos alunos?
+
+Bill é mais habilidoso ou menos habilidoso que Bob?
+
+Quem é o aluno menos hábil no teste?
+
+É provável que Bill responda adequadamente o item U?
+
+Mike só acertou um item. Qual foi?
+
+
+---
+
+## {.smaller-text}
+
+MODELO RASCH
+
+**Erros**** ****dos**** ****itens ****e**** ****das**** ****pessoas**
+
+Confiabilidade dos itens
+
+Confiabilidade das pessoas
+
+Infit
+
+Outfit
+
+
+---
+
+## {.smaller-text}
+
+MODELO RASCH
+
+Itens V e W problemáticos
+
+  - Não se ajustam ao modelo; necessidade de exclusão ou modificação
+  - À direita: itens erráticos demais
+  - À esquerda: itens bons demais para serem verdade
+  - Betty respondeu os itens de forma muito inapropriada
+    - Acertou itens difíceis demais para seu nível de traço latente (‘T’ e ‘U’)
+    - Seu escore final não é confiável
+
+---
+
+## {.smaller-text}
+
+CONFIABILIDADE
+
+A precisão nos modelos Rasch indicam que o modelo traz informação suficiente para estimar adequadamente o nível de dificuldade dos itens e o nível de habilidade das pessoas
+
+  - Importância prática → Tomada de decisão
+Confiabilidade das pessoas
+
+Confiabilidade dos itens
+
+
+---
+
+## {.smaller-text}
+
+CONFIABILIDADE DAS PESSOAS
+
+Replicabilidade da ordenação de pessoas que poderíamos esperar se a mesma amostra recebesse outro conjunto de itens paralelo (i.e., mesmas dificuldades) que medisse o mesmo construto
+
+  - A ordenação das pessoas seria a mesma?
+  - No modelo Rasch, fidedignidade não é o quanto o teste é bom, mas sim o quanto as estimativas de traço latente são replicáveis (Linacre, 2021)
+  - Medidas com poucos itens afetam a estimativa de fidedignidade das pessoas
+  - Amostra com pouca variabilidade no nível de theta, também
+    - Person reliability = 0.81 (81% de variância sistemática; 19% de erro aleatório)
+
+---
+
+## {.smaller-text}
+
+*Person** **separation** **index*
+
+  - É possível dividir a amostra em mais de um grupo de sujeitos com diferentes níveis do traço latente?
+    - Baixo e alto? Baixo, médio, alto?
+    - Índice de separação baixo indica que a amostra é muito homogênea no traço medido.
+CONFIABILIDADE DAS PESSOAS
+
+
+---
+
+## {.smaller-text}
+
+*Person** **separation** **index*
+
+  - Relação direta entre a fidedignidade da medida e o índice de separação
+    - Valores de separação > 1.53 indicam que há, ao menos, dois grupos de respondentes (Confiabilidade = 0.70).
+    - Valores de separação = 3.23 (ao menos três *strata*) (Confiabilidade > .90)
+https://www.rasch.org/rmt/rmt264g.htm
+
+Linacre (2021)
+
+CONFIABILIDADE DAS PESSOAS
+
+
+---
+
+## {.smaller-text}
+
+CONFIABILIDADE DOS ITENS
+
+Replicabilidade da estimativa de dificuldade dos itens que poderíamos esperar se os mesmos itens fossem aplicados a um conjunto equivalente de pessoas (em termos de N e de theta )
+
+  - A ordenação de dificuldade dos itens seria a mesma?
+A confiabilidade do item depende principalmente de:
+
+  - 1) Variância de dificuldade do item. Ampla faixa de dificuldade = alta confiabilidade do item
+  - 2) Tamanho da amostra da pessoa. Amostra grande = alta confiabilidade do item
+    - Interpretação semelhante à confiabilidade das pessoas
+
+---
+
+## {.smaller-text}
+
+DESVIOS DE DESEMPENHO
+
+Avaliação de cada item e de cada caso individualmente
+
+Resíduos
+
+  - Valores observados – Valores esperados
+    - Tabela de resíduos para todos os itens e para todas as pessoas
+
+---
+
+## {.smaller-text}
+
+Medidas de Ajuste (INFIT E OUTFIT)
+
+  - Infit → Pessoas com nível de traço latente equivalente à dificuldade do item não respondem como o esperado
+  - Outfit → Pessoas com nível de traço latente diferente da dificuldade do item não respondem como o esperado
+    - Theta > Dificuldade: Espera-se que as pessoas endossem os itens
+    - Dificuldade **>**** **Theta: Espera-se que as pessoas não endossem os itens
+DESVIOS DE DESEMPENHO
+
+
+---
+
+## {.smaller-text}
+
+INFIT e OUTFIT
+
+  - Dois critérios de cômputo
+    - Mean-Square (MNSQ) e Z Standardized (ZSTD)
+DESVIOS DE DESEMPENHO
+
+
+---
+
+## {.smaller-text}
+
+**Mean-****Square**** ****(MNSQ)**
+
+  - Toda vez que o padrão de resposta do sujeito diverge do que era teoricamente esperado, isso gera um resíduo
+  - Em termos populacionais, a expectativa da soma dos resíduos = 0
+  - Resíduos elevados ao quadrado (média para todos os itens ou pessoas)
+  - Valores sempre positivos > 0
+DESVIOS DE DESEMPENHO
+
+
+---
+
+## {.smaller-text}
+
+**Mean-****Square**** ****(MNSQ)**
+
+  - Índices de qui-quadrado divididos pelo grau de liberdade
+    - Valor esperado do MNSQ = 1
+    - Valores 1+X, indica mais variabilidade entre os padrões de resposta do que o que o modelo esperava.
+    - MNSQ = 1.30 = 1 + 0,30 → 30% a mais de variabilidade nos dados do que o previsto
+    - Valores < 1 indica menos variabilidade que o previsto
+    - MNSQ = 0.78 = 1 - 0.22 → 22% a menos de variabilidade.
+DESVIOS DE DESEMPENHO
+
+
+---
+
+## {.smaller-text}
+
+**Mean-****Square**** (MNSQ)**
+
+**Valores**** ****aceitáveis**
+
+  - Até 500 participantes: 0.7 - 1.3
+  - Entre 500 e 1000: 0.8 - 1.2
+  - Amostras maiores que 1000: 0.9 - 1.1
+(Bond, Yan & Heene, 2020; Smith, Schumacker, & Bush, 1995).
+
+DESVIOS DE DESEMPENHO
+
+
+---
+
+## {.smaller-text}
+
+INFIT e OUTFIT
+
+  - Dois critérios de cômputo (MNSQ e ZSTD)
+  - **Z**** ****Standardized**
+    - Valores padronizados ajudam a entender os índices por meio de probabilidade estatística
+    - Hipótese a ser testada:
+    - Os dados se ajustam ao modelo perfeitamente?
+DESVIOS DE DESEMPENHO
+
+
+---
+
+## {.smaller-text}
+
+INFIT E OUTFIT
+
+Medidas de Ajuste (INFIT e OUTFIT) → ZSTD
+
+  - Z Standardized: Os dados se ajustam ao modelo perfeitamente?
+    - Valores não devem exceder |2|
+  - Critérios para Infit e Outfit:
+  - |0,5 a 1,5|: Adequado
+  - |1,5 a 2,0|: Não é produtivo para medida, mas não prejudica
+  - > |2,0|: Prejudica o sistema de mensuração
+  - < |0,5|: Pouco produtivo; precisão artificial, mas não é tão problemático
+(Linacre, 2011)
+
+Valores positivos: Mais variação do que o esperado (respostas aleatórias)
+
+Valores negativos: Menos variação do que o esperado (respostas irrealisticamente corretas)
+
+
+---
+
+## {.smaller-text}
+
+INFIT EOUTFIT
+
+
+---
+
+## {.smaller-text}
+
+**ATENÇÃO**
+
+  - MNSQ tende a ajustar todos os itens quando a amostra aumenta
+  - ZSTD tende a rejeitar todos os itens quando a amostra aumenta
+(Wu & Adams, 2007)
+
+  - As diretrizes mencionadas devem ser usadas como guia mas não como regras fixas e imutáveis
+    - Tamanho da amostra, número de itens, diferença entre nível de traço latente e dificuldade dos itens influencia nos resultados de MNSQ e ZSTD.
+    - Em geral, indicadores devem ser usados de maneira conjunta (Smith, Schumacker, & Bush, 1998)
+    - Preferível usar ZSTD do que MNSQ (Bond, Yan, & Heene, 2019, p. 319)
+  - Para compreensão mais aprofundada, ver Smith (1988, 1991, 2000), Smith, Schumacker, & Bush, 1998), Karabatsos (2000), Smith e Suh (2003), Smith e Plackner (2009):
+INFIT E OUTFIT
+
+
+---
+
+## {.smaller-text}
+
+UNIDIMENSIONALIDADE
+
+Comum à mensuração de quase tudo
+
+  - Temperatura
+  - Peso
+  - Largura
+  - Comprimento
+Termoscópio de Galileu
+
+  - Influenciado pela temperatura e pressão atmosférica
+
+---
+
+## {.smaller-text}
+
+Unidimensionalidade
+
+  - A variância dos dados deve ser explicada pelo fator latente
+  - Fatores externos devem exercer nenhuma ou pouca influência
+  - Unidimensionalidade nunca é perfeita
+    - Análise de Componentes Principais dos Resíduos (Rasch Principal Component Analysis of Residuals (Rasch PCA-R)
+UNIDIMENSIONALIDADE
+
+
+---
+
+## {.smaller-text}
+
+Análise de Componentes Principais dos Resíduos
+
+  - Rasch Principal Component Analysis of Residuals (Rasch PCA-R)
+Resíduo = erro de mensuração dos itens;
+
+O resíduo dos itens devem ser pequenos e aleatórios
+
+  - Não se correlacionam entre si
+  - Não formam uma dimensão
+*i**3*
+
+Matriz identidade
+
+*i**1**	**i**2**	**i**3*
+
+*i**1*
+
+*i**2*
+
+UNIDIMENSIONALIDADE
+
+
+---
+
+## {.smaller-text}
+
+Análise de Componentes Principais dos Resíduos
+
+  - Rasch Principal Component Analysis of Residuals (Rasch PCA-R)
+  - Avalia em que medida o modelo Rasch é capaz de explicar a variância dos dados
+    - O resíduo remanescente não deveria ser capaz de gerar uma segunda dimensão
+      - Unexplained variance in 1st contrast < 2 (presença de unidimensionalidade)
+
+---
+
+## {.smaller-text}
+
+Unidimensionalidade
+
+  - Análise Fatorial ou Rasch PCA-R?
+    - Análises fatoriais tradicionais podem separar fatores espúrios
+      - Nível de dificuldade dos itens
+      - Itens positivos e negativos
+      - Usar ambos, mas não decida exclusivamente com base na AF.
+      - Quando fatores são fortemente correlacionados entre si, é comum atestar unidimensionalidade via PCA-R.
+UNIDIMENSIONALIDADE
+
+
+---
+
+## {.smaller-text}
+
+E quando o teste é multidimensional?
+
+  - a) Analisar dados com Rasch Multidimensional
+  - b) Se os fatores forem muito correlacionados, é comum atestar unidimensionalidade via PCA-R
+  - c) Se os fatores forem pouco relacionados, é possível realizar análises individuais para cada fator separadamente, que vai se aproximar das análises multidimensional
+  - d) se os fatores forem moderamente relacinados, Rasch multidimensional estima melhor os parâmetros dos itens e das pessoas (Baghaei, 2012)
+UNIDIMENSIONALIDADE
+
+
+---
+
+## {.smaller-text}
+
+INFOS ADICIONAIS (MODELO RASCH)
+
+Dificuldade dos itens
+
+  - Média arbitrariamente fixada a 0;
+  - Dificuldade + : Itens mais difíceis que a média
+  - Dificuldade - : Itens menos difíceis que a média
+
+---
+
+## {.smaller-text}
+
+Na análise de Rasch, o escore do sujeito é o mesmo, independente de quais itens ele acerta
+
+  - Exemplo
+  - Sujeito acerta 5 itens mais fáceis → Theta = 0.50
+  - Sujeito acerta 5 itens mais difíceis → Theta = 0.50
+  - O que diferencia o escore desses sujeitos?
+    - Os desvios de desempenho (infit / outfit)
+    - Na TRI de 2 e 3-PL, o escore depende de quais itens o sujeito acerta.
+    - Na perspectiva de Rasch, isso é um erro do processo da mensuração, que deve ser corrigido.
+INFOS ADICIONAIS (MODELO RASCH)
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE DE RASCH
+
+**Vamos**** ****à**** ****prática...**
+
+- Dados dicotômicos
+- Dados politômicos
+  - Breve teoria e prática
+
+---
+
+## {.smaller-text}
+
+O BLOT
+
+**Teste**** ****de**** ****Operações**** ****Lógicas**** ****de**** ****Bond**** ****(BLOT;**** ****Bond,**** ****1976/1995).**
+
+  - Desenvolvido para aplicação coletiva, visando a substituir a entrevista individual, usada por Jean Piaget e seus colegas em Genebra.
+  - Teste de múltipla escolha (4 opções de resposta)
+  - 35 itens, visando avaliar o desenvolvimento cognitivo, conforme teoria Piagetiana
+
+---
+
+## ANÁLISE DE RASCH {.smaller-text}
+
+ANÁLISE PARA DADOS POLITÔMICOS
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE DE RASCH
+
+Modelos de Rasch também podem ser usados para dados ordinais
+
+  - Escalas Likert (*Rating** **Scale** **Model*, RSM, Andrich, 1978)
+  - Pontuações variadas (*Partial** **Credits*, Masters, 1982)
+
+---
+
+## {.smaller-text}
+
+RATING SCALE
+
+A análise de Rasch consegue derivar a estrutura verdadeiramente métrica do padrão de respostas a escalas Likert
+
+Avançam substancialmente a mensuração, não apenas ‘somando os escores’
+
+  - TCT não faz qualquer distinção em termos de distanciamento de thresholds e de dificuldade do item
+
+---
+
+## {.smaller-text}
+
+Ideal para escalas politômicas (Likert / Tipo-Likert)
+
+  - Likert (Discordância-Concordância; 1-5)
+  - Tipo Likert (Nunca-Sempre; Não parece nada comigo-parece totalmente comigo; etc.)
+Número mais alto significa maior concordância com o item
+
+  - Natureza ordinal
+    - Quem pontua 20 tem o dobro do traço latente de quem pontua 10?
+RATING SCALE
+
+
+---
+
+## {.smaller-text}
+
+Escala de Depressão
+
+RATING SCALE
+
+
+| Itens (fictícios) | Discordo
+Totalmente | Discordo | Nem Concordo,
+nem Discordo | Concordo | Concordo
+totalmente |
+| --- | --- | --- | --- | --- | --- |
+| Não me sinto motivado para fazer as minhas tarefas do dia-a-dia | 1 | 2 | 3 | 4 | 5 |
+| Às vezes, sinto vontade de tirar a
+minha própria vida | 1 | 2 | 3 | 4 | 5 |
+
+
+---
+
+## {.smaller-text}
+
+Thresholds
+
+  - Limiares entre às categorias de respostas
+    - K-1 (onde k = número de opções da escala Likert) →6 opções de resposta, 5 thresholds
+Nível de traço latente
+
+*j**12*
+
+*j**23*
+
+*j**34*
+
+*j**45*
+
+*j**56*
+
+RATING SCALE
+
+
+| Itens | Discordo Fortemente | Discordo | Discordo um pouco | Concordo um pouco | Concordo | Concordo fortemente |
+| --- | --- | --- | --- | --- | --- | --- |
+| Item X | 1 | 2 | 3 | 4 | 5 | 6 |
+
+
+---
+
+## {.smaller-text}
+
+§Thresholds
+
+Os thresholds são:
+
+  - Nível de theta necessário para ter 50% de chance de endossar ambas as categorias
+RATING SCALE
+
+
+---
+
+## {.smaller-text}
+
+RATINGSCALE
+
+§Thresholds
+
+Vamos analisar o gráfico com atenção
+
+Quantas opções de resposta tem a escala?
+
+Qual é o item com categoria mais fácil?
+
+Qual o item com categoria mais difícil?
+
+Até onde Tess consegue, provavelmente, endossar?
+
+Há algum item com threshold desordenado?
+
+**Perceba**** ****que:**
+
+Por exemplo: Marcar as categorias 2 ou 3 no item 5 (threshold 5.2) requer mais habilidade do que marcar a categoria 3 ou 4 no item 3 (threshold 3.3).
+
+
+---
+
+## {.smaller-text}
+
+RATINGSCALE
+
+§Thresholds
+
+Atenção
+
+  - As distâncias variam entre os thresholds, mas são equidistantes entre os itens.
+
+---
+
+## {.smaller-text}
+
+Informações adicionais importantes:
+
+  - Cada categoria de resposta da escala likert terá a sua própria dificuldade
+    - Média do nível de traço latente de todos os participantes que endossaram determinada categoria
+RATING SCALE
+
+
+---
+
+## {.smaller-text}
+
+Informações adicionais importantes:
+
+  - Para além dos thresholds e da dificuldade das categorias individualmente, cada item terá a sua própria dificuldade
+    - Por padrão, no Winsteps, a ‘dificuldade’ do item refere-se ao ponto em que há 50% de chance de endossar a primeira e a última categoria da escala
+RATING SCALE
+
+
+---
+
+## {.smaller-text}
+
+O que você precisa saber:
+
+  - Thresholds
+  - ‘Dificuldade’ das opções de resposta
+  - ‘Dificuldade’ do item
+Vamos à Prática...
+
+RATING SCALE
+
+
+---
+
+## {.smaller-text}
+
+FUNCIONAMENTO DIFERENCIAL DO ITEM (DIF)
+
+Funcionamento Diferencial do Item
+
+  - Differential Item Functioning (DIF)
+- Avalia, em que medida, pessoas com o mesmo nível de traço latente apresentam probabilidade diferente de endossar um determinado item
+    - ‘Choro frequente’ em escalas de depressão
+    - Todo item com DIF impacta de forma negativa a medida
+    - Enviesa a comparação entre grupos
+
+---
+
+## {.smaller-text}
+
+Critérios para avaliar DIF no Modelo Rasch
+
+  - Mantel-Haenszel (1959) DIF para dados dicotômicos
+  - Mantel (1963) para dados politômicos
+- Utiliza para detectar DIF
+- *p** *<0,05 indica DIF entre os grupos
+- Valor-p sensível ao tamanho amostral. Necessário avaliar a magnitude (tamanho de efeito do DIF)
+- DIF CONTRAST
+- Entre |.00| e |.43| baixo
+- Entre |.44| e |.64| moderado
+- Maior que |.64| Alto
+(Linacre, 2021)
+
+FUNCIONAMENTO DIFERENCIAL DO ITEM (DIF)
+
+
+---
+
+## {.smaller-text}
+
+REFERÊNCIAS
+
+Adams, R. J., Wilson, M., & Wang, W. (1997). The Multidimensional Random Coefficients Multinomial Logit Model. Applied Psychological
+
+Measurement, 21(1), 1–23. https://doi.org/10.1177/0146621697211001
+
+Akour, M., & Al-Omari, H. (2013). Empirical Investigation of the Stability of IRT Item-Parameters Estimation. International Online Journal of Educational Sciences, 2013, 5 (2), 291-301. Retrieved from: https://eis.hu.edu.jo/deanshipfiles/pub106314725.pdf
+
+Andrich, D. (1978). A rating formulation for ordered response categories. *Psychometrika*, *43*(4), 561–573. https://doi.org/10.1007/BF02293814
+
+Baghaei, P. (2012). The application of multidimensional Rasch models in large scale assessment and validation: An empirical example.
+
+Electronic Journal of Research in Educational Psychology, 10, 233–252.
+
+Baker, F. B., & Kim, S.-H. (2017). *The** **Basics** of** **Item** **Response** **Theory** **Using** **R.** *Springer International Publishing. https://doi.org/10.1007/978- 3-319-54205-8
+
+Birnbaum, A. (1968). Some latent trait models and their use in inferring an examinee’s ability. In F. M. Lord & M. R. Novick, Statistical Theories of Mental Test Scores (pp. 397 - 472). Reading, MA: Addison-Wesley Publishing.
+
+Birnbaum, A. (1957). Efficient design and use of tests of a mental ability for various decision making problems (Series Rep. No. 58-16, Project No. 7755-23). Randolph Air Force Base, Tx: USAF School of Aviation Medicine.
+
+Birnbaum, A. (1958a). On the estimation of mental ability (Series Rep. No. 15, Project No. 7755-23). Randolph Air Force Base, TX USAFSchool of Aviation Medicine.
+
+Birnbaum, A. (1958b). Further considerations of efficiency in tests of a mental ability (Tech. Rep. No. 17, Project No. 7755-23). Randolph Air Force Base, Tx: USAF School of Aviation Medicine
+
+Bond, T., Yan, Z., & Heene, M. (2020). Appplying the Rasch model: Fundamental measurement in the Human Sciences (4th Ed.)., Routledge.
+
+
+---
+
+## {.smaller-text}
+
+Hockemeyer, C. (2002). A comparison of non-deterministic procedures for the adaptive assessment of knowledge. Psychologische Beiträge,
+
+44, 495-503.
+
+Linacre, J.M. (1997). KR-20 / Cronbach Alpha or Rasch Person Reliability: Which Tells the "Truth"? Rasch Measurement Transactions, 11(3),580-1.
+
+Linacre J.M. (1999) Investigating rating scale category utility. *Journal** **of** **Outcome** **Measurement,** **3(2*), 103-122.
+
+Lord, F. M. (1952). A theory of test scores (Psychometric Monograph No. 7). Iowa City, IA: Psychometric Society.
+
+Lord, F. M. (1953 a). An application of confidence intervals and of maximum likelihood to the estimation of an examinee's ability. Psychometrika, 18, 57-75.
+
+Lord, F. M. (1953b). The relation of test score to the trait underlying the test. Educational arad Psychological Measurement, 13, 517- 548.Linacre J.M. (2002) Understanding Rasch measurement: Optimizing rating scale category effectiveness. *Journal** **of** **Applied **Measurement,** **3*(1) 85-106.
+
+Lord, F.M., & Novick, M.R. (1968). Statistical theories of mental test scores. Addison-Wesley Educational Publishers.
+
+Mantel, N., & Haenszel, W. (1959). Statistical aspects of the analysis of data from retrospective studies of disease. J Natl Cancer Inst, 22(4), 719-748. Retrieved from: https://pubmed.ncbi.nlm.nih.gov/13655060/
+
+Mantel, N. (1963) Chi-Square Tests with One Degree of Freedom: Extensions of the Mantel-Haenszel Procedure. Journal of the American
+
+Statistical Association, 58, 690-700.
+
+Nunes, C. H. S. S., & Primi, R. (2005). Impacto do tamanho da amostra na calibração de itens e estimativa de escores por teoria de resposta ao item. Avaliação Psicológica, 4(2), 141-153.
+
+REFERÊNCIAS
+
+
+---
+
+## {.smaller-text}
+
+Rulison, K., & Loken, E. (2009). I’ve fallen and I can’t get up: Can high-ability students recover from early mistakes in CAT? Applied
+
+Psychological Measurement, 33, 83-101. http://doi.org/dtqjq8
+
+Şahin, A., & Anıl, D. (2017). The effects of test lenght and sample size on item parameters in Item Response Theory. *Education** Sciences: **Theory** **&** **Practice,** **17,** *321–335. http://dx.doi.org/10.12738/estp.2017.1.0270
+
+Karabatsos, G. (2000). A critique of Rasch residual fit statistics. *Journal** **of **Applied** **Measurement,** **1*(2), 152-176.
+
+Liao, W.-W., Ho, R.-G., Yen, Y.-C., & Cheng, H.-C. (2012). The Four-Parameter Logistic Item Response Theory Model As a Robust Method of Estimating Ability Despite Aberrant Responses. Social Behavior and Personality: An International Journal, 40(10), 1679–1694. https://doi.org/10.2224/sbp.2012.40.10.1679
+
+Smith, R.M. (1991). The distributional properties of Rasch item fit statistics. Educational and Psychological Measurement, 51, 541–565.
+
+Smith, R.M. (1994). Comparison of the power of Rasch total- and between-item fit statistics to detect measurement disturbances. Educational and Psychological Measurement, 54(1), 42–55.
+
+Smith, R. M. (2000). Fit analysis in latent trait measurement models. Journal of Applied Measurement, 1(2), 199–218.
+
+Smith, R. M., Schumacker, R. E., & Bush, M. J. (1998). Using item mean squares to evaluate fit to the Rasch model. Journal of Outcome Measurement, 2(1), 66–78.Zhu, W., Updyke, W. F., & Lewandowski, C. (1997). Post-Hoc Rasch analysis of optimal categorization of an ordered-response scale. Journal of Outcome Measurement, 1(4), 286-304.
+
+Smith, R. M, & Plackner, C. (2009). The family approach to assessing fit in Rasch measurement. Journal of Applied Measurement, 10(4), 424- 437.
+
+REFERÊNCIAS
+
+
+---
+
+## {.smaller-text}
+
+Smith, R. M., Schumacker, R. E., & Bush, J. M. (1998). Using item mean squares to evaluate fit to the Rasch model. *Journal** **of** **Applied*
+
+*Measurement,** **2*(1), 66-78.
+
+Smith, R. M., & Suh, K. K. (2003). Rasch fit statistics as a test of the invariance of item parameter estimates. *Journal** **of **Applied **Measurement,** 4*(2), 153-163.
+
+Zhu, W. (2002). A confirmatory study of Rasch-based optimal categorization of a rating scale. *Journal** **of **Applied** **Measurement,** **3*, 1-15.
+
+REFERÊNCIAS
+
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::
+

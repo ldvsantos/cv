@@ -1,0 +1,426 @@
+﻿---
+title: "Conectividade Funcional da Paisagem"
+subtitle: "Métricas, Corredores Ecológicos e Graphab<br>Ciência da Paisagem"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Ciência da Paisagem | Conectividade Funcional"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos Principais
+
+- [1]{.circle} Conectividade da paisagem — conceitos
+- [2]{.circle} Conectividade estrutural vs. funcional
+- [3]{.circle} Teoria de grafos aplicada a paisagens
+- [4]{.circle} Métricas: PC, IIC, EC(PC), dPC
+- [5]{.circle} Tutorial prático no Graphab
+- [6]{.circle} Implicações para planejamento de corredores
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo Central**
+
+Compreender o conceito de conectividade funcional da paisagem, calcular métricas de conectividade com o software Graphab e discutir implicações para o planejamento de corredores ecológicos.
+:::
+:::
+:::
+
+# [1 — CONECTIVIDADE DA PAISAGEM]{.section-header}
+
+## Por que conectividade importa? {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### O problema da fragmentação
+
+A conversão de ecossistemas naturais em áreas agrícolas e urbanas gera **fragmentos** isolados de habitat.
+
+Consequências ecológicas:
+
+- **Populações pequenas** e vulneráveis à extinção local
+- Redução do **fluxo gênico** entre populações
+- Perda de **serviços ecossistêmicos** (polinização, controle biológico)
+- Diminuição da **resiliência** a distúrbios (fogo, seca)
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### A conectividade como solução
+
+A **conectividade** entre fragmentos permite:
+
+1. Movimentação de indivíduos entre manchas
+2. Recolonização após extinções locais (metapopulações)
+3. Fluxo gênico e variabilidade genética
+4. Provisão contínua de serviços ecossistêmicos
+
+> *"Conectividade é o grau em que a paisagem facilita ou impede o movimento entre manchas de recursos."* — Taylor et al. (1993)
+:::
+:::
+:::
+
+---
+
+## Estrutural vs. Funcional {.smaller-text}
+
+| Aspecto | Conectividade Estrutural | Conectividade Funcional |
+|---------|:---:|:---:|
+| **O que mede** | Arranjo físico dos fragmentos | Capacidade real de movimento |
+| **Dados necessários** | Mapa de uso da terra (vetorial/raster) | Mapa + dados de dispersão da espécie |
+| **Exemplo de métrica** | Distância euclidiana entre manchas | Probabilidade de dispersão (custo-distância) |
+| **Limitação** | Ignora a biologia do organismo | Requer dados autoecológicos |
+| **Software** | Fragstats, QGIS | Graphab, Conefor, Circuitscape |
+
+: {.striped .hover}
+
+::: {.info-box}
+**Nesta aula** trabalharemos com **conectividade funcional**, que incorpora a capacidade de dispersão da espécie-alvo na análise.
+:::
+
+# [2 — TEORIA DE GRAFOS NA ECOLOGIA DA PAISAGEM]{.section-header}
+
+## Paisagem como grafo {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+### Componentes
+
+A paisagem é representada como um **grafo** $G = (V, E)$:
+
+- **Nós (V)** = manchas de habitat (fragmentos)
+- **Arestas (E)** = conexões potenciais entre manchas
+
+Cada aresta possui um **peso** baseado na:
+
+- **Distância euclidiana** entre manchas, ou
+- **Distância de custo** (least-cost path), ou
+- **Resistência** da matriz (circuitos)
+
+### Propriedade do nó
+
+- **Atributo** = área da mancha ($a_i$) como proxy da qualidade do habitat
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+### Limiar de dispersão
+
+Duas manchas são consideradas **conectadas** se a distância entre elas for ≤ a **capacidade de dispersão** da espécie-alvo ($d_{max}$).
+
+| Organismo | $d_{max}$ típico |
+|-----------|:---:|
+| Aves florestais (pequenas) | 200–1000 m |
+| Mamíferos médios | 1–5 km |
+| Anfíbios | 100–500 m |
+| Insetos polinizadores | 500–2000 m |
+| Grandes mamíferos | 5–50 km |
+
+: {.striped .hover}
+:::
+:::
+:::
+
+# [3 — MÉTRICAS DE CONECTIVIDADE]{.section-header}
+
+## IIC — Integral Index of Connectivity {.smaller-text}
+
+$$IIC = \frac{\sum_{i=1}^{n}\sum_{j=1}^{n} \frac{a_i \times a_j}{1 + nl_{ij}}}{A_L^2}$$
+
+Onde:
+
+- $a_i$, $a_j$ = área das manchas $i$ e $j$
+- $nl_{ij}$ = número de ligações (arestas) no caminho mais curto entre $i$ e $j$
+- $A_L$ = área total da paisagem
+- $IIC$ varia de **0** (sem habitat) a **1** (paisagem toda conectada)
+
+::: {.info-box}
+O IIC é uma métrica **binária** — a conexão existe ou não (baseada no limiar de dispersão). Não considera probabilidades intermediárias.
+:::
+
+---
+
+## PC — Probability of Connectivity {.smaller-text}
+
+$$PC = \frac{\sum_{i=1}^{n}\sum_{j=1}^{n} a_i \times a_j \times p^{*}_{ij}}{A_L^2}$$
+
+Onde $p^{*}_{ij}$ é o **produto máximo de probabilidades** de dispersão ao longo do caminho ótimo entre $i$ e $j$.
+
+::: {.columns}
+::: {.column width="50%"}
+### Modelo de dispersão
+
+$$p_{ij} = e^{-k \times d_{ij}}$$
+
+Onde:
+
+- $d_{ij}$ = distância de custo entre manchas
+- $k$ = constante de dispersão ($k = -\ln(p_{median}) / d_{median}$)
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Vantagem sobre IIC
+
+O PC é **probabilístico**:
+
+- Conexões próximas → alta probabilidade
+- Conexões distantes → baixa probabilidade
+- Não descarta manchas como "desconectadas" — atribui probabilidade menor
+
+**Recomendação:** usar PC preferencialmente ao IIC (Saura & Pascual-Hortal, 2007).
+:::
+:::
+:::
+
+---
+
+## dPC — Importância individual de cada mancha {.smaller-text}
+
+Para priorizar manchas para conservação, calcula-se a **variação percentual do PC** ao remover a mancha $k$:
+
+$$dPC_k = \frac{PC - PC_{remover\;k}}{PC} \times 100$$
+
+O dPC pode ser decomposto em três frações:
+
+| Fração | Significado |
+|--------|-------------|
+| **dPC_intra** | Importância pela própria área (habitat intrínseco) |
+| **dPC_flux** | Importância como área de dispersão (fluxo) |
+| **dPC_connector** | Importância como "stepping stone" (ponte entre manchas) |
+
+: {.striped .hover}
+
+::: {.info-box}
+Manchas com alto **dPC_connector** são *key stepping stones* — sua perda desconecta partes significativas da paisagem.
+:::
+
+# [4 — TUTORIAL PRÁTICO NO GRAPHAB]{.section-header}
+
+## O que é o Graphab? {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+**Graphab** é um software livre (Java) para análise de conectividade funcional de paisagens baseada em grafos.
+
+### Capacidades
+
+- Importar mapas raster de uso da terra
+- Definir custos de deslocamento por classe
+- Calcular distâncias de menor custo
+- Gerar grafos de conectividade
+- Calcular métricas: PC, IIC, EC(PC), dPC
+- Mapear componentes conectados
+- Simular cenários de restauração
+
+**Download:** [thema.univ-fcomte.fr/productions/graphab](https://thema.univ-fcomte.fr/productions/graphab/)
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Requisitos
+
+- Java ≥ 8 (JDK)
+- Mapa raster de uso da terra (.tif)
+- RAM: 4 GB mínimo (8 GB recomendado)
+- Resolução recomendada: 10–30 m
+
+### Dados de entrada necessários
+
+1. Mapa de uso da terra classificado (raster)
+2. Código da classe de habitat-alvo
+3. Custos de deslocamento por classe de uso
+4. Capacidade de dispersão da espécie ($d_{max}$)
+:::
+:::
+:::
+
+---
+
+## Passo 1 — Criar projeto e importar mapa {.smaller-text}
+
+1. **File → New Project**
+2. Selecionar o raster de uso da terra (.tif)
+3. Definir a **classe de habitat**: ex. código 3 = Floresta
+4. Definir **área mínima de fragmento**: ex. 1 ha (elimina manchas muito pequenas)
+5. O Graphab identifica automaticamente todos os fragmentos e calcula suas áreas
+
+::: {.info-box}
+**Dica:** use mapas do MapBiomas (30 m) ou classificação própria no GEE (10 m). Certifique-se que o raster está em projeção métrica (UTM).
+:::
+
+---
+
+## Passo 2 — Definir custos de deslocamento {.smaller-text}
+
+A cada classe de uso da terra, atribui-se um **custo unitário** de deslocamento:
+
+| Classe | Uso da terra | Custo sugerido |
+|:---:|------------|:---:|
+| 1 | Água | 1000 (barreira para terrestres) |
+| 2 | Área urbana | 500 |
+| 3 | **Floresta (habitat)** | 1 |
+| 4 | Pastagem | 30 |
+| 5 | Agricultura | 50 |
+| 6 | Solo exposto | 80 |
+| 7 | Vegetação secundária | 5 |
+
+: {.striped .hover}
+
+::: {.highlight-box}
+Os custos são **espécie-dependentes**. Uma ave florestal atribui alto custo a campos abertos; um mamífero generalista pode ter custo menor.
+:::
+
+---
+
+## Passo 3 — Gerar grafo e calcular métricas {.smaller-text}
+
+1. **Graph → Create Graph**
+   - Tipo de distância: **Cost distance** (least-cost path)
+   - Limiar de dispersão: ex. 2000 m de distância de custo
+
+2. **Graph → Calculate Metrics**
+   - Selecionar: PC, dPC (com decomposição)
+   - Probabilidade de dispersão: modelo exponencial negativo
+   - Distância mediana: $d_{median}$ = capacidade de dispersão da espécie
+
+3. **Resultados:** tabela de atributos com dPC total, dPC_intra, dPC_flux, dPC_connector por mancha
+
+---
+
+## Passo 4 — Interpretação {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Mapa de prioridades
+
+- Colorir manchas pelo valor de **dPC total** (gradiente)
+- Manchas em **vermelho** → alta importância para conectividade
+- Manchas em **azul** → baixa importância
+
+### Análise das frações
+
+- Alto **dPC_intra** → fragmento grande e com habitat de qualidade → **reserva**
+- Alto **dPC_connector** → fragmento-ponte entre componentes → **stepping stone** prioritário para conservação
+- Alto **dPC_flux** → área com alto fluxo de dispersão → **corredor potencial**
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Cenários de restauração
+
+No Graphab é possível:
+
+1. "Adicionar" novo fragmento (simular restauração)
+2. Recalcular PC
+3. Comparar $\Delta PC$ entre cenários
+
+Isso permite responder:
+
+> *"Onde restaurar para obter o maior ganho de conectividade?"*
+:::
+:::
+:::
+
+# [5 — CORREDORES ECOLÓGICOS]{.section-header}
+
+## Da métrica ao planejamento {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Critérios para definição de corredores
+
+A partir da análise no Graphab:
+
+1. Identificar **componentes desconectados** do grafo
+2. Localizar as **arestas de menor custo** entre componentes
+3. Traçar o **caminho de menor custo** (least-cost corridor)
+4. Definir **largura do corredor** — baseada na biologia da espécie (ex.: 100 m para aves, 500 m para mamíferos)
+
+### Marco legal
+
+- **Lei 9.985/2000** (SNUC) — UC como núcleo de conectividade
+- **Lei 12.651/2012** (Código Florestal) — APPs como corredores naturais
+- **PNMA** — princípio da conectividade ecológica
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Limitações da abordagem
+
+1. Modelos baseados em **uma espécie** — paisagem é multiespécies
+2. Custos de deslocamento são **estimativas** — faltam dados empíricos para muitas espécies brasileiras
+3. Mapas de uso da terra têm **erro** — incerteza propagada
+4. Não considera **variação temporal** (safra, estações)
+5. Conectividade ≠ uso real — presença de corredor não garante deslocamento
+
+**Recomendação:** usar espécies guarda-chuva e validar com dados de movimentação (GPS, camera trap).
+:::
+:::
+:::
+
+---
+
+## Exercício proposto {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+### Atividade
+
+1. Baixe o mapa de uso da terra do MapBiomas (2023) para o seu município (30 m)
+2. Importe no Graphab e defina Floresta como habitat-alvo
+3. Atribua custos de deslocamento para cada classe
+4. Gere o grafo com $d_{max} = 1500$ m (ave florestal)
+5. Calcule PC e dPC com decomposição
+6. Identifique as **5 manchas mais importantes** para conectividade
+7. Proponha **2 áreas prioritárias** para restauração (simule no Graphab)
+8. Elabore mapa final com corredores propostos
+:::
+
+::: {.column width="40%"}
+::: {.highlight-box}
+### Entrega
+
+- **Formato:** relatório PDF com mapas + tabelas de dPC
+- **Prazo:** 21 dias
+- **Critérios:** execução correta (30%), interpretação (30%), proposição de corredores (20%), qualidade do mapa (20%)
+:::
+:::
+:::
+
+---
+
+## Referências {.smaller-text}
+
+- Saura, S., & Pascual-Hortal, L. (2007). A new habitat availability index to integrate connectivity in landscape conservation planning. *Landscape Ecology*, 22, 141–154.
+- Taylor, P. D., Fahrig, L., & Merriam, G. (1993). Connectivity is a vital element of landscape structure. *Oikos*, 68, 571–573.
+- Foltête, J. C., Clauzel, C., & Vuidel, G. (2012). A software tool dedicated to the modelling of landscape networks. *Environmental Modelling & Software*, 38, 316–327.
+- Saura, S., & Torné, J. (2009). Conefor Sensinode 2.2: A software package for quantifying the importance of habitat patches for landscape connectivity. *Environmental Modelling & Software*, 24(1), 135–139.
+- MapBiomas (2024). Projeto MapBiomas — Coleção 9. [mapbiomas.org](https://mapbiomas.org/)
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::

@@ -1,0 +1,831 @@
+﻿---
+title: "GLM e GEE"
+subtitle: "Modelos Lineares Generalizados e Equações de Estimação Generalizadas<br>Análise de Dados Ambientais"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise de Dados Ambientais | GLM e GEE"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+# [O QUE SÃO MODELOS GENERALIZADOS]{.section-header}
+
+## O QUE SÃO MODELOS GENERALIZADOS {.smaller-text}
+
+Generalized Linear Models (GLM) x Generalized Estimating Equations (GEE)
+
+
+---
+
+## {.smaller-text}
+
+Diversas possibilidades de análises de dados em pesquisas científicas:
+
+INTRODUÇÃO
+
+
+---
+
+## {.smaller-text}
+
+As diferentes formas de análise de variância (ANOVA) são algumas das técnicas mais utilizadas em diversas áreas de pesquisa:
+
+INTRODUÇÃO
+
+
+---
+
+## {.smaller-text}
+
+Nos últimos anos, análises alternativas às ANOVAs têm ganhado espaço:
+
+INTRODUÇÃO
+
+
+---
+
+## {.smaller-text}
+
+Mas, afinal, o que são esses modelos generalizados?
+
+HISTÓRICO
+
+
+---
+
+## {.smaller-text}
+
+Mas, afinal, o que são esses modelos generalizados?
+
+HISTÓRICO
+
+
+---
+
+## {.smaller-text}
+
+HISTÓRICO
+
+Mas, afinal, o que são esses modelos generalizados?
+
+(2018)
+
+(2012)
+
+
+---
+
+## {.smaller-text}
+
+PROPOSTA
+
+Os modelos generalizados propõem uma nova maneira de pensar os dados:
+
+
+---
+
+## {.smaller-text}
+
+Os modelos generalizados propõem uma nova maneira de pensar os dados:
+
+PROPOSTA
+
+
+---
+
+## {.smaller-text}
+
+VIABILIDADE
+
+Diversos *softwares *são capazes de rodar o GLM e o GEE:
+
+
+---
+
+## APLICAÇÕES: {.smaller-text}
+
+Dados transversais x dados longitudinais
+
+
+---
+
+## {.smaller-text}
+
+INTRODUÇÃO
+
+O GLM e o GEE apresentam diversas aplicações dependendo do delineamento:
+
+
+---
+
+## {.smaller-text}
+
+O GLM e o GEE englobam diversas análises com diferentes distribuições:
+
+Regressão linear (VD contínua);
+
+Regressão logística (VD binária ou multinomial);
+
+Regressão Poisson (VD contagem);
+
+Regressão hierárquica (relação hierárquica entre variáveis);
+
+Análise do tempo até um evento (sobrevida).
+
+INTRODUÇÃO
+
+
+---
+
+## {.smaller-text}
+
+*Generalized Linear Models *(GLM):
+
+Independência das unidades de análise (sujeitos);
+
+Um sujeito não influencia o outro (erros independentes).
+
+DADOS TRANSVERSAIS
+
+
+---
+
+## {.smaller-text}
+
+GLM:
+
+DADOS TRANSVERSAIS
+
+
+---
+
+## {.smaller-text}
+
+GLM:
+
+DADOS TRANSVERSAIS
+
+
+---
+
+## {.smaller-text}
+
+*Generalized Estimating Equations *(GEE):
+
+Dependência da unidade de análise (mesmo sujeito ao longo do tempo);
+
+Dados correlacionados (erros dependentes).
+
+DADOS TRANSVERSAIS
+
+
+---
+
+## {.smaller-text}
+
+GEE:
+
+DADOS TRANSVERSAIS
+
+
+---
+
+## {.smaller-text}
+
+GEE:
+
+Tamanho amostral
+
+DADOS TRANSVERSAIS
+
+
+---
+
+## {.smaller-text}
+
+Por que usamos GLM e GEE nesses estudos e não ANOVAs ou regressões?
+
+DADOS LONGITUDINAIS
+
+
+---
+
+## VANTAGEM EM RELAÇÃO ÀS ANOVAS {.smaller-text}
+
+Distribuições, matrizes de covariância e *missing** **data*
+
+
+---
+
+## {.smaller-text}
+
+INTRODUÇÃO
+
+A utilização das ANOVAs requer que alguns pressupostos sejam satisfeitos:
+
+
+---
+
+## {.smaller-text}
+
+Quando esses pressupostos não são atendidos, algumas saídas incluem:
+
+INTRODUÇÃO
+
+
+---
+
+## {.smaller-text}
+
+Porém, não parece que estamos “forçando a barra” ao usar essas saídas?
+
+INTRODUÇÃO
+
+
+---
+
+## {.smaller-text}
+
+Os modelos generalizados possibilitam maior flexibilidade nas análises:
+
+VANTAGENS
+
+
+---
+
+## {.smaller-text}
+
+VANTAGENS
+
+Os modelos generalizados possibilitam maior flexibilidade nas análises:
+
+
+---
+
+## {.smaller-text}
+
+Distribuições de probabilidade da VD:
+
+VANTAGENS
+
+
+---
+
+## {.smaller-text}
+
+Matrizes de covariância:
+
+VANTAGENS
+
+
+---
+
+## {.smaller-text}
+
+*Missing data*:
+
+Baseline
+
+Pós-intervenção
+
+Follow-Up 2
+
+Follow-Up 1
+
+VANTAGENS
+
+
+---
+
+## {.smaller-text}
+
+*Missing data*:
+
+VANTAGENS
+
+
+---
+
+## {.smaller-text}
+
+VANTAGENS
+
+
+---
+
+## VANTAGEM EM RELAÇÃO ÀS ANOVAS (cont.) {.smaller-text}
+
+Variáveis contínuas
+
+
+---
+
+## {.smaller-text}
+
+Como nosso fenômeno de interesse está distribuído na natureza?
+
+INTRODUÇÃO
+
+
+---
+
+## {.smaller-text}
+
+Provavelmente, você já ouviu falar na chamada distribuição normal:
+
+Uma das distribuições mais utilizadas para descrever fenômenos naturais.
+
+INTRODUÇÃO
+
+
+---
+
+## {.smaller-text}
+
+A	curva	normal	de	Gauss	é	simétrica	e	baseia-se	em	dois	parâmetros (média e desvio-padrão):
+
+INTRODUÇÃO
+
+
+---
+
+## {.smaller-text}
+
+Uma das maiores limitações de testes paramétricos é a suposição restrita da normalidade dos dados, mas nem todos os dados são normais...
+
+INTRODUÇÃO
+
+
+---
+
+## {.smaller-text}
+
+INTRODUÇÃO
+
+
+---
+
+## {.smaller-text}
+
+DISTRIBUIÇÕES PARA VDS CONTÍNUAS
+
+Algumas das mais comuns incluem:
+
+Normal;
+
+Gamma;
+
+Tweedie (mista).
+
+
+---
+
+## {.smaller-text}
+
+Gamma:
+
+Distribuição assimétrica que aceita apenas valores positivos ( > 0);
+
+Grande	família	de	distribuições,	que	pode	assumir	diferentes	formatos
+
+(normal, exponencial, qui-quadrado, F, t, etc..).
+
+https://seeing-theory.brown.edu/probability-distributions/index.html
+
+DISTRIBUIÇÕES PARA VDS CONTÍNUAS
+
+
+---
+
+## {.smaller-text}
+
+Tweedie:
+
+Distribuição mista que combinas características contínuas e discretas;
+
+Direito (jurimetria: indenização, pena).
+
+DISTRIBUIÇÕES PARA VDS CONTÍNUAS
+
+
+---
+
+## {.smaller-text}
+
+Como escolher?
+
+DISTRIBUIÇÕES PARA VDS CONTÍNUAS
+
+
+---
+
+## {.smaller-text}
+
+Como escolher?
+
+DISTRIBUIÇÕES PARA VDS CONTÍNUAS
+
+
+---
+
+## DISTRIBUIÇÕES DE PROBABILIDADE {.smaller-text}
+
+Variáveis discretas
+
+
+---
+
+## {.smaller-text}
+
+INTRODUÇÃO
+
+
+---
+
+## {.smaller-text}
+
+DISTRIBUIÇÕES: VDS DISCRETAS
+
+Algumas das mais comuns incluem:
+
+Bernoulli;
+
+Binomial;
+
+Geométrica;
+
+Binomial negativa;
+
+Poisson.
+
+
+---
+
+## {.smaller-text}
+
+Bernoulli:
+
+Evento com duas possibilidade que ocorre uma vez;
+
+Experimento binário;
+
+Jogar uma moeda (cara ou coroa).
+
+DISTRIBUIÇÕES: VDS DISCRETAS
+
+
+---
+
+## {.smaller-text}
+
+Binomial:
+
+Série de Bernoulli encadeada;
+
+Experimentos binários e independentes (nº de tentativas; nº de sucessos);
+
+Número de caras em 5 lançamentos de moeda (nº tentativas é fixo; nº de sucessos varia).
+
+DISTRIBUIÇÕES: VDS DISCRETAS
+
+
+---
+
+## {.smaller-text}
+
+Geométrica:
+
+Quantas tentativas para obter o primeiro sucesso?;
+
+Experimentos binários independentes;
+
+Quantos lançamentos de moeda até a primeira cara? (nº tentativas varia).
+
+DISTRIBUIÇÕES: VDS DISCRETAS
+
+
+---
+
+## {.smaller-text}
+
+Binomial negativa:
+
+Quantas tentativas para obter X sucessos? (generalização da geométrica);
+
+Experimentos binários independentes;
+
+Quantos	lançamentos	de	moeda	até	6	coroas?	(nº	tentativas	varia;	nº	de sucessos fixo).
+
+DISTRIBUIÇÕES: VDS DISCRETAS
+
+
+---
+
+## {.smaller-text}
+
+DISTRIBUIÇÕES: VDS DISCRETAS
+
+Poisson:
+
+Variáveis de contagem (taxas);
+
+Tempo (área) em que eventos independentes podem acontecer;
+
+Número de pessoas que ficam doentes em uma semana (epidemiologia).
+
+
+---
+
+## {.smaller-text}
+
+DISTRIBUIÇÕES: VDS DISCRETAS
+
+Qual a “carinha” dessas diferentes distribuições?
+
+https://seeing-theory.brown.edu/probability-distributions/index.html
+
+
+---
+
+## {.smaller-text}
+
+DISTRIBUIÇÕES: VDS DISCRETAS
+
+Como escolher?
+
+
+---
+
+## FUNÇÕES DE LIGAÇÃO {.smaller-text}
+
+Importância para interpretação dos resultados
+
+
+---
+
+## {.smaller-text}
+
+INTRODUÇÃO
+
+A flexibilidade dos modelos generalizados permitem a escolha de diferentes distribuições de probabilidade para a variável dependente de interesse:
+
+
+---
+
+## {.smaller-text}
+
+INTRODUÇÃO
+
+
+---
+
+## {.smaller-text}
+
+Além	das	diferentes	distribuições,	também	existem	diferentes	funções	de ligação que devem ser especificadas de acordo com seu modelo:
+
+INTRODUÇÃO
+
+
+---
+
+## {.smaller-text}
+
+Dependendo da função de ligação escolhida, os coeficientes de GLM e GEE podem ser descritos e interpretados de diferentes formas:
+
+Regressão linear;
+
+Regressão logística;
+
+Regressão Poisson.
+
+INTRODUÇÃO
+
+
+---
+
+## {.smaller-text}
+
+FUNÇÕES DE LIGAÇÃO
+
+Algumas das mais comuns incluem:
+
+Identidade;
+
+Logit;
+
+Log.
+
+A escolha adequada melhora a interpretabilidade dos resultados.
+
+
+---
+
+## {.smaller-text}
+
+Identidade:
+
+Comum em distribuições para VDs contínuas;
+
+Interpretação como na regressão linear;
+
+Coeficientes β como diferenças médias entre grupos (tamanho de efeito).
+
+FUNÇÕES DE LIGAÇÃO
+
+
+---
+
+## {.smaller-text}
+
+Logit:
+
+Comum em distribuições para VDs discretas binárias;
+
+Interpretação como na regressão logística;
+
+Coeficientes Exp (β) como razões de chance (*odds ratio*).
+
+FUNÇÕES DE LIGAÇÃO
+
+
+---
+
+## {.smaller-text}
+
+Log:
+
+Comum em distribuições para VDs discretas de contagem;
+
+Interpretação como na regressão Poisson;
+
+Coeficientes Exp (β) como razões de taxas (prevalência, incidência).
+
+FUNÇÕES DE LIGAÇÃO
+
+
+---
+
+## {.smaller-text}
+
+Como escolher?
+
+FUNÇÕES DE LIGAÇÃO
+
+
+---
+
+## MATRIZ DE COVARIÂNCIA {.smaller-text}
+
+Principais tipos
+
+
+---
+
+## {.smaller-text}
+
+INTRODUÇÃO
+
+Desenhos longitudinais permitem diferentes observações ao longo do tempo:
+
+
+---
+
+## {.smaller-text}
+
+Como são observações do mesmo sujeito, elas devem ser relacionadas...
+
+TEMPO
+
+INTRODUÇÃO
+
+
+---
+
+## {.smaller-text}
+
+Mas, de que forma essa relação ocorre?
+
+INTRODUÇÃO
+
+
+---
+
+## {.smaller-text}
+
+As ANOVAs de medidas repetidas pressupõe a ‘esferacidade’:
+
+As variâncias devem ser homogêneas ao longo do tempo;
+
+Teste de Mauchly.
+
+INTRODUÇÃO
+
+
+---
+
+## {.smaller-text}
+
+INTRODUÇÃO
+
+O GEE não requer o pressuposto da ‘esferacidade’:
+
+A VD pode apresentar diferentes variações ao longo do tempo;
+
+Escolha da matriz de covariância adequada para o desenho.
+
+
+---
+
+## {.smaller-text}
+
+MATRIZES DE COVARIÂNCIA
+
+Algumas das mais comuns incluem:
+
+Intercambiável;
+
+Auto-regressiva de ordem 1;
+
+M-dependente;
+
+Independente;
+
+Não estruturada.
+
+
+---
+
+## {.smaller-text}
+
+Matriz intercambiável ou permutável:
+
+Efeito do tempo é constante sobre a VD (covariâncias homogêneas);
+
+Conhecida como “*exchangeable*” ou “*compound symmetry structure*”.
+
+MATRIZES DE COVARIÂNCIA
+
+
+---
+
+## {.smaller-text}
+
+Matriz auto-regressiva de ordem 1 ou AR (1):
+
+Dependência temporal;
+
+O que acontece em “t” depende necessariamente do que aconteceu em “t–1”.
+
+MATRIZES DE COVARIÂNCIA
+
+
+---
+
+## {.smaller-text}
+
+Matriz M-dependente:
+
+Medidas consecutivas apresentam covariâncias comuns, pares de medidas separadas por uma terceira medida também;
+
+Num desenho de 5 tempos: 1 e 2, 2 e 3, 3 e 4 e 4 e 5 apresentam a mesma
+
+covariância, assim como 1 e 3, 2 e 4, 3 e 5 ou 1 e 4 e 2 e 5.
+
+MATRIZES DE COVARIÂNCIA
+
+
+---
+
+## {.smaller-text}
+
+Matriz independente:
+
+Medidas repetidas não são correlacionadas;
+
+Lembra a ideia dos modelos transversais.
+
+MATRIZES DE COVARIÂNCIA
+
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::
+

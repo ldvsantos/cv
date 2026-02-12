@@ -1,0 +1,676 @@
+﻿---
+title: "Análise da Paisagem"
+subtitle: "Aula 02 — Evolução do Conceito de Paisagem e Distinções Operacionais<br>Curso de Geografia"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026-02-25"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise da Paisagem | Aula 02"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Retomada e discussão da leitura (Bertrand, 1971)
+- [2]{.circle} Da *Landschaft* ao geossistema
+- [3]{.circle} A paisagem em diferentes tradições do séc. XX
+- [4]{.circle} A contribuição brasileira: Ab'Sáber e Monteiro
+- [5]{.circle} Paisagem em Milton Santos
+- [6]{.circle} Distinções operacionais para a disciplina
+- [7]{.circle} Paisagem como síntese: definição de trabalho
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Compreender a evolução histórica do conceito de paisagem na Geografia, desde a *Landschaft* alemã até as formulações contemporâneas, estabelecendo **distinções operacionais** que orientarão o trabalho ao longo da disciplina.
+:::
+:::
+:::
+
+# [1 — DISCUSSÃO DA LEITURA]{.section-header}
+
+## Bertrand (1971): pontos-chave {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Fichamento coletivo
+
+> *"A paisagem não é a simples adição de elementos geográficos disparatados — é, em uma determinada porção do espaço, o resultado da combinação dinâmica, portanto instável, de elementos físicos, biológicos e antrópicos."* — Bertrand, 1971
+
+**Contribuição central:**
+
+- Paisagem como **combinação dinâmica**
+- Três componentes: **potencial ecológico** + **exploração biológica** + **ação antrópica**
+- Hierarquia escalar: zona → domínio → região natural → **geossistema** → geofácies → geótopo
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Questões para discussão
+
+1. Bertrand afirma que a paisagem é "instável". O que isso significa em termos práticos para a análise?
+
+2. Qual a diferença entre a paisagem de Bertrand e a paisagem "cenário" do senso comum?
+
+3. A classificação hierárquica (geossistema–geofácies–geótopo) é uma proposta **universal** ou **contextual**? Ela funciona para a caatinga baiana?
+
+4. Bertrand escreveu em 1968/1971. O que mudou desde então no modo de estudar paisagem?
+:::
+:::
+:::
+
+# [2 — DA *LANDSCHAFT* AO GEOSSISTEMA]{.section-header}
+
+## Linha do tempo conceitual {.smaller-text}
+
+| Período | Autor/Escola | Conceito-chave |
+|:---:|-------------|----------------|
+| 1807–1859 | **Humboldt** | *Landschaft* = fisionomia regional; totalidade perceptível |
+| 1913 | **Passarge** | *Landschaftskunde* = ciência da paisagem; tipologias regionais |
+| 1939 | **Carl Troll** | **Ecologia da paisagem** — fotointerpretação aérea + ecologia |
+| 1960s | **Sochava** (URSS) | **Geossistema** — sistema aberto: fluxos de energia/matéria |
+| 1968 | **Bertrand** (França) | Geossistema como unidade de análise; classificação hierárquica |
+| 1986 | **Forman & Godron** | *Landscape Ecology* — padrão, processo, escala |
+| 1990s | **Naveh & Lieberman** | Paisagem total (*Total Human Ecosystem*) |
+| 2000s–hoje | Abordagens integradoras | Serviços ecossistêmicos, métricas, modelagem, SIG |
+
+: {.striped .hover}
+
+::: {.info-box}
+A trajetória mostra um movimento gradual: de **descrição visual** → **classificação regional** → **análise sistêmica** → **quantificação e modelagem**.
+:::
+
+---
+
+## Alexander von Humboldt e a *Landschaft* {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### A paisagem como totalidade
+
+Humboldt viajou pela América do Sul (1799–1804) e propôs:
+
+- A paisagem como **fisionomia** de uma região
+- Resultado da interação entre **clima**, **relevo**, **vegetação** e **cultura**
+- Método: observação direta, desenho, comparação
+
+### Contribuições duradouras
+
+- **Perfis de vegetação** por altitude (zonação altitudinal)
+- **Isotermas** — visualização de padrões climáticos
+- Paisagem como **totalidade** — não uma soma, mas uma **combinação**
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Legado para a disciplina
+
+O que herdamos de Humboldt:
+
+1. A paisagem é mais que cenário — é **objeto de análise científica**
+2. A compreensão exige **integração** de componentes
+3. A **representação** (mapas, perfis, desenhos) é ferramenta essencial
+4. A **comparação** entre paisagens revela padrões
+
+> *"A natureza é uma teia viva, na qual nada existe isolado."* — Humboldt
+
+O espírito humboldtiano permanece no cerne da análise da paisagem.
+:::
+:::
+:::
+
+---
+
+## Carl Troll e a Ecologia da Paisagem {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### O nascimento de uma disciplina (1939)
+
+Carl Troll cunhou o termo **Landschaftsökologie** (Ecologia da Paisagem) ao combinar:
+
+- **Fotografia aérea** (visão sinóptica do território)
+- **Ecologia** (relações entre organismos e ambiente)
+
+### Proposta
+
+A paisagem é um **mosaico de ecótopos** onde:
+
+- Cada ecótopo tem composição e funcionalidade próprias
+- As relações **entre** ecótopos definem a dinâmica da paisagem
+- A escala de observação condiciona o que se percebe
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Inovações de Troll
+
+1. **Visão aérea** como ferramenta analítica — antecipa o sensoriamento remoto
+2. **Ecótopo** como unidade elementar da paisagem
+3. Relações **horizontais** (entre unidades) são tão importantes quanto as **verticais** (dentro de uma unidade)
+4. A paisagem é **funcional** — não apenas descritiva
+
+> *"A ecologia da paisagem estuda a estrutura, a função e as mudanças do mosaico de ecossistemas em escala paisagística."* — Troll
+:::
+:::
+:::
+
+---
+
+## O geossistema: Sochava e Bertrand {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Sochava (1963) — abordagem soviética
+
+- Paisagem como **sistema aberto**: entradas e saídas de energia e matéria
+- **Geossistema** = unidade de estudo que integra geomorfologia, clima, hidrologia, vegetação, solos
+- Enfoque nos **fluxos** e nas **transformações** (dinâmica)
+
+### Bertrand (1968) — abordagem francesa
+
+- Adota o geossistema, mas propõe **classificação hierárquica**
+- Geossistema = unidade de análise prática (escala entre região e geótopo)
+- Três componentes integrados: **potencial ecológico** + **exploração biológica** + **ação antrópica**
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### A hierarquia de Bertrand
+
+| Nível | Escala aprox. | Exemplo |
+|-------|:---:|---------|
+| Zona | $10^7$ km² | Zona intertropical |
+| Domínio | $10^5$–$10^6$ km² | Domínio da Caatinga |
+| Região natural | $10^3$–$10^4$ km² | Depressão Sertaneja |
+| **Geossistema** | $10^1$–$10^2$ km² | Vale do Jacuípe |
+| Geofácies | $10^{-1}$–$10^0$ km² | Encosta com vegetação secundária |
+| Geótopo | $< 10^{-1}$ km² | Afloramento rochoso pontual |
+
+: {.striped .hover}
+
+O **geossistema** é a escala operacional para diagnóstico territorial.
+:::
+:::
+:::
+
+# [3 — A PAISAGEM NO SÉCULO XX: TRADIÇÕES]{.section-header}
+
+## Tradição alemã: da morfologia à funcionalidade {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Características
+
+- Ênfase na **forma** da paisagem (*Gestalt*)
+- Paisagem como **unidade fisiográfica** regional
+- Classificação e mapeamento de tipos de paisagem
+- Forte vínculo com **geomorfologia** e **climatologia**
+
+### Representantes
+
+- **Siegfried Passarge** — tipologias paisagísticas
+- **Carl Troll** — ecologia da paisagem
+- **Ernst Neef** — cartografia de paisagens
+- **Josef Schmithüsen** — biogeografia e paisagem
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Contribuição
+
+A tradição alemã ofereceu:
+
+1. O **vocabulário** fundador (Landschaft, Landschaftsökologie)
+2. A ideia de que paisagens podem ser **classificadas** e **mapeadas**
+3. O princípio de que a paisagem tem uma **estrutura reconhecível**
+4. A preocupação com a **integração** entre componentes
+
+**Limitação:** tendência a priorizar componentes naturais em detrimento da ação humana.
+:::
+:::
+:::
+
+---
+
+## Tradição francesa: paisagem e sociedade {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Características
+
+- Paisagem como **expressão material** das relações sociedade-natureza
+- Forte influência de **Vidal de la Blache** (gêneros de vida)
+- A paisagem reflete modos de **produção**, **ocupação** e **cultura**
+- Evolução para o **geossistema** (Bertrand) e a trilogia **GTP** (Geossistema–Território–Paisagem)
+
+### Representantes
+
+- **Paul Vidal de la Blache** — gêneros de vida, paisagem regional
+- **Georges Bertrand** — geossistema, GTP
+- **Jean Tricart** — ecodinâmica, fragilidade ambiental
+- **Augustin Berque** — paisagem e cultura, *médiance*
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### A trilogia GTP (Bertrand, 2000s)
+
+Bertrand, em revisão posterior, propôs três entradas complementares para a análise:
+
+| Entrada | Foco |
+|---------|------|
+| **Geossistema** | Funcionamento biofísico (fonte → recurso) |
+| **Território** | Gestão e uso (recurso → política) |
+| **Paisagem** | Percepção e representação (identidade → valor) |
+
+: {.striped .hover}
+
+Nenhuma entrada sozinha é suficiente. A análise completa articula as três.
+
+> A paisagem, para Bertrand, deixou de ser **apenas** a estrutura biofísica — incorporou a **percepção social**.
+:::
+:::
+:::
+
+---
+
+## Tradição anglo-saxônica: padrão e processo {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Características
+
+- Ênfase na **quantificação** e na **modelagem**
+- Paisagem como **mosaico espacial** analisável por métricas
+- Forte vínculo com **ecologia de populações** e **biogeografia de ilhas**
+- Avanço computacional: SIG, sensoriamento remoto, FRAGSTATS
+
+### Representantes
+
+- **Richard Forman & Michel Godron** (1986) — *Landscape Ecology*
+- **Monica Turner** — dinâmica de paisagens, perturbação
+- **Kevin McGarigal** — métricas de paisagem (FRAGSTATS)
+- **Zev Naveh** — paisagem total, complexidade
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Modelo matriz–mancha–corredor
+
+Forman & Godron (1986) propuseram que **toda paisagem** pode ser decomposta em:
+
+- **Matriz** — elemento dominante (ex.: pastagem)
+- **Manchas** — unidades discretas (ex.: fragmentos florestais)
+- **Corredores** — conexões lineares (ex.: matas ciliares)
+
+Esse modelo é **simples**, **visual** e **operacional** — por isso dominou a ecologia da paisagem aplicada nas últimas décadas.
+
+> Será aprofundado na **Aula 04**.
+:::
+:::
+:::
+
+---
+
+## Tradição humanista/cultural {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Características
+
+- Paisagem como **construção cultural** e **percepção**
+- Não apenas o que se vê, mas **como** e **por que** se vê
+- A paisagem é **vivida**, **significada** e **disputada**
+- Rejeição a abordagens exclusivamente quantitativas
+
+### Representantes
+
+- **Carl Sauer** (1925) — *morfologia da paisagem cultural*
+- **Denis Cosgrove** — paisagem como **forma simbólica** de poder
+- **Yi-Fu Tuan** — *topofilia* e experiência do lugar
+- **Augustin Berque** — *médiance*, paisagem como relação
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### O que essa tradição acrescenta?
+
+1. A paisagem nunca é "neutra" — reflete **valores**, **conflitos** e **desigualdades**
+2. A mesma paisagem pode ser percebida de formas **radicalmente diferentes**
+3. A análise técnica não substitui a **experiência vivida**
+4. Paisagem como **patrimônio** — Convenção Europeia da Paisagem (2000)
+
+> *"A paisagem é a porção da Terra que é compreendida pelo olhar."* — Berque
+
+**Nesta disciplina**, a dimensão cultural/perceptiva será mobilizada quando pertinente, mas o foco será nas dimensões **estrutural, funcional e dinâmica**.
+:::
+:::
+:::
+
+# [4 — A CONTRIBUIÇÃO BRASILEIRA]{.section-header}
+
+## Ab'Sáber: domínios morfoclimáticos {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Aziz Ab'Sáber (1924–2012)
+
+- Um dos maiores geógrafos brasileiros
+- Propôs os **domínios morfoclimáticos** do Brasil (1967/2003)
+- A paisagem como resultado da interação entre **relevo**, **clima**, **vegetação** e **solos** em escala regional
+
+### Os seis domínios
+
+1. Amazônico (terras baixas, equatorial úmido)
+2. Cerrado (chapadões, tropical sazonal)
+3. Mares de morros (Mata Atlântica, relevo mamelonado)
+4. Caatingas (depressões interplanálticas, semiárido)
+5. Araucárias (planalto meridional, subtropical)
+6. Pradarias (campanha gaúcha, campos)
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Legado para análise da paisagem
+
+1. **Paisagem como totalidade regional** — integra clima, relevo, vegetação, solos
+2. **Faixas de transição** — os domínios não são "caixas fechadas"; entre eles há **zonas de transição** (ecótonos) com mosaicos complexos
+3. **Abordagem processual** — a paisagem atual é herança de processos geomorfológicos e climáticos passados
+4. **Diagnóstico** — Ab'Sáber usou a compreensão da paisagem para propor **zoneamentos** e identificar **fragilidades**
+
+> Feira de Santana situa-se na transição entre o **Domínio da Caatinga** e o **Domínio da Mata Atlântica** — um mosaico particularmente complexo.
+:::
+:::
+:::
+
+---
+
+## Carlos Augusto de F. Monteiro: a análise integrada {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Monteiro (1927–2015)
+
+- **Geossistema** adaptado ao contexto brasileiro
+- Proposta de análise **integrada** da paisagem por meio de:
+  - Estrutura (componentes e arranjo)
+  - Processos (dinâmica, fluxos)
+  - Ação humana (uso, transformação)
+
+### Método
+
+- Cartografia de síntese: mapas que integram múltiplas variáveis
+- "A paisagem é a melhor expressão de síntese que o geógrafo pode oferecer"
+- Enfoque na **qualidade ambiental** como critério diagnóstico
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Contribuição principal
+
+Monteiro sistematizou a ideia de que a análise da paisagem brasileira exige:
+
+1. Considerar a **diversidade de escalas** (continental → local)
+2. Articular componentes **naturais** e **antrópicos** sem hierarquizá-los a priori
+3. Produzir **sínteses cartográficas** que permitam diagnóstico e intervenção
+4. Reconhecer a **dinâmica** — paisagens brasileiras estão em rápida transformação
+
+> *"Fazer a análise da paisagem é, ao mesmo tempo, um exercício de síntese."* — Monteiro
+:::
+:::
+:::
+
+---
+
+## Milton Santos: paisagem e espaço geográfico {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### A paisagem em Santos (1926–2001)
+
+Para Milton Santos, paisagem e espaço não são sinônimos:
+
+> *"A paisagem é o conjunto de formas que, num dado momento, exprimem as heranças que representam as sucessivas relações localizadas entre homem e natureza."* — Santos, 1996
+
+### Distinções fundamentais
+
+- **Paisagem** = forma, aparência, materialidade visível
+- **Espaço geográfico** = forma + conteúdo (relações sociais, técnicas, normas)
+- A paisagem é **transtemporal** — acumula tempos diferentes
+- O espaço é **atual** — é o presente vivido
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Implicações para a análise
+
+1. A paisagem é **acumulação de tempos** — camadas históricas sobrepostas
+2. Analisar a paisagem é **ler as heranças** inscritas no espaço
+3. A paisagem **não explica tudo** — é preciso ir além da forma para compreender os processos
+4. A relação entre forma e função muda conforme o **período técnico**
+
+### Exemplo
+
+Uma fazenda de café abandonada no vale do Paraíba: a paisagem (ruínas, pastagem degradada, erosão) revela **processos históricos** (ciclo do café, êxodo rural, degradação ambiental) que só se compreendem articulando forma e conteúdo.
+:::
+:::
+:::
+
+# [5 — DISTINÇÕES OPERACIONAIS]{.section-header}
+
+## Paisagem: o que é e o que não é (para esta disciplina) {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Paisagem É
+
+- ✅ **Mosaico heterogêneo** de coberturas e usos
+- ✅ **Resultado da interação** entre componentes físicos, bióticos e antrópicos
+- ✅ **Multiescalar** — existe em várias escalas de análise
+- ✅ **Dinâmica** — muda no tempo
+- ✅ **Analisável** — com métodos qualitativos e quantitativos
+- ✅ **Material** — tem expressão espacial concreta
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Paisagem NÃO É (operacionalmente)
+
+- ❌ Apenas cenário visual ou "vista bonita"
+- ❌ Sinônimo de "meio ambiente" ou "natureza"
+- ❌ Reduzível a um único componente (só relevo, só vegetação)
+- ❌ Estática ou imutável
+- ❌ Exclusivamente natural ou exclusivamente cultural
+- ❌ Sinônimo de "espaço geográfico" ou "território"
+:::
+:::
+:::
+
+::: {.info-box}
+Essas distinções são **operacionais** — servem para orientar nossa análise. Não negam outras formas válidas de pensar a paisagem.
+:::
+
+---
+
+## Recapitulando as categorias {.smaller-text}
+
+::: {.columns}
+::: {.column width="100%"}
+
+| Pergunta | Paisagem | Espaço | Território | Ambiente |
+|----------|:---:|:---:|:---:|:---:|
+| O que se vê? | ✅ Forma e arranjo | — | — | — |
+| O que se analisa? | Estrutura + função + dinâmica | Produção social | Poder e controle | Interação sociedade-natureza |
+| Com que métodos? | Cartografia, SR, métricas, campo | Teoria social | Análise política | Avaliação de impacto |
+| Para que serve? | Diagnóstico territorial integrado | Compreensão da totalidade | Gestão e governança | Sustentabilidade |
+
+: {.striped .hover}
+
+:::
+:::
+
+::: {.info-box}
+Na **Análise da Paisagem**, privilegiamos a **materialidade espacial** (o que se vê e se mede), articulada com processos e dinâmicas. As outras categorias entrarão como apoio quando necessário.
+:::
+
+# [6 — DEFINIÇÃO DE TRABALHO]{.section-header}
+
+## Nossa definição operacional {.smaller-text}
+
+::: {.columns}
+::: {.column width="100%"}
+
+::: {.highlight-box}
+
+### Paisagem — definição de trabalho para a disciplina
+
+> **Paisagem** é a expressão espacial observável e analisável da interação entre componentes **abióticos** (relevo, clima, hidrografia, solos), **bióticos** (vegetação, fauna) e **socioespaciais** (uso da terra, ocupação, infraestrutura, atividades econômicas) em um determinado **recorte espaço-temporal**, configurando um **mosaico heterogêneo** cuja **estrutura**, **funcionamento** e **dinâmica** podem ser descritos, cartografados, mensurados e interpretados para fins de **diagnóstico, planejamento e gestão territorial**.
+
+:::
+
+### Elementos-chave
+
+| Elemento | Significado |
+|----------|-------------|
+| **Expressão espacial** | Tem materialidade — pode ser mapeada e medida |
+| **Interação** | Não é soma de partes, mas resultado de relações |
+| **Recorte espaço-temporal** | Depende da escala e do momento |
+| **Mosaico heterogêneo** | É composto por unidades diferentes articuladas |
+| **Estrutura–função–dinâmica** | Três dimensões articuladas de análise |
+| **Diagnóstico e planejamento** | Finalidade aplicada |
+
+: {.striped .hover}
+
+:::
+:::
+
+# [7 — ATIVIDADE PRÁTICA]{.section-header}
+
+## Exercício: leitura comparativa de paisagens {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+### Proposta (em duplas, 20 min)
+
+Serão projetadas 3 imagens de paisagens brasileiras (Google Earth / MapBiomas):
+
+1. **Paisagem A** — Planície amazônica (densa, contínua, fluvial)
+2. **Paisagem B** — Cerrado fragmentado (mosaico agro-cerrado)
+3. **Paisagem C** — Perímetro urbano de cidade média (Feira de Santana)
+
+Para cada paisagem, identifique:
+
+- Componentes visíveis (abióticos, bióticos, antrópicos)
+- Tipo de mosaico (contínuo, fragmentado, misto)
+- Uma **pergunta analítica** que você faria como geógrafo(a)
+- Qual tradição teórica (das vistas hoje) melhor se aplicaria
+
+### Socialização (15 min)
+
+Cada dupla apresenta uma paisagem (3 min).
+:::
+
+::: {.column width="40%"}
+::: {.info-box}
+### Objetivo
+
+- Exercitar a **leitura dirigida** da paisagem
+- Conectar os conceitos teóricos da aula com **situações reais**
+- Praticar a formulação de **perguntas analíticas**
+- Perceber que a **tradição teórica** condiciona o que se observa e se pergunta
+
+> *"Não vemos a paisagem — vemos através das lentes que aprendemos a usar."*
+:::
+:::
+:::
+
+---
+
+## Para a próxima aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Leitura obrigatória
+
+- METZGER, J. P. (2001). **O que é ecologia de paisagens?** *Biota Neotropica*, v. 1, n. 1-2.
+
+### Leitura complementar
+
+- FORMAN, R. T. T.; GODRON, M. (1986). **Landscape Ecology**, Cap. 1 (Landscapes and landscape ecology).
+
+### Fichamento (avaliação contínua)
+
+Fichamento do artigo de Metzger (2001), destacando:
+
+- Definição de ecologia da paisagem
+- Diferença entre abordagem geográfica e ecológica
+- Conceitos de estrutura, função e dinâmica
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Na próxima aula (Aula 03)
+
+Entraremos nas **abordagens integradoras**:
+
+- **Geossistema** como modelo de análise
+- Integração físico-biótica e socioespacial
+- Como operacionalizar a "análise integrada" na prática
+
+E na **Aula 04**:
+
+- **Ecologia da paisagem** — o modelo matriz–mancha–corredor
+- Conectividade, permeabilidade e implicações para diagnóstico territorial
+
+**Traga o fichamento de Metzger** — será base para a discussão.
+:::
+:::
+:::
+
+---
+
+## Síntese da Aula 02 {.smaller-text}
+
+::: {.info-box}
+### O que vimos hoje
+
+1. **Bertrand (1971)** — paisagem como combinação dinâmica; geossistema e hierarquia escalar
+2. **Linha do tempo** — de Humboldt (1807) à ecologia da paisagem contemporânea
+3. **Carl Troll** — ecologia da paisagem, fotointerpretação, ecótopos
+4. **Geossistema** (Sochava/Bertrand) — sistema aberto, fluxos, classificação hierárquica
+5. **Tradições geográficas** — alemã (forma), francesa (sociedade-natureza), anglo-saxônica (padrão-processo), humanista (percepção)
+6. **Contribuição brasileira** — Ab'Sáber (domínios), Monteiro (síntese integrada), Santos (paisagem como forma + herança)
+7. **Distinções operacionais** — paisagem ≠ espaço ≠ território ≠ ambiente
+8. **Definição de trabalho** — paisagem como mosaico heterogêneo analisável para diagnóstico e planejamento
+:::
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+
+Análise da Paisagem — Aula 02
+:::

@@ -1,0 +1,144 @@
+﻿---
+title: "Organização e Análise Descritiva de Dados"
+subtitle: "Aula V — Versão Alunos"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+footer: "UEFS — Introdução à Estatística | Tema 2 — Organização e Análise Descritiva (Alunos)"
+format: 
+  revealjs:
+    logo: ../../../../../assets/logo-uefs.webp
+    footer: "UEFS — Introdução à Estatística | Tema 2 — Organização e Análise Descritiva (Alunos)"
+    slide-number: true
+    theme: [simple, assets/ufs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: true
+  eval: false
+---
+
+# [I. Introdução]{.section-header}
+
+## 3.1 — Normas para Tabelas {.smaller-text}
+
+Uma tabela compõe-se de:
+
+::: {.columns}
+::: {.column width="50%"}
+- **Corpo** — conjunto de linhas e colunas com informações sobre a variável
+- **Cabeçalho** — parte superior, especifica o conteúdo das colunas
+- **Coluna indicadora** — especifica o conteúdo das linhas
+:::
+
+::: {.column width="50%"}
+- **Linhas** — retas imaginárias que facilitam a leitura horizontal
+- **Casa ou célula** — espaço destinado a um só número
+- **Título** — Conjunto de informações respondendo: O quê? Quando? Onde?
+:::
+:::
+
+---
+
+## Normas IBGE e APA {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### IBGE
+
+| Símbolo | Significado |
+|---------|-------------|
+| **—** | Valor é zero |
+| **…** | Não temos dados |
+| **?** | Dúvida à exatidão |
+| **0** | Valor muito pequeno |
+:::
+
+::: {.column width="50%"}
+### APA (7ª edição)
+
+- **Valor zero** → 0
+- **Dado indisponível** → NA
+- **Valor duvidoso** → (?)
+- **Valores muito pequenos** → notação científica
+
+::: {.highlight-box}
+Na APA, **nunca** deixar células vazias!
+:::
+:::
+:::
+
+# [3.2 — Séries Estatísticas]{.section-header}
+
+## Tipos de Séries Estatísticas {.smaller-text}
+
+1. **Histórica** — elemento variável: época/tempo
+2. **Geográfica** — elemento variável: localidade
+3. **Específica** — elemento variável: modalidade
+4. **Mista** — combinação de tipos
+
+---
+
+## Exemplos de Séries {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Temporal
+
+| Ano | Candidato/vaga |
+|-----|---------------|
+| 2009 | 1,76 |
+| 2010 | 6,65 |
+| 2011 | 2,81 |
+| 2012 | 3,46 |
+:::
+
+::: {.column width="50%"}
+### Geográfica
+
+| Região | Pop. Urbana (%) |
+|--------|----------------|
+| Norte | 54,8 |
+| Nordeste | 57,2 |
+| Sul | 78,7 |
+| Sudeste | 90,1 |
+| Centro-Oeste | 79,2 |
+:::
+:::
+
+---
+
+## Exercício {.smaller-text}
+
+Pesquisar exemplos de séries estatísticas:
+
+a) **Histórica**
+b) **Geográfica**
+c) **Específica**
+d) **Mista**
+
+```{r}
+#| eval: false
+# Sua resolução aqui
+
+```
+
+---
+
+## {.centered-content}
+
+::: {style="text-align: center; font-size: 2.5em; color: var(--ufs-azul); margin-top: 150px;"}
+**Obrigado!**
+:::
+
+::: {style="text-align: center; font-size: 1.2em; margin-top: 50px; color: var(--ufs-cinza-escuro);"}
+**Luiz Diego Vidal Santos**
+
+Universidade Federal de Sergipe
+
+[diego@academico.ufs.br](mailto:diego@academico.ufs.br)
+:::

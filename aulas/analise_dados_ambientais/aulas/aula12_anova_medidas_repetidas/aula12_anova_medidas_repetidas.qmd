@@ -1,0 +1,186 @@
+﻿---
+title: "ANOVA de Medidas Repetidas"
+subtitle: "Análise para Delineamentos com Medidas Repetidas<br>Análise de Dados Ambientais"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise de Dados Ambientais | ANOVA de Medidas Repetidas"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+# [ANÁLISE DE VARIÂNCIA]{.section-header}
+
+## ANÁLISE DE VARIÂNCIA {.smaller-text}
+
+MEDIDAS REPETIDAS
+
+
+---
+
+## {.smaller-text}
+
+ANOVA MEDIDAS REPETIDAS
+
+Assim como nas ANOVAS anteriores, o objetivo da ANOVA – MR continua sendo comparar médias.
+
+Entretanto, o escore a ser comparado não é entre diferentes grupos, mas sim de um único grupo comparado com si próprio.
+
+  - Condições diferentes
+  - Momentos diferentes
+
+---
+
+## {.smaller-text}
+
+ANOVA MEDIDAS REPETIDAS
+
+
+| Nome | Característica | Exemplo |
+| --- | --- | --- |
+| ANOVA – MR | Uma variável dependente mensurada 3 (ou+) vezes | Adubação ( de base, plantio, cobertura) |
+| ANOVA FATORIAL – MR | Uma (ou +)variáveis de grupo mensuradas 3 (ou +) vezes | Adubação ( de base, plantio, cobertura)  X Diferentes níveis [N e N + micro] |
+
+
+---
+
+## {.smaller-text}
+
+ANOVA MEDIDAS REPETIDAS
+
+Mesmas amostras (Condições diferentes)
+
+
+| Taboa | Sem resina | 1x resina | 2x resina |
+| --- | --- | --- | --- |
+| Amostra 1 | 7 | 6 | 8 |
+| Amostra 2 | 4 | 9 | 9 |
+| Amostra 3 | 6 | 5 | 6 |
+| Amostra 4 | 8 | 7 | 7 |
+| Amostra 5 | 9 | 4 | 4 |
+| Amostra 6 | 8 | 8 | 5 |
+| Amostra 7 | 5 | 10 | 8 |
+| Amostra 8 | 6 | 8 | 7 |
+
+
+---
+
+## {.smaller-text}
+
+ANOVA MEDIDAS REPETIDAS
+
+Pressuposto de normalidade (S-K, K-W);
+
+Pressuposto de homogeneidade (Levene);
+
+Esfericidade (Com três ou mais condições/tempo) (Mauchly);
+
+Distribuição normal dos resíduos.
+
+
+---
+
+## {.smaller-text}
+
+Novo pressuposto: **Esfericidade**** **(Com três ou mais condições/tempo)
+
+    - Teste de esfericidade de Mauchly
+      - Avalia a igualdade da diferença das variâncias entre os diferentes tempos ou condições
+        - *p** *< 0,05 (Esfericidade não assumida)
+        - *p** *> 0,05 (Esfericidade assumida) Isso que você deve esperar
+ANOVA MEDIDAS REPETIDAS
+
+
+---
+
+## {.smaller-text}
+
+Correções ao pressuposto da esfericidade
+
+  - Greenhouse–Geisser: Esfericidade < 0.75
+  - Huynh–Feldt Esfericidade > 0.75
+ANOVA MEDIDAS REPETIDAS
+
+
+---
+
+## {.smaller-text}
+
+Importante:
+
+Normalidade dos resíduos
+
+Não se refere mais à distribuição da variável, mas sim, **dos**** **resíduos (i.e., variância não explicada pelo modelo);
+
+ANOVA MEDIDAS REPETIDAS
+
+
+---
+
+## {.smaller-text}
+
+Expected Maximization (Maximização Esperada):
+
+Os dados de todos os respondentes são utilizados para tentar estimar a melhor resposta do sujeito aos dados faltantes;
+
+O processo se incia com a média dos itens e com o padrão de covariância das variáveis.
+
+É gerado o primeiro banco sem missing;
+
+Com esse novo banco completo, um novo processo é feito, buscando substituir novamente os valores que anteriormente tinham missing;
+
+É repetido “N” vezes, até que não haja mais diferenças estatisticamente significativas.
+
+MISSING
+
+
+---
+
+## {.smaller-text}
+
+Substituição pela média
+
+A média dos itens permanece a mesma
+
+Aumenta o poder da amostra
+
+**Desvantagem:**
+
+  - Ignora completamente o sujeito, e não leva em consideração o seu próprio padrão de resposta
+  - É um método “completamente fake”.
+MISSING
+
+
+---
+
+## {.smaller-text}
+
+Multiple Imputation (Imputação Múltipla):
+
+  - Considerado um avanço no método da Maximização esperada, porque, gera erros-padrões e intervalos de confiança para imputações realizadas;
+Ao invés de um único banco, são gerados vários bancos de dados imputados
+
+MISSING
+
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::
+

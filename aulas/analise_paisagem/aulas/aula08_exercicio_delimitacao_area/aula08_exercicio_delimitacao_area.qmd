@@ -1,0 +1,276 @@
+﻿---
+title: "Análise da Paisagem"
+subtitle: "Aula 08 — Exercício Orientado: Delimitação e Caracterização da Área de Estudo<br>Curso de Geografia"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026-03-18"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise da Paisagem | Aula 08"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Critérios para delimitação da área de estudo
+- [2]{.circle} Bacia hidrográfica vs. limite administrativo
+- [3]{.circle} Roteiro de caracterização preliminar
+- [4]{.circle} Oficina prática: delimitação e mapa base
+- [5]{.circle} Primeira descrição da paisagem
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Delimitar a **área de estudo** para o dossiê semestral e realizar a **caracterização preliminar** da paisagem, integrando dados de relevo, drenagem, uso/cobertura e contexto regional com bases públicas.
+:::
+:::
+:::
+
+# [1 — CRITÉRIOS PARA DELIMITAÇÃO]{.section-header}
+
+## Escolhendo a área de estudo {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Critérios técnicos
+
+| Critério | Orientação |
+|----------|-----------|
+| **Escala** | Compatível com o nível de detalhe pretendido (geossistema/geofácies) |
+| **Extensão** | 50–500 km² (adequado para análise de paisagem com dados disponíveis) |
+| **Recorte** | Bacia hidrográfica (preferencial) ou unidade territorial relevante |
+| **Dados** | Disponibilidade de bases públicas (MapBiomas, MDE, hidrografia) |
+| **Acessibilidade** | Possibilidade de visita de campo (para a Aula 25) |
+| **Heterogeneidade** | Paisagem com mosaico interessante (não homogênea demais) |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Sugestões de área
+
+Para a disciplina, considere áreas do **entorno de Feira de Santana**:
+
+1. **Sub-bacia do rio Jacuípe** — transição caatinga-floresta
+2. **Bacia do rio Pojuca** (trecho superior) — mosaico agropastoril
+3. **Bacia do Subaé** (nascentes) — proximidade urbana + rural
+4. **Entorno de Ipecaetá/Rafael Jambeiro** — caatinga + agropecuária
+5. **Serra de São José** — relevo acidentado, remanescentes florestais
+
+> O professor indicará a área específica ou cada grupo poderá escolher uma, conforme orientação.
+:::
+:::
+:::
+
+---
+
+## Bacia hidrográfica como recorte {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Vantagens
+
+1. **Integração natural** — drena todos os fluxos para um exutório
+2. **Limites definíveis** — divisores de água identificáveis por MDE
+3. **Coerência analítica** — processos erosivos, hídricos e ecológicos ocorrem na escala de bacia
+4. **Base legal** — Política Nacional de Recursos Hídricos (Lei 9.433/1997)
+5. **Tradição** — amplamente usada em estudos ambientais no Brasil
+
+### Como delimitar?
+
+- A partir de MDE (SRTM/TOPODATA) no **QGIS** ou **Google Earth Engine**
+- Ferramentas: `r.watershed`, `TauDEM`, `WhiteboxTools`
+- Manualmente: identificar divisores de água na carta topográfica
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Limitações
+
+1. Limites de bacia **não coincidem** com limites administrativos → dificuldade de articular com políticas públicas
+2. Processos **antrópicos** (urbanização, estradas) não respeitam bacias
+3. Em relevo plano, os divisores são **pouco definidos**
+4. Bacias muito **pequenas** podem não ter dados suficientes
+
+### Alternativa: limite administrativo + buffer
+
+Em alguns casos, usa-se:
+
+- Limite municipal + buffer de análise
+- Unidade de planejamento definida por política pública
+- Unidade territorial definida por critério geomorfológico
+
+> O importante é **justificar** tecnicamente o recorte escolhido.
+:::
+:::
+:::
+
+# [2 — ROTEIRO DE CARACTERIZAÇÃO]{.section-header}
+
+## Roteiro de caracterização preliminar {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Etapas
+
+1. **Localização e contexto**
+   - Coordenadas, município(s), bioma, bacia, acesso
+   - Mapa de localização em 3 escalas (país → estado → detalhe)
+
+2. **Caracterização do potencial ecológico**
+   - Relevo (hipsometria, declividade) → a partir do MDE
+   - Geologia/geomorfologia → CPRM, mapas existentes
+   - Clima → normal climatológica (INMET, ANA)
+   - Hidrografia → rede de drenagem, bacias, regime
+
+3. **Caracterização da cobertura e uso**
+   - Uso/cobertura da terra (MapBiomas 2023)
+   - Quantificação por classe (% de área)
+   - Identificação da matriz, principais manchas e corredores
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Etapas (continuação)
+
+4. **Aspectos socioespaciais**
+   - População, economia, atividades predominantes
+   - Infraestrutura (estradas, barramentos, perímetro urbano)
+   - Áreas protegidas (UCs, APPs, reserva legal — consulta SICAR)
+
+5. **Síntese preliminar**
+   - Principais componentes do mosaico
+   - Pressões e conflitos aparentes
+   - Questões para aprofundamento
+
+### Produto desta etapa
+
+- **Mapa de localização** (contexto)
+- **Mapa de uso/cobertura** (base MapBiomas)
+- **Texto descritivo** (1–2 páginas)
+- **Lista de questões** para as próximas aulas
+:::
+:::
+:::
+
+# [3 — OFICINA PRÁTICA]{.section-header}
+
+## Atividade: delimitação e mapa base {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+### Passo a passo (50 min)
+
+1. **Definir a área** (10 min)
+   - Escolha a sub-bacia ou recorte territorial
+   - Justifique a escolha (ao menos 2 critérios)
+
+2. **Obter dados base** (15 min)
+   - Acessar MapBiomas → baixar uso/cobertura 2023 da área
+   - Acessar TOPODATA → baixar MDE para o entorno
+   - Acessar ANA/IBGE → hidrografia e limites
+
+3. **Montar mapa base no QGIS** (15 min)
+   - Sobrepor: limite da área + uso/cobertura + hidrografia + relevo
+   - Exportar visualização preliminar (print ou PDF)
+
+4. **Escrever parágrafo descritivo** (10 min)
+   - Localização, cobertura dominante (matriz), principais manchas
+   - Uma observação inicial sobre padrão e pressão
+:::
+
+::: {.column width="40%"}
+::: {.info-box}
+### Entrega (para avaliação contínua)
+
+- **Formato:** relatório breve (1–2 páginas + mapa)
+- **Prazo:** até a Aula 09 (próxima semana)
+- **Conteúdo mínimo:**
+  1. Justificativa do recorte
+  2. Mapa de localização
+  3. Mapa de uso/cobertura com legenda
+  4. Tabela com quantificação por classe (ha e %)
+  5. Parágrafo descritivo
+
+> Este produto será o **ponto de partida** do dossiê final. Caprichem na qualidade dos dados e da descrição.
+:::
+:::
+:::
+
+---
+
+## Para a próxima aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tarefa
+
+- **Completar** a entrega da caracterização preliminar (mapa + texto)
+- **Trazer** o mapa impresso ou em tela (para trabalhar na Aula 09)
+
+### Leitura preparatória
+
+- JENSEN, J. R. (2000). **Remote Sensing of the Environment**, Cap. 1 (Concepts) — trecho indicado no SAGRES.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Na próxima aula (Aula 09)
+
+**Interpretação visual da paisagem:**
+
+- Elementos de interpretação: forma, textura, tonalidade, contexto, associação
+- Como "ler" uma imagem de satélite para identificar feições da paisagem
+- Construção de um roteiro de interpretação
+
+Na **Aula 10:**
+
+- Matriz de evidências e síntese descritivo-interpretativa
+- Preparação final para a 1ª Avaliação (01/04)
+:::
+:::
+:::
+
+---
+
+## Síntese da Aula 08 {.smaller-text}
+
+::: {.info-box}
+### O que fizemos hoje
+
+1. **Critérios de delimitação** — escala, extensão, recorte, heterogeneidade, acessibilidade
+2. **Bacia hidrográfica** como recorte preferencial — vantagens e limitações
+3. **Roteiro de caracterização** — 5 etapas: localização, potencial ecológico, cobertura/uso, aspectos socioespaciais, síntese
+4. **Oficina prática** — delimitação no QGIS com bases públicas (MapBiomas, TOPODATA, ANA)
+5. **Primeira entrega** — mapa + texto descritivo como ponto de partida do dossiê
+:::
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+
+Análise da Paisagem — Aula 08
+:::

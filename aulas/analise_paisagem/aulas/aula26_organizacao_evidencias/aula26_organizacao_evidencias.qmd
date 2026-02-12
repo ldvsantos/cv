@@ -1,0 +1,302 @@
+﻿---
+title: "Análise da Paisagem"
+subtitle: "Aula 26 — Organização de Evidências e Orientação para o Relatório Técnico<br>Curso de Geografia"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026-05-20"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise da Paisagem | Aula 26"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Organização das evidências de campo
+- [2]{.circle} Confronto campo × gabinete
+- [3]{.circle} Estrutura do relatório técnico
+- [4]{.circle} Critérios de avaliação
+- [5]{.circle} Oficina: redação orientada
+- [6]{.circle} Calendário de entregas
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Organizar sistematicamente as **evidências coletadas em campo** (Aula 25), confrontar com dados de gabinete, compreender a **estrutura do relatório técnico** (3ª Avaliação) e iniciar a redação orientada em oficina.
+:::
+:::
+:::
+
+# [1 — ORGANIZAÇÃO DAS EVIDÊNCIAS]{.section-header}
+
+## Sistematização do material {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Checklist de materiais
+
+| Material | Status | Ação pendente |
+|---------|:------:|-------------|
+| Fichas de campo preenchidas | ☐ | Completar campos faltantes |
+| Fotos organizadas e nomeadas | ☐ | Renomear padrão P##_tipo |
+| Croquis digitalizados | ☐ | Escanear ou fotografar |
+| Coordenadas dos pontos | ☐ | Exportar do GPS/app |
+| Mapa com pontos visitados | ☐ | Marcar no mapa de UPs |
+| Anotações avulsas | ☐ | Transcrever para fichas |
+
+: {.striped .hover}
+
+### Organização digital
+
+```
+📁 campo/
+├── 📁 fichas/
+│   ├── P01_ficha.pdf
+│   ├── P02_ficha.pdf
+│   └── ...
+├── 📁 fotos/
+│   ├── P01_panor_N.jpg
+│   ├── P01_solo.jpg
+│   └── ...
+├── 📁 croquis/
+│   ├── croqui_transecto_T1.jpg
+│   └── ...
+└── mapa_pontos_campo.pdf
+```
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Painel de fotos (modelo)
+
+Para cada ponto, montar um **painel** com:
+
+1. Identificação: P01, coordenadas, UP, data/hora
+2. Foto panorâmica (visão geral)
+3. Fotos de detalhe (solo, vegetação, processo)
+4. Legenda descritiva de cada foto
+5. Croqui do ponto
+
+### Exemplo de legenda
+
+> *"P01 — Planície fluvial (UP-1), margem esquerda do rio principal. Pastagem degradada com gramínea rala (NDVI campo ≈ 0,18). Erosão marginal ativa com barranco de 1,5 m. Mata ciliar ausente. Acesso direto do gado ao rio. Coordenadas: 12°15'32"S, 38°58'10"W."*
+
+A legenda deve ser **descritiva e interpretativa**, não apenas identificatória ("foto do rio").
+:::
+:::
+:::
+
+# [2 — CONFRONTO CAMPO × GABINETE]{.section-header}
+
+## Validação cruzada {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tabela de confronto
+
+| Ponto | Dado de gabinete | Dado de campo | Concorda? | Observação |
+|:-----:|-----------------|--------------|:---------:|-----------|
+| P01 | MapBiomas: pastagem | Pastagem degradada | ✅ Parcial | Campo revelou degradação não captada |
+| P01 | NDVI: 0,18 | Gramínea rala, solo visível | ✅ Sim | Coerente |
+| P02 | UP-2: encosta com caatinga | Caatinga arbustiva, ralear por cabra | ✅ Parcial | Pressão por caprinos não identificada em gabinete |
+| P03 | MDE: decliv. 22% | Estimativa visual: ~20% | ✅ Sim | Compatível |
+| P05 | MapBiomas: veg. nativa | Vegetação preservada, dossel fechado | ✅ Sim | Confirma UP-5 |
+| P06 | Sem dado específico | Voçoroca de 3 m, solo exposto | 🆕 Novo | Evidência nova, não captada por SR |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### O que o campo revelou de novo?
+
+Registre separadamente as **descobertas de campo** — informações que não estavam nos dados de gabinete:
+
+- Processos não visíveis por SR (erosão laminar, compactação)
+- Usos específicos (tipo de pecuária, manejo, cultivo)
+- Informações de moradores (histórico, eventos, percepções)
+- Estado real da vegetação (espécies, sanidade, regeneração)
+- Infraestrutura não mapeada (cercas, estradas vicinais, açudes)
+- Pressões localizadas (lixo, fogo, captação irregular)
+
+### Por que registrar
+
+> *"O campo não serve apenas para confirmar o gabinete. Serve para ENRIQUECER o diagnóstico com informações que só a presença no local proporciona."*
+:::
+:::
+:::
+
+# [3 — ESTRUTURA DO RELATÓRIO TÉCNICO]{.section-header}
+
+## Modelo para a 3ª Avaliação {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Seções obrigatórias
+
+| Seção | Conteúdo | Extensão |
+|:-----:|---------|:--------:|
+| **1. Introdução** | Objetivo do campo, localização, data, contexto | 0,5 página |
+| **2. Metodologia** | Roteiro, pontos, equipamentos, procedimentos | 0,5 página |
+| **3. Caracterização da paisagem** | Descrição interpretativa por UP, com base no campo | 2–3 páginas |
+| **4. Confronto campo × gabinete** | Tabela + análise das concordâncias e novidades | 1 página |
+| **5. Diagnóstico** | Pressões, conflitos, vulnerabilidades observados | 1–2 páginas |
+| **6. Diretrizes** | Recomendações fundamentadas nas evidências | 1 página |
+| **7. Considerações finais** | Síntese, limitações, aprendizados | 0,5 página |
+| **Anexos** | Fichas, fotos (legendadas), croquis, mapa de pontos | Variável |
+
+: {.striped .hover}
+
+### Extensão total: **8–12 páginas** (sem anexos)
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Critérios de avaliação (3ª Avaliação)
+
+| Critério | Peso | O que avaliar |
+|----------|:----:|-------------|
+| **Rigor descritivo-interpretativo** | 25% | Dados precisos, vocabulário técnico, articulação |
+| **Organização** | 15% | Estrutura clara, seções bem definidas, fluência |
+| **Qualidade das evidências** | 25% | Fotos legendadas, fichas, croquis, mapas |
+| **Coerência diagnóstica** | 20% | Lógica entre evidências e conclusões |
+| **Diretrizes** | 15% | Pertinência, viabilidade, fundamentação |
+
+: {.striped .hover}
+
+### O que NÃO deve conter
+
+- ❌ Descrição genérica sem referência ao local
+- ❌ Fotos sem legenda ou sem relação com o texto
+- ❌ Afirmações sem evidência
+- ❌ Cópia de textos de aula (é relatório de campo)
+- ❌ Diagnóstico apenas descritivo (sem interpretação)
+:::
+:::
+:::
+
+# [4 — OFICINA DE REDAÇÃO]{.section-header}
+
+## Atividade: início da redação {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+### Roteiro (50 min)
+
+1. **Organizar materiais** (10 min)
+   - Completar fichas, organizar fotos
+   - Montar tabela de confronto
+
+2. **Redigir Seção 3** — Caracterização (20 min)
+   - Escolher uma UP (a mais rica em dados de campo)
+   - Redigir 2–3 parágrafos articulando:
+     - O que era esperado (gabinete)
+     - O que foi observado (campo)
+     - O que é novo (descoberta)
+
+3. **Montar painel de 1 ponto** (15 min)
+   - Selecionar as melhores fotos
+   - Escrever legendas descritivas
+   - Incluir croqui do ponto
+
+4. **Revisão por pares** (5 min)
+   - Trocar com colega → feedback sobre clareza
+:::
+
+::: {.column width="40%"}
+::: {.info-box}
+### Entrega final — 3ª Avaliação
+
+- **Data:** 27/05 (Aula 27)
+- **Formato:** PDF, documento digital
+- **Conteúdo:** Relatório técnico completo (8–12 páginas + anexos)
+- **Individual** (não mais em grupo)
+
+### Dica de produtividade
+
+Não tente escrever tudo de uma vez. Sequência recomendada:
+
+1. ✅ Organizar materiais (hoje)
+2. ✅ Redigir Seção 3 (hoje)
+3. 📝 Redigir Seções 4–5 (semana)
+4. 📝 Redigir Seção 6 (diretrizes)
+5. 📝 Introdução, metodologia e conclusão (por último)
+6. 📝 Revisar, formatar, anexar
+:::
+:::
+:::
+
+---
+
+## Cronograma final da disciplina {.smaller-text}
+
+::: {.columns}
+::: {.column width="100%"}
+
+| Semana | Aula | Data | Atividade |
+|:------:|:----:|:----:|----------|
+| **13ª** | 25–26 | 20/05 | ✅ Campo + organização (hoje) |
+| **14ª** | **27–28** | **27/05** | **3ª AVALIAÇÃO — Entrega do Relatório Técnico** |
+| **15ª** | **29–30** | **03/06** | **4ª AVALIAÇÃO (Teórica II)** — Prova individual + socialização |
+
+: {.striped .hover}
+
+::: {.info-box}
+### O que estudar para a 4ª Avaliação (Teórica II)
+
+Conteúdos das Aulas 13–22:
+
+- Sensoriamento remoto aplicado (fundamentos, índices, mudanças)
+- Métricas e indicadores de paisagem (fragmentação, conectividade)
+- Unidades de paisagem (delimitação, caracterização)
+- Diagnóstico integrado (pressões, vulnerabilidades, potencialidades)
+- Planejamento territorial e zoneamentos
+- Integração de métodos e tomada de decisão
+:::
+
+:::
+:::
+
+---
+
+## Síntese da Aula 26 {.smaller-text}
+
+::: {.info-box}
+### O que fizemos hoje
+
+1. **Organizamos evidências** — fotos, fichas, croquis, coordenadas
+2. **Confrontamos campo × gabinete** — concordâncias, discordâncias, descobertas
+3. **Conhecemos a estrutura do relatório** — 7 seções + anexos
+4. **Compreendemos os critérios de avaliação** — rigor, organização, evidências, coerência, diretrizes
+5. **Iniciamos a redação** — Seção 3 (caracterização) + painel de fotos
+6. **Revisamos o calendário** — relatório em 27/05, prova em 03/06
+:::
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+
+Análise da Paisagem — Aula 26
+:::

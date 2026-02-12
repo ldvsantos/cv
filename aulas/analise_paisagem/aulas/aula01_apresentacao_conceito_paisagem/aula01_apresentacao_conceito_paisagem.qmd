@@ -1,0 +1,649 @@
+﻿---
+title: "Análise da Paisagem"
+subtitle: "Aula 01 — Apresentação da Disciplina e Introdução ao Conceito de Paisagem<br>Curso de Geografia"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026-02-25"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise da Paisagem | Aula 01"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Apresentação da disciplina
+- [2]{.circle} Objetivos e competências
+- [3]{.circle} Metodologia e avaliação
+- [4]{.circle} Produtos esperados
+- [5]{.circle} O que é paisagem? — primeiras aproximações
+- [6]{.circle} Paisagem na Geografia: origens e significados
+- [7]{.circle} Paisagem como categoria analítica
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Conhecer a organização do componente curricular, seus objetivos, critérios avaliativos e produtos esperados; e iniciar a construção do conceito de **paisagem** como categoria analítica na Geografia.
+:::
+:::
+:::
+
+# [1 — APRESENTAÇÃO DA DISCIPLINA]{.section-header}
+
+## O componente curricular {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Dados gerais
+
+| Item | Detalhe |
+|------|---------|
+| **Disciplina** | Análise da Paisagem |
+| **Créditos** | 04 (60 h) |
+| **Encontros** | 15 × 4 h (07h30 – 11h30) |
+| **Estrutura** | 2 h teóricas + 2 h práticas |
+| **Período** | 2026.1 |
+| **Modalidade** | Presencial |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Por que análise da paisagem?
+
+A paisagem é uma das categorias centrais da Geografia. Analisá-la significa:
+
+- Integrar componentes **físicos**, **bióticos** e **socioespaciais**
+- Compreender **padrões** e **processos** que organizam o espaço
+- Diagnosticar, planejar e propor intervenções territoriais com base em **evidências**
+:::
+:::
+:::
+
+---
+
+## Cronograma resumido {.smaller-text}
+
+| Sem. | Data | Conteúdo |
+|:---:|:---:|----------|
+| 1ª | 25/02 | Apresentação + Conceito de paisagem |
+| 2ª | 04/03 | Abordagens integradoras + Ecologia da paisagem |
+| 3ª | 11/03 | Escala, padrão e processo |
+| 4ª | 18/03 | Cartografia temática + Exercício |
+| 5ª | 25/03 | Interpretação visual + Matriz de evidências |
+| **6ª** | **01/04** | **1ª Avaliação (Teórica I)** |
+| 7ª | 08/04 | Sensoriamento remoto I |
+| 8ª | 15/04 | Sensoriamento remoto II |
+| 9ª | 22/04 | Métricas e indicadores de paisagem |
+| 10ª | 29/04 | Unidades de paisagem + Diagnóstico |
+| 11ª | 06/05 | Planejamento territorial + Zoneamentos |
+| **12ª** | **13/05** | **2ª Avaliação (Serious Game)** |
+| 13ª | 20/05 | Atividade de campo |
+| **14ª** | **27/05** | **3ª Avaliação (Relatório de campo)** |
+| **15ª** | **03/06** | **4ª Avaliação (Teórica II)** |
+
+: {.striped .hover}
+
+# [2 — OBJETIVOS E COMPETÊNCIAS]{.section-header}
+
+## Objetivo geral {.smaller-text}
+
+::: {.info-box}
+Capacitar o(a) discente a **analisar a paisagem como totalidade complexa**, integrando componentes físico-bióticos e socioespaciais, por meio de métodos qualitativos e quantitativos voltados ao **diagnóstico** e ao **planejamento territorial**.
+:::
+
+### Objetivos específicos
+
+1. Discutir a **evolução do conceito de paisagem** e suas principais matrizes teórico-metodológicas
+2. Compreender relações entre **forma** (padrão) e **função** (processos) em diferentes escalas
+3. Aplicar técnicas de **interpretação de imagens** e **cartografia temática** na leitura da paisagem
+4. Empregar **métricas e indicadores espaciais** (fragmentação, conectividade, heterogeneidade) para avaliação ambiental
+5. Integrar evidências empíricas na elaboração de **diagnósticos** e **propostas de manejo/requalificação** territorial
+
+---
+
+## Competências a desenvolver {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Saber
+
+- Fundamentos teórico-metodológicos da Análise da Paisagem
+- Paisagem como totalidade complexa e multiescalar
+- Padrões e processos em diferentes escalas espaço-temporais
+
+### Saber fazer
+
+- Interpretar criticamente padrões espaciais
+- Empregar cartografia temática e interpretação de imagens
+- Utilizar indicadores de fragmentação e conectividade
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Saber ser
+
+- **Autonomia intelectual** — pensar criticamente
+- **Rigor interpretativo** — distinguir evidência de opinião
+- **Raciocínio analítico** — articular dados e conceitos
+- **Tomada de decisão** — propor diretrizes com base em diagnóstico
+- **Trabalho colaborativo** — construir sínteses em equipe
+:::
+:::
+:::
+
+# [3 — METODOLOGIA E AVALIAÇÃO]{.section-header}
+
+## Como vamos trabalhar {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Estratégias didáticas
+
+- **Exposição dialogada** com problematização
+- **Leituras dirigidas** e fichamentos
+- **Exercícios práticos** de interpretação e síntese
+- **Serious games** — desafios simulados de diagnóstico territorial
+- **Atividade de campo** com roteiro de observação
+- **Oficinas** de elaboração de mapas e relatórios
+
+### Recursos
+
+- Material no **SAGRES** (.pdf, vídeos, roteiros)
+- Ferramentas: **QGIS**, **Google Earth Engine**, bases públicas (MapBiomas, IBGE)
+- Repositório colaborativo (quando aplicável)
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Avaliações
+
+| Av. | Tipo | Peso |
+|:---:|------|:---:|
+| 1ª | Prova teórica individual | — |
+| 2ª | Serious Game (grupo) | — |
+| 3ª | Relatório de campo (individual) | — |
+| 4ª | Prova teórica individual | — |
+
+: {.striped .hover}
+
+**+ Avaliação contínua:** exercícios, participação, fichamentos e entregas parciais.
+:::
+:::
+:::
+
+---
+
+## Detalhamento das avaliações {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### 1ª Avaliação — Teórica I (01/04)
+
+Prova individual com questões objetivas e discursivas sobre:
+
+- Conceito de paisagem e abordagens integradoras
+- Escala, padrão e processo
+- Cartografia temática e interpretação visual
+
+**Critérios:** domínio conceitual, precisão terminológica, coerência argumentativa.
+
+### 2ª Avaliação — Serious Game (13/05)
+
+Desafio prático em grupo: diagnóstico territorial, seleção de evidências e proposição de diretrizes.
+
+**Critérios:** tomada de decisão, justificativa técnica, consistência metodológica.
+:::
+
+::: {.column width="50%"}
+### 3ª Avaliação — Relatório de Campo (27/05)
+
+Relatório técnico individual a partir da atividade de campo:
+
+- Caracterização da área
+- Descrição interpretativa da paisagem
+- Identificação de processos e conflitos
+- Proposição de diretrizes
+
+**Critérios:** rigor descritivo, qualidade das evidências, coerência das conclusões.
+
+### 4ª Avaliação — Teórica II (03/06)
+
+Prova individual integradora sobre métodos, diagnóstico e planejamento territorial.
+:::
+:::
+
+---
+
+## Produto final da disciplina {.smaller-text}
+
+::: {.info-box}
+### Dossiê de Análise da Paisagem (Estudo de Caso)
+
+O produto principal construído ao longo do semestre será um **dossiê técnico** contendo:
+
+1. **Mapa de uso e cobertura da terra** da área de estudo
+2. **Mapa de unidades de paisagem** (ou síntese geoambiental)
+3. **Diagnóstico interpretativo** — pressões, conflitos, vulnerabilidades e potencialidades
+4. **Diretrizes** — zoneamento e recomendações de conservação/recuperação
+
+O dossiê será construído progressivamente, com entregas parciais ao longo do semestre.
+:::
+
+# [4 — O QUE É PAISAGEM?]{.section-header}
+
+## Paisagem — primeiras aproximações {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Reflexão inicial
+
+> Quando você ouve a palavra **"paisagem"**, o que vem à mente?
+
+Registre mentalmente:
+
+- Uma **imagem**? Qual?
+- Um **lugar**? Qual?
+- Uma **sensação**? Qual?
+- Um **conceito técnico**? Qual?
+
+A paisagem é uma das palavras mais polissêmicas da Geografia. Seu significado varia conforme a **tradição teórica**, a **escala de análise** e o **propósito** do observador.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Paisagem no senso comum
+
+No cotidiano, paisagem geralmente evoca:
+
+- **Cenário visual** — "que bela paisagem!"
+- **Natureza** — montanhas, rios, florestas
+- **Contemplação** — algo para ser visto/apreciado
+- **Estática** — uma foto, um quadro
+
+Na ciência, especialmente na Geografia, o conceito é **muito mais amplo e complexo**. Não se trata apenas do que se vê, mas do que se **interpreta**, **analisa** e **explica**.
+:::
+:::
+:::
+
+---
+
+## A paisagem na arte e na ciência {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Na arte (séculos XV–XIX)
+
+O termo **Landschaft** (alemão) e **paysage** (francês) surgem primeiro na **pintura**:
+
+- Séc. XV — pinturas flamengas: paisagem como fundo
+- Séc. XVII — paisagem holandesa como gênero próprio
+- Séc. XVIII-XIX — romantismo: paisagem como expressão da natureza e da alma
+
+A pintura de paisagem ensinou a **ver o território** de forma organizada: planos, profundidade, elementos compositivos.
+
+> A arte antecipou a ciência: antes de ser objeto de estudo, a paisagem era objeto de **representação**.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Na ciência (séc. XIX em diante)
+
+**Alexander von Humboldt** (1769–1859) inaugura o uso científico:
+
+- *Landschaft* = fisionomia de uma região, totalidade perceptível
+- A paisagem como resultado da **interação entre elementos naturais**
+- Método: observação direta + descrição comparativa + representação
+
+Humboldt propõe que a paisagem é mais que cenário — é **síntese** das relações entre clima, relevo, vegetação e vida humana.
+
+> *"Compreender a natureza é, antes de tudo, compreender a totalidade da paisagem que se oferece ao olhar."* — Humboldt
+:::
+:::
+:::
+
+---
+
+## Tradições geográficas do conceito {.smaller-text}
+
+| Tradição | Período | Conceito-chave | Representante |
+|----------|:---:|----------------|---------------|
+| **Alemã** (*Landschaft*) | Séc. XIX–XX | Paisagem como **totalidade natural** regional; fisionomia e gênese | Humboldt, Passarge, Troll |
+| **Francesa** (*Paysage*) | Séc. XX | Paisagem como **expressão material** das relações sociedade-natureza | Vidal de la Blache, Bertrand |
+| **Anglo-saxônica** (*Landscape*) | Séc. XX–XXI | Paisagem como **padrão espacial** mensurável; ecologia da paisagem | Forman, Turner, Naveh |
+| **Humanista/Cultural** | Séc. XX | Paisagem como **experiência vivida**, percepção, identidade | Sauer, Cosgrove, Berque |
+| **Brasileira** | Séc. XX–XXI | Síntese entre tradições; **domínios morfoclimáticos**, geossistema, diagnóstico | Ab'Sáber, Monteiro, Santos |
+
+: {.striped .hover}
+
+::: {.info-box}
+Cada tradição ilumina uma dimensão. Nesta disciplina, trabalharemos com uma visão **integradora**, que articula estrutura, função, dinâmica e percepção.
+:::
+
+# [5 — PAISAGEM COMO CATEGORIA ANALÍTICA]{.section-header}
+
+## O que torna a paisagem uma categoria analítica? {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Requisitos de uma categoria analítica
+
+Para que "paisagem" funcione como ferramenta de análise (e não apenas como descrição), ela precisa:
+
+1. Ter **definição operacional** — o que é e o que não é
+2. Possuir **componentes identificáveis** — o que a constitui
+3. Admitir **escalas** — em que nível se observa
+4. Ter **métodos** associados — como se investiga
+5. Gerar **produtos** — o que resulta da análise
+
+Ao longo do curso, percorreremos cada um desses requisitos.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Definição operacional para a disciplina
+
+> **Paisagem** é a expressão espacial da interação entre componentes físicos (relevo, clima, hidrografia, solos), bióticos (vegetação, fauna) e socioespaciais (uso da terra, ocupação, infraestrutura) em um determinado recorte espaço-temporal, configurando um **mosaico heterogêneo** com estrutura, funcionamento e dinâmica próprios.
+
+Essa definição é **integradora** — não reduz a paisagem ao natural, ao visual ou ao cultural.
+:::
+:::
+:::
+
+---
+
+## Paisagem ≠ Espaço ≠ Território ≠ Ambiente {.smaller-text}
+
+::: {.columns}
+::: {.column width="100%"}
+
+| Categoria | Ênfase | O que organiza |
+|-----------|--------|----------------|
+| **Espaço geográfico** | Totalidade; produção social | Relações sociais e técnicas que produzem e transformam o espaço (Milton Santos) |
+| **Território** | Poder; apropriação e controle | Relações de poder que delimitam e dominam porções do espaço (Raffestin, Souza) |
+| **Ambiente** | Interação sociedade-natureza; sustentabilidade | Relações entre atividades humanas e sistemas naturais (visão ambiental) |
+| **Paisagem** | Forma visível e estrutura; integração | **Padrões espaciais** resultantes da interação entre componentes; mosaico e dinâmica |
+| **Lugar** | Experiência; identidade; significado | Vivência, pertencimento e valor simbólico atribuído ao espaço (Tuan, Massey) |
+| **Região** | Diferenciação de áreas | Critérios de homogeneidade ou funcionalidade para recortar o espaço |
+
+: {.striped .hover}
+
+::: {.info-box}
+Essas categorias não se excluem — **se complementam**. A paisagem é a "face visível" do espaço geográfico, onde padrões e processos se materializam.
+:::
+
+:::
+:::
+
+---
+
+## A paisagem como síntese {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Por que "síntese"?
+
+A paisagem integra:
+
+- **Componentes abióticos** — relevo, clima, solos, água
+- **Componentes bióticos** — vegetação, fauna, biodiversidade
+- **Componentes antrópicos** — uso da terra, ocupação, infraestrutura, cultura
+
+Nenhum desses componentes existe isoladamente na paisagem. O **mosaico** que vemos (e analisamos) é resultado da **interação** entre todos eles ao longo do **tempo**.
+
+> A paisagem é, portanto, uma **totalidade** que não pode ser reduzida a nenhum de seus componentes isolados.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Exemplo: paisagem do semiárido baiano
+
+Ao observar a paisagem de Feira de Santana e entorno:
+
+- **Relevo** — superfície aplainada, tabuleiros
+- **Clima** — semiárido a subúmido seco
+- **Vegetação** — caatinga (onde conservada), pastagem degradada
+- **Uso da terra** — pecuária, agricultura de sequeiro, expansão urbana
+- **Água** — intermitência, reservatórios, barramentos
+- **Pressões** — desmatamento, erosão, impermeabilização
+
+Tudo isso forma um **mosaico** específico, com padrões identificáveis e dinâmica própria.
+:::
+:::
+:::
+
+---
+
+## Componentes da paisagem {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Componentes estruturais
+
+1. **Matriz** — o tipo de cobertura dominante no mosaico (ex.: pastagem que domina a paisagem)
+2. **Manchas** (*patches*) — unidades discretas de cobertura que diferem da matriz (ex.: fragmentos de caatinga)
+3. **Corredores** — faixas lineares que conectam manchas (ex.: matas ciliares, faixas de vegetação)
+
+Essa tríade **matriz–mancha–corredor** é a base da Ecologia da Paisagem (Forman & Godron, 1986) e será aprofundada na Aula 04.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Componentes funcionais
+
+Além da estrutura visível, a paisagem possui **funções**:
+
+- **Fluxos de matéria** — água, sedimentos, nutrientes
+- **Fluxos de energia** — radiação, calor
+- **Fluxos de organismos** — dispersão, migração, polinização
+- **Fluxos de informação** — relações culturais, percepção
+
+A **forma** (estrutura) condiciona a **função** (processos). Modificar a estrutura é modificar os fluxos — e vice-versa.
+:::
+:::
+:::
+
+---
+
+## Dimensões da análise da paisagem {.smaller-text}
+
+A análise da paisagem envolve pelo menos **quatro dimensões** articuladas:
+
+| Dimensão | Pergunta-chave | Exemplo |
+|----------|---------------|---------|
+| **Estrutura** | *Como os elementos estão dispostos no espaço?* | Mapa de manchas, fragmentação, heterogeneidade |
+| **Função** | *Quais processos e fluxos ocorrem?* | Conectividade, dispersão, escoamento, serviços ecossistêmicos |
+| **Dinâmica** | *Como a paisagem muda no tempo?* | Comparação temporal, trajetórias de uso, tendências |
+| **Percepção** | *Como a paisagem é vivida e significada?* | Identidade, pertencimento, conflitos de percepção |
+
+: {.striped .hover}
+
+::: {.highlight-box}
+Nesta disciplina, daremos ênfase às três primeiras dimensões (estrutura, função, dinâmica), com aportes da percepção quando pertinente.
+:::
+
+# [6 — POR QUE ESTUDAR PAISAGEM HOJE?]{.section-header}
+
+## Relevância contemporânea {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Desafios ambientais e territoriais
+
+A análise da paisagem é hoje indispensável para enfrentar:
+
+- **Desmatamento e fragmentação** — perda de biodiversidade
+- **Expansão urbana desordenada** — impermeabilização, ilhas de calor
+- **Mudanças climáticas** — vulnerabilidade, adaptação
+- **Degradação de bacias** — erosão, assoreamento, escassez hídrica
+- **Conflitos de uso** — agropecuária vs. conservação vs. urbanização
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Aplicações profissionais
+
+O(a) profissional que domina análise da paisagem pode atuar em:
+
+- **Diagnóstico ambiental** (EIA/RIMA, laudos técnicos)
+- **Planejamento territorial** (planos diretores, ZEE)
+- **Gestão de áreas protegidas** (UCas, APAs, RPPNs)
+- **Recuperação de áreas degradadas** (PRADs, corredores)
+- **Consultoria e pesquisa** (universidades, ONGs, setor privado)
+- **Avaliação de serviços ecossistêmicos**
+:::
+:::
+:::
+
+---
+
+## Marcos legais e instrumentos {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### No Brasil
+
+- **Lei 12.651/2012** (Código Florestal) — APPs, reserva legal, CAR
+- **Lei 9.985/2000** (SNUC) — unidades de conservação
+- **Lei 6.938/1981** (PNMA) — avaliação de impactos
+- **Decreto 4.297/2002** — Zoneamento Ecológico-Econômico (ZEE)
+- **Estatuto da Cidade** (Lei 10.257/2001) — planejamento urbano
+
+Todos esses instrumentos exigem, direta ou indiretamente, **leitura e diagnóstico da paisagem**.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Internacionalmente
+
+- **Convenção Europeia da Paisagem** (2000) — paisagem como direito e patrimônio
+- **ODS/Agenda 2030** — metas envolvendo uso da terra, biodiversidade, resiliência
+- **Década da Restauração de Ecossistemas** (ONU, 2021–2030) — restauração de paisagens degradadas
+- **IPBES** — Plataforma de Biodiversidade e Serviços Ecossistêmicos
+- **IPCC** — cenários climáticos e impactos sobre paisagens
+
+A paisagem é categoria-chave tanto na política ambiental **brasileira** quanto na **agenda global**.
+:::
+:::
+:::
+
+# [7 — ATIVIDADE INTRODUTÓRIA]{.section-header}
+
+## Exercício: "A paisagem onde eu vivo" {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+### Proposta (individual, 15 min)
+
+Em uma folha A4 (ou anotação digital), responda:
+
+1. **Descreva em 3-5 frases** a paisagem do lugar onde você mora (bairro, distrito, zona rural)
+2. **Identifique pelo menos 3 componentes** dessa paisagem (abióticos, bióticos, antrópicos)
+3. **Indique uma mudança** que você percebeu nessa paisagem nos últimos 5-10 anos
+4. **Formule uma pergunta** que um geógrafo poderia fazer sobre essa paisagem
+
+### Socialização (15 min)
+
+- Roda de contribuições (2-3 min por pessoa)
+- Buscamos padrões nas respostas: o que há em comum? O que difere?
+:::
+
+::: {.column width="40%"}
+::: {.info-box}
+### Objetivo do exercício
+
+- Mobilizar o **repertório prévio** de cada estudante
+- Demonstrar que **todos já leem paisagens**, mesmo sem vocabulário técnico
+- Iniciar a construção de um **olhar analítico**
+- Identificar temas que serão aprofundados ao longo do curso
+
+> *"A paisagem está diante de nós todos os dias. O que muda é o repertório que usamos para lê-la."*
+:::
+:::
+:::
+
+---
+
+## Para a próxima aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Leitura obrigatória
+
+- BERTRAND, G. (1971). **Paisagem e geografia física global: esboço metodológico.** *Cadernos de Ciências da Terra*, v. 13, p. 1-27.
+
+### Leitura complementar
+
+- METZGER, J. P. (2001). **O que é ecologia de paisagens?** *Biota Neotropica*, v. 1, n. 1-2.
+
+### Fichamento (avaliação contínua)
+
+Elaborar fichamento da leitura de Bertrand (1971), destacando:
+
+- Conceito de paisagem proposto pelo autor
+- Proposta de classificação hierárquica
+- Relação com o conceito de geossistema
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Na próxima aula (Aula 02)
+
+Aprofundaremos a **evolução do conceito de paisagem** ao longo do século XX, discutindo:
+
+- De *Landschaft* ao geossistema
+- A proposta de Bertrand (1968/1971)
+- A paisagem em Milton Santos
+- Distinções operacionais para nossa disciplina
+
+**Traga o fichamento** — faremos discussão orientada da leitura.
+:::
+:::
+:::
+
+---
+
+## Síntese da Aula 01 {.smaller-text}
+
+::: {.info-box}
+### O que vimos hoje
+
+1. **Organização da disciplina** — 15 encontros, 4 avaliações, produto final (dossiê)
+2. **Paisagem é polissêmica** — muda de sentido conforme tradição, escala e propósito
+3. **Origens** — da arte (Landschaft como cenário) à ciência (Humboldt: paisagem como totalidade)
+4. **Tradições geográficas** — alemã, francesa, anglo-saxônica, humanista, brasileira
+5. **Paisagem ≠ espaço ≠ território ≠ ambiente** — categorias complementares, não sinônimas
+6. **Paisagem como síntese** — integra componentes abióticos, bióticos e antrópicos
+7. **Quatro dimensões** — estrutura, função, dinâmica, percepção
+8. **Relevância** — diagnóstico ambiental, planejamento territorial, marcos legais
+:::
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+
+Análise da Paisagem — Aula 01
+:::

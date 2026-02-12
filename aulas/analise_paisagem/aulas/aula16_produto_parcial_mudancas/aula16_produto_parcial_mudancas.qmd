@@ -1,0 +1,389 @@
+﻿---
+title: "Análise da Paisagem"
+subtitle: "Aula 16 — Produto Parcial: Registro Interpretativo de Mudanças<br>Curso de Geografia"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026-04-15"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise da Paisagem | Aula 16"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Roteiro do produto parcial
+- [2]{.circle} Oficina: extração de dados MapBiomas
+- [3]{.circle} Construção da matriz de transição
+- [4]{.circle} Produção do mapa comparativo
+- [5]{.circle} Texto interpretativo: mudanças e contexto
+- [6]{.circle} Integração ao dossiê
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Produzir o **registro interpretativo de mudanças** na área de estudo, integrando dados do MapBiomas, matriz de transição, mapa comparativo e texto interpretativo. Este é o **segundo produto parcial** do dossiê.
+:::
+:::
+:::
+
+# [1 — ROTEIRO DO PRODUTO]{.section-header}
+
+## O que será entregue {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Componentes do produto parcial
+
+| # | Componente | Formato |
+|:-:|-----------|---------|
+| 1 | Mapas de uso/cobertura (2 datas) | Figura (PNG ou PDF) |
+| 2 | Matriz de transição simplificada | Tabela |
+| 3 | Gráfico de evolução temporal | Figura |
+| 4 | Texto interpretativo | 2–3 parágrafos |
+| 5 | Referências (fontes dos dados) | Lista |
+
+: {.striped .hover}
+
+### Cronograma da aula (80 min)
+
+| Fase | Atividade | Tempo |
+|:----:|----------|:-----:|
+| 1 | Extração de dados MapBiomas | 20 min |
+| 2 | Matriz de transição | 15 min |
+| 3 | Mapa/gráfico comparativo | 20 min |
+| 4 | Texto interpretativo | 20 min |
+| 5 | Revisão e organização | 5 min |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Critérios de qualidade
+
+| Critério | Peso | O que avaliar |
+|----------|:----:|-------------|
+| **Dados** | 20% | Fontes corretas, datas adequadas |
+| **Matriz** | 20% | Transições corretamente quantificadas |
+| **Visualização** | 20% | Mapa/gráfico claro e legível |
+| **Interpretação** | 30% | Articulação padrão-processo-contexto |
+| **Apresentação** | 10% | Organização, referências, legibilidade |
+
+: {.striped .hover}
+
+### Integração ao dossiê
+
+Este produto é a **camada temporal** do dossiê:
+
+1. Aula 08: localização e caracterização → 📄
+2. Aula 10: matriz de evidências e síntese → 📄
+3. Aula 14: SR e feições → 📄
+4. **Aula 16: mudanças e trajetórias → 📄** ← aqui
+5. *(futuro)* Métricas, unidades, diagnóstico...
+:::
+:::
+:::
+
+# [2 — OFICINA: DADOS MAPBIOMAS]{.section-header}
+
+## Passo a passo: extração de dados {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Opção A: Plataforma MapBiomas
+
+1. Acessar [mapbiomas.org → Plataforma](https://plataforma.brasil.mapbiomas.org/)
+2. Navegar até a área de estudo
+3. Selecionar **ano inicial** (ex: 1990)
+4. Capturar o mapa de uso/cobertura
+5. Selecionar **ano final** (ex: 2022)
+6. Capturar o segundo mapa
+7. Acessar aba **Transições** → selecionar os dois anos
+8. Anotar as áreas de cada classe
+
+### Opção B: Google Earth Engine
+
+```javascript
+// MapBiomas no GEE
+var mapbiomas = ee.Image(
+  'projects/mapbiomas-workspace/public/collection8/mapbiomas_collection80_integration_v1'
+);
+
+// Uso/cobertura em 1990
+var uso1990 = mapbiomas.select('classification_1990')
+  .clip(area);
+
+// Uso/cobertura em 2022
+var uso2022 = mapbiomas.select('classification_2022')
+  .clip(area);
+```
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Classes MapBiomas (simplificadas)
+
+| Código | Classe | Cor |
+|:------:|--------|:---:|
+| 3 | Formação florestal | 🟢 Verde escuro |
+| 4 | Formação savânica | 🟢 Verde |
+| 12 | Formação campestre | 🟡 Verde claro |
+| 15 | Pastagem | 🟠 Laranja |
+| 21 | Mosaico agricultura/pastagem | 🟤 Marrom |
+| 25 | Área não vegetada | ⬜ Branco |
+| 33 | Corpo d'água | 🔵 Azul |
+| 24 | Infraestrutura urbana | 🔴 Vermelho |
+
+: {.striped .hover}
+
+### Datas recomendadas
+
+- **Início:** 1985 ou 1990 (início da série MapBiomas)
+- **Intermediário:** 2005 ou 2010 (opcional)
+- **Final:** 2022 ou 2023 (último ano disponível)
+
+> Escolha datas que cubram pelo menos **30 anos** de diferença para capturar as transformações.
+:::
+:::
+:::
+
+# [3 — MATRIZ DE TRANSIÇÃO]{.section-header}
+
+## Construção e leitura da matriz {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Exemplo de matriz simplificada
+
+| 1990 \ 2022 | Veg. nativa | Pastagem | Agricultura | Outros | **Total 1990** |
+|:-----------:|:----------:|:--------:|:----------:|:-----:|:-------------:|
+| **Veg. nativa** | **450** | 280 | 40 | 30 | 800 |
+| **Pastagem** | 30 | **320** | 50 | 20 | 420 |
+| **Agricultura** | 5 | 15 | **60** | 10 | 90 |
+| **Outros** | 10 | 10 | 5 | **65** | 90 |
+| **Total 2022** | 495 | 625 | 155 | 125 | **1400** |
+
+: {.striped .hover}
+
+### Como construir
+
+1. Obter áreas de cada classe em $t_1$ e $t_2$
+2. Identificar transições (MapBiomas → aba Transições)
+3. Preencher a matriz (tabela cruzada)
+4. Calcular totais, ganhos e perdas
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Indicadores derivados da matriz
+
+| Indicador | Fórmula | Interpretação |
+|-----------|---------|-------------|
+| **Perda** | Total $t_1$ − diagonal | Área que saiu da classe |
+| **Ganho** | Total $t_2$ − diagonal | Área que entrou na classe |
+| **Mudança líquida** | Ganho − Perda | Saldo (+ ou −) |
+| **Estabilidade** | Diagonal / Total | % que não mudou |
+
+: {.striped .hover}
+
+### Leitura do exemplo
+
+- **Veg. nativa:** perdeu 350 ha (800 − 450), ganhou 45 ha → **saldo = −305** ha
+- **Pastagem:** perdeu 100 ha, ganhou 305 ha → **saldo = +205** ha
+- **Principal transição:** vegetação nativa → pastagem (280 ha = 20% da área)
+- **Estabilidade geral:** (450+320+60+65)/1400 = **64%**
+:::
+:::
+:::
+
+# [4 — MAPA E GRÁFICO COMPARATIVOS]{.section-header}
+
+## Produção das figuras {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Mapa comparativo (lado a lado)
+
+- Dois mapas na mesma escala e legenda
+- Esquema: 1990 à esquerda | 2022 à direita
+- Mesma **legenda de cores** (classes MapBiomas)
+- **Norte**, **escala**, **título** e **fonte**
+
+### Como produzir
+
+1. No **MapBiomas**: captura de tela das duas datas
+2. No **GEE**: exportar como GeoTIFF → carregar no QGIS
+3. No **QGIS**: layout de impressão com dois mapas
+
+### Gráfico de evolução temporal
+
+- Gráfico de barras empilhadas ou linhas
+- Eixo X: anos (ex: 1990, 2000, 2010, 2022)
+- Eixo Y: área (ha ou %) de cada classe
+- Fontes: MapBiomas → Estatísticas
+
+> Ferramentas: Google Sheets, LibreOffice Calc, Python (matplotlib)
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Exemplo de gráfico (descrição)
+
+```
+Evolução do uso/cobertura — Área de estudo (1990–2022)
+        
+  100% |▓▓▓▓▓▓▓▓▓   Vegetação nativa
+       |▓▓▓▓▓▓▓
+       |▓▓▓▓▓
+   50% |▓▓▓▓         Pastagem
+       |████████████████████████████
+       |████████████████████████████████  
+       |░░░░░░░░░░░░  Agricultura
+    0% |____________________________
+       1990  2000   2010   2022
+```
+
+### Elementos obrigatórios da figura
+
+- ✅ Título descritivo
+- ✅ Legenda com todas as classes
+- ✅ Eixos rotulados (unidade)
+- ✅ Fonte dos dados
+- ✅ Período analisado
+- ✅ Escala e norte (mapas)
+:::
+:::
+:::
+
+# [5 — TEXTO INTERPRETATIVO]{.section-header}
+
+## Modelo de redação {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Estrutura (2–3 parágrafos)
+
+**Parágrafo 1 — O que mudou**
+
+- Quais classes ganharam e perderam área?
+- Qual a principal transição?
+- Qual a taxa aproximada de mudança?
+
+**Parágrafo 2 — Por que mudou**
+
+- Fatores prováveis (economia, política, clima, infraestrutura)
+- Contexto regional (semiárido, bioma, município)
+- Relação com processos identificados na literatura
+
+**Parágrafo 3 — Consequências e implicações**
+
+- Impactos na estrutura da paisagem (fragmentação, conectividade)
+- Impactos nos serviços ecossistêmicos
+- Tendências se o processo continuar
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Exemplo de texto
+
+> *"Entre 1990 e 2022, a área de estudo registrou uma perda de 38% da cobertura de vegetação nativa, com redução de 800 ha para 495 ha. A principal transição identificada foi a conversão de vegetação nativa em pastagem (280 ha), concentrada nas áreas de relevo suave ondulado onde a atividade pecuária é historicamente predominante.*
+>
+> *Essa transformação está associada à expansão da pecuária extensiva no semiárido baiano, favorecida pelo crédito rural subsidiado e pela baixa fiscalização ambiental nas décadas de 1990 e 2000. A abertura da rodovia BA-XXX na década de 1980 ampliou o acesso à região, acelerando o processo de conversão.*
+>
+> *A perda de cobertura nativa reduziu a conectividade entre fragmentos remanescentes, que hoje ocupam apenas 35% da área total e encontram-se isolados em encostas e topos. A continuidade desse processo pode comprometer a capacidade de provisão hídrica e a manutenção da biodiversidade local."*
+:::
+:::
+:::
+
+# [6 — INTEGRAÇÃO AO DOSSIÊ]{.section-header}
+
+## Organização progressiva do dossiê {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Seções do dossiê (até aqui)
+
+| Seção | Fonte | Status |
+|-------|-------|:------:|
+| 1. Localização e contexto | Aula 08 | ✅ |
+| 2. Caracterização inicial | Aula 08 + 07 | ✅ |
+| 3. Interpretação visual | Aula 09 | ✅ |
+| 4. Matriz de evidências e síntese | Aula 10 | ✅ |
+| 5. Evidências de SR (feições, índices) | Aula 14 | ✅ |
+| **6. Análise temporal (mudanças)** | **Aula 16** | ✅ 🆕 |
+| 7. Métricas e indicadores | Aula 18 | ⏳ |
+| 8. Unidades de paisagem | Aula 19–20 | ⏳ |
+| 9. Diagnóstico e diretrizes | Aula 21–22 | ⏳ |
+| 10. Evidências de campo | Aula 25–26 | ⏳ |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Entrega da Aula 16
+
+**Conteúdo mínimo:**
+
+1. Mapas de uso/cobertura (2 datas) — lado a lado
+2. Matriz de transição simplificada
+3. Gráfico de evolução temporal (opcional)
+4. Texto interpretativo (2–3 parágrafos)
+5. Referência aos dados (MapBiomas, coleção X, anos Y e Z)
+
+**Formato:** PDF ou documento digital
+
+**Prazo:** antes da Aula 17 (22/04)
+
+### Próximas aulas
+
+- **Aula 17** (22/04): Métricas e indicadores de paisagem
+- **Aula 18** (22/04): Exercício aplicado com indicadores
+:::
+:::
+:::
+
+---
+
+## Síntese da Aula 16 {.smaller-text}
+
+::: {.info-box}
+### O que fizemos hoje
+
+1. **Extraímos dados do MapBiomas** para a área de estudo (2 datas)
+2. **Construímos a matriz de transição** — quantificando "de quê → para quê"
+3. **Calculamos indicadores** — perda, ganho, mudança líquida, estabilidade
+4. **Produzimos figuras** — mapa comparativo e/ou gráfico temporal
+5. **Redigimos texto interpretativo** — padrão → processo → contexto → implicação
+6. **Integramos ao dossiê** — 6ª camada de evidência
+:::
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+
+Análise da Paisagem — Aula 16
+:::

@@ -1,0 +1,374 @@
+﻿---
+title: "Extensão e Sociologia Rural"
+subtitle: "Avaliação Participativa de Impacto de Tecnologias Sociais<br>Cisternas, Quintais Produtivos e Ações de ATER"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Federal de Sergipe (UFS)"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UFS — Extensão e Sociologia Rural | Aula 16 — Avaliação Participativa de Impacto"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos Principais
+
+- [1]{.circle} O que é avaliação de impacto e por que participativa?
+- [2]{.circle} Métodos participativos de avaliação
+- [3]{.circle} Indicadores para tecnologias sociais
+- [4]{.circle} Estudo de caso: cisternas no semiárido
+- [5]{.circle} Oficina prática: construindo uma avaliação
+- [6]{.circle} Análise qualitativa dos resultados
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo Central**
+
+Capacitar o estudante de Engenharia Agronômica a planejar e conduzir uma avaliação participativa de impacto de tecnologias sociais implantadas no meio rural, utilizando indicadores construídos com as comunidades.
+:::
+:::
+:::
+
+# [1 — AVALIAÇÃO DE IMPACTO: CONCEITOS]{.section-header}
+
+## O que é avaliação de impacto? {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Definição
+
+***Avaliação de impacto*** é o processo sistemático de identificar as **mudanças** — intencionais ou não — que uma intervenção (projeto, política, tecnologia) gerou na vida das pessoas e nos sistemas em que estão inseridas.
+
+### Tipos de avaliação
+
+| Tipo | Momento | Foco |
+|------|---------|------|
+| **Ex ante** | Antes da ação | Viabilidade e projeção |
+| **De processo** | Durante | Ajustes e aprendizados |
+| **Ex post** | Após conclusão | Resultados e impactos |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Por que **participativa**?
+
+A avaliação convencional (top-down) frequentemente:
+
+- Ignora o **saber local**
+- Mede apenas indicadores técnicos (produtividade, renda)
+- Não capta **mudanças subjetivas** (autonomia, autoestima, organização comunitária)
+- Produz resultados que **não retornam** às comunidades
+
+A avaliação **participativa** envolve os beneficiários como **co-avaliadores**, não apenas informantes.
+:::
+:::
+:::
+
+---
+
+## Base teórica {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Extensão dialógica (Paulo Freire)
+
+A avaliação participativa é coerente com a extensão freireana:
+
+- Comunidade como **sujeito** da avaliação
+- Diálogo como **método**
+- Indicadores definidos **com** e não **para** o público
+- Resultados devolvidos na forma de **ação transformadora**
+:::
+
+::: {.column width="50%"}
+### Empowerment Evaluation (Fetterman, 2001)
+
+Princípios:
+
+1. **Melhoria** — avaliar para melhorar, não para punir
+2. **Apropriação comunitária** — a comunidade conduz o processo
+3. **Inclusão** — todas as vozes, especialmente as marginalizadas
+4. **Prestação de contas democrática** — transparência nos resultados
+5. **Capacitação** — a comunidade aprende a avaliar
+:::
+:::
+
+# [2 — MÉTODOS PARTICIPATIVOS]{.section-header}
+
+## Ferramentas de coleta {.smaller-text}
+
+| Ferramenta | Descrição | Quando usar |
+|------------|-----------|-------------|
+| **Mapa Falante** | Desenho coletivo do território antes/depois da intervenção | Início da oficina — aquecer e contextualizar |
+| **Linha do Tempo** | Reconstrução cronológica de mudanças percebidas | Avaliar processos ao longo dos anos |
+| **Matriz de Indicadores** | Tabela com critérios definidos pelas famílias para pontuar mudanças | Quantificar percepções de forma estruturada |
+| **Caminhada Transversal** | Percurso pelo território com observação participante | Triangular informações visuais e verbais |
+| **Grupo Focal** | Discussão estruturada com 8–12 pessoas sobre temas-chave | Aprofundar percepções qualitativas |
+| **Entrevista Semiestruturada** | Roteiro flexível aplicado individualmente | Captar experiências pessoais e sensíveis |
+
+: {.striped .hover}
+
+---
+
+## Construção participativa de indicadores {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+### Processo em 4 etapas
+
+1. **Pergunta geradora:** *"O que mudou na sua vida depois da cisterna?"*
+2. **Listagem livre:** cada participante fala mudanças percebidas
+3. **Agrupamento temático:** facilitador organiza em categorias
+4. **Definição de escala:** grupo define como "medir" cada indicador
+
+### Exemplo de escala participativa
+
+| Nível | Descrição (definida pelo grupo) |
+|:---:|---|
+| 1 | "Não mudou nada" |
+| 2 | "Melhorou um pouco" |
+| 3 | "Melhorou bastante" |
+| 4 | "Mudou completamente a vida" |
+
+: {.striped .hover}
+:::
+
+::: {.column width="45%"}
+::: {.info-box}
+### Categorias comuns de indicadores
+
+- **Segurança hídrica** — acesso a água limpa, frequência de falta
+- **Segurança alimentar** — diversificação da alimentação
+- **Renda** — venda de excedentes, redução de gastos
+- **Trabalho** — tempo gasto buscando água, divisão de tarefas
+- **Saúde** — doenças de veiculação hídrica
+- **Organização social** — participação em reuniões, associações
+- **Gênero** — empoderamento feminino na gestão da água
+:::
+:::
+:::
+
+# [3 — ESTUDO DE CASO: CISTERNAS NO SEMIÁRIDO]{.section-header}
+
+## Programa Um Milhão de Cisternas (P1MC) {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Contexto
+
+- Articulação do Semiárido Brasileiro (ASA)
+- Mais de **1,2 milhão** de cisternas de placa construídas
+- Capacidade: **16.000 litros** cada
+- Público: agricultura familiar do semiárido
+
+### Tecnologia social
+
+A cisterna de placa é considerada **tecnologia social** porque:
+
+- Construída com materiais e mão de obra locais
+- Transferência de conhecimento entre famílias
+- Respeita o contexto cultural
+- Solução de baixo custo replicável
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Impactos documentados (ASA, 2023)
+
+| Indicador | Antes | Depois |
+|-----------|:---:|:---:|
+| Acesso à água potável | 23% | 89% |
+| Doenças diarreicas (crianças) | Frequente | Rara |
+| Tempo gasto buscando água | 3–5 h/dia | < 30 min/dia |
+| Mulheres em associações | 12% | 47% |
+| Quintais produtivos ativos | 8% | 62% |
+
+: {.striped .hover}
+:::
+:::
+:::
+
+---
+
+## Exemplo de avaliação participativa {.smaller-text}
+
+### Comunidade fictícia: Riacho Seco (BA) — 35 famílias, cisternas desde 2018
+
+**Matriz de avaliação (resultado da oficina):**
+
+| Indicador (definido pelas famílias) | Nota média (1–4) | Evidência qualitativa |
+|-------|:---:|-------|
+| "Água na seca" | 3,7 | "Antes dependia de carro-pipa, agora só peço quando a seca é muito longa" |
+| "Comida mais variada" | 3,2 | "Plantei coentro, cebolinha, tomate — antes tudo vinha da feira" |
+| "Saúde das crianças" | 3,5 | "Diminuiu as diarreias, a água é limpa" |
+| "Trabalho das mulheres" | 3,8 | "Não carrego mais lata na cabeça, sobra tempo pra roça e reunião" |
+| "União da comunidade" | 2,9 | "Quando construímos juntos, aprendemos a trabalhar em mutirão" |
+
+: {.striped .hover}
+
+# [4 — OFICINA PRÁTICA]{.section-header}
+
+## Planejamento da oficina (4 horas) {.smaller-text}
+
+| Momento | Tempo | Atividade | Material |
+|---------|:---:|-----------|----------|
+| **Abertura** | 15 min | Apresentação, expectativas, regras de convivência | Flip chart |
+| **Mapa Falante** | 30 min | Desenho coletivo: "como era antes × como é agora" | Papel kraft, canetões |
+| **Linha do Tempo** | 20 min | Marcos importantes desde a implantação da tecnologia | Barbante, cartões |
+| **Intervalo** | 15 min | Café com bolo (cortesia) | — |
+| **Construção de Indicadores** | 40 min | Pergunta geradora → listagem → agrupamento → escala | Cartões, tarjetas |
+| **Pontuação coletiva** | 30 min | Cada família pontua os indicadores (votação com adesivos) | Adesivos coloridos |
+| **Grupo Focal** | 20 min | Aprofundamento de 2–3 indicadores mais relevantes | Gravador (com permissão) |
+| **Devolutiva e encerramento** | 10 min | Síntese visual dos resultados, próximos passos | Cartaz-síntese |
+
+: {.striped .hover}
+
+---
+
+## Fichas de campo {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Ficha individual do facilitador
+
+```
+AVALIAÇÃO PARTICIPATIVA — FICHA DE CAMPO
+Comunidade: ___________________
+Data: ____/____/________
+Família nº: ____
+Nº de membros: ____
+Tecnologia avaliada: ____________
+
+INDICADORES (escala 1-4):
+1. _________________ [ ]
+2. _________________ [ ]
+3. _________________ [ ]
+4. _________________ [ ]
+5. _________________ [ ]
+
+Observações:
+_________________________________
+_________________________________
+```
+:::
+
+::: {.column width="50%"}
+### Ficha de síntese coletiva
+
+```
+SÍNTESE DA OFICINA
+Comunidade: ___________________
+Nº de participantes: ____
+(homens: ____ mulheres: ____)
+
+INDICADOR | NOTA MÉDIA | EVIDÊNCIA
+1. _______ | _________ | _________
+2. _______ | _________ | _________
+3. _______ | _________ | _________
+
+Pontos fortes da tecnologia:
+_________________________________
+
+Pontos a melhorar:
+_________________________________
+
+Recomendações do grupo:
+_________________________________
+```
+:::
+:::
+
+# [5 — ANÁLISE QUALITATIVA]{.section-header}
+
+## Análise dos resultados {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Dados quantitativos
+
+- **Estatística descritiva** das notas por indicador (média, mediana, moda)
+- **Gráfico radar** com as dimensões avaliadas
+- Comparar notas entre subgrupos (gênero, idade, tamanho do lote)
+
+### Dados qualitativos
+
+- **Análise de conteúdo** (Bardin, 2011) das falas e anotações
+- Identificar **categorias emergentes** — temas não previstos
+- **Triangulação** — cruzar falas × observação × dados quantitativos
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Princípios éticos
+
+1. **Consentimento informado** — explicar o propósito e obter autorização
+2. **Anonimato** — não vincular falas a nomes no relatório
+3. **Devolutiva** — retornar os resultados à comunidade
+4. **Não-extração** — a avaliação não deve beneficiar apenas o pesquisador
+5. **Aprovação em CEP** — para pesquisas acadêmicas (TCC, dissertação)
+:::
+:::
+:::
+
+---
+
+## Exercício proposto {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+### Atividade em grupo (4–5 alunos)
+
+1. Escolham uma **tecnologia social** implementada no seu município (cisterna, fossa biodigestora, horta comunitária, etc.)
+2. Planejem uma **oficina de avaliação participativa** seguindo o roteiro apresentado
+3. Definam pelo menos **5 indicadores** com escala participativa
+4. Elaborem as **fichas de campo**
+5. Simulem a oficina com colegas da turma como "comunidade"
+6. Apresentem os resultados em formato de **relatório técnico**
+:::
+
+::: {.column width="40%"}
+::: {.highlight-box}
+### Entrega
+
+- **Formato:** relatório PDF + fichas preenchidas
+- **Prazo:** 14 dias
+- **Avaliação:** planejamento (25%), indicadores (25%), simulação (25%), relatório (25%)
+:::
+:::
+:::
+
+---
+
+## Referências {.smaller-text}
+
+- Fetterman, D. M. (2001). *Foundations of Empowerment Evaluation*. Sage.
+- Bardin, L. (2011). *Análise de Conteúdo*. Edições 70.
+- Chambers, R. (1994). *Participatory Rural Appraisal (PRA)*. World Development, 22(9), 1253–1268.
+- ASA Brasil. (2023). *Programa Um Milhão de Cisternas — Relatório de Impacto*. Recife.
+- PNATER. (2010). Política Nacional de ATER — Lei nº 12.188/2010.
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Federal de Sergipe (UFS)
+:::

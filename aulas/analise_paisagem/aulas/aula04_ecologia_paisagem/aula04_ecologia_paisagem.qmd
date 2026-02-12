@@ -1,0 +1,581 @@
+﻿---
+title: "Análise da Paisagem"
+subtitle: "Aula 04 — Ecologia da Paisagem: Matriz, Mancha e Corredor<br>Curso de Geografia"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026-03-04"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise da Paisagem | Aula 04"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Discussão da leitura (Metzger, 2001)
+- [2]{.circle} Ecologia da paisagem: duas abordagens
+- [3]{.circle} O modelo matriz–mancha–corredor
+- [4]{.circle} Tipos e atributos de manchas
+- [5]{.circle} Corredores: tipos e funções
+- [6]{.circle} Conectividade e implicações para diagnóstico
+- [7]{.circle} Atividade prática: identificação em mosaico
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Compreender os fundamentos da **Ecologia da Paisagem**, particularmente o modelo **matriz–mancha–corredor**, e suas implicações para o diagnóstico territorial e o planejamento da conservação.
+:::
+:::
+:::
+
+# [1 — DISCUSSÃO DA LEITURA]{.section-header}
+
+## Metzger (2001): pontos-chave {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### O que Metzger propõe?
+
+> A ecologia da paisagem é *"o estudo da estrutura, função e dinâmica de áreas heterogêneas compostas por ecossistemas interativos"* — adaptado de Forman & Godron (1986)
+
+**Duas abordagens:**
+
+| Abordagem | Ênfase | Origem |
+|-----------|--------|--------|
+| **Geográfica** | Relação sociedade-natureza; planejamento | Europa (Troll, Naveh) |
+| **Ecológica** | Padrão espacial e processos ecológicos | América do Norte (Forman, Turner) |
+
+: {.striped .hover}
+
+Metzger argumenta que **ambas** são necessárias e complementares.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Questões para discussão
+
+1. Metzger distingue **abordagem geográfica** e **ecológica**. Qual delas se aproxima mais do nosso objetivo na disciplina?
+
+2. O autor define paisagem como "mosaico heterogêneo". Essa definição é **suficiente** para trabalho?
+
+3. Quais são as **três dimensões** de análise que Metzger destaca? (estrutura, função, dinâmica)
+
+4. Como a ecologia da paisagem se diferencia da ecologia de ecossistemas e da biogeografia?
+
+5. O que significa dizer que a paisagem é o "nível de organização mais adequado para estudar processos ecológicos que dependem do arranjo espacial"?
+:::
+:::
+:::
+
+# [2 — ECOLOGIA DA PAISAGEM: DUAS ABORDAGENS]{.section-header}
+
+## Abordagem geográfica vs. ecológica {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Abordagem geográfica
+
+- **Origem:** Europa (Carl Troll, Zev Naveh, Jean-Paul Amat)
+- **Foco:** relação sociedade-natureza, planejamento territorial
+- **Escala:** regional a local
+- **Conceito de paisagem:** totalidade que inclui dimensão humana, cultural e perceptiva
+- **Métodos:** cartografia de síntese, trabalho de campo, análise espacial, integração de componentes
+- **Aplicação:** zoneamento, gestão ambiental, conservação
+
+### Herança
+
+Troll, Bertrand, Ab'Sáber, Monteiro → **geossistema** → análise integrada
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Abordagem ecológica
+
+- **Origem:** América do Norte (Forman, Turner, McGarigal)
+- **Foco:** efeitos do padrão espacial sobre processos ecológicos
+- **Escala:** paisagem (km² a centenas de km²)
+- **Conceito de paisagem:** mosaico espacial heterogêneo com padrões mensuráveis
+- **Métodos:** métricas de paisagem, SIG, modelagem espacial, sensoriamento remoto
+- **Aplicação:** conservação, fragmentação, conectividade, biogeografia
+
+### Herança
+
+Forman & Godron, MacArthur & Wilson → **biogeografia de ilhas** → ecologia da paisagem quantitativa
+:::
+:::
+:::
+
+::: {.info-box}
+**Nesta disciplina**, a abordagem é **integradora**: usamos o referencial geossistêmico (geográfico) para a leitura integrada, e o ferramental da ecologia da paisagem (ecológico) para a análise quantitativa de padrões e processos.
+:::
+
+# [3 — O MODELO MATRIZ–MANCHA–CORREDOR]{.section-header}
+
+## A paisagem como mosaico {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### O modelo de Forman & Godron (1986)
+
+Toda paisagem pode ser decomposta em **três elementos estruturais**:
+
+1. **Matriz** — o tipo de cobertura **dominante** que controla a dinâmica da paisagem
+2. **Manchas** (*patches*) — unidades **discretas** que diferem da matriz
+3. **Corredores** (*corridors*) — faixas **lineares** que diferem da matriz e conectam manchas
+
+### Princípio fundamental
+
+> O **arranjo espacial** desses três elementos determina os fluxos de energia, matéria e organismos na paisagem.
+
+A mesma quantidade de habitat, arranjada de formas diferentes, produz paisagens com funcionalidades radicalmente distintas.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Representação esquemática
+
+```
+┌─────────────────────────────────┐
+│  MATRIZ (pastagem)              │
+│                                 │
+│   ┌────┐        ┌──────┐       │
+│   │ M1 │========│  M2  │       │
+│   │    │corredor│      │       │
+│   └────┘        └──────┘       │
+│                                 │
+│          ┌───┐                  │
+│          │M3 │                  │
+│          └───┘                  │
+│                                 │
+│   ┌──────────┐                  │
+│   │   M4     │                  │
+│   │          │                  │
+│   └──────────┘                  │
+└─────────────────────────────────┘
+```
+
+M1–M4 = manchas de habitat (ex.: fragmentos florestais)
+
+O modelo é **simples**, **visual** e **operacional**.
+:::
+:::
+:::
+
+---
+
+## A matriz {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### O que define a matriz?
+
+A **matriz** é o elemento que:
+
+- Ocupa a **maior extensão** na paisagem
+- Exerce o **maior controle** sobre a dinâmica
+- Determina o **grau de permeabilidade** ao movimento de organismos
+- Define o **contexto** em que manchas e corredores existem
+
+### Critérios de identificação
+
+1. **Área relativa** — cobre mais de 50% da paisagem?
+2. **Continuidade** — é o elemento mais conectado?
+3. **Controle** — domina os fluxos de matéria e energia?
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Exemplos de matriz
+
+| Paisagem | Matriz provável |
+|----------|----------------|
+| Cerrado fragmentado | Pastagem / soja |
+| Amazônia conservada | Floresta ombrófila |
+| Zona periurbana de FSA | Pastagem / área urbana |
+| Caatinga preservada | Vegetação de caatinga |
+| Área irrigada do São Francisco | Agricultura irrigada |
+
+: {.striped .hover}
+
+### Matriz e qualidade
+
+A **qualidade da matriz** (permeabilidade, hostilidade, recurso) influencia diretamente:
+
+- Sobrevivência de organismos fora das manchas
+- Probabilidade de dispersão entre manchas
+- Serviços ecossistêmicos da paisagem como um todo
+:::
+:::
+:::
+
+---
+
+## Manchas: tipos e origens {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tipos de manchas (Forman, 1995)
+
+| Tipo | Origem | Exemplo |
+|------|--------|---------|
+| **Remanescente** | Sobra da cobertura original | Fragmento florestal em área de pastagem |
+| **De perturbação** | Causada por distúrbio | Área queimada, clareira de tempestade |
+| **De recurso** | Determinada por condições locais | Mata ciliar, vegetação sobre rocha |
+| **Introduzida** | Criada pelo ser humano | Plantação, parque urbano, reflorestamento |
+| **Efêmera** | Temporária, transitória | Alagamento sazonal, floração temporária |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Atributos das manchas
+
+Para analisar uma mancha, avaliamos:
+
+- **Área** ($a$) — manchas maiores sustentam mais espécies
+- **Perímetro** ($p$) — define a extensão da borda
+- **Relação área/perímetro** — manchas compactas (circulares) têm relação mais favorável
+- **Formato** (*shape*) — regular vs. irregular; índice de forma
+- **Distância ao vizinho** — isolamento; distância euclidiana ou de custo
+- **Qualidade do habitat** — estado de conservação interno
+
+> **Biogeografia de ilhas** (MacArthur & Wilson, 1967): manchas maiores e menos isoladas sustentam mais espécies — princípio fundador da ecologia da paisagem.
+:::
+:::
+:::
+
+---
+
+## Efeito de borda {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### O que é efeito de borda?
+
+A **borda** de uma mancha é a zona de transição entre ela e a matriz. Nessa zona:
+
+- Condições ambientais são **alteradas** (mais luz, vento, temperatura, umidade diferente)
+- Espécies generalistas e invasoras **penetram**
+- Espécies de interior **recuam**
+- Processos de degradação **se propagam** (fogo, erosão, poluição)
+
+### Consequências
+
+- Manchas **pequenas** e **alongadas** têm mais borda relativa
+- Manchas **grandes** e **compactas** preservam mais área de interior
+- O efeito de borda pode penetrar de **30 m a > 300 m** dependendo do ecossistema e do efeito avaliado
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Exemplo numérico
+
+Considere dois fragmentos florestais com a mesma área (100 ha):
+
+| Atributo | Fragmento circular | Fragmento alongado |
+|----------|:---:|:---:|
+| Área | 100 ha | 100 ha |
+| Perímetro | ~3,5 km | ~6,0 km |
+| Borda (100 m penetração) | ~30 ha afetados | ~55 ha afetados |
+| **Área-núcleo** | **~70 ha** | **~45 ha** |
+
+: {.striped .hover}
+
+O fragmento alongado perde **mais da metade** de sua área funcional por efeito de borda!
+
+> **Implicação para planejamento:** ao criar ou proteger fragmentos, prefira formas **compactas** com menor relação perímetro/área.
+:::
+:::
+:::
+
+# [4 — CORREDORES]{.section-header}
+
+## Corredores: tipos e funções {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### O que é um corredor?
+
+Faixa **linear** de cobertura que difere da matriz e pode conectar manchas. Tipos:
+
+| Tipo | Exemplo |
+|------|---------|
+| **Ripário** (fluvial) | Mata ciliar ao longo de rios |
+| **De linha** | Cercas vivas, renques de árvores |
+| **De faixa** | Faixa larga de vegetação entre fragmentos |
+| **De estrada** | Vegetação ao longo de rodovias |
+| **Funcional** | Sem estrutura física contínua, mas com uso comprovado por espécies |
+
+: {.striped .hover}
+
+### Largura importa
+
+- Corredores **estreitos** (&lt; 50 m) → conduzem, mas não sustentam fauna de interior
+- Corredores **largos** (&gt; 200 m) → funcionam como habitat e via de deslocamento
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Funções dos corredores
+
+1. **Conduto** — facilita o movimento entre manchas (dispersão, migração)
+2. **Habitat** — sustenta populações residentes (se largo o suficiente)
+3. **Filtro** — permite passagem seletiva (alguns organismos sim, outros não)
+4. **Barreira** — pode impedir movimento (estrada como barreira para anfíbios)
+5. **Sumidouro** — pode atrair organismos que não completam o ciclo de vida (armadilha ecológica)
+
+### A legislação brasileira
+
+O **Código Florestal** (Lei 12.651/2012) define APPs ao longo de cursos d'água — funcionam como **corredores ripários obrigatórios**.
+
+> Matar mata ciliar é destruir o principal corredor ecológico da paisagem brasileira.
+:::
+:::
+:::
+
+# [5 — CONECTIVIDADE]{.section-header}
+
+## Conectividade da paisagem {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Definição
+
+> **Conectividade** é o grau em que a paisagem facilita ou impede o movimento de organismos entre manchas de habitat. — Taylor et al. (1993)
+
+### Dois tipos
+
+| Tipo | O que mede | Dados |
+|------|-----------|-------|
+| **Estrutural** | Arranjo físico (distância, adjacência) | Mapa de cobertura |
+| **Funcional** | Capacidade real de movimento | Mapa + dados da espécie |
+
+: {.striped .hover}
+
+A conectividade **estrutural** é necessária, mas não suficiente — dois fragmentos podem estar próximos, mas separados por uma rodovia intransponível para anfíbios.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Fatores que influenciam a conectividade
+
+1. **Distância entre manchas** — mais perto = mais conectado
+2. **Qualidade da matriz** — permeável ou hostil?
+3. **Presença de corredores** — facilitam dispersão
+4. **Presença de barreiras** — rodovias, rios largos, áreas urbanas
+5. **Capacidade de dispersão da espécie** — aves voam mais que anfíbios
+6. **Stepping stones** — manchas pequenas que servem como "trampolins"
+
+### Implicação para diagnóstico
+
+Uma paisagem **fragmentada** com alta conectividade pode manter populações viáveis. Uma paisagem **com muitos fragmentos** mas baixa conectividade leva à extinção local.
+
+> **Conectividade** pode ser mais importante que **área total** de habitat em muitos cenários.
+:::
+:::
+:::
+
+---
+
+## Fragmentação: o problema central {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### O que é fragmentação?
+
+Processo pelo qual uma área contínua de habitat é dividida em manchas menores, isoladas por uma matriz de uso diferente.
+
+### Consequências ecológicas
+
+1. **Perda de habitat** — redução da área total
+2. **Aumento de borda** — degradação proporcional
+3. **Isolamento** — redução de fluxo gênico
+4. **Efeito de área** — manchas menores sustentam menos espécies
+5. **Perda de espécies de interior** — sensíveis a borda
+6. **Invasão por espécies generalistas** — homogeneização
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Fragmentação no Brasil
+
+| Bioma | Remanescente (%) | Fragmentação |
+|-------|:---:|:---:|
+| Mata Atlântica | ~12,4% | Muito alta |
+| Cerrado | ~50% | Alta e crescente |
+| Caatinga | ~50% | Alta (pouco monitorada) |
+| Amazônia | ~80% | Em expansão (arco do desmatamento) |
+| Pampa | ~36% | Alta (conversão agrícola) |
+| Pantanal | ~83% | Moderada (mas fogo crescente) |
+
+: {.striped .hover}
+
+> A **Mata Atlântica** é o caso mais extremo: poucos fragmentos grandes, milhares de fragmentos pequenos e isolados. A Caatinga caminha para cenário semelhante.
+:::
+:::
+:::
+
+# [6 — IMPLICAÇÕES PARA DIAGNÓSTICO]{.section-header}
+
+## Da ecologia da paisagem ao planejamento {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Princípios para o diagnóstico territorial
+
+A ecologia da paisagem fornece princípios operacionais:
+
+1. **Manchas grandes** são insubstituíveis — preservar
+2. **Conectividade** é essencial — manter ou restaurar corredores
+3. **Stepping stones** compensam parcialmente a falta de corredores contínuos
+4. **Qualidade da matriz** pode ser melhorada — agrofloresta, cercas vivas
+5. **Efeito de borda** deve ser minimizado — formas compactas, zonas-tampão
+6. **Heterogeneidade** paisagística sustenta maior biodiversidade que homogeneidade
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Aplicação no dossiê
+
+Ao elaborar o dossiê da paisagem, vocês deverão:
+
+- **Identificar** a matriz, as manchas e os corredores da área de estudo
+- **Avaliar** tamanho, forma e isolamento das manchas
+- **Diagnosticar** conectividade (estrutural, ao menos)
+- **Identificar** barreiras e gargalos
+- **Propor** diretrizes baseadas nos princípios da ecologia da paisagem
+
+Essas análises serão aprofundadas nas aulas de **métricas** (Aulas 17-18) e **planejamento** (Aulas 21-22).
+:::
+:::
+:::
+
+# [7 — ATIVIDADE PRÁTICA]{.section-header}
+
+## Exercício: identificação no mosaico {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+### Proposta (em duplas, 25 min)
+
+Será projetada uma imagem de satélite (Google Earth ou MapBiomas) de uma **paisagem fragmentada** do entorno de Feira de Santana.
+
+**Tarefa:**
+
+1. **Identifique a matriz** — qual cobertura domina?
+2. **Delimite pelo menos 5 manchas** — qual a origem provável de cada uma? (remanescente, de perturbação, introduzida, de recurso)
+3. **Identifique pelo menos 2 corredores** (ou a ausência deles)
+4. **Avalie qualitativamente:**
+   - As manchas são grandes ou pequenas?
+   - São compactas ou alongadas?
+   - Estão próximas ou isoladas?
+   - A paisagem tem alta ou baixa conectividade aparente?
+5. **Proponha** uma intervenção para aumentar a conectividade
+
+### Socialização (15 min)
+:::
+
+::: {.column width="40%"}
+::: {.info-box}
+### Critérios de avaliação do exercício
+
+| Critério | Peso |
+|----------|:---:|
+| Identificação correta da matriz | 20% |
+| Classificação das manchas | 20% |
+| Identificação de corredores | 20% |
+| Avaliação qualitativa | 20% |
+| Proposta de intervenção | 20% |
+
+: {.striped .hover}
+
+> Este é um exercício de **diagnóstico visual** — será refinado com dados quantitativos nas aulas futuras.
+:::
+:::
+:::
+
+---
+
+## Para a próxima aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Leitura recomendada
+
+- TURNER, M. G.; GARDNER, R. H. (2015). **Landscape Ecology in Theory and Practice**, Cap. 2 (*Causes of landscape pattern*).
+
+### Atividade preparatória
+
+Observar (mentalmente ou com registros) a paisagem no trajeto casa–universidade:
+
+- Que **escalas** de padrão você percebe?
+- O que muda quando você "dá zoom" (de longe para perto)?
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Na próxima aula (Aula 05)
+
+Entraremos em **Escalas espaço-temporais**:
+
+- Escala geográfica vs. escala ecológica
+- Hierarquias e níveis de organização
+- Padrão e processo: o que vemos depende da escala
+- Multiescalaridade na análise da paisagem
+
+E na **Aula 06**:
+
+- Fluxos, permeabilidade e conectividade em detalhe
+- Fragmentação, bordas e resiliência
+- Vulnerabilidade socioambiental
+:::
+:::
+:::
+
+---
+
+## Síntese da Aula 04 {.smaller-text}
+
+::: {.info-box}
+### O que vimos hoje
+
+1. **Metzger (2001)** — ecologia da paisagem geográfica vs. ecológica; ambas complementares
+2. **Modelo matriz–mancha–corredor** (Forman & Godron) — base operacional para leitura do mosaico
+3. **Matriz** — elemento dominante; sua qualidade determina permeabilidade
+4. **Manchas** — tipos (remanescente, perturbação, recurso, introduzida); atributos (área, forma, isolamento)
+5. **Efeito de borda** — degradação proporcional ao perímetro; manchas compactas preservam mais área-núcleo
+6. **Corredores** — tipos e funções (conduto, habitat, filtro, barreira); importância legal (APPs)
+7. **Conectividade** — estrutural vs. funcional; stepping stones; barreiras
+8. **Fragmentação** — processo central; consequências ecológicas; situação dos biomas brasileiros
+9. **Princípios para diagnóstico** — manchas grandes, conectividade, heterogeneidade
+:::
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+
+Análise da Paisagem — Aula 04
+:::

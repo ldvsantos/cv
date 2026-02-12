@@ -1,0 +1,220 @@
+﻿---
+title: "Extensão e Sociologia Rural"
+subtitle: "Organização Social da Agricultura Familiar<br>Lógicas Produtivas e Estratégias"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Federal de Sergipe (UFS)"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UFS — Extensão e Sociologia Rural | Aula 02 — Organização Social da Agricultura Familiar"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos Principais
+
+- [1]{.circle} Campesinato e Agricultura Familiar
+- [2]{.circle} Definição Legal — Lei 11.326/06
+- [3]{.circle} Lógicas Produtivas
+- [4]{.circle} Pluriatividade Rural
+- [5]{.circle} PRONAF e Estratégias Produtivas
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo Central**
+
+Analisar a organização social da agricultura familiar brasileira, suas lógicas produtivas, estratégias de pluriatividade e políticas de apoio.
+:::
+:::
+:::
+
+---
+
+## CAMPESINATO E AGRICULTURA FAMILIAR {.smaller-text}
+
+![Agricultura familiar em assentamento, Sumaré/SP (CC-BY-SA 4.0, T. Almeida Cardoso/Wikimedia)](img/agricultura_familiar_assentamento.jpg){width="35%"}
+
+O conceito de agricultura familiar e campesinato foi formado pela atuação de **três conjuntos de atores**:
+
+1. **Grupos sociais** — MST, movimento camponês, CONTAG
+2. **Acadêmicos** — Chayanov, Wanderley, Schneider
+3. **Agentes públicos** — governo, terceiro setor
+
+**Alexander Chayanov** entendia o campesinato como uma forma de organização econômica baseada nas **unidades produtivas familiares**, onde o produtor é simultaneamente empresário e trabalhador em constante **auto-exploração**.
+
+
+---
+
+## CAMPESINATO vs. AGRICULTURA FAMILIAR {.smaller-text}
+
+**Maria Nazareth Wanderley (2003):**
+
+A agricultura familiar e o campesinato no Brasil apresentam tanto **pontos de ruptura** quanto **elementos de continuidade**.
+
+**Sergio Schneider:**
+
+A agricultura familiar combina relações internas e externas de produção, conectando a unidade familiar com **circuitos mais amplos de capital**.
+
+> *"O camponês é ao mesmo tempo patrão e empregado (auto-exploração) que luta pela sobrevivência."*
+
+
+---
+
+## DEFINIÇÃO LEGAL — LEI 11.326/06 {.smaller-text}
+
+A Lei 11.326/06 (Brasil, 2006) define que uma unidade rural é de **agricultura familiar** quando:
+
+- A **gestão** é feita por indivíduos com laços de sangue ou casamento
+- A maior parte do **trabalho** é fornecida pela família
+- Percentual mínimo de **renda** originada da propriedade rural
+- A **propriedade** dos meios de produção pertence à família
+- Não ultrapassa **quatro módulos fiscais**
+
+Inclui também: silvicultura, extrativismo, pesca artesanal e **povos originários**.
+
+
+---
+
+## CARACTERÍSTICAS FUNDAMENTAIS {.smaller-text}
+
+A agricultura familiar:
+
+- Emerge de uma **ligação socioafetiva e consanguínea**
+- **Não se limita** ao autoconsumo (Lei de Chayanov)
+- **Não é** necessariamente aversa ao risco (Lei de Lipton)
+- A **pluriatividade** é evidente na sobrevivência do sistema
+- É altamente **integrada ao mercado** (Schneider, 2003)
+- Capaz de incorporar **avanços técnicos** e responder a políticas governamentais
+
+
+---
+
+## LÓGICAS PRODUTIVAS {.smaller-text}
+
+A agricultura familiar traz preceitos de produção **menos tecnificada** que os agroindustriais:
+
+- Produtos destinados ao **autoconsumo** e à **comercialização**
+- Maior proximidade com o meio urbano (Projeto Rurbano — Graziano da Silva)
+- Necessidade de **estratégias de pluriatividade** para sobrevivência econômica
+
+As estratégias produtivas são influenciadas por:
+
+- Acesso à informação e tecnologias
+- Políticas públicas
+- Sistemas de crédito
+
+
+---
+
+## PLURIATIVIDADE RURAL {.smaller-text}
+
+**Definição (Schneider, 2003):**
+
+Combinação de uma ou mais formas de **renda ou inserção profissional** dos membros de uma mesma família para manutenção econômica do seio familiar.
+
+Membros da família optam pelo exercício de **atividades não agrícolas**, mantendo:
+
+- Moradia no campo
+- Ligação produtiva com a agricultura
+- Vida no espaço rural
+
+
+---
+
+## TIPOS DE PLURIATIVIDADE {.smaller-text}
+
+| Tipo | Descrição |
+| --- | --- |
+| **Intersetorial** | Articulação agricultura + outros setores; emprego paralelo não agrícola |
+| **De base agrária** | Atividades agrícolas e não agrícolas (prestação de serviços, comercialização) |
+| **Sazonal** | Atividades não agrícolas esporádicas (comércio informal, turismo) |
+| **Para-agrícola** | Processamento e comercialização de produtos agrícolas |
+| **Tradicional** | Múltiplas ocupações com foco no autoconsumo; fraca relação mercantil |
+
+*(Schneider, 2015)*
+
+
+---
+
+## ESTRATÉGIAS PRODUTIVAS {.smaller-text}
+
+As estratégias frequentemente estão alinhadas com a **agroecologia**:
+
+- **Policultivo** e diversificação de culturas
+- **Sistemas agroflorestais**
+- **Rotação de culturas**
+
+Eleva a **resiliência** dos sistemas agrícolas e contribui para a preservação da **biodiversidade**.
+
+Outra estratégia: apoio governamental via **créditos e seguros agrícolas**.
+
+
+---
+
+## PRONAF {.smaller-text}
+
+**Programa Nacional de Fortalecimento da Agricultura Familiar**
+
+Criado pelo Decreto Lei 1.946/96 e fortalecido pela Lei 11.326/06.
+
+**Objetivo:** Subvencionar a produção agrícola de empreendimentos familiares.
+
+**Subprogramas:**
+
+- PRONAF Mulher
+- PRONAF Jovem
+- PRONAF Agroecologia
+- PRONAF ABC+
+- PRONAF Bioeconomia
+- PRONAF Mais Alimentos
+
+
+---
+
+## CONCLUSÃO {.smaller-text}
+
+A agricultura familiar no Brasil é uma entidade **complexa e multifacetada**:
+
+- Abrange variados **sistemas produtivos**, estratégias e práticas
+- Não pode ser reduzida a uma **categoria simplista**
+- Posiciona-se como **pilar crucial** para segurança alimentar e sustentabilidade ambiental
+- Encontra-se na interseção de forças sociais, culturais e políticas
+
+
+---
+
+## REFERÊNCIAS {.smaller-text}
+
+- Brasil. Decreto Lei 1.946/96 — PRONAF (1996)
+- Brasil. Lei 11.326/06 — Agricultura Familiar (2006)
+- Brumer, A. et al. A exploração familiar no Brasil (1993)
+- INCRA/FAO. Perfil da agricultura familiar no Brasil (1996)
+- Schneider, S. A diversidade da agricultura familiar (2006)
+- Schneider, S. Teoria social, agricultura familiar e pluriatividade (2003)
+- Sen, A. Desenvolvimento como liberdade (2003)
+- Wanderley, M. N. B. Agricultura familiar e campesinato (2003)
+
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Federal de Sergipe (UFS)
+:::

@@ -1,0 +1,411 @@
+﻿---
+title: "Análise da Paisagem"
+subtitle: "Aula 05 — Escala, Padrão e Processo na Dinâmica da Paisagem<br>Curso de Geografia"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026-03-11"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise da Paisagem | Aula 05"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Escala: conceito e tipos
+- [2]{.circle} Escala geográfica vs. escala ecológica
+- [3]{.circle} Hierarquias e níveis de organização
+- [4]{.circle} Padrão e processo: relação bidirecional
+- [5]{.circle} Multiescalaridade na análise da paisagem
+- [6]{.circle} Implicações práticas: escolher a escala certa
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Compreender o papel da **escala** na determinação dos padrões observáveis e dos processos atuantes na paisagem, e como a análise **multiescalar** é fundamental para diagnósticos territoriais consistentes.
+:::
+:::
+:::
+
+# [1 — ESCALA: CONCEITO E TIPOS]{.section-header}
+
+## O que é escala? {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Escala na cartografia
+
+- Relação entre a **dimensão representada** e a **dimensão real**
+- Escala 1:50.000 → 1 cm no mapa = 500 m no terreno
+- **Escala grande** (1:10.000) → mais detalhe, área menor
+- **Escala pequena** (1:1.000.000) → menos detalhe, área maior
+
+### Escala na ecologia da paisagem
+
+- **Extensão** (*extent*) — tamanho total da área estudada
+- **Grão** (*grain*) — menor unidade de resolução (pixel, polígono mínimo)
+- **Nível** (*level*) — posição na hierarquia de organização
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Extensão vs. grão
+
+| Parâmetro | Definição | Exemplo |
+|-----------|-----------|---------|
+| **Extensão** | Área total analisada | Bacia do Paraguaçu (55.000 km²) |
+| **Grão** | Resolução mínima | Pixel de 30 m (Landsat) |
+
+: {.striped .hover}
+
+A **mesma paisagem** vista com diferentes combinações de extensão e grão revela padrões **completamente diferentes**.
+
+- **Extensão grande + grão grosso** → visão panorâmica (domínios, biomas)
+- **Extensão pequena + grão fino** → visão detalhada (geótopos, microsítios)
+
+> *"A escala não é apenas uma escolha técnica — é uma escolha epistemológica. O que vemos depende de onde e como olhamos."*
+:::
+:::
+:::
+
+---
+
+## O problema da escala na análise da paisagem {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Dependência escalar
+
+Muitos padrões e processos são **escala-dependentes**:
+
+- **Fragmentação** visível em escala regional pode não ser percebida em escala continental
+- **Heterogeneidade** de um campo aparece homogênea em imagem de satélite com pixel de 1 km
+- **Processos** atuam em escalas específicas: erosão laminar (m²) ≠ sedimentação de bacia (km²)
+
+### Consequência prática
+
+Se a escala for inadequada:
+
+- Padrões importantes ficam **invisíveis**
+- Processos-chave não são **captados**
+- Diagnósticos ficam **incompletos ou enviesados**
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Exemplo: fragmentação na Caatinga
+
+| Escala | O que se vê |
+|--------|------------|
+| **1:5.000.000** (Brasil) | Domínio contínuo de caatinga |
+| **1:500.000** (regional) | Mosaico de caatinga + pastagem + agricultura |
+| **1:50.000** (local) | Fragmentos isolados, bordas degradadas, estradas |
+| **1:5.000** (detalhe) | Micro-heterogeneidade: rochas, clareiras, invasoras |
+
+: {.striped .hover}
+
+A "Caatinga" parece **contínua** na escala do Brasil, mas é **altamente fragmentada** na escala local. O diagnóstico muda radicalmente conforme a escala.
+:::
+:::
+:::
+
+# [2 — ESCALA GEOGRÁFICA VS. ECOLÓGICA]{.section-header}
+
+## Duas dimensões da escala {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Escala geográfica (espacial)
+
+Define o **recorte territorial**:
+
+- Escala continental → global
+- Escala regional → estadual
+- Escala local → municipal / bacia
+- Escala de sítio → parcela, transecto
+
+### Escala temporal
+
+Define o **recorte de tempo**:
+
+- Escala geológica → milhões de anos (formação do relevo)
+- Escala climática → milhares de anos (glaciações)
+- Escala histórica → séculos (colonização, uso da terra)
+- Escala ecológica → anos a décadas (sucessão, fragmentação)
+- Escala instantânea → dias a meses (perturbação, evento)
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Escala ecológica (do organismo)
+
+Cada espécie ou grupo funcional percebe a paisagem em escala diferente:
+
+| Organismo | Escala de percepção |
+|-----------|:---:|
+| Bactéria do solo | cm |
+| Inseto polinizador | 10–100 m |
+| Anfíbio | 100 m – 1 km |
+| Ave florestal pequena | 1–5 km |
+| Grande mamífero | 5–50 km |
+| Ave migratória | 100–10.000 km |
+
+: {.striped .hover}
+
+> Uma paisagem que é "conectada" para uma onça pode ser "completamente isolada" para um sapo. A escala ecológica depende do **organismo focal**.
+:::
+:::
+:::
+
+# [3 — HIERARQUIAS E NÍVEIS DE ORGANIZAÇÃO]{.section-header}
+
+## Hierarquia paisagística {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Teoria da hierarquia (Allen & Starr, 1982)
+
+Sistemas complexos se organizam em **níveis hierárquicos**:
+
+- Cada nível tem **estrutura e dinâmica próprias**
+- Níveis superiores **restringem** (condicionam) os inferiores
+- Níveis inferiores **alimentam** (compõem) os superiores
+- O observador escolhe o **nível focal** da análise
+
+### Na ecologia da paisagem
+
+| Nível | Escala típica | Dinâmica |
+|-------|:---:|----------|
+| Bioma | $10^5$–$10^6$ km² | Secular–geológica |
+| Paisagem | $10^1$–$10^4$ km² | Decenal–centenária |
+| Ecossistema | $10^{-1}$–$10^1$ km² | Anual–decenal |
+| Comunidade | $10^{-2}$–$10^{-1}$ km² | Sazonal–anual |
+| Organismo | m² | Instantâneo–anual |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Implicações práticas
+
+1. **Nível focal:** é onde concentramos a análise (ex.: paisagem de uma bacia)
+2. **Nível superior (contexto):** restrições que vêm "de cima" (ex.: clima regional, política estadual)
+3. **Nível inferior (mecanismo):** processos que geram os padrões no nível focal (ex.: erosão em sulcos, dispersão de sementes)
+
+Para um bom diagnóstico da paisagem, é preciso considerar **pelo menos três níveis**:
+
+- O nível **acima** (por que aquela paisagem existe ali?)
+- O nível **focal** (como ela se organiza?)
+- O nível **abaixo** (que processos a explicam?)
+
+> *"Nenhum nível sozinho conta a história completa."*
+:::
+:::
+:::
+
+# [4 — PADRÃO E PROCESSO]{.section-header}
+
+## Padrão: o que vemos {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Padrão espacial
+
+O **padrão** é a disposição espacial dos elementos na paisagem em um dado momento:
+
+- **Homogêneo** — cobertura uniforme (monocultura, floresta contínua)
+- **Fragmentado** — manchas isoladas em uma matriz diferente
+- **Mosaico** — mescla de coberturas sem dominância clara
+- **Gradiente** — mudança contínua de uma cobertura a outra
+- **Aninhado** — padrões dentro de padrões (hierarquia)
+
+### Como descrever padrões?
+
+- **Mapas temáticos** — classificação de uso/cobertura
+- **Métricas de paisagem** — quantificação de heterogeneidade, fragmentação, forma
+- **Perfis** — transectos que mostram a variação espacial
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+### Processo: o que explica
+
+O **processo** é o mecanismo que gera, mantém ou modifica o padrão:
+
+| Tipo de processo | Exemplos |
+|-----------------|---------|
+| **Geomorfológico** | Erosão, sedimentação, tectonismo |
+| **Climático** | Precipitação, seca, ciclones |
+| **Ecológico** | Sucessão, dispersão, competição |
+| **Antrópico** | Desmatamento, urbanização, manejo |
+| **Hidrológico** | Escoamento, inundação, recarga |
+
+: {.striped .hover}
+
+### Relação bidirecional
+
+O padrão **resulta de** processos, mas também **condiciona** novos processos.
+
+Exemplo: fragmentação (padrão) → isolamento de populações (processo) → extinção local (novo padrão sem a espécie).
+:::
+:::
+:::
+
+---
+
+## Padrão → processo → padrão {.smaller-text}
+
+::: {.columns}
+::: {.column width="100%"}
+
+### Ciclo retroalimentado
+
+```
+    PADRÃO                    PROCESSO                    NOVO PADRÃO
+ (mosaico atual)     ──→    (transformação)      ──→    (mosaico futuro)
+                                  ↑
+                                  │
+                              Perturbação
+                          (fogo, desmatamento,
+                           política pública)
+```
+
+### Exemplo completo
+
+| Etapa | O que acontece |
+|-------|---------------|
+| **Padrão inicial** | Caatinga contínua com vegetação arbórea densa |
+| **Processo 1** | Desmatamento seletivo para pecuária extensiva |
+| **Novo padrão** | Mosaico de manchas de caatinga + pastagem |
+| **Processo 2** | Fragmentação → isolamento → perda de polinizadores |
+| **Resultante** | Redução de frutificação nas manchas → degradação do interior |
+| **Processo 3** | Erosão acelerada nas pastagens em encosta |
+| **Padrão futuro** | Solo exposto, voçorocas, manchas de caatinga empobrecidas |
+
+: {.striped .hover}
+
+> A análise da paisagem precisa captar **tanto padrões quanto processos** — e suas retroalimentações.
+:::
+:::
+
+# [5 — MULTIESCALARIDADE]{.section-header}
+
+## A análise multiescalar {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### O que é análise multiescalar?
+
+Examinar a paisagem em **mais de uma escala** simultaneamente ou sequencialmente para:
+
+1. Identificar **padrões diferentes** em cada escala
+2. Compreender **processos** que atuam em escalas distintas
+3. Evitar **diagnósticos enviesados** por escolha de escala inadequada
+
+### Abordagem "zoom in / zoom out"
+
+- **Zoom out** (escala pequena) → contexto regional, bioma, clima
+- **Nível focal** (escala intermediária) → mosaico, unidades de paisagem
+- **Zoom in** (escala grande) → processos locais, microsítios, evidências de campo
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+### Exemplo: análise multiescalar de uma bacia
+
+| Escala | O que se analisa | Produto |
+|--------|-----------------|---------|
+| **Regional** | Bioma, clima, geologia, posição na bacia | Mapa de localização e contexto |
+| **Paisagem** | Uso/cobertura, fragmentação, unidades de paisagem | Mapa de uso e unidades |
+| **Local** | Processos erosivos, vegetação, conflitos | Registros de campo, fotos |
+| **Sítio** | Solo, água, biodiversidade pontual | Amostras, medições |
+
+: {.striped .hover}
+
+A análise é mais **robusta** quando integra evidências de múltiplas escalas.
+
+> *"O que parece um problema local pode ter raízes regionais; o que parece regional pode ter soluções locais."*
+:::
+:::
+:::
+
+---
+
+## Atividade: análise multiescalar de uma paisagem {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+### Proposta (individual, 20 min)
+
+Escolha um **lugar que você conhece bem** (seu bairro, zona rural de origem, local de estágio) e faça uma análise em três escalas:
+
+| Escala | Descreva |
+|--------|----------|
+| **Zoom out** (contexto) | Em que bioma/domínio está? Clima? Relevo regional? |
+| **Nível focal** (paisagem) | Qual o mosaico? Matriz? Manchas? Corredores? |
+| **Zoom in** (local) | Que processos você observa no terreno? Erosão? Invasoras? Degradação? |
+
+: {.striped .hover}
+
+**Responda:** O diagnóstico muda quando você considera as três escalas juntas vs. apenas uma?
+
+### Socialização (15 min)
+:::
+
+::: {.column width="40%"}
+::: {.info-box}
+### Objetivo
+
+- Praticar a **mudança de escala** como ferramenta analítica
+- Perceber que **padrões e processos** se revelam de forma diferente em cada escala
+- Preparar o olhar para a **cartografia temática** (próximas aulas)
+:::
+:::
+:::
+
+---
+
+## Síntese da Aula 05 {.smaller-text}
+
+::: {.info-box}
+### O que vimos hoje
+
+1. **Escala**: extensão × grão; escala grande vs. pequena
+2. **Dependência escalar**: padrões e processos mudam conforme a escala
+3. **Escala geográfica** (recorte territorial) vs. **escala ecológica** (percepção do organismo)
+4. **Escala temporal**: geológica → climática → histórica → ecológica → instantânea
+5. **Hierarquia paisagística**: bioma → paisagem → ecossistema → comunidade; 3 níveis simultâneos
+6. **Padrão e processo**: relação bidirecional e retroalimentada
+7. **Multiescalaridade**: diagnóstico robusto exige múltiplas escalas
+8. **Implicação prática**: a escolha da escala condiciona o diagnóstico
+:::
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+
+Análise da Paisagem — Aula 05
+:::

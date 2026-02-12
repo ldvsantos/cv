@@ -1,0 +1,341 @@
+﻿---
+title: "Testes de Qui-Quadrado"
+subtitle: "Teste de Independência e Aderência<br>Análise de Dados Ambientais"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise de Dados Ambientais | Testes de Qui-Quadrado"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## {.smaller-text}
+
+TESTES DE QUI-QUADRADO
+
+
+---
+
+## TESTE QUI-QUADRADO {.smaller-text}
+
+**Definição**
+
+Procedimento de análise de dados que trabalha com a prevalência e associação entre categorias de uma ou mais variáveis
+
+Exemplos de variáveis categóricas:
+
+  - **Sexo**** **(homem ou mulher)
+  - **Gravidez**** **(sim ou não)
+  - **Ter**** ****religião **(sim ou não)
+  - **Fumar**** **(sim ou não)
+  - **Depender**** ****financeiramente**** ****de**** ****alguém**** **(sim ou não)
+  - **Estado**** ****civil**** **(solteiro, união estável, casado, divorciado, viúvo)
+
+---
+
+## TESTE QUI-QUADRADO (cont.) {.smaller-text}
+
+**Tipos de qui-quadrado**
+
+Teste de aderência
+
+Teste de independência
+
+
+---
+
+## TESTE QUI-QUADRADO (cont.) {.smaller-text}
+
+**Tipos de qui-quadrado**
+
+Teste de aderência
+
+Teste de independência
+
+
+---
+
+## {.smaller-text}
+
+QUI-QUADRADO
+
+**Independência**
+
+
+---
+
+## {.smaller-text}
+
+Teste de independência
+
+Pode ser usado para verificar se há associação (relacionamento) entre duas variáveis categóricas
+
+  - Ex: A prevalência de ansiedade em crianças está relacionada com o estado civil dos pais (casados ou divorciados)?
+Qui-quadrado 2x2
+
+
+| Conjugalidade dos pais | Crianças Ansiosas | Crianças Não-Ansiosas |
+| --- | --- | --- |
+| Divorciados | 15 | 35 |
+| Casados | 22 | 43 |
+
+
+---
+
+## {.smaller-text}
+
+Teste de independência
+
+As variáveis podem ter número variado de categorias
+
+2x2, 2x3, 3x4
+
+Etc...
+
+
+---
+
+## {.smaller-text}
+
+**Pressupostos**
+
+Exclusivo para variáveis nominais e categóricas;
+
+Observações independentes;
+
+Não se aplica a 20% das categorias tiverem valores esperados < 5;
+
+Não pode haver categorias zeradas.
+
+(Field, 2018; Tabachnick and fidell 2001)
+
+
+---
+
+## {.smaller-text}
+
+Graus de liberdade
+
+Gl = *k** *– 1; gl = 1;
+
+Onde k = número de grupos
+
+Gl = *k** *– 1; gl = 1;
+
+Onde k = número de grupos
+
+Gl = (g1)*(gl2) = 1x1
+
+= 1
+
+
+| Sexo |
+| --- |
+| Homem |
+| Mulher |
+
+
+| Compra Impulsiva |
+| --- |
+| Sim |
+| Não |
+
+
+---
+
+## {.smaller-text}
+
+**Tamanho**** ****de**** ****efeito**
+
+  - **V**** ****de**** ****Cramer**
+    - Para qui-quadrado com mais de duas (2) categorias
+  - **Phi**
+    - Tamanho de efeito para 2x2
+  - > 0,1 – efeito pequeno;
+  - > 0,3 - efeito moderado
+  - > 0,5 – efeito alto
+**Odds-****ratio**
+
+  - Razão de chance que calcula a probabilidade de um sujeito pertencer a um grupo e não a outro.
+
+---
+
+## {.smaller-text}
+
+QUI-QUADRADO
+
+**Testes de independência (4x2)**
+
+
+---
+
+## {.smaller-text}
+
+Graus de liberdade
+
+Gl = 1
+
+Gl = 3
+
+Gl = 3
+
+
+| Ansiedade |
+| --- |
+| Não-ansiosos |
+| Ansiosos |
+
+
+| Estilos Parentais |
+| --- |
+| Autoritário |
+| Autoritativo |
+| Negligente |
+| Indulgente |
+
+
+---
+
+## {.smaller-text}
+
+QUI-QUADRADO
+
+**Aderência**
+
+
+---
+
+## {.smaller-text}
+
+**Teste de aderência**
+
+Usado para verificar se há diferenças estatisticamente significativas na prevalência entre categorias em uma única variável.
+
+Existe diferença no estado civil de pessoas que estão desempregadas?
+
+
+| Solteiras | Em união estável | Casadas | Divorciadas | Viúvas |
+| --- | --- | --- | --- | --- |
+| 10 | 15 | 35 | 21 | 19 |
+
+
+---
+
+## TESTE DE QUI-QUADRADO {.smaller-text}
+
+**Teste de aderência**
+
+Existe diferença no estado civil de pessoas que estão desempregadas?
+
+***χ******2****** ****=*
+
+ADERÊNCIA
+
+
+---
+
+## TESTE DE QUI-QUADRADO (cont.) {.smaller-text}
+
+***χ******2***
+
+*=*
+
+χ2 = (30-33)2 +	(24-33)2 + (45-33)2
+
+33	33	33
+
+χ2 = 0,27 + 2,45 + 4,36 =
+
+7,09
+
+*E** **o** **que** **isso** significa?*
+
+*Depende** **dos** **graus** **de** liberdade*
+
+ADERÊNCIA
+
+
+|  | Teatro | Bares | Restaurantes |
+| --- | --- | --- | --- |
+| Observado | 30 | 24 | 45 |
+| Esperado (99/3) | 33 | 33 | 33 |
+
+
+---
+
+## {.smaller-text}
+
+**Teste**** ****de**** ****aderência**
+
+Toda significância estatística depende do número de graus de liberdade (*degrees **of** **freedom*) do modelo (φ)
+
+Gl = K - 1, onde K = número de categorias; 3 categorias de Preferência, gl = 2;
+
+*A** **distribuição** **(*x2*[gl** **=** **2]** **=** **7,09)** **é** **estatisticamente** **significativa?** **Vamos** **observar **os** **valores** **de** **referência** **na** **tabela** **normativa**.*
+
+
+---
+
+## {.smaller-text}
+
+QUI-QUADRADO LOGITUDINAL
+
+**Teste de ****McNemar**** e Q de Cochran**
+
+
+---
+
+## TESTE DE QUI-QUADRADO (cont.) {.smaller-text}
+
+**	****Buscamos**** ****avaliar**** ****se**** ****a**** ****proporção**** ****de**** ****classificação**** ****muda**** ****através**** ****do ****tempo**
+
+  - Teste de McNemar (2 tempos)
+  - Q de Cochran (3 ou + tempos)
+Pré-Teste
+
+Pós-Teste
+
+Follow-up
+
+LONGITUDINAL
+
+
+| Ansiedade |
+| --- |
+| Não-ansiosos |
+| Ansiosos |
+
+
+| Ansiedade |
+| --- |
+| Não-ansiosos |
+| Ansiosos |
+
+
+| Ansiedade |
+| --- |
+| Não-ansiosos |
+| Ansiosos |
+
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::
+

@@ -1,0 +1,1212 @@
+﻿---
+title: "Modelos de Associação e Dependência"
+subtitle: "Relações entre Variáveis<br>Análise de Dados Ambientais"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise de Dados Ambientais | Modelos de Associação e Dependência"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+# [DISTRIBUIÇÃO NORMAL]{.section-header}
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+O que é
+
+- A Distribuição Normal é uma das distribuições de
+probabilidade mais utilizadas para modelar fenômenos naturais.
+
+- Isso se deve ao fato de que um grande número de fenômenos naturais apresenta esse tipo de distribuição.
+
+---
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+O que é
+
+- A curva normal representa a forma como diferentes valores se agrupam em torno de um determinado ponto.
+- A forma como diferentes pessoas se agrupam em torno de determinada
+pontuação ou escore, para uma determinada variável.
+
+
+---
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+O que é
+
+- A curva normal é definida por meio de duas informações: média e desvio-padrão
+- Altura de Homens no Brasil
+- Média: 170cm
+- Desvio-Padrão: 5,72cm
+
+---
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+Média
+
+Média = 613 = 76,62
+
+8
+
+
+| 55 | 64 | 72 | 80 | 70 | 100 | 98 | 74 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+
+
+---
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+Desvio-Padrão
+
+Estimativa de variabilidade em torno da média
+
+Média
+
+76cm
+
+244 = 15,64
+
+7
+
+
+| 55 | 64 | 70 | 72 | 74 | 80 | 98 | 100 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+
+
+---
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+A curva normal é definida por meio de duas informações: média e desvio-padrão
+
+Média = 170; DP = 5,72
+
+Frequência (*n)*
+
++-1 DP (68.3%) = [164,28– 175,72]
+
++-2 DP (95,4%) = [158,56– 181,44]
+
++-3 DP (99,7%) = [152,84 – 187,16]
+
+
+---
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+DESVIOS DE DISTRIBUIÇÃO DE NORMALIDADE
+
+Renda no Brasil
+
+Mais pobres
+
+Mais ricos
+
+
+---
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+DESVIOS DE DISTRIBUIÇÃO DE NORMALIDADE
+
+DESVIO POR ASSIMETRIA
+
+
+---
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+DESVIOS DE DISTRIBUIÇÃO DE NORMALIDADE
+
+DESVIO POR CURTOSE
+
+**Leptocúrtica**: Dados muito concentrados junto à media;
+
+**Mesocúrtica**: Distribuição normal
+
+**Platicúrtica**: Dados muito dispersos; muitas pessoas muito afastadas da média.
+
+
+---
+
+## {.smaller-text}
+
+TESTANDO A DISTRIBUIÇÃO NORMAL NO JASP
+
+Luiz Diego Vidal - vidal.center@academico.ufs.br - CPF: 033.281.915-93
+
+
+---
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+COMO SABER SE SEUS DADOS SÃO NORMALMENTE DISTRIBUÍDOS?
+
+**Critérios ****descritivos**
+
+Transforme o escore da Assimetria e Curtose em escore Z
+
+Calcule: Assimetria e Curtose / Erro padrão
+
+Valor maior que |1.96| é significativo *p** *< .05
+
+Valor acima que |2.58| é significativo *p** *< .01
+
+Valor acima que |3.29| é significativo *p** *< .001
+
+
+---
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+COMO SABER SE SEUS DADOS SÃO NORMALMENTE DISTRIBUÍDOS?
+
+**Critérios**** ****estatísticos**** ****(**Testes de significância)
+
+  - Kolmogorov-Smirnov e Shapiro-Wilk
+  - Hipotese nula: Dados não são normalmente distribuídos
+Espera-se rejeitar a hipótese nula → Dados são normalmente distribuídos
+
+  - Nos testes de K-S e S-W, espera-se que *p** *> 0,05 (maior que) para acatar a distribuição de
+normalidade dos dados.
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO {.smaller-text}
+
+Investigando a associação entre duas variáveis
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+Definição
+
+- Técnica de análise de dados que avalia a associação entre duas ou mais variáveis
+- A princípio, a natureza dessas variáveis devem ser métricas ou ordinais (ou seja, variáveis crescentes, tais como peso, altura, nível de felicidade, valores de glicemia, etc)
+- Existem casos especiais de correlação com dados categóricos*
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+Exemplo:
+
+Qual a relação entre o estresse no trabalho e o número de cigarros
+
+fumados em uma amostra de fumantes?
+
+Três características da correlação:
+
+Significância estatística (verificar se p < 0,05)
+
+Direção (positiva ou negativa)
+
+Grau (força: fraca, média e forte)
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIREÇÃO:
+
+**Positiva:**** **Valores altos em uma variável (x) são associados a valores altos na outra (y). Valores baixos de x tendem a ser associados a valores baixos de y
+
+Ex.: Idade da criança e capacidade de montar lego
+
+**Negativa:**** **valores altos de uma variável (x) são associados a valores baixos da outra variável (y)
+
+Ex.: Depressão e motivação para trabalhar
+
+**Nula:**** **Não existe um relacionamento
+
+Ex.: Altura e número de relacionamentos amorosos
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIREÇÃO:
+
+Correlações
+
+Positivas
+
+Correlação Nula
+
+Correlações Negativas
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIREÇÃO:
+
+Correlações
+
+Positivas
+
+Correlação Nula
+
+Correlações Negativas
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIREÇÃO:
+
+Correlações
+
+Positivas
+
+Correlações Negativas
+
+Correlação Nula
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIREÇÃO:
+
+Correlações
+
+Positivas
+
+Correlações Negativas
+
+Correlação Nula
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIREÇÃO:
+
+Correlação perfeita
+
+Sua idade e idade de sua irmã
+
+Correlação imperfeita Inteligência lógico-matemática e nota
+
+na prova de matemática
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIREÇÃO:
+
+Pode ser que não se encontre correlação entre duas variáveis (usando método de cálculo de correlação linear) porque a relação existente é não-linear.
+
+Teria que se usar outro método para cálculo da correlação (não-linear)
+
+Ex. Idade vs. Força física (ou memória; ou comportamentos disruptivos)
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+COEFICIENTE DE CORRELAÇÃO
+
+- 1
+**Correlação**** ****perfeita negativa**
+
+0
+
++1
+
+**Correlação**** ****perfeita positiva**
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+COEFICIENTE DE CORRELAÇÃO
+
+Cohen (1988, 1992)
+
+
+| Magnitude | Valor absoluto |
+| --- | --- |
+| Nula | 0,00 |
+| Fraca | |0,10 – 0,30| |
+| Moderada | |0,30 – 0,50| |
+| Forte | |> 0,50 | |
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+COEFICIENTE DE CORRELAÇÃO
+
+
+| Magnitude | Valor absoluto |
+| --- | --- |
+| Nula | 0,00 |
+| Fraca | |0,10 – 0,39| |
+| Moderada | |0,40 – 0,70| |
+| Forte | |0,70 – 0,80| |
+| Muito Forte | |0,80 - 0,99| |
+| Perfeita | 1,00 |
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+**TAMANHO**** ****DE**** ****EFEITO**
+
+Tamanho de efeito avalia o quanto duas variáveis estão, de fato, correlacionadas.
+
+O tamanho de efeito da correlação explicita o quanto de variância compartilhada
+
+duas variáveis apresentam entre si
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+TAMANHO DE EFEITO (COEFICIENTE DE DETERMINAÇÃO)
+
+*r** *= 0,60
+
+*Coeficiente** **de** **Correlação*
+
+*r**2** *= 0,36
+
+36,0%
+
+*Tamanho** **de** **efeito*
+
+*ou*
+
+*Variância** **compartilhada*
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+3%
+
+17%
+
+9%
+
+
+| Coeficiente de Correlação
+(r) | Variância compartilhada (tamanho de efeito, r2) |
+| --- | --- |
+| r = 0,10 | r2 = 0,01 = 1% |
+| r = 0,20 | r2 = 0,04 = 4% |
+| r = 0,30 | r2 = 0,09 = 9% |
+| r = 0,40 | r2 = 0,16 = 16% |
+| r = 0,50 | r2 = 0,25 = 25% |
+| r = 0,60 | r2 = 0,36 = 36% |
+| r = 0,70 | r2 = 0,49 = 49% |
+| r = 0,80 | r2 = 0,64 = 64% |
+| r = 0,90 | r2 = 0,81 = 81% |
+| r = 1,00 | r2 = 10,0 = 100% |
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+CORRELAÇÃO PARAMÉTRICA VS NÃO-PARAMÉTRICA
+
+Karl Pearson
+
+(1857-1936)
+
+Charles Spearman (1863-1945)
+
+Correlação de Pearson vs.
+
+Correlação de Spearman Correlação Kendall Tau-*b*
+
+Maurice Kendall
+
+(1907-1983)
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+CORRELAÇÃO PARAMÉTRICA VS NÃO-PARAMÉTRICA
+
+
+| Correlação de Pearson | Correlação de Spearman
+Kendall (Tau) |
+| --- | --- |
+| Paramétrica | Não–paramétrica |
+| Quando usar |  |
+| Quando os dados têm distribuição normal | Quando os dados não tem distribuição normal |
+| Quando o número de participantes é alto | Útil também quando o número de participantes é baixo |
+| Medida escalar/intervalar | Medida ordinal |
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+**VAMOS**** ****À**** ****PRÁTICA?**
+
+**HIPÓTESE**:
+
+Dados de resistência a tração e resistência a deformação na tração apresentam associação com a efeitos deletérios da degradação temporal em geotêxteis confeccionados com fibra de Taboa.
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+Tabela de Correlação
+
+Nota: * = *p** *< 0,05; ** = *p** *< 0,01; n.s. = relação não significativa
+
+
+|  | Tempos | Resistência tração | Deformação tração | Rigidez secante |
+| --- | --- | --- | --- | --- |
+| Tempos | 1 |  |  |  |
+| Resistência tração | -0,596** | 1 |  |  |
+| Deformação tração | 0,282** | -0,135* | 1 |  |
+| Rigidez secante | -0,491** | 0,788** | 0,030 | 1 |
+
+
+---
+
+## {.smaller-text}
+
+TÓPICOS ESPECIAIS DE CORRELAÇÃO
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIFERENÇAS NOS NÍVEIS DE CORRELAÇÃO
+
+Muitas vezes, quando realizamos análises de correlação, queremos entender, do
+
+nosso conjunto de variáveis, quais são as que mais fortemente se correlacionam.
+
+Nota: ***p** *< 0,01.
+
+“Os efeitos da degradação ao longo do tempo se associou mais moderadamente e de maneira negativa com a resistência a tração (*r *= - 0,596, *p** *< 0,01) do que com a rigidez secante (*r** *= - 0,491, *p** *< 0,01).
+
+Forma de meia verdade!
+
+
+|  | Tempos | Resistência tração | Deformação tração | Rigidez secante |
+| --- | --- | --- | --- | --- |
+| Tempos | 1 |  |  |  |
+| Resistência tração | -0,596** | 1 |  |  |
+| Deformação tração | 0,282** | -0,135* | 1 |  |
+| Rigidez secante | -0,491** | 0,788** | 0,030 | 1 |
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIFERENÇAS NOS NÍVEIS DE CORRELAÇÃO
+
+Nota: * = *p** *< 0,05; ** = *p** *< 0,01.
+
+Fisher´s r-to-z transformation test
+
+http://psychometrica.de/correlation.htm
+
+
+|  | Tempos | Resistência tração | Deformação tração | Rigidez secante |
+| --- | --- | --- | --- | --- |
+| Tempos | 1 |  |  |  |
+| Resistência tração | -0,596** | 1 |  |  |
+| Deformação tração | 0,282** | -0,135* | 1 |  |
+| Rigidez secante | -0,491** | 0,788** | 0,030 | 1 |
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIFERENÇAS NOS NÍVEIS DE CORRELAÇÃO
+
+Muitas vezes, quando realizamos análises de correlação, queremos entender, do
+
+nosso conjunto de variáveis, quais são as que mais fortemente se correlacionam.
+
+Nota: ***p** *< 0,01.
+
+“O teste r-to-z de transformação de Fisher demonstrou que os efeitos deletérios da degradação do geotêxtil ao longo do tempo se associou mais fortemente com a resistência a tração a ruptura (r = - 0,596, p < 0,01) do que com a rigidez secante (r = 0,491, p < 0,01) (z = - 2.885; p < 0,002).”
+
+
+|  | Tempos | Resistência tração | Deformação tração | Rigidez secante |
+| --- | --- | --- | --- | --- |
+| Tempos | 1 |  |  |  |
+| Resistência tração | -0,596** | 1 |  |  |
+| Deformação tração | 0,282** | -0,135* | 1 |  |
+| Rigidez secante | -0,491** | 0,788** | 0,030 | 1 |
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+TIPO	ESPECIAL	DE	CORRELAÇÃO	(**PONTO**
+
+**BISSERIAL)**
+
+Utilizada  quando  se  pretende  avaliar  a  relação entre uma variável ordinal (ou escalar, ex: altura) com outra variável dicotômica (ex: sexo – masculino e feminino).
+
+Serve  como  um  indício  para  saber  se  existem diferenças nos escores dos grupos em relação à variável de interesse.
+
+Resistência a punção
+
+Sem Resina
+
+Com Resina
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+**CORRELAÇÃO**** ****NÃO**** ****É**** ****CAUSALIDADE**
+
+Correlação não é sinônimo de causalidade
+
+A correlação entre duas variáveis pode ser causada por uma terceira variável oculta;
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+**CORRELAÇÃO**** ****NÃO**** ****É**** ****CAUSALIDADE**
+
+Spurious Correlations
+
+Ir à praia
+
+Tomar
+
+sorvete
+
+TEMPERA TURA
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+**CORRELAÇÃO**** ****NÃO**** ****É**** ****CAUSALIDADE**
+
+É possível encontrar uma correlação completamente espúria entre duas variáveis.
+
+Spurious Correlations
+
+
+# [REGRESSÃO]{.section-header}
+
+## {.smaller-text}
+
+REGRESSÃO
+
+Definição
+
+  - Técnica de análise de dados que explica quanto uma ou mais variáveis preditoras (VIs)
+explicam ou estão associadas com um desfecho (VD)
+
+- Regressão linear simples
+Uma variável dependente e uma variável independente
+
+- Regressão linear múltipla
+Uma variável dependente e várias variáveis independentes
+
+- Regressão logística
+Uma variável dependente (dicotômica) e uma ou mais variáveis independentes
+
+- Regressão multinomial
+Uma variável dependente (politômica) e uma ou mais variáveis independentes
+
+
+---
+
+## REGRESSÃO LINEAR {.smaller-text}
+
+O quanto uma ou mais variáveis explicam outra
+
+
+---
+
+## {.smaller-text}
+
+REGRESSÃO LINEAR
+
+Definição
+
+- Diferentemente da correlação, a regressão tem uma direcionalidade
+Autoestima
+
+Conquistas educacionais
+
+Autoestima
+
+Conquistas educacionais
+
+Variável dependente Variável desfecho
+
+Variável independente Variável preditora
+
+
+---
+
+## {.smaller-text}
+
+REGRESSÃO LINEAR
+
+Como se calcula a regressão
+
+Y = B0 + BxX + E
+
+Em que:
+
+Y = variável dependente.
+
+B0 = intercepto (constante).
+
+Bx = o nível sobre o quanto X impacta Y. X = variável independente.
+
+E = erro aleatório.
+
+
+---
+
+## {.smaller-text}
+
+REGRESSÃO LINEAR
+
+Um empresário quer saber o quanto o investimento em propagandas aumentou as suas
+
+vendas ao longo do mês.
+
+Propaganda (VI)
+
+Vendas (VD)
+
+
+---
+
+## {.smaller-text}
+
+REGRESSÃO LINEAR
+
+Um empresário quer saber o quanto o investimento em propagandas aumentou as suas
+
+vendas ao longo do mês.
+
+Y = o desfecho (vendas)
+
+B0 = intercepto (constante) → o escore no desfecho quando o preditor tem valor = 0 (quando
+
+ele não investia em propaganda, qual era o valor de y (vendas)?
+
+X = o nível do preditor (o quanto foi investido em propaganda).
+
+Bx = o grau sobre o quanto X (propaganda) impacta Y (venda).
+
+E = a porção de variância não explicada pela variável independente (o quanto a propaganda não foi útil para aumentar a venda)
+
+
+---
+
+## {.smaller-text}
+
+REGRESSÃO LINEAR
+
+Um empresário quer saber o quanto o investimento em propagandas aumentou as suas
+
+vendas ao longo do mês.
+
+Constante (Bo)
+
+A  regressão  irá  traçar  a  linha  que explica   a   influência   da   variável preditora no desfecho.
+
+As  variações  se  dão  por  razões externas  que  explicam  a  venda  (para além da propaganda).
+
+Por causa dessas influências externas, nenhum  modelo  é  perfeito  (livre  de erro),  e  por  isso  nenhum  preditor  é capaz de prever 100% o desfecho.
+
+
+---
+
+## {.smaller-text}
+
+REGRESSÃO LINEAR
+
+**Informações**** ****que**** ****a**** ****regressão**** ****traz:**
+
+- Sabemos o quanto Y (desfecho) aumenta para cada valor de X (variável preditora)
+- Para cada um real investido em propaganda, as vendas aumentaram *x*R$.
+- Sabemos o quanto (em %) Y aumenta quando da presença da variável X;
+- No total, o investimento em propaganda aumentou as vendas em X% (*R*2 → poder explicativo do
+modelo).
+
+
+---
+
+## {.smaller-text}
+
+REGRESSÃO LINEAR
+
+**Tipos**** ****de**** ****variáveis**
+
+Variável dependente
+
+  - Sempre ordinal ou escalar (ou seja, uma variável crescente)
+Variável independente
+
+  - Pode ser de diferentes categorias
+  - Ordinal, escalar ou categórica (dicotômica; se politômica, usar dummy)
+
+---
+
+## {.smaller-text}
+
+REGRESSÃO LINEAR
+
+**Principais**** ****pressupostos**
+
+  - Linearidade
+  - Variância não nula
+  - Homocedasticidade dos resíduos
+  - Independência dos resíduos
+  - Distribuição normal dos resíduos
+
+---
+
+## {.smaller-text}
+
+REGRESSÃO LINEAR
+
+**Vamos**** ****à**** ****prática...**
+
+
+---
+
+## {.smaller-text}
+
+REGRESSÃO LINEAR MÚLTIPLA
+
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+Equivalente à regressão linear simples, com a diferença de que são adicionados
+
+vários preditores
+
+  - Socialização
+  - Extroversão
+  - Abertura à Experiência
+  - Neuroticismo
+  - Conscienciosidade
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+**Simples:**** **Y = B0 + BxX + E
+
+**Múltipla:**** **Y = B0 + ***B******1******X******1****** ******+****** ******B******2******X******2****** ******+****** ******...****** ******+****** ******B******n******X******n****** ***+ E
+
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+
+| Métodos de Entrada | Característica | Vantagens | Desvantagens |
+| --- | --- | --- | --- |
+| Enter (Inserir) | Todas as variáveis são
+inseridas de uma vez | Simplicidade | Multicolinearidade
+Não apresenta o R2
+de cada variável |
+
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+
+| Métodos de Entrada | Característica | Vantagens | Desvantagens |
+| --- | --- | --- | --- |
+| Enter (Inserir) | Todas as variáveis são
+inseridas de uma vez | Simplicidade | Multicolinearidade
+Não apresenta o R2
+de cada variável |
+| Stepwise (Por etapa) | Variáveis inseridas passo-a-passo, com base na significância do F | Modelo mais parcimonioso
+Apresenta o R2 de cada
+variável | A significância de F sofre efeito do tamanho amostral.
+Efeito supressor* |
+
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+
+| Métodos de Entrada | Característica | Vantagens | Desvantagens |
+| --- | --- | --- | --- |
+| Enter (Inserir) | Todas as variáveis são
+inseridas de uma vez | Simplicidade | Multicolinearidade
+Não apresenta o R2
+de cada variável |
+| Stepwise (Por etapa) | Variáveis inseridas passo-a-passo, com base na significância do F | Modelo mais parcimonioso
+Apresenta o R2 de cada
+variável | A significância de F sofre efeito do tamanho amostral.
+Efeito supressor* |
+| Forward (Avançar) | Variáveis inseridas passo-a-passo, com base na correlação parcial da VI com a VD | Modelo mais parcimonioso
+Apresenta o R2 de cada
+variável | Sofre influência das variáveis do modelo.
+Efeito supressor |
+
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+
+| Métodos de Entrada | Característica | Vantagens | Desvantagens |
+| --- | --- | --- | --- |
+| Backward
+(Retroceder) | Variáveis excluídas
+passo a-passo | Elimina possíveis erros de inserção dos métodos stepwise e forward | - |
+
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+
+| Métodos de Entrada | Característica | Vantagens | Desvantagens |
+| --- | --- | --- | --- |
+| Backward
+(Retroceder) | Variáveis excluídas
+passo a-passo | Elimina possíveis erros de inserção dos métodos stepwise e forward | - |
+| Remove (Remover) | Escolha manual de quais variáveis serão excluídas para comparar modelos | Pesquisador testa os modelos que gostaria | Escolhas arbitrárias podem ser perigosas |
+
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+**Problemas**** ****das**** ****variáveis**
+
+Independência entre as variáveis independentes (não deve haver muita multicolinearidade).
+
+  - Índice de tolerância: 1 – R².
+    - Deve ficar o mais próximo de 1,0 possível.
+  - Multicolinearidade pode ser avaliada, também, através do VIF
+    - Valores de VIF > 10 → Multicolinearidade
+    - Se Média de VIF for substancialmente > 1, Modelo tendencioso (Statitics → Colinearity Diagnosis). Próximo a 1, bom modelo.
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+**Problemas**** ****da**** ****amostra**
+
+Independência entre os resíduos.
+
+- Coeficiente de Durbin-Watson.
+- Deve ficar entre 1,5 e 2,5.
+**Resíduos**** ****padronizados**: Resíduos em valores Z, para que todas as variáveis sejam igualmente consideradas.
+
+**Resíduo**** ****Padronizado:**** **acima de 3 → Outlier
+
+  - Se 1% da amostra apresentar Resíduo padronizado acima de 2,5, → Problemas no modelo
+  - Se 5% da amostra apresentar Resíduo padronizado acima de 2 → Problemas no modelo
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+**Problemas**** ****da**** ****amostra**
+
+**Cook´s**** ****Distance**
+
+  - Avalia o efeito de um único caso no modelo como um todo. Valores maiores que 1 merecem atenção!
+**Mahalanobis**** ****Distance:**
+
+  - N = 500; 5 Vis → Mahalanobis = 25 valor problemático;
+  - N = 100; 3 Vis → Mahalanobis = 15 valor problemático;
+  - N = 30; 2 Vis → Mahalanobis = 11 valor problemático;
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+**Tamanho**** ****amostral**
+
+  - Regra geral → 50 + 8k, sendo k o número de variáveis.
+(Tabachnick & Fidell, 2019)
+
+Mais confiável calcular no G*Power
+
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+**Vamos**** ****à**** prática...**
+
+
+---
+
+## {.smaller-text}
+
+REGRESSÃO LOGÍSTICA BINÁRIA
+
+
+---
+
+## REGRESSÃO LOGÍSTICA {.smaller-text}
+
+BINÁRIA
+
+Tem por objetivo quantificar a probabilidade de um evento acontecer, de acordo com
+
+os preditores inseridos no modelo
+
+Regressão logística binária refere-se a um modelo onde a variável dependente tem
+
+duas categorias
+
+  - Depressivo Sim / Não
+  - Morreu / Não morreu
+  - Diabético / Não Diabético
+  - Com ideação suicida / Sem ideação suicida
+
+---
+
+## REGRESSÃO LOGÍSTICA (cont.) {.smaller-text}
+
+BINÁRIA
+
+Tem por objetivo quantificar a probabilidade de um evento acontecer, de acordo com os
+
+preditores inseridos no modelo
+
+Transformação logarítimica (logit) do modelo de regressão simples
+
+*P(Y)** *=
+
+1
+
+1  1
+
+1+𝑒−(𝑏𝑜+𝑏 𝑥 )
+
+Regressão Simples
+
+Regressão Múltipla
+
+*P(Y)** *=
+
+1
+
+1  11	2  2
+
+1+𝑒−(𝑏𝑜+𝑏 𝑥	+𝑏 𝑥 + …+𝑏𝑛𝑥𝑛)
+
+
+---
+
+## REGRESSÃO LOGÍSTICA (cont.) {.smaller-text}
+
+BINÁRIA
+
+Cada sujeito está ou não está em um grupo
+
+  - Exemplo: A probabilidade que pessoas que fumam terem desenvolvido câncer, comparado com os
+que não fumam.
+
+  - Desfecho: Não teve câncer de Pulmão (0) x Teve câncer de pulmão (1)
+  - Variável preditora: Fumou x Não Fumou (Dicotômica)
+  - Variável preditora: Número de cigarros fumado por mês (Contínua)
+  - Variável preditora: Marca do cigarro fumado (Hollywood, Marlboro, Camel, LuckyStrike)
+
+---
+
+## REGRESSÃO LOGÍSTICA (cont.) {.smaller-text}
+
+BINÁRIA
+
+A probabilidade que pessoas que fumam terem desenvolvido câncer, comparado
+
+com os que não fumam.
+
+  - Variável preditora: Número de cigarros fumado por mês (Contínua)
+Número de cigarros
+
+0
+
+600
+
+
+---
+
+## REGRESSÃO LOGÍSTICA (cont.) {.smaller-text}
+
+BINÁRIA
+
+Log-likelihood é uma estatística baseada em variância não explicada (resíduos)
+
+  - Quanto menor o valor, melhor o modelo.
+  - A qualidade do modelo é calculado através de uma estatística chamada -*2LL*
+  - Ao adicionar novas variáveis, o valor do 2LL deve diminuir, atestando que a variável é
+capaz de **melhorar**** **o poder de predição do modelo;
+
+  - Essa diminuição precisa ser estatisticamente significativa (distribuição qui-quadrado);
+
+---
+
+## REGRESSÃO LOGÍSTICA (cont.) {.smaller-text}
+
+BINÁRIA
+
+**Acessando**** ****a**** ****qualidade**** ****do**** ****modelo**
+
+R-statistic → Correlação parcial de cada VI com a VD
+
+  - Varia de -1 a +1
+  - **R-****statistic**** ****negativo:**** **Quanto mais a VI (preditor) aumenta, mais a probabilidade do desfecho acontecer diminui
+  - **R-****statistic**** ****positivo**: Quanto mais a VI (preditor) aumenta, mais a probabilidade do desfecho
+acontecer aumenta
+
+Estatística enviesada por utilizar a função de Wald
+
+
+---
+
+## REGRESSÃO LOGÍSTICA (cont.) {.smaller-text}
+
+BINÁRIA
+
+**Acessando**** ****a**** ****qualidade**** ****do**** ****modelo**
+
+  - Avalia o quanto as variáveis são capazes de predizer o desfecho
+Hosmer-Lemeshow *R**2**L*: Varia de 0 a 1;
+
+Cox & Snell R2: Não atinge o valor de 1;
+
+Nagelkerke R2: Corrige a medida de Cox & Snell
+
+
+---
+
+## REGRESSÃO LOGÍSTICA (cont.) {.smaller-text}
+
+BINÁRIA
+
+**Acessando**** ****o**** ****poder**** ****de**** ****predição**** ****das**** ****variáveis**
+
+  - Avalia o quanto as variáveis são capazes de predizer o desfecho
+  - Wald: Informa se o preditor é significativo ou não;
+  - B e Exp(b):
+
+---
+
+## REGRESSÃO LOGÍSTICA (cont.) {.smaller-text}
+
+BINÁRIA
+
+**Acessando**** ****o**** ****poder**** ****de**** ****predição**** ****das**** ****variáveis**
+
+  - Exp(*b*): Indica a probabilidade de o evento acontecer com base naquele preditor específico
+    - Exp*(b)** *> 1: Quanto mais o preditor aumenta, **maior**** **a probabilidade do desfecho acontecer
+    - Exp(*b*) < 1: Quanto mais o preditor aumenta, **menor**** **a probabilidade do desfecho acontecer
+
+---
+
+## REGRESSÃO LOGÍSTICA (cont.) {.smaller-text}
+
+BINÁRIA
+
+**Análises**** ****da**** ****capacidade**** ****de**** ****predição**** ****do**** ****modelo**
+
+  - Probabilities e Group Membership
+  - Avalia a probabilidade de cada caso ser adequadamente categorizado, de acordo com o seu próprio padrão de resposta
+Classification plots
+
+  - Histograma dos valores reais e previstos para o desfecho;
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::
+
