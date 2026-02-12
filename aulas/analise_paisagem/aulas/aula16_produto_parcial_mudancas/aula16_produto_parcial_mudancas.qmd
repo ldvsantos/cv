@@ -77,7 +77,7 @@ Produzir o **registro interpretativo de mudanças** na área de estudo, integran
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-### Critérios de qualidade
+**Critérios de qualidade**
 
 | Critério | Peso | O que avaliar |
 |----------|:----:|-------------|
@@ -139,7 +139,7 @@ var uso2022 = mapbiomas.select('classification_2022')
 
 ::: {.column width="50%"}
 ::: {.info-box}
-### Classes MapBiomas (simplificadas)
+**Classes MapBiomas (simplificadas)**
 
 | Código | Classe | Cor |
 |:------:|--------|:---:|
@@ -193,7 +193,7 @@ var uso2022 = mapbiomas.select('classification_2022')
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-### Indicadores derivados da matriz
+**Indicadores derivados da matriz**
 
 | Indicador | Fórmula | Interpretação |
 |-----------|---------|-------------|
@@ -245,7 +245,7 @@ var uso2022 = mapbiomas.select('classification_2022')
 
 ::: {.column width="50%"}
 ::: {.info-box}
-### Exemplo de gráfico (descrição)
+**Exemplo de gráfico (descrição)**
 
 ```
 Evolução do uso/cobertura — Área de estudo (1990–2022)
@@ -302,7 +302,7 @@ Evolução do uso/cobertura — Área de estudo (1990–2022)
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-### Exemplo de texto
+**Exemplo de texto**
 
 > *"Entre 1990 e 2022, a área de estudo registrou uma perda de 38% da cobertura de vegetação nativa, com redução de 800 ha para 495 ha. A principal transição identificada foi a conversão de vegetação nativa em pastagem (280 ha), concentrada nas áreas de relevo suave ondulado onde a atividade pecuária é historicamente predominante.*
 >
@@ -339,7 +339,7 @@ Evolução do uso/cobertura — Área de estudo (1990–2022)
 
 ::: {.column width="50%"}
 ::: {.info-box}
-### Entrega da Aula 16
+**Entrega da Aula 16**
 
 **Conteúdo mínimo:**
 
@@ -366,7 +366,7 @@ Evolução do uso/cobertura — Área de estudo (1990–2022)
 ## Síntese da Aula 16 {.smaller-text}
 
 ::: {.info-box}
-### O que fizemos hoje
+**O que fizemos hoje**
 
 1. **Extraímos dados do MapBiomas** para a área de estudo (2 datas)
 2. **Construímos a matriz de transição** — quantificando "de quê → para quê"

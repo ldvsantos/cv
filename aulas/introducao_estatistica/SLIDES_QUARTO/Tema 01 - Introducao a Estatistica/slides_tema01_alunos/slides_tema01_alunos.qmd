@@ -6,14 +6,14 @@ institute: "Universidade Estadual de Feira de Santana (UEFS)"
 footer: "UEFS — Introdução à Estatística | Tema 1 — Conceitos Fundamentais (Alunos)"
 format: 
   revealjs:
-    logo: ../../../../../assets/logo-uefs.webp
+    logo: ../../../../assets/logo-uefs.webp
     footer: "UEFS — Introdução à Estatística | Tema 1 — Conceitos Fundamentais (Alunos)"
     slide-number: true
-    theme: [simple, assets/ufs.scss]
+    theme: [simple, ../../../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -39,7 +39,7 @@ execute:
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-### Conceito Central
+**Conceito Central**
 
 A Estatística é uma ciência que oferece uma **coleção de métodos** para:
 
@@ -61,7 +61,7 @@ Quando solicitados a investigar um fenômeno coletivo, podemos optar por:
 ::: {.columns}
 ::: {.column width="50%"}
 ::: {.info-box}
-### Censo
+**Censo**
 
 Estudo de **todos** os componentes de uma população
 :::
@@ -69,7 +69,7 @@ Estudo de **todos** os componentes de uma população
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-### Amostragem
+**Amostragem**
 
 Estudo de **alguns** elementos de uma população cujo objetivo é fazer **inferência** sobre a população
 :::
@@ -114,7 +114,7 @@ Escolha dos elementos é **aleatória**. Cada elemento tem probabilidade conheci
 ::: {.columns}
 ::: {.column width="50%"}
 ::: {.info-box}
-### Estatística Descritiva
+**Estatística Descritiva**
 
 Trata da **organização**, **resumo** e **apresentação** dos dados.
 :::
@@ -122,7 +122,7 @@ Trata da **organização**, **resumo** e **apresentação** dos dados.
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-### Estatística Inferencial
+**Estatística Inferencial**
 
 Trata de tirar **conclusões sobre uma população** a partir de uma amostra.
 
@@ -152,7 +152,7 @@ Conjunto **completo** de elementos que compartilham uma característica.
 
 ::: {.column width="40%"}
 ::: {.info-box}
-### Definição
+**Definição**
 
 Inferência estatística advém de uma relação entre a **teoria estatística** e os **dados reais**
 :::

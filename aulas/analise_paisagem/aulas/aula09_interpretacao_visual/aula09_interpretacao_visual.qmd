@@ -68,7 +68,7 @@ A **interpretação visual** é o processo de extrair informações sobre a pais
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-### Por que interpretação visual importa?
+**Por que interpretação visual importa?**
 
 1. **Nenhum algoritmo substitui o olhar treinado** — o analista integra contexto, conhecimento local e raciocínio que a máquina não tem
 2. **Validação** — toda classificação digital precisa ser validada visualmente
@@ -104,7 +104,7 @@ A **interpretação visual** é o processo de extrair informações sobre a pais
 
 ::: {.column width="50%"}
 ::: {.info-box}
-### Como usar na prática
+**Como usar na prática**
 
 Cada feição da paisagem tem uma **assinatura visual** composta por combinações desses elementos:
 
@@ -152,7 +152,7 @@ A tonalidade/cor permite a **primeira separação** entre coberturas: vegetaçã
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-### Chave de tonalidade (exemplo para Sentinel-2, cor verdadeira)
+**Chave de tonalidade (exemplo para Sentinel-2, cor verdadeira)**
 
 | Tonalidade/cor | Cobertura provável |
 |:---:|----------------|
@@ -193,7 +193,7 @@ A tonalidade/cor permite a **primeira separação** entre coberturas: vegetaçã
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-### Padrão
+**Padrão**
 
 - **Repetição** de elementos → indica processo organizado
 - Padrão **reticular** → malha urbana, irrigação
@@ -267,7 +267,7 @@ Esta chave é uma **referência inicial** para a região de Feira de Santana. De
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-### Roteiro (continuação)
+**Roteiro (continuação)**
 
 5. **Identificação de processos e pressões**
    - Há evidências de desmatamento recente? Solo exposto? Erosão?
@@ -313,7 +313,7 @@ Duas duplas apresentam imagem anotada + síntese (5 min cada).
 
 ::: {.column width="40%"}
 ::: {.info-box}
-### Critérios
+**Critérios**
 
 | Critério | Peso |
 |----------|:---:|
@@ -334,7 +334,7 @@ Duas duplas apresentam imagem anotada + síntese (5 min cada).
 ## Síntese da Aula 09 {.smaller-text}
 
 ::: {.info-box}
-### O que vimos hoje
+**O que vimos hoje**
 
 1. **Interpretação visual** — extração analítica de informações da imagem por olho treinado
 2. **Oito elementos** — tonalidade, textura, forma, tamanho, sombra, padrão, associação, contexto

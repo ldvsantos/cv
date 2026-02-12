@@ -61,7 +61,7 @@ Em dados ambientais, anomalias podem representar:
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-### Por que detectar anomalias?
+**Por que detectar anomalias?**
 
 1. **Controle de qualidade** de séries climáticas e hidrológicas
 2. **Alertas precoces** de eventos extremos
@@ -104,7 +104,7 @@ Em dados ambientais, anomalias podem representar:
 
 ::: {.column width="50%"}
 ::: {.info-box}
-### Nesta aula usaremos
+**Nesta aula usaremos**
 
 Série de **precipitação diária** de uma estação da ANA no semiárido baiano (2000–2024), disponível gratuitamente no HidroWeb.
 
@@ -136,7 +136,7 @@ A detecção de anomalias foca no **resíduo**: valores de $R_t$ fora do interva
 
 ::: {.column width="45%"}
 ::: {.highlight-box}
-### Vantagens do STL
+**Vantagens do STL**
 
 - Robusto a outliers na estimativa
 - Flexível para sazonalidade variável
@@ -236,7 +236,7 @@ O **score de anomalia** é baseado na profundidade média da árvore:
 
 ::: {.column width="45%"}
 ::: {.highlight-box}
-### Parâmetros principais
+**Parâmetros principais**
 
 | Parâmetro | Descrição |
 |-----------|-----------|
@@ -390,7 +390,7 @@ plt.show()
 
 ::: {.column width="40%"}
 ::: {.highlight-box}
-### Entrega
+**Entrega**
 
 - **Formato:** Jupyter Notebook (.ipynb)
 - **Prazo:** 7 dias

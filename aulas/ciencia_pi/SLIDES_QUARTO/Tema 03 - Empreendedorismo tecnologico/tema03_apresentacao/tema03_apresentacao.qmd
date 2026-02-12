@@ -5,14 +5,14 @@ author: "Luiz Diego Vidal Santos"
 institute: "Universidade Estadual de Feira de Santana (UEFS)"
 format: 
   revealjs:
-    logo: ../../../assets/logo-uefs.webp
+    logo: ../../../../assets/logo-uefs.webp
     footer: "UEFS - Universidade Estadual de Feira de Santana | Tema 3 - Empreendedorismo Tecnológico"
     slide-number: true
-    theme: [simple, assets/ufs.scss]
+    theme: [simple, ../../../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto

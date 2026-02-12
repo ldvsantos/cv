@@ -61,7 +61,7 @@ Um mapa de uso da terra produzido por classificação supervisionada é uma **es
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-### Consequências práticas
+**Consequências práticas**
 
 Mapas sem avaliação de acurácia podem levar a:
 
@@ -111,7 +111,7 @@ O processo de avaliação segue quatro etapas principais:
 
 ::: {.column width="50%"}
 ::: {.info-box}
-### Quantas amostras?
+**Quantas amostras?**
 
 Fórmula de Cochran (1977) adaptada:
 
@@ -173,7 +173,7 @@ $$UA_i = \frac{n_{ii}}{\sum_{j=1}^{k} n_{ij}}$$
 Mede a probabilidade de um pixel mapeado realmente pertencer àquela classe (comissão).
 
 ::: {.highlight-box}
-### Resumo
+**Resumo**
 
 | Métrica | Perspectiva | Erro associado |
 |---------|-------------|----------------|
@@ -202,7 +202,7 @@ $$P_e = \frac{\sum_{i=1}^{k} (n_{i+} \times n_{+i})}{N^2}$$
 
 ::: {.column width="45%"}
 ::: {.highlight-box}
-### Interpretação do Kappa
+**Interpretação do Kappa**
 
 | Kappa | Qualidade |
 |-------|-----------|
@@ -267,7 +267,7 @@ Atribui a cada pixel o valor de probabilidade da classe com maior score. Indica 
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-### Utilidade prática
+**Utilidade prática**
 
 1. Identificar **áreas de incerteza** no mapa
 2. Direcionar **trabalho de campo** para regiões de baixa confiança
@@ -391,7 +391,7 @@ Map.addLayer(prob_max, {min: 0.3, max: 1.0,
 
 ::: {.column width="40%"}
 ::: {.highlight-box}
-### Entrega
+**Entrega**
 
 - **Formato:** relatório (PDF) com capturas de tela do GEE + código
 - **Prazo:** 14 dias

@@ -6,14 +6,14 @@ institute: "Universidade Estadual de Feira de Santana (UEFS)"
 footer: "UEFS — Introdução à Estatística | Tema 5 — Estatística Descritiva Completa"
 format: 
   revealjs:
-    logo: ../../../../../assets/logo-uefs.webp
+    logo: ../../../../assets/logo-uefs.webp
     footer: "UEFS — Introdução à Estatística | Tema 5 — Estatística Descritiva Completa"
     slide-number: true
-    theme: [simple, assets/ufs.scss]
+    theme: [simple, ../../../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
-    css: assets/custom.css
+    css: ../../../../assets/custom.css
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -31,7 +31,7 @@ execute:
 A **estatística descritiva** é um ramo da estatística que aplica várias técnicas para **descrever e sumarizar** um conjunto de dados.
 
 ::: {.highlight-box}
-### Diferença para a estatística inferencial:
+**Diferença para a estatística inferencial:**
 
 Enquanto a estatística descritiva se limita a **resumir e apresentar** os dados, a estatística inferencial busca fazer **afirmações sobre uma população** com base em informações de uma amostra.
 :::

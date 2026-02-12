@@ -63,7 +63,7 @@ Consequências ecológicas:
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-### A conectividade como solução
+**A conectividade como solução**
 
 A **conectividade** entre fragmentos permite:
 
@@ -121,7 +121,7 @@ Cada aresta possui um **peso** baseado na:
 
 ::: {.column width="45%"}
 ::: {.highlight-box}
-### Limiar de dispersão
+**Limiar de dispersão**
 
 Duas manchas são consideradas **conectadas** se a distância entre elas for ≤ a **capacidade de dispersão** da espécie-alvo ($d_{max}$).
 
@@ -177,7 +177,7 @@ Onde:
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-### Vantagem sobre IIC
+**Vantagem sobre IIC**
 
 O PC é **probabilístico**:
 
@@ -235,7 +235,7 @@ Manchas com alto **dPC_connector** são *key stepping stones* — sua perda desc
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-### Requisitos
+**Requisitos**
 
 - Java ≥ 8 (JDK)
 - Mapa raster de uso da terra (.tif)
@@ -324,7 +324,7 @@ Os custos são **espécie-dependentes**. Uma ave florestal atribui alto custo a 
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-### Cenários de restauração
+**Cenários de restauração**
 
 No Graphab é possível:
 
@@ -363,7 +363,7 @@ A partir da análise no Graphab:
 
 ::: {.column width="50%"}
 ::: {.info-box}
-### Limitações da abordagem
+**Limitações da abordagem**
 
 1. Modelos baseados em **uma espécie** — paisagem é multiespécies
 2. Custos de deslocamento são **estimativas** — faltam dados empíricos para muitas espécies brasileiras
@@ -396,7 +396,7 @@ A partir da análise no Graphab:
 
 ::: {.column width="40%"}
 ::: {.highlight-box}
-### Entrega
+**Entrega**
 
 - **Formato:** relatório PDF com mapas + tabelas de dPC
 - **Prazo:** 21 dias

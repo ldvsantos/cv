@@ -1,9 +1,9 @@
-project:
+﻿project:
   type: default
 format:
   revealjs:
-    theme: [simple, ../../../assets/uefs.scss]
-    css: ../../../assets/custom.css
+    theme: [simple, ../../assets/uefs.scss]
+    css: ../../assets/custom.css
     width: 1280
     height: 720
     transition: slide
@@ -13,5 +13,5 @@ format:
     controls: true
     navigation-mode: linear
     embed-resources: true
-    logo: ../../../assets/logo-uefs.webp
+    logo: ../../assets/logo-uefs.webp
     footer: "UEFS — Introdução à Estatística"
