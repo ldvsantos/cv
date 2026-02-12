@@ -1,6 +1,6 @@
 ﻿---
 title: "Análise da Paisagem"
-subtitle: "Aula 01 — Apresentação da Disciplina e Introdução ao Conceito de Paisagem<br>Curso de Geografia"
+subtitle: "Aula 01 — Apresentação da Disciplina e <br> Conceito de Paisagem"
 author: "Luiz Diego Vidal Santos"
 institute: "Universidade Estadual de Feira de Santana (UEFS)"
 date: "2026-02-25"
@@ -11,6 +11,7 @@ format:
     slide-number: true
     theme: [simple, ../../../assets/uefs.scss]
     controls: true
+    navigation-mode: linear
     width: 1280
     height: 720
     css: ../../../assets/custom.css
