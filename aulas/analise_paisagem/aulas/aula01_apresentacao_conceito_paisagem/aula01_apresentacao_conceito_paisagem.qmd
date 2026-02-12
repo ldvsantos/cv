@@ -12,8 +12,10 @@ format:
     theme: [simple, ../../../assets/uefs.scss]
     controls: true
     navigation-mode: linear
+    scrollable: true
     width: 1280
     height: 720
+    margin: 0.01
     css: ../../../assets/custom.css
     transition: slide
     background-transition: fade
