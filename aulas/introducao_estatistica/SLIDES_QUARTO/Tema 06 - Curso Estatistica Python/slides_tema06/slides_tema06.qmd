@@ -1,13 +1,13 @@
-﻿---
+---
 title: "Curso de Estatística com Python"
-subtitle: "Partes 1 e 2 — PNAD 2015"
+subtitle: "Partes 1 e 2  -  PNAD 2015"
 author: "Luiz Diego Vidal Santos"
 institute: "Universidade Estadual de Feira de Santana (UEFS)"
-footer: "UEFS — Introdução à Estatística | Tema 6 — Curso de Estatística com Python"
+footer: "UEFS  -  Introdução à Estatística | Tema 6  -  Curso de Estatística com Python"
 format: 
   revealjs:
     logo: ../../../../assets/logo-uefs.webp
-    footer: "UEFS — Introdução à Estatística | Tema 6 — Curso de Estatística com Python"
+    footer: "UEFS  -  Introdução à Estatística | Tema 6  -  Curso de Estatística com Python"
     slide-number: true
     theme: [simple, ../../../../assets/uefs.scss]
     controls: true
@@ -24,13 +24,13 @@ execute:
   eval: false
 ---
 
-# [Curso de Estatística — Parte 1 e 2]{.section-header}
+# [Curso de Estatística  -  Parte 1 e 2]{.section-header}
 
-# [1 — Conhecendo os Dados]{.section-header}
+# [1  -  Conhecendo os Dados]{.section-header}
 
-## 1.1 — Dataset do Projeto {.smaller-text}
+## 1.1  -  Dataset do Projeto {.smaller-text}
 
-### Pesquisa Nacional por Amostra de Domicílios — 2015
+### Pesquisa Nacional por Amostra de Domicílios  -  2015
 
 ::: {.columns}
 ::: {.column width="55%"}
@@ -38,7 +38,7 @@ A **PNAD** investiga anualmente características gerais da população: educaç�
 
 Constitui, ao longo de **49 anos**, um importante instrumento para formulação, validação e avaliação de políticas de desenvolvimento socioeconômico.
 
-**Fonte:** [IBGE — PNAD 2015](https://ww2.ibge.gov.br/home/estatistica/populacao/trabalhoerendimento/pnad2015/microdados.shtm)
+**Fonte:** [IBGE  -  PNAD 2015](https://ww2.ibge.gov.br/home/estatistica/populacao/trabalhoerendimento/pnad2015/microdados.shtm)
 :::
 
 ::: {.column width="45%"}
@@ -56,7 +56,7 @@ Constitui, ao longo de **49 anos**, um importante instrumento para formulação,
 
 ## Importando pandas e lendo o dataset {.smaller-text}
 
-[pandas — Python Data Analysis Library](https://pandas.pydata.org/)
+[pandas  -  Python Data Analysis Library](https://pandas.pydata.org/)
 
 ```python
 import pandas as pd
@@ -73,7 +73,7 @@ dados.shape
 dados.info()
 ```
 
-# [1.2 — Tipos de Dados]{.section-header}
+# [1.2  -  Tipos de Dados]{.section-header}
 
 ## Variáveis Qualitativas {.smaller-text}
 
@@ -120,9 +120,9 @@ dados['Idade'].value_counts().sort_index().head(20)
 ::: {.info-box}
 A variável **idade** pode ser classificada como:
 
-1. **Quantitativa discreta** — anos completos
-2. **Quantitativa contínua** — idade exata
-3. **Qualitativa ordinal** — faixas de idade
+1. **Quantitativa discreta**  -  anos completos
+2. **Quantitativa contínua**  -  idade exata
+3. **Qualitativa ordinal**  -  faixas de idade
 :::
 :::
 
@@ -141,11 +141,11 @@ dados['Renda'].describe()
 :::
 :::
 
-# [2 — Distribuição de Frequências]{.section-header}
+# [2  -  Distribuição de Frequências]{.section-header}
 
-## 2.1 — Variáveis Qualitativas {.smaller-text}
+## 2.1  -  Variáveis Qualitativas {.smaller-text}
 
-### Método 1 — [value_counts()](https://pandas.pydata.org/docs/reference/api/pandas.Series.value_counts.html)
+### Método 1  -  [value_counts()](https://pandas.pydata.org/docs/reference/api/pandas.Series.value_counts.html)
 
 ```python
 frequencia = dados['Sexo'].value_counts()
@@ -157,7 +157,7 @@ percentual = dados['Sexo'].value_counts(normalize=True) * 100
 percentual
 ```
 
-### Método 2 — [crosstab()](https://pandas.pydata.org/docs/reference/api/pandas.crosstab.html)
+### Método 2  -  [crosstab()](https://pandas.pydata.org/docs/reference/api/pandas.crosstab.html)
 
 ```python
 pd.crosstab(dados['Sexo'], columns='Frequência')
@@ -165,7 +165,7 @@ pd.crosstab(dados['Sexo'], columns='Frequência')
 
 ---
 
-## 2.2 — Variáveis Quantitativas (classes personalizadas) {.smaller-text}
+## 2.2  -  Variáveis Quantitativas (classes personalizadas) {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -200,7 +200,7 @@ dados['Classe'].value_counts().sort_index()
 
 ---
 
-## 2.3 — Variáveis Quantitativas (amplitude fixa) {.smaller-text}
+## 2.3  -  Variáveis Quantitativas (amplitude fixa) {.smaller-text}
 
 ### Regra de Sturges
 
@@ -222,9 +222,9 @@ frequencias
 
 ---
 
-## 2.4 — Histograma {.smaller-text}
+## 2.4  -  Histograma {.smaller-text}
 
-[seaborn — Statistical Data Visualization](https://seaborn.pydata.org/)
+[seaborn  -  Statistical Data Visualization](https://seaborn.pydata.org/)
 
 ```python
 import seaborn as sns
@@ -241,7 +241,7 @@ ax.set(title='Distribuição da Renda', xlabel='Renda (R$)', ylabel='Frequência
 plt.show()
 ```
 
-# [3 — Medidas de Tendência Central]{.section-header}
+# [3  -  Medidas de Tendência Central]{.section-header}
 
 ## DataFrame de Exemplo {.smaller-text}
 
@@ -254,7 +254,7 @@ df_exemplo
 
 ---
 
-## 3.1 — Média Aritmética {.smaller-text}
+## 3.1  -  Média Aritmética {.smaller-text}
 
 Representada por $\mu$ (população) e $\bar{X}$ (amostra):
 
@@ -274,7 +274,7 @@ dados['Idade'].mean()
 
 ---
 
-## 3.2 — Mediana {.smaller-text}
+## 3.2  -  Mediana {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -303,7 +303,7 @@ dados['Altura'].median()
 
 ---
 
-## 3.3 — Moda {.smaller-text}
+## 3.3  -  Moda {.smaller-text}
 
 Valor **mais frequente** de um conjunto de dados. Bastante utilizada para dados qualitativos.
 
@@ -317,7 +317,7 @@ dados['Idade'].mode()
 
 ---
 
-## 3.4 — Relação entre Média, Mediana e Moda {.smaller-text}
+## 3.4  -  Relação entre Média, Mediana e Moda {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -347,9 +347,9 @@ plt.show()
 :::
 :::
 
-# [4 — Medidas Separatrizes]{.section-header}
+# [4  -  Medidas Separatrizes]{.section-header}
 
-## 4.1 — Quartis, Decis e Percentis {.smaller-text}
+## 4.1  -  Quartis, Decis e Percentis {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
@@ -373,7 +373,7 @@ dados['Renda'].quantile([0.1, 0.2, 0.3, 0.4,
 
 ---
 
-## 4.2 — Box-plot {.smaller-text}
+## 4.2  -  Box-plot {.smaller-text}
 
 O box plot dá uma ideia de: **posição**, **dispersão**, **assimetria**, **caudas** e **outliers**.
 
@@ -389,9 +389,9 @@ ax.set(title='Box-plot: Renda', xlabel='Renda (R$)')
 plt.show()
 ```
 
-# [5 — Medidas de Dispersão]{.section-header}
+# [5  -  Medidas de Dispersão]{.section-header}
 
-## 5.1 — Desvio Médio Absoluto {.smaller-text}
+## 5.1  -  Desvio Médio Absoluto {.smaller-text}
 
 $$DM = \frac{1}{n}\sum_{i=1}^{n}|X_i - \bar{X}|$$
 
@@ -401,7 +401,7 @@ dados['Renda'].mad()
 
 ---
 
-## 5.2 — Variância {.smaller-text}
+## 5.2  -  Variância {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -427,7 +427,7 @@ dados['Altura'].var()
 
 ---
 
-## 5.3 — Desvio Padrão {.smaller-text}
+## 5.3  -  Desvio Padrão {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}

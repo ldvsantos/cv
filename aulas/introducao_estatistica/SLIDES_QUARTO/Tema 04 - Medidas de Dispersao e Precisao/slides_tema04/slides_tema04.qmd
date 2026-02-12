@@ -1,13 +1,13 @@
-﻿---
+---
 title: "Medidas de Dispersão e Precisão"
-subtitle: "Aula VII — Amplitude, Variância, Desvio-Padrão, CV e Erro Padrão"
+subtitle: "Aula VII  -  Amplitude, Variância, Desvio-Padrão, CV e Erro Padrão"
 author: "Luiz Diego Vidal Santos"
 institute: "Universidade Estadual de Feira de Santana (UEFS)"
-footer: "UEFS — Introdução à Estatística | Tema 4 — Medidas de Dispersão e Precisão"
+footer: "UEFS  -  Introdução à Estatística | Tema 4  -  Medidas de Dispersão e Precisão"
 format: 
   revealjs:
     logo: ../../../../assets/logo-uefs.webp
-    footer: "UEFS — Introdução à Estatística | Tema 4 — Medidas de Dispersão e Precisão"
+    footer: "UEFS  -  Introdução à Estatística | Tema 4  -  Medidas de Dispersão e Precisão"
     slide-number: true
     theme: [simple, ../../../../assets/uefs.scss]
     controls: true
@@ -88,7 +88,7 @@ AT_tmp <- max(dados$temp_media_c) - min(dados$temp_media_c)
 AT_alt; AT_tmp
 ```
 
-# [2) Média (Mean) — Apoio]{.section-header}
+# [2) Média (Mean)  -  Apoio]{.section-header}
 
 ## Média {.smaller-text}
 

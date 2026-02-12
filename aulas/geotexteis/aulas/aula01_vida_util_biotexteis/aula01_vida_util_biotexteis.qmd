@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Vida Útil de Biotêxteis"
 subtitle: "Modelagem de Degradação sob Diferentes Climas<br>Geotêxteis e Soluções baseadas na Natureza"
 author: "Luiz Diego Vidal Santos"
@@ -43,7 +43,7 @@ Compreender os mecanismos de degradação de biotêxteis fabricados com fibras n
 :::
 :::
 
-# [1 — O QUE SÃO BIOTÊXTEIS?]{.section-header}
+# [1  -  O QUE SÃO BIOTÊXTEIS?]{.section-header}
 
 ## Definição e tipos {.smaller-text}
 
@@ -69,7 +69,7 @@ Compreender os mecanismos de degradação de biotêxteis fabricados com fibras n
 ::: {.column width="50%"}
 ![Tear artesanal para confecção de biotêxteis com fibras naturais](img/tear_fibras.jpg){width="100%"}
 
-![Fibra de junco — matéria-prima para geotêxteis biodegradáveis](img/junco_fibra.jpg){width="100%"}
+![Fibra de junco  -  matéria-prima para geotêxteis biodegradáveis](img/junco_fibra.jpg){width="100%"}
 :::
 :::
 
@@ -83,7 +83,7 @@ Compreender os mecanismos de degradação de biotêxteis fabricados com fibras n
 
 : {.striped .hover}
 
-**Biotêxteis são projetados para degradar** — a questão é: *degradam na velocidade certa?*
+**Biotêxteis são projetados para degradar**  -  a questão é: *degradam na velocidade certa?*
 :::
 :::
 :::
@@ -96,10 +96,10 @@ Compreender os mecanismos de degradação de biotêxteis fabricados com fibras n
 ::: {.column width="55%"}
 A escolha por biotêxteis é adequada quando:
 
-1. **A vegetação se estabelece em 1–3 anos** — o biotêxtil protege o solo até a cobertura vegetal assumir
-2. **O impacto ambiental é relevante** — áreas de preservação, margens de rios, APPs
-3. **Disponibilidade local de fibras** — reduz custo e gera renda para comunidades
-4. **O projeto é temporário** — taludes de construção civil, estradas rurais
+1. **A vegetação se estabelece em 1–3 anos**  -  o biotêxtil protege o solo até a cobertura vegetal assumir
+2. **O impacto ambiental é relevante**  -  áreas de preservação, margens de rios, APPs
+3. **Disponibilidade local de fibras**  -  reduz custo e gera renda para comunidades
+4. **O projeto é temporário**  -  taludes de construção civil, estradas rurais
 :::
 
 ::: {.column width="45%"}
@@ -111,7 +111,7 @@ A escolha por biotêxteis é adequada quando:
 **Conceito-chave:** o biotêxtil deve manter resistência funcional mínima **até que a vegetação feche o solo**. Degradação prematura = exposição do solo. Degradação lenta demais = impede o enraizamento.
 :::
 
-# [2 — MECANISMOS DE DEGRADAÇÃO]{.section-header}
+# [2  -  MECANISMOS DE DEGRADAÇÃO]{.section-header}
 
 ## Processos de degradação {.smaller-text}
 
@@ -146,12 +146,12 @@ A escolha por biotêxteis é adequada quando:
 - Pisoteio animal em áreas de pastagem
 
 ::: {.highlight-box}
-**Na prática**, a degradação é **sinérgica** — todos os mecanismos atuam simultaneamente.
+**Na prática**, a degradação é **sinérgica**  -  todos os mecanismos atuam simultaneamente.
 :::
 :::
 :::
 
-# [3 — CLIMA TROPICAL VS. TEMPERADO]{.section-header}
+# [3  -  CLIMA TROPICAL VS. TEMPERADO]{.section-header}
 
 ## Comparação de condições {.smaller-text}
 
@@ -183,14 +183,14 @@ A escolha por biotêxteis é adequada quando:
 | 6 | 35% | 72% | 78% | 90% |
 | 12 | 10% | 45% | 55% | 78% |
 | 18 | ~0% | 25% | 35% | 62% |
-| 24 | — | 10% | 20% | 48% |
-| 36 | — | ~0% | 8% | 30% |
+| 24 |  -  | 10% | 20% | 48% |
+| 36 |  -  | ~0% | 8% | 30% |
 
 : {.striped .hover}
 
 **Fonte:** adaptado de Sarsby (2007), Smets et al. (2011), Santos et al. (2023).
 
-# [4 — MODELOS DE DEGRADAÇÃO]{.section-header}
+# [4  -  MODELOS DE DEGRADAÇÃO]{.section-header}
 
 ## Modelo exponencial simples {.smaller-text}
 
@@ -262,7 +262,7 @@ $R(12) = 15 \times e^{-0{,}19 \times 12} = 15 \times 0{,}10 = 1{,}5$ kN/m
 :::
 :::
 
-# [5 — APLICAÇÃO PRÁTICA]{.section-header}
+# [5  -  APLICAÇÃO PRÁTICA]{.section-header}
 
 ## Planilha de cálculo preditivo {.smaller-text}
 
@@ -273,10 +273,10 @@ $R(12) = 15 \times e^{-0{,}19 \times 12} = 15 \times 0{,}10 = 1{,}5$ kN/m
 | Coluna | Conteúdo |
 |--------|----------|
 | A | Tempo (meses): 0, 1, 2, ..., 36 |
-| B | R₀ (kN/m) — resistência inicial |
-| C | k — constante de degradação |
+| B | R₀ (kN/m)  -  resistência inicial |
+| C | k  -  constante de degradação |
 | D | R(t) = B2 × EXP(-C2 × A2) |
-| E | R_min (kN/m) — limite funcional |
+| E | R_min (kN/m)  -  limite funcional |
 | F | Verificação: SE(D2 > E2; "OK"; "FALHA") |
 
 : {.striped .hover}
@@ -338,7 +338,7 @@ Para a vida útil funcional:
 
 ---
 
-## Exercício — Entrega {.smaller-text}
+## Exercício  -  Entrega {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="60%"}
@@ -360,7 +360,7 @@ Para a vida útil funcional:
 - Smets, T. et al. (2011). The importance of geotextile characteristics on erosion reduction. *Soil Technology*, 24(1), 69–80.
 - Santos, L. D. V. et al. (2023). Vida útil de geotêxteis de taboa (*Typha*). *Engenharia Sanitária e Ambiental*.
 - Lekha, K. R. (2004). Field instrumentation and monitoring of soil erosion in coir geotextile stabilised slopes. *Geotextiles and Geomembranes*, 22(5), 399–413.
-- ABNT NBR ISO 10318:2013 — Geossintéticos — Termos e definições.
+- ABNT NBR ISO 10318:2013  -  Geossintéticos  -  Termos e definições.
 
 # {background-color="#034EA2"}
 

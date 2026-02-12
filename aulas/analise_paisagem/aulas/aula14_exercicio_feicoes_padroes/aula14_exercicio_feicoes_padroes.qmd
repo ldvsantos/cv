@@ -1,6 +1,6 @@
-﻿---
+---
 title: "Análise da Paisagem"
-subtitle: "Aula 14 — Exercício: Identificação de Feições e Padrões<br>Curso de Geografia"
+subtitle: "Aula 14  -  Exercício: Identificação de Feições e Padrões<br>Curso de Geografia"
 author: "Luiz Diego Vidal Santos"
 institute: "Universidade Estadual de Feira de Santana (UEFS)"
 date: "2026-04-08"
@@ -44,7 +44,7 @@ Aplicar os fundamentos de sensoriamento remoto da Aula 13 em **exercício práti
 :::
 :::
 
-# [1 — ROTEIRO DO EXERCÍCIO]{.section-header}
+# [1  -  ROTEIRO DO EXERCÍCIO]{.section-header}
 
 ## Estrutura da atividade prática {.smaller-text}
 
@@ -99,7 +99,7 @@ Ao final da aula, cada estudante terá:
 :::
 :::
 
-# [2 — COMPOSIÇÕES COLORIDAS]{.section-header}
+# [2  -  COMPOSIÇÕES COLORIDAS]{.section-header}
 
 ## Etapa 1: acessar imagem e gerar composições {.smaller-text}
 
@@ -165,7 +165,7 @@ Map.addLayer(imagem,
 :::
 :::
 
-# [3 — ÍNDICES ESPECTRAIS]{.section-header}
+# [3  -  ÍNDICES ESPECTRAIS]{.section-header}
 
 ## Etapa 2: cálculo de NDVI e NDWI {.smaller-text}
 
@@ -234,7 +234,7 @@ Map.addLayer(agua.selfMask(),
 :::
 :::
 
-# [4 — IDENTIFICAÇÃO DE FEIÇÕES]{.section-header}
+# [4  -  IDENTIFICAÇÃO DE FEIÇÕES]{.section-header}
 
 ## Etapa 3: mapeamento de feições {.smaller-text}
 
@@ -287,7 +287,7 @@ Usando as composições e índices, identifique na área de estudo:
 :::
 :::
 
-# [5 — COMPARAÇÃO COM MAPBIOMAS]{.section-header}
+# [5  -  COMPARAÇÃO COM MAPBIOMAS]{.section-header}
 
 ## Etapa 4: validação cruzada {.smaller-text}
 
@@ -308,7 +308,7 @@ Usando as composições e índices, identifique na área de estudo:
 - O MapBiomas **omite** alguma feição que você identificou?
 - Alguma classe do MapBiomas **não faz sentido** na sua análise?
 
-> Discordâncias são normais e esperadas — diferenças de resolução (30 m MapBiomas vs. 10 m Sentinel-2) e método (automático vs. visual).
+> Discordâncias são normais e esperadas  -  diferenças de resolução (30 m MapBiomas vs. 10 m Sentinel-2) e método (automático vs. visual).
 :::
 
 ::: {.column width="50%"}
@@ -320,19 +320,19 @@ Usando as composições e índices, identifique na área de estudo:
 | Fragmento 1 | Mata ciliar | Formação florestal | ✅ Sim | Boa concordância |
 | Pastagem N | Pastagem degradada | Pastagem | ✅ Parcial | MapBiomas não distingue degradação |
 | Solo exposto | Solo exposto (erosão) | Pastagem | ❌ Não | Resolução 30 m não detectou |
-| Açude | Corpo d'água | Corpo d'água | ✅ Sim | — |
-| Pivô | Cultura irrigada | Agricultura | ✅ Sim | — |
+| Açude | Corpo d'água | Corpo d'água | ✅ Sim |  -  |
+| Pivô | Cultura irrigada | Agricultura | ✅ Sim |  -  |
 
 : {.striped .hover}
 
 ### Reflexão
 
-> *"O mapa não é o território."* A classificação automática tem **limitações** (resolução, método, época). A interpretação visual do analista **complementa** a classificação automática — e vice-versa.
+> *"O mapa não é o território."* A classificação automática tem **limitações** (resolução, método, época). A interpretação visual do analista **complementa** a classificação automática  -  e vice-versa.
 :::
 :::
 :::
 
-# [6 — DISCUSSÃO E SÍNTESE]{.section-header}
+# [6  -  DISCUSSÃO E SÍNTESE]{.section-header}
 
 ## Etapa 5: discussão coletiva {.smaller-text}
 
@@ -378,11 +378,11 @@ Usando as composições e índices, identifique na área de estudo:
 **O que fizemos hoje**
 
 1. **Acessamos imagem Sentinel-2** no GEE para a área de estudo
-2. **Geramos composições coloridas** — cor verdadeira, falsa cor, SWIR
-3. **Calculamos índices** — NDVI (vegetação) e NDWI (água)
-4. **Identificamos feições** — fragmentos, pastagem, solo exposto, água, infraestrutura
-5. **Comparamos com MapBiomas** — concordâncias e discordâncias
-6. **Discutimos limitações** — resolução, sazonalidade, método
+2. **Geramos composições coloridas**  -  cor verdadeira, falsa cor, SWIR
+3. **Calculamos índices**  -  NDVI (vegetação) e NDWI (água)
+4. **Identificamos feições**  -  fragmentos, pastagem, solo exposto, água, infraestrutura
+5. **Comparamos com MapBiomas**  -  concordâncias e discordâncias
+6. **Discutimos limitações**  -  resolução, sazonalidade, método
 :::
 
 # {background-color="#034EA2"}
@@ -394,5 +394,5 @@ Luiz Diego Vidal Santos
 
 Universidade Estadual de Feira de Santana (UEFS)
 
-Análise da Paisagem — Aula 14
+Análise da Paisagem  -  Aula 14
 :::

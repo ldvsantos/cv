@@ -1,13 +1,13 @@
-﻿---
+---
 title: "Estatística Descritiva"
-subtitle: "Aulas VI e VIII — Medidas de Posição e Dispersão"
+subtitle: "Aulas VI e VIII  -  Medidas de Posição e Dispersão"
 author: "Luiz Diego Vidal Santos"
 institute: "Universidade Estadual de Feira de Santana (UEFS)"
-footer: "UEFS — Introdução à Estatística | Tema 5 — Estatística Descritiva Completa"
+footer: "UEFS  -  Introdução à Estatística | Tema 5  -  Estatística Descritiva Completa"
 format: 
   revealjs:
     logo: ../../../../assets/logo-uefs.webp
-    footer: "UEFS — Introdução à Estatística | Tema 5 — Estatística Descritiva Completa"
+    footer: "UEFS  -  Introdução à Estatística | Tema 5  -  Estatística Descritiva Completa"
     slide-number: true
     theme: [simple, ../../../../assets/uefs.scss]
     controls: true
@@ -100,7 +100,7 @@ Investigação dos níveis de crescimento radicular de plantas frente ao uso de 
 
 ---
 
-## 1.1 — Criando os Dados de Exemplo {.smaller-text}
+## 1.1  -  Criando os Dados de Exemplo {.smaller-text}
 
 ```{r}
 #| eval: false
@@ -112,7 +112,7 @@ length(dados)
 
 ---
 
-## 1.2 — Média {.smaller-text}
+## 1.2  -  Média {.smaller-text}
 
 A média representa o **valor central** de um conjunto de dados.
 
@@ -126,7 +126,7 @@ media
 
 ---
 
-## 1.3 — Moda {.smaller-text}
+## 1.3  -  Moda {.smaller-text}
 
 A moda é o valor que ocorre com **maior frequência** no conjunto.
 
@@ -149,7 +149,7 @@ moda(dados)
 
 ---
 
-## 1.4 — Mediana {.smaller-text}
+## 1.4  -  Mediana {.smaller-text}
 
 A mediana divide os dados ordenados em **duas metades iguais**.
 
@@ -186,7 +186,7 @@ mediana
 
 ---
 
-## 1.5 — Variância {.smaller-text}
+## 1.5  -  Variância {.smaller-text}
 
 A variância mede a **dispersão** dos valores em relação à média.
 
@@ -200,7 +200,7 @@ variancia
 
 ---
 
-## 2.1 — Desvio-Padrão {.smaller-text}
+## 2.1  -  Desvio-Padrão {.smaller-text}
 
 O desvio-padrão é a **raiz quadrada da variância**, expresso na mesma unidade dos dados.
 
@@ -214,7 +214,7 @@ desvio_padrao
 
 ---
 
-## 2.2 — Erro-Padrão {.smaller-text}
+## 2.2  -  Erro-Padrão {.smaller-text}
 
 O erro-padrão estima a **variabilidade da média amostral**.
 
@@ -229,7 +229,7 @@ erro_padrao
 
 ---
 
-## 2.2 — Escore Z {.smaller-text}
+## 2.2  -  Escore Z {.smaller-text}
 
 O escore Z indica a posição de cada valor em **unidades de desvio-padrão**.
 
@@ -243,7 +243,7 @@ escore_z
 
 ---
 
-## 2.3 — Intervalo de Confiança {.smaller-text}
+## 2.3  -  Intervalo de Confiança {.smaller-text}
 
 O intervalo de confiança indica a faixa onde a **média populacional** provavelmente se encontra.
 
@@ -264,7 +264,7 @@ list(IC_90 = ic_90, IC_95 = ic_95, IC_99 = ic_99)
 
 ---
 
-## 2.4 — Visualização {.smaller-text}
+## 2.4  -  Visualização {.smaller-text}
 
 ```{r}
 #| eval: false

@@ -1,6 +1,6 @@
-﻿---
+---
 title: "Análise da Paisagem"
-subtitle: "Aula 09 — Interpretação Visual da Paisagem<br>Curso de Geografia"
+subtitle: "Aula 09  -  Interpretação Visual da Paisagem<br>Curso de Geografia"
 author: "Luiz Diego Vidal Santos"
 institute: "Universidade Estadual de Feira de Santana (UEFS)"
 date: "2026-03-25"
@@ -43,7 +43,7 @@ Desenvolver a capacidade de **interpretação visual** de imagens de satélite e
 :::
 :::
 
-# [1 — FUNDAMENTOS DA INTERPRETAÇÃO VISUAL]{.section-header}
+# [1  -  FUNDAMENTOS DA INTERPRETAÇÃO VISUAL]{.section-header}
 
 ## O que é interpretação visual? {.smaller-text}
 
@@ -70,18 +70,18 @@ A **interpretação visual** é o processo de extrair informações sobre a pais
 ::: {.highlight-box}
 **Por que interpretação visual importa?**
 
-1. **Nenhum algoritmo substitui o olhar treinado** — o analista integra contexto, conhecimento local e raciocínio que a máquina não tem
-2. **Validação** — toda classificação digital precisa ser validada visualmente
-3. **Descoberta** — o olho humano identifica padrões e anomalias que métricas não captam
-4. **Campo** — a interpretação visual prepara o trabalho de campo (saber o que procurar)
-5. **Comunicação** — descrever o que se vê é habilidade essencial no diagnóstico
+1. **Nenhum algoritmo substitui o olhar treinado**  -  o analista integra contexto, conhecimento local e raciocínio que a máquina não tem
+2. **Validação**  -  toda classificação digital precisa ser validada visualmente
+3. **Descoberta**  -  o olho humano identifica padrões e anomalias que métricas não captam
+4. **Campo**  -  a interpretação visual prepara o trabalho de campo (saber o que procurar)
+5. **Comunicação**  -  descrever o que se vê é habilidade essencial no diagnóstico
 
 > *"A imagem de satélite não fala por si. É o analista que a traduz em informação."*
 :::
 :::
 :::
 
-# [2 — ELEMENTOS DE INTERPRETAÇÃO]{.section-header}
+# [2  -  ELEMENTOS DE INTERPRETAÇÃO]{.section-header}
 
 ## Os oito elementos fundamentais {.smaller-text}
 
@@ -108,7 +108,7 @@ A **interpretação visual** é o processo de extrair informações sobre a pais
 
 Cada feição da paisagem tem uma **assinatura visual** composta por combinações desses elementos:
 
-**Exemplo — Floresta:**
+**Exemplo  -  Floresta:**
 
 - Tonalidade: verde-escuro
 - Textura: rugosa (copas irregulares)
@@ -116,7 +116,7 @@ Cada feição da paisagem tem uma **assinatura visual** composta por combinaçõ
 - Padrão: contínuo ou fragmentado
 - Associação: próxima a cursos d'água, encostas
 
-**Exemplo — Área urbana:**
+**Exemplo  -  Área urbana:**
 
 - Tonalidade: cinza/branco (concreto, telhados)
 - Textura: fina e regular (lotes, quadras)
@@ -141,9 +141,9 @@ Cada feição da paisagem tem uma **assinatura visual** composta por combinaçõ
 
 ### Cor (composições coloridas)
 
-- **Cor verdadeira** (RGB: 4-3-2) — aparência natural
-- **Falsa cor** (RGB: 5-4-3 ou NIR-R-G) — vegetação em vermelho
-- **Índices** (NDVI, NDWI) — destaca vegetação ou água
+- **Cor verdadeira** (RGB: 4-3-2)  -  aparência natural
+- **Falsa cor** (RGB: 5-4-3 ou NIR-R-G)  -  vegetação em vermelho
+- **Índices** (NDVI, NDWI)  -  destaca vegetação ou água
 
 ### Na análise de paisagem
 
@@ -179,16 +179,16 @@ A tonalidade/cor permite a **primeira separação** entre coberturas: vegetaçã
 ::: {.column width="50%"}
 ### Textura
 
-- **Lisa/fina** — superfícies uniformes (água calma, pastagem, solo preparado)
-- **Rugosa/grosseira** — superfícies irregulares (copa de árvores, relevo acidentado)
-- A textura depende da **resolução** do sensor — pixel de 10 m mostra textura diferente de pixel de 30 m
+- **Lisa/fina**  -  superfícies uniformes (água calma, pastagem, solo preparado)
+- **Rugosa/grosseira**  -  superfícies irregulares (copa de árvores, relevo acidentado)
+- A textura depende da **resolução** do sensor  -  pixel de 10 m mostra textura diferente de pixel de 30 m
 
 ### Forma
 
-- **Regular/geométrica** — ação humana (talhões, pivôs, lotes urbanos)
-- **Irregular/orgânica** — processos naturais (fragmentos florestais, leitos fluviais)
-- **Linear** — estradas, rios, corredores, linhas de transmissão
-- **Circular** — pivôs centrais, crateras, represas circulares
+- **Regular/geométrica**  -  ação humana (talhões, pivôs, lotes urbanos)
+- **Irregular/orgânica**  -  processos naturais (fragmentos florestais, leitos fluviais)
+- **Linear**  -  estradas, rios, corredores, linhas de transmissão
+- **Circular**  -  pivôs centrais, crateras, represas circulares
 :::
 
 ::: {.column width="50%"}
@@ -214,7 +214,7 @@ Textura, forma e padrão ajudam a distinguir:
 :::
 :::
 
-# [3 — CHAVES DE INTERPRETAÇÃO]{.section-header}
+# [3  -  CHAVES DE INTERPRETAÇÃO]{.section-header}
 
 ## Chave de interpretação para a paisagem {.smaller-text}
 
@@ -242,7 +242,7 @@ Textura, forma e padrão ajudam a distinguir:
 Esta chave é uma **referência inicial** para a região de Feira de Santana. Deve ser adaptada conforme o contexto local e a data da imagem.
 :::
 
-# [4 — ROTEIRO DE INTERPRETAÇÃO]{.section-header}
+# [4  -  ROTEIRO DE INTERPRETAÇÃO]{.section-header}
 
 ## Roteiro sistemático {.smaller-text}
 
@@ -275,7 +275,7 @@ Esta chave é uma **referência inicial** para a região de Feira de Santana. De
 
 6. **Síntese descritiva**
    - Texto que articula o que foi observado: componentes, padrões, relações, processos, pressões
-   - Deve ser **descritivo-interpretativo** — não apenas lista de elementos, mas explicação das relações
+   - Deve ser **descritivo-interpretativo**  -  não apenas lista de elementos, mas explicação das relações
 
 ### Produto
 
@@ -286,7 +286,7 @@ Esta chave é uma **referência inicial** para a região de Feira de Santana. De
 :::
 :::
 
-# [5 — EXERCÍCIO PRÁTICO]{.section-header}
+# [5  -  EXERCÍCIO PRÁTICO]{.section-header}
 
 ## Atividade: interpretação visual da área de estudo {.smaller-text}
 
@@ -336,13 +336,13 @@ Duas duplas apresentam imagem anotada + síntese (5 min cada).
 ::: {.info-box}
 **O que vimos hoje**
 
-1. **Interpretação visual** — extração analítica de informações da imagem por olho treinado
-2. **Oito elementos** — tonalidade, textura, forma, tamanho, sombra, padrão, associação, contexto
-3. **Tonalidade e cor** — primeira triagem de coberturas; depende do sensor e da data
-4. **Textura, forma e padrão** — distinguem natural de antrópico; indicam processos
-5. **Chave de interpretação** — referência para feições típicas da paisagem regional
-6. **Roteiro de 6 passos** — visão geral → classes → manchas/corredores → relações → pressões → síntese
-7. **Síntese descritivo-interpretativa** — articulação textual de padrões, processos e relações
+1. **Interpretação visual**  -  extração analítica de informações da imagem por olho treinado
+2. **Oito elementos**  -  tonalidade, textura, forma, tamanho, sombra, padrão, associação, contexto
+3. **Tonalidade e cor**  -  primeira triagem de coberturas; depende do sensor e da data
+4. **Textura, forma e padrão**  -  distinguem natural de antrópico; indicam processos
+5. **Chave de interpretação**  -  referência para feições típicas da paisagem regional
+6. **Roteiro de 6 passos**  -  visão geral → classes → manchas/corredores → relações → pressões → síntese
+7. **Síntese descritivo-interpretativa**  -  articulação textual de padrões, processos e relações
 :::
 
 # {background-color="#034EA2"}
@@ -354,5 +354,5 @@ Luiz Diego Vidal Santos
 
 Universidade Estadual de Feira de Santana (UEFS)
 
-Análise da Paisagem — Aula 09
+Análise da Paisagem  -  Aula 09
 :::

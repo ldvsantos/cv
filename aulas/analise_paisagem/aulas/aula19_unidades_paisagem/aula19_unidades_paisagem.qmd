@@ -1,6 +1,6 @@
-﻿---
+---
 title: "Análise da Paisagem"
-subtitle: "Aula 19 — Unidades de Paisagem: Delimitação e Caracterização<br>Curso de Geografia"
+subtitle: "Aula 19  -  Unidades de Paisagem: Delimitação e Caracterização<br>Curso de Geografia"
 author: "Luiz Diego Vidal Santos"
 institute: "Universidade Estadual de Feira de Santana (UEFS)"
 date: "2026-04-29"
@@ -39,12 +39,12 @@ execute:
 ::: {.info-box}
 **Objetivo da Aula**
 
-Compreender o conceito de **unidades de paisagem**, aplicar **critérios de delimitação** e elaborar **fichas descritivas** integrando evidências cartográficas, espectrais e métricas para a área de estudo — etapa central do dossiê.
+Compreender o conceito de **unidades de paisagem**, aplicar **critérios de delimitação** e elaborar **fichas descritivas** integrando evidências cartográficas, espectrais e métricas para a área de estudo  -  etapa central do dossiê.
 :::
 :::
 :::
 
-# [1 — O QUE SÃO UNIDADES DE PAISAGEM]{.section-header}
+# [1  -  O QUE SÃO UNIDADES DE PAISAGEM]{.section-header}
 
 ## Conceito e finalidade {.smaller-text}
 
@@ -64,10 +64,10 @@ Compreender o conceito de **unidades de paisagem**, aplicar **critérios de deli
 
 ### Finalidade
 
-1. **Síntese espacial** — organizar a diversidade da paisagem em unidades manejáveis
-2. **Diagnóstico** — cada unidade permite avaliação específica de potencialidades e limitações
-3. **Planejamento** — base para zoneamentos e diretrizes diferenciadas
-4. **Comunicação** — facilitar a leitura do território por diferentes atores
+1. **Síntese espacial**  -  organizar a diversidade da paisagem em unidades manejáveis
+2. **Diagnóstico**  -  cada unidade permite avaliação específica de potencialidades e limitações
+3. **Planejamento**  -  base para zoneamentos e diretrizes diferenciadas
+4. **Comunicação**  -  facilitar a leitura do território por diferentes atores
 :::
 
 ::: {.column width="50%"}
@@ -95,12 +95,12 @@ Uma **"Planície fluvial com pastagem degradada e fragmentos de mata ciliar"** �
 - Vegetação remanescente (mata ciliar)
 - Processo (erosão fluvial, assoreamento)
 
-> A unidade não é apenas "pastagem" — é a **articulação** de componentes em um espaço funcional.
+> A unidade não é apenas "pastagem"  -  é a **articulação** de componentes em um espaço funcional.
 :::
 :::
 :::
 
-# [2 — CRITÉRIOS DE DELIMITAÇÃO]{.section-header}
+# [2  -  CRITÉRIOS DE DELIMITAÇÃO]{.section-header}
 
 ## Que variáveis usar? {.smaller-text}
 
@@ -146,12 +146,12 @@ Uma **"Planície fluvial com pastagem degradada e fragmentos de mata ciliar"** �
 
 > *"A delimitação de unidades de paisagem é um ato de SÍNTESE, não de soma."*
 
-Não se trata de sobrepor todos os mapas. Trata-se de identificar **padrões recorrentes** — combinações de relevo + cobertura + uso + processo que se repetem e definem porções funcionalmente distintas do território.
+Não se trata de sobrepor todos os mapas. Trata-se de identificar **padrões recorrentes**  -  combinações de relevo + cobertura + uso + processo que se repetem e definem porções funcionalmente distintas do território.
 :::
 :::
 :::
 
-# [3 — MÉTODOS DE DELIMITAÇÃO]{.section-header}
+# [3  -  MÉTODOS DE DELIMITAÇÃO]{.section-header}
 
 ## Abordagens práticas {.smaller-text}
 
@@ -161,7 +161,7 @@ Não se trata de sobrepor todos os mapas. Trata-se de identificar **padrões rec
 
 1. Reunir mapas temáticos (relevo, uso, vegetação, processos)
 2. Sobrepor em GIS (QGIS)
-3. Identificar **zonas de convergência** — onde vários fatores mudam simultaneamente
+3. Identificar **zonas de convergência**  -  onde vários fatores mudam simultaneamente
 4. Delimitar limites com base nos gradientes
 
 **Vantagem:** reproduzível, particiável
@@ -170,7 +170,7 @@ Não se trata de sobrepor todos os mapas. Trata-se de identificar **padrões rec
 ### Método 2: Interpretação integrada (expert)
 
 1. Visualizar composições de imagem + MDE + mapas
-2. Identificar **padrões visuais** — textura, tonalidade, forma, arranjo
+2. Identificar **padrões visuais**  -  textura, tonalidade, forma, arranjo
 3. Delimitar unidades por **julgamento do especialista**
 4. Validar com dados e/ou campo
 
@@ -189,11 +189,11 @@ Não se trata de sobrepor todos os mapas. Trata-se de identificar **padrões rec
 
 | Nível | Escala | Critério dominante | Exemplo |
 |-------|:------:|-------------------|---------|
-| **1 — Domínio** | Regional | Clima + bioma | Semiárido / Caatinga |
-| **2 — Região** | Sub-regional | Geomorfologia | Depressão sertaneja |
-| **3 — Geossistema** | Paisagem | Relevo + cobertura | Pediplano com caatinga |
-| **4 — Geofácies** | Local | Uso + vegetação | Pastagem em glacis |
-| **5 — Geótopo** | Sítio | Microprocesso | Voçoroca em vertente |
+| **1  -  Domínio** | Regional | Clima + bioma | Semiárido / Caatinga |
+| **2  -  Região** | Sub-regional | Geomorfologia | Depressão sertaneja |
+| **3  -  Geossistema** | Paisagem | Relevo + cobertura | Pediplano com caatinga |
+| **4  -  Geofácies** | Local | Uso + vegetação | Pastagem em glacis |
+| **5  -  Geótopo** | Sítio | Microprocesso | Voçoroca em vertente |
 
 : {.striped .hover}
 
@@ -203,7 +203,7 @@ Não se trata de sobrepor todos os mapas. Trata-se de identificar **padrões rec
 :::
 :::
 
-# [4 — FICHA DESCRITIVA]{.section-header}
+# [4  -  FICHA DESCRITIVA]{.section-header}
 
 ## Modelo de caracterização {.smaller-text}
 
@@ -222,7 +222,7 @@ Não se trata de sobrepor todos os mapas. Trata-se de identificar **padrões rec
 | **Uso** | Pecuária extensiva de baixa produtividade |
 | **Processos** | Erosão marginal, assoreamento, compactação do solo |
 | **Pressões** | Sobrepastejo, supressão de mata ciliar, eventos de cheia |
-| **Vulnerabilidade** | Alta — solo exposto em margem, APP desprotegida |
+| **Vulnerabilidade** | Alta  -  solo exposto em margem, APP desprotegida |
 | **Potencialidade** | Restauração de APP, pasto com manejo, corredor ecológico |
 | **NDVI médio** | 0,22 (pastagem degradada) |
 | **Evidências** | Mapa uso/cobertura, NDVI, imagem Sentinel-2, MDE |
@@ -277,7 +277,7 @@ Não se trata de sobrepor todos os mapas. Trata-se de identificar **padrões rec
 :::
 :::
 
-# [5 — OFICINA PRÁTICA]{.section-header}
+# [5  -  OFICINA PRÁTICA]{.section-header}
 
 ## Atividade: delimitar unidades na área de estudo {.smaller-text}
 
@@ -316,7 +316,7 @@ Não se trata de sobrepor todos os mapas. Trata-se de identificar **padrões rec
 
 **Prazo:** até Aula 20 (mesma semana)
 
-> Este produto será a peça-chave do dossiê — o **mapa-síntese** que organiza toda a análise.
+> Este produto será a peça-chave do dossiê  -  o **mapa-síntese** que organiza toda a análise.
 :::
 :::
 :::
@@ -328,12 +328,12 @@ Não se trata de sobrepor todos os mapas. Trata-se de identificar **padrões rec
 ::: {.info-box}
 **O que vimos hoje**
 
-1. **Unidades de paisagem** — conceito: porções homogêneas e funcionalmente integradas
-2. **Critérios** — 3 ordens: estruturais (relevo/solo), cobertura/uso, processos/pressões
-3. **Métodos** — overlay, interpretação integrada, combinação
-4. **Hierarquia escalar** — domínio → região → geossistema → geofácies → geótopo
-5. **Ficha descritiva** — modelo com 13 campos (nome, relevo, cobertura, processos, vulnerabilidade...)
-6. **Oficina** — delimitação e caracterização na área de estudo
+1. **Unidades de paisagem**  -  conceito: porções homogêneas e funcionalmente integradas
+2. **Critérios**  -  3 ordens: estruturais (relevo/solo), cobertura/uso, processos/pressões
+3. **Métodos**  -  overlay, interpretação integrada, combinação
+4. **Hierarquia escalar**  -  domínio → região → geossistema → geofácies → geótopo
+5. **Ficha descritiva**  -  modelo com 13 campos (nome, relevo, cobertura, processos, vulnerabilidade...)
+6. **Oficina**  -  delimitação e caracterização na área de estudo
 :::
 
 # {background-color="#034EA2"}
@@ -345,5 +345,5 @@ Luiz Diego Vidal Santos
 
 Universidade Estadual de Feira de Santana (UEFS)
 
-Análise da Paisagem — Aula 19
+Análise da Paisagem  -  Aula 19
 :::

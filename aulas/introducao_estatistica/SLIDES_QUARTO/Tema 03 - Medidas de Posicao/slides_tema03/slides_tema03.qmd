@@ -1,13 +1,13 @@
-﻿---
+---
 title: "Medidas de Posição"
-subtitle: "Aula VI — Média, Moda e Mediana"
+subtitle: "Aula VI  -  Média, Moda e Mediana"
 author: "Luiz Diego Vidal Santos"
 institute: "Universidade Estadual de Feira de Santana (UEFS)"
-footer: "UEFS — Introdução à Estatística | Tema 3 — Medidas de Posição"
+footer: "UEFS  -  Introdução à Estatística | Tema 3  -  Medidas de Posição"
 format: 
   revealjs:
     logo: ../../../../assets/logo-uefs.webp
-    footer: "UEFS — Introdução à Estatística | Tema 3 — Medidas de Posição"
+    footer: "UEFS  -  Introdução à Estatística | Tema 3  -  Medidas de Posição"
     slide-number: true
     theme: [simple, ../../../../assets/uefs.scss]
     controls: true
@@ -37,9 +37,9 @@ As medidas de posição permitem **resumir e localizar** informações centrais 
 - **Mediana**
 - **Separatrizes** (quartis, decis, percentis)
 
-# [1 — Média]{.section-header}
+# [1  -  Média]{.section-header}
 
-## Caso 1 — Dados não agrupados {.smaller-text}
+## Caso 1  -  Dados não agrupados {.smaller-text}
 
 $$\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}$$
 
@@ -57,7 +57,7 @@ mean(dados)
 
 ---
 
-## Caso 2 — Dados agrupados por valores {.smaller-text}
+## Caso 2  -  Dados agrupados por valores {.smaller-text}
 
 Média ponderada:
 
@@ -91,7 +91,7 @@ weighted.mean(pc, fi)
 
 ---
 
-## Caso 3 — Dados agrupados por classes {.smaller-text}
+## Caso 3  -  Dados agrupados por classes {.smaller-text}
 
 Utilizamos o **ponto médio** de cada classe ($p_i$):
 
@@ -122,7 +122,7 @@ media_idades
 :::
 :::
 
-# [2 — Moda]{.section-header}
+# [2  -  Moda]{.section-header}
 
 ## Conceito e Classificação {.smaller-text}
 
@@ -174,7 +174,7 @@ moda(dados)
 
 ---
 
-## Moda — Fórmula de King (dados agrupados) {.smaller-text}
+## Moda  -  Fórmula de King (dados agrupados) {.smaller-text}
 
 $$Mo = L_i^* + \frac{f_{i+1}}{f_{i+1} + f_{i-1}} \cdot h^*$$
 
@@ -212,7 +212,7 @@ Mo_king
 
 ---
 
-## Moda — Fórmula de Czuber (dados agrupados) {.smaller-text}
+## Moda  -  Fórmula de Czuber (dados agrupados) {.smaller-text}
 
 $$Mo = L_i^* + \frac{\Delta_1}{\Delta_1 + \Delta_2} \cdot h^*$$
 
@@ -238,9 +238,9 @@ Mo
 
 $$Mo = 158 + \frac{6}{6 + 11} \cdot 8 = 158 + 2{,}82 = 160{,}8$$
 
-# [3 — Mediana]{.section-header}
+# [3  -  Mediana]{.section-header}
 
-## Caso 1 — Dados não agrupados {.smaller-text}
+## Caso 1  -  Dados não agrupados {.smaller-text}
 
 A **mediana** (Md) é o valor que divide o conjunto em duas partes iguais.
 
@@ -273,7 +273,7 @@ median(B)
 
 ---
 
-## Caso 3 — Dados agrupados por classes {.smaller-text}
+## Caso 3  -  Dados agrupados por classes {.smaller-text}
 
 $$Md = L_i^* + \frac{\frac{\sum f_i}{2} - F_i'}{f_i^*} \cdot h^*$$
 

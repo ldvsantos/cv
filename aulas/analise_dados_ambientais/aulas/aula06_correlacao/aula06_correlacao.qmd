@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Análise de Correlação"
 subtitle: "Correlação de Pearson, Spearman e Kendall<br>Análise de Dados Ambientais"
 author: "Luiz Diego Vidal Santos"
@@ -329,11 +329,11 @@ Tabela de Correlação
 |  |  |  |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Variável |  | Deformação | Rigidez Secante | Módulo Yong |  | Máxima Carga |  | Resistencia tração |  |
-| Deformação | r de Pearson | — |  |  |  |  |  |  |  |
-| Rigidez Secante | r de Pearson | 0.194 | — |  |  |  |  |  |  |
-| Módulo Yong | r de Pearson | -0.275 * | 0.415 *** | — |  |  |  |  |  |
-| Máxima Carga | r de Pearson | 0.410 *** | 0.809 *** | 0.308 ** |  | — |  |  |  |
-| Resistencia tração | r de Pearson | 0.410 *** | 0.809 *** | 0.308 ** |  | 1.000 *** |  | — |  |
+| Deformação | r de Pearson |  -  |  |  |  |  |  |  |  |
+| Rigidez Secante | r de Pearson | 0.194 |  -  |  |  |  |  |  |  |
+| Módulo Yong | r de Pearson | -0.275 * | 0.415 *** |  -  |  |  |  |  |  |
+| Máxima Carga | r de Pearson | 0.410 *** | 0.809 *** | 0.308 ** |  |  -  |  |  |  |
+| Resistencia tração | r de Pearson | 0.410 *** | 0.809 *** | 0.308 ** |  | 1.000 *** |  |  -  |  |
 |  |  |  |  |  |  |  |  |  |  |
 | * p < .05, ** p < .01, *** p < .001, n.s = Não significativo |  |  |  |  |  |  |  |  |  |
 
@@ -363,11 +363,11 @@ Forma de meia verdade!
 |  |  |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Variável | Deformação | Rigidez Secante | Módulo Yong |  | Máxima Carga |  | Resistencia tração |  |
-| Deformação | — |  |  |  |  |  |  |  |
-| Rigidez Secante | 0.194 | — |  |  |  |  |  |  |
-| Módulo Yong | -0.275 * | 0.415 *** | — |  |  |  |  |  |
-| Máxima Carga | 0.410 *** | 0.809 *** | 0.308 ** |  | — |  |  |  |
-| Resistencia tração | 0.410 *** | 0.809 *** | 0.308 ** |  | 1.000 *** |  | — |  |
+| Deformação |  -  |  |  |  |  |  |  |  |
+| Rigidez Secante | 0.194 |  -  |  |  |  |  |  |  |
+| Módulo Yong | -0.275 * | 0.415 *** |  -  |  |  |  |  |  |
+| Máxima Carga | 0.410 *** | 0.809 *** | 0.308 ** |  |  -  |  |  |  |
+| Resistencia tração | 0.410 *** | 0.809 *** | 0.308 ** |  | 1.000 *** |  |  -  |  |
 |  |  |  |  |  |  |  |  |  |
 | * p < .05, ** p < .01, *** p < .001, n.s = Não significativo |  |  |  |  |  |  |  |  |
 
@@ -390,11 +390,11 @@ http://psychometrica.de/correlation.htm
 |  |  |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Variável | Deformação | Rigidez Secante | Módulo Yong |  | Máxima Carga |  | Resistencia tração |  |
-| Deformação | — |  |  |  |  |  |  |  |
-| Rigidez Secante | 0.194 | — |  |  |  |  |  |  |
-| Módulo Yong | -0.275 * | 0.415 *** | — |  |  |  |  |  |
-| Máxima Carga | 0.410 *** | 0.809 *** | 0.308 ** |  | — |  |  |  |
-| Resistencia tração | 0.410 *** | 0.809 *** | 0.308 ** |  | 1.000 *** |  | — |  |
+| Deformação |  -  |  |  |  |  |  |  |  |
+| Rigidez Secante | 0.194 |  -  |  |  |  |  |  |  |
+| Módulo Yong | -0.275 * | 0.415 *** |  -  |  |  |  |  |  |
+| Máxima Carga | 0.410 *** | 0.809 *** | 0.308 ** |  |  -  |  |  |  |
+| Resistencia tração | 0.410 *** | 0.809 *** | 0.308 ** |  | 1.000 *** |  |  -  |  |
 |  |  |  |  |  |  |  |  |  |
 | * p < .05, ** p < .01, *** p < .001, n.s = Não significativo |  |  |  |  |  |  |  |  |
 
@@ -415,11 +415,11 @@ A análise de correlação indicou que a deformação das fibras apresentou corr
 |  |  |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Variável | Deformação | Rigidez Secante | Módulo Yong |  | Máxima Carga |  | Resistencia tração |  |
-| Deformação | — |  |  |  |  |  |  |  |
-| Rigidez Secante | 0.194 | — |  |  |  |  |  |  |
-| Módulo Yong | -0.275 * | 0.415 *** | — |  |  |  |  |  |
-| Máxima Carga | 0.410 *** | 0.809 *** | 0.308 ** |  | — |  |  |  |
-| Resistencia tração | 0.410 *** | 0.809 *** | 0.308 ** |  | 1.000 *** |  | — |  |
+| Deformação |  -  |  |  |  |  |  |  |  |
+| Rigidez Secante | 0.194 |  -  |  |  |  |  |  |  |
+| Módulo Yong | -0.275 * | 0.415 *** |  -  |  |  |  |  |  |
+| Máxima Carga | 0.410 *** | 0.809 *** | 0.308 ** |  |  -  |  |  |  |
+| Resistencia tração | 0.410 *** | 0.809 *** | 0.308 ** |  | 1.000 *** |  |  -  |  |
 |  |  |  |  |  |  |  |  |  |
 | * p < .05, ** p < .01, *** p < .001, n.s = Não significativo |  |  |  |  |  |  |  |  |
 

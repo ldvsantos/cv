@@ -1,6 +1,6 @@
-﻿---
+---
 title: "Análise da Paisagem"
-subtitle: "Aula 16 — Produto Parcial: Registro Interpretativo de Mudanças<br>Curso de Geografia"
+subtitle: "Aula 16  -  Produto Parcial: Registro Interpretativo de Mudanças<br>Curso de Geografia"
 author: "Luiz Diego Vidal Santos"
 institute: "Universidade Estadual de Feira de Santana (UEFS)"
 date: "2026-04-15"
@@ -44,7 +44,7 @@ Produzir o **registro interpretativo de mudanças** na área de estudo, integran
 :::
 :::
 
-# [1 — ROTEIRO DO PRODUTO]{.section-header}
+# [1  -  ROTEIRO DO PRODUTO]{.section-header}
 
 ## O que será entregue {.smaller-text}
 
@@ -102,7 +102,7 @@ Este produto é a **camada temporal** do dossiê:
 :::
 :::
 
-# [2 — OFICINA: DADOS MAPBIOMAS]{.section-header}
+# [2  -  OFICINA: DADOS MAPBIOMAS]{.section-header}
 
 ## Passo a passo: extração de dados {.smaller-text}
 
@@ -165,7 +165,7 @@ var uso2022 = mapbiomas.select('classification_2022')
 :::
 :::
 
-# [3 — MATRIZ DE TRANSIÇÃO]{.section-header}
+# [3  -  MATRIZ DE TRANSIÇÃO]{.section-header}
 
 ## Construção e leitura da matriz {.smaller-text}
 
@@ -214,7 +214,7 @@ var uso2022 = mapbiomas.select('classification_2022')
 :::
 :::
 
-# [4 — MAPA E GRÁFICO COMPARATIVOS]{.section-header}
+# [4  -  MAPA E GRÁFICO COMPARATIVOS]{.section-header}
 
 ## Produção das figuras {.smaller-text}
 
@@ -248,7 +248,7 @@ var uso2022 = mapbiomas.select('classification_2022')
 **Exemplo de gráfico (descrição)**
 
 ```
-Evolução do uso/cobertura — Área de estudo (1990–2022)
+Evolução do uso/cobertura  -  Área de estudo (1990–2022)
         
   100% |▓▓▓▓▓▓▓▓▓   Vegetação nativa
        |▓▓▓▓▓▓▓
@@ -273,7 +273,7 @@ Evolução do uso/cobertura — Área de estudo (1990–2022)
 :::
 :::
 
-# [5 — TEXTO INTERPRETATIVO]{.section-header}
+# [5  -  TEXTO INTERPRETATIVO]{.section-header}
 
 ## Modelo de redação {.smaller-text}
 
@@ -281,19 +281,19 @@ Evolução do uso/cobertura — Área de estudo (1990–2022)
 ::: {.column width="50%"}
 ### Estrutura (2–3 parágrafos)
 
-**Parágrafo 1 — O que mudou**
+**Parágrafo 1  -  O que mudou**
 
 - Quais classes ganharam e perderam área?
 - Qual a principal transição?
 - Qual a taxa aproximada de mudança?
 
-**Parágrafo 2 — Por que mudou**
+**Parágrafo 2  -  Por que mudou**
 
 - Fatores prováveis (economia, política, clima, infraestrutura)
 - Contexto regional (semiárido, bioma, município)
 - Relação com processos identificados na literatura
 
-**Parágrafo 3 — Consequências e implicações**
+**Parágrafo 3  -  Consequências e implicações**
 
 - Impactos na estrutura da paisagem (fragmentação, conectividade)
 - Impactos nos serviços ecossistêmicos
@@ -313,7 +313,7 @@ Evolução do uso/cobertura — Área de estudo (1990–2022)
 :::
 :::
 
-# [6 — INTEGRAÇÃO AO DOSSIÊ]{.section-header}
+# [6  -  INTEGRAÇÃO AO DOSSIÊ]{.section-header}
 
 ## Organização progressiva do dossiê {.smaller-text}
 
@@ -343,7 +343,7 @@ Evolução do uso/cobertura — Área de estudo (1990–2022)
 
 **Conteúdo mínimo:**
 
-1. Mapas de uso/cobertura (2 datas) — lado a lado
+1. Mapas de uso/cobertura (2 datas)  -  lado a lado
 2. Matriz de transição simplificada
 3. Gráfico de evolução temporal (opcional)
 4. Texto interpretativo (2–3 parágrafos)
@@ -369,11 +369,11 @@ Evolução do uso/cobertura — Área de estudo (1990–2022)
 **O que fizemos hoje**
 
 1. **Extraímos dados do MapBiomas** para a área de estudo (2 datas)
-2. **Construímos a matriz de transição** — quantificando "de quê → para quê"
-3. **Calculamos indicadores** — perda, ganho, mudança líquida, estabilidade
-4. **Produzimos figuras** — mapa comparativo e/ou gráfico temporal
-5. **Redigimos texto interpretativo** — padrão → processo → contexto → implicação
-6. **Integramos ao dossiê** — 6ª camada de evidência
+2. **Construímos a matriz de transição**  -  quantificando "de quê → para quê"
+3. **Calculamos indicadores**  -  perda, ganho, mudança líquida, estabilidade
+4. **Produzimos figuras**  -  mapa comparativo e/ou gráfico temporal
+5. **Redigimos texto interpretativo**  -  padrão → processo → contexto → implicação
+6. **Integramos ao dossiê**  -  6ª camada de evidência
 :::
 
 # {background-color="#034EA2"}
@@ -385,5 +385,5 @@ Luiz Diego Vidal Santos
 
 Universidade Estadual de Feira de Santana (UEFS)
 
-Análise da Paisagem — Aula 16
+Análise da Paisagem  -  Aula 16
 :::

@@ -1,6 +1,6 @@
-﻿---
+---
 title: "Análise da Paisagem"
-subtitle: "Aula 07 — Cartografia Temática e Leitura Integrada da Paisagem<br>Curso de Geografia"
+subtitle: "Aula 07  -  Cartografia Temática e Leitura Integrada da Paisagem<br>Curso de Geografia"
 author: "Luiz Diego Vidal Santos"
 institute: "Universidade Estadual de Feira de Santana (UEFS)"
 date: "2026-03-18"
@@ -44,7 +44,7 @@ Desenvolver a capacidade de **leitura e interpretação** de mapas temáticos (r
 :::
 :::
 
-# [1 — CARTOGRAFIA TEMÁTICA]{.section-header}
+# [1  -  CARTOGRAFIA TEMÁTICA]{.section-header}
 
 ## O que é cartografia temática? {.smaller-text}
 
@@ -54,12 +54,12 @@ Desenvolver a capacidade de **leitura e interpretação** de mapas temáticos (r
 
 A **cartografia temática** representa informações específicas sobre um tema geográfico em base cartográfica:
 
-- **Mapa de relevo** — altimetria, declividade, hipsometria
-- **Mapa geológico/geomorfológico** — tipos de rocha, formas de relevo
-- **Mapa de solos** — classes pedológicas
-- **Mapa de uso e cobertura** — vegetação, agricultura, urbano
-- **Mapa de drenagem** — rede hidrográfica, bacias
-- **Mapa de vulnerabilidade** — combinação de temas
+- **Mapa de relevo**  -  altimetria, declividade, hipsometria
+- **Mapa geológico/geomorfológico**  -  tipos de rocha, formas de relevo
+- **Mapa de solos**  -  classes pedológicas
+- **Mapa de uso e cobertura**  -  vegetação, agricultura, urbano
+- **Mapa de drenagem**  -  rede hidrográfica, bacias
+- **Mapa de vulnerabilidade**  -  combinação de temas
 
 ### Diferença da cartografia de referência
 
@@ -70,15 +70,15 @@ A cartografia de **referência** (topográfica) mostra elementos básicos (estra
 ::: {.highlight-box}
 **Para que serve na análise da paisagem?**
 
-1. **Identificar padrões** — distribuição espacial de coberturas, formas, usos
-2. **Delimitar unidades** — áreas homogêneas ou com dinâmica similar
-3. **Cruzar informações** — sobrepor camadas para identificar relações
-4. **Comunicar** — síntese visual para diagnóstico e planejamento
-5. **Monitorar** — comparar mapas de datas diferentes (mudanças)
+1. **Identificar padrões**  -  distribuição espacial de coberturas, formas, usos
+2. **Delimitar unidades**  -  áreas homogêneas ou com dinâmica similar
+3. **Cruzar informações**  -  sobrepor camadas para identificar relações
+4. **Comunicar**  -  síntese visual para diagnóstico e planejamento
+5. **Monitorar**  -  comparar mapas de datas diferentes (mudanças)
 
 ### Princípio fundamental
 
-> *"O mapa temático não é fim em si — é ferramenta de leitura. A análise está na interpretação, não na cartografia."*
+> *"O mapa temático não é fim em si  -  é ferramenta de leitura. A análise está na interpretação, não na cartografia."*
 
 Mapas bonitos com interpretação superficial → mau trabalho.
 Mapas simples com interpretação fundamentada → bom trabalho.
@@ -86,7 +86,7 @@ Mapas simples com interpretação fundamentada → bom trabalho.
 :::
 :::
 
-# [2 — TIPOS DE MAPAS PARA ANÁLISE DA PAISAGEM]{.section-header}
+# [2  -  TIPOS DE MAPAS PARA ANÁLISE DA PAISAGEM]{.section-header}
 
 ## Mapa hipsométrico e de declividade {.smaller-text}
 
@@ -96,7 +96,7 @@ Mapas simples com interpretação fundamentada → bom trabalho.
 
 - Representa a **altitude** por classes de cor (faixas altitudinais)
 - Permite identificar: planaltos, vales, escarpas, depressões
-- Base: Modelo Digital de Elevação (MDE) — SRTM 30 m, ALOS 12,5 m
+- Base: Modelo Digital de Elevação (MDE)  -  SRTM 30 m, ALOS 12,5 m
 
 ### Mapa de declividade
 
@@ -109,18 +109,18 @@ Mapas simples com interpretação fundamentada → bom trabalho.
 ::: {.info-box}
 **O que ler nesses mapas (para paisagem)?**
 
-1. **Posição topográfica** — topos, vertentes, fundos de vale → unidades de paisagem diferentes
-2. **Dissecação** — relevo muito dissecado = paisagem fragmentada naturalmente
-3. **Declividade e uso** — áreas íngremes com pastagem = risco de erosão
-4. **Contraste** — planícies extensas vs. áreas acidentadas → diversidade paisagística
-5. **Controle estrutural** — alinhamentos de serra, vales encaixados → geologia
+1. **Posição topográfica**  -  topos, vertentes, fundos de vale → unidades de paisagem diferentes
+2. **Dissecação**  -  relevo muito dissecado = paisagem fragmentada naturalmente
+3. **Declividade e uso**  -  áreas íngremes com pastagem = risco de erosão
+4. **Contraste**  -  planícies extensas vs. áreas acidentadas → diversidade paisagística
+5. **Controle estrutural**  -  alinhamentos de serra, vales encaixados → geologia
 
 ### Fontes públicas
 
-- **TOPODATA** (INPE) — MDE 30 m do Brasil
-- **SRTM** (NASA) — MDE 30 m global
-- **ALOS PALSAR** (JAXA) — MDE 12,5 m
-- **MapBiomas Alerta** — integra com relevo
+- **TOPODATA** (INPE)  -  MDE 30 m do Brasil
+- **SRTM** (NASA)  -  MDE 30 m global
+- **ALOS PALSAR** (JAXA)  -  MDE 12,5 m
+- **MapBiomas Alerta**  -  integra com relevo
 :::
 :::
 :::
@@ -154,11 +154,11 @@ Mapas simples com interpretação fundamentada → bom trabalho.
 ::: {.highlight-box}
 **O que ler (para paisagem)?**
 
-1. **Densidade de drenagem** — alta densidade = solos impermeáveis/rasos → escoamento superficial dominante
-2. **Hierarquia** — rios de 1ª ordem (nascentes) → gestão de APPs
-3. **Padrão** — indica controle geológico/estrutural
-4. **Confluências** — pontos de acumulação de fluxo → vulnerabilidade a inundação
-5. **Intermitência** — rios intermitentes (semiárido) → padrão sazonal da paisagem
+1. **Densidade de drenagem**  -  alta densidade = solos impermeáveis/rasos → escoamento superficial dominante
+2. **Hierarquia**  -  rios de 1ª ordem (nascentes) → gestão de APPs
+3. **Padrão**  -  indica controle geológico/estrutural
+4. **Confluências**  -  pontos de acumulação de fluxo → vulnerabilidade a inundação
+5. **Intermitência**  -  rios intermitentes (semiárido) → padrão sazonal da paisagem
 
 ### Bacia hidrográfica como unidade de análise
 
@@ -222,7 +222,7 @@ O mapa de uso/cobertura é a **base** para:
 :::
 :::
 
-# [3 — LEITURA INTEGRADA]{.section-header}
+# [3  -  LEITURA INTEGRADA]{.section-header}
 
 ## Cruzar camadas: o poder da sobreposição {.smaller-text}
 
@@ -247,21 +247,21 @@ A leitura integrada consiste em **sobrepor** mapas temáticos para identificar *
 ::: {.highlight-box}
 **Métodos de cruzamento**
 
-1. **Visual** — sobreposição em GIS, leitura comparativa
-2. **Álgebra de mapas** — combinação raster (ex.: mapa de aptidão = solo + declividade + clima)
-3. **Carta de síntese** — produto que integra múltiplas variáveis em unidades interpretadas (carta geoambiental)
-4. **Perfil geoambiental** — corte transversal mostrando relações vertical-horizontais
+1. **Visual**  -  sobreposição em GIS, leitura comparativa
+2. **Álgebra de mapas**  -  combinação raster (ex.: mapa de aptidão = solo + declividade + clima)
+3. **Carta de síntese**  -  produto que integra múltiplas variáveis em unidades interpretadas (carta geoambiental)
+4. **Perfil geoambiental**  -  corte transversal mostrando relações vertical-horizontais
 
 ### Atenção
 
-Cruzar mapas sem **interpretação** produz apenas colagens. O geógrafo/analista precisa **interpretar** as relações — a tecnologia não substitui o raciocínio.
+Cruzar mapas sem **interpretação** produz apenas colagens. O geógrafo/analista precisa **interpretar** as relações  -  a tecnologia não substitui o raciocínio.
 
 > *"SIG é ferramenta. A análise é do geógrafo."*
 :::
 :::
 :::
 
-# [4 — BASES PÚBLICAS DE DADOS ESPACIAIS]{.section-header}
+# [4  -  BASES PÚBLICAS DE DADOS ESPACIAIS]{.section-header}
 
 ## Principais bases para o Brasil {.smaller-text}
 
@@ -352,13 +352,13 @@ Utilizando projeção/tela com acesso ao **MapBiomas** e ao **Google Earth**:
 ::: {.info-box}
 **O que vimos hoje**
 
-1. **Cartografia temática** — ferramenta para representar e interpretar temas geográficos
-2. **Tipos de mapas** — hipsométrico, declividade, drenagem, uso/cobertura, geomorfológico
-3. **Leitura de relevo** — posição topográfica, dissecação, declividade e aptidão
-4. **Leitura de drenagem** — padrões, hierarquia, densidade, bacia como unidade
-5. **Leitura de uso/cobertura** — base para análise de matriz–mancha–corredor
-6. **Leitura integrada** — cruzamento de camadas para identificar relações
-7. **Bases públicas** — MapBiomas, TOPODATA, ANA, IBGE, GEE, SICAR
+1. **Cartografia temática**  -  ferramenta para representar e interpretar temas geográficos
+2. **Tipos de mapas**  -  hipsométrico, declividade, drenagem, uso/cobertura, geomorfológico
+3. **Leitura de relevo**  -  posição topográfica, dissecação, declividade e aptidão
+4. **Leitura de drenagem**  -  padrões, hierarquia, densidade, bacia como unidade
+5. **Leitura de uso/cobertura**  -  base para análise de matriz–mancha–corredor
+6. **Leitura integrada**  -  cruzamento de camadas para identificar relações
+7. **Bases públicas**  -  MapBiomas, TOPODATA, ANA, IBGE, GEE, SICAR
 :::
 
 # {background-color="#034EA2"}
@@ -370,5 +370,5 @@ Luiz Diego Vidal Santos
 
 Universidade Estadual de Feira de Santana (UEFS)
 
-Análise da Paisagem — Aula 07
+Análise da Paisagem  -  Aula 07
 :::

@@ -1,6 +1,6 @@
-﻿---
+---
 title: "Análise da Paisagem"
-subtitle: "Aula 18 — Exercício Aplicado: Interpretação Crítica de Indicadores<br>Curso de Geografia"
+subtitle: "Aula 18  -  Exercício Aplicado: Interpretação Crítica de Indicadores<br>Curso de Geografia"
 author: "Luiz Diego Vidal Santos"
 institute: "Universidade Estadual de Feira de Santana (UEFS)"
 date: "2026-04-22"
@@ -44,7 +44,7 @@ Aplicar métricas e indicadores de paisagem a um **cenário concreto** (área de
 :::
 :::
 
-# [1 — REVISÃO: MÉTRICAS DA AULA 17]{.section-header}
+# [1  -  REVISÃO: MÉTRICAS DA AULA 17]{.section-header}
 
 ## Métricas essenciais (resumo) {.smaller-text}
 
@@ -94,7 +94,7 @@ Aplicar métricas e indicadores de paisagem a um **cenário concreto** (área de
 :::
 :::
 
-# [2 — ROTEIRO DO EXERCÍCIO]{.section-header}
+# [2  -  ROTEIRO DO EXERCÍCIO]{.section-header}
 
 ## Cenário aplicado {.smaller-text}
 
@@ -113,7 +113,7 @@ Considere uma área de **5.000 ha** no semiárido baiano com os seguintes dados:
 | Corpo d'água | 50 | 3 | 30 |
 | Área urbana | 100 | 1 | 100 |
 | Agricultura irrigada | 600 | 5 | 200 |
-| **Total** | **5.000** | — | — |
+| **Total** | **5.000** |  -  |  -  |
 
 : {.striped .hover}
 
@@ -128,38 +128,38 @@ Considere uma área de **5.000 ha** no semiárido baiano com os seguintes dados:
 ::: {.info-box}
 **O que fazer (individual ou dupla)**
 
-**Parte A — Cálculo de métricas (20 min)**
+**Parte A  -  Cálculo de métricas (20 min)**
 
 1. Calcule PLAND, NP, LPI para cada classe
 2. Calcule a densidade de bordas (ED) da caatinga
 3. Determine o tamanho médio das manchas de caatinga
 
-**Parte B — Interpretação crítica (25 min)**
+**Parte B  -  Interpretação crítica (25 min)**
 
 4. Interprete cada métrica: o que o valor indica?
 5. Compare classes: pastagem vs. caatinga
 6. Identifique vulnerabilidades e potencialidades
 
-**Parte C — Implicações para gestão (15 min)**
+**Parte C  -  Implicações para gestão (15 min)**
 
 7. Que métricas sugerem fragmentação crítica?
 8. Que ações poderiam melhorar a conectividade?
 9. Quais manchas têm maior importância para conservação?
 
-**Parte D — Síntese escrita (20 min)**
+**Parte D  -  Síntese escrita (20 min)**
 
 10. Escreva 2 parágrafos articulando métricas → diagnóstico → recomendação
 :::
 :::
 :::
 
-# [3 — CÁLCULO DE MÉTRICAS]{.section-header}
+# [3  -  CÁLCULO DE MÉTRICAS]{.section-header}
 
 ## Parte A: calculando os indicadores {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### PLAND — Proporção da paisagem
+### PLAND  -  Proporção da paisagem
 
 $$PLAND_i = \frac{CA_i}{A_{total}} \times 100$$
 
@@ -177,11 +177,11 @@ $$PLAND_i = \frac{CA_i}{A_{total}} \times 100$$
 
 **Vegetação nativa total:** 12% + 7% = **19%**
 
-> Abaixo do limiar de **30%** (percolação) — paisagem com conectividade comprometida.
+> Abaixo do limiar de **30%** (percolação)  -  paisagem com conectividade comprometida.
 :::
 
 ::: {.column width="50%"}
-### LPI — Proporção da maior mancha
+### LPI  -  Proporção da maior mancha
 
 $$LPI_i = \frac{max(a_j)}{A_{total}} \times 100$$
 
@@ -207,7 +207,7 @@ ED alto + manchas pequenas = **alto efeito de borda** = vulnerabilidade dos frag
 :::
 :::
 
-# [4 — INTERPRETAÇÃO CRÍTICA]{.section-header}
+# [4  -  INTERPRETAÇÃO CRÍTICA]{.section-header}
 
 ## Parte B: o que os números dizem? {.smaller-text}
 
@@ -223,7 +223,7 @@ ED alto + manchas pequenas = **alto efeito de borda** = vulnerabilidade dos frag
 | LPI (caatinga) | 3,6% | ⚠️ Maior mancha é pequena em relação à paisagem |
 | LPI (pastagem) | 48% | Matriz de pastagem domina a paisagem |
 | ED (caatinga) | 8,4 m/ha | ⚠️ Efeito de borda significativo |
-| ENN (caatinga) | 850 m | ⚠️ Fragmentos distantes — baixa conectividade |
+| ENN (caatinga) | 850 m | ⚠️ Fragmentos distantes  -  baixa conectividade |
 | Mata ciliar | 15 m | 🔴 Metade da APP mínima (30 m) |
 
 : {.striped .hover}
@@ -252,7 +252,7 @@ ED alto + manchas pequenas = **alto efeito de borda** = vulnerabilidade dos frag
 :::
 :::
 
-# [5 — IMPLICAÇÕES PARA GESTÃO]{.section-header}
+# [5  -  IMPLICAÇÕES PARA GESTÃO]{.section-header}
 
 ## Parte C: da métrica à ação {.smaller-text}
 
@@ -310,8 +310,8 @@ ED alto + manchas pequenas = **alto efeito de borda** = vulnerabilidade dos frag
 ::: {.info-box}
 **Próximas aulas**
 
-- **Aula 19** (29/04): Unidades de paisagem — delimitação e caracterização
-- **Aula 20** (29/04): Diagnóstico integrado — pressões, conflitos, vulnerabilidades
+- **Aula 19** (29/04): Unidades de paisagem  -  delimitação e caracterização
+- **Aula 20** (29/04): Diagnóstico integrado  -  pressões, conflitos, vulnerabilidades
 :::
 :::
 :::
@@ -323,12 +323,12 @@ ED alto + manchas pequenas = **alto efeito de borda** = vulnerabilidade dos frag
 ::: {.info-box}
 **O que fizemos hoje**
 
-1. **Revisamos métricas** — composição (PLAND, NP, LPI) e configuração (ED, ENN, SHAPE)
-2. **Calculamos indicadores** em cenário concreto — fórmulas aplicadas
-3. **Interpretamos criticamente** — valores, limiares, comparações
-4. **Discutimos implicações** — funcionalidade ecológica, serviços ecossistêmicos
-5. **Propusemos ações** — prioridades de conservação, restauração, monitoramento
-6. **Redigimos síntese** — articulação métricas → diagnóstico → recomendação
+1. **Revisamos métricas**  -  composição (PLAND, NP, LPI) e configuração (ED, ENN, SHAPE)
+2. **Calculamos indicadores** em cenário concreto  -  fórmulas aplicadas
+3. **Interpretamos criticamente**  -  valores, limiares, comparações
+4. **Discutimos implicações**  -  funcionalidade ecológica, serviços ecossistêmicos
+5. **Propusemos ações**  -  prioridades de conservação, restauração, monitoramento
+6. **Redigimos síntese**  -  articulação métricas → diagnóstico → recomendação
 :::
 
 # {background-color="#034EA2"}
@@ -340,5 +340,5 @@ Luiz Diego Vidal Santos
 
 Universidade Estadual de Feira de Santana (UEFS)
 
-Análise da Paisagem — Aula 18
+Análise da Paisagem  -  Aula 18
 :::

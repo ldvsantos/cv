@@ -1,13 +1,13 @@
-﻿---
+---
 title: "Estatística Descritiva"
-subtitle: "Aulas VI e VIII — Versão Alunos"
+subtitle: "Aulas VI e VIII  -  Versão Alunos"
 author: "Luiz Diego Vidal Santos"
 institute: "Universidade Estadual de Feira de Santana (UEFS)"
-footer: "UEFS — Introdução à Estatística | Tema 5 — Estatística Descritiva (Alunos)"
+footer: "UEFS  -  Introdução à Estatística | Tema 5  -  Estatística Descritiva (Alunos)"
 format: 
   revealjs:
     logo: ../../../../assets/logo-uefs.webp
-    footer: "UEFS — Introdução à Estatística | Tema 5 — Estatística Descritiva (Alunos)"
+    footer: "UEFS  -  Introdução à Estatística | Tema 5  -  Estatística Descritiva (Alunos)"
     slide-number: true
     theme: [simple, ../../../../assets/uefs.scss]
     controls: true
@@ -88,7 +88,7 @@ Enquanto a estatística descritiva se limita a **resumir e apresentar** os dados
 
 ---
 
-## Exemplo — Criando os Dados {.smaller-text}
+## Exemplo  -  Criando os Dados {.smaller-text}
 
 ```{r}
 #| eval: false
@@ -103,7 +103,7 @@ dados
 
 ---
 
-## 1.1 — Média {.smaller-text}
+## 1.1  -  Média {.smaller-text}
 
 $$\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i$$
 
@@ -115,7 +115,7 @@ media_alt
 
 ---
 
-## 1.2 — Variância {.smaller-text}
+## 1.2  -  Variância {.smaller-text}
 
 $$s^2 = \frac{\sum(x_i - \bar{x})^2}{n-1}$$
 
@@ -127,7 +127,7 @@ $$s^2 = \frac{\sum(x_i - \bar{x})^2}{n-1}$$
 
 ---
 
-## 2.1 — Desvio-Padrão {.smaller-text}
+## 2.1  -  Desvio-Padrão {.smaller-text}
 
 $$s = \sqrt{s^2}$$
 
@@ -140,7 +140,7 @@ sd_alt <- sd(dados$altitude_m)
 
 ---
 
-## 2.3 — Coeficiente de Variação {.smaller-text}
+## 2.3  -  Coeficiente de Variação {.smaller-text}
 
 $$CV = \frac{s}{\bar{x}} \times 100\%$$
 
@@ -156,7 +156,7 @@ $$CV = \frac{s}{\bar{x}} \times 100\%$$
 
 ---
 
-## 2.2 — Erro-Padrão {.smaller-text}
+## 2.2  -  Erro-Padrão {.smaller-text}
 
 $$EP = \frac{s}{\sqrt{n}}$$
 
@@ -172,7 +172,7 @@ EP_alt
 
 ---
 
-## 2.2 — Escore Z {.smaller-text}
+## 2.2  -  Escore Z {.smaller-text}
 
 $$Z_i = \frac{x_i - \bar{x}}{s}$$
 
@@ -184,7 +184,7 @@ $$Z_i = \frac{x_i - \bar{x}}{s}$$
 
 ---
 
-## 2.3 — Intervalo de Confiança {.smaller-text}
+## 2.3  -  Intervalo de Confiança {.smaller-text}
 
 $$IC = \bar{x} \pm Z_{\alpha/2} \times EP$$
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Bootstrap e Inferência Não Paramétrica"
 subtitle: "Reamostragem aplicada a dados agronômicos<br>Introdução à Estatística"
 author: "Luiz Diego Vidal Santos"
@@ -6,7 +6,7 @@ institute: "Universidade Estadual de Feira de Santana (UEFS)"
 format:
   revealjs:
     logo: ../../../../assets/logo-uefs.webp
-    footer: "UEFS — Introdução à Estatística | Tema 7 — Bootstrap e Inferência Não Paramétrica"
+    footer: "UEFS  -  Introdução à Estatística | Tema 7  -  Bootstrap e Inferência Não Paramétrica"
     slide-number: true
     theme: [simple, ../../../../assets/uefs.scss]
     controls: true
@@ -27,7 +27,7 @@ format:
 
 - [1]{.circle} Por que Bootstrap? Motivação e histórico
 - [2]{.circle} Conceitos: reamostragem com reposição
-- [3]{.circle} Bootstrap não paramétrico — passo a passo
+- [3]{.circle} Bootstrap não paramétrico  -  passo a passo
 - [4]{.circle} Intervalos de confiança via Bootstrap
 - [5]{.circle} Laboratório em R com o pacote `boot`
 - [6]{.circle} Exercício com dados de biomassa vegetal
@@ -42,7 +42,7 @@ Compreender o método bootstrap como alternativa não paramétrica para inferên
 :::
 :::
 
-# [1 — POR QUE BOOTSTRAP?]{.section-header}
+# [1  -  POR QUE BOOTSTRAP?]{.section-header}
 
 ## Limitações da inferência clássica {.smaller-text}
 
@@ -86,7 +86,7 @@ Dado um conjunto de dados observados $\mathbf{x} = (x_1, x_2, \ldots, x_n)$, o b
 2. Calcular a estatística de interesse $\hat{\theta}^{*}_b$ em cada amostra
 3. Usar a distribuição de $\hat{\theta}^{*}_1, \ldots, \hat{\theta}^{*}_B$ para estimar o **erro padrão** e o **intervalo de confiança** de $\hat{\theta}$
 
-# [2 — BOOTSTRAP NÃO PARAMÉTRICO]{.section-header}
+# [2  -  BOOTSTRAP NÃO PARAMÉTRICO]{.section-header}
 
 ## Algoritmo passo a passo {.smaller-text}
 
@@ -136,9 +136,9 @@ Corrige viés e assimetria da distribuição bootstrap. **Recomendado** para amo
 
 $$IC = \hat{\theta} \pm z_{\alpha/2} \times SE_{boot}$$
 
-Assume normalidade da distribuição bootstrap — geralmente válido para $B$ grande.
+Assume normalidade da distribuição bootstrap  -  geralmente válido para $B$ grande.
 
-# [3 — LABORATÓRIO EM R]{.section-header}
+# [3  -  LABORATÓRIO EM R]{.section-header}
 
 ## Instalação e carregamento {.smaller-text}
 
@@ -190,7 +190,7 @@ head(biomassa)
 
 ---
 
-## Bootstrap da média — Controle {.smaller-text}
+## Bootstrap da média  -  Controle {.smaller-text}
 
 ```r
 # Função estatística para o boot()
@@ -296,7 +296,7 @@ Se o IC BCa da diferença **não inclui 0** → a adubação orgânica teve efei
 
 - Não substitui delineamento experimental adequado
 - $B$ deve ser suficiente (mínimo 1000, ideal 5000+)
-- Amostras muito pequenas ($n < 5$) — bootstrap pode ser instável
+- Amostras muito pequenas ($n < 5$)  -  bootstrap pode ser instável
 - Dados com dependência temporal (exige bootstrap em bloco)
 :::
 :::

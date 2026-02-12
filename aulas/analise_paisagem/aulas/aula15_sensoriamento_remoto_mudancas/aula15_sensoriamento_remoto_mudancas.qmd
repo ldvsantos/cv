@@ -1,6 +1,6 @@
-﻿---
+---
 title: "Análise da Paisagem"
-subtitle: "Aula 15 — Sensoriamento Remoto Aplicado II: Mudanças e Trajetórias<br>Curso de Geografia"
+subtitle: "Aula 15  -  Sensoriamento Remoto Aplicado II: Mudanças e Trajetórias<br>Curso de Geografia"
 author: "Luiz Diego Vidal Santos"
 institute: "Universidade Estadual de Feira de Santana (UEFS)"
 date: "2026-04-15"
@@ -44,7 +44,7 @@ Compreender os métodos de **comparação temporal** em sensoriamento remoto, in
 :::
 :::
 
-# [1 — DETECÇÃO DE MUDANÇAS]{.section-header}
+# [1  -  DETECÇÃO DE MUDANÇAS]{.section-header}
 
 ## A paisagem muda: como detectar? {.smaller-text}
 
@@ -52,7 +52,7 @@ Compreender os métodos de **comparação temporal** em sensoriamento remoto, in
 ::: {.column width="50%"}
 ### Mudança na paisagem
 
-A paisagem é **dinâmica** — seus padrões se transformam no tempo por:
+A paisagem é **dinâmica**  -  seus padrões se transformam no tempo por:
 
 - **Processos naturais:** sucessão ecológica, erosão, seca, inundação
 - **Processos antrópicos:** desmatamento, urbanização, agricultura, reflorestamento
@@ -61,11 +61,11 @@ A paisagem é **dinâmica** — seus padrões se transformam no tempo por:
 
 ### Por que detectar mudanças?
 
-1. **Diagnóstico** — o que mudou e onde?
-2. **Velocidade** — quão rápido está mudando?
-3. **Direção** — para qual estado a paisagem está evoluindo?
-4. **Causa provável** — processo natural ou antrópico?
-5. **Gestão** — as mudanças são desejáveis? Reversíveis?
+1. **Diagnóstico**  -  o que mudou e onde?
+2. **Velocidade**  -  quão rápido está mudando?
+3. **Direção**  -  para qual estado a paisagem está evoluindo?
+4. **Causa provável**  -  processo natural ou antrópico?
+5. **Gestão**  -  as mudanças são desejáveis? Reversíveis?
 :::
 
 ::: {.column width="50%"}
@@ -91,7 +91,7 @@ A detecção de mudanças complementa a análise estática (Aula 14) com a **dim
 :::
 :::
 
-# [2 — MÉTODOS DE COMPARAÇÃO TEMPORAL]{.section-header}
+# [2  -  MÉTODOS DE COMPARAÇÃO TEMPORAL]{.section-header}
 
 ## Abordagens para detectar mudanças {.smaller-text}
 
@@ -143,7 +143,7 @@ $$\Delta NDVI = NDVI_{t2} - NDVI_{t1}$$
 :::
 :::
 
-# [3 — TRAJETÓRIAS DE TRANSFORMAÇÃO]{.section-header}
+# [3  -  TRAJETÓRIAS DE TRANSFORMAÇÃO]{.section-header}
 
 ## Leitura temporal da paisagem {.smaller-text}
 
@@ -166,11 +166,11 @@ Uma **trajetória** é a sequência de estados que um pixel (ou unidade da paisa
 
 ### Tipos de trajetória
 
-1. **Estável** — sem mudança por todo o período (ex: floresta conservada)
-2. **Conversão única** — uma mudança definitiva (ex: desmatamento)
-3. **Múltiplas conversões** — mudanças sequenciais (ex: floresta → pastagem → eucalipto)
-4. **Oscilante** — alternância entre estados (ex: pousio agrícola)
-5. **Recuperação** — retorno a estado anterior (ex: regeneração)
+1. **Estável**  -  sem mudança por todo o período (ex: floresta conservada)
+2. **Conversão única**  -  uma mudança definitiva (ex: desmatamento)
+3. **Múltiplas conversões**  -  mudanças sequenciais (ex: floresta → pastagem → eucalipto)
+4. **Oscilante**  -  alternância entre estados (ex: pousio agrícola)
+5. **Recuperação**  -  retorno a estado anterior (ex: regeneração)
 :::
 
 ::: {.column width="50%"}
@@ -179,10 +179,10 @@ Uma **trajetória** é a sequência de estados que um pixel (ou unidade da paisa
 
 O MapBiomas classifica a cobertura do Brasil a cada ano desde 1985, permitindo:
 
-- **Mapas de uso/cobertura anuais** — 38+ anos
-- **Mapas de transição** — de quê para quê entre dois anos
-- **Estatísticas por município/bioma** — área de cada classe ao longo do tempo
-- **Dashboard** — gráficos interativos de mudança
+- **Mapas de uso/cobertura anuais**  -  38+ anos
+- **Mapas de transição**  -  de quê para quê entre dois anos
+- **Estatísticas por município/bioma**  -  área de cada classe ao longo do tempo
+- **Dashboard**  -  gráficos interativos de mudança
 
 ### Exemplo: Caatinga (dados MapBiomas)
 
@@ -229,7 +229,7 @@ Exemplo: 120 ha de floresta → pastagem; 20 ha de pastagem → floresta (regene
 :::
 :::
 
-# [4 — INTERPRETAÇÃO SOCIOAMBIENTAL]{.section-header}
+# [4  -  INTERPRETAÇÃO SOCIOAMBIENTAL]{.section-header}
 
 ## Da mudança à explicação {.smaller-text}
 
@@ -276,7 +276,7 @@ Para cada mudança identificada, pergunte:
 :::
 :::
 
-# [5 — LIMITAÇÕES E CUIDADOS]{.section-header}
+# [5  -  LIMITAÇÕES E CUIDADOS]{.section-header}
 
 ## O que pode dar errado? {.smaller-text}
 
@@ -359,12 +359,12 @@ Na Aula 16, você produzirá um **registro interpretativo de mudanças** na áre
 ::: {.info-box}
 **O que vimos hoje**
 
-1. **Detecção de mudanças** — por que e como identificar transformações na paisagem
-2. **Métodos** — comparação visual, diferença de índices, pós-classificação
-3. **Trajetórias** — sequência temporal de estados; estável, conversão, oscilante, recuperação
-4. **Matriz de transição** — quantifica "de quê → para quê" entre dois momentos
-5. **Interpretação socioambiental** — fatores DPSIR, perguntas-chave, contexto
-6. **Limitações** — nuvens, sazonalidade, resolução, erros de classificação
+1. **Detecção de mudanças**  -  por que e como identificar transformações na paisagem
+2. **Métodos**  -  comparação visual, diferença de índices, pós-classificação
+3. **Trajetórias**  -  sequência temporal de estados; estável, conversão, oscilante, recuperação
+4. **Matriz de transição**  -  quantifica "de quê → para quê" entre dois momentos
+5. **Interpretação socioambiental**  -  fatores DPSIR, perguntas-chave, contexto
+6. **Limitações**  -  nuvens, sazonalidade, resolução, erros de classificação
 :::
 
 # {background-color="#034EA2"}
@@ -376,5 +376,5 @@ Luiz Diego Vidal Santos
 
 Universidade Estadual de Feira de Santana (UEFS)
 
-Análise da Paisagem — Aula 15
+Análise da Paisagem  -  Aula 15
 :::

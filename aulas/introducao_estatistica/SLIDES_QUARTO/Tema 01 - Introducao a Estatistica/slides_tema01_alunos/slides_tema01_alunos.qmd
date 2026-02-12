@@ -1,13 +1,13 @@
-﻿---
+---
 title: "Introdução à Estatística"
-subtitle: "Aulas I a IV — Versão Alunos"
+subtitle: "Aulas I a IV  -  Versão Alunos"
 author: "Luiz Diego Vidal Santos"
 institute: "Universidade Estadual de Feira de Santana (UEFS)"
-footer: "UEFS — Introdução à Estatística | Tema 1 — Conceitos Fundamentais (Alunos)"
+footer: "UEFS  -  Introdução à Estatística | Tema 1  -  Conceitos Fundamentais (Alunos)"
 format: 
   revealjs:
     logo: ../../../../assets/logo-uefs.webp
-    footer: "UEFS — Introdução à Estatística | Tema 1 — Conceitos Fundamentais (Alunos)"
+    footer: "UEFS  -  Introdução à Estatística | Tema 1  -  Conceitos Fundamentais (Alunos)"
     slide-number: true
     theme: [simple, ../../../../assets/uefs.scss]
     controls: true
@@ -26,7 +26,7 @@ execute:
 
 # [I. Introdução]{.section-header}
 
-## 1.1 — Etimologia {.smaller-text}
+## 1.1  -  Etimologia {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -54,7 +54,7 @@ A Estatística é uma ciência que oferece uma **coleção de métodos** para:
 
 ---
 
-## 1.2 — Processos Estatísticos em Pesquisas {.smaller-text}
+## 1.2  -  Processos Estatísticos em Pesquisas {.smaller-text}
 
 Quando solicitados a investigar um fenômeno coletivo, podemos optar por:
 
@@ -133,7 +133,7 @@ A ferramenta básica é a **probabilidade**, que permite avaliar e controlar o t
 
 ---
 
-## 1.3 — Conjunto de Dados, População e Amostra {.smaller-text}
+## 1.3  -  Conjunto de Dados, População e Amostra {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="60%"}
@@ -169,7 +169,7 @@ Inferência estatística advém de uma relação entre a **teoria estatística**
 
 **b)** Uma pesquisa conduzida entre **1.071 homens e mulheres** pela Corporação Internacional de Pesquisa de Opinião descobriu que **76% das mulheres** e **60% dos homens** haviam passado por exames físicos em 2013.
 
-# [1.4 — Tipos de Variáveis]{.section-header}
+# [1.4  -  Tipos de Variáveis]{.section-header}
 
 ## Variáveis Nominais e Ordinais {.smaller-text}
 
@@ -257,12 +257,12 @@ d) O nº de alunos que bebem vs. não bebem
 
 ::: {.columns}
 ::: {.column width="50%"}
-**1º passo** — Organizar em **Rol**
+**1º passo**  -  Organizar em **Rol**
 
-**2º passo** — Amplitude Total:
+**2º passo**  -  Amplitude Total:
 $$AT = X_{max} - X_{min}$$
 
-**3º passo** — Nº de classes ($k$):
+**3º passo**  -  Nº de classes ($k$):
 
 - Se $n < 25$: $k \approx \sqrt{n}$
 - Se $n \geq 25$:
@@ -270,10 +270,10 @@ $$k = 1 + \frac{10}{3}\log_{10}n$$
 :::
 
 ::: {.column width="50%"}
-**4º passo** — Amplitude da classe:
+**4º passo**  -  Amplitude da classe:
 $$h = \frac{AT}{k}$$
 
-**5º passo** — Construir as **classes**:
+**5º passo**  -  Construir as **classes**:
 
 - 1ª Classe: $l_{i1} = X_{min}$, $L_{s1} = l_{i1} + h$
 - 2ª Classe: $l_{i2} = L_{s1}$, $L_{s2} = l_{i2} + h$

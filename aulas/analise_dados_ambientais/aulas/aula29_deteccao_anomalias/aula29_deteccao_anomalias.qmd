@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Detecção de Anomalias em Séries Temporais"
 subtitle: "Isolation Forest × STL + IQR<br>Análise de Dados Ambientais"
 author: "Luiz Diego Vidal Santos"
@@ -27,8 +27,8 @@ format:
 
 - [1]{.circle} O que são anomalias em dados ambientais?
 - [2]{.circle} Fontes de dados: chuva e qualidade da água
-- [3]{.circle} Abordagem estatística — STL + IQR
-- [4]{.circle} Abordagem de Machine Learning — Isolation Forest
+- [3]{.circle} Abordagem estatística  -  STL + IQR
+- [4]{.circle} Abordagem de Machine Learning  -  Isolation Forest
 - [5]{.circle} Comparação prática em Python
 - [6]{.circle} Interpretação e boas práticas
 :::
@@ -42,7 +42,7 @@ Compreender e aplicar técnicas de detecção de anomalias (outliers) em séries
 :::
 :::
 
-# [1 — ANOMALIAS EM DADOS AMBIENTAIS]{.section-header}
+# [1  -  ANOMALIAS EM DADOS AMBIENTAIS]{.section-header}
 
 ## O que são anomalias? {.smaller-text}
 
@@ -92,14 +92,14 @@ Em dados ambientais, anomalias podem representar:
 ::: {.column width="50%"}
 ### Chuva diária
 
-- **ANA / HidroWeb** — Séries históricas de estações pluviométricas
-- **INMET** — Dados meteorológicos convencionais e automáticas
-- **ERA5 / CPC** — Reanálises e dados globais
+- **ANA / HidroWeb**  -  Séries históricas de estações pluviométricas
+- **INMET**  -  Dados meteorológicos convencionais e automáticas
+- **ERA5 / CPC**  -  Reanálises e dados globais
 
 ### Qualidade da água
 
-- **ANA / SNIRH** — Estações de monitoramento de rios
-- **CETESB** — Dados de qualidade de água em SP
+- **ANA / SNIRH**  -  Estações de monitoramento de rios
+- **CETESB**  -  Dados de qualidade de água em SP
 :::
 
 ::: {.column width="50%"}
@@ -113,11 +113,11 @@ Acesso: [hidroweb.ana.gov.br](https://www.snirh.gov.br/hidroweb/)
 :::
 :::
 
-# [2 — ABORDAGEM ESTATÍSTICA: STL + IQR]{.section-header}
+# [2  -  ABORDAGEM ESTATÍSTICA: STL + IQR]{.section-header}
 
 ## Decomposição STL {.smaller-text}
 
-**STL** — *Seasonal and Trend decomposition using Loess*
+**STL**  -  *Seasonal and Trend decomposition using Loess*
 
 ::: {.columns}
 ::: {.column width="55%"}
@@ -140,7 +140,7 @@ A detecção de anomalias foca no **resíduo**: valores de $R_t$ fora do interva
 
 - Robusto a outliers na estimativa
 - Flexível para sazonalidade variável
-- Interpretável — cada componente tem significado físico
+- Interpretável  -  cada componente tem significado físico
 - Implementação simples em Python (`statsmodels`)
 :::
 :::
@@ -164,7 +164,7 @@ $$R_t < Q_1 - 1{,}5 \times IQR \quad \text{ou} \quad R_t > Q_3 + 1{,}5 \times IQ
 
 ---
 
-## Implementação em Python — STL + IQR {.smaller-text}
+## Implementação em Python  -  STL + IQR {.smaller-text}
 
 ```python
 import pandas as pd
@@ -191,7 +191,7 @@ df = pd.DataFrame({'data': datas, 'chuva_mm': chuva}).set_index('data')
 
 ---
 
-## Implementação — Passo a passo {.smaller-text}
+## Implementação  -  Passo a passo {.smaller-text}
 
 ```python
 # 2. Decomposição STL (período = 365 dias)
@@ -212,7 +212,7 @@ anomalias_stl = df[(residuos < limite_inf) | (residuos > limite_sup)]
 print(f"Anomalias detectadas (STL+IQR): {len(anomalias_stl)}")
 ```
 
-# [3 — ABORDAGEM ML: ISOLATION FOREST]{.section-header}
+# [3  -  ABORDAGEM ML: ISOLATION FOREST]{.section-header}
 
 ## Conceito do Isolation Forest {.smaller-text}
 
@@ -222,7 +222,7 @@ print(f"Anomalias detectadas (STL+IQR): {len(anomalias_stl)}")
 
 O **Isolation Forest** (Liu et al., 2008) parte de um princípio simples:
 
-> *Anomalias são poucas e diferentes — portanto, mais fáceis de "isolar".*
+> *Anomalias são poucas e diferentes  -  portanto, mais fáceis de "isolar".*
 
 O algoritmo constrói **árvores de decisão aleatórias** que particionam o espaço dos dados. Pontos anômalos necessitam de **menos partições** para serem isolados.
 
@@ -268,7 +268,7 @@ O **score de anomalia** é baseado na profundidade média da árvore:
 ::: {.column width="50%"}
 ### ⚠️ Limitações
 
-- **Não é interpretável** como STL — funciona como "caixa-preta"
+- **Não é interpretável** como STL  -  funciona como "caixa-preta"
 - Sensível ao parâmetro `contamination`
 - Pode confundir eventos extremos reais com erros
 - Não considera a **estrutura temporal** dos dados diretamente
@@ -277,7 +277,7 @@ O **score de anomalia** é baseado na profundidade média da árvore:
 
 ---
 
-## Implementação em Python — Isolation Forest {.smaller-text}
+## Implementação em Python  -  Isolation Forest {.smaller-text}
 
 ```python
 from sklearn.ensemble import IsolationForest
@@ -304,7 +304,7 @@ anomalias_if = df[df['anomalia_if'] == -1]
 print(f"Anomalias detectadas (Isolation Forest): {len(anomalias_if)}")
 ```
 
-# [4 — COMPARAÇÃO PRÁTICA]{.section-header}
+# [4  -  COMPARAÇÃO PRÁTICA]{.section-header}
 
 ## STL + IQR vs. Isolation Forest {.smaller-text}
 
@@ -312,7 +312,7 @@ print(f"Anomalias detectadas (Isolation Forest): {len(anomalias_if)}")
 |----------|-----------|-----------------|
 | **Tipo de abordagem** | Estatística / decomposição | Machine Learning |
 | **Pré-requisito** | Série com sazonalidade definida | Dados tabulares (com engenharia de features) |
-| **Interpretabilidade** | Alta — resíduos explicáveis | Baixa — score opaco |
+| **Interpretabilidade** | Alta  -  resíduos explicáveis | Baixa  -  score opaco |
 | **Detecção contextual** | Sim (remove sazonalidade) | Parcial (depende das features) |
 | **Multivariado** | Não (univariado) | Sim |
 | **Parâmetro crítico** | Multiplicador IQR (1,5 ou 3) | `contamination` |

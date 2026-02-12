@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Modelagem 3D de Sistemas Radiculares"
 subtitle: "Fotogrametria e CloudCompare para Controle de Erosão<br>Bioengenharia de Solos"
 author: "Luiz Diego Vidal Santos"
@@ -33,7 +33,7 @@ execute:
 - [5]{.circle} Processamento no Meshroom
 - [6]{.circle} Análise no CloudCompare
 - [7]{.circle} Modelos mecânicos (Wu & Waldron)
-- [8]{.circle} Estudo de caso — Vetiver em talude
+- [8]{.circle} Estudo de caso  -  Vetiver em talude
 - [9]{.circle} Quiz & exercício proposto
 :::
 
@@ -52,7 +52,7 @@ Aprender a construir modelos 3D de sistemas radiculares expostos usando fotogram
 :::
 :::
 
-# [1 — RAÍZES E ESTABILIDADE DE TALUDES]{.section-header}
+# [1  -  RAÍZES E ESTABILIDADE DE TALUDES]{.section-header}
 
 ## O papel mecânico das raízes {.smaller-text}
 
@@ -68,7 +68,7 @@ Onde:
 
 - $\Delta c_r$ = incremento de coesão pela raiz (kPa)
 - $t_R$ = resistência à tração da raiz (kPa)
-- $A_R / A$ = razão de área radicular (*Root Area Ratio* — RAR)
+- $A_R / A$ = razão de área radicular (*Root Area Ratio*  -  RAR)
 
 ### Efeito hidráulico
 
@@ -102,7 +102,7 @@ O fator 1,2 corrige a orientação aleatória das raízes.
 
 ---
 
-## O capim-vetiver — planta-modelo {.smaller-text}
+## O capim-vetiver  -  planta-modelo {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -110,17 +110,17 @@ O fator 1,2 corrige a orientação aleatória das raízes.
 
 O **capim-vetiver** (*Chrysopogon zizanioides*) é uma das espécies mais utilizadas em bioengenharia de solos no mundo, graças a características únicas:
 
-- **Raízes profundas** — alcançam 3–4 m no primeiro ano
-- **Sistema radicular denso** — milhares de raízes finas e fibrosas
-- **Alta resistência à tração** — 40–180 MPa (comparável a aço de baixo carbono!)
-- **Tolerância extrema** — seca, inundação, pH 3–11, metais pesados
-- **Sem propagação invasiva** — não produz sementes viáveis na maioria dos climas
-- **Crescimento rápido** — barreira funcional em 3–6 meses
+- **Raízes profundas**  -  alcançam 3–4 m no primeiro ano
+- **Sistema radicular denso**  -  milhares de raízes finas e fibrosas
+- **Alta resistência à tração**  -  40–180 MPa (comparável a aço de baixo carbono!)
+- **Tolerância extrema**  -  seca, inundação, pH 3–11, metais pesados
+- **Sem propagação invasiva**  -  não produz sementes viáveis na maioria dos climas
+- **Crescimento rápido**  -  barreira funcional em 3–6 meses
 
 :::
 
 ::: {.column width="50%"}
-![Sistema radicular profundo do vetiver em campo — observe a densidade e a profundidade das raízes comparada à escala](img/raizes_vetiver/Vetiver_1.png){fig-alt="Raízes de vetiver expostas em talude de campo" width="100%"}
+![Sistema radicular profundo do vetiver em campo  -  observe a densidade e a profundidade das raízes comparada à escala](img/raizes_vetiver/Vetiver_1.png){fig-alt="Raízes de vetiver expostas em talude de campo" width="100%"}
 :::
 :::
 
@@ -148,7 +148,7 @@ O vetiver possui sistema radicular do tipo **fasciculado denso**, com caracterí
 :::
 
 ::: {.column width="50%"}
-![Detalhe das raízes de vetiver — observe a densidade das raízes fibrosas do sistema radicular](img/raizes_vetiver/Vetiver_2.png){fig-alt="Detalhe do sistema radicular de vetiver" width="100%"}
+![Detalhe das raízes de vetiver  -  observe a densidade das raízes fibrosas do sistema radicular](img/raizes_vetiver/Vetiver_2.png){fig-alt="Detalhe do sistema radicular de vetiver" width="100%"}
 :::
 :::
 
@@ -181,7 +181,7 @@ A concentração é maior nos primeiros 30 cm, mas raízes profundas ancoram o t
 :::
 
 ::: {.column width="45%"}
-![Perfil lateral do sistema radicular de vetiver em trincheira — note a diminuição gradual da densidade com a profundidade](img/raizes_vetiver/vetiver_perfil_raiz.jpg){fig-alt="Perfil lateral de raiz de vetiver em trincheira" width="100%"}
+![Perfil lateral do sistema radicular de vetiver em trincheira  -  note a diminuição gradual da densidade com a profundidade](img/raizes_vetiver/vetiver_perfil_raiz.jpg){fig-alt="Perfil lateral de raiz de vetiver em trincheira" width="100%"}
 :::
 :::
 
@@ -196,10 +196,10 @@ A concentração é maior nos primeiros 30 cm, mas raízes profundas ancoram o t
 A análise bidimensional (cortes, fotografias frontais) perde informação sobre:
 
 - **Distribuição espacial** das raízes no volume de solo
-- **Densidade volumétrica** (RVD — *Root Volume Density*)
-- **Conectividade** entre raízes — resistência à arrancamento
-- **Assimetria** da distribuição — taludes têm raízes predominantes a jusante
-- **Volume real** — estimativas 2D subestimam em 20–40%
+- **Densidade volumétrica** (RVD  -  *Root Volume Density*)
+- **Conectividade** entre raízes  -  resistência à arrancamento
+- **Assimetria** da distribuição  -  taludes têm raízes predominantes a jusante
+- **Volume real**  -  estimativas 2D subestimam em 20–40%
 :::
 
 ::: {.column width="50%"}
@@ -233,7 +233,7 @@ A **fotogrametria SfM** (*Structure from Motion*) permite reconstruir a geometri
 **Para bioengenharia de solos**, a fotogrametria SfM é a melhor relação custo-benefício: portátil, precisa (sub-milimétrica), não destrutiva e acessível a qualquer laboratório.
 :::
 
-# [2 — FOTOGRAMETRIA DIGITAL SfM]{.section-header}
+# [2  -  FOTOGRAMETRIA DIGITAL SfM]{.section-header}
 
 ## Conceito de Structure from Motion {.smaller-text}
 
@@ -245,12 +245,12 @@ A partir de **múltiplas fotografias** de um mesmo objeto, tomadas de ângulos d
 
 ### Etapas do processamento
 
-1. **Detecção de features** — SIFT/SURF em cada imagem
-2. **Correspondência** — emparelhar features entre imagens
-3. **Estimativa de câmera** — posição e orientação de cada foto
-4. **Nuvem densa** — triangulação de milhares de pontos 3D
-5. **Malha (mesh)** — superfície poligonal contínua
-6. **Textura** — projeção das cores sobre a malha
+1. **Detecção de features**  -  SIFT/SURF em cada imagem
+2. **Correspondência**  -  emparelhar features entre imagens
+3. **Estimativa de câmera**  -  posição e orientação de cada foto
+4. **Nuvem densa**  -  triangulação de milhares de pontos 3D
+5. **Malha (mesh)**  -  superfície poligonal contínua
+6. **Textura**  -  projeção das cores sobre a malha
 :::
 
 ::: {.column width="45%"}
@@ -271,7 +271,7 @@ A partir de **múltiplas fotografias** de um mesmo objeto, tomadas de ângulos d
 
 ---
 
-## GSD — Resolução espacial das fotos {.smaller-text}
+## GSD  -  Resolução espacial das fotos {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -314,13 +314,13 @@ Suficiente para mapear raízes de vetiver (diâm. ≥ 0,5 mm)!
 :::
 :::
 
-# [3 — PROTOCOLO DE COLETA EM CAMPO]{.section-header}
+# [3  -  PROTOCOLO DE COLETA EM CAMPO]{.section-header}
 
 ## Preparação do local {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Etapa 1 — Exposição da raiz
+### Etapa 1  -  Exposição da raiz
 
 1. Selecione o talude ou trincheira com raízes expostas
 2. Se necessário, use **jato de água** a baixa pressão para remover o solo aderido sem danificar as raízes
@@ -329,13 +329,13 @@ Suficiente para mapear raízes de vetiver (diâm. ≥ 0,5 mm)!
 :::
 
 ::: {.column width="50%"}
-### Etapa 2 — Aquisição das fotos
+### Etapa 2  -  Aquisição das fotos
 
 - **Equipamento:** câmera ≥ 12 MP (celular serve)
 - **Nº de fotos:** 60–120 (quanto mais, melhor)
 - **Sobreposição:** ≥ 70% entre fotos consecutivas
 - **Ângulos:** circundar o objeto em pelo menos 2 alturas
-- **Iluminação:** difusa (céu nublado ideal) — evitar sombras duras
+- **Iluminação:** difusa (céu nublado ideal)  -  evitar sombras duras
 - **Foco:** fixar foco manual se possível
 :::
 :::
@@ -346,7 +346,7 @@ Suficiente para mapear raízes de vetiver (diâm. ≥ 0,5 mm)!
 
 ---
 
-## Checklist de campo — antes de fotografar {.smaller-text}
+## Checklist de campo  -  antes de fotografar {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -375,7 +375,7 @@ Suficiente para mapear raízes de vetiver (diâm. ≥ 0,5 mm)!
 - [ ] Pelo menos 2 alturas de captura (órbita baixa + alta)
 - [ ] Incluir fotos de detalhe (close-up) das raízes finas
 - [ ] Manter distância constante (±10 cm de variação)
-- [ ] Revisar fotos no visor — descartar as tremidas
+- [ ] Revisar fotos no visor  -  descartar as tremidas
 
 ### ✅ Ao finalizar
 
@@ -387,7 +387,7 @@ Suficiente para mapear raízes de vetiver (diâm. ≥ 0,5 mm)!
 
 ---
 
-## Erros comuns na captura — como evitar {.smaller-text}
+## Erros comuns na captura  -  como evitar {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -414,7 +414,7 @@ Suficiente para mapear raízes de vetiver (diâm. ≥ 0,5 mm)!
 :::
 :::
 
-# [4 — PROCESSAMENTO NO MESHROOM]{.section-header}
+# [4  -  PROCESSAMENTO NO MESHROOM]{.section-header}
 
 ## Fluxo de trabalho no Meshroom {.smaller-text}
 
@@ -441,7 +441,7 @@ Suficiente para mapear raízes de vetiver (diâm. ≥ 0,5 mm)!
 ::: {.column width="50%"}
 ### Visualização do modelo 3D
 
-![Nuvem de pontos 3D de sistema radicular de vetiver processada no CloudCompare — cores representam a textura fotográfica original](img/raizes_vetiver/vetiver_nuvem_pontos.png){fig-alt="Nuvem de pontos 3D de raiz de vetiver" width="100%"}
+![Nuvem de pontos 3D de sistema radicular de vetiver processada no CloudCompare  -  cores representam a textura fotográfica original](img/raizes_vetiver/vetiver_nuvem_pontos.png){fig-alt="Nuvem de pontos 3D de raiz de vetiver" width="100%"}
 :::
 
 ::: {.column width="50%"}
@@ -453,7 +453,7 @@ Suficiente para mapear raízes de vetiver (diâm. ≥ 0,5 mm)!
 - **Assimetria:** possível inclinação preferencial (gravidade, talude)
 
 ::: {.info-box}
-No CloudCompare, use **Edit → Colors → Height Ramp** para colorir a nuvem por profundidade — facilita a visualização da distribuição vertical.
+No CloudCompare, use **Edit → Colors → Height Ramp** para colorir a nuvem por profundidade  -  facilita a visualização da distribuição vertical.
 :::
 :::
 :::
@@ -466,7 +466,7 @@ No CloudCompare, use **Edit → Colors → Height Ramp** para colorir a nuvem po
 ::: {.column width="50%"}
 ### Configurações recomendadas
 
-- **DepthMap:** resolução "Normal" (não "High" — evita tempo excessivo)
+- **DepthMap:** resolução "Normal" (não "High"  -  evita tempo excessivo)
 - **Meshing:** `maxPoints = 5 000 000` para raízes (detalhe suficiente)
 - **Texturing:** resolução 4096 × 4096 por atlas
 
@@ -489,7 +489,7 @@ Se não tiver placa de vídeo dedicada:
 :::
 :::
 
-# [5 — ANÁLISE NO CLOUDCOMPARE]{.section-header}
+# [5  -  ANÁLISE NO CLOUDCOMPARE]{.section-header}
 
 ## Importação e limpeza {.smaller-text}
 
@@ -511,7 +511,7 @@ Se a escala não foi calibrada na fotogrametria:
 :::
 
 ::: {.column width="45%"}
-![Malha triangular texturizada do sistema radicular de vetiver no CloudCompare — pronta para extração de parâmetros](img/raizes_vetiver/vetiver_malha_3d.png){fig-alt="Malha 3D texturizada de raiz de vetiver" width="100%"}
+![Malha triangular texturizada do sistema radicular de vetiver no CloudCompare  -  pronta para extração de parâmetros](img/raizes_vetiver/vetiver_malha_3d.png){fig-alt="Malha 3D texturizada de raiz de vetiver" width="100%"}
 :::
 :::
 
@@ -549,7 +549,7 @@ O RAR tipicamente diminui com a profundidade. Valores de 0,05–0,30% na camada 
 
 ---
 
-## Corte transversal — visualização do RAR {.smaller-text}
+## Corte transversal  -  visualização do RAR {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -571,7 +571,7 @@ O RAR tipicamente diminui com a profundidade. Valores de 0,05–0,30% na camada 
 :::
 
 ::: {.column width="50%"}
-![Corte transversal do sistema radicular de vetiver para cálculo do RAR — cada seção horizontal revela a distribuição de raízes naquela profundidade](img/raizes_vetiver/vetiver_corte_rar.png){fig-alt="Corte transversal para cálculo de RAR" width="100%"}
+![Corte transversal do sistema radicular de vetiver para cálculo do RAR  -  cada seção horizontal revela a distribuição de raízes naquela profundidade](img/raizes_vetiver/vetiver_corte_rar.png){fig-alt="Corte transversal para cálculo de RAR" width="100%"}
 :::
 :::
 
@@ -596,7 +596,7 @@ $$\Delta c_r(z) = 1{,}2 \times \overline{t_R} \times RAR(z)$$
 Esses valores de $\Delta c_r$ são somados à coesão do solo natural para análise de estabilidade de taludes.
 :::
 
-# [7 — MODELOS MECÂNICOS AVANÇADOS]{.section-header}
+# [7  -  MODELOS MECÂNICOS AVANÇADOS]{.section-header}
 
 ## Modelo de Waldron (1977) {.smaller-text}
 
@@ -664,7 +664,7 @@ Onde:
 :::
 
 ::: {.column width="50%"}
-### Exemplo numérico — Vetiver em talude
+### Exemplo numérico  -  Vetiver em talude
 
 **Dados:** $c' = 5$ kPa, $\phi' = 25°$, $\gamma = 18$ kN/m³, $\beta = 30°$, $z = 1$ m, $u = 0$
 
@@ -681,9 +681,9 @@ $$FS_{com} = \frac{5 + 5 + 6{,}29}{7{,}79} = 2{,}09$$
 :::
 :::
 
-# [8 — ESTUDO DE CASO: VETIVER EM TALUDE]{.section-header}
+# [8  -  ESTUDO DE CASO: VETIVER EM TALUDE]{.section-header}
 
-## Estudo de caso — Talude com vetiver (3 m) {.smaller-text}
+## Estudo de caso  -  Talude com vetiver (3 m) {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -710,7 +710,7 @@ Talude rodoviário de **3 m de altura**, inclinação 1V:1,5H (33,7°), em solo 
 :::
 
 ::: {.column width="50%"}
-![Montagem de análise de campo com vetiver — exposição das raízes, medição e registro fotogramétrico para modelagem 3D](img/raizes_vetiver/Montagem_analise_campo_Vetiver.png){fig-alt="Montagem de análise de campo com vetiver" width="100%"}
+![Montagem de análise de campo com vetiver  -  exposição das raízes, medição e registro fotogramétrico para modelagem 3D](img/raizes_vetiver/Montagem_analise_campo_Vetiver.png){fig-alt="Montagem de análise de campo com vetiver" width="100%"}
 
 ::: {.info-box}
 **Conclusão:** o plantio de vetiver elevou o FS de 1,15 (instável) para 1,87 (estável), com redução de 93% no volume erodido. A modelagem 3D permitiu quantificar esse ganho de forma objetiva.
@@ -726,10 +726,10 @@ Talude rodoviário de **3 m de altura**, inclinação 1V:1,5H (33,7°), em solo 
 ::: {.column width="50%"}
 ### O que a análise 3D revelou
 
-1. **Distribuição assimétrica** — raízes crescem preferencialmente para baixo do talude (geotropismo + gravidade)
-2. **Conexão entre touceiras** — após 12 meses, raízes de touceiras vizinhas se entrelaçam, formando uma "malha viva"
-3. **Profundidade efetiva** — 80% do efeito mecânico está nos primeiros 50 cm
-4. **Zonas de fragilidade** — entre touceiras, o solo permanece desprotegido → espaçamento < 20 cm é ideal
+1. **Distribuição assimétrica**  -  raízes crescem preferencialmente para baixo do talude (geotropismo + gravidade)
+2. **Conexão entre touceiras**  -  após 12 meses, raízes de touceiras vizinhas se entrelaçam, formando uma "malha viva"
+3. **Profundidade efetiva**  -  80% do efeito mecânico está nos primeiros 50 cm
+4. **Zonas de fragilidade**  -  entre touceiras, o solo permanece desprotegido → espaçamento < 20 cm é ideal
 
 ### Implicações para projeto
 
@@ -758,9 +758,9 @@ Talude rodoviário de **3 m de altura**, inclinação 1V:1,5H (33,7°), em solo 
 :::
 :::
 
-# [9 — QUIZ & EXERCÍCIO]{.section-header}
+# [9  -  QUIZ & EXERCÍCIO]{.section-header}
 
-## Quiz rápido — teste seus conhecimentos {.smaller-text}
+## Quiz rápido  -  teste seus conhecimentos {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -805,7 +805,7 @@ d) 0,05 mm/pixel
 :::
 
 ::: {.info-box}
-**Lembre-se:** a resistência à tração ($t_R$) deve ser medida em laboratório com ensaio de tração direta — não é possível extraí-la de imagens!
+**Lembre-se:** a resistência à tração ($t_R$) deve ser medida em laboratório com ensaio de tração direta  -  não é possível extraí-la de imagens!
 :::
 
 ---
@@ -857,12 +857,12 @@ d) 0,05 mm/pixel
 ::: {.column width="50%"}
 ### Fotogrametria e software
 
-- Meshroom (2024). AliceVision — Photogrammetric Computer Vision Framework. [alicevision.org](https://alicevision.org/)
+- Meshroom (2024). AliceVision  -  Photogrammetric Computer Vision Framework. [alicevision.org](https://alicevision.org/)
 - CloudCompare (2024). 3D Point Cloud and Mesh Processing Software. [cloudcompare.org](https://www.cloudcompare.org/)
 - Westoby, M. J. et al. (2012). Structure-from-Motion photogrammetry: A low-cost, effective tool for geoscience applications. *Geomorphology*, 179, 300–314.
 - Lague, D., Brodu, N., & Leroux, J. (2013). Accurate 3D comparison of complex topography with terrestrial laser scanner. *ISPRS J. Photogramm. Remote Sens.*, 82, 10–26.
 
-### Vetiver — dados mecânicos
+### Vetiver  -  dados mecânicos
 
 - Hengchaovanich, D. (1998). Vetiver grass for slope stabilization and erosion control. *Technical Bulletin*, 1998/2. Pacific Rim Vetiver Network.
 - Islam, M. S. & Shahin, H. M. (2013). Reinforcing effect of Vetiver (*Chrysopogon zizanioides*) root in geotechnical structures. *Geomechanics and Geoengineering*, 8(4), 262–270.

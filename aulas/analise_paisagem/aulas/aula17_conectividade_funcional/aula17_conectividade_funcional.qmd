@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Conectividade Funcional da Paisagem"
 subtitle: "Métricas, Corredores Ecológicos e Graphab<br>Ciência da Paisagem"
 author: "Luiz Diego Vidal Santos"
@@ -26,7 +26,7 @@ execute:
 ::: {.column width="50%"}
 ### Tópicos Principais
 
-- [1]{.circle} Conectividade da paisagem — conceitos
+- [1]{.circle} Conectividade da paisagem  -  conceitos
 - [2]{.circle} Conectividade estrutural vs. funcional
 - [3]{.circle} Teoria de grafos aplicada a paisagens
 - [4]{.circle} Métricas: PC, IIC, EC(PC), dPC
@@ -43,7 +43,7 @@ Compreender o conceito de conectividade funcional da paisagem, calcular métrica
 :::
 :::
 
-# [1 — CONECTIVIDADE DA PAISAGEM]{.section-header}
+# [1  -  CONECTIVIDADE DA PAISAGEM]{.section-header}
 
 ## Por que conectividade importa? {.smaller-text}
 
@@ -72,7 +72,7 @@ A **conectividade** entre fragmentos permite:
 3. Fluxo gênico e variabilidade genética
 4. Provisão contínua de serviços ecossistêmicos
 
-> *"Conectividade é o grau em que a paisagem facilita ou impede o movimento entre manchas de recursos."* — Taylor et al. (1993)
+> *"Conectividade é o grau em que a paisagem facilita ou impede o movimento entre manchas de recursos."*  -  Taylor et al. (1993)
 :::
 :::
 :::
@@ -95,7 +95,7 @@ A **conectividade** entre fragmentos permite:
 **Nesta aula** trabalharemos com **conectividade funcional**, que incorpora a capacidade de dispersão da espécie-alvo na análise.
 :::
 
-# [2 — TEORIA DE GRAFOS NA ECOLOGIA DA PAISAGEM]{.section-header}
+# [2  -  TEORIA DE GRAFOS NA ECOLOGIA DA PAISAGEM]{.section-header}
 
 ## Paisagem como grafo {.smaller-text}
 
@@ -138,9 +138,9 @@ Duas manchas são consideradas **conectadas** se a distância entre elas for ≤
 :::
 :::
 
-# [3 — MÉTRICAS DE CONECTIVIDADE]{.section-header}
+# [3  -  MÉTRICAS DE CONECTIVIDADE]{.section-header}
 
-## IIC — Integral Index of Connectivity {.smaller-text}
+## IIC  -  Integral Index of Connectivity {.smaller-text}
 
 $$IIC = \frac{\sum_{i=1}^{n}\sum_{j=1}^{n} \frac{a_i \times a_j}{1 + nl_{ij}}}{A_L^2}$$
 
@@ -152,12 +152,12 @@ Onde:
 - $IIC$ varia de **0** (sem habitat) a **1** (paisagem toda conectada)
 
 ::: {.info-box}
-O IIC é uma métrica **binária** — a conexão existe ou não (baseada no limiar de dispersão). Não considera probabilidades intermediárias.
+O IIC é uma métrica **binária**  -  a conexão existe ou não (baseada no limiar de dispersão). Não considera probabilidades intermediárias.
 :::
 
 ---
 
-## PC — Probability of Connectivity {.smaller-text}
+## PC  -  Probability of Connectivity {.smaller-text}
 
 $$PC = \frac{\sum_{i=1}^{n}\sum_{j=1}^{n} a_i \times a_j \times p^{*}_{ij}}{A_L^2}$$
 
@@ -183,7 +183,7 @@ O PC é **probabilístico**:
 
 - Conexões próximas → alta probabilidade
 - Conexões distantes → baixa probabilidade
-- Não descarta manchas como "desconectadas" — atribui probabilidade menor
+- Não descarta manchas como "desconectadas"  -  atribui probabilidade menor
 
 **Recomendação:** usar PC preferencialmente ao IIC (Saura & Pascual-Hortal, 2007).
 :::
@@ -192,7 +192,7 @@ O PC é **probabilístico**:
 
 ---
 
-## dPC — Importância individual de cada mancha {.smaller-text}
+## dPC  -  Importância individual de cada mancha {.smaller-text}
 
 Para priorizar manchas para conservação, calcula-se a **variação percentual do PC** ao remover a mancha $k$:
 
@@ -209,10 +209,10 @@ O dPC pode ser decomposto em três frações:
 : {.striped .hover}
 
 ::: {.info-box}
-Manchas com alto **dPC_connector** são *key stepping stones* — sua perda desconecta partes significativas da paisagem.
+Manchas com alto **dPC_connector** são *key stepping stones*  -  sua perda desconecta partes significativas da paisagem.
 :::
 
-# [4 — TUTORIAL PRÁTICO NO GRAPHAB]{.section-header}
+# [4  -  TUTORIAL PRÁTICO NO GRAPHAB]{.section-header}
 
 ## O que é o Graphab? {.smaller-text}
 
@@ -254,7 +254,7 @@ Manchas com alto **dPC_connector** são *key stepping stones* — sua perda desc
 
 ---
 
-## Passo 1 — Criar projeto e importar mapa {.smaller-text}
+## Passo 1  -  Criar projeto e importar mapa {.smaller-text}
 
 1. **File → New Project**
 2. Selecionar o raster de uso da terra (.tif)
@@ -268,7 +268,7 @@ Manchas com alto **dPC_connector** são *key stepping stones* — sua perda desc
 
 ---
 
-## Passo 2 — Definir custos de deslocamento {.smaller-text}
+## Passo 2  -  Definir custos de deslocamento {.smaller-text}
 
 A cada classe de uso da terra, atribui-se um **custo unitário** de deslocamento:
 
@@ -290,7 +290,7 @@ Os custos são **espécie-dependentes**. Uma ave florestal atribui alto custo a 
 
 ---
 
-## Passo 3 — Gerar grafo e calcular métricas {.smaller-text}
+## Passo 3  -  Gerar grafo e calcular métricas {.smaller-text}
 
 1. **Graph → Create Graph**
    - Tipo de distância: **Cost distance** (least-cost path)
@@ -305,7 +305,7 @@ Os custos são **espécie-dependentes**. Uma ave florestal atribui alto custo a 
 
 ---
 
-## Passo 4 — Interpretação {.smaller-text}
+## Passo 4  -  Interpretação {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -339,7 +339,7 @@ Isso permite responder:
 :::
 :::
 
-# [5 — CORREDORES ECOLÓGICOS]{.section-header}
+# [5  -  CORREDORES ECOLÓGICOS]{.section-header}
 
 ## Da métrica ao planejamento {.smaller-text}
 
@@ -352,24 +352,24 @@ A partir da análise no Graphab:
 1. Identificar **componentes desconectados** do grafo
 2. Localizar as **arestas de menor custo** entre componentes
 3. Traçar o **caminho de menor custo** (least-cost corridor)
-4. Definir **largura do corredor** — baseada na biologia da espécie (ex.: 100 m para aves, 500 m para mamíferos)
+4. Definir **largura do corredor**  -  baseada na biologia da espécie (ex.: 100 m para aves, 500 m para mamíferos)
 
 ### Marco legal
 
-- **Lei 9.985/2000** (SNUC) — UC como núcleo de conectividade
-- **Lei 12.651/2012** (Código Florestal) — APPs como corredores naturais
-- **PNMA** — princípio da conectividade ecológica
+- **Lei 9.985/2000** (SNUC)  -  UC como núcleo de conectividade
+- **Lei 12.651/2012** (Código Florestal)  -  APPs como corredores naturais
+- **PNMA**  -  princípio da conectividade ecológica
 :::
 
 ::: {.column width="50%"}
 ::: {.info-box}
 **Limitações da abordagem**
 
-1. Modelos baseados em **uma espécie** — paisagem é multiespécies
-2. Custos de deslocamento são **estimativas** — faltam dados empíricos para muitas espécies brasileiras
-3. Mapas de uso da terra têm **erro** — incerteza propagada
+1. Modelos baseados em **uma espécie**  -  paisagem é multiespécies
+2. Custos de deslocamento são **estimativas**  -  faltam dados empíricos para muitas espécies brasileiras
+3. Mapas de uso da terra têm **erro**  -  incerteza propagada
 4. Não considera **variação temporal** (safra, estações)
-5. Conectividade ≠ uso real — presença de corredor não garante deslocamento
+5. Conectividade ≠ uso real  -  presença de corredor não garante deslocamento
 
 **Recomendação:** usar espécies guarda-chuva e validar com dados de movimentação (GPS, camera trap).
 :::
@@ -413,7 +413,7 @@ A partir da análise no Graphab:
 - Taylor, P. D., Fahrig, L., & Merriam, G. (1993). Connectivity is a vital element of landscape structure. *Oikos*, 68, 571–573.
 - Foltête, J. C., Clauzel, C., & Vuidel, G. (2012). A software tool dedicated to the modelling of landscape networks. *Environmental Modelling & Software*, 38, 316–327.
 - Saura, S., & Torné, J. (2009). Conefor Sensinode 2.2: A software package for quantifying the importance of habitat patches for landscape connectivity. *Environmental Modelling & Software*, 24(1), 135–139.
-- MapBiomas (2024). Projeto MapBiomas — Coleção 9. [mapbiomas.org](https://mapbiomas.org/)
+- MapBiomas (2024). Projeto MapBiomas  -  Coleção 9. [mapbiomas.org](https://mapbiomas.org/)
 
 # {background-color="#034EA2"}
 

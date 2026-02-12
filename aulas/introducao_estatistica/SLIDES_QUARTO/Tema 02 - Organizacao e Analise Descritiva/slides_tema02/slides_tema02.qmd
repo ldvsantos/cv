@@ -1,13 +1,13 @@
-﻿---
+---
 title: "Organização e Análise Descritiva de Dados"
-subtitle: "Aula V — Normas para Tabelas e Séries Estatísticas"
+subtitle: "Aula V  -  Normas para Tabelas e Séries Estatísticas"
 author: "Luiz Diego Vidal Santos"
 institute: "Universidade Estadual de Feira de Santana (UEFS)"
-footer: "UEFS — Introdução à Estatística | Tema 2 — Organização e Análise Descritiva"
+footer: "UEFS  -  Introdução à Estatística | Tema 2  -  Organização e Análise Descritiva"
 format: 
   revealjs:
     logo: ../../../../assets/logo-uefs.webp
-    footer: "UEFS — Introdução à Estatística | Tema 2 — Organização e Análise Descritiva"
+    footer: "UEFS  -  Introdução à Estatística | Tema 2  -  Organização e Análise Descritiva"
     slide-number: true
     theme: [simple, ../../../../assets/uefs.scss]
     controls: true
@@ -26,21 +26,21 @@ execute:
 
 # [I. Introdução]{.section-header}
 
-## 3.1 — Normas para Tabelas {.smaller-text}
+## 3.1  -  Normas para Tabelas {.smaller-text}
 
 Uma tabela compõe-se de:
 
 ::: {.columns}
 ::: {.column width="50%"}
-- **Corpo** — conjunto de linhas e colunas com informações sobre a variável
-- **Cabeçalho** — parte superior, especifica o conteúdo das colunas
-- **Coluna indicadora** — especifica o conteúdo das linhas
+- **Corpo**  -  conjunto de linhas e colunas com informações sobre a variável
+- **Cabeçalho**  -  parte superior, especifica o conteúdo das colunas
+- **Coluna indicadora**  -  especifica o conteúdo das linhas
 :::
 
 ::: {.column width="50%"}
-- **Linhas** — retas imaginárias que facilitam a leitura horizontal
-- **Casa ou célula** — espaço destinado a um só número
-- **Título** — Conjunto de informações respondendo: O quê? Quando? Onde?
+- **Linhas**  -  retas imaginárias que facilitam a leitura horizontal
+- **Casa ou célula**  -  espaço destinado a um só número
+- **Título**  -  Conjunto de informações respondendo: O quê? Quando? Onde?
 :::
 :::
 
@@ -52,7 +52,7 @@ De acordo com as normas do IBGE, nas casas ou células devemos colocar:
 
 | Símbolo | Significado |
 |---------|-------------|
-| **—** (traço horizontal) | Valor é zero |
+| ** - ** (traço horizontal) | Valor é zero |
 | **…** (três pontos) | Não temos dados |
 | **?** (interrogação) | Dúvida à exatidão do valor |
 | **0** (zero) | Valor muito pequeno para ser expresso pela unidade utilizada |
@@ -82,7 +82,7 @@ Sempre que símbolos, abreviações ou convenções não forem autoexplicativas,
 :::
 :::
 
-# [3.2 — Séries Estatísticas]{.section-header}
+# [3.2  -  Séries Estatísticas]{.section-header}
 
 ## Séries Estatísticas {.smaller-text}
 

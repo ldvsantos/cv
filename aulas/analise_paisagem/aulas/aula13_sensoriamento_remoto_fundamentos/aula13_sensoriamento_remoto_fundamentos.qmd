@@ -1,6 +1,6 @@
-﻿---
+---
 title: "Análise da Paisagem"
-subtitle: "Aula 13 — Sensoriamento Remoto Aplicado I: Fundamentos Operacionais<br>Curso de Geografia"
+subtitle: "Aula 13  -  Sensoriamento Remoto Aplicado I: Fundamentos Operacionais<br>Curso de Geografia"
 author: "Luiz Diego Vidal Santos"
 institute: "Universidade Estadual de Feira de Santana (UEFS)"
 date: "2026-04-08"
@@ -45,7 +45,7 @@ Compreender os **fundamentos operacionais** do sensoriamento remoto orbital apli
 :::
 :::
 
-# [1 — SR NA ANÁLISE DA PAISAGEM]{.section-header}
+# [1  -  SR NA ANÁLISE DA PAISAGEM]{.section-header}
 
 ## Por que sensoriamento remoto? {.smaller-text}
 
@@ -55,11 +55,11 @@ Compreender os **fundamentos operacionais** do sensoriamento remoto orbital apli
 
 O sensoriamento remoto permite:
 
-- **Visão sinóptica** — coberturas extensas em um único registro
-- **Repetibilidade** — séries temporais para detectar mudanças
-- **Multiscalaridade** — do metro ao quilômetro
-- **Registro objetivo** — dados mensuráveis e reproduzíveis
-- **Cobertura de áreas inacessíveis** — semiárido, floresta densa, zonas remotas
+- **Visão sinóptica**  -  coberturas extensas em um único registro
+- **Repetibilidade**  -  séries temporais para detectar mudanças
+- **Multiscalaridade**  -  do metro ao quilômetro
+- **Registro objetivo**  -  dados mensuráveis e reproduzíveis
+- **Cobertura de áreas inacessíveis**  -  semiárido, floresta densa, zonas remotas
 
 ### Na análise da paisagem
 
@@ -101,7 +101,7 @@ Todo corpo com temperatura acima do zero absoluto **emite** radiação eletromag
 :::
 :::
 
-# [2 — IMAGENS ORBITAIS]{.section-header}
+# [2  -  IMAGENS ORBITAIS]{.section-header}
 
 ## Principais sensores e plataformas {.smaller-text}
 
@@ -185,7 +185,7 @@ Número de **níveis de cinza** por pixel.
 :::
 :::
 
-# [3 — BANDAS E COMPOSIÇÕES]{.section-header}
+# [3  -  BANDAS E COMPOSIÇÕES]{.section-header}
 
 ## Bandas espectrais do Sentinel-2 {.smaller-text}
 
@@ -226,13 +226,13 @@ Atribuímos bandas aos canais **R-G-B** do monitor:
 :::
 :::
 
-# [4 — ÍNDICES ESPECTRAIS]{.section-header}
+# [4  -  ÍNDICES ESPECTRAIS]{.section-header}
 
 ## Principais índices para a paisagem {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### NDVI — Índice de Vegetação
+### NDVI  -  Índice de Vegetação
 
 $$NDVI = \frac{NIR - RED}{NIR + RED} = \frac{B8 - B4}{B8 + B4}$$
 
@@ -246,7 +246,7 @@ $$NDVI = \frac{NIR - RED}{NIR + RED} = \frac{B8 - B4}{B8 + B4}$$
 
 : {.striped .hover}
 
-### NDWI — Índice de Água
+### NDWI  -  Índice de Água
 
 $$NDWI = \frac{GREEN - NIR}{GREEN + NIR} = \frac{B3 - B8}{B3 + B8}$$
 
@@ -255,7 +255,7 @@ $$NDWI = \frac{GREEN - NIR}{GREEN + NIR} = \frac{B3 - B8}{B3 + B8}$$
 :::
 
 ::: {.column width="50%"}
-### NDBI — Índice de Área Construída
+### NDBI  -  Índice de Área Construída
 
 $$NDBI = \frac{SWIR - NIR}{SWIR + NIR} = \frac{B11 - B8}{B11 + B8}$$
 
@@ -275,7 +275,7 @@ $$NDBI = \frac{SWIR - NIR}{SWIR + NIR} = \frac{B11 - B8}{B11 + B8}$$
 :::
 :::
 
-# [5 — USO E COBERTURA DA TERRA]{.section-header}
+# [5  -  USO E COBERTURA DA TERRA]{.section-header}
 
 ## Da imagem ao mapa temático {.smaller-text}
 
@@ -294,13 +294,13 @@ $$NDBI = \frac{SWIR - NIR}{SWIR + NIR} = \frac{B11 - B8}{B11 + B8}$$
 
 ### Classes típicas na paisagem
 
-1. **Floresta/mata** — vegetação natural arbórea
-2. **Campo/cerrado/caatinga** — vegetação natural não-arbórea
-3. **Pastagem** — uso agropecuário
-4. **Agricultura** — lavouras anuais/perenes
-5. **Solo exposto** — sem cobertura vegetal
-6. **Água** — corpos hídricos
-7. **Área urbana** — edificações, vias
+1. **Floresta/mata**  -  vegetação natural arbórea
+2. **Campo/cerrado/caatinga**  -  vegetação natural não-arbórea
+3. **Pastagem**  -  uso agropecuário
+4. **Agricultura**  -  lavouras anuais/perenes
+5. **Solo exposto**  -  sem cobertura vegetal
+6. **Água**  -  corpos hídricos
+7. **Área urbana**  -  edificações, vias
 :::
 
 ::: {.column width="50%"}
@@ -332,7 +332,7 @@ O **MapBiomas** é a mais completa base de uso/cobertura da terra no Brasil:
 :::
 :::
 
-# [6 — REALCES E PRÉ-PROCESSAMENTO]{.section-header}
+# [6  -  REALCES E PRÉ-PROCESSAMENTO]{.section-header}
 
 ## Técnicas básicas de realce {.smaller-text}
 
@@ -340,8 +340,8 @@ O **MapBiomas** é a mais completa base de uso/cobertura da terra no Brasil:
 ::: {.column width="50%"}
 ### Contraste e brilho
 
-- **Estiramento de histograma** — amplia o intervalo de cinza para melhorar visualização
-- **Equalização** — distribui uniformemente os valores de cinza
+- **Estiramento de histograma**  -  amplia o intervalo de cinza para melhorar visualização
+- **Equalização**  -  distribui uniformemente os valores de cinza
 - **Estiramento linear** entre percentis (2%–98%)
 
 ### Filtragem
@@ -431,13 +431,13 @@ Na próxima aula, faremos exercício de **identificação de feições** na áre
 ::: {.info-box}
 **O que vimos hoje**
 
-1. **SR na análise da paisagem** — visão sinóptica, repetibilidade, multiscalaridade
-2. **Sensores e plataformas** — Landsat, Sentinel-2, CBERS, MODIS, MapBiomas
-3. **Quatro resoluções** — espacial, espectral, temporal, radiométrica
-4. **Bandas e composições** — cor verdadeira vs. falsa cor; B8-B4-B3 para vegetação
-5. **Índices espectrais** — NDVI, NDWI, NDBI: quantificação e comparação
-6. **Uso e cobertura** — métodos de classificação; MapBiomas como referência
-7. **Realce e pré-processamento** — contraste, filtragem, correção atmosférica
+1. **SR na análise da paisagem**  -  visão sinóptica, repetibilidade, multiscalaridade
+2. **Sensores e plataformas**  -  Landsat, Sentinel-2, CBERS, MODIS, MapBiomas
+3. **Quatro resoluções**  -  espacial, espectral, temporal, radiométrica
+4. **Bandas e composições**  -  cor verdadeira vs. falsa cor; B8-B4-B3 para vegetação
+5. **Índices espectrais**  -  NDVI, NDWI, NDBI: quantificação e comparação
+6. **Uso e cobertura**  -  métodos de classificação; MapBiomas como referência
+7. **Realce e pré-processamento**  -  contraste, filtragem, correção atmosférica
 :::
 
 # {background-color="#034EA2"}
@@ -449,5 +449,5 @@ Luiz Diego Vidal Santos
 
 Universidade Estadual de Feira de Santana (UEFS)
 
-Análise da Paisagem — Aula 13
+Análise da Paisagem  -  Aula 13
 :::

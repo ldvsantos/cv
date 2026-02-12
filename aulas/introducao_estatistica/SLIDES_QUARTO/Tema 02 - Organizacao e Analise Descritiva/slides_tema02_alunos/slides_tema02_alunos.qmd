@@ -1,13 +1,13 @@
-﻿---
+---
 title: "Organização e Análise Descritiva de Dados"
-subtitle: "Aula V — Versão Alunos"
+subtitle: "Aula V  -  Versão Alunos"
 author: "Luiz Diego Vidal Santos"
 institute: "Universidade Estadual de Feira de Santana (UEFS)"
-footer: "UEFS — Introdução à Estatística | Tema 2 — Organização e Análise Descritiva (Alunos)"
+footer: "UEFS  -  Introdução à Estatística | Tema 2  -  Organização e Análise Descritiva (Alunos)"
 format: 
   revealjs:
     logo: ../../../../assets/logo-uefs.webp
-    footer: "UEFS — Introdução à Estatística | Tema 2 — Organização e Análise Descritiva (Alunos)"
+    footer: "UEFS  -  Introdução à Estatística | Tema 2  -  Organização e Análise Descritiva (Alunos)"
     slide-number: true
     theme: [simple, ../../../../assets/uefs.scss]
     controls: true
@@ -24,21 +24,21 @@ execute:
 
 # [I. Introdução]{.section-header}
 
-## 3.1 — Normas para Tabelas {.smaller-text}
+## 3.1  -  Normas para Tabelas {.smaller-text}
 
 Uma tabela compõe-se de:
 
 ::: {.columns}
 ::: {.column width="50%"}
-- **Corpo** — conjunto de linhas e colunas com informações sobre a variável
-- **Cabeçalho** — parte superior, especifica o conteúdo das colunas
-- **Coluna indicadora** — especifica o conteúdo das linhas
+- **Corpo**  -  conjunto de linhas e colunas com informações sobre a variável
+- **Cabeçalho**  -  parte superior, especifica o conteúdo das colunas
+- **Coluna indicadora**  -  especifica o conteúdo das linhas
 :::
 
 ::: {.column width="50%"}
-- **Linhas** — retas imaginárias que facilitam a leitura horizontal
-- **Casa ou célula** — espaço destinado a um só número
-- **Título** — Conjunto de informações respondendo: O quê? Quando? Onde?
+- **Linhas**  -  retas imaginárias que facilitam a leitura horizontal
+- **Casa ou célula**  -  espaço destinado a um só número
+- **Título**  -  Conjunto de informações respondendo: O quê? Quando? Onde?
 :::
 :::
 
@@ -52,7 +52,7 @@ Uma tabela compõe-se de:
 
 | Símbolo | Significado |
 |---------|-------------|
-| **—** | Valor é zero |
+| ** - ** | Valor é zero |
 | **…** | Não temos dados |
 | **?** | Dúvida à exatidão |
 | **0** | Valor muito pequeno |
@@ -72,14 +72,14 @@ Na APA, **nunca** deixar células vazias!
 :::
 :::
 
-# [3.2 — Séries Estatísticas]{.section-header}
+# [3.2  -  Séries Estatísticas]{.section-header}
 
 ## Tipos de Séries Estatísticas {.smaller-text}
 
-1. **Histórica** — elemento variável: época/tempo
-2. **Geográfica** — elemento variável: localidade
-3. **Específica** — elemento variável: modalidade
-4. **Mista** — combinação de tipos
+1. **Histórica**  -  elemento variável: época/tempo
+2. **Geográfica**  -  elemento variável: localidade
+3. **Específica**  -  elemento variável: modalidade
+4. **Mista**  -  combinação de tipos
 
 ---
 
