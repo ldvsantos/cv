@@ -373,6 +373,18 @@ Aplicação desktop para gestão de processos de inovação integrando blockchai
 :::
 :::
 
+::: {.g-col-12 .g-col-md-6}
+::: {.card .featured-project}
+![ICS Analyzer — Análise do Solo](img/ics_analyzer.png){.project-img fig-alt="Interface do ICS Analyzer para análise do Índice de Cobertura do Solo com dashboard e machine learning"}
+
+#### ICS Analyzer: Análise do Índice de Cobertura do Solo
+
+Sistema multiplataforma para determinação do ICS com pipeline de machine learning (Ridge + K-Fold CV), diagnóstico conservacionista fuzzy (ISPC), dashboard interativo e geração automatizada de laudos em PDF.
+
+**Resultado:** Software em produção com versão web (GitHub Pages) e desktop (Electron), CI/CD via GitHub Actions e 12 testes unitários. [Saiba mais →](/posts/projeto-ics-analyzer/)
+:::
+:::
+
 :::
 
 ---

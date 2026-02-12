@@ -1,0 +1,452 @@
+---
+title: "Fundamentos do Geoprocessamento e da Análise Espacial"
+subtitle: "Ontologias, Álgebra de Mapas e Inferência Espacial<br>Geotecnologias e SIG"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Geotecnologias e SIG | Fundamentos do Geoprocessamento"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+    code-fold: false
+---
+
+## Visão Geral {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos Principais
+
+- [1]{.circle} Representação do espaço geográfico
+- [2]{.circle} Modelos vetorial e matricial
+- [3]{.circle} Referenciamento espacial e rigor cartográfico
+- [4]{.circle} Álgebra de mapas e análise espacial
+- [5]{.circle} Inferência e estatística espacial
+- [6]{.circle} Geoestatística e krigagem
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo Central**
+
+Compreender os fundamentos teóricos do geoprocessamento, desde a ontologia de representação espacial até a inferência estatística, consolidando a cadeia que transforma observações geográficas em estimativas quantitativas verificáveis.
+:::
+:::
+:::
+
+# [1 - REPRESENTAÇÃO DO ESPAÇO GEOGRÁFICO]{.section-header}
+
+## Ontologias espaciais {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+A modelagem do espaço geográfico exige a eleição prévia de uma **ontologia** entre objetos discretos e campos contínuos, decisão que condiciona toda a cadeia analítica subsequente.
+
+### Objetos discretos (vetorial)
+
+Entidades dotadas de identidade e limites finitos (parcelas, vias, corpos hídricos) são codificadas pelo modelo vetorial, no qual **pontos, linhas e polígonos** carregam coordenadas explícitas e atributos estruturados.
+
+### Campos contínuos (matricial)
+
+Variáveis contínuas (elevação, temperatura, concentração de contaminantes) são amostradas em **grades regulares**, adequadas à representação de processos difusivos e ao cálculo matricial de alta performance.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**A escolha ontológica importa**
+
+A decisão entre vetorial e matricial condiciona diretamente o algoritmo de análise:
+
+- **Raster** - convolução de vizinhança, cálculo de declividade, estatísticas de textura (isotropia da malha)
+- **Vetorial** - consultas de rede, identificação de ciclos, métricas de grafos (topologia rigorosa)
+:::
+:::
+:::
+
+---
+
+## Topologia e geometria computacional {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+No modelo vetorial, regras de adjacência, incidência e conectividade (arc-node, winged-edge) garantem que feições **compartilhem arcos sem sobreposição nem lacunas**, preservando a integridade lógica indispensável a operações de rede e partição territorial.
+
+A geometria computacional complementa esse arcabouço com algoritmos de:
+
+- **Interseção** e varredura angular
+- **Triangulação de Delaunay**
+- **Polígonos de Voronoi**
+- Partição espacial e análise de proximidade
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Infraestrutura de dados**
+
+Em escala corporativa, bancos de dados espaciais (**PostGIS**) e protocolos do **Open Geospatial Consortium** (WMS, WFS, WCS) asseguram integridade transacional e interoperabilidade.
+
+A convergência entre cartografia analítica, geodésia de precisão e teoria da informação espacial constitui o alicerce do geoprocessamento contemporâneo (Longley et al. 2015).
+:::
+:::
+:::
+
+# [2 - MODELOS VETORIAL E MATRICIAL]{.section-header}
+
+## Modelo vetorial em detalhe {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Primitivas geométricas
+
+| Primitiva | Exemplo | Atributo típico |
+|-----------|---------|-----------------|
+| Ponto | Poço, estação | Coordenada (x, y, z) |
+| Linha | Rio, estrada | Comprimento, sentido |
+| Polígono | Bacia, parcela | Área, perímetro |
+
+: {.striped .hover}
+
+### Relações topológicas
+
+- **Adjacência** - polígonos que compartilham arestas
+- **Incidência** - nó pertence a arco
+- **Conectividade** - arcos ligados formam rede
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Vantagens do modelo vetorial**
+
+- Preservação de formas e limites precisos
+- Eficiência em bancos de dados relacionais
+- Consultas SQL espaciais (ST_Intersects, ST_Buffer)
+- Representação compacta em áreas homogêneas
+- Análise de redes (grafos ponderados)
+:::
+:::
+:::
+
+---
+
+## Modelo matricial (raster) {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+O raster discretiza o espaço em células regulares, cada uma armazenando um valor numérico. A resolução espacial determina o tamanho da célula e, consequentemente, o nível de detalhe representável.
+
+### Características fundamentais
+
+- Grade regular com resolução fixa
+- Cada célula armazena um valor (DN, reflectância, elevação)
+- Operações algébricas célula a célula
+- Adequado para dados de sensoriamento remoto e MDEs
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Trade-off resolução vs. volume**
+
+| Resolução | Área por pixel | Volume (100 km²) |
+|-----------|----------------|-------------------|
+| 30 m | 900 m² | ~111 mil pixels |
+| 10 m | 100 m² | ~1 milhão pixels |
+| 1 m | 1 m² | ~100 milhões pixels |
+
+: {.striped .hover}
+
+A escolha ontológica condiciona diretamente o algoritmo de análise e o custo computacional (Burrough e McDonnell 1998).
+:::
+:::
+:::
+
+# [3 - REFERENCIAMENTO ESPACIAL]{.section-header}
+
+## Datums e sistemas de referência {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+Toda estimativa numérica derivada de dado geográfico herda o **erro sistemático** do sistema de referência quando este não é tratado com precisão metrológica.
+
+### Datums de referência
+
+A geodésia moderna define elipsoides de revolução ajustados ao geoide, ancorando coordenadas a datums geocêntricos como o **SIRGAS 2000**, que fornece coerência global e unicidade posicional.
+
+Datums locais (SAD-69, Córrego Alegre) priorizam minimização de erros regionais, porém introduzem **incompatibilidades** ao acoplar datasets multitemporais.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Projeções cartográficas**
+
+A projeção da superfície curva sobre o plano implica deformações em área, forma, distância ou direção:
+
+| Família | Propriedade preservada | Exemplo |
+|---------|----------------------|---------|
+| Conforme | Ângulos | Mercator |
+| Equivalente | Áreas | Albers |
+| Equidistante | Distâncias radiais | Azimutal |
+
+: {.striped .hover}
+
+As **indicatrizes de Tissot** quantificam distorções e orientam a escolha da projeção adequada.
+:::
+:::
+:::
+
+---
+
+## Metadados e rastreabilidade {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+Os **metadados**, consolidados segundo o perfil da INDE (Infraestrutura Nacional de Dados Espaciais), devem registrar:
+
+- Parâmetros de datum
+- Paralelos padrão
+- Origem falsa (false easting/northing)
+- Sistema de coordenadas (geográfico ou projetado)
+
+Essa documentação assegura **reprodução exata** e **rastreabilidade metrológica** do produto.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**SIRGAS 2000 no Brasil**
+
+A migração ao SIRGAS 2000 tornou-se mandatória no território brasileiro. No semiárido, a sazonalidade fenológica e a intermitência hidrológica exigem que recorte espacial e janela de aquisição sejam coerentes com o mecanismo físico investigado, sob pena de invalidar o produto resultante (Jensen 2009).
+:::
+:::
+:::
+
+# [4 - ÁLGEBRA DE MAPAS]{.section-header}
+
+## Operações sobre camadas {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+A álgebra de mapas, formalizada por **Tomlin (1990)**, combina camadas como aplicação de operadores sobre domínios compartilhados.
+
+### Operações locais
+
+Transformam cada célula de forma independente (reclassificação, soma, threshold).
+
+### Operações focais
+
+Incorporam a vizinhança imediata mediante filtragem de convolução e estatísticas de janela móvel.
+
+### Operações zonais
+
+Agregam valores segundo partições poligonais (balanço hídrico por sub-bacia, estoque de carbono por unidade de manejo).
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Overlay vetorial**
+
+No domínio vetorial, o overlay executa:
+
+- **Interseção** - geometrias comuns a ambas camadas
+- **União** - geometria total combinada
+- **Diferença simétrica** - exclusiva de cada camada
+
+Cada operação funde geometrias e instaura novas relações topológicas, gerando atributos combinados.
+:::
+:::
+:::
+
+---
+
+## Modelos digitais de terreno e redes {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+**Modelos Digitais de Terreno** (MDT) possibilitam derivar:
+
+- **Declividade** e **orientação** via diferenças finitas
+- **Curvatura** (plana e de perfil)
+- **Fluxo acumulado** - algoritmos D8, D-infinity
+- **Bacias de contribuição** para estudos hidrossedimentológicos
+
+Funções distanciais (euclidiana, custo acumulado) fundamentam **análise locacional** e planejamento territorial.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Análise de redes como grafos**
+
+A representação de redes como grafos ponderados habilita:
+
+- **Caminhos mínimos** (Dijkstra, A*)
+- **Fluxos máximos** (max-flow / min-cut)
+- **Métricas de centralidade**
+
+Essas operações respondem a problemas de transporte, logística e **conectividade ecológica**.
+:::
+
+Na integração multicritério, a modelagem difusa (Fuzzy Sets) captura transições graduais de aptidão e risco, superando a rigidez booleana.
+:::
+:::
+
+# [5 - INFERÊNCIA E ESTATÍSTICA ESPACIAL]{.section-header}
+
+## Autocorrelação espacial {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+A dependência espacial impõe violação controlada do pressuposto de independência amostral da estatística clássica.
+
+A **Primeira Lei da Geografia** (Tobler 1970) postula que entidades próximas tendem a ser mais similares que entidades distantes. Essa propriedade é quantificada pelo **Índice Global de Moran**:
+
+$$I = \frac{n}{W} \frac{\sum_i\sum_j w_{ij}(x_i - \bar{x})(x_j - \bar{x})}{\sum_i (x_i - \bar{x})^2}$$
+
+Valores positivos indicam agrupamento e negativos sugerem dissimilaridade entre vizinhos.
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**LISA - Indicadores Locais**
+
+Os indicadores locais de associação espacial (LISA) decompõem o índice global, localizando **clusters** e **anomalias** que indicam:
+
+- Processos erosivos incipientes
+- Pressão antrópica localizada
+- Padrões de contaminação difusa
+
+(Anselin 1995)
+:::
+:::
+:::
+
+---
+
+## MAUP e suas implicações {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+O **Problema da Unidade de Área Modificável** (MAUP) impõe cautela metodológica, pois o suporte espacial condiciona a magnitude e até a direção das correlações estimadas.
+
+Uma resolução grosseira pode **homogeneizar** rotas de fluxo subterrâneo no semiárido e invalidar modelos de exportação de sedimentos.
+
+::: {.info-box}
+**Regra prática**
+
+Sempre testar resultados em pelo menos duas resoluções espaciais distintas para verificar a robustez das conclusões frente ao efeito MAUP.
+:::
+:::
+
+::: {.column width="50%"}
+### Implicações práticas
+
+| Resolução | Efeito potencial |
+|-----------|-----------------|
+| Municipal | Homogeneíza diferenças intra-urbanas |
+| Por setor censitário | Pode gerar artefatos de borda |
+| Por bacia | Mistura cabeceira e exutório |
+| Pixel 30 m | Adequado para uso do solo regional |
+
+: {.striped .hover}
+
+A escolha do suporte não é neutra e deve ser justificada pelo objetivo analítico.
+:::
+:::
+
+# [6 - GEOESTATÍSTICA E KRIGAGEM]{.section-header}
+
+## Semivariograma {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+A geoestatística modela a continuidade espacial pelo **semivariograma** (Isaaks e Srivastava 1989):
+
+$$\gamma(h) = \frac{1}{2}\text{Var}[Z(s) - Z(s+h)]$$
+
+### Parâmetros do modelo
+
+| Parâmetro | Significado |
+|-----------|-------------|
+| **Efeito pepita** ($C_0$) | Variabilidade a distância zero |
+| **Patamar** ($C_0 + C$) | Variância máxima |
+| **Alcance** ($a$) | Distância de dependência espacial |
+
+: {.striped .hover}
+
+Modelos teóricos (esférico, exponencial, gaussiano) são ajustados ao semivariograma experimental.
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**O que o semivariograma revela?**
+
+- **Alcance curto** - variabilidade local alta, microrelevo dominante
+- **Alcance longo** - continuidade suave, gradientes regionais
+- **Efeito pepita alto** - ruído de medição ou variabilidade sub-amostral
+:::
+:::
+:::
+
+---
+
+## Krigagem ordinária {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+A krigagem ordinária produz o estimador linear não enviesado de variância mínima:
+
+$$\hat{Z}(s_0) = \sum_{i=1}^{n}\lambda_i Z(s_i)$$
+
+onde os pesos $\lambda_i$ são obtidos pela resolução do sistema de krigagem que minimiza a variância de estimação.
+
+### Superioridade sobre métodos determinísticos
+
+A krigagem fornece simultaneamente:
+
+1. A **superfície estimada** (mapa interpolado)
+2. A **superfície de variância** (mapa de incerteza)
+
+Isso permite incorporar o **risco associado** a cada predição.
+:::
+
+::: {.column width="45%"}
+::: {.info-box}
+**Aplicações no semiárido**
+
+- Interpolação de precipitação em redes esparsas
+- Mapeamento de atributos do solo (pH, CTC, textura)
+- Estimativa de concentração de contaminantes
+- Predição de variáveis geoquímicas em prospecção mineral
+
+A krigagem é superior ao IDW (inverso da distância) por fornecer não apenas a estimativa, mas a incerteza associada (Cressie 1993).
+:::
+:::
+:::
+
+---
+
+## Referências {.smaller-text}
+
+- Anselin, L. (1995). Local Indicators of Spatial Association (LISA). *Geographical Analysis*, 27(2), 93-115.
+- Burrough, P. A.; McDonnell, R. A. (1998). *Principles of Geographical Information Systems*. Oxford University Press.
+- Cressie, N. (1993). *Statistics for Spatial Data*. Wiley.
+- Isaaks, E. H.; Srivastava, R. M. (1989). *An Introduction to Applied Geostatistics*. Oxford University Press.
+- Jensen, J. R. (2009). *Remote Sensing of the Environment*. 2. ed. Pearson.
+- Longley, P. A. et al. (2015). *Geographic Information Science and Systems*. 4. ed. Wiley.
+- Tobler, W. R. (1970). A computer movie simulating urban growth in the Detroit region. *Economic Geography*, 46(sup1), 234-240.
+- Tomlin, C. D. (1990). *Geographic Information Systems and Cartographic Modeling*. Prentice Hall.
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::

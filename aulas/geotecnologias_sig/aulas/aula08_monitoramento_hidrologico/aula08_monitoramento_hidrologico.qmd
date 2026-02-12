@@ -1,0 +1,305 @@
+---
+title: "Monitoramento Hidrológico e Geotecnologias"
+subtitle: "Telemetria, Altimetria Espacial e Modelagem de Incerteza<br>Geotecnologias e SIG"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Geotecnologias e SIG | Monitoramento Hidrológico"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+    code-fold: false
+---
+
+## Visão Geral {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos Principais
+
+- [1]{.circle} Monitoramento convencional e o problema inverso
+- [2]{.circle} Telemetria, IoT e reatividade da informação
+- [3]{.circle} Curva-chave e hidrometria de precisão
+- [4]{.circle} Altimetria espacial por radar
+- [5]{.circle} Precipitação e umidade do solo por satélite
+- [6]{.circle} Evapotranspiração e MDEs para bacias virtuais
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo Central**
+
+Compreender como telemetria, sensoriamento remoto e modelagem numérica convergem para construir representações integradas do ciclo hidrológico, minimizando a incerteza estrutural de modelos hidrológicos no semiárido.
+:::
+:::
+:::
+
+# [1 - MONITORAMENTO CONVENCIONAL]{.section-header}
+
+## Redes de observação e o problema inverso {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+O conjunto clássico de **réguas linimétricas, pluviômetros mecânicos e molinetes acústicos** opera segundo a premissa de que a observação pontual, quando ancorada em séries longas, reflete o comportamento regional.
+
+### O problema inverso
+
+A precipitação convectiva apresenta gradientes de **dezenas de milímetros por quilômetro**, enquanto o escoamento concentrado reage a pulsos de **minutos**.
+
+Parâmetros de rugosidade, conectividade e armazenamento devem ser inferidos a partir de sinais **incompletos**.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Consequências de redes mal dimensionadas**
+
+Uma rede mal dimensionada (WMO 2008):
+
+- Amplifica a **variância** dos parâmetros calibrados
+- Compromete a robustez estatística de estimadores de recorrência
+- Reduz a confiabilidade de curvas IDF
+- Invalida regionalizações hidrológicas
+
+No semiárido brasileiro, a retração da rede pluviométrica agrava esse cenário, exigindo complementação com **sensoriamento remoto**.
+:::
+:::
+:::
+
+# [2 - TELEMETRIA E IoT]{.section-header}
+
+## Da medição ao tempo real {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+A **latência** entre medição e decisão não pode exceder o tempo de concentração de bacias urbanizadas (frequentemente < 40 min).
+
+### Sensores conectados
+
+| Sensor | Variável | Transmissão |
+|--------|----------|-------------|
+| Pressão | Nível d'água | 4G/5G |
+| Ultrassônico | Nível d'água | LoRaWAN |
+| Câmera LiDAR | Nível e perfil | Satelital banda S |
+| Pluviômetro automático | Precipitação | 4G/5G |
+
+: {.striped .hover}
+
+A redundância via satélites garante continuidade mesmo quando torres de telefonia falham durante tempestades.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Sistemas de alerta de cheias**
+
+A arquitetura IoT transforma leituras caóticas em **trajetórias hidrodinâmicas previsíveis**:
+
+1. Sensores transmitem nível/precipitação em tempo real
+2. Dados são assimilados por modelos numéricos
+3. Previsão de vazão é atualizada a cada ciclo
+4. Alertas são emitidos automaticamente
+
+O modelo assimila dados **enquanto o evento ainda se processa**, reduzindo a entropia informacional do gestor.
+:::
+:::
+:::
+
+# [3 - CURVA-CHAVE E HIDROMETRIA]{.section-header}
+
+## Conversão nível-vazão {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+A variável controladora da alocação hídrica permanece sendo a **vazão**, mas sua medição direta e contínua é inviável em rios com leitos instáveis.
+
+A conversão nível-vazão emprega a **curva-chave**:
+
+$$Q = a\,(H - H_0)^{b}$$
+
+onde $H_0$ é o nível de descarga nula e os parâmetros $a, b$ dependem de campanhas de medição em diferentes regimes hidráulicos.
+
+### Fatores de instabilidade
+
+- Erosão lateral e deposição de barras
+- Crescimento de macrófitas
+- Variação da seção molhada
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**Re-calibração anual**
+
+A re-calibração anual, corroborada por **levantamentos batimétricos** de alta resolução, reduz o erro sistemático que contaminaria:
+
+- Análises de tendência
+- Curvas de permanência
+- Estimativas de vazão mínima de referência ($Q_{7,10}$)
+- Dimensionamento de outorgas
+
+A medição de ondas de cheia (Q > 1.000 m³/s) é essencial para extrapolação confiável da curva.
+:::
+:::
+:::
+
+# [4 - ALTIMETRIA ESPACIAL POR RADAR]{.section-header}
+
+## Satélites Jason e Sentinel-3/6 {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+Em continentes com rede fluviométrica esparsa (África, América do Sul), satélites da série **Jason** e **Sentinel-3/6** fornecem perfis altimétricos com precisão **subdécimétrica**.
+
+### Processamento do sinal
+
+O eco de radar altímetro é corrigido por:
+
+- Efeitos atmosféricos (troposfera, ionosfera)
+- Marés sólidas e oceânicas
+- Efeito de hooking em margens
+
+O resultado é uma **cota hidrométrica absoluta** que alimenta modelos hidrodinâmicos de larga escala.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Fusão orbital-terrestre**
+
+A resolução temporal varia de **10 a 35 dias**, mas a variância é mitigada ao combinar informação orbital com séries telemétricas de estações ribeirinhas.
+
+Essa fusão cria **superfícies de cota-tempo** que revelam:
+
+- Ondas de cheia em propagação
+- Anomalias de armazenamento
+- Tendências de rebaixamento
+- Validação de modelos de roteamento
+
+A democratização da informação fluvial é fundamental para bacias transfronteiriças.
+:::
+:::
+:::
+
+# [5 - PRECIPITAÇÃO E UMIDADE DO SOLO]{.section-header}
+
+## GPM e SMAP {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### GPM (Global Precipitation Measurement)
+
+Radar de dupla frequência e micro-ondas passivas disponibilizam campos de precipitação horária com resolução de ~10 km. Ajustados por *bias correction* com pluviômetros automáticos, capturam a estrutura **convectiva e orográfica** das chuvas tropicais.
+
+### SMAP (Soil Moisture Active Passive)
+
+Infere **umidade volumétrica** do solo na camada superficial, dado que funciona como indicador de **condição inicial** para modelos chuva-vazão.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Integração precipitação-umidade**
+
+A combinação permite estimar:
+
+- Parcela efetivamente **infiltrada**
+- Volume de **escoamento superficial**
+- Índices de severidade de **estiagem**
+- Cenários de **recarga aquífera**
+
+Em bacias sem estação pluviométrica, os produtos satelitais (CHIRPS, IMERG) constituem a **única fonte** de dados de precipitação distribuída.
+:::
+:::
+:::
+
+# [6 - ET, MDES E BACIAS VIRTUAIS]{.section-header}
+
+## Evapotranspiração orbital {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+A evapotranspiração constitui a **fração mais volumosa** do balanço hídrico em bacias agrícolas.
+
+### SEBAL e METRIC
+
+Utilizam bandas termais (Landsat, Sentinel-2) para converter diferenças de radiância em fluxos de calor sensível e latente.
+
+A acurácia, avaliada por razão entre ET observada em lisímetros e estimada orbitalmente, supera **90%** em regimes bem misturados.
+
+### Aplicação
+
+- Gestão de demanda hídrica de culturas
+- Compatibilização com reservatórios multianuais
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**MDEs e bacias virtuais**
+
+MDEs de 30 m (SRTM, ALOS PALSAR) redefiniram a topologia de drenagem para modelos de propagação 1D.
+
+Técnicas automatizadas permitem:
+
+1. Preenchimento de depressões
+2. Cálculo de direção de fluxo (D8)
+3. Extração automática de bacias
+4. Integração com curvas de permanência
+
+Gerando **matrizes de decisão espacial** que indicam hotspots de risco de cheia ou déficit hídrico.
+:::
+:::
+:::
+
+---
+
+## Calibração e propagação de incerteza {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Desafios de fusão
+
+Diferenças de fuso horário, resolução e algoritmo de correção atmosférica criam **erros de alinhamento** temporal e espacial.
+
+### Assimilação bayesiana
+
+O **Ensemble Kalman Filter** propaga a incerteza de cada fonte dentro de modelos distribuídos, produzindo **envelopes preditivos** que explicitam o grau de confiabilidade.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Limitações persistentes**
+
+- Cobertura diurna limitada de sensores ópticos
+- Atenuação de sinal em micro-ondas durante chuvas intensas
+- Latência de produtos GPM (3-4 horas)
+
+Radares de **banda X** em topos estratégicos surgem como solução híbrida para preencher lacunas em resolução sub-hora, complementando sensores orbitais com observação contínua local.
+:::
+:::
+:::
+
+---
+
+## Referências {.smaller-text}
+
+- Bastiaanssen, W. G. (1998). SEBAL. *Journal of Hydrology*, 212, 198-212.
+- Chow, V. T. (1959). *Open-Channel Hydraulics*. McGraw-Hill.
+- Horton, R. E. (1933). The role of infiltration in the hydrologic cycle. *Trans. AGU*, 14, 446-460.
+- Hou, A. Y. et al. (2014). The Global Precipitation Measurement Mission. *Bull. AMS*, 95(5), 701-722.
+- Lettenmaier, D. P. (2015). Observational hydrology in the 21st century. *WRR*.
+- Nash, J. E.; Sutcliffe, J. V. (1970). River flow forecasting. *J. Hydrology*, 10, 282-290.
+- WMO. (2008). *Guide to Hydrological Practices*. WMO-No. 168.
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::

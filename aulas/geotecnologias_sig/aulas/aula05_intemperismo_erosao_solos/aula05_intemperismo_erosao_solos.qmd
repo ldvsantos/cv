@@ -1,0 +1,352 @@
+---
+title: "Intemperismo, Erosão e Formação de Solos"
+subtitle: "Processos Geoquímicos, Pedogênese e Modelagem Hidrossedimentológica<br>Geotecnologias e SIG"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Geotecnologias e SIG | Intemperismo, Erosão e Solos"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+    code-fold: false
+---
+
+## Visão Geral {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos Principais
+
+- [1]{.circle} Fatores de formação e equação de Jenny
+- [2]{.circle} Processos de intemperismo e quantificação
+- [3]{.circle} Pedogênese e horizontes diagnósticos
+- [4]{.circle} Dinâmica erosiva e RUSLE
+- [5]{.circle} Integração solo-paisagem (catenas)
+- [6]{.circle} Conservação e engenharia de mitigação
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo Central**
+
+Compreender os mecanismos de intemperismo, a gênese de horizontes diagnósticos e a modelagem hidrossedimentológica como condição para dimensionamento de infraestrutura hídrica e planejamento de uso da terra.
+:::
+:::
+:::
+
+# [1 - FATORES DE FORMAÇÃO DO SOLO]{.section-header}
+
+## Equação de Jenny (1941) {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+O solo constitui um sistema termodinâmico multifásico cuja evolução resulta da dissipação de energia livre na interface litosfera-atmosfera-biosfera.
+
+A equação de fatores de estado postula:
+
+$$S = f(cl, o, r, p, t)$$
+
+| Fator | Símbolo | Papel |
+|-------|---------|-------|
+| Clima | $cl$ | Energia e água disponíveis |
+| Organismos | $o$ | Ciclagem e bioturbação |
+| Relevo | $r$ | Redistribuição gravitacional |
+| Material de origem | $p$ | Composição mineralógica |
+| Tempo | $t$ | Duração dos processos |
+
+: {.striped .hover}
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**O solo como regulador**
+
+A arquitetura do solo governa a **partição dos fluxos de água e energia** na bacia hidrográfica (Brady e Weil 2016).
+
+Compreender intemperismo, pedogênese e erosão é condição para:
+
+- Dimensionamento de infraestrutura hídrica
+- Planejamento de uso da terra
+- Manejo de bacias hidrográficas
+- Previsão de respostas a mudanças climáticas
+:::
+:::
+:::
+
+# [2 - PROCESSOS DE INTEMPERISMO]{.section-header}
+
+## Intemperismo químico e Série de Goldich {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+A **Série de Goldich** (1938) hierarquiza a suscetibilidade dos silicatos à dissolução:
+
+- Olivinas e piroxênios (mais suscetíveis)
+- Anfibólios e biotita
+- Feldspatos sódico-cálcicos
+- Feldspatos potássicos
+- Muscovita e quartzo (mais resistentes)
+
+### Reações dominantes
+
+- **Hidrólise** ácido-base
+- **Carbonatação** ($CO_2 + H_2O \leftrightarrow H_2CO_3$)
+- **Oxirredução** de $Fe^{2+} \rightarrow Fe^{3+}$
+- **Complexação orgânica** por ácidos húmicos
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Quantificação: CIA**
+
+O Chemical Index of Alteration quantifica o grau de alteração:
+
+$$CIA = \frac{Al_2O_3}{Al_2O_3 + CaO^* + Na_2O + K_2O} \times 100$$
+
+| CIA | Interpretação |
+|-----|---------------|
+| 50-60 | Alteração incipiente |
+| 60-80 | Alteração moderada |
+| > 80 | Laterita (extrema lixiviação) |
+
+: {.striped .hover}
+
+Complementado por PIA, WIP e Índice de Vogt para diagnóstico completo.
+:::
+:::
+:::
+
+---
+
+## Análise de Brimhall-Chadwick {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+Na escala de perfil, a análise de **Brimhall-Chadwick** utiliza elemento imóvel (Ti ou Zr) para calcular:
+
+- **Fluxo de massa** ($\tau_i$) - ganho/perda de cada elemento
+- **Deformação volumétrica** ($\varepsilon$) - expansão ou colapso
+
+Distingue processos **isométricos** (alteração sem mudança de volume) de **colapsivos** (perda de volume por dissolução). (Brimhall et al. 1992)
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Produtos do intemperismo tropical**
+
+O efeito sobre a mineralogia primária se complementa pela fragmentação física que amplia a área específica, gerando:
+
+- **Gibbsita** ($Al(OH)_3$) - clima muito úmido
+- **Caulinita** ($Al_2Si_2O_5(OH)_4$) - clima tropical
+- **Óxidos de ferro** (goethita, hematita)
+- **Esmectitas** - clima de drenagem restrita
+
+A interação com reservatórios de carbono promove agregação e cria a **porosidade funcional** do perfil.
+:::
+:::
+:::
+
+# [3 - PEDOGÊNESE E HORIZONTES DIAGNÓSTICOS]{.section-header}
+
+## Diferenciação de horizontes {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+A pedogênese produz horizontes com propriedades contrastantes:
+
+| Horizonte | Característica |
+|-----------|---------------|
+| **A** | Matéria orgânica humificada |
+| **E** | Perda eluvial de argila |
+| **Bt** | Feições cutânicas de iluviação |
+| **C** | Estrutura reliquiar da rocha-mãe |
+
+: {.striped .hover}
+
+No SiBCS (EMBRAPA 2018), essas configurações geram **Argissolos** ou **Luvissolos**, sendo saturação por bases, profundidade do Bt e teores de Fe_ox critérios determinantes.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Propriedades hidráulicas**
+
+O modelo de **van Genuchten** descreve a curva de retenção de água, enquanto a conectividade porosa, governada pelo conceito de **dupla porosidade**, explica a anisotropia da condutividade hidráulica saturada ($K_s$).
+
+Bioporos gerados por raízes e fauna edáfica favorecem:
+
+- Infiltração preferencial
+- Troca iônica
+- Ciclagem de nutrientes
+- Drenagem interna do perfil
+:::
+:::
+:::
+
+# [4 - DINÂMICA EROSIVA E MODELAGEM]{.section-header}
+
+## RUSLE - Equação Universal Revisada {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+Erosão hídrica se instala quando a energia cinética do impacto da chuva ou a tensão cisalhante do escoamento supera a resistência coesiva dos agregados.
+
+$$A = R \cdot K \cdot L \cdot S \cdot C \cdot P$$
+
+| Fator | Significado |
+|-------|-------------|
+| $R$ | Erosividade da chuva ($EI_{30}$) |
+| $K$ | Erodibilidade do solo |
+| $L \cdot S$ | Comprimento e declividade da encosta |
+| $C$ | Uso e manejo |
+| $P$ | Práticas conservacionistas |
+
+: {.striped .hover}
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**Modelos fisicamente baseados**
+
+- **WEPP** - integra fluxos de energia cinética com resolução intra-evento
+- **USPED** - capacidade de transporte de sedimentos
+
+O fator $LS$ é derivado por algoritmos **D-infinity** aplicados a MDEs, melhorando a representação da convergência de fluxo.
+:::
+:::
+:::
+
+---
+
+## Erosão no semiárido brasileiro {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+No domínio semiárido brasileiro, chuvas convectivas produzem erosividade elevada:
+
+$$R > 7\,000 \text{ MJ mm ha}^{-1} \text{h}^{-1} \text{ano}^{-1}$$
+
+### Fatores agravantes
+
+- Prevalência de Neossolos Litólicos
+- Solos com horizonte B textural
+- Crostas superficiais que favorecem escoamento Hortoniano
+- Alta conectividade hidrossedimentológica
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Consequências**
+
+- Erosão laminar intensa
+- Assoreamento de açudes
+- Perda de solo arável
+- Eutrofização de corpos hídricos a jusante
+- Comprometimento da segurança hídrica
+
+A integração solo-paisagem é essencial para priorizar intervenções conservacionistas em sub-bacias críticas (EMBRAPA 2018).
+:::
+:::
+:::
+
+# [5 - INTEGRAÇÃO SOLO-PAISAGEM]{.section-header}
+
+## Catenas topográficas {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+Catenas topográficas revelam migração lateral de argilas ao longo da vertente:
+
+| Posição | Solo | Processo |
+|---------|------|----------|
+| **Topo** | Latossolo | Intemperismo profundo |
+| **Encosta** | Argissolo | Eluviação lateral |
+| **Vale** | Gleissolo | Hidromorfismo |
+
+: {.striped .hover}
+
+A dinâmica pedogênica **retroalimenta** o relevo ao acelerar o intemperismo em profundidade.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Impactos antrópicos**
+
+Mudanças de uso elevam o fator $C$ da RUSLE de $< 0{,}2$ para $> 0{,}6$, multiplicando perdas em três a cinco vezes. Além disso:
+
+- Acidificação por fertilizantes nitrogenados
+- Salinização por irrigação inadequada
+- Selagem superficial por maquinário
+- Comprometimento da regulação hídrica
+- Perda de carbono pedológico (ODS 15)
+:::
+:::
+:::
+
+# [6 - CONSERVAÇÃO E ENGENHARIA DE MITIGAÇÃO]{.section-header}
+
+## Manipulação dos fatores da RUSLE {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+Manipular simultaneamente os fatores da RUSLE em eixos sinérgicos constitui o princípio da engenharia de conservação (Bertoni e Lombardi Neto 2012).
+
+### Fator C (cobertura)
+
+- Palhada > 6 t ha$^{-1}$
+- Sistemas agroflorestais
+- Manutenção da cobertura em período chuvoso
+
+### Fator K (erodibilidade)
+
+- Incremento de carbono orgânico > 3%
+- Aplicação de silicato de cálcio
+- Melhoria da agregação
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Fatores LS e P (hidrológico)**
+
+Controle hidrológico integra:
+
+- **Terraceamento** em nível
+- Cultivos em **contorno**
+- **Barraginhas** (bacias de infiltração)
+
+A priorização pode ser conduzida por modelagem AHP em microbacias com:
+
+- $\tau_{Si} < -0{,}5$ (perda silício acentuada)
+- Densidade de drenagem $> 2$ km km$^{-2}$
+:::
+:::
+:::
+
+---
+
+## Referências {.smaller-text}
+
+- Bertoni, J.; Lombardi Neto, F. (2012). *Conservação do Solo*. 9. ed. Ícone.
+- Brady, N. C.; Weil, R. R. (2016). *The Nature and Properties of Soils*. 15. ed. Pearson.
+- Brimhall, G. H. et al. (1992). Deformational mass transport in soil evolution. *Science*, 255, 695-702.
+- EMBRAPA. (2018). *Sistema Brasileiro de Classificação de Solos*. 5. ed. Embrapa Solos.
+- Goldich, S. S. (1938). A study in rock-weathering. *J. Geology*, 46(1), 17-58.
+- Jenny, H. (1941). *Factors of Soil Formation*. McGraw-Hill.
+- Wischmeier, W. H.; Smith, D. D. (1978). *Predicting Rainfall Erosion Losses*. USDA Agriculture Handbook 537.
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::

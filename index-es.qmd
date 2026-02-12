@@ -362,6 +362,18 @@ Humidificador residencial sanitizante de ambiente con niebla de ozono, combinand
 :::
 :::
 
+::: {.g-col-12 .g-col-md-6}
+::: {.card .featured-project}
+![ICS Analyzer — Análisis de Suelo](img/ics_analyzer.png){.project-img fig-alt="Interfaz del ICS Analyzer para análisis del Índice de Cobertura del Suelo con dashboard y machine learning"}
+
+#### ICS Analyzer: Análisis del Índice de Cobertura del Suelo
+
+Sistema multiplataforma para determinación del ICS con pipeline de machine learning (Ridge + K-Fold CV), diagnóstico conservacionista fuzzy (ISPC), dashboard interactivo y generación automatizada de informes en PDF.
+
+**Resultado:** Software en producción con versión web (GitHub Pages) y desktop (Electron), CI/CD via GitHub Actions y 12 pruebas unitarias. [Más información →](/posts/projeto-ics-analyzer/)
+:::
+:::
+
 :::
 
 ---

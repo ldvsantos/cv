@@ -1,0 +1,388 @@
+---
+title: "Geotecnologias, Recursos Hídricos e Gestão da Seca"
+subtitle: "Sensoriamento Remoto, Índices de Seca e Governança Hídrica<br>Geotecnologias e SIG"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Geotecnologias e SIG | Geotecnologias e Gestão da Seca"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+    code-fold: false
+---
+
+## Visão Geral {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos Principais
+
+- [1]{.circle} A crise hídrica e o paradigma tecnológico
+- [2]{.circle} Monitoramento de reservatórios e aquíferos
+- [3]{.circle} Índices de seca (SPI, SPEI)
+- [4]{.circle} Índices biofísicos e seca agrícola
+- [5]{.circle} Evapotranspiração e seca hidrológica
+- [6]{.circle} Governança estratégica e resiliência
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo Central**
+
+Compreender como geotecnologias (sensoriamento remoto, SIG, modelagem) se articulam com os instrumentos da Política Nacional de Recursos Hídricos para monitorar, prever e mitigar os efeitos da seca no semiárido brasileiro.
+:::
+:::
+:::
+
+# [1 - A CRISE HÍDRICA E O PARADIGMA TECNOLÓGICO]{.section-header}
+
+## Da resposta reativa ao modelo preventivo {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+A escalada da crise hídrica resulta da convergência de **teleconexões climáticas intensificadas** e pressões antrópicas crescentes sobre aquíferos e reservatórios, exigindo a transição de um paradigma reativo para um modelo preventivo orientado pelo cálculo de risco (Wilhite 2000).
+
+### A Lei 9.433/1997
+
+A Política Nacional de Recursos Hídricos (PNRH) conferiu status legal à gestão integrada por bacia hidrográfica e consagrou cinco instrumentos operacionais:
+
+- Planos de recursos hídricos
+- Enquadramento de corpos d'água
+- Outorga de direito de uso
+- Cobrança pelo uso
+- Sistema Nacional de Informações
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Revolução tecnológica**
+
+O arcabouço tecnológico da década de 1990 não permitia visualização sinótica das variáveis críticas do ciclo hidrológico. Essa limitação tornou-se obsoleta com:
+
+- Satélites **multiespectrais**
+- **Radares** de abertura sintética (SAR)
+- **Gravímetros orbitais** (GRACE)
+- Termômetros **radiométricos**
+
+Geotecnologias que antes produziam cartas estáticas hoje alimentam **sistemas de suporte à decisão** em tempo quase real.
+:::
+:::
+:::
+
+# [2 - MONITORAMENTO DE RESERVATÓRIOS E AQUÍFEROS]{.section-header}
+
+## Altimetria radar e gravimetria orbital {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Altimetria radar (Sentinel-3)
+
+Perfis de cota hidrométrica com resolução decimétrica são derivados pela altimetria radar, que converte variações de fase e atraso de pulso em **estimativas de armazenamento efetivo** de represas sem campanhas batimétricas onerosas.
+
+### Gravimetria orbital (GRACE/GRACE-FO)
+
+Dados gravimétricos registram oscilações de massa da ordem de centímetros de equivalente coluna de água, revelando a **mineração intensiva de aquíferos** confinados historicamente invisíveis por ausência de monitoramento piezométrico *in situ* (Tapley et al. 2004).
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Integração em SIG**
+
+Sintetizados em ambiente SIG, esses sensores viabilizam **balanços hídricos** que integram estoques superficiais e subterrâneos, fornecendo aos comitês de bacia indicadores decisórios sobre:
+
+- Outorgas de captação
+- Deflúvios ecológicos
+- Alertas de rebaixamento
+:::
+
+::: {.highlight-box}
+**Big Data Geoespacial**
+
+A integração em plataformas como **Google Earth Engine** substitui processamento local fragmentado por análises em escala continental com latência de horas.
+:::
+:::
+:::
+
+---
+
+## Umidade do solo e agricultura de precisão {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+O sensoriamento por micro-ondas na **Banda L** (missão SMAP) mensura a umidade do solo independentemente da cobertura de nuvens.
+
+### Aplicações diretas
+
+| Aplicação | Sensor | Resolução |
+|-----------|--------|-----------|
+| Umidade superficial | SMAP | ~9 km |
+| Precipitação horária | GPM | ~10 km |
+| Cota de reservatório | Sentinel-3 | ~300 m |
+| Armazenamento subterrâneo | GRACE-FO | ~300 km |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**ZARC - Zoneamento Agrícola de Risco Climático**
+
+Os dados de umidade do solo alimentam instrumentos como o ZARC, que orienta:
+
+- Calendários de plantio
+- Seguro agrícola (Proagro)
+- Crédito rural condicionado a risco
+
+A fusão dessas camadas em plataformas de Big Data geoespacial permite monitoramento contínuo do balanço hídrico em escala de bacia.
+:::
+:::
+:::
+
+# [3 - ÍNDICES DE SECA]{.section-header}
+
+## SPI - Índice de Precipitação Padronizado {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+Diferenciar tecnicamente as manifestações da seca constitui pré-requisito para qualquer estratégia de monitoramento.
+
+O **SPI** (McKee et al. 1993) é construído a partir de séries pluviométricas transformadas pela função de distribuição gama, cujos desvios padronizados isolam a variabilidade intrínseca de cada região:
+
+| SPI | Categoria |
+|-----|-----------|
+| ≥ 2,0 | Extremamente úmido |
+| 1,5 a 1,99 | Muito úmido |
+| -0,99 a 0,99 | Normal |
+| -1,0 a -1,49 | Seca moderada |
+| -1,5 a -1,99 | Seca severa |
+| ≤ -2,0 | Seca extrema |
+
+: {.striped .hover}
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**Limitação do SPI**
+
+O SPI carece de sensibilidade à **demanda atmosférica de evaporação**. Em cenários de aquecimento global, uma mesma precipitação pode resultar em seca mais severa se a evapotranspiração potencial (ETP) aumentar.
+
+Essa limitação motivou o desenvolvimento do **SPEI**.
+:::
+:::
+:::
+
+---
+
+## SPEI e secas relâmpago {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+O **SPEI** (Vicente-Serrano et al. 2010) incorpora a evapotranspiração potencial estimada por **Penman-Monteith** (FAO-56), capturando a influência térmica na severidade da seca.
+
+### Avanços em relação ao SPI
+
+- Detecta **secas relâmpago** (flash droughts) impulsionadas por ondas de calor
+- Sensível a cenários de mudança climática
+- Multiscalar (1 a 48 meses)
+- Não depende apenas de déficit pluviométrico
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Flash droughts**
+
+Secas relâmpago são eventos de dessecação rápida do solo (**< 4 semanas**) impulsionados por:
+
+- Ondas de calor persistentes
+- Vento seco e baixa umidade relativa
+- Alta radiação solar
+
+Esses eventos são independentes de déficits pluviométricos extremos e representam risco crescente sob aquecimento global.
+:::
+:::
+:::
+
+# [4 - ÍNDICES BIOFÍSICOS E SECA AGRÍCOLA]{.section-header}
+
+## NDVI e VCI {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+A seca agrícola manifesta-se na queda do potencial matricial do solo e é detectável precocemente por **índices espectrais**. O estresse hídrico induz fechamento estomático e degradação da clorofila, elevando a reflectância no vermelho e reduzindo-a no infravermelho próximo.
+
+$$NDVI = \frac{\rho_{NIR} - \rho_{RED}}{\rho_{NIR} + \rho_{RED}}$$
+
+Normalizado dentro do envelope histórico, o **VCI** (Kogan 1995) converte o NDVI em percentis de severidade:
+
+$$VCI = \frac{NDVI - NDVI_{min}}{NDVI_{max} - NDVI_{min}} \times 100$$
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**Interpretação do VCI**
+
+| VCI (%) | Condição |
+|---------|----------|
+| > 60 | Normal / Úmido |
+| 40 - 60 | Estresse leve |
+| 20 - 40 | Seca moderada |
+| < 20 | Seca severa |
+
+: {.striped .hover}
+
+Séries temporais de NDVI/VCI estabelecem uma **"climatologia da vegetação"** na qual desvios negativos persistentes sinalizam seca agrícola antecedentemente às perdas de produtividade.
+:::
+:::
+:::
+
+---
+
+## EVI e ampliação de sensibilidade {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+O **EVI** (Huete et al. 2002) amplia a sensibilidade em coberturas densas ao incorporar correções atmosféricas e de solo:
+
+$$EVI = G \times \frac{\rho_{NIR} - \rho_{RED}}{\rho_{NIR} + C_1 \rho_{RED} - C_2 \rho_{BLUE} + L}$$
+
+onde $G = 2{,}5$, $C_1 = 6$, $C_2 = 7{,}5$ e $L = 1$.
+
+### Vantagens sobre o NDVI
+
+- Menor saturação em dosséis densos
+- Correção de aerossóis (banda azul)
+- Redução do efeito de brilho do solo
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Aplicação no semiárido**
+
+Na Caatinga, a deciduidade sazonal gera oscilações abruptas nos índices de vegetação. Somente séries temporais densas permitem isolar flutuações fenológicas de distúrbios antropogênicos, evitando **falsos positivos** de degradação.
+
+A combinação NDVI + EVI + VCI em plataformas de monitoramento permite diferenciar seca meteorológica de seca agrícola com resolução espacial de 250 m (MODIS) a 10 m (Sentinel-2).
+:::
+:::
+:::
+
+# [5 - EVAPOTRANSPIRAÇÃO E SECA HIDROLÓGICA]{.section-header}
+
+## Algoritmo SEBAL {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+A seca hidrológica (anomalias em fluxos de base e rebaixamento de níveis freáticos) exige quantificação da **evapotranspiração real** ($ET_r$).
+
+O algoritmo **SEBAL** (Bastiaanssen et al. 1998) particiona o saldo de radiação em fluxos de calor latente e sensível mediante **pixels-âncora** que calibram empiricamente o gradiente térmico superficial.
+
+### Balanço de energia
+
+$$R_n - G = H + \lambda ET$$
+
+onde $R_n$ é o saldo de radiação, $G$ o fluxo de calor no solo, $H$ o calor sensível e $\lambda ET$ o calor latente (evapotranspiração).
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**Do ponto à malha contínua**
+
+O SEBAL substitui o paradigma pontual das estações agrometeorológicas por **malhas contínuas** de auditoria do uso consuntivo.
+
+Mapas diários de ET permitem:
+
+- Detectar estresse hídrico em culturas irrigadas
+- Monitorar eficiência de irrigação
+- Calcular balanço hídrico por sub-bacia
+- Identificar secas hidrológicas incipientes
+:::
+:::
+:::
+
+---
+
+## Modelagem e gêmeos digitais {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Redes LSTM
+
+Redes neurais de memória longa (LSTM) superam métodos estatísticos clássicos na projeção de vazões ao aprender **não linearidades ocultas** nos dados hidrometeorológicos.
+
+### Gêmeos digitais de bacias
+
+A fusão de LSTM com modelagem determinística delineia os **gêmeos digitais** de bacias hidrográficas, nos quais gestores testam cenários contrafactuais de alocação com meses de antecedência.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Seca socioeconômica**
+
+Quando a disponibilidade marginal deixa de atender a matriz produtiva, configura-se a **seca socioeconômica**, cuja modelagem exige integração de variáveis:
+
+- Hidrológicas (vazão, armazenamento)
+- Econômicas (PIB agrícola, custo de água)
+- Demográficas (demanda per capita)
+- Energéticas (geração hidrelétrica)
+:::
+:::
+:::
+
+# [6 - GOVERNANÇA ESTRATÉGICA E RESILIÊNCIA]{.section-header}
+
+## Sistema de suporte à decisão {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+Governança hídrica baseada em risco apoia-se na capacidade institucional de **antecipar choques**, não no volume absoluto disponível.
+
+### Componentes do DSS
+
+Construído sobre SIG corporativo, o Sistema de Suporte à Decisão integra:
+
+- Grades de precipitação satelital calibrada (CHIRPS, GPM)
+- Malhas termais e índices de vegetação
+- Redes de fluxo raster
+- Cadastros de outorga e demandas
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Instrumentos de política pública**
+
+Políticas de tarifação escalonada e **seguro paramétrico** utilizam, como gatilho, índices remotos auditáveis (SPI, VCI, anomalias de $ET_r$), reduzindo a assimetria de informação entre regulador e usuários.
+
+Algoritmos de **otimização estocástica** resolvem a alocação multi-usuário sob restrições de segurança hídrica, energia firme e vazão ecológica.
+:::
+:::
+:::
+
+---
+
+## Referências {.smaller-text}
+
+- Allen, R. G. et al. (1998). *Crop evapotranspiration*. FAO Irrigation and Drainage Paper 56.
+- Bastiaanssen, W. G. et al. (1998). A remote sensing surface energy balance algorithm for land (SEBAL). *J. Hydrology*, 212, 198-212.
+- Huete, A. et al. (2002). Overview of the radiometric and biophysical performance of MODIS vegetation indices. *Remote Sensing of Environment*, 83, 195-213.
+- Kogan, F. N. (1995). Application of vegetation index and brightness temperature for drought detection. *Advances in Space Research*, 15(11), 91-100.
+- McKee, T. B. et al. (1993). The relationship of drought frequency and duration to time scales. *8th Conf. Applied Climatology*.
+- Tapley, B. D. et al. (2004). The gravity recovery and climate experiment. *Geophysical Research Letters*, 31(9).
+- Vicente-Serrano, S. M. et al. (2010). A multiscalar drought index sensitive to global warming: the SPEI. *J. Climate*, 23(7), 1696-1718.
+- Wilhite, D. A. (2000). *Drought: A global assessment*. Routledge.
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::

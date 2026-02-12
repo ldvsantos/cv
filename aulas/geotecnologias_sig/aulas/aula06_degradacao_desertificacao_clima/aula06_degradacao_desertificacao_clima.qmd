@@ -1,0 +1,266 @@
+---
+title: "Degradação do Solo, Desertificação e Mudanças Climáticas"
+subtitle: "Retroalimentação Climática, Salinização e Indicadores de Monitoramento<br>Geotecnologias e SIG"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Geotecnologias e SIG | Degradação, Desertificação e Clima"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+    code-fold: false
+---
+
+## Visão Geral {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos Principais
+
+- [1]{.circle} LDN e o conceito de neutralidade
+- [2]{.circle} USLE e retroalimentação climática
+- [3]{.circle} Salinização, sodificação e colapso hidráulico
+- [4]{.circle} Mecanismo de Charney (albedo-precipitação)
+- [5]{.circle} Indicadores biológicos e sensoriamento remoto
+- [6]{.circle} Engenharia de restauração e IQS
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo Central**
+
+Compreender os mecanismos de retroalimentação entre degradação do solo, desertificação e mudanças climáticas, articulando indicadores de monitoramento com o conceito de Neutralidade da Degradação da Terra (LDN) da Meta 15.3 dos ODS.
+:::
+:::
+:::
+
+# [1 - LDN E NEUTRALIDADE DA DEGRADAÇÃO]{.section-header}
+
+## O conceito de Land Degradation Neutrality {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+A degradação do solo configura-se como processo termodinâmico **irreversível** quando a dissipação de energia excede a capacidade do sistema edáfico de reorganizar suas estruturas.
+
+O conceito de **LDN** (UNCCD, Meta 15.3 dos ODS) estabelece que a área anualmente restaurada deve ao menos compensar a superfície degradada.
+
+### Métrica tridimensional
+
+| Indicador | O que mede |
+|-----------|------------|
+| Cobertura da terra | Mudanças de uso e gestão |
+| Produtividade | Saúde do ecossistema |
+| Carbono orgânico | Estoque e funcionalidade |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Índice de Aridez**
+
+Em ambientes de déficit hídrico crônico ($IA < 0{,}65$), o colapso estrutural assume contornos de **desertificação**:
+
+$$IA = \frac{P}{ETP}$$
+
+onde $P$ é precipitação média anual e $ETP$ evapotranspiração potencial (Penman-Monteith).
+
+O LDN supera a visão simplista de perda de solo como erosão apenas física, incorporando produtividade e estoques de carbono.
+:::
+:::
+:::
+
+# [2 - USLE E RETROALIMENTAÇÃO CLIMÁTICA]{.section-header}
+
+## Mecânica da perda de solo {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+A USLE permanece como ferramenta heurística central para diagnóstico da erosão laminar:
+
+$$A = R \cdot K \cdot L \cdot S \cdot C \cdot P$$
+
+Sob cenários de mudança climática:
+
+- O fator $R$ (erosividade) cresce exponencialmente em resposta à concentração de energia cinética das chuvas intensas ($EI_{30}$)
+- O fator $C$ eleva-se com o desmatamento que acompanha a expansão agropecuária desordenada
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**Ciclo vicioso de degradação**
+
+A exportação preferencial da fração coloidal empobrece a CTC e converte o solo em **emissor líquido de CO₂**:
+
+1. Perda de COS → reduz agregação
+2. Agregados instáveis → eleva $K$
+3. Maior erodibilidade → mais perda de COS
+4. Nutrientes (N, P, K) exportados → eutrofização a jusante
+
+O solo, outrora sumidouro de carbono, torna-se **fonte**.
+:::
+:::
+:::
+
+# [3 - SALINIZAÇÃO E COLAPSO HIDRÁULICO]{.section-header}
+
+## Ascensão capilar e sodificação {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+Em zonas onde a recarga é insuficiente para lixiviação descendente, o **gradiente capilar ascendente** mobiliza $Na^+$ e $Cl^-$ para a camada arável.
+
+A Razão de Adsorção de Sódio (RAS) quantifica o risco:
+
+$$RAS = \frac{[Na^+]}{\sqrt{\frac{[Ca^{2+}] + [Mg^{2+}]}{2}}}$$
+
+O aumento de RAS provoca **expansão da dupla camada difusa** e dispersão de argilas, bloqueando poros e reduzindo drasticamente $K_{sat}$.
+:::
+
+::: {.column width="45%"}
+::: {.info-box}
+**Consequências em cascata**
+
+- Dispersão pós-saturação salina
+- Deformações plásticas irreversíveis
+- Formação de **crostas superficiais**
+- Amplificação do escoamento
+- Redução de infiltração
+- Retroalimentação da erosão (USLE)
+- **Seca fisiológica** (potencial osmótico elevado)
+:::
+:::
+:::
+
+# [4 - MECANISMO DE CHARNEY]{.section-header}
+
+## Retroalimentação albedo-precipitação {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+A perda de material fino rico em compostos húmicos **aumenta o albedo regional**, esfriando a troposfera inferior e inibindo a convecção úmida (Charney 1975).
+
+### O ciclo fechado
+
+A própria erosão, ao clarear a superfície, **reduz a precipitação** e fecha um ciclo de retroalimentação climática que endossa a aridificação progressiva.
+
+No semiárido brasileiro, o desmatamento da Caatinga intensifica esse processo ao:
+
+- Reduzir a umidade do solo
+- Intensificar mineralização da matéria orgânica
+- Diminuir rugosidade aerodinâmica ($z_0$)
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Cascata de efeitos biofísicos**
+
+Em levantamentos de balanço de superfície (algoritmo **SEBAL**), observa-se:
+
+- Queda significativa no fluxo de calor latente ($\lambda E$)
+- Transferência de energia para calor sensível ($H$)
+- Aquecimento da camada limite planetária
+- **Supressão da convecção úmida**
+
+A erosão eólica é facilitada pela redução de $z_0$ e incremento da disponibilidade de partículas finas para deflação e saltamento.
+:::
+:::
+:::
+
+# [5 - INDICADORES DE MONITORAMENTO]{.section-header}
+
+## Indicadores biológicos do solo {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+A detecção precoce da degradação exige indicadores biológicos complementares à análise físico-química.
+
+| Indicador | O que mede | Sinal de alerta |
+|-----------|------------|-----------------|
+| C-biomassa | Atividade metabólica | Queda abrupta |
+| $qCO_2$ | Eficiência energética | Elevação |
+| $\beta$-glucosidase | Ciclo do carbono | Redução |
+| Fosfatase ácida | Ciclo do fósforo | Redução |
+
+: {.striped .hover}
+
+O **Quociente Metabólico** ($qCO_2$), razão entre respiração basal e biomassa, eleva-se em sistemas estressados indicando ineficiência energética da microbiota.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Sensoriamento remoto**
+
+A integração dos parâmetros biológicos com índices de SR permite identificar **hotspots de degradação**:
+
+- **NDVI** - vigor da vegetação
+- **SAVI** - ajuste para solo exposto
+- **Albedo de superfície** - indicador de retroalimentação climática
+
+A acurácia espacial é compatível com a **gestão adaptativa** prescrita pela LDN, permitindo intervenção antes que alterações se tornem irreversíveis.
+:::
+:::
+:::
+
+# [6 - ENGENHARIA DE RESTAURAÇÃO]{.section-header}
+
+## Estratégias integradas {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Recomposição vegetal
+
+A recomposição da biomassa vegetal reduz a energia cinética das gotas de chuva e eleva o conteúdo de carbono como agente cimentante de agregados estáveis.
+
+### Descompactação
+
+Técnicas de **subsolagem controlada**, respeitando a tensão de preconsolidação, rompem camadas compactadas sem destruição estrutural adicional.
+
+### Correção de solos salinos
+
+Engenharia de drenagem associada à aplicação de **gesso agrícola** ($CaSO_4 \cdot 2H_2O$) promove substituição do sódio trocável por cálcio, reconstituindo a estrutura floculada.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Índice de Qualidade do Solo (IQS)**
+
+A operacionalização da LDN exige modelos baseados em **lógica difusa** que combinam:
+
+- Atributos **físicos** (porosidade, $K_{sat}$, agregação)
+- Atributos **químicos** (CTC, pH, COS)
+- Atributos **biológicos** ($qCO_2$, enzimas)
+
+O IQS orienta PRAD (Planos de Recuperação de Áreas Degradadas) onde o retorno hidrológico e climático é maximizado, garantindo resiliência frente às mudanças climáticas (Meta 15.3 ODS).
+:::
+:::
+:::
+
+---
+
+## Referências {.smaller-text}
+
+- Charney, J. G. (1975). Dynamics of deserts and drought in the Sahel. *Quarterly J. Royal Meteorological Society*.
+- IPCC. (2019). *Climate Change and Land: IPCC special report*.
+- Lal, R. (2004). Soil degradation as a reason for inadequate human nutrition. *Food Security*.
+- Richards, L. A. (1954). Diagnosis and improvement of saline and alkali soils. USDA Handbook No. 60.
+- UNCCD. (2017). *Scientific Conceptual Framework for Land Degradation Neutrality*.
+- Wischmeier, W. H.; Smith, D. D. (1978). *Predicting Rainfall Erosion Losses*. USDA Handbook 537.
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::

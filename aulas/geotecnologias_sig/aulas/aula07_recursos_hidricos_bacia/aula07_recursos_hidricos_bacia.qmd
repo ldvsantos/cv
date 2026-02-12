@@ -1,0 +1,299 @@
+---
+title: "Recursos Hídricos e Gestão por Bacia Hidrográfica"
+subtitle: "Balanço Hídrico, Lei 9.433 e Instrumentos de Gestão<br>Geotecnologias e SIG"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Geotecnologias e SIG | Recursos Hídricos e Bacia Hidrográfica"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+    code-fold: false
+---
+
+## Visão Geral {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos Principais
+
+- [1]{.circle} Caracterização física e dinâmica hidrológica
+- [2]{.circle} Balanço hídrico e seus componentes
+- [3]{.circle} Lei 9.433/1997 e gestão integrada
+- [4]{.circle} Instrumentos de comando e controle
+- [5]{.circle} Governança e participação social
+- [6]{.circle} Desafios contemporâneos (nexo água-energia-alimento)
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo Central**
+
+Compreender a bacia hidrográfica como unidade de planejamento, articulando o balanço hídrico com os instrumentos legais da Política Nacional de Recursos Hídricos e os desafios contemporâneos de gestão integrada.
+:::
+:::
+:::
+
+# [1 - CARACTERIZAÇÃO FÍSICA DA BACIA]{.section-header}
+
+## Morfometria e hierarquia fluvial {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+A bacia hidrográfica encerra num único **volume de controle** todas as interações de massa, energia e informação que definem disponibilidade hídrica.
+
+### Hierarquia de Strahler (1957)
+
+A água obedece ao gradiente topográfico e concentra-se progressivamente segundo a hierarquia de ordens fluviais, de modo que qualquer intervenção local repercute sobre o todo.
+
+### Atributos morfométricos chave
+
+| Atributo | Significado |
+|----------|-------------|
+| Densidade de drenagem | Eficiência de evacuação |
+| Fator de forma | Susceptibilidade a cheias |
+| Índice de circularidade | Formato da bacia |
+| Sinuosidade | Maturidade do canal |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**A informação estratégica da forma**
+
+Atributos morfométricos modulam o **tempo de concentração** e a assinatura hidrograma-cheia:
+
+- Bacias alongadas (Kf < 0,5) - picos de cheia atenuados
+- Bacias circulares (Kf > 0,5) - picos de cheia concentrados
+
+A conversão de características físicas em informação decisória é o fundamento da gestão de risco hidrológico (Horton 1945).
+:::
+:::
+:::
+
+# [2 - BALANÇO HÍDRICO]{.section-header}
+
+## Equação fundamental {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+O balanço hídrico estabelece que a diferença entre precipitação incidente e evapotranspiração real corresponde ao escoamento mais a variação do armazenamento:
+
+$$P - E_a - Q = \frac{dS}{dt}$$
+
+onde $P$ é precipitação, $E_a$ evapotranspiração real, $Q$ escoamento total e $dS/dt$ variação de armazenamento no sistema solo-aquífero (Tucci 2002).
+
+Essa igualdade incorpora processos não lineares de **infiltração, percolação e intercâmbio** água-solo-vegetação.
+:::
+
+::: {.column width="45%"}
+::: {.info-box}
+**Papel da cobertura vegetal**
+
+A cobertura vegetal:
+
+- Aumenta a rugosidade hidráulica
+- Alonga o caminho de fluxo
+- Favorece infiltração
+- Eleva $\Delta S$ em aquíferos rasos
+- Deprime picos de vazão
+
+O desmatamento acentua a conectividade hidrossuperficial e antecipa a onda de cheia (Chow et al. 1988).
+
+Em regime semiárido, $E_a$ domina o balanço, impondo **sazonalidade acentuada** e intermitência fluvial.
+:::
+:::
+:::
+
+# [3 - LEI 9.433/1997 E GESTÃO INTEGRADA]{.section-header}
+
+## Princípios e instrumentos {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+A Lei nº 9.433 transformou o antigo enfoque setorial em um arranjo sistêmico ancorado na bacia.
+
+### Princípios fundamentais
+
+- Água é **bem de domínio público**
+- Recurso dotado de **valor econômico**
+- Gestão **descentralizada e participativa**
+- Prioridade para **abastecimento humano** e dessedentação animal
+- Bacia hidrográfica como **unidade de planejamento**
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Cinco instrumentos operacionais**
+
+| Instrumento | Função |
+|-------------|--------|
+| **Plano de RH** | Roteiro de metas e investimentos |
+| **Enquadramento** | Classes de qualidade por uso |
+| **Outorga** | Restrição quantitativa |
+| **Cobrança** | Incentivo econômico |
+| **Sistema de Informações** | Base de diagnóstico |
+
+: {.striped .hover}
+
+A sinergia entre instrumentos cria um **ciclo adaptativo** onde medição gera dado, dado alimenta modelo, modelo suporta decisão normativa.
+:::
+:::
+:::
+
+# [4 - INSTRUMENTOS EM DETALHE]{.section-header}
+
+## Outorga, cobrança e enquadramento {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Outorga
+
+Delimita **vazão máxima** retirada ou lançada, evitando superexploração e assegurando disponibilidade a jusante.
+
+### Cobrança
+
+Converte abstração econômica em **incentivo comportamental**, sinalizando o custo marginal da água.
+
+### Equação da diluição
+
+$$C_{final} = \frac{Q_{rio} \cdot C_{rio} + Q_{efl} \cdot C_{efl}}{Q_{rio} + Q_{efl}}$$
+
+Quando $Q_{rio}$ é reduzido por seca, $C_{final}$ sobe, podendo infringir o padrão de classe.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Enquadramento e CONAMA 357/2005**
+
+O enquadramento define **classes de qualidade** segundo uso preponderante, incorporando limites de concentração que expressam um padrão de serviço ecossistêmico.
+
+A outorga de lançamento é, em essência, uma **alocação de capacidade de assimilação** do corpo hídrico. O controle preventivo altera outorgas ou impõe redução de captações quando a qualidade é comprometida.
+:::
+:::
+:::
+
+# [5 - GOVERNANÇA E PARTICIPAÇÃO]{.section-header}
+
+## Comitês de Bacia {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+Os **Comitês de Bacia** incorporam pluralidade de interesses ao deliberar sobre enquadramento e valores de cobrança.
+
+### Composição tripartite
+
+- **Poder público** (federal, estadual, municipal)
+- **Usuários** (irrigação, indústria, abastecimento)
+- **Sociedade civil** (ONGs, universidades)
+
+As **Agências de Água** executam funções técnicas de secretaria e operação financeira, garantindo implementação das deliberações.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Governança e ciência hidrológica**
+
+A governança retorna à ciência hidrológica sempre que reavalia outorgas à luz de:
+
+- Séries históricas de vazão
+- Cenários de variabilidade climática
+- Mudanças de uso do solo
+- Demandas projetadas
+
+O Comitê consolida-se como fórum que acomoda **conflito distributivo** e traduz variabilidade climática em acordos operacionais dinâmicos.
+:::
+:::
+:::
+
+# [6 - DESAFIOS CONTEMPORÂNEOS]{.section-header}
+
+## Nexo água-energia-alimento {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Mudanças climáticas
+
+Intensificação de **secas multianuais** e eventos de precipitação extrema mais frequentes pressionam a infraestrutura de armazenamento, já tensionada por conflitos setoriais.
+
+### Competição intersectorial
+
+A expansão agrícola eleva a demanda consuntiva e gera competição direta com:
+
+- Geração de energia **hidrelétrica**
+- **Abastecimento** urbano
+- Vasão **ecológica** mínima
+- **Navegação** e diluição
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Modelos de otimização multiobjetivo**
+
+Calibrados com séries de balanço hídrico e restrições legais, resolvem a partição entre:
+
+- Volumes mortos e cotas mínimas
+- Faixas de operação por uso
+- Trade-offs reservatório vs. vazão ecológica
+
+A efetividade do enquadramento depende de **monitoramento frequente** (equação de Streeter-Phelps para oxigênio dissolvido) e fiscalização efetiva.
+:::
+:::
+:::
+
+---
+
+## Síntese {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+A bacia hidrográfica transcende condição geográfica e emerge como **interface de negociação política** onde ciência hidrológica, economia e direito dialogam em busca de resiliência.
+
+A Lei 9.433 forneceu arquitetura institucional que converte informação técnica em regra executiva, porém sua eficácia repousa sobre monitoramento de **alta resolução espacial e temporal**.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Segurança hídrica é processo, não estado**
+
+Sustentado por governança que integra:
+
+- Balanço de massa
+- Instrumentos normativos
+- Participação social
+
+dentro do mesmo volume de controle que chamamos **bacia hidrográfica**.
+:::
+:::
+:::
+
+---
+
+## Referências {.smaller-text}
+
+- Chow, V. T.; Maidment, D. R.; Mays, L. W. (1988). *Applied Hydrology*. McGraw-Hill.
+- Horton, R. E. (1945). Erosional development of streams. *Geological Society of America Bulletin*, 56, 275-370.
+- Maidment, D. R. (1993). *Handbook of Hydrology*. McGraw-Hill.
+- Strahler, A. N. (1957). Quantitative analysis of watershed geomorphology. *Trans. AGU*, 38(6), 913-920.
+- Tucci, C. E. M. (2002). *Hidrologia: Ciência e Aplicação*. 3ª ed. ABRH/UFRGS.
+- Brasil. (1997). Lei nº 9.433, de 8 de janeiro de 1997.
+- Brasil. (2005). Resolução CONAMA nº 357, de 17 de março de 2005.
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::

@@ -362,6 +362,18 @@ Residential sanitizing humidifier with ozone mist, combining humidification and 
 :::
 :::
 
+::: {.g-col-12 .g-col-md-6}
+::: {.card .featured-project}
+![ICS Analyzer — Soil Analysis](img/ics_analyzer.png){.project-img fig-alt="ICS Analyzer interface for Soil Cover Index analysis with dashboard and machine learning"}
+
+#### ICS Analyzer: Soil Cover Index Analysis
+
+Cross-platform system for ICS determination with machine learning pipeline (Ridge + K-Fold CV), fuzzy conservation diagnostics (ISPC), interactive dashboard and automated PDF report generation.
+
+**Result:** Software in production with web version (GitHub Pages) and desktop (Electron), CI/CD via GitHub Actions and 12 unit tests. [Read more →](/posts/projeto-ics-analyzer/)
+:::
+:::
+
 :::
 
 ---
