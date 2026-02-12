@@ -45,11 +45,7 @@ Compreender os **fundamentos operacionais** do sensoriamento remoto orbital apli
 :::
 :::
 
----
-
 # [1 — SR NA ANÁLISE DA PAISAGEM]{.section-header}
-
----
 
 ## Por que sensoriamento remoto? {.smaller-text}
 
@@ -105,11 +101,7 @@ Todo corpo com temperatura acima do zero absoluto **emite** radiação eletromag
 :::
 :::
 
----
-
 # [2 — IMAGENS ORBITAIS]{.section-header}
-
----
 
 ## Principais sensores e plataformas {.smaller-text}
 
@@ -193,11 +185,7 @@ Número de **níveis de cinza** por pixel.
 :::
 :::
 
----
-
 # [3 — BANDAS E COMPOSIÇÕES]{.section-header}
-
----
 
 ## Bandas espectrais do Sentinel-2 {.smaller-text}
 
@@ -238,11 +226,7 @@ Atribuímos bandas aos canais **R-G-B** do monitor:
 :::
 :::
 
----
-
 # [4 — ÍNDICES ESPECTRAIS]{.section-header}
-
----
 
 ## Principais índices para a paisagem {.smaller-text}
 
@@ -291,11 +275,7 @@ $$NDBI = \frac{SWIR - NIR}{SWIR + NIR} = \frac{B11 - B8}{B11 + B8}$$
 :::
 :::
 
----
-
 # [5 — USO E COBERTURA DA TERRA]{.section-header}
-
----
 
 ## Da imagem ao mapa temático {.smaller-text}
 
@@ -352,11 +332,7 @@ O **MapBiomas** é a mais completa base de uso/cobertura da terra no Brasil:
 :::
 :::
 
----
-
 # [6 — REALCES E PRÉ-PROCESSAMENTO]{.section-header}
-
----
 
 ## Técnicas básicas de realce {.smaller-text}
 
@@ -463,8 +439,6 @@ Na próxima aula, faremos exercício de **identificação de feições** na áre
 6. **Uso e cobertura** — métodos de classificação; MapBiomas como referência
 7. **Realce e pré-processamento** — contraste, filtragem, correção atmosférica
 :::
-
----
 
 # {background-color="#034EA2"}
 

@@ -4,33 +4,6 @@
 
 **CURSO GEOGRAFIA**
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ![](Aspose.Words.0dc411d6-7e35-42bf-a1dd-52dbd0a72c79.002.png)![](Aspose.Words.0dc411d6-7e35-42bf-a1dd-52dbd0a72c79.003.png)![](Aspose.Words.0dc411d6-7e35-42bf-a1dd-52dbd0a72c79.004.png)<a name="_hlk211353785"></a>**PLANO DE DISCIPLINA**
 
 **EMENTA:**  Fundamentos conceituais e epistemológicos da paisagem na Geografia e áreas afins. Abordagens sistêmicas e integradoras (geossistema, ecologia da paisagem e planejamento territorial). Estrutura, funcionamento e dinâmica da paisagem: padrões espaciais, processos, fluxos e conectividade. Métodos de análise e interpretação: cartografia temática, sensoriamento remoto, métricas de paisagem, análise multiescalar e temporal. Aplicações em diagnóstico ambiental, ordenamento territorial, conservação, recuperação de áreas degradadas e avaliação de serviços ecossistêmicos. Elaboração de produtos técnicos: mapas, relatórios interpretativos e proposta de intervenção/gestão territorial.
