@@ -99,9 +99,19 @@ Fundamentos e aplicações estratégicas de geotêxteis; classificação e propr
 ### {{< fa video >}} Videoaulas
 
 ```{=html}
-<div class="ava-empty">
-  <i class="fa-solid fa-video"></i>
-  Em breve. As videoaulas estão sendo produzidas e serão disponibilizadas aqui.
+<div class="video-grid">
+
+<a class="video-card" href="https://www.youtube.com/watch?v=jcTyGgxVe2Y" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/jcTyGgxVe2Y/hqdefault.jpg" alt="Estação Agrícola — Geotêxteis">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<h4>Estação Agrícola — Geotêxteis</h4>
+<p>Participação no programa Estação Agrícola sobre aplicações de geotêxteis.</p>
+</div>
+</a>
+
 </div>
 ```
 
