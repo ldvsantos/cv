@@ -1,0 +1,1038 @@
+---
+title: "Feixes Vivos e Drenos Verdes"
+subtitle: "Conceito, Confecção e Aplicação <br> Bioengenharia de Solos"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026-03-25"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Bioengenharia de Solos | Feixes Vivos e Drenos Verdes"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    navigation-mode: linear
+    scrollable: true
+    width: 1280
+    height: 720
+    margin: 0.01
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+    embed-resources: true
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} O que são feixes vivos e drenos verdes?
+- [2]{.circle} Fibras naturais e substrato vegetal
+- [3]{.circle} Confecção dos drenos verdes
+- [4]{.circle} Sistema espinha de peixe
+- [5]{.circle} Espécies vegetais para estacas vivas
+- [6]{.circle} Monitoramento e bioensaios
+- [7]{.circle} Estudo de caso: Campus Rural (UFS-SE)
+- [8]{.circle} Síntese e atividade
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Compreender o conceito de **feixes vivos** (*live fascines*) e **drenos verdes** (*green drains*) como técnicas de bioengenharia para **estabilização de encostas** e controle de erosão, dominar os procedimentos de **confecção**, critérios de **dimensionamento** e protocolos de **monitoramento** para garantir a eficiência e a sustentabilidade ambiental do sistema.
+:::
+:::
+:::
+
+# [1. O QUE SÃO FEIXES VIVOS E DRENOS VERDES?]{.section-header}
+
+## Definição e contexto {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+### Conceito
+
+**Feixes vivos** (*live fascines / live bundles*) são conjuntos de **estacas vegetativas** obtidas a partir de galhos vivos de espécies com propagação por estaquia, enterrados no solo para promover **enraizamento** e **cobertura vegetal** (Rey et al., 2019).
+
+**Drenos verdes** (*green drains*) são dispositivos tubulares fabricados com **fibras naturais** (taboa, bananeira) que funcionam simultaneamente como sistema de **drenagem** superficial e substrato de **retenção de umidade** para os feixes vivos.
+
+::: {.highlight-box}
+💡 A **combinação** de drenos verdes + feixes vivos cria um sistema duplo: **drenagem** + **revegetação**, integrando engenharia geotécnica e restauração ecológica.
+:::
+:::
+
+::: {.column width="45%"}
+![Dreno verde confeccionado com fibras naturais de taboa](img/fig04_dreno_verde_a.jpeg){width="90%"}
+:::
+:::
+
+## Histórico e ressurgimento {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+### Linha do tempo
+
+O uso de **materiais vivos** na engenharia de solos é uma prática secular:
+
+- **Séculos XVIII–XIX**: Técnicas amplamente utilizadas na Europa Ocidental para estabilização de encostas e margens fluviais (Evette et al., 2009)
+- **Meados do séc. XX**: Queda no uso com a ascensão de soluções de "engenharia cinza" (concreto, enrocamento)
+- **Últimas décadas**: Ressurgimento impulsionado pela conscientização ambiental e busca por **soluções baseadas na natureza** — NbS (Alqaisi et al., 2020)
+
+::: {.highlight-box}
+🔄 A mudança reflete uma nova abordagem: **proteger contra erosão** + **restaurar ecologicamente** as áreas degradadas, utilizando **biomateriais** (Santos et al., 2020).
+:::
+:::
+
+::: {.column width="45%"}
+
+### Motivação atual
+
+| Abordagem | Custo | Impacto ambiental |
+|-----------|-------|--------------------|
+| Enrocamento | Alto | Elevado |
+| Concreto armado | Muito alto | Elevado |
+| **Feixes vivos + drenos verdes** | **Baixo** | **Mínimo** |
+
+> O enrocamento, embora eficaz, tem custo elevado que inviabiliza aplicação em larga escala (Morokong & Blignaut, 2019; Pietro et al., 2021).
+
+:::
+:::
+
+## Comparação com técnicas anteriores {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### Paliçadas × Barraginhas × Feixes vivos
+
+```{mermaid}
+%%| fig-width: 5.5
+graph LR
+    A["🪵 Paliçadas<br>Barreiras físicas<br>em ravinas"] -->|"Reduz<br>velocidade"| D["Controle<br>de erosão"]
+    B["🕳️ Barraginhas<br>Captação e<br>infiltração"] -->|"Retém<br>água"| D
+    C["🌱 Feixes vivos<br>Drenagem +<br>revegetação"] -->|"Drena +<br>enraíza"| D
+    style A fill:#FDB913,color:#000
+    style B fill:#034EA2,color:#fff
+    style C fill:#2E7D32,color:#fff
+    style D fill:#ED1C24,color:#fff
+```
+:::
+
+::: {.column width="50%"}
+
+### Quando usar cada técnica
+
+| Critério | Paliçadas | Barraginhas | Feixes vivos |
+|----------|-----------|-------------|--------------|
+| Tipo de erosão | Ravinas | Estradas rurais | Encostas/margens |
+| Mecanismo | Barreira física | Captação | Drenagem + raízes |
+| Material | Bambu/madeira | Terra | Fibras + estacas |
+| Revegetação | Não | Não | **Sim** |
+| Durabilidade | Média | Alta | **Crescente** |
+
+::: {.highlight-box}
+🌿 Os feixes vivos são a **única técnica** que ganha resistência com o tempo: à medida que as raízes se desenvolvem, a estabilidade do solo **aumenta progressivamente**.
+:::
+:::
+:::
+
+# [2. FIBRAS NATURAIS E SUBSTRATO VEGETAL]{.section-header}
+
+## Estrutura das fibras naturais {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+### Composição das fibras vegetais
+
+As fibras naturais (NFs) são compostos naturais altamente organizados:
+
+- **Celulose**: componente principal — confere resistência mecânica e rigidez (Akil et al., 2011)
+- **Hemicelulose**: matriz amorfa de suporte
+- **Lignina**: cimentação entre fibras
+- **Ceras e pectinas**: revestimento superficial
+
+A proporção desses componentes varia conforme:
+
+- Espécie vegetal
+- Condições ambientais de cultivo
+- Taxa de crescimento
+- Tipo de tecido da planta
+
+:::
+
+::: {.column width="45%"}
+
+### Morfologia da fibra
+
+```{mermaid}
+%%| fig-width: 4.5
+graph TB
+    A["Fibra vegetal"] --> B["Lúmen central<br>Transporte H₂O + nutrientes"]
+    A --> C["Parede celular<br>multicamada"]
+    C --> D["Lamela média"]
+    C --> E["Parede primária<br>Regula crescimento"]
+    C --> F["Parede secundária"]
+    F --> G["Camada externa"]
+    F --> H["Camada intermediária"]
+    F --> I["Camada interna"]
+    style A fill:#2E7D32,color:#fff
+    style B fill:#FDB913,color:#000
+    style F fill:#034EA2,color:#fff
+```
+
+> A parede secundária, rica em **microfibrilas de celulose orientadas**, é a principal responsável pela resistência mecânica (Chokshi et al., 2022).
+
+:::
+:::
+
+## Taboa e bananeira como substrato {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### *Typha dominguensis* (Taboa)
+
+- Macrófita aquática abundante no Nordeste
+- Alta capacidade de **retenção hídrica**
+- Estrutura porosa favorece **aeração radicular**
+- Biodegradável — enriquece o solo com matéria orgânica
+
+### *Musa paradisiaca* (Bananeira)
+
+- Pseudocaule rico em **fibras longas**
+- Excelente relação custo-benefício
+- Boa capacidade de **drenagem**
+- Folhas com alto teor de celulose
+
+:::
+
+::: {.column width="50%"}
+
+### Vantagens como substrato
+
+As fibras naturais oferecem múltiplas funções (Das et al., 2021; Suwinarti et al., 2023):
+
+| Propriedade | Benefício |
+|-------------|-----------|
+| Retenção de água | Mantém umidade para enraizamento |
+| Drenagem equilibrada | Previne saturação/patógenos |
+| Porosidade | Facilita crescimento radicular |
+| Biodegradabilidade | Integra-se gradualmente ao solo |
+| Matéria orgânica | Enriquece o substrato |
+| Aeração | Oxigênio para raízes |
+
+::: {.highlight-box}
+♻️ As fibras naturais substituem **substratos industriais de alto custo**, oferecendo uma solução **econômica e sustentável** (Silva Fernandes et al., 2018; Araújo Filho et al., 2019).
+:::
+:::
+:::
+
+## Propriedades mecânicas e funcionais {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### Formulações dos drenos verdes
+
+Foram desenvolvidas **três frações** para cada espécie:
+
+**Taboa (*Typha dominguensis*):**
+
+| Fração | Composição |
+|--------|------------|
+| G1 | 24% limbo + 44% fibras folha + 20% resina + 6% solvente + 30% espessante |
+| G2 | 24% limbo + 20% fibras bainha + 20% resina + 6% solvente + 30% espessante |
+| G3 | G2 com água em vez de D'limoneno |
+
+**Bananeira (*Musa paradisiaca*):**
+
+| Fração | Composição |
+|--------|------------|
+| G1 | 24% limbo + 44% fibras folha + 20% resina + 6% solvente + 30% espessante |
+| G2 | 24% limbo + 20% fibras pseudocaule + 20% resina + 6% solvente + 30% espessante |
+| G3 | G2 com água em vez de D'limoneno |
+
+:::
+
+::: {.column width="50%"}
+
+### Componentes da formulação
+
+- **Resina natural**: bi-componente derivada de poliol vegetal de **mamona** — promove coesão entre fibras
+- **Solvente**: D'limoneno (95% da formulação) — origem natural
+- **Espessante**: confere consistência estrutural
+
+### Especificações técnicas
+
+| Parâmetro | Valor |
+|-----------|-------|
+| Espessura da parede | 5 mm |
+| Diâmetro total | 20 cm |
+| Densidade aproximada | 0,062 g/cm³ |
+
+> Similar a materiais geotécnicos como lã de rocha e lã de vidro.
+
+:::
+:::
+
+# [3. CONFECÇÃO DOS DRENOS VERDES]{.section-header}
+
+## Etapas de fabricação {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+### Passo a passo
+
+```{mermaid}
+%%| fig-width: 5
+graph TD
+    A["1. Coleta e secagem<br>das fibras naturais"] --> B["2. Tratamento com<br>resina + espessante"]
+    B --> C["3. Mistura na encoladeira<br>(5 minutos)"]
+    C --> D["4. Moldagem em<br>formas de dreno"]
+    D --> E["5. Prensagem a frio<br>forma tipo U (24h)"]
+    E --> F["6. Cura da resina<br>sem aplicação de calor"]
+    F --> G["7. Dreno verde<br>pronto"]
+    style A fill:#FDB913,color:#000
+    style D fill:#034EA2,color:#fff
+    style E fill:#ED1C24,color:#fff
+    style G fill:#2E7D32,color:#fff
+```
+
+**Detalhes importantes:**
+
+1. Material seco até ~12% de umidade
+2. Mistura homogênea na encoladeira por 5 min
+3. Prensagem hidráulica a frio — **sem calor**
+4. Cura de 24 horas na forma tipo "U"
+
+:::
+
+::: {.column width="45%"}
+![Forma para prensagem hidráulica do dreno verde](img/fig06_forma_prensagem.png){width="90%"}
+
+![Esquema de montagem para prensagem](img/fig07_esquema_montagem.png){width="90%"}
+:::
+:::
+
+## O dispositivo: dreno verde {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### Estrutura do dreno
+
+O dreno verde é composto por **dois subsistemas** principais:
+
+1. **Tubo de drenagem**
+   - Parede de fibras naturais (5 mm)
+   - Diâmetro de 20 cm
+   - Furos distribuídos para infiltração
+
+2. **Feixes vivos** (inseridos no tubo)
+   - Estacas vegetativas vivas
+   - Enraizamento progressivo
+   - Cobertura vegetal crescente
+
+### Funções simultâneas
+
+- 💧 **Drenagem**: conduz excesso de água superficial
+- 🌱 **Retenção de umidade**: cria microambiente para enraizamento
+- 🏔️ **Estabilização**: raízes reforçam o solo
+- ♻️ **Restauração ecológica**: regeneração da vegetação nativa
+
+:::
+
+::: {.column width="50%"}
+![Dreno verde — vista lateral com fibras naturais](img/fig04_dreno_verde_a.jpeg){width="85%"}
+
+![Dreno verde — detalhe da estrutura interna](img/fig05_dreno_verde_b.jpeg){width="85%"}
+:::
+:::
+
+## Diagrama do dreno verde {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### Seção transversal
+
+```{mermaid}
+%%| fig-width: 5
+graph LR
+    subgraph Dreno["Dreno Verde — Seção Transversal"]
+        direction TB
+        A["Parede externa<br>Fibras naturais<br>ε = 5 mm"]
+        B["Furos de infiltração<br>Distribuídos<br>ao longo da parede"]
+        C["Núcleo interno<br>Feixes vivos +<br>substrato úmido"]
+        D["Ø total = 20 cm"]
+    end
+    style A fill:#8B4513,color:#fff
+    style B fill:#4FC3F7,color:#000
+    style C fill:#2E7D32,color:#fff
+    style D fill:#FDB913,color:#000
+```
+
+:::
+
+::: {.column width="50%"}
+
+### Dupla função
+
+```{mermaid}
+%%| fig-width: 5
+graph TD
+    A["Água superficial<br>excedente"] -->|"Infiltra pelos<br>furos"| B["Interior do<br>dreno verde"]
+    B -->|"Conduz para"| C["Dreno polo<br>principal"]
+    B -->|"Retém umidade<br>para"| D["Feixes vivos"]
+    D -->|"Enraízam e"| E["Estabilizam<br>o solo"]
+    C -->|"Evacuação<br>controlada"| F["Base da<br>encosta"]
+    style A fill:#4FC3F7,color:#000
+    style B fill:#8B4513,color:#fff
+    style D fill:#2E7D32,color:#fff
+    style E fill:#FDB913,color:#000
+```
+
+:::
+:::
+
+# [4. SISTEMA ESPINHA DE PEIXE]{.section-header}
+
+## Disposição em espinha de peixe {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+### Arranjo de campo
+
+O sistema de drenagem verde é instalado em um padrão de **"espinha de peixe"** (*fishbone pattern*):
+
+1. **Drenos de polo** (principais)
+   - Instalados ao longo da **ravina**
+   - Feixes maiores de ramos vivos
+   - Coletam e redirecionam o fluxo de água
+
+2. **Fascinas laterais** (secundárias)
+   - Conectadas **obliquamente** aos drenos de polo
+   - Feixes menores de ramos
+   - Desviam água para o dreno principal
+
+### Benefícios do arranjo
+
+- Redução da **velocidade do fluxo superficial**
+- Favorecimento da **infiltração** no solo
+- Enraizamento dos feixes ao longo de todo o sistema
+- Melhoria da **coesão do terreno**
+
+:::
+
+::: {.column width="45%"}
+![Ravina e sulcos para implementação](img/fig08_ravina_campo.png){width="90%"}
+
+![Esquema de disposição espinha de peixe](img/fig09_espinha_peixe.png){width="90%"}
+:::
+:::
+
+## Esquema funcional do sistema {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+### Fluxo hídrico no sistema
+
+```{mermaid}
+%%| fig-width: 5.5
+graph TD
+    A["Precipitação"] --> B["Escoamento<br>superficial"]
+    B --> C["Fascinas laterais<br>(oblíquas)"]
+    C -->|"Desvia para"| D["Dreno de polo<br>(principal)"]
+    D --> E["Base da<br>encosta"]
+    C -->|"Infiltra no"| F["Solo"]
+    B -->|"Interceptado por"| G["Feixes vivos"]
+    G -->|"Raízes<br>estabilizam"| H["Solo reforçado"]
+    F --> H
+    style A fill:#4FC3F7,color:#000
+    style C fill:#2E7D32,color:#fff
+    style D fill:#034EA2,color:#fff
+    style G fill:#FDB913,color:#000
+    style H fill:#8B4513,color:#fff
+```
+
+:::
+
+::: {.column width="45%"}
+
+### Princípios de funcionamento
+
+| Componente | Função |
+|------------|--------|
+| Fascinas laterais | Interceptam e desviam fluxo |
+| Dreno de polo | Coleta e conduz água |
+| Feixes vivos | Enraízam e estabilizam |
+| Furos no dreno | Infiltração controlada |
+
+::: {.highlight-box}
+🐟 O padrão **espinha de peixe** é inspirado na anatomia natural: as "costelas" (fascinas) drenam para a "coluna vertebral" (dreno polo), distribuindo a captação ao longo de toda a encosta.
+:::
+
+:::
+:::
+
+## Dimensionamento do sistema {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### Critérios de projeto
+
+A disposição dos drenos considera:
+
+- **Declividade** da encosta
+- **Comprimento** da vertente
+- **Intensidade de precipitação** local
+- **Tipo de solo** e susceptibilidade à erosão
+- **Área de contribuição** de cada segmento
+
+### Espaçamento entre fascinas
+
+Para encostas com declividade entre 15° e 45°:
+
+| Declividade | Espaçamento recomendado |
+|-------------|------------------------|
+| 15°–25° | 2,0 – 3,0 m |
+| 25°–35° | 1,5 – 2,0 m |
+| 35°–45° | 1,0 – 1,5 m |
+
+:::
+
+::: {.column width="50%"}
+
+### Ângulo de inserção
+
+As fascinas laterais devem ser inseridas em **ângulo de 30°–45°** em relação ao dreno de polo:
+
+```{mermaid}
+%%| fig-width: 4.5
+graph TD
+    A["Topo da encosta<br>↓ Fluxo"] --- B["─── Fascina 30°–45° ───"]
+    B --- C["│ Dreno de Polo │"]
+    C --- D["─── Fascina 30°–45° ───"]
+    D --- E["Base da encosta"]
+    style A fill:#4FC3F7,color:#000
+    style B fill:#2E7D32,color:#fff
+    style C fill:#034EA2,color:#fff
+    style D fill:#2E7D32,color:#fff
+    style E fill:#8B4513,color:#fff
+```
+
+::: {.highlight-box}
+📐 O ângulo oblíquo garante que a água seja **desviada gradualmente**, evitando acúmulo e reduzindo a energia erosiva do escoamento.
+:::
+:::
+:::
+
+# [5. ESPÉCIES VEGETAIS PARA ESTACAS VIVAS]{.section-header}
+
+## Seleção de espécies {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+### Espécies recomendadas
+
+As espécies são selecionadas por sua capacidade de **propagação por estaquia** e adaptação aos tabuleiros costeiros:
+
+| Espécie | Nome popular | Uso |
+|---------|-------------|-----|
+| *Schinus terebinthifolius* | Aroeira | Estabilização |
+| *Spondias lutea* | Cajá | Cobertura |
+| *Inga marginata* | Ingá | Fixação de N₂ |
+| *Tapirira guianensis* | Pau-pombo | Recomposição |
+| *Lonchocarpus sericeus* | Falso-ingá | Fixação de N₂ |
+| *Mimosa caesalpiniaefolia* | Sabiá | Cobertura rápida |
+| *Genipa americana* | Genipapo | Revegetação |
+
+:::
+
+::: {.column width="45%"}
+
+### Critérios de seleção
+
+- **Vigor**: árvores-matrizes saudáveis
+- **Fitossanidade**: ausência de pragas/doenças
+- **Propagação por estaquia**: capacidade comprovada
+- **Adaptação local**: resistência ao clima semiárido
+
+### Preparação das estacas
+
+1. Seleção de **3 árvores vigorosas** por espécie
+2. Retirada da **porção basal** da planta
+3. Estacas de **15–20 cm** de comprimento
+4. Diâmetro de **0,5–1,5 cm**
+5. Corte **reto no ápice** e **em ângulo na base**
+6. Acondicionamento em **água** até o plantio
+
+:::
+:::
+
+## Preparação e plantio {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### Processo de estaquia
+
+```{mermaid}
+%%| fig-width: 5
+graph TD
+    A["Seleção das<br>árvores-matrizes"] --> B["Coleta de<br>estacas basais"]
+    B --> C["Preparo: 15–20 cm<br>Ø 0,5–1,5 cm"]
+    C --> D["Corte: reto no ápice<br>ângulo na base"]
+    D --> E["Acondicionamento<br>em água"]
+    E --> F["Inserção nos<br>drenos verdes"]
+    F --> G["Monitoramento do<br>enraizamento"]
+    style A fill:#2E7D32,color:#fff
+    style C fill:#FDB913,color:#000
+    style F fill:#034EA2,color:#fff
+    style G fill:#ED1C24,color:#fff
+```
+
+:::
+
+::: {.column width="50%"}
+
+### Fatores de sucesso
+
+| Fator | Recomendação |
+|-------|-------------|
+| Época de coleta | Período de dormência |
+| Número de gemas | Mínimo 3 por estaca |
+| Hidratação | Permanente até plantio |
+| Substrato | Fibras naturais no dreno |
+| Estimulante | Extrato de feijão ou tiririca |
+
+::: {.highlight-box}
+🌿 O uso de **estimulantes naturais** (extrato de feijão ou tiririca) pode aumentar significativamente a taxa de enraizamento, substituindo reguladores de crescimento industriais de alto custo (Araújo Filho et al., 2019).
+:::
+
+:::
+:::
+
+# [6. MONITORAMENTO E BIOENSAIOS]{.section-header}
+
+## Protocolo de monitoramento {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### 1º Bioensaio — Germinação e crescimento (40 dias)
+
+**Parâmetros avaliados:**
+
+| Sigla | Parâmetro |
+|-------|-----------|
+| IGS | Início da germinação das sementes |
+| G% | Porcentagem de germinação |
+| IVG | Índice de velocidade de germinação |
+| NFB | Número de folhas na bandeja |
+| MSPAB | Massa seca parte aérea (bandeja) |
+| CRB | Comprimento radicular (bandeja) |
+| MSRB | Massa seca radicular (bandeja) |
+| VRB | Volume radicular (bandeja) |
+| DRB | Diâmetro radicular (bandeja) |
+
+:::
+
+::: {.column width="50%"}
+
+### 2º Bioensaio — Produção em substrato
+
+**Parâmetros avaliados:**
+
+| Sigla | Parâmetro |
+|-------|-----------|
+| AV | Altura em vaso |
+| NFV | Número de folhas em vaso |
+| CRV | Comprimento radicular (vaso) |
+| MSPAV | Massa seca parte aérea (vaso) |
+| VRV | Volume radicular (vaso) |
+| DRV | Diâmetro radicular (vaso) |
+| PFr | Precocidade da floração |
+| NFl | Número de flores |
+| DEN | Dependência de estimulante natural |
+
+:::
+:::
+
+## Índice de velocidade de germinação {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### Fórmula do IVG
+
+O **Índice de Velocidade de Germinação** (Maguire, 1962) mede a rapidez com que as sementes germinam:
+
+$$IVG = \frac{N_1}{D_1} + \frac{N_2}{D_2} + \cdots + \frac{N_n}{D_n}$$
+
+Onde:
+
+- $N_i$ = número de brotações no dia $i$
+- $D_i$ = dias após a semeadura
+
+::: {.highlight-box}
+📊 **IVG alto** → germinação rápida e uniforme → maior sucesso no estabelecimento dos feixes vivos.
+:::
+
+:::
+
+::: {.column width="50%"}
+
+### Delineamento experimental
+
+```{mermaid}
+%%| fig-width: 5
+graph TD
+    A["Delineamento<br>Inteiramente Casualizado"] --> B["Tratamento CO<br>Controle"]
+    A --> C["Tratamento ENF<br>Estimulante de feijão"]
+    A --> D["Tratamento ENT<br>Estimulante de tiririca"]
+    B --> E["8 repetições"]
+    C --> F["8 repetições"]
+    D --> G["8 repetições"]
+    E --> H["Avaliação<br>do 1º ao 40º dia"]
+    F --> H
+    G --> H
+    style A fill:#034EA2,color:#fff
+    style B fill:#FDB913,color:#000
+    style C fill:#2E7D32,color:#fff
+    style D fill:#ED1C24,color:#fff
+```
+
+:::
+:::
+
+## Análise radicular por imagem {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+### Sistema SAFIRA
+
+O **Sistema de Análise de Fibras e Raízes** (SAFIRA) é utilizado para avaliar a morfologia radicular por processamento digital de imagens:
+
+**Parâmetros extraídos:**
+
+- **Volume radicular** (cm³)
+- **Diâmetro ponderado** (mm)
+- **Comprimento total** das raízes
+- **Distribuição** de diâmetros
+
+### Procedimento
+
+1. Raízes lavadas e separadas
+2. Digitalização em **placa digitalizadora**
+3. Processamento pelo software SAFIRA
+4. Cálculo da **densidade radicular**:
+
+$$\rho_r = \frac{m_r}{V_r}$$
+
+Onde: $m_r$ = massa radicular (g), $V_r$ = volume radicular (cm³)
+
+:::
+
+::: {.column width="45%"}
+
+### Importância da análise
+
+```{mermaid}
+%%| fig-width: 4.5
+graph TD
+    A["Raízes<br>desenvolvidas"] --> B["Maior volume<br>radicular"]
+    A --> C["Maior diâmetro<br>radicular"]
+    B --> D["Maior reforço<br>do solo"]
+    C --> D
+    D --> E["Estabilização<br>efetiva da encosta"]
+    style A fill:#2E7D32,color:#fff
+    style D fill:#FDB913,color:#000
+    style E fill:#034EA2,color:#fff
+```
+
+::: {.highlight-box}
+🔬 O SAFIRA é o sucessor do SIARCS® — oferece ferramentas morfológicas mais completas para análise de raízes e fibras (Jorge & Rodrigues, 2008).
+:::
+
+:::
+:::
+
+# [7. ESTUDO DE CASO: CAMPUS RURAL (UFS-SE)]{.section-header}
+
+## Área experimental {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+### Contexto
+
+O experimento será conduzido no **Campus Rural da UFS** (Universidade Federal de Sergipe), em uma área de **antiga disposição irregular de resíduos sólidos** (lixão desativado).
+
+### Preparação da área
+
+1. **Remoção superficial** dos resíduos mais recentes e volumosos
+2. **Redistribuição controlada** dos excedentes
+3. **Compactação leve** do solo
+4. Uniformização do terreno para instalação dos drenos
+
+### Objetivos específicos
+
+- Avaliar eficácia dos drenos verdes na **drenagem superficial**
+- Monitorar **enraizamento** dos feixes vivos
+- Quantificar a **retenção de umidade** e matéria orgânica
+- Verificar **estabilidade** da encosta ao longo do tempo
+
+:::
+
+::: {.column width="45%"}
+
+![Lixão irregular desativado — antes](img/fig01_lixao_antes.png){width="85%"}
+
+![Limpeza da área experimental](img/fig02_limpeza_area.png){width="85%"}
+:::
+:::
+
+## Preparação e instalação {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+![Redistribuição controlada do terreno](img/fig03_redistribuicao.png){width="85%"}
+
+### Etapas de campo
+
+1. Limpeza e remoção de resíduos
+2. Terraplenagem e compactação
+3. Instalação dos drenos de polo
+4. Conexão das fascinas laterais
+5. Inserção dos feixes vivos
+6. Monitoramento periódico
+
+:::
+
+::: {.column width="50%"}
+
+### Registro fotográfico de campo
+
+::: {layout-ncol=2}
+
+![Campo - preparação](img/campo_01.jpg){width="90%"}
+
+![Campo - instalação](img/campo_02.jpg){width="90%"}
+
+![Campo - detalhe dreno](img/campo_03.jpg){width="90%"}
+
+![Campo - visão geral](img/campo_04.jpg){width="90%"}
+
+:::
+:::
+:::
+
+## Diagramas técnicos {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### Projeto do sistema
+
+::: {layout-ncol=2}
+
+![Diagrama do dreno verde](img/prancheta_01_diagrama.png){width="95%"}
+
+![Diagrama de montagem](img/prancheta_02_diagrama.png){width="95%"}
+
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {layout-ncol=2}
+
+![Detalhamento construtivo](img/prancheta_04_diagrama.png){width="95%"}
+
+![Vista do sistema completo](img/prancheta_05_diagrama.png){width="95%"}
+
+:::
+
+:::
+:::
+
+## Monitoramento de campo {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+### Cronograma de avaliações
+
+| Período | Atividade |
+|---------|-----------|
+| Dia 0 | Instalação dos drenos e feixes |
+| Dias 1–15 | Monitoramento diário de germinação |
+| Dias 15–40 | Avaliação semanal (1º bioensaio) |
+| Dia 40 | Transplante para vasos (2º bioensaio) |
+| Dias 40–120 | Monitoramento quinzenal |
+| Dia 120 | Avaliação final |
+
+### Indicadores de sucesso
+
+- ✅ Taxa de germinação > 70%
+- ✅ Enraizamento > 80% das estacas
+- ✅ Redução do escoamento superficial
+- ✅ Aumento da infiltração
+- ✅ Estabilidade visível da encosta
+
+:::
+
+::: {.column width="45%"}
+
+### Registro de acompanhamento
+
+::: {layout-ncol=2}
+
+![Registro de campo](img/whatsapp_01.jpg){width="90%"}
+
+![Acompanhamento do sistema](img/whatsapp_02.jpg){width="90%"}
+
+![Evolução dos feixes](img/whatsapp_03.jpg){width="90%"}
+
+![Detalhe de enraizamento](img/whatsapp_04.jpg){width="90%"}
+
+:::
+:::
+:::
+
+# [8. SÍNTESE E ATIVIDADE]{.section-header}
+
+## Resumo dos conceitos-chave {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### Pontos fundamentais
+
+::: {.info-box}
+1. **Feixes vivos** são estacas vegetativas que enraízam e protegem o solo
+2. **Drenos verdes** são tubos de fibras naturais com dupla função: drenagem + substrato
+3. O sistema **espinha de peixe** otimiza a captação e condução da água
+4. **Fibras de taboa e bananeira** oferecem substrato econômico e sustentável
+5. O sistema **ganha resistência** com o tempo (enraizamento progressivo)
+6. **Bioensaios** permitem avaliar a eficácia do enraizamento
+:::
+
+:::
+
+::: {.column width="50%"}
+
+### Fluxo conceitual completo
+
+```{mermaid}
+%%| fig-width: 5
+graph TD
+    A["Fibras naturais<br>Taboa + Bananeira"] --> B["Drenos verdes<br>Ø 20cm, ε 5mm"]
+    C["Espécies nativas<br>7 espécies"] --> D["Feixes vivos<br>Estacas 15-20cm"]
+    B --> E["Sistema espinha<br>de peixe"]
+    D --> E
+    E --> F["Drenagem +<br>Revegetação"]
+    F --> G["Estabilização<br>de encostas"]
+    F --> H["Restauração<br>ecológica"]
+    style A fill:#2E7D32,color:#fff
+    style B fill:#8B4513,color:#fff
+    style D fill:#FDB913,color:#000
+    style E fill:#034EA2,color:#fff
+    style G fill:#ED1C24,color:#fff
+    style H fill:#2E7D32,color:#fff
+```
+
+:::
+:::
+
+## Atividade prática — Projeto de sistema {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+### Exercício em grupo
+
+**Cenário:** Uma encosta de aterro sanitário desativado com 30 m de comprimento, declividade de 25° e solo argiloso apresenta sinais de erosão em sulcos.
+
+**Projetem um sistema de drenos verdes com feixes vivos:**
+
+1. Quantos **drenos de polo** serão necessários?
+2. Qual o **espaçamento** entre as fascinas laterais?
+3. Qual o **ângulo** de inserção das fascinas?
+4. Quais **3 espécies** vocês escolheriam e por quê?
+5. Qual **formulação** de dreno (G1, G2, G3) é mais adequada?
+6. Elabore um **cronograma de monitoramento** para 120 dias
+
+:::
+
+::: {.column width="45%"}
+
+### Critérios de avaliação
+
+| Critério | Peso |
+|----------|------|
+| Coerência do dimensionamento | 25% |
+| Justificativa das espécies | 20% |
+| Escolha da formulação | 15% |
+| Cronograma de monitoramento | 20% |
+| Apresentação e clareza | 20% |
+
+::: {.highlight-box}
+⏱️ **Tempo**: 30 minutos para projeto + 10 minutos para apresentação por grupo.
+:::
+
+:::
+:::
+
+## Referências {.smaller-text}
+
+::: {.smaller-text}
+
+- Akil, H. M. et al. (2011). Kenaf fiber reinforced composites: A review. *Materials & Design*, 32(8–9), 4107–4121.
+- Alqaisi, R., Le, T. M., & Khabbaz, H. (2020). Applications of Recycled Sustainable Materials in Soil Stabilization. Springer.
+- Araújo Filho, R. N. et al. (2019). Effect of indolebutyric acid on rooting and budding of cuttings. *JEAP*, 297–303.
+- Chokshi, S. et al. (2022). Chemical Composition and Mechanical Properties of Natural Fibers. *J. Natural Fibers*, 19(10), 3942–3953.
+- Das, P. P. et al. (2021). Influence of Moisture Uptake on Mechanical Properties of NF-Reinforced Composites. CRC Press.
+- Evette, A. et al. (2009). History of Bioengineering Techniques for Erosion Control in Rivers. *Env. Management*, 43(6), 972–984.
+- Jorge, L. A. C. & Rodrigues, A. F. O. (2008). SAFIRA: Sistema de Análise de Fibras e Raízes. Embrapa.
+- Morokong, T. & Blignaut, J. N. (2019). Benefits and costs of soil erosion control using rock pack structures. *Land Use Policy*, 83, 512–522.
+- Pietro, P. D. et al. (2021). Hydraulic Tests for Reno Mattresses in Open Channel Flow. *IOP Conf. Series: Earth Env. Sci.*, 930(1).
+- Rey, F. et al. (2019). Soil and water bioengineering. *Science Total Env.*, 648, 1210–1218.
+- Santos, L. D. V. et al. (2020). Prospecção tecnológica sobre PD&I em Recursos Hídricos. *Rev. Ibero-Am. Ciências Ambientais*.
+- Suwinarti, W. et al. (2023). Potential of natural fiber based on plant characteristics. *IOP Conf. Series: Earth Env. Sci.*, 1282(1).
+
+:::
+
+## {.obrigado-fit-text}
+
+::: {.columns}
+::: {.column width="100%"}
+
+[Obrigado!]{.obrigado-fit-text}
+
+**Prof. Luiz Diego Vidal Santos**
+
+📧 luiz.diego@uefs.br
+
+🌐 [ldvsantos.github.io/cv](https://ldvsantos.github.io/cv)
+
+:::
+:::

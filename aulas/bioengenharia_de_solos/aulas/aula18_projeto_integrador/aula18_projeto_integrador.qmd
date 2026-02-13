@@ -1,0 +1,668 @@
+---
+title: "Projeto Integrador"
+subtitle: "Plano de Estabilização de Talude Complexo <br> Bioengenharia de Solos"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026-05-20"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Bioengenharia de Solos | Projeto Integrador"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    navigation-mode: linear
+    scrollable: true
+    width: 1280
+    height: 720
+    margin: 0.01
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+    embed-resources: true
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Integração de técnicas: visão sistêmica
+- [2]{.circle} Diagnóstico geotécnico e ambiental
+- [3]{.circle} Árvore de decisão: seleção de técnicas
+- [4]{.circle} Combinação de técnicas por zonas
+- [5]{.circle} Cronograma e orçamento
+- [6]{.circle} Memorial descritivo e peças gráficas
+- [7]{.circle} Apresentação do cenário final
+- [8]{.circle} Briefing e início do projeto
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Realizar um **Projeto Integrador** que aplique o repertório completo de técnicas de bioengenharia de solos aprendidas durante o curso a um **caso real ou fictício**, desenvolvendo um **Plano de Estabilização de Talude Complexo** com diagnóstico geotécnico, seleção fundamentada de técnicas, cronograma de execução, estimativa orçamentária e memorial técnico — simulando a atuação profissional de engenheiros e consultores ambientais.
+:::
+:::
+:::
+
+# [1. INTEGRAÇÃO DE TÉCNICAS: VISÃO SISTÊMICA]{.section-header}
+
+## O repertório completo {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+### Técnicas aprendidas no curso
+
+```{mermaid}
+%%| fig-width: 5.5
+graph TD
+    subgraph REV["Revestimento<br>e Cobertura"]
+        A["Hidrossemeadura<br>(Aula 11)"]
+        B["Biomantas<br>(Aula 12)"]
+    end
+    subgraph EST["Estabilização<br>Estrutural"]
+        C["Enrocamento vegetado<br>(Aula 13)"]
+        D["Gabião vivo<br>(Aula 15)"]
+        E["Parede Krainer<br>(Aula 16)"]
+    end
+    subgraph CTR["Controle de<br>Escoamento"]
+        F["Paliçadas<br>(Aula 8)"]
+        G["Barraginhas<br>(Aula 9)"]
+        H["Cordões vegetativos<br>(Aula 14)"]
+    end
+    subgraph DRE["Drenagem +<br>Revegetação"]
+        I["Feixes vivos<br>(Aula 10)"]
+    end
+    subgraph FLU["Bioengenharia<br>Fluvial"]
+        J["Defletores + Brushlayering<br>(Aula 17)"]
+    end
+    style REV fill:#FDB913,color:#000
+    style EST fill:#ED1C24,color:#fff
+    style CTR fill:#034EA2,color:#fff
+    style DRE fill:#2E7D32,color:#fff
+    style FLU fill:#4FC3F7,color:#000
+```
+
+:::
+
+::: {.column width="45%"}
+
+### Por que integrar?
+
+::: {.highlight-box}
+🔗 **Nenhuma técnica isolada** resolve todos os problemas de uma encosta complexa. A solução eficaz combina:
+
+- **Base**: contenção estrutural (gabião, Krainer, enrocamento)
+- **Corpo**: controle de escoamento (cordões, feixes, barraginhas)
+- **Superfície**: revestimento + revegetação (hidrossemeadura, biomanta)
+- **Drenagem**: sistemas de polo + fascinas laterais
+:::
+
+### Analogia médica
+
+| Zona do talude | Técnica | Analogia |
+|---------------|---------|----------|
+| Base (pé) | Gabião vivo / Enrocamento | Fundação — "esqueleto" |
+| Corpo | Cordões + Feixes | Musculatura — "contenção" |
+| Superfície | Biomanta + Hidrossemeadura | Pele — "proteção" |
+| Drenagem | Espinha de peixe | Sistema circulatório |
+
+:::
+:::
+
+# [2. DIAGNÓSTICO GEOTÉCNICO E AMBIENTAL]{.section-header}
+
+## Galeria: Problemas reais de erosão {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+![Erosão severa em encosta — ravinas e erosão laminar em paisagem semiárida (CSIRO, CC BY 3.0)](img/fig01_gully_erosion.jpg){width="100%"}
+
+:::{.smaller-text}
+Fonte: CSIRO Science Image — CC BY 3.0
+:::
+:::
+
+::: {.column width="50%"}
+
+![Erosão incipiente em voçoroca — exemplo de problema que requer intervenção integrada (CC BY-SA 2.0)](img/fig02_incipient_gully.jpg){width="100%"}
+
+:::{.smaller-text}
+Fonte: Geograph Britain — CC BY-SA 2.0
+:::
+:::
+:::
+
+## Etapa de diagnóstico {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+### Levantamentos obrigatórios
+
+**1. Geotécnico:**
+
+- Sondagem a trado / SPT (perfil de solo)
+- Ensaios: granulometria, limites de Atterberg, cisalhamento direto
+- Parâmetros: $\gamma$, $\phi$, $c$, $k$ (permeabilidade)
+- Nível d'água (piezometria)
+
+**2. Topográfico:**
+
+- Levantamento planialtimétrico (drone RTK ou estação total)
+- Modelo Digital de Terreno (MDT)
+- Declividades, perfis transversais, áreas
+
+**3. Hidrológico:**
+
+- Precipitação local (ANA, INMET)
+- Tempo de concentração
+- Vazão de projeto (TR = 10, 25, 50 anos)
+- Escoamento superficial (SCS-CN)
+
+**4. Ambiental:**
+
+- Cobertura vegetal existente
+- Processos erosivos ativos
+- APP, APA, UC (legislação)
+- Fauna e flora sensíveis
+
+:::
+
+::: {.column width="45%"}
+
+### Fluxo de diagnóstico
+
+```{mermaid}
+%%| fig-width: 4.5
+graph TD
+    A["Visita de campo<br>reconhecimento"] --> B["Levantamento<br>topobatimétrico"]
+    B --> C["Investigação<br>geotécnica"]
+    C --> D["Análise<br>hidrológica"]
+    D --> E["Diagnóstico<br>ambiental"]
+    E --> F["RELATÓRIO DE<br>DIAGNÓSTICO"]
+    F --> G["Seleção das<br>técnicas"]
+    style A fill:#034EA2,color:#fff
+    style C fill:#8B4513,color:#fff
+    style D fill:#4FC3F7,color:#000
+    style F fill:#FDB913,color:#000
+    style G fill:#2E7D32,color:#fff
+```
+
+### Checklist de campo
+
+| Item | ✓ |
+|------|---|
+| Fotos panorâmicas + detalhes | ☐ |
+| Medição de declividade (clinômetro) | ☐ |
+| Coleta de amostras de solo | ☐ |
+| Identificação de processos erosivos | ☐ |
+| Nível d'água (poço, nascente?) | ☐ |
+| Vegetação existente (espécies, cobertura %) | ☐ |
+| Infraestrutura no entorno (casas, ruas) | ☐ |
+| Acesso para máquinas / materiais | ☐ |
+
+:::
+:::
+
+# [3. ÁRVORE DE DECISÃO: SELEÇÃO DE TÉCNICAS]{.section-header}
+
+## Fluxograma de seleção {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+### Árvore de decisão principal
+
+```{mermaid}
+%%| fig-width: 5.5
+graph TD
+    A["Tipo de problema?"] --> B{"Erosão<br>superficial"}
+    A --> C{"Erosão em<br>ravinas"}
+    A --> D{"Instabilidade<br>de encosta"}
+    A --> E{"Erosão de<br>margem fluvial"}
+    B -->|"Laminar"| B1["Biomanta +<br>Hidrossemeadura"]
+    B -->|"Em sulcos"| B2["Cordões vegetativos +<br>Hidrossemeadura"]
+    C -->|"Rasa"| C1["Paliçadas +<br>Feixes vivos"]
+    C -->|"Profunda"| C2["Gabião vivo +<br>Paliçadas"]
+    D -->|"Decliv. < 45°"| D1["Cordões + Feixes +<br>Biomanta"]
+    D -->|"Decliv. > 45°"| D2["Parede Krainer ou<br>Gabião vivo"]
+    E -->|"Margem baixa"| E1["Enrocamento vegetado +<br>Brushlayering"]
+    E -->|"Margem alta"| E2["Gabião vivo +<br>Defletores"]
+    style B1 fill:#2E7D32,color:#fff
+    style C2 fill:#ED1C24,color:#fff
+    style D2 fill:#FDB913,color:#000
+    style E1 fill:#034EA2,color:#fff
+```
+
+:::
+
+::: {.column width="45%"}
+
+### Critérios de seleção
+
+| Fator | Peso na decisão |
+|-------|----------------|
+| Declividade | ★★★★★ |
+| Tipo de solo | ★★★★☆ |
+| Tipo de erosão | ★★★★★ |
+| Disponibilidade de materiais | ★★★☆☆ |
+| Acesso ao local | ★★★☆☆ |
+| Orçamento disponível | ★★★★☆ |
+| Exigência ambiental (APP) | ★★★★★ |
+| Urgência da intervenção | ★★★★☆ |
+
+::: {.highlight-box}
+📋 **Regra prática**: comece pela **base** (contenção), suba pelo **corpo** (controle de escoamento) e termine pela **superfície** (revestimento). A drenagem deve ser projetada em **todas as zonas** simultaneamente.
+:::
+:::
+:::
+
+# [4. COMBINAÇÃO DE TÉCNICAS POR ZONAS]{.section-header}
+
+## Zoneamento do talude {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+### Zonas de intervenção
+
+```{mermaid}
+%%| fig-width: 5.5
+graph TD
+    subgraph Talude["PERFIL DO TALUDE"]
+        direction TB
+        A["ZONA A — CRISTA<br>Hidrossemeadura + Biomanta<br>Drenagem superficial"]
+        B["ZONA B — CORPO SUPERIOR<br>Cordões vegetativos<br>Feixes vivos"]
+        C["ZONA C — CORPO INFERIOR<br>Paliçadas (se ravinas)<br>Feixes + Drenagem"]
+        D["ZONA D — PÉ / BASE<br>Gabião vivo ou Krainer<br>Enrocamento vegetado"]
+        E["ZONA E — MARGEM / CANAL<br>Defletores, Brushlayering<br>(se houver curso d'água)"]
+    end
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    style A fill:#FDB913,color:#000
+    style B fill:#2E7D32,color:#fff
+    style C fill:#034EA2,color:#fff
+    style D fill:#ED1C24,color:#fff
+    style E fill:#4FC3F7,color:#000
+```
+
+:::
+
+::: {.column width="45%"}
+
+### Tabela de combinação
+
+| Zona | Técnica primária | Complementar |
+|------|-----------------|-------------|
+| A — Crista | Hidrossemeadura | Biomanta, canaleta |
+| B — Corpo sup. | Cordões vegetativos | Biomanta entre cordões |
+| C — Corpo inf. | Feixes vivos (espinha de peixe) | Paliçadas (se ravina) |
+| D — Base | Gabião vivo ou Krainer | Enrocamento na fundação |
+| E — Margem | Enrocamento vegetado | Defletores, brushlayering |
+
+### Prioridade de execução
+
+```{mermaid}
+%%| fig-width: 4.5
+graph LR
+    A["1ª Drenagem"] --> B["2ª Base / Pé"]
+    B --> C["3ª Corpo"]
+    C --> D["4ª Superfície"]
+    D --> E["5ª Mata ciliar"]
+    style A fill:#4FC3F7,color:#000
+    style B fill:#ED1C24,color:#fff
+    style C fill:#034EA2,color:#fff
+    style D fill:#FDB913,color:#000
+    style E fill:#2E7D32,color:#fff
+```
+
+::: {.highlight-box}
+⚠️ **Sempre comece pela drenagem e pela base**: estabilizar o pé do talude é a ação mais urgente — sem base, qualquer intervenção no corpo será comprometida.
+:::
+:::
+:::
+
+# [5. CRONOGRAMA E ORÇAMENTO]{.section-header}
+
+## Modelo de cronograma {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+### Cronograma de execução (exemplo)
+
+| Mês | Atividade |
+|-----|-----------|
+| 1 | Diagnóstico, projeto e mobilização |
+| 2 | Drenagem superficial + escavação fundação |
+| 3 | Gabião vivo / Krainer (base) |
+| 4 | Cordões vegetativos + feixes vivos (corpo) |
+| 5 | Hidrossemeadura + biomanta (superfície) |
+| 6 | Plantio complementar + mata ciliar |
+| 7–12 | Monitoramento mensal (1º semestre) |
+| 13–24 | Monitoramento bimestral (2º semestre) |
+
+### Fatores que afetam o cronograma
+
+- **Estação chuvosa**: plantio das espécies vivas
+- **Estação seca**: execução de obras estruturais
+- **Acesso**: disponibilidade de máquinas e materiais
+- **Licenciamento**: tempo de aprovação dos órgãos ambientais
+
+:::
+
+::: {.column width="45%"}
+
+### Modelo de orçamento
+
+| Item | Unidade | Custo típico (R$) |
+|------|---------|-------------------|
+| Hidrossemeadura | m² | 8–15 |
+| Biomanta de coco | m² | 12–25 |
+| Enrocamento vegetado | m³ | 150–350 |
+| Cordão vegetativo | m | 30–60 |
+| Gabião vivo (1×1×2 m) | un. | 800–1.500 |
+| Parede Krainer | m³ | 200–500 |
+| Feixes vivos (dreno verde) | m | 50–100 |
+| Paliçada de bambu | m | 20–50 |
+| Defletores de tronco | un. | 500–2.000 |
+| Mata ciliar (muda + plantio) | un. | 15–30 |
+
+::: {.highlight-box}
+💰 **Regra de estimativa**: a bioengenharia custa tipicamente **30–60%** de uma solução convencional equivalente (concreto, muro de arrimo) e oferece **benefícios ambientais** adicionais que podem ser valorizados em créditos de carbono e PSA.
+:::
+:::
+:::
+
+# [6. MEMORIAL DESCRITIVO E PEÇAS GRÁFICAS]{.section-header}
+
+## Estrutura do relatório técnico {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### Sumário modelo do projeto
+
+1. **Introdução e objetivos**
+   - Localização e contexto
+   - Problema identificado
+   - Objetivo do plano
+
+2. **Diagnóstico**
+   - Geotécnico (solo, decliv., N.A.)
+   - Hidrológico (precipitação, vazões)
+   - Ambiental (vegetação, fauna, APP)
+
+3. **Seleção de técnicas**
+   - Justificativa (árvore de decisão)
+   - Combinação por zonas
+
+4. **Projeto executivo**
+   - Memorial de cálculo (empuxo, FS, dimensionamento)
+   - Especificações de materiais
+   - Peças gráficas (planta, cortes, detalhes)
+
+5. **Cronograma de execução**
+
+6. **Estimativa orçamentária**
+
+7. **Plano de monitoramento**
+
+8. **Referências e anexos**
+
+:::
+
+::: {.column width="50%"}
+
+### Peças gráficas obrigatórias
+
+| Peça | Conteúdo |
+|------|----------|
+| Planta de situação | Localização, acessos, entorno |
+| Planta de intervenção | Zoneamento de técnicas |
+| Perfis transversais | Seções com técnicas detalhadas |
+| Detalhe construtivo | Gabião, Krainer, cordão, etc. |
+| Planta de plantio | Espécies, espaçamentos, quantidades |
+| Planta de drenagem | Canaletas, drenos, fascinas |
+
+### Softwares úteis
+
+| Software | Uso |
+|----------|-----|
+| QGIS / ArcGIS | Mapas, MDT, análise espacial |
+| AutoCAD / Civil 3D | Plantas e perfis executivos |
+| HEC-RAS / Iber | Modelagem hidráulica |
+| GeoStudio (SLOPE/W) | Estabilidade de taludes |
+| Excel / R / Python | Cálculos e gráficos |
+
+::: {.highlight-box}
+📝 O **memorial descritivo** é o documento que será avaliado como o relatório técnico final. Deve ser **claro, fundamentado** e conter todas as justificativas técnicas das decisões de projeto.
+:::
+:::
+:::
+
+# [7. CENÁRIO DO PROJETO INTEGRADOR]{.section-header}
+
+## O caso complexo {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+### Cenário proposto
+
+**Local:** Encosta urbana adjacente ao Rio Subaé, município de Feira de Santana (BA).
+
+**Características:**
+
+| Parâmetro | Valor |
+|-----------|-------|
+| Comprimento da encosta | 80 m |
+| Altura total | 15 m |
+| Declividade média | 35° (porções > 50°) |
+| Solo | Argilo-siltoso laterítico |
+| $\gamma$ | 17,5 kN m⁻³ |
+| $\phi$ | 24° |
+| $c$ | 8 kPa |
+| N.A. | 3 m de profundidade |
+| Precipitação anual | 850 mm |
+| Uso atual | Pastagem degradada + ravinas |
+| Legislação | APP fluvial (30 m) |
+| Rio na base | Largura 12 m, V_cheia = 2,2 m/s |
+
+:::
+
+::: {.column width="45%"}
+
+### Problemas identificados
+
+- 🔴 **Ravinas** ativas no corpo da encosta (2 ravinas, profundidade 1,5 m)
+- 🔴 **Desbarrancamento** na margem do rio (base)
+- 🟡 **Erosão laminar** severa no terço superior
+- 🟡 **Ausência de mata ciliar** (APP desmatada)
+- 🟡 **Solo exposto** em 70% da área
+- 🟢 Acesso para caminhão pelo topo
+- 🟢 Madeira de eucalipto disponível na região
+- 🟢 Espécies para estaquia disponíveis
+
+### Mapa esquemático
+
+```{mermaid}
+%%| fig-width: 4.5
+graph TD
+    A["CRISTA<br>Estrada + acesso"] --> B["ZONA SUPERIOR<br>Erosão laminar<br>Solo exposto"]
+    B --> C["ZONA MÉDIA<br>2 ravinas ativas<br>Decliv. > 45°"]
+    C --> D["ZONA INFERIOR<br>Decliv. 35°<br>Sem vegetação"]
+    D --> E["BASE<br>Desbarrancamento<br>na margem"]
+    E --> F["RIO SUBAÉ<br>Largura 12 m"]
+    style A fill:#034EA2,color:#fff
+    style B fill:#FDB913,color:#000
+    style C fill:#ED1C24,color:#fff
+    style D fill:#FDB913,color:#000
+    style E fill:#ED1C24,color:#fff
+    style F fill:#4FC3F7,color:#000
+```
+
+:::
+:::
+
+# [8. BRIEFING E INÍCIO DO PROJETO]{.section-header}
+
+## Orientações para o trabalho {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+### O que entregar
+
+**1. Memorial Descritivo** (PDF, 15–25 páginas):
+
+- Diagnóstico (dados fornecidos + análise)
+- Árvore de decisão (justificativa das técnicas)
+- Zoneamento de intervenção
+- Memorial de cálculo (empuxo, FS, dimensionamento)
+- Especificações de materiais e espécies
+- Cronograma de execução (Gantt)
+- Estimativa orçamentária
+- Plano de monitoramento (2 anos)
+
+**2. Peças gráficas** (A3 ou A2):
+
+- Planta de intervenção com zoneamento
+- 2 perfis transversais com detalhes
+- 1 detalhe construtivo ampliado
+
+**3. Apresentação oral** (15 minutos):
+
+- Pitch estilo consultoria técnica
+- Defesa do projeto perante a "banca"
+
+:::
+
+::: {.column width="45%"}
+
+### Critérios de avaliação
+
+| Critério | Peso |
+|----------|------|
+| Diagnóstico e fundamentação | 15% |
+| Seleção e combinação de técnicas | 20% |
+| Memorial de cálculo | 20% |
+| Peças gráficas | 15% |
+| Cronograma e orçamento | 10% |
+| Plano de monitoramento | 10% |
+| Apresentação oral | 10% |
+
+### Cronograma do trabalho
+
+| Semana | Atividade |
+|--------|-----------|
+| 1 | Formação de grupos + diagnóstico |
+| 2 | Seleção de técnicas + zoneamento |
+| 3 | Cálculos + especificações |
+| 4 | Peças gráficas + memorial |
+| 5 | Apresentação final |
+
+::: {.highlight-box}
+👥 **Grupos**: 3–5 integrantes. **Entrega**: 1 semana antes da apresentação. **Formato**: PDF + DWG/QGIS.
+:::
+:::
+:::
+
+## Dicas para um bom projeto {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### O que a banca valoriza
+
+::: {.info-box}
+1. **Coerência**: cada técnica justificada com dados (declividade, solo, fluxo)
+2. **Integração**: as técnicas devem formar um **sistema**, não uma lista
+3. **Fundamentação**: cite normas, fórmulas e referências bibliográficas
+4. **Viabilidade**: cronograma e orçamento realistas
+5. **Sustentabilidade**: preferência por materiais locais e espécies nativas
+6. **Monitoramento**: indicadores claros e prazo de avaliação
+:::
+
+### Erros comuns a evitar
+
+| Erro | Como evitar |
+|------|------------|
+| Técnica isolada (sem sistema) | Integrar por zonas |
+| Sem cálculos | Incluir memorial mínimo |
+| Espécies não regionais | Consultar flora da Caatinga/Cerrado |
+| Cronograma sem estação chuvosa | Alinhar plantio com março–junho |
+| Orçamento inventado | Usar referências (SINAPI, fornecedores) |
+
+:::
+
+::: {.column width="50%"}
+
+### Resumo do curso
+
+```{mermaid}
+%%| fig-width: 5
+graph TD
+    A["Solo e Erosão<br>(Aulas 1-4)"] --> B["Canais e Drenagem<br>(Aulas 5-6)"]
+    B --> C["Modelagem 3D<br>(Aula 7)"]
+    C --> D["Paliçadas e Barraginhas<br>(Aulas 8-9)"]
+    D --> E["Feixes Vivos<br>(Aula 10)"]
+    E --> F["Revestimento<br>Hidrossemeadura + Biomanta<br>(Aulas 11-12)"]
+    F --> G["Estabilização Estrutural<br>Enrocamento, Cordões<br>Gabião, Krainer<br>(Aulas 13-16)"]
+    G --> H["Bioengenharia Fluvial<br>(Aula 17)"]
+    H --> I["PROJETO INTEGRADOR<br>(Aula 18)"]
+    style A fill:#034EA2,color:#fff
+    style E fill:#2E7D32,color:#fff
+    style G fill:#ED1C24,color:#fff
+    style H fill:#4FC3F7,color:#000
+    style I fill:#FDB913,color:#000
+```
+
+::: {.highlight-box}
+🎯 Este projeto é a **síntese do curso**: apliquem tudo o que aprenderam, da erosão básica (Aula 1) à modelagem fluvial (Aula 17). **Bom trabalho!**
+:::
+:::
+:::
+
+## Referências gerais do curso {.smaller-text}
+
+::: {.smaller-text}
+
+- ABNT. Normas NBR 7190, NBR 10514, NBR 16757. Associação Brasileira de Normas Técnicas.
+- DNIT (2006). Normas 071/2006-ES (Revegetação) e 082/2006-ES (Gabiões). DNIT.
+- Florineth, F. (2004). *Pflanzen statt Beton*. Patzer Verlag.
+- Gray, D. H. & Sotir, R. B. (1996). *Biotechnical and Soil Bioengineering Slope Stabilization*. Wiley.
+- Morgan, R. P. C. & Rickson, R. J. (1995). *Slope Stabilization and Erosion Control*. Spon.
+- Norris, J. E. et al. (2008). *Slope Stability and Erosion Control: Ecotechnological Solutions*. Springer.
+- Rey, F. et al. (2019). Soil and water bioengineering. *Science Total Env.*, 648, 1210–1218.
+- Schiechtl, H. M. & Stern, R. (1996). *Ground Bioengineering Techniques*. Blackwell Science.
+- Stokes, A. et al. (2014). Ecological mitigation of hillslope instability. *Plant Soil*, 377, 1–23.
+- Zeh, H. (2007). *Soil Bioengineering Construction Type Manual*. EFIB/vdf.
+
+:::
+
+## {.obrigado-fit-text}
+
+::: {.columns}
+::: {.column width="100%"}
+
+[Obrigado!]{.obrigado-fit-text}
+
+**Prof. Luiz Diego Vidal Santos**
+
+📧 luiz.diego@uefs.br
+
+🌐 [ldvsantos.github.io/cv](https://ldvsantos.github.io/cv)
+
+:::
+:::
