@@ -37,15 +37,16 @@ execute:
 - [4]{.circle} Projeto estrutural (empuxo e estabilidade)
 - [5]{.circle} Geometria e detalhamento construtivo
 - [6]{.circle} Integração com vegetação
-- [7]{.circle} Construção e monitoramento
-- [8]{.circle} Síntese e atividade
+- [7]{.circle} Riprap: enrocamento e proteção de margens
+- [8]{.circle} Construção e monitoramento
+- [9]{.circle} Síntese e atividade
 :::
 
 ::: {.column width="50%"}
 ::: {.info-box}
 **Objetivo da Aula**
 
-Compreender o conceito da **Parede Krainer** (*log-crib wall* ou *Krainer wall*) como uma estrutura de contenção robusta feita de **troncos de madeira** em grelha, preenchida com **terra e plantas**, capaz de estabilizar **encostas muito íngremes** onde não há espaço para taludamento convencional, integrando **engenharia estrutural** e **revegetação**.
+Compreender o conceito da **Parede Krainer** (*log-crib wall* ou *Krainer wall*) como uma estrutura de contenção robusta feita de **troncos de madeira** em grelha, preenchida com **terra e plantas**, capaz de estabilizar **encostas muito íngremes** onde não há espaço para taludamento convencional, integrando **engenharia estrutural** e **revegetação**. Complementarmente, dominar os princípios do **riprap** (*enrocamento*) como técnica de proteção de margens, canais e taludes.
 :::
 :::
 :::
@@ -73,45 +74,87 @@ A **Parede Krainer** (*Krainerwand*, *log-crib wall*) é uma estrutura de conten
 
 ::: {.column width="45%"}
 
-### Estrutura básica
+### Vista tridimensional
 
-```{mermaid}
-%%| fig-width: 4.5
-graph TD
-    subgraph Krainer["Vista Frontal"]
-        A["Tronco longitudinal 4"]
-        B["Tronco longitudinal 3"]
-        C["Tronco longitudinal 2"]
-        D["Tronco longitudinal 1"]
-    end
-    subgraph Lateral["Vista Lateral"]
-        E["Tronco transversal<br>(penetra no solo)"]
-        F["Preenchimento<br>terra + plantas"]
-        G["Solo natural<br>do talude"]
-    end
-    style A fill:#8B4513,color:#fff
-    style B fill:#8B4513,color:#fff
-    style C fill:#8B4513,color:#fff
-    style D fill:#8B4513,color:#fff
-    style E fill:#FDB913,color:#000
-    style F fill:#2E7D32,color:#fff
-    style G fill:#034EA2,color:#fff
-```
+![Vista tridimensional da Parede Krainer — grelha de troncos com preenchimento de solo e vegetação](img/vista_tridimensional_krainer.jpeg){width="90%"}
 
 > A Parede Krainer suporta alturas de **2–6 m** e é ideal para encostas com **declividade > 45°** onde outras soluções de bioengenharia não são viáveis isoladamente.
 :::
 :::
 
-## Galeria: Construção com troncos em campo {.smaller-text}
+## Anatomia da Parede Krainer {.smaller-text}
 
 ::: {.columns}
-::: {.column width="100%"}
+::: {.column width="50%"}
 
-![CCC (Civilian Conservation Corps) executando operações de controle de erosão com estruturas de madeira — EUA, c. 1930s (NARA, Public Domain)](img/fig01_ccc_erosion_control.jpg){width="80%"}
+### Corte transversal
+
+![Corte transversal da Parede Krainer — troncos longitudinais e transversais com preenchimento](img/parede_krainer_corte_transversal.jpeg){width="95%"}
+
+:::{.smaller-text}
+Detalhe: troncos transversais (*headers*) penetram no solo natural, enquanto os longitudinais (*stringers*) formam a face.
+:::
+
+:::
+
+::: {.column width="50%"}
+
+### Peças e componentes
+
+![Peças da Parede Krainer — troncos longitudinais, transversais, fixações e preenchimento](img/pecas_da_parede_krainer.jpeg){width="95%"}
+
+:::{.smaller-text}
+Componentes: troncos roliços, parafusos/barras roscadas, preenchimento com solo + estacas vivas.
+:::
+
+:::
+:::
+
+## Galeria: Paredes Krainer em campo {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+![CCC (Civilian Conservation Corps) — controle de erosão com estruturas de madeira, EUA c. 1930s (NARA, Public Domain)](img/fig01_ccc_erosion_control.jpg){width="95%"}
 
 :::{.smaller-text}
 Fonte: National Archives and Records Administration (NARA) — Public Domain
 :::
+
+:::
+
+::: {.column width="50%"}
+
+![Parede Krainer moderna — grelha de troncos com vegetação estabelecida](img/krainer_1.jpg){width="95%"}
+
+:::{.smaller-text}
+Exemplo de parede Krainer em campo com vegetação integrada entre as camadas de troncos.
+:::
+
+:::
+:::
+
+## Galeria: Exemplos de aplicação {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+![Parede Krainer — estabilização de encosta com integração paisagística](img/krainer_2.jpg){width="95%"}
+
+:::{.smaller-text}
+A vegetação progressivamente assume a face da estrutura, naturalizando a contenção.
+:::
+
+:::
+
+::: {.column width="50%"}
+
+![Muro de contenção vegetado — combinação de estrutura rígida com plantas](img/retaining-wall-blog-main-1.jpg){width="95%"}
+
+:::{.smaller-text}
+Comparação: muros de contenção tradicionais vs. soluções vegetadas de bioengenharia.
+:::
+
 :::
 :::
 
@@ -515,7 +558,261 @@ A vegetação é integrada de três formas:
 :::
 :::
 
-# [7. CONSTRUÇÃO E MONITORAMENTO]{.section-header}
+# [7. RIPRAP: ENROCAMENTO E PROTEÇÃO DE MARGENS]{.section-header}
+
+## Definição e conceito de Riprap {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+### O que é Riprap?
+
+**Riprap** (*enrocamento*, *rock armor*, *shot rock*) é uma camada permanente de **pedras angulares grandes**, matacões ou blocos rochosos utilizada para armar, estabilizar e proteger superfícies de solo contra **erosão e solapamento** em áreas de fluxo concentrado ou energia de ondas (MnDOT, 2018).
+
+### Funções principais
+
+- **Aumenta a rugosidade superficial** → reduz velocidade do escoamento
+- **Dissipa energia** em saídas de tubulações e bueiros
+- **Protege** taludes, canais, margens fluviais e linhas costeiras
+- **Estabiliza** bermas de bacias de sedimentação e *check dams*
+
+::: {.highlight-box}
+💡 O riprap é uma das técnicas de controle de erosão mais **eficazes** e **simples de instalar**, especialmente em locais onde a velocidade da água impede o estabelecimento de vegetação (MPCA, 2018).
+:::
+
+:::
+
+::: {.column width="45%"}
+
+![Canal revestido com riprap — camada de pedras angulares sobre geotêxtil (Fonte: MPCA/MnDOT)](img/Riprap_lined_channel.jpg){width="90%"}
+
+### Classificação MnDOT
+
+| Tipo | Descrição |
+|------|----------|
+| **Random riprap** | Pedras de tamanhos variados distribuídas aleatoriamente |
+| **Hand-placed** | Pedras individuais ≥ 50 lb colocadas manualmente |
+| **Grouted riprap** | Espaços preenchidos com grout (argamassa) |
+
+:::
+:::
+
+## Quando usar Riprap? {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### Aplicações típicas
+
+| Local | Aplicação |
+|-------|----------|
+| Saídas de tubulações | Dissipação de energia |
+| Canais e valas | Revestimento de fundo e taludes |
+| Margens de rios | Proteção contra solapamento |
+| Taludes de rodovias | Proteção de cortes e aterros |
+| *Check dams* | Bermas de alto volume/velocidade |
+| Linhas costeiras | Proteção contra ondas |
+
+### Vantagens
+
+- ✅ **Resistência superior**: suporta ondas, chuvas intensas e gelo
+- ✅ **Longevidade**: décadas com manutenção mínima (rocha é permanente)
+- ✅ **Simplicidade**: instalação relativamente simples
+- ✅ **Flexibilidade**: adapta-se a recalques e deformações
+- ✅ **Permeabilidade**: permite drenagem natural
+
+:::
+
+::: {.column width="50%"}
+
+### Limitações
+
+- ❌ **Custo elevado**: material + equipamento + transporte
+- ❌ **Impacto ambiental**: pode destruir habitats aquáticos/ripários
+- ❌ **Estética**: aparência "dura" indesejável em alguns contextos
+- ❌ **Acesso**: requer maquinário pesado para instalação
+- ❌ **Inclinação máxima**: instável em taludes > 2H:1V (sem reforço)
+- ❌ **Licenciamento**: restrições ambientais em corpos d'água
+
+### Comparação com Parede Krainer
+
+| Critério | Riprap | Krainer |
+|----------|--------|---------|
+| Material | Rocha | Madeira |
+| Revegetação | Opcional | Integrada |
+| Habitat | Destrói | Cria |
+| Custo | Alto | Médio |
+| Durabilidade | Permanente | 10–30 anos (madeira) |
+| Inclinação máx. | 2H:1V | > 45° |
+
+:::
+:::
+
+## Dimensionamento do Riprap {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### Critérios de projeto
+
+O dimensionamento do riprap depende fundamentalmente da **velocidade do fluxo**:
+
+| Velocidade (m/s) | Classe | $D_{50}$ (cm) |
+|-------------------|--------|---------------|
+| < 1,0 | I | 15–20 |
+| 1,0–2,0 | II | 20–30 |
+| 2,0–3,0 | III | 30–45 |
+| 3,0–4,0 | IV | 45–60 |
+| > 4,0 | V | 60–90 |
+
+:::{.smaller-text}
+$D_{50}$ = diâmetro mediano (50% das pedras são menores). Adaptado de NY State Standards (2016) e MnDOT (2018).
+:::
+
+### Regra prática
+
+::: {.highlight-box}
+📐 **Na dúvida, use pedras maiores!** A água carrega pedras subdimensionadas. É mais econômico super-dimensionar inicialmente do que reparar falhas (MnDOT, 2006).
+:::
+
+:::
+
+::: {.column width="50%"}
+
+### Composição da seção
+
+```{mermaid}
+%%| fig-width: 5
+graph TD
+    A["Superfície do terreno<br>(preparada e compactada)"] --> B["Camada filtro<br>Geotêxtil não-tecido<br>ou Brita graduada ≥ 15 cm"]
+    B --> C["Riprap<br>Pedras angulares<br>bem-graduadas"]
+    C --> D["Superfície final<br>nivelada e interlocked"]
+    style A fill:#8B4513,color:#fff
+    style B fill:#FDB913,color:#000
+    style C fill:#034EA2,color:#fff
+    style D fill:#2E7D32,color:#fff
+```
+
+### Especificações do filtro
+
+A camada filtro é **obrigatória** para evitar o *piping* (erosão do solo sob as pedras):
+
+| Tipo de filtro | Espessura mínima | Observação |
+|----------------|------------------|-----------|
+| Granular (brita) | ≥ 15 cm | Classe 5 MnDOT |
+| Geotêxtil não-tecido | — | Tipo 3 a 7 conforme classe |
+| Overlaps | ≥ 45 cm | Sentido descendente |
+
+::: {.highlight-box}
+⚠️ **Sem filtro = falha certa!** As pedras afundam no solo e o riprap perde eficácia. A principal causa de falha em riprap é a ausência ou subdimensionamento do filtro.
+:::
+
+:::
+:::
+
+## Instalação do Riprap {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+### Etapas de construção
+
+```{mermaid}
+%%| fig-width: 5.5
+graph TD
+    A["1. Preparação do terreno<br>Limpeza, nivelamento,<br>compactação"] --> B["2. Instalação do filtro<br>Geotêxtil esticado<br>sem dobras"]
+    B --> C["3. Colocação das pedras<br>De baixo para cima<br>Altura de queda ≤ 30 cm"]
+    C --> D["4. Intertravamento<br>Pedras grandes + médias<br>+ pequenas nos vazios"]
+    D --> E["5. Nivelamento final<br>Superfície uniforme<br>≥ 80% da espessura"]
+    E --> F["6. Inspeção<br>Verificar cobertura<br>e integridade"]
+    style A fill:#034EA2,color:#fff
+    style B fill:#FDB913,color:#000
+    style C fill:#8B4513,color:#fff
+    style D fill:#ED1C24,color:#fff
+    style F fill:#2E7D32,color:#fff
+```
+
+### Recomendações importantes
+
+- **Pedras angulares** com pelo menos 1 face fraturada
+- **Bem-graduadas** (vários tamanhos) — não uniformes
+- Colocar **de baixo para cima** no talude
+- Espessura mínima final: **80%** da especificação de projeto
+- Não operar equipamentos sobre o geotêxtil após colocação
+
+:::
+
+::: {.column width="45%"}
+
+### Inspeção e manutenção
+
+| Atividade | Frequência |
+|-----------|----------|
+| Inspeção visual | Após cada evento de chuva intensa |
+| Verificar pedras deslocadas | Mensal |
+| Reposição de pedras | Quando necessário |
+| Reparar geotêxtil | Imediatamente |
+| Remover sedimentos acumulados | Semestral |
+| Remover vegetação invasora | Anual |
+
+### Causas de falha
+
+| Causa | Consequência |
+|-------|-------------|
+| Ausência de filtro | Piping e afundamento |
+| Subdimensionamento | Pedras carregadas pela água |
+| Gradação uniforme | Vazios excessivos |
+| Inclinação > 2H:1V | Instabilidade gravitacional |
+| Fundação inadequada | Recalques e desmoronamento |
+
+:::
+:::
+
+## Riprap vegetado: integrando NbS {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+### Conceito
+
+O **riprap vegetado** (*vegetated riprap*) combina a proteção mecânica do enrocamento com os benefícios ecológicos da **vegetação**, criando uma solução que supera as limitações de ambos isoladamente:
+
+- **Mulch, composto e solo vegetal** são distribuídos entre as pedras, acima da linha d'água
+- **Sementes ou mudas** são plantadas nos interstícios
+- Após 2–3 anos, a vegetação **naturaliza** a aparência do riprap
+- As raízes **reforçam** a estabilidade das pedras
+
+### Aplicações especiais
+
+- **Passagens de fauna**: engenheiros de transporte em Minnesota instalam bancos com riprap vegetado sob pontes para permitir a passagem de animais silvestres entre seções de enrocamento
+- **Estética paisagística**: em margens de lagos e canais urbanos, o riprap vegetado oferece aparência naturalizada
+- **Combinação com gabiões**: o princípio se aplica também a gabiões vegetados (*living gabions*)
+
+::: {.highlight-box}
+🌱 O riprap vegetado é a **ponte entre a engenharia cinza e a bioengenharia**: mantém a resistência do enrocamento enquanto restaura parcialmente o habitat e a estética natural (MPCA, 2018).
+:::
+
+:::
+
+::: {.column width="45%"}
+
+![Riprap vegetado — integração de enrocamento com vegetação para proteção de margens (NbS)](img/nbs-vegetated-riprap.jpg){width="90%"}
+
+### Quando escolher riprap vegetado?
+
+| Critério | Riprap puro | Riprap vegetado |
+|----------|-------------|----------------|
+| Velocidade alta | ✅ | ✅ |
+| Habitat | ❌ | ✅ |
+| Estética | ❌ | ✅ |
+| Passagem fauna | ❌ | ✅ |
+| Custo | Menor | Ligeiramente maior |
+| Manutenção | Menor | Moderada |
+
+:::
+:::
+
+# [8. CONSTRUÇÃO E MONITORAMENTO]{.section-header}
 
 ## Procedimento construtivo {.smaller-text}
 
@@ -582,7 +879,7 @@ graph TD
 :::
 :::
 
-# [8. SÍNTESE E ATIVIDADE]{.section-header}
+# [9. SÍNTESE E ATIVIDADE]{.section-header}
 
 ## Resumo dos conceitos-chave {.smaller-text}
 
@@ -598,6 +895,8 @@ graph TD
 4. O **projeto** segue verificações de tombamento, deslizamento e capacidade de carga
 5. A **vegetação** (estacas vivas + mudas + semeadura) é integrada durante a construção
 6. Em 5–10 anos, as **raízes substituem a madeira** como elemento estrutural
+7. **Riprap** = enrocamento permanente para proteção de alta energia hidráulica
+8. **Riprap vegetado** = ponte entre engenharia cinza e bioengenharia
 :::
 
 :::
@@ -617,6 +916,12 @@ graph TD
     E --> G["Revegetação<br>progressiva"]
     G --> H["Raízes assumem<br>função estrutural"]
     H --> I["Parede verde<br>autossustentável"]
+    J["Riprap<br>Enrocamento"] --> K["Proteção<br>mecânica"]
+    K --> L["Riprap vegetado<br>NbS integrada"]
+    L --> I
+    style J fill:#034EA2,color:#fff
+    style K fill:#ED1C24,color:#fff
+    style L fill:#4CAF50,color:#fff
     style A fill:#8B4513,color:#fff
     style C fill:#2E7D32,color:#fff
     style E fill:#034EA2,color:#fff
@@ -633,17 +938,19 @@ graph TD
 
 ### Exercício em grupo
 
-**Cenário:** Uma encosta urbana em Feira de Santana com inclinação de 55°, altura de 3,5 m e solo argiloso ($\gamma = 17$ kN m⁻³, $\phi = 22°$, $c = 12$ kPa) apresenta risco de deslizamento. Não há espaço para taludamento ou muros convencionais. Madeira de eucalipto tratado está disponível na região.
+**Cenário:** Uma encosta urbana em Feira de Santana com inclinação de 55°, altura de 3,5 m e solo argiloso ($\gamma = 17$ kN m⁻³, $\phi = 22°$, $c = 12$ kPa) apresenta risco de deslizamento. Não há espaço para taludamento ou muros convencionais. Madeira de eucalipto tratado está disponível. Na base da encosta há um canal de drenagem com vazão de pico estimada em 2,5 m/s.
 
-**Projetem a Parede Krainer:**
+**Projetem a Parede Krainer + Riprap:**
 
 1. Calcule o **empuxo ativo** e o **peso próprio** da parede
 2. Dimensione a **base** e a **inclinação** da face
 3. Verifique **tombamento** e **deslizamento** ($FS$)
 4. Especifique **diâmetro**, **espaçamento** e **fixação** dos troncos
 5. Defina o **plano de vegetação** (espécies, posição, quantidade)
-6. Estime o **volume de madeira** (m³) e o **custo** aproximado
-7. Elabore **cronograma** de construção e monitoramento
+6. **Dimensione o riprap** para o canal de drenagem na base (classe, $D_{50}$, filtro)
+7. Justifique se o riprap deve ser **puro ou vegetado**
+8. Estime o **volume de madeira** (m³) e o **custo** aproximado
+9. Elabore **cronograma** de construção e monitoramento
 
 :::
 
@@ -653,10 +960,11 @@ graph TD
 
 | Critério | Peso |
 |----------|------|
-| Cálculos de estabilidade | 25% |
-| Geometria e detalhamento | 20% |
-| Especificação da madeira | 15% |
-| Plano de vegetação | 20% |
+| Cálculos de estabilidade | 20% |
+| Geometria e detalhamento | 15% |
+| Especificação da madeira | 10% |
+| Plano de vegetação | 15% |
+| Dimensionamento do riprap | 20% |
 | Cronograma e custos | 20% |
 
 ::: {.highlight-box}
@@ -673,10 +981,15 @@ graph TD
 - ABNT (2022). NBR 7190:2022 — Projeto de Estruturas de Madeira. Associação Brasileira de Normas Técnicas.
 - Florineth, F. (2004). *Pflanzen statt Beton — Handbuch zur Ingenieurbiologie und Vegetationstechnik*. Patzer Verlag.
 - Gray, D. H. & Leiser, A. T. (1982). *Biotechnical Slope Protection and Erosion Control*. Van Nostrand Reinhold.
+- MnDOT (2006). *Erosion Control Field Handbook II*. Minnesota Department of Transportation.
+- MnDOT (2018). *Standard Specifications for Construction*. Specification 2511 — Riprap.
 - Morgan, R. P. C. & Rickson, R. J. (1995). *Slope Stabilization and Erosion Control: A Bioengineering Approach*. E & FN Spon.
+- MPCA (2018). Erosion prevention practices — Riprap. *Minnesota Stormwater Manual*.
+- NY State (2016). *Standards and Specifications for Erosion and Sediment Control*. DEC.
 - Schiechtl, H. M. (1980). *Bioengineering for Land Reclamation and Conservation*. University of Alberta Press.
 - Schiechtl, H. M. & Stern, R. (1996). *Ground Bioengineering Techniques*. Blackwell Science.
 - Stokes, A. et al. (2014). Ecological mitigation of hillslope instability. *Plant Soil*, 377, 1–23.
+- UNDP/ERMC (2013). *Resource Manual on Flash Flood Risk Management — Module 3: Structural Measures*. ICIMOD.
 - Zeh, H. (2007). *Soil Bioengineering Construction Type Manual*. EFIB/vdf Hochschulverlag.
 
 :::
