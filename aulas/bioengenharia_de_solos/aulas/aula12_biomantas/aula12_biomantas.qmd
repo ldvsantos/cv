@@ -59,7 +59,7 @@ Compreender os princípios de funcionamento das **biomantas** (*erosion control 
 
 ### Conceito
 
-**Biomantas** (*erosion control blankets* — ECBs) são tramas **biodegradáveis** fabricadas a partir de fibras naturais que são estendidas sobre a superfície do solo para:
+**Biomantas** (*erosion control blankets* - ECBs) são tramas **biodegradáveis** fabricadas a partir de fibras naturais que são estendidas sobre a superfície do solo para:
 
 - **Proteger** contra o impacto direto das gotas de chuva (*splash erosion*)
 - **Reduzir** a velocidade do escoamento superficial
@@ -100,19 +100,19 @@ graph TD
 ::: {.columns}
 ::: {.column width="50%"}
 
-![Geotêxtil instalado em canal de drenagem — Michigan, EUA (USDA NRCS, Public Domain)](img/fig01_geotextile_chute.jpg){width="100%"}
+![Geotêxtil instalado em canal de drenagem - Michigan, EUA (USDA NRCS, Public Domain)](img/fig01_geotextile_chute.jpg){width="100%"}
 
 :::{.smaller-text}
-Foto: Fred Gasper / USDA NRCS — Public Domain
+Foto: Fred Gasper / USDA NRCS - Public Domain
 :::
 :::
 
 ::: {.column width="50%"}
 
-![Detalhe de gramíneas crescendo através de geotêxtil — Michigan, EUA (USDA NRCS, Public Domain)](img/fig02_grass_geotextile.jpg){width="100%"}
+![Detalhe de gramíneas crescendo através de geotêxtil - Michigan, EUA (USDA NRCS, Public Domain)](img/fig02_grass_geotextile.jpg){width="100%"}
 
 :::{.smaller-text}
-Foto: Fred Gasper / USDA NRCS — Public Domain
+Foto: Fred Gasper / USDA NRCS - Public Domain
 :::
 :::
 :::
@@ -124,7 +124,7 @@ Foto: Fred Gasper / USDA NRCS — Public Domain
 
 ### Evolução das biomantas
 
-- **1950s–1960s**: Primeiros geotêxteis sintéticos (polipropileno, poliéster)
+- **1950s-1960s**: Primeiros geotêxteis sintéticos (polipropileno, poliéster)
 - **1970s**: Surgimento das biomantas de juta na Índia e Bangladesh
 - **1980s**: Introdução de fibra de coco como alternativa mais durável
 - **1990s**: Padronização (ASTM, ECTC) e expansão global
@@ -134,8 +134,8 @@ Foto: Fred Gasper / USDA NRCS — Public Domain
 
 | Critério | Sem proteção | Com biomanta |
 |----------|-------------|--------------|
-| Perda de solo | 20–80 t ha⁻¹ ano⁻¹ | 2–8 t ha⁻¹ ano⁻¹ |
-| Germinação | 30–50% | 70–90% |
+| Perda de solo | 20-80 t ha⁻¹ ano⁻¹ | 2-8 t ha⁻¹ ano⁻¹ |
+| Germinação | 30-50% | 70-90% |
 | Retenção de umidade | Baixa | Alta |
 | Temp. do solo | Extrema | Moderada |
 
@@ -146,7 +146,7 @@ Foto: Fred Gasper / USDA NRCS — Public Domain
 ### Contexto brasileiro
 
 ::: {.highlight-box}
-🇧🇷 No Brasil, biomantas são reguladas pela norma **ABNT NBR 16.757:2020** (Geossintéticos — Biomanta para controle de erosão) e amplamente exigidas em:
+🇧🇷 No Brasil, biomantas são reguladas pela norma **ABNT NBR 16.757:2020** (Geossintéticos - Biomanta para controle de erosão) e amplamente exigidas em:
 
 - Licenciamento de rodovias (DNIT)
 - Recuperação de mineração (IBAMA/ANM)
@@ -154,7 +154,7 @@ Foto: Fred Gasper / USDA NRCS — Public Domain
 - Obras de drenagem urbana
 :::
 
-> A redução de perda de solo pode chegar a **90–95%** com biomantas de fibra de coco bem instaladas (Lekha, 2004).
+> A redução de perda de solo pode chegar a **90-95%** com biomantas de fibra de coco bem instaladas (Lekha, 2004).
 :::
 :::
 
@@ -169,21 +169,21 @@ Foto: Fred Gasper / USDA NRCS — Public Domain
 
 - **Material**: fibras naturais (coco, palha, juta, sisal)
 - **Vida útil**: 6 meses a 5 anos (depende da fibra)
-- **Biodegradação**: sim — incorpora matéria orgânica ao solo
-- **Função**: temporária — proteção até revegetação
-- **Permeabilidade**: alta — permite infiltração e trocas gasosas
-- **Impacto ambiental**: baixo — material renovável
-- **Custo**: R$ 5–25 m⁻²
+- **Biodegradação**: sim - incorpora matéria orgânica ao solo
+- **Função**: temporária - proteção até revegetação
+- **Permeabilidade**: alta - permite infiltração e trocas gasosas
+- **Impacto ambiental**: baixo - material renovável
+- **Custo**: R$ 5-25 m⁻²
 
 ### Geotêxtil sintético
 
 - **Material**: polipropileno, poliéster, nylon
-- **Vida útil**: 20–50+ anos
-- **Biodegradação**: não — persiste no ambiente
-- **Função**: permanente — filtração, separação, reforço
+- **Vida útil**: 20-50+ anos
+- **Biodegradação**: não - persiste no ambiente
+- **Função**: permanente - filtração, separação, reforço
 - **Permeabilidade**: variável (tecido / não tecido)
-- **Impacto ambiental**: alto — derivado de petróleo
-- **Custo**: R$ 8–40 m⁻²
+- **Impacto ambiental**: alto - derivado de petróleo
+- **Custo**: R$ 8-40 m⁻²
 
 :::
 
@@ -195,8 +195,8 @@ Foto: Fred Gasper / USDA NRCS — Public Domain
 %%| fig-width: 5
 graph TD
     A["Necessidade de<br>proteção do solo"] --> B{"Função<br>permanente?"}
-    B -->|"Não — revegetação<br>será implantada"| C["BIOMANTA<br>biodegradável"]
-    B -->|"Sim — função<br>estrutural"| D{"Há vegetação<br>no projeto?"}
+    B -->|"Não - revegetação<br>será implantada"| C["BIOMANTA<br>biodegradável"]
+    B -->|"Sim - função<br>estrutural"| D{"Há vegetação<br>no projeto?"}
     D -->|"Sim"| E["Geotêxtil<br>tecido + vegetação"]
     D -->|"Não"| F["Geotêxtil<br>não tecido"]
     C --> G["Fibra: coco, palha<br>juta, sisal"]
@@ -227,24 +227,24 @@ graph TD
 
 ### Fibra de coco (*Cocos nucifera*)
 
-- **Durabilidade**: 2–5 anos
-- **Resistência à tração**: 100–200 kN m⁻¹
+- **Durabilidade**: 2-5 anos
+- **Resistência à tração**: 100-200 kN m⁻¹
 - **Retenção hídrica**: excelente
 - **Aplicação**: taludes íngremes, margens de rios
 - **Vantagem**: alta resistência à degradação microbiológica
 
 ### Palha de arroz / trigo
 
-- **Durabilidade**: 3–12 meses
-- **Resistência à tração**: 20–50 kN m⁻¹
+- **Durabilidade**: 3-12 meses
+- **Resistência à tração**: 20-50 kN m⁻¹
 - **Retenção hídrica**: moderada
 - **Aplicação**: áreas planas, taludes suaves
 - **Vantagem**: baixo custo, disponibilidade
 
 ### Juta (*Corchorus spp.*)
 
-- **Durabilidade**: 1–2 anos
-- **Resistência à tração**: 80–150 kN m⁻¹
+- **Durabilidade**: 1-2 anos
+- **Resistência à tração**: 80-150 kN m⁻¹
 - **Retenção hídrica**: boa
 - **Aplicação**: uso geral, canais
 - **Vantagem**: boa trabalhabilidade
@@ -255,8 +255,8 @@ graph TD
 
 ### Sisal (*Agave sisalana*)
 
-- **Durabilidade**: 2–4 anos
-- **Resistência à tração**: 120–180 kN m⁻¹
+- **Durabilidade**: 2-4 anos
+- **Resistência à tração**: 120-180 kN m⁻¹
 - **Retenção hídrica**: boa
 - **Aplicação**: taludes moderados a íngremes
 - **Vantagem**: fibra nacional (Nordeste brasileiro)
@@ -301,9 +301,9 @@ graph TD
 
 | Tipo | Redes | Fibra | Gramatura |
 |------|-------|-------|-----------|
-| Simples | 1 rede PP | Palha | 300–400 g m⁻² |
-| Dupla | 2 redes PP | Coco | 400–700 g m⁻² |
-| Reforçada | 2 redes + fio aço | Coco+palha | 700–1.000 g m⁻² |
+| Simples | 1 rede PP | Palha | 300-400 g m⁻² |
+| Dupla | 2 redes PP | Coco | 400-700 g m⁻² |
+| Reforçada | 2 redes + fio aço | Coco+palha | 700-1.000 g m⁻² |
 
 :::
 
@@ -354,11 +354,11 @@ Algumas biomantas são fabricadas com **sementes incorporadas** entre as camadas
 
 | Propriedade | Valor |
 |-------------|-------|
-| Gramatura | 400–700 g m⁻² |
-| Espessura | 8–15 mm |
-| Resistência à tração (MD) | 5–15 kN m⁻¹ |
-| Alongamento | 15–40% |
-| Abertura de malha | 10–20 mm |
+| Gramatura | 400-700 g m⁻² |
+| Espessura | 8-15 mm |
+| Resistência à tração (MD) | 5-15 kN m⁻¹ |
+| Alongamento | 15-40% |
+| Abertura de malha | 10-20 mm |
 
 :::
 
@@ -368,15 +368,15 @@ Algumas biomantas são fabricadas com **sementes incorporadas** entre as camadas
 
 **Brasil:**
 
-- **ABNT NBR 16.757:2020** — Geossintéticos — Biomanta
-- **ABNT NBR 12.553** — Geotêxteis — Terminologia
-- **DNIT 071/2006 – ES** — Revegetação de Taludes
+- **ABNT NBR 16.757:2020** - Geossintéticos - Biomanta
+- **ABNT NBR 12.553** - Geotêxteis - Terminologia
+- **DNIT 071/2006 - ES** - Revegetação de Taludes
 
 **Internacionais:**
 
-- **ASTM D6459** — Standard test method for determination of rolled erosion control product (RECP) performance
-- **ECTC (Erosion Control Technology Council)** — Classificação de RECPs
-- **EN 13252** — Geossintéticos para drenagem
+- **ASTM D6459** - Standard test method for determination of rolled erosion control product (RECP) performance
+- **ECTC (Erosion Control Technology Council)** - Classificação de RECPs
+- **EN 13252** - Geossintéticos para drenagem
 
 ::: {.highlight-box}
 📋 A classificação **ECTC** divide as biomantas em categorias **Type A** (curta duração, ≤ 12 meses) a **Type D** (longa duração, > 36 meses), conforme a aplicação e a declividade.
@@ -430,7 +430,7 @@ Onde:
 
 - $Q_{biom}$ = quantidade de biomanta (m²)
 - $A_{talude}$ = área do talude (m²)
-- $f_s$ = fator de sobreposição (0,10 – 0,20)
+- $f_s$ = fator de sobreposição (0,10 - 0,20)
 
 :::
 :::
@@ -446,11 +446,11 @@ Onde:
 
 1. **Preparo da superfície**
    - Remoção de pedras soltas e detritos
-   - Escarificação superficial (2–3 cm)
+   - Escarificação superficial (2-3 cm)
    - Semeadura e/ou adubação
 
 2. **Ancoragem superior** (trincheira)
-   - Trincheira de 15–20 cm de profundidade
+   - Trincheira de 15-20 cm de profundidade
    - Enterrar 30 cm da borda superior da manta
    - Compactar e selar a trincheira
 
@@ -461,8 +461,8 @@ Onde:
    - Sobreposição longitudinal: **mínimo 15 cm**
 
 4. **Grampeamento**
-   - Grampos em "U" de aço (15–20 cm)
-   - Espaçamento: 1–2 grampos m⁻²
+   - Grampos em "U" de aço (15-20 cm)
+   - Espaçamento: 1-2 grampos m⁻²
    - Reforçar nas bordas e sobreposições
 
 5. **Ancoragem inferior** (trincheira de pé)
@@ -519,7 +519,7 @@ graph TD
 | 180 dias | Biodegradação avançada | Vegetação dominante |
 | 365 dias | Biodegradação completa* | Solo 100% vegetado |
 
-*Para biomantas de palha/juta. Coco pode levar 2–5 anos.
+*Para biomantas de palha/juta. Coco pode levar 2-5 anos.
 
 ### Curva de transição
 
@@ -591,7 +591,7 @@ graph LR
 ```{mermaid}
 %%| fig-width: 5
 graph TD
-    A["Fibras naturais<br>Coco/Palha/Juta/Sisal"] --> B["Biomanta<br>300–1000 g/m²"]
+    A["Fibras naturais<br>Coco/Palha/Juta/Sisal"] --> B["Biomanta<br>300-1000 g/m²"]
     B --> C["Instalação<br>Trincheira + Grampos"]
     C --> D["Proteção do solo<br>contra impacto"]
     D --> E["Germinação<br>sob a manta"]
@@ -609,7 +609,7 @@ graph TD
 :::
 :::
 
-## Atividade prática — Especificação técnica {.smaller-text}
+## Atividade prática - Especificação técnica {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
@@ -654,14 +654,14 @@ graph TD
 
 ::: {.smaller-text}
 
-- ABNT (2020). NBR 16.757:2020 — Geossintéticos — Biomanta para controle de erosão superficial. Associação Brasileira de Normas Técnicas.
-- ECTC (2014). Erosion Control Technology Council — Standard Specification for RECPs.
-- Hälbich, F. B. (2014). Erosion control using hydromulch and biomantas. *Eng. Sanit. Ambien.*, 19(2), 155–163.
-- Lekha, K. R. (2004). Field instrumentation and monitoring of soil erosion in coir geotextile stabilised slopes. *Geotextiles and Geomembranes*, 22(5), 399–413.
-- Oliveira, R. A. et al. (2021). Biomantas com sementes nativas para restauração ecológica. *Rev. Bras. Eng. Agrícola Amb.*, 25(8), 567–574.
-- Rickson, R. J. (2006). Controlling sediment at source: an evaluation of erosion control geotextiles. *Earth Surface Processes Landforms*, 31(5), 550–560.
-- Subaida, E. A., Chandrakaran, S., & Sankar, N. (2008). Experimental investigation on tensile strength behavior of coir geotextiles. *Geomechanics and Geoengineering*, 3(1), 55–61.
-- Vishnudas, S. et al. (2006). The protective and water-harvesting effect of biomantas installed on steep slopes. *Land Degrad. Dev.*, 17(1), 55–64.
+- ABNT (2020). NBR 16.757:2020 - Geossintéticos - Biomanta para controle de erosão superficial. Associação Brasileira de Normas Técnicas.
+- ECTC (2014). Erosion Control Technology Council - Standard Specification for RECPs.
+- Hälbich, F. B. (2014). Erosion control using hydromulch and biomantas. *Eng. Sanit. Ambien.*, 19(2), 155-163.
+- Lekha, K. R. (2004). Field instrumentation and monitoring of soil erosion in coir geotextile stabilised slopes. *Geotextiles and Geomembranes*, 22(5), 399-413.
+- Oliveira, R. A. et al. (2021). Biomantas com sementes nativas para restauração ecológica. *Rev. Bras. Eng. Agrícola Amb.*, 25(8), 567-574.
+- Rickson, R. J. (2006). Controlling sediment at source: an evaluation of erosion control geotextiles. *Earth Surface Processes Landforms*, 31(5), 550-560.
+- Subaida, E. A., Chandrakaran, S., & Sankar, N. (2008). Experimental investigation on tensile strength behavior of coir geotextiles. *Geomechanics and Geoengineering*, 3(1), 55-61.
+- Vishnudas, S. et al. (2006). The protective and water-harvesting effect of biomantas installed on steep slopes. *Land Degrad. Dev.*, 17(1), 55-64.
 
 :::
 

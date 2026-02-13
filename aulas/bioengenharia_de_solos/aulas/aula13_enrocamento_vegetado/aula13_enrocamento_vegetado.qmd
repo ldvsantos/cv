@@ -79,7 +79,7 @@ O **enrocamento vegetado** (*vegetated riprap* ou *live riprap*) é uma técnica
 %%| fig-width: 4.5
 graph TD
     A["Ano 0<br>Pedras + Estacas"] --> B["Ano 1<br>Enraizamento<br>inicial"]
-    B --> C["Ano 2–3<br>Raízes entrelaçam<br>pedras"]
+    B --> C["Ano 2-3<br>Raízes entrelaçam<br>pedras"]
     C --> D["Ano 5+<br>Sistema vivo<br>autossustentável"]
     A -->|"Resistência<br>mecânica"| E["100% pedras"]
     D -->|"Resistência<br>mecânica"| F["50% pedras<br>50% raízes"]
@@ -98,19 +98,19 @@ graph TD
 ::: {.columns}
 ::: {.column width="50%"}
 
-![Proteção de margem com riprap — Rio Ohio, Cairo, EUA, 1935 (USACE, Public Domain)](img/fig01_riprap_ohio_river.jpg){width="100%"}
+![Proteção de margem com riprap - Rio Ohio, Cairo, EUA, 1935 (USACE, Public Domain)](img/fig01_riprap_ohio_river.jpg){width="100%"}
 
 :::{.smaller-text}
-Fonte: USACE Memphis District — Public Domain
+Fonte: USACE Memphis District - Public Domain
 :::
 :::
 
 ::: {.column width="50%"}
 
-![Riprap vegetado em parque urbano — Hunters Point, Nova York (CC BY-SA 4.0)](img/fig02_hunters_point_riprap.jpg){width="100%"}
+![Riprap vegetado em parque urbano - Hunters Point, Nova York (CC BY-SA 4.0)](img/fig02_hunters_point_riprap.jpg){width="100%"}
 
 :::{.smaller-text}
-Fonte: Wikimedia Commons — CC BY-SA 4.0
+Fonte: Wikimedia Commons - CC BY-SA 4.0
 :::
 :::
 :::
@@ -164,7 +164,7 @@ graph LR
 ```
 
 ::: {.highlight-box}
-🌿 O enrocamento vegetado é especialmente indicado em **Áreas de Preservação Permanente (APP)**, onde a legislação exige a restauração da vegetação ciliar (Lei 12.651/2012 — Código Florestal).
+🌿 O enrocamento vegetado é especialmente indicado em **Áreas de Preservação Permanente (APP)**, onde a legislação exige a restauração da vegetação ciliar (Lei 12.651/2012 - Código Florestal).
 :::
 :::
 :::
@@ -182,7 +182,7 @@ graph LR
 - Juntas preenchidas com brita ou argamassa
 - Função: **resistência mecânica** ao fluxo
 - Sem componente biológico
-- Durabilidade: 30–50+ anos (se bem dimensionado)
+- Durabilidade: 30-50+ anos (se bem dimensionado)
 - Custo elevado de transporte e instalação
 
 ### Enrocamento vegetado (live riprap)
@@ -192,7 +192,7 @@ graph LR
 - **Estacas vivas** inseridas nos interstícios
 - Função: **resistência mecânica + ecológica**
 - Durabilidade: **crescente** (raízes reforçam)
-- Custo 20–40% menor que convencional
+- Custo 20-40% menor que convencional
 
 :::
 
@@ -241,10 +241,10 @@ Onde:
 
 | Classe | $D_{50}$ (cm) | Massa média (kg) | Velocidade máxima |
 |--------|---------------|-------------------|-------------------|
-| Rachão leve | 10–15 | 2–5 | 1,0–1,5 m/s |
-| Rachão médio | 15–25 | 5–20 | 1,5–2,5 m/s |
-| Rachão pesado | 25–40 | 20–80 | 2,5–3,5 m/s |
-| Pedra de mão | 40–60 | 80–300 | 3,5–5,0 m/s |
+| Rachão leve | 10-15 | 2-5 | 1,0-1,5 m/s |
+| Rachão médio | 15-25 | 5-20 | 1,5-2,5 m/s |
+| Rachão pesado | 25-40 | 20-80 | 2,5-3,5 m/s |
+| Pedra de mão | 40-60 | 80-300 | 3,5-5,0 m/s |
 
 :::
 
@@ -291,7 +291,7 @@ As espécies devem apresentar:
 
 - **Propagação vegetativa**: capacidade de enraizar por estaquia
 - **Tolerância à submersão**: resistir a cheias periódicas
-- **Crescimento rápido**: cobertura em 1–2 estações
+- **Crescimento rápido**: cobertura em 1-2 estações
 - **Sistema radicular** profundo e denso
 - **Adaptação regional**: nativas ou naturalizadas
 
@@ -315,8 +315,8 @@ As espécies devem apresentar:
 
 **Especificações:**
 
-- **Diâmetro**: 2–8 cm
-- **Comprimento**: 50–100 cm
+- **Diâmetro**: 2-8 cm
+- **Comprimento**: 50-100 cm
 - **Corte basal**: diagonal (↗) para facilitar cravação
 - **Corte apical**: reto para evitar acúmulo de água
 - **Coleta**: ramos saudáveis da estação de crescimento
@@ -337,7 +337,7 @@ graph LR
 ```
 
 ::: {.highlight-box}
-🌱 A taxa de enraizamento depende da **época de coleta** (inverno/dormência é ideal), do **diâmetro** (3–5 cm é o ótimo) e da **umidade do solo** nos interstícios.
+🌱 A taxa de enraizamento depende da **época de coleta** (inverno/dormência é ideal), do **diâmetro** (3-5 cm é o ótimo) e da **umidade do solo** nos interstícios.
 :::
 :::
 :::
@@ -363,13 +363,13 @@ graph LR
 
 $$d_{estacas} = \frac{N}{A_{enroc}}$$
 
-Recomendação: **2–4 estacas m⁻²** distribuídas uniformemente nos interstícios.
+Recomendação: **2-4 estacas m⁻²** distribuídas uniformemente nos interstícios.
 
 ### Volume de pedras
 
 $$V_{pedras} = A_{face} \times e_{camada} \times (1 - n)$$
 
-Onde $n$ = porosidade do enrocamento (0,35 – 0,45)
+Onde $n$ = porosidade do enrocamento (0,35 - 0,45)
 
 :::
 
@@ -451,9 +451,9 @@ graph TD
 
 | Região | Melhor época |
 |--------|-------------|
-| Nordeste semiárido | Início das chuvas (mar–abr) |
-| Sudeste | Outubro–dezembro |
-| Sul | Setembro–novembro |
+| Nordeste semiárido | Início das chuvas (mar-abr) |
+| Sudeste | Outubro-dezembro |
+| Sul | Setembro-novembro |
 | Amazônia | Transição seca→chuvosa |
 
 ::: {.highlight-box}
@@ -498,8 +498,8 @@ graph TD
 ```{mermaid}
 %%| fig-width: 5
 graph TD
-    A["Fase 1: Pioneira<br>(0–2 anos)<br>Estacas + gramíneas"] --> B["Fase 2: Herbácea<br>(2–5 anos)<br>Arbustos + herbáceas"]
-    B --> C["Fase 3: Arbustiva<br>(5–10 anos)<br>Arbustos + árvores jovens"]
+    A["Fase 1: Pioneira<br>(0-2 anos)<br>Estacas + gramíneas"] --> B["Fase 2: Herbácea<br>(2-5 anos)<br>Arbustos + herbáceas"]
+    B --> C["Fase 3: Arbustiva<br>(5-10 anos)<br>Arbustos + árvores jovens"]
     C --> D["Fase 4: Arbórea<br>(10+ anos)<br>Mata ciliar<br>em regeneração"]
     style A fill:#FDB913,color:#000
     style B fill:#2E7D32,color:#fff
@@ -556,7 +556,7 @@ graph TD
 :::
 :::
 
-## Atividade prática — Projeto de enrocamento vegetado {.smaller-text}
+## Atividade prática - Projeto de enrocamento vegetado {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
@@ -600,12 +600,12 @@ graph TD
 
 ::: {.smaller-text}
 
-- ABNT (2016). NBR 9842:2016 — Enrocamento — Projeto e execução.
+- ABNT (2016). NBR 9842:2016 - Enrocamento - Projeto e execução.
 - DNER (1996). Manual de Proteção e Retaludamento de Encostas. Departamento Nacional de Estradas de Rodagem.
 - Fischenich, C. (2001). Stability thresholds for stream restoration materials. *EMRRP Technical Notes, ERDC TN-EMRRP-SR-29*.
 - Gray, D. H. & Sotir, R. B. (1996). *Biotechnical and Soil Bioengineering Slope Stabilization*. John Wiley & Sons.
-- Isbash, S. V. (1936). Construction of dams by depositing rock in running water. *2nd Congress on Large Dams, Washington*, 5, 123–136.
-- Li, M. H. & Eddleman, K. E. (2002). Biotechnical engineering as an alternative to traditional engineering methods. *Landscape Urban Planning*, 60(4), 225–242.
+- Isbash, S. V. (1936). Construction of dams by depositing rock in running water. *2nd Congress on Large Dams, Washington*, 5, 123-136.
+- Li, M. H. & Eddleman, K. E. (2002). Biotechnical engineering as an alternative to traditional engineering methods. *Landscape Urban Planning*, 60(4), 225-242.
 - Schiechtl, H. M. & Stern, R. (1996). *Ground Bioengineering Techniques for Slope Protection and Erosion Control*. Blackwell Science.
 
 :::

@@ -175,7 +175,7 @@ Uma **trajetória** é a sequência de estados que um pixel (ou unidade da paisa
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**MapBiomas: trajetórias 1985–2023**
+**MapBiomas: trajetórias 1985-2023**
 
 O MapBiomas classifica a cobertura do Brasil a cada ano desde 1985, permitindo:
 
@@ -224,7 +224,7 @@ A **matriz de transição** mostra a conversão entre classes em dois momentos:
 ::: {.info-box}
 **Leitura:** A diagonal (negrito) = **estabilidade** (sem mudança). Fora da diagonal = **transição**.
 Exemplo: 120 ha de floresta → pastagem; 20 ha de pastagem → floresta (regeneração).
-**Ganho líquido de pastagem** = 705 - 700 = +5 ha. **Perda líquida de floresta** = 1000 - 835 = –165 ha.
+**Ganho líquido de pastagem** = 705 - 700 = +5 ha. **Perda líquida de floresta** = 1000 - 835 = -165 ha.
 :::
 :::
 :::
@@ -338,7 +338,7 @@ Na Aula 16, você produzirá um **registro interpretativo de mudanças** na áre
 2. Gerar mapas MapBiomas para ambas
 3. Construir matriz de transição simplificada
 4. Produzir mapa/figura comparativa
-5. Escrever texto interpretativo (1–2 parágrafos)
+5. Escrever texto interpretativo (1-2 parágrafos)
 :::
 
 ::: {.column width="50%"}

@@ -24,17 +24,17 @@ Essas ondas podem parecer pequenas, mas representam milhões de ciclos de carga 
 
 ## Abordagem metodológica e zoneamento hidrodinâmico
 
-O procedimento de apoio à decisão desenvolvido integra climatologia de ventos (direção e intensidade predominantes), fetch efetivo (a distância sobre a qual o vento sopra sem obstáculo, que determina a magnitude das ondas), método SMB (*Sverdrup–Munk–Bretschneider*, modelo clássico que converte vento e fetch em altura de onda $H_s$) e restrições batimétricas (profundidade do reservatório). O resultado é um mapa de zoneamento que indica as zonas de ondas aceitáveis para FPV e as zonas de exclusão.
+O procedimento de apoio à decisão desenvolvido integra climatologia de ventos (direção e intensidade predominantes), fetch efetivo (a distância sobre a qual o vento sopra sem obstáculo, que determina a magnitude das ondas), método SMB (*Sverdrup-Munk-Bretschneider*, modelo clássico que converte vento e fetch em altura de onda $H_s$) e restrições batimétricas (profundidade do reservatório). O resultado é um mapa de zoneamento que indica as zonas de ondas aceitáveis para FPV e as zonas de exclusão.
 
-![Mapa de fetch efetivo — distância de atuação do vento](mapa-fetch.png){fig-alt="Mapa de fetch efetivo no reservatório de Xingó" width="100%"}
+![Mapa de fetch efetivo - distância de atuação do vento](mapa-fetch.png){fig-alt="Mapa de fetch efetivo no reservatório de Xingó" width="100%"}
 
 ## Resultados comparativos
 
-Os resultados revelaram um contraste dramático entre as zonas do reservatório. As enseadas abrigadas (R1–R5) apresentaram altura de onda ($H_s$) inferior a 0,09 m, com risco de fadiga muito baixo e aptidão excelente para FPV. Em contrapartida, o canal principal registrou alturas de onda até 10 vezes maiores, com risco de fadiga elevado que o torna desfavorável para a instalação.
+Os resultados revelaram um contraste dramático entre as zonas do reservatório. As enseadas abrigadas (R1-R5) apresentaram altura de onda ($H_s$) inferior a 0,09 m, com risco de fadiga muito baixo e aptidão excelente para FPV. Em contrapartida, o canal principal registrou alturas de onda até 10 vezes maiores, com risco de fadiga elevado que o torna desfavorável para a instalação.
 
 As enseadas laterais do cânion oferecem abrigo topográfico natural contra as ondas, reduzindo a demanda de amarração em mais de 90% comparado ao canal principal, o que implica menor custo de amarração (o CAPEX estrutural cai drasticamente), menor risco de falha por fadiga ao longo da vida útil e possibilidade de coexistência com navegação turística e comercial.
 
-![Mapa de ondas — altura significativa ($H_s$) simulada pelo método SMB](mapa-ondas.png){fig-alt="Mapa de altura de onda significativa no reservatório" width="100%"}
+![Mapa de ondas - altura significativa ($H_s$) simulada pelo método SMB](mapa-ondas.png){fig-alt="Mapa de altura de onda significativa no reservatório" width="100%"}
 
 ![Zoneamento hidrodinâmico para fotovoltaica flutuante](mapa-zoneamento.png){fig-alt="Mapa de zoneamento para FPV no reservatório de Xingó" width="100%"}
 

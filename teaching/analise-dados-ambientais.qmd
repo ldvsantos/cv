@@ -1,0 +1,303 @@
+---
+title: "Análise de Dados Ambientais"
+description: "Ambiente virtual da disciplina de Análise de Dados Ambientais — aulas, leituras, vídeos e recursos."
+---
+
+::: {.text-end .mb-3}
+[← Voltar para Ensino](index.qmd)
+:::
+
+```{=html}
+<div class="ava-header">
+  <div class="ava-icon"><i class="fa-solid fa-chart-column"></i></div>
+  <div>
+    <h2 class="ava-title">Análise de Dados Ambientais</h2>
+    <p class="ava-subtitle">Estatística espacial, R, Python, geoestatística, machine learning e modelagem ambiental para pós-graduação em planejamento territorial.</p>
+    <div class="ava-stats">
+      <span class="ava-stat"><i class="fa-solid fa-display"></i> 29 aulas</span>
+      <span class="ava-stat"><i class="fa-solid fa-book"></i> Leituras</span>
+      <span class="ava-stat"><i class="fa-solid fa-video"></i> Vídeos</span>
+    </div>
+  </div>
+</div>
+```
+
+::: {.callout-note collapse="true" icon=false}
+## {{< fa clipboard-list >}} Ementa da Disciplina
+
+Panorama da Análise de Dados Ambientais; Fundamentos de R; tipos de dados e importação; manipulação com dplyr e tidyr; visualização com ggplot2; estatística descritiva aplicada; distribuições e testes de hipóteses; correlação e regressão linear; regressão múltipla e diagnósticos; ANOVA e comparações múltiplas; análise multivariada (PCA/clustering); geoestatística e IDW; séries temporais (ARIMA/ETS); dados geoespaciais com sf; mapas temáticos; índices ambientais (NDVI/NDWI); machine learning supervisionado; machine learning não supervisionado; cientometria; web scraping; análise de texto e NLP; estatística Bayesiana; modelagem multinível; modelos aditivos generalizados (GAM); métricas de paisagem; análise de redes ecológicas; meta-análise ambiental; relatórios reprodutíveis; projeto final.
+:::
+
+---
+
+::: {.panel-tabset}
+
+### {{< fa display >}} Aulas
+
+```{=html}
+<div class="slide-grid">
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula01_panorama_analise_dados/aula01_panorama_analise_dados.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 01 | Panorama da Análise de Dados Ambientais</h4>
+<p>Contexto, workflow e ferramentas para análise ambiental integrada.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula02_fundamentos_r/aula02_fundamentos_r.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 02 | Fundamentos de R</h4>
+<p>R base, tidyverse e ambiente de trabalho.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula03_tipos_dados_importacao/aula03_tipos_dados_importacao.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 03 | Tipos de Dados e Importação</h4>
+<p>CSV, Excel, shapefiles, rasters e APIs.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula04_manipulacao_dplyr_tidyr/aula04_manipulacao_dplyr_tidyr.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 04 | Manipulação com dplyr e tidyr</h4>
+<p>Verbos do tidyverse aplicados a dados ambientais.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula05_visualizacao_ggplot2/aula05_visualizacao_ggplot2.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 05 | Visualização com ggplot2</h4>
+<p>Gramática dos gráficos para comunicação científica.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula06_estatistica_descritiva/aula06_estatistica_descritiva.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 06 | Estatística Descritiva Aplicada</h4>
+<p>Medidas de centralidade, dispersão e assimetria.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula07_distribuicoes_testes/aula07_distribuicoes_testes.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 07 | Distribuições e Testes de Hipóteses</h4>
+<p>Normal, Poisson, qui-quadrado e testes t.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula08_correlacao_regressao/aula08_correlacao_regressao.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 08 | Correlação e Regressão Linear</h4>
+<p>Pearson, Spearman e regressão simples com diagnósticos.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula09_regressao_multipla/aula09_regressao_multipla.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 09 | Regressão Múltipla e Diagnósticos</h4>
+<p>VIF, resíduos, stepwise e validação cruzada.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula10_anova_comparacoes/aula10_anova_comparacoes.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 10 | ANOVA e Comparações Múltiplas</h4>
+<p>ANOVA fatorial, Tukey e contrastes ortogonais.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula11_multivariada_pca_cluster/aula11_multivariada_pca_cluster.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 11 | Análise Multivariada (PCA/Clustering)</h4>
+<p>Componentes principais, k-means e dendrogramas.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula12_geoestatistica_idw/aula12_geoestatistica_idw.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 12 | Geoestatística e IDW</h4>
+<p>Variogramas, kriging e interpolação ponderada por distância.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula13_series_temporais/aula13_series_temporais.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 13 | Séries Temporais (ARIMA/ETS)</h4>
+<p>Decomposição, modelos ARIMA e suavização exponencial.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula14_dados_geoespaciais_sf/aula14_dados_geoespaciais_sf.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 14 | Dados Geoespaciais com sf</h4>
+<p>Geometrias vetoriais, operações espaciais e CRS no R.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula15_mapas_tematicos/aula15_mapas_tematicos.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 15 | Mapas Temáticos</h4>
+<p>tmap, leaflet e cartografia temática no R.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula16_indices_ambientais/aula16_indices_ambientais.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 16 | Índices Ambientais (NDVI/NDWI)</h4>
+<p>Cálculo e interpretação de índices espectrais com R/GEE.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula17_ml_supervisionado/aula17_ml_supervisionado.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 17 | Machine Learning Supervisionado</h4>
+<p>Random Forest, SVM e XGBoost com tidymodels.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula18_ml_nao_supervisionado/aula18_ml_nao_supervisionado.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 18 | Machine Learning Não Supervisionado</h4>
+<p>DBSCAN, SOM e redução de dimensionalidade.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula19_cientometria/aula19_cientometria.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 19 | Cientometria</h4>
+<p>Bibliometria, redes de co-autoria e análise de tendências.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula20_web_scraping/aula20_web_scraping.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 20 | Web Scraping</h4>
+<p>Coleta automatizada de dados ambientais e legislação.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula21_analise_texto_nlp/aula21_analise_texto_nlp.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 21 | Análise de Texto e NLP</h4>
+<p>Mineração de texto, sentimento e topic modeling.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula22_estatistica_bayesiana/aula22_estatistica_bayesiana.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 22 | Estatística Bayesiana</h4>
+<p>Priors, posteriors e MCMC para dados ambientais.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula23_modelagem_multinivel/aula23_modelagem_multinivel.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 23 | Modelagem Multinível</h4>
+<p>Modelos hierárquicos e efeitos mistos (lme4/brms).</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula24_gam/aula24_gam.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 24 | Modelos Aditivos Generalizados (GAM)</h4>
+<p>Splines, mgcv e relações não-lineares.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula25_metricas_paisagem/aula25_metricas_paisagem.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 25 | Métricas de Paisagem</h4>
+<p>landscapemetrics, FRAGSTATS e indicadores espaciais.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula26_redes_ecologicas/aula26_redes_ecologicas.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 26 | Análise de Redes Ecológicas</h4>
+<p>igraph, centralidade e conectividade funcional.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula27_meta_analise/aula27_meta_analise.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 27 | Meta-Análise Ambiental</h4>
+<p>Efeito combinado, forest plot e heterogeneidade.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula28_relatorios_reprodutiveis/aula28_relatorios_reprodutiveis.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 28 | Relatórios Reprodutíveis</h4>
+<p>Quarto, R Markdown e ciência aberta.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_dados_ambientais/aulas/aula29_projeto_final/aula29_projeto_final.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 29 | Projeto Final</h4>
+<p>Análise completa de um dataset ambiental com relatório reprodutível.</p>
+</div>
+</a>
+
+</div>
+```
+
+### {{< fa book >}} Biblioteca
+
+```{=html}
+<div class="ava-empty">
+  <i class="fa-solid fa-book-open"></i>
+  Leituras em preparação. Em breve serão disponibilizados artigos e notebooks aqui.
+</div>
+```
+
+### {{< fa video >}} Videoaulas
+
+```{=html}
+<div class="ava-empty">
+  <i class="fa-solid fa-video"></i>
+  Em breve. As videoaulas estão sendo produzidas e serão disponibilizadas aqui.
+</div>
+```
+
+### {{< fa link >}} Recursos
+
+| Recurso | Descrição | Link |
+|---------|-----------|------|
+| Repositório GitHub | Slides e materiais da disciplina | [aulas/analise_dados_ambientais](https://github.com/ldvsantos/cv/tree/main/aulas/analise_dados_ambientais) |
+| R Project | Linguagem R para computação estatística | [r-project.org](https://www.r-project.org/) |
+| Tidyverse | Coleção de pacotes R para ciência de dados | [tidyverse.org](https://www.tidyverse.org/) |
+| Google Earth Engine | Plataforma de análise geoespacial em nuvem | [earthengine.google.com](https://earthengine.google.com/) |
+
+: {.striped .hover}
+
+:::

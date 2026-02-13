@@ -163,12 +163,12 @@ A **permeabilidade** é o grau em que a matriz permite o movimento de organismos
 
 | Tipo de matriz | Permeabilidade | Custo de deslocamento |
 |---------------|:---:|:---:|
-| Floresta secundária | Alta | Baixo (1–5) |
-| Silvicultura (eucalipto) | Média-alta | Baixo-médio (5–15) |
-| Pastagem com árvores | Média | Médio (20–40) |
-| Pastagem limpa | Baixa | Alto (40–80) |
-| Monocultura (soja, cana) | Muito baixa | Muito alto (60–100) |
-| Área urbana | Variável (pode ser barreira) | Muito alto (100–500) |
+| Floresta secundária | Alta | Baixo (1-5) |
+| Silvicultura (eucalipto) | Média-alta | Baixo-médio (5-15) |
+| Pastagem com árvores | Média | Médio (20-40) |
+| Pastagem limpa | Baixa | Alto (40-80) |
+| Monocultura (soja, cana) | Muito baixa | Muito alto (60-100) |
+| Área urbana | Variável (pode ser barreira) | Muito alto (100-500) |
 | Rodovia pavimentada | Barreira | Máximo (1000) |
 
 : {.striped .hover}
@@ -209,11 +209,11 @@ A penetração do efeito depende do **tipo de efeito** e do **ecossistema**:
 
 | Efeito | Penetração típica |
 |--------|:---:|
-| Microclima (T, umidade) | 50–100 m |
-| Invasão de espécies | 100–200 m |
-| Mortalidade de árvores | 100–300 m |
-| Mudança na composição de aves | 200–500 m |
-| Alteração na ciclagem de nutrientes | 50–150 m |
+| Microclima (T, umidade) | 50-100 m |
+| Invasão de espécies | 100-200 m |
+| Mortalidade de árvores | 100-300 m |
+| Mudança na composição de aves | 200-500 m |
+| Alteração na ciclagem de nutrientes | 50-150 m |
 
 : {.striped .hover}
 
@@ -258,11 +258,11 @@ A teoria das **percolações** sugere que:
 
 - Quando a paisagem tem **≥ 60% de habitat**, a cobertura tende a ser **conectada** (contínua)
 - Abaixo de **~30%**, os fragmentos ficam **isolados** e a conectividade colapsa
-- Entre **30–60%**, a paisagem está numa zona crítica  -  pequenas mudanças provocam grandes efeitos
+- Entre **30-60%**, a paisagem está numa zona crítica  -  pequenas mudanças provocam grandes efeitos
 
 ### Limiar de extinção
 
-- Para muitas espécies, existir **20–30% de habitat** na paisagem é o **mínimo** para manter populações viáveis
+- Para muitas espécies, existir **20-30% de habitat** na paisagem é o **mínimo** para manter populações viáveis
 - Abaixo disso, a extinção local se torna provável ("dívida de extinção")
 
 > *"A fragmentação não é um problema linear  -  é um problema de limiares. Cruzar o limiar pode ser irreversível."*
@@ -302,7 +302,7 @@ A teoria das **percolações** sugere que:
 
 1. Mapa de **uso e cobertura** da terra (raster classificado)
 2. Definição da **classe de interesse** (habitat)
-3. Resolução adequada (pixel 10–30 m para escala de paisagem)
+3. Resolução adequada (pixel 10-30 m para escala de paisagem)
 
 > Na **Aula 17** trabalharemos com essas métricas em exercício prático.
 :::
@@ -495,12 +495,12 @@ Cada grupo apresenta um cenário. Compare:
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Conteúdo até aqui (Aulas 01–06)
+### Conteúdo até aqui (Aulas 01-06)
 
 1. **Conceito de paisagem**  -  polissemia, tradições, distinções
 2. **Evolução do conceito**  -  Humboldt → Troll → Sochava → Bertrand → Forman
 3. **Geossistema**  -  potencial ecológico + exploração biológica + ação antrópica
-4. **Ecologia da paisagem**  -  matriz–mancha–corredor
+4. **Ecologia da paisagem**  -  matriz-mancha-corredor
 5. **Escala**  -  extensão, grão, hierarquia, multiescalaridade
 6. **Padrão e processo**  -  relação bidirecional
 7. **Fluxos, bordas, fragmentação**  -  permeabilidade, efeito de borda, limiares

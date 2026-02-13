@@ -127,11 +127,11 @@ Duas manchas são consideradas **conectadas** se a distância entre elas for ≤
 
 | Organismo | $d_{max}$ típico |
 |-----------|:---:|
-| Aves florestais (pequenas) | 200–1000 m |
-| Mamíferos médios | 1–5 km |
-| Anfíbios | 100–500 m |
-| Insetos polinizadores | 500–2000 m |
-| Grandes mamíferos | 5–50 km |
+| Aves florestais (pequenas) | 200-1000 m |
+| Mamíferos médios | 1-5 km |
+| Anfíbios | 100-500 m |
+| Insetos polinizadores | 500-2000 m |
+| Grandes mamíferos | 5-50 km |
 
 : {.striped .hover}
 :::
@@ -240,7 +240,7 @@ Manchas com alto **dPC_connector** são *key stepping stones*  -  sua perda desc
 - Java ≥ 8 (JDK)
 - Mapa raster de uso da terra (.tif)
 - RAM: 4 GB mínimo (8 GB recomendado)
-- Resolução recomendada: 10–30 m
+- Resolução recomendada: 10-30 m
 
 ### Dados de entrada necessários
 
@@ -409,10 +409,10 @@ A partir da análise no Graphab:
 
 ## Referências {.smaller-text}
 
-- Saura, S., & Pascual-Hortal, L. (2007). A new habitat availability index to integrate connectivity in landscape conservation planning. *Landscape Ecology*, 22, 141–154.
-- Taylor, P. D., Fahrig, L., & Merriam, G. (1993). Connectivity is a vital element of landscape structure. *Oikos*, 68, 571–573.
-- Foltête, J. C., Clauzel, C., & Vuidel, G. (2012). A software tool dedicated to the modelling of landscape networks. *Environmental Modelling & Software*, 38, 316–327.
-- Saura, S., & Torné, J. (2009). Conefor Sensinode 2.2: A software package for quantifying the importance of habitat patches for landscape connectivity. *Environmental Modelling & Software*, 24(1), 135–139.
+- Saura, S., & Pascual-Hortal, L. (2007). A new habitat availability index to integrate connectivity in landscape conservation planning. *Landscape Ecology*, 22, 141-154.
+- Taylor, P. D., Fahrig, L., & Merriam, G. (1993). Connectivity is a vital element of landscape structure. *Oikos*, 68, 571-573.
+- Foltête, J. C., Clauzel, C., & Vuidel, G. (2012). A software tool dedicated to the modelling of landscape networks. *Environmental Modelling & Software*, 38, 316-327.
+- Saura, S., & Torné, J. (2009). Conefor Sensinode 2.2: A software package for quantifying the importance of habitat patches for landscape connectivity. *Environmental Modelling & Software*, 24(1), 135-139.
 - MapBiomas (2024). Projeto MapBiomas  -  Coleção 9. [mapbiomas.org](https://mapbiomas.org/)
 
 # {background-color="#034EA2"}

@@ -192,10 +192,10 @@ Map.addLayer(ndvi, paletaNDVI, 'NDVI');
 | Classe | Faixa | Cor na paleta |
 |--------|:-----:|:------------:|
 | Água/solo nu | < 0,1 | Vermelho |
-| Solo exposto / veg. rala | 0,1–0,2 | Laranja |
-| Pastagem degradada | 0,2–0,3 | Amarelo |
-| Pastagem / caatinga aberta | 0,3–0,5 | Verde claro |
-| Vegetação arbórea | 0,5–0,7 | Verde |
+| Solo exposto / veg. rala | 0,1-0,2 | Laranja |
+| Pastagem degradada | 0,2-0,3 | Amarelo |
+| Pastagem / caatinga aberta | 0,3-0,5 | Verde claro |
+| Vegetação arbórea | 0,5-0,7 | Verde |
 | Floresta densa | > 0,7 | Verde escuro |
 
 : {.striped .hover}

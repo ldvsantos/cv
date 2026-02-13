@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Estatística Descritiva"
 subtitle: "Medidas de Tendência Central e Dispersão<br>Análise de Dados Ambientais"
 author: "Luiz Diego Vidal Santos"
@@ -259,7 +259,7 @@ Escores variando de 94 a 162
 
 *n-**1*
 
-(xi – *-*x)2
+(xi - *-*x)2
 
 *S**2** **=*
 
@@ -290,7 +290,7 @@ MEDIDAS DE DISPERSÃO
 
 *n-**1*
 
-(xi – *-*x)
+(xi - *-*x)
 
 *S**2** **=*
 
@@ -336,7 +336,7 @@ ESCORE Z
 
 ## ESCORE Z {.smaller-text}
 
-Z = X – X
+Z = X - X
 
 *s*
 
@@ -363,7 +363,7 @@ Imagine uma variável cuja média é 20 e o desvio-padrão é 2
 
 Se uma repetição tem escore 22, ela está um DP acima da média, logo seu escore Z = 1;
 
-*Z** *= X – X  = 22 – 20 = 1
+*Z** *= X - X  = 22 - 20 = 1
 
 *_*
 
@@ -452,15 +452,15 @@ Pode ser calculado em diferentes probabilidades (usando escore *z*): 90%, 95%, 9
 
 90% = M + (**1,645**** **X EP)
 
-- Limite inferior: 126,35 – (1,645 X 4,61) = 118,76
+- Limite inferior: 126,35 - (1,645 X 4,61) = 118,76
 - Limite superior: 126,35 + (1,645 X 4,61) = 133,92
 95% = M + (**1,96**** **X EP)
 
-- Limite inferior: 126,35 – (1,96 X 4,61) = 117,30
+- Limite inferior: 126,35 - (1,96 X 4,61) = 117,30
 - Limite superior: 126,35 + (1,96 X 4,61) = 137,37
 99% = M + (**2,575**** **X EP)
 
-- Limite inferior: 126,35 – (2,575 X 4,61) = 114,46
+- Limite inferior: 126,35 - (2,575 X 4,61) = 114,46
 - Limite superior: 126,35 + (2,575 X 4,61) = 138,21
 .
 
@@ -493,7 +493,7 @@ INTERVALO DE CONFIANÇA
 
 90% = M + (**1,645**** **X EP)
 
-- Limite inferior: 126,34 – (1,645 X 4,61) = 118,76
+- Limite inferior: 126,34 - (1,645 X 4,61) = 118,76
 - Limite superior: 126,34 + (1,645 X 4,61) = 133,92
 Média e EP fora da média populacional
 

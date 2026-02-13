@@ -45,7 +45,7 @@ execute:
 ::: {.info-box}
 **Objetivo da Aula**
 
-Realizar um **Projeto Integrador** que aplique o repertório completo de técnicas de bioengenharia de solos aprendidas durante o curso a um **caso real ou fictício**, desenvolvendo um **Plano de Estabilização de Talude Complexo** com diagnóstico geotécnico, seleção fundamentada de técnicas, cronograma de execução, estimativa orçamentária e memorial técnico — simulando a atuação profissional de engenheiros e consultores ambientais.
+Realizar um **Projeto Integrador** que aplique o repertório completo de técnicas de bioengenharia de solos aprendidas durante o curso a um **caso real ou fictício**, desenvolvendo um **Plano de Estabilização de Talude Complexo** com diagnóstico geotécnico, seleção fundamentada de técnicas, cronograma de execução, estimativa orçamentária e memorial técnico - simulando a atuação profissional de engenheiros e consultores ambientais.
 :::
 :::
 :::
@@ -108,9 +108,9 @@ graph TD
 
 | Zona do talude | Técnica | Analogia |
 |---------------|---------|----------|
-| Base (pé) | Gabião vivo / Enrocamento | Fundação — "esqueleto" |
-| Corpo | Cordões + Feixes | Musculatura — "contenção" |
-| Superfície | Biomanta + Hidrossemeadura | Pele — "proteção" |
+| Base (pé) | Gabião vivo / Enrocamento | Fundação - "esqueleto" |
+| Corpo | Cordões + Feixes | Musculatura - "contenção" |
+| Superfície | Biomanta + Hidrossemeadura | Pele - "proteção" |
 | Drenagem | Espinha de peixe | Sistema circulatório |
 
 :::
@@ -123,19 +123,19 @@ graph TD
 ::: {.columns}
 ::: {.column width="50%"}
 
-![Erosão severa em encosta — ravinas e erosão laminar em paisagem semiárida (CSIRO, CC BY 3.0)](img/fig01_gully_erosion.jpg){width="100%"}
+![Erosão severa em encosta - ravinas e erosão laminar em paisagem semiárida (CSIRO, CC BY 3.0)](img/fig01_gully_erosion.jpg){width="100%"}
 
 :::{.smaller-text}
-Fonte: CSIRO Science Image — CC BY 3.0
+Fonte: CSIRO Science Image - CC BY 3.0
 :::
 :::
 
 ::: {.column width="50%"}
 
-![Erosão incipiente em voçoroca — exemplo de problema que requer intervenção integrada (CC BY-SA 2.0)](img/fig02_incipient_gully.jpg){width="100%"}
+![Erosão incipiente em voçoroca - exemplo de problema que requer intervenção integrada (CC BY-SA 2.0)](img/fig02_incipient_gully.jpg){width="100%"}
 
 :::{.smaller-text}
-Fonte: Geograph Britain — CC BY-SA 2.0
+Fonte: Geograph Britain - CC BY-SA 2.0
 :::
 :::
 :::
@@ -279,11 +279,11 @@ graph TD
 graph TD
     subgraph Talude["PERFIL DO TALUDE"]
         direction TB
-        A["ZONA A — CRISTA<br>Hidrossemeadura + Biomanta<br>Drenagem superficial"]
-        B["ZONA B — CORPO SUPERIOR<br>Cordões vegetativos<br>Feixes vivos"]
-        C["ZONA C — CORPO INFERIOR<br>Paliçadas (se ravinas)<br>Feixes + Drenagem"]
-        D["ZONA D — PÉ / BASE<br>Gabião vivo ou Krainer<br>Enrocamento vegetado"]
-        E["ZONA E — MARGEM / CANAL<br>Defletores, Brushlayering<br>(se houver curso d'água)"]
+        A["ZONA A - CRISTA<br>Hidrossemeadura + Biomanta<br>Drenagem superficial"]
+        B["ZONA B - CORPO SUPERIOR<br>Cordões vegetativos<br>Feixes vivos"]
+        C["ZONA C - CORPO INFERIOR<br>Paliçadas (se ravinas)<br>Feixes + Drenagem"]
+        D["ZONA D - PÉ / BASE<br>Gabião vivo ou Krainer<br>Enrocamento vegetado"]
+        E["ZONA E - MARGEM / CANAL<br>Defletores, Brushlayering<br>(se houver curso d'água)"]
     end
     A --> B
     B --> C
@@ -304,11 +304,11 @@ graph TD
 
 | Zona | Técnica primária | Complementar |
 |------|-----------------|-------------|
-| A — Crista | Hidrossemeadura | Biomanta, canaleta |
-| B — Corpo sup. | Cordões vegetativos | Biomanta entre cordões |
-| C — Corpo inf. | Feixes vivos (espinha de peixe) | Paliçadas (se ravina) |
-| D — Base | Gabião vivo ou Krainer | Enrocamento na fundação |
-| E — Margem | Enrocamento vegetado | Defletores, brushlayering |
+| A - Crista | Hidrossemeadura | Biomanta, canaleta |
+| B - Corpo sup. | Cordões vegetativos | Biomanta entre cordões |
+| C - Corpo inf. | Feixes vivos (espinha de peixe) | Paliçadas (se ravina) |
+| D - Base | Gabião vivo ou Krainer | Enrocamento na fundação |
+| E - Margem | Enrocamento vegetado | Defletores, brushlayering |
 
 ### Prioridade de execução
 
@@ -327,7 +327,7 @@ graph LR
 ```
 
 ::: {.highlight-box}
-⚠️ **Sempre comece pela drenagem e pela base**: estabilizar o pé do talude é a ação mais urgente — sem base, qualquer intervenção no corpo será comprometida.
+⚠️ **Sempre comece pela drenagem e pela base**: estabilizar o pé do talude é a ação mais urgente - sem base, qualquer intervenção no corpo será comprometida.
 :::
 :::
 :::
@@ -349,8 +349,8 @@ graph LR
 | 4 | Cordões vegetativos + feixes vivos (corpo) |
 | 5 | Hidrossemeadura + biomanta (superfície) |
 | 6 | Plantio complementar + mata ciliar |
-| 7–12 | Monitoramento mensal (1º semestre) |
-| 13–24 | Monitoramento bimestral (2º semestre) |
+| 7-12 | Monitoramento mensal (1º semestre) |
+| 13-24 | Monitoramento bimestral (2º semestre) |
 
 ### Fatores que afetam o cronograma
 
@@ -367,19 +367,19 @@ graph LR
 
 | Item | Unidade | Custo típico (R$) |
 |------|---------|-------------------|
-| Hidrossemeadura | m² | 8–15 |
-| Biomanta de coco | m² | 12–25 |
-| Enrocamento vegetado | m³ | 150–350 |
-| Cordão vegetativo | m | 30–60 |
-| Gabião vivo (1×1×2 m) | un. | 800–1.500 |
-| Parede Krainer | m³ | 200–500 |
-| Feixes vivos (dreno verde) | m | 50–100 |
-| Paliçada de bambu | m | 20–50 |
-| Defletores de tronco | un. | 500–2.000 |
-| Mata ciliar (muda + plantio) | un. | 15–30 |
+| Hidrossemeadura | m² | 8-15 |
+| Biomanta de coco | m² | 12-25 |
+| Enrocamento vegetado | m³ | 150-350 |
+| Cordão vegetativo | m | 30-60 |
+| Gabião vivo (1×1×2 m) | un. | 800-1.500 |
+| Parede Krainer | m³ | 200-500 |
+| Feixes vivos (dreno verde) | m | 50-100 |
+| Paliçada de bambu | m | 20-50 |
+| Defletores de tronco | un. | 500-2.000 |
+| Mata ciliar (muda + plantio) | un. | 15-30 |
 
 ::: {.highlight-box}
-💰 **Regra de estimativa**: a bioengenharia custa tipicamente **30–60%** de uma solução convencional equivalente (concreto, muro de arrimo) e oferece **benefícios ambientais** adicionais que podem ser valorizados em créditos de carbono e PSA.
+💰 **Regra de estimativa**: a bioengenharia custa tipicamente **30-60%** de uma solução convencional equivalente (concreto, muro de arrimo) e oferece **benefícios ambientais** adicionais que podem ser valorizados em créditos de carbono e PSA.
 :::
 :::
 :::
@@ -524,7 +524,7 @@ graph TD
 
 ### O que entregar
 
-**1. Memorial Descritivo** (PDF, 15–25 páginas):
+**1. Memorial Descritivo** (PDF, 15-25 páginas):
 
 - Diagnóstico (dados fornecidos + análise)
 - Árvore de decisão (justificativa das técnicas)
@@ -573,7 +573,7 @@ graph TD
 | 5 | Apresentação final |
 
 ::: {.highlight-box}
-👥 **Grupos**: 3–5 integrantes. **Entrega**: 1 semana antes da apresentação. **Formato**: PDF + DWG/QGIS.
+👥 **Grupos**: 3-5 integrantes. **Entrega**: 1 semana antes da apresentação. **Formato**: PDF + DWG/QGIS.
 :::
 :::
 :::
@@ -601,7 +601,7 @@ graph TD
 | Técnica isolada (sem sistema) | Integrar por zonas |
 | Sem cálculos | Incluir memorial mínimo |
 | Espécies não regionais | Consultar flora da Caatinga/Cerrado |
-| Cronograma sem estação chuvosa | Alinhar plantio com março–junho |
+| Cronograma sem estação chuvosa | Alinhar plantio com março-junho |
 | Orçamento inventado | Usar referências (SINAPI, fornecedores) |
 
 :::
@@ -644,9 +644,9 @@ graph TD
 - Gray, D. H. & Sotir, R. B. (1996). *Biotechnical and Soil Bioengineering Slope Stabilization*. Wiley.
 - Morgan, R. P. C. & Rickson, R. J. (1995). *Slope Stabilization and Erosion Control*. Spon.
 - Norris, J. E. et al. (2008). *Slope Stability and Erosion Control: Ecotechnological Solutions*. Springer.
-- Rey, F. et al. (2019). Soil and water bioengineering. *Science Total Env.*, 648, 1210–1218.
+- Rey, F. et al. (2019). Soil and water bioengineering. *Science Total Env.*, 648, 1210-1218.
 - Schiechtl, H. M. & Stern, R. (1996). *Ground Bioengineering Techniques*. Blackwell Science.
-- Stokes, A. et al. (2014). Ecological mitigation of hillslope instability. *Plant Soil*, 377, 1–23.
+- Stokes, A. et al. (2014). Ecological mitigation of hillslope instability. *Plant Soil*, 377, 1-23.
 - Zeh, H. (2007). *Soil Bioengineering Construction Type Manual*. EFIB/vdf.
 
 :::

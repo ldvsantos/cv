@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Testes de Qui-Quadrado"
 subtitle: "Teste de Independência e Aderência<br>Análise de Dados Ambientais"
 author: "Luiz Diego Vidal Santos"
@@ -127,11 +127,11 @@ Não pode haver categorias zeradas.
 
 Graus de liberdade
 
-Gl = *k** *– 1; gl = 1;
+Gl = *k** *- 1; gl = 1;
 
 Onde k = número de grupos
 
-Gl = *k** *– 1; gl = 1;
+Gl = *k** *- 1; gl = 1;
 
 Onde k = número de grupos
 
@@ -162,9 +162,9 @@ Gl = (g1)*(gl2) = 1x1
     - Para qui-quadrado com mais de duas (2) categorias
   - **Phi**
     - Tamanho de efeito para 2x2
-  - > 0,1 – efeito pequeno;
+  - > 0,1 - efeito pequeno;
   - > 0,3 - efeito moderado
-  - > 0,5 – efeito alto
+  - > 0,5 - efeito alto
 **Odds-****ratio**
 
   - Razão de chance que calcula a probabilidade de um sujeito pertencer a um grupo e não a outro.

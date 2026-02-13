@@ -110,11 +110,11 @@ Todo corpo com temperatura acima do zero absoluto **emite** radiação eletromag
 
 | Sensor/Satélite | Operador | Resolução espacial | Resolução temporal | Bandas | Uso típico |
 |----------------|----------|-------------------|-------------------|--------|-----------|
-| **Landsat 8/9** | USGS/NASA | 30 m (15 m Pan) | 16 dias | 11 | Série histórica (1984–) |
-| **Sentinel-2** | ESA (Copernicus) | 10–20 m | 5 dias | 13 | Uso/cobertura detalhado |
-| **CBERS-4A** | INPE/China | 2–64 m | 26 dias | Variável | Monitoramento regional |
-| **MODIS** | NASA | 250–1000 m | 1–2 dias | 36 | Monitoramento global |
-| **Planet** (comercial) | Planet Labs | 3–5 m | Diária | 4–8 | Alta frequência |
+| **Landsat 8/9** | USGS/NASA | 30 m (15 m Pan) | 16 dias | 11 | Série histórica (1984-) |
+| **Sentinel-2** | ESA (Copernicus) | 10-20 m | 5 dias | 13 | Uso/cobertura detalhado |
+| **CBERS-4A** | INPE/China | 2-64 m | 26 dias | Variável | Monitoramento regional |
+| **MODIS** | NASA | 250-1000 m | 1-2 dias | 36 | Monitoramento global |
+| **Planet** (comercial) | Planet Labs | 3-5 m | Diária | 4-8 | Alta frequência |
 | **Google Earth** | Google | Variável | Variável | RGB | Visualização e contexto |
 
 : {.striped .hover}
@@ -139,9 +139,9 @@ Tamanho do **pixel** no terreno.
 | Classe | Pixel | Exemplo |
 |--------|-------|---------|
 | Muito alta | < 1 m | Imagens comerciais (WorldView) |
-| Alta | 1–10 m | Sentinel-2 (10 m), Planet (3 m) |
-| Média | 10–100 m | Landsat (30 m) |
-| Baixa | > 100 m | MODIS (250–1000 m) |
+| Alta | 1-10 m | Sentinel-2 (10 m), Planet (3 m) |
+| Média | 10-100 m | Landsat (30 m) |
+| Baixa | > 100 m | MODIS (250-1000 m) |
 
 : {.striped .hover}
 
@@ -163,7 +163,7 @@ Intervalo entre revisitas ao mesmo ponto.
 
 Número e largura das **bandas** do sensor.
 
-- **Multiespectral** (4–13 bandas): Landsat, Sentinel-2
+- **Multiespectral** (4-13 bandas): Landsat, Sentinel-2
 - **Hiperespectral** (> 100 bandas): PRISMA, EnMAP
 - **Pancromática** (1 banda larga): fusão para nitidez
 
@@ -173,7 +173,7 @@ Número e largura das **bandas** do sensor.
 
 Número de **níveis de cinza** por pixel.
 
-- 8 bits → 256 níveis (0–255)
+- 8 bits → 256 níveis (0-255)
 - 12 bits → 4096 níveis
 - 16 bits → 65.536 níveis
 
@@ -309,7 +309,7 @@ $$NDBI = \frac{SWIR - NIR}{SWIR + NIR} = \frac{B11 - B8}{B11 + B8}$$
 
 O **MapBiomas** é a mais completa base de uso/cobertura da terra no Brasil:
 
-- **35+ anos** de série anual (1985–presente)
+- **35+ anos** de série anual (1985-presente)
 - Baseado em **Landsat** (30 m)
 - Classificação automática com **Random Forest**
 - Validação com ~75.000 amostras (acurácia global > 85%)
@@ -342,7 +342,7 @@ O **MapBiomas** é a mais completa base de uso/cobertura da terra no Brasil:
 
 - **Estiramento de histograma**  -  amplia o intervalo de cinza para melhorar visualização
 - **Equalização**  -  distribui uniformemente os valores de cinza
-- **Estiramento linear** entre percentis (2%–98%)
+- **Estiramento linear** entre percentis (2%-98%)
 
 ### Filtragem
 
@@ -419,7 +419,7 @@ Na próxima aula, faremos exercício de **identificação de feições** na áre
 - Ter conta no **Google Earth Engine** (solicitar acesso se necessário)
 - Revisar a **delimitação da área de estudo** (Aula 08)
 - Trazer os **limites da área** em formato shapefile ou GeoJSON
-- Livro de referência: Jensen (2000), cap. 1–4
+- Livro de referência: Jensen (2000), cap. 1-4
 :::
 :::
 :::

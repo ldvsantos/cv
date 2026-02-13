@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Análise Bi e Multivariada"
 subtitle: "Técnicas Multivariadas Completas<br>Análise de Dados Ambientais"
 author: "Luiz Diego Vidal Santos"
@@ -259,7 +259,7 @@ Escores variando de 94 a 162
 
 *n-**1*
 
-(xi – *-*x)2
+(xi - *-*x)2
 
 *S**2** **=*
 
@@ -290,7 +290,7 @@ MEDIDAS DE DISPERSÃO
 
 *n-**1*
 
-(xi – *-*x)
+(xi - *-*x)
 
 *S**2** **=*
 
@@ -336,7 +336,7 @@ ESCORE Z
 
 ## ESCORE Z {.smaller-text}
 
-Z = X – X
+Z = X - X
 
 *s*
 
@@ -363,7 +363,7 @@ Imagine uma variável cuja média é 20 e o desvio-padrão é 2
 
 Se uma repetição tem escore 22, ela está um DP acima da média, logo seu escore Z = 1;
 
-*Z** *= X – X  = 22 – 20 = 1
+*Z** *= X - X  = 22 - 20 = 1
 
 *_*
 
@@ -450,15 +450,15 @@ Pode ser calculado em diferentes probabilidades (usando escore *z*): 90%, 95%, 9
 
 90% = M + (**1,645**** **X EP)
 
-- Limite inferior: 126,35 – (1,645 X 4,61) = 118,76
+- Limite inferior: 126,35 - (1,645 X 4,61) = 118,76
 - Limite superior: 126,35 + (1,645 X 4,61) = 133,92
 95% = M + (**1,96**** **X EP)
 
-- Limite inferior: 126,35 – (1,96 X 4,61) = 117,30
+- Limite inferior: 126,35 - (1,96 X 4,61) = 117,30
 - Limite superior: 126,35 + (1,96 X 4,61) = 137,37
 99% = M + (**2,575**** **X EP)
 
-- Limite inferior: 126,35 – (2,575 X 4,61) = 114,46
+- Limite inferior: 126,35 - (2,575 X 4,61) = 114,46
 - Limite superior: 126,35 + (2,575 X 4,61) = 138,21
 .
 
@@ -491,7 +491,7 @@ INTERVALO DE CONFIANÇA
 
 90% = M + (**1,645**** **X EP)
 
-- Limite inferior: 126,34 – (1,645 X 4,61) = 118,76
+- Limite inferior: 126,34 - (1,645 X 4,61) = 118,76
 - Limite superior: 126,34 + (1,645 X 4,61) = 133,92
 Média e EP fora da média populacional
 
@@ -759,7 +759,7 @@ O efeito não existe
 
 ** probabilidade de detectar o efeito
 
-1 – 0,20 = 0,80.
+1 - 0,20 = 0,80.
 
 (Cohen, 1988, 1992)
 
@@ -798,7 +798,7 @@ BRS Vitória
 
 **Erro do Tipo ****I****: ****sig****. Alfa (****p****< 0,05)**
 
-**Erro do Tipo II: Poder [1 – beta(0,20)]: 0,80**
+**Erro do Tipo II: Poder [1 - beta(0,20)]: 0,80**
 
 **Tamanho de efeito: **
 
@@ -891,11 +891,11 @@ Média = 170; DP = 5,72
 
 Frequência (*n)*
 
-+-1 DP (68.3%) = [164,28– 175,72]
++-1 DP (68.3%) = [164,28- 175,72]
 
-+-2 DP (95,4%) = [158,56– 181,44]
++-2 DP (95,4%) = [158,56- 181,44]
 
-+-3 DP (99,7%) = [152,84 – 187,16]
++-3 DP (99,7%) = [152,84 - 187,16]
 
 
 ---
@@ -1150,8 +1150,8 @@ Cohen (1988, 1992)
 | Magnitude | Valor absoluto |
 | --- | --- |
 | Nula | 0,00 |
-| Fraca | |0,10 – 0,30| |
-| Moderada | |0,30 – 0,50| |
+| Fraca | |0,10 - 0,30| |
+| Moderada | |0,30 - 0,50| |
 | Forte | |> 0,50 | |
 
 
@@ -1165,9 +1165,9 @@ COEFICIENTE DE CORRELAÇÃO
 | Magnitude | Valor absoluto |
 | --- | --- |
 | Nula | 0,00 |
-| Fraca | |0,10 – 0,39| |
-| Moderada | |0,40 – 0,70| |
-| Forte | |0,70 – 0,80| |
+| Fraca | |0,10 - 0,39| |
+| Moderada | |0,40 - 0,70| |
+| Forte | |0,70 - 0,80| |
 | Muito Forte | |0,80 - 0,99| |
 | Perfeita | 1,00 |
 
@@ -1263,7 +1263,7 @@ CORRELAÇÃO PARAMÉTRICA VS NÃO-PARAMÉTRICA
 | Correlação de Pearson | Correlação de Spearman
 Kendall (Tau) |
 | --- | --- |
-| Paramétrica | Não–paramétrica |
+| Paramétrica | Não-paramétrica |
 | Quando usar |  |
 | Quando os dados têm distribuição normal | Quando os dados não tem distribuição normal |
 | Quando o número de participantes é alto | Útil também quando o número de participantes é baixo |
@@ -1382,7 +1382,7 @@ TIPO	ESPECIAL	DE	CORRELAÇÃO	(**PONTO**
 
 **BISSERIAL)**
 
-Utilizada  quando  se  pretende  avaliar  a  relação entre uma variável ordinal (ou escalar, ex: altura) com outra variável dicotômica (ex: sexo – masculino e feminino).
+Utilizada  quando  se  pretende  avaliar  a  relação entre uma variável ordinal (ou escalar, ex: altura) com outra variável dicotômica (ex: sexo - masculino e feminino).
 
 Serve  como  um  indício  para  saber  se  existem diferenças nos escores dos grupos em relação à variável de interesse.
 
@@ -1751,7 +1751,7 @@ MÚLTIPLA
 
 Independência entre as variáveis independentes (não deve haver muita multicolinearidade).
 
-  - Índice de tolerância: 1 – R².
+  - Índice de tolerância: 1 - R².
     - Deve ficar o mais próximo de 1,0 possível.
   - Multicolinearidade pode ser avaliada, também, através do VIF
     - Valores de VIF > 10 → Multicolinearidade
@@ -2162,7 +2162,7 @@ TESTE T ESTUDENTAMOSTRA ÚNICA
 
 **Exemplo**** ****prático:**
 
-O valor tabelado de *t** *depende do nível de significância (5%; *p** *< 0,05) e dos graus de liberdade, que dependem do tamanho da amostra (gl = n – 1 = 19).
+O valor tabelado de *t** *depende do nível de significância (5%; *p** *< 0,05) e dos graus de liberdade, que dependem do tamanho da amostra (gl = n - 1 = 19).
 
 Nesse exemplo, *t** *tabelado = 2,093
 
@@ -2557,9 +2557,9 @@ ANOVA *ONE-**WAY*
 
 Como se calcula a ANOVA
 
-Variância intragrupo (*within)** *– O quanto os repetições de cada grupo se diferem entre si
+Variância intragrupo (*within)** *- O quanto os repetições de cada grupo se diferem entre si
 
-Variância entre grupos (*between*) – O quanto os repetições dos diferentes grupos se diferem entre si
+Variância entre grupos (*between*) - O quanto os repetições dos diferentes grupos se diferem entre si
 
 
 ---
@@ -2680,7 +2680,7 @@ ANOVA	ONE-WAY
 
 * Um ponto importante:
 
-Gl da amostra = Número de repetições – número de grupos → (9-3) = 6
+Gl da amostra = Número de repetições - número de grupos → (9-3) = 6
 
 gl
 
@@ -2862,7 +2862,7 @@ MEDIDAS REPETIDAS
 
 ANOVA MEDIDAS REPETIDAS
 
-Assim como nas ANOVAS anteriores, o objetivo da ANOVA – MR continua sendo comparar médias.
+Assim como nas ANOVAS anteriores, o objetivo da ANOVA - MR continua sendo comparar médias.
 
 Entretanto, o escore a ser comparado não é entre diferentes grupos, mas sim de um único grupo comparado com si próprio.
 
@@ -2929,8 +2929,8 @@ ANOVA MEDIDAS REPETIDAS
 
 Correções ao pressuposto da esfericidade
 
-  - Greenhouse–Geisser: Esfericidade < 0.75
-  - Huynh–Feldt Esfericidade > 0.75
+  - Greenhouse-Geisser: Esfericidade < 0.75
+  - Huynh-Feldt Esfericidade > 0.75
 ANOVA MEDIDAS REPETIDAS
 
 
@@ -3263,15 +3263,15 @@ U = estatística a ser calculada;
 
 *2*
 
-*U**i** **=** **N**1**N**2** **+** **N**1** **(N**1** **+** **1)** **–** **R*
+*U**i** **=** **N**1**N**2** **+** **N**1** **(N**1** **+** **1)** **-** **R*
 
 *2*
 
 *A*
 
-*U** **=** **25** **+** **5(6)** **–** **22,5** **=** 17,5*
+*U** **=** **25** **+** **5(6)** **-** **22,5** **=** 17,5*
 
-*U**B** **=** **25** **+** **5(6)** **–** **32,5** **=** 7,5*
+*U**B** **=** **25** **+** **5(6)** **-** **32,5** **=** 7,5*
 
 *2*
 
@@ -3284,7 +3284,7 @@ DOIS GRUPOS INDEPENDENTES
 
 ## {.smaller-text}
 
-*U**B** **=** **25** **+** **5(6)** **–** **32,5** **=** 7,5*
+*U**B** **=** **25** **+** **5(6)** **-** **32,5** **=** 7,5*
 
 *2*
 

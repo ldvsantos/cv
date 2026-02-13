@@ -106,7 +106,7 @@ O processo de avaliação segue quatro etapas principais:
 
 - Distribui amostras proporcionalmente (ou fixas) por classe mapeada
 - **Mais adequada** para estudos com classes desbalanceadas
-- Recomendação: mínimo de **25–30 amostras** por classe (Congalton & Green, 2019)
+- Recomendação: mínimo de **25-30 amostras** por classe (Congalton & Green, 2019)
 :::
 
 ::: {.column width="50%"}
@@ -207,10 +207,10 @@ $$P_e = \frac{\sum_{i=1}^{k} (n_{i+} \times n_{+i})}{N^2}$$
 | Kappa | Qualidade |
 |-------|-----------|
 | < 0,20 | Ruim |
-| 0,21 – 0,40 | Razoável |
-| 0,41 – 0,60 | Moderada |
-| 0,61 – 0,80 | Boa |
-| 0,81 – 1,00 | Excelente |
+| 0,21 - 0,40 | Razoável |
+| 0,41 - 0,60 | Moderada |
+| 0,61 - 0,80 | Boa |
+| 0,81 - 1,00 | Excelente |
 
 : {.striped .hover}
 
@@ -262,7 +262,7 @@ Classificadores como **Random Forest** e **SVM** atribuem a cada pixel não apen
 Atribui a cada pixel o valor de probabilidade da classe com maior score. Indica a **confiança** da classificação:
 
 - Probabilidade alta (> 0,8) → classificação confiável
-- Probabilidade baixa (0,3–0,5) → pixel em área de transição ou confusão
+- Probabilidade baixa (0,3-0,5) → pixel em área de transição ou confusão
 :::
 
 ::: {.column width="50%"}
@@ -405,10 +405,10 @@ Map.addLayer(prob_max, {min: 0.3, max: 1.0,
 ## Referências {.smaller-text}
 
 - Congalton, R. G., & Green, K. (2019). *Assessing the Accuracy of Remotely Sensed Data*, 3ª ed. CRC Press.
-- Foody, G. M. (2002). Status of land cover classification accuracy assessment. *Remote Sensing of Environment*, 80(1), 185–201.
-- Pontius, R. G., & Millones, M. (2011). Death to Kappa. *Int. J. Remote Sensing*, 32(21), 6321–6338.
-- Landis, J. R., & Koch, G. G. (1977). The measurement of observer agreement for categorical data. *Biometrics*, 33, 159–174.
-- Gorelick, N. et al. (2017). Google Earth Engine. *Remote Sensing of Environment*, 202, 18–27.
+- Foody, G. M. (2002). Status of land cover classification accuracy assessment. *Remote Sensing of Environment*, 80(1), 185-201.
+- Pontius, R. G., & Millones, M. (2011). Death to Kappa. *Int. J. Remote Sensing*, 32(21), 6321-6338.
+- Landis, J. R., & Koch, G. G. (1977). The measurement of observer agreement for categorical data. *Biometrics*, 33, 159-174.
+- Gorelick, N. et al. (2017). Google Earth Engine. *Remote Sensing of Environment*, 202, 18-27.
 
 # {background-color="#034EA2"}
 

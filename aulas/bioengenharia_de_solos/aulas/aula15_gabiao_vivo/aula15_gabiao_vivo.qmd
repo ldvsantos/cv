@@ -66,7 +66,7 @@ O **gabião vivo** (*vegetated gabion*) é uma estrutura de contenção composta
 - **Solo fértil** ao redor dos ramos para facilitar o enraizamento
 
 ::: {.highlight-box}
-💡 A grande inovação é o **ciclo de substituição**: o arame resiste de imediato (5–15 anos), mas inevitavelmente corrói. Nesse ínterim, as **raízes** crescem, entrelaçam as pedras e **assumem a função estrutural** que o arame deixa de cumprir.
+💡 A grande inovação é o **ciclo de substituição**: o arame resiste de imediato (5-15 anos), mas inevitavelmente corrói. Nesse ínterim, as **raízes** crescem, entrelaçam as pedras e **assumem a função estrutural** que o arame deixa de cumprir.
 :::
 
 ### Princípio da transição
@@ -106,19 +106,19 @@ graph LR
 ::: {.columns}
 ::: {.column width="50%"}
 
-![Gabiões protegendo margem do Rio North Esk — Escócia (CC BY-SA 2.0)](img/fig01_gabion_river.jpg){width="100%"}
+![Gabiões protegendo margem do Rio North Esk - Escócia (CC BY-SA 2.0)](img/fig01_gabion_river.jpg){width="100%"}
 
 :::{.smaller-text}
-Foto: Morley Sewell — CC BY-SA 2.0
+Foto: Morley Sewell - CC BY-SA 2.0
 :::
 :::
 
 ::: {.column width="50%"}
 
-![Gabiões reparando margem do Rio Medway — Inglaterra (CC BY-SA 2.0)](img/fig02_gabion_medway.jpg){width="100%"}
+![Gabiões reparando margem do Rio Medway - Inglaterra (CC BY-SA 2.0)](img/fig02_gabion_medway.jpg){width="100%"}
 
 :::{.smaller-text}
-Foto: Nigel Chadwick — CC BY-SA 2.0
+Foto: Nigel Chadwick - CC BY-SA 2.0
 :::
 :::
 :::
@@ -142,7 +142,7 @@ Foto: Nigel Chadwick — CC BY-SA 2.0
 |-------|--------|
 | EN 10223-3 | Tela de arame hexagonal |
 | ASTM A975 | Gabiões e colchões Reno |
-| ABNT NBR 10514 | Gabiões — Requisitos |
+| ABNT NBR 10514 | Gabiões - Requisitos |
 | DNIT 082/2006-ES | Gabião em obras rodoviárias |
 
 :::
@@ -154,7 +154,7 @@ Foto: Nigel Chadwick — CC BY-SA 2.0
 | Aspecto | Gabião convencional | Gabião vivo |
 |---------|-------------------|-------------|
 | Estabilidade imediata | ★★★★★ | ★★★★★ |
-| Durabilidade do arame | 15–30 anos | **Irrelevante** (raízes assumem) |
+| Durabilidade do arame | 15-30 anos | **Irrelevante** (raízes assumem) |
 | Custo de manutenção | Substituição de arame | **Zero** (autossustentável) |
 | Impacto ambiental | Neutro | **Positivo** |
 | Habitat para fauna | Mínimo | ★★★★★ |
@@ -178,15 +178,15 @@ Foto: Nigel Chadwick — CC BY-SA 2.0
 - Gaiolas: tela hexagonal dupla torção (galvanizada + PVC)
 - Preenchimento: pedras britadas (D > 1,5 × malha)
 - Função: **peso próprio** resiste ao empuxo do solo
-- Vida útil: 30–50 anos (revestimento PVC)
+- Vida útil: 30-50 anos (revestimento PVC)
 - Sem componente biológico
 - Flexível (adapta a recalques)
 
 ### Gabião vivo
 
 - Mesma estrutura base do convencional
-- **Camadas de ramos vivos** a cada 1–2 fiadas
-- **Solo fértil** envolvendo os ramos (5–10 cm)
+- **Camadas de ramos vivos** a cada 1-2 fiadas
+- **Solo fértil** envolvendo os ramos (5-10 cm)
 - Função: **peso próprio + coesão radicular**
 - Vida útil: **ilimitada** (sistema vivo autorrenovável)
 - Flexível + autorreparável
@@ -201,16 +201,16 @@ Foto: Nigel Chadwick — CC BY-SA 2.0
 %%| fig-width: 5
 graph TD
     subgraph Convencional["Gabião Convencional"]
-        A1["Fiada 3 — Pedras"]
-        A2["Fiada 2 — Pedras"]
-        A3["Fiada 1 — Pedras"]
+        A1["Fiada 3 - Pedras"]
+        A2["Fiada 2 - Pedras"]
+        A3["Fiada 1 - Pedras"]
     end
     subgraph Vivo["Gabião Vivo"]
-        B1["Fiada 3 — Pedras"]
+        B1["Fiada 3 - Pedras"]
         B2["🌿 Camada de ramos vivos"]
-        B3["Fiada 2 — Pedras"]
+        B3["Fiada 2 - Pedras"]
         B4["🌿 Camada de ramos vivos"]
-        B5["Fiada 1 — Pedras"]
+        B5["Fiada 1 - Pedras"]
     end
     style A1 fill:#8B4513,color:#fff
     style A2 fill:#8B4513,color:#fff
@@ -245,14 +245,14 @@ graph TD
 | Fio | Ø 2,7 mm (alma) + revestimento |
 | Revestimento | Galfan + PVC (5 mm externo) |
 | Malha | 8 × 10 cm ou 6 × 8 cm |
-| Resistência | 40–50 kN m⁻¹ |
+| Resistência | 40-50 kN m⁻¹ |
 
 **Pedras de preenchimento:**
 
 | Parâmetro | Especificação |
 |-----------|--------------|
 | Dimensão mínima | 1,5 × abertura da malha |
-| Dimensão típica | 10–25 cm |
+| Dimensão típica | 10-25 cm |
 | Dureza (Mohs) | > 5 |
 | Absorção de água | < 5% |
 | Resistência compressão | > 50 MPa |
@@ -267,9 +267,9 @@ graph TD
 
 | Parâmetro | Especificação |
 |-----------|--------------|
-| Diâmetro | 1–5 cm |
-| Comprimento | 80–150 cm |
-| Projeção externa | 20–30 cm além da face |
+| Diâmetro | 1-5 cm |
+| Comprimento | 80-150 cm |
+| Projeção externa | 20-30 cm além da face |
 | Espécies | Propagação por estaquia |
 | Coleta | Período de dormência |
 
@@ -279,11 +279,11 @@ graph TD
 |-----------|--------------|
 | Tipo | Franco ou franco-argiloso |
 | Matéria orgânica | > 3% |
-| pH | 5,5 – 7,0 |
-| Espessura da camada | 5–10 cm |
+| pH | 5,5 - 7,0 |
+| Espessura da camada | 5-10 cm |
 
 ::: {.highlight-box}
-🪨 Os ramos vivos devem **projetar-se 20–30 cm** além da face externa do gabião para garantir exposição ao sol e chuva, favorecendo a brotação e o crescimento.
+🪨 Os ramos vivos devem **projetar-se 20-30 cm** além da face externa do gabião para garantir exposição ao sol e chuva, favorecendo a brotação e o crescimento.
 :::
 :::
 :::
@@ -334,16 +334,16 @@ $$K_a = \tan^2\left(45° - \frac{\phi}{2}\right)$$
 
 $$W = \gamma_{gab} \times V_{gab}$$
 
-Onde $\gamma_{gab}$ ≈ 16–18 kN m⁻³ (pedra + vazios + solo)
+Onde $\gamma_{gab}$ ≈ 16-18 kN m⁻³ (pedra + vazios + solo)
 
 ### Dimensionamento típico
 
 | Altura | Base mínima | Nº de fiadas |
 |--------|-------------|-------------|
-| 1,0 m | 0,5–1,0 m | 1 |
-| 2,0 m | 1,0–1,5 m | 2 |
-| 3,0 m | 1,5–2,5 m | 3 |
-| 4,0 m | 2,0–3,0 m | 4 |
+| 1,0 m | 0,5-1,0 m | 1 |
+| 2,0 m | 1,0-1,5 m | 2 |
+| 3,0 m | 1,5-2,5 m | 3 |
+| 4,0 m | 2,0-3,0 m | 4 |
 
 ::: {.highlight-box}
 📐 As camadas vegetais **não alteram significativamente o peso próprio**, mas adicionam **coesão radicular** ($c_r$) ao longo do tempo, melhorando progressivamente a estabilidade.
@@ -380,11 +380,11 @@ graph TD
 
 ### Regras de intercalação
 
-- Camada vegetal **a cada 0,5–1,0 m** de altura
+- Camada vegetal **a cada 0,5-1,0 m** de altura
 - Ramos dispostos **perpendiculares à face** do gabião
-- Pontas projetadas **20–30 cm** além da face externa
-- Solo fértil **5–10 cm** ao redor dos ramos
-- **10–15 ramos** por metro linear de gabião
+- Pontas projetadas **20-30 cm** além da face externa
+- Solo fértil **5-10 cm** ao redor dos ramos
+- **10-15 ramos** por metro linear de gabião
 
 :::
 
@@ -456,17 +456,17 @@ graph TD
 | Etapa | Tempo estimado |
 |-------|---------------|
 | Fundação (10 m) | 1 dia |
-| Montagem + preenchimento (1 fiada, 10 m) | 1–2 dias |
+| Montagem + preenchimento (1 fiada, 10 m) | 1-2 dias |
 | Camada vegetal (10 m) | 0,5 dia |
 | Fechamento + reaterro (10 m) | 1 dia |
-| **Total para muro 2 m × 10 m** | **5–7 dias** |
+| **Total para muro 2 m × 10 m** | **5-7 dias** |
 
 ### Equipe típica
 
 | Função | Quantidade |
 |--------|-----------|
 | Encarregado | 1 |
-| Operários (gabião) | 4–6 |
+| Operários (gabião) | 4-6 |
 | Técnico agrícola (vegetação) | 1 |
 | Operador de máquina | 1 |
 
@@ -487,8 +487,8 @@ graph TD
 
 | Fase | Período | Descrição |
 |------|---------|-----------|
-| **Estrutural** | 0–5 anos | Arame sustenta; raízes crescem |
-| **Transição** | 5–15 anos | Arame corrói; raízes assumem |
+| **Estrutural** | 0-5 anos | Arame sustenta; raízes crescem |
+| **Transição** | 5-15 anos | Arame corrói; raízes assumem |
 | **Biológica** | 15+ anos | Raízes dominam; gabião "desaparece" |
 
 ### Mecanismos de reforço radicular
@@ -501,7 +501,7 @@ As raízes contribuem para a estabilidade de três formas:
 
 $$\tau_f = c + c_r + (\sigma - u) \tan \phi$$
 
-Onde $c_r$ = reforço de coesão pelas raízes (5–25 kPa, depende da espécie/densidade).
+Onde $c_r$ = reforço de coesão pelas raízes (5-25 kPa, depende da espécie/densidade).
 
 :::
 
@@ -527,7 +527,7 @@ graph TD
 🔄 Este é o princípio fundamental da **engenharia natural**: a estrutura construída é **temporária e biodegradável**, mas cumpre sua função até que o **componente biológico** a substitua permanentemente.
 :::
 
-> Estudos na Suíça demonstraram que gabiões vivos com *Salix* atingem **coesão radicular de 15–25 kPa** em 5 anos, suficiente para manter a estabilidade após a corrosão total do arame (Böll et al., 2009).
+> Estudos na Suíça demonstraram que gabiões vivos com *Salix* atingem **coesão radicular de 15-25 kPa** em 5 anos, suficiente para manter a estabilidade após a corrosão total do arame (Böll et al., 2009).
 :::
 :::
 
@@ -544,7 +544,7 @@ graph TD
 1. **Gabião vivo** = gabião convencional + camadas de ramos vivos intercalados
 2. O **arame** fornece resistência imediata; as **raízes** assumem a longo prazo
 3. O **projeto estrutural** segue as mesmas verificações de muro de gravidade
-4. Ramos vivos projetam-se **20–30 cm** além da face externa
+4. Ramos vivos projetam-se **20-30 cm** além da face externa
 5. A **coesão radicular** ($c_r$) substitui a função do arame corroído
 6. O resultado final é um **ecossistema autossustentável** que substitui a engenharia
 :::
@@ -575,7 +575,7 @@ graph TD
 :::
 :::
 
-## Atividade prática — Projeto de gabião vivo {.smaller-text}
+## Atividade prática - Projeto de gabião vivo {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
@@ -619,15 +619,15 @@ graph TD
 
 ::: {.smaller-text}
 
-- ABNT (2018). NBR 10514:2018 — Gabiões e colchões Reno — Requisitos.
-- Böll, A. et al. (2009). Root reinforcement and slope stability — A practical review. *Swiss Federal Institute for Forest, Snow and Landscape Research WSL*.
-- DNIT (2006). DNIT 082/2006 – ES: Gabião. Departamento Nacional de Infraestrutura de Transportes.
+- ABNT (2018). NBR 10514:2018 - Gabiões e colchões Reno - Requisitos.
+- Böll, A. et al. (2009). Root reinforcement and slope stability - A practical review. *Swiss Federal Institute for Forest, Snow and Landscape Research WSL*.
+- DNIT (2006). DNIT 082/2006 - ES: Gabião. Departamento Nacional de Infraestrutura de Transportes.
 - Gray, D. H. & Sotir, R. B. (1996). *Biotechnical and Soil Bioengineering Slope Stabilization*. John Wiley & Sons.
-- Maccaferri (2019). *Gabiões e Muros de Solo Reforçado — Manual Técnico*. Officine Maccaferri S.p.A.
+- Maccaferri (2019). *Gabiões e Muros de Solo Reforçado - Manual Técnico*. Officine Maccaferri S.p.A.
 - Norris, J. E. et al. (2008). *Slope Stability and Erosion Control: Ecotechnological Solutions*. Springer.
-- Palmeira, E. M. & Tatto, J. (2015). Performance of gabiões as retaining structures. *Geotech. Geol. Engineering*, 33(4), 973–985.
+- Palmeira, E. M. & Tatto, J. (2015). Performance of gabiões as retaining structures. *Geotech. Geol. Engineering*, 33(4), 973-985.
 - Schiechtl, H. M. & Stern, R. (1996). *Ground Bioengineering Techniques*. Blackwell Science.
-- Stokes, A. et al. (2009). Desirable plant root traits for protecting natural and engineered slopes. *Plant Soil*, 324, 1–30.
+- Stokes, A. et al. (2009). Desirable plant root traits for protecting natural and engineered slopes. *Plant Soil*, 324, 1-30.
 
 :::
 

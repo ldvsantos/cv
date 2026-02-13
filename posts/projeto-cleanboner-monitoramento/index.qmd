@@ -17,7 +17,7 @@ O monitoramento ambiental no Semiárido brasileiro opera sob restrições severa
 O CLEANBONER opera em três camadas funcionais interconectadas. A camada de aquisição integra sensores de temperatura, umidade do solo e do ar, precipitação e radiação solar em uma estação compacta alimentada por painel fotovoltaico com bateria de backup. A camada de transmissão utiliza protocolos de baixo consumo energético para envio de pacotes de dados a intervalos configuráveis, com buffer local para operação em modo offline durante períodos de indisponibilidade de rede. A camada de análise recebe os dados em plataforma baseada em nuvem, aplica filtros de qualidade e algoritmos de detecção de anomalias, e disponibiliza painéis de visualização em tempo real para pesquisadores e gestores.
 
 ::: {layout-ncol=2}
-![Componentes do sistema CLEANBONER — sensores e hardware de aquisição](../../img/Cleanboiler_2.jpeg){fig-alt="Componentes do sistema CLEANBONER"}
+![Componentes do sistema CLEANBONER - sensores e hardware de aquisição](../../img/Cleanboiler_2.jpeg){fig-alt="Componentes do sistema CLEANBONER"}
 
 ![Estação CLEANBONER instalada em campo com painel solar e caixa de sensores](../../img/Cleanboiler_3.jpeg){fig-alt="Estação CLEANBONER em campo"}
 :::
@@ -26,7 +26,7 @@ O CLEANBONER opera em três camadas funcionais interconectadas. A camada de aqui
 
 O sistema tem sido testado como ferramenta de avaliação de desempenho das Soluções Baseadas na Natureza implementadas no Baixo São Francisco. Ao registrar continuamente variáveis como umidade do solo sob geossintéticos, escoamento superficial em parcelas experimentais e temperatura na interface solo-geotêxtil, o CLEANBONER permite quantificar a eficiência das intervenções com resolução temporal que métodos manuais não alcançam. A integração dos dados com modelos de balanço hídrico de parcela converte observações pontuais em estimativas distribuídas de desempenho.
 
-![Área de monitoramento CLEANBONER — coleta de dados em campo no Semiárido](../../img/Cleanboiler_4.jpeg){fig-alt="Área de monitoramento CLEANBONER em campo" width="80%"}
+![Área de monitoramento CLEANBONER - coleta de dados em campo no Semiárido](../../img/Cleanboiler_4.jpeg){fig-alt="Área de monitoramento CLEANBONER em campo" width="80%"}
 
 ## Resultados e perspectivas
 

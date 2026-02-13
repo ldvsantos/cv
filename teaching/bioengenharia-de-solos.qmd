@@ -1,0 +1,241 @@
+---
+title: "Bioengenharia de Solos"
+description: "Ambiente virtual da disciplina de Bioengenharia de Solos — aulas, leituras, vídeos e recursos complementares."
+---
+
+::: {.text-end .mb-3}
+[← Voltar para Ensino](index.qmd)
+:::
+
+```{=html}
+<div class="ava-header">
+  <div class="ava-icon"><i class="fa-solid fa-mound"></i></div>
+  <div>
+    <h2 class="ava-title">Bioengenharia de Solos</h2>
+    <p class="ava-subtitle">Técnicas de estabilização de encostas e margens com vegetação e materiais naturais, integrando engenharia geotécnica e ecológica para controle de erosão e restauração de áreas degradadas.</p>
+    <div class="ava-stats">
+      <span class="ava-stat"><i class="fa-solid fa-display"></i> 18 aulas</span>
+      <span class="ava-stat"><i class="fa-solid fa-book"></i> Leituras</span>
+      <span class="ava-stat"><i class="fa-solid fa-video"></i> Vídeos</span>
+    </div>
+  </div>
+</div>
+```
+
+::: {.callout-note collapse="true" icon=false}
+## {{< fa clipboard-list >}} Ementa da Disciplina
+
+Classificação e propriedades dos solos; processos erosivos; declividade e equipamentos; controle de erosão hídrica e terraceamento; canais escoadouros (teoria e prática); modelagem 3D de sistemas radiculares; paliçadas para controle de ravinas; bacias de captação (barraginhas); feixes vivos e drenos verdes; hidrossemeadura; biomantas e geossintéticos biodegradáveis; enrocamento vegetado; cordões vegetativos e fascinas; gabião vivo; parede Krainer e riprap; bioengenharia fluvial avançada; projeto integrador.
+:::
+
+---
+
+::: {.panel-tabset}
+
+### {{< fa display >}} Aulas
+
+```{=html}
+<div class="slide-grid">
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula01_o_solo/aula01_o_solo.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 01 | O Solo</h4>
+<p>Classificação e propriedades dos solos brasileiros.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula02_solo_erosao/aula02_solo_erosao.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 02 | Solo e Erosão</h4>
+<p>Processos erosivos e fatores condicionantes.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula03_declividade_equipamentos/aula03_declividade_equipamentos.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 03 | Declividade | Equipamentos</h4>
+<p>Aspectos metodológicos e instrumentos de medição.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula04_controle_erosao_hidrica/aula04_controle_erosao_hidrica.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 04 | Controle de Erosão Hídrica</h4>
+<p>Práticas mecânicas e terraceamento.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula05_canal_escoadouro_teoria/aula05_canal_escoadouro_teoria.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 05 | Canal Escoadouro | Teoria</h4>
+<p>Dimensionamento e cálculo de canais escoadouros.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula06_canal_escoadouro_pratica/aula06_canal_escoadouro_pratica.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 06 | Canal Escoadouro | Passo a Passo</h4>
+<p>Exercício prático de cálculo e construção.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula07_modelagem_3d_raizes/aula07_modelagem_3d_raizes.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 07 | Modelagem 3D de Sistemas Radiculares</h4>
+<p>Fotogrametria e CloudCompare para controle de erosão.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula08_palicadas_controle_ravinas/aula08_palicadas_controle_ravinas.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 08 | Paliçadas para Controle de Ravinas</h4>
+<p>Conceito, instalação e manutenção de check dams de bambu.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula09_bacias_captacao/aula09_bacias_captacao.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 09 | Bacias de Captação (Barraginhas)</h4>
+<p>Dimensionamento e monitoramento de barraginhas em estradas rurais.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula10_feixes_vivos/aula10_feixes_vivos.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 10 | Feixes Vivos e Drenos Verdes</h4>
+<p>Técnicas de bioengenharia vegetativa e sistema de drenagem com feixes vivos.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula11_hidrossemeadura/aula11_hidrossemeadura.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 11 | Hidrossemeadura e Coberturas Projetadas</h4>
+<p>Revegetação rápida de grandes áreas com projeção hidráulica de sementes.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula12_biomantas/aula12_biomantas.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 12 | Biomantas e Geossintéticos Biodegradáveis</h4>
+<p>Proteção de superfície e controle de erosão laminar com biomantas.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula13_enrocamento_vegetado/aula13_enrocamento_vegetado.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 13 | Enrocamento Vegetado</h4>
+<p>Pedras vivas e estabilização de margens com enrocamento vegetado.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula14_cordoes_vegetativos/aula14_cordoes_vegetativos.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 14 | Cordões Vegetativos e Fascinas de Contenção</h4>
+<p>Controle de escoamento em encostas com cordões vegetativos.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula15_gabiao_vivo/aula15_gabiao_vivo.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 15 | Gabião Vivo</h4>
+<p>Estabilização estrutural com engenharia natural e gabiões vegetados.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula16_parede_krainer/aula16_parede_krainer.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 16 | Parede Krainer e Riprap</h4>
+<p>Contenção de encostas com troncos e vegetação (log-crib wall) e enrocamento para proteção de margens.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula17_bioengenharia_fluvial/aula17_bioengenharia_fluvial.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 17 | Bioengenharia Fluvial Avançada</h4>
+<p>Técnicas para cursos d'água e matas ciliares.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/bioengenharia_de_solos/aulas/aula18_projeto_integrador/aula18_projeto_integrador.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 18 | Projeto Integrador</h4>
+<p>Plano de estabilização de talude complexo com múltiplas técnicas de bioengenharia.</p>
+</div>
+</a>
+
+</div>
+```
+
+### {{< fa book >}} Biblioteca
+
+Leituras recomendadas, artigos científicos e capítulos de livro para aprofundamento nos temas abordados em aula.
+
+```{=html}
+<div class="resource-grid">
+
+<a class="resource-card" href="https://www.nrcs.usda.gov/" target="_blank">
+<div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
+<div class="res-info">
+<h4>USDA-NRCS (1996) Streambank and Shoreline Protection</h4>
+<p>EFH Part 650, Ch. 16 — referência clássica em proteção de margens e linhas de costa.</p>
+</div>
+</a>
+
+<a class="resource-card" href="https://www.nrcs.usda.gov/" target="_blank">
+<div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
+<div class="res-info">
+<h4>USDA-NRCS (2007) Streambank Soil Bioengineering</h4>
+<p>NEH Part 654 — manual técnico de bioengenharia de solos para margens fluviais.</p>
+</div>
+</a>
+
+</div>
+```
+
+::: {.callout-tip collapse="true" icon=false}
+## {{< fa plus-circle >}} Como sugerir uma leitura?
+
+Se você encontrou um artigo ou material relevante para a disciplina, envie pelo [e-mail do professor](mailto:ldvsantos@uefs.br) com o assunto "Sugestão de leitura — Bioengenharia".
+:::
+
+### {{< fa video >}} Videoaulas
+
+Aulas gravadas, demonstrações práticas e conteúdos complementares em vídeo.
+
+```{=html}
+<div class="ava-empty">
+  <i class="fa-solid fa-video"></i>
+  Em breve. As videoaulas estão sendo produzidas e serão disponibilizadas aqui.
+</div>
+```
+
+### {{< fa link >}} Recursos
+
+Links úteis, repositórios, ferramentas e bases de dados para a disciplina.
+
+| Recurso | Descrição | Link |
+|---------|-----------|------|
+| Repositório GitHub | Slides e materiais da disciplina | [aulas/bioengenharia_de_solos](https://github.com/ldvsantos/cv/tree/main/aulas/bioengenharia_de_solos) |
+| USDA-NRCS | Manuais de conservação de solos | [nrcs.usda.gov](https://www.nrcs.usda.gov/) |
+| EFIB | European Federation for Soil Bioengineering | [efib.org](https://www.efib.org/) |
+
+: {.striped .hover}
+
+:::

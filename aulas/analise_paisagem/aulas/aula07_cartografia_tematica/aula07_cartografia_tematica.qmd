@@ -101,7 +101,7 @@ Mapas simples com interpretação fundamentada → bom trabalho.
 ### Mapa de declividade
 
 - Representa o **gradiente de inclinação** do terreno
-- Classes comuns: 0–3% (plano), 3–8% (suave-ondulado), 8–20% (ondulado), 20–45% (forte-ondulado), >45% (montanhoso/escarpado)
+- Classes comuns: 0-3% (plano), 3-8% (suave-ondulado), 8-20% (ondulado), 20-45% (forte-ondulado), >45% (montanhoso/escarpado)
 - Fundamental para: aptidão agrícola, risco de erosão, restrição à ocupação
 :::
 
@@ -201,7 +201,7 @@ Classifica cada porção do território por sua **cobertura** (vegetação, águ
 
 | Fonte | Resolução | Cobertura |
 |-------|:---:|:---:|
-| **MapBiomas** | 30 m | Brasil, 1985–2023 |
+| **MapBiomas** | 30 m | Brasil, 1985-2023 |
 | **PRODES** (INPE) | 30 m | Amazônia, Cerrado |
 | **TerraClass** | 30 m | Amazônia |
 | **ESA WorldCover** | 10 m | Global |
@@ -270,7 +270,7 @@ Cruzar mapas sem **interpretação** produz apenas colagens. O geógrafo/analist
 
 | Base | Dado | URL |
 |------|------|-----|
-| **MapBiomas** | Uso/cobertura 1985–2023, 30 m | mapbiomas.org |
+| **MapBiomas** | Uso/cobertura 1985-2023, 30 m | mapbiomas.org |
 | **TOPODATA** | MDE, declividade, 30 m | topodata.inpe.br |
 | **IBGE** | Bases cartográficas, censos, malha | ibge.gov.br/geociencias |
 | **ANA** | Bacias, hidrografia, outorgas | snirh.gov.br |
@@ -356,7 +356,7 @@ Utilizando projeção/tela com acesso ao **MapBiomas** e ao **Google Earth**:
 2. **Tipos de mapas**  -  hipsométrico, declividade, drenagem, uso/cobertura, geomorfológico
 3. **Leitura de relevo**  -  posição topográfica, dissecação, declividade e aptidão
 4. **Leitura de drenagem**  -  padrões, hierarquia, densidade, bacia como unidade
-5. **Leitura de uso/cobertura**  -  base para análise de matriz–mancha–corredor
+5. **Leitura de uso/cobertura**  -  base para análise de matriz-mancha-corredor
 6. **Leitura integrada**  -  cruzamento de camadas para identificar relações
 7. **Bases públicas**  -  MapBiomas, TOPODATA, ANA, IBGE, GEE, SICAR
 :::

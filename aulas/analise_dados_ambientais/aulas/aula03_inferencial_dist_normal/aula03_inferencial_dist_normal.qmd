@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Estatística Inferencial e Distribuição Normal"
 subtitle: "Fundamentos da Inferência Estatística<br>Análise de Dados Ambientais"
 author: "Luiz Diego Vidal Santos"
@@ -223,7 +223,7 @@ O efeito não existe
 
 ** probabilidade de detectar o efeito
 
-1 – 0,20 = 0,80.
+1 - 0,20 = 0,80.
 
 (Cohen, 1988, 1992)
 
@@ -310,7 +310,7 @@ TAMANHO DA AMOSTRA
   - **Erro Tipo II**
   - **Efeito não existe quando na verdade existe.**
   - **Poder amostral**
-    - Poder = 1 – Beta (Prob. de Erro Tipo II) (1 – 0,20) = 0,80
+    - Poder = 1 - Beta (Prob. de Erro Tipo II) (1 - 0,20) = 0,80
 
 ---
 
@@ -326,7 +326,7 @@ O 𝑑𝑧​  é uma medida padronizada da diferença entre duas condições em
 
   - Efeito existe quando na verdade não: (a = 0,05)
   - **Poder amostral**
-    - Poder = 1 – Beta (Prob. de Erro Tipo II) (1 – 0,20) = 0,80
+    - Poder = 1 - Beta (Prob. de Erro Tipo II) (1 - 0,20) = 0,80
     - Baixar G*Power
 
 # [DISTRIBUIÇÃO NORMAL]{.section-header}
@@ -417,11 +417,11 @@ Média = 170; DP = 5,72
 
 Frequência (*n)*
 
-+-1 DP (68.3%) = [164,28– 175,72]
++-1 DP (68.3%) = [164,28- 175,72]
 
-+-2 DP (95,4%) = [158,56– 181,44]
++-2 DP (95,4%) = [158,56- 181,44]
 
-+-3 DP (99,7%) = [152,84 – 187,16]
++-3 DP (99,7%) = [152,84 - 187,16]
 
 
 ---

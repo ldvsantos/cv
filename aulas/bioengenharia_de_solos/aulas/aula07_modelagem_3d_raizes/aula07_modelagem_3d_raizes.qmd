@@ -90,10 +90,10 @@ O fator 1,2 corrige a orientação aleatória das raízes.
 
 | Espécie | $\Delta c_r$ (kPa) |
 |---------|:---:|
-| Vetiver | 5 – 18 |
-| Ingá | 3 – 12 |
-| Leucena | 4 – 15 |
-| Gramíneas nativas | 1 – 6 |
+| Vetiver | 5 - 18 |
+| Ingá | 3 - 12 |
+| Leucena | 4 - 15 |
+| Gramíneas nativas | 1 - 6 |
 
 : {.striped .hover}
 :::
@@ -110,12 +110,12 @@ O fator 1,2 corrige a orientação aleatória das raízes.
 
 O **capim-vetiver** (*Chrysopogon zizanioides*) é uma das espécies mais utilizadas em bioengenharia de solos no mundo, graças a características únicas:
 
-- **Raízes profundas**  -  alcançam 3–4 m no primeiro ano
+- **Raízes profundas**  -  alcançam 3-4 m no primeiro ano
 - **Sistema radicular denso**  -  milhares de raízes finas e fibrosas
-- **Alta resistência à tração**  -  40–180 MPa (comparável a aço de baixo carbono!)
-- **Tolerância extrema**  -  seca, inundação, pH 3–11, metais pesados
+- **Alta resistência à tração**  -  40-180 MPa (comparável a aço de baixo carbono!)
+- **Tolerância extrema**  -  seca, inundação, pH 3-11, metais pesados
 - **Sem propagação invasiva**  -  não produz sementes viáveis na maioria dos climas
-- **Crescimento rápido**  -  barreira funcional em 3–6 meses
+- **Crescimento rápido**  -  barreira funcional em 3-6 meses
 
 :::
 
@@ -136,12 +136,12 @@ O vetiver possui sistema radicular do tipo **fasciculado denso**, com caracterí
 
 | Parâmetro | Valor típico |
 |-----------|:---:|
-| Profundidade máx. (1 ano) | 3,0 – 4,0 m |
-| Diâmetro médio da raiz | 0,5 – 0,8 mm |
-| Nº de raízes por touceira | 500 – 3.000 |
-| Massa seca radicular (kg/m³) | 0,8 – 3,5 |
-| Resistência à tração | 40 – 180 MPa |
-| RAR camada 0–30 cm | 0,15 – 0,45% |
+| Profundidade máx. (1 ano) | 3,0 - 4,0 m |
+| Diâmetro médio da raiz | 0,5 - 0,8 mm |
+| Nº de raízes por touceira | 500 - 3.000 |
+| Massa seca radicular (kg/m³) | 0,8 - 3,5 |
+| Resistência à tração | 40 - 180 MPa |
+| RAR camada 0-30 cm | 0,15 - 0,45% |
 
 : {.striped .hover}
 
@@ -153,7 +153,7 @@ O vetiver possui sistema radicular do tipo **fasciculado denso**, com caracterí
 :::
 
 ::: {.info-box}
-**Dado importante:** A resistência à tração das raízes de vetiver (40–180 MPa) é muito superior à de árvores típicas (5–40 MPa), tornando-o ideal para reforço de solos.
+**Dado importante:** A resistência à tração das raízes de vetiver (40-180 MPa) é muito superior à de árvores típicas (5-40 MPa), tornando-o ideal para reforço de solos.
 :::
 
 ---
@@ -168,12 +168,12 @@ A distribuição da densidade de raízes varia com a profundidade de forma não 
 
 | Camada (cm) | RAR (%) | Nº raízes/dm² | $\Delta c_r$ (kPa) |
 |:---:|:---:|:---:|:---:|
-| 0–10 | 0,40 | 180–250 | 7,2 |
-| 10–20 | 0,30 | 120–180 | 5,4 |
-| 20–30 | 0,20 | 80–120 | 3,6 |
-| 30–50 | 0,12 | 40–80 | 2,2 |
-| 50–100 | 0,05 | 10–30 | 0,9 |
-| > 100 | 0,01 | 2–10 | 0,2 |
+| 0-10 | 0,40 | 180-250 | 7,2 |
+| 10-20 | 0,30 | 120-180 | 5,4 |
+| 20-30 | 0,20 | 80-120 | 3,6 |
+| 30-50 | 0,12 | 40-80 | 2,2 |
+| 50-100 | 0,05 | 10-30 | 0,9 |
+| > 100 | 0,01 | 2-10 | 0,2 |
 
 : {.striped .hover}
 
@@ -199,7 +199,7 @@ A análise bidimensional (cortes, fotografias frontais) perde informação sobre
 - **Densidade volumétrica** (RVD  -  *Root Volume Density*)
 - **Conectividade** entre raízes  -  resistência à arrancamento
 - **Assimetria** da distribuição  -  taludes têm raízes predominantes a jusante
-- **Volume real**  -  estimativas 2D subestimam em 20–40%
+- **Volume real**  -  estimativas 2D subestimam em 20-40%
 :::
 
 ::: {.column width="50%"}
@@ -210,7 +210,7 @@ A **fotogrametria SfM** (*Structure from Motion*) permite reconstruir a geometri
 - Equipamento de **baixo custo** (câmera de celular ou DSLR)
 - Software **livre** (Meshroom, OpenDroneMap)
 - Análise em software **gratuito** (CloudCompare)
-- Precisão de **0,1–1,0 mm** dependendo da resolução
+- Precisão de **0,1-1,0 mm** dependendo da resolução
 - Registro permanente e **reprodutível** do sistema radicular
 :::
 :::
@@ -221,11 +221,11 @@ A **fotogrametria SfM** (*Structure from Motion*) permite reconstruir a geometri
 
 | Técnica | Resolução | Custo | Portabilidade | Ideal para |
 |---------|:---------:|:-----:|:-------------:|:-----------|
-| **Fotogrametria SfM** | 0,1–1 mm | Baixo (celular) | ✅ Campo | Raízes expostas em taludes |
-| **LiDAR terrestre** | 1–5 mm | Alto | ⚠️ Pesado | Estruturas maiores (> 1 m) |
-| **Tomografia (CT)** | 10–50 µm | Muito alto | ❌ Laboratório | Raízes finas in-situ (amostras) |
-| **Ressonância (MRI)** | 50–200 µm | Muito alto | ❌ Laboratório | Dinâmica de água nas raízes |
-| **Scanner 3D estruturado** | 0,05–0,5 mm | Médio | ⚠️ Lab/campo | Amostras lavadas em bancada |
+| **Fotogrametria SfM** | 0,1-1 mm | Baixo (celular) | ✅ Campo | Raízes expostas em taludes |
+| **LiDAR terrestre** | 1-5 mm | Alto | ⚠️ Pesado | Estruturas maiores (> 1 m) |
+| **Tomografia (CT)** | 10-50 µm | Muito alto | ❌ Laboratório | Raízes finas in-situ (amostras) |
+| **Ressonância (MRI)** | 50-200 µm | Muito alto | ❌ Laboratório | Dinâmica de água nas raízes |
+| **Scanner 3D estruturado** | 0,05-0,5 mm | Médio | ⚠️ Lab/campo | Amostras lavadas em bancada |
 
 : {.striped .hover}
 
@@ -283,7 +283,7 @@ $$GSD = \frac{d \times p}{f}$$
 
 Onde:
 
-- $d$ = distância câmera–objeto (m)
+- $d$ = distância câmera-objeto (m)
 - $p$ = tamanho do pixel no sensor (mm)
 - $f$ = distância focal da lente (mm)
 
@@ -303,7 +303,7 @@ Suficiente para mapear raízes de vetiver (diâm. ≥ 0,5 mm)!
 | Aplicação | GSD necessário |
 |-----------|:--------------:|
 | Raízes finas (< 1 mm) | ≤ 0,2 mm/pixel |
-| Raízes médias (1–5 mm) | ≤ 0,5 mm/pixel |
+| Raízes médias (1-5 mm) | ≤ 0,5 mm/pixel |
 | Raízes grossas (> 5 mm) | ≤ 1,0 mm/pixel |
 | Touceira inteira | ≤ 2,0 mm/pixel |
 
@@ -332,7 +332,7 @@ Suficiente para mapear raízes de vetiver (diâm. ≥ 0,5 mm)!
 ### Etapa 2  -  Aquisição das fotos
 
 - **Equipamento:** câmera ≥ 12 MP (celular serve)
-- **Nº de fotos:** 60–120 (quanto mais, melhor)
+- **Nº de fotos:** 60-120 (quanto mais, melhor)
 - **Sobreposição:** ≥ 70% entre fotos consecutivas
 - **Ângulos:** circundar o objeto em pelo menos 2 alturas
 - **Iluminação:** difusa (céu nublado ideal)  -  evitar sombras duras
@@ -364,13 +364,13 @@ Suficiente para mapear raízes de vetiver (diâm. ≥ 0,5 mm)!
 - [ ] Limpar raízes com jato d'água suave
 - [ ] Posicionar escala métrica no campo de visão
 - [ ] Verificar iluminação (evitar sol direto, sombras fortes)
-- [ ] Fixar foco manual e ISO baixo (100–400)
+- [ ] Fixar foco manual e ISO baixo (100-400)
 :::
 
 ::: {.column width="50%"}
 ### ✅ Durante a captura
 
-- [ ] Fotografar no mínimo 60–80 fotos
+- [ ] Fotografar no mínimo 60-80 fotos
 - [ ] Sobreposição entre fotos ≥ 70%
 - [ ] Pelo menos 2 alturas de captura (órbita baixa + alta)
 - [ ] Incluir fotos de detalhe (close-up) das raízes finas
@@ -473,7 +473,7 @@ No CloudCompare, use **Edit → Colors → Height Ramp** para colorir a nuvem po
 ### Tempo estimado
 
 - 80 fotos (12 MP) → ~30 min em GPU média
-- 120 fotos (20 MP) → ~1–2 h
+- 120 fotos (20 MP) → ~1-2 h
 :::
 
 ::: {.column width="50%"}
@@ -542,7 +542,7 @@ Se a escala não foi calibrada na fotogrametria:
 3. $RAR = A_{raiz} / A_{total}$
 
 ::: {.highlight-box}
-O RAR tipicamente diminui com a profundidade. Valores de 0,05–0,30% na camada 0–30 cm são comuns para gramíneas.
+O RAR tipicamente diminui com a profundidade. Valores de 0,05-0,30% na camada 0-30 cm são comuns para gramíneas.
 :::
 :::
 :::
@@ -585,10 +585,10 @@ $$\Delta c_r(z) = 1{,}2 \times \overline{t_R} \times RAR(z)$$
 
 | Profundidade (cm) | RAR (%) | $\overline{t_R}$ (MPa) | $\Delta c_r$ (kPa) |
 |:---:|:---:|:---:|:---:|
-| 0–10 | 0,25 | 15 | 4,5 |
-| 10–20 | 0,18 | 15 | 3,2 |
-| 20–30 | 0,10 | 15 | 1,8 |
-| 30–50 | 0,04 | 15 | 0,7 |
+| 0-10 | 0,25 | 15 | 4,5 |
+| 10-20 | 0,18 | 15 | 3,2 |
+| 20-30 | 0,10 | 15 | 1,8 |
+| 30-50 | 0,04 | 15 | 0,7 |
 
 : {.striped .hover}
 
@@ -618,7 +618,7 @@ Onde:
 
 ### Diferença em relação ao modelo de Wu
 
-O modelo de Wu assume $\theta$ fixo (fator 1,2) → superestima em 50–100% em alguns casos. Waldron permite calibração.
+O modelo de Wu assume $\theta$ fixo (fator 1,2) → superestima em 50-100% em alguns casos. Waldron permite calibração.
 :::
 
 ::: {.column width="50%"}
@@ -628,7 +628,7 @@ O modelo de Wu assume $\theta$ fixo (fator 1,2) → superestima em 50–100% em 
 | Aspecto | Wu (1979) | Waldron (1977) |
 |---------|:---------:|:--------------:|
 | Fator de orientação | Fixo (1,2) | Variável ($\theta$) |
-| Precisão | Superestima 50–100% | Mais realista |
+| Precisão | Superestima 50-100% | Mais realista |
 | Dados necessários | RAR + $t_R$ | RAR + $t_R$ + $\theta$ + $\phi'$ |
 | Facilidade de uso | ✅ Simples | ⚠️ Requer mais dados |
 | Uso recomendado | Estimativa preliminar | Projeto executivo |
@@ -702,7 +702,7 @@ Talude rodoviário de **3 m de altura**, inclinação 1V:1,5H (33,7°), em solo 
 |-----------|:-----:|:------------------:|
 | Volume de erosão (m³/m) | 0,45 | 0,03 |
 | Cobertura vegetal (%) | 5 | 85 |
-| RAR 0–30 cm (%) | 0 | 0,28 |
+| RAR 0-30 cm (%) | 0 | 0,28 |
 | $\Delta c_r$ médio (kPa) | 0 | 5,0 |
 | FS estimado | 1,15 | 1,87 |
 
@@ -733,8 +733,8 @@ Talude rodoviário de **3 m de altura**, inclinação 1V:1,5H (33,7°), em solo 
 
 ### Implicações para projeto
 
-- Especificar **espaçamento máximo de 15–20 cm** entre mudas na linha
-- Linhas em **curva de nível** com espaçamento vertical de 30–50 cm
+- Especificar **espaçamento máximo de 15-20 cm** entre mudas na linha
+- Linhas em **curva de nível** com espaçamento vertical de 30-50 cm
 - Monitorar com fotogrametria 3D a cada 6 meses no primeiro ano
 :::
 
@@ -742,7 +742,7 @@ Talude rodoviário de **3 m de altura**, inclinação 1V:1,5H (33,7°), em solo 
 ::: {.highlight-box}
 **Cronograma de estabelecimento do vetiver**
 
-| Mês | RAR 0–30 cm (%) | $\Delta c_r$ (kPa) | Observação |
+| Mês | RAR 0-30 cm (%) | $\Delta c_r$ (kPa) | Observação |
 |:---:|:---:|:---:|:-----------|
 | 0 | 0,00 | 0,0 | Plantio |
 | 3 | 0,05 | 0,9 | Enraizamento inicial |
@@ -816,7 +816,7 @@ d) 0,05 mm/pixel
 ::: {.column width="60%"}
 ### Atividade de campo + laboratório
 
-1. Em grupo (3–4 alunos), selecione uma planta com raízes expostas no campus
+1. Em grupo (3-4 alunos), selecione uma planta com raízes expostas no campus
 2. Siga o protocolo de coleta (mín. 60 fotos, escala métrica)
 3. Processe no Meshroom e gere o modelo 3D
 4. Importe no CloudCompare e calcule o RAR em 3 camadas
@@ -843,14 +843,14 @@ d) 0,05 mm/pixel
 ::: {.column width="50%"}
 ### Modelos mecânicos
 
-- Wu, T. H., McKinnell, W. P., & Swanston, D. N. (1979). Strength of tree roots and landslides on Prince of Wales Island. *Can. Geotech. J.*, 16(1), 19–33.
-- Waldron, L. J. (1977). The shear resistance of root-permeated homogeneous and stratified soil. *Soil Science Society of America J.*, 41(5), 843–849.
+- Wu, T. H., McKinnell, W. P., & Swanston, D. N. (1979). Strength of tree roots and landslides on Prince of Wales Island. *Can. Geotech. J.*, 16(1), 19-33.
+- Waldron, L. J. (1977). The shear resistance of root-permeated homogeneous and stratified soil. *Soil Science Society of America J.*, 41(5), 843-849.
 - Pollen, N. & Simon, A. (2005). Estimating the mechanical effects of riparian vegetation on stream bank stability using a fiber bundle model. *Water Resources Research*, 41(7).
 
 ### Raízes e bioengenharia
 
-- Stokes, A. et al. (2009). Desirable plant root traits for protecting natural and engineered slopes. *Plant and Soil*, 324, 1–30.
-- Mickovski, S. B. et al. (2009). Mechanical reinforcement of soil by willow roots. *Ecological Engineering*, 35, 1043–1053.
+- Stokes, A. et al. (2009). Desirable plant root traits for protecting natural and engineered slopes. *Plant and Soil*, 324, 1-30.
+- Mickovski, S. B. et al. (2009). Mechanical reinforcement of soil by willow roots. *Ecological Engineering*, 35, 1043-1053.
 - Truong, P., Van, T. T., & Pinners, E. (2008). *Vetiver System Applications: A Technical Reference Manual*. The Vetiver Network International.
 :::
 
@@ -859,13 +859,13 @@ d) 0,05 mm/pixel
 
 - Meshroom (2024). AliceVision  -  Photogrammetric Computer Vision Framework. [alicevision.org](https://alicevision.org/)
 - CloudCompare (2024). 3D Point Cloud and Mesh Processing Software. [cloudcompare.org](https://www.cloudcompare.org/)
-- Westoby, M. J. et al. (2012). Structure-from-Motion photogrammetry: A low-cost, effective tool for geoscience applications. *Geomorphology*, 179, 300–314.
-- Lague, D., Brodu, N., & Leroux, J. (2013). Accurate 3D comparison of complex topography with terrestrial laser scanner. *ISPRS J. Photogramm. Remote Sens.*, 82, 10–26.
+- Westoby, M. J. et al. (2012). Structure-from-Motion photogrammetry: A low-cost, effective tool for geoscience applications. *Geomorphology*, 179, 300-314.
+- Lague, D., Brodu, N., & Leroux, J. (2013). Accurate 3D comparison of complex topography with terrestrial laser scanner. *ISPRS J. Photogramm. Remote Sens.*, 82, 10-26.
 
 ### Vetiver  -  dados mecânicos
 
 - Hengchaovanich, D. (1998). Vetiver grass for slope stabilization and erosion control. *Technical Bulletin*, 1998/2. Pacific Rim Vetiver Network.
-- Islam, M. S. & Shahin, H. M. (2013). Reinforcing effect of Vetiver (*Chrysopogon zizanioides*) root in geotechnical structures. *Geomechanics and Geoengineering*, 8(4), 262–270.
+- Islam, M. S. & Shahin, H. M. (2013). Reinforcing effect of Vetiver (*Chrysopogon zizanioides*) root in geotechnical structures. *Geomechanics and Geoengineering*, 8(4), 262-270.
 :::
 :::
 

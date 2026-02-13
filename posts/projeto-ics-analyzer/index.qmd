@@ -8,9 +8,9 @@ image: "../../img/ics_analyzer.png"
 lang: pt-BR
 ---
 
-A avaliação quantitativa da cobertura do solo é fundamental para o manejo conservacionista, o controle de erosão e o planejamento do uso da terra. O **ICS Analyzer** é um sistema avançado, multiplataforma, que integra coleta digital padronizada, processamento estatístico, modelos de machine learning e geração automática de laudos técnicos — do campo ao relatório em poucos cliques.
+A avaliação quantitativa da cobertura do solo é fundamental para o manejo conservacionista, o controle de erosão e o planejamento do uso da terra. O **ICS Analyzer** é um sistema avançado, multiplataforma, que integra coleta digital padronizada, processamento estatístico, modelos de machine learning e geração automática de laudos técnicos - do campo ao relatório em poucos cliques.
 
-![Interface do ICS Analyzer — sistema para análise do Índice de Cobertura do Solo com dashboard interativo e diagnóstico conservacionista](../../img/ics_analyzer.png){fig-alt="Interface principal do ICS Analyzer" width="80%"}
+![Interface do ICS Analyzer - sistema para análise do Índice de Cobertura do Solo com dashboard interativo e diagnóstico conservacionista](../../img/ics_analyzer.png){fig-alt="Interface principal do ICS Analyzer" width="80%"}
 
 ## Funcionalidades principais
 
@@ -28,7 +28,7 @@ Geração automática de laudos técnicos em PDF de alta resolução, compilando
 
 ### Análise Conservacionista (ISPC)
 
-Modelo ISPC (*Índice de Solo para Práticas Conservacionistas*) com **10 variáveis informadas** e **5 estimadas**, entregando diagnóstico fuzzy em escala 0–10 e exportação direta para PDF. Suporta histórico anual com planilha organizada por ano.
+Modelo ISPC (*Índice de Solo para Práticas Conservacionistas*) com **10 variáveis informadas** e **5 estimadas**, entregando diagnóstico fuzzy em escala 0-10 e exportação direta para PDF. Suporta histórico anual com planilha organizada por ano.
 
 ## Arquitetura e pipeline de machine learning
 
@@ -69,7 +69,7 @@ O projeto seguiu princípios rigorosos de engenharia de software, com refatoraç
 | Métrica | Antes | Depois |
 |---------|-------|--------|
 | Duplicação de código | ~40% | <10% |
-| Linhas por função | 80–150 | <50 |
+| Linhas por função | 80-150 | <50 |
 | Docstrings | ~30% | 100% |
 | Type hints | ~50% | 100% |
 

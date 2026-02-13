@@ -1,0 +1,44 @@
+﻿@charset "UTF-8"; * {margin:0; padding:0; text-indent:0; }
+ .s1 { color: black; font-family:Constantia, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 18pt; }
+ .s2 { color: black; font-family:Constantia, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 28pt; }
+ h1 { color: black; font-family:Constantia, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 60pt; }
+ .s3 { color: #0AD0D9; font-family:"Wingdings 2", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 19pt; }
+ .s4 { color: #0AD0D9; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 19pt; }
+ .s5 { color: black; font-family:Constantia, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 20pt; }
+ h2 { color: black; font-family:Constantia, serif; font-style: normal; font-weight: bold; text-decoration: underline; font-size: 28pt; }
+ .s6 { color: black; font-family:Constantia, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s7 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s8 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; vertical-align: 6pt; }
+ .s9 { color: black; font-family:Constantia, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 34pt; }
+ .s10 { color: black; font-family:Constantia, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 80pt; }
+ .s11 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 12pt; }
+ .s12 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 12pt; }
+ .s13 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 18pt; }
+ .s14 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18pt; }
+ .s15 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; }
+ .s16 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; vertical-align: 1pt; }
+ .s17 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 9.5pt; }
+ .s18 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 9.5pt; }
+ .s19 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 9.5pt; vertical-align: -1pt; }
+ .s20 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 15pt; }
+ .s21 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 15pt; }
+ .s22 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; vertical-align: 11pt; }
+ .s23 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 8.5pt; }
+ .s24 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 8.5pt; }
+ .s25 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; vertical-align: 32pt; }
+ .s26 { color: black; font-family:Constantia, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 28pt; }
+ .s27 { color: #5F5F5F; font-family:Constantia, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 17pt; }
+ .s28 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 22pt; }
+ .h4 { color: black; font-family:Constantia, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 22pt; }
+ .p, p { color: black; font-family:Constantia, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 20pt; margin:0pt; }
+ .s29 { color: #C00000; font-family:Constantia, serif; font-style: normal; font-weight: bold; text-decoration: underline; font-size: 20pt; }
+ .s30 { color: #C00000; font-family:Constantia, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 20pt; }
+ .s31 { color: black; font-family:"Times New Roman", serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 10pt; vertical-align: 2pt; }
+ .s32 { color: black; font-family:Constantia, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 16pt; }
+ .s33 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 24pt; }
+ .s34 { color: black; font-family:Constantia, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 24pt; }
+ .h3 { color: black; font-family:Constantia, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 24pt; }
+ .s35 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 20pt; }
+ .s36 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 21pt; }
+ .s37 { color: black; font-family:Constantia, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 21pt; }
+ table, tbody {vertical-align: top; overflow: visible; }

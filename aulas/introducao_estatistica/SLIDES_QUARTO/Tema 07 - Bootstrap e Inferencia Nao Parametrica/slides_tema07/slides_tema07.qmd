@@ -98,7 +98,7 @@ Dado um conjunto de dados observados $\mathbf{x} = (x_1, x_2, \ldots, x_n)$, o b
 | 1 | Obtenha a amostra original com $n$ observações |
 | 2 | Sorteie $n$ valores **com reposição** da amostra |
 | 3 | Calcule a estatística desejada (média, mediana, etc.) |
-| 4 | Repita os passos 2–3 por $B$ vezes ($B \geq 1000$) |
+| 4 | Repita os passos 2-3 por $B$ vezes ($B \geq 1000$) |
 | 5 | Use as $B$ estimativas para construir a distribuição bootstrap |
 
 : {.striped .hover}
@@ -335,7 +335,7 @@ Aplique para cada espécie usando `subset()` ou `dplyr::filter()`.
 
 ## Referências {.smaller-text}
 
-- Efron, B. (1979). Bootstrap methods: Another look at the jackknife. *Annals of Statistics*, 7(1), 1–26.
+- Efron, B. (1979). Bootstrap methods: Another look at the jackknife. *Annals of Statistics*, 7(1), 1-26.
 - Efron, B., & Tibshirani, R. J. (1993). *An Introduction to the Bootstrap*. Chapman & Hall.
 - Davison, A. C., & Hinkley, D. V. (1997). *Bootstrap Methods and Their Application*. Cambridge University Press.
 - Canty, A., & Ripley, B. D. (2024). boot: Bootstrap R Functions. R package.

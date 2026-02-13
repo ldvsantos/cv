@@ -1,0 +1,126 @@
+---
+title: "Estatística Aplicada à Engenharia Agronômica"
+description: "Ambiente virtual da disciplina de Estatística Aplicada — aulas, leituras, vídeos e recursos."
+---
+
+::: {.text-end .mb-3}
+[← Voltar para Ensino](index.qmd)
+:::
+
+```{=html}
+<div class="ava-header">
+  <div class="ava-icon"><i class="fa-solid fa-chart-line"></i></div>
+  <div>
+    <h2 class="ava-title">Estatística Aplicada à Engenharia Agronômica</h2>
+    <p class="ava-subtitle">Testes paramétricos e não-paramétricos, ANOVA, regressão, análise multivariada e séries temporais aplicados às ciências agrárias.</p>
+    <div class="ava-stats">
+      <span class="ava-stat"><i class="fa-solid fa-display"></i> 7 aulas</span>
+      <span class="ava-stat"><i class="fa-solid fa-book"></i> Leituras</span>
+      <span class="ava-stat"><i class="fa-solid fa-video"></i> Vídeos</span>
+    </div>
+  </div>
+</div>
+```
+
+::: {.callout-note collapse="true" icon=false}
+## {{< fa clipboard-list >}} Ementa da Disciplina
+
+Estatística aplicada à Engenharia Agronômica; introdução ao R para ciências agrárias; testes paramétricos e não-paramétricos; ANOVA e pressupostos; regressão e correlação; análise multivariada; séries temporais ambientais.
+:::
+
+---
+
+::: {.panel-tabset}
+
+### {{< fa display >}} Aulas
+
+```{=html}
+<div class="slide-grid">
+<a class="slide-card" href="../aulas/introducao_estatistica/aulas/aula01_estatistica_agronomia/aula01_estatistica_agronomia.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 01 | Estatística Aplicada à Engenharia Agronômica</h4>
+<p>Visão geral da disciplina, importância e competências a desenvolver.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/introducao_estatistica/aulas/aula02_introducao_r/aula02_introducao_r.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 02 | Introdução ao R para Ciências Agrárias</h4>
+<p>Do zero ao primeiro experimento agrícola no R.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/introducao_estatistica/aulas/aula03_testes_parametricos/aula03_testes_parametricos.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 03 | Testes paramétricos e não-paramétricos</h4>
+<p>t-Student, Tukey, Wilcoxon, Kruskal-Wallis e Mann-Whitney aplicados.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/introducao_estatistica/aulas/aula04_anova_pressupostos/aula04_anova_pressupostos.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 04 | ANOVA e Pressupostos</h4>
+<p>ANOVA one-way, two-way, fatorial e medidas repetidas no R.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/introducao_estatistica/aulas/aula05_regressao_correlacao/aula05_regressao_correlacao.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 05 | Regressão e Correlação</h4>
+<p>Regressão linear simples e múltipla, correlação de Pearson e Spearman.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/introducao_estatistica/aulas/aula06_analise_multivariada/aula06_analise_multivariada.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 06 | Análise Multivariada</h4>
+<p>PCA, análise de agrupamento e análise discriminante no R.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/introducao_estatistica/aulas/aula07_series_temporais/aula07_series_temporais.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 07 | Séries Temporais Ambientais</h4>
+<p>Decomposição, ARIMA e sazonalidade de dados climáticos e agronômicos.</p>
+</div>
+</a>
+
+</div>
+```
+
+### {{< fa book >}} Biblioteca
+
+```{=html}
+<div class="ava-empty">
+  <i class="fa-solid fa-book-open"></i>
+  Leituras em preparação. Em breve serão disponibilizados artigos e scripts aqui.
+</div>
+```
+
+### {{< fa video >}} Videoaulas
+
+```{=html}
+<div class="ava-empty">
+  <i class="fa-solid fa-video"></i>
+  Em breve. As videoaulas estão sendo produzidas e serão disponibilizadas aqui.
+</div>
+```
+
+### {{< fa link >}} Recursos
+
+| Recurso | Descrição | Link |
+|---------|-----------|------|
+| Repositório GitHub | Slides e materiais da disciplina | [aulas/introducao_estatistica](https://github.com/ldvsantos/cv/tree/main/aulas/introducao_estatistica) |
+| R Project | Linguagem R para computação estatística | [r-project.org](https://www.r-project.org/) |
+| RStudio | IDE para R | [posit.co](https://posit.co/) |
+
+: {.striped .hover}
+
+:::

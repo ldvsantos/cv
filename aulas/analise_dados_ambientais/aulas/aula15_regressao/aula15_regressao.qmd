@@ -338,7 +338,7 @@ PROBLEMAS DAS VARIÁVEIS
 
 Variáveis independentes (não deve haver muita multicolinearidade).
 
-  - Índice de tolerância: 1 – R² (não é o do modelo).
+  - Índice de tolerância: 1 - R² (não é o do modelo).
     - Deve ficar o mais próximo de 1,0 possível.
   - Também através do VIF
     - Valores de VIF > 10 → Multicolinearidade
@@ -642,7 +642,7 @@ capaz de **melhorar**** **o poder de predição do modelo;
 
 Variáveis independentes (não deve haver muita multicolinearidade).
 
-  - Índice de tolerância: 1 – R² (não é o do modelo).
+  - Índice de tolerância: 1 - R² (não é o do modelo).
     - Deve ficar o mais próximo de 1,0 possível.
   - Também através do VIF
     - Valores de VIF > 10 → Multicolinearidade
@@ -764,7 +764,7 @@ BINÁRIA
 **Tjur´s**** R****2**** (JASP, R)**
 
   - Para o grupo que teve câncer (VD = 1), a média das probabilidades previstas foi de 0.75. Para o grupo que não teve câncer (VD = 0), a média das probabilidades previstas foi de 0.25;
-  - O R2 de Tjur é então calculado como a diferença absoluta entre essa duas médias, o que nete caso seria 0.75 – 0.25 = 0.50
+  - O R2 de Tjur é então calculado como a diferença absoluta entre essa duas médias, o que nete caso seria 0.75 - 0.25 = 0.50
   - **Interpretação:**
   - Em média, o modelo prevê uma probabilidade de 50% maior dos sujeitos do gurpo 1 estarem corretamente classificados no grupo 1.
 

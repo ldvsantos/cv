@@ -10,9 +10,9 @@ lang: pt-BR
 
 Quando se adquire um vinho com Denominação de Origem, um queijo artesanal certificado ou um café de terroir, paga-se um prêmio pela promessa de que aquele produto é autêntico, de que ele carrega a identidade do território onde foi produzido. A questão central, no entanto, reside em quem verifica essa promessa.
 
-A revisão de 148 publicações científicas (2010–2025) investigou se o Aprendizado de Máquina (ML) está pronto para funcionar como auditor digital das Indicações Geográficas. A resposta é que a tecnologia se aproxima da maturidade necessária, porém ainda não a atingiu.
+A revisão de 148 publicações científicas (2010-2025) investigou se o Aprendizado de Máquina (ML) está pronto para funcionar como auditor digital das Indicações Geográficas. A resposta é que a tecnologia se aproxima da maturidade necessária, porém ainda não a atingiu.
 
-![Resumo gráfico — conceito de Terroir Digital como Gêmeo Digital Inferencial](abstract-grafico.png){fig-alt="Resumo gráfico do conceito de Terroir Digital" width="100%"}
+![Resumo gráfico - conceito de Terroir Digital como Gêmeo Digital Inferencial](abstract-grafico.png){fig-alt="Resumo gráfico do conceito de Terroir Digital" width="100%"}
 
 ## Conceito de Terroir Digital
 
@@ -28,7 +28,7 @@ A análise dos 148 estudos revelou um resultado paradoxal, no qual modelos de ML
 
 Quando submetidos a validação espacialmente independente (treinar em uma região, testar em outra), a acurácia cai 11,8%, mais que o dobro da queda com validação convencional (5,6%). Isso significa que os modelos estão aprendendo artefatos locais em vez de padrões genuínos do terroir.
 
-![Validação espacial — queda de acurácia em condições reais](validacao-espacial.png){fig-alt="Gráfico de validação espacial mostrando queda de acurácia" width="80%"}
+![Validação espacial - queda de acurácia em condições reais](validacao-espacial.png){fig-alt="Gráfico de validação espacial mostrando queda de acurácia" width="80%"}
 
 ### Indicadores críticos
 
@@ -41,7 +41,7 @@ Com base na análise, foram definidas três condições *sine qua non*. A primei
 ::: {layout-ncol=2}
 ![Meta-análise dos estudos](meta-analise.png){fig-alt="Forest plot da meta-análise"}
 
-![Radar FAIR — conformidade dos dados](fair-radar.png){fig-alt="Gráfico radar de conformidade FAIR"}
+![Radar FAIR - conformidade dos dados](fair-radar.png){fig-alt="Gráfico radar de conformidade FAIR"}
 :::
 
 ![Rede de comunidades dos estudos analisados](network-communities.png){fig-alt="Rede bibliométrica de comunidades" width="80%"}
