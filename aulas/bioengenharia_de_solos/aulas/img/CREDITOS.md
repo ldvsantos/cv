@@ -74,6 +74,18 @@ As imagens abaixo foram obtidas do [Wikimedia Commons](https://commons.wikimedia
 | `fig01_gully_erosion.jpg` | Erosão severa em encosta — ravinas em paisagem semiárida | CSIRO Science Image | **CC BY 3.0** |
 | `fig02_incipient_gully.jpg` | Erosão incipiente em voçoroca | Geograph Britain | **CC BY-SA 2.0** |
 
+### Aula 10 — Feixes Vivos e Drenos Verdes (Espécies Vegetais)
+
+| Arquivo | Descrição | Autor / Fonte | Licença |
+|---------|-----------|---------------|---------|
+| `sp_schinus_terebinthifolius.jpg` | *Schinus terebinthifolius* (Aroeira) | Juan Carlos Fonseca Mata / Wikimedia Commons | **CC BY-SA 4.0** |
+| `sp_spondias_mombin.jpg` | *Spondias mombin* (Cajá) | Marco Schmidt / Wikimedia Commons | **CC BY-SA 2.5** |
+| `sp_inga_marginata.jpg` | *Inga marginata* (Ingá) | Paulo Schwirkowski / Wikimedia Commons | **CC BY 3.0** |
+| `sp_tapirira_guianensis.jpg` | *Tapirira guianensis* (Pau-pombo) | João Medeiros / Wikimedia Commons | **CC BY 2.0** |
+| `sp_lonchocarpus_sericeus.jpg` | *Lonchocarpus sericeus* (Falso-ingá) | Alex Popovkin / Wikimedia Commons | **CC BY 2.0** |
+| `sp_mimosa_caesalpiniaefolia.jpg` | *Mimosa caesalpiniaefolia* (Sabiá) | mauroguanandi / Wikimedia Commons | **CC BY 2.0** |
+| `sp_genipa_americana.jpg` | *Genipa americana* (Genipapo) | Alex Popovkin / Wikimedia Commons | **CC BY 2.0** |
+
 ---
 
 > **Nota**: Todas as imagens do Wikimedia Commons foram obtidas em junho de 2025. Para detalhes completos de licenciamento, consulte as respectivas páginas no Wikimedia Commons.
