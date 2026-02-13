@@ -32,6 +32,28 @@ Fundamentos do geoprocessamento e análise espacial: conceitos, estruturas de da
 **Habilidades e Competências:** Ao final da disciplina, o(a) discente deverá dominar os fundamentos teóricos e práticos do geoprocessamento, compreender as potencialidades e limitações das geotecnologias aplicadas a problemas ambientais reais, realizar análises espaciais consistentes em plataformas livres (QGIS, Google Earth Engine), avaliar criticamente a qualidade e incerteza de produtos cartográficos, integrar múltiplas fontes de dados espaciais (satelitais, censitários, hidrológicos, pedológicos), aplicar métodos de aprendizado de máquina com validação espacialmente robusta, e elaborar produtos técnicos (mapas, relatórios, scripts reprodutíveis) orientados ao planejamento, licenciamento, monitoramento ambiental e políticas públicas de gestão territorial e de recursos naturais.
 :::
 
+::: {.callout-tip collapse="true" icon=false}
+## {{< fa calendar-days >}} Cronograma das Aulas
+
+| Semana | Aula | Assuntos Previstos |
+|:------:|:----:|:-------------------|
+| 1ª | 01 | Avaliação de incerteza e acurácia em classificação: matriz de confusão, Kappa, validação espacial. |
+| 2ª | 02 | Fundamentos do geoprocessamento e análise espacial: estruturas de dados, operações espaciais. |
+| 3ª | 03 | Geotecnologias aplicadas a recursos hídricos: evapotranspiração, índices de seca, SR hidrológico. |
+| 4ª | 04 | SIG aplicado à exploração de recursos minerais: análise multicriterial, AHP, tomada de decisão. |
+| 5ª | 05 | Intemperismo, erosão e formação de solos: processos pedogenéticos, classificação SiBCS. |
+| 6ª | 06 | Degradação do solo, desertificação e mudanças climáticas: indicadores, monitoramento, modelagem. |
+| 7ª | 07 | Recursos hídricos e gestão por bacia hidrográfica: delimitação, morfometria, Política Nacional. |
+| 8ª | 08 | Monitoramento hidrológico e geotecnologias: redes de observação, sensores remotos, séries temporais. |
+| 9ª | 09 | Geoprocessamento aplicado a impactos da mineração: análise espacial, licenciamento, auditoria. |
+| 10ª | 10 | Sensoriamento remoto e mudanças de cobertura vegetal: detecção de mudanças, métricas de paisagem. |
+| 11ª | 11 | Inteligência artificial e qualidade da pesquisa ambiental: ML, validação espacial, princípios FAIR. |
+
+: {.striped .hover}
+
+> **Observação:** Disciplina ofertada no curso de Geografia da UNIVASF. Conteúdo alinhado aos temas do concurso público de Geociências.
+:::
+
 ---
 
 ::: {.panel-tabset}

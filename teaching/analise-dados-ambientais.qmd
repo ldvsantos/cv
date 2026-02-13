@@ -32,6 +32,32 @@ Introdução e aplicação de técnicas avançadas de análise estatística em e
 **Habilidades e Competências:** Capacitar os alunos para a utilização de regressões avançadas e análise de sobrevida em contextos ambientais, com ênfase em modelagem de eventos e longevidade de espécies. Facilitar o desenvolvimento de competências para a criação e análise de bancos de dados ambientais, incluindo o uso de dados secundários, temporais e correlacionais. Promover a habilidade de aplicar análise fatorial exploratória e confirmatória, além de modelagem por equações estruturais, utilizando ferramentas como JASP e Mplus, para entender e explicar relações complexas entre variáveis ambientais. Preparar os alunos para a comunicação eficaz e publicação de resultados de pesquisas ambientais, contribuindo para a tomada de decisões informadas em conservação, gestão ambiental e sustentabilidade.
 :::
 
+::: {.callout-tip collapse="true" icon=false}
+## {{< fa calendar-days >}} Cronograma das Aulas
+
+| Semana | Aula | Assuntos Previstos |
+|:------:|:----:|:-------------------|
+| 1ª | 01 | Apresentação e bases epistemológicas da inferência em dados ambientais. Paradigmas frequentista e bayesiano. |
+| 2ª | 02 | Análises descritivas aplicadas: estrutura de dados ambientais; medidas de tendência central e dispersão. |
+| 3ª | 03 | Distribuição Normal e diagnóstico exploratório: avaliação de normalidade, transformações. |
+| 4ª | 04 | Intervalos de confiança e estimação: inferência de parâmetros; erros amostrais. |
+| 5ª | 05 | Correlação em estudos ambientais: Pearson e Spearman; distinção entre correlação e causalidade. |
+| 6ª | 06 | Testes de hipóteses (t): formulação de H₀/H₁, erro tipo I/II, testes para 1 e 2 amostras. |
+| 7ª | 07 | ANOVA e comparações múltiplas: particionamento da variância; aplicações em conservação. |
+| 8ª | 08 | Regressão linear: modelagem de tendências ambientais; diagnóstico de resíduos. |
+| 9ª | 09 | Regressão logística e testes não paramétricos: probabilidade de eventos ambientais. |
+| 10ª | 10 | Modelos Generalizados (GLM): família exponencial; funções de ligação; aplicações ambientais. |
+| 11ª | 11 | GLM e GEE: estimação em GLM; GEE para dados longitudinais/repetidos. |
+| 12ª | 12 | Taxas, indicadores e tendências temporais: desflorestamento, sustentabilidade; séries temporais. |
+| 13ª | 13 | Análise de redes ecológicas: métricas, centralidade, modularidade, conectância. |
+| 14ª | 14 | Dados secundários e regressões avançadas: Poisson, superdispersão, binomial negativa. |
+| 15ª | 15 | Sobrevida, AFE/AFC e MEE: modelo de Cox; Análise Fatorial e Modelagem por Equações Estruturais. |
+
+: {.striped .hover}
+
+> **Observação:** Aulas às segundas-feiras, 08h–12h (4h/aula). Período: março a junho.
+:::
+
 ---
 
 ::: {.panel-tabset}
