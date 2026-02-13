@@ -129,12 +129,67 @@ Avaliação de incerteza em classificação; fundamentos do geoprocessamento; ge
 
 ### {{< fa book >}} Biblioteca
 
+Leituras fundamentais sobre geoprocessamento, sensoriamento remoto e recursos hídricos.
+
 ```{=html}
-<div class="ava-empty">
-  <i class="fa-solid fa-book-open"></i>
-  Leituras em preparação. Em breve serão disponibilizados artigos e tutoriais aqui.
+<div class="resource-grid">
+
+<a class="resource-card" href="https://openknowledge.fao.org/server/api/core/bitstreams/f779dbd0-f020-4bdc-b13e-8dcf155c1c45/content" target="_blank">
+<div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
+<div class="res-info">
+<h4>Allen et al. (1998) — FAO 56</h4>
+<p>Crop Evapotranspiration — referência mundial para cálculo de ET₀ e manejo de irrigação.</p>
+</div>
+</a>
+
+<a class="resource-card" href="http://www.dpi.inpe.br/gilberto/livro/anatomia.pdf" target="_blank">
+<div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
+<div class="res-info">
+<h4>Câmara et al. (2004) — INPE</h4>
+<p>Anatomia de Sistemas de Informação Geográfica — livro clássico do INPE sobre fundamentos de SIG.</p>
+</div>
+</a>
+
+<a class="resource-card" href="https://www.scielo.br/j/rbeaa/a/4RJCDXtfqkqMgBKxmRKxRKw/?format=pdf&lang=pt" target="_blank">
+<div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
+<div class="res-info">
+<h4>Silva et al. (2005)</h4>
+<p>SEBAL — Balanço de energia para estimativa de evapotranspiração real por sensoriamento remoto.</p>
+</div>
+</a>
+
+<a class="resource-card" href="http://www.dpi.inpe.br/spring/portugues/tutorial/introducao_sen.html" target="_blank">
+<div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
+<div class="res-info">
+<h4>Novo (2008) — INPE</h4>
+<p>Sensoriamento Remoto: Princípios e Aplicações — fundamentos de SR para ciências ambientais.</p>
+</div>
+</a>
+
+<a class="resource-card" href="https://edisciplinas.usp.br/pluginfile.php/4006006/mod_resource/content/1/Manual_Geoprocessamento.pdf" target="_blank">
+<div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
+<div class="res-info">
+<h4>Rosa & Brito (1996)</h4>
+<p>Introdução ao Geoprocessamento — obra de referência sobre SIG e cartografia digital no Brasil.</p>
+</div>
+</a>
+
+<a class="resource-card" href="https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2004GL019920" target="_blank">
+<div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
+<div class="res-info">
+<h4>Tapley et al. (2004) — GRACE</h4>
+<p>The Gravity Recovery and Climate Experiment — satélite para monitoramento de recursos hídricos globais.</p>
+</div>
+</a>
+
 </div>
 ```
+
+::: {.callout-tip collapse="true" icon=false}
+## {{< fa plus-circle >}} Como sugerir uma leitura?
+
+Envie pelo [e-mail do professor](mailto:ldvsantos@uefs.br) com o assunto "Sugestão de leitura — Geotecnologias e SIG".
+:::
 
 ### {{< fa video >}} Videoaulas
 
