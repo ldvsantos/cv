@@ -342,3 +342,280 @@ section.title-slide.slide.level1:has(.section-header) div {
   margin: 0.5em 0 !important;
   text-align: center !important;
 }
+
+/* ============================================================
+   RESPONSIVIDADE MOBILE
+   Ajustes para dispositivos móveis e tablets
+   ============================================================ */
+
+/* ---- Viewport & Touch Optimization ---- */
+@media (pointer: coarse) {
+  /* Aumentar área de toque para controles de navegação */
+  .reveal .controls button {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  
+  /* Links e botões mais fáceis de tocar */
+  .reveal a,
+  .reveal .footer a {
+    padding: 4px 2px;
+  }
+}
+
+/* ---- Smartphones em Retrato (até 480px) ---- */
+@media screen and (max-width: 480px) {
+  .reveal .slides {
+    font-size: 0.55em !important;
+  }
+  
+  .reveal h1 { font-size: 1.4em !important; }
+  .reveal h2 { font-size: 1.2em !important; }
+  .reveal h3 { font-size: 1.05em !important; }
+  
+  /* Colunas empilhadas verticalmente */
+  .reveal .columns,
+  .columns {
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+  
+  .reveal .columns .column,
+  .columns .column {
+    flex: none !important;
+    width: 100% !important;
+  }
+  
+  /* Capa */
+  #title-slide::before {
+    width: 150px !important;
+    height: 50px !important;
+    margin-bottom: 1em !important;
+  }
+  
+  #title-slide .title {
+    font-size: 0.9em !important;
+    padding: 0 10px !important;
+  }
+  
+  #title-slide .subtitle {
+    font-size: 0.7em !important;
+    padding: 0 10px !important;
+  }
+  
+  #title-slide .author,
+  #title-slide .institute {
+    font-size: 0.65em !important;
+  }
+  
+  /* Boxes e destaques */
+  .box, .info-box, .highlight-box {
+    padding: 8px 10px !important;
+    margin: 5px 0 !important;
+    font-size: 0.85em !important;
+  }
+  
+  /* Tabelas responsivas */
+  .reveal table {
+    font-size: 0.65em !important;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Footer compacto */
+  .reveal .footer {
+    font-size: 0.35em !important;
+    min-height: 22px !important;
+    padding: 2px 5px !important;
+    grid-template-columns: 40px 1fr 40px !important;
+  }
+  
+  .reveal .footer::before {
+    width: 40px !important;
+    height: 16px !important;
+  }
+  
+  /* Controles de navegação */
+  .reveal .controls {
+    bottom: 28px !important;
+  }
+  
+  /* Número do slide */
+  .reveal .slide-number {
+    font-size: 0.45em !important;
+    padding: 2px 5px !important;
+    bottom: 3px !important;
+    right: 8px !important;
+  }
+  
+  /* Imagens: respeitar o container */
+  .reveal img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Diagrama scroll */
+  .diagram-scroll {
+    max-height: 300px !important;
+    padding: 8px !important;
+  }
+  
+  /* Section header */
+  .section-header {
+    font-size: 0.4em !important;
+    padding: 8px 16px !important;
+  }
+  
+  /* Circle icons */
+  .circle {
+    width: 1em !important;
+    height: 1em !important;
+    line-height: 1em !important;
+    font-size: 0.85em !important;
+  }
+}
+
+/* ---- Smartphones em Paisagem e Tablets pequenos (481px–768px) ---- */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .reveal .slides {
+    font-size: 0.7em !important;
+  }
+  
+  .reveal h1 { font-size: 1.6em !important; }
+  .reveal h2 { font-size: 1.3em !important; }
+  .reveal h3 { font-size: 1.1em !important; }
+  
+  /* Colunas: empilhar se muito estreitas */
+  .reveal .columns,
+  .columns {
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+  }
+  
+  .reveal .columns .column,
+  .columns .column {
+    min-width: 45% !important;
+  }
+  
+  /* Capa */
+  #title-slide::before {
+    width: 200px !important;
+    height: 70px !important;
+    margin-bottom: 1.5em !important;
+  }
+  
+  #title-slide .title {
+    font-size: 1.1em !important;
+  }
+  
+  #title-slide .subtitle {
+    font-size: 0.85em !important;
+  }
+  
+  /* Boxes */
+  .box, .info-box, .highlight-box {
+    padding: 10px 12px !important;
+  }
+  
+  /* Tabelas */
+  .reveal table {
+    font-size: 0.75em !important;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Footer */
+  .reveal .footer {
+    font-size: 0.4em !important;
+    grid-template-columns: 50px 1fr 50px !important;
+  }
+  
+  .reveal .footer::before {
+    width: 50px !important;
+    height: 18px !important;
+  }
+  
+  /* Imagens */
+  .reveal img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Diagrama scroll */
+  .diagram-scroll {
+    max-height: 400px !important;
+  }
+}
+
+/* ---- Tablets (769px–1024px) ---- */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .reveal .slides {
+    font-size: 0.85em !important;
+  }
+  
+  /* Colunas adaptáveis */
+  .reveal .columns,
+  .columns {
+    flex-wrap: wrap !important;
+  }
+  
+  /* Tabelas */
+  .reveal table {
+    font-size: 0.8em !important;
+  }
+  
+  /* Footer */
+  .reveal .footer {
+    font-size: 0.45em !important;
+    grid-template-columns: 60px 1fr 60px !important;
+  }
+  
+  /* Imagens */
+  .reveal img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* ---- Melhorias gerais mobile (qualquer tela < 1280px) ---- */
+@media screen and (max-width: 1279px) {
+  /* Scroll suave em conteúdo longo */
+  .reveal .slides section {
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  
+  /* Garantir que código não transborde */
+  .reveal pre {
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    font-size: 0.85em !important;
+  }
+  
+  .reveal pre code {
+    max-width: 100% !important;
+    word-wrap: break-word !important;
+    white-space: pre-wrap !important;
+  }
+  
+  /* MathJax/KaTeX overflow */
+  .reveal .math,
+  .reveal .MathJax,
+  .reveal .katex {
+    overflow-x: auto !important;
+    max-width: 100% !important;
+  }
+  
+  /* Callouts responsivos */
+  .reveal .callout {
+    padding: 8px 12px !important;
+    margin: 5px 0 !important;
+  }
+  
+  /* Garantir que iframes/embeds sejam responsivos */
+  .reveal iframe {
+    max-width: 100% !important;
+  }
+}
