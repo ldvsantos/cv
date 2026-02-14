@@ -84,10 +84,11 @@ A canaleta verde é uma técnica de **bioengenharia de solos** que substitui os 
 ## Canaleta verde vs. canal convencional {.smaller-text}
 
 ::: {.columns}
-::: {.column width="50%"}
+::: {.column width="58%"}
 
-### Comparação funcional
+### Comparação funcional {style="font-size: 0.85em;"}
 
+::: {style="font-size: 0.65em;"}
 | Aspecto | Canal Convencional | Canaleta Verde |
 |---------|-------------------|----------------|
 | Revestimento | Concreto, gabião, pedra | Vegetação viva + biomanta |
@@ -102,14 +103,15 @@ A canaleta verde é uma técnica de **bioengenharia de solos** que substitui os 
 | Recarga de aquífero | Não contribui | Contribui significativamente |
 
 : {.striped .hover}
+:::
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="42%"}
 
-### Quando utilizar a canaleta verde?
+### Quando utilizar a canaleta verde? {style="font-size: 0.85em;"}
 
-::: {.info-box}
+::: {.info-box style="font-size: 0.6em;"}
 **Indicações principais**
 
 - Saída de terraços em gradiente (canal escoadouro vegetado)
@@ -120,7 +122,7 @@ A canaleta verde é uma técnica de **bioengenharia de solos** que substitui os 
 - Sistemas de drenagem sustentável (SuDS) urbanos
 :::
 
-::: {.highlight-box}
+::: {.highlight-box style="font-size: 0.6em;"}
 A rugosidade da vegetação ($n = 0{,}030$ a $0{,}150$) é até **10 vezes maior** que a do concreto ($n = 0{,}012$), o que reduz a velocidade do fluxo e a tensão cisalhante no leito, protegendo o solo contra incisão.
 :::
 :::
@@ -342,13 +344,13 @@ $$h_{total} = h_{projeto} + h_{borda\,livre}$$
 ### Esquema da seção
 
 ```
-        ┌─── T (largura superficial) ───┐
-        │                                │
-     ╱──┼────────── B ──────────────┼──╲   ← borda livre
+      ┌─── T (largura superficial) ───┐
+        │                            │
+     ╱──┼────────── B ───────────────┼─╲   ← borda livre
     ╱   │                            │  ╲
-   ╱    │←── b (base menor) ──→│    ╲  h
-  ╱     │                            │   ╲
- ╱──────┼────────────────────────────┼────╲
+   ╱    │   ←── b (base menor) ──→   │   ╲  h
+  ╱     │                            │    ╲
+ ╱──────┼────────────────────────────┼────-╲
          Z:1              Z:1
 ```
 
