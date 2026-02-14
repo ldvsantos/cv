@@ -320,10 +320,14 @@ Envie pelo [e-mail do professor](mailto:ldvsantos@uefs.br) com o assunto "Sugest
 ### {{< fa video >}} Videoaulas
 
 ```{=html}
-<div class="slide-grid">
-<a class="slide-card" href="https://youtu.be/OMVXSD_HQDk?si=TFMfaqUXlvnK75-c" target="_blank">
-<div class="slide-icon"><i class="fa-solid fa-video"></i></div>
-<div class="slide-info">
+<div class="video-grid">
+
+<a class="video-card" href="https://www.youtube.com/watch?v=OMVXSD_HQDk" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/OMVXSD_HQDk/hqdefault.jpg" alt="Milton Santos em aula sobre paisagem e espaço">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
 <h4>Milton Santos em aula sobre paisagem e espaço</h4>
 <p>Conferência do geógrafo Milton Santos discutindo os conceitos fundamentais de paisagem e espaço geográfico.</p>
 </div>
