@@ -1,6 +1,6 @@
 ---
 title: "Extensão Rural"
-description: "Ambiente virtual da disciplina de Extensão Rural — aulas, leituras, vídeos e recursos."
+description: "Ambiente virtual da disciplina de Extensão Rural  -  aulas, leituras, vídeos e recursos."
 ---
 
 ::: {.text-end .mb-3}
@@ -12,9 +12,9 @@ description: "Ambiente virtual da disciplina de Extensão Rural — aulas, leitu
   <div class="ava-icon"><i class="fa-solid fa-handshake-angle"></i></div>
   <div>
     <h2 class="ava-title">Extensão Rural</h2>
-    <p class="ava-subtitle">Políticas públicas de extensão rural, ATER digital, comunicação dialógica, metodologias participativas e avaliação de impacto para engenheiros(as) agrônomos(as).</p>
+    <p class="ava-subtitle">Fundamentos teórico-conceituais, políticas públicas, institucionalidade da ATER, metodologias participativas, agroecologia, segurança alimentar, elaboração de projetos e produção de material didático para engenheiros(as) agrônomos(as).</p>
     <div class="ava-stats">
-      <span class="ava-stat"><i class="fa-solid fa-display"></i> 6 aulas</span>
+      <span class="ava-stat"><i class="fa-solid fa-display"></i> 12 aulas</span>
       <span class="ava-stat"><i class="fa-solid fa-book"></i> Leituras</span>
       <span class="ava-stat"><i class="fa-solid fa-video"></i> Vídeos</span>
     </div>
@@ -25,7 +25,7 @@ description: "Ambiente virtual da disciplina de Extensão Rural — aulas, leitu
 ::: {.callout-note collapse="true" icon=false}
 ## {{< fa clipboard-list >}} Ementa da Disciplina
 
-Políticas de extensão rural no Brasil: da difusão à participação; Política Nacional de Assistência Técnica e Extensão Rural (PNATER); ATER digital e difusão tecnológica; comunicação rural e metodologias participativas (DRP, DAMS, andragogia); modelos institucionais de ATER pública e privada; estudos de caso de extensão rural; avaliação participativa de impacto de tecnologias sociais.
+Fundamentos teórico-conceituais e históricos da extensão rural; objetos de mediação (conhecimento cotidiano, ciência, técnica e tecnologia social); teoria pedagógica e extensão rural (concepção tradicional, nova, tecnicista e crítico-social); institucionalização da ER no Brasil (difusionismo, FSR, participativo, agroecológico); PNATER e ATER digital; comunicação rural e metodologias participativas (DRP, andragogia); ATER pública e privada; estudos de caso; agroecologia e transição agroecológica; segurança alimentar, certificação e indicações geográficas; elaboração de projetos de extensão rural; produção de material didático e de divulgação; avaliação participativa de impacto.
 :::
 
 ::: {.callout-tip collapse="true" icon=false}
@@ -33,16 +33,22 @@ Políticas de extensão rural no Brasil: da difusão à participação; Polític
 
 | Semana | Aula | Assuntos Previstos |
 |:------:|:----:|:-------------------|
-| 1ª | 01 | Políticas de Extensão Rural: PNATER, princípios, diretrizes, ATER pública e andragogia. |
-| 2ª | 02 | ATER Digital e Difusão Tecnológica: inovação, tecnologias de comunicação, aplicativos. |
-| 3ª | 03 | Comunicação Rural e Metodologias Participativas: DRP, DAMS, construção do conhecimento. |
-| 4ª | 04 | ATER Pública e Privada: modelos institucionais, experiências, desafios, Emater. |
+| 1ª | 01 | Políticas de Extensão Rural: PNATER, princípios, diretrizes, andragogia. |
+| 2ª | 02 | ATER Digital e Difusão Tecnológica: inovação, tecnologias de comunicação. |
+| 3ª | 03 | Comunicação Rural e Metodologias Participativas: DRP, construção do conhecimento. |
+| 4ª | 04 | ATER Pública e Privada: modelos institucionais, experiências, desafios. |
 | 5ª | 05 | Casos Práticos de Extensão Rural: experiências brasileiras, lições aprendidas. |
-| 6ª | 06 | Avaliação Participativa de Impacto: indicadores, monitoramento, metodologias, cisternas. |
+| 6ª | 06 | Avaliação Participativa de Impacto: indicadores, monitoramento, cisternas. |
+| 7ª | 07 | Objetos de Mediação: conhecimento cotidiano, ciência, técnica, tecnologia social. |
+| 8ª | 08 | Teoria Pedagógica e Extensão: concepção tradicional, nova, tecnicista, crítico-social. |
+| 9ª | 09 | Agroecologia e Transição Agroecológica: princípios, marcos legais, PNAPO. |
+| 10ª | 10 | Segurança Alimentar e Certificação: SAN, soberania, SPG, indicações geográficas. |
+| 11ª | 11 | Elaboração de Projetos de Extensão Rural: diagnóstico, marco lógico, defesa. |
+| 12ª | 12 | Produção de Material Didático: cartilhas, vídeos, mídias digitais para ATER. |
 
 : {.striped .hover}
 
-> **Observação:** Disciplina prática com ênfase em metodologias participativas, comunicação dialógica e implementação de projetos de extensão rural.
+> **Observação:** Disciplina com ênfase em metodologias participativas, comunicação dialógica, agroecologia e implementação de projetos de extensão rural.
 :::
 
 ---
@@ -88,7 +94,7 @@ Políticas de extensão rural no Brasil: da difusão à participação; Polític
 <a class="slide-card" href="../aulas/extensao_rural/aulas/aula12_casos_praticos_extensao/aula12_casos_praticos_extensao.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 05 | Casos Práticos de Extensão</h4>
+<h4>Aula 05 | Casos Práticos de Extensão Rural</h4>
 <p>Experiências concretas de extensão rural no Brasil.</p>
 </div>
 </a>
@@ -98,6 +104,54 @@ Políticas de extensão rural no Brasil: da difusão à participação; Polític
 <div class="slide-info">
 <h4>Aula 06 | Avaliação Participativa de Impacto</h4>
 <p>Avaliação de tecnologias sociais: cisternas e quintais produtivos.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula17_objetos_mediacao_extensao/aula17_objetos_mediacao_extensao.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 07 | Objetos de Mediação na Extensão Rural</h4>
+<p>Conhecimento cotidiano, ciência, técnica e tecnologia social.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula18_teoria_pedagogica_extensao/aula18_teoria_pedagogica_extensao.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 08 | Teoria Pedagógica e Extensão Rural</h4>
+<p>Concepção tradicional, nova, tecnicista e crítico-social.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula19_agroecologia_transicao/aula19_agroecologia_transicao.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 09 | Agroecologia e Transição Agroecológica</h4>
+<p>Princípios ecológicos, marcos legais (PNAPO) e papel do extensionista.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula20_seguranca_alimentar_certificacao/aula20_seguranca_alimentar_certificacao.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 10 | Segurança Alimentar e Certificação</h4>
+<p>SAN, soberania alimentar, SPG, OCS e indicações geográficas.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula21_elaboracao_projetos_extensao/aula21_elaboracao_projetos_extensao.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 11 | Elaboração de Projetos de Extensão Rural</h4>
+<p>Diagnóstico participativo, marco lógico, orçamento e defesa.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/extensao_rural/aulas/aula22_producao_material_didatico/aula22_producao_material_didatico.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 12 | Produção de Material Didático e de Divulgação</h4>
+<p>Cartilhas, folders, vídeos e mídias digitais para ATER.</p>
 </div>
 </a>
 

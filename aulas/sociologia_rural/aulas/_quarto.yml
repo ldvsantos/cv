@@ -1,0 +1,17 @@
+project:
+  type: default
+format:
+  revealjs:
+    theme: [simple, ../../assets/uefs.scss]
+    css: ../../assets/custom.css
+    width: 1280
+    height: 720
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+    slide-number: true
+    controls: true
+    navigation-mode: linear
+    embed-resources: true
+    logo: ../../assets/logo-uefs.webp
+    footer: "UFS  -  Sociologia Rural"
