@@ -1,0 +1,43 @@
+---
+title: "Canaleta Verde como Infraestrutura de Drenagem Vegetada: Dimensionamento Hidráulico e Eficiência Ambiental"
+author: "Luiz Diego Vidal Santos"
+date: "2026-02-14"
+categories: [bioengenharia, drenagem, NBS, Manning, erosão, canaleta verde]
+description: "A canaleta verde substitui canais de concreto convencionais ao empregar vegetação viva como revestimento estrutural, combinando condução controlada do escoamento, infiltração no perfil e filtração de poluentes difusos com dimensionamento baseado na equação de Manning."
+image: "canaleta-verde.jpg"
+lang: pt-BR
+---
+
+A drenagem pluvial convencional, centrada em canais de concreto com rugosidade de Manning da ordem de $n = 0{,}012$ a $0{,}015$, opera sob o paradigma da evacuação rápida, o que maximiza velocidades de escoamento, elimina a infiltração e transfere integralmente a carga hídrica e sedimentar para os corpos receptores a jusante. A canaleta verde (*vegetated swale*, *bioswale* ou *grassed waterway*) inverte esse paradigma ao empregar a vegetação viva como elemento de rugosidade hidráulica e proteção antierosiva, elevando o coeficiente de Manning para a faixa de $n = 0{,}030$ a $0{,}150$, o que representa um aumento de até dez vezes em relação ao concreto e, consequentemente, uma redução proporcional na velocidade do fluxo e na tensão cisalhante no leito.
+
+## Conceito operacional e funções simultâneas
+
+A canaleta verde consiste em um canal de drenagem raso e largo, escavado no terreno ou conformado sobre a superfície, cujo leito e taludes são integralmente revestidos com gramíneas, leguminosas ou combinações, frequentemente protegidos por biomanta antierosiva na fase de estabelecimento. O sistema desempenha simultaneamente cinco funções que o diferenciam da engenharia de drenagem convencional. A condução do escoamento pluvial ocorre com velocidade controlada pela rugosidade da cobertura vegetal, enquanto a dissipação de energia se processa pela interação entre o fluxo e a massa vegetal, reduzindo a capacidade erosiva da água. A infiltração da água no perfil do solo ao longo do percurso contribui para a recarga de aquíferos, ao passo que a filtração de sedimentos e poluentes difusos opera por deposição gravitacional segundo a lei de Stokes ($v_s = (\rho_s - \rho_w) \cdot g \cdot d^2 / 18\mu$) e por adsorção radicular. A estabilização do solo pelo sistema radicular das plantas confere ao conjunto uma resiliência mecânica crescente ao longo do tempo.
+
+## Regime hidráulico e critérios de projeto
+
+O escoamento em canaletas verdes opera predominantemente em regime subcrítico, caracterizado por um Número de Froude inferior à unidade ($Fr = V / \sqrt{g \cdot y_m} < 1$), o que é desejável para evitar incisão erosiva no leito. A tensão cisalhante sobre o fundo ($\tau_0 = \gamma \cdot R_h \cdot S$) é mitigada pela vegetação, que reduz o raio hidráulico efetivo ao preencher parcialmente a seção e dissipa energia por arrasto sobre folhas e colmos.
+
+A velocidade máxima admissível varia conforme o tipo de revestimento vegetal. Grama baixa com menos de 5 cm de altura suporta velocidades de até 1,2 m/s e tensão cisalhante de 28 N/m², enquanto grama densa com mais de 15 cm eleva esses limiares para 1,8 m/s e 96 N/m². O capim-vetiver (*Chrysopogon zizanioides*) se destaca como a espécie mais resistente, tolerando velocidades de 3,0 a 5,0 m/s e tensões cisalhantes de 300 a 600 N/m², graças ao sistema radicular fasciculado que penetra até 3 m de profundidade e desenvolve resistência à tração entre 40 e 180 MPa (Truong, Loch & Cook, 2008).
+
+## Dimensionamento pela equação de Manning
+
+O dimensionamento hidráulico fundamenta-se na equação de Manning ($Q = (1/n) \cdot A \cdot R_h^{2/3} \cdot S^{1/2}$) aplicada à seção trapezoidal, cuja geometria é definida pela base menor $b$, profundidade $h$ e inclinação do talude $Z$ (tipicamente entre 3:1 e 6:1). A área da seção transversal é calculada por $A = (b + Z \cdot h) \cdot h$, o perímetro molhado por $P = b + 2h\sqrt{1 + Z^2}$ e o raio hidráulico por $R_h = A / P$.
+
+Um exemplo de dimensionamento para uma bacia com coeficiente de escoamento $C = 0{,}55$, intensidade pluviométrica $I = 180$ mm/h, área de contribuição $A = 4{,}5$ ha, declividade longitudinal $S = 3\%$ e rugosidade $n = 0{,}060$ (grama média) ilustra a aplicação prática. A vazão de projeto pelo Método Racional ($Q = C \cdot I \cdot A / 360$) resulta em 1,24 m³/s, exigindo uma área mínima de seção $A_{min} = 0{,}83$ m² para respeitar $V_{max} = 1{,}5$ m/s. Uma seção com $h = 0{,}50$ m e $b = 0{,}90$ m fornece $A = 1{,}20$ m² e largura superficial $T = 3{,}90$ m, gerando raio hidráulico $R_h = 0{,}296$ m, velocidade $V = 1{,}29$ m/s (inferior ao limite admissível) e vazão calculada $Q_{calc} = 1{,}55$ m³/s, o que confere folga hidráulica de 25%. O Número de Froude resultante ($Fr = 0{,}74$) confirma o regime subcrítico, e a profundidade total escavada atinge $h_t = 0{,}65$ m com a borda livre de 0,15 m.
+
+## Eficiência ambiental e remoção de poluentes
+
+A canaleta verde funciona como biofiltro linear, combinando sedimentação gravitacional, filtração mecânica pela massa vegetal e infiltração no perfil do solo. A eficiência de remoção de sedimentos totais em suspensão (SST) situa-se entre 60 e 90%, e o fósforo particulado é retido na faixa de 40 a 70% por sedimentação e adsorção. O nitrogênio total apresenta remoção entre 20 e 50% via infiltração e absorção radicular, enquanto óleos e graxas são removidos entre 50 e 80% por filtração e biodegradação. Metais pesados são adsorvidos na faixa de 30 a 60% por complexação com a matéria orgânica do solo e da rizosfera.
+
+## Implantação com hidrossemeadura e biomanta
+
+A estabilização inicial da canaleta requer proteção contra erosão durante o período de estabelecimento da vegetação, que se estende por 60 a 90 dias em clima tropical. A biomanta antierosiva cumpre essa função, sendo classificada conforme a durabilidade: o tipo BM1 (palha com malha de juta) protege por 6 a 12 meses, o BM2 (fibra de coco com polipropileno) por 12 a 24 meses e o BM3 (fibra de coco dupla) por 24 a 36 meses. O protocolo de instalação exige grampos em U espaçados de 0,5 a 1,0 m, sobreposição lateral de 15 cm e longitudinal de 20 cm, com cravação mínima de 15 cm.
+
+A hidrossemeadura complementa a biomanta ao projetar sobre a superfície uma mistura homogênea de *Brachiaria decumbens* (8 a 10 g/m²), *Paspalum notatum* (5 a 8 g/m²), *Arachis pintoi* (3 a 5 g/m²) e *Chrysopogon zizanioides* (2 a 3 g/m²), associada a fertilizante NPK 10-10-10 (30 a 50 g/m²), calcário dolomítico (50 a 100 g/m²), mulch de celulose (100 a 200 g/m²) e ligante adesivo (5 a 10 g/m²). A cobertura vegetal deve atingir 80% em seis meses, com erosão no leito inferior a 1 cm/ano, conforme os indicadores de monitoramento recomendados pela USDA-NRCS (2007).
+
+## Articulação com dissipadores de energia internos
+
+Em declividades superiores a 3%, a canaleta verde pode ser segmentada por dissipadores internos que reduzem a energia específica do escoamento entre trechos consecutivos. Cordões de vetiver são indicados para declividades de 3 a 5% com espaçamento de 5 a 10 m, enquanto enrocamentos pontuais atendem à faixa de 5 a 8% com espaçamento de 3 a 5 m. Degraus revestidos aplicam-se a declividades superiores a 8% com espaçamento de 2 a 3 m, e paliçadas internas de bambu cobrem declividades acima de 5% com espaçamento de 3 a 8 m. A coesão efetiva do sistema cresce ao longo do tempo pela contribuição radicular ($c' = c'_{solo} + \Delta c'_{raiz}$), convertendo a estrutura inicialmente dependente da biomanta em um sistema autossustentável.
+
+A canaleta verde configura, portanto, uma solução de bioengenharia de solos que integra dimensionamento hidráulico rigoroso (equação de Manning), seleção de espécies com parâmetros de resistência mecânica e hidráulica documentados e um protocolo de implantação e monitoramento que garante a transição de infraestrutura construída para infraestrutura viva no horizonte de dois a três anos.

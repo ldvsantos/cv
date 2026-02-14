@@ -1,0 +1,41 @@
+---
+title: "Bacias de Captação para Controle de Erosão em Estradas Rurais: Dimensionamento e Eficiência de Retenção"
+author: "Luiz Diego Vidal Santos"
+date: "2026-02-14"
+categories: [bioengenharia, barraginhas, erosão, estradas rurais, EUPS, NBS]
+description: "Bacias de captação escavadas nas margens de estradas rurais não pavimentadas retêm entre 50 e 80% dos sedimentos transportados pelo escoamento superficial, com dimensionamento baseado na EUPS e na Velocidade de Infiltração Básica do solo, e vida útil de 10 a 20 anos com manutenção adequada."
+image: "bacias-captacao.jpg"
+lang: pt-BR
+---
+
+Estradas rurais não pavimentadas funcionam como superfícies impermeáveis lineares que interceptam a drenagem natural das encostas, concentram o escoamento superficial e descarregam volumes significativos de água e sedimentos diretamente sobre os terrenos adjacentes e os corpos hídricos a jusante. Esse processo erosivo, potencializado pela ausência de dispositivos de drenagem, constitui uma das principais fontes de degradação ambiental difusa em bacias hidrográficas rurais do Semiárido brasileiro. As bacias de captação (*detention ponds* ou *barraginhas*), escavadas nas margens dessas estradas, oferecem uma solução tecnicamente acessível e operacionalmente simples para romper esse ciclo, ao captar, armazenar temporariamente, infiltrar a água e reter os sedimentos transportados.
+
+## Mecanismo funcional e eficiência
+
+O princípio operacional das bacias de captação fundamenta-se na criação de reservatórios escavados que interrompem o fluxo concentrado proveniente da estrada, reduzem a velocidade da água a valores próximos de zero e induzem a deposição gravitacional das partículas em suspensão. A eficiência de retenção de sedimentos situa-se entre 50 e 80% (Fiener, Auerswald & Weigand, 2005), dependendo do volume da bacia, da granulometria dos sedimentos e da frequência de manutenção. A água captada infiltra-se no perfil do solo ao longo do tempo, contribuindo para a recarga dos aquíferos e para a manutenção da disponibilidade hídrica na estação seca.
+
+No contexto da Equação Universal de Perda de Solo (EUPS), onde $A = R \cdot K \cdot L \cdot S \cdot C \cdot P$, as bacias de captação atuam diretamente sobre dois fatores. A segmentação do comprimento de rampa reduz o fator $L$ (comprimento de declive), e a interrupção do escoamento concentrado reduz o fator $P$ (práticas conservacionistas), atenuando proporcionalmente a perda de solo estimada.
+
+## Dimensionamento e parâmetros de projeto
+
+As dimensões típicas das bacias variam conforme a área de captação e o regime pluviométrico local. O comprimento oscila entre 3 e 8 m, a largura entre 2 e 4 m e a profundidade entre 1 e 2 m, resultando em volumes de armazenamento de 5 a 30 m³. A inclinação dos taludes internos é dimensionada na proporção de 1:1 a 1:1,5, e o volume de projeto é calculado por $V_{bacia} = C \cdot i \cdot A_{drenagem} \cdot t$, onde $C$ é o coeficiente de escoamento, $i$ é a intensidade pluviométrica, $A_{drenagem}$ é a área de contribuição e $t$ é a duração do evento.
+
+O espaçamento entre bacias consecutivas ao longo da estrada é determinado pela declividade longitudinal. Em terrenos planos (0 a 3%), o espaçamento varia de 80 a 120 m. Em declividades suaves (3 a 8%), reduz-se para 50 a 80 m. Em relevos ondulados (8 a 12%), o intervalo situa-se entre 30 e 50 m. Em declividades fortes (12 a 20%), o espaçamento cai para 20 a 30 m, e em terrenos montanhosos (acima de 20%), as bacias devem ser espaçadas de 15 a 20 m para interceptar adequadamente o escoamento concentrado.
+
+## Caracterização do solo e Velocidade de Infiltração Básica
+
+A eficiência de infiltração das bacias depende diretamente das propriedades hidráulicas do solo local, avaliadas pela Velocidade de Infiltração Básica (VIB), medida em campo com infiltrômetro de anel duplo. Solos com VIB muito alta (acima de 30 mm/h) permitem o esvaziamento rápido da bacia entre eventos consecutivos, maximizando a capacidade de captação. Solos com VIB alta (15 a 30 mm/h) e média (5 a 15 mm/h) apresentam desempenho adequado, enquanto solos com VIB baixa (1 a 5 mm/h) ou muito baixa (inferior a 1 mm/h) exigem maior volume de armazenamento e maior frequência de dragagem.
+
+A resistência à penetração do solo, avaliada pelo penetrômetro de impacto Stolf ($R = 0{,}1 \times [5{,}6 + 6{,}89 \times (10 \times NI / P)]$), complementa a caracterização ao identificar camadas compactadas que podem limitar a infiltração vertical. A análise granulométrica por peneiramento (aberturas de 19 mm a 0,053 mm) e a umidade gravimétrica ($U = M_a / M_s$) completam o quadro de caracterização necessário para o dimensionamento.
+
+## Estudo de caso: Campus Rural UFS, São Cristóvão-SE
+
+O campo experimental localizado no Campus Rural da Universidade Federal de Sergipe (10°55'S, 37°11'O), com área de 181 ha e precipitação média anual de 1.092 mm sob clima tropical (As' na classificação de Köppen-Geiger), ilustra a aplicação integrada das bacias de captação em um mosaico pedológico complexo. O levantamento aerofotogramétrico por drone (DJI Phantom 4 PRO, voo a 120 m, GSD de 3,2 cm, 41 pontos de controle e RMSE horizontal de 0,04 m e vertical de 0,11 m) permitiu o mapeamento detalhado do relevo e da cobertura do solo via NDVI ($NDVI = (NIR - R) / (NIR + R)$), com valores variando de 0,14 (solo exposto) a 0,75 (vegetação arbórea).
+
+A distribuição pedológica da área revela Neossolo Flúvico (27,3%), Argissolo Vermelho Amarelo (25,9%), associação Argissolo-Plintossolo (29,3%), Plintossolo Háplico (11,1%) e Gleissolo Háplico (6,4%). O relevo predominante é ondulado, com 45% da área na classe de 8 a 20% de declividade, seguido por suave ondulado (22%) e plano (20%), com contribuições menores de fortemente ondulado (11%) e montanhoso (2%). Essa heterogeneidade pedológica e topográfica exige o dimensionamento diferenciado das bacias para cada trecho da malha viária, considerando as variações locais de VIB e área de contribuição.
+
+## Custos e manutenção
+
+Os custos de implantação situam-se entre R$ 500 e R$ 2.000 por bacia (variação dependente do volume e do acesso de maquinário), com custos de dragagem de R$ 200 a R$ 800 por evento e manutenção rotineira de R$ 100 a R$ 300 por ano por bacia. A vida útil sem qualquer manutenção limita-se a 1 a 3 anos (assoreamento completo), porém a dragagem anual estende o funcionamento para 5 a 10 anos, e a combinação com práticas conservacionistas complementares (revegetação de margens, cordões de contorno, adequação do traçado) pode alcançar 10 a 20 anos ou mais.
+
+As bacias de captação representam, portanto, a menor unidade funcional de um sistema de conservação de solo e água em estradas rurais, atuando como ponto de interceptação e infiltração que fragmenta o comprimento de rampa efetivo e reduz a energia erosiva do escoamento antes que este atinja os corpos hídricos. A integração com a modelagem hidrológica por chuvas intensas ($i = K \cdot T_r^a / (t + b)^c$) permite o dimensionamento otimizado para diferentes períodos de retorno, alinhando o projeto à variabilidade climática regional.
