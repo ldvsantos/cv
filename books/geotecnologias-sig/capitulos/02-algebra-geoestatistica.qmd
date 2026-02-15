@@ -1,0 +1,158 @@
+# Álgebra de Mapas, Inferência e Geoestatística Espacial {#sec-algebra-geoestatistica}
+
+## Álgebra de mapas
+
+A álgebra de mapas, formalizada por Tomlin [-@tomlin1990], constitui o arcabouço operacional para manipulação de dados raster em SIG. Trata-se de um conjunto de operações aritméticas, lógicas e estatísticas aplicadas sobre grades regulares de pixels, organizadas em quatro categorias funcionais segundo a vizinhança de cálculo envolvida.
+
+As operações locais (ou pontuais) calculam o valor de cada pixel de saída exclusivamente a partir dos valores dos pixels correspondentes nas camadas de entrada. Exemplos incluem a soma, subtração, razão e combinação lógica de bandas espectrais, como o cálculo do NDVI ($\frac{\rho_{NIR} - \rho_{RED}}{\rho_{NIR} + \rho_{RED}}$), que é uma operação local aplicada pixel a pixel sobre duas bandas de uma imagem de satélite. As operações focais (ou de vizinhança) calculam o valor de cada pixel com base em uma janela de vizinhança ao seu redor, como filtros de média, mediana, desvio-padrão e operadores morfológicos (erosão, dilatação). As operações zonais calculam estatísticas agregadas para regiões definidas por uma camada de zonas (por exemplo, a precipitação média por sub-bacia ou o NDVI médio por classe de uso do solo). As operações globais consideram toda a grade para computar o resultado, como o cálculo de fluxo acumulado a partir de um modelo digital de elevação.
+
+A @tbl-algebra resume as quatro categorias e suas aplicações em geoprocessamento ambiental.
+
+| Categoria | Vizinhança | Exemplo ambiental | Operação SIG típica |
+|:----------|:-----------|:-------------------|:-------------------|
+| Local | Pixel individual | NDVI, razão de bandas, reclassificação | Raster Calculator |
+| Focal | Janela n×n | Filtro de média (suavização), declividade, curvatura | r.neighbors (GRASS), Focal Statistics (ArcGIS) |
+| Zonal | Regiões (zonas) | NDVI médio por município, precipitação por bacia | Zonal Statistics |
+| Global | Grade inteira | Fluxo acumulado, distância euclidiana, custo acumulado | r.watershed, Cost Distance |
+
+: Categorias da álgebra de mapas de Tomlin e suas aplicações ambientais. {#tbl-algebra .striped .hover}
+
+## Overlay vetorial
+
+Enquanto a álgebra de mapas opera sobre grades raster, o overlay vetorial realiza operações de conjunto (interseção, união, diferença simétrica, clip) sobre geometrias de polígonos. A interseção de uma camada de aptidão agrícola com uma camada de áreas protegidas, por exemplo, produz uma nova camada cujos polígonos herdam atributos de ambas as entradas, permitindo identificar conflitos de uso. A união combina as geometrias mantendo todos os segmentos de fronteira, e a diferença remove de uma camada as regiões cobertas pela outra.
+
+Essas operações são computacionalmente custosas para bases de dados grandes (dezenas de milhares de polígonos complexos) e exigem topologia consistente nas camadas de entrada. Erros topológicos (polígonos com auto-interseção, lacunas, sobreposições) geram falhas silenciosas no overlay que podem propagar erros para toda a análise subsequente.
+
+## Modelos digitais de terreno
+
+Os Modelos Digitais de Terreno (MDTs) são representações matriciais da superfície terrestre que codificam a elevação em cada célula da grade. A partir do MDT, derivam-se variáveis topográficas fundamentais para hidrologia, geomorfologia e planejamento ambiental.
+
+A declividade ($S$) quantifica a taxa de variação da elevação no espaço:
+
+$$
+S = \arctan\left(\sqrt{\left(\frac{\partial z}{\partial x}\right)^2 + \left(\frac{\partial z}{\partial y}\right)^2}\right)
+$$
+
+onde $z$ é a elevação e $x$, $y$ são as coordenadas planas. O aspecto (orientação da vertente) indica a direção de máxima declividade, influenciando a insolação, a evapotranspiração e a distribuição da vegetação.
+
+O fluxo acumulado, calculado pelo algoritmo D8 (que direciona toda a água de cada célula para a célula vizinha de menor elevação) ou pelo algoritmo D-infinity [@tarboton1997] (que distribui o fluxo proporcionalmente entre as duas vizinhas de descida mais íngreme), é a base para a delimitação automática de bacias hidrográficas e redes de drenagem a partir de MDTs. O fluxo acumulado em uma célula estima, de forma simplificada, a área de contribuição a montante daquele ponto, e quando multiplicado pela declividade, resulta no índice de potência de escoamento, indicador de susceptibilidade à erosão linear.
+
+```{dot}
+//| label: fig-derivacoes-mdt
+//| fig-cap: "Produtos deriváveis de um MDT e suas aplicações ambientais."
+//| fig-width: 8
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=9, margin="0.25,0.12", penwidth=0.8]
+    edge [fontname="Helvetica", fontsize=8, color="#555555"]
+
+    MDT [label="Modelo Digital\nde Terreno (MDT)", fillcolor="#BBDEFB", color="#1565C0", fontsize=11]
+
+    S [label="Declividade", fillcolor="#C8E6C9", color="#2E7D32"]
+    A [label="Aspecto\n(orientação)", fillcolor="#C8E6C9", color="#2E7D32"]
+    C [label="Curvatura\n(convexa/côncava)", fillcolor="#C8E6C9", color="#2E7D32"]
+    FA [label="Fluxo acumulado\n(D8, D-inf)", fillcolor="#FFF9C4", color="#F9A825"]
+    DD [label="Direção de\ndrenagem", fillcolor="#FFF9C4", color="#F9A825"]
+    BH [label="Delimitação de\nbacias", fillcolor="#FFCCBC", color="#E64A19"]
+    RD [label="Rede de\ndrenagem", fillcolor="#FFCCBC", color="#E64A19"]
+    LS [label="Fator LS\n(RUSLE)", fillcolor="#E1BEE7", color="#7B1FA2"]
+    TWI [label="TWI\n(Índice topog.)", fillcolor="#E1BEE7", color="#7B1FA2"]
+
+    MDT -> S
+    MDT -> A
+    MDT -> C
+    MDT -> DD
+    DD -> FA
+    FA -> BH
+    FA -> RD
+    FA -> LS
+    S -> LS
+    S -> TWI
+    FA -> TWI
+}
+```
+
+## Análise de redes
+
+A análise de redes modela o espaço como um grafo composto por nós (interseções, localidades) e arestas (segmentos de estrada, trechos de rio) com pesos associados (distância, tempo de percurso, custo). Algoritmos clássicos de teoria dos grafos são aplicados diretamente sobre dados vetoriais de linhas para resolver problemas logísticos e ambientais.
+
+O algoritmo de Dijkstra encontra o caminho de menor custo entre dois nós, sendo utilizado para roteamento veicular, definição de rotas de escoamento agrícola e planejamento de estradas rurais. O algoritmo A* é uma variante heurística de Dijkstra que incorpora uma estimativa de distância ao destino, acelerando a busca em grafos grandes. O problema de fluxo máximo (max-flow), resolvido pelo algoritmo de Ford-Fulkerson, modela a capacidade de transporte de uma rede de drenagem ou de distribuição de água.
+
+## Inferência e estatística espacial
+
+A estatística espacial difere da estatística clássica por incorporar explicitamente a localização das observações no modelo. A Primeira Lei da Geografia de Tobler [-@tobler1970] postula que "tudo está relacionado com tudo o mais, mas coisas próximas estão mais relacionadas do que coisas distantes". Essa dependência espacial (autocorrelação) viola a premissa de independência das observações que fundamenta a maioria dos testes estatísticos clássicos e exige métodos próprios de análise.
+
+O Índice Global de Moran quantifica a autocorrelação espacial de uma variável contínua:
+
+$$
+I = \frac{n}{\sum_{i}\sum_{j} w_{ij}} \cdot \frac{\sum_{i}\sum_{j} w_{ij}(x_i - \bar{x})(x_j - \bar{x})}{\sum_{i}(x_i - \bar{x})^2}
+$$
+
+onde $n$ é o número de observações, $x_i$ é o valor observado na localização $i$, $\bar{x}$ é a média global e $w_{ij}$ são os pesos da matriz de vizinhança espacial. Valores de $I$ próximos de +1 indicam autocorrelação positiva (clusters de valores similares), valores próximos de −1 indicam autocorrelação negativa (padrão xadrez) e valores próximos de zero indicam ausência de padrão espacial (distribuição aleatória).
+
+O teste de significância do Índice de Moran compara o valor observado com a distribuição esperada sob a hipótese nula de aleatoriedade espacial (permutação aleatória dos valores entre as localizações). A rejeição da hipótese nula ($p < 0,05$) indica que o padrão espacial observado é improvável sob distribuição aleatória, sugerindo a existência de processos espacialmente estruturados.
+
+### LISA (indicadores locais de associação espacial)
+
+Enquanto o Moran Global fornece uma medida resumo para toda a distribuição, os indicadores LISA (Local Indicators of Spatial Association) propostos por Anselin [-@anselin1995] decompõem a autocorrelação global em contribuições locais, identificando onde se localizam os clusters e as anomalias espaciais.
+
+Cada observação $i$ recebe uma classificação em uma de quatro categorias: High-High (valor alto cercado por valores altos, cluster quente), Low-Low (valor baixo cercado por valores baixos, cluster frio), High-Low (valor alto cercado por valores baixos, outlier positivo) e Low-High (valor baixo cercado por valores altos, outlier negativo). Essa classificação, quando mapeada, produz o mapa de clusters LISA, ferramenta visual poderosa para identificar hotspots de degradação ambiental, clusters de incidência de doenças, concentrações de pobreza ou zonas de alta produtividade agrícola.
+
+::: {.callout-warning}
+## MAUP (Problema da Unidade de Área Modificável)
+O MAUP adverte que os resultados de análises espaciais com dados agregados (por município, bacia, setor censitário) dependem da forma e do tamanho das unidades de agregação. Uma variável que apresenta correlação significativa com outra no nível municipal pode não apresentá-la no nível estadual, e vice-versa. Esse problema é inerente a qualquer análise com dados zonais e deve ser reconhecido explicitamente na interpretação dos resultados.
+:::
+
+## Geoestatística e krigagem
+
+A geoestatística, desenvolvida por Georges Matheron a partir dos trabalhos de Daniel Krige na mineração sul-africana, é a disciplina que modela a variabilidade espacial de variáveis regionalizadas (variáveis que apresentam continuidade espacial mas também flutuações locais). A ferramenta central da geoestatística é o semivariograma, que quantifica a dependência espacial como função da distância entre observações.
+
+O semivariograma experimental é calculado como:
+
+$$
+\hat{\gamma}(h) = \frac{1}{2N(h)} \sum_{i=1}^{N(h)} [Z(s_i) - Z(s_i + h)]^2
+$$
+
+onde $N(h)$ é o número de pares de observações separados pela distância $h$, $Z(s_i)$ é o valor da variável na localização $s_i$ e $Z(s_i + h)$ é o valor na localização separada por $h$. O semivariograma cresce da origem até estabilizar-se em um patamar, e três parâmetros descrevem seu comportamento.
+
+O efeito pepita ($C_0$) é o valor do semivariograma na origem (mas não em $h = 0$), representando a variabilidade em escalas menores que a resolução amostral somada ao erro de medição. O patamar ($C_0 + C$) é o valor no qual o semivariograma se estabiliza, correspondendo à variância total da variável. O alcance ($a$) é a distância na qual o semivariograma atinge o patamar, indicando o raio de dependência espacial; observações separadas por distâncias superiores ao alcance são estatisticamente independentes.
+
+A @tbl-modelos-semivariograma apresenta os três modelos teóricos mais utilizados para ajuste ao semivariograma experimental.
+
+| Modelo | Equação $\gamma(h)$ | Comportamento na origem | Uso típico |
+|:-------|:-------------------|:----------------------|:-----------|
+| Esférico | $C_0 + C\left[\frac{3h}{2a} - \frac{1}{2}\left(\frac{h}{a}\right)^3\right]$ para $h \leq a$ | Linear | Solos, geologia, variáveis ambientais |
+| Exponencial | $C_0 + C\left[1 - \exp\left(-\frac{h}{a}\right)\right]$ | Côncavo para cima | Propriedades contínuas, concentrações |
+| Gaussiano | $C_0 + C\left[1 - \exp\left(-\frac{h^2}{a^2}\right)\right]$ | Parabólico | Variáveis suaves, topografia |
+
+: Modelos teóricos de semivariograma e suas características. {#tbl-modelos-semivariograma .striped .hover}
+
+### Krigagem ordinária
+
+A krigagem ordinária é o interpolador geoestatístico que estima o valor de uma variável em localizações não amostradas como combinação linear ponderada dos valores observados:
+
+$$
+\hat{Z}(s_0) = \sum_{i=1}^{n} \lambda_i \cdot Z(s_i)
+$$
+
+onde $\hat{Z}(s_0)$ é o valor estimado na localização não amostrada $s_0$, $Z(s_i)$ são os valores observados nas $n$ localizações amostrais e $\lambda_i$ são os pesos de krigagem, determinados pela resolução de um sistema de equações lineares que minimiza a variância da estimativa sob a restrição de não-viés (os pesos somam 1). Os pesos são obtidos a partir do modelo de semivariograma ajustado, de modo que observações mais próximas e em posições geometricamente favoráveis recebem pesos maiores.
+
+A krigagem possui uma propriedade única entre os interpoladores: além da estimativa, fornece a variância de krigagem em cada ponto, que quantifica a incerteza da predição. A superfície de variância de krigagem revela onde a rede amostral é insuficiente (alta variância) e onde é redundante (baixa variância), orientando o planejamento otimizado de campanhas de campo.
+
+::: {.callout-tip}
+## Krigagem vs. IDW
+O Inverso da Distância Ponderada (IDW) é um interpolador determinístico que pondera as observações pelo inverso da distância elevada a uma potência ($p$, tipicamente 2). Embora computacionalmente simples, o IDW não modela a estrutura de dependência espacial (não usa semivariograma), não fornece estimativa de incerteza e é sensível à configuração geométrica da amostragem. A krigagem deve ser preferida sempre que houver dados suficientes para ajustar um semivariograma robusto (mínimo de 30–50 observações).
+:::
+
+## Modelagem difusa (Fuzzy Sets)
+
+A lógica difusa (fuzzy), proposta por Zadeh em 1965, permite representar pertinências parciais a classes, um avanço fundamental para análises ambientais nas quais as fronteiras entre categorias são gradacionais e não rígidas. Enquanto a lógica booleana classifica cada localização como "pertencente" (1) ou "não pertencente" (0) a uma classe, a lógica difusa atribui um grau de pertinência $\mu \in [0, 1]$ que reflete o quanto cada localização satisfaz os critérios da classe.
+
+O operador Fuzzy Gamma combina mapas de pertinência por meio de uma ponderação entre os operadores Fuzzy OR (união, que maximiza) e Fuzzy AND (interseção, que minimiza):
+
+$$
+\mu_\gamma = (\mu_{OR})^\gamma \cdot (\mu_{AND})^{1-\gamma}
+$$
+
+onde $\gamma \in [0, 1]$ controla a tendência do modelo: valores próximos de 1 produzem resultados mais inclusivos (próximos ao OR) e valores próximos de 0 produzem resultados mais restritivos (próximos ao AND). Na prática, $\gamma = 0,7$ a $0,9$ é comumente utilizado em mapeamento de aptidão e prospectividade, pois representa um compromisso entre capturar todas as regiões potenciais (inclusividade) e evitar falsos positivos (seletividade).

@@ -1,0 +1,118 @@
+# Representação do Espaço Geográfico e Modelos de Dados {#sec-representacao}
+
+## Ontologias espaciais
+
+A representação computacional do espaço geográfico exige, antes de qualquer implementação técnica, uma decisão ontológica sobre a natureza dos fenômenos que se pretende modelar. Duas ontologias fundamentais competem na ciência da geoinformação, e a escolha entre elas determina não apenas a estrutura de dados, mas o repertório analítico disponível e as conclusões alcançáveis.
+
+A ontologia de objetos discretos concebe o espaço geográfico como um conjunto de entidades distinguíveis (rios, estradas, edificações, lotes) com fronteiras definidas e identidade individual. Cada objeto possui geometria (posição, forma e dimensão), topologia (relações de adjacência, conectividade e continência com outros objetos) e atributos alfanuméricos (nome, tipo, área, proprietário). Essa concepção é formalizada pelo modelo vetorial, que representa o espaço por meio de primitivas geométricas (pontos, linhas e polígonos) associadas a tabelas de atributos.
+
+A ontologia de campos contínuos, em contraste, concebe o espaço como uma superfície sobre a qual uma ou mais variáveis assumem valores em cada localização, sem fronteiras discretas entre regiões. Temperatura, elevação, precipitação, concentração de poluentes e umidade do solo são exemplos de fenômenos que variam continuamente no espaço e cuja representação natural é o modelo matricial (raster), no qual cada célula (pixel) de uma grade regular armazena o valor da variável naquela posição.
+
+A @tbl-ontologias sintetiza as implicações dessa escolha ontológica para a modelagem espacial.
+
+| Aspecto | Objetos discretos (vetor) | Campos contínuos (raster) |
+|:--------|:--------------------------|:--------------------------|
+| Natureza do fenômeno | Entidades com fronteiras definidas | Variável contínua no espaço |
+| Primitivas | Pontos, linhas, polígonos | Células (pixels) de grade regular |
+| Armazenamento | Coordenadas + atributos | Matrizes numéricas |
+| Resolução | Definida pela geometria | Definida pelo tamanho do pixel |
+| Operações típicas | SQL espacial, overlay, redes | Álgebra de mapas, interpolação |
+| Software exemplar | PostGIS, QGIS vetorial | GRASS GIS, Google Earth Engine |
+
+: Comparativo entre as ontologias espaciais e suas implicações para modelagem em SIG. {#tbl-ontologias .striped .hover}
+
+A escolha entre essas ontologias não é meramente técnica, mas reflete a compreensão do fenômeno em estudo. Um mapeamento de uso e cobertura do solo pode ser implementado tanto em formato vetorial (polígonos de classes) quanto raster (classificação pixel a pixel), e cada abordagem carrega vantagens e limitações distintas. Na prática, projetos de geoprocessamento maduros integram ambos os modelos, convertendo entre formatos conforme a necessidade analítica.
+
+## Modelo vetorial
+
+O modelo vetorial representa entidades geográficas por meio de três primitivas geométricas fundamentais, cuja hierarquia dimensional determina o tipo de fenômeno que cada uma pode representar.
+
+O ponto (dimensão 0) é definido por um par de coordenadas $(x, y)$ ou, em representações tridimensionais, por uma tripla $(x, y, z)$. Pontos representam fenômenos cuja extensão espacial é desprezível na escala de análise, como estações pluviométricas, poços de monitoramento, ocorrências minerais ou localidades. A linha (dimensão 1) é definida por uma sequência ordenada de pontos conectados, representando feições com extensão longitudinal dominante, como rios, estradas, linhas de transmissão e divisores de água. O polígono (dimensão 2) é definido por uma sequência fechada de linhas que delimita uma área, representando feições com extensão bidimensional significativa, como parcelas agrícolas, reservatórios, municípios e manchas de vegetação.
+
+Além da geometria, o modelo vetorial exige uma estrutura topológica que codifique as relações espaciais entre objetos. A topologia é o ramo da matemática que estuda as propriedades que se preservam sob transformações contínuas (rotação, translação, escala), e no contexto de SIG permite responder a perguntas como "quais municípios são adjacentes?", "esta estrada cruza este rio?" ou "este ponto está dentro deste polígono?". O modelo arc-node, implementado em sistemas como ArcGIS e PostGIS, codifica a topologia por meio de arcos (segmentos de linha) conectados em nós (pontos de interseção), de modo que cada arco conhece os polígonos à sua esquerda e à sua direita, e cada nó conhece os arcos que nele convergem.
+
+::: {.callout-note}
+## Topologia e integridade
+A ausência de topologia (modo "espaguete") permite sobreposições, lacunas e inconsistências entre polígonos que passam despercebidas visualmente mas corrompem análises como cálculo de área, overlay e roteamento. A construção de topologia é, portanto, um passo obrigatório na preparação de dados vetoriais para análise espacial.
+:::
+
+O padrão aberto da OGC (Open Geospatial Consortium) especifica três serviços fundamentais para interoperabilidade de dados vetoriais e matriciais entre sistemas: o WMS (Web Map Service), que fornece imagens renderizadas de mapas; o WFS (Web Feature Service), que fornece feições vetoriais com geometria e atributos; e o WCS (Web Coverage Service), que fornece coberturas raster. Esses padrões permitem que dados produzidos em diferentes instituições e softwares sejam consumidos em qualquer SIG compatível, viabilizando a Infraestrutura Nacional de Dados Espaciais (INDE) e plataformas como o i3Geo e o GeoServer.
+
+## Modelo matricial
+
+O modelo matricial (raster) discretiza o espaço em uma grade regular de células retangulares, onde cada célula armazena um valor numérico que representa a grandeza medida naquela posição. A resolução espacial (tamanho do pixel) define o nível de detalhe capturável: imagens Sentinel-2 com resolução de 10 m distinguem talhões agrícolas individuais, enquanto dados MODIS com resolução de 250 m capturam padrões regionais de vegetação.
+
+O trade-off fundamental do modelo raster é a relação inversa entre resolução e volume de dados. Uma imagem que cobre 100 × 100 km com pixels de 10 m contém $10^8$ (cem milhões) de células por banda espectral. Para um satélite como o Sentinel-2 com 13 bandas, isso equivale a 1,3 bilhão de valores por cena. Essa escala de dados exige infraestrutura computacional robusta e motiva o uso de plataformas de processamento em nuvem como o Google Earth Engine [@gorelick2017].
+
+Cada pixel de uma imagem raster pode armazenar diferentes tipos de dados: inteiros sem sinal (0–255 para imagens de 8 bits), inteiros com sinal, ponto flutuante (para dados contínuos como temperatura ou elevação) ou valores categóricos (para mapas de uso do solo). A profundidade radiométrica (número de bits por pixel) determina a quantidade de níveis de cinza distinguíveis: uma imagem de 8 bits resolve 256 níveis, enquanto uma de 12 bits (como as do Sentinel-2) resolve 4.096 níveis, permitindo diferenciar variações sutis de reflectância que uma imagem de 8 bits não captaria.
+
+## Referenciamento espacial
+
+A localização de qualquer fenômeno na superfície terrestre exige um Sistema de Referência de Coordenadas (SRC) que defina a forma matemática da Terra (elipsoide de referência), a posição e orientação desse elipsoide em relação ao centro de massa da Terra (datum geodésico) e a projeção cartográfica que transforma coordenadas curvilíneas (latitude/longitude) em coordenadas planas $(E, N)$ sobre um mapa.
+
+O datum geodésico é o parâmetro mais crítico, pois datums diferentes posicionam o mesmo ponto em coordenadas distintas. No Brasil, a transição do SAD-69 (anterior) para o SIRGAS 2000 (atual, geocêntrico e compatível com GPS) introduziu deslocamentos de 60 a 70 m em algumas regiões do país. Projetar dados em SAD-69 sobre uma base em SIRGAS 2000 sem transformação de datum gera erros de posicionamento que podem comprometer análises de sobreposição, cálculo de distâncias e delimitação de áreas de proteção.
+
+As projeções cartográficas introduzem distorções inevitáveis ao transformar uma superfície curva em um plano. A indicatriz de Tissot fornece uma visualização quantitativa dessas distorções: em projeções conformes (como a UTM), a indicatriz é sempre circular (preserva ângulos mas distorce áreas); em projeções equivalentes (como a de Albers), a indicatriz preserva a área do círculo mas distorce sua forma; e em projeções equidistantes, a indicatriz preserva distâncias ao longo de direções privilegiadas.
+
+A @tbl-projecoes resume as propriedades das projeções mais utilizadas em geoprocessamento ambiental no Brasil.
+
+| Projeção | Propriedade preservada | Uso típico | Distorção principal |
+|:---------|:----------------------|:-----------|:-------------------|
+| UTM (Universal Transversa de Mercator) | Ângulos (conforme) | Topografia, cadastro, alta precisão local | Área (até 0,04% no eixo central do fuso) |
+| Cônica de Albers | Área (equivalente) | Mapeamento temático, uso do solo | Forma em altas latitudes |
+| Policônica | Compromisso | Cartas do IBGE, séries históricas | Distorções crescentes nas bordas |
+| Lat/Long (geográfica) | Nenhuma especificamente | Intercâmbio de dados, GPS | Distorce tudo; não é projeção |
+
+: Projeções cartográficas e suas propriedades para geoprocessamento no Brasil. {#tbl-projecoes .striped .hover}
+
+::: {.callout-important}
+## Rastreabilidade metrológica
+Toda análise espacial deve documentar explicitamente o SRC utilizado (código EPSG), o datum geodésico e a fonte dos dados altimétricos. A metadocumentação é requisito da INDE (Infraestrutura Nacional de Dados Espaciais) e condição para reprodutibilidade científica. A omissão do SRC é uma das causas mais frequentes de erro em projetos de geoprocessamento.
+:::
+
+## Geometria computacional
+
+A manipulação eficiente de dados vetoriais exige algoritmos de geometria computacional que resolvam problemas como interpolação de superfícies, particionamento do espaço e busca de vizinhos mais próximos.
+
+A triangulação de Delaunay constrói uma malha de triângulos não sobrepostos a partir de um conjunto de pontos, com a propriedade de que nenhum ponto se encontra no interior do circuncírculo de qualquer triângulo. Essa propriedade maximiza o menor ângulo de todos os triângulos, evitando triângulos muito alongados ("finos") que comprometem a qualidade da interpolação. A triangulação de Delaunay é a base dos Modelos Numéricos de Terreno (MNTs) do tipo TIN (Triangulated Irregular Network), que representam a topografia com resolução variável (mais triângulos em terreno acidentado, menos em terreno plano).
+
+O diagrama de Voronoi (ou Thiessen) é o dual geométrico da triangulação de Delaunay: para cada ponto do conjunto, define uma região poligonal contendo todas as localizações mais próximas daquele ponto do que de qualquer outro. Os polígonos de Voronoi são amplamente utilizados em hidrologia para calcular a precipitação média em uma bacia a partir de estações pluviométricas distribuídas irregularmente (método de Thiessen), e em ecologia para delimitar áreas de influência de espécies ou recursos.
+
+```{dot}
+//| label: fig-delaunay-voronoi
+//| fig-cap: "Relação dual entre triangulação de Delaunay e diagrama de Voronoi para um conjunto de pontos amostrais."
+//| fig-width: 7
+digraph {
+    rankdir=LR
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.3,0.15", penwidth=0.8]
+    edge [fontname="Helvetica", fontsize=9, color="#555555"]
+
+    A [label="Pontos amostrais\n(estações, poços,\nocorrências)", fillcolor="#E3F2FD", color="#1565C0"]
+    B [label="Triangulação de\nDelaunay\n(MNT/TIN)", fillcolor="#BBDEFB", color="#1565C0"]
+    C [label="Diagrama de\nVoronoi/Thiessen\n(áreas de influência)", fillcolor="#C8E6C9", color="#2E7D32"]
+    D [label="Interpolação\nespacial\n(IDW, Krigagem)", fillcolor="#FFF9C4", color="#F9A825"]
+
+    A -> B [label="  Triangulaçao  "]
+    A -> C [label="  Dual geométrico  "]
+    B -> D [label="  Superfície contínua  "]
+    C -> D [label="  Pesos por área  "]
+}
+```
+
+## Estruturas de indexação espacial
+
+A consulta eficiente em bases de dados geoespaciais com milhões de feições exige estruturas de indexação que evitem a varredura sequencial de todos os registros. A R-tree (e suas variantes R*-tree e R+-tree) organiza os retângulos envolventes mínimos (MBR) das geometrias em uma árvore balanceada, permitindo que consultas do tipo "quais rios cruzam este município?" ou "quais poços estão a menos de 5 km desta rodovia?" sejam resolvidas em tempo logarítmico em vez de linear.
+
+O PostGIS, extensão espacial do PostgreSQL, implementa indexação por GiST (Generalized Search Tree), que suporta consultas espaciais complexas com desempenho adequado para bases de dados com dezenas de milhões de feições. A eficiência da indexação espacial é o que torna viável operar sobre a INDE ou sobre bases de dados como o cadastro ambiental rural (CAR), que contém mais de 6 milhões de imóveis rurais georreferenciados.
+
+::: {.callout-tip}
+## Na prática
+Ao carregar uma camada vetorial no QGIS ou PostGIS, a criação de índice espacial (GIST ou R-tree) deve ser o primeiro passo antes de qualquer análise. Sem índice, operações de overlay, junção espacial e seleção por localização podem ser ordens de magnitude mais lentas.
+:::
+
+## Integração vetor-raster
+
+Na prática de geoprocessamento, a maioria dos projetos exige conversões entre os modelos vetorial e matricial. A rasterização transforma feições vetoriais em pixels, atribuindo a cada célula o valor do atributo do polígono que a cobre; é necessária quando se deseja realizar álgebra de mapas com camadas temáticas originalmente vetoriais (uso do solo, geologia, pedologia). A vetorização transforma regiões contíguas de pixels com mesmo valor em polígonos; é necessária quando se deseja extrair estatísticas zonais ou realizar análise topológica sobre resultados de classificação de imagens.
+
+Ambas as conversões introduzem erros. A rasterização gera efeito "escada" em bordas diagonais e pode atribuir erroneamente a uma célula a classe do polígono que cobre a maior fração de sua área, mesmo que outros polígonos cubram porções significativas. A vetorização gera bordas anguladas que não correspondem às fronteiras reais dos fenômenos. A compreensão desses artefatos é fundamental para interpretar corretamente os resultados e estimar a incerteza associada a cada conversão.

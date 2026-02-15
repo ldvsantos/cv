@@ -1,0 +1,126 @@
+# Inteligência Artificial e Qualidade da Pesquisa Ambiental {#sec-inteligencia-artificial}
+
+## O quarto paradigma da ciência
+
+A evolução do método científico é descrita por quatro paradigmas sequenciais, conforme proposto por Hey et al. [-@hey2009]. O primeiro paradigma (empírico) baseava-se na observação e descrição de fenômenos naturais. O segundo (teórico) introduziu modelos matemáticos e leis fundamentais (Newton, Maxwell, Navier-Stokes). O terceiro (computacional) emergiu com a simulação numérica de processos complexos demais para solução analítica. O quarto paradigma (data-driven ou eScience) é definido pela exploração de grandes volumes de dados heterogêneos por algoritmos de aprendizado de máquina, onde padrões e relações emergem dos dados sem a imposição a priori de equações governantes. Nas geociências ambientais, esse paradigma se concretiza na integração massiva de dados de sensoriamento remoto, redes de monitoramento, modelos climáticos e informações de campo em plataformas computacionais de alta performance (Google Earth Engine, PANGAEA, Copernicus Climate Data Store).
+
+## Modelagem híbrida
+
+A tensão entre modelos baseados em processos (process-based) e modelos orientados a dados (data-driven) motivou o desenvolvimento da modelagem híbrida (theory-guided data science), formalizada por Karpatne et al. [-@karpatne2017]. A premissa é que o conhecimento do domínio (equações de conservação, leis termodinâmicas, relações empíricas calibradas) deve restringir o espaço de soluções do modelo de aprendizado de máquina, evitando previsões fisicamente impossíveis e melhorando a extrapolabilidade para condições não observadas no treinamento.
+
+Três estratégias de hibridização são amplamente utilizadas. A abordagem de pré-processamento incorpora o conhecimento físico na engenharia de features: em vez de alimentar o modelo com reflectância bruta, calcula-se NDVI, SAVI, índices de umidade, derivações do MDT (declividade, curvatura, TWI), fator LS da RUSLE. A abordagem de restrição incorpora a física como termo de penalização na função-objetivo do modelo: por exemplo, penalizar previsões de erosão líquida negativa (criação de solo ex nihilo) ou previsões de evapotranspiração que violem o balanço de energia ($R_n - G = H + \lambda ET$). A abordagem de pós-processamento ajusta as previsões do modelo de ML para satisfazer restrições de conservação (massa, energia, momento), assegurando que os fluxos previstos fechem o balanço na bacia.
+
+::: {.callout-note}
+## Exemplo de hibridização em hidrologia
+O modelo LSTM (Long Short-Term Memory) treinado para previsão de vazão em bacias hidrográficas pode ser hibridizado incorporando o balanço hídrico como restrição. A perda de treinamento $\mathcal{L}$ é composta por um termo de erro de previsão (ex. MSE entre vazão observada e prevista) acrescido de um termo de penalização física $\lambda_{phys} \cdot |P - ET - Q - \Delta S|^2$, onde $P$ é precipitação, $ET$ evapotranspiração, $Q$ vazão e $\Delta S$ variação de armazenamento. O hiperparâmetro $\lambda_{phys}$ controla o peso da restrição física na função-objetivo.
+:::
+
+## Validação espacial
+
+A validação de modelos preditivos em geociências requer cuidados específicos relacionados à autocorrelação espacial dos dados, conforme demonstrado por Roberts et al. [-@roberts2017]. A validação cruzada convencional ($k$-fold aleatória) distribui observações de treinamento e teste de forma espacialmente intercalada, permitindo que o modelo aprenda a autocorrelação espacial (dados próximos são semelhantes) em vez de relações causais genuínas. O resultado é uma inflação sistemática das métricas de desempenho (acurácia, AUC, R²) que não reflete a capacidade real de generalização do modelo para novas áreas.
+
+A validação cruzada espacial (spatial cross-validation) resolve esse problema agrupando as observações por blocos espaciais (spatial blocking) ou excluindo toda a vizinhança de cada observação de teste (Leave-Location-Out, LLO). O tamanho dos blocos deve ser proporcional ao range do semivariograma dos resíduos do modelo (apresentado no @sec-algebra-geoestatistica), assegurando independência efetiva entre conjuntos de treinamento e teste. Em estudos de mapeamento de uso do solo, Roberts et al. [-@roberts2017] reportaram reduções de AUC de 0,10 a 0,25 quando spatial CV foi utilizada em substituição a $k$-fold aleatória, demonstrando que a inflação de desempenho é substancial e pode conduzir a decisões de gestão baseadas em modelos com capacidade preditiva real significativamente inferior à reportada.
+
+A @tbl-validacao-espacial resume os protocolos de validação e seus vieses.
+
+| Protocolo | Descrição | Viés por autocorrelação | Uso recomendado |
+|:----------|:---------|:-----------------------|:---------------|
+| $k$-fold aleatória | Partições aleatórias sem estrutura espacial | Alto (otimista) | Dados independentes (lab) |
+| Spatial blocking | Blocos geográficos como folds | Baixo | Modelos espaciais |
+| Leave-Location-Out (LLO) | Exclui vizinhança do ponto-teste | Muito baixo | Mapeamento preditivo |
+| Leave-Time-Out (LTO) | Treina no passado, testa no futuro | Baixo (temporal) | Séries temporais |
+| Leave-Location-and-Time-Out | Exclui espaço e tempo simultaneamente | Mínimo | Modelos espaço-temporais |
+
+: Protocolos de validação e seus vieses associados à autocorrelação espacial. {#tbl-validacao-espacial .striped .hover}
+
+## Explicabilidade e confiança
+
+O crescente uso de modelos de aprendizado de máquina de alta complexidade (deep learning, gradient boosting, ensemble stacking) nas geociências levantou preocupações legítimas sobre interpretabilidade e confiança nas previsões. Modelos caixa-preta (black box) produzem previsões acuradas sem revelar quais variáveis e mecanismos os conduzem, dificultando a identificação de erros, a comunicação com gestores e a integração com o conhecimento do domínio.
+
+A IA Explicável (Explainable AI, XAI) aborda essa lacuna por duas famílias de métodos. Métodos intrínsecos utilizam arquiteturas inerentemente interpretáveis (regressão linear, árvore de decisão, modelos aditivos generalizados — GAM). Métodos post-hoc explicam modelos complexos já treinados, atribuindo importância a cada variável preditora para cada previsão individual.
+
+O SHAP (SHapley Additive exPlanations), proposto por Lundberg e Lee [-@lundberg2017] e fundamentado na teoria de jogos cooperativos de Shapley, decompõe a previsão $f(x)$ de cada instância $x$ em contribuições individuais de cada feature $j$:
+
+$$
+f(x) = \phi_0 + \sum_{j=1}^{M} \phi_j
+$$
+
+onde $\phi_0$ é o valor base (previsão média sobre o conjunto de treinamento) e $\phi_j$ é o valor de Shapley da $j$-ésima feature. Os valores de Shapley possuem propriedades axiomáticas desejáveis (eficiência, simetria, monotonia, linearidade) e fornecem importância local (por previsão) e global (por agregação). Em aplicações geoespaciais, SHAP maps — mapas onde cada pixel recebe o valor de Shapley de cada feature — revelam a contribuição espacialmente variável de cada variável preditora, conectando previsões do modelo com mecanismos geomorfológicos ou hidrológicos interpretativos.
+
+O LIME (Local Interpretable Model-agnostic Explanations), proposto por Ribeiro et al. [-@ribeiro2016], gera explicações locais ajustando um modelo linear interpretável na vizinhança de cada instância de interesse, ponderando as observações vizinhas por distância. LIME é computacionalmente mais barato que SHAP mas carece de suas propriedades axiomáticas.
+
+::: {.callout-important}
+## XAI como requisito ético
+Em contextos de gestão ambiental onde decisões baseadas em modelos afetam comunidades (por exemplo, zoneamento de risco de inundação, priorização de áreas para restauração, definição de zonas de exclusão mineral), a explicabilidade não é um luxo técnico, mas um requisito ético e de governança. Modelos cujas decisões não podem ser explicadas não podem ser contestados, auditados ou melhorados com base em conhecimento local, violando princípios de transparência e participação pública na gestão ambiental.
+:::
+
+## Princípios FAIR e reprodutibilidade
+
+Os princípios FAIR (Findable, Accessible, Interoperable, Reusable), formalizados por Wilkinson et al. [-@wilkinson2016], estabelecem diretrizes para a gestão de dados científicos que maximizam sua utilidade e longevidade. Dados Findable possuem identificadores persistentes (DOI) e metadados ricos. Dados Accessible estão disponíveis por protocolos abertos e padronizados (HTTP, OGC WMS/WFS). Dados Interoperable utilizam vocabulários controlados e formatos padronizados (GeoTIFF, GeoPackage, CF-NetCDF). Dados Reusable possuem licenças claras (Creative Commons, ODbL) e proveniência documentada.
+
+Nas geociências brasileiras, a adesão aos princípios FAIR é facilitada por repositórios institucionais (PANGAEA, Zenodo, Figshare) e por infraestruturas de dados espaciais (INDE/IBGE, IDE-Sisema, MapBiomas). A publicação de dados e código em repositórios abertos (GitHub, GitLab) com documentação adequada e licenças permissivas constitui prática essencial para a reprodutibilidade da pesquisa ambiental.
+
+## Green AI e eficiência computacional
+
+O conceito de Green AI, proposto por Schwartz et al. [-@schwartz2020], questiona a tendência de buscar melhorias incrementais de desempenho por aumento exponencial de computação (Red AI), advogando por uma métrica de eficiência que considere o resultado obtido por unidade de custo computacional (resultado/kWh). Em geociências ambientais, essa perspectiva é particularmente relevante porque muitos dados de monitoramento no semiárido e em regiões remotas são escassos (small data), invalidando a premissa de que mais dados e modelos maiores sempre produzem melhores resultados.
+
+Estratégias de Green AI para geociências incluem transfer learning (pré-treinar em grandes conjuntos de dados globais e ajustar com poucos dados locais), modelos eficientes em parâmetros (GAM, XGBoost em vez de deep learning quando o ganho em acurácia é marginal), e otimização de hiperparâmetros por métodos bayesianos (Optuna, Hyperopt) em vez de grid search exaustivo. A meta é obter modelos com desempenho adequado à decisão de gestão (não necessariamente o máximo teórico) com o mínimo de custo computacional e ambiental.
+
+A @tbl-green-ai apresenta diretrizes práticas.
+
+| Princípio | Prática recomendada | Indicador |
+|:----------|:-------------------|:----------|
+| Eficiência | Preferir modelos simples quando $\Delta$AUC < 0,02 | Resultado/kWh |
+| Transfer learning | Pré-treinar em dados globais, fine-tune local | Redução de amostras necessárias |
+| Parcimônia | Feature selection rigorosa antes de ML | Nº features vs. desempenho |
+| Reprodutibilidade | Código, dados e ambiente em repositório | FAIR compliance |
+| Transparência | XAI obrigatória em aplicações de gestão | SHAP/LIME reportados |
+
+: Princípios de Green AI aplicados a geociências ambientais. {#tbl-green-ai .striped .hover}
+
+## Human-in-the-loop e IA responsável
+
+O paradigma human-in-the-loop reconhece que, especialmente em contextos de dados escassos e alta consequência decisória (gestão ambiental), a supervisão humana contínua do pipeline de IA é essencial. Especialistas do domínio (hidrólogos, pedólogos, geomorfólogos) revisam previsões do modelo, identificam artefatos, validam padrões emergentes contra o conhecimento de campo e fornecem rótulos corrigidos que alimentam ciclos de aprendizado ativo (active learning), onde o modelo solicita a anotação de instâncias que maximizam a redução de incerteza.
+
+A incorporação de incerteza epistêmica (do modelo) e aleatória (dos dados) nas previsões de IA é um requisito para decisões de gestão ambiental informadas por risco. Métodos como ensembles bayesianos, Monte Carlo dropout e previsão conformal fornecem intervalos de confiança pixelwise em mapas preditivos, permitindo que gestores identifiquem regiões onde a previsão é confiável e regiões onde dados adicionais são necessários antes de decidir. A comunicação honesta dessas incertezas aos tomadores de decisão é um imperativo ético e científico que distingue a aplicação responsável de IA da tecnosolucionismo acrítico.
+
+```{dot}
+//| label: fig-pipeline-ia-geociencias
+//| fig-cap: "Pipeline de IA responsável para geociências ambientais, integrando princípios FAIR, XAI, validação espacial e supervisão humana."
+//| fig-width: 8
+digraph {
+    rankdir=LR
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=9, margin="0.25,0.12", penwidth=0.8]
+    edge [fontname="Helvetica", fontsize=8, color="#555555"]
+
+    subgraph cluster_dados {
+        label="Dados FAIR"
+        style=dashed
+        color="#1565C0"
+        fontname="Helvetica"
+        fontsize=9
+
+        D1 [label="Sensoriamento\nremoto", fillcolor="#BBDEFB", color="#1565C0"]
+        D2 [label="Redes de\nmonitoramento", fillcolor="#BBDEFB", color="#1565C0"]
+        D3 [label="Dados de\ncampo", fillcolor="#BBDEFB", color="#1565C0"]
+    }
+
+    P [label="Pré-processamento\n(features físicas)", fillcolor="#C8E6C9", color="#2E7D32"]
+    M [label="Modelo híbrido\n(ML + restrição\nfísica)", fillcolor="#FFF9C4", color="#F9A825"]
+    V [label="Validação espacial\n(spatial CV,\nAUC, R²)", fillcolor="#FFE0B2", color="#EF6C00"]
+    X [label="XAI\n(SHAP maps,\nLIME)", fillcolor="#E1BEE7", color="#7B1FA2"]
+    H [label="Human-in-the-loop\n(revisão, active\nlearning)", fillcolor="#B2DFDB", color="#00695C"]
+    A [label="Decisão de\ngestão ambiental\n(com incerteza)", fillcolor="#FFCDD2", color="#C62828"]
+
+    D1 -> P
+    D2 -> P
+    D3 -> P
+    P -> M
+    M -> V
+    V -> X
+    X -> H
+    H -> A
+    H -> M [style=dashed, label="feedback"]
+}
+```

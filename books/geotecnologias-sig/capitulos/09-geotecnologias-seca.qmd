@@ -1,0 +1,111 @@
+# Geotecnologias, Recursos Hídricos e Gestão da Seca {#sec-geotecnologias-seca}
+
+## Crise hídrica e paradigma tecnológico
+
+A gestão de secas no semiárido brasileiro operou historicamente sob um paradigma reativo (responder à crise após sua instalação) que está sendo progressivamente substituído por um paradigma preventivo (antecipar, monitorar e mitigar). Essa transição depende criticamente da capacidade de monitoramento contínuo e espacialmente distribuído que as geotecnologias proporcionam.
+
+A revolução tecnológica que viabiliza essa transição combina cinco famílias de sensores orbitais: imageadores multiespectrais (Landsat, Sentinel-2, MODIS) para cobertura vegetal e albedo; radar de abertura sintética (Sentinel-1) para umidade do solo e deformação; altimetria radar (Sentinel-3, Jason-3) para nível de reservatórios e rios; gravimetria por satélite (GRACE/GRACE-FO) para variação de armazenamento total de água (incluindo aquíferos profundos); e radiometria de micro-ondas (SMAP, AMSR2) para umidade superficial e precipitação. A integração desses dados em plataformas de Big Data geoespacial (Google Earth Engine, Microsoft Planetary Computer) permite análises em escala continental com latência de dias a semanas.
+
+## Monitoramento de reservatórios e aquíferos
+
+O monitoramento de reservatórios por altimetria radar (Sentinel-3, Jason-3) permite estimar variações de volume em reservatórios sem estações in situ, uma capacidade particularmente valiosa no semiárido, onde milhares de açudes de pequeno e médio porte não possuem monitoramento convencional. Quando combinada com a área superficial estimada por imagens ópticas (classificação água/não-água em Sentinel-2), a altimetria possibilita o cálculo de curva cota-área-volume e a estimativa de evaporação líquida.
+
+A gravimetria orbital por GRACE (Gravity Recovery and Climate Experiment) e seu sucessor GRACE-FO mede variações mensais do campo gravitacional terrestre com resolução de ~300 km, detectando variações de armazenamento total de água (TWS, Total Water Storage) na escala de bacias hidrográficas. A decomposição do sinal GRACE nos compartimentos superficial (reservatórios), subsuperficial (zona vadosa) e subterrâneo (aquíferos) requer informação complementar de modelos hidrológicos ou dados de poços, mas fornece a única medição direta de variações de armazenamento subterrâneo em escala regional, sendo fundamental para monitorar a depleção de aquíferos no Cerrado (onde o aquífero Bambuí e o Urucuia sustentam a irrigação de grande escala).
+
+::: {.callout-important}
+## ZARC e seguro agrícola
+O Zoneamento Agrícola de Risco Climático (ZARC), operado pela Embrapa e pelo MAPA, utiliza modelos de balanço hídrico alimentados por séries históricas de precipitação e propriedades do solo (CAD, Kc) para definir janelas de plantio com risco climático aceitável para cada cultura e município. O ZARC é pré-requisito para acesso ao Programa de Garantia da Atividade Agropecuária (Proagro) e ao seguro rural, demonstrando a aplicação direta de geotecnologias em políticas públicas de gestão de risco agrícola.
+:::
+
+## Índices de seca
+
+A caracterização e o monitoramento de secas utilizam índices padronizados que permitem comparações entre regiões e períodos distintos.
+
+### SPI (Standardized Precipitation Index)
+
+O SPI, proposto por McKee et al. [-@mckee1993], padroniza a precipitação acumulada em diferentes escalas temporais (1, 3, 6, 12, 24 meses) em relação à distribuição histórica, ajustando os dados a uma distribuição gama e transformando-os em uma distribuição normal padrão. Valores de SPI < −1 indicam seca moderada, < −1,5 seca severa e < −2 seca extrema. A versatilidade do SPI reside na sua multitemporalidade: SPI-1 detecta secas meteorológicas de curta duração, SPI-3 captura impactos agrícolas, SPI-12 reflete secas hidrológicas e SPI-24 identifica secas estruturais de longo prazo.
+
+### SPEI (Standardized Precipitation-Evapotranspiration Index)
+
+O SPEI, proposto por Vicente-Serrano et al. [-@vicente2010], é uma evolução do SPI que incorpora a evapotranspiração potencial ($ETP$) no cálculo, tornando o índice sensível ao efeito da temperatura sobre a demanda evaporativa. A variável de entrada é a diferença $D = P - ETP$ (acumulada na escala temporal desejada), ajustada a uma distribuição log-logística e padronizada. Em cenários de aquecimento climático, o SPEI detecta agravamento de secas que o SPI (baseado apenas em precipitação) não identifica, pois o aumento de $ETP$ sob temperaturas mais altas reduz a disponibilidade hídrica efetiva mesmo sem mudança na precipitação.
+
+### Flash droughts
+
+As secas rápidas (flash droughts) são eventos de intensificação abrupta do déficit hídrico (em escala de semanas, não meses), causados por ondas de calor que elevam a evapotranspiração muito acima da precipitação. Esses eventos escapam dos índices tradicionais baseados em acumulados mensais (SPI, SPEI) e requerem monitoramento sub-semanal integrando temperatura do ar, umidade do solo (SMAP), estresse hídrico da vegetação (índices de temperatura de superfície) e precipitação de alta frequência (GPM/IMERG).
+
+## Índices biofísicos de seca agrícola
+
+Os índices de vegetação derivados de sensoriamento remoto fornecem informação espacialmente contínua sobre a condição da vegetação, a uma fração do custo do monitoramento de campo.
+
+O VCI (Vegetation Condition Index), proposto por Kogan [-@kogan1995], normaliza o NDVI de cada pixel entre os valores históricos mínimo e máximo:
+
+$$
+VCI = \frac{NDVI - NDVI_{min}}{NDVI_{max} - NDVI_{min}} \times 100
+$$
+
+onde $NDVI_{min}$ e $NDVI_{max}$ são os valores extremos da série histórica (tipicamente 20–30 anos) para aquele pixel e período do ano. Valores de VCI < 35% indicam estresse hídrico severo. A normalização histórica permite comparar a condição da vegetação entre regiões com coberturas vegetais distintas (floresta, cerrado, caatinga, cultivo) e detectar anomalias em relação à climatologia local.
+
+A @tbl-indices-seca compara os principais índices de seca e suas aplicações.
+
+| Índice | Base de dados | Escala temporal | Tipo de seca detectada |
+|:-------|:-------------|:---------------|:----------------------|
+| SPI | Precipitação | 1–24 meses | Meteorológica, hidrológica |
+| SPEI | Precipitação + ETP | 1–24 meses | Meteorológica + efeito térmico |
+| VCI | NDVI (satélite) | 8–16 dias | Agrícola |
+| TCI | Temperatura de superfície | 8–16 dias | Agrícola (estresse térmico) |
+| ESI | ET real vs. potencial | Semanal | Agrícola (flash droughts) |
+| GRACE-DSI | Anomalia de TWS | Mensal | Hidrológica profunda |
+
+: Índices de seca, suas fontes de dados e tipos de seca detectados. {#tbl-indices-seca .striped .hover}
+
+## Evapotranspiração e seca hidrológica
+
+O algoritmo SEBAL (Surface Energy Balance Algorithm for Land), apresentado no @sec-degradacao-desertificacao no contexto da retroalimentação climática, assume papel central na gestão da seca ao fornecer estimativas espacialmente distribuídas da evapotranspiração real ($ET_a$). A comparação entre $ET_a$ (o que a superfície realmente evapora) e $ET_0$ (a demanda evaporativa atmosférica, estimada por Penman-Monteith) produz o coeficiente de estresse hídrico ($K_s = ET_a / ET_0$), que identifica regiões onde a vegetação está sob déficit hídrico mesmo durante a estação chuvosa.
+
+A seca hidrológica, definida como a redução persistente da disponibilidade de água em rios, reservatórios e aquíferos abaixo de limiares operacionais, é monitorada pela combinação de altimetria orbital (nível de reservatórios), gravimetria (GRACE, armazenamento total) e modelagem hidrológica distribuída. Redes LSTM (Long Short-Term Memory), um tipo de rede neural recorrente, têm demonstrado desempenho competitivo com modelos hidrológicos conceituais na previsão de vazões, particularmente em bacias com dados limitados de calibração.
+
+## Governança estratégica e resiliência
+
+A gestão proativa da seca requer Sistemas de Suporte à Decisão (DSS) que integrem as múltiplas fontes de informação discutidas neste capítulo em uma plataforma geoespacial unificada. O DSS típico para gestão da seca combina dados meteorológicos em tempo real (estações automáticas, GPM/IMERG), índices de seca derivados de satélite (VCI, SPI, SPEI), modelos de previsão climática sazonal, informações de armazenamento de reservatórios e projeções de demanda hídrica setorial, apresentados em painéis cartográficos (dashboards geoespaciais) acessíveis a gestores e tomadores de decisão.
+
+O seguro paramétrico, uma inovação financeira em rápida expansão na agricultura, utiliza índices derivados de sensoriamento remoto (precipitação GPM, VCI, SPI) como gatilhos automáticos de indenização, eliminando a necessidade de vistoria de campo e reduzindo drasticamente o tempo entre o evento e o pagamento. A definição do gatilho (por exemplo, VCI < 35% por duas semanas consecutivas) e da indenização (proporcional ao déficit) exige calibração cuidadosa contra dados históricos de perda agrícola, configurando um problema de otimização estocástica que integra geotecnologias, ciência atuarial e gestão de risco.
+
+```{dot}
+//| label: fig-dss-seca
+//| fig-cap: "Arquitetura de um Sistema de Suporte à Decisão (DSS) para gestão da seca integrando múltiplas fontes de dados geoespaciais."
+//| fig-width: 8
+digraph {
+    rankdir=LR
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=9, margin="0.25,0.12", penwidth=0.8]
+    edge [fontname="Helvetica", fontsize=8, color="#555555"]
+
+    subgraph cluster_dados {
+        label="Fontes de Dados"
+        style=dashed
+        color="#1565C0"
+        fontname="Helvetica"
+        fontsize=9
+
+        D1 [label="Estações\nautomáticas", fillcolor="#BBDEFB", color="#1565C0"]
+        D2 [label="GPM, CHIRPS\n(precipitação)", fillcolor="#BBDEFB", color="#1565C0"]
+        D3 [label="SMAP\n(umidade solo)", fillcolor="#BBDEFB", color="#1565C0"]
+        D4 [label="MODIS, Sentinel\n(NDVI, VCI)", fillcolor="#BBDEFB", color="#1565C0"]
+        D5 [label="GRACE-FO\n(TWS)", fillcolor="#BBDEFB", color="#1565C0"]
+    }
+
+    I [label="Índices\n(SPI, SPEI,\nVCI, ESI)", fillcolor="#C8E6C9", color="#2E7D32"]
+    M [label="Modelo de\nprevisão sazonal", fillcolor="#FFF9C4", color="#F9A825"]
+    DSS [label="DSS Geoespacial\n(dashboards,\nalertas)", fillcolor="#E1BEE7", color="#7B1FA2", fontsize=10]
+    A [label="Ações\n(alocação, seguro,\ncontingência)", fillcolor="#FFCCBC", color="#E64A19"]
+
+    D1 -> I
+    D2 -> I
+    D3 -> I
+    D4 -> I
+    D5 -> I
+    I -> DSS
+    M -> DSS
+    DSS -> A
+}
+```

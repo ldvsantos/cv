@@ -1,0 +1,92 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Geotecnologias e Sistemas de Informação Geográfica"
+  subtitle: "Fundamentos, Análise Espacial e Aplicações Ambientais"
+  author:
+    - name: "Luiz Diego Vidal Santos"
+      url: https://diegovidalcv.com.br/
+      orcid: 0000-0001-8659-8557
+      affiliation:
+        - name: "Universidade Estadual de Feira de Santana (UEFS)"
+          url: https://www.uefs.br/
+  date: "2026-02-15"
+  date-format: "DD/MM/YYYY"
+  description: |
+    Livro-texto sobre geotecnologias e SIG aplicados ao monitoramento
+    ambiental, abrangendo geoprocessamento, sensoriamento remoto,
+    geoestatística, hidrologia, gestão de recursos hídricos, mineração
+    e inteligência artificial para análise espacial.
+  cover-image: img/capa_geotecnologias_sig.png
+  favicon: img/capa_geotecnologias_sig.png
+  reader-mode: true
+  site-url: https://diegovidalcv.com.br/books/geotecnologias-sig/
+  repo-url: https://github.com/ldvsantos/cv/
+  repo-actions: [issue]
+  sharing: [twitter, facebook, linkedin]
+  downloads: [pdf]
+  search: true
+
+  page-footer:
+    left: "© Luiz Diego Vidal Santos, 2026. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
+    right: "Feito com [Quarto](https://quarto.org)"
+
+  chapters:
+    - index.qmd
+    - prefacio.qmd
+
+    - part: "Parte I — Fundamentos de Geoinformação e Análise Espacial"
+      chapters:
+        - capitulos/01-representacao-espacial.qmd
+        - capitulos/02-algebra-geoestatistica.qmd
+        - capitulos/03-sensoriamento-remoto.qmd
+        - capitulos/04-classificacao-incerteza.qmd
+
+    - part: "Parte II — Solos, Erosão e Degradação Ambiental"
+      chapters:
+        - capitulos/05-intemperismo-erosao.qmd
+        - capitulos/06-degradacao-desertificacao.qmd
+
+    - part: "Parte III — Hidrologia e Recursos Hídricos"
+      chapters:
+        - capitulos/07-recursos-hidricos-bacia.qmd
+        - capitulos/08-monitoramento-hidrologico.qmd
+        - capitulos/09-geotecnologias-seca.qmd
+
+    - part: "Parte IV — Aplicações Setoriais e Modelagem Avançada"
+      chapters:
+        - capitulos/10-mineracao-monitoramento.qmd
+        - capitulos/11-sig-exploracao-mineral.qmd
+        - capitulos/12-inteligencia-artificial.qmd
+
+    - referencias.qmd
+
+bibliography: references.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+
+format:
+  html:
+    theme:
+      - cosmo
+      - custom.scss
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    lang: pt
+  pdf:
+    documentclass: scrbook
+    papersize: a4
+    fontsize: 11pt
+    lang: pt
+    toc: true
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - top=2.5cm
+      - bottom=2.5cm
+      - left=3cm
+      - right=2cm

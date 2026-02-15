@@ -1,0 +1,82 @@
+# Intemperismo, Erosão e Formação de Solos {#sec-intemperismo-erosao}
+
+## Fatores de formação do solo
+
+O solo é um corpo natural tridimensional que resulta da ação combinada de cinco fatores de formação, expressos na equação conceitual de Jenny [-@jenny1941]:
+
+$$
+S = f(cl, o, r, p, t)
+$$
+
+onde $cl$ representa o clima (precipitação e temperatura como motores termodinâmicos), $o$ os organismos (vegetação, micro e macrofauna como agentes bioquímicos), $r$ o relevo (declividade e posição na paisagem como condicionantes hidrológicos), $p$ o material de origem (rocha-mãe que fornece o substrato mineral) e $t$ o tempo (duração da pedogênese). A equação de Jenny não é uma função explícita resolvível, mas um modelo conceitual que orienta a interpretação das relações solo-paisagem e fundamenta a cartografia pedológica.
+
+Na perspectiva termodinâmica, o solo é um sistema aberto e multifásico (sólida, líquida, gasosa e biológica) que troca energia e matéria com a atmosfera acima, a litosfera abaixo e os compartimentos adjacentes na paisagem. A pedogênese avança quando a energia disponível (chuva, temperatura) é suficiente para promover reações de hidrólise, oxidação e complexação que transformam minerais primários em minerais secundários (argilas e óxidos) e liberam íons para a solução do solo.
+
+## Processos de intemperismo
+
+O intemperismo é o conjunto de processos físicos, químicos e biológicos que desagregam e decompõem rochas e minerais na superfície terrestre, produzindo o regolito (manto de alteração) que constitui o substrato para a pedogênese.
+
+### Intemperismo químico
+
+A série de estabilidade de Goldich [-@goldich1938] ordena os minerais silicáticos em sequência decrescente de susceptibilidade ao intemperismo, que é essencialmente a inversa da série de cristalização de Bowen: olivina e plagioclásio cálcico (mais instáveis) intemperizam antes de muscovita e quartzo (mais estáveis). Essa sequência explica a composição mineralógica dos solos tropicais, nos quais minerais facilmente intemperizáveis (feldspatos, micas) foram quase completamente convertidos em caulinita, gibbsita e óxidos de ferro, restando quartzo como mineral resistato.
+
+As principais reações de intemperismo químico incluem a hidrólise (ataque do H⁺ da água aos silicatos, liberando cátions básicos e precipitando argilas), a carbonatação (dissolução de carbonatos por ácido carbônico, particularmente importante em rochas calcárias), a oxirredução (oxidação de Fe²⁺ a Fe³⁺, formando goethita e hematita que conferem as colorações amarela e vermelha típicas dos solos tropicais) e a complexação orgânica (quelação de metais por ácidos orgânicos, promovendo a podzolização).
+
+O Índice de Alteração Química (CIA) quantifica o grau de intemperismo de uma rocha ou solo:
+
+$$
+CIA = \frac{Al_2O_3}{Al_2O_3 + CaO^* + Na_2O + K_2O} \times 100
+$$
+
+onde $CaO^*$ representa apenas o cálcio dos silicatos (excluído o dos carbonatos). Valores de CIA próximos de 50 indicam rochas frescas (feldspatos intactos), enquanto valores de 95–100 indicam intemperismo extremo (somente caulinita e óxidos), condição típica de Latossolos tropicais com mais de $10^6$ anos de pedogênese.
+
+### Balanço de massa (Brimhall-Chadwick)
+
+A análise de Brimhall et al. [-@brimhall1992] fornece um arcabouço quantitativo para rastrear ganhos, perdas e redistribuição de elementos durante o intemperismo, utilizando um elemento imóvel (tipicamente Ti ou Zr) como referência interna. O fluxo de massa ($\tau_i$) de cada elemento $i$ é calculado como:
+
+$$
+\tau_{i} = \left(\frac{C_{i,w} \cdot \rho_w}{C_{i,p} \cdot \rho_p}\right) \cdot \frac{C_{j,p}}{C_{j,w}} - 1
+$$
+
+onde $C_{i,w}$ e $C_{i,p}$ são as concentrações do elemento $i$ no solo intemperizado e na rocha-mãe, $\rho_w$ e $\rho_p$ são as densidades correspondentes e $j$ é o elemento imóvel. Valores de $\tau_i > 0$ indicam enriquecimento residual (concentração por perda de outros elementos), $\tau_i < 0$ indica depleção (perda do elemento por lixiviação) e $\tau_i = 0$ indica imobilidade.
+
+## Pedogênese e horizonação
+
+A diferenciação vertical do perfil de solo em horizontes é o resultado visível da pedogênese. O horizonte A (superficial) é enriquecido em matéria orgânica humificada e apresenta estrutura granular; o horizonte E (eluvial) é empobrecido em argila, ferro e alumínio por transloucação descendente; o horizonte Bt (textural) acumula a argila iluviada do horizonte E, apresentando cerosidade e relação textural B/A > 1,5; e o horizonte C é o saprolito (rocha parcialmente intemperizada) que ainda preserva estrutura da rocha-mãe.
+
+O Sistema Brasileiro de Classificação de Solos (SiBCS, EMBRAPA 2018) classifica os solos brasileiros em 13 ordens, com base na presença e nas propriedades dos horizontes diagnósticos. Os Argissolos (com horizonte B textural e gradiente de argila) e os Latossolos (com horizonte B latossólico, espesso, homogêneo e com predomínio de caulinita e óxidos) são as ordens dominantes nos ambientes tropicais brasileiros e apresentam comportamentos hidráulicos profundamente distintos.
+
+A condutividade hidráulica saturada ($K_s$), descrita pelo modelo de van Genuchten para a curva de retenção de água no solo, determina a capacidade de infiltração e o risco de geração de escoamento superficial. Em Latossolos bem estruturados, $K_s$ pode atingir $10^{-4}$ a $10^{-3}$ m/s (infiltração rápida), enquanto em Argissolos com horizonte B impermeável, $K_s$ no horizonte Bt pode ser $10^{-7}$ a $10^{-6}$ m/s (geração de escoamento subsuperficial lateral e saturação por rejeição).
+
+## Dinâmica erosiva e RUSLE
+
+A Equação Universal de Perda de Solo Revisada (RUSLE) é o modelo empírico mais amplamente utilizado para estimativa de erosão laminar e em sulcos:
+
+$$
+A = R \cdot K \cdot L \cdot S \cdot C \cdot P
+$$
+
+onde $A$ é a perda média anual de solo (t ha⁻¹ ano⁻¹), $R$ é a erosividade da chuva (MJ mm ha⁻¹ h⁻¹ ano⁻¹), $K$ é a erodibilidade do solo (t h MJ⁻¹ mm⁻¹), $L$ e $S$ são os fatores de comprimento da rampa e declividade, $C$ é o fator de uso e manejo e $P$ é o fator de práticas conservacionistas.
+
+O fator $R$ é calculado a partir do índice de erosividade $EI_{30}$, que combina a energia cinética total da chuva com a intensidade máxima em 30 minutos. No semiárido brasileiro, a erosividade pode exceder 7.000 MJ mm ha⁻¹ h⁻¹ ano⁻¹, concentrada em poucos meses da estação chuvosa, quando eventos convectivos de alta intensidade geram a maior parte da perda de solo anual.
+
+O fator $K$ reflete a susceptibilidade intrínseca do solo à erosão, determinada por textura, estrutura, permeabilidade e teor de matéria orgânica. Neossolos Litólicos e Cambissolos rasos apresentam os maiores valores de $K$ (0,04–0,06 t h MJ⁻¹ mm⁻¹), enquanto Latossolos bem estruturados apresentam valores intermediários (0,01–0,03).
+
+O fator $LS$ pode ser calculado a partir de MDTs utilizando o algoritmo D-infinity [@tarboton1997], que distribui o fluxo proporcionalmente entre as células vizinhas de descida, evitando artefatos do algoritmo D8 em vertentes planas. A integração do fator $LS$ derivado de MDT com os demais fatores da RUSLE (obtidos de mapas temáticos) permite a espacialização da perda de solo em escala de bacia hidrográfica.
+
+::: {.callout-important}
+## Limitações da RUSLE
+A RUSLE não modela erosão em ravinas, voçorocas nem deposição de sedimentos; estima apenas a erosão laminar e em sulcos para encostas retilíneas. Para erosão em canais concentrados, modelos fisicamente baseados como o WEPP (Water Erosion Prediction Project) ou o USPED (Unit Stream Power Erosion/Deposition) são necessários.
+:::
+
+## Integração solo-paisagem
+
+A distribuição dos solos na paisagem segue padrões sistemáticos relacionados à posição topográfica, conceitualizados como catenas ou topossequências. Em paisagens tropicais típicas, o topo de chapada é ocupado por Latossolos (bem drenados, argilosos, profundos), a meia-encosta por Argissolos (com gradiente textural e susceptibilidade à erosão), as encostas íngremes por Neossolos Litólicos (rasos, sobre rocha) e as várzeas por Gleissolos (saturados, com acúmulo de matéria orgânica).
+
+Essa organização catenary tem implicações diretas para o planejamento do uso da terra, pois cada posição no relevo impõe aptidões e restrições específicas. A conversão de vegetação nativa em pastagem, por exemplo, eleva o fator $C$ da RUSLE de valores inferiores a 0,01 (vegetação densa) para valores de 0,2 a 0,6 (pastagem degradada), amplificando a perda de solo por um fator de 20 a 60 vezes. Quando essa conversão ocorre em posições de encosta com solos de gradiente textural (Argissolos), o risco de erosão linear (sulcos, ravinas) é multiplicado pela combinação de alta erodibilidade, alta declividade e redução da cobertura protetora.
+
+## Conservação e engenharia de mitigação
+
+A engenharia de mitigação da erosão opera pela manipulação dos fatores da RUSLE que são passíveis de controle humano (principalmente $C$, $P$ e, indiretamente, $L$ e $S$). As técnicas de conservação do solo incluem práticas vegetativas (plantio em curvas de nível, faixas de retenção, cobertura morta), práticas edáficas (calagem para promover agregação, incorporação de matéria orgânica) e práticas mecânicas (terraceamento, barraginhas, cordões de contorno).
+
+A análise multicritério AHP (Analytic Hierarchy Process) de Saaty [-@saaty1980] pode ser utilizada para priorização espacial de intervenções em microbacias, combinando fatores como declividade, erodibilidade, uso do solo, proximidade de corpos d'água e custo de intervenção em uma superfície de aptidão ponderada. Os pesos dos fatores são determinados por comparação pareada, e a consistência do julgamento é verificada pela razão de consistência ($CR < 0,10$).

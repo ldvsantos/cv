@@ -74,4 +74,25 @@ Livros e ebooks de autoria de **Luiz Diego Vidal Santos**, disponíveis em forma
     </div>
   </div>
 </div>
+
+<div class="book-card">
+  <div class="book-cover">
+    <a href="../books/geotecnologias-sig/">
+      <img src="../books/geotecnologias-sig/img/capa_geotecnologias_sig.png" alt="Capa do ebook Geotecnologias e Sistemas de Informação Geográfica">
+    </a>
+  </div>
+  <div class="book-info">
+    <p class="book-author">Luiz Diego Vidal Santos</p>
+    <h4 class="book-title">Geotecnologias e Sistemas de Informação Geográfica</h4>
+    <p class="book-subtitle">Fundamentos, Análise Espacial e Aplicações Ambientais</p>
+    <p class="book-desc">Livro-texto com 12 capítulos organizados em 4 partes, cobrindo modelos de dados espaciais, álgebra de mapas e geoestatística, sensoriamento remoto, classificação digital e incerteza, processos erosivos e degradação, hidrologia e gestão da seca, monitoramento ambiental da mineração, exploração mineral preditiva e inteligência artificial aplicada a geociências.</p>
+    <div class="book-meta">
+      <span><i class="bi bi-journal-text"></i> 12 capítulos</span>
+      <span><i class="bi bi-unlock"></i> CC BY-NC-SA 4.0</span>
+    </div>
+    <div class="book-actions">
+      <a href="../books/geotecnologias-sig/" class="btn btn-info btn-sm"><i class="fa-solid fa-book-open"></i> Acessar o ebook</a>
+    </div>
+  </div>
+</div>
 ```

@@ -1,0 +1,133 @@
+# Classificação Digital e Avaliação de Incerteza {#sec-classificacao-incerteza}
+
+## Fontes de erro na classificação
+
+A classificação digital de imagens de satélite é um processo intrinsecamente sujeito a erros, e a avaliação de incerteza é parte indissociável de qualquer mapeamento temático rigoroso. As fontes de erro se acumulam ao longo de toda a cadeia de processamento, desde a aquisição da imagem até a produção do mapa final.
+
+Na fase de aquisição, a resolução espacial, espectral e temporal do sensor limita os fenômenos detectáveis; pixels mistos (que contêm mais de uma classe de cobertura) são inevitáveis quando o tamanho do pixel excede o tamanho da menor feição de interesse. Na fase de pré-processamento, erros de correção atmosférica, registro geométrico imperfeito entre imagens multitemporais e falhas na remoção de nuvens e sombras propagam artefatos para as fases subsequentes. Na fase de classificação propriamente dita, a qualidade e a representatividade das amostras de treinamento são tipicamente os fatores mais críticos: amostras insuficientes, mal distribuídas no espaço ou no espaço espectral, ou rotuladas incorretamente comprometem qualquer algoritmo, por mais sofisticado que seja.
+
+## Amostragem de referência
+
+O design amostral para validação de classificações deve seguir princípios estatísticos rigorosos para que as métricas de acurácia sejam estimativas não enviesadas da verdadeira acurácia do mapa. Olofsson et al. [-@olofsson2014] recomendam amostragem probabilística (aleatória simples ou estratificada por classe) com número mínimo de amostras determinado pela precisão desejada.
+
+A fórmula de Cochran para amostragem aleatória simples estima o tamanho amostral necessário:
+
+$$
+n = \frac{Z^2 \times p(1-p)}{e^2}
+$$
+
+onde $Z$ é o valor crítico da distribuição normal para o nível de confiança desejado (1,96 para 95%), $p$ é a proporção esperada de classificação correta (tipicamente 0,5 para maximizar o tamanho amostral, caso conservador) e $e$ é a margem de erro tolerada (por exemplo, 0,05 para ±5%). Para $p = 0,5$ e $e = 0,05$ com 95% de confiança, $n = 385$ amostras no total.
+
+Na amostragem estratificada, o esforço amostral é alocado proporcionalmente à área de cada classe (alocação proporcional) ou de forma otimizada para reduzir a variância das estimativas de acurácia do produtor e do usuário (alocação ótima de Neyman). Congalton e Green [-@congalton2019] recomendam um mínimo de 25–30 amostras por classe para estimativas estáveis das métricas por classe, e 50 amostras por classe quando a heterogeneidade intraclasse é elevada.
+
+::: {.callout-important}
+## Independência amostral
+As amostras de validação devem ser espacialmente independentes das amostras de treinamento. Utilizar os mesmos pontos para treinar e validar o classificador (ou pontos muito próximos que compartilham autocorrelação espacial) inflaciona artificialmente as métricas de acurácia, produzindo avaliações irrealisticamente otimistas.
+:::
+
+## Matriz de confusão
+
+A matriz de confusão (ou matriz de erro) é a ferramenta central para avaliação quantitativa da acurácia de classificações temáticas. Trata-se de uma tabela cruzada que confronta a classe atribuída pelo mapa (linhas) com a classe observada em campo ou por interpretação de referência (colunas).
+
+A diagonal principal da matriz contém os pixels corretamente classificados. As células fora da diagonal representam erros de classificação, que se dividem em dois tipos. Os erros de comissão (falsos positivos) ocorrem quando o mapa atribui uma classe a pixels que na realidade pertencem a outra classe; são quantificados pela proporção de pixels incorretamente incluídos em cada linha. Os erros de omissão (falsos negativos) ocorrem quando o mapa falha em detectar pixels que na realidade pertencem a uma classe; são quantificados pela proporção de pixels incorretamente excluídos de cada coluna.
+
+Três métricas derivam diretamente da matriz de confusão. A acurácia global (OA) quantifica a fração total de pixels corretamente classificados:
+
+$$
+OA = \frac{\sum_{i=1}^{k} n_{ii}}{N}
+$$
+
+onde $n_{ii}$ é o número de amostras na diagonal (classe $i$ mapeada e referência coincidentes) e $N$ é o total de amostras. A acurácia do produtor (PA) para cada classe $j$ quantifica a probabilidade de um pixel da classe $j$ no campo ser corretamente classificado no mapa:
+
+$$
+PA_j = \frac{n_{jj}}{\sum_{i=1}^{k} n_{ij}}
+$$
+
+A acurácia do usuário (UA) para cada classe $i$ quantifica a probabilidade de um pixel mapeado como classe $i$ ser realmente dessa classe no campo:
+
+$$
+UA_i = \frac{n_{ii}}{\sum_{j=1}^{k} n_{ij}}
+$$
+
+::: {.callout-tip}
+## Interpretação prática
+A PA responde à pergunta "quanto da classe real foi capturado pelo mapa?", enquanto a UA responde "quanto do que o mapa diz é verdade?". Um mapa pode ter PA alta para vegetação (detecta quase toda a vegetação existente) mas UA baixa (classifica erroneamente muitos pixels de solo como vegetação). Ambas as métricas devem ser avaliadas conjuntamente para cada classe.
+:::
+
+## Índice Kappa e suas críticas
+
+O índice Kappa ($\kappa$) de Cohen quantifica a concordância entre o mapa e a referência após descontar a concordância esperada por acaso:
+
+$$
+\kappa = \frac{OA - P_e}{1 - P_e}
+$$
+
+onde $P_e$ é a concordância esperada sob classificação aleatória (calculada a partir dos totais marginais da matriz de confusão). A escala qualitativa de Landis e Koch classifica Kappa < 0,20 como pobre, 0,21–0,40 como razoável, 0,41–0,60 como moderada, 0,61–0,80 como substancial e > 0,80 como excelente.
+
+Apesar de sua ampla utilização, o Kappa recebeu críticas substanciais. Pontius e Millones [-@pontius2011] demonstraram que o Kappa é redundante com a OA (ambos contêm a mesma informação), mistura dois tipos de erro qualitativamente distintos (quantidade e alocação) e depende da prevalência das classes (um mapa dominado por uma única classe pode ter Kappa artificialmente elevado). Como alternativa, esses autores propuseram duas métricas mais informativas: o Quantity Disagreement (diferença entre as proporções de cada classe no mapa e na referência) e o Allocation Disagreement (erros de posicionamento uma vez igualadas as proporções).
+
+A @tbl-metricas compara as métricas de acurácia e suas propriedades.
+
+| Métrica | O que mede | Vantagem | Limitação |
+|:--------|:-----------|:---------|:----------|
+| OA | Fração global de acertos | Simples, intuitiva | Insensível a erros em classes raras |
+| PA | Completude por classe | Revela omissões | Não informa sobre comissões |
+| UA | Confiabilidade por classe | Revela comissões | Não informa sobre omissões |
+| Kappa | Concordância ajustada ao acaso | Tradição, comparabilidade | Redundante, mistura erros |
+| Quantity D. | Erro de proporção | Separa tipos de erro | Não localiza o erro espacialmente |
+| Allocation D. | Erro de posição | Separa tipos de erro | Não localiza o erro espacialmente |
+| F1-Score | Média harmônica PA×UA | Balanço entre PA e UA | Por classe, requer agregação |
+
+: Métricas de acurácia para classificação temática. {#tbl-metricas .striped .hover}
+
+## Protocolo de validação área-ponderada
+
+Olofsson et al. [-@olofsson2014] propuseram um protocolo de validação rigoroso para estimativas de área baseadas em classificação. O protocolo reconhece que os mapas de uso e cobertura do solo são utilizados não apenas para visualização, mas para calcular áreas de cada classe (por exemplo, área desmatada, área de cultivo), e que essas estimativas de área devem incorporar a informação da matriz de confusão para corrigir o viés introduzido pelos erros de classificação.
+
+A estimativa de área corrigida para a classe $k$ é calculada como:
+
+$$
+\hat{A}_k = \sum_{i=1}^{q} p_{ik} \cdot A_T
+$$
+
+onde $p_{ik}$ é a proporção estimada de pixels mapeados como classe $i$ que na realidade pertencem à classe $k$ (obtida da matriz de confusão estratificada), $A_T$ é a área total mapeada e $q$ é o número de classes. O intervalo de confiança da estimativa de área é calculado por propagação de variância, fornecendo limites superior e inferior que quantificam a incerteza.
+
+## Mapas de probabilidade
+
+Os classificadores probabilísticos (como Random Forest e SVM com calibração) podem fornecer, para cada pixel, não apenas a classe mais provável, mas a probabilidade de pertencer a cada classe. O mapa de probabilidade máxima (que exibe para cada pixel a maior probabilidade entre todas as classes) é uma ferramenta de diagnóstico que identifica regiões onde o classificador é confiante (probabilidade > 0,8) e regiões onde há ambiguidade espectral entre classes (probabilidade < 0,5).
+
+Essas regiões de baixa confiança são candidatas prioritárias para verificação de campo ou para coleta de amostras adicionais de treinamento. A integração do mapa de probabilidade com as métricas de acurácia por classe permite um diagnóstico espacialmente explícito da qualidade do mapa, superando as limitações das métricas globais (como OA e Kappa) que resumem a acurácia em um único número.
+
+```{dot}
+//| label: fig-fluxo-validacao
+//| fig-cap: "Fluxo de validação de classificação digital conforme protocolo de Olofsson et al. (2014)."
+//| fig-width: 8
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=9, margin="0.25,0.12", penwidth=0.8]
+    edge [fontname="Helvetica", fontsize=8, color="#555555"]
+
+    A [label="Mapa classificado\n(n classes)", fillcolor="#E3F2FD", color="#1565C0"]
+    B [label="Design amostral\n(estratificado por classe)", fillcolor="#BBDEFB", color="#1565C0"]
+    C [label="Coleta de referência\n(campo, imagem de\nalta resolução)", fillcolor="#C8E6C9", color="#2E7D32"]
+    D [label="Matriz de confusão\n(área-ponderada)", fillcolor="#FFF9C4", color="#F9A825"]
+    E [label="Métricas: OA, PA, UA\nQuantity/Allocation D.", fillcolor="#FFCCBC", color="#E64A19"]
+    F [label="Estimativas de área\ncom intervalo de\nconfiança", fillcolor="#E1BEE7", color="#7B1FA2"]
+    G [label="Mapa de probabilidade\n(diagnóstico espacial)", fillcolor="#F3E5F5", color="#7B1FA2"]
+
+    A -> B -> C -> D
+    D -> E
+    D -> F
+    A -> G
+}
+```
+
+## Google Earth Engine na prática
+
+A implementação de um fluxo completo de classificação e validação no Google Earth Engine segue uma sequência padronizada que ilustra a integração dos conceitos apresentados neste capítulo. O processo inicia-se pela seleção de uma coleção de imagens (Sentinel-2, Landsat-8/9) filtrada por data, cobertura de nuvens e região de interesse. As bandas espectrais (B2 a B12 no caso do Sentinel-2) e índices derivados (NDVI, EVI, NDWI) compõem o espaço de feições para classificação. Um classificador Random Forest com 100 a 500 árvores é treinado sobre polígonos de referência e aplicado ao mosaico de imagens, produzindo simultaneamente o mapa classificado e o mapa de probabilidade por classe. A validação segue o protocolo de Olofsson com amostragem estratificada e cálculo de métricas área-ponderadas.
+
+::: {.callout-tip}
+## Exercício aplicado
+Um exercício completo de classificação no GEE, incluindo seleção de imagens, cálculo de índices, treinamento de Random Forest, geração de mapa de classes e avaliação de acurácia, pode ser executado em menos de 100 linhas de código JavaScript, demonstrando o poder de democratização que a plataforma trouxe ao sensoriamento remoto.
+:::

@@ -1,0 +1,101 @@
+# Recursos Hídricos e Gestão por Bacia Hidrográfica {#sec-recursos-hidricos}
+
+## Caracterização morfométrica da bacia
+
+A bacia hidrográfica constitui a unidade natural de planejamento e gestão dos recursos hídricos, conforme estabelecido pela Lei 9.433/1997. A delimitação e a caracterização morfométrica de bacias, operacionalizadas em SIG a partir de Modelos Digitais de Elevação, fornecem os parâmetros físicos que condicionam a resposta hidrológica.
+
+A hierarquia de drenagem de Strahler [-@strahler1957] classifica os canais de uma rede fluvial por ordem crescente de magnitude: canais sem tributários são de primeira ordem, a confluência de dois canais de mesma ordem produz um canal de ordem superior, e a confluência de canais de ordens diferentes mantém a ordem do canal de maior magnitude. A ordem do canal principal de uma bacia é um indicador integrado da complexidade da rede de drenagem, da área de contribuição e do potencial de geração de vazão.
+
+A @tbl-morfometria apresenta os principais índices morfométricos e suas implicações hidrológicas.
+
+| Índice | Fórmula | Significado hidrológico |
+|:-------|:--------|:----------------------|
+| Densidade de drenagem ($D_d$) | $D_d = \frac{L_{total}}{A}$ | Disponibilidade de canais para escoamento. Valores altos indicam solos impermeáveis e resposta rápida |
+| Fator de forma ($K_f$) | $K_f = \frac{A}{L^2}$ | Susceptibilidade a enchentes. Bacias alongadas ($K_f < 0,5$) têm menor risco |
+| Índice de circularidade ($IC$) | $IC = \frac{4\pi A}{P^2}$ | Proximidade à forma circular. $IC \to 1$ indica resposta rápida e concentrada |
+| Sinuosidade ($S_i$) | $S_i = \frac{L_{rio}}{L_{vale}}$ | Grau de meandrização. $S_i > 1,5$ indica canais sinuosos com dissipação de energia |
+| Coeficiente de compacidade ($K_c$) | $K_c = 0,28 \cdot \frac{P}{\sqrt{A}}$ | Relação com forma circular. $K_c \to 1$ indica maior concentração do escoamento |
+
+: Índices morfométricos e suas implicações para a resposta hidrológica de bacias. {#tbl-morfometria .striped .hover}
+
+O tempo de concentração ($t_c$), definido como o tempo necessário para que a água precipitada no ponto mais remoto da bacia atinja a seção de controle (exutório), é o parâmetro que conecta a morfometria da bacia ao dimensionamento de obras hidráulicas e sistemas de alerta. Diversas fórmulas empíricas estimam $t_c$ a partir do comprimento do talvegue, da declividade média e da rugosidade do terreno, e a escolha da equação mais adequada depende das características da bacia e da disponibilidade de dados.
+
+## Balanço hídrico
+
+O balanço hídrico de uma bacia integra todos os fluxos de entrada, saída e armazenamento de água:
+
+$$
+P - E_a - Q = \frac{dS}{dt}
+$$
+
+onde $P$ é a precipitação, $E_a$ é a evapotranspiração real, $Q$ é a vazão (deflúvio) no exutório e $dS/dt$ é a variação do armazenamento (em solo, aquíferos e reservatórios) ao longo do tempo. Em escala anual e para bacias em equilíbrio (sem variação de armazenamento entre anos), a equação simplifica-se para $Q = P - E_a$, revelando que a vazão é o resíduo entre precipitação e evapotranspiração.
+
+Em regiões semiáridas, o balanço hídrico é caracterizado por elevados valores de $E_a/P$ (70–90% da precipitação retorna à atmosfera por evapotranspiração), intermitência fluvial (rios secos por 4–8 meses ao ano) e forte sazonalidade (80–90% da precipitação concentrada em 3–5 meses). A cobertura vegetal exerce papel regulador ao interceptar precipitação (reduzindo o impacto das gotas sobre o solo), promover infiltração (via macroporos radiculares) e liberar água gradualmente por transpiração, atenuando picos de cheia e sustentando a vazão de base.
+
+## Lei 9.433/1997 (Política Nacional de Recursos Hídricos)
+
+A Lei das Águas estabelece os fundamentos da gestão hídrica no Brasil, assentada sobre cinco princípios fundamentais: a água é um bem público de domínio da União ou dos estados; a água possui valor econômico e seu uso deve reconhecer esse valor; em situações de escassez, o abastecimento humano e a dessedentação animal têm prioridade; a gestão deve ser descentralizada com participação social; e a bacia hidrográfica é a unidade territorial de planejamento.
+
+A lei institui cinco instrumentos de gestão, cuja operacionalização depende fortemente de geotecnologias.
+
+O Plano de Recursos Hídricos define o diagnóstico da bacia, as metas de qualidade e quantidade, e as ações necessárias, todos baseados em dados geoespaciais (mapas de uso do solo, rede hidrográfica, localização de usuários). O enquadramento dos corpos d'água em classes de qualidade (CONAMA 357/2005) define metas de qualidade segundo o uso preponderante (abastecimento, irrigação, navegação, preservação), cuja espacialização em SIG permite identificar trechos críticos. A outorga de direito de uso autoriza a captação ou lançamento de efluentes, exigindo análise espacial da disponibilidade hídrica ($Q_{7,10}$, vazão mínima de 7 dias com recorrência de 10 anos). A cobrança pelo uso da água é o instrumento econômico que incentiva o uso racional, e o Sistema de Informações sobre Recursos Hídricos (SNIRH) centraliza os dados hidrológicos, meteorológicos e de qualidade da água para suporte decisório.
+
+A equação de diluição, utilizada na análise de outorgas de lançamento de efluentes, calcula a concentração final de um poluente após a mistura com o corpo receptor:
+
+$$
+C_{final} = \frac{Q_{rio} \cdot C_{rio} + Q_{efl} \cdot C_{efl}}{Q_{rio} + Q_{efl}}
+$$
+
+onde $Q_{rio}$ e $C_{rio}$ são a vazão e a concentração do rio a montante, $Q_{efl}$ e $C_{efl}$ são a vazão e a concentração do efluente, e $C_{final}$ deve atender ao limite da classe de enquadramento.
+
+## Governança e participação
+
+A gestão participativa é operacionalizada pelos Comitês de Bacia Hidrográfica (CBHs), com composição tripartite (poder público, usuários e sociedade civil). As Agências de Água são os braços executivos dos comitês, responsáveis pela arrecadação da cobrança, manutenção do sistema de informações e elaboração de estudos técnicos.
+
+::: {.callout-note}
+## Desafio da gestão em bacias intermitentes
+Os instrumentos da Lei 9.433 foram concebidos para rios perenes. Em bacias intermitentes do semiárido, a outorga baseada em $Q_{7,10}$ é frequentemente zero (o rio seca todo ano), exigindo abordagens alternativas como a alocação negociada de água, reservas estratégicas em aquíferos e a integração de fontes superficiais e subterrâneas em sistemas de gestão adaptativos.
+:::
+
+## Desafios contemporâneos
+
+A gestão hídrica contemporânea opera no nexo água-energia-alimento, no qual as demandas concorrentes dos três setores devem ser harmonizadas sob restrições de disponibilidade hídrica e variabilidade climática. As secas multianuais que afetaram o Nordeste (2012–2017) e o Sudeste (2014–2015) demonstraram a vulnerabilidade do sistema hídrico brasileiro a eventos extremos cuja frequência e intensidade devem aumentar sob mudanças climáticas.
+
+A modelagem do transporte e decaimento de poluentes em corpos hídricos, formalizada pela equação de Streeter-Phelps (que descreve o balanço entre consumo de oxigênio pela decomposição de matéria orgânica e reaeração superficial), pode ser espacializada ao longo da rede de drenagem em SIG, produzindo mapas de qualidade da água que orientam o enquadramento e a localização de pontos de monitoramento. A otimização multiobjetivo (maximizar qualidade hídrica e produção agrícola enquanto minimiza custos de tratamento) é formalizada como problema de programação não linear que integra modelos hidrológicos, modelos de qualidade da água e cenários de uso do solo.
+
+```{dot}
+//| label: fig-instrumentos-pnrh
+//| fig-cap: "Instrumentos da Política Nacional de Recursos Hídricos e suas inter-relações."
+//| fig-width: 8
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=9, margin="0.25,0.12", penwidth=0.8]
+    edge [fontname="Helvetica", fontsize=8, color="#555555"]
+
+    L [label="Lei 9.433/1997\nPolítica Nacional de\nRecursos Hídricos", fillcolor="#BBDEFB", color="#1565C0", fontsize=10]
+
+    P [label="Plano de\nRecursos Hídricos", fillcolor="#C8E6C9", color="#2E7D32"]
+    E [label="Enquadramento\n(CONAMA 357)", fillcolor="#C8E6C9", color="#2E7D32"]
+    O [label="Outorga de\ndireito de uso", fillcolor="#FFF9C4", color="#F9A825"]
+    C [label="Cobrança\npelo uso", fillcolor="#FFF9C4", color="#F9A825"]
+    S [label="Sistema de\nInformações (SNIRH)", fillcolor="#E1BEE7", color="#7B1FA2"]
+
+    CBH [label="Comitês de\nBacia (CBHs)", fillcolor="#FFCCBC", color="#E64A19"]
+    AG [label="Agências\nde Água", fillcolor="#FFCCBC", color="#E64A19"]
+
+    L -> P
+    L -> E
+    L -> O
+    L -> C
+    L -> S
+    P -> E [label=" Metas "]
+    E -> O [label=" Restrições "]
+    O -> C [label=" Base "]
+    S -> P [label=" Dados ", style=dashed]
+    S -> O [label=" Informação ", style=dashed]
+    CBH -> AG [label=" Delibera "]
+    AG -> S [label=" Alimenta "]
+    AG -> C [label=" Arrecada "]
+}
+```

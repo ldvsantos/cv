@@ -1,0 +1,179 @@
+# SIG Aplicado à Exploração Mineral e Modelagem Preditiva {#sec-sig-exploracao-mineral}
+
+## Sistemas minerais e modelagem prospectiva
+
+A exploração mineral moderna opera sob o conceito de sistemas minerais (mineral systems), proposto por Wyborn et al. [-@wyborn1994], que identifica os processos geológicos essenciais à formação de um depósito mineral: fonte de fluidos e metais, mecanismo de transporte (falhas, zonas de cisalhamento, contatos litológicos), e sítio de deposição (armadilha estrutural ou química). Cada componente do sistema mineral gera assinaturas geológicas, geofísicas e geoquímicas que podem ser mapeadas, e a modelagem prospectiva em SIG consiste em integrar múltiplas camadas de evidência para delimitar áreas com maior probabilidade de conter mineralizações econômicas.
+
+O fluxo de trabalho de exploração mineral baseado em SIG segue uma sequência hierárquica de redução de área: reconhecimento regional (escala 1:1.000.000 a 1:250.000) com dados aerogeofísicos e geologia regional; seleção de alvos (1:100.000 a 1:50.000) com sensoriamento remoto, geoquímica de solo/sedimento e geofísica terrestre; e detalhamento de alvos (1:25.000 a 1:5.000) com mapeamento geológico de detalhe, furos de sondagem e modelagem tridimensional. Em cada escala, o SIG integra camadas de informação por técnicas quantitativas de modelagem espacial.
+
+## Dados aerogeofísicos
+
+### Aeromagnetometria
+
+O levantamento aeromagnético mede as variações do campo magnético terrestre causadas por minerais ferrimagnéticos (magnetita, pirrotita, ilmenita) presentes nas rochas. Os dados são processados para remoção do campo geomagnético internacional de referência (IGRF), produzindo o campo magnético anômalo, que é interpretado em termos de unidades litológicas e estruturas geológicas. Produtos derivados incluem a amplitude do sinal analítico (ASA), que localiza bordas de corpos magnéticos independentemente da direção de magnetização e da inclinação magnética, e as derivadas direcionais (dx, dy, dz), que realçam contatos e falhas segundo sua orientação.
+
+### Gamaespectrometria
+
+A gamaespectrometria aérea mede a radiação gama natural emitida por isótopos de potássio ($^{40}$K), urânio ($^{238}$U, medido pelo filho $^{214}$Bi) e tório ($^{232}$Th, medido pelo filho $^{208}$Tl) nos 30–45 cm superficiais do solo e rocha. A razão Th/K discrimina unidades geológicas com assinaturas distintas (granitos peraluminosos apresentam alto K e moderado Th, enquanto quartzitos mostram baixo K e alto Th). A razão U/Th identifica anomalias redox associadas a mineralizações uraníferas e hidrotermais. A integração de K, eU, eTh na composição ternária RGB produz mapas de domínios radiométricos que auxiliam no mapeamento litológico e na identificação de zonas de alteração hidrotermal.
+
+::: {.callout-tip}
+## Dados públicos no Brasil
+A CPRM (Serviço Geológico do Brasil) disponibiliza dados aerogeofísicos (magnetometria e gamaespectrometria) cobrindo grande parte do território nacional, através do portal GeoSGB (geosgb.cprm.gov.br). Os dados do Programa de Levantamento Aerogeofísico (PLGA) estão em formato GDB e XYZ, prontos para importação em SIG. O CPRM também disponibiliza mapas geológicos no padrão GeoSGB, cartas geoquímicas e dados de recursos minerais.
+:::
+
+## Sensoriamento remoto hiperespectral
+
+Enquanto sensores multiespectrais (Sentinel-2, Landsat) registram a reflectância em dezenas de bandas relativamente largas, sensores hiperespectrais (AVIRIS, EnMAP, PRISMA, Hyperion, ASTER-SWIR) adquirem centenas de bandas estreitas e contíguas, permitindo a identificação de minerais específicos por suas feições de absorção diagnósticas no espectro eletromagnético. A goethita apresenta feições de absorção em ~0,48 e ~0,90 μm, a hematita em ~0,53 e ~0,86 μm, a caulinita em ~2,16 e ~2,21 μm, e a montmorilonita em ~2,20 μm. Esses minerais de alteração são indicadores (pathfinder minerals) de processos hidrotermais associados a mineralizações.
+
+O algoritmo SAM (Spectral Angle Mapper), proposto por Kruse et al. [-@kruse1993], classifica pixels por comparação angular entre o espectro observado e espectros de referência (bibliotecas espectrais da USGS/JPL). O ângulo espectral $\alpha$ entre dois espectros $t$ (alvo) e $r$ (referência), cada um vetorizado em $n$ bandas, é calculado por:
+
+$$
+\alpha = \cos^{-1} \left( \frac{\sum_{i=1}^{n} t_i \cdot r_i}{\sqrt{\sum_{i=1}^{n} t_i^2} \cdot \sqrt{\sum_{i=1}^{n} r_i^2}} \right)
+$$
+
+Valores de $\alpha$ próximos de zero indicam alta similaridade espectral. A vantagem do SAM é sua insensibilidade a variações de iluminação (albedo), pois o ângulo depende apenas da forma do espectro e não de sua magnitude, sendo particularmente útil em terrenos com topografia acidentada.
+
+A @tbl-minerais-espectros apresenta minerais indicadores e suas feições diagnósticas.
+
+| Mineral | Grupo | Feição diagnóstica (μm) | Processo indicado |
+|:--------|:------|:-----------------------|:------------------|
+| Caulinita | Argilomineral | 2,16; 2,21 (OH) | Alteração argílica |
+| Montmorilonita | Argilomineral | 2,20 (OH + H₂O) | Alteração argílica |
+| Sericita/Muscovita | Filossilicato | 2,20; 2,35 (Al-OH) | Alteração fílica |
+| Clorita | Filossilicato | 2,25; 2,33 (Mg-OH) | Alteração propilítica |
+| Epidoto | Sorossilicato | 2,25; 2,33 | Alteração propilítica |
+| Goethita | Óxido de Fe | 0,48; 0,90 | Intemperismo/gossan |
+| Hematita | Óxido de Fe | 0,53; 0,86 | Oxidação/gossan |
+| Carbonato (calcita) | Carbonato | 2,33; 2,53 (CO₃) | Alteração carbonática |
+
+: Minerais indicadores de processos hidrotermais e suas feições espectrais diagnósticas. {#tbl-minerais-espectros .striped .hover}
+
+## Modelagem multicritério e AHP
+
+A modelagem de favorabilidade mineral em SIG combina múltiplas camadas de evidência (geologia, geofísica, geoquímica, sensoriamento remoto, estrutural) em um mapa-síntese de potencial mineral. O Processo Analítico Hierárquico (AHP), proposto por Saaty [-@saaty1980], é amplamente utilizado para ponderar a importância relativa de cada camada de evidência a partir de comparações pareadas entre critérios, avaliadas por especialistas em uma escala de 1 (igual importância) a 9 (importância absoluta). A matriz de comparação pareada $A = [a_{ij}]$ é normalizada e o autovetor principal fornece os pesos relativos $w_i$ de cada critério.
+
+A consistência lógica das comparações é verificada pelo Índice de Consistência ($CI$) e pela Razão de Consistência ($CR$):
+
+$$
+CI = \frac{\lambda_{max} - n}{n - 1}
+$$
+
+$$
+CR = \frac{CI}{RI_n}
+$$
+
+onde $\lambda_{max}$ é o autovalor principal da matriz, $n$ o número de critérios e $RI_n$ o índice de consistência aleatório (tabelado para cada $n$). Matrizes com $CR > 0,10$ são consideradas inconsistentes e devem ser revisadas. Uma vez obtidos os pesos, os mapas-critério (já reclassificados para uma escala comum, por exemplo, fuzzy 0–1) são combinados pela soma ponderada:
+
+$$
+FP = \sum_{i=1}^{n} w_i \cdot \mu_i
+$$
+
+onde $FP$ é o índice de favorabilidade e $\mu_i$ o grau de pertinência fuzzy do $i$-ésimo critério.
+
+## Weights of Evidence (WofE)
+
+O método pesos de evidência (Weights of Evidence, WofE), aplicado à exploração mineral por Bonham-Carter [-@bonhamcarter1994], é fundamentado no Teorema de Bayes e utiliza depósitos minerais conhecidos (training points) para calcular a associação espacial entre cada mapa-evidência (binarizado) e a ocorrência mineral. Para cada mapa binário $B$ (por exemplo, presença/ausência de uma falha em um raio de 500 m), os pesos positivo ($W^+$) e negativo ($W^-$) são calculados como:
+
+$$
+W^+ = \ln \frac{P(B|D)}{P(B|\overline{D})}
+$$
+
+$$
+W^- = \ln \frac{P(\overline{B}|D)}{P(\overline{B}|\overline{D})}
+$$
+
+onde $D$ denota a presença de um depósito e $\overline{D}$ sua ausência. O contraste $C = W^+ - W^-$ quantifica a força da associação espacial. Valores de $C > 0$ indicam associação positiva (o padrão favorece a ocorrência), e $C < 0$ indicam associação negativa. A significância estatística do contraste é avaliada pela razão $C/s(C)$, onde $s(C)$ é o desvio-padrão estimado por propagação de erros.
+
+A probabilidade posterior de ocorrência mineral em cada célula do grid é calculada pela combinação log-linear dos pesos de todas as camadas de evidência:
+
+$$
+\ln O_{post} = \ln O_{prior} + \sum_{j} W_j
+$$
+
+onde $O$ denota odds (razão de chances) e $W_j$ é o peso ($W^+$ ou $W^-$) do $j$-ésimo mapa conforme a presença ou ausência do padrão naquela célula.
+
+::: {.callout-important}
+## Pressuposto de independência condicional
+A validade do WofE requer independência condicional entre os mapas-evidência dado o evento de depósito. A violação dessa premissa (por exemplo, correlação entre mapas geológicos e geofísicos derivados das mesmas unidades) infla a probabilidade posterior. O teste da independência condicional é realizado pelo qui-quadrado ($\chi^2$) ou pela razão de Agterberg-Cheng, comparando o número de depósitos previstos pelo modelo com o observado. Violações moderadas são comuns na prática e devem ser reportadas e mitigadas (por exemplo, removendo camadas redundantes ou substituindo por combinações AHP onde a independência não é atendida).
+:::
+
+## Modelagem por aprendizado de máquina
+
+As abordagens de aprendizado de máquina (Random Forest, SVM, redes neurais, gradient boosting) para modelagem de favorabilidade mineral operam como mapeadores não-lineares entre as camadas de evidência (features) e a presença/ausência de depósitos minerais (variável-alvo), sem pressupor independência condicional entre evidências e sem exigir binarização prévia dos mapas.
+
+A avaliação do desempenho preditivo de qualquer modelo de favorabilidade (AHP, WofE, ML) utiliza a curva ROC (Receiver Operating Characteristic) e a área sob a curva (AUC, Area Under the Curve). A AUC mede a capacidade do modelo de discriminar entre células com e sem depósitos, variando de 0,5 (discriminação aleatória) a 1,0 (discriminação perfeita). Valores de AUC > 0,80 indicam desempenho aceitável, enquanto AUC > 0,90 sugere excelente capacidade preditiva. Para modelos de ML, a validação deve utilizar conjuntos de teste espacialmente independentes (spatial cross-validation, como Leave-Location-Out, discutido no @sec-inteligencia-artificial) para evitar inflação de AUC por autocorrelação espacial.
+
+A @tbl-comparacao-metodos-prospeccao compara os métodos discutidos.
+
+| Método | Fundamentação | Pesos | Independência requerida | Supervisão |
+|:-------|:-------------|:------|:-----------------------|:-----------|
+| AHP + Fuzzy | Decisão multicritério | Especialista | Não | Não |
+| WofE | Bayesiano | Dados (depósitos) | Sim (condicional) | Sim |
+| Random Forest | Ensemble de árvores | Dados | Não | Sim |
+| SVM | Máxima margem | Dados | Não | Sim |
+
+: Comparação entre métodos de modelagem prospectiva mineral em SIG. {#tbl-comparacao-metodos-prospeccao .striped .hover}
+
+## Restrições ambientais e planejamento integrado
+
+A modelagem de favorabilidade mineral não pode ser dissociada das restrições ambientais e legais que condicionam a viabilidade de exploração. Em ambiente SIG, as áreas de exclusão (unidades de conservação de proteção integral, terras indígenas, quilombos, APPs) são representadas como camadas de restrição booleana que eliminam porções do mapa de favorabilidade, produzindo o mapa de áreas prospectáveis (favorabilidade mineral menos restrições legais). Restrições parciais (APA, RPPN, zonas de amortecimento) podem ser incorporadas como fatores de ponderação negativa em modelos fuzzy, reduzindo a favorabilidade sem anulá-la completamente.
+
+```{dot}
+//| label: fig-fluxo-prospeccao-mineral
+//| fig-cap: "Fluxo de trabalho da modelagem de favorabilidade mineral em SIG, desde a aquisição de dados até a integração com restrições ambientais."
+//| fig-width: 8
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=9, margin="0.25,0.12", penwidth=0.8]
+    edge [fontname="Helvetica", fontsize=8, color="#555555"]
+
+    subgraph cluster_dados {
+        label="Camadas de Evidência"
+        style=dashed
+        color="#1565C0"
+        fontname="Helvetica"
+        fontsize=9
+
+        D1 [label="Mapa\ngeológico", fillcolor="#BBDEFB", color="#1565C0"]
+        D2 [label="Aeromagnetometria\n(ASA, derivadas)", fillcolor="#BBDEFB", color="#1565C0"]
+        D3 [label="Gamaespectrometria\n(K, eU, eTh)", fillcolor="#BBDEFB", color="#1565C0"]
+        D4 [label="SR hiperespectral\n(SAM, ASTER)", fillcolor="#BBDEFB", color="#1565C0"]
+        D5 [label="Geoquímica\n(solo, sedimento)", fillcolor="#BBDEFB", color="#1565C0"]
+        D6 [label="Lineamentos\nestruturais", fillcolor="#BBDEFB", color="#1565C0"]
+    }
+
+    F [label="Fuzzificação\n(0-1)", fillcolor="#C8E6C9", color="#2E7D32"]
+
+    subgraph cluster_modelos {
+        label="Modelagem"
+        style=dashed
+        color="#7B1FA2"
+        fontname="Helvetica"
+        fontsize=9
+
+        M1 [label="AHP +\nFuzzy Gamma", fillcolor="#E1BEE7", color="#7B1FA2"]
+        M2 [label="Weights of\nEvidence", fillcolor="#E1BEE7", color="#7B1FA2"]
+        M3 [label="Random Forest\n/ SVM", fillcolor="#E1BEE7", color="#7B1FA2"]
+    }
+
+    V [label="Validação\n(AUC-ROC, spatial CV)", fillcolor="#FFF9C4", color="#F9A825"]
+    R [label="Restrições\nambientais/legais", fillcolor="#FFCDD2", color="#C62828"]
+    P [label="Mapa de áreas\nprospectáveis", fillcolor="#B2DFDB", color="#00695C", fontsize=10]
+
+    D1 -> F
+    D2 -> F
+    D3 -> F
+    D4 -> F
+    D5 -> F
+    D6 -> F
+    F -> M1
+    F -> M2
+    F -> M3
+    M1 -> V
+    M2 -> V
+    M3 -> V
+    V -> P
+    R -> P [style=dashed, label="exclusão"]
+}
+```

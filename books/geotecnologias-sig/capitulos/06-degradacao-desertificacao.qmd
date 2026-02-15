@@ -1,0 +1,124 @@
+# Degradação do Solo, Desertificação e Mudanças Climáticas {#sec-degradacao-desertificacao}
+
+## Degradação do solo
+
+A degradação do solo compreende o conjunto de processos que reduzem a capacidade atual ou futura do solo de sustentar funções ecossistêmicas, incluindo produção de biomassa, filtragem e regulação hídrica, ciclagem de nutrientes e suporte físico à vegetação. 
+
+Diferentemente de uma simples perda de fertilidade química, a degradação envolve alterações estruturais, hidrológicas e biológicas frequentemente irreversíveis em escalas de tempo humanas, de modo que a reposição natural do material edáfico (taxas de formação de solo da ordem de 0,01–0,1 mm ano⁻¹ em regiões tropicais) é superada pelas taxas de remoção por erosão hídrica, eólica ou por processos de transporte em massa.
+
+Os mecanismos primários de degradação podem ser agrupados em três domínios funcionais interconectados. O domínio físico engloba a erosão laminar e linear (sulcos, ravinas, voçorocas), a compactação subsuperficial (que eleva a densidade aparente e reduz a macroporosidade efetiva, diminuindo a condutividade hidráulica saturada $K_s$), o selamento e encrostamento superficial (redução da infiltração inicial por colapso de agregados sob impacto de gotas de chuva) e a perda de profundidade efetiva do perfil. O domínio químico abrange a acidificação, a salinização, a sodificação (com consequente dispersão de argilas, conforme detalhado na seção sobre colapso estrutural), a lixiviação de bases trocáveis e a contaminação por metais pesados ou agrotóxicos. O domínio biológico compreende a redução da biomassa e diversidade microbiana, a queda da atividade enzimática (β-glucosidase, fosfatase ácida, desidrogenase) e a diminuição do carbono orgânico do solo (COS), que opera como variável integradora entre os três domínios, uma vez que a matéria orgânica governa simultaneamente a estabilidade de agregados, a capacidade de troca catiônica e a atividade da biota edáfica.
+
+Em termos quantitativos, o programa GLASOD (Global Assessment of Soil Degradation) estimou que aproximadamente 1,96 bilhão de hectares apresentavam algum grau de degradação induzida por atividades antrópicas, dos quais cerca de 60% resultavam de erosão hídrica e 28% de erosão eólica. No Brasil, a fragilidade dos Latossolos e Argissolos sob manejo inadequado (mecanização intensiva, superpastejo, ausência de cobertura vegetal permanente) configura taxas de erosão laminar que variam de 5 a 50 t ha⁻¹ ano⁻¹ em pastagens degradadas do Cerrado, valores que excedem em uma a duas ordens de magnitude as taxas de tolerância de perda de solo (geralmente entre 5 e 12 t ha⁻¹ ano⁻¹ para solos profundos tropicais).
+
+## Desertificação
+
+A desertificação, conforme definida pela Convenção das Nações Unidas de Combate à Desertificação (UNCCD), consiste na degradação das terras em zonas áridas, semiáridas e subúmidas secas, resultante de variações climáticas e de atividades humanas. Essa definição circunscreve o fenômeno às regiões classificadas pelo Índice de Aridez ($IA = P/ETP$) com valores inferiores a 0,65, excluindo desertos hipeáridos ($IA < 0,05$) e regiões úmidas, o que evidencia o caráter sinérgico entre susceptibilidade climática e pressão antrópica como condição necessária para a ocorrência do processo.
+
+A desertificação não implica a transformação literal de áreas em desertos, mas sim a perda progressiva e potencialmente irreversível da produtividade biológica e econômica dos ecossistemas terrestres. Os vetores antrópicos dominantes incluem o desmatamento para expansão agrícola, o superpastejo (que remove a cobertura vegetal protetora e compacta a camada superficial do solo pelo pisoteio animal), a irrigação mal manejada (que promove salinização e sodificação) e a exploração excessiva de recursos hídricos subterrâneos (que rebaixa o nível freático e elimina a vegetação freatófita). Esses vetores operam sobre uma matriz de vulnerabilidade definida pelas propriedades edáficas (textura, mineralogia, teor de matéria orgânica), pela magnitude e distribuição temporal da precipitação e pelo relevo.
+
+No semiárido brasileiro, que abrange aproximadamente 982.563 km² e engloba porções de nove estados do Nordeste e do norte de Minas Gerais, a UNCCD e estudos nacionais identificaram quatro núcleos de desertificação em estágio avançado (Gilbués-PI, Irauçuba-CE, Seridó-RN/PB e Cabrobó-PE), caracterizados por intensa remoção da Caatinga, solos rasos e pedregosos com baixa capacidade de retenção hídrica, taxas de erosão superiores a 100 t ha⁻¹ ano⁻¹ em encostas desprotegidas e cobertura vegetal remanescente inferior a 30%. A interação entre esses processos de degradação local e as projeções de aumento da aridez sob cenários de mudanças climáticas constitui a base conceitual para os mecanismos de retroalimentação e para o arcabouço de Neutralidade da Degradação das Terras discutidos nas seções seguintes.
+
+## Neutralidade da degradação das terras
+
+O conceito de Neutralidade da Degradação das Terras (LDN, Land Degradation Neutrality), adotado pela UNCCD (Convenção das Nações Unidas de Combate à Desertificação) e incorporado à Meta 15.3 dos Objetivos de Desenvolvimento Sustentável (ODS), postula que a degradação de novas áreas deve ser compensada pela recuperação de áreas previamente degradadas, de modo que o balanço líquido de degradação seja zero ou positivo ao longo de um período definido.
+
+A métrica tridimensional da LDN avalia simultaneamente três indicadores: a cobertura do solo (proporção e mudança de classes de uso), a produtividade primária da terra (tendência do NDVI ou EVI ao longo do tempo, medida por análise de séries temporais via BFAST ou Mann-Kendall) e o estoque de carbono orgânico do solo (COS, em toneladas de C por hectare nos primeiros 30 cm). A degradação é diagnosticada quando qualquer um dos três indicadores apresenta tendência negativa significativa.
+
+O Índice de Aridez ($IA$) classifica as terras pela relação entre precipitação e evapotranspiração potencial:
+
+$$
+IA = \frac{P}{ETP}
+$$
+
+onde $P$ é a precipitação anual e $ETP$ é a evapotranspiração potencial anual (Penman-Monteith FAO-56). Terras com $IA < 0,65$ são classificadas como secas (áridas, semiáridas ou subúmidas secas) e estão sujeitas à Convenção de Combate à Desertificação. No semiárido brasileiro, o $IA$ varia de 0,21 (núcleos de desertificação como Cabrobó-PE) a 0,65 (transição para subúmido), e modelos climáticos projetam expansão da área com $IA < 0,50$ até o final do século XXI.
+
+## Retroalimentação erosão-clima
+
+A relação entre erosão do solo e mudanças climáticas é bidirecional e amplificante. Por um lado, o aumento da intensidade das chuvas sob cenários de aquecimento global (IPCC AR6) eleva exponencialmente o fator $R$ da RUSLE, pois a erosividade é proporcional à potência da intensidade de precipitação. Modelos climáticos projetam incrementos de 20–40% na erosividade em regiões tropicais até 2100, mesmo em cenários de emissão moderada (RCP 4.5).
+
+Por outro lado, a erosão do solo retroalimenta o sistema climático ao remover o carbono orgânico da camada superficial (onde está concentrado 50–70% do COS) e expô-lo à oxidação microbiana, convertendo-o em CO₂ atmosférico. Essa perda de COS não apenas contribui para o efeito estufa, mas degrada a estrutura do solo (pois a matéria orgânica é o principal agente cimentante dos agregados), reduzindo a infiltração ($K_s$ diminui), elevando o escoamento superficial e aumentando a erodibilidade ($K$ aumenta). Configura-se, assim, um ciclo vicioso no qual a perda de solo gera mais perda de solo e mais emissões de carbono.
+
+::: {.callout-warning}
+## Ciclo vicioso erosão-carbono
+
+A perda de 1 mm de solo superficial por erosão laminar equivale à remoção de aproximadamente 1,5 t C ha⁻¹ em Latossolos ricos em matéria orgânica. Em taxas de erosão de 10–50 t ha⁻¹ ano⁻¹ (comuns em pastagens degradadas no Cerrado), a perda anual de COS pode atingir 0,3–1,5 t C ha⁻¹, valor que supera a capacidade de reposição pela vegetação em sistemas degradados.
+:::
+
+## Salinização e colapso da estrutura do solo
+
+A salinização é o processo de acúmulo de sais solúveis na zona radicular ou na superfície do solo, afetando 20% das áreas irrigadas do mundo e representando uma das formas mais graves de degradação em regiões semiáridas. A Razão de Adsorção de Sódio (RAS) quantifica o risco de sodificação:
+
+$$
+RAS = \frac{[Na^+]}{\sqrt{\frac{[Ca^{2+}] + [Mg^{2+}]}{2}}}
+$$
+
+onde as concentrações iônicas são expressas em mmol_c L⁻¹. Valores de RAS superiores a 13 (conforme classificação de Richards [-@richards1954]) indicam risco elevado de sodificação, processo no qual o sódio trocável substitui o cálcio e o magnésio nas posições de troca das argilas, causando expansão da dupla camada difusa, dispersão dos agregados e formação de crostas superficiais impermeáveis.
+
+O colapso da estrutura do solo por sodificação tem consequências hidrológicas severas: a condutividade hidráulica saturada pode ser reduzida em uma a duas ordens de magnitude ($K_s$ de $10^{-5}$ para $10^{-7}$ m/s), eliminando a capacidade de infiltração e convertendo toda a precipitação em escoamento superficial. Em solos sodificados, a vegetação experimenta seca fisiológica mesmo sob irrigação, pois o potencial osmótico da solução do solo reduz a disponibilidade de água para as raízes.
+
+## Mecanismo de Charney
+
+O mecanismo de Charney [-@charney1975] descreve a retroalimentação entre albefo de superfície e precipitação em regiões semiáridas, um processo que conecta degradação do solo a mudanças climáticas regionais. Quando a vegetação é removida e o solo exposto apresenta albedo mais alto (reflete mais radiação solar), a superfície se resfria, reduzindo a convecção e, consequentemente, a precipitação. A redução de precipitação intensifica a mortalidade vegetal, aumentando ainda mais o albedo. Essa retroalimentação positiva pode deslocar o equilíbrio climático local para um estado mais seco e estável (biestabilidade climática).
+
+O modelo SEBAL (Surface Energy Balance Algorithm for Land), proposto por Bastiaanssen et al. [-@bastiaanssen1998], permite estimar remotamente os componentes do balanço de energia na superfície:
+
+$$
+R_n - G = H + \lambda ET
+$$
+
+onde $R_n$ é o saldo de radiação, $G$ é o fluxo de calor no solo, $H$ é o fluxo de calor sensível (aquecimento do ar) e $\lambda ET$ é o fluxo de calor latente (evapotranspiração). Em superfícies degradadas, $\lambda ET$ diminui drasticamente (pouca evapotranspiração), $H$ aumenta (aquecimento excessivo) e a razão de Bowen ($\beta = H/\lambda ET$) cresce de valores em torno de 0,2–0,5 (vegetação ativa) para 2–5 (solo exposto), alterando a dinâmica atmosférica local.
+
+## Indicadores bioquímicos de degradação
+
+O monitoramento da qualidade do solo requer indicadores sensíveis e de resposta rápida que detectem a degradação antes que ela se torne irreversível. Os indicadores bioquímicos superam os indicadores físicos e químicos tradicionais em sensibilidade e tempo de resposta, pois refletem diretamente a atividade biológica do solo.
+
+O carbono da biomassa microbiana ($C_{bio}$, em μg C g⁻¹ de solo) quantifica a massa de microrganismos vivos e é sensível a mudanças de uso do solo em escalas de meses a poucos anos. O quociente metabólico ($qCO_2$, em μg CO₂-C μg⁻¹ $C_{bio}$ h⁻¹) expressa a taxa de respiração por unidade de biomassa microbiana; valores elevados indicam estresse da comunidade microbiana sob condições de degradação. As enzimas β-glucosidase (envolvida no ciclo do carbono) e fosfatase ácida (envolvida no ciclo do fósforo) são indicadoras da capacidade do solo de ciclagem de nutrientes, e sua atividade diminui em solos degradados.
+
+A @tbl-indicadores-solo sintetiza os principais indicadores e seus limiares de referência para solos tropicais.
+
+| Indicador | Unidade | Solo preservado | Solo degradado | Resposta |
+|:----------|:--------|:---------------|:---------------|:---------|
+| $C_{bio}$ | μg C g⁻¹ | 200–600 | < 100 | Meses |
+| $qCO_2$ | μg CO₂-C μg⁻¹ $C_{bio}$ h⁻¹ | 0,5–1,5 | > 3,0 | Meses |
+| β-glucosidase | μg PNP g⁻¹ h⁻¹ | 50–200 | < 30 | Estações |
+| Fosfatase ácida | μg PNP g⁻¹ h⁻¹ | 100–400 | < 60 | Estações |
+| COS (0–30 cm) | t C ha⁻¹ | 30–80 | < 15 | Anos–décadas |
+
+: Indicadores de qualidade do solo e limiares de referência para ecossistemas tropicais. {#tbl-indicadores-solo .striped .hover}
+
+A integração desses indicadores bioquímicos com dados de sensoriamento remoto (NDVI, SAVI, albedo) e índices climáticos (SPI, SPEI) permite construir sistemas de alerta precoce para degradação de terras, nos quais tendências negativas de produtividade da vegetação detectadas remotamente são confirmadas por indicadores de campo antes que a degradação atinja estágio irreversível.
+
+## Engenharia de restauração
+
+A restauração de solos degradados exige intervenções que atuem simultaneamente sobre os processos causadores da degradação (erosão, salinização, compactação) e sobre a recomposição das funções ecossistêmicas (ciclagem de nutrientes, infiltração, armazenamento de carbono).
+
+A recomposição vegetal é a estratégia primária, mas em solos severamente degradados, o estabelecimento de vegetação requer condicionamento prévio: subsolagem controlada para romper camadas compactadas (aumentando $K_s$ e o volume de solo explorável pelas raízes), aplicação de gesso agrícola para corrigir a sodicidade subsuperficial (o cálcio do gesso desloca o sódio das posições de troca, restaurando a floculação das argilas), e incorporação de matéria orgânica (composto, biocarvão) para elevar a CTC, a estabilidade dos agregados e a atividade microbiana.
+
+O Índice de Qualidade do Solo (IQS) integra múltiplos indicadores em um escore único por meio de funções de pertinência fuzzy que normalizam variáveis de diferentes unidades e escalas em um intervalo $[0, 1]$. A agregação por média ponderada (onde os pesos refletem a importância relativa de cada indicador para a função avaliada) produz um valor de IQS que pode ser espacializado por krigagem, gerando mapas de qualidade do solo que orientam a priorização espacial de intervenções em planos de recuperação de áreas degradadas (PRAD).
+
+```{dot}
+//| label: fig-ciclo-degradacao
+//| fig-cap: "Ciclo de retroalimentação entre degradação do solo, perda de carbono e mudanças climáticas regionais."
+//| fig-width: 7
+digraph {
+    rankdir=LR
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=9, margin="0.25,0.12", penwidth=0.8]
+    edge [fontname="Helvetica", fontsize=8, color="#555555", penwidth=1.2]
+
+    A [label="Remoção da\ncobertura vegetal", fillcolor="#FFCCBC", color="#E64A19"]
+    B [label="Aumento do\nalbedo e de H", fillcolor="#FFF9C4", color="#F9A825"]
+    C [label="Redução da\nprecipitação local", fillcolor="#BBDEFB", color="#1565C0"]
+    D [label="Erosão acelerada\ne perda de COS", fillcolor="#FFCCBC", color="#E64A19"]
+    E [label="Emissão de CO₂\ne degradação de\nagregados", fillcolor="#E1BEE7", color="#7B1FA2"]
+    F [label="Redução de K_s\ne infiltração", fillcolor="#C8E6C9", color="#2E7D32"]
+
+    A -> B [label=" Charney "]
+    B -> C [label=" Retroaliment. "]
+    C -> A [style=dashed, label=" Estresse hídrico "]
+    A -> D [label=" Exposição "]
+    D -> E [label=" Oxidação "]
+    E -> F [label=" Estrutura "]
+    F -> D [label=" + Escoamento ", style=dashed]
+}
+```

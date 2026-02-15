@@ -1,0 +1,110 @@
+# Sensoriamento Remoto e Mudanças de Uso e Cobertura {#sec-sensoriamento-remoto}
+
+## Interação radiação-matéria
+
+O sensoriamento remoto fundamenta-se na detecção e medição da radiação eletromagnética refletida ou emitida pela superfície terrestre. A assinatura espectral de cada alvo (solo, vegetação, água, rocha, superfície urbana) é determinada por suas propriedades físico-químicas, que condicionam a absorção, reflexão e transmissão da radiação em diferentes comprimentos de onda. A exploração dessas diferenças espectrais é o que permite discriminar alvos na superfície terrestre a partir de imagens orbitais.
+
+Na região do visível (400–700 nm), a vegetação verde absorve intensamente a radiação azul e vermelha (pelos pigmentos fotossintéticos, principalmente clorofilas $a$ e $b$, e carotenoides) e reflete parcialmente o verde, o que confere a coloração característica às folhas. Na transição para o infravermelho próximo (NIR, 700–1300 nm), a reflectância da vegetação sadia aumenta abruptamente (o chamado "red-edge"), atingindo valores de 40–50%, devido ao espalhamento múltiplo da radiação no mesofilo esponjoso da folha, uma estrutura de paredes celulares com interfaces ar-água que funcionam como espelhos microscópicos. No infravermelho de ondas curtas (SWIR, 1300–2500 nm), a reflectância diminui em comprimentos de onda centrados em 1450 e 1940 nm, correspondentes às bandas de absorção da água líquida; quanto maior o conteúdo de água da folha, mais profundas essas feições de absorção.
+
+::: {.callout-note}
+## Caatinga e deciduidade
+Na Caatinga, a deciduidade sazonal (perda completa das folhas no período seco) transforma radicalmente a assinatura espectral da paisagem: a vegetação passa de valores altos de reflectância no NIR (período chuvoso) para valores dominados pelo solo exposto e serrapilheira (período seco), com drástica redução do contraste espectral entre vegetação e solo. Essa dinâmica exige cuidado na interpretação de séries temporais de índices de vegetação, pois reduções de NDVI na Caatinga não indicam necessariamente degradação, mas podem refletir o ciclo fenológico natural.
+:::
+
+## Índices de vegetação
+
+Os índices de vegetação são combinações matemáticas de bandas espectrais projetadas para realçar propriedades biofísicas da vegetação enquanto minimizam efeitos de fundo (solo, atmosfera, geometria de iluminação). O NDVI (Normalized Difference Vegetation Index), proposto por Rouse et al. [-@rouse1974], é o índice mais amplamente utilizado:
+
+$$
+NDVI = \frac{\rho_{NIR} - \rho_{RED}}{\rho_{NIR} + \rho_{RED}}
+$$
+
+onde $\rho_{NIR}$ e $\rho_{RED}$ são as reflectâncias nas bandas do infravermelho próximo e do vermelho, respectivamente. O NDVI varia de −1 a +1, com valores negativos indicando água, valores próximos de zero indicando solo exposto ou vegetação rala e valores acima de 0,3 indicando vegetação ativa. A normalização pela soma das bandas confere ao NDVI relativa insensibilidade a variações de iluminação, mas o índice satura em coberturas densas (IAF > 3) e é sensível ao substrato solo em coberturas esparsas.
+
+O EVI (Enhanced Vegetation Index) foi desenvolvido para superar as limitações do NDVI, incorporando uma banda azul para correção atmosférica e um fator de ajuste de solo:
+
+$$
+EVI = G \times \frac{\rho_{NIR} - \rho_{RED}}{\rho_{NIR} + C_1 \cdot \rho_{RED} - C_2 \cdot \rho_{BLUE} + L}
+$$
+
+onde $G = 2,5$ é o fator de ganho, $C_1 = 6$ e $C_2 = 7,5$ são coeficientes de correção de aerossóis e $L = 1$ é o fator de ajuste de dossel. O EVI apresenta menor saturação em vegetação densa e maior sensibilidade em regiões de alta biomassa, sendo preferido para monitoramento de florestas tropicais.
+
+A @tbl-indices compara os principais índices de vegetação e suas aplicações.
+
+| Índice | Fórmula simplificada | Vantagem | Limitação | Aplicação |
+|:-------|:--------------------|:---------|:----------|:----------|
+| NDVI | $(NIR-RED)/(NIR+RED)$ | Simplicidade, série histórica longa | Satura em alta biomassa | Monitoramento regional, séries temporais |
+| EVI | $2.5 \times (NIR-RED)/(NIR+6RED-7.5BLUE+1)$ | Menor saturação, correção atmosférica | Requer banda azul | Florestas tropicais, áreas úmidas |
+| SAVI | $(NIR-RED)/(NIR+RED+L) \times (1+L)$ | Reduz efeito do solo | $L$ fixo ($0,5$) pode não ser ótimo | Vegetação esparsa, semiárido |
+| NDFI | Fração de degradação | Detecta degradação florestal sutil | Complexo (requer Spectral Mixture) | Manejo florestal, REDD+ |
+
+: Índices de vegetação e suas propriedades comparativas. {#tbl-indices .striped .hover}
+
+## Classificadores de imagens
+
+A classificação digital de imagens transforma uma imagem multiespectral (valores de reflectância em cada pixel e banda) em um mapa temático (classes de uso e cobertura do solo). Três famílias de classificadores dominam a prática atual do sensoriamento remoto.
+
+O Random Forest [@breiman2001] é um ensemble de árvores de decisão que classifica cada pixel por voto majoritário entre centenas de árvores treinadas em subconjuntos aleatórios das amostras e variáveis. Sua robustez a ruído, capacidade de lidar com variáveis correlacionadas e de estimar a importância relativa de cada banda o tornaram o classificador mais popular em mapeamento de uso e cobertura. Uma configuração típica utiliza 100 a 500 árvores (a acurácia melhora pouco além de 500) e $\sqrt{p}$ variáveis candidatas por divisão (onde $p$ é o número total de bandas e índices).
+
+O SVM (Support Vector Machine) busca o hiperplano de separação ótima entre classes no espaço multiespectral, maximizando a margem (distância entre o hiperplano e os exemplos mais próximos de cada classe). O kernel RBF (Radial Basis Function) permite ao SVM resolver problemas não linearmente separáveis ao projetar os dados em um espaço de dimensionalidade superior. O SVM é particularmente eficaz com amostras de treinamento limitadas e em problemas com muitas bandas espectrais (reduz o risco de "maldição da dimensionalidade").
+
+A U-Net é uma arquitetura de rede neural convolucional (CNN) com estrutura encoder-decoder e conexões residuais que produz segmentação semântica pixel a pixel. Projetada originalmente para imagens biomédicas, a U-Net foi adaptada com sucesso para classificação de imagens de satélite, onde sua capacidade de capturar contexto espacial (padrões de vizinhança) supera classificadores que tratam cada pixel isoladamente. Entretanto, a U-Net exige volumes significativos de dados de treinamento rotulados e recursos computacionais (GPU), o que limita sua aplicação em contextos com poucos dados de referência.
+
+## Detecção de mudanças
+
+A detecção de mudanças de uso e cobertura do solo ao longo do tempo pode seguir duas abordagens fundamentais. Na detecção pré-classificação (álgebra de mapas), realizam-se operações matemáticas diretamente sobre as imagens de duas datas (diferença, razão, análise de componentes principais de mudança), identificando pixels com variação espectral significativa sem atribuir classes temáticas. Na detecção pós-classificação, classificam-se independentemente as imagens de cada data e compara-se o par de mapas resultantes por tabulação cruzada (matriz de transição), identificando quais classes sofreram conversão.
+
+As matrizes de transição de Markov são frequentemente empregadas para modelar e projetar as trajetórias de mudança. A matriz de probabilidades de transição $P_{ij}$ quantifica a probabilidade de um pixel na classe $i$ no tempo $t_1$ ser convertido para a classe $j$ no tempo $t_2$, e pode ser utilizada para simular cenários futuros de uso do solo sob a premissa (frequentemente violada) de estacionariedade das taxas de transição.
+
+## Séries temporais de imagens
+
+A análise de séries temporais de imagens de satélite permite detectar tendências, sazonalidade e rupturas abruptas na dinâmica da cobertura do solo ao longo de anos ou décadas. Dois algoritmos são amplamente utilizados.
+
+O BFAST (Breaks for Additive Season and Trend), proposto por Verbesselt et al. [-@verbesselt2010], decompõe uma série temporal de NDVI (ou EVI) em três componentes aditivas (tendência, sazonalidade e resíduo) e detecta quebras estruturais (breakpoints) na tendência e na sazonalidade. Cada breakpoint corresponde a um evento de mudança (desmatamento, queimada, abandono, regeneração), e a magnitude e a direção da quebra informam sobre o tipo de mudança. O critério BIC (Bayesian Information Criterion) seleciona automaticamente o número ótimo de breakpoints, evitando sobreajuste.
+
+O LandTrendr (Landsat-based Detection of Trends in Disturbance and Recovery), proposto por Kennedy et al. [-@kennedy2010], opera sobre a família de segmentos lineares que melhor se ajusta à série temporal de cada pixel, identificando episódios de distúrbio (segmentos de queda abrupta), recuperação (segmentos de aumento gradual) e estabilidade (segmentos horizontais). O algoritmo é particularmente eficaz para detectar eventos de distúrbio pontual (corte raso, queimada) e quantificar a velocidade de recuperação espectral.
+
+```{dot}
+//| label: fig-series-temporais
+//| fig-cap: "Fluxo de processamento de séries temporais de imagens para detecção de mudanças."
+//| fig-width: 8
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=9, margin="0.25,0.12", penwidth=0.8]
+    edge [fontname="Helvetica", fontsize=8, color="#555555"]
+
+    A [label="Acervo de imagens\n(Landsat, Sentinel-2,\nMODIS)", fillcolor="#E3F2FD", color="#1565C0"]
+    B [label="Pré-processamento\n(correção atmosférica,\nmáscara de nuvens)", fillcolor="#BBDEFB", color="#1565C0"]
+    C [label="Cálculo de índices\n(NDVI, EVI, NBR)", fillcolor="#C8E6C9", color="#2E7D32"]
+    D [label="Série temporal\npixel a pixel", fillcolor="#FFF9C4", color="#F9A825"]
+    E [label="BFAST\n(sazonalidade +\nbreakpoints)", fillcolor="#FFCCBC", color="#E64A19"]
+    F [label="LandTrendr\n(segmentos lineares)", fillcolor="#FFCCBC", color="#E64A19"]
+    G [label="Mapa de mudanças\n(tipo, data, magnitude)", fillcolor="#E1BEE7", color="#7B1FA2"]
+
+    A -> B -> C -> D
+    D -> E -> G
+    D -> F -> G
+}
+```
+
+## PRODES, DETER e MapBiomas
+
+O Brasil opera três sistemas complementares de monitoramento de mudanças de cobertura florestal que exemplificam a aplicação operacional do sensoriamento remoto.
+
+O PRODES (Programa de Cálculo do Desflorestamento da Amazônia), operado pelo INPE desde 1988, quantifica anualmente o desmatamento por corte raso na Amazônia Legal usando imagens Landsat (30 m). Com acurácia global de 0,89 e Kappa de 0,86, o PRODES é a referência oficial para políticas públicas de combate ao desmatamento e é reconhecido internacionalmente como um dos sistemas de monitoramento florestal mais confiáveis do mundo.
+
+O DETER (Sistema de Detecção de Desmatamento em Tempo Real) utiliza imagens de resolução moderada (MODIS, 250 m, e Sentinel-2, 10 m) para emitir alertas de desmatamento a cada 5 dias, com área mínima de detecção de 6,25 ha. Embora de menor acurácia que o PRODES (em função da resolução e frequência temporal), o DETER é o instrumento que viabiliza a fiscalização em tempo quase real pelo IBAMA.
+
+O MapBiomas é uma iniciativa multi-institucional que produz mapas anuais de uso e cobertura do solo para todo o Brasil desde 1985, utilizando classificação por Random Forest no Google Earth Engine com resolução de 30 m e 27 classes temáticas. A acurácia global do MapBiomas evoluiu de ~0,75 na Collection 1 (2015) para ~0,87 na Collection 8 (2023), refletindo avanços metodológicos e aumento do volume de amostras de treinamento.
+
+::: {.callout-important}
+## Complementaridade dos sistemas
+O PRODES (anual, alta precisão), o DETER (quinzenal, fiscalização) e o MapBiomas (anual, reconstrução histórica, todo o país, todas as classes) não são redundantes; cada sistema atende a necessidades distintas de informação. O uso conjunto dos três permite reconstruir a trajetória histórica de mudanças (MapBiomas), quantificar o desmatamento com precisão legal (PRODES) e reagir em tempo quase real a eventos ilegais (DETER).
+:::
+
+## Plataformas de processamento em nuvem
+
+O Google Earth Engine (GEE), lançado em 2010, revolucionou o sensoriamento remoto ao oferecer acesso a petabytes de imagens de satélite (Landsat, Sentinel, MODIS, entre outros), algoritmos de processamento escaláveis e infraestrutura de computação em nuvem gratuita para pesquisa [@gorelick2017]. O GEE permite análises que antes exigiam semanas de download, armazenamento e processamento local sejam executadas em minutos sobre servidores do Google, democratizando o acesso a análises de grande escala e tornando viáveis estudos planetários como o Global Forest Change (Hansen et al., 2013) e o MapBiomas.
+
+A programação no GEE utiliza JavaScript (Editor online) ou Python (API earthengine-api), operando sobre coleções de imagens como objetos no servidor (avaliação preguiçosa), de modo que as operações são definidas localmente mas executadas na nuvem apenas quando solicitado. Essa arquitetura elimina o gargalo de transferência de dados e permite iterações rápidas durante a análise exploratória.

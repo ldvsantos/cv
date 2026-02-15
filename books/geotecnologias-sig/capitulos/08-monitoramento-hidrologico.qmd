@@ -1,0 +1,106 @@
+# Monitoramento Hidrológico e Geotecnologias {#sec-monitoramento-hidrologico}
+
+## Monitoramento convencional
+
+A rede hidrométrica convencional brasileira, operada pela Agência Nacional de Águas (ANA) em parceria com estados e entidades delegatárias, constitui a infraestrutura fundamental para medição de variáveis hidrológicas. As estações fluviométricas medem nível d'água (réguas linimétricas, limnígrafos de boia ou pressão) e vazão (molinetes hidrométricos, ADCPs acústicos), enquanto as estações pluviométricas medem precipitação (pluviômetros Ville de Paris, pluviógrafos automáticos).
+
+O problema inverso da hidrologia (inferir variáveis distribuídas no espaço a partir de observações pontuais esparsas) é particularmente agudo em regiões tropicais com precipitação convectiva, onde células de chuva com diâmetro de 5–15 km podem gerar volumes de água que passam despercebidos por estações separadas por 50–100 km. A recomendação da WMO (2008) de uma estação pluviométrica por 250 km² (terreno plano) ou 25 km² (terreno montanhoso) está longe de ser atendida em grande parte do semiárido brasileiro, onde a densidade média da rede é inferior a uma estação por 1.000 km².
+
+## Telemetria e IoT hidrológica
+
+A transição do monitoramento manual para o automatizado e telemétrico transformou a capacidade de resposta a eventos hidrológicos extremos. A premissa operacional dos sistemas de alerta é que a latência (tempo entre a medição e a disponibilidade do dado) deve ser inferior ao tempo de concentração da bacia, permitindo que alertas sejam emitidos antes da chegada da onda de cheia.
+
+Os sensores modernos de nível d'água incluem transdutores de pressão submersos (resolução milimétrica, aquisição a cada 5–15 min), sensores ultrassônicos (sem contato com a água) e sensores LiDAR (operação em condições de forte turbulência). Os pluviômetros automáticos de báscula registram cada basculada (0,2 ou 0,25 mm), permitindo a reconstrução da hietograma com resolução sub-horária.
+
+A transmissão de dados em tempo real utiliza protocolos de IoT (Internet of Things) dimensionados para o ambiente rural: LoRaWAN (alcance de 5–15 km em campo aberto, baixo consumo energético), redes celulares (4G/5G, em áreas com cobertura) e comunicação satelital (Iridium, GOES, para estações remotas). A convergência desses protocolos permite construir redes de monitoramento com latência inferior a 15 minutos a custos cada vez mais acessíveis.
+
+::: {.callout-note}
+## Latência e alerta
+Em bacias urbanas com tempo de concentração inferior a 2 horas, a diferença entre 15 minutos de latência (telemetria) e 24 horas (leitura manual) determina se o sistema de alerta salva vidas ou é apenas um registro post-mortem do evento.
+:::
+
+## Curva-chave e hidrometria
+
+A relação entre nível d'água ($H$) e vazão ($Q$) em uma seção fluviométrica é formalizada pela curva-chave, ajustada empiricamente a partir de medições simultâneas de nível e vazão em diferentes condições de escoamento:
+
+$$
+Q = a(H - H_0)^b
+$$
+
+onde $a$ e $b$ são parâmetros empíricos e $H_0$ é o nível de referência (cota de vazão zero). A calibração requer medições cobrindo toda a faixa de variação de nível, incluindo estiagem extrema e cheias, o que em rios intermitentes do semiárido pode exigir décadas de monitoramento para capturar eventos raros.
+
+A instabilidade da seção de medição (erosão ou assoreamento do leito, crescimento de macrófitas aquáticas, operação de barragens a montante) invalida a curva-chave e exige recalibração. A batimetria periódica (levantamento da geometria do leito por ADCP ou ecobatímetro) permite detectar mudanças na seção e atualizar os parâmetros da curva. A vazão $Q_{7,10}$ (vazão mínima de 7 dias consecutivos com período de retorno de 10 anos), derivada da série histórica de vazões obtida via curva-chave, é o parâmetro fundamental para outorga de direito de uso.
+
+## Altimetria espacial por radar
+
+A altimetria espacial por radar estende o monitoramento hidrológico a rios e reservatórios sem estações terrestres. Missões como Jason-2/3, Sentinel-3/6 e SWOT medem o nível d'água a partir da órbita por meio do tempo de ida e volta de pulsos de micro-ondas refletidos pela superfície, com precisão centimétrica após correções atmosféricas (troposfera úmida, ionosfera) e geofísicas (marés terrestres e oceânicas).
+
+A fusão de dados orbitais (alta cobertura espacial, baixa frequência temporal) com dados terrestres (baixa cobertura espacial, alta frequência temporal) permite construir superfícies cota-tempo que descrevem a variação do nível d'água ao longo de toda a rede hidrográfica, superando a limitação fundamental das redes convencionais (que medem apenas nos pontos onde há estações). Essa abordagem é particularmente valiosa para bacias transfronteiriças e rios amazônicos, onde a instalação e manutenção de estações convencionais é logisticamente difícil.
+
+## Precipitação e umidade do solo por satélite
+
+O GPM (Global Precipitation Measurement), lançado em 2014, combina radar de dupla frequência (Ku e Ka) com radiômetro de micro-ondas para estimar precipitação com resolução espaço-temporal de ~10 km e 30 minutos (produto IMERG). O CHIRPS (Climate Hazards Group InfraRed Precipitation with Station data) combina dados de infravermelho térmico de satélites geoestacionários com estações terrestres para produzir séries de precipitação com resolução de 0,05° (~5 km) e passo diário, desde 1981, sendo amplamente utilizado em regiões com baixa densidade de estações, como o Sahel e o semiárido brasileiro.
+
+A umidade volumétrica do solo na camada superficial (0–5 cm) é estimada pela missão SMAP (Soil Moisture Active Passive, NASA) utilizando radiometria em Banda L (1,4 GHz), que penetra a cobertura vegetal moderada e é sensível ao conteúdo de água no solo. A resolução espacial do radiômetro SMAP é de ~40 km (downscaling para 9 km com dados auxiliares), e a resolução temporal é de 2–3 dias, permitindo monitoramento quase contínuo da disponibilidade hídrica no solo para aplicações agrícolas e hidrológicas.
+
+## Evapotranspiração e bacias virtuais
+
+A evapotranspiração, componente dominante do balanço hídrico em regiões semiáridas, pode ser estimada remotamente pelo algoritmo SEBAL (Surface Energy Balance Algorithm for Land) ou sua variante METRIC, que utilizam bandas termais de satélites (Landsat, ECOSTRESS) para calcular a temperatura de superfície e, a partir dela, particionar o saldo de radiação entre fluxo de calor sensível ($H$) e latente ($\lambda ET$).
+
+O princípio dos pixels-âncora (um pixel "frio" com evapotranspiração máxima, tipicamente sobre vegetação irrigada ou corpo d'água, e um pixel "quente" com evapotranspiração nula, tipicamente sobre solo seco exposto) permite calibrar internamente a estimativa de $H$ sem necessidade de dados meteorológicos locais, tornando o SEBAL aplicável a regiões com pouca infraestrutura terrestre.
+
+A combinação de MDEs (SRTM, ALOS PALSAR), algoritmos de fluxo acumulado (D8, D-infinity) e dados de precipitação orbital (GPM, CHIRPS) permite a delimitação e modelagem de bacias hidrográficas "virtuais" (sem dados de campo), viabilizando estudos hidrológicos preliminares em qualquer região do globo. A validação dessas "bacias virtuais" contra dados observados, quando disponíveis, é condição para sua utilização em projetos de engenharia.
+
+```{dot}
+//| label: fig-fontes-dados-hidrologicos
+//| fig-cap: "Fontes de dados hidrológicos e suas escalas de resolução espaço-temporal."
+//| fig-width: 8
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=9, margin="0.25,0.12", penwidth=0.8]
+    edge [fontname="Helvetica", fontsize=8, color="#555555"]
+
+    subgraph cluster_terrestre {
+        label="Dados Terrestres"
+        style=dashed
+        color="#1565C0"
+        fontname="Helvetica"
+        fontsize=10
+
+        T1 [label="Pluviômetros\nautomáticos\n(pontual, 5 min)", fillcolor="#BBDEFB", color="#1565C0"]
+        T2 [label="Limnígrafos\ntelemétricos\n(pontual, 15 min)", fillcolor="#BBDEFB", color="#1565C0"]
+        T3 [label="ADCP / molinete\n(pontual, campanha)", fillcolor="#BBDEFB", color="#1565C0"]
+    }
+
+    subgraph cluster_orbital {
+        label="Dados Orbitais"
+        style=dashed
+        color="#2E7D32"
+        fontname="Helvetica"
+        fontsize=10
+
+        O1 [label="GPM/IMERG\n(10 km, 30 min)", fillcolor="#C8E6C9", color="#2E7D32"]
+        O2 [label="SMAP\n(40 km, 2-3 dias)", fillcolor="#C8E6C9", color="#2E7D32"]
+        O3 [label="Sentinel-3\naltimetria\n(~300 m, 27 dias)", fillcolor="#C8E6C9", color="#2E7D32"]
+        O4 [label="SEBAL/Landsat\nET (30 m, 16 dias)", fillcolor="#C8E6C9", color="#2E7D32"]
+    }
+
+    F [label="Fusão de dados\n(Ensemble Kalman\nFilter, ML)", fillcolor="#FFF9C4", color="#F9A825"]
+    M [label="Modelo hidrológico\ndistribuído", fillcolor="#E1BEE7", color="#7B1FA2"]
+
+    T1 -> F
+    T2 -> F
+    O1 -> F
+    O2 -> F
+    O3 -> F
+    O4 -> F
+    T3 -> M [label=" Calibração ", style=dashed]
+    F -> M
+}
+```
+
+::: {.callout-tip}
+## Ensemble Kalman Filter
+O Ensemble Kalman Filter (EnKF) é a técnica mais utilizada para assimilação de dados em modelos hidrológicos distribuídos, combinando previsões do modelo com observações remotas (precipitação, umidade do solo, nível d'água) de forma sequencial e probabilística. O EnKF atualiza o estado do modelo a cada passo de tempo em que novas observações se tornam disponíveis, reduzindo progressivamente a incerteza da previsão.
+:::

@@ -1,0 +1,42 @@
+/*-- scss:defaults --*/
+$primary: #1a5276;
+$link-color: #1a6e8e;
+
+/*-- scss:rules --*/
+
+/* Clean book styling */
+.sidebar nav[role=doc-toc] a {
+  font-size: 0.92rem;
+}
+
+.quarto-title-meta {
+  margin-top: 1rem;
+}
+
+/* Callouts */
+.callout {
+  border-radius: 0.4rem;
+}
+
+/* Figures */
+.quarto-figure {
+  margin: 1.5rem 0;
+}
+
+.quarto-figure figcaption {
+  font-size: 0.88rem;
+  color: #555;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* Tables */
+.table {
+  font-size: 0.92rem;
+}
+
+.table caption {
+  caption-side: bottom;
+  font-size: 0.88rem;
+  color: #555;
+}

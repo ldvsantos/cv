@@ -1,0 +1,139 @@
+# Geoprocessamento e Monitoramento Ambiental da Mineração {#sec-mineracao-monitoramento}
+
+## Monitoramento contínuo como paradigma
+
+A atividade minerária impõe transformações profundas e persistentes sobre a paisagem, demandando monitoramento ambiental contínuo que ultrapassa a capacidade de inspeções pontuais de campo. A transição do paradigma de fiscalização periódica para o monitoramento contínuo por sensoriamento remoto foi acelerada no Brasil após os desastres de Mariana (2015) e Brumadinho (2019), que evidenciaram a insuficiência dos mecanismos tradicionais de controle e condicionaram reformas regulatórias (Resolução ANM nº 13/2019) exigindo instrumentação permanente de barragens de rejeito.
+
+O monitoramento remoto de empreendimentos minerários opera em quatro escalas complementares. A escala local cobre a cava, pilhas de estéril e barragens de rejeito com resolução submétrica (LiDAR, drones, GNSS-RTK). A escala de entorno avalia impactos em Áreas de Preservação Permanente (APPs) e unidades de conservação por imagens de média resolução (Sentinel-2, Landsat). A escala regional acompanha plumas de sedimentos e deposição em planícies de inundação. A escala de bacia hidrográfica integra os efeitos cumulativos de múltiplos empreendimentos sobre a qualidade e disponibilidade hídrica.
+
+## InSAR e monitoramento de deformação
+
+A interferometria de radar de abertura sintética (InSAR/DInSAR), baseada na comparação de fases entre aquisições sucessivas do Sentinel-1, permite detectar deformações da superfície topográfica com precisão milimétrica (tipicamente 1–5 mm por ciclo de revisita de 6–12 dias). Essa capacidade é particularmente relevante para o monitoramento de estabilidade de taludes de cava, pilhas de estéril e barragens de rejeito, onde deformações precursoras podem anteceder rupturas catastróficas.
+
+A técnica de Persistent Scatterers InSAR (PS-InSAR) identifica alvos coerentes (refletores naturais estáveis, como afloramentos rochosos e estruturas construídas) cuja fase interferométrica é rastreada ao longo de séries temporais de dezenas a centenas de imagens, gerando séries de deslocamento para cada ponto com acurácia submilimétrica. A análise SBAS (Small Baseline Subset) é preferida em áreas vegetadas onde refletores permanentes são escassos, combinando pares interferométricos de curta baseline temporal e espacial para maximizar a coerência.
+
+::: {.callout-warning}
+## Limitações do InSAR em áreas tropicais
+A coerência interferométrica é severamente degradada por vegetação densa (dossel fechado), que altera a posição dos espalhadores entre aquisições. Em minas da Amazônia e do Cerrado denso, a cobertura de PS pode ser insuficiente em áreas vegetadas, concentrando-se nas estruturas construídas e superfícies expostas. A integração de InSAR em banda C (Sentinel-1) com bandas L (ALOS-2 PALSAR-2, futuro NISAR) mitiga parcialmente essa limitação, pois comprimentos de onda maiores penetram parcialmente no dossel.
+:::
+
+A @tbl-insar-barragens resume as capacidades de monitoramento InSAR por tipo de estrutura.
+
+| Estrutura | Técnica preferida | Resolução típica | Precisão | Período de detecção |
+|:----------|:-----------------|:-----------------|:---------|:-------------------|
+| Barragem de rejeito (aterro) | PS-InSAR | 20 m | 1–2 mm/ano | 6–12 dias |
+| Pilha de estéril | SBAS | 20 m | 3–5 mm/ciclo | 12–24 dias |
+| Talude de cava | PS-InSAR + corner reflectors | 5 m (TerraSAR-X) | < 1 mm/ano | 11 dias |
+| Terreno circundante vegetado | SBAS (banda L) | 25 m | 5–10 mm/ciclo | 14–46 dias |
+
+: Técnicas de InSAR e capacidades de monitoramento por tipo de estrutura minerária. {#tbl-insar-barragens .striped .hover}
+
+## Balanço volumétrico por LiDAR e fotogrametria
+
+O monitoramento topográfico de alta resolução por LiDAR aerotransportado (ALS) ou por fotogrametria Structure from Motion (SfM) a partir de VANT (Veículo Aéreo Não Tripulado) permite a geração de Modelos Digitais de Superfície (MDS) com resolução centimétrica. A diferença entre MDS multitemporais (DoD, DEM of Difference) quantifica com precisão o volume de material removido, depositado ou deslocado em cavas, pilhas e barragens.
+
+O balanço volumétrico é expresso por:
+
+$$
+\Delta V = \sum_{i=1}^{n} (Z_{t_2}(i) - Z_{t_1}(i)) \cdot \Delta x \cdot \Delta y
+$$
+
+onde $Z_{t_1}(i)$ e $Z_{t_2}(i)$ são as elevações do pixel $i$ nos tempos $t_1$ e $t_2$, $\Delta x$ e $\Delta y$ são as dimensões do pixel, e $n$ é o número total de pixels na área de interesse. A propagação de incerteza considera o erro vertical de cada MDS ($\sigma_{Z}$), resultando em um limite de detecção mínimo de $\pm 2\sigma_{Z}$ para mudanças significativas. Para LiDAR-ALS, $\sigma_{Z}$ típico é de 5–15 cm; para SfM-VANT, 2–10 cm dependendo da altitude de voo e da densidade de pontos de controle (GCP).
+
+## Recuperação ambiental e histerese vegetacional
+
+A recuperação de áreas degradadas por mineração é monitorada por séries temporais de NDVI, cuja trajetória temporal revela a resiliência do ecossistema. Em regiões de Cerrado e Mata Atlântica, a recuperação do NDVI após revegetação de taludes e pilhas de estéril exibe um padrão de histerese caracterizado por três fases. A fase inicial (0–2 anos) apresenta aumento rápido do NDVI associado ao estabelecimento de espécies herbáceas de cobertura rápida (gramíneas, leguminosas rasteiras), com valores típicos de NDVI de 0,3–0,5. A fase intermediária (2–5 anos) exibe plateau ou ligeira redução do NDVI, associada à competição interespecífica e à transição de comunidade herbácea para arbustiva, com mortalidade diferencial. A fase de maturação (5–15 anos) mostra incremento gradual até valores próximos da vegetação nativa circundante (NDVI 0,6–0,8), representando o estabelecimento de espécies arbóreas e a estratificação do dossel.
+
+::: {.callout-note}
+## Histerese e resiliência
+O conceito de histerese implica que a trajetória de recuperação não segue o caminho inverso da degradação. Áreas que foram completamente desmatadas e tiveram o solo removido até o saprolito requerem intervenções de reconstrução de solo (adição de substrato, inoculação microbiana, adubação verde) muito mais intensas do que áreas com solo superficial preservado, e a recuperação até níveis equivalentes de NDVI e biomassa pode exigir prazos significativamente mais longos (10–20 anos vs. 3–5 anos).
+:::
+
+## Transporte de sedimentos e qualidade da água
+
+A ruptura de barragens de rejeito e a erosão de áreas expostas pela mineração geram plumas de sedimentos cuja dispersão em rios e reservatórios é monitorada por sensoriamento remoto multiespectral. A concentração de sólidos suspensos totais (SST) é estimada por modelos empíricos ou semi-empíricos que relacionam a reflectância da água nas bandas do vermelho e infravermelho próximo com medições in situ de turbidez e SST.
+
+O modelo de advecção-dispersão unidimensional para transporte de poluentes em rios é descrito pela equação:
+
+$$
+\frac{\partial C}{\partial t} + u \frac{\partial C}{\partial x} = D_L \frac{\partial^2 C}{\partial x^2} - k \cdot C + S
+$$
+
+onde $C$ é a concentração do poluente (mg/L), $u$ a velocidade média do escoamento (m/s), $D_L$ o coeficiente de dispersão longitudinal (m²/s), $k$ a taxa de decaimento de primeira ordem (1/s) e $S$ o termo-fonte (mg/L/s). Para metais pesados associados a rejeitos de mineração de ferro (manganês, arsênio, cromo), o decaimento é predominantemente por sedimentação (depositional sink) e adsorção a partículas finas, e o coeficiente $k$ é calibrado com dados de campo de campanhas pós-ruptura.
+
+A @tbl-monitoramento-agua apresenta os parâmetros monitorados e as fontes de dados utilizadas.
+
+| Parâmetro | Sensor/Método | Frequência | Resolução espacial |
+|:----------|:-------------|:-----------|:-------------------|
+| SST (turbidez) | Sentinel-2 (B4/B8A) | 5 dias | 10–20 m |
+| Clorofila-a | Sentinel-2 (B4/B5) | 5 dias | 20 m |
+| Metais pesados | Coleta in situ (ICP-OES) | Mensal | Pontual |
+| Nível d'água | Sentinel-3 (altimetria) | 27 dias | 300 m (ao longo da órbita) |
+| Extensão da pluma | Landsat/Sentinel-2 (RGB+NIR) | 5–16 dias | 10–30 m |
+
+: Parâmetros de qualidade de água e fontes de dados para monitoramento em áreas de mineração. {#tbl-monitoramento-agua .striped .hover}
+
+## Gestão de risco e governança ambiental
+
+A avaliação integrada de risco ambiental em áreas de mineração utiliza modelos multicritério em ambiente SIG. A lógica fuzzy, apresentada no @sec-algebra-geoestatistica no contexto da álgebra de mapas, é aplicada para transformar variáveis heterogêneas (distância à barragem, declividade, permeabilidade, proximidade de cursos d'água, ocupação do vale a jusante) em graus de pertinência (0–1) e combiná-las pelo operador Fuzzy Gamma:
+
+$$
+\mu_{gamma} = (\mu_{soma})^\gamma \cdot (\mu_{produto})^{1-\gamma}
+$$
+
+onde $\gamma$ tipicamente entre 0,7 e 0,9 balanceia características ampliativas e restritivas do modelo, produzindo mapas contínuos de risco que orientam planos de emergência e evacuação.
+
+A governança ambiental moderna da mineração requer interoperabilidade entre gestores (IBAMA, órgãos estaduais, ANM), operadores e comunidades. Plataformas de cadastro ambiental georreferenciado (SIGBM, da ANM) integram informações de instrumentação de barragens (piezômetros, inclinômetros, marcos geodésicos), dados de InSAR, imagens de satélite e resultados de monitoramento de qualidade de água em painéis cartográficos de acesso público, concretizando o princípio de transparência e ampliando a capacidade de fiscalização da sociedade civil.
+
+```{dot}
+//| label: fig-monitoramento-integrado-mineracao
+//| fig-cap: "Cadeia de monitoramento ambiental integrado para empreendimentos minerários, combinando múltiplas escalas e fontes de dados."
+//| fig-width: 8
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=9, margin="0.25,0.12", penwidth=0.8]
+    edge [fontname="Helvetica", fontsize=8, color="#555555"]
+
+    subgraph cluster_escalas {
+        label="Escalas de Monitoramento"
+        style=dashed
+        color="#1565C0"
+        fontname="Helvetica"
+        fontsize=9
+
+        E1 [label="Local\n(LiDAR, VANT, GNSS)", fillcolor="#BBDEFB", color="#1565C0"]
+        E2 [label="Entorno\n(Sentinel-2, Landsat)", fillcolor="#C8E6C9", color="#2E7D32"]
+        E3 [label="Regional\n(InSAR, altimetria)", fillcolor="#FFF9C4", color="#F9A825"]
+        E4 [label="Bacia hidrográfica\n(GRACE, modelagem)", fillcolor="#FFCCBC", color="#E64A19"]
+    }
+
+    subgraph cluster_analise {
+        label="Análise Integrada"
+        style=dashed
+        color="#7B1FA2"
+        fontname="Helvetica"
+        fontsize=9
+
+        A1 [label="Balanço\nvolumetrico (DoD)", fillcolor="#E1BEE7", color="#7B1FA2"]
+        A2 [label="Deformação\n(PS-InSAR)", fillcolor="#E1BEE7", color="#7B1FA2"]
+        A3 [label="Qualidade da\nágua (SST, metais)", fillcolor="#E1BEE7", color="#7B1FA2"]
+        A4 [label="Recuperação\n(NDVI, histerese)", fillcolor="#E1BEE7", color="#7B1FA2"]
+    }
+
+    R [label="Risco integrado\n(Fuzzy Gamma SIG)", fillcolor="#FFCDD2", color="#C62828", fontsize=10]
+    G [label="Governança\n(SIGBM, transparência)", fillcolor="#B2DFDB", color="#00695C"]
+
+    E1 -> A1
+    E1 -> A2
+    E2 -> A4
+    E2 -> A3
+    E3 -> A2
+    E4 -> A3
+    A1 -> R
+    A2 -> R
+    A3 -> R
+    A4 -> R
+    R -> G
+}
+```
