@@ -47,6 +47,48 @@ Access each course to find lectures, recommended readings, video lessons and sup
 ```{=html}
 <div class="discipline-grid">
 
+<a class="discipline-card" href="ciencia-da-paisagem.html">
+<div class="disc-icon"><i class="fa-solid fa-mountain-sun"></i></div>
+<h4 class="disc-title">Landscape Science</h4>
+<p class="disc-desc">Landscape ecology, FRAGSTATS metrics, connectivity, integrated assessment and territorial planning.</p>
+<span class="disc-badge">22 lectures</span>
+</a>
+
+<a class="discipline-card" href="bioengenharia-de-solos.html">
+<div class="disc-icon"><i class="fa-solid fa-seedling"></i></div>
+<h4 class="disc-title">Soil Bioengineering</h4>
+<p class="disc-desc">Linear erosion, permeable palisades, green drains, eco-engineering and slope stabilization.</p>
+<span class="disc-badge">21 lectures</span>
+</a>
+
+<a class="discipline-card" href="geotecnologias-sig.html">
+<div class="disc-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+<h4 class="disc-title">Geotechnologies and GIS</h4>
+<p class="disc-desc">Remote sensing, geoprocessing, GEE, water resources and AI applied to environmental research.</p>
+<span class="disc-badge">11 lectures</span>
+</a>
+
+<a class="discipline-card" href="analise-dados-ambientais.html">
+<div class="disc-icon"><i class="fa-solid fa-chart-column"></i></div>
+<h4 class="disc-title">Environmental Data Analysis</h4>
+<p class="disc-desc">Spatial statistics, R, Python, geostatistics, machine learning and environmental modeling.</p>
+<span class="disc-badge">29 lectures</span>
+</a>
+
+<a class="discipline-card" href="estatistica-aplicada.html">
+<div class="disc-icon"><i class="fa-solid fa-chart-line"></i></div>
+<h4 class="disc-title">Applied Statistics for Agricultural Engineering</h4>
+<p class="disc-desc">Parametric and non-parametric tests, ANOVA, regression, multivariate analysis and time series.</p>
+<span class="disc-badge">7 lectures</span>
+</a>
+
+<a class="discipline-card" href="geotexteis-nbs.html">
+<div class="disc-icon"><i class="fa-solid fa-layer-group"></i></div>
+<h4 class="disc-title">Geotextiles and Nature-based Solutions</h4>
+<p class="disc-desc">Geosynthetic typology, design, biotextiles and integrated slope rehabilitation projects.</p>
+<span class="disc-badge">6 lectures</span>
+</a>
+
 <a class="discipline-card" href="extensao-rural.html">
 <div class="disc-icon"><i class="fa-solid fa-handshake-angle"></i></div>
 <h4 class="disc-title">Rural Extension</h4>
@@ -66,48 +108,6 @@ Access each course to find lectures, recommended readings, video lessons and sup
 <h4 class="disc-title">Intellectual Property and Innovation</h4>
 <p class="disc-desc">IP legal framework, patents, technological prospection, patentometry and technology transfer.</p>
 <span class="disc-badge">10 lectures</span>
-</a>
-
-<a class="discipline-card" href="estatistica-aplicada.html">
-<div class="disc-icon"><i class="fa-solid fa-chart-line"></i></div>
-<h4 class="disc-title">Applied Statistics for Agricultural Engineering</h4>
-<p class="disc-desc">Parametric and non-parametric tests, ANOVA, regression, multivariate analysis and time series.</p>
-<span class="disc-badge">7 lectures</span>
-</a>
-
-<a class="discipline-card" href="analise-dados-ambientais.html">
-<div class="disc-icon"><i class="fa-solid fa-chart-column"></i></div>
-<h4 class="disc-title">Environmental Data Analysis</h4>
-<p class="disc-desc">Spatial statistics, R, Python, geostatistics, machine learning and environmental modeling.</p>
-<span class="disc-badge">29 lectures</span>
-</a>
-
-<a class="discipline-card" href="bioengenharia-de-solos.html">
-<div class="disc-icon"><i class="fa-solid fa-seedling"></i></div>
-<h4 class="disc-title">Soil Bioengineering</h4>
-<p class="disc-desc">Linear erosion, permeable palisades, green drains, eco-engineering and slope stabilization.</p>
-<span class="disc-badge">19 lectures</span>
-</a>
-
-<a class="discipline-card" href="geotecnologias-sig.html">
-<div class="disc-icon"><i class="fa-solid fa-map-location-dot"></i></div>
-<h4 class="disc-title">Geotechnologies and GIS</h4>
-<p class="disc-desc">Remote sensing, geoprocessing, GEE, water resources and AI applied to environmental research.</p>
-<span class="disc-badge">11 lectures</span>
-</a>
-
-<a class="discipline-card" href="geotexteis-nbs.html">
-<div class="disc-icon"><i class="fa-solid fa-layer-group"></i></div>
-<h4 class="disc-title">Geotextiles and Nature-based Solutions</h4>
-<p class="disc-desc">Geosynthetic typology, design, biotextiles and integrated slope rehabilitation projects.</p>
-<span class="disc-badge">6 lectures</span>
-</a>
-
-<a class="discipline-card" href="ciencia-da-paisagem.html">
-<div class="disc-icon"><i class="fa-solid fa-mountain-sun"></i></div>
-<h4 class="disc-title">Landscape Science</h4>
-<p class="disc-desc">Landscape ecology, FRAGSTATS metrics, connectivity, integrated assessment and territorial planning.</p>
-<span class="disc-badge">22 lectures</span>
 </a>
 
 </div>

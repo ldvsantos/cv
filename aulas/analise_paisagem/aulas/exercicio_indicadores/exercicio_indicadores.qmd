@@ -1,0 +1,344 @@
+---
+title: "Análise da Paisagem"
+subtitle: "Aula 18  -  Exercício Aplicado: Interpretação Crítica de Indicadores<br>Curso de Geografia"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026-04-22"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise da Paisagem | Aula 18"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Revisão rápida: métricas da Aula 17
+- [2]{.circle} Roteiro do exercício aplicado
+- [3]{.circle} Cálculo de métricas no cenário-exemplo
+- [4]{.circle} Interpretação crítica dos indicadores
+- [5]{.circle} Implicações para funcionalidade e gestão
+- [6]{.circle} Integração ao dossiê
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Aplicar métricas e indicadores de paisagem a um **cenário concreto** (área de estudo ou caso fornecido), interpretar criticamente os resultados e discutir **implicações para a funcionalidade ecológica** e para a **gestão territorial**.
+:::
+:::
+:::
+
+# [1  -  REVISÃO: MÉTRICAS DA AULA 17]{.section-header}
+
+## Métricas essenciais (resumo) {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Métricas de composição
+
+| Métrica | O que mede | Unidade |
+|---------|----------|---------|
+| **PLAND** | % da paisagem ocupada por uma classe | % |
+| **NP** | Número de manchas (patches) | contagem |
+| **CA** | Área total da classe | ha |
+| **LPI** | Proporção da maior mancha | % |
+
+: {.striped .hover}
+
+### Métricas de configuração
+
+| Métrica | O que mede | Unidade |
+|---------|----------|---------|
+| **ED** | Densidade de bordas | m/ha |
+| **SHAPE** | Complexidade da forma (1 = quadrado) | adimensional |
+| **ENN** | Distância ao vizinho mais próximo | m |
+| **COHESION** | Conectividade física | % |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+### Métricas de conectividade (Aula 17)
+
+| Métrica | O que mede | Fórmula |
+|---------|----------|---------|
+| **PC** | Probabilidade de conectividade | $PC = \frac{\sum_i \sum_j a_i \cdot a_j \cdot p_{ij}^*}{A_L^2}$ |
+| **IIC** | Índice integral de conectividade | $IIC = \frac{\sum_i \sum_j \frac{a_i \cdot a_j}{1+nl_{ij}}}{A_L^2}$ |
+| **dPC** | Importância relativa de cada mancha | Variação de PC ao remover mancha |
+
+: {.striped .hover}
+
+::: {.highlight-box}
+**Recordando**
+
+- **Composição** → *o que existe?* (quais classes, proporções)
+- **Configuração** → *como está arranjado?* (forma, distribuição, conexão)
+- A mesma composição pode ter **configurações diferentes** → funcionalidades diferentes
+:::
+:::
+:::
+
+# [2  -  ROTEIRO DO EXERCÍCIO]{.section-header}
+
+## Cenário aplicado {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Descrição do cenário
+
+Considere uma área de **5.000 ha** no semiárido baiano com os seguintes dados:
+
+| Classe | Área (ha) | Manchas | Maior mancha (ha) |
+|--------|:--------:|:-------:|:----------------:|
+| Caatinga arbórea | 600 | 12 | 180 |
+| Caatinga arbustiva | 350 | 8 | 95 |
+| Pastagem | 3.100 | 4 | 2.400 |
+| Solo exposto | 200 | 15 | 45 |
+| Corpo d'água | 50 | 3 | 30 |
+| Área urbana | 100 | 1 | 100 |
+| Agricultura irrigada | 600 | 5 | 200 |
+| **Total** | **5.000** |  -  |  -  |
+
+: {.striped .hover}
+
+### Dados complementares
+
+- Distância média entre fragmentos de caatinga: **850 m**
+- Largura média da mata ciliar: **15 m** (APP mínima = 30 m)
+- Perímetro total das manchas de caatinga: **42 km**
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**O que fazer (individual ou dupla)**
+
+**Parte A  -  Cálculo de métricas (20 min)**
+
+1. Calcule PLAND, NP, LPI para cada classe
+2. Calcule a densidade de bordas (ED) da caatinga
+3. Determine o tamanho médio das manchas de caatinga
+
+**Parte B  -  Interpretação crítica (25 min)**
+
+4. Interprete cada métrica: o que o valor indica?
+5. Compare classes: pastagem vs. caatinga
+6. Identifique vulnerabilidades e potencialidades
+
+**Parte C  -  Implicações para gestão (15 min)**
+
+7. Que métricas sugerem fragmentação crítica?
+8. Que ações poderiam melhorar a conectividade?
+9. Quais manchas têm maior importância para conservação?
+
+**Parte D  -  Síntese escrita (20 min)**
+
+10. Escreva 2 parágrafos articulando métricas → diagnóstico → recomendação
+:::
+:::
+:::
+
+# [3  -  CÁLCULO DE MÉTRICAS]{.section-header}
+
+## Parte A: calculando os indicadores {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### PLAND  -  Proporção da paisagem
+
+$$PLAND_i = \frac{CA_i}{A_{total}} \times 100$$
+
+| Classe | CA (ha) | PLAND (%) |
+|--------|:------:|:---------:|
+| Caatinga arbórea | 600 | **12,0%** |
+| Caatinga arbustiva | 350 | **7,0%** |
+| Pastagem | 3.100 | **62,0%** |
+| Solo exposto | 200 | **4,0%** |
+| Corpo d'água | 50 | **1,0%** |
+| Área urbana | 100 | **2,0%** |
+| Agricultura irrigada | 600 | **12,0%** |
+
+: {.striped .hover}
+
+**Vegetação nativa total:** 12% + 7% = **19%**
+
+> Abaixo do limiar de **30%** (percolação)  -  paisagem com conectividade comprometida.
+:::
+
+::: {.column width="50%"}
+### LPI  -  Proporção da maior mancha
+
+$$LPI_i = \frac{max(a_j)}{A_{total}} \times 100$$
+
+| Classe | Maior mancha (ha) | LPI (%) |
+|--------|:----------------:|:-------:|
+| Caatinga arbórea | 180 | **3,6%** |
+| Pastagem | 2.400 | **48,0%** |
+| Agricultura irrigada | 200 | **4,0%** |
+
+: {.striped .hover}
+
+### Tamanho médio das manchas (MPS)
+
+$$MPS_{caatinga} = \frac{600}{12} = 50 \text{ ha/mancha}$$
+
+### Densidade de bordas (ED)
+
+$$ED_{caatinga} = \frac{42.000 \text{ m}}{5.000 \text{ ha}} = 8,4 \text{ m/ha}$$
+
+::: {.info-box}
+ED alto + manchas pequenas = **alto efeito de borda** = vulnerabilidade dos fragmentos
+:::
+:::
+:::
+
+# [4  -  INTERPRETAÇÃO CRÍTICA]{.section-header}
+
+## Parte B: o que os números dizem? {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Diagnóstico por indicador
+
+| Indicador | Valor | Diagnóstico |
+|-----------|:-----:|-----------|
+| PLAND (caatinga total) | 19% | ⚠️ Abaixo do limiar de percolação (30%) |
+| NP (caatinga arbórea) | 12 fragmentos | ⚠️ Alta fragmentação |
+| MPS (caatinga arbórea) | 50 ha | ⚠️ Manchas pequenas a médias |
+| LPI (caatinga) | 3,6% | ⚠️ Maior mancha é pequena em relação à paisagem |
+| LPI (pastagem) | 48% | Matriz de pastagem domina a paisagem |
+| ED (caatinga) | 8,4 m/ha | ⚠️ Efeito de borda significativo |
+| ENN (caatinga) | 850 m | ⚠️ Fragmentos distantes  -  baixa conectividade |
+| Mata ciliar | 15 m | 🔴 Metade da APP mínima (30 m) |
+
+: {.striped .hover}
+
+### Síntese-diagnóstico
+
+> **Paisagem dominada por pastagem (62%)** com remanescentes de caatinga (19%) fragmentados em 20 manchas pequenas, isoladas (850 m distância média) e com alto efeito de borda. Conectividade funcional comprometida.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Perguntas para interpretação crítica**
+
+1. **O PLAND de 19% é preocupante?**
+   - Sim. Abaixo do limiar de percolação (~30%), a paisagem perde conexão entre fragmentos. Risco de extinção local de espécies.
+
+2. **O LPI da pastagem (48%) indica o quê?**
+   - A pastagem é a **matriz** da paisagem. Uma mancha contínua de 2.400 ha domina quase metade da área. Alta permeabilidade para espécies de área aberta; barreira para espécies florestais.
+
+3. **Os 12 fragmentos de caatinga arbórea são muitos ou poucos?**
+   - Depende do tamanho: 12 fragmentos com MPS = 50 ha → maioria pequena. Fragmentos < 50 ha sofrem forte efeito de borda (borda/interior ↑).
+
+4. **A distância de 850 m é superável?**
+   - Depende da espécie. Para aves → talvez. Para mamíferos terrestres → provavelmente não sem corredores. Para plantas → dispersão comprometida.
+:::
+:::
+:::
+
+# [5  -  IMPLICAÇÕES PARA GESTÃO]{.section-header}
+
+## Parte C: da métrica à ação {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Prioridades de conservação
+
+| Prioridade | Ação | Métrica-justificativa |
+|:----------:|------|----------------------|
+| 1 | Proteger as **duas maiores manchas** (180 ha + 95 ha) | LPI alto; núcleo-fonte de biodiversidade |
+| 2 | **Restaurar APPs** (mata ciliar de 15 → 30 m) | Conformidade legal; corredor potencial |
+| 3 | **Conectar fragmentos** via corredores ripários | ENN = 850 m; conectividade funcional baixa |
+| 4 | **Reduzir pressão** nas bordas (pastejo, fogo) | ED = 8,4 m/ha; efeito de borda |
+| 5 | **Monitorar solo exposto** (200 ha em 15 manchas) | Risco de erosão e degradação |
+
+: {.striped .hover}
+
+### Cenário "e se?"
+
+- **Se restaurar 50 m de mata ciliar em todo o rio principal:**
+  - Conecta 4 dos 12 fragmentos → reduz ENN
+  - Adiciona ~80 ha de vegetação nativa → PLAND de 19% → 20,6%
+  - Custo estimado: R$ XXX/ha (referência regional)
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Modelo de síntese para o dossiê**
+
+> *"A análise de métricas da paisagem revela uma configuração de alta fragmentação, com 19% de cobertura de caatinga distribuída em 20 manchas isoladas (ENN = 850 m), dominadas por uma matriz de pastagem extensiva (62%). O efeito de borda é significativo (ED = 8,4 m/ha) e a mata ciliar cobre apenas metade da faixa legalmente protegida.*
+>
+> *Recomenda-se, como prioridade, a proteção das duas maiores manchas (180 e 95 ha), que funcionam como núcleos-fonte de biodiversidade, e a restauração da faixa ciliar ao longo do rio principal, que pode funcionar como corredor de conexão entre fragmentos. Essas ações contribuiriam para elevar o PLAND acima de 20% e reduzir o isolamento entre manchas, melhorando a conectividade funcional da paisagem."*
+:::
+:::
+:::
+
+---
+
+## Entrega e integração ao dossiê {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Entrega da Aula 18
+
+1. Tabela com métricas calculadas
+2. Interpretação crítica de cada indicador
+3. Identificação de vulnerabilidades e potenciais
+4. 2 parágrafos de síntese (métricas → diagnóstico → recomendação)
+
+**Formato:** documento digital
+**Prazo:** até Aula 19 (29/04)
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Próximas aulas**
+
+- **Aula 19** (29/04): Unidades de paisagem  -  delimitação e caracterização
+- **Aula 20** (29/04): Diagnóstico integrado  -  pressões, conflitos, vulnerabilidades
+:::
+:::
+:::
+
+---
+
+## Síntese da Aula 18 {.smaller-text}
+
+::: {.info-box}
+**O que fizemos hoje**
+
+1. **Revisamos métricas**  -  composição (PLAND, NP, LPI) e configuração (ED, ENN, SHAPE)
+2. **Calculamos indicadores** em cenário concreto  -  fórmulas aplicadas
+3. **Interpretamos criticamente**  -  valores, limiares, comparações
+4. **Discutimos implicações**  -  funcionalidade ecológica, serviços ecossistêmicos
+5. **Propusemos ações**  -  prioridades de conservação, restauração, monitoramento
+6. **Redigimos síntese**  -  articulação métricas → diagnóstico → recomendação
+:::
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+
+Análise da Paisagem  -  Aula 18
+:::

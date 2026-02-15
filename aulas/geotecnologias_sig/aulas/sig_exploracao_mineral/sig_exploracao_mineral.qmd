@@ -1,0 +1,338 @@
+---
+title: "SIG Aplicado à Exploração Mineral"
+subtitle: "Prospectividade, Álgebra de Mapas e Modelos Preditivos<br>Geotecnologias e SIG"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Geotecnologias e SIG | SIG e Exploração Mineral"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+    code-fold: false
+---
+
+## Visão Geral {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos Principais
+
+- [1]{.circle} Sistema mineral e o SIG como integrador
+- [2]{.circle} Fontes de dados geofísicos e geoquímicos
+- [3]{.circle} Sensoriamento remoto hiperespectral
+- [4]{.circle} Métodos knowledge-driven (Fuzzy e AHP)
+- [5]{.circle} Métodos data-driven (Pesos de Evidência)
+- [6]{.circle} Modelagem preditiva e restrições ambientais
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo Central**
+
+Compreender como o SIG opera como integrador de dados geológicos, geofísicos e geoquímicos na geração de mapas de prospectividade mineral, articulando modelagem probabilística com restrições socioambientais.
+:::
+:::
+:::
+
+# [1 - SISTEMA MINERAL E O SIG COMO INTEGRADOR]{.section-header}
+
+## Do depósito isolado ao sistema mineral {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+O conceito de **sistema mineral** (Wyborn et al. 1994) substituiu a análise de depósitos isolados pela modelagem integrada de processos geodinâmicos.
+
+### Componentes funcionais
+
+| Componente | Função | Exemplo |
+|------------|--------|---------|
+| **Fonte** | Reservatório de metais | Magmático, sedimentar |
+| **Transporte** | Mobilização de solutos | Fluidos hidrotermais |
+| **Armadilha** | Precipitação em sítios favoráveis | Falha, dobra, contato |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**O papel do SIG**
+
+O SIG opera como integrador da **infraestrutura de dados espaciais**, convertendo evidências geológicas, geofísicas, geoquímicas e de sensoriamento remoto em camadas preditoras cujo cruzamento probabilístico gera **mapas de favorabilidade mineral** (Bonham-Carter 1994).
+
+A viabilidade operacional reside na capacidade de gerenciar dados vetoriais e matriciais com sistemas de referência, resoluções e incertezas distintas em um único ambiente analítico.
+:::
+:::
+:::
+
+# [2 - FONTES DE DADOS GEOFÍSICOS E GEOQUÍMICOS]{.section-header}
+
+## Aeromagnetometria e gamaespectrometria {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Aeromagnetometria
+
+Revela a **susceptibilidade magnética** do substrato, permitindo delinear lineamentos estruturais e contatos litológicos encobertos por regolito.
+
+### Gamaespectrometria
+
+Quantifica as razões **K/Th**, **K/U** e **Th/U**, cujas anomalias positivas de potássio associam-se a halos de alteração potássica diagnósticos de sistemas pórfiro-epitermais (Arai 2012).
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Geoquímica e geoestatística**
+
+A análise multielementar de sedimentos de corrente identifica **dispersões secundárias** cuja cinética de adsorção introduz histerese espacial.
+
+O **semivariograma** captura essa dependência espacial, e a **krigagem ordinária** fornece:
+
+- Superfície interpolada de concentrações
+- Mapa de variância (incerteza associada)
+
+Conferindo ao geólogo explorador uma métrica quantitativa de confiabilidade para cada célula do modelo.
+:::
+:::
+:::
+
+# [3 - SENSORIAMENTO REMOTO HIPERESPECTRAL]{.section-header}
+
+## Resposta espectral de minerais de alteração {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+O sensoriamento remoto explora a **resposta espectral** de minerais de alteração hidrotermal para mapear zonas prospectivas.
+
+### Sensores multiespectrais (OLI/Landsat-8)
+
+- Banda 6 / Banda 7 - argilominerais
+- Banda 4 / Banda 2 - óxidos de ferro
+
+### Sensores hiperespectrais (AVIRIS, ASTER)
+
+Discriminam feições de absorção diagnósticas:
+
+| Mineral | Comprimento de onda |
+|---------|-------------------|
+| Caulinita | 2,2 µm |
+| Montmorilonita | 2,2 µm (ombro a 1,9 µm) |
+| Alunita | 1,48 µm |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Zonas de alteração mapeáveis**
+
+Algoritmos de desmistura espectral linear (Spectral Angle Mapper) viabilizam o mapeamento com resolução subpixel:
+
+- **Propilítica** - clorita, epidoto (periférica)
+- **Argílica** - caulinita, montmorilonita (intermediária)
+- **Silicificada** - quartzo, sílica amorfa (proximal ao minério)
+
+A identificação dessas assinaturas direciona campanhas de campo e reduz o custo exploratório (Arai 2012).
+:::
+:::
+:::
+
+# [4 - MÉTODOS KNOWLEDGE-DRIVEN]{.section-header}
+
+## Lógica Fuzzy {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+Quando o número de depósitos conhecidos é insuficiente para treinamento estatístico, métodos **knowledge-driven** derivam pesos a partir de modelos conceituais de metalogênese.
+
+Na modelagem difusa, cada camada de evidência é convertida em função de pertinência $\mu(x) \in [0,1]$ e combinada pelo operador **Fuzzy Gamma**:
+
+$$\mu_\gamma = (\mu_{\text{OR}})^\gamma \cdot (\mu_{\text{AND}})^{1-\gamma}$$
+
+O parâmetro $\gamma$ (tipicamente 0,8 a 0,95) controla o compromisso entre incremento e diminuição, mitigando a ambiguidade inerente a dados não-lineares.
+:::
+
+::: {.column width="45%"}
+::: {.info-box}
+**Interpretação do $\gamma$**
+
+| $\gamma$ | Efeito |
+|---------|--------|
+| 0 | AND puro (restritivo) |
+| 0,5 | Equilíbrio |
+| 0,8-0,95 | Moderadamente expansivo |
+| 1 | OR puro (expansivo) |
+
+: {.striped .hover}
+
+Valores altos de $\gamma$ ampliam a área favorável, enquanto valores baixos são mais restritivos.
+:::
+:::
+:::
+
+---
+
+## Processo Analítico Hierárquico (AHP) {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+O **AHP** (Saaty 1980) hierarquiza critérios por comparação pareada, gerando pesos normalizados cuja consistência é aferida pela razão de consistência:
+
+$$CR < 0{,}10$$
+
+Caso contrário, a matriz de julgamento deve ser reconstruída.
+
+### Escala de Saaty
+
+| Valor | Significado |
+|-------|-------------|
+| 1 | Igual importância |
+| 3 | Importância moderada |
+| 5 | Importância forte |
+| 7 | Importância muito forte |
+| 9 | Importância extrema |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Exemplo de aplicação mineral**
+
+Para prospecção aurífera em terreno greenstone:
+
+- **Estruturas** (peso 0,35) - distância a falhas principais
+- **Geoquímica** (peso 0,25) - anomalias de Au em solo
+- **Magnetometria** (peso 0,20) - lineamentos magnéticos
+- **Alteração** (peso 0,15) - zonas de sericitização
+- **Litologia** (peso 0,05) - rochas hospedeiras
+
+A análise multicritério integra camadas heterogêneas em um mapa de favorabilidade unificado.
+:::
+:::
+:::
+
+# [5 - MÉTODOS DATA-DRIVEN]{.section-header}
+
+## Pesos de Evidência (WofE) {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+Os Pesos de Evidência empregam o **teorema de Bayes** para calcular o **Contraste** ($C$) de cada classe de evidência:
+
+$$C = W^+ - W^-$$
+
+onde $W^+$ e $W^-$ representam os pesos log-lineares de presença e ausência da evidência (Bonham-Carter 1994).
+
+### Interpretação
+
+| Contraste | Significado |
+|-----------|-------------|
+| $C >> 0$ | Forte associação com mineralização |
+| $C \approx 0$ | Sem associação (irrelevante) |
+| $C < 0$ | Associação negativa |
+
+: {.striped .hover}
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**Premissa de independência**
+
+A premissa de **independência condicional** entre camadas preditoras deve ser testada por qui-quadrado ou pelo teste de Agterberg-Cheng antes da combinação final.
+
+A violação dessa premissa gera **inflação espúria** de probabilidades posteriores, comprometendo a confiabilidade do mapa de favorabilidade.
+:::
+:::
+:::
+
+# [6 - MODELAGEM PREDITIVA E RESTRIÇÕES AMBIENTAIS]{.section-header}
+
+## RNA, SVM e validação {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+Redes neurais artificiais (RNA) e máquinas de vetores de suporte (SVM) capturam **não-linearidades complexas** entre variáveis preditoras.
+
+A área sob a curva ROC (**AUC**) é o indicador padrão de capacidade discriminante:
+
+| AUC | Desempenho |
+|-----|------------|
+| 0,50 - 0,60 | Pobre |
+| 0,60 - 0,70 | Razoável |
+| 0,70 - 0,85 | Bom |
+| > 0,85 | Excelente |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Validação cruzada espacial**
+
+A autocorrelação espacial pode **inflar artificialmente** métricas quando amostras vizinhas alimentam simultaneamente treino e teste.
+
+A **validação cruzada k-fold espacial** garante que blocos sejam espacialmente disjuntos, conferindo generalização efetiva ao modelo (Carranza 2009).
+:::
+:::
+:::
+
+---
+
+## Integração com restrições ambientais {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+No semiárido nordestino, a modelagem mineral enfrenta o desafio adicional de **competição pelo uso da água**. Cavas e beneficiamento interferem na recarga de aquíferos fraturados.
+
+### Modelo de aptidão multiobjetivo
+
+O mapa de favorabilidade mineral deve ser cruzado com:
+
+- APPs (Áreas de Preservação Permanente)
+- Unidades de Conservação
+- Zonas de recarga hídrica
+- Cadastro de outorgas
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Viabilidade mineral no semiárido**
+
+A viabilidade de um empreendimento mineral não é determinada exclusivamente pelo **teor do minério**, mas pela inteligência espacial em demonstrar que a exploração é compatível com:
+
+- Segurança hídrica
+- Conservação do bioma Caatinga
+- Requisitos de EIA/RIMA (CONAMA 01/1986)
+
+O SIG converte dados multidisciplinares em modelo de aptidão que antecipa conflitos de licenciamento.
+:::
+:::
+:::
+
+---
+
+## Referências {.smaller-text}
+
+- Arai, M. (2012). *Fundamentos de Geoprocessamento e Sensoriamento Remoto Aplicados à Prospecção Mineral*. UNICAMP.
+- Bonham-Carter, G. F. (1994). *Geographic Information Systems for Geoscientists*. Pergamon.
+- Carranza, E. J. M. (2009). *Geochemical Anomaly and Mineral Prospectivity Mapping in GIS*. Elsevier.
+- Saaty, T. L. (1980). *The Analytic Hierarchy Process*. McGraw-Hill.
+- Wyborn, L. A. I. et al. (1994). Australian Proterozoic mineral systems. *Proceedings AusIMM Annual Conference*, 109-115.
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::

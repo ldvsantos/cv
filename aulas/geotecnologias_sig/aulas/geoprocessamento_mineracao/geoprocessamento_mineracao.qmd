@@ -1,0 +1,278 @@
+---
+title: "Geoprocessamento e Monitoramento Ambiental da Mineração"
+subtitle: "InSAR, Índices de Vegetação e Gestão de Riscos Geotécnicos<br>Geotecnologias e SIG"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Geotecnologias e SIG | Geoprocessamento e Mineração"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+    code-fold: false
+---
+
+## Visão Geral {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos Principais
+
+- [1]{.circle} O paradigma do monitoramento contínuo
+- [2]{.circle} InSAR e segurança de estruturas
+- [3]{.circle} NDVI, histerese e recuperação vegetal
+- [4]{.circle} Balanço volumétrico e hidrografia
+- [5]{.circle} Integração de dados e gestão de riscos
+- [6]{.circle} Conformidade legal e governança de dados
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo Central**
+
+Compreender como o geoprocessamento articula séries temporais de radar, óptico e hiperespectral com dados de campo para monitorar impactos da mineração, prever instabilidades geotécnicas e avaliar a eficácia de planos de recuperação ambiental.
+:::
+:::
+:::
+
+# [1 - O PARADIGMA DO MONITORAMENTO CONTÍNUO]{.section-header}
+
+## Da licença social ao SIG como espinhaço informacional {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+A lavra contemporânea opera sob o paradigma do **monitoramento contínuo**, pois a licença social de operação depende da capacidade de demonstrar que cada metro cúbico movimentado permanece dentro de limites socioambientais negociados.
+
+### O SIG como integrador
+
+O geoprocessamento constitui o **espinhaço informacional** que transforma observações orbitais e medições de campo em inteligência territorial. Ao articular séries temporais de radar, óptico e hiperespectral com camadas vetoriais, o SIG converge:
+
+- Ciência da terra
+- Engenharia de minas
+- Análise de riscos
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Dez eixos de monitoramento**
+
+| Eixo | Técnica/Tema |
+|------|-------------|
+| 1 | InSAR (deslocamentos mm) |
+| 2 | Detecção multitemporal de mudanças |
+| 3 | Hiperespectral (drenagem ácida) |
+| 4 | Modelagem de plumas contaminantes |
+| 5 | NDVI/SAVI (resiliência ecológica) |
+| 6 | Instrumentação geotécnica *in situ* |
+| 7 | Plataformas de risco em tempo real |
+| 8 | Enquadramento legal (CAR, licenciamento) |
+| 9 | Conectividade hidrossedimentológica |
+| 10 | Governança de dados (rastreabilidade) |
+
+: {.striped .hover}
+:::
+:::
+:::
+
+# [2 - InSAR E SEGURANÇA DE ESTRUTURAS]{.section-header}
+
+## Interferometria diferencial {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+A técnica de **interferometria diferencial** por radar de abertura sintética (DInSAR), com constelações como Sentinel-1, produz mapas de velocidade de deslocamento com:
+
+- Resolução **centimétrica**
+- Periodicidade **quinzenal**
+- Cobertura independente de nuvens
+
+Quando a fase interferométrica revela gradientes ascendentes da ordem de **mm/mês**, o engenheiro geotécnico dispõe de lead time para intervir (rebaixar lençol, reforçar talude).
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Validação InSAR-GNSS**
+
+A calibração por marcos GNSS de dupla frequência alcança correlação com $R^2 > 0{,}90$, validando a integração entre sensores remotos e instrumentação direta.
+
+No contexto **pós-Brumadinho**, a dupla verificação InSAR-GNSS tornou-se exigência regulatória, pois a falha sem prévio sinal de deformação passou a ser considerada inaceitável.
+
+Complementa-se com:
+
+- Piezômetros (pressão intersticial)
+- Prismas topográficos (estação total)
+- Inclinômetros de furo
+:::
+:::
+:::
+
+# [3 - NDVI, HISTERESE E RECUPERAÇÃO VEGETAL]{.section-header}
+
+## Impactos biofísicos da mineração {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+A remoção de cobertura vegetal provoca perturbações no balanço de energia e na ciclagem hidrossedimentológica.
+
+$$NDVI = \frac{IVP - R}{IVP + R}$$
+
+onde $IVP$ é reflectância no infravermelho próximo e $R$ no vermelho.
+
+### Dinâmica do NDVI na mineração
+
+| Condição | NDVI típico |
+|----------|-------------|
+| Dossel íntegro | 0,6 - 0,8 |
+| Área degradada | < 0,2 |
+| Recuperação (5-7 anos) | 0,35 - 0,45 |
+| Platô pré-distúrbio | > 0,45 |
+
+: {.striped .hover}
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**Histerese ecológica**
+
+Mesmo após semeadura de espécies pioneiras, o NDVI frequentemente **não reocupa** o gradiente original devido a:
+
+- Limitação de nutrientes
+- Compactação do solo
+- Toxicidade por metais (Fe, Mn)
+- Ausência de micorrizas
+
+A **resiliência** quantifica o tempo necessário para que $NDVI(t)$ retorne ao platô pré-distúrbio. No Quadrilátero Ferrífero, esse horizonte varia de **5 a 7 anos**.
+:::
+:::
+:::
+
+# [4 - BALANÇO VOLUMÉTRICO E HIDROGRAFIA]{.section-header}
+
+## Cálculo de volume deslocado {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+MDEs obtidos por **LiDAR aerotransportado** (grids de 1 m) permitem calcular variação altimétrica entre campanhas:
+
+$$\Delta V = \sum_{i=1}^{n}(Z_{t2,i} - Z_{t1,i}) \cdot A_{célula}$$
+
+Esse valor retroalimenta:
+
+- Controle de estoque de estéril
+- Fator de enchimento de barragens de rejeito
+- Monitoramento de subsidência
+:::
+
+::: {.column width="45%"}
+::: {.info-box}
+**Impacto na hidrografia**
+
+O SIG modela linhas de corrente em função de declividade e rugosidade, identificando **hotspots** de conectividade hidrossedimentológica.
+
+Acoplando modelo de **advecção-dispersão**, estima-se a pluma de Fe total a jusante, orientando o posicionamento de estações de qualidade de água.
+
+Estudos de *back-analysis* indicam queda de **35%** na fração dissolvida de As após instalação de sistemas de contenção.
+:::
+:::
+:::
+
+# [5 - INTEGRAÇÃO DE DADOS E GESTÃO DE RISCOS]{.section-header}
+
+## Plataformas de fusão e alerta {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+A gestão contemporânea funde:
+
+- Séries temporais de sensoriamento remoto
+- Estação total robotizada
+- Dados pluviométricos
+- Inventário de fraturas
+
+### Algoritmo de risco (lógica fuzzy)
+
+Atribui pesos dinâmicos a variáveis como:
+
+- Velocidade de deslocamento (InSAR)
+- Pressão intersticial (piezômetros)
+- Índice de saturação pluviométrica
+- NDVI (recuperação vegetal)
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Resultados operacionais**
+
+Quando o grau de pertinência ultrapassa o limiar da **matriz de severidade**, o sistema emite alerta e recomenda contramedida.
+
+Dashboards geoespaciais demonstram redução de **90%** no tempo de resposta operacional.
+
+A integração em painel único permite que engenheiros, gestores e reguladores acessem a mesma base de informação em tempo quase real, eliminando assimetria de dados.
+:::
+:::
+:::
+
+# [6 - CONFORMIDADE LEGAL E GOVERNANÇA]{.section-header}
+
+## SIG como regra espacial {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+O SIG converte a licença ambiental em **banco de regras espaciais**. Cada polígono de APP carrega metadados que impedem novas frentes de lavra fora dos limites licenciados.
+
+### Camadas de restrição
+
+| Camada | Restrição |
+|--------|-----------|
+| APP | Buffer obrigatório |
+| UC | Proibição total |
+| Recarga hídrica | Limitação de lavra |
+| Áreas urbanas | Zona de amortecimento |
+| Patrimônio cultural | Perímetro protegido |
+
+: {.striped .hover}
+
+A conformidade legal deixa de ser checklist documental para transformar-se em **processo analítico contínuo**.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Governança de dados e rastreabilidade**
+
+Os próximos passos incluem:
+
+- **Constelações radar** de revisita diária (ampliação da janela preditiva)
+- Modelos híbridos de **aprendizado de máquina** e física (maior robustez)
+- Rastreabilidade por **blockchain** (audit trails)
+
+A mineração brasileira poderá converter responsabilidade socioambiental em vantagem competitiva ao demonstrar que a extração coexiste com a integridade dos sistemas terrestres.
+:::
+:::
+:::
+
+---
+
+## Referências {.smaller-text}
+
+- Bastiaanssen, W. G. et al. (1998). SEBAL. *J. Hydrology*, 212, 198-212.
+- CONAMA. Resolução nº 01/1986. Critérios para EIA/RIMA.
+- Huete, A. et al. (2002). MODIS vegetation indices. *Remote Sensing of Environment*, 83, 195-213.
+- Rouse, J. W. et al. (1974). Monitoring vegetation systems with ERTS. *NASA Special Publication*, 351, 309.
+- Souza Jr., C. M. et al. (2013). Ten-year Landsat classification of degradation in the Brazilian Amazon. *Remote Sensing*.
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::

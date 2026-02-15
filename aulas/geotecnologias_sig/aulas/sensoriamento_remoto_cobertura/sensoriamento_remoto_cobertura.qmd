@@ -1,0 +1,312 @@
+---
+title: "Sensoriamento Remoto e Mudanças de Uso e Cobertura"
+subtitle: "Classificação, Séries Temporais e Validação Cartográfica<br>Geotecnologias e SIG"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Geotecnologias e SIG | Sensoriamento Remoto e Cobertura"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+    code-fold: false
+---
+
+## Visão Geral {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos Principais
+
+- [1]{.circle} Interação radiação-vegetação
+- [2]{.circle} NDVI, EVI e NDFI
+- [3]{.circle} Classificadores (RF, SVM, U-Net)
+- [4]{.circle} Séries temporais (BFAST, LandTrendr)
+- [5]{.circle} PRODES, DETER e MapBiomas
+- [6]{.circle} Validação e reporte de incerteza
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo Central**
+
+Compreender os fundamentos espectrais, os métodos de classificação e detecção de mudanças, e os protocolos de validação cartográfica utilizados no monitoramento orbital da cobertura vegetal e das transições de uso da terra.
+:::
+:::
+:::
+
+# [1 - INTERAÇÃO RADIAÇÃO-VEGETAÇÃO]{.section-header}
+
+## Comportamento espectral da canopia {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+A canopia foliar opera como **filtro anisotrópico** cuja resposta espectral varia em três domínios:
+
+| Domínio | Processo dominante |
+|---------|-------------------|
+| **Visível** (400-700 nm) | Absorção por clorofilas a e b |
+| **NIR** (700-1300 nm) | Múltiplo espalhamento no mesofilo |
+| **SWIR** (1300-2500 nm) | Absorção por água e lignina |
+
+: {.striped .hover}
+
+A reflectância NIR ($\rho_{NIR}$) eleva-se com a estrutura foliar intacta, enquanto estresse hídrico reduz $\rho_{NIR}$ e eleva $\rho_{RED}$.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Importância para o monitoramento**
+
+O contraste entre absorção no vermelho e espalhamento no NIR é a base dos **índices de vegetação**.
+
+Na Caatinga, a **deciduidade sazonal** gera oscilações abruptas, exigindo:
+
+- Séries temporais densas
+- Composições percentílicas
+- Filtros de nuvens robustos
+
+Somente assim é possível isolar flutuações fenológicas de distúrbios antropogênicos (Jensen 2016).
+:::
+:::
+:::
+
+# [2 - ÍNDICES DE VEGETAÇÃO]{.section-header}
+
+## NDVI e EVI {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+### NDVI (Rouse et al. 1974)
+
+$$NDVI = \frac{\rho_{NIR} - \rho_{RED}}{\rho_{NIR} + \rho_{RED}}$$
+
+### EVI (Huete et al. 2002)
+
+$$EVI = G \times \frac{\rho_{NIR} - \rho_{RED}}{\rho_{NIR} + C_1\rho_{RED} - C_2\rho_{BLUE} + L}$$
+
+com $G = 2{,}5$, $C_1 = 6$, $C_2 = 7{,}5$, $L = 1$.
+
+O EVI reduz saturação em dosséis densos e minimiza efeito de aerossóis e solo.
+:::
+
+::: {.column width="45%"}
+::: {.info-box}
+**NDFI para degradação florestal**
+
+O NDFI (Souza Jr. et al. 2013):
+
+$$NDFI = \frac{G_V - (N_{PV} + S)}{G_V + (N_{PV} + S)}$$
+
+onde $G_V$ é vegetação íntegra, $N_{PV}$ vegetação não fotossintética e $S$ solo/sombra.
+
+Degrada linearmente conforme a intensidade do distúrbio, sendo essencial para detectar **degradação subcanópica** na Amazônia.
+:::
+:::
+:::
+
+---
+
+## SAVI e aplicações no Cerrado {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+O **SAVI** (Soil Adjusted Vegetation Index) incorpora fator $L$ para mitigar o brilho do solo:
+
+$$SAVI = \frac{(\rho_{NIR} - \rho_{RED})(1 + L)}{\rho_{NIR} + \rho_{RED} + L}$$
+
+No Cerrado, a heterogeneidade intra-sazonal obriga calibrar com $L = 0{,}25$ entre fisionomias campestres e florestais abertas.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Comparação de índices**
+
+| Índice | Melhor uso | Limitação |
+|--------|-----------|-----------|
+| NDVI | Monitoramento geral | Satura em dosséis densos |
+| EVI | Florestas tropicais | Requer banda azul |
+| SAVI | Áreas de solo exposto | Fator L empírico |
+| NDFI | Degradação amazônica | Requer desmistura |
+
+: {.striped .hover}
+:::
+:::
+:::
+
+# [3 - CLASSIFICADORES]{.section-header}
+
+## Random Forest, SVM e U-Net {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Random Forest
+
+Lógica de **voto majoritário** entre centenas de árvores de decisão. Alto desempenho em cenários ruidosos, robusto a outliers.
+
+### Support Vector Machine (SVM)
+
+Maximiza **margens hiperplanares** em espaços de kernel. Adequado para conjuntos menores e homogêneos.
+
+### U-Net (encoder-decoder)
+
+Capta **dependências espaciais e texturais** sem pré-extração de feições. Risco de sobreajuste morfotópico quando amostragem é insuficiente.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Detecção de mudanças**
+
+Duas vias complementares:
+
+**Álgebra de mapas**
+
+$\Delta = NDVI_{t} - NDVI_{t-1}$
+
+Eficiente computacionalmente, mas sensível a ruído atmosférico.
+
+**Pós-classificação**
+
+Calcula transições específicas via matrizes de probabilidade de Markov, porém acumula erros de cada etapa (Pontius et al. 2004).
+:::
+:::
+:::
+
+# [4 - SÉRIES TEMPORAIS]{.section-header}
+
+## BFAST e LandTrendr {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### BFAST (Verbesselt et al. 2010)
+
+Decompõe a série em **tendência e sazonalidade**, aplicando regressão descontínua com critérios de informação bayesiana para localizar **quebras estruturais** na trajetória de reflectância.
+
+### LandTrendr (Kennedy et al. 2010)
+
+Ajusta modelos de **segmentos lineares** ao longo de eixos temporais de índices espectrais, gerando geometria poligonal que simboliza episódios de distúrbio e regeneração.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Diagnóstico processual**
+
+Ao vincular atributos de:
+
+- **Intensidade** do distúrbio
+- **Duração** da perturbação
+- **Velocidade** de recuperação
+
+esses algoritmos oferecem diagnóstico consideravelmente mais rico do que a simples binarização desmatado vs. não desmatado.
+
+Plataformas como **Google Earth Engine** (Gorelick et al. 2017) viabilizam extrações sobre cubos temporais de bilhões de pixels em minutos.
+:::
+:::
+:::
+
+# [5 - PRODES, DETER E MAPBIOMAS]{.section-header}
+
+## Sistemas operacionais brasileiros {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### PRODES (INPE)
+
+Métricas **anuais auditáveis** de corte raso. Acurácia global $OA = 0{,}89$ e Kappa de $0{,}86$ ($IC_{95\%}\,\pm\,0{,}02$) no ciclo 2022.
+
+$$OA = \frac{\sum_{i} d_{ii}}{N}$$
+
+### DETER (INPE)
+
+Classificação automática a cada **5 dias** sobre cenas WFI CBERS e Sentinel-1. Alertas ao IBAMA em até **24 horas**, alimentando compliance florestal e cenários de emissão de CO₂.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**MapBiomas**
+
+Cadastros anuais com resolução de **30 m** e **27 classes temáticas** para todos os biomas brasileiros.
+
+### Evolução da acurácia no Cerrado
+
+| Ciclo | OA | Erro comissão (corte raso) |
+|-------|-----|---------------------------|
+| 2016 | 0,85 | 18% |
+| 2020 | 0,87 | 12% |
+| 2023 | 0,89 | 9% |
+
+: {.striped .hover}
+
+A redução progressiva do erro de comissão atesta a maturidade do sistema.
+:::
+:::
+:::
+
+# [6 - VALIDAÇÃO E INCERTEZA]{.section-header}
+
+## Protocolo de Olofsson et al. (2014) {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+A confiabilidade cartográfica repousa na **matriz de confusão estratificada** cujas proporções ponderadas por área ajustam estimativas globais.
+
+### Área estimada por classe
+
+$$\hat{A}_k = \sum_{i} p_{ik} \cdot A_T$$
+
+onde $p_{ij}$ são proporções de pixels com referência $i$ classificados como $j$ e $A_T$ é a área total.
+
+### Requisitos amostrais
+
+Mínimo $n \geq 50$ amostras por classe para manter erro padrão abaixo de **5 pontos percentuais**.
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**Métricas obrigatórias**
+
+| Métrica | O que mede |
+|---------|------------|
+| Acurácia global (OA) | Concordância geral |
+| Acurácia do produtor (PA) | 1 - erro de omissão |
+| Acurácia do usuário (UA) | 1 - erro de comissão |
+| Kappa | Concordância corrigida pelo acaso |
+
+: {.striped .hover}
+
+Erros de omissão e comissão devem ser reportados **individualmente** para que o tomador de decisão compreenda a direcionalidade do viés (Congalton e Green 2009).
+:::
+:::
+:::
+
+---
+
+## Referências {.smaller-text}
+
+- Congalton, R. G.; Green, K. (2009). *Assessing accuracy of remotely sensed data*. CRC Press.
+- Gorelick, N. et al. (2017). Google Earth Engine. *Remote Sensing of Environment*, 202, 18-27.
+- Huete, A. et al. (2002). MODIS vegetation indices. *Remote Sensing of Environment*, 83, 195-213.
+- Jensen, J. R. (2016). *Introductory digital image processing*. Pearson.
+- Kennedy, R. E. et al. (2010). LandTrendr. *Remote Sensing of Environment*.
+- Olofsson, P. et al. (2014). Good practices for estimating area and accuracy. *Remote Sensing of Environment*.
+- Pontius, R. G. et al. (2004). Detecting important categorical land changes. *Agriculture, Ecosystems and Environment*.
+- Rouse, J. W. et al. (1974). Monitoring vegetation systems with ERTS. *NASA SP*, 351, 309.
+- Souza Jr., C. M. et al. (2013). Ten-year Landsat classification. *Remote Sensing*.
+- Verbesselt, J. et al. (2010). Detecting trend and seasonal changes. *Remote Sensing of Environment*.
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::

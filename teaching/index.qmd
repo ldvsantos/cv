@@ -46,6 +46,48 @@ Acesse as disciplinas para encontrar aulas, leituras recomendadas, videoaulas e 
 ```{=html}
 <div class="discipline-grid">
 
+<a class="discipline-card" href="ciencia-da-paisagem.html">
+<div class="disc-icon"><i class="fa-solid fa-mountain-sun"></i></div>
+<h4 class="disc-title">Ciência da Paisagem</h4>
+<p class="disc-desc">Ecologia da paisagem, métricas FRAGSTATS, conectividade, diagnóstico integrado e planejamento territorial.</p>
+<span class="disc-badge">22 aulas</span>
+</a>
+
+<a class="discipline-card" href="bioengenharia-de-solos.html">
+<div class="disc-icon"><i class="fa-solid fa-seedling"></i></div>
+<h4 class="disc-title">Bioengenharia de Solos</h4>
+<p class="disc-desc">Erosão linear, paliçadas permeáveis, drenos verdes, ecoengenharia e estabilização de taludes.</p>
+<span class="disc-badge">21 aulas</span>
+</a>
+
+<a class="discipline-card" href="geotecnologias-sig.html">
+<div class="disc-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+<h4 class="disc-title">Geotecnologias e SIG</h4>
+<p class="disc-desc">Sensoriamento remoto, geoprocessamento, GEE, recursos hídricos e IA aplicada à pesquisa ambiental.</p>
+<span class="disc-badge">11 aulas</span>
+</a>
+
+<a class="discipline-card" href="analise-dados-ambientais.html">
+<div class="disc-icon"><i class="fa-solid fa-chart-column"></i></div>
+<h4 class="disc-title">Análise de Dados Ambientais</h4>
+<p class="disc-desc">Estatística espacial, R, Python, geoestatística, machine learning e modelagem ambiental.</p>
+<span class="disc-badge">29 aulas</span>
+</a>
+
+<a class="discipline-card" href="estatistica-aplicada.html">
+<div class="disc-icon"><i class="fa-solid fa-chart-line"></i></div>
+<h4 class="disc-title">Estatística Aplicada à Engenharia Agronômica</h4>
+<p class="disc-desc">Testes paramétricos e não-paramétricos, ANOVA, regressão, análise multivariada e séries temporais.</p>
+<span class="disc-badge">7 aulas</span>
+</a>
+
+<a class="discipline-card" href="geotexteis-nbs.html">
+<div class="disc-icon"><i class="fa-solid fa-layer-group"></i></div>
+<h4 class="disc-title">Geotêxteis e Soluções baseadas na Natureza</h4>
+<p class="disc-desc">Tipologia de geossintéticos, dimensionamento, biotêxteis e projetos integrados de retaludamento.</p>
+<span class="disc-badge">6 aulas</span>
+</a>
+
 <a class="discipline-card" href="extensao-rural.html">
 <div class="disc-icon"><i class="fa-solid fa-handshake-angle"></i></div>
 <h4 class="disc-title">Extensão Rural</h4>
@@ -65,48 +107,6 @@ Acesse as disciplinas para encontrar aulas, leituras recomendadas, videoaulas e 
 <h4 class="disc-title">Propriedade Intelectual e Inovação</h4>
 <p class="disc-desc">Marco legal da PI, patentes, prospecção tecnológica, patentometria e transferência de tecnologia.</p>
 <span class="disc-badge">10 aulas</span>
-</a>
-
-<a class="discipline-card" href="estatistica-aplicada.html">
-<div class="disc-icon"><i class="fa-solid fa-chart-line"></i></div>
-<h4 class="disc-title">Estatística Aplicada à Engenharia Agronômica</h4>
-<p class="disc-desc">Testes paramétricos e não-paramétricos, ANOVA, regressão, análise multivariada e séries temporais.</p>
-<span class="disc-badge">7 aulas</span>
-</a>
-
-<a class="discipline-card" href="analise-dados-ambientais.html">
-<div class="disc-icon"><i class="fa-solid fa-chart-column"></i></div>
-<h4 class="disc-title">Análise de Dados Ambientais</h4>
-<p class="disc-desc">Estatística espacial, R, Python, geoestatística, machine learning e modelagem ambiental.</p>
-<span class="disc-badge">29 aulas</span>
-</a>
-
-<a class="discipline-card" href="bioengenharia-de-solos.html">
-<div class="disc-icon"><i class="fa-solid fa-seedling"></i></div>
-<h4 class="disc-title">Bioengenharia de Solos</h4>
-<p class="disc-desc">Erosão linear, paliçadas permeáveis, drenos verdes, ecoengenharia e estabilização de taludes.</p>
-<span class="disc-badge">19 aulas</span>
-</a>
-
-<a class="discipline-card" href="geotecnologias-sig.html">
-<div class="disc-icon"><i class="fa-solid fa-map-location-dot"></i></div>
-<h4 class="disc-title">Geotecnologias e SIG</h4>
-<p class="disc-desc">Sensoriamento remoto, geoprocessamento, GEE, recursos hídricos e IA aplicada à pesquisa ambiental.</p>
-<span class="disc-badge">11 aulas</span>
-</a>
-
-<a class="discipline-card" href="geotexteis-nbs.html">
-<div class="disc-icon"><i class="fa-solid fa-layer-group"></i></div>
-<h4 class="disc-title">Geotêxteis e Soluções baseadas na Natureza</h4>
-<p class="disc-desc">Tipologia de geossintéticos, dimensionamento, biotêxteis e projetos integrados de retaludamento.</p>
-<span class="disc-badge">6 aulas</span>
-</a>
-
-<a class="discipline-card" href="ciencia-da-paisagem.html">
-<div class="disc-icon"><i class="fa-solid fa-mountain-sun"></i></div>
-<h4 class="disc-title">Ciência da Paisagem</h4>
-<p class="disc-desc">Ecologia da paisagem, métricas FRAGSTATS, conectividade, diagnóstico integrado e planejamento territorial.</p>
-<span class="disc-badge">22 aulas</span>
 </a>
 
 </div>

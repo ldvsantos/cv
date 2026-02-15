@@ -1,0 +1,247 @@
+---
+title: "Extensão e Sociologia Rural"
+subtitle: "Objetos de Mediação na Extensão Rural<br>Conhecimento Cotidiano, Ciência, Técnica e Tecnologia Social"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Federal de Sergipe (UFS)"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UFS  -  Extensão e Sociologia Rural | Aula 17  -  Objetos de Mediação na Extensão Rural"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos Principais
+
+- [1]{.circle} Conhecimento Cotidiano e Saber Local
+- [2]{.circle} Ciência e Conhecimento Científico
+- [3]{.circle} Técnica e Tecnologia
+- [4]{.circle} Tecnologia Social
+- [5]{.circle} Mediação e o Papel do Extensionista
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo Central**
+
+Compreender os diferentes tipos de conhecimento que circulam na prática extensionista e como o extensionista atua como mediador entre saberes distintos na construção de soluções para o meio rural.
+:::
+:::
+:::
+
+---
+
+## O QUE SÃO OBJETOS DE MEDIAÇÃO? {.smaller-text}
+
+Na extensão rural, os **objetos de mediação** são os elementos que conectam extensionistas, agricultores e pesquisadores em processos de interação e construção de conhecimento (Coelho, 2014).
+
+Esses objetos incluem artefatos, práticas, saberes e linguagens que circulam entre os diferentes atores do processo extensionista. A compreensão de sua natureza é fundamental para que o profissional de ciências agrárias consiga estabelecer diálogos produtivos, evitando a imposição unilateral de pacotes tecnológicos e valorizando a multiplicidade de fontes de saber presentes no campo.
+
+O conceito de mediação remete à ideia de que o extensionista não é apenas um transmissor de informações, mas um **facilitador de encontros** entre formas distintas de conhecer e agir sobre a realidade agrária (Freire, 1983).
+
+---
+
+## CONHECIMENTO COTIDIANO E SABER LOCAL {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+O saber local, também chamado de conhecimento cotidiano ou popular, resulta de gerações de observação, experimentação e adaptação dos agricultores às condições de solo, clima e arranjos produtivos de seus territórios (Toledo e Barrera-Bassols, 2009).
+
+Esse tipo de conhecimento possui características próprias. É transmitido oralmente, enraizado na prática, sensível ao contexto ecológico e frequentemente invisibilizado pela ciência formal. Exemplos concretos incluem o manejo de sementes crioulas, o uso de bioindicadores vegetais para fertilidade do solo e os calendários agrícolas baseados em sinais naturais.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Características do Saber Local**
+
+1. Transmissão oral e intergeracional
+2. Base empírica e adaptativa
+3. Contexto-dependente (território)
+4. Holístico (integra dimensões produtivas, culturais e espirituais)
+5. Frequentemente invisibilizado pela ciência convencional
+:::
+:::
+:::
+
+---
+
+## CIÊNCIA E CONHECIMENTO CIENTÍFICO {.smaller-text}
+
+O conhecimento científico é produzido por meio de métodos sistemáticos de observação, formulação de hipóteses, experimentação controlada e revisão por pares. Na extensão rural, manifesta-se como **resultados de pesquisa** gerados em universidades, centros de pesquisa como a Embrapa e instituições internacionais (Gomes, 2005).
+
+A ciência agronômica produziu avanços inegáveis em melhoramento genético, manejo de solo, irrigação e controle fitossanitário. Contudo, o modelo linear de inovação, no qual a ciência gera, o extensionista transfere e o agricultor adota, mostrou-se **insuficiente** para abarcar a complexidade dos sistemas agrários (Chambers, 1997).
+
+O desafio contemporâneo reside em estabelecer uma interface dialógica entre conhecimento científico e saber local, de modo que ambos se complementem e se enriqueçam mutuamente no desenho de soluções adaptadas à realidade de cada território.
+
+---
+
+## TÉCNICA E TECNOLOGIA {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Técnica
+
+A **técnica** consiste em procedimentos e habilidades práticas desenvolvidos para resolver problemas específicos. No meio rural, expressa-se em práticas de manejo, preparo do solo, semeadura, poda, colheita e processamento (Dagnino, 2004).
+
+A técnica pode ter origem tanto no saber local (técnicas de roça de toco, coivara) quanto na pesquisa científica (técnicas de plantio direto, irrigação por gotejamento).
+:::
+
+::: {.column width="50%"}
+### Tecnologia
+
+A **tecnologia** é o conjunto organizado de conhecimentos científicos e técnicos aplicados a um processo produtivo ou social. Diferencia-se da técnica por envolver sistematização, padronização e, frequentemente, incorporação de capital (Dagnino, 2004).
+
+Na extensão rural, a escolha tecnológica nunca é neutra. Ela reflete visões de mundo, relações de poder e modelos de desenvolvimento, podendo incluir ou excluir agricultores conforme sua escala e acesso a recursos.
+:::
+:::
+
+---
+
+## TECNOLOGIA CONVENCIONAL VS. TECNOLOGIA SOCIAL {.smaller-text}
+
+```{mermaid}
+%%| fig-cap: "Comparação entre paradigmas tecnológicos na extensão rural"
+flowchart LR
+    subgraph CONV["TECNOLOGIA CONVENCIONAL"]
+        direction TB
+        A1["Gerada em laboratório"] --> A2["Padronizada"]
+        A2 --> A3["Dependente de insumos externos"]
+        A3 --> A4["Intensiva em capital"]
+    end
+    subgraph SOC["TECNOLOGIA SOCIAL"]
+        direction TB
+        B1["Co-construída com comunidades"] --> B2["Adaptável ao contexto"]
+        B2 --> B3["Uso de recursos locais"]
+        B3 --> B4["Acessível e replicável"]
+    end
+```
+
+A distinção entre tecnologia convencional e tecnologia social é central para a prática extensionista contemporânea. Enquanto a primeira é desenvolvida em ambientes controlados e exige alto investimento para adoção, a segunda nasce do diálogo entre saberes e busca responder a demandas sociais concretas com soluções de **baixo custo e alta replicabilidade** (ITS Brasil, 2004).
+
+---
+
+## TECNOLOGIA SOCIAL NA PRÁTICA {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+A Fundação Banco do Brasil e a Rede de Tecnologia Social (RTS) definem tecnologia social como "produtos, técnicas ou metodologias reaplicáveis, desenvolvidas na interação com a comunidade e que representem efetivas soluções de transformação social" (ITS Brasil, 2004).
+
+**Exemplos no meio rural brasileiro**
+
+A cisterna de placas do programa P1MC é um dos casos mais emblemáticos, tendo sido implementada em mais de 1,2 milhão de propriedades no semiárido. Outros exemplos incluem os biodigestores sertanejos, as fossas sépticas biodigestoras da Embrapa e os quintais produtivos agroecológicos.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Critérios de Tecnologia Social (RTS)**
+
+1. Responder a uma demanda social concreta
+2. Ser desenvolvida em interação com a comunidade
+3. Ser reaplicável em diferentes contextos
+4. Gerar transformação social efetiva
+5. Ter baixo custo e uso de recursos locais
+:::
+:::
+:::
+
+---
+
+## MEDIAÇÃO E O PAPEL DO EXTENSIONISTA {.smaller-text}
+
+O extensionista atua como **mediador** entre diferentes formas de conhecimento, e não como simples vetor de transmissão unidirecional. Paulo Freire (1983) foi enfático ao afirmar que "o conhecimento não se estende do que se julga sabedor até aqueles que se julga não saberem", criticando a postura extensionista que ignora os saberes do agricultor.
+
+Na prática, a mediação envolve habilidades de escuta ativa, tradução de linguagens técnicas para linguagem acessível, valorização de saberes locais e facilitação de processos coletivos de experimentação e aprendizagem. O extensionista precisa transitar entre os mundos da ciência, da técnica e do conhecimento cotidiano, articulando-os em função das necessidades e potencialidades de cada comunidade (Coelho, 2014).
+
+A formação do engenheiro agrônomo deve, portanto, incluir competências de comunicação intercultural, reconhecimento de epistemologias diversas e capacidade de dialogar com agricultores, pesquisadores, gestores públicos e organizações da sociedade civil.
+
+---
+
+## A INTERFACE SABER LOCAL E CIÊNCIA {.smaller-text}
+
+```{mermaid}
+%%| fig-cap: "Modelo de interface entre saberes na extensão rural contemporânea"
+flowchart TD
+    A["SABER LOCAL\n(agricultores)"] <-->|diálogo| C["EXTENSIONISTA\n(mediador)"]
+    B["CIÊNCIA\n(pesquisa)"] <-->|tradução| C
+    C -->|facilitação| D["INOVAÇÃO\nCO-CONSTRUÍDA"]
+    D -->|retroalimenta| A
+    D -->|retroalimenta| B
+    classDef local fill:#27ae60,stroke:#fff,color:#fff
+    classDef ciencia fill:#2e86c1,stroke:#fff,color:#fff
+    classDef ext fill:#f39c12,stroke:#fff,color:#fff
+    classDef inov fill:#8e44ad,stroke:#fff,color:#fff
+    class A local
+    class B ciencia
+    class C ext
+    class D inov
+```
+
+A construção de inovações para a agricultura contemporânea exige a superação do modelo linear (pesquisa → extensão → agricultor) em favor de modelos interativos, nos quais os diferentes saberes se articulam de forma horizontal e retroalimentam-se continuamente (Chambers, 1997).
+
+---
+
+## DESAFIOS DA MEDIAÇÃO {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+A mediação entre saberes enfrenta obstáculos de ordem epistemológica, institucional e cultural. O primeiro e mais profundo diz respeito à hierarquização entre conhecimento científico e saber popular, que frequentemente relega o segundo à condição de "crença" ou "atraso" (Santos, 2007).
+
+Do ponto de vista institucional, a formação dos profissionais de ciências agrárias ainda privilegia a dimensão técnico-produtiva em detrimento das competências de comunicação, facilitação e leitura de contextos socioculturais.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Desafios Contemporâneos**
+
+1. Superar a hierarquia entre saberes (epistemologia)
+2. Formar extensionistas mediadores, não apenas técnicos
+3. Reconhecer a pluralidade de sistemas de conhecimento
+4. Integrar inovação tecnológica com sustentabilidade social
+5. Garantir que a tecnologia social tenha escala sem perder identidade local
+:::
+:::
+:::
+
+---
+
+## CONCLUSÃO {.smaller-text}
+
+A compreensão dos objetos de mediação na extensão rural é requisito fundamental para uma prática profissional que supere o modelo difusionista. O extensionista contemporâneo deve ser capaz de reconhecer, valorizar e articular diferentes formas de conhecimento, desde o saber empírico dos agricultores até a produção científica mais recente, passando pelas técnicas tradicionais e pelas tecnologias sociais emergentes.
+
+A formação em ciências agrárias que incorpore essa perspectiva contribui para uma extensão rural mais dialógica, inclusiva e efetiva, capaz de responder aos desafios complexos do desenvolvimento rural sustentável no Brasil.
+
+---
+
+## REFERÊNCIAS {.smaller-text}
+
+- Chambers, R. Whose Reality Counts? Putting the First Last. London: ITDG, 1997.
+- Coelho, F. M. G. A Arte das Orientações Técnicas no Campo. Rio Branco: Suprema, 2014.
+- Dagnino, R. Tecnologia Social: ferramenta para construir outra sociedade. Campinas: Unicamp, 2004.
+- Freire, P. Extensão ou Comunicação? Rio de Janeiro: Paz e Terra, 1983.
+- Gomes, J. C. C. Bases epistemológicas da agroecologia. In: Aquino, A. N.; Assis, R. L. Agroecologia: princípios e técnicas. Brasília: Embrapa, 2005.
+- ITS Brasil. Tecnologia Social: uma estratégia para o desenvolvimento. Rio de Janeiro: FBB, 2004.
+- Santos, B. S. Para além do pensamento abissal. Novos Estudos CEBRAP, n. 79, 2007.
+- Toledo, V. M.; Barrera-Bassols, N. A Memória Biocultural. São Paulo: Expressão Popular, 2009.
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Federal de Sergipe (UFS)
+:::

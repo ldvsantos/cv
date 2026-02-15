@@ -1,0 +1,314 @@
+---
+title: "Inteligência Artificial e Qualidade da Pesquisa Ambiental"
+subtitle: "Modelagem Híbrida, Explicabilidade e Princípios FAIR<br>Geotecnologias e SIG"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Geotecnologias e SIG | IA e Qualidade da Pesquisa"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+    code-fold: false
+---
+
+## Visão Geral {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos Principais
+
+- [1]{.circle} O quarto paradigma e a ciência orientada por dados
+- [2]{.circle} IA no monitoramento ambiental
+- [3]{.circle} Viés, incerteza e validação espacial
+- [4]{.circle} IA Explicável (SHAP, LIME)
+- [5]{.circle} Reprodutibilidade e princípios FAIR
+- [6]{.circle} Green AI, ética e small data no semiárido
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo Central**
+
+Compreender como inteligência artificial se articula com a pesquisa ambiental, discutindo modelagem híbrida, explicabilidade, reprodutibilidade, pegada energética e os desafios específicos da ciência ambiental em contextos de dados escassos.
+:::
+:::
+:::
+
+# [1 - O QUARTO PARADIGMA]{.section-header}
+
+## Ciência orientada por dados {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+A convergência entre **Big Data ambiental** e algoritmos de aprendizado de máquina consolidou a Ciência Orientada por Dados (Hey et al. 2009), um quarto paradigma investigativo que se soma a:
+
+| Paradigma | Abordagem |
+|-----------|-----------|
+| 1º | Experimentação empírica |
+| 2º | Modelagem teórica |
+| 3º | Simulação computacional |
+| **4º** | **Inferência a partir de dados massivos** |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Inquietação epistemológica**
+
+A dissolução de fronteiras entre coleta massiva e inferência estatística gera questões fundamentais:
+
+- Como garantir **robustez científica** quando sistemas computacionais extrapolam correlações?
+- Como converter correlação em **causalidade**?
+- Como fornecer insumos para **políticas públicas** com confiabilidade?
+
+A resposta envolve arquitetura conceitual que integra ética, sustentabilidade energética e princípios FAIR.
+:::
+:::
+:::
+
+# [2 - IA NO MONITORAMENTO AMBIENTAL]{.section-header}
+
+## Poder preditivo e o paradoxo mecanístico {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+Redes neurais profundas reconhecem padrões em:
+
+- Séries temporais pluviométricas
+- Imagens hiperespectrais
+- Previsão de eventos extremos
+
+com granularidade que ultrapassa a escala sinótica (Reichstein et al. 2019).
+
+### O paradoxo
+
+Modelos preditivos capturam regularidades estatísticas mas **raramente codificam leis de conservação** de massa ou energia. A deficiência se manifesta quando o algoritmo, treinado em regime estacionário, tenta **extrapolar** para cenários de mudança climática.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Modelagem híbrida**
+
+A solução emergente combina equações diferenciais de processos físicos com camadas de aprendizado de máquina (Karpatne et al. 2017):
+
+- **Componente física** - respeita balanço hídrico, conservação de energia
+- **Componente estatística** - captura residuais complexos e não linearidades
+
+Ao embutir **restrições de conservação**, o pesquisador reduz soluções espúrias e reconcilia **causalidade com correlação**, mantendo identidade semântica de cada variável.
+:::
+:::
+:::
+
+# [3 - VIÉS, INCERTEZA E VALIDAÇÃO]{.section-header}
+
+## Garbage In, Garbage Out {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+A qualidade espectroradiométrica de dados orbitais, sujeita a ruído atmosférico, georreferenciamento imperfeito e sombras topográficas, amplifica o risco de **viés sistemático** (Foody 2002).
+
+### O dilema correlação-causalidade
+
+Hotspots térmicos e emissão de material particulado podem emergir como correlação forte, embora o mecanismo causal dependa de:
+
+- Regimes de vento
+- Umidade do ar
+- Estabilidade atmosférica
+
+Métricas agregadas mascaram essa fragilidade quando a **autocorrelação espacial** infla a pseudo-significância.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Validação Cruzada por Blocos Espaciais**
+
+Solucionar o problema exige que blocos de treino e teste sejam **espacialmente disjuntos** (Roberts et al. 2017):
+
+| Método | Problema | Solução |
+|--------|----------|---------|
+| k-fold clássico | Autocorrelação inflaciona | Blocos aleatórios |
+| Blocos espaciais | Vazamento de informação | Grid disjunto |
+| Leave-Location-Out | Custo computacional | Viável com GEE |
+
+: {.striped .hover}
+
+A independência geométrica garante **generalização efetiva** do modelo preditivo.
+:::
+:::
+:::
+
+# [4 - IA EXPLICÁVEL]{.section-header}
+
+## SHAP e LIME {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+A IA Explicável (XAI) ganhou urgência quando algoritmos passaram a sustentar decisões de **evacuação ou zoneamento ambiental**.
+
+### SHAP (Lundberg e Lee 2017)
+
+Quantifica a **contribuição marginal** de cada preditor à saída do modelo, baseado na teoria dos jogos (valores de Shapley).
+
+### LIME (Ribeiro et al. 2016)
+
+Gera **aproximações locais** interpretáveis em torno de cada predição, iluminando o mecanismo subjacente.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Exemplo prático**
+
+Ao revelar que a predição de contaminação difusa deriva da **densidade de estradas** e não de pluviometria, o analista pode:
+
+1. Questionar a solidez causal
+2. Reencenar o experimento com variáveis mais robustas
+3. Comunicar ao tomador de decisão **o que impulsiona** cada predição
+
+A transparência serve como salvaguarda contra **alucinações estatísticas** produzidas por artefatos de amostragem.
+:::
+:::
+:::
+
+# [5 - REPRODUTIBILIDADE E PRINCÍPIOS FAIR]{.section-header}
+
+## A crise de reprodutibilidade {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+Bases heterogêneas e pipelines complexos dificultam a replicação integral de estudos ambientais.
+
+### Princípios FAIR (Wilkinson et al. 2016)
+
+| Princípio | Significado |
+|-----------|-------------|
+| **F**indable | Dados localizáveis com metadados persistentes |
+| **A**ccessible | Protocolos abertos de recuperação |
+| **I**nteroperable | Vocabulário e formato padronizados |
+| **R**eusable | Licença clara e proveniência documentada |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Ecossistema de reprodutibilidade**
+
+O ecossistema mínimo para teste de robustez inclui:
+
+- **Repositórios abertos** (Zenodo, Figshare)
+- **Contêineres** (Docker, Singularity)
+- **Workflow languages** (Snakemake, Nextflow)
+- **Versionamento** de hiperparâmetros e sementes
+
+A documentação versionada previne **p-hacking** e atenua vieses de confirmação, garantindo que resultados sejam auditáveis.
+:::
+:::
+:::
+
+# [6 - GREEN AI, ÉTICA E SMALL DATA]{.section-header}
+
+## O paradoxo energético da IA {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+O treinamento de modelos com bilhões de parâmetros consome energia equiparável à de **cidades inteiras** durante dias (Strubell et al. 2019).
+
+### Green AI (Schwartz et al. 2020)
+
+Princípio de maximizar **resultado científico por kWh consumido**:
+
+| Abordagem | Pegada de carbono | Desempenho |
+|-----------|-------------------|------------|
+| LLM (bilhões de parâmetros) | Alta | Superdimensionado |
+| Random Forest | **Muito baixa** | Excelente para dados ambientais |
+| Gradient Boosting | **Baixa** | Excelente para dados tabulares |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Small data no semiárido**
+
+Regiões semiáridas com séries curtas e alta variabilidade desafiam a premissa "mais dados = melhor modelo":
+
+- Risco de **overfitting** com redes profundas
+- Estratégias de **aumento sintético** (simulação hidrológica estocástica) complementam amostragem real
+- Procedimento deve ser documentado sob FAIR (incerteza sintética comunicada)
+:::
+:::
+:::
+
+---
+
+## Ética e integridade acadêmica {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Dilemas de IA generativa
+
+- Alucinações (referências inexistentes)
+- Fabricação de dados sintéticos não documentados
+- Plágio automatizado
+- Viés embutido nos dados de treinamento
+
+### Human-in-the-loop
+
+A supervisão humana devolve ao processo de autoria a **responsabilidade epistêmica**, garantindo que:
+
+- A coerência física dos outputs seja validada
+- Cada citação seja verificada
+- A heurística estatística não substitua o juízo científico
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Síntese: IA na pesquisa ambiental**
+
+A incorporação de IA traz ganho incomparável de escala e resolução, mas exige **rigor metodológico superior** ao da estatística clássica.
+
+A solução não reside em proibir algoritmos sofisticados, e sim em adotá-los dentro de arcabouço que combine:
+
+- Princípios **FAIR**
+- IA **explicável** (SHAP, LIME)
+- Validação **espacialmente estruturada**
+- Modelagem **híbrida** (física + ML)
+- Auditoria de **pegada de carbono**
+:::
+:::
+:::
+
+---
+
+## Referências {.smaller-text}
+
+- Breiman, L. (2001). Random forests. *Machine Learning*, 45, 5-32.
+- Foody, G. M. (2002). Status of land cover classification accuracy. *Remote Sensing of Environment*, 80, 185-201.
+- Hey, T. et al. (2009). *The Fourth Paradigm*. Microsoft Research.
+- Karpatne, A. et al. (2017). Theory-guided data science. *IEEE TKDE*, 29(10), 2318-2331.
+- Lundberg, S. M.; Lee, S.-I. (2017). A unified approach to interpreting model predictions. *NeurIPS*.
+- Reichstein, M. et al. (2019). Deep learning and process understanding for Earth system science. *Nature*, 566, 195-204.
+- Ribeiro, M. T. et al. (2016). "Why should I trust you?" *ACM SIGKDD*.
+- Roberts, D. R. et al. (2017). Cross-validation strategies for spatial data. *Ecography*, 40, 913-929.
+- Schwartz, R. et al. (2020). Green AI. *Communications of the ACM*, 63(12), 54-63.
+- Strubell, E. et al. (2019). Energy and policy considerations for NLP. *ACL*.
+- Wilkinson, M. D. et al. (2016). The FAIR Guiding Principles. *Scientific Data*, 3, 160018.
+
+# {background-color="#034EA2"}
+
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="text-align: center; color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::
