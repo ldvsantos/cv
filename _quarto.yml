@@ -28,12 +28,8 @@ website:
     left:
       - href: index.qmd
         text: "{{< fa house >}} Início"
-      - text: "{{< fa file-lines >}} Publicações"
-        menu:
-          - href: papers/index.qmd
-            text: "{{< fa file-alt >}} Artigos"
-          - href: papers/livros.qmd
-            text: "{{< fa book >}} Livros"
+      - href: papers/publicacoes.qmd
+        text: "{{< fa file-lines >}} Publicações"
       - href: teaching/index.qmd
         text: "{{< fa chalkboard-user >}} Ensino"
       # - href: talks/index.qmd

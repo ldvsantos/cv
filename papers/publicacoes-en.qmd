@@ -1,0 +1,62 @@
+---
+title: "Publications"
+description: "Academic output by Luiz Diego Vidal Santos: scientific articles, books and ebooks on territorial planning, soil bioengineering and nature-based solutions."
+lang: en
+---
+
+::: {.text-end .mb-3}
+[Português](publicacoes.qmd) | **English** | [Español](publicacoes-es.qmd)
+:::
+
+Academic output by **Luiz Diego Vidal Santos**, including scientific articles published in national and international journals, book chapters, conference papers and open-access ebooks. For complete and up-to-date information, visit {{< ai orcid >}} [ORCID](https://orcid.org/0000-0001-8659-8557) or the {{< fa graduation-cap >}} [Lattes Platform](http://lattes.cnpq.br/7491112603328096).
+
+```{=html}
+<div class="row g-4 mt-3">
+
+<!-- Card Articles -->
+<div class="col-md-6">
+<div class="card shadow-sm h-100 border-primary">
+<div class="card-body text-center">
+<div style="font-size:3rem; color:var(--bs-primary);">
+<i class="fa-solid fa-file-lines"></i>
+</div>
+<h3 class="card-title mt-2">Scientific Articles</h3>
+<p class="card-text">
+<strong>69</strong> journal articles &bull;
+<strong>3</strong> book chapters &bull;
+<strong>26</strong> conference papers
+</p>
+<p class="card-text text-muted">
+Full list with 98+ publications automatically extracted from the Lattes Curriculum, formatted in APA.
+</p>
+<a href="index-en.html" class="btn btn-primary">
+<i class="fa-solid fa-arrow-right"></i> View articles
+</a>
+</div>
+</div>
+</div>
+
+<!-- Card Ebooks -->
+<div class="col-md-6">
+<div class="card shadow-sm h-100 border-success">
+<div class="card-body text-center">
+<div style="font-size:3rem; color:var(--bs-success);">
+<i class="fa-solid fa-book"></i>
+</div>
+<h3 class="card-title mt-2">Books & Ebooks</h3>
+<p class="card-text">
+<strong>2</strong> open-access ebooks &bull;
+CC BY-NC-SA 4.0 License
+</p>
+<p class="card-text text-muted">
+Soil Bioengineering in Tropical Regions and Landscape Science, with chapters, equations and case studies.
+</p>
+<a href="livros-en.html" class="btn btn-success">
+<i class="fa-solid fa-arrow-right"></i> View books
+</a>
+</div>
+</div>
+</div>
+
+</div>
+```

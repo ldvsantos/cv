@@ -1,0 +1,62 @@
+---
+title: "Publicaciones"
+description: "Producción académica de Luiz Diego Vidal Santos: artículos científicos, libros y ebooks sobre planificación territorial, bioingeniería de suelos y soluciones basadas en la naturaleza."
+lang: es
+---
+
+::: {.text-end .mb-3}
+[Português](publicacoes.qmd) | [English](publicacoes-en.qmd) | **Español**
+:::
+
+Producción académica de **Luiz Diego Vidal Santos**, incluyendo artículos científicos publicados en revistas nacionales e internacionales, capítulos de libros, trabajos en eventos y ebooks de autoría propia. Para información completa y actualizada, consulte {{< ai orcid >}} [ORCID](https://orcid.org/0000-0001-8659-8557) o la {{< fa graduation-cap >}} [Plataforma Lattes](http://lattes.cnpq.br/7491112603328096).
+
+```{=html}
+<div class="row g-4 mt-3">
+
+<!-- Card Artículos -->
+<div class="col-md-6">
+<div class="card shadow-sm h-100 border-primary">
+<div class="card-body text-center">
+<div style="font-size:3rem; color:var(--bs-primary);">
+<i class="fa-solid fa-file-lines"></i>
+</div>
+<h3 class="card-title mt-2">Artículos Científicos</h3>
+<p class="card-text">
+<strong>69</strong> artículos en revistas &bull;
+<strong>3</strong> capítulos de libros &bull;
+<strong>26</strong> trabajos en eventos
+</p>
+<p class="card-text text-muted">
+Lista completa con +98 publicaciones extraídas automáticamente del Currículo Lattes, formateadas en APA.
+</p>
+<a href="index-es.html" class="btn btn-primary">
+<i class="fa-solid fa-arrow-right"></i> Ver artículos
+</a>
+</div>
+</div>
+</div>
+
+<!-- Card Ebooks -->
+<div class="col-md-6">
+<div class="card shadow-sm h-100 border-success">
+<div class="card-body text-center">
+<div style="font-size:3rem; color:var(--bs-success);">
+<i class="fa-solid fa-book"></i>
+</div>
+<h3 class="card-title mt-2">Libros y Ebooks</h3>
+<p class="card-text">
+<strong>2</strong> ebooks de acceso abierto &bull;
+Licencia CC BY-NC-SA 4.0
+</p>
+<p class="card-text text-muted">
+Bioingeniería de Suelos en Regiones Tropicales y Ciencia del Paisaje, con capítulos, ecuaciones y estudios de caso.
+</p>
+<a href="livros-es.html" class="btn btn-success">
+<i class="fa-solid fa-arrow-right"></i> Ver libros
+</a>
+</div>
+</div>
+</div>
+
+</div>
+```
