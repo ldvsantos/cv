@@ -1,0 +1,87 @@
+# Paliçadas para Controle de Ravinas {#sec-palicadas}
+
+## Conceito
+
+![Paliçada instalada em ravina — barreira transversal permeável que retarda o escoamento e promove a deposição de sedimentos.](../img/palicada_campo.jpg){#fig-palicada-campo fig-alt="Paliçada instalada em ravina" width="80%"}
+
+As **paliçadas** são barreiras transversais permeáveis instaladas no interior de ravinas para reduzir a velocidade do escoamento, reter sedimentos e criar condições para o estabelecimento vegetal. São a técnica mais simples e econômica de bioengenharia para controle de erosão concentrada.
+
+## Materiais
+
+### Bambu
+
+O bambu (*Bambusa* spp., *Dendrocalamus* spp.) é o material mais utilizado em regiões tropicais, combinando alta resistência à tração (100–400 MPa), disponibilidade e baixo custo, facilidade de corte e montagem, e durabilidade de 2–5 anos quando tratado.
+
+### Madeira Roliça
+
+Troncos de eucalipto, pinus ou espécies nativas de rápido crescimento. Durabilidade de 3–8 anos.
+
+### Pedra Seca
+
+Em regiões com disponibilidade de pedras, as paliçadas podem ser construídas com pedras empilhadas sem argamassa, combinando função de filtro e retenção.
+
+## Dimensionamento
+
+### Espaçamento entre Paliçadas
+
+O espaçamento ($E$) entre paliçadas consecutivas deve garantir que a crista da paliçada a jusante esteja no mesmo nível da base da paliçada a montante:
+
+$$
+E = \frac{H}{S_f}
+$$
+
+onde $H$ é a altura efetiva da paliçada (m) e $S_f$ é a declividade do fundo da ravina (m/m).
+
+### Altura Efetiva
+
+A altura efetiva da paliçada não deve exceder **1/3 da profundidade da ravina**, garantindo que o escoamento possa transbordar sem gerar erosão lateral:
+
+$$
+H_{max} = \frac{D}{3}
+$$
+
+### Capacidade de Retenção
+
+O volume de sedimento retido por uma paliçada de seção trapezoidal:
+
+$$
+V_r = \frac{E \cdot W \cdot H}{2}
+$$
+
+onde $W$ é a largura da ravina na posição da paliçada.
+
+## Construção
+
+![Etapas de instalação de paliçadas em ravina — escavação, cravamento de estacas e entrelaçamento das varas.](../img/instalacao_palicadas.png){#fig-instalacao fig-alt="Instalação de paliçadas" width="85%"}
+
+### Passo a Passo
+
+O procedimento de construção inicia com a escavação de uma vala transversal com profundidade igual a $H$ (enterrando metade da paliçada), seguida pelo cravamento de estacas verticais de bambu a cada 30–50 cm e o entrelaçamento de varas horizontais entre as estacas. Após o entrelaçamento, compacta-se terra contra a face montante, protegem-se as laterais com ancoragem nas paredes da ravina (mínimo 50 cm de cada lado) e semeiam-se gramíneas a montante da paliçada.
+
+::: {.callout-important}
+## Ponto crítico
+As paliçadas **devem ser ancoradas** nas paredes laterais da ravina por pelo menos 50 cm de cada lado. A principal causa de falha é a erosão lateral por contorno da estrutura.
+:::
+
+## Eficiência
+
+![Simulação temporal de retenção de sedimentos pelas paliçadas ao longo dos anos — o assoreamento progressivo cria patamares que estabilizam a ravina.](../img/simulacao_palicadas.png){#fig-simulacao fig-alt="Simulação de retenção de sedimentos" width="85%"}
+
+Estudos em Plintossolo degradado nos Tabuleiros Costeiros de Sergipe demonstraram retenção de 76 cm de sedimento em 12 meses (paliçada de 1,0 m de altura) e redução de 85% na velocidade do escoamento no interior da ravina. Observou-se colonização vegetal espontânea a montante das paliçadas após 6 meses, com projeção de preenchimento total em 3 a 5 anos.
+
+## Custos Comparativos
+
+| Item | Paliçada de bambu | Check-dam de alvenaria |
+|------|------------------|----------------------|
+| Material | R$ 15–30/m² | R$ 150–300/m² |
+| Mão de obra | R$ 20–40/m² | R$ 80–150/m² |
+| **Total** | **R$ 35–70/m²** | **R$ 230–450/m²** |
+| Vida útil | 3–5 anos | 20+ anos |
+| Manutenção | Anual | Quinquenal |
+
+: Comparativo de custos entre paliçadas de bambu e check-dams de alvenaria. {#tbl-custos-palicada .striped .hover}
+
+::: {.callout-tip}
+## Vantagem econômica
+O custo das paliçadas de bambu é **5 a 7× menor** que check-dams de alvenaria. Mesmo considerando a reposição a cada 5 anos, o custo acumulado em 20 anos é inferior à solução convencional.
+:::

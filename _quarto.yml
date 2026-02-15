@@ -4,6 +4,7 @@ project:
     - "*.qmd"
     - "!scripts/"
     - "!aulas/"
+    - "!books/"
     - "!cv-pdf.qmd"
     - "!cv-pdf-en.qmd"
     - "!cv-pdf-es.qmd"
@@ -15,6 +16,7 @@ resources:
   - aulas/**/*.html
   - aulas/**/*_files/**
   - aulas/assets/**
+  - books/**
 
 website:
   title: "Luiz Diego Vidal Santos"
@@ -26,8 +28,12 @@ website:
     left:
       - href: index.qmd
         text: "{{< fa house >}} Início"
-      - href: papers/index.qmd
-        text: "{{< fa file-lines >}} Publicações"
+      - text: "{{< fa file-lines >}} Publicações"
+        menu:
+          - href: papers/index.qmd
+            text: "{{< fa file-alt >}} Artigos"
+          - href: papers/livros.qmd
+            text: "{{< fa book >}} Livros"
       - href: teaching/index.qmd
         text: "{{< fa chalkboard-user >}} Ensino"
       # - href: talks/index.qmd

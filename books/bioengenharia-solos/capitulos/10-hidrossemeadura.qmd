@@ -1,0 +1,88 @@
+# Hidrossemeadura {#sec-hidrossemeadura}
+
+## Conceito
+
+![Aplicação de hidrossemeadura em talude rodoviário — projeção mecanizada da pasta com sementes, mulch e fertilizante.](../img/hidrossemeadura_levee.jpg){#fig-hidrossemeadura fig-alt="Hidrossemeadura sendo aplicada em talude" width="80%"}
+
+A **hidrossemeadura** (*hydroseeding* ou *hydraulic mulch seeding*) é a técnica de projeção mecanizada de uma mistura aquosa contendo sementes, mulch (cobertura), fertilizante e fixador (*tackifier*) sobre taludes e superfícies erodíveis.
+
+É a técnica mais eficiente em **produtividade** (até 5.000 m²/h) e é amplamente utilizada em obras rodoviárias, mineração, barragens e recuperação de áreas degradadas.
+
+::: {layout-ncol=2}
+![Hidrossemeadura em restauração de área degradada — projeção da pasta sobre superfície erodível.](../img/hidrossemeadura_restauracao.jpg){#fig-hidro-restauracao fig-alt="Hidrossemeadura em restauração"}
+
+![Resultado da hidrossemeadura em rodovia — vegetação herbácea estabelecida em talude com alta declividade.](../img/hidrossemeadura_rodovia.jpg){#fig-hidro-rodovia fig-alt="Hidrossemeadura em rodovia"}
+:::
+
+## Composição da Pasta
+
+| Componente | Função | Dosagem típica |
+|------------|--------|---------------|
+| Água | Veículo e hidratação | 2.000–4.000 L/ha |
+| Sementes | Cobertura vegetal | 50–200 kg/ha |
+| Mulch | Proteção superficial | 1.500–3.000 kg/ha |
+| Fertilizante | Nutrição inicial | 200–500 kg/ha |
+| Fixador (*tackifier*) | Adesão da pasta ao solo | 50–150 kg/ha |
+| Corante | Controle visual de aplicação | 5–10 L/ha |
+
+: Composição típica da pasta de hidrossemeadura. {#tbl-pasta .striped}
+
+## Tipos de Mulch
+
+### Mulch de Celulose
+
+O mulch de celulose consiste em fibras de papel reciclado ou celulose virgem, com retenção hídrica moderada e degradação rápida (30–60 dias), a um custo de R$ 3–6/kg.
+
+### Mulch de Madeira
+
+O mulch de madeira é composto por fibras de madeira processada, oferecendo retenção hídrica elevada e degradação lenta (90–180 dias), com custo de R$ 5–10/kg.
+
+### Mulch Bonded Fiber Matrix (BFM)
+
+O BFM combina fibras longas com aglutinante biodegradável, formando uma manta coesa sobre o solo que pode substituir biomantas em taludes inferiores a 45°, com custo de R$ 8–15/kg.
+
+## Fixadores (*Tackifiers*)
+
+| Tipo | Origem | Resistência à chuva | Duração |
+|------|--------|---------------------|---------|
+| Guar | Vegetal | Moderada | 30–60 dias |
+| Psyllium | Vegetal | Alta | 60–90 dias |
+| PAM (poliacrilamida) | Sintético | Muito alta | 90–180 dias |
+| Amido | Vegetal | Baixa | 15–30 dias |
+
+: Tipos de fixadores e suas propriedades. {#tbl-fixadores .striped .hover}
+
+## Dimensionamento
+
+### Taxa de Aplicação
+
+A taxa de aplicação ($T_a$) depende da declividade e do tipo de solo:
+
+$$
+T_a = T_{base} \cdot F_d \cdot F_s \cdot F_c
+$$
+
+onde $T_{base}$ representa a taxa base (3.000 kg/ha para gramíneas), $F_d$ corresponde ao fator de declividade (1,0 para ângulos inferiores a 30°, 1,3 para 30–45° e 1,6 para ângulos superiores a 45°), $F_s$ indica o fator de solo (1,0 para argilosos, 1,2 para arenosos e 1,4 para siltosos) e $F_c$ refere-se ao fator climático (1,0 para clima úmido e 1,3 para semiárido).
+
+### Mistura de Sementes
+
+A mistura deve combinar 70% de gramíneas de estabelecimento rápido (*Brachiaria*, *Paspalum*), 20% de leguminosas fixadoras de N₂ (*Stylosanthes*, *Cajanus*) e 10% de espécies de ciclo longo (gramíneas perenes).
+
+## Equipamentos
+
+O hidrossemeador mecânico consiste em um tanque de 2.000–8.000 L com bomba centrífuga e canhão, operando a pressão de trabalho de 4–8 bar. O alcance do jato varia de 30 a 60 m, com rendimento de 3.000–5.000 m²/h.
+
+## Monitoramento
+
+| Indicador | Meta (30 dias) | Meta (60 dias) | Meta (90 dias) |
+|-----------|---------------|----------------|----------------|
+| Germinação | > 50% | — | — |
+| Cobertura | > 40% | > 70% | > 90% |
+| Erosão visível | < 5% da área | < 2% | 0% |
+
+: Metas de monitoramento pós-hidrossemeadura. {#tbl-monitoramento .striped .hover}
+
+::: {.callout-warning}
+## Condições de aplicação
+A hidrossemeadura não deve ser aplicada com vento superior a 25 km/h, sobre solo saturado ou congelado, nem em temperaturas de solo inferiores a 10 °C. O período ideal de aplicação corresponde ao início da estação chuvosa.
+:::

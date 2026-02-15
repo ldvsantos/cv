@@ -1,0 +1,116 @@
+# Soluções Baseadas na Natureza {#sec-nbs}
+
+## Definição
+
+As **Soluções Baseadas na Natureza** (*Nature-based Solutions*, NBS) são definidas pela IUCN como:
+
+> Ações para proteger, gerenciar de forma sustentável e restaurar ecossistemas naturais ou modificados, que abordam desafios sociais de forma eficaz e adaptativa, fornecendo simultaneamente benefícios para o bem-estar humano e para a biodiversidade. [@iucn2020]
+
+## Enquadramento Conceitual
+
+```{mermaid}
+%%| fig-width: 7.5
+flowchart TB
+    NBS["Soluções Baseadas\nna Natureza (NBS)"]
+    NBS --> A["Restauração de\necossistemas"]
+    NBS --> B["Engenharia\necológica"]
+    NBS --> C["Infraestrutura\nverde"]
+    NBS --> D["Adaptação baseada\nem ecossistemas"]
+    
+    A --> E["Reflorestamento\nRevegetação"]
+    B --> F["Bioengenharia\nde solos"]
+    C --> G["Canaletas verdes\nTelhados verdes"]
+    D --> H["Proteção costeira\nManejo de bacias"]
+```
+
+## Critérios IUCN para NBS
+
+A IUCN estabelece **8 critérios** que qualificam uma intervenção como NBS [@iucn2020]:
+
+| # | Critério | Exemplo em bioengenharia |
+|---|----------|--------------------------|
+| 1 | Aborda desafios sociais | Controle de erosão protege comunidades |
+| 2 | Design em escala de paisagem | Planejamento integrado de bacias |
+| 3 | Ganho líquido para biodiversidade | Espaços estruturais criam habitat |
+| 4 | Economicamente viável | Custos 3–5× menores que engenharia civil |
+| 5 | Governança inclusiva | Participação comunitária no projeto |
+| 6 | Equilíbrio entre trade-offs | Estabilidade × permeabilidade |
+| 7 | Gestão adaptativa | Monitoramento e ajuste contínuo |
+| 8 | Sustentável e integrada | Autossustentável após estabelecimento |
+
+: Critérios IUCN aplicados à bioengenharia de solos. {#tbl-criterios-iucn .striped}
+
+## Bioengenharia como NBS
+
+A bioengenharia de solos é uma forma de NBS porque utiliza processos naturais (crescimento radicular, interceptação vegetal, ciclagem de água), gera múltiplos benefícios (estabilidade, biodiversidade, sequestro de C e valorização paisagística), é autossustentável após a fase de consolidação (aproximadamente 3–5 anos, sem necessidade de insumos) e é resiliente, adaptando-se a mudanças climáticas ao longo do tempo.
+
+## Análise Econômica
+
+### Custo-benefício de NBS vs. Engenharia Convencional
+
+| Intervenção | Custo inicial (R$/m²) | Manutenção anual (R$/m²) | Vida útil (anos) | VPL 20 anos (R$/m²) |
+|-------------|----------------------|-------------------------|-------------------|---------------------|
+| Muro de concreto | 800–1.500 | 40–80 | 30–50 | 1.400–2.700 |
+| Gabião metálico | 400–700 | 20–50 | 25–40 | 700–1.300 |
+| Gabião vivo | 250–500 | 10–25 | 30–50+ | 400–850 |
+| Parede Krainer | 200–450 | 5–15 | 25–40+ | 280–650 |
+| Paliçadas + revegetação | 50–150 | 5–10 | 10–20 | 80–250 |
+| Biomantas + hidrossemeadura | 30–80 | 2–8 | 3–8 | 45–130 |
+
+: Análise comparativa de custos para estabilização de encostas (valores referenciais). {#tbl-custos-nbs .striped .hover}
+
+### Co-benefícios valorizáveis
+
+Além da função primária (estabilização/controle de erosão), as NBS geram **co-benefícios** que podem ser monetizados. O sequestro de carbono (2–15 tC/ha/ano) viabiliza créditos de carbono (R$ 40–120/tC), enquanto a regulação hídrica por aumento de infiltração promove a recarga de aquíferos. A criação de habitat para fauna gera serviços ecossistêmicos de biodiversidade, a valorização estética da paisagem pode impulsionar turismo e valorização imobiliária, e o sombreamento proporcionado pela vegetação contribui para o controle de temperatura e conforto térmico urbano.
+
+::: {.callout-tip}
+## Valoração de co-benefícios
+Quando os co-benefícios são contabilizados, as NBS frequentemente apresentam **VPL superior** às soluções convencionais, mesmo quando o custo inicial é semelhante. A análise deve adotar horizonte de pelo menos 20 anos para capturar os benefícios do amadurecimento da vegetação.
+:::
+
+## Retaludamento como NBS
+
+![Talude em campo antes da intervenção — superfície exposta susceptível à erosão, demandando reconfiguração geométrica e revegetação.](../img/talude_campo.jpg){#fig-talude fig-alt="Talude em campo" width="80%"}
+
+O **retaludamento vegetado** é uma técnica de NBS que combina reconfiguração geométrica do talude com revegetação integrada.
+
+### Princípios
+
+O retaludamento vegetado baseia-se na redução do ângulo de inclinação para valores inferiores ao ângulo de repouso, na criação de bermas intermediárias para captação de água, na revegetação das superfícies reconformadas e na implantação de sistema de drenagem naturalizado.
+
+### Dimensionamento
+
+A inclinação do talude retaludado deve atender ao fator de segurança:
+
+$$
+FS = \frac{\tau_f}{\tau_a} = \frac{c' + (\sigma - u) \tan \phi'}{(\gamma \cdot z \cdot \cos\beta) \cdot \sin\beta} \geq 1,5
+$$
+
+onde $c'$ representa a coesão efetiva do solo (kPa), $\phi'$ corresponde ao ângulo de atrito efetivo (°), $\sigma$ é a tensão normal (kPa), $u$ é a poropressão (kPa), $\gamma$ indica o peso específico do solo (kN/m³), $z$ refere-se à profundidade da superfície de ruptura (m) e $\beta$ é o ângulo de inclinação do talude (°).
+
+A contribuição radicular incrementa a coesão:
+
+$$
+c'_{total} = c'_{solo} + \Delta c_r
+$$
+
+onde $\Delta c_r$ é a coesão radicular adicional (veja @sec-gabiao-vivo para o modelo de Wu-Waldron).
+
+## Casos de Aplicação em Regiões Tropicais
+
+### Semiárido brasileiro
+
+No semiárido, o desafio central reside na pluviosidade concentrada (3–4 meses), em solos rasos sob vegetação de caatinga. A estratégia NBS combina paliçadas, bacias de captação e revegetação com espécies nativas xerófitas, resultando em redução de escoamento superficial de 50–80% e aumento significativo de cobertura vegetal.
+
+### Encostas da Mata Atlântica
+
+Nas encostas da Mata Atlântica, a precipitação intensa (superior a 2.000 mm/ano), os solos profundos e os movimentos de massa demandam soluções robustas. A combinação de gabiões vivos, paredes Krainer e revegetação com espécies arbóreas pioneiras tem promovido a estabilização de encostas com FS superior a 1,5 e regeneração florestal.
+
+### Margens do rio São Francisco
+
+Nas margens do Baixo São Francisco, a erosão marginal acelerada pós-barragem em solos arenosos constitui o principal desafio. A associação de enrocamento vegetado, biotêxteis de taboa e geotêxteis híbridos reduziu a taxa de recuo marginal em 70–90%.
+
+::: {.callout-note}
+## NBS e ODS
+As Soluções Baseadas na Natureza contribuem diretamente para os **Objetivos de Desenvolvimento Sustentável** 6 (Água limpa), 11 (Cidades sustentáveis), 13 (Ação climática) e 15 (Vida terrestre).
+:::

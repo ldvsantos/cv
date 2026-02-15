@@ -1,0 +1,87 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Bioengenharia de Solos em Regiões Tropicais"
+  subtitle: "Fundamentos, Técnicas e Soluções Baseadas na Natureza"
+  author:
+    - name: "Luiz Diego Vidal Santos"
+      url: https://diegovidalcv.com.br/
+      orcid: 0000-0001-8659-8557
+      affiliation:
+        - name: "Universidade Estadual de Feira de Santana (UEFS)"
+          url: https://www.uefs.br/
+  date: "2026-02-15"
+  date-format: "DD/MM/YYYY"
+  description: |
+    Livro-texto sobre bioengenharia de solos aplicada a regiões tropicais,
+    integrando fundamentos pedológicos, técnicas de estabilização biológica
+    e soluções baseadas na natureza (NBS) para conservação e recuperação
+    de solos degradados.
+  cover-image: img/capa_bioengenharia_de_solos.png
+  favicon: img/capa_bioengenharia_de_solos.png
+  reader-mode: true
+  site-url: https://diegovidalcv.com.br/books/bioengenharia-solos/
+  repo-url: https://github.com/ldvsantos/cv/
+  repo-actions: [issue]
+  sharing: [twitter, facebook, linkedin]
+  downloads: [pdf]
+  search: true
+  
+  page-footer:
+    left: "© Luiz Diego Vidal Santos, 2026. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
+    right: "Feito com [Quarto](https://quarto.org)"
+
+  chapters:
+    - index.qmd
+    - prefacio.qmd
+
+    - part: "Parte I — Fundamentos"
+      chapters:
+        - capitulos/01-introducao.qmd
+        - capitulos/02-solos-tropicais.qmd
+        - capitulos/03-intemperismo.qmd
+        - capitulos/04-erosao.qmd
+        - capitulos/05-classificacao-feicoes.qmd
+
+    - part: "Parte II — Técnicas de Bioengenharia"
+      chapters:
+        - capitulos/06-revegetacao.qmd
+        - capitulos/07-palicadas.qmd
+        - capitulos/08-bacias-captacao.qmd
+        - capitulos/09-feixes-drenos.qmd
+        - capitulos/10-hidrossemeadura.qmd
+        - capitulos/11-biomantas.qmd
+        - capitulos/12-enrocamento.qmd
+        - capitulos/13-cordoes-fascinas.qmd
+        - capitulos/14-gabiao-vivo.qmd
+        - capitulos/15-parede-krainer.qmd
+        - capitulos/16-canaleta-verde.qmd
+
+    - part: "Parte III — Geotêxteis e Inovação"
+      chapters:
+        - capitulos/17-geotexteis.qmd
+        - capitulos/18-biotexteis.qmd
+        - capitulos/19-biopolimeros.qmd
+
+    - part: "Parte IV — Projeto e Integração"
+      chapters:
+        - capitulos/20-nbs.qmd
+        - capitulos/21-projeto-integrador.qmd
+
+    - referencias.qmd
+
+bibliography: references.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+
+format:
+  html:
+    theme:
+      - cosmo
+      - custom.scss
+    code-link: true
+    lang: pt-BR
+    fig-align: center
+
+lang: pt-BR

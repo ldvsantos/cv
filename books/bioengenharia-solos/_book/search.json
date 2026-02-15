@@ -1,0 +1,1557 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bioengenharia de Solos em Regiões Tropicais",
+    "section": "",
+    "text": "Bem-vindo",
+    "crumbs": [
+      "Bem-vindo"
+    ]
+  },
+  {
+    "objectID": "index.html#sobre-este-livro",
+    "href": "index.html#sobre-este-livro",
+    "title": "Bioengenharia de Solos em Regiões Tropicais",
+    "section": "Sobre este livro",
+    "text": "Sobre este livro\nEste livro apresenta de forma integrada os fundamentos pedológicos, as técnicas construtivas e as inovações em materiais biodegradáveis aplicados à conservação e recuperação de solos em ambientes tropicais. Cada capítulo combina base teórica, equações de dimensionamento, exemplos práticos e estudos de caso reais.\nO conteúdo está organizado em quatro partes:\n\nFundamentos — Formação dos solos tropicais, intemperismo, processos erosivos e classificação de feições.\nTécnicas de Bioengenharia — Das paliçadas e bacias de captação aos gabiões vivos e paredes Krainer.\nGeotêxteis e Inovação — Geossintéticos, biotêxteis de fibras vegetais e biopolímeros superabsorventes.\nProjeto e Integração — Soluções baseadas na natureza e projeto integrador de bioengenharia.",
+    "crumbs": [
+      "Bem-vindo"
+    ]
+  },
+  {
+    "objectID": "index.html#para-quem-é",
+    "href": "index.html#para-quem-é",
+    "title": "Bioengenharia de Solos em Regiões Tropicais",
+    "section": "Para quem é",
+    "text": "Para quem é\n\nEstudantes de graduação e pós-graduação em Engenharia Agronômica, Ambiental, Civil e Florestal\nProfissionais de conservação do solo e recuperação de áreas degradadas\nPesquisadores em soluções baseadas na natureza (NBS)\nGestores de bacias hidrográficas e planejamento territorial",
+    "crumbs": [
+      "Bem-vindo"
+    ]
+  },
+  {
+    "objectID": "index.html#como-citar",
+    "href": "index.html#como-citar",
+    "title": "Bioengenharia de Solos em Regiões Tropicais",
+    "section": "Como citar",
+    "text": "Como citar\n\nSantos, L. D. V. (2026). Bioengenharia de Solos em Regiões Tropicais: Fundamentos, Técnicas e Soluções Baseadas na Natureza. Disponível em: https://diegovidalcv.com.br/books/bioengenharia-solos/",
+    "crumbs": [
+      "Bem-vindo"
+    ]
+  },
+  {
+    "objectID": "index.html#licença",
+    "href": "index.html#licença",
+    "title": "Bioengenharia de Solos em Regiões Tropicais",
+    "section": "Licença",
+    "text": "Licença\nEste livro é disponibilizado sob licença Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0).",
+    "crumbs": [
+      "Bem-vindo"
+    ]
+  },
+  {
+    "objectID": "prefacio.html",
+    "href": "prefacio.html",
+    "title": "Prefácio",
+    "section": "",
+    "text": "A erosão do solo é um dos maiores desafios ambientais do século XXI. Estima-se que 24 bilhões de toneladas de solo fértil sejam perdidas anualmente em todo o mundo, com consequências diretas na segurança alimentar, nos recursos hídricos e na biodiversidade. Em regiões tropicais, a combinação de chuvas intensas, solos profundamente intemperizados e pressão antrópica agrava esse cenário.\nA bioengenharia de solos (entendida como o uso de materiais vivos e biodegradáveis combinados a técnicas de engenharia) oferece uma resposta a esse desafio. Diferentemente das soluções exclusivamente estruturais, a bioengenharia busca a transição progressiva de uma função mecânica artificial para uma função ecológica natural, de modo que, à medida que os materiais se degradam, as raízes das plantas assumem o papel de sustentação do solo.\nEste livro nasceu da experiência acumulada em mais de uma década de pesquisa e extensão no Baixo São Francisco (SE/AL) e nos Tabuleiros Costeiros do Nordeste brasileiro. A convivência com agricultores familiares, comunidades ribeirinhas e técnicos de campo me ensinou que as melhores soluções são aquelas que combinam rigor científico, viabilidade econômica e apropriação social.\nAo longo dos capítulos, o leitor encontrará equações e modelos de dimensionamento aplicáveis a condições tropicais, estudos de caso de campo com dados reais de monitoramento, comparativos de custo entre soluções convencionais e baseadas na natureza, e inovações tecnológicas em materiais biodegradáveis protegidos por patentes.\nAgradeço aos colegas do grupo de pesquisa PLANeT-Inova (UEFS), do Gerenciamento Hidroambiental do Baixo São Francisco (UFS) e do Manejo de Solos e Sustentabilidade (UFS) pelas colaborações que enriqueceram este trabalho.\n\nLuiz Diego Vidal Santos\nFeira de Santana, Bahia\nFevereiro de 2026",
+    "crumbs": [
+      "Prefácio"
+    ]
+  },
+  {
+    "objectID": "capitulos/01-introducao.html",
+    "href": "capitulos/01-introducao.html",
+    "title": "1  Introdução à Bioengenharia de Solos",
+    "section": "",
+    "text": "1.1 O que é Bioengenharia de Solos?\nA bioengenharia de solos (soil bioengineering) é uma disciplina que combina princípios da engenharia civil, ecologia e ciência do solo para projetar, construir e manter estruturas de estabilização e proteção do solo utilizando materiais vivos (plantas, raízes, estacas) combinados ou não a materiais inertes biodegradáveis (fibras naturais, madeira, bambu).\nO conceito difere da engenharia convencional em um aspecto fundamental. Enquanto as estruturas de concreto e aço são projetadas para resistir indefinidamente ao intemperismo, as estruturas de bioengenharia são projetadas para uma transição funcional, na qual a resistência mecânica inicial (fornecida por materiais construtivos) é progressivamente transferida para o sistema radicular das plantas à medida que estas se estabelecem (Figura 1.1).",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução à Bioengenharia de Solos</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/01-introducao.html#o-que-é-bioengenharia-de-solos",
+    "href": "capitulos/01-introducao.html#o-que-é-bioengenharia-de-solos",
+    "title": "1  Introdução à Bioengenharia de Solos",
+    "section": "",
+    "text": "gantt\n    title Transição Funcional na Bioengenharia\n    dateFormat YYYY\n    axisFormat %Y\n    section Estrutura\n    Resistência mecânica do material :done, 2026, 2030\n    section Vegetação\n    Estabelecimento radicular      :active, 2027, 2031\n    section Função ecológica\n    Solo auto-sustentável          : 2030, 2036\n\n\n\n\n\n\n\n\nFigura 1.1: Esquema conceitual da transição entre a função mecânica dos materiais construtivos e a função ecológica do sistema radicular.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução à Bioengenharia de Solos</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/01-introducao.html#bioengenharia-vs.-engenharia-convencional",
+    "href": "capitulos/01-introducao.html#bioengenharia-vs.-engenharia-convencional",
+    "title": "1  Introdução à Bioengenharia de Solos",
+    "section": "1.2 Bioengenharia vs. Engenharia Convencional",
+    "text": "1.2 Bioengenharia vs. Engenharia Convencional\n\n\n\nTabela 1.1: Comparativo entre engenharia convencional e bioengenharia de solos.\n\n\n\n\n\n\n\n\n\n\nCritério\nEngenharia Convencional\nBioengenharia de Solos\n\n\n\n\nMaterial principal\nConcreto, aço, gabião metálico\nPlantas, fibras, madeira, bambu\n\n\nDurabilidade do material\nDécadas a séculos\n2–10 anos (biodegradável)\n\n\nFunção ao longo do tempo\nConstante (ou degradante)\nCrescente (sistema vivo)\n\n\nCusto inicial\nAlto\nModerado a baixo\n\n\nCusto de manutenção\nMédio\nBaixo\n\n\nImpacto paisagístico\nNegativo\nPositivo\n\n\nServiços ecossistêmicos\nNenhum\nMúltiplos\n\n\nEmissão de CO₂\nAlta\nSequestro de C",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução à Bioengenharia de Solos</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/01-introducao.html#histórico",
+    "href": "capitulos/01-introducao.html#histórico",
+    "title": "1  Introdução à Bioengenharia de Solos",
+    "section": "1.3 Histórico",
+    "text": "1.3 Histórico\nA bioengenharia de solos tem raízes milenares. Na China, há registros de uso de fascinas de bambu para contenção de margens de rios datados de mais de 2.000 anos. Na Europa, técnicas de estabilização com estacas vivas de salgueiro (Salix spp.) são documentadas desde o século XVIII (Schiechtl, 1980).\nO desenvolvimento moderno da disciplina ocorreu na segunda metade do século XX, com contribuições fundamentais de Hugo M. Schiechtl (Áustria), que sistematizou as técnicas de Ingenieurbiologie ao publicar o primeiro manual técnico em 1973. Na América do Norte, Donald H. Gray e Robbin B. Sotir consolidaram o campo com o clássico Biotechnical and Soil Bioengineering Slope Stabilization (Gray & Sotir, 1996). No Brasil, Fabrício J. Sutili e Miguel A. Durlo foram pioneiros na adaptação das técnicas europeias ao contexto subtropical brasileiro (Durlo & Sutili, 2005; Sutili, 2004).",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução à Bioengenharia de Solos</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/01-introducao.html#contexto-tropical",
+    "href": "capitulos/01-introducao.html#contexto-tropical",
+    "title": "1  Introdução à Bioengenharia de Solos",
+    "section": "1.4 Contexto Tropical",
+    "text": "1.4 Contexto Tropical\nEm regiões tropicais, a bioengenharia enfrenta desafios e oportunidades particulares:\n\n\n\n\n\n\nImportanteDesafios tropicais\n\n\n\nAs regiões tropicais impõem condições severas à bioengenharia. A intensidade pluviométrica, com chuvas concentradas cuja erosividade é 3–5× maior que em zonas temperadas, exige estruturas com alta capacidade de dissipação de energia. O intemperismo profundo gera perfis de solo com 10–30 m de manto de alteração, nos quais predominam argilas 1:1 (caulinita) com baixa CTC (solos lateríticos). Soma-se a isso a necessidade de seleção criteriosa de espécies nativas adaptadas, dada a elevada biodiversidade das paisagens tropicais.\n\n\n\n\n\n\n\n\nDicaOportunidades tropicais\n\n\n\nEm contrapartida, as condições tropicais oferecem vantagens expressivas. As taxas de rebrota vegetal são 2–4× maiores que em zonas temperadas, acelerando a transição funcional. A disponibilidade de fibras naturais (sisal, coco, taboa Typha, bananeira e rami) e de materiais locais (bambu, pedras e madeiras de rápido crescimento) reduz custos, enquanto a viabilidade econômica de mão de obra intensiva favorece técnicas de execução manual.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução à Bioengenharia de Solos</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/01-introducao.html#estrutura-deste-livro",
+    "href": "capitulos/01-introducao.html#estrutura-deste-livro",
+    "title": "1  Introdução à Bioengenharia de Solos",
+    "section": "1.5 Estrutura deste Livro",
+    "text": "1.5 Estrutura deste Livro\nEste livro está organizado em quatro partes:\nA Parte I (Fundamentos) apresenta a base científica necessária, incluindo formação dos solos tropicais, processos de intemperismo, mecanismos erosivos e classificação de feições. A Parte II (Técnicas de Bioengenharia) detalha as técnicas construtivas, do mais simples ao mais complexo, com equações de dimensionamento e exemplos práticos. A Parte III (Geotêxteis e Inovação) aborda geossintéticos convencionais, biotêxteis de fibras vegetais e biopolímeros superabsorventes, incluindo patentes desenvolvidas pelo autor. Por fim, a Parte IV (Projeto e Integração) apresenta o conceito de soluções baseadas na natureza (NBS) e um roteiro para projeto integrador de bioengenharia.\n\n\n\n\nDurlo, M. A., & Sutili, F. J. (2005). Bioengenharia: Manejo Biotécnico de Cursos de Água. EST Edições.\n\n\nGray, D. H., & Sotir, R. B. (1996). Biotechnical and Soil Bioengineering Slope Stabilization: A Practical Guide for Erosion Control. John Wiley & Sons.\n\n\nSchiechtl, H. M. (1980). Bioengineering for Land Reclamation and Conservation.\n\n\nSutili, F. J. (2004). Bioengenharia de Solos no Revestimento de Cursos de Água no Sul do Brasil. UFSM.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução à Bioengenharia de Solos</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/02-solos-tropicais.html",
+    "href": "capitulos/02-solos-tropicais.html",
+    "title": "2  Solos Tropicais: Formação e Propriedades",
+    "section": "",
+    "text": "2.1 O Solo como Sistema Aberto\nO solo é um sistema aberto termodinâmico que troca continuamente matéria e energia com a atmosfera, biosfera, hidrosfera e litosfera. Em regiões tropicais, a intensidade dessas trocas é amplificada pela temperatura elevada e pela abundância de água, resultando em solos profundamente intemperizados e com características únicas.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Solos Tropicais: Formação e Propriedades</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/02-solos-tropicais.html#a-equação-de-jenny",
+    "href": "capitulos/02-solos-tropicais.html#a-equação-de-jenny",
+    "title": "2  Solos Tropicais: Formação e Propriedades",
+    "section": "2.2 A Equação de Jenny",
+    "text": "2.2 A Equação de Jenny\n\n\n\n\n\n\nFigura 2.1: Fatores de formação do solo segundo Jenny (1941): Clima, Organismos, Relevo, Material de Origem e Tempo.\n\n\n\nA formação do solo pode ser descrita pela equação fatorial de Jenny (1941):\n\\[\nS = f(cl, o, r, p, t, \\ldots)\n\\]\nonde:\n\n\\(S\\) = propriedade do solo\n\\(cl\\) = clima (precipitação e temperatura)\n\\(o\\) = organismos (biota)\n\\(r\\) = relevo (topografia)\n\\(p\\) = material de origem (rocha-mãe)\n\\(t\\) = tempo\n\\(\\ldots\\) = fatores adicionais (ação antrópica)\n\n\n\n\n\n\n\nNotaClORPT\n\n\n\nO acrônimo ClORPT é uma forma didática de memorizar os fatores de formação do solo: Clima, Organismos, Relevo, Parent material (material de origem) e Tempo.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Solos Tropicais: Formação e Propriedades</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/02-solos-tropicais.html#reator-biogeoquímico",
+    "href": "capitulos/02-solos-tropicais.html#reator-biogeoquímico",
+    "title": "2  Solos Tropicais: Formação e Propriedades",
+    "section": "2.3 Reator Biogeoquímico",
+    "text": "2.3 Reator Biogeoquímico\n\n\n\n\n\n\nFigura 2.2: O solo como reator biogeoquímico: processos simultâneos de adição, remoção, transformação e translocação.\n\n\n\nO solo funciona como um reator biogeoquímico onde ocorrem simultaneamente processos de adição (matéria orgânica, poeira, solutos da chuva), remoção (lixiviação, erosão, colheita), transformação (decomposição, humificação, neoformação de argilas) e translocação (eluviação/iluviação, bioturbação).\nEm regiões tropicais, as taxas de transformação são significativamente maiores devido à temperatura e umidade elevadas, o que resulta em decomposição rápida da matéria orgânica (meia-vida inferior a 5 anos), alta taxa de neoformação de argilas cauliníticas e concentração residual de óxidos de ferro e alumínio pelo processo de laterização.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Solos Tropicais: Formação e Propriedades</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/02-solos-tropicais.html#perfil-do-solo-tropical",
+    "href": "capitulos/02-solos-tropicais.html#perfil-do-solo-tropical",
+    "title": "2  Solos Tropicais: Formação e Propriedades",
+    "section": "2.4 Perfil do Solo Tropical",
+    "text": "2.4 Perfil do Solo Tropical\n\n\n\n\n\n\nFigura 2.3: Perfil de solo tropical com horizontes bem definidos, mostrando a transição da matéria orgânica superficial até a rocha-mãe.\n\n\n\n\n\n\n\n\n\nFigura 2.4: Representação esquemática dos horizontes do solo e suas transições.\n\n\n\nO perfil típico de um solo tropical bem drenado apresenta:\n\n\n\nTabela 2.1: Perfil esquemático de um solo tropical profundo (Latossolo).\n\n\n\n\n\n\n\n\n\n\nHorizonte\nProfundidade típica\nCaracterísticas\n\n\n\n\nO\n0–5 cm\nSerrapilheira em decomposição\n\n\nA\n5–30 cm\nMatéria orgânica humificada, cor escura\n\n\nB\n30–200+ cm\nArgilas cauliníticas, óxidos de Fe/Al, cor amarela a vermelha\n\n\nC\n200–1000+ cm\nSaprolito (rocha parcialmente intemperizada)\n\n\nR\n&gt; 10 m\nRocha-mãe inalterada",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Solos Tropicais: Formação e Propriedades</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/02-solos-tropicais.html#propriedades-chave-para-bioengenharia",
+    "href": "capitulos/02-solos-tropicais.html#propriedades-chave-para-bioengenharia",
+    "title": "2  Solos Tropicais: Formação e Propriedades",
+    "section": "2.5 Propriedades-chave para Bioengenharia",
+    "text": "2.5 Propriedades-chave para Bioengenharia\n\n2.5.1 Textura e Estrutura\n\n\n\n\n\n\nFigura 2.5: Triângulo textural para classificação de solos segundo a proporção de areia, silte e argila.\n\n\n\nA textura do solo (proporção de areia, silte e argila) influencia diretamente a erodibilidade, a capacidade de infiltração e a resistência ao cisalhamento. Para fins de bioengenharia, os solos arenosos apresentam alta infiltração, porém baixa coesão, tornando-os susceptíveis ao desenvolvimento de ravinas. Os solos argilosos, por sua vez, possuem baixa infiltração e alta coesão quando secos, mas oferecem risco de deslizamento quando saturados. Já os solos siltosos são considerados os mais erodíveis, pois combinam baixa coesão com baixa permeabilidade.\n\n\n2.5.2 Fator de Erodibilidade (K)\nO fator \\(K\\) da RUSLE (Renard et al., 1997) quantifica a susceptibilidade intrínseca do solo à erosão:\n\\[\nK = 2{,}1 \\times 10^{-4} \\cdot M^{1{,}14} \\cdot (12 - a) + 3{,}25 \\cdot (b - 2) + 2{,}5 \\cdot (c - 3) \\div 100\n\\]\nonde \\(M\\) representa o produto \\((\\% \\text{silte} + \\% \\text{areia fina}) \\times (100 - \\% \\text{argila})\\), \\(a\\) corresponde ao teor de matéria orgânica (%), \\(b\\) indica a classe de estrutura do solo (1–4) e \\(c\\) refere-se à classe de permeabilidade (1–6).\n\n\n2.5.3 Resistência ao Cisalhamento\nA resistência ao cisalhamento (\\(\\tau\\)) de um solo pode ser descrita pelo critério de Mohr-Coulomb:\n\\[\n\\tau = c' + (\\sigma - u) \\tan \\phi'\n\\]\nonde \\(c'\\) é a coesão efetiva, \\(\\sigma\\) é a tensão normal, \\(u\\) é a poropressão e \\(\\phi'\\) é o ângulo de atrito interno efetivo.\nA presença de raízes aumenta a coesão do solo. O incremento de coesão radicular (\\(c_r\\)) pode ser estimado pelo modelo de Wu-Waldron:\n\\[\nc_r = t_R \\cdot \\frac{A_r}{A} \\cdot (\\sin \\theta + \\cos \\theta \\cdot \\tan \\phi')\n\\]\nonde \\(t_R\\) é a resistência à tração das raízes, \\(A_r/A\\) é a razão de área radicular e \\(\\theta\\) é o ângulo de distorção das raízes.\n\n\n\n\n\n\nDicaValores típicos\n\n\n\nEm solos tropicais com vegetação herbácea estabelecida, o incremento \\(c_r\\) varia tipicamente de 5 a 25 kPa, podendo alcançar 40 kPa em solos com sistema radicular arbóreo denso.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Solos Tropicais: Formação e Propriedades</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/02-solos-tropicais.html#principais-classes-de-solos-tropicais",
+    "href": "capitulos/02-solos-tropicais.html#principais-classes-de-solos-tropicais",
+    "title": "2  Solos Tropicais: Formação e Propriedades",
+    "section": "2.6 Principais Classes de Solos Tropicais",
+    "text": "2.6 Principais Classes de Solos Tropicais\n\n\n\n\n\n\n\n\n\nFigura 2.6: Latossolo Amarelo — solo profundo e bem drenado, típico de planaltos tropicais.\n\n\n\n\n\n\n\n\n\n\n\nFigura 2.7: Argissolo Vermelho-Amarelo — gradiente textural com risco de deslizamento em encostas.\n\n\n\n\n\n\n\n\n\nTabela 2.2: Principais classes de solos tropicais e sua relevância para projetos de bioengenharia.\n\n\n\n\n\n\n\n\n\n\n\nClasse (SiBCS)\nWRB equivalente\nOcorrência\nRelevância para bioengenharia\n\n\n\n\nLatossolo\nFerralsol\nPlanaltos bem drenados\nEstáveis, mas erodíveis quando expostos\n\n\nArgissolo\nAcrisol/Lixisol\nEncostas e tabuleiros\nGradiente textural → deslizamentos\n\n\nPlintossolo\nPlinthosol\nÁreas de flutuação do lençol\nEndurecimento irreversível (petroplintita)\n\n\nNeossolo Litólico\nLeptosol\nEncostas íngremes\nRasos, alta susceptibilidade\n\n\nCambissolo\nCambisol\nRelevos ondulados\nJovens, heterogêneos\n\n\nGleissolo\nGleysol\nVárzeas e planícies\nHidromórficos, compressíveis\n\n\n\n\n\n\n\n\n\n\nJenny, H. (1941). Factors of Soil Formation: A System of Quantitative Pedology.\n\n\nRenard, K. G., Foster, G. R., Weesies, G. A., McCool, D. K., & Yoder, D. C. (1997). Predicting Soil Erosion by Water: A Guide to Conservation Planning with the Revised Universal Soil Loss Equation (RUSLE). Agriculture Handbook, 703.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Solos Tropicais: Formação e Propriedades</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/03-intemperismo.html",
+    "href": "capitulos/03-intemperismo.html",
+    "title": "3  Intemperismo e Transformação do Solo",
+    "section": "",
+    "text": "3.1 Conceito de Intemperismo\nO intemperismo é o conjunto de processos físicos, químicos e biológicos que transformam rochas consolidadas em materiais inconsolidados (saprolito e solo). É o processo fundamental que “fabrica” o substrato sobre o qual atua a bioengenharia.\nEm regiões tropicais, o intemperismo é mais intenso e profundo do que em qualquer outra zona climática, resultando em mantos de alteração que podem alcançar dezenas de metros de espessura.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intemperismo e Transformação do Solo</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/03-intemperismo.html#intemperismo-físico",
+    "href": "capitulos/03-intemperismo.html#intemperismo-físico",
+    "title": "3  Intemperismo e Transformação do Solo",
+    "section": "3.2 Intemperismo Físico",
+    "text": "3.2 Intemperismo Físico\n\n\n\n\n\n\nFigura 3.1: Agentes do intemperismo atuando sobre a rocha: processos físicos, químicos e biológicos que transformam a rocha em solo.\n\n\n\nO intemperismo físico fragmenta mecanicamente a rocha sem alterar sua composição mineralógica. Os principais agentes em regiões tropicais são:\n\n3.2.1 Alívio de Pressão\n\n\n\n\n\n\nFigura 3.2: Frações geradas por alívio de pressão em rochas graníticas — a descompressão gera fraturas subparalelas à superfície.\n\n\n\nQuando rochas profundas são expostas pela erosão, a descompressão gera fraturas subparalelas à superfície (sheet joints ou sheeting). Esse processo é particularmente importante em rochas graníticas e gnáissicas nos inselbergs nordestinos.\n\n\n3.2.2 Termoclastia\n\n\n\n\n\n\nFigura 3.3: Variação de temperatura diurna em superfícies rochosas — a amplitude térmica gera tensões de expansão e contração nos minerais.\n\n\n\nA variação diurna de temperatura causa expansão/contração diferencial dos minerais. Em regiões semiáridas tropicais, a amplitude térmica superficial pode alcançar 60 °C (rocha ao sol a 70 °C vs. ar noturno a 10 °C), gerando tensões suficientes para fraturar a rocha.\n\n\n3.2.3 Crescimento de Cristais\nEm ambientes semiáridos, a evaporação de soluções salinas nos poros da rocha gera cristais que exercem pressão de até 300 MPa, fragmentando progressivamente o substrato (haloclastia).\n\n\n3.2.4 Ação Biológica\nRaízes de árvores penetram fraturas e exercem pressão mecânica de expansão. Liquens e fungos contribuem para a fragmentação superficial combinando ação mecânica e química.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intemperismo e Transformação do Solo</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/03-intemperismo.html#intemperismo-químico",
+    "href": "capitulos/03-intemperismo.html#intemperismo-químico",
+    "title": "3  Intemperismo e Transformação do Solo",
+    "section": "3.3 Intemperismo Químico",
+    "text": "3.3 Intemperismo Químico\nO intemperismo químico é o processo dominante nos trópicos úmidos, transformando minerais primários em minerais secundários (argilas e óxidos). A água é o agente principal.\n\n3.3.1 Papel da Água\nA molécula de água atua simultaneamente como solvente (dissolvendo íons e moléculas dos minerais), como reagente (participando diretamente das reações químicas de hidrólise) e como meio de transporte (removendo produtos solúveis por lixiviação).\nA taxa de intemperismo químico aumenta exponencialmente com a temperatura, seguindo a Lei de Arrhenius:\n\\[\nk = A \\cdot e^{-E_a / RT}\n\\]\nonde \\(k\\) é a constante de velocidade, \\(A\\) é o fator de frequência, \\(E_a\\) é a energia de ativação, \\(R\\) é a constante dos gases e \\(T\\) é a temperatura absoluta.\n\n\n3.3.2 Principais Reações\nA hidrólise constitui a reação mais importante nos trópicos. O exemplo clássico é a hidrólise do feldspato potássico para caulinita:\n\\[\n2 \\text{KAlSi}_3\\text{O}_8 + 2\\text{H}^+ + 9\\text{H}_2\\text{O} \\rightarrow \\text{Al}_2\\text{Si}_2\\text{O}_5(\\text{OH})_4 + 4\\text{H}_4\\text{SiO}_4 + 2\\text{K}^+\n\\]\nA oxidação promove a conversão de Fe²⁺ em Fe³⁺, formando os óxidos de ferro responsáveis pelas cores vermelhas e amarelas dos solos tropicais:\n\\[\n4\\text{Fe}^{2+} + 3\\text{O}_2 + 6\\text{H}_2\\text{O} \\rightarrow 4\\text{FeOOH} + 8\\text{H}^+\n\\]\nA dissolução corresponde à remoção completa de íons solúveis (Ca²⁺, Mg²⁺, K⁺, Na⁺), concentrando residualmente os óxidos de Fe e Al.\n\n\n3.3.3 Série de Goldich\nA série de estabilidade de Goldich (inversa da série de Bowen) indica a susceptibilidade dos minerais ao intemperismo:\n\n\n\nTabela 3.1: Série de estabilidade de Goldich: minerais formados em altas temperaturas (esquerda) intemperizam primeiro.\n\n\n\n\n\nMais susceptível →\n→ Menos susceptível\n\n\n\n\nOlivina\nQuartzo\n\n\nPiroxênio\nMuscovita\n\n\nAnfibólio\nFeldspato potássico\n\n\nBiotita\n—",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intemperismo e Transformação do Solo</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/03-intemperismo.html#índice-de-intemperismo-químico-cia",
+    "href": "capitulos/03-intemperismo.html#índice-de-intemperismo-químico-cia",
+    "title": "3  Intemperismo e Transformação do Solo",
+    "section": "3.4 Índice de Intemperismo Químico (CIA)",
+    "text": "3.4 Índice de Intemperismo Químico (CIA)\nO grau de intemperismo pode ser quantificado pelo Chemical Index of Alteration (CIA):\n\\[\n\\text{CIA} = \\frac{\\text{Al}_2\\text{O}_3}{\\text{Al}_2\\text{O}_3 + \\text{CaO}^* + \\text{Na}_2\\text{O} + \\text{K}_2\\text{O}} \\times 100\n\\]\n\n\n\nTabela 3.2: Interpretação do CIA para diferentes graus de intemperismo.\n\n\n\n\n\nCIA\nGrau de intemperismo\nExemplo\n\n\n\n\n50\nRocha fresca\nGranito inalterado\n\n\n60–70\nModerado\nSolos de zona temperada\n\n\n75–85\nAvançado\nArgissolos tropicais\n\n\n85–100\nExtremo\nLatossolos, bauxitas",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intemperismo e Transformação do Solo</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/03-intemperismo.html#minerais-diagnósticos-dos-solos-tropicais",
+    "href": "capitulos/03-intemperismo.html#minerais-diagnósticos-dos-solos-tropicais",
+    "title": "3  Intemperismo e Transformação do Solo",
+    "section": "3.5 Minerais Diagnósticos dos Solos Tropicais",
+    "text": "3.5 Minerais Diagnósticos dos Solos Tropicais\n\n3.5.1 Caulinita\n\n\n\n\n\n\nFigura 3.4: Caulinita — argilomineral 1:1 dominante nos solos tropicais bem drenados, com baixa CTC e expansibilidade.\n\n\n\nArgila do tipo 1:1, com espaçamento basal de 7,2 Å. É o argilomineral dominante nos solos tropicais bem drenados. Características:\nA caulinita é caracterizada por baixa capacidade de troca catiônica (CTC ≈ 3–15 cmolc/kg), baixa expansibilidade e coesão moderada.\n\n\n3.5.2 Goethita (FeOOH)\nÓxido de ferro responsável pela cor amarela dos solos. Predomina em ambientes mais úmidos e sombreados.\n\n\n3.5.3 Hematita (Fe₂O₃)\n\n\n\n\n\n\nFigura 3.5: Hematita — óxido de ferro que confere a coloração vermelha característica dos solos tropicais bem drenados.\n\n\n\nÓxido de ferro responsável pela cor vermelha. Predomina em ambientes bem drenados com estação seca definida.\n\n\n3.5.4 Gibbsita (Al(OH)₃)\nHidróxido de alumínio indicador de intemperismo extremo (ferraltização). Abundante em Latossolos.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intemperismo e Transformação do Solo</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/03-intemperismo.html#implicações-para-a-bioengenharia",
+    "href": "capitulos/03-intemperismo.html#implicações-para-a-bioengenharia",
+    "title": "3  Intemperismo e Transformação do Solo",
+    "section": "3.6 Implicações para a Bioengenharia",
+    "text": "3.6 Implicações para a Bioengenharia\nO grau de intemperismo determina diretamente as propriedades geotécnicas do solo e, consequentemente, o projeto de bioengenharia:\n\n\n\n\n\n\nAvisoAtenção\n\n\n\nSolos extremamente intemperizados (CIA &gt; 85) possuem:\nEsses minerais/produtos conferem propriedades geotécnicas particulares. A baixa CTC demanda matéria orgânica para retenção de nutrientes, a coesão aparente implica perda rápida de resistência quando o solo satura, e a microagregação gera comportamento pseudo-arenoso apesar do alto teor de argila.\n\n\nEssas propriedades influenciam diretamente a seleção de técnicas. A baixa CTC demanda técnicas que agreguem matéria orgânica (mulch, biomantas, hidrossemeadura), enquanto a coesão aparente torna essencial a drenagem superficial e subsuperficial. Por outro lado, a microagregação facilita a penetração radicular, favorecendo técnicas vegetativas.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Intemperismo e Transformação do Solo</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/04-erosao.html",
+    "href": "capitulos/04-erosao.html",
+    "title": "4  Erosão do Solo: Tipos e Processos",
+    "section": "",
+    "text": "4.1 Conceito e Magnitude\nA erosão hídrica é o processo de desprendimento, transporte e deposição de partículas de solo pela ação da água. Em escala global, estima-se que 75 bilhões de toneladas de solo sejam erodidas anualmente, com custo econômico superior a US$ 400 bilhões/ano (Morgan, 2005).\nEm regiões tropicais, a erosividade da chuva (fator R da RUSLE) é tipicamente 3 a 5 vezes maior do que em zonas temperadas, tornando a erosão um dos processos geomorfológicos mais ativos.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Erosão do Solo: Tipos e Processos</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/04-erosao.html#rusle-equação-universal-de-perda-de-solo",
+    "href": "capitulos/04-erosao.html#rusle-equação-universal-de-perda-de-solo",
+    "title": "4  Erosão do Solo: Tipos e Processos",
+    "section": "4.2 RUSLE (Equação Universal de Perda de Solo)",
+    "text": "4.2 RUSLE (Equação Universal de Perda de Solo)\nO modelo RUSLE (Renard et al., 1997) quantifica a perda de solo por erosão laminar e em sulcos:\n\\[\nA = R \\cdot K \\cdot L \\cdot S \\cdot C \\cdot P\n\\]\nonde:\n\n\n\nTabela 4.1: Fatores da RUSLE e suas unidades.\n\n\n\n\n\nFator\nSignificado\nUnidade\n\n\n\n\n\\(A\\)\nPerda de solo\nt ha⁻¹ ano⁻¹\n\n\n\\(R\\)\nErosividade da chuva\nMJ mm ha⁻¹ h⁻¹ ano⁻¹\n\n\n\\(K\\)\nErodibilidade do solo\nt h MJ⁻¹ mm⁻¹\n\n\n\\(L\\)\nComprimento da rampa\nadimensional\n\n\n\\(S\\)\nDeclividade\nadimensional\n\n\n\\(C\\)\nUso e manejo do solo\nadimensional\n\n\n\\(P\\)\nPráticas conservacionistas\nadimensional\n\n\n\n\n\n\n\n\n\n\n\n\nDicaParâmetro-chave para bioengenharia\n\n\n\nOs fatores \\(C\\) e \\(P\\) são os diretamente manipuláveis pela bioengenharia. Uma cobertura de gramíneas pode reduzir \\(C\\) de 1,0 (solo nu) para 0,01, representando uma redução de 99% na erosão.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Erosão do Solo: Tipos e Processos</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/04-erosao.html#tipos-de-erosão",
+    "href": "capitulos/04-erosao.html#tipos-de-erosão",
+    "title": "4  Erosão do Solo: Tipos e Processos",
+    "section": "4.3 Tipos de Erosão",
+    "text": "4.3 Tipos de Erosão\n\n\n\n\n\n\nFigura 4.1: Comparação visual dos tipos de erosão: desde a erosão laminar até a formação de ravinas e voçorocas em solos tropicais.\n\n\n\n\n4.3.1 Erosão Laminar (Sheet Erosion)\nRemoção uniforme de uma fina camada de solo pela ação do escoamento superficial difuso. É a forma mais insidiosa por ser visualmente imperceptível, de modo que o agricultor perde solo sem perceber.\n\n\n4.3.2 Erosão em Sulcos (Rill Erosion)\nQuando o escoamento superficial se concentra em pequenos canais (&lt; 30 cm de profundidade), escavando sulcos paralelos à encosta. Os sulcos podem ser desfeitos por operações agrícolas normais.\n\n\n4.3.3 Erosão em Ravinas (Gully Erosion)\n\n\n\n\n\n\nFigura 4.2: Ravina ativa em solo tropical — canal permanente que não pode ser eliminado por operações agrícolas convencionais.\n\n\n\nCanais permanentes com profundidade &gt; 30 cm que não podem ser eliminados por operações agrícolas. Representam o estágio mais avançado da erosão hídrica concentrada.\nAs ravinas podem ser classificadas em ravinas de cabeceira, que retrocedem por erosão remontante, ravinas laterais, que se expandem por solapamento das paredes, e ravinas de fundo, que se aprofundam por incisão do talvegue.\n\n\n4.3.4 Voçorocas\nFeições erosivas de grande porte (profundidade &gt; 1,5 m, largura &gt; 3 m) que frequentemente atingem o lençol freático. Representam o estágio mais severo de degradação do solo.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Erosão do Solo: Tipos e Processos</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/04-erosao.html#mecanismos-de-erosão",
+    "href": "capitulos/04-erosao.html#mecanismos-de-erosão",
+    "title": "4  Erosão do Solo: Tipos e Processos",
+    "section": "4.4 Mecanismos de Erosão",
+    "text": "4.4 Mecanismos de Erosão\nO processo erosivo envolve três fases:\n\n4.4.1 1. Desprendimento (Detachment)\nO impacto das gotas de chuva (splash) é o principal agente de desprendimento. Uma gota de 5 mm de diâmetro atinge o solo a ~9 m/s, exercendo pressão de até 6 MPa, suficiente para desagregar partículas e projetá-las a mais de 1 metro de distância.\nA taxa de desprendimento é função da energia cinética da chuva:\n\\[\nD_r = K_I \\cdot I^2\n\\]\nonde \\(D_r\\) é a taxa de desprendimento (kg m⁻² s⁻¹), \\(K_I\\) é a erodibilidade intergoticular e \\(I\\) é a intensidade da chuva (mm h⁻¹).\n\n\n4.4.2 2. Transporte\nAs partículas desprendidas são transportadas pelo escoamento superficial. A capacidade de transporte (\\(T_c\\)) depende da velocidade e da profundidade do escoamento:\n\\[\nT_c = k_t \\cdot \\tau^{1.5}\n\\]\nonde \\(\\tau\\) é a tensão cisalhante do fluxo e \\(k_t\\) é um coeficiente empírico.\n\n\n4.4.3 3. Deposição\nQuando a capacidade de transporte diminui (redução de velocidade ou declividade), as partículas são depositadas. A seletividade granulométrica faz com que partículas grossas (areia) sejam depositadas primeiro, enquanto partículas finas (argila) sejam transportadas a distâncias maiores.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Erosão do Solo: Tipos e Processos</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/04-erosao.html#erosão-em-regiões-tropicais",
+    "href": "capitulos/04-erosao.html#erosão-em-regiões-tropicais",
+    "title": "4  Erosão do Solo: Tipos e Processos",
+    "section": "4.5 Erosão em Regiões Tropicais",
+    "text": "4.5 Erosão em Regiões Tropicais\n\n\n\n\n\n\nFigura 4.3: Mapa de susceptibilidade à erosão e capacidade de uso do solo — ferramenta fundamental para planejamento de intervenções de bioengenharia.\n\n\n\n\n\n\n\n\n\nImportanteParticularidades tropicais\n\n\n\nNas regiões tropicais, a erosão hídrica é condicionada por chuvas com \\(EI_{30}\\) superior a 10.000 MJ mm ha⁻¹ h⁻¹ ano⁻¹ (contra 1.000–3.000 em zonas temperadas), por solos com coesão aparente que se mostram estáveis quando secos mas colapsam quando saturados, por erosão subsuperficial (piping) frequente em solos com gradiente textural, e por ciclos de umedecimento-secagem que causam fissuração e desagregação.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Erosão do Solo: Tipos e Processos</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/04-erosao.html#erosão-marginal",
+    "href": "capitulos/04-erosao.html#erosão-marginal",
+    "title": "4  Erosão do Solo: Tipos e Processos",
+    "section": "4.6 Erosão Marginal",
+    "text": "4.6 Erosão Marginal\nEm regiões tropicais, a erosão das margens fluviais é um processo crítico, especialmente em rios de planície com solos coesivos. O Baixo São Francisco (SE/AL) perde em média 2 a 5 metros de margem por ano, com consequências diretas para comunidades ribeirinhas e agricultura.\nA bioengenharia de solos oferece soluções específicas para erosão marginal, combinando retaludamento para estabilização geométrica, enrocamento vegetado na base da margem e revegetação ciliar no topo do talude.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Erosão do Solo: Tipos e Processos</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/04-erosao.html#tolerância-de-perda-de-solo",
+    "href": "capitulos/04-erosao.html#tolerância-de-perda-de-solo",
+    "title": "4  Erosão do Solo: Tipos e Processos",
+    "section": "4.7 Tolerância de Perda de Solo",
+    "text": "4.7 Tolerância de Perda de Solo\nA tolerância de perda de solo (\\(T\\)) é a taxa máxima de erosão compatível com a manutenção da produtividade em longo prazo:\n\n\n\nTabela 4.2: Tolerância de perda de solo para classes de solos tropicais (Bertoni & Lombardi Neto, 2017).\n\n\n\n\n\nClasse de solo\nT (t ha⁻¹ ano⁻¹)\n\n\n\n\nSolos profundos (Latossolos)\n9–12\n\n\nSolos moderadamente profundos\n5–9\n\n\nSolos rasos (Neossolos)\n2–5\n\n\n\n\n\n\nQuando a perda atual (\\(A\\)) excede a tolerância (\\(T\\)), intervenções de bioengenharia são necessárias para evitar a degradação irreversível.\n\n\n\n\nBertoni, J., & Lombardi Neto, F. (2017). Conservação do Solo (9th ed). Ícone.\n\n\nMorgan, R. P. C. (2005). Soil Erosion and Conservation (3rd ed). Blackwell Publishing.\n\n\nRenard, K. G., Foster, G. R., Weesies, G. A., McCool, D. K., & Yoder, D. C. (1997). Predicting Soil Erosion by Water: A Guide to Conservation Planning with the Revised Universal Soil Loss Equation (RUSLE). Agriculture Handbook, 703.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Erosão do Solo: Tipos e Processos</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/05-classificacao-feicoes.html",
+    "href": "capitulos/05-classificacao-feicoes.html",
+    "title": "5  Classificação de Feições Erosivas",
+    "section": "",
+    "text": "5.1 Importância da Classificação\nA classificação precisa das feições erosivas é o primeiro passo para o dimensionamento de intervenções de bioengenharia. Uma ravina de cabeceira demanda técnicas diferentes de uma voçoroca com contribuição do lençol freático.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Classificação de Feições Erosivas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/05-classificacao-feicoes.html#importância-da-classificação",
+    "href": "capitulos/05-classificacao-feicoes.html#importância-da-classificação",
+    "title": "5  Classificação de Feições Erosivas",
+    "section": "",
+    "text": "Figura 5.1: Visão aérea de feições erosivas — o mapeamento por RPAS permite identificar e classificar ravinas com precisão espacial.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Classificação de Feições Erosivas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/05-classificacao-feicoes.html#elementary-gully-classification-egc",
+    "href": "capitulos/05-classificacao-feicoes.html#elementary-gully-classification-egc",
+    "title": "5  Classificação de Feições Erosivas",
+    "section": "5.2 Elementary Gully Classification (EGC)",
+    "text": "5.2 Elementary Gully Classification (EGC)\nO sistema Elementary Gully Classification permite classificar feições erosivas com base em suas características geométricas e hidráulicas, utilizando dados obtidos por levantamento topográfico ou sensoriamento remoto (drone/VANT).\n\n5.2.1 Parâmetros Geométricos\n\n\n\nTabela 5.1: Parâmetros geométricos para classificação de feições erosivas.\n\n\n\n\n\nParâmetro\nSímbolo\nDescrição\n\n\n\n\nLargura\n\\(W\\)\nDistância entre bordas (m)\n\n\nProfundidade\n\\(D\\)\nDistância vertical da borda ao fundo (m)\n\n\nComprimento\n\\(L\\)\nExtensão longitudinal (m)\n\n\nÁrea da seção\n\\(A_s\\)\nÁrea da seção transversal (m²)\n\n\nRazão W/D\n—\nIndicador da forma da seção\n\n\nDeclividade do fundo\n\\(S_f\\)\nGradiente longitudinal (%)\n\n\n\n\n\n\n\n\n5.2.2 Classificação por Dimensões\n\n\n\nTabela 5.2: Classificação de feições erosivas por dimensões.\n\n\n\n\n\nClasse\nProfundidade\nLargura\nÁrea de seção\n\n\n\n\nSulco\n&lt; 0,3 m\n&lt; 0,3 m\n&lt; 0,09 m²\n\n\nRavina pequena\n0,3–1,0 m\n0,3–1,0 m\n0,09–1,0 m²\n\n\nRavina média\n1,0–3,0 m\n1,0–5,0 m\n1,0–15 m²\n\n\nRavina grande\n3,0–5,0 m\n5,0–15 m\n15–75 m²\n\n\nVoçoroca\n&gt; 5,0 m\n&gt; 15 m\n&gt; 75 m²",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Classificação de Feições Erosivas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/05-classificacao-feicoes.html#levantamento-com-vant-drone",
+    "href": "capitulos/05-classificacao-feicoes.html#levantamento-com-vant-drone",
+    "title": "5  Classificação de Feições Erosivas",
+    "section": "5.3 Levantamento com VANT (Drone)",
+    "text": "5.3 Levantamento com VANT (Drone)\n\n\n\n\n\n\n\n\n\nFigura 5.2: Detalhe de ravina — parâmetros geométricos podem ser medidos em campo ou pelo modelo digital gerado por drone.\n\n\n\n\n\n\n\n\n\n\n\nFigura 5.3: Perfil de solo exposto pela erosão — a análise dos horizontes auxilia no dimensionamento das intervenções.\n\n\n\n\n\n\nO uso de Veículos Aéreos Não Tripulados (VANT/drone) revolucionou o levantamento de feições erosivas ao permitir a geração de modelos digitais de superfície (MDS) com resolução inferior a 5 cm, o cálculo volumétrico de perda de solo por diferença de MDSs multitemporais, o mapeamento de áreas instáveis e cabeceiras ativas, e o planejamento de intervenções com base em ortomosaicos de alta resolução.\n\n5.3.1 Fluxo de Trabalho\nO fluxo de trabalho com VANT segue uma sequência operacional que se inicia com o planejamento de voo (cobertura 80% frontal e 60% lateral, altitude 50–100 m), seguido pela distribuição de pontos de controle (GCPs com GNSS RTK para georreferenciamento). Os dados são processados por Structure from Motion (SfM) para geração de nuvem de pontos, resultando em produtos como ortomosaico, MDS, MDT e curvas de nível. A análise final contempla a extração de seções transversais, volumes e taxas de recuo.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Classificação de Feições Erosivas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/05-classificacao-feicoes.html#seleção-de-técnicas-por-classe",
+    "href": "capitulos/05-classificacao-feicoes.html#seleção-de-técnicas-por-classe",
+    "title": "5  Classificação de Feições Erosivas",
+    "section": "5.4 Seleção de Técnicas por Classe",
+    "text": "5.4 Seleção de Técnicas por Classe\nA classificação da feição erosiva orienta diretamente a seleção das técnicas de bioengenharia:\n\n\n\nTabela 5.3: Seleção de técnicas de bioengenharia por classe de feição erosiva.\n\n\n\n\n\n\n\n\n\n\nClasse\nTécnica primária\nTécnica complementar\n\n\n\n\nSulco\nCobertura vegetal, palhada\nCordões vegetativos\n\n\nRavina pequena\nPaliçadas de bambu\nRevegetação\n\n\nRavina média\nPaliçadas + check-dams\nHidrossemeadura\n\n\nRavina grande\nGabião vivo\nBiomantas + drenagem\n\n\nVoçoroca\nProjeto integrado (retaludamento + drenagem + gabião + revegetação)\nParede Krainer, enrocamento\n\n\n\n\n\n\n\n\n\n\n\n\nDicaRegra prática\n\n\n\nQuanto maior a feição erosiva, maior a necessidade de combinação de técnicas e de um projeto integrado que considere drenagem, estabilização mecânica e revegetação simultaneamente.",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Classificação de Feições Erosivas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/05-classificacao-feicoes.html#monitoramento-temporal",
+    "href": "capitulos/05-classificacao-feicoes.html#monitoramento-temporal",
+    "title": "5  Classificação de Feições Erosivas",
+    "section": "5.5 Monitoramento Temporal",
+    "text": "5.5 Monitoramento Temporal\nO monitoramento periódico das feições é essencial para avaliar a eficácia das intervenções. Os indicadores-chave incluem a taxa de recuo da cabeceira (m/ano), a taxa de alargamento lateral (m/ano), o volume de sedimento retido nas estruturas (m³), a cobertura vegetal no interior da feição (%) e a estabilidade das paredes laterais (ângulo do talude).",
+    "crumbs": [
+      "Parte I — Fundamentos",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Classificação de Feições Erosivas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/06-revegetacao.html",
+    "href": "capitulos/06-revegetacao.html",
+    "title": "6  Revegetação e Espécies para Bioengenharia",
+    "section": "",
+    "text": "6.1 Princípios da Revegetação\nA revegetação é a técnica fundamental da bioengenharia de solos. As plantas protegem o solo por múltiplos mecanismos simultâneos, que incluem a interceptação da energia cinética das gotas de chuva pela copa, a proteção da superfície pelo acúmulo de serrapilheira, o reforço radicular que aumenta a coesão do solo em 5–40 kPa, a drenagem biológica por evapotranspiração (que reduz a poropressão), a criação de macroporos pelas raízes (elevando a permeabilidade) e a ancoragem de camadas instáveis a substratos estáveis por raízes pivotantes.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Revegetação e Espécies para Bioengenharia</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/06-revegetacao.html#princípios-da-revegetação",
+    "href": "capitulos/06-revegetacao.html#princípios-da-revegetação",
+    "title": "6  Revegetação e Espécies para Bioengenharia",
+    "section": "",
+    "text": "Figura 6.1: Sistema radicular de vetiver — raízes profundas que conferem coesão e ancoragem ao solo, mecanismo fundamental da revegetação em bioengenharia.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Revegetação e Espécies para Bioengenharia</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/06-revegetacao.html#seleção-de-espécies",
+    "href": "capitulos/06-revegetacao.html#seleção-de-espécies",
+    "title": "6  Revegetação e Espécies para Bioengenharia",
+    "section": "6.2 Seleção de Espécies",
+    "text": "6.2 Seleção de Espécies\nA seleção de espécies para bioengenharia deve considerar critérios técnicos e ecológicos de forma integrada.\n\n6.2.1 Critérios Técnicos\nDo ponto de vista técnico, deve-se avaliar o sistema radicular (fasciculado para camada superficial, pivotante para profundidade), a velocidade de estabelecimento (espécies que cobrem mais de 80% em 60–90 dias), a tolerância a estresses hídricos e nutricionais, a capacidade de regeneração após corte ou dano mecânico, e a produção de biomassa para cobertura morta e ciclagem de nutrientes.\n\n\n6.2.2 Critérios Ecológicos\nSob a perspectiva ecológica, deve-se priorizar espécies nativas ou naturalizadas, considerando o bioma e o tipo de vegetação local. É essencial evitar espécies invasoras ou com potencial de dominância, promovendo a diversidade funcional pela combinação de gramíneas, arbustos e árvores.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Revegetação e Espécies para Bioengenharia</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/06-revegetacao.html#espécies-recomendadas-para-regiões-tropicais",
+    "href": "capitulos/06-revegetacao.html#espécies-recomendadas-para-regiões-tropicais",
+    "title": "6  Revegetação e Espécies para Bioengenharia",
+    "section": "6.3 Espécies Recomendadas para Regiões Tropicais",
+    "text": "6.3 Espécies Recomendadas para Regiões Tropicais\n\n6.3.1 Gramíneas e Leguminosas Herbáceas\n\n\n\nTabela 6.1: Gramíneas e leguminosas para bioengenharia em regiões tropicais.\n\n\n\n\n\n\n\n\n\n\n\nEspécie\nNome popular\nSistema radicular\nUso principal\n\n\n\n\nVetiveria zizanioides\nVetiver\nFasciculado profundo (3–4 m)\nBarreiras vivas, taludes\n\n\nPaspalum notatum\nGrama batatais\nFasciculado/estolonífero\nCobertura geral\n\n\nBrachiaria decumbens\nBraquiária\nFasciculado denso\nCobertura rápida\n\n\nStylosanthes guianensis\nEstilosantes\nPivotante + fixação N₂\nRecuperação de fertilidade\n\n\nCajanus cajan\nGuandu\nPivotante profundo\nSubsolagem biológica\n\n\nArachis pintoi\nAmendoim forrageiro\nEstolonífero\nCobertura sombreada\n\n\n\n\n\n\n\n\n\n\n\n\nDicaDestaque: Vetiver\n\n\n\nO vetiver (Vetiveria zizanioides) é considerado a planta ideal para bioengenharia tropical: raízes de até 4 m, resistência à tração de 40–120 MPa, tolerância a pH 3–11, resistência a seca e encharcamento. Suas barreiras vivas reduzem a velocidade do escoamento em 60–70%.\n\n\n\n\n6.3.2 Espécies Arbóreas e Arbustivas\n\n\n\nTabela 6.2: Espécies arbóreas para bioengenharia.\n\n\n\n\n\n\n\n\n\n\n\nEspécie\nNome popular\nBioma\nUso principal\n\n\n\n\nMimosa caesalpiniifolia\nSabiá\nCaatinga\nEstacas vivas, cercas\n\n\nGliricidia sepium\nGliricídia\nPantropical\nEstacas vivas, sombreamento\n\n\nLeucaena leucocephala\nLeucena\nPantropical\nRecuperação de fertilidade\n\n\nSchinus terebinthifolius\nAroeira\nMata Atlântica\nMata ciliar\n\n\nInga edulis\nIngá\nAmazônia/Mata Atlântica\nSombreamento, fixação N₂\n\n\n\n\n\n\n\n\n6.3.3 Fibras Vegetais para Bioengenharia\n\n\n\nTabela 6.3: Fibras vegetais tropicais e suas propriedades mecânicas.\n\n\n\n\n\nEspécie\nFibra\nResistência à tração (MPa)\nAplicação\n\n\n\n\nAgave sisalana\nSisal\n400–700\nGeotêxteis, cordas\n\n\nCocos nucifera\nCoco\n95–230\nBiomantas, fibras\n\n\nTypha domingensis\nTaboa\n60–120\nGeotêxteis, Bio-SAP\n\n\nBoehmeria nivea\nRami\n400–938\nReforço de geocompostos\n\n\nMusa spp.\nBananeira\n54–136\nGeodrenos",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Revegetação e Espécies para Bioengenharia</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/06-revegetacao.html#métodos-de-implantação",
+    "href": "capitulos/06-revegetacao.html#métodos-de-implantação",
+    "title": "6  Revegetação e Espécies para Bioengenharia",
+    "section": "6.4 Métodos de Implantação",
+    "text": "6.4 Métodos de Implantação\n\n6.4.1 Plantio Direto\nSemeadura manual ou mecanizada diretamente no solo preparado, indicada para gramíneas de cobertura em áreas acessíveis e leguminosas em áreas planas a suavemente onduladas. O custo varia entre R$ 800 e R$ 2.000/ha.\n\n\n6.4.2 Plantio de Mudas\nTransplante de mudas produzidas em viveiro, indicado para espécies arbóreas e arbustivas em áreas de mata ciliar, com custo entre R$ 3.000 e R$ 8.000/ha (incluindo mudas).\n\n\n6.4.3 Estacas Vivas\nInserção de estacas de espécies com capacidade de enraizamento vegetativo, indicada para encostas e taludes (sabiá, gliricídia) e margens fluviais (salgueiro, ingá), com custo entre R$ 1.500 e R$ 4.000/ha.\n\n\n6.4.4 Hidrossemeadura\nProjeção mecanizada de uma mistura de sementes, mulch, fertilizante e fixador. Detalhada no Capítulo 10.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Revegetação e Espécies para Bioengenharia</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/06-revegetacao.html#cuidados-na-implantação",
+    "href": "capitulos/06-revegetacao.html#cuidados-na-implantação",
+    "title": "6  Revegetação e Espécies para Bioengenharia",
+    "section": "6.5 Cuidados na Implantação",
+    "text": "6.5 Cuidados na Implantação\n\n\n\n\n\n\nAvisoAtenção\n\n\n\nRecomenda-se plantar preferencialmente no início da estação chuvosa e proteger o solo imediatamente após a implantação com mulch ou biomanta. A taxa de cobertura deve ser monitorada nos primeiros 90 dias, sendo obrigatório o replantio quando a cobertura for inferior a 60% aos 60 dias.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Revegetação e Espécies para Bioengenharia</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/07-palicadas.html",
+    "href": "capitulos/07-palicadas.html",
+    "title": "7  Paliçadas para Controle de Ravinas",
+    "section": "",
+    "text": "7.1 Conceito\nAs paliçadas são barreiras transversais permeáveis instaladas no interior de ravinas para reduzir a velocidade do escoamento, reter sedimentos e criar condições para o estabelecimento vegetal. São a técnica mais simples e econômica de bioengenharia para controle de erosão concentrada.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Paliçadas para Controle de Ravinas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/07-palicadas.html#conceito",
+    "href": "capitulos/07-palicadas.html#conceito",
+    "title": "7  Paliçadas para Controle de Ravinas",
+    "section": "",
+    "text": "Figura 7.1: Paliçada instalada em ravina — barreira transversal permeável que retarda o escoamento e promove a deposição de sedimentos.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Paliçadas para Controle de Ravinas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/07-palicadas.html#materiais",
+    "href": "capitulos/07-palicadas.html#materiais",
+    "title": "7  Paliçadas para Controle de Ravinas",
+    "section": "7.2 Materiais",
+    "text": "7.2 Materiais\n\n7.2.1 Bambu\nO bambu (Bambusa spp., Dendrocalamus spp.) é o material mais utilizado em regiões tropicais, combinando alta resistência à tração (100–400 MPa), disponibilidade e baixo custo, facilidade de corte e montagem, e durabilidade de 2–5 anos quando tratado.\n\n\n7.2.2 Madeira Roliça\nTroncos de eucalipto, pinus ou espécies nativas de rápido crescimento. Durabilidade de 3–8 anos.\n\n\n7.2.3 Pedra Seca\nEm regiões com disponibilidade de pedras, as paliçadas podem ser construídas com pedras empilhadas sem argamassa, combinando função de filtro e retenção.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Paliçadas para Controle de Ravinas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/07-palicadas.html#dimensionamento",
+    "href": "capitulos/07-palicadas.html#dimensionamento",
+    "title": "7  Paliçadas para Controle de Ravinas",
+    "section": "7.3 Dimensionamento",
+    "text": "7.3 Dimensionamento\n\n7.3.1 Espaçamento entre Paliçadas\nO espaçamento (\\(E\\)) entre paliçadas consecutivas deve garantir que a crista da paliçada a jusante esteja no mesmo nível da base da paliçada a montante:\n\\[\nE = \\frac{H}{S_f}\n\\]\nonde \\(H\\) é a altura efetiva da paliçada (m) e \\(S_f\\) é a declividade do fundo da ravina (m/m).\n\n\n7.3.2 Altura Efetiva\nA altura efetiva da paliçada não deve exceder 1/3 da profundidade da ravina, garantindo que o escoamento possa transbordar sem gerar erosão lateral:\n\\[\nH_{max} = \\frac{D}{3}\n\\]\n\n\n7.3.3 Capacidade de Retenção\nO volume de sedimento retido por uma paliçada de seção trapezoidal:\n\\[\nV_r = \\frac{E \\cdot W \\cdot H}{2}\n\\]\nonde \\(W\\) é a largura da ravina na posição da paliçada.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Paliçadas para Controle de Ravinas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/07-palicadas.html#construção",
+    "href": "capitulos/07-palicadas.html#construção",
+    "title": "7  Paliçadas para Controle de Ravinas",
+    "section": "7.4 Construção",
+    "text": "7.4 Construção\n\n\n\n\n\n\nFigura 7.2: Etapas de instalação de paliçadas em ravina — escavação, cravamento de estacas e entrelaçamento das varas.\n\n\n\n\n7.4.1 Passo a Passo\nO procedimento de construção inicia com a escavação de uma vala transversal com profundidade igual a \\(H\\) (enterrando metade da paliçada), seguida pelo cravamento de estacas verticais de bambu a cada 30–50 cm e o entrelaçamento de varas horizontais entre as estacas. Após o entrelaçamento, compacta-se terra contra a face montante, protegem-se as laterais com ancoragem nas paredes da ravina (mínimo 50 cm de cada lado) e semeiam-se gramíneas a montante da paliçada.\n\n\n\n\n\n\nImportantePonto crítico\n\n\n\nAs paliçadas devem ser ancoradas nas paredes laterais da ravina por pelo menos 50 cm de cada lado. A principal causa de falha é a erosão lateral por contorno da estrutura.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Paliçadas para Controle de Ravinas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/07-palicadas.html#eficiência",
+    "href": "capitulos/07-palicadas.html#eficiência",
+    "title": "7  Paliçadas para Controle de Ravinas",
+    "section": "7.5 Eficiência",
+    "text": "7.5 Eficiência\n\n\n\n\n\n\nFigura 7.3: Simulação temporal de retenção de sedimentos pelas paliçadas ao longo dos anos — o assoreamento progressivo cria patamares que estabilizam a ravina.\n\n\n\nEstudos em Plintossolo degradado nos Tabuleiros Costeiros de Sergipe demonstraram retenção de 76 cm de sedimento em 12 meses (paliçada de 1,0 m de altura) e redução de 85% na velocidade do escoamento no interior da ravina. Observou-se colonização vegetal espontânea a montante das paliçadas após 6 meses, com projeção de preenchimento total em 3 a 5 anos.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Paliçadas para Controle de Ravinas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/07-palicadas.html#custos-comparativos",
+    "href": "capitulos/07-palicadas.html#custos-comparativos",
+    "title": "7  Paliçadas para Controle de Ravinas",
+    "section": "7.6 Custos Comparativos",
+    "text": "7.6 Custos Comparativos\n\n\n\nTabela 7.1: Comparativo de custos entre paliçadas de bambu e check-dams de alvenaria.\n\n\n\n\n\nItem\nPaliçada de bambu\nCheck-dam de alvenaria\n\n\n\n\nMaterial\nR$ 15–30/m²\nR$ 150–300/m²\n\n\nMão de obra\nR$ 20–40/m²\nR$ 80–150/m²\n\n\nTotal\nR$ 35–70/m²\nR$ 230–450/m²\n\n\nVida útil\n3–5 anos\n20+ anos\n\n\nManutenção\nAnual\nQuinquenal\n\n\n\n\n\n\n\n\n\n\n\n\nDicaVantagem econômica\n\n\n\nO custo das paliçadas de bambu é 5 a 7× menor que check-dams de alvenaria. Mesmo considerando a reposição a cada 5 anos, o custo acumulado em 20 anos é inferior à solução convencional.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Paliçadas para Controle de Ravinas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/08-bacias-captacao.html",
+    "href": "capitulos/08-bacias-captacao.html",
+    "title": "8  Bacias de Captação e Barraginhas",
+    "section": "",
+    "text": "8.1 Conceito\nAs bacias de captação (ou barraginhas) são estruturas de retenção de enxurrada escavadas ao longo de estradas rurais ou em encostas, com o objetivo de interceptar, reter e infiltrar o escoamento superficial antes que ele cause erosão a jusante.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Bacias de Captação e Barraginhas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/08-bacias-captacao.html#conceito",
+    "href": "capitulos/08-bacias-captacao.html#conceito",
+    "title": "8  Bacias de Captação e Barraginhas",
+    "section": "",
+    "text": "Figura 8.1: Barraginha implantada em estrada rural — estrutura de retenção que intercepta e infiltra o escoamento superficial.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Bacias de Captação e Barraginhas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/08-bacias-captacao.html#funções",
+    "href": "capitulos/08-bacias-captacao.html#funções",
+    "title": "8  Bacias de Captação e Barraginhas",
+    "section": "8.2 Funções",
+    "text": "8.2 Funções\n\n\n\n\n\n\n\n\n\nFigura 8.2: Detalhe de barraginha após chuva — a água é retida e infiltra gradualmente no solo.\n\n\n\n\n\n\n\n\n\n\n\nFigura 8.3: Mapa de declividade para planejamento de barraginhas — a localização é definida por critérios topográficos.\n\n\n\n\n\n\nAs bacias de captação desempenham quatro funções principais. A retenção de sedimentos opera com eficiência de 50–80%, enquanto a recarga de aquíferos promove infiltração de 20–60 m³ por evento. Além disso, o amortecimento do pico de cheia pode atingir 40%, e a proteção de estradas rurais evita a formação de ravinas laterais.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Bacias de Captação e Barraginhas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/08-bacias-captacao.html#dimensionamento",
+    "href": "capitulos/08-bacias-captacao.html#dimensionamento",
+    "title": "8  Bacias de Captação e Barraginhas",
+    "section": "8.3 Dimensionamento",
+    "text": "8.3 Dimensionamento\n\n8.3.1 Método EUPS + VIB\nO volume da bacia deve ser suficiente para conter o escoamento gerado por uma chuva de projeto:\n\\[\nV_{bacia} = A_c \\cdot P \\cdot C \\cdot (1 - VIB/P)\n\\]\nonde:\n\n\\(A_c\\) = área de contribuição (m²)\n\\(P\\) = precipitação de projeto (m)\n\\(C\\) = coeficiente de escoamento\n\\(VIB\\) = velocidade de infiltração básica do solo (m/h)\n\n\n\n8.3.2 Área de Contribuição\nPara estradas rurais, a área de contribuição é calculada como:\n\\[\nA_c = L \\cdot (W_{estrada} + W_{talude})\n\\]\nonde \\(L\\) é o comprimento da estrada que drena para a bacia.\n\n\n8.3.3 Dimensões Típicas\n\n\n\nTabela 8.1: Dimensões típicas de bacias de captação para estradas rurais.\n\n\n\n\n\nParâmetro\nValor típico\n\n\n\n\nProfundidade\n0,8–1,5 m\n\n\nDiâmetro superior\n3–6 m\n\n\nVolume\n5–30 m³\n\n\nEspaçamento\n30–80 m\n\n\nDeclividade lateral\n1:1 a 1:1,5",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Bacias de Captação e Barraginhas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/08-bacias-captacao.html#espaçamento",
+    "href": "capitulos/08-bacias-captacao.html#espaçamento",
+    "title": "8  Bacias de Captação e Barraginhas",
+    "section": "8.4 Espaçamento",
+    "text": "8.4 Espaçamento\nO espaçamento entre bacias consecutivas deve garantir que cada uma receba um volume compatível com sua capacidade:\n\\[\nE_{bacias} = \\frac{V_{bacia}}{W_{estrada} \\cdot P \\cdot C}\n\\]\nEm terrenos com declividade \\(&gt; 8\\%\\), o espaçamento deve ser reduzido em 30–50%.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Bacias de Captação e Barraginhas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/08-bacias-captacao.html#vida-útil-e-manutenção",
+    "href": "capitulos/08-bacias-captacao.html#vida-útil-e-manutenção",
+    "title": "8  Bacias de Captação e Barraginhas",
+    "section": "8.5 Vida Útil e Manutenção",
+    "text": "8.5 Vida Útil e Manutenção\nA vida útil projetada das bacias situa-se entre 10 e 20 anos. A manutenção principal consiste na limpeza de sedimentos a cada 2–5 anos, sendo que o sinal de esgotamento é o assoreamento superior a 70% da capacidade.\n\n\n\n\n\n\nAvisoAtenção\n\n\n\nEm solos com VIB muito baixa (&lt; 5 mm/h), as bacias podem transbordar com frequência. Nesse caso, dimensionar com chuva de menor período de retorno ou prever sangradouro lateral vegetado.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Bacias de Captação e Barraginhas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/08-bacias-captacao.html#custos",
+    "href": "capitulos/08-bacias-captacao.html#custos",
+    "title": "8  Bacias de Captação e Barraginhas",
+    "section": "8.6 Custos",
+    "text": "8.6 Custos\nOs custos de implantação variam entre R$ 200 e R$ 500 por bacia para escavação mecanizada (retroescavadeira) e entre R$ 400 e R$ 800 por bacia para escavação manual (2–3 dias de trabalho), resultando em custo por hectare protegido de R$ 500 a R$ 1.500.\nA relação custo-benefício é extremamente favorável: cada real investido em barraginhas evita R$ 5–12 em custos de manutenção de estradas rurais.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Bacias de Captação e Barraginhas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/09-feixes-drenos.html",
+    "href": "capitulos/09-feixes-drenos.html",
+    "title": "9  Feixes Vivos e Drenos Verdes",
+    "section": "",
+    "text": "9.1 Feixes Vivos (Fascines)",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Feixes Vivos e Drenos Verdes</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/09-feixes-drenos.html#feixes-vivos-fascines",
+    "href": "capitulos/09-feixes-drenos.html#feixes-vivos-fascines",
+    "title": "9  Feixes Vivos e Drenos Verdes",
+    "section": "",
+    "text": "9.1.1 Conceito\n\n\n\n\n\n\nFigura 9.1: Feixes vivos em campo — amarrados de ramos vivos instalados em valas para interceptar o escoamento e promover a infiltração.\n\n\n\nOs feixes vivos (fascines ou wattle fences) são amarrados de ramos vivos e flexíveis, instalados em valas rasas ao longo de curvas de nível para interceptar o escoamento superficial e promover a infiltração.\n\n\n\n\n\n\n\n\n\nFigura 9.2: Diagrama de feixe vivo — vista em corte transversal mostrando a instalação em vala rasa.\n\n\n\n\n\n\n\n\n\n\n\nFigura 9.3: Estacas vivas detalhadas — material vegetativo utilizado para fixação dos feixes.\n\n\n\n\n\n\n\n\n9.1.2 Materiais\nOs materiais mais utilizados são ramos de sabiá (Mimosa caesalpiniifolia) na Caatinga, ramos de gliricídia (Gliricidia sepium) em regiões pantropicais, ramos de salgueiro (Salix spp.) em zonas temperadas e subtropicais, e bambu verde, de disponibilidade universal.\n\n\n9.1.3 Dimensionamento\nO diâmetro do feixe deve situar-se entre 15 e 30 cm, com comprimento de 2 a 4 m (amarrados com arame ou fibra). A profundidade da vala corresponde a metade do diâmetro do feixe, e o espaçamento entre feixes segue as curvas de nível, a cada 5–10 m de desnivel vertical.\n\n\n9.1.4 Instalação\nO procedimento de instalação inicia com a escavação de uma vala rasa ao longo da curva de nível, seguida pelo posicionamento do feixe na vala. Fixa-se o conjunto com estacas vivas cravadas a cada 1,0–1,5 m e compacta-se terra contra o feixe no lado montante.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Feixes Vivos e Drenos Verdes</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/09-feixes-drenos.html#drenos-verdes",
+    "href": "capitulos/09-feixes-drenos.html#drenos-verdes",
+    "title": "9  Feixes Vivos e Drenos Verdes",
+    "section": "9.2 Drenos Verdes",
+    "text": "9.2 Drenos Verdes\n\n9.2.1 Conceito\nOs drenos verdes (vegetated drains) são canais de drenagem superficial ou subsuperficial revegetados, que conduzem o escoamento excedente de forma controlada, reduzindo a velocidade e promovendo a infiltração e a filtração de sedimentos.\n\n\n9.2.2 Tipos\nDreno superficial vegetado — canal trapezoidal revestido com gramíneas (berma vegetada). Funciona como uma canaleta verde (ver Capítulo 16).\nDreno subsuperficial biodegradável — tubo ou camada drenante composta por materiais vegetais (feixes de bambu, cascas, fibras) enterrados a 30–60 cm de profundidade.\n\n\n9.2.3 Dimensionamento do Dreno Superficial\nA capacidade do dreno é calculada pela equação de Manning:\n\\[\nQ = \\frac{1}{n} \\cdot A \\cdot R_h^{2/3} \\cdot S^{1/2}\n\\]\nonde \\(n\\) é o coeficiente de rugosidade de Manning (0,03–0,05 para canais vegetados), \\(A\\) é a área da seção molhada, \\(R_h\\) é o raio hidráulico e \\(S\\) é a declividade.\n\n\n9.2.4 Vantagens dos Drenos Verdes\n\n\n\nTabela 9.1: Comparativo entre drenos convencionais e drenos verdes.\n\n\n\n\n\nAspecto\nDreno convencional (concreto)\nDreno verde\n\n\n\n\nInfiltração\nNula\n30–60% do volume\n\n\nFiltração de sedimentos\nNenhuma\n50–80%\n\n\nCusto de implantação\nR$ 200–500/m\nR$ 40–100/m\n\n\nManutenção\nLimpeza mecânica\nRoçada periódica\n\n\nPaisagem\nImpacto negativo\nIntegrado\n\n\n\n\n\n\n\n\n\n\n\n\nDicaAplicação ideal\n\n\n\nDrenos verdes são especialmente eficazes em áreas periurbanas e estradas rurais, onde a infraestrutura convencional é cara e pouco sustentável.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Feixes Vivos e Drenos Verdes</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/09-feixes-drenos.html#integração-feixes-drenos",
+    "href": "capitulos/09-feixes-drenos.html#integração-feixes-drenos",
+    "title": "9  Feixes Vivos e Drenos Verdes",
+    "section": "9.3 Integração Feixes + Drenos",
+    "text": "9.3 Integração Feixes + Drenos\nA combinação de feixes vivos ao longo de curvas de nível com drenos verdes nos talvegues cria um sistema integrado de manejo de enxurrada que intercepta o escoamento laminar (feixes), conduz o escoamento concentrado (drenos), infiltra o excedente hídrico e retém sedimentos.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Feixes Vivos e Drenos Verdes</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/10-hidrossemeadura.html",
+    "href": "capitulos/10-hidrossemeadura.html",
+    "title": "10  Hidrossemeadura",
+    "section": "",
+    "text": "10.1 Conceito\nA hidrossemeadura (hydroseeding ou hydraulic mulch seeding) é a técnica de projeção mecanizada de uma mistura aquosa contendo sementes, mulch (cobertura), fertilizante e fixador (tackifier) sobre taludes e superfícies erodíveis.\nÉ a técnica mais eficiente em produtividade (até 5.000 m²/h) e é amplamente utilizada em obras rodoviárias, mineração, barragens e recuperação de áreas degradadas.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Hidrossemeadura</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/10-hidrossemeadura.html#conceito",
+    "href": "capitulos/10-hidrossemeadura.html#conceito",
+    "title": "10  Hidrossemeadura",
+    "section": "",
+    "text": "Figura 10.1: Aplicação de hidrossemeadura em talude rodoviário — projeção mecanizada da pasta com sementes, mulch e fertilizante.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigura 10.2: Hidrossemeadura em restauração de área degradada — projeção da pasta sobre superfície erodível.\n\n\n\n\n\n\n\n\n\n\n\nFigura 10.3: Resultado da hidrossemeadura em rodovia — vegetação herbácea estabelecida em talude com alta declividade.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Hidrossemeadura</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/10-hidrossemeadura.html#composição-da-pasta",
+    "href": "capitulos/10-hidrossemeadura.html#composição-da-pasta",
+    "title": "10  Hidrossemeadura",
+    "section": "10.2 Composição da Pasta",
+    "text": "10.2 Composição da Pasta\n\n\n\nTabela 10.1: Composição típica da pasta de hidrossemeadura.\n\n\n\n\n\nComponente\nFunção\nDosagem típica\n\n\n\n\nÁgua\nVeículo e hidratação\n2.000–4.000 L/ha\n\n\nSementes\nCobertura vegetal\n50–200 kg/ha\n\n\nMulch\nProteção superficial\n1.500–3.000 kg/ha\n\n\nFertilizante\nNutrição inicial\n200–500 kg/ha\n\n\nFixador (tackifier)\nAdesão da pasta ao solo\n50–150 kg/ha\n\n\nCorante\nControle visual de aplicação\n5–10 L/ha",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Hidrossemeadura</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/10-hidrossemeadura.html#tipos-de-mulch",
+    "href": "capitulos/10-hidrossemeadura.html#tipos-de-mulch",
+    "title": "10  Hidrossemeadura",
+    "section": "10.3 Tipos de Mulch",
+    "text": "10.3 Tipos de Mulch\n\n10.3.1 Mulch de Celulose\nO mulch de celulose consiste em fibras de papel reciclado ou celulose virgem, com retenção hídrica moderada e degradação rápida (30–60 dias), a um custo de R$ 3–6/kg.\n\n\n10.3.2 Mulch de Madeira\nO mulch de madeira é composto por fibras de madeira processada, oferecendo retenção hídrica elevada e degradação lenta (90–180 dias), com custo de R$ 5–10/kg.\n\n\n10.3.3 Mulch Bonded Fiber Matrix (BFM)\nO BFM combina fibras longas com aglutinante biodegradável, formando uma manta coesa sobre o solo que pode substituir biomantas em taludes inferiores a 45°, com custo de R$ 8–15/kg.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Hidrossemeadura</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/10-hidrossemeadura.html#fixadores-tackifiers",
+    "href": "capitulos/10-hidrossemeadura.html#fixadores-tackifiers",
+    "title": "10  Hidrossemeadura",
+    "section": "10.4 Fixadores (Tackifiers)",
+    "text": "10.4 Fixadores (Tackifiers)\n\n\n\nTabela 10.2: Tipos de fixadores e suas propriedades.\n\n\n\n\n\nTipo\nOrigem\nResistência à chuva\nDuração\n\n\n\n\nGuar\nVegetal\nModerada\n30–60 dias\n\n\nPsyllium\nVegetal\nAlta\n60–90 dias\n\n\nPAM (poliacrilamida)\nSintético\nMuito alta\n90–180 dias\n\n\nAmido\nVegetal\nBaixa\n15–30 dias",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Hidrossemeadura</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/10-hidrossemeadura.html#dimensionamento",
+    "href": "capitulos/10-hidrossemeadura.html#dimensionamento",
+    "title": "10  Hidrossemeadura",
+    "section": "10.5 Dimensionamento",
+    "text": "10.5 Dimensionamento\n\n10.5.1 Taxa de Aplicação\nA taxa de aplicação (\\(T_a\\)) depende da declividade e do tipo de solo:\n\\[\nT_a = T_{base} \\cdot F_d \\cdot F_s \\cdot F_c\n\\]\nonde \\(T_{base}\\) representa a taxa base (3.000 kg/ha para gramíneas), \\(F_d\\) corresponde ao fator de declividade (1,0 para ângulos inferiores a 30°, 1,3 para 30–45° e 1,6 para ângulos superiores a 45°), \\(F_s\\) indica o fator de solo (1,0 para argilosos, 1,2 para arenosos e 1,4 para siltosos) e \\(F_c\\) refere-se ao fator climático (1,0 para clima úmido e 1,3 para semiárido).\n\n\n10.5.2 Mistura de Sementes\nA mistura deve combinar 70% de gramíneas de estabelecimento rápido (Brachiaria, Paspalum), 20% de leguminosas fixadoras de N₂ (Stylosanthes, Cajanus) e 10% de espécies de ciclo longo (gramíneas perenes).",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Hidrossemeadura</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/10-hidrossemeadura.html#equipamentos",
+    "href": "capitulos/10-hidrossemeadura.html#equipamentos",
+    "title": "10  Hidrossemeadura",
+    "section": "10.6 Equipamentos",
+    "text": "10.6 Equipamentos\nO hidrossemeador mecânico consiste em um tanque de 2.000–8.000 L com bomba centrífuga e canhão, operando a pressão de trabalho de 4–8 bar. O alcance do jato varia de 30 a 60 m, com rendimento de 3.000–5.000 m²/h.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Hidrossemeadura</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/10-hidrossemeadura.html#monitoramento",
+    "href": "capitulos/10-hidrossemeadura.html#monitoramento",
+    "title": "10  Hidrossemeadura",
+    "section": "10.7 Monitoramento",
+    "text": "10.7 Monitoramento\n\n\n\nTabela 10.3: Metas de monitoramento pós-hidrossemeadura.\n\n\n\n\n\nIndicador\nMeta (30 dias)\nMeta (60 dias)\nMeta (90 dias)\n\n\n\n\nGerminação\n&gt; 50%\n—\n—\n\n\nCobertura\n&gt; 40%\n&gt; 70%\n&gt; 90%\n\n\nErosão visível\n&lt; 5% da área\n&lt; 2%\n0%\n\n\n\n\n\n\n\n\n\n\n\n\nAvisoCondições de aplicação\n\n\n\nA hidrossemeadura não deve ser aplicada com vento superior a 25 km/h, sobre solo saturado ou congelado, nem em temperaturas de solo inferiores a 10 °C. O período ideal de aplicação corresponde ao início da estação chuvosa.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Hidrossemeadura</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/11-biomantas.html",
+    "href": "capitulos/11-biomantas.html",
+    "title": "11  Biomantas e Geossintéticos Biodegradáveis",
+    "section": "",
+    "text": "11.1 Conceito\nAs biomantas são mantas pré-fabricadas de fibras naturais (coco, juta, sisal, palha) mantidas por redes de sustentação biodegradáveis ou fotodegradáveis. Proporcionam proteção imediata contra erosão enquanto a vegetação se estabelece.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Biomantas e Geossintéticos Biodegradáveis</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/11-biomantas.html#conceito",
+    "href": "capitulos/11-biomantas.html#conceito",
+    "title": "11  Biomantas e Geossintéticos Biodegradáveis",
+    "section": "",
+    "text": "Figura 11.1: Biomanta instalada em talude — proteção imediata contra erosão enquanto a vegetação se estabelece.\n\n\n\n\n\n\n\n\n\n\n\nFigura 11.2: Vegetação emergindo através da biomanta — a grama se estabelece através das aberturas da manta.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Biomantas e Geossintéticos Biodegradáveis</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/11-biomantas.html#classificação",
+    "href": "capitulos/11-biomantas.html#classificação",
+    "title": "11  Biomantas e Geossintéticos Biodegradáveis",
+    "section": "11.2 Classificação",
+    "text": "11.2 Classificação\n\n11.2.1 Por Material\n\n\n\nTabela 11.1: Tipos de biomantas e suas características.\n\n\n\n\n\n\n\n\n\n\n\nTipo\nFibra principal\nDurabilidade\nAplicação\n\n\n\n\nBiomanta de coco\nCoco (Cocos nucifera)\n2–4 anos\nTaludes, margens\n\n\nBiomanta de juta\nJuta (Corchorus spp.)\n1–2 anos\nCanais, áreas planas\n\n\nBiomanta de palha\nPalha de arroz/trigo\n6–12 meses\nProteção temporária\n\n\nBiomanta de sisal\nSisal (Agave sisalana)\n2–5 anos\nTaludes íngremes\n\n\nBiomanta mista\nCoco + palha\n1–3 anos\nUso geral\n\n\n\n\n\n\n\n\n11.2.2 Por Função (Norma ABNT NBR 16308)\nA norma ABNT NBR 16308 classifica as biomantas em quatro classes funcionais. A Classe I destina-se à proteção temporária (até 12 meses), a Classe II à proteção de curta duração (12–24 meses), a Classe III à proteção de média duração (24–48 meses) e a Classe IV à proteção de longa duração (superior a 48 meses).",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Biomantas e Geossintéticos Biodegradáveis</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/11-biomantas.html#propriedades-mecânicas",
+    "href": "capitulos/11-biomantas.html#propriedades-mecânicas",
+    "title": "11  Biomantas e Geossintéticos Biodegradáveis",
+    "section": "11.3 Propriedades Mecânicas",
+    "text": "11.3 Propriedades Mecânicas\n\n\n\nTabela 11.2: Propriedades mecânicas comparativas.\n\n\n\n\n\n\n\n\n\n\n\nPropriedade\nBiomanta de coco\nBiomanta de juta\nGeotêxtil sintético\n\n\n\n\nMassa por área\n400–900 g/m²\n300–600 g/m²\n100–400 g/m²\n\n\nResistência à tração\n2–8 kN/m\n1–4 kN/m\n5–50 kN/m\n\n\nRetenção hídrica\nAlta\nModerada\nBaixa\n\n\nPermeabilidade\nAlta\nAlta\nVariável\n\n\nBiodegradabilidade\nSim (2–4 anos)\nSim (1–2 anos)\nNão",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Biomantas e Geossintéticos Biodegradáveis</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/11-biomantas.html#instalação",
+    "href": "capitulos/11-biomantas.html#instalação",
+    "title": "11  Biomantas e Geossintéticos Biodegradáveis",
+    "section": "11.4 Instalação",
+    "text": "11.4 Instalação\n\n11.4.1 Preparação do Terreno\nA preparação inicia com a regularização da superfície (remoção de torrões e pedras soltas), seguida pela aplicação de fertilizante e sementes antes da biomanta e pela abertura de trincheira de ancoragem no topo do talude (15×15 cm).\n\n\n11.4.2 Fixação\nA biomanta é ancorada na trincheira superior com grampos em U e desenrolada de cima para baixo ao longo do talude. A fixação é feita com grampos metálicos a cada 0,5–1,0 m em padrão alternado, com sobreposição de pelo menos 10 cm entre faixas adjacentes, finalizando com ancoragem na trincheira inferior.\n\n\n11.4.3 Grampeamento\nUtilizam-se grampos em U de aço CA-25 (Ø 5 mm, comprimento 20–30 cm), com densidade de 2–4 grampos/m² em taludes inferiores a 45° e de 4–8 grampos/m² em taludes superiores a 45°, distribuídos em padrão alternado (trebolillo).\n\n\n\n\n\n\nImportantePonto crítico\n\n\n\nO contato íntimo entre a biomanta e o solo é essencial. Bolsões de ar sob a manta permitem a erosão por concentração de fluxo (piping) e são a principal causa de falha.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Biomantas e Geossintéticos Biodegradáveis</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/11-biomantas.html#vantagens-sobre-geossintéticos-convencionais",
+    "href": "capitulos/11-biomantas.html#vantagens-sobre-geossintéticos-convencionais",
+    "title": "11  Biomantas e Geossintéticos Biodegradáveis",
+    "section": "11.5 Vantagens sobre Geossintéticos Convencionais",
+    "text": "11.5 Vantagens sobre Geossintéticos Convencionais\nAs biomantas apresentam vantagens significativas frente aos geossintéticos convencionais. A biodegradabilidade elimina resíduos permanentes, e a degradação progressiva incorpora matéria orgânica (carbono) ao solo. As fibras naturais conferem retenção hídrica favorável à germinação, enquanto a rugosidade superficial reduz a velocidade do escoamento. O custo é tipicamente 30–50% inferior ao dos geossintéticos de polipropileno.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Biomantas e Geossintéticos Biodegradáveis</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/11-biomantas.html#custos",
+    "href": "capitulos/11-biomantas.html#custos",
+    "title": "11  Biomantas e Geossintéticos Biodegradáveis",
+    "section": "11.6 Custos",
+    "text": "11.6 Custos\n\n\n\nTabela 11.3: Custo médio de implantação de biomanta de coco.\n\n\n\n\n\nItem\nValor (R$/m²)\n\n\n\n\nBiomanta de coco (700 g/m²)\n8–15\n\n\nGrampos (4/m²)\n2–4\n\n\nMão de obra de instalação\n5–10\n\n\nSementes + fertilizante pré-instalação\n3–6\n\n\nTotal\n18–35",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Biomantas e Geossintéticos Biodegradáveis</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/12-enrocamento.html",
+    "href": "capitulos/12-enrocamento.html",
+    "title": "12  Enrocamento Vegetado",
+    "section": "",
+    "text": "12.1 Conceito\nO enrocamento vegetado (vegetated riprap) combina a proteção mecânica imediata de pedras com o reforço biológico progressivo fornecido por plantas vivas inseridas entre as pedras. É utilizado na proteção de margens fluviais e bases de taludes submetidos a fluxo d’água.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Enrocamento Vegetado</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/12-enrocamento.html#conceito",
+    "href": "capitulos/12-enrocamento.html#conceito",
+    "title": "12  Enrocamento Vegetado",
+    "section": "",
+    "text": "Figura 12.1: Enrocamento em margem fluvial — pedras protegem a base enquanto a vegetação se estabelece entre os interstícios.\n\n\n\n\n\n\n\n\n\n\n\nFigura 12.2: Enrocamento vegetado — combinação de proteção mecânica e biológica em estágio avançado de consolidação.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Enrocamento Vegetado</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/12-enrocamento.html#componentes",
+    "href": "capitulos/12-enrocamento.html#componentes",
+    "title": "12  Enrocamento Vegetado",
+    "section": "12.2 Componentes",
+    "text": "12.2 Componentes\nO enrocamento vegetado é composto por pedras com diâmetro médio de 15–50 cm e massa individual entre 5 e 150 kg, estacas vivas (ramos ou troncos jovens de espécies com capacidade de enraizamento vegetativo) e uma camada de filtro (geotêxtil ou camada de transição granulométrica).",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Enrocamento Vegetado</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/12-enrocamento.html#dimensionamento-das-pedras",
+    "href": "capitulos/12-enrocamento.html#dimensionamento-das-pedras",
+    "title": "12  Enrocamento Vegetado",
+    "section": "12.3 Dimensionamento das Pedras",
+    "text": "12.3 Dimensionamento das Pedras\nO diâmetro médio das pedras (\\(D_{50}\\)) é calculado em função da velocidade do fluxo:\n\\[\nD_{50} = \\frac{0{,}06 \\cdot V^2}{(\\gamma_s / \\gamma_w - 1) \\cdot g}\n\\]\nonde \\(V\\) é a velocidade do fluxo (m/s), \\(\\gamma_s\\) é o peso específico da pedra (≈ 26 kN/m³), \\(\\gamma_w\\) é o peso específico da água e \\(g\\) é a aceleração gravitacional.\n\n12.3.1 Espessura da Camada\nA espessura mínima do enrocamento (\\(e\\)) deve ser:\n\\[\ne = 1{,}5 \\cdot D_{50}\n\\]\ne nunca inferior a 30 cm.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Enrocamento Vegetado</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/12-enrocamento.html#vegetação-no-enrocamento",
+    "href": "capitulos/12-enrocamento.html#vegetação-no-enrocamento",
+    "title": "12  Enrocamento Vegetado",
+    "section": "12.4 Vegetação no Enrocamento",
+    "text": "12.4 Vegetação no Enrocamento\n\n12.4.1 Espécies Indicadas\nAs espécies indicadas para vegetação do enrocamento incluem Salix spp. (salgueiro) em zonas temperadas e subtropicais, Mimosa caesalpiniifolia (sabiá) na Caatinga, Gliricidia sepium (gliricídia) em regiões pantropicais, Inga spp. (ingá) em mata ciliar tropical, além de gramíneas rizomatosas nos interstícios.\n\n\n12.4.2 Instalação\nO procedimento de instalação inicia com a preparação da base do talude com filtro geotêxtil ou geotêxtil de coco, seguida pelo assentamento da primeira camada de pedras. As estacas vivas são inseridas entre as pedras (em ângulo de 15–20° com a horizontal) e os interstícios são preenchidos com solo vegetal. Camadas adicionais são completadas até a cota de projeto, finalizando com semeadura de gramíneas nos interstícios superficiais.\n\n\n\n\n\n\nDicaTransição funcional\n\n\n\nApós 3–5 anos, as raízes das estacas vivas penetram 1–3 m no solo, criando uma ancoragem biológica que complementa e gradualmente substitui a função mecânica das pedras. O enrocamento evolui de uma estrutura inerte para um ecossistema ripário funcional.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Enrocamento Vegetado</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/12-enrocamento.html#aplicações-típicas",
+    "href": "capitulos/12-enrocamento.html#aplicações-típicas",
+    "title": "12  Enrocamento Vegetado",
+    "section": "12.5 Aplicações Típicas",
+    "text": "12.5 Aplicações Típicas\n\n\n\nTabela 12.1: Dimensionamento de enrocamento por velocidade de fluxo.\n\n\n\n\n\nSituação\nVelocidade do fluxo\nD₅₀ recomendado\nEspessura\n\n\n\n\nMargens com erosão lenta\n1–2 m/s\n10–20 cm\n30 cm\n\n\nMargens com erosão ativa\n2–3 m/s\n20–35 cm\n40–55 cm\n\n\nPilares de ponte\n3–4 m/s\n35–50 cm\n55–75 cm\n\n\nVertedouros de barragens\n&gt; 4 m/s\n&gt; 50 cm\n&gt; 75 cm",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Enrocamento Vegetado</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/12-enrocamento.html#custos",
+    "href": "capitulos/12-enrocamento.html#custos",
+    "title": "12  Enrocamento Vegetado",
+    "section": "12.6 Custos",
+    "text": "12.6 Custos\nO enrocamento simples custa entre R$ 80 e R$ 150/m², enquanto o enrocamento vegetado situa-se entre R$ 100 e R$ 200/m². Para comparação, o muro de gabião varia de R$ 200 a R$ 400/m².\nO sobrecusto da vegetação (20–30%) é justificado pelos serviços ecossistêmicos adicionais: habitat para fauna, filtração da água, estabilidade em longo prazo e paisagem.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Enrocamento Vegetado</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/13-cordoes-fascinas.html",
+    "href": "capitulos/13-cordoes-fascinas.html",
+    "title": "13  Cordões Vegetativos e Fascinas",
+    "section": "",
+    "text": "13.1 Cordões Vegetativos",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Cordões Vegetativos e Fascinas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/13-cordoes-fascinas.html#cordões-vegetativos",
+    "href": "capitulos/13-cordoes-fascinas.html#cordões-vegetativos",
+    "title": "13  Cordões Vegetativos e Fascinas",
+    "section": "",
+    "text": "13.1.1 Conceito\n\n\n\n\n\n\nFigura 13.1: Construção de cordão vegetativo com entrelaçamento de ramos — barreira biológica que retarda o escoamento superficial.\n\n\n\nOs cordões vegetativos são faixas de vegetação densa (1–3 m de largura) dispostas ao longo de curvas de nível, formando barreiras biológicas ao escoamento superficial. Funcionam como filtros que retêm sedimentos e reduzem a velocidade da enxurrada.\n\n\n\n\n\n\n\n\n\nFigura 13.2: Cerca de fascina com salgueiro — estrutura biodegradável que estabiliza taludes por entrelaçamento de ramos.\n\n\n\n\n\n\n\n\n\n\n\nFigura 13.3: Barreira de salgueiro — cordão vegetativo em estágio avançado com brotamento das estacas.\n\n\n\n\n\n\n\n\n13.1.2 Espécies\n\n\n\n\n\n\nFigura 13.4: Análise de campo do sistema radicular de vetiver — raízes profundas (até 4 m) que conferem alta resistência à tração.\n\n\n\nA espécie mais utilizada mundialmente para cordões vegetativos é o vetiver (Vetiveria zizanioides), em razão de seu sistema radicular vertical e profundo (até 4 m), de sua resistência à tração radicular de 40–120 MPa, da formação de barreira densa e impenetrável pelo fluxo, e de sua tolerância a condições extremas (pH 3–11, seca e encharcamento).\nOutras opções tropicais incluem capim-elefante (Pennisetum purpureum), cana-de-açúcar (em curvas de nível) e citronela (Cymbopogon nardus).\n\n\n13.1.3 Dimensionamento\nO espaçamento vertical entre cordões deve ser de 1–2 m de desnivel, com largura de faixa de 1–3 m. O espaçamento horizontal resultante é dado por \\(E_h = \\frac{\\Delta h}{S}\\), onde \\(\\Delta h\\) é o desnivel e \\(S\\) é a declividade.\n\n\n13.1.4 Eficiência\nCordões de vetiver demonstram redução de 60–70% na velocidade do escoamento, retenção de 70–90% dos sedimentos grossos e formação progressiva de terraços naturais a montante.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Cordões Vegetativos e Fascinas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/13-cordoes-fascinas.html#fascinas",
+    "href": "capitulos/13-cordoes-fascinas.html#fascinas",
+    "title": "13  Cordões Vegetativos e Fascinas",
+    "section": "13.2 Fascinas",
+    "text": "13.2 Fascinas\n\n13.2.1 Conceito\nAs fascinas (fascines) são cilindros de ramos vivos amarrados, instalados em valas ao longo de curvas de nível ou na base de taludes. Combinam função de retenção mecânica com colonização vegetal.\n\n\n13.2.2 Tipos\nFascina viva — ramos de espécies com capacidade de rebrota (salgueiro, gliricídia, sabiá). Após o enraizamento, forma uma sebe densa e permanente.\nFascina inerte — ramos secos ou fibras vegetais sem capacidade de rebrota. Função exclusivamente mecânica, com durabilidade de 1–3 anos.\n\n\n13.2.3 Dimensionamento\n\n\n\nTabela 13.1: Dimensionamento de fascinas vivas e inertes.\n\n\n\n\n\nParâmetro\nFascina viva\nFascina inerte\n\n\n\n\nDiâmetro\n15–30 cm\n20–40 cm\n\n\nComprimento\n2–4 m\n2–4 m\n\n\nProfundidade de enterrio\n1/2 do diâmetro\n2/3 do diâmetro\n\n\nFixação\nEstacas vivas a cada 1 m\nEstacas de madeira a cada 0,8 m\n\n\n\n\n\n\n\n\n13.2.4 Instalação\nA instalação de fascinas inicia com a escavação de vala com profundidade igual a metade do diâmetro da fascina. O cilindro é posicionado na vala seguindo a curva de nível e fixado com estacas vivas alternadas (frente e atrás). Terra é compactada no lado montante e a fascina é coberta com terra vegetal nessa mesma face.\n\n\n13.2.5 Aplicações\nAs fascinas prestam-se à estabilização de bases de taludes (na interface solo-ar), à proteção de margens (submersas na cota de nível d’água), ao controle de ravinas (como micro-barragens transversais) e à construção de terraços biodegradáveis em substituição aos terraços de terra.\n\n\n\n\n\n\nDicaCombinação com outras técnicas\n\n\n\nFascinas vivas + biomantas + hidrossemeadura formam um sistema triplamente redundante: proteção imediata (biomanta), médio prazo (fascina viva) e longo prazo (vegetação herbácea e arbustiva).",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Cordões Vegetativos e Fascinas</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/14-gabiao-vivo.html",
+    "href": "capitulos/14-gabiao-vivo.html",
+    "title": "14  Gabião Vivo",
+    "section": "",
+    "text": "14.1 Conceito\nO gabião vivo (vegetated gabion) é uma variação do gabião metálico convencional que incorpora estacas vivas e solo vegetal entre as camadas de pedras. O objetivo é promover a transição funcional da resistência mecânica do arame para a ancoragem biológica do sistema radicular.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Gabião Vivo</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/14-gabiao-vivo.html#conceito",
+    "href": "capitulos/14-gabiao-vivo.html#conceito",
+    "title": "14  Gabião Vivo",
+    "section": "",
+    "text": "Figura 14.1: Gabião convencional em margem fluvial — estrutura metálica preenchida com pedras.\n\n\n\n\n\n\n\n\n\n\n\nFigura 14.2: Gabião vivo com vegetação emergente — a transição funcional da resistência mecânica para a ancoragem biológica.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Gabião Vivo</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/14-gabiao-vivo.html#transição-estrutural",
+    "href": "capitulos/14-gabiao-vivo.html#transição-estrutural",
+    "title": "14  Gabião Vivo",
+    "section": "14.2 Transição Estrutural",
+    "text": "14.2 Transição Estrutural\nO ciclo de vida do gabião vivo pode ser representado em três fases:\n\n\n\nTabela 14.1: Fases da transição funcional do gabião vivo.\n\n\n\n\n\n\n\n\n\n\n\n\nFase\nPeríodo\nResistência dominante\nContribuição do arame\nContribuição radicular\n\n\n\n\nEstrutural\n0–5 anos\nArame + pedras\n100%\n0–20%\n\n\nTransição\n5–15 anos\nArame + raízes\n60–40%\n40–60%\n\n\nBiológica\n15–25+ anos\nRaízes + pedras\n0–20%\n80–100%\n\n\n\n\n\n\n\n\n\n\n\n\nNotaConceito-chave\n\n\n\nA cesta de arame galvanizado tem vida útil de 15–25 anos. Quando o arame se deteriora, o sistema radicular já deve ter desenvolvido coesão suficiente (15–25 kPa) para manter a estabilidade.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Gabião Vivo</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/14-gabiao-vivo.html#dimensionamento-estrutural",
+    "href": "capitulos/14-gabiao-vivo.html#dimensionamento-estrutural",
+    "title": "14  Gabião Vivo",
+    "section": "14.3 Dimensionamento Estrutural",
+    "text": "14.3 Dimensionamento Estrutural\n\n14.3.1 Verificação ao Tombamento\n\\[\nFS_{tomb} = \\frac{M_{resistente}}{M_{atuante}} \\geq 1{,}5\n\\]\n\n\n14.3.2 Verificação ao Deslizamento\n\\[\nFS_{desl} = \\frac{N \\cdot \\tan \\phi + c \\cdot B}{E_a} \\geq 1{,}5\n\\]\nonde \\(N\\) é a força normal, \\(\\phi\\) é o ângulo de atrito solo-gabião, \\(c\\) é a coesão, \\(B\\) é a base do gabião e \\(E_a\\) é o empuxo ativo.\n\n\n14.3.3 Verificação da Capacidade de Carga\n\\[\nFS_{cap} = \\frac{q_{ult}}{q_{atuante}} \\geq 3{,}0\n\\]",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Gabião Vivo</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/14-gabiao-vivo.html#construção",
+    "href": "capitulos/14-gabiao-vivo.html#construção",
+    "title": "14  Gabião Vivo",
+    "section": "14.4 Construção",
+    "text": "14.4 Construção\n\n14.4.1 Materiais\nOs materiais necessários incluem cestas de tela de arame galvanizado dupla torção (malha 8×10 cm, Ø 2,7–3,4 mm), pedras com diâmetro de 10–25 cm (compactas e resistentes), estacas vivas (ramos de 2–5 cm de diâmetro, com comprimento igual à largura do gabião mais 30 cm) e solo vegetal (mistura de solo local com composto orgânico).\n\n\n14.4.2 Passo a Passo\nA construção inicia com a preparação da fundação (trincheira de encastramento de 30–50 cm), seguida pela montagem e amarração da cesta metálica. O preenchimento é realizado em camadas de 1/3 da altura, intercalando pedras, estacas vivas horizontais (com pontas projetando 20–30 cm da face) e solo vegetal nos interstícios. Após a terceira camada, instalam-se tirantes internos e fecha-se a tampa. A etapa final consiste no plantio de gramíneas e herbáceas na face exposta.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Gabião Vivo</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/14-gabiao-vivo.html#coesão-radicular",
+    "href": "capitulos/14-gabiao-vivo.html#coesão-radicular",
+    "title": "14  Gabião Vivo",
+    "section": "14.5 Coesão Radicular",
+    "text": "14.5 Coesão Radicular\nO incremento de coesão proporcionado pelo sistema radicular segue a curva de crescimento sigmoidal:\n\\[\nc_r(t) = c_{r,max} \\cdot \\frac{1}{1 + e^{-k(t - t_0)}}\n\\]\nonde \\(c_{r,max}\\) é a coesão máxima (15–25 kPa), \\(k\\) é a taxa de crescimento e \\(t_0\\) é o tempo de inflexão (tipicamente 5–8 anos).",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Gabião Vivo</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/14-gabiao-vivo.html#normas-aplicáveis",
+    "href": "capitulos/14-gabiao-vivo.html#normas-aplicáveis",
+    "title": "14  Gabião Vivo",
+    "section": "14.6 Normas Aplicáveis",
+    "text": "14.6 Normas Aplicáveis\nAs normas aplicáveis ao dimensionamento e construção de gabiões incluem a ABNT NBR 10514 (gabiões e colchões reno), a ASTM A975 (gabião metálico), a EN 10223-3 (tela de dupla torção) e a DNIT 062 (contenções com gabiões).",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Gabião Vivo</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/14-gabiao-vivo.html#custos-comparativos",
+    "href": "capitulos/14-gabiao-vivo.html#custos-comparativos",
+    "title": "14  Gabião Vivo",
+    "section": "14.7 Custos Comparativos",
+    "text": "14.7 Custos Comparativos\n\n\n\nTabela 14.2: Custos comparativos de estruturas de contenção.\n\n\n\n\n\nSolução\nCusto (R$/m³)\n\n\n\n\nGabião convencional\n350–550\n\n\nGabião vivo\n400–650\n\n\nMuro de concreto armado\n800–1.500\n\n\nSolo reforçado com geossintético\n500–900",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Gabião Vivo</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/15-parede-krainer.html",
+    "href": "capitulos/15-parede-krainer.html",
+    "title": "15  Parede Krainer",
+    "section": "",
+    "text": "15.1 Conceito\nA parede Krainer (Krainer wall ou crib wall) é uma estrutura de contenção em grelha de troncos de madeira preenchida com solo e vegetação. Originária dos Alpes austríacos, foi adaptada para uso em regiões tropicais utilizando madeiras locais.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Parede Krainer</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/15-parede-krainer.html#conceito",
+    "href": "capitulos/15-parede-krainer.html#conceito",
+    "title": "15  Parede Krainer",
+    "section": "",
+    "text": "Figura 15.1: Parede Krainer instalada — grelha de troncos preenchida com solo e vegetação para contenção de encostas.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Parede Krainer</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/15-parede-krainer.html#tipologia",
+    "href": "capitulos/15-parede-krainer.html#tipologia",
+    "title": "15  Parede Krainer",
+    "section": "15.2 Tipologia",
+    "text": "15.2 Tipologia\n\n\n\n\n\n\n\n\n\nFigura 15.2: Parede Krainer dupla em estágio avançado — vegetação já estabelecida entre os troncos.\n\n\n\n\n\n\n\n\n\n\n\nFigura 15.3: Corte transversal esquemático da parede Krainer — mostrando o arranjo de troncos e o preenchimento com solo.\n\n\n\n\n\n\n\n15.2.1 Parede Krainer Simples\nGrelha de troncos em uma direção (longitudinal), apoiados em troncos transversais. Altura máxima recomendada: 2,0 m.\n\n\n15.2.2 Parede Krainer Dupla\nGrelha de troncos em duas direções (longitudinal + transversal), formando células de contenção. Altura máxima recomendada: 4,0 m.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Parede Krainer</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/15-parede-krainer.html#dimensionamento-estrutural",
+    "href": "capitulos/15-parede-krainer.html#dimensionamento-estrutural",
+    "title": "15  Parede Krainer",
+    "section": "15.3 Dimensionamento Estrutural",
+    "text": "15.3 Dimensionamento Estrutural\n\n15.3.1 Geometria\nA base (\\(B\\)) da parede deve ser igual ou superior a \\(0{,}5 \\cdot H\\) (mínimo de 1,0 m), com altura máxima (\\(H\\)) de 4,0 m para paredes duplas. A inclinação frontal situa-se entre 10 e 15° em relação à vertical, utilizando troncos com diâmetro de 15–30 cm e espaçamento entre troncos de 30–60 cm.\n\n\n15.3.2 Verificação de Estabilidade\nAs mesmas verificações do gabião vivo:\n\\[\nFS_{tomb} \\geq 1{,}5 \\quad;\\quad FS_{desl} \\geq 1{,}5 \\quad;\\quad FS_{cap} \\geq 3{,}0\n\\]\n\n\n15.3.3 Peso Específico da Estrutura\nO peso específico aparente da parede preenchida (\\(\\gamma_{ap}\\)):\n\\[\n\\gamma_{ap} = n_{madeira} \\cdot \\gamma_{madeira} + (1 - n_{madeira}) \\cdot \\gamma_{solo}\n\\]\nonde \\(n_{madeira}\\) é a fração volumétrica da madeira (tipicamente 15–25%).",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Parede Krainer</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/15-parede-krainer.html#seleção-de-madeiras-tropicais",
+    "href": "capitulos/15-parede-krainer.html#seleção-de-madeiras-tropicais",
+    "title": "15  Parede Krainer",
+    "section": "15.4 Seleção de Madeiras Tropicais",
+    "text": "15.4 Seleção de Madeiras Tropicais\n\n\n\nTabela 15.1: Madeiras tropicais para paredes Krainer.\n\n\n\n\n\n\n\n\n\n\n\nEspécie\nDensidade (kg/m³)\nDurabilidade natural\nDisponibilidade\n\n\n\n\nEucalyptus spp.\n550–800\n5–15 anos\nAlta\n\n\nMimosa caesalpiniifolia (sabiá)\n800–1.000\n10–20 anos\nMédia (Nordeste)\n\n\nAcacia mangium\n500–650\n5–10 anos\nMédia\n\n\nBambusa spp. (bambu)\n400–700\n3–5 anos (tratado)\nAlta\n\n\nTectona grandis (teca)\n550–700\n20+ anos\nBaixa\n\n\n\n\n\n\n\n\n\n\n\n\nDicaTratamento preservativo\n\n\n\nMadeiras não naturalmente duráveis devem receber tratamento com CCA (Arseniato de Cobre Cromatado) ou CCB (Borato de Cobre Cromatado) em autoclave, aumentando a durabilidade para 15–25 anos.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Parede Krainer</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/15-parede-krainer.html#estacas-vivas",
+    "href": "capitulos/15-parede-krainer.html#estacas-vivas",
+    "title": "15  Parede Krainer",
+    "section": "15.5 Estacas Vivas",
+    "text": "15.5 Estacas Vivas\nA inserção de estacas vivas entre os troncos é o que diferencia a parede Krainer convencional da versão de bioengenharia. Utilizam-se as mesmas espécies empregadas em gabiões vivos e enrocamento vegetado, com diâmetro de 3–8 cm e comprimento suficiente para transpor toda a seção da parede mais 30 cm para cada lado. As estacas são inseridas horizontalmente entre camadas de troncos, em densidade de 3–5 estacas por m² de face.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Parede Krainer</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/15-parede-krainer.html#construção",
+    "href": "capitulos/15-parede-krainer.html#construção",
+    "title": "15  Parede Krainer",
+    "section": "15.6 Construção",
+    "text": "15.6 Construção\nA construção inicia com a escavação da fundação (trincheira de encastramento de 40–60 cm), posicionando-se os troncos longitudinais na base com o espaçamento definido. Os troncos transversais são apoiados perpendicularmente e fixados com pregos ou parafusos. As células formadas são preenchidas com solo vegetal compactado, intercalando-se estacas vivas entre camadas. O procedimento é repetido por empilhamento até a altura de projeto, finalizando com o plantio de gramíneas e arbustos na face e no topo.\n\n\n\n\n\n\n\n\n\nFigura 15.4: Vista tridimensional da parede Krainer — arranjo estrutural dos troncos longitudinais e transversais.\n\n\n\n\n\n\n\n\n\n\n\nFigura 15.5: Peças componentes da parede Krainer — troncos longitudinais, transversais e estacas vivas.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Parede Krainer</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/15-parede-krainer.html#drenagem",
+    "href": "capitulos/15-parede-krainer.html#drenagem",
+    "title": "15  Parede Krainer",
+    "section": "15.7 Drenagem",
+    "text": "15.7 Drenagem\nA parede Krainer é autordrenante graças aos espaços entre troncos. No entanto, em solos com alto teor de finos, recomenda-se a instalação de barbacãs de PVC (Ø 50 mm) a cada 2–3 m² e de uma camada de brita ou geotêxtil na interface solo-parede.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Parede Krainer</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/15-parede-krainer.html#aplicações",
+    "href": "capitulos/15-parede-krainer.html#aplicações",
+    "title": "15  Parede Krainer",
+    "section": "15.8 Aplicações",
+    "text": "15.8 Aplicações\n\n\n\nTabela 15.2: Aplicações típicas da parede Krainer.\n\n\n\n\n\nAplicação\nAltura típica\nTipo de parede\n\n\n\n\nMargens de rios\n1,5–3,0 m\nDupla\n\n\nTaludes viários\n1,0–2,5 m\nSimples ou dupla\n\n\nEstabilização de encostas\n2,0–4,0 m\nDupla\n\n\nControle de voçorocas\n1,0–2,0 m\nSimples",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Parede Krainer</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/16-canaleta-verde.html",
+    "href": "capitulos/16-canaleta-verde.html",
+    "title": "16  Canaleta Verde",
+    "section": "",
+    "text": "16.1 Conceito\nA canaleta verde (vegetated swale ou bioswale) é um canal de drenagem aberto com seção trapezoidal ou parabólica, revestido com vegetação herbácea densa. Funciona simultaneamente como condutor hidráulico e como sistema de tratamento por infiltração e filtração.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Canaleta Verde</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/16-canaleta-verde.html#conceito",
+    "href": "capitulos/16-canaleta-verde.html#conceito",
+    "title": "16  Canaleta Verde",
+    "section": "",
+    "text": "Figura 16.1: Canaleta verde com vegetação herbácea estabelecida — canal de drenagem naturalizado que combina condução hidráulica com tratamento por infiltração.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Canaleta Verde</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/16-canaleta-verde.html#funções",
+    "href": "capitulos/16-canaleta-verde.html#funções",
+    "title": "16  Canaleta Verde",
+    "section": "16.2 Funções",
+    "text": "16.2 Funções\n\n\n\n\n\n\nFigura 16.2: Canaleta verde com hidrossemeadura — integração de drenagem naturalizada com revegetação por hidrossemeadura.\n\n\n\nA canaleta verde desempenha cinco funções simultâneas. Promove a condução controlada do escoamento superficial, a infiltração para recarga do aquífero, a filtração de sedimentos e nutrientes, o amortecimento do pico de cheia, e a integração paisagística com geração de serviços ecossistêmicos.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Canaleta Verde</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/16-canaleta-verde.html#dimensionamento-hidráulico",
+    "href": "capitulos/16-canaleta-verde.html#dimensionamento-hidráulico",
+    "title": "16  Canaleta Verde",
+    "section": "16.3 Dimensionamento Hidráulico",
+    "text": "16.3 Dimensionamento Hidráulico\n\n16.3.1 Equação de Manning\n\\[\nQ = \\frac{1}{n} \\cdot A \\cdot R_h^{2/3} \\cdot S^{1/2}\n\\]\nPara canais vegetados, o coeficiente de Manning (\\(n\\)) varia com a espécie e a altura da vegetação:\n\n\n\nTabela 16.1: Coeficientes de Manning para canais vegetados.\n\n\n\n\n\nCobertura vegetal\nn de Manning\n\n\n\n\nGrama curta (&lt; 10 cm)\n0,030–0,035\n\n\nGrama média (10–25 cm)\n0,035–0,045\n\n\nGrama alta (&gt; 25 cm)\n0,045–0,060\n\n\nVegetação densa + arbustos\n0,060–0,100\n\n\n\n\n\n\n\n\n16.3.2 Regime de Escoamento\nPara que a canaleta funcione adequadamente sem causar erosão, o escoamento deve ser subcrítico (Froude &lt; 1):\n\\[\nFr = \\frac{V}{\\sqrt{g \\cdot y}} &lt; 1{,}0\n\\]\nonde \\(V\\) é a velocidade média e \\(y\\) é a profundidade do escoamento.\n\n\n16.3.3 Tensão Cisalhante Admissível\nA velocidade máxima admissível é limitada pela tensão cisalhante que a vegetação suporta:\n\\[\n\\tau = \\gamma_w \\cdot R_h \\cdot S\n\\]\n\n\n\nTabela 16.2: Tensão cisalhante e velocidade admissíveis para canais vegetados.\n\n\n\n\n\nCobertura\n\\(\\tau_{adm}\\) (Pa)\n\\(V_{max}\\) (m/s)\n\n\n\n\nGrama curta\n30–50\n1,5–2,0\n\n\nGrama densa\n50–100\n2,0–2,5\n\n\nGrama + arbustos\n100–170\n2,5–3,0\n\n\n\n\n\n\n\n\n16.3.4 Seção Trapezoidal\nPara uma canaleta com seção trapezoidal:\n\\[\nA = (b + m \\cdot y) \\cdot y\n\\]\n\\[\nP = b + 2y\\sqrt{1 + m^2}\n\\]\nonde \\(b\\) é a largura da base, \\(m\\) é a inclinação dos taludes laterais (H:V) e \\(y\\) é a profundidade.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Canaleta Verde</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/16-canaleta-verde.html#projeto-típico",
+    "href": "capitulos/16-canaleta-verde.html#projeto-típico",
+    "title": "16  Canaleta Verde",
+    "section": "16.4 Projeto Típico",
+    "text": "16.4 Projeto Típico\n\n\n\nTabela 16.3: Parâmetros de projeto para canaleta verde.\n\n\n\n\n\nParâmetro\nValor recomendado\n\n\n\n\nLargura da base\n0,5–2,0 m\n\n\nProfundidade\n0,3–0,6 m\n\n\nInclinação lateral\n≥ 3:1 (H:V)\n\n\nDeclividade longitudinal\n1–5%\n\n\nBorda livre\n≥ 15 cm\n\n\nVelocidade máxima\n≤ 2,0 m/s",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Canaleta Verde</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/16-canaleta-verde.html#vantagens-sobre-canaletas-de-concreto",
+    "href": "capitulos/16-canaleta-verde.html#vantagens-sobre-canaletas-de-concreto",
+    "title": "16  Canaleta Verde",
+    "section": "16.5 Vantagens sobre Canaletas de Concreto",
+    "text": "16.5 Vantagens sobre Canaletas de Concreto\n\n\n\nTabela 16.4: Comparativo entre canaletas de concreto e canaletas verdes.\n\n\n\n\n\nCritério\nCanaleta de concreto\nCanaleta verde\n\n\n\n\nCusto de implantação\nR$ 150–400/m\nR$ 40–120/m\n\n\nInfiltração\nNula\n30–60% do volume\n\n\nRemoção de sedimentos\n~ 0%\n60–85%\n\n\nManutenção\nLimpeza mecânica\nRoçada 2–4×/ano\n\n\nVida útil\n30+ anos\nPermanente (vegetal)\n\n\nEmissão de CO₂\nAlta (concreto)\nSequestro\n\n\n\n\n\n\n\n\n\n\n\n\nDicaInfraestrutura verde\n\n\n\nCanaletas verdes são um componente central da infraestrutura verde urbana (green infrastructure), reconhecidas como solução baseada na natureza pela IUCN e pelo Banco Mundial.",
+    "crumbs": [
+      "Parte II — Técnicas de Bioengenharia",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Canaleta Verde</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/17-geotexteis.html",
+    "href": "capitulos/17-geotexteis.html",
+    "title": "17  Geotêxteis no Controle de Erosão",
+    "section": "",
+    "text": "17.1 Conceito\nOs geotêxteis são produtos têxteis permeáveis utilizados em contato com o solo para desempenhar funções de filtração, separação, reforço, drenagem e proteção. No contexto da bioengenharia, os geotêxteis controlam a erosão superficial enquanto permitem o estabelecimento vegetal.",
+    "crumbs": [
+      "Parte III — Geotêxteis e Inovação",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Geotêxteis no Controle de Erosão</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/17-geotexteis.html#conceito",
+    "href": "capitulos/17-geotexteis.html#conceito",
+    "title": "17  Geotêxteis no Controle de Erosão",
+    "section": "",
+    "text": "Figura 17.1: Talude revestido com geotêxtil — o material têxtil protege o solo enquanto permite o crescimento da vegetação.",
+    "crumbs": [
+      "Parte III — Geotêxteis e Inovação",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Geotêxteis no Controle de Erosão</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/17-geotexteis.html#classificação",
+    "href": "capitulos/17-geotexteis.html#classificação",
+    "title": "17  Geotêxteis no Controle de Erosão",
+    "section": "17.2 Classificação",
+    "text": "17.2 Classificação\n\n\n\n\n\n\n\n\n\nFigura 17.2: Máquina universal de ensaios — equipamento para medição de resistência à tração e perfuração dos geotêxteis.\n\n\n\n\n\n\n\n\n\n\n\nFigura 17.3: Câmara de degradação acelerada — simulação de envelhecimento UV e inttempéries para avaliar durabilidade.\n\n\n\n\n\n\n\n17.2.1 Por Processo de Fabricação\nTecidos — fibras entrelaçadas em trama regular (máquina de tecelagem). Alta resistência à tração em uma ou duas direções.\nNão tecidos — fibras dispostas aleatoriamente e unidas por agulhamento, termofusão ou ligação química. Alta permeabilidade e deformabilidade.\n\n\n17.2.2 Por Matéria-Prima\nSintéticos — polipropileno (PP), poliéster (PET), polietileno (PE). Durabilidade de 50–100+ anos.\nNaturais — coco, juta, sisal, taboa (Typha), rami. Biodegradáveis (1–5 anos). Também chamados biogeotêxteis.",
+    "crumbs": [
+      "Parte III — Geotêxteis e Inovação",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Geotêxteis no Controle de Erosão</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/17-geotexteis.html#funções-geotécnicas",
+    "href": "capitulos/17-geotexteis.html#funções-geotécnicas",
+    "title": "17  Geotêxteis no Controle de Erosão",
+    "section": "17.3 Funções Geotécnicas",
+    "text": "17.3 Funções Geotécnicas\n\n\n\nTabela 17.1: Funções geotécnicas de geotêxteis.\n\n\n\n\n\n\n\n\n\n\nFunção\nMecanismo\nAplicação na bioengenharia\n\n\n\n\nFiltração\nReter solo, passar água\nDrenos, base de enrocamento\n\n\nSeparação\nImpedir mistura de camadas\nInterface solo-pedra\n\n\nReforço\nResistir à tração\nTaludes, solo reforçado\n\n\nProteção\nAbsorver impacto\nProteção de geomembranas\n\n\nDrenagem\nConduzir fluidos no plano\nGeodrenos\n\n\nControle de erosão\nCobrir e proteger superfície\nBiomantas, TRM",
+    "crumbs": [
+      "Parte III — Geotêxteis e Inovação",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Geotêxteis no Controle de Erosão</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/17-geotexteis.html#propriedades",
+    "href": "capitulos/17-geotexteis.html#propriedades",
+    "title": "17  Geotêxteis no Controle de Erosão",
+    "section": "17.4 Propriedades",
+    "text": "17.4 Propriedades\n\n17.4.1 Mecânicas\nAs propriedades mecânicas fundamentais incluem a resistência à tração (kN/m, ensaio de faixa larga conforme ABNT NBR 12824), o alongamento na ruptura (% de deformação máxima), a resistência ao puncionamento (kN, ensaio CBR conforme ABNT NBR 13359) e a resistência ao rasgo (kN, ensaio trapezoidal).\n\n\n17.4.2 Hidráulicas\nAs propriedades hidráulicas compreendem a permissividade (\\(\\psi\\), s⁻¹), que indica a capacidade de fluxo perpendicular, a transmissividade (\\(\\theta\\), m²/s), que mede a capacidade de fluxo no plano, e a abertura de filtração (\\(O_{95}\\), mm), que define o tamanho dos poros.\n\n\n17.4.3 Critério de Filtração\nPara que o geotêxtil funcione como filtro sem colmatar:\n\\[\nO_{95} &lt; (2 \\text{ a } 3) \\cdot D_{85,solo}\n\\]\ne\n\\[\nO_{95} &gt; (1 \\text{ a } 2) \\cdot D_{15,solo}\n\\]",
+    "crumbs": [
+      "Parte III — Geotêxteis e Inovação",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Geotêxteis no Controle de Erosão</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/17-geotexteis.html#geotêxteis-no-baixo-são-francisco",
+    "href": "capitulos/17-geotexteis.html#geotêxteis-no-baixo-são-francisco",
+    "title": "17  Geotêxteis no Controle de Erosão",
+    "section": "17.5 Geotêxteis no Baixo São Francisco",
+    "text": "17.5 Geotêxteis no Baixo São Francisco\n\n\n\n\n\n\nFigura 17.4: Coleta de dados em campo no Baixo São Francisco — monitoramento da performance dos geotêxteis em taludes marginais.\n\n\n\nA aplicação de biogeotêxteis (coco, juta, sisal) na proteção de taludes marginais do rio São Francisco em Sergipe e Alagoas demonstrou redução de 90–95% na perda de solo no primeiro ano, cobertura vegetal superior a 80% em 90 dias sob biomantas de coco, biodegradação controlada em 2–5 anos (suficiente para estabelecimento vegetal) e custo 40–60% inferior ao gabião metálico para a mesma extensão protegida.",
+    "crumbs": [
+      "Parte III — Geotêxteis e Inovação",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Geotêxteis no Controle de Erosão</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/17-geotexteis.html#ensaios-normatizados",
+    "href": "capitulos/17-geotexteis.html#ensaios-normatizados",
+    "title": "17  Geotêxteis no Controle de Erosão",
+    "section": "17.6 Ensaios Normatizados",
+    "text": "17.6 Ensaios Normatizados\n\n\n\nTabela 17.2: Ensaios normatizados para geotêxteis.\n\n\n\n\n\nEnsaio\nNorma ABNT\nNorma ASTM\n\n\n\n\nTração faixa larga\nNBR 12824\nD4595\n\n\nPuncionamento CBR\nNBR 13359\nD6241\n\n\nRasgo trapezoidal\nNBR 15314\nD4533\n\n\nPermissividade\nNBR 15223\nD4491\n\n\nAbertura de filtração\nNBR 12956\nD4751\n\n\nMassa por unidade de área\nNBR 12568\nD5261\n\n\n\n\n\n\n\n\n\n\n\n\nNotaTendência\n\n\n\nA substituição progressiva de geossintéticos sintéticos por naturais (biogeotêxteis) em aplicações de controle de erosão é uma tendência global alinhada com os princípios de economia circular e soluções baseadas na natureza.",
+    "crumbs": [
+      "Parte III — Geotêxteis e Inovação",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Geotêxteis no Controle de Erosão</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/18-biotexteis.html",
+    "href": "capitulos/18-biotexteis.html",
+    "title": "18  Biotêxteis de Fibras Vegetais",
+    "section": "",
+    "text": "18.1 Conceito\nOs biotêxteis são geotêxteis fabricados exclusivamente a partir de fibras vegetais, projetados para biodegradação controlada. Representam uma evolução dos geotêxteis convencionais alinhada com princípios de economia circular e soluções baseadas na natureza.",
+    "crumbs": [
+      "Parte III — Geotêxteis e Inovação",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Biotêxteis de Fibras Vegetais</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/18-biotexteis.html#conceito",
+    "href": "capitulos/18-biotexteis.html#conceito",
+    "title": "18  Biotêxteis de Fibras Vegetais",
+    "section": "",
+    "text": "Figura 18.1: Tear para confecção de biotêxteis — fibras vegetais sendo tramadas para produzir geotêxteis biodegradáveis.\n\n\n\n\n\n\n\n\n\n\n\nFigura 18.2: Fibra de junco utilizada na produção de biotêxteis — matéria-prima renovável e abundante.",
+    "crumbs": [
+      "Parte III — Geotêxteis e Inovação",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Biotêxteis de Fibras Vegetais</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/18-biotexteis.html#geotêxtil-de-taboa-typha-domingensis",
+    "href": "capitulos/18-biotexteis.html#geotêxtil-de-taboa-typha-domingensis",
+    "title": "18  Biotêxteis de Fibras Vegetais",
+    "section": "18.2 Geotêxtil de Taboa (Typha domingensis)",
+    "text": "18.2 Geotêxtil de Taboa (Typha domingensis)\n\n18.2.1 Desenvolvimento\nO geotêxtil tecido tipo geogrid de taboa é uma inovação protegida por patente INPI BR1020230222110 (concedida 2025), desenvolvida pelo autor e colaboradores.\n\n\n18.2.2 Características\nO geotêxtil de taboa é produzido a partir de folhas de Typha domingensis Pers. (macrófita aquática), tecido em padrão tela simples (plain weave) formando uma malha aberta tipo geogrid com abertura de 10–30 mm (ajustável). A massa por área varia de 300 a 800 g/m², a resistência à tração situa-se entre 2 e 8 kN/m, e a biodegradação ocorre em 12–36 meses (controlável por tratamento).\n\n\n18.2.3 Mecanismo de Intertravamento\nO padrão geogrid permite o intertravamento mecânico com o solo: as partículas de solo penetram nas aberturas da malha, criando um efeito de ancoragem que aumenta a resistência ao cisalhamento na interface solo-geotêxtil.\nA resistência de interface pode ser estimada por:\n\\[\n\\tau_{interface} = c_a + \\sigma_n \\cdot \\tan \\delta\n\\]\nonde \\(c_a\\) é a adesão e \\(\\delta\\) é o ângulo de atrito de interface (tipicamente 0,7–0,9 × \\(\\phi'\\) do solo).\n\n\n18.2.4 Vantagens\nO geotêxtil de taboa aproveita matéria-prima abundante em regiões tropicais (Typha coloniza áreas úmidas), transformando uma planta invasora em insumo produtivo (controle biológico). O custo de produção é 50–70% inferior ao dos geotêxteis sintéticos, com pegada de carbono negativa (sequestro durante o crescimento da planta).",
+    "crumbs": [
+      "Parte III — Geotêxteis e Inovação",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Biotêxteis de Fibras Vegetais</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/18-biotexteis.html#geocomposto-híbrido",
+    "href": "capitulos/18-biotexteis.html#geocomposto-híbrido",
+    "title": "18  Biotêxteis de Fibras Vegetais",
+    "section": "18.3 Geocomposto Híbrido",
+    "text": "18.3 Geocomposto Híbrido\n\n18.3.1 Conceito\nO geocomposto híbrido combina uma camada de manta de fibras vegetais (coco, juta, sisal) com uma malha de reforço de rami (Boehmeria nivea) para proteção integrada de solos.\n\n\n18.3.2 Componentes\n\n\n\nTabela 18.1: Componentes do geocomposto híbrido.\n\n\n\n\n\n\n\n\n\n\nCamada\nMaterial\nFunção\n\n\n\n\nSuperior\nManta de fibra de coco\nProteção contra impacto, retenção hídrica\n\n\nIntermediária\nMalha de rami\nReforço mecânico\n\n\nInferior\nManta de fibra de coco\nContato com solo, filtração\n\n\n\n\n\n\n\n\n18.3.3 Propriedades\nO geocomposto híbrido apresenta resistência à tração combinada de 5–15 kN/m, massa por área de 600–1.200 g/m², durabilidade de 24–48 meses e retenção hídrica superior a 200% do peso seco.",
+    "crumbs": [
+      "Parte III — Geotêxteis e Inovação",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Biotêxteis de Fibras Vegetais</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/18-biotexteis.html#geodreno-vegetal-biodegradável",
+    "href": "capitulos/18-biotexteis.html#geodreno-vegetal-biodegradável",
+    "title": "18  Biotêxteis de Fibras Vegetais",
+    "section": "18.4 Geodreno Vegetal Biodegradável",
+    "text": "18.4 Geodreno Vegetal Biodegradável\n\n18.4.1 Conceito\nO geodreno vegetal é um dispositivo de drenagem subsuperficial fabricado com fibras de taboa e bananeira, utilizando resina vegetal como aglutinante.\n\n\n18.4.2 Estrutura\nO geodreno vegetal é composto por placas drenantes de fibras de taboa e bananeira prensadas, com geometria interna em espinha-de-peixe (herringbone) para condução do fluxo. O aglutinante consiste em resina de mamona (Ricinus communis) com D-limoneno, e o envoltório é de geotêxtil não tecido de fibra de coco.\n\n\n18.4.3 Desempenho\nO geodreno vegetal atinge vazão drenante de 0,5–2,0 L/(m·min) sob gradiente unitário, resistência à compressão de 50–150 kPa e biodegradação controlável em 18–36 meses.\n\n\n\n\n\n\nNotaPatentes relacionadas\n\n\n\nAs inovações apresentadas incluem o geotêxtil de taboa (BR1020230222110, concedida 2025), o geocomposto híbrido (pedido depositado) e o geodreno vegetal (pedido depositado).",
+    "crumbs": [
+      "Parte III — Geotêxteis e Inovação",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Biotêxteis de Fibras Vegetais</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/18-biotexteis.html#comparativo-de-desempenho",
+    "href": "capitulos/18-biotexteis.html#comparativo-de-desempenho",
+    "title": "18  Biotêxteis de Fibras Vegetais",
+    "section": "18.5 Comparativo de Desempenho",
+    "text": "18.5 Comparativo de Desempenho\n\n\n\nTabela 18.2: Comparativo entre biotêxteis e geotêxtil sintético (PP).\n\n\n\n\n\nPropriedade\nGeotêxtil de coco\nGeotêxtil de taboa\nGeotêxtil PP\n\n\n\n\nCusto (R$/m²)\n8–15\n5–12\n10–25\n\n\nBiodegradação\n2–4 anos\n1–3 anos\n&gt; 100 anos\n\n\nResistência tração (kN/m)\n3–8\n2–8\n5–50\n\n\nRetenção hídrica\nAlta\nMuito alta\nBaixa\n\n\nPegada CO₂\nNegativa\nNegativa\nPositiva\n\n\nReciclabilidade\nCompostável\nCompostável\nReciclável",
+    "crumbs": [
+      "Parte III — Geotêxteis e Inovação",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Biotêxteis de Fibras Vegetais</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/19-biopolimeros.html",
+    "href": "capitulos/19-biopolimeros.html",
+    "title": "19  Biopolímeros Superabsorventes",
+    "section": "",
+    "text": "19.1 Conceito\nOs biopolímeros superabsorventes (Bio-SAP — Superabsorbent Biopolymer) são materiais de origem vegetal capazes de absorver e reter grandes volumes de água (100–500× seu peso seco), liberando-a gradualmente para a zona radicular das plantas.",
+    "crumbs": [
+      "Parte III — Geotêxteis e Inovação",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Biopolímeros Superabsorventes</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/19-biopolimeros.html#conceito",
+    "href": "capitulos/19-biopolimeros.html#conceito",
+    "title": "19  Biopolímeros Superabsorventes",
+    "section": "",
+    "text": "Figura 19.1: Material de taboa (Typha domingensis) utilizado na produção do Bio-SAP — polpa celulósica processada para conferir propriedades superabsorventes.",
+    "crumbs": [
+      "Parte III — Geotêxteis e Inovação",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Biopolímeros Superabsorventes</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/19-biopolimeros.html#bio-sap-de-taboa",
+    "href": "capitulos/19-biopolimeros.html#bio-sap-de-taboa",
+    "title": "19  Biopolímeros Superabsorventes",
+    "section": "19.2 Bio-SAP de Taboa",
+    "text": "19.2 Bio-SAP de Taboa\n\n19.2.1 Desenvolvimento\nO Bio-SAP de taboa (Typha domingensis) é uma inovação desenvolvida a partir da polpa celulósica da planta, processada por carboximetilação e reticulação para conferir propriedades superabsorventes.\n\n\n19.2.2 Processo de Produção\n\n\n\n\n\nflowchart LR\n    A[Colheita\\nda taboa] --&gt; B[Extração\\nda polpa]\n    B --&gt; C[Carboximetilação\\n(NaOH + ácido\\nmonocloroacético)]\n    C --&gt; D[Reticulação\\n(epicloridrina)]\n    D --&gt; E[Secagem e\\nmoagem]\n    E --&gt; F[Bio-SAP\\ngranulado]\n\n\n\n\n\n\n\n\n19.2.3 Propriedades\n\n\n\n\n\n\nFigura 19.2: Microscopia eletrônica de varredura (MEV) do Bio-SAP — comparação da microestrutura antes e após absorção de água.\n\n\n\n\n\n\nTabela 19.1: Propriedades do Bio-SAP de taboa.\n\n\n\n\n\nPropriedade\nValor\n\n\n\n\nCapacidade de absorção em água destilada\n300–500 g/g\n\n\nCapacidade de absorção em solo\n150–250 g/g\n\n\nTempo de absorção (90%)\n15–30 min\n\n\nTaxa de liberação (50%)\n12–48 h\n\n\nBiodegradação completa\n6–18 meses\n\n\nGranulometria\n0,5–2,0 mm",
+    "crumbs": [
+      "Parte III — Geotêxteis e Inovação",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Biopolímeros Superabsorventes</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/19-biopolimeros.html#geocompostos-hidrorretentores-typha-rami",
+    "href": "capitulos/19-biopolimeros.html#geocompostos-hidrorretentores-typha-rami",
+    "title": "19  Biopolímeros Superabsorventes",
+    "section": "19.3 Geocompostos Hidrorretentores Typha-Rami",
+    "text": "19.3 Geocompostos Hidrorretentores Typha-Rami\n\n19.3.1 Conceito\n\n\n\n\n\n\nFigura 19.3: Processo de confecção do geocomposto hidrorretentor — estrutura sanduíche de biotêxtil com núcleo de Bio-SAP.\n\n\n\nOs geocompostos hidrorretentores integram o Bio-SAP em uma estrutura sanduíche de biotêxtil, criando um sistema de retenção hídrica distribuída para recuperação de encostas.\n\n\n19.3.2 Estrutura\n\n\n\nTabela 19.2: Estrutura do geocomposto hidrorretentor.\n\n\n\n\n\nCamada\nMaterial\nFunção\n\n\n\n\nExterior (×2)\nBiotêxtil de taboa-rami\nProteção + filtração\n\n\nInterior\nNúcleo de Bio-SAP\nReservatório hídrico\n\n\nAglutinante\nAloe vera + amida 90%\nFixação e ativação\n\n\n\n\n\n\n\n\n19.3.3 Desempenho\nO geocomposto hidrorretentor apresenta WHC (Water Holding Capacity) superior a 300% do peso seco, retenção de macronutrientes (N, P, K) acima de 60%, integridade estrutural mantida por 180 dias em campo, e curva de retenção ajustável pela equação de van Genuchten:\n\\[\n\\theta(h) = \\theta_r + \\frac{\\theta_s - \\theta_r}{[1 + (\\alpha \\cdot h)^n]^m}\n\\]\nonde \\(\\theta_r\\) e \\(\\theta_s\\) são os teores de água residual e saturado, \\(h\\) é o potencial matricial e \\(\\alpha\\), \\(n\\), \\(m\\) são parâmetros de ajuste.",
+    "crumbs": [
+      "Parte III — Geotêxteis e Inovação",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Biopolímeros Superabsorventes</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/19-biopolimeros.html#aplicações",
+    "href": "capitulos/19-biopolimeros.html#aplicações",
+    "title": "19  Biopolímeros Superabsorventes",
+    "section": "19.4 Aplicações",
+    "text": "19.4 Aplicações\n\n\n\n\n\n\nFigura 19.4: Ensaio de alelopatia e germinação com Bio-SAP — avaliação do efeito do biopolímero sobre o crescimento de plântulas.\n\n\n\n\n19.4.1 1. Recuperação de Encostas\nInstalado sob biomantas ou hidrossemeadura, o Bio-SAP retém a água da chuva na zona radicular, reduzindo a necessidade de irrigação em 50–70% nos primeiros 90 dias, o que é crítico em regiões semiáridas com déficit hídrico.\n\n\n19.4.2 2. Revegetação de Taludes em Mineração\nEm substratos altamente degradados (pH extremo, sem matéria orgânica), a combinação de Bio-SAP com composto orgânico cria condições mínimas para o estabelecimento vegetal, liberando água e nutrientes gradualmente.\n\n\n19.4.3 3. Produção de Mudas\nA incorporação ao substrato de viveiros reduz a frequência de irrigação em 40–60% e aumenta a taxa de sobrevivência no transplante.",
+    "crumbs": [
+      "Parte III — Geotêxteis e Inovação",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Biopolímeros Superabsorventes</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/19-biopolimeros.html#vantagens-sobre-sap-sintéticos",
+    "href": "capitulos/19-biopolimeros.html#vantagens-sobre-sap-sintéticos",
+    "title": "19  Biopolímeros Superabsorventes",
+    "section": "19.5 Vantagens sobre SAP Sintéticos",
+    "text": "19.5 Vantagens sobre SAP Sintéticos\n\n\n\nTabela 19.3: Comparativo entre SAP sintético e Bio-SAP de taboa.\n\n\n\n\n\nCritério\nSAP sintético (poliacrilato)\nBio-SAP (taboa)\n\n\n\n\nAbsorção (g/g)\n300–600\n300–500\n\n\nBiodegradação\nNão\nSim (6–18 meses)\n\n\nMicroplásticos\nSim\nNão\n\n\nMatéria-prima\nPetroquímica\nVegetal (renovável)\n\n\nCusto\nR$ 15–30/kg\nR$ 8–20/kg\n\n\nToxicidade residual\nPossível\nNenhuma\n\n\n\n\n\n\n\n\n\n\n\n\nImportanteRelevância ambiental\n\n\n\nSAPs sintéticos (poliacrilatos) são uma fonte crescente de microplásticos no solo. Sua substituição por Bio-SAPs vegetais elimina esse risco e alinha a prática com os ODS 12 (Consumo responsável) e 15 (Vida terrestre).",
+    "crumbs": [
+      "Parte III — Geotêxteis e Inovação",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Biopolímeros Superabsorventes</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/20-nbs.html",
+    "href": "capitulos/20-nbs.html",
+    "title": "20  Soluções Baseadas na Natureza",
+    "section": "",
+    "text": "20.1 Definição\nAs Soluções Baseadas na Natureza (Nature-based Solutions, NBS) são definidas pela IUCN como:",
+    "crumbs": [
+      "Parte IV — Projeto e Integração",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Soluções Baseadas na Natureza</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/20-nbs.html#definição",
+    "href": "capitulos/20-nbs.html#definição",
+    "title": "20  Soluções Baseadas na Natureza",
+    "section": "",
+    "text": "Ações para proteger, gerenciar de forma sustentável e restaurar ecossistemas naturais ou modificados, que abordam desafios sociais de forma eficaz e adaptativa, fornecendo simultaneamente benefícios para o bem-estar humano e para a biodiversidade. (IUCN, 2020)",
+    "crumbs": [
+      "Parte IV — Projeto e Integração",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Soluções Baseadas na Natureza</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/20-nbs.html#enquadramento-conceitual",
+    "href": "capitulos/20-nbs.html#enquadramento-conceitual",
+    "title": "20  Soluções Baseadas na Natureza",
+    "section": "20.2 Enquadramento Conceitual",
+    "text": "20.2 Enquadramento Conceitual\n\n\n\n\n\nflowchart TB\n    NBS[\"Soluções Baseadas\\nna Natureza (NBS)\"]\n    NBS --&gt; A[\"Restauração de\\necossistemas\"]\n    NBS --&gt; B[\"Engenharia\\necológica\"]\n    NBS --&gt; C[\"Infraestrutura\\nverde\"]\n    NBS --&gt; D[\"Adaptação baseada\\nem ecossistemas\"]\n    \n    A --&gt; E[\"Reflorestamento\\nRevegetação\"]\n    B --&gt; F[\"Bioengenharia\\nde solos\"]\n    C --&gt; G[\"Canaletas verdes\\nTelhados verdes\"]\n    D --&gt; H[\"Proteção costeira\\nManejo de bacias\"]",
+    "crumbs": [
+      "Parte IV — Projeto e Integração",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Soluções Baseadas na Natureza</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/20-nbs.html#critérios-iucn-para-nbs",
+    "href": "capitulos/20-nbs.html#critérios-iucn-para-nbs",
+    "title": "20  Soluções Baseadas na Natureza",
+    "section": "20.3 Critérios IUCN para NBS",
+    "text": "20.3 Critérios IUCN para NBS\nA IUCN estabelece 8 critérios que qualificam uma intervenção como NBS (IUCN, 2020):\n\n\n\nTabela 20.1: Critérios IUCN aplicados à bioengenharia de solos.\n\n\n\n\n\n\n\n\n\n\n#\nCritério\nExemplo em bioengenharia\n\n\n\n\n1\nAborda desafios sociais\nControle de erosão protege comunidades\n\n\n2\nDesign em escala de paisagem\nPlanejamento integrado de bacias\n\n\n3\nGanho líquido para biodiversidade\nEspaços estruturais criam habitat\n\n\n4\nEconomicamente viável\nCustos 3–5× menores que engenharia civil\n\n\n5\nGovernança inclusiva\nParticipação comunitária no projeto\n\n\n6\nEquilíbrio entre trade-offs\nEstabilidade × permeabilidade\n\n\n7\nGestão adaptativa\nMonitoramento e ajuste contínuo\n\n\n8\nSustentável e integrada\nAutossustentável após estabelecimento",
+    "crumbs": [
+      "Parte IV — Projeto e Integração",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Soluções Baseadas na Natureza</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/20-nbs.html#bioengenharia-como-nbs",
+    "href": "capitulos/20-nbs.html#bioengenharia-como-nbs",
+    "title": "20  Soluções Baseadas na Natureza",
+    "section": "20.4 Bioengenharia como NBS",
+    "text": "20.4 Bioengenharia como NBS\nA bioengenharia de solos é uma forma de NBS porque utiliza processos naturais (crescimento radicular, interceptação vegetal, ciclagem de água), gera múltiplos benefícios (estabilidade, biodiversidade, sequestro de C e valorização paisagística), é autossustentável após a fase de consolidação (aproximadamente 3–5 anos, sem necessidade de insumos) e é resiliente, adaptando-se a mudanças climáticas ao longo do tempo.",
+    "crumbs": [
+      "Parte IV — Projeto e Integração",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Soluções Baseadas na Natureza</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/20-nbs.html#análise-econômica",
+    "href": "capitulos/20-nbs.html#análise-econômica",
+    "title": "20  Soluções Baseadas na Natureza",
+    "section": "20.5 Análise Econômica",
+    "text": "20.5 Análise Econômica\n\n20.5.1 Custo-benefício de NBS vs. Engenharia Convencional\n\n\n\nTabela 20.2: Análise comparativa de custos para estabilização de encostas (valores referenciais).\n\n\n\n\n\n\n\n\n\n\n\n\nIntervenção\nCusto inicial (R\\(/m²) | Manutenção anual (R\\)/m²)\nVida útil (anos)\nVPL 20 anos (R$/m²)\n\n\n\n\n\nMuro de concreto\n800–1.500\n40–80\n30–50\n1.400–2.700\n\n\nGabião metálico\n400–700\n20–50\n25–40\n700–1.300\n\n\nGabião vivo\n250–500\n10–25\n30–50+\n400–850\n\n\nParede Krainer\n200–450\n5–15\n25–40+\n280–650\n\n\nPaliçadas + revegetação\n50–150\n5–10\n10–20\n80–250\n\n\nBiomantas + hidrossemeadura\n30–80\n2–8\n3–8\n45–130\n\n\n\n\n\n\n\n\n20.5.2 Co-benefícios valorizáveis\nAlém da função primária (estabilização/controle de erosão), as NBS geram co-benefícios que podem ser monetizados. O sequestro de carbono (2–15 tC/ha/ano) viabiliza créditos de carbono (R$ 40–120/tC), enquanto a regulação hídrica por aumento de infiltração promove a recarga de aquíferos. A criação de habitat para fauna gera serviços ecossistêmicos de biodiversidade, a valorização estética da paisagem pode impulsionar turismo e valorização imobiliária, e o sombreamento proporcionado pela vegetação contribui para o controle de temperatura e conforto térmico urbano.\n\n\n\n\n\n\nDicaValoração de co-benefícios\n\n\n\nQuando os co-benefícios são contabilizados, as NBS frequentemente apresentam VPL superior às soluções convencionais, mesmo quando o custo inicial é semelhante. A análise deve adotar horizonte de pelo menos 20 anos para capturar os benefícios do amadurecimento da vegetação.",
+    "crumbs": [
+      "Parte IV — Projeto e Integração",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Soluções Baseadas na Natureza</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/20-nbs.html#retaludamento-como-nbs",
+    "href": "capitulos/20-nbs.html#retaludamento-como-nbs",
+    "title": "20  Soluções Baseadas na Natureza",
+    "section": "20.6 Retaludamento como NBS",
+    "text": "20.6 Retaludamento como NBS\n\n\n\n\n\n\nFigura 20.1: Talude em campo antes da intervenção — superfície exposta susceptível à erosão, demandando reconfiguração geométrica e revegetação.\n\n\n\nO retaludamento vegetado é uma técnica de NBS que combina reconfiguração geométrica do talude com revegetação integrada.\n\n20.6.1 Princípios\nO retaludamento vegetado baseia-se na redução do ângulo de inclinação para valores inferiores ao ângulo de repouso, na criação de bermas intermediárias para captação de água, na revegetação das superfícies reconformadas e na implantação de sistema de drenagem naturalizado.\n\n\n20.6.2 Dimensionamento\nA inclinação do talude retaludado deve atender ao fator de segurança:\n\\[\nFS = \\frac{\\tau_f}{\\tau_a} = \\frac{c' + (\\sigma - u) \\tan \\phi'}{(\\gamma \\cdot z \\cdot \\cos\\beta) \\cdot \\sin\\beta} \\geq 1,5\n\\]\nonde \\(c'\\) representa a coesão efetiva do solo (kPa), \\(\\phi'\\) corresponde ao ângulo de atrito efetivo (°), \\(\\sigma\\) é a tensão normal (kPa), \\(u\\) é a poropressão (kPa), \\(\\gamma\\) indica o peso específico do solo (kN/m³), \\(z\\) refere-se à profundidade da superfície de ruptura (m) e \\(\\beta\\) é o ângulo de inclinação do talude (°).\nA contribuição radicular incrementa a coesão:\n\\[\nc'_{total} = c'_{solo} + \\Delta c_r\n\\]\nonde \\(\\Delta c_r\\) é a coesão radicular adicional (veja Capítulo 14 para o modelo de Wu-Waldron).",
+    "crumbs": [
+      "Parte IV — Projeto e Integração",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Soluções Baseadas na Natureza</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/20-nbs.html#casos-de-aplicação-em-regiões-tropicais",
+    "href": "capitulos/20-nbs.html#casos-de-aplicação-em-regiões-tropicais",
+    "title": "20  Soluções Baseadas na Natureza",
+    "section": "20.7 Casos de Aplicação em Regiões Tropicais",
+    "text": "20.7 Casos de Aplicação em Regiões Tropicais\n\n20.7.1 Semiárido brasileiro\nNo semiárido, o desafio central reside na pluviosidade concentrada (3–4 meses), em solos rasos sob vegetação de caatinga. A estratégia NBS combina paliçadas, bacias de captação e revegetação com espécies nativas xerófitas, resultando em redução de escoamento superficial de 50–80% e aumento significativo de cobertura vegetal.\n\n\n20.7.2 Encostas da Mata Atlântica\nNas encostas da Mata Atlântica, a precipitação intensa (superior a 2.000 mm/ano), os solos profundos e os movimentos de massa demandam soluções robustas. A combinação de gabiões vivos, paredes Krainer e revegetação com espécies arbóreas pioneiras tem promovido a estabilização de encostas com FS superior a 1,5 e regeneração florestal.\n\n\n20.7.3 Margens do rio São Francisco\nNas margens do Baixo São Francisco, a erosão marginal acelerada pós-barragem em solos arenosos constitui o principal desafio. A associação de enrocamento vegetado, biotêxteis de taboa e geotêxteis híbridos reduziu a taxa de recuo marginal em 70–90%.\n\n\n\n\n\n\nNotaNBS e ODS\n\n\n\nAs Soluções Baseadas na Natureza contribuem diretamente para os Objetivos de Desenvolvimento Sustentável 6 (Água limpa), 11 (Cidades sustentáveis), 13 (Ação climática) e 15 (Vida terrestre).\n\n\n\n\n\n\nIUCN. (2020). IUCN Global Standard for Nature-based Solutions. https://doi.org/10.2305/IUCN.CH.2020.08.en",
+    "crumbs": [
+      "Parte IV — Projeto e Integração",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Soluções Baseadas na Natureza</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/21-projeto-integrador.html",
+    "href": "capitulos/21-projeto-integrador.html",
+    "title": "21  Projeto Integrador",
+    "section": "",
+    "text": "21.1 Objetivo\nEste capítulo sintetiza os conhecimentos apresentados ao longo do livro em um projeto integrador de bioengenharia de solos, demonstrando como combinar múltiplas técnicas para resolver um problema real de degradação em região tropical.",
+    "crumbs": [
+      "Parte IV — Projeto e Integração",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Projeto Integrador</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/21-projeto-integrador.html#objetivo",
+    "href": "capitulos/21-projeto-integrador.html#objetivo",
+    "title": "21  Projeto Integrador",
+    "section": "",
+    "text": "Figura 21.1: Voçoroca ativa em solo tropical — feição erosiva de grande porte que demanda projeto integrado de múltiplas técnicas de bioengenharia.",
+    "crumbs": [
+      "Parte IV — Projeto e Integração",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Projeto Integrador</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/21-projeto-integrador.html#metodologia-de-projeto",
+    "href": "capitulos/21-projeto-integrador.html#metodologia-de-projeto",
+    "title": "21  Projeto Integrador",
+    "section": "21.2 Metodologia de Projeto",
+    "text": "21.2 Metodologia de Projeto\n\n21.2.1 Etapas do Projeto de Bioengenharia\n\n\n\n\n\nflowchart TD\n    A[\"1. Diagnóstico\\n(campo + SIG)\"] --&gt; B[\"2. Classificação\\nde feições erosivas\"]\n    B --&gt; C[\"3. Seleção de\\ntécnicas\"]\n    C --&gt; D[\"4. Dimensionamento\\nde estruturas\"]\n    D --&gt; E[\"5. Projeto\\nexecutivo\"]\n    E --&gt; F[\"6. Implantação\"]\n    F --&gt; G[\"7. Monitoramento\\ne manutenção\"]\n    G --&gt; H{\"Metas\\natingidas?\"}\n    H -- Não --&gt; I[\"Gestão adaptativa\"]\n    I --&gt; C\n    H -- Sim --&gt; J[\"Consolidação\\ne entrega\"]\n\n\n\n\n\n\n\n\n21.2.2 Etapa 1: Diagnóstico\nO diagnóstico deve integrar:\n\n\n\nTabela 21.1: Componentes do diagnóstico integrado.\n\n\n\n\n\nComponente\nMétodo\nProduto\n\n\n\n\nTopografia\nRPAS/drone + SfM\nMDE com resolução ≤ 5 cm\n\n\nSolos\nAmostragem + ensaios\nMapa pedológico, K-RUSLE\n\n\nClima\nEstação meteorológica\nSérie pluviométrica, R-RUSLE\n\n\nCobertura\nClassificação de imagem\nMapa de uso, C-RUSLE\n\n\nHidrologia\nModelagem de bacias\nMapa de contribuição, vazões\n\n\nVegetação\nInventário florístico\nLista de espécies locais\n\n\n\n\n\n\n\n\n21.2.3 Etapa 2: Classificação de Feições\nAplicar a metodologia EGC (veja Capítulo 5), mapeando todas as feições erosivas e medindo seus parâmetros geométricos. Em seguida, classificar segundo porte e dinâmica e priorizar intervenções por risco.\n\n\n21.2.4 Etapa 3: Seleção de Técnicas\nA seleção segue uma matriz de decisão baseada em:\n\n\n\nTabela 21.2: Critérios para seleção de técnicas de bioengenharia.\n\n\n\n\n\nCritério\nPeso\nVariáveis\n\n\n\n\nTipo de feição\nAlto\nClasse EGC, profundidade, atividade\n\n\nSolo\nAlto\nTextura, erodibilidade (K), coesão\n\n\nClima\nMédio\nPluviosidade, déficit hídrico\n\n\nInclinação\nAlto\nÂngulo do talude, área contribuinte\n\n\nAcesso\nMédio\nDistância, vias, máquinas\n\n\nCusto\nMédio\nOrçamento disponível, relação B/C\n\n\nPrazo\nBaixo\nUrgência, cronograma\n\n\n\n\n\n\n\n21.2.4.1 Árvore de Decisão\n\n\n\n\n\nflowchart TD\n    START[\"Feição erosiva\\nidentificada\"]\n    START --&gt; Q1{\"Profundidade\\n&gt; 1,5 m?\"}\n    Q1 -- Sim --&gt; Q2{\"Presença\\nde água?\"}\n    Q1 -- Não --&gt; Q3{\"Inclinação\\n&gt; 45°?\"}\n    \n    Q2 -- Sim --&gt; T1[\"Gabião vivo\\n+ Geodreno\"]\n    Q2 -- Não --&gt; T2[\"Parede Krainer\\n+ Revegetação\"]\n    \n    Q3 -- Sim --&gt; Q4{\"Solo\\ncoesivo?\"}\n    Q3 -- Não --&gt; T3[\"Paliçadas\\n+ Biomanta\"]\n    \n    Q4 -- Sim --&gt; T4[\"Canaleta verde\\n+ Hidrossemeadura\"]\n    Q4 -- Não --&gt; T5[\"Enrocamento\\nvegetado\"]\n\n\n\n\n\n\n\n\n\n21.2.5 Etapa 4: Dimensionamento\nPara cada técnica selecionada, aplicar os métodos dos capítulos específicos, incluindo espaçamento e altura de paliçadas (Capítulo 7), volume e arranjo de bacias de captação (Capítulo 8), taxa de aplicação de hidrossemeadura (Capítulo 10), grampeamento e sobreposição de biomantas (Capítulo 11), estabilidade e fases de gabiões vivos (Capítulo 14), geometria e madeiras de paredes Krainer (Capítulo 15), vazão e seção de canaletas verdes (Capítulo 16) e filtração e resistência de geotêxteis (Capítulo 17).\n\n\n21.2.6 Etapa 5: Projeto Executivo\nO projeto executivo deve conter memorial descritivo com justificativas técnicas, plantas de locação com seções e detalhes construtivos, especificações de materiais, espécies e normas, cronograma de fases de implantação, orçamento com custos unitários e totais, e plano de monitoramento definindo indicadores e frequência.\n\n\n21.2.7 Etapa 6: Implantação\nSequência recomendada de implantação:\n\n\n\n\n\ngantt\n    title Cronograma típico de implantação\n    dateFormat  YYYY-MM\n    axisFormat  %b/%Y\n    \n    section Preparo\n    Mobilização e topografia    :a1, 2025-01, 1M\n    Acesso e infraestrutura     :a2, after a1, 1M\n    \n    section Estruturas\n    Drenagem (geodrenos)        :b1, after a2, 1M\n    Estruturas de contenção     :b2, after b1, 2M\n    Paliçadas e fascinas        :b3, after b1, 1M\n    \n    section Revegetação\n    Hidrossemeadura             :c1, after b2, 1M\n    Biomantas                   :c2, after c1, 1M\n    Plantio de mudas            :c3, after c1, 2M\n    \n    section Monitoramento\n    Acompanhamento fase 1       :d1, after c3, 6M\n    Gestão adaptativa           :d2, after d1, 6M\n\n\n\n\n\n\n\n\n\n\n\n\nAvisoPeríodo de implantação\n\n\n\nA implantação deve coincidir com o início da estação chuvosa para maximizar a taxa de estabelecimento da vegetação. Em regiões semiáridas, irrigação suplementar pode ser necessária nos primeiros 60 dias.\n\n\n\n\n21.2.8 Etapa 7: Monitoramento\n\n\n\nTabela 21.3: Plano de monitoramento do projeto integrador.\n\n\n\n\n\n\n\n\n\n\n\nIndicador\nMétodo\nFrequência\nMeta\n\n\n\n\nCobertura vegetal (%)\nFotografia aérea / RPAS\nMensal (ano 1), trimestral (anos 2–3)\n&gt; 80% em 12 meses\n\n\nTaxa de sobrevivência (%)\nContagem em parcelas\nTrimestral\n&gt; 70%\n\n\nErosão (t/ha/ano)\nPinos de erosão + parcelas Wischmeier\nSemestral\n&lt; tolerância local\n\n\nEstabilidade do talude (FS)\nPiezômetros + inclinômetros\nMensal (estação chuvosa)\nFS ≥ 1,5\n\n\nQualidade da água\nAnálise de turbidez e sedimentos\nMensal\nTurbidez &lt; 100 NTU",
+    "crumbs": [
+      "Parte IV — Projeto e Integração",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Projeto Integrador</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/21-projeto-integrador.html#estudo-de-caso-voçoroca-em-latossolo-no-cerrado",
+    "href": "capitulos/21-projeto-integrador.html#estudo-de-caso-voçoroca-em-latossolo-no-cerrado",
+    "title": "21  Projeto Integrador",
+    "section": "21.3 Estudo de Caso: Voçoroca em Latossolo no Cerrado",
+    "text": "21.3 Estudo de Caso: Voçoroca em Latossolo no Cerrado\n\n21.3.1 Cenário\nO estudo de caso situa-se na Bacia do Rio São Francisco (MG), em Latossolo Vermelho-Amarelo de textura argilosa, sob clima Aw (Köppen) com precipitação de 1.200 mm/ano concentrada em 6 meses. A feição consiste em voçoroca ativa de 120 m de comprimento, 15 m de largura e 8 m de profundidade, com área contribuinte de 12 ha e uso anterior de pastagem degradada.\n\n\n21.3.2 Diagnóstico\nA erodibilidade do solo (\\(K\\)) foi determinada em 0,028 t·h/(MJ·mm), a erosividade da chuva (\\(R\\)) em 7.500 MJ·mm/(ha·h·ano), o fator topográfico (\\(LS\\)) em 4,2, o fator de cobertura (\\(C\\)) em 0,35 (pastagem degradada) e o fator de práticas conservacionistas (\\(P\\)) em 1,0 (ausente).\nPerda de solo estimada (RUSLE):\n\\[\nA = R \\cdot K \\cdot LS \\cdot C \\cdot P = 7.500 \\times 0,028 \\times 4,2 \\times 0,35 \\times 1,0 = 308,7 \\text{ t/ha/ano}\n\\]\n\n\n21.3.3 Projeto\n\n\n\nTabela 21.4: Plano de intervenção por zona da voçoroca.\n\n\n\n\n\n\n\n\n\n\nZona\nTécnica(s)\nDimensionamento\n\n\n\n\nCabeceira\nPaliçadas permeáveis (3 linhas) + bacias de captação\nE = 5 m, H = 0,8 m; 25 bacias (V = 1,2 m³)\n\n\nCorpo (paredes laterais)\nGabiões vivos (base) + geotêxtil de taboa\n3 camadas, H_total = 3 m\n\n\nCorpo (fundo)\nDrenos verdes + fascinas vivas\nDreno central + 6 laterais\n\n\nEncosta contribuinte\nHidrossemeadura + biomanta C350\nT_a = 350 g/m², malha 25 mm\n\n\nTopo\nRevegetação arbórea (espécies cerrado)\n3 × 3 m, 1.111 mudas/ha\n\n\n\n\n\n\n\n\n21.3.4 Resultados Esperados (Modelagem)\nAno 1 — Cobertura vegetal 40–60%, redução de erosão em 65%\nAno 3 — Cobertura &gt; 80%, FS &gt; 1,5 com coesão radicular\nAno 5 — Perda de solo estimada:\n\\[\nA_{5} = 7.500 \\times 0,028 \\times 4,2 \\times 0,05 \\times 0,6 = 26,5 \\text{ t/ha/ano}\n\\]\nRedução: de 308,7 para 26,5 t/ha/ano → redução de 91,4%.\n\n\n21.3.5 Orçamento Estimado\n\n\n\nTabela 21.5: Orçamento estimado para recuperação da voçoroca.\n\n\n\n\n\nItem\nUnidade\nQuantidade\nCusto Unit. (R\\() | Total (R\\))\n\n\n\n\n\nPaliçadas de bambu\nm\n150\n45\n6.750\n\n\nBacias de captação\nun\n25\n120\n3.000\n\n\nGabião vivo (caixa 2×1×0,5 m)\nun\n45\n350\n15.750\n\n\nGeotêxtil de taboa\nm²\n600\n28\n16.800\n\n\nHidrossemeadura\nm²\n2.500\n12\n30.000\n\n\nBiomanta C350\nm²\n1.800\n25\n45.000\n\n\nMudas arbóreas nativas\nun\n500\n8\n4.000\n\n\nMão de obra\nh\n800\n35\n28.000\n\n\nTotal\n\n\n\n149.300\n\n\n\n\n\n\n\n\n\n\n\n\nDicaCusto-benefício\n\n\n\nO custo estimado de R$ 149.300 corresponde a aproximadamente R$ 100/m linear de voçoroca tratada, ou R$ 12/m² de área estabilizada — valor 3–5× inferior a soluções convencionais de muro de concreto armado para feições de porte equivalente.",
+    "crumbs": [
+      "Parte IV — Projeto e Integração",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Projeto Integrador</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/21-projeto-integrador.html#considerações-finais",
+    "href": "capitulos/21-projeto-integrador.html#considerações-finais",
+    "title": "21  Projeto Integrador",
+    "section": "21.4 Considerações Finais",
+    "text": "21.4 Considerações Finais\nO projeto integrador de bioengenharia de solos demonstra que a combinação de técnicas é mais eficaz do que o uso isolado de qualquer uma delas, e que o diagnóstico adequado do solo, clima e feições é fundamental para a seleção correta de intervenções. O monitoramento é obrigatório, pois NBS são sistemas vivos que requerem gestão adaptativa. O custo é competitivo, especialmente quando co-benefícios são contabilizados, reforçando que a bioengenharia é uma NBS que atende aos critérios IUCN e contribui para múltiplos ODS.",
+    "crumbs": [
+      "Parte IV — Projeto e Integração",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Projeto Integrador</span>"
+    ]
+  },
+  {
+    "objectID": "referencias.html",
+    "href": "referencias.html",
+    "title": "Referências",
+    "section": "",
+    "text": "Bertoni, J., & Lombardi Neto, F. (2017). Conservação do\nsolo (9th ed.). Ícone.\n\n\nDurlo, M. A., & Sutili, F. J. (2005). Bioengenharia: Manejo\nbiotécnico de cursos de água. EST Edições.\n\n\nGray, D. H., & Sotir, R. B. (1996). Biotechnical and soil\nbioengineering slope stabilization: A practical guide for erosion\ncontrol. John Wiley & Sons.\n\n\nIUCN. (2020). IUCN global standard for nature-based solutions.\nhttps://doi.org/10.2305/IUCN.CH.2020.08.en\n\n\nJenny, H. (1941). Factors of soil formation: A system of\nquantitative pedology.\n\n\nMorgan, R. P. C. (2005). Soil erosion and conservation (3rd\ned.). Blackwell Publishing.\n\n\nRenard, K. G., Foster, G. R., Weesies, G. A., McCool, D. K., &\nYoder, D. C. (1997). Predicting soil erosion by water: A guide to\nconservation planning with the revised universal soil loss equation\n(RUSLE). Agriculture Handbook, 703.\n\n\nSchiechtl, H. M. (1980). Bioengineering for land reclamation and\nconservation.\n\n\nSutili, F. J. (2004). Bioengenharia de solos no revestimento de\ncursos de água no sul do brasil. UFSM.",
+    "crumbs": [
+      "Referências"
+    ]
+  }
+]

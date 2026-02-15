@@ -1,0 +1,70 @@
+# Feixes Vivos e Drenos Verdes {#sec-feixes-drenos}
+
+## Feixes Vivos (*Fascines*)
+
+### Conceito
+
+![Feixes vivos em campo — amarrados de ramos vivos instalados em valas para interceptar o escoamento e promover a infiltração.](../img/feixes_vivos_campo.jpg){#fig-feixes-campo fig-alt="Feixes vivos instalados em campo" width="80%"}
+
+Os **feixes vivos** (*fascines* ou *wattle fences*) são amarrados de ramos vivos e flexíveis, instalados em valas rasas ao longo de curvas de nível para interceptar o escoamento superficial e promover a infiltração.
+
+::: {layout-ncol=2}
+![Diagrama de feixe vivo — vista em corte transversal mostrando a instalação em vala rasa.](../img/feixes_diagrama.png){#fig-feixe-diagrama fig-alt="Diagrama de feixe vivo"}
+
+![Estacas vivas detalhadas — material vegetativo utilizado para fixação dos feixes.](../img/estacas_vivas.jpeg){#fig-estacas fig-alt="Estacas vivas para feixes"}
+:::
+
+### Materiais
+
+Os materiais mais utilizados são ramos de sabiá (*Mimosa caesalpiniifolia*) na Caatinga, ramos de gliricídia (*Gliricidia sepium*) em regiões pantropicais, ramos de salgueiro (*Salix* spp.) em zonas temperadas e subtropicais, e bambu verde, de disponibilidade universal.
+
+### Dimensionamento
+
+O diâmetro do feixe deve situar-se entre 15 e 30 cm, com comprimento de 2 a 4 m (amarrados com arame ou fibra). A profundidade da vala corresponde a metade do diâmetro do feixe, e o espaçamento entre feixes segue as curvas de nível, a cada 5–10 m de desnivel vertical.
+
+### Instalação
+
+O procedimento de instalação inicia com a escavação de uma vala rasa ao longo da curva de nível, seguida pelo posicionamento do feixe na vala. Fixa-se o conjunto com estacas vivas cravadas a cada 1,0–1,5 m e compacta-se terra contra o feixe no lado montante.
+
+## Drenos Verdes
+
+### Conceito
+
+Os **drenos verdes** (*vegetated drains*) são canais de drenagem superficial ou subsuperficial revegetados, que conduzem o escoamento excedente de forma controlada, reduzindo a velocidade e promovendo a infiltração e a filtração de sedimentos.
+
+### Tipos
+
+**Dreno superficial vegetado** — canal trapezoidal revestido com gramíneas (berma vegetada). Funciona como uma canaleta verde (ver @sec-canaleta-verde).
+
+**Dreno subsuperficial biodegradável** — tubo ou camada drenante composta por materiais vegetais (feixes de bambu, cascas, fibras) enterrados a 30–60 cm de profundidade.
+
+### Dimensionamento do Dreno Superficial
+
+A capacidade do dreno é calculada pela equação de Manning:
+
+$$
+Q = \frac{1}{n} \cdot A \cdot R_h^{2/3} \cdot S^{1/2}
+$$
+
+onde $n$ é o coeficiente de rugosidade de Manning (0,03–0,05 para canais vegetados), $A$ é a área da seção molhada, $R_h$ é o raio hidráulico e $S$ é a declividade.
+
+### Vantagens dos Drenos Verdes
+
+| Aspecto | Dreno convencional (concreto) | Dreno verde |
+|---------|------------------------------|-------------|
+| Infiltração | Nula | 30–60% do volume |
+| Filtração de sedimentos | Nenhuma | 50–80% |
+| Custo de implantação | R$ 200–500/m | R$ 40–100/m |
+| Manutenção | Limpeza mecânica | Roçada periódica |
+| Paisagem | Impacto negativo | Integrado |
+
+: Comparativo entre drenos convencionais e drenos verdes. {#tbl-drenos .striped .hover}
+
+::: {.callout-tip}
+## Aplicação ideal
+Drenos verdes são especialmente eficazes em **áreas periurbanas** e **estradas rurais**, onde a infraestrutura convencional é cara e pouco sustentável.
+:::
+
+## Integração Feixes + Drenos
+
+A combinação de feixes vivos ao longo de curvas de nível com drenos verdes nos talvegues cria um **sistema integrado de manejo de enxurrada** que intercepta o escoamento laminar (feixes), conduz o escoamento concentrado (drenos), infiltra o excedente hídrico e retém sedimentos.

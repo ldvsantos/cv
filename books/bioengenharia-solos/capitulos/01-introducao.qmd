@@ -1,0 +1,65 @@
+# Introdução à Bioengenharia de Solos {#sec-introducao}
+
+## O que é Bioengenharia de Solos?
+
+A bioengenharia de solos (*soil bioengineering*) é uma disciplina que combina princípios da engenharia civil, ecologia e ciência do solo para projetar, construir e manter estruturas de estabilização e proteção do solo utilizando **materiais vivos** (plantas, raízes, estacas) combinados ou não a **materiais inertes biodegradáveis** (fibras naturais, madeira, bambu).
+
+O conceito difere da engenharia convencional em um aspecto fundamental. Enquanto as estruturas de concreto e aço são projetadas para resistir indefinidamente ao intemperismo, as estruturas de bioengenharia são projetadas para uma **transição funcional**, na qual a resistência mecânica inicial (fornecida por materiais construtivos) é progressivamente transferida para o sistema radicular das plantas à medida que estas se estabelecem (@fig-transicao).
+
+::: {#fig-transicao}
+```{mermaid}
+%%| fig-width: 8
+gantt
+    title Transição Funcional na Bioengenharia
+    dateFormat YYYY
+    axisFormat %Y
+    section Estrutura
+    Resistência mecânica do material :done, 2026, 2030
+    section Vegetação
+    Estabelecimento radicular      :active, 2027, 2031
+    section Função ecológica
+    Solo auto-sustentável          : 2030, 2036
+```
+Esquema conceitual da transição entre a função mecânica dos materiais construtivos e a função ecológica do sistema radicular.
+:::
+
+## Bioengenharia vs. Engenharia Convencional
+
+| Critério | Engenharia Convencional | Bioengenharia de Solos |
+|----------|------------------------|----------------------|
+| Material principal | Concreto, aço, gabião metálico | Plantas, fibras, madeira, bambu |
+| Durabilidade do material | Décadas a séculos | 2–10 anos (biodegradável) |
+| Função ao longo do tempo | Constante (ou degradante) | Crescente (sistema vivo) |
+| Custo inicial | Alto | Moderado a baixo |
+| Custo de manutenção | Médio | Baixo |
+| Impacto paisagístico | Negativo | Positivo |
+| Serviços ecossistêmicos | Nenhum | Múltiplos |
+| Emissão de CO₂ | Alta | Sequestro de C |
+
+: Comparativo entre engenharia convencional e bioengenharia de solos. {#tbl-comparativo .striped .hover}
+
+## Histórico
+
+A bioengenharia de solos tem raízes milenares. Na China, há registros de uso de fascinas de bambu para contenção de margens de rios datados de mais de 2.000 anos. Na Europa, técnicas de estabilização com estacas vivas de salgueiro (*Salix* spp.) são documentadas desde o século XVIII [@schiechtl1980].
+
+O desenvolvimento moderno da disciplina ocorreu na segunda metade do século XX, com contribuições fundamentais de Hugo M. Schiechtl (Áustria), que sistematizou as técnicas de *Ingenieurbiologie* ao publicar o primeiro manual técnico em 1973. Na América do Norte, Donald H. Gray e Robbin B. Sotir consolidaram o campo com o clássico *Biotechnical and Soil Bioengineering Slope Stabilization* [@gray1996]. No Brasil, Fabrício J. Sutili e Miguel A. Durlo foram pioneiros na adaptação das técnicas europeias ao contexto subtropical brasileiro [@sutili2004; @durlo2005].
+
+## Contexto Tropical
+
+Em regiões tropicais, a bioengenharia enfrenta desafios e oportunidades particulares:
+
+::: {.callout-important}
+## Desafios tropicais
+As regiões tropicais impõem condições severas à bioengenharia. A intensidade pluviométrica, com chuvas concentradas cuja erosividade é 3–5× maior que em zonas temperadas, exige estruturas com alta capacidade de dissipação de energia. O intemperismo profundo gera perfis de solo com 10–30 m de manto de alteração, nos quais predominam argilas 1:1 (caulinita) com baixa CTC (solos lateríticos). Soma-se a isso a necessidade de seleção criteriosa de espécies nativas adaptadas, dada a elevada biodiversidade das paisagens tropicais.
+:::
+
+::: {.callout-tip}
+## Oportunidades tropicais
+Em contrapartida, as condições tropicais oferecem vantagens expressivas. As taxas de rebrota vegetal são 2–4× maiores que em zonas temperadas, acelerando a transição funcional. A disponibilidade de fibras naturais (sisal, coco, taboa *Typha*, bananeira e rami) e de materiais locais (bambu, pedras e madeiras de rápido crescimento) reduz custos, enquanto a viabilidade econômica de mão de obra intensiva favorece técnicas de execução manual.
+:::
+
+## Estrutura deste Livro
+
+Este livro está organizado em quatro partes:
+
+A **Parte I (Fundamentos)** apresenta a base científica necessária, incluindo formação dos solos tropicais, processos de intemperismo, mecanismos erosivos e classificação de feições. A **Parte II (Técnicas de Bioengenharia)** detalha as técnicas construtivas, do mais simples ao mais complexo, com equações de dimensionamento e exemplos práticos. A **Parte III (Geotêxteis e Inovação)** aborda geossintéticos convencionais, biotêxteis de fibras vegetais e biopolímeros superabsorventes, incluindo patentes desenvolvidas pelo autor. Por fim, a **Parte IV (Projeto e Integração)** apresenta o conceito de soluções baseadas na natureza (NBS) e um roteiro para projeto integrador de bioengenharia.

@@ -1,0 +1,203 @@
+# Projeto Integrador {#sec-projeto-integrador}
+
+## Objetivo
+
+![Voçoroca ativa em solo tropical — feição erosiva de grande porte que demanda projeto integrado de múltiplas técnicas de bioengenharia.](../img/vocoroca_erosao.jpg){#fig-vocoroca fig-alt="Voçoroca ativa em solo tropical" width="85%"}
+
+Este capítulo sintetiza os conhecimentos apresentados ao longo do livro em um **projeto integrador** de bioengenharia de solos, demonstrando como combinar múltiplas técnicas para resolver um problema real de degradação em região tropical.
+
+## Metodologia de Projeto
+
+### Etapas do Projeto de Bioengenharia
+
+```{mermaid}
+%%| fig-width: 8
+flowchart TD
+    A["1. Diagnóstico\n(campo + SIG)"] --> B["2. Classificação\nde feições erosivas"]
+    B --> C["3. Seleção de\ntécnicas"]
+    C --> D["4. Dimensionamento\nde estruturas"]
+    D --> E["5. Projeto\nexecutivo"]
+    E --> F["6. Implantação"]
+    F --> G["7. Monitoramento\ne manutenção"]
+    G --> H{"Metas\natingidas?"}
+    H -- Não --> I["Gestão adaptativa"]
+    I --> C
+    H -- Sim --> J["Consolidação\ne entrega"]
+```
+
+### Etapa 1: Diagnóstico
+
+O diagnóstico deve integrar:
+
+| Componente | Método | Produto |
+|------------|--------|---------|
+| Topografia | RPAS/drone + SfM | MDE com resolução ≤ 5 cm |
+| Solos | Amostragem + ensaios | Mapa pedológico, K-RUSLE |
+| Clima | Estação meteorológica | Série pluviométrica, R-RUSLE |
+| Cobertura | Classificação de imagem | Mapa de uso, C-RUSLE |
+| Hidrologia | Modelagem de bacias | Mapa de contribuição, vazões |
+| Vegetação | Inventário florístico | Lista de espécies locais |
+
+: Componentes do diagnóstico integrado. {#tbl-diagnostico .striped}
+
+### Etapa 2: Classificação de Feições
+
+Aplicar a metodologia EGC (veja @sec-classificacao-feicoes), mapeando todas as feições erosivas e medindo seus parâmetros geométricos. Em seguida, classificar segundo porte e dinâmica e priorizar intervenções por risco.
+
+### Etapa 3: Seleção de Técnicas
+
+A seleção segue uma **matriz de decisão** baseada em:
+
+| Critério | Peso | Variáveis |
+|----------|------|-----------|
+| Tipo de feição | Alto | Classe EGC, profundidade, atividade |
+| Solo | Alto | Textura, erodibilidade (K), coesão |
+| Clima | Médio | Pluviosidade, déficit hídrico |
+| Inclinação | Alto | Ângulo do talude, área contribuinte |
+| Acesso | Médio | Distância, vias, máquinas |
+| Custo | Médio | Orçamento disponível, relação B/C |
+| Prazo | Baixo | Urgência, cronograma |
+
+: Critérios para seleção de técnicas de bioengenharia. {#tbl-selecao .striped}
+
+#### Árvore de Decisão
+
+```{mermaid}
+%%| fig-width: 8
+flowchart TD
+    START["Feição erosiva\nidentificada"]
+    START --> Q1{"Profundidade\n> 1,5 m?"}
+    Q1 -- Sim --> Q2{"Presença\nde água?"}
+    Q1 -- Não --> Q3{"Inclinação\n> 45°?"}
+    
+    Q2 -- Sim --> T1["Gabião vivo\n+ Geodreno"]
+    Q2 -- Não --> T2["Parede Krainer\n+ Revegetação"]
+    
+    Q3 -- Sim --> Q4{"Solo\ncoesivo?"}
+    Q3 -- Não --> T3["Paliçadas\n+ Biomanta"]
+    
+    Q4 -- Sim --> T4["Canaleta verde\n+ Hidrossemeadura"]
+    Q4 -- Não --> T5["Enrocamento\nvegetado"]
+```
+
+### Etapa 4: Dimensionamento
+
+Para cada técnica selecionada, aplicar os métodos dos capítulos específicos, incluindo espaçamento e altura de paliçadas (@sec-palicadas), volume e arranjo de bacias de captação (@sec-bacias-captacao), taxa de aplicação de hidrossemeadura (@sec-hidrossemeadura), grampeamento e sobreposição de biomantas (@sec-biomantas), estabilidade e fases de gabiões vivos (@sec-gabiao-vivo), geometria e madeiras de paredes Krainer (@sec-parede-krainer), vazão e seção de canaletas verdes (@sec-canaleta-verde) e filtração e resistência de geotêxteis (@sec-geotexteis).
+
+### Etapa 5: Projeto Executivo
+
+O projeto executivo deve conter memorial descritivo com justificativas técnicas, plantas de locação com seções e detalhes construtivos, especificações de materiais, espécies e normas, cronograma de fases de implantação, orçamento com custos unitários e totais, e plano de monitoramento definindo indicadores e frequência.
+
+### Etapa 6: Implantação
+
+Sequência recomendada de implantação:
+
+```{mermaid}
+%%| fig-width: 8
+gantt
+    title Cronograma típico de implantação
+    dateFormat  YYYY-MM
+    axisFormat  %b/%Y
+    
+    section Preparo
+    Mobilização e topografia    :a1, 2025-01, 1M
+    Acesso e infraestrutura     :a2, after a1, 1M
+    
+    section Estruturas
+    Drenagem (geodrenos)        :b1, after a2, 1M
+    Estruturas de contenção     :b2, after b1, 2M
+    Paliçadas e fascinas        :b3, after b1, 1M
+    
+    section Revegetação
+    Hidrossemeadura             :c1, after b2, 1M
+    Biomantas                   :c2, after c1, 1M
+    Plantio de mudas            :c3, after c1, 2M
+    
+    section Monitoramento
+    Acompanhamento fase 1       :d1, after c3, 6M
+    Gestão adaptativa           :d2, after d1, 6M
+```
+
+::: {.callout-warning}
+## Período de implantação
+A implantação deve coincidir com o **início da estação chuvosa** para maximizar a taxa de estabelecimento da vegetação. Em regiões semiáridas, irrigação suplementar pode ser necessária nos primeiros 60 dias.
+:::
+
+### Etapa 7: Monitoramento
+
+| Indicador | Método | Frequência | Meta |
+|-----------|--------|------------|------|
+| Cobertura vegetal (%) | Fotografia aérea / RPAS | Mensal (ano 1), trimestral (anos 2–3) | > 80% em 12 meses |
+| Taxa de sobrevivência (%) | Contagem em parcelas | Trimestral | > 70% |
+| Erosão (t/ha/ano) | Pinos de erosão + parcelas Wischmeier | Semestral | < tolerância local |
+| Estabilidade do talude (FS) | Piezômetros + inclinômetros | Mensal (estação chuvosa) | FS ≥ 1,5 |
+| Qualidade da água | Análise de turbidez e sedimentos | Mensal | Turbidez < 100 NTU |
+
+: Plano de monitoramento do projeto integrador. {#tbl-monitoramento .striped}
+
+## Estudo de Caso: Voçoroca em Latossolo no Cerrado
+
+### Cenário
+
+O estudo de caso situa-se na Bacia do Rio São Francisco (MG), em Latossolo Vermelho-Amarelo de textura argilosa, sob clima Aw (Köppen) com precipitação de 1.200 mm/ano concentrada em 6 meses. A feição consiste em voçoroca ativa de 120 m de comprimento, 15 m de largura e 8 m de profundidade, com área contribuinte de 12 ha e uso anterior de pastagem degradada.
+
+### Diagnóstico
+
+A erodibilidade do solo ($K$) foi determinada em 0,028 t·h/(MJ·mm), a erosividade da chuva ($R$) em 7.500 MJ·mm/(ha·h·ano), o fator topográfico ($LS$) em 4,2, o fator de cobertura ($C$) em 0,35 (pastagem degradada) e o fator de práticas conservacionistas ($P$) em 1,0 (ausente).
+
+**Perda de solo estimada (RUSLE)**:
+
+$$
+A = R \cdot K \cdot LS \cdot C \cdot P = 7.500 \times 0,028 \times 4,2 \times 0,35 \times 1,0 = 308,7 \text{ t/ha/ano}
+$$
+
+### Projeto
+
+| Zona | Técnica(s) | Dimensionamento |
+|------|-----------|-----------------|
+| Cabeceira | Paliçadas permeáveis (3 linhas) + bacias de captação | E = 5 m, H = 0,8 m; 25 bacias (V = 1,2 m³) |
+| Corpo (paredes laterais) | Gabiões vivos (base) + geotêxtil de taboa | 3 camadas, H_total = 3 m |
+| Corpo (fundo) | Drenos verdes + fascinas vivas | Dreno central + 6 laterais |
+| Encosta contribuinte | Hidrossemeadura + biomanta C350 | T_a = 350 g/m², malha 25 mm |
+| Topo | Revegetação arbórea (espécies cerrado) | 3 × 3 m, 1.111 mudas/ha |
+
+: Plano de intervenção por zona da voçoroca. {#tbl-plano-intervencao .striped .hover}
+
+### Resultados Esperados (Modelagem)
+
+**Ano 1** — Cobertura vegetal 40–60%, redução de erosão em 65%
+
+**Ano 3** — Cobertura > 80%, FS > 1,5 com coesão radicular
+
+**Ano 5** — Perda de solo estimada:
+
+$$
+A_{5} = 7.500 \times 0,028 \times 4,2 \times 0,05 \times 0,6 = 26,5 \text{ t/ha/ano}
+$$
+
+**Redução**: de 308,7 para 26,5 t/ha/ano → **redução de 91,4%**.
+
+### Orçamento Estimado
+
+| Item | Unidade | Quantidade | Custo Unit. (R$) | Total (R$) |
+|------|---------|-----------|-----------------|-----------|
+| Paliçadas de bambu | m | 150 | 45 | 6.750 |
+| Bacias de captação | un | 25 | 120 | 3.000 |
+| Gabião vivo (caixa 2×1×0,5 m) | un | 45 | 350 | 15.750 |
+| Geotêxtil de taboa | m² | 600 | 28 | 16.800 |
+| Hidrossemeadura | m² | 2.500 | 12 | 30.000 |
+| Biomanta C350 | m² | 1.800 | 25 | 45.000 |
+| Mudas arbóreas nativas | un | 500 | 8 | 4.000 |
+| Mão de obra | h | 800 | 35 | 28.000 |
+| **Total** | | | | **149.300** |
+
+: Orçamento estimado para recuperação da voçoroca. {#tbl-orcamento .striped}
+
+::: {.callout-tip}
+## Custo-benefício
+O custo estimado de R$ 149.300 corresponde a aproximadamente **R$ 100/m linear** de voçoroca tratada, ou **R$ 12/m²** de área estabilizada — valor 3–5× inferior a soluções convencionais de muro de concreto armado para feições de porte equivalente.
+:::
+
+## Considerações Finais
+
+O projeto integrador de bioengenharia de solos demonstra que a combinação de técnicas é mais eficaz do que o uso isolado de qualquer uma delas, e que o diagnóstico adequado do solo, clima e feições é fundamental para a seleção correta de intervenções. O monitoramento é obrigatório, pois NBS são sistemas vivos que requerem gestão adaptativa. O custo é competitivo, especialmente quando co-benefícios são contabilizados, reforçando que a bioengenharia é uma NBS que atende aos critérios IUCN e contribui para múltiplos ODS.

@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Livro-texto sobre bioengenharia de solos aplicada a regiões tropicais, integrando fundamentos pedológicos, técnicas de estabilização biológica e soluções baseadas na natureza (NBS) para conservação e recuperação de solos degradados.">
+
+<title>4&nbsp; Erosão do Solo: Tipos e Processos – Bioengenharia de Solos em Regiões Tropicais</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../capitulos/05-classificacao-feicoes.html" rel="next">
+<link href="../capitulos/03-intemperismo.html" rel="prev">
+<link href="../img/capa_bioengenharia_de_solos.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-12f6d87c9cc8cd23abdf3d99f8b9f8fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/01-introducao.html">Parte I — Fundamentos</a></li><li class="breadcrumb-item"><a href="../capitulos/04-erosao.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Erosão do Solo: Tipos e Processos</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Bioengenharia de Solos em Regiões Tropicais</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/ldvsantos/cv/" title="Código fonte" class="quarto-navigation-tool px-1" aria-label="Código fonte"><i class="bi bi-github"></i></a>
+    <a href="../Bioengenharia-de-Solos-em-Regiões-Tropicais.pdf" title="Baixar PDF" class="quarto-navigation-tool px-1" aria-label="Baixar PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Compartilhar" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Compartilhar"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bem-vindo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../prefacio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prefácio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte I — Fundamentos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/01-introducao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução à Bioengenharia de Solos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/02-solos-tropicais.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Solos Tropicais: Formação e Propriedades</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/03-intemperismo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Intemperismo e Transformação do Solo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/04-erosao.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Erosão do Solo: Tipos e Processos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/05-classificacao-feicoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Classificação de Feições Erosivas</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte II — Técnicas de Bioengenharia</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/06-revegetacao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Revegetação e Espécies para Bioengenharia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/07-palicadas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Paliçadas para Controle de Ravinas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/08-bacias-captacao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Bacias de Captação e Barraginhas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/09-feixes-drenos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Feixes Vivos e Drenos Verdes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/10-hidrossemeadura.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Hidrossemeadura</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/11-biomantas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Biomantas e Geossintéticos Biodegradáveis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/12-enrocamento.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Enrocamento Vegetado</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/13-cordoes-fascinas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Cordões Vegetativos e Fascinas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/14-gabiao-vivo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Gabião Vivo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/15-parede-krainer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Parede Krainer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/16-canaleta-verde.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Canaleta Verde</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte III — Geotêxteis e Inovação</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/17-geotexteis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Geotêxteis no Controle de Erosão</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/18-biotexteis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Biotêxteis de Fibras Vegetais</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/19-biopolimeros.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Biopolímeros Superabsorventes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte IV — Projeto e Integração</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/20-nbs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Soluções Baseadas na Natureza</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/21-projeto-integrador.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Projeto Integrador</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../referencias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Referências</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#conceito-e-magnitude" id="toc-conceito-e-magnitude" class="nav-link active" data-scroll-target="#conceito-e-magnitude"><span class="header-section-number">4.1</span> Conceito e Magnitude</a></li>
+  <li><a href="#rusle-equação-universal-de-perda-de-solo" id="toc-rusle-equação-universal-de-perda-de-solo" class="nav-link" data-scroll-target="#rusle-equação-universal-de-perda-de-solo"><span class="header-section-number">4.2</span> RUSLE (Equação Universal de Perda de Solo)</a></li>
+  <li><a href="#tipos-de-erosão" id="toc-tipos-de-erosão" class="nav-link" data-scroll-target="#tipos-de-erosão"><span class="header-section-number">4.3</span> Tipos de Erosão</a>
+  <ul class="collapse">
+  <li><a href="#erosão-laminar-sheet-erosion" id="toc-erosão-laminar-sheet-erosion" class="nav-link" data-scroll-target="#erosão-laminar-sheet-erosion"><span class="header-section-number">4.3.1</span> Erosão Laminar (<em>Sheet Erosion</em>)</a></li>
+  <li><a href="#erosão-em-sulcos-rill-erosion" id="toc-erosão-em-sulcos-rill-erosion" class="nav-link" data-scroll-target="#erosão-em-sulcos-rill-erosion"><span class="header-section-number">4.3.2</span> Erosão em Sulcos (<em>Rill Erosion</em>)</a></li>
+  <li><a href="#erosão-em-ravinas-gully-erosion" id="toc-erosão-em-ravinas-gully-erosion" class="nav-link" data-scroll-target="#erosão-em-ravinas-gully-erosion"><span class="header-section-number">4.3.3</span> Erosão em Ravinas (<em>Gully Erosion</em>)</a></li>
+  <li><a href="#voçorocas" id="toc-voçorocas" class="nav-link" data-scroll-target="#voçorocas"><span class="header-section-number">4.3.4</span> Voçorocas</a></li>
+  </ul></li>
+  <li><a href="#mecanismos-de-erosão" id="toc-mecanismos-de-erosão" class="nav-link" data-scroll-target="#mecanismos-de-erosão"><span class="header-section-number">4.4</span> Mecanismos de Erosão</a>
+  <ul class="collapse">
+  <li><a href="#desprendimento-detachment" id="toc-desprendimento-detachment" class="nav-link" data-scroll-target="#desprendimento-detachment"><span class="header-section-number">4.4.1</span> 1. Desprendimento (<em>Detachment</em>)</a></li>
+  <li><a href="#transporte" id="toc-transporte" class="nav-link" data-scroll-target="#transporte"><span class="header-section-number">4.4.2</span> 2. Transporte</a></li>
+  <li><a href="#deposição" id="toc-deposição" class="nav-link" data-scroll-target="#deposição"><span class="header-section-number">4.4.3</span> 3. Deposição</a></li>
+  </ul></li>
+  <li><a href="#erosão-em-regiões-tropicais" id="toc-erosão-em-regiões-tropicais" class="nav-link" data-scroll-target="#erosão-em-regiões-tropicais"><span class="header-section-number">4.5</span> Erosão em Regiões Tropicais</a></li>
+  <li><a href="#erosão-marginal" id="toc-erosão-marginal" class="nav-link" data-scroll-target="#erosão-marginal"><span class="header-section-number">4.6</span> Erosão Marginal</a></li>
+  <li><a href="#tolerância-de-perda-de-solo" id="toc-tolerância-de-perda-de-solo" class="nav-link" data-scroll-target="#tolerância-de-perda-de-solo"><span class="header-section-number">4.7</span> Tolerância de Perda de Solo</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ldvsantos/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/01-introducao.html">Parte I — Fundamentos</a></li><li class="breadcrumb-item"><a href="../capitulos/04-erosao.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Erosão do Solo: Tipos e Processos</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-erosao" class="quarto-section-identifier"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Erosão do Solo: Tipos e Processos</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="conceito-e-magnitude" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="conceito-e-magnitude"><span class="header-section-number">4.1</span> Conceito e Magnitude</h2>
+<p>A erosão hídrica é o processo de desprendimento, transporte e deposição de partículas de solo pela ação da água. Em escala global, estima-se que <strong>75 bilhões de toneladas de solo</strong> sejam erodidas anualmente, com custo econômico superior a <strong>US$ 400 bilhões/ano</strong> <span class="citation" data-cites="morgan2005">(<a href="../referencias.html#ref-morgan2005" role="doc-biblioref">Morgan, 2005</a>)</span>.</p>
+<p>Em regiões tropicais, a erosividade da chuva (fator R da RUSLE) é tipicamente <strong>3 a 5 vezes maior</strong> do que em zonas temperadas, tornando a erosão um dos processos geomorfológicos mais ativos.</p>
+</section>
+<section id="rusle-equação-universal-de-perda-de-solo" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="rusle-equação-universal-de-perda-de-solo"><span class="header-section-number">4.2</span> RUSLE (Equação Universal de Perda de Solo)</h2>
+<p>O modelo RUSLE <span class="citation" data-cites="renard1997">(<a href="../referencias.html#ref-renard1997" role="doc-biblioref">Renard et al., 1997</a>)</span> quantifica a perda de solo por erosão laminar e em sulcos:</p>
+<p><span class="math display">\[
+A = R \cdot K \cdot L \cdot S \cdot C \cdot P
+\]</span></p>
+<p>onde:</p>
+<div id="tbl-rusle" class="striped quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-rusle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;4.1: Fatores da RUSLE e suas unidades.
+</figcaption>
+<div aria-describedby="tbl-rusle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped caption-top table">
+<thead>
+<tr class="header">
+<th>Fator</th>
+<th>Significado</th>
+<th>Unidade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(A\)</span></td>
+<td>Perda de solo</td>
+<td>t ha⁻¹ ano⁻¹</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(R\)</span></td>
+<td>Erosividade da chuva</td>
+<td>MJ mm ha⁻¹ h⁻¹ ano⁻¹</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(K\)</span></td>
+<td>Erodibilidade do solo</td>
+<td>t h MJ⁻¹ mm⁻¹</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(L\)</span></td>
+<td>Comprimento da rampa</td>
+<td>adimensional</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(S\)</span></td>
+<td>Declividade</td>
+<td>adimensional</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(C\)</span></td>
+<td>Uso e manejo do solo</td>
+<td>adimensional</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(P\)</span></td>
+<td>Práticas conservacionistas</td>
+<td>adimensional</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Parâmetro-chave para bioengenharia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Os fatores <span class="math inline">\(C\)</span> e <span class="math inline">\(P\)</span> são os diretamente manipuláveis pela bioengenharia. Uma cobertura de gramíneas pode reduzir <span class="math inline">\(C\)</span> de 1,0 (solo nu) para 0,01, representando uma <strong>redução de 99% na erosão</strong>.</p>
+</div>
+</div>
+</section>
+<section id="tipos-de-erosão" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="tipos-de-erosão"><span class="header-section-number">4.3</span> Tipos de Erosão</h2>
+<div id="fig-tipos-erosao" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Montagem comparativa dos tipos de erosão">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tipos-erosao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/ravina_montagem.png" class="img-fluid figure-img" style="width:90.0%" alt="Montagem comparativa dos tipos de erosão">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tipos-erosao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.1: Comparação visual dos tipos de erosão: desde a erosão laminar até a formação de ravinas e voçorocas em solos tropicais.
+</figcaption>
+</figure>
+</div>
+<section id="erosão-laminar-sheet-erosion" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="erosão-laminar-sheet-erosion"><span class="header-section-number">4.3.1</span> Erosão Laminar (<em>Sheet Erosion</em>)</h3>
+<p>Remoção uniforme de uma fina camada de solo pela ação do escoamento superficial difuso. É a forma <strong>mais insidiosa</strong> por ser visualmente imperceptível, de modo que o agricultor perde solo sem perceber.</p>
+</section>
+<section id="erosão-em-sulcos-rill-erosion" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="erosão-em-sulcos-rill-erosion"><span class="header-section-number">4.3.2</span> Erosão em Sulcos (<em>Rill Erosion</em>)</h3>
+<p>Quando o escoamento superficial se concentra em pequenos canais (&lt; 30 cm de profundidade), escavando sulcos paralelos à encosta. Os sulcos podem ser desfeitos por operações agrícolas normais.</p>
+</section>
+<section id="erosão-em-ravinas-gully-erosion" class="level3" data-number="4.3.3">
+<h3 data-number="4.3.3" class="anchored" data-anchor-id="erosão-em-ravinas-gully-erosion"><span class="header-section-number">4.3.3</span> Erosão em Ravinas (<em>Gully Erosion</em>)</h3>
+<div id="fig-ravina-campo" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Ravina ativa em campo">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ravina-campo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/ravina_campo.jpg" class="img-fluid figure-img" style="width:75.0%" alt="Ravina ativa em campo">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ravina-campo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.2: Ravina ativa em solo tropical — canal permanente que não pode ser eliminado por operações agrícolas convencionais.
+</figcaption>
+</figure>
+</div>
+<p>Canais permanentes com profundidade &gt; 30 cm que <strong>não podem ser eliminados por operações agrícolas</strong>. Representam o estágio mais avançado da erosão hídrica concentrada.</p>
+<p>As ravinas podem ser classificadas em ravinas de cabeceira, que retrocedem por erosão remontante, ravinas laterais, que se expandem por solapamento das paredes, e ravinas de fundo, que se aprofundam por incisão do talvegue.</p>
+</section>
+<section id="voçorocas" class="level3" data-number="4.3.4">
+<h3 data-number="4.3.4" class="anchored" data-anchor-id="voçorocas"><span class="header-section-number">4.3.4</span> Voçorocas</h3>
+<p>Feições erosivas de grande porte (profundidade &gt; 1,5 m, largura &gt; 3 m) que frequentemente atingem o lençol freático. Representam o estágio mais severo de degradação do solo.</p>
+</section>
+</section>
+<section id="mecanismos-de-erosão" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="mecanismos-de-erosão"><span class="header-section-number">4.4</span> Mecanismos de Erosão</h2>
+<p>O processo erosivo envolve três fases:</p>
+<section id="desprendimento-detachment" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1" class="anchored" data-anchor-id="desprendimento-detachment"><span class="header-section-number">4.4.1</span> 1. Desprendimento (<em>Detachment</em>)</h3>
+<p>O impacto das gotas de chuva (<em>splash</em>) é o principal agente de desprendimento. Uma gota de 5 mm de diâmetro atinge o solo a ~9 m/s, exercendo pressão de até <strong>6 MPa</strong>, suficiente para desagregar partículas e projetá-las a mais de 1 metro de distância.</p>
+<p>A taxa de desprendimento é função da energia cinética da chuva:</p>
+<p><span class="math display">\[
+D_r = K_I \cdot I^2
+\]</span></p>
+<p>onde <span class="math inline">\(D_r\)</span> é a taxa de desprendimento (kg m⁻² s⁻¹), <span class="math inline">\(K_I\)</span> é a erodibilidade intergoticular e <span class="math inline">\(I\)</span> é a intensidade da chuva (mm h⁻¹).</p>
+</section>
+<section id="transporte" class="level3" data-number="4.4.2">
+<h3 data-number="4.4.2" class="anchored" data-anchor-id="transporte"><span class="header-section-number">4.4.2</span> 2. Transporte</h3>
+<p>As partículas desprendidas são transportadas pelo escoamento superficial. A capacidade de transporte (<span class="math inline">\(T_c\)</span>) depende da velocidade e da profundidade do escoamento:</p>
+<p><span class="math display">\[
+T_c = k_t \cdot \tau^{1.5}
+\]</span></p>
+<p>onde <span class="math inline">\(\tau\)</span> é a tensão cisalhante do fluxo e <span class="math inline">\(k_t\)</span> é um coeficiente empírico.</p>
+</section>
+<section id="deposição" class="level3" data-number="4.4.3">
+<h3 data-number="4.4.3" class="anchored" data-anchor-id="deposição"><span class="header-section-number">4.4.3</span> 3. Deposição</h3>
+<p>Quando a capacidade de transporte diminui (redução de velocidade ou declividade), as partículas são depositadas. A seletividade granulométrica faz com que partículas grossas (areia) sejam depositadas primeiro, enquanto partículas finas (argila) sejam transportadas a distâncias maiores.</p>
+</section>
+</section>
+<section id="erosão-em-regiões-tropicais" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="erosão-em-regiões-tropicais"><span class="header-section-number">4.5</span> Erosão em Regiões Tropicais</h2>
+<div id="fig-mapa-erosao" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Mapa de erosão e capacidade de uso">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mapa-erosao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/mapa_erosao.png" class="img-fluid figure-img" style="width:85.0%" alt="Mapa de erosão e capacidade de uso">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mapa-erosao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.3: Mapa de susceptibilidade à erosão e capacidade de uso do solo — ferramenta fundamental para planejamento de intervenções de bioengenharia.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>Particularidades tropicais
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Nas regiões tropicais, a erosão hídrica é condicionada por chuvas com <span class="math inline">\(EI_{30}\)</span> superior a 10.000 MJ mm ha⁻¹ h⁻¹ ano⁻¹ (contra 1.000–3.000 em zonas temperadas), por solos com coesão aparente que se mostram estáveis quando secos mas colapsam quando saturados, por erosão subsuperficial (<em>piping</em>) frequente em solos com gradiente textural, e por ciclos de umedecimento-secagem que causam fissuração e desagregação.</p>
+</div>
+</div>
+</section>
+<section id="erosão-marginal" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="erosão-marginal"><span class="header-section-number">4.6</span> Erosão Marginal</h2>
+<p>Em regiões tropicais, a erosão das margens fluviais é um processo crítico, especialmente em rios de planície com solos coesivos. O Baixo São Francisco (SE/AL) perde em média <strong>2 a 5 metros de margem por ano</strong>, com consequências diretas para comunidades ribeirinhas e agricultura.</p>
+<p>A bioengenharia de solos oferece soluções específicas para erosão marginal, combinando retaludamento para estabilização geométrica, enrocamento vegetado na base da margem e revegetação ciliar no topo do talude.</p>
+</section>
+<section id="tolerância-de-perda-de-solo" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="tolerância-de-perda-de-solo"><span class="header-section-number">4.7</span> Tolerância de Perda de Solo</h2>
+<p>A <strong>tolerância de perda de solo</strong> (<span class="math inline">\(T\)</span>) é a taxa máxima de erosão compatível com a manutenção da produtividade em longo prazo:</p>
+<div id="tbl-tolerancia" class="striped quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tolerancia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;4.2: Tolerância de perda de solo para classes de solos tropicais <span class="citation" data-cites="bertoni2017">(<a href="../referencias.html#ref-bertoni2017" role="doc-biblioref">Bertoni &amp; Lombardi Neto, 2017</a>)</span>.
+</figcaption>
+<div aria-describedby="tbl-tolerancia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped caption-top table">
+<thead>
+<tr class="header">
+<th>Classe de solo</th>
+<th>T (t ha⁻¹ ano⁻¹)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Solos profundos (Latossolos)</td>
+<td>9–12</td>
+</tr>
+<tr class="even">
+<td>Solos moderadamente profundos</td>
+<td>5–9</td>
+</tr>
+<tr class="odd">
+<td>Solos rasos (Neossolos)</td>
+<td>2–5</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Quando a perda atual (<span class="math inline">\(A\)</span>) excede a tolerância (<span class="math inline">\(T\)</span>), intervenções de bioengenharia são <strong>necessárias</strong> para evitar a degradação irreversível.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-bertoni2017" class="csl-entry" role="listitem">
+Bertoni, J., &amp; Lombardi Neto, F. (2017). <em>Conservação do Solo</em> (9th ed). Ícone.
+</div>
+<div id="ref-morgan2005" class="csl-entry" role="listitem">
+Morgan, R. P. C. (2005). <em>Soil Erosion and Conservation</em> (3rd ed). Blackwell Publishing.
+</div>
+<div id="ref-renard1997" class="csl-entry" role="listitem">
+Renard, K. G., Foster, G. R., Weesies, G. A., McCool, D. K., &amp; Yoder, D. C. (1997). Predicting Soil Erosion by Water: A Guide to Conservation Planning with the Revised Universal Soil Loss Equation (RUSLE). <em>Agriculture Handbook</em>, <em>703</em>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/diegovidalcv\.com\.br\/books\/bioengenharia-solos\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../capitulos/03-intemperismo.html" class="pagination-link" aria-label="Intemperismo e Transformação do Solo">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Intemperismo e Transformação do Solo</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../capitulos/05-classificacao-feicoes.html" class="pagination-link" aria-label="Classificação de Feições Erosivas">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Classificação de Feições Erosivas</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Luiz Diego Vidal Santos, 2026. <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ldvsantos/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Feito com <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

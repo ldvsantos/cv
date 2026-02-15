@@ -1,0 +1,116 @@
+# Solos Tropicais: Formação e Propriedades {#sec-solos-tropicais}
+
+## O Solo como Sistema Aberto
+
+O solo é um **sistema aberto termodinâmico** que troca continuamente matéria e energia com a atmosfera, biosfera, hidrosfera e litosfera. Em regiões tropicais, a intensidade dessas trocas é amplificada pela temperatura elevada e pela abundância de água, resultando em solos profundamente intemperizados e com características únicas.
+
+## A Equação de Jenny
+
+![Fatores de formação do solo segundo Jenny (1941): Clima, Organismos, Relevo, Material de Origem e Tempo.](../img/jenny_fatores.png){#fig-jenny fig-alt="Diagrama dos fatores de formação do solo de Jenny" width="80%"}
+
+A formação do solo pode ser descrita pela equação fatorial de @jenny1941:
+
+$$
+S = f(cl, o, r, p, t, \ldots)
+$$
+
+onde:
+
+- $S$ = propriedade do solo
+- $cl$ = clima (precipitação e temperatura)
+- $o$ = organismos (biota)
+- $r$ = relevo (topografia)
+- $p$ = material de origem (rocha-mãe)
+- $t$ = tempo
+- $\ldots$ = fatores adicionais (ação antrópica)
+
+::: {.callout-note}
+## ClORPT
+O acrônimo **ClORPT** é uma forma didática de memorizar os fatores de formação do solo: **Cl**ima, **O**rganismos, **R**elevo, **P**arent material (material de origem) e **T**empo.
+:::
+
+## Reator Biogeoquímico
+
+![O solo como reator biogeoquímico: processos simultâneos de adição, remoção, transformação e translocação.](../img/reator_biogeoquimico.png){#fig-reator fig-alt="Esquema do solo como reator biogeoquímico" width="80%"}
+
+O solo funciona como um **reator biogeoquímico** onde ocorrem simultaneamente processos de adição (matéria orgânica, poeira, solutos da chuva), remoção (lixiviação, erosão, colheita), transformação (decomposição, humificação, neoformação de argilas) e translocação (eluviação/iluviação, bioturbação).
+
+Em regiões tropicais, as taxas de transformação são **significativamente maiores** devido à temperatura e umidade elevadas, o que resulta em decomposição rápida da matéria orgânica (meia-vida inferior a 5 anos), alta taxa de neoformação de argilas cauliníticas e concentração residual de óxidos de ferro e alumínio pelo processo de laterização.
+
+## Perfil do Solo Tropical
+
+![Perfil de solo tropical com horizontes bem definidos, mostrando a transição da matéria orgânica superficial até a rocha-mãe.](../img/perfil_solo.jpg){#fig-perfil fig-alt="Perfil de solo tropical com horizontes" width="70%"}
+
+![Representação esquemática dos horizontes do solo e suas transições.](../img/horizontes_solo.jpg){#fig-horizontes fig-alt="Esquema dos horizontes do solo" width="70%"}
+
+O perfil típico de um solo tropical bem drenado apresenta:
+
+| Horizonte | Profundidade típica | Características |
+|-----------|-------------------|----------------|
+| **O** | 0–5 cm | Serrapilheira em decomposição |
+| **A** | 5–30 cm | Matéria orgânica humificada, cor escura |
+| **B** | 30–200+ cm | Argilas cauliníticas, óxidos de Fe/Al, cor amarela a vermelha |
+| **C** | 200–1000+ cm | Saprolito (rocha parcialmente intemperizada) |
+| **R** | > 10 m | Rocha-mãe inalterada |
+
+: Perfil esquemático de um solo tropical profundo (Latossolo). {#tbl-perfil .striped}
+
+## Propriedades-chave para Bioengenharia
+
+### Textura e Estrutura
+
+![Triângulo textural para classificação de solos segundo a proporção de areia, silte e argila.](../img/triangulo_textural.jpg){#fig-triangulo fig-alt="Triângulo textural de classificação de solos" width="65%"}
+
+A textura do solo (proporção de areia, silte e argila) influencia diretamente a erodibilidade, a capacidade de infiltração e a resistência ao cisalhamento. Para fins de bioengenharia, os solos arenosos apresentam alta infiltração, porém baixa coesão, tornando-os susceptíveis ao desenvolvimento de ravinas. Os solos argilosos, por sua vez, possuem baixa infiltração e alta coesão quando secos, mas oferecem risco de deslizamento quando saturados. Já os solos siltosos são considerados os **mais erodíveis**, pois combinam baixa coesão com baixa permeabilidade.
+
+### Fator de Erodibilidade (K)
+
+O fator $K$ da RUSLE [@renard1997] quantifica a susceptibilidade intrínseca do solo à erosão:
+
+$$
+K = 2{,}1 \times 10^{-4} \cdot M^{1{,}14} \cdot (12 - a) + 3{,}25 \cdot (b - 2) + 2{,}5 \cdot (c - 3) \div 100
+$$
+
+onde $M$ representa o produto $(\% \text{silte} + \% \text{areia fina}) \times (100 - \% \text{argila})$, $a$ corresponde ao teor de matéria orgânica (%), $b$ indica a classe de estrutura do solo (1–4) e $c$ refere-se à classe de permeabilidade (1–6).
+
+### Resistência ao Cisalhamento
+
+A resistência ao cisalhamento ($\tau$) de um solo pode ser descrita pelo critério de Mohr-Coulomb:
+
+$$
+\tau = c' + (\sigma - u) \tan \phi'
+$$
+
+onde $c'$ é a coesão efetiva, $\sigma$ é a tensão normal, $u$ é a poropressão e $\phi'$ é o ângulo de atrito interno efetivo.
+
+A presença de raízes **aumenta a coesão** do solo. O incremento de coesão radicular ($c_r$) pode ser estimado pelo modelo de Wu-Waldron:
+
+$$
+c_r = t_R \cdot \frac{A_r}{A} \cdot (\sin \theta + \cos \theta \cdot \tan \phi')
+$$
+
+onde $t_R$ é a resistência à tração das raízes, $A_r/A$ é a razão de área radicular e $\theta$ é o ângulo de distorção das raízes.
+
+::: {.callout-tip}
+## Valores típicos
+Em solos tropicais com vegetação herbácea estabelecida, o incremento $c_r$ varia tipicamente de **5 a 25 kPa**, podendo alcançar **40 kPa** em solos com sistema radicular arbóreo denso.
+:::
+
+## Principais Classes de Solos Tropicais
+
+::: {layout-ncol=2}
+![Latossolo Amarelo — solo profundo e bem drenado, típico de planaltos tropicais.](../img/latossolo_amarelo.png){#fig-latossolo fig-alt="Perfil de Latossolo Amarelo"}
+
+![Argissolo Vermelho-Amarelo — gradiente textural com risco de deslizamento em encostas.](../img/argissolo.png){#fig-argissolo fig-alt="Perfil de Argissolo Vermelho-Amarelo"}
+:::
+
+| Classe (SiBCS) | WRB equivalente | Ocorrência | Relevância para bioengenharia |
+|-----------------|-----------------|------------|-------------------------------|
+| Latossolo | Ferralsol | Planaltos bem drenados | Estáveis, mas erodíveis quando expostos |
+| Argissolo | Acrisol/Lixisol | Encostas e tabuleiros | Gradiente textural → deslizamentos |
+| Plintossolo | Plinthosol | Áreas de flutuação do lençol | Endurecimento irreversível (petroplintita) |
+| Neossolo Litólico | Leptosol | Encostas íngremes | Rasos, alta susceptibilidade |
+| Cambissolo | Cambisol | Relevos ondulados | Jovens, heterogêneos |
+| Gleissolo | Gleysol | Várzeas e planícies | Hidromórficos, compressíveis |
+
+: Principais classes de solos tropicais e sua relevância para projetos de bioengenharia. {#tbl-classes .striped .hover}

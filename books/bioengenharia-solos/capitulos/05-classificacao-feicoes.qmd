@@ -1,0 +1,73 @@
+# Classificação de Feições Erosivas {#sec-classificacao-feicoes}
+
+## Importância da Classificação
+
+![Visão aérea de feições erosivas — o mapeamento por RPAS permite identificar e classificar ravinas com precisão espacial.](../img/foto_aerea.png){#fig-foto-aerea fig-alt="Foto aérea de feições erosivas" width="85%"}
+
+A classificação precisa das feições erosivas é o primeiro passo para o dimensionamento de intervenções de bioengenharia. Uma ravina de cabeceira demanda técnicas diferentes de uma voçoroca com contribuição do lençol freático.
+
+## Elementary Gully Classification (EGC)
+
+O sistema **Elementary Gully Classification** permite classificar feições erosivas com base em suas características geométricas e hidráulicas, utilizando dados obtidos por levantamento topográfico ou sensoriamento remoto (drone/VANT).
+
+### Parâmetros Geométricos
+
+| Parâmetro | Símbolo | Descrição |
+|-----------|---------|-----------|
+| Largura | $W$ | Distância entre bordas (m) |
+| Profundidade | $D$ | Distância vertical da borda ao fundo (m) |
+| Comprimento | $L$ | Extensão longitudinal (m) |
+| Área da seção | $A_s$ | Área da seção transversal (m²) |
+| Razão W/D | — | Indicador da forma da seção |
+| Declividade do fundo | $S_f$ | Gradiente longitudinal (%) |
+
+: Parâmetros geométricos para classificação de feições erosivas. {#tbl-parametros .striped}
+
+### Classificação por Dimensões
+
+| Classe | Profundidade | Largura | Área de seção |
+|--------|-------------|---------|---------------|
+| Sulco | < 0,3 m | < 0,3 m | < 0,09 m² |
+| Ravina pequena | 0,3–1,0 m | 0,3–1,0 m | 0,09–1,0 m² |
+| Ravina média | 1,0–3,0 m | 1,0–5,0 m | 1,0–15 m² |
+| Ravina grande | 3,0–5,0 m | 5,0–15 m | 15–75 m² |
+| Voçoroca | > 5,0 m | > 15 m | > 75 m² |
+
+: Classificação de feições erosivas por dimensões. {#tbl-dimensoes .striped .hover}
+
+## Levantamento com VANT (Drone)
+
+::: {layout-ncol=2}
+![Detalhe de ravina — parâmetros geométricos podem ser medidos em campo ou pelo modelo digital gerado por drone.](../img/ravina_detalhe.jpg){#fig-ravina-detalhe fig-alt="Detalhe de ravina em solo tropical"}
+
+![Perfil de solo exposto pela erosão — a análise dos horizontes auxilia no dimensionamento das intervenções.](../img/perfil_solo_feicoes.jpg){#fig-perfil-feicoes fig-alt="Perfil de solo exposto por erosão"}
+:::
+
+O uso de **Veículos Aéreos Não Tripulados** (VANT/drone) revolucionou o levantamento de feições erosivas ao permitir a geração de modelos digitais de superfície (MDS) com resolução inferior a 5 cm, o cálculo volumétrico de perda de solo por diferença de MDSs multitemporais, o mapeamento de áreas instáveis e cabeceiras ativas, e o planejamento de intervenções com base em ortomosaicos de alta resolução.
+
+### Fluxo de Trabalho
+
+O fluxo de trabalho com VANT segue uma sequência operacional que se inicia com o planejamento de voo (cobertura 80% frontal e 60% lateral, altitude 50–100 m), seguido pela distribuição de pontos de controle (GCPs com GNSS RTK para georreferenciamento). Os dados são processados por *Structure from Motion* (SfM) para geração de nuvem de pontos, resultando em produtos como ortomosaico, MDS, MDT e curvas de nível. A análise final contempla a extração de seções transversais, volumes e taxas de recuo.
+
+## Seleção de Técnicas por Classe
+
+A classificação da feição erosiva orienta diretamente a seleção das técnicas de bioengenharia:
+
+| Classe | Técnica primária | Técnica complementar |
+|--------|-----------------|---------------------|
+| Sulco | Cobertura vegetal, palhada | Cordões vegetativos |
+| Ravina pequena | Paliçadas de bambu | Revegetação |
+| Ravina média | Paliçadas + check-dams | Hidrossemeadura |
+| Ravina grande | Gabião vivo | Biomantas + drenagem |
+| Voçoroca | Projeto integrado (retaludamento + drenagem + gabião + revegetação) | Parede Krainer, enrocamento |
+
+: Seleção de técnicas de bioengenharia por classe de feição erosiva. {#tbl-selecao .striped .hover}
+
+::: {.callout-tip}
+## Regra prática
+Quanto maior a feição erosiva, maior a necessidade de **combinação de técnicas** e de um **projeto integrado** que considere drenagem, estabilização mecânica e revegetação simultaneamente.
+:::
+
+## Monitoramento Temporal
+
+O monitoramento periódico das feições é essencial para avaliar a eficácia das intervenções. Os indicadores-chave incluem a taxa de recuo da cabeceira (m/ano), a taxa de alargamento lateral (m/ano), o volume de sedimento retido nas estruturas (m³), a cobertura vegetal no interior da feição (%) e a estabilidade das paredes laterais (ângulo do talude).

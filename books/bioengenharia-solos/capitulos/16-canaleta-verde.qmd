@@ -1,0 +1,103 @@
+# Canaleta Verde {#sec-canaleta-verde}
+
+## Conceito
+
+![Canaleta verde com vegetação herbácea estabelecida — canal de drenagem naturalizado que combina condução hidráulica com tratamento por infiltração.](../img/canaleta_verde.jpg){#fig-canaleta fig-alt="Canaleta verde com vegetação" width="80%"}
+
+A **canaleta verde** (*vegetated swale* ou *bioswale*) é um canal de drenagem aberto com seção trapezoidal ou parabólica, revestido com vegetação herbácea densa. Funciona simultaneamente como condutor hidráulico e como sistema de tratamento por infiltração e filtração.
+
+## Funções
+
+![Canaleta verde com hidrossemeadura — integração de drenagem naturalizada com revegetação por hidrossemeadura.](../img/canaleta_hidrossemeadura.png){#fig-canaleta-hidro fig-alt="Canaleta verde com hidrossemeadura" width="80%"}
+
+A canaleta verde desempenha cinco funções simultâneas. Promove a condução controlada do escoamento superficial, a infiltração para recarga do aquífero, a filtração de sedimentos e nutrientes, o amortecimento do pico de cheia, e a integração paisagística com geração de serviços ecossistêmicos.
+
+## Dimensionamento Hidráulico
+
+### Equação de Manning
+
+$$
+Q = \frac{1}{n} \cdot A \cdot R_h^{2/3} \cdot S^{1/2}
+$$
+
+Para canais vegetados, o coeficiente de Manning ($n$) varia com a espécie e a altura da vegetação:
+
+| Cobertura vegetal | *n* de Manning |
+|-------------------|---------------|
+| Grama curta (< 10 cm) | 0,030–0,035 |
+| Grama média (10–25 cm) | 0,035–0,045 |
+| Grama alta (> 25 cm) | 0,045–0,060 |
+| Vegetação densa + arbustos | 0,060–0,100 |
+
+: Coeficientes de Manning para canais vegetados. {#tbl-manning .striped}
+
+### Regime de Escoamento
+
+Para que a canaleta funcione adequadamente sem causar erosão, o escoamento deve ser **subcrítico** (Froude < 1):
+
+$$
+Fr = \frac{V}{\sqrt{g \cdot y}} < 1{,}0
+$$
+
+onde $V$ é a velocidade média e $y$ é a profundidade do escoamento.
+
+### Tensão Cisalhante Admissível
+
+A velocidade máxima admissível é limitada pela tensão cisalhante que a vegetação suporta:
+
+$$
+\tau = \gamma_w \cdot R_h \cdot S
+$$
+
+| Cobertura | $\tau_{adm}$ (Pa) | $V_{max}$ (m/s) |
+|-----------|-------------------|-----------------|
+| Grama curta | 30–50 | 1,5–2,0 |
+| Grama densa | 50–100 | 2,0–2,5 |
+| Grama + arbustos | 100–170 | 2,5–3,0 |
+
+: Tensão cisalhante e velocidade admissíveis para canais vegetados. {#tbl-tensao .striped}
+
+### Seção Trapezoidal
+
+Para uma canaleta com seção trapezoidal:
+
+$$
+A = (b + m \cdot y) \cdot y
+$$
+
+$$
+P = b + 2y\sqrt{1 + m^2}
+$$
+
+onde $b$ é a largura da base, $m$ é a inclinação dos taludes laterais (H:V) e $y$ é a profundidade.
+
+## Projeto Típico
+
+| Parâmetro | Valor recomendado |
+|-----------|------------------|
+| Largura da base | 0,5–2,0 m |
+| Profundidade | 0,3–0,6 m |
+| Inclinação lateral | ≥ 3:1 (H:V) |
+| Declividade longitudinal | 1–5% |
+| Borda livre | ≥ 15 cm |
+| Velocidade máxima | ≤ 2,0 m/s |
+
+: Parâmetros de projeto para canaleta verde. {#tbl-projeto .striped}
+
+## Vantagens sobre Canaletas de Concreto
+
+| Critério | Canaleta de concreto | Canaleta verde |
+|----------|---------------------|----------------|
+| Custo de implantação | R$ 150–400/m | R$ 40–120/m |
+| Infiltração | Nula | 30–60% do volume |
+| Remoção de sedimentos | ~ 0% | 60–85% |
+| Manutenção | Limpeza mecânica | Roçada 2–4×/ano |
+| Vida útil | 30+ anos | Permanente (vegetal) |
+| Emissão de CO₂ | Alta (concreto) | Sequestro |
+
+: Comparativo entre canaletas de concreto e canaletas verdes. {#tbl-comparativo .striped .hover}
+
+::: {.callout-tip}
+## Infraestrutura verde
+Canaletas verdes são um componente central da **infraestrutura verde urbana** (*green infrastructure*), reconhecidas como **solução baseada na natureza** pela IUCN e pelo Banco Mundial.
+:::

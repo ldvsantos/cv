@@ -1,0 +1,88 @@
+# Geotêxteis no Controle de Erosão {#sec-geotexteis}
+
+## Conceito
+
+![Talude revestido com geotêxtil — o material têxtil protege o solo enquanto permite o crescimento da vegetação.](../img/talude_biotextil.jpg){#fig-geotextil-talude fig-alt="Talude com geotêxtil instalado" width="80%"}
+
+Os **geotêxteis** são produtos têxteis permeáveis utilizados em contato com o solo para desempenhar funções de filtração, separação, reforço, drenagem e proteção. No contexto da bioengenharia, os geotêxteis controlam a erosão superficial enquanto permitem o estabelecimento vegetal.
+
+## Classificação
+
+::: {layout-ncol=2}
+![Máquina universal de ensaios — equipamento para medição de resistência à tração e perfuração dos geotêxteis.](../img/maquina_ensaio.png){#fig-maquina fig-alt="Máquina universal de ensaios"}
+
+![Câmara de degradação acelerada — simulação de envelhecimento UV e inttempéries para avaliar durabilidade.](../img/camara_degradacao.png){#fig-camara fig-alt="Câmara de degradação"}
+:::
+
+### Por Processo de Fabricação
+
+**Tecidos** — fibras entrelaçadas em trama regular (máquina de tecelagem). Alta resistência à tração em uma ou duas direções.
+
+**Não tecidos** — fibras dispostas aleatoriamente e unidas por agulhamento, termofusão ou ligação química. Alta permeabilidade e deformabilidade.
+
+### Por Matéria-Prima
+
+**Sintéticos** — polipropileno (PP), poliéster (PET), polietileno (PE). Durabilidade de 50–100+ anos.
+
+**Naturais** — coco, juta, sisal, taboa (*Typha*), rami. Biodegradáveis (1–5 anos). Também chamados **biogeotêxteis**.
+
+## Funções Geotécnicas
+
+| Função | Mecanismo | Aplicação na bioengenharia |
+|--------|-----------|---------------------------|
+| **Filtração** | Reter solo, passar água | Drenos, base de enrocamento |
+| **Separação** | Impedir mistura de camadas | Interface solo-pedra |
+| **Reforço** | Resistir à tração | Taludes, solo reforçado |
+| **Proteção** | Absorver impacto | Proteção de geomembranas |
+| **Drenagem** | Conduzir fluidos no plano | Geodrenos |
+| **Controle de erosão** | Cobrir e proteger superfície | Biomantas, TRM |
+
+: Funções geotécnicas de geotêxteis. {#tbl-funcoes .striped .hover}
+
+## Propriedades
+
+### Mecânicas
+
+As propriedades mecânicas fundamentais incluem a resistência à tração (kN/m, ensaio de faixa larga conforme ABNT NBR 12824), o alongamento na ruptura (% de deformação máxima), a resistência ao puncionamento (kN, ensaio CBR conforme ABNT NBR 13359) e a resistência ao rasgo (kN, ensaio trapezoidal).
+
+### Hidráulicas
+
+As propriedades hidráulicas compreendem a permissividade ($\psi$, s⁻¹), que indica a capacidade de fluxo perpendicular, a transmissividade ($\theta$, m²/s), que mede a capacidade de fluxo no plano, e a abertura de filtração ($O_{95}$, mm), que define o tamanho dos poros.
+
+### Critério de Filtração
+
+Para que o geotêxtil funcione como filtro sem colmatar:
+
+$$
+O_{95} < (2 \text{ a } 3) \cdot D_{85,solo}
+$$
+
+e
+
+$$
+O_{95} > (1 \text{ a } 2) \cdot D_{15,solo}
+$$
+
+## Geotêxteis no Baixo São Francisco
+
+![Coleta de dados em campo no Baixo São Francisco — monitoramento da performance dos geotêxteis em taludes marginais.](../img/coleta_campo.png){#fig-coleta fig-alt="Coleta de campo no Baixo São Francisco" width="80%"}
+
+A aplicação de biogeotêxteis (coco, juta, sisal) na proteção de taludes marginais do rio São Francisco em Sergipe e Alagoas demonstrou redução de 90–95% na perda de solo no primeiro ano, cobertura vegetal superior a 80% em 90 dias sob biomantas de coco, biodegradação controlada em 2–5 anos (suficiente para estabelecimento vegetal) e custo 40–60% inferior ao gabião metálico para a mesma extensão protegida.
+
+## Ensaios Normatizados
+
+| Ensaio | Norma ABNT | Norma ASTM |
+|--------|-----------|-----------|
+| Tração faixa larga | NBR 12824 | D4595 |
+| Puncionamento CBR | NBR 13359 | D6241 |
+| Rasgo trapezoidal | NBR 15314 | D4533 |
+| Permissividade | NBR 15223 | D4491 |
+| Abertura de filtração | NBR 12956 | D4751 |
+| Massa por unidade de área | NBR 12568 | D5261 |
+
+: Ensaios normatizados para geotêxteis. {#tbl-ensaios .striped .hover}
+
+::: {.callout-note}
+## Tendência
+A substituição progressiva de geossintéticos **sintéticos** por **naturais** (biogeotêxteis) em aplicações de controle de erosão é uma tendência global alinhada com os princípios de economia circular e soluções baseadas na natureza.
+:::

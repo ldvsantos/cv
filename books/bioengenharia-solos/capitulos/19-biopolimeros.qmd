@@ -1,0 +1,102 @@
+# Biopolímeros Superabsorventes {#sec-biopolimeros}
+
+## Conceito
+
+![Material de taboa (*Typha domingensis*) utilizado na produção do Bio-SAP — polpa celulósica processada para conferir propriedades superabsorventes.](../img/taboa_material.png){#fig-taboa fig-alt="Material de taboa para Bio-SAP" width="80%"}
+
+Os **biopolímeros superabsorventes** (Bio-SAP — *Superabsorbent Biopolymer*) são materiais de origem vegetal capazes de absorver e reter grandes volumes de água (100–500× seu peso seco), liberando-a gradualmente para a zona radicular das plantas.
+
+## Bio-SAP de Taboa
+
+### Desenvolvimento
+
+O Bio-SAP de taboa (*Typha domingensis*) é uma inovação desenvolvida a partir da polpa celulósica da planta, processada por carboximetilação e reticulação para conferir propriedades superabsorventes.
+
+### Processo de Produção
+
+```{mermaid}
+%%| fig-width: 7
+flowchart LR
+    A[Colheita\nda taboa] --> B[Extração\nda polpa]
+    B --> C[Carboximetilação\n(NaOH + ácido\nmonocloroacético)]
+    C --> D[Reticulação\n(epicloridrina)]
+    D --> E[Secagem e\nmoagem]
+    E --> F[Bio-SAP\ngranulado]
+```
+
+### Propriedades
+
+![Microscopia eletrônica de varredura (MEV) do Bio-SAP — comparação da microestrutura antes e após absorção de água.](../img/mev_comparacao.png){#fig-mev fig-alt="MEV do Bio-SAP" width="80%"}
+
+| Propriedade | Valor |
+|-------------|-------|
+| Capacidade de absorção em água destilada | 300–500 g/g |
+| Capacidade de absorção em solo | 150–250 g/g |
+| Tempo de absorção (90%) | 15–30 min |
+| Taxa de liberação (50%) | 12–48 h |
+| Biodegradação completa | 6–18 meses |
+| Granulometria | 0,5–2,0 mm |
+
+: Propriedades do Bio-SAP de taboa. {#tbl-biosap .striped}
+
+## Geocompostos Hidrorretentores Typha-Rami
+
+### Conceito
+
+![Processo de confecção do geocomposto hidrorretentor — estrutura sanduíche de biotêxtil com núcleo de Bio-SAP.](../img/processo_confeccao.png){#fig-confeccao fig-alt="Confecção do geocomposto" width="80%"}
+
+Os **geocompostos hidrorretentores** integram o Bio-SAP em uma estrutura sanduíche de biotêxtil, criando um sistema de **retenção hídrica distribuída** para recuperação de encostas.
+
+### Estrutura
+
+| Camada | Material | Função |
+|--------|----------|--------|
+| Exterior (×2) | Biotêxtil de taboa-rami | Proteção + filtração |
+| Interior | Núcleo de Bio-SAP | Reservatório hídrico |
+| Aglutinante | *Aloe vera* + amida 90% | Fixação e ativação |
+
+: Estrutura do geocomposto hidrorretentor. {#tbl-geocomposto-hidro .striped}
+
+### Desempenho
+
+O geocomposto hidrorretentor apresenta WHC (*Water Holding Capacity*) superior a 300% do peso seco, retenção de macronutrientes (N, P, K) acima de 60%, integridade estrutural mantida por 180 dias em campo, e curva de retenção ajustável pela equação de van Genuchten:
+
+$$
+\theta(h) = \theta_r + \frac{\theta_s - \theta_r}{[1 + (\alpha \cdot h)^n]^m}
+$$
+
+onde $\theta_r$ e $\theta_s$ são os teores de água residual e saturado, $h$ é o potencial matricial e $\alpha$, $n$, $m$ são parâmetros de ajuste.
+
+## Aplicações
+
+![Ensaio de alelopatia e germinação com Bio-SAP — avaliação do efeito do biopolímero sobre o crescimento de plântulas.](../img/alelopatia_germinacao.jpg){#fig-alelopatia fig-alt="Ensaio de germinação com Bio-SAP" width="75%"}
+
+### 1. Recuperação de Encostas
+
+Instalado sob biomantas ou hidrossemeadura, o Bio-SAP retém a água da chuva na zona radicular, reduzindo a necessidade de irrigação em 50–70% nos primeiros 90 dias, o que é crítico em regiões semiáridas com déficit hídrico.
+
+### 2. Revegetação de Taludes em Mineração
+
+Em substratos altamente degradados (pH extremo, sem matéria orgânica), a combinação de Bio-SAP com composto orgânico cria condições mínimas para o estabelecimento vegetal, liberando água e nutrientes gradualmente.
+
+### 3. Produção de Mudas
+
+A incorporação ao substrato de viveiros reduz a frequência de irrigação em 40–60% e aumenta a taxa de sobrevivência no transplante.
+
+## Vantagens sobre SAP Sintéticos
+
+| Critério | SAP sintético (poliacrilato) | Bio-SAP (taboa) |
+|----------|----------------------------|-----------------|
+| Absorção (g/g) | 300–600 | 300–500 |
+| Biodegradação | Não | Sim (6–18 meses) |
+| Microplásticos | Sim | Não |
+| Matéria-prima | Petroquímica | Vegetal (renovável) |
+| Custo | R$ 15–30/kg | R$ 8–20/kg |
+| Toxicidade residual | Possível | Nenhuma |
+
+: Comparativo entre SAP sintético e Bio-SAP de taboa. {#tbl-comparativo-sap .striped .hover}
+
+::: {.callout-important}
+## Relevância ambiental
+SAPs sintéticos (poliacrilatos) são uma fonte crescente de **microplásticos no solo**. Sua substituição por Bio-SAPs vegetais elimina esse risco e alinha a prática com os ODS 12 (Consumo responsável) e 15 (Vida terrestre).
+:::
