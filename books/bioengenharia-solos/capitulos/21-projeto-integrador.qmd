@@ -203,6 +203,32 @@ O monitoramento é obrigatório em projetos de NBS (ver @sec-nbs), pois são sis
 
 : Plano de monitoramento do projeto integrador, com indicadores, métodos, frequência e metas. {#tbl-monitoramento .striped}
 
+## Ferramentas Computacionais para Modelagem
+
+O projeto integrador de bioengenharia pode ser significativamente potencializado pelo uso de ferramentas computacionais que automatizam cálculos repetitivos, simulam cenários de intervenção e integram dados espaciais de múltiplas fontes. As três categorias de ferramentas apresentadas a seguir cobrem as necessidades computacionais mais frequentes em projetos de bioengenharia.
+
+### Modelagem Hidrológica (SIG)
+
+Os Sistemas de Informação Geográfica (SIG) são a plataforma central de integração de dados espaciais em projetos de bioengenharia. A aplicação da RUSLE em ambiente SIG permite calcular a perda de solo pixel a pixel em toda a bacia contribuinte, identificando espacialmente os *hotspots* erosivos que devem ser priorizados. O QGIS (software livre) com os plugins SAGA e GRASS oferece funcionalidades para derivação automática de bacias hidrográficas a partir de MDE (Modelo Digital de Elevação), cálculo dos fatores $LS$, $C$ e $P$ da RUSLE a partir de dados raster, modelagem de escoamento superficial pelo método SCS-CN para estimativa de vazões de projeto e análise multicritério para priorização de intervenções por sobreposição ponderada de camadas temáticas.
+
+### Estabilidade de Taludes
+
+A análise de estabilidade de taludes é obrigatória para o dimensionamento de gabiões vivos (ver @sec-gabiao-vivo), paredes Krainer (ver @sec-parede-krainer) e retaludamento (ver @sec-nbs). Para análises em duas dimensões, os métodos de equilíbrio-limite (Bishop simplificado, Janbu, Spencer) podem ser executados com softwares como GeoStudio SLOPE/W, Slide2 (Rocscience) ou GEOSLOPE, que calculam automaticamente o fator de segurança mínimo ($FS$) por busca da superfície de ruptura crítica. A incorporação do efeito da vegetação ao modelo requer a adição do termo de coesão radicular ($c_r$) à coesão do solo na faixa de profundidade radicular (0–2 m para gramíneas, 0–5 m para espécies arbóreas), além da aplicação de uma sobrecarga correspondente ao peso da vegetação (0,5–2,0 kPa para gramíneas, 2–5 kPa para arbustos e 5–15 kPa para árvores).
+
+A lógica do cálculo de estabilidade pode ser implementada em linguagem Python para análises paramétricas rápidas. A equação do talude infinito (adequada para rupturas superficiais em encostas com espessura de solo homogênea) pode ser expressa como
+
+$$
+FS = \frac{c' + c_r + (\gamma \cdot z \cdot \cos^2\beta - u) \cdot \tan\phi'}{\gamma \cdot z \cdot \sin\beta \cdot \cos\beta}
+$$
+
+onde a inclusão explícita de $c_r$ (coesão radicular) permite quantificar o ganho de estabilidade proporcionado pela vegetação para diferentes combinações de profundidade de raiz, densidade radicular e espécie vegetal. Variando sistematicamente os parâmetros $c_r$ (0 a 25 kPa), $u$ (0 a $\gamma_w \cdot z$) e $\beta$ (15° a 60°), o projetista pode gerar abácos de decisão que indicam, para cada condição de campo, se a revegetação sozinha é suficiente ($FS \geq 1{,}5$) ou se estruturas complementares (gabiões, Krainer) são necessárias.
+
+### Modelagem de Erosão e Deposição
+
+Para feições erosivas complexas (voçorocas com múltiplas cabeceiras, contribuição de lençol freático, *piping*), modelos de erosão distribuídos como WEPP (*Water Erosion Prediction Project*) e LISEM (*Limburg Soil Erosion Model*) oferecem simulação física dos processos de desprendimento, transporte e deposição de sedimentos em escala de evento ou contínua, incorporando a variabilidade espacial de solo, cobertura e topografia. Esses modelos, embora mais complexos que a RUSLE, permitem simular o efeito de intervenções pontuais (como paliçadas ou bacias de captação) na redistribuição de sedimentos ao longo da feição, subsidiando o posicionamento ótimo das estruturas.
+
+A modelagem computacional não substitui o julgamento do engenheiro nem a investigação de campo, mas acelera o processo de projeto, permite a avaliação quantitativa de múltiplos cenários de intervenção antes da implantação e fornece subsídios técnicos auditáveis para justificar decisões de projeto perante órgãos licenciadores e financiadores.
+
 ## Estudo de Caso: Voçoroca em Latossolo no Cerrado
 
 ### Cenário

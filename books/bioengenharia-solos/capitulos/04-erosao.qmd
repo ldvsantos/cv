@@ -35,6 +35,48 @@ A @tbl-rusle descreve cada fator da equação. É importante notar que o resulta
 Os fatores $C$ e $P$ são os diretamente manipuláveis pela bioengenharia. Uma cobertura de gramíneas pode reduzir $C$ de 1,0 (solo nu) para 0,01, representando uma redução de 99% na erosão. Da mesma forma, paliçadas ou cordões vegetativos reduzem efetivamente o fator $L$ (comprimento da rampa), enquanto terraços alteram o fator $S$ (declividade). A combinação dessas intervenções pode reduzir a perda de solo de centenas de toneladas por hectare/ano para valores abaixo da tolerância.
 :::
 
+## Método SCS-CN para Estimativa de Escoamento
+
+Além da RUSLE, que estima a perda de solo por erosão laminar, o projetista de bioengenharia necessita estimar o volume e o pico de escoamento superficial gerado por eventos de chuva, informação essencial para dimensionar paliçadas (ver @sec-palicadas), bacias de captação (ver @sec-bacias-captacao) e canaletas verdes (ver @sec-canaleta-verde). O método SCS-CN (*Soil Conservation Service — Curve Number*), desenvolvido pelo USDA, é a ferramenta mais amplamente utilizada para essa finalidade.
+
+O escoamento superficial direto ($Q$, em mm) gerado por uma precipitação total ($P$, em mm) é estimado por
+
+$$
+Q = \frac{(P - 0{,}2S)^2}{P + 0{,}8S}
+$$
+
+válida para $P > 0{,}2S$ (caso contrário, $Q = 0$), onde $S$ é a retenção potencial máxima do solo (mm), calculada a partir do *Curve Number* ($CN$) pela relação
+
+$$
+S = \frac{25400}{CN} - 254
+$$
+
+O $CN$ é um parâmetro adimensional (0–100) que integra os efeitos do tipo hidrológico do solo, da cobertura vegetal e da condição de umidade antecedente. A @tbl-cn apresenta valores de $CN$ para condições típicas em projetos de bioengenharia no Brasil tropical.
+
+| Uso do solo / cobertura | Solo tipo A | Solo tipo B | Solo tipo C | Solo tipo D |
+|--------------------------|------------|------------|------------|------------|
+| Floresta densa (Mata Atlântica) | 25 | 55 | 70 | 77 |
+| Cerrado denso | 36 | 60 | 73 | 79 |
+| Pastagem em boas condições | 39 | 61 | 74 | 80 |
+| Pastagem degradada (solo exposto > 50%) | 68 | 79 | 86 | 89 |
+| Solo nu (pós-desmatamento) | 77 | 86 | 91 | 94 |
+| Estrada rural não pavimentada | 72 | 82 | 87 | 89 |
+
+: Valores de CN para condições típicas de projetos de bioengenharia em solos tropicais (condição de umidade antecedente II). {#tbl-cn .striped .hover}
+
+::: {.callout-tip}
+## Aplicação prática
+A redução do $CN$ é o objetivo hidrológico de qualquer intervenção de bioengenharia. Ao converter uma pastagem degradada ($CN = 86$, solo tipo C) em uma encosta revegetada com espécies nativas ($CN \approx 73$), a retenção potencial $S$ aumenta de 41 mm para 94 mm, reduzindo o escoamento gerado por uma chuva de 80 mm de 35,5 mm para 11,6 mm, o que representa uma diminuição de 67% no volume de enxurrada. Esse cálculo justifica tecnicamente a prioridade dada à revegetação em projetos de controle de erosão.
+:::
+
+A vazão de pico ($Q_p$) pode ser estimada pelo método racional modificado do SCS, que incorpora o tempo de concentração da bacia
+
+$$
+Q_p = \frac{0{,}208 \cdot A \cdot Q}{t_p}
+$$
+
+onde $A$ é a área da bacia contribuinte (km²), $Q$ é o escoamento direto (mm, calculado pela equação anterior) e $t_p$ é o tempo de pico (h), dado por $t_p = 0{,}6 \cdot t_c$ (onde $t_c$ é o tempo de concentração estimado pela fórmula de Kirpich ou equivalente). Essa vazão de pico é o dado de entrada para o dimensionamento hidráulico das estruturas de dissipação, contenção e condução de enxurrada, conforme detalhado nos capítulos subsequentes.
+
 ## Tipos de Erosão
 
 A erosão hídrica se manifesta em diferentes formas, que representam um contínuo de intensidade crescente. A @fig-tipos-erosao apresenta uma comparação visual desses tipos, desde a erosão laminar (praticamente imperceptível) até as feições lineares de grande porte.

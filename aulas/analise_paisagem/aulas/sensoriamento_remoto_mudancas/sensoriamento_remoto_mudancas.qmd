@@ -70,7 +70,8 @@ A paisagem é **dinâmica**  -  seus padrões se transformam no tempo por:
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**Tipos de mudança**
+**Tipos de mudança
+**
 
 | Tipo | Exemplo | Velocidade |
 |------|---------|:----------:|
@@ -87,6 +88,57 @@ A paisagem é **dinâmica**  -  seus padrões se transformam no tempo por:
 > *"Compreender a paisagem exige leitura do presente E do passado. Padrões atuais são resultado de trajetórias históricas de transformação."* (Turner & Gardner, 2015)
 
 A detecção de mudanças complementa a análise estática (Aula 14) com a **dimensão temporal**.
+:::
+:::
+:::
+
+---
+
+## Regimes de distúrbio e dinâmica da paisagem {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Distúrbios como forçantes de heterogeneidade
+
+Além das forças motrizes socioeconômicas, a paisagem é modulada por **regimes de distúrbio** (Turner, 2010), definidos pelo padrão temporal e espacial de eventos que removem biomassa ou redefinem condições abióticas.
+
+Um regime de distúrbio é caracterizado por:
+
+- **Frequência**  -  intervalo médio entre eventos
+- **Intensidade**  -  magnitude do impacto
+- **Extensão**  -  área afetada por evento
+- **Sazonalidade**  -  época preferencial de ocorrência
+
+### Categorias relevantes no Brasil
+
+| Distúrbio | Exemplo | Efeito na paisagem |
+|-----------|---------|--------------------|
+| **Fogo** | Queimadas no Cerrado/Amazônia | Seleção de espécies rebrotantes, conversão de fisionomias |
+| **Eventos climáticos extremos** | Seca 2015-16 na Amazônia | Mortalidade seletiva de árvores, deslizamentos |
+| **Perturbações antrópicas agudas** | Barragens, mineração, rodovias | Fragmentação abrupta, redefinição de drenagem |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Equilíbrio vs. não-equilíbrio
+**
+
+A interação entre regime de distúrbio e extensão da paisagem determina o comportamento do sistema:
+
+- **Equilíbrio:** distúrbios frequentes mas pequenos em relação à paisagem → proporção de cada estágio sucessional permanece estável
+- **Não-equilíbrio:** distúrbios raros mas extensos → alteram simultaneamente grande parte da paisagem (ex.: incêndios catastróficos)
+
+### Implicação para detecção de mudanças
+
+A detecção de mudanças por sensoriamento remoto deve distinguir:
+
+1. Mudanças **dirigidas por distúrbio natural** (fogo, enchente) → recuperação potencial
+2. Mudanças **dirigidas por conversão antrópica** (desmatamento) → tendência irreversível sem intervenção
+3. Mudanças **interativas** (fogo em borda de fragmento desmatado) → retroalimentação positiva
+
+> *"Distúrbios não são desvios do normal  -  são parte integral da dinâmica da paisagem."*  -  Turner (2010)
 :::
 :::
 :::
@@ -175,7 +227,8 @@ Uma **trajetória** é a sequência de estados que um pixel (ou unidade da paisa
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**MapBiomas: trajetórias 1985-2023**
+**MapBiomas: trajetórias 1985-2023
+**
 
 O MapBiomas classifica a cobertura do Brasil a cada ano desde 1985, permitindo:
 
@@ -258,7 +311,8 @@ Driving forces → Pressões → Estado → Impacto → Resposta
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**Perguntas interpretativas**
+**Perguntas interpretativas
+**
 
 Para cada mudança identificada, pergunte:
 
@@ -305,7 +359,8 @@ Para cada mudança identificada, pergunte:
 
 ::: {.column width="50%"}
 ::: {.info-box}
-**Boas práticas**
+**Boas práticas
+**
 
 ✅ Comparar **mesma estação** do ano
 ✅ Usar **composição temporal** (mediana, mosaico) para reduzir nuvens
@@ -343,7 +398,8 @@ Na Aula 16, você produzirá um **registro interpretativo de mudanças** na áre
 
 ::: {.column width="50%"}
 ::: {.info-box}
-**Leitura preparatória**
+**Leitura preparatória
+**
 
 - Acessar **MapBiomas** e explorar a aba de **transições**
 - Verificar dados do **município** da área de estudo
@@ -357,7 +413,8 @@ Na Aula 16, você produzirá um **registro interpretativo de mudanças** na áre
 ## Síntese da Aula 15 {.smaller-text}
 
 ::: {.info-box}
-**O que vimos hoje**
+**O que vimos hoje
+**
 
 1. **Detecção de mudanças**  -  por que e como identificar transformações na paisagem
 2. **Métodos**  -  comparação visual, diferença de índices, pós-classificação

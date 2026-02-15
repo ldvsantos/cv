@@ -108,6 +108,26 @@ onde $t_R$ é a resistência à tração das raízes (quanto uma raiz individual
 Em solos tropicais com vegetação herbácea estabelecida (como gramíneas Vetiver ou Brachiaria), o incremento $c_r$ varia tipicamente de 5 a 25 kPa, podendo alcançar 40 kPa em solos com sistema radicular arbóreo denso. Para contexto, uma coesão de 10 kPa já pode significar a diferença entre um talude estável e um deslizamento em encostas com inclinações entre 30° e 45°.
 :::
 
+### Condutividade Hidráulica
+
+A condutividade hidráulica saturada ($K_s$) é uma propriedade fundamental para o dimensionamento de sistemas de drenagem em projetos de bioengenharia, pois governa a taxa de infiltração de água no solo e a velocidade de dissipação de poropressões em taludes. Em solos tropicais, $K_s$ apresenta comportamento paradoxal em relação à textura, especialmente nos Latossolos, onde a microagregação por óxidos de ferro confere permeabilidade elevada a solos com mais de 60% de argila (comportamento pseudo-arenoso). A determinação em campo é realizada por ensaio de infiltração com permeâmetro de Guelph ou infiltrômetro de duplo anel (ABNT NBR 7229), e em laboratório por permeâmetro de carga constante ou variável conforme NBR 14545.
+
+A @tbl-ks apresenta valores típicos de $K_s$ para as principais classes de solos tropicais brasileiros, obtidos a partir de compilação de ensaios publicados na literatura nacional. Esses valores orientam o dimensionamento preliminar de geodrenos (ver @sec-biotexteis), bacias de captação (ver @sec-bacias-captacao) e canaletas verdes (ver @sec-canaleta-verde), devendo ser confirmados por ensaios in situ na fase de projeto executivo.
+
+| Classe de solo | $K_s$ típico (mm/h) | Comportamento hidráulico | Implicação para bioengenharia |
+|---------------|---------------------|--------------------------|-------------------------------|
+| Latossolo argiloso (microagregado) | 50–200 | Rápida infiltração apesar do alto teor de argila | Drenagem natural eficiente, risco de erosão interna em descontinuidades |
+| Latossolo arenoso | 100–500 | Muito permeável | Risco de percolação sob paliçadas, exige vedação de base |
+| Argissolo (horizonte Bt) | 1–15 | Baixa permeabilidade no horizonte Bt | Gera lençol suspenso, essencial drenar a interface A/Bt |
+| Plintossolo (petroplintita) | 0,1–5 | Quase impermeável quando endurecido | Exige drenagem superficial agressiva, limita enraizamento |
+| Cambissolo | 10–80 | Variável conforme maturidade | Investigação local obrigatória |
+| Gleissolo (saturado) | 0,5–10 | Saturação permanente | Exige espécies tolerantes a anaerobiose |
+| Neossolo Quartzarênico | 200–800 | Extremamente permeável | Baixa retenção hídrica, Bio-SAP recomendado (@sec-biopolimeros) |
+
+: Condutividade hidráulica saturada típica para solos tropicais brasileiros e implicações para bioengenharia. {#tbl-ks .striped .hover}
+
+A relação entre $K_s$ e a intensidade da chuva de projeto ($i$) determina o mecanismo de geração de escoamento superficial. Quando $i > K_s$ (escoamento hortoniano), a precipitação excedente forma escoamento superficial imediatamente, situação comum em Argissolos e Plintossolos com horizonte de impedimento. Quando $i < K_s$ (escoamento por saturação), o solo infiltra toda a chuva até que a capacidade de armazenamento se esgote, gerando escoamento apenas quando o perfil satura por acúmulo progressivo, mecanismo dominante em Latossolos profundos durante eventos prolongados. No projeto de bioengenharia, a distinção entre esses mecanismos orienta a escolha entre proteção superficial (para escoamento hortoniano) e drenagem subsuperficial (para escoamento por saturação).
+
 ## Principais Classes de Solos Tropicais
 
 A classificação do solo é uma ferramenta fundamental para o engenheiro que projeta intervenções de bioengenharia, pois cada classe de solo apresenta comportamento geotécnico, erodibilidade e resposta hidrológica distintos. No Brasil, o Sistema Brasileiro de Classificação de Solos (SiBCS) identifica dezenas de classes, mas seis delas concentram a maioria dos desafios enfrentados em projetos de estabilização e controle de erosão. A @fig-latossolo e a @fig-argissolo ilustram as duas classes mais frequentes em projetos de bioengenharia no Brasil tropical.

@@ -63,7 +63,8 @@ Consequências ecológicas:
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**A conectividade como solução**
+**A conectividade como solução
+**
 
 A **conectividade** entre fragmentos permite:
 
@@ -121,7 +122,8 @@ Cada aresta possui um **peso** baseado na:
 
 ::: {.column width="45%"}
 ::: {.highlight-box}
-**Limiar de dispersão**
+**Limiar de dispersão
+**
 
 Duas manchas são consideradas **conectadas** se a distância entre elas for ≤ a **capacidade de dispersão** da espécie-alvo ($d_{max}$).
 
@@ -177,7 +179,8 @@ Onde:
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**Vantagem sobre IIC**
+**Vantagem sobre IIC
+**
 
 O PC é **probabilístico**:
 
@@ -235,7 +238,8 @@ Manchas com alto **dPC_connector** são *key stepping stones*  -  sua perda desc
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**Requisitos**
+**Requisitos
+**
 
 - Java ≥ 8 (JDK)
 - Mapa raster de uso da terra (.tif)
@@ -324,7 +328,8 @@ Os custos são **espécie-dependentes**. Uma ave florestal atribui alto custo a 
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**Cenários de restauração**
+**Cenários de restauração
+**
 
 No Graphab é possível:
 
@@ -363,7 +368,8 @@ A partir da análise no Graphab:
 
 ::: {.column width="50%"}
 ::: {.info-box}
-**Limitações da abordagem**
+**Limitações da abordagem
+**
 
 1. Modelos baseados em **uma espécie**  -  paisagem é multiespécies
 2. Custos de deslocamento são **estimativas**  -  faltam dados empíricos para muitas espécies brasileiras
@@ -372,6 +378,52 @@ A partir da análise no Graphab:
 5. Conectividade ≠ uso real  -  presença de corredor não garante deslocamento
 
 **Recomendação:** usar espécies guarda-chuva e validar com dados de movimentação (GPS, camera trap).
+:::
+:::
+:::
+
+---
+
+## Genética da paisagem (*Landscape Genetics*) {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Da conectividade estrutural à funcional
+
+Métricas como PC e IIC avaliam a conectividade **potencial** (baseada na geometria do mapa). Mas a conectividade é **real**?
+
+A **genética da paisagem** (Manel et al., 2003) integra:
+
+- **Ecologia da paisagem** → métricas espaciais, resistência da matriz
+- **Genética de populações** → marcadores moleculares (microssatélites, SNPs)
+
+### Princípio operacional
+
+1. Medir **diferenciação genética** ($F_{ST}$) entre populações em manchas distintas
+2. Calcular **distância paisagística** (custo, resistência de circuito)
+3. Testar se o modelo com heterogeneidade da matriz explica mais variação genética que a simples distância geográfica
+
+> Se distância de custo prediz $F_{ST}$ melhor que distância euclidiana → **a matriz importa para o fluxo gênico**
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Evidências no Brasil
+**
+
+Estudos de genética da paisagem demonstraram que:
+
+- **Corredores ripários** funcionam como condutos efetivos de fluxo gênico para peixes e anfíbios
+- **Conversão floresta → pastagem** aumenta significativamente a diferenciação genética entre populações de primatas
+- **Matas de galeria do Cerrado** operam como últimos corredores funcionais para espécies florestais
+
+### Implicação para o Graphab
+
+Os custos de deslocamento atribuídos no Graphab podem ser **calibrados** com dados genéticos → validação empírica dos modelos de resistência.
+
+**Referências:**  
+Manel et al. (2003) *Trends Ecol. Evol.*  
+Storfer et al. (2007) *Heredity*
 :::
 :::
 :::
@@ -396,7 +448,8 @@ A partir da análise no Graphab:
 
 ::: {.column width="40%"}
 ::: {.highlight-box}
-**Entrega**
+**Entrega
+**
 
 - **Formato:** relatório PDF com mapas + tabelas de dPC
 - **Prazo:** 21 dias

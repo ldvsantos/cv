@@ -131,3 +131,52 @@ Nas margens do Baixo São Francisco, a erosão marginal acelerada pós-barragem 
 ## NBS e ODS
 As Soluções Baseadas na Natureza contribuem diretamente para os Objetivos de Desenvolvimento Sustentável 6 (Água limpa e saneamento), 11 (Cidades e comunidades sustentáveis), 13 (Ação contra a mudança global do clima) e 15 (Vida terrestre), consolidando a bioengenharia de solos como instrumento de política pública ambiental alinhado com compromissos internacionais.
 :::
+
+## Adaptação às Mudanças Climáticas
+
+### Projeções de Precipitação Extrema para Regiões Tropicais
+
+Os cenários de mudanças climáticas do IPCC (AR6, 2021) projetam, para as regiões tropicais da América do Sul, um aumento na intensidade dos eventos extremos de precipitação de 10–30% até 2050 (cenário SSP2-4.5) e de 20–50% até 2100 (cenário SSP5-8.5), mesmo em regiões onde a precipitação média anual tende a diminuir. Essa aparente contradição (chuvas médias menores, porém eventos extremos mais intensos) resulta do aquecimento atmosférico, que aumenta a capacidade de retenção de vapor d'água em 7% por grau Celsius de aquecimento (relação de Clausius-Clapeyron), concentrando a precipitação em eventos menos frequentes porém mais violentos.
+
+Para a bioengenharia de solos, essa projeção tem implicações diretas no dimensionamento. O fator de erosividade da chuva ($R$ da RUSLE) pode aumentar em 15–40% nas próximas décadas, o que exige que as estruturas de contenção e dissipação sejam dimensionadas com fatores de segurança majorados. Em termos práticos, a chuva de projeto para dimensionamento de paliçadas, bacias de captação e canaletas verdes deve adotar período de retorno de 25–50 anos (em vez dos 10 anos usualmente empregados) e incorporar um fator de majoração climática ($F_{cc} = 1{,}2$ a $1{,}3$) sobre a intensidade da chuva calculada a partir de séries históricas, conforme recomendações da WMO (*World Meteorological Organization*) para projetos com horizonte de projeto superior a 30 anos.
+
+### Resiliência Climática da Bioengenharia
+
+A bioengenharia de solos apresenta vantagens intrínsecas de resiliência climática em relação à engenharia convencional, precisamente porque seus componentes vivos respondem adaptativamente às mudanças ambientais. As estruturas vegetativas se adaptam autonomamente (o aprofundamento radicular em resposta ao déficit hídrico aumenta a ancoragem em cenários de seca prolongada, enquanto o adensamento aéreo em resposta à maior pluviosidade amplia a interceptação de chuva). A redundância funcional proporcionada pela diversidade de espécies garante que, se uma espécie for prejudicada pela alteração climática, outras ocupem seu nicho funcional. A capacidade de autorreparação permite que a vegetação rebrote e restabeleça a cobertura após danos por eventos extremos, diferentemente de estruturas de concreto cuja ruptura é irreversível sem intervenção humana. Além disso, a flexibilidade estrutural dos materiais vivos e biodegradáveis absorve deformações e solicitações dinâmicas sem ruptura frágil (diferentemente do concreto, que rompe subitamente quando sua capacidade é excedida).
+
+### Sequestro de Carbono
+
+A bioengenharia de solos contribui para a mitigação das mudanças climáticas por meio do sequestro de carbono em dois compartimentos. A biomassa aérea e radicular das espécies vegetais utilizadas nas intervenções sequestra 2–8 tC/ha/ano nos primeiros 10 anos (com taxas mais elevadas em espécies arbóreas de rápido crescimento como eucalipto e gliricídia), estabilizando-se em 0,5–2,0 tC/ha/ano após a maturidade. O carbono orgânico do solo (COS) aumenta pela decomposição de raízes finas, serrapilheira e biotêxteis biodegradáveis, com incrementos de 0,3–1,5 tC/ha/ano ao longo dos primeiros 20 anos, particularmente em solos tropicais com COS inicial depletado pela degradação.
+
+A @tbl-carbono sintetiza o potencial de sequestro de carbono das principais técnicas de bioengenharia, permitindo a estimativa de créditos de carbono para análise de viabilidade econômica.
+
+| Técnica | Sequestro (tC/ha/ano) | Horizonte | Compartimento dominante |
+|---------|----------------------|-----------|------------------------|
+| Revegetação com gramíneas | 1,0–3,0 | 5–10 anos | COS (raízes finas) |
+| Revegetação arbórea (espécies nativas) | 3,0–8,0 | 10–30 anos | Biomassa aérea + COS |
+| Enrocamento vegetado + mata ciliar | 2,0–6,0 | 5–20 anos | Biomassa + sedimento retido |
+| Biomantas + hidrossemeadura | 0,5–2,0 | 2–5 anos | COS (biodegradação da manta) |
+| Bio-SAP + geocompostos | 0,3–1,0 | 1–3 anos | COS (biodegradação do polímero) |
+
+: Potencial de sequestro de carbono das técnicas de bioengenharia de solos. {#tbl-carbono .striped .hover}
+
+A monetização do carbono sequestrado pelos mercados voluntários de créditos de carbono (R$ 40–120/tC em 2025) pode representar receita adicional de R$ 200–600/ha/ano para projetos de bioengenharia com revegetação arbórea, constituindo um mecanismo de financiamento complementar que melhora a relação custo-benefício e favorece a viabilidade econômica de intervenções em larga escala.
+
+## Marco Regulatório e Certificação
+
+### Normas Brasileiras Aplicáveis
+
+O projeto e a execução de obras de bioengenharia de solos no Brasil devem observar um conjunto de normas técnicas e regulamentos ambientais cuja conformidade é condição indispensável para aprovação por órgãos ambientais licenciadores e para financiamento por agências de fomento. No âmbito da ABNT, aplicam-se a NBR 11682 (Estabilidade de encostas, que define critérios de investigação geotécnica, análise de estabilidade e plano de monitoramento), a NBR 16308 (Biomantas e biotêxteis para controle de erosão, que classifica e especifica requisitos de desempenho para produtos de fibras naturais), a NBR 10514 (Gabiões e colchões reno, que regulamenta materiais, fabricação e montagem de cestas metálicas) e a NBR 7229 (Ensaio de infiltração, fundamental para o dimensionamento de bacias de captação e drenagem subsuperficial).
+
+### Legislação Ambiental
+
+A legislação ambiental brasileira estabelece obrigações específicas que condicionam o projeto de bioengenharia. O Código Florestal (Lei 12.651/2012) define as Áreas de Preservação Permanente (APP) onde intervenções de revegetação e estabilização de encostas são obrigatórias, exigindo o uso de espécies nativas nos projetos de recomposição. A Política Nacional de Recursos Hídricos (Lei 9.433/1997) fundamenta a gestão por bacia hidrográfica, que é o paradigma espacial das intervenções de bioengenharia. A Política Nacional de Pagamento por Serviços Ambientais (Lei 14.119/2021) cria mecanismos de remuneração por atividades de conservação do solo e da água, incluindo o controle de erosão por bioengenharia, o que viabiliza o financiamento de projetos por propriedades rurais e municípios.
+
+### Certificações Internacionais
+
+No âmbito internacional, as normas ISO 14001 (Sistemas de gestão ambiental) e ISO 14040/14044 (Avaliação do ciclo de vida, ACV) fornecem os frameworks para avaliar a pegada ambiental de materiais e técnicas de bioengenharia, subsidiando a comparação objetiva com soluções convencionais. A norma europeia EN 13383 (Armourstone, especificação de pedras para enrocamento) é referência para dimensionamento de enrocamento vegetado (ver @sec-enrocamento), enquanto a ASTM D6460 (Standard Practice for Determination of Rolled Erosion Control Product Performance) estabelece protocolos de ensaio para biomantas e geotêxteis.
+
+::: {.callout-tip}
+## Incentivos financeiros
+No Brasil, programas como o Programa de Conservação de Estradas Rurais (DER-SP), o Programa Produtor de Água (ANA) e o Programa de Recuperação de Áreas Degradadas (PRAD) oferecem financiamento e assistência técnica para implantação de técnicas de bioengenharia, constituindo oportunidades concretas para viabilizar projetos em escala municipal e de bacia hidrográfica.
+:::
