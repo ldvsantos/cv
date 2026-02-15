@@ -6,22 +6,28 @@ A Ciência da Paisagem (*Landscape Science*) é um campo interdisciplinar que in
 
 O conceito moderno de paisagem ecológica foi introduzido pelo geógrafo alemão Carl Troll em 1939, ao combinar fotointerpretação de fotografias aéreas com observações ecológicas de campo [@troll1939]. Troll propôs que a paisagem deveria ser entendida não como um cenário visual, mas como um sistema funcional no qual a heterogeneidade espacial condiciona fluxos de energia, matéria e organismos. Essa formulação foi historicamente decisiva, pois deslocou a paisagem do domínio estético e descritivo para o domínio científico quantificável. A consolidação da disciplina ocorreu ao longo de mais de sete décadas, conforme sintetiza a @fig-evolucao-conceito.
 
-::: {#fig-evolucao-conceito}
-```{mermaid}
-%%| fig-width: 9
-timeline
-    title Marcos da Ciência da Paisagem
-    1939 : Carl Troll cunha "Landschaftsökologie"
-    1969 : Neef publica bases teóricas na Alemanha Oriental
-    1981 : Naveh e Lieberman publicam primeiro livro-texto
-    1984 : Workshop de Allerton Park (EUA) formaliza a disciplina
-    1986 : Forman e Godron publicam "Landscape Ecology"
-    1995 : Forman publica "Land Mosaics"
-    2002 : McGarigal e Cushman consolidam métricas (FRAGSTATS)
-    2015 : Turner e Gardner publicam 2ª edição de referência
+```{dot}
+//| label: fig-evolucao-conceito
+//| fig-cap: "Linha do tempo dos principais marcos na consolidação da Ciência da Paisagem como disciplina científica."
+//| fig-width: 9
+digraph {
+    rankdir=LR
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=9, margin="0.2,0.1", penwidth=0.8]
+    edge [color="#555555", penwidth=1.2, arrowsize=0.7]
+
+    a [label="1939\nCarl Troll cunha\nLandschaftsökologie", fillcolor="#E8F5E9", color="#2E7D32"]
+    b [label="1969\nNeef publica bases\nteóricas", fillcolor="#C8E6C9", color="#2E7D32"]
+    c [label="1981\nNaveh & Lieberman\nprimeiro livro-texto", fillcolor="#A5D6A7", color="#2E7D32"]
+    d [label="1984\nAllerton Park\nformaliza a disciplina", fillcolor="#81C784", color="#1B5E20"]
+    e [label="1986\nForman & Godron\nLandscape Ecology", fillcolor="#66BB6A", color="#1B5E20"]
+    f [label="1995\nForman publica\nLand Mosaics", fillcolor="#4CAF50", color="#1B5E20", fontcolor="white"]
+    g [label="2002\nMcGarigal & Cushman\nFRAGSTATS", fillcolor="#388E3C", color="#1B5E20", fontcolor="white"]
+    h [label="2015\nTurner & Gardner\n2ª edição", fillcolor="#2E7D32", color="#1B5E20", fontcolor="white"]
+
+    a -> b -> c -> d -> e -> f -> g -> h
+}
 ```
-Linha do tempo dos principais marcos na consolidação da Ciência da Paisagem como disciplina científica.
-:::
 
 A @fig-evolucao-conceito revela uma trajetória de quase oito décadas que pode ser dividida em três fases distintas. A fase fundacional (1939–1981) é marcada pela formulação conceitual na Europa Central, onde geógrafos como Troll, Neef e Schmithüsen desenvolveram os fundamentos teóricos da disciplina, enfatizando a paisagem como unidade integradora de processos naturais e culturais. A fase de formalização (1984–1995), impulsionada pelo workshop de Allerton Park (1984) na América do Norte, consolidou a ecologia da paisagem como disciplina científica autônoma com vocabulário, métodos e questões de pesquisa próprios, culminando nas obras de referência de Forman e Godron [-@forman1986] e Forman [-@forman1995]. A fase quantitativa (2002–presente) é caracterizada pelo desenvolvimento de métricas espaciais padronizadas (FRAGSTATS), pela integração com SIG e sensoriamento remoto, e pela publicação de sínteses abrangentes como Turner e Gardner [-@turner2015], que estabelecem o cânone contemporâneo da disciplina.
 

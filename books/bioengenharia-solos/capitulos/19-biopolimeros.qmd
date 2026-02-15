@@ -16,14 +16,23 @@ O Bio-SAP de taboa (*Typha domingensis*) é uma inovação desenvolvida a partir
 
 O fluxograma abaixo sintetiza as etapas de produção do Bio-SAP, desde a colheita da taboa em campo até a obtenção do produto granulado pronto para aplicação.
 
-```{mermaid}
-%%| fig-width: 7
-flowchart LR
-    A[Colheita\nda taboa] --> B[Extração\nda polpa]
-    B --> C[Carboximetilação\n(NaOH + ácido\nmonocloroacético)]
-    C --> D[Reticulação\n(epicloridrina)]
-    D --> E[Secagem e\nmoagem]
-    E --> F[Bio-SAP\ngranulado]
+```{dot}
+//| fig-width: 7
+digraph {
+    rankdir=LR
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fillcolor="#E8F5E9", color="#2E7D32", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#2E7D32", penwidth=1.2]
+
+    A [label="Colheita\nda taboa"]
+    B [label="Extração\nda polpa"]
+    C [label="Carboximetilação\n(NaOH + ácido\nmonocloroacético)"]
+    D [label="Reticulação\n(epicloridrina)"]
+    E [label="Secagem e\nmoagem"]
+    F [label="Bio-SAP\ngranulado", fillcolor="#A5D6A7", color="#1B5E20", penwidth=1.5]
+
+    A -> B -> C -> D -> E -> F
+}
 ```
 
 ### Propriedades

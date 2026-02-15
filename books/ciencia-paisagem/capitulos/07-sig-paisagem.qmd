@@ -14,23 +14,35 @@ A estrutura do banco de dados geográfico condiciona as operações analíticas 
 
 O modelo digital de elevação (MDE) é um raster fundamental para a análise da paisagem e merece tratamento destacado. A partir de uma única superfície altimétrica, o MDE permite derivar um conjunto de variáveis topográficas que governam processos hidrológicos, geomorfológicos e ecológicos. Cada derivada do MDE quantifica um aspecto distinto do terreno e condiciona diferentes processos na paisagem, conforme sintetiza a @fig-derivados-mde.
 
-::: {#fig-derivados-mde}
-```{mermaid}
-%%| fig-width: 8
-flowchart TD
-    A["Modelo Digital de Elevação (MDE)"] --> B["Declividade"]
-    A --> C["Orientação de vertentes"]
-    A --> D["Curvatura"]
-    A --> E["Índice topográfico de umidade (TWI)"]
-    A --> F["Rede de drenagem"]
-    A --> G["Delimitação de bacias"]
-    B --> H["Suscetibilidade à erosão"]
-    E --> I["Áreas hidromórficas"]
-    F --> J["Conectividade hídrica"]
-    G --> K["Unidade de planejamento"]
+```{dot}
+//| label: fig-derivados-mde
+//| fig-cap: "Variáveis topográficas derivadas do MDE e suas aplicações na análise da paisagem."
+//| fig-width: 8
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0]
+
+    A [label="Modelo Digital\nde Elevação (MDE)", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
+    B [label="Declividade", fillcolor="#E8F5E9", color="#2E7D32"]
+    C [label="Orientação de\nvertentes", fillcolor="#E8F5E9", color="#2E7D32"]
+    D [label="Curvatura", fillcolor="#E8F5E9", color="#2E7D32"]
+    E [label="Índice topográfico\nde umidade (TWI)", fillcolor="#E8F5E9", color="#2E7D32"]
+    F [label="Rede de\ndrenagem", fillcolor="#E8F5E9", color="#2E7D32"]
+    G [label="Delimitação\nde bacias", fillcolor="#E8F5E9", color="#2E7D32"]
+    H [label="Suscetibilidade\nà erosão", fillcolor="#FFCDD2", color="#C62828"]
+    I [label="Áreas\nhidromórficas", fillcolor="#BBDEFB", color="#1565C0"]
+    J [label="Conectividade\nhídrica", fillcolor="#BBDEFB", color="#1565C0"]
+    K [label="Unidade de\nplanejamento", fillcolor="#FFE0B2", color="#E65100"]
+
+    A -> {B C D E F G}
+    B -> H
+    E -> I
+    F -> J
+    G -> K
+}
 ```
-Variáveis topográficas derivadas do MDE e suas aplicações na análise da paisagem.
-:::
 
 A @fig-derivados-mde revela que o MDE não é apenas um mapa de elevação, mas o ponto de partida para toda uma família de variáveis ambientais com significado ecológico e hidrológico distinto. A declividade condiciona a velocidade do escoamento superficial e a suscetibilidade à erosão, sendo variável explanatória obrigatória em modelos de perda de solo (USLE/RUSLE) e em mapeamentos de áreas de preservação permanente (APP). A orientação de vertentes (*aspect*) determina a exposição à radiação solar, influenciando a temperatura do solo, a evapotranspiração e a composição de espécies em vertentes opostas de um mesmo vale. A curvatura distingue vertentes convexas (divergentes, onde o escoamento se dispersa) de vertentes côncavas (convergentes, onde o escoamento se concentra), sendo indicador de zonas de acúmulo de umidade e de erosão preferencial.
 

@@ -14,19 +14,32 @@ A extensão (*extent*) corresponde à área total abrangida pela análise. Uma a
 
 A distinção entre grão e extensão é mais do que semântica. Em termos práticos, essas duas dimensões impõem restrições independentes à análise. Aumentar o grão (menor resolução) reduz o número de manchas detectáveis e inflaciona a área média dos fragmentos. Reduzir a extensão (menor abrangência) pode excluir manchas periféricas que contribuem para a conectividade regional. A combinação adequada de grão e extensão depende do processo ecológico de interesse, das espécies focais e da unidade de gestão territorial, conforme sistematiza a @fig-grao-extensao.
 
-::: {#fig-grao-extensao}
-```{mermaid}
-%%| fig-width: 7
-flowchart TD
-    A["Escala de Observação"] --> B["Grão (resolução)"]
-    A --> C["Extensão (abrangência)"]
-    B --> D["Espacial: pixel, parcela, fragmento"]
-    B --> E["Temporal: dia, mês, ano, década"]
-    C --> F["Espacial: bacia, município, bioma"]
-    C --> G["Temporal: período de análise"]
+```{dot}
+//| label: fig-grao-extensao
+//| fig-cap: "Componentes da escala de observação na análise da paisagem, mostrando que tanto o grão quanto a extensão possuem dimensão espacial e temporal."
+//| fig-width: 7
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0]
+
+    A [label="Escala de Observação", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
+    B [label="Grão (resolução)", fillcolor="#BBDEFB", color="#1565C0"]
+    C [label="Extensão (abrangência)", fillcolor="#FFE0B2", color="#E65100"]
+    D [label="Espacial\npixel, parcela, fragmento", fillcolor="#E3F2FD", color="#1565C0"]
+    E [label="Temporal\ndia, mês, ano, década", fillcolor="#E3F2FD", color="#1565C0"]
+    F [label="Espacial\nbacia, município, bioma", fillcolor="#FFF3E0", color="#E65100"]
+    G [label="Temporal\nperíodo de análise", fillcolor="#FFF3E0", color="#E65100"]
+
+    A -> B
+    A -> C
+    B -> D
+    B -> E
+    C -> F
+    C -> G
+}
 ```
-Componentes da escala de observação na análise da paisagem, mostrando que tanto o grão quanto a extensão possuem dimensão espacial e temporal.
-:::
 
 A @fig-grao-extensao explicita uma propriedade frequentemente negligenciada. Grão e extensão não se aplicam apenas ao espaço, mas também ao tempo. O grão temporal define a menor unidade de tempo resolvível (uma cena por mês, por ano, por década), enquanto a extensão temporal define a amplitude do período analisado (uma série de 5 anos, 30 anos, um século). Análises com grão temporal fino (mensal) capturam a fenologia da vegetação e a sazonalidade hidrológica, mas exigem séries densas de imagens livres de nuvens. Análises com grão temporal grosso (decadal) capturam tendências de longo prazo, mas mascaram flutuações sazonais e eventos abruptos.
 
@@ -61,21 +74,26 @@ Além do par grão-extensão, a perspectiva hierárquica oferece um arcabouço c
 
 Numa hierarquia típica de paisagem, o nível mais amplo corresponde à região biogeográfica (bioma), que determina o clima, os tipos de solo e o pool regional de espécies, restringindo assim os ecossistemas que podem existir. O nível seguinte é a paisagem propriamente dita, definida pela extensão do processo de interesse (tipicamente 10³ a 10⁵ ha), na qual a configuração espacial das manchas, corredores e matriz condiciona fluxos ecológicos. Abaixo situam-se os ecossistemas (10¹ a 10³ ha), nos quais interações locais entre organismos e ambiente determinam a composição de comunidades, e as comunidades e populações (frações de hectare), onde processos demográficos e comportamentais individuais são observáveis. A @fig-hierarquia sintetiza essa estrutura multinível e as escalas espaço-temporais características de cada nível.
 
-::: {#fig-hierarquia}
-```{mermaid}
-%%| fig-width: 7
-flowchart TB
-    A["Região Biogeográfica<br>(10⁶ ha, 10³ anos)"] --> B["Paisagem<br>(10³–10⁵ ha, 10¹–10² anos)"]
-    B --> C["Ecossistema<br>(10¹–10³ ha, 10⁰–10¹ anos)"]
-    C --> D["Comunidade/População<br>(10⁻¹–10¹ ha, 10⁻¹–10⁰ anos)"]
+```{dot}
+//| label: fig-hierarquia
+//| fig-cap: "Hierarquia de níveis de organização espacial e suas escalas características de extensão (ha) e tempo (anos). As setas indicam que cada nível superior impõe restrições sobre o inferior, enquanto o inferior fornece os mecanismos."
+//| fig-width: 7
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.3,0.15", penwidth=0.8]
+    edge [color="#555555", penwidth=1.2]
 
-    style A fill:#1B5E20,color:#fff
-    style B fill:#2E7D32,color:#fff
-    style C fill:#43A047,color:#fff
-    style D fill:#66BB6A,color:#fff
+    A [label="Região Biogeográfica\n(10⁶ ha, 10³ anos)", fillcolor="#1B5E20", fontcolor="white", color="#0D3310"]
+    B [label="Paisagem\n(10³–10⁵ ha, 10¹–10² anos)", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20"]
+    C [label="Ecossistema\n(10¹–10³ ha, 10⁰–10¹ anos)", fillcolor="#43A047", fontcolor="white", color="#2E7D32"]
+    D [label="Comunidade/População\n(10⁻¹–10¹ ha, 10⁻¹–10⁰ anos)", fillcolor="#66BB6A", fontcolor="white", color="#43A047"]
+
+    A -> B
+    B -> C
+    C -> D
+}
 ```
-Hierarquia de níveis de organização espacial e suas escalas características de extensão (ha) e tempo (anos). As setas indicam que cada nível superior impõe restrições sobre o inferior, enquanto o inferior fornece os mecanismos.
-:::
 
 A interpretação da @fig-hierarquia tem consequências metodológicas profundas. A implicação operacional é que a análise de padrões e processos na escala da paisagem deve considerar simultaneamente as restrições impostas pelo nível superior e os mecanismos fornecidos pelo nível inferior. O clima regional (nível biogeográfico) restringe os tipos de vegetação possíveis numa bacia hidrográfica, enquanto o estabelecimento de plântulas, a competição interespecífica e a dinâmica de serrapilheira (nível de comunidade) determinam qual comunidade vegetal efetivamente coloniza um dado sítio. Uma análise de conectividade que ignore o contexto climático regional não saberá quais espécies podem utilizar os corredores, e uma análise que não incorpore a biologia reprodutiva e a capacidade de dispersão das espécies focais não poderá avaliar se os corredores mapeados são funcionalmente efetivos.
 

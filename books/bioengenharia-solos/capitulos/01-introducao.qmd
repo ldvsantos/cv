@@ -6,22 +6,24 @@ A bioengenharia de solos (*soil bioengineering*) é uma disciplina que combina p
 
 O conceito difere da engenharia convencional em um aspecto fundamental. Enquanto as estruturas de concreto e aço são projetadas para resistir indefinidamente ao intemperismo, as estruturas de bioengenharia são projetadas para uma transição funcional, na qual a resistência mecânica inicial (fornecida por materiais construtivos) é progressivamente transferida para o sistema radicular das plantas à medida que estas se estabelecem (@fig-transicao).
 
-::: {#fig-transicao}
-```{mermaid}
-%%| fig-width: 8
-gantt
-    title Transição Funcional na Bioengenharia
-    dateFormat YYYY
-    axisFormat %Y
-    section Estrutura
-    Resistência mecânica do material :done, 2026, 2030
-    section Vegetação
-    Estabelecimento radicular      :active, 2027, 2031
-    section Função ecológica
-    Solo auto-sustentável          : 2030, 2036
+```{dot}
+//| label: fig-transicao
+//| fig-cap: "Esquema conceitual da transição entre a função mecânica dos materiais construtivos e a função ecológica do sistema radicular."
+//| fig-width: 7
+digraph {
+    rankdir=LR
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.3,0.15", penwidth=0.8]
+    edge [fontname="Helvetica", fontsize=9, color="#555555"]
+
+    A [label="Ano 0–4\nResistência mecânica\ndo material", fillcolor="#BBDEFB", color="#1565C0"]
+    B [label="Ano 1–5\nEstabelecimento\nradicular", fillcolor="#C8E6C9", color="#2E7D32"]
+    C [label="Ano 4–10\nSolo\nauto-sustentável", fillcolor="#A5D6A7", color="#1B5E20"]
+
+    A -> B [label="  Transição  ", style=bold, color="#2E7D32"]
+    B -> C [label="  Consolidação  ", style=bold, color="#1B5E20"]
+}
 ```
-Esquema conceitual da transição entre a função mecânica dos materiais construtivos e a função ecológica do sistema radicular.
-:::
 
 ## Bioengenharia vs. Engenharia Convencional
 

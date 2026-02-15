@@ -12,19 +12,30 @@ Essa definição estabelece que uma intervenção somente se qualifica como NBS 
 
 O diagrama a seguir posiciona a bioengenharia de solos no campo mais amplo das NBS, evidenciando que ela é uma vertente da engenharia ecológica (aplicação de princípios ecológicos ao projeto de intervenções de engenharia), que por sua vez integra o guarda-chuva conceitual das NBS juntamente com a restauração de ecossistemas, a infraestrutura verde e a adaptação baseada em ecossistemas.
 
-```{mermaid}
-%%| fig-width: 7.5
-flowchart TB
-    NBS["Soluções Baseadas\nna Natureza (NBS)"]
-    NBS --> A["Restauração de\necossistemas"]
-    NBS --> B["Engenharia\necológica"]
-    NBS --> C["Infraestrutura\nverde"]
-    NBS --> D["Adaptação baseada\nem ecossistemas"]
-    
-    A --> E["Reflorestamento\nRevegetação"]
-    B --> F["Bioengenharia\nde solos"]
-    C --> G["Canaletas verdes\nTelhados verdes"]
-    D --> H["Proteção costeira\nManejo de bacias"]
+```{dot}
+//| fig-width: 7.5
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0]
+
+    NBS [label="Soluções Baseadas\nna Natureza (NBS)", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
+    A [label="Restauração de\necossistemas", fillcolor="#E8F5E9", color="#2E7D32"]
+    B [label="Engenharia\necológica", fillcolor="#E8F5E9", color="#2E7D32"]
+    C [label="Infraestrutura\nverde", fillcolor="#E8F5E9", color="#2E7D32"]
+    D [label="Adaptação baseada\nem ecossistemas", fillcolor="#E8F5E9", color="#2E7D32"]
+    E [label="Reflorestamento\nRevegetação", fillcolor="#C8E6C9", color="#2E7D32"]
+    F [label="Bioengenharia\nde solos", fillcolor="#C8E6C9", color="#2E7D32"]
+    G [label="Canaletas verdes\nTelhados verdes", fillcolor="#C8E6C9", color="#2E7D32"]
+    H [label="Proteção costeira\nManejo de bacias", fillcolor="#C8E6C9", color="#2E7D32"]
+
+    NBS -> {A B C D}
+    A -> E
+    B -> F
+    C -> G
+    D -> H
+}
 ```
 
 ## Critérios IUCN para NBS

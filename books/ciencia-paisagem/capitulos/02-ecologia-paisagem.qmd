@@ -12,18 +12,29 @@ A tradição geográfica, predominante na Europa até a década de 1990 e cujas 
 
 A contribuição central da abordagem geográfica reside na atenção às forças motrizes (*driving forces*) que determinam a configuração atual da paisagem. Essas forças incluem fatores biofísicos (geomorfologia, clima, pedologia), fatores socioeconômicos (mercados globais, políticas públicas, pressão demográfica, estrutura fundiária) e fatores culturais (práticas tradicionais de manejo, percepção estética, identidade territorial). O reconhecimento dessas forças é essencial para compreender a trajetória temporal de uma paisagem e projetar cenários futuros de mudança, conforme esquematiza a @fig-forcas-motrizes.
 
-::: {#fig-forcas-motrizes}
-```{mermaid}
-%%| fig-width: 8
-flowchart LR
-    A[Forças Biofísicas<br>Clima, Geomorfologia, Solos] --> D[Estrutura da Paisagem<br>Composição e Configuração]
-    B[Forças Socioeconômicas<br>Mercados, Políticas, Demografia] --> D
-    C[Forças Culturais<br>Práticas, Percepção, Identidade] --> D
-    D --> E[Processos Ecológicos<br>Fluxos, Biodiversidade, Serviços]
-    E -->|Retroalimentação| D
+```{dot}
+//| label: fig-forcas-motrizes
+//| fig-cap: "Esquema das forças motrizes que condicionam a estrutura da paisagem e sua relação recíproca com processos ecológicos."
+//| fig-width: 8
+digraph {
+    rankdir=LR
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0, fontname="Helvetica", fontsize=9]
+
+    A [label="Forças Biofísicas\nClima, Geomorfologia, Solos", fillcolor="#BBDEFB", color="#1565C0"]
+    B [label="Forças Socioeconômicas\nMercados, Políticas, Demografia", fillcolor="#FFE0B2", color="#E65100"]
+    C [label="Forças Culturais\nPráticas, Percepção, Identidade", fillcolor="#E1BEE7", color="#6A1B9A"]
+    D [label="Estrutura da Paisagem\nComposição e Configuração", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
+    E [label="Processos Ecológicos\nFluxos, Biodiversidade, Serviços", fillcolor="#C8E6C9", color="#2E7D32"]
+
+    A -> D
+    B -> D
+    C -> D
+    D -> E
+    E -> D [label="Retroalimentação", style=dashed, color="#C62828"]
+}
 ```
-Esquema das forças motrizes que condicionam a estrutura da paisagem e sua relação recíproca com processos ecológicos.
-:::
 
 A @fig-forcas-motrizes revela três propriedades da relação entre forças motrizes e paisagem que merecem aprofundamento. Em primeiro lugar, as setas convergentes (biofísicas, socioeconômicas e culturais alimentando a estrutura da paisagem) indicam que a estrutura observada é o resultado da interação simultânea de múltiplas forças, e não do domínio de uma única. Em segundo lugar, a seta de retroalimentação (processos ecológicos→estrutura) explicita que a paisagem não é passiva, pois a perda de biodiversidade pode desencadear degradação de solos, alteração hidrológica e mudança de uso que realimentam a estrutura, criando trajetórias de mudança auto-reforçantes. Em paisagens semiáridas do Nordeste brasileiro, por exemplo, a remoção de vegetação nativa expõe o solo à erosão laminar, que reduz a fertilidade edáfica, que por sua vez inviabiliza a regeneração natural, perpetuando a matriz degradada [@verburg2009]. Em terceiro lugar, a ausência de setas diretas entre as forças biofísicas e os processos ecológicos evidencia que essas forças atuam mediadas pela estrutura da paisagem, reforçando o caráter central da configuração espacial como variável integradora.
 

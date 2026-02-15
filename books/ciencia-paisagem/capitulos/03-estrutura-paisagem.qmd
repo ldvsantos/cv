@@ -6,27 +6,36 @@ A estrutura da paisagem é descrita pelo modelo mancha-corredor-matriz (*patch-c
 
 A mancha (*patch*) é uma área relativamente homogênea que difere do seu entorno. Um fragmento florestal imerso numa matriz agrícola, um lago circundado por pastagem ou um afloramento rochoso em meio à Caatinga são exemplos de manchas. O tamanho, a forma e o grau de isolamento de cada mancha determinam sua capacidade de sustentar populações viáveis e de contribuir para processos ecológicos regionais. O corredor (*corridor*) é um elemento linear ou estreito que difere da matriz em ambos os lados. Rios com mata ciliar, estradas, sebes, faixas de vegetação ripária e linhas de transmissão de energia constituem corredores, que podem funcionar como condutos, filtros ou barreiras para o deslocamento de organismos e a propagação de distúrbios. A matriz (*matrix*) é o elemento dominante e mais conectado da paisagem, funcionando como o "fundo" contra o qual manchas e corredores se distinguem. A @fig-mcm-modelo esquematiza esses três elementos num mosaico hipotético.
 
-::: {#fig-mcm-modelo}
-```{mermaid}
-%%| fig-width: 8
-block-beta
-    columns 7
-    space M["MATRIZ (Pastagem)"] M M M M space
-    space M P1["MANCHA<br>(Fragmento)"] M P2["MANCHA<br>(Fragmento)"] M space
-    space M M M M M space
-    space M C1["CORREDOR (Mata ciliar)"] C1 C1 M space
-    space M M M M M space
-    space M M P3["MANCHA<br>(Fragmento)"] M M space
-    space M M M M M space
+```{dot}
+//| label: fig-mcm-modelo
+//| fig-cap: "Representação esquemática do modelo mancha-corredor-matriz numa paisagem hipotética com fragmentos florestais dispersos numa matriz de pastagem, conectados por um corredor de mata ciliar."
+//| fig-width: 8
+graph {
+    bgcolor="transparent"
+    node [fontname="Helvetica", fontsize=10, penwidth=0.8]
+    edge [style=invis]
 
-    style P1 fill:#228B22,color:#fff
-    style P2 fill:#228B22,color:#fff
-    style P3 fill:#228B22,color:#fff
-    style C1 fill:#006400,color:#fff
-    style M fill:#F5DEB3,color:#333
+    subgraph cluster_matrix {
+        label="MATRIZ (Pastagem)"
+        labeljust=c
+        fontname="Helvetica"
+        fontsize=12
+        style="rounded,filled"
+        fillcolor="#F5DEB3"
+        color="#8D6E63"
+
+        P1 [label="MANCHA\n(Fragmento 1)", shape=ellipse, style=filled, fillcolor="#228B22", fontcolor=white, color="#1B5E20", penwidth=1.5]
+        P2 [label="MANCHA\n(Fragmento 2)", shape=ellipse, style=filled, fillcolor="#228B22", fontcolor=white, color="#1B5E20", penwidth=1.5]
+        P3 [label="MANCHA\n(Fragmento 3)", shape=ellipse, style=filled, fillcolor="#228B22", fontcolor=white, color="#1B5E20", penwidth=1.5]
+        C1 [label="CORREDOR\n(Mata ciliar)", shape=box, style="filled,rounded", fillcolor="#006400", fontcolor=white, color="#004D00", width=3.5, penwidth=1.5]
+
+        {rank=same; P1; P2}
+        P1 -- C1 [style=solid, color="#006400", penwidth=2]
+        P2 -- C1 [style=solid, color="#006400", penwidth=2]
+        C1 -- P3 [style=dashed, color="#888888", label="isolamento", fontname="Helvetica", fontsize=8]
+    }
+}
 ```
-Representação esquemática do modelo mancha-corredor-matriz numa paisagem hipotética com fragmentos florestais dispersos numa matriz de pastagem, conectados por um corredor de mata ciliar.
-:::
 
 A @fig-mcm-modelo evidencia propriedades estruturais que devem ser lidas em termos de funcionalidade ecológica. Os três fragmentos (manchas P1, P2 e P3) diferem em posição relativa e, portanto, em grau de isolamento. Enquanto P1 e P2 estão próximos e potencialmente conectados pelo corredor de mata ciliar, P3 encontra-se na porção inferior da paisagem, separado dos demais não apenas pela distância, mas pela continuidade da matriz de pastagem que o envolve. O corredor ripário (C1) liga espacialmente P1 e P2, mas sua funcionalidade como conduto depende de sua largura, integridade e qualidade de habitat, atributos que não são capturados pelo esquema geométrico e que exigem dados de campo ou imagens de alta resolução para serem avaliados. A matriz de pastagem, aparentemente homogênea no diagrama, pode na realidade apresentar gradientes de permeabilidade (pastagens em abandono com regeneração secundária versus pastagens intensivas manejadas), e essa variação interna da matriz condiciona fortemente a conectividade funcional entre os fragmentos [@fahrig2017].
 

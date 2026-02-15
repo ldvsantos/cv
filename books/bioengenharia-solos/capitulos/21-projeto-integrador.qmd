@@ -12,19 +12,30 @@ Este capítulo sintetiza os conhecimentos apresentados ao longo do livro em um p
 
 O fluxograma a seguir apresenta as 7 etapas do projeto de bioengenharia de solos, desde o diagnóstico de campo até a consolidação, incluindo o ciclo de gestão adaptativa que retorna à seleção de técnicas caso as metas de monitoramento não sejam atingidas.
 
-```{mermaid}
-%%| fig-width: 8
-flowchart TD
-    A["1. Diagnóstico\n(campo + SIG)"] --> B["2. Classificação\nde feições erosivas"]
-    B --> C["3. Seleção de\ntécnicas"]
-    C --> D["4. Dimensionamento\nde estruturas"]
-    D --> E["5. Projeto\nexecutivo"]
-    E --> F["6. Implantação"]
-    F --> G["7. Monitoramento\ne manutenção"]
-    G --> H{"Metas\natingidas?"}
-    H -- Não --> I["Gestão adaptativa"]
-    I --> C
-    H -- Sim --> J["Consolidação\ne entrega"]
+```{dot}
+//| fig-width: 8
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fillcolor="#E8F5E9", color="#2E7D32", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0, fontname="Helvetica", fontsize=9]
+
+    A [label="1. Diagnóstico\n(campo + SIG)"]
+    B [label="2. Classificação\nde feições erosivas"]
+    C [label="3. Seleção de\ntécnicas"]
+    D [label="4. Dimensionamento\nde estruturas"]
+    E [label="5. Projeto\nexecutivo"]
+    F [label="6. Implantação"]
+    G [label="7. Monitoramento\ne manutenção"]
+    H [label="Metas\natingidas?", shape=diamond, fillcolor="#FFF9C4", color="#F57F17"]
+    I [label="Gestão adaptativa", fillcolor="#FFCDD2", color="#C62828"]
+    J [label="Consolidação\ne entrega", fillcolor="#A5D6A7", color="#1B5E20", penwidth=1.5]
+
+    A -> B -> C -> D -> E -> F -> G -> H
+    H -> I [label="Não", color="#C62828"]
+    I -> C [style=dashed, color="#C62828"]
+    H -> J [label="Sim", color="#1B5E20"]
+}
 ```
 
 ### Etapa 1: Diagnóstico
@@ -68,22 +79,35 @@ A árvore de decisão a seguir operacionaliza a seleção de técnicas a partir 
 
 #### Árvore de Decisão
 
-```{mermaid}
-%%| fig-width: 8
-flowchart TD
-    START["Feição erosiva\nidentificada"]
-    START --> Q1{"Profundidade\n> 1,5 m?"}
-    Q1 -- Sim --> Q2{"Presença\nde água?"}
-    Q1 -- Não --> Q3{"Inclinação\n> 45°?"}
-    
-    Q2 -- Sim --> T1["Gabião vivo\n+ Geodreno"]
-    Q2 -- Não --> T2["Parede Krainer\n+ Revegetação"]
-    
-    Q3 -- Sim --> Q4{"Solo\ncoesivo?"}
-    Q3 -- Não --> T3["Paliçadas\n+ Biomanta"]
-    
-    Q4 -- Sim --> T4["Canaleta verde\n+ Hidrossemeadura"]
-    Q4 -- Não --> T5["Enrocamento\nvegetado"]
+```{dot}
+//| fig-width: 8
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0, fontname="Helvetica", fontsize=9]
+
+    START [label="Feição erosiva\nidentificada", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
+    Q1 [label="Profundidade\n> 1,5 m?", shape=diamond, fillcolor="#FFF9C4", color="#F57F17"]
+    Q2 [label="Presença\nde água?", shape=diamond, fillcolor="#FFF9C4", color="#F57F17"]
+    Q3 [label="Inclinação\n> 45°?", shape=diamond, fillcolor="#FFF9C4", color="#F57F17"]
+    Q4 [label="Solo\ncoesivo?", shape=diamond, fillcolor="#FFF9C4", color="#F57F17"]
+    T1 [label="Gabião vivo\n+ Geodreno", fillcolor="#C8E6C9", color="#2E7D32"]
+    T2 [label="Parede Krainer\n+ Revegetação", fillcolor="#C8E6C9", color="#2E7D32"]
+    T3 [label="Paliçadas\n+ Biomanta", fillcolor="#C8E6C9", color="#2E7D32"]
+    T4 [label="Canaleta verde\n+ Hidrossemeadura", fillcolor="#C8E6C9", color="#2E7D32"]
+    T5 [label="Enrocamento\nvegetado", fillcolor="#C8E6C9", color="#2E7D32"]
+
+    START -> Q1
+    Q1 -> Q2 [label="Sim"]
+    Q1 -> Q3 [label="Não"]
+    Q2 -> T1 [label="Sim"]
+    Q2 -> T2 [label="Não"]
+    Q3 -> Q4 [label="Sim"]
+    Q3 -> T3 [label="Não"]
+    Q4 -> T4 [label="Sim"]
+    Q4 -> T5 [label="Não"]
+}
 ```
 
 ### Etapa 4: Dimensionamento
@@ -98,30 +122,66 @@ O projeto executivo é o documento técnico que viabiliza a implantação em cam
 
 A sequência de implantação é crítica para o sucesso do projeto, pois a instalação de vegetação antes das estruturas de contenção e drenagem expõe as mudas à energia erosiva não controlada. O diagrama de Gantt a seguir apresenta o cronograma típico de implantação, com a sequência preparo → estruturas → revegetação → monitoramento.
 
-```{mermaid}
-%%| fig-width: 8
-gantt
-    title Cronograma típico de implantação
-    dateFormat  YYYY-MM
-    axisFormat  %b/%Y
-    
-    section Preparo
-    Mobilização e topografia    :a1, 2025-01, 1M
-    Acesso e infraestrutura     :a2, after a1, 1M
-    
-    section Estruturas
-    Drenagem (geodrenos)        :b1, after a2, 1M
-    Estruturas de contenção     :b2, after b1, 2M
-    Paliçadas e fascinas        :b3, after b1, 1M
-    
-    section Revegetação
-    Hidrossemeadura             :c1, after b2, 1M
-    Biomantas                   :c2, after c1, 1M
-    Plantio de mudas            :c3, after c1, 2M
-    
-    section Monitoramento
-    Acompanhamento fase 1       :d1, after c3, 6M
-    Gestão adaptativa           :d2, after d1, 6M
+```{dot}
+//| fig-width: 8
+digraph {
+    rankdir=LR
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0]
+
+    subgraph cluster_0 {
+        label="Preparo"
+        fontname="Helvetica"
+        fontsize=11
+        style="rounded,dashed"
+        color="#90A4AE"
+        a1 [label="Mobilização e\ntopografia\n(1 mês)", fillcolor="#BBDEFB", color="#1565C0"]
+        a2 [label="Acesso e\ninfraestrutura\n(1 mês)", fillcolor="#BBDEFB", color="#1565C0"]
+        a1 -> a2
+    }
+
+    subgraph cluster_1 {
+        label="Estruturas"
+        fontname="Helvetica"
+        fontsize=11
+        style="rounded,dashed"
+        color="#90A4AE"
+        b1 [label="Drenagem\n(geodrenos)\n(1 mês)", fillcolor="#FFE0B2", color="#E65100"]
+        b2 [label="Estruturas de\ncontenção\n(2 meses)", fillcolor="#FFE0B2", color="#E65100"]
+        b3 [label="Paliçadas e\nfascinas\n(1 mês)", fillcolor="#FFE0B2", color="#E65100"]
+        b1 -> b2
+        b1 -> b3
+    }
+
+    subgraph cluster_2 {
+        label="Revegetação"
+        fontname="Helvetica"
+        fontsize=11
+        style="rounded,dashed"
+        color="#90A4AE"
+        c1 [label="Hidrossemeadura\n(1 mês)", fillcolor="#C8E6C9", color="#2E7D32"]
+        c2 [label="Biomantas\n(1 mês)", fillcolor="#C8E6C9", color="#2E7D32"]
+        c3 [label="Plantio de\nmudas\n(2 meses)", fillcolor="#C8E6C9", color="#2E7D32"]
+        c1 -> c2
+        c1 -> c3
+    }
+
+    subgraph cluster_3 {
+        label="Monitoramento"
+        fontname="Helvetica"
+        fontsize=11
+        style="rounded,dashed"
+        color="#90A4AE"
+        d1 [label="Acompanhamento\nfase 1\n(6 meses)", fillcolor="#E1BEE7", color="#6A1B9A"]
+        d2 [label="Gestão\nadaptativa\n(6 meses)", fillcolor="#E1BEE7", color="#6A1B9A"]
+        d1 -> d2
+    }
+
+    a2 -> b1
+    b2 -> c1
+    c3 -> d1
+}
 ```
 
 ::: {.callout-warning}

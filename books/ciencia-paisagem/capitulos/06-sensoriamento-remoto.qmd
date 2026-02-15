@@ -6,19 +6,47 @@ O sensoriamento remoto é a tecnologia que permite adquirir informações sobre 
 
 O princípio físico subjacente é a interação da radiação eletromagnética com a superfície terrestre. Cada tipo de cobertura (vegetação, solo exposto, água, área urbana) apresenta um padrão característico de reflectância espectral, ou seja, a proporção de radiação incidente que é refletida em cada comprimento de onda. A vegetação fotossinteticamente ativa, por exemplo, apresenta alta absorção no vermelho visível (comprimento de onda ~ 0,65 μm), causada pelos pigmentos clorofilianos que capturam energia luminosa para fotossíntese, e alta reflectância no infravermelho próximo (~ 0,85 μm), causada pela estrutura celular do mesofilo que espalha a radiação internamente sem absorvê-la. No infravermelho de ondas curtas (1,6–2,2 μm), a absorção é proporcional ao conteúdo de água da folha, permitindo distinguir vegetação hidratada de vegetação sob estresse hídrico. A @fig-assinatura-espectral ilustra essas diferenças para três coberturas contrastantes.
 
-::: {#fig-assinatura-espectral}
-```{mermaid}
-%%| fig-width: 8
-xychart-beta
-    title "Assinaturas Espectrais Típicas"
-    x-axis ["Azul (0.45)" , "Verde (0.55)", "Verm. (0.65)", "NIR (0.85)", "SWIR1 (1.6)", "SWIR2 (2.2)"]
-    y-axis "Reflectância (%)" 0 --> 60
-    line "Vegetação" [3, 8, 4, 50, 25, 10]
-    line "Solo exposto" [10, 15, 20, 25, 30, 28]
-    line "Água" [5, 4, 3, 1, 0, 0]
+```{dot}
+//| label: fig-assinatura-espectral
+//| fig-cap: "Curvas de reflectância espectral típicas de vegetação fotossinteticamente ativa, solo exposto e água limpa. Valores ilustrativos para demonstrar os contrastes espectrais que permitem a discriminação de coberturas."
+//| fig-width: 8
+digraph {
+    bgcolor="transparent"
+    node [shape=none, fontname="Helvetica"]
+    edge [style=invis]
+
+    label="Assinaturas Espectrais Típicas\nReflectância (%) por banda espectral"
+    labelloc=t
+    fontname="Helvetica"
+    fontsize=13
+
+    tbl [label=<
+        <TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0" CELLPADDING="8" BGCOLOR="white">
+            <TR>
+                <TD BGCOLOR="#EEEEEE"><B>Cobertura</B></TD>
+                <TD BGCOLOR="#3F51B5" WIDTH="55"><FONT COLOR="white"><B>Azul<BR/>0.45 µm</B></FONT></TD>
+                <TD BGCOLOR="#4CAF50" WIDTH="55"><FONT COLOR="white"><B>Verde<BR/>0.55 µm</B></FONT></TD>
+                <TD BGCOLOR="#F44336" WIDTH="55"><FONT COLOR="white"><B>Verm.<BR/>0.65 µm</B></FONT></TD>
+                <TD BGCOLOR="#795548" WIDTH="55"><FONT COLOR="white"><B>NIR<BR/>0.85 µm</B></FONT></TD>
+                <TD BGCOLOR="#607D8B" WIDTH="55"><FONT COLOR="white"><B>SWIR1<BR/>1.6 µm</B></FONT></TD>
+                <TD BGCOLOR="#455A64" WIDTH="55"><FONT COLOR="white"><B>SWIR2<BR/>2.2 µm</B></FONT></TD>
+            </TR>
+            <TR>
+                <TD BGCOLOR="#E8F5E9"><B>Vegetação</B></TD>
+                <TD>3%</TD><TD>8%</TD><TD>4%</TD><TD BGCOLOR="#C8E6C9"><B>50%</B></TD><TD>25%</TD><TD>10%</TD>
+            </TR>
+            <TR>
+                <TD BGCOLOR="#FFF3E0"><B>Solo exposto</B></TD>
+                <TD>10%</TD><TD>15%</TD><TD>20%</TD><TD>25%</TD><TD BGCOLOR="#FFE0B2"><B>30%</B></TD><TD>28%</TD>
+            </TR>
+            <TR>
+                <TD BGCOLOR="#E3F2FD"><B>Água</B></TD>
+                <TD>5%</TD><TD>4%</TD><TD>3%</TD><TD>1%</TD><TD>0%</TD><TD>0%</TD>
+            </TR>
+        </TABLE>
+    >]
+}
 ```
-Curvas de reflectância espectral típicas de vegetação fotossinteticamente ativa, solo exposto e água limpa. Valores ilustrativos para demonstrar os contrastes espectrais que permitem a discriminação de coberturas.
-:::
 
 A @fig-assinatura-espectral revela o fundamento físico que torna possível a classificação automatizada de coberturas a partir de imagens multiespectrais. O contraste espectral entre vegetação e solo é máximo no infravermelho próximo (NIR), onde a vegetação reflete aproximadamente 50% da radiação incidente enquanto o solo reflete apenas 25%. Esse contraste é a base do índice NDVI, discutido adiante. No comprimento de onda do vermelho (0,65 μm), a vegetação absorve intensamente (reflectância de apenas 4%) enquanto o solo reflete 20%, gerando outro ponto de discriminação. A água, por sua vez, absorve progressivamente toda a radiação a partir do verde, apresentando reflectância próxima a zero no NIR e SWIR, o que a torna facilmente separável de vegetação e solo em qualquer composto de imagem que inclua essas bandas.
 

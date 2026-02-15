@@ -12,21 +12,30 @@ Os métodos de classificação de imagens de sensoriamento remoto dividem-se em 
 
 Na classificação supervisionada, os algoritmos mais utilizados incluem o classificador de máxima verossimilhança (*Maximum Likelihood*), que assume distribuição gaussiana multivariada das classes, a árvore de decisão (*Decision Tree*), que segmenta o espaço espectral por limiares sucessivos, a floresta aleatória (*Random Forest*), que agrega múltiplas árvores de decisão para reduzir overfitting e estimar importância de variáveis, e as máquinas de vetores de suporte (*Support Vector Machine*), que buscam o hiperplano de separação ótima entre classes. Mais recentemente, redes neurais convolucionais (*Convolutional Neural Networks*, CNN) têm sido aplicadas a classificações de alta resolução com resultados promissores em paisagens tropicais, embora demandem grandes volumes de dados de treinamento. A @fig-fluxo-classificacao sintetiza o fluxo de trabalho completo da classificação supervisionada.
 
-::: {#fig-fluxo-classificacao}
-```{mermaid}
-%%| fig-width: 9
-flowchart LR
-    A["Imagem pré-processada"] --> B["Definição de classes"]
-    B --> C["Coleta de amostras de treinamento"]
-    C --> D["Treinamento do classificador"]
-    D --> E["Classificação da imagem"]
-    E --> F["Pós-processamento<br>(filtro de moda, remoção de ruído)"]
-    F --> G["Validação<br>(matriz de confusão)"]
-    G -->|Acurácia insuficiente| C
-    G -->|Acurácia satisfatória| H["Mapa temático final"]
+```{dot}
+//| label: fig-fluxo-classificacao
+//| fig-cap: "Fluxo de trabalho da classificação supervisionada de uso e cobertura do solo, destacando o laço iterativo de refinamento."
+//| fig-width: 9
+digraph {
+    rankdir=LR
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fillcolor="#E8F5E9", color="#2E7D32", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0, fontname="Helvetica", fontsize=9]
+
+    A [label="Imagem\npré-processada"]
+    B [label="Definição\nde classes"]
+    C [label="Coleta de amostras\nde treinamento"]
+    D [label="Treinamento do\nclassificador"]
+    E [label="Classificação\nda imagem"]
+    F [label="Pós-processamento\n(filtro de moda,\nremoção de ruído)"]
+    G [label="Validação\n(matriz de confusão)", fillcolor="#FFF9C4", color="#F57F17"]
+    H [label="Mapa temático\nfinal", fillcolor="#A5D6A7", color="#1B5E20", penwidth=1.5]
+
+    A -> B -> C -> D -> E -> F -> G
+    G -> C [label="Acurácia\ninsuficiente", style=dashed, color="#C62828"]
+    G -> H [label="Acurácia\nsatisfatória", color="#1B5E20"]
+}
 ```
-Fluxo de trabalho da classificação supervisionada de uso e cobertura do solo, destacando o laço iterativo de refinamento.
-:::
 
 A @fig-fluxo-classificacao explicita uma propriedade frequentemente negligenciada na prática. O fluxo não é linear, mas iterativo. A seta que retorna da validação (acurácia insuficiente) para a coleta de amostras indica que o processo de classificação envolve múltiplos ciclos de refinamento, nos quais amostras de treinamento são adicionadas ou corrigidas, parâmetros do classificador são ajustados e a classificação é repetida até atingir a acurácia desejada. Em paisagens tropicais com alta variabilidade espectral, três a cinco iterações são comuns antes de se obter um mapa com acurácia global superior a 85%. A etapa de pós-processamento (filtro de moda, remoção de fragmentos menores que uma área mínima, generalização de bordas) é necessária para eliminar o ruído sal-e-pimenta (*salt-and-pepper noise*) inerente à classificação pixel-a-pixel, que cria falsas manchas de uma única célula que inflacionariam artificialmente as métricas de paisagem.
 

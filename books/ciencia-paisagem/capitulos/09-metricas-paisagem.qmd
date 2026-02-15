@@ -10,19 +10,30 @@ O desenvolvimento de métricas da paisagem acelerou-se com a publicação do sof
 
 As métricas da paisagem são calculadas em três níveis hierárquicos, cada um respondendo a perguntas de escala diferente. O nível da mancha (*patch level*) quantifica atributos individuais de cada fragmento (área, perímetro, índice de forma, distância ao vizinho mais próximo, área nuclear). Esse nível permite identificar fragmentos-chave para a conservação (os maiores, os mais compactos, os mais conectados) e avaliar a viabilidade individual de cada habitat. O nível da classe (*class level*) agrega métricas de todas as manchas pertencentes a um mesmo tipo de cobertura (número de manchas, área total, área média, índice de agregação), respondendo a perguntas como "qual o grau de fragmentação da floresta nesta paisagem?". O nível da paisagem (*landscape level*) sintetiza a estrutura de todas as classes conjuntamente (diversidade de Shannon, equabilidade, contagion, proporção total de borda), respondendo a perguntas como "quão heterogênea é esta paisagem no seu conjunto?". A @fig-niveis-metricas esquematiza essa hierarquia.
 
-::: {#fig-niveis-metricas}
-```{mermaid}
-%%| fig-width: 8
-flowchart TD
-    A["Mapa de uso e cobertura"] --> B["Nível da mancha<br>Atributos individuais"]
-    A --> C["Nível da classe<br>Agregação por tipo de cobertura"]
-    A --> D["Nível da paisagem<br>Síntese global"]
-    B --> E["Área, perímetro,<br>forma, área nuclear"]
-    C --> F["Nº manchas, área total,<br>área média, agregação"]
-    D --> G["Diversidade, equabilidade,<br>contagion, borda total"]
+```{dot}
+//| label: fig-niveis-metricas
+//| fig-cap: "Três níveis hierárquicos de cálculo de métricas da paisagem, mostrando as saídas típicas de cada nível."
+//| fig-width: 8
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0]
+
+    A [label="Mapa de uso e cobertura", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
+    B [label="Nível da mancha\nAtributos individuais", fillcolor="#BBDEFB", color="#1565C0"]
+    C [label="Nível da classe\nAgregação por tipo de cobertura", fillcolor="#FFE0B2", color="#E65100"]
+    D [label="Nível da paisagem\nSíntese global", fillcolor="#E1BEE7", color="#6A1B9A"]
+    E [label="Área, perímetro,\nforma, área nuclear", fillcolor="#E3F2FD", color="#1565C0"]
+    F [label="Nº manchas, área total,\nárea média, agregação", fillcolor="#FFF3E0", color="#E65100"]
+    G [label="Diversidade, equabilidade,\ncontagion, borda total", fillcolor="#F3E5F5", color="#6A1B9A"]
+
+    A -> {B C D}
+    B -> E
+    C -> F
+    D -> G
+}
 ```
-Três níveis hierárquicos de cálculo de métricas da paisagem, mostrando as saídas típicas de cada nível.
-:::
 
 A @fig-niveis-metricas evidencia que a escolha do nível de análise depende da pergunta de pesquisa. Um estudo que visa priorizar fragmentos individuais para restauração operará predominantemente no nível da mancha (identificando fragmentos com maior área nuclear ou maior potencial de conexão). Um estudo que compara o grau de fragmentação florestal entre bacias hidrográficas operará no nível da classe (comparando NP, AREA_MN e PLAND de floresta entre bacias). Um estudo que avalia o efeito da heterogeneidade composicional sobre a provisão de serviços ecossistêmicos operará no nível da paisagem (correlacionando SHDI e equabilidade com indicadores de polinização, controle de pragas ou regulação hídrica). Os três níveis são complementares, e análises completas frequentemente calculam métricas em todos os níveis para compor um diagnóstico multinível da estrutura da paisagem.
 

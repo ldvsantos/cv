@@ -14,18 +14,34 @@ A transição da percepção visual para a representação cartográfica envolve
 
 A fotografia aérea, utilizada desde o trabalho pioneiro de Troll [-@troll1939], foi durante décadas a principal fonte de dados para a representação da paisagem, e a fotointerpretação manual permanece como método de referência para validação de classificações automáticas. A partir da década de 1970, imagens de satélite (Landsat, SPOT, CBERS) ampliaram a extensão e a frequência temporal da observação, permitindo análises de dinâmica da paisagem em escalas continentais. Mais recentemente, veículos aéreos não tripulados (VANT/drones) e imagens de alta resolução (Planet, WorldView) preencheram a lacuna entre a fotografia aérea clássica e as imagens orbitais de média resolução, criando um continuum de fontes de dados que se diferenciam pela escala espacial, pelo custo e pela frequência de revisita, conforme sistematiza a @fig-fontes-dados.
 
-::: {#fig-fontes-dados}
-```{mermaid}
-%%| fig-width: 9
-flowchart LR
-    A["Observação<br>de campo"] -->|Escala local<br>< 10 ha| B["Levantamento<br>de campo"]
-    C["VANT / Drone"] -->|Escala de detalhe<br>10–100 ha| D["Ortofoto<br>< 10 cm"]
-    E["Alta resolução<br>Planet, WorldView"] -->|Escala local<br>10²–10³ ha| F["Imagem<br>0.3–5 m"]
-    G["Média resolução<br>Sentinel, Landsat"] -->|Escala regional<br>10³–10⁵ ha| H["Imagem<br>10–30 m"]
-    I["Baixa resolução<br>MODIS"] -->|Escala continental<br>> 10⁵ ha| J["Imagem<br>250–1000 m"]
+```{dot}
+//| label: fig-fontes-dados
+//| fig-cap: "Principais fontes de dados para representação da paisagem, organizadas por escala espacial e resolução."
+//| fig-width: 9
+digraph {
+    rankdir=LR
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=9, margin="0.2,0.1", penwidth=0.8]
+    edge [fontname="Helvetica", fontsize=8, color="#555555", penwidth=1.0]
+
+    A [label="Observação\nde campo", fillcolor="#E8F5E9", color="#2E7D32"]
+    B [label="Levantamento\nde campo", fillcolor="#C8E6C9", color="#2E7D32"]
+    C [label="VANT / Drone", fillcolor="#E3F2FD", color="#1565C0"]
+    D [label="Ortofoto\n< 10 cm", fillcolor="#BBDEFB", color="#1565C0"]
+    E [label="Alta resolução\nPlanet, WorldView", fillcolor="#FFF3E0", color="#E65100"]
+    F [label="Imagem\n0.3–5 m", fillcolor="#FFE0B2", color="#E65100"]
+    G [label="Média resolução\nSentinel, Landsat", fillcolor="#FCE4EC", color="#AD1457"]
+    H [label="Imagem\n10–30 m", fillcolor="#F8BBD0", color="#AD1457"]
+    I [label="Baixa resolução\nMODIS", fillcolor="#E1BEE7", color="#6A1B9A"]
+    J [label="Imagem\n250–1000 m", fillcolor="#CE93D8", color="#6A1B9A"]
+
+    A -> B [label="Escala local\n< 10 ha"]
+    C -> D [label="Escala detalhe\n10–100 ha"]
+    E -> F [label="Escala local\n10²–10³ ha"]
+    G -> H [label="Escala regional\n10³–10⁵ ha"]
+    I -> J [label="Escala continental\n> 10⁵ ha"]
+}
 ```
-Principais fontes de dados para representação da paisagem, organizadas por escala espacial e resolução.
-:::
 
 A @fig-fontes-dados evidencia que não existe uma fonte de dados universalmente adequada para todas as análises de paisagem. A escolha depende da extensão da área de estudo, do processo ecológico de interesse e da resolução mínima necessária para detectar os elementos da paisagem relevantes. Para estudos de conectividade em escala de bacia hidrográfica (10³–10⁴ ha), imagens Sentinel-2 (10 m) ou Landsat (30 m) são tipicamente adequadas, pois detectam fragmentos a partir de 0,01 ha e 0,09 ha, respectivamente. Para monitoramento de APP e restauração em escala de propriedade rural (10¹–10² ha), imagens de alta resolução (Planet, 3–5 m) ou levantamentos por VANT (resolução sub-decimétrica) são necessários para mapear a largura real da faixa ripária e avaliar o estágio de regeneração. Para detecção de desmatamento em escala amazônica (10⁶–10⁸ ha), dados MODIS (250 m) permitem alertas diários, enquanto a confirmação e quantificação exigem Landsat ou Sentinel.
 
