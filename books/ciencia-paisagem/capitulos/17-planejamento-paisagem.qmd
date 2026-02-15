@@ -1,0 +1,75 @@
+# Planejamento da Paisagem {#sec-planejamento}
+
+## Planejar para quê?
+
+Até este ponto do livro, aprendemos a descrever a paisagem (sua estrutura, composição e configuração), a medi-la (com métricas, sensoriamento remoto e SIG), a detectar suas mudanças ao longo do tempo e a entender os processos que a moldam (hidrologia, biodiversidade, dinâmica de uso do solo, clima). Agora, a pergunta muda de direção. Em vez de "como é a paisagem?" e "por que ela muda?", passamos a perguntar "**como deveria ser a paisagem?**" e "**o que podemos fazer para que ela se aproxime desse ideal?**". Essa mudança de uma perspectiva descritiva e analítica para uma perspectiva prescritiva e propositiva é a essência do **planejamento da paisagem** (*landscape planning*).
+
+Para entender por que o planejamento é necessário, basta observar que, sem ele, as decisões de uso do solo são tomadas de forma fragmentada. Cada proprietário rural decide individualmente o que plantar, o que preservar e o que desmatar, guiado por critérios econômicos de curto prazo. Cada município define seu zoneamento urbano com atenção limitada ao que os municípios vizinhos fazem. Cada empreendimento é licenciado com base em seu impacto local, sem considerar o efeito cumulativo de dezenas de empreendimentos na mesma bacia. O resultado dessas decisões atomizadas é uma paisagem que não serve bem a ninguém. Os ecossistemas se fragmentam, a água se degrada, a produtividade agrícola declina por perda de serviços ecossistêmicos, os custos de infraestrutura urbana aumentam e os riscos de desastres naturais se amplificam.
+
+O planejamento da paisagem propõe organizar essas decisões de forma coordenada, na escala espacial em que os processos ecológicos e hidrológicos realmente operam (bacias hidrográficas, corredores ecológicos, regiões metropolitanas), com horizonte temporal de médio a longo prazo (décadas, não anos) e com consideração explícita dos múltiplos objetivos e interesses envolvidos (produção, conservação, habitação, infraestrutura, cultura, lazer).
+
+## Princípios do planejamento da paisagem
+
+O planejamento da paisagem é guiado por princípios derivados da ecologia da paisagem, da hidrologia, da ciência da conservação e do planejamento territorial. Os mais fundamentais, sintetizados por Forman [-@forman1995], podem ser organizados num arcabouço lógico conforme a @fig-principios-planejamento.
+
+::: {#fig-principios-planejamento}
+```{mermaid}
+%%| fig-width: 9
+flowchart TD
+    A["Princípios do Planejamento<br>da Paisagem"] --> B["Manter manchas<br>grandes de<br>vegetação nativa"]
+    A --> C["Manter conectividade<br>entre manchas<br>(corredores)"]
+    A --> D["Proteger zonas<br>ripárias e<br>áreas sensíveis"]
+    A --> E["Manter heterogeneidade<br>na matriz<br>produtiva"]
+    A --> F["Concentrar usos<br>intensivos em<br>áreas de aptidão"]
+
+    B --> G["Paisagem<br>funcional e<br>resiliente"]
+    C --> G
+    D --> G
+    E --> G
+    F --> G
+
+    style A fill:#2E7D32,color:#fff
+    style G fill:#1B5E20,color:#fff
+```
+Cinco princípios fundamentais do planejamento da paisagem e sua convergência para uma paisagem funcional e resiliente.
+:::
+
+A @fig-principios-planejamento apresenta princípios que, embora enunciados de forma aparentemente simples, possuem cada um uma fundamentação ecológica e hidrológica substancial. O princípio de **manter manchas grandes** decorre da relação espécie-área e do efeito de borda, pois manchas grandes possuem maior área nuclear (protegida dos efeitos de borda), sustentam populações maiores e mais viáveis, e abrigam espécies sensíveis que não persistem em fragmentos pequenos. O princípio de **manter conectividade** decorre da teoria de metapopulações e da necessidade de fluxo gênico entre populações, permitindo recolonização após extinções locais e dispersão em resposta a mudanças climáticas. O princípio de **proteger zonas ripárias** integra a função ecológica (corredor de habitat, refúgio de fauna) com a função hidrológica (filtragem de sedimentos e nutrientes, estabilização de margens, regulação térmica dos rios). O princípio de **manter heterogeneidade na matriz** reconhece que a matriz não precisa ser hostil, e que mosaicos diversificados (silvipastoril, agrofloresta, cultivos diversificados) sustentam mais biodiversidade e serviços do que monocultura homogênea. O princípio de **concentrar usos intensivos** em áreas de aptidão minimiza o desperdício de terras marginais e reduz os impactos ambientais ao direcionar a produção para onde o solo, o relevo e o clima oferecem melhores condições.
+
+## Instrumentos de planejamento no Brasil
+
+O Brasil possui um arcabouço legal e institucional que, embora fragmentado e com lacunas de implementação, oferece instrumentos para o planejamento da paisagem em múltiplas escalas. A compreensão desses instrumentos é essencial para qualquer profissional que trabalhe com gestão territorial.
+
+O **Código Florestal** (Lei 12.651/2012) é o instrumento legal mais diretamente relacionado à estrutura da paisagem rural, pois define as **Áreas de Preservação Permanente** (APPs, protegendo margens de rios, nascentes, topos de morros e encostas íngremes) e a **Reserva Legal** (RL, proporção mínima de vegetação nativa que cada propriedade deve manter, variando de 80% na Amazônia a 20% no restante do país). O **Cadastro Ambiental Rural** (CAR) georreferenceia essas áreas no território, criando pela primeira vez uma base espacial abrangente da situação ambiental das propriedades rurais brasileiras. A **Política Nacional de Meio Ambiente** (Lei 6.938/1981) estabelece o licenciamento ambiental e a avaliação de impacto como instrumentos de controle, enquanto o **Zoneamento Ecológico-Econômico** (ZEE) propõe a divisão do território em zonas com vocações e restrições diferenciadas.
+
+Na escala urbana, o **Estatuto da Cidade** (Lei 10.257/2001) e os **Planos Diretores** municipais definem o zoneamento urbano, as taxas de ocupação e de permeabilidade, e as áreas de proteção ambiental urbana. Na escala de bacia hidrográfica, a **Política Nacional de Recursos Hídricos** (Lei 9.433/1997) institui os **Comitês de Bacia** como instâncias de gestão participativa e os **Planos de Recursos Hídricos** como instrumentos de planejamento.
+
+O desafio fundamental é que esses instrumentos foram concebidos em escalas e setores diferentes (ambiental, agrícola, urbano, hídrico) e raramente são articulados entre si na escala da paisagem. O Código Florestal opera na escala da propriedade individual, o que pode gerar configurações espaciais de reserva legal subótimas do ponto de vista ecológico (cada proprietário reserva 20%, mas os 20% de cada um ficam isolados nos cantos menos produtivos da propriedade, sem conectividade entre si). O ZEE opera em escala estadual ou regional, frequentemente sem resolução suficiente para orientar decisões no nível municipal. Os planos diretores urbanos raramente consideram a paisagem periurbana e rural como parte funcional da cidade. A integração desses instrumentos em uma visão de paisagem coerente é um dos maiores desafios do planejamento territorial brasileiro.
+
+## Do diagnóstico à intervenção
+
+O planejamento da paisagem segue, tipicamente, um fluxo que parte do diagnóstico e chega à proposta de intervenção. A @tbl-fluxo-planejamento sintetiza as etapas principais.
+
+| Etapa | Objetivo | Ferramentas principais |
+|:---|:---|:---|
+| Diagnóstico da paisagem | Mapear a estrutura atual (composição, configuração, conectividade) | Sensoriamento remoto, classificação de uso, métricas (FRAGSTATS) |
+| Análise de processos | Avaliar hidrologia, biodiversidade, serviços ecossistêmicos | Modelagem hidrológica, inventários biológicos, InVEST |
+| Identificação de problemas | Localizar áreas críticas (fragmentação, erosão, risco, déficit hídrico) | Análise espacial, sobreposição de camadas, mapas de aptidão |
+| Cenários alternativos | Simular configurações futuras sob diferentes decisões de uso | Modelos de mudança de uso, Dinamica EGO, análise multicritério |
+| Proposta de intervenção | Definir ações (restauração, corredores, zoneamento, PSA) | Priorização espacial (Zonation, Marxan), consulta participativa |
+| Monitoramento | Acompanhar a implementação e avaliar resultados | Detecção de mudanças, indicadores de efetividade |
+
+: Etapas do fluxo de planejamento da paisagem, com objetivos e ferramentas associadas. {#tbl-fluxo-planejamento .striped .hover}
+
+A @tbl-fluxo-planejamento evidencia que o planejamento da paisagem é essencialmente uma aplicação integrada dos métodos e conceitos desenvolvidos nos capítulos anteriores. O diagnóstico utiliza sensoriamento remoto (@sec-sensoriamento) e métricas (@sec-metricas). A análise de processos aplica os conceitos de hidrologia (@sec-processos-hidrologicos), biodiversidade (@sec-biodiversidade) e serviços ecossistêmicos (@sec-servicos-ecossistemicos). A identificação de problemas mobiliza análise espacial com SIG (@sec-sig). A simulação de cenários usa modelos de mudança (@sec-dinamica-uso e @sec-modelagem-cenarios). A proposta de intervenção se materializa em restauração (@sec-restauracao) e corredores (@sec-corredores). O planejamento da paisagem é, portanto, a síntese aplicada de todo o arcabouço conceitual e metodológico da Ciência da Paisagem.
+
+## Planejamento participativo e conflitos
+
+A paisagem não é um sistema puramente biofísico. É também um espaço de relações sociais, econômicas e políticas. As decisões sobre o que fazer com a paisagem afetam diferentes atores de formas diferentes (agricultores, pecuaristas, comunidades tradicionais, empresas, moradores urbanos, gerações futuras), e esses atores frequentemente possuem interesses conflitantes. O pecuarista quer maximizar sua área de pastagem, o ambientalista quer maximizar a cobertura florestal, o urbanizador quer expandir a área construída, e o agricola quer terras planas e férteis para cultivo. Todos têm razões legítimas, e a paisagem não pode satisfazer todos simultaneamente.
+
+O **planejamento participativo** reconhece esses conflitos e propõe que as decisões sobre a paisagem sejam tomadas com a participação dos atores envolvidos, de forma transparente e informada. A Ciência da Paisagem contribui para esse processo ao fornecer diagnósticos técnicos que quantificam os trade-offs entre diferentes opções de uso (se o desmatamento avançar, quanto de serviço hídrico será perdido? Se a Reserva Legal for alocada coletivamente em corredores, quanto de conectividade será ganho em relação à alocação individual?) e ao gerar cenários que permitem visualizar as consequências de longo prazo de decisões tomadas hoje. A ciência não decide, mas informa a decisão, reduzindo a incerteza e explicitando as consequências de cada alternativa.
+
+::: {.callout-tip}
+## Para aprofundar
+O conceito de "land sparing" vs. "land sharing" é um debate central no planejamento da paisagem. O **land sparing** propõe separar rigorosamente as áreas de produção intensiva das áreas de conservação, maximizando a produtividade nas primeiras para liberar as segundas. O **land sharing** propõe integrar produção e conservação nos mesmos espaços, por meio de práticas como agrofloresta e agricultura de baixo impacto. Na prática, a maioria das paisagens necessita de ambas as estratégias, calibradas conforme a aptidão do solo, a biodiversidade local, a economia regional e as preferências sociais. A escolha entre essas estratégias é discutida no contexto de restauração ecológica no @sec-restauracao.
+:::

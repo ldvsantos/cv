@@ -1,0 +1,75 @@
+# Serviços Ecossistêmicos na Paisagem {#sec-servicos-ecossistemicos}
+
+## O que a natureza faz por nós?
+
+Todo dia, ao respirar ar limpo, beber água potável, comer alimentos ou simplesmente desfrutar de uma sombra em um dia quente, estamos usufruindo de benefícios que a natureza nos proporciona gratuitamente. Esses benefícios, que parecem tão naturais que raramente paramos para pensar neles, são chamados de **serviços ecossistêmicos**. O termo designa todas as contribuições diretas e indiretas dos ecossistemas para o bem-estar humano, desde a polinização das lavouras por abelhas silvestres até a regulação do clima pela evapotranspiração das florestas.
+
+A noção de serviços ecossistêmicos nasceu da constatação de que, embora a humanidade dependa profundamente de processos naturais, o sistema econômico convencional não atribui valor a esses processos, tratando-os como "gratuitos" e, portanto, dispensáveis. O resultado previsível dessa invisibilidade econômica é a degradação progressiva dos ecossistemas que sustentam esses serviços. Quando uma floresta é desmatada para dar lugar a uma pastagem, o valor da carne produzida é contabilizado no PIB, mas o valor dos serviços perdidos (regulação hídrica, sequestro de carbono, controle de pragas, polinização, recreação, valor espiritual) simplesmente desaparece das contas nacionais. A Ciência da Paisagem contribui para corrigir essa distorção ao fornecer ferramentas para mapear, quantificar e valorar os serviços ecossistêmicos em função da estrutura espacial do território.
+
+## Classificação dos serviços ecossistêmicos
+
+A classificação mais influente dos serviços ecossistêmicos foi proposta pela **Avaliação Ecossistêmica do Milênio** (*Millennium Ecosystem Assessment*, MEA), publicada em 2005, que organizou os serviços em quatro categorias funcionais. Os **serviços de provisão** são os produtos tangíveis obtidos diretamente dos ecossistemas, como alimentos (grãos, carnes, peixes, frutas), água doce, madeira, fibras e recursos genéticos. Os **serviços de regulação** são os benefícios derivados da capacidade dos ecossistemas de modular processos ambientais, como regulação climática (sequestro de carbono, evapotranspiração), regulação hídrica (infiltração, controle de cheias), controle de erosão, polinização, controle biológico de pragas e purificação do ar e da água. Os **serviços culturais** são os benefícios não-materiais, como recreação, turismo ecológico, valor estético, inspiração artística, identidade cultural e valor espiritual. Os **serviços de suporte** (ou habitat) são os processos ecológicos fundamentais que sustentam todos os demais serviços, como formação de solo, ciclagem de nutrientes, produção primária e manutenção da biodiversidade.
+
+A @fig-servicos-categorias sintetiza essa classificação e suas relações com a paisagem.
+
+::: {#fig-servicos-categorias}
+```{mermaid}
+%%| fig-width: 9
+flowchart TD
+    A["Estrutura da Paisagem<br>(composição e configuração)"] --> B["Serviços de<br>Provisão<br>alimentos, água,<br>madeira, fibras"]
+    A --> C["Serviços de<br>Regulação<br>clima, água,<br>erosão, polinização"]
+    A --> D["Serviços<br>Culturais<br>recreação, estética,<br>identidade"]
+    A --> E["Serviços de<br>Suporte<br>solo, ciclagem,<br>biodiversidade"]
+    E --> B
+    E --> C
+    E --> D
+    B --> F["Bem-estar<br>humano"]
+    C --> F
+    D --> F
+
+    style A fill:#2E7D32,color:#fff
+    style F fill:#1B5E20,color:#fff
+```
+Relação entre a estrutura da paisagem, as quatro categorias de serviços ecossistêmicos e o bem-estar humano. Os serviços de suporte sustentam as três demais categorias.
+:::
+
+A @fig-servicos-categorias evidencia dois aspectos fundamentais. Primeiro, a estrutura da paisagem (o mosaico de tipos de cobertura e sua organização espacial) é a base que sustenta todos os serviços. Quando a paisagem é modificada (por desmatamento, urbanização, homogeneização agrícola), os serviços que dela dependem também são alterados, embora não necessariamente de forma imediata ou proporcional. Segundo, os serviços de suporte ocupam uma posição hierárquica especial. Sem formação de solo, não há produção agrícola. Sem ciclagem de nutrientes, não há manutenção da fertilidade. Sem biodiversidade, não há polinização nem controle biológico. A degradação dos serviços de suporte compromete, portanto, todos os demais serviços, frequentemente com defasagem temporal que dificulta a percepção do dano até que este se torne severo.
+
+## Serviços ecossistêmicos e escala espacial
+
+Um aspecto frequentemente negligenciado em avaliações de serviços ecossistêmicos é que diferentes serviços operam em diferentes **escalas espaciais**, e a escala determina quem são os beneficiários e quem arca com os custos de sua manutenção. Serviços de provisão (produção de alimentos, extração de madeira) beneficiam principalmente o proprietário local. Serviços de regulação hídrica beneficiam todos os usuários de água a jusante da bacia, que podem estar a dezenas ou centenas de quilômetros da área que provê o serviço. Serviços de regulação climática (sequestro de carbono) beneficiam toda a comunidade global, independentemente da localização geográfica.
+
+Essa discrepância de escalas gera um desalinhamento econômico fundamental. O proprietário rural que mantém floresta em sua propriedade arca com o custo de oportunidade (renuncia à receita que obteria convertendo a floresta em pastagem ou lavoura), mas os benefícios hídricos e climáticos de sua decisão são capturados por beneficiários distantes (a cidade que consome a água, o planeta que se beneficia do carbono sequestrado). Sem mecanismos de compensação, há um incentivo econômico perverso para converter ecossistemas naturais em usos produtivos, mesmo que o valor total dos serviços perdidos exceda o valor da produção agrícola obtida. Os esquemas de Pagamento por Serviços Ambientais (PSA), discutidos no @sec-processos-hidrologicos, e o mercado de carbono são tentativas de corrigir esse desalinhamento.
+
+## Trade-offs e sinergias entre serviços
+
+Na prática, as decisões de uso do solo envolvem inevitavelmente **trade-offs** (compensações) entre diferentes serviços ecossistêmicos. Quando uma área de cerrado nativo é convertida em lavoura de soja, o serviço de provisão de alimentos aumenta, mas os serviços de regulação hídrica, sequestro de carbono, manutenção da biodiversidade e controle de erosão diminuem. Dificilmente é possível maximizar todos os serviços simultaneamente no mesmo local. O desafio do planejamento da paisagem é distribuir os usos no território de modo a otimizar o conjunto de serviços, e não cada serviço isoladamente.
+
+Entretanto, nem todas as relações são de trade-off. Algumas combinações de serviços apresentam **sinergias** (reforço mútuo). Sistemas agroflorestais, por exemplo, combinam produção (alimentos, madeira) com regulação (sequestro de carbono, sombreamento, ciclagem de nutrientes) e suporte (manutenção de biodiversidade edáfica). A integração lavoura-pecuária-floresta (ILPF) combina produção agrícola e pecuária com manutenção de cobertura arbórea, reduzindo erosão, diversificando a renda e aumentando a resiliência do sistema produtivo a eventos climáticos extremos. A identificação dessas sinergias é uma das contribuições mais valiosas da Ciência da Paisagem para o planejamento territorial, pois permite desenhar mosaicos produtivos que geram múltiplos benefícios simultaneamente.
+
+A @tbl-tradeoffs ilustra exemplos típicos de trade-offs e sinergias para diferentes configurações de paisagem.
+
+| Configuração da paisagem | Provisão | Regulação hídrica | Carbono | Biodiversidade |
+|:---|:---:|:---:|:---:|:---:|
+| Monocultura intensiva | Alta | Baixa | Baixo | Baixa |
+| Agricultura diversificada | Moderada | Moderada | Moderado | Moderada |
+| Agrofloresta (SAF) | Moderada | Alta | Alto | Alta |
+| Floresta nativa preservada | Baixa | Muito alta | Muito alto | Muito alta |
+| Mosaico otimizado | Moderada-alta | Alta | Alto | Alta |
+
+: Trade-offs e sinergias entre serviços ecossistêmicos para diferentes configurações de paisagem. O "mosaico otimizado" distribui estrategicamente áreas de produção e conservação. {#tbl-tradeoffs .striped .hover}
+
+A @tbl-tradeoffs permite observar que a monocultura intensiva maximiza a provisão, mas à custa de todos os demais serviços. A floresta nativa maximiza regulação, carbono e biodiversidade, mas oferece provisão limitada (produtos florestais não-madeireiros, na maioria dos casos). O ponto mais relevante é a última linha. O **mosaico otimizado**, no qual áreas de produção intensiva, agricultura diversificada, agrofloresta e conservação são distribuídas estrategicamente no território de acordo com aptidão do solo, posição na bacia, conectividade ecológica e demanda social, pode alcançar níveis moderados a altos em todos os serviços simultaneamente. Essa é a promessa central do planejamento da paisagem baseado em serviços ecossistêmicos, embora sua implementação prática enfrente desafios de coordenação entre proprietários, compatibilização com legislação e monitoramento de efetividade.
+
+## Mapeamento e valoração
+
+A quantificação espacial dos serviços ecossistêmicos utiliza ferramentas que integram dados de uso e cobertura do solo, variáveis biofísicas e modelos ecológicos. A plataforma **InVEST** (*Integrated Valuation of Ecosystem Services and Tradeoffs*), desenvolvida pelo Stanford Natural Capital Project, é a ferramenta mais utilizada globalmente e oferece modelos para carbono, água, sedimentos, polinização, recreação e habitat, todos operando sobre mapas de uso do solo e variáveis espaciais (topografia, solos, clima). O InVEST traduz informações de estrutura da paisagem em mapas de provisão de serviços, permitindo comparar cenários de planejamento territorial em termos de seus impactos sobre múltiplos serviços simultaneamente.
+
+A **valoração econômica** dos serviços ecossistêmicos, embora controversa e metodologicamente complexa, tem sido utilizada para comunicar a importância dos ecossistemas em linguagem acessível a tomadores de decisão. Costanza et al. (1997) estimaram o valor global dos serviços ecossistêmicos entre 16 e 54 trilhões de dólares por ano, valor comparável ao PIB mundial da época. Embora as estimativas precisas sejam debatidas, o exercício cumpriu o papel de demonstrar que os serviços "gratuitos" da natureza possuem valor econômico real e mensurável, subvertendo a noção implícita de que a natureza não contribui para a economia.
+
+No contexto brasileiro, a valoração de serviços tem sido aplicada para fundamentar PSA em bacias de abastecimento, justificar a criação de unidades de conservação, avaliar o impacto de empreendimentos (EIA/RIMA) e desenhar instrumentos de política florestal. A precisão e a relevância dessas avaliações dependem diretamente da qualidade dos dados de paisagem (resolução do mapeamento, atualidade das informações, validação de campo), reforçando a importância dos métodos de análise discutidos nos capítulos anteriores.
+
+::: {.callout-tip}
+## Para aprofundar
+A plataforma InVEST (naturalcapitalproject.stanford.edu/software/invest) é gratuita e acompanhada de tutoriais detalhados. Experimente rodar o modelo de carbono para uma paisagem de seu interesse utilizando dados do MapBiomas como mapa de uso e cobertura. O exercício permite visualizar concretamente como a conversão de cada hectare de floresta afeta o estoque total de carbono da paisagem e quantificar, em toneladas de CO₂ equivalente, o serviço de regulação climática de cada tipo de cobertura.
+:::

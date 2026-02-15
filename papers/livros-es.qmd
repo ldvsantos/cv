@@ -13,11 +13,9 @@ Libros y ebooks de autoría de **Luiz Diego Vidal Santos**, disponibles en forma
 ## Ebooks
 
 ::: {.card .shadow-sm .mb-4}
-::: {.row .g-0 .align-items-center}
-::: {.col-md-3 .text-center .p-3}
-![](../books/bioengenharia-solos/img/capa_bioengenharia_de_solos.png){fig-alt="Portada del ebook Bioingeniería de Suelos en Regiones Tropicales" style="max-height:280px; object-fit:contain;"}
+::: {.text-center .p-3}
+![](../books/bioengenharia-solos/img/capa_bioengenharia_de_solos.png){fig-alt="Portada del ebook Bioingeniería de Suelos en Regiones Tropicales" style="max-height:320px; object-fit:contain;"}
 :::
-::: {.col-md-9}
 ::: {.card-body}
 
 ### Bioingeniería de Suelos en Regiones Tropicales {.card-title}
@@ -30,5 +28,20 @@ Manual técnico-científico con 21 capítulos organizados en 4 partes, abarcando
 
 :::
 :::
+
+::: {.card .shadow-sm .mb-4}
+::: {.text-center .p-3}
+![](../books/ciencia-paisagem/img/capa_ciencia_paisagem.png){fig-alt="Portada del ebook Ciencia del Paisaje" style="max-height:320px; object-fit:contain;"}
+:::
+::: {.card-body}
+
+### Ciencia del Paisaje {.card-title}
+
+**Fundamentos, Métodos de Análisis y Planificación Territorial**
+
+Libro de texto con 21 capítulos organizados en 4 partes, abarcando desde fundamentos de ecología del paisaje y métricas espaciales hasta teledetección, SIG, dinámica de uso del suelo, servicios ecosistémicos, restauración ecológica y modelación de escenarios para la gestión sostenible de paisajes tropicales. Licencia CC BY-NC-SA 4.0.
+
+[{{< fa book-open >}} Acceder al ebook](../books/ciencia-paisagem/){.btn .btn-success .btn-sm}
+
 :::
 :::

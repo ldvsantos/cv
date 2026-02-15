@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Livro-texto sobre Ciência da Paisagem com ênfase em análise da paisagem, integrando ecologia da paisagem, métricas espaciais, sensoriamento remoto, geoprocessamento e planejamento territorial para gestão sustentável de paisagens tropicais.">
+
+<title>5&nbsp; Percepção e Representação da Paisagem – Ciência da Paisagem</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../capitulos/06-sensoriamento-remoto.html" rel="next">
+<link href="../capitulos/04-escalas.html" rel="prev">
+<link href="../img/capa_ciencia_paisagem.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-2d59cbaa6b74a509e36eca83abb0a73a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/01-introducao.html">Parte I — Fundamentos da Ciência da Paisagem</a></li><li class="breadcrumb-item"><a href="../capitulos/05-percepcao-representacao.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Percepção e Representação da Paisagem</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Ciência da Paisagem</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/ldvsantos/cv/" title="Código fonte" class="quarto-navigation-tool px-1" aria-label="Código fonte"><i class="bi bi-github"></i></a>
+    <a href="../Ciência-da-Paisagem.pdf" title="Baixar PDF" class="quarto-navigation-tool px-1" aria-label="Baixar PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Compartilhar" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Compartilhar"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bem-vindo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../prefacio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prefácio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte I — Fundamentos da Ciência da Paisagem</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/01-introducao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução à Ciência da Paisagem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/02-ecologia-paisagem.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Conceitos e Abordagens da Ecologia da Paisagem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/03-estrutura-paisagem.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Estrutura da Paisagem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/04-escalas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Escalas Espaço-temporais</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/05-percepcao-representacao.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Percepção e Representação da Paisagem</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte II — Métodos de Análise da Paisagem</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/06-sensoriamento-remoto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Sensoriamento Remoto Aplicado à Paisagem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/07-sig-paisagem.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sistemas de Informação Geográfica para Análise da Paisagem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/08-uso-cobertura.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Classificação do Uso e Cobertura do Solo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/09-metricas-paisagem.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Métricas da Paisagem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/10-fragmentacao-conectividade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Fragmentação e Conectividade</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/11-deteccao-mudancas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Detecção de Mudanças na Paisagem</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte III — Processos e Dinâmica</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/12-dinamica-uso-solo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Dinâmica do Uso e Cobertura do Solo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/13-processos-hidrologicos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Processos Hidrológicos na Paisagem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/14-servicos-ecossistemicos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Serviços Ecossistêmicos na Paisagem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/15-biodiversidade-heterogeneidade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Biodiversidade e Heterogeneidade da Paisagem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/16-mudancas-climaticas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Mudanças Climáticas e Paisagem</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte IV — Planejamento e Gestão da Paisagem</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/17-planejamento-paisagem.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Planejamento da Paisagem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/18-restauracao-ecologica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Restauração Ecológica na Paisagem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/19-corredores-areas-protegidas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Corredores Ecológicos e Áreas Protegidas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/20-modelagem-cenarios.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Modelagem de Cenários Paisagísticos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/21-projeto-integrador.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Projeto Integrador</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../referencias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Referências</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#paisagem-percebida-e-paisagem-analisada" id="toc-paisagem-percebida-e-paisagem-analisada" class="nav-link active" data-scroll-target="#paisagem-percebida-e-paisagem-analisada"><span class="header-section-number">5.1</span> Paisagem percebida e paisagem analisada</a></li>
+  <li><a href="#da-percepção-à-representação-cartográfica" id="toc-da-percepção-à-representação-cartográfica" class="nav-link" data-scroll-target="#da-percepção-à-representação-cartográfica"><span class="header-section-number">5.2</span> Da percepção à representação cartográfica</a></li>
+  <li><a href="#modelos-de-representação" id="toc-modelos-de-representação" class="nav-link" data-scroll-target="#modelos-de-representação"><span class="header-section-number">5.3</span> Modelos de representação</a></li>
+  <li><a href="#classificação-e-legendas" id="toc-classificação-e-legendas" class="nav-link" data-scroll-target="#classificação-e-legendas"><span class="header-section-number">5.4</span> Classificação e legendas</a></li>
+  <li><a href="#representação-da-paisagem-em-ambiente-tropical" id="toc-representação-da-paisagem-em-ambiente-tropical" class="nav-link" data-scroll-target="#representação-da-paisagem-em-ambiente-tropical"><span class="header-section-number">5.5</span> Representação da paisagem em ambiente tropical</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ldvsantos/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/01-introducao.html">Parte I — Fundamentos da Ciência da Paisagem</a></li><li class="breadcrumb-item"><a href="../capitulos/05-percepcao-representacao.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Percepção e Representação da Paisagem</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-percepcao" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Percepção e Representação da Paisagem</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="paisagem-percebida-e-paisagem-analisada" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="paisagem-percebida-e-paisagem-analisada"><span class="header-section-number">5.1</span> Paisagem percebida e paisagem analisada</h2>
+<p>A paisagem é, antes de ser um objeto de análise espacial, um objeto de <strong>percepção</strong>. O termo “paisagem” (<em>Landschaft</em>, <em>landscape</em>, <em>paysage</em>) carrega, em todas as tradições linguísticas, uma dupla acepção. Refere-se simultaneamente a uma porção de território visível a partir de um ponto de observação e a uma representação (pictórica, cartográfica, computacional) dessa porção. Essa dualidade é relevante porque a forma como a paisagem é percebida e representada condiciona diretamente as decisões de manejo, planejamento e conservação que sobre ela incidem.</p>
+<p>Na tradição geográfica europeia, a <strong>paisagem cultural</strong> (<em>Kulturlandschaft</em>) é entendida como o produto da interação secular entre uma sociedade e seu substrato biofísico. Nessa perspectiva, a paisagem não é apenas um arranjo de manchas e corredores, mas um <strong>texto territorial</strong> que registra práticas agrícolas, preferências estéticas, relações de poder e estratégias de sobrevivência ao longo de gerações. A leitura da paisagem, portanto, requer tanto ferramentas quantitativas (métricas, índices, classificações) quanto sensibilidade interpretativa (história agrária, etnografia, análise institucional).</p>
+<p>Na prática contemporânea da Ciência da Paisagem, contudo, a paisagem analisada é predominantemente a paisagem <strong>representada</strong> em formato digital, seja como imagem de satélite, mapa temático de uso e cobertura, modelo digital de elevação ou base cadastral vetorial. A transição da percepção direta (observação em campo, fotointerpretação visual) para a representação computacional (classificação automática de imagens, cálculo algorítmico de métricas) implica ganhos de reprodutibilidade e escala, mas também perdas de informação contextual que devem ser reconhecidas e, quando possível, mitigadas por validação em campo.</p>
+</section>
+<section id="da-percepção-à-representação-cartográfica" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="da-percepção-à-representação-cartográfica"><span class="header-section-number">5.2</span> Da percepção à representação cartográfica</h2>
+<p>A transição da percepção visual para a representação cartográfica envolve um conjunto de <strong>decisões metodológicas</strong> que determinam o que será incluído e excluído da análise, e cujas consequências propagam-se por toda a cadeia analítica subsequente. Toda carta de uso e cobertura do solo é uma <strong>abstração</strong> que classifica a variabilidade contínua da superfície terrestre em categorias discretas (floresta, pastagem, área urbana, corpo d’água). O número de categorias, os critérios de classificação e a resolução espacial são escolhas que refletem os objetivos da análise e condicionam os resultados. Uma classificação com 5 classes produzirá uma paisagem aparentemente mais homogênea do que uma classificação com 25 classes aplicada à mesma imagem, e métricas como número de manchas, diversidade de Shannon e densidade de bordas serão radicalmente diferentes nos dois casos.</p>
+<p>A fotografia aérea, utilizada desde o trabalho pioneiro de Troll <span class="citation" data-cites="troll1939">(<a href="../referencias.html#ref-troll1939" role="doc-biblioref">1939</a>)</span>, foi durante décadas a principal fonte de dados para a representação da paisagem, e a fotointerpretação manual permanece como método de referência para validação de classificações automáticas. A partir da década de 1970, imagens de satélite (Landsat, SPOT, CBERS) ampliaram a extensão e a frequência temporal da observação, permitindo análises de dinâmica da paisagem em escalas continentais. Mais recentemente, veículos aéreos não tripulados (VANT/drones) e imagens de alta resolução (Planet, WorldView) preencheram a lacuna entre a fotografia aérea clássica e as imagens orbitais de média resolução, criando um continuum de fontes de dados que se diferenciam pela escala espacial, pelo custo e pela frequência de revisita, conforme sistematiza a <a href="#fig-fontes-dados" class="quarto-xref">Figura&nbsp;<span>5.1</span></a>.</p>
+<div id="fig-fontes-dados" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fontes-dados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell" data-fig-width="9" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    A["Observação&lt;br&gt;de campo"] --&gt;|Escala local&lt;br&gt;&lt; 10 ha| B["Levantamento&lt;br&gt;de campo"]
+    C["VANT / Drone"] --&gt;|Escala de detalhe&lt;br&gt;10–100 ha| D["Ortofoto&lt;br&gt;&lt; 10 cm"]
+    E["Alta resolução&lt;br&gt;Planet, WorldView"] --&gt;|Escala local&lt;br&gt;10²–10³ ha| F["Imagem&lt;br&gt;0.3–5 m"]
+    G["Média resolução&lt;br&gt;Sentinel, Landsat"] --&gt;|Escala regional&lt;br&gt;10³–10⁵ ha| H["Imagem&lt;br&gt;10–30 m"]
+    I["Baixa resolução&lt;br&gt;MODIS"] --&gt;|Escala continental&lt;br&gt;&gt; 10⁵ ha| J["Imagem&lt;br&gt;250–1000 m"]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fontes-dados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5.1: Principais fontes de dados para representação da paisagem, organizadas por escala espacial e resolução.
+</figcaption>
+</figure>
+</div>
+<p>A <a href="#fig-fontes-dados" class="quarto-xref">Figura&nbsp;<span>5.1</span></a> evidencia que não existe uma fonte de dados universalmente adequada para todas as análises de paisagem. A escolha depende da extensão da área de estudo, do processo ecológico de interesse e da resolução mínima necessária para detectar os elementos da paisagem relevantes. Para estudos de conectividade em escala de bacia hidrográfica (10³–10⁴ ha), imagens Sentinel-2 (10 m) ou Landsat (30 m) são tipicamente adequadas, pois detectam fragmentos a partir de 0,01 ha e 0,09 ha, respectivamente. Para monitoramento de APP e restauração em escala de propriedade rural (10¹–10² ha), imagens de alta resolução (Planet, 3–5 m) ou levantamentos por VANT (resolução sub-decimétrica) são necessários para mapear a largura real da faixa ripária e avaliar o estágio de regeneração. Para detecção de desmatamento em escala amazônica (10⁶–10⁸ ha), dados MODIS (250 m) permitem alertas diários, enquanto a confirmação e quantificação exigem Landsat ou Sentinel.</p>
+<p>A passagem de uma escala a outra não é trivial. Dados de alta resolução contêm variabilidade intra-fragmento (clareiras, sub-bosque, trilhas) que pode ser confundida com fragmentação real se a classificação não for adequadamente generalizada. Dados de baixa resolução, inversamente, homogeneízam a paisagem e suprimem elementos menores que seu grão (corredores estreitos, pequenos fragmentos), subestimando a diversidade estrutural. A calibração entre escalas é um problema ativo na Ciência da Paisagem e será retomado no <a href="04-escalas.html" class="quarto-xref"><span>Capítulo 4</span></a>.</p>
+</section>
+<section id="modelos-de-representação" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="modelos-de-representação"><span class="header-section-number">5.3</span> Modelos de representação</h2>
+<p>Duas abordagens dominam a representação computacional da paisagem. O <strong>modelo raster</strong> (matricial) divide o espaço em células regulares (pixels), cada uma atribuída a uma classe ou valor numérico. É o formato nativo das imagens de satélite e o mais utilizado para cálculo de métricas da paisagem em softwares como FRAGSTATS <span class="citation" data-cites="mcgarigal2012">(<a href="../referencias.html#ref-mcgarigal2012" role="doc-biblioref">McGarigal et al., 2012</a>)</span> e landscapemetrics (R). A principal vantagem do modelo raster é a continuidade espacial (todo o espaço está representado, sem lacunas) e a eficiência computacional para operações algébricas (sobreposição de camadas, cálculo de índices espectrais, operações de vizinhança).</p>
+<p>O <strong>modelo vetorial</strong> representa a paisagem por meio de pontos, linhas e polígonos. É o formato preferido para cadastros fundiários (CAR, Sistema de Cadastro Ambiental Rural), limites de unidades de conservação, rede hidrográfica e mapeamentos de detalhe com validação em campo. A conversão entre raster e vetor introduz artefatos que devem ser controlados na análise, especialmente efeitos de escada (<em>staircasing</em>) na vetorização de rasters e perda de detalhe na rasterização de polígonos complexos. A <a href="#tbl-raster-vetor" class="quarto-xref">Tabela&nbsp;<span>5.1</span></a> compara as propriedades dos dois modelos.</p>
+<div id="tbl-raster-vetor" class="striped hover quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-raster-vetor-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;5.1: Comparação entre os modelos raster e vetorial para representação da paisagem.
+</figcaption>
+<div aria-describedby="tbl-raster-vetor-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped table-hover caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Característica</th>
+<th style="text-align: left;">Modelo raster</th>
+<th style="text-align: left;">Modelo vetorial</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Unidade espacial</td>
+<td style="text-align: left;">Pixel (célula regular)</td>
+<td style="text-align: left;">Ponto, linha, polígono</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Fonte típica</td>
+<td style="text-align: left;">Imagens de satélite, MDE</td>
+<td style="text-align: left;">Cadastros fundiários, levantamentos GPS</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Vantagem principal</td>
+<td style="text-align: left;">Continuidade espacial, eficiência para operações algébricas</td>
+<td style="text-align: left;">Precisão de limites, topologia explícita</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Limitação principal</td>
+<td style="text-align: left;">Resolução fixa, artefatos de borda em conversão</td>
+<td style="text-align: left;">Complexidade computacional, generalização necessária</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Software típico</td>
+<td style="text-align: left;">FRAGSTATS, QGIS Raster, Google Earth Engine</td>
+<td style="text-align: left;">QGIS, PostGIS, GeoPandas</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Uso em métricas</td>
+<td style="text-align: left;">Cálculo direto (PLAND, NP, SHAPE, CORE)</td>
+<td style="text-align: left;">Requer rasterização prévia para FRAGSTATS</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>A <a href="#tbl-raster-vetor" class="quarto-xref">Tabela&nbsp;<span>5.1</span></a> evidencia que raster e vetor não são modelos concorrentes, mas <strong>complementares</strong>. Na prática da análise da paisagem, o fluxo típico envolve classificação de imagens raster (sensoriamento remoto), cálculo de métricas em ambiente raster (FRAGSTATS, landscapemetrics) e sobreposição dos resultados com dados vetoriais (limites de propriedades, unidades de conservação, zoneamento). A integração dos dois modelos num único ambiente SIG (como QGIS ou ArcGIS) é pré-requisito para a análise espacial completa.</p>
+</section>
+<section id="classificação-e-legendas" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="classificação-e-legendas"><span class="header-section-number">5.4</span> Classificação e legendas</h2>
+<p>A classificação de uso e cobertura do solo é o passo que transforma dados brutos (imagens, fotografias) em mapas temáticos utilizáveis para análise da estrutura da paisagem. O sistema de legenda (número e definição de classes) determina o nível de detalhe da representação e deve ser definido em função dos objetivos da análise e do processo ecológico de interesse.</p>
+<p>No Brasil, sistemas de classificação amplamente utilizados incluem o sistema do IBGE (Manual Técnico de Uso da Terra, com hierarquia de níveis de detalhamento), o sistema MapBiomas (com 6 níveis hierárquicos e mais de 30 classes no nível mais detalhado) e sistemas adaptados a biomas específicos. A escolha do sistema de legenda afeta diretamente as métricas de paisagem calculadas. Uma classificação que agrupe todas as formações florestais numa única classe (“Floresta”) produzirá valores de fragmentação menores (menos manchas, maiores) do que uma classificação que distinga floresta ombrófila densa, floresta estacional semidecidual e mangue como classes separadas (mais manchas, menores). Essa sensibilidade das métricas à legenda é uma fonte de incerteza frequentemente subestimada.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Classificação e processo ecológico
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A legenda deve refletir a relevância funcional das classes para o processo ecológico em estudo. Se o interesse é a dispersão de aves frugívoras, a distinção entre “floresta primária” e “capoeira avançada” pode ser irrelevante (ambas fornecem recursos alimentares e cobertura), mas a distinção entre “qualquer floresta” e “área aberta” é essencial (a permeabilidade da matriz difere radicalmente). Se o interesse é hidrologia, a distinção entre “pastagem” e “solo exposto” é fundamental (taxas de infiltração e escoamento distintas), enquanto “floresta” e “capoeira” podem ser agrupadas (ambas oferecem alta interceptação e baixo escoamento superficial).</p>
+</div>
+</div>
+</section>
+<section id="representação-da-paisagem-em-ambiente-tropical" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="representação-da-paisagem-em-ambiente-tropical"><span class="header-section-number">5.5</span> Representação da paisagem em ambiente tropical</h2>
+<p>Paisagens tropicais impõem desafios específicos à representação que exigem adaptações metodológicas em relação aos protocolos desenvolvidos para paisagens temperadas. A <strong>nebulosidade persistente</strong> durante a estação chuvosa limita severamente a disponibilidade de imagens ópticas livres de nuvens, especialmente na Amazônia e na Zona da Mata nordestina, onde séries de 4 a 6 meses podem não conter nenhuma cena utilizável. Sistemas de radar (SAR), como o Sentinel-1, oferecem alternativa ao penetrar nuvens e capturar informação sobre a estrutura da vegetação independentemente da cobertura atmosférica.</p>
+<p>A <strong>alta diversidade de fitofisionomias</strong> dificulta a separação espectral entre classes, particularmente no Cerrado, onde a transição entre campo limpo, campo sujo, cerrado ralo, cerrado típico, cerrado denso e cerradão forma um gradiente contínuo de biomassa e cobertura de dossel que não se discretiza facilmente em classes temáticas. Nesses casos, abordagens baseadas em séries temporais de índices de vegetação (NDVI, EVI) permitem explorar a fenologia como critério de separação, pois formações decíduas e perenifólias apresentam assinaturas temporais distintas mesmo quando suas respostas espectrais em uma única data são semelhantes.</p>
+<p>A representação adequada da paisagem é pré-requisito para qualquer análise quantitativa subsequente. Os capítulos da Parte II detalharão os procedimentos de sensoriamento remoto (<a href="06-sensoriamento-remoto.html" class="quarto-xref"><span>Capítulo 6</span></a>), geoprocessamento (<a href="07-sig-paisagem.html" class="quarto-xref"><span>Capítulo 7</span></a>), classificação (<a href="08-uso-cobertura.html" class="quarto-xref"><span>Capítulo 8</span></a>) e cálculo de métricas (<a href="09-metricas-paisagem.html" class="quarto-xref"><span>Capítulo 9</span></a>) que transformam representações cartográficas em indicadores quantitativos da estrutura, função e dinâmica da paisagem.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-mcgarigal2012" class="csl-entry" role="listitem">
+McGarigal, K., Cushman, S. A., &amp; Ene, E. (2012). <em>FRAGSTATS v4: Spatial Pattern Analysis Program for Categorical and Continuous Maps</em>. University of Massachusetts.
+</div>
+<div id="ref-troll1939" class="csl-entry" role="listitem">
+Troll, C. (1939). Luftbildplan und <span>ö</span>kologische Bodenforschung: Ihr zweckm<span>ä</span><span>ß</span>iger Einsatz f<span>ü</span>r die wissenschaftliche Erforschung und praktische Erschlie<span>ß</span>ung wenig bekannter L<span>ä</span>nder. <em>Zeitschrift der Gesellschaft f<span>ü</span>r Erdkunde zu Berlin</em>, <em>1939</em>, 241–298.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/diegovidalcv\.com\.br\/books\/ciencia-paisagem\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../capitulos/04-escalas.html" class="pagination-link" aria-label="Escalas Espaço-temporais">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Escalas Espaço-temporais</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../capitulos/06-sensoriamento-remoto.html" class="pagination-link" aria-label="Sensoriamento Remoto Aplicado à Paisagem">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Sensoriamento Remoto Aplicado à Paisagem</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Luiz Diego Vidal Santos, 2026. <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ldvsantos/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Feito com <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Livro-texto sobre Ciência da Paisagem com ênfase em análise da paisagem, integrando ecologia da paisagem, métricas espaciais, sensoriamento remoto, geoprocessamento e planejamento territorial para gestão sustentável de paisagens tropicais.">
+
+<title>2&nbsp; Conceitos e Abordagens da Ecologia da Paisagem – Ciência da Paisagem</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../capitulos/03-estrutura-paisagem.html" rel="next">
+<link href="../capitulos/01-introducao.html" rel="prev">
+<link href="../img/capa_ciencia_paisagem.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-2d59cbaa6b74a509e36eca83abb0a73a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/01-introducao.html">Parte I — Fundamentos da Ciência da Paisagem</a></li><li class="breadcrumb-item"><a href="../capitulos/02-ecologia-paisagem.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Conceitos e Abordagens da Ecologia da Paisagem</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Ciência da Paisagem</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/ldvsantos/cv/" title="Código fonte" class="quarto-navigation-tool px-1" aria-label="Código fonte"><i class="bi bi-github"></i></a>
+    <a href="../Ciência-da-Paisagem.pdf" title="Baixar PDF" class="quarto-navigation-tool px-1" aria-label="Baixar PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Compartilhar" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Compartilhar"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bem-vindo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../prefacio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prefácio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte I — Fundamentos da Ciência da Paisagem</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/01-introducao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução à Ciência da Paisagem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/02-ecologia-paisagem.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Conceitos e Abordagens da Ecologia da Paisagem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/03-estrutura-paisagem.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Estrutura da Paisagem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/04-escalas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Escalas Espaço-temporais</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/05-percepcao-representacao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Percepção e Representação da Paisagem</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte II — Métodos de Análise da Paisagem</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/06-sensoriamento-remoto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Sensoriamento Remoto Aplicado à Paisagem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/07-sig-paisagem.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sistemas de Informação Geográfica para Análise da Paisagem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/08-uso-cobertura.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Classificação do Uso e Cobertura do Solo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/09-metricas-paisagem.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Métricas da Paisagem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/10-fragmentacao-conectividade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Fragmentação e Conectividade</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/11-deteccao-mudancas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Detecção de Mudanças na Paisagem</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte III — Processos e Dinâmica</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/12-dinamica-uso-solo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Dinâmica do Uso e Cobertura do Solo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/13-processos-hidrologicos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Processos Hidrológicos na Paisagem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/14-servicos-ecossistemicos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Serviços Ecossistêmicos na Paisagem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/15-biodiversidade-heterogeneidade.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Biodiversidade e Heterogeneidade da Paisagem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/16-mudancas-climaticas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Mudanças Climáticas e Paisagem</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte IV — Planejamento e Gestão da Paisagem</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/17-planejamento-paisagem.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Planejamento da Paisagem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/18-restauracao-ecologica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Restauração Ecológica na Paisagem</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/19-corredores-areas-protegidas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Corredores Ecológicos e Áreas Protegidas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/20-modelagem-cenarios.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Modelagem de Cenários Paisagísticos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/21-projeto-integrador.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Projeto Integrador</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../referencias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Referências</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#ecologia-da-paisagem-como-disciplina" id="toc-ecologia-da-paisagem-como-disciplina" class="nav-link active" data-scroll-target="#ecologia-da-paisagem-como-disciplina"><span class="header-section-number">2.1</span> Ecologia da Paisagem como disciplina</a></li>
+  <li><a href="#abordagem-geográfica" id="toc-abordagem-geográfica" class="nav-link" data-scroll-target="#abordagem-geográfica"><span class="header-section-number">2.2</span> Abordagem geográfica</a></li>
+  <li><a href="#abordagem-ecológica" id="toc-abordagem-ecológica" class="nav-link" data-scroll-target="#abordagem-ecológica"><span class="header-section-number">2.3</span> Abordagem ecológica</a></li>
+  <li><a href="#escalas-e-hierarquias" id="toc-escalas-e-hierarquias" class="nav-link" data-scroll-target="#escalas-e-hierarquias"><span class="header-section-number">2.4</span> Escalas e hierarquias</a></li>
+  <li><a href="#abordagem-integrada" id="toc-abordagem-integrada" class="nav-link" data-scroll-target="#abordagem-integrada"><span class="header-section-number">2.5</span> Abordagem integrada</a></li>
+  <li><a href="#questões-centrais-da-disciplina" id="toc-questões-centrais-da-disciplina" class="nav-link" data-scroll-target="#questões-centrais-da-disciplina"><span class="header-section-number">2.6</span> Questões centrais da disciplina</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ldvsantos/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/01-introducao.html">Parte I — Fundamentos da Ciência da Paisagem</a></li><li class="breadcrumb-item"><a href="../capitulos/02-ecologia-paisagem.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Conceitos e Abordagens da Ecologia da Paisagem</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-ecologia-paisagem" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Conceitos e Abordagens da Ecologia da Paisagem</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="ecologia-da-paisagem-como-disciplina" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="ecologia-da-paisagem-como-disciplina"><span class="header-section-number">2.1</span> Ecologia da Paisagem como disciplina</h2>
+<p>A ecologia da paisagem é a subdisciplina da ecologia que investiga explicitamente como a <strong>heterogeneidade espacial</strong> influencia processos ecológicos e, reciprocamente, como esses processos modificam padrões espaciais ao longo do tempo <span class="citation" data-cites="turner2015">(<a href="../referencias.html#ref-turner2015" role="doc-biblioref">Turner &amp; Gardner, 2015</a>)</span>. Diferencia-se das demais subdisciplinas ecológicas não pelo organismo ou ecossistema de interesse, mas pela incorporação explícita do contexto espacial como variável explicativa. Onde a ecologia de populações pergunta “quantos indivíduos?”, a ecologia da paisagem pergunta “quantos indivíduos, distribuídos em quantas manchas de habitat, com qual grau de conectividade entre elas, e como essa configuração afeta a viabilidade da população?”.</p>
+<p>Risser, Karr e Forman <span class="citation" data-cites="risser1984">(<a href="../referencias.html#ref-risser1984" role="doc-biblioref">1984</a>)</span>, no influente workshop de Allerton Park (1983), identificaram três características que definem a ecologia da paisagem. A primeira é o foco no desenvolvimento e na dinâmica da heterogeneidade espacial, tratada como variável explanatória central e não como ruído a ser controlado. A segunda é a investigação das interações e trocas entre paisagens heterogêneas, especialmente os fluxos de organismos, nutrientes, energia e distúrbios que cruzam limites entre elementos da paisagem. A terceira é a gestão da heterogeneidade espacial, reconhecendo que padrões espaciais podem ser deliberadamente manipulados para atingir objetivos ecológicos e socioeconômicos. Essas três dimensões permanecem como eixos estruturantes da disciplina e organizam as questões de pesquisa abordadas neste livro.</p>
+</section>
+<section id="abordagem-geográfica" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="abordagem-geográfica"><span class="header-section-number">2.2</span> Abordagem geográfica</h2>
+<p>A tradição geográfica, predominante na Europa até a década de 1990 e cujas raízes remontam ao trabalho seminal de Carl Troll <span class="citation" data-cites="troll1939">(<a href="../referencias.html#ref-troll1939" role="doc-biblioref">1939</a>)</span>, concebe a paisagem como a <strong>expressão territorial da interação entre sociedade e natureza</strong>. Nessa perspectiva, a paisagem não é apenas um substrato ecológico, mas um produto cultural moldado por séculos de uso da terra, decisões de manejo e valores estéticos <span class="citation" data-cites="naveh2000">(<a href="../referencias.html#ref-naveh2000" role="doc-biblioref">Naveh &amp; Lieberman, 2000</a>)</span>. Uma paisagem agrícola do sul da França, por exemplo, não pode ser compreendida apenas em termos de cobertura do solo e fragmentação florestal, pois sua estrutura reflete decisões fundiárias medievais, políticas agrárias europeias e tradições vitícolas centenárias.</p>
+<p>A contribuição central da abordagem geográfica reside na atenção às <strong>forças motrizes</strong> (<em>driving forces</em>) que determinam a configuração atual da paisagem. Essas forças incluem fatores biofísicos (geomorfologia, clima, pedologia), fatores socioeconômicos (mercados globais, políticas públicas, pressão demográfica, estrutura fundiária) e fatores culturais (práticas tradicionais de manejo, percepção estética, identidade territorial). O reconhecimento dessas forças é essencial para compreender a trajetória temporal de uma paisagem e projetar cenários futuros de mudança, conforme esquematiza a <a href="#fig-forcas-motrizes" class="quarto-xref">Figura&nbsp;<span>2.1</span></a>.</p>
+<div id="fig-forcas-motrizes" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-forcas-motrizes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell" data-fig-width="8" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    A[Forças Biofísicas&lt;br&gt;Clima, Geomorfologia, Solos] --&gt; D[Estrutura da Paisagem&lt;br&gt;Composição e Configuração]
+    B[Forças Socioeconômicas&lt;br&gt;Mercados, Políticas, Demografia] --&gt; D
+    C[Forças Culturais&lt;br&gt;Práticas, Percepção, Identidade] --&gt; D
+    D --&gt; E[Processos Ecológicos&lt;br&gt;Fluxos, Biodiversidade, Serviços]
+    E --&gt;|Retroalimentação| D
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-forcas-motrizes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2.1: Esquema das forças motrizes que condicionam a estrutura da paisagem e sua relação recíproca com processos ecológicos.
+</figcaption>
+</figure>
+</div>
+<p>A <a href="#fig-forcas-motrizes" class="quarto-xref">Figura&nbsp;<span>2.1</span></a> revela três propriedades da relação entre forças motrizes e paisagem que merecem aprofundamento. Em primeiro lugar, as setas convergentes (biofísicas, socioeconômicas e culturais alimentando a estrutura da paisagem) indicam que a estrutura observada é o resultado da <strong>interação simultânea</strong> de múltiplas forças, e não do domínio de uma única. Em segundo lugar, a seta de retroalimentação (processos ecológicos→estrutura) explicita que a paisagem não é passiva, pois a perda de biodiversidade pode desencadear degradação de solos, alteração hidrológica e mudança de uso que realimentam a estrutura, criando <strong>trajetórias de mudança auto-reforçantes</strong>. Em paisagens semiáridas do Nordeste brasileiro, por exemplo, a remoção de vegetação nativa expõe o solo à erosão laminar, que reduz a fertilidade edáfica, que por sua vez inviabiliza a regeneração natural, perpetuando a matriz degradada <span class="citation" data-cites="verburg2009">(<a href="../referencias.html#ref-verburg2009" role="doc-biblioref">Verburg et al., 2009</a>)</span>. Em terceiro lugar, a ausência de setas diretas entre as forças biofísicas e os processos ecológicos evidencia que essas forças atuam <strong>mediadas pela estrutura da paisagem</strong>, reforçando o caráter central da configuração espacial como variável integradora.</p>
+</section>
+<section id="abordagem-ecológica" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="abordagem-ecológica"><span class="header-section-number">2.3</span> Abordagem ecológica</h2>
+<p>A tradição ecológica, dominante na América do Norte, concentra-se nos efeitos <strong>mensuráveis</strong> dos padrões espaciais sobre processos ecológicos. Duas questões centrais orientam essa abordagem e motivam a maior parte dos estudos quantitativos publicados na disciplina.</p>
+<p>A primeira questão investiga <strong>em que medida a configuração espacial dos habitats afeta a dinâmica de populações e comunidades</strong>. Essa pergunta é o motor conceitual dos estudos de fragmentação, conectividade e efeito de borda. Fahrig <span class="citation" data-cites="fahrig2003">(<a href="../referencias.html#ref-fahrig2003" role="doc-biblioref">2003</a>)</span> demonstrou que a <strong>perda de habitat</strong> (redução da proporção total de habitat na paisagem) explica a maior parte da variação em riqueza e abundância de espécies em paisagens fragmentadas, enquanto a <strong>fragmentação per se</strong> (subdivisão do habitat remanescente em manchas menores e mais isoladas, mantendo a proporção total constante) possui efeitos comparativamente menores e frequentemente ambíguos. Essa distinção entre perda e fragmentação tornou-se uma das contribuições mais influentes da tradição ecológica e será retomada em detalhe no <a href="10-fragmentacao-conectividade.html" class="quarto-xref"><span>Capítulo 10</span></a>.</p>
+<p>A segunda questão investiga <strong>como os distúrbios se propagam em função da estrutura da paisagem</strong>. Incêndios florestais, por exemplo, propagam-se mais rapidamente em paisagens com grande continuidade de vegetação combustível e são retardados por feições não-combustíveis (rios, estradas, áreas úmidas). Doenças de plantas cultivadas dispersam-se preferencialmente ao longo de corredores de monocultura e são contidas por barreiras de vegetação diversificada. Essa atenção à propagação espacial de distúrbios vincula a ecologia da paisagem à ecologia do fogo, à epidemiologia vegetal e à gestão de riscos ambientais.</p>
+<p>Wiens <span class="citation" data-cites="wiens1999">(<a href="../referencias.html#ref-wiens1999" role="doc-biblioref">1999</a>)</span> argumentou que a ecologia da paisagem não é simplesmente “ecologia em grande escala”, mas uma ciência que se distingue pela atenção à <strong>heterogeneidade explícita</strong>. Um estudo populacional convencional pode tratar o habitat como presente ou ausente dentro de uma área de estudo, enquanto a ecologia da paisagem quantifica a área, a forma, o isolamento e a conectividade das manchas de habitat, reconhecendo que esses atributos espaciais afetam taxas de colonização, extinção local, fluxo gênico e persistência metapopulacional de maneiras que não podem ser capturadas por modelos espacialmente implícitos.</p>
+</section>
+<section id="escalas-e-hierarquias" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="escalas-e-hierarquias"><span class="header-section-number">2.4</span> Escalas e hierarquias</h2>
+<p>A questão da escala é possivelmente o tema mais debatido na ecologia da paisagem e será desenvolvida em profundidade no <a href="04-escalas.html" class="quarto-xref"><span>Capítulo 4</span></a>. Para o enquadramento conceitual do presente capítulo, basta explicitar duas propriedades fundamentais.</p>
+<p>A primeira propriedade é a <strong>dependência escalar</strong> dos padrões. O <strong>grão</strong> (<em>grain</em>), a menor unidade resolvível na análise, e a <strong>extensão</strong> (<em>extent</em>), a área total abrangida, definem o domínio de escala de um estudo. Processos ecológicos operam em escalas características, e a detecção de padrões depende da correspondência entre a escala do processo e a escala de observação. Métricas de paisagem calculadas para uma mesma área podem apresentar valores radicalmente diferentes conforme o grão da classificação, fenômeno denominado dependência escalar <span class="citation" data-cites="gustafson1998">(<a href="../referencias.html#ref-gustafson1998" role="doc-biblioref">Gustafson, 1998</a>)</span>.</p>
+<p>A segunda propriedade é a <strong>organização hierárquica</strong> da paisagem. A teoria hierárquica propõe que os sistemas ecológicos são organizados em níveis aninhados, nos quais cada nível opera numa faixa de escalas espaço-temporais característica. Níveis superiores impõem <strong>restrições</strong> (<em>constraints</em>) sobre os inferiores, enquanto os níveis inferiores fornecem os <strong>mecanismos</strong>. O clima regional restringe os tipos de vegetação possíveis numa bacia hidrográfica, enquanto as propriedades do solo local e a competição interespecífica determinam qual comunidade vegetal efetivamente se estabelece num dado sítio. Essa perspectiva obriga o pesquisador a explicitar qual nível hierárquico está sendo analisado e a reconhecer as restrições e mecanismos provenientes dos níveis adjacentes.</p>
+</section>
+<section id="abordagem-integrada" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="abordagem-integrada"><span class="header-section-number">2.5</span> Abordagem integrada</h2>
+<p>A convergência entre as duas tradições (geográfica e ecológica) intensificou-se na última década, impulsionada pelo reconhecimento de que mudanças de uso da terra são simultaneamente um processo social e ecológico, e que nenhuma das tradições isoladamente oferece os instrumentos necessários para compreendê-lo. Wu <span class="citation" data-cites="wu2013">(<a href="../referencias.html#ref-wu2013" role="doc-biblioref">2013</a>)</span> propôs o conceito de <em>Landscape Sustainability Science</em>, no qual a paisagem é a escala na qual decisões sobre uso da terra, conservação e bem-estar humano se materializam, necessitando tanto da quantificação espacial rigorosa (tradição ecológica) quanto do entendimento das forças socioeconômicas e culturais (tradição geográfica).</p>
+<p>No Brasil, a pesquisa em ecologia da paisagem incorpora essa integração de forma crescente. Estudos sobre a Mata Atlântica <span class="citation" data-cites="metzger2009 ribeiro2009">(<a href="../referencias.html#ref-metzger2009" role="doc-biblioref">Metzger et al., 2009</a>; <a href="../referencias.html#ref-ribeiro2009" role="doc-biblioref">Ribeiro et al., 2009</a>)</span> combinam métricas espaciais quantitativas (proporção de habitat, conectividade, área nuclear) com análises de forças motrizes (expansão urbana, legislação ambiental, mercado de commodities), demonstrando que a fragmentação florestal remanescente (8–12% da cobertura original) não é compreensível sem a articulação entre padrão espacial e contexto sociopolítico. A concentração de remanescentes em áreas íngremes e de baixo valor agrícola, por exemplo, é simultaneamente um resultado de forças socioeconômicas (abandono de terras marginais) e um condicionante ecológico (enviesamento ambiental do habitat remanescente).</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Integração na prática
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Uma análise da paisagem que se limite a calcular métricas (área, perímetro, índice de forma) sem vinculá-las a processos ecológicos ou a forças motrizes produz descrições, não conhecimento. A boa prática exige que cada métrica seja justificada pelo processo que se pretende avaliar e interpretada à luz do contexto territorial. O pesquisador deve perguntar não apenas “qual o valor do índice?”, mas “o que esse valor implica para as espécies, os processos hidrológicos e os serviços ecossistêmicos desta paisagem?”.</p>
+</div>
+</div>
+</section>
+<section id="questões-centrais-da-disciplina" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="questões-centrais-da-disciplina"><span class="header-section-number">2.6</span> Questões centrais da disciplina</h2>
+<p>As questões de pesquisa da ecologia da paisagem podem ser agrupadas em cinco eixos, conforme a síntese proposta por Wu e Hobbs <span class="citation" data-cites="wu2004">(<a href="../referencias.html#ref-wu2004" role="doc-biblioref">2004</a>)</span>, que constitui o arcabouço organizador dos capítulos subsequentes deste livro.</p>
+<p>O primeiro eixo trata dos <strong>padrões</strong>, perguntando como se distribui espacialmente a heterogeneidade e como quantificá-la de forma ecologicamente relevante. A resposta a essa pergunta exige métricas espaciais sensíveis aos processos de interesse e dados de cobertura com resolução adequada. O segundo eixo aborda os <strong>processos</strong>, investigando como fluxos de organismos, nutrientes e distúrbios são condicionados pela estrutura espacial, e se existem limiares de proporção ou configuração de habitat abaixo dos quais os processos se degradam abruptamente. O terceiro refere-se à <strong>dinâmica</strong>, examinando como a paisagem muda ao longo do tempo, quais são os mecanismos de mudança (conversão, abandono, intensificação), e se existem estados estáveis alternativos dos quais a paisagem não retorna espontaneamente. O quarto eixo concerne à <strong>escala</strong>, buscando entender como padrões e processos variam entre escalas, como transpor informação entre níveis hierárquicos sem perda de significado, e como lidar com a dependência escalar das métricas. O quinto e último eixo trata da <strong>aplicação</strong>, perguntando como o conhecimento ecológico da paisagem pode informar o planejamento territorial, a conservação da biodiversidade e a restauração de ecossistemas degradados.</p>
+<p>Esses cinco eixos estruturam implicitamente os capítulos seguintes. A Parte I aborda padrões e escalas, a Parte II fornece as ferramentas de quantificação (sensoriamento remoto, SIG, métricas), a Parte III examina processos e dinâmica (fragmentação, conectividade, mudanças de uso), e a Parte IV trata da aplicação em planejamento e gestão territorial.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-fahrig2003" class="csl-entry" role="listitem">
+Fahrig, L. (2003). Effects of habitat fragmentation on biodiversity. <em>Annual Review of Ecology, Evolution, and Systematics</em>, <em>34</em>, 487–515. <a href="https://doi.org/10.1146/annurev.ecolsys.34.011802.132419">https://doi.org/10.1146/annurev.ecolsys.34.011802.132419</a>
+</div>
+<div id="ref-gustafson1998" class="csl-entry" role="listitem">
+Gustafson, E. J. (1998). Quantifying landscape spatial pattern: what is the state of the art? <em>Ecosystems</em>, <em>1</em>(2), 143–156. <a href="https://doi.org/10.1007/s100219900011">https://doi.org/10.1007/s100219900011</a>
+</div>
+<div id="ref-metzger2009" class="csl-entry" role="listitem">
+Metzger, J. P., Martensen, A. C., Dixo, M., Bernacci, L. C., Ribeiro, M. C., Teixeira, A. M. G., &amp; Pardini, R. (2009). Time-lag in biological responses to landscape changes in a highly dynamic Atlantic forest region. <em>Biological Conservation</em>, <em>142</em>(6), 1166–1177. <a href="https://doi.org/10.1016/j.biocon.2009.01.033">https://doi.org/10.1016/j.biocon.2009.01.033</a>
+</div>
+<div id="ref-naveh2000" class="csl-entry" role="listitem">
+Naveh, Z., &amp; Lieberman, A. S. (2000). <em>Landscape Ecology: Theory and Application</em> (2º ed). Springer.
+</div>
+<div id="ref-ribeiro2009" class="csl-entry" role="listitem">
+Ribeiro, M. C., Metzger, J. P., Martensen, A. C., Ponzoni, F. J., &amp; Hirota, M. M. (2009). The Brazilian Atlantic Forest: How much is left, and how is the remaining forest distributed? Implications for conservation. <em>Biological Conservation</em>, <em>142</em>(6), 1141–1153. <a href="https://doi.org/10.1016/j.biocon.2009.02.021">https://doi.org/10.1016/j.biocon.2009.02.021</a>
+</div>
+<div id="ref-risser1984" class="csl-entry" role="listitem">
+Risser, P. G., Karr, J. R., &amp; Forman, R. T. T. (1984). Landscape Ecology: Directions and Approaches. <em>Illinois Natural History Survey Special Publication</em>, <em>2</em>, 1–18.
+</div>
+<div id="ref-troll1939" class="csl-entry" role="listitem">
+Troll, C. (1939). Luftbildplan und <span>ö</span>kologische Bodenforschung: Ihr zweckm<span>ä</span><span>ß</span>iger Einsatz f<span>ü</span>r die wissenschaftliche Erforschung und praktische Erschlie<span>ß</span>ung wenig bekannter L<span>ä</span>nder. <em>Zeitschrift der Gesellschaft f<span>ü</span>r Erdkunde zu Berlin</em>, <em>1939</em>, 241–298.
+</div>
+<div id="ref-turner2015" class="csl-entry" role="listitem">
+Turner, M. G., &amp; Gardner, R. H. (2015). <em>Landscape Ecology in Theory and Practice: Pattern and Process</em> (2º ed). Springer. <a href="https://doi.org/10.1007/978-1-4939-2794-4">https://doi.org/10.1007/978-1-4939-2794-4</a>
+</div>
+<div id="ref-verburg2009" class="csl-entry" role="listitem">
+Verburg, P. H., Steeg, J. van de, Veldkamp, A., &amp; Willemen, L. (2009). From land cover change to land function dynamics: a major challenge to improve land characterization. <em>Journal of Environmental Management</em>, <em>90</em>(3), 1327–1335. <a href="https://doi.org/10.1016/j.jenvman.2008.08.005">https://doi.org/10.1016/j.jenvman.2008.08.005</a>
+</div>
+<div id="ref-wiens1999" class="csl-entry" role="listitem">
+Wiens, J. A. (1999). The science and practice of landscape ecology. Em J. M. Klopatek &amp; R. H. Gardner (Orgs.), <em>Landscape Ecological Analysis: Issues and Applications</em> (p. 371–383). Springer. <a href="https://doi.org/10.1007/978-1-4612-0529-6_16">https://doi.org/10.1007/978-1-4612-0529-6_16</a>
+</div>
+<div id="ref-wu2013" class="csl-entry" role="listitem">
+Wu, J. (2013). Landscape sustainability science: ecosystem services and human well-being in changing landscapes. <em>Landscape Ecology</em>, <em>28</em>(6), 999–1023. <a href="https://doi.org/10.1007/s10980-013-9894-9">https://doi.org/10.1007/s10980-013-9894-9</a>
+</div>
+<div id="ref-wu2004" class="csl-entry" role="listitem">
+Wu, J., &amp; Hobbs, R. (2004). Key issues and research priorities in landscape ecology: an idiosyncratic synthesis. <em>Landscape Ecology</em>, <em>19</em>(1), 1–12. <a href="https://doi.org/10.1023/B:LAND.0000018700.27168.2a">https://doi.org/10.1023/B:LAND.0000018700.27168.2a</a>
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/diegovidalcv\.com\.br\/books\/ciencia-paisagem\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../capitulos/01-introducao.html" class="pagination-link" aria-label="Introdução à Ciência da Paisagem">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução à Ciência da Paisagem</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../capitulos/03-estrutura-paisagem.html" class="pagination-link" aria-label="Estrutura da Paisagem">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Estrutura da Paisagem</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Luiz Diego Vidal Santos, 2026. <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ldvsantos/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Feito com <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

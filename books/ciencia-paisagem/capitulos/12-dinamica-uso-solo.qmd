@@ -1,0 +1,95 @@
+# Dinâmica do Uso e Cobertura do Solo {#sec-dinamica-uso}
+
+## Por que a paisagem muda?
+
+Imagine que você sobrevoa uma região do oeste baiano e observa, de um lado, extensas plantações de soja com pivôs-centrais e, de outro, remanescentes de cerrado nativo. Se pudesse voltar no tempo trinta anos, veria uma paisagem radicalmente diferente, dominada por pastagens extensivas e cerrado contínuo. E se voltasse sessenta anos, encontraria cerrado praticamente intocado. Essa transformação, que converteu milhões de hectares de vegetação nativa em áreas agrícolas ao longo de poucas décadas, é um exemplo de **dinâmica do uso e cobertura do solo**. Entender por que, onde, quando e como essas mudanças ocorrem é uma das questões centrais da Ciência da Paisagem e, simultaneamente, uma das perguntas mais urgentes para a gestão sustentável do território.
+
+O uso do solo refere-se à finalidade humana atribuída a uma porção da superfície terrestre (agricultura, pecuária, moradia, conservação), enquanto a cobertura do solo descreve a condição biofísica observável dessa superfície (floresta, pastagem, solo exposto, área construída). Embora frequentemente usados como sinônimos, os dois conceitos capturam dimensões distintas. Uma mesma cobertura (pastagem) pode corresponder a usos diferentes (pecuária extensiva, área abandonada em regeneração, reserva legal subutilizada), e um mesmo uso (produção agrícola) pode se manifestar em coberturas distintas ao longo do ano (solo exposto após colheita, cultivo em crescimento, palhada de plantio direto). A dinâmica do uso e cobertura do solo trata, portanto, das transformações simultâneas nessas duas dimensões.
+
+## Forças motrizes da mudança
+
+As mudanças no uso e cobertura do solo não ocorrem ao acaso. Elas são impulsionadas por **forças motrizes** (*driving forces*) que podem ser classificadas em cinco grandes categorias, representadas na @fig-forcas-motrizes-lulc.
+
+::: {#fig-forcas-motrizes-lulc}
+```{mermaid}
+%%| fig-width: 8.5
+flowchart TD
+    A["Forças Motrizes de<br>Mudança de Uso do Solo"] --> B["Demográficas<br>crescimento, migração,<br>urbanização"]
+    A --> C["Econômicas<br>preços, mercados,<br>crédito, emprego"]
+    A --> D["Tecnológicas<br>mecanização, irrigação,<br>OGMs, insumos"]
+    A --> E["Institucionais<br>legislação, políticas<br>públicas, posse da terra"]
+    A --> F["Biofísicas<br>clima, relevo, solos,<br>aptidão agrícola"]
+
+    B --> G["Mudança de Uso<br>e Cobertura do Solo"]
+    C --> G
+    D --> G
+    E --> G
+    F --> G
+
+    style A fill:#2E7D32,color:#fff
+    style G fill:#1B5E20,color:#fff
+```
+Cinco categorias de forças motrizes que condicionam as mudanças de uso e cobertura do solo, convergindo para a transformação observada na paisagem.
+:::
+
+A @fig-forcas-motrizes-lulc mostra que a mudança de uso do solo é o resultado da convergência de múltiplas forças que operam simultaneamente e em diferentes escalas. Para compreender intuitivamente o diagrama, considere um exemplo concreto. O desmatamento de uma área de cerrado no Matopiba (região de fronteira agrícola nos estados do Maranhão, Tocantins, Piauí e Bahia) não é explicado por uma única causa, mas pela confluência de fatores demográficos (migração de agricultores do Sul), econômicos (alta no preço internacional da soja), tecnológicos (desenvolvimento de cultivares adaptadas ao cerrado e irrigação por pivô-central), institucionais (fragilidade de fiscalização ambiental e regularização fundiária precária) e biofísicos (topografia plana, solos profundos e clima com estação seca definida que permite mecanização e secagem natural do grão). Nenhum desses fatores, isoladamente, seria suficiente para explicar a conversão. É a interação entre eles que produz a mudança.
+
+As forças motrizes operam em escalas distintas. As **forças proximais** (*proximate causes*) são as ações humanas diretas que alteram a cobertura do solo, como a derrubada de uma área de floresta, a construção de uma estrada ou a implantação de um sistema de irrigação. As **forças subjacentes** (*underlying causes*) são os processos sociais, econômicos e políticos mais amplos que criam as condições para que as ações diretas ocorram, como o crescimento da demanda global por commodities, a valorização fundiária, ou a criação de linhas de crédito para expansão agrícola. A distinção entre forças proximais e subjacentes é análoga à distinção médica entre sintoma e doença. Combater apenas as forças proximais (multar o desmatamento ilegal) sem abordar as subjacentes (ajustar incentivos econômicos e garantir alternativas de renda) tende a ser ineficaz ou a deslocar o problema para outra região, fenômeno conhecido como **vazamento** (*leakage*).
+
+## O ciclo de fronteira agrícola
+
+Um padrão recorrente na dinâmica de uso do solo em regiões tropicais é o **ciclo de fronteira agrícola**, uma sequência típica de transformações da paisagem que se repete com variações regionais em diversas partes do mundo. No caso brasileiro, esse ciclo pode ser descrito em etapas que, embora apresentadas aqui de forma sequencial para fins didáticos, na prática se sobrepõem temporal e espacialmente.
+
+A primeira etapa é a **abertura**, na qual a vegetação nativa é removida, geralmente por corte e queima, para implantação de pastagem extensiva ou culturas de subsistência. Essa etapa é tipicamente realizada por pequenos produtores, posseiros ou projetos de colonização, e resulta numa paisagem com grandes manchas de habitat remanescente intercaladas por clareiras relativamente pequenas. A segunda etapa é a **consolidação**, na qual as áreas abertas se expandem e se conectam, as propriedades se aglutinam por compra ou concentração fundiária, e a paisagem se transforma num mosaico dominado pela matriz antrópica com fragmentos residuais de vegetação nativa. A terceira etapa é a **intensificação**, na qual as áreas consolidadas recebem investimentos em mecanização, irrigação, correção do solo e culturas de alto rendimento (soja, milho, algodão), substituindo a pecuária extensiva por agricultura de precisão. A quarta etapa, quando ocorre, é a **estabilização ou reversão parcial**, na qual a legislação ambiental (Código Florestal), programas de restauração e mudanças de mercado (moratória da soja, certificações ambientais) promovem a regeneração de áreas marginais e a conformação de reservas legais e APPs.
+
+Esse ciclo foi documentado de forma emblemática na Amazônia brasileira, onde o modelo clássico de "espinha de peixe" (desmatamento ao longo de estradas que se ramificam perpendicularmente a partir de rodovias principais) é visível em imagens de satélite e constitui um dos padrões de mudança de paisagem mais estudados do mundo. No Cerrado, o ciclo seguiu uma variante diferente, com conversão direta para agricultura mecanizada em áreas planas (chapadas), sem a fase intermediária de pecuária extensiva que caracterizou a Amazônia.
+
+## Transições de uso do solo e a teoria da transição florestal
+
+A observação de que muitos países passaram por fases de desmatamento seguidas por fases de reflorestamento levou à formulação da **teoria da transição florestal** (*forest transition theory*), proposta por Alexander Mather na década de 1990. Segundo essa teoria, a relação entre desenvolvimento econômico e cobertura florestal segue uma curva em formato de U invertido. Nas fases iniciais de desenvolvimento, a cobertura florestal diminui à medida que as florestas são convertidas para agricultura e extração de madeira. Em algum ponto, a taxa de desmatamento desacelera e eventualmente se inverte, com a cobertura florestal começando a aumentar por regeneração espontânea de terras marginais abandonadas e por reflorestamento ativo.
+
+Compreender essa teoria é importante porque ela sugere que o desmatamento não é um processo irreversível e que, sob certas condições econômicas, tecnológicas e institucionais, as paisagens podem recuperar parte de sua cobertura florestal. Entretanto, a teoria tem limitações significativas. A floresta que retorna (floresta secundária ou plantação comercial) não é ecologicamente equivalente à floresta primária que foi removida, possuindo menor diversidade de espécies, menor estoque de carbono, estrutura simplificada e menor provisão de serviços ecossistêmicos. Além disso, a transição florestal observada em países europeus e no leste dos Estados Unidos ocorreu em contextos socioeconômicos muito diferentes dos da fronteira agrícola tropical contemporânea, e não há garantia de que o mesmo padrão se repetirá nos trópicos.
+
+## Modelagem de mudanças de uso do solo
+
+Para projetar cenários futuros e avaliar o impacto potencial de políticas públicas, cientistas da paisagem desenvolveram **modelos de mudança de uso do solo** (*land use change models*) que simulam computacionalmente as trajetórias de conversão da paisagem ao longo do tempo. Esses modelos variam enormemente em complexidade, escala e abordagem, mas compartilham uma estrutura lógica comum sintetizada na @fig-estrutura-modelo-lulc.
+
+::: {#fig-estrutura-modelo-lulc}
+```{mermaid}
+%%| fig-width: 8.5
+flowchart LR
+    A["Mapa de uso<br>do solo<br>(Tempo 1)"] --> B["Modelo de<br>mudança"]
+    C["Variáveis<br>explicativas<br>(relevo, solos,<br>distância a estradas,<br>mercados)"] --> B
+    D["Taxas e regras<br>de transição<br>(calibradas)"] --> B
+    B --> E["Mapa de uso<br>do solo<br>(Tempo 2<br>simulado)"]
+    E --> F["Validação com<br>mapa real<br>(Tempo 2)"]
+
+    style B fill:#2E7D32,color:#fff
+```
+Estrutura lógica geral de um modelo de mudança de uso do solo, integrando dados espaciais, variáveis explicativas e regras de transição para projetar cenários futuros.
+:::
+
+A @fig-estrutura-modelo-lulc permite visualizar a lógica de um modelo de mudança de uso do solo como uma "máquina de previsão". O modelo recebe como entradas um mapa de uso do solo em um momento inicial (Tempo 1), um conjunto de variáveis que explicam onde as mudanças têm maior probabilidade de ocorrer (distância a estradas, declividade, tipo de solo, proximidade a áreas já desmatadas) e um conjunto de regras ou taxas de transição que definem quanto de cada classe será convertida e para qual outra classe. Processando essas informações, o modelo gera um mapa simulado para uma data futura (Tempo 2). A qualidade do modelo é avaliada comparando o mapa simulado com o mapa real dessa data futura, quando disponível.
+
+Entre os modelos mais utilizados em paisagens brasileiras, destacam-se três famílias. Os **modelos baseados em autômatos celulares**, como o Dinamica EGO [@soares-filho2006], discretizam o território em células (pixels) e aplicam regras de transição que dependem do estado atual de cada célula e de sua vizinhança. São particularmente úteis para simular a expansão espacial do desmatamento, pois capturam o efeito de contágio (áreas próximas a desmatamento recente têm maior probabilidade de serem desmatadas). Os **modelos baseados em agentes** (*agent-based models*) simulam as decisões de atores individuais (agricultores, pecuaristas, assentados) que interagem com o ambiente e entre si, permitindo representar heterogeneidade socioeconômica e comportamental. Os **modelos estatísticos de regressão** utilizam regressão logística, redes neurais ou machine learning para estimar a probabilidade de transição de cada pixel em função de variáveis explanatórias, sem modelar explicitamente os processos decisórios.
+
+Independentemente da abordagem, todos os modelos de mudança de uso do solo enfrentam limitações fundamentais. Eles projetam o futuro com base no passado, assumindo que as relações entre variáveis se mantêm. Mudanças abruptas em políticas públicas (nova legislação ambiental), mercados (colapso de preços de commodities) ou tecnologia (novas cultivares, energia solar em áreas rurais) podem invalidar as projeções. Por isso, os modelos são mais úteis para explorar cenários contrastantes ("o que aconteceria se o desmatamento ilegal fosse eliminado?" vs. "o que aconteceria se a fiscalização fosse reduzida?") do que para prever o futuro com precisão determinística. A modelagem de cenários é aprofundada no @sec-modelagem-cenarios.
+
+## Intensificação vs. expansão
+
+Uma questão central na dinâmica contemporânea do uso do solo é se a crescente demanda por alimentos será atendida por **intensificação** (aumento de produtividade nas áreas já cultivadas) ou por **expansão** (conversão de novas áreas de vegetação nativa). A intensificação agrícola, quando bem conduzida, permite produzir mais por unidade de área (mais quilogramas de grão por hectare) sem necessidade de desmatar novas áreas. Tecnologias como irrigação de precisão, plantio direto, integração lavoura-pecuária-floresta (ILPF), melhoramento genético e agricultura de precisão possibilitaram ganhos expressivos de produtividade no Brasil, especialmente em culturas como soja e milho, onde a produtividade por hectare mais que dobrou nas últimas três décadas.
+
+Entretanto, a relação entre intensificação e conservação não é linear nem automática. O **paradoxo de Jevons** (originalmente formulado para energia, mas aplicável à terra) sugere que o aumento de eficiência pode, paradoxalmente, estimular maior consumo total. Se a intensificação torna a agricultura mais lucrativa, ela pode atrair mais capital e trabalho para o setor, incentivando a expansão para novas áreas em vez de reduzir a pressão sobre as remanescentes. Evidências empíricas mostram que a intensificação agrícola no Cerrado brasileiro foi acompanhada, e não substituída, pela expansão da fronteira agrícola, especialmente nas regiões do Matopiba e do arco do desmatamento amazônico.
+
+A implicação para a Ciência da Paisagem é que a dinâmica do uso do solo não pode ser compreendida apenas em termos biofísicos (aptidão do solo, declividade, clima), mas exige a integração com variáveis socioeconômicas (preços, custos de transporte, estrutura fundiária, acesso a crédito) e institucionais (legislação ambiental, fiscalização, regularização fundiária, mercado de carbono). Essa integração multidimensional é o desafio central da modelagem de mudanças de uso do solo e do planejamento territorial, temas aprofundados nos capítulos subsequentes.
+
+## Aplicação brasileira e o papel do monitoramento
+
+O Brasil desenvolveu um dos sistemas mais avançados do mundo para monitoramento de mudanças de uso e cobertura do solo. O sistema **PRODES** (Projeto de Monitoramento do Desmatamento na Amazônia Legal por Satélite), operado pelo INPE desde 1988, fornece estimativas anuais da taxa de desmatamento por corte raso na Amazônia Legal com base em imagens Landsat. O sistema **DETER** (Detecção de Desmatamento em Tempo Real) complementa o PRODES com alertas quase diários usando imagens de menor resolução espacial mas maior resolução temporal, permitindo ações de fiscalização rápida. O projeto **MapBiomas**, já mencionado no @sec-deteccao-mudancas, produz mapas anuais de uso e cobertura para todo o território brasileiro desde 1985.
+
+Esses sistemas de monitoramento transformaram a dinâmica do uso do solo de um processo difuso e pouco documentado em um fenômeno espacialmente explícito, temporalmente resolvido e publicamente acessível. A disponibilidade de dados de desmatamento em tempo quase real mudou fundamentalmente a dinâmica política da conservação, permitindo que a sociedade, a mídia e os órgãos de fiscalização acompanhem as tendências de conversão de vegetação nativa com transparência sem precedentes. A correlação entre implementação desses sistemas e redução nas taxas de desmatamento na Amazônia (queda de 78% entre 2004 e 2012, parcialmente atribuída à combinação de monitoramento, fiscalização e moratória da soja) ilustra como a informação geográfica pode influenciar a dinâmica real do uso do solo, fechando o ciclo entre diagnóstico e gestão territorial.
+
+::: {.callout-tip}
+## Para aprofundar
+A plataforma MapBiomas (mapbiomas.org) permite explorar interativamente as mudanças de uso e cobertura do solo para qualquer município brasileiro desde 1985. Experimente selecionar seu município e observar as trajetórias de mudança ao longo de quatro décadas. O módulo "Transições" permite visualizar matrizes de transição entre quaisquer dois anos, aplicando os conceitos discutidos no @sec-deteccao-mudancas.
+:::

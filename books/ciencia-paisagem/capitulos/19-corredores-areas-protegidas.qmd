@@ -1,0 +1,78 @@
+# Corredores Ecológicos e Áreas Protegidas {#sec-corredores}
+
+## Ilhas verdes em um mar de atividade humana
+
+Imagine um arquipélago de ilhas oceânicas. Cada ilha abriga espécies únicas, mas se uma ilha for muito pequena ou muito isolada, suas populações se extinguem. As ilhas maiores e mais próximas umas das outras mantêm mais espécies porque indivíduos podem eventualmente nadar ou voar entre elas, "resgatando" populações em declínio. Agora substitua "ilhas" por "fragmentos de floresta" e "oceano" por "áreas agrícolas ou urbanas", e você terá a metáfora que fundamenta toda a política de **áreas protegidas** e **corredores ecológicos** na escala da paisagem.
+
+As áreas protegidas (parques nacionais, reservas biológicas, APAs, RPPNs) são a pedra angular da conservação da biodiversidade. Entretanto, a maioria delas foi criada de forma individual, sem planejamento de rede, frequentemente em áreas de baixo interesse econômico (terras remotas, montanhas íngremes, solos inférteis) e não em áreas de maior riqueza biológica ou maior ameaça. Além disso, mesmo as maiores unidades de conservação são insuficientes para sustentar populações viáveis de grandes predadores, manter processos de migração e dispersão de longa distância, e garantir a adaptação da biota a mudanças climáticas, que exigem deslocamento de espécies ao longo de gradientes altitudinais e latitudinais.
+
+Os **corredores ecológicos** surgiram como resposta a essa limitação. Ao conectar áreas protegidas e remanescentes de vegetação nativa por faixas contínuas ou "stepping stones" de habitat, os corredores restauram parcialmente a conectividade funcional da paisagem, permitindo que organismos se desloquem entre fragmentos, que populações isoladas troquem material genético e que espécies ajustem sua distribuição geográfica em resposta a mudanças ambientais.
+
+## O que é um corredor ecológico?
+
+O termo "corredor ecológico" é usado com significados diferentes em contextos diferentes, o que gera confusão. Para clarificar, é útil distinguir três conceitos relacionados mas distintos.
+
+O **corredor estrutural** é uma faixa física de habitat que conecta duas manchas (por exemplo, uma faixa de mata atlântica de 100 m de largura ligando dois fragmentos florestais). É definido pela geometria da paisagem, independentemente de qual espécie o utiliza. O **corredor funcional** é definido pela perspectiva do organismo. É qualquer rota que permita a movimentação de uma espécie específica entre duas manchas de habitat, podendo coincidir ou não com um corredor estrutural. Para um tucano que voa facilmente sobre uma pastagem de 500 m, a paisagem inteira pode ser funcional. Para uma formiga-de-correição que não cruza 20 m de grama, apenas o corredor estrutural contínuo funciona. O **corredor de paisagem** (*landscape corridor*) é um conceito de planejamento que designa uma região ou faixa do território (tipicamente dezenas de quilômetros) onde se concentram esforços de conservação e restauração para manter ou restaurar a conectividade entre áreas protegidas, integrando terras públicas e privadas, áreas naturais e produtivas.
+
+A @fig-tipos-corredores compara esses conceitos.
+
+::: {#fig-tipos-corredores}
+```{mermaid}
+%%| fig-width: 9
+flowchart TD
+    A["Corredor"] --> B["Estrutural<br>(faixa física<br>de habitat)"]
+    A --> C["Funcional<br>(rota de<br>deslocamento<br>espécie-específica)"]
+    A --> D["De paisagem<br>(região de<br>planejamento<br>multiescalar)"]
+    B --> E["Definido por<br>geometria<br>do mapa"]
+    C --> F["Definido por<br>comportamento<br>e capacidade<br>de dispersão"]
+    D --> G["Definido por<br>política de<br>conservação e<br>restauração"]
+
+    style A fill:#2E7D32,color:#fff
+```
+Três conceitos de corredor ecológico, distinguindo a perspectiva geométrica (estrutural), biológica (funcional) e de gestão (paisagem).
+:::
+
+A @fig-tipos-corredores evidencia que avaliar se um corredor "funciona" depende de definir "funciona para quê e para quem". Um corredor ripário de 30 m de largura ao longo de um rio pode ser estruturalmente contínuo, funcional para aves de sub-bosque e invertebrados aquáticos, mas completamente ineficaz para uma onça-pintada que necessita de faixas florestais de pelo menos 200 m de largura para se deslocar sem estresse. Inversamente, o mesmo corredor pode ser excessivo para espécies que não o utilizam. A **espécie focal** para a qual o corredor é desenhado determina, portanto, sua largura mínima, sua composição vegetal, a tolerância a lacunas e a necessidade de habitats de passagem (*stepping stones*).
+
+## Dimensionamento de corredores
+
+A largura de um corredor ecológico determina sua funcionalidade. Corredores estreitos sofrem intensamente de **efeito de borda**, o mesmo fenômeno que degrada as margens dos fragmentos. Em uma faixa florestal de 50 m de largura, toda a faixa pode estar sob influência de borda (luminosidade elevada, temperatura mais alta, umidade mais baixa, maior exposição a vento e ruído), sem nenhuma área de interior florestal. Para espécies sensíveis que dependem de condições de interior (aves de sub-bosque, anfíbios de serapilheira, epífitas), esse corredor é um "corredor de borda" que não oferece habitat adequado para travessia.
+
+A recomendação geral na literatura é que corredores funcionais para vertebrados terrestres devem ter largura mínima de **100 a 200 m**, e preferencialmente mais de 500 m quando o objetivo é sustentar populações residentes dentro do próprio corredor (não apenas permitir travessia). Para espécies dispersoras de sementes (aves frugívoras, morcegos), corredores de 50 a 100 m podem ser suficientes. Para grandes mamíferos, larguras de 500 m a 1 km ou mais são recomendadas. A legislação brasileira de APPs define larguras mínimas de vegetação ripária (30 m para rios de até 10 m de largura, até 500 m para rios com mais de 600 m), que constituem corredores legais mas cuja funcionalidade ecológica varia amplamente com o grupo taxonômico de interesse.
+
+## Áreas protegidas como nós da rede
+
+As **áreas protegidas** formam os **nós** da rede de conservação na paisagem, enquanto os corredores formam as **ligações** (*links*). A efetividade do sistema de áreas protegidas depende não apenas da área total protegida, mas de sua cobertura (quais ecossistemas são representados), sua complementaridade (as unidades protegem conjuntos diferentes de espécies) e sua conectividade (as unidades são acessíveis umas às outras por rotas de dispersão).
+
+No Brasil, o **Sistema Nacional de Unidades de Conservação** (SNUC, Lei 9.985/2000) organiza as unidades de conservação em dois grupos. As unidades de **proteção integral** (parques nacionais, estações ecológicas, reservas biológicas, monumentos naturais, refúgios de vida silvestre) proíbem o uso direto dos recursos naturais, sendo dedicadas exclusivamente à preservação e pesquisa. As unidades de **uso sustentável** (APAs, ARIEs, florestas nacionais, reservas extrativistas, reservas de desenvolvimento sustentável, RPPNs) permitem algum nível de uso dos recursos, compatibilizando conservação com atividades econômicas de baixo impacto.
+
+A @tbl-desafios-aps sintetiza os principais desafios das áreas protegidas na perspectiva da paisagem.
+
+| Desafio | Descrição | Implicação para a paisagem |
+|:---|:---|:---|
+| Insularização | UCs cercadas por usos incompatíveis, sem zona de amortecimento funcional | Perda de espécies por isolamento, efeito de borda intenso |
+| Sub-representação | Biomas e ecossistemas desproporcionalmente protegidos | Lacunas de conservação no Cerrado, Caatinga e Pampa |
+| Inadequação climática | Localização fixa vs. distribuição dinâmica das espécies sob mudança climática | Espécies migram para fora dos limites da UC |
+| Pressão antrópica no entorno | Desmatamento, expansão urbana, infraestrutura nas adjacências | Degradação funcional mesmo com proteção legal |
+| Gestão limitada | Falta de plano de manejo, equipe insuficiente, recursos escassos | Proteção apenas no papel, sem efetividade real |
+
+: Principais desafios das áreas protegidas brasileiras na perspectiva da ecologia da paisagem. {#tbl-desafios-aps .striped .hover}
+
+A @tbl-desafios-aps revela que a mera criação de uma área protegida não garante sua funcionalidade. A insularização é particularmente grave quando a UC é cercada por paisagens hostis (monocultura, pastagem degradada, expansão urbana) que bloqueiam a conectividade e intensificam o efeito de borda. A inadequação climática é um desafio emergente. Se o clima nos limites de um parque nacional se torna mais quente e seco, as espécies que ele protege precisam se deslocar para regiões mais altas ou mais frias, mas se não houver corredores conectando o parque a essas regiões, as espécies ficam "presas" em condições cada vez mais inadequadas. Essa ameaça reforça a urgência de pensar a conservação não como um conjunto de ilhas protegidas, mas como uma **rede** de áreas conectadas por corredores que permitam a adaptação da biota às mudanças ambientais.
+
+## Experiências brasileiras de corredores
+
+O Brasil implementou (ou está implementando) várias iniciativas de corredores ecológicos de grande escala. O **Corredor Central da Mata Atlântica** (CCMA), no sul da Bahia e norte do Espírito Santo, conecta remanescentes florestais de uma das regiões mais ricas e ameaçadas do planeta, utilizando uma combinação de UCs, RPPNs, matas ciliares, cacau-cabruca (sistema agroflorestal tradicional onde o cacau é cultivado sob sombra de árvores nativas) e áreas em regeneração. O **Corredor Ecológico do Espinhaço**, em Minas Gerais, busca conectar áreas de cerrado e campos rupestres ao longo da Serra do Espinhaço. Na Amazônia, corredores são propostos para conectar grandes UCs e terras indígenas, que já formam um mosaico de proteção de dezenas de milhões de hectares.
+
+Essas experiências demonstram que a implementação de corredores em paisagens reais é muito mais complexa do que a teoria sugere. Os corredores atravessam propriedades privadas com usos produtivos, comunidades com necessidades econômicas, estradas e infraestrutura que fragmentam fisicamente a paisagem, e jurisdições administrativas diferentes (municípios, estados, governo federal). A viabilidade de um corredor depende, portanto, não apenas de sua lógica ecológica, mas de sua aceitação social, de incentivos econômicos (PSA, mercado de carbono, CRA), de instrumentos legais (Código Florestal, SNUC, zoneamentos) e de governança participativa que envolva todos os atores da paisagem.
+
+## Espécies focais e desenho de redes
+
+O conceito de **espécies focais** (*focal species*) oferece uma abordagem prática para dimensionar e avaliar redes de áreas protegidas e corredores. Em vez de tentar conservar todas as espécies simultaneamente (tarefa impossível e mal definida), seleciona-se um conjunto pequeno de espécies representativas de diferentes categorias de sensibilidade e escalas de resposta (conforme a @tbl-sensibilidade no @sec-biodiversidade). Se a rede de conservação satisfaz os requisitos da espécie mais exigente de cada grupo funcional (a que precisa de mais área, mais conectividade, menor efeito de borda), ela provavelmente satisfará os requisitos das demais espécies do mesmo grupo.
+
+A onça-pintada, por exemplo, é frequentemente usada como espécie focal para grandes mamíferos em paisagens tropicais, porque sua área de vida é extensa (50–200 km²), ela é sensível à fragmentação, depende de conectividade entre manchas grandes e evita áreas abertas e urbanizadas. Uma rede de conservação que sustenta populações viáveis de onça-pintada provavelmente sustenta também populações de outras espécies de topo de cadeia e de mesovertebrados. De forma complementar, espécies com baixa mobilidade (anfíbios, répteis, invertebrados de serapilheira) são usadas como focais para avaliar a funcionalidade local de corredores estreitos, pois se um corredor permite a dispersão de um sapo-de-chifre, ele certamente permite a dispersão de uma jaguatirica.
+
+::: {.callout-tip}
+## Para aprofundar
+A teoria de grafos, apresentada brevemente no @sec-fragmentacao, é a ferramenta matemática mais rigorosa para avaliar a conectividade de redes de áreas protegidas. Cada UC ou fragmento de habitat é um **nó** do grafo, e cada conexão potencial (corredor, stepping stone, rota de dispersão) é uma **aresta**. Métricas de grafo como o **Índice Integral de Conectividade** (IIC) e o **Índice de Probabilidade de Conectividade** (PC) permitem quantificar a importância relativa de cada nó e cada aresta para a conectividade global da rede, identificando quais áreas protegidas são "pontes" críticas e cuja perda fragmentaria o sistema inteiro. O software Conefor implementa essas análises e é gratuito.
+:::

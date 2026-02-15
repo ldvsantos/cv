@@ -53,6 +53,11 @@ jobs:
           cd books/bioengenharia-solos
           quarto render
 
+      - name: Render Book - Ciência da Paisagem
+        run: |
+          cd books/ciencia-paisagem
+          quarto render
+
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
 
@@ -60,6 +65,8 @@ jobs:
         run: |
           mkdir -p _site/books/bioengenharia-solos
           cp -r books/bioengenharia-solos/_book/* _site/books/bioengenharia-solos/
+          mkdir -p _site/books/ciencia-paisagem
+          cp -r books/ciencia-paisagem/_book/* _site/books/ciencia-paisagem/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

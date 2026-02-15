@@ -1,0 +1,120 @@
+# Métricas da Paisagem {#sec-metricas}
+
+## Por que quantificar a paisagem?
+
+A descrição visual de uma paisagem ("muitos fragmentos pequenos", "pouca floresta", "manchas isoladas") é insuficiente para a ciência e para o planejamento territorial. A quantificação da paisagem por meio de **métricas** (*landscape metrics*) permite comparações objetivas entre paisagens de regiões distintas, entre datas diferentes para uma mesma paisagem e entre cenários alternativos de uso do solo, fornecendo a base numérica para diagnósticos, monitoramento e tomada de decisão. As métricas traduzem a estrutura da paisagem (composição e configuração, conforme definidas no @sec-estrutura-paisagem) em números que podem ser submetidos a análises estatísticas, correlacionados a variáveis ecológicas (riqueza de espécies, taxa de extinção, fluxo gênico) e incorporados a modelos preditivos de cenários futuros.
+
+O desenvolvimento de métricas da paisagem acelerou-se com a publicação do software **FRAGSTATS** [@mcgarigal2012], que consolidou dezenas de índices num ambiente computacional acessível e se tornou o padrão de facto para análise quantitativa da paisagem. Contudo, a disponibilidade de mais de 100 métricas gerou o risco de uso indiscriminado, no qual índices são calculados e reportados sem justificativa ecológica, fenômeno criticado por Li e Wu [-@li2004] como "abuso de métricas" (*metric misuse*). A seleção criteriosa de métricas, guiada pela pergunta de pesquisa e pelo processo ecológico de interesse, é tão importante quanto o cálculo em si.
+
+## Níveis de análise
+
+As métricas da paisagem são calculadas em três níveis hierárquicos, cada um respondendo a perguntas de escala diferente. O **nível da mancha** (*patch level*) quantifica atributos individuais de cada fragmento (área, perímetro, índice de forma, distância ao vizinho mais próximo, área nuclear). Esse nível permite identificar fragmentos-chave para a conservação (os maiores, os mais compactos, os mais conectados) e avaliar a viabilidade individual de cada habitat. O **nível da classe** (*class level*) agrega métricas de todas as manchas pertencentes a um mesmo tipo de cobertura (número de manchas, área total, área média, índice de agregação), respondendo a perguntas como "qual o grau de fragmentação da floresta nesta paisagem?". O **nível da paisagem** (*landscape level*) sintetiza a estrutura de todas as classes conjuntamente (diversidade de Shannon, equabilidade, contagion, proporção total de borda), respondendo a perguntas como "quão heterogênea é esta paisagem no seu conjunto?". A @fig-niveis-metricas esquematiza essa hierarquia.
+
+::: {#fig-niveis-metricas}
+```{mermaid}
+%%| fig-width: 8
+flowchart TD
+    A["Mapa de uso e cobertura"] --> B["Nível da mancha<br>Atributos individuais"]
+    A --> C["Nível da classe<br>Agregação por tipo de cobertura"]
+    A --> D["Nível da paisagem<br>Síntese global"]
+    B --> E["Área, perímetro,<br>forma, área nuclear"]
+    C --> F["Nº manchas, área total,<br>área média, agregação"]
+    D --> G["Diversidade, equabilidade,<br>contagion, borda total"]
+```
+Três níveis hierárquicos de cálculo de métricas da paisagem, mostrando as saídas típicas de cada nível.
+:::
+
+A @fig-niveis-metricas evidencia que a escolha do nível de análise depende da pergunta de pesquisa. Um estudo que visa priorizar fragmentos individuais para restauração operará predominantemente no nível da mancha (identificando fragmentos com maior área nuclear ou maior potencial de conexão). Um estudo que compara o grau de fragmentação florestal entre bacias hidrográficas operará no nível da classe (comparando NP, AREA_MN e PLAND de floresta entre bacias). Um estudo que avalia o efeito da heterogeneidade composicional sobre a provisão de serviços ecossistêmicos operará no nível da paisagem (correlacionando SHDI e equabilidade com indicadores de polinização, controle de pragas ou regulação hídrica). Os três níveis são complementares, e análises completas frequentemente calculam métricas em todos os níveis para compor um diagnóstico multinível da estrutura da paisagem.
+
+## Métricas de composição
+
+As métricas de composição descrevem **o que existe** na paisagem em termos de tipos e proporções. São as mais simples computacionalmente e frequentemente as mais informativas ecologicamente, especialmente a proporção de habitat.
+
+A **proporção de habitat** (*PLAND* ou *percentage of landscape*) é a fração da paisagem ocupada por uma classe específica. É a métrica mais utilizada em ecologia da paisagem e a que melhor prediz a riqueza e a abundância de espécies na maioria dos estudos empíricos [@fahrig2003], explicando tipicamente mais variação do que qualquer métrica de configuração isolada.
+
+$$
+PLAND_i = \frac{\sum_{j=1}^{n} a_{ij}}{A} \times 100
+$$
+
+Na equação, $a_{ij}$ é a área da mancha $j$ da classe $i$ e $A$ é a área total da paisagem. Um PLAND de 30% para floresta indica que 30% da paisagem é coberta por floresta, independentemente de como esses 30% estão distribuídos no espaço (um bloco contíguo ou centenas de fragmentos dispersos). A **riqueza de classes** (*PR*, *patch richness*) conta o número de tipos de cobertura distintos presentes na paisagem, expressando sua diversidade composicional. O **índice de diversidade de Shannon** (*SHDI*) pondera a riqueza pela equabilidade das proporções, distinguindo paisagens com muitas classes em proporções equilibradas (alto SHDI) de paisagens com muitas classes mas dominadas por uma delas (baixo SHDI).
+
+$$
+SHDI = -\sum_{i=1}^{m} p_i \cdot \ln(p_i)
+$$
+
+Na equação, $p_i$ é a proporção da paisagem ocupada pela classe $i$ e $m$ é o número de classes. O SHDI é zero quando a paisagem possui apenas uma classe e atinge seu valor máximo ($\ln(m)$) quando todas as classes possuem proporções iguais. Em paisagens agrícolas do Brasil, valores típicos de SHDI variam de 0,5 (monocultura dominante) a 2,0 (agricultura diversificada com fragmentos florestais, corpos d'água e áreas urbanas).
+
+## Métricas de configuração
+
+As métricas de configuração descrevem **como os elementos estão organizados** no espaço. São mais complexas, mais sensíveis à escala (conforme demonstrado no @sec-escalas) e, em geral, mais difíceis de interpretar ecologicamente do que as métricas de composição.
+
+O **número de manchas** (*NP*, *number of patches*) indica o grau de subdivisão de uma classe. A relação combinada entre NP e PLAND distingue paisagens com a mesma proporção de habitat mas graus diferentes de fragmentação. Duas paisagens com PLAND de 30% para floresta mas NP de 10 e 500, respectivamente, são radicalmente diferentes em termos de tamanho médio dos fragmentos, comprimento de bordas e conectividade. A **área média de mancha** (*AREA_MN*) e o **coeficiente de variação da área** (*AREA_CV*) descrevem a distribuição de tamanhos dos fragmentos. Paisagens com AREA_CV alto possuem distribuição desigual (poucos fragmentos grandes e muitos pequenos), o que pode ser ecologicamente favorável se os fragmentos grandes sustentam populações-fonte.
+
+O **índice de forma** (*SHAPE*) compara o perímetro de cada mancha ao perímetro de uma forma de referência (quadrado para mapas raster) de mesma área.
+
+$$
+SHAPE = \frac{p_{ij}}{min(p_{ij})} = \frac{p_{ij}}{4\sqrt{a_{ij}}}
+$$
+
+Na equação (para mapas raster), $p_{ij}$ é o perímetro e $a_{ij}$ é a área da mancha. Valores de SHAPE iguais a 1 correspondem a quadrados perfeitos. Valores crescentes indicam formas progressivamente mais alongadas, irregulares ou recortadas, com maior proporção de borda. Em paisagens de Mata Atlântica, fragmentos florestais remanescentes são tipicamente irregulares (SHAPE_MN entre 1,5 e 3,0), refletindo a influência da topografia (vertentes, vales) e do histórico de uso (desmatamento seletivo em áreas planas, preservação em áreas íngremes).
+
+## Métricas de área nuclear
+
+A **área nuclear** (*CORE*) é a porção interior da mancha que se encontra além de uma distância de borda especificada (*edge depth*). A área nuclear é ecologicamente mais significativa que a área total para espécies sensíveis a efeitos de borda (alteração microclimática, invasão por espécies generalistas, aumento de predação), pois representa o habitat interior efetivamente funcional.
+
+$$
+CORE_{ij} = a_{ij} - e_{ij}(d)
+$$
+
+Na equação, $e_{ij}(d)$ é a área da faixa de borda com largura $d$ metros, calculada como a zona dentro do fragmento que está a uma distância inferior a $d$ de qualquer limite externo. Em florestas tropicais, são comumente utilizados valores de $d$ entre 50 e 100 m, com base nos estudos de efeito de borda do Projeto Dinâmica Biológica de Fragmentos Florestais (PDBFF) na Amazônia e em fragmentos de Mata Atlântica [@haddad2015]. Uma mancha de 10 ha com forma circular tem aproximadamente 3,9 ha de área nuclear (para $d$ = 100 m), enquanto uma mancha de mesma área com forma alongada (razão comprimento/largura de 5:1) tem apenas 0,4 ha de área nuclear, evidenciando a interação entre tamanho, forma e funcionalidade ecológica. A @tbl-metricas-selecionadas apresenta uma seleção de métricas com suas siglas, níveis e significados.
+
+| Métrica | Sigla | Nível | O que mede |
+|:---|:---|:---|:---|
+| Proporção de habitat | PLAND | Classe | Quantidade de habitat (%) |
+| Número de manchas | NP | Classe | Grau de subdivisão |
+| Área média | AREA_MN | Classe | Tamanho típico dos fragmentos |
+| Índice de forma | SHAPE_MN | Classe | Regularidade dos fragmentos |
+| Área nuclear total | TCA | Classe | Habitat interior funcional |
+| Distância ao vizinho mais próximo | ENN_MN | Classe | Isolamento médio |
+| Índice de proximidade | PROX_MN | Classe | Conectividade local |
+| Diversidade de Shannon | SHDI | Paisagem | Heterogeneidade composicional |
+| Índice de contagion | CONTAG | Paisagem | Agregação das classes |
+
+: Seleção de métricas da paisagem com sigla, nível de análise e significado ecológico. Métricas com sufixo _MN indicam médias ponderadas pela mancha. {#tbl-metricas-selecionadas .striped .hover}
+
+A @tbl-metricas-selecionadas apresenta nove métricas que cobrem as principais dimensões da estrutura da paisagem (composição, forma, área nuclear, isolamento, diversidade). Essas métricas não são independentes entre si, por exemplo, PLAND e NP são parcialmente correlacionadas (mais fragmentação geralmente implica menor PLAND por fragmento), e ENN_MN e PROX_MN capturam dimensões complementares do isolamento. A seleção de um subconjunto parcimonioso e de baixa redundância é discutida na seção "Uso e abuso de métricas" adiante.
+
+## Métricas de isolamento e proximidade
+
+O isolamento de uma mancha é quantificado pela **distância euclidiana ao vizinho mais próximo** (*ENN*, *Euclidean Nearest-Neighbor Distance*), que mede a distância borda-a-borda entre cada mancha e a mancha mais próxima da mesma classe. Valores elevados de ENN indicam manchas isoladas, com menor probabilidade de receber colonizadores e menor fluxo gênico. Valores baixos indicam manchas agregadas, potencialmente conectadas por dispersão direta.
+
+O ENN, contudo, considera apenas o vizinho mais próximo e ignora o restante da vizinhança. O **índice de proximidade** (*PROX*) estende o conceito de isolamento ao considerar todas as manchas da mesma classe dentro de um raio de busca definido, ponderando pelo tamanho e pela distância.
+
+$$
+PROX_{ij} = \sum_{s=1}^{n} \frac{a_{ijs}}{h_{ijs}^2}
+$$
+
+Na equação, $a_{ijs}$ é a área e $h_{ijs}$ é a distância borda-a-borda da mancha $s$ (dentro do raio de busca) à mancha focal $j$. Valores elevados de PROX indicam que a mancha focal está cercada por manchas grandes e próximas, condição favorável à conectividade e à persistência de metapopulações. Valores baixos indicam que a mancha está isolada ou cercada apenas por manchas muito pequenas e distantes. O raio de busca deve ser definido com base na capacidade de dispersão da espécie focal, reforçando o princípio de que métricas de paisagem devem ser parametrizadas pelo processo ecológico de interesse.
+
+## Uso e abuso de métricas
+
+Li e Wu [-@li2004] alertaram para quatro armadilhas no uso de métricas da paisagem que, se não forem reconhecidas e mitigadas, comprometem a validade das análises.
+
+A primeira armadilha é a **redundância**. Muitas métricas são altamente correlacionadas (por exemplo, NP e PD, AREA_MN e AREA_CV, PROX e ENN) e o cálculo de dezenas de índices produz informação repetida que infla artificialmente a aparência de completude analítica. Análises de correlação ou componentes principais devem preceder a seleção para identificar grupos de métricas redundantes e selecionar um representante de cada grupo. Uuemaa et al. [-@uuemaa2009] demonstraram que 6–8 métricas são tipicamente suficientes para capturar mais de 90% da variância na estrutura da paisagem.
+
+A segunda armadilha é a **dependência escalar**, já discutida no @sec-escalas. Métricas calculadas em grãos diferentes não são diretamente comparáveis, e a sensibilidade à escala varia entre métricas (NP é altamente sensível, PLAND é relativamente estável, SHDI é moderadamente sensível).
+
+A terceira armadilha é a **ausência de significado ecológico** quando métricas são calculadas sem hipótese sobre o processo de interesse. Calcular 50 métricas e buscar correlações post hoc com dados de biodiversidade é uma prática estatisticamente inflacionária e ecologicamente vazia, pois não permite distinguir causalidade de correlação espúria.
+
+A quarta armadilha é a **sensibilidade a erros de classificação**, pois manchas pequenas erroneamente classificadas inflam o número de fragmentos e distorcem métricas de forma e isolamento, como discutido no @sec-uso-cobertura.
+
+::: {.callout-tip}
+## Boas práticas na seleção de métricas
+A seleção de métricas deve seguir três princípios. Primeiro, cada métrica deve ser justificada por um processo ecológico específico (PLAND para disponibilidade de habitat, ENN para isolamento, CORE para funcionalidade interior, PROX para contexto de vizinhança). Segundo, o conjunto selecionado deve ser parcimonioso (5 a 10 métricas) e de baixa redundância, verificado por análise de correlação. Terceiro, a sensibilidade à escala e aos erros de classificação deve ser avaliada por análise de sensibilidade [@gustafson1998].
+:::
+
+## Software para cálculo de métricas
+
+O software FRAGSTATS [@mcgarigal2012] permanece como referência para cálculo de métricas em rasters categóricos, com interface gráfica e mais de 100 métricas implementadas. Alternativas de código aberto incluem o pacote **landscapemetrics** em R (compatível com o tidyverse, totalmente reprodutível, com funções para verificação e visualização de métricas), o plugin **LecoS** em QGIS (integrado à interface de geoprocessamento), o módulo **r.li** do GRASS GIS (cálculo eficiente para grandes rasters em ambiente multiescalar) e a biblioteca **PyLandStats** em Python (integrada com GeoPandas, NumPy e rasterio).
+
+A convergência para plataformas em nuvem (Google Earth Engine, Microsoft Planetary Computer) permite calcular métricas para milhares de paisagens simultaneamente, viabilizando estudos macro-ecológicos que relacionam estrutura da paisagem a variáveis climáticas, socioeconômicas e de biodiversidade em escala continental. A implementação de métricas em GEE requer codificação customizada (não há pacote nativo de métricas de paisagem), mas oferece acesso direto a catálogos petabyte-escala de dados classificados (MapBiomas, ESA WorldCover, Copernicus Global Land Cover).

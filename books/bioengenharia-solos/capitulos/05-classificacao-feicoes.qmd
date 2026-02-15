@@ -2,40 +2,54 @@
 
 ## Importância da Classificação
 
-![Visão aérea de feições erosivas — o mapeamento por RPAS permite identificar e classificar ravinas com precisão espacial.](../img/foto_aerea.png){#fig-foto-aerea fig-alt="Foto aérea de feições erosivas" width="85%"}
+A classificação precisa das feições erosivas é o primeiro passo para o dimensionamento de intervenções de bioengenharia. Sem uma classificação rigorosa, corre-se o risco de subdimensionar o tratamento (aplicar uma solução simples a um problema complexo, resultando em falha) ou de superdimensioná-lo (gastar recursos desnecessários com técnicas sofisticadas onde uma solução simples bastaria). Uma ravina de cabeceira com 0,5 m de profundidade demanda técnicas completamente diferentes de uma voçoroca com 8 m de profundidade e contribuição do lençol freático, embora ambas sejam "feições erosivas".
 
-A classificação precisa das feições erosivas é o primeiro passo para o dimensionamento de intervenções de bioengenharia. Uma ravina de cabeceira demanda técnicas diferentes de uma voçoroca com contribuição do lençol freático.
+O mapeamento das feições erosivas pode ser realizado por diferentes métodos, desde o reconhecimento visual em campo até o uso de tecnologias de sensoriamento remoto. A @fig-foto-aerea demonstra a capacidade dos sistemas RPAS (Remotely Piloted Aircraft Systems, popularmente chamados drones) para identificar e mapear feições erosivas com resolução espacial centimétrica.
+
+![Visão aérea de feições erosivas — o mapeamento por RPAS permite identificar e classificar ravinas com precisão espacial centimétrica.](../img/foto_aerea.png){#fig-foto-aerea fig-alt="Foto aérea de feições erosivas" width="85%"}
+
+A partir de imagens como a da @fig-foto-aerea, é possível extrair informações geométricas detalhadas (largura, profundidade, comprimento, área da seção transversal) que alimentam os sistemas de classificação e orientam a seleção de técnicas de bioengenharia.
 
 ## Elementary Gully Classification (EGC)
 
-O sistema **Elementary Gully Classification** permite classificar feições erosivas com base em suas características geométricas e hidráulicas, utilizando dados obtidos por levantamento topográfico ou sensoriamento remoto (drone/VANT).
+O sistema **Elementary Gully Classification** (EGC) é uma abordagem sistemática que permite classificar feições erosivas com base em suas características geométricas e hidráulicas, utilizando dados obtidos por levantamento topográfico convencional, GNSS de precisão ou sensoriamento remoto (drone/VANT). A vantagem do EGC é fornecer critérios quantitativos e objetivos para distinguir entre classes de feições, substituindo classificações subjetivas baseadas apenas na impressão visual do observador.
 
 ### Parâmetros Geométricos
 
-| Parâmetro | Símbolo | Descrição |
-|-----------|---------|-----------|
-| Largura | $W$ | Distância entre bordas (m) |
-| Profundidade | $D$ | Distância vertical da borda ao fundo (m) |
-| Comprimento | $L$ | Extensão longitudinal (m) |
-| Área da seção | $A_s$ | Área da seção transversal (m²) |
-| Razão W/D | — | Indicador da forma da seção |
-| Declividade do fundo | $S_f$ | Gradiente longitudinal (%) |
+Para classificar uma feição erosiva pelo EGC, é necessário medir seis parâmetros fundamentais, descritos na @tbl-parametros. Esses parâmetros podem ser obtidos tanto em campo (com trena, nível óptico ou estação total) quanto a partir do modelo digital de superfície gerado por levantamento com drone.
+
+| Parâmetro | Símbolo | Descrição | Como medir |
+|-----------|---------|-----------|------------|
+| Largura | $W$ | Distância entre bordas (m) | Trena ou perfil transversal do MDS |
+| Profundidade | $D$ | Distância vertical da borda ao fundo (m) | Mira topográfica ou diferença altimétrica do MDS |
+| Comprimento | $L$ | Extensão longitudinal (m) | Trena ou polyline sobre ortomosaico |
+| Área da seção | $A_s$ | Área da seção transversal (m²) | Cálculo por integração do perfil |
+| Razão W/D | — | Indicador da forma da seção (V, U ou trapezoidal) | Divisão de W por D |
+| Declividade do fundo | $S_f$ | Gradiente longitudinal (%) | Nível óptico ou perfil longitudinal do MDT |
 
 : Parâmetros geométricos para classificação de feições erosivas. {#tbl-parametros .striped}
 
+A razão W/D é particularmente informativa. Feições com W/D < 1 (mais profundas que largas) indicam erosão concentrada ativa com aprofundamento dominante, enquanto feições com W/D > 3 (mais largas que profundas) sugerem alargamento por desabamento das paredes, frequentemente associado à contribuição do lençol freático. Essa distinção orienta a seleção de técnicas: feições profundas e estreitas respondem bem a paliçadas e check-dams, enquanto feições largas e rasas demandam tratamento de paredes (retaludamento, biomantas, revegetação).
+
 ### Classificação por Dimensões
 
-| Classe | Profundidade | Largura | Área de seção |
-|--------|-------------|---------|---------------|
-| Sulco | < 0,3 m | < 0,3 m | < 0,09 m² |
-| Ravina pequena | 0,3–1,0 m | 0,3–1,0 m | 0,09–1,0 m² |
-| Ravina média | 1,0–3,0 m | 1,0–5,0 m | 1,0–15 m² |
-| Ravina grande | 3,0–5,0 m | 5,0–15 m | 15–75 m² |
-| Voçoroca | > 5,0 m | > 15 m | > 75 m² |
+A @tbl-dimensoes apresenta os critérios dimensionais para cada classe de feição erosiva. Os limites entre classes não são arbitrários; refletem transições nos processos dominantes e, consequentemente, nas técnicas de controle recomendadas.
 
-: Classificação de feições erosivas por dimensões. {#tbl-dimensoes .striped .hover}
+| Classe | Profundidade | Largura | Área de seção | Processo dominante |
+|--------|-------------|---------|---------------|-------------------|
+| Sulco | < 0,3 m | < 0,3 m | < 0,09 m² | Escoamento difuso concentrado |
+| Ravina pequena | 0,3–1,0 m | 0,3–1,0 m | 0,09–1,0 m² | Escoamento concentrado com incisão |
+| Ravina média | 1,0–3,0 m | 1,0–5,0 m | 1,0–15 m² | Escoamento concentrado + solapamento |
+| Ravina grande | 3,0–5,0 m | 5,0–15 m | 15–75 m² | Múltiplos processos superficiais |
+| Voçoroca | > 5,0 m | > 15 m | > 75 m² | Superficial + subsuperficial + gravitacional |
+
+: Classificação de feições erosivas por dimensões e processo dominante. {#tbl-dimensoes .striped .hover}
 
 ## Levantamento com VANT (Drone)
+
+O uso de **Veículos Aéreos Não Tripulados** (VANT/drone) revolucionou o levantamento de feições erosivas nas últimas duas décadas. Antes dos drones, o mapeamento detalhado de ravinas e voçorocas exigia levantamentos topográficos de campo laboriosos, custosos e, em muitos casos, perigosos (trabalhar dentro de voçorocas ativas envolve risco de desabamento). Com os drones, é possível obter modelos tridimensionais de alta resolução a partir de sobrevoos de poucos minutos, sem expor operadores a riscos.
+
+As imagens a seguir ilustram dois aspectos complementares do levantamento. A @fig-ravina-detalhe mostra o detalhe de uma ravina em resolução que permite medir os parâmetros geométricos da @tbl-parametros diretamente no modelo digital, enquanto a @fig-perfil-feicoes revela os horizontes do solo expostos pela erosão, informação essencial para dimensionar a profundidade de ancoragem das estruturas de bioengenharia.
 
 ::: {layout-ncol=2}
 ![Detalhe de ravina — parâmetros geométricos podem ser medidos em campo ou pelo modelo digital gerado por drone.](../img/ravina_detalhe.jpg){#fig-ravina-detalhe fig-alt="Detalhe de ravina em solo tropical"}
@@ -43,15 +57,15 @@ O sistema **Elementary Gully Classification** permite classificar feições eros
 ![Perfil de solo exposto pela erosão — a análise dos horizontes auxilia no dimensionamento das intervenções.](../img/perfil_solo_feicoes.jpg){#fig-perfil-feicoes fig-alt="Perfil de solo exposto por erosão"}
 :::
 
-O uso de **Veículos Aéreos Não Tripulados** (VANT/drone) revolucionou o levantamento de feições erosivas ao permitir a geração de modelos digitais de superfície (MDS) com resolução inferior a 5 cm, o cálculo volumétrico de perda de solo por diferença de MDSs multitemporais, o mapeamento de áreas instáveis e cabeceiras ativas, e o planejamento de intervenções com base em ortomosaicos de alta resolução.
+### Fluxo de Trabalho com VANT
 
-### Fluxo de Trabalho
+O levantamento com VANT segue uma sequência operacional padronizada em cinco etapas. A primeira etapa é o **planejamento de voo**, no qual se define a área de cobertura, a altitude de voo (tipicamente 50–100 m acima do terreno, resultando em resolução de 1–3 cm/pixel) e a sobreposição entre imagens (mínimo de 80% frontal e 60% lateral para garantir a reconstrução tridimensional). A segunda etapa é a **distribuição de pontos de controle** (GCPs, *Ground Control Points*), que são alvos georreferenciados com GNSS RTK (precisão centimétrica) distribuídos pela área de interesse para garantir a acurácia posicional do modelo.
 
-O fluxo de trabalho com VANT segue uma sequência operacional que se inicia com o planejamento de voo (cobertura 80% frontal e 60% lateral, altitude 50–100 m), seguido pela distribuição de pontos de controle (GCPs com GNSS RTK para georreferenciamento). Os dados são processados por *Structure from Motion* (SfM) para geração de nuvem de pontos, resultando em produtos como ortomosaico, MDS, MDT e curvas de nível. A análise final contempla a extração de seções transversais, volumes e taxas de recuo.
+A terceira etapa é o **processamento fotogramétrico**, realizado por softwares de *Structure from Motion* (SfM) como Agisoft Metashape, OpenDroneMap ou Pix4D, que reconstroem a geometria tridimensional da cena a partir da sobreposição das centenas de fotografias obtidas pelo drone. O resultado é uma nuvem densa de pontos tridimensionais com milhões de coordenadas XYZ. A quarta etapa é a **geração de produtos cartográficos**, incluindo o ortomosaico (imagem georreferenciada em projeção ortogonal), o MDS (Modelo Digital de Superfície, que inclui a vegetação), o MDT (Modelo Digital do Terreno, obtido pela filtragem da vegetação) e as curvas de nível. Por fim, a quinta etapa é a **análise geomorfológica**, na qual se extraem seções transversais das feições, calculam-se volumes de perda ou deposição de solo por diferença de MDTs multitemporais e se quantificam taxas de recuo de cabeceira e de alargamento lateral.
 
 ## Seleção de Técnicas por Classe
 
-A classificação da feição erosiva orienta diretamente a seleção das técnicas de bioengenharia:
+A classificação da feição erosiva orienta diretamente a seleção das técnicas de bioengenharia, conforme sintetizado na @tbl-selecao. A lógica é progressiva: quanto maior e mais complexa a feição, maior o número e a sofisticação das técnicas combinadas.
 
 | Classe | Técnica primária | Técnica complementar |
 |--------|-----------------|---------------------|
@@ -65,9 +79,13 @@ A classificação da feição erosiva orienta diretamente a seleção das técni
 
 ::: {.callout-tip}
 ## Regra prática
-Quanto maior a feição erosiva, maior a necessidade de **combinação de técnicas** e de um **projeto integrado** que considere drenagem, estabilização mecânica e revegetação simultaneamente.
+Quanto maior a feição erosiva, maior a necessidade de **combinação de técnicas** e de um **projeto integrado** que considere drenagem, estabilização mecânica e revegetação simultaneamente. Feições pequenas (sulcos e ravinas pequenas) podem ser tratadas com uma única técnica, enquanto voçorocas sempre exigem projeto multidisciplinar envolvendo drenagem, estabilização e revegetação coordenadas.
 :::
 
 ## Monitoramento Temporal
 
-O monitoramento periódico das feições é essencial para avaliar a eficácia das intervenções. Os indicadores-chave incluem a taxa de recuo da cabeceira (m/ano), a taxa de alargamento lateral (m/ano), o volume de sedimento retido nas estruturas (m³), a cobertura vegetal no interior da feição (%) e a estabilidade das paredes laterais (ângulo do talude).
+O monitoramento periódico das feições erosivas é essencial para avaliar a eficácia das intervenções de bioengenharia e tomar decisões de manutenção ou reforço. Sem monitoramento, é impossível saber se a intervenção está funcionando até que uma eventual falha se manifeste de forma catastrófica. A frequência mínima recomendada é trimestral durante os dois primeiros anos após a implantação e semestral a partir do terceiro ano.
+
+Os indicadores-chave que devem ser medidos em cada campanha de monitoramento são a taxa de recuo da cabeceira (m/ano, esperando-se estabilização ou redução progressiva), a taxa de alargamento lateral (m/ano, que indica se as paredes estão sendo estabilizadas), o volume de sedimento retido nas estruturas (m³, medido pela diferença de cota a montante das paliçadas ou check-dams), a cobertura vegetal no interior da feição (%, que deve aumentar progressivamente) e a estabilidade das paredes laterais (ângulo do talude, monitorado por seções transversais).
+
+A comparação de MDTs obtidos por drone em campanhas sucessivas permite calcular com precisão os volumes de perda e deposição de solo, identificando espacialmente as zonas ativas (ainda em erosão) e as zonas estabilizadas (com deposição e revegetação), orientando ações corretivas focalizadas.

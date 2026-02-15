@@ -1,0 +1,113 @@
+# Biodiversidade e Heterogeneidade da Paisagem {#sec-biodiversidade}
+
+## A paisagem vista pelos organismos
+
+Quando um ecólogo percorre uma trilha na Mata Atlântica e registra as espécies de aves que encontra, ele está fazendo uma amostragem local. Se caminhar pela mesma trilha no dia seguinte, encontrará um conjunto de espécies ligeiramente diferente. Se visitar uma trilha a 10 km de distância, encontrará algumas espécies iguais e outras distintas. E se saltar para uma paisagem a 500 km, num fragmento de tamanho similar mas cercado por cana-de-açúcar em vez de pastagem, encontrará uma comunidade com composição consideravelmente diferente. Por que isso acontece?
+
+A resposta, em grande medida, está na **paisagem**. A composição e a configuração do mosaico de habitats ao redor de cada fragmento, a distância até outros fragmentos, o tipo de matriz que os separa, a presença ou ausência de corredores e a história de uso do território são variáveis que explicam, frequentemente, mais da variação na biodiversidade entre locais do que as características do próprio fragmento (área, forma, qualidade interna). Essa percepção, que nasceu da ecologia de ilhas e evoluiu com a ecologia da paisagem, é o tema central deste capítulo.
+
+## Diversidade alfa, beta e gama
+
+Para compreender como a paisagem influencia a biodiversidade, é necessário primeiro entender que a diversidade biológica pode ser decomposta em componentes que operam em escalas diferentes. Essa decomposição, proposta por Robert Whittaker em 1960, é fundamental e merece explicação cuidadosa.
+
+A **diversidade alfa** ($\alpha$) é a riqueza de espécies em um local específico, como uma mancha de floresta, um fragmento ou uma parcela de amostragem. É o número de espécies que coexistem no mesmo habitat local. A **diversidade beta** ($\beta$) é a variação na composição de espécies entre locais diferentes. Se dois fragmentos possuem exatamente as mesmas espécies, a diversidade beta entre eles é zero. Se possuem espécies completamente diferentes, a diversidade beta é máxima. A **diversidade gama** ($\gamma$) é a diversidade total de toda a paisagem ou região, integrando todas as espécies de todos os locais.
+
+A relação entre esses componentes pode ser expressa de forma multiplicativa como
+
+$$
+\gamma = \alpha \times \beta
+$$
+
+ou, na formulação aditiva mais utilizada em ecologia da paisagem, como
+
+$$
+\gamma = \bar{\alpha} + \beta
+$$
+
+onde $\bar{\alpha}$ é a diversidade alfa média das manchas e $\beta$ é a contribuição da variação entre manchas para a diversidade total.
+
+Para ilustrar com um exemplo concreto, imagine uma paisagem com cinco fragmentos florestais. Se cada fragmento possui 30 espécies de aves e todos possuem exatamente as mesmas espécies, a diversidade gama é 30 (alfa alta, beta zero). Se cada fragmento possui 30 espécies, mas cada um tem espécies completamente diferentes dos demais, a diversidade gama é 150 (alfa mantida, beta máxima). Na prática, a situação real fica entre esses extremos, com alguma sobreposição de espécies entre fragmentos, e a diversidade gama depende tanto da riqueza local quanto da diferenciação entre locais.
+
+A implicação prática para a conservação é profunda. Se a diversidade beta é alta (cada fragmento contém espécies únicas), a conservação de um único fragmento, mesmo grande, não será suficiente para representar a diversidade regional. Será necessário proteger múltiplos fragmentos distribuídos pela paisagem. Se a diversidade beta é baixa (os fragmentos são substituíveis em termos de composição de espécies), pode ser mais eficiente concentrar os esforços de conservação nos fragmentos maiores e mais bem conectados.
+
+## A hipótese da heterogeneidade da paisagem
+
+O modelo clássico de conservação, derivado da **teoria de biogeografia de ilhas** de MacArthur e Wilson (1967), prevê que a biodiversidade em paisagens fragmentadas é primariamente determinada pelo **tamanho** e pelo **isolamento** dos fragmentos de habitat. Fragmentos maiores sustentam mais espécies (relação espécie-área) e fragmentos mais próximos recebem mais colonizadores (efeito de resgate). Esse modelo, embora poderoso e influente, trata a paisagem como um contraste binário entre "ilha" (habitat) e "oceano" (não-habitat), ignorando as propriedades da matriz que circunda os fragmentos.
+
+Uma visão mais recente, a **hipótese da heterogeneidade da paisagem**, propõe que a diversidade de espécies é melhor predita pela heterogeneidade do mosaico paisagístico como um todo do que apenas pela quantidade de um tipo específico de habitat [@fahrig2017]. Em outras palavras, uma paisagem com múltiplos tipos de cobertura (floresta, capoeira, cerrado, várzea, cultivo diversificado, silvipastoril) pode sustentar mais espécies do que uma paisagem com a mesma proporção de floresta mas imersa em uma monocultura homogênea, porque a diversidade de coberturas oferece diversidade de nichos para diferentes espécies.
+
+A @fig-modelos-biodiversidade compara essas duas perspectivas.
+
+::: {#fig-modelos-biodiversidade}
+```{mermaid}
+%%| fig-width: 9
+flowchart LR
+    subgraph Modelo Clássico
+    A["Mancha<br>(habitat)"] --- B["Matriz<br>(não-habitat<br>homogêneo)"]
+    A --> C["Biodiversidade =<br>f(área, isolamento)"]
+    end
+
+    subgraph Modelo de Heterogeneidade
+    D["Tipo 1"] --- E["Tipo 2"]
+    E --- F["Tipo 3"]
+    F --- G["Tipo 4"]
+    D --> H["Biodiversidade =<br>f(heterogeneidade<br>do mosaico)"]
+    E --> H
+    F --> H
+    G --> H
+    end
+```
+Comparação entre o modelo clássico (mancha-matriz binária) e o modelo de heterogeneidade da paisagem para explicar a biodiversidade. No modelo clássico, a diversidade depende do tamanho e isolamento dos fragmentos de habitat. No modelo de heterogeneidade, a diversidade depende da variedade de tipos de cobertura no mosaico.
+:::
+
+A @fig-modelos-biodiversidade ilustra uma diferença conceitual que tem consequências práticas importantes. No modelo clássico, a estratégia de conservação é maximizar a área de habitat remanescente e minimizar o isolamento (por meio de corredores). No modelo de heterogeneidade, a estratégia inclui também manter ou criar diversidade de coberturas na paisagem, mesmo que algumas delas não sejam "habitat nativo" no sentido estrito. Para muitas espécies generalistas, uma paisagem com mosaico diversificado (floresta, capoeira em diferentes estágios, silvipastoril, cultivos diversificados) oferece mais recursos e oportunidades do que uma paisagem com a mesma proporção de floresta mas circundada por monocultura. Entretanto, para espécies especialistas de interior florestal (como certas aves de sub-bosque, primatas arborícolas e epífitas), a quantidade de habitat original continua sendo o preditor dominante, e a heterogeneidade da matriz oferece benefício limitado.
+
+## A matriz importa
+
+Tradicionalmente, a ecologia de paisagens tratou a **matriz** (a porção da paisagem que não é habitat focal) como um espaço hostil e indiferenciado. No entanto, pesquisas nas últimas duas décadas demonstraram que a natureza da matriz influencia profundamente a persistência de espécies nos fragmentos [@metzger2006]. Uma matriz de café sombreado ao redor de um fragmento de Mata Atlântica permite que muitas espécies de aves e morcegos utilizem a matriz como área de alimentação suplementar, habitat secundário e rota de deslocamento entre fragmentos. Uma matriz de cana-de-açúcar queimada, por outro lado, funciona como barreira quase completa para a maioria dos vertebrados terrestres.
+
+A "permeabilidade" da matriz (o grau em que ela permite a movimentação de organismos entre fragmentos) é, portanto, uma variável-chave para a conectividade funcional da paisagem, complementando as métricas puramente estruturais discutidas no @sec-fragmentacao. Para espécies com baixa capacidade de dispersão (anfíbios, répteis, formigas, muitas plantas), a diferença entre uma matriz permeável (agrofloresta, pasto com árvores isoladas, capoeira) e uma matriz impermeável (monocultura, área urbana, solo exposto) pode ser a diferença entre a persistência e a extinção local.
+
+## Grupos funcionais e sensibilidade à paisagem
+
+Nem todas as espécies respondem da mesma forma à estrutura da paisagem. A sensibilidade de um organismo à fragmentação e à composição do mosaico paisagístico depende de suas características biológicas, que podem ser sintetizadas em **traços funcionais**. Espécies com alta mobilidade (aves de rapina, morcegos frugívoros, insetos voadores) percorrem grandes distâncias e utilizam múltiplos elementos da paisagem, sendo relativamente tolerantes à fragmentação. Espécies com baixa mobilidade (anfíbios, répteis, invertebrados de serapilheira) são confinadas a um ou poucos fragmentos e altamente vulneráveis ao isolamento.
+
+Espécies **especialistas** (que dependem de microhabitats específicos, como bromélias, ocos de árvores velhas, ou serapilheira profunda) são mais vulneráveis do que espécies **generalistas** (que utilizam uma ampla gama de recursos e habitats). Espécies com grande área de vida (onça-pintada, lobo-guará, harpia) necessitam de paisagens com alta conectividade entre grandes manchas de habitat, enquanto espécies com pequena área de vida (roedores, formigas) podem persistir em fragmentos menores, desde que a qualidade interna seja mantida.
+
+A @tbl-sensibilidade sintetiza como diferentes grupos respondem à estrutura da paisagem.
+
+| Grupo funcional | Sensibilidade à fragmentação | Uso da matriz | Escala de resposta |
+|:---|:---:|:---:|:---:|
+| Predadores de topo (onça, harpia) | Muito alta | Baixo | Paisagem regional (10⁴–10⁶ ha) |
+| Primatas arborícolas (muriqui) | Alta | Muito baixo | Paisagem local (10²–10⁴ ha) |
+| Aves de sub-bosque | Alta | Baixo a moderado | Paisagem local |
+| Morcegos frugívoros | Moderada | Alto | Paisagem local a regional |
+| Anfíbios de riacho | Alta | Muito baixo | Microbacia (10¹–10² ha) |
+| Borboletas | Moderada | Moderado | Paisagem local |
+| Árvores de grande porte | Moderada (longo prazo) | Não aplicável | Paisagem local |
+| Formigas de serapilheira | Moderada a alta | Baixo | Fragmento (10⁰–10¹ ha) |
+
+: Sensibilidade de diferentes grupos funcionais à fragmentação da paisagem e à composição da matriz, com a escala espacial relevante de resposta. {#tbl-sensibilidade .striped .hover}
+
+A @tbl-sensibilidade revela que não existe uma resposta universal da biodiversidade à fragmentação. A paisagem que é "suficiente" para manter populações viáveis de borboletas pode ser completamente inadequada para onças-pintadas. Essa especificidade funcional tem uma implicação prática direta. O planejamento da conservação em escala de paisagem não pode usar uma única espécie ou grupo como indicador universal, mas deve considerar múltiplos grupos com diferentes sensibilidades e escalas de resposta. A abordagem de **espécies focais** (*focal species*), que seleciona espécies representativas de diferentes categorias de sensibilidade para orientar o desenho de paisagens, é discutida no @sec-corredores.
+
+## Extinção retardada e débito de extinção
+
+Um fenômeno particularmente importante (e preocupante) na relação entre paisagem e biodiversidade é o **débito de extinção** (*extinction debt*). Quando um fragmento florestal é isolado por desmatamento, não perde todas as suas espécies imediatamente. Muitas espécies continuam presentes por anos, décadas ou mesmo séculos após a fragmentação, mas suas populações são inviáveis no longo prazo (pequenas demais para se manter geneticamente saudáveis, isoladas demais para receber recolonizadores após perturbações locais). Essas espécies estão "condenadas" mas ainda não "executadas", uma defasagem temporal chamada de relaxamento (*relaxation*).
+
+O débito de extinção significa que a biodiversidade observada hoje em fragmentos antigos pode superestimar a capacidade real da paisagem de sustentá-la no longo prazo. Um fragmento de Mata Atlântica isolado há 50 anos pode ainda abrigar espécies de primatas e grandes aves que, na ausência de intervenção (restauração de corredores, ampliação do fragmento), desaparecerão nas próximas décadas. Essa defasagem temporal entre a causa (fragmentação) e o efeito (extinção) dificulta a percepção do problema e pode levar a uma falsa sensação de segurança ("o fragmento ainda tem onça, logo está funcionando"), quando na verdade a população já está em trajetória de declínio irreversível.
+
+A existência de débito de extinção reforça a urgência da restauração ecológica (discutida no @sec-restauracao) e do estabelecimento de corredores de conectividade (discutidos no @sec-corredores), pois intervenções realizadas antes que o débito se concretize podem resgatar espécies que ainda estão presentes mas cuja persistência está comprometida.
+
+## Biodiversidade e serviços ecossistêmicos
+
+A relação entre biodiversidade e serviços ecossistêmicos, introduzida no @sec-servicos-ecossistemicos, ganha contornos específicos na escala da paisagem. A diversidade de polinizadores, por exemplo, depende diretamente da presença de habitats de nidificação (fragmentos florestais, áreas de cerrado, barrancos naturais) distribuídos na paisagem agrícola. Estudos em paisagens cafeeiras demonstram que a polinização por abelhas silvestres (dependente de habitats naturais próximos) pode aumentar a produtividade do café em 20% a 25% em comparação com parcelas distantes de remanescentes florestais. Esse serviço, com valor econômico mensurável, depende da manutenção de uma estrutura de paisagem que inclua fragmentos de habitat a distâncias compatíveis com o raio de voo dos polinizadores (tipicamente 500 m a 2 km para abelhas).
+
+De forma análoga, o controle biológico de pragas agrícolas depende de predadores e parasitoides que se reproduzem em habitats naturais e se deslocam para as áreas cultivadas adjacentes. A eficácia desse serviço está correlacionada com a proporção de habitat natural na paisagem e com a distância entre a lavoura e o fragmento mais próximo. A simplificação extrema da paisagem (remoção de todos os remanescentes naturais) elimina as populações de inimigos naturais e torna o produtor inteiramente dependente de controle químico, aumentando custos, riscos ambientais e dependência de insumos externos.
+
+A integração entre conservação da biodiversidade e manutenção de serviços ecossistêmicos forma a base conceitual do planejamento da paisagem discutido nos capítulos da Parte IV deste livro.
+
+::: {.callout-tip}
+## Para aprofundar
+O artigo de Fahrig [-@fahrig2017] sobre a "hipótese da heterogeneidade da paisagem" gerou um dos debates mais intensos da ecologia contemporânea. Os argumentos favoráveis e contrários foram publicados numa série de réplicas e tréplicas que ilustram como a ciência avança por meio de controvérsia construtiva. A leitura desse debate é recomendada para estudantes que desejam compreender a fronteira do conhecimento na relação entre paisagem e biodiversidade.
+:::

@@ -1,0 +1,99 @@
+# Escalas Espaço-temporais {#sec-escalas}
+
+## O problema da escala
+
+A escala é simultaneamente o conceito mais fundamental e mais problemático da ecologia da paisagem. Padrões que são evidentes numa escala podem ser invisíveis em outra, e processos que operam numa determinada extensão espacial podem ser irrelevantes em extensões maiores ou menores [@wu2004]. A escolha da escala de análise não é uma decisão técnica neutra, mas uma decisão científica que determina quais padrões e processos serão detectáveis e quais serão filtrados.
+
+Para compreender a centralidade da escala, considere-se o seguinte exemplo. Uma imagem de satélite com resolução de 250 m (MODIS) cobre milhares de quilômetros quadrados e permite detectar grandes blocos de floresta e extensas áreas agrícolas, mas não revela fragmentos menores que 6 ha, que simplesmente desaparecem dentro de um único pixel. Quando a mesma paisagem é observada com resolução de 10 m (Sentinel-2), centenas de fragmentos pequenos e corredores ripários tornam-se visíveis, e a paisagem aparenta ser muito mais fragmentada. A paisagem é a mesma; o que mudou foi a escala de observação, e com ela mudou inteiramente o diagnóstico ecológico. Esse fenômeno é denominado **dependência escalar** e constitui o principal desafio metodológico da ecologia da paisagem [@gustafson1998].
+
+## Grão e extensão
+
+Duas dimensões definem a escala de observação. O **grão** (*grain*) corresponde à menor unidade espacial resolvível na análise. Numa imagem Sentinel-2, o grão é o pixel de 10 m × 10 m, o que significa que qualquer objeto menor que essa dimensão não será detectado individualmente. Num mapeamento de campo, o grão é a parcela mínima de amostragem, dentro da qual toda variação interna é ignorada. O grão funciona, portanto, como um **filtro espacial** que determina o nível de detalhe acessível ao observador.
+
+A **extensão** (*extent*) corresponde à área total abrangida pela análise. Uma análise com extensão de 500 km² (uma bacia hidrográfica) captura processos regionais de distribuição de habitat, mas não pode ser extrapolada para o bioma inteiro. Uma análise com extensão de 10⁶ km² (o Cerrado) captura gradientes continentais, mas mascara a variabilidade local. A relação entre grão e extensão define o **domínio de escala** do estudo, e ambos os parâmetros devem ser explicitados e justificados.
+
+A distinção entre grão e extensão é mais do que semântica. Em termos práticos, essas duas dimensões impõem restrições independentes à análise. Aumentar o grão (menor resolução) reduz o número de manchas detectáveis e inflaciona a área média dos fragmentos. Reduzir a extensão (menor abrangência) pode excluir manchas periféricas que contribuem para a conectividade regional. A combinação adequada de grão e extensão depende do processo ecológico de interesse, das espécies focais e da unidade de gestão territorial, conforme sistematiza a @fig-grao-extensao.
+
+::: {#fig-grao-extensao}
+```{mermaid}
+%%| fig-width: 7
+flowchart TD
+    A["Escala de Observação"] --> B["Grão (resolução)"]
+    A --> C["Extensão (abrangência)"]
+    B --> D["Espacial: pixel, parcela, fragmento"]
+    B --> E["Temporal: dia, mês, ano, década"]
+    C --> F["Espacial: bacia, município, bioma"]
+    C --> G["Temporal: período de análise"]
+```
+Componentes da escala de observação na análise da paisagem, mostrando que tanto o grão quanto a extensão possuem dimensão espacial e temporal.
+:::
+
+A @fig-grao-extensao explicita uma propriedade frequentemente negligenciada. Grão e extensão não se aplicam apenas ao espaço, mas também ao tempo. O grão temporal define a menor unidade de tempo resolvível (uma cena por mês, por ano, por década), enquanto a extensão temporal define a amplitude do período analisado (uma série de 5 anos, 30 anos, um século). Análises com grão temporal fino (mensal) capturam a fenologia da vegetação e a sazonalidade hidrológica, mas exigem séries densas de imagens livres de nuvens. Análises com grão temporal grosso (decadal) capturam tendências de longo prazo, mas mascaram flutuações sazonais e eventos abruptos.
+
+## Dependência escalar de métricas
+
+A consequência operacional mais importante da escala é que métricas da paisagem calculadas em grãos diferentes **não são diretamente comparáveis**. Gustafson [-@gustafson1998] demonstrou que o número de manchas, a área média dos fragmentos e o índice de conectividade variam sistematicamente com o grão da classificação. Ao agregar pixels de 30 m para 90 m, fragmentos pequenos são absorvidos pelos pixels vizinhos e desaparecem, o número de manchas diminui bruscamente, a área média aumenta e a densidade de bordas se reduz, sem que tenha ocorrido qualquer mudança real na paisagem.
+
+Essa propriedade tem implicações diretas para o planejamento territorial e para a pesquisa comparativa. Uma análise de fragmentação realizada com imagens Landsat (30 m) não pode ser comparada numericamente com uma análise baseada em dados MODIS (250 m), exceto quando a dependência escalar é explicitamente modelada ou quando se emprega análise multiescalar. A @tbl-dependencia-escalar ilustra a magnitude desse efeito com dados de uma paisagem hipotética.
+
+| Grão (pixel) | Número de manchas detectadas | Área média das manchas (ha) | Proporção de borda (%) |
+|:---:|:---:|:---:|:---:|
+| 10 m | 3.247 | 4,2 | 38 |
+| 30 m | 1.156 | 11,8 | 27 |
+| 90 m | 312 | 43,7 | 14 |
+| 250 m | 87 | 156,9 | 6 |
+
+: Efeito da resolução espacial (grão) sobre métricas de paisagem numa paisagem hipotética de 10.000 ha com 35% de cobertura florestal. Valores ilustrativos baseados em simulação. {#tbl-dependencia-escalar .striped .hover}
+
+Os dados da @tbl-dependencia-escalar revelam que, ao passar de 10 m para 250 m de resolução, o número de manchas detectadas cai 37 vezes (de 3.247 para 87), a área média inflaciona 37 vezes (de 4,2 para 156,9 ha) e a proporção de borda reduz-se a um sexto (de 38% para 6%). Um diagnóstico de fragmentação realizado com MODIS (250 m) concluiria que a paisagem possui poucos fragmentos grandes com baixa densidade de borda, enquanto o mesmo diagnóstico realizado com Sentinel-2 (10 m) descreveria milhares de fragmentos pequenos com elevada densidade de borda. Ambos os diagnósticos estão corretos na escala em que foram feitos, mas conduzem a recomendações de manejo radicalmente distintas. Essa constatação reforça a necessidade de explicitar e justificar a escala de análise em qualquer estudo de paisagem.
+
+## Escala temporal
+
+A dimensão temporal da escala é igualmente relevante, embora frequentemente negligenciada. A paisagem visível hoje é o resultado de processos que operam em escalas temporais que variam de dias (desmatamento por corte raso, queimada) a milênios (evolução geomorfológica, pedogênese). A compreensão da dinâmica da paisagem exige que se explicite o intervalo temporal da análise e que se reconheça que processos diferentes operam em escalas temporais diferentes.
+
+Em estudos de detecção de mudanças, a escolha do intervalo temporal afeta profundamente os resultados. Análises anuais capturam processos abruptos como desmatamento, expansão urbana e abertura de estradas, mas podem ignorar a regeneração secundária lenta que ocorre entre duas imagens. Análises decadais revelam tendências graduais como a regeneração florestal, a migração de bordas agrícolas e a densificação urbana, mas podem omitir eventos importantes que ocorreram e foram revertidos dentro da década. Análises multi-temporais com séries longas (20–40 anos), como as oferecidas pelo MapBiomas para o Brasil (1985–presente), permitem identificar trajetórias de mudança e distinguir flutuações de curto prazo de tendências estruturais irreversíveis [@pontius2004].
+
+Um exemplo clarifica a importância da escala temporal. Um fragmento florestal que aparece estável em imagens de 2010 e 2020 pode ter sofrido degradação seletiva (extração de madeira, fogo de sub-bosque) durante a década, com alteração de estrutura vertical sem mudança na cobertura horizontal. A detecção dessa degradação requer séries temporais de alta frequência (mensal ou trimestral) e métricas sensíveis à qualidade do habitat (não apenas à sua presença/ausência), como a amplitude sazonal do NDVI ou o retroespalhamento radar.
+
+## Hierarquia e níveis
+
+Além do par grão-extensão, a perspectiva hierárquica oferece um arcabouço conceitual para articular múltiplas escalas. A **teoria hierárquica** propõe que os sistemas ecológicos são organizados em níveis aninhados, nos quais cada nível opera numa faixa de escalas espaço-temporais característica e interage com os níveis adjacentes por meio de restrições e mecanismos.
+
+Numa hierarquia típica de paisagem, o nível mais amplo corresponde à **região biogeográfica** (bioma), que determina o clima, os tipos de solo e o pool regional de espécies, restringindo assim os ecossistemas que podem existir. O nível seguinte é a **paisagem** propriamente dita, definida pela extensão do processo de interesse (tipicamente 10³ a 10⁵ ha), na qual a configuração espacial das manchas, corredores e matriz condiciona fluxos ecológicos. Abaixo situam-se os **ecossistemas** (10¹ a 10³ ha), nos quais interações locais entre organismos e ambiente determinam a composição de comunidades, e as **comunidades e populações** (frações de hectare), onde processos demográficos e comportamentais individuais são observáveis. A @fig-hierarquia sintetiza essa estrutura multinível e as escalas espaço-temporais características de cada nível.
+
+::: {#fig-hierarquia}
+```{mermaid}
+%%| fig-width: 7
+flowchart TB
+    A["Região Biogeográfica<br>(10⁶ ha, 10³ anos)"] --> B["Paisagem<br>(10³–10⁵ ha, 10¹–10² anos)"]
+    B --> C["Ecossistema<br>(10¹–10³ ha, 10⁰–10¹ anos)"]
+    C --> D["Comunidade/População<br>(10⁻¹–10¹ ha, 10⁻¹–10⁰ anos)"]
+
+    style A fill:#1B5E20,color:#fff
+    style B fill:#2E7D32,color:#fff
+    style C fill:#43A047,color:#fff
+    style D fill:#66BB6A,color:#fff
+```
+Hierarquia de níveis de organização espacial e suas escalas características de extensão (ha) e tempo (anos). As setas indicam que cada nível superior impõe restrições sobre o inferior, enquanto o inferior fornece os mecanismos.
+:::
+
+A interpretação da @fig-hierarquia tem consequências metodológicas profundas. A implicação operacional é que a análise de padrões e processos na escala da paisagem deve considerar simultaneamente as **restrições impostas pelo nível superior** e os **mecanismos fornecidos pelo nível inferior**. O clima regional (nível biogeográfico) restringe os tipos de vegetação possíveis numa bacia hidrográfica, enquanto o estabelecimento de plântulas, a competição interespecífica e a dinâmica de serrapilheira (nível de comunidade) determinam qual comunidade vegetal efetivamente coloniza um dado sítio. Uma análise de conectividade que ignore o contexto climático regional não saberá quais espécies podem utilizar os corredores, e uma análise que não incorpore a biologia reprodutiva e a capacidade de dispersão das espécies focais não poderá avaliar se os corredores mapeados são funcionalmente efetivos.
+
+Essa perspectiva hierárquica distingue a ecologia da paisagem madura da mera aplicação mecânica de métricas em SIG. O pesquisador que calcula o índice de conectividade sem perguntar "conectividade para qual espécie, operando em qual escala de deslocamento e sujeita a quais restrições climáticas?" produz um número sem significado ecológico, conforme advertido por Li e Wu [-@li2004].
+
+## Escala e planejamento territorial
+
+Para o planejamento territorial, a escolha da escala deve ser guiada pelo **processo de interesse** e pela **unidade de gestão**. A criação de um corredor ecológico exige análise na escala da paisagem (10³–10⁵ ha), com resolução suficiente para mapear fragmentos, avaliar conectividade e identificar gargalos. O planejamento de restauração de uma Área de Preservação Permanente (APP) específica opera numa escala menor (10⁰–10¹ ha), com resolução de detalhe que permita avaliar declividade, tipo de solo, vegetação remanescente e uso anterior.
+
+A análise multiescalar, na qual duas ou mais escalas são utilizadas complementarmente, é considerada a melhor prática quando os recursos permitem. O mapeamento regional (extensão municipal ou de bacia) identifica áreas prioritárias para conservação e restauração, enquanto o mapeamento local (extensão de propriedade ou sub-bacia) detalha as intervenções necessárias em cada sítio. A consistência entre escalas é assegurada pela hierarquia de planejamento, na qual decisões tomadas na escala superior condicionam as opções disponíveis na escala inferior.
+
+::: {.callout-important}
+## Regra prática para escolha de escala
+Turner e Gardner [-@turner2015] recomendam que a extensão da análise seja no mínimo 2 a 5 vezes maior que o maior elemento da paisagem de interesse, e que o grão seja no mínimo 2 a 3 vezes menor que o menor elemento que se deseja detectar. Violar a primeira regra implica que o maior fragmento ocupa proporção excessiva da janela de análise, distorcendo as métricas. Violar a segunda implica que fragmentos pequenos são invisibilizados, subestimando a subdivisão e superestimando a conectividade.
+:::
+
+## Escalas das paisagens brasileiras
+
+A análise das paisagens brasileiras impõe desafios escalares específicos derivados da dimensão continental do país e da diversidade de biomas. Os biomas brasileiros cobrem áreas de 10⁵ a 10⁸ ha (a Amazônia, com 4,2 × 10⁸ ha, é a maior floresta tropical contígua do planeta), exigindo dados de média resolução (250–500 m) para mapeamentos sinópticos. Bacias hidrográficas de planejamento (comitês de bacia) variam de 10³ a 10⁵ ha, compatíveis com dados Landsat e Sentinel (10–30 m). Propriedades rurais, unidades de gestão do Código Florestal, variam de 10⁰ a 10³ ha e requerem dados de alta resolução (1–5 m) ou VANT (drones) para mapeamento cadastral e verificação de conformidade ambiental.
+
+Projetos como o MapBiomas operam em escala nacional com resolução de 30 m (Landsat), oferecendo séries temporais de uso e cobertura desde 1985 que permitem análises de dinâmica da paisagem em extensões continentais. Para análises locais de fragmentação e conectividade, contudo, é frequentemente necessário recorrer a imagens de maior resolução ou a levantamentos de campo complementares. Essa necessidade de articulação entre escalas reforça o caráter multiescalar inerente à Ciência da Paisagem e justifica o investimento em métodos que integrem dados de diferentes resoluções dentro de um arcabouço hierárquico coerente.
