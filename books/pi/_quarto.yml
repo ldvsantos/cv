@@ -1,0 +1,77 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Propriedade Intelectual e Inovação no Agronegócio"
+  subtitle: "Fundamentos, Proteção e Transferência de Tecnologia"
+  author:
+    - name: "Luiz Diego Vidal Santos"
+      url: https://diegovidalcv.com.br/
+      orcid: 0000-0001-8659-8557
+      affiliation:
+        - name: "Universidade Estadual de Feira de Santana (UEFS)"
+          url: https://www.uefs.br/
+  date: "2026-02-15"
+  date-format: "DD/MM/YYYY"
+  description: |
+    Livro-texto sobre propriedade intelectual e inovação aplicadas ao
+    agronegócio, abrangendo patentes, proteção de cultivares, indicações
+    geográficas, transferência de tecnologia e agricultura digital,
+    com foco estratégico na realidade brasileira.
+  cover-image: img/capa_pi.png
+  favicon: img/capa_pi.png
+  reader-mode: true
+  site-url: https://diegovidalcv.com.br/books/pi/
+  repo-url: https://github.com/ldvsantos/cv/
+  repo-actions: [issue]
+  sharing: [twitter, facebook, linkedin]
+  downloads: [pdf]
+  search: true
+
+  page-footer:
+    left: "© Luiz Diego Vidal Santos, 2026. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
+    right: "Feito com [Quarto](https://quarto.org)"
+
+  chapters:
+    - index.qmd
+    - prefacio.qmd
+
+    - part: "Parte I — Fundamentos da PI no Agronegócio"
+      chapters:
+        - capitulos/01-inovacao-tecnologica.qmd
+        - capitulos/02-pi-ativo-estrategico.qmd
+        - capitulos/03-empreendedorismo.qmd
+        - capitulos/04-politicas-inovacao.qmd
+
+    - part: "Parte II — Gestão e Valoração de PI"
+      chapters:
+        - capitulos/05-gestao-projetos.qmd
+        - capitulos/06-valoracao-ativos.qmd
+        - capitulos/07-transferencia-tecnologia.qmd
+        - capitulos/08-gestao-estrategica-pme.qmd
+
+    - part: "Parte III — Fronteiras e Aplicações"
+      chapters:
+        - capitulos/09-spinoffs-academicas.qmd
+        - capitulos/10-agricultura-digital.qmd
+
+    - part: "Parte IV — Projeto e Integração"
+      chapters:
+        - capitulos/11-projeto-integrador.qmd
+
+    - referencias.qmd
+
+bibliography: references.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+
+format:
+  html:
+    theme:
+      - cosmo
+      - custom.scss
+    code-link: true
+    lang: pt-BR
+    fig-align: center
+
+lang: pt-BR

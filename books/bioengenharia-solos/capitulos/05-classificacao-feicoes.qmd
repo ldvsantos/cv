@@ -1,4 +1,4 @@
-# Classificação de Feições Erosivas {#sec-classificacao-feicoes}
+﻿# Classificação de Feições Erosivas {#sec-classificacao-feicoes}
 
 ## Importância da Classificação
 
@@ -12,7 +12,7 @@ A partir de imagens como a da @fig-foto-aerea, é possível extrair informaçõe
 
 ## Elementary Gully Classification (EGC)
 
-O sistema **Elementary Gully Classification** (EGC) é uma abordagem sistemática que permite classificar feições erosivas com base em suas características geométricas e hidráulicas, utilizando dados obtidos por levantamento topográfico convencional, GNSS de precisão ou sensoriamento remoto (drone/VANT). A vantagem do EGC é fornecer critérios quantitativos e objetivos para distinguir entre classes de feições, substituindo classificações subjetivas baseadas apenas na impressão visual do observador.
+O sistema Elementary Gully Classification (EGC) é uma abordagem sistemática que permite classificar feições erosivas com base em suas características geométricas e hidráulicas, utilizando dados obtidos por levantamento topográfico convencional, GNSS de precisão ou sensoriamento remoto (drone/VANT). A vantagem do EGC é fornecer critérios quantitativos e objetivos para distinguir entre classes de feições, substituindo classificações subjetivas baseadas apenas na impressão visual do observador.
 
 ### Parâmetros Geométricos
 
@@ -47,7 +47,7 @@ A @tbl-dimensoes apresenta os critérios dimensionais para cada classe de feiç�
 
 ## Levantamento com VANT (Drone)
 
-O uso de **Veículos Aéreos Não Tripulados** (VANT/drone) revolucionou o levantamento de feições erosivas nas últimas duas décadas. Antes dos drones, o mapeamento detalhado de ravinas e voçorocas exigia levantamentos topográficos de campo laboriosos, custosos e, em muitos casos, perigosos (trabalhar dentro de voçorocas ativas envolve risco de desabamento). Com os drones, é possível obter modelos tridimensionais de alta resolução a partir de sobrevoos de poucos minutos, sem expor operadores a riscos.
+O uso de Veículos Aéreos Não Tripulados (VANT/drone) revolucionou o levantamento de feições erosivas nas últimas duas décadas. Antes dos drones, o mapeamento detalhado de ravinas e voçorocas exigia levantamentos topográficos de campo laboriosos, custosos e, em muitos casos, perigosos (trabalhar dentro de voçorocas ativas envolve risco de desabamento). Com os drones, é possível obter modelos tridimensionais de alta resolução a partir de sobrevoos de poucos minutos, sem expor operadores a riscos.
 
 As imagens a seguir ilustram dois aspectos complementares do levantamento. A @fig-ravina-detalhe mostra o detalhe de uma ravina em resolução que permite medir os parâmetros geométricos da @tbl-parametros diretamente no modelo digital, enquanto a @fig-perfil-feicoes revela os horizontes do solo expostos pela erosão, informação essencial para dimensionar a profundidade de ancoragem das estruturas de bioengenharia.
 
@@ -59,9 +59,9 @@ As imagens a seguir ilustram dois aspectos complementares do levantamento. A @fi
 
 ### Fluxo de Trabalho com VANT
 
-O levantamento com VANT segue uma sequência operacional padronizada em cinco etapas. A primeira etapa é o **planejamento de voo**, no qual se define a área de cobertura, a altitude de voo (tipicamente 50–100 m acima do terreno, resultando em resolução de 1–3 cm/pixel) e a sobreposição entre imagens (mínimo de 80% frontal e 60% lateral para garantir a reconstrução tridimensional). A segunda etapa é a **distribuição de pontos de controle** (GCPs, *Ground Control Points*), que são alvos georreferenciados com GNSS RTK (precisão centimétrica) distribuídos pela área de interesse para garantir a acurácia posicional do modelo.
+O levantamento com VANT segue uma sequência operacional padronizada em cinco etapas. A primeira etapa é o planejamento de voo, no qual se define a área de cobertura, a altitude de voo (tipicamente 50–100 m acima do terreno, resultando em resolução de 1–3 cm/pixel) e a sobreposição entre imagens (mínimo de 80% frontal e 60% lateral para garantir a reconstrução tridimensional). A segunda etapa é a distribuição de pontos de controle (GCPs, *Ground Control Points*), que são alvos georreferenciados com GNSS RTK (precisão centimétrica) distribuídos pela área de interesse para garantir a acurácia posicional do modelo.
 
-A terceira etapa é o **processamento fotogramétrico**, realizado por softwares de *Structure from Motion* (SfM) como Agisoft Metashape, OpenDroneMap ou Pix4D, que reconstroem a geometria tridimensional da cena a partir da sobreposição das centenas de fotografias obtidas pelo drone. O resultado é uma nuvem densa de pontos tridimensionais com milhões de coordenadas XYZ. A quarta etapa é a **geração de produtos cartográficos**, incluindo o ortomosaico (imagem georreferenciada em projeção ortogonal), o MDS (Modelo Digital de Superfície, que inclui a vegetação), o MDT (Modelo Digital do Terreno, obtido pela filtragem da vegetação) e as curvas de nível. Por fim, a quinta etapa é a **análise geomorfológica**, na qual se extraem seções transversais das feições, calculam-se volumes de perda ou deposição de solo por diferença de MDTs multitemporais e se quantificam taxas de recuo de cabeceira e de alargamento lateral.
+A terceira etapa é o processamento fotogramétrico, realizado por softwares de *Structure from Motion* (SfM) como Agisoft Metashape, OpenDroneMap ou Pix4D, que reconstroem a geometria tridimensional da cena a partir da sobreposição das centenas de fotografias obtidas pelo drone. O resultado é uma nuvem densa de pontos tridimensionais com milhões de coordenadas XYZ. A quarta etapa é a geração de produtos cartográficos, incluindo o ortomosaico (imagem georreferenciada em projeção ortogonal), o MDS (Modelo Digital de Superfície, que inclui a vegetação), o MDT (Modelo Digital do Terreno, obtido pela filtragem da vegetação) e as curvas de nível. Por fim, a quinta etapa é a análise geomorfológica, na qual se extraem seções transversais das feições, calculam-se volumes de perda ou deposição de solo por diferença de MDTs multitemporais e se quantificam taxas de recuo de cabeceira e de alargamento lateral.
 
 ## Seleção de Técnicas por Classe
 
@@ -79,7 +79,7 @@ A classificação da feição erosiva orienta diretamente a seleção das técni
 
 ::: {.callout-tip}
 ## Regra prática
-Quanto maior a feição erosiva, maior a necessidade de **combinação de técnicas** e de um **projeto integrado** que considere drenagem, estabilização mecânica e revegetação simultaneamente. Feições pequenas (sulcos e ravinas pequenas) podem ser tratadas com uma única técnica, enquanto voçorocas sempre exigem projeto multidisciplinar envolvendo drenagem, estabilização e revegetação coordenadas.
+Quanto maior a feição erosiva, maior a necessidade de combinação de técnicas e de um projeto integrado que considere drenagem, estabilização mecânica e revegetação simultaneamente. Feições pequenas (sulcos e ravinas pequenas) podem ser tratadas com uma única técnica, enquanto voçorocas sempre exigem projeto multidisciplinar envolvendo drenagem, estabilização e revegetação coordenadas.
 :::
 
 ## Monitoramento Temporal

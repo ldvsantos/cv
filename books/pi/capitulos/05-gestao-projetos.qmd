@@ -1,0 +1,64 @@
+# Gestão de Projetos de Inovação Agrícola {#sec-gestao-projetos}
+
+## Inovação como projeto
+
+Toda inovação tecnológica, da concepção de um bioinsumo ao desenvolvimento de um aplicativo de gestão de propriedade, pode ser estruturada como um projeto com escopo definido, cronograma, orçamento e entregáveis mensuráveis. No agronegócio, a gestão de projetos de inovação enfrenta particularidades que a distinguem de setores industriais convencionais: a dependência de ciclos biológicos (safras, estações), a variabilidade climática como fator de risco, a necessidade de validação em campo (não apenas em laboratório) e a multiplicidade de stakeholders (produtores, pesquisadores, extensionistas, financiadores, reguladores).
+
+O PMBOK (*Project Management Body of Knowledge*) do PMI [-@pmi2021] organiza a gestão de projetos em dez áreas de conhecimento (integração, escopo, cronograma, custos, qualidade, recursos, comunicações, riscos, aquisições e stakeholders), todas aplicáveis ao contexto de inovação agrícola. Contudo, a rigidez do modelo preditivo do PMBOK tem sido progressivamente complementada por abordagens ágeis e híbridas, mais adequadas à incerteza intrínseca dos processos de inovação.
+
+## Metodologias ágeis aplicadas ao agro
+
+### Design Thinking
+
+O Design Thinking (DT) é uma abordagem centrada no usuário que estrutura a inovação em cinco fases: empatia (compreensão profunda do problema do produtor rural), definição (formulação clara do desafio), ideação (geração de soluções criativas), prototipagem (construção rápida de modelos testáveis) e teste (validação com usuários reais em condições de campo).
+
+No agro, o DT tem sido utilizado por aceleradoras como o AgriHub para redesenhar interfaces de aplicativos de gestão, desenvolver embalagens sustentáveis e criar modelos de comercialização direta (farm-to-table). A fase de empatia é especialmente crítica, pois exige que o empreendedor urbano compreenda as restrições práticas do produtor rural (conectividade limitada, jornada de trabalho intensa, aversão a riscos, sazonalidade de renda).
+
+### Lean Startup
+
+O modelo Lean Startup de Ries [-@ries2011] propõe o ciclo construir-medir-aprender como motor de inovação, minimizando desperdícios por meio do Produto Mínimo Viável (MVP). No agronegócio, o MVP pode assumir formas como um protótipo de sensor de umidade do solo testado em uma parcela experimental, uma versão beta de aplicativo testada com 10 produtores-piloto, uma formulação simplificada de bioinsumo avaliada em casa de vegetação, ou um modelo de negócio de IG testado com uma cooperativa local.
+
+A métrica-chave (*actionable metric*) no agro frequentemente é a taxa de adoção pelo produtor, não apenas a satisfação do cliente, pois a distância entre aprovação e uso efetivo no campo é significativa.
+
+## Estrutura de projeto de PI no agronegócio
+
+Um projeto de inovação com componente de PI no agronegócio deve incorporar, desde sua concepção, etapas específicas de proteção intelectual que se integram ao ciclo de desenvolvimento.
+
+| Fase do projeto | Atividade de PI | Entregável |
+|----------------|----------------|-----------|
+| Concepção | Busca de anterioridade (INPI, Espacenet, Patentscope) | Relatório de *freedom to operate* |
+| P&D | Caderno de laboratório/campo, sigilo | Registros datados e testemunhados |
+| Prototipagem | Depósito de pedido provisório de patente | Número do protocolo INPI |
+| Validação | Documentação de resultados experimentais | Relatório descritivo e reivindicações |
+| Escalonamento | Pedido definitivo de patente/cultivar/IG | Certidão de depósito |
+| Comercialização | Contratos de licenciamento, *royalties* | Instrumentos jurídicos assinados |
+
+: Integração da PI ao ciclo de projetos de inovação agrícola. {#tbl-projeto-pi .striped .hover}
+
+## Busca de anterioridade e *freedom to operate*
+
+A busca de anterioridade (*prior art search*) é o procedimento de verificação do estado da técnica antes do depósito de um pedido de patente. No agro, as principais bases para busca são o INPI (base nacional), o Espacenet (base europeia, >130 milhões de documentos), o Patentscope (WIPO, busca por classificação IPC/CPC) e o Google Patents (busca semântica e por citação).
+
+A análise de *freedom to operate* (FTO) vai além da busca de anterioridade ao avaliar se um produto ou processo pode ser comercializado sem infringir patentes vigentes de terceiros. No agro brasileiro, a FTO é especialmente relevante para bioinsumos (onde patentes de microorganismos e formulações são densas) e para biotecnologia vegetal (onde patentes de eventos transgênicos criam campos minados de PI).
+
+::: {.callout-important}
+## Cuidado
+A publicação de resultados de pesquisa em artigos científicos ou congressos antes do depósito de patente destrói a novidade e inviabiliza a proteção. Orientadores e mestrandos/doutorandos devem coordenar a divulgação com o NIT institucional para preservar o potencial de patenteamento.
+:::
+
+## Caderno de laboratório e de campo
+
+O caderno de laboratório/campo é o registro cronológico e detalhado de todas as atividades experimentais, servindo como prova de autoria, data de concepção e diligência inventiva. No agro, o caderno de campo assume importância adicional porque experimentos dependem de condições ambientais não replicáveis, e o registro deve incluir dados meteorológicos, características do solo, coordenadas georreferenciadas, fotografias datadas e protocolos de manejo.
+
+Cadernos digitais (LabArchives, Benchling, ou mesmo planilhas versionadas em repositórios Git) oferecem vantagens de rastreabilidade, backup e compartilhamento controlado, mas devem atender aos requisitos de integridade (assinatura digital, *timestamps* auditáveis).
+
+## Gestão de riscos em projetos de PI agrícola
+
+Os riscos específicos de projetos de PI no agronegócio incluem o risco tecnológico (a inovação não funciona nas condições edafoclimáticas reais), o risco regulatório (mudanças na legislação de PI, agrotóxicos ou sementes), o risco de mercado (baixa adoção pelo produtor, concorrência de similares), o risco de PI (patente não concedida, infração por terceiros, litígios) e o risco climático (perda de experimentos de campo por estiagem, enchente ou geada).
+
+A matriz de riscos (probabilidade × impacto) deve ser atualizada em cada marco do projeto, e o plano de mitigação deve prever busca contínua de anterioridade, monitoramento de depósitos de concorrentes, diversificação de modalidades de PI (combinar patente com segredo industrial e marca) e seguro agrícola para experimentos de campo de alto investimento.
+
+::: {.callout-tip}
+## Ferramenta prática
+O canvas de projeto de inovação adapta o Business Model Canvas para projetos de P&D com PI. Seus blocos incluem: problema, solução, PI protegível, TRL atual/alvo, validação requerida, parceiros, custos, receita esperada e métricas de sucesso.
+:::

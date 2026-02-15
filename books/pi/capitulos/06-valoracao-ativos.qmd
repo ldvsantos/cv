@@ -1,0 +1,67 @@
+# Valoração de Ativos de PI no Agronegócio {#sec-valoracao}
+
+## Por que valorar PI?
+
+A valoração de ativos de propriedade intelectual consiste na estimativa do valor econômico de patentes, marcas, cultivares, indicações geográficas e outros intangíveis protegidos. No agronegócio, a valoração é necessária em múltiplos contextos: licenciamento de tecnologias (definição de royalties), fusões e aquisições de empresas agrícolas, securitização de ativos intangíveis para obtenção de crédito, contabilização de intangíveis no balanço patrimonial (CPC 04/IAS 38), litígios de infração de PI (quantificação de danos) e negociação com investidores de *venture capital*.
+
+A ausência de valoração formal faz com que muitas tecnologias agrícolas sejam licenciadas abaixo de seu valor real ou, pior, permaneçam nas prateleiras dos NITs por falta de uma proposta de valor quantificada que atraia parceiros comerciais.
+
+## Abordagens de valoração
+
+A literatura e a prática de valoração de PI reconhecem três abordagens principais: custo, mercado e renda, cada uma com vantagens e limitações específicas para o contexto agropecuário.
+
+### Abordagem de custo
+
+A abordagem de custo estima o valor do ativo pelo custo de sua reprodução ou substituição. No agro, inclui custos de P&D (horas de pesquisador, reagentes, equipamentos), custos de campo (instalação de experimentos, safras perdidas, monitoramento), custos de proteção (taxas INPI/SNPC, honorários de agente de PI) e custos de manutenção (anuidades de patente, renovação de marca).
+
+A principal limitação dessa abordagem é que o custo de produção não reflete necessariamente o valor de mercado. Um bioinsumo cujo desenvolvimento custou R$ 300.000 pode valer R$ 5 milhões se resolver um problema agronômico sem alternativa no mercado, ou R$ 0 se nenhum produtor o adotar.
+
+### Abordagem de mercado
+
+A abordagem de mercado utiliza transações comparáveis (vendas, licenciamentos, leilões de PI) como referência. No agro, as principais fontes de dados são o RoyaltyStat e o ktMINE (bases de contratos de licenciamento), relatórios anuais de empresas de sementes e insumos (que divulgam receitas de royalties), transações de M&A no setor (Bayer/Monsanto em 2018 avaliou em US$ 63 bilhões), leilões de cultivares e contratos de sublicenciamento de eventos transgênicos.
+
+A limitação desta abordagem reside na escassez de transações comparáveis para tecnologias de nicho (bioengenharia de solos, por exemplo) e na assimetria de informação entre licenciantes e licenciados.
+
+### Abordagem de renda
+
+A abordagem de renda estima o valor presente dos fluxos de caixa futuros atribuíveis ao ativo de PI. É a abordagem mais robusta conceitualmente e a mais utilizada em avaliações de alta complexidade. Seus métodos incluem o Fluxo de Caixa Descontado (DCF), que projeta receitas e custos associados ao ativo ao longo de sua vida útil e os desconta a uma taxa que reflete o risco do investimento, e o método *Relief from Royalty*, que estima quanto o detentor pagaria de royalties se tivesse de licenciar a tecnologia de terceiros, e usa esse valor como proxy do benefício econômico da PI própria.
+
+$$
+V_{PI} = \sum_{t=1}^{n} \frac{R_t \times r}{(1+d)^t}
+$$
+
+Onde $V_{PI}$ é o valor presente do ativo de PI, $R_t$ é a receita atribuível ao ativo no ano $t$, $r$ é a taxa de royalty aplicável e $d$ é a taxa de desconto ajustada ao risco.
+
+| Abordagem | Quando usar | Limitação principal |
+|-----------|------------|-------------------|
+| Custo | Fase inicial, sem receita | Não reflete valor de mercado |
+| Mercado | Existem transações comparáveis | Escassez de comparáveis |
+| Renda | Ativo gera (ou gerará) receita | Depende de projeções incertas |
+
+: Comparação das abordagens de valoração de PI. {#tbl-abordagens .striped .hover}
+
+## Valoração de cultivares
+
+A valoração de cultivares apresenta particularidades. A receita de royalties de sementes certificadas é a principal fonte de retorno, e ela depende da taxa de adoção (participação de mercado da cultivar), do preço-prêmio sobre cultivares não protegidas, do volume de sementes comercializado e da vigência restante da proteção (15–18 anos).
+
+No Brasil, o mercado de royalties de soja foi estimado em R$ 4,5 bilhões em 2023, com as cultivares de soja Intacta 2 Xtend (Bayer) detendo participação dominante. Para cultivares desenvolvidas por instituições públicas (Embrapa, IAC, IAPAR), a valoração deve considerar o modelo de licenciamento (exclusivo vs. não exclusivo), a rede de multiplicadores credenciados e a concorrência de cultivares piratas (sementes salvas além do limite legal).
+
+## Valoração de Indicações Geográficas
+
+As IGs não são ativos apropriaveis individualmente (pertencem à coletividade de produtores da região), mas geram valor coletivo mensurável por meio do preço-prêmio (diferencial de preço entre o produto com IG e o genérico), do efeito-volume (aumento de demanda associado ao reconhecimento), da redução de custos de transação (confiança do consumidor, menor necessidade de marketing individual) e do desenvolvimento territorial (turismo rural, empregos, infraestrutura).
+
+Estudo da Comissão Europeia [-@european_commission2020] estimou que o valor de venda de produtos com IG na UE foi de €74,8 bilhões em 2017, e que o preço-prêmio médio foi de 2,07× para produtos agrícolas e de 2,85× para vinhos e destilados. No Brasil, pesquisas localizadas sugerem prêmios de 30–100% para cafés de IGs reconhecidas.
+
+::: {.callout-note}
+## Exemplo aplicado
+O Café do Cerrado Mineiro (IP reconhecida em 2005) apresentou preço-prêmio médio de 40% sobre o café commodity, beneficiando ~4.500 produtores em 55 municípios. Considerando-se uma produção anual de ~6 milhões de sacas e um preço-prêmio de R$ 80/saca, o valor anual atribuível à IG pode ser estimado em ~R$ 480 milhões.
+:::
+
+## Desafios práticos de valoração no agro brasileiro
+
+A prática de valoração de PI no agronegócio brasileiro enfrenta obstáculos significativos. A escassez de profissionais qualificados (poucos avaliadores combinam expertise em PI e agronegócio) limita a oferta de serviços. A ausência de bases de dados de royalties agrícolas no Brasil dificulta comparações de mercado. A informalidade do setor (muitos contratos de licenciamento são verbais ou sub-registrados) reduz a disponibilidade de dados transacionais. E a complexidade dos ativos agrícolas (que dependem de fatores climáticos, edáficos e biológicos variáveis) torna as projeções de renda mais incertas do que em setores industriais.
+
+::: {.callout-tip}
+## Exercício
+Selecione um produto agrícola típico da sua região que possua potencial para IG. Estime o preço-prêmio potencial utilizando comparações com produtos similares (com e sem IG). Calcule o valor anual atribuível à IG multiplicando o preço-prêmio pelo volume comercializado. Identifique as principais fontes de incerteza na sua estimativa.
+:::

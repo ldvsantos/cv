@@ -1,0 +1,64 @@
+# Gestão da Inovação Tecnológica na Agropecuária {#sec-inovacao}
+
+## Inovação e a questão agrária
+
+A inovação tecnológica no setor agropecuário não se resume à adoção de máquinas ou insumos de última geração. No sentido schumpeteriano, inovar é introduzir uma novidade (produto, processo, mercado, fonte de matéria-prima ou forma organizacional) que gere valor econômico ou social, e no agro, essa definição adquire contornos particulares porque envolve sistemas biológicos, ciclos sazonais, diversidade edafoclimática e uma base de produtores heterogênea que vai do agricultor familiar ao grande exportador.
+
+O Manual de Oslo [@oecd2018], referência internacional para mensuração de inovação, distingue quatro tipos fundamentais: inovação de produto (uma nova cultivar resistente à seca, por exemplo), inovação de processo (adoção de plantio direto ou irrigação por gotejamento), inovação organizacional (formação de cooperativas de comercialização) e inovação de marketing (certificação de origem, selos de sustentabilidade). No agronegócio brasileiro, a inovação de processo tem sido historicamente dominante, impulsionada pela pesquisa da Embrapa desde os anos 1970, enquanto as inovações de produto e organizacional permanecem subexploradas em comparação com competidores globais.
+
+## Sistemas de Inovação Agrícola
+
+O conceito de Sistema Nacional de Inovação (SNI), proposto por Freeman [-@freeman1987] e Lundvall [-@lundvall1992], postula que a inovação não ocorre de forma isolada, mas resulta da interação entre empresas, universidades, institutos de pesquisa, governo e sociedade civil. No contexto agrícola, esse conceito se traduz no Sistema Nacional de Pesquisa Agropecuária (SNPA), que articula a Embrapa, as Organizações Estaduais de Pesquisa Agropecuária (OEPAs), as universidades e os serviços de Assistência Técnica e Extensão Rural (ATER).
+
+A Hélice Tríplice de Etzkowitz e Leydesdorff [-@etzkowitz2000] oferece um modelo complementar ao enfatizar a interdependência entre universidade, indústria e governo na geração de inovação. No agro brasileiro, essa articulação se manifesta em arranjos como os Polos de Inovação da Embrapa, os Núcleos de Inovação Tecnológica (NITs) universitários e as incubadoras de base tecnológica agrícola.
+
+| Modelo | Atores-chave | Aplicação no agro |
+|--------|-------------|-------------------|
+| SNI (Freeman/Lundvall) | Empresas, universidades, governo | SNPA, Embrapa, OEPAs, ATER |
+| Hélice Tríplice (Etzkowitz) | Universidade-Indústria-Governo | NITs, Polos de Inovação, incubadoras |
+| Hélice Quádrupla | + Sociedade civil | Cooperativas, associações, comunidades tradicionais |
+| Ecossistema de Inovação | Redes abertas, startups, venture capital | AgTechs, aceleradoras agrícolas |
+
+: Modelos de inovação e suas aplicações no agronegócio. {#tbl-modelos .striped .hover}
+
+## Trajetória tecnológica da agropecuária brasileira
+
+A modernização agrícola brasileira pode ser periodizada em quatro fases distintas. A primeira (1950–1970) foi marcada pela importação de pacotes tecnológicos da Revolução Verde, com ênfase em mecanização pesada, fertilizantes sintéticos e agrotóxicos. A segunda (1970–1990) caracterizou-se pela tropicalização de tecnologias, liderada pela Embrapa, que adaptou cultivares e sistemas de manejo às condições edafoclimáticas brasileiras, tornando viável a agricultura nos Cerrados. A terceira fase (1990–2010) consolidou o plantio direto, a agricultura de precisão e a pecuária intensiva, elevando a produtividade total dos fatores (PTF) a taxas de 3–4% ao ano. A quarta e atual fase (2010–presente) é marcada pela digitalização, com uso de sensoriamento remoto, IoT, inteligência artificial e blockchain na cadeia produtiva.
+
+::: {.callout-note}
+## Dado-chave
+A PTF da agropecuária brasileira cresceu 382% entre 1975 e 2020, segundo dados da Embrapa, tornando o Brasil um dos poucos países onde a produção cresce mais rápido que a expansão de área [@embrapa2021].
+:::
+
+## Difusão e adoção de inovações
+
+O modelo clássico de difusão de inovações de Rogers [-@rogers2003] classifica os adotantes em cinco categorias (inovadores, adotantes iniciais, maioria inicial, maioria tardia e retardatários) e descreve uma curva de adoção em formato de S. No contexto rural brasileiro, esse modelo adquire nuances importantes, pois a difusão é mediada por fatores como acesso a crédito rural (Pronaf, Pronamp), assistência técnica (ATER pública e privada), infraestrutura (estradas, conectividade digital) e percepção de risco do produtor.
+
+A Teoria da Capacidade Absortiva [@cohen1990] complementa o modelo de Rogers ao postular que a capacidade de uma organização de reconhecer, assimilar e aplicar novo conhecimento depende de sua base de conhecimento prévio. No agro, isso implica que a transferência de tecnologia é mais eficaz quando o produtor já domina competências correlatas, e a extensão rural cumpre papel crítico nessa construção.
+
+## Indicadores de inovação agrícola
+
+A mensuração da inovação agrícola utiliza indicadores de insumo (*inputs*) e de resultado (*outputs*). Entre os indicadores de insumo, destacam-se o investimento em P&D como proporção do PIB agrícola (o Brasil investe cerca de 1,8%, abaixo dos 2,5% recomendados pela FAO), o número de pesquisadores em ciências agrárias (o país possui ~12.000 doutores na área) e o volume de crédito tecnológico (Inovagro, Pronaf Agroecologia). Os indicadores de resultado incluem patentes depositadas (apenas 3% do total do INPI são agrícolas), cultivares protegidas (o SNPC registrou ~4.000 cultivares ativas em 2024), publicações científicas (o Brasil é o 2º maior produtor de artigos em ciências agrárias) e indicações geográficas concedidas (98 IGs ativas em 2024).
+
+| Indicador | Brasil | Referência internacional |
+|-----------|--------|-------------------------|
+| P&D / PIB agrícola | ~1,8% | 2,5% (FAO) |
+| Patentes agrícolas / total INPI | ~3% | 8–12% (EUA, UE) |
+| Cultivares protegidas ativas | ~4.000 | ~30.000 (UE) |
+| IGs concedidas | 98 | >3.400 (UE) |
+| Publicações agrícolas / total | ~14% | 6–8% (média global) |
+
+: Indicadores selecionados de inovação agrícola no Brasil. {#tbl-indicadores .striped .hover}
+
+## Desafios contemporâneos
+
+O agronegócio brasileiro enfrenta desafios estruturais que condicionam a trajetória de inovação. A concentração de P&D em poucas culturas (soja, milho, cana-de-açúcar, algodão) deixa lacunas para culturas regionais estratégicas (mandioca, feijão-caupi, palma forrageira, fruteiras do Semiárido). A desarticulação entre pesquisa e extensão reduz a velocidade de difusão, pois o sistema público de ATER foi fragilizado nas últimas décadas. A propriedade intelectual, tema central deste livro, permanece subutilizada como ferramenta de captura de valor, e sua contribuição potencial para a competitividade do agro brasileiro será explorada nos capítulos seguintes.
+
+::: {.callout-tip}
+## Reflexão
+Se o Brasil é o 2º maior produtor de conhecimento agrícola do mundo em publicações, por que ocupa posição tão modesta em patentes e IGs? A resposta passa pela cultura de proteção de PI, tema dos próximos capítulos.
+:::
+
+## Referências complementares
+
+Para aprofundamento, recomenda-se a consulta ao *Agricultural Innovation Systems Toolkit* [@worldbank2012], ao relatório *The State of Food and Agriculture: Innovation in Agriculture* [@fao2022] e ao *Panorama da Inovação na Agropecuária Brasileira* [@embrapa2021].

@@ -1,0 +1,77 @@
+# Projeto Integrador: Gestão de PI no Agronegócio {#sec-projeto}
+
+## Objetivo
+
+O projeto integrador deste livro consolida os conhecimentos adquiridos nos capítulos anteriores em um exercício prático de gestão de propriedade intelectual aplicada ao agronegócio. O estudante ou profissional deve selecionar uma cadeia produtiva real, conduzir um diagnóstico completo de ativos de PI e propor uma estratégia integrada de proteção, valoração e transferência de tecnologia.
+
+## Roteiro do projeto
+
+O projeto deve ser desenvolvido em sete etapas sequenciais, descritas a seguir.
+
+### Etapa 1: Seleção da cadeia produtiva
+
+Selecione uma cadeia produtiva agrícola relevante para sua região (café, cacau, mel, mandioca, fruticultura, pecuária leiteira, aquicultura, etc.). Justifique a escolha com base em critérios de relevância econômica (participação no PIB local, empregos gerados), potencial de inovação (gargalos tecnológicos identificados) e viabilidade de proteção de PI (existência de ativos protegíveis).
+
+### Etapa 2: Mapeamento de atores
+
+Identifique os principais atores da cadeia selecionada, incluindo produtores (perfil, escala, organização), agroindústrias e cooperativas (capacidade de beneficiamento), instituições de P&D (universidades, Embrapa, OEPAs ativas na região), serviços de ATER (público e privado), NITs e agências de PI e órgãos reguladores (MAPA, INPI, SNPC).
+
+### Etapa 3: Prospecção tecnológica
+
+Conduza uma prospecção tecnológica focada na cadeia selecionada, utilizando as seguintes etapas: busca de patentes nas bases INPI, Espacenet e Patentscope (classificação IPC relevante), busca de cultivares no SNPC (espécie selecionada), busca de IGs registradas e em andamento no INPI, mapeamento de publicações científicas (Scopus ou Web of Science) e análise de tendências (roadmap tecnológico de 5–10 anos).
+
+O relatório de prospecção deve incluir uma análise quantitativa (evolução de depósitos por ano, principais depositantes, classificações IPC dominantes) e uma análise qualitativa (lacunas tecnológicas, nichos de oportunidade, riscos de infração).
+
+### Etapa 4: Diagnóstico de PI
+
+Utilizando o roteiro da @tbl-diagnostico (Capítulo 8), conduza um diagnóstico de ativos de PI para uma empresa, cooperativa ou associação real da cadeia selecionada. O diagnóstico deve identificar ativos existentes que ainda não estão protegidos formalmente, ativos que estão protegidos mas não são explorados comercialmente e lacunas de proteção (riscos de apropriação por terceiros, imitação, pirataria).
+
+### Etapa 5: Estratégia de proteção
+
+Com base no diagnóstico, proponha uma estratégia de proteção que contemple a seleção de modalidades de PI para cada ativo (formal vs. informal), a priorização considerando custo-benefício e urgência, o cronograma de depósitos e registros (12–24 meses) e o orçamento estimado (taxas INPI/SNPC, honorários profissionais).
+
+### Etapa 6: Valoração
+
+Selecione o ativo de PI de maior potencial identificado no diagnóstico e conduza uma valoração simplificada utilizando pelo menos duas das três abordagens (custo, mercado, renda) discutidas no Capítulo 6. Compare os resultados das abordagens e discuta as fontes de incerteza.
+
+### Etapa 7: Plano de TT
+
+Proponha um plano de transferência de tecnologia que defina o mercado-alvo (produtores, agroindústrias, cooperativas), o modelo de TT (licenciamento, venda, extensão, SaaS), os canais de acesso ao usuário final, os termos de licenciamento propostos (royalties, exclusividade, território) e os indicadores de sucesso (adoção, receita, impacto social).
+
+## Entregáveis
+
+O projeto integrador deve resultar nos seguintes documentos:
+
+| Entregável | Formato | Extensão indicativa |
+|-----------|---------|-------------------:|
+| Relatório de prospecção tecnológica | PDF, com gráficos e tabelas | 8–12 páginas |
+| Diagnóstico de ativos de PI | Relatório + planilha de inventário | 5–8 páginas |
+| Estratégia de proteção | Documento executivo | 4–6 páginas |
+| Relatório de valoração | Relatório técnico com memória de cálculo | 6–10 páginas |
+| Plano de TT | Proposta executiva | 4–6 páginas |
+| Apresentação de síntese | Slides (15–20 min) | 15–20 slides |
+
+: Entregáveis do projeto integrador. {#tbl-entregaveis .striped .hover}
+
+## Critérios de avaliação
+
+| Critério | Peso | Descrição |
+|----------|-----:|----------|
+| Rigor técnico | 25% | Qualidade das buscas, consistência dos dados, adequação dos métodos de valoração |
+| Visão estratégica | 25% | Coerência da estratégia de PI, articulação entre proteção e TT |
+| Aplicabilidade | 20% | Viabilidade das propostas no contexto real da cadeia selecionada |
+| Integração conceitual | 15% | Articulação com os conceitos dos capítulos 1–10 |
+| Comunicação | 15% | Clareza do relatório, qualidade gráfica, objetividade da apresentação |
+
+: Critérios de avaliação do projeto integrador. {#tbl-avaliacao .striped .hover}
+
+## Sugestões de cadeias para o projeto
+
+Para orientação, seguem sugestões de cadeias produtivas com potencial particularmente rico para o projeto integrador.
+
+O café especial oferece oportunidades de IG (Cerrado Mineiro, Caparaó, Chapada Diamantina), marcas coletivas, patentes de processos de beneficiamento (fermentação controlada) e rastreabilidade blockchain. O cacau fino contempla IG (Ilhéus, Transamazônica), proteção de cultivares clonais, segredos industriais de fermentação e secagem, e marcas de chocolates *bean-to-bar*. O mel e produtos apícolas incluem IGs regionais, marcas coletivas de associações, patentes de processos de extração e conservação, e segredos de manejo apícola. Os bioinsumos apresentam patentes de formulações microbiológicas, registros de produtos (MAPA), segredos de processos de fermentação industrial e spin-offs acadêmicas. A agricultura digital e IoT envolve patentes de dispositivos, registro de softwares, proteção de bases de dados, marcas de plataformas e questões de governança de dados sob LGPD.
+
+::: {.callout-tip}
+## Dica final
+O projeto mais forte é aquele que parte de um problema real, conversa com atores reais e propõe soluções exequíveis. O melhor projeto de PI não é o mais sofisticado, mas o que gera valor concreto para a cadeia produtiva e os produtores que a sustentam.
+:::

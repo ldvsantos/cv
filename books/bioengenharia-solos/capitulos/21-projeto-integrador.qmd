@@ -1,8 +1,8 @@
-# Projeto Integrador {#sec-projeto-integrador}
+﻿# Projeto Integrador {#sec-projeto-integrador}
 
 ## Objetivo
 
-Este capítulo sintetiza os conhecimentos apresentados ao longo do livro em um **projeto integrador** de bioengenharia de solos, demonstrando como combinar múltiplas técnicas para resolver um problema real de degradação em região tropical. O objetivo não é apresentar uma receita fixa, mas um **método de trabalho** que permita ao projetista diagnosticar a situação de campo, selecionar as técnicas apropriadas, dimensionar as estruturas e monitorar os resultados, adaptando o projeto às condições locais de solo, clima, declividade e disponibilidade de materiais. A @fig-vocoroca mostra uma voçoroca ativa em solo tropical, feição erosiva de grande porte que exemplifica o tipo de desafio que demanda projeto integrado de múltiplas técnicas.
+Este capítulo sintetiza os conhecimentos apresentados ao longo do livro em um projeto integrador de bioengenharia de solos, demonstrando como combinar múltiplas técnicas para resolver um problema real de degradação em região tropical. O objetivo não é apresentar uma receita fixa, mas um método de trabalho que permita ao projetista diagnosticar a situação de campo, selecionar as técnicas apropriadas, dimensionar as estruturas e monitorar os resultados, adaptando o projeto às condições locais de solo, clima, declividade e disponibilidade de materiais. A @fig-vocoroca mostra uma voçoroca ativa em solo tropical, feição erosiva de grande porte que exemplifica o tipo de desafio que demanda projeto integrado de múltiplas técnicas.
 
 ![Voçoroca ativa em solo tropical — feição erosiva de grande porte com paredes laterais instáveis, fundo com escoamento concentrado e cabeceira em recuo ativo, demandando projeto integrado de múltiplas técnicas de bioengenharia.](../img/vocoroca_erosao.jpg){#fig-vocoroca fig-alt="Voçoroca ativa em solo tropical" width="85%"}
 
@@ -50,7 +50,7 @@ Utilizando a metodologia de classificação de feições erosivas apresentada em
 
 ### Etapa 3: Seleção de Técnicas
 
-A seleção de técnicas segue uma **matriz de decisão multicritério** que pondera sete variáveis, cada uma com peso proporcional à sua influência no desempenho da intervenção, conforme a @tbl-selecao.
+A seleção de técnicas segue uma matriz de decisão multicritério que pondera sete variáveis, cada uma com peso proporcional à sua influência no desempenho da intervenção, conforme a @tbl-selecao.
 
 | Critério | Peso | Variáveis consideradas |
 |----------|------|------------------------|
@@ -126,7 +126,7 @@ gantt
 
 ::: {.callout-warning}
 ## Período de implantação
-A implantação da fase de revegetação deve coincidir com o **início da estação chuvosa** para maximizar a taxa de estabelecimento da vegetação e a sobrevivência de mudas. Em regiões semiáridas com período chuvoso curto, irrigação suplementar pode ser necessária nos primeiros 60 dias após o plantio, período em que as raízes ainda não atingiram profundidade suficiente para acessar reservas hídricas do solo. O uso de Bio-SAP (@sec-biopolimeros) no substrato de plantio pode reduzir a demanda de irrigação em 50–70%.
+A implantação da fase de revegetação deve coincidir com o início da estação chuvosa para maximizar a taxa de estabelecimento da vegetação e a sobrevivência de mudas. Em regiões semiáridas com período chuvoso curto, irrigação suplementar pode ser necessária nos primeiros 60 dias após o plantio, período em que as raízes ainda não atingiram profundidade suficiente para acessar reservas hídricas do solo. O uso de Bio-SAP (@sec-biopolimeros) no substrato de plantio pode reduzir a demanda de irrigação em 50–70%.
 :::
 
 ### Etapa 7: Monitoramento
@@ -179,17 +179,17 @@ A @tbl-plano-intervencao apresenta o plano de intervenção por zona da voçoroc
 
 A modelagem dos resultados esperados utiliza a mesma equação RUSLE com os fatores $C$ e $P$ atualizados para refletir a progressão da cobertura vegetal e a instalação das práticas conservacionistas.
 
-No **Ano 1**, espera-se cobertura vegetal de 40–60% (estabelecimento das gramíneas por hidrossemeadura), com redução de erosão da ordem de 65% pela combinação das estruturas de contenção (paliçadas, gabiões) e da proteção superficial (biomantas).
+No Ano 1, espera-se cobertura vegetal de 40–60% (estabelecimento das gramíneas por hidrossemeadura), com redução de erosão da ordem de 65% pela combinação das estruturas de contenção (paliçadas, gabiões) e da proteção superficial (biomantas).
 
-No **Ano 3**, a cobertura vegetal deve superar 80% (consolidação da hidrossemeadura e crescimento das mudas arbóreas), com fator de segurança superior a 1,5 nos taludes estabilizados pela contribuição da coesão radicular ($\Delta c_r$).
+No Ano 3, a cobertura vegetal deve superar 80% (consolidação da hidrossemeadura e crescimento das mudas arbóreas), com fator de segurança superior a 1,5 nos taludes estabilizados pela contribuição da coesão radicular ($\Delta c_r$).
 
-No **Ano 5**, com a vegetação arbórea estabelecida ($C = 0{,}05$) e todas as práticas conservacionistas operacionais ($P = 0{,}6$), a perda de solo estimada pela RUSLE resulta em
+No Ano 5, com a vegetação arbórea estabelecida ($C = 0{,}05$) e todas as práticas conservacionistas operacionais ($P = 0{,}6$), a perda de solo estimada pela RUSLE resulta em
 
 $$
 A_{5} = 7.500 \times 0{,}028 \times 4{,}2 \times 0{,}05 \times 0{,}6 = 26{,}5 \text{ t/ha/ano}
 $$
 
-representando uma **redução de 91,4%** em relação à condição pré-intervenção (de 308,7 para 26,5 t/ha/ano), valor próximo à tolerância de perda de solo para Latossolos no Cerrado.
+representando uma redução de 91,4% em relação à condição pré-intervenção (de 308,7 para 26,5 t/ha/ano), valor próximo à tolerância de perda de solo para Latossolos no Cerrado.
 
 ### Orçamento Estimado
 
@@ -205,13 +205,13 @@ A @tbl-orcamento apresenta o orçamento estimado para a recuperação da voçoro
 | Biomanta C350 | m² | 1.800 | 25 | 45.000 |
 | Mudas arbóreas nativas | un | 500 | 8 | 4.000 |
 | Mão de obra | h | 800 | 35 | 28.000 |
-| **Total** | | | | **149.300** |
+| Total | | | | 149.300 |
 
 : Orçamento estimado para recuperação da voçoroca — valores referenciais incluindo material e mão de obra. {#tbl-orcamento .striped}
 
 ::: {.callout-tip}
 ## Custo-benefício
-O custo estimado de R$ 149.300 corresponde a aproximadamente **R$ 100/m linear** de voçoroca tratada, ou **R$ 12/m²** de área estabilizada, valor 3–5× inferior ao de soluções convencionais com muro de concreto armado para feições de porte equivalente (ver @tbl-custos-nbs em @sec-nbs). Quando os co-benefícios de sequestro de carbono e regulação hídrica são contabilizados, o retorno do investimento é estimado em 5–8 anos.
+O custo estimado de R$ 149.300 corresponde a aproximadamente R$ 100/m linear de voçoroca tratada, ou R$ 12/m² de área estabilizada, valor 3–5× inferior ao de soluções convencionais com muro de concreto armado para feições de porte equivalente (ver @tbl-custos-nbs em @sec-nbs). Quando os co-benefícios de sequestro de carbono e regulação hídrica são contabilizados, o retorno do investimento é estimado em 5–8 anos.
 :::
 
 ## Considerações Finais

@@ -1,0 +1,64 @@
+# PI na Agricultura Digital {#sec-agricultura-digital}
+
+## A transformação digital do agronegócio
+
+A agricultura digital (ou Agricultura 4.0) designa a convergência de tecnologias da informação e comunicação (TIC) com os processos produtivos agropecuários, abrangendo sensoriamento remoto e IoT (Internet das Coisas), inteligência artificial e aprendizado de máquina, big data e computação em nuvem, blockchain e registros distribuídos, drones e veículos autônomos e robótica e automação.
+
+Essa transformação gera um volume crescente de ativos intangíveis (algoritmos, bases de dados, interfaces, modelos preditivos) cuja proteção de PI é mais complexa e multifacetada do que a proteção de invenções mecânicas ou químicas tradicionais. A interface entre PI e agricultura digital constitui uma das fronteiras mais dinâmicas e controvertidas do direito da propriedade intelectual contemporâneo.
+
+## Ativos de PI na agricultura digital
+
+### Software e algoritmos
+
+Softwares são protegidos no Brasil pelo Direito Autoral (Lei 9.610/1998) e pela Lei de Software (Lei 9.609/1998), que concedem proteção por 50 anos independentemente de registro. O registro facultativo no INPI confere presunção de autoria e data de criação. No agro digital, softwares protegíveis incluem algoritmos de agricultura de precisão (recomendação de insumos site-specific), modelos de *machine learning* para previsão de safra, pragas e doenças, sistemas de gestão de propriedade rural (ERP agrícola) e plataformas de marketplace e logística agrícola.
+
+::: {.callout-important}
+## Atenção
+No Brasil, métodos matemáticos e algoritmos *per se* não são patenteáveis (Art. 10, LPI). Contudo, se o algoritmo está embutido em um sistema técnico que resolve um problema concreto (por exemplo, um dispositivo de irrigação que usa IA para otimizar aplicação de água), o sistema como um todo pode ser elegível a patente.
+:::
+
+### Bases de dados agrícolas
+
+As bases de dados são protegidas pela Lei 9.610/1998 como compilações criativas, mas os dados individuais que as compõem geralmente não têm proteção autoral. No agro, bases de dados de alto valor incluem séries históricas de produtividade por talhão, mapas de fertilidade e dados de sensores de solo, dados meteorológicos de estações de campo e registros de rastreabilidade da cadeia produtiva.
+
+A questão da propriedade dos dados agrícolas é particularmente sensível. Quando um produtor utiliza uma plataforma de gestão que coleta dados de sua lavoura, quem é o titular dos dados? A resposta depende dos termos de uso da plataforma, da legislação de proteção de dados (LGPD, Lei 13.709/2018) e de regulamentações setoriais emergentes. A tendência internacional aponta para a portabilidade de dados agrícolas, garantindo ao produtor o direito de acessar e transferir seus dados entre plataformas.
+
+### Hardware e dispositivos
+
+Dispositivos de IoT (sensores de solo, estações meteorológicas, atuadores de irrigação), drones agrícolas e robôs de colheita são protegíveis por patentes de invenção (mecanismo técnico), modelos de utilidade (melhoria funcional de dispositivo conhecido), desenho industrial (aparência estética do dispositivo) e marca (nome comercial e logotipo do produto).
+
+## Blockchain e rastreabilidade de PI
+
+A tecnologia blockchain oferece aplicações promissoras para gestão de PI na agricultura digital. No registro de PI, o *timestamping* descentralizado em blockchain pode complementar (não substituir) o registro formal no INPI, criando provas imutáveis de anterioridade especialmente úteis para segredos industriais e dados não registrados. Na rastreabilidade de cadeia, o blockchain permite certificar a origem, as condições de produção e as credenciais de sustentabilidade de produtos agrícolas, reforçando IGs e marcas coletivas. Nos *smart contracts*, contratos autoexecutáveis em blockchain podem automatizar o pagamento de royalties em licenciamentos de PI, reduzindo custos de transação e riscos de inadimplência.
+
+## Inteligência Artificial e PI agrícola
+
+A IA aplicada à agricultura suscita questões de PI especialmente complexas. A titularidade da invenção é a primeira dessas questões, pois quando um algoritmo de IA gera uma nova formulação de bioinsumo ou um novo padrão de plantio, quem é o inventor? Na legislação brasileira (e na maioria das jurisdições), apenas pessoas físicas podem ser inventoras, de modo que o crédito recai sobre o programador ou sobre o cientista que concebeu o sistema de IA. O dilema dos dados de treinamento é a segunda questão central, uma vez que modelos de IA agrícola são treinados com dados de múltiplas fontes (satélites, sensores, registros de produtores), e a PI do modelo resultante pode ser disputada entre o desenvolvedor do algoritmo, o fornecedor de dados e o produtor cujos dados alimentaram o treinamento.
+
+::: {.callout-note}
+## IA generativa e PI
+A IA generativa (ChatGPT, Gemini, etc.) pode produzir relatórios agronômicos, recomendações de manejo e até propostas de cultivares. Contudo, os *outputs* de IA generativa não são protegidos por direito autoral na maioria das jurisdições (por não terem autor humano), e seu uso em depósitos de patente exige transparência sobre a contribuição da IA versus a contribuição humana.
+:::
+
+## Proteção de dados e LGPD no agro
+
+A Lei Geral de Proteção de Dados (LGPD, Lei 13.709/2018) impacta a agricultura digital ao regulamentar o tratamento de dados pessoais de produtores rurais coletados por plataformas digitais, aplicativos de gestão e programas governamentais. Dados sensíveis (localização da propriedade, produtividade, situação financeira) exigem consentimento específico e medidas de segurança, e seu compartilhamento com terceiros (seguradoras, bancos, empresas de insumos) deve atender aos princípios de finalidade, adequação e necessidade.
+
+## Desafios de PI na agricultura digital
+
+A proteção de PI na agricultura digital enfrenta desafios estruturais: a velocidade da inovação digital (ciclos de 6–18 meses) é incompatível com a lentidão do sistema de patentes (7–10 anos de *backlog* no INPI). A natureza interdisciplinar dos ativos (hardware + software + dados + IA) dificulta a escolha da modalidade de proteção adequada. A interoperabilidade e os padrões abertos podem conflitar com estratégias de proteção proprietária. E a assimetria de poder entre plataformas globais (que coletam dados de milhões de hectares) e produtores individuais (que fornecem os dados) cria questões de governança de dados sem precedentes no direito da PI.
+
+| Ativo digital | Proteção principal | Proteção complementar | Desafio |
+|--------------|-------------------|---------------------|---------|
+| Software | Direito autoral (Lei 9.609) | Patente de sistema técnico | Engenharia reversa |
+| Base de dados | Direito autoral (compilação) | Segredo industrial | Propriedade dos dados |
+| Algoritmo/IA | Segredo industrial | Patente (se embutido em sistema) | Titularidade de invenção por IA |
+| Hardware IoT | Patente | Desenho industrial, marca | Custo e *backlog* INPI |
+| Blockchain | Segredo industrial | Registro de software | Interoperabilidade |
+
+: Proteção de ativos de PI na agricultura digital. {#tbl-pi-digital .striped .hover}
+
+::: {.callout-tip}
+## Exercício
+Imagine que você desenvolveu um modelo de *machine learning* para previsão de incidência de ferrugem asiática em soja, treinado com dados de 500 propriedades e imagens de satélite. Identifique todos os ativos de PI envolvidos (algoritmo, base de dados, interface, marca). Proponha uma estratégia de proteção que equilibre abertura científica e captura de valor comercial. Discuta as implicações da LGPD para o uso dos dados dos produtores.
+:::

@@ -1,0 +1,55 @@
+# Empreendedorismo Tecnológico Agrícola {#sec-empreendedorismo}
+
+## Empreendedorismo e inovação no contexto rural
+
+O empreendedorismo tecnológico no setor agropecuário pode ser definido como a criação de negócios baseados em conhecimento e tecnologia que geram valor ao longo da cadeia produtiva agrícola. Diferentemente do empreendedorismo rural tradicional (que envolve a atividade produtiva em si), o empreendedorismo tecnológico agrícola focaliza a criação de soluções inovadoras, sejam produtos, processos ou serviços, que resolvam gargalos identificados na produção, beneficiamento, logística ou comercialização agropecuária.
+
+Schumpeter [-@schumpeter1942] já havia identificado o empreendedor como agente central do processo de "destruição criadora" que movimenta o capitalismo. No agro contemporâneo, essa destruição criadora se manifesta nas AgTechs (startups de tecnologia agrícola) que desafiam modelos de negócio estabelecidos por meio de plataformas digitais, bioinsumos, drones, inteligência artificial e soluções de rastreabilidade.
+
+## O ecossistema AgTech brasileiro
+
+O Brasil é o segundo maior ecossistema de AgTechs do mundo (atrás apenas dos EUA), com mais de 1.800 startups mapeadas em 2024 [@abstartups2024]. Esse ecossistema se distribui em segmentos como agricultura de precisão e sensoriamento (25%), gestão de propriedade e marketplace (20%), bioinsumos e biotecnologia (15%), logística e rastreabilidade (12%), crédito e fintech agrícola (10%) e soluções de sustentabilidade e carbono (8%).
+
+A distribuição geográfica concentra-se no eixo Piracicaba–Campinas–São Paulo, onde a proximidade com a ESALQ/USP, o IAC e a Embrapa atua como catalisador, mas polos emergentes se consolidam em Viçosa (MG), Londrina (PR), Brasília (DF) e, mais recentemente, em Feira de Santana (BA) e Petrolina (PE), impulsionados por demandas específicas do Semiárido e do Cerrado.
+
+| Segmento | % AgTechs | Tendência (2024–2030) |
+|----------|-----------|----------------------|
+| Agricultura de precisão e sensoriamento | 25% | Consolidação e integração com IA |
+| Gestão de propriedade e marketplace | 20% | Plataformas B2B e *fintech* integradas |
+| Bioinsumos e biotecnologia | 15% | Crescimento acelerado (regulamentação favorável) |
+| Logística e rastreabilidade | 12% | Blockchain e certificação de origem |
+| Crédito e *fintech* agrícola | 10% | Tokenização e crédito de carbono |
+| Sustentabilidade e carbono | 8% | Mercado regulado e voluntário em expansão |
+| Outros (educação, conectividade, etc.) | 10% | Conectividade rural como habilitador |
+
+: Segmentos das AgTechs brasileiras. {#tbl-agtechs .striped .hover}
+
+## Do laboratório ao mercado: o vale da morte
+
+O "vale da morte" (*valley of death*) designa o intervalo entre a prova de conceito de uma tecnologia e sua viabilidade comercial, período no qual a maioria das inovações agrícolas fracassa por falta de financiamento, validação de campo ou acesso a mercado. No agro, esse vale é particularmente profundo porque a validação requer safras completas (6–18 meses por ciclo), o mercado-alvo (produtores rurais) é avesso a riscos e disperso geograficamente, e a regulamentação (registro de agroquímicos, bioinsumos, OGMs) impõe custos e prazos elevados.
+
+Para superar o vale da morte, o empreendedor tecnológico agrícola dispõe de instrumentos como editais de fomento (FINEP, FAPESP PIPE, CNPq), aceleradoras especializadas (SP Ventures, Pulse/Raízen, AgriHub), programas de *corporate venture* (Bayer Grants4Ag, Syngenta Ventures) e o Marco Legal de Startups (LC 182/2021), que simplifica contratações com o poder público.
+
+::: {.callout-note}
+## Nível de prontidão tecnológica (TRL)
+A escala TRL (*Technology Readiness Level*), originária da NASA, é amplamente utilizada para classificar o estágio de maturidade de tecnologias agrícolas. Vai de TRL 1 (princípio básico observado) a TRL 9 (sistema comprovado em ambiente operacional). O vale da morte tipicamente ocorre entre TRL 4 (validação em laboratório) e TRL 7 (demonstração em campo).
+:::
+
+## PI como alicerce do empreendedorismo tecnológico
+
+A proteção da propriedade intelectual é condição necessária para o empreendedorismo tecnológico por três razões. Em primeiro lugar, a PI confere apropriabilidade, garantindo que o retorno do investimento em P&D não seja diluído por imitadores. Em segundo lugar, a PI funciona como sinalização para investidores, pois um portfólio de patentes ou cultivares protegidas demonstra competência técnica e capacidade de execução. Em terceiro lugar, a PI é moeda de troca em negociações de licenciamento, joint ventures e fusões e aquisições (M&A).
+
+Estudos empíricos demonstram que startups com patentes depositadas atraem 2–3× mais investimento de risco e têm probabilidade 35% maior de *exit* bem-sucedido [@helmers2019]. No ecossistema AgTech brasileiro, onde a competição com incumbentes multinacionais é acirrada, a PI pode ser o diferencial entre escalar e desaparecer.
+
+## Modelos de negócio baseados em PI agrícola
+
+Os modelos de negócio no agronegócio podem alavancar a PI de formas distintas. O modelo de licenciamento transfere o direito de uso da tecnologia a terceiros mediante royalties (como o sistema de royalties de sementes de soja RR da Monsanto/Bayer). O modelo de produto proprietário integra a PI ao produto vendido diretamente ao produtor (bioinsumos formulados, sensores patenteados). O modelo de plataforma utiliza PI (algoritmos, bases de dados) como barreira de entrada em plataformas digitais de gestão e marketplace. O modelo de certificação alavanca IGs e marcas coletivas para agregar valor a produtos regionais.
+
+## Competências empreendedoras para o agronegócio
+
+O empreendedor tecnológico agrícola necessita de competências transversais que incluem conhecimento técnico-agronômico (entendimento profundo do problema que resolve), gestão de PI (capacidade de mapear, proteger e negociar ativos intangíveis), *pitching* e captação de recursos (comunicação persuasiva com investidores e editais), gestão ágil de projetos (metodologias Lean e Design Thinking aplicadas ao contexto rural) e visão de mercado (compreensão das cadeias de valor agrícolas e suas ineficiências).
+
+::: {.callout-tip}
+## Exercício
+Identifique um gargalo na cadeia produtiva de uma commodity do seu estado. Proponha uma solução tecnológica e mapeie que modalidades de PI (patente, marca, IG, cultivar) poderiam protegê-la. Estime o valor potencial do ativo e identifique mecanismos de financiamento adequados ao TRL da sua proposta.
+:::

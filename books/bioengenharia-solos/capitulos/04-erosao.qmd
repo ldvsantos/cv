@@ -1,12 +1,12 @@
-# Erosão do Solo: Tipos e Processos {#sec-erosao}
+﻿# Erosão do Solo: Tipos e Processos {#sec-erosao}
 
 ## Conceito e Magnitude
 
-A erosão hídrica é o processo de desprendimento, transporte e deposição de partículas de solo pela ação da água. Embora a erosão seja um fenômeno natural que ocorre em todas as paisagens (sendo, de fato, o agente modelador do relevo terrestre ao longo do tempo geológico), as atividades humanas (desmatamento, agricultura intensiva, urbanização) aceleraram esse processo em taxas que superam em 10 a 100 vezes a erosão natural. Em escala global, estima-se que **75 bilhões de toneladas de solo** sejam erodidas anualmente, com custo econômico superior a **US$ 400 bilhões/ano** [@morgan2005], considerando-se perdas de produtividade agrícola, assoreamento de reservatórios, degradação da qualidade da água e destruição de infraestrutura.
+A erosão hídrica é o processo de desprendimento, transporte e deposição de partículas de solo pela ação da água. Embora a erosão seja um fenômeno natural que ocorre em todas as paisagens (sendo, de fato, o agente modelador do relevo terrestre ao longo do tempo geológico), as atividades humanas (desmatamento, agricultura intensiva, urbanização) aceleraram esse processo em taxas que superam em 10 a 100 vezes a erosão natural. Em escala global, estima-se que 75 bilhões de toneladas de solo sejam erodidas anualmente, com custo econômico superior a US$ 400 bilhões/ano [@morgan2005], considerando-se perdas de produtividade agrícola, assoreamento de reservatórios, degradação da qualidade da água e destruição de infraestrutura.
 
 Para quem atua em bioengenharia de solos, compreender os mecanismos erosivos é o ponto de partida obrigatório, pois cada tipo de erosão demanda técnicas de controle específicas. Um tratamento projetado para erosão laminar será ineficaz contra uma voçoroca ativa, e vice-versa.
 
-Em regiões tropicais, a erosividade da chuva (fator R da RUSLE) é tipicamente **3 a 5 vezes maior** do que em zonas temperadas, devido à maior frequência de chuvas convectivas intensas (com gotas de grande diâmetro e alta energia cinética), tornando a erosão um dos processos geomorfológicos mais ativos e um dos maiores desafios ambientais do Brasil.
+Em regiões tropicais, a erosividade da chuva (fator R da RUSLE) é tipicamente 3 a 5 vezes maior do que em zonas temperadas, devido à maior frequência de chuvas convectivas intensas (com gotas de grande diâmetro e alta energia cinética), tornando a erosão um dos processos geomorfológicos mais ativos e um dos maiores desafios ambientais do Brasil.
 
 ## RUSLE (Equação Universal de Perda de Solo)
 
@@ -16,7 +16,7 @@ $$
 A = R \cdot K \cdot L \cdot S \cdot C \cdot P
 $$
 
-A @tbl-rusle descreve cada fator da equação. É importante notar que o resultado ($A$) expressa a **média anual** de perda de solo em toneladas por hectare por ano, e que a equação assume condições de estado estacionário para uma encosta retilínea com comprimento e declividade uniformes.
+A @tbl-rusle descreve cada fator da equação. É importante notar que o resultado ($A$) expressa a média anual de perda de solo em toneladas por hectare por ano, e que a equação assume condições de estado estacionário para uma encosta retilínea com comprimento e declividade uniformes.
 
 | Fator | Significado | Unidade | O que controla |
 |-------|------------|---------|----------------|
@@ -32,7 +32,7 @@ A @tbl-rusle descreve cada fator da equação. É importante notar que o resulta
 
 ::: {.callout-tip}
 ## Parâmetro-chave para bioengenharia
-Os fatores $C$ e $P$ são os diretamente manipuláveis pela bioengenharia. Uma cobertura de gramíneas pode reduzir $C$ de 1,0 (solo nu) para 0,01, representando uma **redução de 99% na erosão**. Da mesma forma, paliçadas ou cordões vegetativos reduzem efetivamente o fator $L$ (comprimento da rampa), enquanto terraços alteram o fator $S$ (declividade). A combinação dessas intervenções pode reduzir a perda de solo de centenas de toneladas por hectare/ano para valores abaixo da tolerância.
+Os fatores $C$ e $P$ são os diretamente manipuláveis pela bioengenharia. Uma cobertura de gramíneas pode reduzir $C$ de 1,0 (solo nu) para 0,01, representando uma redução de 99% na erosão. Da mesma forma, paliçadas ou cordões vegetativos reduzem efetivamente o fator $L$ (comprimento da rampa), enquanto terraços alteram o fator $S$ (declividade). A combinação dessas intervenções pode reduzir a perda de solo de centenas de toneladas por hectare/ano para valores abaixo da tolerância.
 :::
 
 ## Tipos de Erosão
@@ -43,7 +43,7 @@ A erosão hídrica se manifesta em diferentes formas, que representam um contín
 
 ### Erosão Laminar (*Sheet Erosion*)
 
-A erosão laminar consiste na remoção uniforme de uma fina camada de solo pela ação do escoamento superficial difuso (uma lâmina d'água rasa que escoa uniformemente sobre a superfície). É a forma **mais insidiosa** de erosão por ser visualmente imperceptível; o agricultor perde solo progressivamente sem notar, até que a exposição dos horizontes subsuperficiais (mais claros, mais compactos) revele a gravidade da situação. Em regiões tropicais, a erosão laminar sob chuvas intensas pode remover 1–3 mm de solo por evento, o que equivale a 15–45 t/ha. A proteção da superfície por cobertura vegetal viva, morta (mulch) ou artificial (biomantas) é a estratégia primária de controle.
+A erosão laminar consiste na remoção uniforme de uma fina camada de solo pela ação do escoamento superficial difuso (uma lâmina d'água rasa que escoa uniformemente sobre a superfície). É a forma mais insidiosa de erosão por ser visualmente imperceptível; o agricultor perde solo progressivamente sem notar, até que a exposição dos horizontes subsuperficiais (mais claros, mais compactos) revele a gravidade da situação. Em regiões tropicais, a erosão laminar sob chuvas intensas pode remover 1–3 mm de solo por evento, o que equivale a 15–45 t/ha. A proteção da superfície por cobertura vegetal viva, morta (mulch) ou artificial (biomantas) é a estratégia primária de controle.
 
 ### Erosão em Sulcos (*Rill Erosion*)
 
@@ -51,19 +51,19 @@ Quando o escoamento superficial se concentra em pequenos canais paralelos à enc
 
 ### Erosão em Ravinas (*Gully Erosion*)
 
-A ravina é um canal permanente com profundidade superior a 30 cm que **não pode ser eliminado por operações agrícolas convencionais**. Representa o estágio avançado da erosão hídrica concentrada e é o tipo de feição erosiva que mais demanda intervenções de bioengenharia. A @fig-ravina-campo mostra uma ravina ativa em solo tropical, onde é possível observar as paredes verticais expostas e a ausência de cobertura vegetal no interior do canal.
+A ravina é um canal permanente com profundidade superior a 30 cm que não pode ser eliminado por operações agrícolas convencionais. Representa o estágio avançado da erosão hídrica concentrada e é o tipo de feição erosiva que mais demanda intervenções de bioengenharia. A @fig-ravina-campo mostra uma ravina ativa em solo tropical, onde é possível observar as paredes verticais expostas e a ausência de cobertura vegetal no interior do canal.
 
 ![Ravina ativa em solo tropical — canal permanente que não pode ser eliminado por operações agrícolas convencionais.](../img/ravina_campo.jpg){#fig-ravina-campo fig-alt="Ravina ativa em campo" width="75%"}
 
-As ravinas podem ser classificadas segundo seu mecanismo de crescimento dominante. As **ravinas de cabeceira** retrocedem por erosão remontante, na qual o escoamento concentrado escava a montante, alargando progressivamente a área de contribuição. As **ravinas laterais** se expandem por solapamento e desabamento das paredes, processo acelerado pelo umedecimento diferencial e pela ação do gelo em altas altitudes ou pela simples saturação em ambientes tropicais. As **ravinas de fundo** se aprofundam por incisão do talvegue, podendo atingir horizontes mais compactos ou o lençol freático. É comum que os três mecanismos atuem simultaneamente na mesma ravina, exigindo um tratamento integrado de bioengenharia que aborde cabeceira, paredes e fundo do canal.
+As ravinas podem ser classificadas segundo seu mecanismo de crescimento dominante. As ravinas de cabeceira retrocedem por erosão remontante, na qual o escoamento concentrado escava a montante, alargando progressivamente a área de contribuição. As ravinas laterais se expandem por solapamento e desabamento das paredes, processo acelerado pelo umedecimento diferencial e pela ação do gelo em altas altitudes ou pela simples saturação em ambientes tropicais. As ravinas de fundo se aprofundam por incisão do talvegue, podendo atingir horizontes mais compactos ou o lençol freático. É comum que os três mecanismos atuem simultaneamente na mesma ravina, exigindo um tratamento integrado de bioengenharia que aborde cabeceira, paredes e fundo do canal.
 
 ### Voçorocas
 
-As voçorocas são feições erosivas de grande porte (profundidade > 1,5 m, largura > 3 m) que frequentemente **atingem o lençol freático**, adicionando a contribuição de água subterrânea ao processo erosivo. Representam o estágio mais severo de degradação do solo e constituem um dos maiores desafios para a bioengenharia.
+As voçorocas são feições erosivas de grande porte (profundidade > 1,5 m, largura > 3 m) que frequentemente atingem o lençol freático, adicionando a contribuição de água subterrânea ao processo erosivo. Representam o estágio mais severo de degradação do solo e constituem um dos maiores desafios para a bioengenharia.
 
 A formação de voçorocas está associada a três mecanismos interconectados. O primeiro é a progressão da erosão superficial, na qual ravinas não controladas se ampliam e aprofundam até atingir dimensões de voçoroca. O segundo é a erosão subsuperficial (*piping*), na qual a percolação de água através de descontinuidades do solo (fraturas, raízes mortas, galerias de animais) gera túneis internos cujo colapso súbito forma a feição erosiva. O terceiro é a instabilidade de taludes, na qual o solapamento da base pela exfiltração do lençol freático causa desabamentos sucessivos das paredes, ampliando lateralmente a voçoroca.
 
-O tratamento de voçorocas ativas exige um **projeto integrado** que combine drenagem superficial (desvio das águas de contribuição), drenagem subsuperficial (interceptação de *pipes*), estabilização mecânica das paredes (gabiões vivos, paredes Krainer, retaludamento) e revegetação progressiva. Abordagens pontuais ou parciais tendem ao fracasso, pois os processos atuantes são múltiplos e interconectados.
+O tratamento de voçorocas ativas exige um projeto integrado que combine drenagem superficial (desvio das águas de contribuição), drenagem subsuperficial (interceptação de *pipes*), estabilização mecânica das paredes (gabiões vivos, paredes Krainer, retaludamento) e revegetação progressiva. Abordagens pontuais ou parciais tendem ao fracasso, pois os processos atuantes são múltiplos e interconectados.
 
 ## Mecanismos de Erosão
 
@@ -71,7 +71,7 @@ O processo erosivo envolve três fases sequenciais cujo entendimento é fundamen
 
 ### 1. Desprendimento (*Detachment*)
 
-O impacto das gotas de chuva (*splash*) é o principal agente de desprendimento de partículas de solo. Para dimensionar essa magnitude, considere que uma gota de 5 mm de diâmetro (comum em chuvas convectivas tropicais) atinge o solo a aproximadamente 9 m/s, exercendo pressão instantânea de até **6 MPa** (equivalente a cerca de 60 atmosferas), força suficiente para desagregar partículas e projetá-las a mais de 1 metro de distância. Uma chuva tropical intensa pode gerar milhares de impactos por centímetro quadrado por hora.
+O impacto das gotas de chuva (*splash*) é o principal agente de desprendimento de partículas de solo. Para dimensionar essa magnitude, considere que uma gota de 5 mm de diâmetro (comum em chuvas convectivas tropicais) atinge o solo a aproximadamente 9 m/s, exercendo pressão instantânea de até 6 MPa (equivalente a cerca de 60 atmosferas), força suficiente para desagregar partículas e projetá-las a mais de 1 metro de distância. Uma chuva tropical intensa pode gerar milhares de impactos por centímetro quadrado por hora.
 
 A taxa de desprendimento é função da energia cinética da chuva:
 
@@ -112,13 +112,13 @@ Nas regiões tropicais, quatro fatores condicionam a intensidade e a dinâmica d
 
 ## Erosão Marginal
 
-Em regiões tropicais, a erosão das margens fluviais é um processo crítico que afeta diretamente comunidades ribeirinhas, áreas agrícolas, infraestrutura viária e ecossistemas ripários. O mecanismo envolve o solapamento da base da margem pelo fluxo do rio (que remove material na zona de contato com a água), seguido pelo desabamento gravitacional do bloco superior, ciclo que se repete a cada cheia. O Baixo São Francisco (SE/AL), por exemplo, perde em média **2 a 5 metros de margem por ano**, com registro de trechos onde a erosão atingiu 10 m/ano, resultando em perda de terras agriculturáveis, destruição de residências e desestabilização de rodovias.
+Em regiões tropicais, a erosão das margens fluviais é um processo crítico que afeta diretamente comunidades ribeirinhas, áreas agrícolas, infraestrutura viária e ecossistemas ripários. O mecanismo envolve o solapamento da base da margem pelo fluxo do rio (que remove material na zona de contato com a água), seguido pelo desabamento gravitacional do bloco superior, ciclo que se repete a cada cheia. O Baixo São Francisco (SE/AL), por exemplo, perde em média 2 a 5 metros de margem por ano, com registro de trechos onde a erosão atingiu 10 m/ano, resultando em perda de terras agriculturáveis, destruição de residências e desestabilização de rodovias.
 
 A bioengenharia de solos oferece soluções específicas para erosão marginal, combinando retaludamento (suavização do ângulo da margem para estabilização geométrica), enrocamento vegetado na base da margem (resistência mecânica à abrasão pelo fluxo com enraizamento progressivo) e revegetação ciliar no topo do talude (ancoragem radicular e interceptação de escoamento superficial). Essas técnicas serão detalhadas nos capítulos sobre gabiões vivos (@sec-gabiao-vivo), paredes Krainer (@sec-parede-krainer) e revegetação (@sec-revegetacao).
 
 ## Tolerância de Perda de Solo
 
-A **tolerância de perda de solo** ($T$) é um conceito fundamental para justificar a necessidade de intervenções de bioengenharia. Trata-se da taxa máxima de erosão compatível com a manutenção da produtividade do solo em longo prazo, ou seja, a taxa na qual a formação de novo solo (por intemperismo) equilibra a perda por erosão.
+A tolerância de perda de solo ($T$) é um conceito fundamental para justificar a necessidade de intervenções de bioengenharia. Trata-se da taxa máxima de erosão compatível com a manutenção da produtividade do solo em longo prazo, ou seja, a taxa na qual a formação de novo solo (por intemperismo) equilibra a perda por erosão.
 
 | Classe de solo | T (t ha⁻¹ ano⁻¹) | Justificativa |
 |---------------|-------------------|---------------|
@@ -128,4 +128,4 @@ A **tolerância de perda de solo** ($T$) é um conceito fundamental para justifi
 
 : Tolerância de perda de solo para classes de solos tropicais [@bertoni2017]. {#tbl-tolerancia .striped}
 
-Quando a perda atual ($A$, calculada pela RUSLE ou medida em parcelas experimentais) excede a tolerância ($T$), intervenções de bioengenharia são **necessárias** para evitar a degradação irreversível do recurso solo. Essa relação $A > T$ é o critério técnico que fundamenta a recomendação de intervenção e orienta o dimensionamento das técnicas de controle, cuja intensidade deve ser proporcional ao excedente $A - T$.
+Quando a perda atual ($A$, calculada pela RUSLE ou medida em parcelas experimentais) excede a tolerância ($T$), intervenções de bioengenharia são necessárias para evitar a degradação irreversível do recurso solo. Essa relação $A > T$ é o critério técnico que fundamenta a recomendação de intervenção e orienta o dimensionamento das técnicas de controle, cuja intensidade deve ser proporcional ao excedente $A - T$.
