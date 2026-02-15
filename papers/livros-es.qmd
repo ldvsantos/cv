@@ -12,53 +12,67 @@ Libros y ebooks de autoría de **Luiz Diego Vidal Santos**, disponibles en forma
 
 ## Ebooks
 
-::: {.card .shadow-sm .mb-4}
-::: {.text-center .p-3}
-![](../books/bioengenharia-solos/img/capa_bioengenharia_de_solos.png){fig-alt="Portada del ebook Bioingeniería de Suelos en Regiones Tropicales" style="max-height:320px; object-fit:contain;"}
-:::
-::: {.card-body}
+```{=html}
+<div class="book-card">
+  <div class="book-cover">
+    <a href="../books/bioengenharia-solos/">
+      <img src="../books/bioengenharia-solos/img/capa_bioengenharia_de_solos.png" alt="Portada del ebook Bioingeniería de Suelos en Regiones Tropicales">
+    </a>
+  </div>
+  <div class="book-info">
+    <p class="book-author">Luiz Diego Vidal Santos</p>
+    <h4 class="book-title">Bioingeniería de Suelos en Regiones Tropicales</h4>
+    <p class="book-subtitle">Fundamentos, Técnicas y Aplicaciones</p>
+    <p class="book-desc">Manual técnico-científico con 21 capítulos organizados en 4 partes, abarcando desde fundamentos de formación de suelos y erosión hasta técnicas de estabilización con materiales vivos, innovaciones en geotextiles y biopolímeros superabsorbentes. Incluye ecuaciones de dimensionamiento, tablas comparativas y estudios de caso.</p>
+    <div class="book-meta">
+      <span><i class="bi bi-journal-text"></i> 21 capítulos</span>
+      <span><i class="bi bi-unlock"></i> CC BY-NC-SA 4.0</span>
+    </div>
+    <div class="book-actions">
+      <a href="../books/bioengenharia-solos/" class="btn btn-primary btn-sm"><i class="fa-solid fa-book-open"></i> Acceder al ebook</a>
+    </div>
+  </div>
+</div>
 
-### Bioingeniería de Suelos en Regiones Tropicales {.card-title}
+<div class="book-card">
+  <div class="book-cover">
+    <a href="../books/ciencia-paisagem/">
+      <img src="../books/ciencia-paisagem/img/capa_ciencia_paisagem.png" alt="Portada del ebook Ciencia del Paisaje">
+    </a>
+  </div>
+  <div class="book-info">
+    <p class="book-author">Luiz Diego Vidal Santos</p>
+    <h4 class="book-title">Ciencia del Paisaje</h4>
+    <p class="book-subtitle">Fundamentos, Métodos de Análisis y Planificación Territorial</p>
+    <p class="book-desc">Libro de texto con 21 capítulos organizados en 4 partes, abarcando desde fundamentos de ecología del paisaje y métricas espaciales hasta teledetección, SIG, dinámica de uso del suelo, servicios ecosistémicos, restauración ecológica y modelación de escenarios para la gestión sostenible de paisajes tropicales.</p>
+    <div class="book-meta">
+      <span><i class="bi bi-journal-text"></i> 21 capítulos</span>
+      <span><i class="bi bi-unlock"></i> CC BY-NC-SA 4.0</span>
+    </div>
+    <div class="book-actions">
+      <a href="../books/ciencia-paisagem/" class="btn btn-success btn-sm"><i class="fa-solid fa-book-open"></i> Acceder al ebook</a>
+    </div>
+  </div>
+</div>
 
-**Fundamentos, Técnicas y Aplicaciones**
-
-Manual técnico-científico con 21 capítulos organizados en 4 partes, abarcando desde fundamentos de formación de suelos y erosión hasta técnicas de estabilización con materiales vivos, innovaciones en geotextiles y biopolímeros superabsorbentes. Incluye ecuaciones de dimensionamiento, tablas comparativas y estudios de caso. Licencia CC BY-NC-SA 4.0.
-
-[{{< fa book-open >}} Acceder al ebook](../books/bioengenharia-solos/){.btn .btn-primary .btn-sm}
-
-:::
-:::
-
-::: {.card .shadow-sm .mb-4}
-::: {.text-center .p-3}
-![](../books/ciencia-paisagem/img/capa_ciencia_paisagem.png){fig-alt="Portada del ebook Ciencia del Paisaje" style="max-height:320px; object-fit:contain;"}
-:::
-::: {.card-body}
-
-### Ciencia del Paisaje {.card-title}
-
-**Fundamentos, Métodos de Análisis y Planificación Territorial**
-
-Libro de texto con 21 capítulos organizados en 4 partes, abarcando desde fundamentos de ecología del paisaje y métricas espaciales hasta teledetección, SIG, dinámica de uso del suelo, servicios ecosistémicos, restauración ecológica y modelación de escenarios para la gestión sostenible de paisajes tropicales. Licencia CC BY-NC-SA 4.0.
-
-[{{< fa book-open >}} Acceder al ebook](../books/ciencia-paisagem/){.btn .btn-success .btn-sm}
-
-:::
-:::
-
-::: {.card .shadow-sm .mb-4}
-::: {.text-center .p-3}
-![](../books/pi/img/capa_pi.png){fig-alt="Portada del ebook Propiedad Intelectual e Innovación en el Agronegocio" style="max-height:320px; object-fit:contain;"}
-:::
-::: {.card-body}
-
-### Propiedad Intelectual e Innovación en el Agronegocio {.card-title}
-
-**Fundamentos, Protección y Transferencia de Tecnología**
-
-Libro de texto con 11 capítulos organizados en 4 partes, abordando gestión de la innovación, protección de activos intangibles (patentes, cultivares, indicaciones geográficas), valoración de PI, transferencia de tecnología, emprendimiento tecnológico agrícola, spin-offs académicas y PI en la agricultura digital. Licencia CC BY-NC-SA 4.0.
-
-[{{< fa book-open >}} Acceder al ebook](../books/pi/){.btn .btn-warning .btn-sm}
-
-:::
-:::
+<div class="book-card">
+  <div class="book-cover">
+    <a href="../books/pi/">
+      <img src="../books/pi/img/capa_pi.png" alt="Portada del ebook Propiedad Intelectual e Innovación en el Agronegocio">
+    </a>
+  </div>
+  <div class="book-info">
+    <p class="book-author">Luiz Diego Vidal Santos</p>
+    <h4 class="book-title">Propiedad Intelectual e Innovación en el Agronegocio</h4>
+    <p class="book-subtitle">Fundamentos, Protección y Transferencia de Tecnología</p>
+    <p class="book-desc">Libro de texto con 11 capítulos organizados en 4 partes, abordando gestión de la innovación, protección de activos intangibles (patentes, cultivares, indicaciones geográficas), valoración de PI, transferencia de tecnología, emprendimiento tecnológico agrícola, spin-offs académicas y PI en la agricultura digital.</p>
+    <div class="book-meta">
+      <span><i class="bi bi-journal-text"></i> 11 capítulos</span>
+      <span><i class="bi bi-unlock"></i> CC BY-NC-SA 4.0</span>
+    </div>
+    <div class="book-actions">
+      <a href="../books/pi/" class="btn btn-warning btn-sm"><i class="fa-solid fa-book-open"></i> Acceder al ebook</a>
+    </div>
+  </div>
+</div>
+```

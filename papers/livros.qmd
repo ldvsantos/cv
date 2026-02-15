@@ -11,53 +11,67 @@ Livros e ebooks de autoria de **Luiz Diego Vidal Santos**, disponíveis em forma
 
 ## Ebooks
 
-::: {.card .shadow-sm .mb-4}
-::: {.text-center .p-3}
-![](../books/bioengenharia-solos/img/capa_bioengenharia_de_solos.png){fig-alt="Capa do ebook Bioengenharia de Solos em Regiões Tropicais" style="max-height:320px; object-fit:contain;"}
-:::
-::: {.card-body}
+```{=html}
+<div class="book-card">
+  <div class="book-cover">
+    <a href="../books/bioengenharia-solos/">
+      <img src="../books/bioengenharia-solos/img/capa_bioengenharia_de_solos.png" alt="Capa do ebook Bioengenharia de Solos em Regiões Tropicais">
+    </a>
+  </div>
+  <div class="book-info">
+    <p class="book-author">Luiz Diego Vidal Santos</p>
+    <h4 class="book-title">Bioengenharia de Solos em Regiões Tropicais</h4>
+    <p class="book-subtitle">Fundamentos, Técnicas e Aplicações</p>
+    <p class="book-desc">Manual técnico-científico com 21 capítulos organizados em 4 partes, abrangendo desde fundamentos de formação dos solos e erosão até técnicas de estabilização com materiais vivos, inovações em geotêxteis e biopolímeros superabsorventes. Inclui equações de dimensionamento, tabelas comparativas e estudos de caso.</p>
+    <div class="book-meta">
+      <span><i class="bi bi-journal-text"></i> 21 capítulos</span>
+      <span><i class="bi bi-unlock"></i> CC BY-NC-SA 4.0</span>
+    </div>
+    <div class="book-actions">
+      <a href="../books/bioengenharia-solos/" class="btn btn-primary btn-sm"><i class="fa-solid fa-book-open"></i> Acessar o ebook</a>
+    </div>
+  </div>
+</div>
 
-### Bioengenharia de Solos em Regiões Tropicais {.card-title}
+<div class="book-card">
+  <div class="book-cover">
+    <a href="../books/ciencia-paisagem/">
+      <img src="../books/ciencia-paisagem/img/capa_ciencia_paisagem.png" alt="Capa do ebook Ciência da Paisagem">
+    </a>
+  </div>
+  <div class="book-info">
+    <p class="book-author">Luiz Diego Vidal Santos</p>
+    <h4 class="book-title">Ciência da Paisagem</h4>
+    <p class="book-subtitle">Fundamentos, Métodos de Análise e Planejamento Territorial</p>
+    <p class="book-desc">Livro-texto com 21 capítulos organizados em 4 partes, cobrindo desde fundamentos da ecologia da paisagem e métricas espaciais até sensoriamento remoto, geoprocessamento, dinâmica de uso do solo, serviços ecossistêmicos, restauração ecológica e modelagem de cenários para gestão sustentável de paisagens tropicais.</p>
+    <div class="book-meta">
+      <span><i class="bi bi-journal-text"></i> 21 capítulos</span>
+      <span><i class="bi bi-unlock"></i> CC BY-NC-SA 4.0</span>
+    </div>
+    <div class="book-actions">
+      <a href="../books/ciencia-paisagem/" class="btn btn-success btn-sm"><i class="fa-solid fa-book-open"></i> Acessar o ebook</a>
+    </div>
+  </div>
+</div>
 
-**Fundamentos, Técnicas e Aplicações**
-
-Manual técnico-científico com 21 capítulos organizados em 4 partes, abrangendo desde fundamentos de formação dos solos e erosão até técnicas de estabilização com materiais vivos, inovações em geotêxteis e biopolímeros superabsorventes. Inclui equações de dimensionamento, tabelas comparativas e estudos de caso. Licença CC BY-NC-SA 4.0.
-
-[{{< fa book-open >}} Acessar o ebook](../books/bioengenharia-solos/){.btn .btn-primary .btn-sm}
-
-:::
-:::
-
-::: {.card .shadow-sm .mb-4}
-::: {.text-center .p-3}
-![](../books/ciencia-paisagem/img/capa_ciencia_paisagem.png){fig-alt="Capa do ebook Ciência da Paisagem" style="max-height:320px; object-fit:contain;"}
-:::
-::: {.card-body}
-
-### Ciência da Paisagem {.card-title}
-
-**Fundamentos, Métodos de Análise e Planejamento Territorial**
-
-Livro-texto com 21 capítulos organizados em 4 partes, cobrindo desde fundamentos da ecologia da paisagem e métricas espaciais até sensoriamento remoto, geoprocessamento, dinâmica de uso do solo, serviços ecossistêmicos, restauração ecológica e modelagem de cenários para gestão sustentável de paisagens tropicais. Licença CC BY-NC-SA 4.0.
-
-[{{< fa book-open >}} Acessar o ebook](../books/ciencia-paisagem/){.btn .btn-success .btn-sm}
-
-:::
-:::
-
-::: {.card .shadow-sm .mb-4}
-::: {.text-center .p-3}
-![](../books/pi/img/capa_pi.png){fig-alt="Capa do ebook Propriedade Intelectual e Inovação no Agronegócio" style="max-height:320px; object-fit:contain;"}
-:::
-::: {.card-body}
-
-### Propriedade Intelectual e Inovação no Agronegócio {.card-title}
-
-**Fundamentos, Proteção e Transferência de Tecnologia**
-
-Livro-texto com 11 capítulos organizados em 4 partes, abordando gestão da inovação, proteção de ativos intangíveis (patentes, cultivares, indicações geográficas), valoração de PI, transferência de tecnologia, empreendedorismo tecnológico agrícola, spin-offs acadêmicas e PI na agricultura digital. Licença CC BY-NC-SA 4.0.
-
-[{{< fa book-open >}} Acessar o ebook](../books/pi/){.btn .btn-warning .btn-sm}
-
-:::
-:::
+<div class="book-card">
+  <div class="book-cover">
+    <a href="../books/pi/">
+      <img src="../books/pi/img/capa_pi.png" alt="Capa do ebook Propriedade Intelectual e Inovação no Agronegócio">
+    </a>
+  </div>
+  <div class="book-info">
+    <p class="book-author">Luiz Diego Vidal Santos</p>
+    <h4 class="book-title">Propriedade Intelectual e Inovação no Agronegócio</h4>
+    <p class="book-subtitle">Fundamentos, Proteção e Transferência de Tecnologia</p>
+    <p class="book-desc">Livro-texto com 11 capítulos organizados em 4 partes, abordando gestão da inovação, proteção de ativos intangíveis (patentes, cultivares, indicações geográficas), valoração de PI, transferência de tecnologia, empreendedorismo tecnológico agrícola, spin-offs acadêmicas e PI na agricultura digital.</p>
+    <div class="book-meta">
+      <span><i class="bi bi-journal-text"></i> 11 capítulos</span>
+      <span><i class="bi bi-unlock"></i> CC BY-NC-SA 4.0</span>
+    </div>
+    <div class="book-actions">
+      <a href="../books/pi/" class="btn btn-warning btn-sm"><i class="fa-solid fa-book-open"></i> Acessar o ebook</a>
+    </div>
+  </div>
+</div>
+```

@@ -12,53 +12,67 @@ Books and ebooks authored by **Luiz Diego Vidal Santos**, available in digital f
 
 ## Ebooks
 
-::: {.card .shadow-sm .mb-4}
-::: {.text-center .p-3}
-![](../books/bioengenharia-solos/img/capa_bioengenharia_de_solos.png){fig-alt="Cover of Soil Bioengineering in Tropical Regions ebook" style="max-height:320px; object-fit:contain;"}
-:::
-::: {.card-body}
+```{=html}
+<div class="book-card">
+  <div class="book-cover">
+    <a href="../books/bioengenharia-solos/">
+      <img src="../books/bioengenharia-solos/img/capa_bioengenharia_de_solos.png" alt="Cover of Soil Bioengineering in Tropical Regions ebook">
+    </a>
+  </div>
+  <div class="book-info">
+    <p class="book-author">Luiz Diego Vidal Santos</p>
+    <h4 class="book-title">Soil Bioengineering in Tropical Regions</h4>
+    <p class="book-subtitle">Fundamentals, Techniques and Applications</p>
+    <p class="book-desc">Technical-scientific manual with 21 chapters organized in 4 parts, ranging from soil formation fundamentals and erosion to stabilization techniques with living materials, innovations in geotextiles and superabsorbent biopolymers. Includes sizing equations, comparative tables and case studies.</p>
+    <div class="book-meta">
+      <span><i class="bi bi-journal-text"></i> 21 chapters</span>
+      <span><i class="bi bi-unlock"></i> CC BY-NC-SA 4.0</span>
+    </div>
+    <div class="book-actions">
+      <a href="../books/bioengenharia-solos/" class="btn btn-primary btn-sm"><i class="fa-solid fa-book-open"></i> Access the ebook</a>
+    </div>
+  </div>
+</div>
 
-### Soil Bioengineering in Tropical Regions {.card-title}
+<div class="book-card">
+  <div class="book-cover">
+    <a href="../books/ciencia-paisagem/">
+      <img src="../books/ciencia-paisagem/img/capa_ciencia_paisagem.png" alt="Cover of the Landscape Science ebook">
+    </a>
+  </div>
+  <div class="book-info">
+    <p class="book-author">Luiz Diego Vidal Santos</p>
+    <h4 class="book-title">Landscape Science</h4>
+    <p class="book-subtitle">Fundamentals, Analysis Methods and Territorial Planning</p>
+    <p class="book-desc">Textbook with 21 chapters organized in 4 parts, covering landscape ecology fundamentals and spatial metrics to remote sensing, GIS, land use dynamics, ecosystem services, ecological restoration and scenario modeling for sustainable management of tropical landscapes.</p>
+    <div class="book-meta">
+      <span><i class="bi bi-journal-text"></i> 21 chapters</span>
+      <span><i class="bi bi-unlock"></i> CC BY-NC-SA 4.0</span>
+    </div>
+    <div class="book-actions">
+      <a href="../books/ciencia-paisagem/" class="btn btn-success btn-sm"><i class="fa-solid fa-book-open"></i> Access the ebook</a>
+    </div>
+  </div>
+</div>
 
-**Fundamentals, Techniques and Applications**
-
-Technical-scientific manual with 21 chapters organized in 4 parts, ranging from soil formation fundamentals and erosion to stabilization techniques with living materials, innovations in geotextiles and superabsorbent biopolymers. Includes sizing equations, comparative tables and case studies. CC BY-NC-SA 4.0 License.
-
-[{{< fa book-open >}} Access the ebook](../books/bioengenharia-solos/){.btn .btn-primary .btn-sm}
-
-:::
-:::
-
-::: {.card .shadow-sm .mb-4}
-::: {.text-center .p-3}
-![](../books/ciencia-paisagem/img/capa_ciencia_paisagem.png){fig-alt="Cover of the Landscape Science ebook" style="max-height:320px; object-fit:contain;"}
-:::
-::: {.card-body}
-
-### Landscape Science {.card-title}
-
-**Fundamentals, Analysis Methods and Territorial Planning**
-
-Textbook with 21 chapters organized in 4 parts, covering landscape ecology fundamentals and spatial metrics to remote sensing, GIS, land use dynamics, ecosystem services, ecological restoration and scenario modeling for sustainable management of tropical landscapes. CC BY-NC-SA 4.0 License.
-
-[{{< fa book-open >}} Access the ebook](../books/ciencia-paisagem/){.btn .btn-success .btn-sm}
-
-:::
-:::
-
-::: {.card .shadow-sm .mb-4}
-::: {.text-center .p-3}
-![](../books/pi/img/capa_pi.png){fig-alt="Cover of the Intellectual Property and Innovation in Agribusiness ebook" style="max-height:320px; object-fit:contain;"}
-:::
-::: {.card-body}
-
-### Intellectual Property and Innovation in Agribusiness {.card-title}
-
-**Fundamentals, Protection and Technology Transfer**
-
-Textbook with 11 chapters organized in 4 parts, covering innovation management, intangible asset protection (patents, plant varieties, geographical indications), IP valuation, technology transfer, agricultural technology entrepreneurship, academic spin-offs and IP in digital agriculture. CC BY-NC-SA 4.0 License.
-
-[{{< fa book-open >}} Access the ebook](../books/pi/){.btn .btn-warning .btn-sm}
-
-:::
-:::
+<div class="book-card">
+  <div class="book-cover">
+    <a href="../books/pi/">
+      <img src="../books/pi/img/capa_pi.png" alt="Cover of the Intellectual Property and Innovation in Agribusiness ebook">
+    </a>
+  </div>
+  <div class="book-info">
+    <p class="book-author">Luiz Diego Vidal Santos</p>
+    <h4 class="book-title">Intellectual Property and Innovation in Agribusiness</h4>
+    <p class="book-subtitle">Fundamentals, Protection and Technology Transfer</p>
+    <p class="book-desc">Textbook with 11 chapters organized in 4 parts, covering innovation management, intangible asset protection (patents, plant varieties, geographical indications), IP valuation, technology transfer, agricultural technology entrepreneurship, academic spin-offs and IP in digital agriculture.</p>
+    <div class="book-meta">
+      <span><i class="bi bi-journal-text"></i> 11 chapters</span>
+      <span><i class="bi bi-unlock"></i> CC BY-NC-SA 4.0</span>
+    </div>
+    <div class="book-actions">
+      <a href="../books/pi/" class="btn btn-warning btn-sm"><i class="fa-solid fa-book-open"></i> Access the ebook</a>
+    </div>
+  </div>
+</div>
+```
