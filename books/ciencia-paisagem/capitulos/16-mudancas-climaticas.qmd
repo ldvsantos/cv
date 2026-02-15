@@ -37,33 +37,56 @@ A conectividade entre habitats naturais permite que espécies se desloquem em re
 
 A @fig-resiliencia-paisagem sintetiza como diferentes configurações de paisagem respondem a perturbações climáticas.
 
-::: {#fig-resiliencia-paisagem}
-```{mermaid}
-%%| fig-width: 9
-flowchart TD
-    subgraph Paisagem Frágil
-    A1["Monocultura<br>dominante"] --> B1["Baixa diversidade<br>de cobertura"]
-    B1 --> C1["Fragmentos isolados<br>sem conectividade"]
-    C1 --> D1["Alta vulnerabilidade<br>a extremos climáticos"]
-    end
+```{dot}
+//| label: fig-resiliencia-paisagem
+//| fig-cap: "Comparação entre uma paisagem frágil (homogênea, fragmentada) e uma paisagem resiliente (diversificada, conectada) em resposta a perturbações climáticas."
+//| fig-width: 9
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0]
 
-    subgraph Paisagem Resiliente
-    A2["Mosaico<br>diversificado"] --> B2["Alta diversidade<br>de cobertura"]
-    B2 --> C2["Fragmentos conectados<br>por corredores"]
-    C2 --> D2["Capacidade de<br>absorção e adaptação"]
-    end
+    subgraph cluster_fragil {
+        label="Paisagem Frágil"
+        fontname="Helvetica"
+        fontsize=12
+        style="rounded,dashed"
+        color="#C62828"
 
-    D1 --> E["Perturbação<br>climática<br>(seca, calor,<br>tempestade)"]
-    D2 --> E
+        A1 [label="Monocultura\ndominante", fillcolor="#FFCDD2", color="#C62828"]
+        B1 [label="Baixa diversidade\nde cobertura", fillcolor="#FFCDD2", color="#C62828"]
+        C1 [label="Fragmentos isolados\nsem conectividade", fillcolor="#FFCDD2", color="#C62828"]
+        D1 [label="Alta vulnerabilidade\na extremos climáticos", fillcolor="#B71C1C", fontcolor="white", color="#7F0000", penwidth=1.5]
 
-    E --> F1["Colapso funcional<br>perda de produção<br>e serviços"]
-    E --> F2["Recuperação<br>manutenção de<br>funções essenciais"]
+        A1 -> B1 -> C1 -> D1
+    }
 
-    style D1 fill:#B71C1C,color:#fff
-    style D2 fill:#2E7D32,color:#fff
+    subgraph cluster_resiliente {
+        label="Paisagem Resiliente"
+        fontname="Helvetica"
+        fontsize=12
+        style="rounded,dashed"
+        color="#2E7D32"
+
+        A2 [label="Mosaico\ndiversificado", fillcolor="#C8E6C9", color="#2E7D32"]
+        B2 [label="Alta diversidade\nde cobertura", fillcolor="#C8E6C9", color="#2E7D32"]
+        C2 [label="Fragmentos conectados\npor corredores", fillcolor="#C8E6C9", color="#2E7D32"]
+        D2 [label="Capacidade de\nabsorção e adaptação", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
+
+        A2 -> B2 -> C2 -> D2
+    }
+
+    E [label="Perturbação climática\n(seca, calor, tempestade)", fillcolor="#FFF9C4", color="#F57F17"]
+    F1 [label="Colapso funcional\nperda de produção\ne serviços", fillcolor="#B71C1C", fontcolor="white", color="#7F0000"]
+    F2 [label="Recuperação\nmanutenção de\nfunções essenciais", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20"]
+
+    D1 -> E
+    D2 -> E
+    E -> F1 [color="#C62828"]
+    E -> F2 [color="#2E7D32"]
+}
 ```
-Comparação entre uma paisagem frágil (homogênea, fragmentada) e uma paisagem resiliente (diversificada, conectada) em resposta a perturbações climáticas.
-:::
 
 A @fig-resiliencia-paisagem permite visualizar que a resiliência não é uma propriedade intrínseca de um ecossistema isolado, mas uma propriedade emergente da paisagem como um todo. A diversidade de coberturas, a conectividade entre habitats e a presença de elementos estruturais (áreas úmidas, matas ripárias, afloramentos protegidos) criam uma "rede de segurança" que permite à paisagem manter suas funções mesmo quando componentes individuais são afetados. Essa perspectiva reforça a importância de abordar a adaptação climática na escala da paisagem, e não apenas na escala da propriedade ou do fragmento individual.
 

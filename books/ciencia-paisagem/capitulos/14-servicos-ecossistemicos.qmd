@@ -12,26 +12,32 @@ A classificação mais influente dos serviços ecossistêmicos foi proposta pela
 
 A @fig-servicos-categorias sintetiza essa classificação e suas relações com a paisagem.
 
-::: {#fig-servicos-categorias}
-```{mermaid}
-%%| fig-width: 9
-flowchart TD
-    A["Estrutura da Paisagem<br>(composição e configuração)"] --> B["Serviços de<br>Provisão<br>alimentos, água,<br>madeira, fibras"]
-    A --> C["Serviços de<br>Regulação<br>clima, água,<br>erosão, polinização"]
-    A --> D["Serviços<br>Culturais<br>recreação, estética,<br>identidade"]
-    A --> E["Serviços de<br>Suporte<br>solo, ciclagem,<br>biodiversidade"]
-    E --> B
-    E --> C
-    E --> D
-    B --> F["Bem-estar<br>humano"]
-    C --> F
-    D --> F
+```{dot}
+//| label: fig-servicos-categorias
+//| fig-cap: "Relação entre a estrutura da paisagem, as quatro categorias de serviços ecossistêmicos e o bem-estar humano. Os serviços de suporte sustentam as três demais categorias."
+//| fig-width: 9
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0]
 
-    style A fill:#2E7D32,color:#fff
-    style F fill:#1B5E20,color:#fff
+    A [label="Estrutura da Paisagem\n(composição e configuração)", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
+    B [label="Serviços de Provisão\nalimentos, água,\nmadeira, fibras", fillcolor="#BBDEFB", color="#1565C0"]
+    C [label="Serviços de Regulação\nclima, água,\nerosão, polinização", fillcolor="#FFE0B2", color="#E65100"]
+    D [label="Serviços Culturais\nrecreação, estética,\nidentidade", fillcolor="#E1BEE7", color="#6A1B9A"]
+    E [label="Serviços de Suporte\nsolo, ciclagem,\nbiodiversidade", fillcolor="#C8E6C9", color="#2E7D32"]
+    F [label="Bem-estar\nhumano", fillcolor="#1B5E20", fontcolor="white", color="#0D3310", penwidth=1.5]
+
+    A -> {B C D E}
+    E -> B [style=dashed, color="#2E7D32"]
+    E -> C [style=dashed, color="#2E7D32"]
+    E -> D [style=dashed, color="#2E7D32"]
+    B -> F
+    C -> F
+    D -> F
+}
 ```
-Relação entre a estrutura da paisagem, as quatro categorias de serviços ecossistêmicos e o bem-estar humano. Os serviços de suporte sustentam as três demais categorias.
-:::
 
 A @fig-servicos-categorias evidencia dois aspectos fundamentais. Primeiro, a estrutura da paisagem (o mosaico de tipos de cobertura e sua organização espacial) é a base que sustenta todos os serviços. Quando a paisagem é modificada (por desmatamento, urbanização, homogeneização agrícola), os serviços que dela dependem também são alterados, embora não necessariamente de forma imediata ou proporcional. Segundo, os serviços de suporte ocupam uma posição hierárquica especial. Sem formação de solo, não há produção agrícola. Sem ciclagem de nutrientes, não há manutenção da fertilidade. Sem biodiversidade, não há polinização nem controle biológico. A degradação dos serviços de suporte compromete, portanto, todos os demais serviços, frequentemente com defasagem temporal que dificulta a percepção do dano até que este se torne severo.
 

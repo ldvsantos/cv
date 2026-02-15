@@ -38,27 +38,54 @@ Uma visão mais recente, a hipótese da heterogeneidade da paisagem, propõe que
 
 A @fig-modelos-biodiversidade compara essas duas perspectivas.
 
-::: {#fig-modelos-biodiversidade}
-```{mermaid}
-%%| fig-width: 9
-flowchart LR
-    subgraph Modelo Clássico
-    A["Mancha<br>(habitat)"] --- B["Matriz<br>(não-habitat<br>homogêneo)"]
-    A --> C["Biodiversidade =<br>f(área, isolamento)"]
-    end
+```{dot}
+//| label: fig-modelos-biodiversidade
+//| fig-cap: "Comparação entre o modelo clássico (mancha-matriz binária) e o modelo de heterogeneidade da paisagem para explicar a biodiversidade. No modelo clássico, a diversidade depende do tamanho e isolamento dos fragmentos de habitat. No modelo de heterogeneidade, a diversidade depende da variedade de tipos de cobertura no mosaico."
+//| fig-width: 9
+digraph {
+    rankdir=LR
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0]
 
-    subgraph Modelo de Heterogeneidade
-    D["Tipo 1"] --- E["Tipo 2"]
-    E --- F["Tipo 3"]
-    F --- G["Tipo 4"]
-    D --> H["Biodiversidade =<br>f(heterogeneidade<br>do mosaico)"]
-    E --> H
-    F --> H
-    G --> H
-    end
+    subgraph cluster_classico {
+        label="Modelo Clássico"
+        fontname="Helvetica"
+        fontsize=12
+        style="rounded,dashed"
+        color="#90A4AE"
+
+        A [label="Mancha\n(habitat)", fillcolor="#228B22", fontcolor="white", color="#1B5E20"]
+        B [label="Matriz\n(não-habitat\nhomogêneo)", fillcolor="#F5DEB3", color="#8D6E63"]
+        C [label="Biodiversidade =\nf(área, isolamento)", fillcolor="#BBDEFB", color="#1565C0"]
+
+        A -> B [dir=none]
+        A -> C
+    }
+
+    subgraph cluster_heterogeneidade {
+        label="Modelo de Heterogeneidade"
+        fontname="Helvetica"
+        fontsize=12
+        style="rounded,dashed"
+        color="#90A4AE"
+
+        D [label="Tipo 1", fillcolor="#C8E6C9", color="#2E7D32"]
+        E [label="Tipo 2", fillcolor="#FFE0B2", color="#E65100"]
+        F [label="Tipo 3", fillcolor="#E1BEE7", color="#6A1B9A"]
+        G [label="Tipo 4", fillcolor="#BBDEFB", color="#1565C0"]
+        H [label="Biodiversidade =\nf(heterogeneidade\ndo mosaico)", fillcolor="#A5D6A7", color="#1B5E20"]
+
+        D -> E [dir=none]
+        E -> F [dir=none]
+        F -> G [dir=none]
+        D -> H
+        E -> H
+        F -> H
+        G -> H
+    }
+}
 ```
-Comparação entre o modelo clássico (mancha-matriz binária) e o modelo de heterogeneidade da paisagem para explicar a biodiversidade. No modelo clássico, a diversidade depende do tamanho e isolamento dos fragmentos de habitat. No modelo de heterogeneidade, a diversidade depende da variedade de tipos de cobertura no mosaico.
-:::
 
 A @fig-modelos-biodiversidade ilustra uma diferença conceitual que tem consequências práticas importantes. No modelo clássico, a estratégia de conservação é maximizar a área de habitat remanescente e minimizar o isolamento (por meio de corredores). No modelo de heterogeneidade, a estratégia inclui também manter ou criar diversidade de coberturas na paisagem, mesmo que algumas delas não sejam "habitat nativo" no sentido estrito. Para muitas espécies generalistas, uma paisagem com mosaico diversificado (floresta, capoeira em diferentes estágios, silvipastoril, cultivos diversificados) oferece mais recursos e oportunidades do que uma paisagem com a mesma proporção de floresta mas circundada por monocultura. Entretanto, para espécies especialistas de interior florestal (como certas aves de sub-bosque, primatas arborícolas e epífitas), a quantidade de habitat original continua sendo o preditor dominante, e a heterogeneidade da matriz oferece benefício limitado.
 

@@ -12,28 +12,41 @@ O ciclo hidrológico descreve a circulação contínua da água entre a atmosfer
 
 A precipitação é a entrada de água na paisagem, condicionada por fatores climáticos (massas de ar, correntes atmosféricas, topografia regional) e locais (efeito orográfico, ilhas de calor urbanas). Ao atingir a superfície, a chuva é particionada em vários componentes cujas proporções dependem criticamente da cobertura do solo. A interceptação é a fração retida pela vegetação (copa, troncos, serapilheira) que evapora antes de alcançar o solo. Em florestas tropicais densas, a interceptação pode reter de 10% a 25% da precipitação anual, uma quantidade significativa que florestas devolvem diretamente à atmosfera sem que a água jamais toque o solo mineral. A infiltração é a entrada de água no solo, controlada pela porosidade, pela umidade antecedente, pela presença de macroporos (raízes, galerias de fauna) e pela condutividade hidráulica saturada. A evapotranspiração combina a evaporação direta da superfície do solo com a transpiração das plantas, que absorvem água pelas raízes e a liberam para a atmosfera através dos estômatos. A @fig-particao-hidrologica esquematiza essa partição.
 
-::: {#fig-particao-hidrologica}
-```{mermaid}
-%%| fig-width: 8.5
-flowchart TD
-    P["Precipitação"] --> I["Interceptação<br>(10–25% em florestas)"]
-    P --> S["Água que atinge o solo"]
-    I --> ET1["Evaporação da<br>interceptação"]
-    S --> INF["Infiltração<br>(função de cobertura,<br>solo, umidade)"]
-    S --> ES["Escoamento<br>superficial"]
-    INF --> PERC["Percolação<br>profunda"]
-    INF --> SS["Escoamento<br>subsuperficial"]
-    PERC --> AQ["Recarga de<br>aquíferos"]
-    AQ --> FB["Fluxo de base<br>dos rios"]
-    ES --> RD["Escoamento<br>direto / cheias"]
-    SS --> RD
+```{dot}
+//| label: fig-particao-hidrologica
+//| fig-cap: "Partição da precipitação nos principais componentes do ciclo hidrológico, evidenciando como a cobertura do solo modula cada caminho da água pela paisagem."
+//| fig-width: 8.5
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0]
 
-    style P fill:#1565C0,color:#fff
-    style AQ fill:#2E7D32,color:#fff
-    style RD fill:#B71C1C,color:#fff
+    P [label="Precipitação", fillcolor="#1565C0", fontcolor="white", color="#0D47A1", penwidth=1.5]
+    I [label="Interceptação\n(10–25% em florestas)", fillcolor="#C8E6C9", color="#2E7D32"]
+    S [label="Água que atinge\no solo", fillcolor="#BBDEFB", color="#1565C0"]
+    ET1 [label="Evaporação da\ninterceptação", fillcolor="#E8F5E9", color="#2E7D32"]
+    INF [label="Infiltração\n(função de cobertura,\nsolo, umidade)", fillcolor="#E3F2FD", color="#1565C0"]
+    ES [label="Escoamento\nsuperficial", fillcolor="#FFCDD2", color="#C62828"]
+    PERC [label="Percolação\nprofunda", fillcolor="#E3F2FD", color="#1565C0"]
+    SS [label="Escoamento\nsubsuperficial", fillcolor="#FFE0B2", color="#E65100"]
+    AQ [label="Recarga de\naquíferos", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
+    FB [label="Fluxo de base\ndos rios", fillcolor="#C8E6C9", color="#2E7D32"]
+    RD [label="Escoamento\ndireto / cheias", fillcolor="#B71C1C", fontcolor="white", color="#7F0000", penwidth=1.5]
+
+    P -> I
+    P -> S
+    I -> ET1
+    S -> INF
+    S -> ES
+    INF -> PERC
+    INF -> SS
+    PERC -> AQ
+    AQ -> FB
+    ES -> RD
+    SS -> RD
+}
 ```
-Partição da precipitação nos principais componentes do ciclo hidrológico, evidenciando como a cobertura do solo modula cada caminho da água pela paisagem.
-:::
 
 A @fig-particao-hidrologica revela dois caminhos contrastantes da água na paisagem. O caminho "lento" (à esquerda do diagrama, em verde) passa pela infiltração, percolação profunda, recarga de aquíferos e fluxo de base. Esse caminho é favorecido por solos florestados, profundos e bem estruturados, e resulta em rios com vazão estável ao longo do ano, mesmo durante a estação seca. O caminho "rápido" (à direita, em vermelho) passa pelo escoamento superficial e pelo escoamento subsuperficial rápido, gerando picos de vazão durante e logo após as chuvas. Esse caminho é favorecido por superfícies impermeáveis, solos compactados, pastagens degradadas e encostas íngremes sem cobertura vegetal. A proporção entre esses dois caminhos é fundamentalmente determinada pela estrutura da paisagem, o que significa que mudanças de uso do solo (desmatamento, urbanização, pavimentação) alteram diretamente o regime hidrológico de uma bacia.
 

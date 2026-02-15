@@ -10,21 +10,30 @@ A detecção de mudanças é fundamental para a Ciência da Paisagem porque perm
 
 As técnicas de detecção de mudanças podem ser classificadas em três famílias principais, conforme a abordagem analítica empregada, sintetizadas na @fig-abordagens-mudanca.
 
-::: {#fig-abordagens-mudanca}
-```{mermaid}
-%%| fig-width: 8
-flowchart TD
-    A["Detecção de Mudanças"] --> B["Pré-classificação<br>(Comparação de mapas)"]
-    A --> C["Pós-classificação<br>(Diferença de imagens)"]
-    A --> D["Séries temporais<br>(Análise de trajetória)"]
-    B --> E["Transição A→B<br>entre datas"]
-    C --> F["Diferença de NDVI,<br>razão de bandas"]
-    D --> G["BFAST, LandTrendr,<br>CCDC"]
+```{dot}
+//| label: fig-abordagens-mudanca
+//| fig-cap: "Três famílias de abordagens para detecção de mudanças na paisagem."
+//| fig-width: 8
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0]
 
-    style A fill:#2E7D32,color:#fff
+    A [label="Detecção de Mudanças", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
+    B [label="Pré-classificação\n(Comparação de mapas)", fillcolor="#E8F5E9", color="#2E7D32"]
+    C [label="Pós-classificação\n(Diferença de imagens)", fillcolor="#E8F5E9", color="#2E7D32"]
+    D [label="Séries temporais\n(Análise de trajetória)", fillcolor="#E8F5E9", color="#2E7D32"]
+    E [label="Transição A→B\nentre datas", fillcolor="#C8E6C9", color="#2E7D32"]
+    F [label="Diferença de NDVI,\nrazão de bandas", fillcolor="#C8E6C9", color="#2E7D32"]
+    G [label="BFAST, LandTrendr,\nCCDC", fillcolor="#C8E6C9", color="#2E7D32"]
+
+    A -> {B C D}
+    B -> E
+    C -> F
+    D -> G
+}
 ```
-Três famílias de abordagens para detecção de mudanças na paisagem.
-:::
 
 A @fig-abordagens-mudanca distingue três paradigmas com complexidade e requisitos crescentes. A comparação pós-classificação é a abordagem mais intuitiva. Duas imagens (ou mais) de datas distintas são classificadas independentemente em mapas de uso e cobertura, e a comparação pixel-a-pixel (ou objeto-a-objeto) identifica as transições ocorridas (floresta→pastagem, pastagem→área urbana, cultivo→regeneração). A simplicidade conceitual é contrabalançada por uma limitação severa. Os erros de classificação de cada mapa se multiplicam na comparação, de modo que uma classificação com 85% de acurácia em cada data pode gerar um mapa de transições com apenas 72% de acurácia (0,85 × 0,85). As falsas mudanças (transições espúrias causadas por erros de classificação, não por mudanças reais) podem superar as mudanças verdadeiras em paisagens com baixa taxa de conversão.
 

@@ -10,22 +10,30 @@ Cenários não são previsões. Uma previsão afirma "isso vai acontecer". Um ce
 
 Os cenários paisagísticos podem ser classificados em três tipos principais, conforme seu objetivo e sua construção, sintetizados na @fig-tipos-cenarios.
 
-::: {#fig-tipos-cenarios}
-```{mermaid}
-%%| fig-width: 9
-flowchart TD
-    A["Cenários Paisagísticos"] --> B["Tendencial<br>(business as usual)<br>O que acontece se<br>nada mudar?"]
-    A --> C["Otimista<br>(conservação ativa)<br>O que acontece se<br>implementarmos<br>políticas de conservação?"]
-    A --> D["Pessimista<br>(desregulação)<br>O que acontece se<br>a fiscalização<br>falhar?"]
+```{dot}
+//| label: fig-tipos-cenarios
+//| fig-cap: "Três tipos de cenários paisagísticos utilizados em planejamento territorial, variando de tendencial (projeção do status quo) a contrastantes (otimista e pessimista)."
+//| fig-width: 9
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0]
 
-    B --> E["Projeção baseada<br>em taxas históricas"]
-    C --> F["Simulação com<br>restrições ambientais<br>e restauração"]
-    D --> G["Simulação com<br>remoção de barreiras<br>ao desmatamento"]
+    A [label="Cenários Paisagísticos", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
+    B [label="Tendencial\n(business as usual)\nO que acontece se\nnada mudar?", fillcolor="#FFF9C4", color="#F57F17"]
+    C [label="Otimista\n(conservação ativa)\nO que acontece se\nimplementarmos\npolíticas de conservação?", fillcolor="#C8E6C9", color="#2E7D32"]
+    D [label="Pessimista\n(desregulação)\nO que acontece se\na fiscalização\nfalhar?", fillcolor="#FFCDD2", color="#C62828"]
+    E [label="Projeção baseada\nem taxas históricas", fillcolor="#FFFDE7", color="#F57F17"]
+    F [label="Simulação com\nrestrições ambientais\ne restauração", fillcolor="#E8F5E9", color="#2E7D32"]
+    G [label="Simulação com\nremoção de barreiras\nao desmatamento", fillcolor="#FFEBEE", color="#C62828"]
 
-    style A fill:#2E7D32,color:#fff
+    A -> {B C D}
+    B -> E
+    C -> F
+    D -> G
+}
 ```
-Três tipos de cenários paisagísticos utilizados em planejamento territorial, variando de tendencial (projeção do status quo) a contrastantes (otimista e pessimista).
-:::
 
 A @fig-tipos-cenarios mostra que cenários são construídos como "narrativas quantificáveis". O cenário tendencial projeta as taxas históricas de mudança para o futuro, assumindo que as condições atuais (legislação, fiscalização, mercados, tecnologia) se manterão inalteradas. É o cenário de referência contra o qual os demais são comparados. O cenário otimista (ou de conservação) simula os efeitos de políticas específicas, como o cumprimento integral do Código Florestal (restauração de todas as APPs e Reservas Legais deficitárias), a implementação de corredores ecológicos, a ampliação de áreas protegidas ou a adoção generalizada de práticas agrícolas sustentáveis. O cenário pessimista (ou de desregulação) simula os efeitos de uma flexibilização das proteções ambientais, como a redução de APPs, a anistia de desmatamentos ilegais ou a eliminação de reservas legais, explorando o limite inferior do que pode acontecer com a paisagem.
 

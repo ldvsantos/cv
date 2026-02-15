@@ -10,27 +10,32 @@ O uso do solo refere-se à finalidade humana atribuída a uma porção da superf
 
 As mudanças no uso e cobertura do solo não ocorrem ao acaso. Elas são impulsionadas por forças motrizes (*driving forces*) que podem ser classificadas em cinco grandes categorias, representadas na @fig-forcas-motrizes-lulc.
 
-::: {#fig-forcas-motrizes-lulc}
-```{mermaid}
-%%| fig-width: 8.5
-flowchart TD
-    A["Forças Motrizes de<br>Mudança de Uso do Solo"] --> B["Demográficas<br>crescimento, migração,<br>urbanização"]
-    A --> C["Econômicas<br>preços, mercados,<br>crédito, emprego"]
-    A --> D["Tecnológicas<br>mecanização, irrigação,<br>OGMs, insumos"]
-    A --> E["Institucionais<br>legislação, políticas<br>públicas, posse da terra"]
-    A --> F["Biofísicas<br>clima, relevo, solos,<br>aptidão agrícola"]
+```{dot}
+//| label: fig-forcas-motrizes-lulc
+//| fig-cap: "Cinco categorias de forças motrizes que condicionam as mudanças de uso e cobertura do solo, convergindo para a transformação observada na paisagem."
+//| fig-width: 8.5
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0]
 
-    B --> G["Mudança de Uso<br>e Cobertura do Solo"]
-    C --> G
-    D --> G
-    E --> G
-    F --> G
+    A [label="Forças Motrizes de\nMudança de Uso do Solo", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
+    B [label="Demográficas\ncrescimento, migração,\nurbanização", fillcolor="#E8F5E9", color="#2E7D32"]
+    C [label="Econômicas\npreços, mercados,\ncrédito, emprego", fillcolor="#E3F2FD", color="#1565C0"]
+    D [label="Tecnológicas\nmecanização, irrigação,\nOGMs, insumos", fillcolor="#FFF3E0", color="#E65100"]
+    E [label="Institucionais\nlegislação, políticas\npúblicas, posse da terra", fillcolor="#F3E5F5", color="#6A1B9A"]
+    F [label="Biofísicas\nclima, relevo, solos,\naptidão agrícola", fillcolor="#BBDEFB", color="#1565C0"]
+    G [label="Mudança de Uso\ne Cobertura do Solo", fillcolor="#1B5E20", fontcolor="white", color="#0D3310", penwidth=1.5]
 
-    style A fill:#2E7D32,color:#fff
-    style G fill:#1B5E20,color:#fff
+    A -> {B C D E F}
+    B -> G
+    C -> G
+    D -> G
+    E -> G
+    F -> G
+}
 ```
-Cinco categorias de forças motrizes que condicionam as mudanças de uso e cobertura do solo, convergindo para a transformação observada na paisagem.
-:::
 
 A @fig-forcas-motrizes-lulc mostra que a mudança de uso do solo é o resultado da convergência de múltiplas forças que operam simultaneamente e em diferentes escalas. Para compreender intuitivamente o diagrama, considere um exemplo concreto. O desmatamento de uma área de cerrado no Matopiba (região de fronteira agrícola nos estados do Maranhão, Tocantins, Piauí e Bahia) não é explicado por uma única causa, mas pela confluência de fatores demográficos (migração de agricultores do Sul), econômicos (alta no preço internacional da soja), tecnológicos (desenvolvimento de cultivares adaptadas ao cerrado e irrigação por pivô-central), institucionais (fragilidade de fiscalização ambiental e regularização fundiária precária) e biofísicos (topografia plana, solos profundos e clima com estação seca definida que permite mecanização e secagem natural do grão). Nenhum desses fatores, isoladamente, seria suficiente para explicar a conversão. É a interação entre eles que produz a mudança.
 
@@ -54,20 +59,30 @@ Compreender essa teoria é importante porque ela sugere que o desmatamento não 
 
 Para projetar cenários futuros e avaliar o impacto potencial de políticas públicas, cientistas da paisagem desenvolveram modelos de mudança de uso do solo (*land use change models*) que simulam computacionalmente as trajetórias de conversão da paisagem ao longo do tempo. Esses modelos variam enormemente em complexidade, escala e abordagem, mas compartilham uma estrutura lógica comum sintetizada na @fig-estrutura-modelo-lulc.
 
-::: {#fig-estrutura-modelo-lulc}
-```{mermaid}
-%%| fig-width: 8.5
-flowchart LR
-    A["Mapa de uso<br>do solo<br>(Tempo 1)"] --> B["Modelo de<br>mudança"]
-    C["Variáveis<br>explicativas<br>(relevo, solos,<br>distância a estradas,<br>mercados)"] --> B
-    D["Taxas e regras<br>de transição<br>(calibradas)"] --> B
-    B --> E["Mapa de uso<br>do solo<br>(Tempo 2<br>simulado)"]
-    E --> F["Validação com<br>mapa real<br>(Tempo 2)"]
+```{dot}
+//| label: fig-estrutura-modelo-lulc
+//| fig-cap: "Estrutura lógica geral de um modelo de mudança de uso do solo, integrando dados espaciais, variáveis explicativas e regras de transição para projetar cenários futuros."
+//| fig-width: 8.5
+digraph {
+    rankdir=LR
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0]
 
-    style B fill:#2E7D32,color:#fff
+    A [label="Mapa de uso\ndo solo\n(Tempo 1)", fillcolor="#BBDEFB", color="#1565C0"]
+    C [label="Variáveis\nexplicativas\n(relevo, solos,\ndistância a estradas,\nmercados)", fillcolor="#FFE0B2", color="#E65100"]
+    D [label="Taxas e regras\nde transição\n(calibradas)", fillcolor="#E1BEE7", color="#6A1B9A"]
+    B [label="Modelo de\nmudança", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
+    E [label="Mapa de uso\ndo solo\n(Tempo 2\nsimulado)", fillcolor="#C8E6C9", color="#2E7D32"]
+    F [label="Validação com\nmapa real\n(Tempo 2)", fillcolor="#FFF9C4", color="#F57F17"]
+
+    A -> B
+    C -> B
+    D -> B
+    B -> E
+    E -> F
+}
 ```
-Estrutura lógica geral de um modelo de mudança de uso do solo, integrando dados espaciais, variáveis explicativas e regras de transição para projetar cenários futuros.
-:::
 
 A @fig-estrutura-modelo-lulc permite visualizar a lógica de um modelo de mudança de uso do solo como uma "máquina de previsão". O modelo recebe como entradas um mapa de uso do solo em um momento inicial (Tempo 1), um conjunto de variáveis que explicam onde as mudanças têm maior probabilidade de ocorrer (distância a estradas, declividade, tipo de solo, proximidade a áreas já desmatadas) e um conjunto de regras ou taxas de transição que definem quanto de cada classe será convertida e para qual outra classe. Processando essas informações, o modelo gera um mapa simulado para uma data futura (Tempo 2). A qualidade do modelo é avaliada comparando o mapa simulado com o mapa real dessa data futura, quando disponível.
 

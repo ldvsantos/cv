@@ -12,26 +12,46 @@ A restauração ecológica foi historicamente praticada na escala do projeto loc
 
 A abordagem de restauração na escala da paisagem (*landscape-scale restoration*) propõe que as ações de restauração sejam planejadas considerando a estrutura da paisagem como um todo. Em vez de restaurar cada propriedade individualmente, a restauração paisagística identifica onde cada hectare restaurado terá o maior retorno ecológico (conectando fragmentos, protegendo nascentes, fechando lacunas em corredores, ampliando áreas nucleares) e prioriza essas áreas. A @fig-restauracao-contexto ilustra a diferença entre restauração isolada e restauração paisagística.
 
-::: {#fig-restauracao-contexto}
-```{mermaid}
-%%| fig-width: 9
-flowchart LR
-    subgraph Restauração Isolada
-    A1["Projetos<br>individuais"] --> B1["Fragmentos<br>restaurados<br>dispersos"]
-    B1 --> C1["Baixa<br>conectividade<br>mantida"]
-    end
+```{dot}
+//| label: fig-restauracao-contexto
+//| fig-cap: "Comparação entre restauração isolada (projetos dispersos, sem planejamento espacial) e restauração paisagística (priorização estratégica com base na estrutura da paisagem)."
+//| fig-width: 9
+digraph {
+    rankdir=LR
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0]
 
-    subgraph Restauração Paisagística
-    A2["Diagnóstico da<br>paisagem inteira"] --> B2["Priorização<br>espacial<br>(onde restaurar<br>primeiro)"]
-    B2 --> C2["Restauração em<br>posições<br>estratégicas"]
-    C2 --> D2["Conectividade<br>e funcionalidade<br>recuperadas"]
-    end
+    subgraph cluster_isolada {
+        label="Restauração Isolada"
+        fontname="Helvetica"
+        fontsize=12
+        style="rounded,dashed"
+        color="#C62828"
 
-    style C1 fill:#B71C1C,color:#fff
-    style D2 fill:#2E7D32,color:#fff
+        A1 [label="Projetos\nindividuais", fillcolor="#FFCDD2", color="#C62828"]
+        B1 [label="Fragmentos\nrestaurados\ndispersos", fillcolor="#FFCDD2", color="#C62828"]
+        C1 [label="Baixa\nconectividade\nmantida", fillcolor="#B71C1C", fontcolor="white", color="#7F0000", penwidth=1.5]
+
+        A1 -> B1 -> C1
+    }
+
+    subgraph cluster_paisagistica {
+        label="Restauração Paisagística"
+        fontname="Helvetica"
+        fontsize=12
+        style="rounded,dashed"
+        color="#2E7D32"
+
+        A2 [label="Diagnóstico da\npaisagem inteira", fillcolor="#C8E6C9", color="#2E7D32"]
+        B2 [label="Priorização\nespacial\n(onde restaurar\nprimeiro)", fillcolor="#C8E6C9", color="#2E7D32"]
+        C2 [label="Restauração em\nposições\nestratégicas", fillcolor="#C8E6C9", color="#2E7D32"]
+        D2 [label="Conectividade\ne funcionalidade\nrecuperadas", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
+
+        A2 -> B2 -> C2 -> D2
+    }
+}
 ```
-Comparação entre restauração isolada (projetos dispersos, sem planejamento espacial) e restauração paisagística (priorização estratégica com base na estrutura da paisagem).
-:::
 
 A @fig-restauracao-contexto evidencia que o mesmo investimento em restauração (mesmo número de hectares, mesmo custo por hectare) pode produzir resultados ecológicos radicalmente diferentes dependendo de onde cada hectare é restaurado. A restauração paisagística busca maximizar o retorno ecológico (incremento de conectividade, proteção de recursos hídricos, viabilização de populações de espécies ameaçadas) por unidade de investimento, tratando a localização como uma variável de otimização.
 

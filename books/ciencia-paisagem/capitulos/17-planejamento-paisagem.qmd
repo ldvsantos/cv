@@ -12,27 +12,32 @@ O planejamento da paisagem propõe organizar essas decisões de forma coordenada
 
 O planejamento da paisagem é guiado por princípios derivados da ecologia da paisagem, da hidrologia, da ciência da conservação e do planejamento territorial. Os mais fundamentais, sintetizados por Forman [-@forman1995], podem ser organizados num arcabouço lógico conforme a @fig-principios-planejamento.
 
-::: {#fig-principios-planejamento}
-```{mermaid}
-%%| fig-width: 9
-flowchart TD
-    A["Princípios do Planejamento<br>da Paisagem"] --> B["Manter manchas<br>grandes de<br>vegetação nativa"]
-    A --> C["Manter conectividade<br>entre manchas<br>(corredores)"]
-    A --> D["Proteger zonas<br>ripárias e<br>áreas sensíveis"]
-    A --> E["Manter heterogeneidade<br>na matriz<br>produtiva"]
-    A --> F["Concentrar usos<br>intensivos em<br>áreas de aptidão"]
+```{dot}
+//| label: fig-principios-planejamento
+//| fig-cap: "Cinco princípios fundamentais do planejamento da paisagem e sua convergência para uma paisagem funcional e resiliente."
+//| fig-width: 9
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0]
 
-    B --> G["Paisagem<br>funcional e<br>resiliente"]
-    C --> G
-    D --> G
-    E --> G
-    F --> G
+    A [label="Princípios do Planejamento\nda Paisagem", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
+    B [label="Manter manchas\ngrandes de\nvegetação nativa", fillcolor="#E8F5E9", color="#2E7D32"]
+    C [label="Manter conectividade\nentre manchas\n(corredores)", fillcolor="#E8F5E9", color="#2E7D32"]
+    D [label="Proteger zonas\nripárias e\náreas sensíveis", fillcolor="#E8F5E9", color="#2E7D32"]
+    E [label="Manter heterogeneidade\nna matriz\nprodutiva", fillcolor="#E8F5E9", color="#2E7D32"]
+    F [label="Concentrar usos\nintensivos em\náreas de aptidão", fillcolor="#E8F5E9", color="#2E7D32"]
+    G [label="Paisagem\nfuncional e\nresiliente", fillcolor="#1B5E20", fontcolor="white", color="#0D3310", penwidth=1.5]
 
-    style A fill:#2E7D32,color:#fff
-    style G fill:#1B5E20,color:#fff
+    A -> {B C D E F}
+    B -> G
+    C -> G
+    D -> G
+    E -> G
+    F -> G
+}
 ```
-Cinco princípios fundamentais do planejamento da paisagem e sua convergência para uma paisagem funcional e resiliente.
-:::
 
 A @fig-principios-planejamento apresenta princípios que, embora enunciados de forma aparentemente simples, possuem cada um uma fundamentação ecológica e hidrológica substancial. O princípio de manter manchas grandes decorre da relação espécie-área e do efeito de borda, pois manchas grandes possuem maior área nuclear (protegida dos efeitos de borda), sustentam populações maiores e mais viáveis, e abrigam espécies sensíveis que não persistem em fragmentos pequenos. O princípio de manter conectividade decorre da teoria de metapopulações e da necessidade de fluxo gênico entre populações, permitindo recolonização após extinções locais e dispersão em resposta a mudanças climáticas. O princípio de proteger zonas ripárias integra a função ecológica (corredor de habitat, refúgio de fauna) com a função hidrológica (filtragem de sedimentos e nutrientes, estabilização de margens, regulação térmica dos rios). O princípio de manter heterogeneidade na matriz reconhece que a matriz não precisa ser hostil, e que mosaicos diversificados (silvipastoril, agrofloresta, cultivos diversificados) sustentam mais biodiversidade e serviços do que monocultura homogênea. O princípio de concentrar usos intensivos em áreas de aptidão minimiza o desperdício de terras marginais e reduz os impactos ambientais ao direcionar a produção para onde o solo, o relevo e o clima oferecem melhores condições.
 

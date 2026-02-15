@@ -16,21 +16,30 @@ O corredor estrutural é uma faixa física de habitat que conecta duas manchas (
 
 A @fig-tipos-corredores compara esses conceitos.
 
-::: {#fig-tipos-corredores}
-```{mermaid}
-%%| fig-width: 9
-flowchart TD
-    A["Corredor"] --> B["Estrutural<br>(faixa física<br>de habitat)"]
-    A --> C["Funcional<br>(rota de<br>deslocamento<br>espécie-específica)"]
-    A --> D["De paisagem<br>(região de<br>planejamento<br>multiescalar)"]
-    B --> E["Definido por<br>geometria<br>do mapa"]
-    C --> F["Definido por<br>comportamento<br>e capacidade<br>de dispersão"]
-    D --> G["Definido por<br>política de<br>conservação e<br>restauração"]
+```{dot}
+//| label: fig-tipos-corredores
+//| fig-cap: "Três conceitos de corredor ecológico, distinguindo a perspectiva geométrica (estrutural), biológica (funcional) e de gestão (paisagem)."
+//| fig-width: 9
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0]
 
-    style A fill:#2E7D32,color:#fff
+    A [label="Corredor", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
+    B [label="Estrutural\n(faixa física\nde habitat)", fillcolor="#BBDEFB", color="#1565C0"]
+    C [label="Funcional\n(rota de deslocamento\nespécie-específica)", fillcolor="#FFE0B2", color="#E65100"]
+    D [label="De paisagem\n(região de planejamento\nmultiescalar)", fillcolor="#E1BEE7", color="#6A1B9A"]
+    E [label="Definido por\ngeometria\ndo mapa", fillcolor="#E3F2FD", color="#1565C0"]
+    F [label="Definido por\ncomportamento\ne capacidade\nde dispersão", fillcolor="#FFF3E0", color="#E65100"]
+    G [label="Definido por\npolítica de\nconservação e\nrestauração", fillcolor="#F3E5F5", color="#6A1B9A"]
+
+    A -> {B C D}
+    B -> E
+    C -> F
+    D -> G
+}
 ```
-Três conceitos de corredor ecológico, distinguindo a perspectiva geométrica (estrutural), biológica (funcional) e de gestão (paisagem).
-:::
 
 A @fig-tipos-corredores evidencia que avaliar se um corredor "funciona" depende de definir "funciona para quê e para quem". Um corredor ripário de 30 m de largura ao longo de um rio pode ser estruturalmente contínuo, funcional para aves de sub-bosque e invertebrados aquáticos, mas completamente ineficaz para uma onça-pintada que necessita de faixas florestais de pelo menos 200 m de largura para se deslocar sem estresse. Inversamente, o mesmo corredor pode ser excessivo para espécies que não o utilizam. A espécie focal para a qual o corredor é desenhado determina, portanto, sua largura mínima, sua composição vegetal, a tolerância a lacunas e a necessidade de habitats de passagem (*stepping stones*).
 
