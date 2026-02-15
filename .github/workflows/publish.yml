@@ -48,8 +48,18 @@ jobs:
           cp cv-luiz-diego-en.pdf _site/cv-luiz-diego-en.pdf
           cp cv-luiz-diego-es.pdf _site/cv-luiz-diego-es.pdf
 
+      - name: Render Book - Bioengenharia de Solos
+        run: |
+          cd books/bioengenharia-solos
+          quarto render
+
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
+
+      - name: Copy book output to site
+        run: |
+          mkdir -p _site/books/bioengenharia-solos
+          cp -r books/bioengenharia-solos/_book/* _site/books/bioengenharia-solos/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

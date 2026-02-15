@@ -1,6 +1,6 @@
 ---
 title: "Books"
-description: "Ebooks and books published by Luiz Diego Vidal Santos — Soil Bioengineering, Nature-based Solutions, Intellectual Property."
+description: "Ebooks and books published by Luiz Diego Vidal Santos, covering Soil Bioengineering, Nature-based Solutions and Intellectual Property."
 lang: en
 ---
 
@@ -12,30 +12,23 @@ Books and ebooks authored by **Luiz Diego Vidal Santos**, available in digital f
 
 ## Ebooks
 
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-6}
-::: {.card .h-100 .shadow-sm}
+::: {.card .shadow-sm .mb-4}
+::: {.row .g-0 .align-items-center}
+::: {.col-md-3 .text-center .p-3}
+![](../books/bioengenharia-solos/img/capa_bioengenharia_de_solos.png){fig-alt="Cover of Soil Bioengineering in Tropical Regions ebook" style="max-height:280px; object-fit:contain;"}
+:::
+::: {.col-md-9}
 ::: {.card-body}
-
-![](../books/bioengenharia-solos/img/capa_bioengenharia_de_solos.png){.card-img-top fig-alt="Cover of Soil Bioengineering in Tropical Regions ebook" width="100%"}
 
 ### Soil Bioengineering in Tropical Regions {.card-title}
 
 **Fundamentals, Techniques and Applications**
 
-Technical-scientific manual on soil bioengineering applied to tropical regions, covering soil formation fundamentals and erosion to stabilization techniques with living materials and innovations in geotextiles and superabsorbent biopolymers.
+Technical-scientific manual with 21 chapters organized in 4 parts, ranging from soil formation fundamentals and erosion to stabilization techniques with living materials, innovations in geotextiles and superabsorbent biopolymers. Includes sizing equations, comparative tables and case studies. CC BY-NC-SA 4.0 License.
 
-- **21 chapters** organized in 4 parts
-- Equations, sizing tables and case studies
-- CC BY-NC-SA 4.0 License
-
-::: {.text-center .mt-3}
-[{{< fa book-open >}} Access the ebook](../books/bioengenharia-solos/){.btn .btn-primary}
-:::
+[{{< fa book-open >}} Access the ebook](../books/bioengenharia-solos/){.btn .btn-primary .btn-sm}
 
 :::
 :::
 :::
-
 :::

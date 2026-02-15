@@ -1,6 +1,6 @@
 ---
 title: "Livros"
-description: "Ebooks e livros publicados por Luiz Diego Vidal Santos — Bioengenharia de Solos, Soluções Baseadas na Natureza, Propriedade Intelectual."
+description: "Ebooks e livros publicados por Luiz Diego Vidal Santos, abrangendo Bioengenharia de Solos, Soluções Baseadas na Natureza e Propriedade Intelectual."
 ---
 
 ::: {.text-end .mb-3}
@@ -11,30 +11,23 @@ Livros e ebooks de autoria de **Luiz Diego Vidal Santos**, disponíveis em forma
 
 ## Ebooks
 
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-6}
-::: {.card .h-100 .shadow-sm}
+::: {.card .shadow-sm .mb-4}
+::: {.row .g-0 .align-items-center}
+::: {.col-md-3 .text-center .p-3}
+![](../books/bioengenharia-solos/img/capa_bioengenharia_de_solos.png){fig-alt="Capa do ebook Bioengenharia de Solos em Regiões Tropicais" style="max-height:280px; object-fit:contain;"}
+:::
+::: {.col-md-9}
 ::: {.card-body}
-
-![](../books/bioengenharia-solos/img/capa_bioengenharia_de_solos.png){.card-img-top fig-alt="Capa do ebook Bioengenharia de Solos em Regiões Tropicais" width="100%"}
 
 ### Bioengenharia de Solos em Regiões Tropicais {.card-title}
 
 **Fundamentos, Técnicas e Aplicações**
 
-Manual técnico-científico sobre bioengenharia de solos aplicada a regiões tropicais, abordando desde fundamentos de formação dos solos e erosão até técnicas de estabilização com materiais vivos e inovações em geotêxteis e biopolímeros superabsorventes.
+Manual técnico-científico com 21 capítulos organizados em 4 partes, abrangendo desde fundamentos de formação dos solos e erosão até técnicas de estabilização com materiais vivos, inovações em geotêxteis e biopolímeros superabsorventes. Inclui equações de dimensionamento, tabelas comparativas e estudos de caso. Licença CC BY-NC-SA 4.0.
 
-- **21 capítulos** organizados em 4 partes
-- Equações, tabelas de dimensionamento e estudos de caso
-- Licença CC BY-NC-SA 4.0
-
-::: {.text-center .mt-3}
-[{{< fa book-open >}} Acessar o ebook](../books/bioengenharia-solos/){.btn .btn-primary}
-:::
+[{{< fa book-open >}} Acessar o ebook](../books/bioengenharia-solos/){.btn .btn-primary .btn-sm}
 
 :::
 :::
 :::
-
 :::

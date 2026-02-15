@@ -1,6 +1,6 @@
 ---
 title: "Libros"
-description: "Ebooks y libros publicados por Luiz Diego Vidal Santos — Bioingeniería de Suelos, Soluciones Basadas en la Naturaleza, Propiedad Intelectual."
+description: "Ebooks y libros publicados por Luiz Diego Vidal Santos, abarcando Bioingeniería de Suelos, Soluciones Basadas en la Naturaleza y Propiedad Intelectual."
 lang: es
 ---
 
@@ -12,30 +12,23 @@ Libros y ebooks de autoría de **Luiz Diego Vidal Santos**, disponibles en forma
 
 ## Ebooks
 
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-6}
-::: {.card .h-100 .shadow-sm}
+::: {.card .shadow-sm .mb-4}
+::: {.row .g-0 .align-items-center}
+::: {.col-md-3 .text-center .p-3}
+![](../books/bioengenharia-solos/img/capa_bioengenharia_de_solos.png){fig-alt="Portada del ebook Bioingeniería de Suelos en Regiones Tropicales" style="max-height:280px; object-fit:contain;"}
+:::
+::: {.col-md-9}
 ::: {.card-body}
-
-![](../books/bioengenharia-solos/img/capa_bioengenharia_de_solos.png){.card-img-top fig-alt="Portada del ebook Bioingeniería de Suelos en Regiones Tropicales" width="100%"}
 
 ### Bioingeniería de Suelos en Regiones Tropicales {.card-title}
 
 **Fundamentos, Técnicas y Aplicaciones**
 
-Manual técnico-científico sobre bioingeniería de suelos aplicada a regiones tropicales, abordando desde fundamentos de formación de suelos y erosión hasta técnicas de estabilización con materiales vivos e innovaciones en geotextiles y biopolímeros superabsorbentes.
+Manual técnico-científico con 21 capítulos organizados en 4 partes, abarcando desde fundamentos de formación de suelos y erosión hasta técnicas de estabilización con materiales vivos, innovaciones en geotextiles y biopolímeros superabsorbentes. Incluye ecuaciones de dimensionamiento, tablas comparativas y estudios de caso. Licencia CC BY-NC-SA 4.0.
 
-- **21 capítulos** organizados en 4 partes
-- Ecuaciones, tablas de dimensionamiento y estudios de caso
-- Licencia CC BY-NC-SA 4.0
-
-::: {.text-center .mt-3}
-[{{< fa book-open >}} Acceder al ebook](../books/bioengenharia-solos/){.btn .btn-primary}
-:::
+[{{< fa book-open >}} Acceder al ebook](../books/bioengenharia-solos/){.btn .btn-primary .btn-sm}
 
 :::
 :::
 :::
-
 :::
