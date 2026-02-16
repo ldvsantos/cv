@@ -8,7 +8,7 @@
 
 <meta name="description" content="Livro-texto sobre Ciência da Paisagem com ênfase em análise da paisagem, integrando ecologia da paisagem, métricas espaciais, sensoriamento remoto, geoprocessamento e planejamento territorial para gestão sustentável de paisagens tropicais.">
 
-<title>8&nbsp; Classificação do Uso e Cobertura do Solo – Ciência da Paisagem</title>
+<title>9&nbsp; Uso vs.&nbsp;cobertura – Ciência da Paisagem</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -92,9 +92,6 @@ div.csl-indent {
     "search-label": "Procurar"
   }
 }</script>
-<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -137,7 +134,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/06-sensoriamento-remoto.html">Parte II — Métodos de Análise da Paisagem</a></li><li class="breadcrumb-item"><a href="../capitulos/08-uso-cobertura.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Classificação do Uso e Cobertura do Solo</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/06-sensoriamento-remoto.html">Parte II — Métodos de Análise da Paisagem</a></li><li class="breadcrumb-item"><a href="../capitulos/08-uso-cobertura.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Uso vs.&nbsp;cobertura</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
@@ -197,13 +194,13 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bem-vindo</span></a>
+ <span class="menu-text">Sobre este livro</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../prefacio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Prefácio</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">prefacio.html</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -218,31 +215,31 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/01-introducao.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução à Ciência da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">O que é Ciência da Paisagem?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/02-ecologia-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Conceitos e Abordagens da Ecologia da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Ecologia da Paisagem como disciplina</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/03-estrutura-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Estrutura da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">O modelo mancha-corredor-matriz</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/04-escalas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Escalas Espaço-temporais</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">O problema da escala</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/05-percepcao-representacao.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Percepção e Representação da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Paisagem percebida e paisagem analisada</span></span></a>
   </div>
 </li>
       </ul>
@@ -259,37 +256,37 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/06-sensoriamento-remoto.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Sensoriamento Remoto Aplicado à Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Fundamentos do sensoriamento remoto</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/07-sig-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sistemas de Informação Geográfica para Análise da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">O papel do SIG na análise da paisagem</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/08-uso-cobertura.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Classificação do Uso e Cobertura do Solo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Uso vs.&nbsp;cobertura</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/09-metricas-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Métricas da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Por que quantificar a paisagem?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/10-fragmentacao-conectividade.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Fragmentação e Conectividade</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Fragmentação de habitat</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/11-deteccao-mudancas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Detecção de Mudanças na Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Paisagens em transformação</span></span></a>
   </div>
 </li>
       </ul>
@@ -306,31 +303,31 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/12-dinamica-uso-solo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Dinâmica do Uso e Cobertura do Solo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Por que a paisagem muda?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/13-processos-hidrologicos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Processos Hidrológicos na Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">A água como protagonista invisível</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/14-servicos-ecossistemicos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Serviços Ecossistêmicos na Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">O que a natureza faz por nós?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/15-biodiversidade-heterogeneidade.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Biodiversidade e Heterogeneidade da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">A paisagem vista pelos organismos</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/16-mudancas-climaticas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Mudanças Climáticas e Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Um planeta mais quente e paisagens em movimento</span></span></a>
   </div>
 </li>
       </ul>
@@ -347,31 +344,31 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/17-planejamento-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Planejamento da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Planejar para quê?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/18-restauracao-ecologica.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Restauração Ecológica na Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">O que significa restaurar?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/19-corredores-areas-protegidas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Corredores Ecológicos e Áreas Protegidas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Ilhas verdes em um mar de atividade humana</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/20-modelagem-cenarios.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Modelagem de Cenários Paisagísticos</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">E se…?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/21-projeto-integrador.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Projeto Integrador</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Unindo todas as peças</span></span></a>
   </div>
 </li>
       </ul>
@@ -379,7 +376,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../referencias.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Referências</span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">referencias.html</span></span></a>
   </div>
 </li>
     </ul>
@@ -392,21 +389,23 @@ window.Quarto = {
     <h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#uso-vs.-cobertura" id="toc-uso-vs.-cobertura" class="nav-link active" data-scroll-target="#uso-vs.-cobertura"><span class="header-section-number">8.1</span> Uso vs.&nbsp;cobertura</a></li>
-  <li><a href="#métodos-de-classificação" id="toc-métodos-de-classificação" class="nav-link" data-scroll-target="#métodos-de-classificação"><span class="header-section-number">8.2</span> Métodos de classificação</a></li>
-  <li><a href="#classificação-orientada-a-objetos" id="toc-classificação-orientada-a-objetos" class="nav-link" data-scroll-target="#classificação-orientada-a-objetos"><span class="header-section-number">8.3</span> Classificação orientada a objetos</a></li>
-  <li><a href="#série-temporal-e-classificação-multitemporal" id="toc-série-temporal-e-classificação-multitemporal" class="nav-link" data-scroll-target="#série-temporal-e-classificação-multitemporal"><span class="header-section-number">8.4</span> Série temporal e classificação multitemporal</a></li>
-  <li><a href="#validação" id="toc-validação" class="nav-link" data-scroll-target="#validação"><span class="header-section-number">8.5</span> Validação</a></li>
-  <li><a href="#desafios-em-paisagens-tropicais" id="toc-desafios-em-paisagens-tropicais" class="nav-link" data-scroll-target="#desafios-em-paisagens-tropicais"><span class="header-section-number">8.6</span> Desafios em paisagens tropicais</a></li>
+  <li><a href="#sec-uso-cobertura" id="toc-sec-uso-cobertura" class="nav-link active" data-scroll-target="#sec-uso-cobertura"><span class="header-section-number">10</span> Classificação do Uso e Cobertura do Solo</a>
+  <ul class="collapse">
+  <li><a href="#métodos-de-classificação" id="toc-métodos-de-classificação" class="nav-link" data-scroll-target="#métodos-de-classificação"><span class="header-section-number">10.1</span> Métodos de classificação</a></li>
+  <li><a href="#classificação-orientada-a-objetos" id="toc-classificação-orientada-a-objetos" class="nav-link" data-scroll-target="#classificação-orientada-a-objetos"><span class="header-section-number">10.2</span> Classificação orientada a objetos</a></li>
+  <li><a href="#série-temporal-e-classificação-multitemporal" id="toc-série-temporal-e-classificação-multitemporal" class="nav-link" data-scroll-target="#série-temporal-e-classificação-multitemporal"><span class="header-section-number">10.3</span> Série temporal e classificação multitemporal</a></li>
+  <li><a href="#validação" id="toc-validação" class="nav-link" data-scroll-target="#validação"><span class="header-section-number">10.4</span> Validação</a></li>
+  <li><a href="#desafios-em-paisagens-tropicais" id="toc-desafios-em-paisagens-tropicais" class="nav-link" data-scroll-target="#desafios-em-paisagens-tropicais"><span class="header-section-number">10.5</span> Desafios em paisagens tropicais</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ldvsantos/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/06-sensoriamento-remoto.html">Parte II — Métodos de Análise da Paisagem</a></li><li class="breadcrumb-item"><a href="../capitulos/08-uso-cobertura.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Classificação do Uso e Cobertura do Solo</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/06-sensoriamento-remoto.html">Parte II — Métodos de Análise da Paisagem</a></li><li class="breadcrumb-item"><a href="../capitulos/08-uso-cobertura.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Uso vs.&nbsp;cobertura</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-uso-cobertura" class="quarto-section-identifier"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Classificação do Uso e Cobertura do Solo</span></span></h1>
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Uso vs.&nbsp;cobertura</span></h1>
 </div>
 
 
@@ -423,58 +422,156 @@ window.Quarto = {
 </header>
 
 
-<section id="uso-vs.-cobertura" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="uso-vs.-cobertura"><span class="header-section-number">8.1</span> Uso vs.&nbsp;cobertura</h2>
-<p>Os termos “uso do solo” e “cobertura do solo” são frequentemente empregados de forma intercambiável, mas referem-se a dimensões distintas que devem ser conceitualmente separadas <span class="citation" data-cites="verburg2009">(<a href="../referencias.html#ref-verburg2009" role="doc-biblioref">Verburg et al., 2009</a>)</span>. A <strong>cobertura do solo</strong> (<em>land cover</em>) descreve o material biofísico presente na superfície terrestre num dado momento. Floresta, pastagem, solo exposto, água e superfície impermeável são categorias de cobertura definidas por propriedades biofísicas mensuráveis (reflectância espectral, estrutura da vegetação, composição do substrato). O <strong>uso do solo</strong> (<em>land use</em>) descreve a função socioeconômica atribuída a essa superfície. Agricultura, pecuária, conservação, habitação e recreação são categorias de uso definidas pela atividade humana que se desenvolve sobre a cobertura.</p>
-<p>A distinção é relevante porque uma mesma cobertura (gramínea) pode corresponder a usos distintos (pastagem extensiva, gramado urbano, campo de aviação, campo de futebol), e cada uso implica regime de manejo, intensidade de perturbação e trajetória futura completamente diferentes. Imagens de sensoriamento remoto detectam <strong>cobertura</strong>, não uso. A atribuição de uso requer informação complementar (cadastros fundiários, dados socioeconômicos, safras declaradas, conhecimento de campo). Sistemas de classificação como o MapBiomas adotam uma hierarquia que distingue níveis de cobertura (Nível 1, com classes como formações florestais, campestres, agropecuária) e níveis de uso (Nível 3, com classes como soja, cana-de-açúcar, pastagem plantada), sendo que os níveis de uso são derivados de cobertura com auxílio de dados auxiliares (calendário agrícola, altitude, precipitação).</p>
-</section>
-<section id="métodos-de-classificação" class="level2" data-number="8.2">
-<h2 data-number="8.2" class="anchored" data-anchor-id="métodos-de-classificação"><span class="header-section-number">8.2</span> Métodos de classificação</h2>
-<p>Os métodos de classificação de imagens de sensoriamento remoto dividem-se em duas grandes categorias. A <strong>classificação supervisionada</strong> utiliza amostras de treinamento (pixels ou segmentos cujo rótulo é conhecido) para treinar um algoritmo que aprende a relação entre a resposta espectral e as classes definidas, e então atribui cada pixel da imagem à classe mais provável. A <strong>classificação não supervisionada</strong> (K-means, ISODATA) agrupa automaticamente os pixels com base em similaridade espectral, sem conhecimento prévio das classes, e os clusters resultantes são posteriormente rotulados pelo analista.</p>
-<p>Na classificação supervisionada, os algoritmos mais utilizados incluem o classificador de máxima verossimilhança (<em>Maximum Likelihood</em>), que assume distribuição gaussiana multivariada das classes, a árvore de decisão (<em>Decision Tree</em>), que segmenta o espaço espectral por limiares sucessivos, a <strong>floresta aleatória</strong> (<em>Random Forest</em>), que agrega múltiplas árvores de decisão para reduzir overfitting e estimar importância de variáveis, e as máquinas de vetores de suporte (<em>Support Vector Machine</em>), que buscam o hiperplano de separação ótima entre classes. Mais recentemente, redes neurais convolucionais (<em>Convolutional Neural Networks</em>, CNN) têm sido aplicadas a classificações de alta resolução com resultados promissores em paisagens tropicais, embora demandem grandes volumes de dados de treinamento. A <a href="#fig-fluxo-classificacao" class="quarto-xref">Figura&nbsp;<span>8.1</span></a> sintetiza o fluxo de trabalho completo da classificação supervisionada.</p>
+<section id="sec-uso-cobertura" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Classificação do Uso e Cobertura do Solo</h1>
+<p>Os termos “uso do solo” e “cobertura do solo” são frequentemente empregados de forma intercambiável, mas referem-se a dimensões distintas que devem ser conceitualmente separadas <span class="citation" data-cites="verburg2009">(<a href="../referencias.html#ref-verburg2009" role="doc-biblioref">Verburg et al., 2009</a>)</span>. A cobertura do solo (<em>land cover</em>) descreve o material biofísico presente na superfície terrestre num dado momento. Floresta, pastagem, solo exposto, água e superfície impermeável são categorias de cobertura definidas por propriedades biofísicas mensuráveis (reflectância espectral, estrutura da vegetação, composição do substrato). O uso do solo (<em>land use</em>) descreve a função socioeconômica atribuída a essa superfície. Agricultura, pecuária, conservação, habitação e recreação são categorias de uso definidas pela atividade humana que se desenvolve sobre a cobertura.</p>
+<p>A distinção é relevante porque uma mesma cobertura (gramínea) pode corresponder a usos distintos (pastagem extensiva, gramado urbano, campo de aviação, campo de futebol), e cada uso implica regime de manejo, intensidade de perturbação e trajetória futura completamente diferentes. Imagens de sensoriamento remoto detectam cobertura, não uso. A atribuição de uso requer informação complementar (cadastros fundiários, dados socioeconômicos, safras declaradas, conhecimento de campo). Sistemas de classificação como o MapBiomas adotam uma hierarquia que distingue níveis de cobertura (Nível 1, com classes como formações florestais, campestres, agropecuária) e níveis de uso (Nível 3, com classes como soja, cana-de-açúcar, pastagem plantada), sendo que os níveis de uso são derivados de cobertura com auxílio de dados auxiliares (calendário agrícola, altitude, precipitação).</p>
+<section id="métodos-de-classificação" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="métodos-de-classificação"><span class="header-section-number">10.1</span> Métodos de classificação</h2>
+<p>Os métodos de classificação de imagens de sensoriamento remoto dividem-se em duas grandes categorias. A classificação supervisionada utiliza amostras de treinamento (pixels ou segmentos cujo rótulo é conhecido) para treinar um algoritmo que aprende a relação entre a resposta espectral e as classes definidas, e então atribui cada pixel da imagem à classe mais provável. A classificação não supervisionada (K-means, ISODATA) agrupa automaticamente os pixels com base em similaridade espectral, sem conhecimento prévio das classes, e os clusters resultantes são posteriormente rotulados pelo analista.</p>
+<p>Na classificação supervisionada, os algoritmos mais utilizados incluem o classificador de máxima verossimilhança (<em>Maximum Likelihood</em>), que assume distribuição gaussiana multivariada das classes, a árvore de decisão (<em>Decision Tree</em>), que segmenta o espaço espectral por limiares sucessivos, a floresta aleatória (<em>Random Forest</em>), que agrega múltiplas árvores de decisão para reduzir overfitting e estimar importância de variáveis, e as máquinas de vetores de suporte (<em>Support Vector Machine</em>), que buscam o hiperplano de separação ótima entre classes. Mais recentemente, redes neurais convolucionais (<em>Convolutional Neural Networks</em>, CNN) têm sido aplicadas a classificações de alta resolução com resultados promissores em paisagens tropicais, embora demandem grandes volumes de dados de treinamento. A <a href="#fig-fluxo-classificacao" class="quarto-xref">Figura&nbsp;<span>10.1</span></a> sintetiza o fluxo de trabalho completo da classificação supervisionada.</p>
+<div class="cell" data-fig-width="9" data-layout-align="center">
+<div class="cell-output-display">
 <div id="fig-fluxo-classificacao" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fluxo-classificacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell" data-fig-width="9" data-layout-align="center">
-<div class="cell-output-display">
 <div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-    A["Imagem pré-processada"] --&gt; B["Definição de classes"]
-    B --&gt; C["Coleta de amostras de treinamento"]
-    C --&gt; D["Treinamento do classificador"]
-    D --&gt; E["Classificação da imagem"]
-    E --&gt; F["Pós-processamento&lt;br&gt;(filtro de moda, remoção de ruído)"]
-    F --&gt; G["Validação&lt;br&gt;(matriz de confusão)"]
-    G --&gt;|Acurácia insuficiente| C
-    G --&gt;|Acurácia satisfatória| H["Mapa temático final"]
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
+<svg width="864" height="480" viewbox="0.00 0.00 1176.10 102.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 98)">
+<!-- A -->
+<g id="node1" class="node">
+<title>A</title>
+<path fill="#e8f5e9" stroke="#2e7d32" stroke-width="0.8" d="M93.72,-42C93.72,-42 11.76,-42 11.76,-42 5.76,-42 -0.24,-36 -0.24,-30 -0.24,-30 -0.24,-12 -0.24,-12 -0.24,-6 5.76,0 11.76,0 11.76,0 93.72,0 93.72,0 99.72,0 105.72,-6 105.72,-12 105.72,-12 105.72,-30 105.72,-30 105.72,-36 99.72,-42 93.72,-42"></path>
+<text text-anchor="middle" x="52.74" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">Imagem</text>
+<text text-anchor="middle" x="52.74" y="-12" font-family="Helvetica,sans-Serif" font-size="10.00">pré-processada</text>
+</g>
+<!-- B -->
+<g id="node2" class="node">
+<title>B</title>
+<path fill="#e8f5e9" stroke="#2e7d32" stroke-width="0.8" d="M213.85,-42C213.85,-42 154.35,-42 154.35,-42 148.35,-42 142.35,-36 142.35,-30 142.35,-30 142.35,-12 142.35,-12 142.35,-6 148.35,0 154.35,0 154.35,0 213.85,0 213.85,0 219.85,0 225.85,-6 225.85,-12 225.85,-12 225.85,-30 225.85,-30 225.85,-36 219.85,-42 213.85,-42"></path>
+<text text-anchor="middle" x="184.1" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">Definição</text>
+<text text-anchor="middle" x="184.1" y="-12" font-family="Helvetica,sans-Serif" font-size="10.00">de classes</text>
+</g>
+<!-- A&#45;&gt;B -->
+<g id="edge1" class="edge">
+<title>A-&gt;B</title>
+<path fill="none" stroke="#555555" d="M105.61,-21C114.4,-21 123.52,-21 132.28,-21"></path>
+<polygon fill="#555555" stroke="#555555" points="132.37,-24.5 142.37,-21 132.37,-17.5 132.37,-24.5"></polygon>
+</g>
+<!-- C -->
+<g id="node3" class="node">
+<title>C</title>
+<path fill="#e8f5e9" stroke="#2e7d32" stroke-width="0.8" d="M373.29,-42C373.29,-42 274.87,-42 274.87,-42 268.87,-42 262.87,-36 262.87,-30 262.87,-30 262.87,-12 262.87,-12 262.87,-6 268.87,0 274.87,0 274.87,0 373.29,0 373.29,0 379.29,0 385.29,-6 385.29,-12 385.29,-12 385.29,-30 385.29,-30 385.29,-36 379.29,-42 373.29,-42"></path>
+<text text-anchor="middle" x="324.08" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">Coleta de amostras</text>
+<text text-anchor="middle" x="324.08" y="-12" font-family="Helvetica,sans-Serif" font-size="10.00">de treinamento</text>
+</g>
+<!-- B&#45;&gt;C -->
+<g id="edge2" class="edge">
+<title>B-&gt;C</title>
+<path fill="none" stroke="#555555" d="M225.75,-21C234.28,-21 243.5,-21 252.75,-21"></path>
+<polygon fill="#555555" stroke="#555555" points="252.77,-24.5 262.77,-21 252.77,-17.5 252.77,-24.5"></polygon>
+</g>
+<!-- D -->
+<g id="node4" class="node">
+<title>D</title>
+<path fill="#e8f5e9" stroke="#2e7d32" stroke-width="0.8" d="M516.49,-85C516.49,-85 434.41,-85 434.41,-85 428.41,-85 422.41,-79 422.41,-73 422.41,-73 422.41,-55 422.41,-55 422.41,-49 428.41,-43 434.41,-43 434.41,-43 516.49,-43 516.49,-43 522.49,-43 528.49,-49 528.49,-55 528.49,-55 528.49,-73 528.49,-73 528.49,-79 522.49,-85 516.49,-85"></path>
+<text text-anchor="middle" x="475.45" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">Treinamento do</text>
+<text text-anchor="middle" x="475.45" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">classificador</text>
+</g>
+<!-- C&#45;&gt;D -->
+<g id="edge3" class="edge">
+<title>C-&gt;D</title>
+<path fill="none" stroke="#555555" d="M385.4,-38.37C394.23,-40.91 403.33,-43.53 412.19,-46.08"></path>
+<polygon fill="#555555" stroke="#555555" points="411.49,-49.52 422.07,-48.92 413.43,-42.79 411.49,-49.52"></polygon>
+</g>
+<!-- E -->
+<g id="node5" class="node">
+<title>E</title>
+<path fill="#e8f5e9" stroke="#2e7d32" stroke-width="0.8" d="M649.17,-91C649.17,-91 577.24,-91 577.24,-91 571.24,-91 565.24,-85 565.24,-79 565.24,-79 565.24,-61 565.24,-61 565.24,-55 571.24,-49 577.24,-49 577.24,-49 649.17,-49 649.17,-49 655.17,-49 661.17,-55 661.17,-61 661.17,-61 661.17,-79 661.17,-79 661.17,-85 655.17,-91 649.17,-91"></path>
+<text text-anchor="middle" x="613.2" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">Classificação</text>
+<text text-anchor="middle" x="613.2" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">da imagem</text>
+</g>
+<!-- D&#45;&gt;E -->
+<g id="edge4" class="edge">
+<title>D-&gt;E</title>
+<path fill="none" stroke="#555555" d="M528.55,-66.3C537.25,-66.69 546.33,-67.09 555.15,-67.48"></path>
+<polygon fill="#555555" stroke="#555555" points="555.21,-70.98 565.35,-67.93 555.52,-63.99 555.21,-70.98"></polygon>
+</g>
+<!-- F -->
+<g id="node6" class="node">
+<title>F</title>
+<path fill="#e8f5e9" stroke="#2e7d32" stroke-width="0.8" d="M810.82,-94C810.82,-94 709.97,-94 709.97,-94 703.97,-94 697.97,-88 697.97,-82 697.97,-82 697.97,-52 697.97,-52 697.97,-46 703.97,-40 709.97,-40 709.97,-40 810.82,-40 810.82,-40 816.82,-40 822.82,-46 822.82,-52 822.82,-52 822.82,-82 822.82,-82 822.82,-88 816.82,-94 810.82,-94"></path>
+<text text-anchor="middle" x="760.4" y="-76" font-family="Helvetica,sans-Serif" font-size="10.00">Pós-processamento</text>
+<text text-anchor="middle" x="760.4" y="-64" font-family="Helvetica,sans-Serif" font-size="10.00">(filtro de moda,</text>
+<text text-anchor="middle" x="760.4" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00">remoção de ruído)</text>
+</g>
+<!-- E&#45;&gt;F -->
+<g id="edge5" class="edge">
+<title>E-&gt;F</title>
+<path fill="none" stroke="#555555" d="M660.94,-69.03C669.5,-68.86 678.6,-68.67 687.68,-68.48"></path>
+<polygon fill="#555555" stroke="#555555" points="687.98,-71.98 697.9,-68.27 687.83,-64.98 687.98,-71.98"></polygon>
+</g>
+<!-- G -->
+<g id="node7" class="node">
+<title>G</title>
+<path fill="#fff9c4" stroke="#f57f17" stroke-width="0.8" d="M975.07,-42C975.07,-42 871.79,-42 871.79,-42 865.79,-42 859.79,-36 859.79,-30 859.79,-30 859.79,-12 859.79,-12 859.79,-6 865.79,0 871.79,0 871.79,0 975.07,0 975.07,0 981.07,0 987.07,-6 987.07,-12 987.07,-12 987.07,-30 987.07,-30 987.07,-36 981.07,-42 975.07,-42"></path>
+<text text-anchor="middle" x="923.43" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">Validação</text>
+<text text-anchor="middle" x="923.43" y="-12" font-family="Helvetica,sans-Serif" font-size="10.00">(matriz de confusão)</text>
+</g>
+<!-- F&#45;&gt;G -->
+<g id="edge6" class="edge">
+<title>F-&gt;G</title>
+<path fill="none" stroke="#555555" d="M823.2,-49.35C831.99,-46.83 841.1,-44.23 850.07,-41.67"></path>
+<polygon fill="#555555" stroke="#555555" points="851.08,-45.02 859.73,-38.91 849.16,-38.29 851.08,-45.02"></polygon>
+</g>
+<!-- G&#45;&gt;C -->
+<g id="edge7" class="edge">
+<title>G-&gt;C</title>
+<path fill="none" stroke="#c62828" stroke-dasharray="5,2" d="M859.8,-14.16C830.03,-11.46 793.92,-9 761.4,-9 474.45,-9 474.45,-9 474.45,-9 448.61,-9 420.34,-10.81 395.41,-13.02"></path>
+<polygon fill="#c62828" stroke="#c62828" points="394.95,-9.54 385.31,-13.95 395.59,-16.52 394.95,-9.54"></polygon>
+<text text-anchor="middle" x="613.2" y="-22.5" font-family="Helvetica,sans-Serif" font-size="9.00">Acurácia</text>
+<text text-anchor="middle" x="613.2" y="-11.7" font-family="Helvetica,sans-Serif" font-size="9.00">insuficiente</text>
+</g>
+<!-- H -->
+<g id="node8" class="node">
+<title>H</title>
+<path fill="#a5d6a7" stroke="#1b5e20" stroke-width="1.5" d="M1155.89,-42C1155.89,-42 1078.73,-42 1078.73,-42 1072.73,-42 1066.73,-36 1066.73,-30 1066.73,-30 1066.73,-12 1066.73,-12 1066.73,-6 1072.73,0 1078.73,0 1078.73,0 1155.89,0 1155.89,0 1161.89,0 1167.89,-6 1167.89,-12 1167.89,-12 1167.89,-30 1167.89,-30 1167.89,-36 1161.89,-42 1155.89,-42"></path>
+<text text-anchor="middle" x="1117.31" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">Mapa temático</text>
+<text text-anchor="middle" x="1117.31" y="-12" font-family="Helvetica,sans-Serif" font-size="10.00">final</text>
+</g>
+<!-- G&#45;&gt;H -->
+<g id="edge8" class="edge">
+<title>G-&gt;H</title>
+<path fill="none" stroke="#1b5e20" d="M987.26,-21C1009.53,-21 1034.51,-21 1056.51,-21"></path>
+<polygon fill="#1b5e20" stroke="#1b5e20" points="1056.72,-24.5 1066.72,-21 1056.72,-17.5 1056.72,-24.5"></polygon>
+<text text-anchor="middle" x="1026.76" y="-34.5" font-family="Helvetica,sans-Serif" font-size="9.00">Acurácia</text>
+<text text-anchor="middle" x="1026.76" y="-23.7" font-family="Helvetica,sans-Serif" font-size="9.00">satisfatória</text>
+</g>
+</g>
+</svg>
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fluxo-classificacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;8.1: Fluxo de trabalho da classificação supervisionada de uso e cobertura do solo, destacando o laço iterativo de refinamento.
+Figura&nbsp;10.1: Fluxo de trabalho da classificação supervisionada de uso e cobertura do solo, destacando o laço iterativo de refinamento.
 </figcaption>
 </figure>
 </div>
-<p>A <a href="#fig-fluxo-classificacao" class="quarto-xref">Figura&nbsp;<span>8.1</span></a> explicita uma propriedade frequentemente negligenciada na prática. O fluxo não é linear, mas <strong>iterativo</strong>. A seta que retorna da validação (acurácia insuficiente) para a coleta de amostras indica que o processo de classificação envolve múltiplos ciclos de refinamento, nos quais amostras de treinamento são adicionadas ou corrigidas, parâmetros do classificador são ajustados e a classificação é repetida até atingir a acurácia desejada. Em paisagens tropicais com alta variabilidade espectral, três a cinco iterações são comuns antes de se obter um mapa com acurácia global superior a 85%. A etapa de pós-processamento (filtro de moda, remoção de fragmentos menores que uma área mínima, generalização de bordas) é necessária para eliminar o ruído sal-e-pimenta (<em>salt-and-pepper noise</em>) inerente à classificação pixel-a-pixel, que cria falsas manchas de uma única célula que inflacionariam artificialmente as métricas de paisagem.</p>
+</div>
+</div>
+<p>A <a href="#fig-fluxo-classificacao" class="quarto-xref">Figura&nbsp;<span>10.1</span></a> explicita uma propriedade frequentemente negligenciada na prática. O fluxo não é linear, mas iterativo. A seta que retorna da validação (acurácia insuficiente) para a coleta de amostras indica que o processo de classificação envolve múltiplos ciclos de refinamento, nos quais amostras de treinamento são adicionadas ou corrigidas, parâmetros do classificador são ajustados e a classificação é repetida até atingir a acurácia desejada. Em paisagens tropicais com alta variabilidade espectral, três a cinco iterações são comuns antes de se obter um mapa com acurácia global superior a 85%. A etapa de pós-processamento (filtro de moda, remoção de fragmentos menores que uma área mínima, generalização de bordas) é necessária para eliminar o ruído sal-e-pimenta (<em>salt-and-pepper noise</em>) inerente à classificação pixel-a-pixel, que cria falsas manchas de uma única célula que inflacionariam artificialmente as métricas de paisagem.</p>
 </section>
-<section id="classificação-orientada-a-objetos" class="level2" data-number="8.3">
-<h2 data-number="8.3" class="anchored" data-anchor-id="classificação-orientada-a-objetos"><span class="header-section-number">8.3</span> Classificação orientada a objetos</h2>
-<p>A classificação baseada em pixels trata cada célula isoladamente, desconsiderando o contexto espacial. A <strong>classificação orientada a objetos</strong> (<em>Object-Based Image Analysis</em>, OBIA) agrupa pixels espectralmente similares e espacialmente contíguos em <strong>segmentos</strong> (objetos) antes da classificação, numa etapa denominada <strong>segmentação</strong>. Cada objeto resultante possui atributos espectrais (média, desvio padrão de reflectância), geométricos (área, perímetro, compacidade, elongação) e contextuais (proporção de classes vizinhas, distância a feições) que são utilizados como variáveis de classificação.</p>
+<section id="classificação-orientada-a-objetos" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="classificação-orientada-a-objetos"><span class="header-section-number">10.2</span> Classificação orientada a objetos</h2>
+<p>A classificação baseada em pixels trata cada célula isoladamente, desconsiderando o contexto espacial. A classificação orientada a objetos (<em>Object-Based Image Analysis</em>, OBIA) agrupa pixels espectralmente similares e espacialmente contíguos em segmentos (objetos) antes da classificação, numa etapa denominada segmentação. Cada objeto resultante possui atributos espectrais (média, desvio padrão de reflectância), geométricos (área, perímetro, compacidade, elongação) e contextuais (proporção de classes vizinhas, distância a feições) que são utilizados como variáveis de classificação.</p>
 <p>A OBIA é particularmente vantajosa para imagens de alta resolução (sub-métrica a 5 m), nas quais a variabilidade espectral intra-classe é elevada e a classificação pixel-a-pixel produz resultados ruidosos. Um telhado cerâmico, por exemplo, contém pixels de tijolo claro e escuro, sombra e vegetação rasteira adjacente, que a classificação por pixel atribui a classes diferentes, enquanto a OBIA reconhece o conjunto como um único objeto “edificação” com base na forma, textura e contexto. Em paisagens tropicais, a OBIA tem sido empregada com sucesso para mapear fitofisionomias do Cerrado, distinguir estágios de regeneração em fragmentos de Mata Atlântica e classificar usos agrícolas diversificados.</p>
 </section>
-<section id="série-temporal-e-classificação-multitemporal" class="level2" data-number="8.4">
-<h2 data-number="8.4" class="anchored" data-anchor-id="série-temporal-e-classificação-multitemporal"><span class="header-section-number">8.4</span> Série temporal e classificação multitemporal</h2>
-<p>A incorporação da dimensão temporal à classificação amplia significativamente a capacidade discriminatória. Cultivos agrícolas com respostas espectrais similares numa data específica (milho e soja no início do ciclo, por exemplo, são ambos gramíneas/leguminosas verdes com NDVI similar) podem ser distinguidos pela <strong>assinatura fenológica</strong> ao longo de toda a estação de crescimento, conforme demonstra a <a href="#tbl-separabilidade" class="quarto-xref">Tabela&nbsp;<span>8.1</span></a>.</p>
+<section id="série-temporal-e-classificação-multitemporal" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="série-temporal-e-classificação-multitemporal"><span class="header-section-number">10.3</span> Série temporal e classificação multitemporal</h2>
+<p>A incorporação da dimensão temporal à classificação amplia significativamente a capacidade discriminatória. Cultivos agrícolas com respostas espectrais similares numa data específica (milho e soja no início do ciclo, por exemplo, são ambos gramíneas/leguminosas verdes com NDVI similar) podem ser distinguidos pela assinatura fenológica ao longo de toda a estação de crescimento, conforme demonstra a <a href="#tbl-separabilidade" class="quarto-xref">Tabela&nbsp;<span>10.1</span></a>.</p>
 <div id="tbl-separabilidade" class="striped hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-separabilidade-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Tabela&nbsp;8.1: Separabilidade de classes de uso e cobertura por resposta espectral estática vs.&nbsp;assinatura temporal de NDVI. A coluna “estática” indica o grau de confusão numa única data, enquanto a coluna “temporal” mostra como o perfil fenológico permite discriminação.
+Tabela&nbsp;10.1: Separabilidade de classes de uso e cobertura por resposta espectral estática vs.&nbsp;assinatura temporal de NDVI. A coluna “estática” indica o grau de confusão numa única data, enquanto a coluna “temporal” mostra como o perfil fenológico permite discriminação.
 </figcaption>
 <div aria-describedby="tbl-separabilidade-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table-striped table-hover caption-top table">
@@ -526,14 +623,14 @@ Tabela&nbsp;8.1: Separabilidade de classes de uso e cobertura por resposta espec
 </div>
 </figure>
 </div>
-<p>A <a href="#tbl-separabilidade" class="quarto-xref">Tabela&nbsp;<span>8.1</span></a> evidencia que a informação temporal resolve ambiguidades que a informação espectral estática não consegue resolver. Soja e milho, indistinguíveis numa única imagem, separam-se pelo deslocamento temporal do pico de NDVI (janeiro vs.&nbsp;fevereiro). Cana-de-açúcar e floresta, ambas com NDVI alto numa data qualquer, distinguem-se pelo evento de corte (queda abrupta de NDVI para valores inferiores a 0,2), que é ausente na floresta. Pastagem e vegetação campestre nativa, confusas em imagens estáticas, podem ser separadas pelo regime de manejo (a pastagem manejada mostra flutuações irregulares associadas a pastejo e roçagem, enquanto a vegetação nativa segue um ciclo sazonal regular).</p>
-<p>O projeto <strong>MapBiomas</strong> utiliza classificação multitemporal em plataforma Google Earth Engine para gerar mapas anuais de uso e cobertura de todo o Brasil (1985–presente) com resolução de 30 m (Landsat). A metodologia emprega mosaicos médios anuais, séries temporais de NDVI, EVI e outras métricas fenológicas, e classificadores Random Forest treinados com amostras específicas para cada bioma, atingindo acurácias globais que variam entre 82% e 92% conforme o bioma e a classe.</p>
+<p>A <a href="#tbl-separabilidade" class="quarto-xref">Tabela&nbsp;<span>10.1</span></a> evidencia que a informação temporal resolve ambiguidades que a informação espectral estática não consegue resolver. Soja e milho, indistinguíveis numa única imagem, separam-se pelo deslocamento temporal do pico de NDVI (janeiro vs.&nbsp;fevereiro). Cana-de-açúcar e floresta, ambas com NDVI alto numa data qualquer, distinguem-se pelo evento de corte (queda abrupta de NDVI para valores inferiores a 0,2), que é ausente na floresta. Pastagem e vegetação campestre nativa, confusas em imagens estáticas, podem ser separadas pelo regime de manejo (a pastagem manejada mostra flutuações irregulares associadas a pastejo e roçagem, enquanto a vegetação nativa segue um ciclo sazonal regular).</p>
+<p>O projeto MapBiomas utiliza classificação multitemporal em plataforma Google Earth Engine para gerar mapas anuais de uso e cobertura de todo o Brasil (1985–presente) com resolução de 30 m (Landsat). A metodologia emprega mosaicos médios anuais, séries temporais de NDVI, EVI e outras métricas fenológicas, e classificadores Random Forest treinados com amostras específicas para cada bioma, atingindo acurácias globais que variam entre 82% e 92% conforme o bioma e a classe.</p>
 </section>
-<section id="validação" class="level2" data-number="8.5">
-<h2 data-number="8.5" class="anchored" data-anchor-id="validação"><span class="header-section-number">8.5</span> Validação</h2>
+<section id="validação" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="validação"><span class="header-section-number">10.4</span> Validação</h2>
 <p>A validação da classificação é etapa obrigatória e não pode ser suprimida por limitações de tempo ou recursos, pois sem validação o mapa temático é uma representação de confiabilidade desconhecida e as métricas de paisagem calculadas a partir dele carecem de significado quantitativo.</p>
-<p>O procedimento padrão consiste em coletar <strong>amostras de referência</strong> (pontos cuja classe é determinada independentemente, por verificação em campo, interpretação visual de imagens de alta resolução ou consulta a bases oficiais) e comparar a classe atribuída pela classificação com a classe de referência. As amostras de referência devem ser <strong>independentes</strong> das amostras de treinamento (conjuntos separados), <strong>estratificadas</strong> por classe (para garantir representação adequada de classes raras) e <strong>georreferenciadas</strong> com precisão compatível com a resolução da imagem.</p>
-<p>A <strong>matriz de confusão</strong> (<em>confusion matrix</em> ou <em>error matrix</em>) é a ferramenta fundamental de avaliação <span class="citation" data-cites="congalton1991">(<a href="../referencias.html#ref-congalton1991" role="doc-biblioref">Congalton, 1991</a>)</span>. Dela derivam a acurácia global (proporção total de acertos), a acurácia do produtor (probabilidade de um ponto de referência de uma classe ser corretamente classificado, indicando erros de omissão), a acurácia do usuário (probabilidade de um pixel classificado numa classe corresponder à realidade, indicando erros de comissão) e o índice Kappa.</p>
+<p>O procedimento padrão consiste em coletar amostras de referência (pontos cuja classe é determinada independentemente, por verificação em campo, interpretação visual de imagens de alta resolução ou consulta a bases oficiais) e comparar a classe atribuída pela classificação com a classe de referência. As amostras de referência devem ser independentes das amostras de treinamento (conjuntos separados), estratificadas por classe (para garantir representação adequada de classes raras) e georreferenciadas com precisão compatível com a resolução da imagem.</p>
+<p>A matriz de confusão (<em>confusion matrix</em> ou <em>error matrix</em>) é a ferramenta fundamental de avaliação <span class="citation" data-cites="congalton1991">(<a href="../referencias.html#ref-congalton1991" role="doc-biblioref">Congalton, 1991</a>)</span>. Dela derivam a acurácia global (proporção total de acertos), a acurácia do produtor (probabilidade de um ponto de referência de uma classe ser corretamente classificado, indicando erros de omissão), a acurácia do usuário (probabilidade de um pixel classificado numa classe corresponder à realidade, indicando erros de comissão) e o índice Kappa.</p>
 <p><span class="math display">\[
 \kappa = \frac{p_o - p_e}{1 - p_e}
 \]</span></p>
@@ -552,9 +649,9 @@ Tabela&nbsp;8.1: Separabilidade de classes de uso e cobertura por resposta espec
 </div>
 </div>
 </section>
-<section id="desafios-em-paisagens-tropicais" class="level2" data-number="8.6">
-<h2 data-number="8.6" class="anchored" data-anchor-id="desafios-em-paisagens-tropicais"><span class="header-section-number">8.6</span> Desafios em paisagens tropicais</h2>
-<p>A classificação de paisagens tropicais enfrenta desafios específicos que limitam a acurácia e a resolução temática dos mapeamentos. A <strong>nebulosidade persistente</strong> limita a disponibilidade de cenas ópticas livres de nuvens, especialmente durante a estação chuvosa (4–6 meses na Amazônia, 3–5 meses na Zona da Mata), e pode inviabilizar a obtenção de imagens utilizáveis justamente no período de maior atividade vegetativa. A <strong>diversidade de fitofisionomias</strong> (no Cerrado, por exemplo, a transição contínua entre campo limpo, campo sujo, cerrado ralo, cerrado típico, cerrado denso e cerradão) dificulta a definição de limites de classe e reduz a separabilidade espectral entre formações adjacentes no gradiente. A <strong>dinâmica agrícola acelerada</strong> (dupla safra, safrinha, sistemas integrados lavoura-pecuária-floresta, ILPF) exige classificações multitemporais de alta frequência para capturar ciclos curtos que podem ser confundidos com mudanças de cobertura.</p>
+<section id="desafios-em-paisagens-tropicais" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="desafios-em-paisagens-tropicais"><span class="header-section-number">10.5</span> Desafios em paisagens tropicais</h2>
+<p>A classificação de paisagens tropicais enfrenta desafios específicos que limitam a acurácia e a resolução temática dos mapeamentos. A nebulosidade persistente limita a disponibilidade de cenas ópticas livres de nuvens, especialmente durante a estação chuvosa (4–6 meses na Amazônia, 3–5 meses na Zona da Mata), e pode inviabilizar a obtenção de imagens utilizáveis justamente no período de maior atividade vegetativa. A diversidade de fitofisionomias (no Cerrado, por exemplo, a transição contínua entre campo limpo, campo sujo, cerrado ralo, cerrado típico, cerrado denso e cerradão) dificulta a definição de limites de classe e reduz a separabilidade espectral entre formações adjacentes no gradiente. A dinâmica agrícola acelerada (dupla safra, safrinha, sistemas integrados lavoura-pecuária-floresta, ILPF) exige classificações multitemporais de alta frequência para capturar ciclos curtos que podem ser confundidos com mudanças de cobertura.</p>
 <p>Estratégias para lidar com esses desafios incluem a integração de dados ópticos e SAR (radar penetra nuvens), a utilização de séries temporais densas com composição de melhores pixels (mediana, quantis), a adoção de sistemas de legenda hierárquicos (classificação em níveis progressivos de detalhe, nos quais classes incertas em níveis detalhados são agregadas em classes confiáveis em níveis superiores) e a validação em campo com georreferenciamento por GNSS de precisão.</p>
 
 
@@ -566,6 +663,7 @@ Congalton, R. G. (1991). A review of assessing the accuracy of classifications o
 Verburg, P. H., Steeg, J. van de, Veldkamp, A., &amp; Willemen, L. (2009). From land cover change to land function dynamics: a major challenge to improve land characterization. <em>Journal of Environmental Management</em>, <em>90</em>(3), 1327–1335. <a href="https://doi.org/10.1016/j.jenvman.2008.08.005">https://doi.org/10.1016/j.jenvman.2008.08.005</a>
 </div>
 </div>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -971,13 +1069,13 @@ Verburg, P. H., Steeg, J. van de, Veldkamp, A., &amp; Willemen, L. (2009). From 
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../capitulos/07-sig-paisagem.html" class="pagination-link" aria-label="Sistemas de Informação Geográfica para Análise da Paisagem">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sistemas de Informação Geográfica para Análise da Paisagem</span></span>
+      <a href="../capitulos/07-sig-paisagem.html" class="pagination-link" aria-label="O papel do SIG na análise da paisagem">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">O papel do SIG na análise da paisagem</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../capitulos/09-metricas-paisagem.html" class="pagination-link" aria-label="Métricas da Paisagem">
-        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Métricas da Paisagem</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../capitulos/09-metricas-paisagem.html" class="pagination-link" aria-label="Por que quantificar a paisagem?">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Por que quantificar a paisagem?</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

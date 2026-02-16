@@ -8,7 +8,7 @@
 
 <meta name="description" content="Livro-texto sobre Ciência da Paisagem com ênfase em análise da paisagem, integrando ecologia da paisagem, métricas espaciais, sensoriamento remoto, geoprocessamento e planejamento territorial para gestão sustentável de paisagens tropicais.">
 
-<title>19&nbsp; Corredores Ecológicos e Áreas Protegidas – Ciência da Paisagem</title>
+<title>20&nbsp; Ilhas verdes em um mar de atividade humana – Ciência da Paisagem</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -72,10 +92,36 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Procurar"
   }
 }</script>
-<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -88,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/17-planejamento-paisagem.html">Parte IV — Planejamento e Gestão da Paisagem</a></li><li class="breadcrumb-item"><a href="../capitulos/19-corredores-areas-protegidas.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Corredores Ecológicos e Áreas Protegidas</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/17-planejamento-paisagem.html">Parte IV — Planejamento e Gestão da Paisagem</a></li><li class="breadcrumb-item"><a href="../capitulos/19-corredores-areas-protegidas.html"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Ilhas verdes em um mar de atividade humana</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
@@ -148,13 +194,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bem-vindo</span></a>
+ <span class="menu-text">Sobre este livro</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../prefacio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Prefácio</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">prefacio.html</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -169,31 +215,31 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/01-introducao.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução à Ciência da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">O que é Ciência da Paisagem?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/02-ecologia-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Conceitos e Abordagens da Ecologia da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Ecologia da Paisagem como disciplina</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/03-estrutura-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Estrutura da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">O modelo mancha-corredor-matriz</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/04-escalas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Escalas Espaço-temporais</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">O problema da escala</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/05-percepcao-representacao.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Percepção e Representação da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Paisagem percebida e paisagem analisada</span></span></a>
   </div>
 </li>
       </ul>
@@ -210,37 +256,37 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/06-sensoriamento-remoto.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Sensoriamento Remoto Aplicado à Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Fundamentos do sensoriamento remoto</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/07-sig-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sistemas de Informação Geográfica para Análise da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">O papel do SIG na análise da paisagem</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/08-uso-cobertura.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Classificação do Uso e Cobertura do Solo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Uso vs.&nbsp;cobertura</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/09-metricas-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Métricas da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Por que quantificar a paisagem?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/10-fragmentacao-conectividade.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Fragmentação e Conectividade</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Fragmentação de habitat</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/11-deteccao-mudancas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Detecção de Mudanças na Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Paisagens em transformação</span></span></a>
   </div>
 </li>
       </ul>
@@ -257,31 +303,31 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/12-dinamica-uso-solo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Dinâmica do Uso e Cobertura do Solo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Por que a paisagem muda?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/13-processos-hidrologicos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Processos Hidrológicos na Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">A água como protagonista invisível</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/14-servicos-ecossistemicos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Serviços Ecossistêmicos na Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">O que a natureza faz por nós?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/15-biodiversidade-heterogeneidade.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Biodiversidade e Heterogeneidade da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">A paisagem vista pelos organismos</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/16-mudancas-climaticas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Mudanças Climáticas e Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Um planeta mais quente e paisagens em movimento</span></span></a>
   </div>
 </li>
       </ul>
@@ -298,31 +344,31 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/17-planejamento-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Planejamento da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Planejar para quê?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/18-restauracao-ecologica.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Restauração Ecológica na Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">O que significa restaurar?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/19-corredores-areas-protegidas.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Corredores Ecológicos e Áreas Protegidas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Ilhas verdes em um mar de atividade humana</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/20-modelagem-cenarios.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Modelagem de Cenários Paisagísticos</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">E se…?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/21-projeto-integrador.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Projeto Integrador</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Unindo todas as peças</span></span></a>
   </div>
 </li>
       </ul>
@@ -330,7 +376,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../referencias.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Referências</span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">referencias.html</span></span></a>
   </div>
 </li>
     </ul>
@@ -343,21 +389,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#ilhas-verdes-em-um-mar-de-atividade-humana" id="toc-ilhas-verdes-em-um-mar-de-atividade-humana" class="nav-link active" data-scroll-target="#ilhas-verdes-em-um-mar-de-atividade-humana"><span class="header-section-number">19.1</span> Ilhas verdes em um mar de atividade humana</a></li>
-  <li><a href="#o-que-é-um-corredor-ecológico" id="toc-o-que-é-um-corredor-ecológico" class="nav-link" data-scroll-target="#o-que-é-um-corredor-ecológico"><span class="header-section-number">19.2</span> O que é um corredor ecológico?</a></li>
-  <li><a href="#dimensionamento-de-corredores" id="toc-dimensionamento-de-corredores" class="nav-link" data-scroll-target="#dimensionamento-de-corredores"><span class="header-section-number">19.3</span> Dimensionamento de corredores</a></li>
-  <li><a href="#áreas-protegidas-como-nós-da-rede" id="toc-áreas-protegidas-como-nós-da-rede" class="nav-link" data-scroll-target="#áreas-protegidas-como-nós-da-rede"><span class="header-section-number">19.4</span> Áreas protegidas como nós da rede</a></li>
-  <li><a href="#experiências-brasileiras-de-corredores" id="toc-experiências-brasileiras-de-corredores" class="nav-link" data-scroll-target="#experiências-brasileiras-de-corredores"><span class="header-section-number">19.5</span> Experiências brasileiras de corredores</a></li>
-  <li><a href="#espécies-focais-e-desenho-de-redes" id="toc-espécies-focais-e-desenho-de-redes" class="nav-link" data-scroll-target="#espécies-focais-e-desenho-de-redes"><span class="header-section-number">19.6</span> Espécies focais e desenho de redes</a></li>
+  <li><a href="#sec-corredores" id="toc-sec-corredores" class="nav-link active" data-scroll-target="#sec-corredores"><span class="header-section-number">21</span> Corredores Ecológicos e Áreas Protegidas</a>
+  <ul class="collapse">
+  <li><a href="#o-que-é-um-corredor-ecológico" id="toc-o-que-é-um-corredor-ecológico" class="nav-link" data-scroll-target="#o-que-é-um-corredor-ecológico"><span class="header-section-number">21.1</span> O que é um corredor ecológico?</a></li>
+  <li><a href="#dimensionamento-de-corredores" id="toc-dimensionamento-de-corredores" class="nav-link" data-scroll-target="#dimensionamento-de-corredores"><span class="header-section-number">21.2</span> Dimensionamento de corredores</a></li>
+  <li><a href="#áreas-protegidas-como-nós-da-rede" id="toc-áreas-protegidas-como-nós-da-rede" class="nav-link" data-scroll-target="#áreas-protegidas-como-nós-da-rede"><span class="header-section-number">21.3</span> Áreas protegidas como nós da rede</a></li>
+  <li><a href="#experiências-brasileiras-de-corredores" id="toc-experiências-brasileiras-de-corredores" class="nav-link" data-scroll-target="#experiências-brasileiras-de-corredores"><span class="header-section-number">21.4</span> Experiências brasileiras de corredores</a></li>
+  <li><a href="#espécies-focais-e-desenho-de-redes" id="toc-espécies-focais-e-desenho-de-redes" class="nav-link" data-scroll-target="#espécies-focais-e-desenho-de-redes"><span class="header-section-number">21.5</span> Espécies focais e desenho de redes</a></li>
+  <li><a href="#genética-da-paisagem-e-conectividade-funcional" id="toc-genética-da-paisagem-e-conectividade-funcional" class="nav-link" data-scroll-target="#genética-da-paisagem-e-conectividade-funcional"><span class="header-section-number">21.6</span> Genética da paisagem e conectividade funcional</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ldvsantos/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/17-planejamento-paisagem.html">Parte IV — Planejamento e Gestão da Paisagem</a></li><li class="breadcrumb-item"><a href="../capitulos/19-corredores-areas-protegidas.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Corredores Ecológicos e Áreas Protegidas</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/17-planejamento-paisagem.html">Parte IV — Planejamento e Gestão da Paisagem</a></li><li class="breadcrumb-item"><a href="../capitulos/19-corredores-areas-protegidas.html"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Ilhas verdes em um mar de atividade humana</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-corredores" class="quarto-section-identifier"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Corredores Ecológicos e Áreas Protegidas</span></span></h1>
+<h1 class="title"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Ilhas verdes em um mar de atividade humana</span></h1>
 </div>
 
 
@@ -374,62 +423,143 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="ilhas-verdes-em-um-mar-de-atividade-humana" class="level2" data-number="19.1">
-<h2 data-number="19.1" class="anchored" data-anchor-id="ilhas-verdes-em-um-mar-de-atividade-humana"><span class="header-section-number">19.1</span> Ilhas verdes em um mar de atividade humana</h2>
-<p>Imagine um arquipélago de ilhas oceânicas. Cada ilha abriga espécies únicas, mas se uma ilha for muito pequena ou muito isolada, suas populações se extinguem. As ilhas maiores e mais próximas umas das outras mantêm mais espécies porque indivíduos podem eventualmente nadar ou voar entre elas, “resgatando” populações em declínio. Agora substitua “ilhas” por “fragmentos de floresta” e “oceano” por “áreas agrícolas ou urbanas”, e você terá a metáfora que fundamenta toda a política de <strong>áreas protegidas</strong> e <strong>corredores ecológicos</strong> na escala da paisagem.</p>
+<section id="sec-corredores" class="level1" data-number="21">
+<h1 data-number="21"><span class="header-section-number">21</span> Corredores Ecológicos e Áreas Protegidas</h1>
+<p>Imagine um arquipélago de ilhas oceânicas. Cada ilha abriga espécies únicas, mas se uma ilha for muito pequena ou muito isolada, suas populações se extinguem. As ilhas maiores e mais próximas umas das outras mantêm mais espécies porque indivíduos podem eventualmente nadar ou voar entre elas, “resgatando” populações em declínio. Agora substitua “ilhas” por “fragmentos de floresta” e “oceano” por “áreas agrícolas ou urbanas”, e você terá a metáfora que fundamenta toda a política de áreas protegidas e corredores ecológicos na escala da paisagem.</p>
 <p>As áreas protegidas (parques nacionais, reservas biológicas, APAs, RPPNs) são a pedra angular da conservação da biodiversidade. Entretanto, a maioria delas foi criada de forma individual, sem planejamento de rede, frequentemente em áreas de baixo interesse econômico (terras remotas, montanhas íngremes, solos inférteis) e não em áreas de maior riqueza biológica ou maior ameaça. Além disso, mesmo as maiores unidades de conservação são insuficientes para sustentar populações viáveis de grandes predadores, manter processos de migração e dispersão de longa distância, e garantir a adaptação da biota a mudanças climáticas, que exigem deslocamento de espécies ao longo de gradientes altitudinais e latitudinais.</p>
-<p>Os <strong>corredores ecológicos</strong> surgiram como resposta a essa limitação. Ao conectar áreas protegidas e remanescentes de vegetação nativa por faixas contínuas ou “stepping stones” de habitat, os corredores restauram parcialmente a conectividade funcional da paisagem, permitindo que organismos se desloquem entre fragmentos, que populações isoladas troquem material genético e que espécies ajustem sua distribuição geográfica em resposta a mudanças ambientais.</p>
-</section>
-<section id="o-que-é-um-corredor-ecológico" class="level2" data-number="19.2">
-<h2 data-number="19.2" class="anchored" data-anchor-id="o-que-é-um-corredor-ecológico"><span class="header-section-number">19.2</span> O que é um corredor ecológico?</h2>
+<p>Os corredores ecológicos surgiram como resposta a essa limitação. Ao conectar áreas protegidas e remanescentes de vegetação nativa por faixas contínuas ou “stepping stones” de habitat, os corredores restauram parcialmente a conectividade funcional da paisagem, permitindo que organismos se desloquem entre fragmentos, que populações isoladas troquem material genético e que espécies ajustem sua distribuição geográfica em resposta a mudanças ambientais.</p>
+<section id="o-que-é-um-corredor-ecológico" class="level2" data-number="21.1">
+<h2 data-number="21.1" class="anchored" data-anchor-id="o-que-é-um-corredor-ecológico"><span class="header-section-number">21.1</span> O que é um corredor ecológico?</h2>
 <p>O termo “corredor ecológico” é usado com significados diferentes em contextos diferentes, o que gera confusão. Para clarificar, é útil distinguir três conceitos relacionados mas distintos.</p>
-<p>O <strong>corredor estrutural</strong> é uma faixa física de habitat que conecta duas manchas (por exemplo, uma faixa de mata atlântica de 100 m de largura ligando dois fragmentos florestais). É definido pela geometria da paisagem, independentemente de qual espécie o utiliza. O <strong>corredor funcional</strong> é definido pela perspectiva do organismo. É qualquer rota que permita a movimentação de uma espécie específica entre duas manchas de habitat, podendo coincidir ou não com um corredor estrutural. Para um tucano que voa facilmente sobre uma pastagem de 500 m, a paisagem inteira pode ser funcional. Para uma formiga-de-correição que não cruza 20 m de grama, apenas o corredor estrutural contínuo funciona. O <strong>corredor de paisagem</strong> (<em>landscape corridor</em>) é um conceito de planejamento que designa uma região ou faixa do território (tipicamente dezenas de quilômetros) onde se concentram esforços de conservação e restauração para manter ou restaurar a conectividade entre áreas protegidas, integrando terras públicas e privadas, áreas naturais e produtivas.</p>
-<p>A <a href="#fig-tipos-corredores" class="quarto-xref">Figura&nbsp;<span>19.1</span></a> compara esses conceitos.</p>
+<p>O corredor estrutural é uma faixa física de habitat que conecta duas manchas (por exemplo, uma faixa de mata atlântica de 100 m de largura ligando dois fragmentos florestais). É definido pela geometria da paisagem, independentemente de qual espécie o utiliza. O corredor funcional é definido pela perspectiva do organismo. É qualquer rota que permita a movimentação de uma espécie específica entre duas manchas de habitat, podendo coincidir ou não com um corredor estrutural. Para um tucano que voa facilmente sobre uma pastagem de 500 m, a paisagem inteira pode ser funcional. Para uma formiga-de-correição que não cruza 20 m de grama, apenas o corredor estrutural contínuo funciona. O corredor de paisagem (<em>landscape corridor</em>) é um conceito de planejamento que designa uma região ou faixa do território (tipicamente dezenas de quilômetros) onde se concentram esforços de conservação e restauração para manter ou restaurar a conectividade entre áreas protegidas, integrando terras públicas e privadas, áreas naturais e produtivas.</p>
+<p>A <a href="#fig-tipos-corredores" class="quarto-xref">Figura&nbsp;<span>21.1</span></a> compara esses conceitos.</p>
+<div class="cell" data-fig-width="9" data-layout-align="center">
+<div class="cell-output-display">
 <div id="fig-tipos-corredores" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-tipos-corredores-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell" data-fig-width="9" data-layout-align="center">
-<div class="cell-output-display">
 <div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TD
-    A["Corredor"] --&gt; B["Estrutural&lt;br&gt;(faixa física&lt;br&gt;de habitat)"]
-    A --&gt; C["Funcional&lt;br&gt;(rota de&lt;br&gt;deslocamento&lt;br&gt;espécie-específica)"]
-    A --&gt; D["De paisagem&lt;br&gt;(região de&lt;br&gt;planejamento&lt;br&gt;multiescalar)"]
-    B --&gt; E["Definido por&lt;br&gt;geometria&lt;br&gt;do mapa"]
-    C --&gt; F["Definido por&lt;br&gt;comportamento&lt;br&gt;e capacidade&lt;br&gt;de dispersão"]
-    D --&gt; G["Definido por&lt;br&gt;política de&lt;br&gt;conservação e&lt;br&gt;restauração"]
-
-    style A fill:#2E7D32,color:#fff
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
+<svg width="864" height="480" viewbox="0.00 0.00 412.88 236.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 232)">
+<!-- A -->
+<g id="node1" class="node">
+<title>A</title>
+<path fill="#2e7d32" stroke="#1b5e20" stroke-width="1.5" d="M200.92,-228C200.92,-228 149,-228 149,-228 143,-228 137,-222 137,-216 137,-216 137,-204 137,-204 137,-198 143,-192 149,-192 149,-192 200.92,-192 200.92,-192 206.92,-192 212.92,-198 212.92,-204 212.92,-204 212.92,-216 212.92,-216 212.92,-222 206.92,-228 200.92,-228"></path>
+<text text-anchor="middle" x="174.96" y="-207" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Corredor</text>
+</g>
+<!-- B -->
+<g id="node2" class="node">
+<title>B</title>
+<path fill="#bbdefb" stroke="#1565c0" stroke-width="0.8" d="M77.81,-156C77.81,-156 12.11,-156 12.11,-156 6.11,-156 0.11,-150 0.11,-144 0.11,-144 0.11,-114 0.11,-114 0.11,-108 6.11,-102 12.11,-102 12.11,-102 77.81,-102 77.81,-102 83.81,-102 89.81,-108 89.81,-114 89.81,-114 89.81,-144 89.81,-144 89.81,-150 83.81,-156 77.81,-156"></path>
+<text text-anchor="middle" x="44.96" y="-138" font-family="Helvetica,sans-Serif" font-size="10.00">Estrutural</text>
+<text text-anchor="middle" x="44.96" y="-126" font-family="Helvetica,sans-Serif" font-size="10.00">(faixa física</text>
+<text text-anchor="middle" x="44.96" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">de habitat)</text>
+</g>
+<!-- A&#45;&gt;B -->
+<g id="edge1" class="edge">
+<title>A-&gt;B</title>
+<path fill="none" stroke="#555555" d="M146.75,-191.86C132.13,-182.97 113.79,-171.83 96.73,-161.46"></path>
+<polygon fill="#555555" stroke="#555555" points="98.32,-158.33 87.95,-156.13 94.68,-164.31 98.32,-158.33"></polygon>
+</g>
+<!-- C -->
+<g id="node3" class="node">
+<title>C</title>
+<path fill="#ffe0b2" stroke="#e65100" stroke-width="0.8" d="M230.46,-156C230.46,-156 119.46,-156 119.46,-156 113.46,-156 107.46,-150 107.46,-144 107.46,-144 107.46,-114 107.46,-114 107.46,-108 113.46,-102 119.46,-102 119.46,-102 230.46,-102 230.46,-102 236.46,-102 242.46,-108 242.46,-114 242.46,-114 242.46,-144 242.46,-144 242.46,-150 236.46,-156 230.46,-156"></path>
+<text text-anchor="middle" x="174.96" y="-138" font-family="Helvetica,sans-Serif" font-size="10.00">Funcional</text>
+<text text-anchor="middle" x="174.96" y="-126" font-family="Helvetica,sans-Serif" font-size="10.00">(rota de deslocamento</text>
+<text text-anchor="middle" x="174.96" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">espécie-específica)</text>
+</g>
+<!-- A&#45;&gt;C -->
+<g id="edge2" class="edge">
+<title>A-&gt;C</title>
+<path fill="none" stroke="#555555" d="M174.96,-191.86C174.96,-184.36 174.96,-175.25 174.96,-166.36"></path>
+<polygon fill="#555555" stroke="#555555" points="178.46,-166.13 174.96,-156.13 171.46,-166.13 178.46,-166.13"></polygon>
+</g>
+<!-- D -->
+<g id="node4" class="node">
+<title>D</title>
+<path fill="#e1bee7" stroke="#6a1b9a" stroke-width="0.8" d="M392.81,-156C392.81,-156 273.11,-156 273.11,-156 267.11,-156 261.11,-150 261.11,-144 261.11,-144 261.11,-114 261.11,-114 261.11,-108 267.11,-102 273.11,-102 273.11,-102 392.81,-102 392.81,-102 398.81,-102 404.81,-108 404.81,-114 404.81,-114 404.81,-144 404.81,-144 404.81,-150 398.81,-156 392.81,-156"></path>
+<text text-anchor="middle" x="332.96" y="-138" font-family="Helvetica,sans-Serif" font-size="10.00">De paisagem</text>
+<text text-anchor="middle" x="332.96" y="-126" font-family="Helvetica,sans-Serif" font-size="10.00">(região de planejamento</text>
+<text text-anchor="middle" x="332.96" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">multiescalar)</text>
+</g>
+<!-- A&#45;&gt;D -->
+<g id="edge3" class="edge">
+<title>A-&gt;D</title>
+<path fill="none" stroke="#555555" d="M209.24,-191.86C227.51,-182.73 250.53,-171.22 271.75,-160.61"></path>
+<polygon fill="#555555" stroke="#555555" points="273.33,-163.73 280.71,-156.13 270.2,-157.47 273.33,-163.73"></polygon>
+</g>
+<!-- E -->
+<g id="node5" class="node">
+<title>E</title>
+<path fill="#e3f2fd" stroke="#1565c0" stroke-width="0.8" d="M77.88,-60C77.88,-60 12.04,-60 12.04,-60 6.04,-60 0.04,-54 0.04,-48 0.04,-48 0.04,-18 0.04,-18 0.04,-12 6.04,-6 12.04,-6 12.04,-6 77.88,-6 77.88,-6 83.88,-6 89.88,-12 89.88,-18 89.88,-18 89.88,-48 89.88,-48 89.88,-54 83.88,-60 77.88,-60"></path>
+<text text-anchor="middle" x="44.96" y="-42" font-family="Helvetica,sans-Serif" font-size="10.00">Definido por</text>
+<text text-anchor="middle" x="44.96" y="-30" font-family="Helvetica,sans-Serif" font-size="10.00">geometria</text>
+<text text-anchor="middle" x="44.96" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">do mapa</text>
+</g>
+<!-- B&#45;&gt;E -->
+<g id="edge4" class="edge">
+<title>B-&gt;E</title>
+<path fill="none" stroke="#555555" d="M44.96,-101.82C44.96,-92.04 44.96,-80.75 44.96,-70.23"></path>
+<polygon fill="#555555" stroke="#555555" points="48.46,-70.04 44.96,-60.04 41.46,-70.04 48.46,-70.04"></polygon>
+</g>
+<!-- F -->
+<g id="node6" class="node">
+<title>F</title>
+<path fill="#fff3e0" stroke="#e65100" stroke-width="0.8" d="M215.94,-66C215.94,-66 133.98,-66 133.98,-66 127.98,-66 121.98,-60 121.98,-54 121.98,-54 121.98,-12 121.98,-12 121.98,-6 127.98,0 133.98,0 133.98,0 215.94,0 215.94,0 221.94,0 227.94,-6 227.94,-12 227.94,-12 227.94,-54 227.94,-54 227.94,-60 221.94,-66 215.94,-66"></path>
+<text text-anchor="middle" x="174.96" y="-48" font-family="Helvetica,sans-Serif" font-size="10.00">Definido por</text>
+<text text-anchor="middle" x="174.96" y="-36" font-family="Helvetica,sans-Serif" font-size="10.00">comportamento</text>
+<text text-anchor="middle" x="174.96" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">e capacidade</text>
+<text text-anchor="middle" x="174.96" y="-12" font-family="Helvetica,sans-Serif" font-size="10.00">de dispersão</text>
+</g>
+<!-- C&#45;&gt;F -->
+<g id="edge5" class="edge">
+<title>C-&gt;F</title>
+<path fill="none" stroke="#555555" d="M174.96,-101.82C174.96,-93.85 174.96,-84.89 174.96,-76.15"></path>
+<polygon fill="#555555" stroke="#555555" points="178.46,-76.07 174.96,-66.07 171.46,-76.07 178.46,-76.07"></polygon>
+</g>
+<!-- G -->
+<g id="node7" class="node">
+<title>G</title>
+<path fill="#f3e5f5" stroke="#6a1b9a" stroke-width="0.8" d="M371.55,-66C371.55,-66 294.37,-66 294.37,-66 288.37,-66 282.37,-60 282.37,-54 282.37,-54 282.37,-12 282.37,-12 282.37,-6 288.37,0 294.37,0 294.37,0 371.55,0 371.55,0 377.55,0 383.55,-6 383.55,-12 383.55,-12 383.55,-54 383.55,-54 383.55,-60 377.55,-66 371.55,-66"></path>
+<text text-anchor="middle" x="332.96" y="-48" font-family="Helvetica,sans-Serif" font-size="10.00">Definido por</text>
+<text text-anchor="middle" x="332.96" y="-36" font-family="Helvetica,sans-Serif" font-size="10.00">política de</text>
+<text text-anchor="middle" x="332.96" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">conservação e</text>
+<text text-anchor="middle" x="332.96" y="-12" font-family="Helvetica,sans-Serif" font-size="10.00">restauração</text>
+</g>
+<!-- D&#45;&gt;G -->
+<g id="edge6" class="edge">
+<title>D-&gt;G</title>
+<path fill="none" stroke="#555555" d="M332.96,-101.82C332.96,-93.85 332.96,-84.89 332.96,-76.15"></path>
+<polygon fill="#555555" stroke="#555555" points="336.46,-76.07 332.96,-66.07 329.46,-76.07 336.46,-76.07"></polygon>
+</g>
+</g>
+</svg>
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tipos-corredores-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;19.1: Três conceitos de corredor ecológico, distinguindo a perspectiva geométrica (estrutural), biológica (funcional) e de gestão (paisagem).
+Figura&nbsp;21.1: Três conceitos de corredor ecológico, distinguindo a perspectiva geométrica (estrutural), biológica (funcional) e de gestão (paisagem).
 </figcaption>
 </figure>
 </div>
-<p>A <a href="#fig-tipos-corredores" class="quarto-xref">Figura&nbsp;<span>19.1</span></a> evidencia que avaliar se um corredor “funciona” depende de definir “funciona para quê e para quem”. Um corredor ripário de 30 m de largura ao longo de um rio pode ser estruturalmente contínuo, funcional para aves de sub-bosque e invertebrados aquáticos, mas completamente ineficaz para uma onça-pintada que necessita de faixas florestais de pelo menos 200 m de largura para se deslocar sem estresse. Inversamente, o mesmo corredor pode ser excessivo para espécies que não o utilizam. A <strong>espécie focal</strong> para a qual o corredor é desenhado determina, portanto, sua largura mínima, sua composição vegetal, a tolerância a lacunas e a necessidade de habitats de passagem (<em>stepping stones</em>).</p>
+</div>
+</div>
+<p>A <a href="#fig-tipos-corredores" class="quarto-xref">Figura&nbsp;<span>21.1</span></a> evidencia que avaliar se um corredor “funciona” depende de definir “funciona para quê e para quem”. Um corredor ripário de 30 m de largura ao longo de um rio pode ser estruturalmente contínuo, funcional para aves de sub-bosque e invertebrados aquáticos, mas completamente ineficaz para uma onça-pintada que necessita de faixas florestais de pelo menos 200 m de largura para se deslocar sem estresse. Inversamente, o mesmo corredor pode ser excessivo para espécies que não o utilizam. A espécie focal para a qual o corredor é desenhado determina, portanto, sua largura mínima, sua composição vegetal, a tolerância a lacunas e a necessidade de habitats de passagem (<em>stepping stones</em>).</p>
 </section>
-<section id="dimensionamento-de-corredores" class="level2" data-number="19.3">
-<h2 data-number="19.3" class="anchored" data-anchor-id="dimensionamento-de-corredores"><span class="header-section-number">19.3</span> Dimensionamento de corredores</h2>
-<p>A largura de um corredor ecológico determina sua funcionalidade. Corredores estreitos sofrem intensamente de <strong>efeito de borda</strong>, o mesmo fenômeno que degrada as margens dos fragmentos. Em uma faixa florestal de 50 m de largura, toda a faixa pode estar sob influência de borda (luminosidade elevada, temperatura mais alta, umidade mais baixa, maior exposição a vento e ruído), sem nenhuma área de interior florestal. Para espécies sensíveis que dependem de condições de interior (aves de sub-bosque, anfíbios de serapilheira, epífitas), esse corredor é um “corredor de borda” que não oferece habitat adequado para travessia.</p>
-<p>A recomendação geral na literatura é que corredores funcionais para vertebrados terrestres devem ter largura mínima de <strong>100 a 200 m</strong>, e preferencialmente mais de 500 m quando o objetivo é sustentar populações residentes dentro do próprio corredor (não apenas permitir travessia). Para espécies dispersoras de sementes (aves frugívoras, morcegos), corredores de 50 a 100 m podem ser suficientes. Para grandes mamíferos, larguras de 500 m a 1 km ou mais são recomendadas. A legislação brasileira de APPs define larguras mínimas de vegetação ripária (30 m para rios de até 10 m de largura, até 500 m para rios com mais de 600 m), que constituem corredores legais mas cuja funcionalidade ecológica varia amplamente com o grupo taxonômico de interesse.</p>
+<section id="dimensionamento-de-corredores" class="level2" data-number="21.2">
+<h2 data-number="21.2" class="anchored" data-anchor-id="dimensionamento-de-corredores"><span class="header-section-number">21.2</span> Dimensionamento de corredores</h2>
+<p>A largura de um corredor ecológico determina sua funcionalidade. Corredores estreitos sofrem intensamente de efeito de borda, o mesmo fenômeno que degrada as margens dos fragmentos. Em uma faixa florestal de 50 m de largura, toda a faixa pode estar sob influência de borda (luminosidade elevada, temperatura mais alta, umidade mais baixa, maior exposição a vento e ruído), sem nenhuma área de interior florestal. Para espécies sensíveis que dependem de condições de interior (aves de sub-bosque, anfíbios de serapilheira, epífitas), esse corredor é um “corredor de borda” que não oferece habitat adequado para travessia.</p>
+<p>A recomendação geral na literatura é que corredores funcionais para vertebrados terrestres devem ter largura mínima de 100 a 200 m, e preferencialmente mais de 500 m quando o objetivo é sustentar populações residentes dentro do próprio corredor (não apenas permitir travessia). Para espécies dispersoras de sementes (aves frugívoras, morcegos), corredores de 50 a 100 m podem ser suficientes. Para grandes mamíferos, larguras de 500 m a 1 km ou mais são recomendadas. A legislação brasileira de APPs define larguras mínimas de vegetação ripária (30 m para rios de até 10 m de largura, até 500 m para rios com mais de 600 m), que constituem corredores legais mas cuja funcionalidade ecológica varia amplamente com o grupo taxonômico de interesse.</p>
 </section>
-<section id="áreas-protegidas-como-nós-da-rede" class="level2" data-number="19.4">
-<h2 data-number="19.4" class="anchored" data-anchor-id="áreas-protegidas-como-nós-da-rede"><span class="header-section-number">19.4</span> Áreas protegidas como nós da rede</h2>
-<p>As <strong>áreas protegidas</strong> formam os <strong>nós</strong> da rede de conservação na paisagem, enquanto os corredores formam as <strong>ligações</strong> (<em>links</em>). A efetividade do sistema de áreas protegidas depende não apenas da área total protegida, mas de sua cobertura (quais ecossistemas são representados), sua complementaridade (as unidades protegem conjuntos diferentes de espécies) e sua conectividade (as unidades são acessíveis umas às outras por rotas de dispersão).</p>
-<p>No Brasil, o <strong>Sistema Nacional de Unidades de Conservação</strong> (SNUC, Lei 9.985/2000) organiza as unidades de conservação em dois grupos. As unidades de <strong>proteção integral</strong> (parques nacionais, estações ecológicas, reservas biológicas, monumentos naturais, refúgios de vida silvestre) proíbem o uso direto dos recursos naturais, sendo dedicadas exclusivamente à preservação e pesquisa. As unidades de <strong>uso sustentável</strong> (APAs, ARIEs, florestas nacionais, reservas extrativistas, reservas de desenvolvimento sustentável, RPPNs) permitem algum nível de uso dos recursos, compatibilizando conservação com atividades econômicas de baixo impacto.</p>
-<p>A <a href="#tbl-desafios-aps" class="quarto-xref">Tabela&nbsp;<span>19.1</span></a> sintetiza os principais desafios das áreas protegidas na perspectiva da paisagem.</p>
+<section id="áreas-protegidas-como-nós-da-rede" class="level2" data-number="21.3">
+<h2 data-number="21.3" class="anchored" data-anchor-id="áreas-protegidas-como-nós-da-rede"><span class="header-section-number">21.3</span> Áreas protegidas como nós da rede</h2>
+<p>As áreas protegidas formam os nós da rede de conservação na paisagem, enquanto os corredores formam as ligações (<em>links</em>). A efetividade do sistema de áreas protegidas depende não apenas da área total protegida, mas de sua cobertura (quais ecossistemas são representados), sua complementaridade (as unidades protegem conjuntos diferentes de espécies) e sua conectividade (as unidades são acessíveis umas às outras por rotas de dispersão).</p>
+<p>No Brasil, o Sistema Nacional de Unidades de Conservação (SNUC, Lei 9.985/2000) organiza as unidades de conservação em dois grupos. As unidades de proteção integral (parques nacionais, estações ecológicas, reservas biológicas, monumentos naturais, refúgios de vida silvestre) proíbem o uso direto dos recursos naturais, sendo dedicadas exclusivamente à preservação e pesquisa. As unidades de uso sustentável (APAs, ARIEs, florestas nacionais, reservas extrativistas, reservas de desenvolvimento sustentável, RPPNs) permitem algum nível de uso dos recursos, compatibilizando conservação com atividades econômicas de baixo impacto.</p>
+<p>A <a href="#tbl-desafios-aps" class="quarto-xref">Tabela&nbsp;<span>21.1</span></a> sintetiza os principais desafios das áreas protegidas na perspectiva da paisagem.</p>
 <div id="tbl-desafios-aps" class="striped hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-desafios-aps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Tabela&nbsp;19.1: Principais desafios das áreas protegidas brasileiras na perspectiva da ecologia da paisagem.
+Tabela&nbsp;21.1: Principais desafios das áreas protegidas brasileiras na perspectiva da ecologia da paisagem.
 </figcaption>
 <div aria-describedby="tbl-desafios-aps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table-striped table-hover caption-top table">
@@ -476,17 +606,24 @@ Tabela&nbsp;19.1: Principais desafios das áreas protegidas brasileiras na persp
 </div>
 </figure>
 </div>
-<p>A <a href="#tbl-desafios-aps" class="quarto-xref">Tabela&nbsp;<span>19.1</span></a> revela que a mera criação de uma área protegida não garante sua funcionalidade. A insularização é particularmente grave quando a UC é cercada por paisagens hostis (monocultura, pastagem degradada, expansão urbana) que bloqueiam a conectividade e intensificam o efeito de borda. A inadequação climática é um desafio emergente. Se o clima nos limites de um parque nacional se torna mais quente e seco, as espécies que ele protege precisam se deslocar para regiões mais altas ou mais frias, mas se não houver corredores conectando o parque a essas regiões, as espécies ficam “presas” em condições cada vez mais inadequadas. Essa ameaça reforça a urgência de pensar a conservação não como um conjunto de ilhas protegidas, mas como uma <strong>rede</strong> de áreas conectadas por corredores que permitam a adaptação da biota às mudanças ambientais.</p>
+<p>A <a href="#tbl-desafios-aps" class="quarto-xref">Tabela&nbsp;<span>21.1</span></a> revela que a mera criação de uma área protegida não garante sua funcionalidade. A insularização é particularmente grave quando a UC é cercada por paisagens hostis (monocultura, pastagem degradada, expansão urbana) que bloqueiam a conectividade e intensificam o efeito de borda. A inadequação climática é um desafio emergente. Se o clima nos limites de um parque nacional se torna mais quente e seco, as espécies que ele protege precisam se deslocar para regiões mais altas ou mais frias, mas se não houver corredores conectando o parque a essas regiões, as espécies ficam “presas” em condições cada vez mais inadequadas. Essa ameaça reforça a urgência de pensar a conservação não como um conjunto de ilhas protegidas, mas como uma rede de áreas conectadas por corredores que permitam a adaptação da biota às mudanças ambientais.</p>
 </section>
-<section id="experiências-brasileiras-de-corredores" class="level2" data-number="19.5">
-<h2 data-number="19.5" class="anchored" data-anchor-id="experiências-brasileiras-de-corredores"><span class="header-section-number">19.5</span> Experiências brasileiras de corredores</h2>
-<p>O Brasil implementou (ou está implementando) várias iniciativas de corredores ecológicos de grande escala. O <strong>Corredor Central da Mata Atlântica</strong> (CCMA), no sul da Bahia e norte do Espírito Santo, conecta remanescentes florestais de uma das regiões mais ricas e ameaçadas do planeta, utilizando uma combinação de UCs, RPPNs, matas ciliares, cacau-cabruca (sistema agroflorestal tradicional onde o cacau é cultivado sob sombra de árvores nativas) e áreas em regeneração. O <strong>Corredor Ecológico do Espinhaço</strong>, em Minas Gerais, busca conectar áreas de cerrado e campos rupestres ao longo da Serra do Espinhaço. Na Amazônia, corredores são propostos para conectar grandes UCs e terras indígenas, que já formam um mosaico de proteção de dezenas de milhões de hectares.</p>
+<section id="experiências-brasileiras-de-corredores" class="level2" data-number="21.4">
+<h2 data-number="21.4" class="anchored" data-anchor-id="experiências-brasileiras-de-corredores"><span class="header-section-number">21.4</span> Experiências brasileiras de corredores</h2>
+<p>O Brasil implementou (ou está implementando) várias iniciativas de corredores ecológicos de grande escala. O Corredor Central da Mata Atlântica (CCMA), no sul da Bahia e norte do Espírito Santo, conecta remanescentes florestais de uma das regiões mais ricas e ameaçadas do planeta, utilizando uma combinação de UCs, RPPNs, matas ciliares, cacau-cabruca (sistema agroflorestal tradicional onde o cacau é cultivado sob sombra de árvores nativas) e áreas em regeneração. O Corredor Ecológico do Espinhaço, em Minas Gerais, busca conectar áreas de cerrado e campos rupestres ao longo da Serra do Espinhaço. Na Amazônia, corredores são propostos para conectar grandes UCs e terras indígenas, que já formam um mosaico de proteção de dezenas de milhões de hectares.</p>
 <p>Essas experiências demonstram que a implementação de corredores em paisagens reais é muito mais complexa do que a teoria sugere. Os corredores atravessam propriedades privadas com usos produtivos, comunidades com necessidades econômicas, estradas e infraestrutura que fragmentam fisicamente a paisagem, e jurisdições administrativas diferentes (municípios, estados, governo federal). A viabilidade de um corredor depende, portanto, não apenas de sua lógica ecológica, mas de sua aceitação social, de incentivos econômicos (PSA, mercado de carbono, CRA), de instrumentos legais (Código Florestal, SNUC, zoneamentos) e de governança participativa que envolva todos os atores da paisagem.</p>
 </section>
-<section id="espécies-focais-e-desenho-de-redes" class="level2" data-number="19.6">
-<h2 data-number="19.6" class="anchored" data-anchor-id="espécies-focais-e-desenho-de-redes"><span class="header-section-number">19.6</span> Espécies focais e desenho de redes</h2>
-<p>O conceito de <strong>espécies focais</strong> (<em>focal species</em>) oferece uma abordagem prática para dimensionar e avaliar redes de áreas protegidas e corredores. Em vez de tentar conservar todas as espécies simultaneamente (tarefa impossível e mal definida), seleciona-se um conjunto pequeno de espécies representativas de diferentes categorias de sensibilidade e escalas de resposta (conforme a <a href="15-biodiversidade-heterogeneidade.html#tbl-sensibilidade" class="quarto-xref">Tabela&nbsp;<span>15.1</span></a> no <a href="15-biodiversidade-heterogeneidade.html" class="quarto-xref"><span>Capítulo 15</span></a>). Se a rede de conservação satisfaz os requisitos da espécie mais exigente de cada grupo funcional (a que precisa de mais área, mais conectividade, menor efeito de borda), ela provavelmente satisfará os requisitos das demais espécies do mesmo grupo.</p>
+<section id="espécies-focais-e-desenho-de-redes" class="level2" data-number="21.5">
+<h2 data-number="21.5" class="anchored" data-anchor-id="espécies-focais-e-desenho-de-redes"><span class="header-section-number">21.5</span> Espécies focais e desenho de redes</h2>
+<p>O conceito de espécies focais (<em>focal species</em>) oferece uma abordagem prática para dimensionar e avaliar redes de áreas protegidas e corredores. Em vez de tentar conservar todas as espécies simultaneamente (tarefa impossível e mal definida), seleciona-se um conjunto pequeno de espécies representativas de diferentes categorias de sensibilidade e escalas de resposta (conforme a <a href="15-biodiversidade-heterogeneidade.html#tbl-sensibilidade" class="quarto-xref">Tabela&nbsp;<span>17.1</span></a> no <a href="15-biodiversidade-heterogeneidade.html" class="quarto-xref"><span>Capítulo 17</span></a>). Se a rede de conservação satisfaz os requisitos da espécie mais exigente de cada grupo funcional (a que precisa de mais área, mais conectividade, menor efeito de borda), ela provavelmente satisfará os requisitos das demais espécies do mesmo grupo.</p>
 <p>A onça-pintada, por exemplo, é frequentemente usada como espécie focal para grandes mamíferos em paisagens tropicais, porque sua área de vida é extensa (50–200 km²), ela é sensível à fragmentação, depende de conectividade entre manchas grandes e evita áreas abertas e urbanizadas. Uma rede de conservação que sustenta populações viáveis de onça-pintada provavelmente sustenta também populações de outras espécies de topo de cadeia e de mesovertebrados. De forma complementar, espécies com baixa mobilidade (anfíbios, répteis, invertebrados de serapilheira) são usadas como focais para avaliar a funcionalidade local de corredores estreitos, pois se um corredor permite a dispersão de um sapo-de-chifre, ele certamente permite a dispersão de uma jaguatirica.</p>
+</section>
+<section id="genética-da-paisagem-e-conectividade-funcional" class="level2" data-number="21.6">
+<h2 data-number="21.6" class="anchored" data-anchor-id="genética-da-paisagem-e-conectividade-funcional"><span class="header-section-number">21.6</span> Genética da paisagem e conectividade funcional</h2>
+<p>A avaliação de corredores e redes de áreas protegidas baseada exclusivamente em métricas estruturais (distância entre manchas, largura do corredor, proporção de habitat) pressupõe que a conectividade percebida pelo pesquisador no mapa corresponde à conectividade experimentada pelos organismos na paisagem real. Essa premissa é frequentemente violada, e uma das formas mais robustas de verificá-la consiste em mensurar o fluxo gênico efetivo entre populações que ocupam manchas distintas. A genética da paisagem (<em>landscape genetics</em>), disciplina formalizada por Manel et al. <span class="citation" data-cites="manel2003">(<a href="../referencias.html#ref-manel2003" role="doc-biblioref">2003</a>)</span>, integra ferramentas de ecologia da paisagem (métricas espaciais, análise de resistência da matriz, teoria de grafos) com marcadores moleculares (microssatélites, SNPs, DNA mitocondrial) para testar se a estrutura espacial da paisagem explica a diferenciação genética entre populações.</p>
+<p>O princípio operacional da genética da paisagem é correlacionar uma matriz de distância genética entre pares de populações (<span class="math inline">\(F_{ST}\)</span>, <span class="math inline">\(D_{Jost}\)</span>, <span class="math inline">\(G'_{ST}\)</span>) com uma matriz de distância paisagística (distância euclidiana, distância de custo, resistência de circuito) e testar se o modelo que incorpora a heterogeneidade da matriz (resistência diferencial de cada classe de uso do solo ao deslocamento) explica mais variação na diferenciação genética do que a simples distância geográfica (isolamento por distância). Quando a distância de custo através da matriz agrícola prevê a diferenciação genética melhor do que a distância euclidiana, há evidência direta de que o tipo de matriz importa para o fluxo gênico e, portanto, para a conectividade funcional da paisagem <span class="citation" data-cites="storfer2007">(<a href="../referencias.html#ref-storfer2007" role="doc-biblioref">Storfer et al., 2007</a>)</span>.</p>
+<p>Em paisagens brasileiras, estudos de genética da paisagem demonstraram que corredores ripários funcionam como condutos efetivos de fluxo gênico para espécies de peixes e anfíbios, que a conversão de floresta em pastagem aumenta significativamente a diferenciação genética entre populações de primatas e de pequenos mamíferos, e que matas de galeria do Cerrado operam como os últimos corredores funcionais para espécies florestais em paisagens dominadas por agricultura mecanizada. Essas evidências reforçam que a funcionalidade de um corredor não pode ser aferida apenas pela geometria do mapa, mas exige validação biológica, seja por dados de movimentação (telemetria, armadilhas fotográficas) ou por dados genéticos que integram o fluxo de indivíduos ao longo de múltiplas gerações.</p>
+<p>A integração da genética da paisagem ao planejamento de redes de conservação permite, portanto, uma transição da conectividade estrutural (arranjo físico de manchas e corredores no mapa) para a conectividade funcional (fluxo efetivo de organismos e genes entre populações), atribuindo um indicador mensurável e biologicamente significativo à efetividade de cada elemento da rede.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -497,11 +634,20 @@ Tabela&nbsp;19.1: Principais desafios das áreas protegidas brasileiras na persp
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>A teoria de grafos, apresentada brevemente no <a href="10-fragmentacao-conectividade.html" class="quarto-xref"><span>Capítulo 10</span></a>, é a ferramenta matemática mais rigorosa para avaliar a conectividade de redes de áreas protegidas. Cada UC ou fragmento de habitat é um <strong>nó</strong> do grafo, e cada conexão potencial (corredor, stepping stone, rota de dispersão) é uma <strong>aresta</strong>. Métricas de grafo como o <strong>Índice Integral de Conectividade</strong> (IIC) e o <strong>Índice de Probabilidade de Conectividade</strong> (PC) permitem quantificar a importância relativa de cada nó e cada aresta para a conectividade global da rede, identificando quais áreas protegidas são “pontes” críticas e cuja perda fragmentaria o sistema inteiro. O software Conefor implementa essas análises e é gratuito.</p>
+<p>A teoria de grafos, apresentada brevemente no <a href="10-fragmentacao-conectividade.html" class="quarto-xref"><span>Capítulo 12</span></a>, é a ferramenta matemática mais rigorosa para avaliar a conectividade de redes de áreas protegidas. Cada UC ou fragmento de habitat é um nó do grafo, e cada conexão potencial (corredor, stepping stone, rota de dispersão) é uma aresta. Métricas de grafo como o Índice Integral de Conectividade (IIC) e o Índice de Probabilidade de Conectividade (PC) permitem quantificar a importância relativa de cada nó e cada aresta para a conectividade global da rede, identificando quais áreas protegidas são “pontes” críticas e cuja perda fragmentaria o sistema inteiro. O software Conefor implementa essas análises e é gratuito.</p>
 </div>
 </div>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-manel2003" class="csl-entry" role="listitem">
+Manel, S., Schwartz, M. K., Luikart, G., &amp; Taberlet, P. (2003). Landscape genetics: combining landscape ecology and population genetics. <em>Trends in Ecology &amp; Evolution</em>, <em>18</em>(4), 189–197. <a href="https://doi.org/10.1016/S0169-5347(03)00008-9">https://doi.org/10.1016/S0169-5347(03)00008-9</a>
+</div>
+<div id="ref-storfer2007" class="csl-entry" role="listitem">
+Storfer, A., Murphy, M. A., Evans, J. S., Goldberg, C. S., Robinson, S., Spear, S. F., Dezzani, R., Delmelle, E., Vierling, L., &amp; Waits, L. P. (2007). Putting the ’landscape’ in landscape genetics. <em>Heredity</em>, <em>98</em>(3), 128–142. <a href="https://doi.org/10.1038/sj.hdy.6800917">https://doi.org/10.1038/sj.hdy.6800917</a>
+</div>
+</div>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -907,13 +1053,13 @@ Tabela&nbsp;19.1: Principais desafios das áreas protegidas brasileiras na persp
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../capitulos/18-restauracao-ecologica.html" class="pagination-link" aria-label="Restauração Ecológica na Paisagem">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Restauração Ecológica na Paisagem</span></span>
+      <a href="../capitulos/18-restauracao-ecologica.html" class="pagination-link" aria-label="O que significa restaurar?">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">O que significa restaurar?</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../capitulos/20-modelagem-cenarios.html" class="pagination-link" aria-label="Modelagem de Cenários Paisagísticos">
-        <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Modelagem de Cenários Paisagísticos</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../capitulos/20-modelagem-cenarios.html" class="pagination-link" aria-label="E se...?">
+        <span class="nav-page-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">E se…?</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

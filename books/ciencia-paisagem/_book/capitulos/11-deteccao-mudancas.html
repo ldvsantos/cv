@@ -8,7 +8,7 @@
 
 <meta name="description" content="Livro-texto sobre Ciência da Paisagem com ênfase em análise da paisagem, integrando ecologia da paisagem, métricas espaciais, sensoriamento remoto, geoprocessamento e planejamento territorial para gestão sustentável de paisagens tropicais.">
 
-<title>11&nbsp; Detecção de Mudanças na Paisagem – Ciência da Paisagem</title>
+<title>12&nbsp; Paisagens em transformação – Ciência da Paisagem</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -92,9 +92,6 @@ div.csl-indent {
     "search-label": "Procurar"
   }
 }</script>
-<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -108,7 +105,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/06-sensoriamento-remoto.html">Parte II — Métodos de Análise da Paisagem</a></li><li class="breadcrumb-item"><a href="../capitulos/11-deteccao-mudancas.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Detecção de Mudanças na Paisagem</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/06-sensoriamento-remoto.html">Parte II — Métodos de Análise da Paisagem</a></li><li class="breadcrumb-item"><a href="../capitulos/11-deteccao-mudancas.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Paisagens em transformação</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
@@ -168,13 +165,13 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bem-vindo</span></a>
+ <span class="menu-text">Sobre este livro</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../prefacio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Prefácio</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">prefacio.html</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -189,31 +186,31 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/01-introducao.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução à Ciência da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">O que é Ciência da Paisagem?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/02-ecologia-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Conceitos e Abordagens da Ecologia da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Ecologia da Paisagem como disciplina</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/03-estrutura-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Estrutura da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">O modelo mancha-corredor-matriz</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/04-escalas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Escalas Espaço-temporais</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">O problema da escala</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/05-percepcao-representacao.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Percepção e Representação da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Paisagem percebida e paisagem analisada</span></span></a>
   </div>
 </li>
       </ul>
@@ -230,37 +227,37 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/06-sensoriamento-remoto.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Sensoriamento Remoto Aplicado à Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Fundamentos do sensoriamento remoto</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/07-sig-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sistemas de Informação Geográfica para Análise da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">O papel do SIG na análise da paisagem</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/08-uso-cobertura.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Classificação do Uso e Cobertura do Solo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Uso vs.&nbsp;cobertura</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/09-metricas-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Métricas da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Por que quantificar a paisagem?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/10-fragmentacao-conectividade.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Fragmentação e Conectividade</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Fragmentação de habitat</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/11-deteccao-mudancas.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Detecção de Mudanças na Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Paisagens em transformação</span></span></a>
   </div>
 </li>
       </ul>
@@ -277,31 +274,31 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/12-dinamica-uso-solo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Dinâmica do Uso e Cobertura do Solo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Por que a paisagem muda?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/13-processos-hidrologicos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Processos Hidrológicos na Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">A água como protagonista invisível</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/14-servicos-ecossistemicos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Serviços Ecossistêmicos na Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">O que a natureza faz por nós?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/15-biodiversidade-heterogeneidade.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Biodiversidade e Heterogeneidade da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">A paisagem vista pelos organismos</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/16-mudancas-climaticas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Mudanças Climáticas e Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Um planeta mais quente e paisagens em movimento</span></span></a>
   </div>
 </li>
       </ul>
@@ -318,31 +315,31 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/17-planejamento-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Planejamento da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Planejar para quê?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/18-restauracao-ecologica.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Restauração Ecológica na Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">O que significa restaurar?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/19-corredores-areas-protegidas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Corredores Ecológicos e Áreas Protegidas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Ilhas verdes em um mar de atividade humana</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/20-modelagem-cenarios.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Modelagem de Cenários Paisagísticos</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">E se…?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/21-projeto-integrador.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Projeto Integrador</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Unindo todas as peças</span></span></a>
   </div>
 </li>
       </ul>
@@ -350,7 +347,7 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../referencias.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Referências</span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">referencias.html</span></span></a>
   </div>
 </li>
     </ul>
@@ -363,22 +360,24 @@ div.csl-indent {
     <h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#paisagens-em-transformação" id="toc-paisagens-em-transformação" class="nav-link active" data-scroll-target="#paisagens-em-transformação"><span class="header-section-number">11.1</span> Paisagens em transformação</a></li>
-  <li><a href="#abordagens-de-detecção-de-mudanças" id="toc-abordagens-de-detecção-de-mudanças" class="nav-link" data-scroll-target="#abordagens-de-detecção-de-mudanças"><span class="header-section-number">11.2</span> Abordagens de detecção de mudanças</a></li>
-  <li><a href="#matrizes-de-transição" id="toc-matrizes-de-transição" class="nav-link" data-scroll-target="#matrizes-de-transição"><span class="header-section-number">11.3</span> Matrizes de transição</a></li>
-  <li><a href="#intensidade-da-mudança" id="toc-intensidade-da-mudança" class="nav-link" data-scroll-target="#intensidade-da-mudança"><span class="header-section-number">11.4</span> Intensidade da mudança</a></li>
-  <li><a href="#detecção-de-mudanças-em-séries-longas" id="toc-detecção-de-mudanças-em-séries-longas" class="nav-link" data-scroll-target="#detecção-de-mudanças-em-séries-longas"><span class="header-section-number">11.5</span> Detecção de mudanças em séries longas</a></li>
-  <li><a href="#trajetórias-de-mudança" id="toc-trajetórias-de-mudança" class="nav-link" data-scroll-target="#trajetórias-de-mudança"><span class="header-section-number">11.6</span> Trajetórias de mudança</a></li>
-  <li><a href="#mudanças-e-métricas-da-paisagem" id="toc-mudanças-e-métricas-da-paisagem" class="nav-link" data-scroll-target="#mudanças-e-métricas-da-paisagem"><span class="header-section-number">11.7</span> Mudanças e métricas da paisagem</a></li>
+  <li><a href="#sec-deteccao-mudancas" id="toc-sec-deteccao-mudancas" class="nav-link active" data-scroll-target="#sec-deteccao-mudancas"><span class="header-section-number">13</span> Detecção de Mudanças na Paisagem</a>
+  <ul class="collapse">
+  <li><a href="#abordagens-de-detecção-de-mudanças" id="toc-abordagens-de-detecção-de-mudanças" class="nav-link" data-scroll-target="#abordagens-de-detecção-de-mudanças"><span class="header-section-number">13.1</span> Abordagens de detecção de mudanças</a></li>
+  <li><a href="#matrizes-de-transição" id="toc-matrizes-de-transição" class="nav-link" data-scroll-target="#matrizes-de-transição"><span class="header-section-number">13.2</span> Matrizes de transição</a></li>
+  <li><a href="#intensidade-da-mudança" id="toc-intensidade-da-mudança" class="nav-link" data-scroll-target="#intensidade-da-mudança"><span class="header-section-number">13.3</span> Intensidade da mudança</a></li>
+  <li><a href="#detecção-de-mudanças-em-séries-longas" id="toc-detecção-de-mudanças-em-séries-longas" class="nav-link" data-scroll-target="#detecção-de-mudanças-em-séries-longas"><span class="header-section-number">13.4</span> Detecção de mudanças em séries longas</a></li>
+  <li><a href="#trajetórias-de-mudança" id="toc-trajetórias-de-mudança" class="nav-link" data-scroll-target="#trajetórias-de-mudança"><span class="header-section-number">13.5</span> Trajetórias de mudança</a></li>
+  <li><a href="#mudanças-e-métricas-da-paisagem" id="toc-mudanças-e-métricas-da-paisagem" class="nav-link" data-scroll-target="#mudanças-e-métricas-da-paisagem"><span class="header-section-number">13.6</span> Mudanças e métricas da paisagem</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ldvsantos/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/06-sensoriamento-remoto.html">Parte II — Métodos de Análise da Paisagem</a></li><li class="breadcrumb-item"><a href="../capitulos/11-deteccao-mudancas.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Detecção de Mudanças na Paisagem</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/06-sensoriamento-remoto.html">Parte II — Métodos de Análise da Paisagem</a></li><li class="breadcrumb-item"><a href="../capitulos/11-deteccao-mudancas.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Paisagens em transformação</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-deteccao-mudancas" class="quarto-section-identifier"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Detecção de Mudanças na Paisagem</span></span></h1>
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Paisagens em transformação</span></h1>
 </div>
 
 
@@ -395,66 +394,131 @@ div.csl-indent {
 </header>
 
 
-<section id="paisagens-em-transformação" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="paisagens-em-transformação"><span class="header-section-number">11.1</span> Paisagens em transformação</h2>
-<p>A paisagem não é uma entidade estática. Sua estrutura (composição e configuração) muda ao longo do tempo em resposta a forças motrizes naturais (sucessão ecológica, perturbações climáticas, dinâmica geomorfológica) e antrópicas (desmatamento, expansão agrícola, urbanização, restauração). A <strong>detecção de mudanças</strong> (<em>change detection</em>) é o conjunto de técnicas que identifica, quantifica e cartografa essas transformações a partir de dados de sensoriamento remoto adquiridos em datas distintas.</p>
+<section id="sec-deteccao-mudancas" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> Detecção de Mudanças na Paisagem</h1>
+<p>A paisagem não é uma entidade estática. Sua estrutura (composição e configuração) muda ao longo do tempo em resposta a forças motrizes naturais (sucessão ecológica, perturbações climáticas, dinâmica geomorfológica) e antrópicas (desmatamento, expansão agrícola, urbanização, restauração). A detecção de mudanças (<em>change detection</em>) é o conjunto de técnicas que identifica, quantifica e cartografa essas transformações a partir de dados de sensoriamento remoto adquiridos em datas distintas.</p>
 <p>A detecção de mudanças é fundamental para a Ciência da Paisagem porque permite transformar diagnósticos estáticos (a paisagem possui 30% de floresta) em diagnósticos dinâmicos (a paisagem perdeu 5% de floresta na última década, concentrados na porção norte da bacia, associados à expansão da soja). Essa dimensão temporal é indispensável para o planejamento territorial, a avaliação de políticas públicas e a projeção de cenários futuros.</p>
-</section>
-<section id="abordagens-de-detecção-de-mudanças" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="abordagens-de-detecção-de-mudanças"><span class="header-section-number">11.2</span> Abordagens de detecção de mudanças</h2>
-<p>As técnicas de detecção de mudanças podem ser classificadas em três famílias principais, conforme a abordagem analítica empregada, sintetizadas na <a href="#fig-abordagens-mudanca" class="quarto-xref">Figura&nbsp;<span>11.1</span></a>.</p>
+<section id="abordagens-de-detecção-de-mudanças" class="level2" data-number="13.1">
+<h2 data-number="13.1" class="anchored" data-anchor-id="abordagens-de-detecção-de-mudanças"><span class="header-section-number">13.1</span> Abordagens de detecção de mudanças</h2>
+<p>As técnicas de detecção de mudanças podem ser classificadas em três famílias principais, conforme a abordagem analítica empregada, sintetizadas na <a href="#fig-abordagens-mudanca" class="quarto-xref">Figura&nbsp;<span>13.1</span></a>.</p>
+<div class="cell" data-fig-width="8" data-layout-align="center">
+<div class="cell-output-display">
 <div id="fig-abordagens-mudanca" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-abordagens-mudanca-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell" data-fig-width="8" data-layout-align="center">
-<div class="cell-output-display">
 <div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TD
-    A["Detecção de Mudanças"] --&gt; B["Pré-classificação&lt;br&gt;(Comparação de mapas)"]
-    A --&gt; C["Pós-classificação&lt;br&gt;(Diferença de imagens)"]
-    A --&gt; D["Séries temporais&lt;br&gt;(Análise de trajetória)"]
-    B --&gt; E["Transição A→B&lt;br&gt;entre datas"]
-    C --&gt; F["Diferença de NDVI,&lt;br&gt;razão de bandas"]
-    D --&gt; G["BFAST, LandTrendr,&lt;br&gt;CCDC"]
-
-    style A fill:#2E7D32,color:#fff
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
+<svg width="768" height="480" viewbox="0.00 0.00 463.10 200.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 196)">
+<!-- A -->
+<g id="node1" class="node">
+<title>A</title>
+<path fill="#2e7d32" stroke="#1b5e20" stroke-width="1.5" d="M294.75,-192C294.75,-192 176.41,-192 176.41,-192 170.41,-192 164.41,-186 164.41,-180 164.41,-180 164.41,-168 164.41,-168 164.41,-162 170.41,-156 176.41,-156 176.41,-156 294.75,-156 294.75,-156 300.75,-156 306.75,-162 306.75,-168 306.75,-168 306.75,-180 306.75,-180 306.75,-186 300.75,-192 294.75,-192"></path>
+<text text-anchor="middle" x="235.58" y="-171" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Detecção de Mudanças</text>
+</g>
+<!-- B -->
+<g id="node2" class="node">
+<title>B</title>
+<path fill="#e8f5e9" stroke="#2e7d32" stroke-width="0.8" d="M135.24,-120C135.24,-120 11.92,-120 11.92,-120 5.92,-120 -0.08,-114 -0.08,-108 -0.08,-108 -0.08,-90 -0.08,-90 -0.08,-84 5.92,-78 11.92,-78 11.92,-78 135.24,-78 135.24,-78 141.24,-78 147.24,-84 147.24,-90 147.24,-90 147.24,-108 147.24,-108 147.24,-114 141.24,-120 135.24,-120"></path>
+<text text-anchor="middle" x="73.58" y="-102" font-family="Helvetica,sans-Serif" font-size="10.00">Pré-classificação</text>
+<text text-anchor="middle" x="73.58" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00">(Comparação de mapas)</text>
+</g>
+<!-- A&#45;&gt;B -->
+<g id="edge1" class="edge">
+<title>A-&gt;B</title>
+<path fill="none" stroke="#555555" d="M197.6,-155.88C176.72,-146.48 150.47,-134.65 127.5,-124.3"></path>
+<polygon fill="#555555" stroke="#555555" points="128.77,-121.03 118.22,-120.12 125.9,-127.42 128.77,-121.03"></polygon>
+</g>
+<!-- C -->
+<g id="node3" class="node">
+<title>C</title>
+<path fill="#e8f5e9" stroke="#2e7d32" stroke-width="0.8" d="M294.07,-120C294.07,-120 177.09,-120 177.09,-120 171.09,-120 165.09,-114 165.09,-108 165.09,-108 165.09,-90 165.09,-90 165.09,-84 171.09,-78 177.09,-78 177.09,-78 294.07,-78 294.07,-78 300.07,-78 306.07,-84 306.07,-90 306.07,-90 306.07,-108 306.07,-108 306.07,-114 300.07,-120 294.07,-120"></path>
+<text text-anchor="middle" x="235.58" y="-102" font-family="Helvetica,sans-Serif" font-size="10.00">Pós-classificação</text>
+<text text-anchor="middle" x="235.58" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00">(Diferença de imagens)</text>
+</g>
+<!-- A&#45;&gt;C -->
+<g id="edge2" class="edge">
+<title>A-&gt;C</title>
+<path fill="none" stroke="#555555" d="M235.58,-155.7C235.58,-148.09 235.58,-138.91 235.58,-130.23"></path>
+<polygon fill="#555555" stroke="#555555" points="239.08,-130.02 235.58,-120.02 232.08,-130.02 239.08,-130.02"></polygon>
+</g>
+<!-- D -->
+<g id="node4" class="node">
+<title>D</title>
+<path fill="#e8f5e9" stroke="#2e7d32" stroke-width="0.8" d="M443.11,-120C443.11,-120 336.04,-120 336.04,-120 330.04,-120 324.04,-114 324.04,-108 324.04,-108 324.04,-90 324.04,-90 324.04,-84 330.04,-78 336.04,-78 336.04,-78 443.11,-78 443.11,-78 449.11,-78 455.11,-84 455.11,-90 455.11,-90 455.11,-108 455.11,-108 455.11,-114 449.11,-120 443.11,-120"></path>
+<text text-anchor="middle" x="389.58" y="-102" font-family="Helvetica,sans-Serif" font-size="10.00">Séries temporais</text>
+<text text-anchor="middle" x="389.58" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00">(Análise de trajetória)</text>
+</g>
+<!-- A&#45;&gt;D -->
+<g id="edge3" class="edge">
+<title>A-&gt;D</title>
+<path fill="none" stroke="#555555" d="M271.68,-155.88C291.44,-146.52 316.26,-134.75 338.03,-124.44"></path>
+<polygon fill="#555555" stroke="#555555" points="339.61,-127.56 347.14,-120.12 336.61,-121.24 339.61,-127.56"></polygon>
+</g>
+<!-- E -->
+<g id="node5" class="node">
+<title>E</title>
+<path fill="#c8e6c9" stroke="#2e7d32" stroke-width="0.8" d="M113.99,-42C113.99,-42 33.17,-42 33.17,-42 27.17,-42 21.17,-36 21.17,-30 21.17,-30 21.17,-12 21.17,-12 21.17,-6 27.17,0 33.17,0 33.17,0 113.99,0 113.99,0 119.99,0 125.99,-6 125.99,-12 125.99,-12 125.99,-30 125.99,-30 125.99,-36 119.99,-42 113.99,-42"></path>
+<text text-anchor="middle" x="73.58" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">Transição A→B</text>
+<text text-anchor="middle" x="73.58" y="-12" font-family="Helvetica,sans-Serif" font-size="10.00">entre datas</text>
+</g>
+<!-- B&#45;&gt;E -->
+<g id="edge4" class="edge">
+<title>B-&gt;E</title>
+<path fill="none" stroke="#555555" d="M73.58,-77.63C73.58,-69.82 73.58,-60.73 73.58,-52.18"></path>
+<polygon fill="#555555" stroke="#555555" points="77.08,-52.16 73.58,-42.16 70.08,-52.16 77.08,-52.16"></polygon>
+</g>
+<!-- F -->
+<g id="node6" class="node">
+<title>F</title>
+<path fill="#c8e6c9" stroke="#2e7d32" stroke-width="0.8" d="M284.78,-42C284.78,-42 186.37,-42 186.37,-42 180.37,-42 174.37,-36 174.37,-30 174.37,-30 174.37,-12 174.37,-12 174.37,-6 180.37,0 186.37,0 186.37,0 284.78,0 284.78,0 290.78,0 296.78,-6 296.78,-12 296.78,-12 296.78,-30 296.78,-30 296.78,-36 290.78,-42 284.78,-42"></path>
+<text text-anchor="middle" x="235.58" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">Diferença de NDVI,</text>
+<text text-anchor="middle" x="235.58" y="-12" font-family="Helvetica,sans-Serif" font-size="10.00">razão de bandas</text>
+</g>
+<!-- C&#45;&gt;F -->
+<g id="edge5" class="edge">
+<title>C-&gt;F</title>
+<path fill="none" stroke="#555555" d="M235.58,-77.63C235.58,-69.82 235.58,-60.73 235.58,-52.18"></path>
+<polygon fill="#555555" stroke="#555555" points="239.08,-52.16 235.58,-42.16 232.08,-52.16 239.08,-52.16"></polygon>
+</g>
+<!-- G -->
+<g id="node7" class="node">
+<title>G</title>
+<path fill="#c8e6c9" stroke="#2e7d32" stroke-width="0.8" d="M441.84,-42C441.84,-42 337.32,-42 337.32,-42 331.32,-42 325.32,-36 325.32,-30 325.32,-30 325.32,-12 325.32,-12 325.32,-6 331.32,0 337.32,0 337.32,0 441.84,0 441.84,0 447.84,0 453.84,-6 453.84,-12 453.84,-12 453.84,-30 453.84,-30 453.84,-36 447.84,-42 441.84,-42"></path>
+<text text-anchor="middle" x="389.58" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">BFAST, LandTrendr,</text>
+<text text-anchor="middle" x="389.58" y="-12" font-family="Helvetica,sans-Serif" font-size="10.00">CCDC</text>
+</g>
+<!-- D&#45;&gt;G -->
+<g id="edge6" class="edge">
+<title>D-&gt;G</title>
+<path fill="none" stroke="#555555" d="M389.58,-77.63C389.58,-69.82 389.58,-60.73 389.58,-52.18"></path>
+<polygon fill="#555555" stroke="#555555" points="393.08,-52.16 389.58,-42.16 386.08,-52.16 393.08,-52.16"></polygon>
+</g>
+</g>
+</svg>
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-abordagens-mudanca-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;11.1: Três famílias de abordagens para detecção de mudanças na paisagem.
+Figura&nbsp;13.1: Três famílias de abordagens para detecção de mudanças na paisagem.
 </figcaption>
 </figure>
 </div>
-<p>A <a href="#fig-abordagens-mudanca" class="quarto-xref">Figura&nbsp;<span>11.1</span></a> distingue três paradigmas com complexidade e requisitos crescentes. A <strong>comparação pós-classificação</strong> é a abordagem mais intuitiva. Duas imagens (ou mais) de datas distintas são classificadas independentemente em mapas de uso e cobertura, e a comparação pixel-a-pixel (ou objeto-a-objeto) identifica as transições ocorridas (floresta→pastagem, pastagem→área urbana, cultivo→regeneração). A simplicidade conceitual é contrabalançada por uma limitação severa. Os erros de classificação de cada mapa se multiplicam na comparação, de modo que uma classificação com 85% de acurácia em cada data pode gerar um mapa de transições com apenas 72% de acurácia (0,85 × 0,85). As falsas mudanças (transições espúrias causadas por erros de classificação, não por mudanças reais) podem superar as mudanças verdadeiras em paisagens com baixa taxa de conversão.</p>
-<p>A <strong>detecção por diferença de imagens</strong> calcula a diferença (ou razão) entre valores espectrais ou índices de vegetação em duas datas. A diferença de NDVI entre 2010 e 2020, por exemplo, revela áreas onde a vegetação diminuiu (diferença negativa, potencial desmatamento) ou aumentou (diferença positiva, potencial regeneração). A vantagem é que não depende de classificação prévia, evitando a propagação de erros. A limitação é que detecta apenas a magnitude e direção da mudança, sem identificar as classes envolvidas (não distingue desmatamento para pastagem de desmatamento para cultivo), e é sensível a variações sazonais e atmosféricas entre as datas comparadas.</p>
-<p>A <strong>análise de séries temporais</strong> opera sobre sequências densas de imagens (mensais ou anuais) e detecta mudanças como rupturas, tendências ou anomalias nos perfis temporais de cada pixel. Algoritmos como <strong>BFAST</strong> (<em>Breaks For Additive Season and Trend</em>), <strong>LandTrendr</strong> (<em>Landsat-based Detection of Trends in Disturbance and Recovery</em>) e <strong>CCDC</strong> (<em>Continuous Change Detection and Classification</em>) decompõem a série temporal em componentes de tendência, sazonalidade e ruído, e identificam rupturas que indicam perturbações (desmatamento, fogo, inundação) e segmentos de recuperação (regeneração, reflorestamento). Essa abordagem é a mais robusta, pois utiliza toda a informação temporal disponível e distingue mudanças reais de flutuações sazonais normais.</p>
+</div>
+</div>
+<p>A <a href="#fig-abordagens-mudanca" class="quarto-xref">Figura&nbsp;<span>13.1</span></a> distingue três paradigmas com complexidade e requisitos crescentes. A comparação pós-classificação é a abordagem mais intuitiva. Duas imagens (ou mais) de datas distintas são classificadas independentemente em mapas de uso e cobertura, e a comparação pixel-a-pixel (ou objeto-a-objeto) identifica as transições ocorridas (floresta→pastagem, pastagem→área urbana, cultivo→regeneração). A simplicidade conceitual é contrabalançada por uma limitação severa. Os erros de classificação de cada mapa se multiplicam na comparação, de modo que uma classificação com 85% de acurácia em cada data pode gerar um mapa de transições com apenas 72% de acurácia (0,85 × 0,85). As falsas mudanças (transições espúrias causadas por erros de classificação, não por mudanças reais) podem superar as mudanças verdadeiras em paisagens com baixa taxa de conversão.</p>
+<p>A detecção por diferença de imagens calcula a diferença (ou razão) entre valores espectrais ou índices de vegetação em duas datas. A diferença de NDVI entre 2010 e 2020, por exemplo, revela áreas onde a vegetação diminuiu (diferença negativa, potencial desmatamento) ou aumentou (diferença positiva, potencial regeneração). A vantagem é que não depende de classificação prévia, evitando a propagação de erros. A limitação é que detecta apenas a magnitude e direção da mudança, sem identificar as classes envolvidas (não distingue desmatamento para pastagem de desmatamento para cultivo), e é sensível a variações sazonais e atmosféricas entre as datas comparadas.</p>
+<p>A análise de séries temporais opera sobre sequências densas de imagens (mensais ou anuais) e detecta mudanças como rupturas, tendências ou anomalias nos perfis temporais de cada pixel. Algoritmos como BFAST (<em>Breaks For Additive Season and Trend</em>), LandTrendr (<em>Landsat-based Detection of Trends in Disturbance and Recovery</em>) e CCDC (<em>Continuous Change Detection and Classification</em>) decompõem a série temporal em componentes de tendência, sazonalidade e ruído, e identificam rupturas que indicam perturbações (desmatamento, fogo, inundação) e segmentos de recuperação (regeneração, reflorestamento). Essa abordagem é a mais robusta, pois utiliza toda a informação temporal disponível e distingue mudanças reais de flutuações sazonais normais.</p>
 </section>
-<section id="matrizes-de-transição" class="level2" data-number="11.3">
-<h2 data-number="11.3" class="anchored" data-anchor-id="matrizes-de-transição"><span class="header-section-number">11.3</span> Matrizes de transição</h2>
-<p>A análise quantitativa das mudanças na paisagem utiliza <strong>matrizes de transição</strong> (<em>transition matrices</em>) que contabilizam a área convertida entre cada par de classes ao longo do período analisado <span class="citation" data-cites="pontius2004">(<a href="../referencias.html#ref-pontius2004" role="doc-biblioref">Pontius Jr et al., 2004</a>)</span>. Cada célula da matriz indica a área que transitou da classe da linha para a classe da coluna. A diagonal principal contém as áreas que permaneceram estáveis, e as células fora da diagonal contêm as transições.</p>
-<p>A <a href="#tbl-transicao" class="quarto-xref">Tabela&nbsp;<span>11.1</span></a> ilustra uma matriz de transição hipotética para uma paisagem de 10.000 ha analisada entre 2000 e 2020.</p>
+<section id="matrizes-de-transição" class="level2" data-number="13.2">
+<h2 data-number="13.2" class="anchored" data-anchor-id="matrizes-de-transição"><span class="header-section-number">13.2</span> Matrizes de transição</h2>
+<p>A análise quantitativa das mudanças na paisagem utiliza matrizes de transição (<em>transition matrices</em>) que contabilizam a área convertida entre cada par de classes ao longo do período analisado <span class="citation" data-cites="pontius2004">(<a href="../referencias.html#ref-pontius2004" role="doc-biblioref">Pontius Jr et al., 2004</a>)</span>. Cada célula da matriz indica a área que transitou da classe da linha para a classe da coluna. A diagonal principal contém as áreas que permaneceram estáveis, e as células fora da diagonal contêm as transições.</p>
+<p>A <a href="#tbl-transicao" class="quarto-xref">Tabela&nbsp;<span>13.1</span></a> ilustra uma matriz de transição hipotética para uma paisagem de 10.000 ha analisada entre 2000 e 2020.</p>
 <div id="tbl-transicao" class="striped hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-transicao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Tabela&nbsp;11.1: Matriz de transição hipotética de uso e cobertura (ha) entre 2000 e 2020 para uma paisagem de 10.000 ha. A diagonal indica persistência, os valores fora da diagonal indicam transições.
+Tabela&nbsp;13.1: Matriz de transição hipotética de uso e cobertura (ha) entre 2000 e 2020 para uma paisagem de 10.000 ha. A diagonal indica persistência, os valores fora da diagonal indicam transições.
 </figcaption>
 <div aria-describedby="tbl-transicao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table-striped table-hover caption-top table">
-<colgroup>
-<col style="width: 13%">
-<col style="width: 17%">
-<col style="width: 17%">
-<col style="width: 17%">
-<col style="width: 17%">
-<col style="width: 17%">
-</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">De / Para (ha)</th>
@@ -499,34 +563,34 @@ Tabela&nbsp;11.1: Matriz de transição hipotética de uso e cobertura (ha) entr
 <td style="text-align: center;">500</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Total 2020</strong></td>
-<td style="text-align: center;"><strong>3.050</strong></td>
-<td style="text-align: center;"><strong>3.450</strong></td>
-<td style="text-align: center;"><strong>2.800</strong></td>
-<td style="text-align: center;"><strong>700</strong></td>
-<td style="text-align: center;"><strong>10.000</strong></td>
+<td style="text-align: left;">Total 2020</td>
+<td style="text-align: center;">3.050</td>
+<td style="text-align: center;">3.450</td>
+<td style="text-align: center;">2.800</td>
+<td style="text-align: center;">700</td>
+<td style="text-align: center;">10.000</td>
 </tr>
 </tbody>
 </table>
 </div>
 </figure>
 </div>
-<p>A <a href="#tbl-transicao" class="quarto-xref">Tabela&nbsp;<span>11.1</span></a> revela padrões de mudança que não seriam visíveis numa comparação simples de proporções. A floresta perdeu 1.000 ha (de 3.800 para 3.050 quando se subtraem os 200 ha que ganhou da pastagem por regeneração), predominantemente para pastagem (700 ha) e cultivo (300 ha). A pastagem diminuiu levemente em termos líquidos, mas moveu-se internamente (devolveu 200 ha para floresta e recebeu 700 ha da mesma). A área urbana praticamente dobrou (de 500 para 700 ha), inteiramente à custa de pastagem (100 ha) e cultivo (100 ha). Essas informações de <strong>fluxo</strong> (quem cedeu para quem) são tão importantes quanto as de <strong>estoque</strong> (quanto de cada classe existe em cada data) e são essenciais para identificar forças motrizes e projetar tendências.</p>
+<p>A <a href="#tbl-transicao" class="quarto-xref">Tabela&nbsp;<span>13.1</span></a> revela padrões de mudança que não seriam visíveis numa comparação simples de proporções. A floresta perdeu 1.000 ha (de 3.800 para 3.050 quando se subtraem os 200 ha que ganhou da pastagem por regeneração), predominantemente para pastagem (700 ha) e cultivo (300 ha). A pastagem diminuiu levemente em termos líquidos, mas moveu-se internamente (devolveu 200 ha para floresta e recebeu 700 ha da mesma). A área urbana praticamente dobrou (de 500 para 700 ha), inteiramente à custa de pastagem (100 ha) e cultivo (100 ha). Essas informações de fluxo (quem cedeu para quem) são tão importantes quanto as de estoque (quanto de cada classe existe em cada data) e são essenciais para identificar forças motrizes e projetar tendências.</p>
 </section>
-<section id="intensidade-da-mudança" class="level2" data-number="11.4">
-<h2 data-number="11.4" class="anchored" data-anchor-id="intensidade-da-mudança"><span class="header-section-number">11.4</span> Intensidade da mudança</h2>
-<p>Pontius et al. <span class="citation" data-cites="pontius2004">(<a href="../referencias.html#ref-pontius2004" role="doc-biblioref">2004</a>)</span> propuseram a <strong>análise de intensidade</strong> (<em>intensity analysis</em>) como arcabouço estatístico para interpretar matrizes de transição. A análise opera em três níveis hierárquicos. O nível de <strong>intervalo</strong> avalia se a taxa anual de mudança é mais rápida ou mais lenta do que num período de referência. O nível de <strong>categoria</strong> identifica quais classes são ativas (mudam mais do que o esperado pela taxa uniforme) e quais são adormecidas. O nível de <strong>transição</strong> identifica quais transições específicas são dominantes para cada classe ativa, revelando processos como “a expansão da soja ocorre preferencialmente sobre pastagem, não sobre floresta” ou “a urbanização avança preferencialmente sobre cultivo periurbano”.</p>
+<section id="intensidade-da-mudança" class="level2" data-number="13.3">
+<h2 data-number="13.3" class="anchored" data-anchor-id="intensidade-da-mudança"><span class="header-section-number">13.3</span> Intensidade da mudança</h2>
+<p>Pontius et al. <span class="citation" data-cites="pontius2004">(<a href="../referencias.html#ref-pontius2004" role="doc-biblioref">2004</a>)</span> propuseram a análise de intensidade (<em>intensity analysis</em>) como arcabouço estatístico para interpretar matrizes de transição. A análise opera em três níveis hierárquicos. O nível de intervalo avalia se a taxa anual de mudança é mais rápida ou mais lenta do que num período de referência. O nível de categoria identifica quais classes são ativas (mudam mais do que o esperado pela taxa uniforme) e quais são adormecidas. O nível de transição identifica quais transições específicas são dominantes para cada classe ativa, revelando processos como “a expansão da soja ocorre preferencialmente sobre pastagem, não sobre floresta” ou “a urbanização avança preferencialmente sobre cultivo periurbano”.</p>
 <p>Essa análise hierárquica transforma a matriz de transição em diagnóstico ecológico e político, permitindo identificar não apenas o que mudou e quanto, mas quais transições são sistematicamente favorecidas (ou evitadas) em relação ao que seria esperado ao acaso.</p>
 </section>
-<section id="detecção-de-mudanças-em-séries-longas" class="level2" data-number="11.5">
-<h2 data-number="11.5" class="anchored" data-anchor-id="detecção-de-mudanças-em-séries-longas"><span class="header-section-number">11.5</span> Detecção de mudanças em séries longas</h2>
-<p>Para paisagens brasileiras, o projeto <strong>MapBiomas</strong> oferece a série temporal mais completa e espacialmente abrangente de mapas de uso e cobertura, com mapeamento anual de 1985 a presente em resolução de 30 m (Landsat). A partir desses mapas anuais, é possível construir matrizes de transição para qualquer período, calcular taxas anuais de desmatamento e regeneração, e identificar trajetórias de mudança para cada pixel ao longo de quatro décadas.</p>
-<p>O módulo <strong>MapBiomas Alerta</strong> automatiza a detecção de desmatamento recente (alertas semanais a mensais) com validação visual e espacialização, enquanto o módulo <strong>MapBiomas Degradação</strong> identifica processos graduais de perda de qualidade da vegetação (degradação florestal, não capturada como mudança de classe) a partir de séries temporais de métricas espectrais. Esses produtos exemplificam a transição da detecção de mudanças baseada em comparação de duas datas para sistemas de monitoramento contínuo que operam em tempo quase real.</p>
+<section id="detecção-de-mudanças-em-séries-longas" class="level2" data-number="13.4">
+<h2 data-number="13.4" class="anchored" data-anchor-id="detecção-de-mudanças-em-séries-longas"><span class="header-section-number">13.4</span> Detecção de mudanças em séries longas</h2>
+<p>Para paisagens brasileiras, o projeto MapBiomas oferece a série temporal mais completa e espacialmente abrangente de mapas de uso e cobertura, com mapeamento anual de 1985 a presente em resolução de 30 m (Landsat). A partir desses mapas anuais, é possível construir matrizes de transição para qualquer período, calcular taxas anuais de desmatamento e regeneração, e identificar trajetórias de mudança para cada pixel ao longo de quatro décadas.</p>
+<p>O módulo MapBiomas Alerta automatiza a detecção de desmatamento recente (alertas semanais a mensais) com validação visual e espacialização, enquanto o módulo MapBiomas Degradação identifica processos graduais de perda de qualidade da vegetação (degradação florestal, não capturada como mudança de classe) a partir de séries temporais de métricas espectrais. Esses produtos exemplificam a transição da detecção de mudanças baseada em comparação de duas datas para sistemas de monitoramento contínuo que operam em tempo quase real.</p>
 </section>
-<section id="trajetórias-de-mudança" class="level2" data-number="11.6">
-<h2 data-number="11.6" class="anchored" data-anchor-id="trajetórias-de-mudança"><span class="header-section-number">11.6</span> Trajetórias de mudança</h2>
-<p>A análise de trajetórias temporais vai além da comparação entre duas datas ao reconstruir o <strong>histórico de uso</strong> de cada pixel ao longo de toda a série. Uma parcela que era floresta em 1985, foi desmatada em 1990, convertida em pastagem até 2005, cultivada com soja de 2005 a 2015 e atualmente apresenta regeneração secundária tem uma trajetória completamente diferente de uma parcela que permaneceu como floresta durante todo o período, mesmo que ambas sejam classificadas como “vegetação” em 2024.</p>
-<p>A tipificação de trajetórias permite identificar padrões regionais de mudança de uso do solo, como o <strong>ciclo de fronteira</strong> clássico na Amazônia (floresta → pastagem → degradação → regeneração ou soja), a <strong>intensificação agrícola</strong> no Cerrado (cerrado nativo → pastagem extensiva → soja/milho safrinha) e a <strong>regeneração passiva</strong> em áreas marginais da Mata Atlântica (pasto abandonado → capoeira → floresta secundária). A identificação dessas trajetórias é fundamental para calibrar modelos de projeção de cenários futuros (<a href="20-modelagem-cenarios.html" class="quarto-xref"><span>Capítulo 20</span></a>).</p>
+<section id="trajetórias-de-mudança" class="level2" data-number="13.5">
+<h2 data-number="13.5" class="anchored" data-anchor-id="trajetórias-de-mudança"><span class="header-section-number">13.5</span> Trajetórias de mudança</h2>
+<p>A análise de trajetórias temporais vai além da comparação entre duas datas ao reconstruir o histórico de uso de cada pixel ao longo de toda a série. Uma parcela que era floresta em 1985, foi desmatada em 1990, convertida em pastagem até 2005, cultivada com soja de 2005 a 2015 e atualmente apresenta regeneração secundária tem uma trajetória completamente diferente de uma parcela que permaneceu como floresta durante todo o período, mesmo que ambas sejam classificadas como “vegetação” em 2024.</p>
+<p>A tipificação de trajetórias permite identificar padrões regionais de mudança de uso do solo, como o ciclo de fronteira clássico na Amazônia (floresta → pastagem → degradação → regeneração ou soja), a intensificação agrícola no Cerrado (cerrado nativo → pastagem extensiva → soja/milho safrinha) e a regeneração passiva em áreas marginais da Mata Atlântica (pasto abandonado → capoeira → floresta secundária). A identificação dessas trajetórias é fundamental para calibrar modelos de projeção de cenários futuros (<a href="20-modelagem-cenarios.html" class="quarto-xref"><span>Capítulo 22</span></a>).</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -537,14 +601,14 @@ Tabela&nbsp;11.1: Matriz de transição hipotética de uso e cobertura (ha) entr
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>O Google Earth Engine permite reconstruir trajetórias de uso para qualquer pixel do território brasileiro a partir da coleção MapBiomas. O pacote <strong>sits</strong> (Satellite Image Time Series) em R oferece funções para classificação de séries temporais com machine learning. O algoritmo <strong>LandTrendr</strong> reconstrói segmentos de tendência e identifica perturbações e recuperações em séries Landsat de 30+ anos.</p>
+<p>O Google Earth Engine permite reconstruir trajetórias de uso para qualquer pixel do território brasileiro a partir da coleção MapBiomas. O pacote sits (Satellite Image Time Series) em R oferece funções para classificação de séries temporais com machine learning. O algoritmo LandTrendr reconstrói segmentos de tendência e identifica perturbações e recuperações em séries Landsat de 30+ anos.</p>
 </div>
 </div>
 </section>
-<section id="mudanças-e-métricas-da-paisagem" class="level2" data-number="11.7">
-<h2 data-number="11.7" class="anchored" data-anchor-id="mudanças-e-métricas-da-paisagem"><span class="header-section-number">11.7</span> Mudanças e métricas da paisagem</h2>
-<p>A combinação de detecção de mudanças com métricas da paisagem (calculadas para cada data da série temporal) permite quantificar a <strong>trajetória da estrutura da paisagem</strong> ao longo do tempo. A proporção de habitat (PLAND), o número de manchas (NP), a área média (AREA_MN), o índice de forma (SHAPE_MN) e a conectividade (PROX, IIC) calculados para cada ano revelam se a paisagem está se fragmentando (NP aumenta, AREA_MN diminui), se consolidando (NP diminui, AREA_MN aumenta por coalescência de fragmentos em regeneração) ou se mantendo estável.</p>
-<p>Essa análise temporal de métricas é particularmente poderosa quando combinada com informações sobre políticas públicas (implementação do Código Florestal, moratória da soja, pagamentos por serviços ambientais) e com dados socioeconômicos (preço de commodities, taxas de crédito rural, pressão demográfica). A correlação entre tendências de métricas e eventos político-econômicos permite avaliar, ainda que parcialmente, a efetividade de políticas de conservação e gestão territorial, um tema retomado no <a href="19-corredores-areas-protegidas.html" class="quarto-xref"><span>Capítulo 19</span></a> e no <a href="20-modelagem-cenarios.html" class="quarto-xref"><span>Capítulo 20</span></a>.</p>
+<section id="mudanças-e-métricas-da-paisagem" class="level2" data-number="13.6">
+<h2 data-number="13.6" class="anchored" data-anchor-id="mudanças-e-métricas-da-paisagem"><span class="header-section-number">13.6</span> Mudanças e métricas da paisagem</h2>
+<p>A combinação de detecção de mudanças com métricas da paisagem (calculadas para cada data da série temporal) permite quantificar a trajetória da estrutura da paisagem ao longo do tempo. A proporção de habitat (PLAND), o número de manchas (NP), a área média (AREA_MN), o índice de forma (SHAPE_MN) e a conectividade (PROX, IIC) calculados para cada ano revelam se a paisagem está se fragmentando (NP aumenta, AREA_MN diminui), se consolidando (NP diminui, AREA_MN aumenta por coalescência de fragmentos em regeneração) ou se mantendo estável.</p>
+<p>Essa análise temporal de métricas é particularmente poderosa quando combinada com informações sobre políticas públicas (implementação do Código Florestal, moratória da soja, pagamentos por serviços ambientais) e com dados socioeconômicos (preço de commodities, taxas de crédito rural, pressão demográfica). A correlação entre tendências de métricas e eventos político-econômicos permite avaliar, ainda que parcialmente, a efetividade de políticas de conservação e gestão territorial, um tema retomado no <a href="19-corredores-areas-protegidas.html" class="quarto-xref"><span>Capítulo 21</span></a> e no <a href="20-modelagem-cenarios.html" class="quarto-xref"><span>Capítulo 22</span></a>.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
@@ -552,6 +616,7 @@ Tabela&nbsp;11.1: Matriz de transição hipotética de uso e cobertura (ha) entr
 Pontius Jr, R. G., Shusas, E., &amp; McEachern, M. (2004). Detecting important categorical land changes while accounting for persistence. <em>Agriculture, Ecosystems &amp; Environment</em>, <em>101</em>(2–3), 251–268. <a href="https://doi.org/10.1016/j.agee.2003.09.008">https://doi.org/10.1016/j.agee.2003.09.008</a>
 </div>
 </div>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -957,13 +1022,13 @@ Pontius Jr, R. G., Shusas, E., &amp; McEachern, M. (2004). Detecting important c
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../capitulos/10-fragmentacao-conectividade.html" class="pagination-link" aria-label="Fragmentação e Conectividade">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Fragmentação e Conectividade</span></span>
+      <a href="../capitulos/10-fragmentacao-conectividade.html" class="pagination-link" aria-label="Fragmentação de habitat">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Fragmentação de habitat</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../capitulos/12-dinamica-uso-solo.html" class="pagination-link" aria-label="Dinâmica do Uso e Cobertura do Solo">
-        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Dinâmica do Uso e Cobertura do Solo</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../capitulos/12-dinamica-uso-solo.html" class="pagination-link" aria-label="Por que a paisagem muda?">
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Por que a paisagem muda?</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

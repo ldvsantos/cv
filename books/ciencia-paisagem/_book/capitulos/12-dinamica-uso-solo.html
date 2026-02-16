@@ -8,7 +8,7 @@
 
 <meta name="description" content="Livro-texto sobre Ciência da Paisagem com ênfase em análise da paisagem, integrando ecologia da paisagem, métricas espaciais, sensoriamento remoto, geoprocessamento e planejamento territorial para gestão sustentável de paisagens tropicais.">
 
-<title>12&nbsp; Dinâmica do Uso e Cobertura do Solo – Ciência da Paisagem</title>
+<title>13&nbsp; Por que a paisagem muda? – Ciência da Paisagem</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -92,9 +92,6 @@ div.csl-indent {
     "search-label": "Procurar"
   }
 }</script>
-<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -108,7 +105,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/12-dinamica-uso-solo.html">Parte III — Processos e Dinâmica</a></li><li class="breadcrumb-item"><a href="../capitulos/12-dinamica-uso-solo.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Dinâmica do Uso e Cobertura do Solo</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/12-dinamica-uso-solo.html">Parte III — Processos e Dinâmica</a></li><li class="breadcrumb-item"><a href="../capitulos/12-dinamica-uso-solo.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Por que a paisagem muda?</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
@@ -168,13 +165,13 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bem-vindo</span></a>
+ <span class="menu-text">Sobre este livro</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../prefacio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Prefácio</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">prefacio.html</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -189,31 +186,31 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/01-introducao.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução à Ciência da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">O que é Ciência da Paisagem?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/02-ecologia-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Conceitos e Abordagens da Ecologia da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Ecologia da Paisagem como disciplina</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/03-estrutura-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Estrutura da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">O modelo mancha-corredor-matriz</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/04-escalas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Escalas Espaço-temporais</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">O problema da escala</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/05-percepcao-representacao.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Percepção e Representação da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Paisagem percebida e paisagem analisada</span></span></a>
   </div>
 </li>
       </ul>
@@ -230,37 +227,37 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/06-sensoriamento-remoto.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Sensoriamento Remoto Aplicado à Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Fundamentos do sensoriamento remoto</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/07-sig-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sistemas de Informação Geográfica para Análise da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">O papel do SIG na análise da paisagem</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/08-uso-cobertura.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Classificação do Uso e Cobertura do Solo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Uso vs.&nbsp;cobertura</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/09-metricas-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Métricas da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Por que quantificar a paisagem?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/10-fragmentacao-conectividade.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Fragmentação e Conectividade</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Fragmentação de habitat</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/11-deteccao-mudancas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Detecção de Mudanças na Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Paisagens em transformação</span></span></a>
   </div>
 </li>
       </ul>
@@ -277,31 +274,31 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/12-dinamica-uso-solo.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Dinâmica do Uso e Cobertura do Solo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Por que a paisagem muda?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/13-processos-hidrologicos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Processos Hidrológicos na Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">A água como protagonista invisível</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/14-servicos-ecossistemicos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Serviços Ecossistêmicos na Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">O que a natureza faz por nós?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/15-biodiversidade-heterogeneidade.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Biodiversidade e Heterogeneidade da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">A paisagem vista pelos organismos</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/16-mudancas-climaticas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Mudanças Climáticas e Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Um planeta mais quente e paisagens em movimento</span></span></a>
   </div>
 </li>
       </ul>
@@ -318,31 +315,31 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/17-planejamento-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Planejamento da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Planejar para quê?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/18-restauracao-ecologica.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Restauração Ecológica na Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">O que significa restaurar?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/19-corredores-areas-protegidas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Corredores Ecológicos e Áreas Protegidas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Ilhas verdes em um mar de atividade humana</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/20-modelagem-cenarios.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Modelagem de Cenários Paisagísticos</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">E se…?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/21-projeto-integrador.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Projeto Integrador</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Unindo todas as peças</span></span></a>
   </div>
 </li>
       </ul>
@@ -350,7 +347,7 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../referencias.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Referências</span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">referencias.html</span></span></a>
   </div>
 </li>
     </ul>
@@ -363,22 +360,25 @@ div.csl-indent {
     <h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#por-que-a-paisagem-muda" id="toc-por-que-a-paisagem-muda" class="nav-link active" data-scroll-target="#por-que-a-paisagem-muda"><span class="header-section-number">12.1</span> Por que a paisagem muda?</a></li>
-  <li><a href="#forças-motrizes-da-mudança" id="toc-forças-motrizes-da-mudança" class="nav-link" data-scroll-target="#forças-motrizes-da-mudança"><span class="header-section-number">12.2</span> Forças motrizes da mudança</a></li>
-  <li><a href="#o-ciclo-de-fronteira-agrícola" id="toc-o-ciclo-de-fronteira-agrícola" class="nav-link" data-scroll-target="#o-ciclo-de-fronteira-agrícola"><span class="header-section-number">12.3</span> O ciclo de fronteira agrícola</a></li>
-  <li><a href="#transições-de-uso-do-solo-e-a-teoria-da-transição-florestal" id="toc-transições-de-uso-do-solo-e-a-teoria-da-transição-florestal" class="nav-link" data-scroll-target="#transições-de-uso-do-solo-e-a-teoria-da-transição-florestal"><span class="header-section-number">12.4</span> Transições de uso do solo e a teoria da transição florestal</a></li>
-  <li><a href="#modelagem-de-mudanças-de-uso-do-solo" id="toc-modelagem-de-mudanças-de-uso-do-solo" class="nav-link" data-scroll-target="#modelagem-de-mudanças-de-uso-do-solo"><span class="header-section-number">12.5</span> Modelagem de mudanças de uso do solo</a></li>
-  <li><a href="#intensificação-vs.-expansão" id="toc-intensificação-vs.-expansão" class="nav-link" data-scroll-target="#intensificação-vs.-expansão"><span class="header-section-number">12.6</span> Intensificação vs.&nbsp;expansão</a></li>
-  <li><a href="#aplicação-brasileira-e-o-papel-do-monitoramento" id="toc-aplicação-brasileira-e-o-papel-do-monitoramento" class="nav-link" data-scroll-target="#aplicação-brasileira-e-o-papel-do-monitoramento"><span class="header-section-number">12.7</span> Aplicação brasileira e o papel do monitoramento</a></li>
+  <li><a href="#sec-dinamica-uso" id="toc-sec-dinamica-uso" class="nav-link active" data-scroll-target="#sec-dinamica-uso"><span class="header-section-number">14</span> Dinâmica do Uso e Cobertura do Solo</a>
+  <ul class="collapse">
+  <li><a href="#forças-motrizes-da-mudança" id="toc-forças-motrizes-da-mudança" class="nav-link" data-scroll-target="#forças-motrizes-da-mudança"><span class="header-section-number">14.1</span> Forças motrizes da mudança</a></li>
+  <li><a href="#regimes-de-distúrbio-e-heterogeneidade-espacial" id="toc-regimes-de-distúrbio-e-heterogeneidade-espacial" class="nav-link" data-scroll-target="#regimes-de-distúrbio-e-heterogeneidade-espacial"><span class="header-section-number">14.2</span> Regimes de distúrbio e heterogeneidade espacial</a></li>
+  <li><a href="#o-ciclo-de-fronteira-agrícola" id="toc-o-ciclo-de-fronteira-agrícola" class="nav-link" data-scroll-target="#o-ciclo-de-fronteira-agrícola"><span class="header-section-number">14.3</span> O ciclo de fronteira agrícola</a></li>
+  <li><a href="#transições-de-uso-do-solo-e-a-teoria-da-transição-florestal" id="toc-transições-de-uso-do-solo-e-a-teoria-da-transição-florestal" class="nav-link" data-scroll-target="#transições-de-uso-do-solo-e-a-teoria-da-transição-florestal"><span class="header-section-number">14.4</span> Transições de uso do solo e a teoria da transição florestal</a></li>
+  <li><a href="#modelagem-de-mudanças-de-uso-do-solo" id="toc-modelagem-de-mudanças-de-uso-do-solo" class="nav-link" data-scroll-target="#modelagem-de-mudanças-de-uso-do-solo"><span class="header-section-number">14.5</span> Modelagem de mudanças de uso do solo</a></li>
+  <li><a href="#intensificação-vs.-expansão" id="toc-intensificação-vs.-expansão" class="nav-link" data-scroll-target="#intensificação-vs.-expansão"><span class="header-section-number">14.6</span> Intensificação vs.&nbsp;expansão</a></li>
+  <li><a href="#aplicação-brasileira-e-o-papel-do-monitoramento" id="toc-aplicação-brasileira-e-o-papel-do-monitoramento" class="nav-link" data-scroll-target="#aplicação-brasileira-e-o-papel-do-monitoramento"><span class="header-section-number">14.7</span> Aplicação brasileira e o papel do monitoramento</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ldvsantos/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/12-dinamica-uso-solo.html">Parte III — Processos e Dinâmica</a></li><li class="breadcrumb-item"><a href="../capitulos/12-dinamica-uso-solo.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Dinâmica do Uso e Cobertura do Solo</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/12-dinamica-uso-solo.html">Parte III — Processos e Dinâmica</a></li><li class="breadcrumb-item"><a href="../capitulos/12-dinamica-uso-solo.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Por que a paisagem muda?</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-dinamica-uso" class="quarto-section-identifier"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Dinâmica do Uso e Cobertura do Solo</span></span></h1>
+<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Por que a paisagem muda?</span></h1>
 </div>
 
 
@@ -395,107 +395,282 @@ div.csl-indent {
 </header>
 
 
-<section id="por-que-a-paisagem-muda" class="level2" data-number="12.1">
-<h2 data-number="12.1" class="anchored" data-anchor-id="por-que-a-paisagem-muda"><span class="header-section-number">12.1</span> Por que a paisagem muda?</h2>
-<p>Imagine que você sobrevoa uma região do oeste baiano e observa, de um lado, extensas plantações de soja com pivôs-centrais e, de outro, remanescentes de cerrado nativo. Se pudesse voltar no tempo trinta anos, veria uma paisagem radicalmente diferente, dominada por pastagens extensivas e cerrado contínuo. E se voltasse sessenta anos, encontraria cerrado praticamente intocado. Essa transformação, que converteu milhões de hectares de vegetação nativa em áreas agrícolas ao longo de poucas décadas, é um exemplo de <strong>dinâmica do uso e cobertura do solo</strong>. Entender por que, onde, quando e como essas mudanças ocorrem é uma das questões centrais da Ciência da Paisagem e, simultaneamente, uma das perguntas mais urgentes para a gestão sustentável do território.</p>
+<section id="sec-dinamica-uso" class="level1" data-number="14">
+<h1 data-number="14"><span class="header-section-number">14</span> Dinâmica do Uso e Cobertura do Solo</h1>
+<p>Imagine que você sobrevoa uma região do oeste baiano e observa, de um lado, extensas plantações de soja com pivôs-centrais e, de outro, remanescentes de cerrado nativo. Se pudesse voltar no tempo trinta anos, veria uma paisagem radicalmente diferente, dominada por pastagens extensivas e cerrado contínuo. E se voltasse sessenta anos, encontraria cerrado praticamente intocado. Essa transformação, que converteu milhões de hectares de vegetação nativa em áreas agrícolas ao longo de poucas décadas, é um exemplo de dinâmica do uso e cobertura do solo. Entender por que, onde, quando e como essas mudanças ocorrem é uma das questões centrais da Ciência da Paisagem e, simultaneamente, uma das perguntas mais urgentes para a gestão sustentável do território.</p>
 <p>O uso do solo refere-se à finalidade humana atribuída a uma porção da superfície terrestre (agricultura, pecuária, moradia, conservação), enquanto a cobertura do solo descreve a condição biofísica observável dessa superfície (floresta, pastagem, solo exposto, área construída). Embora frequentemente usados como sinônimos, os dois conceitos capturam dimensões distintas. Uma mesma cobertura (pastagem) pode corresponder a usos diferentes (pecuária extensiva, área abandonada em regeneração, reserva legal subutilizada), e um mesmo uso (produção agrícola) pode se manifestar em coberturas distintas ao longo do ano (solo exposto após colheita, cultivo em crescimento, palhada de plantio direto). A dinâmica do uso e cobertura do solo trata, portanto, das transformações simultâneas nessas duas dimensões.</p>
-</section>
-<section id="forças-motrizes-da-mudança" class="level2" data-number="12.2">
-<h2 data-number="12.2" class="anchored" data-anchor-id="forças-motrizes-da-mudança"><span class="header-section-number">12.2</span> Forças motrizes da mudança</h2>
-<p>As mudanças no uso e cobertura do solo não ocorrem ao acaso. Elas são impulsionadas por <strong>forças motrizes</strong> (<em>driving forces</em>) que podem ser classificadas em cinco grandes categorias, representadas na <a href="#fig-forcas-motrizes-lulc" class="quarto-xref">Figura&nbsp;<span>12.1</span></a>.</p>
+<section id="forças-motrizes-da-mudança" class="level2" data-number="14.1">
+<h2 data-number="14.1" class="anchored" data-anchor-id="forças-motrizes-da-mudança"><span class="header-section-number">14.1</span> Forças motrizes da mudança</h2>
+<p>As mudanças no uso e cobertura do solo não ocorrem ao acaso. Elas são impulsionadas por forças motrizes (<em>driving forces</em>) que podem ser classificadas em cinco grandes categorias, representadas na <a href="#fig-forcas-motrizes-lulc" class="quarto-xref">Figura&nbsp;<span>14.1</span></a>.</p>
+<div class="cell" data-fig-width="8.5" data-layout-align="center">
+<div class="cell-output-display">
 <div id="fig-forcas-motrizes-lulc" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-forcas-motrizes-lulc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell" data-fig-width="8.5" data-layout-align="center">
-<div class="cell-output-display">
 <div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TD
-    A["Forças Motrizes de&lt;br&gt;Mudança de Uso do Solo"] --&gt; B["Demográficas&lt;br&gt;crescimento, migração,&lt;br&gt;urbanização"]
-    A --&gt; C["Econômicas&lt;br&gt;preços, mercados,&lt;br&gt;crédito, emprego"]
-    A --&gt; D["Tecnológicas&lt;br&gt;mecanização, irrigação,&lt;br&gt;OGMs, insumos"]
-    A --&gt; E["Institucionais&lt;br&gt;legislação, políticas&lt;br&gt;públicas, posse da terra"]
-    A --&gt; F["Biofísicas&lt;br&gt;clima, relevo, solos,&lt;br&gt;aptidão agrícola"]
-
-    B --&gt; G["Mudança de Uso&lt;br&gt;e Cobertura do Solo"]
-    C --&gt; G
-    D --&gt; G
-    E --&gt; G
-    F --&gt; G
-
-    style A fill:#2E7D32,color:#fff
-    style G fill:#1B5E20,color:#fff
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
+<svg width="816" height="480" viewbox="0.00 0.00 746.86 218.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 214)">
+<!-- A -->
+<g id="node1" class="node">
+<title>A</title>
+<path fill="#2e7d32" stroke="#1b5e20" stroke-width="1.5" d="M428.31,-210C428.31,-210 303.61,-210 303.61,-210 297.61,-210 291.61,-204 291.61,-198 291.61,-198 291.61,-180 291.61,-180 291.61,-174 297.61,-168 303.61,-168 303.61,-168 428.31,-168 428.31,-168 434.31,-168 440.31,-174 440.31,-180 440.31,-180 440.31,-198 440.31,-198 440.31,-204 434.31,-210 428.31,-210"></path>
+<text text-anchor="middle" x="365.96" y="-192" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Forças Motrizes de</text>
+<text text-anchor="middle" x="365.96" y="-180" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Mudança de Uso do Solo</text>
+</g>
+<!-- B -->
+<g id="node2" class="node">
+<title>B</title>
+<path fill="#e8f5e9" stroke="#2e7d32" stroke-width="0.8" d="M127.88,-132C127.88,-132 12.04,-132 12.04,-132 6.04,-132 0.04,-126 0.04,-120 0.04,-120 0.04,-90 0.04,-90 0.04,-84 6.04,-78 12.04,-78 12.04,-78 127.88,-78 127.88,-78 133.88,-78 139.88,-84 139.88,-90 139.88,-90 139.88,-120 139.88,-120 139.88,-126 133.88,-132 127.88,-132"></path>
+<text text-anchor="middle" x="69.96" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">Demográficas</text>
+<text text-anchor="middle" x="69.96" y="-102" font-family="Helvetica,sans-Serif" font-size="10.00">crescimento, migração,</text>
+<text text-anchor="middle" x="69.96" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00">urbanização</text>
+</g>
+<!-- A&#45;&gt;B -->
+<g id="edge1" class="edge">
+<title>A-&gt;B</title>
+<path fill="none" stroke="#555555" d="M291.31,-170.02C251.77,-160.19 202.21,-147.4 149.9,-132.21"></path>
+<polygon fill="#555555" stroke="#555555" points="150.68,-128.79 140.1,-129.35 148.71,-135.51 150.68,-128.79"></polygon>
+</g>
+<!-- C -->
+<g id="node3" class="node">
+<title>C</title>
+<path fill="#e3f2fd" stroke="#1565c0" stroke-width="0.8" d="M264.27,-132C264.27,-132 169.65,-132 169.65,-132 163.65,-132 157.65,-126 157.65,-120 157.65,-120 157.65,-90 157.65,-90 157.65,-84 163.65,-78 169.65,-78 169.65,-78 264.27,-78 264.27,-78 270.27,-78 276.27,-84 276.27,-90 276.27,-90 276.27,-120 276.27,-120 276.27,-126 270.27,-132 264.27,-132"></path>
+<text text-anchor="middle" x="216.96" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">Econômicas</text>
+<text text-anchor="middle" x="216.96" y="-102" font-family="Helvetica,sans-Serif" font-size="10.00">preços, mercados,</text>
+<text text-anchor="middle" x="216.96" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00">crédito, emprego</text>
+</g>
+<!-- A&#45;&gt;C -->
+<g id="edge2" class="edge">
+<title>A-&gt;C</title>
+<path fill="none" stroke="#555555" d="M329.51,-167.94C312.55,-158.61 292,-147.3 273.12,-136.91"></path>
+<polygon fill="#555555" stroke="#555555" points="274.75,-133.81 264.3,-132.05 271.37,-139.94 274.75,-133.81"></polygon>
+</g>
+<!-- D -->
+<g id="node4" class="node">
+<title>D</title>
+<path fill="#fff3e0" stroke="#e65100" stroke-width="0.8" d="M425.17,-132C425.17,-132 306.75,-132 306.75,-132 300.75,-132 294.75,-126 294.75,-120 294.75,-120 294.75,-90 294.75,-90 294.75,-84 300.75,-78 306.75,-78 306.75,-78 425.17,-78 425.17,-78 431.17,-78 437.17,-84 437.17,-90 437.17,-90 437.17,-120 437.17,-120 437.17,-126 431.17,-132 425.17,-132"></path>
+<text text-anchor="middle" x="365.96" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">Tecnológicas</text>
+<text text-anchor="middle" x="365.96" y="-102" font-family="Helvetica,sans-Serif" font-size="10.00">mecanização, irrigação,</text>
+<text text-anchor="middle" x="365.96" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00">OGMs, insumos</text>
+</g>
+<!-- A&#45;&gt;D -->
+<g id="edge3" class="edge">
+<title>A-&gt;D</title>
+<path fill="none" stroke="#555555" d="M365.96,-167.73C365.96,-160.03 365.96,-151 365.96,-142.26"></path>
+<polygon fill="#555555" stroke="#555555" points="369.46,-142.23 365.96,-132.23 362.46,-142.23 369.46,-142.23"></polygon>
+</g>
+<!-- E -->
+<g id="node5" class="node">
+<title>E</title>
+<path fill="#f3e5f5" stroke="#6a1b9a" stroke-width="0.8" d="M585.13,-132C585.13,-132 466.79,-132 466.79,-132 460.79,-132 454.79,-126 454.79,-120 454.79,-120 454.79,-90 454.79,-90 454.79,-84 460.79,-78 466.79,-78 466.79,-78 585.13,-78 585.13,-78 591.13,-78 597.13,-84 597.13,-90 597.13,-90 597.13,-120 597.13,-120 597.13,-126 591.13,-132 585.13,-132"></path>
+<text text-anchor="middle" x="525.96" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">Institucionais</text>
+<text text-anchor="middle" x="525.96" y="-102" font-family="Helvetica,sans-Serif" font-size="10.00">legislação, políticas</text>
+<text text-anchor="middle" x="525.96" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00">públicas, posse da terra</text>
+</g>
+<!-- A&#45;&gt;E -->
+<g id="edge4" class="edge">
+<title>A-&gt;E</title>
+<path fill="none" stroke="#555555" d="M405.1,-167.94C423.48,-158.52 445.78,-147.09 466.2,-136.63"></path>
+<polygon fill="#555555" stroke="#555555" points="467.82,-139.73 475.13,-132.05 464.63,-133.5 467.82,-139.73"></polygon>
+</g>
+<!-- F -->
+<g id="node6" class="node">
+<title>F</title>
+<path fill="#bbdefb" stroke="#1565c0" stroke-width="0.8" d="M726.77,-132C726.77,-132 627.15,-132 627.15,-132 621.15,-132 615.15,-126 615.15,-120 615.15,-120 615.15,-90 615.15,-90 615.15,-84 621.15,-78 627.15,-78 627.15,-78 726.77,-78 726.77,-78 732.77,-78 738.77,-84 738.77,-90 738.77,-90 738.77,-120 738.77,-120 738.77,-126 732.77,-132 726.77,-132"></path>
+<text text-anchor="middle" x="676.96" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">Biofísicas</text>
+<text text-anchor="middle" x="676.96" y="-102" font-family="Helvetica,sans-Serif" font-size="10.00">clima, relevo, solos,</text>
+<text text-anchor="middle" x="676.96" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00">aptidão agrícola</text>
+</g>
+<!-- A&#45;&gt;F -->
+<g id="edge5" class="edge">
+<title>A-&gt;F</title>
+<path fill="none" stroke="#555555" d="M440.37,-173.09C485.65,-163.44 544.76,-149.84 605.08,-132.14"></path>
+<polygon fill="#555555" stroke="#555555" points="606.18,-135.46 614.77,-129.26 604.18,-128.75 606.18,-135.46"></polygon>
+</g>
+<!-- G -->
+<g id="node7" class="node">
+<title>G</title>
+<path fill="#1b5e20" stroke="#0d3310" stroke-width="1.5" d="M416.46,-42C416.46,-42 315.46,-42 315.46,-42 309.46,-42 303.46,-36 303.46,-30 303.46,-30 303.46,-12 303.46,-12 303.46,-6 309.46,0 315.46,0 315.46,0 416.46,0 416.46,0 422.46,0 428.46,-6 428.46,-12 428.46,-12 428.46,-30 428.46,-30 428.46,-36 422.46,-42 416.46,-42"></path>
+<text text-anchor="middle" x="365.96" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Mudança de Uso</text>
+<text text-anchor="middle" x="365.96" y="-12" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">e Cobertura do Solo</text>
+</g>
+<!-- B&#45;&gt;G -->
+<g id="edge6" class="edge">
+<title>B-&gt;G</title>
+<path fill="none" stroke="#555555" d="M140.1,-80.65C143.09,-79.74 146.05,-78.85 148.96,-78 196.66,-64.01 250.79,-50.04 293.06,-39.55"></path>
+<polygon fill="#555555" stroke="#555555" points="294.12,-42.89 302.99,-37.1 292.44,-36.1 294.12,-42.89"></polygon>
+</g>
+<!-- C&#45;&gt;G -->
+<g id="edge7" class="edge">
+<title>C-&gt;G</title>
+<path fill="none" stroke="#555555" d="M264.51,-77.83C282.36,-68.01 302.58,-56.88 320.25,-47.16"></path>
+<polygon fill="#555555" stroke="#555555" points="322.16,-50.1 329.23,-42.21 318.78,-43.97 322.16,-50.1"></polygon>
+</g>
+<!-- D&#45;&gt;G -->
+<g id="edge8" class="edge">
+<title>D-&gt;G</title>
+<path fill="none" stroke="#555555" d="M365.96,-77.6C365.96,-69.51 365.96,-60.53 365.96,-52.2"></path>
+<polygon fill="#555555" stroke="#555555" points="369.46,-52.1 365.96,-42.1 362.46,-52.1 369.46,-52.1"></polygon>
+</g>
+<!-- E&#45;&gt;G -->
+<g id="edge9" class="edge">
+<title>E-&gt;G</title>
+<path fill="none" stroke="#555555" d="M474.9,-77.83C455.48,-67.88 433.44,-56.58 414.29,-46.77"></path>
+<polygon fill="#555555" stroke="#555555" points="415.64,-43.53 405.14,-42.08 412.45,-49.76 415.64,-43.53"></polygon>
+</g>
+<!-- F&#45;&gt;G -->
+<g id="edge10" class="edge">
+<title>F-&gt;G</title>
+<path fill="none" stroke="#555555" d="M614.77,-80.74C611.8,-79.78 608.85,-78.86 605.96,-78 550.46,-61.43 486.55,-46.73 438.64,-36.55"></path>
+<polygon fill="#555555" stroke="#555555" points="439.17,-33.08 428.67,-34.44 437.73,-39.93 439.17,-33.08"></polygon>
+</g>
+</g>
+</svg>
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-forcas-motrizes-lulc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;12.1: Cinco categorias de forças motrizes que condicionam as mudanças de uso e cobertura do solo, convergindo para a transformação observada na paisagem.
+Figura&nbsp;14.1: Cinco categorias de forças motrizes que condicionam as mudanças de uso e cobertura do solo, convergindo para a transformação observada na paisagem.
 </figcaption>
 </figure>
 </div>
-<p>A <a href="#fig-forcas-motrizes-lulc" class="quarto-xref">Figura&nbsp;<span>12.1</span></a> mostra que a mudança de uso do solo é o resultado da convergência de múltiplas forças que operam simultaneamente e em diferentes escalas. Para compreender intuitivamente o diagrama, considere um exemplo concreto. O desmatamento de uma área de cerrado no Matopiba (região de fronteira agrícola nos estados do Maranhão, Tocantins, Piauí e Bahia) não é explicado por uma única causa, mas pela confluência de fatores demográficos (migração de agricultores do Sul), econômicos (alta no preço internacional da soja), tecnológicos (desenvolvimento de cultivares adaptadas ao cerrado e irrigação por pivô-central), institucionais (fragilidade de fiscalização ambiental e regularização fundiária precária) e biofísicos (topografia plana, solos profundos e clima com estação seca definida que permite mecanização e secagem natural do grão). Nenhum desses fatores, isoladamente, seria suficiente para explicar a conversão. É a interação entre eles que produz a mudança.</p>
-<p>As forças motrizes operam em escalas distintas. As <strong>forças proximais</strong> (<em>proximate causes</em>) são as ações humanas diretas que alteram a cobertura do solo, como a derrubada de uma área de floresta, a construção de uma estrada ou a implantação de um sistema de irrigação. As <strong>forças subjacentes</strong> (<em>underlying causes</em>) são os processos sociais, econômicos e políticos mais amplos que criam as condições para que as ações diretas ocorram, como o crescimento da demanda global por commodities, a valorização fundiária, ou a criação de linhas de crédito para expansão agrícola. A distinção entre forças proximais e subjacentes é análoga à distinção médica entre sintoma e doença. Combater apenas as forças proximais (multar o desmatamento ilegal) sem abordar as subjacentes (ajustar incentivos econômicos e garantir alternativas de renda) tende a ser ineficaz ou a deslocar o problema para outra região, fenômeno conhecido como <strong>vazamento</strong> (<em>leakage</em>).</p>
+</div>
+</div>
+<p>A <a href="#fig-forcas-motrizes-lulc" class="quarto-xref">Figura&nbsp;<span>14.1</span></a> mostra que a mudança de uso do solo é o resultado da convergência de múltiplas forças que operam simultaneamente e em diferentes escalas. Para compreender intuitivamente o diagrama, considere um exemplo concreto. O desmatamento de uma área de cerrado no Matopiba (região de fronteira agrícola nos estados do Maranhão, Tocantins, Piauí e Bahia) não é explicado por uma única causa, mas pela confluência de fatores demográficos (migração de agricultores do Sul), econômicos (alta no preço internacional da soja), tecnológicos (desenvolvimento de cultivares adaptadas ao cerrado e irrigação por pivô-central), institucionais (fragilidade de fiscalização ambiental e regularização fundiária precária) e biofísicos (topografia plana, solos profundos e clima com estação seca definida que permite mecanização e secagem natural do grão). Nenhum desses fatores, isoladamente, seria suficiente para explicar a conversão. É a interação entre eles que produz a mudança.</p>
+<p>As forças motrizes operam em escalas distintas. As forças proximais (<em>proximate causes</em>) são as ações humanas diretas que alteram a cobertura do solo, como a derrubada de uma área de floresta, a construção de uma estrada ou a implantação de um sistema de irrigação. As forças subjacentes (<em>underlying causes</em>) são os processos sociais, econômicos e políticos mais amplos que criam as condições para que as ações diretas ocorrem, como o crescimento da demanda global por commodities, a valorização fundiária, ou a criação de linhas de crédito para expansão agrícola. A distinção entre forças proximais e subjacentes é análoga à distinção médica entre sintoma e doença. Combater apenas as forças proximais (multar o desmatamento ilegal) sem abordar as subjacentes (ajustar incentivos econômicos e garantir alternativas de renda) tende a ser ineficaz ou a deslocar o problema para outra região, fenômeno conhecido como vazamento (<em>leakage</em>).</p>
 </section>
-<section id="o-ciclo-de-fronteira-agrícola" class="level2" data-number="12.3">
-<h2 data-number="12.3" class="anchored" data-anchor-id="o-ciclo-de-fronteira-agrícola"><span class="header-section-number">12.3</span> O ciclo de fronteira agrícola</h2>
-<p>Um padrão recorrente na dinâmica de uso do solo em regiões tropicais é o <strong>ciclo de fronteira agrícola</strong>, uma sequência típica de transformações da paisagem que se repete com variações regionais em diversas partes do mundo. No caso brasileiro, esse ciclo pode ser descrito em etapas que, embora apresentadas aqui de forma sequencial para fins didáticos, na prática se sobrepõem temporal e espacialmente.</p>
-<p>A primeira etapa é a <strong>abertura</strong>, na qual a vegetação nativa é removida, geralmente por corte e queima, para implantação de pastagem extensiva ou culturas de subsistência. Essa etapa é tipicamente realizada por pequenos produtores, posseiros ou projetos de colonização, e resulta numa paisagem com grandes manchas de habitat remanescente intercaladas por clareiras relativamente pequenas. A segunda etapa é a <strong>consolidação</strong>, na qual as áreas abertas se expandem e se conectam, as propriedades se aglutinam por compra ou concentração fundiária, e a paisagem se transforma num mosaico dominado pela matriz antrópica com fragmentos residuais de vegetação nativa. A terceira etapa é a <strong>intensificação</strong>, na qual as áreas consolidadas recebem investimentos em mecanização, irrigação, correção do solo e culturas de alto rendimento (soja, milho, algodão), substituindo a pecuária extensiva por agricultura de precisão. A quarta etapa, quando ocorre, é a <strong>estabilização ou reversão parcial</strong>, na qual a legislação ambiental (Código Florestal), programas de restauração e mudanças de mercado (moratória da soja, certificações ambientais) promovem a regeneração de áreas marginais e a conformação de reservas legais e APPs.</p>
+<section id="regimes-de-distúrbio-e-heterogeneidade-espacial" class="level2" data-number="14.2">
+<h2 data-number="14.2" class="anchored" data-anchor-id="regimes-de-distúrbio-e-heterogeneidade-espacial"><span class="header-section-number">14.2</span> Regimes de distúrbio e heterogeneidade espacial</h2>
+<p>Além das forças motrizes socioeconômicas e institucionais, a dinâmica da paisagem é modulada por regimes de distúrbio, definidos como o padrão temporal e espacial de eventos que removem biomassa, alteram a estrutura da vegetação ou redefinem as condições abióticas de uma área <span class="citation" data-cites="turner2010">(<a href="../referencias.html#ref-turner2010" role="doc-biblioref">Turner, 2010</a>)</span>. O conceito de regime implica que os distúrbios não são eventos isolados, mas obedecem a frequências, intensidades, extensões e sazonalidades características de cada paisagem e bioma <span class="citation" data-cites="white1979">(<a href="../referencias.html#ref-white1979" role="doc-biblioref">White, 1979</a>)</span>. Uma floresta amazônica com regime de distúrbio dominado por queda de árvores individuais e inundações sazonais produz um mosaico de clareiras em diferentes estágios sucessionais, enquanto uma paisagem de cerrado submetida a regime de fogo recorrente (intervalos de 2 a 5 anos) mantém fitofisionomias abertas (campo limpo, campo sujo) em equilíbrio dinâmico com formações mais densas (cerradão) onde o fogo é menos frequente.</p>
+<p>O reconhecimento dos distúrbios como forçantes primárias da heterogeneidade espacial é uma contribuição central da ecologia da paisagem à compreensão da dinâmica de uso do solo. Turner <span class="citation" data-cites="turner2010">(<a href="../referencias.html#ref-turner2010" role="doc-biblioref">2010</a>)</span> demonstrou que a interação entre regime de distúrbio e extensão da paisagem determina se o sistema opera em regime de equilíbrio (distúrbios frequentes mas pequenos em relação à paisagem, de modo que a proporção de cada estágio sucessional permanece relativamente estável) ou em regime de não-equilíbrio (distúrbios raros mas extensos que alteram simultaneamente grande parte da paisagem, como incêndios florestais catastróficos ou tempestades tropicais).</p>
+<p>No contexto brasileiro, três categorias de distúrbio merecem atenção especial na modelagem da dinâmica da paisagem. O fogo, tanto natural (descargas elétricas no Cerrado) quanto antrópico (queimadas para manejo de pastagem e abertura de área), opera como agente seletivo que favorece espécies rebrotantes e tolerantes ao calor, mantém formações savânicas e, quando descontrolado, converte florestas em formações abertas irreversíveis, particularmente em bordas de fragmentos <span class="citation" data-cites="bowman2009">(<a href="../referencias.html#ref-bowman2009" role="doc-biblioref">Bowman et al., 2009</a>)</span>. Os eventos climáticos extremos (secas prolongadas, como a de 2015–2016 na Amazônia, e chuvas intensas concentradas) produzem mortalidade seletiva de árvores, deslizamentos de terra, erosão de margens fluviais e redefinição de feições geomorfológicas que alteram a cobertura do solo em escala de bacia hidrográfica. As perturbações antrópicas agudas (construção de barragens, implantação de infraestrutura linear como rodovias e linhas de transmissão, mineração a céu aberto) criam descontinuidades abruptas na paisagem que fragmentam habitats e redefinem padrões de drenagem e conectividade.</p>
+<p>A incorporação dos regimes de distúrbio à modelagem de mudanças de uso do solo exige que os modelos (discutidos adiante) sejam parametrizados não apenas com variáveis socioeconômicas e biofísicas estáticas, mas também com frequências e intensidades de distúrbio condicionadas ao clima e ao tipo de cobertura. Essa parametrização é particularmente desafiadora em cenários de mudanças climáticas, nos quais a frequência e a intensidade dos eventos extremos se alteram de forma não linear, modificando regimes de distúrbio historicamente estáveis e produzindo trajetórias de transformação da paisagem sem precedentes nos registros observacionais.</p>
+</section>
+<section id="o-ciclo-de-fronteira-agrícola" class="level2" data-number="14.3">
+<h2 data-number="14.3" class="anchored" data-anchor-id="o-ciclo-de-fronteira-agrícola"><span class="header-section-number">14.3</span> O ciclo de fronteira agrícola</h2>
+<p>Um padrão recorrente na dinâmica de uso do solo em regiões tropicais é o ciclo de fronteira agrícola, uma sequência típica de transformações da paisagem que se repete com variações regionais em diversas partes do mundo. No caso brasileiro, esse ciclo pode ser descrito em etapas que, embora apresentadas aqui de forma sequencial para fins didáticos, na prática se sobrepõem temporal e espacialmente.</p>
+<p>A primeira etapa é a abertura, na qual a vegetação nativa é removida, geralmente por corte e queima, para implantação de pastagem extensiva ou culturas de subsistência. Essa etapa é tipicamente realizada por pequenos produtores, posseiros ou projetos de colonização, e resulta numa paisagem com grandes manchas de habitat remanescente intercaladas por clareiras relativamente pequenas. A segunda etapa é a consolidação, na qual as áreas abertas se expandem e se conectam, as propriedades se aglutinam por compra ou concentração fundiária, e a paisagem se transforma num mosaico dominado pela matriz antrópica com fragmentos residuais de vegetação nativa. A terceira etapa é a intensificação, na qual as áreas consolidadas recebem investimentos em mecanização, irrigação, correção do solo e culturas de alto rendimento (soja, milho, algodão), substituindo a pecuária extensiva por agricultura de precisão. A quarta etapa, quando ocorre, é a estabilização ou reversão parcial, na qual a legislação ambiental (Código Florestal), programas de restauração e mudanças de mercado (moratória da soja, certificações ambientais) promovem a regeneração de áreas marginais e a conformação de reservas legais e APPs.</p>
 <p>Esse ciclo foi documentado de forma emblemática na Amazônia brasileira, onde o modelo clássico de “espinha de peixe” (desmatamento ao longo de estradas que se ramificam perpendicularmente a partir de rodovias principais) é visível em imagens de satélite e constitui um dos padrões de mudança de paisagem mais estudados do mundo. No Cerrado, o ciclo seguiu uma variante diferente, com conversão direta para agricultura mecanizada em áreas planas (chapadas), sem a fase intermediária de pecuária extensiva que caracterizou a Amazônia.</p>
 </section>
-<section id="transições-de-uso-do-solo-e-a-teoria-da-transição-florestal" class="level2" data-number="12.4">
-<h2 data-number="12.4" class="anchored" data-anchor-id="transições-de-uso-do-solo-e-a-teoria-da-transição-florestal"><span class="header-section-number">12.4</span> Transições de uso do solo e a teoria da transição florestal</h2>
-<p>A observação de que muitos países passaram por fases de desmatamento seguidas por fases de reflorestamento levou à formulação da <strong>teoria da transição florestal</strong> (<em>forest transition theory</em>), proposta por Alexander Mather na década de 1990. Segundo essa teoria, a relação entre desenvolvimento econômico e cobertura florestal segue uma curva em formato de U invertido. Nas fases iniciais de desenvolvimento, a cobertura florestal diminui à medida que as florestas são convertidas para agricultura e extração de madeira. Em algum ponto, a taxa de desmatamento desacelera e eventualmente se inverte, com a cobertura florestal começando a aumentar por regeneração espontânea de terras marginais abandonadas e por reflorestamento ativo.</p>
+<section id="transições-de-uso-do-solo-e-a-teoria-da-transição-florestal" class="level2" data-number="14.4">
+<h2 data-number="14.4" class="anchored" data-anchor-id="transições-de-uso-do-solo-e-a-teoria-da-transição-florestal"><span class="header-section-number">14.4</span> Transições de uso do solo e a teoria da transição florestal</h2>
+<p>A observação de que muitos países passaram por fases de desmatamento seguidas por fases de reflorestamento levou à formulação da teoria da transição florestal (<em>forest transition theory</em>), proposta por Alexander Mather na década de 1990. Segundo essa teoria, a relação entre desenvolvimento econômico e cobertura florestal segue uma curva em formato de U invertido. Nas fases iniciais de desenvolvimento, a cobertura florestal diminui à medida que as florestas são convertidas para agricultura e extração de madeira. Em algum ponto, a taxa de desmatamento desacelera e eventualmente se inverte, com a cobertura florestal começando a aumentar por regeneração espontânea de terras marginais abandonadas e por reflorestamento ativo.</p>
 <p>Compreender essa teoria é importante porque ela sugere que o desmatamento não é um processo irreversível e que, sob certas condições econômicas, tecnológicas e institucionais, as paisagens podem recuperar parte de sua cobertura florestal. Entretanto, a teoria tem limitações significativas. A floresta que retorna (floresta secundária ou plantação comercial) não é ecologicamente equivalente à floresta primária que foi removida, possuindo menor diversidade de espécies, menor estoque de carbono, estrutura simplificada e menor provisão de serviços ecossistêmicos. Além disso, a transição florestal observada em países europeus e no leste dos Estados Unidos ocorreu em contextos socioeconômicos muito diferentes dos da fronteira agrícola tropical contemporânea, e não há garantia de que o mesmo padrão se repetirá nos trópicos.</p>
 </section>
-<section id="modelagem-de-mudanças-de-uso-do-solo" class="level2" data-number="12.5">
-<h2 data-number="12.5" class="anchored" data-anchor-id="modelagem-de-mudanças-de-uso-do-solo"><span class="header-section-number">12.5</span> Modelagem de mudanças de uso do solo</h2>
-<p>Para projetar cenários futuros e avaliar o impacto potencial de políticas públicas, cientistas da paisagem desenvolveram <strong>modelos de mudança de uso do solo</strong> (<em>land use change models</em>) que simulam computacionalmente as trajetórias de conversão da paisagem ao longo do tempo. Esses modelos variam enormemente em complexidade, escala e abordagem, mas compartilham uma estrutura lógica comum sintetizada na <a href="#fig-estrutura-modelo-lulc" class="quarto-xref">Figura&nbsp;<span>12.2</span></a>.</p>
+<section id="modelagem-de-mudanças-de-uso-do-solo" class="level2" data-number="14.5">
+<h2 data-number="14.5" class="anchored" data-anchor-id="modelagem-de-mudanças-de-uso-do-solo"><span class="header-section-number">14.5</span> Modelagem de mudanças de uso do solo</h2>
+<p>Para projetar cenários futuros e avaliar o impacto potencial de políticas públicas, cientistas da paisagem desenvolveram modelos de mudança de uso do solo (<em>land use change models</em>) que simulam computacionalmente as trajetórias de conversão da paisagem ao longo do tempo. Esses modelos variam enormemente em complexidade, escala e abordagem, mas compartilham uma estrutura lógica comum sintetizada na <a href="#fig-estrutura-modelo-lulc" class="quarto-xref">Figura&nbsp;<span>14.2</span></a>.</p>
+<div class="cell" data-fig-width="8.5" data-layout-align="center">
+<div class="cell-output-display">
 <div id="fig-estrutura-modelo-lulc" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-estrutura-modelo-lulc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell" data-fig-width="8.5" data-layout-align="center">
-<div class="cell-output-display">
 <div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-    A["Mapa de uso&lt;br&gt;do solo&lt;br&gt;(Tempo 1)"] --&gt; B["Modelo de&lt;br&gt;mudança"]
-    C["Variáveis&lt;br&gt;explicativas&lt;br&gt;(relevo, solos,&lt;br&gt;distância a estradas,&lt;br&gt;mercados)"] --&gt; B
-    D["Taxas e regras&lt;br&gt;de transição&lt;br&gt;(calibradas)"] --&gt; B
-    B --&gt; E["Mapa de uso&lt;br&gt;do solo&lt;br&gt;(Tempo 2&lt;br&gt;simulado)"]
-    E --&gt; F["Validação com&lt;br&gt;mapa real&lt;br&gt;(Tempo 2)"]
-
-    style B fill:#2E7D32,color:#fff
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
+<svg width="816" height="480" viewbox="0.00 0.00 522.37 230.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 226)">
+<!-- A -->
+<g id="node1" class="node">
+<title>A</title>
+<path fill="#bbdefb" stroke="#1565c0" stroke-width="0.8" d="M98.67,-222C98.67,-222 29.04,-222 29.04,-222 23.04,-222 17.04,-216 17.04,-210 17.04,-210 17.04,-180 17.04,-180 17.04,-174 23.04,-168 29.04,-168 29.04,-168 98.67,-168 98.67,-168 104.67,-168 110.67,-174 110.67,-180 110.67,-180 110.67,-210 110.67,-210 110.67,-216 104.67,-222 98.67,-222"></path>
+<text text-anchor="middle" x="63.86" y="-204" font-family="Helvetica,sans-Serif" font-size="10.00">Mapa de uso</text>
+<text text-anchor="middle" x="63.86" y="-192" font-family="Helvetica,sans-Serif" font-size="10.00">do solo</text>
+<text text-anchor="middle" x="63.86" y="-180" font-family="Helvetica,sans-Serif" font-size="10.00">(Tempo 1)</text>
+</g>
+<!-- B -->
+<g id="node4" class="node">
+<title>B</title>
+<path fill="#2e7d32" stroke="#1b5e20" stroke-width="1.5" d="M234.26,-132C234.26,-132 175.86,-132 175.86,-132 169.86,-132 163.86,-126 163.86,-120 163.86,-120 163.86,-102 163.86,-102 163.86,-96 169.86,-90 175.86,-90 175.86,-90 234.26,-90 234.26,-90 240.26,-90 246.26,-96 246.26,-102 246.26,-102 246.26,-120 246.26,-120 246.26,-126 240.26,-132 234.26,-132"></path>
+<text text-anchor="middle" x="205.06" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">Modelo de</text>
+<text text-anchor="middle" x="205.06" y="-102" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">mudança</text>
+</g>
+<!-- A&#45;&gt;B -->
+<g id="edge1" class="edge">
+<title>A-&gt;B</title>
+<path fill="none" stroke="#555555" d="M110.98,-168.87C116.64,-165.58 122.32,-162.24 127.71,-159 139.05,-152.2 151.21,-144.66 162.42,-137.61"></path>
+<polygon fill="#555555" stroke="#555555" points="164.59,-140.39 171.18,-132.09 160.85,-134.47 164.59,-140.39"></polygon>
+</g>
+<!-- C -->
+<g id="node2" class="node">
+<title>C</title>
+<path fill="#ffe0b2" stroke="#e65100" stroke-width="0.8" d="M115.57,-150C115.57,-150 12.14,-150 12.14,-150 6.14,-150 0.14,-144 0.14,-138 0.14,-138 0.14,-84 0.14,-84 0.14,-78 6.14,-72 12.14,-72 12.14,-72 115.57,-72 115.57,-72 121.57,-72 127.57,-78 127.57,-84 127.57,-84 127.57,-138 127.57,-138 127.57,-144 121.57,-150 115.57,-150"></path>
+<text text-anchor="middle" x="63.86" y="-132" font-family="Helvetica,sans-Serif" font-size="10.00">Variáveis</text>
+<text text-anchor="middle" x="63.86" y="-120" font-family="Helvetica,sans-Serif" font-size="10.00">explicativas</text>
+<text text-anchor="middle" x="63.86" y="-108" font-family="Helvetica,sans-Serif" font-size="10.00">(relevo, solos,</text>
+<text text-anchor="middle" x="63.86" y="-96" font-family="Helvetica,sans-Serif" font-size="10.00">distância a estradas,</text>
+<text text-anchor="middle" x="63.86" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">mercados)</text>
+</g>
+<!-- C&#45;&gt;B -->
+<g id="edge2" class="edge">
+<title>C-&gt;B</title>
+<path fill="none" stroke="#555555" d="M127.94,-111C136.44,-111 145.07,-111 153.32,-111"></path>
+<polygon fill="#555555" stroke="#555555" points="153.52,-114.5 163.52,-111 153.52,-107.5 153.52,-114.5"></polygon>
+</g>
+<!-- D -->
+<g id="node3" class="node">
+<title>D</title>
+<path fill="#e1bee7" stroke="#6a1b9a" stroke-width="0.8" d="M103.05,-54C103.05,-54 24.66,-54 24.66,-54 18.66,-54 12.66,-48 12.66,-42 12.66,-42 12.66,-12 12.66,-12 12.66,-6 18.66,0 24.66,0 24.66,0 103.05,0 103.05,0 109.05,0 115.05,-6 115.05,-12 115.05,-12 115.05,-42 115.05,-42 115.05,-48 109.05,-54 103.05,-54"></path>
+<text text-anchor="middle" x="63.86" y="-36" font-family="Helvetica,sans-Serif" font-size="10.00">Taxas e regras</text>
+<text text-anchor="middle" x="63.86" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">de transição</text>
+<text text-anchor="middle" x="63.86" y="-12" font-family="Helvetica,sans-Serif" font-size="10.00">(calibradas)</text>
+</g>
+<!-- D&#45;&gt;B -->
+<g id="edge3" class="edge">
+<title>D-&gt;B</title>
+<path fill="none" stroke="#555555" d="M112.68,-54.12C117.77,-57.09 122.86,-60.09 127.71,-63 139.05,-69.8 151.21,-77.34 162.42,-84.39"></path>
+<polygon fill="#555555" stroke="#555555" points="160.85,-87.53 171.18,-89.91 164.59,-81.61 160.85,-87.53"></polygon>
+</g>
+<!-- E -->
+<g id="node5" class="node">
+<title>E</title>
+<path fill="#c8e6c9" stroke="#2e7d32" stroke-width="0.8" d="M364.14,-144C364.14,-144 294.5,-144 294.5,-144 288.5,-144 282.5,-138 282.5,-132 282.5,-132 282.5,-90 282.5,-90 282.5,-84 288.5,-78 294.5,-78 294.5,-78 364.14,-78 364.14,-78 370.14,-78 376.14,-84 376.14,-90 376.14,-90 376.14,-132 376.14,-132 376.14,-138 370.14,-144 364.14,-144"></path>
+<text text-anchor="middle" x="329.32" y="-126" font-family="Helvetica,sans-Serif" font-size="10.00">Mapa de uso</text>
+<text text-anchor="middle" x="329.32" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">do solo</text>
+<text text-anchor="middle" x="329.32" y="-102" font-family="Helvetica,sans-Serif" font-size="10.00">(Tempo 2</text>
+<text text-anchor="middle" x="329.32" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00">simulado)</text>
+</g>
+<!-- B&#45;&gt;E -->
+<g id="edge4" class="edge">
+<title>B-&gt;E</title>
+<path fill="none" stroke="#555555" d="M246.43,-111C254.73,-111 263.61,-111 272.35,-111"></path>
+<polygon fill="#555555" stroke="#555555" points="272.49,-114.5 282.49,-111 272.49,-107.5 272.49,-114.5"></polygon>
+</g>
+<!-- F -->
+<g id="node6" class="node">
+<title>F</title>
+<path fill="#fff9c4" stroke="#f57f17" stroke-width="0.8" d="M502.44,-138C502.44,-138 424.16,-138 424.16,-138 418.16,-138 412.16,-132 412.16,-126 412.16,-126 412.16,-96 412.16,-96 412.16,-90 418.16,-84 424.16,-84 424.16,-84 502.44,-84 502.44,-84 508.44,-84 514.44,-90 514.44,-96 514.44,-96 514.44,-126 514.44,-126 514.44,-132 508.44,-138 502.44,-138"></path>
+<text text-anchor="middle" x="463.3" y="-120" font-family="Helvetica,sans-Serif" font-size="10.00">Validação com</text>
+<text text-anchor="middle" x="463.3" y="-108" font-family="Helvetica,sans-Serif" font-size="10.00">mapa real</text>
+<text text-anchor="middle" x="463.3" y="-96" font-family="Helvetica,sans-Serif" font-size="10.00">(Tempo 2)</text>
+</g>
+<!-- E&#45;&gt;F -->
+<g id="edge5" class="edge">
+<title>E-&gt;F</title>
+<path fill="none" stroke="#555555" d="M376.48,-111C384.62,-111 393.2,-111 401.67,-111"></path>
+<polygon fill="#555555" stroke="#555555" points="401.89,-114.5 411.89,-111 401.89,-107.5 401.89,-114.5"></polygon>
+</g>
+</g>
+</svg>
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-estrutura-modelo-lulc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;12.2: Estrutura lógica geral de um modelo de mudança de uso do solo, integrando dados espaciais, variáveis explicativas e regras de transição para projetar cenários futuros.
+Figura&nbsp;14.2: Estrutura lógica geral de um modelo de mudança de uso do solo, integrando dados espaciais, variáveis explicativas e regras de transição para projetar cenários futuros.
 </figcaption>
 </figure>
 </div>
-<p>A <a href="#fig-estrutura-modelo-lulc" class="quarto-xref">Figura&nbsp;<span>12.2</span></a> permite visualizar a lógica de um modelo de mudança de uso do solo como uma “máquina de previsão”. O modelo recebe como entradas um mapa de uso do solo em um momento inicial (Tempo 1), um conjunto de variáveis que explicam onde as mudanças têm maior probabilidade de ocorrer (distância a estradas, declividade, tipo de solo, proximidade a áreas já desmatadas) e um conjunto de regras ou taxas de transição que definem quanto de cada classe será convertida e para qual outra classe. Processando essas informações, o modelo gera um mapa simulado para uma data futura (Tempo 2). A qualidade do modelo é avaliada comparando o mapa simulado com o mapa real dessa data futura, quando disponível.</p>
-<p>Entre os modelos mais utilizados em paisagens brasileiras, destacam-se três famílias. Os <strong>modelos baseados em autômatos celulares</strong>, como o Dinamica EGO <span class="citation" data-cites="soares-filho2006">(<a href="../referencias.html#ref-soares-filho2006" role="doc-biblioref">Soares-Filho et al., 2006</a>)</span>, discretizam o território em células (pixels) e aplicam regras de transição que dependem do estado atual de cada célula e de sua vizinhança. São particularmente úteis para simular a expansão espacial do desmatamento, pois capturam o efeito de contágio (áreas próximas a desmatamento recente têm maior probabilidade de serem desmatadas). Os <strong>modelos baseados em agentes</strong> (<em>agent-based models</em>) simulam as decisões de atores individuais (agricultores, pecuaristas, assentados) que interagem com o ambiente e entre si, permitindo representar heterogeneidade socioeconômica e comportamental. Os <strong>modelos estatísticos de regressão</strong> utilizam regressão logística, redes neurais ou machine learning para estimar a probabilidade de transição de cada pixel em função de variáveis explanatórias, sem modelar explicitamente os processos decisórios.</p>
-<p>Independentemente da abordagem, todos os modelos de mudança de uso do solo enfrentam limitações fundamentais. Eles projetam o futuro com base no passado, assumindo que as relações entre variáveis se mantêm. Mudanças abruptas em políticas públicas (nova legislação ambiental), mercados (colapso de preços de commodities) ou tecnologia (novas cultivares, energia solar em áreas rurais) podem invalidar as projeções. Por isso, os modelos são mais úteis para explorar cenários contrastantes (“o que aconteceria se o desmatamento ilegal fosse eliminado?” vs.&nbsp;“o que aconteceria se a fiscalização fosse reduzida?”) do que para prever o futuro com precisão determinística. A modelagem de cenários é aprofundada no <a href="20-modelagem-cenarios.html" class="quarto-xref"><span>Capítulo 20</span></a>.</p>
+</div>
+</div>
+<p>A <a href="#fig-estrutura-modelo-lulc" class="quarto-xref">Figura&nbsp;<span>14.2</span></a> permite visualizar a lógica de um modelo de mudança de uso do solo como uma “máquina de previsão”. O modelo recebe como entradas um mapa de uso do solo em um momento inicial (Tempo 1), um conjunto de variáveis que explicam onde as mudanças têm maior probabilidade de ocorrer (distância a estradas, declividade, tipo de solo, proximidade a áreas já desmatadas) e um conjunto de regras ou taxas de transição que definem quanto de cada classe será convertida e para qual outra classe. Processando essas informações, o modelo gera um mapa simulado para uma data futura (Tempo 2). A qualidade do modelo é avaliada comparando o mapa simulado com o mapa real dessa data futura, quando disponível.</p>
+<p>Entre os modelos mais utilizados em paisagens brasileiras, destacam-se três famílias. Os modelos baseados em autômatos celulares, como o Dinamica EGO <span class="citation" data-cites="soares-filho2006">(<a href="../referencias.html#ref-soares-filho2006" role="doc-biblioref">Soares-Filho et al., 2006</a>)</span>, discretizam o território em células (pixels) e aplicam regras de transição que dependem do estado atual de cada célula e de sua vizinhança. São particularmente úteis para simular a expansão espacial do desmatamento, pois capturam o efeito de contágio (áreas próximas a desmatamento recente têm maior probabilidade de serem desmatadas). Os modelos baseados em agentes (<em>agent-based models</em>) simulam as decisões de atores individuais (agricultores, pecuaristas, assentados) que interagem com o ambiente e entre si, permitindo representar heterogeneidade socioeconômica e comportamental. Os modelos estatísticos de regressão utilizam regressão logística, redes neurais ou machine learning para estimar a probabilidade de transição de cada pixel em função de variáveis explanatórias, sem modelar explicitamente os processos decisórios.</p>
+<p>Independentemente da abordagem, todos os modelos de mudança de uso do solo enfrentam limitações fundamentais. Eles projetam o futuro com base no passado, assumindo que as relações entre variáveis se mantêm. Mudanças abruptas em políticas públicas (nova legislação ambiental), mercados (colapso de preços de commodities) ou tecnologia (novas cultivares, energia solar em áreas rurais) podem invalidar as projeções. Por isso, os modelos são mais úteis para explorar cenários contrastantes (“o que aconteceria se o desmatamento ilegal fosse eliminado?” vs.&nbsp;“o que aconteceria se a fiscalização fosse reduzida?”) do que para prever o futuro com precisão determinística. A modelagem de cenários é aprofundada no <a href="20-modelagem-cenarios.html" class="quarto-xref"><span>Capítulo 22</span></a>.</p>
 </section>
-<section id="intensificação-vs.-expansão" class="level2" data-number="12.6">
-<h2 data-number="12.6" class="anchored" data-anchor-id="intensificação-vs.-expansão"><span class="header-section-number">12.6</span> Intensificação vs.&nbsp;expansão</h2>
-<p>Uma questão central na dinâmica contemporânea do uso do solo é se a crescente demanda por alimentos será atendida por <strong>intensificação</strong> (aumento de produtividade nas áreas já cultivadas) ou por <strong>expansão</strong> (conversão de novas áreas de vegetação nativa). A intensificação agrícola, quando bem conduzida, permite produzir mais por unidade de área (mais quilogramas de grão por hectare) sem necessidade de desmatar novas áreas. Tecnologias como irrigação de precisão, plantio direto, integração lavoura-pecuária-floresta (ILPF), melhoramento genético e agricultura de precisão possibilitaram ganhos expressivos de produtividade no Brasil, especialmente em culturas como soja e milho, onde a produtividade por hectare mais que dobrou nas últimas três décadas.</p>
-<p>Entretanto, a relação entre intensificação e conservação não é linear nem automática. O <strong>paradoxo de Jevons</strong> (originalmente formulado para energia, mas aplicável à terra) sugere que o aumento de eficiência pode, paradoxalmente, estimular maior consumo total. Se a intensificação torna a agricultura mais lucrativa, ela pode atrair mais capital e trabalho para o setor, incentivando a expansão para novas áreas em vez de reduzir a pressão sobre as remanescentes. Evidências empíricas mostram que a intensificação agrícola no Cerrado brasileiro foi acompanhada, e não substituída, pela expansão da fronteira agrícola, especialmente nas regiões do Matopiba e do arco do desmatamento amazônico.</p>
+<section id="intensificação-vs.-expansão" class="level2" data-number="14.6">
+<h2 data-number="14.6" class="anchored" data-anchor-id="intensificação-vs.-expansão"><span class="header-section-number">14.6</span> Intensificação vs.&nbsp;expansão</h2>
+<p>Uma questão central na dinâmica contemporânea do uso do solo é se a crescente demanda por alimentos será atendida por intensificação (aumento de produtividade nas áreas já cultivadas) ou por expansão (conversão de novas áreas de vegetação nativa). A intensificação agrícola, quando bem conduzida, permite produzir mais por unidade de área (mais quilogramas de grão por hectare) sem necessidade de desmatar novas áreas. Tecnologias como irrigação de precisão, plantio direto, integração lavoura-pecuária-floresta (ILPF), melhoramento genético e agricultura de precisão possibilitaram ganhos expressivos de produtividade no Brasil, especialmente em culturas como soja e milho, onde a produtividade por hectare mais que dobrou nas últimas três décadas.</p>
+<p>Entretanto, a relação entre intensificação e conservação não é linear nem automática. O paradoxo de Jevons (originalmente formulado para energia, mas aplicável à terra) sugere que o aumento de eficiência pode, paradoxalmente, estimular maior consumo total. Se a intensificação torna a agricultura mais lucrativa, ela pode atrair mais capital e trabalho para o setor, incentivando a expansão para novas áreas em vez de reduzir a pressão sobre as remanescentes. Evidências empíricas mostram que a intensificação agrícola no Cerrado brasileiro foi acompanhada, e não substituída, pela expansão da fronteira agrícola, especialmente nas regiões do Matopiba e do arco do desmatamento amazônico.</p>
 <p>A implicação para a Ciência da Paisagem é que a dinâmica do uso do solo não pode ser compreendida apenas em termos biofísicos (aptidão do solo, declividade, clima), mas exige a integração com variáveis socioeconômicas (preços, custos de transporte, estrutura fundiária, acesso a crédito) e institucionais (legislação ambiental, fiscalização, regularização fundiária, mercado de carbono). Essa integração multidimensional é o desafio central da modelagem de mudanças de uso do solo e do planejamento territorial, temas aprofundados nos capítulos subsequentes.</p>
 </section>
-<section id="aplicação-brasileira-e-o-papel-do-monitoramento" class="level2" data-number="12.7">
-<h2 data-number="12.7" class="anchored" data-anchor-id="aplicação-brasileira-e-o-papel-do-monitoramento"><span class="header-section-number">12.7</span> Aplicação brasileira e o papel do monitoramento</h2>
-<p>O Brasil desenvolveu um dos sistemas mais avançados do mundo para monitoramento de mudanças de uso e cobertura do solo. O sistema <strong>PRODES</strong> (Projeto de Monitoramento do Desmatamento na Amazônia Legal por Satélite), operado pelo INPE desde 1988, fornece estimativas anuais da taxa de desmatamento por corte raso na Amazônia Legal com base em imagens Landsat. O sistema <strong>DETER</strong> (Detecção de Desmatamento em Tempo Real) complementa o PRODES com alertas quase diários usando imagens de menor resolução espacial mas maior resolução temporal, permitindo ações de fiscalização rápida. O projeto <strong>MapBiomas</strong>, já mencionado no <a href="11-deteccao-mudancas.html" class="quarto-xref"><span>Capítulo 11</span></a>, produz mapas anuais de uso e cobertura para todo o território brasileiro desde 1985.</p>
+<section id="aplicação-brasileira-e-o-papel-do-monitoramento" class="level2" data-number="14.7">
+<h2 data-number="14.7" class="anchored" data-anchor-id="aplicação-brasileira-e-o-papel-do-monitoramento"><span class="header-section-number">14.7</span> Aplicação brasileira e o papel do monitoramento</h2>
+<p>O Brasil desenvolveu um dos sistemas mais avançados do mundo para monitoramento de mudanças de uso e cobertura do solo. O sistema PRODES (Projeto de Monitoramento do Desmatamento na Amazônia Legal por Satélite), operado pelo INPE desde 1988, fornece estimativas anuais da taxa de desmatamento por corte raso na Amazônia Legal com base em imagens Landsat. O sistema DETER (Detecção de Desmatamento em Tempo Real) complementa o PRODES com alertas quase diários usando imagens de menor resolução espacial mas maior resolução temporal, permitindo ações de fiscalização rápida. O projeto MapBiomas, já mencionado no <a href="11-deteccao-mudancas.html" class="quarto-xref"><span>Capítulo 13</span></a>, produz mapas anuais de uso e cobertura para todo o território brasileiro desde 1985.</p>
 <p>Esses sistemas de monitoramento transformaram a dinâmica do uso do solo de um processo difuso e pouco documentado em um fenômeno espacialmente explícito, temporalmente resolvido e publicamente acessível. A disponibilidade de dados de desmatamento em tempo quase real mudou fundamentalmente a dinâmica política da conservação, permitindo que a sociedade, a mídia e os órgãos de fiscalização acompanhem as tendências de conversão de vegetação nativa com transparência sem precedentes. A correlação entre implementação desses sistemas e redução nas taxas de desmatamento na Amazônia (queda de 78% entre 2004 e 2012, parcialmente atribuída à combinação de monitoramento, fiscalização e moratória da soja) ilustra como a informação geográfica pode influenciar a dinâmica real do uso do solo, fechando o ciclo entre diagnóstico e gestão territorial.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -507,16 +682,26 @@ Figura&nbsp;12.2: Estrutura lógica geral de um modelo de mudança de uso do sol
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>A plataforma MapBiomas (mapbiomas.org) permite explorar interativamente as mudanças de uso e cobertura do solo para qualquer município brasileiro desde 1985. Experimente selecionar seu município e observar as trajetórias de mudança ao longo de quatro décadas. O módulo “Transições” permite visualizar matrizes de transição entre quaisquer dois anos, aplicando os conceitos discutidos no <a href="11-deteccao-mudancas.html" class="quarto-xref"><span>Capítulo 11</span></a>.</p>
+<p>A plataforma MapBiomas (mapbiomas.org) permite explorar interativamente as mudanças de uso e cobertura do solo para qualquer município brasileiro desde 1985. Experimente selecionar seu município e observar as trajetórias de mudança ao longo de quatro décadas. O módulo “Transições” permite visualizar matrizes de transição entre quaisquer dois anos, aplicando os conceitos discutidos no <a href="11-deteccao-mudancas.html" class="quarto-xref"><span>Capítulo 13</span></a>.</p>
 </div>
 </div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-bowman2009" class="csl-entry" role="listitem">
+Bowman, D. M. J. S., Balch, J. K., Artaxo, P., Bond, W. J., Carlson, J. M., Cochrane, M. A., D’Antonio, C. M., DeFries, R. S., Doyle, J. C., Harrison, S. P., Johnston, F. H., Keeley, J. E., Krawchuk, M. A., Kull, C. A., Marston, J. B., Moritz, M. A., Prentice, I. C., Roos, C. I., Scott, A. C., … Pyne, S. J. (2009). Fire in the Earth system. <em>Science</em>, <em>324</em>(5926), 481–484. <a href="https://doi.org/10.1126/science.1163886">https://doi.org/10.1126/science.1163886</a>
+</div>
 <div id="ref-soares-filho2006" class="csl-entry" role="listitem">
 Soares-Filho, B. S., Nepstad, D. C., Curran, L. M., Cerqueira, G. C., Garcia, R. A., Ramos, C. A., Voll, E., McDonald, A., Lefebvre, P., &amp; Schlesinger, P. (2006). Modelling conservation in the Amazon basin. <em>Nature</em>, <em>440</em>, 520–523. <a href="https://doi.org/10.1038/nature04389">https://doi.org/10.1038/nature04389</a>
 </div>
+<div id="ref-turner2010" class="csl-entry" role="listitem">
+Turner, M. G. (2010). Disturbance and landscape dynamics in a changing world. <em>Ecology</em>, <em>91</em>(10), 2833–2849. <a href="https://doi.org/10.1890/10-0097.1">https://doi.org/10.1890/10-0097.1</a>
 </div>
+<div id="ref-white1979" class="csl-entry" role="listitem">
+White, P. S. (1979). Pattern, process, and natural disturbance in vegetation. <em>The Botanical Review</em>, <em>45</em>(3), 229–299. <a href="https://doi.org/10.1007/BF02860857">https://doi.org/10.1007/BF02860857</a>
+</div>
+</div>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -922,13 +1107,13 @@ Soares-Filho, B. S., Nepstad, D. C., Curran, L. M., Cerqueira, G. C., Garcia, R.
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../capitulos/11-deteccao-mudancas.html" class="pagination-link" aria-label="Detecção de Mudanças na Paisagem">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Detecção de Mudanças na Paisagem</span></span>
+      <a href="../capitulos/11-deteccao-mudancas.html" class="pagination-link" aria-label="Paisagens em transformação">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Paisagens em transformação</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../capitulos/13-processos-hidrologicos.html" class="pagination-link" aria-label="Processos Hidrológicos na Paisagem">
-        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Processos Hidrológicos na Paisagem</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../capitulos/13-processos-hidrologicos.html" class="pagination-link" aria-label="A água como protagonista invisível">
+        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">A água como protagonista invisível</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

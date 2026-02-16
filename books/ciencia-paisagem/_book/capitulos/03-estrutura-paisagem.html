@@ -8,7 +8,7 @@
 
 <meta name="description" content="Livro-texto sobre Ciência da Paisagem com ênfase em análise da paisagem, integrando ecologia da paisagem, métricas espaciais, sensoriamento remoto, geoprocessamento e planejamento territorial para gestão sustentável de paisagens tropicais.">
 
-<title>3&nbsp; Estrutura da Paisagem – Ciência da Paisagem</title>
+<title>4&nbsp; O modelo mancha-corredor-matriz – Ciência da Paisagem</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -92,9 +92,6 @@ div.csl-indent {
     "search-label": "Procurar"
   }
 }</script>
-<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -137,7 +134,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/01-introducao.html">Parte I — Fundamentos da Ciência da Paisagem</a></li><li class="breadcrumb-item"><a href="../capitulos/03-estrutura-paisagem.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Estrutura da Paisagem</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/01-introducao.html">Parte I — Fundamentos da Ciência da Paisagem</a></li><li class="breadcrumb-item"><a href="../capitulos/03-estrutura-paisagem.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">O modelo mancha-corredor-matriz</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
@@ -197,13 +194,13 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bem-vindo</span></a>
+ <span class="menu-text">Sobre este livro</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../prefacio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Prefácio</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">prefacio.html</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -218,31 +215,31 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/01-introducao.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução à Ciência da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">O que é Ciência da Paisagem?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/02-ecologia-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Conceitos e Abordagens da Ecologia da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Ecologia da Paisagem como disciplina</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/03-estrutura-paisagem.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Estrutura da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">O modelo mancha-corredor-matriz</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/04-escalas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Escalas Espaço-temporais</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">O problema da escala</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/05-percepcao-representacao.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Percepção e Representação da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Paisagem percebida e paisagem analisada</span></span></a>
   </div>
 </li>
       </ul>
@@ -259,37 +256,37 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/06-sensoriamento-remoto.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Sensoriamento Remoto Aplicado à Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Fundamentos do sensoriamento remoto</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/07-sig-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Sistemas de Informação Geográfica para Análise da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">O papel do SIG na análise da paisagem</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/08-uso-cobertura.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Classificação do Uso e Cobertura do Solo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Uso vs.&nbsp;cobertura</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/09-metricas-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Métricas da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Por que quantificar a paisagem?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/10-fragmentacao-conectividade.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Fragmentação e Conectividade</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Fragmentação de habitat</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/11-deteccao-mudancas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Detecção de Mudanças na Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Paisagens em transformação</span></span></a>
   </div>
 </li>
       </ul>
@@ -306,31 +303,31 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/12-dinamica-uso-solo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Dinâmica do Uso e Cobertura do Solo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Por que a paisagem muda?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/13-processos-hidrologicos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Processos Hidrológicos na Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">A água como protagonista invisível</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/14-servicos-ecossistemicos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Serviços Ecossistêmicos na Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">O que a natureza faz por nós?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/15-biodiversidade-heterogeneidade.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Biodiversidade e Heterogeneidade da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">A paisagem vista pelos organismos</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/16-mudancas-climaticas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Mudanças Climáticas e Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Um planeta mais quente e paisagens em movimento</span></span></a>
   </div>
 </li>
       </ul>
@@ -347,31 +344,31 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/17-planejamento-paisagem.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Planejamento da Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Planejar para quê?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/18-restauracao-ecologica.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Restauração Ecológica na Paisagem</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">O que significa restaurar?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/19-corredores-areas-protegidas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Corredores Ecológicos e Áreas Protegidas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Ilhas verdes em um mar de atividade humana</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/20-modelagem-cenarios.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Modelagem de Cenários Paisagísticos</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">E se…?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/21-projeto-integrador.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Projeto Integrador</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Unindo todas as peças</span></span></a>
   </div>
 </li>
       </ul>
@@ -379,7 +376,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../referencias.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Referências</span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">referencias.html</span></span></a>
   </div>
 </li>
     </ul>
@@ -392,22 +389,24 @@ window.Quarto = {
     <h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#o-modelo-mancha-corredor-matriz" id="toc-o-modelo-mancha-corredor-matriz" class="nav-link active" data-scroll-target="#o-modelo-mancha-corredor-matriz"><span class="header-section-number">3.1</span> O modelo mancha-corredor-matriz</a></li>
-  <li><a href="#manchas" id="toc-manchas" class="nav-link" data-scroll-target="#manchas"><span class="header-section-number">3.2</span> Manchas</a></li>
-  <li><a href="#corredores" id="toc-corredores" class="nav-link" data-scroll-target="#corredores"><span class="header-section-number">3.3</span> Corredores</a></li>
-  <li><a href="#matriz" id="toc-matriz" class="nav-link" data-scroll-target="#matriz"><span class="header-section-number">3.4</span> Matriz</a></li>
-  <li><a href="#composição-e-configuração" id="toc-composição-e-configuração" class="nav-link" data-scroll-target="#composição-e-configuração"><span class="header-section-number">3.5</span> Composição e configuração</a></li>
-  <li><a href="#heterogeneidade" id="toc-heterogeneidade" class="nav-link" data-scroll-target="#heterogeneidade"><span class="header-section-number">3.6</span> Heterogeneidade</a></li>
-  <li><a href="#estrutura-em-paisagens-tropicais-brasileiras" id="toc-estrutura-em-paisagens-tropicais-brasileiras" class="nav-link" data-scroll-target="#estrutura-em-paisagens-tropicais-brasileiras"><span class="header-section-number">3.7</span> Estrutura em paisagens tropicais brasileiras</a></li>
+  <li><a href="#sec-estrutura-paisagem" id="toc-sec-estrutura-paisagem" class="nav-link active" data-scroll-target="#sec-estrutura-paisagem"><span class="header-section-number">5</span> Estrutura da Paisagem</a>
+  <ul class="collapse">
+  <li><a href="#manchas" id="toc-manchas" class="nav-link" data-scroll-target="#manchas"><span class="header-section-number">5.1</span> Manchas</a></li>
+  <li><a href="#corredores" id="toc-corredores" class="nav-link" data-scroll-target="#corredores"><span class="header-section-number">5.2</span> Corredores</a></li>
+  <li><a href="#matriz" id="toc-matriz" class="nav-link" data-scroll-target="#matriz"><span class="header-section-number">5.3</span> Matriz</a></li>
+  <li><a href="#composição-e-configuração" id="toc-composição-e-configuração" class="nav-link" data-scroll-target="#composição-e-configuração"><span class="header-section-number">5.4</span> Composição e configuração</a></li>
+  <li><a href="#heterogeneidade" id="toc-heterogeneidade" class="nav-link" data-scroll-target="#heterogeneidade"><span class="header-section-number">5.5</span> Heterogeneidade</a></li>
+  <li><a href="#estrutura-em-paisagens-tropicais-brasileiras" id="toc-estrutura-em-paisagens-tropicais-brasileiras" class="nav-link" data-scroll-target="#estrutura-em-paisagens-tropicais-brasileiras"><span class="header-section-number">5.6</span> Estrutura em paisagens tropicais brasileiras</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ldvsantos/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/01-introducao.html">Parte I — Fundamentos da Ciência da Paisagem</a></li><li class="breadcrumb-item"><a href="../capitulos/03-estrutura-paisagem.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Estrutura da Paisagem</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/01-introducao.html">Parte I — Fundamentos da Ciência da Paisagem</a></li><li class="breadcrumb-item"><a href="../capitulos/03-estrutura-paisagem.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">O modelo mancha-corredor-matriz</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-estrutura-paisagem" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Estrutura da Paisagem</span></span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">O modelo mancha-corredor-matriz</span></h1>
 </div>
 
 
@@ -424,52 +423,84 @@ window.Quarto = {
 </header>
 
 
-<section id="o-modelo-mancha-corredor-matriz" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="o-modelo-mancha-corredor-matriz"><span class="header-section-number">3.1</span> O modelo mancha-corredor-matriz</h2>
-<p>A estrutura da paisagem é descrita pelo modelo <strong>mancha-corredor-matriz</strong> (<em>patch-corridor-matrix model</em>), proposto por Forman e Godron <span class="citation" data-cites="forman1986">(<a href="../referencias.html#ref-forman1986" role="doc-biblioref">1986</a>)</span> e refinado por Forman <span class="citation" data-cites="forman1995">(<a href="../referencias.html#ref-forman1995" role="doc-biblioref">1995</a>)</span>. Esse modelo decompõe qualquer paisagem em três tipos fundamentais de elementos espaciais, cuja composição e configuração determinam as propriedades ecológicas do mosaico. Apesar de sua aparente simplicidade, o modelo é suficientemente flexível para descrever paisagens tão distintas quanto mosaicos agrícolas europeus, matas fragmentadas da Mata Atlântica e savanas do Cerrado, e permanece como o arcabouço mais utilizado na ecologia da paisagem aplicada.</p>
-<p>A <strong>mancha</strong> (<em>patch</em>) é uma área relativamente homogênea que difere do seu entorno. Um fragmento florestal imerso numa matriz agrícola, um lago circundado por pastagem ou um afloramento rochoso em meio à Caatinga são exemplos de manchas. O tamanho, a forma e o grau de isolamento de cada mancha determinam sua capacidade de sustentar populações viáveis e de contribuir para processos ecológicos regionais. O <strong>corredor</strong> (<em>corridor</em>) é um elemento linear ou estreito que difere da matriz em ambos os lados. Rios com mata ciliar, estradas, sebes, faixas de vegetação ripária e linhas de transmissão de energia constituem corredores, que podem funcionar como condutos, filtros ou barreiras para o deslocamento de organismos e a propagação de distúrbios. A <strong>matriz</strong> (<em>matrix</em>) é o elemento dominante e mais conectado da paisagem, funcionando como o “fundo” contra o qual manchas e corredores se distinguem. A <a href="#fig-mcm-modelo" class="quarto-xref">Figura&nbsp;<span>3.1</span></a> esquematiza esses três elementos num mosaico hipotético.</p>
+<section id="sec-estrutura-paisagem" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Estrutura da Paisagem</h1>
+<p>A estrutura da paisagem é descrita pelo modelo mancha-corredor-matriz (<em>patch-corridor-matrix model</em>), proposto por Forman e Godron <span class="citation" data-cites="forman1986">(<a href="../referencias.html#ref-forman1986" role="doc-biblioref">1986</a>)</span> e refinado por Forman <span class="citation" data-cites="forman1995">(<a href="../referencias.html#ref-forman1995" role="doc-biblioref">1995</a>)</span>. Esse modelo decompõe qualquer paisagem em três tipos fundamentais de elementos espaciais, cuja composição e configuração determinam as propriedades ecológicas do mosaico. Apesar de sua aparente simplicidade, o modelo é suficientemente flexível para descrever paisagens tão distintas quanto mosaicos agrícolas europeus, matas fragmentadas da Mata Atlântica e savanas do Cerrado, e permanece como o arcabouço mais utilizado na ecologia da paisagem aplicada.</p>
+<p>A mancha (<em>patch</em>) é uma área relativamente homogênea que difere do seu entorno. Um fragmento florestal imerso numa matriz agrícola, um lago circundado por pastagem ou um afloramento rochoso em meio à Caatinga são exemplos de manchas. O tamanho, a forma e o grau de isolamento de cada mancha determinam sua capacidade de sustentar populações viáveis e de contribuir para processos ecológicos regionais. O corredor (<em>corridor</em>) é um elemento linear ou estreito que difere da matriz em ambos os lados. Rios com mata ciliar, estradas, sebes, faixas de vegetação ripária e linhas de transmissão de energia constituem corredores, que podem funcionar como condutos, filtros ou barreiras para o deslocamento de organismos e a propagação de distúrbios. A matriz (<em>matrix</em>) é o elemento dominante e mais conectado da paisagem, funcionando como o “fundo” contra o qual manchas e corredores se distinguem. A <a href="#fig-mcm-modelo" class="quarto-xref">Figura&nbsp;<span>5.1</span></a> esquematiza esses três elementos num mosaico hipotético.</p>
+<div class="cell" data-fig-width="8" data-layout-align="center">
+<div class="cell-output-display">
 <div id="fig-mcm-modelo" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-mcm-modelo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell" data-fig-width="8" data-layout-align="center">
-<div class="cell-output-display">
 <div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">block-beta
-    columns 7
-    space M["MATRIZ (Pastagem)"] M M M M space
-    space M P1["MANCHA&lt;br&gt;(Fragmento)"] M P2["MANCHA&lt;br&gt;(Fragmento)"] M space
-    space M M M M M space
-    space M C1["CORREDOR (Mata ciliar)"] C1 C1 M space
-    space M M M M M space
-    space M M P3["MANCHA&lt;br&gt;(Fragmento)"] M M space
-    space M M M M M space
-
-    style P1 fill:#228B22,color:#fff
-    style P2 fill:#228B22,color:#fff
-    style P3 fill:#228B22,color:#fff
-    style C1 fill:#006400,color:#fff
-    style M fill:#F5DEB3,color:#333
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
+<svg width="768" height="480" viewbox="0.00 0.00 292.00 271.51" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 267.51)">
+<g id="clust1" class="cluster">
+<title>cluster_matrix</title>
+<path fill="#f5deb3" stroke="#8d6e63" d="M20,-8C20,-8 264,-8 264,-8 270,-8 276,-14 276,-20 276,-20 276,-243.51 276,-243.51 276,-249.51 270,-255.51 264,-255.51 264,-255.51 20,-255.51 20,-255.51 14,-255.51 8,-249.51 8,-243.51 8,-243.51 8,-20 8,-20 8,-14 14,-8 20,-8"></path>
+<text text-anchor="middle" x="142" y="-240.71" font-family="Helvetica,sans-Serif" font-size="12.00">MATRIZ (Pastagem)</text>
+</g>
+<!-- P1 -->
+<g id="node1" class="node">
+<title>P1</title>
+<ellipse fill="#228b22" stroke="#1b5e20" stroke-width="1.5" cx="207" cy="-202.48" rx="56.22" ry="22.76"></ellipse>
+<text text-anchor="middle" x="207" y="-205.48" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">MANCHA</text>
+<text text-anchor="middle" x="207" y="-193.48" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">(Fragmento 1)</text>
+</g>
+<!-- C1 -->
+<g id="node4" class="node">
+<title>C1</title>
+<path fill="#006400" stroke="#004d00" stroke-width="1.5" d="M256,-142.85C256,-142.85 28,-142.85 28,-142.85 22,-142.85 16,-136.85 16,-130.85 16,-130.85 16,-118.85 16,-118.85 16,-112.85 22,-106.85 28,-106.85 28,-106.85 256,-106.85 256,-106.85 262,-106.85 268,-112.85 268,-118.85 268,-118.85 268,-130.85 268,-130.85 268,-136.85 262,-142.85 256,-142.85"></path>
+<text text-anchor="middle" x="142" y="-127.85" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">CORREDOR</text>
+<text text-anchor="middle" x="142" y="-115.85" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">(Mata ciliar)</text>
+</g>
+<!-- P1&#45;&#45;C1 -->
+<g id="edge1" class="edge">
+<title>P1--C1</title>
+<path fill="none" stroke="#006400" stroke-width="2" d="M189.24,-180.82C179.01,-168.92 166.32,-154.15 156.67,-142.92"></path>
+</g>
+<!-- P2 -->
+<g id="node2" class="node">
+<title>P2</title>
+<ellipse fill="#228b22" stroke="#1b5e20" stroke-width="1.5" cx="77" cy="-202.48" rx="56.22" ry="22.76"></ellipse>
+<text text-anchor="middle" x="77" y="-205.48" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">MANCHA</text>
+<text text-anchor="middle" x="77" y="-193.48" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">(Fragmento 2)</text>
+</g>
+<!-- P2&#45;&#45;C1 -->
+<g id="edge2" class="edge">
+<title>P2--C1</title>
+<path fill="none" stroke="#006400" stroke-width="2" d="M94.76,-180.82C104.99,-168.92 117.68,-154.15 127.33,-142.92"></path>
+</g>
+<!-- P3 -->
+<g id="node3" class="node">
+<title>P3</title>
+<ellipse fill="#228b22" stroke="#1b5e20" stroke-width="1.5" cx="142" cy="-38.63" rx="56.22" ry="22.76"></ellipse>
+<text text-anchor="middle" x="142" y="-41.63" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">MANCHA</text>
+<text text-anchor="middle" x="142" y="-29.63" font-family="Helvetica,sans-Serif" font-size="10.00" fill="white">(Fragmento 3)</text>
+</g>
+<!-- C1&#45;&#45;P3 -->
+<g id="edge3" class="edge">
+<title>C1--P3</title>
+<path fill="none" stroke="#888888" stroke-dasharray="5,2" d="M142,-106.81C142,-93.74 142,-75.59 142,-61.46"></path>
+<text text-anchor="middle" x="161.34" y="-81.65" font-family="Helvetica,sans-Serif" font-size="8.00">isolamento</text>
+</g>
+</g>
+</svg>
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mcm-modelo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;3.1: Representação esquemática do modelo mancha-corredor-matriz numa paisagem hipotética com fragmentos florestais dispersos numa matriz de pastagem, conectados por um corredor de mata ciliar.
+Figura&nbsp;5.1: Representação esquemática do modelo mancha-corredor-matriz numa paisagem hipotética com fragmentos florestais dispersos numa matriz de pastagem, conectados por um corredor de mata ciliar.
 </figcaption>
 </figure>
 </div>
-<p>A <a href="#fig-mcm-modelo" class="quarto-xref">Figura&nbsp;<span>3.1</span></a> evidencia propriedades estruturais que devem ser lidas em termos de funcionalidade ecológica. Os três fragmentos (manchas P1, P2 e P3) diferem em posição relativa e, portanto, em grau de isolamento. Enquanto P1 e P2 estão próximos e potencialmente conectados pelo corredor de mata ciliar, P3 encontra-se na porção inferior da paisagem, separado dos demais não apenas pela distância, mas pela continuidade da matriz de pastagem que o envolve. O corredor ripário (C1) liga espacialmente P1 e P2, mas sua funcionalidade como conduto depende de sua largura, integridade e qualidade de habitat, atributos que não são capturados pelo esquema geométrico e que exigem dados de campo ou imagens de alta resolução para serem avaliados. A matriz de pastagem, aparentemente homogênea no diagrama, pode na realidade apresentar gradientes de permeabilidade (pastagens em abandono com regeneração secundária versus pastagens intensivas manejadas), e essa variação interna da matriz condiciona fortemente a conectividade funcional entre os fragmentos <span class="citation" data-cites="fahrig2017">(<a href="../referencias.html#ref-fahrig2017" role="doc-biblioref">Fahrig, 2017</a>)</span>.</p>
-</section>
-<section id="manchas" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="manchas"><span class="header-section-number">3.2</span> Manchas</h2>
-<p>As manchas diferem entre si em <strong>tamanho</strong>, <strong>forma</strong>, <strong>tipo</strong> e <strong>contexto</strong> (posição na paisagem). Cada um desses atributos possui implicações ecológicas extensamente documentadas na literatura e constitui a base para a seleção de métricas de paisagem no <a href="09-metricas-paisagem.html" class="quarto-xref"><span>Capítulo 9</span></a>.</p>
-<p>O <strong>tamanho</strong> da mancha é o atributo mais estudado e o que possui a relação mais robusta com a biodiversidade. A teoria de biogeografia de ilhas, adaptada ao contexto terrestre por Diamond (1975) e amplamente testada em paisagens fragmentadas, prediz que manchas maiores sustentam mais espécies em virtude da relação espécie-área (<span class="math inline">\(S = cA^z\)</span>, onde <span class="math inline">\(S\)</span> é a riqueza, <span class="math inline">\(A\)</span> é a área, e <span class="math inline">\(c\)</span> e <span class="math inline">\(z\)</span> são constantes empíricas). Do ponto de vista funcional, manchas maiores contêm proporcionalmente mais <strong>área nuclear</strong> (<em>core area</em>), definida como a porção interior suficientemente distante da borda para não sofrer efeitos de borda significativos. A relação entre área total e área nuclear depende da largura de borda adotada (tipicamente 50 a 100 m para florestas tropicais) e da forma do fragmento. Um fragmento de 100 ha com forma circular possui aproximadamente 60% de área nuclear (considerando borda de 100 m), enquanto um fragmento de mesma área mas com forma alongada (500 m × 2.000 m) pode ter menos de 30% de área nuclear, porque a borda penetra proporcionalmente mais no interior.</p>
-<p>A <strong>forma</strong> da mancha é quantificada por índices que comparam o perímetro real ao perímetro de uma forma regular (círculo ou quadrado) de mesma área. Manchas com formas regulares (compactas) possuem menor razão perímetro/área e, consequentemente, maior proporção de área nuclear. Manchas alongadas ou irregulares, por sua vez, apresentam maior proporção de borda, amplificando os efeitos de borda sobre microclima, vento, luminosidade e invasão por espécies generalistas. O <strong>contexto</strong> da mancha refere-se à natureza da vizinhança. Uma mancha florestal circundada por capoeira em regeneração sofre menor estresse de borda do que uma mancha de mesma área e forma circundada por pastagem intensiva ou área urbana, indicando que o efeito de borda é mediado pelo contraste entre a mancha e a matriz adjacente.</p>
+</div>
+</div>
+<p>A <a href="#fig-mcm-modelo" class="quarto-xref">Figura&nbsp;<span>5.1</span></a> evidencia propriedades estruturais que devem ser lidas em termos de funcionalidade ecológica. Os três fragmentos (manchas P1, P2 e P3) diferem em posição relativa e, portanto, em grau de isolamento. Enquanto P1 e P2 estão próximos e potencialmente conectados pelo corredor de mata ciliar, P3 encontra-se na porção inferior da paisagem, separado dos demais não apenas pela distância, mas pela continuidade da matriz de pastagem que o envolve. O corredor ripário (C1) liga espacialmente P1 e P2, mas sua funcionalidade como conduto depende de sua largura, integridade e qualidade de habitat, atributos que não são capturados pelo esquema geométrico e que exigem dados de campo ou imagens de alta resolução para serem avaliados. A matriz de pastagem, aparentemente homogênea no diagrama, pode na realidade apresentar gradientes de permeabilidade (pastagens em abandono com regeneração secundária versus pastagens intensivas manejadas), e essa variação interna da matriz condiciona fortemente a conectividade funcional entre os fragmentos <span class="citation" data-cites="fahrig2017">(<a href="../referencias.html#ref-fahrig2017" role="doc-biblioref">Fahrig, 2017</a>)</span>.</p>
+<section id="manchas" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="manchas"><span class="header-section-number">5.1</span> Manchas</h2>
+<p>As manchas diferem entre si em tamanho, forma, tipo e contexto (posição na paisagem). Cada um desses atributos possui implicações ecológicas extensamente documentadas na literatura e constitui a base para a seleção de métricas de paisagem no <a href="09-metricas-paisagem.html" class="quarto-xref"><span>Capítulo 11</span></a>.</p>
+<p>O tamanho da mancha é o atributo mais estudado e o que possui a relação mais robusta com a biodiversidade. A teoria de biogeografia de ilhas, adaptada ao contexto terrestre por Diamond (1975) e amplamente testada em paisagens fragmentadas, prediz que manchas maiores sustentam mais espécies em virtude da relação espécie-área (<span class="math inline">\(S = cA^z\)</span>, onde <span class="math inline">\(S\)</span> é a riqueza, <span class="math inline">\(A\)</span> é a área, e <span class="math inline">\(c\)</span> e <span class="math inline">\(z\)</span> são constantes empíricas). Do ponto de vista funcional, manchas maiores contêm proporcionalmente mais área nuclear (<em>core area</em>), definida como a porção interior suficientemente distante da borda para não sofrer efeitos de borda significativos. A relação entre área total e área nuclear depende da largura de borda adotada (tipicamente 50 a 100 m para florestas tropicais) e da forma do fragmento. Um fragmento de 100 ha com forma circular possui aproximadamente 60% de área nuclear (considerando borda de 100 m), enquanto um fragmento de mesma área mas com forma alongada (500 m × 2.000 m) pode ter menos de 30% de área nuclear, porque a borda penetra proporcionalmente mais no interior.</p>
+<p>A forma da mancha é quantificada por índices que comparam o perímetro real ao perímetro de uma forma regular (círculo ou quadrado) de mesma área. Manchas com formas regulares (compactas) possuem menor razão perímetro/área e, consequentemente, maior proporção de área nuclear. Manchas alongadas ou irregulares, por sua vez, apresentam maior proporção de borda, amplificando os efeitos de borda sobre microclima, vento, luminosidade e invasão por espécies generalistas. O contexto da mancha refere-se à natureza da vizinhança. Uma mancha florestal circundada por capoeira em regeneração sofre menor estresse de borda do que uma mancha de mesma área e forma circundada por pastagem intensiva ou área urbana, indicando que o efeito de borda é mediado pelo contraste entre a mancha e a matriz adjacente.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -484,25 +515,25 @@ Figura&nbsp;3.1: Representação esquemática do modelo mancha-corredor-matriz n
 </div>
 </div>
 </section>
-<section id="corredores" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="corredores"><span class="header-section-number">3.3</span> Corredores</h2>
-<p>Os corredores desempenham funções ecológicas que variam conforme sua estrutura, posição na paisagem e o grupo taxonômico considerado. A função mais estudada é a de <strong>conduto</strong>, facilitando o deslocamento de organismos entre manchas de habitat. Matas ciliares que conectam fragmentos florestais, por exemplo, permitem o fluxo de aves, pequenos mamíferos, morcegos e invertebrados entre remanescentes que de outra forma estariam funcionalmente isolados. Estudos com rádio-telemetria em fragmentos de Mata Atlântica demonstram que espécies com baixa capacidade de deslocamento em área aberta (como marsupiais e pequenos roedores florestais) utilizam preferencialmente corredores ripários para movimentação entre fragmentos, enquanto espécies com maior mobilidade (algumas aves e morcegos) podem cruzar lacunas na matriz sem necessidade de corredor.</p>
-<p>Além da função de conduto, os corredores podem atuar como <strong>habitat</strong> para espécies que toleram ou preferem ambientes lineares (aves de sub-bosque que forrageiam ao longo de matas ripárias, por exemplo), como <strong>filtro</strong> seletivo que permite a passagem de algumas espécies mas não de outras (um corredor estreito pode ser funcional para invertebrados mas não para mamíferos de médio porte), e como <strong>barreira</strong> ao fluxo de determinados processos, como a propagação de fogo ou o escoamento superficial <span class="citation" data-cites="forman1995">(<a href="../referencias.html#ref-forman1995" role="doc-biblioref">Forman, 1995</a>)</span>. Uma faixa de vegetação ripária, por exemplo, funciona simultaneamente como conduto para espécies florestais (fluxo longitudinal ao longo do corredor) e como barreira para sedimentos e nutrientes (interceptação do fluxo transversal proveniente de áreas agrícolas adjacentes).</p>
-<p>A efetividade de um corredor como conduto depende de sua <strong>largura</strong>, <strong>continuidade</strong> e <strong>qualidade do habitat</strong>. Corredores estreitos (menos de 30 m) perdem funcionalidade para espécies sensíveis ao efeito de borda, pois toda a sua extensão é afetada por condições microclimáticas de borda. Corredores com interrupções (estradas que os cruzam, secções desmatadas, represamentos) perdem continuidade e podem funcionar como armadilhas ecológicas se atraem organismos para áreas sem saída. Em paisagens tropicais brasileiras, a legislação de Áreas de Preservação Permanente (APP) estabelece larguras mínimas de mata ciliar que variam de 30 a 500 m conforme a largura do curso d’água (Lei 12.651/2012), e essas faixas frequentemente constituem os corredores ecologicamente mais importantes da paisagem.</p>
+<section id="corredores" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="corredores"><span class="header-section-number">5.2</span> Corredores</h2>
+<p>Os corredores desempenham funções ecológicas que variam conforme sua estrutura, posição na paisagem e o grupo taxonômico considerado. A função mais estudada é a de conduto, facilitando o deslocamento de organismos entre manchas de habitat. Matas ciliares que conectam fragmentos florestais, por exemplo, permitem o fluxo de aves, pequenos mamíferos, morcegos e invertebrados entre remanescentes que de outra forma estariam funcionalmente isolados. Estudos com rádio-telemetria em fragmentos de Mata Atlântica demonstram que espécies com baixa capacidade de deslocamento em área aberta (como marsupiais e pequenos roedores florestais) utilizam preferencialmente corredores ripários para movimentação entre fragmentos, enquanto espécies com maior mobilidade (algumas aves e morcegos) podem cruzar lacunas na matriz sem necessidade de corredor.</p>
+<p>Além da função de conduto, os corredores podem atuar como habitat para espécies que toleram ou preferem ambientes lineares (aves de sub-bosque que forrageiam ao longo de matas ripárias, por exemplo), como filtro seletivo que permite a passagem de algumas espécies mas não de outras (um corredor estreito pode ser funcional para invertebrados mas não para mamíferos de médio porte), e como barreira ao fluxo de determinados processos, como a propagação de fogo ou o escoamento superficial <span class="citation" data-cites="forman1995">(<a href="../referencias.html#ref-forman1995" role="doc-biblioref">Forman, 1995</a>)</span>. Uma faixa de vegetação ripária, por exemplo, funciona simultaneamente como conduto para espécies florestais (fluxo longitudinal ao longo do corredor) e como barreira para sedimentos e nutrientes (interceptação do fluxo transversal proveniente de áreas agrícolas adjacentes).</p>
+<p>A efetividade de um corredor como conduto depende de sua largura, continuidade e qualidade do habitat. Corredores estreitos (menos de 30 m) perdem funcionalidade para espécies sensíveis ao efeito de borda, pois toda a sua extensão é afetada por condições microclimáticas de borda. Corredores com interrupções (estradas que os cruzam, secções desmatadas, represamentos) perdem continuidade e podem funcionar como armadilhas ecológicas se atraem organismos para áreas sem saída. Em paisagens tropicais brasileiras, a legislação de Áreas de Preservação Permanente (APP) estabelece larguras mínimas de mata ciliar que variam de 30 a 500 m conforme a largura do curso d’água (Lei 12.651/2012), e essas faixas frequentemente constituem os corredores ecologicamente mais importantes da paisagem.</p>
 </section>
-<section id="matriz" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="matriz"><span class="header-section-number">3.4</span> Matriz</h2>
-<p>A matriz é frequentemente tratada como mero “fundo” homogêneo sem função ecológica, mas pesquisas da última década demonstram que sua <strong>permeabilidade</strong> condiciona fortemente a conectividade funcional da paisagem <span class="citation" data-cites="fahrig2017">(<a href="../referencias.html#ref-fahrig2017" role="doc-biblioref">Fahrig, 2017</a>)</span>. Uma matriz de pastagem abandonada em processo de regeneração secundária é substancialmente mais permeável para espécies florestais do que uma matriz de monocultura intensiva, que por sua vez é mais permeável do que uma área urbana. Essa variação interna da matriz implica que dois fragmentos equidistantes podem apresentar conectividade funcional radicalmente diferente, dependendo do tipo de uso do solo que os separa.</p>
-<p>A qualidade da matriz pode ser descrita pelo conceito de <strong>resistência ao deslocamento</strong>. Uma espécie florestal que cruza uma pastagem enfrenta maior resistência (risco de predação por ausência de cobertura, estresse térmico por exposição solar direta, ausência de recursos alimentares e de sítios de repouso) do que ao cruzar uma capoeira ou um sistema agroflorestal, que oferecem cobertura parcial e recursos mínimos. Modelos de conectividade funcional, como os baseados em teoria de circuitos (<em>Circuitscape</em>) ou custo-distância (<em>least-cost path</em>), incorporam explicitamente a resistência da matriz na quantificação de conexões entre manchas, e a calibração dos valores de resistência (empírica, por opinião de especialistas ou por dados de telemetria) é uma das etapas mais críticas e subjetivas da modelagem de conectividade, conforme será discutido no <a href="10-fragmentacao-conectividade.html" class="quarto-xref"><span>Capítulo 10</span></a>.</p>
+<section id="matriz" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="matriz"><span class="header-section-number">5.3</span> Matriz</h2>
+<p>A matriz é frequentemente tratada como mero “fundo” homogêneo sem função ecológica, mas pesquisas da última década demonstram que sua permeabilidade condiciona fortemente a conectividade funcional da paisagem <span class="citation" data-cites="fahrig2017">(<a href="../referencias.html#ref-fahrig2017" role="doc-biblioref">Fahrig, 2017</a>)</span>. Uma matriz de pastagem abandonada em processo de regeneração secundária é substancialmente mais permeável para espécies florestais do que uma matriz de monocultura intensiva, que por sua vez é mais permeável do que uma área urbana. Essa variação interna da matriz implica que dois fragmentos equidistantes podem apresentar conectividade funcional radicalmente diferente, dependendo do tipo de uso do solo que os separa.</p>
+<p>A qualidade da matriz pode ser descrita pelo conceito de resistência ao deslocamento. Uma espécie florestal que cruza uma pastagem enfrenta maior resistência (risco de predação por ausência de cobertura, estresse térmico por exposição solar direta, ausência de recursos alimentares e de sítios de repouso) do que ao cruzar uma capoeira ou um sistema agroflorestal, que oferecem cobertura parcial e recursos mínimos. Modelos de conectividade funcional, como os baseados em teoria de circuitos (<em>Circuitscape</em>) ou custo-distância (<em>least-cost path</em>), incorporam explicitamente a resistência da matriz na quantificação de conexões entre manchas, e a calibração dos valores de resistência (empírica, por opinião de especialistas ou por dados de telemetria) é uma das etapas mais críticas e subjetivas da modelagem de conectividade, conforme será discutido no <a href="10-fragmentacao-conectividade.html" class="quarto-xref"><span>Capítulo 12</span></a>.</p>
 </section>
-<section id="composição-e-configuração" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="composição-e-configuração"><span class="header-section-number">3.5</span> Composição e configuração</h2>
-<p>A estrutura da paisagem é descrita por dois componentes complementares que fornecem informações ecologicamente distintas e que não devem ser confundidos. A <strong>composição</strong> refere-se aos tipos de elementos presentes e suas proporções relativas (quanto da paisagem é floresta, quanto é agricultura, quanto é área urbana, quanto é corpo d’água). A <strong>configuração</strong> refere-se ao arranjo espacial desses elementos (os fragmentos florestais estão concentrados no centro da paisagem ou dispersos pelas bordas? São grandes e poucos ou pequenos e numerosos? Estão conectados por corredores ou completamente isolados?).</p>
-<p>Duas paisagens podem ter composição idêntica (mesma proporção de floresta, por exemplo 30%) mas configurações radicalmente diferentes. Uma paisagem na qual os 30% de floresta formam um único bloco contíguo terá elevada área nuclear, baixa densidade de bordas e alta conectividade interna. Outra paisagem na qual os mesmos 30% de floresta estão distribuídos em centenas de pequenos fragmentos dispersos na matriz agrícola terá área nuclear reduzida, alta densidade de bordas, elevado isolamento entre manchas e baixa conectividade funcional <span class="citation" data-cites="mcgarigal2002">(<a href="../referencias.html#ref-mcgarigal2002" role="doc-biblioref">McGarigal &amp; Cushman, 2002</a>)</span>. Essas diferenças de configuração produzem efeitos ecológicos mensuráveis e distintos sobre riqueza de espécies, taxas de extinção local, fluxo gênico, polinização, controle de pragas e serviços hidrológicos. A <a href="#tbl-composicao-configuracao" class="quarto-xref">Tabela&nbsp;<span>3.1</span></a> sistematiza as diferenças entre esses dois componentes.</p>
+<section id="composição-e-configuração" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="composição-e-configuração"><span class="header-section-number">5.4</span> Composição e configuração</h2>
+<p>A estrutura da paisagem é descrita por dois componentes complementares que fornecem informações ecologicamente distintas e que não devem ser confundidos. A composição refere-se aos tipos de elementos presentes e suas proporções relativas (quanto da paisagem é floresta, quanto é agricultura, quanto é área urbana, quanto é corpo d’água). A configuração refere-se ao arranjo espacial desses elementos (os fragmentos florestais estão concentrados no centro da paisagem ou dispersos pelas bordas? São grandes e poucos ou pequenos e numerosos? Estão conectados por corredores ou completamente isolados?).</p>
+<p>Duas paisagens podem ter composição idêntica (mesma proporção de floresta, por exemplo 30%) mas configurações radicalmente diferentes. Uma paisagem na qual os 30% de floresta formam um único bloco contíguo terá elevada área nuclear, baixa densidade de bordas e alta conectividade interna. Outra paisagem na qual os mesmos 30% de floresta estão distribuídos em centenas de pequenos fragmentos dispersos na matriz agrícola terá área nuclear reduzida, alta densidade de bordas, elevado isolamento entre manchas e baixa conectividade funcional <span class="citation" data-cites="mcgarigal2002">(<a href="../referencias.html#ref-mcgarigal2002" role="doc-biblioref">McGarigal &amp; Cushman, 2002</a>)</span>. Essas diferenças de configuração produzem efeitos ecológicos mensuráveis e distintos sobre riqueza de espécies, taxas de extinção local, fluxo gênico, polinização, controle de pragas e serviços hidrológicos. A <a href="#tbl-composicao-configuracao" class="quarto-xref">Tabela&nbsp;<span>5.1</span></a> sistematiza as diferenças entre esses dois componentes.</p>
 <div id="tbl-composicao-configuracao" class="striped hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-composicao-configuracao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Tabela&nbsp;3.1: Comparação entre composição e configuração como descritores da estrutura da paisagem.
+Tabela&nbsp;5.1: Comparação entre composição e configuração como descritores da estrutura da paisagem.
 </figcaption>
 <div aria-describedby="tbl-composicao-configuracao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table-striped table-hover caption-top table">
@@ -549,12 +580,12 @@ Tabela&nbsp;3.1: Comparação entre composição e configuração como descritor
 </div>
 </figure>
 </div>
-<p>A <a href="#tbl-composicao-configuracao" class="quarto-xref">Tabela&nbsp;<span>3.1</span></a> evidencia que composição e configuração são analiticamente separáveis, mas ecologicamente interdependentes. Fahrig <span class="citation" data-cites="fahrig2003">(<a href="../referencias.html#ref-fahrig2003" role="doc-biblioref">2003</a>)</span> demonstrou que a composição (particularmente a proporção total de habitat) possui efeito dominante sobre a biodiversidade, explicando tipicamente 2 a 5 vezes mais variação na riqueza de espécies do que métricas de configuração. Contudo, em paisagens com proporção intermediária de habitat (20–50%), a configuração torna-se um modulador relevante, pois determina se o habitat remanescente está acessível ou fragmentado. Em paisagens com proporção muito baixa de habitat (inferior a 10–20%), tanto a quantidade quanto a configuração são críticas, pois a paisagem pode cruzar limiares de percolação abaixo dos quais a conectividade estrutural colapsa e os processos ecológicos dependentes de fluxo entre manchas cessam abruptamente.</p>
+<p>A <a href="#tbl-composicao-configuracao" class="quarto-xref">Tabela&nbsp;<span>5.1</span></a> evidencia que composição e configuração são analiticamente separáveis, mas ecologicamente interdependentes. Fahrig <span class="citation" data-cites="fahrig2003">(<a href="../referencias.html#ref-fahrig2003" role="doc-biblioref">2003</a>)</span> demonstrou que a composição (particularmente a proporção total de habitat) possui efeito dominante sobre a biodiversidade, explicando tipicamente 2 a 5 vezes mais variação na riqueza de espécies do que métricas de configuração. Contudo, em paisagens com proporção intermediária de habitat (20–50%), a configuração torna-se um modulador relevante, pois determina se o habitat remanescente está acessível ou fragmentado. Em paisagens com proporção muito baixa de habitat (inferior a 10–20%), tanto a quantidade quanto a configuração são críticas, pois a paisagem pode cruzar limiares de percolação abaixo dos quais a conectividade estrutural colapsa e os processos ecológicos dependentes de fluxo entre manchas cessam abruptamente.</p>
 </section>
-<section id="heterogeneidade" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="heterogeneidade"><span class="header-section-number">3.6</span> Heterogeneidade</h2>
+<section id="heterogeneidade" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="heterogeneidade"><span class="header-section-number">5.5</span> Heterogeneidade</h2>
 <p>A heterogeneidade da paisagem é a propriedade emergente da combinação de composição e configuração. Uma paisagem com muitos tipos de cobertura distribuídos em arranjo complexo e intercalado é mais heterogênea do que uma paisagem dominada por um único tipo de uso em configuração simples. A heterogeneidade pode ser quantificada por métricas de diversidade (índice de Shannon, índice de Simpson) aplicadas à composição de classes, ou por métricas de complexidade espacial (dimensão fractal, lacunaridade) que capturam a irregularidade da configuração.</p>
-<p>A relação entre heterogeneidade e biodiversidade é mediada pela escala e pelo grupo taxonômico considerado, e não é universalmente positiva. Para espécies <strong>generalistas</strong> que exploram múltiplos tipos de habitat e dependem da complementaridade de recursos (áreas de alimentação em campo aberto e sítios de nidificação em fragmentos florestais, por exemplo), paisagens heterogêneas tendem a sustentar maior diversidade porque oferecem maior variedade de nichos e recursos complementares no espaço. Para espécies <strong>especialistas</strong> sensíveis a efeitos de borda e dependentes de habitat contínuo (como aves de sub-bosque florestal que evitam ambientes abertos), a heterogeneidade elevada pode ser deletéria quando implica que o habitat preferencial está subdividido em manchas muito pequenas e isoladas, cada uma delas dominada por condições de borda.</p>
+<p>A relação entre heterogeneidade e biodiversidade é mediada pela escala e pelo grupo taxonômico considerado, e não é universalmente positiva. Para espécies generalistas que exploram múltiplos tipos de habitat e dependem da complementaridade de recursos (áreas de alimentação em campo aberto e sítios de nidificação em fragmentos florestais, por exemplo), paisagens heterogêneas tendem a sustentar maior diversidade porque oferecem maior variedade de nichos e recursos complementares no espaço. Para espécies especialistas sensíveis a efeitos de borda e dependentes de habitat contínuo (como aves de sub-bosque florestal que evitam ambientes abertos), a heterogeneidade elevada pode ser deletéria quando implica que o habitat preferencial está subdividido em manchas muito pequenas e isoladas, cada uma delas dominada por condições de borda.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -565,16 +596,16 @@ Tabela&nbsp;3.1: Comparação entre composição e configuração como descritor
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>É fundamental distinguir <strong>heterogeneidade da paisagem</strong> (diversidade de elementos presentes no mosaico, que pode decorrer da variabilidade natural do relevo, dos solos e dos ecossistemas) de <strong>fragmentação de habitat</strong> (subdivisão de habitat contínuo em manchas menores e mais isoladas, tipicamente causada por atividades antrópicas). Paisagens podem ser naturalmente heterogêneas sem necessariamente apresentar fragmentação de habitat (um ecótono entre floresta e cerrado, por exemplo) e, inversamente, fragmentação intensa pode ocorrer numa paisagem que, em termos de diversidade de classes, é pouco heterogênea (uma paisagem binária de floresta e soja).</p>
+<p>É fundamental distinguir heterogeneidade da paisagem (diversidade de elementos presentes no mosaico, que pode decorrer da variabilidade natural do relevo, dos solos e dos ecossistemas) de fragmentação de habitat (subdivisão de habitat contínuo em manchas menores e mais isoladas, tipicamente causada por atividades antrópicas). Paisagens podem ser naturalmente heterogêneas sem necessariamente apresentar fragmentação de habitat (um ecótono entre floresta e cerrado, por exemplo) e, inversamente, fragmentação intensa pode ocorrer numa paisagem que, em termos de diversidade de classes, é pouco heterogênea (uma paisagem binária de floresta e soja).</p>
 </div>
 </div>
 </section>
-<section id="estrutura-em-paisagens-tropicais-brasileiras" class="level2" data-number="3.7">
-<h2 data-number="3.7" class="anchored" data-anchor-id="estrutura-em-paisagens-tropicais-brasileiras"><span class="header-section-number">3.7</span> Estrutura em paisagens tropicais brasileiras</h2>
-<p>No contexto das paisagens brasileiras, o modelo mancha-corredor-matriz assume formas específicas condicionadas pela história de uso da terra e pelas características biogeográficas de cada bioma. Na <strong>Mata Atlântica</strong>, os fragmentos florestais remanescentes (8–12% da cobertura original) constituem manchas inseridas numa matriz agrícola, pecuária e urbana heterogênea, com corredores frequentemente restritos a matas ciliares estreitas, muitas delas degradadas. A fragmentação é antiga (séculos de colonização) e os fragmentos remanescentes são predominantemente pequenos (mais de 80% menores que 50 ha) e distantes entre si <span class="citation" data-cites="ribeiro2009">(<a href="../referencias.html#ref-ribeiro2009" role="doc-biblioref">Ribeiro et al., 2009</a>)</span>.</p>
-<p>No <strong>Cerrado</strong>, a expansão agrícola das últimas décadas (especialmente soja e pastagens plantadas no Cerrado central e ocidental) converte áreas de vegetação nativa em matriz de monoculturas, gerando manchas residuais de cerrado <em>sensu stricto</em> e cerradão frequentemente isoladas em áreas de relevo mais acidentado ou de solos menos aptos à mecanização. Os corredores de vegetação ripária (veredas e matas de galeria) constituem os elementos de conectividade mais relevantes e estão parcialmente protegidos pela legislação de APP.</p>
-<p>Na <strong>Caatinga</strong>, a paisagem é naturalmente heterogênea, com manchas de vegetação arbórea densa alternando com áreas de vegetação aberta, lajedos rochosos e solos expostos, dificultando a distinção entre heterogeneidade natural (condicionada pelo relevo, pelos solos e pelo regime hídrico) e fragmentação antrópica (causada por desmatamento para lenha, pecuária extensiva e agricultura de subsistência). Essa sobreposição de padrões impõe desafios metodológicos que exigem dados de alta resolução e conhecimento de campo para serem resolvidos.</p>
-<p>A compreensão da estrutura da paisagem é o primeiro passo para qualquer análise quantitativa. Os capítulos seguintes avançarão para as escalas de observação (<a href="04-escalas.html" class="quarto-xref"><span>Capítulo 4</span></a>), a percepção e representação da paisagem (<a href="05-percepcao-representacao.html" class="quarto-xref"><span>Capítulo 5</span></a>) e os métodos de quantificação da estrutura por meio de métricas espaciais (<a href="09-metricas-paisagem.html" class="quarto-xref"><span>Capítulo 9</span></a>).</p>
+<section id="estrutura-em-paisagens-tropicais-brasileiras" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="estrutura-em-paisagens-tropicais-brasileiras"><span class="header-section-number">5.6</span> Estrutura em paisagens tropicais brasileiras</h2>
+<p>No contexto das paisagens brasileiras, o modelo mancha-corredor-matriz assume formas específicas condicionadas pela história de uso da terra e pelas características biogeográficas de cada bioma. Na Mata Atlântica, os fragmentos florestais remanescentes (8–12% da cobertura original) constituem manchas inseridas numa matriz agrícola, pecuária e urbana heterogênea, com corredores frequentemente restritos a matas ciliares estreitas, muitas delas degradadas. A fragmentação é antiga (séculos de colonização) e os fragmentos remanescentes são predominantemente pequenos (mais de 80% menores que 50 ha) e distantes entre si <span class="citation" data-cites="ribeiro2009">(<a href="../referencias.html#ref-ribeiro2009" role="doc-biblioref">Ribeiro et al., 2009</a>)</span>.</p>
+<p>No Cerrado, a expansão agrícola das últimas décadas (especialmente soja e pastagens plantadas no Cerrado central e ocidental) converte áreas de vegetação nativa em matriz de monoculturas, gerando manchas residuais de cerrado <em>sensu stricto</em> e cerradão frequentemente isoladas em áreas de relevo mais acidentado ou de solos menos aptos à mecanização. Os corredores de vegetação ripária (veredas e matas de galeria) constituem os elementos de conectividade mais relevantes e estão parcialmente protegidos pela legislação de APP.</p>
+<p>Na Caatinga, a paisagem é naturalmente heterogênea, com manchas de vegetação arbórea densa alternando com áreas de vegetação aberta, lajedos rochosos e solos expostos, dificultando a distinção entre heterogeneidade natural (condicionada pelo relevo, pelos solos e pelo regime hídrico) e fragmentação antrópica (causada por desmatamento para lenha, pecuária extensiva e agricultura de subsistência). Essa sobreposição de padrões impõe desafios metodológicos que exigem dados de alta resolução e conhecimento de campo para serem resolvidos.</p>
+<p>A compreensão da estrutura da paisagem é o primeiro passo para qualquer análise quantitativa. Os capítulos seguintes avançarão para as escalas de observação (<a href="04-escalas.html" class="quarto-xref"><span>Capítulo 6</span></a>), a percepção e representação da paisagem (<a href="05-percepcao-representacao.html" class="quarto-xref"><span>Capítulo 7</span></a>) e os métodos de quantificação da estrutura por meio de métricas espaciais (<a href="09-metricas-paisagem.html" class="quarto-xref"><span>Capítulo 11</span></a>).</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
@@ -600,6 +631,7 @@ McGarigal, K., &amp; Cushman, S. A. (2002). Comparative evaluation of experiment
 Ribeiro, M. C., Metzger, J. P., Martensen, A. C., Ponzoni, F. J., &amp; Hirota, M. M. (2009). The Brazilian Atlantic Forest: How much is left, and how is the remaining forest distributed? Implications for conservation. <em>Biological Conservation</em>, <em>142</em>(6), 1141–1153. <a href="https://doi.org/10.1016/j.biocon.2009.02.021">https://doi.org/10.1016/j.biocon.2009.02.021</a>
 </div>
 </div>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1005,13 +1037,13 @@ Ribeiro, M. C., Metzger, J. P., Martensen, A. C., Ponzoni, F. J., &amp; Hirota, 
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../capitulos/02-ecologia-paisagem.html" class="pagination-link" aria-label="Conceitos e Abordagens da Ecologia da Paisagem">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Conceitos e Abordagens da Ecologia da Paisagem</span></span>
+      <a href="../capitulos/02-ecologia-paisagem.html" class="pagination-link" aria-label="Ecologia da Paisagem como disciplina">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Ecologia da Paisagem como disciplina</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../capitulos/04-escalas.html" class="pagination-link" aria-label="Escalas Espaço-temporais">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Escalas Espaço-temporais</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../capitulos/04-escalas.html" class="pagination-link" aria-label="O problema da escala">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">O problema da escala</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

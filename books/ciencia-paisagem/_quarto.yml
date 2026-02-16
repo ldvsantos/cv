@@ -83,5 +83,18 @@ format:
     code-link: true
     lang: pt-BR
     fig-align: center
+  pdf:
+    documentclass: scrbook
+    papersize: a4
+    fontsize: 11pt
+    lang: pt
+    toc: true
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - top=2.5cm
+      - bottom=2.5cm
+      - left=3cm
+      - right=2cm
 
 lang: pt-BR
