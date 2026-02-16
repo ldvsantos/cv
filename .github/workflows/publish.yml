@@ -48,25 +48,29 @@ jobs:
           cp cv-luiz-diego-en.pdf _site/cv-luiz-diego-en.pdf
           cp cv-luiz-diego-es.pdf _site/cv-luiz-diego-es.pdf
 
-      - name: Render Book - Bioengenharia de Solos
+      - name: Render Books (HTML only)
         run: |
-          cd books/bioengenharia-solos
-          quarto render
-
-      - name: Render Book - Ciência da Paisagem
-        run: |
-          cd books/ciencia-paisagem
-          quarto render
+          for book in bioengenharia-solos ciencia-paisagem geotecnologias-sig pi branding-agro; do
+            if [ -f "books/$book/_quarto.yml" ]; then
+              echo "=== Rendering $book ==="
+              cd books/$book
+              quarto render --to html
+              cd ../..
+            fi
+          done
 
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
 
       - name: Copy book output to site
         run: |
-          mkdir -p _site/books/bioengenharia-solos
-          cp -r books/bioengenharia-solos/_book/* _site/books/bioengenharia-solos/
-          mkdir -p _site/books/ciencia-paisagem
-          cp -r books/ciencia-paisagem/_book/* _site/books/ciencia-paisagem/
+          for book in bioengenharia-solos ciencia-paisagem geotecnologias-sig pi branding-agro; do
+            if [ -d "books/$book/_book" ]; then
+              echo "=== Copying $book ==="
+              mkdir -p _site/books/$book
+              cp -r books/$book/_book/* _site/books/$book/
+            fi
+          done
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

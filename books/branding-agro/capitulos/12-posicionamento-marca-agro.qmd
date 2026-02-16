@@ -1,0 +1,204 @@
+# Posicionamento de Marca no Agro {#sec-posicionamento}
+
+::: {.chapter-intro}
+Posicionamento não é o que você escreve no papel. É o lugar que sua marca ocupa na mente do público. Neste capítulo, transformamos toda a análise anterior — diferenciação, benefícios, público — em uma posição de mercado clara e defensável.
+:::
+
+## O que é posicionamento
+
+Ao longo dos capítulos anteriores, respondemos às perguntas:
+
+- **O que vendemos?** — Produtos e portfólio (@sec-estrategia-produtos)
+- **O que nos diferencia?** — Ideias diferenciadoras e suporte (@sec-ideias-diferenciadoras, @sec-suporte-diferenciacao)
+- **O que entregamos de valor?** — Benefícios (@sec-beneficios)
+- **Para quem vendemos?** — Público ideal (@sec-publico-ideal)
+
+Posicionamento é a **síntese estratégica** de todas essas respostas. É a definição precisa do lugar que a marca pretende ocupar na mente do público-alvo, de forma:
+
+- **Clara** — O público entende o que a marca é e o que ela oferece
+- **Diferenciada** — A marca não se confunde com as concorrentes
+- **Relevante** — O posicionamento importa para o público
+- **Crível** — A marca pode entregar o que promete
+- **Sustentável** — O posicionamento se mantém ao longo do tempo
+
+::: {.callout-note}
+## Definição
+**Posicionamento** é a posição que a marca ocupa na mente do público — não o que a empresa declara, mas o que o público de fato percebe e associa.
+:::
+
+## A arquitetura do posicionamento
+
+O posicionamento de uma marca no agro se constrói sobre quatro pilares:
+
+```{mermaid}
+%%| label: fig-posicionamento
+%%| fig-cap: "Os quatro pilares do posicionamento de marca no agro"
+flowchart TB
+    P["POSICIONAMENTO"]
+    P --> D["DEMANDA<br/>(Interesse)"]
+    P --> C["CREDIBILIDADE<br/>(Confiança)"]
+    P --> A["AFINIDADE<br/>(Conexão)"]
+    P --> PR["PROMESSA<br/>(Expectativa)"]
+    
+    D --> D1["Diferenciais<br/>Benefícios"]
+    C --> C1["Pontos de prova<br/>Evidências"]
+    A --> A1["Personalidade<br/>Propósito<br/>Visão de mundo"]
+    PR --> PR1["Proposta de<br/>valor única<br/>(PUV)"]
+    
+    style P fill:#1b5e20,color:#fff
+    style D fill:#e8f5e9
+    style C fill:#e8f5e9
+    style A fill:#e8f5e9
+    style PR fill:#e8f5e9
+```
+
+### Pilar 1 — Demanda (Criar interesse)
+
+O que faz o comprador se interessar pela marca? São os **diferenciais** e os **benefícios** que explorámos nos capítulos anteriores.
+
+*Pergunta-chave:* "Por que o comprador deveria prestar atenção em mim?"
+
+### Pilar 2 — Credibilidade (Criar confiança)
+
+O que faz o comprador confiar na marca? São os **pontos de prova**: certificações, prêmios, depoimentos, dados, histórico.
+
+*Pergunta-chave:* "Por que o comprador deveria acreditar no que digo?"
+
+### Pilar 3 — Afinidade (Criar conexão)
+
+O que faz o comprador sentir que a marca é relevante para ele, para além do produto? São a **personalidade**, o **propósito** e a **visão de mundo** da marca.
+
+*Pergunta-chave:* "O que cria uma conexão emocional ou ideológica entre a marca e o público?"
+
+### Pilar 4 — Promessa (Criar expectativa)
+
+A síntese de tudo em uma **proposta de valor única** (PUV) — a promessa central que a marca faz ao mercado.
+
+*Pergunta-chave:* "Em uma frase, o que minha marca promete e entrega?"
+
+## Construindo o posicionamento passo a passo
+
+### Passo 1 — Declaração de posicionamento
+
+Uma declaração de posicionamento segue uma estrutura simples mas poderosa:
+
+> **Para** [público ideal], \
+> **a** [nome da marca] **é** [categoria] \
+> **que** [promessa diferenciada], \
+> **porque** [razão para acreditar].
+
+**Exemplo:**
+
+> Para chefs e restaurantes que valorizam ingredientes de origem controlada, \
+> a **Fazenda Nascentes** é a produtora de café especial do Cerrado \
+> que entrega lotes rastreados com perfil sensorial personalizado, \
+> porque cultiva exclusivamente em sistema agroflorestal acima de 1.100m de altitude \
+> e monitora cada lote desde a muda até a xícara.
+
+### Passo 2 — Mapa de posicionamento perceptual
+
+Posicionar sua marca em relação aos concorrentes usando dois eixos relevantes para o mercado:
+
+```{mermaid}
+%%| label: fig-mapa
+%%| fig-cap: "Exemplo de mapa de posicionamento para café"
+quadrantChart
+    title Posicionamento Perceptual — Café
+    x-axis "Commodity" --> "Especial"
+    y-axis "Convencional" --> "Sustentável"
+    quadrant-1 "Premium Sustentável"
+    quadrant-2 "Sustentável Acessível"
+    quadrant-3 "Commodity Convencional"
+    quadrant-4 "Especial Convencional"
+    "Fazenda Nascentes": [0.85, 0.90]
+    "Concorrente A": [0.70, 0.40]
+    "Concorrente B": [0.30, 0.20]
+    "Concorrente C": [0.50, 0.65]
+    "Trading Genérica": [0.15, 0.15]
+```
+
+O mapa revela:
+
+- **Onde há espaço** — Quadrantes pouco ocupados são oportunidades
+- **Onde há competição** — Aglomerações indicam saturação
+- **Onde você está** — Vs. onde gostaria de estar
+
+### Passo 3 — Mensagens-chave
+
+Com o posicionamento definido, derive as mensagens que serão utilizadas nos pontos de contato:
+
+| Contexto | Mensagem |
+|:---------|:---------|
+| Em uma frase (pitch) | "Café de floresta: da muda à xícara, com rastreabilidade total" |
+| Para o comprador B2B | "Lotes personalizados com laudo sensorial de cada colheita" |
+| Para o consumidor B2C | "O café que nasce sob a sombra de árvores centenárias" |
+| Para investidores/parceiros | "Modelo agroflorestal com margem 2x superior à monocultura" |
+| Para redes sociais | "Do solo à xícara — conheça cada etapa do seu café" |
+
+: Mensagens derivadas do posicionamento {#tbl-mensagens}
+
+## Erros comuns de posicionamento no agro
+
+### 1. Posicionamento genérico
+
+"Nosso café é de qualidade." — Não posiciona, porque todos dizem o mesmo.
+
+### 2. Posicionamento aspiracional sem entrega
+
+"Somos a marca mais sustentável do agro." — Se não há evidência sólida, é promessa vazia.
+
+### 3. Posicionamento instável
+
+Mudar o posicionamento a cada safra ou campanha. Posicionamento precisa de **tempo** para se consolidar na mente do público.
+
+### 4. Posicionamento copiado
+
+Replicar o posicionamento de um concorrente. Se o concorrente já ocupa aquele espaço mental, você será percebido como imitação.
+
+### 5. Posicionamento irrelevante
+
+Posicionar-se em um atributo que o público não valoriza. "O café mais leve do mercado" não funciona se o público busca corpo e intensidade.
+
+## O posicionamento como filtro decisório
+
+Uma vez definido, o posicionamento funciona como **filtro para todas as decisões** da marca:
+
+- Devo lançar este produto? → Está alinhado com o posicionamento?
+- Devo participar desta feira? → O público da feira é o meu público?
+- Devo aceitar este cliente? → Ele valoriza o que a marca propõe?
+- Como devo responder nas redes sociais? → Como a personalidade da marca responderia?
+- Devo baixar o preço? → Isso compromete o posicionamento?
+
+O posicionamento não é apenas o que você comunica — é o que **orienta** cada decisão do negócio.
+
+## Exercício prático — Posicionamento
+
+::: {.tool-box}
+#### 🌿 Ferramenta: Canvas de Posicionamento Agro
+
+**1. Declaração de posicionamento:**
+
+Para _________________ (público ideal), \
+a _________________ (marca) é _________________ (categoria) \
+que _________________ (promessa diferenciada), \
+porque _________________ (razão para acreditar).
+
+**2. Os quatro pilares:**
+
+| Pilar | Conteúdo |
+|:------|:---------|
+| Demanda (por que se interessar?) | |
+| Credibilidade (por que confiar?) | |
+| Afinidade (por que se conectar?) | |
+| Promessa (o que esperar?) | |
+
+**3. Teste do posicionamento:**
+
+- [ ] É diferente dos concorrentes?
+- [ ] É relevante para o público ideal?
+- [ ] É verdadeiro e entregável?
+- [ ] É simples de comunicar?
+- [ ] É sustentável a longo prazo?
+
+Se todas as respostas forem sim, você tem um posicionamento forte.
+:::

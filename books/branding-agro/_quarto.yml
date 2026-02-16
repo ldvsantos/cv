@@ -1,0 +1,90 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Gestão de Branding no Agro"
+  subtitle: "Estratégias de Marca para o Agronegócio Brasileiro"
+  author:
+    - name: "Luiz Diego Vidal Santos"
+      url: https://diegovidalcv.com.br/
+      orcid: 0000-0001-8659-8557
+      affiliation:
+        - name: "Universidade Estadual de Feira de Santana (UEFS)"
+          url: https://www.uefs.br/
+  date: "2026-02-16"
+  date-format: "DD/MM/YYYY"
+  description: |
+    Livro-texto sobre gestão de marcas aplicada ao agronegócio brasileiro,
+    abordando desde os fundamentos do branding até estratégias de diferenciação,
+    posicionamento e construção de marcas fortes para produtores rurais,
+    cooperativas e empresas do setor agropecuário.
+  cover-image: img/capa_branding_agro.png
+  favicon: img/capa_branding_agro.png
+  reader-mode: true
+  site-url: https://diegovidalcv.com.br/books/branding-agro/
+  repo-url: https://github.com/ldvsantos/cv/
+  repo-actions: [issue]
+  sharing: [twitter, facebook, linkedin]
+  downloads: [pdf]
+  search: true
+
+  page-footer:
+    left: "© Luiz Diego Vidal Santos, 2026. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
+    right: "Feito com [Quarto](https://quarto.org)"
+
+  chapters:
+    - index.qmd
+    - prefacio.qmd
+
+    - part: "Parte I — Fundamentos: O Agro e a Gestão de Marcas"
+      chapters:
+        - capitulos/01-transformacoes-mercado-agro.qmd
+        - capitulos/02-o-que-e-branding.qmd
+        - capitulos/03-marca-ativo-estrategico.qmd
+        - capitulos/04-branding-pequenos-medios-produtores.qmd
+
+    - part: "Parte II — Estratégia: Diferenciação no Agronegócio"
+      chapters:
+        - capitulos/05-estrategia-diferenciacao.qmd
+        - capitulos/06-ideias-diferenciadoras-agro.qmd
+        - capitulos/07-suporte-reforco-diferenciacao.qmd
+        - capitulos/08-beneficios-como-diferenciais.qmd
+        - capitulos/09-estrategia-produtos-portfolio.qmd
+
+    - part: "Parte III — Mercado: Público, Posicionamento e Marca"
+      chapters:
+        - capitulos/10-publico-ideal-agro.qmd
+        - capitulos/11-branding-b2b-agro.qmd
+        - capitulos/12-posicionamento-marca-agro.qmd
+        - capitulos/13-plataforma-marca.qmd
+        - capitulos/14-cases-branding-agro.qmd
+
+    - referencias.qmd
+
+bibliography: references.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+
+format:
+  html:
+    theme:
+      - cosmo
+      - custom.scss
+    code-link: true
+    lang: pt-BR
+    fig-align: center
+  pdf:
+    documentclass: scrbook
+    papersize: a4
+    fontsize: 11pt
+    lang: pt
+    toc: true
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - top=2.5cm
+      - bottom=2.5cm
+      - left=3cm
+      - right=2cm
+
+lang: pt-BR
