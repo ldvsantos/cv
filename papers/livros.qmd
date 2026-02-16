@@ -1,6 +1,6 @@
 ---
 title: "Livros"
-description: "Ebooks e livros publicados por Luiz Diego Vidal Santos, abrangendo Bioengenharia de Solos, Soluções Baseadas na Natureza e Propriedade Intelectual."
+description: "Ebooks e livros publicados por Luiz Diego Vidal Santos, abrangendo Branding no Agronegócio, Bioengenharia de Solos, Soluções Baseadas na Natureza e Propriedade Intelectual."
 ---
 
 ::: {.text-end .mb-3}
@@ -12,6 +12,27 @@ Livros e ebooks de autoria de **Luiz Diego Vidal Santos**, disponíveis em forma
 ## Ebooks
 
 ```{=html}
+<div class="book-card">
+  <div class="book-cover">
+    <a href="../books/branding-agro/">
+      <img src="../books/branding-agro/img/capa_branding.png" alt="Capa do ebook Gestão de Branding no Agronegócio">
+    </a>
+  </div>
+  <div class="book-info">
+    <p class="book-author">Luiz Diego Vidal Santos</p>
+    <h4 class="book-title">Gestão de Branding no Agronegócio</h4>
+    <p class="book-subtitle">Diferenciação, Posicionamento e Construção de Marcas no Agro</p>
+    <p class="book-desc">Livro-texto com 14 capítulos organizados em 3 partes, abordando fundamentos de branding, diferenciação e posicionamento aplicados ao agronegócio. Inclui estratégia de portfólio, público ideal, branding B2B, plataforma de marca, cases práticos e ferramentas de autoavaliação.</p>
+    <div class="book-meta">
+      <span><i class="bi bi-journal-text"></i> 14 capítulos</span>
+      <span><i class="bi bi-unlock"></i> CC BY-NC-SA 4.0</span>
+    </div>
+    <div class="book-actions">
+      <a href="../books/branding-agro/" class="btn btn-dark btn-sm"><i class="fa-solid fa-book-open"></i> Acessar o ebook</a>
+    </div>
+  </div>
+</div>
+
 <div class="book-card">
   <div class="book-cover">
     <a href="../books/bioengenharia-solos/">

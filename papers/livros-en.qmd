@@ -1,6 +1,6 @@
 ---
 title: "Books"
-description: "Ebooks and books published by Luiz Diego Vidal Santos, covering Soil Bioengineering, Nature-based Solutions and Intellectual Property."
+description: "Ebooks and books published by Luiz Diego Vidal Santos, covering Branding in Agribusiness, Soil Bioengineering, Nature-based Solutions and Intellectual Property."
 lang: en
 ---
 
@@ -13,6 +13,27 @@ Books and ebooks authored by **Luiz Diego Vidal Santos**, available in digital f
 ## Ebooks
 
 ```{=html}
+<div class="book-card">
+  <div class="book-cover">
+    <a href="../books/branding-agro/">
+      <img src="../books/branding-agro/img/capa_branding.png" alt="Cover of Branding Management in Agribusiness ebook">
+    </a>
+  </div>
+  <div class="book-info">
+    <p class="book-author">Luiz Diego Vidal Santos</p>
+    <h4 class="book-title">Branding Management in Agribusiness</h4>
+    <p class="book-subtitle">Differentiation, Positioning and Brand Building in Agribusiness</p>
+    <p class="book-desc">Textbook with 14 chapters organized in 3 parts, covering branding fundamentals, differentiation and positioning applied to agribusiness. Includes portfolio strategy, target audience, B2B branding, brand platform, practical case studies and self-assessment tools.</p>
+    <div class="book-meta">
+      <span><i class="bi bi-journal-text"></i> 14 chapters</span>
+      <span><i class="bi bi-unlock"></i> CC BY-NC-SA 4.0</span>
+    </div>
+    <div class="book-actions">
+      <a href="../books/branding-agro/" class="btn btn-dark btn-sm"><i class="fa-solid fa-book-open"></i> Access the ebook</a>
+    </div>
+  </div>
+</div>
+
 <div class="book-card">
   <div class="book-cover">
     <a href="../books/bioengenharia-solos/">
