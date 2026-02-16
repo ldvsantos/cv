@@ -22,6 +22,13 @@ Acesse as disciplinas para encontrar aulas, leituras recomendadas, videoaulas e 
 ```{=html}
 <div class="discipline-grid">
 
+<a class="discipline-card" href="branding-agro.html">
+<div class="disc-icon"><i class="fa-solid fa-tags"></i></div>
+<h4 class="disc-title">Gestão de Branding no Agronegócio</h4>
+<p class="disc-desc">Diferenciação, posicionamento, portfólio, público ideal, branding B2B, plataforma de marca e cases no agro.</p>
+<span class="disc-badge">14 aulas</span>
+</a>
+
 <a class="discipline-card" href="ciencia-da-paisagem.html">
 <div class="disc-icon"><i class="fa-solid fa-mountain-sun"></i></div>
 <h4 class="disc-title">Ciência da Paisagem</h4>
@@ -34,7 +41,7 @@ Acesse as disciplinas para encontrar aulas, leituras recomendadas, videoaulas e 
 <h4 class="disc-title">Bioengenharia de Solos</h4>
 <p class="disc-desc">Erosão linear, paliçadas permeáveis, drenos verdes, ecoengenharia e estabilização de taludes.</p>
 <span class="disc-badge">21 aulas</span>
-</a>
+
 
 <a class="discipline-card" href="geotecnologias-sig.html">
 <div class="disc-icon"><i class="fa-solid fa-map-location-dot"></i></div>
