@@ -85,6 +85,7 @@ format:
     toc: true
     number-sections: true
     colorlinks: true
+    include-in-header: cover.tex
     geometry:
       - top=2.5cm
       - bottom=2.5cm
