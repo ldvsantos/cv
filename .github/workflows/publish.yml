@@ -48,34 +48,14 @@ jobs:
           cp cv-luiz-diego-en.pdf _site/cv-luiz-diego-en.pdf
           cp cv-luiz-diego-es.pdf _site/cv-luiz-diego-es.pdf
 
-      - name: Backup book PDFs
-        run: |
-          mkdir -p /tmp/book-pdfs
-          for book in bioengenharia-solos ciencia-paisagem geotecnologias-sig pi branding-agro; do
-            if ls books/$book/_book/*.pdf 1> /dev/null 2>&1; then
-              echo "=== Backing up PDFs from $book ==="
-              mkdir -p /tmp/book-pdfs/$book
-              cp books/$book/_book/*.pdf /tmp/book-pdfs/$book/
-            fi
-          done
-
-      - name: Render Books (HTML only)
+      - name: Render Books (HTML + PDF)
         run: |
           for book in bioengenharia-solos ciencia-paisagem geotecnologias-sig pi branding-agro; do
             if [ -f "books/$book/_quarto.yml" ]; then
-              echo "=== Rendering $book ==="
+              echo "=== Rendering $book (HTML + PDF) ==="
               cd books/$book
-              quarto render --to html
+              quarto render
               cd ../..
-            fi
-          done
-
-      - name: Restore book PDFs
-        run: |
-          for book in bioengenharia-solos ciencia-paisagem geotecnologias-sig pi branding-agro; do
-            if [ -d "/tmp/book-pdfs/$book" ]; then
-              echo "=== Restoring PDFs to $book ==="
-              cp /tmp/book-pdfs/$book/*.pdf books/$book/_book/
             fi
           done
 
