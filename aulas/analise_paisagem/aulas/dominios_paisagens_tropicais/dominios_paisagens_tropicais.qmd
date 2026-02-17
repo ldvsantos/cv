@@ -1,0 +1,270 @@
+---
+title: "Análise da Paisagem"
+subtitle: "Domínios de Natureza e Paisagens Tropicais<br>Curso de Geografia"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise da Paisagem | Domínios e Paisagens Tropicais"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} O conceito de Geossistema na tradição franco-brasileira
+- [2]{.circle} Bertrand (1971): taxonomia da paisagem
+- [3]{.circle} Monteiro (1976/2000): geossistemas no Brasil
+- [4]{.circle} Ab'Sáber (2003): domínios de natureza
+- [5]{.circle} Aplicação: paisagens do semiárido baiano
+- [6]{.circle} Exercício: identificação de domínios morfoclimáticos
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Compreender as bases conceituais dos **geossistemas** e dos **domínios de natureza** como modelos de classificação e análise da paisagem brasileira, com ênfase na escola geográfica franco-brasileira.
+:::
+:::
+:::
+
+# [1  -  O GEOSSISTEMA: ORIGEM E EVOLUÇÃO]{.section-header}
+
+## De Sochava a Bertrand {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+O conceito de **geossistema** surgiu na escola soviética com Viktor Sochava (1963), que propôs tratar a paisagem como um sistema natural total — integrando litosfera, atmosfera, hidrosfera e biosfera.
+
+Georges **Bertrand** (1971) reformulou o conceito para a tradição francesa, acrescentando a **ação antrópica** como componente estruturante do geossistema e propondo uma **taxonomia hierárquica** das unidades de paisagem.
+
+> *"A paisagem não é a simples adição de elementos geográficos disparatados — é, em uma determinada porção do espaço, o resultado da combinação dinâmica, portanto instável, de elementos físicos, biológicos e antrópicos."*
+>
+> — Bertrand (1971)
+:::
+
+::: {.column width="40%"}
+::: {.callout-tip}
+## Referência Fundamental
+**BERTRAND, G.** (1971). Paysage et géographie physique globale: esquisse méthodologique. *Rev. Géogr. Pyrénées SO*, **39**(3), 249–272.
+
+Tradução brasileira em *RA'E GA*, v. 8, 2004.
+:::
+:::
+:::
+
+## Taxonomia das Unidades de Paisagem {.smaller-text}
+
+Bertrand propôs seis níveis taxonômicos hierárquicos para classificar as unidades de paisagem:
+
+| Nível | Unidade | Escala | Exemplo |
+|:-----:|:--------|:------:|:--------|
+| I | Zona | 10⁷–10⁸ ha | Zona tropical, zona temperada |
+| II | Domínio | 10⁶–10⁷ ha | Domínio das caatingas |
+| III | Região natural | 10⁵–10⁶ ha | Depressão sertaneja |
+| IV | **Geossistema** | 10³–10⁵ ha | Pediplano cristalino com caatinga arbórea |
+| V | Geofácies | 10¹–10³ ha | Vertente com solo raso e vegetação aberta |
+| VI | Geótopo | < 10¹ ha | Afloramento rochoso com liquens |
+
+: Taxonomia hierárquica de Bertrand (1971). {.striped .hover}
+
+::: {.callout-note}
+O **geossistema** é a unidade central de análise — escala compatível com bacias de 3ª–5ª ordem, onde a interação entre componentes é mais perceptível pela ação humana.
+:::
+
+## Tripé do Geossistema {.smaller-text}
+
+Bertrand concebeu o geossistema como a interação de três componentes:
+
+```{dot}
+//| fig-cap: "Modelo do Geossistema segundo Bertrand (1971): tripé funcional."
+//| fig-width: 7
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0]
+
+    G [label="GEOSSISTEMA", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
+    PE [label="Potencial Ecológico\nRelevo, Clima, Hidrologia", fillcolor="#BBDEFB", color="#1565C0"]
+    EB [label="Exploração Biológica\nVegetação, Solo, Fauna", fillcolor="#C8E6C9", color="#2E7D32"]
+    AA [label="Ação Antrópica\nUso da terra, Manejo", fillcolor="#FFE0B2", color="#E65100"]
+
+    G -> PE
+    G -> EB
+    G -> AA
+    PE -> EB [label="suporte", style=dashed]
+    EB -> AA [label="transformação", style=dashed]
+    AA -> PE [label="impacto", style=dashed, color="#C62828"]
+}
+```
+
+A retroalimentação entre ação antrópica e potencial ecológico é o que diferencia o geossistema de um simples ecossistema — a **sociedade** é vista como componente interno, não externo.
+
+# [2  -  MONTEIRO: GEOSSISTEMAS NO BRASIL]{.section-header}
+
+## Carlos Augusto de Figueiredo Monteiro {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+Monteiro (1976, 2000) adaptou o conceito de geossistema à realidade brasileira, enfatizando:
+
+- A **dinâmica climática** como motor de diferenciação paisagística no Brasil
+- A necessidade de integrar dados **quantitativos** (climatológicos, hidrológicos) com análise **qualitativa** (uso da terra, percepção)
+- O conceito de **derivações antropogênicas** — transformações impostas pela sociedade sobre o sistema natural
+
+Monteiro introduziu o termo **geossistema urbano** para cidades brasileiras, ampliando o conceito para além das paisagens rurais/naturais.
+:::
+
+::: {.column width="40%"}
+::: {.callout-tip}
+## Referência
+**MONTEIRO, C.A.F.** (2000). *Geossistemas: a história de uma procura*. São Paulo: Contexto.
+:::
+:::
+:::
+
+## Derivações Antropogênicas {.smaller-text}
+
+Monteiro classificou as derivações antropogênicas em três tipos:
+
+| Tipo de derivação | Descrição | Exemplo no Semiárido |
+|:------------------|:----------|:---------------------|
+| **Supressão** | Remoção de componentes do sistema | Desmatamento da caatinga para pecuária |
+| **Inserção** | Introdução de componentes exógenos | Irrigação em áreas de sequeiro; espécies exóticas |
+| **Alteração funcional** | Mudança nos fluxos e nos ritmos | Barramento de rios; urbanização de várzeas |
+
+: Tipos de derivações antropogênicas (Monteiro, 2000). {.striped .hover}
+
+Essas derivações **acumulam-se no tempo**, criando trajetórias de degradação ou de recuperação que só são compreensíveis na perspectiva do geossistema.
+
+# [3  -  AB'SÁBER: DOMÍNIOS DE NATUREZA]{.section-header}
+
+## Os Domínios Morfoclimáticos {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+Aziz **Ab'Sáber** (2003) sintetizou décadas de pesquisa geomorfológica em uma classificação das grandes paisagens brasileiras em **seis domínios morfoclimáticos**:
+
+1. **Amazônico** — terras baixas florestadas
+2. **Cerrado** — chapadões tropicais com cerrados e florestas-galeria
+3. **Mares de Morros** — relevo mamelonizado com Mata Atlântica
+4. **Caatingas** — depressões interplanálticas semiáridas
+5. **Araucárias** — planalto meridional com floresta mista
+6. **Pradarias** — campos do sul com coxilhas
+
+Entre os domínios situam-se as **faixas de transição** (*ecótonos macro-regionais*), onde as características se interpenetram.
+:::
+
+::: {.column width="45%"}
+::: {.callout-tip}
+## Referência Fundamental
+**AB'SÁBER, A.N.** (2003). *Os domínios de natureza no Brasil: potencialidades paisagísticas*. São Paulo: Ateliê Editorial.
+:::
+:::
+:::
+
+## Três Níveis de Compreensão {.smaller-text}
+
+Ab'Sáber propôs três **níveis taxonômicos** de leitura do meio ambiente:
+
+| Nível | Acesso | O que revela |
+|:-----:|:-------|:-------------|
+| 1º | **Compartimentação topográfica** | Formas de relevo regional (planaltos, depressões, planícies) |
+| 2º | **Estrutura superficial da paisagem** | Solos, formações superficiais, mantos de intemperismo |
+| 3º | **Fisiologia da paisagem** | Dinâmica climática, hidrológica e ecológica atual |
+
+: Três níveis de compreensão do meio ambiente (Ab'Sáber, 2003). {.striped .hover}
+
+::: {.callout-important}
+O 3º nível — **fisiologia da paisagem** — corresponde à dinâmica dos processos atuais e é o mais suscetível às derivações antropogênicas de Monteiro.
+:::
+
+## Domínio das Caatingas e o Semiárido Baiano {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+Características do domínio:
+
+- Depressões interplanálticas entre 200–500 m
+- Clima BSh (Köppen): P < 800 mm/ano, chuvas concentradas em 3–5 meses
+- Solos rasos (Neossolos Litólicos, Luvissolos)
+- Vegetação caducifólia: arbustiva a arbórea
+- **Paleoclimas**: evidências de períodos mais úmidos (enclaves de mata)
+
+Aplicação para a Bahia:
+
+- Bacia do Paraguaçu: transição Caatinga–Mata Atlântica
+- Chapada Diamantina: refúgio de altitude (campos rupestres)
+- Raso da Catarina: caatinga hiperxerófila
+:::
+
+::: {.column width="50%"}
+### Exercício orientado
+
+1. No Google Earth Engine ou QGIS, delimite em sua área de estudo os **compartimentos topográficos** (1º nível de Ab'Sáber)
+2. Sobreponha mapas de solo e cobertura vegetal → **estrutura superficial** (2º nível)
+3. Analise séries NDVI (12 meses) → **fisiologia** (3º nível)
+4. Identifique qual **domínio** ou **faixa de transição** sua área representa
+:::
+:::
+
+# [4  -  SÍNTESE E CONEXÕES]{.section-header}
+
+## Bertrand × Monteiro × Ab'Sáber {.smaller-text}
+
+| Aspecto | Bertrand (1971) | Monteiro (2000) | Ab'Sáber (2003) |
+|:--------|:----------------|:----------------|:----------------|
+| **Unidade central** | Geossistema | Geossistema urbano/rural | Domínio morfoclimático |
+| **Escala** | 10³–10⁵ ha | 10⁴–10⁶ ha | 10⁶–10⁷ ha |
+| **Ênfase** | Taxonomia + ação antrópica | Derivações + clima | Geomorfologia + paleoclima |
+| **Força** | Modelo integrador operacional | Aplicação brasileira | Visão continental |
+| **Limitação** | Pouco quantitativo | Dados difíceis de escalar | Baixa resolução local |
+
+: Comparação entre as três abordagens. {.striped .hover}
+
+As três abordagens são **complementares**: Ab'Sáber define o enquadramento macro, Bertrand fornece a taxonomia operacional e Monteiro insere a dinâmica temporal e antrópica.
+
+## Conexão com a Disciplina {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Para cima (escalas maiores)
+- Os domínios de Ab'Sáber contextualizam a **paisagem regional**
+- Determinam o **potencial ecológico** de base
+
+### Para baixo (escalas menores)
+- Geossistema → geofácies → geótopo de Bertrand
+- Conecta-se às **métricas FRAGSTATS** aplicadas em nível de mancha
+:::
+
+::: {.column width="50%"}
+### Para a prática
+- **Diagnóstico integrado** (Aula 20) utiliza os 3 níveis de Ab'Sáber
+- **Zoneamento geoambiental** (Aula 22) aplica a taxonomia de Bertrand
+- **Trabalho de campo** (Aula 25) coleta dados para validar a fisiologia da paisagem
+:::
+:::
+
+## Leituras Recomendadas
+
+- **BERTRAND, G.** (1971). Paysage et géographie physique globale. *Rev. Géogr. Pyrénées SO*, 39(3), 249–272.
+- **MONTEIRO, C.A.F.** (2000). *Geossistemas: a história de uma procura*. São Paulo: Contexto.
+- **AB'SÁBER, A.N.** (2003). *Os domínios de natureza no Brasil*. São Paulo: Ateliê Editorial.
+- **METZGER, J.P.** (2001). O que é ecologia de paisagens? *Biota Neotropica*, 1(1), 1–9.

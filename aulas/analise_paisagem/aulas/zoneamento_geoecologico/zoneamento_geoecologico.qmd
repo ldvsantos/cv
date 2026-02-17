@@ -1,0 +1,276 @@
+---
+title: "Análise da Paisagem"
+subtitle: "Zoneamento Geoecológico: Ecodinâmica e Unidades Geoambientais<br>Curso de Geografia"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise da Paisagem | Zoneamento Geoecológico"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Escola franco-alemã de geomorfologia aplicada
+- [2]{.circle} Tricart (1977): ecodinâmica e meios morfodinâmicos
+- [3]{.circle} Taxonomia dos meios: estáveis, intergrades e instáveis
+- [4]{.circle} Princípios do zoneamento geoecológico
+- [5]{.circle} Integração com ZEE e instrumentos de gestão
+- [6]{.circle} Exercício: mapa ecodinâmico simplificado
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Compreender os fundamentos da **ecodinâmica** de Tricart e sua aplicação no **zoneamento geoecológico**, integrando geomorfologia, processos erosivos e capacidade de suporte como base para o planejamento territorial.
+:::
+:::
+:::
+
+# [1  -  ESCOLA FRANCO-ALEMÃ DE GEOMORFOLOGIA]{.section-header}
+
+## Geomorfologia Aplicada à Paisagem {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+A escola franco-alemã (séc. XIX–XX) estabeleceu que o **relevo** é a variável estruturante da paisagem:
+
+- **Alexander von Humboldt** (1807): paisagem como totalidade integrada — *Naturgemälde*
+- **Pierre Birot** (1968): relação entre processos morfogenéticos e clima como base para classificar paisagens
+- **Jean Tricart** (1965, 1977): integração geomorfologia + ecologia → **ecodinâmica**
+
+A contribuição central dessa escola é tratar o relevo não como cenário passivo, mas como **regulador de fluxos** (água, sedimentos, nutrientes, energia) que determinam a aptidão do território.
+:::
+
+::: {.column width="40%"}
+::: {.callout-tip}
+## Referência Fundamental
+**TRICART, J.** (1977). *Ecodinâmica*. Rio de Janeiro: IBGE/SUPREN.
+
+Obra que estabeleceu a classificação dos meios em função do balanço entre **morfogênese** e **pedogênese**.
+:::
+:::
+:::
+
+## Relevo como Regulador de Processos {.smaller-text}
+
+```{dot}
+//| fig-cap: "Relevo como regulador dos processos que condicionam a paisagem."
+//| fig-width: 8
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0]
+
+    R [label="RELEVO\n(Declividade, Forma, Altitude)", fillcolor="#8D6E63", fontcolor="white", color="#5D4037", penwidth=1.5]
+    H [label="Processos Hidrológicos\nEscoamento, Infiltração", fillcolor="#BBDEFB", color="#1565C0"]
+    E [label="Processos Erosivos\nMorfogênese", fillcolor="#FFCDD2", color="#C62828"]
+    P [label="Processos Pedogenéticos\nFormação de Solos", fillcolor="#C8E6C9", color="#2E7D32"]
+    V [label="Cobertura Vegetal\nProteção, Biomassa", fillcolor="#A5D6A7", color="#2E7D32"]
+
+    R -> H
+    R -> E
+    R -> P
+    H -> V
+    P -> V
+    V -> E [label="proteção", style=dashed, dir=back, color="#2E7D32"]
+    E -> P [label="competição", style=dashed, color="#C62828"]
+}
+```
+
+A chave da ecodinâmica está na **competição** entre morfogênese (processos que desgastam e transportam) e pedogênese (processos que formam solo e acumulam matéria orgânica).
+
+# [2  -  TRICART: A ECODINÂMICA]{.section-header}
+
+## Conceito de Ecodinâmica {.smaller-text}
+
+Tricart (1977) propôs classificar os meios em função do **balanço morfogênese–pedogênese**:
+
+> *"Em todo ponto da superfície terrestre existe uma competição entre os processos de formação do solo (pedogênese) e os processos de remoção de material (morfogênese). O equilíbrio entre eles define a estabilidade ecodinâmica do meio."*
+
+Esse balanço é governado por:
+
+- **Declividade** — acelerador da morfogênese
+- **Cobertura vegetal** — regulador biótico que protege o solo
+- **Clima** — intensidade e distribuição dos agentes erosivos (chuva, vento)
+- **Litologia e solos** — resistência do substrato
+
+## Meios Ecodinâmicos {.smaller-text}
+
+| Categoria | Balanço | Características | Exemplo | Uso recomendado |
+|:----------|:--------|:----------------|:--------|:----------------|
+| **Estável** | Pedogênese > Morfogênese | Solos profundos, cobertura densa, baixa declividade | Tabuleiros costeiros com Mata Atlântica | Uso sustentável, conservação |
+| **Intergrade** (Transição) | Equilíbrio instável | Processos simultaneamente ativos, sensível a perturbações | Encostas com capoeira em regeneração | Manejo cuidadoso, amortecimento |
+| **Instável** | Morfogênese > Pedogênese | Erosão acelerada, solos rasos ou expostos | Vertentes desmatadas, voçorocas ativas | Contenção, revegetação urgente |
+
+: Classificação ecodinâmica dos meios (Tricart, 1977). {.striped .hover}
+
+::: {.callout-warning}
+## Atenção
+A retirada da cobertura vegetal pode converter um meio **estável** em **instável** em poucos anos — a transição é frequentemente irreversível sem intervenção técnica.
+:::
+
+## Meios Instáveis: Processos Dominantes {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+Em meios instáveis predominam:
+
+- **Escoamento superficial difuso e concentrado** (ravinas, voçorocas)
+- **Movimentos de massa** (deslizamentos, corridas de lama)
+- **Deflação eólica** (em áreas secas com solo exposto)
+- **Assoreamento** de cursos d'água
+
+> Consequência: perda de capacidade produtiva, redução da biodiversidade, aumento de riscos a populações.
+:::
+
+::: {.column width="50%"}
+Em meios estáveis predominam:
+
+- **Infiltração** > escoamento superficial
+- **Ciclagem de nutrientes** eficiente (serrapilheira + biota)
+- **Formação de solos** profundos e estruturados
+- **Regulação hídrica** (nascentes perenes, aquíferos recargados)
+
+> Consequência: serviços ecossistêmicos mantidos, resiliência a eventos extremos.
+:::
+:::
+
+# [3  -  ZONEAMENTO GEOECOLÓGICO]{.section-header}
+
+## Princípios do Zoneamento Geoecológico {.smaller-text}
+
+O zoneamento geoecológico aplica a ecodinâmica de Tricart para dividir o território em **unidades homogêneas** quanto à estabilidade, aptidão e vulnerabilidade:
+
+```{dot}
+//| fig-cap: "Fluxo metodológico do zoneamento geoecológico baseado em ecodinâmica."
+//| fig-width: 9
+digraph {
+    rankdir=LR
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=9, margin="0.2,0.1", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0, fontname="Helvetica", fontsize=8]
+
+    A [label="Dados de\nBase", fillcolor="#E3F2FD", color="#1565C0"]
+    B [label="Mapa de\nDeclividade", fillcolor="#BBDEFB", color="#1565C0"]
+    C [label="Mapa de\nCobertura", fillcolor="#C8E6C9", color="#2E7D32"]
+    D [label="Mapa de\nSolos", fillcolor="#FFE0B2", color="#E65100"]
+    E [label="Álgebra\nde Mapas", fillcolor="#E1BEE7", color="#6A1B9A"]
+    F [label="Mapa\nEcodinâmico", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
+    G [label="Zoneamento\nGeoecológico", fillcolor="#1B5E20", fontcolor="white", color="#0D3310", penwidth=1.5]
+
+    A -> B
+    A -> C
+    A -> D
+    B -> E
+    C -> E
+    D -> E
+    E -> F [label="classificação\necodinâmica"]
+    F -> G [label="+ legislação\n+ aptidão"]
+}
+```
+
+## Critérios de Classificação no QGIS {.smaller-text}
+
+Exemplificação prática usando álgebra de mapas:
+
+| Critério | Estável | Intergrade | Instável |
+|:---------|:--------|:-----------|:---------|
+| Declividade (°) | 0–8 | 8–20 | > 20 |
+| Cobertura vegetal | Floresta densa / cerrado denso | Capoeira / pastagem com árvores | Solo exposto / pastagem degradada |
+| Solos | Latossolo / Argissolo profundo | Cambissolo / Neossolo Regolítico | Neossolo Litólico / afloramento |
+| Erodibilidade (K) | < 0,02 | 0,02–0,04 | > 0,04 |
+
+: Critérios práticos para classificação ecodinâmica por álgebra de mapas. {.striped .hover}
+
+::: {.callout-note}
+## Método no QGIS
+Use a **Calculadora Raster** para somar os scores de cada critério em escala 1–3 (estável=1, intergrade=2, instável=3). O resultado final classifica cada pixel da paisagem.
+:::
+
+# [4  -  INTEGRAÇÃO COM INSTRUMENTOS DE GESTÃO]{.section-header}
+
+## Ecodinâmica e ZEE {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+O **Zoneamento Ecológico-Econômico (ZEE)** utiliza princípios ecodinâmicos na definição de zonas:
+
+| Zona ZEE | Base Ecodinâmica |
+|:---------|:-----------------|
+| Zona de proteção | Meios instáveis + APPs |
+| Zona de conservação | Meios intergrades |
+| Zona de uso sustentável | Meios estáveis com aptidão |
+| Zona de recuperação | Meios instáveis antropizados |
+
+O ZEE do estado da Bahia (SEI/SEMA) utilizou critérios geomorfológicos derivados da ecodinâmica de Tricart.
+:::
+
+::: {.column width="50%"}
+### Relação com o Código Florestal
+
+- **APPs** (Art. 4º): protegem meios instáveis por definição legal (encostas > 45°, topos de morros, margens de rios)
+- **Reserva Legal**: preserva mosaico de meios estáveis → mantém pedogênese e ciclagem
+- **CAR**: georreferencia a situação ecodinâmica de cada propriedade
+:::
+:::
+
+## Exercício Prático {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Roteiro
+
+1. Na sua área de estudo (QGIS), gere o mapa de declividade a partir do MDE
+2. Reclassifique em 3 classes: 0–8°, 8–20°, > 20°
+3. Sobreponha com o mapa de uso/cobertura (MapBiomas)
+4. Aplique álgebra de mapas para gerar o **mapa ecodinâmico**
+5. Compare com APPs e áreas de conflito de uso
+:::
+
+::: {.column width="50%"}
+### Produto esperado
+
+- Mapa ecodinâmico classificado (estável / intergrade / instável)
+- Tabela com áreas (ha e %) por categoria
+- Análise de **conflitos**: áreas instáveis com uso intensivo
+- Recomendação: quais áreas requerem mudança de uso?
+:::
+:::
+
+# [5  -  SÍNTESE]{.section-header}
+
+## Conexão com a Disciplina {.smaller-text}
+
+| Tema desta aula | Conexão com outras aulas |
+|:----------------|:------------------------|
+| Ecodinâmica de Tricart | → Diagnóstico Integrado (Aula 20) |
+| Zoneamento geoecológico | → Zoneamentos Aplicados (Aula 22) |
+| Álgebra de mapas | → Cartografia Temática (Aula 07) |
+| Classificação do relevo | → Trabalho de Campo (Aula 25) |
+| Meios estáveis/instáveis | → Domínios de Ab'Sáber (aula anterior) |
+
+## Leituras Recomendadas
+
+- **TRICART, J.** (1977). *Ecodinâmica*. Rio de Janeiro: IBGE/SUPREN.
+- **BIROT, P.** (1968). *The Cycle of Erosion in Different Climates*. London: Batsford.
+- **ROSS, J.L.S.** (1994). Análise empírica da fragilidade dos ambientes naturais e antropizados. *Rev. Depto. Geografia USP*, 8, 63–74.
+- **CREPANI, E. et al.** (2001). *Sensoriamento remoto e geoprocessamento aplicados ao zoneamento ecológico-econômico e ao ordenamento territorial*. São José dos Campos: INPE.

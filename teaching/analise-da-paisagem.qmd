@@ -1,5 +1,5 @@
 ---
-title: "Ciência da Paisagem"
+title: "Análise da Paisagem"
 description: "Ambiente virtual da disciplina de Análise da Paisagem — aulas, leituras, vídeos e recursos."
 ---
 
@@ -11,10 +11,10 @@ description: "Ambiente virtual da disciplina de Análise da Paisagem — aulas, 
 <div class="ava-header">
   <div class="ava-icon"><i class="fa-solid fa-mountain-sun"></i></div>
   <div>
-    <h2 class="ava-title">Ciência da Paisagem</h2>
+    <h2 class="ava-title">Análise da Paisagem</h2>
     <p class="ava-subtitle">Abordagem sistêmica integrando ecologia da paisagem, sensoriamento remoto, métricas espaciais, diagnóstico integrado e planejamento territorial.</p>
     <div class="ava-stats">
-      <span class="ava-stat"><i class="fa-solid fa-display"></i> 22 aulas</span>
+      <span class="ava-stat"><i class="fa-solid fa-display"></i> 28 aulas + 2 extras</span>
       <span class="ava-stat"><i class="fa-solid fa-book"></i> Leituras</span>
       <span class="ava-stat"><i class="fa-solid fa-video"></i> Vídeos</span>
     </div>
@@ -48,10 +48,13 @@ Fundamentos conceituais e epistemológicos da paisagem na Geografia e áreas afi
 | 9ª | 17-18 | Conectividade funcional e métricas FRAGSTATS; Exercício: interpretação de indicadores. |
 | 10ª | 19-20 | Unidades de paisagem; Diagnóstico integrado (pressões, conflitos, vulnerabilidades). |
 | 11ª | 21-22 | Planejamento territorial e diretrizes; Zoneamentos aplicados (geoambiental/risco/aptidão). |
-| **12ª** | **23-24** | **2ª AVALIAÇÃO (PRÁTICA I – em grupo): *Serious Game*/Desafio (diagnóstico + diretrizes)**. |
-| 13ª | 25-26 | Atividade de campo; Organização de evidências e orientação para relatório técnico. |
-| **14ª** | **27-28** | **3ª AVALIAÇÃO (PRÁTICA II – individual): entrega do Relatório Técnico de Campo**. |
-| **15ª** | **29-30** | **4ª AVALIAÇÃO (TEÓRICA II – individual): integração de métodos e tomada de decisão**. |
+| 12ª | 23-24 | Domínios e paisagens tropicais (Bertrand, Monteiro, Ab'Sáber); Zoneamento geoecológico (Tricart). |
+| 13ª | 25-26 | Percepção e valoração da paisagem (Tuan, Cosgrove); Legislação ambiental e paisagem (Código Florestal, CAR, ZEE). |
+| 14ª | 27-28 | Sensoriamento remoto avançado (LiDAR, SAR, drones); Validação de modelos e controle de qualidade. |
+| **15ª** | **29-30** | **2ª AVALIAÇÃO (PRÁTICA I – em grupo): *Serious Game*/Desafio (diagnóstico + diretrizes)**. |
+| 16ª | 31-32 | Atividade de campo; Organização de evidências e orientação para relatório técnico. |
+| **17ª** | **33-34** | **3ª AVALIAÇÃO (PRÁTICA II – individual): entrega do Relatório Técnico de Campo**. |
+| **18ª** | **35-36** | **4ª AVALIAÇÃO (TEÓRICA II – individual): integração de métodos e tomada de decisão**. |
 
 : {.striped .hover}
 
@@ -242,6 +245,76 @@ Fundamentos conceituais e epistemológicos da paisagem na Geografia e áreas afi
 </div>
 </a>
 
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/dominios_paisagens_tropicais/dominios_paisagens_tropicais.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 23 | Domínios e Paisagens Tropicais</h4>
+<p>Bertrand (geossistema), Monteiro (derivações antropogênicas) e Ab'Sáber (domínios morfoclimáticos).</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/zoneamento_geoecologico/zoneamento_geoecologico.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 24 | Zoneamento Geoecológico</h4>
+<p>Ecodinâmica de Tricart: morfogênese, pedogênese e classificação de estabilidade.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/percepcao_valoracao_paisagem/percepcao_valoracao_paisagem.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 25 | Percepção e Valoração da Paisagem</h4>
+<p>Tuan (topofilia), Berque (paisagem-marca/matriz) e Cosgrove (paisagem como ideologia).</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/legislacao_ambiental_paisagem/legislacao_ambiental_paisagem.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 26 | Legislação Ambiental e Paisagem</h4>
+<p>Código Florestal, CAR, ZEE, EIA/RIMA: instrumentos legais aplicados à análise da paisagem.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/sensoriamento_remoto_avancado/sensoriamento_remoto_avancado.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 27 | Sensoriamento Remoto Avançado</h4>
+<p>LiDAR, SAR, drones, GEDI e integração multissensor para diagnóstico paisagístico.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/aulas/validacao_modelos_paisagem/validacao_modelos_paisagem.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Aula 28 | Validação de Modelos</h4>
+<p>Matriz de confusão, acurácia temática, análise de incerteza e sensibilidade em mapeamentos.</p>
+</div>
+</a>
+
+</div>
+
+<h4 style="margin-top:1.5rem; color:#6A1B9A;"><i class="fa-solid fa-flask"></i> Aulas Extras (Complementares)</h4>
+
+<div class="slide-grid">
+
+<a class="slide-card" href="../aulas/analise_paisagem/extras/bioengenharia_controle_erosao/bioengenharia_controle_erosao.html" target="_blank">
+<div class="slide-icon" style="background:#6A1B9A;"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Extra 01 | Bioengenharia e Controle de Erosão</h4>
+<p>Técnicas biotécnicas, geotêxteis naturais e integração com restauração paisagística.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../aulas/analise_paisagem/extras/modelagem_quantitativa_paisagem/modelagem_quantitativa_paisagem.html" target="_blank">
+<div class="slide-icon" style="background:#6A1B9A;"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<h4>Extra 02 | Modelagem Quantitativa de Paisagem</h4>
+<p>Modelos LUCC, conectividade por grafos/circuitos, InVEST e simulação de cenários.</p>
+</div>
+</a>
+
 </div>
 ```
 
@@ -260,8 +333,8 @@ Leituras fundamentais sobre paisagem, geossistemas e ecologia da paisagem.
 </div>
 </a>
 
-<a class="resource-card" href="https://www.scielo.br/j/bn/a/Jbchd6rjY35PGkY5BHPz63S/?format=pdf&lang=pt" target="_blank">
-<div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
+<a class="resource-card" href="https://www.scielo.br/j/bn/a/Jbchd6rjY35PGkY5BHPz63S/?format=html&lang=pt" target="_blank">
+<div class="res-icon"><i class="fa-solid fa-file-lines"></i></div>
 <div class="res-info">
 <h4>Metzger, J. P. (2001)</h4>
 <p>O que é ecologia de paisagens? — abordagem biofísica e mosaico heterogêneo.</p>
@@ -284,27 +357,51 @@ Leituras fundamentais sobre paisagem, geossistemas e ecologia da paisagem.
 </div>
 </a>
 
-<a class="resource-card" href="https://archive.org/search.php?query=alexander%20humboldt%20quadros%20natureza" target="_blank">
+<a class="resource-card" href="https://www.revista.ueg.br/index.php/elisee/pt_BR/article/view/3122/2130" target="_blank">
 <div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
 <div class="res-info">
-<h4>Humboldt, A. von (1807)</h4>
-<p>Quadros da Natureza — paisagem como Naturgemälde, unindo mensuração e sensibilidade estética.</p>
+<h4>Barbosa, L. G.; Gonçalves, D. L. (2014)</h4>
+<p>A paisagem em Geografia: diferentes escolas e abordagens — Élisée, Rev. Geo. UEG.</p>
 </div>
 </a>
 
-<a class="resource-card" href="https://scholar.google.com/scholar?q=Yi-Fu+Tuan+Topofilia" target="_blank">
-<div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
+<a class="resource-card" href="https://archivo.revistas.ucr.ac.cr//index.php/filosofia/article/view/28302" target="_blank">
+<div class="res-icon"><i class="fa-solid fa-file-lines"></i></div>
 <div class="res-info">
-<h4>Tuan, Y.-F. (1974)</h4>
-<p>Topofilia — elo afetivo entre pessoas e lugar, paisagem como experiência que se cristaliza.</p>
+<h4>Castillo Poveda, M. A. (2017)</h4>
+<p>Contextualización histórica del concepto de paisaje, sus implicaciones filosóficas y científicas.</p>
 </div>
 </a>
 
-<a class="resource-card" href="https://scholar.google.com/scholar?q=Yi-Fu+Tuan+Espaço+e+Lugar" target="_blank">
+<a class="resource-card" href="https://www.researchgate.net/publication/276846637_O_patrimonio_e_as_paisagens_novos_conceitos_para_velhas_concepcoes" target="_blank">
+<div class="res-icon"><i class="fa-solid fa-file-lines"></i></div>
+<div class="res-info">
+<h4>Figueiredo, V. G. B. (2013)</h4>
+<p>O patrimônio e as paisagens: novos conceitos para velhas concepções? — Paisagem e Ambiente.</p>
+</div>
+</a>
+
+<a class="resource-card" href="https://www.researchgate.net/profile/Valdir-Steinke/publication/367453182_Geografia_da_Paisagem_Multiplas_Abordagens/links/63dc192464fc8606380b739c/Geografia-da-Paisagem-Multiplas-Abordagens.pdf" target="_blank">
 <div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
 <div class="res-info">
-<h4>Tuan, Y.-F. (1977)</h4>
-<p>Espaço e Lugar — a "pausa" no movimento onde a experiência se inscreve na paisagem.</p>
+<h4>Steinke, V. A. et al. (2023)</h4>
+<p>Geografia da Paisagem: Múltiplas Abordagens — livro com contribuições interdisciplinares.</p>
+</div>
+</a>
+
+<a class="resource-card" href="https://www.eumed.net/es/libros/libro/dinamica-da-paisagem" target="_blank">
+<div class="res-icon"><i class="fa-solid fa-book"></i></div>
+<div class="res-info">
+<h4>Oliveira-Costa, J. L. P.; Zacharias, A. A. (2022)</h4>
+<p>Métodos e técnicas no estudo da dinâmica da paisagem física nos países da CPLP.</p>
+</div>
+</a>
+
+<a class="resource-card" href="https://www.editora.puc-rio.br/media/ebook_paisagem_espaco_e_sustentabilidade.pdf" target="_blank">
+<div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
+<div class="res-info">
+<h4>Veiga, T. C.; Jáuregui, L. (Orgs.)</h4>
+<p>Paisagem, Espaço e Sustentabilidades — e-book PUC-Rio sobre sustentabilidade e paisagem.</p>
 </div>
 </a>
 
@@ -314,7 +411,7 @@ Leituras fundamentais sobre paisagem, geossistemas e ecologia da paisagem.
 ::: {.callout-tip collapse="true" icon=false}
 ## {{< fa plus-circle >}} Como sugerir uma leitura?
 
-Envie pelo [e-mail do professor](mailto:ldvsantos@uefs.br) com o assunto "Sugestão de leitura — Ciência da Paisagem".
+Envie pelo [e-mail do professor](mailto:ldvsantos@uefs.br) com o assunto "Sugestão de leitura — Análise da Paisagem".
 :::
 
 ### {{< fa video >}} Videoaulas

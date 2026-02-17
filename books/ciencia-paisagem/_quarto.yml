@@ -3,8 +3,8 @@ project:
   output-dir: _book
 
 book:
-  title: "Ciência da Paisagem"
-  subtitle: "Fundamentos, Métodos de Análise e Planejamento Territorial"
+  title: "Análise da Paisagem"
+  subtitle: "Fundamentos, Métodos e Planejamento Territorial"
   author:
     - name: "Luiz Diego Vidal Santos"
       url: https://diegovidalcv.com.br/
@@ -15,7 +15,7 @@ book:
   date: "2026-02-15"
   date-format: "DD/MM/YYYY"
   description: |
-    Livro-texto sobre Ciência da Paisagem com ênfase em análise da paisagem,
+    Livro-texto sobre Análise da Paisagem,
     integrando ecologia da paisagem, métricas espaciais, sensoriamento remoto,
     geoprocessamento e planejamento territorial para gestão sustentável
     de paisagens tropicais.
@@ -37,7 +37,7 @@ book:
     - index.qmd
     - prefacio.qmd
 
-    - part: "Parte I — Fundamentos da Ciência da Paisagem"
+    - part: "Parte I — Fundamentos da Análise da Paisagem"
       chapters:
         - capitulos/01-introducao.qmd
         - capitulos/02-ecologia-paisagem.qmd

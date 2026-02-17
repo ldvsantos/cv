@@ -1,0 +1,370 @@
+---
+title: "Análise da Paisagem"
+subtitle: "Sensoriamento Remoto Avançado Aplicado à Paisagem<br>Curso de Geografia"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise da Paisagem | Sensoriamento Remoto Avançado"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Além do óptico: LiDAR, SAR e dados hiperespectrais
+- [2]{.circle} LiDAR e a estrutura tridimensional da paisagem
+- [3]{.circle} SAR (Radar de Abertura Sintética) e monitoramento contínuo
+- [4]{.circle} RPAs (drones) na análise da paisagem
+- [5]{.circle} Google Earth Engine: séries temporais e classificação
+- [6]{.circle} Estudo de caso: integração multissensor
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Conhecer sensores e plataformas avançadas — **LiDAR**, **SAR**, **RPAs** — e suas aplicações específicas na análise da paisagem, incluindo **limitações** e critérios de escolha.
+:::
+:::
+:::
+
+# [1  -  ALÉM DO ÓPTICO]{.section-header}
+
+## Limites das imagens ópticas {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+As aulas anteriores trabalharam com imagens **ópticas multiespectrais** (Landsat, Sentinel-2, MapBiomas). Essas imagens:
+
+- ✅ Ampla disponibilidade temporal (1984–presente)
+- ✅ Resolução adequada para métricas de paisagem
+- ✅ Processamento em nuvem (GEE)
+
+Mas apresentam **limitações**:
+
+- ❌ Dependem de céu limpo → problemas em regiões úmidas/nubladas
+- ❌ Registram apenas a **superfície** → não captam estrutura vertical
+- ❌ Resolução espacial moderada (10–30 m) → insuficiente para microhabitats
+- ❌ Confusão espectral entre classes semelhantes
+:::
+
+::: {.column width="50%"}
+### Sensores complementares
+
+| Sensor | Princípio | O que resolve |
+|:-------|:----------|:--------------|
+| **LiDAR** | Pulsos laser | Estrutura 3D, altimetria sub-métrica |
+| **SAR** | Micro-ondas | Cobertura sob nuvens, umidade do solo |
+| **Hiperespectral** | Centenas de bandas | Discriminação de espécies vegetais |
+| **Termal** | Emissão infravermelha | Ilhas de calor, estresse hídrico |
+| **RPA** | Câmera RGB/multi | Ultra-alta resolução (cm), flexibilidade temporal |
+
+: Sensores avançados para análise da paisagem. {.striped .hover}
+:::
+:::
+
+# [2  -  LIDAR E A ESTRUTURA 3D]{.section-header}
+
+## Como funciona o LiDAR {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+O LiDAR (*Light Detection and Ranging*) emite **pulsos laser** e mede o tempo de retorno:
+
+- **Primeiro retorno** → topo do dossel
+- **Retornos intermediários** → sub-bosque
+- **Último retorno** → superfície do solo
+
+Isso permite gerar:
+
+- **MDS** (Modelo Digital de Superfície) — inclui vegetação e edificações
+- **MDT** (Modelo Digital de Terreno) — solo "nu"
+- **CHM** (Canopy Height Model) = MDS − MDT → altura do dossel
+
+**Resolução típica**: 1–5 pontos/m² (aerotransportado), >100 pts/m² (terrestre)
+:::
+
+::: {.column width="45%"}
+### Aplicações na paisagem
+
+| Produto LiDAR | Aplicação paisagística |
+|:---------------|:-----------------------|
+| CHM | Mapeamento de estágios sucessionais |
+| MDT | Geomorfologia de detalhe (voçorocas, paleocanais) |
+| Densidade de retornos | Estratificação vertical da vegetação |
+| Intensidade | Classificação de cobertura do solo |
+| Gap fraction | Conectividade de dossel |
+
+: {.striped .hover}
+:::
+:::
+
+## LiDAR no Brasil: dados disponíveis {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+### Fontes de dados LiDAR gratuitos
+
+1. **BCDAM/DSG** — cobertura militar de algumas regiões
+2. **SEMA-SP** — levantamento do estado de São Paulo (projeto DATAGEO)
+3. **OpenTopography** — repositório global, alguns projetos no Brasil
+4. **ICESat-2 / GEDI** — LiDAR orbital da NASA (resolução de footprint)
+
+### ICESat-2 e GEDI: LiDAR orbital
+
+- **GEDI** (2019–2023): footprints de 25 m, altura do dossel em regiões tropicais
+- **ICESat-2**: altimetria laser precisa, transectos ao longo das órbitas
+- Não produzem MDT contínuo, mas permitem calibrar modelos de biomassa e altura com dados Sentinel/Landsat
+:::
+
+::: {.column width="45%"}
+::: {.callout-warning}
+## Limitações do LiDAR
+- **Custo alto** para levantamentos aerotransportados dedicados
+- **Cobertura espacial limitada** — não é global como imagens ópticas
+- **Volume de dados** imenso — exige processamento especializado
+- **Penetração limitada em água** — não substitui batimetria em águas turvas
+:::
+:::
+:::
+
+# [3  -  SAR: RADAR DE ABERTURA SINTÉTICA]{.section-header}
+
+## Princípios do SAR {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+O SAR emite **pulsos de micro-ondas** e mede o retroespalhamento (*backscatter*):
+
+- Independente de iluminação solar (**dia/noite**)
+- Penetra nuvens (**all-weather**)
+- Sensível à **geometria**, **rugosidade** e **umidade** da superfície
+
+### Bandas SAR e paisagem
+
+| Banda | λ (cm) | Penetração | Aplicação |
+|:------|:-------|:-----------|:----------|
+| **X** | ~3 | Superficial | Mapeamento urbano, monitoramento de infraestruturas |
+| **C** | ~5.6 | Moderada | Sentinel-1: desmatamento, inundação |
+| **L** | ~23 | Alta | ALOS-2 PALSAR: biomassa, solos sob dossel |
+| **P** | ~70 | Muito alta | BIOMASS (ESA, 2024+): biomassa tropical |
+
+: Bandas SAR e suas aplicações paisagísticas. {.striped .hover}
+:::
+
+::: {.column width="45%"}
+### Sentinel-1: o SAR gratuito
+
+- Banda C, resolução 10 m, revisita de 6–12 dias
+- Dados IW (Interferometric Wide Swath) prontos no GEE
+- Aplicações:
+  - Detecção de **desmatamento** sob nuvens (Programa DETER)
+  - Mapeamento de **áreas inundáveis** (várzeas, veredas)
+  - Monitoramento de **umidade do solo** superficial
+  - Séries temporais de **retroespalhamento** para fenologia
+
+::: {.callout-note}
+## Dica prática
+No GEE, o Sentinel-1 GRD já vem pré-processado (calibração, filtragem de speckle, correção de terreno). Use a polarização VH para vegetação e VV para água.
+:::
+:::
+:::
+
+# [4  -  RPAs (DRONES) NA PAISAGEM]{.section-header}
+
+## A revolução dos drones {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+RPAs (*Remotely Piloted Aircraft*) preenchem o gap entre campo e satélite:
+
+| Parâmetro | Satélite | RPA |
+|:----------|:---------|:----|
+| Resolução | 10–30 m | 2–10 cm |
+| Revisita | 5–16 dias | Sob demanda |
+| Cobertura | Regional/global | Local (hectares) |
+| Custo por cena | Gratuito a baixo | Custo operacional por voo |
+| Regulamentação | — | DECEA/ANAC (Brasil) |
+
+### Sensores embarcados em RPAs
+
+- **RGB** → ortomosaico e MDS por fotogrametria (SfM)
+- **Multiespectral** → NDVI, índices de vegetação com calibração
+- **Termal** → estresse hídrico, ilhas de calor
+- **LiDAR leve** → MDT sob dossel em áreas florestais
+:::
+
+::: {.column width="45%"}
+### Regulamentação no Brasil
+
+- **DECEA**: SARPAS → cadastro e plano de voo
+- **ANAC**: RBAC-E 94/2017 → categorias de peso
+- **IBAMA**: autorização para voos em UC
+- Altitude máxima: 120 m AGL (regra geral)
+- Proibido sobre aglomerados urbanos sem autorização
+
+::: {.callout-tip}
+## Caso de uso paisagístico
+Um voo de drone com câmera multiespectral sobre um **fragmento de caatinga** pode:
+
+1. Gerar ortomosaico de 5 cm
+2. Calcular NDVI por copa individual
+3. Estimar cobertura de copa (gap fraction)
+4. Identificar espécies pelo porte e forma
+5. Monitorar restauração ao longo do tempo
+:::
+:::
+:::
+
+# [5  -  GEE: SÉRIES TEMPORAIS E CLASSIFICAÇÃO]{.section-header}
+
+## Séries temporais no Google Earth Engine {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+O GEE permite processar **décadas** de imagens sem baixar dados:
+
+### Análise de séries temporais para paisagem
+
+1. **LandTrendr** — detecta mudanças bruscas e graduais em séries Landsat (1984–presente)
+2. **CCDC** (Continuous Change Detection and Classification) — classifica e detecta mudanças pixel a pixel
+3. **BFAST** — detecta quebras estruturais em séries NDVI
+4. **MapBiomas** — já processa no GEE e disponibiliza coleções anuais
+
+### Métricas deriváveis
+
+- Taxa de desmatamento por período
+- Tempo de regeneração pós-perturbação
+- Sazonalidade vegetativa por classe de uso
+- Tendência temporal de NDVI (browning vs. greening)
+:::
+
+::: {.column width="45%"}
+### Classificação com machine learning
+
+| Algoritmo GEE | Vantagem |
+|:---------------|:---------|
+| Random Forest | Robusto, interpretável, múltiplas classes |
+| SVM | Boa separabilidade em espaços de alta dimensão |
+| CART | Simples, rápido |
+| smileGradientTreeBoost | Alta acurácia, exige tuning |
+
+::: {.callout-important}
+## Validação é imprescindível
+Classificar ≠ mapear. Toda classificação supervisionada exige:
+
+- Amostras de **treinamento** (70%) e **validação** (30%)
+- **Matriz de confusão**
+- **Acurácia global**, do produtor e do usuário
+- **Kappa** ou F1-score
+
+→ Assunto da próxima aula (Validação de Modelos)
+:::
+:::
+:::
+
+# [6  -  ESTUDO DE CASO: INTEGRAÇÃO MULTISSENSOR]{.section-header}
+
+## Diagnóstico paisagístico com múltiplas fontes {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Cenário: bacia hidrográfica no semiárido baiano
+
+**Objetivo**: avaliar fragmentação e conectividade em bacia com Caatinga degradada
+
+**Dados utilizados**:
+
+1. **Sentinel-2** (10 m) → classificação de uso/cobertura
+2. **Sentinel-1 SAR** → mapeamento de áreas inundáveis sazonais
+3. **SRTM** (30 m) → morfologia, declividade, bacias
+4. **GEDI** → estimativa de altura do dossel em fragmentos
+5. **RPA** → validação em campo com ortomosaico 5 cm
+
+### Fluxo de integração
+
+Cada sensor contribui com uma **camada de informação** que, combinada, produz um diagnóstico mais completo que qualquer fonte isolada.
+:::
+
+::: {.column width="50%"}
+```{dot}
+//| fig-cap: "Fluxo de integração multissensor para diagnóstico paisagístico."
+//| fig-width: 5
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=8, margin="0.15,0.08", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0]
+
+    S2 [label="Sentinel-2\nÓptico 10 m", fillcolor="#E3F2FD", color="#1565C0"]
+    S1 [label="Sentinel-1\nSAR 10 m", fillcolor="#FFF9C4", color="#F57F17"]
+    SRTM [label="SRTM\nMDE 30 m", fillcolor="#E8F5E9", color="#2E7D32"]
+    GEDI [label="GEDI\nAltura dossel", fillcolor="#E1BEE7", color="#6A1B9A"]
+    RPA [label="RPA\nOrtomosaico 5 cm", fillcolor="#FFE0B2", color="#E65100"]
+
+    UC [label="Uso e Cobertura", fillcolor="#BBDEFB", color="#1565C0"]
+    IN [label="Áreas Inundáveis", fillcolor="#FFF176", color="#F57F17"]
+    MF [label="Geomorfologia", fillcolor="#C8E6C9", color="#2E7D32"]
+    BM [label="Biomassa/Estrutura", fillcolor="#CE93D8", color="#6A1B9A"]
+    VL [label="Validação de Campo", fillcolor="#FFCC80", color="#E65100"]
+
+    DIAG [label="DIAGNÓSTICO\nPAISAGÍSTICO\nINTEGRADO", fillcolor="#1B5E20", fontcolor="white", color="#0D3310", penwidth=1.5]
+
+    S2 -> UC
+    S1 -> IN
+    SRTM -> MF
+    GEDI -> BM
+    RPA -> VL
+    UC -> DIAG
+    IN -> DIAG
+    MF -> DIAG
+    BM -> DIAG
+    VL -> DIAG
+}
+```
+:::
+:::
+
+# [7  -  SÍNTESE]{.section-header}
+
+## Conexão com a Disciplina {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+| Sensor | Quando usar | Aulas relacionadas |
+|:-------|:------------|:-------------------|
+| Óptico (Sentinel-2, Landsat) | Classificação de uso, NDVI, séries temporais | Aulas 08, 09, 10 |
+| SAR (Sentinel-1) | Regiões nubladas, áreas inundáveis, desmatamento | Aulas 09, 12 |
+| LiDAR (GEDI, aéreo) | Estrutura 3D, geomorfologia de detalhe | Aulas 05, 06 |
+| RPA (drone) | Validação local, ultra-alta resolução | Aulas 11, 20 |
+| GEE | Processamento em escala, séries longas | Aulas 09, 10 |
+
+: {.striped .hover}
+:::
+
+::: {.column width="45%"}
+## Leituras Recomendadas
+
+- **JENSEN, J. R.** *Sensoriamento Remoto do Ambiente*. Pearson.
+- **LANG, S.; BLASCHKE, T.** *Análise da Paisagem com SIG*. Oficina de Textos.
+- **LILLESAND, T. M. et al.** *Remote Sensing and Image Interpretation*. Wiley.
+- **DUBAYAH, R. et al.** (2020). The GEDI mission. *Space Science Reviews*, 216, 68.
+- **TORRES, R. et al.** (2012). GMES Sentinel-1 mission. *Remote Sensing of Environment*, 120, 9–24.
+:::
+:::

@@ -1,0 +1,250 @@
+---
+title: "Análise da Paisagem"
+subtitle: "Extra: Bioengenharia e Controle de Erosão na Paisagem<br>Curso de Geografia"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise da Paisagem | Extra: Bioengenharia"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Erosão como processo paisagístico
+- [2]{.circle} Bioengenharia de solos: princípios
+- [3]{.circle} Técnicas biotécnicas aplicáveis à paisagem
+- [4]{.circle} Geossintéticos e geotêxteis naturais
+- [5]{.circle} Integração com análise da paisagem
+- [6]{.circle} Estudo de caso: restauração de encostas em bacias degradadas
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Aula Extra — Complementar**
+
+Esta aula aprofunda temas de **bioengenharia de solos e controle de erosão**, conectando-os à análise da paisagem como ferramentas de **intervenção e restauração** em áreas degradadas.
+:::
+:::
+:::
+
+# [1  -  EROSÃO COMO PROCESSO PAISAGÍSTICO]{.section-header}
+
+## A erosão na lógica da ecodinâmica {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+Na classificação de Tricart (1977), a erosão é o processo dominante em **meios instáveis** (morfogênese > pedogênese):
+
+- **Encostas desmatadas** → perda de coesão superficial
+- **Margens de rios** → solapamento basal
+- **Estradas rurais** → concentração de fluxo
+- **Voçorocas** → retroerosão acelerada
+
+A erosão **fragmenta a paisagem** e **degrada a conectividade**:
+
+- Voçorocas cortam corredores ecológicos
+- Assoreamento reduz habitat aquático
+- Perda de solo diminui capacidade de suporte vegetal
+:::
+
+::: {.column width="45%"}
+### Escalas da erosão
+
+| Escala | Processo | Feição |
+|:-------|:---------|:-------|
+| Micro | Splash, erosão laminar | Crostas, selo superficial |
+| Meso | Sulcos, ravinas | Ravinas, cabeceiras |
+| Macro | Voçorocas, movimentos de massa | Voçorocas, cicatrizes |
+| Paisagem | Degradação generalizada | Áreas desertificadas |
+
+: {.striped .hover}
+
+::: {.callout-note}
+A bioengenharia atua prioritariamente nas escalas **meso** e **macro**, estabilizando feições erosivas e restaurando a cobertura vegetal protetora.
+:::
+:::
+:::
+
+# [2  -  BIOENGENHARIA DE SOLOS]{.section-header}
+
+## Princípios fundamentais {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+A bioengenharia de solos combina **elementos vivos** (plantas, sementes) com **materiais inertes** (madeira, pedra, geotêxteis) para estabilizar taludes e controlar erosão.
+
+### Vantagens sobre engenharia convencional
+
+| Critério | Engenharia convencional | Bioengenharia |
+|:---------|:-----------------------:|:-------------:|
+| Custo | Alto | Moderado a baixo |
+| Durabilidade | Estrutural | Crescente (vegetação se desenvolve) |
+| Impacto visual | Alto | Baixo (integração paisagística) |
+| Biodiversidade | Nula | Positiva |
+| Manutenção | Periódica | Autosustentável após estabelecimento |
+| Carbono | Emissão (concreto) | Sequestro (vegetação) |
+
+: {.striped .hover}
+:::
+
+::: {.column width="45%"}
+### Técnicas principais
+
+1. **Estacas vivas** → rebrote e ancoragem
+2. **Paliçadas** → retenção de sedimentos em ravinas
+3. **Hidrossemeadura** → revegetação de taludes extensos
+4. **Gabiões vivos** → contenção + vegetação
+5. **Paredes Krainer** → estrutura em madeira com preenchimento
+6. **Geotêxteis naturais** → cobertura + retenção de umidade
+7. **Fascinas vivas** → linhas de estolões em curva de nível
+:::
+:::
+
+# [3  -  TÉCNICAS APLICÁVEIS À PAISAGEM]{.section-header}
+
+## Seleção da técnica por contexto paisagístico {.smaller-text}
+
+| Contexto paisagístico | Processo dominante | Técnica recomendada |
+|:----------------------|:-------------------|:--------------------|
+| Encostas desmatadas > 30° | Movimento de massa raso | Estacas vivas + geotêxtil |
+| Ravinas em pastagem | Erosão concentrada | Paliçadas + revegetação |
+| Margens de rios assoreados | Erosão fluvial | Gabiões vivos + mata ciliar |
+| Taludes de estradas rurais | Erosão laminar e sulcos | Hidrossemeadura + fascinas |
+| Voçorocas ativas | Retroerosão + piping | Parede Krainer + drenagem + vegetação |
+| Áreas mineradas | Ausência de solo | Topsoil + geotêxtil + mudas pioneiras |
+
+: Seleção de técnicas de bioengenharia por contexto paisagístico. {.striped .hover}
+
+::: {.callout-tip}
+## Integração com FRAGSTATS
+Áreas tratadas com bioengenharia podem ser monitoradas como **fragmentos em regeneração**. Ao longo do tempo, espera-se:
+
+- ↑ PLAND da classe "vegetação em recuperação"
+- ↓ NP se fragmentos tratados coalescem
+- ↑ COHESION se a conectividade aumenta
+:::
+
+# [4  -  GEOSSINTÉTICOS E GEOTÊXTEIS NATURAIS]{.section-header}
+
+## Geotêxteis naturais: fibras vegetais {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+Geotêxteis fabricados com fibras de **taboa**, **rami**, **coco** ou **juta** oferecem:
+
+- **Cobertura imediata** do solo → reduz impacto da chuva
+- **Retenção de umidade** → favorece germinação
+- **Degradação gradual** → incorpora matéria orgânica
+- **Baixo custo** → matéria-prima local disponível
+
+### Geotêxtil de taboa (*Typha*)
+
+- Fibras longas e resistentes
+- Abundante em áreas úmidas do semiárido
+- Pode ser produzido artesanalmente por comunidades locais
+- Patente registrada (UEFS) para processo de fabricação
+:::
+
+::: {.column width="45%"}
+### Geocompostos
+
+Combinação de geotêxtil natural com:
+
+- **Biopolímero (SAP)** → hidrorretentores de água
+- **Sementes nativas** → revegetação integrada
+- **Nutrientes** → fertilização inicial
+
+O geocomposto funciona como um **kit de restauração** portátil, especialmente útil em regiões semiáridas onde a disponibilidade hídrica limita o estabelecimento vegetal.
+
+::: {.callout-note}
+Esses materiais são pesquisa ativa no Laboratório de Bioengenharia (UEFS), com aplicações publicadas em periódicos nacionais e internacionais.
+:::
+:::
+:::
+
+# [5  -  INTEGRAÇÃO COM ANÁLISE DA PAISAGEM]{.section-header}
+
+## A bioengenharia como ferramenta de restauração paisagística {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Quando a análise da paisagem indica necessidade de intervenção:
+
+1. **PLAND de vegetação nativa < 30%** → fragmentação crítica → restaurar
+2. **COHESION baixo** → fragmentos isolados → criar corredores
+3. **APP em conflito** → uso irregular → revegetar com bioengenharia
+4. **Encostas instáveis** → risco de erosão → estabilizar com técnicas vivas
+5. **RL deficitária** → obrigação legal → plantar com espécies nativas
+
+### Priorização espacial
+
+A análise de paisagem fornece critérios espaciais para alocar intervenções:
+
+- Priorizar áreas de **maior déficit** de conectividade
+- Tratar ravinas que **cortam corredores** ecológicos
+- Restaurar APPs que **conectam** fragmentos remanescentes
+:::
+
+::: {.column width="50%"}
+```{dot}
+//| fig-cap: "Fluxo de decisão: diagnóstico paisagístico → intervenção por bioengenharia."
+//| fig-width: 5
+digraph {
+    rankdir=TB
+    bgcolor="transparent"
+    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=8, margin="0.15,0.08", penwidth=0.8]
+    edge [color="#555555", penwidth=1.0]
+
+    DIAG [label="Diagnóstico\nPaisagístico", fillcolor="#E3F2FD", color="#1565C0"]
+    FRAG [label="Fragmentação\ncrítica?", fillcolor="#FFF9C4", color="#F57F17", shape=diamond]
+    EROS [label="Erosão ativa\nem corredor?", fillcolor="#FFF9C4", color="#F57F17", shape=diamond]
+    BIO [label="Bioengenharia\nIntervenção", fillcolor="#C8E6C9", color="#2E7D32"]
+    REST [label="Restauração\npassiva", fillcolor="#E1BEE7", color="#6A1B9A"]
+    MON [label="Monitoramento\n(FRAGSTATS + drone)", fillcolor="#FFE0B2", color="#E65100"]
+
+    DIAG -> FRAG
+    FRAG -> EROS [label="sim"]
+    FRAG -> REST [label="não"]
+    EROS -> BIO [label="sim"]
+    EROS -> REST [label="não"]
+    BIO -> MON
+    REST -> MON
+}
+```
+:::
+:::
+
+# [6  -  SÍNTESE]{.section-header}
+
+## Conexão com a Disciplina {.smaller-text}
+
+| Tema | Aulas conectadas |
+|:-----|:-----------------|
+| Erosão e ecodinâmica | → Zoneamento Geoecológico (Tricart), Geomorfologia (Aula 06) |
+| Restauração de APP | → Legislação Ambiental, Cartografia Temática (Aula 07) |
+| Monitoramento | → FRAGSTATS (Aula 18), Sensoriamento Remoto Avançado |
+| Priorização | → Diagnóstico Paisagístico (Aula 20), Unidades de Paisagem (Aula 19) |
+
+## Leituras Recomendadas
+
+- **GRAY, D. H.; SOTIR, R. B.** (1996). *Biotechnical and Soil Bioengineering Slope Stabilization*. Wiley.
+- **SANTOS, L. D. V.** et al. Publicações sobre geotêxteis e bioengenharia — ver página de publicações do curso.
+- **MORGAN, R. P. C.** (2005). *Soil Erosion and Conservation*. 3rd ed. Blackwell.
+- **STOKES, A. et al.** (2014). *Slope stability and erosion control: ecotechnological solutions*. Springer.

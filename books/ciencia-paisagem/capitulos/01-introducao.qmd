@@ -1,14 +1,14 @@
-﻿# Introdução à Ciência da Paisagem {#sec-introducao}
+﻿# Introdução à Análise da Paisagem {#sec-introducao}
 
-## O que é Ciência da Paisagem?
+## O que é Análise da Paisagem?
 
-A Ciência da Paisagem (*Landscape Science*) é um campo interdisciplinar que investiga como os padrões espaciais de uso e cobertura do solo influenciam e são influenciados por processos ecológicos, hidrológicos e antrópicos. O termo abarca tanto a ecologia da paisagem em sentido estrito (focada na relação entre padrões espaciais e processos ecológicos) quanto as abordagens geográficas, geomorfológicas e de planejamento territorial que tomam a paisagem como unidade de análise. Diferencia-se das ciências ambientais tradicionais pelo tratamento explícito da heterogeneidade espacial como variável explanatória central, e não como ruído a ser controlado.
+A Análise da Paisagem (*Landscape Analysis*), inserida no campo mais amplo da Ciência da Paisagem (*Landscape Science*), é uma abordagem interdisciplinar que investiga como os padrões espaciais de uso e cobertura do solo influenciam e são influenciados por processos ecológicos, hidrológicos e antrópicos. O termo abarca tanto a ecologia da paisagem em sentido estrito (focada na relação entre padrões espaciais e processos ecológicos) quanto as abordagens geográficas, geomorfológicas e de planejamento territorial que tomam a paisagem como unidade de análise. Diferencia-se das ciências ambientais tradicionais pelo tratamento explícito da heterogeneidade espacial como variável explanatória central, e não como ruído a ser controlado.
 
 O conceito moderno de paisagem ecológica foi introduzido pelo geógrafo alemão Carl Troll em 1939, ao combinar fotointerpretação de fotografias aéreas com observações ecológicas de campo [@troll1939]. Troll propôs que a paisagem deveria ser entendida não como um cenário visual, mas como um sistema funcional no qual a heterogeneidade espacial condiciona fluxos de energia, matéria e organismos. Essa formulação foi historicamente decisiva, pois deslocou a paisagem do domínio estético e descritivo para o domínio científico quantificável. A consolidação da disciplina ocorreu ao longo de mais de sete décadas, conforme sintetiza a @fig-evolucao-conceito.
 
 ```{dot}
 //| label: fig-evolucao-conceito
-//| fig-cap: "Linha do tempo dos principais marcos na consolidação da Ciência da Paisagem como disciplina científica."
+//| fig-cap: "Linha do tempo dos principais marcos na consolidação da Análise da Paisagem como disciplina científica."
 //| fig-width: 9
 digraph {
     rankdir=LR
@@ -62,7 +62,7 @@ Antes de avançar para os capítulos seguintes, convém estabelecer o significad
 | Dinâmica | Mudanças na estrutura e na função ao longo do tempo |
 | Escala | Dimensão espacial e temporal na qual um processo é observado, definida pela extensão e pela resolução (grão) |
 
-: Conceitos operacionais fundamentais da Ciência da Paisagem, adaptados de Forman e Godron [-@forman1986] e Turner e Gardner [-@turner2015]. {#tbl-conceitos-basicos .striped .hover}
+: Conceitos operacionais fundamentais da Análise da Paisagem, adaptados de Forman e Godron [-@forman1986] e Turner e Gardner [-@turner2015]. {#tbl-conceitos-basicos .striped .hover}
 
 Os conceitos sintetizados na @tbl-conceitos-basicos são interdependentes e não podem ser compreendidos isoladamente. A estrutura (composição e configuração) condiciona a função (fluxos ecológicos), que por sua vez retroalimenta a estrutura ao longo do tempo (quando a perda de biodiversidade altera processos de polinização, dispersão e regeneração que mantêm as manchas de habitat). A dinâmica é o registro temporal dessa interação entre estrutura e função, e a escala define a janela de observação dentro da qual essa dinâmica se torna visível. O elemento da paisagem é a unidade operacional mínima da análise, e a paisagem é o nível hierárquico que emerge da interação entre múltiplos elementos.
 
@@ -83,4 +83,4 @@ No Brasil, a Mata Atlântica remanescente ocupa menos de 12% de sua extensão or
 
 ## Estrutura deste livro
 
-O conteúdo está organizado em quatro partes. A Parte I (Fundamentos da Ciência da Paisagem) apresenta os conceitos de ecologia da paisagem, o modelo mancha-corredor-matriz, as escalas espaço-temporais e a percepção e representação da paisagem. A Parte II (Métodos de Análise da Paisagem) detalha as ferramentas operacionais de sensoriamento remoto, SIG, classificação de uso e cobertura, métricas da paisagem, análise de fragmentação e conectividade e detecção de mudanças. A Parte III (Processos e Dinâmica) examina os processos hidrológicos, serviços ecossistêmicos, biodiversidade, heterogeneidade e mudanças climáticas na escala da paisagem. A Parte IV (Planejamento e Gestão da Paisagem) aborda restauração ecológica, corredores e áreas protegidas, modelagem de cenários e culmina num projeto integrador de análise da paisagem.
+O conteúdo está organizado em quatro partes. A Parte I (Fundamentos da Análise da Paisagem) apresenta os conceitos de ecologia da paisagem, o modelo mancha-corredor-matriz, as escalas espaço-temporais e a percepção e representação da paisagem. A Parte II (Métodos de Análise da Paisagem) detalha as ferramentas operacionais de sensoriamento remoto, SIG, classificação de uso e cobertura, métricas da paisagem, análise de fragmentação e conectividade e detecção de mudanças. A Parte III (Processos e Dinâmica) examina os processos hidrológicos, serviços ecossistêmicos, biodiversidade, heterogeneidade e mudanças climáticas na escala da paisagem. A Parte IV (Planejamento e Gestão da Paisagem) aborda restauração ecológica, corredores e áreas protegidas, modelagem de cenários e culmina num projeto integrador de análise da paisagem.
