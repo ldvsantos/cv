@@ -1,0 +1,316 @@
+﻿===== avaliacao_incerteza_classificacao.qmd (Total: 427 lines) =====
+  L22: ## Visão Geral {.smaller-text}
+  L26: ### Tópicos Principais
+  L45: # [1  -  POR QUE AVALIAR ACURÁCIA?]{.section-header}
+  L47: ## O problema da confiabilidade {.smaller-text}
+  L53: ### Fontes de erro
+  L81: ## Fluxo de avaliação {.smaller-text}
+  L94: # [2  -  AMOSTRAGEM DE REFERÊNCIA]{.section-header}
+  L96: ## Tipos de amostragem {.smaller-text}
+  L100: ### Aleatória simples
+  L106: ### Estratificada por classe
+  L133: # [3  -  MATRIZ DE CONFUSÃO]{.section-header}
+  L135: ## Estrutura da matriz {.smaller-text}
+  L153: ## Métricas derivadas {.smaller-text}
+  L157: ### Acurácia Global (OA)
+  L163: ### Acurácia do Produtor (PA)
+  L171: ### Acurácia do Usuário (UA)
+  L191: # [4  -  ÍNDICE KAPPA]{.section-header}
+  L193: ## O coeficiente Kappa de Cohen {.smaller-text}
+  L228: ## Limitações do Kappa {.smaller-text}
+  L232: ### Críticas recentes
+  L242: ### Alternativas recomendadas
+  L256: # [5  -  MAPAS DE PROBABILIDADE]{.section-header}
+  L258: ## O que são mapas de probabilidade? {.smaller-text}
+  L264: ### Mapa de probabilidade máxima
+  L285: # [6  -  PRÁTICA NO GOOGLE EARTH ENGINE]{.section-header}
+  L287: ## Roteiro no GEE  -  Parte 1 {.smaller-text}
+  L309: ## Roteiro no GEE  -  Parte 2: Classificação {.smaller-text}
+  L332: ## Roteiro no GEE  -  Parte 3: Avaliação {.smaller-text}
+  L356: ## Roteiro no GEE  -  Parte 4: Mapa de probabilidade {.smaller-text}
+  L382: ## Exercício proposto {.smaller-text}
+  L386: ### Atividade
+  L411: ## Referências {.smaller-text}
+  L419: # {background-color="#034EA2"}
+
+===== degradacao_desertificacao_clima.qmd (Total: 266 lines) =====
+  L22: ## Visão Geral {.smaller-text}
+  L26: ### Tópicos Principais
+  L45: # [1 - LDN E NEUTRALIDADE DA DEGRADAÇÃO]{.section-header}
+  L47: ## O conceito de Land Degradation Neutrality {.smaller-text}
+  L55: ### Métrica tridimensional
+  L81: # [2 - USLE E RETROALIMENTAÇÃO CLIMÁTICA]{.section-header}
+  L83: ## Mecânica da perda de solo {.smaller-text}
+  L113: # [3 - SALINIZAÇÃO E COLAPSO HIDRÁULICO]{.section-header}
+  L115: ## Ascensão capilar e sodificação {.smaller-text}
+  L143: # [4 - MECANISMO DE CHARNEY]{.section-header}
+  L145: ## Retroalimentação albedo-precipitação {.smaller-text}
+  L151: ### O ciclo fechado
+  L178: # [5 - INDICADORES DE MONITORAMENTO]{.section-header}
+  L180: ## Indicadores biológicos do solo {.smaller-text}
+  L213: # [6 - ENGENHARIA DE RESTAURAÇÃO]{.section-header}
+  L215: ## Estratégias integradas {.smaller-text}
+  L219: ### Recomposição vegetal
+  L223: ### Descompactação
+  L227: ### Correção de solos salinos
+  L249: ## Referências {.smaller-text}
+  L258: # {background-color="#034EA2"}
+
+===== fundamentos_geoprocessamento.qmd (Total: 452 lines) =====
+  L22: ## Visão Geral {.smaller-text}
+  L26: ### Tópicos Principais
+  L45: # [1 - REPRESENTAÇÃO DO ESPAÇO GEOGRÁFICO]{.section-header}
+  L47: ## Ontologias espaciais {.smaller-text}
+  L53: ### Objetos discretos (vetorial)
+  L57: ### Campos contínuos (matricial)
+  L76: ## Topologia e geometria computacional {.smaller-text}
+  L101: # [2 - MODELOS VETORIAL E MATRICIAL]{.section-header}
+  L103: ## Modelo vetorial em detalhe {.smaller-text}
+  L107: ### Primitivas geométricas
+  L117: ### Relações topológicas
+  L139: ## Modelo matricial (raster) {.smaller-text}
+  L145: ### Características fundamentais
+  L170: # [3 - REFERENCIAMENTO ESPACIAL]{.section-header}
+  L172: ## Datums e sistemas de referência {.smaller-text}
+  L178: ### Datums de referência
+  L206: ## Metadados e rastreabilidade {.smaller-text}
+  L229: # [4 - ÁLGEBRA DE MAPAS]{.section-header}
+  L231: ## Operações sobre camadas {.smaller-text}
+  L237: ### Operações locais
+  L241: ### Operações focais
+  L245: ### Operações zonais
+  L267: ## Modelos digitais de terreno e redes {.smaller-text}
+  L298: # [5 - INFERÊNCIA E ESTATÍSTICA ESPACIAL]{.section-header}
+  L300: ## Autocorrelação espacial {.smaller-text}
+  L330: ## MAUP e suas implicações {.smaller-text}
+  L346: ### Implicações práticas
+  L361: # [6 - GEOESTATÍSTICA E KRIGAGEM]{.section-header}
+  L363: ## Semivariograma {.smaller-text}
+  L371: ### Parâmetros do modelo
+  L397: ## Krigagem ordinária {.smaller-text}
+  L407: ### Superioridade sobre métodos determinísticos
+  L433: ## Referências {.smaller-text}
+  L444: # {background-color="#034EA2"}
+
+===== geoprocessamento_mineracao.qmd (Total: 278 lines) =====
+  L22: ## Visão Geral {.smaller-text}
+  L26: ### Tópicos Principais
+  L45: # [1 - O PARADIGMA DO MONITORAMENTO CONTÍNUO]{.section-header}
+  L47: ## Da licença social ao SIG como espinhaço informacional {.smaller-text}
+  L53: ### O SIG como integrador
+  L84: # [2 - InSAR E SEGURANÇA DE ESTRUTURAS]{.section-header}
+  L86: ## Interferometria diferencial {.smaller-text}
+  L116: # [3 - NDVI, HISTERESE E RECUPERAÇÃO VEGETAL]{.section-header}
+  L118: ## Impactos biofísicos da mineração {.smaller-text}
+  L128: ### Dinâmica do NDVI na mineração
+  L156: # [4 - BALANÇO VOLUMÉTRICO E HIDROGRAFIA]{.section-header}
+  L158: ## Cálculo de volume deslocado {.smaller-text}
+  L186: # [5 - INTEGRAÇÃO DE DADOS E GESTÃO DE RISCOS]{.section-header}
+  L188: ## Plataformas de fusão e alerta {.smaller-text}
+  L199: ### Algoritmo de risco (lógica fuzzy)
+  L222: # [6 - CONFORMIDADE LEGAL E GOVERNANÇA]{.section-header}
+  L224: ## SIG como regra espacial {.smaller-text}
+  L230: ### Camadas de restrição
+  L262: ## Referências {.smaller-text}
+  L270: # {background-color="#034EA2"}
+
+===== geotecnologias_recursos_hidricos.qmd (Total: 388 lines) =====
+  L22: ## Visão Geral {.smaller-text}
+  L26: ### Tópicos Principais
+  L45: # [1 - A CRISE HÍDRICA E O PARADIGMA TECNOLÓGICO]{.section-header}
+  L47: ## Da resposta reativa ao modelo preventivo {.smaller-text}
+  L53: ### A Lei 9.433/1997
+  L80: # [2 - MONITORAMENTO DE RESERVATÓRIOS E AQUÍFEROS]{.section-header}
+  L82: ## Altimetria radar e gravimetria orbital {.smaller-text}
+  L86: ### Altimetria radar (Sentinel-3)
+  L90: ### Gravimetria orbital (GRACE/GRACE-FO)
+  L116: ## Umidade do solo e agricultura de precisão {.smaller-text}
+  L122: ### Aplicações diretas
+  L149: # [3 - ÍNDICES DE SECA]{.section-header}
+  L151: ## SPI - Índice de Precipitação Padronizado {.smaller-text}
+  L184: ## SPEI e secas relâmpago {.smaller-text}
+  L190: ### Avanços em relação ao SPI
+  L213: # [4 - ÍNDICES BIOFÍSICOS E SECA AGRÍCOLA]{.section-header}
+  L215: ## NDVI e VCI {.smaller-text}
+  L248: ## EVI e ampliação de sensibilidade {.smaller-text}
+  L258: ### Vantagens sobre o NDVI
+  L276: # [5 - EVAPOTRANSPIRAÇÃO E SECA HIDROLÓGICA]{.section-header}
+  L278: ## Algoritmo SEBAL {.smaller-text}
+  L286: ### Balanço de energia
+  L311: ## Modelagem e gêmeos digitais {.smaller-text}
+  L315: ### Redes LSTM
+  L319: ### Gêmeos digitais de bacias
+  L338: # [6 - GOVERNANÇA ESTRATÉGICA E RESILIÊNCIA]{.section-header}
+  L340: ## Sistema de suporte à decisão {.smaller-text}
+  L346: ### Componentes do DSS
+  L369: ## Referências {.smaller-text}
+  L380: # {background-color="#034EA2"}
+
+===== ia_qualidade_pesquisa.qmd (Total: 314 lines) =====
+  L22: ## Visão Geral {.smaller-text}
+  L26: ### Tópicos Principais
+  L45: # [1 - O QUARTO PARADIGMA]{.section-header}
+  L47: ## Ciência orientada por dados {.smaller-text}
+  L78: # [2 - IA NO MONITORAMENTO AMBIENTAL]{.section-header}
+  L80: ## Poder preditivo e o paradoxo mecanístico {.smaller-text}
+  L92: ### O paradoxo
+  L111: # [3 - VIÉS, INCERTEZA E VALIDAÇÃO]{.section-header}
+  L113: ## Garbage In, Garbage Out {.smaller-text}
+  L119: ### O dilema correlação-causalidade
+  L149: # [4 - IA EXPLICÁVEL]{.section-header}
+  L151: ## SHAP e LIME {.smaller-text}
+  L157: ### SHAP (Lundberg e Lee 2017)
+  L161: ### LIME (Ribeiro et al. 2016)
+  L181: # [5 - REPRODUTIBILIDADE E PRINCÍPIOS FAIR]{.section-header}
+  L183: ## A crise de reprodutibilidade {.smaller-text}
+  L189: ### Princípios FAIR (Wilkinson et al. 2016)
+  L217: # [6 - GREEN AI, ÉTICA E SMALL DATA]{.section-header}
+  L219: ## O paradoxo energético da IA {.smaller-text}
+  L225: ### Green AI (Schwartz et al. 2020)
+  L253: ## Ética e integridade acadêmica {.smaller-text}
+  L257: ### Dilemas de IA generativa
+  L264: ### Human-in-the-loop
+  L292: ## Referências {.smaller-text}
+  L306: # {background-color="#034EA2"}
+
+===== intemperismo_erosao_solos.qmd (Total: 358 lines) =====
+  L22: ## Visão Geral {.smaller-text}
+  L26: ### Tópicos Principais
+  L45: # [1 - FATORES DE FORMAÇÃO DO SOLO]{.section-header}
+  L47: ## Equação de Jenny (1941) {.smaller-text}
+  L84: # [2 - PROCESSOS DE INTEMPERISMO]{.section-header}
+  L86: ## Intemperismo químico e Série de Goldich {.smaller-text}
+  L98: ### Reações dominantes
+  L129: ## Análise de Brimhall-Chadwick {.smaller-text}
+  L157: # [3 - PEDOGÊNESE E HORIZONTES DIAGNÓSTICOS]{.section-header}
+  L159: ## Diferenciação de horizontes {.smaller-text}
+  L193: # [4 - DINÂMICA EROSIVA E MODELAGEM]{.section-header}
+  L195: ## RUSLE - Equação Universal Revisada {.smaller-text}
+  L228: ## Erosão no semiárido brasileiro {.smaller-text}
+  L236: ### Fatores agravantes
+  L259: # [5 - INTEGRAÇÃO SOLO-PAISAGEM]{.section-header}
+  L261: ## Catenas topográficas {.smaller-text}
+  L293: # [6 - CONSERVAÇÃO E ENGENHARIA DE MITIGAÇÃO]{.section-header}
+  L295: ## Manipulação dos fatores da RUSLE {.smaller-text}
+  L301: ### Fator C (cobertura)
+  L307: ### Fator K (erodibilidade)
+  L330: ### Exemplos de campo
+  L340: ## Referências {.smaller-text}
+  L350: # {background-color="#034EA2"}
+
+===== monitoramento_hidrologico.qmd (Total: 305 lines) =====
+  L22: ## Visão Geral {.smaller-text}
+  L26: ### Tópicos Principais
+  L45: # [1 - MONITORAMENTO CONVENCIONAL]{.section-header}
+  L47: ## Redes de observação e o problema inverso {.smaller-text}
+  L53: ### O problema inverso
+  L76: # [2 - TELEMETRIA E IoT]{.section-header}
+  L78: ## Da medição ao tempo real {.smaller-text}
+  L84: ### Sensores conectados
+  L114: # [3 - CURVA-CHAVE E HIDROMETRIA]{.section-header}
+  L116: ## Conversão nível-vazão {.smaller-text}
+  L128: ### Fatores de instabilidade
+  L151: # [4 - ALTIMETRIA ESPACIAL POR RADAR]{.section-header}
+  L153: ## Satélites Jason e Sentinel-3/6 {.smaller-text}
+  L159: ### Processamento do sinal
+  L188: # [5 - PRECIPITAÇÃO E UMIDADE DO SOLO]{.section-header}
+  L190: ## GPM e SMAP {.smaller-text}
+  L194: ### GPM (Global Precipitation Measurement)
+  L198: ### SMAP (Soil Moisture Active Passive)
+  L219: # [6 - ET, MDES E BACIAS VIRTUAIS]{.section-header}
+  L221: ## Evapotranspiração orbital {.smaller-text}
+  L227: ### SEBAL e METRIC
+  L233: ### Aplicação
+  L259: ## Calibração e propagação de incerteza {.smaller-text}
+  L263: ### Desafios de fusão
+  L267: ### Assimilação bayesiana
+  L287: ## Referências {.smaller-text}
+  L297: # {background-color="#034EA2"}
+
+===== recursos_hidricos_bacia.qmd (Total: 299 lines) =====
+  L22: ## Visão Geral {.smaller-text}
+  L26: ### Tópicos Principais
+  L45: # [1 - CARACTERIZAÇÃO FÍSICA DA BACIA]{.section-header}
+  L47: ## Morfometria e hierarquia fluvial {.smaller-text}
+  L53: ### Hierarquia de Strahler (1957)
+  L57: ### Atributos morfométricos chave
+  L83: # [2 - BALANÇO HÍDRICO]{.section-header}
+  L85: ## Equação fundamental {.smaller-text}
+  L117: # [3 - LEI 9.433/1997 E GESTÃO INTEGRADA]{.section-header}
+  L119: ## Princípios e instrumentos {.smaller-text}
+  L125: ### Princípios fundamentais
+  L153: # [4 - INSTRUMENTOS EM DETALHE]{.section-header}
+  L155: ## Outorga, cobrança e enquadramento {.smaller-text}
+  L159: ### Outorga
+  L163: ### Cobrança
+  L167: ### Equação da diluição
+  L185: # [5 - GOVERNANÇA E PARTICIPAÇÃO]{.section-header}
+  L187: ## Comitês de Bacia {.smaller-text}
+  L193: ### Composição tripartite
+  L218: # [6 - DESAFIOS CONTEMPORÂNEOS]{.section-header}
+  L220: ## Nexo água-energia-alimento {.smaller-text}
+  L224: ### Mudanças climáticas
+  L228: ### Competição intersectorial
+  L255: ## Síntese {.smaller-text}
+  L281: ## Referências {.smaller-text}
+  L291: # {background-color="#034EA2"}
+
+===== sensoriamento_remoto_cobertura.qmd (Total: 312 lines) =====
+  L22: ## Visão Geral {.smaller-text}
+  L26: ### Tópicos Principais
+  L45: # [1 - INTERAÇÃO RADIAÇÃO-VEGETAÇÃO]{.section-header}
+  L47: ## Comportamento espectral da canopia {.smaller-text}
+  L81: # [2 - ÍNDICES DE VEGETAÇÃO]{.section-header}
+  L83: ## NDVI e EVI {.smaller-text}
+  L87: ### NDVI (Rouse et al. 1974)
+  L91: ### EVI (Huete et al. 2002)
+  L117: ## SAVI e aplicações no Cerrado {.smaller-text}
+  L144: # [3 - CLASSIFICADORES]{.section-header}
+  L146: ## Random Forest, SVM e U-Net {.smaller-text}
+  L150: ### Random Forest
+  L154: ### Support Vector Machine (SVM)
+  L158: ### U-Net (encoder-decoder)
+  L182: # [4 - SÉRIES TEMPORAIS]{.section-header}
+  L184: ## BFAST e LandTrendr {.smaller-text}
+  L188: ### BFAST (Verbesselt et al. 2010)
+  L192: ### LandTrendr (Kennedy et al. 2010)
+  L214: # [5 - PRODES, DETER E MAPBIOMAS]{.section-header}
+  L216: ## Sistemas operacionais brasileiros {.smaller-text}
+  L220: ### PRODES (INPE)
+  L226: ### DETER (INPE)
+  L237: ### Evolução da acurácia no Cerrado
+  L252: # [6 - VALIDAÇÃO E INCERTEZA]{.section-header}
+  L254: ## Protocolo de Olofsson et al. (2014) {.smaller-text}
+  L260: ### Área estimada por classe
+  L266: ### Requisitos amostrais
+  L291: ## Referências {.smaller-text}
+  L304: # {background-color="#034EA2"}
+
+===== sig_exploracao_mineral.qmd (Total: 338 lines) =====
+  L22: ## Visão Geral {.smaller-text}
+  L26: ### Tópicos Principais
+  L45: # [1 - SISTEMA MINERAL E O SIG COMO INTEGRADOR]{.section-header}
+  L47: ## Do depósito isolado ao sistema mineral {.smaller-text}
+  L53: ### Componentes funcionais
+  L75: # [2 - FONTES DE DADOS GEOFÍSICOS E GEOQUÍMICOS]{.section-header}
+  L77: ## Aeromagnetometria e gamaespectrometria {.smaller-text}
+  L81: ### Aeromagnetometria
+  L85: ### Gamaespectrometria
+  L106: # [3 - SENSORIAMENTO REMOTO HIPERESPECTRAL]{.section-header}
+  L108: ## Resposta espectral de minerais de alteração {.smaller-text}
+  L114: ### Sensores multiespectrais (OLI/Landsat-8)
+  L119: ### Sensores hiperespectrais (AVIRIS, ASTER)
+  L147: # [4 - MÉTODOS KNOWLEDGE-DRIVEN]{.section-header}
+  L149: ## Lógica Fuzzy {.smaller-text}
+  L182: ## Processo Analítico Hierárquico (AHP) {.smaller-text}
+  L192: ### Escala de Saaty
+  L222: # [5 - MÉTODOS DATA-DRIVEN]{.section-header}
+  L224: ## Pesos de Evidência (WofE) {.smaller-text}
+  L234: ### Interpretação
+  L256: # [6 - MODELAGEM PREDITIVA E RESTRIÇÕES AMBIENTAIS]{.section-header}
+  L258: ## RNA, SVM e validação {.smaller-text}
+  L289: ## Integração com restrições ambientais {.smaller-text}
+  L295: ### Modelo de aptidão multiobjetivo
+  L322: ## Referências {.smaller-text}
+  L330: # {background-color="#034EA2"}
+
