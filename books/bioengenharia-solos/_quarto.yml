@@ -70,6 +70,10 @@ book:
         - capitulos/20-nbs.qmd
         - capitulos/21-projeto-integrador.qmd
 
+    - part: "Parte V — Monitoramento e Análise"
+      chapters:
+        - capitulos/22-modelagem-3d.qmd
+
     - referencias.qmd
 
 bibliography: references.bib
