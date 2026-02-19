@@ -487,19 +487,26 @@ Utilize os formulários abaixo para enviar os trabalhos solicitados na disciplin
 :::
 
 ```{=html}
-<div class="slide-grid">
-
-<div class="resource-card" style="flex-direction:column; cursor:default;">
-<div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem;">
-<div class="res-icon" style="background:#1a73e8;"><i class="fa-solid fa-file-arrow-up"></i></div>
-<div class="res-info">
-<h4 style="margin:0;">Relatório Técnico de Campo</h4>
-<p style="margin:0;">3ª Avaliação (Prática II – individual)</p>
-</div>
-</div>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJFCKg4zK_WBdgi40GTQ8Xv56YXHY_eJl6G5C6jDscs_Mh-Q/viewform?embedded=true" width="100%" height="480" frameborder="0" marginheight="0" marginwidth="0" style="border-radius:8px;">Carregando…</iframe>
+<div style="border:1px solid #dee2e6; border-left:4px solid #1a73e8; border-radius:0.5rem; padding:1.25rem; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.06); margin-top:0.75rem;">
+  <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem;">
+    <div style="width:2.2rem; height:2.2rem; border-radius:0.4rem; background:#1a73e8; display:flex; align-items:center; justify-content:center; color:#fff; font-size:1.1rem;"><i class="fa-solid fa-file-arrow-up"></i></div>
+    <div>
+      <h4 style="margin:0; font-size:0.95rem; font-weight:600; color:#2c3e50;">Relatório Técnico de Campo</h4>
+      <p style="margin:0; font-size:0.82rem; color:#777;">3ª Avaliação (Prática II – individual)</p>
+    </div>
+  </div>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJFCKg4zK_WBdgi40GTQ8Xv56YXHY_eJl6G5C6jDscs_Mh-Q/viewform?embedded=true" width="100%" height="480" frameborder="0" marginheight="0" marginwidth="0" style="border-radius:8px; border:1px solid #eee;">Carregando…</iframe>
 </div>
 
+<div style="border:1px solid #dee2e6; border-left:4px solid #e67e22; border-radius:0.5rem; padding:1.25rem; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.06); margin-top:1rem;">
+  <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem;">
+    <div style="width:2.2rem; height:2.2rem; border-radius:0.4rem; background:#e67e22; display:flex; align-items:center; justify-content:center; color:#fff; font-size:1.1rem;"><i class="fa-solid fa-gamepad"></i></div>
+    <div>
+      <h4 style="margin:0; font-size:0.95rem; font-weight:600; color:#2c3e50;">Serious Game — Diagnóstico Territorial</h4>
+      <p style="margin:0; font-size:0.82rem; color:#777;">2ª Avaliação (Prática I – em grupo)</p>
+    </div>
+  </div>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJFCKg4zK_WBdgi40GTQ8Xv56YXHY_eJl6G5C6jDscs_Mh-Q/viewform?embedded=true" width="100%" height="480" frameborder="0" marginheight="0" marginwidth="0" style="border-radius:8px; border:1px solid #eee;">Carregando…</iframe>
 </div>
 ```
 
