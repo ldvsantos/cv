@@ -1,0 +1,132 @@
+---
+title: "Plano de Disciplina — Estatística Aplicada à Engenharia Agronômica"
+description: "Plano completo da disciplina de Estatística Aplicada à Engenharia Agronômica."
+---
+
+::: {.text-end .mb-3}
+[← Voltar para Estatística Aplicada](index.qmd)
+:::
+
+**PLANO DE DISCIPLINA**
+
+**EMENTA:** Estatística aplicada à Engenharia Agronômica; introdução ao R para ciências agrárias; testes paramétricos e não-paramétricos; ANOVA e pressupostos; regressão e correlação; análise multivariada; séries temporais ambientais.
+
+**OBJETIVO:** Capacitar o(a) discente a aplicar métodos estatísticos fundamentais e intermediários na análise de dados agronômicos, utilizando o ambiente R como ferramenta computacional, com ênfase na interpretação de resultados e na tomada de decisão em experimentação agrícola e estudos ambientais.
+
+**OBJETIVOS ESPECÍFICOS:**
+
+Compreender os fundamentos da estatística descritiva e inferencial aplicada às ciências agrárias.
+
+Utilizar o ambiente R para importação, manipulação, visualização e análise de dados agronômicos.
+
+Aplicar testes paramétricos (t-Student, Tukey) e não-paramétricos (Wilcoxon, Kruskal-Wallis, Mann-Whitney) na comparação de tratamentos.
+
+Realizar análises de variância (ANOVA) com verificação de pressupostos e interpretação de resultados.
+
+Construir e interpretar modelos de regressão linear simples e múltipla, e coeficientes de correlação.
+
+Aplicar técnicas de análise multivariada (PCA, análise de agrupamento e discriminante) a dados agrícolas.
+
+Analisar séries temporais de dados climáticos e agronômicos, incluindo decomposição e modelos ARIMA.
+
+**HABILIDADES E COMPETÊNCIAS:** Ao final da disciplina, o(a) discente deverá estar apto(a) a planejar coletas de dados e delineamentos experimentais com rigor estatístico, executar análises estatísticas no R com autonomia, interpretar saídas de testes e modelos de forma crítica e contextualizada, comunicar resultados estatísticos em relatórios técnicos e artigos científicos, e avaliar a adequação de diferentes métodos estatísticos a problemas agronômicos distintos.
+
+**METODOLOGIA:** A disciplina será desenvolvida ao longo de 7 encontros, combinando exposição teórica dos fundamentos estatísticos com sessões práticas no ambiente R. Cada encontro contemplará uma parte conceitual (pressupostos, formulação e interpretação) e uma parte aplicada (exercícios com datasets agronômicos reais no R).
+
+Os materiais de apoio (scripts, datasets, tutoriais) serão disponibilizados em formato digital. As atividades práticas incluirão exercícios orientados de análise, interpretação de saídas do R e elaboração de relatórios com resultados estatísticos.
+
+**FORMAS DE AVALIAÇÃO:** O processo avaliativo contemplará:
+
+* **1ª Avaliação (Teórica — Individual):** prova presencial com questões objetivas e discursivas, abrangendo estatística descritiva, testes de hipóteses, ANOVA e pressupostos.
+
+* **2ª Avaliação (Prática — Individual):** análise de dataset agronômico no R com entrega de relatório contendo regressão, correlação, análise multivariada e/ou séries temporais.
+
+* **Avaliação Contínua:** participação nas atividades práticas e entregas de exercícios ao longo do semestre.
+
+Cada avaliação terá valor máximo de 10,0 pontos e a média final será calculada pela média aritmética simples.
+
+**PROGRAMA DO COMPONENTE CURRICULAR**
+
+O componente curricular será desenvolvido em 7 encontros. O programa articula fundamentos de estatística com aplicações práticas no R, abrangendo desde análises descritivas até séries temporais.
+
+1. **Estatística Aplicada à Engenharia Agronômica (aula 01)**
+
+   * Visão geral da disciplina, importância da estatística na agronomia e competências a desenvolver.
+
+   * Estatística descritiva: medidas de posição, dispersão e representação gráfica.
+
+2. **Introdução ao R para Ciências Agrárias (aula 02)**
+
+   * Instalação, interface e ambiente de trabalho do R e RStudio.
+
+   * R base, tidyverse; importação de dados; primeiro experimento agrícola no R.
+
+3. **Testes Paramétricos e Não-Paramétricos (aula 03)**
+
+   * t-Student para uma e duas amostras; testes pareados; Tukey.
+
+   * Wilcoxon, Kruskal-Wallis e Mann-Whitney: quando e como aplicar.
+
+4. **ANOVA e Pressupostos (aula 04)**
+
+   * ANOVA one-way, two-way, fatorial e medidas repetidas.
+
+   * Verificação de pressupostos: normalidade, homocedasticidade, independência.
+
+5. **Regressão e Correlação (aula 05)**
+
+   * Regressão linear simples e múltipla; diagnóstico de resíduos.
+
+   * Correlação de Pearson e Spearman; interpretação e limitações.
+
+6. **Análise Multivariada (aula 06)**
+
+   * Análise de Componentes Principais (PCA); redução de dimensionalidade.
+
+   * Análise de agrupamento (k-means, hierárquico) e análise discriminante no R.
+
+7. **Séries Temporais Ambientais (aula 07)**
+
+   * Decomposição de séries temporais; tendência e sazonalidade.
+
+   * Modelos ARIMA e suavização exponencial para dados climáticos e agronômicos.
+
+**CONTEÚDO PROGRAMÁTICO**
+
+**Quadro 1 — Conteúdo programático por aula de Estatística Aplicada à Engenharia Agronômica.**
+
+| SEMANA | AULA | ASSUNTOS PREVISTOS |
+| :----: | :--: | :----------------- |
+| 1ª | 01 | Estatística Aplicada à Engenharia Agronômica: visão geral, importância e competências. |
+| 2ª | 02 | Introdução ao R para Ciências Agrárias: do zero ao primeiro experimento agrícola no R. |
+| 3ª | 03 | Testes paramétricos e não-paramétricos: t-Student, Tukey, Wilcoxon, Kruskal-Wallis e Mann-Whitney. |
+| 4ª | 04 | ANOVA e pressupostos: ANOVA one-way, two-way, fatorial e medidas repetidas no R. |
+| 5ª | 05 | Regressão e correlação: regressão linear simples e múltipla, correlação de Pearson e Spearman. |
+| 6ª | 06 | Análise multivariada: PCA, análise de agrupamento e análise discriminante no R. |
+| 7ª | 07 | Séries temporais ambientais: decomposição, ARIMA e sazonalidade de dados climáticos e agronômicos. |
+
+: {.striped .hover}
+
+**SIGNIFICADO DO COMPONENTE CURRICULAR PARA FORMAÇÃO PROFISSIONAL**
+
+O componente curricular Estatística Aplicada à Engenharia Agronômica é essencial para a formação do(a) engenheiro(a) agrônomo(a), pois fornece ferramentas quantitativas indispensáveis ao planejamento experimental, à análise de resultados de campo e à tomada de decisão baseada em evidências. A capacidade de coletar, organizar, analisar e interpretar dados com rigor estatístico é competência transversal exigida em todas as áreas de atuação do profissional de agronomia — da pesquisa agropecuária à consultoria, do licenciamento ambiental à gestão de propriedades rurais.
+
+A utilização do R como ferramenta computacional prepara o(a) discente para atuar com softwares de código aberto, amplamente adotados pela comunidade científica e técnica, promovendo autonomia, reprodutibilidade e alinhamento com as práticas da ciência aberta.
+
+**REFERÊNCIAS**
+
+**Básica**
+
+* BANZATTO, David Ariovaldo; KRONKA, Sérgio do Nascimento. **Experimentação agrícola**. 4. ed. Jaboticabal: FUNEP, 2006.
+* PIMENTEL-GOMES, Frederico. **Curso de estatística experimental**. 15. ed. Piracicaba: FEALQ, 2009.
+* FERREIRA, Daniel Furtado. **Estatística básica**. 2. ed. Lavras: UFLA, 2009.
+* ZAR, Jerrold H. **Biostatistical analysis**. 5. ed. Upper Saddle River: Prentice Hall, 2010.
+* R CORE TEAM. **R: A language and environment for statistical computing**. Vienna: R Foundation for Statistical Computing, 2024. Disponível em: https://www.R-project.org/.
+
+**Complementar**
+
+* VIEIRA, Sônia. **Análise de variância (ANOVA)**. São Paulo: Atlas, 2006.
+* FERREIRA, Daniel Furtado. **Estatística multivariada**. 3. ed. Lavras: UFLA, 2018.
+* WICKHAM, Hadley; GROLEMUND, Garrett. **R for Data Science**. 2. ed. Sebastopol: O'Reilly Media, 2023. Disponível em: https://r4ds.hadley.nz/.
+* MORETTIN, Pedro Alberto; TOLOI, Clélia Maria de Castro. **Análise de séries temporais**. 3. ed. São Paulo: Blucher, 2018.
+* STORCK, Lindolfo et al. **Experimentação vegetal**. 3. ed. Santa Maria: UFSM, 2011.

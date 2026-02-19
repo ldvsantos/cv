@@ -1,0 +1,170 @@
+---
+title: "Plano de Disciplina — Geotecnologias e SIG"
+description: "Plano completo da disciplina de Geotecnologias e SIG."
+---
+
+::: {.text-end .mb-3}
+[← Voltar para Geotecnologias e SIG](index.qmd)
+:::
+
+**PLANO DE DISCIPLINA**
+
+**EMENTA:** Fundamentos do geoprocessamento e análise espacial: conceitos, estruturas de dados, análise de incerteza e acurácia em classificação. Geotecnologias aplicadas à gestão de recursos hídricos e períodos de seca: evapotranspiração, índices de seca, sensoriamento remoto hidrológico. Sistemas de Informação Geográfica (SIG) na exploração de recursos minerais: análise multicriterial, geoprocessamento e tomada de decisão. Intemperismo, erosão e formação de solos: processos pedogenéticos, classificação e mapeamento digital de solos. Degradação do solo, desertificação e mudanças climáticas: indicadores espaciais, monitoramento e modelagem. Recursos hídricos e gestão por bacia hidrográfica: delimitação, análise morfométrica, política nacional de recursos hídricos. Monitoramento hidrológico e geotecnologias: redes de observação, sensores remotos, séries temporais. Geoprocessamento aplicado ao monitoramento de impactos ambientais da mineração: análise espacial, licenciamento e auditoria ambiental. Sensoriamento remoto aplicado a mudanças de uso e cobertura vegetal: detecção de mudanças, métricas de paisagem, classificação supervisionada. Inteligência artificial e qualidade da pesquisa científica em meio ambiente: aprendizado de máquina, validação espacial, reprodutibilidade e princípios FAIR.
+
+**OBJETIVO:** Capacitar o(a) discente a aplicar geotecnologias (SIG, sensoriamento remoto, modelagem espacial e inteligência artificial) na análise, monitoramento e gestão de recursos naturais, com ênfase em rigor metodológico, validação de resultados e suporte à tomada de decisão em questões ambientais e territoriais.
+
+**OBJETIVOS ESPECÍFICOS:**
+
+Dominar os fundamentos teóricos e práticos do geoprocessamento, incluindo estruturas de dados vetoriais e matriciais.
+
+Avaliar a incerteza e acurácia em produtos de classificação (matriz de confusão, Kappa, validação espacial).
+
+Aplicar geotecnologias ao monitoramento de recursos hídricos, seca e evapotranspiração.
+
+Utilizar análise multicriterial (AHP, Fuzzy) em SIG para exploração de recursos minerais e tomada de decisão.
+
+Analisar processos de intemperismo, erosão, formação e degradação de solos com suporte de geotecnologias.
+
+Delimitar e caracterizar bacias hidrográficas com análise morfométrica e política de recursos hídricos.
+
+Aplicar sensoriamento remoto na detecção de mudanças de uso e cobertura vegetal e no monitoramento de impactos da mineração.
+
+Utilizar métodos de aprendizado de máquina com validação espacialmente robusta, alinhados aos princípios FAIR e de ciência aberta.
+
+**HABILIDADES E COMPETÊNCIAS:** Ao final da disciplina, o(a) discente deverá dominar os fundamentos teóricos e práticos do geoprocessamento, compreender as potencialidades e limitações das geotecnologias aplicadas a problemas ambientais reais, realizar análises espaciais consistentes em plataformas livres (QGIS, Google Earth Engine), avaliar criticamente a qualidade e incerteza de produtos cartográficos, integrar múltiplas fontes de dados espaciais (satelitais, censitários, hidrológicos, pedológicos), aplicar métodos de aprendizado de máquina com validação espacialmente robusta, e elaborar produtos técnicos (mapas, relatórios, scripts reprodutíveis) orientados ao planejamento, licenciamento, monitoramento ambiental e políticas públicas de gestão territorial e de recursos naturais.
+
+**METODOLOGIA:** A disciplina será desenvolvida ao longo de 11 encontros semanais. As atividades combinarão exposição dialogada dos fundamentos teóricos com sessões práticas em ambiente computacional (QGIS, Google Earth Engine e R).
+
+Cada encontro articulará uma dimensão conceitual (fundamentos, pressupostos e critérios de análise) com uma dimensão aplicada (exercícios com dados reais, produção de mapas e relatórios). Os materiais de apoio (scripts, datasets, tutoriais e artigos) serão disponibilizados em formato digital.
+
+A disciplina enfatiza o rigor metodológico na produção de evidências geoespaciais, a reprodutibilidade dos procedimentos e a interpretação crítica dos resultados.
+
+**FORMAS DE AVALIAÇÃO:** O processo avaliativo contemplará instrumentos teóricos e práticos:
+
+* **1ª Avaliação (Teórica — Individual):** prova presencial abrangendo fundamentos de geoprocessamento, incerteza em classificação, geotecnologias aplicadas a recursos hídricos, mineração e solos.
+
+* **2ª Avaliação (Prática — Individual ou em dupla):** elaboração de produto cartográfico (mapa temático e relatório técnico) com análise espacial no QGIS ou GEE.
+
+* **3ª Avaliação (Teórica — Individual):** prova presencial abrangendo bacias hidrográficas, monitoramento hidrológico, sensoriamento remoto, detecção de mudanças e IA aplicada.
+
+* **4ª Avaliação (Projeto Final — Individual ou em grupo):** projeto integrado com análise multicriterial, mapas de uso/cobertura, detecção de mudanças e relatório reprodutível.
+
+Cada avaliação terá valor máximo de 10,0 pontos e a média final será calculada pela média aritmética simples.
+
+**PROGRAMA DO COMPONENTE CURRICULAR**
+
+O componente curricular será desenvolvido em 11 encontros. O programa articula fundamentos de geoprocessamento e sensoriamento remoto com aplicações em recursos hídricos, solos, mineração e inteligência artificial, culminando em análise integrada de problemas ambientais.
+
+1. **Avaliação de Incerteza em Classificação (aula 01)**
+
+   * Matriz de confusão, coeficiente Kappa e validação espacial.
+
+   * Mapas de probabilidade e incerteza no Google Earth Engine.
+
+2. **Fundamentos do Geoprocessamento (aula 02)**
+
+   * Ontologias espaciais; modelos vetorial e matricial; SRC.
+
+   * Álgebra de mapas, operações espaciais e geoestatística.
+
+3. **Geotecnologias e Recursos Hídricos (aula 03)**
+
+   * Monitoramento de reservatórios e aquíferos; índices de seca.
+
+   * Evapotranspiração (SEBAL); sensoriamento remoto hidrológico; governança hídrica.
+
+4. **SIG na Exploração Mineral (aula 04)**
+
+   * Sistemas mineralizantes; geofísica e sensoriamento hiperespectral.
+
+   * Análise multicriterial: Fuzzy-AHP e pesos de evidência para tomada de decisão.
+
+5. **Intemperismo, Erosão e Solos (aula 05)**
+
+   * Equação de Jenny; séries de Goldich; processos pedogenéticos.
+
+   * RUSLE; classificação SiBCS; mapeamento digital de solos.
+
+6. **Degradação, Desertificação e Clima (aula 06)**
+
+   * LDN/ODS 15.3; retroalimentação USLE-clima; salinização.
+
+   * Mecanismo de Charney; indicadores espaciais; restauração.
+
+7. **Recursos Hídricos e Bacia Hidrográfica (aula 07)**
+
+   * Delimitação de bacias; morfometria e balanço hídrico.
+
+   * Lei 9.433/1997; outorga, cobrança e nexo água-energia-alimento.
+
+8. **Monitoramento Hidrológico (aula 08)**
+
+   * Telemetria IoT; curvas-chave; altimetria radar.
+
+   * GPM/SMAP; SEBAL/METRIC; DEMs e modelos hidrológicos.
+
+9. **Geoprocessamento na Mineração (aula 09)**
+
+   * DInSAR; NDVI e balanço volumétrico LiDAR.
+
+   * Gestão de risco, compliance ambiental e licenciamento.
+
+10. **Sensoriamento Remoto e Cobertura Vegetal (aula 10)**
+
+    * NDVI/EVI; classificadores RF/SVM/U-Net; BFAST.
+
+    * PRODES/MapBiomas; validação de Olofsson; métricas de paisagem.
+
+11. **IA e Qualidade da Pesquisa Ambiental (aula 11)**
+
+    * Modelagem híbrida; SHAP/LIME; explicabilidade.
+
+    * Princípios FAIR; Green AI; ética e reprodutibilidade na pesquisa.
+
+**CONTEÚDO PROGRAMÁTICO**
+
+**Quadro 1 — Conteúdo programático por aula de Geotecnologias e SIG.**
+
+| SEMANA | AULA | ASSUNTOS PREVISTOS |
+| :----: | :--: | :----------------- |
+| 1ª | 01 | Avaliação de incerteza e acurácia em classificação: matriz de confusão, Kappa, validação espacial. |
+| 2ª | 02 | Fundamentos do geoprocessamento e análise espacial: estruturas de dados, operações espaciais. |
+| 3ª | 03 | Geotecnologias aplicadas a recursos hídricos: evapotranspiração, índices de seca, SR hidrológico. |
+| 4ª | 04 | SIG aplicado à exploração de recursos minerais: análise multicriterial, AHP, tomada de decisão. |
+| 5ª | 05 | Intemperismo, erosão e formação de solos: processos pedogenéticos, classificação SiBCS. |
+| 6ª | 06 | Degradação do solo, desertificação e mudanças climáticas: indicadores, monitoramento, modelagem. |
+| 7ª | 07 | Recursos hídricos e gestão por bacia hidrográfica: delimitação, morfometria, Política Nacional. |
+| 8ª | 08 | Monitoramento hidrológico e geotecnologias: redes de observação, sensores remotos, séries temporais. |
+| 9ª | 09 | Geoprocessamento aplicado a impactos da mineração: análise espacial, licenciamento, auditoria. |
+| 10ª | 10 | Sensoriamento remoto e mudanças de cobertura vegetal: detecção de mudanças, métricas de paisagem. |
+| 11ª | 11 | Inteligência artificial e qualidade da pesquisa ambiental: ML, validação espacial, princípios FAIR. |
+
+: {.striped .hover}
+
+> **Observação:** Disciplina ofertada no curso de Geografia da UNIVASF. Conteúdo alinhado aos temas do concurso público de Geociências.
+
+**SIGNIFICADO DO COMPONENTE CURRICULAR PARA FORMAÇÃO PROFISSIONAL**
+
+O componente curricular Geotecnologias e SIG é estruturante para a formação de profissionais de Geografia e áreas afins, por fornecer competências em análise espacial, sensoriamento remoto e modelagem ambiental indispensáveis ao diagnóstico, monitoramento e gestão do território. O domínio de geotecnologias é exigência crescente em licenciamentos, auditorias ambientais, planejamento urbano e regional, gestão de recursos hídricos e minerais, monitoramento de desmatamento e avaliação de impactos.
+
+A ênfase em plataformas livres (QGIS, Google Earth Engine), inteligência artificial aplicada e princípios de ciência aberta (FAIR, reprodutibilidade) prepara o(a) egresso(a) para atuar em órgãos públicos, empresas de consultoria, institutos de pesquisa e organizações ambientais, com rigor técnico e alinhamento às melhores práticas da comunidade geoespacial.
+
+**REFERÊNCIAS**
+
+**Básica**
+
+* CÂMARA, Gilberto et al. **Anatomia de Sistemas de Informação Geográfica**. São José dos Campos: INPE, 2004.
+* NOVO, Evlyn M. L. de Moraes. **Sensoriamento remoto: princípios e aplicações**. 4. ed. São Paulo: Blucher, 2008.
+* ROSA, Roberto; BRITO, Jorge Luís Silva. **Introdução ao geoprocessamento: sistemas de informação geográfica**. Uberlândia: UFU, 1996.
+* TUCCI, Carlos E. M. **Hidrologia: ciência e aplicação**. 4. ed. Porto Alegre: ABRH/UFRGS, 2002.
+* ALLEN, Richard G. et al. **Crop evapotranspiration: guidelines for computing crop water requirements**. FAO Irrigation and Drainage Paper 56. Rome: FAO, 1998.
+
+**Complementar**
+
+* EMBRAPA. **Sistema Brasileiro de Classificação de Solos**. 5. ed. Brasília: Embrapa, 2018.
+* BRASIL. **Lei nº 9.433, de 8 de janeiro de 1997**. Política Nacional de Recursos Hídricos. Brasília, 1997.
+* REICHSTEIN, Markus et al. Deep learning and process understanding for data-driven Earth system science. **Nature**, v. 566, p. 195-204, 2019.
+* WILKINSON, Mark D. et al. The FAIR Guiding Principles for scientific data management and stewardship. **Scientific Data**, v. 3, 160018, 2016.
+* SCHWARTZ, Roy et al. Green AI. **Communications of the ACM**, v. 63, n. 12, p. 54-63, 2020.
+* TAPLEY, Byron D. et al. The Gravity Recovery and Climate Experiment: mission overview and early results. **Geophysical Research Letters**, v. 31, L09607, 2004.
+* SILVA, Bernardo Barbosa da et al. Determinação de evapotranspiração real por sensoriamento remoto. **Revista Brasileira de Agrometeorologia**, v. 13, n. 2, p. 217-225, 2005.
