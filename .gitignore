@@ -3,6 +3,11 @@
 .env
 **/*.quarto_ipynb
 
+# Google Forms API - credenciais sensíveis
+scripts/google_forms/credentials.json
+scripts/google_forms/token.json
+scripts/google_forms/formularios_criados.json
+
 # Vídeos e HEIC (pesados demais para GitHub)
 *.MOV
 *.MP4
@@ -19,5 +24,5 @@ aulas/bioengenharia_de_solos/Exercicios/
 aulas/bioengenharia_de_solos/Provas/
 aulas/bioengenharia_de_solos/Relat*/
 
-# Arquivos grandes de refer�ncia
+# Arquivos grandes de refer�ncia
 aulas/bioengenharia_de_solos/referencias/*.pptx

@@ -1,0 +1,284 @@
+============================================================
+ATIVIDADE 04 — ANÁLISE DA PAISAGEM (2026.1)
+Aulas 07–10 | Cartografia Temática e Interpretação Visual
+============================================================
+
+---------- TÍTULO DO FORMULÁRIO ----------
+
+Atividade 04 — Leitura Cartográfica e Interpretação Visual da Paisagem
+
+---------- DESCRIÇÃO DO FORMULÁRIO ----------
+
+Esta atividade abrange os conteúdos das Aulas 07 a 10:
+• Aulas 07-08 — Cartografia temática e delimitação de área no QGIS
+• Aulas 09-10 — Interpretação visual, matriz de evidências e síntese
+
+Trata-se de uma atividade prática de leitura integrada de mapas e imagens. Você não precisa usar software — apenas observação, interpretação e escrita.
+
+Prazo de entrega: até o início da Aula 11 (1ª Avaliação).
+
+============================================================
+SEÇÃO 1 — IDENTIFICAÇÃO
+============================================================
+
+Pergunta 1
+Tipo: Resposta curta (obrigatória)
+Título: Nome completo
+
+Pergunta 2
+Tipo: Resposta curta (obrigatória)
+Título: Matrícula
+
+============================================================
+SEÇÃO 2 — LEITURA CARTOGRÁFICA (Aulas 07-08)
+============================================================
+
+Título da seção: Interpretando mapas temáticos
+Descrição da seção: Observe os mapas temáticos fornecidos abaixo e responda.
+
+(Inserir: 2 mapas da mesma área — um mapa de USO E COBERTURA DA TERRA e um mapa HIPSOMÉTRICO/RELEVO. Sugestão: bacia do rio Jacuípe ou entorno de Feira de Santana, gerados previamente no QGIS.)
+
+----------
+
+Pergunta 3
+Tipo: Caixas de seleção (obrigatória, selecionar VÁRIAS)
+Título: Observando o mapa de uso e cobertura da terra, quais classes de uso você consegue identificar? (marque todas)
+
+Opção 1: Vegetação nativa densa (mata/caatinga arbórea)
+Opção 2: Vegetação nativa esparsa (caatinga arbustiva/herbácea)
+Opção 3: Pastagem
+Opção 4: Agricultura (lavoura temporária ou permanente)
+Opção 5: Solo exposto / área degradada
+Opção 6: Corpo d'água (rio, açude, lagoa)
+Opção 7: Área urbana / edificações
+Opção 8: Silvicultura (eucalipto, pinus)
+Opção 9: Afloramento rochoso
+
+GABARITO: Depende da imagem fornecida. No entorno de Feira de
+Santana, as classes mais prováveis são: 1, 2, 3, 5, 6 e 7.
+Opções 4 e 8 dependem do recorte. Avaliar se o aluno identificou
+corretamente as classes presentes na imagem.
+
+----------
+
+Pergunta 4
+Tipo: Múltipla escolha (obrigatória)
+Título: Ao comparar o mapa de relevo com o mapa de uso/cobertura, você observa que a vegetação nativa remanescente se concentra principalmente em:
+
+Opção A: Nas áreas planas de fundo de vale, próximas aos rios.
+Opção B: Nos topos de morro e encostas mais íngremes, onde a mecanização agrícola é difícil.
+Opção C: Distribuída uniformemente por toda a área.
+Opção D: Exclusivamente nas margens dos rios (mata ciliar).
+
+GABARITO: Opção B (mais provável para paisagens da região).
+Comentário: No semiárido e Mata Atlântica da Bahia, a vegetação
+nativa tende a persistir onde a declividade impede a pecuária
+mecanizada (topos de morro, encostas íngremes). As áreas planas
+são preferencialmente convertidas em pastagem. A mata ciliar (D)
+pode existir, mas raramente é a única remanescente. Este padrão
+revela a relação direta entre geomorfologia e uso do solo.
+
+----------
+
+Pergunta 5
+Tipo: Parágrafo (obrigatória)
+Título: Que relações você consegue identificar entre o relevo e o uso do solo na área mapeada? Por que essa relação existe?
+Descrição: Mínimo 5 linhas. Mencione pelo menos 2 relações específicas.
+
+GABARITO (resposta esperada):
+"1) As áreas de pastagem dominam os topos planos e as encostas
+suaves (declividade < 15%), pois são acessíveis ao gado e à
+eventual mecanização. 2) A vegetação nativa remanescente está
+concentrada nas encostas mais íngremes (> 25%), onde o custo de
+conversão é alto e a legislação (APP de encosta) pode ter
+contribuído para a preservação. 3) Os corpos d'água (açudes)
+ocupam fundos de vale, aproveitando a convergência da drenagem.
+4) O solo exposto aparece em áreas de meia-encosta, possivelmente
+indicando erosão por sobrepastoreio.
+
+Essa relação existe porque o relevo condiciona o uso: áreas planas
+são mais produtivas e acessíveis, sendo as primeiras a serem
+convertidas. Áreas íngremes funcionam como 'refúgios' de
+vegetação nativa — um padrão clássico descrito por Ab'Sáber."
+
+============================================================
+SEÇÃO 3 — INTERPRETAÇÃO VISUAL (Aulas 09-10)
+============================================================
+
+Título da seção: Chaves de interpretação e evidências
+
+(Inserir: uma imagem de satélite de alta resolução — Google Earth ou Sentinel-2 em cor verdadeira — da mesma área dos mapas, para que o aluno aplique chaves de interpretação.)
+
+----------
+
+Pergunta 6
+Tipo: Múltipla escolha (obrigatória)
+Título: Qual dos seguintes NÃO é um elemento-chave de interpretação visual de imagens?
+
+Opção A: Forma (geometria dos objetos na imagem)
+Opção B: Textura (rugosidade aparente da superfície)
+Opção C: Tonalidade / cor (resposta espectral dos alvos)
+Opção D: Preço do hectare na região
+
+GABARITO: Opção D.
+Comentário: Os elementos clássicos de interpretação visual são:
+forma, tamanho, tonalidade/cor, textura, padrão, sombra, contexto
+(associação) e localização. O preço do hectare é uma informação
+socioeconômica relevante para a análise da paisagem, mas NÃO é
+um elemento de interpretação visual de imagens.
+
+----------
+
+Pergunta 7
+Tipo: Parágrafo (obrigatória)
+Título: Observe a imagem de satélite fornecida. Identifique e descreva pelo menos 4 feições diferentes usando as chaves de interpretação (forma, textura, tonalidade, padrão, contexto).
+Descrição: Para cada feição, indique: (1) o que é, (2) que chave(s) usou para identificar, (3) por que tem essa aparência. Mínimo 8 linhas.
+
+GABARITO (resposta esperada):
+"1) Pastagem: tonalidade verde-clara homogênea; textura lisa
+(sem rugosidade do dossel); forma irregular seguindo limites
+de propriedade; contexto: adjacente a cercas e curral.
+
+2) Fragmento de caatinga arbórea: tonalidade verde-escura;
+textura rugosa (copas individuais visíveis); forma irregular
+com bordas recortadas; contexto: localizado em encosta íngreme.
+
+3) Açude: tonalidade azul-escura ou preta; textura lisa
+(superfície da água); forma ovalada ou em 'V' (barragem);
+contexto: fundo de vale com convergência de drenagem.
+
+4) Estrada de terra: tonalidade clara/esbranquiçada; textura
+lisa; forma linear contínua com largura regular (~5 m);
+padrão: conecta propriedades rurais ao núcleo urbano.
+
+5) Solo exposto / área degradada: tonalidade clara (branca
+a amarelada); textura lisa; forma irregular sem limites nítidos;
+contexto: meia-encosta, adjacente a pastagem — possivelmente
+erosão laminar por sobrepastoreio."
+
+Critérios: Avaliada pela quantidade e qualidade das descrições.
+Deve usar vocabulário de interpretação visual (tonalidade, textura,
+forma, padrão, contexto). Mínimo 4 feições.
+
+----------
+
+Pergunta 8
+Tipo: Múltipla escolha (obrigatória)
+Título: Uma "matriz de evidências" na análise da paisagem serve para:
+
+Opção A: Calcular a nota final dos alunos de forma automática.
+Opção B: Sistematizar e triangular dados de diferentes fontes (mapa, imagem, campo, dados secundários), explicitando o que cada evidência revela sobre a paisagem.
+Opção C: Apenas listar os softwares utilizados na pesquisa.
+Opção D: Descrever a metodologia estatística do trabalho.
+
+GABARITO: Opção B.
+Comentário: A matriz de evidências é uma ferramenta organizacional
+que cruza UNIDADES DA PAISAGEM (linhas) com FONTES DE EVIDÊNCIA
+(colunas: mapa topográfico, imagem de satélite, dados de campo,
+dados socioeconômicos), permitindo triangulação e robustez na
+interpretação.
+
+----------
+
+Pergunta 9
+Tipo: Parágrafo (obrigatória)
+Título: Construa uma mini-matriz de evidências para a área analisada. Escolha 3 unidades/feições da paisagem (linhas) e 3 fontes de evidência (colunas). Preencha cada célula com uma observação curta.
+Descrição: Use formato de tabela (pode ser simplificado). Exemplos de fontes: mapa hipsométrico, imagem de satélite, mapa de uso/cobertura.
+
+GABARITO (resposta esperada):
+
+"UNIDADE / EVIDÊNCIA  | Mapa hipsométrico | Imagem satélite    | Mapa uso/cobertura
+---------------------|-------------------|--------------------|--------------------
+Fundo de vale irrigado| Altitude 200-250m,| Verde-brilhante,   | Classe 'Agricultura'
+                     | plano (< 5%)      | pivô circular      | 
+Encosta com caatinga | 300-450m,         | Verde-escuro,      | Classe 'Veg. nativa
+                     | declividade >25%  | textura rugosa     | densa'
+Topo chapada / pasto | >450m, plano      | Verde-claro, lisa,  | Classe 'Pastagem'
+                     |                   | limites geométricos |
+"
+
+Critérios: O aluno deve cruzar pelo menos 3 unidades × 3 fontes.
+Avaliar se as observações são coerentes entre si (triangulação).
+
+============================================================
+SEÇÃO 4 — SÍNTESE DESCRITIVO-INTERPRETATIVA
+============================================================
+
+Pergunta 10
+Tipo: Parágrafo (obrigatória)
+Título: Com base em TUDO que você observou nos mapas e na imagem (Perguntas 3 a 9), escreva uma síntese descritivo-interpretativa da paisagem analisada. Sua síntese deve: (a) descrever os principais elementos e padrões; (b) interpretar as relações entre uso do solo e relevo; (c) apontar pelo menos um processo de degradação ou pressão ambiental visível.
+Descrição: Mínimo 10 linhas. Este é o exercício mais importante da atividade — ele simula o tipo de texto que você escreverá nas avaliações e no relatório final.
+
+GABARITO (resposta esperada):
+"A paisagem analisada corresponde a um trecho da bacia do rio
+Jacuípe, no semiárido baiano, com altitudes entre 200 e 500 m.
+O relevo é predominantemente suave-ondulado, com topos planos
+de chapada e vales encaixados.
+
+O uso do solo reflete uma forte relação com o relevo: as áreas
+planas (topos e fundos de vale) foram quase integralmente
+convertidas em pastagem ou, pontualmente, em agricultura irrigada.
+A vegetação nativa remanescente (caatinga arbórea-arbustiva) está
+concentrada nas encostas mais íngremes, onde a conversão é
+economicamente inviável.
+
+A fragmentação da caatinga é visível — os remanescentes são
+pequenos (< 10 ha), isolados e com bordas recortadas, sugerindo
+um avançado estágio de degradação paisagística. A conectividade
+é mantida precariamente por matas ciliares ao longo de riachos,
+mas várias drenagens já não possuem vegetação marginal.
+
+A principal pressão ambiental identificada é o sobrepastoreio,
+evidenciado por manchas de solo exposto em meia-encosta,
+possivelmente associadas a erosão laminar e em sulcos. Esta
+pressão compromete a capacidade de infiltração do solo e
+intensifica o escoamento superficial, particularmente relevante
+em um contexto semiárido com chuvas concentradas."
+
+Critérios: (a) Descrição de 3+ elementos? (b) Relação relevo-uso
+explícita? (c) Processo de degradação identificado e argumentado?
+Mínimo 10 linhas? Linguagem técnica adequada?
+
+----------
+
+Pergunta 11
+Tipo: Escala linear (obrigatória)
+Título: De 1 a 5, o quanto você se sente preparado(a) para a 1ª Avaliação (Teórica I) na próxima semana?
+Escala: 1 = Nada preparado → 5 = Muito preparado
+
+============================================================
+CONFIGURAÇÕES DO FORMULÁRIO
+============================================================
+
+- Coletar e-mails: Sim
+- Limitar a 1 resposta: Sim
+- Permitir edição após envio: Sim
+- Mostrar barra de progresso: Sim
+- Embaralhar ordem das perguntas: Não
+- Mensagem de confirmação:
+  "Resposta registrada! Esta atividade é uma excelente
+   preparação para a 1ª Avaliação. Revise suas respostas
+   e as anotações de aula antes da prova."
+
+============================================================
+NOTAS PARA O DOCENTE
+============================================================
+
+OBJETIVO PEDAGÓGICO:
+Última atividade antes da 1ª Avaliação. Funciona como revisão
+ativa — o aluno aplica TODOS os conceitos das Semanas 1-5 em
+uma análise integrada real. A P10 (síntese) é o exercício
+mais valioso; pode ser devolvida com feedback escrito.
+
+PREPARAÇÃO NECESSÁRIA:
+- Gerar 2 mapas (uso/cobertura + hipsométrico) da mesma área no QGIS
+- Capturar 1 imagem de satélite (Google Earth ou Sentinel-2)
+- Sugestão: usar a mesma área que os alunos delimitaram na Aula 08
+
+TEMPO ESTIMADO: 40–50 minutos
+
+ALINHAMENTO:
+- Revisão para a 1ª Avaliação (Teórica I — Aula 11, 01/04)
+- Avaliação contínua
+- A síntese (P10) pode servir de rascunho para o relatório final
+============================================================

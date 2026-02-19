@@ -1,0 +1,331 @@
+============================================================
+ATIVIDADE 07 — ANÁLISE DA PAISAGEM (2026.1)
+Aulas 19–22 | Diagnóstico Integrado e Planejamento Territorial
+============================================================
+
+---------- TÍTULO DO FORMULÁRIO ----------
+
+Atividade 07 — Do Diagnóstico à Ação: Unidades de Paisagem, Zoneamento e Diretrizes
+
+---------- DESCRIÇÃO DO FORMULÁRIO ----------
+
+Esta atividade abrange os conteúdos das Aulas 19 a 22:
+• Aulas 19-20 — Unidades de paisagem e diagnóstico integrado (SWOT/FOFA)
+• Aulas 21-22 — Planejamento territorial, NbS, legislação e zoneamentos
+
+Esta é a ÚLTIMA atividade antes do Serious Game (3ª Avaliação) e da atividade de campo. Funciona como revisão integradora de todo o semestre.
+
+Prazo de entrega: até o início da Aula 23 (Serious Game).
+
+============================================================
+SEÇÃO 1 — IDENTIFICAÇÃO
+============================================================
+
+Pergunta 1
+Tipo: Resposta curta (obrigatória)
+Título: Nome completo
+
+Pergunta 2
+Tipo: Resposta curta (obrigatória)
+Título: Matrícula
+
+============================================================
+SEÇÃO 2 — UNIDADES DE PAISAGEM (Aulas 19-20)
+============================================================
+
+Título da seção: Delimitando e caracterizando unidades
+Descrição da seção: A delimitação de unidades de paisagem é o passo que transforma dados espaciais em diagnóstico territorial.
+
+----------
+
+Pergunta 3
+Tipo: Múltipla escolha (obrigatória)
+Título: Unidades de paisagem são delimitadas pela integração de múltiplos critérios. Qual das opções lista CORRETAMENTE os critérios mais utilizados?
+
+Opção A: Apenas o tipo de solo.
+Opção B: Geomorfologia (relevo), uso/cobertura da terra, geologia, solos e drenagem — combinados por sobreposição cartográfica (álgebra de mapas).
+Opção C: Apenas o índice de vegetação (NDVI).
+Opção D: A divisão político-administrativa (limites municipais).
+
+GABARITO: Opção B.
+Comentário: A unidade de paisagem é uma síntese territorial que
+combina atributos físicos (relevo, solo, geologia, drenagem)
+com atributos de uso/cobertura. A delimitação é feita por
+sobreposição (overlay) de mapas temáticos no SIG, gerando
+polígonos homogêneos internamente e distintos dos vizinhos.
+Usar apenas um critério (A, C) é insuficiente. Limites
+administrativos (D) não respeitam a organização natural.
+
+----------
+
+Pergunta 4
+Tipo: Múltipla escolha (obrigatória)
+Título: A matriz SWOT/FOFA espacializada é uma ferramenta de diagnóstico integrado da paisagem. A diferença entre uma SWOT convencional e uma SWOT "espacializada" é que:
+
+Opção A: A SWOT espacializada associa cada item (força, fraqueza, oportunidade, ameaça) a uma localização geográfica e a uma unidade de paisagem específica.
+Opção B: A SWOT espacializada não usa mapa — é apenas uma tabela.
+Opção C: A SWOT espacializada só funciona para empresas, não para territórios.
+Opção D: Não há diferença — são iguais.
+
+GABARITO: Opção A.
+Comentário: A SWOT espacializada vincula cada elemento a um
+ONDE no território. Exemplo: "Força: presença de mata ciliar
+preservada ao longo do rio X (unidade de paisagem 3)".
+"Ameaça: avanço de pastagem sobre APP na meia-encosta NE
+(unidade 5)." Isso permite que as diretrizes sejam
+territorialmente direcionadas.
+
+----------
+
+Pergunta 5
+Tipo: Parágrafo (obrigatória)
+Título: Considere uma bacia hidrográfica com 4 unidades de paisagem:
+
+UP1 — Topo de chapada: relevo plano, pastagem extensiva, solo profundo.
+UP2 — Encosta íngreme: caatinga remanescente, declividade > 30%, afloramentos.
+UP3 — Fundo de vale: mata ciliar fragmentada, agricultura irrigada, açudes.
+UP4 — Meia-encosta: mosaico pastagem/caatinga esparsa, solo raso, erosão visível.
+
+Preencha uma mini-SWOT espacializada para cada unidade (F, Fr, O, A).
+Descrição: Para cada UP, indique pelo menos 1 Força, 1 Fraqueza, 1 Oportunidade e 1 Ameaça. Mínimo 12 linhas no total.
+
+GABARITO (resposta esperada):
+
+"UP1 — Topo de chapada:
+  F: Solo profundo com boa capacidade de retenção hídrica.
+  Fr: Monocultura de pastagem, sem diversificação produtiva.
+  O: Potencial para integração lavoura-pecuária ou silvipastoril.
+  A: Compactação do solo por pisoteio e perda de carbono orgânico.
+
+UP2 — Encosta íngreme:
+  F: Caatinga remanescente preservada atuando como refúgio de biodiversidade.
+  Fr: Área inacessível — difícil monitoramento e fiscalização.
+  O: Candidata à APP de encosta (proteção legal) e corredor ecológico.
+  A: Risco de incêndio na seca e avanço de borda por pastagem adjacente.
+
+UP3 — Fundo de vale:
+  F: Disponibilidade hídrica e solos férteis (aluviais).
+  Fr: Mata ciliar fragmentada — não cumpre função de filtro e estabilização.
+  O: Restauração da mata ciliar com espécies nativas e frutíferas (SAF).
+  A: Contaminação por agrotóxicos da irrigação; assoreamento dos açudes.
+
+UP4 — Meia-encosta:
+  F: Presença de caatinga esparsa indica potencial de regeneração.
+  Fr: Solo raso + erosão ativa = alta vulnerabilidade.
+  O: Implantação de práticas de bioengenharia (paliçadas, geotêxteis).
+  A: Aprofundamento da erosão (sulcos → ravinas → voçorocas)."
+
+Critérios: O aluno deve demonstrar: (a) coerência entre
+característica da UP e o item SWOT, (b) visão integrada (não
+apenas ecológica ou apenas econômica), (c) ao menos 4 UPs × 4
+itens SWOT = 16 entradas mínimas.
+
+============================================================
+SEÇÃO 3 — PLANEJAMENTO E ZONEAMENTO (Aulas 21-22)
+============================================================
+
+Título da seção: Da análise à proposição
+
+----------
+
+Pergunta 6
+Tipo: Caixas de seleção (obrigatória, selecionar VÁRIAS)
+Título: Quais dos seguintes instrumentos de zoneamento são aplicáveis ao ordenamento territorial de uma bacia hidrográfica? (marque todos os corretos)
+
+Opção 1: ZEE — Zoneamento Ecológico-Econômico
+Opção 2: ZEEC — Zoneamento Ecológico-Econômico Costeiro
+Opção 3: Plano de Bacia Hidrográfica (PNRH)
+Opção 4: Plano de Manejo de Unidade de Conservação
+Opção 5: Zoneamento Geoambiental
+Opção 6: Zoneamento de Aptidão Agrícola
+
+GABARITO: Opções 1, 3, 5 e 6 (para qualquer bacia).
+Opção 2 apenas se a bacia for costeira.
+Opção 4 apenas se houver UC na bacia.
+Comentário: O ZEE (1) é o instrumento mais abrangente, integrando
+dimensões ambientais e econômicas. O Plano de Bacia (3) é
+específico para recursos hídricos (Lei 9.433/97). O Zoneamento
+Geoambiental (5) parte da compartimentação geomorfológica. O
+de Aptidão Agrícola (6) classifica terras por capacidade de uso.
+O ZEEC (2) é restrito à zona costeira. O Plano de Manejo (4) é
+restrito a UCs.
+
+----------
+
+Pergunta 7
+Tipo: Múltipla escolha (obrigatória)
+Título: As Soluções baseadas na Natureza (NbS — Nature-based Solutions) são relevantes para o planejamento territorial da paisagem porque:
+
+Opção A: Substituem toda a infraestrutura convencional (pontes, barragens, estradas).
+Opção B: Utilizam processos e estruturas ecológicas para enfrentar desafios socioambientais (erosão, enchentes, perda de habitat), gerando co-benefícios (biodiversidade, regulação climática, proteção do solo).
+Opção C: São mais baratas que qualquer alternativa convencional em 100% dos casos.
+Opção D: São apenas estéticas e não têm função técnica.
+
+GABARITO: Opção B.
+Comentário: NbS são ações que protegem, gerenciam ou restauram
+ecossistemas para enfrentar desafios sociais (IUCN, 2020).
+Exemplos: restauração de mata ciliar para controle de enchentes;
+sistemas agroflorestais para segurança alimentar + sequestro de
+carbono; geotêxteis biodegradáveis para controle de erosão.
+NÃO substituem toda infraestrutura (A), NÃO são sempre mais
+baratas (C) e NÃO são apenas estéticas (D).
+
+----------
+
+Pergunta 8
+Tipo: Parágrafo (obrigatória)
+Título: Retomando a bacia das 4 unidades de paisagem (Pergunta 5), proponha DIRETRIZES específicas para cada unidade. Cada diretriz deve incluir: (1) o QUE fazer, (2) ONDE exatamente, (3) POR QUÊ (qual problema resolve), (4) COM QUE instrumento legal/normativo se alinha.
+Descrição: Mínimo 12 linhas. Pense como um profissional elaborando um relatório técnico.
+
+GABARITO (resposta esperada):
+
+"UP1 — Topo de chapada:
+  (1) Conversão gradual para sistema silvipastoril (integração
+  árvores nativas + pastagem rotacionada).
+  (2) Áreas de pastagem degradada com solo compactado.
+  (3) Reduz compactação, melhora infiltração, diversifica renda
+  e sequestra carbono.
+  (4) Alinha-se ao PRA (Programa de Regularização Ambiental) do
+  Código Florestal (Lei 12.651/2012) e ao Plano ABC+.
+
+UP2 — Encosta íngreme:
+  (1) Reconhecimento e demarcação como APP de declividade (>45°)
+  ou Área de Uso Restrito (25-45°).
+  (2) Toda a extensão da encosta com caatinga remanescente.
+  (3) Proteção legal contra desmatamento e integridade do
+  corredor ecológico encosta-fundo de vale.
+  (4) Art. 4° e 11 do Código Florestal (APPs e áreas de uso
+  restrito).
+
+UP3 — Fundo de vale:
+  (1) Restauração da mata ciliar com espécies nativas em faixa
+  mínima de 30 m (ou conforme largura do rio).
+  (2) Trechos com mata ciliar ausente ou degradada ao longo do
+  rio principal e tributários.
+  (3) Proteção do solo contra erosão marginal, filtragem de
+  sedimentos/agrotóxicos, habitat para fauna aquática.
+  (4) APP de curso d'água (Art. 4°, Código Florestal) e Plano
+  de Bacia (Lei 9.433/97).
+
+UP4 — Meia-encosta:
+  (1) Implantação de técnicas de bioengenharia: paliçadas de
+  madeira em sulcos erosivos, geotêxteis vegetados em ravinas,
+  barraginhas para contenção de escoamento.
+  (2) Focos ativos de erosão em solo raso, especialmente onde
+  há convergência de fluxo.
+  (3) Contenção da erosão antes de evolução para voçoroca;
+  proteção dos recursos hídricos a jusante (sem assoreamento).
+  (4) Alinha-se ao Programa Produtor de Águas (ANA) e ao
+  Pagamento por Serviços Ambientais (Lei 14.119/2021)."
+
+Critérios: Cada UP deve ter diretriz com os 4 elementos pedidos.
+Avaliar coerência entre diagnóstico (P5) e diretriz (P8).
+
+============================================================
+SEÇÃO 4 — ESTUDO DE CASO INTEGRADOR
+============================================================
+
+Título da seção: Simulação de relatório técnico
+Descrição da seção: Esta seção é preparatória para o Serious Game (3ª Avaliação). Exercite seu raciocínio integrando diagnóstico e proposta.
+
+----------
+
+Pergunta 9
+Tipo: Parágrafo (obrigatória)
+Título: DESAFIO FINAL — Você é o(a) consultor(a) contratado(a) para elaborar o zoneamento geoambiental de uma microbacia de 50 km² no semiárido. O prefeito quer destinar 60% da área para agropecuária e o Ministério Público exige preservação de todas as APPs + 20% de Reserva Legal. Considerando os conceitos de unidades de paisagem, métricas de fragmentação e NbS, como você conciliaria as duas demandas? Proponha uma distribuição espacial viável.
+Descrição: Mínimo 10 linhas. Este exercício simula o tipo de decisão do Serious Game.
+
+GABARITO (resposta esperada):
+
+"Distribuição proposta para 50 km² (5.000 ha):
+
+1. MAPEAMENTO: Primeiro, delimitar as APPs legais obrigatórias:
+   - Margens de rios (30-100 m conforme largura)
+   - Nascentes (raio de 50 m)
+   - Encostas > 45° e topos de morro
+   Estimativa: ~15% da bacia = 750 ha (não negociáveis).
+
+2. RESERVA LEGAL: Mais 20% = 1.000 ha. Estratégia: alocar a RL
+   nas áreas com caatinga remanescente (evita custo de restauração)
+   E em posição que maximize CONECTIVIDADE com as APPs, formando
+   um corredor contínuo entre encostas e matas ciliares. Usar
+   análise de grafos (Graphab) para otimizar a localização.
+
+3. AGROPECUÁRIA: Os 60% restantes (~3.000 ha) ficam nos topos
+   planos e meia-encostas suaves (UP1 do modelo anterior), com
+   restrições:
+   - Sistema silvipastoril obrigatório em áreas com solo raso
+   - Terraceamento/barraginhas onde declividade > 12%
+   - Faixas de amortecimento (buffer) de 20 m nas bordas da RL
+
+4. NbS INTEGRADAS:
+   - Corredores ecológicos usando matas ciliares das APPs +
+     stepping stones (cercas vivas com espécies nativas) nos
+     limites de propriedade
+   - Geotêxteis de fibras naturais em focos erosivos da UP4
+   - Bacias de detenção (barraginhas) para recarga de aquífero
+
+5. CONCILIAÇÃO: O total é APP (15%) + RL (20%) + agropecuária
+   (60%) + infraestrutura/estradas (5%) = 100%. O prefeito
+   mantém os 60% produtivos, e o MP garante APPs + RL. A chave é
+   a LOCALIZAÇÃO: RL posicionada para maximizar conectividade
+   (não em fragmentos isolados inúteis) e agropecuária nas
+   terras de maior aptidão (menor risco ambiental)."
+
+Critérios: (a) Distribuição numérica que fecha em 100%?
+(b) Usou conceitos de unidades de paisagem e conectividade?
+(c) Propôs NbS ou práticas conservacionistas? (d) Respeitou as
+exigências legais? (e) Demonstrou capacidade de negociar demandas
+conflitantes?
+
+----------
+
+Pergunta 10
+Tipo: Escala linear (obrigatória)
+Título: De 1 a 5, o quanto você se sente preparado(a) para o Serious Game da próxima semana?
+Escala: 1 = Nada preparado → 5 = Muito preparado
+
+----------
+
+Pergunta 11
+Tipo: Parágrafo (opcional)
+Título: Que conceitos ou temas você gostaria de revisar antes do Serious Game? Registre dúvidas, inseguranças ou sugestões.
+Descrição: (vazio)
+
+============================================================
+CONFIGURAÇÕES DO FORMULÁRIO
+============================================================
+
+- Coletar e-mails: Sim
+- Limitar a 1 resposta: Sim
+- Permitir edição após envio: Sim
+- Mostrar barra de progresso: Sim
+- Embaralhar ordem das perguntas: Não
+- Mensagem de confirmação:
+  "Resposta registrada! Esta atividade encerra o bloco de
+   conteúdo antes da 3ª Avaliação (Serious Game). Revise
+   suas respostas e prepare-se para o desafio!"
+
+============================================================
+NOTAS PARA O DOCENTE
+============================================================
+
+OBJETIVO PEDAGÓGICO:
+Última atividade antes do Serious Game. Funciona como ensaio
+geral — o aluno integra TODOS os conceitos do semestre (paisagem,
+geossistema, MCM, fragmentação, métricas, SR, zoneamento, NbS)
+em contexto de tomada de decisão. As perguntas 5, 8 e 9 são
+ESSENCIAIS — simulam o tipo de raciocínio exigido na avaliação
+prática.
+
+A P11 (dúvidas) permite feedback em tempo real — o docente pode
+ajustar a aula de revisão conforme as demandas da turma.
+
+TEMPO ESTIMADO: 45–60 minutos
+
+ALINHAMENTO:
+- Preparatória para 3ª Avaliação (Serious Game — Aula 23, 13/05)
+- Preparatória para 4ª Avaliação (Teórica II — Aula 29, 03/06)
+- Preparatória para atividade de campo (Aula 25, 20/05)
+- Avaliação contínua
+============================================================

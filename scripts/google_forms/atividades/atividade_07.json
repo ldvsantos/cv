@@ -1,0 +1,126 @@
+{
+  "title": "Atividade 07 — Do Diagnóstico à Ação: Unidades de Paisagem, Zoneamento e Diretrizes",
+  "description": "Esta atividade abrange os conteúdos das Aulas 19 a 22:\n• Aulas 19-20 — Unidades de paisagem e diagnóstico integrado (SWOT/FOFA)\n• Aulas 21-22 — Planejamento territorial, NbS, legislação e zoneamentos\n\nEsta é a ÚLTIMA atividade antes do Serious Game (3ª Avaliação) e da atividade de campo. Funciona como revisão integradora de todo o semestre.\n\nPrazo de entrega: até o início da Aula 23 (Serious Game).",
+  "sections": [
+    {
+      "title": "IDENTIFICAÇÃO",
+      "description": "",
+      "questions": [
+        {
+          "title": "Nome completo",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": true
+        },
+        {
+          "title": "Matrícula",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Delimitando e caracterizando unidades",
+      "description": "A delimitação de unidades de paisagem é o passo que transforma dados espaciais em diagnóstico territorial.",
+      "questions": [
+        {
+          "title": "Unidades de paisagem são delimitadas pela integração de múltiplos critérios. Qual das opções lista CORRETAMENTE os critérios mais utilizados?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Apenas o tipo de solo.",
+            "Geomorfologia (relevo), uso/cobertura da terra, geologia, solos e drenagem — combinados por sobreposição cartográfica (álgebra de mapas).",
+            "Apenas o índice de vegetação (NDVI).",
+            "A divisão político-administrativa (limites municipais)."
+          ]
+        },
+        {
+          "title": "A matriz SWOT/FOFA espacializada é uma ferramenta de diagnóstico integrado da paisagem. A diferença entre uma SWOT convencional e uma SWOT \"espacializada\" é que:",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "A SWOT espacializada associa cada item (força, fraqueza, oportunidade, ameaça) a uma localização geográfica e a uma unidade de paisagem específica.",
+            "A SWOT espacializada não usa mapa — é apenas uma tabela.",
+            "A SWOT espacializada só funciona para empresas, não para territórios.",
+            "Não há diferença — são iguais."
+          ]
+        },
+        {
+          "title": "Considere uma bacia hidrográfica com 4 unidades de paisagem:\n\nUP1 — Topo de chapada: relevo plano, pastagem extensiva, solo profundo.\nUP2 — Encosta íngreme: caatinga remanescente, declividade > 30%, afloramentos.\nUP3 — Fundo de vale: mata ciliar fragmentada, agricultura irrigada, açudes.\nUP4 — Meia-encosta: mosaico pastagem/caatinga esparsa, solo raso, erosão visível.\n\nPreencha uma mini-SWOT espacializada para cada unidade (F, Fr, O, A).",
+          "description": "Para cada UP, indique pelo menos 1 Força, 1 Fraqueza, 1 Oportunidade e 1 Ameaça. Mínimo 12 linhas no total.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Da análise à proposição",
+      "description": "",
+      "questions": [
+        {
+          "title": "Quais dos seguintes instrumentos de zoneamento são aplicáveis ao ordenamento territorial de uma bacia hidrográfica? (marque todos os corretos)",
+          "description": "",
+          "type": "CHECKBOX",
+          "required": true,
+          "options": [
+            "ZEE — Zoneamento Ecológico-Econômico",
+            "ZEEC — Zoneamento Ecológico-Econômico Costeiro",
+            "Plano de Bacia Hidrográfica (PNRH)",
+            "Plano de Manejo de Unidade de Conservação",
+            "Zoneamento Geoambiental",
+            "Zoneamento de Aptidão Agrícola"
+          ]
+        },
+        {
+          "title": "As Soluções baseadas na Natureza (NbS — Nature-based Solutions) são relevantes para o planejamento territorial da paisagem porque:",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Substituem toda a infraestrutura convencional (pontes, barragens, estradas).",
+            "Utilizam processos e estruturas ecológicas para enfrentar desafios socioambientais (erosão, enchentes, perda de habitat), gerando co-benefícios (biodiversidade, regulação climática, proteção do solo).",
+            "São mais baratas que qualquer alternativa convencional em 100% dos casos.",
+            "São apenas estéticas e não têm função técnica."
+          ]
+        },
+        {
+          "title": "Retomando a bacia das 4 unidades de paisagem (Pergunta 5), proponha DIRETRIZES específicas para cada unidade. Cada diretriz deve incluir: (1) o QUE fazer, (2) ONDE exatamente, (3) POR QUÊ (qual problema resolve), (4) COM QUE instrumento legal/normativo se alinha.",
+          "description": "Mínimo 12 linhas. Pense como um profissional elaborando um relatório técnico.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Simulação de relatório técnico",
+      "description": "Esta seção é preparatória para o Serious Game (3ª Avaliação). Exercite seu raciocínio integrando diagnóstico e proposta.",
+      "questions": [
+        {
+          "title": "DESAFIO FINAL — Você é o(a) consultor(a) contratado(a) para elaborar o zoneamento geoambiental de uma microbacia de 50 km² no semiárido. O prefeito quer destinar 60% da área para agropecuária e o Ministério Público exige preservação de todas as APPs + 20% de Reserva Legal. Considerando os conceitos de unidades de paisagem, métricas de fragmentação e NbS, como você conciliaria as duas demandas? Proponha uma distribuição espacial viável.",
+          "description": "Mínimo 10 linhas. Este exercício simula o tipo de decisão do Serious Game.",
+          "type": "PARAGRAPH",
+          "required": true
+        },
+        {
+          "title": "De 1 a 5, o quanto você se sente preparado(a) para o Serious Game da próxima semana?",
+          "description": "",
+          "type": "SCALE",
+          "required": true,
+          "scale_low": 1,
+          "scale_high": 5,
+          "scale_low_label": "Nada preparado",
+          "scale_high_label": "Muito preparado"
+        },
+        {
+          "title": "Que conceitos ou temas você gostaria de revisar antes do Serious Game? Registre dúvidas, inseguranças ou sugestões.",
+          "description": "",
+          "type": "PARAGRAPH",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+============================================================
+ATIVIDADE 03 — ANÁLISE DA PAISAGEM (2026.1)
+Aulas 05–06 | Escala, Fragmentação e Resiliência
+============================================================
+
+---------- TÍTULO DO FORMULÁRIO ----------
+
+Atividade 03 — Escalas, Fragmentação e Resiliência da Paisagem
+
+---------- DESCRIÇÃO DO FORMULÁRIO ----------
+
+Esta atividade abrange os conteúdos das Aulas 05 e 06:
+• Aula 05 — Escalas espaço-temporais, hierarquia e MAUP
+• Aula 06 — Fluxos, fragmentação, conectividade e resiliência
+
+O objetivo é verificar se você compreende como a escolha de escala afeta a análise e como a fragmentação compromete a funcionalidade ecológica de uma paisagem.
+
+Prazo de entrega: até o início da Aula 07.
+
+============================================================
+SEÇÃO 1 — IDENTIFICAÇÃO
+============================================================
+
+Pergunta 1
+Tipo: Resposta curta (obrigatória)
+Título: Nome completo
+
+Pergunta 2
+Tipo: Resposta curta (obrigatória)
+Título: Matrícula
+
+============================================================
+SEÇÃO 2 — ESCALA E MAUP (Aula 05)
+============================================================
+
+Título da seção: Extensão, grão e o problema da unidade de área modificável
+Descrição da seção: A escala determina o que conseguimos ver (e o que deixamos de ver) na paisagem.
+
+----------
+
+Pergunta 3
+Tipo: Múltipla escolha (obrigatória)
+Título: Na Ecologia da Paisagem, "extensão" e "grão" são dois componentes da escala. Qual alternativa os define CORRETAMENTE?
+
+Opção A: Extensão é o tamanho total da área analisada; grão é a menor unidade espacial distinguível (resolução).
+Opção B: Extensão é o nível de detalhe; grão é a área total coberta pelo sensor.
+Opção C: Extensão e grão são sinônimos para "escala cartográfica".
+Opção D: Extensão refere-se ao tempo; grão refere-se ao espaço.
+
+GABARITO: Opção A.
+Comentário: Extensão = tamanho da área de estudo (ex.: bacia
+hidrográfica de 500 km²). Grão = resolução mínima (ex.: pixel
+de 30 m no Landsat). Alterar qualquer um dos dois pode mudar
+completamente os padrões observados.
+
+----------
+
+Pergunta 4
+Tipo: Múltipla escolha (obrigatória)
+Título: O MAUP (Modifiable Areal Unit Problem) é um problema clássico em análise espacial. Ele ocorre quando:
+
+Opção A: Dados coletados em uma escala são analisados em outra, e os resultados mudam conforme a unidade de agregação escolhida.
+Opção B: O mapa não tem sistema de coordenadas definido.
+Opção C: A imagem de satélite tem nuvens que escondem parte da área.
+Opção D: O pesquisador não define a projeção cartográfica corretamente.
+
+GABARITO: Opção A.
+Comentário: O MAUP demonstra que o resultado de uma análise
+espacial depende de COMO as unidades de área são definidas
+(tamanho e forma). Exemplo: a taxa de desmatamento de uma
+região pode parecer muito diferente se calculada por município,
+por bacia hidrográfica ou por quadrícula regular de 10 km².
+
+----------
+
+Pergunta 5
+Tipo: Parágrafo (obrigatória)
+Título: Um pesquisador quer estudar a fragmentação da Caatinga no município de Feira de Santana. Ele poderia usar imagens Sentinel-2 (grão de 10 m) ou MODIS (grão de 250 m). Explique como a escolha do grão afetaria os resultados: que fragmentos seriam detectados em cada caso? A paisagem pareceria mais ou menos fragmentada?
+Descrição: Mínimo 5 linhas.
+
+GABARITO (resposta esperada):
+"Com Sentinel-2 (10 m), o pesquisador detectaria fragmentos
+pequenos (>100 m²), como manchas de caatinga em quintais,
+matas ciliares estreitas e até árvores isoladas. A paisagem
+pareceria MAIS fragmentada — muitas manchas pequenas e dispersas.
+Com MODIS (250 m), somente fragmentos maiores que ~6 ha seriam
+visíveis. Fragmentos pequenos seriam 'absorvidos' pela classe
+dominante (pastagem). A paisagem pareceria MENOS fragmentada —
+poucas manchas grandes. O número de fragmentos, a área média
+dos fragmentos e o índice de forma seriam todos diferentes.
+Isso é uma manifestação direta do MAUP: a mesma paisagem 'real'
+gera resultados diferentes conforme a resolução do dado."
+
+Critérios: Deve relacionar grão com detecção de fragmentos e
+demonstrar que o grão afeta métricas de fragmentação.
+
+----------
+
+Pergunta 6
+Tipo: Múltipla escolha (obrigatória)
+Título: Um rio intermitente na Caatinga seca por 6 meses e enche por 6 meses. Se o pesquisador analisar apenas uma imagem de agosto (seca), que erro de interpretação pode cometer?
+
+Opção A: Classificar a área de várzea como solo exposto/pastagem degradada, ignorando sua função sazonal como corredor ecológico.
+Opção B: Superestimar a área de vegetação nativa.
+Opção C: Classificar corretamente todos os elementos da paisagem.
+Opção D: Nenhum erro — uma imagem é suficiente para qualquer análise.
+
+GABARITO: Opção A.
+Comentário: A escala temporal é tão importante quanto a espacial.
+Uma análise monotemporal no semiárido pode confundir áreas de
+mata ciliar caducifólia (sem folhas na seca) com solo exposto.
+O rio seco pode ser classificado como estrada. A sazonalidade
+exige análise multitemporal.
+
+============================================================
+SEÇÃO 3 — FRAGMENTAÇÃO E CONECTIVIDADE (Aula 06)
+============================================================
+
+Título da seção: Quando a paisagem se rompe
+
+----------
+
+Pergunta 7
+Tipo: Múltipla escolha (obrigatória)
+Título: A teoria da percolação estabelece que, em uma paisagem binária (habitat × não-habitat), a conectividade funcional sofre uma queda brusca quando a proporção de habitat cai abaixo de aproximadamente:
+
+Opção A: 90%
+Opção B: 59,28% (limiar de percolação teórico) — na prática, valores entre 30% e 40% em paisagens reais.
+Opção C: 10%
+Opção D: 50% exatos, sempre.
+
+GABARITO: Opção B.
+Comentário: O limiar de percolação teórico (em grade) é ~59,28%,
+mas em paisagens reais — com geometria irregular, matriz hostil
+e espécies com diferentes capacidades de dispersão — o limiar
+funcional costuma estar entre 20-40%. Abaixo desse limiar, a
+paisagem se torna "impermeável" para muitas espécies, e os
+fragmentos ficam funcionalmente isolados.
+
+----------
+
+Pergunta 8
+Tipo: Caixas de seleção (obrigatória, selecionar VÁRIAS)
+Título: Quais dos seguintes processos são consequências diretas da fragmentação de habitat? (marque todos os corretos)
+
+Opção 1: Aumento do efeito de borda (microclima alterado, luminosidade, espécies invasoras)
+Opção 2: Redução do tamanho efetivo das populações
+Opção 3: Isolamento genético e aumento da endogamia
+Opção 4: Perda de espécies dependentes do interior do fragmento
+Opção 5: Aumento da biodiversidade em todos os fragmentos
+Opção 6: Alteração de processos ecológicos (polinização, dispersão, predação)
+
+GABARITO: Opções 1, 2, 3, 4 e 6.
+Comentário: A opção 5 é FALSA. Fragmentação NÃO aumenta
+biodiversidade — exceto temporariamente em bordas (por influxo
+de espécies generalistas). A longo prazo, reduz riqueza e
+favorece espécies de borda em detrimento das de interior.
+
+----------
+
+Pergunta 9
+Tipo: Múltipla escolha (obrigatória)
+Título: Em uma paisagem fragmentada, qual estratégia é MAIS eficaz para restaurar a conectividade funcional?
+
+Opção A: Aumentar cada fragmento individualmente sem conectá-los.
+Opção B: Criar corredores ecológicos (matas ciliares, stepping stones) ligando os fragmentos maiores e mais preservados.
+Opção C: Cercar todos os fragmentos com arame farpado para impedir invasão de gado.
+Opção D: Retirar todas as atividades humanas da paisagem.
+
+GABARITO: Opção B.
+Comentário: Corredores e stepping stones restauram a conectividade
+funcional ao permitir fluxo de organismos entre manchas de habitat.
+A (sem conexão, o isolamento persiste). C (protege, mas não
+conecta). D (irreal e desnecessário — paisagens multifuncionais
+podem ser ecologicamente viáveis).
+
+----------
+
+Pergunta 10
+Tipo: Parágrafo (obrigatória)
+Título: Resiliência e vulnerabilidade são conceitos complementares na Ecologia da Paisagem. Considere duas paisagens: (A) uma bacia com 60% de cobertura nativa contínua e fragmentos conectados por corredores; (B) uma bacia com 15% de cobertura nativa em fragmentos isolados e pequenos. Qual é mais resiliente? Justifique usando os conceitos de conectividade, efeito de borda e limiar de percolação.
+Descrição: Mínimo 6 linhas.
+
+GABARITO (resposta esperada):
+"A paisagem A é significativamente mais resiliente. Primeiro,
+está acima do limiar de percolação (~30-40% em paisagens reais),
+garantindo conectividade funcional — organismos podem se
+deslocar entre fragmentos. Segundo, com 60% de cobertura nativa,
+os fragmentos são maiores, o que reduz a razão borda/área e
+minimiza o efeito de borda (dessecação, luminosidade, invasoras).
+Terceiro, os corredores mantêm fluxo gênico, reduzindo extinção
+local e permitindo recolonização.
+
+A paisagem B está bem abaixo do limiar (~15%), com fragmentos
+isolados e pequenos — portanto altamente vulnerável. O efeito
+de borda pode consumir grande parte dos fragmentos (fragmentos
+< 5 ha podem ser 100% borda). Sem conectividade, populações
+ficam isoladas, sofrem endogamia e estão sujeitas a extinção
+estocástica. Perturbações (fogo, seca) teriam efeito
+desproporcional porque não há capacidade de recolonização."
+
+============================================================
+SEÇÃO 4 — APLICAÇÃO INTEGRADA
+============================================================
+
+Pergunta 11
+Tipo: Parágrafo (obrigatória)
+Título: Desafio integrador: Imagine que você foi contratado(a) para avaliar a qualidade ambiental de uma bacia hidrográfica no semiárido. Descreva, em etapas, as decisões de escala que teria que tomar: (1) Que extensão usar? (2) Que grão (resolução)? (3) Que escala temporal? Justifique cada escolha.
+Descrição: Mínimo 8 linhas.
+
+GABARITO (resposta esperada):
+"1) Extensão: usaria a bacia hidrográfica como unidade de análise
+(delimitação natural pelo divisor de águas), pois é funcionalmente
+coerente — tudo que acontece na bacia afeta o exutório. Se a
+bacia for muito grande (>1.000 km²), trabalharia com sub-bacias.
+
+2) Grão: usaria Sentinel-2 (10 m) para uso/cobertura da terra,
+pois permite detectar fragmentos pequenos, estradas e áreas de
+agricultura. Para relevo, o SRTM (30 m) ou ALOS PALSAR (12,5 m).
+Para dados socioeconômicos, a unidade seria o setor censitário
+ou a propriedade rural (SIGEF/CAR).
+
+3) Escala temporal: analisaria pelo menos 3 datas (seca, chuva,
+transição) para captar a sazonalidade da Caatinga. Para mudanças
+de uso do solo, compararia pelo menos 3 décadas (ex.: 2000, 2010,
+2024) usando Landsat ou MapBiomas. Isso evitaria o erro de
+analisar uma única data e confundir mata caducifólia com solo
+exposto."
+
+----------
+
+Pergunta 12
+Tipo: Escala linear (obrigatória)
+Título: De 1 a 5, o quanto você se sente confiante para justificar escolhas de escala (extensão, grão e tempo) em um projeto de análise da paisagem?
+Escala: 1 = Nada confiante → 5 = Muito confiante
+
+============================================================
+CONFIGURAÇÕES DO FORMULÁRIO
+============================================================
+
+- Coletar e-mails: Sim
+- Limitar a 1 resposta: Sim
+- Permitir edição após envio: Sim
+- Mostrar barra de progresso: Sim
+- Embaralhar ordem das perguntas: Não
+- Mensagem de confirmação:
+  "Resposta registrada! Na Aula 07, começaremos a aplicar
+   esses conceitos em exercícios de cartografia temática."
+
+============================================================
+NOTAS PARA O DOCENTE
+============================================================
+
+OBJETIVO PEDAGÓGICO:
+Esta atividade fecha o bloco conceitual (Semanas 1-3) e prepara
+a transição para o bloco metodológico (Semanas 4-5). O aluno
+deve ser capaz de justificar escolhas de escala e compreender
+as consequências da fragmentação. P5, P10 e P11 são as questões
+mais importantes — avaliam capacidade argumentativa e aplicação.
+
+TEMPO ESTIMADO: 35–45 minutos
+
+ALINHAMENTO:
+- Matéria da 1ª Avaliação (Teórica I — Aula 11)
+- Avaliação contínua (participação/exercícios)
+- Prepara para os exercícios práticos das Aulas 07-10
+============================================================
