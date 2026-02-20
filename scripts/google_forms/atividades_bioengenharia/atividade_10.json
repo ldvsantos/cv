@@ -1,0 +1,200 @@
+{
+  "title": "[BS 2026.1] Atividade 10 — Projeto Integrador: Diagnóstico → Soluções Baseadas na Natureza",
+  "description": "Esta atividade é o PROJETO INTEGRADOR da disciplina Bioengenharia de Solos (UEFS 2026.1).\n\nAbrange TODAS as aulas e capítulos do livro.\n\nO aluno (ou grupo de até 3) deve selecionar uma área degradada real no município de Feira de Santana – BA e elaborar um projeto de recuperação usando técnicas de bioengenharia.\n\nEsta atividade será desenvolvida em 5 etapas ao longo das últimas semanas do semestre.\n\nPeso: 15% da nota final.",
+  "sections": [
+    {
+      "title": "IDENTIFICAÇÃO",
+      "description": "",
+      "questions": [
+        {
+          "title": "Nome completo (Membro 1)",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": true
+        },
+        {
+          "title": "Matrícula (Membro 1)",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": true
+        },
+        {
+          "title": "Nome completo (Membro 2, se houver)",
+          "description": "Deixe em branco se individual.",
+          "type": "SHORT_ANSWER",
+          "required": false
+        },
+        {
+          "title": "Matrícula (Membro 2, se houver)",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": false
+        },
+        {
+          "title": "Nome completo (Membro 3, se houver)",
+          "description": "Deixe em branco se individual ou dupla.",
+          "type": "SHORT_ANSWER",
+          "required": false
+        },
+        {
+          "title": "Matrícula (Membro 3, se houver)",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": false
+        }
+      ]
+    },
+    {
+      "title": "Etapa 1 — Seleção e diagnóstico da área",
+      "description": "Selecione uma área degradada real em Feira de Santana – BA (talude rodoviário, margem de rio, voçoroca, área urbana desmatada). A área deve ser acessível para visita de campo.",
+      "questions": [
+        {
+          "title": "Localização da área (endereço ou coordenadas GPS)",
+          "description": "Se possível, forneça as coordenadas em graus decimais (ex: -12.2672, -38.9663).",
+          "type": "SHORT_ANSWER",
+          "required": true
+        },
+        {
+          "title": "Tipo de degradação predominante:",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Erosão em talude (corte rodoviário, aterro)",
+            "Erosão de margem fluvial",
+            "Voçoroca / ravina em área rural",
+            "Solo exposto em área urbana (pós-construção)",
+            "Área de empréstimo / mineração desativada",
+            "Outro (descrever na próxima pergunta)"
+          ]
+        },
+        {
+          "title": "Descreva a área: histórico de uso, dimensões aproximadas (L × W × D), tipo de solo (se possível), cobertura vegetal atual, presença de água, ocupação do entorno.",
+          "description": "Mínimo 8 linhas. Inclua registros fotográficos se possível (enviar link do Google Drive).",
+          "type": "PARAGRAPH",
+          "required": true
+        },
+        {
+          "title": "Quais feições erosivas foram identificadas na visita? Classifique-as pelo EGC quando aplicável.",
+          "description": "Ex: 3 sulcos (W<0,3m), 1 ravina média (W=3,5m, D=2,0m), erosão lateral em margem de rio.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Etapa 2 — Análise de fatores e estimativa de risco",
+      "description": "",
+      "questions": [
+        {
+          "title": "Aplique a equação de Jenny (ClORPT) para a área selecionada. Identifique e classifique cada fator de formação (favorável, neutro ou desfavorável) para a recuperação.",
+          "description": "Mínimo 6 linhas.",
+          "type": "PARAGRAPH",
+          "required": true
+        },
+        {
+          "title": "Estime (qualitativamente ou quantitativamente) a perda de solo atual usando a RUSLE. Se não for possível calcular, classifique os fatores R, K, LS, C e P como alto/médio/baixo e justifique.",
+          "description": "Mínimo 5 linhas.",
+          "type": "PARAGRAPH",
+          "required": true
+        },
+        {
+          "title": "Qual é o grau de urgência da intervenção?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Urgente — risco iminente a infraestrutura, pessoas ou corpo hídrico. Intervenção imediata.",
+            "Moderado — degradação progressiva sem risco iminente. Intervenção na próxima estação seca.",
+            "Baixo — degradação estabilizada, mas sem recuperação natural. Intervenção programável.",
+            "Não urgente — área em regeneração natural, monitoramento suficiente."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Etapa 3 — Proposta de soluções (NBS)",
+      "description": "NBS = Nature-Based Solutions (Soluções Baseadas na Natureza)",
+      "questions": [
+        {
+          "title": "Selecione as técnicas de bioengenharia propostas para a recuperação da área: (marque todas que se aplicam)",
+          "description": "",
+          "type": "CHECKBOX",
+          "required": true,
+          "options": [
+            "Revegetação direta (plantio de gramíneas/leguminosas/arbóreas)",
+            "Hidrossemeadura (com ou sem biomanta)",
+            "Paliçadas (bambu, madeira roliça)",
+            "Feixes vivos / grades vivas",
+            "Gabiões vivos",
+            "Canaletas verdes / biovaletas"
+          ]
+        },
+        {
+          "title": "Para cada técnica selecionada, descreva: localização na área, dimensionamento básico, materiais, espécies vegetais, cronograma de implantação.",
+          "description": "Mínimo 10 linhas. Seja específico com números e dimensões.",
+          "type": "PARAGRAPH",
+          "required": true
+        },
+        {
+          "title": "Estime o orçamento simplificado do projeto (materiais + mão de obra). Use valores de referência das atividades anteriores.",
+          "description": "Mínimo 5 linhas. Organize em tabela descritiva se possível.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Etapa 4 — Monitoramento e indicadores",
+      "description": "",
+      "questions": [
+        {
+          "title": "Proponha um plano de monitoramento pós-implantação com indicadores:  (a) cobertura vegetal (%), (b) taxa de erosão (RUSLE ou visual), (c) sobrevivência de mudas (%), (d) integridade das estruturas.",
+          "description": "Defina a frequência de monitoramento (mensal, semestral, anual) e os métodos.\nMínimo 6 linhas.",
+          "type": "PARAGRAPH",
+          "required": true
+        },
+        {
+          "title": "Após 5 anos do projeto, qual seria a redução esperada da perda de solo (novos valores de C e P na RUSLE)?",
+          "description": "Justifique com base na evolução da cobertura vegetal e na eficácia das técnicas.\nMínimo 4 linhas.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Etapa 5 — Síntese e autoavaliação",
+      "description": "",
+      "questions": [
+        {
+          "title": "Resuma em até 200 palavras o projeto proposto: problema, solução, técnicas, resultado esperado.",
+          "description": "",
+          "type": "PARAGRAPH",
+          "required": true
+        },
+        {
+          "title": "Qual foi o maior desafio no desenvolvimento deste projeto integrador?",
+          "description": "",
+          "type": "PARAGRAPH",
+          "required": true
+        },
+        {
+          "title": "De 1 a 5, como você avalia sua capacidade de integrar os conhecimentos da disciplina em um projeto real?",
+          "description": "",
+          "type": "SCALE",
+          "required": true,
+          "scale_low": 1,
+          "scale_high": 5,
+          "scale_low_label": "Nada confiante",
+          "scale_high_label": "Muito confiante"
+        },
+        {
+          "title": "Espaço livre — registre qualquer dúvida, comentário ou sugestão.",
+          "description": "",
+          "type": "PARAGRAPH",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

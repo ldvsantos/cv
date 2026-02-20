@@ -1,0 +1,466 @@
+============================================================
+ATIVIDADE 02 — BIOENGENHARIA DE SOLOS (2026.1)
+Aula 04: Erosão do Solo — RUSLE
+============================================================
+
+---------- TÍTULO DO FORMULÁRIO ----------
+
+Atividade 02 — RUSLE: Estimativa de Perda de Solo
+
+---------- DESCRIÇÃO DO FORMULÁRIO ----------
+
+Esta atividade faz parte da Aula 04 (Erosão do Solo: Tipos e Processos) da disciplina Bioengenharia de Solos (UEFS 2026.1).
+
+O objetivo é aplicar a Equação Universal de Perda de Solo Revisada (RUSLE: A = R·K·L·S·C·P) para estimar a perda de solo em uma microbacia real, comparar cenários de uso do solo e avaliar a eficácia de intervenções de bioengenharia na redução da erosão. Você realizará cálculos numéricos e interpretará os resultados.
+
+Prazo de entrega: até o início da próxima aula.
+
+============================================================
+SEÇÃO 1 — IDENTIFICAÇÃO
+============================================================
+
+Título da seção: Identificação do(a) estudante
+Descrição da seção: (vazio)
+
+----------
+
+Pergunta 1
+Tipo: Resposta curta (obrigatória)
+Título: Nome completo
+Descrição: (vazio)
+
+----------
+
+Pergunta 2
+Tipo: Resposta curta (obrigatória)
+Título: Matrícula
+Descrição: (vazio)
+
+============================================================
+SEÇÃO 2 — CENÁRIO: MICROBACIA RIACHO DA PEDRA
+============================================================
+
+Título da seção: Contexto e dados técnicos
+Descrição da seção: A Microbacia do Riacho da Pedra está localizada no município de Antônio Cardoso–BA, zona de transição entre Mata Atlântica e Caatinga. A bacia possui área total de 120 ha, relevo ondulado (declividade média de 15%) e solos Argissolos Vermelho-Amarelos desenvolvidos sobre gnaisse.
+
+Dados RUSLE fornecidos:
+• R (erosividade da chuva) = 5.800 MJ·mm·ha⁻¹·h⁻¹·ano⁻¹
+• K (erodibilidade do solo) = 0,030 t·h·MJ⁻¹·mm⁻¹
+• L (comprimento da rampa) = 1,8 (rampa de 120 m)
+• S (declividade) = 1,5 (declividade de 15%)
+• P (práticas conservacionistas) = 1,0 (nenhuma prática atual)
+
+Fatores C para os usos do solo presentes na microbacia:
+
+| Uso do solo         | Área (ha) | Fator C |
+|---------------------|-----------|---------|
+| Fragmento florestal | 20        | 0,01    |
+| Pasto em boas condições | 45    | 0,10    |
+| Pasto degradado     | 40        | 0,50    |
+| Solo exposto        | 15        | 1,00    |
+
+Tolerância de perda de solo: T = 7,3 t·ha⁻¹·ano⁻¹ (Argissolo moderadamente profundo)
+
+----------
+
+Pergunta 3
+Tipo: Múltipla escolha (obrigatória)
+Título: A erosividade R = 5.800 MJ·mm·ha⁻¹·h⁻¹·ano⁻¹ é considerada elevada no contexto global. Compare com valores típicos de zonas temperadas (R = 1.000–3.000). Como você classifica a intensidade erosiva dessa região?
+
+Opção A: Baixa — a região é semiárida e chove pouco
+Opção B: Moderada a forte — a erosividade é 2 a 6× maior que em zonas temperadas, reflexo das chuvas convectivas tropicais
+Opção C: Extrema — valores típicos de R no Brasil são acima de 15.000
+Opção D: Irrelevante — a erosividade não é importante em regiões tropicais
+Opção E: Incalculável — não se pode comparar R entre regiões
+
+----------
+
+Pergunta 4
+Tipo: Parágrafo (obrigatória)
+Título: O valor de R = 5.800 é a erosividade ANUAL. Se a estação chuvosa dura 5 meses (novembro a março) e concentra 80% da chuva, qual é o R mensal médio durante a estação chuvosa? Mostre o cálculo.
+Descrição: Dica: R_chuvoso = R_anual × 0,80 / 5 meses.
+
+============================================================
+SEÇÃO 3 — CÁLCULOS RUSLE
+============================================================
+
+Título da seção: Aplicação da RUSLE aos diferentes usos do solo
+Descrição da seção: Calcule a perda de solo (A) para cada tipo de uso presente na microbacia usando A = R × K × L × S × C × P. Lembre-se: R = 5.800, K = 0,030, L = 1,8, S = 1,5, P = 1,0.
+
+----------
+
+Pergunta 5
+Tipo: Parágrafo (obrigatória)
+Título: Preencha a tabela abaixo com os valores calculados de A (t·ha⁻¹·ano⁻¹) para cada uso do solo. Mostre o cálculo completo para pelo menos um uso.
+
+| Uso do solo         | C    | A (t/ha/ano) |
+|---------------------|------|-------------|
+| Fragmento florestal | 0,01 |     ?       |
+| Pasto boas cond.    | 0,10 |     ?       |
+| Pasto degradado     | 0,50 |     ?       |
+| Solo exposto        | 1,00 |     ?       |
+
+Descrição: Cálculo base: R × K × L × S × P = 5800 × 0,030 × 1,8 × 1,5 × 1,0 = ?. Depois multiplique por C de cada uso.
+
+----------
+
+Pergunta 6
+Tipo: Múltipla escolha (obrigatória)
+Título: Qual é o valor de A (perda de solo) para a condição de SOLO EXPOSTO (C = 1,0)?
+
+Opção A: A = 150,3 t·ha⁻¹·ano⁻¹
+Opção B: A = 469,8 t·ha⁻¹·ano⁻¹
+Opção C: A = 304,5 t·ha⁻¹·ano⁻¹ (aproximadamente)
+Opção D: A = 522,0 t·ha⁻¹·ano⁻¹
+Opção E: A = 870,0 t·ha⁻¹·ano⁻¹
+
+----------
+
+Pergunta 7
+Tipo: Parágrafo (obrigatória)
+Título: Calcule a perda de solo TOTAL (em toneladas por ano) da microbacia, considerando a área de cada uso do solo. Em seguida, calcule a perda média ponderada (t·ha⁻¹·ano⁻¹) para a bacia como um todo.
+Descrição: Perda total = Σ (A_i × Área_i). Perda média = Perda total / Área total.
+
+----------
+
+Pergunta 8
+Tipo: Múltipla escolha (obrigatória)
+Título: Considerando que a tolerância de perda é T = 7,3 t·ha⁻¹·ano⁻¹ e que a floresta gera A = 4,7 t·ha⁻¹·ano⁻¹, o pasto bom gera A = 46,9 t·ha⁻¹·ano⁻¹, o pasto degradado gera A = 234,6 t·ha⁻¹·ano⁻¹ e o solo exposto gera A = 469,3 t·ha⁻¹·ano⁻¹, quais usos do solo EXCEDEM a tolerância (A > T)?
+
+Opção A: Apenas o solo exposto excede a tolerância
+Opção B: Pasto degradado e solo exposto
+Opção C: Pasto bom, pasto degradado e solo exposto
+Opção D: Todos os usos excedem a tolerância
+Opção E: Nenhum uso excede a tolerância
+
+============================================================
+SEÇÃO 4 — CENÁRIO PÓS-BIOENGENHARIA
+============================================================
+
+Título da seção: Simulando a eficácia da intervenção
+Descrição da seção: Imagine que, após 2 anos de projeto de bioengenharia, os 15 ha de solo exposto foram revegetados com braquiária + estilosantes (C reduzido para 0,05) e os 40 ha de pasto degradado foram recuperados com manejo rotacionado (C reduzido para 0,10). Além disso, paliçadas e cordões vegetativos reduziram P de 1,0 para 0,60 em toda a bacia.
+
+----------
+
+Pergunta 9
+Tipo: Múltipla escolha (obrigatória)
+Título: Qual uso do solo contribui com a MAIOR perda absoluta de solo (toneladas totais por ano) no cenário ATUAL (antes da bioengenharia)?
+
+Opção A: Fragmento florestal (20 ha × 4,7 t/ha/ano)
+Opção B: Pasto em boas condições (45 ha × 46,9 t/ha/ano)
+Opção C: Pasto degradado (40 ha × 234,6 t/ha/ano)
+Opção D: Solo exposto (15 ha × 469,3 t/ha/ano)
+Opção E: Todos contribuem igualmente
+
+----------
+
+Pergunta 10
+Tipo: Parágrafo (obrigatória)
+Título: Calcule a nova perda de solo para os 15 ha de antigo solo exposto (agora com C = 0,05 e P = 0,60) e para os 40 ha de antigo pasto degradado (agora com C = 0,10 e P = 0,60). Compare com os valores anteriores e calcule a redução percentual.
+Descrição: Nova fórmula: A_novo = R × K × L × S × C_novo × P_novo.
+
+----------
+
+Pergunta 11
+Tipo: Parágrafo (obrigatória)
+Título: Calcule a nova perda de solo TOTAL da microbacia pós-bioengenharia e verifique se a perda média ponderada caiu abaixo da tolerância T = 7,3 t·ha⁻¹·ano⁻¹. Discuta o resultado.
+Descrição: Considere: floresta (20 ha, C=0,01, P=0,60), pasto bom (45 ha, C=0,10, P=0,60), antigo pasto degradado (40 ha, C=0,10, P=0,60), antigo solo exposto (15 ha, C=0,05, P=0,60).
+
+============================================================
+SEÇÃO 5 — REFLEXÃO CRÍTICA
+============================================================
+
+Título da seção: Análise crítica da RUSLE
+Descrição da seção: (vazio)
+
+----------
+
+Pergunta 12
+Tipo: Parágrafo (obrigatória)
+Título: A RUSLE é uma ferramenta poderosa, mas possui limitações. Cite pelo menos 2 limitações da RUSLE e explique como a bioengenharia pode atuar em fatores que a equação NÃO modela. Mínimo 4 linhas.
+Descrição: Dica: Pense em que tipos de erosão a RUSLE não estima (ravinas? voçorocas? deposição?).
+
+----------
+
+Pergunta 13
+Tipo: Escala linear (obrigatória)
+Título: De 1 a 5, o quanto você se sente confiante para aplicar a RUSLE em um projeto de bioengenharia?
+Escala: 1 = Nada confiante → 5 = Muito confiante
+
+----------
+
+Pergunta 14
+Tipo: Parágrafo (opcional)
+Título: Registre aqui dúvidas, comentários ou curiosidades que surgiram durante esta atividade.
+Descrição: (vazio)
+
+============================================================
+CONFIGURAÇÕES SUGERIDAS PARA O GOOGLE FORMS
+============================================================
+
+- Coletar e-mails: Sim
+- Limitar a 1 resposta: Sim
+- Permitir edição após envio: Sim
+- Mostrar barra de progresso: Sim
+- Embaralhar ordem das perguntas: Não
+- Mensagem de confirmação:
+  "Resposta registrada com sucesso! Obrigado pela participação.
+   Seus resultados serão discutidos na próxima aula."
+
+============================================================
+GABARITO / RESPOSTAS ESPERADAS (USO DO DOCENTE)
+============================================================
+
+PERGUNTA 3 — Classificação da erosividade R
+-----------------------------------------
+★ Resposta correta: Opção B
+→ Justificativa: R = 5.800 MJ·mm·ha⁻¹·h⁻¹·ano⁻¹ é "moderada
+  a forte" para regiões tropicais brasileiras (onde R varia de
+  3.000 a 15.000+). Comparada a zonas temperadas (1.000–3.000),
+  é 2–6× maior, reflexo da maior frequência de chuvas convectivas
+  tropicais com gotas de grande diâmetro e alta energia cinética.
+
+Comentário sobre as demais opções:
+Opção A: É falso que a região chove pouco — R = 5.800 indica
+  chuvas bastante erosivas.
+Opção C: Valores extremos (> 12.000) ocorrem no litoral
+  paranaense ou Amazônia, não no Recôncavo Baiano.
+Opção D/E: Absurdas — a erosividade é o fator climático mais
+  importante da RUSLE.
+
+
+PERGUNTA 4 — R mensal na estação chuvosa
+-----------------------------------------
+★ Resposta esperada:
+  R_chuvoso = 5.800 × 0,80 = 4.640 MJ·mm·ha⁻¹·h⁻¹
+  R_mensal_chuvoso = 4.640 / 5 = 928 MJ·mm·ha⁻¹·h⁻¹·mês⁻¹
+  (≈ 870 MJ arredondando)
+
+→ Justificativa: A concentração de 80% da erosividade em 5 meses
+  significa que um volume desproporcional de energia erosiva atinge
+  o solo em um período curto. É nesse período que a cobertura
+  vegetal é mais crítica. A fração nos 7 meses secos é:
+  R_seco = 5.800 × 0,20 / 7 = 166 MJ/mês — muito menor.
+
+
+PERGUNTA 5 — Tabela de cálculos RUSLE
+-----------------------------------------
+★ Resposta esperada:
+
+Cálculo base: R × K × L × S × P = 5.800 × 0,030 × 1,8 × 1,5 × 1,0
+  = 5.800 × 0,030 = 174,0
+  = 174,0 × 1,8 = 313,2
+  = 313,2 × 1,5 = 469,8
+  = 469,8 × 1,0 = 469,8
+
+(Nota: o valor-base é ~469,8 quando C = 1,0)
+
+Tabela:
+| Uso do solo         | C    | A (t/ha/ano) |
+|---------------------|------|-------------|
+| Fragmento florestal | 0,01 | 4,7         |
+| Pasto boas cond.    | 0,10 | 47,0        |
+| Pasto degradado     | 0,50 | 234,9       |
+| Solo exposto        | 1,00 | 469,8       |
+
+Nota: Aceitar variações de arredondamento. O livro utiliza o valor
+5.800 × 0,030 × 1,8 × 1,5 = 469,8 (base) e multiplicação por C.
+Os valores podem variar por ± 1-2% conforme o arredondamento.
+
+Para efeito de gabarito arredondado:
+• Floresta:  ~4,7 t/ha/ano
+• Pasto bom: ~47,0 t/ha/ano
+• Pasto deg: ~234,9 t/ha/ano
+• Solo exp:  ~469,8 t/ha/ano
+
+
+PERGUNTA 6 — Valor de A para solo exposto
+-----------------------------------------
+★ Resposta correta: Opção B (A ≈ 469,8 t·ha⁻¹·ano⁻¹)
+→ Justificativa: A = 5.800 × 0,030 × 1,8 × 1,5 × 1,0 × 1,0
+  = 469,8 t·ha⁻¹·ano⁻¹
+
+  (Se os alunos calcularem com arredondamentos intermediários
+  diferentes, podem obter valores levemente distintos. A opção C
+  = 304,5 resultaria de um erro no cálculo — ex.: usar L=1,8
+  mas esquecer S=1,5 ou vice-versa. Aceitar B como correta.)
+
+  Nota: No enunciado original o valor mencionado para a atividade
+  era 304,5, o que corresponderia a se usar um valor-base
+  ligeiramente diferente. Para manter consistência com os dados
+  fornecidos (R=5800, K=0,030, L=1,8, S=1,5), o resultado é
+  ~469,8. Se o docente preferir o valor 304,5, deve ajustar
+  K para ~0,019 ou ajustar L×S para ~1,75.
+
+  AJUSTE RECOMENDADO: Se desejar A=304,5, usar:
+  R=5800, K=0,030, LS=1,75 → 5800×0,030×1,75 = 304,5
+  Neste caso, usar L=1,5 e S=1,167 (ou L×S combinado = 1,75).
+
+
+PERGUNTA 7 — Perda total e média da microbacia
+-----------------------------------------
+★ Resposta esperada (usando A-base ≈ 469,8):
+
+Perda total = Σ (A_i × Área_i):
+• Floresta:  4,7 × 20  =      94 t/ano
+• Pasto bom: 47,0 × 45 =   2.115 t/ano
+• Pasto deg: 234,9 × 40 =  9.396 t/ano
+• Solo exp:  469,8 × 15 =  7.047 t/ano
+  ─────────────────────────────────
+  TOTAL                 = 18.652 t/ano
+
+Perda média ponderada = 18.652 / 120 = 155,4 t/ha/ano
+
+→ Justificativa: A perda média de ~155 t/ha/ano é ~21× a
+  tolerância (T = 7,3), indicando situação de degradação severa
+  e urgência de intervenção.
+
+
+PERGUNTA 8 — Usos que excedem a tolerância
+-----------------------------------------
+★ Resposta correta: Opção C
+→ Justificativa: Comparando A com T = 7,3 t/ha/ano:
+  • Floresta:    4,7 < 7,3 → OK (não excede)
+  • Pasto bom:  47,0 > 7,3 → EXCEDE (6,4× a tolerância)
+  • Pasto deg: 234,9 > 7,3 → EXCEDE (32× a tolerância)
+  • Solo exp:  469,8 > 7,3 → EXCEDE (64× a tolerância)
+
+  Apenas o fragmento florestal está dentro da tolerância.
+  Isso demonstra que mesmo pastagem "bem manejada" pode gerar
+  erosão acima da tolerância se L, S e R forem altos, o que
+  justifica a necessidade de práticas conservacionistas (P < 1)
+  mesmo em áreas não degradadas.
+
+
+PERGUNTA 9 — Maior perda absoluta (toneladas totais)
+-----------------------------------------
+★ Resposta correta: Opção C (Pasto degradado)
+→ Justificativa: Em termos ABSOLUTOS (t/ano totais):
+  • Floresta:  94 t/ano
+  • Pasto bom: 2.115 t/ano
+  • Pasto deg: 9.396 t/ano ← MAIOR CONTRIBUIÇÃO
+  • Solo exp:  7.047 t/ano
+
+  Embora o solo exposto tenha a maior perda POR HECTARE
+  (469,8 t/ha/ano), o pasto degradado contribui com mais
+  toneladas TOTAIS porque ocupa maior área (40 ha > 15 ha).
+  Isso é crucial para priorização: recuperar o pasto degradado
+  tem maior impacto na redução da erosão total da bacia.
+
+
+PERGUNTA 10 — Cenário pós-bioengenharia (cálculos)
+-----------------------------------------
+★ Resposta esperada:
+
+Antigo solo exposto (15 ha): C = 0,05, P = 0,60
+A_novo = 5.800 × 0,030 × 1,8 × 1,5 × 0,05 × 0,60
+       = 469,8 × 0,05 × 0,60 = 469,8 × 0,030 = 14,1 t/ha/ano
+
+Redução: de 469,8 para 14,1 → redução de 97,0%
+
+Antigo pasto degradado (40 ha): C = 0,10, P = 0,60
+A_novo = 469,8 × 0,10 × 0,60 = 28,2 t/ha/ano
+
+Redução: de 234,9 para 28,2 → redução de 88,0%
+
+→ Justificativa: A combinação de revegetação (redução de C) +
+  paliçadas/cordões (redução de P) gera reduções de 88–97% na
+  perda de solo. Isso demonstra que os fatores C e P são os
+  "botões de controle" da bioengenharia na RUSLE.
+
+
+PERGUNTA 11 — Nova perda total pós-bioengenharia
+-----------------------------------------
+★ Resposta esperada:
+
+Cenário pós-bioengenharia (P = 0,60 para todos):
+• Floresta (20 ha): A = 469,8 × 0,01 × 0,60 = 2,8 t/ha/ano
+  Total = 2,8 × 20 = 56 t/ano
+• Pasto bom (45 ha): A = 469,8 × 0,10 × 0,60 = 28,2 t/ha/ano
+  Total = 28,2 × 45 = 1.269 t/ano
+• Antigo pasto deg (40 ha): A = 28,2 t/ha/ano
+  Total = 28,2 × 40 = 1.128 t/ano
+• Antigo solo exp (15 ha): A = 14,1 t/ha/ano
+  Total = 14,1 × 15 = 212 t/ano
+  ─────────────────────────────────
+  TOTAL = 2.665 t/ano
+
+Perda média ponderada = 2.665 / 120 = 22,2 t/ha/ano
+
+Redução total: de 18.652 para 2.665 → redução de 85,7%
+
+→ A perda média caiu de 155 para 22 t/ha/ano, mas AINDA está
+  acima da tolerância (7,3 t/ha/ano). Isso indica que:
+  (1) A bioengenharia foi muito eficaz (redução > 85%), mas
+  (2) Em bacias com R e LS altos, pode ser necessário combinar
+      bioengenharia com terraços (reduzindo L e S) para atingir
+      a tolerância em TODOS os usos.
+  (3) A floresta é o único uso abaixo de T, reforçando a
+      importância da cobertura florestal em bacias tropicais.
+
+
+PERGUNTA 12 — Limitações da RUSLE (parágrafo)
+-----------------------------------------
+Resposta esperada (exemplo):
+
+"A RUSLE possui pelo menos três limitações importantes:
+(1) Não modela erosão em ravinas nem voçorocas — estima apenas
+erosão laminar e em sulcos. Isso significa que a perda real de
+solo pode ser significativamente maior que o valor calculado;
+(2) Não calcula deposição — assume que todo sedimento erodido
+deixa a encosta, quando na realidade parte é depositada em
+posições de menor declividade; (3) Assume condições de estado
+estacionário e encosta retilínea uniforme, ignorando a
+variabilidade espacial de solos, declividades e coberturas.
+
+A bioengenharia atua justamente onde a RUSLE não modela:
+paliçadas controlam a erosão em ravinas (retendo sedimentos
+dentro do canal), gabiões vivos estabilizam voçorocas, e
+barraginhas captam enxurrada que a RUSLE não computa.
+Portanto, a RUSLE é uma ferramenta de diagnóstico, mas o
+projeto de bioengenharia vai além dela."
+
+Critérios de avaliação:
+• Citou ≥ 2 limitações reais da RUSLE?
+• Mencionou a exclusão de ravinas/voçorocas?
+• Relacionou com a atuação da bioengenharia?
+• Atingiu o mínimo de 4 linhas?
+
+
+PERGUNTA 13 — Escala linear (autoavaliação)
+---------------------------------------------
+Não há resposta certa. Comparar com Atividade 01 para avaliar
+evolução da confiança do aluno com ferramentas quantitativas.
+
+
+PERGUNTA 14 — Espaço livre (opcional)
+---------------------------------------
+Respostas possíveis comuns:
+• "Como obtenho R para meu município?"
+• "O fator K pode mudar ao longo do perfil?"
+• "A RUSLE funciona em áreas urbanas?"
+• "Como calcular L e S com dados de drone?"
+
+============================================================
+NOTAS PARA O DOCENTE
+============================================================
+
+OBJETIVO PEDAGÓGICO:
+Esta atividade é a primeira com cálculos numéricos da disciplina.
+O cenário pré/pós-bioengenharia permite ao aluno vivenciar
+quantitativamente o impacto das intervenções nos fatores C e P.
+A progressão: dados → cálculo → comparação → análise crítica
+simula o raciocínio de projeto.
+
+TEMPO ESTIMADO DE RESPOSTA: 35–45 minutos
+
+NOTA SOBRE VALORES NUMÉRICOS:
+O valor-base R×K×L×S×P = 5800 × 0,030 × 1,8 × 1,5 × 1,0 = 469,8.
+Se o docente desejar usar A_base ≈ 304,5 (conforme mencionado no
+resumo), deve ajustar LS para ~1,75 (ex.: L=1,4, S=1,25).
+O gabarito acima usa os valores literais fornecidos no enunciado.
+
+ALINHAMENTO COM O PLANO:
+- Aula 04: RUSLE, fatores R/K/L/S/C/P, tolerância de perda.
+- Avaliação contínua: compõe a nota de participação/exercícios.
+============================================================

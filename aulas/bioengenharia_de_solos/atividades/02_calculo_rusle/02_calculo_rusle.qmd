@@ -1,0 +1,219 @@
+---
+title: "Bioengenharia de Solos"
+subtitle: "Atividade 02  —  Cálculo da RUSLE: Estimativa de Perda de Solo<br>Curso de Engenharia Agronômica"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026-04-03"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Bioengenharia de Solos | Atividade 02"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Atividade {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Estrutura
+
+- [1]{.circle} Revisão da RUSLE
+- [2]{.circle} Cenário-problema: microbacia degradada
+- [3]{.circle} Parte A — Cálculo do fator R (erosividade)
+- [4]{.circle} Parte B — Fatores K, L, S, C e P
+- [5]{.circle} Parte C — Estimativa de perda e cenários
+- [6]{.circle} Critérios de avaliação
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo**
+
+Calcular a **perda de solo anual** (t ha⁻¹ ano⁻¹) utilizando a **RUSLE** ($A = R \times K \times L \times S \times C \times P$) para uma microbacia do Semiárido e comparar **cenários de uso** com e sem práticas de bioengenharia.
+:::
+:::
+:::
+
+---
+
+# [1  —  REVISÃO DA RUSLE]{.section-header}
+
+## Equação Universal de Perda de Solo Revisada {.smaller-text}
+
+$$A = R \times K \times LS \times C \times P$$
+
+::: {.columns}
+::: {.column width="50%"}
+| Fator | Significado | Unidade |
+|-------|-----------|---------|
+| **A** | Perda de solo anual | t ha⁻¹ ano⁻¹ |
+| **R** | Erosividade da chuva | MJ mm ha⁻¹ h⁻¹ ano⁻¹ |
+| **K** | Erodibilidade do solo | t h MJ⁻¹ mm⁻¹ |
+| **LS** | Fator topográfico | adimensional |
+| **C** | Cobertura e manejo | adimensional |
+| **P** | Práticas conservacionistas | adimensional |
+:::
+
+::: {.column width="50%"}
+::: {.callout-important}
+### Capítulo de referência
+- **Cap. 4** — Erosão do Solo: Tipos e Processos
+- Seção 4.3 — RUSLE: fatores e cálculo
+:::
+:::
+:::
+
+---
+
+# [2  —  CENÁRIO-PROBLEMA]{.section-header}
+
+## Microbacia do Riacho da Pedra {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Caracterização da área
+
+| Parâmetro | Valor |
+|-----------|-------|
+| Localização | Feira de Santana – BA |
+| Área da microbacia | 85 ha |
+| Altitude | 230–285 m |
+| Precipitação anual média | 920 mm |
+| EI₃₀ médio anual (R) | 5.800 MJ mm ha⁻¹ h⁻¹ ano⁻¹ |
+| Solo predominante | Argissolo Vermelho-Amarelo |
+| Declividade média | 9% |
+| Comprimento de rampa médio | 120 m |
+:::
+
+::: {.column width="50%"}
+### Uso atual do solo
+
+| Classe de uso | Área (ha) | Cobertura |
+|--------------|-----------|-----------|
+| Pastagem degradada | 45 | Rala (< 40%) |
+| Solo exposto (cascalheira) | 12 | Nenhuma |
+| Capoeira (regeneração) | 18 | Moderada |
+| Mata ciliar remanescente | 10 | Densa |
+
+### Solo — Horizonte superficial
+
+| Areia (%) | Silte (%) | Argila (%) | MO (dag/kg) |
+|-----------|-----------|------------|-------------|
+| 58 | 22 | 20 | 1,9 |
+:::
+:::
+
+---
+
+# [3  —  PARTE A: FATOR R]{.section-header}
+
+## Questões — Erosividade da chuva {.smaller-text}
+
+**A1.** O fator **R = 5.800 MJ mm ha⁻¹ h⁻¹ ano⁻¹** foi obtido por séries históricas. Classifique a erosividade conforme a escala de Carvalho (1994):
+
+| Classe | Faixa de R |
+|--------|-----------|
+| Fraca | < 2.452 |
+| Moderada | 2.452 – 4.905 |
+| Moderada a forte | 4.905 – 7.357 |
+| Forte | 7.357 – 9.810 |
+| Muito forte | > 9.810 |
+
+**A2.** A precipitação é concentrada em **5 meses** (novembro a março). Se 75% do R anual se concentra nesse período, qual é o **R mensal médio** nos meses chuvosos e nos meses secos?
+
+**A3.** Qual é a implicação prática dessa concentração de erosividade para o **planejamento de implantação** de técnicas de bioengenharia? (Quando iniciar obras? Quando semear?)
+
+---
+
+# [4  —  PARTE B: FATORES K, LS, C e P]{.section-header}
+
+## Questões — Cálculo dos fatores {.smaller-text}
+
+**B1. Fator K** — Calcule usando o nomograma simplificado de Wischmeier. Dados: areia fina ≈ 12% do total de areia; permeabilidade moderada (classe 3); estrutura granular fina (classe 1).
+
+$$M = (\%\text{silte} + \%\text{areia fina}) \times (100 - \%\text{argila})$$
+
+**B2. Fator LS** — Calcule o fator topográfico combinado pela equação:
+
+$$LS = \left(\frac{\lambda}{22{,}13}\right)^m \times (65{,}41 \, \text{sen}^2\theta + 4{,}56 \, \text{sen}\theta + 0{,}065)$$
+
+Onde: $\lambda$ = 120 m; $\theta$ = ângulo da encosta ($\text{sen}\,\theta$ para 9%); $m$ = 0,4 (declividade 5–12%).
+
+**B3. Fator C** — Adote os valores tabelados:
+
+| Uso | C |
+|-----|---|
+| Pastagem degradada (< 40% cobertura) | 0,20 |
+| Solo exposto | 1,00 |
+| Capoeira | 0,06 |
+| Mata ciliar | 0,001 |
+
+**B4. Fator P** — Sem práticas conservacionistas atuais, adote **P = 1,0**.
+
+---
+
+# [5  —  PARTE C: ESTIMATIVA E CENÁRIOS]{.section-header}
+
+## Questões — Perda de solo e comparação {.smaller-text}
+
+**C1.** Calcule a **perda de solo anual (A)** para cada classe de uso atual e a **perda total** da microbacia (média ponderada pela área).
+
+| Classe | Área (ha) | R | K | LS | C | P | A (t/ha/ano) | Perda total (t/ano) |
+|--------|-----------|---|---|----|----|---|-------------|-------------------|
+| Pastagem degradada | 45 | | | | | | | |
+| Solo exposto | 12 | | | | | | | |
+| Capoeira | 18 | | | | | | | |
+| Mata ciliar | 10 | | | | | | | |
+| **TOTAL** | **85** | | | | | | | |
+
+**C2.** Agora simule um **cenário pós-bioengenharia** (5 anos após intervenção):
+
+| Intervenção proposta | Novo C | Novo P |
+|---------------------|--------|--------|
+| Pastagem → revegetação com vetiver + adubação verde | 0,04 | 0,60 |
+| Solo exposto → hidrossemeadura + biomanta | 0,08 | 0,50 |
+| Capoeira → condução da regeneração | 0,03 | 0,80 |
+| Mata ciliar → manutenção | 0,001 | 1,00 |
+
+Refaça o cálculo de **A** com os novos fatores e determine a **redução percentual** de perda de solo.
+
+**C3.** A tolerância de perda de solo para Argissolos no Brasil é de aproximadamente **12 t ha⁻¹ ano⁻¹**. O cenário pós-bioengenharia atinge a tolerância em todas as classes de uso? Discuta.
+
+---
+
+## Critérios de avaliação {.smaller-text}
+
+| Critério | Peso | Descrição |
+|----------|------|-----------|
+| **Cálculos (A, B)** | 50% | Cálculos corretos de R mensal, K, LS; uso adequado das fórmulas |
+| **Cenários (C)** | 30% | Tabelas preenchidas corretamente, comparação quantitativa |
+| **Interpretação** | 20% | Discussão sobre tolerância, planejamento temporal e escolha de técnicas |
+
+::: {.callout-important}
+### {{< fa arrow-up-right-from-square >}} Envio via Google Forms
+Esta atividade deve ser respondida diretamente no **Google Forms** da disciplina.
+
+[Abrir Formulário — Atividade 02](../../teaching/bioengenharia-de-solos/index.qmd){.btn .btn-primary target="_blank"}
+
+- **Prazo:** até o início da próxima aula
+- As respostas são salvas automaticamente
+:::
+
+---
+
+## Referências {.smaller-text}
+
+- SANTOS, L. D. V. **Bioengenharia de Solos** — Cap. 4. UEFS, 2026.
+- WISCHMEIER, W. H.; SMITH, D. D. *Predicting rainfall erosion losses*. USDA Agriculture Handbook 537, 1978.
+- RENARD, K. G. et al. *RUSLE — Revised Universal Soil Loss Equation*. USDA Agriculture Handbook 703, 1997.
+- CARVALHO, N. O. *Hidrossedimentologia prática*. CPRM/Eletrobrás, 1994.

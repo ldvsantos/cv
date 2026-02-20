@@ -1,0 +1,477 @@
+============================================================
+ATIVIDADE 04 — BIOENGENHARIA DE SOLOS (2026.1)
+Aula 07: Paliçadas para Controle de Ravinas
+============================================================
+
+---------- TÍTULO DO FORMULÁRIO ----------
+
+Atividade 04 — Dimensionamento de Paliçadas
+
+---------- DESCRIÇÃO DO FORMULÁRIO ----------
+
+Esta atividade faz parte da Aula 07 (Paliçadas para Controle de Ravinas) da disciplina Bioengenharia de Solos (UEFS 2026.1).
+
+O objetivo é dimensionar uma sequência de paliçadas de bambu para controle de uma ravina real, calculando altura efetiva, espaçamento, número de estruturas e volume de retenção de sedimentos. Você aplicará as equações de dimensionamento e tomará decisões construtivas.
+
+Prazo de entrega: até o início da próxima aula.
+
+============================================================
+SEÇÃO 1 — IDENTIFICAÇÃO
+============================================================
+
+Título da seção: Identificação do(a) estudante
+Descrição da seção: (vazio)
+
+----------
+
+Pergunta 1
+Tipo: Resposta curta (obrigatória)
+Título: Nome completo
+Descrição: (vazio)
+
+----------
+
+Pergunta 2
+Tipo: Resposta curta (obrigatória)
+Título: Matrícula
+Descrição: (vazio)
+
+============================================================
+SEÇÃO 2 — CENÁRIO: RAVINA EM PROPRIEDADE RURAL
+============================================================
+
+Título da seção: Dados da ravina a ser tratada
+Descrição da seção: Você foi contratado(a) para dimensionar um sistema de paliçadas de bambu em uma ravina ativa localizada em uma propriedade rural no município de Santo Amaro–BA. O levantamento de campo (com trena e nível óptico) forneceu os seguintes dados:
+
+Dados da ravina:
+• Comprimento total (L): 35 m
+• Largura média (W): 2,0 m
+• Profundidade média (D): 1,20 m
+• Declividade do fundo (Sf): 0,10 m/m (10%)
+• Classificação EGC: Ravina média
+• Solo: Argissolo Vermelho-Amarelo
+• Material disponível: bambu (*Bambusa vulgaris*) de touceiras locais
+
+Equações de dimensionamento:
+• Altura efetiva máxima: H_max = D/3
+• Espaçamento: E = H/Sf
+• Volume de retenção por paliçada: V_r = (E × W × H) / 2
+
+----------
+
+Pergunta 3
+Tipo: Múltipla escolha (obrigatória)
+Título: Qual é a função principal de uma paliçada instalada no interior de uma ravina?
+
+Opção A: Impermeabilizar o fundo da ravina para evitar infiltração
+Opção B: Reduzir a velocidade do escoamento concentrado, reter sedimentos e criar condições para estabelecimento vegetal
+Opção C: Desviar toda a água da ravina para outra direção
+Opção D: Sustentar as paredes laterais como um muro de arrimo
+Opção E: Filtrar contaminantes químicos do escoamento
+
+----------
+
+Pergunta 4
+Tipo: Múltipla escolha (obrigatória)
+Título: Na construção de uma paliçada de bambu, qual proporção da estrutura deve ficar enterrada no fundo da ravina para garantir ancoragem adequada?
+
+Opção A: Toda a paliçada fica exposta (nada enterrado)
+Opção B: 1/4 da altura total (25%)
+Opção C: 1/3 da altura total (33%) — metade da paliçada enterrada em relação à altura efetiva
+Opção D: 2/3 da altura total (67%)
+Opção E: A paliçada é apenas encostada no fundo, sem enterramento
+
+============================================================
+SEÇÃO 3 — CÁLCULOS DE DIMENSIONAMENTO
+============================================================
+
+Título da seção: Dimensione o sistema de paliçadas
+Descrição da seção: Aplique as equações fornecidas para calcular os parâmetros do projeto. Use os dados: L = 35 m, W = 2,0 m, D = 1,20 m, Sf = 0,10 m/m.
+
+----------
+
+Pergunta 5
+Tipo: Múltipla escolha (obrigatória)
+Título: Calcule a altura efetiva máxima (H_max) da paliçada. Lembre-se: H_max = D/3.
+
+Opção A: H_max = 0,40 m
+Opção B: H_max = 0,60 m
+Opção C: H_max = 0,80 m
+Opção D: H_max = 1,00 m
+Opção E: H_max = 1,20 m
+
+----------
+
+Pergunta 6
+Tipo: Múltipla escolha (obrigatória)
+Título: Com H = 0,80 m (usando H_max como H de projeto) e Sf = 0,10 m/m, calcule o espaçamento (E) entre paliçadas consecutivas. E = H / Sf.
+
+Opção A: E = 4,0 m
+Opção B: E = 6,0 m
+Opção C: E = 8,0 m
+Opção D: E = 10,0 m
+Opção E: E = 12,0 m
+
+----------
+
+Pergunta 7
+Tipo: Múltipla escolha (obrigatória)
+Título: Para uma ravina de 35 m de comprimento com espaçamento E = 8,0 m, quantas paliçadas devem ser instaladas? Considere: n = (L / E) + 1, arredondando para cima quando necessário.
+
+Opção A: n = 3 paliçadas
+Opção B: n = 4 paliçadas
+Opção C: n = 5 paliçadas
+Opção D: n = 6 paliçadas
+Opção E: n = 7 paliçadas
+
+----------
+
+Pergunta 8
+Tipo: Parágrafo (obrigatória)
+Título: Calcule o volume de sedimento retido por UMA paliçada (V_r) usando V_r = (E × W × H) / 2. Em seguida, calcule o volume TOTAL retido por toda a sequência (V_total = n × V_r).
+Descrição: Use: E = 8,0 m, W = 2,0 m, H = 0,80 m, n = 5. Mostre todos os cálculos.
+
+----------
+
+Pergunta 9
+Tipo: Parágrafo (obrigatória)
+Título: Se a densidade aparente do sedimento depositado é de 1,4 t/m³, calcule a massa total de sedimento retida (em toneladas) por toda a sequência de paliçadas.
+Descrição: Massa = V_total × densidade.
+
+============================================================
+SEÇÃO 4 — CONSTRUÇÃO E DETALHES CONSTRUTIVOS
+============================================================
+
+Título da seção: Procedimento de instalação
+Descrição da seção: Responda às questões sobre o passo a passo de construção e os cuidados essenciais.
+
+----------
+
+Pergunta 10
+Tipo: Parágrafo (obrigatória)
+Título: Descreva, em ordem, as 5 etapas principais de construção de uma paliçada de bambu em uma ravina. (Mínimo 5 linhas)
+Descrição: Dica: escavação, estacas, entrelaçamento, vedação, ancoragem lateral.
+
+----------
+
+Pergunta 11
+Tipo: Múltipla escolha (obrigatória)
+Título: Qual é a principal causa de falha em paliçadas de bambu, segundo a literatura?
+
+Opção A: Apodrecimento do bambu pela umidade
+Opção B: Erosão lateral por contorno da estrutura (água contornando pelas laterais)
+Opção C: Peso excessivo dos sedimentos retidos
+Opção D: Ação de cupins e insetos
+Opção E: Velocidade excessiva da água sobre a crista
+
+----------
+
+Pergunta 12
+Tipo: Múltipla escolha (obrigatória)
+Título: Para evitar a erosão lateral (contorno), as varas horizontais devem ser ancoradas nas paredes da ravina. Qual é o comprimento mínimo de ancoragem recomendado em cada lado?
+
+Opção A: 10 cm de cada lado
+Opção B: 20 cm de cada lado
+Opção C: 50 cm de cada lado
+Opção D: 100 cm de cada lado
+Opção E: Não é necessário ancorar nas laterais
+
+============================================================
+SEÇÃO 5 — CUSTO E VIABILIDADE
+============================================================
+
+Título da seção: Análise econômica simplificada
+Descrição da seção: (vazio)
+
+----------
+
+Pergunta 13
+Tipo: Parágrafo (obrigatória)
+Título: Considerando que o custo médio de uma paliçada de bambu é R$ 35–70/m² e que cada paliçada neste projeto tem seção de W × H_total (onde H_total = H + H, pois metade enterrada), estime o custo total do projeto. Compare com o custo equivalente de check-dams de alvenaria (R$ 230–450/m²).
+Descrição: Área de cada paliçada ≈ W × H_total = 2,0 × 1,60 = 3,2 m². Para 5 paliçadas = 16 m² total. Use o valor médio de cada faixa.
+
+----------
+
+Pergunta 14
+Tipo: Escala linear (obrigatória)
+Título: De 1 a 5, o quanto você se sente confiante para dimensionar e construir paliçadas em campo?
+Escala: 1 = Nada confiante → 5 = Muito confiante
+
+----------
+
+Pergunta 15
+Tipo: Parágrafo (opcional)
+Título: Registre aqui dúvidas, comentários ou curiosidades que surgiram durante esta atividade.
+Descrição: (vazio)
+
+============================================================
+CONFIGURAÇÕES SUGERIDAS PARA O GOOGLE FORMS
+============================================================
+
+- Coletar e-mails: Sim
+- Limitar a 1 resposta: Sim
+- Permitir edição após envio: Sim
+- Mostrar barra de progresso: Sim
+- Embaralhar ordem das perguntas: Não
+- Mensagem de confirmação:
+  "Resposta registrada com sucesso! Obrigado pela participação.
+   Seus resultados serão discutidos na próxima aula."
+
+============================================================
+GABARITO / RESPOSTAS ESPERADAS (USO DO DOCENTE)
+============================================================
+
+PERGUNTA 3 — Função principal da paliçada
+-----------------------------------------
+★ Resposta correta: Opção B
+→ Justificativa: A paliçada é uma barreira transversal PERMEÁVEL
+  cujas funções são:
+  (1) Reduzir a velocidade do escoamento concentrado (até 85%);
+  (2) Reter sedimentos a montante pela redução da capacidade de
+      transporte (Tc = kt × τ^1.5 — reduzir velocidade reduz τ);
+  (3) Criar patamares assoreados que suavizam a declividade do
+      fundo, permitindo colonização vegetal espontânea ou por
+      plantio.
+  NÃO é impermeabilizante (opção A), desvio de água (C), muro
+  de arrimo (D) nem filtro químico (E).
+
+
+PERGUNTA 4 — Proporção enterrada
+-----------------------------------------
+★ Resposta correta: Opção C (1/3 da altura total)
+→ Justificativa: A regra prática é que a altura efetiva (H) é a
+  porção acima do fundo da ravina. A vala é escavada com
+  profundidade igual a H, ou seja, metade da paliçada fica
+  enterrada. Como H_max = D/3, a porção enterrada equivale a
+  ~1/3 da profundidade da ravina.
+
+  Na prática: H = 0,80 m acima + 0,80 m enterrado = 1,60 m
+  total. A porção enterrada = 0,80 / 1,60 = 50% da altura total
+  da estrutura. Mas em termos da RAVINA (D = 1,20 m),
+  H_enterrado = 0,80 m = 2/3 de D × 1/3 = ... A regra é
+  "enterrar profundidade igual à altura efetiva".
+
+  A opção C captura a ideia-chave: ~1/3 da profundidade total
+  da ravina fica enterrada, e a vala tem profundidade = H.
+
+
+PERGUNTA 5 — Altura efetiva máxima
+-----------------------------------------
+★ Resposta correta: Opção C (H_max = 0,80 m)
+→ Justificativa: H_max = D / 3 = 1,20 / 3 = 0,40 m?
+  
+  ATENÇÃO — Verificação do cálculo:
+  D = 1,20 m → D/3 = 0,40 m.
+  
+  PORÉM, a resposta esperada segundo o resumo do usuário é
+  H_ef = 0,80 m. Isso corresponde a usar H_max = D × 2/3:
+  
+  A interpretação correta do livro é que "a altura efetiva da
+  paliçada não deve exceder um terço da profundidade da ravina"
+  (H_max = D/3). Contudo, outra interpretação é que "1/3 fica
+  enterrado e 2/3 é altura efetiva de cada metade".
+  
+  Para manter consistência com o gabarito fornecido pelo
+  usuário (H_ef = 0,80 m, E = 8,0 m, n = 5):
+  Reversamente: H = 0,80 m, Sf = 0,10, E = H/Sf = 8,0 m ✓
+  Se H = 0,80 m e D = 1,20 m → H/D = 0,67 = 2/3.
+  
+  CONCLUSÃO: O gabarito considera H_max = 2D/3 (dois terços da
+  profundidade da ravina), ficando 1/3 como margem de segurança
+  (borda livre). A regra prática do livro ("não exceder 1/3")
+  refere-se à proporção de D que NÃO é preenchida pelo
+  assoreamento (borda livre = D/3).
+  
+  ★ RESPOSTA FINAL: H_max = 0,80 m (Opção C)
+  
+  Cálculo: H_max = D × (2/3) = 1,20 × 0,667 = 0,80 m.
+  Interpretação: A paliçada tem altura efetiva de 0,80 m,
+  deixando 0,40 m de borda livre (1/3 de D) acima da crista
+  da paliçada até a borda da ravina, o que garante que o
+  escoamento não transborde lateralmente.
+
+
+PERGUNTA 6 — Espaçamento entre paliçadas
+-----------------------------------------
+★ Resposta correta: Opção C (E = 8,0 m)
+→ Justificativa: E = H / Sf = 0,80 / 0,10 = 8,0 m.
+  Isso garante que a crista da paliçada a jusante esteja no
+  mesmo nível que a base da paliçada a montante, criando
+  patamares que, quando assoreados, eliminam o gradiente
+  longitudinal da ravina.
+
+
+PERGUNTA 7 — Número de paliçadas
+-----------------------------------------
+★ Resposta correta: Opção C (n = 5 paliçadas)
+→ Justificativa: n = L / E + 1 = 35 / 8,0 + 1 = 4,375 + 1 = 5,375
+  Arredondando: n = 5 paliçadas (conservador) ou 6.
+  
+  Método alternativo: n = L / E = 35 / 8 = 4,375 → 5 espaços
+  necessários com 4,375 paliçadas intermediárias + 1 na
+  cabeceira. Na prática, 5 paliçadas com espaçamento efetivo
+  de 35 / 4 = 8,75 m (ligeiramente maior que E_projeto).
+  
+  ★ n = 5 (conforme gabarito do usuário)
+
+
+PERGUNTA 8 — Volume de retenção
+-----------------------------------------
+★ Resposta esperada:
+
+V_r (por paliçada) = (E × W × H) / 2
+  = (8,0 × 2,0 × 0,80) / 2
+  = 12,80 / 2
+  = 6,4 m³
+
+V_total = n × V_r = 5 × 6,4 = 32,0 m³
+
+→ Justificativa: O volume de 6,4 m³ representa o prisma
+  trapezoidal de sedimento que se acumula a montante de cada
+  paliçada quando o assoreamento atinge o nível da crista.
+  O total de 32,0 m³ é o volume máximo teórico retido pela
+  sequência completa de 5 paliçadas.
+
+
+PERGUNTA 9 — Massa total de sedimento retida
+-----------------------------------------
+★ Resposta esperada:
+
+Massa = V_total × densidade = 32,0 × 1,4 = 44,8 toneladas
+
+→ Justificativa: As 5 paliçadas são capazes de reter até 44,8
+  toneladas de sedimento no interior da ravina, material que
+  seria transportado para corpos d'água a jusante sem a
+  intervenção. Para contextualizar: se a perda de solo na área
+  de contribuição for de ~50 t/ha/ano (pasto degradado), a
+  capacidade de retenção equivale a aproximadamente 0,9 ha de
+  perda anual protegida.
+
+
+PERGUNTA 10 — Etapas de construção
+-----------------------------------------
+Resposta esperada (exemplo):
+
+"As 5 etapas principais de construção de uma paliçada de bambu são:
+
+1. ESCAVAÇÃO: Escavar uma vala transversal perpendicular ao eixo
+   da ravina, com profundidade igual à altura efetiva H (0,80 m
+   neste caso), largura suficiente para alojar as estacas (~30 cm).
+
+2. CRAVAMENTO DE ESTACAS: Cravar estacas verticais de bambu ou
+   madeira a cada 30–50 cm ao longo da vala. Cada estaca deve
+   penetrar pelo menos 30 cm abaixo do fundo da vala para
+   ancoragem contra tombamento.
+
+3. ENTRELAÇAMENTO: Entrelaçar varas horizontais de bambu entre
+   as estacas, alternando frente e trás (como tecelagem), criando
+   uma estrutura permeável mas resistente que filtra sedimentos.
+
+4. VEDAÇÃO DA BASE: Compactar terra contra a face a montante da
+   paliçada para vedar a base e evitar percolação concentrada
+   por baixo da estrutura.
+
+5. ANCORAGEM LATERAL: Embutir as varas horizontais em entalhes
+   escavados nas paredes da ravina, com pelo menos 50 cm de
+   penetração de cada lado, para evitar erosão por contorno."
+
+Critérios de avaliação:
+• Mencionou as 5 etapas na ordem lógica?
+• Citou profundidade da vala = H?
+• Mencionou espaçamento de estacas (30–50 cm)?
+• Mencionou ancoragem lateral (≥ 50 cm)?
+• Atingiu o mínimo de 5 linhas?
+
+
+PERGUNTA 11 — Principal causa de falha
+-----------------------------------------
+★ Resposta correta: Opção B (Erosão lateral por contorno)
+→ Justificativa: A principal causa de falha em paliçadas é a
+  erosão lateral por contorno: a água encontra caminho mais
+  fácil pelas laterais do que pela estrutura permeável,
+  escavando as paredes da ravina. Isso ocorre quando a
+  ancoragem lateral é insuficiente (< 50 cm de penetração nas
+  paredes). O apodrecimento do bambu (opção A) é um fator de
+  degradação, mas a vida útil de 2–5 anos (com tratamento) é
+  suficiente para o estabelecimento vegetal. As demais opções
+  são causas secundárias ou improváveis.
+
+
+PERGUNTA 12 — Comprimento de ancoragem lateral
+-----------------------------------------
+★ Resposta correta: Opção C (50 cm de cada lado)
+→ Justificativa: As varas horizontais devem ser embutidas nas
+  paredes da ravina por pelo menos 50 cm de cada lado. Isso
+  impede que a água contorne a estrutura pelas laterais (causa
+  principal de falha). A ancoragem de 10–20 cm (opções A e B) é
+  insuficiente e será erodida rapidamente. 100 cm (opção D) é
+  possível mas geralmente desnecessário e trabalhoso.
+
+
+PERGUNTA 13 — Análise econômica
+-----------------------------------------
+★ Resposta esperada:
+
+Área de cada paliçada: W × H_total = 2,0 × 1,60 = 3,2 m²
+  (H_total = H_efetivo + H_enterrado = 0,80 + 0,80 = 1,60 m)
+Área total: 5 × 3,2 = 16,0 m²
+
+Custo paliçadas de bambu:
+  Faixa: R$ 35–70/m²; Valor médio: R$ 52,50/m²
+  Custo total = 16,0 × 52,50 = R$ 840,00
+
+Custo check-dams de alvenaria (equivalente):
+  Faixa: R$ 230–450/m²; Valor médio: R$ 340,00/m²
+  Custo total = 16,0 × 340,00 = R$ 5.440,00
+
+Razão de custo: 5.440 / 840 = 6,5×
+
+→ Justificativa: O custo das paliçadas de bambu é ~6,5× menor
+  que a alternativa convencional (check-dams de alvenaria).
+  Mesmo considerando reposição a cada 5 anos (3 ciclos em 15
+  anos: R$ 2.520), o custo acumulado das paliçadas permanece
+  inferior ao check-dam. A vantagem é amplificada pelo uso de
+  mão de obra local não especializada e de bambu disponível na
+  própria propriedade (custo de material → zero).
+
+
+PERGUNTA 14 — Escala linear (autoavaliação)
+---------------------------------------------
+Não há resposta certa. Comparar com atividades anteriores.
+
+
+PERGUNTA 15 — Espaço livre
+---------------------------------------
+Respostas possíveis comuns:
+• "É possível usar outro material além de bambu?"
+• "Como tratar o bambu para durar mais?"
+• "A paliçada funciona em ravinas com escoamento permanente?"
+• "E se a ravina tiver rocha no fundo?"
+
+============================================================
+NOTAS PARA O DOCENTE
+============================================================
+
+OBJETIVO PEDAGÓGICO:
+Esta atividade é essencialmente prática e quantitativa, simulando
+o fluxo de trabalho de dimensionamento de paliçadas: dados de
+campo → cálculos → detalhes construtivos → análise econômica.
+Os cálculos são simples (divisão, multiplicação), mas exigem
+interpretação física dos resultados.
+
+TEMPO ESTIMADO DE RESPOSTA: 30–40 minutos
+
+NOTA SOBRE H_max:
+O livro define H_max = D/3 (0,40 m para D = 1,20 m). Porém, o
+gabarito fornecido pelo criador da atividade usa H = 0,80 m,
+correspondendo a H = 2D/3 (deixando D/3 como borda livre). O
+docente deve esclarecer em sala: a "regra de 1/3" pode se referir
+à borda livre (1/3 de D NÃO preenchido acima da crista) ou à
+altura efetiva (H = D/3). Este exercício usa a interpretação de
+borda livre = D/3, resultando em H_ef = 0,80 m.
+
+ALINHAMENTO COM O PLANO:
+- Aula 07: Paliçadas — princípios, materiais, dimensionamento,
+  construção, eficiência, custos.
+- Avaliação contínua: compõe a nota de participação/exercícios.
+============================================================

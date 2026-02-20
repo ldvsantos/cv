@@ -254,9 +254,16 @@ def move_to_drive_folder(form_id: str, folder_id: str):
 # CLI
 # ---------------------------------------------------------------------------
 
-def find_activity_files() -> list[Path]:
-    """Encontra todos os JSONs de atividade na pasta atividades/."""
-    pattern = str(SCRIPT_DIR / "atividades" / "atividade_*.json")
+def find_activity_files(subdir: str = None) -> list[Path]:
+    """Encontra todos os JSONs de atividade.
+    
+    Se subdir for informado, busca em atividades_{subdir}/.
+    Caso contrário, busca em todas as pastas atividades_*/.
+    """
+    if subdir:
+        pattern = str(SCRIPT_DIR / f"atividades_{subdir}" / "atividade_*.json")
+    else:
+        pattern = str(SCRIPT_DIR / "atividades_*" / "atividade_*.json")
     files = sorted(glob.glob(pattern))
     return [Path(f) for f in files]
 
@@ -285,17 +292,22 @@ def main():
         "--output", type=str, default=None,
         help="Arquivo JSON para salvar os IDs/URLs dos formulários criados."
     )
+    parser.add_argument(
+        "--discipline", type=str, default=None,
+        help="Subdiretório da disciplina (ex: bioengenharia, analise_paisagem)."
+    )
     args = parser.parse_args()
 
     # Descobrir arquivos
     if args.files:
         files = [Path(f) for f in args.files]
     else:
-        files = find_activity_files()
+        files = find_activity_files(args.discipline)
 
     if not files:
-        print("❌ Nenhum arquivo de atividade encontrado em atividades/")
-        print(f"   Diretório verificado: {SCRIPT_DIR / 'atividades'}")
+        search_dir = f"atividades_{args.discipline}" if args.discipline else "atividades_*"
+        print(f"❌ Nenhum arquivo de atividade encontrado em {search_dir}/")
+        print(f"   Diretório verificado: {SCRIPT_DIR}")
         sys.exit(1)
 
     # --list
@@ -310,8 +322,10 @@ def main():
         return
 
     # Processar
+    # Detectar nome da disciplina a partir dos arquivos
+    discipline_name = files[0].parent.name.replace("atividades_", "").replace("_", " ").title()
     print(f"\n{'='*60}")
-    print(f"  Google Forms Creator — Análise da Paisagem 2026.1")
+    print(f"  Google Forms Creator — {discipline_name} 2026.1")
     print(f"{'='*60}\n")
     print(f"  Formulários a criar: {len(files)}")
     if args.dry_run:

@@ -1,0 +1,544 @@
+============================================================
+ATIVIDADE 06 — BIOENGENHARIA DE SOLOS (2026.1)
+Aulas 10–11: Hidrossemeadura e Biomantas
+============================================================
+
+---------- TÍTULO DO FORMULÁRIO ----------
+
+Atividade 06 — Hidrossemeadura e Biomantas
+
+---------- DESCRIÇÃO DO FORMULÁRIO ----------
+
+Esta atividade faz parte das Aulas 10 e 11 (Hidrossemeadura / Biomantas e Geomantas) da disciplina Bioengenharia de Solos (UEFS 2026.1).
+
+O objetivo é formular a composição do slurry de hidrossemeadura para um talude rodoviário, selecionar o tipo adequado de biomanta conforme a NBR 16308 e analisar o custo-benefício de diferentes cenários de proteção superficial. Você aplicará critérios técnicos de seleção e fará análises econômicas comparativas.
+
+Prazo de entrega: até o início da próxima aula.
+
+============================================================
+SEÇÃO 1 — IDENTIFICAÇÃO
+============================================================
+
+Título da seção: Identificação do(a) estudante
+Descrição da seção: (vazio)
+
+----------
+
+Pergunta 1
+Tipo: Resposta curta (obrigatória)
+Título: Nome completo
+Descrição: (vazio)
+
+----------
+
+Pergunta 2
+Tipo: Resposta curta (obrigatória)
+Título: Matrícula
+Descrição: (vazio)
+
+============================================================
+SEÇÃO 2 — CENÁRIO: TALUDE RODOVIÁRIO BR-116
+============================================================
+
+Título da seção: Dados do talude a ser protegido
+Descrição da seção: Um talude de corte em uma obra de duplicação da BR-116, no trecho semiárido do nordeste baiano, apresenta erosão laminar intensa e necessita de proteção superficial urgente. O levantamento técnico forneceu os seguintes dados:
+
+Dados do talude:
+• Área total exposta: 1.200 m²
+• Declividade: 34° (≈ 67%, relação 1V:1,5H)
+• Solo: Latossolo Vermelho-Amarelo compactado, baixa matéria orgânica
+• Clima: semiárido (precipitação média anual ≈ 550 mm, concentrada em 4 meses)
+• Cobertura vegetal atual: 0% (solo totalmente exposto)
+• Acesso: caminhão-pipa e hydroseeder podem acessar a base do talude
+• Material disponível: sementes de braquiária (*Urochloa decumbens*), estilosantes (*Stylosanthes* spp.), mulch de celulose, adubo NPK, fixador polimérico
+
+Equações e referências:
+• Taxa de sementes ajustada: T_ajustada = T_base × F_declividade
+• F_declividade (para > 30°): 1,2
+• NBR 16308:2014 — Classificação de biomantas por declividade
+
+----------
+
+Pergunta 3
+Tipo: Múltipla escolha (obrigatória)
+Título: Qual é a função principal do MULCH na composição do slurry de hidrossemeadura?
+
+Opção A: Fornecer nutrientes para as sementes durante a germinação
+Opção B: Reter umidade no solo, proteger as sementes e reduzir o impacto das gotas de chuva
+Opção C: Aumentar a declividade do talude para facilitar a drenagem
+Opção D: Substituir completamente a adubação química
+Opção E: Impermeabilizar a superfície do talude
+
+----------
+
+Pergunta 4
+Tipo: Múltipla escolha (obrigatória)
+Título: Para o cenário descrito (semiárido, Latossolo compactado), qual combinação de espécies é mais adequada para a hidrossemeadura?
+
+Opção A: Eucalipto (*Eucalyptus* spp.) + capim-colonião (*Megathyrsus maximus*)
+Opção B: Braquiária (*Urochloa decumbens*) + estilosantes (*Stylosanthes* spp.)
+Opção C: Pinus (*Pinus* spp.) + capim-elefante (*Cenchrus purpureus*)
+Opção D: Soja (*Glycine max*) + milho (*Zea mays*)
+Opção E: Apenas grama-esmeralda (*Zoysia japonica*) em placas
+
+----------
+
+Pergunta 5
+Tipo: Parágrafo (obrigatória)
+Título: A taxa base de sementes de braquiária para hidrossemeadura é de 15 kg/ha (1,5 g/m²). Considerando que a declividade do talude é de 34° (F_declividade = 1,2), calcule a taxa ajustada de sementes (em kg/ha e g/m²) e a massa total de sementes necessária para os 1.200 m².
+Descrição: T_ajustada = T_base × F_declividade. Mostre todos os cálculos.
+
+----------
+
+Pergunta 6
+Tipo: Múltipla escolha (obrigatória)
+Título: No slurry de hidrossemeadura, qual é a função do fixador polimérico (tackifier)?
+
+Opção A: Fornecer fósforo para estimular o enraizamento
+Opção B: Garantir a aderência do slurry na superfície íngreme do talude, evitando escorrimento
+Opção C: Acelerar a germinação das sementes em até 50%
+Opção D: Impermeabilizar o solo contra infiltração
+Opção E: Substituir o mulch na formulação
+
+----------
+
+Pergunta 7
+Tipo: Parágrafo (obrigatória)
+Título: Explique por que a combinação de uma gramínea (braquiária) com uma leguminosa (estilosantes) é tecnicamente vantajosa para a hidrossemeadura de taludes no semiárido. Apresente pelo menos 3 aspectos.
+Descrição: Dica: sistema radicular, fixação de nitrogênio, cobertura rápida, tolerância à seca.
+
+============================================================
+SEÇÃO 3 — BIOMANTAS: SELEÇÃO CONFORME NBR 16308
+============================================================
+
+Título da seção: Seleção do tipo de biomanta
+Descrição da seção: A NBR 16308:2014 classifica biomantas em tipos conforme a declividade e condições de aplicação:
+
+• Tipo 1: Declividades até 15° (≈ 27%) — Biomanta de fibra vegetal simples
+• Tipo 2: Declividades de 15° a 25° (27% a 47%) — Biomanta reforçada com malha
+• Tipo 3: Declividades de 25° a 45° (47% a 100%) — Biomanta com reforço estrutural e malha dupla
+• Tipo 4: Declividades > 45° (> 100%) — Geomanta com reforço tridimensional
+
+Informações adicionais:
+• Instalação: sempre de cima para baixo do talude
+• Sobreposição lateral: 10–15 cm
+• Fixação: grampos metálicos em U a cada 0,5–1,0 m
+• Vida útil média: 12–24 meses (até estabelecimento vegetal)
+
+----------
+
+Pergunta 8
+Tipo: Múltipla escolha (obrigatória)
+Título: Para o talude com declividade de 34°, qual tipo de biomanta deve ser selecionado conforme a classificação da NBR 16308?
+
+Opção A: Tipo 1 — fibra vegetal simples
+Opção B: Tipo 2 — reforçada com malha
+Opção C: Tipo 3 — reforço estrutural e malha dupla
+Opção D: Tipo 4 — geomanta tridimensional
+Opção E: Nenhum tipo — biomantas não são aplicáveis a taludes > 30°
+
+----------
+
+Pergunta 9
+Tipo: Múltipla escolha (obrigatória)
+Título: Qual é a direção correta de instalação da biomanta em um talude?
+
+Opção A: De baixo para cima, fixando primeiro na base do talude
+Opção B: De cima para baixo, fixando primeiro na crista do talude
+Opção C: Horizontalmente, da esquerda para a direita
+Opção D: Em qualquer direção — o resultado é o mesmo
+Opção E: Do centro para as bordas, expandindo radialmente
+
+----------
+
+Pergunta 10
+Tipo: Múltipla escolha (obrigatória)
+Título: Qual é a sobreposição lateral mínima recomendada entre faixas adjacentes de biomanta?
+
+Opção A: 1–2 cm (apenas encostar as bordas)
+Opção B: 5–8 cm
+Opção C: 10–15 cm
+Opção D: 30–50 cm
+Opção E: As faixas não devem se sobrepor
+
+----------
+
+Pergunta 11
+Tipo: Parágrafo (obrigatória)
+Título: Explique por que a biomanta deve ser instalada de CIMA PARA BAIXO (e não de baixo para cima) em um talude. Qual problema ocorreria se a instalação fosse invertida?
+Descrição: Considere o efeito do escoamento superficial sobre as emendas entre faixas.
+
+============================================================
+SEÇÃO 4 — ANÁLISE DE CUSTO-BENEFÍCIO
+============================================================
+
+Título da seção: Cenários comparativos de proteção
+Descrição da seção: Três cenários de proteção superficial foram orçados para o talude de 1.200 m²:
+
+• Cenário A — Hidrossemeadura simples: R$ 8,00/m²
+  (Slurry básico: sementes + mulch + NPK; sem biomanta)
+• Cenário B — Hidrossemeadura + biomanta Tipo 2: R$ 18,00/m²
+  (Slurry completo + biomanta reforçada com malha)
+• Cenário C — Hidrossemeadura + biomanta Tipo 3: R$ 32,00/m²
+  (Slurry completo + biomanta com reforço estrutural)
+
+Nota: O cenário A é o mais barato, mas apresenta risco de falha de 60% em taludes > 30° (exige reaplicação). Os cenários B e C incluem biomanta que reduz o risco de falha para 15% e 5%, respectivamente.
+
+----------
+
+Pergunta 12
+Tipo: Parágrafo (obrigatória)
+Título: Calcule o custo total de cada cenário (A, B e C) para os 1.200 m² de talude.
+Descrição: Custo total = custo unitário × área.
+
+----------
+
+Pergunta 13
+Tipo: Múltipla escolha (obrigatória)
+Título: Se o cenário A (hidrossemeadura simples) falhar e precisar ser reaplicado UMA vez, qual será o custo total acumulado?
+
+Opção A: R$ 9.600,00
+Opção B: R$ 14.400,00
+Opção C: R$ 19.200,00
+Opção D: R$ 21.600,00
+Opção E: R$ 38.400,00
+
+----------
+
+Pergunta 14
+Tipo: Parágrafo (obrigatória)
+Título: Considerando o risco de falha, os custos de reaplicação e os custos ambientais indiretos, qual cenário oferece o melhor custo-benefício para este talude de 34°? Justifique com argumentos técnicos e econômicos.
+Descrição: Dica: calcule o custo esperado (custo × probabilidade), mas considere também consequências não-monetárias de cada falha (erosão adicional, perda de cronograma, degradação do solo).
+
+----------
+
+Pergunta 15
+Tipo: Escala linear (obrigatória)
+Título: De 1 a 5, o quanto você se sente confiante para selecionar e especificar técnicas de proteção superficial (hidrossemeadura + biomantas) em taludes?
+Escala: 1 = Nada confiante → 5 = Muito confiante
+
+----------
+
+Pergunta 16
+Tipo: Parágrafo (opcional)
+Título: Registre aqui dúvidas, comentários ou curiosidades que surgiram durante esta atividade.
+Descrição: (vazio)
+
+============================================================
+CONFIGURAÇÕES SUGERIDAS PARA O GOOGLE FORMS
+============================================================
+
+- Coletar e-mails: Sim
+- Limitar a 1 resposta: Sim
+- Permitir edição após envio: Sim
+- Mostrar barra de progresso: Sim
+- Embaralhar ordem das perguntas: Não
+- Mensagem de confirmação:
+  "Resposta registrada com sucesso! Obrigado pela participação.
+   Seus resultados serão discutidos na próxima aula."
+
+============================================================
+GABARITO / RESPOSTAS ESPERADAS (USO DO DOCENTE)
+============================================================
+
+PERGUNTA 3 — Função do mulch
+-----------------------------------------
+★ Resposta correta: Opção B
+→ Justificativa: O mulch (fibra de celulose, fibra de coco ou
+  palha triturada) desempenha múltiplas funções no slurry:
+  (1) Retém umidade no solo, criando um microambiente favorável
+      à germinação — fundamental no semiárido, onde a janela
+      de umidade pós-chuva é curta;
+  (2) Protege as sementes contra o impacto direto das gotas de
+      chuva (erosão por splash), evitando deslocamento;
+  (3) Reduz a temperatura superficial do solo (pode ser 10–15 °C
+      mais baixa sob mulch em relação ao solo nu);
+  (4) Fornece substrato para fixação das sementes no talude.
+  NÃO é fonte de nutrientes (opção A — essa é função do NPK),
+  não altera a declividade (C), não substitui a adubação (D)
+  e não impermeabiliza o solo (E — o mulch é permeável).
+
+
+PERGUNTA 4 — Espécies adequadas
+-----------------------------------------
+★ Resposta correta: Opção B
+→ Justificativa: A combinação braquiária + estilosantes é ideal
+  para o cenário descrito porque:
+  (1) Braquiária (*U. decumbens*): gramínea agressiva de
+      cobertura rápida (30–60 dias), sistema radicular fasciculado
+      e denso nos primeiros 20 cm (proteção contra erosão laminar),
+      tolerante à seca moderada, amplamente adaptada ao semiárido
+      nordestino.
+  (2) Estilosantes (*Stylosanthes* spp.): leguminosa fixadora de
+      N₂ via *Bradyrhizobium*, melhora a fertilidade do Latossolo
+      empobrecido a médio prazo, sistema radicular pivotante que
+      complementa o fasciculado da braquiária, tolerante à seca.
+
+  As demais opções são inadequadas:
+  • Opção A: eucalipto e pinus são espécies arbóreas de crescimento
+    lento — não protegem o talude no curto prazo;
+  • Opção C: pinus é exótico de clima temperado; capim-elefante
+    exige alta fertilidade e umidade;
+  • Opção D: soja e milho são culturas anuais sem função de
+    proteção permanente;
+  • Opção E: grama-esmeralda em placas não é aplicável por
+    hidrossemeadura (requer instalação manual).
+
+
+PERGUNTA 5 — Taxa ajustada de sementes
+-----------------------------------------
+★ Resposta esperada:
+
+T_base = 15 kg/ha = 1,5 g/m²
+F_declividade = 1,2 (para declividades > 30°)
+
+T_ajustada = T_base × F_declividade
+T_ajustada = 15 × 1,2 = 18 kg/ha = 1,8 g/m²
+
+Massa total = T_ajustada (g/m²) × Área (m²)
+Massa total = 1,8 × 1.200 = 2.160 g = 2,16 kg
+
+Alternativamente:
+Massa total = 18 kg/ha × (1.200 / 10.000) ha = 18 × 0,12 = 2,16 kg
+
+→ Justificativa: O fator de 1,2 compensa a maior perda de
+  sementes por escorrimento gravitacional em taludes íngremes
+  (> 30°), onde parte do slurry é arrastado antes da fixação.
+  Sem esse ajuste, a cobertura final seria insuficiente (~80%
+  das sementes depositadas efetivamente), exigindo reaplicação
+  onerosa.
+
+
+PERGUNTA 6 — Função do fixador (tackifier)
+-----------------------------------------
+★ Resposta correta: Opção B
+→ Justificativa: O fixador polimérico (tackifier) é um adesivo
+  orgânico (guar, psyllium) ou sintético (poliacrilamida) que
+  garante a aderência do slurry à superfície do talude. Ao secar,
+  forma uma crosta flexível que impede o escorrimento da mistura
+  por gravidade e a lavagem pela chuva. É crítico em declividades
+  > 30° — sem o tackifier, até 70% do slurry pode escorrer em
+  taludes de 34°. NÃO fornece nutrientes (A), não acelera
+  germinação (C), não impermeabiliza (D) e não substitui o
+  mulch (E — têm funções distintas).
+
+
+PERGUNTA 7 — Vantagens da combinação gramínea + leguminosa
+-----------------------------------------
+Resposta esperada (exemplo):
+
+"A combinação de braquiária (gramínea) com estilosantes
+(leguminosa) é vantajosa por múltiplos aspectos:
+
+(1) COMPLEMENTARIDADE RADICULAR: A braquiária possui sistema
+fasciculado denso nos primeiros 20 cm, retendo o solo
+superficial, enquanto o estilosantes possui raiz pivotante que
+atinge 50–100 cm, ancorando camadas mais profundas e criando
+macroporos para infiltração.
+
+(2) FIXAÇÃO BIOLÓGICA DE NITROGÊNIO: O estilosantes, em simbiose
+com bactérias *Bradyrhizobium*, fixa N₂ atmosférico (40–80 kg
+N/ha/ano), reduzindo a dependência de adubação nitrogenada e
+melhorando progressivamente a fertilidade do Latossolo empobrecido.
+
+(3) COBERTURA RÁPIDA + SUSTENTÁVEL: A braquiária germina e cobre
+o solo em 30–60 dias (proteção imediata contra erosão), enquanto
+o estilosantes se desenvolve progressivamente e mantém a
+cobertura mesmo em períodos secos prolongados (tolerância xerófita
+superior).
+
+(4) BIODIVERSIDADE FUNCIONAL: A mistura de espécies aumenta a
+resiliência da cobertura — se uma espécie sofrer estresse (praga,
+seca extrema), a outra mantém a proteção do talude."
+
+Critérios de avaliação:
+• Mencionou pelo menos 3 aspectos distintos?
+• Citou fixação de nitrogênio pela leguminosa?
+• Mencionou complementaridade de sistemas radiculares?
+• Usou argumentos técnicos (não apenas opinião)?
+
+
+PERGUNTA 8 — Tipo de biomanta para 34°
+-----------------------------------------
+★ Resposta correta: Opção C (Tipo 3)
+→ Justificativa: A declividade de 34° situa-se na faixa de
+  25°–45° da NBR 16308, correspondendo ao Tipo 3 (biomanta com
+  reforço estrutural e malha dupla). O Tipo 1 (até 15°) e o Tipo
+  2 (15°–25°) são insuficientes para essa declividade — a biomanta
+  escorregaria ou rasgaria sob o peso de água acumulada. O Tipo 4
+  (> 45°) seria superdimensionado e mais caro que o necessário.
+  O Tipo 3 oferece resistência à tração adequada (~2–4 kN/m) e
+  malha dupla que aprisiona as fibras vegetais mesmo sob condições
+  de escoamento intenso.
+
+
+PERGUNTA 9 — Direção de instalação
+-----------------------------------------
+★ Resposta correta: Opção B (de cima para baixo)
+→ Justificativa: A biomanta deve ser instalada de CIMA PARA BAIXO
+  porque:
+  (1) A faixa superior se sobrepõe à inferior como "escamas de
+      peixe" — o escoamento superficial flui POR CIMA da emenda
+      sem penetrar por baixo, evitando solevantamento;
+  (2) A ancoragem na crista do talude é o ponto mais crítico e
+      deve ser feita primeiro, em uma vala de ancoragem com ~30 cm
+      de profundidade;
+  (3) O peso do rolo ajuda a desenrolá-lo talude abaixo por
+      gravidade, facilitando a instalação.
+  Se a instalação fosse de baixo para cima (opção A), as emendas
+  ficariam "contra a corrente" e o escoamento entraria sob a
+  biomanta, arrancando-a progressivamente.
+
+
+PERGUNTA 10 — Sobreposição lateral
+-----------------------------------------
+★ Resposta correta: Opção C (10–15 cm)
+→ Justificativa: A sobreposição lateral de 10–15 cm é o padrão
+  normativo (NBR 16308) e dos fabricantes. Garante que não haja
+  faixas de solo exposto entre bobinas adjacentes. As demais:
+  • 1–2 cm (A): insuficiente — qualquer dilatação térmica ou
+    movimentação exporia o solo;
+  • 5–8 cm (B): marginal e abaixo da norma;
+  • 30–50 cm (D): desperdício de material sem ganho de eficiência;
+  • Sem sobreposição (E): criaria canais preferenciais de erosão.
+
+
+PERGUNTA 11 — Justificativa da direção de instalação
+-----------------------------------------
+Resposta esperada (exemplo):
+
+"A biomanta deve ser instalada de cima para baixo para que as
+emendas (sobreposições) entre faixas consecutivas fiquem
+orientadas 'a favor' do escoamento superficial, como telhas em
+um telhado. Dessa forma, a água escorre POR CIMA da emenda sem
+penetrar por baixo.
+
+Se a instalação fosse feita de baixo para cima, o escoamento
+encontraria as bordas das emendas como 'degraus' voltados contra
+a corrente, gerando turbulência e levantamento hidráulico
+(uplift). Isso arrancaria progressivamente a biomanta, expondo o
+solo justamente nas emendas — pontos mais vulneráveis. O mesmo
+princípio se aplica à sobreposição lateral: em terrenos com
+escoamento oblíquo, a faixa a montante deve ficar POR CIMA da
+faixa a jusante."
+
+Critérios de avaliação:
+• Mencionou analogia com "escamas" ou "telhas"?
+• Explicou o efeito do escoamento sob as emendas invertidas?
+• Descreveu a consequência da instalação invertida?
+
+
+PERGUNTA 12 — Custo total por cenário
+-----------------------------------------
+★ Resposta esperada:
+
+Cenário A: R$ 8,00/m² × 1.200 m² = R$ 9.600,00
+Cenário B: R$ 18,00/m² × 1.200 m² = R$ 21.600,00
+Cenário C: R$ 32,00/m² × 1.200 m² = R$ 38.400,00
+
+→ O cenário C é 4× mais caro que o A e 1,8× mais caro que o B.
+  A diferença entre A e C é de R$ 28.800,00.
+
+
+PERGUNTA 13 — Custo com falha do cenário A
+-----------------------------------------
+★ Resposta correta: Opção C (R$ 19.200,00)
+→ Justificativa:
+  Custo da 1ª aplicação: R$ 9.600,00
+  Custo da reaplicação: R$ 9.600,00
+  Custo total acumulado: R$ 9.600 + R$ 9.600 = R$ 19.200,00
+
+  Embora R$ 19.200 < R$ 38.400 (cenário C), a análise de
+  custo-benefício deve considerar a probabilidade acumulada de
+  falhas repetidas e os custos indiretos (ver Pergunta 14).
+
+
+PERGUNTA 14 — Análise de custo-benefício
+-----------------------------------------
+Resposta esperada (exemplo):
+
+"CUSTOS TOTAIS CALCULADOS (Pergunta 12):
+Cenário A = R$ 9.600 | Cenário B = R$ 21.600 | Cenário C = R$ 38.400
+
+CENÁRIO A COM UMA FALHA (Pergunta 13):
+R$ 9.600 × 2 = R$ 19.200 (ainda < Cenário C)
+
+Porém, a análise deve considerar que:
+
+(1) O risco de falha do cenário A é de 60%. Após a primeira
+falha e reaplicação, a segunda tentativa TAMBÉM tem 60% de
+chance de falhar (o solo já está mais degradado). Portanto:
+  - Custo esperado com possíveis falhas repetidas:
+    E[custo_A] = 9.600 / (1 − 0,60) = 9.600 / 0,40 = R$ 24.000
+  - E[custo_B] = 21.600 / (1 − 0,15) = 21.600 / 0,85 = R$ 25.412
+  - E[custo_C] = 38.400 / (1 − 0,05) = 38.400 / 0,95 = R$ 40.421
+
+(2) Numericamente, A ainda parece mais barato em valor esperado.
+PORÉM, cada falha implica:
+  - Meses adicionais de solo exposto (4–6 meses por tentativa),
+    com erosão acumulada que agrava a degradação (ciclo vicioso);
+  - Perda de solo fértil — recurso não-renovável;
+  - Atraso na obra rodoviária e multas contratuais;
+  - Risco de assoreamento de corpos d'água a jusante.
+
+(3) A NBR 16308 EXIGE Tipo 3 para declividades de 25°–45°. Usar
+apenas hidrossemeadura (cenário A) em talude de 34° é uma NÃO-
+CONFORMIDADE normativa, podendo gerar responsabilidade civil do
+engenheiro.
+
+CONCLUSÃO: O Cenário C é o melhor custo-benefício porque:
+  - Atende a norma técnica (Tipo 3 para 34°);
+  - Tem 95% de taxa de sucesso na primeira aplicação;
+  - Elimina custos indiretos de falha (erosão, atraso, multas);
+  - É a solução técnica correta para a declividade."
+
+Critérios de avaliação:
+• Calculou custos dos cenários corretamente?
+• Considerou falhas repetidas (não apenas uma)?
+• Mencionou custos indiretos (ambientais, cronograma)?
+• Mencionou a exigência normativa da NBR 16308?
+• Chegou à conclusão de que C é o melhor custo-benefício?
+
+
+PERGUNTA 15 — Escala linear (autoavaliação)
+---------------------------------------------
+Não há resposta certa. Comparar com atividades anteriores.
+
+
+PERGUNTA 16 — Espaço livre
+---------------------------------------
+Respostas possíveis comuns:
+• "Qual a diferença entre mulch de celulose e fibra de coco?"
+• "A hidrossemeadura funciona no período seco?"
+• "Como saber quando a biomanta já pode ser removida?"
+• "Existe biomanta feita de fibras nativas do semiárido?"
+
+============================================================
+NOTAS PARA O DOCENTE
+============================================================
+
+OBJETIVO PEDAGÓGICO:
+Esta atividade combina formulação técnica (hidrossemeadura) com
+seleção normativa (NBR 16308 para biomantas) e análise de
+custo-benefício, simulando o fluxo de decisão de um projeto
+real: cenário → especificação → custo → escolha fundamentada.
+A análise de risco de falha é especialmente relevante para
+formar profissionais que pensem além do custo inicial.
+
+TEMPO ESTIMADO DE RESPOSTA: 35–45 minutos
+
+NOTA SOBRE O CENÁRIO DE CUSTO:
+O cenário A (R$ 8/m²) é propositalmente tentador por ser barato.
+O ponto pedagógico central é que o custo inicial baixo NÃO
+significa custo-benefício bom quando o risco de falha é alto e
+a norma técnica exige solução mais robusta. Enfatizar em sala
+que a decisão técnica deve considerar: (1) norma, (2) risco,
+(3) consequências de falha, (4) custo total do ciclo de vida.
+
+ALINHAMENTO COM O PLANO:
+- Aula 10: Hidrossemeadura — técnica, equipamentos, mistura,
+  fixadores, aplicações em taludes.
+- Aula 11: Biomantas e Geomantas — tipos, propriedades, NBR
+  16308, instalação, vida útil.
+- Avaliação contínua: compõe a nota de participação/exercícios.
+============================================================

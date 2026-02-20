@@ -1,0 +1,172 @@
+{
+  "title": "[BS 2026.1] Atividade 09 — Geotêxteis e Biotêxteis: Seleção e Comparação",
+  "description": "Esta atividade abrange o conteúdo das Aulas 16 e 17 da disciplina Bioengenharia de Solos (UEFS 2026.1):\n• Cap. 15 — Geotêxteis Convencionais\n• Cap. 16 — Biotêxteis e Fibras Vegetais\n\nO objetivo é selecionar geotêxteis adequados (critério O₉₅), comparar biotêxteis de fibras vegetais com geotêxteis sintéticos, e avaliar o Bio-SAP (polímero superabsorvente) como tecnologia complementar.\n\nPrazo de entrega: até o início da próxima aula.",
+  "sections": [
+    {
+      "title": "IDENTIFICAÇÃO",
+      "description": "",
+      "questions": [
+        {
+          "title": "Nome completo",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": true
+        },
+        {
+          "title": "Matrícula",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Geotêxteis — Critério de seleção (O₉₅)",
+      "description": "O critério O₉₅ é o tamanho da abertura de filtração do geotêxtil: 95% das aberturas são menores que O₉₅.\n\nRegra de retenção: O₉₅ ≤ (1 a 3) × D₈₅_solo\nOnde D₈₅ é o diâmetro pelo qual passam 85% das partículas do solo.\n\nDados:\n• Situação 1: Dreno em Latossolo argiloso (D₈₅ = 0,05 mm)\n• Situação 2: Filtro em solo arenoso (D₈₅ = 0,80 mm)\n• Situação 3: Proteção de talude em solo franco (D₈₅ = 0,30 mm)",
+      "questions": [
+        {
+          "title": "Para a Situação 1 (D₈₅ = 0,05 mm), qual deve ser o O₉₅ máximo do geotêxtil?",
+          "description": "Usando O₉₅ ≤ 1 × D₈₅ (critério mais conservador para solos finos)",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "O₉₅ ≤ 0,05 mm (geotêxtil não-tecido de alta gramatura)",
+            "O₉₅ ≤ 0,15 mm (critério 3×D₈₅)",
+            "O₉₅ ≤ 0,80 mm (mesma abertura que a areia)",
+            "Qualquer O₉₅ serve — o geotêxtil é apenas separador"
+          ]
+        },
+        {
+          "title": "Para a Situação 2 (D₈₅ = 0,80 mm), usando critério O₉₅ ≤ 2 × D₈₅, qual geotêxtil é adequado?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "O₉₅ ≤ 1,60 mm — geotêxtil tecido com abertura ampla",
+            "O₉₅ ≤ 0,80 mm — geotêxtil não-tecido standard",
+            "O₉₅ ≤ 0,16 mm — geotêxtil de filtração fina",
+            "O₉₅ ≤ 8,0 mm — basta uma tela metálica"
+          ]
+        },
+        {
+          "title": "Qual é a consequência de usar um O₉₅ MUITO MAIOR que D₈₅ do solo?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Carreamento de finos (piping) — partículas do solo passam pelo geotêxtil, levando a colmatação da estrutura drenante e possível colapso.",
+            "O geotêxtil funciona melhor — mais permeável.",
+            "Não há consequência — O₉₅ é apenas referência comercial.",
+            "O geotêxtil dura mais tempo — menos esforço de filtração."
+          ]
+        },
+        {
+          "title": "E se o O₉₅ for MUITO MENOR que D₈₅?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Risco de colmatação do geotêxtil — as partículas finas obstruem as aberturas, reduzindo drasticamente a permeabilidade.",
+            "Funcionamento perfeito — quanto menor O₉₅, melhor.",
+            "O geotêxtil rasga facilmente.",
+            "Não há problema — geotêxteis se autolimpam."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Biotêxteis — Fibras vegetais",
+      "description": "Biotêxteis são geotêxteis fabricados com fibras naturais (coco, juta, sisal, buriti, piaçava).\n\nCaracterísticas:\n• Biodegradáveis (vida útil 1–5 anos)\n• Menor resistência à tração que sintéticos\n• Adicionam matéria orgânica ao solo ao degradar\n• Menor pegada de carbono na produção",
+      "questions": [
+        {
+          "title": "Qual propriedade dos biotêxteis pode ser considerada uma VANTAGEM em relação aos geotêxteis sintéticos no contexto de bioengenharia?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "A biodegradabilidade: o biotêxtil protege o solo durante a fase crítica de estabelecimento da vegetação e depois degrada, incorporando matéria orgânica.",
+            "A menor resistência à tração: menos esforço no solo.",
+            "O custo sempre menor (nem sempre é o caso).",
+            "A impermeabilidade: biotêxteis são impermeáveis."
+          ]
+        },
+        {
+          "title": "Em qual das 3 situações a seguir um biotêxtil de fibra de coco seria MAIS adequado do que um geotêxtil sintético? (marque todas as corretas)",
+          "description": "",
+          "type": "CHECKBOX",
+          "required": true,
+          "options": [
+            "Proteção temporária de talude durante revegetação (Situação 3 — solo franco, D₈₅ = 0,30 mm)",
+            "Dreno de longa duração em Latossolo argiloso (Situação 1 — necessita filtro permanente)",
+            "Envolvimento de fardos de palha em técnica de feixe vivo (proteção temporária)",
+            "Aterro sanitário (necessita barreira permanente e impermeável)"
+          ]
+        },
+        {
+          "title": "Compare biotêxtil de fibra de coco vs geotêxtil não-tecido (PP 200 g/m²) para proteção de talude com revegetação. Considere: durabilidade, custo, sustentabilidade, desempenho de filtração, facilidade de instalação.",
+          "description": "Mínimo 6 linhas.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Bio-SAP — Polímero superabsorvente",
+      "description": "Bio-SAP (Super Absorbent Polymer de base biológica) pode absorver 200–400 vezes seu peso em água. É misturado ao solo ou à pasta de hidrossemeadura para reter umidade na zona radicular.",
+      "questions": [
+        {
+          "title": "Em qual situação o Bio-SAP seria MAIS benéfico para bioengenharia no semiárido baiano?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Em hidrossemeadura de taludes no período seco — retém umidade para germinação e estabelecimento, compensando a falta de chuvas.",
+            "Em áreas alagadas permanentemente — o solo já está saturado.",
+            "Em gabião submerso — pedras não precisam de água.",
+            "Em paliçadas de bambu — as estacas não absorvem nutrientes."
+          ]
+        },
+        {
+          "title": "Se 50 g de Bio-SAP absorvem 300× seu peso, qual é a capacidade de retenção por m² quando aplicado a 100 g/m²?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "100 g × 300 = 30.000 g = 30 L de água por m²",
+            "100 g × 300 = 30.000 g = 3 L de água por m²",
+            "50 g × 300 = 15.000 g = 15 L de água por m²",
+            "100 g / 300 = 0,33 g de água por m²"
+          ]
+        },
+        {
+          "title": "Discuta vantagens e limitações do Bio-SAP no contexto de bioengenharia tropical. Considere: custo, disponibilidade, interação com raízes, ciclos úmido-seco, durabilidade.",
+          "description": "Mínimo 5 linhas.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Autoavaliação",
+      "description": "",
+      "questions": [
+        {
+          "title": "De 1 a 5, o quanto você se sente confiante para selecionar geotêxteis/biotêxteis para projetos de bioengenharia?",
+          "description": "",
+          "type": "SCALE",
+          "required": true,
+          "scale_low": 1,
+          "scale_high": 5,
+          "scale_low_label": "Nada confiante",
+          "scale_high_label": "Muito confiante"
+        },
+        {
+          "title": "Espaço livre — registre qualquer dúvida ou comentário.",
+          "description": "",
+          "type": "PARAGRAPH",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

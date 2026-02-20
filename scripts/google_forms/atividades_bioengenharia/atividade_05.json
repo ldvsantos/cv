@@ -1,0 +1,160 @@
+{
+  "title": "[BS 2026.1] Atividade 05 — Bacias de Captação e Barraginhas (SCS-CN)",
+  "description": "Esta atividade abrange o conteúdo das Aulas 08 e 09 da disciplina Bioengenharia de Solos (UEFS 2026.1):\n• Cap. 8 — Bacias de Captação e Barraginhas\n• Cap. 4 (complemento) — Método SCS-CN\n\nO objetivo é aplicar o método SCS-CN para estimar o escoamento superficial, dimensionar barraginhas e definir locação em vertente.\n\nPrazo de entrega: até o início da próxima aula.",
+  "sections": [
+    {
+      "title": "IDENTIFICAÇÃO",
+      "description": "",
+      "questions": [
+        {
+          "title": "Nome completo",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": true
+        },
+        {
+          "title": "Matrícula",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Método SCS-CN — Conceitos",
+      "description": "Cenário: Microbacia de 5 ha em Feira de Santana – BA.\n• Solo: Argissolo grupo hidrológico C\n• Uso: pastagem degradada com condições hidrológicas ruins\n• CN tabelado: 86\n• Precipitação de projeto (P): 70 mm (chuva com Tr = 5 anos, 1h)\n\nFórmulas:\n• S = (25.400 / CN) – 254\n• Ia = 0,2 × S\n• Q = (P – Ia)² / (P – Ia + S)  (quando P > Ia)",
+      "questions": [
+        {
+          "title": "Calcule a capacidade máxima de retenção (S) para CN = 86:",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "S = (25.400 / 86) – 254 = 295,3 – 254 = 41,3 mm",
+            "S = (25.400 / 86) = 295,3 mm",
+            "S = 25.400 – (86 × 254) = 3.556 mm",
+            "S = 254 / 86 = 2,95 mm"
+          ]
+        },
+        {
+          "title": "Calcule a abstração inicial (Ia = 0,2 × S) e o escoamento superficial efetivo (Q):",
+          "description": "Ia = 0,2 × 41,3 = ? ; Q = (P – Ia)² / (P – Ia + S) = ?",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Ia = 8,3 mm; Q = (70 – 8,3)² / (70 – 8,3 + 41,3) = (61,7)² / 103,0 = 3.806,9 / 103,0 ≈ 37,0 mm",
+            "Ia = 8,3 mm; Q = 70 – 8,3 = 61,7 mm",
+            "Ia = 20,7 mm; Q = (70 – 20,7)² / (70 – 20,7 + 41,3) = 24,3 / 90,6 ≈ 26,8 mm",
+            "Ia = 41,3 mm; Q = 70 – 41,3 = 28,7 mm"
+          ]
+        },
+        {
+          "title": "Isso significa que, dos 70 mm de chuva, aproximadamente 37 mm escoam superficialmente. Em uma área de contribuição de 5 ha, qual é o volume total de escoamento?",
+          "description": "Volume (m³) = Q (m) × Área (m²)",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "V = 0,037 × 50.000 = 1.850 m³",
+            "V = 37 × 50.000 = 1.850.000 m³",
+            "V = 0,037 × 5 = 0,185 m³",
+            "V = 37 × 5 = 185 m³"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dimensionamento de barraginhas",
+      "description": "Modelo de barraginha circular de base:\n• Diâmetro: 4 m\n• Profundidade: 1,2 m\n• Volume unitário: V ≈ (π/3) × h × (R² + R×r + r²)\n  com R = 2,0 m (raio superior), r = 1,0 m (raio inferior), h = 1,2 m",
+      "questions": [
+        {
+          "title": "Calcule o volume de cada barraginha usando a fórmula do tronco de cone: V = (π/3) × 1,2 × (2,0² + 2,0×1,0 + 1,0²)",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "V = (π/3) × 1,2 × (4 + 2 + 1) = (π/3) × 1,2 × 7 = 1,257 × 7 ≈ 8,8 m³",
+            "V = π × 2,0² × 1,2 = 15,1 m³",
+            "V = (π/3) × 1,2 × (4 + 2 + 1) ≈ 4,4 m³",
+            "V = (4/3) × π × 2,0³ = 33,5 m³"
+          ]
+        },
+        {
+          "title": "Para captar os 1.850 m³ de escoamento, quantas barraginhas de 8,8 m³ seriam necessárias?",
+          "description": "n = Volume total / Volume unitário",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "n = 1.850 / 8,8 ≈ 210 barraginhas",
+            "n = 1.850 / 8,8 ≈ 21 barraginhas",
+            "n = 1.850 × 8,8 ≈ 16.280 barraginhas",
+            "n = 8,8 / 1.850 ≈ 0,005 barraginhas"
+          ]
+        },
+        {
+          "title": "O número de 210 barraginhas para 5 ha parece muito elevado. Proponha estratégias para reduzir esse número na prática (considere: fator de segurança, infiltração durante a chuva, combinação com outras técnicas, distribuição temporal).",
+          "description": "Mínimo 5 linhas.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Locação e cenário pós-recuperação",
+      "description": "",
+      "questions": [
+        {
+          "title": "Em qual posição da vertente as barraginhas devem preferencialmente ser locadas?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "No topo do morro — antes que a água ganhe velocidade.",
+            "No terço médio a inferior da vertente, em linhas transversais ao escoamento, interceptando os caminhos preferenciais da água.",
+            "Apenas no fundo do vale, como lagoa de contenção.",
+            "Aleatoriamente, sem critério topográfico."
+          ]
+        },
+        {
+          "title": "Se a pastagem for recuperada com vetiver + leguminosas e o CN diminuir de 86 (pastagem degradada) para 71 (pastagem boa), calcule o novo escoamento e compare com o cenário atual.",
+          "description": "S_novo = (25.400/71) – 254 = ? → Ia_novo = ? → Q_novo = ?\nMostre os cálculos e indique a redução percentual do escoamento.",
+          "type": "PARAGRAPH",
+          "required": true
+        },
+        {
+          "title": "Qual seria a redução percentual aproximada no número de barraginhas necessárias após a recuperação da pastagem (CN de 86 para 71)?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Redução de ~50% — o escoamento cai aproximadamente pela metade.",
+            "Redução de ~25% — pequena melhoria.",
+            "Redução de ~80% — a pastagem boa praticamente elimina o escoamento.",
+            "Nenhuma redução — CN não afeta o dimensionamento."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Autoavaliação",
+      "description": "",
+      "questions": [
+        {
+          "title": "De 1 a 5, o quanto você se sente confiante para aplicar o método SCS-CN e dimensionar barraginhas?",
+          "description": "",
+          "type": "SCALE",
+          "required": true,
+          "scale_low": 1,
+          "scale_high": 5,
+          "scale_low_label": "Nada confiante",
+          "scale_high_label": "Muito confiante"
+        },
+        {
+          "title": "Espaço livre — registre qualquer dúvida ou comentário.",
+          "description": "",
+          "type": "PARAGRAPH",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

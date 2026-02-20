@@ -1,0 +1,601 @@
+============================================================
+ATIVIDADE 09 — BIOENGENHARIA DE SOLOS (2026.1)
+Aulas 16–17: Geotêxteis e Biotêxteis
+============================================================
+
+---------- TÍTULO DO FORMULÁRIO ----------
+
+Atividade 09 — Geotêxteis e Biotêxteis: Seleção e Comparação
+
+---------- DESCRIÇÃO DO FORMULÁRIO ----------
+
+Esta atividade faz parte das Aulas 16 e 17 (Geotêxteis / Biotêxteis e Fibras Vegetais) da disciplina Bioengenharia de Solos (UEFS 2026.1).
+
+O objetivo é aplicar critérios de retenção para seleção de geotêxteis (abertura de filtração O₉₅), comparar geotêxteis sintéticos com biotêxteis de fibras vegetais, e avaliar o uso de biopolímeros superabsorventes (Bio-SAP) como insumo para hidrossemeadura em regiões semiáridas. Você tomará decisões de projeto baseadas em propriedades granulométricas do solo e funções técnicas de cada material.
+
+Prazo de entrega: até o início da próxima aula.
+
+============================================================
+SEÇÃO 1 — IDENTIFICAÇÃO
+============================================================
+
+Título da seção: Identificação do(a) estudante
+Descrição da seção: (vazio)
+
+----------
+
+Pergunta 1
+Tipo: Resposta curta (obrigatória)
+Título: Nome completo
+Descrição: (vazio)
+
+----------
+
+Pergunta 2
+Tipo: Resposta curta (obrigatória)
+Título: Matrícula
+Descrição: (vazio)
+
+============================================================
+SEÇÃO 2 — CONCEITOS FUNDAMENTAIS
+============================================================
+
+Título da seção: Geotêxteis e critério de retenção
+Descrição da seção: Geotêxteis são mantas permeáveis (tecidas ou não-tecidas) utilizadas como filtros, separadores e reforço em obras geotécnicas. O parâmetro-chave para a função de FILTRAÇÃO é a abertura de filtração (O₉₅): o diâmetro do maior orifício aberto no geotêxtil, tal que 95% dos orifícios são menores que esse valor.
+
+Critério de retenção (simplificado):
+• O₉₅ ≤ C_R × D₈₅ (do solo a ser protegido)
+• C_R = coeficiente de retenção, que varia conforme o tipo de solo:
+  – Solos finos coesivos (Latossolos, argilas): C_R = 1,0
+  – Solos granulares (areias): C_R = 2,0
+  – Solos mistos (francos): C_R = 1,5
+
+D₈₅ = diâmetro da partícula na qual 85% do solo (em massa) é mais fino.
+
+Problemas por seleção inadequada:
+• O₉₅ muito GRANDE (abertura excessiva) → partículas passam pelo geotêxtil → PIPING (carreamento de finos)
+• O₉₅ muito PEQUENO (abertura restrita) → finos obstruem a superfície → COLMATAÇÃO (perda de permeabilidade)
+
+----------
+
+Pergunta 3
+Tipo: Múltipla escolha (obrigatória)
+Título: Qual é a principal função do geotêxtil quando utilizado como FILTRO em obras de bioengenharia (por exemplo, sob enrocamento vegetado)?
+
+Opção A: Impermeabilizar o solo, evitando qualquer passagem de água
+Opção B: Permitir a passagem de água enquanto retém as partículas de solo, evitando piping
+Opção C: Substituir a vegetação na proteção do talude
+Opção D: Aumentar a resistência mecânica do solo (como armação)
+Opção E: Absorver a água da chuva como uma esponja
+
+============================================================
+SEÇÃO 3 — CRITÉRIO DE RETENÇÃO: 3 SITUAÇÕES DE SOLO
+============================================================
+
+Título da seção: Seleção de O₉₅ para três tipos de solo
+Descrição da seção: Você recebeu três situações de projeto com solos diferentes. Para cada uma, calcule o O₉₅ máximo admissível do geotêxtil usando o critério O₉₅ ≤ C_R × D₈₅.
+
+Situação 1 — Latossolo Vermelho (solo fino coesivo):
+• D₈₅ = 0,05 mm; C_R = 1,0
+
+Situação 2 — Solo arenoso (granular):
+• D₈₅ = 0,80 mm; C_R = 2,0
+
+Situação 3 — Solo franco (misto):
+• D₈₅ = 0,30 mm; C_R = 1,5
+
+----------
+
+Pergunta 4
+Tipo: Múltipla escolha (obrigatória)
+Título: Para a Situação 1 (Latossolo, D₈₅ = 0,05 mm, C_R = 1,0), qual é o O₉₅ máximo admissível?
+
+Opção A: O₉₅ ≤ 0,025 mm
+Opção B: O₉₅ ≤ 0,05 mm
+Opção C: O₉₅ ≤ 0,10 mm
+Opção D: O₉₅ ≤ 0,50 mm
+Opção E: O₉₅ ≤ 1,00 mm
+
+----------
+
+Pergunta 5
+Tipo: Múltipla escolha (obrigatória)
+Título: Para a Situação 2 (Solo arenoso, D₈₅ = 0,80 mm, C_R = 2,0), qual é o O₉₅ máximo admissível?
+
+Opção A: O₉₅ ≤ 0,40 mm
+Opção B: O₉₅ ≤ 0,80 mm
+Opção C: O₉₅ ≤ 1,20 mm
+Opção D: O₉₅ ≤ 1,60 mm
+Opção E: O₉₅ ≤ 2,40 mm
+
+----------
+
+Pergunta 6
+Tipo: Parágrafo (obrigatória)
+Título: Para a Situação 3 (Solo franco, D₈₅ = 0,30 mm, C_R = 1,5), calcule O₉₅ máximo. Em seguida, explique com suas palavras por que o coeficiente C_R varia conforme o tipo de solo.
+Descrição: O₉₅ ≤ C_R × D₈₅. Por que solos granulares permitem C_R maior que solos finos coesivos?
+
+----------
+
+Pergunta 7
+Tipo: Múltipla escolha (obrigatória)
+Título: O que acontece se o geotêxtil selecionado tiver O₉₅ MUITO MAIOR que o recomendado (abertura excessiva)?
+
+Opção A: Nada — o geotêxtil funcionará normalmente
+Opção B: PIPING: partículas finas do solo passam pelo geotêxtil, gerando cavidades internas e eventual colapso
+Opção C: COLMATAÇÃO: os poros do geotêxtil ficam obstruídos por partículas finas
+Opção D: O geotêxtil se dissolverá na água
+Opção E: A vegetação não conseguirá se estabelecer
+
+----------
+
+Pergunta 8
+Tipo: Múltipla escolha (obrigatória)
+Título: O que acontece se o geotêxtil selecionado tiver O₉₅ MUITO MENOR que o necessário (abertura muito restrita)?
+
+Opção A: O filtro será mais eficiente — quanto menor O₉₅, melhor
+Opção B: Nada — O₉₅ pequeno é sempre seguro
+Opção C: COLMATAÇÃO: partículas finas se acumulam na superfície do geotêxtil, bloqueando a passagem de água e gerando poropressões
+Opção D: PIPING: ocorrerá erosão interna do solo
+Opção E: O geotêxtil se romperá por excesso de pressão
+
+============================================================
+SEÇÃO 4 — BIOTÊXTEIS: FIBRAS VEGETAIS BIODEGRADÁVEIS
+============================================================
+
+Título da seção: Comparação geotêxtil sintético × biotêxtil
+Descrição da seção: Biotêxteis são mantas feitas de fibras vegetais (coco, juta, sisal, palha) que exercem funções semelhantes aos geotêxteis sintéticos, mas com a vantagem de serem biodegradáveis. Ao se degradar, incorporam matéria orgânica ao solo e liberam espaço para o crescimento das raízes.
+
+Características comparativas:
+• Geotêxtil sintético (PP/PET): vida útil > 50 anos, não biodegrada, custo R$ 5–15/m²
+• Biotêxtil de fibra de coco: vida útil 2–5 anos, biodegradável, custo R$ 8–20/m²
+• Biotêxtil de juta: vida útil 1–2 anos, biodegradável, custo R$ 4–10/m²
+
+----------
+
+Pergunta 9
+Tipo: Múltipla escolha (obrigatória)
+Título: Qual é a principal VANTAGEM da biodegradabilidade dos biotêxteis em projetos de bioengenharia?
+
+Opção A: O biotêxtil é mais resistente que o geotêxtil sintético por ser natural
+Opção B: A biodegradação elimina resíduos, incorpora matéria orgânica ao solo e permite que as raízes ocupem o espaço liberado, integrando solo e vegetação
+Opção C: A biodegradação torna o biotêxtil mais barato que o sintético
+Opção D: Biotêxteis não precisam ser instalados — basta jogar sobre o solo
+Opção E: A biodegradação aumenta a permeabilidade do solo indefinidamente
+
+----------
+
+Pergunta 10
+Tipo: Múltipla escolha (obrigatória)
+Título: Em qual situação o biotêxtil de fibra de coco (vida útil 2–5 anos) é MAIS adequado que o geotêxtil sintético?
+
+Opção A: Como filtro permanente sob enrocamento em margem fluvial
+Opção B: Como proteção temporária de talude durante o período de estabelecimento da vegetação, combinado com feixes vivos
+Opção C: Como armação de reforço em muro de solo reforçado (vida útil > 30 anos)
+Opção D: Em fundações de edificações sob nível d'água
+Opção E: Em aterros sanitários como barreira de impermeabilização
+
+----------
+
+Pergunta 11
+Tipo: Parágrafo (obrigatória)
+Título: Explique por que a combinação "biotêxtil + feixe vivo" é uma solução de bioengenharia especialmente eficaz para proteção de taludes. Descreva a função de cada componente e como eles se complementam ao longo do tempo.
+Descrição: Considere: proteção imediata, transição, e proteção de longo prazo. Mínimo 5 linhas.
+
+----------
+
+Pergunta 12
+Tipo: Parágrafo (obrigatória)
+Título: Compare geotêxteis sintéticos e biotêxteis em termos de: (a) impacto ambiental pós-obra, (b) adequação a projetos temporários vs. permanentes, (c) contribuição para o solo.
+Descrição: Organize em 3 itens (a, b, c). Mínimo 5 linhas.
+
+============================================================
+SEÇÃO 5 — BIO-SAP: POLÍMERO SUPERABSORVENTE
+============================================================
+
+Título da seção: Aplicação de Bio-SAP em hidrossemeadura
+Descrição da seção: Bio-SAP (Biopolímero Superabsorvente) é um polímero de origem natural (amido, celulose modificada) capaz de absorver até 300 vezes seu peso em água, liberando-a lentamente para o solo. Pode ser incorporado ao slurry de hidrossemeadura para aumentar a retenção de umidade em regiões semiáridas.
+
+Dados:
+• Capacidade de absorção: 300 g de água por 1 g de Bio-SAP
+• Taxa de aplicação recomendada: 100 g/m²
+• Período de liberação: 15–30 dias
+• Preço médio: R$ 35/kg
+
+----------
+
+Pergunta 13
+Tipo: Parágrafo (obrigatória)
+Título: Calcule o volume de água retido por metro quadrado quando se aplica Bio-SAP na taxa de 100 g/m² com capacidade de absorção de 300× o peso. Expresse em litros/m².
+Descrição: Volume = massa_SAP × capacidade_absorção. Lembre-se: 1 g de água ≈ 1 mL; 1.000 mL = 1 L.
+
+----------
+
+Pergunta 14
+Tipo: Parágrafo (obrigatória)
+Título: Explique por que o Bio-SAP é especialmente útil para hidrossemeadura em regiões semiáridas durante o período seco. Qual é o efeito da liberação lenta de água sobre a germinação e o estabelecimento das plântulas?
+Descrição: Considere: precipitação irregular, evaporação intensa, janela de germinação.
+
+----------
+
+Pergunta 15
+Tipo: Múltipla escolha (obrigatória)
+Título: Qual é a principal limitação do Bio-SAP como insumo para bioengenharia?
+
+Opção A: É tóxico para as plantas
+Opção B: Funciona apenas uma vez — após secar, não reabsorve água
+Opção C: Tem custo elevado para grandes áreas e perde eficiência ao longo dos ciclos de hidratação/desidratação (degradação progressiva)
+Opção D: Não é compatível com mulch ou sementes
+Opção E: Impede completamente a infiltração de água no solo
+
+----------
+
+Pergunta 16
+Tipo: Escala linear (obrigatória)
+Título: De 1 a 5, o quanto você se sente confiante para selecionar geotêxteis e biotêxteis conforme as necessidades de um projeto de bioengenharia?
+Escala: 1 = Nada confiante → 5 = Muito confiante
+
+----------
+
+Pergunta 17
+Tipo: Parágrafo (opcional)
+Título: Registre aqui dúvidas, comentários ou curiosidades que surgiram durante esta atividade.
+Descrição: (vazio)
+
+============================================================
+CONFIGURAÇÕES SUGERIDAS PARA O GOOGLE FORMS
+============================================================
+
+- Coletar e-mails: Sim
+- Limitar a 1 resposta: Sim
+- Permitir edição após envio: Sim
+- Mostrar barra de progresso: Sim
+- Embaralhar ordem das perguntas: Não
+- Mensagem de confirmação:
+  "Resposta registrada com sucesso! Obrigado pela participação.
+   Seus resultados serão discutidos na próxima aula."
+
+============================================================
+GABARITO / RESPOSTAS ESPERADAS (USO DO DOCENTE)
+============================================================
+
+PERGUNTA 3 — Função do geotêxtil como filtro
+-----------------------------------------
+★ Resposta correta: Opção B
+→ Justificativa: A função FILTRO do geotêxtil é permitir a
+  passagem livre de água (dissipar poropressões) ENQUANTO retém
+  as partículas de solo, evitando piping (erosão interna). O
+  geotêxtil NÃO impermeabiliza (opção A — é permeável), não
+  substitui vegetação (C), não é armação (D — essa é a função
+  de REFORÇO, diferente de filtro), e não absorve água (E —
+  apenas permite a passagem).
+
+
+PERGUNTA 4 — O₉₅ para Latossolo
+-----------------------------------------
+★ Resposta correta: Opção B (O₉₅ ≤ 0,05 mm)
+→ Justificativa:
+  O₉₅ ≤ C_R × D₈₅ = 1,0 × 0,05 = 0,05 mm
+
+  Para solos finos coesivos (Latossolos), C_R = 1,0 é
+  conservador porque as partículas finas (argila + silte)
+  tendem a formar "pontes" nos orifícios do geotêxtil e
+  a se autofiltrarem. Porém, se essas partículas forem
+  dispersas (baixa coesão, como em Latossolos ácricos),
+  é prudente usar O₉₅ ≤ D₈₅ diretamente.
+
+  Na prática, O₉₅ = 0,05 mm exige um geotêxtil NÃO-TECIDO
+  de alta gramatura (≥ 300 g/m²), que apresenta O₉₅ na
+  faixa 0,03–0,08 mm.
+
+
+PERGUNTA 5 — O₉₅ para solo arenoso
+-----------------------------------------
+★ Resposta correta: Opção D (O₉₅ ≤ 1,60 mm)
+→ Justificativa:
+  O₉₅ ≤ C_R × D₈₅ = 2,0 × 0,80 = 1,60 mm
+
+  Para solos granulares (areias), C_R = 2,0 é aceitável
+  porque as partículas de areia são suficientemente grandes
+  para formar um filtro granular estável (autofiltração) na
+  interface solo-geotêxtil. A maior tolerância de O₉₅ permite
+  usar geotêxteis mais abertos (mais permeáveis), evitando
+  colmatação.
+
+
+PERGUNTA 6 — O₉₅ para solo franco + justificativa de C_R
+-----------------------------------------
+★ Resposta esperada:
+
+O₉₅ ≤ C_R × D₈₅ = 1,5 × 0,30 = 0,45 mm
+
+Justificativa de C_R variável:
+
+"O coeficiente C_R varia conforme o tipo de solo porque a
+capacidade de AUTOFILTRAÇÃO difere:
+
+• Solos granulares (C_R = 2,0): as partículas de areia são
+grandes e formam rapidamente um 'bolo filtrante' na
+interface com o geotêxtil (arranjo de grãos que bloqueia os
+poros). Isso permite aberturas maiores sem risco de piping.
+
+• Solos finos coesivos (C_R = 1,0): as partículas são muito
+pequenas (argila < 2 μm, silte < 63 μm) e podem migrar
+individualmente através dos poros do geotêxtil se O₉₅ for
+muito grande. Não formam bolo filtrante eficiente. Por isso,
+o critério é mais restritivo (C_R = 1,0).
+
+• Solos mistos/francos (C_R = 1,5): comportamento intermediário
+— a fração grossa forma filtro parcial, mas a fração fina
+pode migrar se a abertura for excessiva."
+
+Critérios de avaliação:
+• Calculou O₉₅ = 0,45 mm corretamente?
+• Explicou o conceito de autofiltração?
+• Diferenciou o comportamento de solos finos vs. granulares?
+
+
+PERGUNTA 7 — O₉₅ muito grande → piping
+-----------------------------------------
+★ Resposta correta: Opção B (PIPING)
+→ Justificativa: Se O₉₅ >> C_R × D₈₅, as partículas finas do
+  solo passam livremente pelos orifícios do geotêxtil. Esse
+  fenômeno é chamado PIPING (ou erosão interna):
+  (1) As partículas carreadas criam cavidades no solo;
+  (2) As cavidades concentram o fluxo, acelerando a erosão;
+  (3) O processo se autoalimenta e pode levar ao colapso
+      estrutural (do talude, aterro ou margem).
+  Colmatação (opção C) é o problema OPOSTO (O₉₅ muito pequeno).
+
+
+PERGUNTA 8 — O₉₅ muito pequeno → colmatação
+-----------------------------------------
+★ Resposta correta: Opção C (COLMATAÇÃO)
+→ Justificativa: Se O₉₅ << C_R × D₈₅, partículas finas se
+  acumulam na superfície do geotêxtil (colmatação superficial)
+  ou penetram parcialmente nos poros e ficam presas (colmatação
+  interna), bloqueando progressivamente a passagem de água.
+  Consequências:
+  (1) A permeabilidade do geotêxtil cai drasticamente;
+  (2) A poropressão no solo aumenta (não dissipa);
+  (3) O aumento de poropressão reduz a tensão efetiva e pode
+      causar ruptura do talude (oposto do desejado).
+  A SOLUÇÃO é selecionar O₉₅ no intervalo correto: grande o
+  suficiente para evitar colmatação, pequeno o suficiente para
+  evitar piping.
+
+
+PERGUNTA 9 — Vantagem da biodegradabilidade
+-----------------------------------------
+★ Resposta correta: Opção B
+→ Justificativa: A biodegradabilidade é a principal vantagem
+  diferencial dos biotêxteis em relação aos sintéticos. Ao se
+  degradar:
+  (1) Elimina resíduo no ambiente (o geotêxtil sintético persiste
+      50+ anos no solo — microplásticos);
+  (2) Incorpora matéria orgânica ao solo (as fibras vegetais se
+      decompõem em húmus), melhorando estrutura e retenção de
+      água;
+  (3) Libera espaço físico para as raízes colonizarem a camada
+      superficial, integrando solo, raízes e substrato em um
+      sistema autossustentável.
+  O biotêxtil NÃO é mais resistente (A), NÃO é necessariamente
+  mais barato (C), precisa ser instalado (D), e a permeabilidade
+  não aumenta "indefinidamente" (E).
+
+
+PERGUNTA 10 — Biotêxtil × geotêxtil: adequação
+-----------------------------------------
+★ Resposta correta: Opção B
+→ Justificativa: O biotêxtil de fibra de coco (vida útil 2–5
+  anos) é ideal para PROTEÇÃO TEMPORÁRIA de taludes durante o
+  período de estabelecimento da vegetação (2–3 anos). A
+  combinação com feixes vivos é especialmente eficaz:
+  - O biotêxtil protege o solo imediatamente (T = 0);
+  - Os feixes vivos enraízam e cobrem a superfície em 1–2 anos;
+  - O biotêxtil degrada quando a vegetação já está estabelecida,
+    resultando em transição suave (sem necessidade de remoção).
+
+  As demais opções requerem vida útil > 30 anos (A, C, D, E),
+  incompatíveis com material biodegradável.
+
+
+PERGUNTA 11 — Combinação biotêxtil + feixe vivo
+-----------------------------------------
+Resposta esperada (exemplo):
+
+"A combinação biotêxtil + feixe vivo é uma solução integrada
+que atua em 3 fases temporais:
+
+FASE 1 — Proteção imediata (0–6 meses): O biotêxtil cobre
+o solo exposto, reduzindo erosão por splash e escoamento
+superficial. Os feixes vivos (estacas enterradas de espécies
+de fácil enraizamento, como gliricídia ou sabiá) estão em
+fase de brotação e ainda não oferecem cobertura significativa.
+
+FASE 2 — Transição (6–24 meses): Os feixes vivos desenvolvem
+raízes e parte aérea, passando a cobrir progressivamente o
+talude. O biotêxtil começa a degradar, perdendo resistência
+mecânica mas incorporando matéria orgânica ao solo, que
+favorece o enraizamento das novas plantas.
+
+FASE 3 — Proteção permanente (> 24 meses): O biotêxtil está
+degradado (< 30% da resistência original), mas a vegetação
+do feixe vivo já está plenamente estabelecida (cobertura > 80%),
+assumindo a função de proteção. As raízes fornecem coesão
+radicular e ancoragem. O sistema é agora autossustentável —
+não depende mais de material inerte."
+
+Critérios de avaliação:
+• Identificou as 3 fases (imediata, transição, permanente)?
+• Descreveu a função de cada componente em cada fase?
+• Mencionou incorporação de MO pelo biotêxtil?
+• Atingiu mínimo de 5 linhas?
+
+
+PERGUNTA 12 — Comparação geotêxtil × biotêxtil
+-----------------------------------------
+Resposta esperada (exemplo):
+
+"(a) IMPACTO AMBIENTAL PÓS-OBRA:
+Geotêxtil sintético: permanece indefinidamente no solo (50+
+anos), gerando resíduos de microplásticos (PP/PET) que podem
+contaminar solo e água subterrânea. A remoção, se necessária,
+é onerosa e destrutiva.
+Biotêxtil: degrada naturalmente em 1–5 anos, sem resíduos.
+As fibras vegetais são convertidas em matéria orgânica pelo
+bioma do solo.
+
+(b) PROJETOS TEMPORÁRIOS vs. PERMANENTES:
+Geotêxtil sintético: ideal para obras permanentes (filtro sob
+enrocamento, reforço de aterro, proteção de margem fluvial)
+onde a função de filtração ou reforço é necessária por décadas.
+Biotêxtil: ideal para proteção temporária durante o
+estabelecimento vegetal (1–3 anos). Não é adequado onde a
+função de filtro precisa durar > 5 anos.
+
+(c) CONTRIBUIÇÃO PARA O SOLO:
+Geotêxtil sintético: nenhuma contribuição — é inerte. Pode
+até inibir o crescimento radicular se instalado muito próximo
+à superfície.
+Biotêxtil: incorpora matéria orgânica (2–5 t/ha ao final da
+degradação), melhora a estrutura do solo, aumenta a capacidade
+de retenção de água e estimula a atividade biológica."
+
+Critérios de avaliação:
+• Organizou em 3 itens (a, b, c)?
+• Mencionou microplásticos (impacto do sintético)?
+• Distinguiu temporário vs. permanente?
+• Citou incorporação de MO (contribuição do biotêxtil)?
+
+
+PERGUNTA 13 — Cálculo de retenção de água pelo Bio-SAP
+-----------------------------------------
+★ Resposta esperada:
+
+Massa de Bio-SAP por m² = 100 g/m²
+Capacidade de absorção = 300 g de água / g de SAP
+
+Água retida = 100 g/m² × 300 g_água/g_SAP
+             = 30.000 g_água/m²
+             = 30.000 mL/m²
+             = 30 L/m²
+
+→ Justificativa: 30 L/m² equivalem a uma "lâmina d'água" de
+  30 mm sobre toda a superfície. Em um semiárido com
+  precipitação mensal de 60–80 mm no período chuvoso, o Bio-SAP
+  retém ~40–50% de uma chuva mensal, disponibilizando-a
+  lentamente durante 15–30 dias para a germinação das sementes.
+
+  Para 1.200 m² de talude (cenário da Atividade 06):
+  Volume total = 30 × 1.200 = 36.000 L = 36 m³ de água retida.
+  Massa de SAP = 100 × 1.200 = 120.000 g = 120 kg.
+  Custo = 120 kg × R$ 35/kg = R$ 4.200,00.
+
+
+PERGUNTA 14 — Bio-SAP no semiárido
+-----------------------------------------
+Resposta esperada (exemplo):
+
+"O Bio-SAP é especialmente útil em regiões semiáridas porque
+compensa as duas principais limitações climáticas para a
+germinação: precipitação irregular e evaporação intensa.
+
+(1) RESERVATÓRIO SUBTERRÂNEO DE UMIDADE: Ao absorver 300× seu
+peso, o Bio-SAP atua como um reservatório microscópico no solo.
+Quando chove, o polímero captura a água antes que ela percole
+ou evapore. Essa água fica disponível em gel para as raízes
+durante 15–30 dias — exatamente a janela crítica de germinação
+das gramíneas da hidrossemeadura (braquiária germina em 7–21
+dias).
+
+(2) REDUÇÃO DA EVAPORAÇÃO: A água armazenada no gel SAP não
+está livre na superfície — não evapora diretamente. A taxa de
+evaporação do solo com SAP pode ser 40–60% menor que a do
+solo sem SAP, ampliando o período de umidade disponível.
+
+(3) PONTE ENTRE CHUVAS: No semiárido, pode haver intervalos de
+3–4 semanas entre chuvas no início/final do período chuvoso. O
+Bio-SAP libera gradualmente a água da última chuva, mantendo
+as plântulas vivas até o próximo evento. Sem ele, plântulas
+com raízes < 5 cm morrerão por dessecação."
+
+Critérios de avaliação:
+• Mencionou absorção e liberação lenta?
+• Citou janela de germinação (15–30 dias)?
+• Relacionou com precipitação irregular do semiárido?
+• Mencionou redução de evaporação?
+
+
+PERGUNTA 15 — Limitação do Bio-SAP
+-----------------------------------------
+★ Resposta correta: Opção C
+→ Justificativa: As duas principais limitações do Bio-SAP são:
+  (1) CUSTO: R$ 35/kg × 100 g/m² = R$ 3,50/m², que somado ao
+      custo da hidrossemeadura (R$ 8–32/m²) pode tornar o
+      projeto inviável em grandes áreas;
+  (2) DEGRADAÇÃO PROGRESSIVA: a cada ciclo de hidratação/
+      desidratação, o polímero perde capacidade de absorção
+      (10–20% por ciclo). Após 5–10 ciclos, a eficiência cai
+      significativamente — o que é aceitável se a vegetação já
+      estiver estabelecida.
+  O Bio-SAP NÃO é tóxico (A), pode ser reidratado (B — é a
+  capacidade que diminui, não é uso único), é compatível com
+  sementes e mulch (D), e NÃO impede infiltração (E — é
+  permeável na escala macro).
+
+
+PERGUNTA 16 — Escala linear (autoavaliação)
+---------------------------------------------
+Não há resposta certa. Comparar com atividades anteriores.
+
+
+PERGUNTA 17 — Espaço livre
+---------------------------------------
+Respostas possíveis comuns:
+• "Qual a diferença entre geotêxtil tecido e não-tecido?"
+• "O biotêxtil de coco funciona em solo permanentemente saturado?"
+• "O Bio-SAP é seguro para a vida do solo (minhocas, fungos)?"
+• "Existe biotêxtil feito de fibras de licuri ou caroá (nativas
+  da Caatinga)?"
+
+============================================================
+NOTAS PARA O DOCENTE
+============================================================
+
+OBJETIVO PEDAGÓGICO:
+Esta atividade cobre três tópicos complementares: geotêxteis
+(filtração e critério O₉₅), biotêxteis (biodegradabilidade e
+combinação com bioengenharia) e Bio-SAP (inovação para
+semiárido). A progressão: critério quantitativo → comparação
+qualitativa → aplicação inovadora simula o processo de seleção
+de materiais em projetos reais.
+
+TEMPO ESTIMADO DE RESPOSTA: 35–45 minutos
+
+NOTA SOBRE O CRITÉRIO O₉₅:
+O critério O₉₅ ≤ C_R × D₈₅ é uma SIMPLIFICAÇÃO DIDÁTICA de
+critérios mais complexos (Giroud 1982, Fischer et al. 1990,
+CFGG 1986). Na prática, o projetista deve considerar também o
+coeficiente de uniformidade (Cu), a condição hidráulica (fluxo
+unidirecional vs. cíclico), o tipo de geotêxtil (tecido vs.
+não-tecido) e os ensaios de laboratório (permeâmetro de
+gradiente). Os valores de C_R usados aqui (1,0 / 1,5 / 2,0)
+são representativos da literatura, mas podem variar conforme
+a norma adotada.
+
+NOTA SOBRE BIO-SAP:
+O Bio-SAP é uma tecnologia emergente em bioengenharia, ainda
+pouco explorada no Brasil. Os valores de absorção (300×) e
+custo (R$ 35/kg) são típicos de produtos à base de amido
+reticulado disponíveis comercialmente. O docente pode
+trazer amostras para demonstração prática (impressionante
+visualmente: 1 colher → 1 litro de gel).
+
+ALINHAMENTO COM O PLANO:
+- Aula 16: Geotêxteis — tipos, propriedades, critérios de
+  seleção, ensaios, aplicações em bioengenharia.
+- Aula 17: Biotêxteis e Fibras Vegetais — fibra de coco, juta,
+  sisal, biopolímeros e aplicações em ambientes semiáridos.
+- Avaliação contínua: compõe a nota de participação/exercícios.
+============================================================

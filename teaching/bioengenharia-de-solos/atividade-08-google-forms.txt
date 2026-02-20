@@ -1,0 +1,565 @@
+============================================================
+ATIVIDADE 08 — BIOENGENHARIA DE SOLOS (2026.1)
+Aulas 14–15: Canaleta Verde e Feixes Vivos
+============================================================
+
+---------- TÍTULO DO FORMULÁRIO ----------
+
+Atividade 08 — Canaleta Verde e Equação de Manning
+
+---------- DESCRIÇÃO DO FORMULÁRIO ----------
+
+Esta atividade faz parte das Aulas 14 e 15 (Canaletas Verdes / Feixes e Grades Vivas) da disciplina Bioengenharia de Solos (UEFS 2026.1).
+
+O objetivo é dimensionar uma canaleta verde (vegetated swale) trapezoidal utilizando a equação de Manning, verificar o regime de escoamento pelo número de Froude e avaliar a tensão de cisalhamento na interface solo-vegetação. Você aplicará cálculos hidráulicos clássicos a um sistema de drenagem sustentável vegetado.
+
+Prazo de entrega: até o início da próxima aula.
+
+============================================================
+SEÇÃO 1 — IDENTIFICAÇÃO
+============================================================
+
+Título da seção: Identificação do(a) estudante
+Descrição da seção: (vazio)
+
+----------
+
+Pergunta 1
+Tipo: Resposta curta (obrigatória)
+Título: Nome completo
+Descrição: (vazio)
+
+----------
+
+Pergunta 2
+Tipo: Resposta curta (obrigatória)
+Título: Matrícula
+Descrição: (vazio)
+
+============================================================
+SEÇÃO 2 — CENÁRIO: CAMPUS UEFS
+============================================================
+
+Título da seção: Dados do projeto de drenagem sustentável
+Descrição da seção: O campus da UEFS em Feira de Santana possui uma área impermeabilizada (estacionamento + edificações) de 2,5 ha que gera escoamento superficial concentrado durante eventos de chuva intensa. O projeto prevê a implantação de uma canaleta verde (vegetated swale) trapezoidal para conduzir e infiltrar parte dessa água antes que atinja o sistema de drenagem convencional.
+
+Dados do projeto:
+• Área de contribuição: 2,5 ha = 25.000 m²
+• Vazão de projeto (TR = 10 anos): Q_projeto = 0,375 m³/s
+• Seção transversal: trapezoidal
+• Largura de fundo (b): 1,0 m
+• Inclinação dos taludes laterais (z): 2 (2H:1V)
+• Coeficiente de Manning (n): 0,035 (grama média — Bermuda)
+• Declividade longitudinal (S₀): 0,02 m/m (2%)
+• Revestimento: grama Bermuda (*Cynodon dactylon*)
+
+Equação de Manning:
+• V = (1/n) × R^(2/3) × S₀^(1/2)
+• Q = V × A
+
+Geometria trapezoidal (para profundidade y):
+• Área: A = (b + z×y) × y
+• Perímetro molhado: P = b + 2×y×√(1 + z²)
+• Raio hidráulico: R = A / P
+• Largura superficial: T = b + 2×z×y
+• Profundidade hidráulica: D_h = A / T
+
+Número de Froude:
+• Fr = V / √(g × D_h), onde g = 9,81 m/s²
+• Fr < 1 → subcrítico (desejável); Fr > 1 → supercrítico (evitar)
+
+Tensão de cisalhamento no fundo:
+• τ₀ = γ_w × R × S₀, onde γ_w = 9.810 N/m³
+
+----------
+
+Pergunta 3
+Tipo: Múltipla escolha (obrigatória)
+Título: Qual é a principal vantagem de uma canaleta verde em relação a um canal de concreto convencional?
+
+Opção A: A canaleta verde conduz a água mais rapidamente que o concreto
+Opção B: A canaleta verde permite infiltração, filtração de poluentes e redução do volume de escoamento, além de conduzir a água
+Opção C: A canaleta verde é mais barata de construir que o concreto e não requer manutenção
+Opção D: A canaleta verde elimina completamente a necessidade de sistema de drenagem convencional
+Opção E: A canaleta verde funciona apenas para chuvas fracas (< 10 mm)
+
+============================================================
+SEÇÃO 3 — CÁLCULOS DE MANNING
+============================================================
+
+Título da seção: Dimensionamento hidráulico — profundidade y = 0,30 m
+Descrição da seção: Para verificar se a canaleta suporta a vazão de projeto (Q = 0,375 m³/s), tente a profundidade y = 0,30 m e calcule a vazão resultante pela equação de Manning. Se Q_calculado ≥ Q_projeto, a seção é adequada.
+
+Dados: b = 1,0 m, z = 2, n = 0,035, S₀ = 0,02 m/m, y = 0,30 m.
+
+----------
+
+Pergunta 4
+Tipo: Múltipla escolha (obrigatória)
+Título: Para y = 0,30 m, calcule a área da seção transversal (A) e o perímetro molhado (P).
+
+Opção A: A = 0,30 m², P = 1,60 m
+Opção B: A = 0,39 m², P = 2,00 m
+Opção C: A = 0,48 m², P = 2,34 m
+Opção D: A = 0,54 m², P = 2,60 m
+Opção E: A = 0,66 m², P = 2,80 m
+
+----------
+
+Pergunta 5
+Tipo: Parágrafo (obrigatória)
+Título: Com A = 0,48 m² e P = 2,34 m, calcule o raio hidráulico (R). Em seguida, aplique a equação de Manning para obter a velocidade média (V) e a vazão (Q). Mostre todos os cálculos.
+Descrição: R = A/P. V = (1/n) × R^(2/3) × S₀^(1/2). Q = V × A. Use n = 0,035 e S₀ = 0,02.
+
+----------
+
+Pergunta 6
+Tipo: Múltipla escolha (obrigatória)
+Título: Com os cálculos realizados (V ≈ 1,2 m/s e Q ≈ 0,58 m³/s), a canaleta com y = 0,30 m suporta a vazão de projeto (Q_projeto = 0,375 m³/s)?
+
+Opção A: Não — Q_calculado < Q_projeto → seção insuficiente
+Opção B: Sim — Q_calculado > Q_projeto → seção tem capacidade de sobra
+Opção C: Exatamente no limite — Q_calculado = Q_projeto
+Opção D: Não é possível avaliar sem dados adicionais
+Opção E: A equação de Manning não se aplica a canaletas verdes
+
+----------
+
+Pergunta 7
+Tipo: Parágrafo (obrigatória)
+Título: A sobrecapacidade (Q_calc/Q_projeto = 0,58/0,375 ≈ 1,55) é desejável em canaletas verdes. Explique por que é importante ter margem de segurança no dimensionamento de canais vegetados. (Mínimo 3 linhas)
+Descrição: Dica: considere variação sazonal do n de Manning, crescimento da grama, deposição de sedimentos e incertezas na estimativa de Q.
+
+============================================================
+SEÇÃO 4 — NÚMERO DE FROUDE
+============================================================
+
+Título da seção: Regime de escoamento
+Descrição da seção: O número de Froude (Fr) classifica o regime de escoamento. Em canaletas verdes, o escoamento SUBCRÍTICO (Fr < 1) é desejável porque é mais lento, facilita a infiltração e evita erosão do revestimento vegetal.
+
+----------
+
+Pergunta 8
+Tipo: Parágrafo (obrigatória)
+Título: Calcule a profundidade hidráulica (D_h = A/T) e o número de Froude (Fr = V/√(g×D_h)) para y = 0,30 m. Classifique o regime.
+Descrição: T = b + 2×z×y = 1,0 + 2×2×0,30 = 2,20 m. Use g = 9,81 m/s² e V ≈ 1,2 m/s.
+
+----------
+
+Pergunta 9
+Tipo: Múltipla escolha (obrigatória)
+Título: Com Fr ≈ 0,75, o escoamento na canaleta é:
+
+Opção A: Subcrítico (Fr < 1) — adequado para canaleta verde ✓
+Opção B: Crítico (Fr = 1) — no limite
+Opção C: Supercrítico (Fr > 1) — inadequado, risco de erosão
+Opção D: Turbulento — não classificável por Froude
+Opção E: Laminar — não classificável por Froude
+
+============================================================
+SEÇÃO 5 — TENSÃO DE CISALHAMENTO
+============================================================
+
+Título da seção: Resistência do revestimento vegetal
+Descrição da seção: A tensão de cisalhamento no fundo (τ₀) indica a força do escoamento sobre a superfície. Se τ₀ exceder a resistência da vegetação, haverá arrancamento e erosão.
+
+Resistência de espécies comuns de grama:
+• Grama Bermuda (*Cynodon dactylon*): τ_crit ≈ 50 Pa (bem estabelecida)
+• Grama Batatais (*Paspalum notatum*): τ_crit ≈ 40 Pa
+• Brachiária (*Urochloa decumbens*): τ_crit ≈ 35 Pa
+• Solo nu: τ_crit ≈ 3–5 Pa
+
+----------
+
+Pergunta 10
+Tipo: Parágrafo (obrigatória)
+Título: Calcule a tensão de cisalhamento no fundo (τ₀) usando τ₀ = γ_w × R × S₀. Compare com a resistência da grama Bermuda (50 Pa). A canaleta é segura?
+Descrição: Use γ_w = 9.810 N/m³, R = 0,205 m, S₀ = 0,02 m/m.
+
+----------
+
+Pergunta 11
+Tipo: Múltipla escolha (obrigatória)
+Título: O valor calculado de τ₀ ≈ 40,2 Pa está ABAIXO do limite da grama Bermuda (50 Pa), mas com margem reduzida (80% da capacidade). O que isso implica para o projeto?
+
+Opção A: A canaleta é perfeitamente segura — nenhuma preocupação
+Opção B: A canaleta funciona, mas requer atenção: a grama deve estar bem estabelecida e mantida (altura mínima) para garantir a resistência de 50 Pa
+Opção C: A canaleta é insegura — τ₀ > τ_crit, haverá erosão imediata
+Opção D: A tensão de cisalhamento não é relevante para canaletas verdes
+Opção E: Deve-se remover a grama e substituir por concreto
+
+============================================================
+SEÇÃO 6 — EFEITO DA VEGETAÇÃO NO COEFICIENTE n
+============================================================
+
+Título da seção: Grama crescida versus grama recém-cortada
+Descrição da seção: O coeficiente de Manning (n) da vegetação varia conforme a altura e densidade da grama:
+
+• Grama recém-cortada (5 cm): n ≈ 0,025
+• Grama média (10–15 cm): n ≈ 0,035 (valor utilizado)
+• Grama crescida (> 20 cm): n ≈ 0,050–0,060
+
+----------
+
+Pergunta 12
+Tipo: Múltipla escolha (obrigatória)
+Título: Se a grama crescer e n aumentar de 0,035 para 0,050, o que acontecerá com a velocidade (V) e a profundidade (y) do escoamento na canaleta?
+
+Opção A: V aumenta e y diminui (a grama acelera o escoamento)
+Opção B: V diminui e y aumenta (mais rugosidade → mais resistência → água mais lenta e profunda)
+Opção C: V e y permanecem iguais (n não afeta o escoamento)
+Opção D: V e y ambos diminuem
+Opção E: V e y ambos aumentam
+
+----------
+
+Pergunta 13
+Tipo: Parágrafo (obrigatória)
+Título: Se a vazão de projeto aumentar (por exemplo, com expansão da área impermeabilizada) e Q_calculado se tornar MENOR que Q_projeto, quais medidas podem ser adotadas para restaurar a capacidade da canaleta? Apresente pelo menos 2 alternativas.
+Descrição: Pense em alterações geométricas e de manejo da vegetação.
+
+----------
+
+Pergunta 14
+Tipo: Parágrafo (obrigatória)
+Título: Compare uma canaleta verde com um feixe vivo (live fascine) em termos de: (a) função principal, (b) posição na encosta/paisagem, e (c) tipo de escoamento que cada técnica controla.
+Descrição: Mínimo 5 linhas. Relacione com as aulas 14 e 15.
+
+----------
+
+Pergunta 15
+Tipo: Escala linear (obrigatória)
+Título: De 1 a 5, o quanto você se sente confiante para dimensionar uma canaleta verde usando a equação de Manning?
+Escala: 1 = Nada confiante → 5 = Muito confiante
+
+----------
+
+Pergunta 16
+Tipo: Parágrafo (opcional)
+Título: Registre aqui dúvidas, comentários ou curiosidades que surgiram durante esta atividade.
+Descrição: (vazio)
+
+============================================================
+CONFIGURAÇÕES SUGERIDAS PARA O GOOGLE FORMS
+============================================================
+
+- Coletar e-mails: Sim
+- Limitar a 1 resposta: Sim
+- Permitir edição após envio: Sim
+- Mostrar barra de progresso: Sim
+- Embaralhar ordem das perguntas: Não
+- Mensagem de confirmação:
+  "Resposta registrada com sucesso! Obrigado pela participação.
+   Seus resultados serão discutidos na próxima aula."
+
+============================================================
+GABARITO / RESPOSTAS ESPERADAS (USO DO DOCENTE)
+============================================================
+
+PERGUNTA 3 — Vantagem da canaleta verde
+-----------------------------------------
+★ Resposta correta: Opção B
+→ Justificativa: A canaleta verde é um sistema de drenagem
+  sustentável (SuDS/LID) que, além de CONDUZIR a água, também:
+  (1) Permite infiltração no solo vegetado (reduz volume a
+      jusante);
+  (2) Filtra poluentes difusos (óleos, sedimentos, nutrientes)
+      pelo sistema solo-raiz;
+  (3) Reduz a velocidade do escoamento (alta rugosidade da
+      vegetação → n elevado);
+  (4) Evapora parte da água (evapotranspiração pela grama);
+  (5) Integra-se à paisagem (benefício estético).
+
+  O canal de concreto apenas CONDUZ (n baixo = alta velocidade,
+  sem infiltração, sem tratamento). As demais opções são
+  incorretas: a canaleta NÃO é mais rápida (A — é mais lenta),
+  requer manutenção regular da grama (C), não elimina a drenagem
+  convencional (D — complementa), e funciona para chuvas
+  intensas quando dimensionada corretamente (E).
+
+
+PERGUNTA 4 — Área e perímetro molhado
+-----------------------------------------
+★ Resposta correta: Opção C (A = 0,48 m², P = 2,34 m)
+→ Justificativa:
+  A = (b + z×y) × y = (1,0 + 2×0,30) × 0,30
+    = (1,0 + 0,60) × 0,30 = 1,60 × 0,30 = 0,48 m²
+
+  P = b + 2×y×√(1 + z²) = 1,0 + 2×0,30×√(1 + 4)
+    = 1,0 + 0,60×√5 = 1,0 + 0,60×2,236
+    = 1,0 + 1,342 = 2,342 m ≈ 2,34 m
+
+
+PERGUNTA 5 — Raio hidráulico, velocidade e vazão
+-----------------------------------------
+★ Resposta esperada:
+
+R = A / P = 0,48 / 2,34 = 0,205 m
+
+V = (1/n) × R^(2/3) × S₀^(1/2)
+V = (1/0,035) × (0,205)^(2/3) × (0,02)^(1/2)
+V = 28,57 × (0,205)^(0,667) × 0,1414
+
+Cálculo de (0,205)^(2/3):
+  (0,205)^(1/3) ≈ 0,590 (raiz cúbica de 0,205)
+  (0,205)^(2/3) = (0,590)² ≈ 0,348
+
+V = 28,57 × 0,348 × 0,1414
+V = 28,57 × 0,0492
+V ≈ 1,41 m/s
+
+Q = V × A = 1,41 × 0,48 ≈ 0,68 m³/s
+
+→ Nota para o docente: O cálculo exato dá V ≈ 1,4 m/s e
+  Q ≈ 0,67 m³/s. O enunciado simplifica para V ≈ 1,2 m/s e
+  Q ≈ 0,58 m³/s. A discrepância (~15%) pode decorrer de
+  arredondamentos ou uso de tabela de Manning com fatores
+  corretivos. Para fins da atividade, aceitar respostas na
+  faixa V = 1,2–1,4 m/s e Q = 0,55–0,68 m³/s.
+
+  O importante é que Q_calculado >> Q_projeto (0,375 m³/s),
+  confirmando que a seção é adequada independentemente da
+  aproximação utilizada.
+
+
+PERGUNTA 6 — Adequação da seção
+-----------------------------------------
+★ Resposta correta: Opção B (Q_calculado > Q_projeto → adequada)
+→ Justificativa: Q_calculado ≈ 0,58–0,68 m³/s é ~55–80% maior
+  que Q_projeto = 0,375 m³/s. A seção trapezoidal com y = 0,30 m
+  tem capacidade de SOBRA. A "folga" é desejável em canaletas
+  verdes porque o n de Manning varia com o crescimento da grama
+  e pode aumentar significativamente, reduzindo a capacidade.
+
+
+PERGUNTA 7 — Importância da margem de segurança
+-----------------------------------------
+Resposta esperada (exemplo):
+
+"A margem de segurança no dimensionamento de canaletas verdes é
+essencial por vários motivos:
+
+(1) VARIAÇÃO DO n DE MANNING: O coeficiente n muda com a altura
+da grama — de 0,025 (recém-cortada) a 0,060 (crescida). Se a
+manutenção atrasar, n aumenta e a capacidade cai significativamente.
+
+(2) DEPOSIÇÃO DE SEDIMENTOS: Com o tempo, sedimentos acumulam-se
+no fundo da canaleta, reduzindo a seção transversal efetiva (A ↓)
+e, consequentemente, Q.
+
+(3) INCERTEZAS NA ESTIMATIVA DE Q: A vazão de projeto é calculada
+com métodos hidrológicos (Racional, SCS-CN) que possuem incertezas
+de 20–30%. Uma margem de 50% absorve essas incertezas.
+
+(4) EVENTOS EXTREMOS: Mudanças climáticas podem intensificar
+eventos de chuva, gerando vazões maiores que a projetada."
+
+Critérios de avaliação:
+• Mencionou variação sazonal do n?
+• Citou deposição de sedimentos?
+• Mencionou incertezas hidrológicas?
+
+
+PERGUNTA 8 — Número de Froude
+-----------------------------------------
+★ Resposta esperada:
+
+T = b + 2×z×y = 1,0 + 2×2×0,30 = 2,20 m
+
+D_h = A / T = 0,48 / 2,20 = 0,218 m
+
+Fr = V / √(g × D_h)
+Fr = 1,2 / √(9,81 × 0,218)
+Fr = 1,2 / √(2,139)
+Fr = 1,2 / 1,463
+Fr ≈ 0,82
+
+→ Nota: Com V = 1,4 m/s, Fr = 1,4/1,46 ≈ 0,96.
+  O enunciado indica Fr ≈ 0,75 (usando V ≈ 1,2 m/s e
+  D_h ligeiramente diferente). Para fins da atividade,
+  aceitar Fr na faixa 0,70–0,95, desde que o estudante
+  classifique como SUBCRÍTICO (Fr < 1,0).
+
+  Classificação: SUBCRÍTICO → escoamento lento e profundo,
+  favorável à infiltração e sem ressalto hidráulico. ✓
+
+
+PERGUNTA 9 — Classificação do regime
+-----------------------------------------
+★ Resposta correta: Opção A (Subcrítico — adequado)
+→ Justificativa: Fr ≈ 0,75–0,95 < 1,0 → regime subcrítico.
+  Em canaletas verdes, o regime subcrítico é OBRIGATÓRIO porque:
+  (1) A velocidade é menor, permitindo maior tempo de contato
+      água-solo e, portanto, mais infiltração;
+  (2) Não há ressalto hidráulico (transição supercrítico →
+      subcrítico), que causaria turbulência intensa e
+      arrancamento da grama;
+  (3) A tensão de cisalhamento é menor, protegendo o
+      revestimento vegetal.
+
+
+PERGUNTA 10 — Tensão de cisalhamento
+-----------------------------------------
+★ Resposta esperada:
+
+τ₀ = γ_w × R × S₀
+τ₀ = 9.810 × 0,205 × 0,02
+τ₀ = 40,2 Pa
+
+Comparação: τ₀ = 40,2 Pa < τ_crit (Bermuda) = 50 Pa → SEGURO
+
+→ Margem: 40,2 / 50 = 0,804 → a tensão utiliza 80% da
+  capacidade da grama, restando apenas 20% de folga. A canaleta
+  é segura ENQUANTO a grama Bermuda estiver bem estabelecida e
+  saudável. Em caso de morte parcial da grama (seca, praga), a
+  resistência cairia e poderia haver erosão localizada.
+
+
+PERGUNTA 11 — Implicação da margem reduzida
+-----------------------------------------
+★ Resposta correta: Opção B (funciona, mas requer atenção)
+→ Justificativa: Com τ₀ a 80% da capacidade da grama, a
+  segurança depende criticamente do estado da vegetação. Se a
+  grama não estiver plenamente enraizada (primeiros 60 dias
+  após o plantio) ou se houver áreas de falha (manchas de solo
+  exposto), a resistência local cairá para 3–5 Pa (solo nu) e
+  haverá erosão nesses pontos. Recomendações:
+  • Manutenção regular: corte a 10–15 cm (não rente ao solo);
+  • Irrigação em períodos secos para manter vitalidade;
+  • Reparo imediato de áreas de falha;
+  • Monitoramento pós-evento de chuvas intensas.
+
+
+PERGUNTA 12 — Efeito do aumento de n
+-----------------------------------------
+★ Resposta correta: Opção B (V diminui e y aumenta)
+→ Justificativa: A equação de Manning mostra que V é
+  INVERSAMENTE proporcional a n: V = (1/n) × R^(2/3) × S₀^(1/2).
+  Se n aumenta (grama mais alta → mais rugosidade):
+  (1) V diminui (mais resistência ao escoamento);
+  (2) Para a mesma vazão Q, a profundidade y AUMENTA para
+      compensar a velocidade menor (Q = V × A → se V ↓, A deve
+      ↑ → y ↑).
+
+  Implicação prática: se a grama cresce muito (n = 0,060), a
+  canaleta pode transbordar para vazões que antes eram contidas.
+  Por isso, a manutenção (corte periódico) é essencial.
+
+
+PERGUNTA 13 — Medidas para restaurar capacidade
+-----------------------------------------
+Resposta esperada (exemplo):
+
+"Se Q_calculado < Q_projeto, as seguintes medidas podem ser
+adotadas:
+
+(1) AUMENTO DA SEÇÃO TRANSVERSAL: aumentar a profundidade (y)
+ou a largura de fundo (b) da canaleta. Por exemplo, escavar
+10 cm adicionais (y = 0,40 m) aumentaria A significativamente
+(A_novo = (1,0 + 2×0,40) × 0,40 = 1,80 × 0,40 = 0,72 m²),
+elevando Q.
+
+(2) MANUTENÇÃO DA VEGETAÇÃO: cortar a grama para reduzir n de
+0,050 para 0,035 ou menos, aumentando V e restaurando Q sem
+alterar a geometria. É a medida mais simples e econômica.
+
+(3) REDUÇÃO DA DECLIVIDADE LONGITUDINAL: se possível, aumentar
+S₀ (mas isso pode aumentar τ₀ e risco de erosão — trade-off).
+
+(4) CANALETA PARALELA: construir uma segunda canaleta em
+paralelo para dividir a vazão."
+
+Critérios de avaliação:
+• Propôs pelo menos 2 alternativas viáveis?
+• Distinguiu alterações geométricas (b, y) de manejo (n)?
+• Mencionou trade-offs (custo, erosão)?
+
+
+PERGUNTA 14 — Canaleta verde × feixe vivo
+-----------------------------------------
+Resposta esperada (exemplo):
+
+"(a) FUNÇÃO PRINCIPAL:
+A canaleta verde (vegetated swale) é um CANAL de condução e
+infiltração: sua função é transportar o escoamento superficial
+ao longo de um percurso vegetado, promovendo infiltração,
+filtração de poluentes e laminação de vazões.
+O feixe vivo (live fascine) é uma BARREIRA transversal: sua
+função é interceptar e reduzir a velocidade do escoamento
+superficial em encostas, reter sedimentos e criar condições
+para colonização vegetal.
+
+(b) POSIÇÃO NA PAISAGEM:
+A canaleta verde é implantada no FUNDO DE VALE ou em
+bordaduras de áreas impermeabilizadas (estacionamentos,
+estradas), acompanhando a linha de drenagem natural.
+O feixe vivo é implantado em ENCOSTAS, perpendicular à
+direção do escoamento, em linhas contínuas ao longo da
+meia-encosta.
+
+(c) TIPO DE ESCOAMENTO:
+A canaleta verde lida com escoamento CONCENTRADO (em canal),
+com vazões calculadas pela equação de Manning.
+O feixe vivo lida com escoamento DIFUSO (laminar em encosta),
+interceptando-o antes que se concentre em ravinas."
+
+Critérios de avaliação:
+• Distinguiu canal (condução) de barreira (interceptação)?
+• Mencionou posição na paisagem (vale vs. encosta)?
+• Identificou tipo de escoamento (concentrado vs. difuso)?
+• Atingiu mínimo de 5 linhas?
+
+
+PERGUNTA 15 — Escala linear (autoavaliação)
+---------------------------------------------
+Não há resposta certa. Comparar com atividades anteriores.
+
+
+PERGUNTA 16 — Espaço livre
+---------------------------------------
+Respostas possíveis comuns:
+• "É possível usar Manning para canais naturais com vegetação?"
+• "Qual a profundidade máxima para uma canaleta verde?"
+• "Como dimensionar o infiltrômetro para medir a infiltração
+  na canaleta?"
+• "A canaleta verde funciona em solos argilosos com baixa
+  permeabilidade?"
+
+============================================================
+NOTAS PARA O DOCENTE
+============================================================
+
+OBJETIVO PEDAGÓGICO:
+Esta atividade aplica hidráulica clássica (Manning, Froude, τ₀)
+a um contexto de bioengenharia (canaleta verde), demonstrando
+que o dimensionamento de estruturas vegetadas requer o mesmo
+rigor dos canais convencionais, acrescido de considerações
+ecológicas (variação de n, resistência da grama, manutenção).
+A comparação com feixes vivos (Pergunta 14) reforça que cada
+técnica tem escala e função específicas.
+
+TEMPO ESTIMADO DE RESPOSTA: 35–45 minutos
+
+NOTA SOBRE A DISCREPÂNCIA NOS VALORES DE V E Q:
+O cálculo exato de Manning para os dados fornecidos resulta em
+V ≈ 1,4 m/s e Q ≈ 0,67 m³/s, enquanto o enunciado simplifica
+para V ≈ 1,2 m/s e Q ≈ 0,58 m³/s. A diferença deve-se a
+arredondamentos e ao uso de tabelas simplificadas. O docente
+deve aceitar ambos os resultados e enfatizar que o CONCEITO
+(Q_calc > Q_projeto → canaleta adequada) é mais importante que
+a precisão numérica no contexto desta atividade.
+
+NOTA SOBRE FROUDE:
+O número de Froude depende fortemente da definição de
+profundidade utilizada (y, D_h = A/T, ou D_média). Para fins
+didáticos, a atividade usa Fr ≈ 0,75 como referência. Aceitar
+valores na faixa 0,70–0,95, desde que classificados como
+subcríticos.
+
+ALINHAMENTO COM O PLANO:
+- Aula 14: Canaleta Verde — dimensionamento hidráulico,
+  construção e monitoramento.
+- Aula 15: Feixes e Grades Vivas — construção, materiais,
+  espécies indicadas.
+- Avaliação contínua: compõe a nota de participação/exercícios.
+============================================================

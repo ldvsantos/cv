@@ -1,0 +1,584 @@
+============================================================
+ATIVIDADE 10 — BIOENGENHARIA DE SOLOS (2026.1)
+Projeto Integrador — Todas as Aulas (01–17)
+============================================================
+
+---------- TÍTULO DO FORMULÁRIO ----------
+
+Atividade 10 — Projeto Integrador de Bioengenharia de Solos
+
+---------- DESCRIÇÃO DO FORMULÁRIO ----------
+
+Esta atividade é o PROJETO INTEGRADOR da disciplina Bioengenharia de Solos (UEFS 2026.1), abrangendo todos os conteúdos estudados ao longo do semestre (Aulas 01–17).
+
+O objetivo é elaborar, em grupo (até 3 membros), um projeto completo de diagnóstico e intervenção de bioengenharia para um sítio degradado real ou simulado, integrando múltiplas técnicas estudadas. O projeto é desenvolvido em 5 etapas: (1) Seleção e diagnóstico do sítio, (2) Análise de fatores condicionantes e RUSLE, (3) Proposta de soluções baseadas na natureza (NBS), (4) Plano de monitoramento, (5) Síntese e reflexão.
+
+Prazo de entrega: conforme cronograma definido em sala.
+
+============================================================
+SEÇÃO 1 — IDENTIFICAÇÃO DO GRUPO
+============================================================
+
+Título da seção: Identificação dos membros (até 3)
+Descrição da seção: Preencha os dados de todos os integrantes do grupo.
+
+----------
+
+Pergunta 1
+Tipo: Resposta curta (obrigatória)
+Título: Nome completo e matrícula — Membro 1
+Descrição: Formato: Nome Sobrenome — 00000000
+
+----------
+
+Pergunta 2
+Tipo: Resposta curta (obrigatória)
+Título: Nome completo e matrícula — Membro 2
+Descrição: Formato: Nome Sobrenome — 00000000. Se individual, escreva "N/A".
+
+----------
+
+Pergunta 3
+Tipo: Resposta curta (obrigatória)
+Título: Nome completo e matrícula — Membro 3
+Descrição: Formato: Nome Sobrenome — 00000000. Se dupla ou individual, escreva "N/A".
+
+============================================================
+SEÇÃO 2 — ETAPA 1: SELEÇÃO E DIAGNÓSTICO DO SÍTIO
+============================================================
+
+Título da seção: Escolha e caracterização da área degradada
+Descrição da seção: Selecione um sítio degradado (real ou simulado) e faça um diagnóstico técnico. O sítio pode ser: talude rodoviário, margem fluvial, encosta rural com ravinas, voçoroca, área de mineração abandonada ou qualquer outro cenário com processos erosivos ativos.
+
+Se preferir utilizar um cenário simulado, descreva-o com dados realistas (dimensões, declividade, tipo de solo, clima, uso do solo, cobertura vegetal, tipo de feição erosiva).
+
+----------
+
+Pergunta 4
+Tipo: Parágrafo (obrigatória)
+Título: Descreva o sítio selecionado: localização (município/estado), tipo de feição erosiva (laminar, sulcos, ravinas, voçorocas, erosão marginal), dimensões aproximadas, tipo de solo e uso do solo atual.
+Descrição: Mínimo 8 linhas. Se cenário real, cite a fonte dos dados (visita de campo, Google Earth, relatório técnico). Se simulado, justifique os valores adotados.
+
+----------
+
+Pergunta 5
+Tipo: Múltipla escolha (obrigatória)
+Título: Qual é a classificação da feição erosiva principal do seu sítio segundo o sistema EGC (Erosion and Gully Classification)?
+
+Opção A: Erosão laminar / em sulcos rasos (< 30 cm)
+Opção B: Ravina pequena (30 cm – 1,0 m de profundidade)
+Opção C: Ravina média a grande (1,0 – 3,0 m)
+Opção D: Voçoroca (> 3,0 m, com lençol freático exposto)
+Opção E: Erosão marginal fluvial (recuo de margem)
+
+----------
+
+Pergunta 6
+Tipo: Parágrafo (obrigatória)
+Título: Liste os fatores condicionantes da erosão no seu sítio, organizados em: (a) fatores naturais (solo, declividade, clima, geologia) e (b) fatores antrópicos (uso do solo, desmatamento, compactação, estradas).
+Descrição: Mínimo 5 linhas. Relacione cada fator com sua contribuição para o processo erosivo.
+
+============================================================
+SEÇÃO 3 — ETAPA 2: ANÁLISE QUANTITATIVA (RUSLE)
+============================================================
+
+Título da seção: Estimativa de perda de solo
+Descrição da seção: Aplique a Equação Universal de Perda de Solo Revisada (RUSLE) para estimar a perda de solo no cenário ATUAL e no cenário de PROJETO (após intervenção).
+
+RUSLE: A = R × K × LS × C × P
+
+Onde:
+• A = perda de solo (t/ha/ano)
+• R = erosividade da chuva (MJ·mm/ha·h·ano) — consulte mapa de R ou use valor regional
+• K = erodibilidade do solo (t·h/MJ·mm) — consulte tabela por tipo de solo
+• LS = fator topográfico (adimensional) — função de comprimento e declividade da encosta
+• C = fator de cobertura vegetal (adimensional) — varia de 1,0 (solo nu) a 0,001 (floresta densa)
+• P = fator de práticas conservacionistas (adimensional) — varia de 1,0 (sem prática) a 0,1
+
+Valores de referência (semiárido/Bahia):
+• R: 3.000–6.000 MJ·mm/ha·h·ano
+• K (Latossolo): 0,02–0,04; K (Argissolo): 0,03–0,05
+• LS: calcular ou estimar com tabela
+• C (solo nu): 1,0; C (pastagem degradada): 0,20; C (pastagem boa): 0,04; C (floresta): 0,001
+• P (sem prática): 1,0; P (cordões/terraceamento): 0,50; P (paliçadas + faixas vegetais): 0,30
+
+----------
+
+Pergunta 7
+Tipo: Parágrafo (obrigatória)
+Título: Estime os fatores R, K, LS, C e P para o cenário ATUAL do seu sítio (antes da intervenção). Justifique cada valor escolhido.
+Descrição: Use valores de referência da literatura ou tabelas fornecidas. Calcule A_atual = R × K × LS × C × P.
+
+----------
+
+Pergunta 8
+Tipo: Parágrafo (obrigatória)
+Título: Agora estime os fatores C e P para o cenário de PROJETO (após a implantação das técnicas de bioengenharia propostas na Etapa 3). Recalcule A_projeto.
+Descrição: Explique como cada técnica proposta altera C e/ou P. Calcule A_projeto e a REDUÇÃO PERCENTUAL: (A_atual − A_projeto) / A_atual × 100.
+
+----------
+
+Pergunta 9
+Tipo: Múltipla escolha (obrigatória)
+Título: A redução esperada na perda de solo (A_atual → A_projeto) com a implementação das técnicas de bioengenharia propostas é de aproximadamente:
+
+Opção A: < 30% — redução modesta
+Opção B: 30–50% — redução moderada
+Opção C: 50–70% — redução significativa
+Opção D: 70–90% — redução muito expressiva
+Opção E: > 90% — quase eliminação da perda de solo
+
+============================================================
+SEÇÃO 4 — ETAPA 3: PROPOSTA DE NBS (SOLUÇÕES BASEADAS NA NATUREZA)
+============================================================
+
+Título da seção: Projeto de intervenção com múltiplas técnicas
+Descrição da seção: Com base no diagnóstico (Etapa 1) e na análise quantitativa (Etapa 2), proponha um projeto de intervenção utilizando PELO MENOS 3 técnicas de bioengenharia estudadas ao longo do semestre. Justifique cada escolha.
+
+Técnicas disponíveis (não-exaustivo):
+• Revegetação direta (semeadura, plantio de mudas)
+• Hidrossemeadura (com ou sem Bio-SAP)
+• Biomantas / biotêxteis
+• Paliçadas de bambu ou madeira
+• Feixes vivos / fascinas
+• Cordões vegetativos
+• Gabiões vivos
+• Enrocamento vegetado
+• Canaletas verdes (vegetated swales)
+• Barraginhas
+• Terraços
+• Geotêxteis (como filtro ou separador)
+
+----------
+
+Pergunta 10
+Tipo: Parágrafo (obrigatória)
+Título: Descreva as técnicas de bioengenharia selecionadas (mínimo 3), justificando tecnicamente a escolha de CADA uma em função das condições do sítio. Para cada técnica, especifique: (a) onde será aplicada no sítio, (b) por que é adequada, (c) materiais necessários.
+Descrição: Mínimo 15 linhas. Use o que aprendeu nas Aulas 01–17.
+
+----------
+
+Pergunta 11
+Tipo: Parágrafo (obrigatória)
+Título: Elabore um CROQUI DESCRITIVO (em texto) da disposição espacial das técnicas no sítio. Descreva, de cima para baixo (ou de montante a jusante), onde cada intervenção será posicionada e como elas se integram.
+Descrição: Exemplo: "Na crista do talude: vala de ancoragem + biomanta Tipo 3. No terço médio: hidrossemeadura com braquiária+estilosantes. Na base: gabião vivo de 3 camadas com gliricídia. No canal a jusante: canaleta verde trapezoidal."
+
+----------
+
+Pergunta 12
+Tipo: Parágrafo (obrigatória)
+Título: Para UMA das técnicas selecionadas, apresente o DIMENSIONAMENTO simplificado com cálculos. Por exemplo: dimensionamento de paliçadas (H, E, n), cálculo de Manning para canaleta, volume de barraginhas, taxa de sementes para hidrossemeadura, ou verificação de gabião.
+Descrição: Mostre equações, valores utilizados e resultado final. Mínimo 8 linhas.
+
+============================================================
+SEÇÃO 5 — ETAPA 4: PLANO DE MONITORAMENTO
+============================================================
+
+Título da seção: Monitoramento e indicadores de sucesso
+Descrição da seção: Todo projeto de bioengenharia requer monitoramento pós-implantação para avaliar o sucesso das intervenções e identificar necessidade de manutenção corretiva.
+
+----------
+
+Pergunta 13
+Tipo: Parágrafo (obrigatória)
+Título: Proponha um plano de monitoramento para o seu projeto, incluindo: (a) indicadores de sucesso (o que medir?), (b) frequência de monitoramento, (c) métodos/instrumentos de medição, (d) critérios de intervenção corretiva.
+Descrição: Mínimo 8 linhas. Exemplos de indicadores: cobertura vegetal (%), taxa de erosão (mm/ano), integridade das estruturas, profundidade de raízes, sobrevivência de mudas.
+
+----------
+
+Pergunta 14
+Tipo: Múltipla escolha (obrigatória)
+Título: Qual indicador é o MAIS importante para avaliar o sucesso global de um projeto de bioengenharia de solos no curto prazo (0–2 anos)?
+
+Opção A: Lucro financeiro do projeto
+Opção B: Percentual de cobertura vegetal estabelecida (%)
+Opção C: Número de espécies animais observadas na área
+Opção D: pH do solo
+Opção E: Temperatura do ar
+
+============================================================
+SEÇÃO 6 — ETAPA 5: SÍNTESE E REFLEXÃO
+============================================================
+
+Título da seção: Integração dos conhecimentos do semestre
+Descrição da seção: (vazio)
+
+----------
+
+Pergunta 15
+Tipo: Parágrafo (obrigatória)
+Título: Em um texto de síntese (mínimo 10 linhas), reflita sobre como as diferentes técnicas de bioengenharia estudadas ao longo do semestre se complementam para resolver problemas complexos de erosão e degradação. Use o seu projeto como exemplo concreto.
+Descrição: Aborde: sequenciamento temporal (curto, médio e longo prazo), integração espacial (crista, meia-encosta, base), e a importância da vegetação como componente central.
+
+----------
+
+Pergunta 16
+Tipo: Parágrafo (obrigatória)
+Título: Quais foram as maiores dificuldades encontradas pelo grupo na elaboração deste projeto? O que vocês fariam diferente se tivessem mais tempo/recursos?
+Descrição: Mínimo 5 linhas. Seja honesto(a) — não há resposta certa.
+
+----------
+
+Pergunta 17
+Tipo: Escala linear (obrigatória)
+Título: De 1 a 5, como você avalia a CONTRIBUIÇÃO de cada membro do grupo para este projeto? (Considere participação, pesquisa, redação e cálculos)
+Escala: 1 = Muito desigual → 5 = Totalmente equilibrada
+
+----------
+
+Pergunta 18
+Tipo: Parágrafo (opcional)
+Título: Registre aqui comentários finais, sugestões para a disciplina ou qualquer observação adicional.
+Descrição: (vazio)
+
+============================================================
+CONFIGURAÇÕES SUGERIDAS PARA O GOOGLE FORMS
+============================================================
+
+- Coletar e-mails: Sim
+- Limitar a 1 resposta: Sim
+- Permitir edição após envio: Sim
+- Mostrar barra de progresso: Sim
+- Embaralhar ordem das perguntas: Não
+- Mensagem de confirmação:
+  "Projeto Integrador recebido com sucesso! Obrigado pelo
+   empenho ao longo do semestre. Os resultados serão discutidos
+   na apresentação final."
+
+============================================================
+GABARITO / RESPOSTAS ESPERADAS (USO DO DOCENTE)
+============================================================
+
+NOTA: Este é um projeto aberto — não há respostas únicas.
+O gabarito consiste em CRITÉRIOS DE AVALIAÇÃO (rubrica)
+para cada etapa, com exemplos do que se espera em respostas
+de alta qualidade.
+
+---------- RUBRICA GERAL ----------
+
+NÍVEL A (9,0–10,0): Resposta completa, tecnicamente precisa,
+com cálculos corretos, justificativas bem fundamentadas,
+múltiplas referências ao conteúdo do curso, e reflexão crítica.
+
+NÍVEL B (7,0–8,9): Resposta adequada com pequenas lacunas ou
+imprecisões, cálculos com erros menores, justificativas
+razoáveis, referências parciais ao conteúdo.
+
+NÍVEL C (5,0–6,9): Resposta incompleta ou superficial,
+cálculos ausentes ou com erros significativos, justificativas
+genéricas, referências mínimas ao conteúdo.
+
+NÍVEL D (< 5,0): Resposta muito incompleta, sem cálculos,
+sem justificativas técnicas, cópia de outros grupos ou
+desalinhamento com o tema.
+
+
+PERGUNTA 4 — Descrição do sítio (Etapa 1)
+-----------------------------------------
+Critérios de avaliação:
+• Localização geográfica definida (município, estado)?
+• Tipo de feição erosiva claramente identificado?
+• Dimensões quantificadas (comprimento, largura, profundidade,
+  área)?
+• Tipo de solo identificado (classificação SiBCS ou textura)?
+• Uso do solo e cobertura vegetal descritos?
+• Fonte dos dados citada (campo, satélite, literatura)?
+• Atingiu mínimo de 8 linhas?
+
+Exemplo de resposta de alta qualidade:
+"O sítio selecionado é um talude de corte rodoviário na BA-052,
+km 38, município de Feira de Santana–BA (12°15'S, 38°58'W). O
+talude foi exposto durante obras de alargamento em 2022 e
+apresenta erosão laminar intensa com formação de sulcos
+paralelos de 15–30 cm de profundidade. Dimensões: 200 m de
+extensão × 8 m de altura, declividade de ~40° (84%), área total
+exposta de ~1.600 m². O solo é um Latossolo Vermelho-Amarelo
+distrófico, textura argilosa, com baixo teor de matéria orgânica
+(< 1%). O clima é semiárido (BSh, Köppen), com precipitação de
+~550 mm/ano concentrada em nov-fev. Dados obtidos por visita de
+campo (março/2026) e imagens Google Earth Pro."
+
+
+PERGUNTA 5 — Classificação EGC
+-----------------------------------------
+★ Não há resposta única — depende do sítio selecionado.
+→ Verificar COERÊNCIA entre a feição descrita (Pergunta 4) e
+  a classificação selecionada. Exemplos de incoerência:
+  • Descreveu erosão laminar → marcou voçoroca (D)
+  • Descreveu margem fluvial → marcou sulcos rasos (A)
+
+
+PERGUNTA 6 — Fatores condicionantes
+-----------------------------------------
+Critérios de avaliação:
+• Separou fatores naturais de antrópicos?
+• Mencionou pelo menos 3 fatores naturais (solo, declividade,
+  clima/chuva, geologia, cobertura original)?
+• Mencionou pelo menos 2 fatores antrópicos (desmatamento,
+  compactação, cortes, estradas, uso agrícola)?
+• Relacionou CADA fator com o processo erosivo (explicou o
+  mecanismo, não apenas listou)?
+
+
+PERGUNTA 7 — RUSLE cenário atual
+-----------------------------------------
+Critérios de avaliação:
+• Todos os 5 fatores (R, K, LS, C, P) foram estimados com
+  valores numéricos?
+• Cada valor foi JUSTIFICADO (fonte, tabela, cálculo)?
+• O cálculo A = R × K × LS × C × P está correto?
+• O valor de A_atual é realista para o cenário descrito?
+  (Solo nu: A = 50–200 t/ha/ano; pastagem degradada: 10–50;
+  pastagem boa: 1–10; floresta: < 1)
+
+Exemplo para talude BA-052 (Pergunta 4):
+R = 4.500 MJ·mm/ha·h·ano (semiárido bahiano)
+K = 0,030 t·h/MJ·mm (Latossolo argiloso)
+LS = 8,0 (talude 40°, 8 m altura — tabela de LS para encostas
+  curtas e íngremes)
+C = 1,0 (solo totalmente exposto)
+P = 1,0 (sem práticas conservacionistas)
+
+A_atual = 4.500 × 0,030 × 8,0 × 1,0 × 1,0 = 1.080 t/ha/ano
+
+→ Valor MUITO ALTO, indicando erosão severa — condizente com
+  talude de corte exposto.
+
+
+PERGUNTA 8 — RUSLE cenário projeto
+-----------------------------------------
+Critérios de avaliação:
+• C e P foram reavaliados considerando as técnicas propostas?
+• A justificativa técnica é coerente? (ex: hidrossemeadura +
+  biomanta → C passa de 1,0 para 0,04–0,10 após
+  estabelecimento; paliçadas → P de 1,0 para 0,30)
+• A_projeto foi calculado corretamente?
+• A redução percentual foi calculada?
+• A redução é realista para as técnicas propostas?
+
+Continuação do exemplo:
+C_projeto = 0,05 (hidrossemeadura + biomanta → cobertura > 80%
+  após 6 meses)
+P_projeto = 0,40 (cordões vegetativos + canaleta de base)
+
+A_projeto = 4.500 × 0,030 × 8,0 × 0,05 × 0,40 = 21,6 t/ha/ano
+
+Redução = (1.080 − 21,6) / 1.080 × 100 = 98,0%
+
+→ Redução de ~98% — marcaria opção E (> 90%) na Pergunta 9.
+
+
+PERGUNTA 9 — Faixa de redução
+-----------------------------------------
+★ Não há resposta única — depende das técnicas propostas.
+→ Verificar COERÊNCIA com os cálculos da Pergunta 8.
+  Espera-se que projetos bem elaborados atinjam redução de
+  70–95% (opções D ou E).
+  Reduções < 50% (opções A ou B) sugerem técnicas insuficientes
+  ou mal dimensionadas.
+
+
+PERGUNTA 10 — Técnicas selecionadas (Etapa 3)
+-----------------------------------------
+Critérios de avaliação:
+• Pelo menos 3 técnicas foram propostas?
+• CADA técnica tem: (a) local de aplicação, (b) justificativa
+  técnica, (c) materiais necessários?
+• As técnicas são COERENTES com o diagnóstico (Etapa 1)?
+  Exemplos de coerência:
+  – Ravinas → paliçadas (Aula 10)
+  – Talude > 30° → biomanta Tipo 3 + hidrossemeadura (Aulas 10–11)
+  – Margem fluvial → gabião vivo + enrocamento vegetado (Aulas 12–13)
+  – Escoamento superficial → canaleta verde (Aula 14)
+  – Encosta com sulcos → feixes vivos + cordões vegetativos
+    (Aulas 12, 14)
+• As técnicas se COMPLEMENTAM espacialmente (crista, meia-
+  encosta, base)?
+• Atingiu mínimo de 15 linhas?
+
+Exemplo de combinação de alta qualidade (talude BA-052):
+"(1) HIDROSSEMEADURA com Bio-SAP na face do talude (1.600 m²):
+  braquiária + estilosantes, taxa 18 kg/ha (F_declividade = 1,2),
+  Bio-SAP 100 g/m², mulch de celulose 3.000 kg/ha, fixador
+  polimérico. Justificativa: cobertura rápida (30–60 dias), Bio-SAP
+  compensa a seca entre chuvas.
+(2) BIOMANTA Tipo 3 (NBR 16308) sobre toda a face do talude:
+  fibra de coco com malha dupla, instalada de cima para baixo,
+  sobreposição 15 cm, grampos a cada 0,5 m. Justificativa:
+  declividade 40° > 25° (exige Tipo 3), proteção imediata enquanto
+  a hidrossemeadura germina.
+(3) CANALETA VERDE na base do talude: seção trapezoidal b=1,0 m,
+  z=2, grama Bermuda, S₀=0,02. Justificativa: interceptar o
+  escoamento da face do talude, promover infiltração e conduzir
+  excedente ao bueiro existente."
+
+
+PERGUNTA 11 — Croqui descritivo
+-----------------------------------------
+Critérios de avaliação:
+• Disposição espacial clara (de montante a jusante ou crista
+  a base)?
+• Cada técnica posicionada com lógica (ex: biomanta na face,
+  paliçadas na ravina, canaleta na base)?
+• Integração entre técnicas mencionada (ex: "a canaleta recebe
+  a água que passa pela biomanta")?
+
+→ Nota: Aceitar croquis em texto. Se o grupo quiser anexar
+  imagem (sketch), orientar para upload separado.
+
+
+PERGUNTA 12 — Dimensionamento de uma técnica
+-----------------------------------------
+Critérios de avaliação:
+• Equação(ões) explicitada(s)?
+• Valores de entrada definidos e justificados?
+• Cálculos corretos (aceitar erros de arredondamento)?
+• Resultado final interpretado ("a canaleta suporta Q_projeto",
+  "são necessárias 5 paliçadas", etc.)?
+• Atingiu mínimo de 8 linhas?
+
+→ Nota: Qualquer técnica do semestre é válida. As mais comuns
+  serão: Manning (canaleta), SCS-CN (barraginha), H/E/n
+  (paliçadas), taxa de sementes (hidrossemeadura).
+
+
+PERGUNTA 13 — Plano de monitoramento (Etapa 4)
+-----------------------------------------
+Critérios de avaliação:
+• Indicadores de sucesso definidos (≥ 3)?
+  Exemplos: cobertura vegetal (%), taxa de erosão, integridade
+  das estruturas, profundidade de raízes, sobrevivência de mudas,
+  profundidade de assoreamento em paliçadas.
+• Frequência de monitoramento realista? (ex: mensalmente nos
+  primeiros 6 meses, trimestralmente após)
+• Métodos de medição especificados? (ex: quadrante de 1m² para
+  cobertura vegetal, estacas de erosão, inspeção visual, drone)
+• Critérios de intervenção corretiva definidos? (ex: "se
+  cobertura < 60% após 90 dias, reaplicar hidrossemeadura")
+• Atingiu mínimo de 8 linhas?
+
+
+PERGUNTA 14 — Indicador mais importante (curto prazo)
+-----------------------------------------
+★ Resposta correta: Opção B (cobertura vegetal %)
+→ Justificativa: O percentual de cobertura vegetal é o indicador
+  mais direto e integrativo do sucesso de um projeto de
+  bioengenharia no curto prazo porque:
+  (1) É fácil de medir (estimativa visual, fotografia, drone);
+  (2) Integra múltiplos processos (germinação, sobrevivência,
+      crescimento, interação solo-planta);
+  (3) Correlaciona-se diretamente com a redução de erosão
+      (fator C da RUSLE: C = f(cobertura));
+  (4) É o "termômetro" do projeto: cobertura alta → sucesso;
+      cobertura baixa → falha.
+  As demais opções são secundárias (C, D, E) ou não são
+  indicadores de bioengenharia (A — lucro é critério econômico,
+  não técnico).
+
+
+PERGUNTA 15 — Síntese e reflexão (Etapa 5)
+-----------------------------------------
+Critérios de avaliação:
+• Texto articulado e coerente (não apenas lista de tópicos)?
+• Abordou sequenciamento temporal (quais técnicas atuam no
+  curto, médio e longo prazo)?
+  – Curto prazo: biomanta, hidrossemeadura, Bio-SAP
+  – Médio prazo: paliçadas, feixes vivos, barraginhas
+  – Longo prazo: coesão radicular, revegetação plena, gabião
+    vivo integrado
+• Abordou integração espacial (crista, meia-encosta, base)?
+• Reconheceu a vegetação como componente CENTRAL?
+• Usou o próprio projeto como exemplo concreto?
+• Atingiu mínimo de 10 linhas?
+
+Exemplo de síntese de alta qualidade:
+"Ao longo do semestre, ficou claro que nenhuma técnica isolada
+de bioengenharia é suficiente para resolver problemas complexos
+de erosão. O projeto integrador para o talude da BA-052
+demonstra essa complementaridade: a biomanta Tipo 3 fornece
+proteção imediata no dia zero, enquanto a hidrossemeadura com
+Bio-SAP garante germinação mesmo no semiárido; após 60 dias,
+a braquiária cobre > 60% da superfície e a biomanta começa a
+degradar, cedendo espaço às raízes. Na base, a canaleta verde
+intercepta o escoamento residual, promovendo infiltração e
+evitando que a água acumule na base do talude (o que causaria
+erosão localizada e instabilidade). Essa integração espacial
+— crista (vala de ancoragem), face (biomanta + hidrossemeadura),
+base (canaleta) — garante que cada ponto do talude tenha proteção
+específica. A vegetação é o fio condutor de tudo: inicialmente
+complementada por estruturas inertes (biomanta, grampos), ela
+gradualmente assume o protagonismo, fornecendo coesão radicular,
+interceptação da chuva, infiltração pelas raízes e matéria
+orgânica – transformando o talude árido e instável em um
+ecossistema funcional e autossustentável."
+
+
+PERGUNTA 16 — Dificuldades e autocrítica
+-----------------------------------------
+★ Não há resposta certa — avaliação qualitativa.
+→ Verificar: honestidade, profundidade da reflexão, identificação
+  de limitações reais (falta de dados, dificuldade com cálculos,
+  tempo insuficiente, etc.).
+→ Valorizar: propostas de melhoria ("com mais tempo, faríamos
+  um levantamento topográfico real", "com recursos, testaríamos
+  o Bio-SAP em campo").
+
+
+PERGUNTA 17 — Autoavaliação de contribuição
+---------------------------------------------
+Não há resposta certa. Se nota < 3, o docente pode investigar
+se houve desbalanceamento na divisão de tarefas.
+
+
+PERGUNTA 18 — Espaço livre
+---------------------------------------
+Respostas possíveis comuns:
+• Sugestões sobre visitas técnicas, atividades de campo
+• Pedidos para incluir tópicos como bioengenharia fluvial,
+  riprap, parede Krainer
+• Dificuldades com cálculos ou ferramentas
+• Elogios ou críticas construtivas sobre a disciplina
+
+============================================================
+NOTAS PARA O DOCENTE
+============================================================
+
+OBJETIVO PEDAGÓGICO:
+O Projeto Integrador é a avaliação mais completa da disciplina,
+exigindo que os estudantes mobilizem conhecimentos de TODAS as
+aulas (pedologia, erosão, RUSLE, paliçadas, barraginhas, SCS-CN,
+feixes vivos, hidrossemeadura, biomantas, gabiões, canaletas,
+geotêxteis, biotêxteis) em um projeto coeso. A avaliação é
+por RUBRICA (não há gabarito fixo), priorizando coerência
+interna, fundamentação técnica e capacidade de integração.
+
+PESO NA NOTA:
+Conforme plano de disciplina, o Projeto Integrador corresponde
+à 4ª Avaliação (em grupo), com valor máximo de 10,0 pontos.
+
+DISTRIBUIÇÃO SUGERIDA DE PONTOS:
+• Etapa 1 (Seleção e diagnóstico): 2,0 pontos
+  – Perguntas 4–6: descrição, classificação, fatores
+• Etapa 2 (RUSLE): 2,0 pontos
+  – Perguntas 7–9: fatores, cálculo, redução
+• Etapa 3 (Proposta NBS): 3,0 pontos
+  – Perguntas 10–12: técnicas, croqui, dimensionamento
+• Etapa 4 (Monitoramento): 1,5 pontos
+  – Perguntas 13–14: plano, indicador
+• Etapa 5 (Síntese): 1,5 pontos
+  – Perguntas 15–16: reflexão, dificuldades
+
+TEMPO ESTIMADO DE ELABORAÇÃO: 3–5 horas (trabalho em grupo)
+
+APRESENTAÇÃO ORAL:
+Recomenda-se que o Projeto Integrador seja complementado por
+uma apresentação oral de 10–15 minutos por grupo na aula 21,
+com perguntas da turma e do docente. A apresentação pode valer
+pontuação adicional ou complementar a nota do formulário.
+
+ALINHAMENTO COM O PLANO:
+- Aula 21: Projeto Integrador — desenvolvimento, apresentação
+  e avaliação.
+- Abrange TODOS os conteúdos do semestre (Aulas 01–17 +
+  conceitos transversais).
+============================================================

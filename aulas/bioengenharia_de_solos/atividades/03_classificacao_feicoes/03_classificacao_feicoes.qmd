@@ -1,0 +1,209 @@
+---
+title: "Bioengenharia de Solos"
+subtitle: "Atividade 03  —  Classificação de Feições Erosivas (EGC)<br>Curso de Engenharia Agronômica"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026-04-17"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Bioengenharia de Solos | Atividade 03"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Atividade {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Estrutura
+
+- [1]{.circle} Revisão do sistema EGC
+- [2]{.circle} Cenário: 6 feições erosivas para classificar
+- [3]{.circle} Parte A — Medição e classificação geométrica
+- [4]{.circle} Parte B — Seleção de espécies para revegetação
+- [5]{.circle} Parte C — Árvore de decisão: técnica por feição
+- [6]{.circle} Critérios de avaliação
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo**
+
+Aplicar o sistema **Elementary Gully Classification (EGC)** para classificar feições erosivas a partir de **parâmetros geométricos**, selecionar **espécies vegetais** adequadas e indicar **técnicas de bioengenharia** para cada classe de feição.
+:::
+:::
+:::
+
+---
+
+# [1  —  REVISÃO DO SISTEMA EGC]{.section-header}
+
+## Parâmetros geométricos {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Variáveis de classificação
+
+| Parâmetro | Símbolo | Descrição |
+|-----------|---------|-----------|
+| Largura | **W** | Largura no topo (m) |
+| Profundidade | **D** | Profundidade máxima (m) |
+| Comprimento | **L** | Comprimento da feição (m) |
+| Área da seção | **As** | Área da seção transversal (m²) |
+| Razão W/D | **W/D** | Forma da seção |
+| Fator de forma | **Sf** | Declividade do fundo (m/m) |
+:::
+
+::: {.column width="50%"}
+### Classificação por dimensões
+
+| Classe | W (m) | D (m) |
+|--------|-------|-------|
+| **Sulco** | < 0,3 | < 0,3 |
+| **Sulco profundo** | 0,3–1,0 | 0,3–0,5 |
+| **Ravina pequena** | 1,0–3,0 | 0,5–1,5 |
+| **Ravina média** | 3,0–6,0 | 1,5–3,0 |
+| **Ravina grande** | 6,0–15,0 | 3,0–5,0 |
+| **Voçoroca** | > 15 | > 5 |
+:::
+:::
+
+::: {.callout-important}
+### Capítulos de referência
+- **Cap. 5** — Classificação de Feições Erosivas
+- **Cap. 6** — Revegetação e Espécies para Bioengenharia
+:::
+
+---
+
+# [2  —  CENÁRIO: FEIÇÕES EROSIVAS]{.section-header}
+
+## Dados das 6 feições levantadas em campo {.smaller-text}
+
+Um levantamento realizado em uma propriedade rural no município de **São Gonçalo dos Campos – BA** identificou 6 feições erosivas. Os dados de campo estão na tabela:
+
+| Feição | W (m) | D (m) | L (m) | Sf (m/m) | Forma da seção | Solo exposto na cabeceira | Presença de água |
+|--------|-------|-------|-------|----------|----------------|--------------------------|-----------------|
+| **F1** | 0,25 | 0,20 | 8,0 | 0,08 | V | Não | Não |
+| **F2** | 1,50 | 0,80 | 22,0 | 0,12 | V | Sim | Não |
+| **F3** | 4,20 | 2,10 | 45,0 | 0,06 | U | Sim | Intermitente |
+| **F4** | 8,50 | 4,00 | 120,0 | 0,04 | Trapezoidal | Sim | Permanente |
+| **F5** | 0,70 | 0,40 | 15,0 | 0,15 | V | Não | Não |
+| **F6** | 18,00 | 6,50 | 280,0 | 0,03 | Irregular | Sim | Permanente |
+
+---
+
+# [3  —  PARTE A: CLASSIFICAÇÃO]{.section-header}
+
+## Questões — Medição e classificação geométrica {.smaller-text}
+
+**A1.** Para cada feição (F1 a F6), calcule:
+
+- Razão **W/D**
+- Área da seção transversal estimada **As** (considere: V → $As = W \times D / 2$; U → $As = \pi \times W \times D / 8$; trapezoidal → $As = (W + W/2) \times D / 2$; irregular → $As \approx 0{,}7 \times W \times D$)
+
+Preencha a tabela:
+
+| Feição | W (m) | D (m) | W/D | As (m²) | Classe EGC |
+|--------|-------|-------|-----|---------|-----------|
+| F1 | | | | | |
+| F2 | | | | | |
+| F3 | | | | | |
+| F4 | | | | | |
+| F5 | | | | | |
+| F6 | | | | | |
+
+**A2.** Qual é o **volume total de material erodido** considerando todas as 6 feições? Use $V = As \times L$ para cada uma.
+
+**A3.** A razão **W/D** indica a forma predominante da seção. Feições com W/D > 3 tendem a sofrer mais **alargamento lateral**; com W/D < 2, mais **aprofundamento**. Classifique cada feição quanto à tendência evolutiva.
+
+---
+
+# [4  —  PARTE B: SELEÇÃO DE ESPÉCIES]{.section-header}
+
+## Questões — Revegetação por classe de feição {.smaller-text}
+
+**B1.** Para cada classe de feição identificada, selecione **pelo menos 2 espécies** adequadas, justificando com critérios técnicos. Use as categorias do Cap. 6:
+
+| Categoria | Espécies indicadas | Características |
+|-----------|-------------------|----------------|
+| **Gramíneas** | Vetiver, Braquiária, Capim-elefante | Raízes fasciculadas, cobertura rápida |
+| **Leguminosas** | Guandu, Estilosantes, Crotalária | Fixação de N, raízes profundas |
+| **Arbóreas** | Sabiá, Gliricídia, Ingá | Estacas vivas, coesão radicular profunda |
+| **Fibras** | Sisal, Coco, Taboa | Material para biotêxteis e biomantas |
+
+Preencha:
+
+| Feição | Classe | Espécie 1 | Espécie 2 | Justificativa |
+|--------|--------|-----------|-----------|---------------|
+| F1 | | | | |
+| F2 | | | | |
+| F3 | | | | |
+| F4 | | | | |
+| F5 | | | | |
+| F6 | | | | |
+
+**B2.** Para a feição **F6** (voçoroca), explique por que a revegetação **sozinha** é insuficiente e quais técnicas construtivas devem ser combinadas.
+
+---
+
+# [5  —  PARTE C: ÁRVORE DE DECISÃO]{.section-header}
+
+## Questões — Seleção de técnicas por feição {.smaller-text}
+
+**C1.** Construa uma **árvore de decisão** (fluxograma) para seleção de técnicas de bioengenharia com base nos critérios:
+
+1. Profundidade (D): rasa (< 0,5 m) / média (0,5–3 m) / profunda (> 3 m)
+2. Presença de água: sim / não
+3. Declividade do fundo (Sf): alta (> 0,10) / moderada (0,05–0,10) / baixa (< 0,05)
+
+**C2.** Aplique a árvore de decisão e indique a **técnica principal** para cada feição:
+
+| Feição | Classe | D | Água | Sf | Técnica principal recomendada |
+|--------|--------|---|------|----|-----------------------------|
+| F1 | | | | | |
+| F2 | | | | | |
+| F3 | | | | | |
+| F4 | | | | | |
+| F5 | | | | | |
+| F6 | | | | | |
+
+**C3.** Para a feição **F4** (ravina grande com água permanente), elabore uma **proposta de intervenção combinada** que inclua: (a) estabilização estrutural imediata, (b) revegetação, e (c) monitoramento. Máximo 250 palavras.
+
+---
+
+## Critérios de avaliação {.smaller-text}
+
+| Critério | Peso | Descrição |
+|----------|------|-----------|
+| **Parte A** — Classificação | 35% | Cálculos corretos (W/D, As, Volume), classificação EGC adequada |
+| **Parte B** — Espécies | 30% | Seleção justificada, adequação espécie–feição |
+| **Parte C** — Árvore de decisão | 35% | Lógica do fluxograma, coerência das recomendações, proposta para F4 |
+
+::: {.callout-important}
+### {{< fa arrow-up-right-from-square >}} Envio via Google Forms
+Esta atividade deve ser respondida diretamente no **Google Forms** da disciplina.
+
+[Abrir Formulário — Atividade 03](../../teaching/bioengenharia-de-solos/index.qmd){.btn .btn-primary target="_blank"}
+
+- **Prazo:** até o início da próxima aula
+- As respostas são salvas automaticamente
+:::
+
+---
+
+## Referências {.smaller-text}
+
+- SANTOS, L. D. V. **Bioengenharia de Solos** — Cap. 5 e 6. UEFS, 2026.
+- CASTILLO, C.; GÓMEZ, J. A. A century of gully erosion research. *Earth-Science Reviews*, v. 167, p. 12–25, 2016.
+- POESEN, J. et al. Gully erosion and environmental change. *Geomorphology*, v. 79, p. 1–31, 2003.

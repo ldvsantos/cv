@@ -1,0 +1,154 @@
+{
+  "title": "[BS 2026.1] Atividade 06 — Hidrossemeadura e Biomantas",
+  "description": "Esta atividade abrange o conteúdo das Aulas 10 e 11 da disciplina Bioengenharia de Solos (UEFS 2026.1):\n• Cap. 9 — Hidrossemeadura\n• Cap. 10 — Biomantas e Geomantas\n\nO objetivo é formular pastas de hidrossemeadura, selecionar biomantas segundo a NBR 16308, e comparar cenários de proteção em taludes rodoviários e áreas degradadas.\n\nPrazo de entrega: até o início da próxima aula.",
+  "sections": [
+    {
+      "title": "IDENTIFICAÇÃO",
+      "description": "",
+      "questions": [
+        {
+          "title": "Nome completo",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": true
+        },
+        {
+          "title": "Matrícula",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Hidrossemeadura — Formulação",
+      "description": "Cenário: Talude rodoviário da BR-116 (trecho Feira de Santana – Milagres), 1.200 m² de solo exposto, declividade 1V:1,5H (~34°), solo Latossolo Vermelho-Amarelo compactado.\n\nComponentes típicos da pasta de hidrossemeadura (por 1.000 m²):\n• Sementes (gramíneas + leguminosas): 40–60 kg\n• Mulch (fibra de celulose ou madeira): 150–300 kg\n• Fertilizante (NPK 10-10-10): 50–80 kg\n• Adesivo (tackifier): 10–15 kg\n• Condicionador de solo: 20–30 kg\n• Água: 4.000–8.000 L",
+      "questions": [
+        {
+          "title": "Qual é a função principal do mulch (fibra de celulose) na pasta de hidrossemeadura?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Nutrir as sementes como fertilizante orgânico.",
+            "Reter umidade, proteger sementes contra impacto de gotas de chuva e sol direto, e criar microambiente favorável à germinação.",
+            "Fixar a pasta no solo devido à aderência natural da celulose.",
+            "Deixar a superfície com cor verde artificial enquanto a vegetação não cresce."
+          ]
+        },
+        {
+          "title": "Para o talude de 34° em solo compactado no semiárido, qual combinação de sementes é MAIS adequada?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Braquiária decumbens (80%) + estilosantes (20%) — braquiária tolera solo ácido e estilosantes fixa N.",
+            "Grama-esmeralda (100%) — alto valor paisagístico.",
+            "Capim-elefante (100%) — alto volume de biomassa.",
+            "Aveia-preta (50%) + azevém (50%) — espécies de clima temperado."
+          ]
+        },
+        {
+          "title": "Para a área de 1.200 m² (1,2 × os valores de referência para 1.000 m²), calcule a quantidade necessária de cada componente:",
+          "description": "Use os valores médios: sementes 50 kg, mulch 225 kg, fertilizante 65 kg, tackifier 12,5 kg, condicionador 25 kg, água 6.000 L. Multiplique por 1,2.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Biomantas — Seleção NBR 16308",
+      "description": "Tipos de biomanta (simplificados):\n• Tipo 1 — Fibra de coco, vida útil 12–24 meses, declividade até 1V:2H\n• Tipo 2 — Palha/fibra vegetal, vida útil 6–12 meses, declividade até 1V:3H\n• Tipo 3 — Fibra de coco + malha sintética, vida útil 24–48 meses, declividade até 1V:1H\n• Tipo 4 — Geomanta sintética (TRM), vida útil permanente, declividade até 1V:0,5H",
+      "questions": [
+        {
+          "title": "Para o talude da BR-116 (34° ≈ 1V:1,5H), qual tipo de biomanta é o mais adequado?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Tipo 1 — Fibra de coco (até 1V:2H)",
+            "Tipo 2 — Palha/fibra vegetal (até 1V:3H)",
+            "Tipo 3 — Fibra de coco + malha sintética (até 1V:1H) — suporta a declividade e tem vida útil adequada",
+            "Tipo 4 — TRM permanente (até 1V:0,5H) — superdimensionado para esse caso"
+          ]
+        },
+        {
+          "title": "A biomanta deve ser instalada de CIMA PARA BAIXO ou de BAIXO PARA CIMA no talude? Justifique.",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "De CIMA para BAIXO — o rolo é desenrolado a partir da crista do talude, com ancoragem em vala no topo, e as sobreposições ficam a favor do fluxo (escama para baixo).",
+            "De BAIXO para CIMA — para que o peso do rolo ajude a compactar contra o solo.",
+            "Tanto faz — a direção não afeta o desempenho.",
+            "Em diagonal — para seguir o ângulo do talude."
+          ]
+        },
+        {
+          "title": "Qual é a sobreposição mínima recomendada entre faixas adjacentes de biomanta?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "5 cm",
+            "10–15 cm (longitudinal) e 15–20 cm (transversal/emendas no sentido do fluxo)",
+            "50 cm",
+            "Sem necessidade de sobreposição se grampeada"
+          ]
+        },
+        {
+          "title": "Compare hidrossemeadura SEM biomanta vs hidrossemeadura COM biomanta tipo 3 para o talude de 34° no semiárido. Compare custo, eficiência, tempo de estabelecimento e risco de falha.",
+          "description": "Mínimo 6 linhas.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Cenários comparativos",
+      "description": "Três cenários para proteção do talude:\n• Cenário A: Hidrossemeadura apenas (custo ~R$ 8/m²)\n• Cenário B: Hidrossemeadura + biomanta tipo 1 (custo ~R$ 18/m²)\n• Cenário C: Hidrossemeadura + biomanta tipo 3 (custo ~R$ 32/m²)",
+      "questions": [
+        {
+          "title": "Calcule o custo total de cada cenário para 1.200 m² e classifique o custo-benefício considerando a declividade (34°) e o regime de chuvas concentradas.",
+          "description": "Indique qual cenário recomenda e por quê. Considere: risco de retrabalho, taxa de sucesso, garantia.\nMínimo 5 linhas.",
+          "type": "PARAGRAPH",
+          "required": true
+        },
+        {
+          "title": "Se o cenário A falhar (50% de probabilidade em 34° sem biomanta) e precisar ser refeito, o custo total passa a ser:",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "R$ 8 × 1.200 × 2 = R$ 19.200 — mais caro que o cenário C original (R$ 38.400).",
+            "R$ 8 × 1.200 × 2 = R$ 19.200 — ainda mais barato que o cenário C (R$ 38.400).",
+            "Não é possível refazer hidrossemeadura na mesma área.",
+            "O cenário A nunca falha em declividades moderadas."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Autoavaliação",
+      "description": "",
+      "questions": [
+        {
+          "title": "De 1 a 5, o quanto você se sente confiante para formular hidrossemeadura e selecionar biomantas?",
+          "description": "",
+          "type": "SCALE",
+          "required": true,
+          "scale_low": 1,
+          "scale_high": 5,
+          "scale_low_label": "Nada confiante",
+          "scale_high_label": "Muito confiante"
+        },
+        {
+          "title": "Espaço livre — registre qualquer dúvida ou comentário.",
+          "description": "",
+          "type": "PARAGRAPH",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

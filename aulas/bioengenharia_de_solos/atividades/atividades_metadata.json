@@ -1,0 +1,147 @@
+{
+  "disciplina": "Bioengenharia de Solos",
+  "curso": "Engenharia Agronômica",
+  "instituicao": "Universidade Estadual de Feira de Santana (UEFS)",
+  "docente": "Luiz Diego Vidal Santos",
+  "semestre": "2026.1",
+  "total_atividades": 10,
+  "modulos": [
+    {
+      "id": "modulo_1",
+      "titulo": "Parte I — Fundamentos",
+      "capitulos_referencia": ["01-introducao", "02-solos-tropicais", "03-intemperismo", "04-erosao", "05-classificacao-feicoes", "06-revegetacao"],
+      "atividades": [
+        {
+          "id": "ativ_01",
+          "pasta": "01_analise_solo_fatores",
+          "titulo": "Análise de Solo Tropical e Fatores de Formação",
+          "tipo": "exercicio_pratico",
+          "capitulos": [1, 2, 3],
+          "peso_nota": 5,
+          "formato_entrega": "relatório PDF",
+          "duracao_estimada": "2 aulas (100 min)"
+        },
+        {
+          "id": "ativ_02",
+          "pasta": "02_calculo_rusle",
+          "titulo": "Cálculo da RUSLE — Estimativa de Perda de Solo",
+          "tipo": "exercicio_calculo",
+          "capitulos": [4],
+          "peso_nota": 10,
+          "formato_entrega": "planilha + memorial de cálculo PDF",
+          "duracao_estimada": "2 aulas (100 min)"
+        },
+        {
+          "id": "ativ_03",
+          "pasta": "03_classificacao_feicoes",
+          "titulo": "Classificação de Feições Erosivas (EGC)",
+          "tipo": "exercicio_pratico",
+          "capitulos": [5, 6],
+          "peso_nota": 10,
+          "formato_entrega": "ficha classificatória + mapa",
+          "duracao_estimada": "2 aulas (100 min)"
+        }
+      ]
+    },
+    {
+      "id": "modulo_2",
+      "titulo": "Parte II — Técnicas de Bioengenharia",
+      "capitulos_referencia": ["07-palicadas", "08-bacias-captacao", "09-feixes-drenos", "10-hidrossemeadura", "11-biomantas", "12-enrocamento", "13-cordoes-fascinas", "14-gabiao-vivo", "15-parede-krainer", "16-canaleta-verde"],
+      "atividades": [
+        {
+          "id": "ativ_04",
+          "pasta": "04_dimensionamento_palicadas",
+          "titulo": "Dimensionamento de Paliçadas para Controle de Ravinas",
+          "tipo": "exercicio_calculo",
+          "capitulos": [7],
+          "peso_nota": 10,
+          "formato_entrega": "memorial de cálculo + croqui",
+          "duracao_estimada": "2 aulas (100 min)"
+        },
+        {
+          "id": "ativ_05",
+          "pasta": "05_bacias_captacao",
+          "titulo": "Dimensionamento de Bacias de Captação (Barraginhas)",
+          "tipo": "exercicio_calculo",
+          "capitulos": [8],
+          "peso_nota": 10,
+          "formato_entrega": "memorial de cálculo + planta baixa",
+          "duracao_estimada": "2 aulas (100 min)"
+        },
+        {
+          "id": "ativ_06",
+          "pasta": "06_hidrossemeadura_biomantas",
+          "titulo": "Formulação de Hidrossemeadura e Seleção de Biomantas",
+          "tipo": "exercicio_pratico",
+          "capitulos": [10, 11],
+          "peso_nota": 10,
+          "formato_entrega": "ficha técnica + justificativa",
+          "duracao_estimada": "2 aulas (100 min)"
+        },
+        {
+          "id": "ativ_07",
+          "pasta": "07_dimensionamento_gabiao_vivo",
+          "titulo": "Dimensionamento Estrutural de Gabião Vivo",
+          "tipo": "exercicio_calculo",
+          "capitulos": [14],
+          "peso_nota": 10,
+          "formato_entrega": "memorial de cálculo + corte esquemático",
+          "duracao_estimada": "2 aulas (100 min)"
+        },
+        {
+          "id": "ativ_08",
+          "pasta": "08_canaleta_verde_manning",
+          "titulo": "Dimensionamento Hidráulico de Canaleta Verde (Manning)",
+          "tipo": "exercicio_calculo",
+          "capitulos": [16],
+          "peso_nota": 10,
+          "formato_entrega": "memorial de cálculo + seção transversal",
+          "duracao_estimada": "2 aulas (100 min)"
+        }
+      ]
+    },
+    {
+      "id": "modulo_3",
+      "titulo": "Parte III — Geotêxteis e Inovação",
+      "capitulos_referencia": ["17-geotexteis", "18-biotexteis", "19-biopolimeros"],
+      "atividades": [
+        {
+          "id": "ativ_09",
+          "pasta": "09_geotexteis_biotexteis",
+          "titulo": "Seleção e Especificação de Geotêxteis e Biotêxteis",
+          "tipo": "exercicio_pratico",
+          "capitulos": [17, 18, 19],
+          "peso_nota": 10,
+          "formato_entrega": "quadro comparativo + parecer técnico",
+          "duracao_estimada": "2 aulas (100 min)"
+        }
+      ]
+    },
+    {
+      "id": "modulo_4",
+      "titulo": "Parte IV — Projeto e Integração",
+      "capitulos_referencia": ["20-nbs", "21-projeto-integrador", "22-modelagem-3d"],
+      "atividades": [
+        {
+          "id": "ativ_10",
+          "pasta": "10_projeto_integrador",
+          "titulo": "Projeto Integrador — Diagnóstico e Plano de Bioengenharia",
+          "tipo": "projeto_final",
+          "capitulos": [20, 21, 22],
+          "peso_nota": 15,
+          "formato_entrega": "relatório técnico completo + apresentação oral",
+          "duracao_estimada": "4 aulas (200 min) + trabalho extraclasse"
+        }
+      ]
+    }
+  ],
+  "criterios_avaliacao": {
+    "nota_maxima": 100,
+    "distribuicao": {
+      "atividades_parte_I": 25,
+      "atividades_parte_II": 50,
+      "atividades_parte_III": 10,
+      "projeto_integrador": 15
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "title": "[BS 2026.1] Atividade 02 — RUSLE: Estimativa de Perda de Solo",
+  "description": "Esta atividade abrange o conteúdo da Aula 04 da disciplina Bioengenharia de Solos (UEFS 2026.1):\n• Cap. 4 — Erosão do Solo: Tipos e Processos (RUSLE e SCS-CN)\n\nO objetivo é calcular a perda de solo anual usando a RUSLE (A = R × K × LS × C × P) para uma microbacia do semiárido e comparar cenários de uso com e sem práticas de bioengenharia.\n\nPrazo de entrega: até o início da próxima aula.",
+  "sections": [
+    {
+      "title": "IDENTIFICAÇÃO",
+      "description": "",
+      "questions": [
+        {
+          "title": "Nome completo",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": true
+        },
+        {
+          "title": "Matrícula",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Fatores da RUSLE — Conceitual",
+      "description": "Cenário: Microbacia do Riacho da Pedra, Feira de Santana – BA. Área: 85 ha, precipitação 920 mm/ano, R = 5.800 MJ mm ha⁻¹ h⁻¹ ano⁻¹, solo Argissolo Vermelho-Amarelo, declividade média 9%, comprimento de rampa 120 m.\n\nUso atual: 45 ha de pastagem degradada (< 40% cobertura), 12 ha de solo exposto, 18 ha de capoeira, 10 ha de mata ciliar.",
+      "questions": [
+        {
+          "title": "O fator R = 5.800 MJ mm ha⁻¹ h⁻¹ ano⁻¹ representa a erosividade. Segundo a escala de Carvalho (1994), essa erosividade é classificada como:",
+          "description": "Escala: Fraca (< 2.452), Moderada (2.452–4.905), Moderada a forte (4.905–7.357), Forte (7.357–9.810), Muito forte (> 9.810)",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Fraca",
+            "Moderada",
+            "Moderada a forte",
+            "Forte",
+            "Muito forte"
+          ]
+        },
+        {
+          "title": "Se 75% do R anual se concentra nos 5 meses chuvosos (nov–mar), qual é o R mensal médio nos meses CHUVOSOS?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "R_chuvoso = (0,75 × 5.800) / 5 = 870 MJ mm ha⁻¹ h⁻¹ mês⁻¹",
+            "R_chuvoso = 5.800 / 12 = 483 MJ mm ha⁻¹ h⁻¹ mês⁻¹",
+            "R_chuvoso = 5.800 / 5 = 1.160 MJ mm ha⁻¹ h⁻¹ mês⁻¹",
+            "R_chuvoso = (0,25 × 5.800) / 5 = 290 MJ mm ha⁻¹ h⁻¹ mês⁻¹"
+          ]
+        },
+        {
+          "title": "Qual é a implicação prática dessa concentração de erosividade nos meses chuvosos para o planejamento de implantação de técnicas de bioengenharia?",
+          "description": "Mínimo 4 linhas. Considere: quando iniciar obras? quando semear?",
+          "type": "PARAGRAPH",
+          "required": true
+        },
+        {
+          "title": "Qual alternativa apresenta os valores CORRETOS de C (fator de cobertura) para os 4 tipos de uso da microbacia?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Pastagem degradada C=0,20 | Solo exposto C=1,00 | Capoeira C=0,06 | Mata ciliar C=0,001",
+            "Pastagem degradada C=0,01 | Solo exposto C=0,50 | Capoeira C=0,30 | Mata ciliar C=0,20",
+            "Pastagem degradada C=1,00 | Solo exposto C=1,00 | Capoeira C=1,00 | Mata ciliar C=1,00",
+            "Pastagem degradada C=0,001 | Solo exposto C=0,06 | Capoeira C=0,20 | Mata ciliar C=1,00"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cálculos e cenários",
+      "description": "Use: R = 5.800, K = 0,025 (estimado), LS = 2,1 (calculado para λ=120m, 9%), P = 1,0 (sem práticas conservacionistas).\n\nFórmula: A = R × K × LS × C × P",
+      "questions": [
+        {
+          "title": "Calcule a perda de solo anual (A) para a classe 'Solo exposto' (C = 1,00) com os valores fornecidos. Qual resultado está correto?",
+          "description": "A = 5.800 × 0,025 × 2,1 × 1,00 × 1,0",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "A = 304,5 t ha⁻¹ ano⁻¹",
+            "A = 152,3 t ha⁻¹ ano⁻¹",
+            "A = 30,5 t ha⁻¹ ano⁻¹",
+            "A = 3.045 t ha⁻¹ ano⁻¹"
+          ]
+        },
+        {
+          "title": "No cenário pós-bioengenharia (5 anos após), a pastagem recebe vetiver + adubação verde (novo C = 0,04, P = 0,60) e o solo exposto recebe hidrossemeadura + biomanta (novo C = 0,08, P = 0,50). Calcule a NOVA perda anual para 'Solo exposto pós-bioengenharia' e a redução percentual em relação ao cenário atual.",
+          "description": "Mostre os cálculos.\nAtual: A = R × K × LS × C × P = 5.800 × 0,025 × 2,1 × 1,00 × 1,0\nPós: A = 5.800 × 0,025 × 2,1 × 0,08 × 0,50",
+          "type": "PARAGRAPH",
+          "required": true
+        },
+        {
+          "title": "A tolerância de perda de solo para Argissolos no Brasil é de aproximadamente 12 t ha⁻¹ ano⁻¹. Após a bioengenharia, a classe 'Pastagem → vetiver + adubação verde' (C=0,04, P=0,60) atinge a tolerância?",
+          "description": "A_pós = 5.800 × 0,025 × 2,1 × 0,04 × 0,60",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Sim — A_pós = 7,3 t/ha/ano, que é menor que 12 t/ha/ano (dentro da tolerância).",
+            "Não — A_pós = 14,6 t/ha/ano, ainda acima da tolerância.",
+            "Sim — A_pós = 0,7 t/ha/ano, muito abaixo da tolerância.",
+            "Não é possível saber sem dados de campo."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Interpretação e planejamento",
+      "description": "",
+      "questions": [
+        {
+          "title": "Com base nos cálculos realizados, qual classe de uso representa o MAIOR risco erosivo na microbacia e deveria receber intervenção prioritária?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Mata ciliar — por estar próxima ao rio.",
+            "Solo exposto — por ter C = 1,00 e a maior taxa de perda de solo.",
+            "Capoeira — por ter vegetação de regeneração instável.",
+            "Pastagem degradada — por ocupar a maior área (45 ha)."
+          ]
+        },
+        {
+          "title": "Considerando que o solo exposto (12 ha) gera a maior perda por hectare e a pastagem degradada (45 ha) gera a maior perda total pela área, elabore uma ESTRATÉGIA DE PRIORIZAÇÃO das intervenções ao longo do primeiro ano. Justifique a ordem com base nos dados da RUSLE e no período chuvoso.",
+          "description": "Mínimo 6 linhas.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Autoavaliação",
+      "description": "",
+      "questions": [
+        {
+          "title": "De 1 a 5, o quanto você se sente confiante para aplicar a RUSLE e comparar cenários de uso do solo?",
+          "description": "",
+          "type": "SCALE",
+          "required": true,
+          "scale_low": 1,
+          "scale_high": 5,
+          "scale_low_label": "Nada confiante",
+          "scale_high_label": "Muito confiante"
+        },
+        {
+          "title": "Espaço livre — registre qualquer dúvida ou comentário.",
+          "description": "",
+          "type": "PARAGRAPH",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

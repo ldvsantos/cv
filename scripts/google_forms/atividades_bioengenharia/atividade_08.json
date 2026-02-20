@@ -1,0 +1,160 @@
+{
+  "title": "[BS 2026.1] Atividade 08 — Canaleta Verde e Equação de Manning",
+  "description": "Esta atividade abrange o conteúdo das Aulas 14 e 15 da disciplina Bioengenharia de Solos (UEFS 2026.1):\n• Cap. 13 — Canaletas Verdes e Valetas Vegetadas\n• Cap. 14 — Feixes Vivos e Grades Vivas\n\nO objetivo é dimensionar canaletas verdes usando a equação de Manning, verificar o número de Froude e a tensão cisalhante máxima, aplicando ao cenário do campus da UEFS.\n\nPrazo de entrega: até o início da próxima aula.",
+  "sections": [
+    {
+      "title": "IDENTIFICAÇÃO",
+      "description": "",
+      "questions": [
+        {
+          "title": "Nome completo",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": true
+        },
+        {
+          "title": "Matrícula",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Canaleta verde — Conceitos",
+      "description": "Cenário: Drenagem pluvial do campus da UEFS — estacionamento + área verde.\n• Área de contribuição: 2,5 ha (25.000 m²)\n• Coeficiente de escoamento (C): 0,45 (misto: pavimento + grama)\n• Intensidade de chuva de projeto (i): 120 mm/h (Tr = 10 a, tc = 15 min)\n• Vazão de projeto: Q = C × i × A / 360 = 0,45 × 120 × 2,5 / 360 = 0,375 m³/s\n\nCanaleta trapezoidal proposta:\n• Base (b) = 1,0 m\n• Taludes laterais: 1V:2H (z = 2)\n• Revestimento: grama Bermuda (n Manning = 0,035)\n• Declividade longitudinal (S₀) = 0,02 (2%)",
+      "questions": [
+        {
+          "title": "Qual é a vantagem de uma canaleta verde em comparação com uma canaleta de concreto para drenagem pluvial?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "A canaleta verde promove infiltração, filtragem de poluentes e redução do pico de vazão — além de se integrar paisagisticamente.",
+            "A canaleta verde é mais rápida para conduzir a água que o concreto.",
+            "A canaleta verde não precisa de manutenção.",
+            "A canaleta verde é exclusivamente decorativa e não dimensionada hidraulicamente."
+          ]
+        },
+        {
+          "title": "O coeficiente de Manning (n = 0,035) representa a rugosidade da grama. Se a grama crescer além do ideal (n aumenta para 0,060), o que acontece com a velocidade e a profundidade do escoamento?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "A velocidade DIMINUI e a profundidade AUMENTA — mais rugosidade retarda o fluxo.",
+            "A velocidade AUMENTA e a profundidade DIMINUI.",
+            "Ambas aumentam proporcionalmente.",
+            "O coeficiente n não afeta a velocidade, apenas a turbulência."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dimensionamento por Manning",
+      "description": "Equação de Manning: V = (1/n) × R^(2/3) × S₀^(1/2)\nQ = V × A\n\nPara seção trapezoidal:\n• A = (b + z×y) × y = (1,0 + 2y) × y\n• P = b + 2y × √(1 + z²) = 1,0 + 2y × √5 = 1,0 + 4,47y\n• R = A / P\n\nTestaremos y = 0,30 m (profundidade normal).",
+      "questions": [
+        {
+          "title": "Para y = 0,30 m, calcule a área molhada (A) e o perímetro molhado (P):",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "A = (1,0 + 2×0,30) × 0,30 = 1,60 × 0,30 = 0,48 m²; P = 1,0 + 4,47×0,30 = 1,0 + 1,34 = 2,34 m",
+            "A = 1,0 × 0,30 = 0,30 m²; P = 1,0 + 2×0,30 = 1,60 m",
+            "A = (1,0 + 0,60) × 0,30 = 0,36 m²; P = 1,0 + 0,60 = 1,60 m",
+            "A = π × 0,30² / 4 = 0,07 m²; P = π × 0,30 = 0,94 m"
+          ]
+        },
+        {
+          "title": "Com A = 0,48 m² e P = 2,34 m, calcule R, V e Q:",
+          "description": "R = A/P; V = (1/n) × R^(2/3) × S₀^(1/2); Q = V × A\nn = 0,035, S₀ = 0,02",
+          "type": "PARAGRAPH",
+          "required": true
+        },
+        {
+          "title": "Se Q calculado para y = 0,30 m for menor que Q_projeto = 0,375 m³/s, o que deve ser feito?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Aumentar y (testar y = 0,35 m, 0,40 m...) até Q ≥ Q_projeto, ou aumentar a base b.",
+            "Diminuir y para aumentar a velocidade.",
+            "Aumentar o coeficiente n plantando mais grama.",
+            "Reduzir a declividade S₀ para acumular mais água."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Número de Froude e tensão cisalhante",
+      "description": "Verificações de segurança:\n• Froude: Fr = V / √(g × y_h), onde y_h = A / largura superficial (T = b + 2zy)\n  → Fr < 1 (subcrítico) — DESEJÁVEL para canaleta verde\n• Tensão cisalhante: τ = γ_w × R × S₀\n  → τ_max = 9,81 × R × S₀ (kPa)\n  → Limite para grama Bermuda: τ_perm ≈ 50–100 Pa",
+      "questions": [
+        {
+          "title": "Se V = 1,2 m/s e y_h = 0,26 m (estimado), calcule Fr:",
+          "description": "g = 9,81 m/s²",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Fr = 1,2 / √(9,81 × 0,26) = 1,2 / √2,55 = 1,2 / 1,60 = 0,75 (subcrítico ✓)",
+            "Fr = 1,2 × √(9,81 × 0,26) = 1,92 (supercrítico ✗)",
+            "Fr = 1,2 / (9,81 × 0,26) = 0,47 (subcrítico ✓)",
+            "Fr = √(1,2 / 9,81) = 0,35 (subcrítico ✓)"
+          ]
+        },
+        {
+          "title": "Calcule a tensão cisalhante: τ = 9.810 × R × S₀ (em Pa). Se R = 0,205 m:",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "τ = 9.810 × 0,205 × 0,02 = 40,2 Pa (< 50 Pa → limite da grama, requer atenção)",
+            "τ = 9,81 × 0,205 × 0,02 = 0,040 Pa (muito baixo, sem risco)",
+            "τ = 9.810 × 0,205 = 2.011 Pa (muito alto, grama arrancada)",
+            "τ = 9.810 × 0,02 = 196,2 Pa (incompatível com grama)"
+          ]
+        },
+        {
+          "title": "A tensão τ = 40,2 Pa está próxima do limite inferior de resistência da grama Bermuda (50 Pa). Proponha 2 medidas para aumentar a margem de segurança sem mudar a seção.",
+          "description": "Mínimo 4 linhas.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Aplicação ao campus UEFS",
+      "description": "",
+      "questions": [
+        {
+          "title": "O campus da UEFS possui áreas de estacionamento impermeabilizadas que geram picos de escoamento. Além da canaleta verde, proponha 2 medidas complementares de bioengenharia que poderiam ser integradas ao sistema de drenagem sustentável do campus.",
+          "description": "Considere: jardins de chuva, biovaletas, pavimento permeável, barraginhas.\nMínimo 5 linhas.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Autoavaliação",
+      "description": "",
+      "questions": [
+        {
+          "title": "De 1 a 5, o quanto você se sente confiante para dimensionar canaletas verdes usando Manning?",
+          "description": "",
+          "type": "SCALE",
+          "required": true,
+          "scale_low": 1,
+          "scale_high": 5,
+          "scale_low_label": "Nada confiante",
+          "scale_high_label": "Muito confiante"
+        },
+        {
+          "title": "Espaço livre — registre qualquer dúvida ou comentário.",
+          "description": "",
+          "type": "PARAGRAPH",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+---
+title: "Bioengenharia de Solos"
+subtitle: "Atividade 06  —  Formulação de Hidrossemeadura e Seleção de Biomantas<br>Curso de Engenharia Agronômica"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026-06-05"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Bioengenharia de Solos | Atividade 06"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Atividade {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Estrutura
+
+- [1]{.circle} Revisão: hidrossemeadura e biomantas
+- [2]{.circle} Cenário: talude rodoviário exposto
+- [3]{.circle} Parte A — Formulação da pasta de hidrossemeadura
+- [4]{.circle} Parte B — Seleção e especificação de biomanta
+- [5]{.circle} Parte C — Análise comparativa de cenários
+- [6]{.circle} Critérios de avaliação
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo**
+
+Formular uma **pasta de hidrossemeadura** com dosagem de sementes, mulch e fixador, selecionar a **classe de biomanta** adequada (NBR 16308) e comparar cenários de **custo-efetividade** para a proteção de um talude rodoviário.
+:::
+:::
+:::
+
+---
+
+# [1  —  REVISÃO]{.section-header}
+
+## Hidrossemeadura e biomantas {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Hidrossemeadura (Cap. 10)
+
+Aplicação sob pressão de pasta composta por:
+
+| Componente | Função |
+|-----------|--------|
+| **Água** | Veículo |
+| **Sementes** | Estabelecimento vegetal |
+| **Mulch** | Proteção + retenção de umidade |
+| **Fertilizante** | Nutrição inicial |
+| **Fixador** | Aderência ao solo |
+| **Corante** | Controle visual da aplicação |
+
+### Taxa de aplicação base
+
+$$T_{ap} = T_0 \times F_d \times F_s \times F_c$$
+
+Onde: $F_d$ = fator declividade; $F_s$ = fator solo; $F_c$ = fator clima.
+:::
+
+::: {.column width="50%"}
+### Biomantas (Cap. 11) — NBR 16308
+
+| Classe | Aplicação | Durabilidade |
+|--------|-----------|-------------|
+| **I** | Áreas planas, baixa erosividade | 6–12 meses |
+| **II** | Taludes moderados (< 1V:2H) | 12–24 meses |
+| **III** | Taludes íngremes (< 1V:1,5H) | 24–36 meses |
+| **IV** | Margens e canais | > 36 meses |
+
+::: {.callout-important}
+### Capítulos de referência
+- **Cap. 10** — Hidrossemeadura
+- **Cap. 11** — Biomantas e Geossintéticos Biodegradáveis
+:::
+:::
+:::
+
+---
+
+# [2  —  CENÁRIO-PROBLEMA]{.section-header}
+
+## Talude rodoviário exposto {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Caracterização
+
+| Parâmetro | Valor |
+|-----------|-------|
+| Localização | BR-116 (trecho Feira de Santana – Milagres) |
+| Tipo | Talude de corte rodoviário |
+| Altura do talude | 8 m |
+| Comprimento (ao longo da rodovia) | 150 m |
+| Inclinação | 1V:1,5H (≈ 33°) |
+| Solo | Argissolo Vermelho, textura média |
+| Orientação | Face norte (maior insolação) |
+| Precipitação anual | 750 mm |
+| Meses secos | 6 (maio a outubro) |
+| Situação atual | Solo exposto, sulcos de erosão visíveis |
+:::
+
+::: {.column width="50%"}
+### Área a ser tratada
+
+$$A_{talude} = \text{comprimento} \times \text{comprimento da face inclinada}$$
+
+Face inclinada (hipotenusa):
+
+$$L_{face} = \frac{H}{\text{sen}(\theta)} = \frac{8}{\text{sen}(33°)} \approx 14{,}7 \text{ m}$$
+
+$$A_{talude} = 150 \times 14{,}7 = 2.205 \text{ m}^2$$
+
+::: {.callout-note}
+### Desafio adicional
+A face norte com 6 meses secos exige atenção especial à **retenção hídrica** e à **escolha de espécies tolerantes à seca**.
+:::
+:::
+:::
+
+---
+
+# [3  —  PARTE A: FORMULAÇÃO DA HIDROSSEMEADURA]{.section-header}
+
+## Questões {.smaller-text}
+
+**A1.** Monte a **mistura de sementes** para o talude, usando pelo menos 4 espécies. Justifique a proporção de cada uma:
+
+| Espécie | Categoria | Função | Taxa (kg/ha) | % da mistura |
+|---------|-----------|--------|-------------|-------------|
+| Vetiver (*Chrysopogon zizanioides*) | Gramínea | Raízes profundas, ancoragem | | |
+| Braquiária (*Urochloa decumbens*) | Gramínea | Cobertura rápida | | |
+| Guandu (*Cajanus cajan*) | Leguminosa | Fixação de N₂ | | |
+| Estilosantes (*Stylosanthes* spp.) | Leguminosa | Tolerância a seca | | |
+| **TOTAL** | | | | 100% |
+
+**A2.** Calcule a **taxa de aplicação** da pasta. Use os fatores de ajuste:
+
+- $T_0$ = 3.500 L/ha (base)
+- $F_d$ = 1,3 (declividade > 30°)
+- $F_s$ = 1,1 (solo de textura média)
+- $F_c$ = 1,2 (clima semiárido, meses secos)
+
+$$T_{ap} = T_0 \times F_d \times F_s \times F_c$$
+
+**A3.** Especifique a **composição da pasta** por hectare:
+
+| Componente | Tipo sugerido | Dosagem (kg/ha ou L/ha) |
+|-----------|--------------|------------------------|
+| Água | — | conforme $T_{ap}$ |
+| Mulch | Fibra de madeira (BFM) | 3.000–4.000 kg/ha |
+| Fertilizante | NPK 10-20-10 | 400 kg/ha |
+| Fixador | Goma guar | 100–150 kg/ha |
+| Corante | Verde hidrossemeadura | 5 L/ha |
+| Sementes | Conforme A1 | conforme taxa |
+
+**A4.** Calcule o **volume total de pasta** necessário para os 2.205 m² (0,22 ha) do talude.
+
+---
+
+# [4  —  PARTE B: SELEÇÃO DE BIOMANTA]{.section-header}
+
+## Questões {.smaller-text}
+
+**B1.** Com base na inclinação (1V:1,5H ≈ 33°) e na tabela de classes da NBR 16308, qual **classe de biomanta** é adequada?
+
+**B2.** Compare as opções de material disponível. Preencha o quadro:
+
+| Propriedade | Biomanta de coco | Biomanta de juta | Biomanta mista (coco+palha) |
+|-------------|-----------------|-----------------|---------------------------|
+| Gramatura (g/m²) | 400–700 | 500–800 | 350–500 |
+| Resistência à tração (kN/m) | 4–8 | 6–12 | 3–6 |
+| Durabilidade estimada | 24–36 meses | 12–18 meses | 18–24 meses |
+| Retenção de umidade | Moderada | Alta | Moderada |
+| Custo (R$/m²) | 12,00 | 8,00 | 10,00 |
+| **Adequação ao cenário** | | | |
+
+Justifique a escolha da **melhor opção** considerando: durabilidade, retenção hídrica (face norte) e custo.
+
+**B3.** Calcule a **área de biomanta** necessária (considere sobreposição lateral de 10 cm e longitudinal de 15 cm entre mantas de 2 m × 30 m):
+
+$$N_{mantas} = \frac{A_{talude}}{A_{util\_por\_manta}}$$
+
+**B4.** Especifique o esquema de **grampeamento**: quantos grampos por m² (recomendação para classe III: 4–6 grampos/m²)? Grampo tipo "U" de aço (30 cm × 5 cm)?
+
+---
+
+# [5  —  PARTE C: ANÁLISE COMPARATIVA]{.section-header}
+
+## Questões {.smaller-text}
+
+**C1.** Compare **3 cenários** de tratamento para o talude:
+
+| Item de custo | Cenário 1: Só hidrossemeadura | Cenário 2: Só biomanta | Cenário 3: Biomanta + hidrossemeadura |
+|--------------|------------------------------|----------------------|--------------------------------------|
+| Material (R$) | | | |
+| Mão-de-obra (R$) | | | |
+| Equipamento (R$) | | | |
+| **Custo total (R$)** | | | |
+| **Custo por m² (R$)** | | | |
+
+Valores de referência:
+
+- Hidroequipamento (aluguel + operador): R$ 2.500/dia (rende 3.000 m²/dia)
+- Instalação de biomanta (mão-de-obra): R$ 4,00/m²
+- Grampos tipo U: R$ 1,50/unidade
+
+**C2.** Avalie a **eficácia esperada** em 12 meses para cada cenário em termos de:
+
+- Cobertura vegetal (%)
+- Proteção contra erosão hídrica
+- Risco de falha
+
+**C3.** Com base na análise custo-efetividade, recomende o cenário mais adequado e justifique em um **parecer técnico** (máx. 200 palavras).
+
+---
+
+## Critérios de avaliação {.smaller-text}
+
+| Critério | Peso | Descrição |
+|----------|------|-----------|
+| **Parte A** — Hidrossemeadura | 35% | Mistura de sementes justificada, cálculos de taxa e pasta corretos |
+| **Parte B** — Biomanta | 35% | Classe correta (NBR 16308), seleção justificada, grampeamento |
+| **Parte C** — Comparação | 30% | Custos corretos, análise de eficácia, parecer coerente |
+
+::: {.callout-important}
+### {{< fa arrow-up-right-from-square >}} Envio via Google Forms
+Esta atividade deve ser respondida diretamente no **Google Forms** da disciplina.
+
+[Abrir Formulário — Atividade 06](../../teaching/bioengenharia-de-solos/index.qmd){.btn .btn-primary target="_blank"}
+
+- **Prazo:** até o início da próxima aula
+- As respostas são salvas automaticamente
+:::
+
+---
+
+## Referências {.smaller-text}
+
+- SANTOS, L. D. V. **Bioengenharia de Solos** — Cap. 10 e 11. UEFS, 2026.
+- ABNT. NBR 16308 — *Biomantas para proteção do solo*. 2014.
+- FIFIELD, J. S. *Field Manual on Sediment and Erosion Control Best Management Practices*. Forester Press, 2001.

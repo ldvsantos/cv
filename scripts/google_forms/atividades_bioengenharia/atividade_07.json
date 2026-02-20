@@ -1,0 +1,166 @@
+{
+  "title": "[BS 2026.1] Atividade 07 — Gabião Vivo: Dimensionamento e Coesão Radicular",
+  "description": "Esta atividade abrange o conteúdo das Aulas 12 e 13 da disciplina Bioengenharia de Solos (UEFS 2026.1):\n• Cap. 11 — Gabiões Vivos\n• Cap. 12 — Enrocamento Vegetado e Estruturas Mistas\n\nO objetivo é dimensionar gabiões vivos (caixa + vegetação), verificar tombamento e deslizamento, e incorporar a contribuição da coesão radicular usando o modelo sigmoidal.\n\nPrazo de entrega: até o início da próxima aula.",
+  "sections": [
+    {
+      "title": "IDENTIFICAÇÃO",
+      "description": "",
+      "questions": [
+        {
+          "title": "Nome completo",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": true
+        },
+        {
+          "title": "Matrícula",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Gabiões vivos — Conceitos",
+      "description": "Cenário: Margem direita do Rio Jacuípe, São Gonçalo dos Campos – BA.\n• Erosão de margem com recuo de 1,5 m/ano\n• Altura do barranco: 3,2 m\n• Solo: Argissolo, γ = 18 kN/m³, c' = 8 kPa, φ' = 25°\n• Nível d'água normal: 1,0 m acima da base\n• Gabião proposto: caixa de 2,0 × 1,0 × 1,0 m (C × L × H), preenchida com pedra (γ_gab = 17 kN/m³)\n• Plano: 3 camadas empilhadas (base + 2 níveis), total H_gab = 3,0 m",
+      "questions": [
+        {
+          "title": "Qual é a diferença fundamental entre um gabião convencional e um gabião vivo?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "O gabião vivo possui estacas vivas e/ou mudas plantadas entre as camadas, que enraízam e aumentam a estabilidade ao longo do tempo.",
+            "O gabião vivo usa apenas pedras de rio (seixos rolados), enquanto o convencional usa brita.",
+            "O gabião vivo não usa tela metálica — as raízes sustentam as pedras.",
+            "Não há diferença — 'gabião vivo' é apenas marketing."
+          ]
+        },
+        {
+          "title": "Quais espécies são tipicamente utilizadas como estacas vivas entre camadas de gabião? (marque todas as corretas)",
+          "description": "",
+          "type": "CHECKBOX",
+          "required": true,
+          "options": [
+            "Sabiá (Mimosa caesalpiniifolia) — estacas de propagação vegetativa, raízes vigorosas",
+            "Gliricídia (Gliricidia sepium) — fácil propagação por estaca, tolerante a alagamento temporário",
+            "Ingá (Inga vera) — adaptada a margens de rio, raízes fixadoras de nitrogênio",
+            "Eucalipto (Eucalyptus sp.) — crescimento rápido mas raízes pivotantes inadequadas para gabião"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Verificação de tombamento",
+      "description": "O gabião (3 camadas × 1,0 m de largura × 1,0 m de altura) está sujeito ao empuxo ativo do solo.\n\nDados:\n• Empuxo ativo resultante: Ea = 28,5 kN/m (atuando a H/3 = 1,0 m da base)\n• Peso do gabião por metro: W_gab = γ_gab × L × H_total = 17 × 1,0 × 3,0 = 51,0 kN/m (atuando a L/2 = 0,5 m)\n\nFS_tomb = Momento estabilizante / Momento desestabilizante\nFS_tomb = (W × L/2) / (Ea × H/3)",
+      "questions": [
+        {
+          "title": "Calcule o fator de segurança ao tombamento (FS_tomb):",
+          "description": "M_estab = 51,0 × 0,5 = ? ; M_desestab = 28,5 × 1,0 = ?",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "FS_tomb = 25,5 / 28,5 = 0,89 (INSEGURO, pois FS < 1,5)",
+            "FS_tomb = 51,0 / 28,5 = 1,79 (SEGURO)",
+            "FS_tomb = 28,5 / 25,5 = 1,12 (MARGINAL)",
+            "FS_tomb = 25,5 / 28,5 = 0,89, mas arredondando fica 1,0 (OK)"
+          ]
+        },
+        {
+          "title": "O FS_tomb = 0,89 é INSEGURO (< 1,5 recomendado). Qual medida de projeto é mais eficaz para aumentar o FS de tombamento?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Aumentar a largura da base (ex: base de 2,0 m em vez de 1,0 m) — isso dobra o momento estabilizante.",
+            "Usar pedras mais leves para reduzir o empuxo.",
+            "Aumentar a altura — mais peso estabiliza.",
+            "Diminuir a profundidade de enterramento."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Verificação de deslizamento",
+      "description": "FS_desl = Forças resistentes / Forças atuantes\nFS_desl = (W × tan φ'_base + c'_base × B) / Ea\nonde φ'_base = ângulo de atrito gabião/solo = 30°, c'_base = 5 kPa, B = largura da base",
+      "questions": [
+        {
+          "title": "Para base de 1,0 m: FS_desl = (51,0 × tan 30° + 5 × 1,0) / 28,5. Qual resultado está correto?",
+          "description": "tan 30° = 0,577",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "FS_desl = (51,0 × 0,577 + 5,0) / 28,5 = (29,4 + 5,0) / 28,5 = 34,4 / 28,5 = 1,21 (MARGINAL)",
+            "FS_desl = 51,0 / 28,5 = 1,79",
+            "FS_desl = (29,4 + 5,0) / 28,5 = 34,4 / 28,5 = 0,83 (INSEGURO)",
+            "FS_desl = (51,0 + 5,0) / 28,5 = 1,96 (SEGURO)"
+          ]
+        },
+        {
+          "title": "O FS_desl = 1,21 é marginal (recomendado ≥ 1,5). Com a coesão radicular adicional das estacas vivas após 3 anos (Δc_r = 5 kPa), o novo FS seria:",
+          "description": "FS_desl_novo = (29,4 + 5,0 + 5,0 × 1,0) / 28,5 = ?",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "FS_desl = (29,4 + 5,0 + 5,0) / 28,5 = 39,4 / 28,5 = 1,38 (melhorou, mas ainda < 1,5)",
+            "FS_desl = 34,4 / 28,5 = 1,21 (sem mudança)",
+            "FS_desl = 44,4 / 28,5 = 1,56 (SEGURO)",
+            "FS_desl = 39,4 / 28,5 = 1,56 (SEGURO)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Coesão radicular — Modelo sigmoidal",
+      "description": "O modelo sigmoidal descreve o aumento da coesão radicular ao longo do tempo:\n\nΔc_r(t) = c_r_max / (1 + e^(-k(t - t₅₀)))\n\nOnde:\n• c_r_max = coesão máxima (kPa) — ex: 12 kPa para sabiá\n• k = taxa de crescimento — ex: 0,8 ano⁻¹\n• t₅₀ = tempo para 50% de c_r_max — ex: 2,5 anos\n• t = tempo (anos)",
+      "questions": [
+        {
+          "title": "Calcule Δc_r para t = 1 ano: Δc_r(1) = 12 / (1 + e^(-0,8(1 – 2,5)))",
+          "description": "e^(-0,8 × (-1,5)) = e^(1,2) ≈ 3,32",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Δc_r(1) = 12 / (1 + 3,32) = 12 / 4,32 ≈ 2,8 kPa",
+            "Δc_r(1) = 12 / (1 + 0,30) = 12 / 1,30 ≈ 9,2 kPa",
+            "Δc_r(1) = 12 × 3,32 = 39,8 kPa",
+            "Δc_r(1) = 12 / 3,32 = 3,6 kPa"
+          ]
+        },
+        {
+          "title": "Calcule Δc_r para t = 5 anos e interprete o resultado: a coesão se aproxima da assíntota c_r_max?",
+          "description": "Δc_r(5) = 12 / (1 + e^(-0,8(5 – 2,5))) = 12 / (1 + e^(-2,0))\ne^(-2,0) ≈ 0,135\nMostre o cálculo.",
+          "type": "PARAGRAPH",
+          "required": true
+        },
+        {
+          "title": "Qual é a implicação prática do modelo sigmoidal para o planejamento de projeto de gabião vivo? (Dica: em qual período o gabião é mais vulnerável?)",
+          "description": "Mínimo 4 linhas.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Autoavaliação",
+      "description": "",
+      "questions": [
+        {
+          "title": "De 1 a 5, o quanto você se sente confiante para dimensionar gabiões vivos e aplicar o modelo de coesão radicular?",
+          "description": "",
+          "type": "SCALE",
+          "required": true,
+          "scale_low": 1,
+          "scale_high": 5,
+          "scale_low_label": "Nada confiante",
+          "scale_high_label": "Muito confiante"
+        },
+        {
+          "title": "Espaço livre — registre qualquer dúvida ou comentário.",
+          "description": "",
+          "type": "PARAGRAPH",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

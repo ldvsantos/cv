@@ -1,0 +1,280 @@
+---
+title: "Bioengenharia de Solos"
+subtitle: "Atividade 10  —  Projeto Integrador: Diagnóstico e Plano de Bioengenharia<br>Curso de Engenharia Agronômica"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026-07-31"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Bioengenharia de Solos | Atividade 10 — Projeto Integrador"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral do Projeto {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Etapas
+
+- [1]{.circle} Contextualização e regulamento
+- [2]{.circle} Etapa 1 — Diagnóstico integrado
+- [3]{.circle} Etapa 2 — Classificação de feições e seleção de técnicas
+- [4]{.circle} Etapa 3 — Dimensionamento e projeto executivo
+- [5]{.circle} Etapa 4 — Análise NBS: custo-benefício
+- [6]{.circle} Etapa 5 — Apresentação oral
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo**
+
+Elaborar um **projeto completo de bioengenharia de solos** para uma área degradada real ou simulada, integrando **todas** as etapas da metodologia do Cap. 21: diagnóstico → classificação → seleção → dimensionamento → projeto executivo → análise NBS.
+:::
+:::
+:::
+
+---
+
+# [1  —  REGULAMENTO GERAL]{.section-header}
+
+## Organização e prazos {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Formação
+
+- **Equipes de 3–4 alunos**
+- Cada equipe escolhe (ou recebe) uma **área de estudo**
+- A área deve apresentar **feições erosivas visíveis** ou **taludes instáveis**
+
+### Áreas sugeridas
+
+| Área | Tipo de problema |
+|------|-----------------|
+| Margem do Rio Jacuípe (UEFS) | Erosão fluvial |
+| Talude da BR-116 (km 430) | Talude rodoviário exposto |
+| Voçoroca em Humildes | Voçoroca em pastagem |
+| Campus UEFS (drenagem) | Escoamento superficial |
+| Área escolhida pela equipe | Aprovação do professor |
+:::
+
+::: {.column width="50%"}
+### Cronograma
+
+| Etapa | Prazo | Peso |
+|-------|-------|------|
+| Etapa 1 — Diagnóstico | 2 semanas | 20% |
+| Etapa 2 — Classificação + Seleção | 1 semana | 15% |
+| Etapa 3 — Dimensionamento | 2 semanas | 30% |
+| Etapa 4 — Análise NBS | 1 semana | 15% |
+| Etapa 5 — Apresentação oral | Aula final | 20% |
+
+::: {.callout-warning}
+### Importante
+Cada etapa deve ser entregue no prazo como **progresso parcial**. A nota final é a composição de todas as etapas.
+:::
+:::
+:::
+
+---
+
+# [2  —  ETAPA 1: DIAGNÓSTICO INTEGRADO]{.section-header}
+
+## Roteiro {.smaller-text}
+
+**1.1. Caracterização do meio físico:**
+
+| Componente | Dados a levantar | Fontes |
+|-----------|-----------------|--------|
+| **Topografia** | MDE, curvas de nível, declividade | SRTM 30 m, ALOS PALSAR |
+| **Solo** | Classificação, textura, K (RUSLE) | EMBRAPA, levantamento existente |
+| **Clima** | Precipitação, erosividade (R) | INMET, ANA, BDMEP |
+| **Cobertura** | Uso do solo, NDVI | MapBiomas, Sentinel-2 |
+| **Hidrologia** | Bacia, drenagem, CN | QGIS, ANA |
+| **Vegetação** | Espécies presentes, estado fitossanitário | Levantamento expedito |
+
+**1.2. Documentação fotográfica:** Mín. 10 fotos georreferenciadas (celular com GPS).
+
+**1.3. Mapa de localização:** Mapa da área de estudo com: limites, hidrografia, curvas de nível, localização das feições erosivas.
+
+**1.4. RUSLE da área:** Calcular a perda de solo atual ($A = R \times K \times LS \times C \times P$).
+
+---
+
+# [3  —  ETAPA 2: CLASSIFICAÇÃO E SELEÇÃO]{.section-header}
+
+## Roteiro {.smaller-text}
+
+**2.1. Levantamento de feições erosivas:**
+
+Para cada feição identificada, preencher a ficha:
+
+| Campo | Dado |
+|-------|------|
+| ID | F1, F2, ... |
+| Coordenadas (UTM) | |
+| Tipo (EGC) | Sulco / Ravina / Voçoroca |
+| W (m), D (m), L (m) | |
+| Sf (m/m) | |
+| Forma da seção | V / U / Trap. / Irregular |
+| Presença de água | Sim / Não / Intermitente |
+| Vegetação na borda | Presente / Ausente |
+| Foto(s) | Nº da foto |
+
+**2.2. Árvore de decisão:**
+
+Aplicar a **árvore de decisão** do Cap. 21 (ou a construída na Atividade 03) para selecionar a(s) técnica(s) de bioengenharia mais adequada(s) para cada feição.
+
+**2.3. Justificativa técnica:**
+
+Para cada técnica selecionada, apresentar justificativa com base nos critérios: dimensão da feição, presença de água, declividade, materiais disponíveis, custo.
+
+---
+
+# [4  —  ETAPA 3: DIMENSIONAMENTO]{.section-header}
+
+## Roteiro {.smaller-text}
+
+**3.1. Memorial de cálculo:**
+
+Para **cada técnica** selecionada na Etapa 2, apresentar o dimensionamento completo conforme o capítulo correspondente:
+
+| Técnica | Cap. | O que dimensionar |
+|---------|------|------------------|
+| Paliçadas | 7 | H_ef, E, N, volume retido |
+| Bacias de captação | 8 | Volume SCS-CN, dimensões, espaçamento |
+| Feixes vivos / drenos verdes | 9 | Manning, seção, espaçamento |
+| Hidrossemeadura | 10 | Taxa de aplicação, mistura de sementes |
+| Biomantas | 11 | Classe NBR 16308, grampeamento |
+| Enrocamento vegetado | 12 | D₅₀ (Isbash), espessura, espécies |
+| Cordões / fascinas | 13 | Espaçamento, eficiência |
+| Gabião vivo | 14 | Tombamento, deslizamento, coesão radicular |
+| Parede Krainer | 15 | Estabilidade, dimensões, madeiras |
+| Canaleta verde | 16 | Manning, Froude, tensão cisalhante |
+| Geotêxteis / biotêxteis | 17–18 | O₉₅, tração, especificação |
+
+**3.2. Croquis e plantas:**
+
+- Planta baixa de locação das intervenções (escala)
+- Cortes transversais das estruturas dimensionadas
+- Detalhe construtivo de pelo menos 1 técnica
+
+---
+
+# [5  —  ETAPA 4: ANÁLISE NBS]{.section-header}
+
+## Roteiro {.smaller-text}
+
+**4.1. Enquadramento como NBS:**
+
+Verifique se o projeto atende aos **8 critérios IUCN** para Soluções Baseadas na Natureza (Cap. 20):
+
+| Critério IUCN | Atende? | Justificativa |
+|---------------|---------|---------------|
+| 1. Desafio societal | | |
+| 2. Escala da paisagem | | |
+| 3. Biodiversidade | | |
+| 4. Viabilidade econômica | | |
+| 5. Governança inclusiva | | |
+| 6. Trade-offs | | |
+| 7. Gestão adaptativa | | |
+| 8. Mainstreaming | | |
+
+**4.2. Análise custo-benefício (VPL 20 anos):**
+
+Compare o projeto de bioengenharia com a alternativa **convencional** (muro de arrimo, gabião sem vegetação, concreto, etc.):
+
+| Item | Bioengenharia (R$) | Convencional (R$) |
+|------|-------------------|-------------------|
+| Implantação | | |
+| Manutenção anual | | |
+| Co-benefícios valorados* | | |
+| **VPL (20 anos, i = 6%)** | | |
+
+*Co-benefícios: sequestro de carbono, biodiversidade, infiltração, paisagismo.
+
+**4.3. Parecer final:** Recomendar a solução preferida com justificativa técnica e econômica (máx. 500 palavras).
+
+---
+
+# [6  —  ETAPA 5: APRESENTAÇÃO ORAL]{.section-header}
+
+## Orientações {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Formato
+
+- **Duração:** 15 minutos + 5 minutos de arguição
+- **Suporte:** Slides (Quarto Revealjs, PowerPoint ou similar)
+- **Todos** os membros devem apresentar
+
+### Estrutura sugerida dos slides
+
+1. Introdução e localização (2 min)
+2. Diagnóstico (3 min)
+3. Classificação de feições (2 min)
+4. Técnicas selecionadas e dimensionamento (4 min)
+5. Análise NBS e custo-benefício (2 min)
+6. Conclusões e recomendações (2 min)
+:::
+
+::: {.column width="50%"}
+### Critérios da apresentação
+
+| Critério | Peso |
+|----------|------|
+| Domínio do conteúdo | 30% |
+| Qualidade visual dos slides | 20% |
+| Clareza e objetividade | 25% |
+| Resposta às perguntas | 25% |
+
+::: {.callout-tip}
+### Dica
+Use os **croquis e mapas** do relatório nos slides. Diagramas > texto. Mostre fotos da área.
+:::
+:::
+:::
+
+---
+
+## Resumo da avaliação do Projeto Integrador {.smaller-text}
+
+| Etapa | Peso | Critério principal |
+|-------|------|--------------------|
+| **Etapa 1** — Diagnóstico | 20% | Completude dos dados, mapa, RUSLE |
+| **Etapa 2** — Classificação e seleção | 15% | Fichas de feição, árvore de decisão |
+| **Etapa 3** — Dimensionamento | 30% | Cálculos corretos, croquis e plantas |
+| **Etapa 4** — Análise NBS | 15% | Critérios IUCN, VPL, parecer |
+| **Etapa 5** — Apresentação oral | 20% | Domínio, clareza, respostas |
+
+::: {.callout-important}
+### {{< fa arrow-up-right-from-square >}} Envio via Google Forms
+Esta atividade deve ser respondida diretamente no **Google Forms** da disciplina.
+
+[Abrir Formulário — Atividade 10](../../teaching/bioengenharia-de-solos/index.qmd){.btn .btn-primary target="_blank"}
+
+- **Prazo:** até o início da próxima aula
+- As respostas são salvas automaticamente
+:::
+
+---
+
+## Referências gerais {.smaller-text}
+
+- SANTOS, L. D. V. **Bioengenharia de Solos** — Cap. 1 a 22. UEFS, 2026.
+- GRAY, D. H.; SOTIR, R. B. *Biotechnical and Soil Bioengineering Slope Stabilization*. Wiley, 1996.
+- IUCN. *Global Standard for Nature-based Solutions*. Gland, 2020.
+- SUTILI, F. J.; DURLO, M. A. *Bioengenharia de Solos no Manejo de Cursos de Água*. EST, 2014.
+- MORGAN, R. P. C. *Soil Erosion and Conservation*. 3rd ed. Blackwell, 2005.

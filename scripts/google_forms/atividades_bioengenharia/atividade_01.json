@@ -1,0 +1,181 @@
+{
+  "title": "[BS 2026.1] Atividade 01 — Solos Tropicais e Fatores de Formação",
+  "description": "Esta atividade abrange os conteúdos das Aulas 01 a 03 da disciplina Bioengenharia de Solos (UEFS 2026.1):\n• Cap. 1 — Introdução à Bioengenharia de Solos\n• Cap. 2 — Solos Tropicais: Formação e Propriedades\n• Cap. 3 — Intemperismo e Transformação do Solo\n\nO objetivo é aplicar os conceitos de formação de solos tropicais (equação de Jenny), identificar propriedades físicas e químicas relevantes e relacionar processos de intemperismo com a aptidão do solo para técnicas de bioengenharia.\n\nPrazo de entrega: até o início da próxima aula.",
+  "sections": [
+    {
+      "title": "IDENTIFICAÇÃO",
+      "description": "",
+      "questions": [
+        {
+          "title": "Nome completo",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": true
+        },
+        {
+          "title": "Matrícula",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Fatores de formação do solo (ClORPT)",
+      "description": "Considere o seguinte cenário: uma propriedade rural em Feira de Santana – BA, 12 ha, material de origem gnáissico-migmatítico, relevo suave-ondulado (5–12%), precipitação 850 mm/ano concentrada em 5 meses (nov–mar), temperatura média 24,2 °C.\n\nPerfil do solo:\n• Horizonte A (0–20 cm): Areia 62%, Silte 18%, Argila 20%, MO 2,8 dag/kg, 10YR 4/3\n• Horizonte AB (20–45 cm): Areia 55%, Silte 15%, Argila 30%, MO 1,2 dag/kg, 7,5YR 5/4\n• Horizonte Bt (45–90 cm): Areia 38%, Silte 12%, Argila 50%, MO 0,4 dag/kg, 5YR 4/6\n• Horizonte C (90–130+ cm): Areia 45%, Silte 25%, Argila 30%, MO 0,1 dag/kg, 2,5YR 5/8",
+      "questions": [
+        {
+          "title": "Na equação de Jenny, S = f(Cl, O, R, P, T), qual fator de formação é representado pelo regime de precipitação concentrada (850 mm/ano em 5 meses) e temperatura média de 24,2 °C?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Cl — Clima",
+            "O — Organismos",
+            "R — Relevo",
+            "P — Material de origem (parent material)",
+            "T — Tempo"
+          ]
+        },
+        {
+          "title": "O horizonte Bt apresenta 50% de argila, muito mais do que o horizonte A (20%). Qual processo pedogenético explica melhor essa concentração de argila em profundidade?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Adição de matéria orgânica pela decomposição de raízes profundas.",
+            "Argiluviação (translocação de argila do horizonte A para o Bt por iluviação).",
+            "Remoção de argila por erosão superficial.",
+            "Transformação direta de areia em argila por intemperismo físico."
+          ]
+        },
+        {
+          "title": "Quais dos quatro processos pedogenéticos abaixo são evidenciados no perfil apresentado? (marque todos os corretos)",
+          "description": "",
+          "type": "CHECKBOX",
+          "required": true,
+          "options": [
+            "Adição — acúmulo de matéria orgânica no horizonte A (MO = 2,8 dag/kg)",
+            "Remoção — diminuição de MO em profundidade (de 2,8 para 0,1 dag/kg)",
+            "Transformação — formação de minerais secundários (óxidos de ferro indicados pela cor 5YR/2,5YR)",
+            "Translocação — migração de argila para o horizonte Bt (argiluviação)"
+          ]
+        },
+        {
+          "title": "Considerando precipitação concentrada em 5 meses e temperatura média de 24,2 °C, qual tipo de intemperismo predomina nesta área e por quê? Utilize a Lei de Arrhenius para justificar.",
+          "description": "Mínimo 4 linhas.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Textura e erodibilidade (Fator K)",
+      "description": "Utilize os dados do horizonte A para responder.",
+      "questions": [
+        {
+          "title": "Com base nos dados do horizonte A (Areia 62%, Silte 18%, Argila 20%), qual é a classe textural correta segundo o triângulo textural USDA?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Argiloso",
+            "Franco-arenoso",
+            "Franco-argilo-arenoso",
+            "Siltoso",
+            "Arenoso"
+          ]
+        },
+        {
+          "title": "O fator de erodibilidade (K) indica a susceptibilidade de um solo à erosão. Sabendo que solos com mais silte e areia fina são mais erodíveis, qual afirmação é CORRETA sobre o horizonte A deste perfil?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "O horizonte A tem erodibilidade BAIXA porque possui 62% de areia grossa, que resiste ao transporte hídrico.",
+            "O horizonte A tem erodibilidade MODERADA porque a fração silte+areia fina (~30%) é intermediária e a MO (2,8%) oferece alguma proteção.",
+            "O horizonte A tem erodibilidade ALTA porque a argila (20%) é insuficiente para agregar e a MO é muito baixa.",
+            "Não é possível estimar K sem análise laboratorial completa."
+          ]
+        },
+        {
+          "title": "Um solo com K moderado (0,15–0,30) em declividade de 5–12% pode ser tratado apenas com revegetação direta (sem técnicas construtivas)? Justifique considerando cobertura atual, regime de chuvas e declividade.",
+          "description": "Mínimo 4 linhas.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Intemperismo e mineralogia",
+      "description": "",
+      "questions": [
+        {
+          "title": "A Série de Goldich estabelece a ordem de estabilidade dos minerais ao intemperismo. Para o material de origem gnáissico-migmatítico (rico em feldspatos, quartzo e micas), qual mineral é o MAIS ESTÁVEL?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Olivina",
+            "Plagioclásio cálcico",
+            "Biotita",
+            "Quartzo",
+            "Ortoclásio"
+          ]
+        },
+        {
+          "title": "As cores 5YR 4/6 (vermelho-amarelado) do horizonte Bt e 2,5YR 5/8 (vermelho) do horizonte C indicam a presença de quais minerais?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Caulinita e gibsita (minerais esbranquiçados)",
+            "Goethita (amarelada) e hematita (avermelhada) — óxidos de ferro resultantes de intemperismo químico",
+            "Quartzo (incolor/translúcido) e muscovita (prateada)",
+            "Montmorilonita (cinza-esverdeada) — argila expansiva"
+          ]
+        },
+        {
+          "title": "A área vizinha (mesmo material de origem) possui mata ciliar preservada com horizonte A de 35 cm e MO = 4,5 dag/kg, enquanto a área degradada tem horizonte A de 20 cm e MO = 2,8 dag/kg. Explique essa diferença usando o fator 'Organismos' de Jenny e o papel da matéria orgânica na agregação e resistência à erosão.",
+          "description": "Mínimo 5 linhas.",
+          "type": "PARAGRAPH",
+          "required": true
+        },
+        {
+          "title": "Com base em toda a análise do perfil de solo, qual recomendação inicial de bioengenharia é mais adequada para esta área?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Apenas revegetação direta (plantio de gramíneas) — o solo é estável e não há urgência.",
+            "Proteção superficial imediata (hidrossemeadura + biomanta) combinada com revegetação, pois a erodibilidade moderada e chuvas concentradas exigem cobertura rápida.",
+            "Técnicas construtivas pesadas (gabião, muro de arrimo) — o solo é totalmente instável.",
+            "Nenhuma intervenção necessária — o solo se recuperará naturalmente."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Autoavaliação",
+      "description": "",
+      "questions": [
+        {
+          "title": "De 1 a 5, o quanto você se sente confiante para identificar fatores de formação e avaliar a erodibilidade de um solo tropical?",
+          "description": "",
+          "type": "SCALE",
+          "required": true,
+          "scale_low": 1,
+          "scale_high": 5,
+          "scale_low_label": "Nada confiante",
+          "scale_high_label": "Muito confiante"
+        },
+        {
+          "title": "Espaço livre — registre qualquer dúvida, comentário ou sugestão sobre esta atividade.",
+          "description": "",
+          "type": "PARAGRAPH",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

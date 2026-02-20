@@ -1,0 +1,155 @@
+{
+  "title": "Atividade 02 — Geossistema, Ecologia da Paisagem e o Modelo Mancha-Corredor-Matriz",
+  "description": "Esta atividade abrange os conteúdos das Aulas 02 a 04:\n• Aula 02 — Evolução do conceito e distinções (paisagem × ecossistema × bioma)\n• Aula 03 — Geossistema e leitura sistêmica (Bertrand)\n• Aula 04 — Ecologia da Paisagem (modelo mancha-corredor-matriz)\n\nO objetivo é consolidar os fundamentos teóricos discutidos nas três primeiras semanas.\n\nPrazo de entrega: até o início da Aula 05.",
+  "sections": [
+    {
+      "title": "IDENTIFICAÇÃO",
+      "description": "",
+      "questions": [
+        {
+          "title": "Nome completo",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": true
+        },
+        {
+          "title": "Matrícula",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Paisagem, ecossistema, bioma e território",
+      "description": "As questões a seguir exigem que você diferencie conceitos frequentemente confundidos.",
+      "questions": [
+        {
+          "title": "Qual alternativa melhor diferencia \"paisagem\" de \"ecossistema\"?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Paisagem é visual; ecossistema é funcional.",
+            "Paisagem integra componentes socioespaciais e naturais em múltiplas escalas; ecossistema enfatiza fluxos de energia e ciclagem de matéria em uma comunidade biótica e seu meio abiótico.",
+            "Paisagem é maior que ecossistema.",
+            "Paisagem é subjetiva; ecossistema é objetivo."
+          ]
+        },
+        {
+          "title": "A vertente europeia da Ecologia da Paisagem, diferentemente da norte-americana, caracteriza-se por:",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Foco exclusivo em métricas quantitativas e modelagem computacional.",
+            "Ênfase no planejamento territorial, na integração sociedade-natureza e numa perspectiva holística e humanista.",
+            "Priorização de estudos em escala molecular e genética da conservação.",
+            "Rejeição do conceito de geossistema e adoção do modelo de ecossistema."
+          ]
+        },
+        {
+          "title": "Explique, em suas próprias palavras, por que o conceito de \"bioma\" NÃO substitui o de \"paisagem\" mesmo quando trata da mesma área geográfica.",
+          "description": "Mínimo 4 linhas. Utilize exemplos.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "O modelo de Bertrand e a leitura sistêmica",
+      "description": "",
+      "questions": [
+        {
+          "title": "No modelo taxonômico de Bertrand, o geossistema corresponde a qual nível de organização?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Nível mais amplo (zona – domínio – região natural).",
+            "Nível intermediário entre a região natural e o geofácies.",
+            "Nível mais detalhado (geótopo).",
+            "Não se encaixa na taxonomia — é um conceito à parte."
+          ]
+        },
+        {
+          "title": "Quais dos componentes abaixo fazem parte do \"tripé\" do geossistema segundo Bertrand? (marque todos os corretos)",
+          "description": "",
+          "type": "CHECKBOX",
+          "required": true,
+          "options": [
+            "Potencial ecológico (fatores abióticos: geomorfologia, clima, hidrologia)",
+            "Exploração biológica (vegetação, fauna, solo biológico)",
+            "Ação antrópica (uso do solo, agricultura, urbanização)",
+            "Fluxos de capital (PIB agrícola, renda per capita)",
+            "Legislação ambiental (unidades de conservação, APP, RL)"
+          ]
+        },
+        {
+          "title": "Imagine um trecho do semiárido baiano com caatinga remanescente, uma área irrigada de fruticultura e uma comunidade rural. Aplique o \"tripé\" do geossistema de Bertrand para descrever esse trecho.",
+          "description": "Identifique, em pelo menos 5 linhas, o potencial ecológico, a exploração biológica e a ação antrópica.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "O modelo mancha-corredor-matriz",
+      "description": "",
+      "questions": [
+        {
+          "title": "Em uma paisagem agrícola típica do Recôncavo Baiano, com pastagens extensas, fragmentos de Mata Atlântica e rios com mata ciliar, qual correspondência está CORRETA?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Matriz = Mata Atlântica; Manchas = pastagens; Corredores = rios.",
+            "Matriz = pastagem; Manchas = fragmentos de Mata Atlântica; Corredores = matas ciliares ao longo dos rios.",
+            "Matriz = rios; Manchas = pastagens; Corredores = fragmentos de Mata Atlântica.",
+            "Não é possível aplicar o modelo a paisagens agrícolas."
+          ]
+        },
+        {
+          "title": "Por que os corredores ecológicos são considerados estratégicos para a conservação?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Porque aumentam a área total dos fragmentos.",
+            "Porque facilitam o fluxo gênico e o deslocamento de organismos entre manchas de habitat, reduzindo os efeitos do isolamento e da fragmentação.",
+            "Porque impedem a expansão da matriz agrícola.",
+            "Porque substituem a necessidade de unidades de conservação."
+          ]
+        },
+        {
+          "title": "Observe a imagem de satélite abaixo (ou use o Google Earth para localizar uma área rural que você conhece). Identifique e descreva: (a) a matriz, (b) pelo menos duas manchas e (c) pelo menos um corredor. Justifique cada classificação.",
+          "description": "Mínimo 5 linhas. Se usar o Google Earth, indique o nome do município e as coordenadas aproximadas.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Síntese integradora",
+      "description": "",
+      "questions": [
+        {
+          "title": "Compare o geossistema de Bertrand e o modelo mancha-corredor-matriz de Forman. Em que se complementam? Em que divergem? Qual você considera mais útil para analisar a paisagem do semiárido? Justifique.",
+          "description": "Mínimo 6 linhas.",
+          "type": "PARAGRAPH",
+          "required": true
+        },
+        {
+          "title": "De 1 a 5, o quanto você se sente confiante para aplicar o modelo mancha-corredor-matriz a uma paisagem real?",
+          "description": "",
+          "type": "SCALE",
+          "required": true,
+          "scale_low": 1,
+          "scale_high": 5,
+          "scale_low_label": "Nada confiante",
+          "scale_high_label": "Muito confiante"
+        }
+      ]
+    }
+  ]
+}

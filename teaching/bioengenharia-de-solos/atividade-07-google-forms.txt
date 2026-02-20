@@ -1,0 +1,580 @@
+============================================================
+ATIVIDADE 07 — BIOENGENHARIA DE SOLOS (2026.1)
+Aulas 12–13: Gabião Vivo e Enrocamento Vegetado
+============================================================
+
+---------- TÍTULO DO FORMULÁRIO ----------
+
+Atividade 07 — Gabião Vivo: Dimensionamento e Coesão Radicular
+
+---------- DESCRIÇÃO DO FORMULÁRIO ----------
+
+Esta atividade faz parte das Aulas 12 e 13 (Gabiões Vivos / Enrocamento Vegetado) da disciplina Bioengenharia de Solos (UEFS 2026.1).
+
+O objetivo é verificar a estabilidade de um muro de gabiões vivos contra tombamento e deslizamento, avaliar a contribuição da coesão radicular ao longo do tempo (modelo sigmoidal) e selecionar espécies adequadas para vegetação do gabião. Você realizará cálculos de fatores de segurança e interpretará o efeito progressivo das raízes na estabilidade estrutural.
+
+Prazo de entrega: até o início da próxima aula.
+
+============================================================
+SEÇÃO 1 — IDENTIFICAÇÃO
+============================================================
+
+Título da seção: Identificação do(a) estudante
+Descrição da seção: (vazio)
+
+----------
+
+Pergunta 1
+Tipo: Resposta curta (obrigatória)
+Título: Nome completo
+Descrição: (vazio)
+
+----------
+
+Pergunta 2
+Tipo: Resposta curta (obrigatória)
+Título: Matrícula
+Descrição: (vazio)
+
+============================================================
+SEÇÃO 2 — CENÁRIO: MARGEM DO RIO JACUÍPE
+============================================================
+
+Título da seção: Dados do projeto de proteção de margem
+Descrição da seção: A margem esquerda do Rio Jacuípe, no trecho próximo à cidade de Feira de Santana–BA, apresenta erosão marginal ativa com recuo de 2–3 m nos últimos 5 anos. A prefeitura contratou um projeto de estabilização com gabiões vivos (gabiões-caixa com solo e vegetação nos interstícios).
+
+Dados do projeto:
+• Altura da margem a estabilizar (H): 3,2 m
+• Tipo de gabião-caixa: 1,0 m × 1,0 m × 1,0 m (largura × altura × profundidade)
+• Número de camadas: 3 (empilhamento vertical → 3,0 m de muro)
+• Largura da base: 1,0 m (sem alargamento)
+• Peso específico do gabião preenchido (γ_gab): 17,0 kN/m³
+• Empuxo ativo do solo (resultante horizontal): E_a = 28,5 kN/m
+• Ponto de aplicação de E_a: H/3 = 1,0 m acima da base
+• Ângulo de atrito na base (δ): 30°
+• Coesão do solo sem raízes (c): 5,0 kPa
+
+Modelo de coesão radicular (sigmoidal):
+• Δc_r(t) = Δc_r_max / (1 + a × e^(−b × t))
+• Parâmetros: Δc_r_max = 12 kPa; a = 7,39; b = 0,80
+• t = tempo em anos após o plantio
+
+Fatores de segurança mínimos (NBR 11682):
+• FS_tombamento ≥ 1,5
+• FS_deslizamento ≥ 1,5
+
+----------
+
+Pergunta 3
+Tipo: Múltipla escolha (obrigatória)
+Título: Qual é a principal diferença entre um gabião convencional e um gabião VIVO?
+
+Opção A: O gabião vivo usa pedras maiores que o convencional
+Opção B: O gabião vivo incorpora solo e vegetação entre as camadas, de modo que as raízes se integram à estrutura ao longo do tempo
+Opção C: O gabião vivo não utiliza tela metálica — é feito apenas de terra
+Opção D: O gabião vivo é temporário e deve ser removido após 2 anos
+Opção E: Não há diferença — os termos são sinônimos
+
+============================================================
+SEÇÃO 3 — VERIFICAÇÃO AO TOMBAMENTO
+============================================================
+
+Título da seção: Fator de segurança contra tombamento
+Descrição da seção: O tombamento ocorre quando o momento desestabilizante (empuxo ativo × braço) supera o momento estabilizante (peso próprio × braço) em relação ao pé do muro (ponto O).
+
+Para o muro de gabiões (3 camadas de 1,0 × 1,0 m, sem alargamento de base):
+• Peso do muro por metro linear: W = 3 × (1,0 × 1,0 × 17,0) = 51,0 kN/m
+• Braço do peso em relação a O: x_w = 1,0 / 2 = 0,50 m
+• Momento estabilizante: M_est = W × x_w = 51,0 × 0,50 = 25,5 kN·m/m
+• Momento desestabilizante: M_des = E_a × (H/3) = 28,5 × 1,0 = 28,5 kN·m/m
+• FS_tombamento = M_est / M_des
+
+----------
+
+Pergunta 4
+Tipo: Múltipla escolha (obrigatória)
+Título: Calcule o fator de segurança ao tombamento (FS_tomb). Qual é o resultado e a classificação?
+
+Opção A: FS_tomb = 1,89 → SEGURO (≥ 1,5)
+Opção B: FS_tomb = 1,50 → NO LIMITE (= 1,5)
+Opção C: FS_tomb = 1,21 → MARGINAL (< 1,5)
+Opção D: FS_tomb = 0,89 → INSEGURO (< 1,0)
+Opção E: FS_tomb = 0,50 → MUITO INSEGURO (< 1,0)
+
+----------
+
+Pergunta 5
+Tipo: Múltipla escolha (obrigatória)
+Título: O FS_tombamento < 1,0 indica que o muro TOMBARÁ conforme projetado. Qual é a medida corretiva mais adequada para aumentar o FS_tombamento?
+
+Opção A: Aumentar a altura do muro (adicionar uma 4ª camada)
+Opção B: Aumentar a largura da base do muro (usar gabiões mais largos na 1ª camada, criando seção escalonada)
+Opção C: Reduzir o ângulo de atrito na base
+Opção D: Retirar o solo entre os gabiões para reduzir o peso
+Opção E: Inclinar o muro para a frente (em direção ao rio)
+
+----------
+
+Pergunta 6
+Tipo: Parágrafo (obrigatória)
+Título: Se a base do muro for alargada para 2,0 m (gabião de 2,0 × 1,0 m na 1ª camada), recalcule M_est e FS_tombamento. A estrutura fica segura?
+Descrição: Dica: o novo peso da 1ª camada = 2,0 × 1,0 × 17,0 = 34 kN/m. As camadas superiores permanecem com 1,0 m de largura. Recalcule o braço do peso resultante.
+
+============================================================
+SEÇÃO 4 — VERIFICAÇÃO AO DESLIZAMENTO
+============================================================
+
+Título da seção: Fator de segurança contra deslizamento
+Descrição da seção: O deslizamento ocorre quando o empuxo ativo supera a resistência ao atrito na base.
+
+Sem raízes (t = 0):
+• Força resistente: F_res = W × tan(δ) + c × B
+  onde: W = 51,0 kN/m, δ = 30°, c = 5,0 kPa, B = 1,0 m
+• F_res = 51,0 × tan(30°) + 5,0 × 1,0
+• F_res = 51,0 × 0,577 + 5,0 = 29,4 + 5,0 = 34,4 kN/m
+• FS_deslizamento = F_res / E_a
+
+----------
+
+Pergunta 7
+Tipo: Múltipla escolha (obrigatória)
+Título: Calcule o FS_deslizamento sem contribuição das raízes (t = 0). Qual é o resultado?
+
+Opção A: FS_desl = 1,89 → SEGURO
+Opção B: FS_desl = 1,50 → NO LIMITE
+Opção C: FS_desl = 1,21 → MARGINAL (< 1,5)
+Opção D: FS_desl = 0,89 → INSEGURO
+Opção E: FS_desl = 0,60 → MUITO INSEGURO
+
+----------
+
+Pergunta 8
+Tipo: Parágrafo (obrigatória)
+Título: Se as raízes da vegetação adicionarem Δc_r = 5,0 kPa à coesão do solo na base (após alguns anos), recalcule F_res e FS_deslizamento. A estrutura atinge FS ≥ 1,5?
+Descrição: F_res_novo = W × tan(δ) + (c + Δc_r) × B. E_a permanece 28,5 kN/m.
+
+----------
+
+Pergunta 9
+Tipo: Parágrafo (obrigatória)
+Título: Discuta o significado prático de o FS_deslizamento passar de 1,21 (sem raízes) para 1,38 (com raízes +5 kPa). A vegetação é suficiente para tornar a estrutura SEGURA a longo prazo?
+Descrição: Considere: FS mínimo da NBR 11682 = 1,5. A coesão radicular continuará aumentando com o tempo?
+
+============================================================
+SEÇÃO 5 — COESÃO RADICULAR SIGMOIDAL
+============================================================
+
+Título da seção: Evolução temporal da coesão radicular
+Descrição da seção: O modelo sigmoidal (logístico) descreve o aumento da coesão radicular ao longo do tempo:
+
+Δc_r(t) = Δc_r_max / (1 + a × e^(−b × t))
+
+Parâmetros calibrados para espécies de raízes pivotantes em Latossolo:
+• Δc_r_max = 12 kPa (coesão máxima assintótica)
+• a = 7,39
+• b = 0,80 (taxa de crescimento, ano⁻¹)
+• t = tempo em anos após o plantio
+
+----------
+
+Pergunta 10
+Tipo: Parágrafo (obrigatória)
+Título: Calcule Δc_r para t = 1 ano. Mostre todos os passos.
+Descrição: Δc_r(1) = 12 / (1 + 7,39 × e^(−0,80 × 1)). Nota: e^(−0,80) ≈ 0,449.
+
+----------
+
+Pergunta 11
+Tipo: Parágrafo (obrigatória)
+Título: Calcule Δc_r para t = 5 anos. Mostre todos os passos.
+Descrição: Δc_r(5) = 12 / (1 + 7,39 × e^(−0,80 × 5)). Nota: e^(−4,0) ≈ 0,0183.
+
+----------
+
+Pergunta 12
+Tipo: Parágrafo (obrigatória)
+Título: Interprete a variação de Δc_r entre t = 1 ano (~2,8 kPa) e t = 5 anos (~10,6 kPa). Por que o crescimento é lento no início, rápido no meio e desacelera ao final? Qual é o significado biológico de cada fase?
+Descrição: Relacione com o desenvolvimento do sistema radicular (estabelecimento → crescimento exponencial → maturidade).
+
+============================================================
+SEÇÃO 6 — SELEÇÃO DE ESPÉCIES PARA O GABIÃO VIVO
+============================================================
+
+Título da seção: Espécies indicadas
+Descrição da seção: A vegetação do gabião vivo deve atender simultaneamente a critérios de: (1) sistema radicular profundo e denso, (2) tolerância a encharcamento periódico, (3) capacidade de propagação por estacas (para inserção entre camadas), (4) fixação de nitrogênio (desejável) e (5) não ser espécie exótica invasora.
+
+----------
+
+Pergunta 13
+Tipo: Caixas de seleção (obrigatória)
+Título: Selecione TODAS as espécies adequadas para vegetação de gabiões vivos em margens fluviais do semiárido baiano.
+
+Opção A: Sabiá (*Mimosa caesalpiniifolia*) — leguminosa arbórea, raízes profundas, fixadora de N₂
+Opção B: Gliricídia (*Gliricidia sepium*) — leguminosa, fácil propagação por estacas, raízes vigorosas
+Opção C: Ingá (*Inga* spp.) — árvore ripária, fixadora de N₂, tolerante a inundação
+Opção D: Eucalipto (*Eucalyptus* spp.) — crescimento rápido, madeira comercializável
+Opção E: Bambu (*Bambusa vulgaris*) — crescimento rápido, sistema radicular superficial
+
+----------
+
+Pergunta 14
+Tipo: Parágrafo (obrigatória)
+Título: Explique por que o eucalipto NÃO é adequado para gabiões vivos, mesmo sendo uma espécie de crescimento rápido. Apresente pelo menos 3 razões técnicas.
+Descrição: Considere: sistema radicular, alelopatia, demanda hídrica, biodiversidade.
+
+----------
+
+Pergunta 15
+Tipo: Escala linear (obrigatória)
+Título: De 1 a 5, o quanto você se sente confiante para verificar a estabilidade de um muro de gabiões vivos e avaliar a contribuição da vegetação?
+Escala: 1 = Nada confiante → 5 = Muito confiante
+
+----------
+
+Pergunta 16
+Tipo: Parágrafo (opcional)
+Título: Registre aqui dúvidas, comentários ou curiosidades que surgiram durante esta atividade.
+Descrição: (vazio)
+
+============================================================
+CONFIGURAÇÕES SUGERIDAS PARA O GOOGLE FORMS
+============================================================
+
+- Coletar e-mails: Sim
+- Limitar a 1 resposta: Sim
+- Permitir edição após envio: Sim
+- Mostrar barra de progresso: Sim
+- Embaralhar ordem das perguntas: Não
+- Mensagem de confirmação:
+  "Resposta registrada com sucesso! Obrigado pela participação.
+   Seus resultados serão discutidos na próxima aula."
+
+============================================================
+GABARITO / RESPOSTAS ESPERADAS (USO DO DOCENTE)
+============================================================
+
+PERGUNTA 3 — Diferença gabião convencional × gabião vivo
+-----------------------------------------
+★ Resposta correta: Opção B
+→ Justificativa: O gabião vivo (ou gabião vegetado) difere do
+  convencional pela incorporação de solo e vegetação entre as
+  camadas. Ramos ou estacas vivas são inseridos horizontalmente
+  entre os gabiões durante a montagem. Com o tempo, as raízes
+  penetram o solo circundante e o interior do gabião, integrando
+  a estrutura ao terreno e adicionando coesão progressiva. O
+  gabião convencional é inerte — depende exclusivamente do peso
+  e do atrito para estabilidade, sem ganho ao longo do tempo.
+  As demais opções são incorretas: ambos usam tela metálica (C),
+  o vivo é permanente (D), e os termos NÃO são sinônimos (E).
+
+
+PERGUNTA 4 — FS tombamento
+-----------------------------------------
+★ Resposta correta: Opção D (FS_tomb = 0,89 → INSEGURO)
+→ Justificativa:
+  FS_tomb = M_est / M_des
+  FS_tomb = 25,5 / 28,5 = 0,894 ≈ 0,89
+
+  FS < 1,0 significa que o momento desestabilizante SUPERA o
+  estabilizante — o muro tombaria se construído assim. O valor
+  mínimo (NBR 11682) é 1,5, portanto o muro está MUITO abaixo
+  da segurança exigida. Causa: a largura da base (1,0 m) é
+  insuficiente para a altura de 3,0 m e o empuxo de 28,5 kN/m.
+
+
+PERGUNTA 5 — Medida corretiva para tombamento
+-----------------------------------------
+★ Resposta correta: Opção B (aumentar largura da base)
+→ Justificativa: Aumentar a largura da base (escalonar a seção)
+  aumenta simultaneamente:
+  (1) O peso total do muro (mais material na base);
+  (2) O braço de alavanca do peso em relação ao ponto O (centro
+      de gravidade desloca-se para dentro do terreno).
+  Ambos os efeitos AUMENTAM M_est sem alterar M_des, elevando
+  o FS_tombamento. As demais opções são contraproducentes:
+  adicionar 4ª camada (A) aumenta H e E_a mais que M_est;
+  reduzir δ (C) piora o deslizamento; retirar solo (D) reduz
+  o peso; inclinar para frente (E) é estruturalmente perigoso.
+
+
+PERGUNTA 6 — Recálculo com base alargada
+-----------------------------------------
+★ Resposta esperada:
+
+Nova geometria (base de 2,0 m, camadas superiores de 1,0 m):
+
+1ª camada: 2,0 × 1,0 m → W₁ = 2,0 × 1,0 × 17,0 = 34,0 kN/m
+  Centroide: x₁ = 2,0/2 = 1,0 m
+
+2ª camada: 1,0 × 1,0 m (centralizada sobre a base)
+  → posição: de 0,50 a 1,50 m (centrada em 1,0 m)
+  W₂ = 1,0 × 1,0 × 17,0 = 17,0 kN/m
+  Centroide: x₂ = (0,50 + 1,50)/2 = 1,0 m
+
+3ª camada: idem → W₃ = 17,0 kN/m, x₃ = 1,0 m
+
+W_total = 34,0 + 17,0 + 17,0 = 68,0 kN/m
+x̄ = (34,0×1,0 + 17,0×1,0 + 17,0×1,0) / 68,0 = 68,0/68,0 = 1,0 m
+
+M_est = W_total × x̄ = 68,0 × 1,0 = 68,0 kN·m/m
+M_des = 28,5 kN·m/m (sem alteração)
+
+FS_tomb = 68,0 / 28,5 = 2,39
+
+→ FS = 2,39 > 1,5 → SEGURO ✓
+
+  Nota: Se as camadas superiores ficarem alinhadas pela face
+  frontal (não centralizadas), o resultado seria diferente. O
+  docente deve aceitar ambas as interpretações, desde que a
+  geometria seja justificada.
+
+→ Alternativa (camadas alinhadas pela face frontal):
+  2ª e 3ª camadas: de 0 a 1,0 m → centroide = 0,50 m
+  M_est = 34,0×1,0 + 17,0×0,50 + 17,0×0,50 = 34+8,5+8,5 = 51 kN·m/m
+  FS_tomb = 51 / 28,5 = 1,79 → SEGURO ✓ (mas menos folgado)
+
+
+PERGUNTA 7 — FS deslizamento sem raízes
+-----------------------------------------
+★ Resposta correta: Opção C (FS_desl = 1,21 → MARGINAL)
+→ Justificativa:
+  F_res = W × tan(δ) + c × B
+  F_res = 51,0 × tan(30°) + 5,0 × 1,0
+  F_res = 51,0 × 0,577 + 5,0
+  F_res = 29,4 + 5,0 = 34,4 kN/m
+
+  FS_desl = F_res / E_a = 34,4 / 28,5 = 1,207 ≈ 1,21
+
+  FS = 1,21 está abaixo do mínimo de 1,5 (NBR 11682). A
+  estrutura resiste ao deslizamento no curto prazo (FS > 1,0),
+  mas sem margem de segurança adequada. É "MARGINAL" — qualquer
+  aumento no empuxo (nível de cheia, saturação) pode levar à
+  ruptura.
+
+
+PERGUNTA 8 — FS deslizamento com raízes (+5 kPa)
+-----------------------------------------
+★ Resposta esperada:
+
+F_res_novo = W × tan(δ) + (c + Δc_r) × B
+F_res_novo = 51,0 × 0,577 + (5,0 + 5,0) × 1,0
+F_res_novo = 29,4 + 10,0 = 39,4 kN/m
+
+FS_desl = 39,4 / 28,5 = 1,382 ≈ 1,38
+
+→ FS = 1,38 — melhorou significativamente em relação a 1,21,
+  mas AINDA abaixo de 1,5. A vegetação contribui (+14% no FS),
+  mas isoladamente não é suficiente para atender a NBR 11682.
+
+  Se a base for alargada para 2,0 m (conforme Pergunta 6):
+  W = 68,0 kN/m; F_res = 68,0 × 0,577 + 10,0 = 39,2 + 10,0 = 49,2 kN/m
+  FS_desl = 49,2 / 28,5 = 1,73 → SEGURO ✓
+
+  → A combinação "base alargada + vegetação" resolve AMBOS os
+  mecanismos de ruptura (tombamento e deslizamento).
+
+
+PERGUNTA 9 — Interpretação da melhoria no FS
+-----------------------------------------
+Resposta esperada (exemplo):
+
+"A melhoria de FS = 1,21 → 1,38 (+14%) demonstra a contribuição
+real da vegetação na estabilidade. Porém, o FS = 1,38 ainda está
+abaixo do mínimo normativo de 1,5, indicando que a vegetação
+sozinha é INSUFICIENTE como única medida corretiva.
+
+No entanto, à medida que o sistema radicular se desenvolve, a
+coesão radicular seguirá aumentando conforme o modelo sigmoidal:
+de ~5 kPa (poucos anos) para até 12 kPa (assintótico). Com
+Δc_r = 12 kPa:
+
+F_res = 29,4 + (5 + 12) × 1,0 = 46,4 kN/m
+FS_desl = 46,4 / 28,5 = 1,63 → SEGURO ✓
+
+Portanto, a solução de projeto deve combinar:
+(1) Alargamento da base (segurança imediata no t = 0);
+(2) Vegetação (ganho progressivo, atingindo FS > 1,5 a longo
+    prazo mesmo se a coesão natural do solo diminuir por
+    saturação durante cheias)."
+
+Critérios de avaliação:
+• Reconheceu que 1,38 < 1,5 (insuficiente)?
+• Mencionou que a coesão radicular crescerá com o tempo?
+• Sugeriu combinação de medidas (estrutural + vegetal)?
+
+
+PERGUNTA 10 — Δc_r para t = 1 ano
+-----------------------------------------
+★ Resposta esperada:
+
+Δc_r(1) = 12 / (1 + 7,39 × e^(−0,80 × 1))
+         = 12 / (1 + 7,39 × e^(−0,80))
+         = 12 / (1 + 7,39 × 0,449)
+         = 12 / (1 + 3,32)
+         = 12 / 4,32
+         = 2,78 kPa ≈ 2,8 kPa
+
+→ Justificativa: Após 1 ano, a coesão radicular é de apenas
+  ~2,8 kPa (23% do máximo de 12 kPa). Isso reflete a fase de
+  ESTABELECIMENTO: as raízes ainda estão se desenvolvendo, com
+  pouca ramificação e penetração superficial (~20–30 cm). A
+  contribuição para a estabilidade é modesta, mas já mensurável.
+
+
+PERGUNTA 11 — Δc_r para t = 5 anos
+-----------------------------------------
+★ Resposta esperada:
+
+Δc_r(5) = 12 / (1 + 7,39 × e^(−0,80 × 5))
+         = 12 / (1 + 7,39 × e^(−4,0))
+         = 12 / (1 + 7,39 × 0,0183)
+         = 12 / (1 + 0,135)
+         = 12 / 1,135
+         = 10,57 kPa ≈ 10,6 kPa
+
+→ Justificativa: Após 5 anos, a coesão radicular atinge ~10,6
+  kPa (88% do máximo). O sistema radicular está próximo da
+  maturidade, com raízes profundas (>1,0 m), ramificadas e
+  integradas ao solo/gabião. A partir deste ponto, o ganho é
+  cada vez menor (assíntota).
+
+
+PERGUNTA 12 — Interpretação do modelo sigmoidal
+-----------------------------------------
+Resposta esperada (exemplo):
+
+"O modelo sigmoidal apresenta três fases distintas:
+
+FASE 1 — Estabelecimento (0–2 anos): crescimento lento.
+As plantas estão enraizando, com poucas raízes finas e
+penetração rasa. Biologicamente, a planta aloca energia na
+parte aérea (folhas, caule) antes de investir em raízes
+profundas. Δc_r cresce de 0 para ~4 kPa.
+
+FASE 2 — Crescimento exponencial (2–4 anos): crescimento
+rápido. As raízes ramificam-se intensamente na zona de solo
+entre os gabiões, aumentando a densidade de raízes finas
+(responsáveis pela maior parte da coesão). A planta atinge
+maturidade reprodutiva e maximiza o investimento em raízes.
+Δc_r salta de ~4 para ~9 kPa.
+
+FASE 3 — Maturidade (>4 anos): desaceleração assintótica.
+O espaço físico e os recursos do solo limitam o crescimento
+radicular adicional. As raízes mortas são parcialmente
+substituídas por novas, mas o saldo líquido de coesão
+estabiliza-se próximo ao máximo (~12 kPa). Há equilíbrio
+entre crescimento e senescência radicular."
+
+Critérios de avaliação:
+• Identificou as 3 fases (lento → rápido → assíntota)?
+• Relacionou cada fase com processos biológicos?
+• Demonstrou compreensão de que a coesão tem limite máximo?
+
+
+PERGUNTA 13 — Seleção de espécies
+-----------------------------------------
+★ Respostas corretas: Opções A, B e C (sabiá, gliricídia, ingá)
+→ Justificativa:
+  • Sabiá (*M. caesalpiniifolia*): leguminosa arbórea nativa do
+    semiárido, raízes profundas e densas, fixa N₂, tolera solos
+    pobres, fornece Δc_r elevado.
+  • Gliricídia (*G. sepium*): leguminosa de fácil propagação por
+    estacas (estacas vivas inseridas entre as camadas do gabião),
+    raízes vigorosas, fixa N₂, já utilizada em sistemas de
+    bioengenharia no Nordeste.
+  • Ingá (*Inga* spp.): árvore ripária nativa, adaptada a margens
+    fluviais, tolera encharcamento periódico, fixa N₂ em simbiose
+    com *Rhizobium*, excelente para gabiões em margens de rio.
+
+  INCORRETAS:
+  • Eucalipto (D): espécie exótica com problemas de alelopatia,
+    alta demanda hídrica, raízes laterais superficiais e não
+    adequado para bioengenharia (ver Pergunta 14).
+  • Bambu (E): sistema radicular superficial e rizomatoso, não
+    fornece raízes pivotantes para ancoragem profunda; pode
+    desestabilizar a tela do gabião pelo crescimento dos rizomas.
+
+
+PERGUNTA 14 — Por que eucalipto não é adequado
+-----------------------------------------
+Resposta esperada (exemplo):
+
+"O eucalipto NÃO é adequado para gabiões vivos por pelo menos
+3 razões:
+
+(1) SISTEMA RADICULAR INADEQUADO: O eucalipto desenvolve raízes
+laterais superficiais extensas, mas não forma raízes pivotantes
+profundas que ancorem o gabião ao substrato. A coesão radicular
+gerada é concentrada nos primeiros 30 cm, insuficiente para
+estabilidade de um muro de 3 m.
+
+(2) ALELOPATIA: Folhas e cascas de eucalipto liberam compostos
+alelopáticos (terpenos, fenólicos) que inibem a germinação e o
+crescimento de outras espécies. Isso impede a diversificação
+vegetal necessária para resiliência do sistema.
+
+(3) DEMANDA HÍDRICA EXCESSIVA: O eucalipto consome 30–60 L de
+água/dia, podendo ressecar o solo ao redor do gabião e reduzir
+a coesão por sucção matricial em períodos secos. Em margens
+fluviais do semiárido, isso é contraproducente.
+
+(4) Bônus: é espécie exótica com potencial invasor em áreas
+ripárias, não contribui para a biodiversidade local e pode
+desequilibrar a fauna de polinizadores e dispersores."
+
+Critérios de avaliação:
+• Mencionou raízes superficiais/inadequadas?
+• Citou alelopatia?
+• Citou alta demanda hídrica?
+• Apresentou pelo menos 3 razões?
+
+
+PERGUNTA 15 — Escala linear (autoavaliação)
+---------------------------------------------
+Não há resposta certa. Comparar com atividades anteriores.
+
+
+PERGUNTA 16 — Espaço livre
+---------------------------------------
+Respostas possíveis comuns:
+• "O gabião vivo resiste a enchentes extremas?"
+• "Quanto tempo dura a tela metálica do gabião?"
+• "É possível usar espécies frutíferas no gabião vivo?"
+• "Como monitorar a coesão radicular em campo?"
+
+============================================================
+NOTAS PARA O DOCENTE
+============================================================
+
+OBJETIVO PEDAGÓGICO:
+Esta atividade integra engenharia de estruturas de contenção
+(verificações de tombamento e deslizamento) com ecologia
+aplicada (coesão radicular sigmoidal e seleção de espécies).
+O ponto central é demonstrar que o gabião vivo é uma
+SOLUÇÃO INTEGRADA em que a engenharia fornece segurança
+imediata (t = 0) e a vegetação fornece segurança progressiva
+(t > 0), com a combinação superando cada componente isolado.
+
+TEMPO ESTIMADO DE RESPOSTA: 40–50 minutos
+
+NOTA SOBRE AS VERIFICAÇÕES:
+Os valores de empuxo (E_a = 28,5 kN/m) foram simplificados para
+fins didáticos. Na prática, o cálculo de empuxo ativo requer
+dados de φ, γ_solo, coesão e nível d'água (teoria de Rankine ou
+Coulomb). O docente pode apresentar o cálculo completo em sala
+e simplificar para a atividade.
+
+NOTA SOBRE O MODELO SIGMOIDAL:
+Os parâmetros (a = 7,39, b = 0,80) são representativos, baseados
+em curvas de crescimento radicular da literatura. Na prática,
+esses valores variam conforme espécie, tipo de solo, clima e
+manejo. O importante é que o estudante compreenda a FORMA do
+modelo (S) e interprete biologicamente cada fase.
+
+ALINHAMENTO COM O PLANO:
+- Aula 12: Gabiões Vivos — estrutura, ancoragem, vegetação,
+  verificações de estabilidade.
+- Aula 13: Enrocamento Vegetado — riprap com plantio
+  intersticial, dimensionamento.
+- Avaliação contínua: compõe a nota de participação/exercícios.
+============================================================

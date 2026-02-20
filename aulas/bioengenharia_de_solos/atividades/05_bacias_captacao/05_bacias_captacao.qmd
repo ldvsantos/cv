@@ -1,0 +1,234 @@
+---
+title: "Bioengenharia de Solos"
+subtitle: "Atividade 05  —  Dimensionamento de Bacias de Captação (Barraginhas)<br>Curso de Engenharia Agronômica"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026-05-22"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Bioengenharia de Solos | Atividade 05"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Atividade {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Estrutura
+
+- [1]{.circle} Revisão: conceito de barraginhas
+- [2]{.circle} Cenário: estrada rural com erosão lateral
+- [3]{.circle} Parte A — Área de contribuição e volume de escoamento
+- [4]{.circle} Parte B — Dimensionamento das bacias
+- [5]{.circle} Parte C — Espaçamento e planta de locação
+- [6]{.circle} Critérios de avaliação
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo**
+
+Dimensionar um **sistema de bacias de captação** (barraginhas) ao longo de uma estrada rural, calculando o **volume de escoamento** (método SCS-CN), as **dimensões da bacia**, o **espaçamento** entre unidades e a **vida útil** estimada.
+:::
+:::
+:::
+
+---
+
+# [1  —  REVISÃO]{.section-header}
+
+## Bacias de captação — fundamentos {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+### Funções principais
+
+1. **Retenção de sedimentos** carreados pelo escoamento superficial
+2. **Recarga de aquíferos** por infiltração forçada
+3. **Amortecimento de cheias** locais
+4. **Proteção de estradas rurais** contra erosão lateral
+
+### Método SCS-CN (Cap. 4 e 8)
+
+Volume de escoamento direto:
+
+$$Q = \frac{(P - 0{,}2 \times S)^2}{P + 0{,}8 \times S}$$
+
+Onde: $S = \frac{25400}{CN} - 254$ (mm); $P$ = precipitação (mm).
+:::
+
+::: {.column width="45%"}
+::: {.callout-important}
+### Capítulo de referência
+- **Cap. 8** — Bacias de Captação e Barraginhas
+- **Cap. 4** — Método SCS-CN
+:::
+
+### Vazão de pico (triangular)
+
+$$q_p = \frac{0{,}208 \times A \times Q}{T_p}$$
+
+Onde: $A$ = área (km²); $T_p$ = tempo de pico (h).
+:::
+:::
+
+---
+
+# [2  —  CENÁRIO-PROBLEMA]{.section-header}
+
+## Estrada rural com erosão lateral {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Caracterização
+
+| Parâmetro | Valor |
+|-----------|-------|
+| Localização | Distrito de Humildes – Feira de Santana, BA |
+| Tipo | Estrada vicinal não pavimentada |
+| Extensão do trecho | 800 m |
+| Largura da estrada | 6 m |
+| Declividade longitudinal | 4% |
+| Declividade lateral (encosta) | 12% |
+| Solo | Latossolo Vermelho-Amarelo |
+| Precipitação de projeto (P₁₀) | 85 mm (Tr = 10 anos, duração 1 h) |
+| CN (pastagem + estrada) | 78 |
+:::
+
+::: {.column width="50%"}
+### Problema identificado
+
+A estrada concentra o escoamento superficial das encostas laterais, causando:
+
+- Sulcos profundos na lateral da estrada
+- Arraste de solo para áreas a jusante
+- Comprometimento do tráfego em período chuvoso
+- Assoreamento de uma nascente a 200 m a jusante
+
+::: {.callout-note}
+### Proposta
+Implantar barraginhas no lado de jusante da estrada para captar e infiltrar o escoamento.
+:::
+:::
+:::
+
+---
+
+# [3  —  PARTE A: ÁREA E VOLUME DE ESCOAMENTO]{.section-header}
+
+## Questões {.smaller-text}
+
+**A1.** Calcule a **retenção potencial máxima** ($S$) do solo:
+
+$$S = \frac{25400}{CN} - 254 = \frac{25400}{78} - 254$$
+
+**A2.** Verifique se a **precipitação de projeto** ($P = 85$ mm) gera escoamento. Condição: $P > 0{,}2 \times S$ (abstração inicial).
+
+**A3.** Calcule o **volume de escoamento direto** ($Q$, em mm) pela equação SCS-CN:
+
+$$Q = \frac{(P - 0{,}2S)^2}{P + 0{,}8S}$$
+
+**A4.** Considerando que cada bacia receberá o escoamento de um trecho de **50 m de estrada** (6 m de largura) + encosta lateral (faixa de 30 m × 50 m), calcule a **área de contribuição** ($A_c$) para cada bacia e o **volume de escoamento** ($V_e = Q \times A_c$) em m³.
+
+**A5.** Se a **velocidade de infiltração básica (VIB)** do solo é **15 mm/h**, em quanto tempo o volume captado será infiltrado (supondo a bacia cheia)?
+
+---
+
+# [4  —  PARTE B: DIMENSIONAMENTO DAS BACIAS]{.section-header}
+
+## Questões {.smaller-text}
+
+**B1.** A bacia terá formato de **meia-lua** (geometria semicircular na planta, perfil trapezoidal em corte). Calcule as dimensões mínimas para armazenar o volume de escoamento calculado em A4.
+
+Parâmetros sugeridos:
+
+- Profundidade: $h = 1{,}0$ m
+- O volume de um tronco de cone semicircular pode ser aproximado por:
+
+$$V_{bacia} = \frac{\pi \times h}{6} \times (R_b^2 + R_t^2 + R_b \times R_t)$$
+
+Onde $R_b$ = raio da base e $R_t$ = raio do topo. Considere taludes 1:1,5 (V:H), logo $R_t = R_b + 1{,}5h$.
+
+**B2.** Determine o **raio do topo** ($R_t$) necessário para que $V_{bacia} \geq V_e$.
+
+**B3.** Calcule a **área em planta** de cada bacia (semicírculo de raio $R_t$):
+
+$$A_{planta} = \frac{\pi \times R_t^2}{2}$$
+
+**B4.** Considerando que 30% do volume será ocupado por **sedimentos** ao longo de 1 ano, qual é a **vida útil** estimada (em anos) antes da primeira manutenção (quando 70% do volume estiver assoreado)?
+
+---
+
+# [5  —  PARTE C: ESPAÇAMENTO E LOCAÇÃO]{.section-header}
+
+## Questões {.smaller-text}
+
+**C1.** Calcule o **número total de bacias** para os 800 m de estrada, considerando espaçamento de **50 m** entre elas:
+
+$$N = \frac{L}{E_{bacias}} + 1$$
+
+**C2.** Elabore um **croqui em planta** (vista superior) mostrando:
+
+- Estrada (800 m)
+- Posicionamento das bacias (lado de jusante)
+- Espaçamento
+- Direção do fluxo
+- Encosta e nascente a jusante
+- Escala gráfica
+
+**C3.** Elabore o **corte transversal** de uma bacia mostrando:
+
+- Perfil trapezoidal (taludes 1:1,5)
+- Profundidade, raio de base e de topo
+- Nível máximo de sedimento (vida útil)
+- Camada de revegetação no talude (grama ou vetiver)
+
+**C4.** Estime o **custo total** do sistema:
+
+| Item | Valor |
+|------|-------|
+| Escavação mecânica (retro) — m³ | R$ 18,00 |
+| Mudas de vetiver (unidade) | R$ 1,50 |
+| Plantio de gramíneas (m²) | R$ 3,00 |
+| Mobilização da máquina (diária) | R$ 800,00 |
+
+**C5.** Compare o custo por hectare protegido com o custo de manutenção anual da estrada **sem** barraginhas (estimado em R$ 2.500/km/ano). A partir de quantos anos o investimento se paga?
+
+---
+
+## Critérios de avaliação {.smaller-text}
+
+| Critério | Peso | Descrição |
+|----------|------|-----------|
+| **Parte A** — Escoamento | 30% | Cálculos SCS-CN corretos, volume de escoamento |
+| **Parte B** — Dimensionamento | 35% | Dimensões da bacia, vida útil |
+| **Parte C** — Locação e custos | 35% | Croquis, custo total, análise de retorno |
+
+::: {.callout-important}
+### {{< fa arrow-up-right-from-square >}} Envio via Google Forms
+Esta atividade deve ser respondida diretamente no **Google Forms** da disciplina.
+
+[Abrir Formulário — Atividade 05](../../teaching/bioengenharia-de-solos/index.qmd){.btn .btn-primary target="_blank"}
+
+- **Prazo:** até o início da próxima aula
+- As respostas são salvas automaticamente
+:::
+
+---
+
+## Referências {.smaller-text}
+
+- SANTOS, L. D. V. **Bioengenharia de Solos** — Cap. 8. UEFS, 2026.
+- BARROS, L. C. *Barraginhas: água de chuva para todos*. Embrapa Milho e Sorgo, 2011.
+- USDA-NRCS. *National Engineering Handbook: Part 630 — Hydrology*. 2004.

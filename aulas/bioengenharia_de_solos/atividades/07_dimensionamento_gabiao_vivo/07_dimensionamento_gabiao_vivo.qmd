@@ -1,0 +1,239 @@
+---
+title: "Bioengenharia de Solos"
+subtitle: "Atividade 07  —  Dimensionamento Estrutural de Gabião Vivo<br>Curso de Engenharia Agronômica"
+author: "Luiz Diego Vidal Santos"
+institute: "Universidade Estadual de Feira de Santana (UEFS)"
+date: "2026-06-19"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Bioengenharia de Solos | Atividade 07"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Atividade {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Estrutura
+
+- [1]{.circle} Revisão: conceito de gabião vivo
+- [2]{.circle} Cenário: margem fluvial em erosão
+- [3]{.circle} Parte A — Verificação de tombamento
+- [4]{.circle} Parte B — Verificação de deslizamento
+- [5]{.circle} Parte C — Coesão radicular e transição
+- [6]{.circle} Critérios de avaliação
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo**
+
+Dimensionar um **gabião vivo** para estabilização de margem fluvial, realizando as verificações de **tombamento** e **deslizamento**, e modelando a **transição estrutural → biológica** pela curva de coesão radicular.
+:::
+:::
+:::
+
+---
+
+# [1  —  REVISÃO]{.section-header}
+
+## As 3 fases do gabião vivo {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+| Fase | Período | Estabilidade por |
+|------|---------|-----------------|
+| **1. Estrutural** | 0–6 meses | Peso + atrito (gabião) |
+| **2. Transição** | 6–24 meses | Gabião + raízes em crescimento |
+| **3. Biológica** | > 24 meses | Sistema radicular consolidado |
+
+### Verificações necessárias
+
+1. **Tombamento:** $FS_T = \frac{M_R}{M_A} \geq 1{,}5$
+2. **Deslizamento:** $FS_D = \frac{F_R}{F_A} \geq 1{,}5$
+3. **Capacidade de carga:** $\sigma_{max} \leq \sigma_{adm}$
+:::
+
+::: {.column width="45%"}
+::: {.callout-important}
+### Capítulo de referência
+- **Cap. 14** — Gabião Vivo
+:::
+
+### Coesão radicular (curva sigmoidal)
+
+$$c_r(t) = c_{r,max} \times \frac{1}{1 + e^{-k(t - t_{50})}}$$
+
+Onde: $c_{r,max}$ = coesão máxima (kPa); $t_{50}$ = tempo para atingir 50% da coesão; $k$ = taxa de crescimento.
+:::
+:::
+
+---
+
+# [2  —  CENÁRIO-PROBLEMA]{.section-header}
+
+## Margem fluvial em erosão {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Caracterização
+
+| Parâmetro | Valor |
+|-----------|-------|
+| Localização | Rio Jacuípe, Feira de Santana – BA |
+| Extensão do trecho | 25 m |
+| Altura da margem | 3,0 m |
+| Solo da margem | Argissolo, γ = 18 kN/m³ |
+| Ângulo de atrito (φ) | 28° |
+| Coesão do solo (c) | 8 kPa |
+| Nível de água normal | 1,0 m acima da base |
+| Nível de cheia (Tr 10 anos) | 2,5 m acima da base |
+| Velocidade de fluxo (cheia) | 2,0 m/s |
+:::
+
+::: {.column width="50%"}
+### Geometria proposta do gabião
+
+| Parâmetro | Valor |
+|-----------|-------|
+| Tipo | Gabião caixa (tela hexagonal dupla torção) |
+| Dimensão das caixas | 1,0 m × 1,0 m × 2,0 m (L × H × P) |
+| Número de camadas | 3 (altura total = 3,0 m) |
+| Peso específico (pedra + vazios) | γ_g = 16 kN/m³ |
+| Recuo entre camadas | 0,15 m (escalonamento) |
+| Estacas vivas | Entre cada camada (gliricídia/sabiá) |
+:::
+:::
+
+---
+
+# [3  —  PARTE A: VERIFICAÇÃO DE TOMBAMENTO]{.section-header}
+
+## Questões {.smaller-text}
+
+**A1.** Calcule o **peso total** do gabião (por metro linear de extensão):
+
+- Camada 1 (base): $W_1 = \gamma_g \times L_1 \times H \times 1{,}0$ (1 m de extensão)
+- Camada 2: $W_2 = \gamma_g \times L_2 \times H \times 1{,}0$
+- Camada 3 (topo): $W_3 = \gamma_g \times L_3 \times H \times 1{,}0$
+
+Onde: $L_1 = 2{,}0$ m; $L_2 = 2{,}0 - 0{,}15 = 1{,}85$ m; $L_3 = 1{,}85 - 0{,}15 = 1{,}70$ m.
+
+**A2.** Calcule o **empuxo ativo** do solo (condição de cheia — $H_w = 2{,}5$ m):
+
+$$E_a = \frac{1}{2} \times \gamma \times H^2 \times K_a - 2c\sqrt{K_a} \times H$$
+
+Onde: $K_a = \tan^2(45° - \phi/2)$; $H$ = 3,0 m.
+
+Adicione o empuxo hidrostático para a parcela submersa.
+
+**A3.** Calcule o **momento resistente** ($M_R$) em relação ao ponto de tombamento (aresta externa da base):
+
+$$M_R = \sum W_i \times d_i$$
+
+Onde $d_i$ = distância do centro de gravidade de cada camada até a aresta.
+
+**A4.** Calcule o **momento atuante** ($M_A$):
+
+$$M_A = E_a \times \frac{H}{3} + E_w \times \frac{H_w}{3}$$
+
+**A5.** Determine o **fator de segurança ao tombamento**:
+
+$$FS_T = \frac{M_R}{M_A} \geq 1{,}5$$
+
+O gabião é estável contra tombamento? Se $FS_T < 1{,}5$, que ajuste propõe?
+
+---
+
+# [4  —  PARTE B: VERIFICAÇÃO DE DESLIZAMENTO]{.section-header}
+
+## Questões {.smaller-text}
+
+**B1.** Calcule a **força resistente** ao deslizamento:
+
+$$F_R = \sum W_i \times \tan(\delta)$$
+
+Onde: $\delta$ = ângulo de atrito gabião–solo ($\delta = \frac{2}{3}\phi \approx 19°$).
+
+**B2.** Calcule a **força atuante** (empuxo total horizontal):
+
+$$F_A = E_a + E_w$$
+
+**B3.** Determine o **fator de segurança ao deslizamento**:
+
+$$FS_D = \frac{F_R}{F_A} \geq 1{,}5$$
+
+**B4.** Caso o FS esteja no limite, calcule a **largura de base adicional** necessária para atingir $FS_D = 2{,}0$ (margem de segurança ampliada para área fluvial).
+
+---
+
+# [5  —  PARTE C: TRANSIÇÃO E COESÃO RADICULAR]{.section-header}
+
+## Questões {.smaller-text}
+
+**C1.** As estacas vivas de **gliricídia** (*Gliricidia sepium*) inseridas entre as camadas produzirão raízes que aumentarão progressivamente a estabilidade. Usando a curva sigmoidal de coesão radicular:
+
+$$c_r(t) = 15 \times \frac{1}{1 + e^{-0{,}15(t - 12)}}$$
+
+Onde $t$ está em meses, calcule $c_r$ para $t$ = 6, 12, 18, 24 e 36 meses.
+
+| t (meses) | $c_r$ (kPa) | % da coesão máxima |
+|-----------|------------|-------------------|
+| 6 | | |
+| 12 | | |
+| 18 | | |
+| 24 | | |
+| 36 | | |
+
+**C2.** Refaça a verificação de tombamento para $t = 24$ meses, adicionando a contribuição da coesão radicular como uma **força resistente adicional** ao longo da face posterior do gabião:
+
+$$F_{raiz} = c_r(24) \times H_{raiz} \times 1{,}0$$
+
+Considere $H_{raiz}$ = 2,0 m (profundidade de enraizamento em 24 meses).
+
+**C3.** Elabore um **gráfico** (esquemático) mostrando a evolução temporal de:
+
+- Contribuição estrutural do gabião (decresce: corrosão da tela)
+- Contribuição das raízes (cresce: curva sigmoidal)
+- Estabilidade total (soma)
+
+Indique o ponto de **transição completa** (quando raízes superam a contribuição do gabião).
+
+---
+
+## Critérios de avaliação {.smaller-text}
+
+| Critério | Peso | Descrição |
+|----------|------|-----------|
+| **Parte A** — Tombamento | 35% | Cálculos corretos de pesos, empuxos, momentos e FS_T |
+| **Parte B** — Deslizamento | 30% | Cálculos corretos de forças e FS_D |
+| **Parte C** — Coesão radicular | 35% | Curva sigmoidal, reanálise com raízes, gráfico de transição |
+
+::: {.callout-important}
+### {{< fa arrow-up-right-from-square >}} Envio via Google Forms
+Esta atividade deve ser respondida diretamente no **Google Forms** da disciplina.
+
+[Abrir Formulário — Atividade 07](../../teaching/bioengenharia-de-solos/index.qmd){.btn .btn-primary target="_blank"}
+
+- **Prazo:** até o início da próxima aula
+- As respostas são salvas automaticamente
+:::
+
+---
+
+## Referências {.smaller-text}
+
+- SANTOS, L. D. V. **Bioengenharia de Solos** — Cap. 14. UEFS, 2026.
+- GRAY, D. H.; SOTIR, R. B. *Biotechnical and Soil Bioengineering Slope Stabilization*. Wiley, 1996.
+- COPPIN, N. J.; RICHARDS, I. G. *Use of Vegetation in Civil Engineering*. CIRIA, 2007.

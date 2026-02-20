@@ -1,0 +1,191 @@
+{
+  "title": "[BS 2026.1] Atividade 04 — Dimensionamento de Paliçadas",
+  "description": "Esta atividade abrange o conteúdo da Aula 07 da disciplina Bioengenharia de Solos (UEFS 2026.1):\n• Cap. 7 — Paliçadas e Barreiras Transversais\n\nO objetivo é dimensionar paliçadas de madeira roliça e bambu para contenção de sedimentos em ravinas, calcular altura efetiva, espaçamento, capacidade de retenção e elaborar um croqui construtivo.\n\nPrazo de entrega: até o início da próxima aula.",
+  "sections": [
+    {
+      "title": "IDENTIFICAÇÃO",
+      "description": "",
+      "questions": [
+        {
+          "title": "Nome completo",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": true
+        },
+        {
+          "title": "Matrícula",
+          "description": "",
+          "type": "SHORT_ANSWER",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Conceitos de paliçadas",
+      "description": "Cenário: Ravina em pastagem degradada, Feira de Santana – BA.\n• Comprimento da ravina: 35 m\n• Largura média: 2,0 m  \n• Profundidade média: 1,20 m\n• Declividade do fundo (Sf): 0,10 (10%)\n• Solo: Argissolo Vermelho-Amarelo, textura franco-argilo-arenosa\n• Material disponível: troncos de eucalipto roliço (Ø 10–12 cm), bambu (Ø 8 cm), arame galvanizado",
+      "questions": [
+        {
+          "title": "Qual é a função principal de uma paliçada instalada dentro de uma ravina?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Aumentar a velocidade do escoamento para limpar a ravina.",
+            "Reduzir a velocidade do escoamento e reter sedimentos, diminuindo gradualmente a declividade do fundo.",
+            "Impermeabilizar o fundo da ravina para impedir infiltração.",
+            "Servir apenas como barreira visual para delimitar a área degradada."
+          ]
+        },
+        {
+          "title": "Para que uma paliçada funcione corretamente, os montantes (estacas verticais) devem ser enterrados a qual profundidade mínima?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "10 cm — o suficiente para se manter em pé.",
+            "Pelo menos 1/3 do comprimento total da estaca, normalmente 50–80 cm, para garantir ancoragem contra o empuxo da água e sedimentos.",
+            "200 cm — quanto mais profundo, melhor.",
+            "Não é necessário enterrar; basta apoiar no fundo da ravina."
+          ]
+        },
+        {
+          "title": "Quais dos seguintes cuidados construtivos são ESSENCIAIS na instalação de paliçadas? (marque todos os corretos)",
+          "description": "",
+          "type": "CHECKBOX",
+          "required": true,
+          "options": [
+            "Os travessões horizontais devem ser amarrados pelo lado de montante (face que recebe o fluxo).",
+            "A paliçada deve ter um vertedouro central para permitir extravasamento controlado durante cheias.",
+            "As laterais devem ser encaixadas nas paredes da ravina ('chaves laterais') para evitar erosão por contorno.",
+            "A base deve ter filtro de pedra ou geotêxtil para evitar erosão tubular (piping) sob a estrutura.",
+            "Deve-se usar apenas pregos (sem arame) para fixação."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dimensionamento — Altura e espaçamento",
+      "description": "Fórmula do espaçamento (E):\nE = H_ef / Sf\nonde H_ef = altura efetiva da paliçada (m) e Sf = declividade do fundo.\n\nRegra prática: H_ef ≤ 2/3 da profundidade da ravina.",
+      "questions": [
+        {
+          "title": "Para a ravina descrita (profundidade = 1,20 m), qual é a altura efetiva máxima (H_ef) recomendada?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "H_ef = 1,20 m (altura total da ravina)",
+            "H_ef = 0,80 m (= 2/3 × 1,20 m)",
+            "H_ef = 0,40 m (= 1/3 × 1,20 m)",
+            "H_ef = 0,60 m (= 1/2 × 1,20 m)"
+          ]
+        },
+        {
+          "title": "Usando H_ef = 0,80 m e Sf = 0,10, calcule o espaçamento entre paliçadas (E = H_ef / Sf). Qual resultado está correto?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "E = 0,80 / 0,10 = 8,0 m",
+            "E = 0,10 / 0,80 = 0,125 m",
+            "E = 0,80 × 0,10 = 0,08 m",
+            "E = 0,80 / 0,10 = 80,0 m"
+          ]
+        },
+        {
+          "title": "Quantas paliçadas serão necessárias para cobrir os 35 m de comprimento da ravina com espaçamento de 8,0 m?",
+          "description": "Lembre que: n = (L / E) + 1, incluindo a paliçada na cabeceira.",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "n = 35 / 8 = 4 paliçadas",
+            "n = (35 / 8) + 1 = 5 paliçadas (arredondando para cima)",
+            "n = (35 / 8) + 1 = 5,4 → 6 paliçadas",
+            "n = 35 / 8 = 4,4 → 4 paliçadas"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Capacidade de retenção e materiais",
+      "description": "Volume de retenção por paliçada (prisma trapezoidal):\nV_ret ≈ (H_ef × W × E) / 2\nonde W = largura da ravina.",
+      "questions": [
+        {
+          "title": "Calcule o volume de retenção de sedimentos por paliçada: V_ret ≈ (0,80 × 2,0 × 8,0) / 2",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "V_ret = 6,4 m³ por paliçada",
+            "V_ret = 12,8 m³ por paliçada",
+            "V_ret = 3,2 m³ por paliçada",
+            "V_ret = 0,64 m³ por paliçada"
+          ]
+        },
+        {
+          "title": "Com 5 paliçadas retendo 6,4 m³ cada, o volume total retido é 32,0 m³. Se a densidade do sedimento úmido é 1,4 t/m³, qual a massa total retida?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "32,0 × 1,4 = 44,8 toneladas",
+            "32,0 × 1,0 = 32,0 toneladas",
+            "32,0 / 1,4 = 22,9 toneladas",
+            "6,4 × 1,4 = 8,96 toneladas (apenas 1 paliçada)"
+          ]
+        },
+        {
+          "title": "Compare estacas de eucalipto roliço (Ø 10–12 cm) vs bambu (Ø 8 cm) para esta ravina. Indique vantagens e desvantagens de cada material e recomende qual usar e por quê.",
+          "description": "Considere: durabilidade, resistência ao apodrecimento, disponibilidade local, custo.\nMínimo 5 linhas.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Croqui e vegetação complementar",
+      "description": "",
+      "questions": [
+        {
+          "title": "Após a instalação das paliçadas, qual estratégia de revegetação complementar é mais indicada para acelerar a estabilização da ravina?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Plantio de vetiver em linhas entre paliçadas + estacas vivas de gliricídia nos taludes laterais.",
+            "Apenas semear braquiária no fundo — a pastagem cobre tudo.",
+            "Plantar árvores de grande porte (eucalipto adulto) dentro da ravina.",
+            "Nenhuma revegetação necessária — a paliçada resolve sozinha."
+          ]
+        },
+        {
+          "title": "Descreva em texto como seria o croqui construtivo de uma das paliçadas (vista frontal e lateral). Inclua: dimensões dos montantes, espaçamento entre montantes, travessões horizontais, chaves laterais e vertedouro.",
+          "description": "Mínimo 6 linhas. Se preferir, você pode fazer um desenho à mão e anexar como imagem na próxima aula.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Autoavaliação",
+      "description": "",
+      "questions": [
+        {
+          "title": "De 1 a 5, o quanto você se sente confiante para dimensionar e especificar paliçadas de bioengenharia?",
+          "description": "",
+          "type": "SCALE",
+          "required": true,
+          "scale_low": 1,
+          "scale_high": 5,
+          "scale_low_label": "Nada confiante",
+          "scale_high_label": "Muito confiante"
+        },
+        {
+          "title": "Espaço livre — registre qualquer dúvida ou comentário.",
+          "description": "",
+          "type": "PARAGRAPH",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

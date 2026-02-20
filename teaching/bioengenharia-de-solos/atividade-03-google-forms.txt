@@ -1,0 +1,468 @@
+============================================================
+ATIVIDADE 03 — BIOENGENHARIA DE SOLOS (2026.1)
+Aulas 05–06: Classificação de Feições Erosivas (EGC) e Revegetação
+============================================================
+
+---------- TÍTULO DO FORMULÁRIO ----------
+
+Atividade 03 — Classificação de Feições Erosivas e Estratégias de Revegetação
+
+---------- DESCRIÇÃO DO FORMULÁRIO ----------
+
+Esta atividade faz parte das Aulas 05 e 06 (Classificação de Feições Erosivas e Revegetação) da disciplina Bioengenharia de Solos (UEFS 2026.1).
+
+O objetivo é aplicar o sistema Elementary Gully Classification (EGC) para classificar feições erosivas reais a partir de dados geométricos e selecionar técnicas de bioengenharia e espécies vegetais adequadas para cada caso. Você analisará 4 feições erosivas (F1–F4) levantadas por drone em uma área de pastagem degradada.
+
+Prazo de entrega: até o início da próxima aula.
+
+============================================================
+SEÇÃO 1 — IDENTIFICAÇÃO
+============================================================
+
+Título da seção: Identificação do(a) estudante
+Descrição da seção: (vazio)
+
+----------
+
+Pergunta 1
+Tipo: Resposta curta (obrigatória)
+Título: Nome completo
+Descrição: (vazio)
+
+----------
+
+Pergunta 2
+Tipo: Resposta curta (obrigatória)
+Título: Matrícula
+Descrição: (vazio)
+
+============================================================
+SEÇÃO 2 — CENÁRIO: LEVANTAMENTO COM DRONE
+============================================================
+
+Título da seção: Dados de campo
+Descrição da seção: Um levantamento aerofotogramétrico com drone (RPAS) foi realizado em uma área de pastagem degradada (40 ha) no município de Conceição do Jacuípe–BA. O processamento fotogramétrico (SfM) gerou um ortomosaico com resolução de 2 cm/pixel e um MDT com resolução de 5 cm. A partir desses produtos, foram identificadas e medidas 4 feições erosivas (F1 a F4), cujas características geométricas são apresentadas abaixo.
+
+Dados das feições erosivas:
+
+| Feição | W (m) | D (m) | L (m) | W/D  | Sf (%) |
+|--------|-------|-------|-------|------|--------|
+| F1     | 0,25  | 0,20  | 12    | 1,25 | 8      |
+| F2     | 0,80  | 0,60  | 25    | 1,33 | 6      |
+| F3     | 2,50  | 1,80  | 55    | 1,39 | 5      |
+| F4     | 18,0  | 6,50  | 120   | 2,77 | 3      |
+
+Onde: W = largura, D = profundidade, L = comprimento, W/D = razão largura/profundidade, Sf = declividade do fundo.
+
+Critérios de classificação EGC:
+
+| Classe          | Profundidade | Largura   | Processo dominante                  |
+|-----------------|-------------|-----------|-------------------------------------|
+| Sulco           | < 0,3 m     | < 0,3 m   | Escoamento difuso concentrado       |
+| Ravina pequena  | 0,3–1,0 m   | 0,3–1,0 m | Escoamento concentrado com incisão  |
+| Ravina média    | 1,0–3,0 m   | 1,0–5,0 m | Escoamento concentrado + solapamento|
+| Ravina grande   | 3,0–5,0 m   | 5,0–15 m  | Múltiplos processos superficiais    |
+| Voçoroca        | > 5,0 m     | > 15 m    | Superficial + subsuperficial + grav.|
+
+============================================================
+SEÇÃO 3 — CLASSIFICAÇÃO DAS FEIÇÕES
+============================================================
+
+Título da seção: Aplique o sistema EGC
+Descrição da seção: Com base nos dados geométricos fornecidos e nos critérios de classificação, classifique cada feição erosiva.
+
+----------
+
+Pergunta 3
+Tipo: Múltipla escolha (obrigatória)
+Título: Classifique a feição F1 (W = 0,25 m, D = 0,20 m, L = 12 m) pelo sistema EGC.
+
+Opção A: Sulco
+Opção B: Ravina pequena
+Opção C: Ravina média
+Opção D: Ravina grande
+Opção E: Voçoroca
+
+----------
+
+Pergunta 4
+Tipo: Múltipla escolha (obrigatória)
+Título: Classifique a feição F2 (W = 0,80 m, D = 0,60 m, L = 25 m) pelo sistema EGC.
+
+Opção A: Sulco
+Opção B: Ravina pequena
+Opção C: Ravina média
+Opção D: Ravina grande
+Opção E: Voçoroca
+
+----------
+
+Pergunta 5
+Tipo: Múltipla escolha (obrigatória)
+Título: Classifique a feição F3 (W = 2,50 m, D = 1,80 m, L = 55 m) pelo sistema EGC.
+
+Opção A: Sulco
+Opção B: Ravina pequena
+Opção C: Ravina média
+Opção D: Ravina grande
+Opção E: Voçoroca
+
+----------
+
+Pergunta 6
+Tipo: Múltipla escolha (obrigatória)
+Título: Classifique a feição F4 (W = 18,0 m, D = 6,50 m, L = 120 m) pelo sistema EGC.
+
+Opção A: Sulco
+Opção B: Ravina pequena
+Opção C: Ravina média
+Opção D: Ravina grande
+Opção E: Voçoroca
+
+============================================================
+SEÇÃO 4 — ANÁLISE DAS RAZÕES W/D
+============================================================
+
+Título da seção: Interpretação da geometria das feições
+Descrição da seção: A razão W/D (largura/profundidade) é um indicador fundamental do processo dominante e da forma da seção transversal das feições.
+
+----------
+
+Pergunta 7
+Tipo: Múltipla escolha (obrigatória)
+Título: A feição F4 possui W/D = 2,77 (mais larga que profunda). O que essa razão indica sobre o processo erosivo dominante?
+
+Opção A: A feição está se aprofundando por incisão do talvegue
+Opção B: A feição está se alargando por desabamento das paredes laterais, possivelmente com contribuição do lençol freático
+Opção C: A feição está em equilíbrio e não evolui mais
+Opção D: A feição é muito recente e ainda não atingiu estabilidade
+Opção E: A razão W/D não fornece informação sobre processos
+
+----------
+
+Pergunta 8
+Tipo: Múltipla escolha (obrigatória)
+Título: A feição F1 possui W/D = 1,25, enquanto F4 possui W/D = 2,77. Quando W/D < 2 (feição mais profunda que larga em termos relativos), qual é o processo dominante esperado?
+
+Opção A: Alargamento lateral por desabamento
+Opção B: Aprofundamento por erosão concentrada com incisão ativa do fundo
+Opção C: Estabilização completa do fundo
+Opção D: Erosão subsuperficial (piping)
+Opção E: Deposição de sedimentos no interior da feição
+
+============================================================
+SEÇÃO 5 — SELEÇÃO DE TÉCNICAS E ESPÉCIES
+============================================================
+
+Título da seção: Bioengenharia e revegetação para cada feição
+Descrição da seção: Com base na classificação realizada e nos critérios de seleção de técnicas, proponha o tratamento adequado para cada feição.
+
+----------
+
+Pergunta 9
+Tipo: Múltipla escolha (obrigatória)
+Título: Qual é a técnica primária de bioengenharia mais adequada para a feição F1 (sulco, D = 0,20 m)?
+
+Opção A: Gabião vivo com retaludamento
+Opção B: Parede Krainer com drenagem subsuperficial
+Opção C: Cobertura vegetal com gramíneas (braquiária) e palhada (mulch)
+Opção D: Check-dam de concreto armado
+Opção E: Enrocamento vegetado de grande porte
+
+----------
+
+Pergunta 10
+Tipo: Parágrafo (obrigatória)
+Título: Para a feição F1 (sulco), indique quais espécies vegetais você utilizaria para revegetação e justifique a escolha com base nos critérios técnicos (sistema radicular, velocidade de cobertura, tolerância a estresses).
+Descrição: Consulte a tabela de espécies: vetiver, braquiária, estilosantes, guandu, grama batatais, amendoim forrageiro.
+
+----------
+
+Pergunta 11
+Tipo: Múltipla escolha (obrigatória)
+Título: Qual é a combinação de técnicas mais adequada para a feição F3 (ravina média, D = 1,80 m)?
+
+Opção A: Apenas cobertura vegetal com braquiária
+Opção B: Paliçadas de bambu + hidrossemeadura
+Opção C: Apenas terraplanagem (reconformação do terreno)
+Opção D: Enrocamento de pedras soltas
+Opção E: Irrigação e adubação
+
+----------
+
+Pergunta 12
+Tipo: Múltipla escolha (obrigatória)
+Título: A feição F4 (voçoroca, D = 6,50 m, W = 18 m) é a mais severa da área. Qual abordagem é necessária?
+
+Opção A: Uma única técnica de bioengenharia resolve o problema
+Opção B: Projeto integrado combinando retaludamento + drenagem superficial e subsuperficial + gabião vivo + revegetação progressiva
+Opção C: Abandono da área — voçorocas são irrecuperáveis
+Opção D: Apenas paliçadas de bambu são suficientes
+Opção E: Aterramento da voçoroca com solo de empréstimo
+
+----------
+
+Pergunta 13
+Tipo: Parágrafo (obrigatória)
+Título: Elabore um quadro-resumo (pode ser em formato de lista) associando cada feição (F1–F4) à sua classe EGC, técnica primária e espécies recomendadas para revegetação. Mínimo 8 linhas.
+Descrição: Exemplo de formato:
+F1 — Classe: ___; Técnica: ___; Espécies: ___.
+F2 — Classe: ___; Técnica: ___; Espécies: ___.
+(...)
+
+============================================================
+SEÇÃO 6 — AUTOAVALIAÇÃO
+============================================================
+
+Título da seção: Como você se saiu?
+Descrição da seção: (vazio)
+
+----------
+
+Pergunta 14
+Tipo: Escala linear (obrigatória)
+Título: De 1 a 5, o quanto você se sente confiante para classificar feições erosivas em campo usando o sistema EGC?
+Escala: 1 = Nada confiante → 5 = Muito confiante
+
+----------
+
+Pergunta 15
+Tipo: Parágrafo (opcional)
+Título: Registre aqui dúvidas, comentários ou curiosidades que surgiram durante esta atividade.
+Descrição: (vazio)
+
+============================================================
+CONFIGURAÇÕES SUGERIDAS PARA O GOOGLE FORMS
+============================================================
+
+- Coletar e-mails: Sim
+- Limitar a 1 resposta: Sim
+- Permitir edição após envio: Sim
+- Mostrar barra de progresso: Sim
+- Embaralhar ordem das perguntas: Não
+- Mensagem de confirmação:
+  "Resposta registrada com sucesso! Obrigado pela participação.
+   Seus resultados serão discutidos na próxima aula."
+
+============================================================
+GABARITO / RESPOSTAS ESPERADAS (USO DO DOCENTE)
+============================================================
+
+PERGUNTA 3 — Classificação de F1
+-----------------------------------------
+★ Resposta correta: Opção A (Sulco)
+→ Justificativa: F1 possui W = 0,25 m (< 0,3 m) e D = 0,20 m
+  (< 0,3 m), enquadrando-se perfeitamente na classe SULCO.
+  Sulcos são feições de escoamento difuso concentrado,
+  relativamente rasas e estreitas, que ainda podem ser desfeitas
+  por operações agrícolas convencionais. A declividade de 8% no
+  fundo indica escoamento superficial ativo.
+
+
+PERGUNTA 4 — Classificação de F2
+-----------------------------------------
+★ Resposta correta: Opção B (Ravina pequena)
+→ Justificativa: F2 possui W = 0,80 m (0,3–1,0 m) e D = 0,60 m
+  (0,3–1,0 m), enquadrando-se na classe RAVINA PEQUENA.
+  O processo dominante é escoamento concentrado com incisão,
+  criando um canal permanente que não pode ser desfeito por
+  aração convencional.
+
+
+PERGUNTA 5 — Classificação de F3
+-----------------------------------------
+★ Resposta correta: Opção C (Ravina média)
+→ Justificativa: F3 possui W = 2,50 m (1,0–5,0 m) e D = 1,80 m
+  (1,0–3,0 m), enquadrando-se na classe RAVINA MÉDIA.
+  O processo dominante combina escoamento concentrado +
+  solapamento das paredes laterais. A razão W/D = 1,39 indica
+  predominância de aprofundamento sobre alargamento.
+  Técnicas recomendadas: paliçadas + check-dams + hidrossemeadura.
+
+
+PERGUNTA 6 — Classificação de F4
+-----------------------------------------
+★ Resposta correta: Opção E (Voçoroca)
+→ Justificativa: F4 possui W = 18,0 m (> 15 m) e D = 6,50 m
+  (> 5,0 m), enquadrando-se na classe VOÇOROCA. A profundidade
+  de 6,5 m indica que a feição provavelmente atingiu o lençol
+  freático, adicionando erosão subsuperficial (piping) e
+  processos gravitacionais (desabamento de paredes) aos processos
+  superficiais. O W/D = 2,77 confirma alargamento ativo por
+  desabamento lateral. Exige projeto integrado multidisciplinar.
+
+
+PERGUNTA 7 — Interpretação W/D de F4
+-----------------------------------------
+★ Resposta correta: Opção B
+→ Justificativa: W/D = 2,77 (> 2-3) indica que a feição está se
+  alargando por desabamento das paredes laterais, processo
+  frequentemente associado à contribuição do lençol freático.
+  Quando a água subterrânea exfiltra na base das paredes, ocorre
+  solapamento e colapso gravitacional, ampliando lateralmente a
+  voçoroca. Isso exige tratamento específico das paredes
+  (retaludamento, gabiões vivos) e drenagem (superficial e
+  subsuperficial), além do controle do fundo.
+
+
+PERGUNTA 8 — Interpretação W/D < 2
+-----------------------------------------
+★ Resposta correta: Opção B
+→ Justificativa: W/D < 2 (feição relativamente mais profunda que
+  larga) indica que o processo dominante é o aprofundamento por
+  erosão concentrada com incisão ativa do fundo (canais em "V").
+  Esse tipo de feição responde bem a paliçadas e check-dams, que
+  interrompem a incisão do talvegue e criam patamares de deposição.
+  Em contraste, feições com W/D > 3 (alargamento lateral) exigem
+  tratamento prioritário das paredes.
+
+
+PERGUNTA 9 — Técnica para F1 (sulco)
+-----------------------------------------
+★ Resposta correta: Opção C
+→ Justificativa: Para sulcos (feições rasas e estreitas),
+  a técnica primária é a cobertura vegetal com gramíneas de
+  estabelecimento rápido (braquiária) combinada com palhada
+  (mulch) para proteção imediata. A cobertura reduz o fator C
+  da RUSLE de ~1,0 para ~0,01, eliminando o escoamento difuso
+  concentrado que gerou o sulco.
+
+  As demais opções são superdimensionadas: gabiões, paredes
+  Krainer e check-dams de concreto são técnicas para feições
+  muito maiores. Enrocamento é para margens fluviais.
+
+
+PERGUNTA 10 — Espécies para F1 (parágrafo)
+-----------------------------------------
+Resposta esperada (exemplo):
+
+"Para a feição F1 (sulco), recomendo a combinação de braquiária
+(Brachiaria decumbens) e estilosantes (Stylosanthes guianensis):
+
+• Braquiária: gramínea com sistema radicular fasciculado denso que
+  cobre rapidamente a superfície (> 80% em 60–90 dias), protegendo
+  contra o impacto das gotas de chuva e retardando o escoamento
+  superficial. Alta tolerância a solos ácidos e de baixa fertilidade.
+
+• Estilosantes: leguminosa herbácea com raiz pivotante que fixa
+  nitrogênio (N₂) no solo, melhorando a fertilidade a médio prazo
+  e complementando a cobertura da braquiária. A raiz pivotante
+  promove descompactação biológica ('subsolagem biológica').
+
+A combinação gramínea + leguminosa é sinérgica: a braquiária oferece
+cobertura rápida e proteção mecânica, enquanto o estilosantes
+recupera a fertilidade para sustentar a vegetação a longo prazo."
+
+Critérios de avaliação:
+• Citou pelo menos 2 espécies com justificativa técnica?
+• Mencionou sistema radicular?
+• Mencionou velocidade de cobertura?
+• Mencionou tolerância a condições desfavoráveis?
+
+
+PERGUNTA 11 — Técnicas para F3 (ravina média)
+-----------------------------------------
+★ Resposta correta: Opção B (Paliçadas + hidrossemeadura)
+→ Justificativa: Para ravinas médias (D = 1-3 m), a combinação
+  paliçadas de bambu (controle do fundo e retenção de sedimentos)
+  + hidrossemeadura (revegetação rápida das paredes) é a técnica
+  recomendada conforme a tabela de seleção.
+
+  As paliçadas reduzem a velocidade do escoamento em até 85%,
+  criam patamares de deposição e condições favoráveis ao
+  estabelecimento vegetal. A hidrossemeadura projeta sementes,
+  mulch e fertilizante sobre as paredes da ravina, cobrindo
+  superfícies íngremes de difícil acesso.
+
+  Opção A é subdimensionada (apenas cobertura vegetal não
+  controla o escoamento concentrado em uma ravina de 1,80 m).
+  Opções C, D e E são inadequadas ou insuficientes.
+
+
+PERGUNTA 12 — Abordagem para F4 (voçoroca)
+-----------------------------------------
+★ Resposta correta: Opção B (Projeto integrado)
+→ Justificativa: Voçorocas (D > 5 m, W > 15 m) SEMPRE exigem
+  projeto integrado multidisciplinar. A feição F4 (6,5 m × 18 m)
+  provavelmente intercepta o lençol freático, o que adiciona
+  erosão subsuperficial e processos gravitacionais aos mecanismos
+  superficiais. O tratamento deve combinar:
+
+  1. Drenagem superficial: desvio das águas de contribuição
+  2. Drenagem subsuperficial: interceptação de pipes
+  3. Retaludamento: suavização dos ângulos das paredes
+  4. Gabiões vivos: estabilização mecânica com enraizamento
+  5. Revegetação progressiva: cobertura vegetal de longo prazo
+
+  Abordagens pontuais ou parciais (opções A, D) tendem ao
+  fracasso. O abandono (opção C) é incorreto — voçorocas são
+  recuperáveis com projeto adequado. O aterramento (opção E)
+  sem tratamento da causa é ineficaz e custoso.
+
+
+PERGUNTA 13 — Quadro-resumo (parágrafo)
+-----------------------------------------
+Resposta esperada (exemplo):
+
+"F1 — Classe: Sulco (W=0,25m, D=0,20m)
+  Técnica: Cobertura vegetal com palhada (mulch) + cordões vegetativos
+  Espécies: Braquiária (Brachiaria decumbens) para cobertura rápida
+  + estilosantes (Stylosanthes guianensis) para fixação de N₂.
+
+F2 — Classe: Ravina pequena (W=0,80m, D=0,60m)
+  Técnica: Paliçadas de bambu (espaçamento ~6 m) + revegetação
+  Espécies: Vetiver (Vetiveria zizanioides) como barreira viva
+  + braquiária para cobertura entre as paliçadas.
+
+F3 — Classe: Ravina média (W=2,50m, D=1,80m)
+  Técnica: Paliçadas de bambu + check-dams + hidrossemeadura
+  Espécies: Hidrossemeadura com mistura de braquiária, estilosantes
+  e guandu (Cajanus cajan) para descompactação biológica.
+
+F4 — Classe: Voçoroca (W=18,0m, D=6,50m)
+  Técnica: Projeto integrado — retaludamento + drenagem superficial
+  e subsuperficial + gabião vivo + revegetação progressiva
+  Espécies: Combinação de gramíneas (braquiária, vetiver), leguminosas
+  (estilosantes, guandu) e arbóreas (gliricídia, sabiá) para
+  cobertura imediata, recuperação de fertilidade e ancoragem profunda."
+
+Critérios de avaliação:
+• Classificou corretamente todas as 4 feições?
+• Selecionou técnicas compatíveis com cada classe?
+• Indicou espécies adequadas com justificativa funcional?
+• Demonstrou progressão lógica de complexidade (F1→F4)?
+• Atingiu o mínimo de 8 linhas?
+
+
+PERGUNTA 14 — Escala linear (autoavaliação)
+---------------------------------------------
+Não há resposta certa. Comparar com atividades anteriores para
+avaliar evolução da confiança do aluno.
+
+
+PERGUNTA 15 — Espaço livre
+---------------------------------------
+Respostas possíveis comuns:
+• "Como se distingue ravina de voçoroca em campo sem drone?"
+• "O lençol freático pode ser visto na voçoroca?"
+• "Quanto tempo leva para uma paliçada assoreada completamente?"
+• "O vetiver funciona no semiárido com pouca chuva?"
+
+============================================================
+NOTAS PARA O DOCENTE
+============================================================
+
+OBJETIVO PEDAGÓGICO:
+Esta atividade integra classificação de feições (EGC) com seleção
+de técnicas e espécies, exigindo que o aluno conecte observação
+geométrica → classificação → decisão de projeto. A progressão
+F1→F4 simula o gradiente de complexidade que o profissional
+encontra em campo.
+
+TEMPO ESTIMADO DE RESPOSTA: 30–40 minutos
+
+ALINHAMENTO COM O PLANO:
+- Aula 05: EGC, parâmetros geométricos, RPAS, monitoramento.
+- Aula 06: Revegetação, seleção de espécies, métodos de implantação.
+- Avaliação contínua: compõe a nota de participação/exercícios.
+============================================================

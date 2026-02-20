@@ -1,0 +1,511 @@
+============================================================
+ATIVIDADE 05 — BIOENGENHARIA DE SOLOS (2026.1)
+Aulas 08–09: Bacias de Captação, Barraginhas e Método SCS-CN
+============================================================
+
+---------- TÍTULO DO FORMULÁRIO ----------
+
+Atividade 05 — Bacias de Captação e Barraginhas (SCS-CN)
+
+---------- DESCRIÇÃO DO FORMULÁRIO ----------
+
+Esta atividade faz parte das Aulas 08 e 09 (Bacias de Captação e Barraginhas / Método SCS-CN) da disciplina Bioengenharia de Solos (UEFS 2026.1).
+
+O objetivo é aplicar o método SCS-CN (Curve Number) para estimar o escoamento superficial, dimensionar barraginhas e avaliar o impacto da bioengenharia na redução do volume de enxurrada. Você calculará o escoamento para um cenário real de pastagem degradada e simulará o efeito da revegetação na resposta hidrológica.
+
+Prazo de entrega: até o início da próxima aula.
+
+============================================================
+SEÇÃO 1 — IDENTIFICAÇÃO
+============================================================
+
+Título da seção: Identificação do(a) estudante
+Descrição da seção: (vazio)
+
+----------
+
+Pergunta 1
+Tipo: Resposta curta (obrigatória)
+Título: Nome completo
+Descrição: (vazio)
+
+----------
+
+Pergunta 2
+Tipo: Resposta curta (obrigatória)
+Título: Matrícula
+Descrição: (vazio)
+
+============================================================
+SEÇÃO 2 — CENÁRIO: ENCOSTA COM PASTAGEM DEGRADADA
+============================================================
+
+Título da seção: Dados técnicos
+Descrição da seção: Uma encosta de 5 ha (50.000 m²) em uma propriedade rural no município de Cachoeira–BA apresenta pastagem degradada com mais de 50% de solo exposto, ravinas laterais em formação e sinais de erosão laminar intensa. O solo é um Argissolo Vermelho-Amarelo (tipo hidrológico C pela classificação SCS). A estrada rural que margeia a encosta concentra a enxurrada e direciona-a para um riacho a jusante.
+
+Dados fornecidos:
+• Área de contribuição: A = 5 ha = 50.000 m²
+• Uso atual: Pastagem degradada (solo exposto > 50%)
+• Tipo hidrológico do solo: C
+• CN (Curve Number): 86 (pastagem degradada, solo tipo C)
+• Precipitação de projeto (P): 70 mm (chuva com TR = 10 anos e duração = 1 hora)
+
+Equações SCS-CN:
+• Retenção potencial: S = (25.400 / CN) − 254
+• Abstração inicial: Ia = 0,2 × S
+• Escoamento superficial: Q = (P − Ia)² / (P − Ia + S), válida quando P > Ia
+• Volume de escoamento: V = Q × A (convertendo unidades adequadamente)
+
+============================================================
+SEÇÃO 3 — CÁLCULOS SCS-CN (CENÁRIO ATUAL)
+============================================================
+
+Título da seção: Estimativa de escoamento — pastagem degradada
+Descrição da seção: Calcule o escoamento superficial e o volume de enxurrada para a condição atual (CN = 86, P = 70 mm).
+
+----------
+
+Pergunta 3
+Tipo: Parágrafo (obrigatória)
+Título: Calcule a retenção potencial máxima (S) em mm. Mostre o cálculo.
+Descrição: S = (25.400 / CN) − 254. Use CN = 86.
+
+----------
+
+Pergunta 4
+Tipo: Parágrafo (obrigatória)
+Título: Calcule a abstração inicial (Ia) em mm. O que representa fisicamente a abstração inicial?
+Descrição: Ia = 0,2 × S. Explique o significado de Ia em 1–2 frases.
+
+----------
+
+Pergunta 5
+Tipo: Múltipla escolha (obrigatória)
+Título: Com S ≈ 41,3 mm e Ia ≈ 8,3 mm, verifique se a condição P > Ia é atendida para P = 70 mm. Em seguida, calcule o escoamento superficial Q (mm).
+
+Opção A: Q ≈ 15 mm
+Opção B: Q ≈ 25 mm
+Opção C: Q ≈ 37 mm
+Opção D: Q ≈ 45 mm
+Opção E: Q ≈ 55 mm
+
+----------
+
+Pergunta 6
+Tipo: Parágrafo (obrigatória)
+Título: Calcule o volume total de escoamento (V) em metros cúbicos para a área de 5 ha. Mostre o cálculo.
+Descrição: V = Q (em metros) × A (em m²). Lembre-se: Q em mm = Q em litros/m² = Q × 10⁻³ m.
+
+============================================================
+SEÇÃO 4 — DIMENSIONAMENTO DE BARRAGINHAS
+============================================================
+
+Título da seção: Quantas barraginhas são necessárias?
+Descrição da seção: A proposta é instalar barraginhas ao longo da estrada rural que margeia a encosta para interceptar a enxurrada antes que ela atinja o riacho. As barraginhas terão formato semicircular.
+
+Dados de projeto:
+• Diâmetro superior: 4 m
+• Profundidade: 1,4 m
+• Volume aproximado de cada barraginha: V_barraginha = (π/2) × r² × h / 3 ≈ 8,8 m³ (meia-esfera truncada)
+  [Simplificação: V ≈ 0,5 × π × (2,0)² × 1,4 / 1 ≈ 8,8 m³]
+
+----------
+
+Pergunta 7
+Tipo: Múltipla escolha (obrigatória)
+Título: Com volume de escoamento V ≈ 1.850 m³ e volume por barraginha V_barraginha ≈ 8,8 m³, quantas barraginhas são necessárias para reter todo o escoamento? (n = V / V_barraginha, arredondando para cima)
+
+Opção A: n ≈ 100 barraginhas
+Opção B: n ≈ 150 barraginhas
+Opção C: n ≈ 210 barraginhas
+Opção D: n ≈ 280 barraginhas
+Opção E: n ≈ 350 barraginhas
+
+----------
+
+Pergunta 8
+Tipo: Múltipla escolha (obrigatória)
+Título: O número de barraginhas calculado é elevado. Na prática, nem todo escoamento precisa ser retido pelas barraginhas (parte infiltra durante o evento, parte é laminada). Além disso, as barraginhas devem ser posicionadas preferencialmente em qual posição da encosta?
+
+Opção A: No topo da encosta, nas áreas planas
+Opção B: No terço médio-inferior e ao longo da estrada, nos pontos naturais de concentração de enxurrada
+Opção C: Apenas dentro das ravinas existentes
+Opção D: Em qualquer posição aleatória — o efeito é o mesmo
+Opção E: Apenas na margem do riacho a jusante
+
+----------
+
+Pergunta 9
+Tipo: Parágrafo (obrigatória)
+Título: Na prática, utiliza-se uma densidade de 3–5 barraginhas por hectare em estradas rurais com declividade moderada. Para 5 ha, isso resultaria em 15–25 barraginhas. Explique por que esse número é muito menor que o teórico (210) e quais outras medidas complementares reduzem a demanda por barraginhas.
+Descrição: Dica: considere infiltração durante o evento, revegetação (redução de CN) e paliçadas como medidas complementares.
+
+============================================================
+SEÇÃO 5 — CENÁRIO PÓS-BIOENGENHARIA
+============================================================
+
+Título da seção: Simulando a revegetação da encosta
+Descrição da seção: Após 2 anos de projeto de bioengenharia, a pastagem degradada (CN = 86) foi convertida em pastagem em boas condições com manejo rotacionado e cobertura de gramíneas > 80%. O novo CN é 74 (pastagem boa, solo tipo C). Recalcule o escoamento.
+
+----------
+
+Pergunta 10
+Tipo: Parágrafo (obrigatória)
+Título: Para CN = 74, calcule o novo S, Ia e Q usando as mesmas equações. Compare com o cenário anterior (CN = 86).
+Descrição: S = (25.400 / 74) − 254. Ia = 0,2 × S. Q = (P − Ia)² / (P − Ia + S) para P = 70 mm.
+
+----------
+
+Pergunta 11
+Tipo: Parágrafo (obrigatória)
+Título: Calcule o novo volume de escoamento (V_novo) e a redução percentual em relação ao cenário anterior (V ≈ 1.850 m³). Discuta o significado dessa redução para o projeto de barraginhas.
+Descrição: V_novo = Q_novo × A. Redução (%) = (V_antigo − V_novo) / V_antigo × 100.
+
+----------
+
+Pergunta 12
+Tipo: Múltipla escolha (obrigatória)
+Título: A redução do CN de 86 para 74 (por revegetação) resultou em uma diminuição do escoamento de aproximadamente:
+
+Opção A: ~20% de redução
+Opção B: ~35% de redução
+Opção C: ~50% de redução
+Opção D: ~70% de redução
+Opção E: ~90% de redução
+
+============================================================
+SEÇÃO 6 — REFLEXÃO E INTEGRAÇÃO
+============================================================
+
+Título da seção: Conectando SCS-CN com bioengenharia
+Descrição da seção: (vazio)
+
+----------
+
+Pergunta 13
+Tipo: Parágrafo (obrigatória)
+Título: Em um parágrafo (mínimo 5 linhas), explique por que a REVEGETAÇÃO é a intervenção mais eficaz para reduzir o escoamento superficial, usando os conceitos de CN, S e Ia. Relacione com as funções hidrológicas da vegetação (interceptação, infiltração, evapotranspiração).
+Descrição: (vazio)
+
+----------
+
+Pergunta 14
+Tipo: Múltipla escolha (obrigatória)
+Título: Se a encosta fosse convertida em floresta densa (CN = 70 para solo tipo C), como o escoamento mudaria em relação à pastagem degradada (CN = 86)?
+
+Opção A: O escoamento praticamente não mudaria
+Opção B: O escoamento reduziria em ~30%
+Opção C: O escoamento reduziria em ~50–60%
+Opção D: O escoamento reduziria em ~70–80%
+Opção E: O escoamento seria zero (100% infiltrado)
+
+----------
+
+Pergunta 15
+Tipo: Escala linear (obrigatória)
+Título: De 1 a 5, o quanto você se sente confiante para aplicar o método SCS-CN no dimensionamento de barraginhas?
+Escala: 1 = Nada confiante → 5 = Muito confiante
+
+----------
+
+Pergunta 16
+Tipo: Parágrafo (opcional)
+Título: Registre aqui dúvidas, comentários ou curiosidades que surgiram durante esta atividade.
+Descrição: (vazio)
+
+============================================================
+CONFIGURAÇÕES SUGERIDAS PARA O GOOGLE FORMS
+============================================================
+
+- Coletar e-mails: Sim
+- Limitar a 1 resposta: Sim
+- Permitir edição após envio: Sim
+- Mostrar barra de progresso: Sim
+- Embaralhar ordem das perguntas: Não
+- Mensagem de confirmação:
+  "Resposta registrada com sucesso! Obrigado pela participação.
+   Seus resultados serão discutidos na próxima aula."
+
+============================================================
+GABARITO / RESPOSTAS ESPERADAS (USO DO DOCENTE)
+============================================================
+
+PERGUNTA 3 — Retenção potencial S
+-----------------------------------------
+★ Resposta esperada:
+  S = (25.400 / CN) − 254
+  S = (25.400 / 86) − 254
+  S = 295,35 − 254
+  S = 41,35 mm ≈ 41,3 mm
+
+→ Justificativa: S representa a capacidade máxima de retenção
+  de água pelo solo (mm), incluindo infiltração, interceptação
+  pela vegetação e armazenamento em depressões superficiais.
+  Quanto MAIOR o CN (mais impermeável), MENOR o S (menos
+  retenção). CN = 86 → S = 41,3 mm é relativamente baixo,
+  indicando que o solo retém pouca água e gera muito escoamento.
+
+
+PERGUNTA 4 — Abstração inicial Ia
+-----------------------------------------
+★ Resposta esperada:
+  Ia = 0,2 × S = 0,2 × 41,3 = 8,3 mm
+
+→ Significado: A abstração inicial (Ia) é a quantidade de chuva
+  "perdida" antes que o escoamento superficial comece:
+  interceptação pela vegetação (pouca neste caso), infiltração
+  inicial no solo seco, preenchimento de micropoças e depressões.
+  Somente após P > Ia é que o escoamento inicia. Com Ia = 8,3 mm,
+  o escoamento começa muito cedo na chuva (após apenas 8,3 mm dos
+  70 mm totais), refletindo a degradação da pastagem.
+
+
+PERGUNTA 5 — Escoamento superficial Q
+-----------------------------------------
+★ Resposta correta: Opção C (Q ≈ 37 mm)
+→ Justificativa:
+  Verificação: P = 70 mm > Ia = 8,3 mm → condição atendida ✓
+
+  Q = (P − Ia)² / (P − Ia + S)
+  Q = (70 − 8,3)² / (70 − 8,3 + 41,3)
+  Q = (61,7)² / (103,0)
+  Q = 3.806,9 / 103,0
+  Q = 36,96 mm ≈ 37 mm
+
+  Isso significa que, de cada 70 mm de chuva, ~37 mm (53%)
+  escoam superficialmente e apenas ~33 mm são retidos pelo solo.
+  Uma taxa de escoamento de 53% é muito alta e confirma a
+  necessidade urgente de intervenção.
+
+
+PERGUNTA 6 — Volume de escoamento V
+-----------------------------------------
+★ Resposta esperada:
+  V = Q × A
+  V = 37 × 10⁻³ m × 50.000 m²
+  V = 0,037 m × 50.000 m²
+  V = 1.850 m³
+
+→ Justificativa: O volume de 1.850 m³ equivale a ~1,85 milhões
+  de litros de enxurrada gerada por um ÚNICO evento de chuva
+  de 70 mm. Esse volume, se não interceptado, escoa pela estrada
+  rural com alta velocidade, gerando ravinas, danificando a
+  estrada e assoreando o riacho a jusante.
+
+
+PERGUNTA 7 — Número de barraginhas (teórico)
+-----------------------------------------
+★ Resposta correta: Opção C (n ≈ 210 barraginhas)
+→ Justificativa:
+  n = V / V_barraginha = 1.850 / 8,8 = 210,2 → 211
+  Arredondando: ≈ 210 barraginhas.
+
+→ Nota: Este é o número TEÓRICO para reter 100% do escoamento
+  de um único evento de TR = 10 anos. Na prática, este número
+  é inviável e desnecessário, pois: (1) parte do escoamento
+  infiltra durante o próprio evento; (2) barraginhas a montante
+  reduzem o volume para as de jusante; (3) a revegetação reduz
+  o CN ao longo do tempo; (4) outras estruturas (paliçadas,
+  cordões) contribuem para a retenção.
+
+
+PERGUNTA 8 — Posicionamento das barraginhas
+-----------------------------------------
+★ Resposta correta: Opção B
+→ Justificativa: As barraginhas devem ser posicionadas no
+  terço médio-inferior da encosta e ao longo da estrada, nos
+  pontos naturais de concentração de enxurrada (curvas,
+  depressões, confluências de caminhos laterais). Razões:
+  (1) O escoamento se concentra no terço inferior por acúmulo
+      de área de contribuição a montante.
+  (2) As estradas são os principais coletores de enxurrada em
+      propriedades rurais.
+  (3) Posicionar no topo (opção A) é ineficaz — pouco escoamento.
+  (4) Dentro das ravinas (opção C) é função das paliçadas.
+  (5) Posição aleatória (opção D) desperdiça recursos.
+
+
+PERGUNTA 9 — Por que 210 é desnecessário (parágrafo)
+-----------------------------------------
+Resposta esperada (exemplo):
+
+"O número teórico de 210 barraginhas é superestimado porque:
+(1) A equação SCS-CN calcula o escoamento total gerado, mas
+durante o evento de chuva parte da água infiltra no fundo das
+próprias barraginhas (VIB do solo), reduzindo o volume 'líquido'
+a ser armazenado; (2) O cálculo assume todo o escoamento
+chegando simultaneamente, quando na realidade as barraginhas a
+montante já retêm parte do volume antes que chegue às de jusante
+(efeito cascata); (3) A revegetação progressiva reduz o CN (de
+86 para 74 ou menos), diminuindo drasticamente o volume gerado;
+(4) Paliçadas instaladas nas ravinas ativas retêm sedimentos e
+laminam vazões. Na prática, 3–5 barraginhas/ha (15–25 total)
+são suficientes quando combinadas com revegetação e paliçadas,
+em uma abordagem integrada de bioengenharia."
+
+Critérios de avaliação:
+• Citou infiltração durante o evento?
+• Mencionou efeito cascata entre barraginhas?
+• Mencionou revegetação como redutora de CN?
+• Mencionou paliçadas como medida complementar?
+
+
+PERGUNTA 10 — Cenário pós-bioengenharia (CN = 74)
+-----------------------------------------
+★ Resposta esperada:
+
+S = (25.400 / 74) − 254 = 343,24 − 254 = 89,2 mm
+Ia = 0,2 × 89,2 = 17,8 mm
+
+Verificação: P = 70 mm > Ia = 17,8 mm → condição atendida ✓
+
+Q = (P − Ia)² / (P − Ia + S)
+Q = (70 − 17,8)² / (70 − 17,8 + 89,2)
+Q = (52,2)² / (141,4)
+Q = 2.724,8 / 141,4
+Q = 19,3 mm ≈ 19 mm
+
+Comparação:
+• CN 86: Q = 37 mm, S = 41,3 mm
+• CN 74: Q = 19 mm, S = 89,2 mm (S mais que dobrou!)
+
+→ A retenção potencial S mais que dobrou (41→89 mm), e o
+  escoamento caiu de 37 para 19 mm, redução de ~49%.
+
+
+PERGUNTA 11 — Novo volume e redução percentual
+-----------------------------------------
+★ Resposta esperada:
+
+V_novo = Q_novo × A = 19,3 × 10⁻³ × 50.000 = 965 m³
+
+Redução = (1.850 − 965) / 1.850 × 100 = 47,8% ≈ 48%
+
+→ Justificativa: A revegetação da pastagem (CN 86 → 74) reduziu
+  o volume de enxurrada de 1.850 para 965 m³ — quase pela metade.
+  Consequências para o projeto:
+  (1) O número teórico de barraginhas cai de 210 para ~110.
+  (2) As barraginhas existentes passam a ter maior "folga"
+      (transbordam com menos frequência).
+  (3) A recarga do lençol é amplificada (mais água infiltra).
+  (4) A erosão a jusante reduz proporcionalmente.
+
+
+PERGUNTA 12 — Redução percentual CN 86→74
+-----------------------------------------
+★ Resposta correta: Opção C (~50% de redução)
+→ Justificativa: O cálculo mostra redução de ~48–50% no
+  escoamento. Isso confirma o enunciado do livro-texto:
+  "Ao converter uma pastagem degradada (CN = 86) em uma encosta
+  revegetada (CN ≈ 73), a retenção potencial S aumenta de 41
+  para 94 mm, reduzindo o escoamento [...] o que representa
+  uma diminuição de ~50–67% no volume de enxurrada."
+
+
+PERGUNTA 13 — Revegetação e SCS-CN (parágrafo)
+-----------------------------------------
+Resposta esperada (exemplo):
+
+"A revegetação é a intervenção mais eficaz para reduzir o
+escoamento superficial porque atua diretamente no parâmetro CN
+do método SCS, e a relação entre CN e S é não-linear: pequenas
+reduções em CN geram grandes aumentos em S. Por exemplo, reduzir
+CN de 86 para 74 (queda de 14%) mais que dobra S (de 41 para
+89 mm, aumento de 116%). Isso ocorre porque a vegetação atua
+por múltiplos mecanismos hidrológicos simultâneos:
+
+(1) Interceptação: a copa das plantas retém 10–30% da chuva,
+que evapora sem atingir o solo (aumentando Ia).
+(2) Infiltração: o sistema radicular cria macroporos que elevam
+a taxa de infiltração em 2–10×, e a serrapilheira protege a
+superfície contra selamento (crostamento).
+(3) Evapotranspiração: entre eventos de chuva, a planta remove
+água do solo, 'esvaziando o reservatório' e restaurando S para
+o próximo evento.
+(4) Rugosidade superficial: a vegetação e os restos orgânicos
+retardam o escoamento, aumentando o tempo disponível para
+infiltração.
+
+A combinação desses mecanismos explica por que a revegetação
+reduz CN de forma tão expressiva e por que deve ser prioridade
+em qualquer projeto de bioengenharia."
+
+Critérios de avaliação:
+• Usou os conceitos de CN e S corretamente?
+• Mencionou a relação não-linear CN→S?
+• Citou mecanismos hidrológicos da vegetação (≥ 3)?
+• Atingiu o mínimo de 5 linhas?
+
+
+PERGUNTA 14 — Floresta densa (CN = 70)
+-----------------------------------------
+★ Resposta correta: Opção C (~50–60% de redução)
+→ Justificativa:
+  Para CN = 70:
+  S = (25.400/70) − 254 = 362,9 − 254 = 108,9 mm
+  Ia = 0,2 × 108,9 = 21,8 mm
+  Q = (70 − 21,8)² / (70 − 21,8 + 108,9) = (48,2)² / 157,1
+  Q = 2.323,2 / 157,1 = 14,8 mm
+
+  V = 14,8 × 10⁻³ × 50.000 = 740 m³
+
+  Redução = (1.850 − 740) / 1.850 × 100 = 60,0%
+
+  A floresta densa reduz o escoamento em ~60% comparado à
+  pastagem degradada. Note que a diferença entre floresta (CN=70)
+  e pastagem boa (CN=74) é de apenas 4 pontos de CN, mas
+  representa ~22% de redução adicional no volume.
+
+  Para CN = 71 (mencionado no resumo):
+  S = (25.400/71) − 254 = 357,7 − 254 = 103,7 mm
+  Ia = 0,2 × 103,7 = 20,7 mm
+  Q = (70 − 20,7)² / (70 − 20,7 + 103,7) = (49,3)² / 153,0
+  Q = 2.430,5 / 153,0 = 15,9 mm
+  V = 795 m³, redução = 57%
+
+  → Redução de ~50–60% para CN = 70–71 ✓
+
+
+PERGUNTA 15 — Escala linear (autoavaliação)
+---------------------------------------------
+Não há resposta certa. Comparar com atividades anteriores.
+
+
+PERGUNTA 16 — Espaço livre
+---------------------------------------
+Respostas possíveis comuns:
+• "Como determinar o CN para diferentes tipos de solo?"
+• "O SCS-CN funciona para chuvas muito longas (vários dias)?"
+• "Qual a relação entre CN e fator C da RUSLE?"
+• "Como dimensionar o sangradouro de uma barraginha?"
+• "A barraginha funciona em solos com lençol freático raso?"
+
+============================================================
+NOTAS PARA O DOCENTE
+============================================================
+
+OBJETIVO PEDAGÓGICO:
+Esta atividade integra hidrologia (SCS-CN) com bioengenharia,
+demonstrando quantitativamente como a revegetação e as
+barraginhas reduzem o escoamento e protegem a paisagem. A
+progressão: cenário atual → cálculos → dimensionamento →
+cenário pós-bioengenharia → reflexão simula o raciocínio de
+projeto integrado.
+
+TEMPO ESTIMADO DE RESPOSTA: 35–45 minutos
+
+DETALHE SOBRE FÓRMULA DO VOLUME DA BARRAGINHA:
+A fórmula simplificada V ≈ 8,8 m³ corresponde a um volume
+semicônico/hemisférico truncado. Na prática, barraginhas têm
+geometria variável (meia-lua, circular, trapezoidal) e o
+volume real deve ser calculado para cada caso. Para esta
+atividade, usa-se o valor dado (8,8 m³) para focar nos
+conceitos hidrológicos.
+
+ALINHAMENTO COM O PLANO:
+- Aula 08: Bacias de captação e barraginhas — funções,
+  dimensionamento, espaçamento, manutenção.
+- Aula 09: Método SCS-CN — equações, tabela de CN, aplicações
+  em projetos de bioengenharia.
+- Avaliação contínua: compõe a nota de participação/exercícios.
+============================================================
