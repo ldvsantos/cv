@@ -550,11 +550,12 @@ Sistema ILPF (gado + árvores + pastagem verde) — Case 3 (pecuária regenerati
 **Pasta destino:** `books/ciencia-paisagem/img/`
 **Capítulos:** 21 = **42 imagens**
 
-### B-01 ⬜ `mosaico_mata_atlantica_fragmentos`
-Foto aérea/satélite de fragmentos de Mata Atlântica em matriz agrícola — fragmentação extrema
+### B-01 ✅ `mosaico_mata_atlantica_fragmentos`
+Satélite Landsat 9 — fragmentação do Cerrado (entre Amazônia e Mata Atlântica) por expansão agrícola, 2024
 - **Posição:** Cap. 1, após "Relevância para regiões tropicais"
-- **Fonte:** 🗺️ Wikimedia/Sentinel Hub
-- **Buscar:** `Atlantic Forest fragmentation aerial`, `Mata Atlântica fragmentos satélite`
+- **Fonte:** 🗺️ NASA Earth Observatory — Domínio público (PD-USGov-NASA + USGS)
+- **Origem:** `Spotting_Disruptions_to_Earth's_Vegetation_(153978)` — 1657×1105, 890 KB
+- **Atribuição:** NASA Earth Observatory / Wanmei Liang, using Landsat data from USGS
 
 ### B-02 ⬜ `paisagem_heterogenea_bacia`
 Panorâmica de mosaico tropical (floresta, pastagem, cultivos, curso d'água)
@@ -565,8 +566,8 @@ Panorâmica de mosaico tropical (floresta, pastagem, cultivos, curso d'água)
 ### B-03 ⬜ `dominios_morfoclimaticos_absaber`
 Mapa dos domínios morfoclimáticos do Brasil (Ab'Sáber) — 6 grandes unidades
 - **Posição:** Cap. 2, seção "Abordagem geográfica"
-- **Fonte:** 🗺️ Wikimedia / 🎨 Diagrama customizado
-- **Buscar:** `domínios morfoclimáticos Brasil Ab'Sáber mapa`
+- **Fonte:** 🎨 Diagrama customizado (TikZ/LaTeX) — não encontrado em Wikimedia
+- **Nota:** Criar mapa vetorial com 6 polígonos coloridos + legenda
 
 ### B-04 ⬜ `paisagem_semiarido_nordeste`
 Paisagem do semiárido (Caatinga) — vegetação rala, solo exposto, degradação
@@ -577,8 +578,8 @@ Paisagem do semiárido (Caatinga) — vegetação rala, solo exposto, degradaç�
 ### B-05 ⬜ `fragmento_florestal_corredor_mata_ciliar`
 Imagem aérea de fragmentos conectados por mata ciliar ao longo de rio em pastagem
 - **Posição:** Cap. 3, após @fig-mcm-modelo (mancha-corredor-matriz)
-- **Fonte:** 🗺️ Sentinel Hub/Wikimedia
-- **Buscar:** `riparian corridor forest fragments aerial`, `mata ciliar corredor ecológico`
+- **Fonte:** 🎨 Diagrama customizado (TikZ/LaTeX) — não encontrado em Wikimedia
+- **Nota:** Criar esquema com manchas florestais + corredor ripário em matriz de pastagem
 
 ### B-06 ⬜ `cerrado_veredas_matas_galeria`
 Foto aérea do Cerrado com veredas e matas de galeria como corredores naturais
@@ -610,11 +611,12 @@ Mesma área em raster (pixels coloridos) vs. vetorial (polígonos com contornos)
 - **Fonte:** 🎨 Diagrama customizado
 - **Buscar:** `raster vs vector GIS comparison landscape`
 
-### B-11 ⬜ `sentinel2_composicao_falsa_cor`
-Sentinel-2 em falsa-cor (NIR-R-G) — contraste vegetação/solo/água
+### B-11 ✅ `sentinel2_composicao_falsa_cor`
+Sentinel-2 composição falsa-cor de Belém (COP30) — contraste vegetação/solo/água
 - **Posição:** Cap. 6, após @fig-assinatura-espectral
-- **Fonte:** 🗺️ Sentinel Hub (Copernicus)
-- **Buscar:** `Sentinel-2 false color composite Brazil vegetation`
+- **Fonte:** 🗺️ Copernicus Sentinel-2 — Uso livre com atribuição
+- **Origem:** `Belém_hosts_COP30_(Copernicus_2025-11-10).png` — 960px thumb, 1179 KB
+- **Atribuição:** Contains modified Copernicus Sentinel data 2025
 
 ### B-12 ⬜ `perfil_ndvi_temporal_cerrado`
 Gráfico de NDVI ao longo de 1 ano para diferentes classes (floresta, cerrado, pastagem, cultivo)
@@ -664,11 +666,12 @@ Saída do Circuitscape: fluxo de corrente entre fragmentos (cores quentes = garg
 - **Fonte:** 🎨 Diagrama customizado / 📸 Screenshot
 - **Buscar:** `Circuitscape output map connectivity landscape`
 
-### B-20 ⬜ `desmatamento_espinha_peixe_amazonia`
-Imagem de satélite do padrão "espinha de peixe" na Amazônia (estradas + desmatamento)
+### B-20 ✅ `desmatamento_espinha_peixe_amazonia`
+Satélite — padrão "espinha de peixe" na Amazônia (estradas + desmatamento)
 - **Posição:** Cap. 10, após "Fragmentação em paisagens brasileiras" (Amazônia)
-- **Fonte:** 🗺️ Wikimedia/NASA Earth Observatory
-- **Buscar:** `fishbone deforestation Amazon satellite`, `Amazon deforestation pattern Landsat`
+- **Fonte:** 🗺️ NASA — Domínio público (PD-USGov-NASA)
+- **Origem:** `Amazonie_deforestation.jpg` — 778×618, 398 KB
+- **Atribuição:** NASA
 
 ### B-21 ⬜ `mapa_transicao_uso_solo`
 Mapa de transições (vermelho=desmatamento, verde=regeneração, amarelo=conversão agrícola)
@@ -682,11 +685,12 @@ Perfil NDVI com ruptura abrupta (desmatamento) + recuperação gradual (regenera
 - **Fonte:** 🎨 Diagrama customizado (gráfico de séries temporais)
 - **Buscar:** `LandTrendr temporal trajectory NDVI disturbance recovery`
 
-### B-23 ⬜ `expansao_agricola_matopiba`
-Par antes/depois (2000 vs. 2020) da região MATOPIBA — cerrado → pivôs de soja
+### B-23 ✅ `expansao_agricola_matopiba`
+MODIS — expansão agrícola MATOPIBA, Cerrado da Bahia — desmatamento para soja
 - **Posição:** Cap. 12, após "O ciclo de fronteira agrícola"
-- **Fonte:** 🗺️ Wikimedia/NASA/Sentinel Hub
-- **Buscar:** `MATOPIBA soybean expansion satellite before after`, `Cerrado deforestation agriculture`
+- **Fonte:** 🗺️ NASA MODIS — Domínio público (PD-USGov-NASA)
+- **Origem:** `Deforestação_no_cerrado_da_Bahia.jpg` — 1200px thumb, 833 KB
+- **Atribuição:** NASA
 
 ### B-24 ⬜ `sistema_ilpf_paisagem`
 Foto aérea de ILPF — linhas de árvores intercaladas com pastagem e cultivo
@@ -730,17 +734,19 @@ Foto aérea de paisagem diversificada (floresta, cabruca, silvipastoril, cultivo
 - **Fonte:** 📷 Wikimedia/Unsplash
 - **Buscar:** `cacao cabruca agroforestry Bahia aerial`, `diversified agricultural landscape`
 
-### B-31 ⬜ `queimada_floresta_amazonica`
-Satélite/aérea de incêndio na borda de floresta amazônica — emissões de carbono
+### B-31 ✅ `queimada_floresta_amazonica`
+Satélite — incêndios e desmatamento na fronteira amazônica, Rondônia, 2007
 - **Posição:** Cap. 16, após "Mudanças de uso do solo e emissões de carbono"
-- **Fonte:** 🗺️ Wikimedia/NASA
-- **Buscar:** `Amazon forest fire satellite image`, `queimada Amazônia satélite`
+- **Fonte:** 🗺️ NASA — Domínio público (PD-USGov-NASA)
+- **Origem:** `Fires_and_Deforestation_on_the_Amazon_Frontier,_Rondonia,_Brazil.jpg` — 1200px, 309 KB
+- **Atribuição:** NASA
 
-### B-32 ⬜ `ilha_calor_urbana_infravermelho`
-Mapa térmico de cidade brasileira — ilha de calor (cores quentes) vs. parques (frias)
+### B-32 ✅ `ilha_calor_urbana_infravermelho`
+Sentinel-2 falsa-cor de São Paulo — contraste térmico urbano vs. vegetação
 - **Posição:** Cap. 16, após "Ilhas de calor e paisagem urbana"
-- **Fonte:** 🗺️ Wikimedia / 🎨 Diagrama customizado (Landsat termal)
-- **Buscar:** `urban heat island thermal map`, `ilha de calor urbana mapa`
+- **Fonte:** 🗺️ Copernicus Sentinel-2 — Uso livre com atribuição
+- **Origem:** `São_Paulo_as_seen_from_space_(Copernicus_2026-01-03).png` — 960px, 1739 KB
+- **Atribuição:** Contains modified Copernicus Sentinel data 2026
 
 ### B-33 ⬜ `zoneamento_ambiental_bacia`
 Mapa de zoneamento (conservação, uso sustentável, produção, restauração) por cores
@@ -767,10 +773,10 @@ Estágios de regeneração: pastagem → capoeira → floresta secundária — s
 - **Buscar:** `forest regeneration stages succession tropical`, `regeneração natural floresta`
 
 ### B-37 ⬜ `corredor_central_mata_atlantica`
-Mapa/satélite do CCMA (Sul da Bahia / Norte do ES) — rede de fragmentos e UCs
+Mapa do CCMA (Sul da Bahia / Norte do ES) — rede de fragmentos e UCs
 - **Posição:** Cap. 19, após "Experiências brasileiras de corredores"
-- **Fonte:** 🗺️ Wikimedia/MapBiomas / 🎨 Diagrama customizado
-- **Buscar:** `Central Atlantic Forest Corridor map`, `Corredor Central Mata Atlântica`
+- **Fonte:** 🎨 Diagrama customizado (TikZ/LaTeX) — não encontrado em Wikimedia
+- **Nota:** Criar mapa vetorial do CCMA com limites de UCs e fragmentos florestais
 
 ### B-38 ⬜ `onca_pintada_especie_focal`
 Onça-pintada (Panthera onca) em ambiente florestal/cerrado — espécie focal
@@ -813,11 +819,12 @@ Mesma feição geográfica em vetorial (polígono suave) vs. raster (pixels esca
 - **Fonte:** 🎨 Diagrama customizado
 - **Buscar:** `vector vs raster GIS comparison`
 
-### C-02 ⬜ `indicatriz_tissot_projecoes`
-Mapa-múndi com indicatrizes de Tissot em diferentes projeções (Mercator, Albers, Policônica)
+### C-02 ✅ `indicatriz_tissot_projecoes`
+Mapa-múndi com indicatrizes de Tissot — projeção Mercator
 - **Posição:** Cap. 1, após @tbl-projecoes
-- **Fonte:** 🗺️ Wikimedia Commons (CC-BY-SA)
-- **Buscar:** `Tissot indicatrix map projections`
+- **Fonte:** 🗺️ Wikimedia Commons — CC-BY-SA 4.0
+- **Origem:** `Tissot_indicatrix_world_map_Mercator_proj.svg` → PNG 1280px, 256 KB
+- **Atribuição:** Eric Gaba (Sting), CC-BY-SA 4.0, via Wikimedia Commons
 
 ### C-03 ⬜ `mapa_lisa_clusters`
 Mapa LISA (High-High, Low-Low, High-Low em cores padrão) — hotspots espaciais
@@ -837,11 +844,12 @@ Gráfico reflectância × comprimento de onda para vegetação, solo, água, urb
 - **Fonte:** 🎨 Diagrama customizado (dados USGS/JPL)
 - **Buscar:** `spectral signature vegetation soil water remote sensing`
 
-### C-06 ⬜ `desmatamento_amazonia_sentinel`
-Sentinel-2/Landsat com padrão espinha de peixe na Amazônia — PRODES/DETER
+### C-06 ✅ `desmatamento_amazonia_sentinel`
+Satélite — incêndios e desmatamento na fronteira amazônica, Rondônia (escala regional)
 - **Posição:** Cap. 3, após "PRODES, DETER e MapBiomas"
-- **Fonte:** 🗺️ NASA/ESA/Wikimedia (domínio público)
-- **Buscar:** `Amazon deforestation satellite fishbone`, `PRODES deforestation Rondonia`
+- **Fonte:** 🗺️ NASA — Domínio público (PD-USGov-NASA)
+- **Origem:** `Fires_and_Deforestation_on_the_Amazon_Frontier,_Rondonia,_Brazil.jpg` — 1200px, 309 KB
+- **Atribuição:** NASA
 
 ### C-07 ⬜ `matriz_confusao_colorida`
 Heatmap de matriz de confusão com 5 classes (Floresta, Agricultura, Pastagem, Água, Urbano)
@@ -870,8 +878,8 @@ Voçoroca em estágio avançado no Cerrado — canal profundo com paredes expost
 ### C-11 ⬜ `desertificacao_nucleo_gilbues`
 Satélite/aérea de Gilbués-PI ou Irauçuba-CE — solo exposto, ravinas, sem vegetação
 - **Posição:** Cap. 6, após os 4 núcleos de desertificação
-- **Fonte:** 🗺️ NASA/ESA/Wikimedia
-- **Buscar:** `desertification Gilbues Piaui satellite`, `desertificação semiárido`
+- **Fonte:** 🎨 Diagrama customizado (TikZ/LaTeX) — não encontrado em Wikimedia
+- **Nota:** Criar mapa com localização dos 4 núcleos de desertificação + detalhe Gilbués
 
 ### C-12 ⬜ `solo_salinizado_irrigacao`
 Solo com crostas brancas salinas em área de irrigação no semiárido
@@ -897,17 +905,19 @@ Estação fluviométrica da ANA — régua linimétrica, cabine, técnico medind
 - **Fonte:** 📷 Wikimedia/ANA
 - **Buscar:** `gauging station river level measurement`, `estação fluviométrica ANA`
 
-### C-16 ⬜ `mapa_precipitacao_gpm_imerg`
-Precipitação acumulada sobre o Brasil por GPM/IMERG ou CHIRPS — escala de cores
+### C-16 ✅ `mapa_precipitacao_gpm_imerg`
+Climatologia média de precipitação global IMERG (2000–2023) — escala de cores
 - **Posição:** Cap. 8, após "Precipitação e umidade do solo por satélite"
-- **Fonte:** 🗺️ NASA GPM / 📸 Screenshot GEE
-- **Buscar:** `GPM IMERG precipitation map Brazil`, `CHIRPS rainfall satellite`
+- **Fonte:** 🗺️ NASA SVS — Domínio público (PD-USGov-NASA)
+- **Origem:** `Grand_Average_Precipitation_Climatology_(2000-2023)_(SVS5237).jpg` — 4096×2048, 1426 KB
+- **Atribuição:** NASA Scientific Visualization Studio
 
-### C-17 ⬜ `reservatorio_seca_antes_depois`
-Par de satélite: mesmo reservatório cheio vs. durante seca severa (margens expostas)
+### C-17 ✅ `reservatorio_seca_antes_depois`
+Landsat — Lake Casitas antes/depois da seca (margens expostas → recuperação)
 - **Posição:** Cap. 9, após "Monitoramento de reservatórios e aquíferos"
-- **Fonte:** 🗺️ NASA/ESA/Google Earth Timelapse
-- **Buscar:** `reservoir drought before after satellite Brazil`, `Sobradinho Cantareira drought`
+- **Fonte:** 🗺️ NASA — Domínio público (PD-USGov-NASA)
+- **Origem:** `Rapid_Rebound_for_Lake_Casitas` — 1617×1078, 879 KB
+- **Atribuição:** NASA Earth Observatory, Landsat
 
 ### C-18 ⬜ `mapa_indice_seca_vci_nordeste`
 VCI ou SPI do Nordeste durante seca 2012–2016 — vermelho (seca) a verde (normal)
@@ -915,23 +925,25 @@ VCI ou SPI do Nordeste durante seca 2012–2016 — vermelho (seca) a verde (nor
 - **Fonte:** 🎨 Diagrama customizado / 📸 Monitor de Secas (ANA)
 - **Buscar:** `VCI drought map northeast Brazil`, `Monitor de Secas ANA`
 
-### C-19 ⬜ `mina_ceu_aberto_vista_aerea`
-Satélite/aérea de mina grande (Carajás/MG) — cava, pilhas, barragem, vegetação
+### C-19 ✅ `mina_ceu_aberto_vista_aerea`
+ASTER — Mina de Carajás, PA — cava, pilhas, vegetação circundante
 - **Posição:** Cap. 10, após "Monitoramento contínuo como paradigma"
-- **Fonte:** 🗺️ NASA/Wikimedia
-- **Buscar:** `open pit mine aerial satellite`, `Carajas mine satellite image`
+- **Fonte:** 🗺️ NASA ASTER — Domínio público (PD-USGov-NASA)
+- **Origem:** `Carajas_Mine,_Brazil_(ASTER).jpg` — 1800×1200, 319 KB
+- **Atribuição:** NASA/METI/AIST/Japan Space Systems, and U.S./Japan ASTER Science Team
 
-### C-20 ⬜ `interferograma_insar_barragem`
-Interferograma InSAR com franjas de deformação sobre barragem de rejeito
+### C-20 ✅ `interferograma_insar_barragem`
+Interferograma InSAR — franjas de deformação (exemplo Kilauea, NASA)
 - **Posição:** Cap. 10, após @tbl-insar-barragens
-- **Fonte:** 🗺️ ESA/Copernicus / 🎨 Diagrama customizado (SNAP)
-- **Buscar:** `InSAR interferogram mine tailings dam`, `Sentinel-1 interferometry subsidence`
+- **Fonte:** 🗺️ NASA — Domínio público (PD-USGov-NASA)
+- **Origem:** `NASA_Kilauea_InSAR.jpg` — 960px thumb, 275 KB
+- **Atribuição:** NASA/JPL-Caltech
 
 ### C-21 ⬜ `mapa_gamaespectrometria_ternario`
 Mapa ternário RGB (K, eTh, eU) discriminando unidades litológicas
 - **Posição:** Cap. 11, após "Gamaespectrometria"
-- **Fonte:** 🗺️ CPRM/GeoSGB / 🎨 QGIS
-- **Buscar:** `ternary radiometric map K Th U gamma spectrometry`
+- **Fonte:** 🎨 Diagrama customizado (TikZ/LaTeX) — não encontrado em Wikimedia
+- **Nota:** Criar mapa ternário RGB esquemático com legenda de canais K-eTh-eU
 
 ### C-22 ⬜ `mapa_favorabilidade_mineral`
 Favorabilidade mineral (azul=baixa → vermelho=alta) com ocorrências sobrepostas
