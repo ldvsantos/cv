@@ -76,12 +76,12 @@ format:
     number-sections: true
     code-fold: true
     code-tools: true
-    lang: pt
+    lang: pt-BR
   pdf:
     documentclass: scrbook
     papersize: a4
     fontsize: 11pt
-    lang: pt
+    lang: pt-BR
     toc: true
     number-sections: true
     colorlinks: true

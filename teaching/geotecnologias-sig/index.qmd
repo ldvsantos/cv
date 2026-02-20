@@ -4,7 +4,7 @@ description: "Ambiente virtual da disciplina de Geotecnologias e SIG — aulas, 
 ---
 
 ::: {.text-end .mb-3}
-[← Voltar para Ensino](index.qmd)
+[← Voltar para Ensino](../index.qmd)
 :::
 
 ```{=html}
@@ -73,7 +73,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/geotecnologias_sig/aulas/avaliacao_incerteza_classificacao/avaliacao_incerteza_classificacao.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 01 | Avaliação de Incerteza em Classificação</h4>
+<div class="card-title">Aula 01 | Avaliação de Incerteza em Classificação</div>
 <p>Matriz de confusão, Kappa e mapas de probabilidade no Google Earth Engine.</p>
 </div>
 </a>
@@ -81,7 +81,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/geotecnologias_sig/aulas/fundamentos_geoprocessamento/fundamentos_geoprocessamento.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 02 | Fundamentos do Geoprocessamento</h4>
+<div class="card-title">Aula 02 | Fundamentos do Geoprocessamento</div>
 <p>Ontologias espaciais, modelos vetorial e matricial, SRC, álgebra de mapas e geoestatística.</p>
 </div>
 </a>
@@ -89,7 +89,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/geotecnologias_sig/aulas/geotecnologias_recursos_hidricos/geotecnologias_recursos_hidricos.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 03 | Geotecnologias e Recursos Hídricos</h4>
+<div class="card-title">Aula 03 | Geotecnologias e Recursos Hídricos</div>
 <p>Monitoramento de reservatórios e aquíferos, índices de seca, SEBAL e governança hídrica.</p>
 </div>
 </a>
@@ -97,7 +97,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/geotecnologias_sig/aulas/sig_exploracao_mineral/sig_exploracao_mineral.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 04 | SIG na Exploração Mineral</h4>
+<div class="card-title">Aula 04 | SIG na Exploração Mineral</div>
 <p>Sistemas mineralizantes, geofísica, sensoriamento hiperespectral, Fuzzy-AHP e pesos de evidência.</p>
 </div>
 </a>
@@ -105,7 +105,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/geotecnologias_sig/aulas/intemperismo_erosao_solos/intemperismo_erosao_solos.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 05 | Intemperismo, Erosão e Solos</h4>
+<div class="card-title">Aula 05 | Intemperismo, Erosão e Solos</div>
 <p>Equação de Jenny, séries de Goldich, pedogênese, RUSLE e engenharia de conservação.</p>
 </div>
 </a>
@@ -113,7 +113,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/geotecnologias_sig/aulas/degradacao_desertificacao_clima/degradacao_desertificacao_clima.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 06 | Degradação, Desertificação e Clima</h4>
+<div class="card-title">Aula 06 | Degradação, Desertificação e Clima</div>
 <p>LDN/ODS 15.3, retroalimentação USLE-clima, salinização, mecanismo de Charney e restauração.</p>
 </div>
 </a>
@@ -121,7 +121,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/geotecnologias_sig/aulas/recursos_hidricos_bacia/recursos_hidricos_bacia.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 07 | Recursos Hídricos e Bacia Hidrográfica</h4>
+<div class="card-title">Aula 07 | Recursos Hídricos e Bacia Hidrográfica</div>
 <p>Morfometria, balanço hídrico, Lei 9.433/1997, outorga, cobrança e nexo água-energia-alimento.</p>
 </div>
 </a>
@@ -129,7 +129,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/geotecnologias_sig/aulas/monitoramento_hidrologico/monitoramento_hidrologico.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 08 | Monitoramento Hidrológico</h4>
+<div class="card-title">Aula 08 | Monitoramento Hidrológico</div>
 <p>Telemetria IoT, curvas-chave, altimetria radar, GPM/SMAP, SEBAL/METRIC e DEMs.</p>
 </div>
 </a>
@@ -137,7 +137,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/geotecnologias_sig/aulas/geoprocessamento_mineracao/geoprocessamento_mineracao.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 09 | Geoprocessamento na Mineração</h4>
+<div class="card-title">Aula 09 | Geoprocessamento na Mineração</div>
 <p>DInSAR, NDVI, balanço volumétrico LiDAR, gestão de risco e compliance ambiental.</p>
 </div>
 </a>
@@ -145,7 +145,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/geotecnologias_sig/aulas/sensoriamento_remoto_cobertura/sensoriamento_remoto_cobertura.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 10 | Sensoriamento Remoto e Cobertura Vegetal</h4>
+<div class="card-title">Aula 10 | Sensoriamento Remoto e Cobertura Vegetal</div>
 <p>NDVI/EVI, classificadores RF/SVM/U-Net, BFAST, PRODES/MapBiomas e validação Olofsson.</p>
 </div>
 </a>
@@ -153,7 +153,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/geotecnologias_sig/aulas/ia_qualidade_pesquisa/ia_qualidade_pesquisa.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 11 | IA e Qualidade da Pesquisa Ambiental</h4>
+<div class="card-title">Aula 11 | IA e Qualidade da Pesquisa Ambiental</div>
 <p>Modelagem híbrida, SHAP/LIME, princípios FAIR, Green AI e ética na pesquisa.</p>
 </div>
 </a>
@@ -171,7 +171,7 @@ Leituras fundamentais sobre geoprocessamento, sensoriamento remoto e recursos h�
 <a class="resource-card" href="https://openknowledge.fao.org/server/api/core/bitstreams/f779dbd0-f020-4bdc-b13e-8dcf155c1c45/content" target="_blank">
 <div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
 <div class="res-info">
-<h4>Allen et al. (1998) — FAO 56</h4>
+<div class="card-title">Allen et al. (1998) — FAO 56</div>
 <p>Crop Evapotranspiration — referência mundial para cálculo de ET₀ e manejo de irrigação.</p>
 </div>
 </a>
@@ -179,7 +179,7 @@ Leituras fundamentais sobre geoprocessamento, sensoriamento remoto e recursos h�
 <a class="resource-card" href="http://www.dpi.inpe.br/gilberto/livro/anatomia.pdf" target="_blank">
 <div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
 <div class="res-info">
-<h4>Câmara et al. (2004) — INPE</h4>
+<div class="card-title">Câmara et al. (2004) — INPE</div>
 <p>Anatomia de Sistemas de Informação Geográfica — livro clássico do INPE sobre fundamentos de SIG.</p>
 </div>
 </a>
@@ -187,7 +187,7 @@ Leituras fundamentais sobre geoprocessamento, sensoriamento remoto e recursos h�
 <a class="resource-card" href="https://www.scielo.br/j/rbeaa/a/4RJCDXtfqkqMgBKxmRKxRKw/?format=pdf&lang=pt" target="_blank">
 <div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
 <div class="res-info">
-<h4>Silva et al. (2005)</h4>
+<div class="card-title">Silva et al. (2005)</div>
 <p>SEBAL — Balanço de energia para estimativa de evapotranspiração real por sensoriamento remoto.</p>
 </div>
 </a>
@@ -195,7 +195,7 @@ Leituras fundamentais sobre geoprocessamento, sensoriamento remoto e recursos h�
 <a class="resource-card" href="http://www.dpi.inpe.br/spring/portugues/tutorial/introducao_sen.html" target="_blank">
 <div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
 <div class="res-info">
-<h4>Novo (2008) — INPE</h4>
+<div class="card-title">Novo (2008) — INPE</div>
 <p>Sensoriamento Remoto: Princípios e Aplicações — fundamentos de SR para ciências ambientais.</p>
 </div>
 </a>
@@ -203,7 +203,7 @@ Leituras fundamentais sobre geoprocessamento, sensoriamento remoto e recursos h�
 <a class="resource-card" href="https://edisciplinas.usp.br/pluginfile.php/4006006/mod_resource/content/1/Manual_Geoprocessamento.pdf" target="_blank">
 <div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
 <div class="res-info">
-<h4>Rosa & Brito (1996)</h4>
+<div class="card-title">Rosa & Brito (1996)</div>
 <p>Introdução ao Geoprocessamento — obra de referência sobre SIG e cartografia digital no Brasil.</p>
 </div>
 </a>
@@ -211,7 +211,7 @@ Leituras fundamentais sobre geoprocessamento, sensoriamento remoto e recursos h�
 <a class="resource-card" href="https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2004GL019920" target="_blank">
 <div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
 <div class="res-info">
-<h4>Tapley et al. (2004) — GRACE</h4>
+<div class="card-title">Tapley et al. (2004) — GRACE</div>
 <p>The Gravity Recovery and Climate Experiment — satélite para monitoramento de recursos hídricos globais.</p>
 </div>
 </a>
@@ -219,7 +219,7 @@ Leituras fundamentais sobre geoprocessamento, sensoriamento remoto e recursos h�
 <a class="resource-card" href="https://www.embrapa.br/busca-de-publicacoes/-/publicacao/1176834/sistema-brasileiro-de-classificacao-de-solos" target="_blank">
 <div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
 <div class="res-info">
-<h4>EMBRAPA (2018) — SiBCS</h4>
+<div class="card-title">EMBRAPA (2018) — SiBCS</div>
 <p>Sistema Brasileiro de Classificação de Solos — 5ª edição revisada e ampliada.</p>
 </div>
 </a>
@@ -227,7 +227,7 @@ Leituras fundamentais sobre geoprocessamento, sensoriamento remoto e recursos h�
 <a class="resource-card" href="https://www.planalto.gov.br/ccivil_03/leis/l9433.htm" target="_blank">
 <div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
 <div class="res-info">
-<h4>Brasil (1997) — Lei 9.433</h4>
+<div class="card-title">Brasil (1997) — Lei 9.433</div>
 <p>Política Nacional de Recursos Hídricos — Lei das Águas e Sistema Nacional de Gerenciamento.</p>
 </div>
 </a>
@@ -235,7 +235,7 @@ Leituras fundamentais sobre geoprocessamento, sensoriamento remoto e recursos h�
 <a class="resource-card" href="https://www.nature.com/articles/s41586-019-0912-1.pdf" target="_blank">
 <div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
 <div class="res-info">
-<h4>Reichstein et al. (2019) — Nature</h4>
+<div class="card-title">Reichstein et al. (2019) — Nature</div>
 <p>Deep learning and process understanding for data-driven Earth system science.</p>
 </div>
 </a>
@@ -243,7 +243,7 @@ Leituras fundamentais sobre geoprocessamento, sensoriamento remoto e recursos h�
 <a class="resource-card" href="https://repositorio.ufrgs.br/bitstream/handle/10183/213522/001021523.pdf" target="_blank">
 <div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
 <div class="res-info">
-<h4>Tucci (2002) — ABRH</h4>
+<div class="card-title">Tucci (2002) — ABRH</div>
 <p>Hidrologia: Ciência e Aplicação — livro referência em hidrologia e recursos hídricos no Brasil.</p>
 </div>
 </a>
@@ -251,7 +251,7 @@ Leituras fundamentais sobre geoprocessamento, sensoriamento remoto e recursos h�
 <a class="resource-card" href="https://www.nature.com/articles/sdata201618.pdf" target="_blank">
 <div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
 <div class="res-info">
-<h4>Wilkinson et al. (2016) — FAIR</h4>
+<div class="card-title">Wilkinson et al. (2016) — FAIR</div>
 <p>The FAIR Guiding Principles for scientific data management and stewardship.</p>
 </div>
 </a>
@@ -259,7 +259,7 @@ Leituras fundamentais sobre geoprocessamento, sensoriamento remoto e recursos h�
 <a class="resource-card" href="https://dl.acm.org/doi/pdf/10.1145/3351095.3372829" target="_blank">
 <div class="res-icon"><i class="fa-solid fa-file-pdf"></i></div>
 <div class="res-info">
-<h4>Schwartz et al. (2020) — ACM</h4>
+<div class="card-title">Schwartz et al. (2020) — ACM</div>
 <p>Green AI — considerações energéticas e de políticas para machine learning em geociências.</p>
 </div>
 </a>

@@ -19,7 +19,7 @@ resources:
   - books/**
 
 website:
-  title: "Luiz Diego Vidal Santos"
+  title: "Prof. Diego Vidal"
   site-url: https://diegovidalcv.com.br/
   description: "Engenheiro Agrônomo, Doutor em Propriedade Intelectual e Inovação, Professor Visitante (UEFS). Líder do grupo PLANeT-Inova."
   favicon: img/portrait_2x3midres.jpeg
@@ -76,6 +76,7 @@ format:
       text: |
         <a class="skip-link" href="#quarto-content">Pular para o conteúdo</a>
         <script type='application/ld+json'>{"@context":"http://www.schema.org","@type":"person","name":"Luiz Diego Vidal Santos","jobTitle":"Professor Visitante e Pesquisador","gender":"male","description":"Engenheiro Agrônomo, Doutor em Propriedade Intelectual e Inovação. Professor Visitante no PPG em Planejamento Territorial da UEFS. Líder do grupo PLANeT-Inova.","address":{"@type":"PostalAddress","addressLocality":"Aracaju","addressRegion":"SE","addressCountry":"Brasil"},"worksFor":[{"@type":"Organization","name":"UEFS"}]}</script>
+        <script>document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll("a h1,a h2,a h3,a h4,a h5,a h6").forEach(function(h){h.classList.remove("anchored");h.removeAttribute("data-anchor-id")})});</script>
 
 
 

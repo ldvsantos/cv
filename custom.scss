@@ -212,7 +212,8 @@ h2:has(+ p:first-of-type) + p + .text-center {
   margin-top: 0.15rem;
 }
 
-.slide-card .slide-info h4 {
+.slide-card .slide-info h4,
+.slide-card .slide-info .card-title {
   margin: 0 0 0.25rem 0;
   font-size: 1rem;
   color: $primary;
@@ -481,7 +482,8 @@ h2:has(+ p:first-of-type) + p + .text-center {
   margin-top: 0.1rem;
 }
 
-.resource-card .res-info h4 {
+.resource-card .res-info h4,
+.resource-card .res-info .card-title {
   margin: 0 0 0.2rem 0;
   font-size: 0.95rem;
   color: #2c3e50;
@@ -561,7 +563,8 @@ h2:has(+ p:first-of-type) + p + .text-center {
   padding: 0.8rem 1rem;
 }
 
-.video-card .video-info h4 {
+.video-card .video-info h4,
+.video-card .video-info .card-title {
   margin: 0 0 0.2rem 0;
   font-size: 0.92rem;
   color: #2c3e50;

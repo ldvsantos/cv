@@ -4,7 +4,7 @@ description: "Ambiente virtual da disciplina de Análise de Dados Ambientais —
 ---
 
 ::: {.text-end .mb-3}
-[← Voltar para Ensino](index.qmd)
+[← Voltar para Ensino](../index.qmd)
 :::
 
 ```{=html}
@@ -77,7 +77,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/panorama_analise_dados/panorama_analise_dados.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 01 | Panorama da Análise de Dados Ambientais</h4>
+<div class="card-title">Aula 01 | Panorama da Análise de Dados Ambientais</div>
 <p>Contexto, workflow e ferramentas para análise ambiental integrada.</p>
 </div>
 </a>
@@ -85,7 +85,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/fundamentos_r/fundamentos_r.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 02 | Fundamentos de R</h4>
+<div class="card-title">Aula 02 | Fundamentos de R</div>
 <p>R base, tidyverse e ambiente de trabalho.</p>
 </div>
 </a>
@@ -93,7 +93,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/tipos_dados_importacao/tipos_dados_importacao.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 03 | Tipos de Dados e Importação</h4>
+<div class="card-title">Aula 03 | Tipos de Dados e Importação</div>
 <p>CSV, Excel, shapefiles, rasters e APIs.</p>
 </div>
 </a>
@@ -101,7 +101,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/manipulacao_dplyr_tidyr/manipulacao_dplyr_tidyr.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 04 | Manipulação com dplyr e tidyr</h4>
+<div class="card-title">Aula 04 | Manipulação com dplyr e tidyr</div>
 <p>Verbos do tidyverse aplicados a dados ambientais.</p>
 </div>
 </a>
@@ -109,7 +109,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/visualizacao_ggplot2/visualizacao_ggplot2.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 05 | Visualização com ggplot2</h4>
+<div class="card-title">Aula 05 | Visualização com ggplot2</div>
 <p>Gramática dos gráficos para comunicação científica.</p>
 </div>
 </a>
@@ -117,7 +117,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/estatistica_descritiva/estatistica_descritiva.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 06 | Estatística Descritiva Aplicada</h4>
+<div class="card-title">Aula 06 | Estatística Descritiva Aplicada</div>
 <p>Medidas de centralidade, dispersão e assimetria.</p>
 </div>
 </a>
@@ -125,7 +125,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/distribuicoes_testes/distribuicoes_testes.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 07 | Distribuições e Testes de Hipóteses</h4>
+<div class="card-title">Aula 07 | Distribuições e Testes de Hipóteses</div>
 <p>Normal, Poisson, qui-quadrado e testes t.</p>
 </div>
 </a>
@@ -133,7 +133,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/correlacao_regressao/correlacao_regressao.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 08 | Correlação e Regressão Linear</h4>
+<div class="card-title">Aula 08 | Correlação e Regressão Linear</div>
 <p>Pearson, Spearman e regressão simples com diagnósticos.</p>
 </div>
 </a>
@@ -141,7 +141,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/regressao_multipla/regressao_multipla.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 09 | Regressão Múltipla e Diagnósticos</h4>
+<div class="card-title">Aula 09 | Regressão Múltipla e Diagnósticos</div>
 <p>VIF, resíduos, stepwise e validação cruzada.</p>
 </div>
 </a>
@@ -149,7 +149,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/anova_comparacoes/anova_comparacoes.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 10 | ANOVA e Comparações Múltiplas</h4>
+<div class="card-title">Aula 10 | ANOVA e Comparações Múltiplas</div>
 <p>ANOVA fatorial, Tukey e contrastes ortogonais.</p>
 </div>
 </a>
@@ -157,7 +157,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/multivariada_pca_cluster/multivariada_pca_cluster.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 11 | Análise Multivariada (PCA/Clustering)</h4>
+<div class="card-title">Aula 11 | Análise Multivariada (PCA/Clustering)</div>
 <p>Componentes principais, k-means e dendrogramas.</p>
 </div>
 </a>
@@ -165,7 +165,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/geoestatistica_idw/geoestatistica_idw.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 12 | Geoestatística e IDW</h4>
+<div class="card-title">Aula 12 | Geoestatística e IDW</div>
 <p>Variogramas, kriging e interpolação ponderada por distância.</p>
 </div>
 </a>
@@ -173,7 +173,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/series_temporais/series_temporais.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 13 | Séries Temporais (ARIMA/ETS)</h4>
+<div class="card-title">Aula 13 | Séries Temporais (ARIMA/ETS)</div>
 <p>Decomposição, modelos ARIMA e suavização exponencial.</p>
 </div>
 </a>
@@ -181,7 +181,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/dados_geoespaciais_sf/dados_geoespaciais_sf.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 14 | Dados Geoespaciais com sf</h4>
+<div class="card-title">Aula 14 | Dados Geoespaciais com sf</div>
 <p>Geometrias vetoriais, operações espaciais e CRS no R.</p>
 </div>
 </a>
@@ -189,7 +189,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/mapas_tematicos/mapas_tematicos.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 15 | Mapas Temáticos</h4>
+<div class="card-title">Aula 15 | Mapas Temáticos</div>
 <p>tmap, leaflet e cartografia temática no R.</p>
 </div>
 </a>
@@ -197,7 +197,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/indices_ambientais/indices_ambientais.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 16 | Índices Ambientais (NDVI/NDWI)</h4>
+<div class="card-title">Aula 16 | Índices Ambientais (NDVI/NDWI)</div>
 <p>Cálculo e interpretação de índices espectrais com R/GEE.</p>
 </div>
 </a>
@@ -205,7 +205,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/ml_supervisionado/ml_supervisionado.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 17 | Machine Learning Supervisionado</h4>
+<div class="card-title">Aula 17 | Machine Learning Supervisionado</div>
 <p>Random Forest, SVM e XGBoost com tidymodels.</p>
 </div>
 </a>
@@ -213,7 +213,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/ml_nao_supervisionado/ml_nao_supervisionado.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 18 | Machine Learning Não Supervisionado</h4>
+<div class="card-title">Aula 18 | Machine Learning Não Supervisionado</div>
 <p>DBSCAN, SOM e redução de dimensionalidade.</p>
 </div>
 </a>
@@ -221,7 +221,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/cientometria/cientometria.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 19 | Cientometria</h4>
+<div class="card-title">Aula 19 | Cientometria</div>
 <p>Bibliometria, redes de co-autoria e análise de tendências.</p>
 </div>
 </a>
@@ -229,7 +229,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/web_scraping/web_scraping.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 20 | Web Scraping</h4>
+<div class="card-title">Aula 20 | Web Scraping</div>
 <p>Coleta automatizada de dados ambientais e legislação.</p>
 </div>
 </a>
@@ -237,7 +237,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/analise_texto_nlp/analise_texto_nlp.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 21 | Análise de Texto e NLP</h4>
+<div class="card-title">Aula 21 | Análise de Texto e NLP</div>
 <p>Mineração de texto, sentimento e topic modeling.</p>
 </div>
 </a>
@@ -245,7 +245,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/estatistica_bayesiana/estatistica_bayesiana.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 22 | Estatística Bayesiana</h4>
+<div class="card-title">Aula 22 | Estatística Bayesiana</div>
 <p>Priors, posteriors e MCMC para dados ambientais.</p>
 </div>
 </a>
@@ -253,7 +253,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/modelagem_multinivel/modelagem_multinivel.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 23 | Modelagem Multinível</h4>
+<div class="card-title">Aula 23 | Modelagem Multinível</div>
 <p>Modelos hierárquicos e efeitos mistos (lme4/brms).</p>
 </div>
 </a>
@@ -261,7 +261,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/gam/gam.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 24 | Modelos Aditivos Generalizados (GAM)</h4>
+<div class="card-title">Aula 24 | Modelos Aditivos Generalizados (GAM)</div>
 <p>Splines, mgcv e relações não-lineares.</p>
 </div>
 </a>
@@ -269,7 +269,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/metricas_paisagem/metricas_paisagem.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 25 | Métricas de Paisagem</h4>
+<div class="card-title">Aula 25 | Métricas de Paisagem</div>
 <p>landscapemetrics, FRAGSTATS e indicadores espaciais.</p>
 </div>
 </a>
@@ -277,7 +277,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/redes_ecologicas/redes_ecologicas.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 26 | Análise de Redes Ecológicas</h4>
+<div class="card-title">Aula 26 | Análise de Redes Ecológicas</div>
 <p>igraph, centralidade e conectividade funcional.</p>
 </div>
 </a>
@@ -285,7 +285,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/meta_analise/meta_analise.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 27 | Meta-Análise Ambiental</h4>
+<div class="card-title">Aula 27 | Meta-Análise Ambiental</div>
 <p>Efeito combinado, forest plot e heterogeneidade.</p>
 </div>
 </a>
@@ -293,7 +293,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/relatorios_reprodutiveis/relatorios_reprodutiveis.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 28 | Relatórios Reprodutíveis</h4>
+<div class="card-title">Aula 28 | Relatórios Reprodutíveis</div>
 <p>Quarto, R Markdown e ciência aberta.</p>
 </div>
 </a>
@@ -301,7 +301,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/projeto_final/projeto_final.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<h4>Aula 29 | Projeto Final</h4>
+<div class="card-title">Aula 29 | Projeto Final</div>
 <p>Análise completa de um dataset ambiental com relatório reprodutível.</p>
 </div>
 </a>
