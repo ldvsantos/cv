@@ -105,6 +105,8 @@ As voçorocas são feições erosivas de grande porte (profundidade > 1,5 m, lar
 
 A formação de voçorocas está associada a três mecanismos interconectados. O primeiro é a progressão da erosão superficial, na qual ravinas não controladas se ampliam e aprofundam até atingir dimensões de voçoroca. O segundo é a erosão subsuperficial (*piping*), na qual a percolação de água através de descontinuidades do solo (fraturas, raízes mortas, galerias de animais) gera túneis internos cujo colapso súbito forma a feição erosiva. O terceiro é a instabilidade de taludes, na qual o solapamento da base pela exfiltração do lençol freático causa desabamentos sucessivos das paredes, ampliando lateralmente a voçoroca.
 
+![Voçoroca incipiente — estágio inicial de formação, quando a ravina começa a ampliar-se e aprofundar-se, ainda passível de controle por técnicas combinadas de bioengenharia.](../img/vocoroca_incipiente.jpg){#fig-vocoroca-incipiente fig-alt="Voçoroca em estágio incipiente de formação em solo tropical" width="75%"}
+
 O tratamento de voçorocas ativas exige um projeto integrado que combine drenagem superficial (desvio das águas de contribuição), drenagem subsuperficial (interceptação de *pipes*), estabilização mecânica das paredes (gabiões vivos, paredes Krainer, retaludamento) e revegetação progressiva. Abordagens pontuais ou parciais tendem ao fracasso, pois os processos atuantes são múltiplos e interconectados.
 
 ## Mecanismos de Erosão
@@ -147,10 +149,14 @@ A erosão nas regiões tropicais apresenta particularidades que a distinguem dos
 
 Mapas como o da @fig-mapa-erosao são construídos a partir do cruzamento de informações topográficas (modelo digital de elevação), pedológicas (classes de solo e erodibilidade), climáticas (erosividade da chuva) e de uso do solo (cobertura vegetal), e permitem identificar as áreas prioritárias para intervenção (hotspots erosivos) e dimensionar as técnicas mais adequadas para cada zona.
 
+![Mapa de uso e cobertura do solo — classificação das categorias de uso da terra que alimenta o fator $C$ da RUSLE e o parâmetro $CN$ do método SCS, essenciais para o dimensionamento de intervenções de bioengenharia.](../img/mapa_uso_solo.png){#fig-mapa-uso-solo fig-alt="Mapa de uso e cobertura do solo" width="85%"}
+
 ::: {.callout-important}
 ## Particularidades tropicais
 Nas regiões tropicais, quatro fatores condicionam a intensidade e a dinâmica dos processos erosivos. Primeiro, a elevada erosividade das chuvas, com $EI_{30}$ superior a 10.000 MJ mm ha⁻¹ h⁻¹ ano⁻¹ (contra 1.000–3.000 em zonas temperadas), concentrada em poucos meses da estação chuvosa. Segundo, os solos com coesão aparente, que se mostram estáveis quando secos mas colapsam quando saturados, gerando rupturas súbitas e imprevisíveis. Terceiro, a ocorrência frequente de erosão subsuperficial (*piping*), especialmente em solos com gradiente textural (Argissolos) ou com camadas de impedimento (Plintossolos), que gera túneis subterrâneos cujo colapso forma ravinas e voçorocas. Quarto, os ciclos repetitivos de umedecimento e secagem, que causam fissuração superficial, criando caminhos preferenciais para infiltração concentrada e acelerando a desagregação do solo.
 :::
+
+![Eventos climáticos extremos e erosão — a intensificação de chuvas convectivas tropicais aumenta a erosividade e a frequência de rupturas em encostas e margens fluviais.](../img/eventos_extremos.png){#fig-eventos-extremos fig-alt="Relação entre eventos climáticos extremos e processos erosivos" width="80%"}
 
 ## Erosão Marginal
 

@@ -34,6 +34,8 @@ $$
 
 onde $A_c$ é a área de contribuição (m²), que corresponde à porção do terreno cujo escoamento é direcionado para a bacia pelo relevo e pela infraestrutura viária; $P$ é a precipitação de projeto (m), obtida a partir de curvas IDF (Intensidade-Duração-Frequência) da estação meteorológica mais próxima; $C$ é o coeficiente de escoamento superficial (adimensional, tipicamente 0,30–0,60 para estradas não pavimentadas e 0,10–0,30 para pastagens); e $VIB$ é a velocidade de infiltração básica do solo (m/h), determinada por ensaio de infiltração com infiltrômetro de duplo anel conforme a norma ABNT NBR 7229. O termo $(1 - VIB/P)$ representa a fração da chuva que efetivamente gera escoamento, descontada a infiltração simultânea.
 
+![Distribuição da precipitação — série pluviométrica e curvas IDF utilizadas para determinação da precipitação de projeto ($P$) no dimensionamento de bacias de captação.](../img/precipitacao.png){#fig-precipitacao fig-alt="Gráfico de distribuição da precipitação" width="80%"}
+
 ### Área de Contribuição
 
 Para estradas rurais, a área de contribuição é calculada como

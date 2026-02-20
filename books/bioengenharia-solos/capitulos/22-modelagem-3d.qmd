@@ -6,7 +6,19 @@ A quantificação da contribuição mecânica das raízes na estabilidade de tal
 
 A fotogrametria digital *Structure from Motion* (SfM) representa uma alternativa acessível e precisa para superação dessas limitações [@westoby2012]. A técnica permite reconstruir a geometria 3D completa de objetos a partir de múltiplas fotografias tomadas de ângulos diferentes, utilizando algoritmos de correspondência de pontos homólogos e triangulação. A @fig-fluxo-sfm ilustra o fluxo de trabalho completo, desde a captura fotográfica até a extração de parâmetros geotécnicos.
 
-![Fluxograma do protocolo de fotogrametria SfM para modelagem de sistemas radiculares: da captura fotográfica ao cálculo do Fator de Segurança.](img/fluxo_sfm_raizes.png){#fig-fluxo-sfm fig-alt="Fluxograma do protocolo de fotogrametria SfM" width="90%"}
+```{mermaid}
+%%| label: fig-fluxo-sfm
+%%| fig-cap: "Fluxograma do protocolo de fotogrametria SfM para modelagem de sistemas radiculares: da captura fotográfica ao cálculo do Fator de Segurança."
+flowchart LR
+  A["📷 Captura\nfotográfica\n(80-120 fotos)"] --> B["🔍 Feature\nExtraction\n(SIFT)"]
+  B --> C["🔗 Feature\nMatching"]
+  C --> D["📐 Structure\nfrom Motion"]
+  D --> E["☁️ Nuvem de\npontos densa"]
+  E --> F["🧹 Limpeza\n(CloudCompare)"]
+  F --> G["✂️ Cortes\ntransversais"]
+  G --> H["📊 Cálculo\ndo RAR"]
+  H --> I["🛡️ Δcr e Fator\nde Segurança"]
+```
 
 As vantagens da SfM para aplicação em bioengenharia incluem baixo custo (câmera de celular com ≥ 12 MP), portabilidade (uso direto em campo), disponibilidade de software livre (Meshroom, CloudCompare) e resolução submilimétrica (0,1–1,0 mm), suficiente para detectar raízes finas de gramíneas como o vetiver.
 
@@ -105,7 +117,7 @@ A escala é calibrada pela ferramenta *Point Picking* (**Tools → Point Picking
 
 A distribuição vertical das raízes é visualizada pela ferramenta *Height Ramp* (**Edit → Colors → Height Ramp**), com coloração no eixo Z e paleta Blue-Green-Yellow-Red (azul = superficial, vermelho = profundo). A @fig-cloud-compare-exemplo ilustra o resultado típico.
 
-![Exemplo de nuvem de pontos de sistema radicular de vetiver no CloudCompare, com coloração por profundidade (Height Ramp): azul indica raízes superficiais e vermelho indica raízes profundas.](img/cloudcompare_raizes_vetiver.png){#fig-cloud-compare-exemplo fig-alt="Nuvem de pontos colorida por profundidade no CloudCompare" width="80%"}
+![Exemplo de nuvem de pontos de sistema radicular de vetiver no CloudCompare, com coloração por profundidade (Height Ramp): azul indica raízes superficiais e vermelho indica raízes profundas.](../img/cloudcompare_raizes_vetiver.png){#fig-cloud-compare-exemplo fig-alt="Nuvem de pontos colorida por profundidade no CloudCompare" width="80%"}
 
 ## Extração do RAR por Cortes Transversais
 
