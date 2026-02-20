@@ -78,7 +78,8 @@ Onde:
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**Modelo de Wu (1979)**
+**Modelo de Wu (1979)
+**
 
 O acréscimo de coesão é estimado como:
 
@@ -255,7 +256,8 @@ A partir de **múltiplas fotografias** de um mesmo objeto, tomadas de ângulos d
 
 ::: {.column width="45%"}
 ::: {.info-box}
-**Softwares livres recomendados**
+**Softwares livres recomendados
+**
 
 | Software | Uso |
 |----------|-----|
@@ -298,7 +300,8 @@ Suficiente para mapear raízes de vetiver (diâm. ≥ 0,5 mm)!
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**GSD recomendado por aplicação**
+**GSD recomendado por aplicação
+**
 
 | Aplicação | GSD necessário |
 |-----------|:--------------:|
@@ -406,7 +409,7 @@ Suficiente para mapear raízes de vetiver (diâm. ≥ 0,5 mm)!
 :::
 
 ::: {.column width="50%"}
-![Exemplo de foto de campo bem executada: raízes de vetiver expostas com escala métrica visível e iluminação uniforme](img/raizes_vetiver/vetiver_escala.jpg){fig-alt="Foto de campo com escala métrica" width="100%"}
+![Exemplo de foto de campo bem executada: raízes de vetiver expostas com escala métrica visível e iluminação uniforme](img/raizes_vetiver/vetiver_escala.png){fig-alt="Foto de campo com escala métrica" width="100%"}
 
 ::: {.info-box}
 **Regra de ouro:** se você consegue ver a raiz com clareza na foto, o Meshroom também conseguirá reconstruí-la.
@@ -478,7 +481,8 @@ No CloudCompare, use **Edit → Colors → Height Ramp** para colorir a nuvem po
 
 ::: {.column width="50%"}
 ::: {.info-box}
-**Alternativa sem GPU**
+**Alternativa sem GPU
+**
 
 Se não tiver placa de vídeo dedicada:
 
@@ -571,7 +575,7 @@ O RAR tipicamente diminui com a profundidade. Valores de 0,05-0,30% na camada 0-
 :::
 
 ::: {.column width="50%"}
-![Corte transversal do sistema radicular de vetiver para cálculo do RAR  -  cada seção horizontal revela a distribuição de raízes naquela profundidade](img/raizes_vetiver/vetiver_corte_rar.png){fig-alt="Corte transversal para cálculo de RAR" width="100%"}
+![Corte transversal do sistema radicular de vetiver para cálculo do RAR  -  cada seção horizontal revela a distribuição de raízes naquela profundidade](img/raizes_vetiver/vetiver_corte_rar.jpg){fig-alt="Corte transversal para cálculo de RAR" width="100%"}
 :::
 :::
 
@@ -623,7 +627,8 @@ O modelo de Wu assume $\theta$ fixo (fator 1,2) → superestima em 50-100% em al
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**Comparativo Wu vs Waldron**
+**Comparativo Wu vs Waldron
+**
 
 | Aspecto | Wu (1979) | Waldron (1977) |
 |---------|:---------:|:--------------:|
@@ -740,7 +745,8 @@ Talude rodoviário de **3 m de altura**, inclinação 1V:1,5H (33,7°), em solo 
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**Cronograma de estabelecimento do vetiver**
+**Cronograma de estabelecimento do vetiver
+**
 
 | Mês | RAR 0-30 cm (%) | $\Delta c_r$ (kPa) | Observação |
 |:---:|:---:|:---:|:-----------|
@@ -826,7 +832,8 @@ d) 0,05 mm/pixel
 
 ::: {.column width="40%"}
 ::: {.highlight-box}
-**Entrega**
+**Entrega
+**
 
 - **Formato:** relatório PDF + arquivo `.ply` da nuvem limpa
 - **Prazo:** 21 dias

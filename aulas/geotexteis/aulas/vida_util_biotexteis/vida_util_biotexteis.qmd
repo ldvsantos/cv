@@ -103,7 +103,7 @@ A escolha por biotêxteis é adequada quando:
 :::
 
 ::: {.column width="45%"}
-![Talude protegido com biotêxtil em campo](img/talude_biotextil.jpg){width="100%"}
+![Talude protegido com biotêxtil em campo](img/talude_biotextil.jpeg){width="100%"}
 :::
 :::
 
@@ -214,7 +214,8 @@ $$t_{1/2} = \frac{\ln 2}{k} = \frac{0{,}693}{k}$$
 
 ::: {.column width="45%"}
 ::: {.highlight-box}
-**Valores típicos de $k$**
+**Valores típicos de $k$
+**
 
 | Fibra | $k$ (tropical) | $k$ (temperado) |
 |-------|:---:|:---:|
@@ -290,7 +291,8 @@ O cruzamento indica a **vida útil funcional** do biotêxtil.
 
 ::: {.column width="45%"}
 ::: {.highlight-box}
-**Fórmula no Excel**
+**Fórmula no Excel
+**
 
 ```
 =B2*EXP(-C2*A2)
@@ -330,7 +332,7 @@ Para a vida útil funcional:
 :::
 
 ::: {.column width="40%"}
-![Coleta de amostras de biotêxtil em campo](img/coleta_campo.png){width="100%"}
+![Coleta de amostras de biotêxtil em campo](img/coleta_campo.jpeg){width="100%"}
 
 ![Máquina universal de ensaio de tração](img/maquina_universal.png){width="100%"}
 :::
@@ -343,7 +345,8 @@ Para a vida útil funcional:
 ::: {.columns}
 ::: {.column width="60%"}
 ::: {.highlight-box}
-**Entrega**
+**Entrega
+**
 
 - **Formato:** planilha Excel (.xlsx) com gráficos
 - **Prazo:** 7 dias
