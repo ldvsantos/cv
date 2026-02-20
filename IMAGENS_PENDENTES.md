@@ -1,6 +1,8 @@
 # Imagens Pendentes — Criar ou Obter
 
-> Gerado em 17/02/2026. Estas imagens são referenciadas nos slides (.qmd) mas **não existem** no repositório.
+> Atualizado em 20/02/2026. Estas imagens são referenciadas nos slides (.qmd) mas **não existem** no repositório.
+> 
+> ✅ = Baixada do Wikimedia Commons (CC) em 20/02/2026.
 
 ---
 
@@ -26,7 +28,7 @@
 
 | # | Arquivo | Descrição |
 |---|---------|-----------|
-| 6 | `emater_logo.png` | Logotipo da EMATER-MG (CC-BY-SA 4.0, EMATER-MG/Wikimedia) |
+| 6 | ✅ `emater_logo.png` | Logotipo da EMATER-MG (CC-BY-SA 4.0, EMATER-MG/Wikimedia) — **Baixada** |
 
 ### 2b. Casos Práticos de Extensão
 
@@ -34,9 +36,9 @@
 
 | # | Arquivo | Descrição |
 |---|---------|-----------|
-| 7 | `cisterna_asa_semiarido.jpg` | Placa do programa de cisternas ASA no semiárido (CC-BY-SA 3.0 BR) |
-| 8 | `cisterna_placa_serrinha_ba.jpg` | Cisterna de placa em Serrinha/BA (CC-BY-SA 2.0, MDS/Wikimedia) |
-| 9 | `ilpf_integracao_lavoura.jpg` | Integração Lavoura-Pecuária-Floresta, Cachoeira Dourada/GO (CC-BY-SA 4.0) |
+| 7 | ✅ `cisterna_asa_semiarido.jpg` | Placa do programa de cisternas ASA no semiárido (CC-BY-SA 3.0 BR) — **Baixada** |
+| 8 | ✅ `cisterna_placa_serrinha_ba.jpg` | Cisterna de placa em Serrinha/BA (CC-BY-SA 2.0, MDS/Wikimedia) — **Baixada** |
+| 9 | ✅ `ilpf_integracao_lavoura.jpg` | Integração Lavoura-Pecuária-Floresta, Cachoeira Dourada/GO (CC-BY-SA 4.0) — **Baixada** |
 
 ### 2c. Comunicação e Metodologias Participativas
 
@@ -44,8 +46,8 @@
 
 | # | Arquivo | Descrição |
 |---|---------|-----------|
-| 10 | `paulo_freire_1977.jpg` | Paulo Freire, 1977 (Slobodan Dimitro, CC-BY-SA 3.0) |
-| 11 | `metodo_paulo_freire.jpg` | Ilustração do Método Paulo Freire — educação dialógica (André Koehne, CC-BY-SA 3.0) |
+| 10 | ✅ `paulo_freire_1977.jpg` | Paulo Freire, 1977 (Slobodan Dimitro, CC-BY-SA 3.0) — **Baixada** |
+| 11 | ✅ `metodo_paulo_freire.jpg` | Ilustração do Método Paulo Freire — educação dialógica (André Koehne, CC-BY-SA 3.0) — **Baixada** |
 
 ---
 
@@ -86,9 +88,9 @@
 | 22 | `iso56005.jpg` | Norma ISO 56005 |
 | 23 | `gestao_pi_56005.png` | Estrutura da ISO 56005 |
 | 24 | `oslo.png` | Manual de Oslo |
-| 25 | `trl_nasa.png` | TRL NASA |
+| 25 | ✅ `trl_nasa.png` | TRL NASA — **Baixada** |
 | 26 | `technology_readiness_levels.png` | Níveis de Maturidade Tecnológica — Detalhado |
-| 27 | `stage_gate_process.png` | Processo Stage-Gate |
+| 27 | ✅ `stage_gate_process.png` | Processo Stage-Gate — **Baixada** |
 | 28 | `innovation_project_management.png` | Gestão de projetos de inovação |
 | 29 | `capacidade_absortiva.png` | Capacidade Absortiva |
 | 30 | `dynamic_capabilities.png` | Capacidades Dinâmicas |
@@ -129,14 +131,23 @@
 
 ## Resumo
 
-| Grupo | Quantidade |
-|-------|-----------|
-| Modelagem 3D raízes | 5 |
-| Extensão Rural | 6 |
-| Vida útil biotêxteis | 5 |
-| Ciência PI — Tema 01 | 5 |
-| Ciência PI — Tema 05 | 11 |
-| Ciência PI — Tema 06 | 5 |
-| Intro Estatística (cópia Tema 01) | 5 |
-| **Total de imagens únicas** | **37** |
-| **Total considerando cópias (Tema 01 = Intro Estat.)** | **42 referências** |
+| Grupo | Quantidade | Baixadas |
+|-------|-----------|----------|
+| Modelagem 3D raízes | 5 | 0 |
+| Extensão Rural | 6 | ✅ 6 |
+| Vida útil biotêxteis | 5 | 0 |
+| Ciência PI — Tema 01 | 5 | 0 |
+| Ciência PI — Tema 05 | 11 | ✅ 2 |
+| Ciência PI — Tema 06 | 5 | 0 |
+| Intro Estatística (cópia Tema 01) | 5 | 0 |
+| **Total de imagens únicas** | **37** | **8** |
+| **Total considerando cópias (Tema 01 = Intro Estat.)** | **42 referências** | |
+
+### Pendentes que precisam ser criadas manualmente
+
+- **#1–5 (Modelagem 3D raízes):** Fotos de laboratório/campo muito específicas (vetiver, CloudCompare)
+- **#12–16 (Vida útil biotêxteis):** Fotos de equipamentos de laboratório específicos
+- **#17–21 (Ciência PI Tema 01):** Imagens genéricas (intro, ISO 56002, processo, avaliação, conclusão)
+- **#22–24, 26, 28–32 (Ciência PI Tema 05):** Imagens específicas de normas e modelos de inovação
+- **#33–37 (Ciência PI Tema 06):** Imagens genéricas (intro, métodos, comercialização, NITs, conclusão)
+- **#38–42 (Intro Estatística):** Cópias do Tema 01 — criar junto com #17–21
