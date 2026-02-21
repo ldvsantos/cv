@@ -250,16 +250,16 @@ A plataforma de marca só gera valor se for utilizada como ferramenta de decisã
 ```{mermaid}
 %%| label: fig-aplicacao
 %%| fig-cap: "Da plataforma de marca à ação cotidiana"
-flowchart LR
-    PL["Plataforma<br/>de Marca"] --> D1["Decisões<br/>de produto"]
-    PL --> D2["Decisões de<br/>comunicação"]
-    PL --> D3["Decisões<br/>comerciais"]
-    PL --> D4["Decisões de<br/>experiência"]
+flowchart TB
+    PL["Plataforma de Marca"] --> D1["Decisões de produto"]
+    PL --> D2["Decisões de comunicação"]
+    PL --> D3["Decisões comerciais"]
+    PL --> D4["Decisões de experiência"]
     
-    D1 --> E1["Que produtos<br/>lançar ou<br/>descontinuar?"]
-    D2 --> E2["Que conteúdo<br/>publicar?<br/>Que tom usar?"]
-    D3 --> E3["Que clientes<br/>buscar?<br/>Que preço cobrar?"]
-    D4 --> E4["Como receber<br/>visitantes?<br/>Como embalar?"]
+    D1 --> E1["Que produtos lançar ou descontinuar?"]
+    D2 --> E2["Que conteúdo publicar? Que tom usar?"]
+    D3 --> E3["Que clientes buscar? Que preço cobrar?"]
+    D4 --> E4["Como receber visitantes? Como embalar?"]
     
     style PL fill:#1b5e20,color:#fff
 ```

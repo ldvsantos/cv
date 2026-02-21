@@ -86,12 +86,12 @@ O agronegócio brasileiro precisa migrar de um modelo mental focado exclusivamen
 ```{mermaid}
 %%| label: fig-paradigma
 %%| fig-cap: "Do paradigma produtivo ao paradigma de marca no agronegócio"
-flowchart LR
-    A["Paradigma<br/>Produtivo"] -->|"Produzir mais<br/>e melhor"| B["Commodity"]
-    B -->|"Competição<br/>por preço"| C["Margens<br/>decrescentes"]
+flowchart TB
+    A["Paradigma Produtivo"] -->|"Produzir mais e melhor"| B["Commodity"]
+    B -->|"Competição por preço"| C["Margens decrescentes"]
     
-    D["Paradigma<br/>de Marca"] -->|"Produzir com<br/>identidade"| E["Produto<br/>diferenciado"]
-    E -->|"Competição<br/>por valor"| F["Margens<br/>sustentáveis"]
+    D["Paradigma de Marca"] -->|"Produzir com identidade"| E["Produto diferenciado"]
+    E -->|"Competição por valor"| F["Margens sustentáveis"]
     
     style A fill:#ffcdd2
     style C fill:#ffcdd2

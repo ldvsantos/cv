@@ -23,17 +23,17 @@ A construção de uma marca no agro segue uma sequência lógica que parte da es
 ```{mermaid}
 %%| label: fig-jornada
 %%| fig-cap: "Jornada de construção de marca no agronegócio"
-flowchart LR
-    A["ESTRATÉGIA<br/>DE MARCA"] --> B["IDENTIDADE"]
-    B --> C["LINGUAGEM<br/>DE MARCA"]
+flowchart TB
+    A["ESTRATÉGIA DE MARCA"] --> B["IDENTIDADE"]
+    B --> C["LINGUAGEM DE MARCA"]
     C --> D["MATERIALIZAÇÃO"]
-    D --> E["PERCEPÇÃO<br/>(Imagem)"]
+    D --> E["PERCEPÇÃO (Imagem)"]
     
-    A1["Posicionamento<br/>Diferenciação<br/>Propósito"] --> A
-    B1["Valores<br/>Personalidade<br/>DNA de marca"] --> B
-    C1["Visual<br/>Verbal<br/>Experiencial"] --> C
-    D1["Nome, logo, site<br/>Embalagem<br/>Pontos de contato"] --> D
-    E1["Reputação<br/>junto aos<br/>stakeholders"] --> E
+    A1["Posicionamento, Diferenciação, Propósito"] -.-> A
+    B1["Valores, Personalidade, DNA de marca"] -.-> B
+    C1["Visual, Verbal, Experiencial"] -.-> C
+    D1["Nome, logo, site, Embalagem, Pontos de contato"] -.-> D
+    E1["Reputação junto aos stakeholders"] -.-> E
     
     style A fill:#2e7d32,color:#fff
     style B fill:#388e3c,color:#fff

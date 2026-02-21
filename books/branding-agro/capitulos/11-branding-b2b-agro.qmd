@@ -11,12 +11,12 @@ Embora o consumidor final leve o alimento para casa, a cadeia até ele é predom
 ```{mermaid}
 %%| label: fig-cadeia
 %%| fig-cap: "A cadeia de valor do agro é majoritariamente B2B"
-flowchart LR
-    A["Produtor<br/>Rural"] -->|B2B| B["Cooperativa /<br/>Trader"]
+flowchart TB
+    A["Produtor Rural"] -->|B2B| B["Cooperativa / Trader"]
     B -->|B2B| C["Agroindústria"]
-    C -->|B2B| D["Distribuidor /<br/>Atacado"]
-    D -->|B2B| E["Varejo /<br/>Food Service"]
-    E -->|B2C| F["Consumidor<br/>Final"]
+    C -->|B2B| D["Distribuidor / Atacado"]
+    D -->|B2B| E["Varejo / Food Service"]
+    E -->|B2C| F["Consumidor Final"]
     
     style A fill:#2e7d32,color:#fff
     style F fill:#1565c0,color:#fff
