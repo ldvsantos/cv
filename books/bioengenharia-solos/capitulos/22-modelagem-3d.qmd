@@ -107,15 +107,15 @@ Os produtos do processamento são a nuvem de pontos densa (formato `.ply`, com c
 
 ### Limpeza da Nuvem de Pontos
 
-O CloudCompare é o software utilizado para análise tridimensional. Após importação do arquivo `.ply`, a limpeza compreende três etapas: remoção manual de pontos do solo e fundo por segmentação poligonal (**Edit → Segment**), remoção estatística de outliers pelo *Statistical Outlier Removal* (SOR Filter, com 6 vizinhos e multiplicador 1,0–2,0), e subamostragem por espaçamento mínimo de 0,5–1,0 mm quando necessário.
+O CloudCompare é o software utilizado para análise tridimensional. Após importação do arquivo `.ply`, a limpeza compreende três etapas: remoção manual de pontos do solo e fundo por segmentação poligonal (Edit → Segment), remoção estatística de outliers pelo *Statistical Outlier Removal* (SOR Filter, com 6 vizinhos e multiplicador 1,0–2,0), e subamostragem por espaçamento mínimo de 0,5–1,0 mm quando necessário.
 
 ### Calibração de Escala
 
-A escala é calibrada pela ferramenta *Point Picking* (**Tools → Point Picking**), medindo-se a distância entre dois pontos conhecidos na régua graduada e aplicando-se o fator de correção $k = d_{real}/d_{medida}$ via **Edit → Multiply/Scale** nas três dimensões.
+A escala é calibrada pela ferramenta *Point Picking* (Tools → Point Picking), medindo-se a distância entre dois pontos conhecidos na régua graduada e aplicando-se o fator de correção $k = d_{real}/d_{medida}$ via Edit → Multiply/Scale nas três dimensões.
 
 ### Visualização por Profundidade
 
-A distribuição vertical das raízes é visualizada pela ferramenta *Height Ramp* (**Edit → Colors → Height Ramp**), com coloração no eixo Z e paleta Blue-Green-Yellow-Red (azul = superficial, vermelho = profundo). A @fig-cloud-compare-exemplo ilustra o resultado típico.
+A distribuição vertical das raízes é visualizada pela ferramenta *Height Ramp* (Edit → Colors → Height Ramp), com coloração no eixo Z e paleta Blue-Green-Yellow-Red (azul = superficial, vermelho = profundo). A @fig-cloud-compare-exemplo ilustra o resultado típico.
 
 ![Exemplo de nuvem de pontos de sistema radicular de vetiver no CloudCompare, com coloração por profundidade (Height Ramp): azul indica raízes superficiais e vermelho indica raízes profundas.](../img/cloudcompare_raizes_vetiver.png){#fig-cloud-compare-exemplo fig-alt="Nuvem de pontos colorida por profundidade no CloudCompare" width="80%"}
 
@@ -123,9 +123,9 @@ A distribuição vertical das raízes é visualizada pela ferramenta *Height Ram
 
 ### Método de Fatiamento
 
-O RAR é o parâmetro principal extraído do modelo 3D. O procedimento consiste em fatiar horizontalmente a nuvem de pontos em camadas de 10 cm de espessura, utilizando a ferramenta *Cross Section* (**Tools → Segmentation → Cross Section**), com plano de corte XY.
+O RAR é o parâmetro principal extraído do modelo 3D. O procedimento consiste em fatiar horizontalmente a nuvem de pontos em camadas de 10 cm de espessura, utilizando a ferramenta *Cross Section* (Tools → Segmentation → Cross Section), com plano de corte XY.
 
-Para cada fatia na profundidade $z_i$, a nuvem é rasterizada no plano XY (**Tools → Projection → Rasterize**, resolução de célula = 1 mm), e o RAR é calculado como:
+Para cada fatia na profundidade $z_i$, a nuvem é rasterizada no plano XY (Tools → Projection → Rasterize, resolução de célula = 1 mm), e o RAR é calculado como:
 
 $$RAR(z_i) = \frac{A_{raiz}}{A_{total}} = \frac{n_{raiz} \times A_{célula}}{n_{total} \times A_{célula}}$$ {#eq-rar-cap22}
 
@@ -204,11 +204,11 @@ Os modelos mecânicos dependem de parâmetros obtidos por ensaios complementares
 
 A modelagem tridimensional revela características não detectáveis pela análise 2D convencional:
 
-- **Distribuição assimétrica**: raízes crescem preferencialmente para baixo do talude (geotropismo combinado com gravidade), o que significa que o reforço mecânico não é uniforme ao redor da touceira.
+- Distribuição assimétrica: raízes crescem preferencialmente para baixo do talude (geotropismo combinado com gravidade), o que significa que o reforço mecânico não é uniforme ao redor da touceira.
 
-- **Conexão entre touceiras**: após 12 meses, raízes de touceiras vizinhas se entrelaçam, formando uma "malha viva" que distribui as tensões de cisalhamento de forma mais eficiente que raízes isoladas.
+- Conexão entre touceiras: após 12 meses, raízes de touceiras vizinhas se entrelaçam, formando uma "malha viva" que distribui as tensões de cisalhamento de forma mais eficiente que raízes isoladas.
 
-- **Zonas de fragilidade**: entre touceiras, o solo pode permanecer desprotegido, o que reforça a recomendação de espaçamento inferior a 20 cm entre mudas.
+- Zonas de fragilidade: entre touceiras, o solo pode permanecer desprotegido, o que reforça a recomendação de espaçamento inferior a 20 cm entre mudas.
 
 A @tbl-tecnicas-3d compara a fotogrametria SfM com outras técnicas de imagem 3D disponíveis para análise de sistemas radiculares.
 
