@@ -79,6 +79,7 @@ format:
     lang: pt-BR
   pdf:
     documentclass: scrbook
+    classoption: [open=any]
     papersize: a4
     fontsize: 11pt
     lang: pt-BR
