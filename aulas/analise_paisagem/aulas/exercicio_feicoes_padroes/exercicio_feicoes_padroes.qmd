@@ -73,7 +73,8 @@ Aplicar os fundamentos de sensoriamento remoto da Aula 13 em **exercício práti
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**O que será produzido**
+**O que será produzido
+**
 
 Ao final da aula, cada estudante terá:
 
@@ -139,7 +140,8 @@ Map.addLayer(imagem,
 
 ::: {.column width="50%"}
 ::: {.info-box}
-**O que observar em cada composição**
+**O que observar em cada composição
+**
 
 **Cor verdadeira (B4-B3-B2):**
 
@@ -223,7 +225,8 @@ Map.addLayer(agua.selfMask(),
 ```
 
 ::: {.highlight-box}
-**Tarefa**
+**Tarefa
+**
 
 1. Gere os mapas de NDVI e NDWI
 2. Identifique as faixas de NDVI predominantes na área
@@ -313,7 +316,8 @@ Usando as composições e índices, identifique na área de estudo:
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**Modelo de comparação**
+**Modelo de comparação
+**
 
 | Feição | Sua classificação | MapBiomas | Concorda? | Comentário |
 |--------|------------------|-----------|:---------:|-----------|
@@ -353,7 +357,8 @@ Usando as composições e índices, identifique na área de estudo:
 
 ::: {.column width="50%"}
 ::: {.info-box}
-**Entrega da Aula 14**
+**Entrega da Aula 14
+**
 
 **Formato:** documento ou pasta digital contendo:
 
@@ -375,7 +380,8 @@ Usando as composições e índices, identifique na área de estudo:
 ## Síntese da Aula 14 {.smaller-text}
 
 ::: {.info-box}
-**O que fizemos hoje**
+**O que fizemos hoje
+**
 
 1. **Acessamos imagem Sentinel-2** no GEE para a área de estudo
 2. **Geramos composições coloridas**  -  cor verdadeira, falsa cor, SWIR
@@ -387,7 +393,9 @@ Usando as composições e índices, identifique na área de estudo:
 
 # {background-color="#034EA2"}
 
+::: {style="text-align: center;"}
 [Obrigado!]{.obrigado-fit-text style="color: white;"}
+:::
 
 ::: {style="text-align: center; color: white; font-size: 0.7em;"}
 Luiz Diego Vidal Santos

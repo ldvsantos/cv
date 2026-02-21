@@ -75,7 +75,8 @@ O sensoriamento remoto permite:
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**De onde observamos?**
+**De onde observamos?
+**
 
 ```
          🛰️ Satélite (órbita ~700 km)
@@ -305,7 +306,8 @@ $$NDBI = \frac{SWIR - NIR}{SWIR + NIR} = \frac{B11 - B8}{B11 + B8}$$
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**MapBiomas: a base de referência**
+**MapBiomas: a base de referência
+**
 
 O **MapBiomas** é a mais completa base de uso/cobertura da terra no Brasil:
 
@@ -364,7 +366,8 @@ O **MapBiomas** é a mais completa base de uso/cobertura da terra no Brasil:
 
 ::: {.column width="50%"}
 ::: {.info-box}
-**Fluxo básico de trabalho**
+**Fluxo básico de trabalho
+**
 
 ```
 1. Obter imagem (download/GEE)
@@ -414,7 +417,8 @@ Na próxima aula, faremos exercício de **identificação de feições** na áre
 
 ::: {.column width="50%"}
 ::: {.info-box}
-**Preparação**
+**Preparação
+**
 
 - Ter conta no **Google Earth Engine** (solicitar acesso se necessário)
 - Revisar a **delimitação da área de estudo** (Aula 08)
@@ -429,7 +433,8 @@ Na próxima aula, faremos exercício de **identificação de feições** na áre
 ## Síntese da Aula 13 {.smaller-text}
 
 ::: {.info-box}
-**O que vimos hoje**
+**O que vimos hoje
+**
 
 1. **SR na análise da paisagem**  -  visão sinóptica, repetibilidade, multiscalaridade
 2. **Sensores e plataformas**  -  Landsat, Sentinel-2, CBERS, MODIS, MapBiomas
@@ -442,7 +447,9 @@ Na próxima aula, faremos exercício de **identificação de feições** na áre
 
 # {background-color="#034EA2"}
 
+::: {style="text-align: center;"}
 [Obrigado!]{.obrigado-fit-text style="color: white;"}
+:::
 
 ::: {style="text-align: center; color: white; font-size: 0.7em;"}
 Luiz Diego Vidal Santos
