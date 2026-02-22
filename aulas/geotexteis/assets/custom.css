@@ -209,6 +209,12 @@ section.title-slide .date,
   font-size: 0.7em;
 }
 
+/* ---- Reservar espaço para o rodapé fixo ---- */
+.reveal .slides section {
+  padding-bottom: 45px !important;
+  box-sizing: border-box !important;
+}
+
 /* ---- Scroll Container ---- */
 .diagram-scroll {
   max-height: 600px;

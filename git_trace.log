@@ -1,0 +1,72 @@
+13:57:35.974192 common-init.c:57                  version 2.51.0.windows.2
+13:57:35.975197 common-init.c:58                  start git.exe status
+13:57:36.019372 repository.c:242                  worktree 'C:/Users/vidal/OneDrive/Documentos/13 - CLONEGIT/meu_site'
+13:57:36.021387 git.c:477                         cmd_name status (status)
+13:58:02.103098 run-command.c:741                 child_start[0] 'git-lfs filter-process'
+13:58:02.801715 common-init.c:57                  version 2.51.0.windows.2
+13:58:02.802729 common-init.c:58                  start git version
+13:58:02.874065 git.c:477                         cmd_name version (status/version)
+13:58:02.876773 git.c:750                         exit elapsed:0.094086 code:0
+13:58:02.876773 trace2/tr2_tgt_normal.c:128       atexit elapsed:0.094415 code:0
+13:58:03.052102 common-init.c:57                  version 2.51.0.windows.2
+13:58:03.052102 common-init.c:58                  start git -c filter.lfs.smudge= -c filter.lfs.clean= -c filter.lfs.process= -c filter.lfs.required=false rev-parse --git-dir
+13:58:03.104789 git.c:477                         cmd_name rev-parse (status/rev-parse)
+13:58:03.105788 repository.c:242                  worktree 'C:/Users/vidal/OneDrive/Documentos/13 - CLONEGIT/meu_site'
+13:58:03.107254 git.c:750                         exit elapsed:0.076294 code:0
+13:58:03.107254 trace2/tr2_tgt_normal.c:128       atexit elapsed:0.076326 code:0
+13:58:03.864955 common-init.c:57                  version 2.51.0.windows.2
+13:58:03.865963 common-init.c:58                  start git -c filter.lfs.smudge= -c filter.lfs.clean= -c filter.lfs.process= -c filter.lfs.required=false remote
+13:58:03.914753 repository.c:242                  worktree 'C:/Users/vidal/OneDrive/Documentos/13 - CLONEGIT/meu_site'
+13:58:03.914753 git.c:477                         cmd_name remote (status/remote)
+13:58:03.916391 git.c:750                         exit elapsed:0.074988 code:0
+13:58:03.916391 trace2/tr2_tgt_normal.c:128       atexit elapsed:0.075020 code:0
+13:58:04.124706 common-init.c:57                  version 2.51.0.windows.2
+13:58:04.127028 common-init.c:58                  start git -c filter.lfs.smudge= -c filter.lfs.clean= -c filter.lfs.process= -c filter.lfs.required=false rev-parse --git-dir --show-toplevel
+13:58:04.187626 git.c:477                         cmd_name rev-parse (status/rev-parse)
+13:58:04.189632 repository.c:242                  worktree 'C:/Users/vidal/OneDrive/Documentos/13 - CLONEGIT/meu_site'
+13:58:04.190632 git.c:750                         exit elapsed:0.083349 code:0
+13:58:04.190632 trace2/tr2_tgt_normal.c:128       atexit elapsed:0.083394 code:0
+13:58:04.354843 common-init.c:57                  version 2.51.0.windows.2
+13:58:04.355851 common-init.c:58                  start git rev-parse --is-bare-repository
+13:58:04.433966 git.c:477                         cmd_name rev-parse (status/rev-parse)
+13:58:04.438072 repository.c:242                  worktree 'C:/Users/vidal/OneDrive/Documentos/13 - CLONEGIT/meu_site'
+13:58:04.442477 git.c:750                         exit elapsed:0.106729 code:0
+13:58:04.442477 trace2/tr2_tgt_normal.c:128       atexit elapsed:0.107595 code:0
+13:58:04.667398 common-init.c:57                  version 2.51.0.windows.2
+13:58:04.668492 common-init.c:58                  start git config --includes --local lfs.repositoryformatversion
+13:58:04.714085 repository.c:242                  worktree 'C:/Users/vidal/OneDrive/Documentos/13 - CLONEGIT/meu_site'
+13:58:04.714085 git.c:477                         cmd_name config (status/config)
+13:58:04.715195 git.c:750                         exit elapsed:0.069661 code:0
+13:58:04.715195 trace2/tr2_tgt_normal.c:128       atexit elapsed:0.069715 code:0
+13:58:04.870817 common-init.c:57                  version 2.51.0.windows.2
+13:58:04.871811 common-init.c:58                  start git config --includes -l
+13:58:04.920426 repository.c:242                  worktree 'C:/Users/vidal/OneDrive/Documentos/13 - CLONEGIT/meu_site'
+13:58:04.920426 git.c:477                         cmd_name config (status/config)
+13:58:04.922424 git.c:750                         exit elapsed:0.069436 code:0
+13:58:04.922424 trace2/tr2_tgt_normal.c:128       atexit elapsed:0.069484 code:0
+13:58:05.067298 common-init.c:57                  version 2.51.0.windows.2
+13:58:05.068315 common-init.c:58                  start git rev-parse --is-bare-repository
+13:58:05.113435 git.c:477                         cmd_name rev-parse (status/rev-parse)
+13:58:05.114437 repository.c:242                  worktree 'C:/Users/vidal/OneDrive/Documentos/13 - CLONEGIT/meu_site'
+13:58:05.116027 git.c:750                         exit elapsed:0.062519 code:0
+13:58:05.116027 trace2/tr2_tgt_normal.c:128       atexit elapsed:0.062554 code:0
+13:58:05.373167 common-init.c:57                  version 2.51.0.windows.2
+13:58:05.374179 common-init.c:58                  start git config --includes -l --blob :.lfsconfig
+13:58:05.439689 repository.c:242                  worktree 'C:/Users/vidal/OneDrive/Documentos/13 - CLONEGIT/meu_site'
+13:58:05.439689 git.c:477                         cmd_name config (status/config)
+13:58:05.444013 usage.c:91                        error unable to resolve config blob ':.lfsconfig'
+13:58:05.444013 usage.c:72                        error error processing config file(s)
+13:58:05.444778 usage.c:86                        exit elapsed:0.105471 code:128
+13:58:05.444778 trace2/tr2_tgt_normal.c:128       atexit elapsed:0.105515 code:128
+13:58:05.603898 common-init.c:57                  version 2.51.0.windows.2
+13:58:05.603898 common-init.c:58                  start git config --includes -l --blob HEAD:.lfsconfig
+13:58:05.658610 repository.c:242                  worktree 'C:/Users/vidal/OneDrive/Documentos/13 - CLONEGIT/meu_site'
+13:58:05.658610 git.c:477                         cmd_name config (status/config)
+13:58:05.663605 usage.c:91                        error unable to resolve config blob 'HEAD:.lfsconfig'
+13:58:05.663605 usage.c:72                        error error processing config file(s)
+13:58:05.663924 usage.c:86                        exit elapsed:0.074905 code:128
+13:58:05.663924 trace2/tr2_tgt_normal.c:128       atexit elapsed:0.074983 code:128
+13:58:31.728100 usage.c:72                        error mmap failed: Invalid argument
+13:58:31.729098 usage.c:86                        exit elapsed:55.783359 code:128
+13:58:31.746961 run-command.c:997                 child_exit[0] pid:8712 code:0 elapsed:29.642639
+13:58:31.746961 trace2/tr2_tgt_normal.c:128       atexit elapsed:55.800963 code:128

@@ -209,6 +209,12 @@ section.title-slide .date,
   font-size: 0.7em;
 }
 
+/* ---- Reservar espaço para o rodapé fixo ---- */
+.reveal .slides section {
+  padding-bottom: 45px !important;
+  box-sizing: border-box !important;
+}
+
 /* ---- Overflow: permitir scroll em slides com muito conteúdo ---- */
 .reveal .slide-background + section,
 .reveal .slides section.smaller-text,
