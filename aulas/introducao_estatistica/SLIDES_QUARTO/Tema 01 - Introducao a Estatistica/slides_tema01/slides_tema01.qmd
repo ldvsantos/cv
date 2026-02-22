@@ -13,6 +13,7 @@ format:
     width: 1280
     height: 720
     css: ../../../../assets/custom.css
+    include-after-body: ../../../../assets/image-lightbox.html
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -38,7 +39,8 @@ execute:
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**Conceito Central**
+**Conceito Central
+**
 
 A EstatÃ­stica Ã© uma ciÃªncia que oferece uma **coleÃ§Ã£o de mÃ©todos** para:
 
@@ -60,7 +62,8 @@ Quando solicitados a investigar um fenÃ´meno coletivo, podemos optar por:
 ::: {.columns}
 ::: {.column width="50%"}
 ::: {.info-box}
-**Censo**
+**Censo
+**
 
 Estudo de **todos** os componentes de uma populaÃ§Ã£o
 :::
@@ -68,7 +71,8 @@ Estudo de **todos** os componentes de uma populaÃ§Ã£o
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**Amostragem**
+**Amostragem
+**
 
 Estudo de **alguns** elementos de uma populaÃ§Ã£o cujo objetivo Ã© fazer **inferÃªncia** sobre a populaÃ§Ã£o
 :::
@@ -115,7 +119,8 @@ A EstatÃ­stica pode ser dividida em duas grandes Ã¡reas:
 ::: {.columns}
 ::: {.column width="50%"}
 ::: {.info-box}
-**EstatÃ­stica Descritiva**
+**EstatÃ­stica Descritiva
+**
 
 Trata da **organizaÃ§Ã£o**, **resumo** e **apresentaÃ§Ã£o** dos dados.
 :::
@@ -123,7 +128,8 @@ Trata da **organizaÃ§Ã£o**, **resumo** e **apresentaÃ§Ã£o** dos dados.
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**EstatÃ­stica Inferencial**
+**EstatÃ­stica Inferencial
+**
 
 Trata de tirar **conclusÃµes sobre uma populaÃ§Ã£o** a partir de uma amostra.
 
@@ -153,7 +159,8 @@ Conjunto **completo** de elementos que compartilham uma caracterÃ­stica; repre
 
 ::: {.column width="40%"}
 ::: {.info-box}
-**DefiniÃ§Ã£o**
+**DefiniÃ§Ã£o
+**
 
 - InferÃªncia estatÃ­stica refere-se aos resultados derivados da **anÃ¡lise estatÃ­stica** dos dados coletados
 - A inferÃªncia estatÃ­stica advÃ©m de uma relaÃ§Ã£o entre a **teoria estatÃ­stica** e os **dados reais**

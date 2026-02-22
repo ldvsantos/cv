@@ -15,6 +15,7 @@ format:
     height: 720
     margin: 0.01
     css: ../../../assets/custom.css
+    include-after-body: ../../../assets/image-lightbox.html
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -83,25 +84,28 @@ A paisagem é uma das categorias centrais da Geografia. Analisá-la significa:
 
 ## Cronograma resumido {.smaller-text}
 
-| Sem. | Data | Conteúdo |
-|:---:|:---:|----------|
-| 1ª | 25/02 | Apresentação + Conceito de paisagem |
-| 2ª | 04/03 | Abordagens integradoras + Ecologia da paisagem |
-| 3ª | 11/03 | Escala, padrão e processo |
-| 4ª | 18/03 | Cartografia temática + Exercício |
-| 5ª | 25/03 | Interpretação visual + Matriz de evidências |
-| **6ª** | **01/04** | **1ª Avaliação (Teórica I)** |
-| 7ª | 08/04 | Sensoriamento remoto I |
-| 8ª | 15/04 | Sensoriamento remoto II |
-| 9ª | 22/04 | Métricas e indicadores de paisagem |
-| 10ª | 29/04 | Unidades de paisagem + Diagnóstico |
-| 11ª | 06/05 | Planejamento territorial + Zoneamentos |
-| **12ª** | **13/05** | **2ª Avaliação (Serious Game)** |
-| 13ª | 20/05 | Atividade de campo |
-| **14ª** | **27/05** | **3ª Avaliação (Relatório de campo)** |
-| **15ª** | **03/06** | **4ª Avaliação (Teórica II)** |
-
-: {.striped .hover}
+<table class="table-striped table-hover">
+<thead>
+<tr><th style="text-align:center">Sem.</th><th style="text-align:center">Data</th><th>Conteúdo</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align:center">1ª</td><td style="text-align:center">25/02</td><td>Apresentação + Conceito de paisagem</td></tr>
+<tr><td style="text-align:center">2ª</td><td style="text-align:center">04/03</td><td>Abordagens integradoras + Ecologia da paisagem</td></tr>
+<tr><td style="text-align:center">3ª</td><td style="text-align:center">11/03</td><td>Escala, padrão e processo</td></tr>
+<tr><td style="text-align:center">4ª</td><td style="text-align:center">18/03</td><td>Cartografia temática + Exercício</td></tr>
+<tr><td style="text-align:center">5ª</td><td style="text-align:center">25/03</td><td>Interpretação visual + Matriz de evidências</td></tr>
+<tr class="avaliacao-row"><td style="text-align:center"><strong>6ª</strong></td><td style="text-align:center"><strong>01/04</strong></td><td><strong>1ª Avaliação (Teórica I)</strong></td></tr>
+<tr><td style="text-align:center">7ª</td><td style="text-align:center">08/04</td><td>Sensoriamento remoto I</td></tr>
+<tr><td style="text-align:center">8ª</td><td style="text-align:center">15/04</td><td>Sensoriamento remoto II</td></tr>
+<tr><td style="text-align:center">9ª</td><td style="text-align:center">22/04</td><td>Métricas e indicadores de paisagem</td></tr>
+<tr><td style="text-align:center">10ª</td><td style="text-align:center">29/04</td><td>Unidades de paisagem + Diagnóstico</td></tr>
+<tr><td style="text-align:center">11ª</td><td style="text-align:center">06/05</td><td>Planejamento territorial + Zoneamentos</td></tr>
+<tr class="avaliacao-row"><td style="text-align:center"><strong>12ª</strong></td><td style="text-align:center"><strong>13/05</strong></td><td><strong>2ª Avaliação (Serious Game)</strong></td></tr>
+<tr><td style="text-align:center">13ª</td><td style="text-align:center">20/05</td><td>Atividade de campo</td></tr>
+<tr class="avaliacao-row"><td style="text-align:center"><strong>14ª</strong></td><td style="text-align:center"><strong>27/05</strong></td><td><strong>3ª Avaliação (Relatório de campo)</strong></td></tr>
+<tr class="avaliacao-row"><td style="text-align:center"><strong>15ª</strong></td><td style="text-align:center"><strong>03/06</strong></td><td><strong>4ª Avaliação (Teórica II)</strong></td></tr>
+</tbody>
+</table>
 
 # [2  -  OBJETIVOS E COMPETÊNCIAS]{.section-header}
 
@@ -164,7 +168,6 @@ Capacitar o(a) discente a analisar a paisagem como totalidade complexa, integran
 - **Exercícios práticos** de interpretação e síntese
 - **Serious games** desafios simulados de diagnóstico territorial
 - **Atividade de campo** com roteiro de observação
-- **Oficinas** de elaboração de mapas e relatórios
 
 ### Recursos
 
@@ -234,7 +237,7 @@ Prova individual integradora sobre métodos, diagnóstico e planejamento territo
 
 ### Avaliação Contínua  -  Dossiê Progressivo (0.20)
 
-As atividades individuais **são** as entregas parciais que constroem o dossiê final:
+As atividades individuais são as entregas parciais que constroem o dossiê final:
 
 - **Fichamentos** das leituras → referencial teórico do dossiê
 - **Exercícios práticos** de interpretação → metodologia aplicada
@@ -313,25 +316,53 @@ Na ciência, especialmente na Geografia, o conceito é muito mais amplo e comple
 
 ---
 
-## A paisagem na arte e na ciência {.smaller-text}
+## A paisagem na arte (séculos XV-XIX) {.smaller-text}
+
+O termo **Landschaft** (alemão) e **paysage** (francês) surgem primeiro na **pintura**, antes de se tornarem conceitos científicos.
 
 ::: {.columns}
-::: {.column width="50%"}
-### Na arte (séculos XV-XIX)
+::: {.column width="33%"}
+![Joachim Patinir  -  *Travessia do Estige* (c. 1524, Prado)](img/Image_024.jpg){width="100%" fig-align="center"}
 
-![Paisagens na pintura  -  da representação à ciência](img/Image_003.jpg){width="90%" fig-align="center"}
+**Séc. XV  -  Pintura flamenga**
 
-O termo **Landschaft** (alemão) e **paysage** (francês) surgem primeiro na **pintura**:
-
-- Séc. XV  -  pinturas flamengas: paisagem como fundo
-- Séc. XVII  -  paisagem holandesa como gênero próprio
-- Séc. XVIII-XIX  -  romantismo: paisagem como expressão da natureza e da alma
-
-> A arte antecipou a ciência: antes de ser objeto de estudo, a paisagem era objeto de **representação**.
+A paisagem aparece como **cenário de fundo** para cenas religiosas. Patinir é considerado o primeiro pintor a tratar a paisagem como protagonista, com suas panorâmicas de vales, rios e rochedos.
 :::
 
-::: {.column width="50%"}
+::: {.column width="33%"}
+![Jacob van Ruisdael  -  *O Moinho em Wijk bij Duurstede* (c. 1670, Rijksmuseum)](img/Image_025.jpg){width="100%" fig-align="center"}
+
+**Séc. XVII  -  Paisagem holandesa**
+
+A paisagem torna-se **gênero autônomo**. Céus dramáticos, moinhos, planícies e cursos d'água são retratados por si mesmos  -  sem pretexto religioso ou mitológico.
+:::
+
+::: {.column width="33%"}
+![Caspar D. Friedrich  -  *Viajante sobre o Mar de Névoa* (c. 1818, Hamburger Kunsthalle)](img/Image_026.jpg){width="100%" fig-align="center"}
+
+**Séc. XVIII-XIX  -  Romantismo**
+
+A paisagem expressa a **relação entre o indivíduo e a natureza**  =>  sublime, contemplação, solidão. O observador não está fora da paisagem: está **imerso** nela.
+:::
+:::
+
 ::: {.info-box}
+A arte antecipou a ciência: antes de ser objeto de estudo, a paisagem era objeto de **representação**. Essa trajetória  -  de fundo decorativo a expressão do sublime  -  prepara o terreno para Humboldt transformá-la em categoria científica.
+:::
+
+---
+
+## Paisagens na pintura: da representação à ciência {.smaller-text}
+
+![Friedrich Georg Weitsch, *Alexander von Humboldt e Aimé Bonpland no Monte Chimborazo*, c. 1806](img/Image_003.jpg){width="90%" fig-align="center"}
+
+O desenvolvimento da pintura de paisagem, do cenário de fundo à expressão do sublime, preparou o terreno para a abordagem científica de Humboldt. A imagem acima sintetiza essa transição: a paisagem deixa de ser apenas decorativa e passa a ser objeto de análise, contemplação e síntese.
+
+---
+
+## Da arte à ciência: Humboldt {.smaller-text}
+
+::: {.highlight-box}
 **Na ciência (séc. XIX em diante)**
 
 **Alexander von Humboldt** (1769-1859) inaugura o uso científico:
@@ -342,9 +373,7 @@ O termo **Landschaft** (alemão) e **paysage** (francês) surgem primeiro na **p
 
 Humboldt propõe que a paisagem é mais que cenário  -  é **síntese** das relações entre clima, relevo, vegetação e vida humana.
 
-> *"Compreender a natureza é, antes de tudo, compreender a totalidade da paisagem que se oferece ao olhar."*  -  Humboldt
-:::
-:::
+*"Compreender a natureza é, antes de tudo, compreender a totalidade da paisagem que se oferece ao olhar."*  -  Humboldt
 :::
 
 ---
@@ -430,7 +459,7 @@ Cada tradição ilumina uma dimensão. Nesta disciplina, trabalharemos com uma v
 
 ::: {.columns}
 ::: {.column width="50%"}
-![Da observação visual à experiência corpórea e social](img/Image_014.jpg){width="100%" fig-align="center"}
+![Edvard Munch, *Two People on the Way to the Forest*, 1884  -  as figuras não contemplam a paisagem de fora: caminham **para dentro** dela](img/Image_014.jpg){width="100%" fig-align="center"}
 
 A partir do séc. XX, a percepção da paisagem deixa de ser apenas **visual** para se tornar **corpórea, social e vivida**.
 
@@ -494,11 +523,9 @@ Quando uma paisagem é vivida, significada e carregada de **afeto**, ela deixa d
 
 ---
 
-## Topofilia e Topofobia: a dimensão afetiva da paisagem {.smaller-text}
+## Topofilia e Topofobia: a dimensão afetiva da paisagem {.smaller-text .scrollable}
 
-::: {.columns}
-::: {.column width="50%"}
-![Topofilia: o elo afetivo entre pessoa e lugar](img/Image_017.png){width="100%" fig-align="center"}
+![Topofilia: o elo afetivo entre pessoa e lugar](img/Image_017.png){width="70%" fig-align="center"}
 
 ::: {.info-box}
 **Yi-Fu Tuan** (1930-2022) cunhou o termo **Topofilia** para descrever o elo afetivo entre a pessoa e o lugar. Características:
@@ -507,22 +534,34 @@ Quando uma paisagem é vivida, significada e carregada de **afeto**, ela deixa d
 - Construído pelo **cotidiano** e relações afetivas
 - Identidade forjada pela **familiaridade**
 :::
-:::
 
-::: {.column width="50%"}
-### Estudo de caso: a Mina de Timbopeba (Vale)
+---
 
-![De Topofilia a Topofobia  -  transformação afetiva](img/Image_020.png){width="100%" fig-align="center"}
+## Estudo de caso: a FAFEN-Camaçari (BA) {.smaller-text .scrollable}
+
+### Topofilia  -  a fábrica como orgulho
+
+![**Topofilia**: FAFEN em operação, era Petrobras](img/Image_020a.webp){width="75%" fig-align="center"}
+
+A FAFEN-Camaçari representava **emprego**, **identidade** e **orgulho** para a comunidade local. A paisagem industrial era sinônimo de **pertencimento**.
+
+### Topofobia  -  a fábrica como abandono
+
+![**Topofobia**: UNIGEL, 2019](img/Image_020b.jpeg){width="75%" fig-align="center"}
+
+Com a hibernação e privatização (Unigel), a mesma paisagem passou a representar **medo**, **abandono** e **incerteza**. A comunidade perdeu seu referencial afetivo.
+
+### A mesma fábrica, duas paisagens subjetivas
 
 | Fase | Relação | Percepção |
 |------|---------|----------|
-| **Estatal** (antes) | Empresa "Mãe" | Orgulho, identidade, **Topofilia** |
-| **Privatizada** (depois) | Empresa "Madrasta" | Medo, estranhamento, **Topofobia** |
+| **Petrobras** (até 2019) | Empresa "Mãe" | Orgulho, emprego, **Topofilia** |
+| **Hibernação/Privatização** | Empresa "ausente" | Medo, abandono, **Topofobia** |
 
 : {.striped .hover}
 
-O espaço físico é o **mesmo**  -  mas a **paisagem subjetiva** mudou radicalmente. Isso mostra que a paisagem não é apenas forma: é também **relação**.
-:::
+::: {.highlight-box}
+A fábrica é a **mesma**  -  mas a **paisagem subjetiva** mudou radicalmente. A comunidade de Camaçari passou de orgulho e pertencimento para medo e abandono. Paisagem não é apenas forma: é também **relação**.
 :::
 
 # [5  -  PAISAGEM COMO CATEGORIA ANALÍTICA]{.section-header}

@@ -12,6 +12,7 @@ format:
     width: 1280
     height: 720
     css: ../../../assets/custom.css
+    include-after-body: ../../../assets/image-lightbox.html
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -88,4 +89,3 @@ Luiz Diego Vidal Santos
 Universidade Estadual de Feira de Santana (UEFS)
 :::
 :::
-

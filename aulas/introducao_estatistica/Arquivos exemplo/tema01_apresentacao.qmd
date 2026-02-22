@@ -12,6 +12,7 @@ format:
     width: 1280
     height: 720
     css: assets/custom.css
+    include-after-body: ../../assets/image-lightbox.html
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -86,7 +87,8 @@ execute:
 
 ::: {.column width="40%"}
 ::: {.highlight-box}
-**Sistemas Integrados**
+**Sistemas Integrados
+**
 
 Diretrizes para formalizar:
 - GovernanÃ§a
@@ -379,7 +381,8 @@ FunÃ§Ãµes como *Boundary Spanners*:
 
 ::: {.column width="40%"}
 ::: {.info-box}
-**MaterializaÃ§Ã£o da PolÃ­tica**
+**MaterializaÃ§Ã£o da PolÃ­tica
+**
 
 Os NITs executam:
 - GestÃ£o de PI
@@ -497,7 +500,8 @@ VisÃ£o sistÃªmica alinhada Ã  ISO 56002
 ::: {.columns}
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**Componentes Upstream**
+**Componentes Upstream
+**
 
 **CaracterÃ­sticas**
 - Integrados
@@ -514,7 +518,8 @@ VisÃ£o sistÃªmica alinhada Ã  ISO 56002
 
 ::: {.column width="50%"}
 ::: {.info-box}
-**Complementos Downstream**
+**Complementos Downstream
+**
 
 **CaracterÃ­sticas**
 - Modulares
@@ -690,7 +695,8 @@ Sistematicidade = Vantagem Competitiva
 
 ::: {.column width="40%"}
 ::: {.info-box}
-**ConsolidaÃ§Ã£o do SGI**
+**ConsolidaÃ§Ã£o do SGI
+**
 
 **Requer**
 - SuperaÃ§Ã£o de barreiras culturais

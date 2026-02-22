@@ -624,3 +624,12 @@ section.title-slide.slide.level1:has(.section-header) div {
     max-width: 100% !important;
   }
 }
+
+/* ---- Linha de avaliação (sinalização suave) ---- */
+.reveal table tr.avaliacao-row {
+  background-color: rgba(33, 53, 166, 0.10) !important;
+}
+.reveal table.table-striped tr.avaliacao-row:nth-child(even),
+.reveal table.table-striped tr.avaliacao-row:nth-child(odd) {
+  background-color: rgba(33, 53, 166, 0.10) !important;
+}

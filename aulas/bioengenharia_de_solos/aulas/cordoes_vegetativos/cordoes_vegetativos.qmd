@@ -15,6 +15,7 @@ format:
     height: 720
     margin: 0.01
     css: ../../../assets/custom.css
+    include-after-body: ../../../assets/image-lightbox.html
     transition: slide
     background-transition: fade
     preview-links: auto

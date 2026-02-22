@@ -13,6 +13,7 @@ format:
     width: 1280
     height: 720
     css: ../../../../assets/custom.css
+    include-after-body: ../../../../assets/image-lightbox.html
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -72,7 +73,8 @@ De acordo com o *Publication Manual of the APA*:
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**ObservaÃ§Ã£o Importante**
+**ObservaÃ§Ã£o Importante
+**
 
 Na APA, **nunca** se deve deixar cÃ©lulas vazias em tabelas.
 
