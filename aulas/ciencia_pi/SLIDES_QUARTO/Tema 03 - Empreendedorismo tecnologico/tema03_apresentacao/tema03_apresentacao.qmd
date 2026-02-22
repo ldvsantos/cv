@@ -1,12 +1,11 @@
 ---
-title: "Propriedade Intelectual e Inovação"
-subtitle: "Empreendedorismo Tecnológico<br>Inovação e Criação de Novos Negócios"
+title: "Propriedade Intelectual e InovaÃ§Ã£o"
+subtitle: "Empreendedorismo TecnolÃ³gico<br>InovaÃ§Ã£o e CriaÃ§Ã£o de Novos NegÃ³cios"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
 format: 
   revealjs:
     logo: ../../../../assets/logo-uefs.webp
-    footer: "UEFS - Universidade Estadual de Feira de Santana | Tema 3 - Empreendedorismo Tecnológico"
+    footer: "UEFS - Universidade Estadual de Feira de Santana | Tema 3 - Empreendedorismo TecnolÃ³gico"
     slide-number: true
     theme: [simple, ../../../../assets/uefs.scss]
     controls: true
@@ -20,104 +19,104 @@ execute:
   echo: false
 ---
 
-## Visão Geral {.smaller-text}
+## VisÃ£o Geral {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Tópicos Principais
+### TÃ³picos Principais
 
-- [1]{.circle} Conceitos de Empreendedorismo Tecnológico
+- [1]{.circle} Conceitos de Empreendedorismo TecnolÃ³gico
 - [2]{.circle} Lean Startup e Customer Development
-- [3]{.circle} Modelos de Negócio Inovadores
+- [3]{.circle} Modelos de NegÃ³cio Inovadores
 - [4]{.circle} Ecossistemas Empreendedores
-- [5]{.circle} Financiamento e Aceleração
+- [5]{.circle} Financiamento e AceleraÃ§Ã£o
 :::
 
 ::: {.column width="50%"}
 ::: {.info-box}
 **Objetivo Central**
 
-Explorar os fundamentos do empreendedorismo tecnológico e as estratégias para criação de startups de sucesso.
+Explorar os fundamentos do empreendedorismo tecnolÃ³gico e as estratÃ©gias para criaÃ§Ã£o de startups de sucesso.
 :::
 :::
 :::
 
 ---
 
-## [Introdução]{.section-header}
+## [IntroduÃ§Ã£o]{.section-header}
 
-## Empreendedorismo Tecnológico: ideia à startup {.smaller-text}
+## Empreendedorismo TecnolÃ³gico: ideia Ã  startup {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
 ### Conceito
 
-- Criação de novas combinações sob incerteza e com potencial de escalabilidade
-- Conversão de conhecimento científico-tecnológico em solução adotável
+- CriaÃ§Ã£o de novas combinaÃ§Ãµes sob incerteza e com potencial de escalabilidade
+- ConversÃ£o de conhecimento cientÃ­fico-tecnolÃ³gico em soluÃ§Ã£o adotÃ¡vel
 
 ::: {.info-box}
-**Schumpeter (1942)**: destruição criativa como motor de renovação competitiva
+**Schumpeter (1942)**: destruiÃ§Ã£o criativa como motor de renovaÃ§Ã£o competitiva
 :::
 
 ::: {.highlight-box}
-**Bailetti (2012)**: diferencia-se por depender de conhecimento, intangíveis e coordenação de rede
+**Bailetti (2012)**: diferencia-se por depender de conhecimento, intangÃ­veis e coordenaÃ§Ã£o de rede
 :::
 :::
 
 ::: {.column width="45%"}
-### Por que é diferente em base tecnológica
+### Por que Ã© diferente em base tecnolÃ³gica
 
-- Parte do valor está em **intangíveis** (PI, *know-how*)
-- A solução percorre uma jornada de maturação
+- Parte do valor estÃ¡ em **intangÃ­veis** (PI, *know-how*)
+- A soluÃ§Ã£o percorre uma jornada de maturaÃ§Ã£o
 
-**Evidências típicas de maturação**
-- Prova de conceito → protótipo → validação em ambiente relevante → mercado
+**EvidÃªncias tÃ­picas de maturaÃ§Ã£o**
+- Prova de conceito â†’ protÃ³tipo â†’ validaÃ§Ã£o em ambiente relevante â†’ mercado
 
 ::: {.info-box}
-Referências: Vedovello (2000), FINEP (2006)
+ReferÃªncias: Vedovello (2000), FINEP (2006)
 :::
 :::
 :::
 
 ---
 
-## Da incerteza ao processo: governança do aprendizado {.smaller-text}
+## Da incerteza ao processo: governanÃ§a do aprendizado {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
 ### Ideia central
 
-- Startup não é só “boa ideia”, é **processo de produzir evidência**
-- Hipótese técnica e hipótese de valor precisam avançar juntas
-- Decisão deve ser baseada em sinais de mercado e de viabilidade
+- Startup nÃ£o Ã© sÃ³ â€œboa ideiaâ€, Ã© **processo de produzir evidÃªncia**
+- HipÃ³tese tÃ©cnica e hipÃ³tese de valor precisam avanÃ§ar juntas
+- DecisÃ£o deve ser baseada em sinais de mercado e de viabilidade
 :::
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**Regra prática**
+**Regra prÃ¡tica**
 
-Quanto maior a incerteza, maior a necessidade de ciclos curtos e registros simples de hipóteses, testes e aprendizados, de modo que falhas sejam identificadas cedo e o desperdício de recursos seja minimizado.
+Quanto maior a incerteza, maior a necessidade de ciclos curtos e registros simples de hipÃ³teses, testes e aprendizados, de modo que falhas sejam identificadas cedo e o desperdÃ­cio de recursos seja minimizado.
 :::
 :::
 :::
 
 ---
 
-## [Problema e Proposição de Valor]{.section-header}
+## [Problema e ProposiÃ§Ã£o de Valor]{.section-header}
 
-## Problema → oportunidade → proposição de valor {.smaller-text}
+## Problema â†’ oportunidade â†’ proposiÃ§Ã£o de valor {.smaller-text}
 
 ::: {.slide-scroll}
 
 ::: {.highlight-box}
-**Transformação decisiva**
+**TransformaÃ§Ã£o decisiva**
 
-- Problema real vira **hipótese testável de valor**
+- Problema real vira **hipÃ³tese testÃ¡vel de valor**
 - Definir claramente
   - Quem sofre o problema
   - Contexto de uso
   - Alternativas existentes
-  - Restrições (técnicas e regulatórias)
+  - RestriÃ§Ãµes (tÃ©cnicas e regulatÃ³rias)
 :::
 
 ::: {.info-box}
@@ -125,13 +124,13 @@ Base: Drucker (1985), Hisrich et al. (2017)
 :::
 
 ::: {.highlight-box}
-**Critério de qualidade**
+**CritÃ©rio de qualidade**
 
-Uma proposição de valor forte combina
+Uma proposiÃ§Ã£o de valor forte combina
 
 - Escuta de clientes
-- Inteligência competitiva
-- Inteligência tecnológica
+- InteligÃªncia competitiva
+- InteligÃªncia tecnolÃ³gica
 
 e reduz o risco de construir tecnologia sofisticada para um problema fraco.
 :::
@@ -140,15 +139,15 @@ e reduz o risco de construir tecnologia sofisticada para um problema fraco.
 
 ---
 
-## Inovação como combinação de fontes de conhecimento {.smaller-text}
+## InovaÃ§Ã£o como combinaÃ§Ã£o de fontes de conhecimento {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="60%"}
 ### Manual de Oslo
 
-- Inovação depende de integrar fontes internas e externas
-- Em startups, tempo e orçamento são limitados
-- Portanto, essa integração precisa virar método, com hipóteses testadas cedo em ciclos curtos, aceitando falhar precocemente para reduzir desperdício
+- InovaÃ§Ã£o depende de integrar fontes internas e externas
+- Em startups, tempo e orÃ§amento sÃ£o limitados
+- Portanto, essa integraÃ§Ã£o precisa virar mÃ©todo, com hipÃ³teses testadas cedo em ciclos curtos, aceitando falhar precocemente para reduzir desperdÃ­cio
 
 ::: {.info-box}
 OCDE e Eurostat (2005)
@@ -157,30 +156,30 @@ OCDE e Eurostat (2005)
 
 ::: {.column width="40%"}
 ::: {.highlight-box}
-**Tradução prática**
+**TraduÃ§Ã£o prÃ¡tica**
 
-Operacionalizar como validação iterativa, com ciclo construir, medir e aprender, MVP como experimento e decisão de perseverar ou pivotar com base em evidências.
+Operacionalizar como validaÃ§Ã£o iterativa, com ciclo construir, medir e aprender, MVP como experimento e decisÃ£o de perseverar ou pivotar com base em evidÃªncias.
 :::
 :::
 :::
 
 ---
 
-## Mapa didático da jornada (ponte teoria → prática) {.smaller-text}
+## Mapa didÃ¡tico da jornada (ponte teoria â†’ prÃ¡tica) {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
 ::: {.highlight-box}
 **Ideia-chave**
 
-Tratar o modelo de negócio como um “mapa” que se atualiza, porque cada etapa da startup pede evidências e ferramentas diferentes.
+Tratar o modelo de negÃ³cio como um â€œmapaâ€ que se atualiza, porque cada etapa da startup pede evidÃªncias e ferramentas diferentes.
 :::
 
-O mapa explicita hipóteses e reduz autoengano, ao mesmo tempo em que ajuda a escolher o próximo experimento com menos desperdício de tempo e recursos.
+O mapa explicita hipÃ³teses e reduz autoengano, ao mesmo tempo em que ajuda a escolher o prÃ³ximo experimento com menos desperdÃ­cio de tempo e recursos.
 :::
 
 ::: {.column width="45%"}
-Uma leitura didática organiza a jornada em cinco etapas, ideação ligada a dores e alternativas, validação ancorada em MVP e ciclos curtos, operação centrada em entrega consistente, tração voltada ao motor de crescimento e scale-up associado à expansão com governança.
+Uma leitura didÃ¡tica organiza a jornada em cinco etapas, ideaÃ§Ã£o ligada a dores e alternativas, validaÃ§Ã£o ancorada em MVP e ciclos curtos, operaÃ§Ã£o centrada em entrega consistente, traÃ§Ã£o voltada ao motor de crescimento e scale-up associado Ã  expansÃ£o com governanÃ§a.
 :::
 :::
 
@@ -191,38 +190,38 @@ Uma leitura didática organiza a jornada em cinco etapas, ideação ligada a dor
 ::: {.columns}
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**Ideação** aparece quando um problema concreto vira hipótese de valor, e o caso do Airbnb é frequentemente citado como exemplo de observação de demanda e restrição de oferta em um contexto específico, a partir do qual uma solução simples foi formulada para testar interesse real.
+**IdeaÃ§Ã£o** aparece quando um problema concreto vira hipÃ³tese de valor, e o caso do Airbnb Ã© frequentemente citado como exemplo de observaÃ§Ã£o de demanda e restriÃ§Ã£o de oferta em um contexto especÃ­fico, a partir do qual uma soluÃ§Ã£o simples foi formulada para testar interesse real.
 :::
 
 ::: {.info-box}
-**Validação** tende a ficar mais nítida quando a startup usa um MVP para checar disposição a pagar e comportamento, e o exemplo clássico do Dropbox costuma ser lembrado por usar uma demonstração inicial para validar demanda antes de construir toda a solução em escala.
+**ValidaÃ§Ã£o** tende a ficar mais nÃ­tida quando a startup usa um MVP para checar disposiÃ§Ã£o a pagar e comportamento, e o exemplo clÃ¡ssico do Dropbox costuma ser lembrado por usar uma demonstraÃ§Ã£o inicial para validar demanda antes de construir toda a soluÃ§Ã£o em escala.
 :::
 :::
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**Operação** se evidencia quando a entrega precisa ser repetível e previsível, e casos como Uber são frequentemente associados ao desafio de transformar um serviço em rotina operacional com padrões, onboarding e controle de qualidade compatíveis com crescimento.
+**OperaÃ§Ã£o** se evidencia quando a entrega precisa ser repetÃ­vel e previsÃ­vel, e casos como Uber sÃ£o frequentemente associados ao desafio de transformar um serviÃ§o em rotina operacional com padrÃµes, onboarding e controle de qualidade compatÃ­veis com crescimento.
 :::
 
 ::: {.info-box}
-**Tração** se torna visível quando existe um motor de aquisição e retenção que funciona de forma consistente, e o Airbnb é comumente usado como referência de crescimento apoiado em canais e mecanismos de expansão que evoluem com experimentação contínua.
+**TraÃ§Ã£o** se torna visÃ­vel quando existe um motor de aquisiÃ§Ã£o e retenÃ§Ã£o que funciona de forma consistente, e o Airbnb Ã© comumente usado como referÃªncia de crescimento apoiado em canais e mecanismos de expansÃ£o que evoluem com experimentaÃ§Ã£o contÃ­nua.
 
-**Scale-up** passa a depender de governança, capital e capacidade organizacional, e exemplos como Nubank são frequentemente citados pela combinação entre expansão, robustez regulatória e maturidade de processos ao longo do crescimento.
+**Scale-up** passa a depender de governanÃ§a, capital e capacidade organizacional, e exemplos como Nubank sÃ£o frequentemente citados pela combinaÃ§Ã£o entre expansÃ£o, robustez regulatÃ³ria e maturidade de processos ao longo do crescimento.
 :::
 :::
 :::
 
-## [Validação Iterativa]{.section-header}
+## [ValidaÃ§Ã£o Iterativa]{.section-header}
 
 ## Lean Startup e Customer Development {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
-### Princípios
+### PrincÃ­pios
 
 - Priorizar **aprendizado validado** antes de escalar
-- Tratar MVP como **experimento**, não como produto final
-- Iterar com base em evidência
+- Tratar MVP como **experimento**, nÃ£o como produto final
+- Iterar com base em evidÃªncia
 
 ::: {.info-box}
 Ries (2011), Blank (2013)
@@ -232,20 +231,20 @@ Ries (2011), Blank (2013)
 ::: {.column width="45%"}
 ### O que o MVP testa
 
-- Disposição a pagar
-- Aderência ao problema
-- Canais de aquisição
-- Custos e restrições de operação
+- DisposiÃ§Ã£o a pagar
+- AderÃªncia ao problema
+- Canais de aquisiÃ§Ã£o
+- Custos e restriÃ§Ãµes de operaÃ§Ã£o
 
 ::: {.highlight-box}
-MVP bom reduz incerteza, não “enche checklist”.
+MVP bom reduz incerteza, nÃ£o â€œenche checklistâ€.
 :::
 :::
 :::
 
 ---
 
-## Ciclo Build-Measure-Learn (visão didática) {.smaller-text}
+## Ciclo Build-Measure-Learn (visÃ£o didÃ¡tica) {.smaller-text}
 
 ```{mermaid}
 graph LR
@@ -253,29 +252,29 @@ graph LR
     B --> P[PRODUTO]
     P --> M[MEASURE\nDados]
     M --> D[DATA]
-    D --> L[LEARN\nValidação]
+    D --> L[LEARN\nValidaÃ§Ã£o]
     L --> I
 ```
 
 ::: {.info-box}
-Objetivo do ciclo: transformar opinião em evidência e decisão
+Objetivo do ciclo: transformar opiniÃ£o em evidÃªncia e decisÃ£o
 :::
 
 ---
 
-## Governança dos experimentos {.smaller-text}
+## GovernanÃ§a dos experimentos {.smaller-text}
 
 ::: {.highlight-box}
-**Práticas leves, mas decisivas**
+**PrÃ¡ticas leves, mas decisivas**
 
-- Backlog de hipóteses e testes
-- Cadências curtas (inspiração Scrum)
+- Backlog de hipÃ³teses e testes
+- CadÃªncias curtas (inspiraÃ§Ã£o Scrum)
 - Kanban para visualizar gargalos
 - Registro simples de riscos para evitar autoengano
 :::
 
 ::: {.info-box}
-Sinal de maturidade é reduzir incerteza de forma cumulativa, não apenas “fazer muito”.
+Sinal de maturidade Ã© reduzir incerteza de forma cumulativa, nÃ£o apenas â€œfazer muitoâ€.
 :::
 
 ---
@@ -284,59 +283,59 @@ Sinal de maturidade é reduzir incerteza de forma cumulativa, não apenas “faz
 
 ```{mermaid}
 graph TB
-    A[Fase 1\nIdentificação de Oportunidade] --> B[Fase 2\nValidação Técnico-Mercadológica]
+    A[Fase 1\nIdentificaÃ§Ã£o de Oportunidade] --> B[Fase 2\nValidaÃ§Ã£o TÃ©cnico-MercadolÃ³gica]
     B --> C[Fase 3\nDesenvolvimento MVP]
     C --> D[Fase 4\nEscalabilidade e Crescimento]
-    A --> A1[Prospecção tecnológica\nVigilância de patentes\nCruzamento mercado-tech]
+    A --> A1[ProspecÃ§Ã£o tecnolÃ³gica\nVigilÃ¢ncia de patentes\nCruzamento mercado-tech]
     B --> B1[Lean Startup\nCustomer Development\nCiclos curtos]
-    C --> C1[Protótipo funcional\nCaracterísticas essenciais\nFeedback usuários]
-    D --> D1[Planejamento estratégico\nFinanciamento\nProteção PI]
+    C --> C1[ProtÃ³tipo funcional\nCaracterÃ­sticas essenciais\nFeedback usuÃ¡rios]
+    D --> D1[Planejamento estratÃ©gico\nFinanciamento\nProteÃ§Ã£o PI]
 ```
 
 ---
 
-## [Modelo de Negócio]{.section-header}
+## [Modelo de NegÃ³cio]{.section-header}
 
-## Modelo de negócio coerente com tecnologia {.smaller-text}
+## Modelo de negÃ³cio coerente com tecnologia {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
-### Coerência que evita desperdício
+### CoerÃªncia que evita desperdÃ­cio
 
-- Forma de monetização precisa combinar com custo e ritmo de maturação
+- Forma de monetizaÃ§Ã£o precisa combinar com custo e ritmo de maturaÃ§Ã£o
 - Em hard tech, pode exigir:
-  - certificações
-  - integração com cadeia produtiva
+  - certificaÃ§Ãµes
+  - integraÃ§Ã£o com cadeia produtiva
   - contratos de longo prazo
-- Em software escalável, a prioridade tende a ser:
-  - aquisição e retenção
+- Em software escalÃ¡vel, a prioridade tende a ser:
+  - aquisiÃ§Ã£o e retenÃ§Ã£o
   - custo de servir
-  - risco de dependência de plataforma
+  - risco de dependÃªncia de plataforma
 :::
 
 ::: {.column width="45%"}
 ::: {.highlight-box}
-**Critério**
+**CritÃ©rio**
 
-Alinhamento entre maturação técnica, proposta de valor e captura de valor.
+Alinhamento entre maturaÃ§Ã£o tÃ©cnica, proposta de valor e captura de valor.
 :::
 :::
 :::
 
 ---
 
-## [PI e Transferência de Tecnologia]{.section-header}
+## [PI e TransferÃªncia de Tecnologia]{.section-header}
 
 ## Propriedade intelectual como ativo de escala {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
-### Função estratégica
+### FunÃ§Ã£o estratÃ©gica
 
-- PI é apropriabilidade, não burocracia
-- Aumenta poder de barganha e reduz vulnerabilidade à imitação
-- Decisões típicas
-  - segredo vs depósito vs publicação
+- PI Ã© apropriabilidade, nÃ£o burocracia
+- Aumenta poder de barganha e reduz vulnerabilidade Ã  imitaÃ§Ã£o
+- DecisÃµes tÃ­picas
+  - segredo vs depÃ³sito vs publicaÃ§Ã£o
 
 ::: {.info-box}
 Bailetti (2012)
@@ -345,18 +344,18 @@ Bailetti (2012)
 
 ::: {.column width="45%"}
 ::: {.highlight-box}
-**Ponto de atenção**
+**Ponto de atenÃ§Ã£o**
 
-PI deve acompanhar o ritmo de validação e o modelo de negócio.
+PI deve acompanhar o ritmo de validaÃ§Ã£o e o modelo de negÃ³cio.
 :::
 :::
 :::
 
 ---
 
-## Rotas de escala via transferência de tecnologia {.smaller-text}
+## Rotas de escala via transferÃªncia de tecnologia {.smaller-text}
 
-### Quando a ciência encontra o mercado
+### Quando a ciÃªncia encontra o mercado
 
 - Licenciamento
 - Parcerias universidade-empresa
@@ -366,30 +365,30 @@ PI deve acompanhar o ritmo de validação e o modelo de negócio.
 ::: {.columns}
 ::: {.column width="50%"}
 ::: {.info-box}
-**Bozeman (2000)**: efetividade mede absorção e geração de valor
+**Bozeman (2000)**: efetividade mede absorÃ§Ã£o e geraÃ§Ã£o de valor
 :::
 :::
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**Arora et al. (2001)**: estrutura do mercado de tecnologia condiciona a negociação
+**Arora et al. (2001)**: estrutura do mercado de tecnologia condiciona a negociaÃ§Ã£o
 :::
 :::
 :::
 
 ---
 
-## [Ecossistema e Execução]{.section-header}
+## [Ecossistema e ExecuÃ§Ã£o]{.section-header}
 
-## Ecossistema reduz incerteza e acelera execução {.smaller-text}
+## Ecossistema reduz incerteza e acelera execuÃ§Ã£o {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
 ### Infraestrutura e rede
 
-- Incubadoras, parques e laboratórios abertos
-- Aceleram prototipagem e validação
-- Tornam evidência mais barata e rápida
+- Incubadoras, parques e laboratÃ³rios abertos
+- Aceleram prototipagem e validaÃ§Ã£o
+- Tornam evidÃªncia mais barata e rÃ¡pida
 
 ::: {.info-box}
 Vedovello (2000)
@@ -399,23 +398,23 @@ Vedovello (2000)
 ::: {.column width="45%"}
 ### Recorte local (SE)
 
-- UFS e Sergipetec como articulação científica e mentoria
-- Agitte.se como mediação de PI e parcerias
-- FAPITEC-SE e Centelha como fomento para experimentos e execução
+- UFS e Sergipetec como articulaÃ§Ã£o cientÃ­fica e mentoria
+- Agitte.se como mediaÃ§Ã£o de PI e parcerias
+- FAPITEC-SE e Centelha como fomento para experimentos e execuÃ§Ã£o
 :::
 :::
 
 ---
 
-## Financiamento e aceleração {.smaller-text}
+## Financiamento e aceleraÃ§Ã£o {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
-### Dinâmica típica
+### DinÃ¢mica tÃ­pica
 
-- Pré-seed/seed para testar hipóteses e validar mercado
-- Capital de risco para escalar quando há tração
-- Fomento público pode financiar evidências e reduzir “vale” entre protótipo e mercado
+- PrÃ©-seed/seed para testar hipÃ³teses e validar mercado
+- Capital de risco para escalar quando hÃ¡ traÃ§Ã£o
+- Fomento pÃºblico pode financiar evidÃªncias e reduzir â€œvaleâ€ entre protÃ³tipo e mercado
 
 ::: {.info-box}
 FINEP (2006)
@@ -424,27 +423,27 @@ FINEP (2006)
 
 ::: {.column width="45%"}
 ::: {.highlight-box}
-**Ambiente regulatório**
+**Ambiente regulatÃ³rio**
 
-Instrumentos tributários e de simplificação podem reduzir custo de conformidade, mas não substituem mercado.
+Instrumentos tributÃ¡rios e de simplificaÃ§Ã£o podem reduzir custo de conformidade, mas nÃ£o substituem mercado.
 :::
 :::
 :::
 
 ---
 
-## [Síntese]{.section-header}
+## [SÃ­ntese]{.section-header}
 
 ## Mensagens finais {.smaller-text}
 
-- Empreender em tecnologia é **governar incerteza** com evidências
-- Problema e proposição de valor precisam caminhar com viabilidade técnica
+- Empreender em tecnologia Ã© **governar incerteza** com evidÃªncias
+- Problema e proposiÃ§Ã£o de valor precisam caminhar com viabilidade tÃ©cnica
 - MVP e ciclos curtos reduzem risco antes de escalar
-- PI, modelo de negócio e ecossistema precisam ser coerentes
+- PI, modelo de negÃ³cio e ecossistema precisam ser coerentes
 
 ---
 
-## Referências-chave (base da redação) {.smaller-text}
+## ReferÃªncias-chave (base da redaÃ§Ã£o) {.smaller-text}
 
 - Schumpeter (1942)
 - Drucker (1985); Hisrich et al. (2017)

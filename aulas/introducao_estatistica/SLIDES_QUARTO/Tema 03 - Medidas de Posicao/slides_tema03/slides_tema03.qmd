@@ -1,13 +1,12 @@
 ---
-title: "Medidas de Posição"
-subtitle: "Aula VI  -  Média, Moda e Mediana"
+title: "Medidas de PosiÃ§Ã£o"
+subtitle: "Aula VI  -  MÃ©dia, Moda e Mediana"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
-footer: "UEFS  -  Introdução à Estatística | Tema 3  -  Medidas de Posição"
+footer: "UEFS  -  IntroduÃ§Ã£o Ã  EstatÃ­stica | Tema 3  -  Medidas de PosiÃ§Ã£o"
 format: 
   revealjs:
     logo: ../../../../assets/logo-uefs.webp
-    footer: "UEFS  -  Introdução à Estatística | Tema 3  -  Medidas de Posição"
+    footer: "UEFS  -  IntroduÃ§Ã£o Ã  EstatÃ­stica | Tema 3  -  Medidas de PosiÃ§Ã£o"
     slide-number: true
     theme: [simple, ../../../../assets/uefs.scss]
     controls: true
@@ -24,28 +23,28 @@ execute:
   eval: false
 ---
 
-# [I. Introdução]{.section-header}
+# [I. IntroduÃ§Ã£o]{.section-header}
 
-## Medidas de Posição {.smaller-text}
+## Medidas de PosiÃ§Ã£o {.smaller-text}
 
-As medidas de posição permitem **resumir e localizar** informações centrais em distribuições de dados. Elas orientam quanto à posição da distribuição em relação ao eixo horizontal.
+As medidas de posiÃ§Ã£o permitem **resumir e localizar** informaÃ§Ãµes centrais em distribuiÃ§Ãµes de dados. Elas orientam quanto Ã  posiÃ§Ã£o da distribuiÃ§Ã£o em relaÃ§Ã£o ao eixo horizontal.
 
 ### Principais medidas:
 
-- **Média**
+- **MÃ©dia**
 - **Moda**
 - **Mediana**
 - **Separatrizes** (quartis, decis, percentis)
 
-# [1  -  Média]{.section-header}
+# [1  -  MÃ©dia]{.section-header}
 
-## Caso 1  -  Dados não agrupados {.smaller-text}
+## Caso 1  -  Dados nÃ£o agrupados {.smaller-text}
 
 $$\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}$$
 
 ### Exemplo:
 
-Calcule o tempo médio de vida útil de 10 smartphones, sabendo que os tempos em meses são: 10, 29, 26, 28, 15, 23, 25, 17, 0, 20
+Calcule o tempo mÃ©dio de vida Ãºtil de 10 smartphones, sabendo que os tempos em meses sÃ£o: 10, 29, 26, 28, 15, 23, 25, 17, 0, 20
 
 $$\bar{x} = \frac{10 + 29 + 26 + 28 + 15 + 23 + 25 + 17 + 0 + 20}{10} = 19{,}3$$
 
@@ -59,7 +58,7 @@ mean(dados)
 
 ## Caso 2  -  Dados agrupados por valores {.smaller-text}
 
-Média ponderada:
+MÃ©dia ponderada:
 
 $$\bar{x} = \frac{\sum_{i=1}^{k} x_i \cdot f_i}{N}$$
 
@@ -93,7 +92,7 @@ weighted.mean(pc, fi)
 
 ## Caso 3  -  Dados agrupados por classes {.smaller-text}
 
-Utilizamos o **ponto médio** de cada classe ($p_i$):
+Utilizamos o **ponto mÃ©dio** de cada classe ($p_i$):
 
 $$\bar{x} = \frac{\sum_{i=1}^{k} p_i \cdot f_i}{N}, \quad p_i = \frac{L_i + L_s}{2}$$
 
@@ -124,18 +123,18 @@ media_idades
 
 # [2  -  Moda]{.section-header}
 
-## Conceito e Classificação {.smaller-text}
+## Conceito e ClassificaÃ§Ã£o {.smaller-text}
 
-A **moda** (Mo) é o valor que ocorre com **maior frequência** em um conjunto de dados.
+A **moda** (Mo) Ã© o valor que ocorre com **maior frequÃªncia** em um conjunto de dados.
 
-### Classificação:
+### ClassificaÃ§Ã£o:
 
 ::: {.columns}
 ::: {.column width="33%"}
 ::: {.info-box}
 **Amodal**
 
-Não existe moda
+NÃ£o existe moda
 
 Ex: 18, 25, 32, 14
 :::
@@ -174,7 +173,7 @@ moda(dados)
 
 ---
 
-## Moda  -  Fórmula de King (dados agrupados) {.smaller-text}
+## Moda  -  FÃ³rmula de King (dados agrupados) {.smaller-text}
 
 $$Mo = L_i^* + \frac{f_{i+1}}{f_{i+1} + f_{i-1}} \cdot h^*$$
 
@@ -212,7 +211,7 @@ Mo_king
 
 ---
 
-## Moda  -  Fórmula de Czuber (dados agrupados) {.smaller-text}
+## Moda  -  FÃ³rmula de Czuber (dados agrupados) {.smaller-text}
 
 $$Mo = L_i^* + \frac{\Delta_1}{\Delta_1 + \Delta_2} \cdot h^*$$
 
@@ -240,17 +239,17 @@ $$Mo = 158 + \frac{6}{6 + 11} \cdot 8 = 158 + 2{,}82 = 160{,}8$$
 
 # [3  -  Mediana]{.section-header}
 
-## Caso 1  -  Dados não agrupados {.smaller-text}
+## Caso 1  -  Dados nÃ£o agrupados {.smaller-text}
 
-A **mediana** (Md) é o valor que divide o conjunto em duas partes iguais.
+A **mediana** (Md) Ã© o valor que divide o conjunto em duas partes iguais.
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Se $n$ é ímpar:
+### Se $n$ Ã© Ã­mpar:
 
 $$Md = x_{\frac{n+1}{2}}$$
 
-### Se $n$ é par:
+### Se $n$ Ã© par:
 
 $$Md = \frac{x_{\frac{n}{2}} + x_{\frac{n}{2}+1}}{2}$$
 :::
@@ -258,8 +257,8 @@ $$Md = \frac{x_{\frac{n}{2}} + x_{\frac{n}{2}+1}}{2}$$
 ::: {.column width="50%"}
 ### Exemplo:
 
-- A = {2, 6, 7, 10, 12, 13, 18, 21} → $Md = \frac{10+12}{2} = 11$
-- B = {6, 8, 10, 12, 14} → $Md = 10$
+- A = {2, 6, 7, 10, 12, 13, 18, 21} â†’ $Md = \frac{10+12}{2} = 11$
+- B = {6, 8, 10, 12, 14} â†’ $Md = 10$
 
 ```{r}
 #| eval: false

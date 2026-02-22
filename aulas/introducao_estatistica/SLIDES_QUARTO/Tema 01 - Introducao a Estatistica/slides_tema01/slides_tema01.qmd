@@ -1,13 +1,12 @@
 ---
-title: "Introdução à Estatística"
+title: "IntroduÃ§Ã£o Ã  EstatÃ­stica"
 subtitle: "Aulas I a IV  -  Conceitos Fundamentais"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
-footer: "UEFS  -  Introdução à Estatística | Tema 1  -  Conceitos Fundamentais"
+footer: "UEFS  -  IntroduÃ§Ã£o Ã  EstatÃ­stica | Tema 1  -  Conceitos Fundamentais"
 format: 
   revealjs:
     logo: ../../../../assets/logo-uefs.webp
-    footer: "UEFS  -  Introdução à Estatística | Tema 1  -  Conceitos Fundamentais"
+    footer: "UEFS  -  IntroduÃ§Ã£o Ã  EstatÃ­stica | Tema 1  -  Conceitos Fundamentais"
     slide-number: true
     theme: [simple, ../../../../assets/uefs.scss]
     controls: true
@@ -24,24 +23,24 @@ execute:
   eval: false
 ---
 
-# [I. Introdução]{.section-header}
+# [I. IntroduÃ§Ã£o]{.section-header}
 
 ## 1.1  -  Etimologia {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Definição
+### DefiniÃ§Ã£o
 
-- Inferência estatística refere-se aos resultados derivados da **análise estatística** dos dados coletados
-- A inferência estatística advém de uma relação entre a **teoria estatística** e os **dados reais**
-- A palavra **ESTATÍSTICA** vem de *STATUS* (latim = estudo), criada pelo acadêmico alemão **Gottfried Achenwall** em meados do século XVIII
+- InferÃªncia estatÃ­stica refere-se aos resultados derivados da **anÃ¡lise estatÃ­stica** dos dados coletados
+- A inferÃªncia estatÃ­stica advÃ©m de uma relaÃ§Ã£o entre a **teoria estatÃ­stica** e os **dados reais**
+- A palavra **ESTATÃSTICA** vem de *STATUS* (latim = estudo), criada pelo acadÃªmico alemÃ£o **Gottfried Achenwall** em meados do sÃ©culo XVIII
 :::
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
 **Conceito Central**
 
-A Estatística é uma ciência que oferece uma **coleção de métodos** para:
+A EstatÃ­stica Ã© uma ciÃªncia que oferece uma **coleÃ§Ã£o de mÃ©todos** para:
 
 - Planejar experimentos e levantamentos
 - Obter dados
@@ -54,16 +53,16 @@ A Estatística é uma ciência que oferece uma **coleção de métodos** para:
 
 ---
 
-## 1.2  -  Processos Estatísticos em Pesquisas {.smaller-text}
+## 1.2  -  Processos EstatÃ­sticos em Pesquisas {.smaller-text}
 
-Quando solicitados a investigar um fenômeno coletivo, podemos optar por:
+Quando solicitados a investigar um fenÃ´meno coletivo, podemos optar por:
 
 ::: {.columns}
 ::: {.column width="50%"}
 ::: {.info-box}
 **Censo**
 
-Estudo de **todos** os componentes de uma população
+Estudo de **todos** os componentes de uma populaÃ§Ã£o
 :::
 :::
 
@@ -71,7 +70,7 @@ Estudo de **todos** os componentes de uma população
 ::: {.highlight-box}
 **Amostragem**
 
-Estudo de **alguns** elementos de uma população cujo objetivo é fazer **inferência** sobre a população
+Estudo de **alguns** elementos de uma populaÃ§Ã£o cujo objetivo Ã© fazer **inferÃªncia** sobre a populaÃ§Ã£o
 :::
 :::
 :::
@@ -82,26 +81,26 @@ Estudo de **alguns** elementos de uma população cujo objetivo é fazer **infer
 
 ::: {.columns}
 ::: {.column width="50%"}
-### 1. Amostragem Não-Probabilística
+### 1. Amostragem NÃ£o-ProbabilÃ­stica
 
-Escolha dos elementos depende dos **critérios e julgamento** do pesquisador.
+Escolha dos elementos depende dos **critÃ©rios e julgamento** do pesquisador.
 
 **Exemplos:**
 
-- Amostragem por conveniência
+- Amostragem por conveniÃªncia
 - Amostragem intencional
 - Amostragem por cotas
 :::
 
 ::: {.column width="50%"}
-### 2. Amostragem Probabilística
+### 2. Amostragem ProbabilÃ­stica
 
-Escolha dos elementos é **aleatória**. Cada elemento tem probabilidade conhecida.
+Escolha dos elementos Ã© **aleatÃ³ria**. Cada elemento tem probabilidade conhecida.
 
 **Exemplos:**
 
-- Amostragem Aleatória Simples (AAS)
-- Amostragem Sistemática (AS)
+- Amostragem AleatÃ³ria Simples (AAS)
+- Amostragem SistemÃ¡tica (AS)
 - Amostragem Estratificada (AE)
 - Amostragem por Conglomerados (AC)
 :::
@@ -109,107 +108,107 @@ Escolha dos elementos é **aleatória**. Cada elemento tem probabilidade conheci
 
 ---
 
-## Ramos da Estatística {.smaller-text}
+## Ramos da EstatÃ­stica {.smaller-text}
 
-A Estatística pode ser dividida em duas grandes áreas:
+A EstatÃ­stica pode ser dividida em duas grandes Ã¡reas:
 
 ::: {.columns}
 ::: {.column width="50%"}
 ::: {.info-box}
-**Estatística Descritiva**
+**EstatÃ­stica Descritiva**
 
-Trata da **organização**, **resumo** e **apresentação** dos dados.
+Trata da **organizaÃ§Ã£o**, **resumo** e **apresentaÃ§Ã£o** dos dados.
 :::
 :::
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**Estatística Inferencial**
+**EstatÃ­stica Inferencial**
 
-Trata de tirar **conclusões sobre uma população** a partir de uma amostra.
+Trata de tirar **conclusÃµes sobre uma populaÃ§Ã£o** a partir de uma amostra.
 
-A ferramenta básica é a **probabilidade**, que permite avaliar e controlar o tamanho do erro cometido ao se fazer generalizações.
+A ferramenta bÃ¡sica Ã© a **probabilidade**, que permite avaliar e controlar o tamanho do erro cometido ao se fazer generalizaÃ§Ãµes.
 :::
 :::
 :::
 
 ---
 
-## 1.3  -  Conjunto de Dados, População e Amostra {.smaller-text}
+## 1.3  -  Conjunto de Dados, PopulaÃ§Ã£o e Amostra {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="60%"}
 ### Conjunto de dados
 
-Coleção de observações onde cada **coluna** representa uma variável e cada **linha** uma unidade de análise.
+ColeÃ§Ã£o de observaÃ§Ãµes onde cada **coluna** representa uma variÃ¡vel e cada **linha** uma unidade de anÃ¡lise.
 
-### População
+### PopulaÃ§Ã£o
 
-Conjunto **completo** de elementos que compartilham uma característica; representa o universo do estudo.
+Conjunto **completo** de elementos que compartilham uma caracterÃ­stica; representa o universo do estudo.
 
 ### Amostra
 
-**Subconjunto** da população selecionado para representar o todo, utilizado quando o acesso à população é impraticável.
+**Subconjunto** da populaÃ§Ã£o selecionado para representar o todo, utilizado quando o acesso Ã  populaÃ§Ã£o Ã© impraticÃ¡vel.
 :::
 
 ::: {.column width="40%"}
 ::: {.info-box}
-**Definição**
+**DefiniÃ§Ã£o**
 
-- Inferência estatística refere-se aos resultados derivados da **análise estatística** dos dados coletados
-- A inferência estatística advém de uma relação entre a **teoria estatística** e os **dados reais**
+- InferÃªncia estatÃ­stica refere-se aos resultados derivados da **anÃ¡lise estatÃ­stica** dos dados coletados
+- A inferÃªncia estatÃ­stica advÃ©m de uma relaÃ§Ã£o entre a **teoria estatÃ­stica** e os **dados reais**
 :::
 :::
 :::
 
 ---
 
-## Exercício 1 {.smaller-text}
+## ExercÃ­cio 1 {.smaller-text}
 
-**Identifique a população e a amostra para os casos a seguir:**
+**Identifique a populaÃ§Ã£o e a amostra para os casos a seguir:**
 
 ::: {.columns}
 ::: {.column width="50%"}
 ::: {.info-box}
-**a)** Em uma pesquisa recente, foi perguntado a **1.708 adultos** se eles consideram o aquecimento global um problema que exige ação imediata do governo. **939** deles responderam que sim.
+**a)** Em uma pesquisa recente, foi perguntado a **1.708 adultos** se eles consideram o aquecimento global um problema que exige aÃ§Ã£o imediata do governo. **939** deles responderam que sim.
 :::
 :::
 
 ::: {.column width="50%"}
 ::: {.info-box}
-**b)** Uma pesquisa conduzida entre **1.071 homens e mulheres** pela Corporação Internacional de Pesquisa de Opinião descobriu que **76% das mulheres** e **60% dos homens** haviam passado por exames físicos em 2013.
+**b)** Uma pesquisa conduzida entre **1.071 homens e mulheres** pela CorporaÃ§Ã£o Internacional de Pesquisa de OpiniÃ£o descobriu que **76% das mulheres** e **60% dos homens** haviam passado por exames fÃ­sicos em 2013.
 :::
 :::
 :::
 
-# [1.4  -  Tipos de Variáveis]{.section-header}
+# [1.4  -  Tipos de VariÃ¡veis]{.section-header}
 
-## Variáveis Nominais {.smaller-text}
+## VariÃ¡veis Nominais {.smaller-text}
 
-Uma variável totalmente **qualitativa**
+Uma variÃ¡vel totalmente **qualitativa**
 
-- Não significa que não pode ser feita análises quantitativas
-- Os valores apenas **diferenciam categorias** qualitativas diferentes, mas **não há relação** entre as categorias
-- Os números atribuídos **não têm significado matemático**
+- NÃ£o significa que nÃ£o pode ser feita anÃ¡lises quantitativas
+- Os valores apenas **diferenciam categorias** qualitativas diferentes, mas **nÃ£o hÃ¡ relaÃ§Ã£o** entre as categorias
+- Os nÃºmeros atribuÃ­dos **nÃ£o tÃªm significado matemÃ¡tico**
 
-**Exemplos:** nacionalidade, religião, estado civil
+**Exemplos:** nacionalidade, religiÃ£o, estado civil
 
 ---
 
-## Variáveis Ordinais {.smaller-text}
+## VariÃ¡veis Ordinais {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Características
+### CaracterÃ­sticas
 
 - Estabelece uma **ordem ou hierarquia** entre as categorias
-- O **intervalo** entre as categorias **não é regular**
+- O **intervalo** entre as categorias **nÃ£o Ã© regular**
 - Ex: A ordem de chegada dos corredores na linha de chegada
 
 **Exemplo:** Escolaridade
 
 1. Ensino fundamental
-2. Ensino médio
+2. Ensino mÃ©dio
 3. Ensino superior
 :::
 
@@ -234,81 +233,81 @@ table(escolaridade)
 
 ---
 
-## Variáveis Escalares e de Razão {.smaller-text}
+## VariÃ¡veis Escalares e de RazÃ£o {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Variáveis Escalares
+### VariÃ¡veis Escalares
 
-- O intervalo entre os valores é **sempre constante**
-- O zero é um **valor arbitrário**
-- Ex: 0°C, nota de teste de matemática
+- O intervalo entre os valores Ã© **sempre constante**
+- O zero Ã© um **valor arbitrÃ¡rio**
+- Ex: 0Â°C, nota de teste de matemÃ¡tica
 
 ::: {.info-box}
-Uma nota zero **não corresponde** a ausência de conhecimento matemático
+Uma nota zero **nÃ£o corresponde** a ausÃªncia de conhecimento matemÃ¡tico
 :::
 :::
 
 ::: {.column width="50%"}
-### Escala de Razão
+### Escala de RazÃ£o
 
-- O valor zero significa **total ausência** do atributo mensurado
-- Ex: Segundos, Salário, Volume de vendas, Distâncias
+- O valor zero significa **total ausÃªncia** do atributo mensurado
+- Ex: Segundos, SalÃ¡rio, Volume de vendas, DistÃ¢ncias
 :::
 :::
 
-### Procedimento de análises
+### Procedimento de anÃ¡lises
 
 | Tipo | Capacidade |
 |------|-----------|
-| Nominal | Distinção |
-| Ordinal | Distinção + Ordem |
-| Escalar/Razão | Distinção + Ordem + Distância |
+| Nominal | DistinÃ§Ã£o |
+| Ordinal | DistinÃ§Ã£o + Ordem |
+| Escalar/RazÃ£o | DistinÃ§Ã£o + Ordem + DistÃ¢ncia |
 
 ---
 
-## 1.5  -  Classificação de uma Variável {.smaller-text}
+## 1.5  -  ClassificaÃ§Ã£o de uma VariÃ¡vel {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-De acordo com **Stevens (1946)**, as variáveis podem ser classificadas como:
+De acordo com **Stevens (1946)**, as variÃ¡veis podem ser classificadas como:
 
 - **Nominal**
 - **Ordinal**
 - **Escalar**
-- **Razão**
+- **RazÃ£o**
 
 ::: {.highlight-box}
-O **tipo de variável** determina a **análise** a ser utilizada
+O **tipo de variÃ¡vel** determina a **anÃ¡lise** a ser utilizada
 :::
 :::
 
 ::: {.column width="50%"}
-### Exercício 2
+### ExercÃ­cio 2
 
-Classifique as variáveis abaixo:
+Classifique as variÃ¡veis abaixo:
 
-a) O nº de latinhas consumidas por alunos de uma academia
+a) O nÂº de latinhas consumidas por alunos de uma academia
 
 b) O total de ml's consumidos por aluno
 
 c) O total de alunos que consomem 1, 2-5 ou +5 latinhas
 
-d) O nº de alunos que bebem vs. não bebem
+d) O nÂº de alunos que bebem vs. nÃ£o bebem
 :::
 :::
 
-# [II. Organização e Análise Descritiva]{.section-header}
+# [II. OrganizaÃ§Ã£o e AnÃ¡lise Descritiva]{.section-header}
 
-## 2  -  Distribuição de Frequências {.smaller-text}
+## 2  -  DistribuiÃ§Ã£o de FrequÃªncias {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
 ### Conceito
 
-- Organiza os dados em **categorias ou intervalos** e mostra quantas observações pertencem a cada classe
-- Configura um caso particular das **séries estatísticas**
-- Utilizada para **resumir** toda a informação obtida
+- Organiza os dados em **categorias ou intervalos** e mostra quantas observaÃ§Ãµes pertencem a cada classe
+- Configura um caso particular das **sÃ©ries estatÃ­sticas**
+- Utilizada para **resumir** toda a informaÃ§Ã£o obtida
 :::
 
 ::: {.column width="45%"}
@@ -329,20 +328,20 @@ d) O nº de alunos que bebem vs. não bebem
 
 ## Conceitos Essenciais {.smaller-text}
 
-| Conceito | Definição |
+| Conceito | DefiniÃ§Ã£o |
 |----------|-----------|
-| **Dados Brutos** | Dados disponíveis logo após a coleta, não organizados numericamente |
+| **Dados Brutos** | Dados disponÃ­veis logo apÃ³s a coleta, nÃ£o organizados numericamente |
 | **Rol** | Dados ordenados de forma crescente ou decrescente |
 | **Amplitude Total** | $AT = X_{max} - X_{min}$ |
-| **$X_{min}$** | Menor valor assumido pela variável |
-| **$X_{max}$** | Maior valor assumido pela variável |
-| **Frequência Absoluta ($f_i$)** | Nº de vezes que o elemento aparece. $\sum_{i=1}^{k} f_i = n$ |
+| **$X_{min}$** | Menor valor assumido pela variÃ¡vel |
+| **$X_{max}$** | Maior valor assumido pela variÃ¡vel |
+| **FrequÃªncia Absoluta ($f_i$)** | NÂº de vezes que o elemento aparece. $\sum_{i=1}^{k} f_i = n$ |
 
 ---
 
 ## Caso 1  -  Dados Brutos {.smaller-text}
 
-Nesse caso os dados dessa natureza **não configuram** Distribuição de Frequências.
+Nesse caso os dados dessa natureza **nÃ£o configuram** DistribuiÃ§Ã£o de FrequÃªncias.
 
 ---
 
@@ -350,12 +349,12 @@ Nesse caso os dados dessa natureza **não configuram** Distribuição de Frequê
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Variável Qualitativa Ordinal
+### VariÃ¡vel Qualitativa Ordinal
 
-| Grau de Instrução | $f_i$ | $F_i$ | $fr_i$ | $fr_i$% |
+| Grau de InstruÃ§Ã£o | $f_i$ | $F_i$ | $fr_i$ | $fr_i$% |
 |-------------------|-------|-------|---------|---------|
 | Fundamental | 12 | 12 | 0,333 | 33,3 |
-| Médio | 18 | 30 | 0,500 | 50,0 |
+| MÃ©dio | 18 | 30 | 0,500 | 50,0 |
 | Superior | 6 | 36 | 0,167 | 16,7 |
 | **Total** | **36** | **36** | **1,000** | **100,0** |
 
@@ -363,7 +362,7 @@ $$fr = \frac{f_i}{n}, \quad n = \sum_{i=1}^{k} f_i$$
 :::
 
 ::: {.column width="50%"}
-### Variável Quantitativa Discreta
+### VariÃ¡vel Quantitativa Discreta
 
 | Anos | $f_i$ | $F_i$ | $fr_i$ | $fr_i$% |
 |------|-------|-------|---------|---------|
@@ -378,7 +377,7 @@ $$fr = \frac{f_i}{n}, \quad n = \sum_{i=1}^{k} f_i$$
 
 ## Caso 3  -  Dados agrupados por intervalos {.smaller-text}
 
-Constroem-se **classes de valores** quando a variabilidade dos dados é grande.
+Constroem-se **classes de valores** quando a variabilidade dos dados Ã© grande.
 
 | Classes | $f_i$ | $fr_i$ | $fr_i$% |
 |---------|-------|---------|---------|
@@ -389,21 +388,21 @@ Constroem-se **classes de valores** quando a variabilidade dos dados é grande.
 | **Total** | **36** | **1,0000** | **100,00** |
 
 ::: {.info-box}
-Ao resumir dados de variável contínua **perde-se alguma informação**, já que a unidade bruta passa a ser vista como um grupo.
+Ao resumir dados de variÃ¡vel contÃ­nua **perde-se alguma informaÃ§Ã£o**, jÃ¡ que a unidade bruta passa a ser vista como um grupo.
 :::
 
 ---
 
-## Regras para Distribuição de Frequências {.smaller-text}
+## Regras para DistribuiÃ§Ã£o de FrequÃªncias {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-**1º passo**  -  Organizar em **Rol** (crescente/decrescente)
+**1Âº passo**  -  Organizar em **Rol** (crescente/decrescente)
 
-**2º passo**  -  Calcular a **Amplitude Total**:
+**2Âº passo**  -  Calcular a **Amplitude Total**:
 $$AT = X_{max} - X_{min}$$
 
-**3º passo**  -  Determinar o **nº de classes** ($k$):
+**3Âº passo**  -  Determinar o **nÂº de classes** ($k$):
 
 - Se $n < 25$: $k \approx \sqrt{n}$
 - Se $n \geq 25$ (Regra de Sturges):
@@ -411,23 +410,23 @@ $$k = 1 + \frac{10}{3}\log_{10}n$$
 :::
 
 ::: {.column width="50%"}
-**4º passo**  -  Calcular a **amplitude da classe**:
+**4Âº passo**  -  Calcular a **amplitude da classe**:
 $$h = \frac{AT}{k}$$
 
-**5º passo**  -  Construir as **classes**:
+**5Âº passo**  -  Construir as **classes**:
 
-- 1ª Classe: $l_{i1} = X_{min}$, $L_{s1} = l_{i1} + h$
-- 2ª Classe: $l_{i2} = L_{s1}$, $L_{s2} = l_{i2} + h$
+- 1Âª Classe: $l_{i1} = X_{min}$, $L_{s1} = l_{i1} + h$
+- 2Âª Classe: $l_{i2} = L_{s1}$, $L_{s2} = l_{i2} + h$
 
-Repetir até cobrir todo o intervalo.
+Repetir atÃ© cobrir todo o intervalo.
 :::
 :::
 
 ---
 
-## Exercício 3 {.smaller-text}
+## ExercÃ­cio 3 {.smaller-text}
 
-**A tabela apresenta notas de 20 alunos na disciplina de Geografia. Obtenha a frequência da variável contínua.**
+**A tabela apresenta notas de 20 alunos na disciplina de Geografia. Obtenha a frequÃªncia da variÃ¡vel contÃ­nua.**
 
 ```{r}
 #| eval: false
@@ -438,14 +437,14 @@ renda <- cut(dados$Renda,
              right = FALSE,
              labels = c("Classe D", "Classe C", "Classe B", "Classe A"))
 
-# Frequência Absoluta
+# FrequÃªncia Absoluta
 freq_abs <- table(renda)
 freq_abs
 
-# Frequência Absoluta Acumulada
+# FrequÃªncia Absoluta Acumulada
 freq_abs_acum <- cumsum(freq_abs)
 
-# Frequência Relativa
+# FrequÃªncia Relativa
 freq_rel <- prop.table(freq_abs)
 ```
 

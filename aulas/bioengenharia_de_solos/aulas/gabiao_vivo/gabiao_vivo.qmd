@@ -2,8 +2,6 @@
 title: "Gabião Vivo"
 subtitle: "Estabilização Estrutural com Engenharia Natural <br> Bioengenharia de Solos"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
-date: "2026-04-29"
 format:
   revealjs:
     logo: ../../../assets/logo-uefs.webp
@@ -77,8 +75,8 @@ graph LR
     A["Ano 0<br>100% arame<br>0% raízes"] --> B["Ano 5<br>70% arame<br>40% raízes"]
     B --> C["Ano 10<br>30% arame<br>80% raízes"]
     C --> D["Ano 15+<br>0% arame<br>100% raízes"]
-    style A fill:#034EA2,color:#fff
-    style B fill:#FDB913,color:#000
+    style A fill:#2135A6,color:#fff
+    style B fill:#586BA6,color:#000
     style C fill:#2E7D32,color:#fff
     style D fill:#2E7D32,color:#fff
 ```
@@ -374,8 +372,8 @@ graph TD
     style C fill:#8B4513,color:#fff
     style D fill:#2E7D32,color:#fff
     style E fill:#8B4513,color:#fff
-    style F fill:#FDB913,color:#000
-    style G fill:#034EA2,color:#fff
+    style F fill:#586BA6,color:#000
+    style G fill:#2135A6,color:#fff
 ```
 
 ### Regras de intercalação
@@ -433,7 +431,7 @@ graph TD
     F --> G["7. Camada vegetal<br>(repetir se necessário)"]
     G --> H["8. Fechamento<br>Tampa + amarração"]
     H --> I["9. Reaterro tardoz<br>+ drenagem"]
-    style A fill:#034EA2,color:#fff
+    style A fill:#2135A6,color:#fff
     style C fill:#8B4513,color:#fff
     style D fill:#2E7D32,color:#fff
     style F fill:#8B4513,color:#fff
@@ -516,9 +514,9 @@ graph TD
     B --> C["Ano 10<br>Arame: 50%<br>Raízes: 75%"]
     C --> D["Ano 15<br>Arame: 20%<br>Raízes: 95%"]
     D --> E["Ano 20+<br>Arame: 0%<br>Raízes: 100%"]
-    style A fill:#034EA2,color:#fff
-    style B fill:#FDB913,color:#000
-    style C fill:#FDB913,color:#000
+    style A fill:#2135A6,color:#fff
+    style B fill:#586BA6,color:#000
+    style C fill:#586BA6,color:#000
     style D fill:#2E7D32,color:#fff
     style E fill:#2E7D32,color:#fff
 ```
@@ -566,9 +564,9 @@ graph TD
     G --> H["Coesão radicular<br>cr = 5-25 kPa"]
     H --> I["Corrosão do arame<br>= irrelevante"]
     I --> J["Ecossistema<br>autossustentável"]
-    style A fill:#034EA2,color:#fff
+    style A fill:#2135A6,color:#fff
     style B fill:#2E7D32,color:#fff
-    style E fill:#FDB913,color:#000
+    style E fill:#586BA6,color:#000
     style H fill:#2E7D32,color:#fff
     style J fill:#2E7D32,color:#fff
 ```

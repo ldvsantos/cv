@@ -2,8 +2,6 @@
 title: "Bioengenharia Fluvial Avançada"
 subtitle: "Técnicas para Cursos d'Água e Matas Ciliares <br> Bioengenharia de Solos"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
-date: "2026-05-13"
 format:
   revealjs:
     logo: ../../../assets/logo-uefs.webp
@@ -88,10 +86,10 @@ graph TD
     E --> H["BIOENGENHARIA<br>FLUVIAL"]
     F --> H
     G --> H
-    style A fill:#034EA2,color:#fff
+    style A fill:#2135A6,color:#fff
     style E fill:#8B4513,color:#fff
     style F fill:#2E7D32,color:#fff
-    style H fill:#FDB913,color:#000
+    style H fill:#586BA6,color:#000
 ```
 
 > A bioengenharia fluvial é uma das áreas mais ativas das **Soluções Baseadas na Natureza** (NbS), reconhecida pela IUCN e pela Comissão Europeia como estratégia prioritária para adaptação às mudanças climáticas.
@@ -140,10 +138,10 @@ graph TD
     B --> B1["Enrocamento vegetado<br>Gabião vivo"]
     C --> C1["Brushlayering<br>Fascinas vivas"]
     D --> D1["Mata ciliar<br>Hidrossemeadura"]
-    style A fill:#034EA2,color:#fff
+    style A fill:#2135A6,color:#fff
     style B fill:#4FC3F7,color:#000
     style C fill:#2E7D32,color:#fff
-    style D fill:#FDB913,color:#000
+    style D fill:#586BA6,color:#000
 ```
 
 :::
@@ -215,10 +213,10 @@ graph LR
     B --> C["Margem convexa<br>(curva interna)<br>DEPOSIÇÃO"]
     A -->|"Velocidade alta<br>Cisalhamento"| D["Solapamento<br>+ colapso"]
     C -->|"Velocidade baixa<br>Sedimentação"| E["Barra de<br>ponto"]
-    style A fill:#ED1C24,color:#fff
+    style A fill:#27368C,color:#fff
     style C fill:#2E7D32,color:#fff
-    style D fill:#ED1C24,color:#fff
-    style E fill:#FDB913,color:#000
+    style D fill:#27368C,color:#fff
+    style E fill:#586BA6,color:#000
 ```
 
 ### Tensão de cisalhamento crítica
@@ -279,7 +277,7 @@ graph TD
     E --> F["Margem protegida<br>e revegetada"]
     style A fill:#4FC3F7,color:#000
     style B fill:#8B4513,color:#fff
-    style C fill:#034EA2,color:#fff
+    style C fill:#2135A6,color:#fff
     style D fill:#2E7D32,color:#fff
     style F fill:#2E7D32,color:#fff
 ```
@@ -342,8 +340,8 @@ graph TD
     D --> E["5. Preenchimento<br>com pedras na base"]
     E --> F["6. Plantio de<br>estacas vivas ao redor"]
     style A fill:#8B4513,color:#fff
-    style C fill:#034EA2,color:#fff
-    style D fill:#FDB913,color:#000
+    style C fill:#2135A6,color:#fff
+    style D fill:#586BA6,color:#000
     style F fill:#2E7D32,color:#fff
 ```
 
@@ -392,10 +390,10 @@ graph TD
     C --> D["Próximo terraço<br>(repetir)"]
     B -->|"20-30%<br>projetado"| E["Brotação e<br>cobertura"]
     B -->|"70-80%<br>enterrado"| F["Enraizamento<br>profundo"]
-    style A fill:#034EA2,color:#fff
+    style A fill:#2135A6,color:#fff
     style B fill:#2E7D32,color:#fff
     style C fill:#8B4513,color:#fff
-    style E fill:#FDB913,color:#000
+    style E fill:#586BA6,color:#000
     style F fill:#2E7D32,color:#fff
 ```
 
@@ -459,8 +457,8 @@ graph TD
     E --> F["Plantio de mudas<br>ou colonização natural"]
     F --> G["Manguezal<br>restaurado"]
     style A fill:#4FC3F7,color:#000
-    style B fill:#FDB913,color:#000
-    style C fill:#034EA2,color:#fff
+    style B fill:#586BA6,color:#000
+    style C fill:#2135A6,color:#fff
     style E fill:#8B4513,color:#fff
     style G fill:#2E7D32,color:#fff
 ```
@@ -521,10 +519,10 @@ graph TD
     B["Zona 2: Margem inferior<br>Enrocamento vegetado<br>Gabião vivo"] --> E
     C["Zona 3: Margem superior<br>Brushlayering<br>Fascinas vivas"] --> E
     D["Zona 4: APP<br>Plantio de mata ciliar<br>Hidrossemeadura"] --> E
-    style A fill:#034EA2,color:#fff
+    style A fill:#2135A6,color:#fff
     style B fill:#4FC3F7,color:#000
     style C fill:#2E7D32,color:#fff
-    style D fill:#FDB913,color:#000
+    style D fill:#586BA6,color:#000
     style E fill:#2E7D32,color:#fff
 ```
 
@@ -590,10 +588,10 @@ graph TD
     E --> F["6. Cenário projetado<br>(com bioengenharia)"]
     F --> G["7. Comparação<br>velocidades/tensões"]
     G --> H["8. Dimensionamento<br>das técnicas"]
-    style A fill:#034EA2,color:#fff
-    style C fill:#FDB913,color:#000
+    style A fill:#2135A6,color:#fff
+    style C fill:#586BA6,color:#000
     style F fill:#2E7D32,color:#fff
-    style H fill:#ED1C24,color:#fff
+    style H fill:#27368C,color:#fff
 ```
 
 ::: {.highlight-box}
@@ -683,8 +681,8 @@ graph TD
     D --> G["Rio restaurado:<br>Estrutura + Ecologia"]
     E --> G
     F --> G
-    style A fill:#034EA2,color:#fff
-    style B fill:#FDB913,color:#000
+    style A fill:#2135A6,color:#fff
+    style B fill:#586BA6,color:#000
     style D fill:#8B4513,color:#fff
     style E fill:#2E7D32,color:#fff
     style G fill:#2E7D32,color:#fff

@@ -2,7 +2,6 @@
 title: "Bootstrap e Inferência Não Paramétrica"
 subtitle: "Reamostragem aplicada a dados agronômicos<br>Introdução à Estatística"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
 format:
   revealjs:
     logo: ../../../../assets/logo-uefs.webp
@@ -238,7 +237,7 @@ boot_df <- data.frame(media_boot = boot_controle$t)
 # Histograma com ggplot2
 ggplot(boot_df, aes(x = media_boot)) +
   geom_histogram(aes(y = after_stat(density)),
-                 bins = 40, fill = "#034EA2", alpha = 0.7) +
+                 bins = 40, fill = "#2135A6", alpha = 0.7) +
   geom_density(color = "red", linewidth = 1) +
   geom_vline(xintercept = mean(controle),
              linetype = "dashed", color = "black") +
@@ -344,7 +343,7 @@ Aplique para cada espécie usando `subset()` ou `dplyr::filter()`.
 - Davison, A. C., & Hinkley, D. V. (1997). *Bootstrap Methods and Their Application*. Cambridge University Press.
 - Canty, A., & Ripley, B. D. (2024). boot: Bootstrap R Functions. R package.
 
-## {.center background-color="#034EA2"}
+## {.center background-color="#2135A6"}
 
 ::: {style="text-align: center;"}
 [Obrigado!]{.obrigado-fit-text style="color: white;"}

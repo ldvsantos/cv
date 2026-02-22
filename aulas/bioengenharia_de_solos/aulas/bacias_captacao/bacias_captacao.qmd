@@ -2,8 +2,6 @@
 title: "Bacias de Captação para Controle de Erosão"
 subtitle: "Conceito, Dimensionamento e Monitoramento <br> Bioengenharia de Solos"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
-date: "2026-03-11"
 format:
   revealjs:
     logo: ../../../assets/logo-uefs.webp
@@ -267,12 +265,12 @@ flowchart TD
     H --> M[Sem bacia → Erosão a jusante]
     M --> N[Assoreamento de rios/nascentes]
     
-    style I fill:#034EA2,color:#fff
-    style J fill:#FDB913,color:#034EA2
-    style K fill:#FDB913,color:#034EA2
+    style I fill:#2135A6,color:#fff
+    style J fill:#586BA6,color:#2135A6
+    style K fill:#586BA6,color:#2135A6
     style L fill:#2E7D32,color:#fff
-    style M fill:#ED1C24,color:#fff
-    style N fill:#ED1C24,color:#fff
+    style M fill:#27368C,color:#fff
+    style N fill:#27368C,color:#fff
 ```
 :::
 :::
@@ -747,13 +745,13 @@ flowchart TD
     E --> F[Compactação dos<br>taludes internos]
     F --> G[Instalação de pinos<br>de monitoramento]
     
-    style A fill:#034EA2,color:#fff
-    style B fill:#034EA2,color:#fff
-    style C fill:#034EA2,color:#fff
-    style D fill:#FDB913,color:#034EA2
-    style E fill:#FDB913,color:#034EA2
-    style F fill:#FDB913,color:#034EA2
-    style G fill:#ED1C24,color:#fff
+    style A fill:#2135A6,color:#fff
+    style B fill:#2135A6,color:#fff
+    style C fill:#2135A6,color:#fff
+    style D fill:#586BA6,color:#2135A6
+    style E fill:#586BA6,color:#2135A6
+    style F fill:#586BA6,color:#2135A6
+    style G fill:#27368C,color:#fff
 ```
 
 ::: {.highlight-box}
@@ -1282,10 +1280,10 @@ flowchart TD
     I --> J[Implantação]
     J --> K[Monitoramento]
     
-    style H fill:#ED1C24,color:#fff
-    style I fill:#034EA2,color:#fff
-    style J fill:#034EA2,color:#fff
-    style K fill:#FDB913,color:#034EA2
+    style H fill:#27368C,color:#fff
+    style I fill:#2135A6,color:#fff
+    style J fill:#2135A6,color:#fff
+    style K fill:#586BA6,color:#2135A6
 ```
 :::
 :::
@@ -1397,7 +1395,7 @@ flowchart TD
 
 ---
 
-## {.center background-color="#034EA2" background-image="../../../assets/fundo.png" background-size="auto 100%" background-position="left center"}
+## {.center background-color="#2135A6" background-image="../../../assets/fundo.png" background-size="auto 100%" background-position="left center"}
 
 ::: {style="text-align: center;"}
 

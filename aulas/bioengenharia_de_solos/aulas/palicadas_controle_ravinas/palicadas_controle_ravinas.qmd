@@ -2,8 +2,6 @@
 title: "Paliçadas para Controle de Ravinas"
 subtitle: "Conceito, Instalação e Manutenção <br> Bioengenharia de Solos"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
-date: "2026-02-25"
 format:
   revealjs:
     logo: ../../../assets/logo-uefs.webp
@@ -491,12 +489,12 @@ flowchart TD
     D --> E[Verificar nivelamento<br>com paliçada a jusante]
     E --> F[Instalar pinos de<br>monitoramento]
     
-    style A fill:#034EA2,color:#fff
-    style B fill:#034EA2,color:#fff
-    style C fill:#034EA2,color:#fff
-    style D fill:#FDB913,color:#034EA2
-    style E fill:#FDB913,color:#034EA2
-    style F fill:#ED1C24,color:#fff
+    style A fill:#2135A6,color:#fff
+    style B fill:#2135A6,color:#fff
+    style C fill:#2135A6,color:#fff
+    style D fill:#586BA6,color:#2135A6
+    style E fill:#586BA6,color:#2135A6
+    style F fill:#27368C,color:#fff
 ```
 
 ::: {.highlight-box}
@@ -922,7 +920,7 @@ As cores representam os segmentos: **SUP** (coral, 50 cm), **MED** (turquesa, 76
 
 ---
 
-## {.center background-color="#034EA2" background-image="../../../assets/fundo.png" background-size="auto 100%" background-position="left center"}
+## {.center background-color="#2135A6" background-image="../../../assets/fundo.png" background-size="auto 100%" background-position="left center"}
 
 ::: {style="text-align: center;"}
 

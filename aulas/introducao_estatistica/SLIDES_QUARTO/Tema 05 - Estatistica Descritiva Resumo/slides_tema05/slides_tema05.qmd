@@ -1,13 +1,12 @@
 ---
-title: "Estatística Descritiva"
-subtitle: "Aulas VI e VIII  -  Medidas de Posição e Dispersão"
+title: "EstatÃ­stica Descritiva"
+subtitle: "Aulas VI e VIII  -  Medidas de PosiÃ§Ã£o e DispersÃ£o"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
-footer: "UEFS  -  Introdução à Estatística | Tema 5  -  Estatística Descritiva Completa"
+footer: "UEFS  -  IntroduÃ§Ã£o Ã  EstatÃ­stica | Tema 5  -  EstatÃ­stica Descritiva Completa"
 format: 
   revealjs:
     logo: ../../../../assets/logo-uefs.webp
-    footer: "UEFS  -  Introdução à Estatística | Tema 5  -  Estatística Descritiva Completa"
+    footer: "UEFS  -  IntroduÃ§Ã£o Ã  EstatÃ­stica | Tema 5  -  EstatÃ­stica Descritiva Completa"
     slide-number: true
     theme: [simple, ../../../../assets/uefs.scss]
     controls: true
@@ -24,16 +23,16 @@ execute:
   eval: false
 ---
 
-# [Estatística Descritiva]{.section-header}
+# [EstatÃ­stica Descritiva]{.section-header}
 
-## O que são {.smaller-text}
+## O que sÃ£o {.smaller-text}
 
-A **estatística descritiva** é um ramo da estatística que aplica várias técnicas para **descrever e sumarizar** um conjunto de dados.
+A **estatÃ­stica descritiva** Ã© um ramo da estatÃ­stica que aplica vÃ¡rias tÃ©cnicas para **descrever e sumarizar** um conjunto de dados.
 
 ::: {.highlight-box}
-**Diferença para a estatística inferencial:**
+**DiferenÃ§a para a estatÃ­stica inferencial:**
 
-Enquanto a estatística descritiva se limita a **resumir e apresentar** os dados, a estatística inferencial busca fazer **afirmações sobre uma população** com base em informações de uma amostra.
+Enquanto a estatÃ­stica descritiva se limita a **resumir e apresentar** os dados, a estatÃ­stica inferencial busca fazer **afirmaÃ§Ãµes sobre uma populaÃ§Ã£o** com base em informaÃ§Ãµes de uma amostra.
 :::
 
 ---
@@ -42,36 +41,36 @@ Enquanto a estatística descritiva se limita a **resumir e apresentar** os dados
 
 ::: {.columns}
 ::: {.column width="50%"}
-### 🔹 Medidas de tendência central
+### ðŸ”¹ Medidas de tendÃªncia central
 
-- Média simples
+- MÃ©dia simples
 - Moda
 - Mediana
 
-### 🔹 Separatrizes
+### ðŸ”¹ Separatrizes
 
-- A própria Mediana
+- A prÃ³pria Mediana
 - Quartis
 - Decis
 - Percentis ou Centis
 :::
 
 ::: {.column width="50%"}
-### 🔹 Medidas de dispersão
+### ðŸ”¹ Medidas de dispersÃ£o
 
-- Variância
-- Desvio-padrão
-- Erro-padrão
-- Intervalo de Confiança
+- VariÃ¢ncia
+- Desvio-padrÃ£o
+- Erro-padrÃ£o
+- Intervalo de ConfianÃ§a
 
-### 🔹 Escore Z
+### ðŸ”¹ Escore Z
 
-- Transformação em unidades de desvio-padrão
-- Interpretação de probabilidades (68%, 95%, 99,7%)
+- TransformaÃ§Ã£o em unidades de desvio-padrÃ£o
+- InterpretaÃ§Ã£o de probabilidades (68%, 95%, 99,7%)
 :::
 :::
 
-# [I. Medidas de Posição (Tendência Central)]{.section-header}
+# [I. Medidas de PosiÃ§Ã£o (TendÃªncia Central)]{.section-header}
 
 ## Objetivo e Dados de Exemplo {.smaller-text}
 
@@ -79,11 +78,11 @@ Enquanto a estatística descritiva se limita a **resumir e apresentar** os dados
 ::: {.column width="50%"}
 ### Objetivo
 
-Encontrar um valor que resuma a variabilidade de um conjunto de dados, ou seja, um **único número** que represente o "centro" da distribuição.
+Encontrar um valor que resuma a variabilidade de um conjunto de dados, ou seja, um **Ãºnico nÃºmero** que represente o "centro" da distribuiÃ§Ã£o.
 
 ### Exemplo de Pesquisa
 
-Investigação dos níveis de crescimento radicular de plantas frente ao uso de **fungos micorrízicos arbusculares**.
+InvestigaÃ§Ã£o dos nÃ­veis de crescimento radicular de plantas frente ao uso de **fungos micorrÃ­zicos arbusculares**.
 :::
 
 ::: {.column width="50%"}
@@ -92,8 +91,8 @@ Investigação dos níveis de crescimento radicular de plantas frente ao uso de 
 
 - Tamanho: N = 17
 - Instrumento: 17 amostras independentes
-- Variável: Comprimento da raiz (cm)
-- Variação: 34 cm a 170 cm
+- VariÃ¡vel: Comprimento da raiz (cm)
+- VariaÃ§Ã£o: 34 cm a 170 cm
 :::
 :::
 :::
@@ -112,9 +111,9 @@ length(dados)
 
 ---
 
-## 1.2  -  Média {.smaller-text}
+## 1.2  -  MÃ©dia {.smaller-text}
 
-A média representa o **valor central** de um conjunto de dados.
+A mÃ©dia representa o **valor central** de um conjunto de dados.
 
 $$\bar{x} = \frac{\sum x_i}{n}$$
 
@@ -128,15 +127,15 @@ media
 
 ## 1.3  -  Moda {.smaller-text}
 
-A moda é o valor que ocorre com **maior frequência** no conjunto.
+A moda Ã© o valor que ocorre com **maior frequÃªncia** no conjunto.
 
-$$Moda = x_i \;|\; \max(frequência(x_i))$$
+$$Moda = x_i \;|\; \max(frequÃªncia(x_i))$$
 
 Podendo ser:
 
-- **Unimodal:** 2, 3, **3**, 4, 5 → Moda = 3
-- **Bimodal:** 2, **3**, **3**, **4**, **4**, 5 → Modas = 3 e 4
-- **Amodal:** 2, 3, 4, 5, 6 → Nenhum valor se repete
+- **Unimodal:** 2, 3, **3**, 4, 5 â†’ Moda = 3
+- **Bimodal:** 2, **3**, **3**, **4**, **4**, 5 â†’ Modas = 3 e 4
+- **Amodal:** 2, 3, 4, 5, 6 â†’ Nenhum valor se repete
 
 ```{r}
 #| eval: false
@@ -153,7 +152,7 @@ moda(dados)
 
 A mediana divide os dados ordenados em **duas metades iguais**.
 
-$$Mediana = \begin{cases} x_{\frac{n+1}{2}}, & n \text{ ímpar} \\ \frac{x_{\frac{n}{2}} + x_{\frac{n}{2}+1}}{2}, & n \text{ par} \end{cases}$$
+$$Mediana = \begin{cases} x_{\frac{n+1}{2}}, & n \text{ Ã­mpar} \\ \frac{x_{\frac{n}{2}} + x_{\frac{n}{2}+1}}{2}, & n \text{ par} \end{cases}$$
 
 ```{r}
 #| eval: false
@@ -161,34 +160,34 @@ mediana <- median(dados)
 mediana
 ```
 
-# [II. Medidas de Dispersão]{.section-header}
+# [II. Medidas de DispersÃ£o]{.section-header}
 
 ## Objetivos {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
 - **Quantificar a variabilidade**: escores concentrados ou espalhados?
-- **Interpretar semelhanças e diferenças**: heterogeneidade vs. homogeneidade
+- **Interpretar semelhanÃ§as e diferenÃ§as**: heterogeneidade vs. homogeneidade
 - **Comparar grupos**: variabilidade semelhante?
 :::
 
 ::: {.column width="50%"}
-- **Detectar outliers**: valores muito afastados da média
-- **Apoiar a tomada de decisão**: dados com pouca dispersão são mais previsíveis
+- **Detectar outliers**: valores muito afastados da mÃ©dia
+- **Apoiar a tomada de decisÃ£o**: dados com pouca dispersÃ£o sÃ£o mais previsÃ­veis
 
 ### Principais Medidas
 
-- **Variância** ($s^2$)
-- **Desvio-Padrão** ($s$)
-- **Erro-Padrão** (EP)
+- **VariÃ¢ncia** ($s^2$)
+- **Desvio-PadrÃ£o** ($s$)
+- **Erro-PadrÃ£o** (EP)
 :::
 :::
 
 ---
 
-## 1.5  -  Variância {.smaller-text}
+## 1.5  -  VariÃ¢ncia {.smaller-text}
 
-A variância mede a **dispersão** dos valores em relação à média.
+A variÃ¢ncia mede a **dispersÃ£o** dos valores em relaÃ§Ã£o Ã  mÃ©dia.
 
 $$s^2 = \frac{\sum (x_i - \bar{x})^2}{n-1}$$
 
@@ -200,9 +199,9 @@ variancia
 
 ---
 
-## 2.1  -  Desvio-Padrão {.smaller-text}
+## 2.1  -  Desvio-PadrÃ£o {.smaller-text}
 
-O desvio-padrão é a **raiz quadrada da variância**, expresso na mesma unidade dos dados.
+O desvio-padrÃ£o Ã© a **raiz quadrada da variÃ¢ncia**, expresso na mesma unidade dos dados.
 
 $$s = \sqrt{s^2}$$
 
@@ -214,9 +213,9 @@ desvio_padrao
 
 ---
 
-## 2.2  -  Erro-Padrão {.smaller-text}
+## 2.2  -  Erro-PadrÃ£o {.smaller-text}
 
-O erro-padrão estima a **variabilidade da média amostral**.
+O erro-padrÃ£o estima a **variabilidade da mÃ©dia amostral**.
 
 $$EP = \frac{s}{\sqrt{n}}$$
 
@@ -231,7 +230,7 @@ erro_padrao
 
 ## 2.2  -  Escore Z {.smaller-text}
 
-O escore Z indica a posição de cada valor em **unidades de desvio-padrão**.
+O escore Z indica a posiÃ§Ã£o de cada valor em **unidades de desvio-padrÃ£o**.
 
 $$Z_i = \frac{x_i - \bar{x}}{s}$$
 
@@ -243,9 +242,9 @@ escore_z
 
 ---
 
-## 2.3  -  Intervalo de Confiança {.smaller-text}
+## 2.3  -  Intervalo de ConfianÃ§a {.smaller-text}
 
-O intervalo de confiança indica a faixa onde a **média populacional** provavelmente se encontra.
+O intervalo de confianÃ§a indica a faixa onde a **mÃ©dia populacional** provavelmente se encontra.
 
 $$IC = \bar{x} \pm Z_{\alpha/2} \times EP$$
 
@@ -264,18 +263,18 @@ list(IC_90 = ic_90, IC_95 = ic_95, IC_99 = ic_99)
 
 ---
 
-## 2.4  -  Visualização {.smaller-text}
+## 2.4  -  VisualizaÃ§Ã£o {.smaller-text}
 
 ```{r}
 #| eval: false
 hist(dados,
-     main = "Distribuição dos Dados",
+     main = "DistribuiÃ§Ã£o dos Dados",
      xlab = "Valores",
      col = "lightblue",
      border = "white")
 abline(v = media, col = "red", lwd = 2)
 abline(v = ic_95, col = "darkgreen", lty = 2, lwd = 2)
-legend("topright", legend = c("Média", "IC 95%"),
+legend("topright", legend = c("MÃ©dia", "IC 95%"),
        col = c("red", "darkgreen"), lty = c(1, 2), lwd = 2)
 ```
 

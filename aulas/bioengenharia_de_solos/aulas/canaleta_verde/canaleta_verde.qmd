@@ -2,8 +2,6 @@
 title: "Canaleta Verde (Vegetated Swale)"
 subtitle: "Dimensionamento, Construção e Monitoramento <br> Bioengenharia de Solos"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
-date: "2026-05-13"
 format:
   revealjs:
     logo: ../../../assets/logo-uefs.webp
@@ -149,9 +147,9 @@ flowchart TD
     C --> F["Forma natural<br>Paisagismo<br>Auto-conformação"]
     D --> G["Pequenas vazões<br>Rodovias<br>Menor seção"]
     style A fill:#2E7D32,color:#fff
-    style B fill:#034EA2,color:#fff
-    style C fill:#034EA2,color:#fff
-    style D fill:#034EA2,color:#fff
+    style B fill:#2135A6,color:#fff
+    style C fill:#2135A6,color:#fff
+    style D fill:#2135A6,color:#fff
 ```
 
 :::
@@ -273,8 +271,8 @@ flowchart LR
     C --> G["Depósito de<br>sedimentos grosseiros"]
     D --> H["Retenção de<br>finos + nutrientes"]
     E --> I["Recarga do<br>lençol freático"]
-    style B fill:#034EA2,color:#fff
-    style C fill:#FDB913,color:#034EA2
+    style B fill:#2135A6,color:#fff
+    style C fill:#586BA6,color:#2135A6
     style D fill:#2E7D32,color:#fff
     style E fill:#8B4513,color:#fff
     style F fill:#4FC3F7,color:#000
@@ -681,13 +679,13 @@ flowchart TD
     E --> F["6. Irrigação<br>inicial"]
     F --> G["7. Inspeção pós-<br>primeiro evento"]
 
-    style A fill:#034EA2,color:#fff
-    style B fill:#034EA2,color:#fff
-    style C fill:#034EA2,color:#fff
+    style A fill:#2135A6,color:#fff
+    style B fill:#2135A6,color:#fff
+    style C fill:#2135A6,color:#fff
     style D fill:#2E7D32,color:#fff
     style E fill:#2E7D32,color:#fff
-    style F fill:#FDB913,color:#034EA2
-    style G fill:#ED1C24,color:#fff
+    style F fill:#586BA6,color:#2135A6
+    style G fill:#27368C,color:#fff
 ```
 :::
 :::
@@ -968,12 +966,12 @@ flowchart TD
     H --> I["Escavar e<br>revestir"]
     I --> J["Implantar e<br>monitorar"]
 
-    style A fill:#034EA2,color:#fff
-    style C fill:#034EA2,color:#fff
-    style D fill:#FDB913,color:#034EA2
+    style A fill:#2135A6,color:#fff
+    style C fill:#2135A6,color:#fff
+    style D fill:#586BA6,color:#2135A6
     style E fill:#2E7D32,color:#fff
-    style G fill:#034EA2,color:#fff
-    style J fill:#ED1C24,color:#fff
+    style G fill:#2135A6,color:#fff
+    style J fill:#27368C,color:#fff
 ```
 :::
 :::
@@ -1042,7 +1040,7 @@ $$Q = \frac{C \cdot I \cdot A}{360} \quad\quad V = \frac{R_h^{2/3} \cdot S^{1/2}
 
 ---
 
-## {.center background-color="#034EA2" background-image="../../../assets/fundo.png" background-size="auto 100%" background-position="left center"}
+## {.center background-color="#2135A6" background-image="../../../assets/fundo.png" background-size="auto 100%" background-position="left center"}
 
 ::: {style="text-align: center;"}
 

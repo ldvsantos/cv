@@ -2,7 +2,6 @@
 title: "Detecção de Anomalias em Séries Temporais"
 subtitle: "Isolation Forest × STL + IQR<br>Análise de Dados Ambientais"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
 format:
   revealjs:
     logo: ../../../assets/logo-uefs.webp
@@ -413,7 +412,7 @@ plt.show()
 - Chandola, V., Banerjee, A., & Kumar, V. (2009). Anomaly detection: A survey. *ACM Computing Surveys*, 41(3), 1-58.
 - Pedregosa, F. et al. (2011). Scikit-learn: Machine learning in Python. *JMLR*, 12, 2825-2830.
 
-## {.center background-color="#034EA2"}
+## {.center background-color="#2135A6"}
 
 ::: {style="text-align: center;"}
 [Obrigado!]{.obrigado-fit-text style="color: white;"}

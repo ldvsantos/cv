@@ -1,13 +1,11 @@
 ---
-title: "Análise da Paisagem"
-subtitle: "Validação de Modelos e Controle de Qualidade em Mapeamentos<br>Curso de Geografia"
+title: "AnÃ¡lise da Paisagem"
+subtitle: "ValidaÃ§Ã£o de Modelos e Controle de Qualidade em Mapeamentos<br>Curso de Geografia"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
-date: "2026"
 format:
   revealjs:
     logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise da Paisagem | Validação de Modelos"
+    footer: "UEFS | AnÃ¡lise da Paisagem | ValidaÃ§Ã£o de Modelos"
     slide-number: true
     theme: [simple, ../../../assets/uefs.scss]
     controls: true
@@ -21,54 +19,54 @@ execute:
   echo: false
 ---
 
-## Visão Geral da Aula {.smaller-text}
+## VisÃ£o Geral da Aula {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Tópicos
+### TÃ³picos
 
 - [1]{.circle} Por que validar? O mapa como modelo
-- [2]{.circle} Desenho amostral para validação
-- [3]{.circle} Matriz de confusão e métricas de acurácia
-- [4]{.circle} Análise de incerteza e sensibilidade
-- [5]{.circle} Validação de métricas de paisagem
-- [6]{.circle} Exercício: validação de classificação no QGIS/GEE
+- [2]{.circle} Desenho amostral para validaÃ§Ã£o
+- [3]{.circle} Matriz de confusÃ£o e mÃ©tricas de acurÃ¡cia
+- [4]{.circle} AnÃ¡lise de incerteza e sensibilidade
+- [5]{.circle} ValidaÃ§Ã£o de mÃ©tricas de paisagem
+- [6]{.circle} ExercÃ­cio: validaÃ§Ã£o de classificaÃ§Ã£o no QGIS/GEE
 :::
 
 ::: {.column width="50%"}
 ::: {.info-box}
 **Objetivo da Aula**
 
-Dominar as técnicas de **validação** e **análise de incerteza** aplicadas a mapeamentos de uso/cobertura e métricas de paisagem, garantindo confiabilidade nos diagnósticos.
+Dominar as tÃ©cnicas de **validaÃ§Ã£o** e **anÃ¡lise de incerteza** aplicadas a mapeamentos de uso/cobertura e mÃ©tricas de paisagem, garantindo confiabilidade nos diagnÃ³sticos.
 :::
 :::
 :::
 
 # [1  -  O MAPA COMO MODELO]{.section-header}
 
-## Todo mapa é uma simplificação {.smaller-text}
+## Todo mapa Ã© uma simplificaÃ§Ã£o {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
-Um mapa de uso e cobertura do solo é um **modelo** da realidade:
+Um mapa de uso e cobertura do solo Ã© um **modelo** da realidade:
 
-- Cada pixel recebe **uma** classe → mas a paisagem real é contínua
-- A classificação depende de **amostras de treinamento** → possivelmente enviesadas
-- A resolução espacial **limita** o que pode ser detectado
-- A legenda **categoriza** um gradiente contínuo
+- Cada pixel recebe **uma** classe â†’ mas a paisagem real Ã© contÃ­nua
+- A classificaÃ§Ã£o depende de **amostras de treinamento** â†’ possivelmente enviesadas
+- A resoluÃ§Ã£o espacial **limita** o que pode ser detectado
+- A legenda **categoriza** um gradiente contÃ­nuo
 
-**Consequência**: todo mapa contém **erros**. A questão não é *se* existem erros, mas:
+**ConsequÃªncia**: todo mapa contÃ©m **erros**. A questÃ£o nÃ£o Ã© *se* existem erros, mas:
 
-1. **Onde** estão os erros?
-2. **Quão grandes** são?
-3. **Como afetam** os resultados (métricas, diagnósticos, decisões)?
+1. **Onde** estÃ£o os erros?
+2. **QuÃ£o grandes** sÃ£o?
+3. **Como afetam** os resultados (mÃ©tricas, diagnÃ³sticos, decisÃµes)?
 
-> "O mapa não é o território" — Alfred Korzybski, 1933
+> "O mapa nÃ£o Ã© o territÃ³rio" â€” Alfred Korzybski, 1933
 :::
 
 ::: {.column width="45%"}
 ```{dot}
-//| fig-cap: "Fontes de erro na classificação de uso e cobertura."
+//| fig-cap: "Fontes de erro na classificaÃ§Ã£o de uso e cobertura."
 //| fig-width: 5
 digraph {
     rankdir=TB
@@ -76,15 +74,15 @@ digraph {
     node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=8, margin="0.15,0.08", penwidth=0.8]
     edge [color="#555555", penwidth=1.0]
 
-    I [label="Imagem\nSatélite/Drone", fillcolor="#E3F2FD", color="#1565C0"]
+    I [label="Imagem\nSatÃ©lite/Drone", fillcolor="#E3F2FD", color="#1565C0"]
     T [label="Amostras de\nTreinamento", fillcolor="#C8E6C9", color="#2E7D32"]
-    A [label="Algoritmo de\nClassificação", fillcolor="#FFE0B2", color="#E65100"]
+    A [label="Algoritmo de\nClassificaÃ§Ã£o", fillcolor="#FFE0B2", color="#E65100"]
     M [label="MAPA\nClassificado", fillcolor="#BBDEFB", color="#1565C0"]
-    V [label="VALIDAÇÃO", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
+    V [label="VALIDAÃ‡ÃƒO", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
 
-    E1 [label="Erro de\nregistro/calibração", fillcolor="#FFCDD2", color="#C62828", fontsize=7]
+    E1 [label="Erro de\nregistro/calibraÃ§Ã£o", fillcolor="#FFCDD2", color="#C62828", fontsize=7]
     E2 [label="Erro de\namostragem", fillcolor="#FFCDD2", color="#C62828", fontsize=7]
-    E3 [label="Erro de\nclassificação", fillcolor="#FFCDD2", color="#C62828", fontsize=7]
+    E3 [label="Erro de\nclassificaÃ§Ã£o", fillcolor="#FFCDD2", color="#C62828", fontsize=7]
 
     I -> A
     T -> A
@@ -99,28 +97,28 @@ digraph {
 :::
 :::
 
-# [2  -  DESENHO AMOSTRAL PARA VALIDAÇÃO]{.section-header}
+# [2  -  DESENHO AMOSTRAL PARA VALIDAÃ‡ÃƒO]{.section-header}
 
-## Princípios do desenho amostral {.smaller-text}
+## PrincÃ­pios do desenho amostral {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
-A validação exige pontos de referência **independentes** do treinamento.
+A validaÃ§Ã£o exige pontos de referÃªncia **independentes** do treinamento.
 
 ### Tipos de amostragem
 
-| Tipo | Descrição | Quando usar |
+| Tipo | DescriÃ§Ã£o | Quando usar |
 |:-----|:----------|:------------|
-| **Aleatória simples** | Pontos sorteados uniformemente | Classes equilibradas |
+| **AleatÃ³ria simples** | Pontos sorteados uniformemente | Classes equilibradas |
 | **Estratificada** | Pontos por classe (proporcional ou igual) | Classes desbalanceadas |
-| **Sistemática** | Grade regular | Avaliar distribuição espacial do erro |
-| **Estratificada proporcional** | Nº de pontos ∝ área da classe | Estimativa não-enviesada de acurácia global |
+| **SistemÃ¡tica** | Grade regular | Avaliar distribuiÃ§Ã£o espacial do erro |
+| **Estratificada proporcional** | NÂº de pontos âˆ Ã¡rea da classe | Estimativa nÃ£o-enviesada de acurÃ¡cia global |
 
 ### Regra de bolso
 
-- **Mínimo**: 50 pontos por classe para classes raras
-- **Ideal**: ≥ 100 pontos por classe
-- **Interpretação**: alta resolução (Google Earth) ou campo
+- **MÃ­nimo**: 50 pontos por classe para classes raras
+- **Ideal**: â‰¥ 100 pontos por classe
+- **InterpretaÃ§Ã£o**: alta resoluÃ§Ã£o (Google Earth) ou campo
 :::
 
 ::: {.column width="45%"}
@@ -128,25 +126,25 @@ A validação exige pontos de referência **independentes** do treinamento.
 ## Erro mais comum
 Usar as **mesmas amostras** para treinar e validar.
 
-Isso gera **superestimativa** da acurácia (overfitting). A validação deve ser feita com dados que o classificador **nunca viu**.
+Isso gera **superestimativa** da acurÃ¡cia (overfitting). A validaÃ§Ã£o deve ser feita com dados que o classificador **nunca viu**.
 
-**Prática recomendada**: separar 70% para treinamento e 30% para validação, ou usar **validação cruzada** (k-fold).
+**PrÃ¡tica recomendada**: separar 70% para treinamento e 30% para validaÃ§Ã£o, ou usar **validaÃ§Ã£o cruzada** (k-fold).
 :::
 
 ::: {.callout-tip}
 ## Ferramentas
-- **QGIS**: plugin *AcATaMa* → gera pontos, coleta referência, calcula matriz
-- **GEE**: `ee.Classifier.confusionMatrix()` → valida direto na nuvem
+- **QGIS**: plugin *AcATaMa* â†’ gera pontos, coleta referÃªncia, calcula matriz
+- **GEE**: `ee.Classifier.confusionMatrix()` â†’ valida direto na nuvem
 - **R**: pacotes `caret`, `sf`, `terra`
 :::
 :::
 :::
 
-# [3  -  MATRIZ DE CONFUSÃO]{.section-header}
+# [3  -  MATRIZ DE CONFUSÃƒO]{.section-header}
 
-## Entendendo a matriz de confusão {.smaller-text}
+## Entendendo a matriz de confusÃ£o {.smaller-text}
 
-A matriz de confusão cruza a classe **mapeada** com a classe **real** (referência):
+A matriz de confusÃ£o cruza a classe **mapeada** com a classe **real** (referÃªncia):
 
 |  | Floresta (ref.) | Pastagem (ref.) | Agricultura (ref.) | Solo exp. (ref.) | **Total linha** |
 |:--|:---:|:---:|:---:|:---:|:---:|
@@ -156,29 +154,29 @@ A matriz de confusão cruza a classe **mapeada** com a classe **real** (referên
 | Solo exp. (mapa) | 0 | 0 | 7 | **43** | 50 |
 | **Total coluna** | 50 | 50 | 50 | 50 | **200** |
 
-: Exemplo de matriz de confusão para 4 classes. {.striped .hover}
+: Exemplo de matriz de confusÃ£o para 4 classes. {.striped .hover}
 
-Diagonal = acertos. Fora da diagonal = erros de **comissão** (acima) e **omissão** (abaixo).
+Diagonal = acertos. Fora da diagonal = erros de **comissÃ£o** (acima) e **omissÃ£o** (abaixo).
 
-## Métricas derivadas {.smaller-text}
+## MÃ©tricas derivadas {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-| Métrica | Fórmula | Interpretação |
+| MÃ©trica | FÃ³rmula | InterpretaÃ§Ã£o |
 |:--------|:--------|:--------------|
-| **Acurácia Global** | $\frac{\sum \text{diagonal}}{n}$ | % total de acertos |
-| **Acurácia do Produtor** | $\frac{a_{ii}}{\text{total coluna}_i}$ | Probabilidade de a classe real ser mapeada corretamente (1 − omissão) |
-| **Acurácia do Usuário** | $\frac{a_{ii}}{\text{total linha}_i}$ | Probabilidade de o pixel mapeado ser realmente da classe (1 − comissão) |
-| **Kappa** | $\frac{p_o - p_e}{1 - p_e}$ | Concordância corrigida pelo acaso |
-| **F1-Score** | $\frac{2 \cdot PA \cdot UA}{PA + UA}$ | Média harmônica de PA e UA |
+| **AcurÃ¡cia Global** | $\frac{\sum \text{diagonal}}{n}$ | % total de acertos |
+| **AcurÃ¡cia do Produtor** | $\frac{a_{ii}}{\text{total coluna}_i}$ | Probabilidade de a classe real ser mapeada corretamente (1 âˆ’ omissÃ£o) |
+| **AcurÃ¡cia do UsuÃ¡rio** | $\frac{a_{ii}}{\text{total linha}_i}$ | Probabilidade de o pixel mapeado ser realmente da classe (1 âˆ’ comissÃ£o) |
+| **Kappa** | $\frac{p_o - p_e}{1 - p_e}$ | ConcordÃ¢ncia corrigida pelo acaso |
+| **F1-Score** | $\frac{2 \cdot PA \cdot UA}{PA + UA}$ | MÃ©dia harmÃ´nica de PA e UA |
 
-: Métricas de acurácia temática. {.striped .hover}
+: MÃ©tricas de acurÃ¡cia temÃ¡tica. {.striped .hover}
 :::
 
 ::: {.column width="50%"}
 ### Do exemplo anterior
 
-$$\text{Acurácia Global} = \frac{45 + 40 + 38 + 43}{200} = \frac{166}{200} = 83\%$$
+$$\text{AcurÃ¡cia Global} = \frac{45 + 40 + 38 + 43}{200} = \frac{166}{200} = 83\%$$
 
 | Classe | PA | UA | F1 |
 |:-------|:---:|:---:|:---:|
@@ -188,40 +186,40 @@ $$\text{Acurácia Global} = \frac{45 + 40 + 38 + 43}{200} = \frac{166}{200} = 83
 | Solo exposto | 86% | 86% | 86% |
 
 ::: {.callout-note}
-## Qual métrica usar?
-- **Acurácia global** → visão geral, mas mascara erros em classes raras
-- **PA e UA por classe** → diagnóstico detalhado
-- **F1-Score** → balanço entre omissão e comissão
-- **Kappa** → menos recomendado atualmente (Pontius & Millones, 2011)
+## Qual mÃ©trica usar?
+- **AcurÃ¡cia global** â†’ visÃ£o geral, mas mascara erros em classes raras
+- **PA e UA por classe** â†’ diagnÃ³stico detalhado
+- **F1-Score** â†’ balanÃ§o entre omissÃ£o e comissÃ£o
+- **Kappa** â†’ menos recomendado atualmente (Pontius & Millones, 2011)
 :::
 :::
 :::
 
-# [4  -  ANÁLISE DE INCERTEZA E SENSIBILIDADE]{.section-header}
+# [4  -  ANÃLISE DE INCERTEZA E SENSIBILIDADE]{.section-header}
 
-## Propagação de erro: do mapa às métricas {.smaller-text}
+## PropagaÃ§Ã£o de erro: do mapa Ã s mÃ©tricas {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
-Erros no mapa **propagam-se** para as métricas de paisagem:
+Erros no mapa **propagam-se** para as mÃ©tricas de paisagem:
 
-- Pixel de floresta classificado como pastagem → fragmento "some" → NP diminui
-- Pixel de borda mal classificado → EDGE muda → SHAPE_AM muda
-- Classe rara subestimada → PLAND diminui → COHESION diminui
+- Pixel de floresta classificado como pastagem â†’ fragmento "some" â†’ NP diminui
+- Pixel de borda mal classificado â†’ EDGE muda â†’ SHAPE_AM muda
+- Classe rara subestimada â†’ PLAND diminui â†’ COHESION diminui
 
-### Análise de sensibilidade
+### AnÃ¡lise de sensibilidade
 
-Testar o impacto de **variações controladas** nos dados de entrada:
+Testar o impacto de **variaÃ§Ãµes controladas** nos dados de entrada:
 
-1. **Resolução espacial**: classificar a mesma área em 10 m, 30 m, 250 m → como mudam NP, MPS, COHESION?
-2. **Sistema de classificação**: legendas com 4, 8, 16 classes → métricas estáveis?
-3. **Limiar de área mínima**: filtrar fragmentos < 1 ha, < 5 ha, < 25 ha → efeito no diagnóstico?
-4. **Classificador**: RF vs. SVM vs. CART → métricas convergem?
+1. **ResoluÃ§Ã£o espacial**: classificar a mesma Ã¡rea em 10 m, 30 m, 250 m â†’ como mudam NP, MPS, COHESION?
+2. **Sistema de classificaÃ§Ã£o**: legendas com 4, 8, 16 classes â†’ mÃ©tricas estÃ¡veis?
+3. **Limiar de Ã¡rea mÃ­nima**: filtrar fragmentos < 1 ha, < 5 ha, < 25 ha â†’ efeito no diagnÃ³stico?
+4. **Classificador**: RF vs. SVM vs. CART â†’ mÃ©tricas convergem?
 :::
 
 ::: {.column width="45%"}
 ```{dot}
-//| fig-cap: "Propagação de erros do mapa para as métricas de paisagem."
+//| fig-cap: "PropagaÃ§Ã£o de erros do mapa para as mÃ©tricas de paisagem."
 //| fig-width: 5
 digraph {
     rankdir=TB
@@ -230,15 +228,15 @@ digraph {
     edge [color="#555555", penwidth=1.0]
 
     DADO [label="Dados de\nentrada", fillcolor="#E3F2FD", color="#1565C0"]
-    CLASS [label="Classificação", fillcolor="#C8E6C9", color="#2E7D32"]
+    CLASS [label="ClassificaÃ§Ã£o", fillcolor="#C8E6C9", color="#2E7D32"]
     MAPA [label="Mapa de\nUso/Cobertura", fillcolor="#BBDEFB", color="#1565C0"]
-    FRAG [label="FRAGSTATS\nMétricas", fillcolor="#FFE0B2", color="#E65100"]
-    DIAG [label="Diagnóstico\nPaisagístico", fillcolor="#E1BEE7", color="#6A1B9A"]
+    FRAG [label="FRAGSTATS\nMÃ©tricas", fillcolor="#FFE0B2", color="#E65100"]
+    DIAG [label="DiagnÃ³stico\nPaisagÃ­stico", fillcolor="#E1BEE7", color="#6A1B9A"]
 
-    E1 [label="± erro sensor", fillcolor="#FFCDD2", color="#C62828", fontsize=7]
-    E2 [label="± erro amostral", fillcolor="#FFCDD2", color="#C62828", fontsize=7]
-    E3 [label="± erro temático", fillcolor="#FFCDD2", color="#C62828", fontsize=7]
-    E4 [label="± propagação", fillcolor="#FFCDD2", color="#C62828", fontsize=7]
+    E1 [label="Â± erro sensor", fillcolor="#FFCDD2", color="#C62828", fontsize=7]
+    E2 [label="Â± erro amostral", fillcolor="#FFCDD2", color="#C62828", fontsize=7]
+    E3 [label="Â± erro temÃ¡tico", fillcolor="#FFCDD2", color="#C62828", fontsize=7]
+    E4 [label="Â± propagaÃ§Ã£o", fillcolor="#FFCDD2", color="#C62828", fontsize=7]
 
     DADO -> CLASS -> MAPA -> FRAG -> DIAG
     DADO -> E1 [style=dashed, color="#C62828"]
@@ -250,71 +248,71 @@ digraph {
 :::
 :::
 
-## Simulação Monte Carlo para incerteza {.smaller-text}
+## SimulaÃ§Ã£o Monte Carlo para incerteza {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
-A simulação Monte Carlo aplica **perturbações aleatórias** ao mapa de referência:
+A simulaÃ§Ã£o Monte Carlo aplica **perturbaÃ§Ãµes aleatÃ³rias** ao mapa de referÃªncia:
 
-1. A partir da matriz de confusão, calcule as **probabilidades de erro** por classe
-2. Para cada pixel, sorteie se ele será **reclassificado** com base nessas probabilidades
+1. A partir da matriz de confusÃ£o, calcule as **probabilidades de erro** por classe
+2. Para cada pixel, sorteie se ele serÃ¡ **reclassificado** com base nessas probabilidades
 3. Gere N mapas perturbados (ex.: N = 100)
-4. Calcule as métricas em cada mapa
-5. Obtenha **intervalos de confiança** para cada métrica
+4. Calcule as mÃ©tricas em cada mapa
+5. Obtenha **intervalos de confianÃ§a** para cada mÃ©trica
 
 ### Resultado
 
-Ao invés de reportar:
+Ao invÃ©s de reportar:
 
 > "NP = 345 fragmentos"
 
 Reportar:
 
-> "NP = 345 ± 28 fragmentos (IC 95%)"
+> "NP = 345 Â± 28 fragmentos (IC 95%)"
 :::
 
 ::: {.column width="45%"}
 ::: {.callout-warning}
-## Implicação para decisão
-Se a um nível de confiança de 95% o número de fragmentos varia entre 317 e 373, qualquer variação **dentro desse intervalo** não indica mudança real.
+## ImplicaÃ§Ã£o para decisÃ£o
+Se a um nÃ­vel de confianÃ§a de 95% o nÃºmero de fragmentos varia entre 317 e 373, qualquer variaÃ§Ã£o **dentro desse intervalo** nÃ£o indica mudanÃ§a real.
 
-Isso é crucial quando comparamos paisagens **entre datas** ou **entre regiões**: a diferença precisa ser **maior que a incerteza** para ser significativa.
+Isso Ã© crucial quando comparamos paisagens **entre datas** ou **entre regiÃµes**: a diferenÃ§a precisa ser **maior que a incerteza** para ser significativa.
 :::
 :::
 :::
 
-# [5  -  VALIDAÇÃO DE MÉTRICAS DE PAISAGEM]{.section-header}
+# [5  -  VALIDAÃ‡ÃƒO DE MÃ‰TRICAS DE PAISAGEM]{.section-header}
 
-## Métricas sensíveis à resolução e legenda {.smaller-text}
+## MÃ©tricas sensÃ­veis Ã  resoluÃ§Ã£o e legenda {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-Estudos mostram que certas métricas são muito sensíveis à escala:
+Estudos mostram que certas mÃ©tricas sÃ£o muito sensÃ­veis Ã  escala:
 
-| Métrica | Sensibilidade à resolução | Sensibilidade à legenda |
+| MÃ©trica | Sensibilidade Ã  resoluÃ§Ã£o | Sensibilidade Ã  legenda |
 |:--------|:-------------------------:|:-----------------------:|
-| NP (Nº Fragmentos) | 🔴 Alta | 🔴 Alta |
-| MPS (Tamanho Médio) | 🔴 Alta | 🟡 Moderada |
-| PLAND (% Classe) | 🟢 Baixa | 🔴 Alta |
-| ED (Borda) | 🔴 Alta | 🟡 Moderada |
-| COHESION | 🟡 Moderada | 🟡 Moderada |
-| IJI (Justaposição) | 🟢 Baixa | 🔴 Alta |
-| CONTAG (Contágio) | 🟡 Moderada | 🔴 Alta |
+| NP (NÂº Fragmentos) | ðŸ”´ Alta | ðŸ”´ Alta |
+| MPS (Tamanho MÃ©dio) | ðŸ”´ Alta | ðŸŸ¡ Moderada |
+| PLAND (% Classe) | ðŸŸ¢ Baixa | ðŸ”´ Alta |
+| ED (Borda) | ðŸ”´ Alta | ðŸŸ¡ Moderada |
+| COHESION | ðŸŸ¡ Moderada | ðŸŸ¡ Moderada |
+| IJI (JustaposiÃ§Ã£o) | ðŸŸ¢ Baixa | ðŸ”´ Alta |
+| CONTAG (ContÃ¡gio) | ðŸŸ¡ Moderada | ðŸ”´ Alta |
 
 : {.striped .hover}
 
 ::: {.callout-important}
-## Recomendação
-Compare métricas entre paisagens **apenas se** classificadas com mesma resolução, mesma legenda e mesmo algoritmo.
+## RecomendaÃ§Ã£o
+Compare mÃ©tricas entre paisagens **apenas se** classificadas com mesma resoluÃ§Ã£o, mesma legenda e mesmo algoritmo.
 :::
 :::
 
 ::: {.column width="50%"}
-### Validação cruzada com campo
+### ValidaÃ§Ã£o cruzada com campo
 
-A validação ideal combina:
+A validaÃ§Ã£o ideal combina:
 
-1. **Referência em tela** (Google Earth, imagens de alta resolução)
+1. **ReferÃªncia em tela** (Google Earth, imagens de alta resoluÃ§Ã£o)
 2. **Coleta em campo** (GPS, fotos georreferenciadas)
 3. **Drone** (ortomosaico como verdade local)
 
@@ -322,36 +320,36 @@ A validação ideal combina:
 
 - Definir **unidades amostrais** (plots circulares de raio fixo)
 - Registrar: coordenada, classe real, cobertura de dossel, fotos N/S/E/O
-- Sobrepor ao mapa e avaliar concordância
-- Calcular acurácia por bioma, relevo e distância de borda
+- Sobrepor ao mapa e avaliar concordÃ¢ncia
+- Calcular acurÃ¡cia por bioma, relevo e distÃ¢ncia de borda
 
 ### Ferramentas de campo
 
-- **QField** / **Mergin Maps** — coleta vetorial offline (Android)
-- **ODK Collect** — formulários estruturados
-- **KoBoToolbox** — gestão de dados de campo
+- **QField** / **Mergin Maps** â€” coleta vetorial offline (Android)
+- **ODK Collect** â€” formulÃ¡rios estruturados
+- **KoBoToolbox** â€” gestÃ£o de dados de campo
 :::
 :::
 
-# [6  -  EXERCÍCIO: VALIDAÇÃO NO QGIS]{.section-header}
+# [6  -  EXERCÃCIO: VALIDAÃ‡ÃƒO NO QGIS]{.section-header}
 
-## Roteiro Prático {.smaller-text}
+## Roteiro PrÃ¡tico {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
 ### Dados
 
-- Classificação de uso já produzida (ou MapBiomas)
-- Imagens de alta resolução (Google Satellite ou Bing)
+- ClassificaÃ§Ã£o de uso jÃ¡ produzida (ou MapBiomas)
+- Imagens de alta resoluÃ§Ã£o (Google Satellite ou Bing)
 
 ### Etapas
 
 1. **Gerar pontos amostrais estratificados** (plugin AcATaMa ou *Random Points in Layer Bounds*)
-2. **Interpretar cada ponto** no Google Earth / imagem de alta resolução → atribuir classe real
-3. **Construir a matriz de confusão** manualmente ou via plugin
+2. **Interpretar cada ponto** no Google Earth / imagem de alta resoluÃ§Ã£o â†’ atribuir classe real
+3. **Construir a matriz de confusÃ£o** manualmente ou via plugin
 4. **Calcular**: AG, PA, UA, F1, Kappa
-5. **Espacializar o erro**: onde a classificação falha mais?
-6. **Refinar**: coletar mais amostras nas regiões de confusão e reclassificar
+5. **Espacializar o erro**: onde a classificaÃ§Ã£o falha mais?
+6. **Refinar**: coletar mais amostras nas regiÃµes de confusÃ£o e reclassificar
 :::
 
 ::: {.column width="50%"}
@@ -359,39 +357,39 @@ A validação ideal combina:
 
 | Produto | Formato |
 |:--------|:--------|
-| Tabela de pontos de validação | .csv / .gpkg |
-| Matriz de confusão | Tabela no relatório |
-| Métricas de acurácia por classe | Tabela + gráfico de barras |
-| Mapa de discordância | Layout A3 |
-| Análise crítica (1 página) | Discussão de erros e soluções |
+| Tabela de pontos de validaÃ§Ã£o | .csv / .gpkg |
+| Matriz de confusÃ£o | Tabela no relatÃ³rio |
+| MÃ©tricas de acurÃ¡cia por classe | Tabela + grÃ¡fico de barras |
+| Mapa de discordÃ¢ncia | Layout A3 |
+| AnÃ¡lise crÃ­tica (1 pÃ¡gina) | DiscussÃ£o de erros e soluÃ§Ãµes |
 
 ::: {.callout-tip}
 ## Dica
-Para a análise crítica, responda:
+Para a anÃ¡lise crÃ­tica, responda:
 
-- Quais classes apresentaram maior confusão?
-- O erro é sistemático ou aleatório?
-- Como os erros afetariam as métricas de paisagem?
-- O que faria diferente para melhorar a acurácia?
+- Quais classes apresentaram maior confusÃ£o?
+- O erro Ã© sistemÃ¡tico ou aleatÃ³rio?
+- Como os erros afetariam as mÃ©tricas de paisagem?
+- O que faria diferente para melhorar a acurÃ¡cia?
 :::
 :::
 :::
 
-# [7  -  SÍNTESE]{.section-header}
+# [7  -  SÃNTESE]{.section-header}
 
-## Conexão com a Disciplina {.smaller-text}
+## ConexÃ£o com a Disciplina {.smaller-text}
 
-| Método de validação | Aulas conectadas |
+| MÃ©todo de validaÃ§Ã£o | Aulas conectadas |
 |:--------------------|:-----------------|
-| Matriz de confusão | → Sensoriamento Remoto (Aula 08), GEE (Aula 09) |
-| Desenho amostral | → Coleta de Campo (Aula 11), Estatística Básica |
-| Análise de sensibilidade | → FRAGSTATS (Aula 18), Diagnóstico (Aula 20) |
-| Monte Carlo | → Modelagem Quantitativa (Extra) |
-| Validação com drone | → Sensoriamento Remoto Avançado (esta sequência) |
+| Matriz de confusÃ£o | â†’ Sensoriamento Remoto (Aula 08), GEE (Aula 09) |
+| Desenho amostral | â†’ Coleta de Campo (Aula 11), EstatÃ­stica BÃ¡sica |
+| AnÃ¡lise de sensibilidade | â†’ FRAGSTATS (Aula 18), DiagnÃ³stico (Aula 20) |
+| Monte Carlo | â†’ Modelagem Quantitativa (Extra) |
+| ValidaÃ§Ã£o com drone | â†’ Sensoriamento Remoto AvanÃ§ado (esta sequÃªncia) |
 
 ## Leituras Recomendadas
 
 - **CONGALTON, R. G.; GREEN, K.** (2019). *Assessing the Accuracy of Remotely Sensed Data*. 3rd ed. CRC Press.
-- **PONTIUS, R. G. Jr.; MILLONES, M.** (2011). Death to Kappa. *International Journal of Remote Sensing*, 32(15), 4407–4429.
-- **OLOFSSON, P. et al.** (2014). Good practices for estimating area and assessing accuracy of land use change. *Remote Sensing of Environment*, 148, 42–57.
-- **GUSTAFSON, E. J.** (1998). Quantifying landscape spatial pattern. *BioScience*, 48(6), 439–452.
+- **PONTIUS, R. G. Jr.; MILLONES, M.** (2011). Death to Kappa. *International Journal of Remote Sensing*, 32(15), 4407â€“4429.
+- **OLOFSSON, P. et al.** (2014). Good practices for estimating area and assessing accuracy of land use change. *Remote Sensing of Environment*, 148, 42â€“57.
+- **GUSTAFSON, E. J.** (1998). Quantifying landscape spatial pattern. *BioScience*, 48(6), 439â€“452.

@@ -1,13 +1,12 @@
 ---
-title: "Medidas de Dispersão e Precisão"
-subtitle: "Aula VII  -  Amplitude, Variância, Desvio-Padrão, CV e Erro Padrão"
+title: "Medidas de DispersÃ£o e PrecisÃ£o"
+subtitle: "Aula VII  -  Amplitude, VariÃ¢ncia, Desvio-PadrÃ£o, CV e Erro PadrÃ£o"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
-footer: "UEFS  -  Introdução à Estatística | Tema 4  -  Medidas de Dispersão e Precisão"
+footer: "UEFS  -  IntroduÃ§Ã£o Ã  EstatÃ­stica | Tema 4  -  Medidas de DispersÃ£o e PrecisÃ£o"
 format: 
   revealjs:
     logo: ../../../../assets/logo-uefs.webp
-    footer: "UEFS  -  Introdução à Estatística | Tema 4  -  Medidas de Dispersão e Precisão"
+    footer: "UEFS  -  IntroduÃ§Ã£o Ã  EstatÃ­stica | Tema 4  -  Medidas de DispersÃ£o e PrecisÃ£o"
     slide-number: true
     theme: [simple, ../../../../assets/uefs.scss]
     controls: true
@@ -24,26 +23,26 @@ execute:
   eval: false
 ---
 
-# [Medidas de Dispersão e Precisão]{.section-header}
+# [Medidas de DispersÃ£o e PrecisÃ£o]{.section-header}
 
 ## Objetivos da Aula {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-1. Compreender e calcular **Amplitude** (*Range*), **Variância** (*Variance*), **Desvio-Padrão** (*Standard Deviation*) e **Coeficiente de Variação** (*Coefficient of Variation*)
+1. Compreender e calcular **Amplitude** (*Range*), **VariÃ¢ncia** (*Variance*), **Desvio-PadrÃ£o** (*Standard Deviation*) e **Coeficiente de VariaÃ§Ã£o** (*Coefficient of Variation*)
 
-2. Diferenciar **Dispersão** de **Precisão da Média** via Erro Padrão (*Standard Error*)
+2. Diferenciar **DispersÃ£o** de **PrecisÃ£o da MÃ©dia** via Erro PadrÃ£o (*Standard Error*)
 :::
 
 ::: {.column width="50%"}
-3. Aplicar os conceitos em um conjunto de dados **geográfico** (cidades, altitudes e temperaturas)
+3. Aplicar os conceitos em um conjunto de dados **geogrÃ¡fico** (cidades, altitudes e temperaturas)
 
-4. Construir **gráficos** e interpretar resultados no contexto espacial
+4. Construir **grÃ¡ficos** e interpretar resultados no contexto espacial
 :::
 :::
 
 ::: {.info-box}
-**Observação:** Termos em inglês entre parênteses para familiarização técnica.
+**ObservaÃ§Ã£o:** Termos em inglÃªs entre parÃªnteses para familiarizaÃ§Ã£o tÃ©cnica.
 :::
 
 ---
@@ -61,7 +60,7 @@ library(ggplot2)
 ```{r}
 #| eval: false
 dados <- data.frame(
-  cidade = c('Feira de Santana', 'Salvador', 'Vitória da Conquista', 
+  cidade = c('Feira de Santana', 'Salvador', 'VitÃ³ria da Conquista', 
              'Juazeiro', 'Itabuna'),
   altitude_m = c(234, 8, 923, 368, 110),
   temp_media_c = c(24.8, 26.3, 21.2, 27.1, 25.4)
@@ -73,12 +72,12 @@ dados
 
 ## Amplitude {.smaller-text}
 
-**Definição:** diferença entre o maior e o menor valor.
+**DefiniÃ§Ã£o:** diferenÃ§a entre o maior e o menor valor.
 
 $$AT = x_{max} - x_{min}$$
 
 ::: {.highlight-box}
-**Interpretação:** mede o intervalo total dos dados, mas é **sensível a outliers**.
+**InterpretaÃ§Ã£o:** mede o intervalo total dos dados, mas Ã© **sensÃ­vel a outliers**.
 :::
 
 ```{r}
@@ -88,15 +87,15 @@ AT_tmp <- max(dados$temp_media_c) - min(dados$temp_media_c)
 AT_alt; AT_tmp
 ```
 
-# [2) Média (Mean)  -  Apoio]{.section-header}
+# [2) MÃ©dia (Mean)  -  Apoio]{.section-header}
 
-## Média {.smaller-text}
+## MÃ©dia {.smaller-text}
 
-**Definição:** soma dos valores dividida pelo número de observações.
+**DefiniÃ§Ã£o:** soma dos valores dividida pelo nÃºmero de observaÃ§Ãµes.
 
 $$\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i$$
 
-Usaremos a média para compor as próximas medidas.
+Usaremos a mÃ©dia para compor as prÃ³ximas medidas.
 
 ```{r}
 #| eval: false
@@ -105,28 +104,28 @@ media_tmp <- mean(dados$temp_media_c)
 media_alt; media_tmp
 ```
 
-# [3) Variância e Desvio-Padrão]{.section-header}
+# [3) VariÃ¢ncia e Desvio-PadrÃ£o]{.section-header}
 
-## Variância e Desvio-Padrão {.smaller-text}
+## VariÃ¢ncia e Desvio-PadrÃ£o {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Variância amostral
+### VariÃ¢ncia amostral
 
 $$s^2 = \frac{\sum_{i=1}^{n}(x_i - \bar{x})^2}{n-1}$$
 
-### Desvio-padrão amostral
+### Desvio-padrÃ£o amostral
 
 $$s = \sqrt{s^2}$$
 :::
 
 ::: {.column width="50%"}
 ::: {.info-box}
-**Interpretação:**
+**InterpretaÃ§Ã£o:**
 
-- A variância está em **unidades ao quadrado**
-- O desvio-padrão retorna à **unidade original**
-- Quantifica a **dispersão média**
+- A variÃ¢ncia estÃ¡ em **unidades ao quadrado**
+- O desvio-padrÃ£o retorna Ã  **unidade original**
+- Quantifica a **dispersÃ£o mÃ©dia**
 :::
 :::
 :::
@@ -141,16 +140,16 @@ c(var_alt = var_alt, sd_alt = sd_alt)
 c(var_tmp = var_tmp, sd_tmp = sd_tmp)
 ```
 
-# [4) Coeficiente de Variação (CV)]{.section-header}
+# [4) Coeficiente de VariaÃ§Ã£o (CV)]{.section-header}
 
-## Coeficiente de Variação {.smaller-text}
+## Coeficiente de VariaÃ§Ã£o {.smaller-text}
 
-**Definição:** dispersão relativa à média (em %).
+**DefiniÃ§Ã£o:** dispersÃ£o relativa Ã  mÃ©dia (em %).
 
 $$CV = \frac{s}{\bar{x}} \times 100\%$$
 
 ::: {.highlight-box}
-**Interpretação:** útil para comparar variabilidade entre variáveis com **unidades diferentes** (ex: m vs. °C).
+**InterpretaÃ§Ã£o:** Ãºtil para comparar variabilidade entre variÃ¡veis com **unidades diferentes** (ex: m vs. Â°C).
 :::
 
 ```{r}
@@ -165,21 +164,21 @@ CV_tmp <- cv(dados$temp_media_c)
 CV_alt; CV_tmp
 ```
 
-# [5) Erro Padrão da Média (SE)]{.section-header}
+# [5) Erro PadrÃ£o da MÃ©dia (SE)]{.section-header}
 
-## Erro Padrão {.smaller-text}
+## Erro PadrÃ£o {.smaller-text}
 
-**Definição:** quantifica a **precisão** da estimativa da média amostral.
+**DefiniÃ§Ã£o:** quantifica a **precisÃ£o** da estimativa da mÃ©dia amostral.
 
 $$SE(\bar{x}) = \frac{s}{\sqrt{n}}$$
 
 ::: {.columns}
 ::: {.column width="50%"}
 ::: {.info-box}
-**Diferença Fundamental**
+**DiferenÃ§a Fundamental**
 
-- **DP (SD)** mede **dispersão dos dados**
-- **SE** mede **precisão da média** (tende a diminuir quando $n$ aumenta)
+- **DP (SD)** mede **dispersÃ£o dos dados**
+- **SE** mede **precisÃ£o da mÃ©dia** (tende a diminuir quando $n$ aumenta)
 :::
 :::
 
@@ -198,11 +197,11 @@ SE_alt; SE_tmp
 :::
 :::
 
-# [6) Intervalo de Confiança (IC 95%)]{.section-header}
+# [6) Intervalo de ConfianÃ§a (IC 95%)]{.section-header}
 
-## Intervalo de Confiança {.smaller-text}
+## Intervalo de ConfianÃ§a {.smaller-text}
 
-Para amostras pequenas, utilize a distribuição **t de Student**:
+Para amostras pequenas, utilize a distribuiÃ§Ã£o **t de Student**:
 
 $$IC = \bar{x} \pm t_{0{,}975,\, n-1} \cdot SE$$
 
@@ -222,16 +221,16 @@ IC95_tmp <- c(
 IC95_alt; IC95_tmp
 ```
 
-# [7) Visualizações]{.section-header}
+# [7) VisualizaÃ§Ãµes]{.section-header}
 
-## Barras com Linha de Média (Altitude) {.smaller-text}
+## Barras com Linha de MÃ©dia (Altitude) {.smaller-text}
 
 ```{r}
 #| eval: false
 ggplot(dados, aes(x = cidade, y = altitude_m, fill = cidade)) +
   geom_bar(stat = 'identity') +
   geom_hline(yintercept = media_alt, linetype = 'dashed', color = 'red') +
-  labs(title = 'Altitudes das Cidades (linha tracejada = média)',
+  labs(title = 'Altitudes das Cidades (linha tracejada = mÃ©dia)',
        x = '', y = 'Altitude (m)') +
   theme_minimal() +
   theme(legend.position = 'none',
@@ -246,23 +245,23 @@ ggplot(dados, aes(x = cidade, y = altitude_m, fill = cidade)) +
 #| eval: false
 par(mfrow = c(1, 2))
 hist(dados$temp_media_c, 
-     main = 'Histograma: Temperatura (°C)', 
-     xlab = 'Temperatura (°C)')
+     main = 'Histograma: Temperatura (Â°C)', 
+     xlab = 'Temperatura (Â°C)')
 boxplot(dados$temp_media_c, 
-        main = 'Boxplot: Temperatura (°C)', 
+        main = 'Boxplot: Temperatura (Â°C)', 
         horizontal = TRUE, 
-        xlab = 'Temperatura (°C)')
+        xlab = 'Temperatura (Â°C)')
 par(mfrow = c(1, 1))
 ```
 
 # [8) Resumo Integrado]{.section-header}
 
-## Resumo e Interpretação {.smaller-text}
+## Resumo e InterpretaÃ§Ã£o {.smaller-text}
 
 ```{r}
 #| eval: false
 resumo <- tibble::tibble(
-  Variavel = c('Altitude (m)', 'Temperatura (°C)'),
+  Variavel = c('Altitude (m)', 'Temperatura (Â°C)'),
   Media = c(media_alt, media_tmp),
   Variancia = c(var_alt, var_tmp),
   DP = c(sd_alt, sd_tmp),
@@ -272,17 +271,17 @@ resumo <- tibble::tibble(
 resumo
 ```
 
-### Guia de Interpretação
+### Guia de InterpretaÃ§Ã£o
 
-- **Amplitude** mostra o intervalo total; sensível a extremos
-- **DP (SD)** indica dispersão média na unidade original (m, °C)
-- **CV** permite comparar variabilidade relativa entre variáveis com unidades distintas
-- **SE** expressa a precisão da média: com mais cidades (maior $n$), o SE tende a reduzir
-- **IC95%** fornece um intervalo plausível para a média verdadeira
+- **Amplitude** mostra o intervalo total; sensÃ­vel a extremos
+- **DP (SD)** indica dispersÃ£o mÃ©dia na unidade original (m, Â°C)
+- **CV** permite comparar variabilidade relativa entre variÃ¡veis com unidades distintas
+- **SE** expressa a precisÃ£o da mÃ©dia: com mais cidades (maior $n$), o SE tende a reduzir
+- **IC95%** fornece um intervalo plausÃ­vel para a mÃ©dia verdadeira
 
 ---
 
-## 9) Extra: Erro Padrão para Proporção {.smaller-text}
+## 9) Extra: Erro PadrÃ£o para ProporÃ§Ã£o {.smaller-text}
 
 Para $\hat{p} = x/n$:
 

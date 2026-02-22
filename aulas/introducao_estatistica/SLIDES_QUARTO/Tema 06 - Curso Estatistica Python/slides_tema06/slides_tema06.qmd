@@ -1,13 +1,12 @@
 ---
-title: "Curso de Estatística com Python"
+title: "Curso de EstatÃ­stica com Python"
 subtitle: "Partes 1 e 2  -  PNAD 2015"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
-footer: "UEFS  -  Introdução à Estatística | Tema 6  -  Curso de Estatística com Python"
+footer: "UEFS  -  IntroduÃ§Ã£o Ã  EstatÃ­stica | Tema 6  -  Curso de EstatÃ­stica com Python"
 format: 
   revealjs:
     logo: ../../../../assets/logo-uefs.webp
-    footer: "UEFS  -  Introdução à Estatística | Tema 6  -  Curso de Estatística com Python"
+    footer: "UEFS  -  IntroduÃ§Ã£o Ã  EstatÃ­stica | Tema 6  -  Curso de EstatÃ­stica com Python"
     slide-number: true
     theme: [simple, ../../../../assets/uefs.scss]
     controls: true
@@ -24,19 +23,19 @@ execute:
   eval: false
 ---
 
-# [Curso de Estatística  -  Parte 1 e 2]{.section-header}
+# [Curso de EstatÃ­stica  -  Parte 1 e 2]{.section-header}
 
 # [1  -  Conhecendo os Dados]{.section-header}
 
 ## 1.1  -  Dataset do Projeto {.smaller-text}
 
-### Pesquisa Nacional por Amostra de Domicílios  -  2015
+### Pesquisa Nacional por Amostra de DomicÃ­lios  -  2015
 
 ::: {.columns}
 ::: {.column width="55%"}
-A **PNAD** investiga anualmente características gerais da população: educação, trabalho, rendimento e habitação.
+A **PNAD** investiga anualmente caracterÃ­sticas gerais da populaÃ§Ã£o: educaÃ§Ã£o, trabalho, rendimento e habitaÃ§Ã£o.
 
-Constitui, ao longo de **49 anos**, um importante instrumento para formulação, validação e avaliação de políticas de desenvolvimento socioeconômico.
+Constitui, ao longo de **49 anos**, um importante instrumento para formulaÃ§Ã£o, validaÃ§Ã£o e avaliaÃ§Ã£o de polÃ­ticas de desenvolvimento socioeconÃ´mico.
 
 **Fonte:** [IBGE  -  PNAD 2015](https://ww2.ibge.gov.br/home/estatistica/populacao/trabalhoerendimento/pnad2015/microdados.shtm)
 :::
@@ -45,9 +44,9 @@ Constitui, ao longo de **49 anos**, um importante instrumento para formulação,
 ::: {.info-box}
 **Tratamentos realizados:**
 
-1. Eliminados registros com Renda inválida (999 999 999 999)
+1. Eliminados registros com Renda invÃ¡lida (999 999 999 999)
 2. Eliminados registros com Renda *missing*
-3. Considerados somente registros das **Pessoas de Referência** de cada domicílio
+3. Considerados somente registros das **Pessoas de ReferÃªncia** de cada domicÃ­lio
 :::
 :::
 :::
@@ -75,13 +74,13 @@ dados.info()
 
 # [1.2  -  Tipos de Dados]{.section-header}
 
-## Variáveis Qualitativas {.smaller-text}
+## VariÃ¡veis Qualitativas {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
 ### Qualitativas Ordinais
 
-► Variáveis que podem ser **ordenadas ou hierarquizadas**
+â–º VariÃ¡veis que podem ser **ordenadas ou hierarquizadas**
 
 ```python
 dados['Anos de Estudo'].value_counts().sort_index()
@@ -91,7 +90,7 @@ dados['Anos de Estudo'].value_counts().sort_index()
 ::: {.column width="50%"}
 ### Qualitativas Nominais
 
-► Variáveis que **não podem** ser ordenadas ou hierarquizadas
+â–º VariÃ¡veis que **nÃ£o podem** ser ordenadas ou hierarquizadas
 
 ```python
 dados['Cor'].value_counts()
@@ -105,31 +104,31 @@ dados['Sexo'].value_counts()
 
 ---
 
-## Variáveis Quantitativas {.smaller-text}
+## VariÃ¡veis Quantitativas {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
 ### Quantitativas Discretas
 
-► Valores formam um conjunto **finito ou enumerável**
+â–º Valores formam um conjunto **finito ou enumerÃ¡vel**
 
 ```python
 dados['Idade'].value_counts().sort_index().head(20)
 ```
 
 ::: {.info-box}
-A variável **idade** pode ser classificada como:
+A variÃ¡vel **idade** pode ser classificada como:
 
 1. **Quantitativa discreta**  -  anos completos
-2. **Quantitativa contínua**  -  idade exata
+2. **Quantitativa contÃ­nua**  -  idade exata
 3. **Qualitativa ordinal**  -  faixas de idade
 :::
 :::
 
 ::: {.column width="50%"}
-### Quantitativas Contínuas
+### Quantitativas ContÃ­nuas
 
-► Valores em **escala contínua** (números reais)
+â–º Valores em **escala contÃ­nua** (nÃºmeros reais)
 
 ```python
 dados['Altura'].describe()
@@ -141,11 +140,11 @@ dados['Renda'].describe()
 :::
 :::
 
-# [2  -  Distribuição de Frequências]{.section-header}
+# [2  -  DistribuiÃ§Ã£o de FrequÃªncias]{.section-header}
 
-## 2.1  -  Variáveis Qualitativas {.smaller-text}
+## 2.1  -  VariÃ¡veis Qualitativas {.smaller-text}
 
-### Método 1  -  [value_counts()](https://pandas.pydata.org/docs/reference/api/pandas.Series.value_counts.html)
+### MÃ©todo 1  -  [value_counts()](https://pandas.pydata.org/docs/reference/api/pandas.Series.value_counts.html)
 
 ```python
 frequencia = dados['Sexo'].value_counts()
@@ -157,19 +156,19 @@ percentual = dados['Sexo'].value_counts(normalize=True) * 100
 percentual
 ```
 
-### Método 2  -  [crosstab()](https://pandas.pydata.org/docs/reference/api/pandas.crosstab.html)
+### MÃ©todo 2  -  [crosstab()](https://pandas.pydata.org/docs/reference/api/pandas.crosstab.html)
 
 ```python
-pd.crosstab(dados['Sexo'], columns='Frequência')
+pd.crosstab(dados['Sexo'], columns='FrequÃªncia')
 ```
 
 ---
 
-## 2.2  -  Variáveis Quantitativas (classes personalizadas) {.smaller-text}
+## 2.2  -  VariÃ¡veis Quantitativas (classes personalizadas) {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Classificação por Salário Mínimo
+### ClassificaÃ§Ã£o por SalÃ¡rio MÃ­nimo
 
 | Classe | Faixa (SM) | Renda (R$)  |
 |--------|-----------|-------------|
@@ -177,7 +176,7 @@ pd.crosstab(dados['Sexo'], columns='Frequência')
 | **B** | 10 a 20 SM | 7.880 - 15.760 |
 | **C** | 4 a 10 SM | 3.152 - 7.880 |
 | **D** | 2 a 4 SM | 1.576 - 3.152 |
-| **E** | Até 2 SM | ≤ 1.576 |
+| **E** | AtÃ© 2 SM | â‰¤ 1.576 |
 
 *SM em 2015 = R$ 788,00*
 :::
@@ -200,7 +199,7 @@ dados['Classe'].value_counts().sort_index()
 
 ---
 
-## 2.3  -  Variáveis Quantitativas (amplitude fixa) {.smaller-text}
+## 2.3  -  VariÃ¡veis Quantitativas (amplitude fixa) {.smaller-text}
 
 ### Regra de Sturges
 
@@ -215,7 +214,7 @@ k
 ```
 
 ```python
-# Tabela de frequências com amplitude fixa
+# Tabela de frequÃªncias com amplitude fixa
 frequencias = dados['Renda'].value_counts(bins=k).sort_index()
 frequencias
 ```
@@ -231,17 +230,17 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 ax = sns.histplot(dados['Altura'], kde=True)
-ax.set(title='Distribuição da Altura', xlabel='Altura', ylabel='Frequência')
+ax.set(title='DistribuiÃ§Ã£o da Altura', xlabel='Altura', ylabel='FrequÃªncia')
 plt.show()
 ```
 
 ```python
 ax = sns.histplot(dados['Renda'], kde=True)
-ax.set(title='Distribuição da Renda', xlabel='Renda (R$)', ylabel='Frequência')
+ax.set(title='DistribuiÃ§Ã£o da Renda', xlabel='Renda (R$)', ylabel='FrequÃªncia')
 plt.show()
 ```
 
-# [3  -  Medidas de Tendência Central]{.section-header}
+# [3  -  Medidas de TendÃªncia Central]{.section-header}
 
 ## DataFrame de Exemplo {.smaller-text}
 
@@ -254,9 +253,9 @@ df_exemplo
 
 ---
 
-## 3.1  -  Média Aritmética {.smaller-text}
+## 3.1  -  MÃ©dia AritmÃ©tica {.smaller-text}
 
-Representada por $\mu$ (população) e $\bar{X}$ (amostra):
+Representada por $\mu$ (populaÃ§Ã£o) e $\bar{X}$ (amostra):
 
 $$\mu = \frac{1}{n}\sum_{i=1}^{n}X_i$$
 
@@ -282,9 +281,9 @@ dados['Idade'].mean()
 
 1. Ordenar o conjunto de dados
 2. Identificar $n$
-3. Quando $n$ ímpar: $Elemento_{Md} = \frac{n+1}{2}$
+3. Quando $n$ Ã­mpar: $Elemento_{Md} = \frac{n+1}{2}$
 4. Quando $n$ par: $Elemento_{Md} = \frac{n}{2}$
-5. Quando $n$ ímpar: $Md = X_{Elemento_{Md}}$
+5. Quando $n$ Ã­mpar: $Md = X_{Elemento_{Md}}$
 6. Quando $n$ par: $Md = \frac{X_{Elemento_{Md}} + X_{Elemento_{Md}+1}}{2}$
 :::
 
@@ -317,14 +316,14 @@ dados['Idade'].mode()
 
 ---
 
-## 3.4  -  Relação entre Média, Mediana e Moda {.smaller-text}
+## 3.4  -  RelaÃ§Ã£o entre MÃ©dia, Mediana e Moda {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Avaliando a Variável RENDA
+### Avaliando a VariÃ¡vel RENDA
 
 ```python
-print(f"Média:   {dados['Renda'].mean():.2f}")
+print(f"MÃ©dia:   {dados['Renda'].mean():.2f}")
 print(f"Mediana: {dados['Renda'].median():.2f}")
 print(f"Moda:    {dados['Renda'].mode()[0]:.2f}")
 
@@ -334,10 +333,10 @@ plt.show()
 :::
 
 ::: {.column width="50%"}
-### Avaliando a Variável ALTURA
+### Avaliando a VariÃ¡vel ALTURA
 
 ```python
-print(f"Média:   {dados['Altura'].mean():.2f}")
+print(f"MÃ©dia:   {dados['Altura'].mean():.2f}")
 print(f"Mediana: {dados['Altura'].median():.2f}")
 print(f"Moda:    {dados['Altura'].mode()[0]:.2f}")
 
@@ -375,7 +374,7 @@ dados['Renda'].quantile([0.1, 0.2, 0.3, 0.4,
 
 ## 4.2  -  Box-plot {.smaller-text}
 
-O box plot dá uma ideia de: **posição**, **dispersão**, **assimetria**, **caudas** e **outliers**.
+O box plot dÃ¡ uma ideia de: **posiÃ§Ã£o**, **dispersÃ£o**, **assimetria**, **caudas** e **outliers**.
 
 ```python
 ax = sns.boxplot(x=dados['Altura'], orient='h')
@@ -389,9 +388,9 @@ ax.set(title='Box-plot: Renda', xlabel='Renda (R$)')
 plt.show()
 ```
 
-# [5  -  Medidas de Dispersão]{.section-header}
+# [5  -  Medidas de DispersÃ£o]{.section-header}
 
-## 5.1  -  Desvio Médio Absoluto {.smaller-text}
+## 5.1  -  Desvio MÃ©dio Absoluto {.smaller-text}
 
 $$DM = \frac{1}{n}\sum_{i=1}^{n}|X_i - \bar{X}|$$
 
@@ -401,11 +400,11 @@ dados['Renda'].mad()
 
 ---
 
-## 5.2  -  Variância {.smaller-text}
+## 5.2  -  VariÃ¢ncia {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Variância Populacional
+### VariÃ¢ncia Populacional
 
 $$\sigma^2 = \frac{1}{n}\sum_{i=1}^{n}(X_i - \mu)^2$$
 
@@ -415,7 +414,7 @@ dados['Renda'].var()  # amostral (ddof=1)
 :::
 
 ::: {.column width="50%"}
-### Variância Amostral
+### VariÃ¢ncia Amostral
 
 $$S^2 = \frac{1}{n-1}\sum_{i=1}^{n}(X_i - \bar{X})^2$$
 
@@ -427,17 +426,17 @@ dados['Altura'].var()
 
 ---
 
-## 5.3  -  Desvio Padrão {.smaller-text}
+## 5.3  -  Desvio PadrÃ£o {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Desvio Padrão Populacional
+### Desvio PadrÃ£o Populacional
 
 $$\sigma = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(X_i - \mu)^2} = \sqrt{\sigma^2}$$
 :::
 
 ::: {.column width="50%"}
-### Desvio Padrão Amostral
+### Desvio PadrÃ£o Amostral
 
 $$S = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(X_i - \bar{X})^2} = \sqrt{S^2}$$
 :::

@@ -1,13 +1,11 @@
 ---
-title: "Análise da Paisagem"
-subtitle: "Extra: Bioengenharia e Controle de Erosão na Paisagem<br>Curso de Geografia"
+title: "AnÃ¡lise da Paisagem"
+subtitle: "Extra: Bioengenharia e Controle de ErosÃ£o na Paisagem<br>Curso de Geografia"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
-date: "2026"
 format:
   revealjs:
     logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise da Paisagem | Extra: Bioengenharia"
+    footer: "UEFS | AnÃ¡lise da Paisagem | Extra: Bioengenharia"
     slide-number: true
     theme: [simple, ../../../assets/uefs.scss]
     controls: true
@@ -21,190 +19,190 @@ execute:
   echo: false
 ---
 
-## Visão Geral da Aula {.smaller-text}
+## VisÃ£o Geral da Aula {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Tópicos
+### TÃ³picos
 
-- [1]{.circle} Erosão como processo paisagístico
-- [2]{.circle} Bioengenharia de solos: princípios
-- [3]{.circle} Técnicas biotécnicas aplicáveis à paisagem
-- [4]{.circle} Geossintéticos e geotêxteis naturais
-- [5]{.circle} Integração com análise da paisagem
-- [6]{.circle} Estudo de caso: restauração de encostas em bacias degradadas
+- [1]{.circle} ErosÃ£o como processo paisagÃ­stico
+- [2]{.circle} Bioengenharia de solos: princÃ­pios
+- [3]{.circle} TÃ©cnicas biotÃ©cnicas aplicÃ¡veis Ã  paisagem
+- [4]{.circle} GeossintÃ©ticos e geotÃªxteis naturais
+- [5]{.circle} IntegraÃ§Ã£o com anÃ¡lise da paisagem
+- [6]{.circle} Estudo de caso: restauraÃ§Ã£o de encostas em bacias degradadas
 :::
 
 ::: {.column width="50%"}
 ::: {.info-box}
-**Aula Extra — Complementar**
+**Aula Extra â€” Complementar**
 
-Esta aula aprofunda temas de **bioengenharia de solos e controle de erosão**, conectando-os à análise da paisagem como ferramentas de **intervenção e restauração** em áreas degradadas.
+Esta aula aprofunda temas de **bioengenharia de solos e controle de erosÃ£o**, conectando-os Ã  anÃ¡lise da paisagem como ferramentas de **intervenÃ§Ã£o e restauraÃ§Ã£o** em Ã¡reas degradadas.
 :::
 :::
 :::
 
-# [1  -  EROSÃO COMO PROCESSO PAISAGÍSTICO]{.section-header}
+# [1  -  EROSÃƒO COMO PROCESSO PAISAGÃSTICO]{.section-header}
 
-## A erosão na lógica da ecodinâmica {.smaller-text}
+## A erosÃ£o na lÃ³gica da ecodinÃ¢mica {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
-Na classificação de Tricart (1977), a erosão é o processo dominante em **meios instáveis** (morfogênese > pedogênese):
+Na classificaÃ§Ã£o de Tricart (1977), a erosÃ£o Ã© o processo dominante em **meios instÃ¡veis** (morfogÃªnese > pedogÃªnese):
 
-- **Encostas desmatadas** → perda de coesão superficial
-- **Margens de rios** → solapamento basal
-- **Estradas rurais** → concentração de fluxo
-- **Voçorocas** → retroerosão acelerada
+- **Encostas desmatadas** â†’ perda de coesÃ£o superficial
+- **Margens de rios** â†’ solapamento basal
+- **Estradas rurais** â†’ concentraÃ§Ã£o de fluxo
+- **VoÃ§orocas** â†’ retroerosÃ£o acelerada
 
-A erosão **fragmenta a paisagem** e **degrada a conectividade**:
+A erosÃ£o **fragmenta a paisagem** e **degrada a conectividade**:
 
-- Voçorocas cortam corredores ecológicos
-- Assoreamento reduz habitat aquático
+- VoÃ§orocas cortam corredores ecolÃ³gicos
+- Assoreamento reduz habitat aquÃ¡tico
 - Perda de solo diminui capacidade de suporte vegetal
 :::
 
 ::: {.column width="45%"}
-### Escalas da erosão
+### Escalas da erosÃ£o
 
-| Escala | Processo | Feição |
+| Escala | Processo | FeiÃ§Ã£o |
 |:-------|:---------|:-------|
-| Micro | Splash, erosão laminar | Crostas, selo superficial |
+| Micro | Splash, erosÃ£o laminar | Crostas, selo superficial |
 | Meso | Sulcos, ravinas | Ravinas, cabeceiras |
-| Macro | Voçorocas, movimentos de massa | Voçorocas, cicatrizes |
-| Paisagem | Degradação generalizada | Áreas desertificadas |
+| Macro | VoÃ§orocas, movimentos de massa | VoÃ§orocas, cicatrizes |
+| Paisagem | DegradaÃ§Ã£o generalizada | Ãreas desertificadas |
 
 : {.striped .hover}
 
 ::: {.callout-note}
-A bioengenharia atua prioritariamente nas escalas **meso** e **macro**, estabilizando feições erosivas e restaurando a cobertura vegetal protetora.
+A bioengenharia atua prioritariamente nas escalas **meso** e **macro**, estabilizando feiÃ§Ãµes erosivas e restaurando a cobertura vegetal protetora.
 :::
 :::
 :::
 
 # [2  -  BIOENGENHARIA DE SOLOS]{.section-header}
 
-## Princípios fundamentais {.smaller-text}
+## PrincÃ­pios fundamentais {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
-A bioengenharia de solos combina **elementos vivos** (plantas, sementes) com **materiais inertes** (madeira, pedra, geotêxteis) para estabilizar taludes e controlar erosão.
+A bioengenharia de solos combina **elementos vivos** (plantas, sementes) com **materiais inertes** (madeira, pedra, geotÃªxteis) para estabilizar taludes e controlar erosÃ£o.
 
 ### Vantagens sobre engenharia convencional
 
-| Critério | Engenharia convencional | Bioengenharia |
+| CritÃ©rio | Engenharia convencional | Bioengenharia |
 |:---------|:-----------------------:|:-------------:|
 | Custo | Alto | Moderado a baixo |
-| Durabilidade | Estrutural | Crescente (vegetação se desenvolve) |
-| Impacto visual | Alto | Baixo (integração paisagística) |
+| Durabilidade | Estrutural | Crescente (vegetaÃ§Ã£o se desenvolve) |
+| Impacto visual | Alto | Baixo (integraÃ§Ã£o paisagÃ­stica) |
 | Biodiversidade | Nula | Positiva |
-| Manutenção | Periódica | Autosustentável após estabelecimento |
-| Carbono | Emissão (concreto) | Sequestro (vegetação) |
+| ManutenÃ§Ã£o | PeriÃ³dica | AutosustentÃ¡vel apÃ³s estabelecimento |
+| Carbono | EmissÃ£o (concreto) | Sequestro (vegetaÃ§Ã£o) |
 
 : {.striped .hover}
 :::
 
 ::: {.column width="45%"}
-### Técnicas principais
+### TÃ©cnicas principais
 
-1. **Estacas vivas** → rebrote e ancoragem
-2. **Paliçadas** → retenção de sedimentos em ravinas
-3. **Hidrossemeadura** → revegetação de taludes extensos
-4. **Gabiões vivos** → contenção + vegetação
-5. **Paredes Krainer** → estrutura em madeira com preenchimento
-6. **Geotêxteis naturais** → cobertura + retenção de umidade
-7. **Fascinas vivas** → linhas de estolões em curva de nível
+1. **Estacas vivas** â†’ rebrote e ancoragem
+2. **PaliÃ§adas** â†’ retenÃ§Ã£o de sedimentos em ravinas
+3. **Hidrossemeadura** â†’ revegetaÃ§Ã£o de taludes extensos
+4. **GabiÃµes vivos** â†’ contenÃ§Ã£o + vegetaÃ§Ã£o
+5. **Paredes Krainer** â†’ estrutura em madeira com preenchimento
+6. **GeotÃªxteis naturais** â†’ cobertura + retenÃ§Ã£o de umidade
+7. **Fascinas vivas** â†’ linhas de estolÃµes em curva de nÃ­vel
 :::
 :::
 
-# [3  -  TÉCNICAS APLICÁVEIS À PAISAGEM]{.section-header}
+# [3  -  TÃ‰CNICAS APLICÃVEIS Ã€ PAISAGEM]{.section-header}
 
-## Seleção da técnica por contexto paisagístico {.smaller-text}
+## SeleÃ§Ã£o da tÃ©cnica por contexto paisagÃ­stico {.smaller-text}
 
-| Contexto paisagístico | Processo dominante | Técnica recomendada |
+| Contexto paisagÃ­stico | Processo dominante | TÃ©cnica recomendada |
 |:----------------------|:-------------------|:--------------------|
-| Encostas desmatadas > 30° | Movimento de massa raso | Estacas vivas + geotêxtil |
-| Ravinas em pastagem | Erosão concentrada | Paliçadas + revegetação |
-| Margens de rios assoreados | Erosão fluvial | Gabiões vivos + mata ciliar |
-| Taludes de estradas rurais | Erosão laminar e sulcos | Hidrossemeadura + fascinas |
-| Voçorocas ativas | Retroerosão + piping | Parede Krainer + drenagem + vegetação |
-| Áreas mineradas | Ausência de solo | Topsoil + geotêxtil + mudas pioneiras |
+| Encostas desmatadas > 30Â° | Movimento de massa raso | Estacas vivas + geotÃªxtil |
+| Ravinas em pastagem | ErosÃ£o concentrada | PaliÃ§adas + revegetaÃ§Ã£o |
+| Margens de rios assoreados | ErosÃ£o fluvial | GabiÃµes vivos + mata ciliar |
+| Taludes de estradas rurais | ErosÃ£o laminar e sulcos | Hidrossemeadura + fascinas |
+| VoÃ§orocas ativas | RetroerosÃ£o + piping | Parede Krainer + drenagem + vegetaÃ§Ã£o |
+| Ãreas mineradas | AusÃªncia de solo | Topsoil + geotÃªxtil + mudas pioneiras |
 
-: Seleção de técnicas de bioengenharia por contexto paisagístico. {.striped .hover}
+: SeleÃ§Ã£o de tÃ©cnicas de bioengenharia por contexto paisagÃ­stico. {.striped .hover}
 
 ::: {.callout-tip}
-## Integração com FRAGSTATS
-Áreas tratadas com bioengenharia podem ser monitoradas como **fragmentos em regeneração**. Ao longo do tempo, espera-se:
+## IntegraÃ§Ã£o com FRAGSTATS
+Ãreas tratadas com bioengenharia podem ser monitoradas como **fragmentos em regeneraÃ§Ã£o**. Ao longo do tempo, espera-se:
 
-- ↑ PLAND da classe "vegetação em recuperação"
-- ↓ NP se fragmentos tratados coalescem
-- ↑ COHESION se a conectividade aumenta
+- â†‘ PLAND da classe "vegetaÃ§Ã£o em recuperaÃ§Ã£o"
+- â†“ NP se fragmentos tratados coalescem
+- â†‘ COHESION se a conectividade aumenta
 :::
 
-# [4  -  GEOSSINTÉTICOS E GEOTÊXTEIS NATURAIS]{.section-header}
+# [4  -  GEOSSINTÃ‰TICOS E GEOTÃŠXTEIS NATURAIS]{.section-header}
 
-## Geotêxteis naturais: fibras vegetais {.smaller-text}
+## GeotÃªxteis naturais: fibras vegetais {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
-Geotêxteis fabricados com fibras de **taboa**, **rami**, **coco** ou **juta** oferecem:
+GeotÃªxteis fabricados com fibras de **taboa**, **rami**, **coco** ou **juta** oferecem:
 
-- **Cobertura imediata** do solo → reduz impacto da chuva
-- **Retenção de umidade** → favorece germinação
-- **Degradação gradual** → incorpora matéria orgânica
-- **Baixo custo** → matéria-prima local disponível
+- **Cobertura imediata** do solo â†’ reduz impacto da chuva
+- **RetenÃ§Ã£o de umidade** â†’ favorece germinaÃ§Ã£o
+- **DegradaÃ§Ã£o gradual** â†’ incorpora matÃ©ria orgÃ¢nica
+- **Baixo custo** â†’ matÃ©ria-prima local disponÃ­vel
 
-### Geotêxtil de taboa (*Typha*)
+### GeotÃªxtil de taboa (*Typha*)
 
 - Fibras longas e resistentes
-- Abundante em áreas úmidas do semiárido
+- Abundante em Ã¡reas Ãºmidas do semiÃ¡rido
 - Pode ser produzido artesanalmente por comunidades locais
-- Patente registrada (UEFS) para processo de fabricação
+- Patente registrada (UEFS) para processo de fabricaÃ§Ã£o
 :::
 
 ::: {.column width="45%"}
 ### Geocompostos
 
-Combinação de geotêxtil natural com:
+CombinaÃ§Ã£o de geotÃªxtil natural com:
 
-- **Biopolímero (SAP)** → hidrorretentores de água
-- **Sementes nativas** → revegetação integrada
-- **Nutrientes** → fertilização inicial
+- **BiopolÃ­mero (SAP)** â†’ hidrorretentores de Ã¡gua
+- **Sementes nativas** â†’ revegetaÃ§Ã£o integrada
+- **Nutrientes** â†’ fertilizaÃ§Ã£o inicial
 
-O geocomposto funciona como um **kit de restauração** portátil, especialmente útil em regiões semiáridas onde a disponibilidade hídrica limita o estabelecimento vegetal.
+O geocomposto funciona como um **kit de restauraÃ§Ã£o** portÃ¡til, especialmente Ãºtil em regiÃµes semiÃ¡ridas onde a disponibilidade hÃ­drica limita o estabelecimento vegetal.
 
 ::: {.callout-note}
-Esses materiais são pesquisa ativa no Laboratório de Bioengenharia (UEFS), com aplicações publicadas em periódicos nacionais e internacionais.
+Esses materiais sÃ£o pesquisa ativa no LaboratÃ³rio de Bioengenharia (UEFS), com aplicaÃ§Ãµes publicadas em periÃ³dicos nacionais e internacionais.
 :::
 :::
 :::
 
-# [5  -  INTEGRAÇÃO COM ANÁLISE DA PAISAGEM]{.section-header}
+# [5  -  INTEGRAÃ‡ÃƒO COM ANÃLISE DA PAISAGEM]{.section-header}
 
-## A bioengenharia como ferramenta de restauração paisagística {.smaller-text}
+## A bioengenharia como ferramenta de restauraÃ§Ã£o paisagÃ­stica {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Quando a análise da paisagem indica necessidade de intervenção:
+### Quando a anÃ¡lise da paisagem indica necessidade de intervenÃ§Ã£o:
 
-1. **PLAND de vegetação nativa < 30%** → fragmentação crítica → restaurar
-2. **COHESION baixo** → fragmentos isolados → criar corredores
-3. **APP em conflito** → uso irregular → revegetar com bioengenharia
-4. **Encostas instáveis** → risco de erosão → estabilizar com técnicas vivas
-5. **RL deficitária** → obrigação legal → plantar com espécies nativas
+1. **PLAND de vegetaÃ§Ã£o nativa < 30%** â†’ fragmentaÃ§Ã£o crÃ­tica â†’ restaurar
+2. **COHESION baixo** â†’ fragmentos isolados â†’ criar corredores
+3. **APP em conflito** â†’ uso irregular â†’ revegetar com bioengenharia
+4. **Encostas instÃ¡veis** â†’ risco de erosÃ£o â†’ estabilizar com tÃ©cnicas vivas
+5. **RL deficitÃ¡ria** â†’ obrigaÃ§Ã£o legal â†’ plantar com espÃ©cies nativas
 
-### Priorização espacial
+### PriorizaÃ§Ã£o espacial
 
-A análise de paisagem fornece critérios espaciais para alocar intervenções:
+A anÃ¡lise de paisagem fornece critÃ©rios espaciais para alocar intervenÃ§Ãµes:
 
-- Priorizar áreas de **maior déficit** de conectividade
-- Tratar ravinas que **cortam corredores** ecológicos
+- Priorizar Ã¡reas de **maior dÃ©ficit** de conectividade
+- Tratar ravinas que **cortam corredores** ecolÃ³gicos
 - Restaurar APPs que **conectam** fragmentos remanescentes
 :::
 
 ::: {.column width="50%"}
 ```{dot}
-//| fig-cap: "Fluxo de decisão: diagnóstico paisagístico → intervenção por bioengenharia."
+//| fig-cap: "Fluxo de decisÃ£o: diagnÃ³stico paisagÃ­stico â†’ intervenÃ§Ã£o por bioengenharia."
 //| fig-width: 5
 digraph {
     rankdir=TB
@@ -212,18 +210,18 @@ digraph {
     node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=8, margin="0.15,0.08", penwidth=0.8]
     edge [color="#555555", penwidth=1.0]
 
-    DIAG [label="Diagnóstico\nPaisagístico", fillcolor="#E3F2FD", color="#1565C0"]
-    FRAG [label="Fragmentação\ncrítica?", fillcolor="#FFF9C4", color="#F57F17", shape=diamond]
-    EROS [label="Erosão ativa\nem corredor?", fillcolor="#FFF9C4", color="#F57F17", shape=diamond]
-    BIO [label="Bioengenharia\nIntervenção", fillcolor="#C8E6C9", color="#2E7D32"]
-    REST [label="Restauração\npassiva", fillcolor="#E1BEE7", color="#6A1B9A"]
+    DIAG [label="DiagnÃ³stico\nPaisagÃ­stico", fillcolor="#E3F2FD", color="#1565C0"]
+    FRAG [label="FragmentaÃ§Ã£o\ncrÃ­tica?", fillcolor="#FFF9C4", color="#F57F17", shape=diamond]
+    EROS [label="ErosÃ£o ativa\nem corredor?", fillcolor="#FFF9C4", color="#F57F17", shape=diamond]
+    BIO [label="Bioengenharia\nIntervenÃ§Ã£o", fillcolor="#C8E6C9", color="#2E7D32"]
+    REST [label="RestauraÃ§Ã£o\npassiva", fillcolor="#E1BEE7", color="#6A1B9A"]
     MON [label="Monitoramento\n(FRAGSTATS + drone)", fillcolor="#FFE0B2", color="#E65100"]
 
     DIAG -> FRAG
     FRAG -> EROS [label="sim"]
-    FRAG -> REST [label="não"]
+    FRAG -> REST [label="nÃ£o"]
     EROS -> BIO [label="sim"]
-    EROS -> REST [label="não"]
+    EROS -> REST [label="nÃ£o"]
     BIO -> MON
     REST -> MON
 }
@@ -231,20 +229,20 @@ digraph {
 :::
 :::
 
-# [6  -  SÍNTESE]{.section-header}
+# [6  -  SÃNTESE]{.section-header}
 
-## Conexão com a Disciplina {.smaller-text}
+## ConexÃ£o com a Disciplina {.smaller-text}
 
 | Tema | Aulas conectadas |
 |:-----|:-----------------|
-| Erosão e ecodinâmica | → Zoneamento Geoecológico (Tricart), Geomorfologia (Aula 06) |
-| Restauração de APP | → Legislação Ambiental, Cartografia Temática (Aula 07) |
-| Monitoramento | → FRAGSTATS (Aula 18), Sensoriamento Remoto Avançado |
-| Priorização | → Diagnóstico Paisagístico (Aula 20), Unidades de Paisagem (Aula 19) |
+| ErosÃ£o e ecodinÃ¢mica | â†’ Zoneamento GeoecolÃ³gico (Tricart), Geomorfologia (Aula 06) |
+| RestauraÃ§Ã£o de APP | â†’ LegislaÃ§Ã£o Ambiental, Cartografia TemÃ¡tica (Aula 07) |
+| Monitoramento | â†’ FRAGSTATS (Aula 18), Sensoriamento Remoto AvanÃ§ado |
+| PriorizaÃ§Ã£o | â†’ DiagnÃ³stico PaisagÃ­stico (Aula 20), Unidades de Paisagem (Aula 19) |
 
 ## Leituras Recomendadas
 
 - **GRAY, D. H.; SOTIR, R. B.** (1996). *Biotechnical and Soil Bioengineering Slope Stabilization*. Wiley.
-- **SANTOS, L. D. V.** et al. Publicações sobre geotêxteis e bioengenharia — ver página de publicações do curso.
+- **SANTOS, L. D. V.** et al. PublicaÃ§Ãµes sobre geotÃªxteis e bioengenharia â€” ver pÃ¡gina de publicaÃ§Ãµes do curso.
 - **MORGAN, R. P. C.** (2005). *Soil Erosion and Conservation*. 3rd ed. Blackwell.
 - **STOKES, A. et al.** (2014). *Slope stability and erosion control: ecotechnological solutions*. Springer.

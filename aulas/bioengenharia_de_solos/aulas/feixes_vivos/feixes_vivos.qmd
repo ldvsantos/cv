@@ -2,8 +2,6 @@
 title: "Feixes Vivos e Drenos Verdes"
 subtitle: "Técnicas de Bioengenharia para Estabilização de Margens e Encostas <br> Bioengenharia de Solos"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
-date: "2026-03-25"
 format:
   revealjs:
     logo: ../../../assets/logo-uefs.webp
@@ -122,7 +120,7 @@ graph TB
     style B fill:#4CAF50,color:#fff
     style C fill:#8BC34A,color:#000
     style D fill:#4FC3F7,color:#000
-    style E fill:#034EA2,color:#fff
+    style E fill:#2135A6,color:#fff
 ```
 
 ::: {.highlight-box}
@@ -372,11 +370,11 @@ graph LR
     B["🕳️ Barraginhas<br>Captação/infiltração"] -->|"Retém<br>água"| D
     C["🌱 Feixes vivos<br>Drenagem + raízes"] -->|"Drena +<br>enraíza"| D
     E["🏗️ Muro suporte<br>Contenção estrutural"] -->|"Estabiliza<br>base"| D
-    style A fill:#FDB913,color:#000
-    style B fill:#034EA2,color:#fff
+    style A fill:#586BA6,color:#000
+    style B fill:#2135A6,color:#fff
     style C fill:#2E7D32,color:#fff
     style E fill:#8B4513,color:#fff
-    style D fill:#ED1C24,color:#fff
+    style D fill:#27368C,color:#fff
 ```
 
 ::: {.highlight-box}
@@ -478,9 +476,9 @@ graph TD
     D --> E["5. Prensagem a frio<br>forma tipo U (24h)"]
     E --> F["6. Cura da resina<br>sem aplicação de calor"]
     F --> G["7. Dreno verde<br>pronto"]
-    style A fill:#FDB913,color:#000
-    style D fill:#034EA2,color:#fff
-    style E fill:#ED1C24,color:#fff
+    style A fill:#586BA6,color:#000
+    style D fill:#2135A6,color:#fff
+    style E fill:#27368C,color:#fff
     style G fill:#2E7D32,color:#fff
 ```
 
@@ -520,7 +518,7 @@ graph LR
     style A fill:#8B4513,color:#fff
     style B fill:#4FC3F7,color:#000
     style C fill:#2E7D32,color:#fff
-    style D fill:#FDB913,color:#000
+    style D fill:#586BA6,color:#000
 ```
 
 :::
@@ -540,7 +538,7 @@ graph TD
     style A fill:#4FC3F7,color:#000
     style B fill:#8B4513,color:#fff
     style D fill:#2E7D32,color:#fff
-    style E fill:#FDB913,color:#000
+    style E fill:#586BA6,color:#000
 ```
 
 :::
@@ -603,8 +601,8 @@ graph TD
     F --> H
     style A fill:#4FC3F7,color:#000
     style C fill:#2E7D32,color:#fff
-    style D fill:#034EA2,color:#fff
-    style G fill:#FDB913,color:#000
+    style D fill:#2135A6,color:#fff
+    style G fill:#586BA6,color:#000
     style H fill:#8B4513,color:#fff
 ```
 
@@ -768,9 +766,9 @@ graph TD
     E --> F["Inserção nos<br>drenos verdes"]
     F --> G["Monitoramento do<br>enraizamento"]
     style A fill:#2E7D32,color:#fff
-    style C fill:#FDB913,color:#000
-    style F fill:#034EA2,color:#fff
-    style G fill:#ED1C24,color:#fff
+    style C fill:#586BA6,color:#000
+    style F fill:#2135A6,color:#fff
+    style G fill:#27368C,color:#fff
 ```
 
 :::
@@ -878,10 +876,10 @@ graph TD
     E --> H["Avaliação<br>do 1º ao 40º dia"]
     F --> H
     G --> H
-    style A fill:#034EA2,color:#fff
-    style B fill:#FDB913,color:#000
+    style A fill:#2135A6,color:#fff
+    style B fill:#586BA6,color:#000
     style C fill:#2E7D32,color:#fff
-    style D fill:#ED1C24,color:#fff
+    style D fill:#27368C,color:#fff
 ```
 
 :::
@@ -929,8 +927,8 @@ graph TD
     C --> D
     D --> E["Estabilização<br>efetiva da encosta"]
     style A fill:#2E7D32,color:#fff
-    style D fill:#FDB913,color:#000
-    style E fill:#034EA2,color:#fff
+    style D fill:#586BA6,color:#000
+    style E fill:#2135A6,color:#fff
 ```
 
 ::: {.highlight-box}
@@ -1120,11 +1118,11 @@ graph TD
     E --> F
     F --> G["Estabilização<br>de encostas"]
     F --> H["Restauração<br>ecológica"]
-    style A fill:#034EA2,color:#fff
+    style A fill:#2135A6,color:#fff
     style B fill:#8B4513,color:#fff
     style C fill:#2E7D32,color:#fff
-    style D fill:#FDB913,color:#000
-    style G fill:#ED1C24,color:#fff
+    style D fill:#586BA6,color:#000
+    style G fill:#27368C,color:#fff
     style H fill:#2E7D32,color:#fff
 ```
 

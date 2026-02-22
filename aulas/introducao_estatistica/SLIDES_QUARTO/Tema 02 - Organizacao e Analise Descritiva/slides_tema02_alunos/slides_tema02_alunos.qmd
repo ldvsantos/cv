@@ -1,13 +1,12 @@
 ---
-title: "Organização e Análise Descritiva de Dados"
-subtitle: "Aula V  -  Versão Alunos"
+title: "OrganizaÃ§Ã£o e AnÃ¡lise Descritiva de Dados"
+subtitle: "Aula V  -  VersÃ£o Alunos"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
-footer: "UEFS  -  Introdução à Estatística | Tema 2  -  Organização e Análise Descritiva (Alunos)"
+footer: "UEFS  -  IntroduÃ§Ã£o Ã  EstatÃ­stica | Tema 2  -  OrganizaÃ§Ã£o e AnÃ¡lise Descritiva (Alunos)"
 format: 
   revealjs:
     logo: ../../../../assets/logo-uefs.webp
-    footer: "UEFS  -  Introdução à Estatística | Tema 2  -  Organização e Análise Descritiva (Alunos)"
+    footer: "UEFS  -  IntroduÃ§Ã£o Ã  EstatÃ­stica | Tema 2  -  OrganizaÃ§Ã£o e AnÃ¡lise Descritiva (Alunos)"
     slide-number: true
     theme: [simple, ../../../../assets/uefs.scss]
     controls: true
@@ -22,23 +21,23 @@ execute:
   eval: false
 ---
 
-# [I. Introdução]{.section-header}
+# [I. IntroduÃ§Ã£o]{.section-header}
 
 ## 3.1  -  Normas para Tabelas {.smaller-text}
 
-Uma tabela compõe-se de:
+Uma tabela compÃµe-se de:
 
 ::: {.columns}
 ::: {.column width="50%"}
-- **Corpo**  -  conjunto de linhas e colunas com informações sobre a variável
-- **Cabeçalho**  -  parte superior, especifica o conteúdo das colunas
-- **Coluna indicadora**  -  especifica o conteúdo das linhas
+- **Corpo**  -  conjunto de linhas e colunas com informaÃ§Ãµes sobre a variÃ¡vel
+- **CabeÃ§alho**  -  parte superior, especifica o conteÃºdo das colunas
+- **Coluna indicadora**  -  especifica o conteÃºdo das linhas
 :::
 
 ::: {.column width="50%"}
-- **Linhas**  -  retas imaginárias que facilitam a leitura horizontal
-- **Casa ou célula**  -  espaço destinado a um só número
-- **Título**  -  Conjunto de informações respondendo: O quê? Quando? Onde?
+- **Linhas**  -  retas imaginÃ¡rias que facilitam a leitura horizontal
+- **Casa ou cÃ©lula**  -  espaÃ§o destinado a um sÃ³ nÃºmero
+- **TÃ­tulo**  -  Conjunto de informaÃ§Ãµes respondendo: O quÃª? Quando? Onde?
 :::
 :::
 
@@ -50,40 +49,40 @@ Uma tabela compõe-se de:
 ::: {.column width="50%"}
 ### IBGE
 
-| Símbolo | Significado |
+| SÃ­mbolo | Significado |
 |---------|-------------|
-| ** - ** | Valor é zero |
-| **…** | Não temos dados |
-| **?** | Dúvida à exatidão |
+| ** - ** | Valor Ã© zero |
+| **â€¦** | NÃ£o temos dados |
+| **?** | DÃºvida Ã  exatidÃ£o |
 | **0** | Valor muito pequeno |
 :::
 
 ::: {.column width="50%"}
-### APA (7ª edição)
+### APA (7Âª ediÃ§Ã£o)
 
-- **Valor zero** → 0
-- **Dado indisponível** → NA
-- **Valor duvidoso** → (?)
-- **Valores muito pequenos** → notação científica
+- **Valor zero** â†’ 0
+- **Dado indisponÃ­vel** â†’ NA
+- **Valor duvidoso** â†’ (?)
+- **Valores muito pequenos** â†’ notaÃ§Ã£o cientÃ­fica
 
 ::: {.highlight-box}
-Na APA, **nunca** deixar células vazias!
+Na APA, **nunca** deixar cÃ©lulas vazias!
 :::
 :::
 :::
 
-# [3.2  -  Séries Estatísticas]{.section-header}
+# [3.2  -  SÃ©ries EstatÃ­sticas]{.section-header}
 
-## Tipos de Séries Estatísticas {.smaller-text}
+## Tipos de SÃ©ries EstatÃ­sticas {.smaller-text}
 
-1. **Histórica**  -  elemento variável: época/tempo
-2. **Geográfica**  -  elemento variável: localidade
-3. **Específica**  -  elemento variável: modalidade
-4. **Mista**  -  combinação de tipos
+1. **HistÃ³rica**  -  elemento variÃ¡vel: Ã©poca/tempo
+2. **GeogrÃ¡fica**  -  elemento variÃ¡vel: localidade
+3. **EspecÃ­fica**  -  elemento variÃ¡vel: modalidade
+4. **Mista**  -  combinaÃ§Ã£o de tipos
 
 ---
 
-## Exemplos de Séries {.smaller-text}
+## Exemplos de SÃ©ries {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -98,9 +97,9 @@ Na APA, **nunca** deixar células vazias!
 :::
 
 ::: {.column width="50%"}
-### Geográfica
+### GeogrÃ¡fica
 
-| Região | Pop. Urbana (%) |
+| RegiÃ£o | Pop. Urbana (%) |
 |--------|----------------|
 | Norte | 54,8 |
 | Nordeste | 57,2 |
@@ -112,18 +111,18 @@ Na APA, **nunca** deixar células vazias!
 
 ---
 
-## Exercício {.smaller-text}
+## ExercÃ­cio {.smaller-text}
 
-Pesquisar exemplos de séries estatísticas:
+Pesquisar exemplos de sÃ©ries estatÃ­sticas:
 
-a) **Histórica**
-b) **Geográfica**
-c) **Específica**
+a) **HistÃ³rica**
+b) **GeogrÃ¡fica**
+c) **EspecÃ­fica**
 d) **Mista**
 
 ```{r}
 #| eval: false
-# Sua resolução aqui
+# Sua resoluÃ§Ã£o aqui
 
 ```
 

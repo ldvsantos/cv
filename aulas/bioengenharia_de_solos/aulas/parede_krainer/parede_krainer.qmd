@@ -2,8 +2,6 @@
 title: "Parede Krainer (Log-Crib Wall)"
 subtitle: "Contenção de Encostas com Troncos e Vegetação <br> Bioengenharia de Solos"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
-date: "2026-05-06"
 format:
   revealjs:
     logo: ../../../assets/logo-uefs.webp
@@ -301,7 +299,7 @@ graph TD
     B["Opção 2<br>Eucalipto/Pinus<br>tratado CCA/CCB"] --> D
     C["Opção 3<br>Queima superficial<br>(carbonização)"] --> D
     style A fill:#2E7D32,color:#fff
-    style B fill:#FDB913,color:#000
+    style B fill:#586BA6,color:#000
     style C fill:#8B4513,color:#fff
 ```
 
@@ -413,10 +411,10 @@ graph TD
     A["Topo<br>(mais estreito)"] --> B["Corpo<br>(grelha de troncos<br>+ solo + plantas)"]
     B --> C["Base<br>(mais larga)"]
     C --> D["Fundação<br>(enterrada 30-50 cm)"]
-    style A fill:#034EA2,color:#fff
+    style A fill:#2135A6,color:#fff
     style B fill:#8B4513,color:#fff
-    style C fill:#FDB913,color:#000
-    style D fill:#ED1C24,color:#fff
+    style C fill:#586BA6,color:#000
+    style D fill:#27368C,color:#fff
 ```
 
 ::: {.highlight-box}
@@ -688,8 +686,8 @@ graph TD
     B --> C["Riprap<br>Pedras angulares<br>bem-graduadas"]
     C --> D["Superfície final<br>nivelada e interlocked"]
     style A fill:#8B4513,color:#fff
-    style B fill:#FDB913,color:#000
-    style C fill:#034EA2,color:#fff
+    style B fill:#586BA6,color:#000
+    style C fill:#2135A6,color:#fff
     style D fill:#2E7D32,color:#fff
 ```
 
@@ -725,10 +723,10 @@ graph TD
     C --> D["4. Intertravamento<br>Pedras grandes + médias<br>+ pequenas nos vazios"]
     D --> E["5. Nivelamento final<br>Superfície uniforme<br>≥ 80% da espessura"]
     E --> F["6. Inspeção<br>Verificar cobertura<br>e integridade"]
-    style A fill:#034EA2,color:#fff
-    style B fill:#FDB913,color:#000
+    style A fill:#2135A6,color:#fff
+    style B fill:#586BA6,color:#000
     style C fill:#8B4513,color:#fff
-    style D fill:#ED1C24,color:#fff
+    style D fill:#27368C,color:#fff
     style F fill:#2E7D32,color:#fff
 ```
 
@@ -831,9 +829,9 @@ graph TD
     E --> F["6. Inserção de estacas vivas<br>+ plantio de mudas"]
     F --> G["7. Repetir camadas<br>com recuo (frutamento)"]
     G --> H["8. Coroamento + semeadura<br>da face"]
-    style A fill:#034EA2,color:#fff
+    style A fill:#2135A6,color:#fff
     style C fill:#8B4513,color:#fff
-    style E fill:#FDB913,color:#000
+    style E fill:#586BA6,color:#000
     style F fill:#2E7D32,color:#fff
     style H fill:#2E7D32,color:#fff
 ```
@@ -919,13 +917,13 @@ graph TD
     J["Riprap<br>Enrocamento"] --> K["Proteção<br>mecânica"]
     K --> L["Riprap vegetado<br>NbS integrada"]
     L --> I
-    style J fill:#034EA2,color:#fff
-    style K fill:#ED1C24,color:#fff
+    style J fill:#2135A6,color:#fff
+    style K fill:#27368C,color:#fff
     style L fill:#4CAF50,color:#fff
     style A fill:#8B4513,color:#fff
     style C fill:#2E7D32,color:#fff
-    style E fill:#034EA2,color:#fff
-    style H fill:#FDB913,color:#000
+    style E fill:#2135A6,color:#fff
+    style H fill:#586BA6,color:#000
     style I fill:#2E7D32,color:#fff
 ```
 :::

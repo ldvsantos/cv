@@ -2,8 +2,6 @@
 title: "Biomantas e Geossintéticos Biodegradáveis"
 subtitle: "Proteção de Superfície e Controle de Erosão Laminar <br> Bioengenharia de Solos"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
-date: "2026-04-08"
 format:
   revealjs:
     logo: ../../../assets/logo-uefs.webp
@@ -87,8 +85,8 @@ graph TD
     F --> G["Germinação sob<br>a manta"]
     G --> H["Vegetação<br>permanente"]
     style A fill:#4FC3F7,color:#000
-    style B fill:#ED1C24,color:#fff
-    style D fill:#ED1C24,color:#fff
+    style B fill:#27368C,color:#fff
+    style D fill:#27368C,color:#fff
     style E fill:#2E7D32,color:#fff
     style H fill:#2E7D32,color:#fff
 ```
@@ -201,8 +199,8 @@ graph TD
     D -->|"Não"| F["Geotêxtil<br>não tecido"]
     C --> G["Fibra: coco, palha<br>juta, sisal"]
     style C fill:#2E7D32,color:#fff
-    style E fill:#034EA2,color:#fff
-    style F fill:#FDB913,color:#000
+    style E fill:#2135A6,color:#fff
+    style F fill:#586BA6,color:#000
 ```
 
 ### Comparativo funcional
@@ -290,11 +288,11 @@ graph TD
     B["Núcleo de fibras<br>(coco, palha, juta)"] --> D
     C["Rede inferior<br>(malha de suporte)"] --> D
     D --> E["Grampos metálicos<br>(fixação ao solo)"]
-    style A fill:#034EA2,color:#fff
+    style A fill:#2135A6,color:#fff
     style B fill:#8B4513,color:#fff
-    style C fill:#034EA2,color:#fff
+    style C fill:#2135A6,color:#fff
     style D fill:#2E7D32,color:#fff
-    style E fill:#FDB913,color:#000
+    style E fill:#586BA6,color:#000
 ```
 
 ### Configurações disponíveis
@@ -402,9 +400,9 @@ graph TD
     B -->|"1V:2H a 1V:1H<br>(27°-45°)"| E["Biomanta de coco<br>dupla rede<br>(500-700 g/m²)"]
     B -->|"> 1V:1H<br>(> 45°)"| F["Biomanta reforçada<br>+ grampeamento<br>(700-1000 g/m²)"]
     style C fill:#2E7D32,color:#fff
-    style D fill:#FDB913,color:#000
-    style E fill:#034EA2,color:#fff
-    style F fill:#ED1C24,color:#fff
+    style D fill:#586BA6,color:#000
+    style E fill:#2135A6,color:#fff
+    style F fill:#27368C,color:#fff
 ```
 
 :::
@@ -481,9 +479,9 @@ graph TD
     C --> D["Aderência ao solo<br>sem bolsas de ar"]
     D --> E["Grampeamento<br>1-2 grampos/m²"]
     E --> F["Trincheira inferior<br>ancoragem de pé"]
-    style A fill:#034EA2,color:#fff
+    style A fill:#2135A6,color:#fff
     style C fill:#2E7D32,color:#fff
-    style E fill:#FDB913,color:#000
+    style E fill:#586BA6,color:#000
     style F fill:#8B4513,color:#fff
 ```
 
@@ -530,7 +528,7 @@ graph LR
     B --> C["Dia 180<br>40% manta<br>85% vegetação"]
     C --> D["Dia 365<br>0% manta<br>100% vegetação"]
     style A fill:#8B4513,color:#fff
-    style B fill:#FDB913,color:#000
+    style B fill:#586BA6,color:#000
     style C fill:#2E7D32,color:#fff
     style D fill:#2E7D32,color:#fff
 ```
@@ -602,8 +600,8 @@ graph TD
     H --> I
     style A fill:#8B4513,color:#fff
     style B fill:#2E7D32,color:#fff
-    style D fill:#034EA2,color:#fff
-    style F fill:#FDB913,color:#000
+    style D fill:#2135A6,color:#fff
+    style F fill:#586BA6,color:#000
     style I fill:#2E7D32,color:#fff
 ```
 :::

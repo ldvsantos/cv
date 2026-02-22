@@ -1,13 +1,12 @@
 ---
-title: "Introdução à Estatística"
-subtitle: "Aulas I a IV  -  Versão Alunos"
+title: "IntroduÃ§Ã£o Ã  EstatÃ­stica"
+subtitle: "Aulas I a IV  -  VersÃ£o Alunos"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
-footer: "UEFS  -  Introdução à Estatística | Tema 1  -  Conceitos Fundamentais (Alunos)"
+footer: "UEFS  -  IntroduÃ§Ã£o Ã  EstatÃ­stica | Tema 1  -  Conceitos Fundamentais (Alunos)"
 format: 
   revealjs:
     logo: ../../../../assets/logo-uefs.webp
-    footer: "UEFS  -  Introdução à Estatística | Tema 1  -  Conceitos Fundamentais (Alunos)"
+    footer: "UEFS  -  IntroduÃ§Ã£o Ã  EstatÃ­stica | Tema 1  -  Conceitos Fundamentais (Alunos)"
     slide-number: true
     theme: [simple, ../../../../assets/uefs.scss]
     controls: true
@@ -24,24 +23,24 @@ execute:
   eval: false
 ---
 
-# [I. Introdução]{.section-header}
+# [I. IntroduÃ§Ã£o]{.section-header}
 
 ## 1.1  -  Etimologia {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Definição
+### DefiniÃ§Ã£o
 
-- Inferência estatística refere-se aos resultados derivados da **análise estatística** dos dados coletados
-- A inferência estatística advém de uma relação entre a **teoria estatística** e os **dados reais**
-- A palavra **ESTATÍSTICA** vem de *STATUS* (latim = estudo), criada pelo acadêmico alemão **Gottfried Achenwall** em meados do século XVIII
+- InferÃªncia estatÃ­stica refere-se aos resultados derivados da **anÃ¡lise estatÃ­stica** dos dados coletados
+- A inferÃªncia estatÃ­stica advÃ©m de uma relaÃ§Ã£o entre a **teoria estatÃ­stica** e os **dados reais**
+- A palavra **ESTATÃSTICA** vem de *STATUS* (latim = estudo), criada pelo acadÃªmico alemÃ£o **Gottfried Achenwall** em meados do sÃ©culo XVIII
 :::
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
 **Conceito Central**
 
-A Estatística é uma ciência que oferece uma **coleção de métodos** para:
+A EstatÃ­stica Ã© uma ciÃªncia que oferece uma **coleÃ§Ã£o de mÃ©todos** para:
 
 - Planejar experimentos e levantamentos
 - Obter dados
@@ -54,16 +53,16 @@ A Estatística é uma ciência que oferece uma **coleção de métodos** para:
 
 ---
 
-## 1.2  -  Processos Estatísticos em Pesquisas {.smaller-text}
+## 1.2  -  Processos EstatÃ­sticos em Pesquisas {.smaller-text}
 
-Quando solicitados a investigar um fenômeno coletivo, podemos optar por:
+Quando solicitados a investigar um fenÃ´meno coletivo, podemos optar por:
 
 ::: {.columns}
 ::: {.column width="50%"}
 ::: {.info-box}
 **Censo**
 
-Estudo de **todos** os componentes de uma população
+Estudo de **todos** os componentes de uma populaÃ§Ã£o
 :::
 :::
 
@@ -71,7 +70,7 @@ Estudo de **todos** os componentes de uma população
 ::: {.highlight-box}
 **Amostragem**
 
-Estudo de **alguns** elementos de uma população cujo objetivo é fazer **inferência** sobre a população
+Estudo de **alguns** elementos de uma populaÃ§Ã£o cujo objetivo Ã© fazer **inferÃªncia** sobre a populaÃ§Ã£o
 :::
 :::
 :::
@@ -82,26 +81,26 @@ Estudo de **alguns** elementos de uma população cujo objetivo é fazer **infer
 
 ::: {.columns}
 ::: {.column width="50%"}
-### 1. Amostragem Não-Probabilística
+### 1. Amostragem NÃ£o-ProbabilÃ­stica
 
-Escolha dos elementos depende dos **critérios e julgamento** do pesquisador.
+Escolha dos elementos depende dos **critÃ©rios e julgamento** do pesquisador.
 
 **Exemplos:**
 
-- Amostragem por conveniência
+- Amostragem por conveniÃªncia
 - Amostragem intencional
 - Amostragem por cotas
 :::
 
 ::: {.column width="50%"}
-### 2. Amostragem Probabilística
+### 2. Amostragem ProbabilÃ­stica
 
-Escolha dos elementos é **aleatória**. Cada elemento tem probabilidade conhecida.
+Escolha dos elementos Ã© **aleatÃ³ria**. Cada elemento tem probabilidade conhecida.
 
 **Exemplos:**
 
-- Amostragem Aleatória Simples (AAS)
-- Amostragem Sistemática (AS)
+- Amostragem AleatÃ³ria Simples (AAS)
+- Amostragem SistemÃ¡tica (AS)
 - Amostragem Estratificada (AE)
 - Amostragem por Conglomerados (AC)
 :::
@@ -109,86 +108,86 @@ Escolha dos elementos é **aleatória**. Cada elemento tem probabilidade conheci
 
 ---
 
-## Ramos da Estatística {.smaller-text}
+## Ramos da EstatÃ­stica {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
 ::: {.info-box}
-**Estatística Descritiva**
+**EstatÃ­stica Descritiva**
 
-Trata da **organização**, **resumo** e **apresentação** dos dados.
+Trata da **organizaÃ§Ã£o**, **resumo** e **apresentaÃ§Ã£o** dos dados.
 :::
 :::
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**Estatística Inferencial**
+**EstatÃ­stica Inferencial**
 
-Trata de tirar **conclusões sobre uma população** a partir de uma amostra.
+Trata de tirar **conclusÃµes sobre uma populaÃ§Ã£o** a partir de uma amostra.
 
-A ferramenta básica é a **probabilidade**, que permite avaliar e controlar o tamanho do erro.
+A ferramenta bÃ¡sica Ã© a **probabilidade**, que permite avaliar e controlar o tamanho do erro.
 :::
 :::
 :::
 
 ---
 
-## 1.3  -  Conjunto de Dados, População e Amostra {.smaller-text}
+## 1.3  -  Conjunto de Dados, PopulaÃ§Ã£o e Amostra {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="60%"}
 ### Conjunto de dados
 
-Coleção de observações onde cada **coluna** representa uma variável e cada **linha** uma unidade de análise.
+ColeÃ§Ã£o de observaÃ§Ãµes onde cada **coluna** representa uma variÃ¡vel e cada **linha** uma unidade de anÃ¡lise.
 
-### População
+### PopulaÃ§Ã£o
 
-Conjunto **completo** de elementos que compartilham uma característica.
+Conjunto **completo** de elementos que compartilham uma caracterÃ­stica.
 
 ### Amostra
 
-**Subconjunto** da população selecionado para representar o todo.
+**Subconjunto** da populaÃ§Ã£o selecionado para representar o todo.
 :::
 
 ::: {.column width="40%"}
 ::: {.info-box}
-**Definição**
+**DefiniÃ§Ã£o**
 
-Inferência estatística advém de uma relação entre a **teoria estatística** e os **dados reais**
+InferÃªncia estatÃ­stica advÃ©m de uma relaÃ§Ã£o entre a **teoria estatÃ­stica** e os **dados reais**
 :::
 :::
 :::
 
 ---
 
-## Exercício 1 {.smaller-text}
+## ExercÃ­cio 1 {.smaller-text}
 
-**Identifique a população e a amostra para os casos a seguir:**
+**Identifique a populaÃ§Ã£o e a amostra para os casos a seguir:**
 
-**a)** Em uma pesquisa recente, foi perguntado a **1.708 adultos** se eles consideram o aquecimento global um problema que exige ação imediata do governo. **939** deles responderam que sim.
+**a)** Em uma pesquisa recente, foi perguntado a **1.708 adultos** se eles consideram o aquecimento global um problema que exige aÃ§Ã£o imediata do governo. **939** deles responderam que sim.
 
-**b)** Uma pesquisa conduzida entre **1.071 homens e mulheres** pela Corporação Internacional de Pesquisa de Opinião descobriu que **76% das mulheres** e **60% dos homens** haviam passado por exames físicos em 2013.
+**b)** Uma pesquisa conduzida entre **1.071 homens e mulheres** pela CorporaÃ§Ã£o Internacional de Pesquisa de OpiniÃ£o descobriu que **76% das mulheres** e **60% dos homens** haviam passado por exames fÃ­sicos em 2013.
 
-# [1.4  -  Tipos de Variáveis]{.section-header}
+# [1.4  -  Tipos de VariÃ¡veis]{.section-header}
 
-## Variáveis Nominais e Ordinais {.smaller-text}
+## VariÃ¡veis Nominais e Ordinais {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
 ### Nominais
 
-- Variável totalmente **qualitativa**
+- VariÃ¡vel totalmente **qualitativa**
 - Valores apenas **diferenciam categorias**
-- Sem relação entre as categorias
-- Ex: nacionalidade, religião, estado civil
+- Sem relaÃ§Ã£o entre as categorias
+- Ex: nacionalidade, religiÃ£o, estado civil
 :::
 
 ::: {.column width="50%"}
 ### Ordinais
 
 - Estabelece **ordem ou hierarquia**
-- Intervalo entre categorias **não é regular**
-- Ex: Escolaridade (Fundamental, Médio, Superior)
+- Intervalo entre categorias **nÃ£o Ã© regular**
+- Ex: Escolaridade (Fundamental, MÃ©dio, Superior)
 
 ### Escala Likert
 
@@ -199,43 +198,43 @@ Inferência estatística advém de uma relação entre a **teoria estatística**
 
 ---
 
-## Variáveis Escalares e de Razão {.smaller-text}
+## VariÃ¡veis Escalares e de RazÃ£o {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
 ### Escalares
 
-- Intervalo entre valores é **constante**
-- Zero é **arbitrário** (ex: 0°C)
+- Intervalo entre valores Ã© **constante**
+- Zero Ã© **arbitrÃ¡rio** (ex: 0Â°C)
 :::
 
 ::: {.column width="50%"}
-### Razão
+### RazÃ£o
 
-- Zero = **total ausência** do atributo
-- Ex: Segundos, Salário, Distâncias
+- Zero = **total ausÃªncia** do atributo
+- Ex: Segundos, SalÃ¡rio, DistÃ¢ncias
 :::
 :::
 
 | Tipo | Capacidade |
 |------|-----------|
-| Nominal | Distinção |
-| Ordinal | Distinção + Ordem |
-| Escalar/Razão | Distinção + Ordem + Distância |
+| Nominal | DistinÃ§Ã£o |
+| Ordinal | DistinÃ§Ã£o + Ordem |
+| Escalar/RazÃ£o | DistinÃ§Ã£o + Ordem + DistÃ¢ncia |
 
 ---
 
-## Exercício 2 {.smaller-text}
+## ExercÃ­cio 2 {.smaller-text}
 
-Classifique as variáveis abaixo:
+Classifique as variÃ¡veis abaixo:
 
-a) O nº de latinhas consumidas por alunos de uma academia
+a) O nÂº de latinhas consumidas por alunos de uma academia
 
 b) O total de ml's consumidos por aluno
 
 c) O total de alunos que consomem 1, 2-5 ou +5 latinhas
 
-d) O nº de alunos que bebem vs. não bebem
+d) O nÂº de alunos que bebem vs. nÃ£o bebem
 
 ```{r}
 #| eval: false
@@ -243,26 +242,26 @@ d) O nº de alunos que bebem vs. não bebem
 
 ```
 
-# [II. Distribuição de Frequências]{.section-header}
+# [II. DistribuiÃ§Ã£o de FrequÃªncias]{.section-header}
 
 ## Conceito {.smaller-text}
 
 - Organiza os dados em **categorias ou intervalos**
-- Mostra quantas observações pertencem a cada classe
-- Utilizada para **resumir** toda a informação obtida
+- Mostra quantas observaÃ§Ãµes pertencem a cada classe
+- Utilizada para **resumir** toda a informaÃ§Ã£o obtida
 
 ---
 
-## Regras para Distribuição de Frequências {.smaller-text}
+## Regras para DistribuiÃ§Ã£o de FrequÃªncias {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-**1º passo**  -  Organizar em **Rol**
+**1Âº passo**  -  Organizar em **Rol**
 
-**2º passo**  -  Amplitude Total:
+**2Âº passo**  -  Amplitude Total:
 $$AT = X_{max} - X_{min}$$
 
-**3º passo**  -  Nº de classes ($k$):
+**3Âº passo**  -  NÂº de classes ($k$):
 
 - Se $n < 25$: $k \approx \sqrt{n}$
 - Se $n \geq 25$:
@@ -270,21 +269,21 @@ $$k = 1 + \frac{10}{3}\log_{10}n$$
 :::
 
 ::: {.column width="50%"}
-**4º passo**  -  Amplitude da classe:
+**4Âº passo**  -  Amplitude da classe:
 $$h = \frac{AT}{k}$$
 
-**5º passo**  -  Construir as **classes**:
+**5Âº passo**  -  Construir as **classes**:
 
-- 1ª Classe: $l_{i1} = X_{min}$, $L_{s1} = l_{i1} + h$
-- 2ª Classe: $l_{i2} = L_{s1}$, $L_{s2} = l_{i2} + h$
+- 1Âª Classe: $l_{i1} = X_{min}$, $L_{s1} = l_{i1} + h$
+- 2Âª Classe: $l_{i2} = L_{s1}$, $L_{s2} = l_{i2} + h$
 :::
 :::
 
 ---
 
-## Exercício 3 {.smaller-text}
+## ExercÃ­cio 3 {.smaller-text}
 
-**A tabela apresenta notas de 20 alunos. Obtenha a frequência da variável contínua.**
+**A tabela apresenta notas de 20 alunos. Obtenha a frequÃªncia da variÃ¡vel contÃ­nua.**
 
 ```{r}
 #| eval: false
@@ -292,18 +291,18 @@ dados <- read.csv('notas.csv', header = TRUE, sep = ";")
 head(dados)
 ```
 
-**Questões:**
+**QuestÃµes:**
 
-1. 1º Passo: Organizar em Rol
-2. 2º Passo: Cálculo da Amplitude Total (AT)
-3. 3º Passo: Determinação do nº de Classes (k)
-4. 4º Passo: Cálculo da amplitude da classe (h)
+1. 1Âº Passo: Organizar em Rol
+2. 2Âº Passo: CÃ¡lculo da Amplitude Total (AT)
+3. 3Âº Passo: DeterminaÃ§Ã£o do nÂº de Classes (k)
+4. 4Âº Passo: CÃ¡lculo da amplitude da classe (h)
 
 **Apresente:** $f_i$, $F_i$, $fr$, $fr$%
 
 ```{r}
 #| eval: false
-# Sua resolução aqui
+# Sua resoluÃ§Ã£o aqui
 
 ```
 

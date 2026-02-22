@@ -1,13 +1,11 @@
 ---
-title: "Análise da Paisagem"
-subtitle: "Legislação Ambiental e Políticas Públicas Aplicadas à Paisagem<br>Curso de Geografia"
+title: "AnÃ¡lise da Paisagem"
+subtitle: "LegislaÃ§Ã£o Ambiental e PolÃ­ticas PÃºblicas Aplicadas Ã  Paisagem<br>Curso de Geografia"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
-date: "2026"
 format:
   revealjs:
     logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise da Paisagem | Legislação e Políticas Públicas"
+    footer: "UEFS | AnÃ¡lise da Paisagem | LegislaÃ§Ã£o e PolÃ­ticas PÃºblicas"
     slide-number: true
     theme: [simple, ../../../assets/uefs.scss]
     controls: true
@@ -21,47 +19,47 @@ execute:
   echo: false
 ---
 
-## Visão Geral da Aula {.smaller-text}
+## VisÃ£o Geral da Aula {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Tópicos
+### TÃ³picos
 
-- [1]{.circle} Arcabouço legal e análise da paisagem
-- [2]{.circle} Código Florestal (Lei 12.651/2012): APP e RL
+- [1]{.circle} ArcabouÃ§o legal e anÃ¡lise da paisagem
+- [2]{.circle} CÃ³digo Florestal (Lei 12.651/2012): APP e RL
 - [3]{.circle} Cadastro Ambiental Rural (CAR): a paisagem georreferenciada
-- [4]{.circle} Zoneamento Ecológico-Econômico (ZEE)
+- [4]{.circle} Zoneamento EcolÃ³gico-EconÃ´mico (ZEE)
 - [5]{.circle} Licenciamento ambiental e EIA/RIMA
-- [6]{.circle} Exercício: análise de conformidade legal no QGIS
+- [6]{.circle} ExercÃ­cio: anÃ¡lise de conformidade legal no QGIS
 :::
 
 ::: {.column width="50%"}
 ::: {.info-box}
 **Objetivo da Aula**
 
-Compreender os **instrumentos legais brasileiros** que regulam o uso e a proteção de paisagens, e aplicá-los como critérios analíticos no **diagnóstico e planejamento territorial**.
+Compreender os **instrumentos legais brasileiros** que regulam o uso e a proteÃ§Ã£o de paisagens, e aplicÃ¡-los como critÃ©rios analÃ­ticos no **diagnÃ³stico e planejamento territorial**.
 :::
 :::
 :::
 
-# [1  -  ARCABOUÇO LEGAL E PAISAGEM]{.section-header}
+# [1  -  ARCABOUÃ‡O LEGAL E PAISAGEM]{.section-header}
 
-## Por que legislação importa para a análise da paisagem? {.smaller-text}
+## Por que legislaÃ§Ã£o importa para a anÃ¡lise da paisagem? {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
-A paisagem não existe em vácuo jurídico. Cada fragmento florestal, cada APP, cada hectare de reserva legal é regulado por leis que determinam:
+A paisagem nÃ£o existe em vÃ¡cuo jurÃ­dico. Cada fragmento florestal, cada APP, cada hectare de reserva legal Ã© regulado por leis que determinam:
 
-- **O que pode ser suprimido** (e sob quais condições)
-- **O que deve ser preservado** (e em que largura/proporção)
+- **O que pode ser suprimido** (e sob quais condiÃ§Ãµes)
+- **O que deve ser preservado** (e em que largura/proporÃ§Ã£o)
 - **O que precisa ser restaurado** (e em que prazo)
-- **Quem paga** pelo monitoramento e pela restauração
+- **Quem paga** pelo monitoramento e pela restauraÃ§Ã£o
 
-Para o analista da paisagem, a legislação define:
+Para o analista da paisagem, a legislaÃ§Ã£o define:
 
-- **Critérios de conflito de uso** → APP ocupada por pastagem = conflito
-- **Metas de restauração** → RL deficitária = área prioritária
-- **Zonas de aptidão** → ZEE define onde cada uso é adequado
+- **CritÃ©rios de conflito de uso** â†’ APP ocupada por pastagem = conflito
+- **Metas de restauraÃ§Ã£o** â†’ RL deficitÃ¡ria = Ã¡rea prioritÃ¡ria
+- **Zonas de aptidÃ£o** â†’ ZEE define onde cada uso Ã© adequado
 :::
 
 ::: {.column width="45%"}
@@ -74,12 +72,12 @@ digraph {
     node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=9, margin="0.2,0.1", penwidth=0.8]
     edge [color="#555555", penwidth=1.0]
 
-    CF [label="Código Florestal\nLei 12.651/2012", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20"]
+    CF [label="CÃ³digo Florestal\nLei 12.651/2012", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20"]
     CAR [label="CAR\nSINAM", fillcolor="#C8E6C9", color="#2E7D32"]
     ZEE [label="ZEE\nDec. 4.297/2002", fillcolor="#BBDEFB", color="#1565C0"]
     LIC [label="Licenciamento\nEIA/RIMA", fillcolor="#FFE0B2", color="#E65100"]
     SNUC [label="SNUC\nLei 9.985/2000", fillcolor="#E1BEE7", color="#6A1B9A"]
-    P [label="PAISAGEM\nAnálise e Diagnóstico", fillcolor="#1B5E20", fontcolor="white", color="#0D3310", penwidth=1.5]
+    P [label="PAISAGEM\nAnÃ¡lise e DiagnÃ³stico", fillcolor="#1B5E20", fontcolor="white", color="#0D3310", penwidth=1.5]
 
     CF -> P
     CAR -> P
@@ -91,125 +89,125 @@ digraph {
 :::
 :::
 
-# [2  -  CÓDIGO FLORESTAL]{.section-header}
+# [2  -  CÃ“DIGO FLORESTAL]{.section-header}
 
-## APP — Áreas de Preservação Permanente {.smaller-text}
+## APP â€” Ãreas de PreservaÃ§Ã£o Permanente {.smaller-text}
 
-O Código Florestal (Lei 12.651/2012, Art. 4º) define APPs em função de feições geomorfológicas e hidrológicas:
+O CÃ³digo Florestal (Lei 12.651/2012, Art. 4Âº) define APPs em funÃ§Ã£o de feiÃ§Ãµes geomorfolÃ³gicas e hidrolÃ³gicas:
 
-| Feição | Largura da APP | Base legal |
+| FeiÃ§Ã£o | Largura da APP | Base legal |
 |:-------|:---------------|:-----------|
-| Cursos d'água até 10 m | 30 m de cada lado | Art. 4º, I, a |
-| Cursos d'água de 10–50 m | 50 m | Art. 4º, I, b |
-| Cursos d'água de 50–200 m | 100 m | Art. 4º, I, c |
-| Cursos d'água de 200–600 m | 200 m | Art. 4º, I, d |
-| Cursos d'água > 600 m | 500 m | Art. 4º, I, e |
-| Nascentes e olhos d'água | Raio de 50 m | Art. 4º, IV |
-| Topos de morros e montanhas | Terço superior | Art. 4º, IX |
-| Encostas > 45° | Toda a encosta | Art. 4º, V |
-| Bordas de tabuleiros ou chapadas | 100 m a partir da ruptura de relevo | Art. 4º, VIII |
-| Veredas | 50 m a partir do espaço brejoso | Art. 4º, XI |
+| Cursos d'Ã¡gua atÃ© 10 m | 30 m de cada lado | Art. 4Âº, I, a |
+| Cursos d'Ã¡gua de 10â€“50 m | 50 m | Art. 4Âº, I, b |
+| Cursos d'Ã¡gua de 50â€“200 m | 100 m | Art. 4Âº, I, c |
+| Cursos d'Ã¡gua de 200â€“600 m | 200 m | Art. 4Âº, I, d |
+| Cursos d'Ã¡gua > 600 m | 500 m | Art. 4Âº, I, e |
+| Nascentes e olhos d'Ã¡gua | Raio de 50 m | Art. 4Âº, IV |
+| Topos de morros e montanhas | TerÃ§o superior | Art. 4Âº, IX |
+| Encostas > 45Â° | Toda a encosta | Art. 4Âº, V |
+| Bordas de tabuleiros ou chapadas | 100 m a partir da ruptura de relevo | Art. 4Âº, VIII |
+| Veredas | 50 m a partir do espaÃ§o brejoso | Art. 4Âº, XI |
 
-: Larguras de APP segundo o Código Florestal. {.striped .hover}
+: Larguras de APP segundo o CÃ³digo Florestal. {.striped .hover}
 
 ::: {.callout-important}
-As APPs protegem **meios ecodinamicamente instáveis** (Tricart, 1977): encostas, margens, topos — exatamente onde a morfogênese supera a pedogênese.
+As APPs protegem **meios ecodinamicamente instÃ¡veis** (Tricart, 1977): encostas, margens, topos â€” exatamente onde a morfogÃªnese supera a pedogÃªnese.
 :::
 
 ## Reserva Legal {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-A Reserva Legal é a fração de vegetação nativa que cada imóvel rural deve manter:
+A Reserva Legal Ã© a fraÃ§Ã£o de vegetaÃ§Ã£o nativa que cada imÃ³vel rural deve manter:
 
-| Bioma/Região | % Reserva Legal |
+| Bioma/RegiÃ£o | % Reserva Legal |
 |:-------------|:---------------:|
-| Amazônia Legal (floresta) | 80% |
-| Amazônia Legal (cerrado) | 35% |
-| Amazônia Legal (campos gerais) | 20% |
+| AmazÃ´nia Legal (floresta) | 80% |
+| AmazÃ´nia Legal (cerrado) | 35% |
+| AmazÃ´nia Legal (campos gerais) | 20% |
 | Demais biomas | 20% |
 
-A **alocação espacial** da RL é uma decisão paisagística: pode ser contígua, fragmentada ou em condomínio entre propriedades adjacentes.
+A **alocaÃ§Ã£o espacial** da RL Ã© uma decisÃ£o paisagÃ­stica: pode ser contÃ­gua, fragmentada ou em condomÃ­nio entre propriedades adjacentes.
 :::
 
 ::: {.column width="50%"}
 ::: {.callout-note}
-## Implicação paisagística
+## ImplicaÃ§Ã£o paisagÃ­stica
 Se cada propriedade alocar sua RL **individualmente**, o resultado tende a ser fragmentos pequenos e isolados.
 
 Se as RLs forem alocadas **coletivamente** em corredores, a **conectividade funcional** da paisagem aumenta significativamente.
 
-Essa é uma aplicação direta da ecologia da paisagem ao planejamento territorial.
+Essa Ã© uma aplicaÃ§Ã£o direta da ecologia da paisagem ao planejamento territorial.
 :::
 :::
 :::
 
 # [3  -  CADASTRO AMBIENTAL RURAL (CAR)]{.section-header}
 
-## O CAR como ferramenta de análise {.smaller-text}
+## O CAR como ferramenta de anÃ¡lise {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
 O CAR (Dec. 7.830/2012) georreferencia:
 
-- Perímetro do imóvel rural
+- PerÃ­metro do imÃ³vel rural
 - APPs delimitadas
 - Reserva Legal declarada
-- Áreas de uso consolidado
-- Remanescentes de vegetação nativa
+- Ãreas de uso consolidado
+- Remanescentes de vegetaÃ§Ã£o nativa
 
-**Por que é importante para a análise da paisagem?**
+**Por que Ã© importante para a anÃ¡lise da paisagem?**
 
-- É a **primeira base vetorial nacional** das propriedades rurais
-- Permite calcular **déficits** e **superávits** de vegetação nativa por imóvel
-- Possibilita análises de **conectividade** entre RLs de propriedades vizinhas
-- Base para o **Programa de Regularização Ambiental (PRA)**
+- Ã‰ a **primeira base vetorial nacional** das propriedades rurais
+- Permite calcular **dÃ©ficits** e **superÃ¡vits** de vegetaÃ§Ã£o nativa por imÃ³vel
+- Possibilita anÃ¡lises de **conectividade** entre RLs de propriedades vizinhas
+- Base para o **Programa de RegularizaÃ§Ã£o Ambiental (PRA)**
 
-Dados disponíveis em: [SICAR](https://www.car.gov.br/publico/imoveis/index)
+Dados disponÃ­veis em: [SICAR](https://www.car.gov.br/publico/imoveis/index)
 :::
 
 ::: {.column width="45%"}
-### Exercício rápido
+### ExercÃ­cio rÃ¡pido
 
 No QGIS:
 
-1. Baixe os dados do CAR da sua área de estudo (SICAR)
+1. Baixe os dados do CAR da sua Ã¡rea de estudo (SICAR)
 2. Sobreponha com mapa de uso/cobertura (MapBiomas)
 3. Identifique:
-   - APPs com vegetação nativa preservada ✅
-   - APPs ocupadas por pastagem/agricultura ❌
-   - RLs declaradas vs. vegetação existente
-4. Calcule: % de imóveis em conformidade
+   - APPs com vegetaÃ§Ã£o nativa preservada âœ…
+   - APPs ocupadas por pastagem/agricultura âŒ
+   - RLs declaradas vs. vegetaÃ§Ã£o existente
+4. Calcule: % de imÃ³veis em conformidade
 :::
 :::
 
-# [4  -  ZONEAMENTO ECOLÓGICO-ECONÔMICO]{.section-header}
+# [4  -  ZONEAMENTO ECOLÃ“GICO-ECONÃ”MICO]{.section-header}
 
 ## ZEE: paisagem como base do planejamento {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-O ZEE (Dec. 4.297/2002) divide o território em **zonas** com vocações e restrições:
+O ZEE (Dec. 4.297/2002) divide o territÃ³rio em **zonas** com vocaÃ§Ãµes e restriÃ§Ãµes:
 
-| Zona | Critério paisagístico |
+| Zona | CritÃ©rio paisagÃ­stico |
 |:-----|:----------------------|
-| **Produtiva** | Meios estáveis, solos profundos, baixa declividade |
-| **Uso sustentável** | Meios intergrades, manejo controlado |
-| **Conservação** | Meios instáveis, alta biodiversidade, nascentes |
-| **Recuperação** | Áreas degradadas com potencial de restauração |
+| **Produtiva** | Meios estÃ¡veis, solos profundos, baixa declividade |
+| **Uso sustentÃ¡vel** | Meios intergrades, manejo controlado |
+| **ConservaÃ§Ã£o** | Meios instÃ¡veis, alta biodiversidade, nascentes |
+| **RecuperaÃ§Ã£o** | Ãreas degradadas com potencial de restauraÃ§Ã£o |
 
-O ZEE integra critérios da **ecodinâmica** (Tricart) com análise socioeconômica.
+O ZEE integra critÃ©rios da **ecodinÃ¢mica** (Tricart) com anÃ¡lise socioeconÃ´mica.
 :::
 
 ::: {.column width="50%"}
 ### Outros zoneamentos no Brasil
 
-- **ZEEC** — Zoneamento Ecológico-Econômico Costeiro (especificidades litorâneas)
-- **Plano de Bacia** — zoneamento por bacia hidrográfica (Comitê de Bacia)
-- **Plano de Manejo de UC** — zoneamento interno de unidades de conservação
-- **Plano Diretor Municipal** — zoneamento urbano (Estatuto da Cidade)
+- **ZEEC** â€” Zoneamento EcolÃ³gico-EconÃ´mico Costeiro (especificidades litorÃ¢neas)
+- **Plano de Bacia** â€” zoneamento por bacia hidrogrÃ¡fica (ComitÃª de Bacia)
+- **Plano de Manejo de UC** â€” zoneamento interno de unidades de conservaÃ§Ã£o
+- **Plano Diretor Municipal** â€” zoneamento urbano (Estatuto da Cidade)
 
-Todos compartilham a lógica: **diagnosticar a paisagem → classificar aptidões → propor usos compatíveis**.
+Todos compartilham a lÃ³gica: **diagnosticar a paisagem â†’ classificar aptidÃµes â†’ propor usos compatÃ­veis**.
 :::
 :::
 
@@ -219,21 +217,21 @@ Todos compartilham a lógica: **diagnosticar a paisagem → classificar aptidõe
 
 ::: {.columns}
 ::: {.column width="55%"}
-O Estudo de Impacto Ambiental (EIA) e o Relatório de Impacto (RIMA) — Res. CONAMA 01/1986 — exigem:
+O Estudo de Impacto Ambiental (EIA) e o RelatÃ³rio de Impacto (RIMA) â€” Res. CONAMA 01/1986 â€” exigem:
 
-- Diagnóstico ambiental da **área de influência**
-- Análise de **alternativas locacionais**
-- Prognóstico de **impactos cumulativos**
-- Proposição de **medidas mitigadoras e compensatórias**
+- DiagnÃ³stico ambiental da **Ã¡rea de influÃªncia**
+- AnÃ¡lise de **alternativas locacionais**
+- PrognÃ³stico de **impactos cumulativos**
+- ProposiÃ§Ã£o de **medidas mitigadoras e compensatÃ³rias**
 
-A análise da paisagem contribui em todos esses itens:
+A anÃ¡lise da paisagem contribui em todos esses itens:
 
-| Etapa do EIA | Contribuição da análise da paisagem |
+| Etapa do EIA | ContribuiÃ§Ã£o da anÃ¡lise da paisagem |
 |:-------------|:------------------------------------|
-| Diagnóstico | Mapa de uso, métricas, conectividade |
-| Alternativas | Comparação de cenários paisagísticos |
-| Impacto cumulativo | Efeito de múltiplos empreendimentos na fragmentação |
-| Compensação | Identificação de áreas para restauração ou UC |
+| DiagnÃ³stico | Mapa de uso, mÃ©tricas, conectividade |
+| Alternativas | ComparaÃ§Ã£o de cenÃ¡rios paisagÃ­sticos |
+| Impacto cumulativo | Efeito de mÃºltiplos empreendimentos na fragmentaÃ§Ã£o |
+| CompensaÃ§Ã£o | IdentificaÃ§Ã£o de Ã¡reas para restauraÃ§Ã£o ou UC |
 
 : {.striped .hover}
 :::
@@ -241,35 +239,35 @@ A análise da paisagem contribui em todos esses itens:
 ::: {.column width="45%"}
 ::: {.callout-warning}
 ## Problema recorrente
-EIA/RIMAs frequentemente avaliam impactos **locais** (área do empreendimento) sem considerar o **efeito cumulativo** na paisagem.
+EIA/RIMAs frequentemente avaliam impactos **locais** (Ã¡rea do empreendimento) sem considerar o **efeito cumulativo** na paisagem.
 
-Uma PCH isolada pode ter impacto baixo; 20 PCHs na mesma bacia podem fragmentar criticamente os corredores ripários.
+Uma PCH isolada pode ter impacto baixo; 20 PCHs na mesma bacia podem fragmentar criticamente os corredores ripÃ¡rios.
 
-A ecologia da paisagem fornece métricas para quantificar esses efeitos cumulativos (NP, COHESION, IIC).
+A ecologia da paisagem fornece mÃ©tricas para quantificar esses efeitos cumulativos (NP, COHESION, IIC).
 :::
 :::
 :::
 
-# [6  -  EXERCÍCIO: CONFORMIDADE LEGAL NO QGIS]{.section-header}
+# [6  -  EXERCÃCIO: CONFORMIDADE LEGAL NO QGIS]{.section-header}
 
-## Roteiro Prático {.smaller-text}
+## Roteiro PrÃ¡tico {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Dados necessários
+### Dados necessÃ¡rios
 
 1. **MDE** (SRTM 30 m ou ALOS 12.5 m)
-2. **Rede hidrográfica** (ANA ou derivada do MDE)
+2. **Rede hidrogrÃ¡fica** (ANA ou derivada do MDE)
 3. **Uso e cobertura** (MapBiomas mais recente)
-4. **CAR** (SICAR — shapefile)
+4. **CAR** (SICAR â€” shapefile)
 5. **Limites de UC** (ICMBio/MMA)
 
 ### Produtos
 
 - Mapa de APPs delimitadas por geoprocessamento
-- Mapa de conflito APP × uso atual
-- Mapa de RL declarada × RL existente
-- Tabela síntese: conformidade legal por sub-bacia
+- Mapa de conflito APP Ã— uso atual
+- Mapa de RL declarada Ã— RL existente
+- Tabela sÃ­ntese: conformidade legal por sub-bacia
 :::
 
 ::: {.column width="50%"}
@@ -284,10 +282,10 @@ digraph {
     edge [color="#555555", penwidth=1.0]
 
     A [label="MDE + Hidrografia", fillcolor="#E3F2FD", color="#1565C0"]
-    B [label="Buffer → APP", fillcolor="#BBDEFB", color="#1565C0"]
+    B [label="Buffer â†’ APP", fillcolor="#BBDEFB", color="#1565C0"]
     C [label="MapBiomas\nUso e Cobertura", fillcolor="#C8E6C9", color="#2E7D32"]
-    D [label="Overlay\nAPP × Uso", fillcolor="#FFE0B2", color="#E65100"]
-    E [label="CAR → RL", fillcolor="#E1BEE7", color="#6A1B9A"]
+    D [label="Overlay\nAPP Ã— Uso", fillcolor="#FFE0B2", color="#E65100"]
+    E [label="CAR â†’ RL", fillcolor="#E1BEE7", color="#6A1B9A"]
     F [label="Mapa de\nConflitos", fillcolor="#FFCDD2", color="#C62828"]
     G [label="Tabela\nConformidade", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20"]
 
@@ -302,21 +300,21 @@ digraph {
 :::
 :::
 
-# [7  -  SÍNTESE]{.section-header}
+# [7  -  SÃNTESE]{.section-header}
 
-## Conexão com a Disciplina {.smaller-text}
+## ConexÃ£o com a Disciplina {.smaller-text}
 
 | Instrumento legal | Aulas conectadas |
 |:------------------|:-----------------|
-| Código Florestal / APP | → Cartografia Temática (Aula 07), Zoneamentos (Aula 22) |
-| CAR / Reserva Legal | → Unidades de Paisagem (Aula 19), Diagnóstico (Aula 20) |
-| ZEE | → Ecodinâmica (Zoneamento Geoecológico), Planejamento Territorial (Aula 21) |
-| EIA/RIMA | → Conectividade Funcional (Aula 17), Métricas FRAGSTATS (Aula 18) |
+| CÃ³digo Florestal / APP | â†’ Cartografia TemÃ¡tica (Aula 07), Zoneamentos (Aula 22) |
+| CAR / Reserva Legal | â†’ Unidades de Paisagem (Aula 19), DiagnÃ³stico (Aula 20) |
+| ZEE | â†’ EcodinÃ¢mica (Zoneamento GeoecolÃ³gico), Planejamento Territorial (Aula 21) |
+| EIA/RIMA | â†’ Conectividade Funcional (Aula 17), MÃ©tricas FRAGSTATS (Aula 18) |
 
 ## Leituras Recomendadas
 
-- **BRASIL.** Lei nº 12.651/2012 — Código Florestal. Disponível em planalto.gov.br.
-- **BRASIL.** Decreto nº 4.297/2002 — Zoneamento Ecológico-Econômico.
-- **BRASIL.** Decreto nº 7.830/2012 — Cadastro Ambiental Rural.
+- **BRASIL.** Lei nÂº 12.651/2012 â€” CÃ³digo Florestal. DisponÃ­vel em planalto.gov.br.
+- **BRASIL.** Decreto nÂº 4.297/2002 â€” Zoneamento EcolÃ³gico-EconÃ´mico.
+- **BRASIL.** Decreto nÂº 7.830/2012 â€” Cadastro Ambiental Rural.
 - **SPAROVEK, G. et al.** (2019). Who owns Brazilian lands? *Land Use Policy*, 87, 104062.
-- **SOARES-FILHO, B. et al.** (2014). Cracking Brazil's Forest Code. *Science*, 344(6182), 363–364.
+- **SOARES-FILHO, B. et al.** (2014). Cracking Brazil's Forest Code. *Science*, 344(6182), 363â€“364.

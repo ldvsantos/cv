@@ -5,11 +5,16 @@
    ============================================================ */
 
 :root {
-  --uefs-amarelo: #FDB913;      /* Pantone 1235 C - Cor Principal */
-  --uefs-vermelho: #ED1C24;     /* Pantone 1788 C - Cor Secundária */
-  --uefs-azul: #034EA2;         /* Pantone 2728 C - Cor Secundária */
-  --uefs-cinza-escuro: #58595B;
-  --uefs-cinza-claro: #D1D3D4;
+  --uefs-azul: #2135A6;           /* Azul Principal */
+  --uefs-azul-profundo: #27368C; /* Azul Profundo */
+  --uefs-azul-apoio: #586BA6;    /* Azul de Apoio */
+  --uefs-fundo-claro: #F2F2F2;   /* Fundo Claro */
+  --uefs-contraste: #0D0D0D;     /* Contraste Tipográfico */
+  /* Aliases para compatibilidade */
+  --uefs-amarelo: #586BA6;
+  --uefs-vermelho: #27368C;
+  --uefs-cinza-escuro: #0D0D0D;
+  --uefs-cinza-claro: #F2F2F2;
 }
 
 /* ---- Title Slide (Capa) ---- */
@@ -59,7 +64,7 @@
   font-weight: 700 !important;
   margin-bottom: 0.3em !important;
   line-height: 1.2 !important;
-  text-shadow: 2px 2px 6px rgba(241, 9, 9, 0.452);
+  text-shadow: 2px 2px 6px rgba(39, 54, 140, 0.45);
 }
 
 #title-slide .subtitle {
@@ -139,12 +144,12 @@ section.title-slide .date,
   padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: rgba(3, 78, 162, 0.08);
+  background-color: rgba(33, 53, 166, 0.08);
   border-radius: 5px;
 }
 
 .highlight-box {
-  background-color: rgba(253, 185, 19, 0.15);
+  background-color: rgba(88, 107, 166, 0.15);
   border-left: 5px solid var(--uefs-amarelo);
   padding: 10px 15px;
   margin: 10px 0;
@@ -242,13 +247,13 @@ section.title-slide .date,
 
 /* ---- Footer com branding UEFS ---- */
 .reveal .footer {
-  background-color: var(--uefs-amarelo) !important;
-  color: var(--uefs-azul) !important;
+  background-color: var(--uefs-azul) !important;
+  color: #ffffff !important;
   font-family: 'Ubuntu', sans-serif !important;
   font-size: 0.5em !important;
   font-weight: 500 !important;
   padding: 3px 10px !important;
-  border-top: 2px solid var(--uefs-azul) !important;
+  border-top: 2px solid var(--uefs-azul-profundo, #27368C) !important;
   box-shadow: 0 -1px 3px rgba(0,0,0,0.1) !important;
   position: fixed !important;
   bottom: 0 !important;

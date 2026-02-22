@@ -1,13 +1,12 @@
 ---
-title: "Propriedade Intelectual e Inovação"
-subtitle: "Gestão de Projetos de Inovação<br>com Foco em Propriedade Intelectual"
+title: "Propriedade Intelectual e InovaÃ§Ã£o"
+subtitle: "GestÃ£o de Projetos de InovaÃ§Ã£o<br>com Foco em Propriedade Intelectual"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
 #date: "2 de novembro de 2025"
 format: 
   revealjs:
     logo: ../../../../assets/logo-uefs.webp
-    footer: "UEFS - Universidade Estadual de Feira de Santana | Tema 5 - Gestão de Projetos de Inovação com Foco em PI"
+    footer: "UEFS - Universidade Estadual de Feira de Santana | Tema 5 - GestÃ£o de Projetos de InovaÃ§Ã£o com Foco em PI"
     slide-number: true
     theme: [simple, ../../../../assets/uefs.scss]
     controls: true
@@ -21,14 +20,14 @@ execute:
   echo: false
 ---
 
-## Visão Geral {.smaller-text}
+## VisÃ£o Geral {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Tópicos Principais
+### TÃ³picos Principais
 
-- [1]{.circle} Evolução dos Modelos de Gestão da Inovação
-- [2]{.circle} ISO 56005 e Sistema de Gestão de PI
+- [1]{.circle} EvoluÃ§Ã£o dos Modelos de GestÃ£o da InovaÃ§Ã£o
+- [2]{.circle} ISO 56005 e Sistema de GestÃ£o de PI
 - [3]{.circle} Modelo Stage-Gate
 - [4]{.circle} Indicadores de Desempenho
 - [5]{.circle} Capacidades Organizacionais
@@ -38,7 +37,7 @@ execute:
 ::: {.info-box}
 **Objetivo Central**
 
-Integrar a propriedade intelectual como componente estratégico transversal em todo o ciclo de inovação, desde a concepção até a comercialização.
+Integrar a propriedade intelectual como componente estratÃ©gico transversal em todo o ciclo de inovaÃ§Ã£o, desde a concepÃ§Ã£o atÃ© a comercializaÃ§Ã£o.
 :::
 :::
 :::
@@ -47,18 +46,18 @@ Integrar a propriedade intelectual como componente estratégico transversal em t
 ## Propriedade Intelectual na Economia do Conhecimento
 
 ::: {.box}
-**Definição Estratégica**
+**DefiniÃ§Ã£o EstratÃ©gica**
 
-A PI constitui a base jurídica e econômica da economia do conhecimento, funcionando como:
+A PI constitui a base jurÃ­dica e econÃ´mica da economia do conhecimento, funcionando como:
 
 - Instrumento de **incentivo ao investimento**
 - Mecanismo de **captura de valor**
-- Elemento **estratégico desde a concepção** dos projetos
+- Elemento **estratÃ©gico desde a concepÃ§Ã£o** dos projetos
 :::
 
 ---
 
-### Mudança de Paradigma
+### MudanÃ§a de Paradigma
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -66,7 +65,7 @@ A PI constitui a base jurídica e econômica da economia do conhecimento, funcio
 
 - Elemento final do processo
 - Tratamento reativo  
-- Decisão posterior à P&D
+- DecisÃ£o posterior Ã  P&D
 :::
 
 ::: {.column width="50%"}
@@ -74,79 +73,79 @@ A PI constitui a base jurídica e econômica da economia do conhecimento, funcio
 
 - Componente transversal
 - Abordagem proativa
-- Orientação desde a concepção
+- OrientaÃ§Ã£o desde a concepÃ§Ã£o
 :::
 ::::
 
-# [Evolução Histórica]{.section-header}
+# [EvoluÃ§Ã£o HistÃ³rica]{.section-header}
 
-## Taxonomia dos Modelos de Gestão da Inovação
+## Taxonomia dos Modelos de GestÃ£o da InovaÃ§Ã£o
 
 ::: {.diagram-scroll}
 ```{mermaid}
 %%| fig-width: 12
 %%| fig-height: 8
 timeline
-    title Modelos de Gestão da Inovação
+    title Modelos de GestÃ£o da InovaÃ§Ã£o
   1942 : Schumpeter (1942)
-     : Inovação como "novas combinações" e destruição criativa
+     : InovaÃ§Ã£o como "novas combinaÃ§Ãµes" e destruiÃ§Ã£o criativa
     1940-1960 : Modelo Linear (Push)
-              : Pesquisa básica → Aplicada → Desenvolvimento → Produção → Mercado
+              : Pesquisa bÃ¡sica â†’ Aplicada â†’ Desenvolvimento â†’ ProduÃ§Ã£o â†’ Mercado
               : Unidirecional e sequencial
     1970-1980 : Modelo Interativo (Kline & Rosenberg, 1986)
-              : Retroalimentações mercado-laboratório
+              : RetroalimentaÃ§Ãµes mercado-laboratÃ³rio
               : Learning-by-doing
-              : Papel do usuário
-    1990-2000 : Modelo Sistêmico (Edquist, 2001)
-              : Redes de inovação
+              : Papel do usuÃ¡rio
+    1990-2000 : Modelo SistÃªmico (Edquist, 2001)
+              : Redes de inovaÃ§Ã£o
               : Triple Helix
               : SNI
-    2000-Presente : Inovação Aberta (Chesbrough, 2003)
+    2000-Presente : InovaÃ§Ã£o Aberta (Chesbrough, 2003)
                   : P&D interna + externa
-                  : Modelos de negócio superiores
-                  : PI como ativo estratégico
-    2010-Presente : Transformação Digital
+                  : Modelos de negÃ³cio superiores
+                  : PI como ativo estratÃ©gico
+    2010-Presente : TransformaÃ§Ã£o Digital
                   : IA, IoT, Blockchain
-                  : Gestão preditiva e adaptativa
+                  : GestÃ£o preditiva e adaptativa
                   : Ecossistemas hiperconectados
 ```
 :::
 
 ::: {.info-box}
-**Conexão com a redação (Tema 5)**
+**ConexÃ£o com a redaÃ§Ã£o (Tema 5)**
 
-- Inovação é **não linear** e baseada em aprendizagem/retroalimentação (Kline & Rosenberg, 1986)
-- Em projetos, isso exige decisões contínuas sobre **sigilo, documentação e timing de proteção**
-- PI deixa de ser “fim do processo” e vira **variável estratégica desde a concepção** (Schumpeter, 1942)
+- InovaÃ§Ã£o Ã© **nÃ£o linear** e baseada em aprendizagem/retroalimentaÃ§Ã£o (Kline & Rosenberg, 1986)
+- Em projetos, isso exige decisÃµes contÃ­nuas sobre **sigilo, documentaÃ§Ã£o e timing de proteÃ§Ã£o**
+- PI deixa de ser â€œfim do processoâ€ e vira **variÃ¡vel estratÃ©gica desde a concepÃ§Ã£o** (Schumpeter, 1942)
 :::
 
 ---
 
-## Do Empírico ao Normativo
+## Do EmpÃ­rico ao Normativo
 
 ::: {.info-box}
 **Manual de Oslo (OCDE/Eurostat)**
 
-- Base conceitual para mensuração da inovação
+- Base conceitual para mensuraÃ§Ã£o da inovaÃ§Ã£o
 - Taxonomias e indicadores internacionais
-- 852 ocorrências de "inovação"
-- 619 ocorrências de "P&D"
-- 478 ocorrências de "cooperação"
+- 852 ocorrÃªncias de "inovaÃ§Ã£o"
+- 619 ocorrÃªncias de "P&D"
+- 478 ocorrÃªncias de "cooperaÃ§Ã£o"
 :::
 
 ---
 
-## Operacionalização ISO 56000
+## OperacionalizaÃ§Ã£o ISO 56000
 
 ::: {.highlight-box}
-**ISO 56000: Operacionalização**
+**ISO 56000: OperacionalizaÃ§Ã£o**
 
 Transforma conceitos do Manual de Oslo em processos gerenciais:
 
-- ✓ Rastreabilidade das decisões
-- ✓ Processos auditáveis
-- ✓ Benchmarking setorial
-- ✓ Comparabilidade internacional
+- âœ“ Rastreabilidade das decisÃµes
+- âœ“ Processos auditÃ¡veis
+- âœ“ Benchmarking setorial
+- âœ“ Comparabilidade internacional
 :::
 
 
@@ -163,7 +162,7 @@ Transforma conceitos do Manual de Oslo em processos gerenciais:
 
 ---
 
-## Nível 1: Estrutura de Gestão {.smaller-text}
+## NÃ­vel 1: Estrutura de GestÃ£o {.smaller-text}
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -171,60 +170,60 @@ Transforma conceitos do Manual de Oslo em processos gerenciais:
 
 ::: {.box}
 **Comprometimento Organizacional**
-- Análise do contexto interno/externo
-- Identificação de partes interessadas
-- Avaliação de riscos e oportunidades
+- AnÃ¡lise do contexto interno/externo
+- IdentificaÃ§Ã£o de partes interessadas
+- AvaliaÃ§Ã£o de riscos e oportunidades
 :::
 
 ::: {.fragment}
 ::: {.box}
-**Sistema de Gestão**
+**Sistema de GestÃ£o**
 - Processos documentados
-- Alocação de recursos
-- Governança clara
+- AlocaÃ§Ã£o de recursos
+- GovernanÃ§a clara
 :::
 :::
 :::
 
 ::: {.column width="50%"}
 ::: {.fragment}
-### Dimensões de Suporte
+### DimensÃµes de Suporte
 
-- [💡]{style="font-size: 1.5em"} **Cultura de PI** - disseminação de conhecimento
-- [👥]{style="font-size: 1.5em"} **Capital Humano** - competências específicas
-- [⚖️]{style="font-size: 1.5em"} **Aspectos Legais** - compliance regulatório
-- [💰]{style="font-size: 1.5em"} **Dimensão Financeira** - orçamento e ROI
+- [ðŸ’¡]{style="font-size: 1.5em"} **Cultura de PI** - disseminaÃ§Ã£o de conhecimento
+- [ðŸ‘¥]{style="font-size: 1.5em"} **Capital Humano** - competÃªncias especÃ­ficas
+- [âš–ï¸]{style="font-size: 1.5em"} **Aspectos Legais** - compliance regulatÃ³rio
+- [ðŸ’°]{style="font-size: 1.5em"} **DimensÃ£o Financeira** - orÃ§amento e ROI
 :::
 :::
 ::::
 
 ---
 
-## Nível 2: Estratégia de PI
+## NÃ­vel 2: EstratÃ©gia de PI
 
-### Ciclo Estratégico
+### Ciclo EstratÃ©gico
 
 ```{mermaid}
 %%| fig-width: 10
 %%| fig-height: 5
 graph LR
-    A[Definição de Metas] --> B[Desenvolvimento]
-    B --> C[Implementação]
+    A[DefiniÃ§Ã£o de Metas] --> B[Desenvolvimento]
+    B --> C[ImplementaÃ§Ã£o]
     C --> D[Monitoramento]
     D --> A
     
-    A1[Análise de registros<br/>próprios e terceiros] -.-> A
-    A2[Identificação de<br/>oportunidades/riscos] -.-> A
-    A3[Seleção de conceitos] -.-> A
+    A1[AnÃ¡lise de registros<br/>prÃ³prios e terceiros] -.-> A
+    A2[IdentificaÃ§Ã£o de<br/>oportunidades/riscos] -.-> A
+    A3[SeleÃ§Ã£o de conceitos] -.-> A
     
-    B1[Análises adicionais] -.-> B
-    B2[Mitigação de riscos] -.-> B
-    B3[Obrigações contratuais] -.-> B
-    B4[Manutenção de proteções] -.-> B
+    B1[AnÃ¡lises adicionais] -.-> B
+    B2[MitigaÃ§Ã£o de riscos] -.-> B
+    B3[ObrigaÃ§Ãµes contratuais] -.-> B
+    B4[ManutenÃ§Ã£o de proteÃ§Ãµes] -.-> B
     
-    C1[Integração ao<br/>planejamento] -.-> C
+    C1[IntegraÃ§Ã£o ao<br/>planejamento] -.-> C
     C2[Prioridades de<br/>investimento] -.-> C
-    C3[Planos de exploração] -.-> C
+    C3[Planos de exploraÃ§Ã£o] -.-> C
     
     style A fill:#4CAF50,stroke:#333,stroke-width:2px,color:#fff
     style B fill:#2196F3,stroke:#333,stroke-width:2px,color:#fff
@@ -234,43 +233,43 @@ graph LR
 
 ---
 
-## Nível 3: Integração aos Processos {.smaller-text}
+## NÃ­vel 3: IntegraÃ§Ã£o aos Processos {.smaller-text}
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Fases de Identificação e Criação
+### Fases de IdentificaÃ§Ã£o e CriaÃ§Ã£o
 
 ::: {.box}
-**Identificação de Oportunidades**
-- Captura de ideias por múltiplos canais
-- Análise preliminar de PI existente
+**IdentificaÃ§Ã£o de Oportunidades**
+- Captura de ideias por mÃºltiplos canais
+- AnÃ¡lise preliminar de PI existente
 :::
 
 ::: {.fragment}
 ::: {.box}
-**Criação de Conceitos**
-- Comunicação entre P&D, marketing e PI
-- Avaliação de patenteabilidade
+**CriaÃ§Ã£o de Conceitos**
+- ComunicaÃ§Ã£o entre P&D, marketing e PI
+- AvaliaÃ§Ã£o de patenteabilidade
 :::
 :::
 
 ::: {.fragment}
 ::: {.box}
-**Validação de Conceitos**
-- Análise de liberdade de operação
-- Estudos de viabilidade técnica e jurídica
+**ValidaÃ§Ã£o de Conceitos**
+- AnÃ¡lise de liberdade de operaÃ§Ã£o
+- Estudos de viabilidade tÃ©cnica e jurÃ­dica
 :::
 :::
 :::
 
 ::: {.column width="50%"}
 ::: {.fragment}
-### Fases de Desenvolvimento e Implantação
+### Fases de Desenvolvimento e ImplantaÃ§Ã£o
 
-- [🔬]{style="font-size: 1.5em"} **Desenvolvimento** - Escopo geográfico de proteção
-- [📋]{style="font-size: 1.5em"} **Modalidades de PI** - Patentes, marcas, designs
-- [📅]{style="font-size: 1.5em"} **Implantação** - Cronograma de depósitos
-- [💼]{style="font-size: 1.5em"} **Estratégias de Exploração** - Licenciamento e comercialização
+- [ðŸ”¬]{style="font-size: 1.5em"} **Desenvolvimento** - Escopo geogrÃ¡fico de proteÃ§Ã£o
+- [ðŸ“‹]{style="font-size: 1.5em"} **Modalidades de PI** - Patentes, marcas, designs
+- [ðŸ“…]{style="font-size: 1.5em"} **ImplantaÃ§Ã£o** - Cronograma de depÃ³sitos
+- [ðŸ’¼]{style="font-size: 1.5em"} **EstratÃ©gias de ExploraÃ§Ã£o** - Licenciamento e comercializaÃ§Ã£o
 :::
 :::
 ::::
@@ -283,66 +282,66 @@ graph LR
 ![](Figuras/oslo.png){width="25%"}
 :::
 
-## 7 Categorias de Atividades de Inovação {.smaller-text}
+## 7 Categorias de Atividades de InovaÃ§Ã£o {.smaller-text}
 
 ::: {.box}
-**Segundo o Manual de Oslo (OCDE/Eurostat, 3ª ed.)**
+**Segundo o Manual de Oslo (OCDE/Eurostat, 3Âª ed.)**
 :::
 
 :::: {.columns style="font-size: 0.85em;"}
 ::: {.column width="50%"}
 [1]{.circle} **P&D Interna e Externa**
-- Pesquisa básica e aplicada
-- Contratação de serviços de P&D
-- *Verificação PI*: Análise de anterioridade
+- Pesquisa bÃ¡sica e aplicada
+- ContrataÃ§Ã£o de serviÃ§os de P&D
+- *VerificaÃ§Ã£o PI*: AnÃ¡lise de anterioridade
 
-[2]{.circle} **Aquisição de Máquinas/Equipamentos**
-- Software avançado
-- Infraestrutura tecnológica
-- *Verificação PI*: Licenças de software
+[2]{.circle} **AquisiÃ§Ã£o de MÃ¡quinas/Equipamentos**
+- Software avanÃ§ado
+- Infraestrutura tecnolÃ³gica
+- *VerificaÃ§Ã£o PI*: LicenÃ§as de software
 
-[3]{.circle} **Aquisição de Conhecimento Externo**
-- Patentes, licenças
+[3]{.circle} **AquisiÃ§Ã£o de Conhecimento Externo**
+- Patentes, licenÃ§as
 - Know-how, marcas
-- *Verificação PI*: Freedom-to-operate
+- *VerificaÃ§Ã£o PI*: Freedom-to-operate
 
 [4]{.circle} **Treinamento**
-- Desenvolvimento de competências
-- Capacitação em PI
-- *Verificação PI*: Cultura organizacional
+- Desenvolvimento de competÃªncias
+- CapacitaÃ§Ã£o em PI
+- *VerificaÃ§Ã£o PI*: Cultura organizacional
 :::
 
 ::: {.column width="50%"}
-[5]{.circle} **Design e Preparação**
+[5]{.circle} **Design e PreparaÃ§Ã£o**
 - Design industrial
-- Preparação para produção
-- *Verificação PI*: Registro de design
+- PreparaÃ§Ã£o para produÃ§Ã£o
+- *VerificaÃ§Ã£o PI*: Registro de design
 
-[6]{.circle} **Introdução no Mercado**
+[6]{.circle} **IntroduÃ§Ã£o no Mercado**
 - Estudos de mercado
-- Campanhas de lançamento
-- *Verificação PI*: Marcas e trade dress
+- Campanhas de lanÃ§amento
+- *VerificaÃ§Ã£o PI*: Marcas e trade dress
 
 [7]{.circle} **Outras Atividades**
 - Estudos de viabilidade
-- Testes e certificações
-- *Verificação PI*: Documentação técnica
+- Testes e certificaÃ§Ãµes
+- *VerificaÃ§Ã£o PI*: DocumentaÃ§Ã£o tÃ©cnica
 :::
 ::::
 
 ---
 
-## Integração ISO 56005 + Manual de Oslo
+## IntegraÃ§Ã£o ISO 56005 + Manual de Oslo
 
 ::: {.highlight-box}
-**Alinhamento Estratégico**
+**Alinhamento EstratÃ©gico**
 
-Cada atividade de inovação do Manual de Oslo é acompanhada de verificações de PI conforme ISO 56005, transformando o SGPI em instrumento de:
+Cada atividade de inovaÃ§Ã£o do Manual de Oslo Ã© acompanhada de verificaÃ§Ãµes de PI conforme ISO 56005, transformando o SGPI em instrumento de:
 
-- 🛡️ **Mitigação de riscos jurídicos**
-- 💰 **Maximização do ROI em inovação**
-- 📊 **Mensuração padronizada**
-- 🌍 **Comparabilidade internacional**
+- ðŸ›¡ï¸ **MitigaÃ§Ã£o de riscos jurÃ­dicos**
+- ðŸ’° **MaximizaÃ§Ã£o do ROI em inovaÃ§Ã£o**
+- ðŸ“Š **MensuraÃ§Ã£o padronizada**
+- ðŸŒ **Comparabilidade internacional**
 :::
 
 
@@ -354,66 +353,66 @@ Cada atividade de inovação do Manual de Oslo é acompanhada de verificações 
 
 ---
 
-## TRL e Estratégia de PI
+## TRL e EstratÃ©gia de PI
 
 ::: {.diagram-scroll}
-![Níveis de Maturidade Tecnológica - Detalhado](Figuras/technology_readiness_levels.png){width="100%" style="max-height: 600px;"}
+![NÃ­veis de Maturidade TecnolÃ³gica - Detalhado](Figuras/technology_readiness_levels.png){width="100%" style="max-height: 600px;"}
 :::
 
 ---
 
-## Sincronização TRL-PI {.smaller-text}
+## SincronizaÃ§Ã£o TRL-PI {.smaller-text}
 
 :::: {.columns}
 ::: {.column width="33%"}
 ### TRL 1-3: Inicial
 ::: {.box}
 **Foco: Sigilo**
-- Princípios básicos observados
+- PrincÃ­pios bÃ¡sicos observados
 - Conceito formulado
 - Prova de conceito experimental
 
-**Proteção PI:**
-- ⚠️ Sigilo rigoroso
-- 📄 Publicações estratégicas
-- 🔍 Estabelecer prior art
+**ProteÃ§Ã£o PI:**
+- âš ï¸ Sigilo rigoroso
+- ðŸ“„ PublicaÃ§Ãµes estratÃ©gicas
+- ðŸ” Estabelecer prior art
 :::
 :::
 
 ::: {.column width="33%"}
-### TRL 4-6: Intermediário
+### TRL 4-6: IntermediÃ¡rio
 ::: {.box}
-**Foco: Validação**
-- Validação em laboratório
-- Validação em ambiente relevante
-- Demonstração em ambiente operacional
+**Foco: ValidaÃ§Ã£o**
+- ValidaÃ§Ã£o em laboratÃ³rio
+- ValidaÃ§Ã£o em ambiente relevante
+- DemonstraÃ§Ã£o em ambiente operacional
 
-**Proteção PI:**
-- 📝 Patentes provisórias
-- 🔍 Freedom-to-operate
-- 🌍 Definição territorial
+**ProteÃ§Ã£o PI:**
+- ðŸ“ Patentes provisÃ³rias
+- ðŸ” Freedom-to-operate
+- ðŸŒ DefiniÃ§Ã£o territorial
 :::
 :::
 
 ::: {.column width="33%"}
-### TRL 7-9: Avançado
+### TRL 7-9: AvanÃ§ado
 ::: {.box}
-**Foco: Comercialização**
-- Protótipo em ambiente operacional
+**Foco: ComercializaÃ§Ã£o**
+- ProtÃ³tipo em ambiente operacional
 - Sistema completo qualificado
-- Sistema comprovado em operação
+- Sistema comprovado em operaÃ§Ã£o
 
-**Proteção PI:**
-- ✅ Patentes definitivas
-- 🎨 Registros de design
-- ™️ Marcas comerciais
+**ProteÃ§Ã£o PI:**
+- âœ… Patentes definitivas
+- ðŸŽ¨ Registros de design
+- â„¢ï¸ Marcas comerciais
 :::
 :::
 ::::
 
 ::: {.fragment}
 ::: {.info-box}
-**Resultado:** Sincronização assegura que recursos não sejam desperdiçados em proteção prematura, evitando divulgações que comprometam a novidade.
+**Resultado:** SincronizaÃ§Ã£o assegura que recursos nÃ£o sejam desperdiÃ§ados em proteÃ§Ã£o prematura, evitando divulgaÃ§Ãµes que comprometam a novidade.
 :::
 :::
 
@@ -423,15 +422,15 @@ Cada atividade de inovação do Manual de Oslo é acompanhada de verificações 
 
 ::: {.columns}
 ::: {.column width="55%"}
-Exemplo de invenção que completou o ciclo TRL (1-9) com proteção patentária:
+Exemplo de invenÃ§Ã£o que completou o ciclo TRL (1-9) com proteÃ§Ã£o patentÃ¡ria:
 
-- **TRL 1-3:** Concepção e prova de conceito em laboratório
-- **TRL 4-6:** Validação em campo e proteção provisória
-- **TRL 7-9:** Patente definitiva e transferência
+- **TRL 1-3:** ConcepÃ§Ã£o e prova de conceito em laboratÃ³rio
+- **TRL 4-6:** ValidaÃ§Ã£o em campo e proteÃ§Ã£o provisÃ³ria
+- **TRL 7-9:** Patente definitiva e transferÃªncia
 :::
 
 ::: {.column width="45%"}
-![Desenho técnico  -  Patente de amostrador de solo](../../img/patente_amostrador.png){width="100%"}
+![Desenho tÃ©cnico  -  Patente de amostrador de solo](../../img/patente_amostrador.png){width="100%"}
 :::
 :::
 
@@ -455,19 +454,19 @@ graph LR
     I[Ideia] --> G0{Gate 0<br/>Triagem}
     G0 -->|Go| S1[Stage 1<br/>Escopo]
     
-    S1 --> G1{Gate 1<br/>Análise<br/>PI}
+    S1 --> G1{Gate 1<br/>AnÃ¡lise<br/>PI}
     G1 -->|Go| S2[Stage 2<br/>Business Case]
-    G1 -->|Kill| K[❌]
+    G1 -->|Kill| K[âŒ]
     S2 --> G2{Gate 2<br/>Viabilidade}
     
     G2 -->|Go| S3[Stage 3<br/>Desenvolvimento]
-    G2 -->|Hold| H[⏸️]
+    G2 -->|Hold| H[â¸ï¸]
     G2 -->|Kill| K
     
     S3 --> G3{Gate 3<br/>Teste}
-    G3 -->|Go| S4[Stage 4<br/>Validação]
-    S4 --> G4{Gate 4<br/>Lançamento}
-    G4 -->|Go| S5[Stage 5<br/>Comercialização]
+    G3 -->|Go| S4[Stage 4<br/>ValidaÃ§Ã£o]
+    S4 --> G4{Gate 4<br/>LanÃ§amento}
+    G4 -->|Go| S5[Stage 5<br/>ComercializaÃ§Ã£o]
     
     style I fill:#003366,color:#fff
     style G0 fill:#FF8C00,color:#fff
@@ -493,29 +492,29 @@ graph LR
 %%| fig-height: 7
 graph TB
     subgraph "Stage 1: Escopo (TRL 1-2)"
-    A[Busca Preliminar<br/>Anterioridade] --> B[Disclosure de<br/>Invenção]
-    B --> C[Segredo ou<br/>Publicação?]
+    A[Busca Preliminar<br/>Anterioridade] --> B[Disclosure de<br/>InvenÃ§Ã£o]
+    B --> C[Segredo ou<br/>PublicaÃ§Ã£o?]
     end
     
     subgraph "Stage 2: Business Case (TRL 3-4)"
-    D[Busca Completa<br/>Anterioridade] --> E[Análise FTO]
-    E --> F[Estratégia Territorial]
-    F --> G[Orçamento PI]
+    D[Busca Completa<br/>Anterioridade] --> E[AnÃ¡lise FTO]
+    E --> F[EstratÃ©gia Territorial]
+    F --> G[OrÃ§amento PI]
     end
     
     subgraph "Stage 3: Desenvolvimento (TRL 5-6)"
-    H[Depósito Patente<br/>Provisório] --> I[Validação<br/>Técnica]
+    H[DepÃ³sito Patente<br/>ProvisÃ³rio] --> I[ValidaÃ§Ã£o<br/>TÃ©cnica]
     I --> J[Patente Definitiva<br/>+ PCT?]
     end
     
-    subgraph "Stage 4: Validação (TRL 7-8)"
-    K[Proteção<br/>Complementar] --> L[Design Industrial<br/>Marca]
-    L --> M[Valoração de<br/>Ativos]
+    subgraph "Stage 4: ValidaÃ§Ã£o (TRL 7-8)"
+    K[ProteÃ§Ã£o<br/>Complementar] --> L[Design Industrial<br/>Marca]
+    L --> M[ValoraÃ§Ã£o de<br/>Ativos]
     end
     
-    subgraph "Stage 5: Comercialização (TRL 9)"
+    subgraph "Stage 5: ComercializaÃ§Ã£o (TRL 9)"
     N[Licenciamento] --> O[Spin-off]
-    O --> P[Exploração<br/>Direta]
+    O --> P[ExploraÃ§Ã£o<br/>Direta]
     end
     
     C --> D
@@ -531,50 +530,50 @@ graph TB
 
 ---
 
-## Exemplo: Permeâmetro Patenteado {.smaller-text}
+## Exemplo: PermeÃ¢metro Patenteado {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
-O permeâmetro ilustra uma invenção que percorreu todo o fluxo Stage-Gate + TRL:
+O permeÃ¢metro ilustra uma invenÃ§Ã£o que percorreu todo o fluxo Stage-Gate + TRL:
 
-- **Stage 1 (Scoping):** Identificação da necessidade de medir permeabilidade *in situ*
-- **Stage 3 (Desenvolvimento):** Protótipo funcional + depósito provisório
-- **Stage 5 (Lançamento):** Patente concedida + licenciamento
+- **Stage 1 (Scoping):** IdentificaÃ§Ã£o da necessidade de medir permeabilidade *in situ*
+- **Stage 3 (Desenvolvimento):** ProtÃ³tipo funcional + depÃ³sito provisÃ³rio
+- **Stage 5 (LanÃ§amento):** Patente concedida + licenciamento
 :::
 
 ::: {.column width="45%"}
-![Figura de patente  -  Permeâmetro de campo](../../img/patente_permeametro.jpg){width="100%"}
+![Figura de patente  -  PermeÃ¢metro de campo](../../img/patente_permeametro.jpg){width="100%"}
 :::
 :::
 
 ---
 
-## Convergência Stage-Gate + ISO 56005
+## ConvergÃªncia Stage-Gate + ISO 56005
 
 ::: {.info-box}
-**Harmonização Estratégica**
+**HarmonizaÃ§Ã£o EstratÃ©gica**
 
-Quando o modelo Stage-Gate é harmonizado com a ISO 56005, cada gate incorpora:
+Quando o modelo Stage-Gate Ã© harmonizado com a ISO 56005, cada gate incorpora:
 :::
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Entregáveis de PI
+### EntregÃ¡veis de PI
 
-- 📋 Relatórios de anterioridade
-- 🔍 Análises de freedom-to-operate
-- 💡 Formulários de divulgação de invenções
-- 🌐 Estratégias territoriais
-- 💼 Planos de exploração comercial
+- ðŸ“‹ RelatÃ³rios de anterioridade
+- ðŸ” AnÃ¡lises de freedom-to-operate
+- ðŸ’¡ FormulÃ¡rios de divulgaÃ§Ã£o de invenÃ§Ãµes
+- ðŸŒ EstratÃ©gias territoriais
+- ðŸ’¼ Planos de exploraÃ§Ã£o comercial
 :::
 
 ::: {.column width="50%"}
-### Benefícios
+### BenefÃ­cios
 
-- ✅ Rastreabilidade das decisões
-- ⚖️ Proteção jurídica em cada etapa
-- 📊 Governança aprimorada
-- 🎯 SGPI operacional efetivo
+- âœ… Rastreabilidade das decisÃµes
+- âš–ï¸ ProteÃ§Ã£o jurÃ­dica em cada etapa
+- ðŸ“Š GovernanÃ§a aprimorada
+- ðŸŽ¯ SGPI operacional efetivo
 :::
 ::::
 
@@ -585,7 +584,7 @@ Quando o modelo Stage-Gate é harmonizado com a ISO 56005, cada gate incorpora:
 ::: {.box}
 **Anexos Informativos da ABNT NBR ISO 56005:2023**
 
-A norma detalha instrumentos práticos para padronizar coleta de informações e tomada de decisão:
+A norma detalha instrumentos prÃ¡ticos para padronizar coleta de informaÃ§Ãµes e tomada de decisÃ£o:
 :::
 
 :::: {.columns}
@@ -593,27 +592,27 @@ A norma detalha instrumentos práticos para padronizar coleta de informações e
 ### Documentos Estruturados
 
 1. **Invention Disclosure Form**
-   - Formulário de divulgação de invenção
-   - Captura sistemática de informações
-   - Padronização de dados
+   - FormulÃ¡rio de divulgaÃ§Ã£o de invenÃ§Ã£o
+   - Captura sistemÃ¡tica de informaÃ§Ãµes
+   - PadronizaÃ§Ã£o de dados
 
 2. **Employee PI Management Guide**
-   - Guia para atividades de PI com funcionários
+   - Guia para atividades de PI com funcionÃ¡rios
    - Direitos e deveres
-   - Incentivos à divulgação
+   - Incentivos Ã  divulgaÃ§Ã£o
 :::
 
 ::: {.column width="50%"}
-### Ferramentas de Avaliação
+### Ferramentas de AvaliaÃ§Ã£o
 
 3. **DPI Assessment Tools**
-   - Ferramentas para avaliação de PI
-   - Análise de valor
-   - Priorização de ativos
+   - Ferramentas para avaliaÃ§Ã£o de PI
+   - AnÃ¡lise de valor
+   - PriorizaÃ§Ã£o de ativos
 
 ::: {.fragment}
 ::: {.highlight-box}
-**Objetivo:** Transformar conhecimento tácito em processos estruturados e auditáveis dentro do SGPI
+**Objetivo:** Transformar conhecimento tÃ¡cito em processos estruturados e auditÃ¡veis dentro do SGPI
 :::
 :::
 :::
@@ -631,18 +630,18 @@ A norma detalha instrumentos práticos para padronizar coleta de informações e
 ### Indicadores de INPUT
 
 ::: {.box}
-- 💰 Investimento total em atividades de inovação
-- 🔍 Recursos em busca de anterioridade
-- 📊 Recursos em análise de freedom-to-operate
-- 💳 Custos de depósito e manutenção de ativos
+- ðŸ’° Investimento total em atividades de inovaÃ§Ã£o
+- ðŸ” Recursos em busca de anterioridade
+- ðŸ“Š Recursos em anÃ¡lise de freedom-to-operate
+- ðŸ’³ Custos de depÃ³sito e manutenÃ§Ã£o de ativos
 :::
 
 ### Indicadores de PROCESSO
 
 ::: {.box}
-- ⏱️ Tempo médio: invenção → decisão de proteção
-- ✅ Taxa de aprovação nos gates
-- 🎯 Alinhamento portfólio PI vs estratégia
+- â±ï¸ Tempo mÃ©dio: invenÃ§Ã£o â†’ decisÃ£o de proteÃ§Ã£o
+- âœ… Taxa de aprovaÃ§Ã£o nos gates
+- ðŸŽ¯ Alinhamento portfÃ³lio PI vs estratÃ©gia
 :::
 :::
 
@@ -650,19 +649,19 @@ A norma detalha instrumentos práticos para padronizar coleta de informações e
 ### Indicadores de OUTPUT
 
 ::: {.box}
-- 📜 Número de patentes **concedidas**
-- 💻 Registros de software efetivados
-- 🤝 Contratos de licenciamento firmados
-- 💵 Receita de royalties
+- ðŸ“œ NÃºmero de patentes **concedidas**
+- ðŸ’» Registros de software efetivados
+- ðŸ¤ Contratos de licenciamento firmados
+- ðŸ’µ Receita de royalties
 :::
 
 ### Indicadores de IMPACTO
 
 ::: {.box}
-- 📈 % receita de produtos com PI
-- 🏆 Market share de inovações patenteadas
-- 💹 Redução de custos operacionais
-- 🌟 Valor de mercado atribuível a PI
+- ðŸ“ˆ % receita de produtos com PI
+- ðŸ† Market share de inovaÃ§Ãµes patenteadas
+- ðŸ’¹ ReduÃ§Ã£o de custos operacionais
+- ðŸŒŸ Valor de mercado atribuÃ­vel a PI
 :::
 :::
 ::::
@@ -687,20 +686,20 @@ graph TB
     A --> D
     A --> E
     
-    B --> B1[Investimento em<br/>atividades de inovação]
-    B --> B2[Recursos em PI<br/>busca + análise]
+    B --> B1[Investimento em<br/>atividades de inovaÃ§Ã£o]
+    B --> B2[Recursos em PI<br/>busca + anÃ¡lise]
     
-    C --> C1[Tempo médio<br/>invenção → proteção]
-    C --> C2[Taxa aprovação<br/>gates decisórios]
-    C --> C3[Alinhamento<br/>portfólio-estratégia]
+    C --> C1[Tempo mÃ©dio<br/>invenÃ§Ã£o â†’ proteÃ§Ã£o]
+    C --> C2[Taxa aprovaÃ§Ã£o<br/>gates decisÃ³rios]
+    C --> C3[Alinhamento<br/>portfÃ³lio-estratÃ©gia]
     
     D --> D1[Patentes concedidas]
     D --> D2[Contratos de<br/>licenciamento]
     D --> D3[Receita de royalties]
     
     E --> E1[% receita de<br/>produtos com PI]
-    E --> E2[Market share<br/>inovações patenteadas]
-    E --> E3[Valor de mercado<br/>atribuível a PI]
+    E --> E2[Market share<br/>inovaÃ§Ãµes patenteadas]
+    E --> E3[Valor de mercado<br/>atribuÃ­vel a PI]
     
     T1[TRL 1-3] -.-> B
     T2[TRL 4-6] -.-> C
@@ -718,17 +717,17 @@ graph TB
 
 ---
 
-## Mensuração e Decisão Estratégica
+## MensuraÃ§Ã£o e DecisÃ£o EstratÃ©gica
 
 ::: {.highlight-box}
 **Alinhamento TRL + Stage-Gate + Indicadores**
 
 A arquitetura de indicadores permite:
 
-1. 📊 Avaliar eficácia do SGPI em diferentes estágios de maturidade tecnológica
-2. 🎯 Orientar decisões de continuidade/descontinuidade de projetos
-3. 🔄 Melhoria contínua baseada em evidências
-4. 🌍 Benchmarking com padrões internacionais
+1. ðŸ“Š Avaliar eficÃ¡cia do SGPI em diferentes estÃ¡gios de maturidade tecnolÃ³gica
+2. ðŸŽ¯ Orientar decisÃµes de continuidade/descontinuidade de projetos
+3. ðŸ”„ Melhoria contÃ­nua baseada em evidÃªncias
+4. ðŸŒ Benchmarking com padrÃµes internacionais
 :::
 
 # [Capacidades Organizacionais]{.section-header}
@@ -749,15 +748,15 @@ A arquitetura de indicadores permite:
 %%| fig-height: 5
 flowchart LR
     %% Blocos principais
-    A[Fontes de conhecimento<br/>Complementaridade<br/>Experiência] --> B
-    B["<b>Capacidade Absortiva Potencial</b><br/>Aquisição • Assimilação"] --> C
-    C["<b>Capacidade Absortiva Realizada</b><br/>Transformação • Exploração"] --> D
-    D[Vantagem competitiva<br/>Flexibilidade estratégica<br/>Inovação • Performance]
+    A[Fontes de conhecimento<br/>Complementaridade<br/>ExperiÃªncia] --> B
+    B["<b>Capacidade Absortiva Potencial</b><br/>AquisiÃ§Ã£o â€¢ AssimilaÃ§Ã£o"] --> C
+    C["<b>Capacidade Absortiva Realizada</b><br/>TransformaÃ§Ã£o â€¢ ExploraÃ§Ã£o"] --> D
+    D[Vantagem competitiva<br/>Flexibilidade estratÃ©gica<br/>InovaÃ§Ã£o â€¢ Performance]
 
     %% Gatilhos e mecanismos
     E((Gatilhos)) -.-> B
-    F((Mecanismos de<br/>integração social)) -.-> C
-    G((Regime de<br/>apropriação)) -.-> D
+    F((Mecanismos de<br/>integraÃ§Ã£o social)) -.-> C
+    G((Regime de<br/>apropriaÃ§Ã£o)) -.-> D
 
     style A fill:#0066CC,stroke:#003366,stroke-width:2px,color:#fff,font-weight:bold
     style B fill:#0099FF,stroke:#003366,stroke-width:2px,color:#fff,font-weight:bold
@@ -769,27 +768,27 @@ flowchart LR
 ```
 
 ::: {.info-box}
-**Cohen & Levinthal (1990):** Aptidão de reconhecer, assimilar e aplicar comercialmente conhecimento externo, dependente de trajetórias anteriores de investimento (path dependency)
+**Cohen & Levinthal (1990):** AptidÃ£o de reconhecer, assimilar e aplicar comercialmente conhecimento externo, dependente de trajetÃ³rias anteriores de investimento (path dependency)
 :::
 
 ---
 
-## Dimensões da Capacidade Absortiva
+## DimensÃµes da Capacidade Absortiva
 
 :::: {.columns}
 ::: {.column width="50%"}
 ### Capacidade Potencial
 
 ::: {.box}
-**1. Aquisição**
-- Identificação de conhecimento valioso
-- Monitoramento tecnológico
+**1. AquisiÃ§Ã£o**
+- IdentificaÃ§Ã£o de conhecimento valioso
+- Monitoramento tecnolÃ³gico
 - Scanning do ambiente
 
-**2. Assimilação**
-- Absorção de conhecimento externo
-- Tradução para contexto interno
-- Codificação e armazenamento
+**2. AssimilaÃ§Ã£o**
+- AbsorÃ§Ã£o de conhecimento externo
+- TraduÃ§Ã£o para contexto interno
+- CodificaÃ§Ã£o e armazenamento
 :::
 :::
 
@@ -797,14 +796,14 @@ flowchart LR
 ### Capacidade Realizada
 
 ::: {.box}
-**3. Transformação**
-- Combinação com conhecimento existente
-- Reconfiguração de recursos
-- Adaptação organizacional
+**3. TransformaÃ§Ã£o**
+- CombinaÃ§Ã£o com conhecimento existente
+- ReconfiguraÃ§Ã£o de recursos
+- AdaptaÃ§Ã£o organizacional
 
-**4. Exploração**
-- Aplicação comercial
-- Geração de inovação
+**4. ExploraÃ§Ã£o**
+- AplicaÃ§Ã£o comercial
+- GeraÃ§Ã£o de inovaÃ§Ã£o
 - Captura de valor
 :::
 :::
@@ -812,30 +811,30 @@ flowchart LR
 
 ---
 
-## Capacidades Dinâmicas (Teece, 2007)
+## Capacidades DinÃ¢micas (Teece, 2007)
 
-![Capacidades Dinâmicas](Figuras/dynamic_capabilities.png){width="70%"}
+![Capacidades DinÃ¢micas](Figuras/dynamic_capabilities.png){width="70%"}
 
 ---
 
-## Modelo de Capacidades Dinâmicas (Teece, 2007) {.smaller-text}
+## Modelo de Capacidades DinÃ¢micas (Teece, 2007) {.smaller-text}
 
 ```{mermaid}
 %%| fig-width: 12
 %%| fig-height: 5
 flowchart LR
-    %% Elementos componentes à esquerda
-    A1[Comportamentos e habilidades<br/>de mudança e inovação] --> C
-    A2[Processos e rotinas de<br/>busca ou inovação] --> C
-    A3[Mecanismos de aprendizagem<br/>e governança do conhecimento] --> C
+    %% Elementos componentes Ã  esquerda
+    A1[Comportamentos e habilidades<br/>de mudanÃ§a e inovaÃ§Ã£o] --> C
+    A2[Processos e rotinas de<br/>busca ou inovaÃ§Ã£o] --> C
+    A3[Mecanismos de aprendizagem<br/>e governanÃ§a do conhecimento] --> C
 
     %% Bloco central
-    C([<b>Capacidades<br/>Dinâmicas</b>])
+    C([<b>Capacidades<br/>DinÃ¢micas</b>])
 
-    %% Indicadores à direita
-    C --> B1[Geração de ideias e<br/>introdução de rupturas]
-    C --> B2[Mudanças<br/>organizacionais]
-    C --> B3[Inovação e<br/>novos mercados]
+    %% Indicadores Ã  direita
+    C --> B1[GeraÃ§Ã£o de ideias e<br/>introduÃ§Ã£o de rupturas]
+    C --> B2[MudanÃ§as<br/>organizacionais]
+    C --> B3[InovaÃ§Ã£o e<br/>novos mercados]
 
     style A1 fill:#0099FF,stroke:#003366,stroke-width:2px,color:#fff,font-weight:bold
     style A2 fill:#0099FF,stroke:#003366,stroke-width:2px,color:#fff,font-weight:bold
@@ -848,7 +847,7 @@ flowchart LR
 
 ---
 
-## Três Pilares das Capacidades Dinâmicas {.smaller-text}
+## TrÃªs Pilares das Capacidades DinÃ¢micas {.smaller-text}
 
 :::: {.columns}
 ::: {.column width="33%"}
@@ -857,9 +856,9 @@ flowchart LR
 **Perceber Oportunidades**
 
 - Scanning do ambiente
-- Identificação de tendências
+- IdentificaÃ§Ã£o de tendÃªncias
 - Monitoramento de concorrentes
-- Análise de sinais fracos
+- AnÃ¡lise de sinais fracos
 :::
 :::
 
@@ -868,10 +867,10 @@ flowchart LR
 ::: {.box}
 **Mobilizar Recursos**
 
-- Alocação de recursos
-- Estruturação de projetos
-- Decisões de investimento
-- Formação de parcerias
+- AlocaÃ§Ã£o de recursos
+- EstruturaÃ§Ã£o de projetos
+- DecisÃµes de investimento
+- FormaÃ§Ã£o de parcerias
 :::
 :::
 
@@ -880,17 +879,17 @@ flowchart LR
 ::: {.box}
 **Transformar Ativos**
 
-- Reconfiguração contínua
-- Adaptação à mudança
-- Renovação da base de ativos
-- Evolução organizacional
+- ReconfiguraÃ§Ã£o contÃ­nua
+- AdaptaÃ§Ã£o Ã  mudanÃ§a
+- RenovaÃ§Ã£o da base de ativos
+- EvoluÃ§Ã£o organizacional
 :::
 :::
 ::::
 
 ::: {.fragment}
 ::: {.highlight-box}
-**Contexto:** Habilidade essencial em ambientes incertos e turbulentos, permitindo transformação contínua da organização
+**Contexto:** Habilidade essencial em ambientes incertos e turbulentos, permitindo transformaÃ§Ã£o contÃ­nua da organizaÃ§Ã£o
 :::
 :::
 
@@ -899,42 +898,42 @@ flowchart LR
 ## Cultura de Propriedade Intelectual {.smaller-text}
 
 ::: {.info-box}
-**Seção 4.4 da NBR ISO 56005:2023**
+**SeÃ§Ã£o 4.4 da NBR ISO 56005:2023**
 
-Elemento essencial previsto na norma, sustentado pelas capacidades absortiva e dinâmica
+Elemento essencial previsto na norma, sustentado pelas capacidades absortiva e dinÃ¢mica
 :::
 
 :::: {.columns}
 ::: {.column width="50%"}
 ### Componentes da Cultura de PI
 
-1. **Disseminação de Conhecimento**
+1. **DisseminaÃ§Ã£o de Conhecimento**
    - Treinamentos regulares
    - Workshops sobre PI
    - Materiais educativos
 
-2. **Incentivo à Divulgação**
+2. **Incentivo Ã  DivulgaÃ§Ã£o**
    - Reconhecimento de inventores
-   - Recompensas por divulgações
-   - Facilitação do processo
+   - Recompensas por divulgaÃ§Ãµes
+   - FacilitaÃ§Ã£o do processo
 :::
 
 ::: {.column width="50%"}
-3. **Promoção da Confidencialidade**
-   - Políticas de sigilo
+3. **PromoÃ§Ã£o da Confidencialidade**
+   - PolÃ­ticas de sigilo
    - NDAs padronizados
-   - Gestão de acesso à informação
+   - GestÃ£o de acesso Ã  informaÃ§Ã£o
 
 4. **Cumprimento de Prazos Legais**
-   - Calendário de PI
-   - Alertas automáticos
+   - CalendÃ¡rio de PI
+   - Alertas automÃ¡ticos
    - Responsabilidades definidas
 :::
 ::::
 
 ::: {.fragment}
 ::: {.box}
-**Resultado:** Ambidestria organizacional - equilíbrio entre exploração de novas oportunidades e eficiência na proteção/valorização de ativos existentes
+**Resultado:** Ambidestria organizacional - equilÃ­brio entre exploraÃ§Ã£o de novas oportunidades e eficiÃªncia na proteÃ§Ã£o/valorizaÃ§Ã£o de ativos existentes
 :::
 :::
 
@@ -943,55 +942,55 @@ Elemento essencial previsto na norma, sustentado pelas capacidades absortiva e d
 ![](Figuras/patent_development_flow.png){width="25%"}
 :::
 
-## Ferramentas Analíticas de PI {.smaller-text}
+## Ferramentas AnalÃ­ticas de PI {.smaller-text}
 
 ::: {.info-box}
-**Instrumentos de Apoio à Decisão**
+**Instrumentos de Apoio Ã  DecisÃ£o**
 
-A ISO 56005 é apoiada por ferramentas que padronizam coleta de informações e subsidiam decisões técnicas e estratégicas
+A ISO 56005 Ã© apoiada por ferramentas que padronizam coleta de informaÃ§Ãµes e subsidiam decisÃµes tÃ©cnicas e estratÃ©gicas
 :::
 
-![Aparelho de vistada de amostra de solo  -  exemplo de invenção sujeita a análise FTO e Patent Landscape](../../img/patente_vistada_solo.png){fig-align="center" width="50%"}
+![Aparelho de vistada de amostra de solo  -  exemplo de invenÃ§Ã£o sujeita a anÃ¡lise FTO e Patent Landscape](../../img/patente_vistada_solo.png){fig-align="center" width="50%"}
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Ferramentas de Análise Técnica
+### Ferramentas de AnÃ¡lise TÃ©cnica
 
 ::: {.box}
-**1. Paisagem Patentária (Patent Landscape)**
-- Mapeamento tecnológico completo
-- Identificação de white spaces
-- Análise de tendências de patenteamento
+**1. Paisagem PatentÃ¡ria (Patent Landscape)**
+- Mapeamento tecnolÃ³gico completo
+- IdentificaÃ§Ã£o de white spaces
+- AnÃ¡lise de tendÃªncias de patenteamento
 - Posicionamento competitivo
 :::
 
 ::: {.fragment}
 ::: {.box}
 **2. Freedom-to-Operate (FTO)**
-- Análise de risco de infração
-- Identificação de patentes bloqueadoras
-- Estratégias de contorno (design around)
-- Due diligence jurídica
+- AnÃ¡lise de risco de infraÃ§Ã£o
+- IdentificaÃ§Ã£o de patentes bloqueadoras
+- EstratÃ©gias de contorno (design around)
+- Due diligence jurÃ­dica
 :::
 :::
 :::
 
 ::: {.column width="50%"}
 ::: {.fragment}
-### Ferramentas de Valoração
+### Ferramentas de ValoraÃ§Ã£o
 
 ::: {.box}
-**3. Valoração de Intangíveis**
-- **Método de Custo:** custos de desenvolvimento
-- **Método de Mercado:** transações comparáveis
-- **Método de Renda:** fluxo de caixa futuro
-- **Opções Reais:** flexibilidade estratégica
+**3. ValoraÃ§Ã£o de IntangÃ­veis**
+- **MÃ©todo de Custo:** custos de desenvolvimento
+- **MÃ©todo de Mercado:** transaÃ§Ãµes comparÃ¡veis
+- **MÃ©todo de Renda:** fluxo de caixa futuro
+- **OpÃ§Ãµes Reais:** flexibilidade estratÃ©gica
 :::
 :::
 
 ::: {.fragment}
 ::: {.highlight-box}
-**Integração:** Ferramentas usadas em diferentes gates do Stage-Gate conforme maturidade tecnológica (TRL)
+**IntegraÃ§Ã£o:** Ferramentas usadas em diferentes gates do Stage-Gate conforme maturidade tecnolÃ³gica (TRL)
 :::
 :::
 :::
@@ -1004,7 +1003,7 @@ A ISO 56005 é apoiada por ferramentas que padronizam coleta de informações e 
 ::: {.box}
 **ABNT NBR ISO 56005:2023 - Anexos Informativos**
 
-Instrumentos práticos que transformam conhecimento tácito em processos estruturados e auditáveis
+Instrumentos prÃ¡ticos que transformam conhecimento tÃ¡cito em processos estruturados e auditÃ¡veis
 :::
 
 ```{mermaid}
@@ -1023,23 +1022,23 @@ graph TB
     A --> D
     A --> E
     
-    B --> B1[Captura sistemática<br/>de informações]
-    B --> B2[Descrição técnica<br/>detalhada]
-    B --> B3[Identificação de<br/>inventores]
-    B --> B4[Avaliação preliminar<br/>de patenteabilidade]
+    B --> B1[Captura sistemÃ¡tica<br/>de informaÃ§Ãµes]
+    B --> B2[DescriÃ§Ã£o tÃ©cnica<br/>detalhada]
+    B --> B3[IdentificaÃ§Ã£o de<br/>inventores]
+    B --> B4[AvaliaÃ§Ã£o preliminar<br/>de patenteabilidade]
     
-    C --> C1[Direitos e deveres<br/>dos funcionários]
-    C --> C2[Incentivos à<br/>divulgação]
-    C --> C3[Políticas de<br/>confidencialidade]
+    C --> C1[Direitos e deveres<br/>dos funcionÃ¡rios]
+    C --> C2[Incentivos Ã <br/>divulgaÃ§Ã£o]
+    C --> C3[PolÃ­ticas de<br/>confidencialidade]
     C --> C4[Cumprimento de<br/>prazos legais]
     
-    D --> D1[Análise de valor<br/>de ativos]
-    D --> D2[Priorização de<br/>proteções]
-    D --> D3[Gestão de<br/>portfólio]
-    D --> D4[Decisões de<br/>manutenção]
+    D --> D1[AnÃ¡lise de valor<br/>de ativos]
+    D --> D2[PriorizaÃ§Ã£o de<br/>proteÃ§Ãµes]
+    D --> D3[GestÃ£o de<br/>portfÃ³lio]
+    D --> D4[DecisÃµes de<br/>manutenÃ§Ã£o]
     
     E --> E1[Guias de PI em<br/>contratos]
-    E --> E2[Cláusulas<br/>padronizadas]
+    E --> E2[ClÃ¡usulas<br/>padronizadas]
     E --> E3[NDAs e<br/>confidencialidade]
     E --> E4[Acordos de<br/>co-desenvolvimento]
     
@@ -1052,23 +1051,23 @@ graph TB
 
 ---
 
-## Formulário de Divulgação de Invenção {.smaller-text}
+## FormulÃ¡rio de DivulgaÃ§Ã£o de InvenÃ§Ã£o {.smaller-text}
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Seções Principais do IDF
+### SeÃ§Ãµes Principais do IDF
 
 ::: {.box}
-**1. Informações Básicas**
-- Título da invenção
-- Data de concepção
-- Lista de inventores e contribuições
-- Vínculo institucional
+**1. InformaÃ§Ãµes BÃ¡sicas**
+- TÃ­tulo da invenÃ§Ã£o
+- Data de concepÃ§Ã£o
+- Lista de inventores e contribuiÃ§Ãµes
+- VÃ­nculo institucional
 
-**2. Descrição Técnica**
-- Problema técnico resolvido
-- Estado da técnica (prior art)
-- Solução proposta
+**2. DescriÃ§Ã£o TÃ©cnica**
+- Problema tÃ©cnico resolvido
+- Estado da tÃ©cnica (prior art)
+- SoluÃ§Ã£o proposta
 - Vantagens e diferenciais
 :::
 :::
@@ -1076,62 +1075,62 @@ graph TB
 ::: {.column width="50%"}
 ::: {.box}
 **3. Aspectos Comerciais**
-- Aplicações potenciais
+- AplicaÃ§Ãµes potenciais
 - Mercados-alvo
 - Competidores conhecidos
 - Estimativa de demanda
 
-**4. Informações de PI**
-- Divulgações anteriores
-- Publicações relacionadas
+**4. InformaÃ§Ãµes de PI**
+- DivulgaÃ§Ãµes anteriores
+- PublicaÃ§Ãµes relacionadas
 - Segredos comerciais envolvidos
-- Urgência de proteção
+- UrgÃªncia de proteÃ§Ã£o
 :::
 
 ::: {.fragment}
 ::: {.info-box}
-**Função:** Captura sistemática que alimenta decisões de proteção nos gates do Stage-Gate
+**FunÃ§Ã£o:** Captura sistemÃ¡tica que alimenta decisÃµes de proteÃ§Ã£o nos gates do Stage-Gate
 :::
 :::
 :::
 ::::
 
-# [Colaboração e PI]{.section-header}
+# [ColaboraÃ§Ã£o e PI]{.section-header}
 ::: {style="text-align: right; padding-top: 100px; padding-right: 50px;"}
 ![](Figuras/patent_development_flow.png){width="25%"}
 :::
 
-## Gestão de PI em Projetos Colaborativos {.smaller-text}
+## GestÃ£o de PI em Projetos Colaborativos {.smaller-text}
 
 ::: {.highlight-box}
-**Relevância (Manual de Oslo)**
+**RelevÃ¢ncia (Manual de Oslo)**
 
-Cooperação identificada como fonte primária de conhecimento externo para inovação
+CooperaÃ§Ã£o identificada como fonte primÃ¡ria de conhecimento externo para inovaÃ§Ã£o
 
-**478 ocorrências** no Manual de Oslo
+**478 ocorrÃªncias** no Manual de Oslo
 :::
 
 :::: {.columns}
 ::: {.column width="50%"}
 ### Desafios em Co-desenvolvimento
 
-- Múltiplos parceiros
-- Contribuições heterogêneas
+- MÃºltiplos parceiros
+- ContribuiÃ§Ãµes heterogÃªneas
 - Assimetrias informacionais
 - Risco de conflitos futuros
 - Complexidade contratual
 :::
 
 ::: {.column width="50%"}
-### Exigências do SGPI (ex ante)
+### ExigÃªncias do SGPI (ex ante)
 
 1. **Regime de Titularidade**
    - PI conjunta
    - PI separada
-   - PI proporcional à contribuição
+   - PI proporcional Ã  contribuiÃ§Ã£o
 
-2. **Direitos de Exploração**
-   - Exclusivos vs não-exclusivos
+2. **Direitos de ExploraÃ§Ã£o**
+   - Exclusivos vs nÃ£o-exclusivos
    - Territorialidade
    - Sublicenciamento
 :::
@@ -1139,12 +1138,12 @@ Cooperação identificada como fonte primária de conhecimento externo para inov
 
 ---
 
-## Definições Contratuais Ex Ante {.smaller-text}
+## DefiniÃ§Ãµes Contratuais Ex Ante {.smaller-text}
 
 ::: {.highlight-box}
-**Princípio Fundamental**
+**PrincÃ­pio Fundamental**
 
-Todos os aspectos de PI devem ser estabelecidos **antes** (ex ante) do início do projeto colaborativo
+Todos os aspectos de PI devem ser estabelecidos **antes** (ex ante) do inÃ­cio do projeto colaborativo
 :::
 
 :::: {.columns}
@@ -1152,39 +1151,39 @@ Todos os aspectos de PI devem ser estabelecidos **antes** (ex ante) do início d
 ### 1. Regime de Titularidade
 
 ::: {.box}
-**Opções de Titularidade:**
+**OpÃ§Ãµes de Titularidade:**
 
 - **PI Conjunta (Joint Ownership)**
   - Todos os parceiros co-titulares
-  - Decisões por consenso
+  - DecisÃµes por consenso
 
 - **PI Separada**
-  - Cada parceiro titular de suas contribuições
-  - Licenças cruzadas quando necessário
+  - Cada parceiro titular de suas contribuiÃ§Ãµes
+  - LicenÃ§as cruzadas quando necessÃ¡rio
 
 - **PI Proporcional**
-  - Titularidade proporcional à contribuição
-  - Requer métrica de avaliação acordada
+  - Titularidade proporcional Ã  contribuiÃ§Ã£o
+  - Requer mÃ©trica de avaliaÃ§Ã£o acordada
 :::
 :::
 
 ::: {.column width="50%"}
-### 2. Direitos de Exploração
+### 2. Direitos de ExploraÃ§Ã£o
 
 ::: {.box}
-**Definições Necessárias:**
+**DefiniÃ§Ãµes NecessÃ¡rias:**
 
 - **Exclusividade**
-  - Direitos exclusivos vs não-exclusivos
-  - Por território geográfico
-  - Por campo de aplicação
+  - Direitos exclusivos vs nÃ£o-exclusivos
+  - Por territÃ³rio geogrÃ¡fico
+  - Por campo de aplicaÃ§Ã£o
 
 - **Sublicenciamento**
-  - Permissão para sublicenciar
-  - Condições e royalties
+  - PermissÃ£o para sublicenciar
+  - CondiÃ§Ãµes e royalties
 
 - **Background vs Foreground IP**
-  - Conhecimento prévio (background)
+  - Conhecimento prÃ©vio (background)
   - Conhecimento gerado (foreground)
 :::
 :::
@@ -1192,53 +1191,53 @@ Todos os aspectos de PI devem ser estabelecidos **antes** (ex ante) do início d
 
 ---
 
-## Instrumentos de Gestão Colaborativa
+## Instrumentos de GestÃ£o Colaborativa
 
 ::: {.box}
-**Recomendações da ISO 56005**
+**RecomendaÃ§Ãµes da ISO 56005**
 
-Uso de instrumentos padronizados para reduzir custos de transação e assimetrias informacionais
+Uso de instrumentos padronizados para reduzir custos de transaÃ§Ã£o e assimetrias informacionais
 :::
 
 :::: {.columns}
 ::: {.column width="50%"}
 ### Documentos Contratuais
 
-- 📄 **Term Sheets**
-  - Termos preliminares não-vinculantes
-  - Intenções e objetivos das partes
-  - Base para negociação detalhada
+- ðŸ“„ **Term Sheets**
+  - Termos preliminares nÃ£o-vinculantes
+  - IntenÃ§Ãµes e objetivos das partes
+  - Base para negociaÃ§Ã£o detalhada
 
-- 🤝 **Acordos de Co-desenvolvimento**
-  - Responsabilidades técnicas detalhadas
-  - Marcos (milestones) e entregáveis
-  - Cronogramas e orçamentos
+- ðŸ¤ **Acordos de Co-desenvolvimento**
+  - Responsabilidades tÃ©cnicas detalhadas
+  - Marcos (milestones) e entregÃ¡veis
+  - Cronogramas e orÃ§amentos
 
-- ⚖️ **Joint Ownership Agreements**
+- âš–ï¸ **Joint Ownership Agreements**
   - Titularidade compartilhada definida
-  - Regras de exploração comercial
-  - Divisão de custos de manutenção
+  - Regras de exploraÃ§Ã£o comercial
+  - DivisÃ£o de custos de manutenÃ§Ã£o
 :::
 
 ::: {.column width="50%"}
-### Cláusulas Essenciais
+### ClÃ¡usulas Essenciais
 
 ::: {.box}
-**3. Confidencialidade e Não-Competição**
-- NDAs específicos para o projeto
-- Períodos de proteção pós-projeto
-- Exceções permitidas
+**3. Confidencialidade e NÃ£o-CompetiÃ§Ã£o**
+- NDAs especÃ­ficos para o projeto
+- PerÃ­odos de proteÃ§Ã£o pÃ³s-projeto
+- ExceÃ§Ãµes permitidas
 
-**4. Resolução de Disputas**
-- Arbitragem como primeira instância
-- Mediação prévia obrigatória
-- Jurisdição e lei aplicável
-- Cláusulas escalonadas (escalation)
+**4. ResoluÃ§Ã£o de Disputas**
+- Arbitragem como primeira instÃ¢ncia
+- MediaÃ§Ã£o prÃ©via obrigatÃ³ria
+- JurisdiÃ§Ã£o e lei aplicÃ¡vel
+- ClÃ¡usulas escalonadas (escalation)
 :::
 
 ::: {.fragment}
 ::: {.info-box}
-**Benefício:** Clareza contratual prévia mitiga conflitos futuros e acelera comercialização conjunta
+**BenefÃ­cio:** Clareza contratual prÃ©via mitiga conflitos futuros e acelera comercializaÃ§Ã£o conjunta
 :::
 :::
 :::
@@ -1246,17 +1245,17 @@ Uso de instrumentos padronizados para reduzir custos de transação e assimetria
 
 ---
 
-## Redução de Custos de Transação {.smaller-text}
+## ReduÃ§Ã£o de Custos de TransaÃ§Ã£o {.smaller-text}
 
 ```{mermaid}
 %%| fig-width: 12
 %%| fig-height: 6
 graph LR
-    A[Instrumentos<br/>Padronizados<br/>ISO 56005] --> B[Redução de<br/>Assimetrias<br/>Informacionais]
+    A[Instrumentos<br/>Padronizados<br/>ISO 56005] --> B[ReduÃ§Ã£o de<br/>Assimetrias<br/>Informacionais]
     
-    B --> C[Menor Custo<br/>de Transação]
+    B --> C[Menor Custo<br/>de TransaÃ§Ã£o]
     
-    C --> D[Aceleração<br/>da Comercialização]
+    C --> D[AceleraÃ§Ã£o<br/>da ComercializaÃ§Ã£o]
     
     E[Term Sheets] --> A
     F[Co-dev Agreements] --> A
@@ -1264,8 +1263,8 @@ graph LR
     H[NDAs Padronizados] --> A
     
     D --> I[Maior ROI<br/>em P&D<br/>Colaborativo]
-    D --> J[Parcerias<br/>Mais Ágeis]
-    D --> K[Menos<br/>Litígios]
+    D --> J[Parcerias<br/>Mais Ãgeis]
+    D --> K[Menos<br/>LitÃ­gios]
     
     style A fill:#00703C,stroke:#333,stroke-width:3px,color:#fff
     style B fill:#2196F3,stroke:#333,stroke-width:2px,color:#fff
@@ -1277,24 +1276,24 @@ graph LR
 ```
 
 ::: {.info-box}
-**Teoria dos Custos de Transação (Williamson, 1985):** Contratos bem estruturados reduzem oportunismo e incerteza, facilitando cooperação
+**Teoria dos Custos de TransaÃ§Ã£o (Williamson, 1985):** Contratos bem estruturados reduzem oportunismo e incerteza, facilitando cooperaÃ§Ã£o
 :::
 
 
-# [Obstáculos à Inovação]{.section-header}
+# [ObstÃ¡culos Ã  InovaÃ§Ã£o]{.section-header}
 ::: {style="text-align: right; padding-top: 100px; padding-right: 50px;"}
 ![](Figuras/gestao_inovacao_modelos.png){width="25%"}
 :::
 
-## 4 Dimensões de Obstáculos (Manual de Oslo) {.smaller-text}
+## 4 DimensÃµes de ObstÃ¡culos (Manual de Oslo) {.smaller-text}
 
 ```{mermaid}
 %%| fig-width: 12
 %%| fig-height: 7
 graph TB
-    A[Obstáculos à Gestão de PI<br/>em Projetos de Inovação]
+    A[ObstÃ¡culos Ã  GestÃ£o de PI<br/>em Projetos de InovaÃ§Ã£o]
     
-    B[Econômicos]
+    B[EconÃ´micos]
     C[Conhecimento]
     D[Mercado]
     E[Institucionais]
@@ -1305,11 +1304,11 @@ graph TB
     A --> E
     
     B --> B1[Custos de<br/>patenteamento<br/>internacional]
-    B --> B2[Manutenção de<br/>portfólios extensos]
+    B --> B2[ManutenÃ§Ã£o de<br/>portfÃ³lios extensos]
     B --> B3[Valley of death:<br/>financiamento-ponte]
     
     C --> C1[Falta de pessoal<br/>qualificado em PI]
-    C --> C2[Assimetrias na<br/>valoração de ativos]
+    C --> C2[Assimetrias na<br/>valoraÃ§Ã£o de ativos]
     C --> C3[Desconhecimento<br/>de mecanismos]
     
     D --> D1[Incerteza sobre<br/>demanda futura]
@@ -1317,7 +1316,7 @@ graph TB
     D --> D3[Mercados dominados<br/>por patentes essenciais]
     
     E --> E1[Backlog do INPI:<br/>morosidade]
-    E --> E2[Divergências<br/>regulatórias]
+    E --> E2[DivergÃªncias<br/>regulatÃ³rias]
     E --> E3[Fragilidades no<br/>enforcement]
     
     style A fill:#00703C,stroke:#333,stroke-width:3px,color:#fff
@@ -1329,90 +1328,90 @@ graph TB
 
 ---
 
-## Mitigação de Obstáculos {.smaller-text}
+## MitigaÃ§Ã£o de ObstÃ¡culos {.smaller-text}
 
 ::: {.info-box}
 **Proposta da ISO 56005**
 
-O SGPI deve incorporar análise sistemática de obstáculos com planos de mitigação específicos para cada categoria
+O SGPI deve incorporar anÃ¡lise sistemÃ¡tica de obstÃ¡culos com planos de mitigaÃ§Ã£o especÃ­ficos para cada categoria
 :::
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Estratégias Econômicas
+### EstratÃ©gias EconÃ´micas
 
-- 💰 Priorização territorial inteligente
-- 🤝 Consórcios para redução de custos
-- 💵 Acesso a fundos de inovação
-- 📊 Gestão de portfólio otimizada
+- ðŸ’° PriorizaÃ§Ã£o territorial inteligente
+- ðŸ¤ ConsÃ³rcios para reduÃ§Ã£o de custos
+- ðŸ’µ Acesso a fundos de inovaÃ§Ã£o
+- ðŸ“Š GestÃ£o de portfÃ³lio otimizada
 
-### Estratégias de Conhecimento
+### EstratÃ©gias de Conhecimento
 
-- 🎓 Programas de capacitação contínua
-- 🔍 Parcerias com especialistas
-- 📚 Bases de conhecimento internas
-- 🏛️ Colaboração com ICTs
+- ðŸŽ“ Programas de capacitaÃ§Ã£o contÃ­nua
+- ðŸ” Parcerias com especialistas
+- ðŸ“š Bases de conhecimento internas
+- ðŸ›ï¸ ColaboraÃ§Ã£o com ICTs
 :::
 
 ::: {.column width="50%"}
-### Estratégias de Mercado
+### EstratÃ©gias de Mercado
 
-- 📈 Estudos de inteligência competitiva
-- 🌐 Plataformas de matching
-- 🔓 Análise de patent pools
-- 🤝 Licenciamento cruzado
+- ðŸ“ˆ Estudos de inteligÃªncia competitiva
+- ðŸŒ Plataformas de matching
+- ðŸ”“ AnÃ¡lise de patent pools
+- ðŸ¤ Licenciamento cruzado
 
-### Estratégias Institucionais
+### EstratÃ©gias Institucionais
 
-- ⚡ Exame prioritário (fast-track)
-- 🌍 Protocolo PCT estratégico
-- ⚖️ Arbitragem alternativa
-- 🛡️ Seguros de PI
+- âš¡ Exame prioritÃ¡rio (fast-track)
+- ðŸŒ Protocolo PCT estratÃ©gico
+- âš–ï¸ Arbitragem alternativa
+- ðŸ›¡ï¸ Seguros de PI
 :::
 ::::
 
 ---
 
-## Resiliência do SGPI
+## ResiliÃªncia do SGPI
 
 ::: {.box}
-**Objetivo da Análise de Obstáculos**
+**Objetivo da AnÃ¡lise de ObstÃ¡culos**
 
-Assegurar **resiliência** dos projetos de inovação diante de adversidades previsíveis, transformando riscos em oportunidades de melhoria contínua
+Assegurar **resiliÃªncia** dos projetos de inovaÃ§Ã£o diante de adversidades previsÃ­veis, transformando riscos em oportunidades de melhoria contÃ­nua
 :::
 
 ::: {.fragment}
 ::: {.highlight-box}
 **Resultado Esperado:**
 
-- ✅ Antecipação de problemas
-- 🎯 Planos de contingência
-- 📊 Monitoramento sistemático
-- 🔄 Aprendizado organizacional
+- âœ… AntecipaÃ§Ã£o de problemas
+- ðŸŽ¯ Planos de contingÃªncia
+- ðŸ“Š Monitoramento sistemÃ¡tico
+- ðŸ”„ Aprendizado organizacional
 :::
 :::
 
 
-# [Marco Regulatório]{.section-header}
+# [Marco RegulatÃ³rio]{.section-header}
 ::: {style="text-align: right; padding-top: 100px; padding-right: 50px;"}
 ![](Figuras/patent_development_flow.png){width="25%"}
 :::
 
-## Integração: Ferramentas + Marco Legal + Indicadores {.smaller-text}
+## IntegraÃ§Ã£o: Ferramentas + Marco Legal + Indicadores {.smaller-text}
 
 ::: {.info-box}
-**Ecossistema Completo de Gestão de PI**
+**Ecossistema Completo de GestÃ£o de PI**
 
-A ISO 56005 integra ferramentas analíticas, marco legal e indicadores de desempenho em sistema coeso
+A ISO 56005 integra ferramentas analÃ­ticas, marco legal e indicadores de desempenho em sistema coeso
 :::
 
 ```{mermaid}
 %%| fig-width: 12
 %%| fig-height: 7
 graph TB
-    A[Sistema de Gestão<br/>de PI - SGPI]
+    A[Sistema de GestÃ£o<br/>de PI - SGPI]
     
-    B[Ferramentas<br/>Analíticas]
+    B[Ferramentas<br/>AnalÃ­ticas]
     C[Marco Legal<br/>Brasileiro]
     D[Indicadores de<br/>Desempenho]
     
@@ -1420,13 +1419,13 @@ graph TB
     A --> C
     A --> D
     
-    B --> B1[Paisagem Patentária]
+    B --> B1[Paisagem PatentÃ¡ria]
     B --> B2[Freedom-to-Operate]
-    B --> B3[Valoração]
+    B --> B3[ValoraÃ§Ã£o]
     B --> B4[IDF]
     
     C --> C1[Lei 9.279/1996<br/>Propriedade Industrial]
-    C --> C2[Lei 10.973/2004<br/>Inovação]
+    C --> C2[Lei 10.973/2004<br/>InovaÃ§Ã£o]
     C --> C3[Res. CNPq 30/2020<br/>Bolsas]
     C --> C4[Port. MCTI 1.122/2020<br/>ICTs]
     
@@ -1435,7 +1434,7 @@ graph TB
     D --> D3[Output:<br/>Patentes/Contratos]
     D --> D4[Impacto:<br/>Receita/Market Share]
     
-    E[Rastreabilidade<br/>Transparência<br/>Conformidade] --> A
+    E[Rastreabilidade<br/>TransparÃªncia<br/>Conformidade] --> A
     
     style A fill:#00703C,stroke:#333,stroke-width:4px,color:#fff
     style B fill:#2196F3,stroke:#333,stroke-width:2px,color:#fff
@@ -1446,36 +1445,36 @@ graph TB
 
 ---
 
-## Ferramentas Analíticas Integradas {.smaller-text}
+## Ferramentas AnalÃ­ticas Integradas {.smaller-text}
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Instrumentos de Apoio à Decisão
+### Instrumentos de Apoio Ã  DecisÃ£o
 
 ::: {.box}
-**1. Paisagem Patentária (Patent Landscape)**
-- Mapeamento tecnológico completo do setor
-- Identificação de white spaces (oportunidades)
-- Análise de tendências temporais
+**1. Paisagem PatentÃ¡ria (Patent Landscape)**
+- Mapeamento tecnolÃ³gico completo do setor
+- IdentificaÃ§Ã£o de white spaces (oportunidades)
+- AnÃ¡lise de tendÃªncias temporais
 - Posicionamento competitivo relativo
 
-**2. Análise de Liberdade de Operação (FTO)**
-- Identificação de patentes bloqueadoras
-- Avaliação de risco de infração
-- Estratégias de design around
-- Due diligence jurídica pré-investimento
+**2. AnÃ¡lise de Liberdade de OperaÃ§Ã£o (FTO)**
+- IdentificaÃ§Ã£o de patentes bloqueadoras
+- AvaliaÃ§Ã£o de risco de infraÃ§Ã£o
+- EstratÃ©gias de design around
+- Due diligence jurÃ­dica prÃ©-investimento
 :::
 :::
 
 ::: {.column width="50%"}
 ::: {.box}
-**3. Valoração de Intangíveis**
-- **Custo:** custos históricos de P&D
-- **Mercado:** transações comparáveis
+**3. ValoraÃ§Ã£o de IntangÃ­veis**
+- **Custo:** custos histÃ³ricos de P&D
+- **Mercado:** transaÃ§Ãµes comparÃ¡veis
 - **Renda:** fluxo de caixa descontado
-- **Opções Reais:** flexibilidade de expansão
+- **OpÃ§Ãµes Reais:** flexibilidade de expansÃ£o
 
-**4. Formulários e Guias**
+**4. FormulÃ¡rios e Guias**
 - Invention Disclosure Form (IDF)
 - Employee PI Management Guide
 - Contract Management Templates
@@ -1484,7 +1483,7 @@ graph TB
 
 ::: {.fragment}
 ::: {.info-box}
-**Função:** Reduzir assimetrias informacionais e subsidiar decisões nos gates do Stage-Gate
+**FunÃ§Ã£o:** Reduzir assimetrias informacionais e subsidiar decisÃµes nos gates do Stage-Gate
 :::
 :::
 :::
@@ -1492,58 +1491,58 @@ graph TB
 
 ---
 
-## Marco Legal Brasileiro Aplicável {.smaller-text}
+## Marco Legal Brasileiro AplicÃ¡vel {.smaller-text}
 
 ::: {.box}
-**Arcabouço Regulatório para Gestão de PI em Projetos de Inovação**
+**ArcabouÃ§o RegulatÃ³rio para GestÃ£o de PI em Projetos de InovaÃ§Ã£o**
 :::
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Legislação Fundamental
+### LegislaÃ§Ã£o Fundamental
 
 ::: {.box}
-**⚖️ Lei nº 9.279/1996 - LPI**
-- Regula direitos e obrigações de PI
-- Define patenteabilidade e exclusões
-- Procedimentos de depósito e concessão
-- Infrações e penalidades
+**âš–ï¸ Lei nÂº 9.279/1996 - LPI**
+- Regula direitos e obrigaÃ§Ãµes de PI
+- Define patenteabilidade e exclusÃµes
+- Procedimentos de depÃ³sito e concessÃ£o
+- InfraÃ§Ãµes e penalidades
 
-**🔬 Lei nº 10.973/2004 - Lei de Inovação**
-- Incentivos à inovação no ambiente produtivo
-- Participação de ICTs em projetos
-- Compartilhamento de laboratórios
-- Criação de NITs (Núcleos de Inovação)
+**ðŸ”¬ Lei nÂº 10.973/2004 - Lei de InovaÃ§Ã£o**
+- Incentivos Ã  inovaÃ§Ã£o no ambiente produtivo
+- ParticipaÃ§Ã£o de ICTs em projetos
+- Compartilhamento de laboratÃ³rios
+- CriaÃ§Ã£o de NITs (NÃºcleos de InovaÃ§Ã£o)
 :::
 :::
 
 ::: {.column width="50%"}
-### Regulamentação Complementar
+### RegulamentaÃ§Ã£o Complementar
 
 ::: {.box}
-**🎓 Resolução CNPq nº 30/2020**
-- Disciplina concessão de bolsas de pesquisa
+**ðŸŽ“ ResoluÃ§Ã£o CNPq nÂº 30/2020**
+- Disciplina concessÃ£o de bolsas de pesquisa
 - Define titularidade de PI em bolsas
 - Estabelece direitos e deveres de bolsistas
-- Regula compartilhamento de benefícios
+- Regula compartilhamento de benefÃ­cios
 
-**🏛️ Portaria MCTI nº 1.122/2020**
-- Diretrizes para gestão de PI em ICTs
-- Política institucional de PI obrigatória
-- Composição e atribuições dos NITs
-- Prestação de contas de resultados
+**ðŸ›ï¸ Portaria MCTI nÂº 1.122/2020**
+- Diretrizes para gestÃ£o de PI em ICTs
+- PolÃ­tica institucional de PI obrigatÃ³ria
+- ComposiÃ§Ã£o e atribuiÃ§Ãµes dos NITs
+- PrestaÃ§Ã£o de contas de resultados
 :::
 :::
 ::::
 
 ---
 
-## Rastreabilidade e Transparência do SGPI
+## Rastreabilidade e TransparÃªncia do SGPI
 
 ::: {.highlight-box}
-**ISO 56005 + Marco Legal: Sistema Auditável**
+**ISO 56005 + Marco Legal: Sistema AuditÃ¡vel**
 
-A combinação de ferramentas padronizadas com arcabouço legal robusto fortalece governança da inovação
+A combinaÃ§Ã£o de ferramentas padronizadas com arcabouÃ§o legal robusto fortalece governanÃ§a da inovaÃ§Ã£o
 :::
 
 :::: {.columns}
@@ -1551,70 +1550,70 @@ A combinação de ferramentas padronizadas com arcabouço legal robusto fortalec
 ### Rastreabilidade
 
 ::: {.box}
-- 📋 **Documentação Completa**
-  - Todas as decisões de PI registradas
-  - Formulários padronizados (IDF, etc.)
+- ðŸ“‹ **DocumentaÃ§Ã£o Completa**
+  - Todas as decisÃµes de PI registradas
+  - FormulÃ¡rios padronizados (IDF, etc.)
 
-- 🔗 **Trilhas de Auditoria**
-  - Histórico de avaliações e pareceres
-  - Versionamento de decisões
+- ðŸ”— **Trilhas de Auditoria**
+  - HistÃ³rico de avaliaÃ§Ãµes e pareceres
+  - Versionamento de decisÃµes
 
-- ⏱️ **Cronogramas Verificáveis**
+- â±ï¸ **Cronogramas VerificÃ¡veis**
   - Cumprimento de prazos legais
-  - Alertas automáticos de deadlines
+  - Alertas automÃ¡ticos de deadlines
 :::
 :::
 
 ::: {.column width="50%"}
-### Transparência
+### TransparÃªncia
 
 ::: {.box}
-- 👁️ **Visibilidade de Processos**
+- ðŸ‘ï¸ **Visibilidade de Processos**
   - Dashboards de acompanhamento
-  - Relatórios periódicos
+  - RelatÃ³rios periÃ³dicos
 
-- 📈 **Indicadores Públicos**
+- ðŸ“ˆ **Indicadores PÃºblicos**
   - Input, processo, output, impacto
   - Comparabilidade com benchmarks
 
-- ✅ **Conformidade Regulatória**
-  - Alinhamento com Lei de Inovação
-  - Prestação de contas a agências de fomento
+- âœ… **Conformidade RegulatÃ³ria**
+  - Alinhamento com Lei de InovaÃ§Ã£o
+  - PrestaÃ§Ã£o de contas a agÃªncias de fomento
 :::
 :::
 ::::
 
 ::: {.fragment}
 ::: {.info-box}
-**Resultado:** SGPI que transforma práticas empíricas em processos estruturados, mensuráveis e auditáveis
+**Resultado:** SGPI que transforma prÃ¡ticas empÃ­ricas em processos estruturados, mensurÃ¡veis e auditÃ¡veis
 :::
 :::
 
-# [Conclusão]{.section-header}
+# [ConclusÃ£o]{.section-header}
 ::: {style="text-align: right; padding-top: 100px; padding-right: 50px;"}
 ![](Figuras/innovation_project_management.png){width="25%"}
 :::
 
-## Síntese: Integração PI-Inovação {.smaller-text}
+## SÃ­ntese: IntegraÃ§Ã£o PI-InovaÃ§Ã£o {.smaller-text}
 
 ::: {.box}
 **Elemento Central para Competitividade**
 
-A integração entre gestão da inovação e propriedade intelectual constitui elemento central para a competitividade e sustentabilidade tecnológica das organizações
+A integraÃ§Ã£o entre gestÃ£o da inovaÃ§Ã£o e propriedade intelectual constitui elemento central para a competitividade e sustentabilidade tecnolÃ³gica das organizaÃ§Ãµes
 :::
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Evolução Histórica
+### EvoluÃ§Ã£o HistÃ³rica
 
-- Modelos lineares → interativos → abertos
-- Empirismo → padronização normativa
+- Modelos lineares â†’ interativos â†’ abertos
+- Empirismo â†’ padronizaÃ§Ã£o normativa
 - ISO 56000 + Manual de Oslo
 
 ### Instrumentos Operacionais
 
 - Stage-Gate harmonizado com ISO 56005
-- TRL sincronizado com estratégia de PI
+- TRL sincronizado com estratÃ©gia de PI
 - Framework de indicadores integrado
 :::
 
@@ -1622,61 +1621,61 @@ A integração entre gestão da inovação e propriedade intelectual constitui e
 ### Capacidades Essenciais
 
 - Capacidade absortiva (Cohen & Levinthal)
-- Capacidades dinâmicas (Teece)
+- Capacidades dinÃ¢micas (Teece)
 - Cultura organizacional de PI
 
-### Arcabouço Estruturado
+### ArcabouÃ§o Estruturado
 
-- Ciência + Direito + Gestão
-- PI: instrumento jurídico → componente estratégico
-- Governança da inovação robusta
+- CiÃªncia + Direito + GestÃ£o
+- PI: instrumento jurÃ­dico â†’ componente estratÃ©gico
+- GovernanÃ§a da inovaÃ§Ã£o robusta
 :::
 ::::
 
 
-## Transformação Estratégica
+## TransformaÃ§Ã£o EstratÃ©gica
 
 ::: {.info-box style="font-size: 1.1em;"}
-**Quando aplicada de forma sistêmica, essa integração permite:**
+**Quando aplicada de forma sistÃªmica, essa integraÃ§Ã£o permite:**
 :::
 
 :::: {.columns}
 ::: {.column width="50%"}
-### Conversão de Valor
+### ConversÃ£o de Valor
 
-- 💡 **Conhecimento** → **Valor econômico**
-- 🌱 **Inovação** → **Impacto social**
-- 🌍 **Tecnologia** → **Sustentabilidade ambiental**
+- ðŸ’¡ **Conhecimento** â†’ **Valor econÃ´mico**
+- ðŸŒ± **InovaÃ§Ã£o** â†’ **Impacto social**
+- ðŸŒ **Tecnologia** â†’ **Sustentabilidade ambiental**
 :::
 
 ::: {.column width="50%"}
 ### Fortalecimento Institucional
 
-- 📈 Maturidade institucional ampliada
-- 💪 Capacidade de gerar riqueza
-- 🏆 Capacidade de reter valor
-- 🔄 Ciclo virtuoso de inovação
+- ðŸ“ˆ Maturidade institucional ampliada
+- ðŸ’ª Capacidade de gerar riqueza
+- ðŸ† Capacidade de reter valor
+- ðŸ”„ Ciclo virtuoso de inovaÃ§Ã£o
 :::
 ::::
 
 ::: {.fragment}
 ::: {.highlight-box}
-**Resultado Final:** Organizações com SGPI efetivo convertem sistematicamente conhecimento em vantagem competitiva sustentável baseada em inovação
+**Resultado Final:** OrganizaÃ§Ãµes com SGPI efetivo convertem sistematicamente conhecimento em vantagem competitiva sustentÃ¡vel baseada em inovaÃ§Ã£o
 :::
 :::
 
 
-# [Referências]{.section-header}
+# [ReferÃªncias]{.section-header}
 
 ## Bibliografia {.smaller-text style="font-size: 0.7em;"}
 
 :::: {.columns}
 ::: {.column width="50%"}
 **Normas e Manuais**
-- OCDE/Eurostat. *Manual de Oslo: Diretrizes para Coleta e Interpretação de Dados sobre Inovação*. 3ª edição. FINEP, 2005.
-- ABNT NBR ISO 56005:2023. *Gestão da inovação - Ferramentas e métodos para gestão da propriedade intelectual*. 2023.
+- OCDE/Eurostat. *Manual de Oslo: Diretrizes para Coleta e InterpretaÃ§Ã£o de Dados sobre InovaÃ§Ã£o*. 3Âª ediÃ§Ã£o. FINEP, 2005.
+- ABNT NBR ISO 56005:2023. *GestÃ£o da inovaÃ§Ã£o - Ferramentas e mÃ©todos para gestÃ£o da propriedade intelectual*. 2023.
 
-**Modelos de Gestão**
+**Modelos de GestÃ£o**
 - Chesbrough, H. *Open Innovation: The New Imperative for Creating and Profiting from Technology*. Harvard Business School Press, 2003.
 - Cooper, R.G. *Stage-gate systems: a new tool for managing new products*. Business Horizons, 1990.
 - Cooper, R.G. *Perspective: The Stage-Gate idea-to-launch process - Update, what's new, and NexGen systems*. Journal of Product Innovation Management, 2008.
@@ -1695,7 +1694,7 @@ A integração entre gestão da inovação e propriedade intelectual constitui e
 - Grant, R.M. *Toward a knowledge-based theory of the firm*. Strategic Management Journal, 1996.
 - Williamson, O.E. *The Economic Institutions of Capitalism*. Free Press, 1985.
 
-**Ecossistemas de Inovação**
+**Ecossistemas de InovaÃ§Ã£o**
 - Etzkowitz, H.; Leydesdorff, L. *The dynamics of innovation: from National Systems and "Mode 2" to a Triple Helix of university-industry-government relations*. Research Policy, 2000.
 - Gawer, A.; Cusumano, M.A. *Industry platforms and ecosystem innovation*. Journal of Product Innovation Management, 2014.
 
@@ -1707,22 +1706,22 @@ A integração entre gestão da inovação e propriedade intelectual constitui e
 
 ---
 
-## Legislação {.smaller-text}
+## LegislaÃ§Ã£o {.smaller-text}
 
 ::: {.box}
 **Marco Legal Brasileiro**
 
-- **Lei nº 9.279, de 14 de maio de 1996**  
-  Regula direitos e obrigações relativos à propriedade industrial.
+- **Lei nÂº 9.279, de 14 de maio de 1996**  
+  Regula direitos e obrigaÃ§Ãµes relativos Ã  propriedade industrial.
 
-- **Lei nº 10.973, de 2 de dezembro de 2004**  
-  Dispõe sobre incentivos à inovação e à pesquisa científica e tecnológica no ambiente produtivo (Lei de Inovação).
+- **Lei nÂº 10.973, de 2 de dezembro de 2004**  
+  DispÃµe sobre incentivos Ã  inovaÃ§Ã£o e Ã  pesquisa cientÃ­fica e tecnolÃ³gica no ambiente produtivo (Lei de InovaÃ§Ã£o).
 
-- **Resolução CNPq nº 30/2020**  
-  Disciplina a concessão de bolsas e a propriedade intelectual decorrente.
+- **ResoluÃ§Ã£o CNPq nÂº 30/2020**  
+  Disciplina a concessÃ£o de bolsas e a propriedade intelectual decorrente.
 
-- **Portaria MCTI nº 1.122/2020**  
-  Estabelece diretrizes para a gestão da propriedade intelectual nas Instituições Científicas, Tecnológicas e de Inovação (ICTs).
+- **Portaria MCTI nÂº 1.122/2020**  
+  Estabelece diretrizes para a gestÃ£o da propriedade intelectual nas InstituiÃ§Ãµes CientÃ­ficas, TecnolÃ³gicas e de InovaÃ§Ã£o (ICTs).
 :::
 
 ---
@@ -1732,7 +1731,7 @@ A integração entre gestão da inovação e propriedade intelectual constitui e
 ::: {style="color: white; text-align: center; padding-top: 250px;"}
 # Obrigado!
 
-### Gestão de Projetos de Inovação com Foco em PI
+### GestÃ£o de Projetos de InovaÃ§Ã£o com Foco em PI
 
 **Tema 5 - UEFS**
 :::

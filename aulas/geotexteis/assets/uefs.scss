@@ -1,11 +1,16 @@
 /*-- scss:defaults --*/
 
-/* Cores Oficiais UFS - Manual de Marca (Padrão Cromático) */
-$ufs-amarelo: #FDB913;          /* Pantone 1235 C - Cor Principal */
-$ufs-vermelho: #ED1C24;         /* Pantone 1788 C - Cor Secundária */
-$ufs-azul: #034EA2;             /* Pantone 2728 C - Cor Secundária */
-$ufs-cinza-escuro: #58595B;     /* Cinza para textos */
-$ufs-cinza-claro: #D1D3D4;      /* Cinza para backgrounds */
+/* Nova Paleta de Cores */
+$ufs-azul: #2135A6;              /* Azul Principal */
+$ufs-azul-profundo: #27368C;     /* Azul Profundo */
+$ufs-azul-apoio: #586BA6;        /* Azul de Apoio */
+$ufs-fundo-claro: #F2F2F2;       /* Fundo Claro */
+$ufs-contraste: #0D0D0D;         /* Contraste Tipográfico */
+/* Aliases para compatibilidade */
+$ufs-amarelo: #586BA6;
+$ufs-vermelho: #27368C;
+$ufs-cinza-escuro: #0D0D0D;
+$ufs-cinza-claro: #F2F2F2;
 
 $body-bg: #ffffff;
 $body-color: $ufs-cinza-escuro;
@@ -54,7 +59,7 @@ $presentation-font-size-root: 40px;
 .reveal .slide blockquote {
   border-left: 5px solid $ufs-amarelo;
   padding-left: 1em;
-  background-color: rgba(253, 185, 19, 0.08);
+  background-color: rgba(88, 107, 166, 0.08);
 }
 
 .reveal strong,

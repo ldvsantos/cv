@@ -1,13 +1,11 @@
 ---
-title: "Análise da Paisagem"
+title: "AnÃ¡lise da Paisagem"
 subtitle: "Extra: Modelagem Quantitativa de Paisagem<br>Curso de Geografia"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
-date: "2026"
 format:
   revealjs:
     logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise da Paisagem | Extra: Modelagem Quantitativa"
+    footer: "UEFS | AnÃ¡lise da Paisagem | Extra: Modelagem Quantitativa"
     slide-number: true
     theme: [simple, ../../../assets/uefs.scss]
     controls: true
@@ -21,52 +19,52 @@ execute:
   echo: false
 ---
 
-## Visão Geral da Aula {.smaller-text}
+## VisÃ£o Geral da Aula {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Tópicos
+### TÃ³picos
 
 - [1]{.circle} Modelagem: por que quantificar a paisagem?
-- [2]{.circle} Modelos de mudança de uso do solo (LUCC)
+- [2]{.circle} Modelos de mudanÃ§a de uso do solo (LUCC)
 - [3]{.circle} Modelos de conectividade e grafos
-- [4]{.circle} Modelos de simulação de cenários futuros
+- [4]{.circle} Modelos de simulaÃ§Ã£o de cenÃ¡rios futuros
 - [5]{.circle} Ferramentas: Dinamica EGO, InVEST, Circuitscape
-- [6]{.circle} Limitações e cuidados na modelagem
+- [6]{.circle} LimitaÃ§Ãµes e cuidados na modelagem
 :::
 
 ::: {.column width="50%"}
 ::: {.info-box}
-**Aula Extra — Complementar**
+**Aula Extra â€” Complementar**
 
-Esta aula apresenta **modelos quantitativos** usados na ecologia da paisagem para simular cenários, avaliar conectividade funcional e projetar mudanças futuras. Exige conhecimentos prévios de métricas (FRAGSTATS) e SIG.
+Esta aula apresenta **modelos quantitativos** usados na ecologia da paisagem para simular cenÃ¡rios, avaliar conectividade funcional e projetar mudanÃ§as futuras. Exige conhecimentos prÃ©vios de mÃ©tricas (FRAGSTATS) e SIG.
 :::
 :::
 :::
 
 # [1  -  POR QUE MODELAR?]{.section-header}
 
-## Da descrição à predição {.smaller-text}
+## Da descriÃ§Ã£o Ã  prediÃ§Ã£o {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
 As aulas regulares da disciplina focam em:
 
-- **Descrever** a paisagem (métricas, mapeamento, classificação)
-- **Diagnosticar** problemas (fragmentação, conflito de uso)
-- **Planejar** intervenções (restauração, zoneamento)
+- **Descrever** a paisagem (mÃ©tricas, mapeamento, classificaÃ§Ã£o)
+- **Diagnosticar** problemas (fragmentaÃ§Ã£o, conflito de uso)
+- **Planejar** intervenÃ§Ãµes (restauraÃ§Ã£o, zoneamento)
 
 A modelagem acrescenta:
 
-- **Predizer** cenários futuros (o que acontecerá em 2030, 2050?)
+- **Predizer** cenÃ¡rios futuros (o que acontecerÃ¡ em 2030, 2050?)
 - **Simular** alternativas (e se restaurarmos 20% da RL?)
-- **Quantificar** serviços ecossistêmicos (quanto vale a conectividade?)
-- **Testar hipóteses** (a fragmentação causa perda de espécies?)
+- **Quantificar** serviÃ§os ecossistÃªmicos (quanto vale a conectividade?)
+- **Testar hipÃ³teses** (a fragmentaÃ§Ã£o causa perda de espÃ©cies?)
 :::
 
 ::: {.column width="45%"}
 ```{dot}
-//| fig-cap: "Progressão analítica: de descritivo a preditivo."
+//| fig-cap: "ProgressÃ£o analÃ­tica: de descritivo a preditivo."
 //| fig-width: 5
 digraph {
     rankdir=TB
@@ -74,45 +72,45 @@ digraph {
     node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=9, margin="0.2,0.1", penwidth=0.8]
     edge [color="#555555", penwidth=1.0]
 
-    D [label="DESCREVER\nMétricas, mapas", fillcolor="#E3F2FD", color="#1565C0"]
+    D [label="DESCREVER\nMÃ©tricas, mapas", fillcolor="#E3F2FD", color="#1565C0"]
     DI [label="DIAGNOSTICAR\nProblemas, conflitos", fillcolor="#C8E6C9", color="#2E7D32"]
-    PL [label="PLANEJAR\nZoneamento, restauração", fillcolor="#FFE0B2", color="#E65100"]
-    PR [label="PREDIZER\nCenários, simulações", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
+    PL [label="PLANEJAR\nZoneamento, restauraÃ§Ã£o", fillcolor="#FFE0B2", color="#E65100"]
+    PR [label="PREDIZER\nCenÃ¡rios, simulaÃ§Ãµes", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
 
     D -> DI -> PL -> PR
 }
 ```
 
 ::: {.callout-note}
-A modelagem NÃO substitui o diagnóstico — ela o **complementa** com poder preditivo.
+A modelagem NÃƒO substitui o diagnÃ³stico â€” ela o **complementa** com poder preditivo.
 :::
 :::
 :::
 
-# [2  -  MODELOS DE MUDANÇA DE USO (LUCC)]{.section-header}
+# [2  -  MODELOS DE MUDANÃ‡A DE USO (LUCC)]{.section-header}
 
 ## Land Use and Cover Change {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
-Modelos LUCC projetam **transições** entre classes de uso:
+Modelos LUCC projetam **transiÃ§Ãµes** entre classes de uso:
 
 ### Abordagem geral
 
-1. **Calibração**: mapas de 2 datas (ex.: 2000 e 2010) → calcular taxa de transição
-2. **Variáveis explicativas**: distância a estradas, altitude, declividade, distância a fragmentos, aptidão agrícola
-3. **Modelo de transição**: regressão logística, pesos de evidência, redes neurais
-4. **Validação**: projetar para 2020 e comparar com mapa real
-5. **Simulação**: projetar para 2030, 2050
+1. **CalibraÃ§Ã£o**: mapas de 2 datas (ex.: 2000 e 2010) â†’ calcular taxa de transiÃ§Ã£o
+2. **VariÃ¡veis explicativas**: distÃ¢ncia a estradas, altitude, declividade, distÃ¢ncia a fragmentos, aptidÃ£o agrÃ­cola
+3. **Modelo de transiÃ§Ã£o**: regressÃ£o logÃ­stica, pesos de evidÃªncia, redes neurais
+4. **ValidaÃ§Ã£o**: projetar para 2020 e comparar com mapa real
+5. **SimulaÃ§Ã£o**: projetar para 2030, 2050
 
 ### Modelos mais usados
 
 | Modelo | Abordagem | Plataforma |
 |:-------|:----------|:-----------|
-| **Dinamica EGO** | Autômato celular + pesos de evidência | Desktop (gratuito) |
-| **CLUE-S** | Regressão logística + regras top-down | Desktop |
+| **Dinamica EGO** | AutÃ´mato celular + pesos de evidÃªncia | Desktop (gratuito) |
+| **CLUE-S** | RegressÃ£o logÃ­stica + regras top-down | Desktop |
 | **LCM (TerrSet)** | Redes neurais + cadeias de Markov | TerrSet (pago) |
-| **FLUS** | Redes neurais + autômato celular | Desktop (gratuito) |
+| **FLUS** | Redes neurais + autÃ´mato celular | Desktop (gratuito) |
 :::
 
 ::: {.column width="45%"}
@@ -126,12 +124,12 @@ digraph {
     node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=8, margin="0.15,0.08", penwidth=0.8]
     edge [color="#555555", penwidth=1.0]
 
-    M1 [label="Mapa t₁\n(2000)", fillcolor="#E3F2FD", color="#1565C0"]
-    M2 [label="Mapa t₂\n(2010)", fillcolor="#BBDEFB", color="#1565C0"]
-    V [label="Variáveis\nexplicativas", fillcolor="#C8E6C9", color="#2E7D32"]
-    T [label="Taxas de\ntransição", fillcolor="#FFE0B2", color="#E65100"]
-    W [label="Pesos de\nevidência", fillcolor="#FFF9C4", color="#F57F17"]
-    AC [label="Autômato\ncelular", fillcolor="#E1BEE7", color="#6A1B9A"]
+    M1 [label="Mapa tâ‚\n(2000)", fillcolor="#E3F2FD", color="#1565C0"]
+    M2 [label="Mapa tâ‚‚\n(2010)", fillcolor="#BBDEFB", color="#1565C0"]
+    V [label="VariÃ¡veis\nexplicativas", fillcolor="#C8E6C9", color="#2E7D32"]
+    T [label="Taxas de\ntransiÃ§Ã£o", fillcolor="#FFE0B2", color="#E65100"]
+    W [label="Pesos de\nevidÃªncia", fillcolor="#FFF9C4", color="#F57F17"]
+    AC [label="AutÃ´mato\ncelular", fillcolor="#E1BEE7", color="#6A1B9A"]
     F [label="Mapa futuro\n(2030)", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20"]
 
     M1 -> T
@@ -153,18 +151,18 @@ digraph {
 ::: {.column width="55%"}
 A paisagem pode ser modelada como um **grafo**:
 
-- **Nós** = fragmentos de habitat
-- **Arestas** = possibilidade de dispersão entre fragmentos
-- **Peso das arestas** = distância ou resistência
+- **NÃ³s** = fragmentos de habitat
+- **Arestas** = possibilidade de dispersÃ£o entre fragmentos
+- **Peso das arestas** = distÃ¢ncia ou resistÃªncia
 
-### Métricas de conectividade baseadas em grafos
+### MÃ©tricas de conectividade baseadas em grafos
 
-| Métrica | Fórmula conceitual | Interpretação |
+| MÃ©trica | FÃ³rmula conceitual | InterpretaÃ§Ã£o |
 |:--------|:-------------------|:--------------|
-| **IIC** (Integral Index of Connectivity) | Baseada em menor caminho | Conectividade binária (pode/não pode dispersar) |
-| **PC** (Probability of Connectivity) | Baseada em probabilidade de dispersão | Conectividade probabilística |
-| **dPC** | Contribuição individual de cada fragmento ao PC | Priorização para conservação |
-| **BC** (Betweenness Centrality) | Nº de caminhos mais curtos que passam pelo nó | Fragmentos "ponte" |
+| **IIC** (Integral Index of Connectivity) | Baseada em menor caminho | Conectividade binÃ¡ria (pode/nÃ£o pode dispersar) |
+| **PC** (Probability of Connectivity) | Baseada em probabilidade de dispersÃ£o | Conectividade probabilÃ­stica |
+| **dPC** | ContribuiÃ§Ã£o individual de cada fragmento ao PC | PriorizaÃ§Ã£o para conservaÃ§Ã£o |
+| **BC** (Betweenness Centrality) | NÂº de caminhos mais curtos que passam pelo nÃ³ | Fragmentos "ponte" |
 
 : {.striped .hover}
 
@@ -174,66 +172,66 @@ Ferramenta: **Conefor Sensinode** (gratuito, calcula IIC, PC, dPC, BC)
 ::: {.column width="45%"}
 ### Circuitscape: conectividade por circuitos
 
-Modela o fluxo de organismos como **corrente elétrica**:
+Modela o fluxo de organismos como **corrente elÃ©trica**:
 
 - Fragmentos = fontes/sumidouros
-- Matriz = resistência variável
-- Corrente flui por **múltiplos caminhos** (não só o mais curto)
+- Matriz = resistÃªncia variÃ¡vel
+- Corrente flui por **mÃºltiplos caminhos** (nÃ£o sÃ³ o mais curto)
 
 **Vantagens sobre menor caminho**:
 
-- Caminhos alternativos são considerados
-- Áreas com múltiplas rotas recebem mais "corrente"
+- Caminhos alternativos sÃ£o considerados
+- Ãreas com mÃºltiplas rotas recebem mais "corrente"
 - Identifica **gargalos** (pontos de estrangulamento)
 
-**Entrada**: mapa de resistência (raster) derivado de uso/cobertura
+**Entrada**: mapa de resistÃªncia (raster) derivado de uso/cobertura
 
-**Saída**: mapa de corrente (onde o fluxo é maior/menor)
+**SaÃ­da**: mapa de corrente (onde o fluxo Ã© maior/menor)
 
 Ferramenta: **Circuitscape** (Julia/Python, gratuito)
 :::
 :::
 
-# [4  -  SIMULAÇÃO DE CENÁRIOS]{.section-header}
+# [4  -  SIMULAÃ‡ÃƒO DE CENÃRIOS]{.section-header}
 
-## Cenários para tomada de decisão {.smaller-text}
+## CenÃ¡rios para tomada de decisÃ£o {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Tipos de cenários
+### Tipos de cenÃ¡rios
 
-| Cenário | Pergunta | Método |
+| CenÃ¡rio | Pergunta | MÃ©todo |
 |:--------|:---------|:-------|
-| **Tendencial** (BAU) | O que acontece se nada mudar? | Projeção linear das taxas atuais |
-| **Otimista** | E se restaurarmos as APPs e RLs? | Forçar transição para vegetação nativa |
-| **Pessimista** | E se o desmatamento acelerar? | Aumentar taxas de conversão |
+| **Tendencial** (BAU) | O que acontece se nada mudar? | ProjeÃ§Ã£o linear das taxas atuais |
+| **Otimista** | E se restaurarmos as APPs e RLs? | ForÃ§ar transiÃ§Ã£o para vegetaÃ§Ã£o nativa |
+| **Pessimista** | E se o desmatamento acelerar? | Aumentar taxas de conversÃ£o |
 | **Normativo** | Qual o ideal para biodiversidade? | Definir metas (30% de habitat, COHESION > 95) |
 
-### Métricas para comparar cenários
+### MÃ©tricas para comparar cenÃ¡rios
 
-- PLAND, NP, MPS, COHESION de cada cenário
-- IIC/PC (Conefor) de cada cenário
-- Serviços ecossistêmicos (InVEST) de cada cenário
+- PLAND, NP, MPS, COHESION de cada cenÃ¡rio
+- IIC/PC (Conefor) de cada cenÃ¡rio
+- ServiÃ§os ecossistÃªmicos (InVEST) de cada cenÃ¡rio
 :::
 
 ::: {.column width="50%"}
-### InVEST: serviços ecossistêmicos
+### InVEST: serviÃ§os ecossistÃªmicos
 
 O InVEST (Integrated Valuation of Ecosystem Services and Tradeoffs) calcula:
 
 | Modelo InVEST | O que estima |
 |:--------------|:------------|
 | Carbon Storage | Estoque de carbono por classe de uso |
-| Water Yield | Produção hídrica por sub-bacia |
-| Sediment Delivery | Produção de sedimentos → erosão |
-| Habitat Quality | Qualidade de habitat por ameaça e sensibilidade |
-| Pollination | Polinização por proximidade de habitat |
+| Water Yield | ProduÃ§Ã£o hÃ­drica por sub-bacia |
+| Sediment Delivery | ProduÃ§Ã£o de sedimentos â†’ erosÃ£o |
+| Habitat Quality | Qualidade de habitat por ameaÃ§a e sensibilidade |
+| Pollination | PolinizaÃ§Ã£o por proximidade de habitat |
 
 : {.striped .hover}
 
 ::: {.callout-tip}
 ## Caso de uso
-Comparar o valor dos serviços ecossistêmicos no cenário tendencial vs. cenário de restauração → argumento econômico para restauração paisagística.
+Comparar o valor dos serviÃ§os ecossistÃªmicos no cenÃ¡rio tendencial vs. cenÃ¡rio de restauraÃ§Ã£o â†’ argumento econÃ´mico para restauraÃ§Ã£o paisagÃ­stica.
 :::
 :::
 :::
@@ -242,72 +240,72 @@ Comparar o valor dos serviços ecossistêmicos no cenário tendencial vs. cenár
 
 ## Softwares para modelagem de paisagem {.smaller-text}
 
-| Software | Função | Licença | Plataforma |
+| Software | FunÃ§Ã£o | LicenÃ§a | Plataforma |
 |:---------|:-------|:--------|:-----------|
-| **Dinamica EGO** | Modelagem LUCC, autômatos celulares | Gratuito | Windows/Linux |
+| **Dinamica EGO** | Modelagem LUCC, autÃ´matos celulares | Gratuito | Windows/Linux |
 | **Conefor** | Conectividade: IIC, PC, dPC, BC | Gratuito | Windows |
 | **Circuitscape** | Conectividade por teoria de circuitos | Livre (Julia) | Multiplataforma |
-| **InVEST** | Serviços ecossistêmicos | Livre | Multiplataforma |
-| **FRAGSTATS** | Métricas de paisagem | Gratuito | Windows |
-| **R (landscapemetrics)** | Métricas de paisagem em R | Livre | Multiplataforma |
-| **QGIS + plugins** | SIG geral + análises espaciais | Livre | Multiplataforma |
+| **InVEST** | ServiÃ§os ecossistÃªmicos | Livre | Multiplataforma |
+| **FRAGSTATS** | MÃ©tricas de paisagem | Gratuito | Windows |
+| **R (landscapemetrics)** | MÃ©tricas de paisagem em R | Livre | Multiplataforma |
+| **QGIS + plugins** | SIG geral + anÃ¡lises espaciais | Livre | Multiplataforma |
 | **GEE** | Processamento em nuvem | Gratuito (pesquisa) | Web |
 
 : Principais ferramentas para modelagem quantitativa de paisagem. {.striped .hover}
 
 ::: {.callout-note}
 ## Dica para iniciantes
-Comece com **Conefor** (grafos, mais simples) antes de **Circuitscape** (circuitos, mais complexo). Use **Dinamica EGO** para modelagem LUCC — é brasileiro e tem boa documentação em português.
+Comece com **Conefor** (grafos, mais simples) antes de **Circuitscape** (circuitos, mais complexo). Use **Dinamica EGO** para modelagem LUCC â€” Ã© brasileiro e tem boa documentaÃ§Ã£o em portuguÃªs.
 :::
 
-# [6  -  LIMITAÇÕES E CUIDADOS]{.section-header}
+# [6  -  LIMITAÃ‡Ã•ES E CUIDADOS]{.section-header}
 
-## O que os modelos NÃO fazem {.smaller-text}
+## O que os modelos NÃƒO fazem {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
 ### Armadilhas comuns
 
-1. **"Garbage in, garbage out"** → se o mapa de entrada tem erros, o modelo amplifica
-2. **Extrapolação temporal** → projetar 50 anos com base em 10 anos de dados é arriscado
-3. **Estacionariedade** → assumir que as taxas futuras serão iguais às passadas
-4. **Variáveis omitidas** → políticas públicas, mercado de commodities, mudanças climáticas não entram em modelos simples
-5. **Validação insuficiente** → modelos não validados são conjecturas
-6. **Escala** → modelos calibrados para 30 m não funcionam para 5 m (e vice-versa)
+1. **"Garbage in, garbage out"** â†’ se o mapa de entrada tem erros, o modelo amplifica
+2. **ExtrapolaÃ§Ã£o temporal** â†’ projetar 50 anos com base em 10 anos de dados Ã© arriscado
+3. **Estacionariedade** â†’ assumir que as taxas futuras serÃ£o iguais Ã s passadas
+4. **VariÃ¡veis omitidas** â†’ polÃ­ticas pÃºblicas, mercado de commodities, mudanÃ§as climÃ¡ticas nÃ£o entram em modelos simples
+5. **ValidaÃ§Ã£o insuficiente** â†’ modelos nÃ£o validados sÃ£o conjecturas
+6. **Escala** â†’ modelos calibrados para 30 m nÃ£o funcionam para 5 m (e vice-versa)
 :::
 
 ::: {.column width="45%"}
-### Boas práticas
+### Boas prÃ¡ticas
 
-- **Validar** sempre: comparar projeção com mapa real
-- **Reportar incerteza**: intervalos, não valores únicos
-- **Triangular**: usar múltiplos modelos
-- **Documentar premissas**: quais taxas, quais variáveis, qual período
-- **Interpretar com cautela**: cenários ≠ previsões
-- **Complementar com campo**: modelos não substituem observação direta
+- **Validar** sempre: comparar projeÃ§Ã£o com mapa real
+- **Reportar incerteza**: intervalos, nÃ£o valores Ãºnicos
+- **Triangular**: usar mÃºltiplos modelos
+- **Documentar premissas**: quais taxas, quais variÃ¡veis, qual perÃ­odo
+- **Interpretar com cautela**: cenÃ¡rios â‰  previsÃµes
+- **Complementar com campo**: modelos nÃ£o substituem observaÃ§Ã£o direta
 
 ::: {.callout-warning}
 ## Lembre-se
-Modelos são **ferramentas de apoio à decisão**, não oráculos. O valor está na **comparação entre cenários**, não no valor absoluto de cada um.
+Modelos sÃ£o **ferramentas de apoio Ã  decisÃ£o**, nÃ£o orÃ¡culos. O valor estÃ¡ na **comparaÃ§Ã£o entre cenÃ¡rios**, nÃ£o no valor absoluto de cada um.
 :::
 :::
 :::
 
-# [7  -  SÍNTESE]{.section-header}
+# [7  -  SÃNTESE]{.section-header}
 
-## Conexão com a Disciplina {.smaller-text}
+## ConexÃ£o com a Disciplina {.smaller-text}
 
 | Ferramenta/Modelo | Aulas conectadas |
 |:------------------|:-----------------|
-| Dinamica EGO (LUCC) | → Uso e Cobertura (Aula 10), Séries Temporais (Aula 12) |
-| Conefor / Circuitscape | → Conectividade Funcional (Aula 17), FRAGSTATS (Aula 18) |
-| InVEST | → Diagnóstico (Aula 20), Planejamento (Aula 21) |
-| Análise de sensibilidade | → Validação de Modelos (aula nova) |
+| Dinamica EGO (LUCC) | â†’ Uso e Cobertura (Aula 10), SÃ©ries Temporais (Aula 12) |
+| Conefor / Circuitscape | â†’ Conectividade Funcional (Aula 17), FRAGSTATS (Aula 18) |
+| InVEST | â†’ DiagnÃ³stico (Aula 20), Planejamento (Aula 21) |
+| AnÃ¡lise de sensibilidade | â†’ ValidaÃ§Ã£o de Modelos (aula nova) |
 
 ## Leituras Recomendadas
 
-- **SOARES-FILHO, B. S. et al.** (2002). Dinamica — a stochastic cellular automata model. *Ecological Modelling*, 154, 217–235.
-- **SAURA, S.; TORNÉ, J.** (2009). Conefor Sensinode 2.2. *Environmental Modelling & Software*, 24(10), 1220–1222.
-- **McRAE, B. H. et al.** (2008). Using circuit theory to model connectivity. *Ecology*, 89(10), 2712–2724.
+- **SOARES-FILHO, B. S. et al.** (2002). Dinamica â€” a stochastic cellular automata model. *Ecological Modelling*, 154, 217â€“235.
+- **SAURA, S.; TORNÃ‰, J.** (2009). Conefor Sensinode 2.2. *Environmental Modelling & Software*, 24(10), 1220â€“1222.
+- **McRAE, B. H. et al.** (2008). Using circuit theory to model connectivity. *Ecology*, 89(10), 2712â€“2724.
 - **SHARP, R. et al.** (2020). *InVEST User's Guide*. The Natural Capital Project, Stanford.
-- **PONTIUS, R. G. et al.** (2004). Useful techniques of validation for spatially explicit land-change models. *Ecological Modelling*, 179, 445–461.
+- **PONTIUS, R. G. et al.** (2004). Useful techniques of validation for spatially explicit land-change models. *Ecological Modelling*, 179, 445â€“461.

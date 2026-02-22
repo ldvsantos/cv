@@ -1,12 +1,11 @@
 ---
-title: "Introdução à Estatística"
-subtitle: "Gestão da Inovação Tecnológica<br>Fundamentos e Práticas"
+title: "IntroduÃ§Ã£o Ã  EstatÃ­stica"
+subtitle: "GestÃ£o da InovaÃ§Ã£o TecnolÃ³gica<br>Fundamentos e PrÃ¡ticas"
 author: "Luiz Diego Vidal Santos"
-institute: "Universidade Estadual de Feira de Santana (UEFS)"
 format: 
   revealjs:
     logo: ../../assets/logo-uefs.webp
-    footer: "UFS - Universidade Federal de Sergipe | Tema 1 - Gestão da Inovação Tecnológica"
+    footer: "UFS - Universidade Federal de Sergipe | Tema 1 - GestÃ£o da InovaÃ§Ã£o TecnolÃ³gica"
     slide-number: true
     theme: [simple, assets/ufs.scss]
     controls: true
@@ -20,7 +19,7 @@ execute:
   echo: false
 ---
 
-# [Introdução]{.section-header}
+# [IntroduÃ§Ã£o]{.section-header}
 
 ::: {style="text-align: right; padding-top: 10px; padding-right: 50px;"}
 ![](Figuras/intro.jpg){width="25%"}
@@ -28,61 +27,61 @@ execute:
 
 ---
 
-## A Inovação como Imperativo Estratégico {.smaller-text}
+## A InovaÃ§Ã£o como Imperativo EstratÃ©gico {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Definição de Schumpeter (1942)
+### DefiniÃ§Ã£o de Schumpeter (1942)
 
-**Destruição Criativa**: Introdução de:
+**DestruiÃ§Ã£o Criativa**: IntroduÃ§Ã£o de:
 - Novos bens
-- Novos métodos de produção
+- Novos mÃ©todos de produÃ§Ã£o
 - Abertura de novos mercados
-- Novas fontes de matéria-prima
-- Reorganização industrial
+- Novas fontes de matÃ©ria-prima
+- ReorganizaÃ§Ã£o industrial
 
 ::: {.info-box}
-"Motor da destruição criativa"
+"Motor da destruiÃ§Ã£o criativa"
 :::
 :::
 
 ::: {.column width="50%"}
-### Evolução Teórica
+### EvoluÃ§Ã£o TeÃ³rica
 
 **Fundamentos**
-- Schumpeter: Destruição criativa
+- Schumpeter: DestruiÃ§Ã£o criativa
 - Freeman (1987): Sistemas nacionais
-- Lundvall (1992): Sistemas de inovação
+- Lundvall (1992): Sistemas de inovaÃ§Ã£o
 
-**Paradigmas Contemporâneos**
-- Inovação Aberta (Chesbrough, 2003)
-- Capacidades Dinâmicas (Teece, 2007)
+**Paradigmas ContemporÃ¢neos**
+- InovaÃ§Ã£o Aberta (Chesbrough, 2003)
+- Capacidades DinÃ¢micas (Teece, 2007)
 - Ecossistemas (Adner, 2006)
 :::
 :::
 
 ---
 
-## Campo Multidisciplinar da Gestão da Inovação {.smaller-text}
+## Campo Multidisciplinar da GestÃ£o da InovaÃ§Ã£o {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="60%"}
-### Características Fundamentais
+### CaracterÃ­sticas Fundamentais
 
 **Natureza Multidisciplinar**
 - Teorias organizacionais
-- Economia da inovação
-- Gestão estratégica
+- Economia da inovaÃ§Ã£o
+- GestÃ£o estratÃ©gica
 
-**Cenário Contemporâneo**
+**CenÃ¡rio ContemporÃ¢neo**
 - Intensa volatilidade
-- Rápida transformação digital
+- RÃ¡pida transformaÃ§Ã£o digital
 - Conhecimento como vantagem competitiva
 
 **Requisitos Gerenciais**
 - Mecanismos robustos
-- Processos sistemáticos
-- Governança estruturada
+- Processos sistemÃ¡ticos
+- GovernanÃ§a estruturada
 :::
 
 ::: {.column width="40%"}
@@ -90,17 +89,17 @@ execute:
 **Sistemas Integrados**
 
 Diretrizes para formalizar:
-- Governança
+- GovernanÃ§a
 - Atividades inovativas
-- Mensuração de resultados
-- Otimização de ROI
+- MensuraÃ§Ã£o de resultados
+- OtimizaÃ§Ã£o de ROI
 
-**Objetivo**: Transformar esforços em processos sustentáveis
+**Objetivo**: Transformar esforÃ§os em processos sustentÃ¡veis
 :::
 :::
 :::
 
-# [ISO 56002: Contexto e Liderança]{.section-header}
+# [ISO 56002: Contexto e LideranÃ§a]{.section-header}
 
 ::: {style="text-align: right; padding-top: 10px; padding-right: 50px;"}
 ![](Figuras/iso56002.jpg){width="25%"}
@@ -108,124 +107,124 @@ Diretrizes para formalizar:
 
 ---
 
-## Governança e Alinhamento Estratégico {.smaller-text}
+## GovernanÃ§a e Alinhamento EstratÃ©gico {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Cláusula 4: Contexto da Organização
+### ClÃ¡usula 4: Contexto da OrganizaÃ§Ã£o
 
-**Análise do Ambiente**
+**AnÃ¡lise do Ambiente**
 - Partes interessadas
 - Contexto interno e externo
 - Escopo do SGI
 
-### Cláusula 5: Liderança
+### ClÃ¡usula 5: LideranÃ§a
 
-**Princípio 2**: Líderes focados no futuro
+**PrincÃ­pio 2**: LÃ­deres focados no futuro
 - Inspirar e engajar equipes
 - Equilibrar curto e longo prazo
 - Investimento no futuro
 :::
 
 ::: {.column width="50%"}
-### Cláusula 6: Direção Estratégica
+### ClÃ¡usula 6: DireÃ§Ã£o EstratÃ©gica
 
-**Alinhamento Estratégico**
-- Visão de inovação
-- Objetivos estratégicos
-- Política de inovação
+**Alinhamento EstratÃ©gico**
+- VisÃ£o de inovaÃ§Ã£o
+- Objetivos estratÃ©gicos
+- PolÃ­tica de inovaÃ§Ã£o
 
 ::: {.info-box}
-**Evolução dos Modelos**
-- 1ª Geração: Linear (Rothwell, 1994)
-- 3ª Geração: Sistêmico
-- Atual: Inovação Aberta
+**EvoluÃ§Ã£o dos Modelos**
+- 1Âª GeraÃ§Ã£o: Linear (Rothwell, 1994)
+- 3Âª GeraÃ§Ã£o: SistÃªmico
+- Atual: InovaÃ§Ã£o Aberta
 :::
 :::
 :::
 
 ---
 
-## Inovação Aberta (Chesbrough, 2003) {.smaller-text}
+## InovaÃ§Ã£o Aberta (Chesbrough, 2003) {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
 ### Conceito Central
 
 ::: {.highlight-box}
-"Construir modelo de negócio superior é mais importante que chegar primeiro ao mercado"
+"Construir modelo de negÃ³cio superior Ã© mais importante que chegar primeiro ao mercado"
 :::
 
-**Paradigma da Inovação Aberta**
+**Paradigma da InovaÃ§Ã£o Aberta**
 - Transcende P&D interna
 - Valoriza conhecimento externo
 - Explora PI estrategicamente
-- Colaboração interorganizacional
+- ColaboraÃ§Ã£o interorganizacional
 
-**Impacto na Direção Estratégica**
-- Redefine limites da organização
+**Impacto na DireÃ§Ã£o EstratÃ©gica**
+- Redefine limites da organizaÃ§Ã£o
 - Amplia fontes de conhecimento
 - Diversifica rotas de mercado
 :::
 
 ::: {.column width="45%"}
-### Pré-requisitos
+### PrÃ©-requisitos
 
 **Capacidade Absortiva** (Cohen & Levinthal, 1990)
 
 ::: {.info-box}
 Habilidade de:
-- Reconhecer valor da informação externa
+- Reconhecer valor da informaÃ§Ã£o externa
 - Assimilar conhecimento
 - Aplicar comercialmente
 :::
 
-**Características**
+**CaracterÃ­sticas**
 - *Path-dependent* (cumulativa)
-- Construída ao longo do tempo
+- ConstruÃ­da ao longo do tempo
 - Essencial para spillovers
 :::
 :::
 
 ---
 
-## Capacidade Absortiva: Função Dual da P&D {.smaller-text}
+## Capacidade Absortiva: FunÃ§Ã£o Dual da P&D {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Função Tradicional
+### FunÃ§Ã£o Tradicional
 
-**Geração de Inovações**
-- Pesquisa básica e aplicada
+**GeraÃ§Ã£o de InovaÃ§Ãµes**
+- Pesquisa bÃ¡sica e aplicada
 - Desenvolvimento experimental
 - Prototipagem
 - Novos produtos/processos
 
 ::: {style="text-align: center; margin-top: 20px;"}
-⬇️
+â¬‡ï¸
 :::
 :::
 
 ::: {.column width="50%"}
-### Função Estratégica
+### FunÃ§Ã£o EstratÃ©gica
 
-**Construção de Conhecimento**
-- Estoque de conhecimento prévio
-- Base para absorção externa
-- Integração de spillovers
-- Exploração de insights (Princípio 5 ISO)
+**ConstruÃ§Ã£o de Conhecimento**
+- Estoque de conhecimento prÃ©vio
+- Base para absorÃ§Ã£o externa
+- IntegraÃ§Ã£o de spillovers
+- ExploraÃ§Ã£o de insights (PrincÃ­pio 5 ISO)
 
 ::: {style="text-align: center; margin-top: 20px;"}
-⬇️
+â¬‡ï¸
 :::
 :::
 :::
 
 ::: {.highlight-box style="margin-top: 20px;"}
-**Implicação Estratégica**: Investimento em P&D não apenas como gerador direto de inovação, mas como capacitador da absorção e integração de conhecimento externo
+**ImplicaÃ§Ã£o EstratÃ©gica**: Investimento em P&D nÃ£o apenas como gerador direto de inovaÃ§Ã£o, mas como capacitador da absorÃ§Ã£o e integraÃ§Ã£o de conhecimento externo
 :::
 
-# [Processo de Inovação]{.section-header}
+# [Processo de InovaÃ§Ã£o]{.section-header}
 
 ::: {style="text-align: right; padding-top: 10px; padding-right: 50px;"}
 ![](Figuras/processo.jpg){width="25%"}
@@ -233,54 +232,54 @@ Habilidade de:
 
 ---
 
-## Estruturação do Processo (ISO 56002) {.smaller-text}
+## EstruturaÃ§Ã£o do Processo (ISO 56002) {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Cláusula 8: Operação
+### ClÃ¡usula 8: OperaÃ§Ã£o
 
-**Processo de Inovação**
-- Geração de ideias
-- Avaliação e seleção
+**Processo de InovaÃ§Ã£o**
+- GeraÃ§Ã£o de ideias
+- AvaliaÃ§Ã£o e seleÃ§Ã£o
 - Desenvolvimento
-- Comercialização
-- Proteção de PI
+- ComercializaÃ§Ã£o
+- ProteÃ§Ã£o de PI
 
-**Princípios Associados**
-- Princípio 4: Cultura
-- Princípio 8: Abordagem de Sistemas
+**PrincÃ­pios Associados**
+- PrincÃ­pio 4: Cultura
+- PrincÃ­pio 8: Abordagem de Sistemas
 :::
 
 ::: {.column width="50%"}
-### Cláusula 7: Apoio
+### ClÃ¡usula 7: Apoio
 
-**Recursos Necessários**
-- Pessoas e competências
+**Recursos NecessÃ¡rios**
+- Pessoas e competÃªncias
 - Infraestrutura
 - Conhecimento organizacional
-- Comunicação
+- ComunicaÃ§Ã£o
 
 ::: {.info-box}
-Base para implementação efetiva do processo de inovação
+Base para implementaÃ§Ã£o efetiva do processo de inovaÃ§Ã£o
 :::
 :::
 :::
 
 ---
 
-## Arquétipos da Inovação Aberta {.smaller-text}
+## ArquÃ©tipos da InovaÃ§Ã£o Aberta {.smaller-text}
 
-### Gassmann & Enkel (2004): Três Processos Fundamentais
+### Gassmann & Enkel (2004): TrÃªs Processos Fundamentais
 
 ::: {.columns}
 ::: {.column width="33%"}
 ::: {.info-box}
 **Outside-In**
 
-Integração de conhecimento externo
+IntegraÃ§Ã£o de conhecimento externo
 - Parcerias
-- Aquisição de tecnologia
-- Colaboração com universidades
+- AquisiÃ§Ã£o de tecnologia
+- ColaboraÃ§Ã£o com universidades
 - *Open sourcing*
 :::
 :::
@@ -289,11 +288,11 @@ Integração de conhecimento externo
 ::: {.highlight-box}
 **Inside-Out**
 
-Comercialização de PI
+ComercializaÃ§Ã£o de PI
 - *Spin-offs*
 - Licenciamento
 - Venda de patentes
-- Transferência tecnológica
+- TransferÃªncia tecnolÃ³gica
 :::
 :::
 
@@ -301,65 +300,65 @@ Comercialização de PI
 ::: {.info-box}
 **Coupled Process**
 
-Co-criação interorganizacional
+Co-criaÃ§Ã£o interorganizacional
 - Joint ventures
-- Alianças estratégicas
-- Consórcios de P&D
+- AlianÃ§as estratÃ©gicas
+- ConsÃ³rcios de P&D
 - Ecossistemas
 :::
 :::
 :::
 
 ::: {style="text-align: center; margin-top: 30px;"}
-**Alinhamento**: Gestão sistemática do fluxo de conhecimento e PI (Cláusula 8 ISO 56002)
+**Alinhamento**: GestÃ£o sistemÃ¡tica do fluxo de conhecimento e PI (ClÃ¡usula 8 ISO 56002)
 :::
 
 ---
 
-## Tríplice Hélice e NITs {.smaller-text}
+## TrÃ­plice HÃ©lice e NITs {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Modelo Tríplice Hélice (Etzkowitz & Leydesdorff, 2000)
+### Modelo TrÃ­plice HÃ©lice (Etzkowitz & Leydesdorff, 2000)
 
-**Hélice III: Interativa**
+**HÃ©lice III: Interativa**
 
-Inovação como resultado de interdependências:
+InovaÃ§Ã£o como resultado de interdependÃªncias:
 
 ::: {.info-box}
-**Universidade** ↔️ **Empresa** ↔️ **Governo**
+**Universidade** â†”ï¸ **Empresa** â†”ï¸ **Governo**
 
-Interdependências sistêmicas e co-evolução
+InterdependÃªncias sistÃªmicas e co-evoluÃ§Ã£o
 :::
 
-**Características**
-- Superposição de funções
-- Hibridização institucional
+**CaracterÃ­sticas**
+- SuperposiÃ§Ã£o de funÃ§Ãµes
+- HibridizaÃ§Ã£o institucional
 - Redes trilaterais
 :::
 
 ::: {.column width="50%"}
 ### Marco Legal Brasileiro
 
-**Lei nº 10.973/2004** (alterada pela Lei nº 13.243/2016)
+**Lei nÂº 10.973/2004** (alterada pela Lei nÂº 13.243/2016)
 
-**Núcleos de Inovação Tecnológica (NITs)**
+**NÃºcleos de InovaÃ§Ã£o TecnolÃ³gica (NITs)**
 
-Funções como *Boundary Spanners*:
+FunÃ§Ãµes como *Boundary Spanners*:
 - Interface universidade-empresa
-- Tradução de resultados científicos
-- Gestão de ativos estratégicos
-- Mediação de assimetrias
+- TraduÃ§Ã£o de resultados cientÃ­ficos
+- GestÃ£o de ativos estratÃ©gicos
+- MediaÃ§Ã£o de assimetrias
 
 ::: {.highlight-box}
-**Processo Inside-Out** na prática
+**Processo Inside-Out** na prÃ¡tica
 :::
 :::
 :::
 
 ---
 
-## Sistematicidade nos Ambientes Acadêmicos {.smaller-text}
+## Sistematicidade nos Ambientes AcadÃªmicos {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="60%"}
@@ -371,32 +370,32 @@ Funções como *Boundary Spanners*:
 - Traduzem linguagens
 - Gerenciam expectativas temporais
 
-**Desafios de Mediação**
-- Assimetria cognitiva: lógica científica vs. comercial
+**Desafios de MediaÃ§Ã£o**
+- Assimetria cognitiva: lÃ³gica cientÃ­fica vs. comercial
 - Assimetria temporal: horizontes de pesquisa vs. mercado
-- Valoração de tecnologias em estágios iniciais
-- Proteção intelectual vs. publicação
+- ValoraÃ§Ã£o de tecnologias em estÃ¡gios iniciais
+- ProteÃ§Ã£o intelectual vs. publicaÃ§Ã£o
 :::
 
 ::: {.column width="40%"}
 ::: {.info-box}
-**Materialização da Política**
+**MaterializaÃ§Ã£o da PolÃ­tica**
 
 Os NITs executam:
-- Gestão de PI
-- Transferência de tecnologia
-- Negociação de contratos
-- Criação de spin-offs
-- Cultura de inovação
+- GestÃ£o de PI
+- TransferÃªncia de tecnologia
+- NegociaÃ§Ã£o de contratos
+- CriaÃ§Ã£o de spin-offs
+- Cultura de inovaÃ§Ã£o
 :::
 
 ::: {.highlight-box style="margin-top: 20px;"}
-**Resultado**: Tradução de resultados científicos em ativos estratégicos
+**Resultado**: TraduÃ§Ã£o de resultados cientÃ­ficos em ativos estratÃ©gicos
 :::
 :::
 :::
 
-# [Avaliação e Melhoria]{.section-header}
+# [AvaliaÃ§Ã£o e Melhoria]{.section-header}
 
 ::: {style="text-align: right; padding-top: 10px; padding-right: 50px;"}
 ![](Figuras/avaliacao.jpg){width="25%"}
@@ -404,66 +403,66 @@ Os NITs executam:
 
 ---
 
-## Mensuração e Gestão da Incerteza {.smaller-text}
+## MensuraÃ§Ã£o e GestÃ£o da Incerteza {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Cláusula 9: Avaliação de Desempenho
+### ClÃ¡usula 9: AvaliaÃ§Ã£o de Desempenho
 
-**Princípio 6**: Gerenciamento da Incerteza
-- Monitoramento contínuo
-- Análise crítica
-- Avaliação de riscos
-- Aprendizado sistemático
+**PrincÃ­pio 6**: Gerenciamento da Incerteza
+- Monitoramento contÃ­nuo
+- AnÃ¡lise crÃ­tica
+- AvaliaÃ§Ã£o de riscos
+- Aprendizado sistemÃ¡tico
 
-**Princípio 1**: Realização de Valor
-- Criação de valor para stakeholders
-- Equilíbrio de interesses
+**PrincÃ­pio 1**: RealizaÃ§Ã£o de Valor
+- CriaÃ§Ã£o de valor para stakeholders
+- EquilÃ­brio de interesses
 - Sustentabilidade
 :::
 
 ::: {.column width="50%"}
-### Cláusula 10: Melhoria
+### ClÃ¡usula 10: Melhoria
 
-**Não-conformidades**
-- Ações corretivas
-- Análise de causas-raiz
+**NÃ£o-conformidades**
+- AÃ§Ãµes corretivas
+- AnÃ¡lise de causas-raiz
 
-**Melhoria Contínua**
+**Melhoria ContÃ­nua**
 - Aprendizado organizacional
-- Adaptação estratégica
-- Evolução do SGI
+- AdaptaÃ§Ã£o estratÃ©gica
+- EvoluÃ§Ã£o do SGI
 
 ::: {.info-box}
-Ciclo PDCA aplicado à inovação
+Ciclo PDCA aplicado Ã  inovaÃ§Ã£o
 :::
 :::
 :::
 
 ---
 
-## Manual de Oslo: Métricas Sistêmicas {.smaller-text}
+## Manual de Oslo: MÃ©tricas SistÃªmicas {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
-### OCDE/Eurostat (3ª Edição)
+### OCDE/Eurostat (3Âª EdiÃ§Ã£o)
 
-**Atividades de Inovação** (além de P&D):
+**Atividades de InovaÃ§Ã£o** (alÃ©m de P&D):
 
 - P&D interna e externa
-- Aquisição de conhecimento externo
-- Aquisição de máquinas e equipamentos
+- AquisiÃ§Ã£o de conhecimento externo
+- AquisiÃ§Ã£o de mÃ¡quinas e equipamentos
 - Treinamento
-- Introdução de inovações no mercado
-- Design e outras preparações
+- IntroduÃ§Ã£o de inovaÃ§Ãµes no mercado
+- Design e outras preparaÃ§Ãµes
 
 ::: {.highlight-box}
-Visão sistêmica alinhada à ISO 56002
+VisÃ£o sistÃªmica alinhada Ã  ISO 56002
 :::
 :::
 
 ::: {.column width="45%"}
-### Mensuração Abrangente
+### MensuraÃ§Ã£o Abrangente
 
 **Tipos de Indicadores**
 
@@ -477,7 +476,7 @@ Visão sistêmica alinhada à ISO 56002
 ::: {.info-box}
 **Output**
 - Patentes
-- Publicações
+- PublicaÃ§Ãµes
 - Licenciamentos
 :::
 
@@ -491,7 +490,7 @@ Visão sistêmica alinhada à ISO 56002
 
 ---
 
-## Ecossistemas de Inovação {.smaller-text}
+## Ecossistemas de InovaÃ§Ã£o {.smaller-text}
 
 ### Framework de Adner & Kapoor (2010)
 
@@ -500,15 +499,15 @@ Visão sistêmica alinhada à ISO 56002
 ::: {.highlight-box}
 **Componentes Upstream**
 
-**Características**
+**CaracterÃ­sticas**
 - Integrados
-- Intensivos em coordenação
+- Intensivos em coordenaÃ§Ã£o
 - Tecnologias centrais
 - Alto acoplamento
 
-**Dinâmica**
-- Desafios reforçam incumbentes
-- Barreiras à entrada elevadas
+**DinÃ¢mica**
+- Desafios reforÃ§am incumbentes
+- Barreiras Ã  entrada elevadas
 - Controle da cadeia de valor
 :::
 :::
@@ -517,51 +516,51 @@ Visão sistêmica alinhada à ISO 56002
 ::: {.info-box}
 **Complementos Downstream**
 
-**Características**
+**CaracterÃ­sticas**
 - Modulares
-- Desagregáveis
-- Aplicativos e serviços
+- DesagregÃ¡veis
+- Aplicativos e serviÃ§os
 - Baixo acoplamento
 
-**Dinâmica**
-- Desafios abrem espaço para entrantes
-- Barreiras à entrada reduzidas
-- Inovação descentralizada
+**DinÃ¢mica**
+- Desafios abrem espaÃ§o para entrantes
+- Barreiras Ã  entrada reduzidas
+- InovaÃ§Ã£o descentralizada
 :::
 :::
 :::
 
 ::: {style="margin-top: 30px;"}
-**Implicação Estratégica**: Monitorar e coordenar dependências tecnológicas no ecossistema, antecipando gargalos upstream e explorando oportunidades downstream
+**ImplicaÃ§Ã£o EstratÃ©gica**: Monitorar e coordenar dependÃªncias tecnolÃ³gicas no ecossistema, antecipando gargalos upstream e explorando oportunidades downstream
 :::
 
 ---
 
-## Complexidade da Realização de Valor {.smaller-text}
+## Complexidade da RealizaÃ§Ã£o de Valor {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Interdependências Tecnológicas
+### InterdependÃªncias TecnolÃ³gicas
 
-**Gestão Eficaz Requer**
-- Inovação interna
+**GestÃ£o Eficaz Requer**
+- InovaÃ§Ã£o interna
 - Monitoramento do ecossistema
-- Coordenação de dependências
-- Antecipação de gargalos
-- Exploração de oportunidades
+- CoordenaÃ§Ã£o de dependÃªncias
+- AntecipaÃ§Ã£o de gargalos
+- ExploraÃ§Ã£o de oportunidades
 
 ::: {.info-box}
-Não basta inovar: é preciso orquestrar o ecossistema
+NÃ£o basta inovar: Ã© preciso orquestrar o ecossistema
 :::
 :::
 
 ::: {.column width="50%"}
-### Estratégias por Posição
+### EstratÃ©gias por PosiÃ§Ã£o
 
 **Upstream (Componentes)**
 - Investimento em capacidades
 - Controle de interfaces
-- Padrões tecnológicos
+- PadrÃµes tecnolÃ³gicos
 
 **Downstream (Complementos)**
 - Abertura e modularidade
@@ -569,7 +568,7 @@ Não basta inovar: é preciso orquestrar o ecossistema
 - Ecossistema de parceiros
 
 ::: {.highlight-box}
-Estrutura de interdependências determina estratégias
+Estrutura de interdependÃªncias determina estratÃ©gias
 :::
 :::
 :::
@@ -580,17 +579,17 @@ Estrutura de interdependências determina estratégias
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Política Institucional de Inovação
+### PolÃ­tica Institucional de InovaÃ§Ã£o
 
-**Dimensões Estratégicas**
-- Gestão de Propriedade Intelectual
-- Valoração de ativos intangíveis
-- Negociação de parcerias
-- Transferência de tecnologia
-- Empreendedorismo acadêmico
+**DimensÃµes EstratÃ©gicas**
+- GestÃ£o de Propriedade Intelectual
+- ValoraÃ§Ã£o de ativos intangÃ­veis
+- NegociaÃ§Ã£o de parcerias
+- TransferÃªncia de tecnologia
+- Empreendedorismo acadÃªmico
 
 ::: {.info-box}
-Operacionalização: **Agitte.se**
+OperacionalizaÃ§Ã£o: **Agitte.se**
 :::
 :::
 
@@ -607,20 +606,20 @@ Operacionalização: **Agitte.se**
 
 ::: {.info-box}
 **Output**
-- Depósitos de patentes
+- DepÃ³sitos de patentes
 - Contratos de licenciamento
 - Spin-offs criadas
 :::
 
 ::: {.highlight-box}
 **Processo**
-- Tempo médio de licensing
-- Taxa de transferência
+- Tempo mÃ©dio de licensing
+- Taxa de transferÃªncia
 :::
 :::
 :::
 
-# [Conclusão]{.section-header}
+# [ConclusÃ£o]{.section-header}
 
 ::: {style="text-align: right; padding-top: 10px; padding-right: 50px;"}
 ![](Figuras/conclusao.jpg){width="25%"}
@@ -632,31 +631,31 @@ Operacionalização: **Agitte.se**
 
 ::: {.columns}
 ::: {.column width="50%"}
-### Essência da Gestão da Inovação
+### EssÃªncia da GestÃ£o da InovaÃ§Ã£o
 
-**Abordagem Sistemática**
-- Transformação de conhecimento em valor
+**Abordagem SistemÃ¡tica**
+- TransformaÃ§Ã£o de conhecimento em valor
 - ISO 56002 como framework normativo
-- Integração de princípios
+- IntegraÃ§Ã£o de princÃ­pios
 
 **Componentes Integrados**
-- Liderança
+- LideranÃ§a
 - Cultura
-- Estratégia
+- EstratÃ©gia
 - Processo
 :::
 
 ::: {.column width="50%"}
-### Alinhamento Teórico-Prático
+### Alinhamento TeÃ³rico-PrÃ¡tico
 
-**Conceitos Acadêmicos**
+**Conceitos AcadÃªmicos**
 - Capacidade Absortiva
-- Inovação Aberta
-- Ecossistemas de Inovação
+- InovaÃ§Ã£o Aberta
+- Ecossistemas de InovaÃ§Ã£o
 
 **Estrutura ISO 56002**
-- Esforços repetíveis
-- Resultados mensuráveis
+- EsforÃ§os repetÃ­veis
+- Resultados mensurÃ¡veis
 - Sustentabilidade
 
 ::: {.highlight-box}
@@ -671,37 +670,37 @@ Sistematicidade = Vantagem Competitiva
 
 ::: {.columns}
 ::: {.column width="60%"}
-### Principais Obstáculos
+### Principais ObstÃ¡culos
 
 **Assimetrias Informacionais**
-- Valoração de tecnologias em estágios iniciais
+- ValoraÃ§Ã£o de tecnologias em estÃ¡gios iniciais
 - *Technology Readiness Levels* 2-4
-- Dificuldade de precificação
+- Dificuldade de precificaÃ§Ã£o
 
 **Cultura Institucional**
-- Proteção intelectual incipiente
-- Tensão publicação vs. patenteamento
-- Desconhecimento de mecanismos de transferência
+- ProteÃ§Ã£o intelectual incipiente
+- TensÃ£o publicaÃ§Ã£o vs. patenteamento
+- Desconhecimento de mecanismos de transferÃªncia
 
-**Divergências Temporais**
-- Pesquisa acadêmica: longo prazo
+**DivergÃªncias Temporais**
+- Pesquisa acadÃªmica: longo prazo
 - Expectativas empresariais: curto prazo
 - Assimetria de horizontes
 :::
 
 ::: {.column width="40%"}
 ::: {.info-box}
-**Consolidação do SGI**
+**ConsolidaÃ§Ã£o do SGI**
 
 **Requer**
-- Superação de barreiras culturais
-- Capacitação institucional
+- SuperaÃ§Ã£o de barreiras culturais
+- CapacitaÃ§Ã£o institucional
 - Alinhamento de incentivos
 - Investimento em estrutura
 :::
 
 ::: {.highlight-box}
-**Contexto**: Transição para economia do conhecimento
+**Contexto**: TransiÃ§Ã£o para economia do conhecimento
 :::
 :::
 :::
@@ -714,44 +713,44 @@ Sistematicidade = Vantagem Competitiva
 ::: {.column width="50%"}
 ### Capacidades Ambidestras
 
-**Equilíbrio entre**
-- **Exploração**: Pesquisa científica, novos domínios
-- **Explotação**: Aplicação de conhecimentos existentes
+**EquilÃ­brio entre**
+- **ExploraÃ§Ã£o**: Pesquisa cientÃ­fica, novos domÃ­nios
+- **ExplotaÃ§Ã£o**: AplicaÃ§Ã£o de conhecimentos existentes
 
 ::: {.info-box}
-Organizações precisam gerenciar simultaneamente ambas as dimensões
+OrganizaÃ§Ãµes precisam gerenciar simultaneamente ambas as dimensÃµes
 :::
 
-### Métricas Balanceadas
+### MÃ©tricas Balanceadas
 
-**Harmonização**
-- Excelência científica
-- Impacto socioeconômico
+**HarmonizaÃ§Ã£o**
+- ExcelÃªncia cientÃ­fica
+- Impacto socioeconÃ´mico
 - Sustentabilidade
 :::
 
 ::: {.column width="50%"}
-### Inovação para o Desenvolvimento
+### InovaÃ§Ã£o para o Desenvolvimento
 
 **Economia do Conhecimento**
-- Inovação como vetor de desenvolvimento
+- InovaÃ§Ã£o como vetor de desenvolvimento
 - Responsabilidade social
 - Sustentabilidade ambiental
-- Inclusão tecnológica
+- InclusÃ£o tecnolÃ³gica
 
 ::: {.highlight-box}
-**Objetivo Final**: SGI como instrumento de desenvolvimento sustentável e competitividade na economia do conhecimento
+**Objetivo Final**: SGI como instrumento de desenvolvimento sustentÃ¡vel e competitividade na economia do conhecimento
 :::
 :::
 :::
 
 ---
 
-## Referências {.smaller-text .references}
+## ReferÃªncias {.smaller-text .references}
 
 ::: {style="font-size: 0.65em; column-count: 2; column-gap: 40px;"}
 
-**ABNT NBR ISO 56002:2020**. *Sistema de gestão da inovação - Diretrizes*. Associação Brasileira de Normas Técnicas, 2020.
+**ABNT NBR ISO 56002:2020**. *Sistema de gestÃ£o da inovaÃ§Ã£o - Diretrizes*. AssociaÃ§Ã£o Brasileira de Normas TÃ©cnicas, 2020.
 
 **ADNER, R.; KAPOOR, R.** Value creation in innovation ecosystems: how the structure of technological interdependence affects firm performance in new technology generations. *Strategic Management Journal*, v. 31, n. 3, p. 306-333, 2010.
 
@@ -765,7 +764,7 @@ Organizações precisam gerenciar simultaneamente ambas as dimensões
 
 **GASSMANN, O.; ENKEL, E.** Towards a Theory of Open Innovation: Three Core Process Archetypes. *R&D Management Conference*, 2004.
 
-**OCDE/Eurostat**. *Manual de Oslo: Diretrizes para Coleta e Interpretação de Dados sobre Inovação*, 3ª edição. FINEP, 2005.
+**OCDE/Eurostat**. *Manual de Oslo: Diretrizes para Coleta e InterpretaÃ§Ã£o de Dados sobre InovaÃ§Ã£o*, 3Âª ediÃ§Ã£o. FINEP, 2005.
 
 **ROTHWELL, R.** Towards the fifth-generation innovation process. *International Marketing Review*, v. 11, n. 1, p. 7-31, 1994.
 
