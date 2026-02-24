@@ -14,7 +14,7 @@ description: "Ambiente virtual da disciplina de Análise da Paisagem — aulas, 
     <h2 class="ava-title">Análise da Paisagem</h2>
     <p class="ava-subtitle">Abordagem sistêmica integrando ecologia da paisagem, sensoriamento remoto, métricas espaciais, diagnóstico integrado e planejamento territorial.</p>
     <div class="ava-stats">
-      <span class="ava-stat"><i class="fa-solid fa-display"></i> 28 aulas + 2 extras</span>
+      <span class="ava-stat"><i class="fa-solid fa-display"></i> 19 aulas + 11 extras</span>
       <span class="ava-stat"><i class="fa-solid fa-book"></i> Leituras</span>
       <span class="ava-stat"><i class="fa-solid fa-video"></i> Vídeos</span>
     </div>
@@ -35,30 +35,27 @@ Fundamentos conceituais e epistemológicos da paisagem na Geografia e áreas afi
 ::: {.callout-tip collapse="true" icon=false}
 ## {{< fa calendar-days >}} Cronograma das Aulas
 
-| Semana | Aula | Assuntos Previstos |
-|:------:|:----:|:-------------------|
-| 1ª | 01-02 | Apresentação; objetivos e produtos; conceito de paisagem; evolução e distinções (espaço, território, ambiente). |
-| 2ª | 03-04 | Geossistema e leitura sistêmica; Ecologia da paisagem (matriz–mancha–corredor). |
-| 3ª | 05-06 | Escalas espaço-temporais; padrão e processo; fluxos, fragmentação e resiliência. |
-| 4ª | 07-08 | Cartografia temática aplicada; Exercício: delimitação preliminar da área de estudo. |
-| 5ª | 09-10 | Interpretação visual da paisagem; matriz de evidências e síntese descritivo-interpretativa. |
-| **6ª** | **11-12** | **1ª AVALIAÇÃO (TEÓRICA I – individual) + continuação dos fundamentos**. |
-| 7ª | 13-14 | Sensoriamento remoto aplicado I (fundamentos operacionais); Exercício: identificação de feições e padrões. |
-| 8ª | 15-16 | SR aplicado II (mudanças e trajetórias); Produto parcial: mapa multitemporal de mudanças. |
-| 9ª | 17-18 | Conectividade funcional e métricas FRAGSTATS; Exercício: interpretação de indicadores. |
-| 10ª | 19-20 | Unidades de paisagem; Diagnóstico integrado (pressões, conflitos, vulnerabilidades). |
-| 11ª | 21-22 | Planejamento territorial e diretrizes; Zoneamentos aplicados (geoambiental/risco/aptidão). |
-| 12ª | 23-24 | Domínios e paisagens tropicais (Bertrand, Monteiro, Ab'Sáber); Zoneamento geoecológico (Tricart). |
-| 13ª | 25-26 | Percepção e valoração da paisagem (Tuan, Cosgrove); Legislação ambiental e paisagem (Código Florestal, CAR, ZEE). |
-| 14ª | 27-28 | Sensoriamento remoto avançado (LiDAR, SAR, drones); Validação de modelos e controle de qualidade. |
-| **15ª** | **29-30** | **2ª AVALIAÇÃO (PRÁTICA I – em grupo): *Serious Game*/Desafio (diagnóstico + diretrizes)**. |
-| 16ª | 31-32 | Atividade de campo; Organização de evidências e orientação para relatório técnico. |
-| **17ª** | **33-34** | **3ª AVALIAÇÃO (PRÁTICA II – individual): entrega do Relatório Técnico de Campo**. |
-| **18ª** | **35-36** | **4ª AVALIAÇÃO (TEÓRICA II – individual): integração de métodos e tomada de decisão**. |
+| Encontro | Data | Assuntos Previstos (4 h) |
+|:--------:|:----:|:-------------------------|
+| 1º | 25/02 | Apresentação do componente; conceito de paisagem, evolução e distinções; paisagem como síntese. |
+| 2º | 04/03 | *Semana de Integração — sem conteúdo programático.* |
+| 3º | 11/03 | Abordagens integradoras: geossistema, leitura sistêmica; ecologia da paisagem (matriz–mancha–corredor, conectividade). |
+| 4º | 18/03 | Escala, padrão e processo: escalas espaço-temporais; fluxos, fragmentação, bordas; resiliência e vulnerabilidade. |
+| 5º | 25/03 | Cartografia temática aplicada: leitura integrada (relevo, drenagem, uso/cobertura); exercício de delimitação da área de estudo. |
+| 6º | 01/04 | Interpretação visual da paisagem: forma, textura, tonalidade, contexto; matriz de evidências e síntese descritivo-interpretativa. |
+| **7º** | **08/04** | **1ª AVALIAÇÃO (TEÓRICA I – individual): fundamentos, abordagens, escala/dinâmica, cartografia e interpretação visual.** |
+| 8º | 15/04 | Sensoriamento remoto aplicado: fundamentos operacionais; comparação temporal, detecção de mudanças e trajetórias. |
+| 9º | 22/04 | Métricas e indicadores de paisagem: heterogeneidade, fragmentação, conectividade, efeito de borda; exercício de interpretação crítica. |
+| 10º | 29/04 | Unidades de paisagem e diagnóstico integrado: delimitação, caracterização, pressões, conflitos, vulnerabilidades e potencialidades. |
+| 11º | 06/05 | Planejamento territorial e zoneamentos aplicados: diretrizes, prioridades (conservação, conectividade, recuperação); exercício orientado. |
+| **12º** | **13/05** | **2ª AVALIAÇÃO (PRÁTICA I – em grupo): *Serious Game/Desafio* (diagnóstico + diretrizes + justificativa técnica + defesa e entrega).** |
+| 13º | 20/05 | Atividade de campo: observação sistemática, registros (fotos/croquis), identificação de unidades/processos; organização das evidências. |
+| **14º** | **27/05** | **3ª AVALIAÇÃO (PRÁTICA II – individual): entrega do Relatório Técnico de Campo (com evidências e síntese).** |
+| **15º** | **03/06** | **4ª AVALIAÇÃO (TEÓRICA II – individual): integração de métodos e tomada de decisão em análise/planejamento da paisagem.** |
 
 : {.striped .hover}
 
-> **Observação:** Todas as aulas ocorrem no turno da manhã, das 07h30 às 11h30 (4h por encontro). Período: 25/02 a 03/06.
+> **Observação:** Todas as aulas ocorrem no turno da manhã, das 07h30 às 11h30 (4 h por encontro). Período: 25/02 a 03/06.
 :::
 
 ::: {.callout-important icon=false}
@@ -77,10 +74,12 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 
 ```{=html}
 <div class="slide-grid">
+
+<!-- ══════ 1º ENCONTRO — 25/02 ══════ -->
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/apresentacao_conceito_paisagem/apresentacao_conceito_paisagem.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 01 | Apresentação e Conceito de Paisagem</div>
+<div class="card-title">1º Encontro | Apresentação e Conceito de Paisagem</div>
 <p>Múltiplas definições: artística, geográfica, ecológica e sistêmica.</p>
 </div>
 </a>
@@ -88,15 +87,16 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/evolucao_conceito_distincoes/evolucao_conceito_distincoes.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 02 | Evolução do Conceito e Distinções</div>
+<div class="card-title">1º Encontro | Evolução do Conceito e Distinções</div>
 <p>Paisagem vs. ecossistema vs. bioma; vertentes europeia e norte-americana.</p>
 </div>
 </a>
 
+<!-- ══════ 3º ENCONTRO — 11/03 ══════ -->
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/geossistema_leitura_sistemica/geossistema_leitura_sistemica.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 03 | Geossistema e Leitura Sistêmica</div>
+<div class="card-title">3º Encontro | Geossistema e Leitura Sistêmica</div>
 <p>Modelo de Bertrand, epigeossistema e interações biofísicas.</p>
 </div>
 </a>
@@ -104,15 +104,16 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/ecologia_paisagem/ecologia_paisagem.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 04 | Ecologia da Paisagem</div>
+<div class="card-title">3º Encontro | Ecologia da Paisagem</div>
 <p>Modelo mancha-corredor-matriz; estrutura, função e mudança.</p>
 </div>
 </a>
 
+<!-- ══════ 4º ENCONTRO — 18/03 ══════ -->
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/escala_padrao_processo/escala_padrao_processo.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 05 | Escalas Espaço-Temporais</div>
+<div class="card-title">4º Encontro | Escalas Espaço-Temporais</div>
 <p>Extensão, grão, hierarquia e MAUP na análise da paisagem.</p>
 </div>
 </a>
@@ -120,15 +121,16 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/fluxos_fragmentacao_resiliencia/fluxos_fragmentacao_resiliencia.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 06 | Fluxos, Fragmentação e Resiliência</div>
+<div class="card-title">4º Encontro | Fluxos, Fragmentação e Resiliência</div>
 <p>Conectividade estrutural e funcional; limiares de percolação.</p>
 </div>
 </a>
 
+<!-- ══════ 5º ENCONTRO — 25/03 ══════ -->
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/cartografia_tematica/cartografia_tematica.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 07 | Cartografia Temática Aplicada</div>
+<div class="card-title">5º Encontro | Cartografia Temática Aplicada</div>
 <p>Mapas de uso do solo, hipsometria, declividade e cobertura vegetal.</p>
 </div>
 </a>
@@ -136,15 +138,16 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/exercicio_delimitacao_area/exercicio_delimitacao_area.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 08 | Exercício: Delimitação da Área</div>
+<div class="card-title">5º Encontro | Exercício: Delimitação da Área</div>
 <p>Roteiro prático no QGIS para delimitar a área de estudo.</p>
 </div>
 </a>
 
+<!-- ══════ 6º ENCONTRO — 01/04 ══════ -->
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/interpretacao_visual/interpretacao_visual.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 09 | Interpretação Visual de Imagens</div>
+<div class="card-title">6º Encontro | Interpretação Visual de Imagens</div>
 <p>Chaves de interpretação: textura, forma, padrão e contexto espacial.</p>
 </div>
 </a>
@@ -152,63 +155,42 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/matriz_evidencias_sintese/matriz_evidencias_sintese.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 10 | Matriz de Evidências e Síntese</div>
+<div class="card-title">6º Encontro | Matriz de Evidências e Síntese</div>
 <p>Triangulação de dados geoespaciais, documentais e de campo.</p>
 </div>
 </a>
 
+<!-- ══════ 8º ENCONTRO — 15/04 ══════ -->
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/sensoriamento_remoto_fundamentos/sensoriamento_remoto_fundamentos.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 13 | Sensoriamento Remoto: Fundamentos</div>
+<div class="card-title">8º Encontro | Sensoriamento Remoto: Fundamentos</div>
 <p>Espectro eletromagnético, sensores orbitais e índices espectrais.</p>
-</div>
-</a>
-
-<a class="slide-card" href="../../aulas/analise_paisagem/aulas/exercicio_feicoes_padroes/exercicio_feicoes_padroes.html" target="_blank">
-<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
-<div class="slide-info">
-<div class="card-title">Aula 14 | Exercício: Feições e Padrões</div>
-<p>Classificação supervisionada e cálculo de métricas no QGIS.</p>
 </div>
 </a>
 
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/sensoriamento_remoto_mudancas/sensoriamento_remoto_mudancas.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 15 | SR: Mudanças e Trajetórias</div>
+<div class="card-title">8º Encontro | SR: Mudanças e Trajetórias</div>
 <p>Detecção de mudanças multitemporal com GEE e MapBiomas.</p>
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_paisagem/aulas/produto_parcial_mudancas/produto_parcial_mudancas.html" target="_blank">
-<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
-<div class="slide-info">
-<div class="card-title">Aula 16 | Produto Parcial: Mapa de Mudanças</div>
-<p>Elaboração do mapa multitemporal de uso e cobertura.</p>
-</div>
-</a>
-
-<a class="slide-card" href="../../aulas/analise_paisagem/aulas/conectividade_funcional/conectividade_funcional.html" target="_blank">
-<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
-<div class="slide-info">
-<div class="card-title">Aula 17 | Conectividade Funcional</div>
-<p>Métricas de grafos, corredores ecológicos e Graphab.</p>
-</div>
-</a>
-
+<!-- ══════ 9º ENCONTRO — 22/04 ══════ -->
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/exercicio_indicadores/exercicio_indicadores.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 18 | Exercício: Indicadores de Paisagem</div>
+<div class="card-title">9º Encontro | Métricas e Indicadores de Paisagem</div>
 <p>Cálculo de métricas FRAGSTATS e interpretação dos resultados.</p>
 </div>
 </a>
 
+<!-- ══════ 10º ENCONTRO — 29/04 ══════ -->
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/unidades_paisagem/unidades_paisagem.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 19 | Unidades de Paisagem</div>
+<div class="card-title">10º Encontro | Unidades de Paisagem</div>
 <p>Delimitação, tipologias e álgebra de mapas no QGIS.</p>
 </div>
 </a>
@@ -216,15 +198,16 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/diagnostico_integrado/diagnostico_integrado.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 20 | Diagnóstico Integrado</div>
+<div class="card-title">10º Encontro | Diagnóstico Integrado</div>
 <p>Matrizes SWOT/FOFA espacializadas e indicadores compostos.</p>
 </div>
 </a>
 
+<!-- ══════ 11º ENCONTRO — 06/05 ══════ -->
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/planejamento_territorial/planejamento_territorial.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 21 | Planejamento Territorial</div>
+<div class="card-title">11º Encontro | Planejamento Territorial</div>
 <p>Do diagnóstico à proposta: NbS, legislação ambiental e ODS.</p>
 </div>
 </a>
@@ -232,15 +215,16 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/zoneamentos_aplicados/zoneamentos_aplicados.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 22 | Zoneamentos Aplicados</div>
+<div class="card-title">11º Encontro | Zoneamentos Aplicados</div>
 <p>ZEE, ZEEC, planos de bacia e APA com álgebra de mapas.</p>
 </div>
 </a>
 
+<!-- ══════ 13º ENCONTRO — 20/05 ══════ -->
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/trabalho_campo/trabalho_campo.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 25 | Trabalho de Campo</div>
+<div class="card-title">13º Encontro | Trabalho de Campo</div>
 <p>Planejamento, coleta com apps móveis e validação in loco.</p>
 </div>
 </a>
@@ -248,69 +232,94 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/organizacao_evidencias/organizacao_evidencias.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 26 | Organização de Evidências</div>
-<p>Compilação do portfólio, checklist e preparação da apresentação final.</p>
+<div class="card-title">13º Encontro | Organização de Evidências</div>
+<p>Compilação do portfólio, checklist e preparação do relatório técnico.</p>
+</div>
+</a>
+
+</div>
+
+<h4 style="margin-top:1.5rem; color:#6A1B9A;"><i class="fa-solid fa-flask"></i> Material Complementar</h4>
+<p style="font-size:0.88rem; color:#555; margin-bottom:0.75rem;">Apresentações de aprofundamento — disponíveis como leitura/consulta adicional, sem encontro obrigatório no cronograma.</p>
+
+<div class="slide-grid">
+
+<a class="slide-card" href="../../aulas/analise_paisagem/aulas/conectividade_funcional/conectividade_funcional.html" target="_blank">
+<div class="slide-icon" style="background:#6A1B9A;"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<div class="card-title">Complementar | Conectividade Funcional</div>
+<p>Métricas de grafos, corredores ecológicos e Graphab.</p>
 </div>
 </a>
 
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/dominios_paisagens_tropicais/dominios_paisagens_tropicais.html" target="_blank">
-<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-icon" style="background:#6A1B9A;"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 23 | Domínios e Paisagens Tropicais</div>
+<div class="card-title">Complementar | Domínios e Paisagens Tropicais</div>
 <p>Bertrand (geossistema), Monteiro (derivações antropogênicas) e Ab'Sáber (domínios morfoclimáticos).</p>
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_paisagem/aulas/zoneamento_geoecologico/zoneamento_geoecologico.html" target="_blank">
-<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<a class="slide-card" href="../../aulas/analise_paisagem/aulas/exercicio_feicoes_padroes/exercicio_feicoes_padroes.html" target="_blank">
+<div class="slide-icon" style="background:#6A1B9A;"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 24 | Zoneamento Geoecológico</div>
-<p>Ecodinâmica de Tricart: morfogênese, pedogênese e classificação de estabilidade.</p>
+<div class="card-title">Complementar | Exercício: Feições e Padrões</div>
+<p>Classificação supervisionada e identificação de feições antrópicas/naturais.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../../aulas/analise_paisagem/aulas/produto_parcial_mudancas/produto_parcial_mudancas.html" target="_blank">
+<div class="slide-icon" style="background:#6A1B9A;"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<div class="card-title">Complementar | Produto Parcial: Mapa de Mudanças</div>
+<p>Elaboração do mapa multitemporal de uso e cobertura.</p>
 </div>
 </a>
 
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/percepcao_valoracao_paisagem/percepcao_valoracao_paisagem.html" target="_blank">
-<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-icon" style="background:#6A1B9A;"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 25 | Percepção e Valoração da Paisagem</div>
+<div class="card-title">Complementar | Percepção e Valoração da Paisagem</div>
 <p>Tuan (topofilia), Berque (paisagem-marca/matriz) e Cosgrove (paisagem como ideologia).</p>
 </div>
 </a>
 
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/legislacao_ambiental_paisagem/legislacao_ambiental_paisagem.html" target="_blank">
-<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-icon" style="background:#6A1B9A;"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 26 | Legislação Ambiental e Paisagem</div>
+<div class="card-title">Complementar | Legislação Ambiental e Paisagem</div>
 <p>Código Florestal, CAR, ZEE, EIA/RIMA: instrumentos legais aplicados à análise da paisagem.</p>
 </div>
 </a>
 
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/sensoriamento_remoto_avancado/sensoriamento_remoto_avancado.html" target="_blank">
-<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-icon" style="background:#6A1B9A;"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 27 | Sensoriamento Remoto Avançado</div>
-<p>LiDAR, SAR, drones, GEDI e integração multissensor para diagnóstico paisagístico.</p>
+<div class="card-title">Complementar | Sensoriamento Remoto Avançado</div>
+<p>LiDAR, SAR, drones, GEDI e integração multissensor.</p>
 </div>
 </a>
 
 <a class="slide-card" href="../../aulas/analise_paisagem/aulas/validacao_modelos_paisagem/validacao_modelos_paisagem.html" target="_blank">
-<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-icon" style="background:#6A1B9A;"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 28 | Validação de Modelos</div>
-<p>Matriz de confusão, acurácia temática, análise de incerteza e sensibilidade em mapeamentos.</p>
+<div class="card-title">Complementar | Validação de Modelos</div>
+<p>Matriz de confusão, acurácia temática, análise de incerteza e sensibilidade.</p>
 </div>
 </a>
 
+<a class="slide-card" href="../../aulas/analise_paisagem/aulas/zoneamento_geoecologico/zoneamento_geoecologico.html" target="_blank">
+<div class="slide-icon" style="background:#6A1B9A;"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<div class="card-title">Complementar | Zoneamento Geoecológico</div>
+<p>Ecodinâmica de Tricart: morfogênese, pedogênese e classificação de estabilidade.</p>
 </div>
-
-<h4 style="margin-top:1.5rem; color:#6A1B9A;"><i class="fa-solid fa-flask"></i> Aulas Extras (Complementares)</h4>
-
-<div class="slide-grid">
+</a>
 
 <a class="slide-card" href="../../aulas/analise_paisagem/extras/bioengenharia_controle_erosao/bioengenharia_controle_erosao.html" target="_blank">
 <div class="slide-icon" style="background:#6A1B9A;"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Extra 01 | Bioengenharia e Controle de Erosão</div>
+<div class="card-title">Complementar | Bioengenharia e Controle de Erosão</div>
 <p>Técnicas biotécnicas, geotêxteis naturais e integração com restauração paisagística.</p>
 </div>
 </a>
@@ -318,7 +327,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <a class="slide-card" href="../../aulas/analise_paisagem/extras/modelagem_quantitativa_paisagem/modelagem_quantitativa_paisagem.html" target="_blank">
 <div class="slide-icon" style="background:#6A1B9A;"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Extra 02 | Modelagem Quantitativa de Paisagem</div>
+<div class="card-title">Complementar | Modelagem Quantitativa de Paisagem</div>
 <p>Modelos LUCC, conectividade por grafos/circuitos, InVEST e simulação de cenários.</p>
 </div>
 </a>

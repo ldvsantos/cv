@@ -171,40 +171,25 @@ O componente curricular será desenvolvido presencialmente, com carga horária t
 
 **CONTEÚDO PROGRAMÁTICO**
 
-**Quadro 1 – Conteúdo programático por aula de Análise da Paisagem, UEFS \- 2026.1.**
+**Quadro 1 – Conteúdo programático por encontro de Análise da Paisagem, UEFS \- 2026.1.**
 
-| SEMANA | AULA | DATA | ⬇ ASSUNTOS PREVISTOS ⬇ |
-| ----- | ----- | ----- | ----- |
-| 1ª | 01 | 25/02 | Apresentação do componente; objetivos, critérios, produtos; introdução ao conceito de paisagem. |
-|  | 02 | 25/02 | Evolução do conceito; distinções (espaço, território, ambiente, paisagem); paisagem como síntese. |
-| 2ª | 03 | 04/03 | Abordagens integradoras: geossistema e leitura sistêmica (integração físico-biótica e socioespacial). |
-|  | 04 | 04/03 | Ecologia da paisagem: matriz–mancha–corredor; conectividade; implicações para diagnóstico territorial. |
-| 3ª | 05 | 11/03 | Escalas espaço-temporais; níveis de organização; padrão e processo na dinâmica da paisagem. |
-|  | 06 | 11/03 | Fluxos, permeabilidade, bordas e fragmentação; resiliência e vulnerabilidade socioambiental. |
-| 4ª | 07 | 18/03 | Cartografia temática aplicada: leitura integrada (relevo, drenagem, redes, uso/cobertura). |
-|  | 08 | 18/03 | Exercício orientado: delimitação preliminar e caracterização inicial da área de estudo. |
-| 5ª | 09 | 25/03 | Interpretação visual da paisagem: forma, textura, tonalidade, contexto e associação. |
-|  | 10 | 25/03 | Matriz de evidências e roteiro interpretativo; síntese descritivo-interpretativa (texto \+ evidências). |
-| **6ª** | **11** | **01/04** | **1ª AVALIAÇÃO (TEÓRICA I – individual): fundamentos do conceito de paisagem, abordagens, escala/dinâmica, cartografia e interpretação visual.** |
-|  | **12** |  |  |
-| 7ª | 13 | 08/04 | Sensoriamento remoto aplicado I: fundamentos operacionais (resoluções, bandas, composições e realces). |
-|  | 14 | 08/04 | Exercício: identificação de feições e padrões; leitura orientada de uso/cobertura da terra. |
-| 8ª | 15 | 15/04 | Sensoriamento remoto aplicado II: comparação temporal; noções de mudança e trajetórias. |
-|  | 16 | 15/04 | Produto parcial: registro interpretativo de mudanças e discussão socioambiental. |
-| 9ª | 17 | 22/04 | Métricas/indicadores de paisagem: heterogeneidade, fragmentação, conectividade, efeito de borda (conceitos). |
-|  | 18 | 22/04 | Exercício aplicado: interpretação crítica de indicadores e implicações para funcionalidade e gestão. |
-| 10ª | 19 | 29/04 | Unidades de paisagem: critérios de delimitação e caracterização; integração de evidências. |
-|  | 20 | 29/04 | Diagnóstico integrado: pressões, conflitos de uso, vulnerabilidades e potencialidades. |
-| 11ª | 21 | 06/05 | Planejamento territorial: diretrizes, prioridades e medidas (conservação, conectividade, recuperação). |
-|  | 22 | 06/05 | Zoneamentos aplicados (geoambiental/risco/aptidão): critérios, limites e exercício orientado. |
-| **12ª** | **23** | **13/05** | **2ª AVALIAÇÃO (PRÁTICA I – em grupo): *Serious Game/Desafio* (diagnóstico \+ diretrizes \+ justificativa técnica).** |
-|  | 24 | 13/05 | Continuação do desafio: síntese, defesa técnica e entrega do produto prático (mapa/nota técnica). |
-| 13ª | 25 | 20/05 | Atividade de campo: observação sistemática; registros (fotos/croquis) e identificação de unidades/processos. |
-|  | 26 | 20/05 | Organização das evidências do campo e orientação metodológica para o relatório técnico individual. |
-| **14ª** | **27** | **27/05** | **3ª AVALIAÇÃO (PRÁTICA II – individual): entrega do Relatório Técnico de Campo (com evidências e síntese).** |
-|  | **28** |  |  |
-| **15ª** | **29** | **03/06** | **4ª AVALIAÇÃO (TEÓRICA II – individual): integração de métodos e tomada de decisão em análise/planejamento da paisagem.** |
-|  | **30** |  |  |
+| ENCONTRO | DATA | ⬇ ASSUNTOS PREVISTOS (4 h) ⬇ |
+| ----- | ----- | ----- |
+| 1º | 25/02 | Apresentação do componente; conceito de paisagem, evolução e distinções (espaço, território, ambiente); paisagem como síntese. |
+| 2º | 04/03 | *Semana de Integração – sem conteúdo programático.* |
+| 3º | 11/03 | Abordagens integradoras: geossistema, leitura sistêmica; ecologia da paisagem (matriz–mancha–corredor, conectividade). |
+| 4º | 18/03 | Escala, padrão e processo: escalas espaço-temporais; fluxos, fragmentação, bordas; resiliência e vulnerabilidade. |
+| 5º | 25/03 | Cartografia temática aplicada: leitura integrada (relevo, drenagem, uso/cobertura); exercício de delimitação da área de estudo. |
+| 6º | 01/04 | Interpretação visual da paisagem: forma, textura, tonalidade, contexto; matriz de evidências e síntese descritivo-interpretativa. |
+| **7º** | **08/04** | **1ª AVALIAÇÃO (TEÓRICA I – individual): fundamentos do conceito de paisagem, abordagens, escala/dinâmica, cartografia e interpretação visual.** |
+| 8º | 15/04 | Sensoriamento remoto aplicado: fundamentos operacionais (resoluções, bandas, composições); comparação temporal, detecção de mudanças e trajetórias. |
+| 9º | 22/04 | Métricas e indicadores de paisagem: heterogeneidade, fragmentação, conectividade, efeito de borda; exercício de interpretação crítica. |
+| 10º | 29/04 | Unidades de paisagem e diagnóstico integrado: delimitação, caracterização, pressões, conflitos, vulnerabilidades e potencialidades. |
+| 11º | 06/05 | Planejamento territorial e zoneamentos aplicados: diretrizes, prioridades (conservação, conectividade, recuperação); exercício orientado. |
+| **12º** | **13/05** | **2ª AVALIAÇÃO (PRÁTICA I – em grupo): *Serious Game/Desafio* (diagnóstico \+ diretrizes \+ justificativa técnica \+ defesa e entrega).** |
+| 13º | 20/05 | Atividade de campo: observação sistemática, registros (fotos/croquis), identificação de unidades/processos; organização das evidências. |
+| **14º** | **27/05** | **3ª AVALIAÇÃO (PRÁTICA II – individual): entrega do Relatório Técnico de Campo (com evidências e síntese).** |
+| **15º** | **03/06** | **4ª AVALIAÇÃO (TEÓRICA II – individual): integração de métodos e tomada de decisão em análise/planejamento da paisagem.** |
 
 **SIGNIFICADO DO COMPONENTE CURRICULAR PARA FORMAÇÃO PROFISSIONAL**
 
