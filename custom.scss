@@ -212,6 +212,18 @@ h2:has(+ p:first-of-type) + p + .text-center {
   margin-top: 0.15rem;
 }
 
+.slide-card .slide-icon.slide-icon--extra {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 0.4rem;
+  background: #6A1B9A;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+}
+
 .slide-card .slide-info h4,
 .slide-card .slide-info .card-title {
   margin: 0 0 0.25rem 0;
