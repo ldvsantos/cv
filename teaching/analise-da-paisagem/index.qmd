@@ -476,11 +476,69 @@ Envie pelo [e-mail do professor](mailto:ldvsantos@uefs.br) com o assunto "Sugest
 </div>
 ```
 
-### {{< fa link >}} Recursos
+### {{< fa toolbox >}} Ferramentas
+
+Softwares, plataformas e bases de dados utilizados ao longo da disciplina. Todos são **gratuitos** ou possuem versão livre para uso acadêmico.
+
+#### {{< fa desktop >}} SIG e Geoprocessamento
+
+| Ferramenta | Descrição | Link |
+|:-----------|:----------|:----:|
+| **QGIS** | SIG livre e multiplataforma — base para cartografia, sobreposição de camadas, zoneamentos e layouts. | [qgis.org](https://qgis.org/) |
+| **QGIS — Plugin LecoS** | Plugin de métricas de paisagem para QGIS (Landscape Ecology Statistics). | [LecoS](https://plugins.qgis.org/plugins/LecoS/) |
+| **QGIS — Plugin AcATaMa** | Plugin de validação de classificação por acurácia temática (matriz de confusão). | [AcATaMa](https://plugins.qgis.org/plugins/AcATaMa/) |
+| **Google Earth Engine** | Plataforma em nuvem para processamento de imagens de satélite em larga escala. | [earthengine.google.com](https://earthengine.google.com/) |
+
+: {.striped .hover}
+
+#### {{< fa chart-area >}} Métricas e Conectividade da Paisagem
+
+| Ferramenta | Descrição | Link |
+|:-----------|:----------|:----:|
+| **FRAGSTATS** | Software clássico para cálculo de métricas de padrão espacial em mapas categóricos. | [FRAGSTATS](https://www.fragstats.org/) |
+| **Graphab** | Modelagem de grafos de paisagem: conectividade (IIC, PC), simulação de cenários e priorização de manchas. | [Graphab](https://sourcesup.renater.fr/graphab/) |
+| **Conefor** | Cálculo de índices de conectividade funcional (IIC, PC, dIIC) para redes de habitat. | [Conefor](http://www.conefor.org/) |
+| **Circuitscape** | Modelagem de conectividade por teoria de circuitos elétricos (Julia/Python). | [Circuitscape](https://circuitscape.org/) |
+| **Linkage Mapper** | Toolbox ArcGIS/QGIS para identificação de rotas de menor custo e corredores. | [Linkage Mapper](https://linkagemapper.org/) |
+| **landscapemetrics** | Pacote R para cálculo de métricas de paisagem (alternativa moderna ao FRAGSTATS). | [landscapemetrics](https://r-spatialecology.github.io/landscapemetrics/) |
+
+: {.striped .hover}
+
+#### {{< fa satellite >}} Sensoriamento Remoto e Bases de Dados
+
+| Ferramenta | Descrição | Link |
+|:-----------|:----------|:----:|
+| **MapBiomas** | Mapeamento anual de uso e cobertura da terra no Brasil (1985–presente). Inclui dados de transição e alertas. | [mapbiomas.org](https://mapbiomas.org/) |
+| **MapBiomas Alerta** | Sistema de validação e monitoramento de alertas de desmatamento. | [alerta.mapbiomas.org](https://alerta.mapbiomas.org/) |
+| **TOPODATA** | Base de dados geomorfométricos do Brasil (MDE SRTM refinado pelo INPE). | [TOPODATA](http://www.webmapit.com.br/inpe/topodata/) |
+| **INPE — Catálogo de Imagens** | Acervo de imagens de satélite gratuitas (Landsat, CBERS, etc.). | [Catálogo INPE](http://www.dgi.inpe.br/catalogo/) |
+| **Copernicus Open Access Hub** | Imagens Sentinel-1 (radar) e Sentinel-2 (óptico) da ESA. | [Copernicus](https://dataspace.copernicus.eu/) |
+
+: {.striped .hover}
+
+#### {{< fa laptop-code >}} Modelagem e Simulação
+
+| Ferramenta | Descrição | Link |
+|:-----------|:----------|:----:|
+| **Dinamica EGO** | Plataforma de modelagem espacial de mudanças de uso/cobertura da terra (LUCC). | [Dinamica EGO](https://dinamicaego.com/) |
+| **InVEST** | Conjunto de modelos para avaliação de serviços ecossistêmicos. | [InVEST](https://naturalcapitalproject.stanford.edu/software/invest) |
+
+: {.striped .hover}
+
+#### {{< fa code >}} Linguagens e Ambientes
+
+| Ferramenta | Descrição | Link |
+|:-----------|:----------|:----:|
+| **R / RStudio** | Linguagem estatística com pacotes espaciais (`sf`, `terra`, `landscapemetrics`, `caret`). | [posit.co](https://posit.co/download/rstudio-desktop/) |
+| **Python** | Linguagem de programação com bibliotecas para análise espacial e visualização (`matplotlib`, `geopandas`). | [python.org](https://www.python.org/) |
+
+: {.striped .hover}
+
+#### {{< fa folder-open >}} Repositório da Disciplina
 
 | Recurso | Descrição | Link |
-|---------|-----------|------|
-| Repositório da Disciplina | Materiais extras | [extras](https://github.com/ldvsantos/cv/tree/main/aulas/analise_paisagem/extras) |
+|:--------|:----------|:----:|
+| Materiais extras | Aulas complementares e materiais de apoio no GitHub. | [extras](https://github.com/ldvsantos/cv/tree/main/aulas/analise_paisagem/extras) |
 
 : {.striped .hover}
 
