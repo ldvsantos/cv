@@ -20,7 +20,7 @@ execute:
   echo: false
 ---
 
-## Visão Geral da Aula {.smaller-text}
+## Visão Geral da Aula {.smaller-text transition="fade"}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -43,24 +43,23 @@ Compreender o conceito de **geossistema** como modelo de análise integrada da p
 :::
 :::
 
-# [1  -  PENSAMENTO SISTÊMICO NA GEOGRAFIA]{.section-header}
+# [1  -  PENSAMENTO SISTÊMICO NA GEOGRAFIA]{.section-header} {transition="zoom"}
 
-## O que é um sistema? {.smaller-text}
+## O que é um sistema? {.smaller-text transition="convex"}
 
 ::: {.columns}
 ::: {.column width="50%"}
 ### Definição
 
-Um **sistema** é um conjunto de elementos interconectados que funcionam como uma totalidade, com propriedades que não existem nas partes isoladas.
+Um **sistema** é um conjunto de elementos interconectados que funcionam como uma totalidade, com propriedades emergentes.
 
 ### Propriedades sistêmicas
 
-- Estrutura  -  arranjo dos componentes
-- Função  -  fluxos e processos que atravessam o sistema
-- Entradas (*inputs*)  -  energia, matéria, informação
-- Saídas (*outputs*)  -  produtos, dissipação
-- Retroalimentação (*feedback*)  -  positiva ou negativa
-- Equilíbrio dinâmico  -  estado estacionário, não estático
+- **Estrutura** — arranjo dos componentes
+- **Função** — fluxos e processos
+- **Entradas / Saídas** — energia, matéria, informação
+- **Retroalimentação** — positiva ou negativa
+- **Equilíbrio dinâmico** — estacionário, não estático
 :::
 
 ::: {.column width="50%"}
@@ -77,23 +76,25 @@ Um **sistema** é um conjunto de elementos interconectados que funcionam como um
 : {.striped .hover}
 
 A paisagem é um sistema aberto: recebe energia solar, precipitação, sedimentos, ações humanas e exporta água, nutrientes, calor, produtos.
+
+![Paisagem como sistema aberto: fluxos de água, energia e matéria em uma bacia hidrográfica. Foto aérea de bacia hidrográfica com rios e vegetação.](img/paisagem_rio.jpg){width="100%" fig-align="center"}
 :::
 :::
 :::
 
 ---
 
-## Por que pensar a paisagem como sistema? {.smaller-text}
+## Por que pensar a paisagem como sistema? {.smaller-text transition="concave"}
 
 ::: {.columns}
 ::: {.column width="50%"}
 ### Vantagens da abordagem sistêmica
 
-1. Integra componentes que são estudados separadamente (geomorfologia, climatologia, biogeografia, geografia humana)
-2. Permite identificar fluxos e conexões entre componentes
-3. Oferece linguagem para entender mudanças (perturbação, resiliência, limiar)
-4. Conecta diagnóstico (entender o sistema) com gestão (intervir no sistema)
-5. Supera a dicotomia natureza × sociedade  -  ambas são partes do sistema
+1. **Integra** componentes estudados separadamente
+2. Identifica **fluxos e conexões** entre componentes
+3. Oferece linguagem para **mudanças** (perturbação, resiliência, limiar)
+4. Conecta **diagnóstico** com **gestão**
+5. Supera a dicotomia natureza × sociedade
 :::
 
 ::: {.column width="50%"}
@@ -111,25 +112,27 @@ A paisagem é um sistema aberto: recebe energia solar, precipitação, sedimento
 : {.striped .hover}
 
 > A análise da paisagem é, por definição, uma análise integrada e sistêmica.
+
+![Mosaico paisagístico: padrão agrícola visto de cima, mostrando diferentes usos do solo (campos, vegetação, áreas cultivadas).](img/paisagem_mosaico.jpg){width="100%" fig-align="center"}
 :::
 :::
 :::
 
-# [2  -  O CONCEITO DE GEOSSISTEMA]{.section-header}
+# [2  -  O CONCEITO DE GEOSSISTEMA]{.section-header} {transition="zoom"}
 
-## Sochava e o geossistema soviético {.smaller-text}
+## Sochava e o geossistema soviético {.smaller-text transition="convex"}
 
 ::: {.columns}
 ::: {.column width="50%"}
 ### Viktor Sochava (1905-1978)
 
-- Geógrafo soviético, propôs o conceito em 1963
+- Geógrafo soviético, propôs o conceito em **1963**
 - **Geossistema** = sistema geográfico natural, com troca de energia e matéria entre seus componentes
 - Influência da Teoria Geral dos Sistemas (Bertalanffy, 1950)
 
 ### Definição
 
-> **Geossistema** é uma unidade territorial dinâmica onde componentes naturais (relevo, clima, água, solos, vegetação) interagem como um sistema aberto, com entradas de energia solar e precipitação, e saídas de água, sedimentos e matéria orgânica.
+> **Geossistema** é uma unidade territorial dinâmica onde componentes naturais (relevo, clima, água, solos, vegetação) interagem como um sistema aberto.
 
 - Ênfase nos fluxos e nas transformações
 - O homem é agente externo que perturba o sistema
@@ -137,28 +140,64 @@ A paisagem é um sistema aberto: recebe energia solar, precipitação, sedimento
 
 ::: {.column width="50%"}
 ::: {.highlight-box}
-**Contribuições de Sochava
-**
+**Contribuições de Sochava**
 
 1. Trouxe o pensamento sistêmico para a análise da paisagem
-2. A paisagem deixa de ser descritiva e passa a ser funcional
-3. Propôs que o geossistema pode estar em diferentes estados:
-   - Equilíbrio dinâmico  -  estável
-   - Transição  -  mudando para novo estado
-   - Degradado  -  perdeu funcionalidade
-
-4. Introduziu a ideia de **limiar**: ultrapassar certos limites leva o sistema a um novo estado (por vezes irreversível)
-
-### Limitação
-
-Na formulação original, a ação humana era tratada como perturbação externa  -  não como parte integrante do sistema.
+2. A paisagem deixa de ser descritiva e passa a ser **funcional**
+3. Introduziu a ideia de **limiar**: ultrapassar certos limites leva o sistema a um novo estado (por vezes irreversível)
 :::
 :::
 :::
 
 ---
 
-## Bertrand e o geossistema francês {.smaller-text}
+## Sochava: estados e limitações {.smaller-text transition="fade"}
+
+::: {.columns}
+::: {.column width="50%"}
+### Estados do geossistema
+
+Sochava propôs que o geossistema pode estar em diferentes estados:
+
+| Estado | Descrição |
+|--------|-----------|
+| Equilíbrio dinâmico | Estável, componentes em balanço |
+| Transição | Mudando para novo estado |
+| Degradado | Perdeu funcionalidade |
+
+: {.striped .hover}
+
+> A passagem entre estados ocorre quando **limiares** são ultrapassados  -  mudanças que podem ser irreversíveis.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Limitação do modelo de Sochava**
+
+Na formulação original, a ação humana era tratada como **perturbação externa**  -  não como parte integrante do sistema.
+
+Isso gerava um problema conceitual: como analisar paisagens profundamente transformadas pela sociedade?
+
+> A superação dessa limitação será o ponto central da contribuição de **Bertrand**.
+
+![Paisagem em transição: quando limiares são ultrapassados, o sistema muda de estado.](img/paisagem_transicao.jpg){width="100%" fig-align="center"}
+:::
+:::
+:::
+
+---
+
+## {background-image="img/paisagem_semiarida.jpg" background-size="cover" background-opacity="0.3" transition="fade"}
+
+::: {style="text-align: center; padding: 2em;"}
+### Paisagens como sistemas dinâmicos
+
+A transição do modelo de Sochava para Bertrand marca a inclusão do ser humano como componente do geossistema  -  não como agente externo.
+:::
+
+---
+
+## Bertrand e o geossistema francês {.smaller-text transition="convex"}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -182,50 +221,38 @@ A ação antrópica é parte do sistema, não perturbação externa. O geossiste
 **Os três componentes integrados
 **
 
-```
-┌──────────────────────────────┐
-│      GEOSSISTEMA             │
-│                              │
-│   ┌──────────────────┐       │
-│   │ Potencial        │       │
-│   │ Ecológico        │       │
-│   │ (relevo, clima,  │       │
-│   │  hidrologia)     │       │
-│   └────────┬─────────┘       │
-│            │                 │
-│   ┌────────▼─────────┐       │
-│   │ Exploração       │       │
-│   │ Biológica        │       │
-│   │ (vegetação, solo, │      │
-│   │  fauna)          │       │
-│   └────────┬─────────┘       │
-│            │                 │
-│   ┌────────▼─────────┐       │
-│   │ Ação Antrópica   │       │
-│   │ (uso da terra,   │       │
-│   │  ocupação, gestão)│      │
-│   └──────────────────┘       │
-└──────────────────────────────┘
-```
+| Componente | Elementos | Papel |
+|-----------|-----------|-------|
+| **Potencial ecológico** | Relevo, clima, hidrologia | Base física |
+| ↕ | *interação* | *fluxos* |
+| **Exploração biológica** | Vegetação, solo, fauna | Componente vivo |
+| ↕ | *interação* | *fluxos* |
+| **Ação antrópica** | Uso da terra, ocupação, gestão | Componente humano |
+
+: {.striped .hover}
+
+> Os três componentes interagem continuamente — nenhum funciona isolado.
+
+![Mosaico rural: integração de campos agrícolas, vegetação nativa e áreas de uso misto.](img/mosaico_rural.jpg){width="100%" fig-align="center"}
 :::
 :::
 :::
 
 ---
 
-## Hierarquia escalar de Bertrand {.smaller-text}
+## Hierarquia escalar de Bertrand {.smaller-text transition="concave"}
 
 ::: {.columns}
 ::: {.column width="50%"}
 
 | Nível | Escala aprox. | Exemplo (Bahia) |
-|-------|:---:|---------|
-| Zona | $> 10^6$ km² | Zona tropical |
-| Domínio | $10^5$ km² | Domínio da Caatinga |
-| Região natural | $10^3$-$10^4$ km² | Depressão Sertaneja |
-| Geossistema | $10^1$-$10^2$ km² | Bacia do rio Jacuípe |
-| Geofácies | $10^{-1}$-$10^0$ km² | Encosta degradada com capoeira |
-| Geótopo | $< 10^{-1}$ km² | Afloramento rochoso com liquens |
+|-------|:---:|:--------|
+| Zona | > 1 000 000 km² | Zona tropical |
+| Domínio | ~100 000 km² | Domínio da Caatinga |
+| Região natural | 1 000–10 000 km² | Depressão Sertaneja |
+| **Geossistema** | **10–100 km²** | **Bacia do rio Jacuípe** |
+| Geofácies | 0,1–1 km² | Encosta degradada com capoeira |
+| Geótopo | < 0,1 km² | Afloramento rochoso com liquens |
 
 : {.striped .hover}
 
@@ -237,23 +264,31 @@ O geossistema é a escala operacional preferencial  -  grande o suficiente para 
 **Observações importantes
 **
 
-1. Os limites entre unidades não são linhas rígidas, mas zonas de transição (gradientes)
-
-2. A classificação é aninhada  -  cada geossistema contém geofácies, que contêm geótopos
-
-3. A escala de análise depende do objetivo:
+1. Limites são **gradientes**, não linhas rígidas
+2. Classificação **aninhada**: geossistema → geofácies → geótopo
+3. Escala depende do **objetivo**:
    - Planejamento regional → geossistema
-   - Diagnóstico de área degradada → geofácies / geótopo
-   - Política ambiental estadual → região natural / domínio
+   - Diagnóstico local → geofácies / geótopo
+4. Hierarquia é referência **flexível**, não universal
 
-4. Bertrand não pretendia que a hierarquia fosse universal  -  é uma referência flexível
+![Do global ao local: a hierarquia escalar permite analisar a paisagem em diferentes níveis de detalhe.](img/escala_global.jpg){width="100%" fig-align="center"}
 :::
 :::
 :::
 
-# [3  -  COMPONENTES DO GEOSSISTEMA]{.section-header}
+---
 
-## Potencial ecológico {.smaller-text}
+## {background-image="img/relevo_montanha.jpg" background-size="cover" background-opacity="0.25" transition="fade"}
+
+::: {style="text-align: center; padding: 2em;"}
+### Do conceito à aplicação
+
+Agora que compreendemos a hierarquia escalar e os fundamentos teóricos, vamos detalhar os **três componentes do geossistema** de Bertrand.
+:::
+
+# [3  -  COMPONENTES DO GEOSSISTEMA]{.section-header} {transition="zoom"}
+
+## Potencial ecológico {.smaller-text transition="convex"}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -286,13 +321,15 @@ Esses componentes definem os limites e as potencialidades do sistema.
 - Solos  -  Rasos (Neossolos) em áreas cristalinas; mais profundos em sedimentares
 
 > O potencial ecológico do semiárido baiano impõe limites severos ao uso e à ocupação. Ignorá-los é produzir degradação.
+
+![Paisagem semiárida: relevo, solos rasos e vegetação adaptada ao déficit hídrico. Foto real do semiárido baiano.](img/caatinga_semiarido.jpg){width="100%" fig-align="center"}
 :::
 :::
 :::
 
 ---
 
-## Exploração biológica {.smaller-text}
+## Exploração biológica {.smaller-text transition="concave"}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -317,23 +354,24 @@ A exploração biológica medeia a relação entre potencial ecológico e ação
 **Funções ecossistêmicas
 **
 
-A vegetação e a fauna desempenham funções críticas:
+Funções críticas da vegetação e fauna:
 
-1. Proteção do solo  -  interceptação de chuva, cobertura de serrapilheira
-2. Regulação hídrica  -  infiltração, redução de escoamento superficial
-3. Ciclagem de nutrientes  -  decomposição, liberação de minerais
-4. Regulação climática  -  evapotranspiração, sombreamento
-5. Habitat e biodiversidade  -  refúgio, reprodução, alimentação
-6. Conectividade  -  corredores ecológicos, dispersão
+1. **Proteção do solo** — interceptação de chuva, serrapilheira
+2. **Regulação hídrica** — infiltração, redução de escoamento
+3. **Ciclagem de nutrientes** — decomposição, liberação de minerais
+4. **Regulação climática** — evapotranspiração
+5. **Habitat e conectividade** — refúgio, corredores ecológicos
 
-> Quando a exploração biológica é removida (desmatamento), o potencial ecológico fica exposto e a degradação se instala rapidamente.
+> Sem a exploração biológica, o potencial ecológico fica exposto e a degradação se instala.
+
+![Floresta densa: exploração biológica preservada, proteção do solo, ciclagem de nutrientes e regulação hídrica.](img/floresta_vegetacao.jpg){width="100%" fig-align="center"}
 :::
 :::
 :::
 
 ---
 
-## Ação antrópica {.smaller-text}
+## Ação antrópica {.smaller-text transition="convex"}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -367,32 +405,44 @@ A **ação antrópica** não é perturbação externa  -  é parte constitutiva:
 > *A ação antrópica na paisagem é sempre degradante?*
 
 Não. Existem sistemas tradicionais (agrofloresta, roça no toco, extrativismo sustentável) que mantêm ou até aumentam a diversidade paisagística. O tipo e a intensidade da ação importam mais que sua mera existência.
+
+![Agrofloresta: forma sustentável de ação antrópica que mantém a diversidade paisagística.](img/agrofloresta.jpg){width="100%" fig-align="center"}
 :::
 :::
 :::
 
-# [4  -  INTEGRAÇÃO FÍSICO-BIÓTICA E SOCIOESPACIAL]{.section-header}
+---
 
-## O princípio da integração {.smaller-text}
+## Contrastes da ação antrópica {background-color="#1a1a2e" transition="fade"}
+
+::: {.columns}
+::: {.column width="50%"}
+![Expansão urbana: transformação direta da paisagem. Vista aérea de área urbana em crescimento.](img/expansao_urbana.jpg){width="100%" fig-align="center"}
+:::
+::: {.column width="50%"}
+![Agropecuária mecanizada: conversão de cobertura vegetal nativa. Plantação de soja vista de cima.](img/soja_agro.jpg){width="100%" fig-align="center"}
+:::
+:::
+
+# [4  -  INTEGRAÇÃO FÍSICO-BIÓTICA E SOCIOESPACIAL]{.section-header} {transition="zoom"}
+
+## O princípio da integração {.smaller-text transition="convex"}
 
 ::: {.columns}
 ::: {.column width="50%"}
 ### Por que integrar?
 
-Na análise da paisagem, nenhum componente explica tudo sozinho:
+Nenhum componente explica a paisagem sozinho:
 
-- O relevo condiciona a drenagem, que condiciona os solos, que condicionam a vegetação, que é transformada pelo uso...
-- Relações de causa e efeito são bidirecionais e multiescalares
-- A abordagem setorial (só geomorfologia, só biogeografia, só uso da terra) produz diagnósticos incompletos
+- Relevo → drenagem → solos → vegetação → uso — **cadeia de condicionamento**
+- Relações **bidirecionais** e multiescalares
+- Análise setorial = diagnóstico incompleto
 
 ### O geossistema como "integrador"
 
-O geossistema oferece um modelo conceitual para:
-
-1. Identificar os componentes relevantes
-2. Mapear suas relações
-3. Entender fluxos e processos
-4. Diagnosticar estados e tendências
+1. Identifica componentes e suas **relações**
+2. Mapeia **fluxos e processos**
+3. Diagnostica **estados e tendências**
 :::
 
 ::: {.column width="50%"}
@@ -415,28 +465,29 @@ Resultado: erosão laminar → sulcos → ravinas → voçorocas
 Nenhum fator isolado explica o processo. É a combinação (geossistema) que gera a erosão.
 
 > *"A erosão não é um problema de solo  -  é um problema de paisagem."*
+
+![Erosão: resultado da interação entre relevo, clima, solo, vegetação e uso. Foto de solo erodido em área rural.](img/erosao_solo.jpg){width="100%" fig-align="center"}
 :::
 :::
 :::
 
 ---
 
-## Fluxos no geossistema {.smaller-text}
+## Fluxos no geossistema {.smaller-text transition="concave"}
 
 ::: {.columns}
 ::: {.column width="50%"}
 ### Fluxos de matéria
 
-- Água  -  precipitação → infiltração / escoamento → drenagem → recarga / descarga
-- Sedimentos  -  erosão → transporte → deposição
-- Nutrientes  -  ciclagem biogeoquímica (C, N, P, K)
-- Matéria orgânica  -  serrapilheira → decomposição → húmus
+- **Água** — precipitação → infiltração → drenagem
+- **Sedimentos** — erosão → transporte → deposição
+- **Nutrientes** — ciclagem biogeoquímica (C, N, P, K)
 
 ### Fluxos de energia
 
-- Radiação solar → fotossíntese, aquecimento, evapotranspiração
-- Energia cinética da chuva → impacto no solo, erosão
-- Energia gravitacional → movimentos de massa, escoamento
+- Radiação solar → fotossíntese, evapotranspiração
+- Energia cinética da chuva → erosão
+- Energia gravitacional → movimentos de massa
 :::
 
 ::: {.column width="50%"}
@@ -446,26 +497,24 @@ Nenhum fator isolado explica o processo. É a combinação (geossistema) que ger
 
 **Organismos:**
 
-- Dispersão de sementes (vento, fauna)
-- Migração de fauna
-- Polinização
-- Movimento de organismos entre manchas de habitat
+- Dispersão de sementes, migração, polinização
+- Movimento entre manchas de habitat
 
 **Informação (dimensão socioespacial):**
 
-- Percepção e valores atribuídos à paisagem
-- Transmissão de conhecimento (manejo tradicional)
-- Regulação (leis, normas, planos)
-- Mercado (preço da terra → mudança de uso)
+- Percepção e valores da paisagem
+- Conhecimento tradicional, regulação (leis), mercado
 
-> Modificar a estrutura da paisagem (ex.: fragmentar) é modificar os fluxos  -  e vice-versa.
+> **Fragmentar a paisagem é modificar os fluxos** — e vice-versa.
+
+![Fluxos hídricos na paisagem: a água conecta componentes do geossistema ao longo do relevo.](img/fluxo_hidrico.jpg){width="100%" fig-align="center"}
 :::
 :::
 :::
 
-# [5  -  PRESSÕES ANTRÓPICAS E TRANSFORMAÇÃO]{.section-header}
+# [5  -  PRESSÕES ANTRÓPICAS E TRANSFORMAÇÃO]{.section-header} {transition="zoom"}
 
-## Tipos de pressão sobre a paisagem {.smaller-text}
+## Tipos de pressão sobre a paisagem {.smaller-text transition="convex"}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -496,13 +545,15 @@ A Agência Europeia de Meio Ambiente propõe o modelo:
 - **R**  -  Código Florestal, Plano ABC, restauração obrigatória (CAR)
 
 O modelo DPSIR ajuda a organizar o diagnóstico da paisagem e a propor respostas adequadas.
+
+![Desmatamento para agropecuária: pressão sobre a paisagem. Imagem aérea de área desmatada para agricultura.](img/desmatamento.jpg){width="100%" fig-align="center"}
 :::
 :::
 :::
 
 ---
 
-## Transformação da paisagem: trajetórias {.smaller-text}
+## Transformação da paisagem: trajetórias {.smaller-text transition="concave"}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -510,11 +561,11 @@ O modelo DPSIR ajuda a organizar o diagnóstico da paisagem e a propor respostas
 
 Uma paisagem pode seguir diferentes trajetórias:
 
-1. Estabilidade  -  componentes em equilíbrio dinâmico
-2. Degradação progressiva  -  perda de funcionalidade (erosão, fragmentação, desertificação)
-3. Conversão  -  mudança abrupta de uso (desmatamento → pastagem → agricultura mecanizada)
-4. Recuperação/regeneração  -  retorno parcial de funcionalidade (restauração, abandono de pastagem → regeneração natural)
-5. Intensificação  -  aumento de inputs técnicos (irrigação, fertilizantes) sem mudança de cobertura
+1. **Estabilidade** — equilíbrio dinâmico
+2. **Degradação** — erosão, fragmentação, desertificação
+3. **Conversão** — desmatamento → pastagem → agricultura mecanizada
+4. **Recuperação** — restauração, regeneração natural
+5. **Intensificação** — mais inputs técnicos, mesma cobertura
 :::
 
 ::: {.column width="50%"}
@@ -522,24 +573,24 @@ Uma paisagem pode seguir diferentes trajetórias:
 **Limiares e irreversibilidade
 **
 
-Conceito importante: **limiar** (*threshold*)
-
-> Um limiar é o ponto a partir do qual uma pequena mudança na pressão provoca uma transformação abrupta e potencialmente irreversível no sistema.
+> **Limiar** (*threshold*): ponto a partir do qual uma pequena mudança provoca transformação abrupta e potencialmente irreversível.
 
 Exemplos:
 
-- Desmatamento que ultrapassa a capacidade de polinização → colapso da produção agrícola
-- Perda de matéria orgânica do solo abaixo de certo nível → desertificação
-- Fragmentação que desconecta populações → extinção local
+- Desmatamento → colapso da polinização
+- Perda de matéria orgânica → desertificação
+- Fragmentação → extinção local
 
-> Na análise da paisagem, identificar proximidade de limiares é uma das tarefas mais críticas do diagnóstico.
+> Identificar proximidade de limiares é tarefa crítica do diagnóstico.
+
+![Solo degradado: quando a pressão ultrapassa o limiar, o sistema perde funcionalidade. Foto de solo exposto e degradado.](img/solo_degradado.jpg){width="100%" fig-align="center"}
 :::
 :::
 :::
 
-# [6  -  OPERACIONALIZAÇÃO: ROTEIRO DE ANÁLISE]{.section-header}
+# [6  -  OPERACIONALIZAÇÃO: ROTEIRO DE ANÁLISE]{.section-header} {transition="zoom"}
 
-## Como aplicar a leitura geossistêmica {.smaller-text}
+## Como aplicar a leitura geossistêmica {.smaller-text transition="convex"}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -569,33 +620,31 @@ Exemplos:
 : {.striped .hover}
 
 > Ao longo do semestre, vocês produzirão esses produtos no dossiê de análise da paisagem.
+
+![Mapeamento e análise espacial: ferramentas para operacionalizar a leitura geossistêmica.](img/mapeamento_campo.jpg){width="100%" fig-align="center"}
 :::
 :::
 :::
 
 ---
 
-## Exercício prático: leitura geossistêmica de Feira de Santana {.smaller-text}
+## Exercício prático: leitura geossistêmica de Feira de Santana {.smaller-text transition="fade"}
 
 ::: {.columns}
 ::: {.column width="60%"}
-### Proposta (em grupos de 3-4, 30 min)
+### Proposta (grupos de 3-4, 30 min)
 
-Considere a paisagem de Feira de Santana e entorno. Para cada componente do geossistema, registre o que você sabe ou consegue inferir:
+Para a paisagem de Feira de Santana, registre:
 
-| Componente | Sua descrição |
+| Componente | Descreva |
 |-----------|----------------|
-| Potencial ecológico | Relevo? Clima? Hidrologia? Solos? |
-| Exploração biológica | Vegetação predominante? Conservação? |
-| Ação antrópica | Usos? Ocupação? Pressões? |
+| Potencial ecológico | Relevo, clima, hidrologia, solos |
+| Exploração biológica | Vegetação, conservação |
+| Ação antrópica | Usos, ocupação, pressões |
 
 : {.striped .hover}
 
-Depois, responda:
-
-1. Quais fluxos você identifica entre os componentes?
-2. Qual é o principal conflito de uso nessa paisagem?
-3. Que estado a paisagem parece estar seguindo: estabilidade, degradação, conversão ou recuperação?
+Responda: (1) Quais fluxos entre os componentes? (2) Principal conflito de uso? (3) Trajetória: estabilidade, degradação, conversão ou recuperação?
 
 ### Socialização (15 min)
 :::
@@ -605,19 +654,20 @@ Depois, responda:
 **Dicas
 **
 
-- Use seu conhecimento prévio  -  não é necessário pesquisar agora
-- Pense na paisagem que você vê ao redor
-- Considere a expansão urbana, a pecuária, os resquícios de caatinga
-- Lembre-se: clima semiárido → déficit hídrico → limitações ao uso
+- Use seu conhecimento prévio
+- Considere: expansão urbana, pecuária, resquícios de caatinga
+- Clima semiárido → déficit hídrico → limitações ao uso
 
-> Este exercício será retomado em aulas futuras com dados reais (cartografia, imagens de satélite).
+> Exercício retomado em aulas futuras com dados reais.
+
+![Paisagem urbana: expansão, pressões e transformações a serem diagnosticadas. Vista aérea de cidade com áreas urbanas e vegetação.](img/cidade_aerea.jpg){width="100%" fig-align="center"}
 :::
 :::
 :::
 
 ---
 
-## Para a próxima aula {.smaller-text}
+## Para a próxima aula {.smaller-text transition="convex"}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -653,23 +703,23 @@ Entraremos na **Ecologia da Paisagem**:
 
 ---
 
-## Síntese da Aula 03 {.smaller-text}
+## Síntese da Aula 03 {.smaller-text transition="fade"}
 
 ::: {.info-box}
 **O que vimos hoje
 **
 
-1. Pensamento sistêmico  -  a paisagem como sistema aberto (entradas, saídas, retroalimentação)
-2. Sochava  -  geossistema como unidade territorial dinâmica; limiares e estados
-3. Bertrand  -  geossistema como integração de potencial ecológico + exploração biológica + ação antrópica
-4. Hierarquia escalar  -  do geótopo à zona; geossistema como escala operacional
-5. Componentes detalhados  -  potencial ecológico (base física), exploração biológica (componente vivo), ação antrópica (uso e gestão)
-6. Fluxos  -  matéria, energia, organismos e informação que atravessam o sistema
-7. Pressões e trajetórias  -  modelo DPSIR; limiares e irreversibilidade
-8. Roteiro de operacionalização  -  6 etapas para aplicar a leitura geossistêmica
+1. **Pensamento sistêmico** — paisagem como sistema aberto
+2. **Sochava** — geossistema, limiares e estados
+3. **Bertrand** — potencial ecológico + exploração biológica + ação antrópica
+4. **Hierarquia escalar** — do geótopo à zona
+5. **Componentes** — base física, componente vivo, uso e gestão
+6. **Fluxos** — matéria, energia, organismos, informação
+7. **Pressões e trajetórias** — modelo DPSIR, limiares
+8. **Roteiro** — 6 etapas da leitura geossistêmica
 :::
 
-## {.center background-color="#2135A6"}
+## {.center background-color="#2135A6" transition="zoom"}
 
 ::: {style="text-align: center;"}
 [Obrigado!]{.obrigado-fit-text style="color: white;"}
