@@ -1,11 +1,11 @@
 ---
-title: "ANOVA - Visão Completa"
-subtitle: "Análise de Variância Aprofundada<br>Análise de Dados Ambientais"
+title: "ANOVA — Visão Completa e MANOVA"
+subtitle: "Das comparações univariadas à análise multivariada<br>Análise de Dados Ambientais"
 author: "Luiz Diego Vidal Santos"
 format:
   revealjs:
     logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise de Dados Ambientais | ANOVA - Visão Completa"
+    footer: "UEFS | Análise de Dados Ambientais | ANOVA — Visão Completa e MANOVA"
     slide-number: true
     theme: [simple, ../../../assets/uefs.scss]
     controls: true
@@ -20,382 +20,509 @@ execute:
   echo: false
 ---
 
-# [ANOVA FATORIAL]{.section-header}
+## Roteiro da Aula {.smaller-text}
 
-## ANOVA FATORIAL {.smaller-text}
+::: {.columns}
+:::: {.column width="60%"}
 
-ANOVA FATORIAL
+- [1]{.circle} Mapa da família ANOVA
+- [2]{.circle} Da ANOVA à MANOVA
+- [3]{.circle} Combinação linear das VDs
+- [4]{.circle} Pressupostos da MANOVA
+- [5]{.circle} Estatísticas de teste (Pillai, Wilks, Hotelling, Roy)
+- [6]{.circle} Exemplo prático — Geotêxteis
+- [7]{.circle} MANOVA de Medidas Repetidas
+- [8]{.circle} Dados faltantes — revisão
 
+::::
+:::: {.column width="40%"}
 
----
+::: {.info-box}
+**Objetivo:** Apresentar a **MANOVA** como extensão multivariada da ANOVA e situar cada variante dentro da família de testes de comparação de médias.
+:::
 
-## {.smaller-text}
+::::
+:::
 
-ANOVA FATORIAL
 
-Níveis de resistência entre duas fibras (natural e sintética) com diferentes tipos de aditivos
+# [1 — MAPA DA FAMÍLIA ANOVA]{.section-header}
 
-VD
+## Das comparações simples às multivariadas {.smaller-text}
 
-FATORES (VI)
+```{mermaid}
+%%| fig-width: 10
+flowchart TD
+    A["Comparar médias\nentre grupos"]:::root --> B{"Quantas VDs?"}:::node
+    B --> |"1 VD"| C{"Quantos grupos/\nfatores?"}:::node
+    B --> |"≥ 2 VDs"| M["MANOVA"]:::result
 
+    C --> |"2 grupos"| D["Teste t"]:::leaf
+    C --> |"≥ 3 grupos\n1 fator"| E["ANOVA\nUma Via"]:::leaf
+    C --> |"≥ 2 fatores"| F["ANOVA\nFatorial"]:::leaf
 
-| Variáveis de Grupo Fatores
-VIs |  | Variável métrica/ordinal |
-| --- | --- | --- |
-| Tratamentos | Sem Resina | Resistência a tração [...] |
-|  | 1x Resina |  |
-|  | 2x Resina |  |
-| Tempos | 1ºa 180º dias |  |
+    E --> G{"Medidas repetidas?"}:::node
+    G --> |"Sim"| H["ANOVA-MR"]:::result
+    G --> |"Não"| I["ANOVA\nentre-sujeitos"]:::leaf
 
+    F --> J{"Covariável?"}:::node
+    J --> |"Sim"| K["ANCOVA"]:::result
+    J --> |"Não"| L["ANOVA\nFatorial pura"]:::leaf
 
----
+    classDef root fill:#2135A6,color:#fff,font-weight:bold,stroke:#27368C
+    classDef node fill:#C5CEE8,color:#0D0D0D,stroke:#586BA6
+    classDef leaf fill:#586BA6,color:#fff,stroke:#27368C
+    classDef result fill:#27368C,color:#fff,font-weight:bold,stroke:#2135A6
+```
 
-## {.smaller-text}
 
-ANOVA	FATORIAL
+## Resumo das variantes {.smaller-text}
 
-Níveis de resistência entre as aplicações de resina em diferentes tempos de degradação
+::: {.info-box}
+| Teste | VI (Fator) | VD | Covariável | Medidas Repetidas |
+|-------|:---:|:---:|:---:|:---:|
+| **Teste t** | 1 (2 grupos) | 1 | — | — |
+| **ANOVA Uma Via** | 1 (≥ 3 grupos) | 1 | — | — |
+| **ANOVA Fatorial** | ≥ 2 | 1 | — | — |
+| **ANCOVA** | ≥ 1 | 1 | ≥ 1 | — |
+| **ANOVA-MR** | 1 (intra) | 1 | — | Sim |
+| **MANOVA** | ≥ 1 | **≥ 2** | — | — |
+| **MANOVA-MR** | ≥ 1 (entre + intra) | **≥ 2** | — | Sim |
+:::
 
+::: {.highlight-box}
+A **MANOVA** é a generalização natural quando estudamos o efeito de um tratamento sobre **múltiplas variáveis dependentes** simultaneamente — ex.: resistência à tração, à punção e rigidez secante de um geotêxtil.
+:::
 
----
 
-## {.smaller-text}
+# [2 — DA ANOVA À MANOVA]{.section-header}
 
-ANOVA	FATORIAL
+## Por que não fazer várias ANOVAs? {.smaller-text}
 
-ANOVA 2X2 = 4 condições testadas
+::: {.columns}
+:::: {.column width="50%"}
 
-ANOVA 3X2
+::: {.box}
+**Abordagem ingênua**
 
-ANOVA 4X4
+Fazer uma ANOVA separada para cada VD:
 
-ANOVA 4X4X2 → 32 condições testadas
+- ANOVA₁: Resistência à tração
+- ANOVA₂: Resistência à punção
+- ANOVA₃: Rigidez secante
 
-  - ETC...
-Por mais tentador que seja colocar muitas variáveis em uma ANOVA, lembre-se que as
+Cada teste com α = 0,05.
+:::
 
-múltiplas comparações irão tornar a discussão dos seus resultados um caos.
+::: {.highlight-box}
+**Problema: inflação do Erro Tipo I**
 
+Com 3 testes independentes:
 
----
+$\alpha_{global} = 1 - (1 - 0{,}05)^3 = 0{,}143$
 
-## ANÁLISE DE COVARIÂNCIA {.smaller-text}
+Probabilidade de 14,3% de um falso positivo!
+:::
 
-ANCOVA
+::::
+:::: {.column width="50%"}
 
+::: {.info-box}
+**MANOVA: solução elegante**
 
----
+- Testa **todas as VDs simultaneamente** em um único teste
+- Mantém α = 0,05 para a família inteira
+- Considera a **covariância** entre as VDs
+- Pode detectar efeitos que nenhuma ANOVA isolada encontra
+:::
 
-## {.smaller-text}
+![](fig_manova_conceito.png){width="100%"}
 
-ANÁLISE DE COVARIÂNCIA
+::::
+:::
 
-Análise de Covariância
 
-  - Erosão > Precipitação
-  - Quais são as outras variáveis que influência na erosão?
-    - Níveis de cobertura natural
-    - Características do solo
-    - Topografia
-    - Uso e manejo do solo
-    - Na ANCOVA, você busca controlar o efeito de variáveis intervenientes na relação
-entre a VI e a VD;
+## A analogia ANOVA → MANOVA {.smaller-text}
 
+::: {.columns}
+:::: {.column width="50%"}
 
----
+::: {.box}
+**ANOVA (univariada)**
 
-## {.smaller-text}
+- Compara médias de **1 variável** entre grupos
+- Utiliza a razão entre variância **entre** grupos e variância **dentro** dos grupos
+- Estatística: **F**
+- Análoga ao teste t para ≥ 3 grupos
+:::
 
-ANOVA FATORIAL
+::::
+:::: {.column width="50%"}
 
-Análise de Covariância
+::: {.box}
+**MANOVA (multivariada)**
 
-  - Habilidades Matemáticas (VI)
-  - Aprovação no IME (Passou ou não Passou)
-    - Covariável: Compreensão de Texto
+- Compara **vetores de médias** (centroides) entre grupos
+- Utiliza a razão entre matrizes de **covariância** entre e dentro dos grupos
+- Estatísticas: **Pillai, Wilks, Hotelling, Roy**
+- Análoga à ANOVA, mas para ≥ 2 VDs
+:::
 
----
+::::
+:::
 
-## {.smaller-text}
+::: {.highlight-box}
+ANOVA: $F = \frac{S^2_{entre}}{S^2_{dentro}}$ (escalares) → MANOVA: $\Lambda = \frac{|\mathbf{W}|}{|\mathbf{B} + \mathbf{W}|}$ (determinantes de matrizes)
+:::
 
-ANOVA FATORIAL
 
-Análise de Covariância
+# [3 — COMBINAÇÃO LINEAR DAS VDs]{.section-header}
 
-  - Pelo menos três variáveis
-  - VI (Grupo)
-  - VD (Desfecho)
-  - Co-variável (categórica ou ordinal)
+## O poder da combinação linear {.smaller-text}
 
----
+::: {.columns}
+:::: {.column width="55%"}
 
-## ANÁLISE DE VARIÂNCIA {.smaller-text}
+::: {.info-box}
+**Exemplo com geotêxteis**
 
-MEDIDAS REPETIDAS
+| Grupo | Resist. Tração | Resist. Punção | Rigidez |
+|-------|:---:|:---:|:---:|
+| Taboa | Média₁ | Média₂ | Média₃ |
+| Ouricuri | Média₄ | Média₅ | Média₆ |
+| Junco | Média₇ | Média₈ | Média₉ |
 
+Isoladamente, nenhuma variável pode distinguir os grupos. Mas a **combinação linear** das três pode revelar diferenças significativas.
+:::
 
----
+::::
+:::: {.column width="45%"}
 
-## {.smaller-text}
+![](fig_combinacao_linear.png){width="100%"}
 
-ANOVA MEDIDAS REPETIDAS
+::: {.highlight-box}
+A MANOVA encontra a combinação linear das VDs que **maximiza** a separação entre os grupos — similar ao que a Análise Discriminante faz.
+:::
 
-Assim como nas ANOVAS anteriores, o objetivo da ANOVA - MR continua sendo comparar médias.
+::::
+:::
 
-Entretanto, o escore a ser comparado não é entre diferentes grupos, mas sim de um único grupo comparado com si próprio.
 
-  - Condições diferentes
-  - Momentos diferentes
+## Centróides multivariados {.smaller-text}
 
----
+::: {.columns}
+:::: {.column width="50%"}
 
-## {.smaller-text}
+Na ANOVA, cada grupo tem uma **média**.
 
-ANOVA MEDIDAS REPETIDAS
+Na MANOVA, cada grupo tem um **centróide** — o vetor de médias de todas as VDs.
 
-Mesmos repetições (Condições diferentes)
+::: {.box}
+**Centróide do Grupo "Taboa"**
 
+$$\vec{\mu}_{Taboa} = \begin{pmatrix} \bar{x}_{tração} \\ \bar{x}_{punção} \\ \bar{x}_{rigidez} \end{pmatrix}$$
+:::
 
-| Taboa | Sem resina | 1x resina | 2x resina |
-| --- | --- | --- | --- |
-| Amostra 1 | 7 | 6 | 8 |
-| Amostra 2 | 4 | 9 | 9 |
-| Amostra 3 | 6 | 5 | 6 |
-| Amostra 4 | 8 | 7 | 7 |
-| Amostra 5 | 9 | 4 | 4 |
-| Amostra 6 | 8 | 8 | 5 |
-| Amostra 7 | 5 | 10 | 8 |
-| Amostra 8 | 6 | 8 | 7 |
+::::
+:::: {.column width="50%"}
 
+::: {.info-box}
+**H₀ da MANOVA**
 
----
+$$H_0: \vec{\mu}_1 = \vec{\mu}_2 = \vec{\mu}_3$$
 
-## {.smaller-text}
+Os centróides de todos os grupos são iguais — ou seja, os tratamentos não afetam **nenhuma** combinação linear das VDs.
+:::
 
-ANOVA MEDIDAS REPETIDAS
+::: {.highlight-box}
+Se a MANOVA rejeita H₀, pelo menos um centróide difere → análises post-hoc (ANOVAs ou discriminante) identificam quais VDs e quais grupos diferem.
+:::
 
-Pressuposto de normalidade (S-K, K-W);
+::::
+:::
 
-Pressuposto de homogeneidade (Levene);
 
-Esfericidade (Com três ou mais condições/tempo) (Mauchly);
+# [4 — PRESSUPOSTOS DA MANOVA]{.section-header}
 
-Distribuição normal dos resíduos.
+## Pressupostos {.smaller-text}
 
+::: {.columns}
+:::: {.column width="50%"}
 
----
+::: {.box}
+**Pressupostos herdados da ANOVA**
 
-## {.smaller-text}
+- Independência das observações
+- Escala intervalar/razão para as VDs
+- Tamanho amostral adequado (n > p em cada grupo)
+:::
 
-Novo pressuposto: **Esfericidade**** **(Com três ou mais condições/tempo)
+::: {.highlight-box}
+**Novos pressupostos**
 
-  - Como se dá a independência dos resultados em medidas repetidas?
-    - Quase impossível
-    - Teste de esfericidade entra como uma solução para quando a homogeneidade de variância não é
-acatada
+- **Normalidade multivariada** — teste de Mardia, Henze-Zirkler ou Shapiro-Wilk multivariado
+- **Homogeneidade de matrizes de covariância** — teste M de Box
+- **Ausência de multicolinearidade excessiva** — correlações entre VDs moderadas (|r| < 0,90)
+:::
 
-    - Teste de esfericidade de Mauchly
-      - Avalia a igualdade da diferença das variâncias entre os diferentes tempos ou condições
-        - *p** *< 0,05 (Esfericidade não assumida)
-        - *p** *> 0,05 (Esfericidade assumida) Isso que você deve esperar
-ANOVA MEDIDAS REPETIDAS
+::::
+:::: {.column width="50%"}
 
+![](fig_pressupostos_manova.png){width="100%"}
 
----
+::: {.info-box}
+O teste M de Box avalia se as matrizes de covariância dos grupos são equivalentes. Se **p < 0,001** (critério conservador), os pressupostos não são atendidos — prefira o **Traço de Pillai**, que é mais robusto.
+:::
 
-## {.smaller-text}
+::::
+:::
 
-Correções ao pressuposto da esfericidade
 
-  - Greenhouse-Geisser: Esfericidade < 0.75
-  - Huynh-Feldt Esfericidade > 0.75
-ANOVA MEDIDAS REPETIDAS
+# [5 — ESTATÍSTICAS DE TESTE]{.section-header}
 
+## Quatro formas de testar a MANOVA {.smaller-text}
 
----
+::: {.columns}
+:::: {.column width="50%"}
 
-## {.smaller-text}
+::: {.box}
+**Traço de Pillai (Pillai's Trace)**
 
-Importante:
+- Mais **robusto** a violações de pressupostos
+- Recomendado como padrão
+- Varia de 0 a s (nº de raízes)
+- Olson (1974): mais robusto com amostras desiguais e pressupostos violados
+:::
 
-Normalidade dos dados
+::: {.box}
+**Lambda de Wilks (Wilk's Lambda)**
 
-Não se refere mais à distribuição da variável, mas sim, **dos**** **resíduos (i.e., variância não explicada pelo modelo)
+- Mais utilizado na literatura
+- Varia de 0 a 1
+- Valores pequenos → rejeição de H₀
+- Interpretação direta: proporção de variância **não** explicada pelo fator
+:::
 
-ANOVA MEDIDAS REPETIDAS
+::::
+:::: {.column width="50%"}
 
+::: {.box}
+**T² de Hotelling (Hotelling's Trace)**
 
----
+- Extensão direta do T² de Hotelling para 2 grupos
+- Adequado quando há apenas 2 grupos
+- Mais poderoso que Pillai com pressupostos atendidos
+:::
 
-## {.smaller-text}
+::: {.box}
+**Maior Raiz de Roy (Roy's Largest Root)**
 
-Expected Maximization (Maximização Esperada):
+- Considera apenas a **maior** raiz característica
+- Mais poderoso quando as diferenças entre grupos estão concentradas em uma dimensão
+- Mais sensível a violações — usar com cautela
+:::
 
-Os dados de todos os respondentes são utilizados para tentar estimar a melhor resposta do sujeito aos dados faltantes;
+::::
+:::
 
-O processo se incia com a média dos itens e com o padrão de covariância das variáveis.
 
-É gerado o primeiro banco sem missing;
+## Qual estatística escolher? {.smaller-text}
 
-Com esse novo banco completo, um novo processo é feito, buscando substituir novamente os valores que anteriormente tinham missing;
+```{mermaid}
+%%| fig-width: 10
+flowchart LR
+    A["MANOVA\nsignificativa?"]:::root --> B{"Pressupostos\natendidos?"}:::node
+    B --> |"Sim"| C{"Quantos\ngrupos?"}:::node
+    B --> |"Não"| D["Traço de\nPillai"]:::result
 
-É repetido “N” vezes, até que não haja mais diferenças estatisticamente significativas.
+    C --> |"2 grupos"| E["T² de\nHotelling"]:::result
+    C --> |"≥ 3 grupos"| F{"Diferenças em\n1 dimensão?"}:::node
 
-MISSING
+    F --> |"Sim"| G["Maior Raiz\nde Roy"]:::leaf
+    F --> |"Não/incerto"| H["Lambda de\nWilks"]:::result
 
+    classDef root fill:#2135A6,color:#fff,font-weight:bold,stroke:#27368C
+    classDef node fill:#C5CEE8,color:#0D0D0D,stroke:#586BA6
+    classDef leaf fill:#586BA6,color:#fff,stroke:#27368C
+    classDef result fill:#27368C,color:#fff,font-weight:bold,stroke:#2135A6
+```
 
----
+::: {.info-box}
+**Recomendação prática (Olson, 1974; Tabachnick & Fidell, 2019):** Use o **Traço de Pillai** quando não tiver certeza sobre os pressupostos. Relate Lambda de Wilks como estatística complementar, pois é a mais citada na literatura.
+:::
 
-## {.smaller-text}
 
-Substituição pela média
+# [6 — EXEMPLO PRÁTICO]{.section-header}
 
-A média dos itens permanece a mesma
+## Geotêxteis: Taboa × Ouricuri × Junco {.smaller-text}
 
-Aumenta o poder da amostra
+::: {.columns}
+:::: {.column width="55%"}
 
-**Desvantagem:**
+::: {.info-box}
+**Delineamento**
 
-  - Ignora completamente o sujeito, e não leva em consideração o seu próprio padrão de resposta
-  - É um método “completamente fake”.
-MISSING
+| Elemento | Descrição |
+|----------|-----------|
+| **Fator (VI)** | Tipo de fibra (Taboa, Ouricuri, Junco) |
+| **VD₁** | Resistência à tração (kN/m) |
+| **VD₂** | Resistência à punção (kN) |
+| **VD₃** | Rigidez secante (kN/m) |
+| **Teste** | MANOVA one-way |
+:::
 
+::::
+:::: {.column width="45%"}
 
----
+![](fig_exemplo_manova.png){width="100%"}
 
-## {.smaller-text}
+::::
+:::
 
-Multiple Imputation (Imputação Múltipla):
+::: {.highlight-box}
+Isoladamente, cada VD pode não diferenciar os grupos (p > 0,05 nas ANOVAs individuais). A MANOVA pode revelar diferenças significativas na **combinação linear** das três propriedades mecânicas.
+:::
 
-  - Considerado um avanço no método da Maximização esperada, porque, gera erros-padrões e intervalos de confiança para imputações realizadas;
-Ao invés de um único banco, são gerados vários bancos de dados imputados
 
-MISSING
+## Interpretação dos resultados {.smaller-text}
 
+::: {.columns}
+:::: {.column width="50%"}
 
----
+::: {.box}
+**Passo 1 — MANOVA global**
 
-## ANÁLISE	MULTIVARIADA DE VARIÂNCIA {.smaller-text}
+| Estatística | Valor | F | p |
+|-------------|:---:|:---:|:---:|
+| Traço de Pillai | 0,82 | 4,31 | 0,002 |
+| Lambda de Wilks | 0,28 | 5,12 | < 0,001 |
 
-MANOVA
+Resultado: H₀ rejeitada → os centróides diferem.
+:::
 
+::::
+:::: {.column width="50%"}
 
----
+::: {.box}
+**Passo 2 — ANOVAs de acompanhamento**
 
-## {.smaller-text}
+| VD | F | p | η² |
+|----|:---:|:---:|:---:|
+| Tração | 3,21 | 0,062 | 0,18 |
+| Punção | 2,15 | 0,143 | 0,13 |
+| Rigidez | 1,87 | 0,180 | 0,11 |
 
-MANOVA
+Nenhuma ANOVA individual significativa! A diferença está na **combinação** das VDs.
+:::
 
-A MANOVA é uma extensão da ANOVA e se diferencia por ter várias variáveis dependentes
+::::
+:::
 
-ANOVA → TESTE T
+::: {.info-box}
+Este cenário ilustra o poder da MANOVA: mesmo quando ADNOVAs individuais não detectam diferenças, a análise multivariada pode encontrá-las ao considerar a **estrutura de covariância** entre as VDs.
+:::
 
-MANOVA → ANOVA
 
-Vantagens da MANOVA:
+# [7 — MANOVA-MR]{.section-header}
 
-  - Diminuição do Erro Tipo I (por múltiplas comparações)
-  - Combinação linear das VIs
+## MANOVA de Medidas Repetidas {.smaller-text}
 
----
+::: {.columns}
+:::: {.column width="50%"}
 
-## {.smaller-text}
+::: {.box}
+**Quando usar a MANOVA-MR?**
 
-MANOVA
+Quando temos:
 
-O poder da combinação linear das variáveis
+- ≥ 2 variáveis dependentes
+- Medidas repetidas ao longo do tempo ou condições
+- Fatores entre-sujeitos (opcional)
 
-Exemplo com os geotêsteis
+Ex.: Resistência à tração **e** punção de geotêxteis medidas em 60, 120 e 180 dias, comparando Taboa vs. Ouricuri.
+:::
 
-Grupo: Taboa, Ouricuri, Junco
+::::
+:::: {.column width="50%"}
 
-VIs:
+::: {.highlight-box}
+**Vantagem sobre ANOVAs-MR separadas**
 
-- Resistência a tração;
-- Resistência a punção;
-- Rigidez secante.
-Eventualmente, nenhuma VI isolada seria suficiente para distinguir os grupos, mas apenas a
+- Controla o erro Tipo I ao analisar todas as VDs simultaneamente
+- Não requer o pressuposto de **esfericidade** (a MANOVA-MR é naturalmente multivariada)
+- Mais poder quando as VDs são correlacionadas
+:::
 
-sua combinação linear.
+::: {.info-box}
+A MANOVA-MR é a análise mais completa da família ANOVA — combina fatores entre e intra-sujeitos com múltiplas VDs.
+:::
 
+::::
+:::
 
----
 
-## {.smaller-text}
+# [8 — DADOS FALTANTES]{.section-header}
 
-MANOVA
+## Missing Data na MANOVA {.smaller-text}
 
-Novos pressupostos
+::: {.columns}
+:::: {.column width="50%"}
 
-Normalidade uni e multivariada
+Dados faltantes são especialmente problemáticos na MANOVA porque cada sujeito precisa ter **todas as VDs** para ser incluído na análise.
 
-Homogeneidade de variância e co-variância
+::: {.box}
+**Tipos de Missing**
 
-  - A covariância entre as VDs é equivalente para os diferentes grupos
+| Tipo | Sigla | Mecanismo |
+|------|:---:|-----------|
+| Completamente ao acaso | MCAR | Sem relação com variáveis |
+| Ao acaso | MAR | Relacionado a variáveis observadas |
+| Não ao acaso | MNAR | Relacionado ao próprio valor faltante |
+:::
 
----
+::::
+:::: {.column width="50%"}
 
-## {.smaller-text}
+::: {.highlight-box}
+**Métodos recomendados**
 
-MANOVA
+| Método | Quando usar |
+|--------|-------------|
+| Exclusão listwise | Poucos missing (< 5%) |
+| EM (Expected Maximization) | Missing moderado, padrão MAR |
+| Imputação Múltipla | Abordagem mais robusta |
+:::
 
-Diferentes formas de extrair os resultados da MANOVA
+::: {.info-box}
+Na pesquisa com geotêxteis, dados faltantes são comuns quando corpos de prova **rompem antes do prazo**. Este é um padrão MNAR — o fato de faltar está relacionado à própria resistência.
+:::
 
-**Traço**** ****de**** ****Pillai**** ****(Pillai´s**** ****Trace)**
+::::
+:::
 
-**Lamba**** ****de**** ****Wilks**** ****(Wilk´s**** ****Lambda)**
 
-T2 de Hotelling (Hotelling´s T2)
+## Resumo Geral — Escolhendo a ANOVA certa {.smaller-text}
 
-Maior raiz de Roy (Roy´s Largest Root)
+```{mermaid}
+%%| fig-width: 10
+flowchart LR
+    A["Quantas VDs?"]:::root --> |"1 VD"| B{"Fatores?"}:::node
+    A --> |"≥ 2 VDs"| C["MANOVA\n(ou MANOVA-MR)"]:::result
 
-  - Há evidências de que o Traço de Pillai é o mais robusto quando os pressupostos da MANOVA não são acatados
-    - Olson, C. L. 1974. Comparative Robustness of Six Tests in Multivariate Analysis of Variance. *Journal** **of** **the** **American** **Statistical **Association,** *69:348, 894-908.
+    B --> |"1 fator, 2 grupos"| D["Teste t"]:::leaf
+    B --> |"1 fator, ≥ 3 grupos"| E{"Medidas\nrepetidas?"}:::node
+    B --> |"≥ 2 fatores"| F{"Covariável?"}:::node
 
----
+    E --> |"Sim"| G["ANOVA-MR"]:::result
+    E --> |"Não"| H["ANOVA\nUma Via"]:::leaf
 
-## {.smaller-text}
+    F --> |"Sim"| I["ANCOVA"]:::result
+    F --> |"Não"| J["ANOVA\nFatorial"]:::leaf
 
-MANOVA-MR
-
-Vamos à prática
-
-
----
-
-## {.smaller-text}
-
-DADOS
-
-
----
-
-## {.smaller-text}
-
-DADOS
-
-
----
-
-## {.smaller-text}
-
-Dados faltantes(missing):
-
-Indicam que, pro algum motivo, as amostras se perderam;
-
-Nesta pesquisa está mais ligado ao rompimento do corpo de prova antes do desfecho.
-
-MISSING
-
-
----
-
-## {.smaller-text}
-
-MANOVA
-
-Vamos à prática:
+    classDef root fill:#2135A6,color:#fff,font-weight:bold,stroke:#27368C
+    classDef node fill:#C5CEE8,color:#0D0D0D,stroke:#586BA6
+    classDef leaf fill:#586BA6,color:#fff,stroke:#27368C
+    classDef result fill:#27368C,color:#fff,font-weight:bold,stroke:#2135A6
+```
 
 
 ## {.center background-color="#2135A6"}
