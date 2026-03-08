@@ -20,484 +20,616 @@ execute:
   echo: false
 ---
 
-# [ESTATÍSTICA DESCRITIVA]{.section-header}
+## Roteiro da Aula {.smaller-text}
 
-## ESTATÍSTICA DESCRITIVA {.smaller-text}
+::: {.columns}
+:::: {.column width="60%"}
 
-Diego Vidal
+- [1]{.circle} Medidas de Tendência Central
+- [2]{.circle} Média, Moda e Mediana
+- [3]{.circle} Medidas de Dispersão
+- [4]{.circle} Variância e Desvio-Padrão
+- [5]{.circle} Erro-Padrão
+- [6]{.circle} Escore Z
+- [7]{.circle} Intervalo de Confiança
 
+::::
+:::: {.column width="40%"}
 
----
+::: {.info-box}
+**Objetivo:** Compreender e calcular as principais medidas descritivas que resumem e caracterizam conjuntos de dados ambientais.
+:::
 
-## ESTATÍSTICAS DESCRITIVAS {.smaller-text}
+::::
+:::
 
-O que aprenderemos:
 
-Medidas de tendência central
+# [1 — ESTATÍSTICA DESCRITIVA]{.section-header}
 
-  - Média simples
-  - Moda
-  - Mediana
-Medidas de dispersão
+## O que é Estatística Descritiva? {.smaller-text}
 
-  - Variância
-  - Desvio-padrão
-  - Erro-padrão
-  - Intervalo de Confiança
-Escore Z
+::: {.columns}
+:::: {.column width="55%"}
 
+::: {.info-box}
+**Definição**
 
----
+A estatística descritiva é um ramo da estatística que aplica técnicas para **descrever e sumarizar** um conjunto de dados.
+:::
 
-## ESTATÍSTICAS DESCRITIVAS (cont.) {.smaller-text}
+. . .
 
-O que são
+::: {.highlight-box}
+Diferencia-se da **estatística inferencial**, que busca obter afirmações sobre uma **população** com base em uma **amostra**.
+:::
 
-- A estatística descritiva é um ramo da estatística que aplica várias técnicas para descrever e sumarizar um conjunto de dados.
-- Diferencia-se da estatística inferencial, que tem por objetivo obter
-uma afirmação acerca de uma população com base numa amostra.
+::::
+:::: {.column width="45%"}
 
+::: {.box}
+**O que aprenderemos:**
 
----
+- Tendência central (M, Mo, Md)
+- Variância e desvio-padrão
+- Erro-padrão
+- Escore Z
+- Intervalo de confiança
+:::
 
-## TENDÊNCIA CENTRAL {.smaller-text}
+::::
+:::
 
-**Objetivos**: Encontrar um valor que resuma a variabilidade de um conjunto de dados.
 
-**Pesquisa**: Investigar os níveis de crescimento radicular frente ao uso de fungos micorrízicos  arbusculares (N = 17).
+# [2 — TENDÊNCIA CENTRAL]{.section-header}
 
-Instrumento de 34 itens
+## Medidas de Tendência Central {.smaller-text}
 
-Comprimento (cm)
+::: {.info-box}
+**Objetivo:** Encontrar um valor que **resuma a variabilidade** de um conjunto de dados.
+:::
 
-Escores variam de 34 cm a 170 cm
+. . .
 
+::: {.columns}
+:::: {.column width="55%"}
 
----
+::: {.box}
+**Pesquisa-exemplo**
 
-## TENDÊNCIA CENTRAL (cont.) {.smaller-text}
+Investigar os níveis de **crescimento radicular** frente ao uso de fungos micorrízicos arbusculares (N = 17).
 
-**MÉDIA**
+- Instrumento de 34 itens
+- Comprimento em cm
+- Escores variam de 34 cm a 170 cm
+:::
 
-**Pesquisa**: Investigar os níveis de atitude frente ao uso de drogas ilícitas (N = 17).
+::::
+:::: {.column width="45%"}
 
-Escores variando de 34 a 170
+::: {.highlight-box}
+**Escores das 17 repetições:**
 
-2148
+94, 104, 107, 109, 113, 117, 117, 121, 127, 128, 130, 132, 137, 143, 153, 154, 162
+:::
 
-17
+::::
+:::
 
-Média = 126,35
 
-=
+## Média Aritmética {.smaller-text}
 
-*N*
+::: {.info-box}
+**Média** — Soma de todos os valores dividida pelo número de observações.
+:::
 
+. . .
 
-| Escores dos repetições |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | 127 | 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 |
+$$\bar{X} = \frac{\sum_{i=1}^{N} x_i}{N} = \frac{2148}{17} = 126{,}35$$
 
+. . .
 
----
+::: {.columns}
+:::: {.column width="55%"}
 
-## TENDÊNCIA CENTRAL (cont.) {.smaller-text}
+| Escores ordenados | | | | | | | | |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | 127 |
+| 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 | |
 
-**MODA**
+::::
+:::: {.column width="45%"}
 
-**Pesquisa**: Investigar os níveis de crescimento radicular frente ao uso de fungos micorrízicos  arbusculares (N = 17).
+::: {.highlight-box}
+$\sum = 2148$
 
-Escores variando de 34 a 170
+$N = 17$
 
-**MODA**: O número que aparece mais vezes
+$\bar{X} = 126{,}35$
+:::
 
-117 = 2 vezes; (Unimodal)
+::::
+:::
 
 
-| Escores dos repetições |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | 127 | 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 |
+## Moda {.smaller-text}
 
+::: {.info-box}
+**Moda** — O valor que aparece com **maior frequência** na amostra.
+:::
 
----
+. . .
 
-## TENDÊNCIA CENTRAL (cont.) {.smaller-text}
+::: {.columns}
+:::: {.column width="55%"}
 
-**MEDIANA**
+| Escores ordenados | | | | | | | | |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 94 | 104 | 107 | 109 | 113 | **117** | **117** | 121 | 127 |
+| 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 | |
 
-**Pesquisa**: Investigar os níveis de crescimento radicular frente ao uso de fungos micorrízicos  arbusculares (N = 17).
+::::
+:::: {.column width="45%"}
 
-Escores variando de 34 a 170
+::: {.box}
+**Moda = 117** (aparece 2 vezes)
 
-**MEDIANA:**** **O número que divide a amostra em duas metades iguais
+Distribuição **unimodal**.
+:::
 
+::::
+:::
 
-| Escores dos repetições |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | 127 | 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 |
 
+## Mediana {.smaller-text}
 
----
+::: {.info-box}
+**Mediana** — O valor que divide a amostra em **duas metades iguais** quando os dados estão ordenados.
+:::
 
-## TENDÊNCIA CENTRAL (cont.) {.smaller-text}
+. . .
 
-**SUMÁRIO**
+::: {.columns}
+:::: {.column width="55%"}
 
-**Pesquisa**: Investigar os níveis de crescimento radicular frente ao uso de fungos micorrízicos  arbusculares (N = 17).
+| Escores ordenados | | | | | | | | |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | **127** |
+| 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 | |
 
-Escores variando de 34 a 170
+::::
+:::: {.column width="45%"}
 
-**MÉDIA:**** **126,35; **MODA:**** **117; **MEDIANA:**** **127
+::: {.box}
+**Mediana = 127**
 
+Posição: $\frac{N+1}{2} = \frac{18}{2} = 9°$ valor
+:::
 
-| Escores dos repetições |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | 127 | 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 |
+::::
+:::
 
 
----
+## Sumário — Tendência Central {.smaller-text}
 
-## MEDIDAS DE DISPERSÃO {.smaller-text}
+::: {.columns}
+:::: {.column width="50%"}
 
-**Objetivos**:
+::: {.info-box}
+**Resumo das medidas:**
 
-Ter noção da variabilidade dos escores em torno da média;
+| Medida   | Valor  |
+|:---------|:------:|
+| Média    | 126,35 |
+| Moda     | 117    |
+| Mediana  | 127    |
+:::
 
-Auxilia na interpretação sobre o quanto os casos são semelhantes ou diferentes entre si, frente à variável de interesse
+::::
+:::: {.column width="50%"}
 
+![](fig_tendencia_central.png){fig-align="center" width="100%"}
 
----
+::::
+:::
 
-## MEDIDAS DE DISPERSÃO (cont.) {.smaller-text}
+. . .
 
-**VARIÂNCIA**
+::: {.highlight-box}
+As três medidas estão **próximas**, sugerindo uma distribuição relativamente **simétrica**.
+:::
 
-**Pesquisa**: Investigar os níveis de crescimento radicular frente ao uso de fungos micorrízicos  arbusculares (N = 17).
 
-Escores variando de 94 a 162
+# [3 — MEDIDAS DE DISPERSÃO]{.section-header}
 
-2
+## Por que medir a dispersão? {.smaller-text}
 
-(*x**	*- *x*)2  (*x**	*- *x*)2  ...  (*x**	*- *x*)2
+::: {.info-box}
+**Objetivo:** Ter noção da **variabilidade** dos escores em torno da média.
+:::
 
-*n** *-1
+. . .
 
-*Variância**	*	*s**	* 	1	2	*n**	*
+::: {.highlight-box}
+As medidas de dispersão auxiliam na interpretação sobre o quanto os casos são **semelhantes ou diferentes** entre si, frente à variável de interesse.
+:::
 
+. . .
 
-| Escores dos repetições |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | 127 | 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 |
+::: {.box}
+**Medidas que veremos:**
 
+- [1]{.circle} Variância ($s^2$)
+- [2]{.circle} Desvio-padrão ($DP$)
+- [3]{.circle} Erro-padrão ($EP$)
+:::
 
----
 
-## MEDIDAS DE DISPERSÃO (cont.) {.smaller-text}
+# [4 — VARIÂNCIA E DESVIO-PADRÃO]{.section-header}
 
-**VARIÂNCIA**
+## Variância — Conceito {.smaller-text}
 
-**Pesquisa**: Investigar os níveis de crescimento radicular frente ao uso de fungos micorrízicos  arbusculares (N = 17).
+::: {.columns}
+:::: {.column width="50%"}
 
-Escores variando de 94 a 162
+::: {.info-box}
+A **variância** mede o quanto cada escore se afasta da média, ao quadrado, dividido por $n - 1$.
+:::
 
-2
+. . .
 
-(*x** *- *x*)2  (*x** *- *x*)2  ...  (*x** *- *x*)2
+![](fig_formula_variancia.png){fig-align="center" width="90%"}
 
-*n** *-1
+::::
+:::: {.column width="50%"}
 
-*Variância**	* *s**	* 	1	2	*n**	*
+::: {.box}
+**Passo a passo:**
 
-MEDIDAS DE DISPERSÃO
+[1]{.circle} Calcular a média ($\bar{X} = 126{,}35$)
 
+[2]{.circle} Subtrair cada escore da média
 
-| Escores das repetições |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | 127 | 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 |
-| Média = 126,35 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+[3]{.circle} Elevar cada diferença ao quadrado
 
+[4]{.circle} Somar os quadrados
 
----
+[5]{.circle} Dividir por $n - 1$
+:::
 
-## MEDIDAS DE DISPERSÃO (cont.) {.smaller-text}
+::::
+:::
 
-**VARIÂNCIA**
 
-**Pesquisa**: Investigar os níveis de crescimento radicular frente ao uso de fungos micorrízicos  arbusculares (N = 17).
+## Variância — Cálculo com os dados {.smaller-text}
 
-Escores variando de 94 a 162
+::: {.columns}
+:::: {.column width="55%"}
 
-2
+| Escore $x_i$  | $x_i - \bar{X}$ | $(x_i - \bar{X})^2$ |
+|:---:|:------:|:--------:|
+| 94  | −32,35 | 1046,5   |
+| 104 | −22,35 | 499,5    |
+| 107 | −19,35 | 374,4    |
+| 109 | −17,35 | 301,0    |
+| 113 | −13,35 | 178,2    |
+| 117 | −9,35  | 87,4     |
+| 117 | −9,35  | 87,4     |
+| 121 | −5,35  | 28,6     |
+| 127 | 0,65   | 0,4      |
 
-(*x** *- *x*)2  (*x** *- *x*)2  ...  (*x** *- *x*)2
+::::
+:::: {.column width="45%"}
 
-*n** *-1
+| Escore $x_i$  | $x_i - \bar{X}$ | $(x_i - \bar{X})^2$ |
+|:---:|:------:|:--------:|
+| 128 | 1,65   | 2,7      |
+| 130 | 3,65   | 13,3     |
+| 132 | 5,65   | 31,9     |
+| 137 | 10,65  | 113,4    |
+| 143 | 16,65  | 277,2    |
+| 153 | 26,65  | 710,2    |
+| 154 | 27,65  | 764,5    |
+| 162 | 35,65  | 1270,9   |
 
-*Variância** * *s** *   1	2	*n**	*
+::::
+:::
 
 
-| Escores das repetições |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | 127 | 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 |
-| Média = 126,35 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| -32,35 | -22,35 | -19,35 | -17,35 | -13,35 | -9,35 | -9,35 | -5,35 | 0,65 | 1,65 | 3,65 | 5,65 | 10,65 | 16,65 | 26,65 | 27,65 | 35,65 |
+## Variância e Desvio-Padrão — Resultado {.smaller-text}
 
+::: {.columns}
+:::: {.column width="50%"}
 
----
+::: {.info-box}
+$$s^2 = \frac{5787{,}9}{16} = 361{,}74$$
 
-## MEDIDAS DE DISPERSÃO (cont.) {.smaller-text}
+$$DP = \sqrt{361{,}74} = 19{,}02$$
+:::
 
-**VARIÂNCIA**
+::::
+:::: {.column width="50%"}
 
-16
+::: {.highlight-box}
+**Interpretação:**
 
-= 361,74
+Em média, cada escore se afasta **19,02 cm** da média de 126,35 cm.
+:::
 
-=
+::::
+:::
 
-5787,9
+. . .
 
-*n-**1*
+![](fig_dispersao_desvios.png){fig-align="center" width="70%"}
 
-(xi - *-*x)2
 
-*S**2** **=*
+# [5 — ERRO-PADRÃO]{.section-header}
 
-MEDIDAS DE DISPERSÃO
+## Erro-Padrão da Média {.smaller-text}
 
+::: {.columns}
+:::: {.column width="50%"}
 
-| Diferença das médias |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| -32,35 | -22,35 | -19,35 | -17,35 | -13,35 | -9,35 | -9,35 | -5,35 | 0,65 | 1,65 | 3,65 | 5,65 | 10,65 | 16,65 | 26,65 | 27,65 | 35,65 |
-| 1046,5 | 499,5 | 374,4 | 301,0 | 178,2 | 87,4 | 87,4 | 28,6 | 0,4 | 2,7 | 13,3 | 31,9 | 113,4 | 277,2 | 710,2 | 764,5 | 1270,9 |
+::: {.info-box}
+**Erro-Padrão (EP)** — Desvio-padrão entre as **médias das amostras** (Field, 2005).
 
+Estima a **precisão da média amostral** como estimativa da média populacional.
+:::
 
----
+. . .
 
-## MEDIDAS DE DISPERSÃO (cont.) {.smaller-text}
+$$EP = \frac{DP}{\sqrt{N}} = \frac{19{,}02}{\sqrt{17}} = 4{,}613$$
 
-**VARIÂNCIA**
+::::
+:::: {.column width="50%"}
 
-**DESVIO-PADRÃO**
+::: {.box}
+**Resumo das medidas:**
 
-16
+| Medida          | Valor    |
+|:----------------|:--------:|
+| Média ($\bar{X}$) | 126,35 |
+| Variância ($s^2$) | 361,74 |
+| Desvio-padrão ($DP$) | 19,02 |
+| Erro-padrão ($EP$) | 4,613  |
+:::
 
-= 361,74
+::::
+:::
 
-=
+. . .
 
-5787,9
+::: {.highlight-box}
+Quanto **maior** o N, **menor** o EP → a estimativa da média é mais **precisa**.
+:::
 
-*n-**1*
 
-(xi - *-*x)
+# [6 — ESCORE Z]{.section-header}
 
-*S**2** **=*
+## Escore Z — Conceito {.smaller-text}
 
-*DP** **=**	*19,02
+::: {.columns}
+:::: {.column width="50%"}
 
+::: {.info-box}
+O **escore Z** é uma transformação dos escores brutos baseada no desvio-padrão.
+:::
 
----
+. . .
 
-## MEDIDAS DE DISPERSÃO (cont.) {.smaller-text}
+$$Z = \frac{X - \bar{X}}{s}$$
 
-*EP **=** *	DP   		*=** * 19,02 *=**	*4,613
+- $X$ = escore da amostra
+- $\bar{X}$ = média amostral
+- $s$ = desvio-padrão amostral
 
-𝑁	17
+::::
+:::: {.column width="50%"}
 
-**ERRO-****PADRÃO**
+::: {.box}
+**Exemplo:** $\bar{X} = 20$; $DP = 2$
 
-**Desvios-****padrão**** ****entre**** ****as**** ****médias das**** ****amostras (Field,**** ****2005)**
+Se $X = 22$:
 
-MEDIDAS DE DISPERSÃO
+$$Z = \frac{22 - 20}{2} = 1$$
 
+A repetição está **1 DP acima** da média.
+:::
 
----
+. . .
 
-## MEDIDAS DE DISPERSÃO (cont.) {.smaller-text}
+::: {.highlight-box}
+**1 ponto** no escore Z = **1 desvio-padrão** de distância da média.
+:::
 
-**Pesquisa**: Investigar os níveis de crescimento radicular frente ao uso de fungos micorrízicos  arbusculares (N = 17).
+::::
+:::
 
-Escores variando de 34 a 170.
 
-M = 126,35; DP = 19,02; EP = 4,61
+## Escore Z — Exemplos Práticos {.smaller-text}
 
-MEDIDAS DE DISPERSÃO
+::: {.info-box}
+Considere $\bar{X} = 20$ e $DP = 2$:
+:::
 
+. . .
 
----
+::: {.columns}
+:::: {.column width="50%"}
 
-## {.smaller-text}
+::: {.box}
+**Repetição com escore 18:**
 
-ESCORE Z
+$$Z = \frac{18 - 20}{2} = -1$$
 
+Está **1 DP abaixo** da média.
+:::
 
----
+::::
+:::: {.column width="50%"}
 
-## ESCORE Z {.smaller-text}
+::: {.box}
+**Repetição com escore 28:**
 
-Z = X - X
+$$Z = \frac{28 - 20}{2} = 4$$
 
-*s*
+Está **4 DP acima** da média.
+:::
 
-Onde:
+::::
+:::
 
-O escore z é uma transformação dos escores brutos, baseadas em desvio- padrão, cuja fórmula é:
+. . .
 
-*_*
+::: {.highlight-box}
+O escore Z é útil para estimar o **quão longe** um sujeito está da média.
+:::
 
-X = escore da amostra;
 
-*_*
+## Distribuição Normal e o Escore Z {.smaller-text}
 
-X = média amostral;
+::: {.columns}
+:::: {.column width="50%"}
 
-S = desvio-padrão amostral
+![](fig_curva_normal_z.png){fig-align="center" width="100%"}
 
+::::
+:::: {.column width="50%"}
 
----
+::: {.info-box}
+Se a distribuição é **normal**, do total da amostra:
 
-## ESCORE Z (cont.) {.smaller-text}
+- **68,2%** terão $Z$ entre $\pm 1$
+- **95,4%** terão $Z$ entre $\pm 2$
+- **99,7%** terão $Z$ entre $\pm 3$
+:::
 
-Imagine uma variável cuja média é 20 e o desvio-padrão é 2
+. . .
 
-Se uma repetição tem escore 22, ela está um DP acima da média, logo seu escore Z = 1;
+::: {.highlight-box}
+Quando a distribuição **não é normal**, essa estimativa de % não é precisa e o escore Z perde parte da sua utilidade.
+:::
 
-*Z** *= X - X  = 22 - 20 = 1
+::::
+:::
 
-*_*
 
-*s**	**2*
+# [7 — INTERVALO DE CONFIANÇA]{.section-header}
 
+## Intervalo de Confiança — Conceito {.smaller-text}
 
----
+::: {.columns}
+:::: {.column width="55%"}
 
-## ESCORE Z (cont.) {.smaller-text}
+::: {.info-box}
+**Intervalo de Confiança (IC)**
 
-**Logo:**
+É uma outra forma de determinar a **precisão** da média amostral como estimativa da média populacional.
 
-1 ponto no escore Z é igual ao valor do DP;
+Ao calcular o IC, você obtém uma **amplitude** onde se estipula que a verdadeira média da população estará.
+:::
 
-Vamos ao exemplo da M = 20; DP = 2.
+::::
+:::: {.column width="45%"}
 
-  - Uma repetição que tem escore 18, está 1 DP abaixo da Média, logo o escore Z dela é -1.
-  - Uma repetição com escore 28, está 4 DP acima da média, logo Escore Z dela é 4.
+::: {.box}
+**Fórmula:**
 
----
+$$IC = \bar{X} \pm Z_{\alpha/2} \times EP$$
+:::
 
-## ESCORE Z (cont.) {.smaller-text}
+. . .
 
-**O**** ****escore**** ****Z**** ****é**** ****útil**** ****para**** ****estimar**** ****o**** ****quão**** ****longe**** ****um**** ****sujeito**** ****está**** ****da**** ****média.**
+::: {.highlight-box}
+Pode ser calculado em diferentes probabilidades usando o **escore Z**:
 
-Se a distribuição é normal, do total da amostra:
+- 90% → $Z = 1{,}645$
+- 95% → $Z = 1{,}960$
+- 99% → $Z = 2{,}575$
+:::
 
-68,2% terão escore Z entre +-1;
+::::
+:::
 
-95,4% terão escore Z entre +-2;
 
-99.7% terão escores Z entre +- 3.
+## Intervalo de Confiança — Cálculo {.smaller-text}
 
+::: {.info-box}
+$\bar{X} = 126{,}35$; $EP = 4{,}61$
+:::
 
----
+. . .
 
-## ESCORE Z (cont.) {.smaller-text}
+::: {.columns}
+:::: {.column width="33%"}
 
-**O**** ****escore**** ****Z**** ****é**** ****útil**** ****para**** ****estimar**** ****o**** ****quão**** ****longe**** ****um**** ****sujeito**** ****está**** ****da**** ****média.**
+::: {.box}
+**IC 90%**
 
-Quando a amostra não é normal, essa estimativa de % não é precisa, de modo que o escore Z perde um pouco a sua utilidade.
+$Z = 1{,}645$
 
+LI = $126{,}35 - 1{,}645 \times 4{,}61$
 
----
+**LI = 118,76**
 
-## {.smaller-text}
+LS = $126{,}35 + 1{,}645 \times 4{,}61$
 
-INTERVALO DE CONFIANÇA
+**LS = 133,92**
+:::
 
+::::
+:::: {.column width="33%"}
 
----
+::: {.box}
+**IC 95%**
 
-## INTERVALO DE CONFIANÇA {.smaller-text}
+$Z = 1{,}960$
 
-É uma outra forma de determinar a precisão da média amostral, como estimativa da média populacional.
+LI = $126{,}35 - 1{,}96 \times 4{,}61$
 
-Ao calcular o intervalo de confiança, você tem uma amplitude, onde se estipula que a verdadeira média da população estará.
+**LI = 117,30**
 
+LS = $126{,}35 + 1{,}96 \times 4{,}61$
 
----
+**LS = 135,39**
+:::
 
-## INTERVALO DE CONFIANÇA (cont.) {.smaller-text}
+::::
+:::: {.column width="34%"}
 
-**INTERVALO**** ****DE**** ****CONFIANÇA**
+::: {.box}
+**IC 99%**
 
-Pode ser calculado em diferentes probabilidades (usando escore *z*): 90%, 95%, 99%
+$Z = 2{,}575$
 
-IC: M + Z*EP
+LI = $126{,}35 - 2{,}575 \times 4{,}61$
 
-90% = M + (**1,645**** **X EP)
+**LI = 114,48**
 
-95% = M + (**1,96**** **X EP)
+LS = $126{,}35 + 2{,}575 \times 4{,}61$
 
-99% = M + (**2,575**** **X EP)
+**LS = 138,22**
+:::
 
-Tabela Z-two-tails
+::::
+:::
 
 
----
+## Intervalo de Confiança — Visualização {.smaller-text}
 
-## . {.smaller-text}
+![](fig_intervalo_confianca.png){fig-align="center" width="75%"}
 
-**INTERVALO**** ****DE**** ****CONFIANÇA**
+. . .
 
-Pode ser calculado em diferentes probabilidades (usando escore *z*): 90%, 95%, 99%
+::: {.info-box}
+Quanto **maior** o nível de confiança, **mais amplo** é o intervalo — há um *trade-off* entre precisão e confiança.
+:::
 
-90% = M + (**1,645**** **X EP)
+. . .
 
-- Limite inferior: 126,35 - (1,645 X 4,61) = 118,76
-- Limite superior: 126,35 + (1,645 X 4,61) = 133,92
-95% = M + (**1,96**** **X EP)
-
-- Limite inferior: 126,35 - (1,96 X 4,61) = 117,30
-- Limite superior: 126,35 + (1,96 X 4,61) = 137,37
-99% = M + (**2,575**** **X EP)
-
-- Limite inferior: 126,35 - (2,575 X 4,61) = 114,46
-- Limite superior: 126,35 + (2,575 X 4,61) = 138,21
-.
-
-.
-
-126,34
-
-*Limite **Inferior*
-
-*Lower** **Bound*
-
-*Limite superior*
-
-*Upper** **Bound*
-
-90%
-
-95%
-
-99%
-
-INTERVALO DE CONFIANÇA
-
-
----
-
-## INTERVALO DE CONFIANÇA {.smaller-text}
-
-**INTERVALO**** ****DE**** ****CONFIANÇA**
-
-90% = M + (**1,645**** **X EP)
-
-- Limite inferior: 126,34 - (1,645 X 4,61) = 118,76
-- Limite superior: 126,34 + (1,645 X 4,61) = 133,92
-Média e EP fora da média populacional
-
-Site didático sobre Intervalo de Confiança: https://rpsychologist.com/d3/ci/
+::: {.highlight-box}
+**Recurso didático:** [Visualização interativa de IC](https://rpsychologist.com/d3/ci/){target="_blank"}
+:::
 
 
 ## {.center background-color="#2135A6"}

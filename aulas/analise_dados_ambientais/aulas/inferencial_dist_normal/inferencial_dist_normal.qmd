@@ -20,504 +20,619 @@ execute:
   echo: false
 ---
 
-## {.smaller-text}
+## Roteiro da Aula {.smaller-text}
 
-ESTATÍSTICA INFERENCIAL
+::: {.columns}
+:::: {.column width="60%"}
 
+- [1]{.circle} Estatística Inferencial
+- [2]{.circle} Testes de Hipóteses
+- [3]{.circle} Inferência Frequentista (valor-*p*)
+- [4]{.circle} Erros Tipo I e Tipo II
+- [5]{.circle} Tamanho da Amostra e Poder
+- [6]{.circle} Distribuição Normal
+- [7]{.circle} Desvios de Normalidade
+- [8]{.circle} Testes de Normalidade
 
----
+::::
+:::: {.column width="40%"}
 
-## ESTATÍSTICA INFERENCIAL {.smaller-text}
+::: {.info-box}
+**Objetivo:** Compreender os fundamentos da inferência estatística, os riscos de erros nas decisões e as propriedades da distribuição normal.
+:::
 
-**Definição**:
+::::
+:::
 
-Inferência estatística refere-se aos resultados derivados da análise estatística dos dados coletados.
 
-Ou seja, a inferência estatística advém de uma relação entre a teoria estatística e os dados reais.
+# [1 — ESTATÍSTICA INFERENCIAL]{.section-header}
 
+## O que é Estatística Inferencial? {.smaller-text}
 
----
+::: {.columns}
+:::: {.column width="55%"}
 
-## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+::: {.info-box}
+**Definição**
 
-**Métodos**** ****de**** ****inferência**** ****estatística**** ****para**** ****testes**** ****de**** ****hipóteses**
+Inferência estatística refere-se aos resultados derivados da **análise estatística** dos dados coletados.
 
-- 1) Inferências frequentistas (TSHN [Ho]; *p-**value*; *p** *< .05)
-- 2) Estimação Bayesiana
-- 3) Estimação por meio de *Bootstrapping*
-(intervalo de confiança das diferenças/das magnitudes)
+A inferência advém da relação entre a **teoria estatística** e os **dados reais**.
+:::
 
+::::
+:::: {.column width="45%"}
 
----
+::: {.box}
+**Métodos de inferência para testes de hipóteses:**
 
-## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+[1]{.circle} Inferências frequentistas (TSHN; *p*-value; *p* < 0,05)
 
-**Testes**** ****de**** ****hipóteses**
+[2]{.circle} Estimação Bayesiana
 
-Hipótese
+[3]{.circle} Estimação por *Bootstrapping* (IC das diferenças/magnitudes)
+:::
 
-- Uma expectativa sobre as características morfológicas de uma nova cultivar
-- Ex: A cultivar Abacaxi BRS Ajubá apresenta maior nível de controle da fusariose que a cultivar BRS Vitória
-- Teste de hipótese
-- Avaliação, por meio de métodos científicos, a hipótese estabelecida.
+::::
+:::
 
----
 
-## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+# [2 — TESTES DE HIPÓTESES]{.section-header}
 
-**Testes**** ****de**** ****hipóteses**
+## Hipóteses Científicas {.smaller-text}
 
-Passo a passo para o teste de hipóteses:
+::: {.info-box}
+**Hipótese** — Uma expectativa sobre as características morfológicas de uma nova cultivar.
+:::
 
-1) Crie uma ou mais hipóteses;
+. . .
 
-2) Colete dados úteis para testar as hipóteses criadas;
+::: {.highlight-box}
+**Exemplo:** A cultivar Abacaxi BRS Ajubá apresenta maior nível de controle da fusariose que a cultivar BRS Vitória.
+:::
 
-3) Análise seus dados com testes estatísticos adequados;
+. . .
 
-4) Avalie os resultados para ver se eles suportam as hipóteses iniciais.
+::: {.box}
+**Teste de hipótese** — Avaliação, por meio de métodos científicos, da hipótese estabelecida.
+:::
 
 
----
+## Passo a Passo {.smaller-text}
 
-## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+::: {.info-box}
+**Etapas para teste de hipóteses:**
+:::
 
-**Testes**** ****de**** ****hipóteses**
+. . .
 
-Ao coletar dados, você se depara com duas possibilidades:
+::: {.columns}
+:::: {.column width="50%"}
 
-Hipótese Nula (Ho) O efeito não existe
+::: {.box}
+[1]{.circle} Crie uma ou mais **hipóteses**
 
-Hipótese Alternativa (Ha) O efeito existe
+[2]{.circle} Colete dados **úteis** para testá-las
+:::
 
+::::
+:::: {.column width="50%"}
 
----
+::: {.box}
+[3]{.circle} Analise os dados com **testes estatísticos** adequados
 
-## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+[4]{.circle} Avalie os resultados para ver se **suportam** as hipóteses
+:::
 
-**Testes**** ****de**** ****hipóteses**
+::::
+:::
 
-Erro Tipo I: Rejeito a hipótese nula (Ho), quando Ho é verdadeira;
 
-  - Afirmo que há efeito, quando não há
-Erro Tipo II: Aceito a hipótese nula (Ho) ; quando Ho é falsa
+## Ho e Ha {.smaller-text}
 
-  - Afirmo que não há efeito, quando há
-**Verdadeira**
+::: {.info-box}
+Ao coletar dados, você se depara com **duas possibilidades**:
+:::
 
-**Falsa**
+. . .
 
-**Rejeito**
+::: {.columns}
+:::: {.column width="50%"}
 
-**Aceito**
+::: {.box}
+**Hipótese Nula (Ho)**
 
+O efeito **não existe**.
 
-| Erro Tipo I | OK |
-| --- | --- |
-| OK | Erro Tipo II |
+É a hipótese que se busca **rejeitar**.
+:::
 
+::::
+:::: {.column width="50%"}
 
----
+::: {.highlight-box}
+**Hipótese Alternativa (Ha)**
 
-## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+O efeito **existe**.
 
-**Testes**** ****de**** ****hipóteses**
+É a hipótese do **pesquisador**.
+:::
 
-Erro Tipo I: Rejeito a hipótese nula (Ho), quando Ho é verdadeira;
+::::
+:::
 
-  - Afirmo que há efeito, quando não há
-Erro Tipo II: Aceito a hipótese nula (Ho) ; quando Ho é falsa
 
-  - Afirmo que não há efeito, quando há
-Você está grávido!
+# [3 — INFERÊNCIA FREQUENTISTA]{.section-header}
 
-Você não está grávida!
+## Valor-*p* de Fisher {.smaller-text}
 
+::: {.columns}
+:::: {.column width="55%"}
 
----
+::: {.info-box}
+**Ronald Fisher (1935)**
 
-## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+- Critério probabilístico objetivo: $p < 0{,}05$
+- Teste de Significância da Hipótese Nula (TSHN)
+:::
 
-**Inferência**** ****frequentista**** ****(valor-*****p*****)**
+. . .
 
-Ronald Fisher (1935)
+::: {.highlight-box}
+O critério do valor-*p* assume, **arbitrariamente**, uma probabilidade de **5% de chance de erro** na inferência.
+:::
 
-  - Critério probabilístico objetivo (valor de
-*p** *< 0,05)
+::::
+:::: {.column width="45%"}
 
-  - Teste de significância da hipótese nula
-(TSHN)
+![](slide9_img.jpg){fig-align="center" width="80%"}
 
+::::
+:::
 
----
 
-## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+## Valor-*p* — Exemplo Prático {.smaller-text}
 
-**Inferência**** ****frequentista**** ****(valor-*****p*****)**
+::: {.info-box}
+A cultivar Abacaxi BRS Ajubá apresenta maior nível ($M = 6{,}32$; $DP = 1{,}33$) de controle da fusariose quando comparada à cultivar BRS Vitória ($M = 8{,}79$; $DP = 1{,}19$; $p < 0{,}05$).
+:::
 
-O critério do valor-*p** *de Fisher assume, arbitrariamente uma probabilidade de 5%
+. . .
 
-de chance de erro na inferência
+::: {.box}
+**Exemplos de inferência com valor-*p*:**
 
-Método de inferência estatística mais empregado na Psicologia
+- Vetiver com sistema radicular maior que Paspalum ($p < 0{,}05$)
+- Depressão se associou com baixa motivação no laboratório ($p < 0{,}01$)
+- Não houve associação entre consumo de maconha e perda de libido ($p = 0{,}18$)
+- Associação entre consumo de maconha e diminuição na memória foi marginalmente significativa ($p = 0{,}06$)
+:::
 
 
----
+## Cuidados com o Valor-*p* {.smaller-text}
 
-## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+::: {.highlight-box}
+O valor de *p* é **fortemente influenciado** pelo tamanho amostral!
+:::
 
-**Inferência**** ****frequentista**** ****(valor-*****p*****)**
+. . .
 
-A cultivar Abacaxi BRS Ajubá apresenta maior nível (*M** *= 6,32; *DP** *= 1,33) de controle  da fusariose quando comparada a cultivar Abacaxi BRS Vitória(*M** *= 8.79; *DP** *= 1.19; *p** *< 0,05);
+::: {.columns}
+:::: {.column width="50%"}
 
+::: {.box}
+**Mesmo efeito (r = 0,245), diferentes N:**
 
----
+| N    | Valor de *p* | Significativo? |
+|:----:|:----------:|:--------------:|
+| 10   | 0,495      | Não            |
+| 20   | 0,298      | Não            |
+| 50   | 0,086      | Não            |
+| 70   | 0,041      | **Sim**        |
+| 150  | 0,003      | **Sim**        |
+:::
 
-## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+::::
+:::: {.column width="50%"}
 
-**Inferência**** ****frequentista**** ****(valor-*****p*****)**
+![](fig_influencia_n_p.png){fig-align="center" width="100%"}
 
-Todas as vezes que fazemos uma análise inferencial, você avalia se o efeito foi
+::::
+:::
 
-estatisticamente significativo (*p** *< 0,05)
+. . .
 
-  - Vetiver com sistema radicular maior que paspalum (*p** *< 0,05)
-  - Depressão se associou com baixa motivação no laboratório (*p** *< 0,01)
-  - Não houve associação entre consumo de maconha e perda de libido (*p** *= 0,18).
-  - A associação entre consumo de maconha e diminuição na memória foi marginalmente significativa (*p** *= 0,06)
+::: {.info-box}
+O valor de *p* **não reflete**, por si só, a **magnitude** do efeito.
+:::
 
----
 
-## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+# [4 — ERROS TIPO I E TIPO II]{.section-header}
 
-**Inferência**** ****frequentista**** ****(valor-*****p*****)**
+## Matriz de Decisão {.smaller-text}
 
-Frequentemente usamos o valor de p como forma de inferência estatística, mas precisamos ter alguns cuidados
+::: {.info-box}
+Ao tomar decisões sobre Ho, há **duas formas de errar**:
+:::
 
-  - O valor de p é fortemente influenciado pelo tamanho amostral
-      - Quanto maior a amostra, maior é a chance de você encontrar valores de p < 0,05. (erro do tipo I)
-      - Valor de p não reflete, por si só, a magnitude do achado (força)
-      - *r = *0,245 , p = 0,495 (n = 10)
-      - *r = *0,245 , p = 0,298 (n = 20)
-      - *r = *0,245 , p = 0,086 (n = 50)
-      - *r = *0,245 , p = 0,041 (n = 70)
-      - *r = *0,245 , p = 0,003 (n = 150)
+. . .
 
----
+::: {.columns}
+:::: {.column width="50%"}
 
-## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+::: {.box}
+**Erro Tipo I** ($\alpha$)
 
-**Erro**** ****Tipo**** ****II:**
+Rejeitar Ho quando Ho é **verdadeira**.
 
-  - Acatar a Ho, quando ela é falsa.
-  - Probabilidade de erro aceitável: 0,20
-Poder amostral
+→ "Afirmo que há efeito, quando **não há**."
+:::
 
-O poder de um experimento é a probabilidade de detectar um efeito do
+. . .
 
-tratamento, se estiver presente.
+::: {.highlight-box}
+**Erro Tipo II** ($\beta$)
 
-O efeito não existe
+Aceitar Ho quando Ho é **falsa**.
 
-*p** *= 0,08
+→ "Afirmo que não há efeito, quando **há**."
+:::
 
-** probabilidade de detectar o efeito
+::::
+:::: {.column width="50%"}
 
-1 - 0,20 = 0,80.
+![](fig_erros_tipo.png){fig-align="center" width="100%"}
+
+::::
+:::
+
+
+## Outras Causas de Erro {.smaller-text}
+
+::: {.info-box}
+Situações que nos levam a cometer Erro Tipo I e Erro Tipo II:
+:::
+
+. . .
+
+::: {.columns}
+:::: {.column width="33%"}
+
+::: {.box}
+**Pressupostos**
+
+Testes estatísticos cujos pressupostos **não foram acatados**.
+:::
+
+::::
+:::: {.column width="33%"}
+
+::: {.box}
+**Amostras**
+
+Amostras problemáticas com **vieses de seleção**.
+:::
+
+::::
+:::: {.column width="34%"}
+
+::: {.box}
+**Instrumento**
+
+Instrumento de pesquisa **ruim** ou não validado.
+:::
+
+::::
+:::
+
+
+# [5 — TAMANHO DA AMOSTRA E PODER]{.section-header}
+
+## Poder Amostral {.smaller-text}
+
+::: {.columns}
+:::: {.column width="50%"}
+
+::: {.info-box}
+**Poder amostral** — Probabilidade de detectar um efeito do tratamento, **se estiver presente**.
+
+$$\text{Poder} = 1 - \beta = 1 - 0{,}20 = 0{,}80$$
 
 (Cohen, 1988, 1992)
+:::
 
-35
+. . .
 
-30
+::: {.highlight-box}
+**Valores aceitos na literatura:**
 
-25
+- $\alpha = 0{,}05$ (significância)
+- Poder $= 0{,}80$ (80%)
+:::
 
-20
+::::
+:::: {.column width="50%"}
 
-15
+::: {.box}
+**Tamanho do efeito ($d_z$)**
 
-10
+O $d_z$ é uma medida padronizada da diferença entre duas condições em um estudo de medidas repetidas.
 
-5
+Quanto **maior** o $d_z$, mais facilmente detectável é a diferença, necessitando de **menos amostras**.
+:::
 
-0
+. . .
 
-BRS Ajubá
+::: {.info-box}
+**Ferramenta:** [G\*Power](https://www.psychologie.hhu.de/arbeitsgruppen/allgemeine-psychologie-und-arbeitspsychologie/gpower){target="_blank"} para cálculo de tamanho amostral.
+:::
 
-BRS Vitória
+::::
+:::
 
 
----
+## Relação N × Efeito × Decisão {.smaller-text}
 
-## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+![](fig_relacao_n_efeito.png){fig-align="center" width="75%"}
 
-**Relação**** ****direta**** ****entre**** ****** **(significância)**** ****e**** ** **(poder *****b*****)**
+. . .
 
-  - 0.05 e 0.80 são os valores mais comumente aceitos na literatura
-**Amostra**
+::: {.highlight-box}
+Com **N grande** e efeito baixo → risco de **Erro Tipo I** (falso positivo).
 
-**Pequena**
+Com **N pequeno** e efeito alto → risco de **Erro Tipo II** (falso negativo).
+:::
 
-**Grande**
 
-**Pequeno (****sig****)**
+# [6 — DISTRIBUIÇÃO NORMAL]{.section-header}
 
-**Grande (n-****sig****)**
+## O que é a Distribuição Normal? {.smaller-text}
 
-**Valor de p**
+::: {.columns}
+:::: {.column width="55%"}
 
-**Efeito alto**
+::: {.info-box}
+**Definição**
 
-**Efeito baixo **
+A Distribuição Normal é uma das distribuições de probabilidade mais utilizadas para modelar **fenômenos naturais**.
 
-**Efeito alto (erro tipo II)**
+Um grande número de fenômenos naturais apresenta esse tipo de distribuição.
+:::
 
-**Efeito alto**
+. . .
 
-**Efeito alto **
+::: {.highlight-box}
+A curva normal representa a forma como diferentes valores se **agrupam em torno** de um determinado ponto.
+:::
 
-**Efeito baixo (erro tipo I)**
+::::
+:::: {.column width="45%"}
 
+::: {.box}
+**Definida por dois parâmetros:**
 
----
+- **Média** ($\bar{X}$) — centro da distribuição
+- **Desvio-padrão** ($DP$) — largura/dispersão
+:::
 
-## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+::::
+:::
 
-**Outras situações que nos leva a cometer Erro Tipo I e Erro ****Tipo II**
 
-Pressupostos dos testes não acatados
+## Exemplo — Capim Vetiver {.smaller-text}
 
-Amostras problemáticas (vieses de seleção)
+::: {.columns}
+:::: {.column width="45%"}
 
-Instrumento de pesquisa ruim
+::: {.info-box}
+**Dados:** Tamanho radicular do Capim Vetiver
 
+| Medição | cm |
+|:-------:|:---:|
+| 1 | 55 |
+| 2 | 64 |
+| 3 | 70 |
+| 4 | 72 |
+| 5 | 74 |
+| 6 | 80 |
+| 7 | 98 |
+| 8 | 100 |
+:::
 
----
+::::
+:::: {.column width="55%"}
 
-## {.smaller-text}
+::: {.box}
+**Média:**
 
-TAMANHO DA AMOSTRA
+$$\bar{X} = \frac{613}{8} = 76{,}62 \text{ cm}$$
 
+**Desvio-Padrão:**
 
----
+$$DP = \sqrt{\frac{245}{7}} = 15{,}66 \text{ cm}$$
+:::
 
-## TAMANHO DA AMOSTRA {.smaller-text}
+::::
+:::
 
-**Erro Tipo I**
 
-  - Efeito existe quando na verdade não: (a = 0,05)
-  - **Erro Tipo II**
-  - **Efeito não existe quando na verdade existe.**
-  - **Poder amostral**
-    - Poder = 1 - Beta (Prob. de Erro Tipo II) (1 - 0,20) = 0,80
+## Regra Empírica (68–95–99) {.smaller-text}
 
----
+![](fig_curva_normal_vetiver.png){fig-align="center" width="70%"}
 
-## TAMANHO DA AMOSTRA (cont.) {.smaller-text}
+. . .
 
-**Tamanho do efeito **
+::: {.columns}
+:::: {.column width="33%"}
 
-O 𝑑𝑧​  é uma medida padronizada da diferença entre duas condições em um estudo de medidas repetidas.
+::: {.box}
+**±1 DP (68,3%)**
 
-**𝑑𝑧: **quanto maior, mais facilmente detectável é a diferença, necessitando de menos amostras.
+$[60{,}96 - 92{,}28]$
+:::
 
-**Erro Tipo I**
+::::
+:::: {.column width="33%"}
 
-  - Efeito existe quando na verdade não: (a = 0,05)
-  - **Poder amostral**
-    - Poder = 1 - Beta (Prob. de Erro Tipo II) (1 - 0,20) = 0,80
-    - Baixar G*Power
+::: {.box}
+**±2 DP (95,4%)**
 
-# [DISTRIBUIÇÃO NORMAL]{.section-header}
+$[45{,}30 - 107{,}94]$
+:::
 
-## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+::::
+:::: {.column width="34%"}
 
-O que é
+::: {.box}
+**±3 DP (99,7%)**
 
-- A Distribuição Normal é uma das distribuições de
-probabilidade mais utilizadas para modelar fenômenos naturais.
+$[29{,}64 - 123{,}60]$
+:::
 
-- Isso se deve ao fato de que um grande número de fenômenos naturais apresenta esse tipo de distribuição.
+::::
+:::
 
----
 
-## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+# [7 — DESVIOS DE NORMALIDADE]{.section-header}
 
-Como acontece
+## Assimetria {.smaller-text}
 
-Como acontece a distribuição normal
+::: {.info-box}
+**Assimetria (Skewness)** — Mede o grau de **desvio da simetria** da distribuição.
+:::
 
+. . .
 
----
+![](fig_assimetria.png){fig-align="center" width="80%"}
 
-## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+. . .
 
-O que é
+::: {.highlight-box}
+**Exemplo real:** A distribuição de renda no Brasil é **assimétrica positiva** — muitas pessoas com renda baixa e poucas com renda alta.
+:::
 
-- A curva normal representa a forma como diferentes valores se agrupam em torno de um determinado ponto.
-- A forma como diferentes pessoas se agrupam em torno de determinada
-pontuação ou escore, para uma determinada variável.
 
+## Curtose {.smaller-text}
 
----
+::: {.info-box}
+**Curtose (Kurtosis)** — Mede o grau de **achatamento** da distribuição.
+:::
 
-## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+. . .
 
-O que é
+![](fig_curtose.png){fig-align="center" width="65%"}
 
-- A curva normal é definida por meio de duas informações: média e desvio-padrão
-- Tamanho radicular Capim vetier
-- Média: 76,62cm
-- Desvio-Padrão: 3,72cm
+. . .
 
----
+::: {.columns}
+:::: {.column width="33%"}
 
-## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+::: {.box}
+**Leptocúrtica**
 
-Média
+Dados muito **concentrados** junto à média.
+:::
 
-Média = 613 = 76,62
+::::
+:::: {.column width="33%"}
 
-8
+::: {.box}
+**Mesocúrtica**
 
+Distribuição **normal** (referência).
+:::
 
-| 55 | 64 | 72 | 80 | 70 | 100 | 98 | 74 |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+::::
+:::: {.column width="34%"}
 
+::: {.box}
+**Platicúrtica**
 
----
+Dados muito **dispersos**; muitos valores afastados da média.
+:::
 
-## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+::::
+:::
 
-Desvio-Padrão
 
-Estimativa de variabilidade em torno da média
+# [8 — TESTES DE NORMALIDADE]{.section-header}
 
-Média
+## Critérios Descritivos {.smaller-text}
 
-76cm
+::: {.info-box}
+**Critérios descritivos** (Tabachnick & Fidell, 2019)
+:::
 
-245 = 15,66
+. . .
 
-7
+::: {.box}
+**Procedimento:** Transformar o escore de Assimetria e Curtose em **escore Z**:
 
+$$Z = \frac{\text{Assimetria (ou Curtose)}}{\text{Erro-padrão}}$$
+:::
 
-| 55 | 64 | 70 | 72 | 74 | 80 | 98 | 100 |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+. . .
 
+::: {.columns}
+:::: {.column width="33%"}
 
----
+::: {.highlight-box}
+$|Z| > 1{,}96$
 
-## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+$p < 0{,}05$
+:::
 
-A curva normal é definida por meio de duas informações: média e desvio-padrão
+::::
+:::: {.column width="33%"}
 
-Média = 170; DP = 5,72
+::: {.highlight-box}
+$|Z| > 2{,}58$
 
-Frequência (*n)*
+$p < 0{,}01$
+:::
 
-+-1 DP (68.3%) = [164,28- 175,72]
+::::
+:::: {.column width="34%"}
 
-+-2 DP (95,4%) = [158,56- 181,44]
+::: {.highlight-box}
+$|Z| > 3{,}29$
 
-+-3 DP (99,7%) = [152,84 - 187,16]
+$p < 0{,}001$
+:::
 
+::::
+:::
 
----
 
-## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+## Critérios Estatísticos {.smaller-text}
 
-DESVIOS DE DISTRIBUIÇÃO DE NORMALIDADE
+::: {.info-box}
+**Testes de significância** para normalidade:
 
-Renda no Brasil
+- **Kolmogorov-Smirnov** e **Shapiro-Wilk**
+- Hipótese nula: dados **não são** normalmente distribuídos
+:::
 
-Mais pobres
+. . .
 
-Mais ricos
+::: {.highlight-box}
+Espera-se **rejeitar** a Ho → dados **são** normalmente distribuídos.
 
-Quantidade de pessoas
+Nos testes K-S e S-W, espera-se $p > 0{,}05$ para **acatar** a normalidade.
+:::
 
-Renda
+. . .
 
+## Hierarquia de Poder dos Testes {.smaller-text}
 
----
+![](fig_testes_normalidade.png){fig-align="center" width="80%"}
 
-## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+. . .
 
-DESVIOS DE DISTRIBUIÇÃO DE NORMALIDADE
+::: {.info-box}
+**Recomendação:** Prefira o **Shapiro-Wilk** quando possível — é o teste com maior poder estatístico para detectar desvios de normalidade.
+:::
 
-DESVIO POR ASSIMETRIA
-
-
----
-
-## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
-
-DESVIOS DE DISTRIBUIÇÃO DE NORMALIDADE
-
-DESVIO POR CURTOSE
-
-**Leptocúrtica**: Dados muito concentrados junto à media;
-
-**Mesocúrtica**: Distribuição normal
-
-**Platicúrtica**: Dados muito dispersos; muitas pessoas muito afastadas da média.
-
-
----
-
-## {.smaller-text}
-
-TESTANDO A DISTRIBUIÇÃO NORMAL NO JASP
-
-Luiz Diego Vidal - vidal.center@academico.ufs.br - CPF: 033.281.915-93
-
-
----
-
-## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
-
-COMO SABER SE SEUS DADOS SÃO NORMALMENTE DISTRIBUÍDOS?
-
-**Critérios**** ****descritivos**** (****Tabachnick**** ****and**** ****Fidell****, 2019)**
-
-Transforme o escore da Assimetria e Curtose em escore Z
-
-Calcule: Assimetria e Curtose / Erro padrão
-
-Valor maior que |1.96| é significativo *p** *< .05
-
-Valor acima que |2.58| é significativo *p** *< .01
-
-Valor acima que |3.29| é significativo *p** *< .001
-
-
----
-
-## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
-
-COMO SABER SE SEUS DADOS SÃO NORMALMENTE DISTRIBUÍDOS?
-
-**Critérios**** ****estatísticos**** ****(**Testes de significância)
-
-  - Kolmogorov-Smirnov e Shapiro-Wilk
-  - Hipotese nula: Dados não são normalmente distribuídos
-Espera-se rejeitar a hipótese nula → Dados são normalmente distribuídos
-
-  - Nos testes de K-S e S-W, espera-se que *p** *> 0,05 (maior que) para acatar a distribuição de
-normalidade dos dados.
-
-
----
-
-## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
-
-QUAIS DOS TESTES ESTATÍSTICOS UTILIZAR?
-
-  - Shapiro-Wilk  > Anderson-Darling >  Kolmogorov-Smirnov (Liliefors) > Kolmogorov-Smirnov
-
-# [TAMANHO AMOSTRAL]{.section-header}
 
 ## {.center background-color="#2135A6"}
 
