@@ -20,174 +20,468 @@ execute:
   echo: false
 ---
 
-# [BOOTSTRAPPING]{.section-header}
+# [ROTEIRO DA AULA]{.section-header}
 
-## BOOTSTRAPPING {.smaller-text}
+## Roteiro {.smaller-text}
 
-Reamostragem
+[1]{.circle} O que é Bootstrapping e por que usar
 
+[2]{.circle} Bradley Efron e a lógica da reamostragem
 
----
+[3]{.circle} Como funciona passo a passo
 
-## {.smaller-text}
+[4]{.circle} Tipos de Bootstrap
 
-BOOTSTRAPPING
+[5]{.circle} Intervalos de Confiança Bootstrap
 
-Histórico
+[6]{.circle} Bootstrap para Testes de Hipóteses
 
-  - Bradley Efron (1938 - )
-    - Procedimento de re-amostragem
-Objetivo
+[7]{.circle} Bootstrap em Mediação
 
-    - Apresentar intervalos de confiança para estimativas amostrais, e realizar inferências estatísticas a partir desses resultados;
-    - Corrige distribuição e normalidade para os dados;
-    - Aprimorar estimativas de erro-padrão dos dados.
+[8]{.circle} Aplicação em Dados Ambientais
 
 ---
 
-## {.smaller-text}
+# [O QUE É BOOTSTRAPPING]{.section-header}
 
-BOOTSTRAPPING
+## O Problema {.smaller-text}
 
-Como funciona
+:::{.info-box}
+**Problema central:** Como fazer inferência estatística quando...
 
-  - No final dos anos 70, o estatístico Brandley Efron fez uma sugestão engenhosa;
-  - A maior parte (às vezes tudo) do que sabemos sobre a “verdadeira” distribuição da probabilidade vem dos dados amostrais.
-  - Portanto, vamos tratar os dados como um *proxy *da verdadeira distribuição;
-  - Replicamos várias amostras de *proxy ...*
-    - Isso é chamado de “reamostragem”
-    - E calcula a estatística de interesse em cada um dos bancos de dados gerados
-
----
-
-## {.smaller-text}
-
-BOOTSTRAPPING
-
-Reorganização dos dados
-
-*Figura 1. Médias e medianas de três amostras obtidas por reamostragem.*
-
-
----
-
-## {.smaller-text}
-
-BOOTSTRAPPING
-
-Reorganização dos dados
-
-*Figura 2. **Representação esquemática das etapas do método bootstrap não paramétrico**.*
-
-
----
-
-## {.smaller-text}
-
-BOOTSTRAPPING
-
-Reorganização dos dados
-
-*Figura 4. Distribuição dos escores amostrais (painel esquerdo) e do logaritmo natural desses escores (painel direito). Os valores no interior do painel esquerdo representam as estatísticas amostrais, que, compreensivelmente, diferem dos parâmetros populacionais.*
-
-
----
-
-## {.smaller-text}
-
-BOOTSTRAPPING
-
-Reorganização dos dados
-
-*Figura 5. Exemplo de cinco amostras **bootstrapping*
-
-
----
-
-## {.smaller-text}
-
-BOOTSTRAPPING
-
-Reorganização dos dados
-
-*Figura 6. Distribuições amostrais empíricas da média (painel esquerdo) e da mediana (painel direito).*
-
-
----
-
-## {.smaller-text}
-
-BOOTSTRAPPING
-
-Como funciona
-
-  - No caso dos estudos com dois ou mais grupos, o procedimento de bootstrapping calcula o intervalo de confiança (IC) para a média de cada um dos grupos;
-
----
-
-## {.smaller-text}
-
-BOOTSTRAPPING
-
-Exemplo Mediação
-
-Foram coletados dados de 120 propriedades rurais em uma região com histórico de práticas convencionais e agroecológicas. Três variáveis principais foram analisadas:
-
-**Variável independente (X):** Grau de adoção de práticas agroecológicas (índice composto com base em número e intensidade das práticas adotadas).
-
-**Variável mediadora (M):** Qualidade do solo (indicador baseado em teores de matéria orgânica, compactação e atividade microbiana).
-
-**Variável dependente (Y):** Produtividade agrícola (kg/ha de culturas principais da região).
-
-
----
-
-## {.smaller-text}
-
-BOOTSTRAPPING
-
-Exemplo
-
-**A = 0,12 **
-
-**Y - Produtividade**
-
-**M - Qualidade do Solo**
-
-**X - Práticas Agroecológicas**
-
-**B = 0,60 **
-
-**C**** = 0,40 **
-
-**C’**** = 0,33 **
-
-*C - C’** *= 0,07: 7,5% do efeito entre X e Y e mediado por M
-
-Bootstrapping:*  C - C’  *=  0,04 [ 99% IC: -0,03 - 0,11]
-
-
----
-
-## {.smaller-text}
-
-BOOTSTRAPPING
-
-Por vezes o bootstrap apresenta valores de p,  por vezes não;
-
-Inferência realizada por meio do intervalo de confiança;
-
-Exemplo comparações de média Diâmetro Médio geométrico
-
-
-## {.center background-color="#2135A6"}
-
-::: {style="text-align: center;"}
-[Obrigado!]{.obrigado-fit-text style="color: white;"}
-
-::: {style="color: white; font-size: 0.7em;"}
-Luiz Diego Vidal Santos
-
-Universidade Estadual de Feira de Santana (UEFS)
+- A amostra é **pequena** (n < 30)?
+- Os dados **não são normais**?
+- Não existe **fórmula analítica** para o erro-padrão da estatística de interesse?
 :::
+
+**Solução clássica:** Assumir normalidade, usar fórmulas paramétrica (Teste T, ANOVA...).
+
+**Solução Bootstrap:** Usar os **próprios dados** como proxy da população e reamostrar milhares de vezes.
+
+---
+
+## Bradley Efron (1979) {.smaller-text}
+
+::: {.columns}
+
+::: {.column width="60%"}
+- **Bradley Efron** propôs o bootstrap em 1979 (Stanford University)
+- Nome inspirado na expressão "*pull yourself up by your bootstraps*" (erguer-se pelos próprios cadarços)
+- Ideia fundamental: **os dados amostrais contêm toda a informação necessária** sobre a distribuição populacional
+
+::: {.highlight-box}
+*"A maior parte do que sabemos sobre a verdadeira distribuição de probabilidade vem dos dados amostrais. Portanto, vamos tratar os dados como um proxy da verdadeira distribuição."*
+— Efron (1979)
+:::
+:::
+
+::: {.column width="40%"}
+**Artigo seminal:**
+
+Efron, B. (1979). Bootstrap Methods: Another Look at the Jackknife. *The Annals of Statistics*, 7(1), 1–26.
+
+> Revolutionou a estatística computacional, permitindo inferência sem suposições distribucionais.
+:::
+
+:::
+
+---
+
+## Por que Bootstrap? {.smaller-text}
+
+| Situação | Método Clássico | Bootstrap |
+|:---|:---|:---|
+| n = 150, dados normais | Teste T, ANOVA | Também funciona |
+| n = 12, assimétrico | Problemático | **Indicado** |
+| Mediana (sem fórmula de EP) | Não há fórmula | **Indicado** |
+| Razão de médias | Complexo | **Indicado** |
+| Coeficiente de mediação (a×b) | Distribuição desconhecida | **Indicado** |
+{.striped .hover}
+
+::: {.info-box}
+**Regra prática:** Bootstrap é especialmente útil quando a **distribuição amostral da estatística** é desconhecida ou complexa.
+:::
+
+---
+
+# [COMO FUNCIONA]{.section-header}
+
+## Lógica da Reamostragem {.smaller-text}
+
+```{mermaid}
+%%| fig-width: 10
+flowchart LR
+  A["Amostra Original<br>n observações"] --> B["Reamostra 1<br>(com reposição)"]
+  A --> C["Reamostra 2<br>(com reposição)"]
+  A --> D["...<br>B vezes"]
+  A --> E["Reamostra B<br>(com reposição)"]
+  B --> F["Estatística θ̂₁"]
+  C --> G["Estatística θ̂₂"]
+  D --> H["..."]
+  E --> I["Estatística θ̂_B"]
+  F --> J["Distribuição<br>Bootstrap de θ̂"]
+  G --> J
+  H --> J
+  I --> J
+  style A fill:#2135A6,color:#fff
+  style J fill:#27368C,color:#fff
+  style B fill:#586BA6,color:#fff
+  style C fill:#586BA6,color:#fff
+  style E fill:#586BA6,color:#fff
+```
+
+---
+
+## Passo a Passo {.smaller-text}
+
+::: {.highlight-box}
+**Algoritmo Bootstrap (não paramétrico):**
+
+1. **Amostra original** $X = \{x_1, x_2, \ldots, x_n\}$
+2. **Sorteie** $n$ valores **com reposição** → gera reamostra $X^*_b$
+3. **Calcule** a estatística de interesse $\hat{\theta}^*_b$ (média, mediana, correlação...)
+4. **Repita** B vezes (tipicamente B = 1000 a 10000)
+5. **Resultado:** Distribuição empírica de $\hat{\theta}^*$ com B valores
+:::
+
+**Exemplo concreto:**
+
+Amostra original: {2, 5, 8, 3, 7} (n = 5)
+
+| Reamostra | Valores sorteados | Média |
+|:---:|:---|:---:|
+| 1 | {5, 2, 8, 2, 7} | 4,80 |
+| 2 | {3, 3, 7, 8, 5} | 5,20 |
+| 3 | {7, 5, 5, 2, 8} | 5,40 |
+| ... | ... | ... |
+| 5000 | {8, 3, 7, 7, 2} | 5,40 |
+{.striped .hover}
+
+---
+
+## Com Reposição — Por quê? {.smaller-text}
+
+::: {.info-box}
+**Com reposição** significa que cada observação pode ser selecionada **mais de uma vez** em cada reamostra.
+:::
+
+- Sem reposição: toda reamostra seria idêntica à original (mesmos n valores, apenas reordenados)
+- Com reposição: cada reamostra é **diferente** da original — captura a **variabilidade amostral**
+
+**Probabilidade de seleção:**
+
+$$P(\text{observação } x_i \text{ incluída}) = 1 - \left(1 - \frac{1}{n}\right)^n \approx 1 - e^{-1} \approx 0{,}632$$
+
+::: {.highlight-box}
+Ou seja, **~63,2%** das observações originais aparecem em cada reamostra. Os **~36,8% restantes** ficam de fora ("out-of-bag").
+:::
+
+---
+
+## Quantas reamostras (B)? {.smaller-text}
+
+| Objetivo | B recomendado |
+|:---|:---:|
+| Estimativa de viés/erro-padrão | 200–500 |
+| IC percentil simples | 1.000 |
+| IC BCa (corrigido) | 2.000–5.000 |
+| Teste de hipóteses | 5.000–10.000 |
+{.striped .hover}
+
+::: {.info-box}
+**Na prática:** Use **B = 5000** como padrão. Computadores modernos processam isso em segundos.
+
+*Efron & Tibshirani (1993) recomendam B ≥ 1000 para ICs e B ≥ 5000 para testes.*
+:::
+
+---
+
+# [TIPOS DE BOOTSTRAP]{.section-header}
+
+## Bootstrap Não Paramétrico vs Paramétrico {.smaller-text}
+
+| Aspecto | Não Paramétrico | Paramétrico |
+|:---|:---|:---|
+| Reamostra de... | Dados observados | Distribuição estimada |
+| Pressupostos | Nenhum distribucional | Assume distribuição (Normal, Poisson...) |
+| Uso típico | Maioria das situações | Quando distribuição é conhecida |
+| Software | R: `boot()`, SPSS | R: `boot()` com `sim="parametric"` |
+{.striped .hover}
+
+**Bootstrap Paramétrico:**
+
+1. Estimar parâmetros ($\mu, \sigma$) da amostra
+2. Gerar reamostras de $N(\hat{\mu}, \hat{\sigma}^2)$
+3. Calcular $\hat{\theta}^*_b$ em cada reamostra
+
+---
+
+## Outros Tipos Especializados {.smaller-text}
+
+```{mermaid}
+%%| fig-width: 10
+flowchart TD
+  B["Bootstrap"] --> NP["Não Paramétrico<br>Reamostra dos dados"]
+  B --> P["Paramétrico<br>Reamostra da distribuição"]
+  B --> R["Residual<br>Para regressão"]
+  B --> W["Wild Bootstrap<br>Heterocedasticidade"]
+  B --> BL["Block Bootstrap<br>Séries temporais"]
+  style B fill:#2135A6,color:#fff
+  style NP fill:#27368C,color:#fff
+  style P fill:#586BA6,color:#fff
+  style R fill:#586BA6,color:#fff
+  style W fill:#C5CEE8,color:#0D0D0D
+  style BL fill:#C5CEE8,color:#0D0D0D
+```
+
+::: {.info-box}
+- **Residual Bootstrap:** Reamostra os resíduos do modelo de regressão.
+- **Wild Bootstrap:** Preserva a estrutura de heterocedasticidade.
+- **Block Bootstrap:** Para dados com dependência temporal (séries hidrológicas, climáticas).
+:::
+
+---
+
+# [INTERVALOS DE CONFIANÇA BOOTSTRAP]{.section-header}
+
+## Método Percentil {.smaller-text}
+
+O mais simples: usa os quantis da distribuição bootstrap.
+
+$$IC_{95\%} = [\hat{\theta}^*_{(0{,}025)};\; \hat{\theta}^*_{(0{,}975)}]$$
+
+**Exemplo:** 5000 reamostras → média bootstrap:
+
+Ordene as 5000 médias e pegue:
+
+- Limite inferior = valor na posição 125 (2,5%)
+- Limite superior = valor na posição 4875 (97,5%)
+
+::: {.highlight-box}
+**Vantagem:** Não assume normalidade da distribuição de $\hat{\theta}$.
+
+**Limitação:** Pode ter viés se a distribuição bootstrap for assimétrica.
+:::
+
+---
+
+## Método BCa (Bias-Corrected and Accelerated) {.smaller-text}
+
+Corrige dois problemas do método percentil:
+
+1. **Viés** ($z_0$): se a mediana bootstrap ≠ estimativa original
+2. **Assimetria** ($a$): se a distribuição bootstrap é assimétrica
+
+$$IC_{BCa} = [\hat{\theta}^*_{(\alpha_1)};\; \hat{\theta}^*_{(\alpha_2)}]$$
+
+onde:
+
+$$\alpha_1 = \Phi\left(z_0 + \frac{z_0 + z_{\alpha/2}}{1 - a(z_0 + z_{\alpha/2})}\right)$$
+
+::: {.info-box}
+**Recomendação:** O BCa é o **método preferido** na literatura atual.
+
+- Efron & Tibshirani (1993): "preferred method"
+- Requer B ≥ 2000
+- Disponível em R (`boot.ci(type="bca")`) e SPSS
+:::
+
+---
+
+## Comparativo dos Métodos de IC {.smaller-text}
+
+| Método | Viés | Assimetria | B mín. | Recomendado? |
+|:---|:---:|:---:|:---:|:---:|
+| Percentil | Não corrige | Não corrige | 1.000 | Básico |
+| Normal | Corrige | Não corrige | 500 | Se dados normais |
+| BCa | Corrige | Corrige | 2.000 | **Sim** |
+| Studentizado | Corrige | Corrige | 5.000 | Mais preciso, mas complexo |
+{.striped .hover}
+
+---
+
+# [BOOTSTRAP PARA TESTES DE HIPÓTESES]{.section-header}
+
+## Comparação de Dois Grupos {.smaller-text}
+
+**Exemplo:** Teor de matéria orgânica do solo (g/kg) em duas condições de manejo.
+
+| Grupo | n | Média | DP |
+|:---|:---:|:---:|:---:|
+| Plantio Convencional | 12 | 18,3 | 5,2 |
+| Plantio Direto | 12 | 24,7 | 6,8 |
+{.striped .hover}
+
+**Diferença observada:** $\bar{X}_{PD} - \bar{X}_{PC} = 6{,}4$ g/kg
+
+::: {.highlight-box}
+**Procedimento Bootstrap:**
+
+1. Combine os 24 valores em um "pool"
+2. Sorteie 12 para "PC" e 12 para "PD" (sob H₀: sem diferença)
+3. Calcule diferença de médias bootstrap
+4. Repita 5000 vezes
+5. p-valor = proporção de diferenças bootstrap ≥ 6,4
+:::
+
+---
+
+## Resultado do Teste Bootstrap {.smaller-text}
+
+Após 5000 reamostras sob H₀:
+
+- **Diferença observada:** 6,4 g/kg
+- **IC 95% BCa:** [1,8; 11,2] g/kg
+- **p-valor bootstrap:** 0,008
+
+::: {.info-box}
+**Interpretação:** Como o IC 95% **não inclui zero**, rejeitamos H₀. O plantio direto apresenta teor de MOS significativamente maior (6,4 g/kg; IC 95%: 1,8–11,2; p = 0,008).
+:::
+
+**Comparação com Teste T clássico:**
+
+| Método | Diferença | IC 95% | p |
+|:---|:---:|:---:|:---:|
+| Teste T (supõe normalidade) | 6,4 | [1,5; 11,3] | 0,013 |
+| Bootstrap BCa (livre) | 6,4 | [1,8; 11,2] | 0,008 |
+{.striped .hover}
+
+---
+
+# [BOOTSTRAP EM MEDIAÇÃO]{.section-header}
+
+## Análise de Mediação {.smaller-text}
+
+Testa se a relação entre X e Y é **parcialmente explicada** por uma variável mediadora M.
+
+```{mermaid}
+%%| fig-width: 10
+flowchart LR
+  X["X<br>Práticas Agroecológicas"] -->|"a = 0,12"| M["M<br>Qualidade do Solo"]
+  M -->|"b = 0,60"| Y["Y<br>Produtividade"]
+  X -->|"c' = 0,33"| Y
+  style X fill:#2135A6,color:#fff
+  style M fill:#586BA6,color:#fff
+  style Y fill:#27368C,color:#fff
+```
+
+**Efeito indireto:** $ab = 0{,}12 \times 0{,}60 = 0{,}072$
+
+**Efeito total:** $c = c' + ab = 0{,}33 + 0{,}072 = 0{,}402$
+
+**% mediação:** $\frac{ab}{c} = \frac{0{,}072}{0{,}402} = 17{,}9\%$
+
+---
+
+## Por que Bootstrap em Mediação? {.smaller-text}
+
+::: {.highlight-box}
+O produto $ab$ **não tem distribuição normal**, mesmo que $a$ e $b$ sejam normais individualmente (Sobel, 1982).
+
+**Solução:** Bootstrap do efeito indireto (Preacher & Hayes, 2008).
+:::
+
+**Resultado Bootstrap (B = 5000):**
+
+- $ab$ = 0,072
+- IC 95% BCa: [−0,03; 0,11]
+- O IC **inclui zero** → mediação **não significativa**
+
+::: {.info-box}
+**Conclusão:** A qualidade do solo **não media significativamente** a relação entre práticas agroecológicas e produtividade nesta amostra. O efeito das práticas na produtividade é predominantemente **direto**.
+:::
+
+---
+
+## Mediação: Como Reportar {.smaller-text}
+
+::: {.box}
+*"A análise de mediação com bootstrap (B = 5000) indicou que o efeito indireto das práticas agroecológicas (X) na produtividade (Y) via qualidade do solo (M) foi de ab = 0,072 (IC 95% BCa: −0,03 a 0,11). Como o intervalo de confiança inclui zero, a mediação não foi estatisticamente significativa. O efeito total (c = 0,40) é predominantemente direto (c' = 0,33)."*
+:::
+
+**Software para Mediação Bootstrap:**
+
+| Software | Comando/Plugin |
+|:---|:---|
+| R | `mediation::mediate()`, `lavaan` |
+| SPSS | PROCESS macro (Hayes) |
+| JASP | Structural Equation Modeling |
+{.striped .hover}
+
+---
+
+# [APLICAÇÃO EM DADOS AMBIENTAIS]{.section-header}
+
+## Exemplo: Diâmetro Médio Geométrico {.smaller-text}
+
+**Problema:** Comparar DMG (diâmetro médio geométrico de agregados do solo) entre 3 manejos com amostras pequenas (n = 8 por grupo).
+
+| Manejo | n | DMG (mm) | EP |
+|:---|:---:|:---:|:---:|
+| Convencional | 8 | 1,23 | 0,31 |
+| Plantio Direto | 8 | 2,87 | 0,52 |
+| Agrofloresta | 8 | 3,41 | 0,48 |
+{.striped .hover}
+
+::: {.info-box}
+Com n = 8, a ANOVA clássica é **arriscada** (poucos dados para verificar normalidade). O bootstrap resolve sem pressupostos.
+:::
+
+---
+
+## Resultado Bootstrap: DMG {.smaller-text}
+
+Bootstrap com B = 5000 reamostras, IC BCa:
+
+| Comparação | Diferença | IC 95% BCa | Significativo? |
+|:---|:---:|:---:|:---:|
+| PD − Conv | 1,64 | [0,72; 2,51] | **Sim** |
+| Agro − Conv | 2,18 | [1,28; 3,14] | **Sim** |
+| Agro − PD | 0,54 | [−0,38; 1,52] | Não |
+{.striped .hover}
+
+::: {.highlight-box}
+**Conclusão:** Plantio Direto e Agrofloresta apresentam DMG significativamente superior ao Convencional, mas não diferem entre si.
+:::
+
+---
+
+## Quando usar Bootstrap? Resumo {.smaller-text}
+
+| Critério | Usar Bootstrap | Não Necessário |
+|:---|:---|:---|
+| Tamanho amostral | n < 30 | n > 100 com normalidade |
+| Normalidade | Violada ou não testável | Confirmada |
+| Estatística | Sem fórmula de EP (mediana, razão) | Média, proporção |
+| Mediação | Sempre (efeito indireto) | — |
+| Dados ambientais | Séries curtas, extremos | Grandes bases |
+{.striped .hover}
+
+::: {.info-box}
+**Vantagem principal:** Inferência **válida** sem suposições distribucionais.
+
+**Limitação:** Não cria informação — se a amostra é muito pequena (n < 5), o bootstrap também será limitado.
+:::
+
+---
+
+## Referências Essenciais {.smaller-text}
+
+::: {.box}
+- Efron, B. (1979). Bootstrap Methods: Another Look at the Jackknife. *The Annals of Statistics*, 7(1), 1–26.
+- Efron, B., & Tibshirani, R. J. (1993). *An Introduction to the Bootstrap*. Chapman & Hall.
+- Preacher, K. J., & Hayes, A. F. (2008). Asymptotic and resampling strategies for assessing and comparing indirect effects. *Behavior Research Methods*, 40(3), 879–891.
+- Davison, A. C., & Hinkley, D. V. (1997). *Bootstrap Methods and Their Application*. Cambridge University Press.
+:::
+
+---
+
+::: {.obrigado-fit-text}
+**Obrigado!**
+
+**Prof. Luiz Diego Vidal Santos**
+
+UEFS — Universidade Estadual de Feira de Santana
+
+[ldvsantos@uefs.br](mailto:ldvsantos@uefs.br)
 :::

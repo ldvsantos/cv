@@ -46,6 +46,8 @@ Compreender e aplicar técnicas de detecção de anomalias (outliers) em séries
 
 ## O que são anomalias? {.smaller-text}
 
+![Série temporal de precipitação com anomalias destacadas](fig_01_serie_anomalias.png)
+
 ::: {.columns}
 ::: {.column width="50%"}
 ### Definição
@@ -92,6 +94,8 @@ Em dados ambientais, anomalias podem representar:
 ::: {.columns}
 ::: {.column width="50%"}
 ### Chuva diária
+
+![Estação pluviométrica de monitoramento](foto_estacao_pluviometrica.jpg){width="45%"}
 
 - **ANA / HidroWeb**  -  Séries históricas de estações pluviométricas
 - **INMET**  -  Dados meteorológicos convencionais e automáticas
@@ -149,6 +153,8 @@ A detecção de anomalias foca no **resíduo**: valores de $R_t$ fora do interva
 :::
 :::
 
+![Decomposição STL: série original, tendência, sazonalidade e resíduos](fig_02_decomposicao_stl.png)
+
 ---
 
 ## Critério IQR para detecção {.smaller-text}
@@ -164,6 +170,8 @@ $$R_t < Q_1 - 1{,}5 \times IQR \quad \text{ou} \quad R_t > Q_3 + 1{,}5 \times IQ
 ::: {.info-box}
 **Interpretação prática:** após remover tendência e sazonalidade, os resíduos "puros" que ultrapassam os limites do boxplot são candidatos a anomalia.
 :::
+
+![Método IQR: boxplot com limites e outliers](fig_03_iqr_boxplot.png)
 
 ---
 
@@ -255,6 +263,8 @@ O **score de anomalia** é baseado na profundidade média da árvore:
 :::
 :::
 
+![Isolation Forest: conceito e distribuição de scores](fig_04_isolation_forest.png)
+
 ---
 
 ## Vantagens e limitações {.smaller-text}
@@ -323,6 +333,8 @@ print(f"Anomalias detectadas (Isolation Forest): {len(anomalias_if)}")
 | **Custo computacional** | Baixo | Moderado |
 
 : {.striped .hover}
+
+![Comparação de métodos de detecção de anomalias](fig_05_comparacao_metodos.png)
 
 ---
 

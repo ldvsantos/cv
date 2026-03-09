@@ -28,6 +28,8 @@ REGRESSÃO
 
 Definição
 
+![Plantio direto em área agrícola](foto_plantio_direto.jpg){width="50%"}
+
   - Técnica de análise de dados que explica quanto uma ou mais variáveis preditoras (VIs)
 explicam ou estão associadas com um desfecho (VD)
 
@@ -131,6 +133,7 @@ Bx = o grau sobre o quanto X (propaganda) impacta Y (venda).
 
 E = a porção de variância não explicada pela variável independente (o quanto a propaganda não foi útil para aumentar a venda)
 
+![Regressão linear simples com resíduos e IC 95%](fig_01_regressao_linear.png)
 
 ---
 
@@ -195,6 +198,8 @@ REGRESSÃO LINEAR
   - Homocedasticidade dos resíduos
   - Independência dos resíduos (colinealidade)
   - Distribuição normal dos resíduos
+
+![Painel de diagnósticos da regressão](fig_02_diagnosticos_regressao.png)
 
 ---
 
@@ -343,6 +348,8 @@ Variáveis independentes (não deve haver muita multicolinearidade).
   - Também através do VIF
     - Valores de VIF > 10 → Multicolinearidade
     - Se Média de VIF for substancialmente > 1, Modelo tendencioso (Statitics → Colinearity Diagnosis). Próximo a 1, bom modelo.
+
+![Diagnóstico de multicolinearidade (VIF)](fig_05_vif_multicolinearidade.png)
 
 ---
 
