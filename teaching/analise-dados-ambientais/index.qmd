@@ -14,7 +14,7 @@ description: "Ambiente virtual da disciplina de Análise de Dados Ambientais —
     <h2 class="ava-title">Análise de Dados Ambientais</h2>
     <p class="ava-subtitle">Estatística aplicada, correlação, regressão, ANOVA, GLM/GEE, análise fatorial e modelagem ambiental para pós-graduação.</p>
     <div class="ava-stats">
-      <span class="ava-stat"><i class="fa-solid fa-display"></i> 29 aulas</span>
+      <span class="ava-stat"><i class="fa-solid fa-display"></i> 34 aulas</span>
       <span class="ava-stat"><i class="fa-solid fa-book"></i> Leituras</span>
       <span class="ava-stat"><i class="fa-solid fa-video"></i> Vídeos</span>
     </div>
@@ -303,6 +303,46 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 <div class="slide-info">
 <div class="card-title">Aula 29 | Metanálise</div>
 <p>Efeito combinado, forest plot, heterogeneidade e análise de sobrevida.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/regressao_poisson/regressao_poisson.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<div class="card-title">Aula 30 | Regressão de Poisson</div>
+<p>Teoria, pressupostos, equidispersão, prática (SPSS/R), interpretação do IRR e descrição.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/regressao_poisson/superdispersao_binomial_negativa.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<div class="card-title">Aula 31 | Superdispersão e Binomial Negativa</div>
+<p>Modelo superdisperso, regressão binomial negativa, comparação de modelos (AIC) e descrição.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/regressao_poisson/poisson_robusta.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<div class="card-title">Aula 32 | Regressão de Poisson Robusta</div>
+<p>Razão de prevalência vs. odds ratio, variância robusta, prática (SPSS/R) e descrição.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/analise_sobrevida/analise_sobrevida.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<div class="card-title">Aula 33 | Análise de Sobrevida</div>
+<p>Introdução, censura, Kaplan-Meier, tábua de sobrevida, teste log-rank e como reportar.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/analise_sobrevida/regressao_cox.html" target="_blank">
+<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<div class="card-title">Aula 34 | Regressão de Cox</div>
+<p>Modelo de riscos proporcionais, Hazard Ratio, análise uni e multivariada, forest plot e descrição.</p>
 </div>
 </a>
 

@@ -1,0 +1,282 @@
+---
+title: "Análise de Sobrevida"
+subtitle: "Introdução, Kaplan-Meier, Tábua de Sobrevida e Teste Log-Rank<br>Análise de Dados Ambientais"
+author: "Luiz Diego Vidal Santos"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise de Dados Ambientais | Análise de Sobrevida"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    include-after-body: ../../../assets/image-lightbox.html
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+# [INTRODUÇÃO À ANÁLISE DE SOBREVIDA]{.section-header}
+
+## O que é Análise de Sobrevida? {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+Análise de Sobrevida é um conjunto de técnicas estatísticas para analisar o **tempo até a ocorrência de um evento** de interesse.
+
+### Conceitos-chave
+
+- **Evento:** morte, recidiva, falha, alta, cura, abandono
+- **Tempo de sobrevida:** intervalo entre o início da observação e o evento (ou censura)
+- **Censura:** quando o evento não é observado durante o acompanhamento
+
+::: {.info-box}
+Não se restringe a "sobrevivência" — aplica-se a qualquer evento temporal!
+:::
+
+:::
+::: {.column width="50%"}
+
+::: {.highlight-box}
+**Materiais necessários**
+
+- Banco de dados com variáveis de tempo e evento
+- Software: SPSS, JAMOVI, R ou Stata
+- Arquivos de descrição (plataforma)
+:::
+
+### Exemplos de aplicação
+
+- Tempo até **óbito** em pacientes oncológicos
+- Tempo até **recidiva** de uma doença
+- Tempo até **falha** de um equipamento
+- Tempo até **abandono** de um tratamento
+- Tempo até **regeneração** de uma área degradada
+
+:::
+:::
+
+---
+
+## Conceitos fundamentais {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### Censura
+
+Ocorre quando **não se observa o evento** durante o acompanhamento:
+
+- **Censura à direita:** paciente saiu do estudo antes do evento (mais comum)
+- **Censura à esquerda:** evento ocorreu antes do início do acompanhamento
+- **Censura intervalar:** sabe-se que o evento ocorreu entre dois momentos
+
+### Função de sobrevida
+
+$$S(t) = P(T > t)$$
+
+Probabilidade de sobreviver **além** do tempo $t$.
+
+- $S(0) = 1$ (todos vivos no início)
+- $S(t)$ é **não crescente**
+
+:::
+::: {.column width="50%"}
+
+### Função de risco (hazard)
+
+$$h(t) = \lim_{\Delta t \to 0} \frac{P(t \le T < t + \Delta t \mid T \ge t)}{\Delta t}$$
+
+Taxa **instantânea** de ocorrência do evento no tempo $t$, dado que o sujeito sobreviveu até $t$.
+
+::: {.highlight-box}
+**Relação entre as funções:**
+
+- $S(t)$ — probabilidade de **não** ter o evento
+- $h(t)$ — risco **instantâneo** de ter o evento
+- São complementares na análise
+:::
+
+:::
+:::
+
+---
+
+# [BANCO DE DADOS E VARIÁVEIS]{.section-header}
+
+## Conhecendo o banco {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### Estrutura mínima do banco
+
+| Variável | Descrição |
+|----------|-----------|
+| **ID** | Identificador do sujeito |
+| **tempo** | Tempo até o evento ou censura |
+| **status** | 1 = evento ocorreu; 0 = censurado |
+| Covariáveis | Preditores de interesse |
+
+### Manipulação do tempo
+
+- Verificar unidade (dias, meses, anos)
+- Criar variável de tempo se necessário
+- Calcular: data do evento − data de entrada
+
+:::
+::: {.column width="50%"}
+
+### Descrição das variáveis
+
+::: {.info-box}
+**Descrição univariada:**
+
+- Variáveis categóricas → frequências e %
+- Variáveis numéricas → média, DP, mediana
+- **Tempo de acompanhamento** → mediana e amplitude
+- **Taxa de eventos** → nº de eventos / total
+- **Taxa de censura** → nº censurados / total
+:::
+
+::: {.highlight-box}
+**Dica:** sempre reporte a **mediana** do tempo de acompanhamento, não a média (distribuição geralmente assimétrica).
+:::
+
+:::
+:::
+
+---
+
+# [TÁBUA DE SOBREVIDA]{.section-header}
+
+## Estimador de Kaplan-Meier {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+O método de **Kaplan-Meier** é o estimador não paramétrico mais utilizado para a função de sobrevida.
+
+$$\hat{S}(t) = \prod_{t_i \le t} \left(1 - \frac{d_i}{n_i}\right)$$
+
+Onde:
+
+- $d_i$ = nº de eventos no tempo $t_i$
+- $n_i$ = nº em risco no tempo $t_i$
+
+### Tábua de sobrevida (Life Table)
+
+Apresenta, para cada tempo:
+
+- Nº em risco, nº de eventos, nº de censuras
+- Probabilidade de sobrevida acumulada
+- Erro-padrão
+
+:::
+::: {.column width="50%"}
+
+::: {.highlight-box}
+**Curva de Kaplan-Meier**
+
+- Eixo X: **tempo**
+- Eixo Y: **probabilidade de sobrevida** $S(t)$
+- Formato em **escada** (step function)
+- Marcas verticais (**+**) indicam censuras
+- Mediana de sobrevida: tempo em que $S(t) = 0{,}50$
+:::
+
+### No SPSS
+
+`Analisar → Sobrevivência → Kaplan-Meier`
+
+### No R
+
+```r
+library(survival)
+library(survminer)
+
+km <- survfit(Surv(tempo, status) ~ 1,
+              data = dados)
+ggsurvplot(km)
+```
+
+:::
+:::
+
+---
+
+# [TESTE LOG-RANK]{.section-header}
+
+## Comparando curvas de sobrevida {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+O **teste log-rank** (Mantel-Cox) compara as curvas de sobrevida entre **dois ou mais grupos**.
+
+### Hipóteses
+
+- $H_0$: as curvas de sobrevida são **iguais** entre os grupos
+- $H_1$: as curvas de sobrevida **diferem** entre os grupos
+
+### Interpretação
+
+- **p < 0,05** → diferença significativa entre as curvas
+- **p ≥ 0,05** → não há evidência de diferença
+
+::: {.info-box}
+O log-rank é análogo ao teste t ou ANOVA, mas para dados de sobrevida (com censura).
+:::
+
+:::
+::: {.column width="50%"}
+
+### Solicitando a análise
+
+**SPSS:**
+`Kaplan-Meier → Fator (variável de grupo) → Comparar fator → Log Rank`
+
+**R:**
+
+```r
+km_grupo <- survfit(
+  Surv(tempo, status) ~ grupo,
+  data = dados)
+
+ggsurvplot(km_grupo, pval = TRUE)
+
+survdiff(Surv(tempo, status) ~ grupo,
+         data = dados)
+```
+
+::: {.highlight-box}
+**Limitação:** o log-rank compara grupos mas **não ajusta** por confundidores. Para análise multivariada → **Regressão de Cox**.
+:::
+
+:::
+:::
+
+---
+
+## Como reportar a análise de sobrevida {.smaller-text}
+
+::: {.info-box}
+**Modelo de descrição para artigos/relatórios**
+
+> "A análise de sobrevida foi conduzida pelo método de Kaplan-Meier. O tempo de acompanhamento mediano foi de X meses (amplitude: X–X). A comparação entre as curvas de sobrevida por [variável de grupo] foi realizada pelo teste log-rank (Mantel-Cox). As probabilidades de sobrevida em 12, 24 e 60 meses foram estimadas e apresentadas com os respectivos intervalos de confiança de 95%. O nível de significância adotado foi de 5%."
+:::
+
+### Elementos essenciais no relatório
+
+| Elemento | Exemplo |
+|----------|---------|
+| Mediana de acompanhamento | Mediana = 36 meses (IIQ: 18–52) |
+| Mediana de sobrevida | Mediana não atingida / 28 meses |
+| Sobrevida em pontos fixos | S(12m) = 85%; S(60m) = 62% |
+| Comparação entre grupos | Log-rank: χ² = X,XX; p = 0,XXX |
+| Curva de Kaplan-Meier | Figura obrigatória |

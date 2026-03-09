@@ -1,0 +1,259 @@
+---
+title: "Regressão de Poisson Robusta"
+subtitle: "Teoria, Prática e Descrição<br>Estimando a Razão de Prevalência em Estudos Transversais"
+author: "Luiz Diego Vidal Santos"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise de Dados Ambientais | Poisson Robusta"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    include-after-body: ../../../assets/image-lightbox.html
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+# [POISSON ROBUSTA — TEORIA]{.section-header}
+
+## Estudos transversais e a medida de associação {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+Estudos transversais avaliam **exposição e desfecho em um único momento** — um dos delineamentos mais realizados em pesquisa.
+
+A medida de associação correta é a **Razão de Prevalência (RP)**.
+
+Calculada facilmente numa tabela 2×2:
+
+$$RP = \frac{a/(a+b)}{c/(c+d)}$$
+
+:::
+::: {.column width="50%"}
+
+::: {.info-box}
+**O problema**
+
+Quando é necessário **ajustar por confundidores**, muitos estudos utilizam regressão logística → obtêm **Odds Ratio (OR)**.
+
+Porém OR e RP são calculados de maneiras diferentes e produzem **resultados diferentes**!
+
+A OR tende a **superestimar** o efeito quando o desfecho é frequente.
+:::
+
+:::
+:::
+
+::: aside
+Barros & Hirakata, 2003; Coutinho, Scazufca & Menezes, 2008
+:::
+
+---
+
+## RP vs. OR — por que importa? {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### Exemplo numérico (tabela 2×2)
+
+|  | Desfecho + | Desfecho − | Total |
+|--|-----------|-----------|-------|
+| Exposto | 30 | 20 | 50 |
+| Não exposto | 15 | 40 | 55 |
+| **Total** | **45** | **60** | **105** |
+
+$$RP = \frac{30/50}{15/55} = \frac{0{,}60}{0{,}27} = 2{,}2$$
+
+$$OR = \frac{30 \times 40}{20 \times 15} = \frac{1200}{300} = 4{,}0$$
+
+:::
+::: {.column width="50%"}
+
+::: {.highlight-box}
+**Resultado:** RP = 2,2 vs. OR = 4,0
+
+A OR quase **dobrou** a magnitude do efeito!
+
+**Estudos de simulação mostram:**
+
+| Frequência do desfecho | OR vs. RP |
+|----------------------|-----------|
+| Baixa (< 10%) | Resultados semelhantes |
+| Moderada (10–20%) | Superestimação |
+| Alta (> 20%) | Superestimação expressiva |
+:::
+
+::: {.info-box}
+Não é "errado" usar OR, mas a RP é a medida **correta** para estudos transversais.
+:::
+
+:::
+:::
+
+::: aside
+Barros & Hirakata, 2003; Coutinho, Scazufca & Menezes, 2008
+:::
+
+---
+
+## A solução: Poisson com variância robusta {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+Quando a regressão de Poisson é aplicada a **dados binomiais** (0/1), o erro-padrão é superestimado (variância de Poisson cresce com a média, ao passo que a da binomial tem máximo em 0,5).
+
+O **estimador de variância robusta** (sanduíche de Huber-White) corrige esse problema.
+
+::: {.highlight-box}
+**Vantagens**
+
+- Sem dificuldade de convergência
+- Resultados semelhantes ao Mantel-Haenszel (preditores categóricos)
+- Interpretação direta como **Razão de Prevalência**
+- Bem aceita na prática epidemiológica brasileira
+:::
+
+:::
+::: {.column width="50%"}
+
+::: {.info-box}
+**Características da Poisson Robusta**
+
+- Segue o mesmo padrão da regressão de Poisson
+- **Não há** necessidade de avaliar distribuição, variância ou dispersão
+- **Não há** necessidade de comparar com binomial negativa
+- Aceita preditores categóricos e numéricos
+- Exp(B) = **Razão de Prevalência (RP)**
+- Muito utilizada no Brasil
+:::
+
+:::
+:::
+
+::: aside
+Barros & Hirakata, 2003; Coutinho, Scazufca & Menezes, 2008
+:::
+
+---
+
+# [POISSON ROBUSTA — PRÁTICA]{.section-header}
+
+## Solicitando a análise {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### No SPSS
+
+`Analisar → GLM → Equações de Estimação Generalizadas (GEE)`
+
+1. **Tipo de modelo:** Poisson loglinear
+2. **Resposta:** variável dicotômica (0/1)
+3. **Preditores:** fatores + covariáveis
+4. **Estimação:** matriz de trabalho → robusta
+5. Variável de identificação (ID do sujeito)
+
+::: {.info-box}
+⚠️ No SPSS, a variância robusta é obtida via **GEE** (não via GLM padrão).
+:::
+
+:::
+::: {.column width="50%"}
+
+### No R
+
+```r
+library(sandwich)
+library(lmtest)
+
+# Ajustar Poisson padrão
+modelo <- glm(desfecho ~ pred1 + pred2,
+              data = dados,
+              family = poisson(link = "log"))
+
+# Erros-padrão robustos
+coeftest(modelo, vcov = vcovHC(modelo,
+                               type = "HC1"))
+
+# RP com IC 95% robustos
+exp(coef(modelo))
+exp(confint(coeftest(modelo,
+            vcov = vcovHC(modelo, "HC1"))))
+```
+
+:::
+:::
+
+---
+
+## Interpretação da Razão de Prevalência {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+::: {.highlight-box}
+**Regras de interpretação (RP)**
+
+- **RP = 1** → prevalência **igual** entre grupos
+- **RP < 1** → prevalência **menor** nos expostos ("proteção")
+- **RP > 1** → prevalência **maior** nos expostos ("risco")
+:::
+
+::: {.info-box}
+**Como quantificar:**
+
+- **RP < 1:** faça 1 − RP
+  - Ex.: RP = 0,65 → 35% menor
+- **RP entre 1 e 2:** percentual
+  - Ex.: RP = 1,38 → 38% maior
+- **RP ≥ 2:** múltiplos
+  - Ex.: RP = 2,50 → 2,5× mais prevalente
+:::
+
+:::
+::: {.column width="50%"}
+
+### Exemplo prático
+
+Prevalência de hipertensão × obesidade:
+
+**RP = 1,72** (IC 95%: 1,28–2,31; p < 0,001)
+
+> "Indivíduos com obesidade apresentaram prevalência de hipertensão **72% maior** em relação aos não obesos (RP = 1,72; IC 95%: 1,28–2,31; p < 0,001)."
+
+:::
+:::
+
+---
+
+# [POISSON ROBUSTA — DESCRIÇÃO]{.section-header}
+
+## Como reportar {.smaller-text}
+
+::: {.info-box}
+**Modelo de descrição para artigos/relatórios**
+
+> "Para estimar a razão de prevalência (RP) com ajuste para variáveis confundidoras, utilizou-se a regressão de Poisson com estimador de variância robusta (sanduíche de Huber-White), por meio de Equações de Estimação Generalizadas (GEE) / Modelos Lineares Generalizados com erros-padrão robustos. Os resultados foram expressos por meio da RP com respectivos intervalos de confiança de 95%. O nível de significância adotado foi de 5%."
+:::
+
+### Estrutura do relatório
+
+| Seção | O que incluir |
+|-------|-------------|
+| **Método** | Poisson robusta, justificativa (estudo transversal), software |
+| **Resultados** | RP, IC 95%, p-valor |
+| **Tabela** | Preditores, B, RP, IC 95%, p |
+| **Discussão** | Comparar RP com literatura; justificar a escolha sobre OR |
+
+::: aside
+Barros & Hirakata, 2003; Coutinho, Scazufca & Menezes, 2008
+:::
