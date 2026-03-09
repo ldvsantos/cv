@@ -206,6 +206,18 @@ plot(cox.zph(cox_multi))
 :::
 ::: {.column width="50%"}
 
+![Resíduos de Schoenfeld — linhas suavizadas devem ser horizontais](fig_02_schoenfeld.png){width="100%" fig-align="center"}
+
+:::
+:::
+
+---
+
+## Diagnósticos adicionais {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
 ::: {.info-box}
 **Se o pressuposto for violado:**
 
@@ -237,14 +249,12 @@ plot(cox.zph(cox_multi))
 
 ### Curvas de sobrevida ajustadas
 
-Após a regressão de Cox, pode-se plotar **curvas de sobrevida ajustadas** pelas covariáveis do modelo.
+![Curvas de sobrevida ajustadas por covariáveis do modelo de Cox](fig_03_curvas_ajustadas.png){width="100%" fig-align="center"}
 
 **No R:**
 
 ```r
 library(survminer)
-
-# Curva ajustada por grupos
 ggadjustedcurves(cox_multi,
                  variable = "grupo",
                  data = dados)
@@ -261,23 +271,7 @@ ggforest(cox_multi, data = dados)
 :::
 ::: {.column width="50%"}
 
-::: {.highlight-box}
-**Elementos do Forest Plot:**
-
-- Linha vertical em **HR = 1** (referência)
-- Pontos → HR estimado
-- Barras horizontais → IC 95%
-- Se IC cruza a linha 1 → **não significativo**
-- Se IC está todo à direita → **fator de risco**
-- Se IC está todo à esquerda → **fator de proteção**
-:::
-
-::: {.info-box}
-**Figuras essenciais no artigo:**
-
-1. Curva de Kaplan-Meier por grupos
-2. Forest Plot da regressão de Cox multivariada
-:::
+![Forest Plot — HR e IC 95% de cada variável do modelo de Cox multivariado](fig_01_forest_plot.png){width="100%" fig-align="center"}
 
 :::
 :::

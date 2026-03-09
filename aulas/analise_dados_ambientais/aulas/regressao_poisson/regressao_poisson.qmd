@@ -79,8 +79,25 @@ A regressão de Poisson pertence à família de análises cuja **variável desfe
 :::
 ::: {.column width="50%"}
 
+![Distribuição de Poisson para diferentes valores de λ](fig_01_distribuicao_poisson.png){width="100%" fig-align="center"}
+
+:::
+
+:::
+
+::: aside
+Coxe, West & Aiken, 2009; Adaptado de Green, 2021
+:::
+
+---
+
+## Modelos Lineares Generalizados (GLM) {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
 ::: {.info-box}
-**Modelos Lineares Generalizados (GLM)**
+**Família dos GLM**
 
 As regressões de contagem pertencem à família dos GLM:
 
@@ -88,7 +105,7 @@ As regressões de contagem pertencem à família dos GLM:
 - **Link:** Log
 
 | Software | Modelos |
-|----------|---------|
+|----------|---------||
 | SPSS | Poisson, binomial negativa |
 | JAMOVI | Poisson, binomial negativa |
 | Stata | Poisson, binomial neg., zero inflada/truncada |
@@ -96,10 +113,11 @@ As regressões de contagem pertencem à família dos GLM:
 :::
 
 :::
-:::
+::: {.column width="50%"}
 
-::: aside
-Coxe, West & Aiken, 2009; Adaptado de Green, 2021
+![Histograma típico de dados de contagem (assimétricos à direita)](fig_02_histograma_contagem.png){width="100%" fig-align="center"}
+
+:::
 :::
 
 ---
@@ -141,6 +159,35 @@ Coxe, West & Aiken, 2009; Adaptado de Green, 2021
 
 ::: aside
 Coxe, West & Aiken, 2009; Green, 2021; Hutchinson & Holtman, 2005
+:::
+
+---
+
+## A função de ligação logarítmica {.smaller-text}
+
+::: {.columns}
+::: {.column width="45%"}
+
+::: {.highlight-box}
+**Link log**
+
+A regressão de Poisson modela:
+
+$$\log(\mu) = \beta_0 + \beta_1 X$$
+
+Ou equivalentemente:
+
+$$\mu = e^{\beta_0 + \beta_1 X}$$
+
+A relação entre preditores e contagem é **exponencial**, não linear.
+:::
+
+:::
+::: {.column width="55%"}
+
+![Relação exponencial entre preditor e contagem esperada](fig_03_link_log.png){width="100%" fig-align="center"}
+
+:::
 :::
 
 ---

@@ -63,6 +63,12 @@ Não se restringe a "sobrevivência" — aplica-se a qualquer evento temporal!
 
 ---
 
+## Representando o acompanhamento {.smaller-text}
+
+![Cada linha representa um paciente: ● = evento observado | + = censura](fig_01_swimmers_plot.png){width="85%" fig-align="center"}
+
+---
+
 ## Conceitos fundamentais {.smaller-text}
 
 ::: {.columns}
@@ -210,6 +216,12 @@ ggsurvplot(km)
 
 ---
 
+## Curva de Kaplan-Meier — exemplo {.smaller-text}
+
+![Curva de Kaplan-Meier com IC 95% e tabela de risco](fig_02_kaplan_meier.png){width="80%" fig-align="center"}
+
+---
+
 # [TESTE LOG-RANK]{.section-header}
 
 ## Comparando curvas de sobrevida {.smaller-text}
@@ -260,6 +272,12 @@ survdiff(Surv(tempo, status) ~ grupo,
 
 :::
 :::
+
+---
+
+## Curvas de Kaplan-Meier por grupos — exemplo {.smaller-text}
+
+![Comparação de curvas de sobrevida entre dois tratamentos com teste log-rank](fig_03_kaplan_meier_grupos.png){width="80%" fig-align="center"}
 
 ---
 

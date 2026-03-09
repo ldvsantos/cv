@@ -104,6 +104,32 @@ Barros & Hirakata, 2003; Coutinho, Scazufca & Menezes, 2008
 
 ---
 
+## Visualizando a divergência OR vs. RP {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+![A OR diverge da RP conforme a prevalência do desfecho aumenta](fig_01_or_vs_rp.png){width="100%" fig-align="center"}
+
+:::
+::: {.column width="50%"}
+
+::: {.info-box}
+**Interpretação do gráfico**
+
+- A **RP real** é constante (2,0)
+- A **OR** se afasta da RP quanto maior a prevalência
+- Com prevalência > 20%, a OR já superestima substancialmente
+- Com prevalência > 40%, a distorção é dramatica
+
+Essa é a principal justificativa para **não usar** regressão logística em estudos transversais com desfechos frequentes.
+:::
+
+:::
+:::
+
+---
+
 ## A solução: Poisson com variância robusta {.smaller-text}
 
 ::: {.columns}
@@ -198,6 +224,11 @@ exp(confint(coeftest(modelo,
 ## Interpretação da Razão de Prevalência {.smaller-text}
 
 ::: {.columns}
+::: {.column width="50%"}
+
+![IC padrão vs. IC robusto (sanduíche de Huber-White)](fig_02_ic_padrao_vs_robusto.png){width="100%" fig-align="center"}
+
+:::
 ::: {.column width="50%"}
 
 ::: {.highlight-box}
