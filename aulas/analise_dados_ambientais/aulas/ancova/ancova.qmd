@@ -29,14 +29,17 @@ execute:
 - [2]{.circle} Quando usar a ANCOVA?
 - [3]{.circle} Lógica — Removendo o ruído da covariável
 - [4]{.circle} Pressupostos específicos
-- [5]{.circle} Exemplo prático — Erosão e Cobertura
-- [6]{.circle} ANCOVA vs. ANOVA: quando preferir cada uma?
+- [5]{.circle} Exemplo 1 — Erosão e Cobertura Vegetal
+- [6]{.circle} Exemplo 2 — Habilidades Matemáticas e IME
+- [7]{.circle} Solicitando a ANCOVA
+- [8]{.circle} Descrevendo os Resultados
+- [9]{.circle} ANCOVA vs. ANOVA: quando preferir cada uma?
 
 ::::
 :::: {.column width="40%"}
 
 ::: {.info-box}
-**Objetivo:** Compreender a ANCOVA como extensão da ANOVA que **controla estatisticamente** o efeito de variáveis contínuas intervenientes (covariáveis), aumentando a precisão da comparação entre grupos.
+**Objetivo:** Compreender a ANCOVA como extensão da ANOVA que **controla estatisticamente** o efeito de variáveis contínuas intervenientes (covariáveis), aumentando a precisão da comparação entre grupos. Aprender a solicitar e descrever os resultados.
 :::
 
 ::::
@@ -57,12 +60,12 @@ A **ANCOVA** (*Analysis of Covariance*) combina ANOVA e regressão linear. Ela c
 :::
 
 ::: {.box}
-**Estrutura mínima**
+**Estrutura mínima — pelo menos três variáveis**
 
 | Componente | Tipo | Exemplo |
 |------------|------|---------|
-| VI (Fator) | Categórica | Tipo de manejo (3 níveis) |
-| VD | Contínua | Perda de solo (t/ha) |
+| VI (Fator/Grupo) | Categórica | Tipo de manejo (3 níveis) |
+| VD (Desfecho) | Contínua | Perda de solo (t/ha) |
 | **Covariável** | **Contínua** | Precipitação (mm) |
 :::
 
@@ -70,6 +73,89 @@ A **ANCOVA** (*Analysis of Covariance*) combina ANOVA e regressão linear. Ela c
 :::: {.column width="45%"}
 
 ![](fig_ancova_conceito.png){width="100%"}
+
+::::
+:::
+
+::: {.highlight-box}
+A covariável na ANCOVA é **sempre contínua** (ou, em algumas extensões, ordinal). Se a variável de controle for categórica, ela deve ser incluída como **segundo fator** (ANOVA Fatorial), não como covariável.
+:::
+
+
+## Erosão > Precipitação — Mas o que mais influencia? {.smaller-text}
+
+::: {.columns}
+:::: {.column width="50%"}
+
+::: {.info-box}
+Quando analisamos a erosão do solo, a precipitação é a variável mais óbvia. Mas **quais outras variáveis influenciam o processo?**
+:::
+
+- Níveis de cobertura natural
+- Características do solo (textura, estrutura, porosidade)
+- Topografia (declividade, comprimento de encosta)
+- Uso e manejo do solo
+
+::: {.highlight-box}
+Na ANCOVA, você busca **controlar estatisticamente** o efeito dessas variáveis intervenientes na relação entre a VI e a VD.
+:::
+
+::::
+:::: {.column width="50%"}
+
+::: {.box}
+**Exemplo ambiental**
+
+Queremos comparar 3 tipos de cobertura vegetal → Erosão
+
+Mas a precipitação variou entre parcelas. Sem controle, o efeito das coberturas se confunde com o da chuva.
+
+**Covariável:** Precipitação (mm)
+
+A ANCOVA remove o efeito da chuva antes de comparar os grupos.
+:::
+
+::::
+:::
+
+
+## Outro exemplo — Habilidades Matemáticas {.smaller-text}
+
+::: {.columns}
+:::: {.column width="50%"}
+
+::: {.info-box}
+**Fora das ciências ambientais:** a lógica ANCOVA se aplica a qualquer área.
+:::
+
+::: {.box}
+**Delineamento**
+
+| Componente | Variável |
+|------------|----------|
+| **VI (Grupo)** | Habilidades Matemáticas (alta / baixa) |
+| **VD (Desfecho)** | Aprovação no IME (passou / não passou) |
+| **Covariável** | Compreensão de Texto (escore) |
+
+A covariável "compreensão de texto" influencia o desempenho, mas **não é o foco**. A ANCOVA isola o efeito puro das habilidades matemáticas.
+:::
+
+::::
+:::: {.column width="50%"}
+
+::: {.highlight-box}
+**Cuidado:** neste exemplo a VD é binária (passou/não), o que exigiria extensões (regressão logística com covariável). Para ANCOVA clássica, a VD deve ser **contínua** (ex.: nota final).
+:::
+
+::: {.box}
+**Versão corrigida para ANCOVA clássica:**
+
+| Componente | Variável |
+|------------|----------|
+| **VI** | Método de ensino (3 turmas) |
+| **VD** | Nota na prova de Matemática |
+| **Covariável** | Escore de Compreensão de Texto |
+:::
 
 ::::
 :::
@@ -240,7 +326,7 @@ O pressuposto mais crítico é a **homogeneidade das inclinações de regressão
 :::
 
 
-# [5 — EXEMPLO PRÁTICO]{.section-header}
+# [5 — EXEMPLO 1: EROSÃO E COBERTURA]{.section-header}
 
 ## Erosão e Cobertura Vegetal com Covariável {.smaller-text}
 
@@ -279,7 +365,193 @@ Com a covariável (ANCOVA): **F = 15,7; p < 0,001** → poder aumentou!
 :::
 
 
-# [6 — ANCOVA vs. ANOVA]{.section-header}
+# [6 — EXEMPLO 2: HABILIDADES E IME]{.section-header}
+
+## Método de Ensino e Desempenho Matemático {.smaller-text}
+
+::: {.columns}
+:::: {.column width="50%"}
+
+::: {.info-box}
+**Delineamento**
+
+- **Fator:** Método de ensino (Tradicional, Ativo, Híbrido)
+- **VD:** Nota final em Matemática (0–100)
+- **Covariável:** Compreensão de Texto (escore padronizado)
+- **n = 15** por grupo → N = 45
+:::
+
+::: {.box}
+**Resultados**
+
+| Fonte | F | p-valor | $\eta^2_p$ |
+|-------|---|---------|-----------|
+| Compreensão (Cov) | 18,9 | < 0,001 | 0,31 |
+| Método (adj) | 7,3 | 0,002 | 0,26 |
+| Erro | — | — | — |
+
+Sem covariável: F = 3,1; p = 0,055 (n.s.)
+
+Com covariável: **F = 7,3; p = 0,002** — a diferença era **mascarada** pela variação em compreensão!
+:::
+
+::::
+:::: {.column width="50%"}
+
+::: {.highlight-box}
+**Por que a ANCOVA revelou o efeito?**
+
+A compreensão de texto variava entre turmas. O grupo "Tradicional" tinha alunos com melhor leitura, inflando suas notas. Ao controlar pela covariável, o efeito real do método apareceu.
+:::
+
+::: {.box}
+**Médias ajustadas (EMMs)**
+
+| Método | Média bruta | Média ajustada |
+|--------|------------|----------------|
+| Tradicional | 72,4 | 68,1 |
+| Ativo | 67,3 | 70,5 |
+| Híbrido | 70,1 | 71,2 |
+
+Post-hoc (Bonferroni): Tradicional < Ativo (p = 0,04); Tradicional < Híbrido (p = 0,02)
+:::
+
+::::
+:::
+
+
+# [7 — SOLICITANDO A ANCOVA]{.section-header}
+
+## Como Solicitar a Análise {.smaller-text}
+
+::: {.columns}
+:::: {.column width="50%"}
+
+::: {.box}
+**No JASP (passo a passo)**
+
+[1]{.circle} Abrir os dados → **ANOVA** → **ANCOVA**
+
+[2]{.circle} Mover a VD para "Dependent Variable"
+
+[3]{.circle} Mover o Fator para "Fixed Factors"
+
+[4]{.circle} Mover a covariável para **"Covariates"**
+
+[5]{.circle} Em "Display": marcar "Descriptive statistics"
+
+[6]{.circle} Em "Assumption Checks": marcar "Homogeneity tests" e "Q-Q plot of residuals"
+:::
+
+::::
+:::: {.column width="50%"}
+
+::: {.box}
+**Verificações obrigatórias**
+
+[1]{.circle} **Testar homogeneidade de inclinações:** Incluir o termo de interação Fator × Covariável. Se p > 0,05 → as retas são paralelas → prosseguir.
+
+[2]{.circle} **Remover a interação** e rodar o modelo final (ANCOVA pura).
+
+[3]{.circle} Solicitar **Estimated Marginal Means** (médias ajustadas) para o fator.
+
+[4]{.circle} Solicitar **Post-hoc** (Bonferroni ou Sidak) sobre as médias ajustadas.
+:::
+
+::: {.highlight-box}
+**Atenção:** nunca use as médias brutas para comparar os grupos na ANCOVA — use sempre as **médias marginais estimadas (EMMs)**.
+:::
+
+::::
+:::
+
+
+## No R — Código Básico {.smaller-text}
+
+::: {.columns}
+:::: {.column width="50%"}
+
+::: {.box}
+**1 — Testar homogeneidade de inclinações**
+```r
+# Modelo com interação
+mod_inter <- aov(erosao ~ cobertura * precipitacao,
+                 data = dados)
+summary(mod_inter)
+# Se cobertura:precipitacao for n.s. → OK
+```
+:::
+
+::: {.box}
+**2 — ANCOVA (modelo final)**
+```r
+mod_ancova <- aov(erosao ~ precipitacao + cobertura,
+                  data = dados)
+summary(mod_ancova)
+```
+:::
+
+::::
+:::: {.column width="50%"}
+
+::: {.box}
+**3 — Médias ajustadas e post-hoc**
+```r
+library(emmeans)
+
+# Médias marginais estimadas
+emm <- emmeans(mod_ancova, ~ cobertura)
+emm
+
+# Comparações pareadas
+pairs(emm, adjust = "bonferroni")
+```
+:::
+
+::: {.info-box}
+O pacote `emmeans` calcula automaticamente as EMMs fixando a covariável na média geral. É o padrão para ANCOVA em R.
+:::
+
+::::
+:::
+
+
+# [8 — DESCREVENDO OS RESULTADOS]{.section-header}
+
+## Como Reportar a ANCOVA {.smaller-text}
+
+::: {.columns}
+:::: {.column width="50%"}
+
+::: {.info-box}
+**Modelo de redação (APA)**
+
+"Uma ANCOVA foi conduzida para comparar a perda de solo entre três tipos de cobertura vegetal (sem, parcial e densa), controlando o efeito da precipitação acumulada. O pressuposto de homogeneidade das inclinações de regressão foi atendido, F(2, 24) = 0,87, p = 0,432. Após o ajuste pela covariável, houve efeito significativo do tipo de cobertura, F(2, 26) = 15,7, p < 0,001, $\eta^2_p$ = 0,55. Comparações post-hoc (Bonferroni) indicaram que a perda de solo foi significativamente menor na cobertura densa (M_adj = 9,3 t/ha) em relação à parcial (M_adj = 13,5 t/ha, p = 0,008) e à ausência de cobertura (M_adj = 19,0 t/ha, p < 0,001)."
+:::
+
+::::
+:::: {.column width="50%"}
+
+::: {.box}
+**Checklist de reporte**
+
+- [ ] Informar que foi ANCOVA (não apenas "ANOVA")
+- [ ] Relatar a verificação de homogeneidade de inclinações
+- [ ] Relatar F, gl, p e tamanho de efeito ($\eta^2_p$) para o fator
+- [ ] Relatar F e p para a covariável
+- [ ] Usar **médias ajustadas** (EMMs), não brutas
+- [ ] Reportar post-hoc sobre as EMMs
+:::
+
+::: {.highlight-box}
+**Erro comum:** reportar médias brutas em vez das ajustadas. Na ANCOVA, as médias brutas podem ser enganosas — a "correção" pela covariável pode alterar consideravelmente a ordem ou a distância entre os grupos.
+:::
+
+::::
+:::
+
+
+# [9 — ANCOVA vs. ANOVA]{.section-header}
 
 ## Quando escolher cada técnica? {.smaller-text}
 
