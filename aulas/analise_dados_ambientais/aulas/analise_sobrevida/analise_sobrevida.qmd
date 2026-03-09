@@ -111,8 +111,6 @@ Taxa **instantânea** de ocorrência do evento no tempo $t$, dado que o sujeito 
 :::
 :::
 
----
-
 # [BANCO DE DADOS E VARIÁVEIS]{.section-header}
 
 ## Conhecendo o banco {.smaller-text}
@@ -156,8 +154,6 @@ Taxa **instantânea** de ocorrência do evento no tempo $t$, dado que o sujeito 
 
 :::
 :::
-
----
 
 # [TÁBUA DE SOBREVIDA]{.section-header}
 
@@ -219,8 +215,6 @@ ggsurvplot(km)
 ## Curva de Kaplan-Meier — exemplo {.smaller-text}
 
 ![Curva de Kaplan-Meier com IC 95% e tabela de risco](fig_02_kaplan_meier.png){width="80%" fig-align="center"}
-
----
 
 # [TESTE LOG-RANK]{.section-header}
 
