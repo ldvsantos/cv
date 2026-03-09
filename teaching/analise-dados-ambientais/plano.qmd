@@ -53,117 +53,121 @@ Cada avaliação terá valor máximo de 10,0 pontos e a média final será calcu
 
 O componente curricular será desenvolvido em 15 encontros de 4 horas cada, totalizando 60 horas. O programa articula fundamentos teóricos de estatística avançada com aplicações práticas em análise de dados ambientais, utilizando softwares livres e especializados.
 
-1. **Apresentação e bases epistemológicas (4 h)**
+1. **Introdução, Etimologia Estatística e Taxonomia de Bloom (4 h)**
 
    * Organização da disciplina, objetivos e critérios de avaliação.
 
    * Paradigmas frequentista e bayesiano na inferência sobre dados ambientais.
 
-2. **Análises descritivas aplicadas (4 h)**
+   * Níveis cognitivos da Taxonomia de Bloom aplicados à análise de dados.
+
+2. **Estatística Descritiva e Inferencial (4 h)**
 
    * Estrutura de dados ambientais; tipos de variáveis e escalas de medida.
 
-   * Medidas de tendência central, dispersão, assimetria e curtose.
+   * Medidas de tendência central, dispersão, assimetria e curtose; escore Z.
 
-3. **Distribuição Normal e diagnóstico exploratório (4 h)**
+   * Avaliação de normalidade (Shapiro-Wilk, Kolmogorov-Smirnov); Q-Q plots; transformações.
 
-   * Avaliação de normalidade (Shapiro-Wilk, Kolmogorov-Smirnov); Q-Q plots.
+3. **Bootstrapping e Bootstrap Avançado (4 h)**
 
-   * Transformações de dados e estratégias para não normalidade.
+   * Inferência de parâmetros populacionais; intervalos de confiança via reamostragem.
 
-4. **Intervalos de confiança e estimação (4 h)**
+   * Técnicas avançadas de bootstrap e aplicações em dados ambientais.
 
-   * Inferência de parâmetros populacionais; erros amostrais.
+4. **Correlação e Testes de Hipóteses — Teste t (4 h)**
 
-   * Intervalos de confiança para médias, proporções e diferenças.
+   * Pearson, Spearman, ponto-bisserial, correlação parcial; distinção correlação–causalidade.
 
-5. **Correlação em estudos ambientais (4 h)**
+   * Formulação de H₀/H₁; erro tipo I/II; poder do teste; testes t para 1 e 2 amostras; pareados.
 
-   * Coeficientes de Pearson e Spearman; distinção entre correlação e causalidade.
+5. **ANOVA de Uma Via e ANOVA Fatorial (4 h)**
 
-   * Matrizes de correlação e visualização aplicada.
+   * Particionamento da variância; ANOVA one-way e comparações múltiplas.
 
-6. **Testes de hipóteses (4 h)**
+   * ANOVA fatorial: efeitos principais, interações e interpretação.
 
-   * Formulação de H₀/H₁; erro tipo I e tipo II; poder do teste.
+6. **ANCOVA e ANOVA de Medidas Repetidas (4 h)**
 
-   * Testes t para 1 e 2 amostras; testes pareados.
+   * Análise de covariância: pressupostos, prática e interpretação.
 
-7. **ANOVA e comparações múltiplas (4 h)**
+   * ANOVA de medidas repetidas: esfericidade, correções e descrição dos resultados.
 
-   * Particionamento da variância; ANOVA one-way e fatorial.
+7. **ANOVA — Visão Completa e MANOVA (4 h)**
 
-   * Testes de Tukey, Bonferroni e contrastes ortogonais; aplicações em conservação.
+   * ANOVA fatorial de medidas repetidas e modelos mistos.
 
-8. **Regressão linear (4 h)**
+   * MANOVA: pressupostos, testes multivariados e aplicações em conservação.
 
-   * Modelagem de tendências ambientais; ajuste, diagnóstico de resíduos e validação.
+8. **Regressão e Testes de Qui-Quadrado (4 h)**
 
-   * Regressão linear simples e múltipla; seleção de variáveis.
+   * Regressão linear simples e múltipla; diagnóstico de resíduos; seleção de variáveis; variáveis dummy.
 
-9. **Regressão logística e testes não paramétricos (4 h)**
+   * Qui-quadrado 2×2, n×k, McNemar e Q de Cochran.
 
-   * Probabilidade de eventos ambientais; odds ratio e curva ROC.
+9. **Associação e Dependência e Testes Não Paramétricos (4 h)**
 
-   * Testes de Wilcoxon, Mann-Whitney e Kruskal-Wallis.
+   * Phi, V de Cramér, odds ratio, risco relativo, log-linear e análise de correspondência.
 
-10. **Modelos Generalizados — GLM (4 h)**
+   * Mann-Whitney, Kruskal-Wallis, Wilcoxon e ANOVA de Friedman.
 
-    * Família exponencial; funções de ligação (logit, log, identidade).
+10. **A Escolha do Teste Estatístico e GLM/GEE (4 h)**
 
-    * GLM para dados de contagem, proporções e dados positivos contínuos.
+    * Fluxogramas de decisão e critérios para seleção do teste adequado.
 
-11. **GLM e GEE (4 h)**
+    * Família exponencial; funções de ligação; GEE para dados longitudinais e medidas repetidas.
 
-    * Estimação em GLM; diagnóstico e seleção de modelos.
+11. **Detecção de Anomalias e Análise Bi e Multivariada (4 h)**
 
-    * GEE para dados longitudinais e medidas repetidas em estudos ambientais.
+    * Indicadores de desmatamento, tendência, sazonalidade e detecção de outliers temporais.
 
-12. **Taxas, indicadores e tendências temporais (4 h)**
+    * PCA, análise de redes ecológicas: centralidade, modularidade, conectância.
 
-    * Indicadores de desmatamento e sustentabilidade; séries temporais.
+12. **Análise Fatorial Exploratória e Construção de Instrumentos (4 h)**
 
-    * Decomposição, tendência e sazonalidade em dados ambientais.
+    * Método Hull, número de fatores, rotação e interpretação.
 
-13. **Análise de redes ecológicas (4 h)**
+    * Elaboração de escalas, itens e procedimentos de validação.
 
-    * Métricas de redes: centralidade, modularidade, conectância e robustez.
+13. **Adaptação e Validade de Instrumentos de Medida (4 h)**
 
-    * Aplicações em ecologia e conservação da biodiversidade.
+    * Tradução, adaptação transcultural e equivalência de medidas.
 
-14. **Dados secundários e regressões avançadas (4 h)**
+    * Validade de conteúdo, construto e critério; confiabilidade.
 
-    * Fontes de dados ambientais secundários; integração e tratamento.
+14. **Evidências de Validade e Introdução à TRI (4 h)**
 
-    * Regressão de Poisson, superdispersão e binomial negativa.
+    * AFC, invariância de medida e modelagem por equações estruturais.
 
-15. **Sobrevida, AFE/AFC e MEE (4 h)**
+    * Teoria de Resposta ao Item: conceitos, modelos e aplicações.
 
-    * Modelo de Cox e análise de sobrevida aplicada a espécies e ecossistemas.
+15. **Modelo de Rasch e Metanálise (4 h)**
 
-    * Análise Fatorial Exploratória/Confirmatória e Modelagem por Equações Estruturais.
+    * Modelo de Rasch, ajuste de itens, mapa de Wright e aplicações.
+
+    * Efeito combinado, forest plot, heterogeneidade e análise de sobrevida.
 
 **CONTEÚDO PROGRAMÁTICO**
 
 **Quadro 1 — Conteúdo programático por aula de Análise de Dados Ambientais.**
 
-| SEMANA | AULA | ASSUNTOS PREVISTOS |
-| :----: | :--: | :----------------- |
-| 1ª | 01 | Apresentação e bases epistemológicas da inferência em dados ambientais. Paradigmas frequentista e bayesiano. |
-| 2ª | 02 | Análises descritivas aplicadas: estrutura de dados ambientais; medidas de tendência central e dispersão. |
-| 3ª | 03 | Distribuição Normal e diagnóstico exploratório: avaliação de normalidade, transformações. |
-| 4ª | 04 | Intervalos de confiança e estimação: inferência de parâmetros; erros amostrais. |
-| 5ª | 05 | Correlação em estudos ambientais: Pearson e Spearman; distinção entre correlação e causalidade. |
-| 6ª | 06 | Testes de hipóteses (t): formulação de H₀/H₁, erro tipo I/II, testes para 1 e 2 amostras. |
-| 7ª | 07 | ANOVA e comparações múltiplas: particionamento da variância; aplicações em conservação. |
-| 8ª | 08 | Regressão linear: modelagem de tendências ambientais; diagnóstico de resíduos. |
-| 9ª | 09 | Regressão logística e testes não paramétricos: probabilidade de eventos ambientais. |
-| 10ª | 10 | Modelos Generalizados (GLM): família exponencial; funções de ligação; aplicações ambientais. |
-| 11ª | 11 | GLM e GEE: estimação em GLM; GEE para dados longitudinais/repetidos. |
-| 12ª | 12 | Taxas, indicadores e tendências temporais: desflorestamento, sustentabilidade; séries temporais. |
-| 13ª | 13 | Análise de redes ecológicas: métricas, centralidade, modularidade, conectância. |
-| 14ª | 14 | Dados secundários e regressões avançadas: Poisson, superdispersão, binomial negativa. |
-| 15ª | 15 | Sobrevida, AFE/AFC e MEE: modelo de Cox; Análise Fatorial e Modelagem por Equações Estruturais. |
+| SEMANA | AULAS | ASSUNTOS PREVISTOS |
+| :----: | :---: | :----------------- |
+| 1ª | 01–02 | Introdução e Etimologia Estatística; Taxonomia de Bloom. Paradigmas frequentista e bayesiano; níveis cognitivos aplicados à análise de dados. |
+| 2ª | 03–04 | Estatística Descritiva e Inferencial. Tendência central, dispersão, escore Z; normalidade (Shapiro-Wilk, K-S), Q-Q plots, transformações. |
+| 3ª | 05–06 | Bootstrapping e Bootstrap Avançado. Intervalos de confiança via reamostragem; técnicas avançadas e aplicações ambientais. |
+| 4ª | 07–08 | Correlação e Teste t. Pearson, Spearman, ponto-bisserial, parcial; H₀/H₁, erro tipo I/II, testes t para 1 e 2 amostras. |
+| 5ª | 09–10 | ANOVA de Uma Via e ANOVA Fatorial. Particionamento da variância; comparações múltiplas; efeitos principais e interações. |
+| 6ª | 11–12 | ANCOVA e ANOVA de Medidas Repetidas. Covariáveis; esfericidade; correções e interpretação dos resultados. |
+| 7ª | 13 | ANOVA — Visão Completa e MANOVA. Fatorial de medidas repetidas; testes multivariados e aplicações em conservação. |
+| 8ª | 14–15 | Regressão e Qui-Quadrado. Regressão simples/múltipla; diagnóstico de resíduos; qui-quadrado 2×2, n×k, McNemar, Q de Cochran. |
+| 9ª | 16–17 | Associação e Dependência e Testes Não Paramétricos. Odds ratio, log-linear, correspondência; Mann-Whitney, Kruskal-Wallis, Friedman. |
+| 10ª | 18–19 | Escolha do Teste Estatístico e GLM/GEE. Fluxogramas de decisão; família exponencial; GEE para dados longitudinais e repetidos. |
+| 11ª | 20–21 | Detecção de Anomalias e Análise Bi e Multivariada. Séries temporais, outliers; PCA, redes ecológicas, centralidade, modularidade. |
+| 12ª | 22–23 | Análise Fatorial Exploratória e Construção de Instrumentos. Hull, número de fatores, rotação; elaboração de escalas e itens. |
+| 13ª | 24–25 | Adaptação e Validade de Instrumentos. Tradução e adaptação transcultural; validade de conteúdo, construto e critério. |
+| 14ª | 26–27 | Evidências de Validade e Introdução à TRI. AFC, invariância, MEE; Teoria de Resposta ao Item: conceitos e modelos. |
+| 15ª | 28–29 | Modelo de Rasch e Metanálise. Ajuste de itens, mapa de Wright; efeito combinado, forest plot, heterogeneidade, sobrevida. |
 
 : {.striped .hover}
 
