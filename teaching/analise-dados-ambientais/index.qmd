@@ -407,12 +407,72 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 1. Vanhove, J. (2018). Checking the Assumptions of Your Statistical Model Without Getting Paranoid. *PsyArXiv*. [doi:10.31234/osf.io/zvawb](https://doi.org/10.31234/osf.io/zvawb)
 :::
 
+#### Análise de variância (ANOVA) {.mt-4}
+
 ::: {.callout-note collapse="true" icon=false}
-## {{< fa rotate >}} ANOVA de medidas repetidas — pressupostos (2 artigos)
+## {{< fa rotate >}} Correção de esfericidade (3 artigos)
 
 1. Haverkamp, N., & Beauducel, A. (2017). Violation of the sphericity assumption and its effect on type-I error rates in repeated measures ANOVA and multi-level linear models (MLM). *Frontiers in Psychology*, 8, 1841. [doi:10.3389/fpsyg.2017.01841](https://doi.org/10.3389/fpsyg.2017.01841)
 
 2. Lane, D. (2016). The assumption of sphericity in repeated-measures designs: What it means and what to do when it is violated. *Quantitative Methods for Psychology*, 12, 114–122. [doi:10.20982/tqmp.12.2.p114](https://doi.org/10.20982/tqmp.12.2.p114)
+
+3. Bono, R., Arnau, J., Blanca, M. J., & Alarcón, R. (2016). Sphericity estimation bias for repeated measures designs in simulation studies. *Behavior Research Methods*, 48(4), 1621–1630. [doi:10.3758/s13428-015-0673-1](https://doi.org/10.3758/s13428-015-0673-1)
+:::
+
+::: {.callout-note collapse="true" icon=false}
+## {{< fa shuffle >}} Correção de normalidade com bootstrapping (3 artigos)
+
+1. Dwivedi, A. K., Mallawaarachchi, I., & Alvarado, L. A. (2017). Analysis of small sample size studies using nonparametric bootstrap test with pooled resampling method. *Statistics in Medicine*, 36(14), 2187–2205. [doi:10.1002/sim.7263](https://doi.org/10.1002/sim.7263)
+
+2. Konietschke, F., & Pauly, M. (2014). Bootstrapping and permuting paired t-test type statistics. *Statistics and Computing*, 24(3), 283–296. [doi:10.1007/s11222-012-9370-4](https://doi.org/10.1007/s11222-012-9370-4)
+
+3. Haukoos, J. S., & Lewis, R. J. (2005). Advanced statistics: Bootstrapping confidence intervals for statistics with "difficult" distributions. *Academic Emergency Medicine*, 12(4), 360–365. [doi:10.1197/j.aem.2004.11.018](https://doi.org/10.1197/j.aem.2004.11.018)
+:::
+
+::: {.callout-note collapse="true" icon=false}
+## {{< fa ruler >}} Interpretação do tamanho do efeito (6 artigos)
+
+1. Ialongo, C. (2016). Understanding the effect size and its measures. *Biochemia Medica*, 26(2), 150–163. [doi:10.11613/BM.2016.015](https://doi.org/10.11613/BM.2016.015)
+
+2. Okada, K. (2013). Is omega squared less biased? A comparison of three major effect size indices in one-way ANOVA. *Behaviormetrika*, 40(2), 129–147. [doi:10.2333/bhmk.40.129](https://doi.org/10.2333/bhmk.40.129)
+
+3. Skidmore, S. T., & Thompson, B. (2013). Bias and precision of some classical ANOVA effect sizes when assumptions are violated. *Behavior Research Methods*, 45(2), 536–546. [doi:10.3758/s13428-012-0257-2](https://doi.org/10.3758/s13428-012-0257-2)
+
+4. Lakens, D. (2013). Calculating and reporting effect sizes to facilitate cumulative science: A practical primer for t-tests and ANOVAs. *Frontiers in Psychology*, 4, 863. [doi:10.3389/fpsyg.2013.00863](https://doi.org/10.3389/fpsyg.2013.00863)
+
+5. Ferguson, C. J. (2016). An effect size primer: A guide for clinicians and researchers. In A. E. Kazdin (Ed.), *Methodological Issues and Strategies in Clinical Research* (4th ed.). American Psychological Association. [doi:10.1037/14805-020](https://doi.org/10.1037/14805-020)
+
+6. Fritz, C. O., Morris, P. E., & Richler, J. J. (2012). Effect size estimates: Current use, calculations, and interpretation. *Journal of Experimental Psychology: General*, 141(1), 2–18. [doi:10.1037/a0024338](https://doi.org/10.1037/a0024338)
+:::
+
+::: {.callout-note collapse="true" icon=false}
+## {{< fa layer-group >}} Testes post-hoc (3 artigos)
+
+1. Homack, S. R. (2001). Understanding What ANOVA Post Hoc Tests Are, Really. *ERIC Document*, ED449222. [eric.ed.gov/?id=ED449222](https://eric.ed.gov/?id=ED449222)
+
+2. Hilton, A., & Armstrong, R. A. (2006). Statnote 6: Post-hoc ANOVA tests. *Microbiologist*, 2006, 34–36. [PDF](https://publications.aston.ac.uk/id/eprint/39919/1/Statnote_6.pdf)
+
+3. McHugh, M. L. (2011). Multiple comparison analysis testing in ANOVA. *Biochemia Medica*, 21(3), 203–209. [doi:10.11613/BM.2011.029](https://doi.org/10.11613/BM.2011.029)
+:::
+
+::: {.callout-note collapse="true" icon=false}
+## {{< fa equals >}} Correção de homogeneidade de variâncias (3 artigos)
+
+1. Astivia, O. L. O., & Zumbo, B. D. (2019). Heteroskedasticity in Multiple Regression Analysis: What it is, How to Detect it and How to Solve it with Applications in R and SPSS. *Practical Assessment, Research, and Evaluation*, 24(1). [doi:10.7275/q5xr-fr95](https://doi.org/10.7275/q5xr-fr95)
+
+2. Delacre, M., Lakens, D., & Leys, C. (2017). Why psychologists should by default use Welch's t-test instead of Student's t-test. *International Review of Social Psychology*, 30(1). [doi:10.5334/irsp.82](https://doi.org/10.5334/irsp.82)
+
+3. Derrick, B., Toher, D., & White, P. (2016). Why Welch's test is Type I error robust. *The Quantitative Methods in Psychology*, 12(1). [doi:10.20982/tqmp.12.1.p030](https://doi.org/10.20982/tqmp.12.1.p030)
+:::
+
+::: {.callout-note collapse="true" icon=false}
+## {{< fa users >}} Tamanho amostral para ANOVA (3 artigos)
+
+1. Vanbrabant, L., Van De Schoot, R., & Rosseel, Y. (2015). Constrained statistical inference: Sample-size tables for ANOVA and regression. *Frontiers in Psychology*, 5, 1565. [doi:10.3389/fpsyg.2014.01565](https://doi.org/10.3389/fpsyg.2014.01565)
+
+2. Shaw, R. G., & Mitchell-Olds, T. (1993). ANOVA for unbalanced data: An overview. *Ecology*, 74(6), 1638–1645. [doi:10.2307/1939922](https://doi.org/10.2307/1939922)
+
+3. Martin, C. G., & Games, P. A. (1977). ANOVA tests for homogeneity of variance: Nonnormality and unequal samples. *Journal of Educational Statistics*, 2(3), 187–206. [doi:10.3102/10769986002003187](https://doi.org/10.3102/10769986002003187)
 :::
 
 ::: {.callout-note collapse="true" icon=false}
