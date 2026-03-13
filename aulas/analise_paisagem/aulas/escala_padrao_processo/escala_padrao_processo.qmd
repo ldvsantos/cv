@@ -1,4 +1,4 @@
----
+﻿---
 title: "Análise da Paisagem"
 subtitle: "Aula 05  -  Escala, Padrão e Processo na Dinâmica da Paisagem<br>Curso de Geografia"
 author: "Luiz Diego Vidal Santos"
@@ -12,7 +12,9 @@ format:
     width: 1280
     height: 720
     css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
+    include-after-body:
+      - ../../../assets/image-lightbox.html
+      - ../../../assets/progress-bar.html
     transition: slide
     background-transition: fade
     preview-links: auto

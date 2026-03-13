@@ -1,4 +1,4 @@
----
+﻿---
 title: "Análise da Paisagem"
 subtitle: "Aula 19  -  Unidades de Paisagem: Delimitação e Caracterização<br>Curso de Geografia"
 author: "Luiz Diego Vidal Santos"
@@ -12,7 +12,9 @@ format:
     width: 1280
     height: 720
     css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
+    include-after-body:
+      - ../../../assets/image-lightbox.html
+      - ../../../assets/progress-bar.html
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -159,6 +161,8 @@ Não se trata de sobrepor todos os mapas. Trata-se de identificar **padrões rec
 ::: {.columns}
 ::: {.column width="50%"}
 ### Método 1: Sobreposição ponderada (overlay)
+
+![Sobreposição de camadas temáticas em SIG](img/sobreposicao_camadas.jpg){width="70%" fig-align="center"}
 
 1. Reunir mapas temáticos (relevo, uso, vegetação, processos)
 2. Sobrepor em GIS (QGIS)

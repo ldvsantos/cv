@@ -1,0 +1,43 @@
+<script>
+/* Barra de progresso superior — RevealJS
+   Trilho cinza + barra colorida que preenche conforme avança nos slides */
+(function () {
+  "use strict";
+  function initProgressBar() {
+    var track = document.createElement("div");
+    track.id = "slide-progress-track";
+    document.body.appendChild(track);
+
+    var bar = document.createElement("div");
+    bar.id = "slide-progress-bar";
+    document.body.appendChild(bar);
+
+    function updateBar() {
+      var reveal = Reveal;
+      if (!reveal || !reveal.getTotalSlides) return;
+      var total = reveal.getTotalSlides();
+      var current = reveal.getSlidePastCount() + 1;
+      var pct = total > 1 ? ((current - 1) / (total - 1)) * 100 : 0;
+      bar.style.width = pct + "%";
+    }
+
+    function bindReveal() {
+      if (typeof Reveal !== "undefined" && Reveal.isReady && Reveal.isReady()) {
+        updateBar();
+        Reveal.on("slidechanged", updateBar);
+        Reveal.on("fragmentshown", updateBar);
+        Reveal.on("fragmenthidden", updateBar);
+      } else {
+        setTimeout(bindReveal, 200);
+      }
+    }
+    bindReveal();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initProgressBar);
+  } else {
+    initProgressBar();
+  }
+})();
+</script>

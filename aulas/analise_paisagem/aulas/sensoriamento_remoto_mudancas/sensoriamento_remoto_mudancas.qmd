@@ -1,4 +1,4 @@
----
+﻿---
 title: "Análise da Paisagem"
 subtitle: "Aula 15  -  Sensoriamento Remoto Aplicado II: Mudanças e Trajetórias<br>Curso de Geografia"
 author: "Luiz Diego Vidal Santos"
@@ -12,7 +12,9 @@ format:
     width: 1280
     height: 720
     css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
+    include-after-body:
+      - ../../../assets/image-lightbox.html
+      - ../../../assets/progress-bar.html
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -46,6 +48,8 @@ Compreender os métodos de **comparação temporal** em sensoriamento remoto, in
 # [1  -  DETECÇÃO DE MUDANÇAS]{.section-header}
 
 ## A paisagem muda: como detectar? {.smaller-text}
+
+![Série temporal de desmatamento na Bolívia — imagens de satélite](img/serie_temporal_desmatamento.jpg){width="85%" fig-align="center"}
 
 ::: {.columns}
 ::: {.column width="50%"}

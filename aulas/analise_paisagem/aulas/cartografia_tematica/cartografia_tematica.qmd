@@ -1,4 +1,4 @@
----
+﻿---
 title: "Análise da Paisagem"
 subtitle: "Aula 07  -  Cartografia Temática e Leitura Integrada da Paisagem<br>Curso de Geografia"
 author: "Luiz Diego Vidal Santos"
@@ -12,7 +12,9 @@ format:
     width: 1280
     height: 720
     css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
+    include-after-body:
+      - ../../../assets/image-lightbox.html
+      - ../../../assets/progress-bar.html
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -90,6 +92,8 @@ Mapas simples com interpretação fundamentada → bom trabalho.
 
 ## Mapa hipsométrico e de declividade {.smaller-text}
 
+![Exemplo de mapa hipsométrico com gradação de cores por altitude](img/mapa_hipsometrico.jpg){width="85%" fig-align="center"}
+
 ::: {.columns}
 ::: {.column width="50%"}
 ### Mapa hipsométrico
@@ -129,6 +133,8 @@ Mapas simples com interpretação fundamentada → bom trabalho.
 ---
 
 ## Mapa de drenagem e bacias hidrográficas {.smaller-text}
+
+![Padrão de drenagem dendrítico](img/padroes_drenagem.jpg){width="70%" fig-align="center"}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -176,6 +182,8 @@ A **bacia hidrográfica** é frequentemente usada como recorte territorial para 
 ---
 
 ## Mapa de uso e cobertura da terra {.smaller-text}
+
+![Mapa temático de uso e cobertura da terra](img/mapa_uso_cobertura.jpg){width="85%" fig-align="center"}
 
 ::: {.columns}
 ::: {.column width="50%"}

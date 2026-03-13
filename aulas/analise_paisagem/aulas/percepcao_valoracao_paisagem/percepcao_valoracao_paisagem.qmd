@@ -1,18 +1,20 @@
----
-title: "AnÃ¡lise da Paisagem"
-subtitle: "PercepÃ§Ã£o, ValoraÃ§Ã£o e Paisagem Cultural<br>Curso de Geografia"
+﻿---
+title: "Análise da Paisagem"
+subtitle: "Percepção, Valoração e Paisagem Cultural<br>Curso de Geografia"
 author: "Luiz Diego Vidal Santos"
 format:
   revealjs:
     logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | AnÃ¡lise da Paisagem | PercepÃ§Ã£o e ValoraÃ§Ã£o"
+    footer: "UEFS | Análise da Paisagem | Percepção e Valoração"
     slide-number: true
     theme: [simple, ../../../assets/uefs.scss]
     controls: true
     width: 1280
     height: 720
     css: ../../../assets/custom.css
-    include-after-body: ../../../assets/image-lightbox.html
+    include-after-body:
+      - ../../../assets/image-lightbox.html
+      - ../../../assets/progress-bar.html
     transition: slide
     background-transition: fade
     preview-links: auto
@@ -20,46 +22,48 @@ execute:
   echo: false
 ---
 
-## VisÃ£o Geral da Aula {.smaller-text}
+## Visão Geral da Aula {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="50%"}
-### TÃ³picos
+### Tópicos
 
-- [1]{.circle} De quem Ã© a paisagem? PercepÃ§Ã£o e subjetividade
+- [1]{.circle} De quem é a paisagem? Percepção e subjetividade
 - [2]{.circle} Yi-Fu Tuan e a Topofilia (1974)
 - [3]{.circle} Augustin Berque: paisagem-marca e paisagem-matriz
-- [4]{.circle} Denis Cosgrove: paisagem e poder simbÃ³lico
-- [5]{.circle} Paisagem cultural na prÃ¡tica: IPHAN, UNESCO e ConvenÃ§Ã£o Europeia
-- [6]{.circle} ExercÃ­cio: leitura perceptiva da paisagem local
+- [4]{.circle} Denis Cosgrove: paisagem e poder simbólico
+- [5]{.circle} Paisagem cultural na prática: IPHAN, UNESCO e Convenção Europeia
+- [6]{.circle} Exercício: leitura perceptiva da paisagem local
 :::
 
 ::: {.column width="50%"}
 ::: {.info-box}
 **Objetivo da Aula**
 
-Compreender a **dimensÃ£o socioespacial e perceptiva** da paisagem, articulando as contribuiÃ§Ãµes de Tuan, Berque e Cosgrove com as abordagens quantitativas da ecologia da paisagem.
+Compreender a **dimensão socioespacial e perceptiva** da paisagem, articulando as contribuições de Tuan, Berque e Cosgrove com as abordagens quantitativas da ecologia da paisagem.
 :::
 :::
 :::
 
 # [1  -  PERCEPÃ‡ÃƒO E SUBJETIVIDADE]{.section-header}
 
-## Paisagem: objeto ou experiÃªncia? {.smaller-text}
+## Paisagem: objeto ou experiência? {.smaller-text}
+
+![Ponto de vista elevado sobre a paisagem — percepção e contemplação](img/perspectiva_paisagem.jpg){width="85%" fig-align="center"}
 
 ::: {.columns}
 ::: {.column width="60%"}
-A paisagem que analisamos com mÃ©tricas, SIG e sensoriamento remoto Ã© a **paisagem objetivada** â€” um mosaico de manchas, corredores e matriz quantificÃ¡vel por Ã­ndices.
+A paisagem que analisamos com métricas, SIG e sensoriamento remoto é a **paisagem objetivada** â€” um mosaico de manchas, corredores e matriz quantificável por índices.
 
-Mas a paisagem tambÃ©m Ã© **experiÃªncia vivida**:
+Mas a paisagem também é **experiência vivida**:
 
-- O agricultor que lÃª o cÃ©u e sabe onde plantar
-- O quilombola que identifica marcos territoriais invisÃ­veis ao mapa
+- O agricultor que lê o céu e sabe onde plantar
+- O quilombola que identifica marcos territoriais invisíveis ao mapa
 - O turista que busca a "paisagem bonita" sem saber defini-la
 
-> A anÃ¡lise da paisagem que ignora a **percepÃ§Ã£o** perde metade do fenÃ´meno.
+> A análise da paisagem que ignora a **percepção** perde metade do fenômeno.
 
-Essa tensÃ£o entre objetividade e subjetividade atravessa toda a histÃ³ria da Geografia da Paisagem.
+Essa tensão entre objetividade e subjetividade atravessa toda a história da Geografia da Paisagem.
 :::
 
 ::: {.column width="40%"}
@@ -73,9 +77,9 @@ digraph {
     edge [color="#555555", penwidth=1.0]
 
     P [label="PAISAGEM", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
-    O [label="Leitura Objetiva\nMÃ©tricas, mapas, Ã­ndices", fillcolor="#BBDEFB", color="#1565C0"]
-    S [label="Leitura Subjetiva\nPercepÃ§Ã£o, valores, afeto", fillcolor="#FFE0B2", color="#E65100"]
-    I [label="AnÃ¡lise Integrada\nDiagnÃ³stico + ValoraÃ§Ã£o", fillcolor="#C8E6C9", color="#2E7D32"]
+    O [label="Leitura Objetiva\nMétricas, mapas, índices", fillcolor="#BBDEFB", color="#1565C0"]
+    S [label="Leitura Subjetiva\nPercepção, valores, afeto", fillcolor="#FFE0B2", color="#E65100"]
+    I [label="Análise Integrada\nDiagnóstico + Valoração", fillcolor="#C8E6C9", color="#2E7D32"]
 
     P -> O
     P -> S
@@ -98,60 +102,60 @@ digraph {
 >
 > â€” Tuan (1974, p. 4)
 
-Tuan argumenta que a percepÃ§Ã£o ambiental Ã© mediada por:
+Tuan argumenta que a percepção ambiental é mediada por:
 
-- **Sentidos** â€” visÃ£o, olfato, tato, audiÃ§Ã£o
-- **Cultura** â€” valores, crenÃ§as, tradiÃ§Ãµes
-- **ExperiÃªncia** â€” histÃ³ria pessoal, memÃ³ria
-- **Atitude** â€” postura para com o ambiente (medo, admiraÃ§Ã£o, indiferenÃ§a)
+- **Sentidos** â€” visão, olfato, tato, audição
+- **Cultura** â€” valores, crenças, tradições
+- **Experiência** â€” história pessoal, memória
+- **Atitude** â€” postura para com o ambiente (medo, admiração, indiferença)
 
-A **mesma paisagem** pode gerar topofilia (vÃ­nculo positivo) ou **topofobia** (aversÃ£o) conforme o sujeito.
+A **mesma paisagem** pode gerar topofilia (vínculo positivo) ou **topofobia** (aversão) conforme o sujeito.
 :::
 
 ::: {.column width="40%"}
 ::: {.callout-tip}
-## ReferÃªncia
+## Referência
 **TUAN, Y.-F.** (1974). *Topophilia: A Study of Environmental Perception, Attitudes, and Values*. Englewood Cliffs: Prentice-Hall.
 
-EdiÃ§Ã£o brasileira: *Topofilia*. SÃ£o Paulo: Difel, 1980.
+Edição brasileira: *Topofilia*. São Paulo: Difel, 1980.
 :::
 :::
 :::
 
-## ImplicaÃ§Ãµes para a AnÃ¡lise da Paisagem {.smaller-text}
+## Implicações para a Análise da Paisagem {.smaller-text}
 
-| DimensÃ£o de Tuan | ImplicaÃ§Ã£o prÃ¡tica |
+| Dimensão de Tuan | Implicação prática |
 |:------------------|:-------------------|
-| **PercepÃ§Ã£o sensorial** | InventÃ¡rios de campo devem registrar sons, cheiros, texturas â€” nÃ£o apenas coordenadas |
-| **Valores culturais** | Comunidades atribuem significados a feiÃ§Ãµes que o mapa nÃ£o revela (sÃ­tios sagrados, marcos) |
-| **MemÃ³ria e identidade** | Paisagens histÃ³ricas tÃªm valor mesmo quando "degradadas" por critÃ©rios ecolÃ³gicos |
-| **Topofobia** | Ãreas de risco (encostas instÃ¡veis, Ã¡reas inundÃ¡veis) geram rejeiÃ§Ã£o que condiciona o uso |
+| **Percepção sensorial** | Inventários de campo devem registrar sons, cheiros, texturas â€” não apenas coordenadas |
+| **Valores culturais** | Comunidades atribuem significados a feições que o mapa não revela (sítios sagrados, marcos) |
+| **Memória e identidade** | Paisagens históricas têm valor mesmo quando "degradadas" por critérios ecológicos |
+| **Topofobia** | Áreas de risco (encostas instáveis, áreas inundáveis) geram rejeição que condiciona o uso |
 
-: Como a topofilia de Tuan amplia o diagnÃ³stico da paisagem. {.striped .hover}
+: Como a topofilia de Tuan amplia o diagnóstico da paisagem. {.striped .hover}
 
 ::: {.callout-note}
-## Para a prÃ¡tica
-No trabalho de campo, pergunte aos moradores: *"O que vocÃª mais gosta nesta paisagem? O que mais teme?"* â€” essas respostas revelam valores que mapas e mÃ©tricas nÃ£o captam.
+## Para a prática
+No trabalho de campo, pergunte aos moradores: *"O que você mais gosta nesta paisagem? O que mais teme?"* â€” essas respostas revelam valores que mapas e métricas não captam.
 :::
 
 # [3  -  AUGUSTIN BERQUE: PAISAGEM-MARCA E PAISAGEM-MATRIZ]{.section-header}
 
-## A contribuiÃ§Ã£o de Berque {.smaller-text}
+## A contribuição de Berque {.smaller-text}
 
 ::: {.columns}
 ::: {.column width="55%"}
-**Augustin Berque** (1984) propÃ´s uma dupla leitura da paisagem:
+**Augustin Berque** (1984) propôs uma dupla leitura da paisagem:
 
-- **Paisagem-marca** (*paysage-empreinte*): a paisagem como **registro** da aÃ§Ã£o humana sobre o territÃ³rio â€” cicatrizes de desmatamento, terraÃ§os agrÃ­colas, padrÃµes urbanos
+- **Paisagem-marca** (*paysage-empreinte*): a paisagem como **registro** da ação humana sobre o território â€” cicatrizes de desmatamento, terraços agrícolas, padrões urbanos
 
-- **Paisagem-matriz** (*paysage-matrice*): a paisagem como **condicionante** da aÃ§Ã£o futura â€” o relevo que impÃµe limites, o clima que define possibilidades, a forma urbana que orienta comportamentos
+- **Paisagem-matriz** (*paysage-matrice*): a paisagem como **condicionante** da ação futura â€” o relevo que impõe limites, o clima que define possibilidades, a forma urbana que orienta comportamentos
 
-> A paisagem Ã© ao mesmo tempo **produto** e **produtora** de relaÃ§Ãµes sociais.
+> A paisagem é ao mesmo tempo **produto** e **produtora** de relações sociais.
 
-Essa formulaÃ§Ã£o conecta:
+Essa formulação conecta:
 
-- Ecologia â†’ paisagem como suporte biofÃ­sico (matriz)
-- Geografia cultural â†’ paisagem como expressÃ£o social (marca)
+- Ecologia â†’ paisagem como suporte biofísico (matriz)
+- Geografia cultural â†’ paisagem como expressão social (marca)
 :::
 
 ::: {.column width="45%"}
@@ -173,8 +177,8 @@ digraph {
 ```
 
 ::: {.callout-tip}
-## ReferÃªncia
-**BERQUE, A.** (1984). Paysage-empreinte, paysage-matrice. *L'Espace GÃ©ographique*, 13(1), 33â€“34.
+## Referência
+**BERQUE, A.** (1984). Paysage-empreinte, paysage-matrice. *L'Espace Géographique*, 13(1), 33â€“34.
 :::
 :::
 :::
@@ -185,11 +189,11 @@ digraph {
 
 ::: {.columns}
 ::: {.column width="55%"}
-**Denis Cosgrove** (1984) argumentou que a paisagem Ã© uma **forma de ver** (*way of seeing*) historicamente construÃ­da:
+**Denis Cosgrove** (1984) argumentou que a paisagem é uma **forma de ver** (*way of seeing*) historicamente construída:
 
-- A paisagem foi inventada como conceito estÃ©tico pela **aristocracia mercantil** do Renascimento italiano (sÃ©c. XVâ€“XVI)
-- Ver a paisagem pressupÃµe um **observador externo** com posiÃ§Ã£o privilegiada â€” o olhar do proprietÃ¡rio, do viajante, do cartÃ³grafo
-- Mapas e representaÃ§Ãµes paisagÃ­sticas sÃ£o **instrumentos de poder**: quem mapeia, controla
+- A paisagem foi inventada como conceito estético pela **aristocracia mercantil** do Renascimento italiano (séc. XVâ€“XVI)
+- Ver a paisagem pressupõe um **observador externo** com posição privilegiada â€” o olhar do proprietário, do viajante, do cartógrafo
+- Mapas e representações paisagísticas são **instrumentos de poder**: quem mapeia, controla
 
 > *"Landscape is a way of seeing that has its own history, but a history that can be understood only as part of a wider history of economy and society."*
 >
@@ -198,32 +202,34 @@ digraph {
 
 ::: {.column width="45%"}
 ::: {.callout-important}
-## ReflexÃ£o para a disciplina
-Quando fazemos um mapa de uso do solo, **escolhemos** o que representar e o que omitir. Essa escolha nÃ£o Ã© neutra:
+## Reflexão para a disciplina
+Quando fazemos um mapa de uso do solo, **escolhemos** o que representar e o que omitir. Essa escolha não é neutra:
 
-- Mapeamos "vegetaÃ§Ã£o nativa" e "pastagem" â€” categorias da ecologia
-- NÃ£o mapeamos "terra do avÃ´" ou "caminho da festa" â€” categorias da comunidade
+- Mapeamos "vegetação nativa" e "pastagem" â€” categorias da ecologia
+- Não mapeamos "terra do avô" ou "caminho da festa" â€” categorias da comunidade
 
-A anÃ¡lise da paisagem ganha robustez quando reconhece seus **limites representacionais**.
+A análise da paisagem ganha robustez quando reconhece seus **limites representacionais**.
 :::
 :::
 :::
 
 ## Paisagem Cultural: marcos institucionais {.smaller-text}
 
-| Instrumento | Ano | DefiniÃ§Ã£o de paisagem cultural |
+![Paisagem cultural — patrimônio e identidade](img/paisagem_cultural.jpg){width="85%" fig-align="center"}
+
+| Instrumento | Ano | Definição de paisagem cultural |
 |:------------|:---:|:-------------------------------|
-| **IPHAN** (Chancela da Paisagem Cultural) | 2009 | "PorÃ§Ã£o peculiar do territÃ³rio nacional, representativa do processo de interaÃ§Ã£o do homem com o meio natural" |
-| **UNESCO** (PatrimÃ´nio Mundial) | 1992 | "Combined works of nature and humankind that express a long and intimate relationship between peoples and their natural environment" |
-| **ConvenÃ§Ã£o Europeia da Paisagem** | 2000 | "An area, as perceived by people, whose character is the result of the action and interaction of natural and/or human factors" |
+| **IPHAN** (Chancela da Paisagem Cultural) | 2009 | "Porção peculiar do território nacional, representativa do processo de interação do homem com o meio natural" |
+| **UNESCO** (Patrimônio Mundial) | 1992 | "Combined works of nature and humankind that express a long and intimate relationship between peoples and their natural environment" |
+| **Convenção Europeia da Paisagem** | 2000 | "An area, as perceived by people, whose character is the result of the action and interaction of natural and/or human factors" |
 
 : Marcos institucionais da paisagem cultural. {.striped .hover}
 
 ::: {.callout-note}
-No Brasil, a primeira paisagem cultural chancelada pelo IPHAN foi o **conjunto de feiras livres** do Vale do JiquiriÃ§Ã¡ (BA) â€” paisagem cultural baiana!
+No Brasil, a primeira paisagem cultural chancelada pelo IPHAN foi o **conjunto de feiras livres** do Vale do Jiquiriçá (BA) â€” paisagem cultural baiana!
 :::
 
-# [5  -  EXERCÃCIO PRÃTICO]{.section-header}
+# [5  -  EXERCÍCIO PRÁTICO]{.section-header}
 
 ## Leitura Perceptiva da Paisagem Local {.smaller-text}
 
@@ -231,49 +237,49 @@ No Brasil, a primeira paisagem cultural chancelada pelo IPHAN foi o **conjunto d
 ::: {.column width="50%"}
 ### Roteiro
 
-1. **Escolha um ponto de observaÃ§Ã£o** na sua Ã¡rea de estudo (mirante, topo de elevaÃ§Ã£o, margem de rio)
-2. **Registre** (foto panorÃ¢mica + anotaÃ§Ãµes):
-   - O que a visÃ£o alcanÃ§a? Quais feiÃ§Ãµes dominam?
+1. **Escolha um ponto de observação** na sua área de estudo (mirante, topo de elevação, margem de rio)
+2. **Registre** (foto panorâmica + anotações):
+   - O que a visão alcança? Quais feições dominam?
    - Que sons, cheiros e texturas caracterizam o lugar?
-   - Que sinais de aÃ§Ã£o humana sÃ£o visÃ­veis? (marca)
-   - Que condicionantes naturais sÃ£o evidentes? (matriz)
+   - Que sinais de ação humana são visíveis? (marca)
+   - Que condicionantes naturais são evidentes? (matriz)
 3. **Entreviste** ao menos 2 moradores:
    - O que mais gosta nessa paisagem?
-   - O que mudou nos Ãºltimos 20 anos?
+   - O que mudou nos últimos 20 anos?
    - O que gostaria que fosse diferente?
 :::
 
 ::: {.column width="50%"}
 ### Produto esperado
 
-| Componente | MÃ©todo |
+| Componente | Método |
 |:-----------|:-------|
-| DescriÃ§Ã£o visual | Fotopanorama + croqui anotado |
-| PercepÃ§Ã£o local | Trechos de entrevista organizados por tema |
+| Descrição visual | Fotopanorama + croqui anotado |
+| Percepção local | Trechos de entrevista organizados por tema |
 | Valores | Tabela: topofilia Ã— topofobia |
-| Marcas | Lista de feiÃ§Ãµes antrÃ³picas identificÃ¡veis |
+| Marcas | Lista de feições antrópicas identificáveis |
 | Matrizes | Lista de condicionantes naturais |
-| SÃ­ntese | ParÃ¡grafo integrando leitura objetiva e subjetiva |
+| Síntese | Parágrafo integrando leitura objetiva e subjetiva |
 
 : Componentes da leitura perceptiva. {.striped .hover}
 :::
 :::
 
-# [6  -  SÃNTESE]{.section-header}
+# [6  -  SÍNTESE]{.section-header}
 
-## ConexÃ£o com a Disciplina {.smaller-text}
+## Conexão com a Disciplina {.smaller-text}
 
 | Autor / Conceito | Aulas conectadas |
 |:------------------|:-----------------|
-| Tuan â€” Topofilia | â†’ Trabalho de Campo (Aula 25), DiagnÃ³stico Integrado (Aula 20) |
+| Tuan â€” Topofilia | â†’ Trabalho de Campo (Aula 25), Diagnóstico Integrado (Aula 20) |
 | Berque â€” Marca/Matriz | â†’ Geossistema (Aula 03), Planejamento Territorial (Aula 21) |
-| Cosgrove â€” Paisagem e poder | â†’ Matriz de EvidÃªncias (Aula 10), Zoneamentos (Aula 22) |
-| Paisagem cultural (IPHAN) | â†’ LegislaÃ§Ã£o Ambiental e PaisagÃ­stica |
+| Cosgrove â€” Paisagem e poder | â†’ Matriz de Evidências (Aula 10), Zoneamentos (Aula 22) |
+| Paisagem cultural (IPHAN) | â†’ Legislação Ambiental e Paisagística |
 
 ## Leituras Recomendadas
 
 - **TUAN, Y.-F.** (1974). *Topophilia*. Englewood Cliffs: Prentice-Hall.
-- **BERQUE, A.** (1984). Paysage-empreinte, paysage-matrice. *L'Espace GÃ©ographique*, 13(1), 33â€“34.
+- **BERQUE, A.** (1984). Paysage-empreinte, paysage-matrice. *L'Espace Géographique*, 13(1), 33â€“34.
 - **COSGROVE, D.** (1984). *Social Formation and Symbolic Landscape*. London: Croom Helm.
-- **IPHAN.** (2009). Portaria nÂº 127: Chancela da Paisagem Cultural Brasileira.
-- **ConvenÃ§Ã£o Europeia da Paisagem.** (2000). FlorenÃ§a: Conselho da Europa.
+- **IPHAN.** (2009). Portaria nº 127: Chancela da Paisagem Cultural Brasileira.
+- **Convenção Europeia da Paisagem.** (2000). Florença: Conselho da Europa.

@@ -22,3 +22,6 @@ format:
     scrollable: true
     logo: ../../assets/logo-uefs.webp
     footer: "UEFS — Análise da Paisagem"
+    include-after-body:
+      - ../../assets/image-lightbox.html
+      - ../../assets/progress-bar.html
