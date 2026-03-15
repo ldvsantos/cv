@@ -1,0 +1,187 @@
+{
+  "ecologia_paisagem": [
+    {
+      "filename": "matriz_mancha_corredor.jpg",
+      "alt": "Modelo matriz-mancha-corredor em paisagem real",
+      "exists": false
+    },
+    {
+      "filename": "fragmentacao_florestal.jpg",
+      "alt": "Fragmentação florestal vista aérea",
+      "exists": false
+    },
+    {
+      "filename": "corredor_ecologico.jpg",
+      "alt": "Corredor ecológico — mata ciliar conectando fragmentos",
+      "exists": false
+    },
+    {
+      "filename": "efeito_borda.jpg",
+      "alt": "Efeito de borda em fragmento florestal",
+      "exists": false
+    }
+  ],
+  "cartografia_tematica": [
+    {
+      "filename": "mapa_hipsometrico.jpg",
+      "alt": "Exemplo de mapa hipsométrico com gradação de cores",
+      "exists": false
+    },
+    {
+      "filename": "padroes_drenagem.jpg",
+      "alt": "Padrões de drenagem: dendrítico, treliça, radial",
+      "exists": false
+    },
+    {
+      "filename": "mapa_uso_cobertura.jpg",
+      "alt": "Mapa temático de uso e cobertura da terra",
+      "exists": true
+    },
+    {
+      "filename": "bacia_hidrografica.jpg",
+      "alt": "Bacia hidrográfica com divisores de água",
+      "exists": true
+    }
+  ],
+  "interpretacao_visual": [
+    {
+      "filename": "imagem_satelite_cores.jpg",
+      "alt": "Imagem de satélite com diferentes tonalidades",
+      "exists": false
+    },
+    {
+      "filename": "textura_superficies.jpg",
+      "alt": "Diferentes texturas em imagem de satélite",
+      "exists": false
+    },
+    {
+      "filename": "padroes_espaciais.jpg",
+      "alt": "Padrões espaciais: reticular (urbano) e dendrítico (drenagem)",
+      "exists": false
+    }
+  ],
+  "sensoriamento_remoto_fundamentos": [
+    {
+      "filename": "espectro_eletromagnetico.jpg",
+      "alt": "Espectro eletromagnético — regiões óptica, infravermelha e micro-ondas",
+      "exists": true
+    },
+    {
+      "filename": "sentinel2_bandas.jpg",
+      "alt": "Bandas espectrais do Sentinel-2",
+      "exists": true
+    },
+    {
+      "filename": "composicao_colorida.jpg",
+      "alt": "Composição colorida: cor verdadeira vs. falsa cor",
+      "exists": false
+    },
+    {
+      "filename": "ndvi_exemplo.jpg",
+      "alt": "Índice NDVI — vegetação em gradiente verde-vermelho",
+      "exists": true
+    }
+  ],
+  "dominios_paisagens_tropicais": [
+    {
+      "filename": "dominios_morfoclimaticos.jpg",
+      "alt": "Mapa dos domínios morfoclimáticos do Brasil",
+      "exists": false
+    },
+    {
+      "filename": "cerrado_vegetacao.jpg",
+      "alt": "Vegetação típica do Cerrado",
+      "exists": false
+    },
+    {
+      "filename": "caatinga_vegetacao.jpg",
+      "alt": "Vegetação da Caatinga no semiárido nordestino",
+      "exists": false
+    },
+    {
+      "filename": "floresta_amazonica.jpg",
+      "alt": "Floresta Amazônica — dossel contínuo tropical",
+      "exists": false
+    },
+    {
+      "filename": "mata_atlantica.jpg",
+      "alt": "Remanescente de Mata Atlântica",
+      "exists": true
+    }
+  ],
+  "fluxos_fragmentacao_resiliencia": [
+    {
+      "filename": "estagios_fragmentacao.jpg",
+      "alt": "Estágios da fragmentação (Forman): perfuração, dissecção, fragmentação",
+      "exists": false
+    },
+    {
+      "filename": "conectividade_habitat.jpg",
+      "alt": "Conectividade entre habitats via corredores",
+      "exists": true
+    },
+    {
+      "filename": "paisagem_resiliente.jpg",
+      "alt": "Paisagem resiliente: heterogênea e conectada",
+      "exists": false
+    }
+  ],
+  "sensoriamento_remoto_mudancas": [
+    {
+      "filename": "serie_temporal_desmatamento.jpg",
+      "alt": "Série temporal de desmatamento em imagens de satélite",
+      "exists": false
+    },
+    {
+      "filename": "ndvi_mudanca.jpg",
+      "alt": "Mapa de diferença de NDVI — ganho e perda de vegetação",
+      "exists": false
+    },
+    {
+      "filename": "deteccao_mudancas.jpg",
+      "alt": "Detecção de mudanças em cobertura da terra",
+      "exists": true
+    }
+  ],
+  "sensoriamento_remoto_avancado": [
+    {
+      "filename": "lidar_modelo_dossel.jpg",
+      "alt": "LiDAR — modelo de altura do dossel (CHM)",
+      "exists": false
+    },
+    {
+      "filename": "sar_radar.jpg",
+      "alt": "Imagem SAR mostrando áreas inundáveis",
+      "exists": false
+    },
+    {
+      "filename": "drone_rpa.jpg",
+      "alt": "RPA (drone) em operação de mapeamento",
+      "exists": false
+    }
+  ],
+  "unidades_paisagem": [
+    {
+      "filename": "mapa_unidades_paisagem.jpg",
+      "alt": "Mapa de unidades de paisagem delimitadas",
+      "exists": false
+    },
+    {
+      "filename": "sobreposicao_camadas.jpg",
+      "alt": "Sobreposição de camadas temáticas em SIG",
+      "exists": false
+    }
+  ],
+  "percepcao_valoracao_paisagem": [
+    {
+      "filename": "perspectiva_paisagem.jpg",
+      "alt": "Ponto de vista elevado sobre a paisagem",
+      "exists": false
+    },
+    {
+      "filename": "paisagem_cultural.jpg",
+      "alt": "Paisagem cultural — patrimônio e identidade",
+      "exists": true
+    }
+  ]
+}
