@@ -1,0 +1,231 @@
+---
+title: ""
+format:
+  pdf:
+    documentclass: article
+    papersize: a4
+    lang: pt-BR
+    geometry:
+      - top=2.5cm
+      - bottom=2.5cm
+      - left=2.5cm
+      - right=2.5cm
+    fontsize: 11pt
+    colorlinks: true
+    linkcolor: NavyBlue
+    urlcolor: NavyBlue
+    toc: false
+    number-sections: false
+    keep-tex: false
+    include-in-header:
+      text: |
+        \usepackage{graphicx}
+        \usepackage{fancyhdr}
+        \usepackage{enumitem}
+        \usepackage{longtable}
+        \usepackage{booktabs}
+        \usepackage{array}
+        \usepackage{xcolor}
+        \usepackage{titlesec}
+        \usepackage{lastpage}
+        \definecolor{uefsblue}{RGB}{0,51,102}
+        \definecolor{uefsgray}{RGB}{100,100,100}
+        \titleformat{\section}{\normalfont\large\bfseries\color{uefsblue}}{}{0em}{}[\vspace{-0.3em}\color{uefsblue}\rule{\textwidth}{0.4pt}]
+        \titleformat{\subsection}{\normalfont\normalsize\bfseries\color{uefsblue}}{}{0em}{}
+        \titlespacing*{\section}{0pt}{1.2em}{0.6em}
+        \titlespacing*{\subsection}{0pt}{0.8em}{0.3em}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \renewcommand{\headrulewidth}{0.4pt}
+        \renewcommand{\footrulewidth}{0.4pt}
+        \fancyhead[L]{\small\color{uefsgray}UEFS · Extensão Rural · 2026.1}
+        \fancyhead[R]{\small\color{uefsgray}Prof.\ Luiz Diego Vidal Santos}
+        \fancyfoot[C]{\small\color{uefsgray}Página \thepage\ de \pageref{LastPage}}
+        \fancypagestyle{plain}{\pagestyle{fancy}}
+        \setlist{nosep, leftmargin=1.5em}
+---
+
+\begin{center}
+\begin{minipage}{0.14\textwidth}
+\includegraphics[width=\linewidth]{../../aulas/assets/logo-uefs.png}
+\end{minipage}\hfill
+\begin{minipage}{0.82\textwidth}
+\begin{center}
+{\large\textbf{UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA}} \\[2pt]
+{\normalsize Departamento de Tecnologia (DTEC)} \\[2pt]
+{\normalsize Curso de Engenharia Agronômica} \\[6pt]
+{\large\textbf{PLANO DE DISCIPLINA}} \\[2pt]
+{\normalsize\textit{Período Letivo 2026.1}}
+\end{center}
+\end{minipage}
+\end{center}
+
+\vspace{0.4cm}
+\noindent\rule{\textwidth}{1.2pt}
+\vspace{0.2cm}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|p{4cm}|p{11.5cm}|}
+\hline
+\textbf{Componente Curricular} & Extensão Rural \\
+\hline
+\textbf{Carga Horária} & 12 encontros \\
+\hline
+\textbf{Horário} & A definir \\
+\hline
+\textbf{Período} & 2026.1 \\
+\hline
+\textbf{Modalidade} & Presencial \\
+\hline
+\textbf{Docente} & Prof.\ Dr.\ Luiz Diego Vidal Santos \\
+\hline
+\textbf{Contato} & \href{mailto:ldvsantos@uefs.br}{ldvsantos@uefs.br} · \href{https://orcid.org/0000-0001-8659-8557}{ORCID: 0000-0001-8659-8557} \\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace{0.3cm}
+
+# Ementa
+
+Fundamentos teórico-conceituais e históricos da extensão rural; objetos de mediação (conhecimento cotidiano, ciência, técnica e tecnologia social); teoria pedagógica e extensão rural (concepção tradicional, nova, tecnicista e crítico-social); institucionalização da ER no Brasil (difusionismo, FSR, participativo, agroecológico); PNATER e ATER digital; comunicação rural e metodologias participativas (DRP, andragogia); ATER pública e privada; estudos de caso; agroecologia e transição agroecológica; segurança alimentar, certificação e indicações geográficas; elaboração de projetos de extensão rural; produção de material didático e de divulgação; avaliação participativa de impacto.
+
+# Objetivo Geral
+
+Capacitar o(a) discente a compreender os fundamentos teóricos, históricos e metodológicos da extensão rural, desenvolvendo competências para planejar, executar e avaliar ações de assistência técnica e extensão rural (ATER) em diferentes contextos socioambientais e produtivos, com ênfase em comunicação dialógica, metodologias participativas e agroecologia.
+
+# Objetivos Específicos
+
+1. Analisar a evolução histórica da extensão rural no Brasil, identificando os principais paradigmas (difusionismo, FSR, participativo e agroecológico).
+2. Compreender os objetos de mediação da extensão rural: conhecimento cotidiano, ciência, técnica e tecnologia social.
+3. Discutir as teorias pedagógicas aplicadas à extensão rural e suas implicações metodológicas.
+4. Aplicar ferramentas de comunicação rural e metodologias participativas (DRP, andragogia) em diagnósticos e planejamentos.
+5. Analisar os modelos institucionais de ATER pública e privada e os marcos legais (PNATER).
+6. Compreender os princípios da agroecologia, da transição agroecológica e da segurança alimentar no contexto extensionista.
+7. Elaborar projetos de extensão rural, materiais didáticos e instrumentos de avaliação participativa de impacto.
+
+# Habilidades e Competências
+
+Ao final da disciplina, o(a) discente deverá estar apto(a) a diagnosticar demandas de comunidades rurais utilizando ferramentas participativas, planejar e conduzir ações de extensão rural com abordagem dialógica e contextualizada, elaborar projetos de ATER com marco lógico, orçamento e indicadores de impacto, produzir materiais didáticos e de divulgação para públicos rurais diversos, avaliar criticamente políticas públicas de extensão rural e propor melhorias, e articular saberes técnicos e tradicionais na promoção do desenvolvimento rural sustentável.
+
+# Metodologia
+
+A disciplina será desenvolvida ao longo de 12 encontros semanais. As atividades combinarão exposição dialogada, leitura e discussão de textos, análise de casos práticos, dinâmicas de grupo, simulações de DRP (Diagnóstico Rural Participativo) e produção de materiais didáticos.
+
+Serão utilizados textos acadêmicos, documentos de políticas públicas (PNATER), relatos de experiências extensionistas e materiais audiovisuais. A disciplina enfatiza a práxis extensionista, articulando teoria e prática por meio de metodologias ativas e participativas, coerentes com os princípios pedagógicos freireanos.
+
+# Formas de Avaliação
+
+- **1ª Avaliação (Teórica — Individual):** prova presencial com questões objetivas e discursivas, abrangendo fundamentos históricos, conceituais e pedagógicos da extensão rural.
+- **2ª Avaliação (Prática — Em grupo):** exercício de DRP simulado: diagnóstico participativo, sistematização e apresentação de resultados.
+- **3ª Avaliação (Projeto — Individual ou em grupo):** elaboração de projeto de extensão rural completo (diagnóstico, marco lógico, ações, orçamento, indicadores de impacto).
+- **4ª Avaliação (Produção — Individual):** produção de material didático ou de divulgação para ATER (cartilha, folder, vídeo ou mídia digital).
+
+Cada avaliação terá valor máximo de 10,0 pontos e a média final será calculada pela média aritmética simples.
+
+# Conteúdo Programático
+
+\vspace{0.3cm}
+
+\renewcommand{\arraystretch}{1.25}
+\begin{longtable}{|c|c|p{10.5cm}|}
+\hline
+\textbf{Sem.} & \textbf{Aula} & \textbf{Assuntos Previstos} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Sem.} & \textbf{Aula} & \textbf{Assuntos Previstos} \\
+\hline
+\endhead
+1ª & 01 & Políticas de Extensão Rural: PNATER, princípios, diretrizes, andragogia. \\
+\hline
+2ª & 02 & ATER Digital e Difusão Tecnológica: inovação, tecnologias de comunicação. \\
+\hline
+3ª & 03 & Comunicação Rural e Metodologias Participativas: DRP, construção do conhecimento. \\
+\hline
+4ª & 04 & ATER Pública e Privada: modelos institucionais, experiências, desafios. \\
+\hline
+5ª & 05 & Casos Práticos de Extensão Rural: experiências brasileiras, lições aprendidas. \\
+\hline
+6ª & 06 & Avaliação Participativa de Impacto: indicadores, monitoramento, cisternas. \\
+\hline
+7ª & 07 & Objetos de Mediação: conhecimento cotidiano, ciência, técnica, tecnologia social. \\
+\hline
+8ª & 08 & Teoria Pedagógica e Extensão: concepção tradicional, nova, tecnicista, crítico-social. \\
+\hline
+9ª & 09 & Agroecologia e Transição Agroecológica: princípios, marcos legais, PNAPO. \\
+\hline
+10ª & 10 & Segurança Alimentar e Certificação: SAN, soberania, SPG, indicações geográficas. \\
+\hline
+11ª & 11 & Elaboração de Projetos de Extensão Rural: diagnóstico, marco lógico, defesa. \\
+\hline
+12ª & 12 & Produção de Material Didático: cartilhas, vídeos, mídias digitais para ATER. \\
+\hline
+\end{longtable}
+
+\vspace{0.2cm}
+\noindent\textit{Disciplina com ênfase em metodologias participativas, comunicação dialógica, agroecologia e implementação de projetos de extensão rural.}
+
+# Programa do Componente Curricular
+
+O componente curricular será desenvolvido em 12 encontros. O programa articula fundamentos históricos e conceituais da extensão rural com práticas participativas, elaboração de projetos e produção de materiais para ATER.
+
+1. **Políticas de Extensão Rural no Brasil (aula 01)** — Histórico da extensão rural no Brasil: da ACAR à PNATER. Princípios, diretrizes e público prioritário; andragogia e educação de adultos.
+
+2. **ATER Digital e Difusão Tecnológica (aula 02)** — Inovação e difusão de tecnologias no meio rural; inclusão digital. Plataformas digitais, aplicativos móveis e novas mídias para ATER.
+
+3. **Comunicação Rural e Metodologias Participativas (aula 03)** — Da extensão à comunicação dialógica: contribuições de Paulo Freire. DRP: ferramentas, etapas e aplicações.
+
+4. **ATER Pública e Privada (aula 04)** — Modelos institucionais: Emater, cooperativas, ONGs, consultorias. Experiências comparadas, desafios e complementaridades.
+
+5. **Casos Práticos de Extensão Rural (aula 05)** — Experiências brasileiras de ATER: análise crítica, lições aprendidas e fatores de sucesso.
+
+6. **Avaliação Participativa de Impacto (aula 06)** — Indicadores de impacto em ATER; monitoramento e avaliação participativa. Avaliação de tecnologias sociais: cisternas, quintais produtivos, hortas comunitárias.
+
+7. **Objetos de Mediação na Extensão Rural (aula 07)** — Conhecimento cotidiano, ciência, técnica e tecnologia social. Tensões entre saberes: diálogo de saberes e coprodução de conhecimento.
+
+8. **Teoria Pedagógica e Extensão Rural (aula 08)** — Concepção tradicional (bancária), nova (escola nova), tecnicista e crítico-social. Implicações pedagógicas para a prática extensionista.
+
+9. **Agroecologia e Transição Agroecológica (aula 09)** — Princípios ecológicos e sociais da agroecologia; marcos legais (PNAPO/PLANAPO). Papel do extensionista na transição agroecológica.
+
+10. **Segurança Alimentar e Certificação (aula 10)** — SAN e soberania alimentar. SPG, OCS e indicações geográficas.
+
+11. **Elaboração de Projetos de Extensão Rural (aula 11)** — Diagnóstico participativo, marco lógico, ações, cronograma, orçamento. Defesa e avaliação de projetos.
+
+12. **Produção de Material Didático e de Divulgação (aula 12)** — Cartilhas, folders, vídeos e mídias digitais para ATER. Linguagem acessível, design e adequação ao público-alvo.
+
+# Significado do Componente para a Formação Profissional
+
+O componente curricular Extensão Rural é estruturante na formação do(a) engenheiro(a) agrônomo(a), por articular conhecimentos técnicos com habilidades de comunicação, mediação e planejamento voltados ao desenvolvimento rural sustentável. A extensão rural é o elo entre a pesquisa agropecuária e a realidade do campo, e o profissional que domina seus fundamentos está preparado para atuar como agente de transformação social, promovendo a adoção de tecnologias apropriadas, a valorização dos saberes locais e a construção coletiva de soluções.
+
+# Referências
+
+## Básica
+
+\begin{itemize}[leftmargin=1.5em]
+\item FREIRE, Paulo. \textbf{Extensão ou comunicação?} 18.~ed. Rio de Janeiro: Paz e Terra, 2017.
+\item BRASIL. \textbf{Política Nacional de Assistência Técnica e Extensão Rural (PNATER)}. Brasília: MDA, 2010.
+\item CAPORAL, Francisco Roberto; COSTABEBER, José Antônio. \textbf{Agroecologia e extensão rural: contribuições para a promoção do desenvolvimento rural sustentável}. Porto Alegre: EMATER/RS, 2004.
+\item FONSECA, Maria Teresa Lousa da. \textbf{A extensão rural no Brasil: um projeto educativo para o capital}. São Paulo: Loyola, 1985.
+\item CALLOU, Angelo Brás Fernandes et al. Extensão rural: estado da arte e novos desafios. \textbf{Extensão Rural}, v.~15, n.~16, p.~5--32, 2008.
+\end{itemize}
+
+## Complementar
+
+\begin{itemize}[leftmargin=1.5em]
+\item ALVES, Rubem. \textbf{Filosofia da ciência: introdução ao jogo e a suas regras}. São Paulo: Loyola, 2000.
+\item KUMMER, Lydia. \textbf{Metodologia participativa no meio rural: uma visão interdisciplinar}. Salvador: GTNM-GTZ, 2007.
+\item OLIVEIRA, Mauro Márcio. As circunstâncias da criação da extensão rural no Brasil. \textbf{Cadernos de Ciência \& Tecnologia}, v.~16, n.~2, p.~97--134, 1999.
+\item CHAMBERS, Robert. \textbf{Rural development: putting the last first}. London: Longman, 1983.
+\item GONÇALVES, Lúcio Carlos. \textbf{Extensão rural e conexões}. Lavras: UFLA, 2020.
+\end{itemize}
+
+\vfill
+
+\begin{center}
+\noindent\rule{6cm}{0.4pt} \\[6pt]
+\textbf{Prof.\ Dr.\ Luiz Diego Vidal Santos} \\
+Docente Responsável \\[4pt]
+\small Feira de Santana --- BA, 2026.
+\end{center}

@@ -1,0 +1,277 @@
+---
+title: ""
+format:
+  pdf:
+    documentclass: article
+    papersize: a4
+    lang: pt-BR
+    geometry:
+      - top=2.5cm
+      - bottom=2.5cm
+      - left=2.5cm
+      - right=2.5cm
+    fontsize: 11pt
+    colorlinks: true
+    linkcolor: NavyBlue
+    urlcolor: NavyBlue
+    toc: false
+    number-sections: false
+    keep-tex: false
+    include-in-header:
+      text: |
+        \usepackage{graphicx}
+        \usepackage{fancyhdr}
+        \usepackage{enumitem}
+        \usepackage{longtable}
+        \usepackage{booktabs}
+        \usepackage{array}
+        \usepackage{xcolor}
+        \usepackage{titlesec}
+        \usepackage{lastpage}
+        \definecolor{uefsblue}{RGB}{0,51,102}
+        \definecolor{uefsgray}{RGB}{100,100,100}
+        \titleformat{\section}{\normalfont\large\bfseries\color{uefsblue}}{}{0em}{}[\vspace{-0.3em}\color{uefsblue}\rule{\textwidth}{0.4pt}]
+        \titleformat{\subsection}{\normalfont\normalsize\bfseries\color{uefsblue}}{}{0em}{}
+        \titlespacing*{\section}{0pt}{1.2em}{0.6em}
+        \titlespacing*{\subsection}{0pt}{0.8em}{0.3em}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \renewcommand{\headrulewidth}{0.4pt}
+        \renewcommand{\footrulewidth}{0.4pt}
+        \fancyhead[L]{\small\color{uefsgray}UEFS · Análise de Dados Ambientais · 2026.1}
+        \fancyhead[R]{\small\color{uefsgray}Prof.\ Luiz Diego Vidal Santos}
+        \fancyfoot[C]{\small\color{uefsgray}Página \thepage\ de \pageref{LastPage}}
+        \fancypagestyle{plain}{\pagestyle{fancy}}
+        \setlist{nosep, leftmargin=1.5em}
+---
+
+\begin{center}
+\begin{minipage}{0.14\textwidth}
+\includegraphics[width=\linewidth]{../../aulas/assets/logo-uefs.png}
+\end{minipage}\hfill
+\begin{minipage}{0.82\textwidth}
+\begin{center}
+{\large\textbf{UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA}} \\[2pt]
+{\normalsize Departamento de Tecnologia (DTEC)} \\[2pt]
+{\normalsize Programa de Pós-Graduação em Planejamento Territorial (PLANTERR)} \\[6pt]
+{\large\textbf{PLANO DE DISCIPLINA}} \\[2pt]
+{\normalsize\textit{Período Letivo 2026.1}}
+\end{center}
+\end{minipage}
+\end{center}
+
+\vspace{0.4cm}
+\noindent\rule{\textwidth}{1.2pt}
+\vspace{0.2cm}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|p{4cm}|p{11.5cm}|}
+\hline
+\textbf{Componente Curricular} & Análise de Dados Ambientais \\
+\hline
+\textbf{Carga Horária} & 60 h (04 créditos) — 15 encontros de 4 h \\
+\hline
+\textbf{Horário} & Segunda-feira, 08h00 – 12h00 \\
+\hline
+\textbf{Período} & Março a junho de 2026 \\
+\hline
+\textbf{Modalidade} & Presencial \\
+\hline
+\textbf{Docente} & Prof.\ Dr.\ Luiz Diego Vidal Santos \\
+\hline
+\textbf{Contato} & \href{mailto:ldvsantos@uefs.br}{ldvsantos@uefs.br} · \href{https://orcid.org/0000-0001-8659-8557}{ORCID: 0000-0001-8659-8557} \\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace{0.3cm}
+
+# Ementa
+
+Introdução e aplicação de técnicas avançadas de análise estatística em estudos ambientais. Discussão e aprofundamento teórico-prático sobre a análise e interpretação de dados ambientais, incluindo métodos de análises descritivas, inferenciais, bi e multivariadas. Exploração de modelos estatísticos generalizados e suas aplicações em questões ambientais, abordando técnicas de moderação, mediação e análise de redes ecológicas. Utilização de métodos de regressão avançados, como regressão de Poisson e binomial negativa, para modelagem de eventos ambientais. Análise de sobrevida aplicada a estudos de longevidade de espécies e ecossistemas. Desenvolvimento de competências na criação e análise de bancos de dados ambientais, incluindo dados secundários, temporais e correlacionais. Aplicação de análise fatorial exploratória e confirmatória e modelagem por equações estruturais em dados ambientais, com enfoque no uso de ferramentas como JASP e FACTOR e Mplus. Capacitação para a interpretação, comunicação e publicação de resultados em revistas científicas, contribuindo para a tomada de decisões fundamentadas em conservação, gestão ambiental e políticas públicas.
+
+# Objetivo Geral
+
+Aprofundar o conhecimento sobre técnicas estatísticas avançadas aplicadas à análise e interpretação de dados ambientais. Desenvolver a capacidade de aplicar análises descritivas, inferenciais, bi e multivariadas em estudos ambientais, com foco em questões relacionadas à biodiversidade, qualidade do solo e mudanças climáticas. Analisar criticamente os modelos estatísticos generalizados e suas aplicações em estudos ambientais complexos, explorando as técnicas de moderação, mediação e análise de redes ecológicas.
+
+# Objetivos Específicos
+
+1. Dominar os fundamentos da inferência estatística (frequentista e bayesiana) aplicada a dados ambientais.
+2. Aplicar análises descritivas, exploratórias e de diagnóstico a diferentes estruturas de dados ambientais.
+3. Realizar testes de hipóteses, ANOVA e comparações múltiplas em contextos de conservação e gestão ambiental.
+4. Construir e interpretar modelos de regressão linear, logística, Poisson e binomial negativa para eventos ambientais.
+5. Utilizar modelos generalizados (GLM) e equações de estimação generalizadas (GEE) para dados longitudinais e repetidos.
+6. Aplicar técnicas de análise de redes ecológicas, análise fatorial exploratória/confirmatória e modelagem por equações estruturais.
+7. Elaborar relatórios e comunicações científicas reprodutíveis, contribuindo para a tomada de decisão em conservação e políticas públicas.
+
+# Habilidades e Competências
+
+Capacitar os alunos para a utilização de regressões avançadas e análise de sobrevida em contextos ambientais, com ênfase em modelagem de eventos e longevidade de espécies. Facilitar o desenvolvimento de competências para a criação e análise de bancos de dados ambientais, incluindo o uso de dados secundários, temporais e correlacionais. Promover a habilidade de aplicar análise fatorial exploratória e confirmatória, além de modelagem por equações estruturais, utilizando ferramentas como JASP e Mplus, para entender e explicar relações complexas entre variáveis ambientais. Preparar os alunos para a comunicação eficaz e publicação de resultados de pesquisas ambientais.
+
+# Metodologia
+
+A disciplina será desenvolvida ao longo de 15 encontros semanais, com 04 horas/aula por encontro (segundas-feiras, 08h–12h), totalizando 60 horas. As atividades combinarão exposição dialogada dos fundamentos teóricos com sessões práticas de análise computacional, utilizando os softwares R, JASP, FACTOR e Mplus.
+
+As aulas teóricas abordarão os conceitos estatísticos, pressupostos e interpretações, apoiadas em exemplos de estudos ambientais reais. As aulas práticas serão conduzidas em laboratório de informática, com exercícios orientados de análise de dados, interpretação de saídas e elaboração de relatórios reprodutíveis.
+
+Serão utilizados datasets ambientais reais (biodiversidade, qualidade do solo, séries climáticas, dados de sensoriamento remoto) para contextualizar cada técnica.
+
+# Formas de Avaliação
+
+- **1ª Avaliação (Teórica — Individual):** prova presencial com questões objetivas e discursivas, abrangendo estatística descritiva, inferencial, correlação, testes de hipóteses e ANOVA.
+- **2ª Avaliação (Prática — Individual):** análise computacional de dataset ambiental com entrega de relatório reprodutível, contemplando regressão, GLM e interpretação de resultados.
+- **3ª Avaliação (Teórica — Individual):** prova presencial abrangendo modelos avançados (GEE, redes ecológicas, regressões avançadas, análise de sobrevida, AFE/AFC e MEE).
+- **4ª Avaliação (Projeto Final — Individual ou em grupo):** análise integrada de dataset ambiental com aplicação de múltiplas técnicas, relatório reprodutível e apresentação dos resultados.
+
+Cada avaliação terá valor máximo de 10,0 pontos. A média final será calculada pela média aritmética simples.
+
+# Conteúdo Programático
+
+\vspace{0.3cm}
+
+\renewcommand{\arraystretch}{1.25}
+\begin{longtable}{|c|c|p{10.5cm}|}
+\hline
+\textbf{Sem.} & \textbf{Aulas} & \textbf{Assuntos Previstos} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Sem.} & \textbf{Aulas} & \textbf{Assuntos Previstos} \\
+\hline
+\endhead
+1ª & 01--02 & Introdução e Etimologia Estatística; Taxonomia de Bloom. Paradigmas frequentista e bayesiano. \\
+\hline
+2ª & 03--04 & Estatística Descritiva e Inferencial. Tendência central, dispersão, escore Z; normalidade, Q-Q plots, transformações. \\
+\hline
+3ª & 05--06 & Bootstrapping e Bootstrap Avançado. Intervalos de confiança via reamostragem; aplicações ambientais. \\
+\hline
+4ª & 07--08 & Correlação e Teste t. Pearson, Spearman, ponto-bisserial, parcial; H$_0$/H$_1$, erro tipo I/II. \\
+\hline
+5ª & 09--10 & ANOVA de Uma Via e ANOVA Fatorial. Particionamento da variância; comparações múltiplas; interações. \\
+\hline
+6ª & 11--12 & ANCOVA e ANOVA de Medidas Repetidas. Covariáveis; esfericidade; correções e interpretação. \\
+\hline
+7ª & 13 & ANOVA --- Visão Completa e MANOVA. Fatorial de medidas repetidas; testes multivariados. \\
+\hline
+8ª & 14--15 & Regressão e Qui-Quadrado. Regressão simples/múltipla; diagnóstico; $\chi^2$ 2$\times$2, n$\times$k, McNemar. \\
+\hline
+9ª & 16--17 & Associação e Dependência; Testes Não Paramétricos. Odds ratio, log-linear; Mann-Whitney, Friedman. \\
+\hline
+10ª & 18--19 & Escolha do Teste Estatístico e GLM/GEE. Fluxogramas de decisão; família exponencial; GEE. \\
+\hline
+11ª & 20--21 & Detecção de Anomalias e Análise Bi e Multivariada. Séries temporais; PCA, redes ecológicas. \\
+\hline
+12ª & 22--23 & Análise Fatorial Exploratória e Construção de Instrumentos. Hull, rotação; escalas e itens. \\
+\hline
+13ª & 24--25 & Adaptação e Validade de Instrumentos. Tradução transcultural; validade de conteúdo/construto/critério. \\
+\hline
+14ª & 26--27 & Evidências de Validade e Introdução à TRI. AFC, invariância, MEE; Teoria de Resposta ao Item. \\
+\hline
+15ª & 28--29 & Modelo de Rasch e Metanálise. Ajuste de itens, mapa de Wright; forest plot, heterogeneidade, sobrevida. \\
+\hline
+\end{longtable}
+
+\vspace{0.2cm}
+\noindent\textit{Aulas às segundas-feiras, 08h--12h (4 h/aula). Período: março a junho de 2026.}
+
+# Programa do Componente Curricular
+
+O componente será desenvolvido em 15 encontros de 4 horas cada, totalizando 60 horas.
+
+1. **Introdução, Etimologia Estatística e Taxonomia de Bloom (4 h)**
+   - Organização da disciplina, objetivos e critérios de avaliação.
+   - Paradigmas frequentista e bayesiano na inferência sobre dados ambientais.
+   - Níveis cognitivos da Taxonomia de Bloom aplicados à análise de dados.
+
+2. **Estatística Descritiva e Inferencial (4 h)**
+   - Estrutura de dados ambientais; tipos de variáveis e escalas de medida.
+   - Medidas de tendência central, dispersão, assimetria e curtose; escore Z.
+   - Avaliação de normalidade (Shapiro-Wilk, Kolmogorov-Smirnov); Q-Q plots; transformações.
+
+3. **Bootstrapping e Bootstrap Avançado (4 h)**
+   - Inferência de parâmetros populacionais; intervalos de confiança via reamostragem.
+   - Técnicas avançadas de bootstrap e aplicações em dados ambientais.
+
+4. **Correlação e Testes de Hipóteses --- Teste t (4 h)**
+   - Pearson, Spearman, ponto-bisserial, correlação parcial; distinção correlação--causalidade.
+   - Formulação de H₀/H₁; erro tipo I/II; poder do teste; testes t para 1 e 2 amostras; pareados.
+
+5. **ANOVA de Uma Via e ANOVA Fatorial (4 h)**
+   - Particionamento da variância; ANOVA one-way e comparações múltiplas.
+   - ANOVA fatorial: efeitos principais, interações e interpretação.
+
+6. **ANCOVA e ANOVA de Medidas Repetidas (4 h)**
+   - Análise de covariância: pressupostos, prática e interpretação.
+   - ANOVA de medidas repetidas: esfericidade, correções e descrição dos resultados.
+
+7. **ANOVA --- Visão Completa e MANOVA (4 h)**
+   - ANOVA fatorial de medidas repetidas e modelos mistos.
+   - MANOVA: pressupostos, testes multivariados e aplicações em conservação.
+
+8. **Regressão e Testes de Qui-Quadrado (4 h)**
+   - Regressão linear simples e múltipla; diagnóstico de resíduos; seleção de variáveis; variáveis dummy.
+   - Qui-quadrado 2×2, n×k, McNemar e Q de Cochran.
+
+9. **Associação e Dependência e Testes Não Paramétricos (4 h)**
+   - Phi, V de Cramér, odds ratio, risco relativo, log-linear e análise de correspondência.
+   - Mann-Whitney, Kruskal-Wallis, Wilcoxon e ANOVA de Friedman.
+
+10. **A Escolha do Teste Estatístico e GLM/GEE (4 h)**
+    - Fluxogramas de decisão e critérios para seleção do teste adequado.
+    - Família exponencial; funções de ligação; GEE para dados longitudinais e medidas repetidas.
+
+11. **Detecção de Anomalias e Análise Bi e Multivariada (4 h)**
+    - Indicadores de desmatamento, tendência, sazonalidade e detecção de outliers temporais.
+    - PCA, análise de redes ecológicas: centralidade, modularidade, conectância.
+
+12. **Análise Fatorial Exploratória e Construção de Instrumentos (4 h)**
+    - Método Hull, número de fatores, rotação e interpretação.
+    - Elaboração de escalas, itens e procedimentos de validação.
+
+13. **Adaptação e Validade de Instrumentos de Medida (4 h)**
+    - Tradução, adaptação transcultural e equivalência de medidas.
+    - Validade de conteúdo, construto e critério; confiabilidade.
+
+14. **Evidências de Validade e Introdução à TRI (4 h)**
+    - AFC, invariância de medida e modelagem por equações estruturais.
+    - Teoria de Resposta ao Item: conceitos, modelos e aplicações.
+
+15. **Modelo de Rasch e Metanálise (4 h)**
+    - Modelo de Rasch, ajuste de itens, mapa de Wright e aplicações.
+    - Efeito combinado, forest plot, heterogeneidade e análise de sobrevida.
+
+# Significado do Componente para a Formação Profissional
+
+O componente curricular Análise de Dados Ambientais é estruturante na formação de profissionais atuantes em planejamento territorial, gestão ambiental e conservação da biodiversidade. A capacidade de coletar, organizar, analisar e interpretar dados ambientais de forma rigorosa e reprodutível constitui competência essencial para a produção de evidências que subsidiem políticas públicas, licenciamentos, auditorias ambientais e projetos de recuperação de áreas degradadas.
+
+# Referências
+
+## Básica
+
+\begin{itemize}[leftmargin=1.5em]
+\item FIELD, Andy. \textbf{Descobrindo a estatística usando o SPSS}. 5.~ed. Porto Alegre: Penso, 2020.
+\item HAIR JR., Joseph F. et al. \textbf{Análise multivariada de dados}. 6.~ed. Porto Alegre: Bookman, 2009.
+\item ZAR, Jerrold H. \textbf{Biostatistical analysis}. 5.~ed. Upper Saddle River: Prentice Hall, 2010.
+\item GOTELLI, Nicholas J.; ELLISON, Aaron M. \textbf{Princípios de estatística em ecologia}. Porto Alegre: Artmed, 2011.
+\item LEGENDRE, Pierre; LEGENDRE, Louis. \textbf{Numerical ecology}. 3.~ed. Amsterdam: Elsevier, 2012.
+\end{itemize}
+
+## Complementar
+
+\begin{itemize}[leftmargin=1.5em]
+\item R CORE TEAM. \textbf{R: A language and environment for statistical computing}. Vienna: R Foundation, 2024.
+\item BORCARD, Daniel; GILLET, François; LEGENDRE, Pierre. \textbf{Numerical ecology with R}. 2.~ed. Cham: Springer, 2018.
+\item KLINE, Rex B. \textbf{Principles and practice of structural equation modeling}. 4.~ed. New York: Guilford Press, 2016.
+\item WICKHAM, Hadley; GROLEMUND, Garrett. \textbf{R for Data Science}. 2.~ed. Sebastopol: O'Reilly Media, 2023.
+\item ZUUR, Alain F. et al. \textbf{Mixed effects models and extensions in ecology with R}. New York: Springer, 2009.
+\end{itemize}
+
+\vfill
+
+\begin{center}
+\noindent\rule{6cm}{0.4pt} \\[6pt]
+\textbf{Prof.\ Dr.\ Luiz Diego Vidal Santos} \\
+Docente Responsável \\[4pt]
+\small Feira de Santana --- BA, março de 2026.
+\end{center}
