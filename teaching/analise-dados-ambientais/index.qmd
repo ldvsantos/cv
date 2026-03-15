@@ -14,7 +14,7 @@ description: "Ambiente virtual da disciplina de Análise de Dados Ambientais —
     <h2 class="ava-title">Análise de Dados Ambientais</h2>
     <p class="ava-subtitle">Estatística aplicada, correlação, regressão, ANOVA, GLM/GEE, análise fatorial e modelagem ambiental para pós-graduação.</p>
     <div class="ava-stats">
-      <span class="ava-stat"><i class="fa-solid fa-display"></i> 34 aulas</span>
+      <span class="ava-stat"><i class="fa-solid fa-display"></i> 29 aulas + 5 extras</span>
       <span class="ava-stat"><i class="fa-solid fa-book"></i> Leituras</span>
       <span class="ava-stat"><i class="fa-solid fa-video"></i> Vídeos</span>
     </div>
@@ -35,23 +35,23 @@ Introdução e aplicação de técnicas avançadas de análise estatística em e
 ::: {.callout-tip collapse="true" icon=false}
 ## {{< fa calendar-days >}} Cronograma das Aulas
 
-| Semana | Aulas | Assuntos Previstos |
-|:------:|:-----:|:-------------------|
-| 1ª | 01–02 | Introdução e Etimologia Estatística; Taxonomia de Bloom. Paradigmas frequentista e bayesiano; níveis cognitivos aplicados à análise de dados. |
-| 2ª | 03–04 | Estatística Descritiva e Inferencial. Tendência central, dispersão, escore Z; normalidade (Shapiro-Wilk, K-S), Q-Q plots, transformações. |
-| 3ª | 05–06 | Bootstrapping e Bootstrap Avançado. Intervalos de confiança via reamostragem; técnicas avançadas e aplicações ambientais. |
-| 4ª | 07–08 | Correlação e Teste t. Pearson, Spearman, ponto-bisserial, parcial; H₀/H₁, erro tipo I/II, testes t para 1 e 2 amostras. |
-| 5ª | 09–10 | ANOVA de Uma Via e ANOVA Fatorial. Particionamento da variância; comparações múltiplas; efeitos principais e interações. |
-| 6ª | 11–12 | ANCOVA e ANOVA de Medidas Repetidas. Covariáveis; esfericidade; correções e interpretação dos resultados. |
-| 7ª | 13 | ANOVA — Visão Completa e MANOVA. Fatorial de medidas repetidas; testes multivariados e aplicações em conservação. |
-| 8ª | 14–15 | Regressão e Qui-Quadrado. Regressão simples/múltipla; diagnóstico de resíduos; qui-quadrado 2×2, n×k, McNemar, Q de Cochran. |
-| 9ª | 16–17 | Associação e Dependência e Testes Não Paramétricos. Odds ratio, log-linear, correspondência; Mann-Whitney, Kruskal-Wallis, Friedman. |
-| 10ª | 18–19 | Escolha do Teste Estatístico e GLM/GEE. Fluxogramas de decisão; família exponencial; GEE para dados longitudinais e repetidos. |
-| 11ª | 20–21 | Detecção de Anomalias e Análise Bi e Multivariada. Séries temporais, outliers; PCA, redes ecológicas, centralidade, modularidade. |
-| 12ª | 22–23 | Análise Fatorial Exploratória e Construção de Instrumentos. Hull, número de fatores, rotação; elaboração de escalas e itens. |
-| 13ª | 24–25 | Adaptação e Validade de Instrumentos. Tradução e adaptação transcultural; validade de conteúdo, construto e critério. |
-| 14ª | 26–27 | Evidências de Validade e Introdução à TRI. AFC, invariância, MEE; Teoria de Resposta ao Item: conceitos e modelos. |
-| 15ª | 28–29 | Modelo de Rasch e Metanálise. Ajuste de itens, mapa de Wright; efeito combinado, forest plot, heterogeneidade, sobrevida. |
+| Semana | Aulas | Assuntos Previstos | Slides |
+|:------:|:-----:|:-------------------|:-------|
+| 1ª | 01–02 | Introdução e Etimologia Estatística; Taxonomia de Bloom. Paradigmas frequentista e bayesiano; níveis cognitivos aplicados à análise de dados. | 01, 02 |
+| 2ª | 03–04 | Estatística Descritiva e Inferencial. Tendência central, dispersão, escore Z; normalidade (Shapiro-Wilk, K-S), Q-Q plots, transformações. | 03, 04 |
+| 3ª | 05–06 | Bootstrapping e Bootstrap Avançado. Intervalos de confiança via reamostragem; técnicas avançadas e aplicações ambientais. | 05, 06 |
+| 4ª | 07–08 | Correlação e Teste t. Pearson, Spearman, ponto-bisserial, parcial; H₀/H₁, erro tipo I/II, testes t para 1 e 2 amostras. | 07, 08 |
+| 5ª | 09–10 | ANOVA de Uma Via e ANOVA Fatorial. Particionamento da variância; comparações múltiplas; efeitos principais e interações. | 09, 10 |
+| 6ª | 11–12 | ANCOVA e ANOVA de Medidas Repetidas. Covariáveis; esfericidade; correções e interpretação dos resultados. | 11, 12 |
+| 7ª | 13 | ANOVA — Visão Completa e MANOVA. Fatorial de medidas repetidas; testes multivariados e aplicações em conservação. | 13 |
+| 8ª | 14–15 | Regressão e Qui-Quadrado. Regressão simples/múltipla; diagnóstico de resíduos; qui-quadrado 2×2, n×k, McNemar, Q de Cochran. | 14, 15 |
+| 9ª | 16–17 | Associação e Dependência e Testes Não Paramétricos. Odds ratio, log-linear, correspondência; Mann-Whitney, Kruskal-Wallis, Friedman. | 16, 17 |
+| 10ª | 18–19 | Escolha do Teste Estatístico e GLM/GEE. Fluxogramas de decisão; família exponencial; GEE para dados longitudinais e repetidos. | 18, 19 |
+| 11ª | 20–21 | Detecção de Anomalias e Análise Bi e Multivariada. Séries temporais, outliers; PCA, redes ecológicas, centralidade, modularidade. | 20, 21 |
+| 12ª | 22–23 | Análise Fatorial Exploratória e Construção de Instrumentos. Hull, número de fatores, rotação; elaboração de escalas e itens. | 22, 23 |
+| 13ª | 24–25 | Adaptação e Validade de Instrumentos. Tradução e adaptação transcultural; validade de conteúdo, construto e critério. | 24, 25 |
+| 14ª | 26–27 | Evidências de Validade e Introdução à TRI. AFC, invariância, MEE; Teoria de Resposta ao Item: conceitos e modelos. | 26, 27 |
+| 15ª | 28–29 | Modelo de Rasch e Metanálise. Ajuste de itens, mapa de Wright; efeito combinado, forest plot, heterogeneidade, sobrevida. | 28, 29 |
 
 : {.striped .hover}
 
@@ -74,7 +74,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 
 ```{=html}
 <div class="slide-grid">
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/introducao_etimologia/introducao_etimologia.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/01_introducao_etimologia/introducao_etimologia.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 01 | Introdução e Etimologia Estatística</div>
@@ -82,7 +82,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/taxonomia_bloom/taxonomia_bloom.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/02_taxonomia_bloom/taxonomia_bloom.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 02 | Taxonomia de Bloom</div>
@@ -90,7 +90,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/estatistica_descritiva/estatistica_descritiva.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/03_estatistica_descritiva/estatistica_descritiva.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 03 | Estatística Descritiva</div>
@@ -98,7 +98,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/inferencial_dist_normal/inferencial_dist_normal.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/04_inferencial_dist_normal/inferencial_dist_normal.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 04 | Estatística Inferencial e Distribuição Normal</div>
@@ -106,7 +106,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/bootstrapping/bootstrapping.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/05_bootstrapping/bootstrapping.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 05 | Bootstrapping</div>
@@ -114,7 +114,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/bootstrap_avancado/bootstrap_avancado.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/06_bootstrap_avancado/bootstrap_avancado.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 06 | Bootstrap Avançado</div>
@@ -122,7 +122,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/correlacao/correlacao.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/07_correlacao/correlacao.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 07 | Análise de Correlação</div>
@@ -130,7 +130,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/teste_t/teste_t.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/08_teste_t/teste_t.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 08 | Testes de Hipóteses — Teste t</div>
@@ -138,7 +138,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/anova_uma_via/anova_uma_via.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/09_anova_uma_via/anova_uma_via.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 09 | ANOVA de Uma Via</div>
@@ -146,7 +146,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/anova_fatorial/anova_fatorial.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/10_anova_fatorial/anova_fatorial.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 10 | ANOVA Fatorial</div>
@@ -154,7 +154,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/ancova/ancova.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/11_ancova/ancova.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 11 | ANCOVA</div>
@@ -162,7 +162,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/anova_medidas_repetidas/anova_medidas_repetidas.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/12_anova_medidas_repetidas/anova_medidas_repetidas.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 12 | ANOVA de Medidas Repetidas</div>
@@ -170,7 +170,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/anova_completo/anova_completo.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/13_anova_completo/anova_completo.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 13 | ANOVA — Visão Completa e MANOVA</div>
@@ -178,7 +178,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/regressao/regressao.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/14_regressao/regressao.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 14 | Regressão</div>
@@ -186,7 +186,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/qui_quadrado/qui_quadrado.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/15_qui_quadrado/qui_quadrado.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 15 | Testes de Qui-Quadrado</div>
@@ -194,7 +194,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/associacao_dependencia/associacao_dependencia.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/16_associacao_dependencia/associacao_dependencia.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 16 | Modelos de Associação e Dependência</div>
@@ -202,7 +202,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/nao_parametricos/nao_parametricos.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/17_nao_parametricos/nao_parametricos.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 17 | Testes Não Paramétricos</div>
@@ -210,7 +210,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/escolha_do_teste/escolha_do_teste.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/18_escolha_do_teste/escolha_do_teste.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 18 | A Escolha do Teste Estatístico</div>
@@ -218,7 +218,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/glm_gee/glm_gee.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/19_glm_gee/glm_gee.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 19 | GLM e GEE</div>
@@ -226,7 +226,31 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/deteccao_anomalias/deteccao_anomalias.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/19_extra_regressao_poisson/regressao_poisson.html" target="_blank">
+<div class="slide-icon slide-icon--extra"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<div class="card-title">Extra — Regressão de Poisson</div>
+<p>Teoria, pressupostos, equidispersão, prática (SPSS/R), interpretação do IRR e descrição.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/19_extra_regressao_poisson/superdispersao_binomial_negativa.html" target="_blank">
+<div class="slide-icon slide-icon--extra"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<div class="card-title">Extra — Superdispersão e Binomial Negativa</div>
+<p>Modelo superdisperso, regressão binomial negativa, comparação de modelos (AIC) e descrição.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/19_extra_regressao_poisson/poisson_robusta.html" target="_blank">
+<div class="slide-icon slide-icon--extra"><i class="fa-solid fa-display"></i></div>
+<div class="slide-info">
+<div class="card-title">Extra — Regressão de Poisson Robusta</div>
+<p>Razão de prevalência vs. odds ratio, variância robusta, prática (SPSS/R) e descrição.</p>
+</div>
+</a>
+
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/20_deteccao_anomalias/deteccao_anomalias.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 20 | Detecção de Anomalias em Séries Temporais</div>
@@ -234,7 +258,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/analise_bi_multivariada/analise_bi_multivariada.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/21_analise_bi_multivariada/analise_bi_multivariada.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 21 | Análise Bi e Multivariada</div>
@@ -242,7 +266,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/analise_fatorial/analise_fatorial.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/22_analise_fatorial/analise_fatorial.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 22 | Análise Fatorial Exploratória</div>
@@ -250,7 +274,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/construcao_instrumentos/construcao_instrumentos.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/23_construcao_instrumentos/construcao_instrumentos.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 23 | Construção de Instrumentos de Medida</div>
@@ -258,7 +282,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/adaptacao_instrumentos/adaptacao_instrumentos.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/24_adaptacao_instrumentos/adaptacao_instrumentos.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 24 | Adaptação de Instrumentos de Medida</div>
@@ -266,7 +290,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/validade_instrumento/validade_instrumento.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/25_validade_instrumento/validade_instrumento.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 25 | Validade de Instrumentos</div>
@@ -274,7 +298,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/evidencias_validade/evidencias_validade.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/26_evidencias_validade/evidencias_validade.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 26 | Evidências de Validade</div>
@@ -282,7 +306,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/tri_introducao/tri_introducao.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/27_tri_introducao/tri_introducao.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 27 | Introdução à TRI</div>
@@ -290,7 +314,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/tri_rasch/tri_rasch.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/28_tri_rasch/tri_rasch.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 28 | Modelo de Rasch</div>
@@ -298,7 +322,7 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/metanalise/metanalise.html" target="_blank">
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/29_metanalise/metanalise.html" target="_blank">
 <div class="slide-icon"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
 <div class="card-title">Aula 29 | Metanálise</div>
@@ -306,42 +330,18 @@ O plano completo (ementa, metodologia, avaliações, cronograma detalhado e refe
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/regressao_poisson/regressao_poisson.html" target="_blank">
-<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/29_extra_analise_sobrevida/analise_sobrevida.html" target="_blank">
+<div class="slide-icon slide-icon--extra"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 30 | Regressão de Poisson</div>
-<p>Teoria, pressupostos, equidispersão, prática (SPSS/R), interpretação do IRR e descrição.</p>
-</div>
-</a>
-
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/regressao_poisson/superdispersao_binomial_negativa.html" target="_blank">
-<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
-<div class="slide-info">
-<div class="card-title">Aula 31 | Superdispersão e Binomial Negativa</div>
-<p>Modelo superdisperso, regressão binomial negativa, comparação de modelos (AIC) e descrição.</p>
-</div>
-</a>
-
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/regressao_poisson/poisson_robusta.html" target="_blank">
-<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
-<div class="slide-info">
-<div class="card-title">Aula 32 | Regressão de Poisson Robusta</div>
-<p>Razão de prevalência vs. odds ratio, variância robusta, prática (SPSS/R) e descrição.</p>
-</div>
-</a>
-
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/analise_sobrevida/analise_sobrevida.html" target="_blank">
-<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
-<div class="slide-info">
-<div class="card-title">Aula 33 | Análise de Sobrevida</div>
+<div class="card-title">Extra — Análise de Sobrevida</div>
 <p>Introdução, censura, Kaplan-Meier, tábua de sobrevida, teste log-rank e como reportar.</p>
 </div>
 </a>
 
-<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/analise_sobrevida/regressao_cox.html" target="_blank">
-<div class="slide-icon"><i class="fa-solid fa-display"></i></div>
+<a class="slide-card" href="../../aulas/analise_dados_ambientais/aulas/29_extra_analise_sobrevida/regressao_cox.html" target="_blank">
+<div class="slide-icon slide-icon--extra"><i class="fa-solid fa-display"></i></div>
 <div class="slide-info">
-<div class="card-title">Aula 34 | Regressão de Cox</div>
+<div class="card-title">Extra — Regressão de Cox</div>
 <p>Modelo de riscos proporcionais, Hazard Ratio, análise uni e multivariada, forest plot e descrição.</p>
 </div>
 </a>

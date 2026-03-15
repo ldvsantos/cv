@@ -1,0 +1,827 @@
+---
+title: "Metanálise"
+subtitle: "Aula 29 — Fundamentos de Metanálise<br>Análise de Dados Ambientais"
+author: "Luiz Diego Vidal Santos"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise de Dados Ambientais | Aula 29"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    include-after-body: ../../../assets/image-lightbox.html
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+# [META-ANALISE]{.section-header}
+
+## META-ANALISE {.smaller-text}
+
+Método
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+MOTIVAÇÃO
+
+**O QUE É META-ANÁLISE**
+
+É um conjunto de técnicas estatísticas criadas para agrupar o resultado dos estudos incluídos na revisão sistemática.
+
+É o cálculo da média dos efeitos dos estudos ponderada pelo peso de cada estudo.
+
+O peso de cada estudo é calculado pelo método do inverso da variância.
+
+A meta-análise pode ser calculada pelo:
+
+          - Modelos Fixos e Modelos Aleatórios;
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+MOTIVAÇÃO
+
+**PORQUE CALCULAR A META-ANÁLISE NA RS?**
+
+Obter um resultado que resume o todo combinando os resultados dos estudos incluídos na RS;
+
+Obter melhor precisão na estimativa do efeito da intervenção. É feito pelo cálculo dos IC-95%
+
+Possibilita analisar se a heterogeneidade está presente na meta-análise;
+
+Se a heterogeneidade estiver presente, possibilita explorar possíveis fontes de heterogeneidade
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+EXEMPLO
+
+**Objetivo: Avaliar o impacto do uso de cama de frango (*****poultry****** ******litter*****) em comparação com fertilizantes inorgânicos sobre a produtividade das culturas, absorção de nutrientes pelas plantas e fertilidade do solo.**
+
+**População:** Sistemas agrícolas em que foram aplicados esterco de aves (*poultry** **litter* - PL) incluindo culturas como milho;
+
+Intervenção: Aplicação de cama de frango (*poultry** **litter* - PL) como fonte de fertilidade do solo.
+
+**Comparação:** Aplicação de fertilizantes inorgânicos (IF) comerciais com doses equivalentes de nitrogênio.
+
+**O (Desfechos):**Produtividade das culturas (yield) Concentração de nutrientes nas plantas (N, P, K)Fertilidade do solo (CEC, pH, matéria orgânica, nutrientes disponíveis)
+
+**S (Desing do estudo): **Meta-análise de 116 estudos (111 revisados por pares + 5 conjuntos de dados não publicados), com 2.293 observações.
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+EXEMPLODE EFEITO FIXO(PONDERAÇÃO)
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+EXEMPLODE EFEITO FIXO
+
+O efeito médio combinado indica um aumento de aproximadamente 5% na produtividade do milho com uso de cama de frango (*Poultry** **Iitter* PL);
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+EXEMPLODE EFEITO FIXO
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+EXEMPLODE EFEITO FIXO
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+EXEMPLODE EFEITO FIXO
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+APRESENTAÇÃO
+
+**Forest ****Plot**
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+APRESENTAÇÃO
+
+**Forest ****Plot**
+
+
+---
+
+## {.smaller-text}
+
+Na meta-análise, estamos interessados em verificar o quanto os resultados de uma intervenção se repetem;
+
+Recomenda-se que os estudos incluídos apresentem as mesmas características:
+
+A mesma POPULAÇÃO DE INTERESSE
+
+A mesma INTERVENÇÃO
+
+O mesmo COMPARADOR
+
+O mesmo DESFECHO
+
+O mesmo DELINEAMENTO DE ESTUDO
+
+META-ANÁLISE
+
+HETEROGENEIDADE
+
+
+---
+
+## {.smaller-text}
+
+Se os resultados entre os estudos se confirmam entre si, ficamos mais confiantes sobre o resultado;
+
+Mesmo seguindo as recomendações, raramente os estudos incluídos terão resultados idênticos;
+
+Sempre haverá alguma diferença nos resultados entre os estudos incluídos na meta-análise.
+
+Essa diferença entre os resultados dos estudos é chamada de **heterogeneidade**.
+
+Na meta-análise, uma heterogeneidade alta pode representar um problema.
+
+META-ANÁLISE
+
+HETEROGENEIDADE
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+HETEROGENEIDADE
+
+
+---
+
+## {.smaller-text}
+
+Avaliar a heterogeneidade entre os estudos em uma meta-análise é extremamente importante.
+
+Basicamente, existem duas formas de avaliarmos a heterogeneidade em uma meta-análise:
+
+  - Inspecionar visualmente o forest plot
+  - Aplicar testes estatísticos
+  - Q de Cochran (segue distribuição de qui-quadrado)
+  - I2 de Higgins
+META-ANÁLISE
+
+HETEROGENEIDADE
+
+
+---
+
+## {.smaller-text}
+
+**INSPEÇÃO VISUAL DO FOREST PLOT**
+
+META-ANÁLISE
+
+HETEROGENEIDADE
+
+
+---
+
+## {.smaller-text}
+
+**INSPEÇÃO VISUAL DO FOREST PLOT**
+
+Q = 3.00
+
+Df = 5
+
+P = 0.70
+
+L2 = 0,00%
+
+Q = 12.00
+
+Df = 5
+
+P = 0.035
+
+L2 = 58,34%
+
+META-ANÁLISE
+
+HETEROGENEIDADE
+
+
+---
+
+## {.smaller-text}
+
+Q de Cochran
+
+Onde:
+
+Wi = peso do estudo (inverso da variância)
+
+Yi = efeito de cada estudo
+
+M = é o resultado da meta-análise
+
+META-ANÁLISE
+
+HETEROGENEIDADE
+
+
+---
+
+## {.smaller-text}
+
+Q de Cochran
+
+Segue uma distribuição qui-quadrado - valor de P:
+
+< 0.05 - Heterogeneidade
+
+> 0.05 - Não há evidências de heterogeneidade
+
+META-ANÁLISE
+
+HETEROGENEIDADE
+
+
+---
+
+## {.smaller-text}
+
+Não há evidencias para heterogeneidade
+
+META-ANÁLISE
+
+HETEROGENEIDADE
+
+
+---
+
+## {.smaller-text}
+
+Q de Cochran é passível de erro por conta do tamanho da amostra;
+
+Neste caso utiliza em conjunto o I2 de Higgins
+
+META-ANÁLISE
+
+HETEROGENEIDADE
+
+Onde:
+
+Q = estatística de Q de Cochran
+
+gl = graus de liberdade (K-1)
+
+
+---
+
+## {.smaller-text}
+
+Não há evidencias para heterogeneidade
+
+META-ANÁLISE
+
+HETEROGENEIDADE
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+HETEROGENEIDADE
+
+Classificação da Heterogeneidade
+
+
+| 0% - 40% | Pode não ser importante |
+| --- | --- |
+| 30% - 60% | Pode ser moderado |
+| 50 - 90% | Pode ser substancial |
+| 75 - 100% | Considerável |
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+HETEROGENEIDADE
+
+
+---
+
+## EFEITOS ALEATÓRIOS {.smaller-text}
+
+META-ANÁLISE
+
+EFEITOS ALEATÓRIOS
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+EFEITO FIXO E ALEATÓRIOS
+
+
+| EFEITO FIXO | EFEITOS ALEATÓRIOS |
+| --- | --- |
+
+
+| Os estudos estimam efeitos verdadeiros diferentes, que seguem uma distribuição |
+| --- |
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+EFEITO FIXO E ALEATÓRIOS
+
+
+| EFEITOS FIXOS | EFEITOS ALEATÓRIOS |
+| --- | --- |
+| Todos os estudos estimam o mesmo efeito verdadeiro (θ) | Os estudos estimam efeitos verdadeiros diferentes, que seguem uma distribuição |
+| Toda variação nos efeitos se deve ao erro amostral | A variação vem de erro amostral + heterogeneidade real entre estudos |
+| O peso (Wi) DOS estudos mais precisos dominam | O peso (Wi) é reduzido para estudos precisos se τ2 for alto |
+| Heterogeneidade Ignorada; assumida como zero | Heterogeneidade é estimada e incorporada ao modelo |
+| 95% IC mais estreitos (assume baixa variabilidade entre estudos) | 95% IC mais amplos (reflete a incerteza da variabilidade entre estudos) |
+| Usar quando os estudos são muito homogêneos (contexto, método, população) | Usar quando há heterogeneidade esperada ou detectada |
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+EFEITOS ALEATÓRIOS
+
+Cálculo de Tau2 pelo método “DL”
+
+Rebecca DerSimonian	Nan Laird
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+EFEITOS ALEATÓRIOS
+
+Cálculo de Tau2
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+EXEMPLO DE EFEITOS ALEATÓRIOS
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+EXEMPLO DE EFEITOS ALEATÓRIOS
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+EXEMPLO DE EFEITOS ALEATÓRIOS
+
+
+---
+
+## {.smaller-text}
+
+**Equações de Tau****2**
+
+DerSimonian-Laird = "DL"
+
+Paule-Mandel = "PM"
+
+Máxima Verossimilhança Restrita = "REML"
+
+Máxima Verossimilhança = "ML”
+
+Hunter-Schmidt = "HS"
+
+Sidik-Jonkman = "SJ"
+
+Hedges = "HE"
+
+Empirical Bayes = ”EB"
+
+META-ANÁLISE
+
+HETEROGENEIDADE
+
+
+---
+
+## DADOS CONTÍNUOS {.smaller-text}
+
+META-ANÁLISE
+
+DADOS CONTÍNUOS
+
+
+---
+
+## {.smaller-text}
+
+**Diferença de médias padronizada**** **-** **Quando usar
+
+Os dados de um desfecho extraídos de um estudo para o outro pode variar na forma em que ele foi medido
+
+Por exemplo: Efeito do uso de técnicas de conservação do solo sobre a compactação?
+
+META-ANÁLISE
+
+DADOS CONTÍNUOS
+
+
+| Estudo | Método | Unidade |
+| --- | --- | --- |
+| 1 | Anel volumétrico | g/cm³ (densidade aparente) |
+| 2 | Penetrômetro de impacto | J/cm² (energia por profundidade) |
+| 3 | Pressão crítica | kPa (resistência do solo) |
+
+
+---
+
+## {.smaller-text}
+
+**Quando usar**
+
+Todos medem o mesmo desfecho, mas em unidades de medidas que são diferentes!
+
+Quando isso acontece, podemos supor que vamos combinar laranjas com maçãs.
+
+META-ANÁLISE
+
+DADOS CONTÍNUOS
+
+
+| Estudo | Método | Unidade |
+| --- | --- | --- |
+| 1 | Anel volumétrico | g/cm³ (densidade aparente) |
+| 2 | Penetrômetro de impacto | J/cm² (energia por profundidade) |
+| 3 | Pressão crítica | kPa (resistência do solo) |
+
+
+---
+
+## {.smaller-text}
+
+**Diferença de médias padronizada**
+
+Entretanto, apesar disso acontecer, na realidade, o desfecho é o mesmo. O que muda é a unidade de análise.
+
+A diferença de médias padronizadas (DMP) é utilizada quando os desfechos são medidos em unidades diferentes: Desfechos conceitualmente iguais, mas numericamente diferentes;
+
+Ou seja, a DMP utilizada quando os dados são contínuos, mas o desfecho foi medido por diferentes escalas.
+
+META-ANÁLISE
+
+DADOS CONTÍNUOS
+
+
+---
+
+## {.smaller-text}
+
+**Diferença de médias padronizada**
+
+A ideia é criar uma medida que possa ser comparável entre os estudos.
+
+Existem três maneiras (tamanhos de efeito):
+
+**D de Cohen** - é a diferença de cada estudo dividida pelo desvio padrão agrupado.
+
+**𝙜 de Hedges** - inclui um ajuste para corrigir o vício de amostras pequenas
+
+**𝚫 de Glass** - usa o desvio padrão do grupo controle para dividir a diferenças de médias
+
+META-ANÁLISE
+
+DADOS CONTÍNUOS
+
+
+---
+
+## {.smaller-text}
+
+**Exemplo pelo D de Cohen**
+
+META-ANÁLISE
+
+DADOS CONTÍNUOS
+
+**G de Hedges **
+
+
+---
+
+## {.smaller-text}
+
+**Razão de resposta logarítmica (****lnRR****)**** **-** **Quando usar
+
+Os dados de um desfecho extraídos de um estudo para o outro pode variar na forma em que ele foi medido independente de escala
+
+Por exemplo: Efeito do uso de técnicas de conservação do solo sobre a Matéria organiza do solo
+
+META-ANÁLISE
+
+DADOS CONTÍNUOS
+
+
+| Estudo | Método | Unidade |
+| --- | --- | --- |
+| 1 | Walkley-Black | g/kg |
+| 2 | combustão seca (dry combustion) | % |
+| 3 | carbono orgânico total (COT) | mg/cm3 |
+
+
+---
+
+## {.smaller-text}
+
+**Razão de resposta logarítmica (****lnRR****)**** **-** **Quando usar
+
+Mesmo que todos estejam avaliando a qualidade da matéria orgânica, os valores não são diretamente comparáveis mas carregam efeitos comparados aos seus controles.
+
+Assim, podemos comparar e sintetizar efeitos sobre a matéria orgânica, mesmo que tenham sido mensurados de formas diferentes nos estudos.
+
+META-ANÁLISE
+
+DADOS CONTÍNUOS
+
+
+| Estudo | Método | Unidade |
+| --- | --- | --- |
+| 1 | Walkley-Black | g/kg |
+| 2 | combustão seca (dry combustion) | % |
+| 3 | carbono orgânico total (COT) | mg/cm3 |
+
+
+---
+
+## ANÁLISE SUBGRUPOS {.smaller-text}
+
+META-ANÁLISE
+
+SUBGRUPOS
+
+
+---
+
+## {.smaller-text}
+
+**Divide os estudos da meta-análise em subgrupos de acordo com determinadas características:**
+
+Participantes: faixa etária, sexo, estadiamento da condição de saúde, etc
+
+Intervenção: dose/intensidade, período da intervenção, duração da intervenção, etc
+
+Metodológicas dos estudos: randomização, cegamento, perdas, etc
+
+META-ANÁLISE
+
+DADOS CONTÍNUOS
+
+
+---
+
+## ANÁLISE DE SENSIBILIDADE {.smaller-text}
+
+META-ANÁLISE
+
+SENSIBILIDADE
+
+
+---
+
+## {.smaller-text}
+
+São análises alternativas da análise principal para avaliar se os achados da meta-análise são robustos frente aos problemas que podem surgir no processo da RS:
+
+Sugestões para realizar análise de sensibilidade:
+
+resumos de congressos ou conferências
+
+desenho do estudo
+
+imputação de dados
+
+análise dos dados (pós intervenção ou change)
+
+META-ANÁLISE
+
+ANÁLISE DE SENSIBILIDADE
+
+
+---
+
+## {.smaller-text}
+
+Quando os resultados da análise de sensibilidade são similares aos da análise principal, o grau de confiança nos resultados da meta-análise é maior
+
+Quando as análises de sensibilidade apresentam resultados distintos da análise principal, os achados da meta-análise devem ser interpretados com cautela.
+
+META-ANÁLISE
+
+ANÁLISE DE SENSIBILIDADE
+
+
+---
+
+## {.smaller-text}
+
+A análise de sensibilidade deve ser planejada à priori e motivada por possíveis fontes de viés que possam modificar o efeito da MA
+
+O resultado principal é o que deve ser apresentado na RS e a análise de sensibilidade deve ser descrita em um tópico específico na RS
+
+Caso o resultado da MA mude, a interpretação da MA deve ser realizada com cautela.
+
+META-ANÁLISE
+
+ANÁLISE DE SENSIBILIDADE
+
+
+---
+
+## VIÉS DE PUBLICAÇÃO {.smaller-text}
+
+META-ANÁLISE
+
+VIÉS DE PUBLICAÇÃO
+
+
+---
+
+## {.smaller-text}
+
+É comum você não conseguir incluir todos os estudos elegíveis na sua RS
+
+Isso acontece porque eles podem não estar disponíveis na literatura! Só estudos com resultados positivos!
+
+São mais publicados do que estudos negativos (Jama, v. 291, n.20, p.2457-65, 2004)
+
+São publicados antes dos estudos negativos (Time to publication for results of clinical trials. The Cochrane database of systematic reviews. n.2, p. MR000011, 2007).
+
+São mais publicados em revistas indexadas
+
+META-ANÁLISE
+
+VIÉS DE PUBLICAÇÃO
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+VIÉS DE PUBLICAÇÃO
+
+Ficarei aqui pois não sou positivo
+
+
+---
+
+## {.smaller-text}
+
+Como consequência, a MA tende a mostrar efeito maior do que o efeito verdadeiro.
+
+Autores de RS podem evitar que isso aconteça por meio de busca extensa em diferentes bases de dados e literatura cinzenta;
+
+Além do esforço para evitar/minimizar a ocorrência do viés de publicação na RS, é dever investigar a presença por meio: Gráfico de Funil e *Contour**-Enhanced **Funnel** **Plot*
+
+Testes estatísticos
+
+META-ANÁLISE
+
+VIÉS DE PUBLICAÇÃO
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+VIÉS DE PUBLICAÇÃO
+
+**Funnel**** ****Plot**
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+VIÉS DE PUBLICAÇÃO
+
+**Contour****-Enhanced ****Funnel**** ****Plot**
+
+
+---
+
+## {.smaller-text}
+
+META-ANÁLISE
+
+VIÉS DE PUBLICAÇÃO
+
+**Testes estatísticos**
+
+Teste de Egger
+
+Teste de Begg
+
+
+## {.center background-color="#2135A6"}
+
+::: {style="text-align: center;"}
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::
+:::

@@ -1,0 +1,437 @@
+---
+title: "Modelos de Associação e Dependência"
+subtitle: "Aula 16 — Medidas de Associação para Variáveis Categóricas<br>Análise de Dados Ambientais"
+author: "Luiz Diego Vidal Santos"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise de Dados Ambientais | Aula 16"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    include-after-body: ../../../assets/image-lightbox.html
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+# [ROTEIRO DA AULA]{.section-header}
+
+## Roteiro {.smaller-text}
+
+[1]{.circle} Associação vs Dependência vs Causalidade
+
+[2]{.circle} Medidas de Associação para Variáveis Categóricas
+
+[3]{.circle} Odds Ratio e Risco Relativo
+
+[4]{.circle} Modelos Log-lineares
+
+[5]{.circle} Análise de Correspondência
+
+[6]{.circle} Aplicações em Dados Ambientais
+
+---
+
+# [ASSOCIAÇÃO vs DEPENDÊNCIA vs CAUSALIDADE]{.section-header}
+
+## Conceitos Fundamentais {.smaller-text}
+
+:::{.info-box}
+**Associação** — Duas variáveis variam conjuntamente (coocorrência).
+Não implica direção.
+
+**Dependência** — Uma variável (Y) muda sistematicamente em função de outra (X).
+Implica assimetria: X → Y.
+
+**Causalidade** — X **causa** mudança em Y, com mecanismo identificável.
+Exige desenho experimental (aleatorização, controle, replicação).
+:::
+
+---
+
+## Níveis de Evidência {.smaller-text}
+
+```{mermaid}
+%%| fig-width: 10
+flowchart LR
+  A["Associação<br>(Tabela de Contingência)"] --> B["Dependência<br>(Regressão, GLM)"]
+  B --> C["Causalidade<br>(RCT, Contrafactual)"]
+  style A fill:#586BA6,color:#fff
+  style B fill:#27368C,color:#fff
+  style C fill:#2135A6,color:#fff
+```
+
+::: {.highlight-box}
+**Regra Fundamental:** Correlação ≠ Causação.
+Em estudos observacionais ambientais, raramente há aleatorização — por isso usamos **medidas de associação** como evidência preliminar.
+:::
+
+---
+
+## Quando usar cada abordagem? {.smaller-text}
+
+| Situação | Técnica | Exemplo Ambiental |
+|:---------|:--------|:-----------------|
+| 2 categóricas (2×2) | φ de Pearson, OR | Erosão (sim/não) × Cobertura (presente/ausente) |
+| 2 categóricas (r×c) | V de Cramer | Tipo de solo (3 classes) × Uso da terra (4 tipos) |
+| Categórica × Contínua | η² (eta-quadrado) | Tipo de manejo → Teor de MOS |
+| 2 contínuas | r de Pearson, ρ de Spearman | Precipitação × Vazão |
+| Predição categórica | Regressão logística | Fatores → Presença/ausência espécie |
+{.striped .hover}
+
+---
+
+# [MEDIDAS DE ASSOCIAÇÃO CATEGÓRICAS]{.section-header}
+
+## Tabela de Contingência {.smaller-text}
+
+Base de todas as medidas: a **tabela de contingência** (crosstab).
+
+|  | Erosão Sim | Erosão Não | **Total** |
+|:---|:---:|:---:|:---:|
+| **Sem Cobertura** | a = 45 | b = 15 | 60 |
+| **Com Cobertura** | c = 10 | d = 50 | 60 |
+| **Total** | 55 | 65 | **120** |
+{.striped .hover}
+
+::: {.info-box}
+As letras **a, b, c, d** formam a base para cálculo de φ, OR, RR e χ².
+:::
+
+---
+
+## Coeficiente φ (Phi) de Pearson {.smaller-text}
+
+Para tabelas **2×2** — mede associação entre duas variáveis dicotômicas.
+
+$$\phi = \frac{ad - bc}{\sqrt{(a+b)(c+d)(a+c)(b+d)}}$$
+
+**Exemplo numérico:**
+
+$$\phi = \frac{(45)(50) - (15)(10)}{\sqrt{(60)(60)(55)(65)}} = \frac{2250 - 150}{\sqrt{12\,870\,000}} = \frac{2100}{3587{,}5} = 0{,}585$$
+
+::: {.highlight-box}
+**Interpretação:**
+| |φ| | Associação |
+|:---:|:---:|
+| < 0,10 | Desprezível |
+| 0,10–0,30 | Fraca |
+| 0,30–0,50 | Moderada |
+| > 0,50 | **Forte** |
+{.striped .hover}
+:::
+
+---
+
+## V de Cramer {.smaller-text}
+
+Generalização do φ para tabelas **r × c** (mais de 2 linhas ou colunas).
+
+$$V = \sqrt{\frac{\chi^2}{n \cdot \min(r-1,\; c-1)}}$$
+
+Onde:
+
+- $\chi^2$ = estatística qui-quadrado de Pearson
+- $n$ = total de observações
+- $r$, $c$ = número de linhas e colunas
+
+::: {.info-box}
+**Quando usar:** Tipo de solo (Latossolo, Argissolo, Neossolo) × Classe de erosão (Laminar, Sulcos, Ravinas, Voçorocas).
+
+V varia de **0** (sem associação) a **1** (associação perfeita).
+:::
+
+---
+
+## Coeficiente de Contingência C {.smaller-text}
+
+Outra medida para tabelas r×c, mas com limite superior < 1:
+
+$$C = \sqrt{\frac{\chi^2}{\chi^2 + n}}$$
+
+**Limitação:** O valor máximo de C depende do tamanho da tabela:
+
+| Tabela | C~máx~ |
+|:---:|:---:|
+| 2×2 | 0,707 |
+| 3×3 | 0,816 |
+| 4×4 | 0,866 |
+| 5×5 | 0,894 |
+{.striped .hover}
+
+::: {.highlight-box}
+**Recomendação:** Prefira **V de Cramer** ao Coeficiente C — V sempre varia de 0 a 1, independente do tamanho da tabela.
+:::
+
+---
+
+# [ODDS RATIO E RISCO RELATIVO]{.section-header}
+
+## Odds Ratio (Razão de Chances) {.smaller-text}
+
+Mede **quantas vezes** a chance de um evento é maior em um grupo vs. outro.
+
+$$OR = \frac{a \cdot d}{b \cdot c} = \frac{45 \times 50}{15 \times 10} = \frac{2250}{150} = 15{,}0$$
+
+::: {.info-box}
+**Interpretação:** A chance de erosão em áreas **sem cobertura vegetal** é **15 vezes maior** do que em áreas **com cobertura**.
+:::
+
+| OR | Interpretação |
+|:---:|:---|
+| OR = 1 | Sem associação |
+| OR > 1 | Fator de risco (exposição aumenta o evento) |
+| OR < 1 | Fator de proteção (exposição reduz o evento) |
+{.striped .hover}
+
+---
+
+## Risco Relativo (RR) {.smaller-text}
+
+Compara **probabilidades** (não chances) entre grupos expostos vs. não expostos.
+
+$$RR = \frac{a/(a+b)}{c/(c+d)} = \frac{45/60}{10/60} = \frac{0{,}75}{0{,}167} = 4{,}5$$
+
+::: {.highlight-box}
+**Interpretação:** A probabilidade de erosão é **4,5 vezes maior** em áreas sem cobertura.
+:::
+
+**OR vs RR — Quando usar cada um?**
+
+| Desenho do Estudo | Use |
+|:---|:---|
+| Caso-controle (retrospectivo) | **OR** (RR não é válido) |
+| Coorte / Transversal | **RR** (mais intuitivo) |
+| Evento raro (< 10%) | OR ≈ RR (convergem) |
+{.striped .hover}
+
+---
+
+## Intervalo de Confiança para OR {.smaller-text}
+
+O OR pontual precisa de IC 95% para ser interpretável:
+
+$$\ln(OR) \pm 1{,}96 \times SE[\ln(OR)]$$
+
+$$SE[\ln(OR)] = \sqrt{\frac{1}{a} + \frac{1}{b} + \frac{1}{c} + \frac{1}{d}}$$
+
+**Exemplo:**
+
+$$SE = \sqrt{\frac{1}{45} + \frac{1}{15} + \frac{1}{10} + \frac{1}{50}} = \sqrt{0{,}022 + 0{,}067 + 0{,}100 + 0{,}020} = 0{,}457$$
+
+$$\ln(15) \pm 1{,}96 \times 0{,}457 = 2{,}708 \pm 0{,}896$$
+
+$$IC_{95\%} = [e^{1{,}812};\; e^{3{,}604}] = [6{,}12;\; 36{,}7]$$
+
+::: {.info-box}
+Se o IC 95% **não contém 1**, a associação é **estatisticamente significativa** (p < 0,05).
+:::
+
+---
+
+# [MODELOS LOG-LINEARES]{.section-header}
+
+## Modelos Log-lineares {.smaller-text}
+
+Para tabelas de contingência com **3+ variáveis** categóricas.
+
+Modelo geral para tabela A × B × C:
+
+$$\ln(f_{ijk}) = \mu + \lambda_i^A + \lambda_j^B + \lambda_k^C + \lambda_{ij}^{AB} + \lambda_{ik}^{AC} + \lambda_{jk}^{BC} + \lambda_{ijk}^{ABC}$$
+
+```{mermaid}
+%%| fig-width: 10
+flowchart TD
+  S["Modelo Saturado<br>Todos os termos"] --> I2["Interação de 2ª ordem<br>AB + AC + BC"]
+  I2 --> I1["Efeitos Principais<br>A + B + C"]
+  I1 --> N["Modelo Nulo<br>Apenas μ"]
+  style S fill:#2135A6,color:#fff
+  style I2 fill:#27368C,color:#fff
+  style I1 fill:#586BA6,color:#fff
+  style N fill:#F2F2F2,color:#0D0D0D
+```
+
+---
+
+## Teste de Ajustamento {.smaller-text}
+
+Comparação entre modelos hierárquicos via **deviance** ($G^2$):
+
+$$G^2 = 2 \sum f_{obs} \ln\left(\frac{f_{obs}}{f_{esp}}\right)$$
+
+| Comparação | H₀ |
+|:---|:---|
+| Saturado vs 2ª ordem | Interação tripla ABC = 0? |
+| 2ª ordem vs Efeitos principais | Interações de 2ª ordem = 0? |
+| Efeitos principais vs Nulo | Efeitos principais = 0? |
+{.striped .hover}
+
+::: {.info-box}
+**Exemplo Ambiental:** Tipo de solo (A) × Uso da terra (B) × Ocorrência de erosão (C).
+O modelo log-linear revela quais **combinações** de fatores estão associadas à erosão.
+:::
+
+---
+
+## Seleção do Melhor Modelo {.smaller-text}
+
+::: {.highlight-box}
+**Princípio da Parcimônia:** Escolha o modelo mais simples que se ajuste adequadamente aos dados.
+:::
+
+Critérios de seleção:
+
+| Critério | Fórmula | Interpretação |
+|:---|:---|:---|
+| $G^2$ (Deviance) | $2\Sigma f \ln(f_{obs}/f_{esp})$ | p > 0,05 → Modelo adequado |
+| AIC | $G^2 - 2 \cdot gl$ | Menor = Melhor |
+| BIC | $G^2 - \ln(n) \cdot gl$ | Penaliza mais a complexidade |
+{.striped .hover}
+
+---
+
+# [ANÁLISE DE CORRESPONDÊNCIA]{.section-header}
+
+## Análise de Correspondência Simples (AC) {.smaller-text}
+
+Técnica exploratória para **visualizar** associações entre categorias de duas variáveis em um **mapa perceptual** (biplot).
+
+**Princípio:** Decomposição da inércia total (χ²/n) em dimensões ortogonais.
+
+$$\text{Inércia Total} = \frac{\chi^2}{n} = \sum_k \lambda_k$$
+
+onde $\lambda_k$ são os autovalores (variância explicada por cada dimensão).
+
+::: {.info-box}
+**Interpretação do Biplot:**
+
+- **Proximidade** entre pontos → Alta associação
+- **Distância da origem** → Perfil atípico (diferente da distribuição marginal)
+- % de inércia por dimensão → Qualidade da representação
+:::
+
+---
+
+## Exemplo: Solo × Uso da Terra {.smaller-text}
+
+```{mermaid}
+%%| fig-width: 10
+graph LR
+  subgraph " Dimensão 1 (68% inércia)"
+    direction LR
+    L["Latossolo"]
+    A["Argissolo"]
+    N["Neossolo"]
+  end
+  subgraph " Dimensão 2 (25% inércia)"
+    direction TB
+    AG["Agricultura"]
+    PA["Pastagem"]
+    FL["Floresta"]
+    UR["Urbano"]
+  end
+  L -.-> AG
+  A -.-> PA
+  N -.-> FL
+  style L fill:#2135A6,color:#fff
+  style A fill:#27368C,color:#fff
+  style N fill:#586BA6,color:#fff
+  style AG fill:#C5CEE8,color:#0D0D0D
+  style PA fill:#C5CEE8,color:#0D0D0D
+  style FL fill:#C5CEE8,color:#0D0D0D
+  style UR fill:#C5CEE8,color:#0D0D0D
+```
+
+::: {.highlight-box}
+No biplot, categorias próximas indicam **perfis similares**. Latossolo associa-se com Agricultura; Neossolo com Floresta.
+:::
+
+---
+
+## Análise de Correspondência Múltipla (ACM) {.smaller-text}
+
+Extensão para **3 ou mais** variáveis categóricas simultâneas.
+
+| Aspecto | AC Simples | ACM |
+|:---|:---|:---|
+| Variáveis | 2 categóricas | 3+ categóricas |
+| Entrada | Tabela de contingência | Matriz indicadora (dummy) |
+| Inércia | χ²/n | Baseada em Burt |
+| Dimensões úteis | 2–3 | 2–5 |
+| Software | SPSS, R (FactoMineR) | R (FactoMineR), JASP |
+{.striped .hover}
+
+::: {.info-box}
+**Uso em Dados Ambientais:** Tipo de solo × Cobertura vegetal × Classe de erosão × Práticas de manejo — visualizar padrões multivariados em um único biplot.
+:::
+
+---
+
+# [APLICAÇÕES EM DADOS AMBIENTAIS]{.section-header}
+
+## Estudo de Caso: Erosão × Manejo {.smaller-text}
+
+**Objetivo:** Avaliar associação entre práticas de manejo e ocorrência de erosão em 200 parcelas.
+
+| | Erosão | Sem Erosão | Total |
+|:---|:---:|:---:|:---:|
+| **Plantio Convencional** | 38 | 12 | 50 |
+| **Cultivo Mínimo** | 20 | 30 | 50 |
+| **Plantio Direto** | 8 | 42 | 50 |
+| **Agrofloresta** | 5 | 45 | 50 |
+| **Total** | 71 | 129 | 200 |
+{.striped .hover}
+
+$$\chi^2 = 56{,}7; \quad p < 0{,}001; \quad V = 0{,}53$$
+
+::: {.highlight-box}
+Associação **forte** (V > 0,50). Plantio Convencional concentra a maioria dos casos de erosão.
+:::
+
+---
+
+## Odds Ratios por Manejo (vs. Agrofloresta) {.smaller-text}
+
+| Comparação | OR | IC 95% | Interpretação |
+|:---|:---:|:---:|:---|
+| Convencional vs Agrofloresta | 28,5 | [8,9; 91,2] | 28× mais chance erosão |
+| Cultivo Mínimo vs Agrofloresta | 6,0 | [1,9; 18,7] | 6× mais chance erosão |
+| Plantio Direto vs Agrofloresta | 1,7 | [0,5; 5,9] | NS (IC inclui 1) |
+{.striped .hover}
+
+::: {.info-box}
+**Conclusão:** Plantio Direto e Agrofloresta apresentam risco de erosão **estatisticamente similar**, enquanto Convencional apresenta risco **28 vezes maior**.
+:::
+
+---
+
+## Resumo das Medidas {.smaller-text}
+
+| Medida | Tipo de Variável | Faixa | Melhor para |
+|:---|:---|:---:|:---|
+| φ (phi) | 2 dicotômicas | [-1; 1] | Tabela 2×2 |
+| V de Cramer | Categóricas r×c | [0; 1] | Qualquer tabela |
+| Coef. Contingência C | Categóricas r×c | [0; C~máx~] | Evitar (usar V) |
+| OR | 2 dicotômicas | [0; ∞) | Caso-controle |
+| RR | 2 dicotômicas | [0; ∞) | Coorte/transversal |
+| Log-linear | 3+ categóricas | — | Interações multivariadas |
+| AC/ACM | Categóricas | — | Exploração visual |
+{.striped .hover}
+
+---
+
+::: {.obrigado-fit-text}
+**Obrigado!**
+
+**Prof. Luiz Diego Vidal Santos**
+
+UEFS — Universidade Estadual de Feira de Santana
+
+[ldvsantos@uefs.br](mailto:ldvsantos@uefs.br)
+:::

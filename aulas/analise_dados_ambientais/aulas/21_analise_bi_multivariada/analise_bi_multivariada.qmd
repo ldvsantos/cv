@@ -1,0 +1,3492 @@
+---
+title: "Análise Bi e Multivariada"
+subtitle: "Aula 21 — Técnicas Multivariadas Completas<br>Análise de Dados Ambientais"
+author: "Luiz Diego Vidal Santos"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise de Dados Ambientais | Aula 21"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    width: 1280
+    height: 720
+    css: ../../../assets/custom.css
+    include-after-body: ../../../assets/image-lightbox.html
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+# [ESTATÍSTICA DESCRITIVA]{.section-header}
+
+## ESTATÍSTICA DESCRITIVA {.smaller-text}
+
+Diego Vidal
+
+
+---
+
+## ESTATÍSTICAS DESCRITIVAS {.smaller-text}
+
+O que aprenderemos:
+
+Medidas de tendência central
+
+  - Média simples
+  - Moda
+  - Mediana
+Medidas de dispersão
+
+  - Variância
+  - Desvio-padrão
+  - Erro-padrão
+  - Intervalo de Confiança
+Escore Z
+
+
+---
+
+## ESTATÍSTICAS DESCRITIVAS (cont.) {.smaller-text}
+
+O que são
+
+- A estatística descritiva é um ramo da estatística que aplica várias técnicas para descrever e sumarizar um conjunto de dados.
+- Diferencia-se da estatística inferencial, que tem por objetivo obter
+uma afirmação acerca de uma população com base numa amostra.
+
+
+---
+
+## TENDÊNCIA CENTRAL {.smaller-text}
+
+**Objetivos**: Encontrar um valor que resuma a variabilidade de um conjunto de dados.
+
+**Pesquisa**: Investigar os níveis de crescimento radicular frente ao uso de fungos micorrízicos  arbusculares (N = 17).
+
+Instrumento de 34 itens
+
+Comprimento (cm)
+
+Escores variam de 34 cm a 170 cm
+
+
+---
+
+## TENDÊNCIA CENTRAL (cont.) {.smaller-text}
+
+**MÉDIA**
+
+**Pesquisa**: Investigar os níveis de atitude frente ao uso de drogas ilícitas (N = 17).
+
+Escores variando de 34 a 170
+
+2148
+
+17
+
+Média = 126,35
+
+=
+
+*N*
+
+
+| Escores dos repetições |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | 127 | 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 |
+
+
+---
+
+## TENDÊNCIA CENTRAL (cont.) {.smaller-text}
+
+**MODA**
+
+**Pesquisa**: Investigar os níveis de crescimento radicular frente ao uso de fungos micorrízicos  arbusculares (N = 17).
+
+Escores variando de 34 a 170
+
+**MODA**: O número que aparece mais vezes
+
+117 = 2 vezes; (Unimodal)
+
+
+| Escores dos repetições |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | 127 | 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 |
+
+
+---
+
+## TENDÊNCIA CENTRAL (cont.) {.smaller-text}
+
+**MEDIANA**
+
+**Pesquisa**: Investigar os níveis de crescimento radicular frente ao uso de fungos micorrízicos  arbusculares (N = 17).
+
+Escores variando de 34 a 170
+
+**MEDIANA:**** **O número que divide a amostra em duas metades iguais
+
+
+| Escores dos repetições |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | 127 | 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 |
+
+
+---
+
+## TENDÊNCIA CENTRAL (cont.) {.smaller-text}
+
+**SUMÁRIO**
+
+**Pesquisa**: Investigar os níveis de crescimento radicular frente ao uso de fungos micorrízicos  arbusculares (N = 17).
+
+Escores variando de 34 a 170
+
+**MÉDIA:**** **126,35; **MODA:**** **117; **MEDIANA:**** **127
+
+
+| Escores dos repetições |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | 127 | 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 |
+
+
+---
+
+## MEDIDAS DE DISPERSÃO {.smaller-text}
+
+**Objetivos**:
+
+Ter noção da variabilidade dos escores em torno da média;
+
+Auxilia na interpretação sobre o quanto os casos são semelhantes ou diferentes entre si, frente à variável de interesse
+
+
+---
+
+## MEDIDAS DE DISPERSÃO (cont.) {.smaller-text}
+
+**VARIÂNCIA**
+
+**Pesquisa**: Investigar os níveis de crescimento radicular frente ao uso de fungos micorrízicos  arbusculares (N = 17).
+
+Escores variando de 94 a 162
+
+2
+
+(*x**	*- *x*)2  (*x**	*- *x*)2  ...  (*x**	*- *x*)2
+
+*n** *-1
+
+*Variância**	*	*s**	* 	1	2	*n**	*
+
+
+| Escores dos repetições |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | 127 | 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 |
+
+
+---
+
+## MEDIDAS DE DISPERSÃO (cont.) {.smaller-text}
+
+**VARIÂNCIA**
+
+**Pesquisa**: Investigar os níveis de crescimento radicular frente ao uso de fungos micorrízicos  arbusculares (N = 17).
+
+Escores variando de 94 a 162
+
+2
+
+(*x** *- *x*)2  (*x** *- *x*)2  ...  (*x** *- *x*)2
+
+*n** *-1
+
+*Variância**	* *s**	* 	1	2	*n**	*
+
+MEDIDAS DE DISPERSÃO
+
+
+| Escores das repetições |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | 127 | 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 |
+| Média = 126,35 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+
+
+---
+
+## MEDIDAS DE DISPERSÃO (cont.) {.smaller-text}
+
+**VARIÂNCIA**
+
+**Pesquisa**: Investigar os níveis de crescimento radicular frente ao uso de fungos micorrízicos  arbusculares (N = 17).
+
+Escores variando de 94 a 162
+
+2
+
+(*x** *- *x*)2  (*x** *- *x*)2  ...  (*x** *- *x*)2
+
+*n** *-1
+
+*Variância** * *s** *   1	2	*n**	*
+
+
+| Escores das repetições |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 94 | 104 | 107 | 109 | 113 | 117 | 117 | 121 | 127 | 128 | 130 | 132 | 137 | 143 | 153 | 154 | 162 |
+| Média = 126,35 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| -32,35 | -22,35 | -19,35 | -17,35 | -13,35 | -9,35 | -9,35 | -5,35 | 0,65 | 1,65 | 3,65 | 5,65 | 10,65 | 16,65 | 26,65 | 27,65 | 35,65 |
+
+
+---
+
+## MEDIDAS DE DISPERSÃO (cont.) {.smaller-text}
+
+**VARIÂNCIA**
+
+16
+
+= 361,74
+
+=
+
+5787,9
+
+*n-**1*
+
+(xi - *-*x)2
+
+*S**2** **=*
+
+MEDIDAS DE DISPERSÃO
+
+
+| Diferença das médias |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| -32,35 | -22,35 | -19,35 | -17,35 | -13,35 | -9,35 | -9,35 | -5,35 | 0,65 | 1,65 | 3,65 | 5,65 | 10,65 | 16,65 | 26,65 | 27,65 | 35,65 |
+| 1046,5 | 499,5 | 374,4 | 301,0 | 178,2 | 87,4 | 87,4 | 28,6 | 0,4 | 2,7 | 13,3 | 31,9 | 113,4 | 277,2 | 710,2 | 764,5 | 1270,9 |
+
+
+---
+
+## MEDIDAS DE DISPERSÃO (cont.) {.smaller-text}
+
+**VARIÂNCIA**
+
+**DESVIO-PADRÃO**
+
+16
+
+= 361,74
+
+=
+
+5787,9
+
+*n-**1*
+
+(xi - *-*x)
+
+*S**2** **=*
+
+*DP** **=**	*19,02
+
+
+---
+
+## MEDIDAS DE DISPERSÃO (cont.) {.smaller-text}
+
+*EP **=** *	DP   		*=** * 19,02 *=**	*4,613
+
+𝑁	17
+
+**ERRO-****PADRÃO**
+
+**Desvios-****padrão**** ****entre**** ****as**** ****médias**** das**** ****amostras**** (Field,**** ****2005)**
+
+MEDIDAS DE DISPERSÃO
+
+
+---
+
+## MEDIDAS DE DISPERSÃO (cont.) {.smaller-text}
+
+**Pesquisa**: Investigar os níveis de crescimento radicular frente ao uso de fungos micorrízicos  arbusculares (N = 17).
+
+Escores variando de 34 a 170.
+
+M = 126,35; DP = 19,02; EP = 4,61
+
+MEDIDAS DE DISPERSÃO
+
+
+---
+
+## {.smaller-text}
+
+ESCORE Z
+
+
+---
+
+## ESCORE Z {.smaller-text}
+
+Z = X - X
+
+*s*
+
+Onde:
+
+O escore z é uma transformação dos escores brutos, baseadas em desvio- padrão, cuja fórmula é:
+
+*_*
+
+X = escore da amostra;
+
+*_*
+
+X = média amostral;
+
+S = desvio-padrão amostral
+
+
+---
+
+## ESCORE Z (cont.) {.smaller-text}
+
+Imagine uma variável cuja média é 20 e o desvio-padrão é 2
+
+Se uma repetição tem escore 22, ela está um DP acima da média, logo seu escore Z = 1;
+
+*Z** *= X - X  = 22 - 20 = 1
+
+*_*
+
+*s**	**2*
+
+
+---
+
+## ESCORE Z (cont.) {.smaller-text}
+
+**Logo:**
+
+1 ponto no escore Z é igual ao valor do DP;
+
+Vamos ao exemplo da M = 20; DP = 2.
+
+  - Uma repetição que tem escore 18, está 1 DP abaixo da Média, logo o escore Z dela é -1.
+  - Uma repetição com escore 28, está 4 DP acima da média, logo Escore Z dela é 4.
+
+---
+
+## ESCORE Z (cont.) {.smaller-text}
+
+**O**** ****escore**** ****Z**** ****é**** ****útil**** ****para**** ****estimar**** ****o**** ****quão**** ****longe**** ****um**** ****sujeito**** ****está**** ****da**** ****média.**
+
+Se a distribuição é normal, do total da amostra:
+
+68,2% terão escore Z entre +-1;
+
+95,4% terão escore Z entre +-2;
+
+99.7% terão escores Z entre +- 3.
+
+
+---
+
+## ESCORE Z (cont.) {.smaller-text}
+
+**O**** ****escore**** ****Z**** ****é**** ****útil**** ****para**** ****estimar**** ****o**** ****quão**** ****longe**** ****um**** ****sujeito**** ****está**** ****da**** ****média.**
+
+Quando a amostra não é normal, essa estimativa de % não é precisa, de modo que o escore Z perde um pouco a sua utilidade.
+
+
+---
+
+## {.smaller-text}
+
+INTERVALO DE CONFIANÇA
+
+
+---
+
+## INTERVALO DE CONFIANÇA {.smaller-text}
+
+É uma outra forma de determinar a precisão da média amostral, como estimativa da média populacional.
+
+Ao calcular o intervalo de confiança, você tem uma amplitude, onde se estipula que a verdadeira média da população estará.
+
+
+---
+
+## INTERVALO DE CONFIANÇA (cont.) {.smaller-text}
+
+**INTERVALO**** ****DE**** ****CONFIANÇA**
+
+Pode ser calculado em diferentes probabilidades (usando escore *z*): 90%, 95%, 99%
+
+IC: M + Z*EP
+
+90% = M + (**1,645**** **X EP)
+
+95% = M + (**1,96**** **X EP)
+
+99% = M + (**2,575**** **X EP)
+
+
+---
+
+## . {.smaller-text}
+
+**INTERVALO**** ****DE**** ****CONFIANÇA**
+
+Pode ser calculado em diferentes probabilidades (usando escore *z*): 90%, 95%, 99%
+
+90% = M + (**1,645**** **X EP)
+
+- Limite inferior: 126,35 - (1,645 X 4,61) = 118,76
+- Limite superior: 126,35 + (1,645 X 4,61) = 133,92
+95% = M + (**1,96**** **X EP)
+
+- Limite inferior: 126,35 - (1,96 X 4,61) = 117,30
+- Limite superior: 126,35 + (1,96 X 4,61) = 137,37
+99% = M + (**2,575**** **X EP)
+
+- Limite inferior: 126,35 - (2,575 X 4,61) = 114,46
+- Limite superior: 126,35 + (2,575 X 4,61) = 138,21
+.
+
+.
+
+126,34
+
+*Limite **Inferior*
+
+*Lower** **Bound*
+
+*Limite superior*
+
+*Upper** **Bound*
+
+90%
+
+95%
+
+99%
+
+INTERVALO DE CONFIANÇA
+
+
+---
+
+## INTERVALO DE CONFIANÇA {.smaller-text}
+
+**INTERVALO**** ****DE**** ****CONFIANÇA**
+
+90% = M + (**1,645**** **X EP)
+
+- Limite inferior: 126,34 - (1,645 X 4,61) = 118,76
+- Limite superior: 126,34 + (1,645 X 4,61) = 133,92
+Média e EP fora da média populacional
+
+
+---
+
+## {.smaller-text}
+
+ESTATÍSTICA INFERENCIAL
+
+
+---
+
+## ESTATÍSTICA INFERENCIAL {.smaller-text}
+
+**Definição**:
+
+Inferência estatística refere-se aos resultados derivados da análise estatística dos dados coletados.
+
+Ou seja, a inferência estatística advém de uma relação entre a teoria estatística e os dados reais.
+
+
+---
+
+## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+
+**Métodos**** ****de**** ****inferência**** ****estatística**** ****para**** ****testes**** ****de**** ****hipóteses**
+
+- 1) Inferências frequentistas (TSHN [Ho]; *p-**value*; *p** *< .05)
+- 2) Estimação Bayesiana
+- 3) Estimação por meio de *Bootstrapping*
+(intervalo de confiança das diferenças/das magnitudes)
+
+
+---
+
+## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+
+**Testes**** ****de**** ****hipóteses**
+
+Hipótese
+
+- Uma expectativa sobre as características morfológicas de uma nova cultivar
+- Ex: A cultivar Abacaxi BRS Ajubá apresenta maior nível de controle  controle da fusariose que a cultivar BRS Vitrória
+- Teste de hipótese
+- Avaliação, por meio de métodos científicos, a hipótese estabelecida.
+
+---
+
+## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+
+**Testes**** ****de**** ****hipóteses**
+
+Passo a passo para o teste de hipóteses:
+
+1) Crie uma ou mais hipóteses;
+
+2) Colete dados úteis para testar as hipóteses criadas;
+
+3) Análise seus dados com testes estatísticos adequados;
+
+4) Avalie os resultados para ver se eles suportam as hipóteses iniciais.
+
+
+---
+
+## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+
+**Testes**** ****de**** ****hipóteses**
+
+Ao coletar dados, você se depara com duas possibilidades:
+
+BRS Ajubá
+
+BRS Vitória
+
+35
+
+30
+
+25
+
+20
+
+15
+
+10
+
+5
+
+0
+
+35
+
+30
+
+25
+
+20
+
+15
+
+10
+
+5
+
+0
+
+Hipótese Nula (Ho) O efeito não existe
+
+Hipótese Alternativa (Ha) O efeito existe
+
+BRS Ajubá
+
+BRS Vitória
+
+
+---
+
+## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+
+**Testes**** ****de**** ****hipóteses**
+
+Erro Tipo I: Rejeito a hipótese nula (Ho), quando Ho é verdadeira;
+
+  - Afirmo que há efeito, quando não há
+Erro Tipo II: Aceito a hipótese nula (Ho) ; quando Ho é falsa
+
+  - Afirmo que não há efeito, quando há
+Verdadeira	Falsa
+
+Rejeito Aceito
+
+
+| Erro Tipo I | OK |
+| --- | --- |
+| OK | Erro Tipo II |
+
+
+---
+
+## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+
+**Testes**** ****de**** ****hipóteses**
+
+Erro Tipo I: Rejeito a hipótese nula (Ho), quando Ho é verdadeira;
+
+  - Afirmo que há efeito, quando não há
+Erro Tipo II: Aceito a hipótese nula (Ho) ; quando Ho é falsa
+
+  - Afirmo que não há efeito, quando há
+Você está grávido!
+
+Você não está grávida!
+
+
+---
+
+## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+
+**Inferência**** ****frequentista**** ****(valor-*****p*****)**
+
+Ronald Fisher (1935)
+
+  - Critério probabilístico objetivo (valor de
+*p** *< 0,05)
+
+  - Teste de significância da hipótese nula
+(TSHN)
+
+
+---
+
+## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+
+**Inferência**** ****frequentista**** ****(valor-*****p*****)**
+
+O critério do valor-*p** *de Fisher assume, arbitrariamente uma probabilidade de 5%
+
+de chance de erro na inferência
+
+Método de inferência estatística mais empregado na Psicologia
+
+
+---
+
+## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+
+**Inferência**** ****frequentista**** ****(valor-*****p*****)**
+
+A cultivar Abacaxi BRS Ajubá apresenta maior nível (*M** *= 6,32; *DP** *= 1,33) de controle  controle da fusariose quando comparada a cultivar Abacaxi BRS Vitória(*M** *= 8.79; *DP** *= 1.19; *p** *< 0,05)
+
+
+---
+
+## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+
+**Inferência**** ****frequentista**** ****(valor-*****p*****)**
+
+Todas as vezes que fazemos uma análise inferencial, você avalia se o efeito foi
+
+estatisticamente significativo (*p** *< 0,05)
+
+  - Vetiver com sistema radicular maior que paspalum (*p** *< 0,05)
+  - Depressão se associou com baixa motivação no laboratório (*p** *< 0,01)
+  - Não houve associação entre consumo de maconha e perda de libido (*p** *= 0,18).
+  - A associação entre consumo de maconha e diminuição na memória foi marginalmente significativa (*p** *= 0,07)
+
+---
+
+## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+
+**Erro**** ****Tipo**** ****II:**
+
+  - Acatar a Ho, quando ela é falsa.
+  - Probabilidade de erro aceitável: 0,20
+Poder amostral
+
+O poder de um experimento é a probabilidade de detectar um efeito do
+
+tratamento, se estiver presente.
+
+O efeito não existe
+
+*p** *= 0,08
+
+BRS Ajubá
+
+BRS Vitória
+
+35
+
+30
+
+25
+
+20
+
+15
+
+10
+
+5
+
+0
+
+
+---
+
+## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+
+**Erro**** ****Tipo**** ****II:**
+
+  - Acatar a Ho, quando ela é falsa.
+  - Probabilidade de erro aceitável: 0,20
+Poder amostral
+
+O poder de um experimento é a probabilidade de detectar um efeito do
+
+tratamento, se estiver presente.
+
+O efeito não existe
+
+*p** *= 0,08
+
+** probabilidade de detectar o efeito
+
+1 - 0,20 = 0,80.
+
+(Cohen, 1988, 1992)
+
+35
+
+30
+
+25
+
+20
+
+15
+
+10
+
+5
+
+0
+
+BRS Ajubá
+
+BRS Vitória
+
+
+---
+
+## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+
+**Relação**** ****direta**** ****entre**** ****** **(****significância****)**** ****e**** ** **(****poder****)**
+
+  - 0.05 e 0.80 são os valores mais comumente aceitos na literatura
+
+---
+
+## ESTATÍSTICA INFERENCIAL (cont.) {.smaller-text}
+
+**Erro do Tipo ****I****: ****sig****. Alfa (****p****< 0,05)**
+
+**Erro do Tipo II: Poder [1 - beta(0,20)]: 0,80**
+
+**Tamanho de efeito: **
+
+
+# [DISTRIBUIÇÃO NORMAL]{.section-header}
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+O que é
+
+- A Distribuição Normal é uma das distribuições de
+probabilidade mais utilizadas para modelar fenômenos naturais.
+
+- Isso se deve ao fato de que um grande número de fenômenos naturais apresenta esse tipo de distribuição.
+
+---
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+Como acontece
+
+Como acontece a distribuição normal
+
+
+---
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+O que é
+
+- A curva normal representa a forma como diferentes valores se agrupam em torno de um determinado ponto.
+- A forma como diferentes pessoas se agrupam em torno de determinada
+pontuação ou escore, para uma determinada variável.
+
+
+---
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+O que é
+
+- A curva normal é definida por meio de duas informações: média e desvio-padrão
+- Altura de Homens no Brasil
+- Média: 170cm
+- Desvio-Padrão: 5,72cm
+
+---
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+Média
+
+Média = 613 = 76,62
+
+8
+
+
+| 55 | 64 | 72 | 80 | 70 | 100 | 98 | 74 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+
+
+---
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+Desvio-Padrão
+
+Estimativa de variabilidade em torno da média
+
+Média
+
+76cm
+
+244 = 15,64
+
+7
+
+
+| 55 | 64 | 70 | 72 | 74 | 80 | 98 | 100 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+
+
+---
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+A curva normal é definida por meio de duas informações: média e desvio-padrão
+
+Média = 170; DP = 5,72
+
+Frequência (*n)*
+
++-1 DP (68.3%) = [164,28- 175,72]
+
++-2 DP (95,4%) = [158,56- 181,44]
+
++-3 DP (99,7%) = [152,84 - 187,16]
+
+
+---
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+DESVIOS DE DISTRIBUIÇÃO DE NORMALIDADE
+
+Renda no Brasil
+
+Mais pobres
+
+Mais ricos
+
+
+---
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+DESVIOS DE DISTRIBUIÇÃO DE NORMALIDADE
+
+DESVIO POR ASSIMETRIA
+
+
+---
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+DESVIOS DE DISTRIBUIÇÃO DE NORMALIDADE
+
+DESVIO POR CURTOSE
+
+**Leptocúrtica**: Dados muito concentrados junto à media;
+
+**Mesocúrtica**: Distribuição normal
+
+**Platicúrtica**: Dados muito dispersos; muitas pessoas muito afastadas da média.
+
+
+---
+
+## {.smaller-text}
+
+TESTANDO A DISTRIBUIÇÃO NORMAL NO JASP
+
+Luiz Diego Vidal - vidal.center@academico.ufs.br - CPF: 033.281.915-93
+
+
+---
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+COMO SABER SE SEUS DADOS SÃO NORMALMENTE DISTRIBUÍDOS?
+
+**Critérios ****descritivos**
+
+Transforme o escore da Assimetria e Curtose em escore Z
+
+Calcule: Assimetria e Curtose / Erro padrão
+
+Valor maior que |1.96| é significativo *p** *< .05
+
+Valor acima que |2.58| é significativo *p** *< .01
+
+Valor acima que |3.29| é significativo *p** *< .001
+
+
+---
+
+## DISTRIBUIÇÃO NORMAL (cont.) {.smaller-text}
+
+COMO SABER SE SEUS DADOS SÃO NORMALMENTE DISTRIBUÍDOS?
+
+**Critérios**** ****estatísticos**** ****(**Testes de significância)
+
+  - Kolmogorov-Smirnov e Shapiro-Wilk
+  - Hipotese nula: Dados não são normalmente distribuídos
+Espera-se rejeitar a hipótese nula → Dados são normalmente distribuídos
+
+  - Nos testes de K-S e S-W, espera-se que *p** *> 0,05 (maior que) para acatar a distribuição de
+normalidade dos dados.
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO {.smaller-text}
+
+Investigando a associação entre duas variáveis
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+Definição
+
+- Técnica de análise de dados que avalia a associação entre duas ou mais variáveis
+- A princípio, a natureza dessas variáveis devem ser métricas ou ordinais (ou seja, variáveis crescentes, tais como peso, altura, nível de felicidade, valores de glicemia, etc)
+- Existem casos especiais de correlação com dados categóricos*
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+Exemplo:
+
+Qual a relação entre o estresse no trabalho e o número de cigarros
+
+fumados em uma amostra de fumantes?
+
+Três características da correlação:
+
+Significância estatística (verificar se p < 0,05)
+
+Direção (positiva ou negativa)
+
+Grau (força: fraca, média e forte)
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIREÇÃO:
+
+**Positiva****:**** **Valores altos em uma variável (x) são associados a valores altos na outra (y). Valores baixos de x tendem a ser associados a valores baixos de y
+
+Ex.: Idade da criança e capacidade de montar lego
+
+**Negativa****:**** **valores altos de uma variável (x) são associados a valores baixos da outra variável (y)
+
+Ex.: Depressão e motivação para trabalhar
+
+**Nula:**** **Não existe um relacionamento
+
+Ex.: Altura e número de relacionamentos amorosos
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIREÇÃO:
+
+Correlações
+
+Positivas
+
+Correlação Nula
+
+Correlações Negativas
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIREÇÃO:
+
+Correlações
+
+Positivas
+
+Correlação Nula
+
+Correlações Negativas
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIREÇÃO:
+
+Correlações
+
+Positivas
+
+Correlações Negativas
+
+Correlação Nula
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIREÇÃO:
+
+Correlações
+
+Positivas
+
+Correlações Negativas
+
+Correlação Nula
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIREÇÃO:
+
+Correlação perfeita
+
+Sua idade e idade de sua irmã
+
+Correlação imperfeita Inteligência lógico-matemática e nota
+
+na prova de matemática
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIREÇÃO:
+
+Pode ser que não se encontre correlação entre duas variáveis (usando método de cálculo de correlação linear) porque a relação existente é não-linear.
+
+Teria que se usar outro método para cálculo da correlação (não-linear)
+
+Ex. Idade vs. Força física (ou memória; ou comportamentos disruptivos)
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+COEFICIENTE DE CORRELAÇÃO
+
+- 1
+**Correlação**** ****perfeita negativa**
+
+0
+
++1
+
+**Correlação**** ****perfeita positiva**
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+COEFICIENTE DE CORRELAÇÃO
+
+Cohen (1988, 1992)
+
+
+| Magnitude | Valor absoluto |
+| --- | --- |
+| Nula | 0,00 |
+| Fraca | |0,10 - 0,30| |
+| Moderada | |0,30 - 0,50| |
+| Forte | |> 0,50 | |
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+COEFICIENTE DE CORRELAÇÃO
+
+
+| Magnitude | Valor absoluto |
+| --- | --- |
+| Nula | 0,00 |
+| Fraca | |0,10 - 0,39| |
+| Moderada | |0,40 - 0,70| |
+| Forte | |0,70 - 0,80| |
+| Muito Forte | |0,80 - 0,99| |
+| Perfeita | 1,00 |
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+**TAMANHO**** ****DE**** ****EFEITO**
+
+Tamanho de efeito avalia o quanto duas variáveis estão, de fato, correlacionadas.
+
+O tamanho de efeito da correlação explicita o quanto de variância compartilhada
+
+duas variáveis apresentam entre si
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+TAMANHO DE EFEITO (COEFICIENTE DE DETERMINAÇÃO)
+
+*r** *= 0,60
+
+*Coeficiente** **de** **Correlação*
+
+*r**2** *= 0,36
+
+36,0%
+
+*Tamanho** **de** **efeito*
+
+*ou*
+
+*Variância** **compartilhada*
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+3%
+
+17%
+
+9%
+
+
+| Coeficiente de Correlação
+(r) | Variância compartilhada (tamanho de efeito, r2) |
+| --- | --- |
+| r = 0,10 | r2 = 0,01 = 1% |
+| r = 0,20 | r2 = 0,04 = 4% |
+| r = 0,30 | r2 = 0,09 = 9% |
+| r = 0,40 | r2 = 0,16 = 16% |
+| r = 0,50 | r2 = 0,25 = 25% |
+| r = 0,60 | r2 = 0,36 = 36% |
+| r = 0,70 | r2 = 0,49 = 49% |
+| r = 0,80 | r2 = 0,64 = 64% |
+| r = 0,90 | r2 = 0,81 = 81% |
+| r = 1,00 | r2 = 10,0 = 100% |
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+CORRELAÇÃO PARAMÉTRICA VS NÃO-PARAMÉTRICA
+
+Karl Pearson
+
+(1857-1936)
+
+Charles Spearman (1863-1945)
+
+Correlação de Pearson vs.
+
+Correlação de Spearman Correlação Kendall Tau-*b*
+
+Maurice Kendall
+
+(1907-1983)
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+CORRELAÇÃO PARAMÉTRICA VS NÃO-PARAMÉTRICA
+
+
+| Correlação de Pearson | Correlação de Spearman
+Kendall (Tau) |
+| --- | --- |
+| Paramétrica | Não-paramétrica |
+| Quando usar |  |
+| Quando os dados têm distribuição normal | Quando os dados não tem distribuição normal |
+| Quando o número de participantes é alto | Útil também quando o número de participantes é baixo |
+| Medida escalar/intervalar | Medida ordinal |
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+**VAMOS**** ****À**** ****PRÁTICA?**
+
+**HIPÓTESE**:
+
+Dados de resistência a tração e resistência a deformação na tração apresentam associação com a efeitos deletérios da degradação temporal em geotêxteis confeccionados com fibra de Taboa.
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+Tabela de Correlação
+
+Nota: * = *p** *< 0,05; ** = *p** *< 0,01; n.s. = relação não significativa
+
+
+|  | Tempos | Resistência tração | Deformação tração | Rigidez secante |
+| --- | --- | --- | --- | --- |
+| Tempos | 1 |  |  |  |
+| Resistência tração | -0,596** | 1 |  |  |
+| Deformação tração | 0,282** | -0,135* | 1 |  |
+| Rigidez secante | -0,491** | 0,788** | 0,030 | 1 |
+
+
+---
+
+## {.smaller-text}
+
+TÓPICOS ESPECIAIS DE CORRELAÇÃO
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIFERENÇAS NOS NÍVEIS DE CORRELAÇÃO
+
+Muitas vezes, quando realizamos análises de correlação, queremos entender, do
+
+nosso conjunto de variáveis, quais são as que mais fortemente se correlacionam.
+
+Nota: ***p** *< 0,01.
+
+“Os efeitos da degradação ao longo do tempo se associou mais moderadamente e de maneira negativa com a resistência a tração (*r** *= - 0,596, *p** *< 0,01) do que com a rigidez secante (*r** *= - 0,491, *p** *< 0,01).
+
+Forma de meia verdade!
+
+
+|  | Tempos | Resistência tração | Deformação tração | Rigidez secante |
+| --- | --- | --- | --- | --- |
+| Tempos | 1 |  |  |  |
+| Resistência tração | -0,596** | 1 |  |  |
+| Deformação tração | 0,282** | -0,135* | 1 |  |
+| Rigidez secante | -0,491** | 0,788** | 0,030 | 1 |
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIFERENÇAS NOS NÍVEIS DE CORRELAÇÃO
+
+Nota: * = *p** *< 0,05; ** = *p** *< 0,01.
+
+Fisher´s r-to-z transformation test
+
+http://psychometrica.de/correlation.htm
+
+
+|  | Tempos | Resistência tração | Deformação tração | Rigidez secante |
+| --- | --- | --- | --- | --- |
+| Tempos | 1 |  |  |  |
+| Resistência tração | -0,596** | 1 |  |  |
+| Deformação tração | 0,282** | -0,135* | 1 |  |
+| Rigidez secante | -0,491** | 0,788** | 0,030 | 1 |
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+DIFERENÇAS NOS NÍVEIS DE CORRELAÇÃO
+
+Muitas vezes, quando realizamos análises de correlação, queremos entender, do
+
+nosso conjunto de variáveis, quais são as que mais fortemente se correlacionam.
+
+Nota: ***p** *< 0,01.
+
+“O teste r-to-z de transformação de Fisher demonstrou que os efeitos deletérios da degradação do geotêxtil ao longo do tempo se associou mais fortemente com a resistência a tração a ruptura (r = - 0,596, p < 0,01) do que com a rigidez secante (r = 0,491, p < 0,01) (z = - 2.885; p < 0,002).”
+
+
+|  | Tempos | Resistência tração | Deformação tração | Rigidez secante |
+| --- | --- | --- | --- | --- |
+| Tempos | 1 |  |  |  |
+| Resistência tração | -0,596** | 1 |  |  |
+| Deformação tração | 0,282** | -0,135* | 1 |  |
+| Rigidez secante | -0,491** | 0,788** | 0,030 | 1 |
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+TIPO	ESPECIAL	DE	CORRELAÇÃO	(**PONTO**
+
+**BISSERIAL)**
+
+Utilizada  quando  se  pretende  avaliar  a  relação entre uma variável ordinal (ou escalar, ex: altura) com outra variável dicotômica (ex: sexo - masculino e feminino).
+
+Serve  como  um  indício  para  saber  se  existem diferenças nos escores dos grupos em relação à variável de interesse.
+
+Resistência a punção
+
+Sem Resina
+
+Com Resina
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+**CORRELAÇÃO**** ****NÃO**** ****É**** ****CAUSALIDADE**
+
+Correlação não é sinônimo de causalidade
+
+A correlação entre duas variáveis pode ser causada por uma terceira variável oculta;
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+**CORRELAÇÃO**** ****NÃO**** ****É**** ****CAUSALIDADE**
+
+Spurious Correlations
+
+Ir à praia
+
+Tomar
+
+sorvete
+
+TEMPERA TURA
+
+
+---
+
+## ANÁLISE DE CORRELAÇÃO (cont.) {.smaller-text}
+
+**CORRELAÇÃO**** ****NÃO**** ****É**** ****CAUSALIDADE**
+
+É possível encontrar uma correlação completamente espúria entre duas variáveis.
+
+Spurious Correlations
+
+
+# [REGRESSÃO]{.section-header}
+
+## {.smaller-text}
+
+REGRESSÃO
+
+Definição
+
+  - Técnica de análise de dados que explica quanto uma ou mais variáveis preditoras (VIs)
+explicam ou estão associadas com um desfecho (VD)
+
+- Regressão linear simples
+Uma variável dependente e uma variável independente
+
+- Regressão linear múltipla
+Uma variável dependente e várias variáveis independentes
+
+- Regressão logística
+Uma variável dependente (dicotômica) e uma ou mais variáveis independentes
+
+- Regressão multinomial
+Uma variável dependente (politômica) e uma ou mais variáveis independentes
+
+
+---
+
+## REGRESSÃO LINEAR {.smaller-text}
+
+O quanto uma ou mais variáveis explicam outra
+
+
+---
+
+## {.smaller-text}
+
+REGRESSÃO LINEAR
+
+Definição
+
+- Diferentemente da correlação, a regressão tem uma direcionalidade
+Autoestima
+
+Conquistas educacionais
+
+Autoestima
+
+Conquistas educacionais
+
+Variável dependente Variável desfecho
+
+Variável independente Variável preditora
+
+
+---
+
+## {.smaller-text}
+
+REGRESSÃO LINEAR
+
+Como se calcula a regressão
+
+Y = B0 + BxX + E
+
+Em que:
+
+Y = variável dependente.
+
+B0 = intercepto (constante).
+
+Bx = o nível sobre o quanto X impacta Y. X = variável independente.
+
+E = erro aleatório.
+
+
+---
+
+## {.smaller-text}
+
+REGRESSÃO LINEAR
+
+Um empresário quer saber o quanto o investimento em propagandas aumentou as suas
+
+vendas ao longo do mês.
+
+Propaganda (VI)
+
+Vendas (VD)
+
+
+---
+
+## {.smaller-text}
+
+REGRESSÃO LINEAR
+
+Um empresário quer saber o quanto o investimento em propagandas aumentou as suas
+
+vendas ao longo do mês.
+
+Y = o desfecho (vendas)
+
+B0 = intercepto (constante) → o escore no desfecho quando o preditor tem valor = 0 (quando
+
+ele não investia em propaganda, qual era o valor de y (vendas)?
+
+X = o nível do preditor (o quanto foi investido em propaganda).
+
+Bx = o grau sobre o quanto X (propaganda) impacta Y (venda).
+
+E = a porção de variância não explicada pela variável independente (o quanto a propaganda não foi útil para aumentar a venda)
+
+
+---
+
+## {.smaller-text}
+
+REGRESSÃO LINEAR
+
+Um empresário quer saber o quanto o investimento em propagandas aumentou as suas
+
+vendas ao longo do mês.
+
+Constante (Bo)
+
+A  regressão  irá  traçar  a  linha  que explica   a   influência   da   variável preditora no desfecho.
+
+As  variações  se  dão  por  razões externas  que  explicam  a  venda  (para além da propaganda).
+
+Por causa dessas influências externas, nenhum  modelo  é  perfeito  (livre  de erro),  e  por  isso  nenhum  preditor  é capaz de prever 100% o desfecho.
+
+Luiz Diego Vidal - vidal.center@academico.ufs.br - CPF: 03.281.915-93
+
+
+---
+
+## {.smaller-text}
+
+REGRESSÃO LINEAR
+
+**Informações**** ****que**** ****a**** ****regressão**** ****traz****:**
+
+- Sabemos o quanto Y (desfecho) aumenta para cada valor de X (variável preditora)
+- Para cada um real investido em propaganda, as vendas aumentaram *x*R$.
+- Sabemos o quanto (em %) Y aumenta quando da presença da variável X;
+- No total, o investimento em propaganda aumentou as vendas em X% (*R*2 → poder explicativo do
+modelo).
+
+
+---
+
+## {.smaller-text}
+
+REGRESSÃO LINEAR
+
+**Tipos**** ****de**** ****variáveis**
+
+Variável dependente
+
+  - Sempre ordinal ou escalar (ou seja, uma variável crescente)
+Variável independente
+
+  - Pode ser de diferentes categorias
+  - Ordinal, escalar ou categórica (dicotômica; se politômica, usar dummy)
+
+---
+
+## {.smaller-text}
+
+REGRESSÃO LINEAR
+
+**Principais**** ****pressupostos**
+
+  - Linearidade
+  - Variância não nula
+  - Homocedasticidade dos resíduos
+  - Independência dos resíduos
+  - Distribuição normal dos resíduos
+Luiz Diego Vidal - vidal.center@academico.ufs.br - CPF: 033.281.915-93
+
+
+---
+
+## {.smaller-text}
+
+REGRESSÃO LINEAR
+
+**Vamos**** ****à**** ****prática...**
+
+
+---
+
+## {.smaller-text}
+
+REGRESSÃO LINEAR MÚLTIPLA
+
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+Equivalente à regressão linear simples, com a diferença de que são adicionados
+
+vários preditores
+
+  - Socialização
+  - Extroversão
+  - Abertura à Experiência
+  - Neuroticismo
+  - Conscienciosidade
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+**Simples:**** **Y = B0 + BxX + E
+
+**Múltipla:**** **Y = B0 + ***B******1******X******1****** ******+****** ******B******2******X******2****** ******+****** ******...****** ******+****** ******B******n******X******n****** ***+ E
+
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+
+| Métodos de Entrada | Característica | Vantagens | Desvantagens |
+| --- | --- | --- | --- |
+| Enter (Inserir) | Todas as variáveis são
+inseridas de uma vez | Simplicidade | Multicolinearidade
+Não apresenta o R2
+de cada variável |
+
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+
+| Métodos de Entrada | Característica | Vantagens | Desvantagens |
+| --- | --- | --- | --- |
+| Enter (Inserir) | Todas as variáveis são
+inseridas de uma vez | Simplicidade | Multicolinearidade
+Não apresenta o R2
+de cada variável |
+| Stepwise (Por etapa) | Variáveis inseridas passo-a-passo, com base na significância do F | Modelo mais parcimonioso
+Apresenta o R2 de cada
+variável | A significância de F sofre efeito do tamanho amostral.
+Efeito supressor* |
+
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+
+| Métodos de Entrada | Característica | Vantagens | Desvantagens |
+| --- | --- | --- | --- |
+| Enter (Inserir) | Todas as variáveis são
+inseridas de uma vez | Simplicidade | Multicolinearidade
+Não apresenta o R2
+de cada variável |
+| Stepwise (Por etapa) | Variáveis inseridas passo-a-passo, com base na significância do F | Modelo mais parcimonioso
+Apresenta o R2 de cada
+variável | A significância de F sofre efeito do tamanho amostral.
+Efeito supressor* |
+| Forward (Avançar) | Variáveis inseridas passo-a-passo, com base na correlação parcial da VI com a VD | Modelo mais parcimonioso
+Apresenta o R2 de cada
+variável | Sofre influência das variáveis do modelo.
+Efeito supressor |
+
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+
+| Métodos de Entrada | Característica | Vantagens | Desvantagens |
+| --- | --- | --- | --- |
+| Backward
+(Retroceder) | Variáveis excluídas
+passo a-passo | Elimina possíveis erros de inserção dos métodos stepwise e forward | - |
+
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+
+| Métodos de Entrada | Característica | Vantagens | Desvantagens |
+| --- | --- | --- | --- |
+| Backward
+(Retroceder) | Variáveis excluídas
+passo a-passo | Elimina possíveis erros de inserção dos métodos stepwise e forward | - |
+| Remove (Remover) | Escolha manual de quais variáveis serão excluídas para comparar modelos | Pesquisador testa os modelos que gostaria | Escolhas arbitrárias podem ser perigosas |
+
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+**Problemas**** ****das**** ****variáveis**
+
+Independência entre as variáveis independentes (não deve haver muita multicolinearidade).
+
+  - Índice de tolerância: 1 - R².
+    - Deve ficar o mais próximo de 1,0 possível.
+  - Multicolinearidade pode ser avaliada, também, através do VIF
+    - Valores de VIF > 10 → Multicolinearidade
+    - Se Média de VIF for substancialmente > 1, Modelo tendencioso (Statitics → Colinearity Diagnosis). Próximo a 1, bom modelo.
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+**Problemas**** ****da**** ****amostra**
+
+Independência entre os resíduos.
+
+- Coeficiente de Durbin-Watson.
+- Deve ficar entre 1,5 e 2,5.
+**Resíduos**** ****padronizados**: Resíduos em valores Z, para que todas as variáveis sejam igualmente consideradas.
+
+**Resíduo**** ****Padronizado:**** **acima de 3 → Outlier
+
+  - Se 1% da amostra apresentar Resíduo padronizado acima de 2,5, → Problemas no modelo
+  - Se 5% da amostra apresentar Resíduo padronizado acima de 2 → Problemas no modelo
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+**Problemas**** ****da**** ****amostra**
+
+**Cook´s**** ****Distance**
+
+  - Avalia o efeito de um único caso no modelo como um todo. Valores maiores que 1 merecem atenção!
+**Mahalanobis**** ****Distance:**
+
+  - N = 500; 5 Vis → Mahalanobis = 25 valor problemático;
+  - N = 100; 3 Vis → Mahalanobis = 15 valor problemático;
+  - N = 30; 2 Vis → Mahalanobis = 11 valor problemático;
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+**Tamanho**** ****amostral**
+
+  - Regra geral → 50 + 8k, sendo k o número de variáveis.
+(Tabachnick & Fidell, 2019)
+
+Mais confiável calcular no G*Power
+
+
+---
+
+## REGRESSÃO LINEAR (cont.) {.smaller-text}
+
+MÚLTIPLA
+
+**Vamos**** ****à**** prática...**
+
+
+---
+
+## {.smaller-text}
+
+REGRESSÃO LOGÍSTICA BINÁRIA
+
+
+---
+
+## REGRESSÃO LOGÍSTICA {.smaller-text}
+
+BINÁRIA
+
+Tem por objetivo quantificar a probabilidade de um evento acontecer, de acordo com
+
+os preditores inseridos no modelo
+
+Regressão logística binária refere-se a um modelo onde a variável dependente tem
+
+duas categorias
+
+  - Depressivo Sim / Não
+  - Morreu / Não morreu
+  - Diabético / Não Diabético
+  - Com ideação suicida / Sem ideação suicida
+
+---
+
+## REGRESSÃO LOGÍSTICA (cont.) {.smaller-text}
+
+BINÁRIA
+
+Tem por objetivo quantificar a probabilidade de um evento acontecer, de acordo com os
+
+preditores inseridos no modelo
+
+Transformação logarítimica (logit) do modelo de regressão simples
+
+*P(Y)** *=
+
+1
+
+1  1
+
+1+𝑒−(𝑏𝑜+𝑏 𝑥 )
+
+Regressão Simples
+
+Regressão Múltipla
+
+*P(Y)** *=
+
+1
+
+1  11	2  2
+
+1+𝑒−(𝑏𝑜+𝑏 𝑥	+𝑏 𝑥 + …+𝑏𝑛𝑥𝑛)
+
+
+---
+
+## REGRESSÃO LOGÍSTICA (cont.) {.smaller-text}
+
+BINÁRIA
+
+Cada sujeito está ou não está em um grupo
+
+  - Exemplo: A probabilidade que pessoas que fumam terem desenvolvido câncer, comparado com os
+que não fumam.
+
+  - Desfecho: Não teve câncer de Pulmão (0) x Teve câncer de pulmão (1)
+  - Variável preditora: Fumou x Não Fumou (Dicotômica)
+  - Variável preditora: Número de cigarros fumado por mês (Contínua)
+  - Variável preditora: Marca do cigarro fumado (Hollywood, Marlboro, Camel, LuckyStrike)
+
+---
+
+## REGRESSÃO LOGÍSTICA (cont.) {.smaller-text}
+
+BINÁRIA
+
+A probabilidade que pessoas que fumam terem desenvolvido câncer, comparado
+
+com os que não fumam.
+
+  - Variável preditora: Número de cigarros fumado por mês (Contínua)
+Número de cigarros
+
+0
+
+600
+
+
+---
+
+## REGRESSÃO LOGÍSTICA (cont.) {.smaller-text}
+
+BINÁRIA
+
+Log-likelihood é uma estatística baseada em variância não explicada (resíduos)
+
+  - Quanto menor o valor, melhor o modelo.
+  - A qualidade do modelo é calculado através de uma estatística chamada -*2LL*
+  - Ao adicionar novas variáveis, o valor do 2LL deve diminuir, atestando que a variável é
+capaz de **melhorar**** **o poder de predição do modelo;
+
+  - Essa diminuição precisa ser estatisticamente significativa (distribuição qui-quadrado);
+
+---
+
+## REGRESSÃO LOGÍSTICA (cont.) {.smaller-text}
+
+BINÁRIA
+
+**Acessando**** ****a**** ****qualidade**** ****do**** ****modelo**
+
+R-statistic → Correlação parcial de cada VI com a VD
+
+  - Varia de -1 a +1
+  - **R-statistic**** ****negativo:**** **Quanto mais a VI (preditor) aumenta, mais a probabilidade do desfecho acontecer diminui
+  - **R-statistic**** ****positivo**: Quanto mais a VI (preditor) aumenta, mais a probabilidade do desfecho
+acontecer aumenta
+
+Estatística enviesada por utilizar a função de Wald
+
+
+---
+
+## REGRESSÃO LOGÍSTICA (cont.) {.smaller-text}
+
+BINÁRIA
+
+**Acessando**** ****a**** ****qualidade**** ****do**** ****modelo**
+
+  - Avalia o quanto as variáveis são capazes de predizer o desfecho
+Hosmer-Lemeshow *R**2**L*: Varia de 0 a 1;
+
+Cox & Snell R2: Não atinge o valor de 1;
+
+Nagelkerke R2: Corrige a medida de Cox & Snell
+
+
+---
+
+## REGRESSÃO LOGÍSTICA (cont.) {.smaller-text}
+
+BINÁRIA
+
+**Acessando**** ****o**** ****poder**** ****de**** ****predição**** ****das**** ****variáveis**
+
+  - Avalia o quanto as variáveis são capazes de predizer o desfecho
+  - Wald: Informa se o preditor é significativo ou não;
+  - B e Exp(b):
+
+---
+
+## REGRESSÃO LOGÍSTICA (cont.) {.smaller-text}
+
+BINÁRIA
+
+**Acessando**** ****o**** ****poder**** ****de**** ****predição**** ****das**** ****variáveis**
+
+  - Exp(*b*): Indica a probabilidade de o evento acontecer com base naquele preditor específico
+    - Exp*(b)** *> 1: Quanto mais o preditor aumenta, **maior**** **a probabilidade do desfecho acontecer
+    - Exp(*b*) < 1: Quanto mais o preditor aumenta, **menor**** **a probabilidade do desfecho acontecer
+
+---
+
+## REGRESSÃO LOGÍSTICA (cont.) {.smaller-text}
+
+BINÁRIA
+
+**Análises**** ****da**** ****capacidade**** ****de**** ****predição**** ****do**** ****modelo**
+
+  - Probabilities e Group Membership
+  - Avalia a probabilidade de cada caso ser adequadamente categorizado, de acordo com o seu próprio padrão de resposta
+Classification plots
+
+  - Histograma dos valores reais e previstos para o desfecho;
+
+---
+
+## TESTE T DE STUDENT {.smaller-text}
+
+Testes de Comparação de Médias
+
+
+---
+
+## {.smaller-text}
+
+TESTE T ESTUDENT
+
+Definição
+
+- Refere-se a um conjunto de testes estatísticos paramétricos que são utilizados para comparar médias.
+- Desenvolvido por Student (William Sealy Gosset), que não podia usar seu nome verdadeiro para publicar trabalhos enquanto trabalhava para a cervejaria Guinness.
+William Sealy Gosset (Student) (1876-1937)
+
+
+---
+
+## {.smaller-text}
+
+TESTE T ESTUDENT
+
+Três tipos de teste T (ou testes de diferenças de médias)
+
+Amostra única
+
+  - Um único grupo é comparado com um escore pré-determinado.
+    - Ex: Saber se a temperatura média de 2020 foi maior do que a temperatura média de 2000 (Média = 25,3ºC)
+Amostras independentes
+
+  - Compara os escores de uma determinada variável em dois grupos distintos
+    - Ex: Avaliar se os níveis de resistência a cisalhamento são diferentes entre geotêxteis sintéticos e geotêxteis naturais
+Amostra dependente
+
+  - Compara os escores de uma determinada variável em um grupo distinto, mensurado duas vezes;
+    - Ex: Avaliar se os escores do volume radicular se modificaram antes e após a aplicação de adubação nitrogenada
+
+---
+
+## {.smaller-text}
+
+Pressupostos do Teste t
+
+TESTE T ESTUDENT
+
+
+|  |
+| --- |
+| Distribuição normal na população. |
+| A medida deve estar em nível intervalar (Aceita-se contínua) |
+| Independência das respostas
+Amostra independente
+O comportamento de uma repetição não influencia o comportamento de outro)
+Amostra dependente
+A resposta da amostra em T1 não influencia a resposta do amostra em T2 |
+
+
+---
+
+## TESTE T DE STUDENT (cont.) {.smaller-text}
+
+Amostra Única (One-Sample *t** *test)
+
+
+---
+
+## {.smaller-text}
+
+Quando se utiliza:
+
+Comparação de um único grupo em relação a valores determinados
+
+É utilizado para saber se os dados que você obteve na sua amostra é estatisticamente equivalente ou diferente dos dados populacionais.
+
+**Valores**** ****externos ****já**** ****conhecidos**
+
+**comparado ****à**
+
+TESTE T ESTUDENT
+
+AMOSTRA ÚNICA
+
+
+---
+
+## {.smaller-text}
+
+**Exemplo**** ****1:**
+
+No Brasil, cerca de 8.561 Eng. Agrônomos são formados por ano. Uma pesquisa, com dados coletados entre 1995 e 2015 demonstrou que, a cada ano, em média, 2750 começam a trabalhar na área logo após formado. Ou seja, um total de 18,3%.
+
+Uma faculdade formou 100 profissionais a cada ano, ao longo de 10 anos (2009 - 2019), e,
+
+em média, 12,3% estavam trabalhando no ano seguinte.
+
+A taxa de empregabilidade da Faculdade é equivalente a taxa empregabilidade nacional?
+
+**Valores**** ****externos**
+
+**já**** ****conhecidos**
+
+**comparado ****à**
+
+TESTE T ESTUDENT
+
+AMOSTRA ÚNICA
+
+
+---
+
+## {.smaller-text}
+
+TESTE T ESTUDENTAMOSTRA ÚNICA
+
+**Exemplo**** ****prático****:**
+
+Um professor desconfia que o nível de satisfação dos seus alunos durante sua disciplina é inferior à sua meta (Nota 9,0). Para testar essa hipótese, ele entrevistou 20 clientes e questionou os seus níveis de satisfação, conforme abaixo:
+
+(A diferença não existe)
+
+(A diferença existe. A média dele seria menor do que 9)
+
+
+| 7 | 9 | 9,5 | 8,9 | 10 | 9,8 | 7,9 | 8,9 | 9,1 | 9,3 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 9,4 | 7,9 | 8,7 | 8,8 | 8,5 | 9,0 | 9,1 | 7,6 | 7,5 | 8 |
+
+
+---
+
+## {.smaller-text}
+
+TESTE T ESTUDENTAMOSTRA ÚNICA
+
+**Exemplo**** ****prático:**
+
+*_*
+
+*X** *= 8,645 (Média; M)
+
+*S** *= 0,81 (Desvio-Padrão; DP)
+
+0,81 / √20
+
+8,645 - 9
+
+=
+
+= - 1,960
+
+
+| 7 | 9 | 9,5 | 8,9 | 10 | 9,8 | 7,9 | 8,9 | 9,1 | 9,3 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 9,4 | 7,9 | 8,7 | 8,8 | 8,5 | 9,0 | 9,1 | 7,6 | 7,5 | 8 |
+
+
+---
+
+## {.smaller-text}
+
+**Exemplo**** ****prático:**
+
+O valor tabelado de *t** *depende do nível de significância (5%; *p** *< 0,05) e dos graus de liberdade, que dependem do tamanho da amostra (gl = n - 1 = 19).
+
+Nesse exemplo, *t** *tabelado = 2,093
+
+**(VER**** ****TABELA**** ****T)**
+
+1,960
+
+TESTE T ESTUDENT
+
+AMOSTRA ÚNICA
+
+
+---
+
+## {.smaller-text}
+
+**VAMOS**** ****À**** ****PRÁTICA!**
+
+TESTE T ESTUDENT
+
+AMOSTRA ÚNICA
+
+
+---
+
+## TESTE T DE STUDENT (cont.) {.smaller-text}
+
+Amostras independentes
+
+
+---
+
+## {.smaller-text}
+
+**Dois**** ****grupos**** ****de**** ****repetições**
+
+Avalia a diferença nos níveis de uma variável X entre dois
+
+grupos independentes
+
+TESTE T ESTUDENT
+
+AMOSTRAS INDEPENDENTES
+
+
+---
+
+## {.smaller-text}
+
+**Exemplos**** ****de ****pesquisa:**
+
+Uma variável dicotômica
+
+Uma variável ordinal/escalar
+
+TESTE T ESTUDENT
+
+AMOSTRAS INDEPENDENTES
+
+
+| Pergunta Inicial | Variável métrica/ordinal | Grupos |
+| --- | --- | --- |
+| Existem diferenças nos níveis de | níveis de intensificação do pastejo | bovinos de corte sob sistema intermitente? |
+| Existem diferenças na | capacidade de contenção de taludes | em repetições de geogrid com e sem aplicação de resina? |
+| Existem diferenças no | número de quedas de | Taludes com uso de pinos de erosão em latossolos? |
+| Existem diferenças nos níveis de | salpicamento | entre solos com e sem cobertura vegetal? |
+
+
+---
+
+## {.smaller-text}
+
+Existem diferenças nos níves de erosão por salpicamento em latossolos com e sem cobertura do solo?
+
+Média = 6,86
+
+*DP** *= 2,03
+
+Média = 9,57
+
+*DP** *= 2,22
+
+TESTE T DE STUDENT
+
+AMOSTRAS INDEPENDENTES
+
+
+| Coberto | Não coberto |
+| --- | --- |
+| 12 | 10 |
+| 9 | 8 |
+| 6 | 8 |
+| 11 | 4 |
+| 12 | 5 |
+| 9 | 7 |
+| 8 | 6 |
+
+
+---
+
+## {.smaller-text}
+
+Existem diferenças nos níves de erosão por salpicamento em latossolos com e sem cobertura do solo?
+
+TESTE T DE STUDENT
+
+AMOSTRAS INDEPENDENTES
+
+Média = 6,86
+
+*DP** *= 2,03
+
+Média = 9,57
+
+*DP** *= 2,22
+
+
+| Coberto | Não coberto |
+| --- | --- |
+| 12 | 10 |
+| 9 | 8 |
+| 6 | 8 |
+| 11 | 4 |
+| 12 | 5 |
+| 9 | 7 |
+| 8 | 6 |
+
+
+---
+
+## {.smaller-text}
+
+Pressupostos
+
+  - Normalidade dos dados
+  - Homogeneidade de variância
+  - Independência das observações
+TESTE T DE STUDENT
+
+AMOSTRAS INDEPENDENTES
+
+
+---
+
+## {.smaller-text}
+
+Homogeneidade de variância (homocedasticidade)
+
+  - A variabilidade dos escores do grupo em torno da média são equivalentes.
+  - Não significa que as médias são equivalentes.
+Médias
+
+Médias
+
+TESTE T DE STUDENT
+
+AMOSTRAS INDEPENDENTES
+
+
+---
+
+## {.smaller-text}
+
+Homogeneidade de variância (homocedasticidade)
+
+  - A variabilidade dos escores do grupo em torno da média são equivalentes.
+  - Não significa que as médias são equivalentes.
+*Médias iguais
+
+Médias
+
+TESTE T DE STUDENT
+
+AMOSTRAS INDEPENDENTES
+
+
+---
+
+## {.smaller-text}
+
+Homogeneidade de variância (homocedasticidade)
+
+OBS.: Os teste *t** **de** *Student aceita que o pressuposto da homogeneidade de variâncias não seja acatado, pois ele tem, embutido na análise do SPSS, a correção de *Levene.*
+
+TESTE T DE STUDENT
+
+AMOSTRAS INDEPENDENTES
+
+
+---
+
+## {.smaller-text}
+
+Vamos à prática
+
+TESTE T DE STUDENT
+
+AMOSTRAS INDEPENDENTES
+
+
+---
+
+## TESTE T DE STUDENT (cont.) {.smaller-text}
+
+Amostras dependentes (pareadas/medidas repetidas)
+
+
+---
+
+## {.smaller-text}
+
+TESTE T DE STUDENT
+
+AMOSTRAS DEPENDENTES
+
+Amostras dependentes / pareadas ou medidas repetidas
+
+Avalia em que medida há mudanças no escore **de**** ****um**** ****mesmo**** ****grupo**, em dois momentos distintos
+
+  - Pré e pós-teste
+Tempo 1
+
+Tempo 2
+
+
+---
+
+## ANÁLISE DE VARIÂNCIA {.smaller-text}
+
+Comparação de 3 (ou mais) grupos
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE DE VARIÂNCIA
+
+**O**** ****que**** ****é**
+
+ANOVA refere-se à um conjunto de testes de diferenças de grupos, utilizado para avaliar
+
+em que medida três ou mais grupos diferem em relação à uma variável de interesse.
+
+OU
+
+O quanto uma mesma variável mensurada em três ou mais vezes variou ao longo do tempo.
+
+
+---
+
+## {.smaller-text}
+
+ANOVAS
+
+
+| Nome | Característica | Exemplo |
+| --- | --- | --- |
+| ANOVA | Uma variável independente (categórica) e uma variável dependente | [Geotêxtil] x Efeito splash |
+| ANOVA FATORIAL | Duas (ou +) variáveis independentes e uma variável dependente | [Geotêxtil x Cobertura do solo (Ter/Não ter)] x Efeito splash |
+| ANCOVA | Uma variável independente, uma variável dependente (e uma ou mais variáveis de controle) | [Geotêxtil] x splash (Controlado por ter ou não ter cobertura) |
+
+
+---
+
+## {.smaller-text}
+
+ANOVAS
+
+
+| Nome | Característica | Exemplo |
+| --- | --- | --- |
+| ANOVA-MR | Uma variável dependente mensurada 3 (ou +) vezes | Efeito splash (pré-teste, pós-teste e follow-up) |
+| ANOVA FATORIAL-
+MR | Duas (ou +) variáveis de grupo mensuradas 3 (ou +) vezes | Splash  e Crescimento da vegetação (pré-
+teste, pós-teste e follow-up) |
+| MANOVA-MR | Uma variável de grupo e duas (ou +) variáveis dependentes | Geotêxtil e Resina protetora (pré- teste, pós-teste e follow-up) |
+
+
+---
+
+## {.smaller-text}
+
+ANOVA
+
+Porque realizar uma ANOVA
+
+  - Em uma única análise você compara todos os grupos que você tiver;
+  - Controla o Erro Tipo I por meio de análises denominadas testes de post-hoc
+- Para cada análise estatística, se estipula um 5% de chance de erro como aceitável (significância estatística). Múltiplas comparações aumenta essa chance de erro (e.g., 3 comparações → 15% a chance de erro ao acaso).
+
+---
+
+## {.smaller-text}
+
+ANOVA
+
+Por que realizar uma ANOVA
+
+3 comparações: G1-G2;
+
+G1-G3;
+
+G2-G3.
+
+Aumento do Erro Tipo I
+
+3 comparações
+
+**Taboa**
+
+**Juncos**
+
+Ouricuri
+
+
+---
+
+## {.smaller-text}
+
+ANOVA
+
+Distribuição de normalidade dos dados
+
+- Os escores dos grupos nas variáveis de interesse distribuem-se normalmente.
+- Avaliação de curtose e assimetria; Testes de normalidade (Kolgomorov-Smirnov; Shapiro-Wilk)
+Homogeneidade de variância
+
+- As variâncias dentro de cada grupo é igual (ou pelo menos aproximada) àquela dentro de todos os grupos.
+- Teste de Levene
+Amostras independentes
+
+- As fibras analisadas respondem de maneira independente.
+- Delineamento metodológico / Coleta de dados
+- Tamanho de efeito Eta parcial
+
+---
+
+## ANÁLISE DE VARIÂNCIA SIMPLES {.smaller-text}
+
+ANOVA DE UMA VIA (ANOVA ONE-WAY)
+
+
+---
+
+## {.smaller-text}
+
+ANOVA *ONE-**WAY*
+
+Níveis de perda de solo entre parcelas com diferentes
+
+tipos de cobertura de solo
+
+VD
+
+FATOR
+
+(VI)
+
+Uma variável categórica (Estado civil)
+
+Uma variável métrica/ordinal (Satisfação com a vida)
+
+
+| Cobertura de solo | Variável métrica/ordinal |
+| --- | --- |
+| Sem cobertura | Perda de solos |
+| Cobertura parcial |  |
+| Cobertura densa |  |
+
+
+---
+
+## {.smaller-text}
+
+ANOVA *ONE-**WAY*
+
+Como se calcula a ANOVA
+
+Na ANOVA, comparamos a variância entre grupos (***between-group)****** ***com a variância intragupo (***within-******group).***
+
+Ao comparar essas duas medidas de variância, podemos dizer se os repetições de
+
+diferentes grupos são diferentes entre si para determinada variável de interesse
+
+
+---
+
+## {.smaller-text}
+
+ANOVA *ONE-**WAY*
+
+Como se calcula a ANOVA
+
+Variância intragrupo (*within)** *- O quanto os repetições de cada grupo se diferem entre si
+
+Variância entre grupos (*between*) - O quanto os repetições dos diferentes grupos se diferem entre si
+
+
+---
+
+## {.smaller-text}
+
+ANOVA *O**NE-**WAY*
+
+Soma dos quadrados (*Sum** **of** **Squares*)
+
+**=**** ****Média =**** ****4,777**
+
+
+| Sujeito | Grupo | Escore | Média | Diferença |
+| --- | --- | --- | --- | --- |
+| 1 | 1 | 5 | 4,77 | 0,222 |
+| 2 | 1 | 3 |  | -1,778 |
+| 3 | 1 | 6 |  | 1,222 |
+| 4 | 2 | 4 |  | -0,778 |
+| 5 | 2 | 3 |  | -1,778 |
+| 6 | 2 | 2 |  | -2,778 |
+| 7 | 3 | 5 |  | 0,222 |
+| 8 | 3 | 6 |  | 1,222 |
+| 9 | 3 | 9 |  | 4,222 |
+| Soma | - | 43 |  | 0 |
+
+
+---
+
+## {.smaller-text}
+
+ANOVA *ONE-**WAY*
+
+Soma dos quadrados totais (*Sum** **of** **Squares** **SS**t*)
+
+
+| Sujeito7 | Grupo | Escore | Média | Diferença | Diferença2 |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 1 | 5 | 4,777 | 0,222 | 0,049 |
+| 2 | 1 | 3 |  | -1,778 | 3,160 |
+| 3 | 1 | 6 |  | 1,222 | 1,494 |
+| 4 | 2 | 4 |  | -0,778 | 0,605 |
+| 5 | 2 | 3 |  | -1,778 | 3,160 |
+| 6 | 2 | 2 |  | -2,778 | 7,716 |
+| 7 | 3 | 5 |  | 0,222 | 0,049 |
+| 8 | 3 | 6 |  | 1,222 | 1,494 |
+| 9 | 3 | 9 |  | 4,222 | 17,827 |
+| Soma | - | 43 |  | 0 | 35,556 |
+
+
+---
+
+## {.smaller-text}
+
+ANOVA *ONE-**WAY*
+
+Soma dos quadrados do modelo (*Sum** **of** **Squares** **SS**m*)
+
+SQM =Σ*nk** *(𝑥ҧ*k** *− 𝑥ҧ geral)2
+
+SQM1 = 3*(0,10)2 = 0,03
+
+SQM2 = 3*(1,77)2 = 9,40
+
+SQM3 = 3*(-1,90)2 = 10,83
+
+SQM = 20,26
+
+
+| Sujeito7 | Grupo | Escore | Média | Média do
+Grupo | SQM |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 1 | 5 | 4,777 | 4,67 | 0,03 |
+| 2 | 1 | 3 |  |  |  |
+| 3 | 1 | 6 |  |  |  |
+| 4 | 2 | 4 |  | 3,00 | 9,4 |
+| 5 | 2 | 3 |  |  |  |
+| 6 | 2 | 2 |  |  |  |
+| 7 | 3 | 5 |  | 6,66 | 10,83 |
+| 8 | 3 | 6 |  |  |  |
+| 9 | 3 | 9 |  |  |  |
+| Total | - | 43 |  |  | 20,26 |
+
+
+---
+
+## {.smaller-text}
+
+ANOVA *ONE-**WAY*
+
+O que sabemos até agora:
+
+- A variância total (SSt) nos dados é de 35,56
+- A variância entre grupos (between; SSM) é de 20,26
+- Variância residual (*within*) é de 15,30
+
+---
+
+## {.smaller-text}
+
+ANOVA	ONE-WAY
+
+* Um ponto importante: gl do grupo (k-1) = 2
+
+gl
+
+2
+
+Média da Soma dos Quadrados (Sum of Squares Mean)
+
+  - MSQM = SQM = 20,26 = 10,13
+
+---
+
+## {.smaller-text}
+
+ANOVA	ONE-WAY
+
+* Um ponto importante:
+
+Gl da amostra = Número de repetições - número de grupos → (9-3) = 6
+
+gl
+
+6
+
+Média dos Quadrados dos Resíduos (Sum of Squares of Residuals)
+
+MSQR = MSQ = 15,30 = 2,55
+
+
+---
+
+## {.smaller-text}
+
+ANOVA *ONE-**WAY*
+
+Chegamos à nossa tão esperada estatística F
+
+*F** *(2, 6) = MSQM =	10,13 = 3,97
+
+Como saber se o valor de F é significativo ou não?
+
+Observando a tabela normativa.
+
+MSQR
+
+2,55
+
+
+---
+
+## {.smaller-text}
+
+ANOVA *ONE-**WAY*
+
+POST-HOC
+
+  - A ANOVA é um teste generalista (omnibus). A estatística F indica se há diferenças estatisticamente
+significativas, mas não nos informa aonde estão as diferenças.
+
+- Grupo 1 se diferencia do Grupo 2, mas não do Grupo 3;
+- Grupo 3 se diferencia do Grupo 2, mas não do Grupo 1;
+- Todos os grupos se diferenciam entre si;
+O que testaremos?
+
+- Os grupos diferem entre si? Sim/Não? (Estatística F)
+- Quais grupos diferem entre si? (Testes post-hoc)
+
+---
+
+## {.smaller-text}
+
+ANOVA *ONE-**WAY*
+
+Vamos à prática
+
+
+---
+
+## ANOVA FATORIAL {.smaller-text}
+
+ANOVA FATORIAL
+
+
+---
+
+## {.smaller-text}
+
+ANOVA FATORIAL
+
+Níveis de satisfação com a vida entre homens e mulheres com
+
+diferentes tipos de relacionamentos amorosos
+
+VD
+
+FATORES (VI)
+
+
+| Variáveis de Grupo Fatores
+VIs |  | Variável métrica/ordinal |
+| --- | --- | --- |
+| Tratamentos | Sem Resina | Resistência a tração [...] |
+|  | 1x Resina |  |
+|  | 2x Resina |  |
+| Tempos | 1ºa 180º dias |  |
+
+
+---
+
+## {.smaller-text}
+
+ANOVA	FATORIAL
+
+Níveis de resistência entre as aplicações de resina em diferentes tempos de degradação
+
+
+---
+
+## {.smaller-text}
+
+ANOVA	FATORIAL
+
+ANOVA 2X2 = 4 condições testadas
+
+ANOVA 3X2
+
+ANOVA 4X4
+
+ANOVA 4X4X2 → 32 condições testadas
+
+  - ETC...
+Por mais tentador que seja colocar muitas variáveis em uma ANOVA, lembre-se que as
+
+múltiplas comparações irão tornar a discussão dos seus resultados um caos.
+
+
+---
+
+## ANÁLISE DE COVARIÂNCIA {.smaller-text}
+
+ANCOVA
+
+
+---
+
+## {.smaller-text}
+
+ANÁLISE DE COVARIÂNCIA
+
+Análise de Covariância
+
+  - Técnicas de terraços → Voçoroca
+  - Quais são as outras variáveis que influência na prevenção de  Vossoroca?
+    - Cobertura natural
+    - Canais escoadouros
+    - Curvas de nível
+    - Caixas de retenção
+    - Características do solo
+    - Na ANCOVA, você busca controlar o efeito de variáveis intervenientes na relação
+entre a VI e a VD;
+
+
+---
+
+## {.smaller-text}
+
+ANOVA FATORIAL
+
+Análise de Covariância
+
+  - Habilidades Matemáticas (VI)
+  - Aprovação no IME (Passou ou não Passou)
+    - Covariável: Compreensão de Texto
+
+---
+
+## {.smaller-text}
+
+ANOVA FATORIAL
+
+Análise de Covariância
+
+  - Pelo menos três variáveis
+  - VI (Grupo)
+  - VD (Desfecho)
+  - Co-variável (categórica ou ordinal)
+
+---
+
+## ANÁLISE DE VARIÂNCIA {.smaller-text}
+
+MEDIDAS REPETIDAS
+
+
+---
+
+## {.smaller-text}
+
+ANOVA MEDIDAS REPETIDAS
+
+Assim como nas ANOVAS anteriores, o objetivo da ANOVA - MR continua sendo comparar médias.
+
+Entretanto, o escore a ser comparado não é entre diferentes grupos, mas sim de um único grupo comparado com si próprio.
+
+  - Condições diferentes
+  - Momentos diferentes
+
+---
+
+## {.smaller-text}
+
+ANOVA MEDIDAS REPETIDAS
+
+Mesmos repetições (Condições diferentes)
+
+
+| Taboa | Sem resina | 1x resina | 2x resina |
+| --- | --- | --- | --- |
+| Amostra 1 | 7 | 6 | 8 |
+| Amostra 2 | 4 | 9 | 9 |
+| Amostra 3 | 6 | 5 | 6 |
+| Amostra 4 | 8 | 7 | 7 |
+| Amostra 5 | 9 | 4 | 4 |
+| Amostra 6 | 8 | 8 | 5 |
+| Amostra 7 | 5 | 10 | 8 |
+| Amostra 8 | 6 | 8 | 7 |
+
+
+---
+
+## {.smaller-text}
+
+ANOVA MEDIDAS REPETIDAS
+
+Pressuposto de normalidade (S-K, K-W);
+
+Pressuposto de homogeneidade (Levene);
+
+Esfericidade (Com três ou mais condições/tempo) (Mauchly);
+
+Distribuição normal dos resíduos.
+
+
+---
+
+## {.smaller-text}
+
+Novo pressuposto: **Esfericidade**** **(Com três ou mais condições/tempo)
+
+  - Como se dá a independência dos resultados em medidas repetidas?
+    - Quase impossível
+    - Teste de esfericidade entra como uma solução para quando a homogeneidade de variância não é
+acatada
+
+    - Teste de esfericidade de Mauchly
+      - Avalia a igualdade da diferença das variâncias entre os diferentes tempos ou condições
+        - *p** *< 0,05 (Esfericidade não assumida)
+        - *p** *> 0,05 (Esfericidade assumida) Isso que você deve esperar
+ANOVA MEDIDAS REPETIDAS
+
+
+---
+
+## {.smaller-text}
+
+Correções ao pressuposto da esfericidade
+
+  - Greenhouse-Geisser: Esfericidade < 0.75
+  - Huynh-Feldt Esfericidade > 0.75
+ANOVA MEDIDAS REPETIDAS
+
+
+---
+
+## {.smaller-text}
+
+Importante:
+
+Normalidade dos dados
+
+Não se refere mais à distribuição da variável, mas sim, **dos**** **resíduos (i.e., variância não explicada pelo modelo)
+
+ANOVA MEDIDAS REPETIDAS
+
+
+---
+
+## {.smaller-text}
+
+Expected Maximization (Maximização Esperada):
+
+Os dados de todos os respondentes são utilizados para tentar estimar a melhor resposta do sujeito aos dados faltantes;
+
+O processo se incia com a média dos itens e com o padrão de covariância das variáveis.
+
+É gerado o primeiro banco sem missing;
+
+Com esse novo banco completo, um novo processo é feito, buscando substituir novamente os valores que anteriormente tinham missing;
+
+É repetido “N” vezes, até que não haja mais diferenças estatisticamente significativas.
+
+MISSING
+
+
+---
+
+## {.smaller-text}
+
+Substituição pela média
+
+A média dos itens permanece a mesma
+
+Aumenta o poder da amostra
+
+**Desvantagem:**
+
+  - Ignora completamente o sujeito, e não leva em consideração o seu próprio padrão de resposta
+  - É um método “completamente fake”.
+MISSING
+
+
+---
+
+## {.smaller-text}
+
+Multiple Imputation (Imputação Múltipla):
+
+  - Considerado um avanço no método da Maximização esperada, porque, gera erros-padrões e intervalos de confiança para imputações realizadas;
+Ao invés de um único banco, são gerados vários bancos de dados imputados
+
+MISSING
+
+
+---
+
+## ANÁLISE	MULTIVARIADA DE VARIÂNCIA {.smaller-text}
+
+MANOVA
+
+
+---
+
+## {.smaller-text}
+
+MANOVA
+
+A MANOVA é uma extensão da ANOVA e se diferencia por ter várias variáveis dependentes
+
+ANOVA → TESTE T
+
+MANOVA → ANOVA
+
+Vantagens da MANOVA:
+
+  - Diminuição do Erro Tipo I (por múltiplas comparações)
+  - Combinação linear das VIs
+
+---
+
+## {.smaller-text}
+
+MANOVA
+
+O poder da combinação linear das variáveis
+
+Exemplo com os geotêsteis
+
+Grupo: Taboa, Ouricuri, Junco
+
+VIs:
+
+- Resistência a tração;
+- Resistência a punção;
+- Rigidez secante.
+Eventualmente, nenhuma VI isolada seria suficiente para distinguir os grupos, mas apenas a
+
+sua combinação linear.
+
+
+---
+
+## {.smaller-text}
+
+MANOVA
+
+Novos pressupostos
+
+Normalidade uni e multivariada
+
+Homogeneidade de variância e co-variância
+
+  - A covariância entre as VDs é equivalente para os diferentes grupos
+
+---
+
+## {.smaller-text}
+
+MANOVA
+
+Diferentes formas de extrair os resultados da MANOVA
+
+**Traço**** ****de**** ****Pillai**** ****(Pillai´s**** ****Trace)**
+
+**Lamba**** ****de**** ****Wilks**** ****(Wilk´s**** ****Lambda)**
+
+T2 de Hotelling (Hotelling´s T2)
+
+Maior raiz de Roy (Roy´s Largest Root)
+
+  - Há evidências de que o Traço de Pillai é o mais robusto quando os pressupostos da MANOVA não são acatados
+    - Olson, C. L. 1974. Comparative Robustness of Six Tests in Multivariate Analysis of Variance. *Journal** **of** **the** **American** **Statistical **Association,** *69:348, 894-908.
+
+---
+
+## {.smaller-text}
+
+MANOVA-MR
+
+Vamos à prática
+
+
+---
+
+## {.smaller-text}
+
+DADOS
+
+
+---
+
+## {.smaller-text}
+
+DADOS
+
+
+---
+
+## {.smaller-text}
+
+Dados faltantes(missing):
+
+Indicam que, pro algum motivo, as amostras se perderam;
+
+Nesta pesquisa está mais ligado ao rompimento do corpo de prova antes do desfecho.
+
+MISSING
+
+
+---
+
+## {.smaller-text}
+
+MANOVA
+
+Vamos à prática:
+
+
+---
+
+## TESTES NÃO-PARAMÉTRICOS {.smaller-text}
+
+Testes de Comparação de Grupos
+
+
+---
+
+## {.smaller-text}
+
+TESTES NÃO-PARAMÉTRICOS
+
+DE DIFERENÇAS DE GRUPOS
+
+O que são:
+
+  - Testes não paramétricos são utilizados quando os pressupostos dos testes paramétricos não
+são acatados:
+
+    - Distribuição normal
+    - Homogeneidade de variância
+Vantagens
+
+- Possui menos pressupostos e mais simples
+- Lógica matemática incrivelmente simples
+- Estrutura dos dados mais simples (e realista)
+- Possibilidade de utilização do teste em amostras muito pequenas
+
+---
+
+## {.smaller-text}
+
+Entendendo as equivalências entre os testes
+
+TESTES NÃO-PARAMÉTRICOS
+
+DE DIFERENÇAS DE GRUPOS
+
+
+| Paramétricos | Não-paramétricos |
+| --- | --- |
+| Teste t para amostras independentes | Mann-Whitney |
+| Análise de Variância | Kruskal-Wallis |
+| Teste t para amostras dependentes | Wilcoxon Signed Rank |
+| Análise de Variância de Medidas Repetidas | ANOVA de Friedman |
+
+
+---
+
+## {.smaller-text}
+
+Algumas questões iniciais importantes:
+
+  - Testes não-paramétricos não utilizam os escores originais dos repetições;
+  - Fazem uma reorganização em torno de rank (posicionamento) e atribui novos valores em termos de ordenação do rank;
+  - Estatísticas de Média e Desvio-Padrão perdem o sentido, de modo que é importante apresentar outras informações da análise, quando se reporta os resultados.
+TESTES NÃO-PARAMÉTRICOS
+
+DE DIFERENÇAS DE GRUPOS
+
+
+---
+
+## MANN-WHITNEY {.smaller-text}
+
+Comparação entre dois grupos independentes
+
+
+---
+
+## {.smaller-text}
+
+MANN-WHITNEY
+
+DOIS GRUPOS INDEPENDENTES
+
+Comparação de 2 grupos independentes
+
+  - Substitui o teste *t** *de Student
+
+| Sujeito | Tratamento | Escore |
+| --- | --- | --- |
+| 1 | A | 4 |
+| 2 | B | 6 |
+| 3 | A | 5 |
+| 4 | B | 9 |
+| 5 | B | 7 |
+| 6 | A | 11 |
+| 7 | B | 11 |
+| 8 | A | 5 |
+| 9 | B | 13 |
+| 10 | A | 12 |
+
+
+---
+
+## {.smaller-text}
+
+Soma de postos:
+
+Grupo A: 22,5
+
+Grupo B: 32,5
+
+MANN-WHITNEY
+
+DOIS GRUPOS INDEPENDENTES
+
+
+| Tratamento | Escore | Posto | Posto Real |
+| --- | --- | --- | --- |
+| A | 4 | 1 | 1 |
+| A | 5 | 2 | 2,5 |
+| A | 5 | 3 | 2,5 |
+| B | 6 | 4 | 4 |
+| B | 7 | 5 | 5 |
+| B | 9 | 6 | 6 |
+| A | 11 | 7 | 7,5 |
+| B | 11 | 8 | 7,5 |
+| A | 12 | 9 | 9 |
+| B | 13 | 10 | 10 |
+
+
+---
+
+## {.smaller-text}
+
+Cálculo do Mann-Whitney
+
+Uma das fórmulas para se calcular o valor de U (quando o número de repetições por grupo
+
+é menor que 20)
+
+*Onde:*
+
+U = estatística a ser calculada;
+
+*N** **=** **número** **de** **participantes** **por** **grupo*
+
+*R** **=** **valor** **da** **soma** **dos** **postos*
+
+*2*
+
+*U**i** **=** **N**1**N**2** **+** **N**1** **(N**1** **+** **1)** **-** **R*
+
+*2*
+
+*A*
+
+*U** **=** **25** **+** **5(6)** **-** **22,5** **=** 17,5*
+
+*U**B** **=** **25** **+** **5(6)** **-** **32,5** **=** 7,5*
+
+*2*
+
+MANN-WHITNEY
+
+DOIS GRUPOS INDEPENDENTES
+
+
+---
+
+## {.smaller-text}
+
+*U**B** **=** **25** **+** **5(6)** **-** **32,5** **=** 7,5*
+
+*2*
+
+MANN-WHITNEY
+
+DOIS GRUPOS INDEPENDENTES
+
+
+---
+
+## {.smaller-text}
+
+Opções alternativas do Mann-Whitney
+
+  - Kolmogorov-Smirnov Z: Maior poder quando N < 25 por grupo;
+  - Moses Extreme Reaction: Compara a variabilidade dos escores entre os grupos (relativamente
+semelhante a um teste de homogeneidade de variância)
+
+  - Wald-Wolfowitz runs: A derivação de significância é um pouco diferente do Mann-Whitney. Aqui, se avalia a ordenação dos postos e não a sua soma. Raramente utilizado.
+MANN-WHITNEY
+
+DOIS GRUPOS INDEPENDENTES
+
+
+---
+
+## KRUSKAL-WALLIS {.smaller-text}
+
+Comparação entre três (ou +) grupos independentes
+
+
+---
+
+## {.smaller-text}
+
+Kruskall-Wallis
+
+  - Substitui a Análise de Variância (ANOVA) para comparar 3 ou + grupos;
+Soma de postos: Grupo A: 16
+
+Grupo B: 20
+
+Grupo C: 19
+
+A estatística H é calculada, considerando a soma de postos de cada
+
+grupo, ponderando pelo total de participantes por grupo (N);
+
+A significância do teste de Kruskall-Wallis é baseada na tabela de significância do qui-quadrado, e portanto, leva em consideração os graus de liberdade (kgrupos - 1)
+
+MANN-WHITNEY
+
+DOIS GRUPOS INDEPENDENTES
+
+
+| Tratamento | Escore | Posto | Posto Real |
+| --- | --- | --- | --- |
+| A | 4 | 1 | 1 |
+| C | 5 | 2 | 2,5 |
+| B | 5 | 3 | 2,5 |
+| C | 6 | 4 | 4 |
+| C | 7 | 5 | 5 |
+| A | 9 | 6 | 6 |
+| B | 11 | 7 | 7,5 |
+| C | 11 | 8 | 7,5 |
+| A | 12 | 9 | 9 |
+| B | 13 | 10 | 10 |
+
+
+---
+
+## {.smaller-text}
+
+Kruskall-Wallis
+
+  - Na medida que o valor de H é estatisticamente significativo, isso significa que existem diferenças entre
+os grupos
+
+  - Segunda etapa: achar as diferenças (*pairwise** **comparisons*)
+    - G1 com G2
+    - G1 com G3
+    - G2 com G3
+  - Controle do Erro Tipo I
+    - SPSS calcula o p-valor ajustado para a quantidade de comparações;
+MANN-WHITNEY
+
+DOIS GRUPOS INDEPENDENTES
+
+
+---
+
+## WILCOXON SIGNED-RANK {.smaller-text}
+
+Comparação entre dois grupos dependents (medidas repetidas)
+
+
+---
+
+## {.smaller-text}
+
+WILCOXON SIGNED-RANK
+
+DOIS GRUPOS DEPENDENTES
+
+Wilcoxon Signed Rank Test (1947): Substitui o Teste t de Student para Medidas
+
+Repetidas
+
+Comparação nos escores entre um grupo que respondeu à pesquisa duas vezes
+
+**Tempo**** ****1****	****Tempo**** ****2**
+
+**Nível**** ****de**
+
+**Estresse**
+
+**Nível**** ****de**
+
+**Estresse**
+
+**Nível**** ****1**
+
+**Nível**** ****2**
+
+
+---
+
+## {.smaller-text}
+
+Wilcoxon Signed Rank Test (1947)
+
+                - Postos são ordenados;
+Empates (Diff = 0) são excluídos;
+
+O sinal da diferença (positivo ou negativo) é considerada no rankeamento;
+
+É calculada uma soma dos ranks positivos (T+) e negativos (T-);
+
+A estatística *T** *geral e o erro padrão é computado;
+
+Escore *T** *é transformado em um escore Z para se avaliar a significância estatística.
+
+WILCOXON SIGNED-RANK
+
+DOIS GRUPOS DEPENDENTES
+
+
+| Sujeito | Pré | Pós | Diff | Sinal |
+| --- | --- | --- | --- | --- |
+| 1 | 5 | 7 | 2 | + |
+| 2 | 6 | 6 | 0 | Tie |
+| 3 | 2 | 3 | 1 | + |
+| 4 | 4 | 8 | 4 | + |
+| 5 | 6 | 7 | 1 | + |
+| 6 | 7 | 6 | 1 | - |
+| 7 | 3 | 7 | 4 | + |
+| 8 | 5 | 8 | 3 | + |
+| 9 | 5 | 5 | 0 | Tie |
+| 10 | 5 | 8 | 3 | + |
+
+
+---
+
+## ANOVA DE FRIEDMAN {.smaller-text}
+
+Comparação entre três ou + grupos dependentes (medidas repetidas)
+
+
+---
+
+## {.smaller-text}
+
+ANOVA DE FRIEDMAN
+
+TRÊS GRUPOS DEPENDENTES
+
+ANOVA de Friedman: Substitui a ANOVA de Medidas Repetidas
+
+
+| Sujeito | Pré | Pós | Follow-up | Rank_Pré | Rank_Pós | Rank_Follow |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | 7 | 6 | 8 | 2 | 1 | 3 |
+| 2 | 5 | 6 | 8 | 1 | 2 | 3 |
+| 3 | 2 | 3 | 5 | 1 | 2 | 3 |
+| 4 | 6 | 7 | 8 | 1 | 2 | 3 |
+| 5 | 7 | 6 | 4 | 3 | 2 | 1 |
+| 6 | 5 | 7 | 9 | 1 | 2 | 3 |
+| 7 | 5 | 8 | 6 | 1 | 3 | 2 |
+| 8 | 5 | 8 | 9 | 1 | 2 | 3 |
+| 9 | 4 | 8 | 5 | 1 | 3 | 2 |
+| 10 | 3 | 6 | 7 | 1 | 2 | 3 |
+| Soma |  |  |  | 13 | 21 | 26 |
+
+
+## {.center background-color="#2135A6"}
+
+::: {style="text-align: center;"}
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
+
+::: {style="color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
+
+Universidade Estadual de Feira de Santana (UEFS)
+:::
+:::
