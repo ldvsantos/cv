@@ -8,6 +8,7 @@ project:
     - "!cv-pdf.qmd"
     - "!cv-pdf-en.qmd"
     - "!cv-pdf-es.qmd"
+    - "!teaching/**/plano-pdf.qmd"
 resources:
   - CNAME
   - cv-luiz-diego.pdf
@@ -17,6 +18,7 @@ resources:
   - aulas/**/*_files/**
   - aulas/assets/**
   - books/**
+  - teaching/**/*.pdf
 
 website:
   title: "Prof. Diego Vidal"
