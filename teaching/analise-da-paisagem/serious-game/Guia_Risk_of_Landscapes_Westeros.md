@@ -25,8 +25,8 @@
 
 | Componente | Quantidade | Descrição |
 |:---|:---:|:---|
-| Mapa de Westeros | 1 | Tabuleiro com 20 territórios agrupados em 10 macro-regiões |
-| Cartas de Território | 20 | Uma por território, com dados paisagísticos e desafio |
+| Mapa de Westeros | 1 | Tabuleiro com 24 territórios agrupados em 11 macro-regiões |
+| Cartas de Território | 24 | Uma por território, com dados paisagísticos e desafio |
 | Cartas Narrativas | 80 | 10 por casa (8 casas), cenários temáticos + desafio de paisagem |
 | Capas de Casa | 8 | Uma capa identificando cada casa (Stark, Greyjoy, Lannister, Tyrell, Martell, Arryn, Tully, Baratheon) |
 | Dados (d6) | 5 | 3 ataque (vermelhos) + 2 defesa (brancos) |
@@ -39,19 +39,21 @@
 
 ## 3. O Mapa — Macro-regiões e Territórios
 
-O mapa de Westeros é dividido em **10 macro-regiões**, cada uma contendo **2 territórios**:
+O mapa de Westeros é dividido em **11 macro-regiões**, totalizando **24 territórios**:
 
-| Macro-região | Territórios | Perfil paisagístico |
-|:---|:---|:---|
-| **The North** | Winterfell, The Dreadfort, White Harbor, Moat Cailin | Grandes florestas boreais (Wolfswood, Haunted Forest). Alta cobertura, poucos fragmentos, alta conectividade. |
-| **The Vale** | The Eyrie, Gulltown | Florestas montanas isoladas por relevo. Conectividade interna alta, isolamento externo. |
-| **The Riverlands** | Riverrun, Harrenhal | Paisagem devastada por guerras e agricultura. Alta fragmentação, muitos fragmentos pequenos, baixa conectividade. |
-| **The Westerlands** | Lannisport, Casterly Rock | Mineração intensa fragmentou a cobertura. Trade-off provisão mineral × regulação ecológica. |
-| **The Reach** | Highgarden, Oldtown | Celeiro de Westeros. Matriz agrícola dominante, alta diversidade de uso (SHDI alto), baixa cobertura florestal. |
-| **The Stormlands** | Storm's End, Shipbreaker Bay | Florestas temperadas sob distúrbio de tempestades. Cobertura moderada, dinâmica de perturbação natural. |
-| **Dorne** | Sunspear, Sandstone | Paisagem árida, vegetação esparsa. Matriz desértica de baixa permeabilidade. PLAND muito baixo. |
-| **The Crownlands** | King's Landing, Dragonstone | Contraste extremo: capital urbanizada (alta fragmentação) vs. ilha preservada (poucos fragmentos grandes). |
-| **Iron Islands** | Pyke, Harlaw | Ilhas rochosas com vegetação mínima. PLAND mais baixo de Westeros. Paisagens abaixo do limiar de percolação. |
+| Macro-região | Terr. | Territórios | Perfil paisagístico |
+|:---|:---:|:---|:---|
+| **Beyond the Wall** | 2 | Castle Black, Hardhome | Tundra e floresta boreal extrema. Paisagem selvagem sem intervenção antrópica. Conectividade natural máxima; barreira climática como fator limitante. |
+| **Stark's Region** | 4 | Winterfell, White Harbor, Moat Cailin, Last Hearth | Grandes florestas boreais (Wolfswood, Haunted Forest). Alta cobertura, poucos fragmentos, alta conectividade. |
+| **Bolton's Region** | 3 | The Dreadfort, Karhold, Barrowlands | Paisagem de transição: florestas fragmentadas por ocupação militar. Fragmentação crescente do norte ao sul; contraste com Stark's Region. |
+| **The Vale** | 1 | The Eyrie | Fortaleza montana isolada por relevo. Conectividade interna alta, isolamento externo extremo. |
+| **The Riverlands** | 2 | Riverrun, Harrenhal | Paisagem devastada por guerras e agricultura. Alta fragmentação, muitos fragmentos pequenos, baixa conectividade. |
+| **The Iron Islands** | 1 | Pyke | Ilha rochosa com vegetação mínima. PLAND mais baixo de Westeros. Abaixo do limiar de percolação. |
+| **The Westerlands** | 2 | Casterly Rock, Lannisport | Mineração intensa fragmentou a cobertura. Trade-off provisão mineral × regulação ecológica. |
+| **The Crownlands** | 2 | King's Landing, Dragonstone | Contraste extremo: capital urbanizada (alta fragmentação) vs. ilha preservada (poucos fragmentos grandes). |
+| **The Reach** | 4 | Highgarden, Oldtown, Horn Hill, Ashford | Celeiro de Westeros. Matriz agrícola dominante, alta diversidade de uso (SHDI alto), gradiente de paisagens rurais. |
+| **The Stormlands** | 1 | Storm's End | Floresta temperada sob distúrbio de tempestades. Cobertura moderada, dinâmica de perturbação natural (Tricart intergrade). |
+| **Dorne** | 2 | Sunspear, Sandstone | Paisagem árida, vegetação esparsa. Matriz desértica de baixa permeabilidade. PLAND muito baixo. |
 
 ---
 
@@ -90,17 +92,17 @@ Os alunos devem perceber as seguintes relações ecológicas nos dados:
 > **Regra fundamental:** Cada casa possui **6 tokens físicos**. Todos começam com **3 tokens no mapa**. Os outros 3 ficam na **reserva pessoal** (ao lado do jogador) e só podem ser mobilizados por **mérito** (acertar desafios ou trocar Tokens de Restauração). **Cartas de território** = posse. **Tokens no mapa** = força militar.
 
 1. **Escolher casa**: cada jogador escolhe uma das 8 casas de Westeros. Recebe os 6 tokens da sua cor, o baralho de narrativas correspondente (10 cartas, embaralhado face para baixo) e a **carta de Castelo** da casa.
-2. **Distribuir territórios**: embaralhe as 20 cartas de território e distribua igualmente (veja tabela). Territórios restantes ficam **neutros** (sem dono e sem tokens).
+2. **Distribuir territórios**: embaralhe as 24 cartas de território e distribua igualmente (veja tabela). Territórios restantes ficam **neutros** (sem dono e sem tokens).
 3. **Posicionar tokens**: cada jogador coloca **3 tokens no mapa** livremente entre seus territórios, com uma obrigação: o **Castelo Principal** da sua casa deve receber **pelo menos 1 token**. Os outros **3 ficam na reserva**.
 4. **Missão secreta**: cada jogador recebe 1 carta de missão que define seu objetivo de vitória.
 
 | Jogadores | Territórios/jogador | Territórios neutros | No mapa | Na reserva | Total |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| 2 | 10 | 0 | 3 | 3 | 6 |
-| 3 | 6 | 2 | 3 | 3 | 6 |
-| 4 | 5 | 0 | 3 | 3 | 6 |
-| 5 | 4 | 0 | 3 | 3 | 6 |
-| 6 | 3 | 2 | 3 | 3 | 6 |
+| 2 | 8 | 8 | 3 | 3 | 6 |
+| 3 | 6 | 6 | 3 | 3 | 6 |
+| 4 | 5 | 4 | 3 | 3 | 6 |
+| 5 | 4 | 4 | 3 | 3 | 6 |
+| 6 | 3 | 6 | 3 | 3 | 6 |
 
 **Territórios neutros:** não pertencem a ninguém. Podem ser conquistados sem combate (basta mover 1 token), mas o jogador deve responder ao Desafio da Paisagem.
 
@@ -130,36 +132,99 @@ No início de cada turno, o jogador pode:
 
 **Bônus por macro-região completa:**
 
-| Macro-região | Bônus | Justificativa ecológica |
-|:---|:---:|:---|
-| The North (4 territórios) | +1 token da reserva + relançar 1 dado | Maior macro-região; florestas contínuas geram alta resiliência |
-| The Vale | +1 token da reserva | Isolamento montano dificulta conquista, mas limita reforços |
-| The Riverlands | +1 token da reserva | Posição central: corredores fluviais conectam |
-| The Westerlands | +1 token da reserva | Recursos minerais compensam a degradação |
-| The Reach | +1 token da reserva | Celeiro produtivo: serviços de provisão alimentam exércitos |
-| The Stormlands | +1 token da reserva | Tempestades limitam logística |
-| Dorne | +1 token da reserva | Paisagem árida com baixa capacidade de suporte |
-| The Crownlands | +1 token da reserva | Capital política: poder centralizado |
-| Iron Islands | +1 token da reserva | Ilhas com poucos recursos paisagísticos |
+| Macro-região | Terr. | Bônus | Justificativa ecológica |
+|:---|:---:|:---:|:---|
+| Beyond the Wall (2) | 2 | +1 token da reserva | Paisagem selvagem = recursos naturais intocados |
+| Stark's Region (4) | 4 | +1 token da reserva + relançar 1 dado | Maior macro-região; florestas contínuas geram alta resiliência |
+| Bolton's Region (3) | 3 | +1 token da reserva + relançar 1 dado | Região extensa; fragmentação oferece posições defensivas |
+| The Vale (1) | 1 | +1 Token de Restauração | Controle automático; fortaleza natural compensa |
+| The Riverlands (2) | 2 | +1 token da reserva | Posição central: corredores fluviais conectam |
+| The Iron Islands (1) | 1 | +1 Token de Restauração | Controle automático; recursos insulares escassos |
+| The Westerlands (2) | 2 | +1 token da reserva | Recursos minerais compensam a degradação |
+| The Crownlands (2) | 2 | +1 token da reserva | Capital política: poder centralizado |
+| The Reach (4) | 4 | +1 token da reserva + relançar 1 dado | Região extensa; celeiro produtivo de Westeros |
+| The Stormlands (1) | 1 | +1 Token de Restauração | Controle automático; resiliência pós-distúrbio |
+| Dorne (2) | 2 | +1 token da reserva | Paisagem árida com baixa capacidade de suporte |
+
+> **Nota:** Macro-regiões com **1 território** concedem seu bônus automaticamente a quem controlar aquele território. Para compensar a facilidade, recebem **+1 Token de Restauração** (em vez de +1 token da reserva).
 
 #### Fase 2 — Ataque ⚔️
 
-O jogador pode atacar territórios adjacentes (conectados no mapa). O combate segue as regras clássicas do RISK (dados):
+O jogador pode atacar territórios adjacentes (conectados no mapa). Cada tentativa de ataque segue **4 passos obrigatórios**:
 
-- **Atacante**: lança dados igual ao número de tokens no território atacante (máximo 3 dados). Deve deixar pelo menos 1 token no território de origem.
-- **Defensor**: lança dados igual ao número de tokens no território defendido (máximo 2 dados). Mínimo 1 dado.
-- **Comparação**: dados ordenados do maior para o menor, comparados par a par. Empate favorece o defensor.
-- **Perdedor** de cada par **remove 1 token** do território → o token volta para a **reserva pessoal** do dono (representa recuo/reorganização).
-- **Território a 0 tokens** → **conquistado**: o atacante move pelo menos 1 token para lá e pega a carta de território.
+##### Passo 1 — Teste de Mobilização do Atacante 🎲
 
-**🏆 Captura de tokens:** ao conquistar um território, o atacante **captura todos os tokens do defensor que restavam ali** (se houver) — eles vão para a **reserva do atacante**. Isso significa que um jogador agressivo pode acumular **mais de 6 tokens** ao longo do jogo! (Representam tropas capturadas / recursos saqueados.)
+Antes de atacar, o jogador deve provar capacidade logística para mobilizar suas forças:
 
-**Conquistar território neutro:** basta mover 1 token para lá (sem combate), mas deve responder ao Desafio da Paisagem.
+1. Escolhe quantos tokens compromete no ataque (1 a 3), deixando sempre **≥1 no território de origem**.
+2. Lança **1 dado por token comprometido**.
+3. Calcula a **média**: soma dos dados ÷ nº de dados.
+4. A média deve ser **≥ total acumulado de tokens já movimentados em ataques nesta rodada** (soma de TODOS os ataques anteriores + o atual).
 
-**Conquistar território desguarnecido (0 tokens):** ocupação automática — move 1 token e pega a carta. Deve responder ao Desafio.
+| Situação | Tokens | Dados | Média | Acumulado exigido | Resultado |
+|:---|:---|:---|:---|:---|:---|
+| 1º ataque | 2 | (4, 5) | 4,5 | ≥ 2 | ✅ Passa |
+| 2º ataque | 1 | (2) | 2,0 | ≥ 3 (2+1) | ❌ Falha |
+| 2º ataque | 1 | (5) | 5,0 | ≥ 3 (2+1) | ✅ Passa |
+| 3º ataque | 2 | (3, 6) | 4,5 | ≥ 5 (2+1+2) | ❌ Falha |
+
+- ✅ **Passa** → avança para o Passo 2.
+- ❌ **Falha** → ataque cancelado. **Rodada de ataques encerrada** (não pode tentar mais ataques neste turno).
+
+> **Efeito estratégico:** cada ataque consecutivo exige média mais alta. Comprometer poucos tokens mantém o acumulado baixo (mais ataques possíveis, porém mais fracos). Comprometer muitos é mais forte, mas eleva o patamar rapidamente. **Isso impede dominação rápida e força decisões táticas**, mesmo para o aluno que domina o conteúdo.
+
+##### Passo 2 — Teste de Mobilização do Defensor 🛡️
+
+O defensor testa a capacidade de organizar sua defesa:
+
+1. Lança dados igual ao nº de tokens no território (**máximo 2 dados**, mínimo 1).
+2. Calcula a **média**: soma ÷ nº de dados.
+3. Tokens efetivos para defesa = **⌊média⌋** (arredondado para baixo, **mínimo 1**).
+4. O defensor usará **dados = tokens efetivos** no combate (máximo 2).
+
+| Tokens no território | Dados | Média | Tokens efetivos (dados no combate) |
+|:---|:---|:---|:---|
+| 3 | (5, 4) | 4,5 → 4 | 2 (máx. dados defesa) |
+| 3 | (2, 1) | 1,5 → 1 | **1** (mobilização fraca!) |
+| 2 | (3, 6) | 4,5 → 4 | 2 |
+| 2 | (1, 2) | 1,5 → 1 | **1** |
+| 1 | (4) | 4,0 | 1 |
+
+> **Efeito estratégico:** mesmo um território "forte" (3 tokens) pode ter defesa enfraquecida por má mobilização — simula surpresa tática ou desorganização. O defensor **não pode contar automaticamente com toda sua guarnição**.
+
+##### Passo 3 — Passa ou Repassa 📚
+
+Antes do combate, um **desafio educacional obrigatório** no formato *Passa ou Repassa*:
+
+1. O professor (ou jogador designado) lê uma **pergunta** da carta do território atacado.
+2. O **atacante responde primeiro**:
+   - ✅ **Acertou** → ganha o direito de **relançar 1 dado** no combate (escolhe qual após ver o resultado).
+   - ❌ **Errou ou passou** → a pergunta é **repassada ao defensor**.
+3. Se repassada ao defensor:
+   - ✅ **Defensor acertou** → defensor ganha o direito de **relançar 1 dado** no combate.
+   - ❌ **Ambos erraram** → combate sem bônus. Ambos perdem **1 Token de Restauração** (se tiverem) — ignorância degrada a paisagem!
+
+> **Efeito pedagógico:** a cada tentativa de ataque, pelo menos 1 jogador é forçado a responder sobre Ecologia da Paisagem. Mesmo ataques fracassados geram aprendizado. Combinado com o Teste de Mobilização, **impede que conhecimento sozinho garanta dominação**.
+
+##### Passo 4 — Resolução do Combate ⚔️
+
+1. **Atacante** lança novos dados = tokens comprometidos (máximo **3 dados**).
+2. **Defensor** lança novos dados = **tokens efetivos** do Passo 2 (máximo **2 dados**).
+3. Quem venceu o **Passa ou Repassa** pode **relançar 1 dado** à sua escolha (fica com o melhor resultado).
+4. Dados ordenados do **maior ao menor**, comparados **par a par**. **Empate favorece o defensor.**
+5. **Perdedor** de cada par **remove 1 token** → retorna para a **reserva pessoal** do dono.
+6. **Território a 0 tokens** → **conquistado**: atacante move ≥1 token e pega a carta.
+
+---
+
+**🏆 Captura de tokens:** ao conquistar, o atacante **captura todos os tokens restantes** do defensor ali — vão para a **reserva do atacante**. Um jogador agressivo pode acumular **mais de 6 tokens** ao longo do jogo! (Representam tropas capturadas / recursos saqueados.)
+
+**Conquistar território neutro:** o Teste de Mobilização (Passo 1) se aplica e **conta no acumulado da rodada**, mas **não há Teste do Defensor, Passa ou Repassa, nem combate**. Basta mover 1 token. Deve responder ao Desafio da Paisagem (Fase 3).
+
+**Conquistar território desguarnecido (0 tokens):** mesmo procedimento do neutro — Teste de Mobilização, ocupação automática, move 1 token e pega a carta. Deve responder ao Desafio.
 
 **REGRA ESPECIAL — Vantagem de conectividade:**
-Se o território atacante tem **CONNECT ≥ 60**, o atacante pode relançar **1 dado** por tentativa de ataque (paisagens bem conectadas têm melhor logística).
+Se o território atacante tem **CONNECT ≥ 60**, o atacante pode relançar **1 dado adicional** por tentativa de ataque (paisagens bem conectadas têm melhor logística). Esse bônus é **cumulativo** com o do Passa ou Repassa — o atacante pode relançar até **2 dados** no total.
 
 #### Fase 3 — Desafio da Paisagem 🌿
 
@@ -248,7 +313,7 @@ Cada castelo oferece uma vantagem única baseada na ecologia da paisagem local. 
 
 | Castelo | Habilidade | Base Ecológica | Trade-off |
 |:---|:---|:---|:---|
-| **Winterfell** | **Proteção Florestal**: +1 dado de defesa em todos os territórios do The North | PLAND 78% = cobertura florestal contínua oferece cobertura defensiva natural | Posição periférica ao norte, longe dos centros de recursos |
+| **Winterfell** | **Proteção Florestal**: +1 dado de defesa em todos os territórios de Stark's Region | PLAND 78% = cobertura florestal contínua oferece cobertura defensiva natural | Posição periférica ao norte, longe dos centros de recursos |
 | **Pyke** | **Ponte Marítima**: pode atacar/mover tokens para qualquer território costeiro, mesmo não adjacente | Stepping stones oceânicos = dispersão marítima entre ilhas | PLAND 12,5% = território próprio extremamente frágil |
 | **Casterly Rock** | **Riqueza Mineral**: troca apenas **2** Tokens de Restauração (em vez de 3) para mobilizar 1 token | SE alto de provisão = recursos minerais abundantes | CONNECT 38 = baixa conectividade, sem bônus de relançamento |
 | **Highgarden** | **Celeiro Fértil**: ganha **+1 Token de Restauração** extra em qualquer acerto (completo ou parcial) de desafio | SHDI alto = matriz agrícola diversificada, produção abundante | PLAND 22% = pouca vegetação nativa, território ecologicamente frágil |
@@ -263,16 +328,16 @@ Cada castelo oferece uma vantagem única baseada na ecologia da paisagem local. 
 
 | # | Missão | Conceito paisagístico |
 |:---:|:---|:---|
-| 1 | Controlar The North inteiro | Manter a maior mancha contínua de Westeros |
+| 1 | Controlar Stark's Region inteira (4 terr.) | Manter a maior mancha contínua de Westeros |
 | 2 | Controlar 3 macro-regiões completas quaisquer | Dominar mosaicos funcionais completos |
 | 3 | Controlar Winterfell + Highgarden + Sunspear | Gradiente de paisagens (boreal → agrícola → árida) |
 | 4 | Controlar 12 territórios quaisquer | Expandir a cobertura territorial (analogia com PLAND) |
-| 5 | Controlar todas as regiões costeiras (White Harbor, Gulltown, Shipbreaker Bay, Sunspear, Pyke, Dragonstone) | Conectividade litoral — corredor costeiro |
+| 5 | Controlar todas as regiões costeiras (White Harbor, Hardhome, Sunspear, Pyke, Dragonstone, Oldtown) | Conectividade litoral — corredor costeiro |
 | 6 | Conquistar o Castelo Principal de um jogador específico | Extinção competitiva (analogia com exclusão de nicho) |
-| 7 | Controlar The Riverlands + The Reach + The Crownlands | Dominar o corredor central de Westeros |
+| 7 | Controlar The Riverlands + The Reach + The Crownlands (8 terr.) | Dominar o corredor central de Westeros |
 | 8 | Controlar 8 territórios e ter ≥ 5 Tokens de Restauração | Equilíbrio entre conquista e conservação |
 | 9 | Controlar Dragonstone + The Eyrie + Winterfell | Dominar as 3 paisagens com maior área nuclear |
-| 10 | Controlar todas as Iron Islands + Dorne | Restaurar as paisagens mais degradadas de Westeros |
+| 10 | Controlar Beyond the Wall + Dorne (4 terr.) | Conectar extremos climáticos — restaurar paisagens extremas |
 
 ---
 
@@ -328,26 +393,30 @@ Os Tokens de Restauração representam o **capital ecológico** acumulado pelo j
 
 | Território | Resposta esperada |
 |:---|:---|
+| **Castle Black** | A Muralha funciona como **barreira ecológica artificial**: impede o fluxo de organismos entre Norte e Sul. Apesar de PLAND altíssimo (>85%), a conectividade funcional é bloqueada na direção norte-sul. A barreira evidencia que conectividade estrutural ≠ conectividade funcional. |
+| **Hardhome** | Paisagem **sem fragmentação antrópica**: PLAND próximo de 90%, pouquíssimos fragmentos, todos grandes. Serve como **referência (controle)** para comparar com paisagens degradadas ao sul. Demonstra o estado pré-perturbação do ecossistema boreal. |
 | **Winterfell** | A **matriz** predomina, pois com 78% de cobertura florestal a vegetação é o elemento mais extenso e conectado da paisagem. O conceito de matriz é definido como o elemento dominante no mosaico. |
-| **The Dreadfort** | Mais fragmentada — NP dobrou (12→24) e AREA_MN caiu pela metade (6533→2675). Ambas as métricas apontam na mesma direção: subdivisão do habitat contínuo. |
 | **White Harbor** | Com PLAND 45,8% vs. 78,4%, a relação S=cA^z prediz menor riqueza de espécies, pois a área total de habitat disponível é muito menor. A perda não é linear (z≈0,25 = curva côncava). |
 | **Moat Cailin** | Função de **filtro/barreira**: ponto estreito entre Norte e Sul que restringe o fluxo de organismos. Funciona como gargalo paisagístico. Pode ser conduto se a cobertura florestal está mantida ao longo do corredor. |
+| **Last Hearth** | Paisagem de **transição boreal**: PLAND 65% marca a fronteira onde a cobertura contínua começa a se fragmentar. Demonstra o conceito de **gradiente latitudinal** — a paisagem muda progressivamente com a latitude, e com ela mudam as métricas. |
+| **The Dreadfort** | Mais fragmentada — NP dobrou (12→24) e AREA_MN caiu pela metade (6533→2675). Ambas as métricas apontam na mesma direção: subdivisão do habitat contínuo. |
+| **Karhold** | Paisagem com **fragmentação intermediária**: PLAND ~40%, NP moderado. Demonstra a relação **não-linear** entre perda de habitat e número de fragmentos — a fragmentação se acelera na faixa 30-60% de PLAND (curva em sino de NP). |
+| **Barrowlands** | Planícies com **fragmentos residuais** em matriz agrícola. Contraste com Bolton's Dreadfort demonstra como a distância à fonte (floresta boreal do norte) afeta a recolonização — **teoria de metapopulações** (efeito resgate). |
 | **The Eyrie** | Montanhas funcionam como barreiras naturais que isolam externamente, mas internamente os vales mantêm cobertura contínua. A conectividade estrutural é alta dentro dos limites montanos porque a topografia concentra os remanescentes em áreas contíguas de difícil acesso. |
-| **Gulltown** | Para fragmentos circulares: raio = √(A/π). Com A=921 ha=9,21 km², r≈1,71 km. Borda de 100m: raio interno = 1,61 km, Área nuclear = π(1,61)² = 8,14 km². Core ≈ 88%. Na prática, formas reais são irregulares, então o valor real seria menor (~32% conforme os dados). |
-| **Riverrun** | Está no limiar (28% está dentro da faixa 20–30%). Consequências: declínio abrupto de riqueza, perda de conectividade, aumento de extinções locais, comprometimento de serviços de regulação hídrica (especialment crítico nas Riverlands). |
+| **Riverrun** | Está no limiar (28% está dentro da faixa 20–30%). Consequências: declínio abrupto de riqueza, perda de conectividade, aumento de extinções locais, comprometimento de serviços de regulação hídrica (especialmente crítico nas Riverlands). |
 | **Harrenhal** | Alta ED → mais perímetro exposto → mais efeito de borda (alteração microclimática: temperatura, umidade, vento, luminosidade) → menor proporção do fragmento funciona como habitat efetivo (core area). ED e CORE são inversamente proporcionais por mecanismo causal direto. |
-| **Lannisport** | Trade-off: a extração de ouro (serviço de provisão) fragmentou a cobertura florestal, reduzindo serviços de regulação (controle de erosão, regulação hídrica, sequestro de carbono). O PIB mineral ignora o valor dos serviços perdidos. |
+| **Pyke** | **Não mantém** — 12,5% está muito abaixo do limiar de percolação (~59%) e mesmo do limiar empírico (20–30%). A paisagem está estruturalmente desconectada. Os 6,8% de área nuclear indicam que quase todo o habitat remanescente sofre efeito de borda severo. |
 | **Casterly Rock** | Casterly Rock (SHDI=1,48) é mais heterogênea. Se "bom" ou "ruim" depende do contexto: alta diversidade composicional pode refletir diversidade de usos sustentáveis (positivo) OU fragmentação por conversão (negativo). A interpretação exige conhecer a causa. |
-| **Highgarden** | O alto SHDI resulta de múltiplas classes de uso (lavouras diversificadas, pastagens, pomares, vinhedos, fragmentos florestais, rios) típicas de uma paisagem agrícola produtiva. A agricultura diversificada gera alta heterogeneidade composicional mesmo com baixo PLAND de vegetação nativa. |
-| **Oldtown** | 12 fragmentos < 50 ha de 52 totais = 23%. Fragmentos abaixo do tamanho mínimo viável funcionam como stepping stones (trampolins ecológicos), mas não sustentam populações residentes de grandes mamíferos. |
-| **Storm's End** | Meio **intergrade** (equilíbrio frágil). Tempestades geram distúrbios que mantêm a paisagem em estado intermediário entre estabilidade e instabilidade. A cobertura moderada (55,7%) sugere capacidade de regeneração pós-distúrbio, mas vulnerabilidade a perturbações extremas. |
-| **Shipbreaker Bay** | A menor conectividade (44 vs. 72) se explica pela **permeabilidade da matriz**: a matriz costeira (rochas, praias, vegetação arbustiva) é menos favorável ao deslocamento de organismos florestais que os vales internos do Vale. A topografia e o tipo de matriz são determinantes. |
-| **Sunspear** | **Regulação hídrica** é a mais crítica em ambientes áridos: com escassez de água, a perda de vegetação reduz infiltração, aumenta escoamento superficial e erosão, comprometendo a disponibilidade de água que é o recurso limitante no ecossistema. |
-| **Sandstone** | **Maior para lagartos** — a matriz desértica aberta é o habitat natural de muitas espécies de lagartos (alta permeabilidade), mas é hostil para aves florestais que dependem de cobertura arbórea para deslocamento (baixa permeabilidade). Conectividade funcional é espécie-específica. |
+| **Lannisport** | Trade-off: a extração de ouro (serviço de provisão) fragmentou a cobertura florestal, reduzindo serviços de regulação (controle de erosão, regulação hídrica, sequestro de carbono). O PIB mineral ignora o valor dos serviços perdidos. |
 | **King's Landing** | A urbanização cria muitas classes de cobertura (edificações, jardins, praças, hortas, rios canalizados, fragmentos remanescentes) → SHDI alto. Mas cada classe é isolada por infraestrutura impermeável → conectividade baixa. Diversidade composicional ≠ conectividade funcional. |
 | **Dragonstone** | **Ambos os lados**: Proteção — o isolamento insular impediu a conversão agrícola/urbana que devastou o continente, preservando manchas grandes com alta área nuclear. Ameaça — o isolamento limita recolonização após extinções, reduz fluxo gênico e aumenta vulnerabilidade a eventos estocásticos (teoria de biogeografia de ilhas). |
-| **Pyke** | **Não mantém** — 12,5% está muito abaixo do limiar de percolação (~59%) e mesmo do limiar empírico (20–30%). A paisagem está estruturalmente desconectada. Os 6,8% de área nuclear indicam que quase todo o habitat remanescente sofre efeito de borda severo. |
-| **Harlaw** | (a) Priorizar **corredores** ripários (conectam fragmentos existentes) e **stepping stones** (trampolins entre manchas isoladas); (b) Posicionar na **matriz entre os fragmentos maiores** para reconectar primeiramente as manchas com maior viabilidade, maximizando a conectividade funcional com menor área restaurada. |
+| **Highgarden** | O alto SHDI resulta de múltiplas classes de uso (lavouras diversificadas, pastagens, pomares, vinhedos, fragmentos florestais, rios) típicas de uma paisagem agrícola produtiva. A agricultura diversificada gera alta heterogeneidade composicional mesmo com baixo PLAND de vegetação nativa. |
+| **Oldtown** | 12 fragmentos < 50 ha de 52 totais = 23%. Fragmentos abaixo do tamanho mínimo viável funcionam como stepping stones (trampolins ecológicos), mas não sustentam populações residentes de grandes mamíferos. |
+| **Horn Hill** | Zona de **transição floresta-campo**: PLAND ~35%, ED alta. Demonstra o conceito de **ecótono** — faixa de transição entre dois ecossistemas com propriedades emergentes (maior diversidade de borda, espécies generalistas). |
+| **Ashford** | Paisagem agrícola com **corredores de sebes** (hedgerows). SHDI alto, CONNECT moderado. As sebes funcionam como corredores ecológicos lineares para invertebrados e aves, compensando parcialmente a fragmentação. Conceito de **paisagem complementar**. |
+| **Storm's End** | Meio **intergrade** (equilíbrio frágil). Tempestades geram distúrbios que mantêm a paisagem em estado intermediário entre estabilidade e instabilidade. A cobertura moderada (55,7%) sugere capacidade de regeneração pós-distúrbio, mas vulnerabilidade a perturbações extremas. |
+| **Sunspear** | **Regulação hídrica** é a mais crítica em ambientes áridos: com escassez de água, a perda de vegetação reduz infiltração, aumenta escoamento superficial e erosão, comprometendo a disponibilidade de água que é o recurso limitante no ecossistema. |
+| **Sandstone** | **Maior para lagartos** — a matriz desértica aberta é o habitat natural de muitas espécies de lagartos (alta permeabilidade), mas é hostil para aves florestais que dependem de cobertura arbórea para deslocamento (baixa permeabilidade). Conectividade funcional é espécie-específica. |
 
 ---
 
@@ -357,16 +426,20 @@ Os Tokens de Restauração representam o **capital ecológico** acumulado pelo j
 
 | Conteúdo da disciplina | Territórios que abordam |
 |:---|:---|
-| Modelo mancha-corredor-matriz | Winterfell, Moat Cailin, Harlaw |
-| Métricas de composição (PLAND, SHDI) | White Harbor, Casterly Rock, Highgarden, King's Landing |
-| Métricas de configuração (NP, ED, CORE) | The Dreadfort, Gulltown, Harrenhal, Oldtown |
-| Fragmentação e limiares | Riverrun, Sandstone, Pyke |
-| Conectividade (estrutural e funcional) | The Eyrie, Shipbreaker Bay, Sandstone |
+| Modelo mancha-corredor-matriz | Winterfell, Moat Cailin, Ashford |
+| Métricas de composição (PLAND, SHDI) | White Harbor, Casterly Rock, Highgarden, King's Landing, Last Hearth |
+| Métricas de configuração (NP, ED, CORE) | The Dreadfort, Karhold, Harrenhal, Oldtown, Horn Hill |
+| Fragmentação e limiares | Riverrun, Sandstone, Pyke, Karhold |
+| Conectividade (estrutural e funcional) | The Eyrie, Castle Black, Sandstone |
 | Serviços ecossistêmicos e trade-offs | Lannisport, Sunspear, Highgarden |
 | Relação espécie-área | White Harbor, Dragonstone |
-| Efeito de borda | Harrenhal, Pyke |
+| Efeito de borda | Harrenhal, Pyke, Horn Hill |
 | Classificação de Tricart | Storm's End |
-| Restauração ecológica e planejamento | Harlaw, Riverrun |
+| Restauração ecológica e planejamento | Barrowlands, Riverrun |
+| Paisagem de referência (controle) | Hardhome, Castle Black |
+| Ecótono e gradiente | Last Hearth, Horn Hill |
+| Metapopulações e efeito resgate | Barrowlands, Karhold |
+| Paisagem complementar e corredores de sebes | Ashford |
 
 ### 10.2 Conteúdos Abordados pelas Cartas Narrativas por Casa
 
@@ -404,7 +477,7 @@ Os jogadores trabalham **juntos** contra o tabuleiro. A cada rodada, um “Event
 Ao conquistar um território, o jogador deve defender sua resposta ao desafio perante os demais jogadores, que podem fazer perguntas. O grupo vota se a resposta é satisfatória. Incentiva argumentação científica oral.
 
 ### 12.3 Modo Rápido — "Skirmish"
-Usa apenas 10 territórios (um por macro-região, escolhidos aleatoriamente). Jogo em 30–45 minutos.
+Usa apenas 11 territórios (um por macro-região, escolhidos aleatoriamente). Jogo em 30–45 minutos.
 
 ### 12.4 Modo Narrativa Intensiva — "Crônicas de Westeros"
 Cada jogador usa **todas as 10 cartas** da sua casa em sequência obrigatória (Carta 01 → Carta 10). Não se avança para a próxima carta sem acertar a atual. Em compensação, cada acerto completo vale **5 Tokens de Restauração** em vez de 3. O primeiro jogador a completar as 10 cartas da sua casa vence automaticamente.
@@ -418,7 +491,7 @@ Todos os componentes do jogo estão disponíveis em um único arquivo para impre
 | Arquivo | Conteúdo |
 |:---|:---|
 | `risk-of-landscapes-print-all.html` | **Arquivo unificado** com todas as cartas (território, missão, referência, narrativas), mapa SVG e painel de controle para impressão seletiva |
-| `Cartas_de_Territorio_Paisagens_de_Westeros.csv` | Dados brutos das 20 cartas de território |
+| `Cartas_de_Territorio_Paisagens_de_Westeros.csv` | Dados brutos das 24 cartas de território |
 
 **Como imprimir:**
 1. Abra `risk-of-landscapes-print-all.html` em um navegador (Chrome recomendado).

@@ -262,8 +262,8 @@ li{margin-bottom:3px;font-size:10pt;}
     </div>
     <div>
       <table>
-        <tr><td>Mapa (20 territórios)</td><td style="text-align:center">1</td></tr>
-        <tr><td>Cartas de Território</td><td style="text-align:center">20</td></tr>
+        <tr><td>Mapa (24 territórios)</td><td style="text-align:center">1</td></tr>
+        <tr><td>Cartas de Território</td><td style="text-align:center">24</td></tr>
         <tr><td>Cartas Narrativas</td><td style="text-align:center">80</td></tr>
         <tr><td>Dados (3🔴 + 2⚪)</td><td style="text-align:center">5</td></tr>
         <tr><td>Tokens por casa</td><td style="text-align:center">6</td></tr>
@@ -282,18 +282,18 @@ li{margin-bottom:3px;font-size:10pt;}
 
   <ol>
     <li><strong>Escolher casa</strong> — recebe 6 tokens, 10 cartas narrativas e a carta de Castelo.</li>
-    <li><strong>Distribuir territórios</strong> — embaralhe as 20 cartas e distribua igualmente. Restantes ficam neutros.</li>
+    <li><strong>Distribuir territórios</strong> — embaralhe as 24 cartas e distribua igualmente. Restantes ficam neutros.</li>
     <li><strong>Posicionar tokens</strong> — coloque <strong>3 tokens no mapa</strong>. O <strong>Castelo Principal deve ter ≥1 token</strong>. Os outros 3 ficam na reserva.</li>
     <li><strong>Missão secreta</strong> — cada jogador recebe 1 carta de missão (objetivo de vitória).</li>
   </ol>
 
   <table>
     <tr><th style="text-align:center">Jogadores</th><th style="text-align:center">Terr./jog.</th><th style="text-align:center">Neutros</th><th style="text-align:center">No mapa</th><th style="text-align:center">Reserva</th></tr>
-    <tr><td style="text-align:center">2</td><td style="text-align:center">10</td><td style="text-align:center">0</td><td style="text-align:center">3</td><td style="text-align:center">3</td></tr>
-    <tr><td style="text-align:center">3</td><td style="text-align:center">6</td><td style="text-align:center">2</td><td style="text-align:center">3</td><td style="text-align:center">3</td></tr>
-    <tr><td style="text-align:center">4</td><td style="text-align:center">5</td><td style="text-align:center">0</td><td style="text-align:center">3</td><td style="text-align:center">3</td></tr>
-    <tr><td style="text-align:center">5</td><td style="text-align:center">4</td><td style="text-align:center">0</td><td style="text-align:center">3</td><td style="text-align:center">3</td></tr>
-    <tr><td style="text-align:center">6</td><td style="text-align:center">3</td><td style="text-align:center">2</td><td style="text-align:center">3</td><td style="text-align:center">3</td></tr>
+    <tr><td style="text-align:center">2</td><td style="text-align:center">8</td><td style="text-align:center">8</td><td style="text-align:center">3</td><td style="text-align:center">3</td></tr>
+    <tr><td style="text-align:center">3</td><td style="text-align:center">6</td><td style="text-align:center">6</td><td style="text-align:center">3</td><td style="text-align:center">3</td></tr>
+    <tr><td style="text-align:center">4</td><td style="text-align:center">5</td><td style="text-align:center">4</td><td style="text-align:center">3</td><td style="text-align:center">3</td></tr>
+    <tr><td style="text-align:center">5</td><td style="text-align:center">4</td><td style="text-align:center">4</td><td style="text-align:center">3</td><td style="text-align:center">3</td></tr>
+    <tr><td style="text-align:center">6</td><td style="text-align:center">3</td><td style="text-align:center">6</td><td style="text-align:center">3</td><td style="text-align:center">3</td></tr>
   </table>
 
   <div class="rule-box">
@@ -337,10 +337,34 @@ li{margin-bottom:3px;font-size:10pt;}
       <div class="phase-num">2</div>
       <div class="phase-title">Ataque ⚔️</div>
     </div>
-    <p>Ataque territórios adjacentes:</p>
+    <p>Ataque territórios adjacentes. Cada tentativa segue <strong>4 passos obrigatórios</strong>:</p>
+
+    <h4>Passo 1 — Teste de Mobilização do Atacante 🎲</h4>
     <ul style="margin-top:2px;">
-      <li><strong>Atacante:</strong> lança dados = tokens na origem (máx. 3). Deve deixar ≥1.</li>
-      <li><strong>Defensor:</strong> lança dados = tokens no destino (máx. 2, mín. 1).</li>
+      <li>Escolha tokens a comprometer (1–3), deixando ≥1 na origem.</li>
+      <li>Lance <strong>1 dado/token</strong>. Calcule a <strong>média</strong> (soma ÷ dados).</li>
+      <li>Média deve ser <strong>≥ acumulado de tokens movimentados na rodada</strong> (soma de todos ataques).</li>
+      <li>✅ Passa → Passo 2. &nbsp; ❌ Falha → <strong>rodada de ataques encerrada</strong>.</li>
+    </ul>
+
+    <h4>Passo 2 — Teste de Mobilização do Defensor 🛡️</h4>
+    <ul style="margin-top:2px;">
+      <li>Defensor lança dados = tokens no território (máx. 2, mín. 1).</li>
+      <li>Tokens efetivos = <strong>⌊média⌋</strong> (mín. 1). Dados no combate = tokens efetivos.</li>
+    </ul>
+
+    <h4>Passo 3 — Passa ou Repassa 📚</h4>
+    <ul style="margin-top:2px;">
+      <li>Professor lê <strong>pergunta</strong> da carta do território atacado.</li>
+      <li><strong>Atacante responde:</strong> ✅ acertou → <strong>relança 1 dado</strong>. ❌ errou → repassa ao defensor.</li>
+      <li><strong>Defensor repassado:</strong> ✅ acertou → <strong>relança 1 dado</strong>. ❌ ambos erraram → sem bônus + perdem 1 Token de Restauração.</li>
+    </ul>
+
+    <h4>Passo 4 — Resolução do Combate ⚔️</h4>
+    <ul style="margin-top:2px;">
+      <li><strong>Atacante:</strong> novos dados = tokens comprometidos (máx. 3).</li>
+      <li><strong>Defensor:</strong> novos dados = tokens efetivos do Passo 2 (máx. 2).</li>
+      <li>Vencedor do Passa ou Repassa <strong>relança 1 dado</strong>.</li>
       <li>Dados comparados par a par (maior ao menor). <strong>Empate → defensor vence.</strong></li>
       <li>Perdedor → <strong>1 token volta para a reserva</strong> do dono.</li>
       <li>Território a 0 tokens → <strong>conquistado</strong> (move ≥1 token, pega carta).</li>
@@ -349,7 +373,7 @@ li{margin-bottom:3px;font-size:10pt;}
       <strong>🏆 CAPTURA:</strong> Ao conquistar, captura <strong>todos os tokens restantes do defensor</strong> → vão para <strong>sua reserva</strong>. Pode acumular <strong>mais de 6 tokens</strong>!
     </div>
     <div class="rule-box" style="margin-top:4px;">
-      <strong>⚡ Vantagem:</strong> CONNECT ≥ 60 → relançar 1 dado por ataque.
+      <strong>⚡ Vantagem:</strong> CONNECT ≥ 60 → relançar 1 dado adicional (cumulativo com Passa ou Repassa — até 2 dados).
     </div>
   </div>
 
@@ -423,7 +447,7 @@ li{margin-bottom:3px;font-size:10pt;}
   <div class="castle-grid">
     <div class="castle-card">
       <strong>🐺 Winterfell</strong><br>
-      <em>Proteção Florestal:</em> +1 dado de defesa no North<br>
+      <em>Proteção Florestal:</em> +1 dado de defesa em Stark's Region<br>
       <span style="color:#888;font-size:8pt;">Trade-off: posição periférica</span>
     </div>
     <div class="castle-card">
@@ -473,16 +497,16 @@ li{margin-bottom:3px;font-size:10pt;}
   <h2>🗡️ Missões Secretas</h2>
 
   <div class="mission-grid">
-    <div class="mission-item"><div class="mission-num">1</div><div>Controlar <strong>The North</strong> inteiro</div></div>
+    <div class="mission-item"><div class="mission-num">1</div><div>Controlar <strong>Stark's Region</strong> inteira (4 terr.)</div></div>
     <div class="mission-item"><div class="mission-num">2</div><div>Controlar <strong>3 macro-regiões</strong> completas</div></div>
     <div class="mission-item"><div class="mission-num">3</div><div><strong>Winterfell + Highgarden + Sunspear</strong></div></div>
     <div class="mission-item"><div class="mission-num">4</div><div>Controlar <strong>12 territórios</strong> quaisquer</div></div>
-    <div class="mission-item"><div class="mission-num">5</div><div>Todas as <strong>regiões costeiras</strong></div></div>
+    <div class="mission-item"><div class="mission-num">5</div><div>Costeiras: <strong>White Harbor, Hardhome, Sunspear, Pyke, Dragonstone, Oldtown</strong></div></div>
     <div class="mission-item"><div class="mission-num">6</div><div>Conquistar o <strong>Castelo Principal</strong> de um jogador</div></div>
-    <div class="mission-item"><div class="mission-num">7</div><div><strong>Riverlands + Reach + Crownlands</strong></div></div>
+    <div class="mission-item"><div class="mission-num">7</div><div><strong>Riverlands + Reach + Crownlands</strong> (8 terr.)</div></div>
     <div class="mission-item"><div class="mission-num">8</div><div><strong>8 territórios</strong> + ≥5 Tokens de Restauração</div></div>
     <div class="mission-item"><div class="mission-num">9</div><div><strong>Dragonstone + Eyrie + Winterfell</strong></div></div>
-    <div class="mission-item"><div class="mission-num">10</div><div><strong>Iron Islands + Dorne</strong></div></div>
+    <div class="mission-item"><div class="mission-num">10</div><div><strong>Beyond the Wall + Dorne</strong> (4 terr.)</div></div>
   </div>
 
   <div class="divider">⚔ ⚔ ⚔</div>
@@ -519,15 +543,17 @@ li{margin-bottom:3px;font-size:10pt;}
 
   <table>
     <tr><th>Macro-região</th><th>Territórios</th><th style="text-align:center">Bônus</th></tr>
-    <tr><td><strong>The North</strong></td><td>Winterfell, Dreadfort, White Harbor, Moat Cailin</td><td style="text-align:center">+1 token + relançar dado</td></tr>
-    <tr><td><strong>The Vale</strong></td><td>The Eyrie, Gulltown</td><td style="text-align:center">+1 token da reserva</td></tr>
+    <tr><td><strong>Beyond the Wall</strong></td><td>Castle Black, Hardhome</td><td style="text-align:center">+1 token da reserva</td></tr>
+    <tr><td><strong>Stark's Region</strong></td><td>Winterfell, White Harbor, Moat Cailin, Last Hearth</td><td style="text-align:center">+1 token + relançar dado</td></tr>
+    <tr><td><strong>Bolton's Region</strong></td><td>The Dreadfort, Karhold, Barrowlands</td><td style="text-align:center">+1 token + relançar dado</td></tr>
+    <tr><td><strong>The Vale</strong></td><td>The Eyrie</td><td style="text-align:center">+1 Token de Restauração</td></tr>
     <tr><td><strong>The Riverlands</strong></td><td>Riverrun, Harrenhal</td><td style="text-align:center">+1 token da reserva</td></tr>
-    <tr><td><strong>The Westerlands</strong></td><td>Lannisport, Casterly Rock</td><td style="text-align:center">+1 token da reserva</td></tr>
-    <tr><td><strong>The Reach</strong></td><td>Highgarden, Oldtown</td><td style="text-align:center">+1 token da reserva</td></tr>
-    <tr><td><strong>The Stormlands</strong></td><td>Storm's End, Shipbreaker Bay</td><td style="text-align:center">+1 token da reserva</td></tr>
-    <tr><td><strong>Dorne</strong></td><td>Sunspear, Sandstone</td><td style="text-align:center">+1 token da reserva</td></tr>
+    <tr><td><strong>The Iron Islands</strong></td><td>Pyke</td><td style="text-align:center">+1 Token de Restauração</td></tr>
+    <tr><td><strong>The Westerlands</strong></td><td>Casterly Rock, Lannisport</td><td style="text-align:center">+1 token da reserva</td></tr>
     <tr><td><strong>The Crownlands</strong></td><td>King's Landing, Dragonstone</td><td style="text-align:center">+1 token da reserva</td></tr>
-    <tr><td><strong>Iron Islands</strong></td><td>Pyke, Harlaw</td><td style="text-align:center">+1 token da reserva</td></tr>
+    <tr><td><strong>The Reach</strong></td><td>Highgarden, Oldtown, Horn Hill, Ashford</td><td style="text-align:center">+1 token + relançar dado</td></tr>
+    <tr><td><strong>The Stormlands</strong></td><td>Storm's End</td><td style="text-align:center">+1 Token de Restauração</td></tr>
+    <tr><td><strong>Dorne</strong></td><td>Sunspear, Sandstone</td><td style="text-align:center">+1 token da reserva</td></tr>
   </table>
 
   <div class="page-footer">RISK OF LANDSCAPES — Manual do Jogador — Página 5</div>
@@ -541,7 +567,7 @@ li{margin-bottom:3px;font-size:10pt;}
 
   <table>
     <tr><th>Casa</th><th>Sigilo</th><th>Região</th><th>Tema Ecológico</th></tr>
-    <tr><td><strong>🐺 Stark</strong></td><td>Lobo</td><td>The North</td><td>Florestas contínuas, PLAND alto, conectividade</td></tr>
+    <tr><td><strong>🐺 Stark</strong></td><td>Lobo</td><td>Stark's Region</td><td>Florestas contínuas, PLAND alto, conectividade</td></tr>
     <tr><td><strong>🐙 Greyjoy</strong></td><td>Kraken</td><td>Iron Islands</td><td>Ilhas isoladas, limiar de percolação</td></tr>
     <tr><td><strong>🦁 Lannister</strong></td><td>Leão</td><td>Westerlands</td><td>Mineração, trade-off provisão/regulação</td></tr>
     <tr><td><strong>🌹 Tyrell</strong></td><td>Rosa</td><td>The Reach</td><td>Mosaico agrícola, SHDI alto, polinizadores</td></tr>
@@ -624,7 +650,7 @@ li{margin-bottom:3px;font-size:10pt;}
     <tr>
       <td style="text-align:center;font-weight:bold;color:#8B7355;">2</td>
       <td><strong>Ataque</strong></td>
-      <td>Ataque adjacentes com dados. Perdedor → reserva. Conquista → captura tokens do defensor!</td>
+      <td>4 passos: Teste Atacante (média ≥ acumulado) → Teste Defensor → Passa ou Repassa → Combate com dados. Conquista → captura tokens!</td>
     </tr>
     <tr>
       <td style="text-align:center;font-weight:bold;color:#8B7355;">3</td>
@@ -663,7 +689,7 @@ li{margin-bottom:3px;font-size:10pt;}
 
   <div class="phase-block">
     <h4>⚡ Modo Rápido — "Skirmish"</h4>
-    <p>Apenas 10 territórios (um por macro-região, aleatório). Jogo em 30–45 min.</p>
+    <p>Apenas 11 territórios (um por macro-região, aleatório). Jogo em 30–45 min.</p>
   </div>
 
   <div class="phase-block">
