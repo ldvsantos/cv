@@ -748,23 +748,23 @@ footer p{margin-bottom:8px;}
     <h3>Preparação</h3>
 
     <div class="info-box" style="margin-bottom:20px;">
-      <strong>📌 Regra fundamental:</strong> Cada casa possui <strong>6 tokens</strong>. As <strong>cartas de território</strong> determinam a posse; os <strong>tokens no mapa</strong> representam força militar (concentração de exércitos).
+      <strong>📌 Regra fundamental:</strong> Cada casa possui <strong>6 tokens físicos</strong>. Todos começam com <strong>3 tokens no mapa</strong>. Os outros 3 ficam na <strong>reserva pessoal</strong> (ao lado do jogador) e só podem ser mobilizados por <strong>mérito</strong> (acertar desafios ou trocar Tokens de Restauração). <strong>Cartas de território</strong> = posse. <strong>Tokens no mapa</strong> = força militar.
     </div>
 
     <ol>
-      <li><strong>Escolher casa:</strong> cada jogador escolhe uma das 8 casas de Westeros. O baralho de narrativas correspondente (10 cartas) é separado e embaralhado.</li>
+      <li><strong>Escolher casa:</strong> cada jogador escolhe uma das 8 casas de Westeros. Recebe 6 tokens da sua cor, o baralho de narrativas (10 cartas, embaralhado) e a <strong>carta de Castelo</strong> da casa.</li>
       <li><strong>Distribuir territórios:</strong> embaralhe as 20 cartas de território e distribua igualmente (veja tabela). Territórios restantes ficam <strong>neutros</strong> (sem dono e sem tokens).</li>
-      <li><strong>Posicionar tokens:</strong> cada jogador distribui seus <strong>6 tokens</strong> livremente entre os territórios que recebeu. Pode concentrar todos em um só ou espalhar — a estratégia é livre.</li>
+      <li><strong>Posicionar tokens:</strong> cada jogador coloca <strong>3 tokens no mapa</strong> livremente entre seus territórios, obrigatório: o <strong>Castelo Principal</strong> deve receber <strong>pelo menos 1 token</strong>. Os outros <strong>3 ficam na reserva</strong>.</li>
       <li><strong>Missão secreta:</strong> cada jogador recebe 1 carta de missão que define seu objetivo de vitória.</li>
     </ol>
 
     <table>
-      <tr><th style="text-align:center">Jogadores</th><th style="text-align:center">Territórios por jogador</th><th style="text-align:center">Territórios neutros</th><th style="text-align:center">Tokens (por jogador)</th></tr>
-      <tr><td style="text-align:center">2</td><td style="text-align:center">10</td><td style="text-align:center">0</td><td style="text-align:center">6</td></tr>
-      <tr><td style="text-align:center">3</td><td style="text-align:center">6</td><td style="text-align:center">2</td><td style="text-align:center">6</td></tr>
-      <tr><td style="text-align:center">4</td><td style="text-align:center">5</td><td style="text-align:center">0</td><td style="text-align:center">6</td></tr>
-      <tr><td style="text-align:center">5</td><td style="text-align:center">4</td><td style="text-align:center">0</td><td style="text-align:center">6</td></tr>
-      <tr><td style="text-align:center">6</td><td style="text-align:center">3</td><td style="text-align:center">2</td><td style="text-align:center">6</td></tr>
+      <tr><th style="text-align:center">Jogadores</th><th style="text-align:center">Territórios/jogador</th><th style="text-align:center">Neutros</th><th style="text-align:center">No mapa</th><th style="text-align:center">Na reserva</th><th style="text-align:center">Total</th></tr>
+      <tr><td style="text-align:center">2</td><td style="text-align:center">10</td><td style="text-align:center">0</td><td style="text-align:center">3</td><td style="text-align:center">3</td><td style="text-align:center">6</td></tr>
+      <tr><td style="text-align:center">3</td><td style="text-align:center">6</td><td style="text-align:center">2</td><td style="text-align:center">3</td><td style="text-align:center">3</td><td style="text-align:center">6</td></tr>
+      <tr><td style="text-align:center">4</td><td style="text-align:center">5</td><td style="text-align:center">0</td><td style="text-align:center">3</td><td style="text-align:center">3</td><td style="text-align:center">6</td></tr>
+      <tr><td style="text-align:center">5</td><td style="text-align:center">4</td><td style="text-align:center">0</td><td style="text-align:center">3</td><td style="text-align:center">3</td><td style="text-align:center">6</td></tr>
+      <tr><td style="text-align:center">6</td><td style="text-align:center">3</td><td style="text-align:center">2</td><td style="text-align:center">3</td><td style="text-align:center">3</td><td style="text-align:center">6</td></tr>
     </table>
 
     <div class="info-box" style="margin-top:16px;">
@@ -772,7 +772,11 @@ footer p{margin-bottom:8px;}
     </div>
 
     <div class="info-box">
-      <strong>🗺️ Posse sem token:</strong> um território <strong>sem nenhum token</strong> continua pertencendo ao dono da carta, mas está <strong>desguarnecido</strong> — qualquer adversário adjacente pode invadi-lo sem lançar dados (ocupação automática). O novo dono fica com a carta.
+      <strong>🗺️ Posse sem token:</strong> um território <strong>sem nenhum token</strong> continua pertencendo ao dono da carta, mas está <strong>desguarnecido</strong> — qualquer adversário adjacente pode invadi-lo respondendo uma carta desafio (ocupação automática). O novo dono fica com a carta.
+    </div>
+
+    <div class="info-box">
+      <strong>🛡️ Proteção inicial:</strong> Durante a <strong>primeira rodada completa</strong> (primeiro turno de cada jogador), <strong>castelos principais não podem ser atacados</strong>.
     </div>
 
     <div class="divider">⚔ ⚔ ⚔</div>
@@ -783,33 +787,38 @@ footer p{margin-bottom:8px;}
     <div class="phase">
       <div class="phase-header">
         <div class="phase-number">1</div>
-        <div class="phase-title">Reforços</div>
+        <div class="phase-title">Mobilização (Reforços)</div>
         <span class="phase-emoji">🌲</span>
       </div>
-      <p>No início de cada turno, o jogador pode <strong>reposicionar tokens</strong> e/ou <strong>recuperar tokens perdidos</strong>:</p>
+      <p>No início de cada turno, o jogador pode:</p>
+      <ol>
+        <li><strong>Reposicionar tokens</strong> livremente entre seus territórios conectados.</li>
+        <li><strong>Mobilizar tokens da reserva</strong>, mas <strong>somente</strong> se tiver ganho esse direito:</li>
+      </ol>
       <table>
-        <tr><th>Fonte</th><th>Ganho</th></tr>
-        <tr><td>Turno regular</td><td>Recupera <strong>1 token</strong> (coloca em qualquer território seu)</td></tr>
-        <tr><td>Bônus de macro-região</td><td>Controlar todos os territórios de uma macro-região → ganha <strong>+1 token</strong> extra</td></tr>
-        <tr><td>Tokens de Restauração</td><td>A cada <strong>3 Tokens de Restauração</strong> trocados → recupera <strong>1 token</strong></td></tr>
+        <tr><th>Fonte</th><th>Quando pode mobilizar</th></tr>
+        <tr><td>Bônus de Excelência (turno anterior)</td><td>Acertou Desafio + Narrativa no turno anterior → coloca <strong>1 token da reserva</strong></td></tr>
+        <tr><td>Bônus de macro-região</td><td>Controlar macro-região completa → coloca <strong>1 token da reserva</strong></td></tr>
+        <tr><td>Tokens de Restauração</td><td>Troca <strong>3 Tokens de Restauração</strong> → coloca <strong>1 token da reserva</strong></td></tr>
+        <tr><td>Habilidade de Castelo</td><td>Algumas habilidades permitem mobilização especial (ver Castelos)</td></tr>
       </table>
 
       <div class="info-box" style="margin-top:12px;">
-        <strong>⚠️ Limite máximo:</strong> um jogador nunca pode ter mais de <strong>6 tokens</strong> no mapa simultaneamente. Se já estiver no limite, o ganho é ignorado.
+        <strong>⚠️ Reserva vazia = sem reforço.</strong> Tokens capturados de adversários também vão para a reserva e podem ser mobilizados.
       </div>
 
-      <p style="margin-top:16px"><strong>Bônus por macro-região completa (+1 token extra no turno):</strong></p>
+      <p style="margin-top:16px"><strong>Bônus por macro-região completa:</strong></p>
       <table>
         <tr><th>Macro-região</th><th style="text-align:center">Bônus</th><th>Justificativa ecológica</th></tr>
-        <tr><td>The North (4 terr.)</td><td style="text-align:center">+1 token + relançar 1 dado</td><td>Maior macro-região; florestas contínuas geram alta resiliência</td></tr>
-        <tr><td>The Reach</td><td style="text-align:center">+1 token</td><td>Celeiro produtivo: provisão alimenta exércitos</td></tr>
-        <tr><td>The Riverlands</td><td style="text-align:center">+1 token</td><td>Posição central: corredores fluviais conectam</td></tr>
-        <tr><td>The Westerlands</td><td style="text-align:center">+1 token</td><td>Recursos minerais compensam a degradação</td></tr>
-        <tr><td>The Crownlands</td><td style="text-align:center">+1 token</td><td>Capital política: poder centralizado</td></tr>
-        <tr><td>The Vale</td><td style="text-align:center">+1 token</td><td>Isolamento montano limita reforços</td></tr>
-        <tr><td>The Stormlands</td><td style="text-align:center">+1 token</td><td>Tempestades limitam logística</td></tr>
-        <tr><td>Dorne</td><td style="text-align:center">+1 token</td><td>Baixa capacidade de suporte</td></tr>
-        <tr><td>Iron Islands</td><td style="text-align:center">+1 token</td><td>Poucos recursos paisagísticos</td></tr>
+        <tr><td>The North (4 terr.)</td><td style="text-align:center">+1 token + relançar 1 dado</td><td>Florestas contínuas = alta resiliência</td></tr>
+        <tr><td>The Reach</td><td style="text-align:center">+1 token da reserva</td><td>Celeiro produtivo: provisão alimenta exércitos</td></tr>
+        <tr><td>The Riverlands</td><td style="text-align:center">+1 token da reserva</td><td>Corredores fluviais conectam</td></tr>
+        <tr><td>The Westerlands</td><td style="text-align:center">+1 token da reserva</td><td>Recursos minerais</td></tr>
+        <tr><td>The Crownlands</td><td style="text-align:center">+1 token da reserva</td><td>Poder centralizado</td></tr>
+        <tr><td>The Vale</td><td style="text-align:center">+1 token da reserva</td><td>Isolamento montano</td></tr>
+        <tr><td>The Stormlands</td><td style="text-align:center">+1 token da reserva</td><td>Tempestades limitam logística</td></tr>
+        <tr><td>Dorne</td><td style="text-align:center">+1 token da reserva</td><td>Baixa capacidade de suporte</td></tr>
+        <tr><td>Iron Islands</td><td style="text-align:center">+1 token da reserva</td><td>Poucos recursos paisagísticos</td></tr>
       </table>
     </div>
 
@@ -825,15 +834,18 @@ footer p{margin-bottom:8px;}
         <li><strong>Atacante:</strong> lança dados igual ao número de tokens no território atacante (máximo 3 dados). Deve deixar pelo menos 1 token no território de origem.</li>
         <li><strong>Defensor:</strong> lança dados igual ao número de tokens no território defendido (máximo 2 dados). Mínimo 1 dado.</li>
         <li><strong>Comparação:</strong> dados ordenados do maior ao menor, comparados par a par. Empate favorece o defensor.</li>
-        <li><strong>Perdedor</strong> de cada par <strong>remove 1 token</strong> do território.</li>
-        <li><strong>Território desguarnecido</strong> (0 tokens) é <strong>conquistado automaticamente</strong>: o atacante move pelo menos 1 token para lá e pega a carta de território do adversário.</li>
+        <li><strong>Perdedor</strong> de cada par <strong>remove 1 token</strong> → volta para a <strong>reserva pessoal</strong> do dono.</li>
+        <li><strong>Território a 0 tokens</strong> → <strong>conquistado</strong>: o atacante move pelo menos 1 token para lá e pega a carta.</li>
       </ul>
-      <div class="info-box" style="margin-top:16px;">
-        <strong>⚡ Regra Especial (Vantagem de Conectividade):</strong><br>
-        Se o território atacante tem <strong>CONNECT ≥ 60</strong>, o atacante pode <strong>relançar 1 dado</strong> por tentativa (paisagens bem conectadas = melhor logística).
+      <div class="warning-box" style="margin-top:16px;">
+        <strong>🏆 Captura de tokens:</strong> ao conquistar um território, o atacante <strong>captura todos os tokens do defensor que restavam ali</strong> — vão para a <strong>reserva do atacante</strong>. Um jogador agressivo pode acumular <strong>mais de 6 tokens</strong>!
+      </div>
+      <div class="info-box" style="margin-top:12px;">
+        <strong>⚡ Vantagem de Conectividade:</strong> Se o território atacante tem <strong>CONNECT ≥ 60</strong>, o atacante pode <strong>relançar 1 dado</strong> por tentativa.
       </div>
       <div class="info-box">
-        <strong>🏴 Conquistar território neutro:</strong> basta mover 1 token para lá (sem combate), mas deve responder ao Desafio da Paisagem.
+        <strong>🏴 Território neutro:</strong> basta mover 1 token (sem combate), mas deve responder ao Desafio.<br>
+        <strong>🗺️ Território desguarnecido:</strong> ocupação automática (move 1 token, pega carta, responde Desafio).
       </div>
     </div>
 
@@ -857,7 +869,7 @@ footer p{margin-bottom:8px;}
         <tr><th>Resultado</th><th>Consequência</th></tr>
         <tr><td><strong>Acerto completo</strong></td><td>Ganha <strong>2 Tokens de Restauração</strong> + ocupa o território</td></tr>
         <tr><td><strong>Acerto parcial</strong></td><td>Ganha <strong>1 Token de Restauração</strong> + ocupa o território</td></tr>
-        <tr><td><strong>Erro</strong></td><td>Ocupa o território, mas <strong>remove 1 token do mapa</strong> (degradação ecológica)</td></tr>
+        <tr><td><strong>Erro</strong></td><td>Ocupa o território, mas <strong>1 token volta para a reserva</strong> (degradação ecológica)</td></tr>
       </table>
     </div>
 
@@ -873,10 +885,13 @@ footer p{margin-bottom:8px;}
         <tr><th>Resultado</th><th>Consequência</th></tr>
         <tr><td><strong>Acerto completo</strong></td><td>Ganha <strong>3 Tokens de Restauração</strong></td></tr>
         <tr><td><strong>Acerto parcial</strong></td><td>Ganha <strong>1 Token de Restauração</strong></td></tr>
-        <tr><td><strong>Erro</strong></td><td><strong>Remove 1 token</strong> de um território à sua escolha</td></tr>
+        <tr><td><strong>Erro</strong></td><td><strong>1 token</strong> de um território à sua escolha <strong>volta para a reserva</strong></td></tr>
       </table>
       <div class="info-box" style="margin-top:16px;">
         As cartas narrativas são <strong>progressivas</strong>: os desafios vão de conceitos básicos a aplicações avançadas. Se acabarem as 10 cartas, re-embaralhe.
+      </div>
+      <div class="warning-box" style="margin-top:12px;">
+        <strong>🎯 BÔNUS DE EXCELÊNCIA:</strong> Se no mesmo turno o jogador acertou <strong>completamente</strong> pelo menos 1 Desafio da Paisagem (Fase 3) <strong>E</strong> a Narrativa da Casa (Fase 4), ele pode imediatamente <strong>mobilizar 1 token da reserva</strong> para qualquer território seu. Esta é a <strong>principal forma de crescer suas forças</strong>!
       </div>
     </div>
 
@@ -884,14 +899,59 @@ footer p{margin-bottom:8px;}
     <div class="phase">
       <div class="phase-header">
         <div class="phase-number">5</div>
-        <div class="phase-title">Manobra (Fortificação)</div>
+        <div class="phase-title">Fortificação</div>
         <span class="phase-emoji">🏰</span>
       </div>
-      <p>O jogador pode mover <strong>tokens</strong> entre dois territórios <strong>seus</strong> que estejam conectados por uma cadeia contínua de territórios próprios. Pode mover quantos tokens quiser, desde que deixe ao menos 0 no território de origem.</p>
+      <p>O jogador pode realizar <strong>uma</strong> transferência de tokens entre dois territórios <strong>seus</strong> conectados por cadeia contínua de territórios próprios. Pode mover quantos tokens quiser nessa transferência.</p>
       <div class="info-box">
-        Simula a <strong>conectividade funcional</strong>: o fluxo só ocorre onde há continuidade. Sem cadeia contínua de territórios, não há como mover tokens. Lembre: território com 0 tokens fica <strong>desguarnecido</strong> e pode ser invadido sem dados.
+        Simula a <strong>conectividade funcional</strong>: o fluxo só ocorre onde há continuidade. Território com 0 tokens fica <strong>desguarnecido</strong>. Tokens <strong>não podem</strong> ser devolvidos à reserva nesta fase — só voltam por recuo em combate, erro em desafio ou habilidade especial.
       </div>
     </div>
+
+    <div class="divider">⚔ ⚔ ⚔</div>
+
+    <!-- REGRA DO CASTELO -->
+    <h3>👑 Regra do Castelo (Regra Coringa)</h3>
+
+    <p>Cada casa possui um <strong>Castelo Principal</strong> — o território-capital da sua região:</p>
+
+    <table>
+      <tr><th>Casa</th><th>Castelo Principal</th></tr>
+      <tr><td>🐺 Stark</td><td>Winterfell</td></tr>
+      <tr><td>🐙 Greyjoy</td><td>Pyke</td></tr>
+      <tr><td>🦁 Lannister</td><td>Casterly Rock</td></tr>
+      <tr><td>🌹 Tyrell</td><td>Highgarden</td></tr>
+      <tr><td>☀️ Martell</td><td>Sunspear</td></tr>
+      <tr><td>🦅 Arryn</td><td>The Eyrie</td></tr>
+      <tr><td>🐟 Tully</td><td>Riverrun</td></tr>
+      <tr><td>🦌 Baratheon</td><td>Storm's End</td></tr>
+    </table>
+
+    <div class="warning-box" style="margin-top:16px;">
+      <strong>💥 Eliminação por Castelo:</strong> Quem conquista o Castelo Principal de um oponente <strong>elimina esse oponente</strong>, independente dos territórios e tokens restantes. O conquistador recebe:<br>
+      ✅ <strong>Todos os territórios</strong> (cartas) do eliminado<br>
+      ✅ <strong>Todos os tokens</strong> (mapa + reserva) do eliminado<br>
+      ✅ A <strong>habilidade especial</strong> do castelo conquistado (acumulativa)
+    </div>
+
+    <div class="info-box">
+      <strong>🎭 Conselheiro:</strong> O jogador eliminado não sai da mesa — torna-se <strong>Conselheiro</strong> do conquistador, ajudando a responder desafios. Mantém o engajamento pedagógico!
+    </div>
+
+    <h4>Habilidades Especiais dos Castelos</h4>
+    <p>Cada castelo oferece uma vantagem única com <strong>trade-offs</strong> — refletindo os serviços ecossistêmicos reais:</p>
+
+    <table>
+      <tr><th>Castelo</th><th>Habilidade</th><th>Trade-off</th></tr>
+      <tr><td><strong>🐺 Winterfell</strong></td><td><strong>Proteção Florestal:</strong> +1 dado de defesa em todos os territórios do The North</td><td>Posição periférica, longe dos recursos</td></tr>
+      <tr><td><strong>🐙 Pyke</strong></td><td><strong>Ponte Marítima:</strong> pode atacar/mover para qualquer território costeiro</td><td>PLAND 12,5% = território próprio frágil</td></tr>
+      <tr><td><strong>🦁 Casterly Rock</strong></td><td><strong>Riqueza Mineral:</strong> troca apenas <strong>2</strong> Tokens de Restauração (em vez de 3) para mobilizar</td><td>CONNECT 38 = sem bônus de relançamento</td></tr>
+      <tr><td><strong>🌹 Highgarden</strong></td><td><strong>Celeiro Fértil:</strong> ganha <strong>+1 Token de Restauração</strong> extra em qualquer acerto</td><td>PLAND 22% = ecologicamente frágil</td></tr>
+      <tr><td><strong>☀️ Sunspear</strong></td><td><strong>Defesa Árida:</strong> primeiro ataque por rodada <strong>falha automaticamente</strong></td><td>SE 25 = sem bônus produtivo</td></tr>
+      <tr><td><strong>🦅 The Eyrie</strong></td><td><strong>Fortaleza Montana:</strong> só pode ser atacada com <strong>≥3 tokens</strong> na origem</td><td>Poucos territórios, difícil expandir</td></tr>
+      <tr><td><strong>🐟 Riverrun</strong></td><td><strong>Corredores Fluviais:</strong> Riverlands adjacentes a qualquer território ribeirinho</td><td>PLAND 28% = no limiar de fragmentação</td></tr>
+      <tr><td><strong>🦌 Storm's End</strong></td><td><strong>Resiliência:</strong> ao perder token, dado 5-6 = token permanece</td><td>Sem vantagem posicional forte</td></tr>
+    </table>
   </div>
 </section>
 
@@ -977,7 +1037,7 @@ footer p{margin-bottom:8px;}
       </div>
       <div class="mission">
         <div class="mission-num">6</div>
-        <div><strong>Eliminar um jogador específico</strong><br><em>Extinção competitiva (exclusão de nicho)</em></div>
+        <div><strong>Conquistar o Castelo Principal de um jogador específico</strong><br><em>Extinção competitiva (exclusão de nicho)</em></div>
       </div>
       <div class="mission">
         <div class="mission-num">7</div>
@@ -1004,19 +1064,19 @@ footer p{margin-bottom:8px;}
   <div class="container">
     <h2>Tokens de Restauração</h2>
 
-    <p>Os Tokens representam o <strong>capital ecológico</strong> acumulado ao demonstrar conhecimento. Além de trocar por exércitos (3 tokens = 2 exércitos), podem ser usados para habilidades especiais:</p>
+    <p>Os Tokens representam o <strong>capital ecológico</strong> acumulado ao demonstrar conhecimento. A principal função é mobilizar tokens da reserva (3 Tokens = 1 token no mapa, ou 2 com Casterly Rock). Além disso:</p>
 
     <table>
       <tr><th>Uso</th><th style="text-align:center">Custo</th><th>Efeito</th></tr>
       <tr>
+        <td><strong>🟢 Mobilizar token</strong></td>
+        <td style="text-align:center">3</td>
+        <td>Coloca 1 token da reserva em qualquer território seu (2 com Casterly Rock)</td>
+      </tr>
+      <tr>
         <td><strong>🌿 Corredor ecológico</strong></td>
         <td style="text-align:center">4</td>
         <td>Conecta dois territórios não adjacentes seus por 1 turno (ataque/manobra à distância)</td>
-      </tr>
-      <tr>
-        <td><strong>🌱 Restauração de habitat</strong></td>
-        <td style="text-align:center">3</td>
-        <td>+2 exércitos em um território com PLAND &lt; 30%</td>
       </tr>
       <tr>
         <td><strong>🛡️ Área protegida</strong></td>
@@ -1026,7 +1086,7 @@ footer p{margin-bottom:8px;}
       <tr>
         <td><strong>🪨 Stepping stone</strong></td>
         <td style="text-align:center">2</td>
-        <td>Move 1 exército entre dois territórios separados por 1 território inimigo</td>
+        <td>Move 1 token entre dois territórios separados por 1 território inimigo</td>
       </tr>
     </table>
   </div>
@@ -1038,13 +1098,13 @@ footer p{margin-bottom:8px;}
     <h2>Condições de Vitória</h2>
 
     <div class="info-box">
-      <strong>Vitória principal:</strong> O primeiro jogador a completar sua <strong>Missão Secreta</strong> vence. Ele deve revelar a carta e demonstrar que cumpriu o objetivo.
+      <strong>Vitória principal:</strong> O primeiro jogador a completar sua <strong>Missão Secreta</strong> vence, OU quem eliminar todos os oponentes via <strong>Regra do Castelo</strong>.
     </div>
 
     <p><strong>Vitória alternativa:</strong> se nenhuma missão for cumprida em 90 minutos, vence o jogador com a maior <strong>Pontuação de Paisagem</strong>:</p>
 
     <div class="formula">
-      Pontuação = (N<sub>territórios</sub> × 3) + (N<sub>tokens</sub> × 2) + Bônus<sub>macro-regiões</sub>
+      Pontuação = (N<sub>territórios</sub> × 3) + (N<sub>tokens no mapa</sub> × 2) + (N<sub>castelos</sub> × 5) + Bônus<sub>macro-regiões</sub>
     </div>
   </div>
 </section>
@@ -1058,7 +1118,7 @@ footer p{margin-bottom:8px;}
       <div class="phase-header">
         <div class="phase-title">🤝 Modo Cooperativo: "Restauração de Westeros"</div>
       </div>
-      <p>Os jogadores trabalham <strong>juntos</strong> contra o tabuleiro. A cada rodada, um "Evento de Degradação" é sorteado (queimada, invasão, seca) que remove exércitos de territórios aleatórios. Os jogadores devem acertar os desafios para ganhar Tokens e "curar" os territórios antes que todos caiam.</p>
+      <p>Os jogadores trabalham <strong>juntos</strong> contra o tabuleiro. A cada rodada, um "Evento de Degradação" é sorteado (queimada, invasão, seca) que remove tokens de territórios aleatórios. Os jogadores devem acertar os desafios para ganhar Tokens e "curar" os territórios antes que todos caiam.</p>
     </div>
 
     <div class="phase">

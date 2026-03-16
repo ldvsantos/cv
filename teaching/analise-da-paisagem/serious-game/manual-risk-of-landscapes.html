@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RISK OF LANDSCAPES — Manual do Jogador</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Crimson Text',Georgia,serif;
+  color:#2a2015;
+  line-height:1.55;
+  font-size:11pt;
+  background:#fff;
+}
+
+/* ═══ PRINT LAYOUT ═══ */
+@page{
+  size:A4 portrait;
+  margin:15mm 14mm 18mm 14mm;
+}
+
+.page{
+  page-break-after:always;
+  position:relative;
+}
+.page:last-child{page-break-after:auto;}
+
+/* ═══ COVER PAGE ═══ */
+.cover{
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  min-height:100vh;text-align:center;
+  background:linear-gradient(180deg,#1a1510 0%,#2a2015 40%,#1a1510 100%);
+  color:#d4c8b0;
+  padding:60px 40px;
+}
+.cover-emblem{font-size:72px;margin-bottom:20px;opacity:0.8;}
+.cover h1{
+  font-family:'Cinzel',serif;font-weight:900;
+  font-size:36pt;color:#8B7355;
+  letter-spacing:6px;line-height:1.1;
+  text-transform:uppercase;
+}
+.cover h1 span{
+  display:block;font-size:0.4em;color:#d4c8b0;
+  letter-spacing:4px;margin-top:12px;font-weight:400;
+  text-transform:none;
+}
+.cover-quote{
+  font-style:italic;font-size:13pt;color:#a08a64;
+  max-width:420px;margin-top:40px;
+  border-top:1px solid rgba(139,115,85,0.3);
+  border-bottom:1px solid rgba(139,115,85,0.3);
+  padding:16px 0;
+}
+.cover-meta{
+  font-family:'Cinzel',serif;font-size:9pt;
+  color:rgba(139,115,85,0.6);letter-spacing:2px;
+  margin-top:40px;
+}
+.cover-footer{
+  margin-top:auto;
+  font-family:'Cinzel',serif;font-size:8pt;
+  color:rgba(139,115,85,0.4);letter-spacing:1.5px;
+}
+
+/* ═══ HEADINGS ═══ */
+h2{
+  font-family:'Cinzel',serif;font-weight:700;
+  font-size:16pt;color:#5a4a32;letter-spacing:2px;
+  text-align:center;margin:0 0 16px;
+  padding-bottom:8px;
+  border-bottom:2px solid #8B7355;
+}
+h3{
+  font-family:'Cinzel',serif;font-weight:700;
+  font-size:12pt;color:#6b5a3e;letter-spacing:1px;
+  margin:14px 0 6px;
+}
+h4{
+  font-family:'Cinzel',serif;font-weight:700;
+  font-size:10pt;color:#7a6848;
+  margin:10px 0 4px;
+}
+
+/* ═══ TEXT ═══ */
+p{margin-bottom:8px;}
+strong{color:#4a3a20;}
+em{color:#6b5a3e;}
+
+/* ═══ BOXES ═══ */
+.rule-box{
+  background:#f5f0e6;
+  border:1px solid #c4b48a;
+  border-left:4px solid #8B7355;
+  border-radius:4px;padding:10px 14px;
+  margin:8px 0;font-size:10pt;
+}
+.warning-box{
+  background:#fdf0ef;
+  border:1px solid #d49a94;
+  border-left:4px solid #b44;
+  border-radius:4px;padding:10px 14px;
+  margin:8px 0;font-size:10pt;
+}
+.tip-box{
+  background:#eef5ee;
+  border:1px solid #8baa8b;
+  border-left:4px solid #5a8a5a;
+  border-radius:4px;padding:10px 14px;
+  margin:8px 0;font-size:10pt;
+}
+
+/* ═══ TABLES ═══ */
+table{
+  width:100%;border-collapse:collapse;margin:8px 0;
+  font-size:9.5pt;
+}
+th{
+  font-family:'Cinzel',serif;font-size:8pt;
+  color:#5a4a32;letter-spacing:0.8px;text-transform:uppercase;
+  text-align:left;padding:5px 6px;
+  border-bottom:2px solid #c4b48a;
+  background:#f5f0e6;
+}
+td{
+  padding:4px 6px;
+  border-bottom:1px solid #e5ddd0;
+  vertical-align:top;
+}
+
+/* ═══ LISTS ═══ */
+ul,ol{margin:6px 0 10px 18px;}
+li{margin-bottom:3px;font-size:10pt;}
+
+/* ═══ PHASE BLOCKS ═══ */
+.phase-block{
+  background:#faf6ee;
+  border:1px solid #d4c8b0;
+  border-radius:5px;padding:10px 14px;
+  margin:8px 0;
+}
+.phase-header{
+  display:flex;align-items:center;gap:8px;
+  margin-bottom:6px;
+}
+.phase-num{
+  width:24px;height:24px;
+  background:#8B7355;color:#fff;
+  border-radius:50%;display:flex;
+  align-items:center;justify-content:center;
+  font-family:'Cinzel',serif;font-weight:900;font-size:11pt;
+  flex-shrink:0;
+}
+.phase-title{
+  font-family:'Cinzel',serif;font-weight:700;
+  font-size:11pt;color:#6b5a3e;
+}
+
+/* ═══ DIVIDER ═══ */
+.divider{
+  text-align:center;color:#c4b48a;
+  font-size:10pt;letter-spacing:8px;
+  margin:12px 0;
+}
+
+/* ═══ TWO COLUMNS ═══ */
+.cols{display:flex;gap:16px;}
+.cols > *{flex:1;}
+
+/* ═══ CASTLE GRID ═══ */
+.castle-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;margin:8px 0;
+}
+.castle-card{
+  background:#faf6ee;
+  border:1px solid #d4c8b0;
+  border-radius:4px;padding:8px 10px;
+  font-size:9pt;
+}
+.castle-card strong{font-size:9.5pt;}
+
+/* ═══ MISSION GRID ═══ */
+.mission-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px;margin:8px 0;
+}
+.mission-item{
+  background:#faf6ee;
+  border:1px solid #d4c8b0;
+  border-radius:4px;padding:6px 10px;
+  font-size:9pt;
+  display:flex;gap:8px;align-items:flex-start;
+}
+.mission-num{
+  font-family:'Cinzel',serif;font-weight:700;
+  color:#8B7355;font-size:11pt;flex-shrink:0;
+  min-width:18px;text-align:center;
+}
+
+/* ═══ FOOTER ═══ */
+.page-footer{
+  position:absolute;bottom:0;left:0;right:0;
+  text-align:center;
+  font-family:'Cinzel',serif;font-size:7pt;
+  color:#c4b48a;letter-spacing:1.5px;
+  border-top:1px solid #e5ddd0;
+  padding-top:6px;
+}
+
+/* ═══ PRINT OVERRIDES ═══ */
+@media print{
+  body{background:white;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .cover{min-height:auto;height:100vh;}
+  .no-print{display:none;}
+  .page{page-break-inside:avoid;}
+}
+@media screen{
+  body{max-width:210mm;margin:0 auto;background:#e8e0d4;padding:0;}
+  .page{background:white;padding:15mm 14mm 18mm;margin-bottom:10px;box-shadow:0 2px 8px rgba(0,0,0,0.15);min-height:297mm;position:relative;}
+  .cover{margin:-15mm -14mm -18mm;padding:60px 40px;min-height:calc(297mm - 0mm);}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- CAPA -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="page">
+  <div class="cover">
+    <div class="cover-emblem">🐉</div>
+    <h1>RISK OF<br>LANDSCAPES<span>Manual do Jogador — A Guerra pelas Paisagens de Westeros</span></h1>
+    <div class="cover-quote">"O verdadeiro poder não está nos exércitos… está na terra, nas florestas, nos rios que alimentam os reinos."<br>— Maester Luwin</div>
+    <div class="cover-meta">SERIOUS GAME • ANÁLISE DA PAISAGEM • UEFS</div>
+    <div class="cover-footer">Prof. Diego Vidal — Universidade Estadual de Feira de Santana</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- PÁGINA 2: VISÃO GERAL + PREPARAÇÃO -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="page">
+  <h2>🏰 Visão Geral</h2>
+
+  <p><strong>RISK OF LANDSCAPES</strong> é um <em>Serious Game</em> baseado em Game of Thrones para a disciplina <strong>Análise da Paisagem</strong>. Os jogadores disputam Westeros usando conhecimentos de <strong>Ecologia da Paisagem</strong> — métricas espaciais, fragmentação, conectividade e serviços ecossistêmicos.</p>
+
+  <div class="cols">
+    <div>
+      <table>
+        <tr><td><strong>Jogadores</strong></td><td>2 a 6</td></tr>
+        <tr><td><strong>Duração</strong></td><td>60 – 90 min</td></tr>
+        <tr><td><strong>Mecânica</strong></td><td>RISK + desafios</td></tr>
+      </table>
+    </div>
+    <div>
+      <table>
+        <tr><td>Mapa (20 territórios)</td><td style="text-align:center">1</td></tr>
+        <tr><td>Cartas de Território</td><td style="text-align:center">20</td></tr>
+        <tr><td>Cartas Narrativas</td><td style="text-align:center">80</td></tr>
+        <tr><td>Dados (3🔴 + 2⚪)</td><td style="text-align:center">5</td></tr>
+        <tr><td>Tokens por casa</td><td style="text-align:center">6</td></tr>
+        <tr><td>Cartas de Missão</td><td style="text-align:center">10</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="divider">⚔ ⚔ ⚔</div>
+
+  <h2>📋 Preparação</h2>
+
+  <div class="rule-box">
+    <strong>📌 Regra fundamental:</strong> Cada casa possui <strong>6 tokens</strong>. Todos começam com <strong>3 no mapa</strong> + <strong>3 na reserva pessoal</strong>. Tokens da reserva só entram no mapa por <strong>mérito</strong> (acertar desafios ou trocar Tokens de Restauração).
+  </div>
+
+  <ol>
+    <li><strong>Escolher casa</strong> — recebe 6 tokens, 10 cartas narrativas e a carta de Castelo.</li>
+    <li><strong>Distribuir territórios</strong> — embaralhe as 20 cartas e distribua igualmente. Restantes ficam neutros.</li>
+    <li><strong>Posicionar tokens</strong> — coloque <strong>3 tokens no mapa</strong>. O <strong>Castelo Principal deve ter ≥1 token</strong>. Os outros 3 ficam na reserva.</li>
+    <li><strong>Missão secreta</strong> — cada jogador recebe 1 carta de missão (objetivo de vitória).</li>
+  </ol>
+
+  <table>
+    <tr><th style="text-align:center">Jogadores</th><th style="text-align:center">Terr./jog.</th><th style="text-align:center">Neutros</th><th style="text-align:center">No mapa</th><th style="text-align:center">Reserva</th></tr>
+    <tr><td style="text-align:center">2</td><td style="text-align:center">10</td><td style="text-align:center">0</td><td style="text-align:center">3</td><td style="text-align:center">3</td></tr>
+    <tr><td style="text-align:center">3</td><td style="text-align:center">6</td><td style="text-align:center">2</td><td style="text-align:center">3</td><td style="text-align:center">3</td></tr>
+    <tr><td style="text-align:center">4</td><td style="text-align:center">5</td><td style="text-align:center">0</td><td style="text-align:center">3</td><td style="text-align:center">3</td></tr>
+    <tr><td style="text-align:center">5</td><td style="text-align:center">4</td><td style="text-align:center">0</td><td style="text-align:center">3</td><td style="text-align:center">3</td></tr>
+    <tr><td style="text-align:center">6</td><td style="text-align:center">3</td><td style="text-align:center">2</td><td style="text-align:center">3</td><td style="text-align:center">3</td></tr>
+  </table>
+
+  <div class="rule-box">
+    <strong>🏴 Neutros:</strong> sem dono. Conquiste movendo 1 token + respondendo Desafio.<br>
+    <strong>🗺️ Desguarnecido:</strong> território sem token = ocupação automática (responda Desafio, pegue carta).<br>
+    <strong>🛡️ Proteção inicial:</strong> Na 1ª rodada, castelos <strong>não podem</strong> ser atacados.
+  </div>
+
+  <div class="page-footer">RISK OF LANDSCAPES — Manual do Jogador — Página 2</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- PÁGINA 3: FASES DO TURNO (1-3) -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="page">
+  <h2>⚔ Fases do Turno</h2>
+  <p style="text-align:center;margin-bottom:14px;">Cada turno possui <strong>5 fases</strong> nesta ordem:</p>
+
+  <!-- FASE 1 -->
+  <div class="phase-block">
+    <div class="phase-header">
+      <div class="phase-num">1</div>
+      <div class="phase-title">Mobilização (Reforços) 🌲</div>
+    </div>
+    <p>No início do turno, o jogador pode <strong>reposicionar</strong> tokens entre territórios conectados e <strong>mobilizar da reserva</strong> se tiver direito:</p>
+    <table>
+      <tr><th>Fonte</th><th>Condição</th></tr>
+      <tr><td><strong>Bônus de Excelência</strong></td><td>Acertou Desafio + Narrativa no turno anterior → <strong>1 token da reserva</strong></td></tr>
+      <tr><td><strong>Macro-região completa</strong></td><td>Controlar todos os territórios → <strong>1 token da reserva</strong></td></tr>
+      <tr><td><strong>Tokens de Restauração</strong></td><td>Troca <strong>3 Tokens</strong> → <strong>1 token da reserva</strong> (2 com Casterly Rock)</td></tr>
+      <tr><td><strong>Habilidade de Castelo</strong></td><td>Algumas habilidades permitem mobilização especial</td></tr>
+    </table>
+    <div class="rule-box" style="margin-top:6px;">
+      ⚠️ <strong>Reserva vazia = sem reforço.</strong> Tokens capturados de adversários também vão para sua reserva!
+    </div>
+  </div>
+
+  <!-- FASE 2 -->
+  <div class="phase-block">
+    <div class="phase-header">
+      <div class="phase-num">2</div>
+      <div class="phase-title">Ataque ⚔️</div>
+    </div>
+    <p>Ataque territórios adjacentes:</p>
+    <ul style="margin-top:2px;">
+      <li><strong>Atacante:</strong> lança dados = tokens na origem (máx. 3). Deve deixar ≥1.</li>
+      <li><strong>Defensor:</strong> lança dados = tokens no destino (máx. 2, mín. 1).</li>
+      <li>Dados comparados par a par (maior ao menor). <strong>Empate → defensor vence.</strong></li>
+      <li>Perdedor → <strong>1 token volta para a reserva</strong> do dono.</li>
+      <li>Território a 0 tokens → <strong>conquistado</strong> (move ≥1 token, pega carta).</li>
+    </ul>
+    <div class="warning-box" style="margin-top:6px;">
+      <strong>🏆 CAPTURA:</strong> Ao conquistar, captura <strong>todos os tokens restantes do defensor</strong> → vão para <strong>sua reserva</strong>. Pode acumular <strong>mais de 6 tokens</strong>!
+    </div>
+    <div class="rule-box" style="margin-top:4px;">
+      <strong>⚡ Vantagem:</strong> CONNECT ≥ 60 → relançar 1 dado por ataque.
+    </div>
+  </div>
+
+  <!-- FASE 3 -->
+  <div class="phase-block">
+    <div class="phase-header">
+      <div class="phase-num">3</div>
+      <div class="phase-title">Desafio da Paisagem 🌿</div>
+    </div>
+    <p>Ao conquistar território, responda o <strong>Desafio da Paisagem</strong> da carta (2 min, pode consultar Tabela de Referência):</p>
+    <table>
+      <tr><th>Resultado</th><th>Consequência</th></tr>
+      <tr><td>✅ <strong>Acerto completo</strong></td><td><strong>+2 Tokens de Restauração</strong> + ocupa</td></tr>
+      <tr><td>🟡 <strong>Acerto parcial</strong></td><td><strong>+1 Token</strong> + ocupa</td></tr>
+      <tr><td>❌ <strong>Erro</strong></td><td>Ocupa, mas <strong>1 token volta p/ reserva</strong></td></tr>
+    </table>
+  </div>
+
+  <div class="page-footer">RISK OF LANDSCAPES — Manual do Jogador — Página 3</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- PÁGINA 4: FASES 4-5 + CASTELOS -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="page">
+
+  <!-- FASE 4 -->
+  <div class="phase-block">
+    <div class="phase-header">
+      <div class="phase-num">4</div>
+      <div class="phase-title">Narrativa da Casa 📜</div>
+    </div>
+    <p>No final de cada turno, compre <strong>1 carta narrativa</strong> e responda o desafio:</p>
+    <table>
+      <tr><th>Resultado</th><th>Consequência</th></tr>
+      <tr><td>✅ <strong>Acerto completo</strong></td><td><strong>+3 Tokens de Restauração</strong></td></tr>
+      <tr><td>🟡 <strong>Acerto parcial</strong></td><td><strong>+1 Token</strong></td></tr>
+      <tr><td>❌ <strong>Erro</strong></td><td><strong>1 token volta p/ reserva</strong></td></tr>
+    </table>
+    <div class="warning-box" style="margin-top:6px;">
+      <strong>🎯 BÔNUS DE EXCELÊNCIA:</strong> Acertou completamente <strong>Desafio (Fase 3) + Narrativa (Fase 4)</strong> no mesmo turno? → Mobilize <strong>1 token da reserva</strong> imediatamente! <em>Esta é a principal forma de crescer suas forças!</em>
+    </div>
+  </div>
+
+  <!-- FASE 5 -->
+  <div class="phase-block">
+    <div class="phase-header">
+      <div class="phase-num">5</div>
+      <div class="phase-title">Fortificação 🏰</div>
+    </div>
+    <p>Realize <strong>uma</strong> transferência de tokens entre dois territórios seus conectados por cadeia contínua. Pode mover quantos quiser. Território com 0 tokens fica desguarnecido. <strong>Não</strong> é permitido devolver tokens à reserva nesta fase.</p>
+  </div>
+
+  <div class="divider">⚔ ⚔ ⚔</div>
+
+  <!-- REGRA DO CASTELO -->
+  <h2>👑 Regra do Castelo</h2>
+
+  <p style="text-align:center;">Cada casa tem um <strong>Castelo Principal</strong>. Esta é a mecânica mais poderosa do jogo:</p>
+
+  <div class="warning-box">
+    <strong>💥 ELIMINAÇÃO:</strong> Quem conquista o <strong>Castelo Principal</strong> de um oponente <strong>elimina esse jogador</strong> e recebe:<br>
+    ✅ <strong>Todos os territórios</strong> (cartas) &nbsp;|&nbsp; ✅ <strong>Todos os tokens</strong> (mapa + reserva) &nbsp;|&nbsp; ✅ <strong>Habilidade</strong> do castelo conquistado
+  </div>
+  <div class="tip-box">
+    <strong>🎭 Conselheiro:</strong> O eliminado torna-se <strong>Conselheiro</strong> do conquistador, ajudando a responder desafios. Ninguém sai da mesa!
+  </div>
+
+  <h3>Habilidades dos Castelos</h3>
+
+  <div class="castle-grid">
+    <div class="castle-card">
+      <strong>🐺 Winterfell</strong><br>
+      <em>Proteção Florestal:</em> +1 dado de defesa no North<br>
+      <span style="color:#888;font-size:8pt;">Trade-off: posição periférica</span>
+    </div>
+    <div class="castle-card">
+      <strong>🐙 Pyke</strong><br>
+      <em>Ponte Marítima:</em> ataque/mova para qualquer costa<br>
+      <span style="color:#888;font-size:8pt;">Trade-off: PLAND 12,5% = frágil</span>
+    </div>
+    <div class="castle-card">
+      <strong>🦁 Casterly Rock</strong><br>
+      <em>Riqueza Mineral:</em> mobiliza com 2 Tokens (em vez de 3)<br>
+      <span style="color:#888;font-size:8pt;">Trade-off: CONNECT 38 = sem relançamento</span>
+    </div>
+    <div class="castle-card">
+      <strong>🌹 Highgarden</strong><br>
+      <em>Celeiro Fértil:</em> +1 Token de Restauração por acerto<br>
+      <span style="color:#888;font-size:8pt;">Trade-off: PLAND 22% = ecologicamente frágil</span>
+    </div>
+    <div class="castle-card">
+      <strong>☀️ Sunspear</strong><br>
+      <em>Defesa Árida:</em> 1º ataque por rodada falha<br>
+      <span style="color:#888;font-size:8pt;">Trade-off: SE 25 = sem bônus produtivo</span>
+    </div>
+    <div class="castle-card">
+      <strong>🦅 The Eyrie</strong><br>
+      <em>Fortaleza Montana:</em> só ataca com ≥3 tokens<br>
+      <span style="color:#888;font-size:8pt;">Trade-off: poucos territórios, difícil expandir</span>
+    </div>
+    <div class="castle-card">
+      <strong>🐟 Riverrun</strong><br>
+      <em>Corredores Fluviais:</em> Riverlands adj. a rios<br>
+      <span style="color:#888;font-size:8pt;">Trade-off: PLAND 28% = no limiar</span>
+    </div>
+    <div class="castle-card">
+      <strong>🦌 Storm's End</strong><br>
+      <em>Resiliência:</em> dado 5-6 = token sobrevive<br>
+      <span style="color:#888;font-size:8pt;">Trade-off: sem vantagem posicional</span>
+    </div>
+  </div>
+
+  <div class="page-footer">RISK OF LANDSCAPES — Manual do Jogador — Página 4</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- PÁGINA 5: MISSÕES + TOKENS + VITÓRIA -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="page">
+  <h2>🗡️ Missões Secretas</h2>
+
+  <div class="mission-grid">
+    <div class="mission-item"><div class="mission-num">1</div><div>Controlar <strong>The North</strong> inteiro</div></div>
+    <div class="mission-item"><div class="mission-num">2</div><div>Controlar <strong>3 macro-regiões</strong> completas</div></div>
+    <div class="mission-item"><div class="mission-num">3</div><div><strong>Winterfell + Highgarden + Sunspear</strong></div></div>
+    <div class="mission-item"><div class="mission-num">4</div><div>Controlar <strong>12 territórios</strong> quaisquer</div></div>
+    <div class="mission-item"><div class="mission-num">5</div><div>Todas as <strong>regiões costeiras</strong></div></div>
+    <div class="mission-item"><div class="mission-num">6</div><div>Conquistar o <strong>Castelo Principal</strong> de um jogador</div></div>
+    <div class="mission-item"><div class="mission-num">7</div><div><strong>Riverlands + Reach + Crownlands</strong></div></div>
+    <div class="mission-item"><div class="mission-num">8</div><div><strong>8 territórios</strong> + ≥5 Tokens de Restauração</div></div>
+    <div class="mission-item"><div class="mission-num">9</div><div><strong>Dragonstone + Eyrie + Winterfell</strong></div></div>
+    <div class="mission-item"><div class="mission-num">10</div><div><strong>Iron Islands + Dorne</strong></div></div>
+  </div>
+
+  <div class="divider">⚔ ⚔ ⚔</div>
+
+  <h2>🌿 Tokens de Restauração</h2>
+
+  <p>Representam o <strong>capital ecológico</strong> acumulado. Usos:</p>
+
+  <table>
+    <tr><th>Uso</th><th style="text-align:center">Custo</th><th>Efeito</th></tr>
+    <tr><td><strong>🟢 Mobilizar</strong></td><td style="text-align:center">3</td><td>1 token da reserva → mapa (2 com Casterly Rock)</td></tr>
+    <tr><td><strong>🌿 Corredor ecológico</strong></td><td style="text-align:center">4</td><td>Conecta 2 territórios não adjacentes por 1 turno</td></tr>
+    <tr><td><strong>🛡️ Área protegida</strong></td><td style="text-align:center">5</td><td>1 território imune a ataques por 1 rodada</td></tr>
+    <tr><td><strong>🪨 Stepping stone</strong></td><td style="text-align:center">2</td><td>Move 1 token entre territórios separados por 1 inimigo</td></tr>
+  </table>
+
+  <div class="divider">⚔ ⚔ ⚔</div>
+
+  <h2>🏆 Condições de Vitória</h2>
+
+  <div class="rule-box">
+    <strong>Vitória imediata:</strong> Completar sua <strong>Missão Secreta</strong> OU eliminar todos via <strong>Regra do Castelo</strong>.
+  </div>
+
+  <p><strong>Vitória por tempo</strong> (90 min sem missão cumprida) — maior <strong>Pontuação de Paisagem</strong>:</p>
+
+  <div class="rule-box" style="text-align:center;font-size:11pt;">
+    <strong>Pontuação</strong> = (N<sub>territórios</sub> × 3) + (N<sub>tokens no mapa</sub> × 2) + (N<sub>castelos</sub> × 5) + Bônus<sub>macro-regiões</sub>
+  </div>
+
+  <div class="divider">⚔ ⚔ ⚔</div>
+
+  <h2>🗺️ Macro-regiões e Bônus</h2>
+
+  <table>
+    <tr><th>Macro-região</th><th>Territórios</th><th style="text-align:center">Bônus</th></tr>
+    <tr><td><strong>The North</strong></td><td>Winterfell, Dreadfort, White Harbor, Moat Cailin</td><td style="text-align:center">+1 token + relançar dado</td></tr>
+    <tr><td><strong>The Vale</strong></td><td>The Eyrie, Gulltown</td><td style="text-align:center">+1 token da reserva</td></tr>
+    <tr><td><strong>The Riverlands</strong></td><td>Riverrun, Harrenhal</td><td style="text-align:center">+1 token da reserva</td></tr>
+    <tr><td><strong>The Westerlands</strong></td><td>Lannisport, Casterly Rock</td><td style="text-align:center">+1 token da reserva</td></tr>
+    <tr><td><strong>The Reach</strong></td><td>Highgarden, Oldtown</td><td style="text-align:center">+1 token da reserva</td></tr>
+    <tr><td><strong>The Stormlands</strong></td><td>Storm's End, Shipbreaker Bay</td><td style="text-align:center">+1 token da reserva</td></tr>
+    <tr><td><strong>Dorne</strong></td><td>Sunspear, Sandstone</td><td style="text-align:center">+1 token da reserva</td></tr>
+    <tr><td><strong>The Crownlands</strong></td><td>King's Landing, Dragonstone</td><td style="text-align:center">+1 token da reserva</td></tr>
+    <tr><td><strong>Iron Islands</strong></td><td>Pyke, Harlaw</td><td style="text-align:center">+1 token da reserva</td></tr>
+  </table>
+
+  <div class="page-footer">RISK OF LANDSCAPES — Manual do Jogador — Página 5</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- PÁGINA 6: CASAS + REFERÊNCIA RÁPIDA -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="page">
+  <h2>🏠 As 8 Casas de Westeros</h2>
+
+  <table>
+    <tr><th>Casa</th><th>Sigilo</th><th>Região</th><th>Tema Ecológico</th></tr>
+    <tr><td><strong>🐺 Stark</strong></td><td>Lobo</td><td>The North</td><td>Florestas contínuas, PLAND alto, conectividade</td></tr>
+    <tr><td><strong>🐙 Greyjoy</strong></td><td>Kraken</td><td>Iron Islands</td><td>Ilhas isoladas, limiar de percolação</td></tr>
+    <tr><td><strong>🦁 Lannister</strong></td><td>Leão</td><td>Westerlands</td><td>Mineração, trade-off provisão/regulação</td></tr>
+    <tr><td><strong>🌹 Tyrell</strong></td><td>Rosa</td><td>The Reach</td><td>Mosaico agrícola, SHDI alto, polinizadores</td></tr>
+    <tr><td><strong>☀️ Martell</strong></td><td>Sol</td><td>Dorne</td><td>Deserto, oásis como stepping stones</td></tr>
+    <tr><td><strong>🦅 Arryn</strong></td><td>Falcão</td><td>The Vale</td><td>Montanhas, gradiente altitudinal</td></tr>
+    <tr><td><strong>🐟 Tully</strong></td><td>Truta</td><td>Riverlands</td><td>Rios fragmentados, matas ripárias</td></tr>
+    <tr><td><strong>🦌 Baratheon</strong></td><td>Cervo</td><td>Stormlands</td><td>Tempestades, fogo natural, resiliência</td></tr>
+  </table>
+
+  <div class="divider">⚔ ⚔ ⚔</div>
+
+  <h2>📊 Referência Rápida — Conceitos-chave</h2>
+
+  <h3>Modelo Mancha-Corredor-Matriz</h3>
+  <ul>
+    <li><strong>Mancha (patch):</strong> área homogênea que difere do entorno</li>
+    <li><strong>Corredor:</strong> elemento linear conectando manchas</li>
+    <li><strong>Matriz:</strong> elemento dominante e mais conectado ("fundo" da paisagem)</li>
+  </ul>
+
+  <h3>Métricas-chave</h3>
+  <table>
+    <tr><th>Métrica</th><th>Descrição</th></tr>
+    <tr><td><strong>PLAND</strong></td><td>% da paisagem coberta por vegetação nativa</td></tr>
+    <tr><td><strong>NP</strong></td><td>Número de manchas (fragmentos) de habitat</td></tr>
+    <tr><td><strong>AREA_MN</strong></td><td>Área média dos fragmentos (ha)</td></tr>
+    <tr><td><strong>SHDI</strong></td><td>Diversidade de Shannon — heterogeneidade composicional</td></tr>
+    <tr><td><strong>CONNECT</strong></td><td>Grau de conexão funcional entre manchas (0–100)</td></tr>
+    <tr><td><strong>ED</strong></td><td>Densidade de borda (m/ha)</td></tr>
+    <tr><td><strong>CORE</strong></td><td>% de habitat protegido de efeito de borda</td></tr>
+    <tr><td><strong>SE</strong></td><td>Índice de serviços ecossistêmicos (0–100)</td></tr>
+  </table>
+
+  <h3>Limiares Importantes</h3>
+  <div class="rule-box">
+    <strong>Percolação:</strong> ~59% de habitat → conectividade estrutural<br>
+    <strong>Limiar empírico:</strong> 20–30% → ponto de inflexão para biodiversidade<br>
+    <strong>Relação espécie-área:</strong> S = cA<sup>z</sup> (z ≈ 0,25)
+  </div>
+
+  <h3>Serviços Ecossistêmicos</h3>
+  <div class="cols">
+    <div>
+      <ul>
+        <li><strong>Provisão:</strong> alimentos, água, madeira</li>
+        <li><strong>Regulação:</strong> clima, água, erosão</li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li><strong>Culturais:</strong> recreação, estética</li>
+        <li><strong>Suporte:</strong> solo, ciclagem, biodiversidade</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Classificação de Tricart</h3>
+  <table>
+    <tr><td><strong>Estável</strong></td><td>Pedogênese > morfogênese (uso intensivo possível)</td></tr>
+    <tr><td><strong>Intergrade</strong></td><td>Equilíbrio frágil (manejo cuidadoso)</td></tr>
+    <tr><td><strong>Instável</strong></td><td>Morfogênese > pedogênese (proteção obrigatória)</td></tr>
+  </table>
+
+  <div class="page-footer">RISK OF LANDSCAPES — Manual do Jogador — Página 6</div>
+</div>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- PÁGINA 7: RESUMO DE TURNO + VARIANTES -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="page">
+  <h2>⚡ Resumo do Turno — Cola Rápida</h2>
+
+  <table>
+    <tr><th style="text-align:center;width:40px;">Fase</th><th>Ação</th><th>Resumo</th></tr>
+    <tr>
+      <td style="text-align:center;font-weight:bold;color:#8B7355;">1</td>
+      <td><strong>Mobilização</strong></td>
+      <td>Reposicione tokens. Mobilize da reserva se ganhou direito (Excelência, macro-região, 3 Tokens, castelo).</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;font-weight:bold;color:#8B7355;">2</td>
+      <td><strong>Ataque</strong></td>
+      <td>Ataque adjacentes com dados. Perdedor → reserva. Conquista → captura tokens do defensor!</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;font-weight:bold;color:#8B7355;">3</td>
+      <td><strong>Desafio</strong></td>
+      <td>Responda desafio do território conquistado. Acerto = Tokens. Erro = 1 token → reserva.</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;font-weight:bold;color:#8B7355;">4</td>
+      <td><strong>Narrativa</strong></td>
+      <td>Compre carta narrativa e responda. Acerto = Tokens. Erro = 1 token → reserva.</td>
+    </tr>
+    <tr>
+      <td style="text-align:center;font-weight:bold;color:#8B7355;">5</td>
+      <td><strong>Fortificação</strong></td>
+      <td>1 transferência entre territórios conectados. Não devolva tokens à reserva.</td>
+    </tr>
+  </table>
+
+  <div class="warning-box" style="margin-top:12px;text-align:center;font-size:11pt;">
+    🎯 <strong>BÔNUS DE EXCELÊNCIA</strong> = Acertar Fase 3 + Fase 4 completos = MOBILIZAR 1 TOKEN!
+  </div>
+
+  <div class="divider">⚔ ⚔ ⚔</div>
+
+  <h2>🎲 Variantes de Jogo</h2>
+
+  <div class="phase-block">
+    <h4>🤝 Modo Cooperativo — "Restauração de Westeros"</h4>
+    <p>Todos juntos contra o tabuleiro. Cada rodada, um "Evento de Degradação" (queimada, seca) remove tokens aleatórios. Acertem desafios para curar territórios antes que todos caiam.</p>
+  </div>
+
+  <div class="phase-block">
+    <h4>🎙️ Modo Debate — "Conselho de Mestres"</h4>
+    <p>Ao conquistar, defenda sua resposta perante os demais. O grupo vota se é satisfatória. Incentiva argumentação científica oral.</p>
+  </div>
+
+  <div class="phase-block">
+    <h4>⚡ Modo Rápido — "Skirmish"</h4>
+    <p>Apenas 10 territórios (um por macro-região, aleatório). Jogo em 30–45 min.</p>
+  </div>
+
+  <div class="phase-block">
+    <h4>📖 Modo Narrativa Intensiva — "Crônicas de Westeros"</h4>
+    <p>Use as 10 cartas da casa em sequência obrigatória. Não avança sem acertar. Acerto completo = 5 Tokens (em vez de 3). Completar 10 cartas = vitória automática.</p>
+  </div>
+
+  <div class="divider">⚔ ⚔ ⚔</div>
+
+  <div style="text-align:center;margin-top:20px;">
+    <p style="font-family:'Cinzel',serif;font-size:14pt;color:#8B7355;letter-spacing:3px;">VALAR MORGHULIS</p>
+    <p style="font-size:10pt;color:#999;margin-top:6px;">Todas as paisagens devem ser compreendidas.</p>
+    <p style="font-size:9pt;color:#bbb;margin-top:16px;font-style:italic;">
+      Risk of Landscapes — Serious Game para Análise da Paisagem<br>
+      Prof. Diego Vidal — UEFS<br>
+      Disciplina: Análise da Paisagem (EXA 851)
+    </p>
+  </div>
+
+  <div class="page-footer">RISK OF LANDSCAPES — Manual do Jogador — Página 7</div>
+</div>
+
+</body>
+</html>

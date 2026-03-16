@@ -87,54 +87,60 @@ Os alunos devem perceber as seguintes relações ecológicas nos dados:
 
 ### 5.1 Preparação
 
-> **Regra fundamental:** Cada casa possui **6 tokens**. As **cartas de território** determinam a posse; os **tokens no mapa** representam força militar (concentração de exércitos).
+> **Regra fundamental:** Cada casa possui **6 tokens físicos**. Todos começam com **3 tokens no mapa**. Os outros 3 ficam na **reserva pessoal** (ao lado do jogador) e só podem ser mobilizados por **mérito** (acertar desafios ou trocar Tokens de Restauração). **Cartas de território** = posse. **Tokens no mapa** = força militar.
 
-1. **Escolher casa**: cada jogador escolhe uma das 8 casas de Westeros. O baralho de narrativas correspondente (10 cartas) é separado e embaralhado face para baixo.
+1. **Escolher casa**: cada jogador escolhe uma das 8 casas de Westeros. Recebe os 6 tokens da sua cor, o baralho de narrativas correspondente (10 cartas, embaralhado face para baixo) e a **carta de Castelo** da casa.
 2. **Distribuir territórios**: embaralhe as 20 cartas de território e distribua igualmente (veja tabela). Territórios restantes ficam **neutros** (sem dono e sem tokens).
-3. **Posicionar tokens**: cada jogador distribui seus **6 tokens** livremente entre os territórios que recebeu. Pode concentrar todos em um só ou espalhar — a estratégia é livre.
+3. **Posicionar tokens**: cada jogador coloca **3 tokens no mapa** livremente entre seus territórios, com uma obrigação: o **Castelo Principal** da sua casa deve receber **pelo menos 1 token**. Os outros **3 ficam na reserva**.
 4. **Missão secreta**: cada jogador recebe 1 carta de missão que define seu objetivo de vitória.
 
-| Jogadores | Territórios/jogador | Territórios neutros | Tokens (por jogador) |
-|:---:|:---:|:---:|:---:|
-| 2 | 10 | 0 | 6 |
-| 3 | 6 | 2 | 6 |
-| 4 | 5 | 0 | 6 |
-| 5 | 4 | 0 | 6 |
-| 6 | 3 | 2 | 6 |
+| Jogadores | Territórios/jogador | Territórios neutros | No mapa | Na reserva | Total |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 2 | 10 | 0 | 3 | 3 | 6 |
+| 3 | 6 | 2 | 3 | 3 | 6 |
+| 4 | 5 | 0 | 3 | 3 | 6 |
+| 5 | 4 | 0 | 3 | 3 | 6 |
+| 6 | 3 | 2 | 3 | 3 | 6 |
 
 **Territórios neutros:** não pertencem a ninguém. Podem ser conquistados sem combate (basta mover 1 token), mas o jogador deve responder ao Desafio da Paisagem.
 
-**Posse sem token:** um território sem nenhum token continua pertencendo ao dono da carta, mas está **desguarnecido** — qualquer adversário adjacente pode invadi-lo sem lançar dados (ocupação automática). O novo dono fica com a carta.
+**Posse sem token:** um território sem nenhum token continua pertencendo ao dono da carta, mas está **desguarnecido** — qualquer adversário adjacente pode invadi-lo sem lançar dados respondendo uma carta desafio (ocupação automática). O novo dono fica com a carta.
+
+**🛡️ Proteção inicial:** Durante a **primeira rodada completa** (primeiro turno de cada jogador), **castelos principais não podem ser atacados**. Isso garante que todos tenham pelo menos 1 turno para se posicionar estrategicamente.
 
 ### 5.2 Turno de Jogo
 
 Cada turno possui **5 fases**, nesta ordem:
 
-#### Fase 1 — Reforços 🌲
+#### Fase 1 — Mobilização (Reforços) 🌲
 
-No início de cada turno, o jogador pode **reposicionar tokens** e/ou **recuperar tokens perdidos**:
+No início de cada turno, o jogador pode:
 
-| Fonte | Ganho |
+1. **Reposicionar tokens** livremente entre seus territórios conectados (como a antiga Manobra).
+2. **Mobilizar tokens da reserva**, mas **somente** se tiver ganho esse direito:
+
+| Fonte | Quando pode mobilizar |
 |:---|:---|
-| Turno regular | Recupera **1 token** (coloca em qualquer território seu) |
-| Bônus de macro-região | Controlar todos os territórios de uma macro-região → ganha **+1 token** extra |
-| Tokens de Restauração | A cada **3 Tokens de Restauração** trocados → recupera **1 token** |
+| Bônus de Excelência (turno anterior) | Acertou Desafio + Narrativa no turno anterior → coloca **1 token da reserva** em qualquer território seu |
+| Bônus de macro-região | Controlar todos os territórios de uma macro-região → coloca **1 token da reserva** |
+| Tokens de Restauração | Troca **3 Tokens de Restauração** → coloca **1 token da reserva** no mapa |
+| Habilidade de Castelo | Algumas habilidades de castelo permitem mobilização especial (ver Seção 5.3) |
 
-> **⚠️ Limite máximo:** um jogador nunca pode ter mais de **6 tokens** no mapa simultaneamente.
+> **⚠️ Reserva vazia = sem reforço.** Se o jogador não tem tokens na reserva, não pode mobilizar nenhum. Tokens capturados de outros jogadores também vão para a reserva e podem ser mobilizados normalmente.
 
-**Bônus por macro-região completa (+1 token extra no turno):**
+**Bônus por macro-região completa:**
 
 | Macro-região | Bônus | Justificativa ecológica |
 |:---|:---:|:---|
-| The North (4 territórios) | +1 token + relançar 1 dado | Maior macro-região; florestas contínuas geram alta resiliência |
-| The Vale | +1 token | Isolamento montano dificulta conquista, mas limita reforços |
-| The Riverlands | +1 token | Posição central: corredores fluviais conectam |
-| The Westerlands | +1 token | Recursos minerais compensam a degradação |
-| The Reach | +1 token | Celeiro produtivo: serviços de provisão alimentam exércitos |
-| The Stormlands | +1 token | Tempestades limitam logística |
-| Dorne | +1 token | Paisagem árida com baixa capacidade de suporte |
-| The Crownlands | +1 token | Capital política: poder centralizado |
-| Iron Islands | +1 token | Ilhas com poucos recursos paisagísticos |
+| The North (4 territórios) | +1 token da reserva + relançar 1 dado | Maior macro-região; florestas contínuas geram alta resiliência |
+| The Vale | +1 token da reserva | Isolamento montano dificulta conquista, mas limita reforços |
+| The Riverlands | +1 token da reserva | Posição central: corredores fluviais conectam |
+| The Westerlands | +1 token da reserva | Recursos minerais compensam a degradação |
+| The Reach | +1 token da reserva | Celeiro produtivo: serviços de provisão alimentam exércitos |
+| The Stormlands | +1 token da reserva | Tempestades limitam logística |
+| Dorne | +1 token da reserva | Paisagem árida com baixa capacidade de suporte |
+| The Crownlands | +1 token da reserva | Capital política: poder centralizado |
+| Iron Islands | +1 token da reserva | Ilhas com poucos recursos paisagísticos |
 
 #### Fase 2 — Ataque ⚔️
 
@@ -143,10 +149,14 @@ O jogador pode atacar territórios adjacentes (conectados no mapa). O combate se
 - **Atacante**: lança dados igual ao número de tokens no território atacante (máximo 3 dados). Deve deixar pelo menos 1 token no território de origem.
 - **Defensor**: lança dados igual ao número de tokens no território defendido (máximo 2 dados). Mínimo 1 dado.
 - **Comparação**: dados ordenados do maior para o menor, comparados par a par. Empate favorece o defensor.
-- **Perdedor** de cada par **remove 1 token** do território.
-- **Território desguarnecido** (0 tokens) é **conquistado automaticamente**: o atacante move pelo menos 1 token para lá e pega a carta de território do adversário.
+- **Perdedor** de cada par **remove 1 token** do território → o token volta para a **reserva pessoal** do dono (representa recuo/reorganização).
+- **Território a 0 tokens** → **conquistado**: o atacante move pelo menos 1 token para lá e pega a carta de território.
+
+**🏆 Captura de tokens:** ao conquistar um território, o atacante **captura todos os tokens do defensor que restavam ali** (se houver) — eles vão para a **reserva do atacante**. Isso significa que um jogador agressivo pode acumular **mais de 6 tokens** ao longo do jogo! (Representam tropas capturadas / recursos saqueados.)
 
 **Conquistar território neutro:** basta mover 1 token para lá (sem combate), mas deve responder ao Desafio da Paisagem.
+
+**Conquistar território desguarnecido (0 tokens):** ocupação automática — move 1 token e pega a carta. Deve responder ao Desafio.
 
 **REGRA ESPECIAL — Vantagem de conectividade:**
 Se o território atacante tem **CONNECT ≥ 60**, o atacante pode relançar **1 dado** por tentativa de ataque (paisagens bem conectadas têm melhor logística).
@@ -165,7 +175,7 @@ Sempre que um jogador **conquista um território**, ele deve responder ao **Desa
 |:---|:---|
 | **Acerto completo** | Ganha **2 Tokens de Restauração** + ocupa o território |
 | **Acerto parcial** | Ganha **1 Token de Restauração** + ocupa o território |
-| **Erro** | Ocupa o território, mas **remove 1 token do mapa** (degradação ecológica) |
+| **Erro** | Ocupa o território, mas **1 token volta para a reserva** (degradação ecológica) |
 
 #### Fase 4 — Narrativa da Casa 📜
 
@@ -177,13 +187,14 @@ No final de cada turno (mesmo que o jogador não tenha conquistado territórios)
 |:---|:---|
 | **Acerto completo** | Ganha **3 Tokens de Restauração** |
 | **Acerto parcial** | Ganha **1 Token de Restauração** |
-| **Erro** | **Remove 1 token** de um território à sua escolha |
+| **Erro** | **1 token** de um território à sua escolha **volta para a reserva** |
 
 **Regras do Baralho de Narrativas:**
-- Cada jogador escolhe uma casa no início do jogo (ver seção 5.1).
-- O baralho da casa correspondente (10 cartas) é separado e embaralhado.
+- O baralho da casa correspondente (10 cartas) é separado e embaralhado no início.
 - As cartas são progressivas: os desafios vão de conceitos básicos a aplicações avançadas.
 - Se acabarem as 10 cartas, o baralho é re-embaralhado.
+
+> **🎯 BÔNUS DE EXCELÊNCIA** — Se no mesmo turno o jogador acertou **completamente** pelo menos 1 Desafio da Paisagem (Fase 3) **E** a Narrativa da Casa (Fase 4), ele pode imediatamente **mobilizar 1 token da reserva** para qualquer território seu. Esta é a **principal forma de crescer suas forças** — recompensa o conhecimento de Ecologia da Paisagem!
 
 **As 8 Casas e seus temas paisagísticos:**
 
@@ -198,9 +209,53 @@ No final de cada turno (mesmo que o jogador não tenha conquistado territórios)
 | 🐟 Tully | Truta | The Riverlands | Rios fragmentados, matas ripárias, enchentes, degradação por guerra |
 | 🦌 Baratheon | Cervo | The Stormlands | Tempestades, fogo natural, resiliência vs. resistência, Tricart |
 
-#### Fase 5 — Manobra (Fortificação) 🏰
+#### Fase 5 — Fortificação 🏰
 
-O jogador pode mover **tokens** entre dois territórios **seus** que estejam conectados por uma cadeia contínua de seus territórios (simula a **conectividade funcional** — só flui onde há continuidade). Pode mover quantos tokens quiser, mas território com 0 tokens fica **desguarnecido**.
+O jogador pode realizar **uma** transferência de tokens entre dois territórios **seus** conectados por cadeia contínua de territórios próprios (simula a **conectividade funcional** — só flui onde há continuidade). Pode mover quantos tokens quiser nessa transferência.
+
+> **⚠️ Atenção:** território com 0 tokens fica **desguarnecido** e pode ser invadido automaticamente. Não é permitido devolver tokens ao reserva nesta fase — tokens só voltam à reserva por recuo em combate, erro em desafio, ou habilidade especial.
+
+---
+
+### 5.3 Regra do Castelo (Regra Coringa) 👑
+
+Cada casa possui um **Castelo Principal** — o território-capital da sua região. Esta é a mecânica mais importante do jogo:
+
+| Casa | Castelo Principal |
+|:---|:---|
+| 🐺 Stark | Winterfell |
+| 🐙 Greyjoy | Pyke |
+| 🦁 Lannister | Casterly Rock |
+| 🌹 Tyrell | Highgarden |
+| ☀ Martell | Sunspear |
+| 🦅 Arryn | The Eyrie |
+| 🐟 Tully | Riverrun |
+| 🦌 Baratheon | Storm's End |
+
+**Eliminação por Castelo:** Se um jogador conquista o Castelo Principal de um oponente, **esse oponente é eliminado do jogo**, independentemente de quantos territórios e tokens ele ainda possua. O conquistador recebe:
+
+- ✅ **Todos os territórios** (cartas) do eliminado
+- ✅ **Todos os tokens** do eliminado (mapa + reserva) — passa a usar ambos os conjuntos de peças
+- ✅ A **habilidade especial** do castelo conquistado (acumulativa com as que já possui)
+
+**Proteção inicial:** Na primeira rodada completa, castelos não podem ser atacados.
+
+**Jogador eliminado como Conselheiro:** O jogador eliminado não sai da mesa — ele se torna **Conselheiro** do conquistador, podendo ajudar a responder os desafios das cartas. Isso mantém o engajamento pedagógico e promove aprendizado cooperativo.
+
+#### Habilidades Especiais dos Castelos
+
+Cada castelo oferece uma vantagem única baseada na ecologia da paisagem local. Há **trade-offs**: quem tem abundância de um recurso tem escassez de outro — refletindo os serviços ecossistêmicos reais.
+
+| Castelo | Habilidade | Base Ecológica | Trade-off |
+|:---|:---|:---|:---|
+| **Winterfell** | **Proteção Florestal**: +1 dado de defesa em todos os territórios do The North | PLAND 78% = cobertura florestal contínua oferece cobertura defensiva natural | Posição periférica ao norte, longe dos centros de recursos |
+| **Pyke** | **Ponte Marítima**: pode atacar/mover tokens para qualquer território costeiro, mesmo não adjacente | Stepping stones oceânicos = dispersão marítima entre ilhas | PLAND 12,5% = território próprio extremamente frágil |
+| **Casterly Rock** | **Riqueza Mineral**: troca apenas **2** Tokens de Restauração (em vez de 3) para mobilizar 1 token | SE alto de provisão = recursos minerais abundantes | CONNECT 38 = baixa conectividade, sem bônus de relançamento |
+| **Highgarden** | **Celeiro Fértil**: ganha **+1 Token de Restauração** extra em qualquer acerto (completo ou parcial) de desafio | SHDI alto = matriz agrícola diversificada, produção abundante | PLAND 22% = pouca vegetação nativa, território ecologicamente frágil |
+| **Sunspear** | **Defesa Árida**: o primeiro ataque contra Sunspear em cada rodada **falha automaticamente** | Deserto como barreira natural, custos logísticos extremos de invasão | SE 25 = pouquíssimos serviços ecossistêmicos, sem bônus produtivo |
+| **The Eyrie** | **Fortaleza Montana**: The Eyrie só pode ser atacada se o atacante tiver **≥3 tokens** no território de origem | Isolamento montano = barreira topográfica extrema que dificulta acesso | Poucos territórios na macro-região, difícil expandir |
+| **Riverrun** | **Corredores Fluviais**: territórios do Riverlands são considerados adjacentes a **qualquer território que faça fronteira com rios** | Rios como corredores ecológicos de alta conectividade linear | PLAND 28% = no limiar de fragmentação, território inerentemente vulnerável |
+| **Storm's End** | **Resiliência**: ao perder 1 token em combate, jogue 1 dado — resultado **5 ou 6** = o token permanece no mapa | Tricart intergrade = capacidade natural de recuperação pós-distúrbio | Posição geográfica mediana, sem vantagem posicional forte |
 
 ---
 
@@ -213,7 +268,7 @@ O jogador pode mover **tokens** entre dois territórios **seus** que estejam con
 | 3 | Controlar Winterfell + Highgarden + Sunspear | Gradiente de paisagens (boreal → agrícola → árida) |
 | 4 | Controlar 12 territórios quaisquer | Expandir a cobertura territorial (analogia com PLAND) |
 | 5 | Controlar todas as regiões costeiras (White Harbor, Gulltown, Shipbreaker Bay, Sunspear, Pyke, Dragonstone) | Conectividade litoral — corredor costeiro |
-| 6 | Eliminar um jogador específico | Extinção competitiva (analogia com exclusão de nicho) |
+| 6 | Conquistar o Castelo Principal de um jogador específico | Extinção competitiva (analogia com exclusão de nicho) |
 | 7 | Controlar The Riverlands + The Reach + The Crownlands | Dominar o corredor central de Westeros |
 | 8 | Controlar 8 territórios e ter ≥ 5 Tokens de Restauração | Equilíbrio entre conquista e conservação |
 | 9 | Controlar Dragonstone + The Eyrie + Winterfell | Dominar as 3 paisagens com maior área nuclear |
@@ -223,14 +278,14 @@ O jogador pode mover **tokens** entre dois territórios **seus** que estejam con
 
 ## 7. Tokens de Restauração — Mecânica de Bônus
 
-Os Tokens de Restauração representam o **capital ecológico** acumulado pelo jogador ao demonstrar conhecimento de Análise da Paisagem. Além de trocar por exércitos (3 tokens = 2 exércitos), eles podem ser usados para:
+Os Tokens de Restauração representam o **capital ecológico** acumulado pelo jogador ao demonstrar conhecimento de Análise da Paisagem. A principal função é trocar por mobilização de tokens da reserva (3 Tokens de Restauração = 1 token da reserva no mapa, ou 2 se possuir Casterly Rock). Além disso, podem ser usados para habilidades especiais:
 
 | Uso | Custo | Efeito |
 |:---|:---:|:---|
+| **Mobilizar token** | 3 tokens | Coloca 1 token da reserva em qualquer território seu (2 se tiver Casterly Rock) |
 | **Corredor ecológico** | 4 tokens | Conecta dois territórios não adjacentes seus por 1 turno (permite ataque/manobra à distância) |
-| **Restauração de habitat** | 3 tokens | Adiciona +2 exércitos a um território com PLAND < 30% |
 | **Área protegida** | 5 tokens | Um território seu não pode ser atacado por 1 rodada |
-| **Stepping stone** | 2 tokens | Permite mover 1 exército entre dois territórios separados por 1 território inimigo |
+| **Stepping stone** | 2 tokens | Permite mover 1 token entre dois territórios separados por 1 território inimigo |
 
 ---
 
@@ -330,18 +385,20 @@ Os Tokens de Restauração representam o **capital ecológico** acumulado pelo j
 
 ## 11. Condições de Vitória
 
-O jogo termina quando um jogador completa sua **Missão Secreta**. Ele deve revelar a carta e demonstrar que cumpriu o objetivo.
+O jogo termina quando:
 
-**Vitória alternativa**: se nenhuma missão for cumprida em 90 minutos, vence o jogador com a maior **Pontuação de Paisagem**:
+1. **Missão Secreta cumprida**: um jogador revela a carta e demonstra que cumpriu o objetivo. **Vitória imediata.**
+2. **Dominação total**: um jogador elimina todos os outros via Regra do Castelo. **Vitória automática.**
+3. **Tempo esgotado**: se nenhuma missão for cumprida em 90 minutos, vence o jogador com a maior **Pontuação de Paisagem**:
 
-$$Pontuação = (N_{territorios} \times 3) + (N_{tokens} \times 2) + Bonus_{macro-regiões}$$
+$$Pontuação = (N_{territorios} \times 3) + (N_{tokens\_no\_mapa} \times 2) + (N_{castelos} \times 5) + Bonus_{macro-regi\tilde{o}es}$$
 
 ---
 
 ## 12. Variantes
 
 ### 12.1 Modo Cooperativo — "Restauração de Westeros"
-Os jogadores trabalham **juntos** contra o tabuleiro. A cada rodada, um "Evento de Degradação" é sorteado (queimada, invasão, seca) que remove exércitos de territórios aleatórios. Os jogadores devem acertar os desafios para ganhar Tokens de Restauração e "curar" os territórios antes que todos caiam.
+Os jogadores trabalham **juntos** contra o tabuleiro. A cada rodada, um “Evento de Degradação” é sorteado (queimada, invasão, seca) que remove tokens de territórios aleatórios. Os jogadores devem acertar os desafios para ganhar Tokens de Restauração e “curar” os territórios antes que todos caiam.
 
 ### 12.2 Modo Debate — "Conselho de Mestres"
 Ao conquistar um território, o jogador deve defender sua resposta ao desafio perante os demais jogadores, que podem fazer perguntas. O grupo vota se a resposta é satisfatória. Incentiva argumentação científica oral.
