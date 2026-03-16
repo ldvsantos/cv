@@ -634,18 +634,17 @@ Utilize os formulários abaixo para enviar as atividades da disciplina. Certifiq
 </div>
 
 <!-- ══════ SERIOUS GAME — 11º ENCONTRO (2ª AVALIAÇÃO) ══════ -->
-<div style="border:2px solid #8B7355; border-left:5px solid #8B7355; border-radius:0.5rem; padding:1.25rem; background:linear-gradient(135deg,#1c1c1c,#2a2520); box-shadow:0 4px 16px rgba(139,115,85,0.25); display:flex; flex-direction:column; gap:0.75rem;">
+<div style="border:1px solid #dee2e6; border-left:4px solid #5d4037; border-radius:0.5rem; padding:1.25rem; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.06); display:flex; flex-direction:column; gap:0.75rem;">
   <div style="display:flex; align-items:center; gap:0.75rem;">
-    <div style="width:2.8rem; height:2.8rem; border-radius:0.5rem; background:#8B7355; display:flex; align-items:center; justify-content:center; color:#1c1c1c; font-size:1.3rem; flex-shrink:0;">⚔</div>
+    <div style="width:2.8rem; height:2.8rem; border-radius:0.5rem; background:#5d4037; display:flex; align-items:center; justify-content:center; color:#fff; font-size:1.3rem; flex-shrink:0;"><i class="fa-solid fa-chess-rook"></i></div>
     <div>
-      <h4 style="margin:0; font-size:1rem; font-weight:700; color:#d4c8b0; font-family:'Cinzel',serif; letter-spacing:1px;">11º Enc. | Serious Game — Risk of Landscapes</h4>
-      <p style="margin:0; font-size:0.82rem; color:#8B7355;">20/05 · 2ª Avaliação (Prática I, em grupo) · A Guerra pelas Paisagens de Westeros.</p>
+      <h4 style="margin:0; font-size:1rem; font-weight:600; color:#2c3e50;">2ª Avaliação — Serious Game: Risk of Landscapes</h4>
+      <p style="margin:0; font-size:0.82rem; color:#777;">11º Enc. · 20/05 · Prática I (em grupo) · Ecologia da paisagem aplicada.</p>
     </div>
   </div>
-  <p style="margin:0; font-size:0.82rem; color:#a89880; line-height:1.5;">Jogo de tabuleiro onde os alunos aplicam conceitos de ecologia da paisagem (matriz, mancha, corredor, conectividade, fragmentação e métricas) em disputas territoriais no universo de Game of Thrones.</p>
   <div style="display:flex; gap:0.6rem; flex-wrap:wrap;">
-    <a href="serious-game/risk-of-landscapes-rules.html" target="_blank" style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.55rem 1.2rem; background:#8B7355; color:#1c1c1c; border-radius:0.4rem; text-decoration:none; font-size:0.88rem; font-weight:700; width:fit-content; transition: background 0.2s; letter-spacing:0.5px;"><i class="fa-solid fa-scroll"></i> Regras e Lore</a>
-    <a href="serious-game/risk-of-landscapes-print-all.html" target="_blank" style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.55rem 1.2rem; background:transparent; color:#8B7355; border:1.5px solid #8B7355; border-radius:0.4rem; text-decoration:none; font-size:0.88rem; font-weight:700; width:fit-content; transition: background 0.2s; letter-spacing:0.5px;"><i class="fa-solid fa-print"></i> Imprimir Cartas</a>
+    <a href="serious-game/risk-of-landscapes-rules.html" target="_blank" style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.55rem 1.2rem; background:#5d4037; color:#fff; border-radius:0.4rem; text-decoration:none; font-size:0.88rem; font-weight:600; width:fit-content; transition: background 0.2s;"><i class="fa-solid fa-scroll"></i> Regras e Lore</a>
+    <a href="serious-game/risk-of-landscapes-print-all.html" target="_blank" style="display:inline-flex; align-items:center; gap:0.4rem; padding:0.55rem 1.2rem; background:#5d4037; color:#fff; border-radius:0.4rem; text-decoration:none; font-size:0.88rem; font-weight:600; width:fit-content; transition: background 0.2s;"><i class="fa-solid fa-print"></i> Imprimir Cartas</a>
   </div>
 </div>
 
