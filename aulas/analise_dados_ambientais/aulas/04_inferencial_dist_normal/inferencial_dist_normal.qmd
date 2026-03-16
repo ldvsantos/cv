@@ -63,6 +63,17 @@ A inferência advém da relação entre a **teoria estatística** e os **dados r
 ::::
 :::: {.column width="45%"}
 
+![](slide1_img.jpg){fig-align="center" width="90%"}
+
+::::
+:::
+
+
+## Métodos de Inferência {.smaller-text}
+
+::: {.columns}
+:::: {.column width="55%"}
+
 ::: {.box}
 **Métodos de inferência para testes de hipóteses:**
 
@@ -72,6 +83,11 @@ A inferência advém da relação entre a **teoria estatística** e os **dados r
 
 [3]{.circle} Estimação por *Bootstrapping* (IC das diferenças/magnitudes)
 :::
+
+::::
+:::: {.column width="45%"}
+
+![](slide2_img.jpg){fig-align="center" width="90%"}
 
 ::::
 :::
@@ -287,6 +303,15 @@ Aceitar Ho quando Ho é **falsa**.
 :::
 
 
+## Erros Estatísticos — Resumo Visual {.smaller-text}
+
+![](slide8_img.jpg){fig-align="center" width="75%"}
+
+::: {.highlight-box}
+O **equilíbrio** entre Erro Tipo I ($\alpha$) e Erro Tipo II ($\beta$) é fundamental: reduzir um aumenta o outro. O tamanho amostral e o nível de significância são as ferramentas de controle.
+:::
+
+
 ## Outras Causas de Erro {.smaller-text}
 
 ::: {.info-box}
@@ -330,9 +355,6 @@ Instrumento de pesquisa **ruim** ou não validado.
 
 ## Poder Amostral {.smaller-text}
 
-::: {.columns}
-:::: {.column width="50%"}
-
 ::: {.info-box}
 **Poder amostral** — Probabilidade de detectar um efeito do tratamento, **se estiver presente**.
 
@@ -342,6 +364,9 @@ $$\text{Poder} = 1 - \beta = 1 - 0{,}20 = 0{,}80$$
 :::
 
 . . .
+
+::: {.columns}
+:::: {.column width="50%"}
 
 ::: {.highlight-box}
 **Valores aceitos na literatura:**
@@ -354,20 +379,217 @@ $$\text{Poder} = 1 - \beta = 1 - 0{,}20 = 0{,}80$$
 :::: {.column width="50%"}
 
 ::: {.box}
-**Tamanho do efeito ($d_z$)**
+**Interpretação prática:**
 
-O $d_z$ é uma medida padronizada da diferença entre duas condições em um estudo de medidas repetidas.
+Se o poder é 0,80, há **80% de chance** de detectar um efeito real e **20% de chance** de cometer Erro Tipo II ($\beta$).
+:::
 
-Quanto **maior** o $d_z$, mais facilmente detectável é a diferença, necessitando de **menos amostras**.
+::::
+:::
+
+
+## Tamanho do Efeito {.smaller-text}
+
+::: {.info-box}
+**Tamanho do efeito** — Medida padronizada da **magnitude** da diferença ou associação encontrada, independente do tamanho amostral (Cohen, 1988).
+:::
+
+. . .
+
+::: {.columns}
+:::: {.column width="50%"}
+
+::: {.box}
+| Classificação | Valor | Interpretação |
+|:---:|:---:|:---|
+| Pequeno | 0,20 | Diferença sutil, difícil de perceber |
+| Médio | 0,50 | Diferença moderada, perceptível |
+| Grande | 0,80 | Diferença evidente, fácil de detectar |
+:::
+
+::::
+:::: {.column width="50%"}
+
+::: {.highlight-box}
+Quanto **maior** o efeito, menos amostras são necessárias para detectá-lo.
+
+O tamanho do efeito **complementa** o valor-*p*, informando a **relevância prática** do resultado.
+:::
+
+::::
+:::
+
+
+## Medidas de Tamanho do Efeito {.smaller-text}
+
+::: {.info-box}
+Existem diferentes medidas conforme o **tipo de análise** e o **delineamento experimental**:
+:::
+
+. . .
+
+::: {.columns}
+:::: {.column width="50%"}
+
+::: {.box}
+**$d$ de Cohen**
+
+$$d = \frac{\bar{X}_1 - \bar{X}_2}{DP_{\text{pool}}}$$
+
+Usa o **desvio-padrão combinado** dos dois grupos.
+
+Indicado quando as **variâncias são semelhantes** (grupos independentes).
+:::
+
+::::
+:::: {.column width="50%"}
+
+::: {.box}
+**$\Delta$ de Glass**
+
+$$\Delta = \frac{\bar{X}_1 - \bar{X}_2}{DP_{\text{controle}}}$$
+
+Usa o DP apenas do **grupo controle** como referência.
+
+Indicado quando as **variâncias são desiguais** ou há grupo controle definido.
+:::
+
+::::
+:::
+
+
+## Outras Medidas Comuns {.smaller-text}
+
+::: {.columns}
+:::: {.column width="50%"}
+
+::: {.box}
+**$d_z$ (Cohen para medidas repetidas)**
+
+$$d_z = \frac{\bar{D}}{DP_D}$$
+
+Usa a **média e DP das diferenças** intra-sujeito.
+
+Indicado para delineamentos **pareados / antes-depois**.
+:::
+
+. . .
+
+::: {.highlight-box}
+**$r$ (correlação como efeito)**
+
+| $r$ | Classificação |
+|:---:|:---|
+| 0,10 | Pequeno |
+| 0,30 | Médio |
+| 0,50 | Grande |
+
+Usado em **correlações** e **regressões**.
+:::
+
+::::
+:::: {.column width="50%"}
+
+::: {.box}
+**$f$ de Cohen (ANOVA)**
+
+$$f = \sqrt{\frac{\eta^2}{1 - \eta^2}}$$
+
+| $f$ | Classificação |
+|:---:|:---|
+| 0,10 | Pequeno |
+| 0,25 | Médio |
+| 0,40 | Grande |
+
+Usado no **G\*Power** para calcular N em ANOVA.
 :::
 
 . . .
 
 ::: {.info-box}
-**Ferramenta:** [G\*Power](https://www.psychologie.hhu.de/arbeitsgruppen/allgemeine-psychologie-und-arbeitspsychologie/gpower){target="_blank"} para cálculo de tamanho amostral.
+**Quando usar cada medida?**
+
+| Análise | Medida recomendada |
+|:---|:---|
+| Teste *t* independente | $d$ de Cohen |
+| Teste *t* pareado | $d_z$ |
+| Variâncias desiguais | $\Delta$ de Glass |
+| Correlação / Regressão | $r$ ou $R^2$ |
 :::
 
 ::::
+:::
+
+
+## Tamanho do Efeito na ANOVA {.smaller-text}
+
+::: {.info-box}
+Na ANOVA, o tamanho do efeito indica a **proporção da variância** explicada pelo fator estudado.
+:::
+
+. . .
+
+::: {.columns}
+:::: {.column width="33%"}
+
+::: {.box}
+**$\eta^2$ (Eta-quadrado)**
+
+$$\eta^2 = \frac{SQ_{\text{efeito}}}{SQ_{\text{total}}}$$
+
+Proporção da variância **total** explicada.
+
+Tende a **superestimar** o efeito.
+:::
+
+::::
+:::: {.column width="33%"}
+
+::: {.box}
+**$\eta^2_p$ (Parcial)**
+
+$$\eta^2_p = \frac{SQ_{\text{efeito}}}{SQ_{\text{efeito}} + SQ_{\text{erro}}}$$
+
+Variância explicada **descontando outros fatores**.
+
+Mais usado em ANOVA **fatorial**.
+:::
+
+::::
+:::: {.column width="34%"}
+
+::: {.box}
+**$\omega^2$ (Ômega-quadrado)**
+
+$$\omega^2 = \frac{SQ_{\text{efeito}} - df \cdot QM_{\text{erro}}}{SQ_{\text{total}} + QM_{\text{erro}}}$$
+
+Estimativa **menos enviesada** que $\eta^2$.
+
+Recomendado para **amostras pequenas**.
+:::
+
+::::
+:::
+
+. . .
+
+::: {.highlight-box}
+| $\eta^2$ / $\omega^2$ | Classificação |
+|:---:|:---|
+| 0,01 | Pequeno |
+| 0,06 | Médio |
+| 0,14 | Grande |
+
+(Cohen, 1988)
+:::
+
+
+## G*Power — Interface {.smaller-text}
+
+![](slide17_img.jpg){fig-align="center" width="70%"}
+
+::: {.info-box}
+O **G*Power** permite calcular o tamanho amostral necessário para diferentes testes estatísticos, considerando nível de significância, poder e tamanho do efeito esperado.
 :::
 
 
@@ -408,12 +630,28 @@ A curva normal representa a forma como diferentes valores se **agrupam em torno*
 ::::
 :::: {.column width="45%"}
 
+![](slide20_img.png){fig-align="center" width="100%"}
+
+::::
+:::
+
+
+## Propriedades da Curva Normal {.smaller-text}
+
+::: {.columns}
+:::: {.column width="50%"}
+
 ::: {.box}
 **Definida por dois parâmetros:**
 
 - **Média** ($\bar{X}$) — centro da distribuição
 - **Desvio-padrão** ($DP$) — largura/dispersão
 :::
+
+::::
+:::: {.column width="50%"}
+
+![](slide21_img.jpg){fig-align="center" width="100%"}
 
 ::::
 :::
@@ -512,6 +750,22 @@ $[29{,}64 - 123{,}60]$
 :::
 
 
+## Tipos de Assimetria — Exemplos {.smaller-text}
+
+::: {.columns}
+:::: {.column width="50%"}
+
+![](slide25_img.jpg){fig-align="center" width="95%"}
+
+::::
+:::: {.column width="50%"}
+
+![](slide25_img.png){fig-align="center" width="95%"}
+
+::::
+:::
+
+
 ## Curtose {.smaller-text}
 
 ::: {.info-box}
@@ -550,6 +804,22 @@ Distribuição **normal** (referência).
 
 Dados muito **dispersos**; muitos valores afastados da média.
 :::
+
+::::
+:::
+
+
+## Tipos de Curtose — Exemplos {.smaller-text}
+
+::: {.columns}
+:::: {.column width="50%"}
+
+![](slide26_img.png){fig-align="center" width="95%"}
+
+::::
+:::: {.column width="50%"}
+
+![](slide27_img.jpg){fig-align="center" width="95%"}
 
 ::::
 :::
@@ -604,6 +874,11 @@ $p < 0{,}001$
 :::
 
 
+## Critérios Descritivos — Exemplo Visual {.smaller-text}
+
+![](slide28_img.png){fig-align="center" width="75%"}
+
+
 ## Critérios Estatísticos {.smaller-text}
 
 ::: {.info-box}
@@ -623,14 +898,57 @@ Nos testes K-S e S-W, espera-se $p > 0{,}05$ para **acatar** a normalidade.
 
 . . .
 
+## Testes K-S e Shapiro-Wilk — Referências Visuais {.smaller-text}
+
+::: {.columns}
+:::: {.column width="50%"}
+
+![](slide29_img.jpg){fig-align="center" width="95%"}
+
+::::
+:::: {.column width="50%"}
+
+![](slide30_img.jpg){fig-align="center" width="95%"}
+
+::::
+:::
+
+
 ## Hierarquia de Poder dos Testes {.smaller-text}
 
-![](fig_testes_normalidade.png){fig-align="center" width="80%"}
+::: {.columns}
+:::: {.column width="55%"}
+
+![](fig_testes_normalidade.png){fig-align="center" width="100%"}
+
+::::
+:::: {.column width="45%"}
+
+![](slide31_img.png){fig-align="center" width="100%"}
+
+::::
+:::
 
 . . .
 
 ::: {.info-box}
 **Recomendação:** Prefira o **Shapiro-Wilk** quando possível — é o teste com maior poder estatístico para detectar desvios de normalidade.
+:::
+
+
+## Resumo — Normalidade na Prática {.smaller-text}
+
+::: {.columns}
+:::: {.column width="50%"}
+
+![](slide34_img.png){fig-align="center" width="95%"}
+
+::::
+:::: {.column width="50%"}
+
+![](slide35_img.png){fig-align="center" width="95%"}
+
+::::
 :::
 
 

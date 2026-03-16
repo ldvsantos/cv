@@ -36,7 +36,6 @@ execute:
 
 [6]{.circle} Aplicação em projetos ambientais
 
----
 
 # [ORIGEM E PROPÓSITO]{.section-header}
 
@@ -64,7 +63,6 @@ A taxonomia organiza processos cognitivos do **mais simples** (lembrar) ao **mai
 
 :::
 
----
 
 ## Por que estudar Bloom em Estatística? {.smaller-text}
 
@@ -79,7 +77,6 @@ A Taxonomia de Bloom permite:
 3. **Escalar** a complexidade da pesquisa
 4. **Avaliar** se as conclusões correspondem ao nível proposto
 
----
 
 # [OS 6 NÍVEIS COGNITIVOS]{.section-header}
 
@@ -93,13 +90,11 @@ A Taxonomia de Bloom permite:
 | 4 | Análise | **Analisar** |
 | 5 | Síntese | **Avaliar** |
 | 6 | Avaliação | **Criar** |
-{.striped .hover}
 
 ::: {.info-box}
 Na versão revisada, **Criar** (antigo Síntese) é o nível mais alto — acima de Avaliar. Isso enfatiza a **geração de conhecimento novo** como objetivo máximo.
 :::
 
----
 
 ## Pirâmide Cognitiva {.smaller-text}
 
@@ -119,117 +114,87 @@ flowchart BT
   style L6 fill:#0D0D0D,color:#fff
 ```
 
----
 
-## Nível 1 — Lembrar {.smaller-text}
+## Escada de Categorização {.smaller-text}
 
-**Definição:** Recuperar conhecimento relevante da memória de longo prazo.
-
-**Verbos:** Listar, definir, nomear, identificar, reconhecer, citar, descrever.
-
-| Exemplo Ambiental | Avaliação |
-|:---|:---|
-| "Liste os tipos de erosão hídrica" | Prova objetiva / Questionário |
-| "Defina diâmetro médio geométrico" | Resposta curta |
-| "Identifique os testes não paramétricos" | Múltipla escolha |
-{.striped .hover}
-
-::: {.highlight-box}
-**Na pesquisa:** Objetivos de Nível 1 são insuficientes para dissertações/teses. Apenas aceitáveis em revisão de literatura ou levantamentos descritivos.
-:::
-
----
-
-## Nível 2 — Entender {.smaller-text}
-
-**Definição:** Construir significado a partir de informações — interpretar, exemplificar, classificar, resumir, comparar, explicar.
-
-**Verbos:** Explicar, comparar, classificar, resumir, interpretar, exemplificar, inferir.
-
-| Exemplo Ambiental | Análise Associada |
-|:---|:---|
-| "Explique a relação entre cobertura vegetal e erosão" | Descritiva / Correlação |
-| "Compare os tipos de manejo do solo" | Tabela comparativa |
-| "Classifique as feições erosivas por magnitude" | Tipologia / Categorização |
-{.striped .hover}
-
----
-
-## Nível 3 — Aplicar {.smaller-text}
-
-**Definição:** Usar um procedimento em situação familiar ou nova.
-
-**Verbos:** Aplicar, calcular, executar, implementar, demonstrar, resolver, utilizar.
-
-| Exemplo Ambiental | Análise Associada |
-|:---|:---|
-| "Calcule o escore Z para dados de precipitação" | Estatística descritiva |
-| "Aplique o teste T para comparar dois tratamentos" | Teste T |
-| "Utilize regressão para prever produtividade" | Regressão linear |
-{.striped .hover}
+![](taxonomia_escada.gif){fig-align="center" width="75%"}
 
 ::: {.info-box}
-**Na pós-graduação:** Nível 3 é o **mínimo esperado** para dissertações — aplicar métodos a dados novos.
+A escada ilustra a **progressão cumulativa** dos níveis cognitivos: cada degrau exige o domínio dos anteriores.
 :::
 
----
 
-## Nível 4 — Analisar {.smaller-text}
+## Níveis 1 a 3: Habilidades de Ordem Inferior (LOTS) {.smaller-text}
 
-**Definição:** Decompor material em partes constituintes, identificar relações e estruturas.
+::: {.columns}
+:::: {.column width="55%"}
 
-**Verbos:** Analisar, diferenciar, organizar, atribuir, discriminar, decompor, investigar.
+| Nível | Definição | Verbos-chave | Exemplo Ambiental |
+|:---:|:---|:---|:---|
+| **1. Lembrar** | Recuperar informação da memória | Listar, definir, citar, identificar | "Liste os tipos de erosão hídrica" |
+| **2. Entender** | Construir significado, interpretar | Explicar, comparar, resumir, classificar | "Compare os tipos de manejo do solo" |
+| **3. Aplicar** | Usar procedimento em situação conhecida | Calcular, executar, resolver, demonstrar | "Aplique o teste T para comparar tratamentos" |
 
-| Exemplo Ambiental | Análise Associada |
-|:---|:---|
-| "Analise os fatores determinantes da erosão" | ANOVA Fatorial, Regressão Múltipla |
-| "Diferencie o efeito de covariáveis no rendimento" | ANCOVA |
-| "Investigue interações entre uso da terra e tipo de solo" | Análise de Correspondência |
-{.striped .hover}
-
-::: {.highlight-box}
-**Nível 4** é o padrão para **dissertações de mestrado** — análise crítica com técnicas multivariadas.
-:::
-
----
-
-## Nível 5 — Avaliar {.smaller-text}
-
-**Definição:** Fazer julgamentos baseados em critérios e padrões.
-
-**Verbos:** Avaliar, julgar, validar, criticar, justificar, recomendar, argumentar.
-
-| Exemplo Ambiental | Análise Associada |
-|:---|:---|
-| "Avalie a eficácia de barreiras vegetais contra erosão" | Metanálise, Revisão Sistemática |
-| "Valide um instrumento de percepção ambiental" | AFE, AFC, TRI |
-| "Julgue a adequação de modelos preditivos de sedimento" | Comparação de modelos (AIC, BIC) |
-{.striped .hover}
-
----
-
-## Nível 6 — Criar {.smaller-text}
-
-**Definição:** Reunir elementos para formar algo novo — gerar hipóteses, planejar, produzir.
-
-**Verbos:** Criar, propor, projetar, formular, construir, desenvolver, elaborar, sintetizar.
-
-| Exemplo Ambiental | Análise Associada |
-|:---|:---|
-| "Desenvolva um índice fuzzy de sustentabilidade" | Lógica fuzzy, Análise multicritério |
-| "Proponha um modelo preditivo de anomalias hidrológicas" | Machine Learning (Isolation Forest) |
-| "Construa um instrumento de avaliação de serviços ecossistêmicos" | Construção de escala + TRI |
-{.striped .hover}
+::::
+:::: {.column width="45%"}
 
 ::: {.info-box}
-**Nível 6** é o padrão para **teses de doutorado** — contribuição original ao conhecimento.
+**Na pós-graduação:**
+
+- Nível 1 é insuficiente para dissertações/teses
+- Nível 2 serve para revisão de literatura
+- Nível 3 é o **mínimo esperado** para dissertações
 :::
 
----
+::::
+:::
+
+
+## Níveis 4 a 6: Habilidades de Ordem Superior (HOTS) {.smaller-text}
+
+::: {.columns}
+:::: {.column width="55%"}
+
+| Nível | Definição | Verbos-chave | Exemplo Ambiental |
+|:---:|:---|:---|:---|
+| **4. Analisar** | Decompor, identificar relações | Investigar, diferenciar, decompor, organizar | "Analise os fatores determinantes da erosão" |
+| **5. Avaliar** | Julgar com critérios e padrões | Validar, julgar, argumentar, recomendar | "Avalie a eficácia de barreiras vegetais" |
+| **6. Criar** | Gerar algo novo e original | Propor, projetar, formular, desenvolver | "Proponha um índice fuzzy de sustentabilidade" |
+
+::::
+:::: {.column width="45%"}
+
+::: {.highlight-box}
+**Padrão por nível acadêmico:**
+
+- **Nível 4** → Dissertações de mestrado
+- **Nível 5** → Mestrado avançado / Doutorado
+- **Nível 6** → Teses de doutorado (contribuição original)
+:::
+
+::::
+:::
+
+
+## Pirâmide de Bloom e Verbos Operacionais {.smaller-text}
+
+::: {.columns}
+:::: {.column width="50%"}
+
+![](fig_piramide_bloom.png){fig-align="center" width="100%"}
+
+::::
+:::: {.column width="50%"}
+
+![](fig_bloom_verbos.png){fig-align="center" width="100%"}
+
+::::
+:::
+
 
 # [VERBOS OPERACIONAIS]{.section-header}
 
-## Verbos por Nível — Guia Rápido {.smaller-text}
+## Guia Rápido de Verbos por Nível {.smaller-text}
 
 | Nível | Verbos Recomendados | Evitar |
 |:---|:---|:---|
@@ -239,39 +204,18 @@ flowchart BT
 | Analisar | Analisar, diferenciar, investigar, decompor | "Verificar" (ambíguo) |
 | Avaliar | Avaliar, validar, julgar, argumentar, recomendar | "Observar" (nível 1) |
 | Criar | Propor, desenvolver, elaborar, projetar, formular | "Fazer" (impreciso) |
-{.striped .hover}
 
 ::: {.highlight-box}
 **Dica prática:** O verbo do objetivo geral deve indicar o **nível cognitivo máximo** esperado. Os específicos podem estar em níveis inferiores (hierarquia cumulativa).
 :::
 
----
 
 # [BLOOM E ANÁLISE ESTATÍSTICA]{.section-header}
 
 ## Mapeamento: Nível Cognitivo → Análise {.smaller-text}
 
-```{mermaid}
-%%| fig-width: 11
-flowchart LR
-  L1["Lembrar<br>Entender"] --> A1["Descritiva<br>Frequências<br>Tabelas"]
-  L2["Aplicar"] --> A2["Teste T<br>ANOVA<br>Correlação"]
-  L3["Analisar"] --> A3["Regressão Múltipla<br>ANCOVA<br>Fatorial"]
-  L4["Avaliar"] --> A4["Metanálise<br>AFC<br>Comparação Modelos"]
-  L5["Criar"] --> A5["Machine Learning<br>Lógica Fuzzy<br>Construção Instrumento"]
-  style L1 fill:#F2F2F2,color:#0D0D0D
-  style L2 fill:#C5CEE8,color:#0D0D0D
-  style L3 fill:#586BA6,color:#fff
-  style L4 fill:#27368C,color:#fff
-  style L5 fill:#2135A6,color:#fff
-  style A1 fill:#F2F2F2,color:#0D0D0D
-  style A2 fill:#C5CEE8,color:#0D0D0D
-  style A3 fill:#586BA6,color:#fff
-  style A4 fill:#27368C,color:#fff
-  style A5 fill:#2135A6,color:#fff
-```
+![](fig_bloom_analises.png){fig-align="center" width="95%"}
 
----
 
 ## Exemplo Prático: Erosão {.smaller-text}
 
@@ -283,13 +227,11 @@ flowchart LR
 | 4 | "Analisar interação solo×uso×declividade" | ANOVA Fatorial | Alta |
 | 5 | "Avaliar eficácia de paliçadas vs gabião" | Metanálise | Alta |
 | 6 | "Propor índice integrado de vulnerabilidade" | Fuzzy + AHP | Muito alta |
-{.striped .hover}
 
 ::: {.highlight-box}
 Note como cada nível exige **mais variáveis**, **mais técnicas** e **raciocínio mais complexo**.
 :::
 
----
 
 # [APLICAÇÃO EM PROJETOS]{.section-header}
 
@@ -307,9 +249,8 @@ Note como cada nível exige **mais variáveis**, **mais técnicas** e **raciocí
 - "Estudar" não é mensurável. Qual nível cognitivo?
 
 **Bom exemplo (Nível 4 — Analisar):**
-> "*Analisar a influência do tipo de cobertura vegetal (caatinga, pastagem, cultivo) sobre a taxa de perda de solo na microbacia do Rio Jacuípe, utilizando ANOVA fatorial e regressão múltipla*"
+> "*Analisar a influência do tipo de cobertura vegetal (caatinga) sobre a taxa de perda de solo na microbacia do Rio Jacuípe, utilizando ANOVA fatorial e regressão múltipla*"
 
----
 
 ## Alinhamento Objetivo–Método–Análise {.smaller-text}
 
@@ -319,9 +260,7 @@ Note como cada nível exige **mais variáveis**, **mais técnicas** e **raciocí
 | **Método** | Coleta em parcelas + cálculo RUSLE | Aplicação de escala Likert + Análise psicométrica |
 | **Análise** | Regressão linear | AFE + consistência interna (α Cronbach) |
 | **Produto** | Mapa de estimativa | Instrumento validado |
-{.striped .hover}
 
----
 
 ## Erros Comuns e Correções {.smaller-text}
 
@@ -331,13 +270,11 @@ Note como cada nível exige **mais variáveis**, **mais técnicas** e **raciocí
 | "Entender a relação solo–planta" | Não mensurável | "Investigar a correlação entre MOS e biomassa" (Nível 4) |
 | "Fazer análise estatística" | Sem especificação | "Aplicar ANOVA fatorial para comparar tratamentos" (Nível 3) |
 | Objetivo ≠ Análise | Desalinhamento | Usar mapeamento Bloom → Técnica |
-{.striped .hover}
 
 ::: {.highlight-box}
 **Regra de ouro:** Se o avaliador não consegue determinar **qual análise** será feita a partir do objetivo, o objetivo precisa ser reescrito.
 :::
 
----
 
 ## Resumo: Dimensão do Conhecimento {.smaller-text}
 
@@ -349,13 +286,11 @@ Anderson & Krathwohl (2001) adicionaram uma segunda dimensão:
 | **Conceitual** | Princípios, modelos, teorias | Modelo USLE, Lei de Darcy |
 | **Procedimental** | Técnicas, métodos, algoritmos | Passo a passo do Teste T, protocolo de coleta |
 | **Metacognitivo** | Autoconhecimento sobre aprendizagem | Saber quando usar bootstrap vs paramétrico |
-{.striped .hover}
 
 ::: {.info-box}
 A **tabela bidimensional** (processo cognitivo × tipo de conhecimento) permite classificar qualquer objetivo educacional em uma célula específica.
 :::
 
----
 
 ## Referências {.smaller-text}
 
@@ -365,14 +300,15 @@ A **tabela bidimensional** (processo cognitivo × tipo de conhecimento) permite 
 - Ferraz, A. P. C. M., & Belhot, R. V. (2010). Taxonomia de Bloom: revisão teórica e apresentação das adequações do instrumento para definição de objetivos instrucionais. *Gestão & Produção*, 17(2), 421–431.
 :::
 
----
 
-::: {.obrigado-fit-text}
-**Obrigado!**
+## {.center background-color="#2135A6"}
 
-**Prof. Luiz Diego Vidal Santos**
+::: {style="text-align: center;"}
+[Obrigado!]{.obrigado-fit-text style="color: white;"}
 
-UEFS — Universidade Estadual de Feira de Santana
+::: {style="color: white; font-size: 0.7em;"}
+Luiz Diego Vidal Santos
 
-[ldvsantos@uefs.br](mailto:ldvsantos@uefs.br)
+Universidade Estadual de Feira de Santana (UEFS)
+:::
 :::

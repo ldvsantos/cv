@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RISK OF LANDSCAPES — Impressão Completa</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+@page{size:A4 landscape;margin:8mm;}
+
+html,body{
+  background:#111;
+  font-family:'Crimson Text',Georgia,serif;
+  color:#f0e6d2;
+  -webkit-print-color-adjust:exact;
+  print-color-adjust:exact;
+}
+
+/* ═══════ CONTROL PANEL ═══════ */
+.controls{
+  position:fixed;top:0;left:0;right:0;z-index:9999;
+  background:rgba(20,20,20,0.97);
+  border-bottom:2px solid #8B7355;
+  padding:12px 24px;
+  display:flex;flex-wrap:wrap;align-items:center;gap:16px;
+  font-family:'Cinzel',serif;font-size:11px;color:#d4c8b0;
+}
+.controls h1{font-size:14px;color:#8B7355;letter-spacing:2px;margin-right:auto;}
+.controls label{cursor:pointer;display:flex;align-items:center;gap:4px;}
+.controls input[type=checkbox]{accent-color:#8B7355;}
+.controls button{
+  background:#8B7355;color:#1c1c1c;border:none;
+  padding:6px 18px;border-radius:3px;cursor:pointer;
+  font-family:'Cinzel',serif;font-weight:700;font-size:11px;
+  letter-spacing:1px;
+}
+.controls button:hover{background:#a08a64;}
+.controls .info{font-size:9px;color:#8B7355;opacity:0.7;}
+body{padding-top:56px;}
+@media print{
+  .controls{display:none!important;}
+  body{padding-top:0;background:white;}
+}
+
+/* ═══════ PRINT PAGE (A4 landscape grid 3×1) ═══════ */
+.print-page{
+  width:281mm;
+  min-height:194mm;
+  display:grid;
+  grid-template-columns:71mm 71mm 71mm;
+  grid-template-rows:120.5mm;
+  justify-content:center;
+  align-content:center;
+  gap:6mm 12mm;
+  page-break-after:always;
+  page-break-inside:avoid;
+  margin:10mm auto;
+}
+@media print{
+  .print-page{margin:0 auto;}
+}
+
+/* ═══════ SECTION DIVIDER PAGE ═══════ */
+.section-page{
+  width:281mm;min-height:194mm;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  page-break-after:always;
+  margin:10mm auto;
+  text-align:center;
+}
+.section-page h2{
+  font-family:'Cinzel',serif;font-size:28pt;
+  color:#8B7355;letter-spacing:4pt;margin-bottom:8mm;
+}
+.section-page p{
+  font-family:'Cinzel',serif;font-size:10pt;
+  color:#d4c8b0;letter-spacing:2pt;opacity:0.7;
+}
+
+/* ═══════ COVER PAGE ═══════ */
+.cover-page{
+  width:281mm;min-height:194mm;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  page-break-after:always;
+  margin:10mm auto;
+  text-align:center;
+  position:relative;
+}
+.cover-page::before{
+  content:'';position:absolute;inset:0;
+  border:3mm solid #8B7355;border-radius:5mm;
+  background:radial-gradient(ellipse at 50% 40%,rgba(139,115,85,0.12) 0%,transparent 70%),
+  linear-gradient(180deg,#1c1c1c 0%,#0d0d0d 100%);
+}
+.cover-page>*{position:relative;z-index:1;}
+.cover-title{
+  font-family:'Cinzel',serif;font-size:36pt;font-weight:900;
+  color:#8B7355;letter-spacing:5pt;line-height:1.2;
+}
+.cover-subtitle{
+  font-family:'Cinzel',serif;font-size:14pt;
+  color:#d4c8b0;letter-spacing:3pt;margin-top:6mm;
+}
+.cover-author{
+  font-family:'Cinzel',serif;font-size:8pt;
+  color:rgba(139,115,85,0.5);letter-spacing:2pt;
+  margin-top:20mm;
+}
+.cover-emblem{font-size:60pt;margin:12mm 0;}
+.cover-info{
+  font-family:'Crimson Text',serif;font-size:9pt;
+  color:#8B7355;opacity:0.6;margin-top:5mm;line-height:1.6;
+}
+
+/* ═══════ CARD BASE ═══════ */
+.card{
+  width:71mm;height:120.5mm;
+  border:2mm solid #8B7355;border-radius:2.5mm;
+  padding:2.5mm;position:relative;overflow:hidden;
+  display:flex;flex-direction:column;
+  background:#1c1c1c;
+}
+.card::before{
+  content:'';position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse at 30% 20%,rgba(139,115,85,0.12) 0%,transparent 60%),
+    radial-gradient(ellipse at 70% 80%,rgba(139,115,85,0.08) 0%,transparent 50%),
+    linear-gradient(180deg,rgba(28,28,28,1) 0%,rgba(18,16,13,1) 100%);
+  z-index:0;
+}
+.card>*{position:relative;z-index:1;}
+
+/* ═══ CORNERS ═══ */
+.corner{position:absolute;width:8mm;height:8mm;z-index:2;}
+.corner svg{width:100%;height:100%;}
+.corner-tl{top:0.5mm;left:0.5mm;}
+.corner-tr{top:0.5mm;right:0.5mm;transform:scaleX(-1);}
+.corner-bl{bottom:0.5mm;left:0.5mm;transform:scaleY(-1);}
+.corner-br{bottom:0.5mm;right:0.5mm;transform:scale(-1,-1);}
+
+/* ═══ TERRITORY FRONT ═══ */
+.card-header{text-align:center;padding:1mm 0 0.8mm;border-bottom:0.3mm solid rgba(139,115,85,0.4);margin-bottom:0.5mm;}
+.game-title{font-family:'Cinzel',serif;font-size:5.5pt;letter-spacing:2pt;text-transform:uppercase;color:#8B7355;margin-bottom:0.3mm;}
+.region-name{font-family:'Cinzel',serif;font-size:10pt;font-weight:900;letter-spacing:0.6pt;text-transform:uppercase;margin-bottom:0.3mm;}
+.macro-region{font-family:'Cinzel',serif;font-size:7pt;letter-spacing:1.2pt;text-transform:uppercase;opacity:0.75;}
+
+.sigil{
+  width:7.5mm;height:7.5mm;margin:0.4mm auto;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:50%;border:0.3mm solid rgba(139,115,85,0.5);
+}
+.sigil svg{width:5.5mm;height:5.5mm;}
+.sigil img{width:5.5mm;height:5.5mm;object-fit:contain;}
+
+.data-section{flex:0 0 auto;padding:0.5mm 1mm;}
+.data-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.4mm 1.5mm;}
+.data-item{display:flex;justify-content:space-between;align-items:baseline;padding:0.3mm 0.8mm;border-bottom:0.15mm dotted rgba(139,115,85,0.2);}
+.data-label{font-size:5.5pt;color:#8B7355;text-transform:uppercase;letter-spacing:0.2pt;font-family:'Cinzel',serif;font-weight:700;}
+.data-value{font-size:7.5pt;font-weight:600;color:#f0e6d2;}
+
+/* PLAND color coding */
+.pland-high{color:#66BB6A;}
+.pland-med{color:#FFC107;}
+.pland-low{color:#EF5350;}
+
+.bar-container{grid-column:1/-1;padding:0.3mm 0.8mm 0;}
+.bar-label-row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:0.2mm;}
+.bar-outer{width:100%;height:1.8mm;background:rgba(139,115,85,0.15);border-radius:1mm;overflow:hidden;}
+.bar-inner{height:100%;border-radius:1mm;}
+.conn-high{background:linear-gradient(90deg,#2E7D32,#4CAF50);}
+.conn-med{background:linear-gradient(90deg,#F57F17,#FFC107);}
+.conn-low{background:linear-gradient(90deg,#C62828,#E53935);}
+
+.challenge-section{
+  flex:1 1 auto;margin-top:0.8mm;padding:1.2mm 1.8mm;
+  background:rgba(139,115,85,0.06);
+  border:0.25mm solid rgba(139,115,85,0.25);
+  border-radius:1.2mm;display:flex;flex-direction:column;
+}
+.challenge-title{font-family:'Cinzel',serif;font-size:5.5pt;text-transform:uppercase;letter-spacing:1.2pt;color:#8B7355;text-align:center;margin-bottom:0.8mm;}
+.challenge-text{font-size:7pt;line-height:1.3;color:#d4c8b0;text-align:justify;hyphens:auto;}
+
+.card-footer{text-align:center;padding-top:0.3mm;border-top:0.2mm solid rgba(139,115,85,0.2);margin-top:auto;}
+.footer-text{font-family:'Cinzel',serif;font-size:4pt;letter-spacing:0.8pt;color:rgba(139,115,85,0.5);text-transform:uppercase;}
+
+/* ═══ MACRO-REGION COLORS ═══ */
+.the-north .region-name{color:#A0B4C8;}
+.the-north .sigil{border-color:#A0B4C8;background:rgba(160,180,200,0.08);}
+.the-north .card-header{border-bottom-color:rgba(160,180,200,0.35);}
+
+.the-vale .region-name{color:#7BA7CC;}
+.the-vale .sigil{border-color:#7BA7CC;background:rgba(123,167,204,0.08);}
+.the-vale .card-header{border-bottom-color:rgba(123,167,204,0.35);}
+
+.the-riverlands .region-name{color:#C87E5A;}
+.the-riverlands .sigil{border-color:#C87E5A;background:rgba(200,126,90,0.08);}
+.the-riverlands .card-header{border-bottom-color:rgba(200,126,90,0.35);}
+
+.the-westerlands .region-name{color:#D4A843;}
+.the-westerlands .sigil{border-color:#D4A843;background:rgba(212,168,67,0.08);}
+.the-westerlands .card-header{border-bottom-color:rgba(212,168,67,0.35);}
+
+.the-reach .region-name{color:#7CB868;}
+.the-reach .sigil{border-color:#7CB868;background:rgba(124,184,104,0.08);}
+.the-reach .card-header{border-bottom-color:rgba(124,184,104,0.35);}
+
+.the-stormlands .region-name{color:#C8B45A;}
+.the-stormlands .sigil{border-color:#C8B45A;background:rgba(200,180,90,0.08);}
+.the-stormlands .card-header{border-bottom-color:rgba(200,180,90,0.35);}
+
+.dorne .region-name{color:#E07A3A;}
+.dorne .sigil{border-color:#E07A3A;background:rgba(224,122,58,0.08);}
+.dorne .card-header{border-bottom-color:rgba(224,122,58,0.35);}
+
+.the-crownlands .region-name{color:#C84040;}
+.the-crownlands .sigil{border-color:#C84040;background:rgba(200,64,64,0.08);}
+.the-crownlands .card-header{border-bottom-color:rgba(200,64,64,0.35);}
+
+.iron-islands .region-name{color:#8A8A8A;}
+.iron-islands .sigil{border-color:#8A8A8A;background:rgba(138,138,138,0.08);}
+.iron-islands .card-header{border-bottom-color:rgba(138,138,138,0.35);}
+
+/* ═══ CARD BACK (TERRITORY) ═══ */
+.card-back{
+  width:71mm;height:120.5mm;
+  border:2mm solid #8B7355;border-radius:2.5mm;
+  position:relative;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+  background:#1c1c1c;
+}
+.card-back::before{
+  content:'';position:absolute;inset:0;
+  background:
+    repeating-linear-gradient(45deg,transparent,transparent 5mm,rgba(139,115,85,0.03) 5mm,rgba(139,115,85,0.03) 6mm),
+    repeating-linear-gradient(-45deg,transparent,transparent 5mm,rgba(139,115,85,0.03) 5mm,rgba(139,115,85,0.03) 6mm),
+    radial-gradient(ellipse at 50% 50%,rgba(139,115,85,0.1) 0%,transparent 60%),
+    linear-gradient(180deg,#1c1c1c 0%,#0e0c0a 100%);
+  z-index:0;
+}
+.back-inner{
+  position:relative;z-index:1;
+  width:calc(100% - 8mm);height:calc(100% - 8mm);
+  border:0.4mm solid rgba(139,115,85,0.35);
+  border-radius:1.5mm;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  text-align:center;
+}
+.back-inner::before{
+  content:'';position:absolute;inset:2mm;
+  border:0.2mm solid rgba(139,115,85,0.15);
+  border-radius:1mm;
+}
+.back-fleur{
+  position:absolute;font-size:14pt;color:rgba(139,115,85,0.3);
+  font-family:serif;
+}
+.back-fleur-tl{top:2mm;left:3mm;}
+.back-fleur-tr{top:2mm;right:3mm;transform:scaleX(-1);}
+.back-fleur-bl{bottom:2mm;left:3mm;transform:scaleY(-1);}
+.back-fleur-br{bottom:2mm;right:3mm;transform:scale(-1,-1);}
+
+.back-title-pre{
+  font-family:'Cinzel',serif;font-size:7pt;
+  letter-spacing:3pt;color:#8B7355;
+  text-transform:uppercase;margin-bottom:1mm;
+}
+.back-title-main{
+  font-family:'Cinzel',serif;font-size:14pt;font-weight:900;
+  letter-spacing:2.5pt;color:#8B7355;
+}
+.back-emblem{
+  font-size:30pt;margin:3mm 0;
+  filter:drop-shadow(0 0 8px rgba(139,115,85,0.3));
+}
+.back-swords{
+  font-family:'Cinzel',serif;font-size:8pt;
+  color:rgba(139,115,85,0.5);letter-spacing:4pt;
+  margin-bottom:1mm;
+}
+.back-subtitle{
+  font-family:'Cinzel',serif;font-size:6pt;
+  letter-spacing:2pt;color:rgba(139,115,85,0.4);
+  text-transform:uppercase;
+}
+.back-bottom{
+  position:absolute;bottom:4mm;
+  font-family:'Cinzel',serif;font-size:3.5pt;
+  letter-spacing:1.5pt;color:rgba(139,115,85,0.3);
+}
+
+/* ═══ MISSION CARD BACK ═══ */
+.card-back-mission{border-color:#8B4040;}
+.card-back-mission::before{
+  content:'';position:absolute;inset:0;
+  background:
+    repeating-linear-gradient(45deg,transparent,transparent 5mm,rgba(200,64,64,0.03) 5mm,rgba(200,64,64,0.03) 6mm),
+    repeating-linear-gradient(-45deg,transparent,transparent 5mm,rgba(200,64,64,0.03) 5mm,rgba(200,64,64,0.03) 6mm),
+    radial-gradient(ellipse at 50% 50%,rgba(200,64,64,0.08) 0%,transparent 60%),
+    linear-gradient(180deg,#1c1c1c 0%,#0e0a0a 100%);
+  z-index:0;
+}
+.card-back-mission .back-inner{border-color:rgba(200,64,64,0.3);}
+.card-back-mission .back-inner::before{border-color:rgba(200,64,64,0.12);}
+.card-back-mission .back-fleur{color:rgba(200,64,64,0.25);}
+.card-back-mission .back-title-pre,.card-back-mission .back-title-main{color:#C84040;}
+.card-back-mission .back-swords,.card-back-mission .back-subtitle{color:rgba(200,64,64,0.4);}
+.card-back-mission .back-bottom{color:rgba(200,64,64,0.25);}
+
+/* ═══ MISSION FRONT ═══ */
+.mission-header{text-align:center;padding:1.5mm 0 1mm;border-bottom:0.3mm solid rgba(139,115,85,0.4);}
+.mission-game-title{font-family:'Cinzel',serif;font-size:5.5pt;letter-spacing:1.8pt;text-transform:uppercase;color:#8B7355;}
+.mission-card-type{font-family:'Cinzel',serif;font-size:10pt;font-weight:900;letter-spacing:1.2pt;text-transform:uppercase;color:#C84040;margin:0.8mm 0;}
+.mission-number{width:8mm;height:8mm;margin:1mm auto;border-radius:50%;border:0.4mm solid #8B7355;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:12pt;font-weight:900;color:#C84040;}
+.mission-title{font-family:'Cinzel',serif;font-size:9pt;font-weight:700;text-align:center;color:#f0e6d2;margin:1.5mm 1mm;letter-spacing:0.4pt;}
+.mission-desc{font-size:7pt;line-height:1.3;text-align:center;color:#d4c8b0;margin:0.8mm 1mm;flex:1;}
+.mission-objective{background:rgba(139,115,85,0.08);border:0.25mm solid rgba(139,115,85,0.25);border-radius:1.2mm;padding:1.5mm 2.5mm;margin:1mm 1mm;}
+.mission-obj-title{font-family:'Cinzel',serif;font-size:5.5pt;text-transform:uppercase;letter-spacing:0.8pt;color:#8B7355;text-align:center;margin-bottom:0.8mm;}
+.mission-obj-text{font-size:8pt;line-height:1.25;text-align:center;color:#f0e6d2;font-weight:600;}
+.mission-concept{font-size:6pt;line-height:1.25;text-align:center;color:rgba(139,115,85,0.6);font-style:italic;margin:1mm 1.5mm 0;padding-top:0.8mm;border-top:0.15mm dotted rgba(139,115,85,0.25);}
+
+/* ═══ REFERENCE CARD ═══ */
+.ref-card{
+  width:71mm;height:120.5mm;
+  border:2mm solid #2E7D32;border-radius:2.5mm;
+  padding:2.5mm;position:relative;overflow:hidden;
+  display:flex;flex-direction:column;
+  background:#1c1c1c;
+}
+.ref-card::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(46,125,50,0.06) 0%,rgba(20,18,15,1) 100%);
+  z-index:0;
+}
+.ref-card>*{position:relative;z-index:1;}
+.ref-header{text-align:center;padding:0.8mm 0;border-bottom:0.3mm solid rgba(46,125,50,0.4);margin-bottom:0.8mm;}
+.ref-title{font-family:'Cinzel',serif;font-size:7.5pt;font-weight:900;letter-spacing:0.8pt;text-transform:uppercase;color:#4CAF50;}
+.ref-subtitle{font-family:'Cinzel',serif;font-size:5pt;letter-spacing:0.8pt;color:rgba(76,175,80,0.5);}
+.ref-section{margin:0.6mm 0;}
+.ref-section-title{font-family:'Cinzel',serif;font-size:5.5pt;font-weight:700;color:#4CAF50;text-transform:uppercase;letter-spacing:0.6pt;border-bottom:0.15mm solid rgba(76,175,80,0.25);padding-bottom:0.2mm;margin-bottom:0.3mm;}
+.ref-item{font-size:5pt;line-height:1.15;color:#d4c8b0;padding:0.12mm 0;}
+.ref-item strong{color:#f0e6d2;font-weight:600;}
+.ref-formula{font-family:'Courier New',monospace;font-size:5pt;color:#A5D6A7;background:rgba(46,125,50,0.08);padding:0.2mm 0.8mm;border-radius:0.3mm;display:inline-block;margin:0.1mm 0;}
+
+/* ═══ MAP PAGE ═══ */
+.map-page{
+  width:281mm;min-height:194mm;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  page-break-after:always;
+  margin:10mm auto;
+}
+@media print{.map-page{margin:0 auto;}}
+.map-page svg{max-width:260mm;max-height:178mm;}
+
+/* ═══ NARRATIVE CARDS ═══ */
+.house-cover{width:71mm;height:120.5mm;border:2mm solid var(--hc);border-radius:2.5mm;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:#1c1c1c;}
+.house-cover::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,var(--hc-glow) 0%,transparent 65%),linear-gradient(180deg,#1c1c1c 0%,#0e0c0a 100%);z-index:0;}
+.house-cover>*{position:relative;z-index:1;}
+.house-cover .hc-emblem{margin-bottom:3mm;filter:drop-shadow(0 0 10px var(--hc-glow));}
+.house-cover .hc-emblem img{width:28mm;height:28mm;object-fit:contain;}
+.house-cover .hc-name{font-family:'Cinzel',serif;font-size:16pt;font-weight:900;letter-spacing:2pt;color:var(--hc);text-transform:uppercase;}
+.house-cover .hc-motto{font-family:'Crimson Text',serif;font-size:9pt;font-style:italic;color:var(--hc);opacity:0.6;margin-top:1.5mm;}
+.house-cover .hc-region{font-family:'Cinzel',serif;font-size:7pt;letter-spacing:1.5pt;color:var(--hc);opacity:0.4;margin-top:3mm;text-transform:uppercase;}
+.house-cover .hc-count{font-family:'Cinzel',serif;font-size:5.5pt;letter-spacing:1pt;color:rgba(139,115,85,0.35);position:absolute;bottom:3mm;}
+.house-cover .hc-border{position:absolute;inset:3mm;border:0.3mm solid var(--hc);opacity:0.25;border-radius:1.5mm;}
+.house-cover .hc-border-inner{position:absolute;inset:5mm;border:0.15mm solid var(--hc);opacity:0.12;border-radius:1mm;}
+
+.narr-card{width:71mm;height:120.5mm;border:2mm solid var(--hc);border-radius:2.5mm;padding:2mm 2.5mm;position:relative;overflow:hidden;display:flex;flex-direction:column;background:#1c1c1c;}
+.narr-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 15%,var(--hc-glow) 0%,transparent 55%),linear-gradient(180deg,rgba(28,28,28,1) 0%,rgba(18,16,13,1) 100%);z-index:0;}
+.narr-card>*{position:relative;z-index:1;}
+.nc-corner{position:absolute;width:7mm;height:7mm;z-index:2;}
+.nc-corner svg{width:100%;height:100%;}
+.nc-corner-tl{top:0.4mm;left:0.4mm;}
+.nc-corner-tr{top:0.4mm;right:0.4mm;transform:scaleX(-1);}
+.nc-corner-bl{bottom:0.4mm;left:0.4mm;transform:scaleY(-1);}
+.nc-corner-br{bottom:0.4mm;right:0.4mm;transform:scale(-1,-1);}
+.nc-header{text-align:center;padding:1mm 0 0.6mm;border-bottom:0.25mm solid var(--hc-dim);margin-bottom:0.4mm;}
+.nc-game{font-family:'Cinzel',serif;font-size:5pt;letter-spacing:1.5pt;text-transform:uppercase;color:#8B7355;margin-bottom:0.2mm;}
+.nc-house{font-family:'Cinzel',serif;font-size:8pt;font-weight:900;letter-spacing:0.8pt;text-transform:uppercase;color:var(--hc);}
+.nc-num{font-family:'Cinzel',serif;font-size:5pt;letter-spacing:1pt;color:var(--hc);opacity:0.5;margin-top:0.2mm;}
+.nc-sigil{width:8mm;height:8mm;margin:0.3mm auto;display:flex;align-items:center;justify-content:center;border-radius:50%;border:0.25mm solid var(--hc-dim);}
+.nc-sigil img{width:6mm;height:6mm;object-fit:contain;}
+.nc-narrative{flex:0 0 auto;margin:0.5mm 0;padding:1.5mm 2mm;background:rgba(139,115,85,0.04);border:0.2mm solid rgba(139,115,85,0.15);border-radius:1mm;}
+.nc-narr-title{font-family:'Cinzel',serif;font-size:5pt;text-transform:uppercase;letter-spacing:1pt;color:#8B7355;text-align:center;margin-bottom:0.6mm;}
+.nc-narr-text{font-size:6.5pt;line-height:1.3;color:#d4c8b0;text-align:justify;hyphens:auto;}
+.nc-challenge{flex:1 1 auto;margin-top:0.4mm;padding:1.2mm 2mm;background:var(--hc-challenge-bg);border:0.25mm solid var(--hc-dim);border-radius:1mm;display:flex;flex-direction:column;}
+.nc-chal-title{font-family:'Cinzel',serif;font-size:5pt;text-transform:uppercase;letter-spacing:1pt;color:var(--hc);text-align:center;margin-bottom:0.5mm;}
+.nc-chal-text{font-size:6.5pt;line-height:1.3;color:#f0e6d2;text-align:justify;hyphens:auto;}
+.nc-footer{text-align:center;padding-top:0.3mm;border-top:0.15mm solid rgba(139,115,85,0.15);margin-top:auto;}
+.nc-footer-text{font-family:'Cinzel',serif;font-size:4pt;letter-spacing:0.6pt;color:rgba(139,115,85,0.4);text-transform:uppercase;}
+
+/* House themes */
+.house-stark{--hc:#A0B4C8;--hc-glow:rgba(160,180,200,0.1);--hc-dim:rgba(160,180,200,0.3);--hc-challenge-bg:rgba(160,180,200,0.06);}
+.house-greyjoy{--hc:#8A8A8A;--hc-glow:rgba(138,138,138,0.1);--hc-dim:rgba(138,138,138,0.3);--hc-challenge-bg:rgba(138,138,138,0.06);}
+.house-lannister{--hc:#D4A843;--hc-glow:rgba(212,168,67,0.1);--hc-dim:rgba(212,168,67,0.3);--hc-challenge-bg:rgba(212,168,67,0.06);}
+.house-tyrell{--hc:#7CB868;--hc-glow:rgba(124,184,104,0.1);--hc-dim:rgba(124,184,104,0.3);--hc-challenge-bg:rgba(124,184,104,0.06);}
+.house-martell{--hc:#E07A3A;--hc-glow:rgba(224,122,58,0.1);--hc-dim:rgba(224,122,58,0.3);--hc-challenge-bg:rgba(224,122,58,0.06);}
+.house-arryn{--hc:#7BA7CC;--hc-glow:rgba(123,167,204,0.1);--hc-dim:rgba(123,167,204,0.3);--hc-challenge-bg:rgba(123,167,204,0.06);}
+.house-tully{--hc:#C87E5A;--hc-glow:rgba(200,126,90,0.1);--hc-dim:rgba(200,126,90,0.3);--hc-challenge-bg:rgba(200,126,90,0.06);}
+.house-baratheon{--hc:#C8B45A;--hc-glow:rgba(200,180,90,0.1);--hc-dim:rgba(200,180,90,0.3);--hc-challenge-bg:rgba(200,180,90,0.06);}
+
+/* ═══ HIDDEN SECTIONS ═══ */
+.hidden{display:none!important;}
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════ -->
+<!--              CONTROL PANEL                    -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="controls">
+  <h1>⚔ RISK OF LANDSCAPES — IMPRESSÃO</h1>
+  <label><input type="checkbox" id="chk-cover" checked> Capa</label>
+  <label><input type="checkbox" id="chk-tf" checked> Território (frente)</label>
+  <label><input type="checkbox" id="chk-tb" checked> Território (verso)</label>
+  <label><input type="checkbox" id="chk-mf" checked> Missão (frente)</label>
+  <label><input type="checkbox" id="chk-mb" checked> Missão (verso)</label>
+  <label><input type="checkbox" id="chk-ref" checked> Referência</label>
+  <label><input type="checkbox" id="chk-map" checked> Mapa</label>
+  <label><input type="checkbox" id="chk-narr" checked> Narrativas (80)</label>
+  <button onclick="window.print()">🖨 IMPRIMIR / PDF</button>
+  <div class="info">Ctrl+P → Salvar como PDF | Margens: Nenhuma | Gráficos de fundo: ✓ | Cartas: 71×120,5 mm | Página: A4 Paisagem</div>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!--              SVG DEFINITIONS                  -->
+<!-- ══════════════════════════════════════════════ -->
+<svg style="display:none">
+  <symbol id="corner-ornament" viewBox="0 0 40 40">
+    <path d="M0,0 L15,0 C8,0 0,8 0,15 Z" fill="rgba(139,115,85,0.35)"/>
+    <path d="M0,0 L10,0 C5,0 0,5 0,10 Z" fill="rgba(139,115,85,0.55)"/>
+  </symbol>
+  <symbol id="sigil-stark" viewBox="0 0 102.83 104.19"><image href="SVG/Stark.svg" width="102.83" height="104.19"/></symbol>
+  <symbol id="sigil-arryn" viewBox="0 0 102.83 104.19"><image href="SVG/Arryn.svg" width="102.83" height="104.19"/></symbol>
+  <symbol id="sigil-tully" viewBox="0 0 102.83 104.19"><image href="SVG/Tully.svg" width="102.83" height="104.19"/></symbol>
+  <symbol id="sigil-lannister" viewBox="0 0 102.83 104.19"><image href="SVG/Lannister.svg" width="102.83" height="104.19"/></symbol>
+  <symbol id="sigil-tyrell" viewBox="0 0 102.83 104.19"><image href="SVG/Tyrell.svg" width="102.83" height="104.19"/></symbol>
+  <symbol id="sigil-baratheon" viewBox="0 0 102.83 104.19"><image href="SVG/Baratheon.svg" width="102.83" height="104.19"/></symbol>
+  <symbol id="sigil-martell" viewBox="0 0 102.83 104.19"><image href="SVG/Martell.svg" width="102.83" height="104.19"/></symbol>
+  <symbol id="sigil-targaryen" viewBox="0 0 100 100"><text x="50" y="68" text-anchor="middle" font-size="55" fill="#C84040">🐉</text></symbol>
+  <symbol id="sigil-greyjoy" viewBox="0 0 102.83 104.19"><image href="SVG/Greyjoy.svg" width="102.83" height="104.19"/></symbol>
+</svg>
+
+<!-- ══════════════════════════════════════════════ -->
+<!--             CONTENT CONTAINERS                -->
+<!-- ══════════════════════════════════════════════ -->
+<div id="cover-section"></div>
+<div id="territory-fronts-section"></div>
+<div id="territory-backs-section"></div>
+<div id="mission-fronts-section"></div>
+<div id="mission-backs-section"></div>
+<div id="reference-section"></div>
+<div id="map-section"></div>
+<div id="narrative-section"></div>
+
+<svg style="display:none">
+  <symbol id="corner-orn" viewBox="0 0 40 40">
+    <path d="M0,0 L15,0 C8,0 0,8 0,15 Z" fill="rgba(139,115,85,0.3)"/>
+    <path d="M0,0 L10,0 C5,0 0,5 0,10 Z" fill="rgba(139,115,85,0.5)"/>
+  </symbol>
+</svg>
+
+<script>
+/* ═══════════════════════════════════════════════════ */
+/*                    CARD DATA                       */
+/* ═══════════════════════════════════════════════════ */
+
+const cards = [
+  {region:"Winterfell",macro:"The North",css:"the-north",sigil:"sigil-stark",
+   pland:78.4,np:12,area_mn:6533,shdi:0.68,connect:88,ed:18.5,core:72.1,se:85,
+   challenge:"Winterfell possui 78% de cobertura florestal (Wolfswood). Qual elemento do modelo mancha-corredor-matriz predomina nesta paisagem? Justifique."},
+  {region:"The Dreadfort",macro:"The North",css:"the-north",sigil:"sigil-stark",
+   pland:64.2,np:24,area_mn:2675,shdi:1.05,connect:62,ed:34.8,core:55.3,se:68,
+   challenge:"Compare NP (24) e AREA_MN (2675 ha) com Winterfell (NP=12, AREA_MN=6533). A paisagem de Dreadfort é mais ou menos fragmentada? Justifique com ambas as métricas."},
+  {region:"White Harbor",macro:"The North",css:"the-north",sigil:"sigil-stark",
+   pland:45.8,np:38,area_mn:1205,shdi:1.42,connect:41,ed:48.2,core:38.6,se:52,
+   challenge:"White Harbor tem o menor PLAND de The North. Usando a relação espécie-área (S = cAᶻ), o que se espera para a biodiversidade local comparada a Winterfell?"},
+  {region:"Moat Cailin",macro:"The North",css:"the-north",sigil:"sigil-stark",
+   pland:52.3,np:31,area_mn:1688,shdi:1.28,connect:48,ed:42.7,core:44.2,se:58,
+   challenge:"Moat Cailin é um gargalo entre o Norte e o Sul. Que função de corredor (conduto, filtro ou barreira) a paisagem exerce neste ponto estratégico?"},
+  {region:"The Eyrie",macro:"The Vale",css:"the-vale",sigil:"sigil-arryn",
+   pland:61.5,np:18,area_mn:3417,shdi:0.92,connect:72,ed:28.4,core:58.7,se:76,
+   challenge:"A paisagem do Vale é isolada por montanhas, mas tem alta conectividade interna (72). Explique como o relevo pode aumentar a conectividade estrutural mesmo com PLAND moderado."},
+  {region:"Gulltown",macro:"The Vale",css:"the-vale",sigil:"sigil-arryn",
+   pland:38.7,np:42,area_mn:921,shdi:1.55,connect:34,ed:52.6,core:32.4,se:48,
+   challenge:"Gulltown tem 42 fragmentos com área média de 921 ha. Se a largura de borda é 100 m e os fragmentos são circulares, estime a proporção de área nuclear."},
+  {region:"Riverrun",macro:"The Riverlands",css:"the-riverlands",sigil:"sigil-tully",
+   pland:28.4,np:56,area_mn:507,shdi:1.85,connect:18,ed:68.3,core:22.5,se:35,
+   challenge:"Riverrun tem PLAND de 28%. Esta paisagem ultrapassou o limiar crítico de fragmentação (20–30%)? Que consequências ecológicas esperar?"},
+  {region:"Harrenhal",macro:"The Riverlands",css:"the-riverlands",sigil:"sigil-tully",
+   pland:22.1,np:62,area_mn:356.5,shdi:1.92,connect:12,ed:75.4,core:15.8,se:28,
+   challenge:"Harrenhal tem a maior ED (75,4 m/ha) e menor área nuclear (15,8%). Explique a relação causa-efeito entre densidade de borda e área nuclear funcional."},
+  {region:"Lannisport",macro:"The Westerlands",css:"the-westerlands",sigil:"sigil-lannister",
+   pland:35.6,np:44,area_mn:809,shdi:1.62,connect:30,ed:55.8,core:28.7,se:42,
+   challenge:"A mineração fragmentou a paisagem de Lannisport. Identifique o principal trade-off entre serviços de provisão (ouro) e serviços de regulação nesta região."},
+  {region:"Casterly Rock",macro:"The Westerlands",css:"the-westerlands",sigil:"sigil-lannister",
+   pland:42.8,np:36,area_mn:1189,shdi:1.48,connect:38,ed:49.5,core:35.4,se:50,
+   challenge:"Casterly Rock tem SHDI = 1,48 e Winterfell tem SHDI = 0,68. Qual paisagem é mais heterogênea? Isso é ecologicamente bom ou ruim? Depende de quê?"},
+  {region:"Highgarden",macro:"The Reach",css:"the-reach",sigil:"sigil-tyrell",
+   pland:31.5,np:48,area_mn:656.3,shdi:1.78,connect:22,ed:62.1,core:24.3,se:55,
+   challenge:"Highgarden é o celeiro de Westeros. Por que uma paisagem com alto SHDI (1,78) pode ter baixo PLAND florestal (31,5%)? Relacione com uso agrícola diversificado."},
+  {region:"Oldtown",macro:"The Reach",css:"the-reach",sigil:"sigil-tyrell",
+   pland:26.8,np:52,area_mn:515.4,shdi:1.88,connect:16,ed:70.2,core:18.9,se:45,
+   challenge:"Oldtown tem 52 fragmentos (NP). Se 12 deles têm área < 50 ha, qual a porcentagem de fragmentos abaixo do tamanho mínimo viável para grandes mamíferos?"},
+  {region:"Storm's End",macro:"The Stormlands",css:"the-stormlands",sigil:"sigil-baratheon",
+   pland:55.7,np:22,area_mn:2531.8,shdi:1.15,connect:58,ed:36.2,core:48.5,se:65,
+   challenge:"Storm's End tem tempestades frequentes. Classifique esta paisagem segundo Tricart: meio estável, intergrades ou instável? Justifique."},
+  {region:"Shipbreaker Bay",macro:"The Stormlands",css:"the-stormlands",sigil:"sigil-baratheon",
+   pland:48.3,np:28,area_mn:1725,shdi:1.35,connect:44,ed:44.3,core:40.8,se:56,
+   challenge:"Compare a conectividade de Shipbreaker Bay (44) com a de The Eyrie (72). Que fatores da matriz explicam essa diferença?"},
+  {region:"Sunspear",macro:"Dorne",css:"dorne",sigil:"sigil-martell",
+   pland:18.6,np:35,area_mn:531.4,shdi:1.72,connect:15,ed:58.7,core:12.4,se:32,
+   challenge:"Sunspear tem o menor PLAND do jogo. Em qual categoria de serviço ecossistêmico (provisão, regulação, cultural, suporte) a perda é mais crítica num ambiente árido?"},
+  {region:"Sandstone",macro:"Dorne",css:"dorne",sigil:"sigil-martell",
+   pland:24.2,np:30,area_mn:807,shdi:1.58,connect:20,ed:53.4,core:17.6,se:38,
+   challenge:"A matriz de Dorne é desértica. A conectividade funcional para lagartos (ectotérmicos) é maior ou menor que para aves florestais? Justifique com permeabilidade da matriz."},
+  {region:"King's Landing",macro:"The Crownlands",css:"the-crownlands",sigil:"sigil-targaryen",
+   pland:20.5,np:58,area_mn:353.4,shdi:1.95,connect:10,ed:78.8,core:13.2,se:30,
+   challenge:"King's Landing tem a menor conectividade (10) e maior SHDI (1,95). Por que alta diversidade composicional coexiste com baixa conectividade? Relacione com urbanização."},
+  {region:"Dragonstone",macro:"The Crownlands",css:"the-crownlands",sigil:"sigil-targaryen",
+   pland:56.8,np:8,area_mn:7100,shdi:0.72,connect:82,ed:15.2,core:68.4,se:74,
+   challenge:"Dragonstone é uma ilha com 8 fragmentos grandes. Compare com King's Landing (58 fragmentos). O isolamento insular protege ou ameaça a biodiversidade? Argumente ambos os lados."},
+  {region:"Pyke",macro:"Iron Islands",css:"iron-islands",sigil:"sigil-greyjoy",
+   pland:12.5,np:22,area_mn:568,shdi:1.65,connect:8,ed:62.5,core:6.8,se:22,
+   challenge:"Pyke tem PLAND de 12,5% e área nuclear de apenas 6,8%. Usando o conceito de limiar de percolação, esta paisagem ainda mantém conectividade estrutural?"},
+  {region:"Harlaw",macro:"Iron Islands",css:"iron-islands",sigil:"sigil-greyjoy",
+   pland:16.8,np:18,area_mn:933,shdi:1.52,connect:14,ed:54.8,core:10.5,se:26,
+   challenge:"Proponha um plano de restauração ecológica para Harlaw: (a) qual elemento restaurar — mancha, corredor ou stepping stone? (b) onde posicioná-lo na paisagem?"}
+];
+
+const missions = [
+  {num:1,title:"Guardião do Wolfswood",
+   objective:"Controlar The North inteiro (Winterfell, The Dreadfort, White Harbor, Moat Cailin)",
+   desc:"As florestas do Norte formam o maior bloco contínuo de vegetação de Westeros. Quem as domina, controla a maior mancha da paisagem.",
+   concept:"Conceito: manter a maior mancha contínua preserva área nuclear e resiliência"},
+  {num:2,title:"Senhor dos Mosaicos",
+   objective:"Controlar 3 macro-regiões completas quaisquer",
+   desc:"Dominar mosaicos funcionais inteiros confere vantagem estratégica — cada macro-região é uma unidade de paisagem com dinâmica própria.",
+   concept:"Conceito: unidades de paisagem como escala funcional de análise"},
+  {num:3,title:"Transecto Continental",
+   objective:"Controlar Winterfell + Highgarden + Sunspear",
+   desc:"Do norte gelado ao deserto de Dorne, construa um gradiente de paisagens cobrindo todas as zonas climáticas de Westeros.",
+   concept:"Conceito: gradiente latitudinal de paisagens — boreal → agrícola → árida"},
+  {num:4,title:"Conquistador Territorial",
+   objective:"Controlar 12 territórios quaisquer",
+   desc:"Expanda sua cobertura territorial — quanto maior a proporção do continente sob seu domínio, mais recursos ecológicos você mobiliza.",
+   concept:"Conceito: PLAND — proporção da paisagem como indicador de dominância"},
+  {num:5,title:"Corredor Costeiro",
+   objective:"Controlar White Harbor, Gulltown, Shipbreaker Bay, Sunspear, Pyke e Dragonstone",
+   desc:"As regiões costeiras formam um corredor contínuo ao redor de Westeros. Conecte-as e controle o fluxo marítimo da paisagem.",
+   concept:"Conceito: conectividade linear — corredores como condutos de fluxo"},
+  {num:6,title:"Extinção Competitiva",
+   objective:"Eliminar completamente um jogador específico (o jogador à sua esquerda)",
+   desc:"Na competição entre espécies, a exclusão de um competidor libera recursos. Elimine quem disputa seu nicho ecológico.",
+   concept:"Conceito: exclusão competitiva e nicho ecológico"},
+  {num:7,title:"Corredor Central",
+   objective:"Controlar The Riverlands + The Reach + The Crownlands (6 territórios)",
+   desc:"O corredor central de Westeros conecta norte e sul. Domine-o e controle os fluxos de organismos e recursos entre as paisagens extremas.",
+   concept:"Conceito: corredor ecológico — faixa funcional entre paisagens"},
+  {num:8,title:"Equilíbrio Sustentável",
+   objective:"Controlar 8 territórios E ter ≥ 5 Tokens de Restauração acumulados",
+   desc:"Conquista sem conhecimento é degradação. Demonstre que dominar territórios e conservar paisagens não são mutuamente exclusivos.",
+   concept:"Conceito: trade-off conquista vs. conservação — sinergia possível"},
+  {num:9,title:"Refúgios Nucleares",
+   objective:"Controlar Dragonstone + The Eyrie + Winterfell",
+   desc:"As três paisagens com maior área nuclear de Westeros. Domine os refúgios onde a biodiversidade se protege do efeito de borda.",
+   concept:"Conceito: core area — áreas nucleares como refúgio ecológico"},
+  {num:10,title:"O Restaurador",
+   objective:"Controlar Iron Islands + Dorne (4 territórios com PLAND mais baixo)",
+   desc:"As paisagens mais degradadas de Westeros precisam de resgate. Conquiste e restaure as terras que os outros abandonaram.",
+   concept:"Conceito: restauração ecológica das paisagens abaixo do limiar"}
+];
+
+/* ═══════════════════════════════════════════════════ */
+/*              MAP DATA (nodes + edges)              */
+/* ═══════════════════════════════════════════════════ */
+
+const mapNodes = {
+  winterfell:     {x:240,y:105,label:"Winterfell",macro:"The North",color:"#A0B4C8",svg:"SVG/Stark.svg"},
+  dreadfort:      {x:400,y:95, label:"The Dreadfort",macro:"The North",color:"#A0B4C8",svg:"SVG/Stark.svg"},
+  whiteHarbor:    {x:430,y:195,label:"White Harbor",macro:"The North",color:"#A0B4C8",svg:"SVG/Stark.svg"},
+  moatCailin:     {x:290,y:260,label:"Moat Cailin",macro:"The North",color:"#A0B4C8",svg:"SVG/Stark.svg"},
+  eyrie:          {x:460,y:345,label:"The Eyrie",macro:"The Vale",color:"#7BA7CC",svg:"SVG/Arryn.svg"},
+  gulltown:       {x:520,y:420,label:"Gulltown",macro:"The Vale",color:"#7BA7CC",svg:"SVG/Arryn.svg"},
+  pyke:           {x:70, y:355,label:"Pyke",macro:"Iron Islands",color:"#8A8A8A",svg:"SVG/Greyjoy.svg"},
+  harlaw:         {x:70, y:430,label:"Harlaw",macro:"Iron Islands",color:"#8A8A8A",svg:"SVG/Greyjoy.svg"},
+  riverrun:       {x:230,y:390,label:"Riverrun",macro:"The Riverlands",color:"#C87E5A",svg:"SVG/Tully.svg"},
+  harrenhal:      {x:370,y:410,label:"Harrenhal",macro:"The Riverlands",color:"#C87E5A",svg:"SVG/Tully.svg"},
+  casterlyRock:   {x:130,y:480,label:"Casterly Rock",macro:"The Westerlands",color:"#D4A843",svg:"SVG/Lannister.svg"},
+  lannisport:     {x:150,y:555,label:"Lannisport",macro:"The Westerlands",color:"#D4A843",svg:"SVG/Lannister.svg"},
+  highgarden:     {x:230,y:630,label:"Highgarden",macro:"The Reach",color:"#7CB868",svg:"SVG/Tyrell.svg"},
+  oldtown:        {x:140,y:700,label:"Oldtown",macro:"The Reach",color:"#7CB868",svg:"SVG/Tyrell.svg"},
+  kingsLanding:   {x:410,y:510,label:"King's Landing",macro:"The Crownlands",color:"#C84040",sigil:"🐉"},
+  dragonstone:    {x:540,y:510,label:"Dragonstone",macro:"The Crownlands",color:"#C84040",sigil:"🐉"},
+  stormsEnd:      {x:390,y:600,label:"Storm's End",macro:"The Stormlands",color:"#C8B45A",svg:"SVG/Baratheon.svg"},
+  shipbreakerBay: {x:460,y:670,label:"Shipbreaker Bay",macro:"The Stormlands",color:"#C8B45A",svg:"SVG/Baratheon.svg"},
+  sandstone:      {x:250,y:760,label:"Sandstone",macro:"Dorne",color:"#E07A3A",svg:"SVG/Martell.svg"},
+  sunspear:       {x:420,y:770,label:"Sunspear",macro:"Dorne",color:"#E07A3A",svg:"SVG/Martell.svg"}
+};
+
+const mapEdges = [
+  // Land routes
+  {a:"winterfell",b:"dreadfort",sea:false},
+  {a:"winterfell",b:"moatCailin",sea:false},
+  {a:"winterfell",b:"whiteHarbor",sea:false},
+  {a:"dreadfort",b:"whiteHarbor",sea:false},
+  {a:"whiteHarbor",b:"moatCailin",sea:false},
+  {a:"moatCailin",b:"riverrun",sea:false},
+  {a:"moatCailin",b:"eyrie",sea:false},
+  {a:"eyrie",b:"gulltown",sea:false},
+  {a:"eyrie",b:"harrenhal",sea:false},
+  {a:"riverrun",b:"harrenhal",sea:false},
+  {a:"riverrun",b:"casterlyRock",sea:false},
+  {a:"riverrun",b:"highgarden",sea:false},
+  {a:"harrenhal",b:"kingsLanding",sea:false},
+  {a:"harrenhal",b:"stormsEnd",sea:false},
+  {a:"casterlyRock",b:"lannisport",sea:false},
+  {a:"lannisport",b:"highgarden",sea:false},
+  {a:"highgarden",b:"oldtown",sea:false},
+  {a:"highgarden",b:"stormsEnd",sea:false},
+  {a:"highgarden",b:"sandstone",sea:false},
+  {a:"oldtown",b:"sandstone",sea:false},
+  {a:"kingsLanding",b:"stormsEnd",sea:false},
+  {a:"stormsEnd",b:"shipbreakerBay",sea:false},
+  {a:"shipbreakerBay",b:"sunspear",sea:false},
+  {a:"sandstone",b:"sunspear",sea:false},
+  {a:"pyke",b:"harlaw",sea:false},
+  // Sea routes
+  {a:"pyke",b:"riverrun",sea:true},
+  {a:"pyke",b:"casterlyRock",sea:true},
+  {a:"kingsLanding",b:"dragonstone",sea:true},
+  {a:"gulltown",b:"kingsLanding",sea:true}
+];
+
+/* ═══════════════════════════════════════════════════ */
+/*                RENDER FUNCTIONS                    */
+/* ═══════════════════════════════════════════════════ */
+
+function plandClass(v) { return v >= 50 ? 'pland-high' : v >= 30 ? 'pland-med' : 'pland-low'; }
+function connClass(v) { return v >= 60 ? 'conn-high' : v >= 30 ? 'conn-med' : 'conn-low'; }
+function connLabel(v) { return v >= 60 ? 'ALTA' : v >= 30 ? 'MODERADA' : 'BAIXA'; }
+
+function corners() {
+  return ['tl','tr','bl','br'].map(p =>
+    `<div class="corner corner-${p}"><svg><use href="#corner-ornament"/></svg></div>`
+  ).join('');
+}
+
+function renderTerritoryFront(c) {
+  return `
+  <div class="card ${c.css}">
+    ${corners()}
+    <div class="card-header">
+      <div class="game-title">Risk of Landscapes</div>
+      <div class="region-name">${c.region}</div>
+      <div class="macro-region">${c.macro}</div>
+    </div>
+    <div class="sigil"><svg><use href="#${c.sigil}"/></svg></div>
+    <div class="data-section">
+      <div class="data-grid">
+        <div class="data-item"><span class="data-label">PLAND</span><span class="data-value ${plandClass(c.pland)}">${c.pland.toFixed(1)}%</span></div>
+        <div class="data-item"><span class="data-label">NP</span><span class="data-value">${c.np}</span></div>
+        <div class="data-item"><span class="data-label">AREA_MN</span><span class="data-value">${c.area_mn.toLocaleString('pt-BR')} ha</span></div>
+        <div class="data-item"><span class="data-label">SHDI</span><span class="data-value">${c.shdi.toFixed(2)}</span></div>
+        <div class="data-item"><span class="data-label">ED</span><span class="data-value">${c.ed.toFixed(1)} m/ha</span></div>
+        <div class="data-item"><span class="data-label">Core</span><span class="data-value">${c.core.toFixed(1)}%</span></div>
+        <div class="data-item"><span class="data-label">SE</span><span class="data-value">${c.se}/100</span></div>
+        <div class="data-item"><span class="data-label">Connect</span><span class="data-value">${c.connect}/100</span></div>
+        <div class="bar-container">
+          <div class="bar-label-row">
+            <span class="data-label">Conectividade</span>
+            <span class="data-value" style="font-size:6pt;">${connLabel(c.connect)}</span>
+          </div>
+          <div class="bar-outer"><div class="bar-inner ${connClass(c.connect)}" style="width:${c.connect}%"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="challenge-section">
+      <div class="challenge-title">⚔ Desafio da Paisagem ⚔</div>
+      <div class="challenge-text">${c.challenge}</div>
+    </div>
+    <div class="card-footer"><div class="footer-text">Valar Morghulis — Todas as paisagens mudam</div></div>
+  </div>`;
+}
+
+function renderTerritoryBack() {
+  return `
+  <div class="card-back">
+    <div class="back-inner">
+      <div class="back-fleur back-fleur-tl">❧</div>
+      <div class="back-fleur back-fleur-tr">❧</div>
+      <div class="back-fleur back-fleur-bl">❧</div>
+      <div class="back-fleur back-fleur-br">❧</div>
+      <div class="back-title-pre">RISK OF</div>
+      <div class="back-title-main">LANDSCAPES</div>
+      <div class="back-emblem">🌳</div>
+      <div class="back-swords">⚔ ⚔ ⚔</div>
+      <div class="back-subtitle">A GUERRA PELAS PAISAGENS</div>
+      <div class="back-subtitle" style="margin-top:1mm;">DE WESTEROS</div>
+      <div class="back-bottom">Análise da Paisagem — UEFS</div>
+    </div>
+  </div>`;
+}
+
+function renderMissionFront(m) {
+  return `
+  <div class="card">
+    ${corners()}
+    <div class="mission-header">
+      <div class="mission-game-title">Risk of Landscapes</div>
+      <div class="mission-card-type">Carta de Missão</div>
+    </div>
+    <div class="mission-number">${m.num}</div>
+    <div class="mission-title">${m.title}</div>
+    <div class="mission-desc">${m.desc}</div>
+    <div class="mission-objective">
+      <div class="mission-obj-title">⚔ Objetivo ⚔</div>
+      <div class="mission-obj-text">${m.objective}</div>
+    </div>
+    <div class="mission-concept">${m.concept}</div>
+    <div class="card-footer"><div class="footer-text">Valar Morghulis — Todas as paisagens mudam</div></div>
+  </div>`;
+}
+
+function renderMissionBack() {
+  return `
+  <div class="card-back card-back-mission">
+    <div class="back-inner">
+      <div class="back-fleur back-fleur-tl">❧</div>
+      <div class="back-fleur back-fleur-tr">❧</div>
+      <div class="back-fleur back-fleur-bl">❧</div>
+      <div class="back-fleur back-fleur-br">❧</div>
+      <div class="back-title-pre">RISK OF</div>
+      <div class="back-title-main" style="color:#C84040;">LANDSCAPES</div>
+      <div class="back-emblem">⚔</div>
+      <div class="back-swords" style="color:rgba(200,64,64,0.4);">MISSÃO SECRETA</div>
+      <div class="back-subtitle" style="color:rgba(200,64,64,0.35);">NÃO REVELE AOS DEMAIS</div>
+      <div class="back-subtitle" style="margin-top:1mm;color:rgba(200,64,64,0.35);">JOGADORES</div>
+      <div class="back-bottom" style="color:rgba(200,64,64,0.25);">Análise da Paisagem — UEFS</div>
+    </div>
+  </div>`;
+}
+
+/* ═══════════════════════════════════════════════════ */
+/*              PAGE ASSEMBLY FUNCTIONS               */
+/* ═══════════════════════════════════════════════════ */
+
+function groupIntoPages(items, perPage) {
+  const pages = [];
+  for (let i = 0; i < items.length; i += perPage) {
+    pages.push(items.slice(i, i + perPage));
+  }
+  return pages;
+}
+
+function wrapPage(cardsHtml) {
+  return `<div class="print-page">${cardsHtml}</div>`;
+}
+
+function buildSection(title, subtitle) {
+  return `<div class="section-page"><h2>${title}</h2><p>${subtitle}</p></div>`;
+}
+
+/* ═══════════════════════════════════════════════════ */
+/*                  BUILD COVER                       */
+/* ═══════════════════════════════════════════════════ */
+
+function buildCover() {
+  return `
+  <div class="cover-page">
+    <div class="cover-title">⚔ RISK OF<br>LANDSCAPES ⚔</div>
+    <div class="cover-subtitle">A GUERRA PELAS PAISAGENS DE WESTEROS</div>
+    <div class="cover-emblem">🌳</div>
+    <div class="cover-subtitle" style="font-size:10pt;opacity:0.5;">CARTAS DE TERRITÓRIO · MISSÕES · REFERÊNCIA · MAPA</div>
+    <div class="cover-author">Análise da Paisagem — UEFS<br>Prof. Luiz Diego Vidal Santos</div>
+    <div class="cover-info">
+      20 Cartas de Território (frente + verso)<br>
+      10 Cartas de Missão (frente + verso)<br>
+      2 Cartas de Referência (frente + verso)<br>
+      1 Mapa de Westeros — Conexões Territoriais<br><br>
+      Imprimir em A4 Paisagem · Margens mínimas · Gráficos de fundo ativados
+    </div>
+  </div>`;
+}
+
+/* ═══════════════════════════════════════════════════ */
+/*               BUILD REFERENCE CARDS                */
+/* ═══════════════════════════════════════════════════ */
+
+function buildReferenceFront() {
+  return `
+  <div class="ref-card">
+    <div class="ref-header">
+      <div class="ref-title">Tabela de Referência</div>
+      <div class="ref-subtitle">Risk of Landscapes — Frente</div>
+    </div>
+    <div class="ref-section">
+      <div class="ref-section-title">Modelo Mancha-Corredor-Matriz</div>
+      <div class="ref-item"><strong>Mancha (patch):</strong> área homogênea que difere do entorno</div>
+      <div class="ref-item"><strong>Corredor:</strong> elemento linear conectando manchas</div>
+      <div class="ref-item"><strong>Matriz:</strong> elemento dominante ("fundo" da paisagem)</div>
+    </div>
+    <div class="ref-section">
+      <div class="ref-section-title">Métricas-chave</div>
+      <div class="ref-item"><strong>PLAND</strong> — % da paisagem coberta pela classe <em>i</em></div>
+      <div class="ref-item"><span class="ref-formula">PLAND = (Σ aᵢⱼ / A) × 100</span></div>
+      <div class="ref-item"><strong>NP</strong> — Número total de manchas (fragmentos)</div>
+      <div class="ref-item"><strong>AREA_MN</strong> — Área total da classe ÷ NP (tamanho médio)</div>
+      <div class="ref-item"><strong>SHDI</strong> — Diversidade composicional de Shannon</div>
+      <div class="ref-item"><span class="ref-formula">SHDI = −Σ pᵢ · ln(pᵢ)</span></div>
+      <div class="ref-item"><strong>ED</strong> — Comprimento de borda ÷ Área total (m/ha)</div>
+      <div class="ref-item"><strong>CORE</strong> — % interior protegida do efeito de borda</div>
+      <div class="ref-item"><strong>CONNECT</strong> — Índice de conectividade funcional (0–100)</div>
+      <div class="ref-item"><strong>SE</strong> — Índice composto de serviços ecossistêmicos (0–100)</div>
+    </div>
+    <div class="ref-section">
+      <div class="ref-section-title">Relações entre métricas</div>
+      <div class="ref-item">PLAND ↑ → NP ↓ , AREA_MN ↑ , CONNECT ↑</div>
+      <div class="ref-item">NP ↑ → ED ↑ , CORE ↓</div>
+      <div class="ref-item">ED ↑ → CORE ↓ (inversamente proporcionais)</div>
+      <div class="ref-item">SHDI alto ≠ PLAND alto (diversidade ≠ cobertura)</div>
+    </div>
+    <div class="card-footer"><div class="footer-text" style="color:rgba(76,175,80,0.5);">Análise da Paisagem — UEFS</div></div>
+  </div>`;
+}
+
+function buildReferenceBack() {
+  return `
+  <div class="ref-card">
+    <div class="ref-header">
+      <div class="ref-title">Tabela de Referência</div>
+      <div class="ref-subtitle">Risk of Landscapes — Verso</div>
+    </div>
+    <div class="ref-section">
+      <div class="ref-section-title">Limiares de Fragmentação</div>
+      <div class="ref-item"><strong>Percolação:</strong> ~59% de habitat (mapas aleatórios)</div>
+      <div class="ref-item"><strong>Empírico:</strong> 20–30% → ponto de inflexão para biodiversidade</div>
+      <div class="ref-item"><strong>Relação espécie-área:</strong> <span class="ref-formula">S = c·Aᶻ</span> (z ≈ 0,25)</div>
+    </div>
+    <div class="ref-section">
+      <div class="ref-section-title">Serviços Ecossistêmicos</div>
+      <div class="ref-item"><strong>Provisão:</strong> alimentos, água, madeira, fibras</div>
+      <div class="ref-item"><strong>Regulação:</strong> clima, água, erosão, polinização</div>
+      <div class="ref-item"><strong>Culturais:</strong> recreação, estética, identidade</div>
+      <div class="ref-item"><strong>Suporte:</strong> solo, ciclagem, biodiversidade</div>
+      <div class="ref-item" style="font-style:italic;color:#8B7355;">Suporte sustenta todos os demais serviços</div>
+    </div>
+    <div class="ref-section">
+      <div class="ref-section-title">Classificação de Tricart</div>
+      <div class="ref-item"><strong>Estável:</strong> pedogênese > morfogênese (usos intensivos OK)</div>
+      <div class="ref-item"><strong>Intergrades:</strong> equilíbrio frágil (manejo cuidadoso)</div>
+      <div class="ref-item"><strong>Instável:</strong> morfogênese > pedogênese (proteção obrigatória)</div>
+    </div>
+    <div class="ref-section">
+      <div class="ref-section-title">Conectividade</div>
+      <div class="ref-item"><strong>Estrutural:</strong> continuidade física (distância, PLAND)</div>
+      <div class="ref-item"><strong>Funcional:</strong> depende da espécie e da permeabilidade da matriz</div>
+      <div class="ref-item"><strong>Stepping stone:</strong> trampolim ecológico entre manchas</div>
+    </div>
+    <div class="ref-section">
+      <div class="ref-section-title">Tokens de Restauração</div>
+      <div class="ref-item"><strong>3 tokens</strong> → 2 exércitos OU restauração (+2 onde PLAND &lt; 30%)</div>
+      <div class="ref-item"><strong>4 tokens</strong> → corredor ecológico (conecta não-adjacentes 1 turno)</div>
+      <div class="ref-item"><strong>5 tokens</strong> → área protegida (território blindado 1 rodada)</div>
+      <div class="ref-item"><strong>2 tokens</strong> → stepping stone (move 1 exército pulando 1 inimigo)</div>
+    </div>
+    <div class="card-footer"><div class="footer-text" style="color:rgba(76,175,80,0.5);">Análise da Paisagem — UEFS</div></div>
+  </div>`;
+}
+
+/* ═══════════════════════════════════════════════════ */
+/*                   BUILD MAP                        */
+/* ═══════════════════════════════════════════════════ */
+
+function buildMap() {
+  const W = 620, H = 880;
+  let svg = `
+  <div class="map-page">
+  <svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" style="width:auto;height:178mm;">
+    <defs>
+      <filter id="glow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      <radialGradient id="sea-grad" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="#1a2940"/><stop offset="100%" stop-color="#0a1520"/></radialGradient>
+      <pattern id="wave" width="30" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(15)">
+        <path d="M0,4 Q7.5,0 15,4 Q22.5,8 30,4" stroke="rgba(100,150,200,0.08)" fill="none" stroke-width="0.5"/>
+      </pattern>
+    </defs>
+
+    <!-- Sea background -->
+    <rect width="${W}" height="${H}" fill="url(#sea-grad)" rx="8"/>
+    <rect width="${W}" height="${H}" fill="url(#wave)" rx="8"/>
+
+    <!-- Continent silhouette -->
+    <path d="
+      M160,40 L440,38 L470,55 L490,100 L480,155 L500,210 L510,280
+      L490,320 L520,360 L530,400 L520,440 L540,480 L520,530
+      L500,560 L510,610 L490,660 L470,700 L500,740 L480,780
+      L440,800 L380,810 L320,790 L260,800 L200,770 L160,730
+      L130,680 L110,620 L100,560 L80,500 L70,440 L60,380
+      L80,330 L70,280 L80,220 L90,160 L100,100 L120,60 Z"
+      fill="#1a1810" stroke="rgba(139,115,85,0.3)" stroke-width="1.5"/>
+
+    <!-- Continent texture overlay -->
+    <path d="
+      M160,40 L440,38 L470,55 L490,100 L480,155 L500,210 L510,280
+      L490,320 L520,360 L530,400 L520,440 L540,480 L520,530
+      L500,560 L510,610 L490,660 L470,700 L500,740 L480,780
+      L440,800 L380,810 L320,790 L260,800 L200,770 L160,730
+      L130,680 L110,620 L100,560 L80,500 L70,440 L60,380
+      L80,330 L70,280 L80,220 L90,160 L100,100 L120,60 Z"
+      fill="url(#wave)" opacity="0.5"/>
+
+    <!-- The Wall -->
+    <line x1="140" y1="50" x2="460" y2="48" stroke="#A0B4C8" stroke-width="3" stroke-dasharray="4,2" opacity="0.6"/>
+    <text x="300" y="38" text-anchor="middle" font-family="Cinzel,serif" font-size="7" fill="#A0B4C8" opacity="0.6" letter-spacing="3">THE WALL</text>
+
+    <!-- Iron Islands (separate) -->
+    <ellipse cx="45" cy="355" rx="22" ry="18" fill="#2a2a2a" stroke="rgba(138,138,138,0.4)" stroke-width="1"/>
+    <ellipse cx="45" cy="430" rx="22" ry="18" fill="#2a2a2a" stroke="rgba(138,138,138,0.4)" stroke-width="1"/>
+    <!-- Dragonstone (island) -->
+    <ellipse cx="555" cy="510" rx="20" ry="16" fill="#2a2a2a" stroke="rgba(200,64,64,0.4)" stroke-width="1"/>`;
+
+  // Draw edges
+  mapEdges.forEach(e => {
+    const a = mapNodes[e.a], b = mapNodes[e.b];
+    const dashStyle = e.sea ? 'stroke-dasharray="6,4"' : '';
+    const color = e.sea ? 'rgba(100,160,220,0.35)' : 'rgba(139,115,85,0.3)';
+    const width = e.sea ? '1' : '1.2';
+    svg += `<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" stroke="${color}" stroke-width="${width}" ${dashStyle}/>`;
+  });
+
+  // Draw nodes
+  Object.entries(mapNodes).forEach(([key, n]) => {
+    const r = 24;
+    const sigilContent = n.svg
+      ? `<image href="${n.svg}" x="${n.x-12}" y="${n.y-12}" width="24" height="24"/>`
+      : `<text x="${n.x}" y="${n.y+4}" text-anchor="middle" font-size="16">${n.sigil}</text>`;
+    svg += `
+    <g filter="url(#glow)">
+      <circle cx="${n.x}" cy="${n.y}" r="${r}" fill="#1c1c1c" stroke="${n.color}" stroke-width="1.8" opacity="0.95"/>
+      <circle cx="${n.x}" cy="${n.y}" r="${r-3}" fill="none" stroke="${n.color}" stroke-width="0.3" opacity="0.4"/>
+      ${sigilContent}
+    </g>`;
+    // Label below node
+    const labelY = n.y + r + 10;
+    svg += `
+    <text x="${n.x}" y="${labelY}" text-anchor="middle" font-family="Cinzel,serif" font-size="7.5" font-weight="700" fill="${n.color}" letter-spacing="0.5">${n.label}</text>`;
+  });
+
+  // Title
+  svg += `
+    <text x="${W/2}" y="${H-35}" text-anchor="middle" font-family="Cinzel,serif" font-size="18" font-weight="900" fill="#8B7355" letter-spacing="4">RISK OF LANDSCAPES</text>
+    <text x="${W/2}" y="${H-18}" text-anchor="middle" font-family="Cinzel,serif" font-size="8" fill="rgba(139,115,85,0.5)" letter-spacing="2">MAPA DE WESTEROS — CONEXÕES TERRITORIAIS</text>
+
+    <!-- Legend -->
+    <g transform="translate(15,580)">
+      <rect x="0" y="0" width="95" height="250" rx="4" fill="rgba(28,28,28,0.9)" stroke="rgba(139,115,85,0.3)" stroke-width="0.5"/>
+      <text x="48" y="16" text-anchor="middle" font-family="Cinzel,serif" font-size="6" fill="#8B7355" letter-spacing="1">LEGENDA</text>
+      <line x1="8" y1="22" x2="87" y2="22" stroke="rgba(139,115,85,0.2)" stroke-width="0.5"/>`;
+
+  const legendItems = [
+    {color:"#A0B4C8",label:"The North"},
+    {color:"#7BA7CC",label:"The Vale"},
+    {color:"#C87E5A",label:"The Riverlands"},
+    {color:"#D4A843",label:"The Westerlands"},
+    {color:"#7CB868",label:"The Reach"},
+    {color:"#C8B45A",label:"The Stormlands"},
+    {color:"#E07A3A",label:"Dorne"},
+    {color:"#C84040",label:"The Crownlands"},
+    {color:"#8A8A8A",label:"Iron Islands"}
+  ];
+  legendItems.forEach((item, i) => {
+    const ly = 35 + i * 22;
+    svg += `
+      <circle cx="18" cy="${ly}" r="6" fill="#1c1c1c" stroke="${item.color}" stroke-width="1.2"/>
+      <text x="30" y="${ly+3}" font-family="Cinzel,serif" font-size="6" fill="${item.color}">${item.label}</text>`;
+  });
+
+  svg += `
+      <line x1="8" y1="235" x2="87" y2="235" stroke="rgba(139,115,85,0.2)" stroke-width="0.5"/>
+      <line x1="12" y1="244" x2="35" y2="244" stroke="rgba(139,115,85,0.3)" stroke-width="1"/>
+      <text x="40" y="247" font-size="5" fill="rgba(139,115,85,0.5)">Terra</text>
+      <line x1="12" y1="254" x2="35" y2="254" stroke="rgba(100,160,220,0.35)" stroke-width="1" stroke-dasharray="4,3"/>
+      <text x="40" y="257" font-size="5" fill="rgba(100,160,220,0.5)">Mar</text>
+    </g>
+
+    <!-- Compass rose -->
+    <g transform="translate(560,80)">
+      <circle cx="0" cy="0" r="18" fill="rgba(28,28,28,0.8)" stroke="rgba(139,115,85,0.3)" stroke-width="0.5"/>
+      <line x1="0" y1="-14" x2="0" y2="14" stroke="rgba(139,115,85,0.4)" stroke-width="0.5"/>
+      <line x1="-14" y1="0" x2="14" y2="0" stroke="rgba(139,115,85,0.4)" stroke-width="0.5"/>
+      <polygon points="0,-13 -3,-4 3,-4" fill="#8B7355"/>
+      <polygon points="0,13 -3,4 3,4" fill="rgba(139,115,85,0.3)"/>
+      <text x="0" y="-16" text-anchor="middle" font-family="Cinzel,serif" font-size="7" font-weight="700" fill="#8B7355">N</text>
+      <text x="0" y="24" text-anchor="middle" font-family="Cinzel,serif" font-size="5" fill="rgba(139,115,85,0.4)">S</text>
+      <text x="20" y="3" text-anchor="middle" font-family="Cinzel,serif" font-size="5" fill="rgba(139,115,85,0.4)">E</text>
+      <text x="-20" y="3" text-anchor="middle" font-family="Cinzel,serif" font-size="5" fill="rgba(139,115,85,0.4)">O</text>
+    </g>
+  </svg>
+  </div>`;
+
+  return svg;
+}
+
+/* ═══════════════════════════════════════════════════ */
+/*                MAIN ASSEMBLY                       */
+/* ═══════════════════════════════════════════════════ */
+
+document.addEventListener('DOMContentLoaded', () => {
+  // --- Cover ---
+  document.getElementById('cover-section').innerHTML = buildCover();
+
+  // --- Territory Fronts ---
+  const tfPages = groupIntoPages(cards, 3);
+  let tfHtml = buildSection('CARTAS DE TERRITÓRIO', '20 CARTAS — FRENTE');
+  tfPages.forEach(page => {
+    tfHtml += wrapPage(page.map(renderTerritoryFront).join(''));
+  });
+  document.getElementById('territory-fronts-section').innerHTML = tfHtml;
+
+  // --- Territory Backs ---
+  let tbHtml = buildSection('CARTAS DE TERRITÓRIO', '20 CARTAS — VERSO');
+  for (let p = 0; p < 7; p++) {
+    let pageCards = '';
+    const cardsThisPage = p < 6 ? 3 : 2;
+    for (let i = 0; i < cardsThisPage; i++) pageCards += renderTerritoryBack();
+    tbHtml += wrapPage(pageCards);
+  }
+  document.getElementById('territory-backs-section').innerHTML = tbHtml;
+
+  // --- Mission Fronts ---
+  const mfPages = groupIntoPages(missions, 3);
+  let mfHtml = buildSection('CARTAS DE MISSÃO', '10 CARTAS — FRENTE');
+  mfPages.forEach(page => {
+    mfHtml += wrapPage(page.map(renderMissionFront).join(''));
+  });
+  document.getElementById('mission-fronts-section').innerHTML = mfHtml;
+
+  // --- Mission Backs ---
+  let mbHtml = buildSection('CARTAS DE MISSÃO', '10 CARTAS — VERSO');
+  const mbPages = groupIntoPages(Array(10).fill(null), 3);
+  mbPages.forEach(page => {
+    mbHtml += wrapPage(page.map(() => renderMissionBack()).join(''));
+  });
+  document.getElementById('mission-backs-section').innerHTML = mbHtml;
+
+  // --- Reference Cards ---
+  let refHtml = buildSection('TABELA DE REFERÊNCIA', '2 CARTAS — FRENTE E VERSO');
+  // Front page (2 cards)
+  refHtml += wrapPage(buildReferenceFront() + buildReferenceFront());
+  // Back page (2 cards)
+  refHtml += wrapPage(buildReferenceBack() + buildReferenceBack());
+  document.getElementById('reference-section').innerHTML = refHtml;
+
+  // --- Map ---
+  document.getElementById('map-section').innerHTML = buildMap();
+
+  // --- Narrative Cards (80 = 8 houses × 10) ---
+  const housesData = {
+    stark:{name:"Casa Stark",motto:"O Inverno Está Chegando",region:"The North",sigil:"SVG/Stark.svg",css:"house-stark",cards:[
+      {n:"Os lobos do Wolfswood percorrem 78% da paisagem florestal contínua de Winterfell — a maior mancha de vegetação nativa de todo Westeros. Os Meisters relatam que as matilhas nunca precisam cruzar áreas abertas.",c:"Com base no PLAND de Winterfell (78,4%), identifique qual elemento do modelo mancha-corredor-matriz predomina nesta paisagem. Explique por que isso favorece a movimentação dos lobos."},
+      {n:"Ramsay Bolton ordenou a derrubada de florestas ao redor de Dreadfort para impedir emboscadas. O Meister comparou: Winterfell tem NP=12 e AREA_MN=6.533 ha, enquanto Dreadfort tem NP=24 e AREA_MN=2.675 ha.",c:"Compare as duas paisagens usando NP e AREA_MN conjuntamente. Qual está mais fragmentada? Justifique usando ambas as métricas e explique a relação esperada entre elas."},
+      {n:"Os comerciantes de White Harbor notaram que espécies de aves florestais estão desaparecendo. O PLAND da região é apenas 45,8% — o menor de todo o Norte.",c:"Usando a relação espécie-área (S = cAᶻ, z ≈ 0,25), explique o que se espera para a riqueza de espécies quando o PLAND cai de 78% para 46%. A relação é linear ou não-linear?"},
+      {n:"Moat Cailin controla a única passagem terrestre entre o Norte e o Sul. Tropas, comerciantes e animais migratórios todos passam por este estreito gargalo de floresta.",c:"Classifique Moat Cailin segundo as funções de corredor ecológico: conduto, filtro ou barreira. Que fatores (PLAND=52%, largura) determinam qual função predomina?"},
+      {n:"Jon Snow ordenou um levantamento ao redor de Castle Black. Os exploradores mediram: ED = 18,5 m/ha (baixa) e Core Area = 72,1% (alta). Florestas densas e contínuas.",c:"Explique a relação inversa entre ED e Core Area observada em Winterfell. Por que paisagens com baixa densidade de borda tendem a ter alta proporção de área nuclear?"},
+      {n:"Bran Stark, observando do alto da torre, viu a floresta contínua do Wolfswood até o horizonte, enquanto ao sul via-se um mosaico fragmentado.",c:"O SHDI de Winterfell é 0,68 (baixo) enquanto ao sul excede 1,5. Explique o que SHDI baixo indica sobre a composição da paisagem."},
+      {n:"A conectividade entre fragmentos do Norte varia de 88 (Winterfell) a 41 (White Harbor). Lobos gigantes que patrulhavam todo o Norte agora evitam White Harbor.",c:"Diferencie conectividade estrutural (distância física entre manchas) de conectividade funcional (capacidade real de deslocamento). Para lobos gigantes, qual é mais relevante?"},
+      {n:"O suprimento de lenha, água e caça em Winterfell (SE=85) é vastamente superior ao de White Harbor (SE=52). Aldeões caminham cada vez mais longe para recursos.",c:"Identifique quais categorias de serviços ecossistêmicos (provisão, regulação, cultural, suporte) são afetadas pela redução de PLAND."},
+      {n:"O inverno chegou e uma tempestade derrubou árvores em 15% do Wolfswood. Mas a regeneração já começou nos meses seguintes.",c:"A perturbação por tempestade: meio estável, intergrade ou instável segundo Tricart? A resiliência é maior em paisagens com PLAND alto ou baixo?"},
+      {n:"Lady Sansa encomendou um plano de restauração: recuperar a conectividade entre Winterfell (88), White Harbor (41), passando por Dreadfort (62) e Moat Cailin (48).",c:"Proponha uma estratégia de restauração: ampliar manchas existentes, criar corredores lineares, ou implantar stepping stones? Justifique."}
+    ]},
+    greyjoy:{name:"Casa Greyjoy",motto:"Nós Não Semeamos",region:"Iron Islands",sigil:"SVG/Greyjoy.svg",css:"house-greyjoy",cards:[
+      {n:"As Iron Islands são as terras mais desoladas de Westeros. Em Pyke, apenas 12,5% da superfície é coberta por vegetação — rochas e mar dominam a paisagem.",c:"Pyke tem PLAND=12,5%, muito abaixo do limiar de percolação (~59%). Explique o que é o limiar de percolação e quais consequências ecológicas surgem quando uma paisagem está tão abaixo dele."},
+      {n:"Theon retornou a Pyke e notou vegetação esparsa, batida pelo vento. Seus 22 fragmentos tinham, em média, apenas 568 ha.",c:"Compare Pyke (NP=22, AREA_MN=568 ha) com Winterfell (NP=12, AREA_MN=6.533 ha). Calcule a razão de tamanho médio. O que significa para a viabilidade de populações?"},
+      {n:"O Meister de Harlaw mediu: Core Area apenas 6,8% em Pyke e 10,5% em Harlaw. Quase todo o habitat sofre efeito de borda — ventos marinhos, salinidade e insolação.",c:"Explique por que fragmentos pequenos em matriz oceânica têm Core Area tão baixa. Relacione tamanho do fragmento, razão perímetro/área e efeito de borda."},
+      {n:"Asha propôs plantar florestas de mangue para conectar Pyke e Harlaw ecologicamente. Euron ridicularizou: 'O mar é nosso corredor, não as árvores.'",c:"Avalie ambos: o mar pode funcionar como corredor para algumas espécies? Para quais organismos corredores florestais vs. marinhos são eficazes?"},
+      {n:"A ED em Pyke é 62,5 m/ha e em Harlaw 54,8 m/ha — altas. Aves costeiras evitam o interior dos fragmentos.",c:"Se fragmentos de Pyke fossem circulares com AREA_MN=568 ha e borda=100m, qual seria a Core Area teórica? Compare com o real (6,8%)."},
+      {n:"SHDI de Pyke é 1,65 — surpreendentemente alto: rocha nua, vegetação rasteira, mangue, pântano costeiro, vegetação arbórea coexistem.",c:"Como uma paisagem com PLAND baixo (12,5%) pode ter SHDI alto (1,65)? SHDI mede diversidade ou quantidade? Como diferenciar 'naturalmente diversa' de 'fragmentada'?"},
+      {n:"O falcão-marinho desapareceu de Pyke há 10 anos. Último censo: 3 casais em toda a ilha. População inviável.",c:"Explique por que populações pequenas em fragmentos isolados são vulneráveis: perda de variabilidade genética, estocasticidade demográfica, impossibilidade de recolonização."},
+      {n:"SE de Pyke é o mais baixo (22/100). Ilhéus dependem do mar para provisão e não possuem serviços de regulação florestal.",c:"Identifique quais dos 4 tipos de serviços ecossistêmicos são mantidos e quais perdidos. Proponha restaurar ao menos um serviço de regulação."},
+      {n:"CONNECT de Pyke=8, Harlaw=14 — praticamente nula. Para espécies terrestres, cada ilha é um mundo isolado.",c:"A teoria de biogeografia de ilhas prevê que ilhas menores e mais distantes têm menor riqueza. Aplique às Iron Islands vs. Dragonstone (CONNECT=82, PLAND=56,8%)."},
+      {n:"O Meister propôs criar pequenos bosques protegidos estrategicamente posicionados em Harlaw em vez de grandes áreas florestais (impossível dado o vento).",c:"Para restaurar Harlaw: uma mancha grande, vários stepping stones, ou corredores? Argumente considerando PLAND=16,8%, ventos marinhos e necessidade de CONNECT>30."}
+    ]},
+    lannister:{name:"Casa Lannister",motto:"Ouça-me Rugir",region:"The Westerlands",sigil:"SVG/Lannister.svg",css:"house-lannister",cards:[
+      {n:"As minas de ouro de Casterly Rock devastaram a cobertura florestal. Tywin não se importa: 'Ouro compra exércitos. Árvores não.'",c:"Lannisport tem PLAND=35,6% e SE=42. Identifique o trade-off entre serviços de provisão (mineração) e regulação (controle de erosão, regulação hídrica). Qual é mais difícil de substituir?"},
+      {n:"Cersei ordenou novas minas. O Meister alertou: a região já tem NP=36 com AREA_MN=1.189 ha. Mais desmatamento reduziria abaixo de 1.000 ha.",c:"Se a nova mina convertesse 20% dos fragmentos em áreas abertas, calcule os novos NP e AREA_MN aproximados. A paisagem cruzaria algum limiar crítico?"},
+      {n:"Minas drenam ácido para os rios. Capturas de peixes caíram 60%. ED=55,8 m/ha — fragmentos expostos a bordas de áreas mineradas.",c:"Explique como alta ED afeta ecossistemas aquáticos a jusante: sedimentação, poluição difusa e temperatura da água."},
+      {n:"Tyrion em Highgarden notou: SHDI=1,78 vs. 1,48 de Casterly Rock. 'Os Tyrell têm jardins. Nós temos buracos no chão.'",c:"Ambos têm SHDI > 1,4 mas por razões diferentes. Compare as causas da diversidade em Casterly Rock (mineração) vs. Highgarden (agricultura). Qual é ecologicamente mais saudável?"},
+      {n:"O leão-das-montanhas precisa de 3.000 ha contínuos. AREA_MN em Casterly Rock é apenas 1.189 ha e Lannisport 809 ha.",c:"Usando meta-população: se 4 fragmentos adjacentes mantivessem conectividade funcional, a soma seria suficiente? Que condições da matriz são necessárias?"},
+      {n:"Jaime supervisionou uma estrada entre Casterly Rock e Lannisport. O Meister alertou que cortaria o último corredor florestal.",c:"Qual o efeito ecológico de uma estrada cortando um corredor? Diferencie impactos sobre: fauna terrestre grande, aves, insetos polinizadores."},
+      {n:"Core Area de Lannisport é apenas 28,7% — mais de 70% da área está sob efeito de borda. Espécies de interior ausentes.",c:"Explique por que a forma do fragmento afeta a Core Area. Compare fragmento circular vs. retangular de mesma área. Qual tem maior Core Area?"},
+      {n:"Tywin ordenou plantar árvores ao redor das minas exauridas por estética. O Meister sugeriu critérios ecológicos.",c:"Proponha critérios de restauração: onde plantar para maximizar (a) conectividade, (b) Core Area dos fragmentos maiores, (c) regulação hídrica?"},
+      {n:"Perda de regulação hídrica causa 50 dragões/ano de prejuízo. Mineração gera 200 dragões/ano, mas só por mais 15 anos.",c:"Calcule custo acumulado (30 anos) da perda vs. lucro mineral restante. Explique por que serviços de regulação são mais valiosos a longo prazo."},
+      {n:"CONNECT de Casterly Rock (38) e Lannisport (30) caiu nos últimos 50 anos com a expansão das minas.",c:"Descreva 'dívida de extinção': mesmo parando a fragmentação, extinções continuam por décadas. Por quê? Que relação entre velocidade da resposta biológica e tempo desde a perturbação?"}
+    ]},
+    tyrell:{name:"Casa Tyrell",motto:"Crescendo Forte",region:"The Reach",sigil:"SVG/Tyrell.svg",css:"house-tyrell",cards:[
+      {n:"Highgarden é o celeiro de Westeros — lavouras, pomares, vinhedos e pastagens com apenas 31,5% de floresta nativa.",c:"Highgarden tem SHDI=1,78 (alta diversidade) mas PLAND=31,5% (baixo). Explique esta combinação. Que uso do solo gera alta heterogeneidade com baixa cobertura florestal?"},
+      {n:"Lady Margaery contou os tipos de cultivo em Highgarden: trigo, cevada, vinhas, oliveiras, pomares, hortas, pastagens e remanescentes florestais.",c:"Se 8 classes com proporções iguais (12,5% cada), calcule SHDI = −Σ pᵢ·ln(pᵢ). O valor é compatível com 1,78?"},
+      {n:"Os jardineiros mantêm sebes vivas entre as parcelas. Sebes conectam os 48 fragmentos, permitindo passagem de aves e insetos.",c:"As sebes funcionam como corredores? Para quais grupos (aves, mamíferos, insetos, anfíbios) são eficazes? Relacione com largura e composição."},
+      {n:"Oldtown tem NP=52 fragmentos. 12 deles são menores que 50 ha — muito pequenos para cervos.",c:"Calcule a % de fragmentos < 50 ha. Se tamanho mínimo para cervos é 200 ha, quantos fragmentos sustentam uma população? O que acontece nos insuficientes?"},
+      {n:"O Meister comparou The Reach com The North: 'As Terras Altas produzem comida, mas perderam 70% dos serviços de regulação.' ED de Oldtown (70,2) é quase 4× Winterfell (18,5).",c:"A matriz agrícola vs. florestal: como o tipo de matriz (permeável vs. impermeável) afeta a conectividade funcional mesmo com distâncias similares?"},
+      {n:"Loras propôs um 'corredor verde' ao longo do Rio Mander. Fazendeiros se opõem — perderiam terras produtivas.",c:"Que área mínima de terra agrícola converter em corredor ripário para conectar Highgarden (CONNECT=22) a Oldtown (16)? Que ganhos compensam a perda?"},
+      {n:"Os jardins de Highgarden são famosos por flores e borboletas: 127 espécies de polinizadores registradas.",c:"A alta diversidade de polinizadores resulta do SHDI alto ou do PLAND florestal? Explique 'paisagem complementar' e como a diversidade de patches sustenta populações maiores."},
+      {n:"A produção agrícola oscila 300% entre verão e inverno. Fragmentos florestais funcionam como 'reservatórios' de biodiversidade no inverno.",c:"Explique o papel dos remanescentes como 'refúgios sazonais' para polinizadores agrícolas. Se fossem removidos, que impacto na produtividade?"},
+      {n:"Olenna sabia: a verdadeira riqueza é os serviços de provisão. SE=55 reflete boa provisão mas regulação comprometida.",c:"SE de Highgarden (55) > Lannisport (42) apesar de PLAND semelhantes. Que componente explica a diferença? Como agricultura diversificada contribui para serviços que mineração não gera?"},
+      {n:"O Grande Meister propôs classificar The Reach segundo Tricart: solos férteis, topografia suave, boa cobertura vegetal.",c:"Classifique segundo Tricart: estável, intergrade ou instável? A conversão de floresta para agricultura mudou a classe? Diferencie paisagens onde pedogênese domina naturalmente."}
+    ]},
+    martell:{name:"Casa Martell",motto:"Insubmissos, Não Curvados, Não Quebrados",region:"Dorne",sigil:"SVG/Martell.svg",css:"house-martell",cards:[
+      {n:"Dorne é a região mais árida. Sunspear tem PLAND 18,6% — xerófitas adaptadas ao calor. A paisagem é dominada por areia e rocha.",c:"Sunspear tem o menor PLAND (18,6%). Em ambientes áridos, qual categoria de serviço ecossistêmico sofre a perda mais crítica? Justifique com a escassez hídrica."},
+      {n:"Os guerreiros de Dorne conhecem cada oásis do deserto. São fragmentos vitais ao redor de fontes de água, cada vez mais isolados.",c:"Oásis como manchas em matriz desértica: a permeabilidade da areia para espécies vegetais é quase nula. Que tipo de conectividade (stepping stone, corredor ripário) viabilizaria o fluxo gênico?"},
+      {n:"A matriz desértica é habitat preferido de lagartos endêmicos. Para eles, fragmentos florestais são barreiras, não refúgios.",c:"Compare a conectividade funcional do deserto para: lagartos ectotérmicos, aves florestais, escorpiões. Para qual espécie a conectividade do deserto é MAIOR?"},
+      {n:"Oberyn tentou drenar o Rio Greenblood para irrigar novas terras. O Meister alertou: os 35 fragmentos dependem dos lençóis freáticos desse rio.",c:"Explique como alteração hidrológica pode destruir fragmentos em regiões áridas sem desmatamento direto. Que impacto landscape-level?"},
+      {n:"Sandstone tem PLAND=24,2%, na faixa empírica de 20-30%. Os Meisers debatem se está acima ou abaixo do ponto de inflexão.",c:"O limiar de fragmentação é um número fixo universal ou depende do contexto (bioma, espécie focal, configuração)? Que evidência os dados de Dorne oferecem?"},
+      {n:"Rotas de caravanas seguem vales entre dunas, onde a vegetação é mais densa. Coincidem com corredores de deslocamento de raposas-do-deserto.",c:"Vales entre dunas funcionam como corredores ecológicos naturais? Diferencie corredor planejado de natural (geomorfológico). Que papel a topografia exerce?"},
+      {n:"SE de Sunspear é 32/100 — baixo mas não o menor. Surpreendentemente, Dorne mantém altos valores de serviços culturais: turismo, patrimônio, valor espiritual.",c:"Serviços culturais compensam a perda de regulação em ambientes áridos? Turistas geram renda mas degradam os fragmentos? Que conceito de capacidade de carga se aplica?"},
+      {n:"Doran encomendou estudo climático: aquecimento de 2°C expandiria a zona árida para norte. PLAND de Sunspear cairia para < 10%.",c:"Projete o impacto da expansão árida: que métricas serão mais afetadas (NP, AREA_MN, CONNECT, SE)? A paisagem já está abaixo do limiar — há mais a perder? Resiliência vs. resistência."},
+      {n:"Herboristas cultivam plantas medicinais exclusivas nos oásis. Core Area dos oásis (12,4%) — quase toda a vegetação sob efeito de borda.",c:"Em ambientes áridos, o efeito de borda é diferente: dessecação, temperatura do solo, salinidade em vez de vento e luz. Como esses fatores reduzem a Core Area funcional?"},
+      {n:"Ellaria Sand propôs um parque nacional no deserto, protegendo os oásis restantes e permitindo regeneração natural.",c:"Em paisagens com PLAND<20%, a proteção passiva é suficiente ou é necessária restauração ativa? Que critérios definiriam a localização ideal do parque?"}
+    ]},
+    arryn:{name:"Casa Arryn",motto:"Tão Alto quanto a Honra",region:"The Vale",sigil:"SVG/Arryn.svg",css:"house-arryn",cards:[
+      {n:"The Eyrie se ergue nos Montes da Lua. PLAND=61,5%, 18 fragmentos grandes com AREA_MN=3.417 ha. As montanhas protegem a floresta.",c:"The Eyrie tem CONNECT=72 apesar de PLAND=61,5%. Explique como o relevo montanhoso pode AUMENTAR a conectividade interna."},
+      {n:"Os falcões nidificam nos penhascos acima de 2.000 m e caçam nos vales florestados. A paisagem é tridimensional.",c:"As métricas PLAND, NP e AREA_MN são 2D. Em paisagens montanhosas, a área real pode ser 20-40% maior. Como isso afeta a interpretação?"},
+      {n:"Gulltown no litoral: PLAND=38,7%, NP=42, muito mais fragmentada que o interior. Comércio portuário converteu florestas.",c:"Compare The Eyrie (NP=18, CONNECT=72) com Gulltown (NP=42, CONNECT=34). Que processos de uso do solo explicam a diferença?"},
+      {n:"O Meister calculou que se fragmentos de Gulltown fossem circulares com AREA_MN=921 ha e borda=100m, Core Area seria ~88%. Valor real: 32,4%.",c:"A diferença entre Core Area teórica (88%) e real (32,4%) se deve à forma irregular. Calcule o índice de forma (SI = P/√(4πA)). O que SI nos diz?"},
+      {n:"Lysa isolou o Vale. As montanhas formam barreira quase perfeita — sem fluxo gênico externo.",c:"O isolamento geográfico é positivo (proteção contra invasoras, endemismo) ou negativo (baixo fluxo gênico, vulnerabilidade genética)? Argumente ambos."},
+      {n:"Um Meister estudou o gradiente altitudinal: carvalho nos vales (200 m), coníferas nas encostas (800 m), vegetação alpina nos picos (2.000+ m).",c:"O gradiente altitudinal cria zonas distintas. Se SHDI incluísse TODAS as faixas, seria maior ou menor que o reportado? Como a escala afeta o SHDI?"},
+      {n:"Filhotes de falcão que caem dos ninhos precisam alcançar a floresta por rocha exposta. 80% não sobrevivem à travessia.",c:"A rocha é matriz impermeável para filhotes mas permeável para insetos e líquens. A permeabilidade é atributo da espécie ou da paisagem?"},
+      {n:"ED de The Eyrie é baixa (28,4 m/ha) — fragmentos grandes e compactos nos vales. Extensas áreas de interior florestal.",c:"Em paisagens montanhosas, a orientação da encosta cria microclimas diferentes dentro de um fragmento — 'bordas internas'. Como isso complica a medição de Core Area?"},
+      {n:"Petyr Baelish planejava uma estrada cortando 3 dos 18 fragmentos ao meio, transformando NP de 18 em possivelmente 24.",c:"Se NP muda de 18 para 24 mas PLAND quase não muda, explique por que NP pode ser enganoso quando analisado sem AREA_MN e CONNECT."},
+      {n:"SE do Vale é alto (The Eyrie=76, Gulltown=48). Vales produzem água limpa, regulam enchentes — efeito cascata.",c:"Explique 'serviços ecossistêmicos em cascata': como conservação das florestas montanas beneficia Gulltown (abaixo) em regulação de enchentes, qualidade da água, erosão."}
+    ]},
+    tully:{name:"Casa Tully",motto:"Família, Dever, Honra",region:"The Riverlands",sigil:"SVG/Tully.svg",css:"house-tully",cards:[
+      {n:"The Riverlands é cortada por três rios maiores. Paisagem mais fragmentada do interior: Riverrun PLAND=28,4%, Harrenhal 22,1%.",c:"Riverrun está na faixa limiar (28,4%). Usando o conceito de limiar empírico (20-30%), avalie: acima, abaixo ou no ponto de inflexão?"},
+      {n:"Os rios formam corredores para peixes migratórios. Mas NP=56 em Riverrun — matas ripárias extremamente fragmentadas.",c:"Se apenas 40% dos 56 fragmentos estão em zona ripária, quantos corredores ripários efetivos existem? Que largura mínima precisa ter?"},
+      {n:"Harrenhal: ED=75,4 m/ha (a maior do jogo) e Core Area=15,8% (a menor continental). As guerras não pouparam nada.",c:"Reconstrua a cadeia causal: guerras → desmatamento → ↑NP → ↑ED → ↓Core Area → perda de espécies de interior. Cada elo é necessário?"},
+      {n:"Edmure pescava trutas quando criança. Hoje, capturas caíram 70%. Perda de mata ripária aumentou a temperatura da água em 4°C.",c:"Como a perda florestal em bacias afeta a água: temperatura, sedimentação, nutrientes? Qual métrica (PLAND, ED, CONNECT) melhor prediz qualidade da água?"},
+      {n:"Fazendeiros usam planícies de inundação para agricultura. Quando rios enchem, safras são destruídas.",c:"Relacione perda de PLAND (28% → redução de infiltração) com aumento de enchentes. Que serviço de regulação foi perdido? Como restaurar a função 'esponja'?"},
+      {n:"SHDI de Harrenhal é 1,92 — o segundo mais alto. Paradoxalmente, paisagem degradada: ruínas, campos, matos, fragmentos, estradas.",c:"SHDI alto por fragmentação, não por riqueza ecológica. Compare com Winterfell (SHDI=0,68, saudável mas homogênea). Quando SHDI alto é sinal de degradação?"},
+      {n:"CONNECT de Riverrun (18) e Harrenhal (12) entre as mais baixas. Barragens bloqueiam 8 dos 12 rios principais.",c:"Diferencie barreiras antrópicas (barragens) de naturais (cachoeiras). Barreiras antrópicas são removíveis — como a remoção de uma barragem restaura conectividade em cascata?"},
+      {n:"SE de Harrenhal é apenas 28/100 — o menor do continente. Poucos aldeões vivem de subsistência sem serviços florestais.",c:"Classifique quais serviços foram perdidos em Harrenhal (PLAND=22%, guerra + abandono). É possível restaurar serviços culturais sem restaurar regulação?"},
+      {n:"Lady Catelyn consultou um Meister: estratégia A (grandes manchas, custo alto) vs. B (stepping stones, custo menor).",c:"Compare A (manchas grandes) vs. B (stepping stones). Para maximizar Core Area ou conectividade? Justifique com as métricas de Riverrun."},
+      {n:"A paisagem muda entre estações: na cheia, fragmentos ficam ilhados; na seca, a matriz endurece e reduz permeabilidade.",c:"Variação sazonal afeta PLAND, NP, CONNECT. Medir na fase mais favorável, mais desfavorável ou na média? Justifique."}
+    ]},
+    baratheon:{name:"Casa Baratheon",motto:"A Nossa é a Fúria",region:"The Stormlands",sigil:"SVG/Baratheon.svg",css:"house-baratheon",cards:[
+      {n:"The Stormlands recebe as tempestades mais violentas. Ventos de 120 km/h, chuvas torrenciais. PLAND moderado: Storm's End=55,7%.",c:"Classifique segundo Tricart: estável, intergrade ou instável? Distúrbios naturais recorrentes tornam automaticamente o meio 'instável'?"},
+      {n:"Após grande tempestade: 200 árvores derrubadas, mas brotação em 2 semanas. Floresta 'acostumada' com tempestades.",c:"Diferencie resistência (não ser afetado) de resiliência (recuperar-se). Storm's End demonstra qual? Compare com Harrenhal (sem recuperação)."},
+      {n:"Robert caçava cervos nos bosques. Os 22 fragmentos (AREA_MN=2.532 ha) ainda são grandes para populações viáveis.",c:"Se cada fragmento sustenta ~15 cervos, qual população total? Usando a regra 50/500 (população mínima viável), essa meta-população está segura?"},
+      {n:"Shipbreaker Bay: fragmentos costeiros sofrem borda marinha até 200 m (salinidade, vento, spray).",c:"Se borda marinha=200m (não 100m padrão), recalcule Core Area para AREA_MN=1.725 ha (forma circular). Compare com o real (40,8%)."},
+      {n:"CONNECT de Shipbreaker Bay (44) vs. The Eyrie (72). Ambas preservadas mas conectividade muito diferente.",c:"A matriz de Stormlands (áreas abertas + tempestades) vs. Vale (rocha + pasto). Para mamíferos médios, qual é mais permeável? Que atributos da matriz determinam permeabilidade?"},
+      {n:"Stannis queimou florestas em Dragonstone. Dragonstone (NP=8, AREA_MN=7.100) tem poucos fragmentos mas muito grandes.",c:"Compare estratégias para: (a) Dragonstone — poucos grandes, alta conectividade; (b) Storm's End — muitos médios. Qual é mais resiliente?"},
+      {n:"SE de Storm's End (65/100) moderado-alto: regulação boa, mas provisão limitada pelo clima tempestuoso.",c:"Distúrbio natural (tempestades) reduz provisão mas mantém regulação e suporte. Compare com distúrbio antrópico (mineração) que destrói ambos."},
+      {n:"Relâmpagos causam incêndios: 3% da cobertura queima anualmente, mas regenera em 5-10 anos. Mosaico de estágios sucessionais.",c:"Fogo natural cria mosaico de manchas em diferentes estágios. Como isso AUMENTA SHDI e pode beneficiar biodiversidade? Quando fogo deixa de ser 'natural'?"},
+      {n:"Pescadores relatam que espécies marinhas que desovam em rios dependem da mata ciliar costeira (NP=28) para larvas.",c:"Interface terra-mar é uma ecotone. Como a fragmentação costeira afeta? A ED alta (44,3) em Shipbreaker Bay é boa ou ruim para espécies de transição?"},
+      {n:"Renly sonhava em transformar The Stormlands no 'jardim de Westeros'. O Meister adverte: estabilizar uma paisagem naturalmente dinâmica pode ser danoso.",c:"'Naturalidade do distúrbio': tentar suprimir tempestades/incêndios pode ser prejudicial? Compare com 'deixar a natureza agir'. Quando intervenção é necessária vs. contraproducente?"}
+    ]}
+  };
+
+  function ncCorners(){return['tl','tr','bl','br'].map(p=>`<div class="nc-corner nc-corner-${p}"><svg><use href="#corner-orn"/></svg></div>`).join('');}
+  function renderHouseCover(h){return`<div class="house-cover ${h.css}"><div class="hc-border"></div><div class="hc-border-inner"></div><div class="hc-emblem"><img src="${h.sigil}" alt="${h.name}"></div><div class="hc-name">${h.name}</div><div class="hc-motto">"${h.motto}"</div><div class="hc-region">${h.region}</div><div class="hc-count">10 CARTAS NARRATIVAS — RISK OF LANDSCAPES</div></div>`;}
+  function renderNarrCard(h,card,idx){return`<div class="narr-card ${h.css}">${ncCorners()}<div class="nc-header"><div class="nc-game">Risk of Landscapes</div><div class="nc-house">${h.name}</div><div class="nc-num">Carta ${String(idx+1).padStart(2,'0')} de 10</div></div><div class="nc-sigil"><img src="${h.sigil}" alt=""></div><div class="nc-narrative"><div class="nc-narr-title">📜 Narrativa</div><div class="nc-narr-text">${card.n}</div></div><div class="nc-challenge"><div class="nc-chal-title">⚔ Desafio da Paisagem ⚔</div><div class="nc-chal-text">${card.c}</div></div><div class="nc-footer"><div class="nc-footer-text">Valar Morghulis — Todas as paisagens mudam</div></div></div>`;}
+
+  let narrHtml = buildSection('CARTAS NARRATIVAS','8 CASAS × 10 CARTAS = 80 NARRATIVAS');
+  Object.values(housesData).forEach(h => {
+    const allCards = [renderHouseCover(h)];
+    h.cards.forEach((c,i) => allCards.push(renderNarrCard(h,c,i)));
+    const pages = groupIntoPages(allCards, 3);
+    pages.forEach(page => { narrHtml += wrapPage(page.join('')); });
+  });
+  document.getElementById('narrative-section').innerHTML = narrHtml;
+
+  // --- Toggle controls ---
+  const toggles = [
+    { id: 'chk-cover', section: 'cover-section' },
+    { id: 'chk-tf', section: 'territory-fronts-section' },
+    { id: 'chk-tb', section: 'territory-backs-section' },
+    { id: 'chk-mf', section: 'mission-fronts-section' },
+    { id: 'chk-mb', section: 'mission-backs-section' },
+    { id: 'chk-ref', section: 'reference-section' },
+    { id: 'chk-map', section: 'map-section' },
+    { id: 'chk-narr', section: 'narrative-section' }
+  ];
+  toggles.forEach(t => {
+    const chk = document.getElementById(t.id);
+    const sec = document.getElementById(t.section);
+    chk.addEventListener('change', () => {
+      sec.classList.toggle('hidden', !chk.checked);
+    });
+  });
+});
+</script>
+
+</body>
+</html>

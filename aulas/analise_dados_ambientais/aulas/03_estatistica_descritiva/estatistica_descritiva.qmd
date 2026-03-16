@@ -44,7 +44,7 @@ execute:
 :::
 
 
-# [1 — ESTATÍSTICA DESCRITIVA]{.section-header}
+# [1. ESTATÍSTICA DESCRITIVA]{.section-header}
 
 ## O que é Estatística Descritiva? {.smaller-text}
 
@@ -80,7 +80,7 @@ Diferencia-se da **estatística inferencial**, que busca obter afirmações sobr
 :::
 
 
-# [2 — TENDÊNCIA CENTRAL]{.section-header}
+# [2. TENDÊNCIA CENTRAL]{.section-header}
 
 ## Medidas de Tendência Central {.smaller-text}
 
@@ -124,10 +124,6 @@ Investigar os níveis de **crescimento radicular** frente ao uso de fungos micor
 
 . . .
 
-$$\bar{X} = \frac{\sum_{i=1}^{N} x_i}{N} = \frac{2148}{17} = 126{,}35$$
-
-. . .
-
 ::: {.columns}
 :::: {.column width="55%"}
 
@@ -140,11 +136,9 @@ $$\bar{X} = \frac{\sum_{i=1}^{N} x_i}{N} = \frac{2148}{17} = 126{,}35$$
 :::: {.column width="45%"}
 
 ::: {.highlight-box}
-$\sum = 2148$
+$$\bar{X} = \frac{\sum_{i=1}^{N} x_i}{N} = \frac{2148}{17} = 126{,}35$$
 
-$N = 17$
-
-$\bar{X} = 126{,}35$
+$\sum = 2148$ &nbsp;·&nbsp; $N = 17$ &nbsp;·&nbsp; $\bar{X} = 126{,}35$
 :::
 
 ::::
@@ -209,7 +203,7 @@ Posição: $\frac{N+1}{2} = \frac{18}{2} = 9°$ valor
 :::
 
 
-## Sumário — Tendência Central {.smaller-text}
+## Resumo de Tendência Central {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="50%"}
@@ -239,7 +233,7 @@ As três medidas estão **próximas**, sugerindo uma distribuição relativament
 :::
 
 
-# [3 — MEDIDAS DE DISPERSÃO]{.section-header}
+# [3. MEDIDAS DE DISPERSÃO]{.section-header}
 
 ## Por que medir a dispersão? {.smaller-text}
 
@@ -264,9 +258,9 @@ As medidas de dispersão auxiliam na interpretação sobre o quanto os casos sã
 :::
 
 
-# [4 — VARIÂNCIA E DESVIO-PADRÃO]{.section-header}
+# [4. VARIÂNCIA E DESVIO-PADRÃO]{.section-header}
 
-## Variância — Conceito {.smaller-text}
+## Conceito de Variância {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="50%"}
@@ -300,7 +294,7 @@ A **variância** mede o quanto cada escore se afasta da média, ao quadrado, div
 :::
 
 
-## Variância — Cálculo com os dados {.smaller-text}
+## Cálculo da Variância {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="55%"}
@@ -335,7 +329,7 @@ A **variância** mede o quanto cada escore se afasta da média, ao quadrado, div
 :::
 
 
-## Variância e Desvio-Padrão — Resultado {.smaller-text}
+## Resultado: Variância e Desvio-Padrão {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="50%"}
@@ -363,7 +357,7 @@ Em média, cada escore se afasta **19,02 cm** da média de 126,35 cm.
 ![](fig_dispersao_desvios.png){fig-align="center" width="70%"}
 
 
-# [5 — ERRO-PADRÃO]{.section-header}
+# [5. ERRO-PADRÃO]{.section-header}
 
 ## Erro-Padrão da Média {.smaller-text}
 
@@ -404,9 +398,9 @@ Quanto **maior** o N, **menor** o EP → a estimativa da média é mais **precis
 :::
 
 
-# [6 — ESCORE Z]{.section-header}
+# [6. ESCORE Z]{.section-header}
 
-## Escore Z — Conceito {.smaller-text}
+## O que é o Escore Z? {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="50%"}
@@ -446,7 +440,7 @@ A repetição está **1 DP acima** da média.
 :::
 
 
-## Escore Z — Exemplos Práticos {.smaller-text}
+## Escore Z na Prática {.smaller-text}
 
 ::: {.info-box}
 Considere $\bar{X} = 20$ e $DP = 2$:
@@ -514,9 +508,9 @@ Quando a distribuição **não é normal**, essa estimativa de % não é precisa
 :::
 
 
-# [7 — INTERVALO DE CONFIANÇA]{.section-header}
+# [7. INTERVALO DE CONFIANÇA]{.section-header}
 
-## Intervalo de Confiança — Conceito {.smaller-text}
+## O que é o Intervalo de Confiança? {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="55%"}
@@ -552,7 +546,7 @@ Pode ser calculado em diferentes probabilidades usando o **escore Z**:
 :::
 
 
-## Intervalo de Confiança — Cálculo {.smaller-text}
+## Cálculo do IC {.smaller-text}
 
 ::: {.info-box}
 $\bar{X} = 126{,}35$; $EP = 4{,}61$
@@ -615,7 +609,7 @@ LS = $126{,}35 + 2{,}575 \times 4{,}61$
 :::
 
 
-## Intervalo de Confiança — Visualização {.smaller-text}
+## Visualização do IC {.smaller-text}
 
 ![](fig_intervalo_confianca.png){fig-align="center" width="75%"}
 
