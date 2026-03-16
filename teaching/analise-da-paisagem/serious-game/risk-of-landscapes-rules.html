@@ -747,21 +747,33 @@ footer p{margin-bottom:8px;}
 
     <h3>Preparação</h3>
 
+    <div class="info-box" style="margin-bottom:20px;">
+      <strong>📌 Regra fundamental:</strong> Cada casa possui <strong>6 tokens</strong>. As <strong>cartas de território</strong> determinam a posse; os <strong>tokens no mapa</strong> representam força militar (concentração de exércitos).
+    </div>
+
     <ol>
       <li><strong>Escolher casa:</strong> cada jogador escolhe uma das 8 casas de Westeros. O baralho de narrativas correspondente (10 cartas) é separado e embaralhado.</li>
-      <li><strong>Distribuir territórios:</strong> embaralhe as 20 cartas de território e distribua igualmente. Cada jogador coloca 1 exército em cada território recebido.</li>
-      <li><strong>Exércitos iniciais:</strong> cada jogador recebe exércitos extras (tabela abaixo) e os posiciona como desejar.</li>
+      <li><strong>Distribuir territórios:</strong> embaralhe as 20 cartas de território e distribua igualmente (veja tabela). Territórios restantes ficam <strong>neutros</strong> (sem dono e sem tokens).</li>
+      <li><strong>Posicionar tokens:</strong> cada jogador distribui seus <strong>6 tokens</strong> livremente entre os territórios que recebeu. Pode concentrar todos em um só ou espalhar — a estratégia é livre.</li>
       <li><strong>Missão secreta:</strong> cada jogador recebe 1 carta de missão que define seu objetivo de vitória.</li>
     </ol>
 
     <table>
-      <tr><th style="text-align:center">Jogadores</th><th style="text-align:center">Exércitos iniciais</th></tr>
-      <tr><td style="text-align:center">2</td><td style="text-align:center">40</td></tr>
-      <tr><td style="text-align:center">3</td><td style="text-align:center">35</td></tr>
-      <tr><td style="text-align:center">4</td><td style="text-align:center">30</td></tr>
-      <tr><td style="text-align:center">5</td><td style="text-align:center">25</td></tr>
-      <tr><td style="text-align:center">6</td><td style="text-align:center">20</td></tr>
+      <tr><th style="text-align:center">Jogadores</th><th style="text-align:center">Territórios por jogador</th><th style="text-align:center">Territórios neutros</th><th style="text-align:center">Tokens (por jogador)</th></tr>
+      <tr><td style="text-align:center">2</td><td style="text-align:center">10</td><td style="text-align:center">0</td><td style="text-align:center">6</td></tr>
+      <tr><td style="text-align:center">3</td><td style="text-align:center">6</td><td style="text-align:center">2</td><td style="text-align:center">6</td></tr>
+      <tr><td style="text-align:center">4</td><td style="text-align:center">5</td><td style="text-align:center">0</td><td style="text-align:center">6</td></tr>
+      <tr><td style="text-align:center">5</td><td style="text-align:center">4</td><td style="text-align:center">0</td><td style="text-align:center">6</td></tr>
+      <tr><td style="text-align:center">6</td><td style="text-align:center">3</td><td style="text-align:center">2</td><td style="text-align:center">6</td></tr>
     </table>
+
+    <div class="info-box" style="margin-top:16px;">
+      <strong>🏴 Territórios neutros:</strong> não pertencem a ninguém no início. Podem ser conquistados sem combate (basta mover 1 token para lá), mas o jogador <strong>deve responder ao Desafio da Paisagem</strong> do território.
+    </div>
+
+    <div class="info-box">
+      <strong>🗺️ Posse sem token:</strong> um território <strong>sem nenhum token</strong> continua pertencendo ao dono da carta, mas está <strong>desguarnecido</strong> — qualquer adversário adjacente pode invadi-lo sem lançar dados (ocupação automática). O novo dono fica com a carta.
+    </div>
 
     <div class="divider">⚔ ⚔ ⚔</div>
 
@@ -774,26 +786,30 @@ footer p{margin-bottom:8px;}
         <div class="phase-title">Reforços</div>
         <span class="phase-emoji">🌲</span>
       </div>
-      <p>O jogador recebe exércitos extras:</p>
+      <p>No início de cada turno, o jogador pode <strong>reposicionar tokens</strong> e/ou <strong>recuperar tokens perdidos</strong>:</p>
       <table>
-        <tr><th>Fonte</th><th>Cálculo</th></tr>
-        <tr><td>Territórios controlados</td><td>Nº de territórios ÷ 3 (mínimo 3)</td></tr>
-        <tr><td>Bônus de macro-região</td><td>Controlar todos os territórios de uma macro-região</td></tr>
-        <tr><td>Tokens de Restauração</td><td>A cada 3 tokens → 2 exércitos extras</td></tr>
+        <tr><th>Fonte</th><th>Ganho</th></tr>
+        <tr><td>Turno regular</td><td>Recupera <strong>1 token</strong> (coloca em qualquer território seu)</td></tr>
+        <tr><td>Bônus de macro-região</td><td>Controlar todos os territórios de uma macro-região → ganha <strong>+1 token</strong> extra</td></tr>
+        <tr><td>Tokens de Restauração</td><td>A cada <strong>3 Tokens de Restauração</strong> trocados → recupera <strong>1 token</strong></td></tr>
       </table>
 
-      <p style="margin-top:16px"><strong>Bônus por macro-região completa:</strong></p>
+      <div class="info-box" style="margin-top:12px;">
+        <strong>⚠️ Limite máximo:</strong> um jogador nunca pode ter mais de <strong>6 tokens</strong> no mapa simultaneamente. Se já estiver no limite, o ganho é ignorado.
+      </div>
+
+      <p style="margin-top:16px"><strong>Bônus por macro-região completa (+1 token extra no turno):</strong></p>
       <table>
         <tr><th>Macro-região</th><th style="text-align:center">Bônus</th><th>Justificativa ecológica</th></tr>
-        <tr><td>The North (4 terr.)</td><td style="text-align:center">7</td><td>Maior macro-região; florestas contínuas geram alta resiliência</td></tr>
-        <tr><td>The Reach</td><td style="text-align:center">5</td><td>Celeiro produtivo: provisão alimenta exércitos</td></tr>
-        <tr><td>The Riverlands</td><td style="text-align:center">4</td><td>Fácil de invadir, difícil de manter</td></tr>
-        <tr><td>The Westerlands</td><td style="text-align:center">4</td><td>Recursos minerais compensam a degradação</td></tr>
-        <tr><td>The Crownlands</td><td style="text-align:center">4</td><td>Capital política: poder centralizado</td></tr>
-        <tr><td>The Vale</td><td style="text-align:center">3</td><td>Isolamento montano limita reforços</td></tr>
-        <tr><td>The Stormlands</td><td style="text-align:center">3</td><td>Tempestades limitam logística</td></tr>
-        <tr><td>Dorne</td><td style="text-align:center">2</td><td>Baixa capacidade de suporte</td></tr>
-        <tr><td>Iron Islands</td><td style="text-align:center">2</td><td>Poucos recursos paisagísticos</td></tr>
+        <tr><td>The North (4 terr.)</td><td style="text-align:center">+1 token + relançar 1 dado</td><td>Maior macro-região; florestas contínuas geram alta resiliência</td></tr>
+        <tr><td>The Reach</td><td style="text-align:center">+1 token</td><td>Celeiro produtivo: provisão alimenta exércitos</td></tr>
+        <tr><td>The Riverlands</td><td style="text-align:center">+1 token</td><td>Posição central: corredores fluviais conectam</td></tr>
+        <tr><td>The Westerlands</td><td style="text-align:center">+1 token</td><td>Recursos minerais compensam a degradação</td></tr>
+        <tr><td>The Crownlands</td><td style="text-align:center">+1 token</td><td>Capital política: poder centralizado</td></tr>
+        <tr><td>The Vale</td><td style="text-align:center">+1 token</td><td>Isolamento montano limita reforços</td></tr>
+        <tr><td>The Stormlands</td><td style="text-align:center">+1 token</td><td>Tempestades limitam logística</td></tr>
+        <tr><td>Dorne</td><td style="text-align:center">+1 token</td><td>Baixa capacidade de suporte</td></tr>
+        <tr><td>Iron Islands</td><td style="text-align:center">+1 token</td><td>Poucos recursos paisagísticos</td></tr>
       </table>
     </div>
 
@@ -804,15 +820,20 @@ footer p{margin-bottom:8px;}
         <div class="phase-title">Ataque</div>
         <span class="phase-emoji">⚔️</span>
       </div>
-      <p>O jogador pode atacar territórios adjacentes (conectados no mapa). Combate segue as regras clássicas do RISK:</p>
+      <p>O jogador pode atacar territórios adjacentes (conectados no mapa):</p>
       <ul>
-        <li><strong>Atacante:</strong> lança até 3 dados (precisa ter ≥ 1 exército a mais que o nº de dados)</li>
-        <li><strong>Defensor:</strong> lança até 2 dados</li>
+        <li><strong>Atacante:</strong> lança dados igual ao número de tokens no território atacante (máximo 3 dados). Deve deixar pelo menos 1 token no território de origem.</li>
+        <li><strong>Defensor:</strong> lança dados igual ao número de tokens no território defendido (máximo 2 dados). Mínimo 1 dado.</li>
         <li><strong>Comparação:</strong> dados ordenados do maior ao menor, comparados par a par. Empate favorece o defensor.</li>
+        <li><strong>Perdedor</strong> de cada par <strong>remove 1 token</strong> do território.</li>
+        <li><strong>Território desguarnecido</strong> (0 tokens) é <strong>conquistado automaticamente</strong>: o atacante move pelo menos 1 token para lá e pega a carta de território do adversário.</li>
       </ul>
       <div class="info-box" style="margin-top:16px;">
         <strong>⚡ Regra Especial (Vantagem de Conectividade):</strong><br>
         Se o território atacante tem <strong>CONNECT ≥ 60</strong>, o atacante pode <strong>relançar 1 dado</strong> por tentativa (paisagens bem conectadas = melhor logística).
+      </div>
+      <div class="info-box">
+        <strong>🏴 Conquistar território neutro:</strong> basta mover 1 token para lá (sem combate), mas deve responder ao Desafio da Paisagem.
       </div>
     </div>
 
@@ -835,8 +856,8 @@ footer p{margin-bottom:8px;}
       <table style="margin-top:16px;">
         <tr><th>Resultado</th><th>Consequência</th></tr>
         <tr><td><strong>Acerto completo</strong></td><td>Ganha <strong>2 Tokens de Restauração</strong> + ocupa o território</td></tr>
-        <tr><td><strong>Acerto parcial</strong></td><td>Ganha <strong>1 Token</strong> + ocupa o território</td></tr>
-        <tr><td><strong>Erro</strong></td><td>Ocupa o território, mas <strong>perde 1 exército</strong> (degradação ecológica)</td></tr>
+        <tr><td><strong>Acerto parcial</strong></td><td>Ganha <strong>1 Token de Restauração</strong> + ocupa o território</td></tr>
+        <tr><td><strong>Erro</strong></td><td>Ocupa o território, mas <strong>remove 1 token do mapa</strong> (degradação ecológica)</td></tr>
       </table>
     </div>
 
@@ -851,8 +872,8 @@ footer p{margin-bottom:8px;}
       <table>
         <tr><th>Resultado</th><th>Consequência</th></tr>
         <tr><td><strong>Acerto completo</strong></td><td>Ganha <strong>3 Tokens de Restauração</strong></td></tr>
-        <tr><td><strong>Acerto parcial</strong></td><td>Ganha <strong>1 Token</strong></td></tr>
-        <tr><td><strong>Erro</strong></td><td>Perde <strong>1 exército</strong> de um território à sua escolha</td></tr>
+        <tr><td><strong>Acerto parcial</strong></td><td>Ganha <strong>1 Token de Restauração</strong></td></tr>
+        <tr><td><strong>Erro</strong></td><td><strong>Remove 1 token</strong> de um território à sua escolha</td></tr>
       </table>
       <div class="info-box" style="margin-top:16px;">
         As cartas narrativas são <strong>progressivas</strong>: os desafios vão de conceitos básicos a aplicações avançadas. Se acabarem as 10 cartas, re-embaralhe.
@@ -866,9 +887,9 @@ footer p{margin-bottom:8px;}
         <div class="phase-title">Manobra (Fortificação)</div>
         <span class="phase-emoji">🏰</span>
       </div>
-      <p>O jogador pode mover exércitos entre dois territórios <strong>seus</strong> que estejam conectados por uma cadeia contínua de territórios próprios.</p>
+      <p>O jogador pode mover <strong>tokens</strong> entre dois territórios <strong>seus</strong> que estejam conectados por uma cadeia contínua de territórios próprios. Pode mover quantos tokens quiser, desde que deixe ao menos 0 no território de origem.</p>
       <div class="info-box">
-        Simula a <strong>conectividade funcional</strong>: o fluxo só ocorre onde há continuidade. Sem cadeia contínua de territórios, não há como mover tropas.
+        Simula a <strong>conectividade funcional</strong>: o fluxo só ocorre onde há continuidade. Sem cadeia contínua de territórios, não há como mover tokens. Lembre: território com 0 tokens fica <strong>desguarnecido</strong> e pode ser invadido sem dados.
       </div>
     </div>
   </div>

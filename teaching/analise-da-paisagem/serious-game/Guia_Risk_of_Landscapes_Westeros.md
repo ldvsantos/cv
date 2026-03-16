@@ -87,18 +87,24 @@ Os alunos devem perceber as seguintes relações ecológicas nos dados:
 
 ### 5.1 Preparação
 
+> **Regra fundamental:** Cada casa possui **6 tokens**. As **cartas de território** determinam a posse; os **tokens no mapa** representam força militar (concentração de exércitos).
+
 1. **Escolher casa**: cada jogador escolhe uma das 8 casas de Westeros. O baralho de narrativas correspondente (10 cartas) é separado e embaralhado face para baixo.
-2. **Distribuir territórios**: embaralhe as 20 cartas de território e distribua igualmente entre os jogadores. Cada jogador coloca 1 exército em cada território recebido.
-3. **Exércitos iniciais**: cada jogador recebe exércitos extras conforme o número de jogadores (veja tabela abaixo) e os posiciona nos seus territórios como desejar.
+2. **Distribuir territórios**: embaralhe as 20 cartas de território e distribua igualmente (veja tabela). Territórios restantes ficam **neutros** (sem dono e sem tokens).
+3. **Posicionar tokens**: cada jogador distribui seus **6 tokens** livremente entre os territórios que recebeu. Pode concentrar todos em um só ou espalhar — a estratégia é livre.
 4. **Missão secreta**: cada jogador recebe 1 carta de missão que define seu objetivo de vitória.
 
-| Jogadores | Exércitos iniciais |
-|:---:|:---:|
-| 2 | 40 |
-| 3 | 35 |
-| 4 | 30 |
-| 5 | 25 |
-| 6 | 20 |
+| Jogadores | Territórios/jogador | Territórios neutros | Tokens (por jogador) |
+|:---:|:---:|:---:|:---:|
+| 2 | 10 | 0 | 6 |
+| 3 | 6 | 2 | 6 |
+| 4 | 5 | 0 | 6 |
+| 5 | 4 | 0 | 6 |
+| 6 | 3 | 2 | 6 |
+
+**Territórios neutros:** não pertencem a ninguém. Podem ser conquistados sem combate (basta mover 1 token), mas o jogador deve responder ao Desafio da Paisagem.
+
+**Posse sem token:** um território sem nenhum token continua pertencendo ao dono da carta, mas está **desguarnecido** — qualquer adversário adjacente pode invadi-lo sem lançar dados (ocupação automática). O novo dono fica com a carta.
 
 ### 5.2 Turno de Jogo
 
@@ -106,35 +112,41 @@ Cada turno possui **5 fases**, nesta ordem:
 
 #### Fase 1 — Reforços 🌲
 
-O jogador recebe exércitos extras com base em:
+No início de cada turno, o jogador pode **reposicionar tokens** e/ou **recuperar tokens perdidos**:
 
-| Fonte | Cálculo |
+| Fonte | Ganho |
 |:---|:---|
-| Territórios controlados | Nº de territórios ÷ 3 (arredonda para baixo, mínimo 3) |
-| Bônus de macro-região | Controlar todos os territórios de uma macro-região (ver tabela abaixo) |
-| Tokens de Restauração | A cada 3 tokens acumulados, troca por 2 exércitos extras |
+| Turno regular | Recupera **1 token** (coloca em qualquer território seu) |
+| Bônus de macro-região | Controlar todos os territórios de uma macro-região → ganha **+1 token** extra |
+| Tokens de Restauração | A cada **3 Tokens de Restauração** trocados → recupera **1 token** |
 
-**Bônus por macro-região completa:**
+> **⚠️ Limite máximo:** um jogador nunca pode ter mais de **6 tokens** no mapa simultaneamente.
+
+**Bônus por macro-região completa (+1 token extra no turno):**
 
 | Macro-região | Bônus | Justificativa ecológica |
 |:---|:---:|:---|
-| The North (4 territórios) | 7 | Maior macro-região; florestas contínuas geram alta resiliência |
-| The Vale | 3 | Isolamento montano dificulta conquista, mas limita reforços |
-| The Riverlands | 4 | Paisagem fragmentada — fácil de invadir, difícil de manter |
-| The Westerlands | 4 | Recursos minerais compensam a degradação |
-| The Reach | 5 | Celeiro produtivo: serviços de provisão alimentam exércitos |
-| The Stormlands | 3 | Tempestades limitam logística |
-| Dorne | 2 | Paisagem árida com baixa capacidade de suporte |
-| The Crownlands | 4 | Capital política: poder centralizado |
-| Iron Islands | 2 | Ilhas com poucos recursos paisagísticos |
+| The North (4 territórios) | +1 token + relançar 1 dado | Maior macro-região; florestas contínuas geram alta resiliência |
+| The Vale | +1 token | Isolamento montano dificulta conquista, mas limita reforços |
+| The Riverlands | +1 token | Posição central: corredores fluviais conectam |
+| The Westerlands | +1 token | Recursos minerais compensam a degradação |
+| The Reach | +1 token | Celeiro produtivo: serviços de provisão alimentam exércitos |
+| The Stormlands | +1 token | Tempestades limitam logística |
+| Dorne | +1 token | Paisagem árida com baixa capacidade de suporte |
+| The Crownlands | +1 token | Capital política: poder centralizado |
+| Iron Islands | +1 token | Ilhas com poucos recursos paisagísticos |
 
 #### Fase 2 — Ataque ⚔️
 
 O jogador pode atacar territórios adjacentes (conectados no mapa). O combate segue as regras clássicas do RISK (dados):
 
-- **Atacante**: lança até 3 dados (precisa ter pelo menos 1 exército a mais do que o número de dados)
-- **Defensor**: lança até 2 dados
+- **Atacante**: lança dados igual ao número de tokens no território atacante (máximo 3 dados). Deve deixar pelo menos 1 token no território de origem.
+- **Defensor**: lança dados igual ao número de tokens no território defendido (máximo 2 dados). Mínimo 1 dado.
 - **Comparação**: dados ordenados do maior para o menor, comparados par a par. Empate favorece o defensor.
+- **Perdedor** de cada par **remove 1 token** do território.
+- **Território desguarnecido** (0 tokens) é **conquistado automaticamente**: o atacante move pelo menos 1 token para lá e pega a carta de território do adversário.
+
+**Conquistar território neutro:** basta mover 1 token para lá (sem combate), mas deve responder ao Desafio da Paisagem.
 
 **REGRA ESPECIAL — Vantagem de conectividade:**
 Se o território atacante tem **CONNECT ≥ 60**, o atacante pode relançar **1 dado** por tentativa de ataque (paisagens bem conectadas têm melhor logística).
@@ -153,7 +165,7 @@ Sempre que um jogador **conquista um território**, ele deve responder ao **Desa
 |:---|:---|
 | **Acerto completo** | Ganha **2 Tokens de Restauração** + ocupa o território |
 | **Acerto parcial** | Ganha **1 Token de Restauração** + ocupa o território |
-| **Erro** | Ocupa o território, mas **perde 1 exército** (degradação ecológica) |
+| **Erro** | Ocupa o território, mas **remove 1 token do mapa** (degradação ecológica) |
 
 #### Fase 4 — Narrativa da Casa 📜
 
@@ -165,7 +177,7 @@ No final de cada turno (mesmo que o jogador não tenha conquistado territórios)
 |:---|:---|
 | **Acerto completo** | Ganha **3 Tokens de Restauração** |
 | **Acerto parcial** | Ganha **1 Token de Restauração** |
-| **Erro** | Perde **1 exército** de um território à sua escolha |
+| **Erro** | **Remove 1 token** de um território à sua escolha |
 
 **Regras do Baralho de Narrativas:**
 - Cada jogador escolhe uma casa no início do jogo (ver seção 5.1).
@@ -188,7 +200,7 @@ No final de cada turno (mesmo que o jogador não tenha conquistado territórios)
 
 #### Fase 5 — Manobra (Fortificação) 🏰
 
-O jogador pode mover exércitos entre dois territórios **seus** que estejam conectados por uma cadeia contínua de seus territórios (simula a **conectividade funcional** — só flui onde há continuidade).
+O jogador pode mover **tokens** entre dois territórios **seus** que estejam conectados por uma cadeia contínua de seus territórios (simula a **conectividade funcional** — só flui onde há continuidade). Pode mover quantos tokens quiser, mas território com 0 tokens fica **desguarnecido**.
 
 ---
 
