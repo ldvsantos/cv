@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RISK OF LANDSCAPES: Regras e Lore</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+
+body{
+  background:linear-gradient(180deg,#0d0d0d 0%,#1a1510 50%,#0d0d0d 100%);
+  font-family:'Crimson Text',Georgia,serif;
+  color:#d4c8b0;
+  line-height:1.7;
+  font-size:17px;
+}
+
+/* ═══ NAV ═══ */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(12,12,12,0.96);
+  border-bottom:2px solid #8B7355;
+  backdrop-filter:blur(8px);
+}
+.nav-inner{
+  max-width:1100px;margin:0 auto;
+  display:flex;align-items:center;
+  padding:10px 24px;gap:8px;
+  overflow-x:auto;
+}
+.nav-logo{
+  font-family:'Cinzel',serif;font-weight:900;
+  font-size:13px;color:#8B7355;letter-spacing:2px;
+  white-space:nowrap;margin-right:auto;
+}
+nav a{
+  font-family:'Cinzel',serif;font-size:10px;
+  color:#8B7355;text-decoration:none;
+  letter-spacing:1px;padding:6px 10px;
+  border-radius:3px;white-space:nowrap;
+  transition:background .2s;
+}
+nav a:hover{background:rgba(139,115,85,0.15);}
+
+/* ═══ HERO ═══ */
+.hero{
+  min-height:100vh;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;text-align:center;
+  padding:120px 24px 80px;
+  position:relative;
+  background:
+    radial-gradient(ellipse at 50% 35%,rgba(139,115,85,0.10) 0%,transparent 60%),
+    radial-gradient(ellipse at 20% 80%,rgba(60,40,20,0.15) 0%,transparent 50%);
+}
+.hero::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:120px;
+  background:linear-gradient(transparent,#0d0d0d);
+}
+.hero-emblem{font-size:80px;margin-bottom:24px;opacity:0.7;}
+.hero h1{
+  font-family:'Cinzel',serif;font-weight:900;
+  font-size:clamp(32px,6vw,64px);
+  color:#8B7355;letter-spacing:6px;line-height:1.15;
+}
+.hero h1 span{display:block;font-size:0.45em;color:#d4c8b0;letter-spacing:4px;margin-top:8px;font-weight:400;}
+.hero-quote{
+  font-style:italic;font-size:18px;color:#8B7355;
+  max-width:600px;margin-top:32px;opacity:0.7;
+  position:relative;z-index:1;
+}
+.hero-meta{
+  font-family:'Cinzel',serif;font-size:11px;
+  color:rgba(139,115,85,0.4);letter-spacing:2px;
+  margin-top:40px;position:relative;z-index:1;
+}
+
+/* ═══ LAYOUT ═══ */
+.container{max-width:900px;margin:0 auto;padding:0 24px;}
+
+section{padding:80px 0;}
+section:nth-child(even){
+  background:rgba(139,115,85,0.03);
+  border-top:1px solid rgba(139,115,85,0.1);
+  border-bottom:1px solid rgba(139,115,85,0.1);
+}
+
+/* ═══ HEADINGS ═══ */
+h2{
+  font-family:'Cinzel',serif;font-weight:700;
+  font-size:28px;color:#8B7355;letter-spacing:3px;
+  text-align:center;margin-bottom:40px;
+  position:relative;
+}
+h2::after{
+  content:'';display:block;width:60px;height:2px;
+  background:#8B7355;margin:12px auto 0;
+}
+h3{
+  font-family:'Cinzel',serif;font-weight:700;
+  font-size:20px;color:#a08a64;letter-spacing:1px;
+  margin:32px 0 16px;
+}
+
+/* ═══ TEXT ═══ */
+p{margin-bottom:16px;}
+strong{color:#c4b48a;}
+em{color:#a08a64;}
+
+/* ═══ CARDS / BOXES ═══ */
+.info-box{
+  background:rgba(139,115,85,0.08);
+  border:1px solid rgba(139,115,85,0.25);
+  border-left:4px solid #8B7355;
+  border-radius:6px;padding:20px 24px;
+  margin:24px 0;
+}
+.lore-box{
+  background:linear-gradient(135deg,rgba(60,40,20,0.15),rgba(139,115,85,0.06));
+  border:1px solid rgba(139,115,85,0.2);
+  border-radius:8px;padding:24px 28px;
+  margin:24px 0;font-style:italic;
+  position:relative;
+}
+.lore-box::before{
+  content:'📜';position:absolute;top:-12px;left:20px;
+  font-size:22px;font-style:normal;
+}
+.warning-box{
+  background:rgba(200,64,64,0.08);
+  border:1px solid rgba(200,64,64,0.25);
+  border-left:4px solid #C84040;
+  border-radius:6px;padding:20px 24px;
+  margin:24px 0;
+}
+
+/* ═══ TABLES ═══ */
+table{
+  width:100%;border-collapse:collapse;margin:24px 0;
+  font-size:15px;
+}
+th{
+  font-family:'Cinzel',serif;font-size:12px;
+  color:#8B7355;letter-spacing:1px;text-transform:uppercase;
+  text-align:left;padding:10px 12px;
+  border-bottom:2px solid rgba(139,115,85,0.3);
+}
+td{
+  padding:10px 12px;
+  border-bottom:1px solid rgba(139,115,85,0.1);
+  vertical-align:top;
+}
+tr:hover td{background:rgba(139,115,85,0.04);}
+
+/* ═══ LISTS ═══ */
+ul,ol{margin:12px 0 16px 24px;}
+li{margin-bottom:6px;}
+li::marker{color:#8B7355;}
+
+/* ═══ PHASES ═══ */
+.phase{
+  background:rgba(139,115,85,0.05);
+  border:1px solid rgba(139,115,85,0.15);
+  border-radius:8px;padding:24px 28px;
+  margin:20px 0;
+}
+.phase-header{
+  display:flex;align-items:center;gap:12px;
+  margin-bottom:12px;
+}
+.phase-number{
+  width:36px;height:36px;
+  background:#8B7355;color:#1c1c1c;
+  border-radius:50%;display:flex;
+  align-items:center;justify-content:center;
+  font-family:'Cinzel',serif;font-weight:900;font-size:16px;
+  flex-shrink:0;
+}
+.phase-title{
+  font-family:'Cinzel',serif;font-weight:700;
+  font-size:18px;color:#a08a64;letter-spacing:1px;
+}
+.phase-emoji{font-size:22px;}
+
+/* ═══ HOUSES GRID ═══ */
+.houses-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(360px,1fr));
+  gap:20px;margin:24px 0;
+}
+.house-card{
+  background:rgba(139,115,85,0.06);
+  border:1px solid rgba(139,115,85,0.2);
+  border-radius:8px;padding:20px;
+  transition:border-color .2s;
+}
+.house-card:hover{border-color:#8B7355;}
+.house-card h4{
+  font-family:'Cinzel',serif;font-size:16px;
+  color:#a08a64;margin-bottom:8px;
+  display:flex;align-items:center;gap:8px;
+}
+.house-card p{font-size:15px;margin-bottom:0;}
+.house-emoji{font-size:22px;}
+
+/* ═══ MISSIONS ═══ */
+.mission-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(380px,1fr));
+  gap:16px;margin:24px 0;
+}
+.mission{
+  background:rgba(139,115,85,0.05);
+  border:1px solid rgba(139,115,85,0.15);
+  border-radius:6px;padding:16px 20px;
+  display:flex;gap:12px;align-items:flex-start;
+}
+.mission-num{
+  width:28px;height:28px;
+  background:rgba(139,115,85,0.2);color:#8B7355;
+  border-radius:50%;display:flex;
+  align-items:center;justify-content:center;
+  font-family:'Cinzel',serif;font-weight:700;font-size:13px;
+  flex-shrink:0;
+}
+
+/* ═══ METRICS TABLE ═══ */
+.metric-badge{
+  display:inline-block;
+  background:rgba(139,115,85,0.15);
+  border:1px solid rgba(139,115,85,0.3);
+  border-radius:4px;padding:2px 8px;
+  font-family:'Cinzel',serif;font-size:12px;
+  color:#8B7355;letter-spacing:1px;
+}
+
+/* ═══ FORMULA ═══ */
+.formula{
+  text-align:center;font-size:20px;
+  padding:16px;margin:16px 0;
+  background:rgba(139,115,85,0.06);
+  border-radius:6px;
+  font-style:italic;color:#c4b48a;
+}
+
+/* ═══ DIVIDER ═══ */
+.divider{
+  text-align:center;padding:40px 0;
+  font-size:24px;color:rgba(139,115,85,0.3);
+  letter-spacing:12px;
+}
+
+/* ═══ FOOTER ═══ */
+footer{
+  text-align:center;padding:60px 24px;
+  font-family:'Cinzel',serif;font-size:11px;
+  color:rgba(139,115,85,0.35);letter-spacing:2px;
+  border-top:1px solid rgba(139,115,85,0.1);
+}
+footer p{margin-bottom:8px;}
+
+/* ═══ AUDIO OVERLAY ═══ */
+#audio-overlay{
+  position:fixed;inset:0;z-index:9999;
+  background:radial-gradient(ellipse at 50% 40%,rgba(28,20,10,0.92),rgba(0,0,0,0.98));
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  cursor:pointer;transition:opacity .6s ease;
+}
+#audio-overlay.hidden{opacity:0;pointer-events:none;}
+#audio-overlay .ao-dragon{font-size:100px;margin-bottom:20px;animation:ao-pulse 2.5s ease-in-out infinite;}
+@keyframes ao-pulse{0%,100%{opacity:.5;transform:scale(1);}50%{opacity:1;transform:scale(1.08);}}
+#audio-overlay .ao-title{
+  font-family:'Cinzel',serif;font-size:28px;font-weight:900;
+  color:#8B7355;letter-spacing:4px;margin-bottom:12px;
+}
+#audio-overlay .ao-sub{
+  font-family:'Crimson Text',serif;font-size:16px;
+  color:#d4c8b0;opacity:.7;margin-bottom:32px;font-style:italic;
+}
+#audio-overlay .ao-btn{
+  font-family:'Cinzel',serif;font-size:13px;font-weight:700;
+  color:#1c1c1c;background:#8B7355;
+  border:none;padding:14px 40px;border-radius:4px;
+  letter-spacing:3px;cursor:pointer;
+  transition:background .3s,transform .2s;
+}
+#audio-overlay .ao-btn:hover{background:#a08a60;transform:scale(1.05);}
+
+/* ═══ AUDIO CONTROL ═══ */
+#audio-ctrl{
+  position:fixed;bottom:24px;left:24px;z-index:999;
+  width:44px;height:44px;border-radius:50%;
+  background:#8B7355;color:#1c1c1c;border:none;
+  font-size:20px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  opacity:0.7;transition:opacity .2s;
+}
+#audio-ctrl:hover{opacity:1;}
+#audio-ctrl.muted{opacity:0.35;}
+
+/* ═══ BACK TO TOP ═══ */
+.back-top{
+  position:fixed;bottom:24px;right:24px;z-index:99;
+  width:44px;height:44px;border-radius:50%;
+  background:#8B7355;color:#1c1c1c;border:none;
+  font-size:20px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  opacity:0.7;transition:opacity .2s;
+}
+.back-top:hover{opacity:1;}
+
+/* ═══ RESPONSIVE ═══ */
+@media(max-width:600px){
+  .houses-grid,.mission-grid{grid-template-columns:1fr;}
+  .nav-inner{gap:4px;}
+  nav a{font-size:9px;padding:4px 6px;}
+  .hero h1{letter-spacing:3px;}
+}
+
+@media print{
+  nav,.back-top{display:none!important;}
+  body{background:white;color:#222;}
+  .hero{min-height:auto;padding:40px 24px;}
+  h2{color:#333;}
+  section{padding:30px 0;}
+  .phase,.info-box,.lore-box,.house-card,.mission{
+    border-color:#ccc;background:#f9f9f9;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">⚔ RISK OF LANDSCAPES</div>
+    <a href="#lore">Lore</a>
+    <a href="#overview">Visão Geral</a>
+    <a href="#components">Componentes</a>
+    <a href="#cards">Cartas</a>
+    <a href="#map">Mapa</a>
+    <a href="#metrics">Métricas</a>
+    <a href="#rules">Regras</a>
+    <a href="#houses">Casas</a>
+    <a href="#missions">Missões</a>
+    <a href="#tokens">Tokens</a>
+    <a href="#victory">Vitória</a>
+    <a href="#variants">Variantes</a>
+  </div>
+</nav>
+
+<!-- AUDIO OVERLAY -->
+<div id="audio-overlay" onclick="enterSite()">
+  <div class="ao-dragon">🐉</div>
+  <div class="ao-title">RISK OF LANDSCAPES</div>
+  <div class="ao-sub">"Todas as paisagens mudam. Mas podemos decidir como."</div>
+  <button class="ao-btn" onclick="event.stopPropagation();enterSite()">⚔ ENTRAR EM WESTEROS ⚔</button>
+</div>
+
+<button id="audio-ctrl" class="muted" onclick="toggleAudio()" title="Som ligado/desligado">🔇</button>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-emblem">🐉</div>
+  <h1>RISK OF LANDSCAPES<span>A Guerra pelas Paisagens de Westeros</span></h1>
+  <p class="hero-quote">"O verdadeiro poder não está nos exércitos… está na terra, nas florestas, nos rios que alimentam os reinos."<br>— Maester Luwin</p>
+  <p class="hero-meta">SERIOUS GAME - ANÁLISE DA PAISAGEM - UEFS</p>
+  <p class="hero-meta">PROFESSOR DIEGO VIDAL - DCHF/UEFS</p>
+
+</header>
+
+<!-- LORE -->
+<section id="lore">
+  <div class="container">
+    <h2>A Lore de Westeros</h2>
+
+    <div class="lore-box">
+      Há milênios, o continente de Westeros era coberto por florestas ancestrais, e os <strong>Filhos da Floresta</strong> viviam em harmonia com a terra. Então vieram os <strong>Primeiros Homens</strong>, com machados e fogo, e a paisagem começou a mudar para sempre.
+    </div>
+
+    <h3>As Grandes Regiões</h3>
+
+    <p><strong>The North.</strong> A maior e mais selvagem das regiões. As florestas do <em>Wolfswood</em> e da <em>Haunted Forest</em> cobrem a paisagem como enormes manchas contínuas. Aqui, a <strong>conectividade</strong> é alta e a <strong>fragmentação</strong> é baixa. Os Stark guardam esta terra há milhares de anos, e sua integridade ecológica é a maior de Westeros. <em>Winter is coming</em>, e com ele, a resiliência das paisagens boreais.</p>
+
+    <p><strong>The Vale.</strong> Protegido pelas <em>Mountains of the Moon</em>, o Vale é uma fortaleza natural. As montanhas funcionam como <strong>barreiras</strong> que isolam externamente, mas internamente os vales mantêm cobertura contínua. A Casa <strong>Arryn</strong> domina estas terras de seu ninho inexpugnável, o <em>Eyrie</em>. A altitude cria <strong>gradientes</strong> de vegetação que poucos compreendem.</p>
+
+    <p><strong>The Riverlands.</strong> Terra de rios e guerras. As <em>Riverlands</em> são o campo de batalha perpétuo de Westeros, pois cada exército que marcha para o Sul passa por aqui. Séculos de conflito e agricultura intensiva transformaram a paisagem numa das mais <strong>fragmentadas</strong> do continente. Os Tully de <em>Riverrun</em> governam terras que estão no <strong>limiar crítico de 20-30% de cobertura</strong>, onde cada hectare perdido pode provocar um colapso ecológico.</p>
+
+    <p><strong>The Westerlands.</strong> Ouro. As minas dos Lannister fizeram desta a região mais rica de Westeros, mas a que preço? A mineração intensa <strong>fragmentou</strong> a cobertura, criando um <strong>trade-off</strong> clássico entre serviços de <strong>provisão</strong> (minério) e de <strong>regulação</strong> (erosão, clima, água). <em>"Um Lannister sempre paga suas dívidas"</em>, mas a dívida ecológica, quem paga?</p>
+
+    <p><strong>The Reach.</strong> O celeiro de Westeros. Sob o domínio da Casa <strong>Tyrell</strong>, <em>Highgarden</em> é um mosaico agrícola de lavouras, vinhedos, pomares e pastagens. A <strong>diversidade de Shannon (SHDI)</strong> é alta, mas a <strong>cobertura florestal nativa</strong> é baixa. Um paradoxo: muita heterogeneidade composicional, pouca vegetação natural. As <strong>sebes</strong> entre propriedades funcionam como corredores para polinizadores.</p>
+
+    <p><strong>The Stormlands.</strong> Terra de tempestades. As florestas temperadas de <em>Storm's End</em> existem sob <strong>distúrbio permanente</strong>. Na classificação de <strong>Tricart</strong>, este é um meio <em>intergrade</em>, com equilíbrio frágil entre estabilidade e instabilidade. Os Baratheon são como suas terras: <strong>resilientes</strong>, capazes de se recuperar após cada tempestade.</p>
+
+    <p><strong>Dorne.</strong> O deserto do Sul. As paisagens áridas dos Martell são as mais hostis de Westeros para a vida vegetal. A <strong>matriz desértica</strong> é impermeável para a maioria dos organismos florestais. Oásis funcionam como <strong>stepping stones</strong>, pontos de apoio isolados numa matriz inóspita. Aqui, o serviço ecossistêmico mais crítico é a <strong>regulação hídrica</strong>.</p>
+
+    <p><strong>The Crownlands.</strong> O contraste mais extremo de Westeros. <em>King's Landing</em>, a capital, é uma cidade de um milhão de habitantes e a paisagem mais <strong>urbanizada e fragmentada</strong> do continente. Ao seu lado, <em>Dragonstone</em> é uma ilha com grandes manchas preservadas. Diversidade composicional alta, conectividade baixa. A urbanização cria muitas classes de cobertura, mas cada uma é isolada por infraestrutura impermeável.</p>
+
+    <p><strong>Iron Islands.</strong> Ilhas de rocha e sal. As terras dos Greyjoy são as mais desoladas de Westeros. Com apenas <strong>12,5% de cobertura</strong> vegetal, muito abaixo do <strong>limiar de percolação (~59%)</strong>, a paisagem está estruturalmente desconectada. A <strong>teoria de biogeografia de ilhas</strong> de MacArthur &amp; Wilson explica o isolamento: ilhas menores e mais distantes têm menos espécies. <em>"What is dead may never die"</em>, mas o que está fragmentado pode nunca se reconectar.</p>
+
+    <div class="lore-box">
+      Sete reinos, dez macro-regiões, vinte territórios. Cada um com uma história ecológica única. Neste jogo, você não conquista apenas terras; você conquista <strong>paisagens</strong>. E para governá-las, precisa <strong>compreendê-las</strong>.
+    </div>
+  </div>
+</section>
+
+<!-- OVERVIEW -->
+<section id="overview">
+  <div class="container">
+    <h2>Visão Geral</h2>
+
+    <div class="info-box">
+      <strong>RISK OF LANDSCAPES</strong> é um <em>Serious Game</em> baseado no universo de Game of Thrones, projetado para a disciplina <strong>Análise da Paisagem</strong>. Os jogadores disputam o controle dos territórios de Westeros usando conhecimentos de <strong>Ecologia da Paisagem</strong> (métricas espaciais, fragmentação, conectividade, modelo mancha-corredor-matriz, serviços ecossistêmicos e planejamento territorial).
+    </div>
+
+    <table>
+      <tr><th>Item</th><th>Descrição</th></tr>
+      <tr><td><strong>Jogadores</strong></td><td>2 a 6</td></tr>
+      <tr><td><strong>Duração</strong></td><td>60 – 90 min</td></tr>
+      <tr><td><strong>Disciplina</strong></td><td>Análise da Paisagem</td></tr>
+      <tr><td><strong>Temática</strong></td><td>Westeros (Game of Thrones)</td></tr>
+      <tr><td><strong>Mecânica</strong></td><td>RISK + cartas de desafio paisagístico</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- COMPONENTS -->
+<section id="components">
+  <div class="container">
+    <h2>Componentes</h2>
+
+    <table>
+      <tr><th>Componente</th><th style="text-align:center">Qtd.</th><th>Descrição</th></tr>
+      <tr><td>Mapa de Westeros</td><td style="text-align:center">1</td><td>Tabuleiro com 20 territórios em 10 macro-regiões</td></tr>
+      <tr><td>Cartas de Território</td><td style="text-align:center">20</td><td>Dados paisagísticos + desafio por território</td></tr>
+      <tr><td>Cartas Narrativas</td><td style="text-align:center">80</td><td>10 por casa (8 casas), cenários temáticos + desafio</td></tr>
+      <tr><td>Capas de Casa</td><td style="text-align:center">8</td><td>Identificação de cada casa jogável</td></tr>
+      <tr><td>Dados (d6)</td><td style="text-align:center">5</td><td>3 ataque (vermelhos) + 2 defesa (brancos)</td></tr>
+      <tr><td>Tokens de Exército</td><td style="text-align:center">6 cores</td><td>Peões/dragões para marcar controle</td></tr>
+      <tr><td>Cartas de Missão</td><td style="text-align:center">10</td><td>Objetivos secretos de conquista</td></tr>
+      <tr><td>Tokens de Restauração</td><td style="text-align:center">30</td><td>Bônus por acerto nos desafios</td></tr>
+      <tr><td>Tabela de Referência</td><td style="text-align:center">6</td><td>Fórmulas e conceitos para consulta</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- CARDS PREVIEW -->
+<section id="cards">
+  <div class="container">
+    <h2>Cartas do Jogo</h2>
+    <p>O jogo contém 20 cartas de território, 10 cartas de missão secreta, 2 cartas de referência rápida e 1 mapa de conexões. Todas estão prontas para impressão em A4 paisagem.</p>
+    <p style="text-align:center;margin-top:1.5em;">
+      <a href="risk-of-landscapes-print-all.html" target="_blank" rel="noopener" style="font-family:'Cinzel',serif;font-size:15px;font-weight:700;color:#1c1c1c;background:linear-gradient(135deg,#8B7355,#c4a96a);border:none;padding:18px 48px;border-radius:6px;letter-spacing:3px;text-decoration:none;display:inline-block;transition:all .3s;box-shadow:0 4px 16px rgba(139,115,85,0.4);">⚔ VER E IMPRIMIR CARTAS ⚔</a>
+    </p>
+  </div>
+</section>
+
+<!-- MAP -->
+<section id="map">
+  <div class="container">
+    <h2>O Mapa: Macro-regiões e Territórios</h2>
+
+    <p>O mapa de Westeros é dividido em <strong>10 macro-regiões</strong>, cada uma contendo <strong>2 territórios</strong> (exceto The North, com 4):</p>
+
+    <table>
+      <tr><th>Macro-região</th><th>Territórios</th><th>Perfil paisagístico</th></tr>
+      <tr><td><strong>The North</strong></td><td>Winterfell, The Dreadfort, White Harbor, Moat Cailin</td><td>Grandes florestas boreais. Alta cobertura, poucos fragmentos, alta conectividade.</td></tr>
+      <tr><td><strong>The Vale</strong></td><td>The Eyrie, Gulltown</td><td>Florestas montanas isoladas por relevo. Conectividade interna alta, isolamento externo.</td></tr>
+      <tr><td><strong>The Riverlands</strong></td><td>Riverrun, Harrenhal</td><td>Paisagem devastada por guerras. Alta fragmentação, muitos fragmentos pequenos.</td></tr>
+      <tr><td><strong>The Westerlands</strong></td><td>Lannisport, Casterly Rock</td><td>Mineração fragmentou a cobertura. Trade-off provisão mineral × regulação.</td></tr>
+      <tr><td><strong>The Reach</strong></td><td>Highgarden, Oldtown</td><td>Celeiro de Westeros. Mosaico agrícola, SHDI alto, baixo PLAND florestal.</td></tr>
+      <tr><td><strong>The Stormlands</strong></td><td>Storm's End, Shipbreaker Bay</td><td>Florestas temperadas sob distúrbio de tempestades.</td></tr>
+      <tr><td><strong>Dorne</strong></td><td>Sunspear, Sandstone</td><td>Paisagem árida. Matriz desértica de baixa permeabilidade.</td></tr>
+      <tr><td><strong>The Crownlands</strong></td><td>King's Landing, Dragonstone</td><td>Capital urbanizada vs. ilha preservada. Contraste extremo.</td></tr>
+      <tr><td><strong>Iron Islands</strong></td><td>Pyke, Harlaw</td><td>Ilhas rochosas com vegetação mínima. Abaixo do limiar de percolação.</td></tr>
+    </table>
+
+    <h3 style="margin-top:2em;">Mapa Interativo de Westeros</h3>
+    <p>Explore o continente em detalhe. Navegue, dê zoom e clique nos locais como se fosse um Google Maps de Westeros:</p>
+    <div style="width:100%;max-width:960px;margin:1.5em auto;border:2px solid #8B7355;border-radius:8px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.5);">
+      <iframe src="https://quartermaester.info/" width="100%" height="550" style="border:none;display:block;" loading="lazy" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin allow-popups" title="Mapa Interativo de Westeros (Quartermaester)"></iframe>
+    </div>
+    <p style="text-align:center;font-size:0.85em;opacity:0.6;margin-top:0.5em;">Fonte: <a href="https://quartermaester.info/" target="_blank" rel="noopener" style="color:#8B7355;">quartermaester.info</a></p>
+
+  </div>
+</section>
+
+<!-- METRICS -->
+<section id="metrics">
+  <div class="container">
+    <h2>Variáveis Paisagísticas das Cartas</h2>
+
+    <p>Cada carta de território apresenta <strong>9 variáveis</strong> da Ecologia da Paisagem:</p>
+
+    <table>
+      <tr><th>Variável</th><th>Sigla</th><th>O que mede</th></tr>
+      <tr><td>Cobertura florestal</td><td><span class="metric-badge">PLAND</span></td><td>Proporção da paisagem coberta por vegetação nativa (%)</td></tr>
+      <tr><td>Nº de fragmentos</td><td><span class="metric-badge">NP</span></td><td>Quantidade de manchas de habitat</td></tr>
+      <tr><td>Área média do fragmento</td><td><span class="metric-badge">AREA_MN</span></td><td>Tamanho médio das manchas (ha)</td></tr>
+      <tr><td>Diversidade de Shannon</td><td><span class="metric-badge">SHDI</span></td><td>Heterogeneidade composicional da paisagem</td></tr>
+      <tr><td>Conectividade</td><td><span class="metric-badge">CONNECT</span></td><td>Grau de conexão funcional entre manchas (0–100)</td></tr>
+      <tr><td>Densidade de borda</td><td><span class="metric-badge">ED</span></td><td>Comprimento total de borda por unidade de área (m/ha)</td></tr>
+      <tr><td>Área nuclear</td><td><span class="metric-badge">CORE</span></td><td>Proporção do habitat protegida de efeito de borda (%)</td></tr>
+      <tr><td>Serviços ecossistêmicos</td><td><span class="metric-badge">SE</span></td><td>Índice composto de provisão, regulação e suporte (0–100)</td></tr>
+      <tr><td>Desafio da Paisagem</td><td></td><td>Questão conceitual sobre Análise da Paisagem</td></tr>
+    </table>
+
+    <h3>Relações Ecológicas nos Dados</h3>
+
+    <div class="info-box">
+      Os alunos devem perceber as seguintes relações nos dados das cartas:
+      <ul style="margin-top:12px;">
+        <li><strong>PLAND ↑ → NP ↓, AREA_MN ↑:</strong> mais cobertura = menos fragmentos e fragmentos maiores</li>
+        <li><strong>NP ↑ → ED ↑, CORE ↓:</strong> mais fragmentos = mais borda e menos área nuclear</li>
+        <li><strong>ED ↑ → CORE ↓:</strong> densidade de borda e área nuclear são inversamente relacionadas</li>
+        <li><strong>PLAND ↑ → CONNECT ↑ → SE ↑:</strong> cobertura sustenta conectividade que sustenta serviços</li>
+        <li><strong>SHDI alto pode vir de PLAND alto OU baixo:</strong> diversidade composicional ≠ cobertura florestal</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- RULES -->
+<section id="rules">
+  <div class="container">
+    <h2>Regras do Jogo</h2>
+
+    <h3>Preparação</h3>
+
+    <ol>
+      <li><strong>Escolher casa:</strong> cada jogador escolhe uma das 8 casas de Westeros. O baralho de narrativas correspondente (10 cartas) é separado e embaralhado.</li>
+      <li><strong>Distribuir territórios:</strong> embaralhe as 20 cartas de território e distribua igualmente. Cada jogador coloca 1 exército em cada território recebido.</li>
+      <li><strong>Exércitos iniciais:</strong> cada jogador recebe exércitos extras (tabela abaixo) e os posiciona como desejar.</li>
+      <li><strong>Missão secreta:</strong> cada jogador recebe 1 carta de missão que define seu objetivo de vitória.</li>
+    </ol>
+
+    <table>
+      <tr><th style="text-align:center">Jogadores</th><th style="text-align:center">Exércitos iniciais</th></tr>
+      <tr><td style="text-align:center">2</td><td style="text-align:center">40</td></tr>
+      <tr><td style="text-align:center">3</td><td style="text-align:center">35</td></tr>
+      <tr><td style="text-align:center">4</td><td style="text-align:center">30</td></tr>
+      <tr><td style="text-align:center">5</td><td style="text-align:center">25</td></tr>
+      <tr><td style="text-align:center">6</td><td style="text-align:center">20</td></tr>
+    </table>
+
+    <div class="divider">⚔ ⚔ ⚔</div>
+
+    <h3>Turno de Jogo: 5 Fases</h3>
+
+    <!-- FASE 1 -->
+    <div class="phase">
+      <div class="phase-header">
+        <div class="phase-number">1</div>
+        <div class="phase-title">Reforços</div>
+        <span class="phase-emoji">🌲</span>
+      </div>
+      <p>O jogador recebe exércitos extras:</p>
+      <table>
+        <tr><th>Fonte</th><th>Cálculo</th></tr>
+        <tr><td>Territórios controlados</td><td>Nº de territórios ÷ 3 (mínimo 3)</td></tr>
+        <tr><td>Bônus de macro-região</td><td>Controlar todos os territórios de uma macro-região</td></tr>
+        <tr><td>Tokens de Restauração</td><td>A cada 3 tokens → 2 exércitos extras</td></tr>
+      </table>
+
+      <p style="margin-top:16px"><strong>Bônus por macro-região completa:</strong></p>
+      <table>
+        <tr><th>Macro-região</th><th style="text-align:center">Bônus</th><th>Justificativa ecológica</th></tr>
+        <tr><td>The North (4 terr.)</td><td style="text-align:center">7</td><td>Maior macro-região; florestas contínuas geram alta resiliência</td></tr>
+        <tr><td>The Reach</td><td style="text-align:center">5</td><td>Celeiro produtivo: provisão alimenta exércitos</td></tr>
+        <tr><td>The Riverlands</td><td style="text-align:center">4</td><td>Fácil de invadir, difícil de manter</td></tr>
+        <tr><td>The Westerlands</td><td style="text-align:center">4</td><td>Recursos minerais compensam a degradação</td></tr>
+        <tr><td>The Crownlands</td><td style="text-align:center">4</td><td>Capital política: poder centralizado</td></tr>
+        <tr><td>The Vale</td><td style="text-align:center">3</td><td>Isolamento montano limita reforços</td></tr>
+        <tr><td>The Stormlands</td><td style="text-align:center">3</td><td>Tempestades limitam logística</td></tr>
+        <tr><td>Dorne</td><td style="text-align:center">2</td><td>Baixa capacidade de suporte</td></tr>
+        <tr><td>Iron Islands</td><td style="text-align:center">2</td><td>Poucos recursos paisagísticos</td></tr>
+      </table>
+    </div>
+
+    <!-- FASE 2 -->
+    <div class="phase">
+      <div class="phase-header">
+        <div class="phase-number">2</div>
+        <div class="phase-title">Ataque</div>
+        <span class="phase-emoji">⚔️</span>
+      </div>
+      <p>O jogador pode atacar territórios adjacentes (conectados no mapa). Combate segue as regras clássicas do RISK:</p>
+      <ul>
+        <li><strong>Atacante:</strong> lança até 3 dados (precisa ter ≥ 1 exército a mais que o nº de dados)</li>
+        <li><strong>Defensor:</strong> lança até 2 dados</li>
+        <li><strong>Comparação:</strong> dados ordenados do maior ao menor, comparados par a par. Empate favorece o defensor.</li>
+      </ul>
+      <div class="info-box" style="margin-top:16px;">
+        <strong>⚡ Regra Especial (Vantagem de Conectividade):</strong><br>
+        Se o território atacante tem <strong>CONNECT ≥ 60</strong>, o atacante pode <strong>relançar 1 dado</strong> por tentativa (paisagens bem conectadas = melhor logística).
+      </div>
+    </div>
+
+    <!-- FASE 3 -->
+    <div class="phase">
+      <div class="phase-header">
+        <div class="phase-number">3</div>
+        <div class="phase-title">Desafio da Paisagem</div>
+        <span class="phase-emoji">🌿</span>
+      </div>
+      <div class="warning-box" style="margin-bottom:16px;">
+        <strong>Esta é a fase pedagógica central do jogo.</strong>
+      </div>
+      <p>Sempre que um jogador <strong>conquista um território</strong>, deve responder ao <strong>Desafio da Paisagem</strong> da carta:</p>
+      <ol>
+        <li>Leia o desafio em voz alta para o grupo.</li>
+        <li>Tem <strong>2 minutos</strong> para responder (pode consultar a Tabela de Referência).</li>
+        <li>Os demais jogadores e/ou o professor avaliam a resposta.</li>
+      </ol>
+      <table style="margin-top:16px;">
+        <tr><th>Resultado</th><th>Consequência</th></tr>
+        <tr><td><strong>Acerto completo</strong></td><td>Ganha <strong>2 Tokens de Restauração</strong> + ocupa o território</td></tr>
+        <tr><td><strong>Acerto parcial</strong></td><td>Ganha <strong>1 Token</strong> + ocupa o território</td></tr>
+        <tr><td><strong>Erro</strong></td><td>Ocupa o território, mas <strong>perde 1 exército</strong> (degradação ecológica)</td></tr>
+      </table>
+    </div>
+
+    <!-- FASE 4 -->
+    <div class="phase">
+      <div class="phase-header">
+        <div class="phase-number">4</div>
+        <div class="phase-title">Narrativa da Casa</div>
+        <span class="phase-emoji">📜</span>
+      </div>
+      <p>No final de cada turno, o jogador compra <strong>1 carta narrativa</strong> do baralho da sua casa, lê em voz alta e responde ao desafio:</p>
+      <table>
+        <tr><th>Resultado</th><th>Consequência</th></tr>
+        <tr><td><strong>Acerto completo</strong></td><td>Ganha <strong>3 Tokens de Restauração</strong></td></tr>
+        <tr><td><strong>Acerto parcial</strong></td><td>Ganha <strong>1 Token</strong></td></tr>
+        <tr><td><strong>Erro</strong></td><td>Perde <strong>1 exército</strong> de um território à sua escolha</td></tr>
+      </table>
+      <div class="info-box" style="margin-top:16px;">
+        As cartas narrativas são <strong>progressivas</strong>: os desafios vão de conceitos básicos a aplicações avançadas. Se acabarem as 10 cartas, re-embaralhe.
+      </div>
+    </div>
+
+    <!-- FASE 5 -->
+    <div class="phase">
+      <div class="phase-header">
+        <div class="phase-number">5</div>
+        <div class="phase-title">Manobra (Fortificação)</div>
+        <span class="phase-emoji">🏰</span>
+      </div>
+      <p>O jogador pode mover exércitos entre dois territórios <strong>seus</strong> que estejam conectados por uma cadeia contínua de territórios próprios.</p>
+      <div class="info-box">
+        Simula a <strong>conectividade funcional</strong>: o fluxo só ocorre onde há continuidade. Sem cadeia contínua de territórios, não há como mover tropas.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOUSES -->
+<section id="houses">
+  <div class="container">
+    <h2>As 8 Casas Jogáveis</h2>
+
+    <p>Cada casa tem um baralho de <strong>10 cartas narrativas</strong> centradas em seu tema paisagístico:</p>
+
+    <div class="houses-grid">
+      <div class="house-card">
+        <h4><span class="house-emoji">🐺</span> Casa Stark</h4>
+        <p><strong>Região:</strong> The North<br>
+        <strong>Tema:</strong> Florestas contínuas, PLAND alto, conectividade, resiliência, modelo mancha-corredor-matriz, relação espécie-área</p>
+      </div>
+      <div class="house-card">
+        <h4><span class="house-emoji">🐙</span> Casa Greyjoy</h4>
+        <p><strong>Região:</strong> Iron Islands<br>
+        <strong>Tema:</strong> Ilhas isoladas, limiar de percolação, biogeografia insular, efeito de borda marinha, populações pequenas e extinção</p>
+      </div>
+      <div class="house-card">
+        <h4><span class="house-emoji">🦁</span> Casa Lannister</h4>
+        <p><strong>Região:</strong> The Westerlands<br>
+        <strong>Tema:</strong> Trade-off provisão/regulação, mineração, dívida de extinção, fragmentação por estradas, restauração em minas</p>
+      </div>
+      <div class="house-card">
+        <h4><span class="house-emoji">🌹</span> Casa Tyrell</h4>
+        <p><strong>Região:</strong> The Reach<br>
+        <strong>Tema:</strong> Mosaico agrícola, SHDI alto, polinizadores, corredores de sebes, tamanho mínimo viável, paisagem complementar</p>
+      </div>
+      <div class="house-card">
+        <h4><span class="house-emoji">☀️</span> Casa Martell</h4>
+        <p><strong>Região:</strong> Dorne<br>
+        <strong>Tema:</strong> Deserto, oásis como stepping stones, aridez, regulação hídrica, conectividade funcional espécie-específica</p>
+      </div>
+      <div class="house-card">
+        <h4><span class="house-emoji">🦅</span> Casa Arryn</h4>
+        <p><strong>Região:</strong> The Vale<br>
+        <strong>Tema:</strong> Montanhas, gradiente altitudinal, isolamento, cascata de serviços ecossistêmicos, métricas 2D vs. 3D</p>
+      </div>
+      <div class="house-card">
+        <h4><span class="house-emoji">🐟</span> Casa Tully</h4>
+        <p><strong>Região:</strong> The Riverlands<br>
+        <strong>Tema:</strong> Rios fragmentados, matas ripárias, limiar de fragmentação (20-30%), degradação por guerra, função esponja</p>
+      </div>
+      <div class="house-card">
+        <h4><span class="house-emoji">🦌</span> Casa Baratheon</h4>
+        <p><strong>Região:</strong> The Stormlands<br>
+        <strong>Tema:</strong> Tempestades, distúrbio natural, resiliência vs. resistência, Tricart, fogo e sucessão, ecótono terra-mar</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSIONS -->
+<section id="missions">
+  <div class="container">
+    <h2>Cartas de Missão</h2>
+
+    <p>Cada jogador recebe uma <strong>missão secreta</strong>. O primeiro a completá-la vence:</p>
+
+    <div class="mission-grid">
+      <div class="mission">
+        <div class="mission-num">1</div>
+        <div><strong>Controlar The North inteiro</strong><br><em>Manter a maior mancha contínua de Westeros</em></div>
+      </div>
+      <div class="mission">
+        <div class="mission-num">2</div>
+        <div><strong>Controlar 3 macro-regiões completas</strong><br><em>Dominar mosaicos funcionais completos</em></div>
+      </div>
+      <div class="mission">
+        <div class="mission-num">3</div>
+        <div><strong>Winterfell + Highgarden + Sunspear</strong><br><em>Gradiente boreal → agrícola → árida</em></div>
+      </div>
+      <div class="mission">
+        <div class="mission-num">4</div>
+        <div><strong>Controlar 12 territórios quaisquer</strong><br><em>Expandir PLAND territorial</em></div>
+      </div>
+      <div class="mission">
+        <div class="mission-num">5</div>
+        <div><strong>Todas as regiões costeiras</strong><br><em>Conectividade litoral (corredor costeiro)</em></div>
+      </div>
+      <div class="mission">
+        <div class="mission-num">6</div>
+        <div><strong>Eliminar um jogador específico</strong><br><em>Extinção competitiva (exclusão de nicho)</em></div>
+      </div>
+      <div class="mission">
+        <div class="mission-num">7</div>
+        <div><strong>Riverlands + Reach + Crownlands</strong><br><em>Corredor central de Westeros</em></div>
+      </div>
+      <div class="mission">
+        <div class="mission-num">8</div>
+        <div><strong>8 territórios + ≥ 5 Tokens</strong><br><em>Equilíbrio conquista-conservação</em></div>
+      </div>
+      <div class="mission">
+        <div class="mission-num">9</div>
+        <div><strong>Dragonstone + Eyrie + Winterfell</strong><br><em>As 3 paisagens com maior área nuclear</em></div>
+      </div>
+      <div class="mission">
+        <div class="mission-num">10</div>
+        <div><strong>Iron Islands + Dorne</strong><br><em>Restaurar as paisagens mais degradadas</em></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOKENS -->
+<section id="tokens">
+  <div class="container">
+    <h2>Tokens de Restauração</h2>
+
+    <p>Os Tokens representam o <strong>capital ecológico</strong> acumulado ao demonstrar conhecimento. Além de trocar por exércitos (3 tokens = 2 exércitos), podem ser usados para habilidades especiais:</p>
+
+    <table>
+      <tr><th>Uso</th><th style="text-align:center">Custo</th><th>Efeito</th></tr>
+      <tr>
+        <td><strong>🌿 Corredor ecológico</strong></td>
+        <td style="text-align:center">4</td>
+        <td>Conecta dois territórios não adjacentes seus por 1 turno (ataque/manobra à distância)</td>
+      </tr>
+      <tr>
+        <td><strong>🌱 Restauração de habitat</strong></td>
+        <td style="text-align:center">3</td>
+        <td>+2 exércitos em um território com PLAND &lt; 30%</td>
+      </tr>
+      <tr>
+        <td><strong>🛡️ Área protegida</strong></td>
+        <td style="text-align:center">5</td>
+        <td>Um território seu não pode ser atacado por 1 rodada</td>
+      </tr>
+      <tr>
+        <td><strong>🪨 Stepping stone</strong></td>
+        <td style="text-align:center">2</td>
+        <td>Move 1 exército entre dois territórios separados por 1 território inimigo</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<!-- VICTORY -->
+<section id="victory">
+  <div class="container">
+    <h2>Condições de Vitória</h2>
+
+    <div class="info-box">
+      <strong>Vitória principal:</strong> O primeiro jogador a completar sua <strong>Missão Secreta</strong> vence. Ele deve revelar a carta e demonstrar que cumpriu o objetivo.
+    </div>
+
+    <p><strong>Vitória alternativa:</strong> se nenhuma missão for cumprida em 90 minutos, vence o jogador com a maior <strong>Pontuação de Paisagem</strong>:</p>
+
+    <div class="formula">
+      Pontuação = (N<sub>territórios</sub> × 3) + (N<sub>tokens</sub> × 2) + Bônus<sub>macro-regiões</sub>
+    </div>
+  </div>
+</section>
+
+<!-- VARIANTS -->
+<section id="variants">
+  <div class="container">
+    <h2>Variantes de Jogo</h2>
+
+    <div class="phase">
+      <div class="phase-header">
+        <div class="phase-title">🤝 Modo Cooperativo: "Restauração de Westeros"</div>
+      </div>
+      <p>Os jogadores trabalham <strong>juntos</strong> contra o tabuleiro. A cada rodada, um "Evento de Degradação" é sorteado (queimada, invasão, seca) que remove exércitos de territórios aleatórios. Os jogadores devem acertar os desafios para ganhar Tokens e "curar" os territórios antes que todos caiam.</p>
+    </div>
+
+    <div class="phase">
+      <div class="phase-header">
+        <div class="phase-title">🎙️ Modo Debate: "Conselho de Mestres"</div>
+      </div>
+      <p>Ao conquistar um território, o jogador deve <strong>defender sua resposta</strong> perante os demais, que podem fazer perguntas. O grupo vota se a resposta é satisfatória. Incentiva argumentação científica oral.</p>
+    </div>
+
+    <div class="phase">
+      <div class="phase-header">
+        <div class="phase-title">⚡ Modo Rápido: "Skirmish"</div>
+      </div>
+      <p>Usa apenas <strong>10 territórios</strong> (um por macro-região, escolhidos aleatoriamente). Jogo em 30–45 minutos.</p>
+    </div>
+
+    <div class="phase">
+      <div class="phase-header">
+        <div class="phase-title">📖 Modo Narrativa Intensiva: "Crônicas de Westeros"</div>
+      </div>
+      <p>Cada jogador usa <strong>todas as 10 cartas</strong> da sua casa em sequência obrigatória (Carta 01 → 10). Não avança sem acertar a atual. Cada acerto completo vale <strong>5 Tokens</strong>. O primeiro a completar as 10 cartas vence automaticamente.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REFERENCE -->
+<section id="reference" style="padding-bottom:40px;">
+  <div class="container">
+    <h2>Tabela de Referência Rápida</h2>
+
+    <h3>Modelo Mancha-Corredor-Matriz</h3>
+    <ul>
+      <li><strong>Mancha (patch):</strong> área homogênea que difere do entorno</li>
+      <li><strong>Corredor:</strong> elemento linear conectando manchas</li>
+      <li><strong>Matriz:</strong> elemento dominante e mais conectado ("fundo" da paisagem)</li>
+    </ul>
+
+    <h3>Limiares Importantes</h3>
+    <ul>
+      <li><strong>Limiar de percolação:</strong> ~59% de habitat em mapas aleatórios</li>
+      <li><strong>Limiar empírico:</strong> 20–30% de habitat → ponto de inflexão para biodiversidade</li>
+      <li><strong>Relação espécie-área:</strong> S = cA<sup>z</sup> (z ≈ 0,25 para fragmentos continentais)</li>
+    </ul>
+
+    <h3>Serviços Ecossistêmicos</h3>
+    <table>
+      <tr><th>Tipo</th><th>Exemplos</th></tr>
+      <tr><td><strong>Provisão</strong></td><td>Alimentos, água, madeira, fibras</td></tr>
+      <tr><td><strong>Regulação</strong></td><td>Clima, água, erosão, polinização</td></tr>
+      <tr><td><strong>Culturais</strong></td><td>Recreação, estética, identidade</td></tr>
+      <tr><td><strong>Suporte</strong></td><td>Solo, ciclagem, biodiversidade</td></tr>
+    </table>
+
+    <h3>Classificação de Tricart</h3>
+    <table>
+      <tr><th>Meio</th><th>Equilíbrio</th><th>Uso possível</th></tr>
+      <tr><td><strong>Estável</strong></td><td>Pedogênese > Morfogênese</td><td>Usos intensivos</td></tr>
+      <tr><td><strong>Intergrade</strong></td><td>Equilíbrio frágil</td><td>Manejo cuidadoso</td></tr>
+      <tr><td><strong>Instável</strong></td><td>Morfogênese > Pedogênese</td><td>Proteção obrigatória</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- CREDITS -->
+<footer>
+  <p>Concepção e design pedagógico: Prof. Luiz Diego Vidal Santos, UEFS</p>
+  <p>Disciplina: Análise da Paisagem</p>
+  <p>Inspiração mecânica: RISK / War</p>
+  <p>Base teórica: Forman & Godron (1986), Turner & Gardner (2015), Fahrig (2003), McGarigal & Cushman (2002)</p>
+  <p style="margin-top:20px;font-style:italic;color:rgba(139,115,85,0.5);">Valar Morghulis. Todas as paisagens mudam. Mas podemos decidir como.</p>
+</footer>
+
+<!-- BACK TO TOP -->
+<a href="#" class="back-top" title="Voltar ao topo">↑</a>
+
+<script>
+/* ═══ AMBIENT DRONE — Web Audio API ═══ */
+let actx=null, masterGain=null, droneNodes=[], isPlaying=false;
+const audioCtrl=document.getElementById('audio-ctrl');
+
+function createDrone(){
+  actx=new(window.AudioContext||window.webkitAudioContext)();
+  masterGain=actx.createGain();
+  masterGain.gain.value=0;
+  masterGain.connect(actx.destination);
+
+  /* --- camada 1: sub-grave (drone de cello) --- */
+  const o1=actx.createOscillator();
+  o1.type='sawtooth';o1.frequency.value=55; /* A1 */
+  const f1=actx.createBiquadFilter();
+  f1.type='lowpass';f1.frequency.value=120;f1.Q.value=2;
+  const g1=actx.createGain();g1.gain.value=0.35;
+  o1.connect(f1);f1.connect(g1);g1.connect(masterGain);o1.start();
+
+  /* --- camada 2: quinta sombria --- */
+  const o2=actx.createOscillator();
+  o2.type='sawtooth';o2.frequency.value=82.41; /* E2 */
+  const f2=actx.createBiquadFilter();
+  f2.type='lowpass';f2.frequency.value=180;f2.Q.value=1.5;
+  const g2=actx.createGain();g2.gain.value=0.18;
+  o2.connect(f2);f2.connect(g2);g2.connect(masterGain);o2.start();
+
+  /* --- camada 3: pad etéreo (oitava) --- */
+  const o3=actx.createOscillator();
+  o3.type='sine';o3.frequency.value=110; /* A2 */
+  const g3=actx.createGain();g3.gain.value=0.12;
+  o3.connect(g3);g3.connect(masterGain);o3.start();
+
+  /* --- camada 4: vento (ruído filtrado) --- */
+  const bufSize=2*actx.sampleRate;
+  const noiseBuf=actx.createBuffer(1,bufSize,actx.sampleRate);
+  const data=noiseBuf.getChannelData(0);
+  for(let i=0;i<bufSize;i++) data[i]=Math.random()*2-1;
+  const noise=actx.createBufferSource();
+  noise.buffer=noiseBuf;noise.loop=true;
+  const fN=actx.createBiquadFilter();
+  fN.type='bandpass';fN.frequency.value=600;fN.Q.value=0.5;
+  const gN=actx.createGain();gN.gain.value=0.06;
+  noise.connect(fN);fN.connect(gN);gN.connect(masterGain);noise.start();
+
+  /* --- LFO lento no filtro do vento (respiração) --- */
+  const lfo=actx.createOscillator();
+  lfo.type='sine';lfo.frequency.value=0.08;
+  const lfoG=actx.createGain();lfoG.gain.value=300;
+  lfo.connect(lfoG);lfoG.connect(fN.frequency);lfo.start();
+
+  droneNodes=[o1,o2,o3,noise,lfo];
+}
+
+function startDrone(){
+  if(!actx) createDrone();
+  if(actx.state==='suspended') actx.resume();
+  masterGain.gain.cancelScheduledValues(actx.currentTime);
+  masterGain.gain.setValueAtTime(masterGain.gain.value,actx.currentTime);
+  masterGain.gain.linearRampToValueAtTime(0.6,actx.currentTime+2);
+  isPlaying=true;
+  audioCtrl.classList.remove('muted');
+  audioCtrl.textContent='🔊';
+}
+
+function stopDrone(){
+  if(!actx) return;
+  masterGain.gain.cancelScheduledValues(actx.currentTime);
+  masterGain.gain.setValueAtTime(masterGain.gain.value,actx.currentTime);
+  masterGain.gain.linearRampToValueAtTime(0,actx.currentTime+1);
+  isPlaying=false;
+  audioCtrl.classList.add('muted');
+  audioCtrl.textContent='🔇';
+}
+
+function enterSite(){
+  const ov=document.getElementById('audio-overlay');
+  ov.classList.add('hidden');
+  setTimeout(()=>ov.style.display='none',700);
+  startDrone();
+}
+
+function toggleAudio(){
+  if(isPlaying){stopDrone();}else{startDrone();}
+}
+</script>
+
+</body>
+</html>
