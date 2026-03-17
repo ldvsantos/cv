@@ -12,6 +12,25 @@
         "clear": true
       },
       "problemMatcher": []
+    },
+    {
+      "label": "Preview Apresentação (Quarto)",
+      "type": "shell",
+      "command": "Set-Location '${fileDirname}'; quarto preview '${fileBasename}'",
+      "group": "none",
+      "options": {
+        "shell": {
+          "executable": "powershell.exe",
+          "args": ["-NoProfile", "-Command"]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": [],
+      "isBackground": true
     }
   ]
 }
