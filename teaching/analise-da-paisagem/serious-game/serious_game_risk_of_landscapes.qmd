@@ -1,0 +1,919 @@
+﻿---
+title: "Análise da Paisagem"
+subtitle: "Aula Especial - RISK OF LANDSCAPES <br> ⚔️ A Guerra pelas Paisagens de Westeros 🐉"
+author: "Luiz Diego Vidal Santos"
+format:
+  revealjs:
+    logo: ../../../aulas/assets/logo-uefs.webp
+    footer: "UEFS | Análise da Paisagem | Serious Game"
+    slide-number: true
+    theme: [simple, ../../../aulas/assets/uefs.scss]
+    controls: true
+    navigation-mode: linear
+    scrollable: true
+    width: 1280
+    height: 720
+    margin: 0.04
+    css: ../../../aulas/assets/custom.css
+    include-after-body:
+      - ../../../aulas/assets/image-lightbox.html
+      - ../../../aulas/assets/progress-bar.html
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} O que é um Serious Game?
+- [2]{.circle} Risk of Landscapes - O Jogo
+- [3]{.circle} Lore - O Mundo de Westeros
+- [4]{.circle} Casas e Temas Paisagísticos
+- [5]{.circle} Componentes e Preparação
+- [6]{.circle} Regras - Turno de Jogo
+- [7]{.circle} Desafios Pedagógicos
+- [8]{.circle} Avaliação e Pontuação
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Apresentar o *Serious Game* **RISK OF LANDSCAPES** - regras, mecânica, universo temático e critérios de avaliação - preparando os alunos para a **2ª Avaliação Prática** da disciplina.
+:::
+:::
+:::
+
+# [1 - O QUE É UM SERIOUS GAME?]{.section-header}
+
+## Jogos sérios na educação {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+::: {.info-box}
+**Definição**
+
+Um **Serious Game** é um jogo projetado com um propósito educacional primário, que utiliza mecânicas de entretenimento para promover aprendizagem ativa, engajamento e desenvolvimento de competências.
+:::
+
+<br>
+
+> *"O verdadeiro poder não está nos exércitos… está na terra, nas florestas, nos rios que alimentam os reinos."*
+> - Maester Luwin
+:::
+
+::: {.column width="50%"}
+
+### Por que jogar para aprender?
+
+| Aspecto | Benefício |
+|:---|:---|
+| **Motivação** | Competição e narrativa geram engajamento |
+| **Aplicação** | Conceitos são usados em contexto |
+| **Colaboração** | Discussão entre pares |
+| **Feedback** | Respostas certas/erradas dão retorno imediato |
+| **Integração** | Múltiplos conteúdos conectados |
+
+: {.striped .hover}
+:::
+:::
+
+## O que vocês vão aplicar no jogo {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Conteúdos mobilizados
+
+- Modelo **Mancha–Corredor–Matriz**
+- Métricas de composição (**PLAND**, **SHDI**)
+- Métricas de configuração (**NP**, **ED**, **CORE**)
+- **Fragmentação** e limiares críticos
+- **Conectividade** estrutural e funcional
+- **Serviços ecossistêmicos** e trade-offs
+- Relação **espécie–área**
+- Classificação de **Tricart**
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Importante**
+
+O jogo cobre praticamente **todo o conteúdo** visto até aqui na disciplina. Cada território, cada carta narrativa e cada desafio exige a aplicação de conceitos reais de Ecologia da Paisagem.
+
+**Não é um jogo de sorte - é um jogo de conhecimento.**
+:::
+:::
+:::
+
+# [2 - RISK OF LANDSCAPES]{.section-header}
+
+## O jogo {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+| Item | Descrição |
+|:---|:---|
+| **Nome** | RISK OF LANDSCAPES |
+| **Jogadores** | 2 a 6 por tabuleiro |
+| **Duração** | 60 – 90 min |
+| **Disciplina** | Análise da Paisagem |
+| **Temática** | Westeros (Game of Thrones) |
+| **Mecânica** | RISK + Desafios de Ecologia da Paisagem |
+
+: {.striped .hover}
+
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Conceito**
+
+Um jogo de **estratégia territorial** onde a conquista de regiões depende tanto da tática militar quanto do **domínio de conceitos de Ecologia da Paisagem**.
+
+Para atacar, defender e fortalecer seus territórios, vocês precisarão responder **desafios conceituais** baseados nos dados paisagísticos de cada região.
+:::
+:::
+:::
+
+## Mecânica central {.smaller-text}
+
+::: {.columns}
+::: {.column width="60%"}
+### RISK clássico + Ecologia da Paisagem
+
+O jogo se diferencia do RISK tradicional em **3 pontos-chave**:
+
+1. **Passa ou Repassa** 📚 - Antes de cada combate, um desafio educacional obrigatório. Quem acerta ganha vantagem tática.
+
+2. **Desafio da Paisagem** 🌿 - Ao conquistar um território, o jogador deve responder uma pergunta sobre as variáveis paisagísticas daquela região.
+
+3. **Cartas Narrativas** 📜 - A cada turno, uma carta da sua Casa traz um cenário temático com desafio progressivo sobre Ecologia da Paisagem.
+
+:::
+
+::: {.column width="40%"}
+::: {.highlight-box}
+**Consequência direta**
+
+- ✅ Acertou → **bônus tático** (relançar dados, ganhar Tokens de Restauração, mobilizar reforços)
+- ❌ Errou → **penalidade** (perder tokens, enfraquecimento)
+
+**Saber o conteúdo é a principal arma do jogo.**
+:::
+:::
+:::
+
+# [3 - LORE: O MUNDO DE WESTEROS]{.section-header}
+
+## 🎧 Narração da Lore {.smaller-text}
+
+::: {.info-box}
+**Ouça a narração do universo de Westeros antes de começarmos:**
+:::
+
+<br>
+
+```{=html}
+<div style="display: flex; justify-content: center; align-items: center;">
+  <audio controls style="width: 60%;">
+    <source src="audio_narracao.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+</div>
+```
+
+<br>
+
+> *"O verdadeiro poder não está nos exércitos… está na terra, nas florestas, nos rios que alimentam os reinos."*
+> - Maester Luwin
+
+## O continente de Westeros {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### As paisagens do reino
+
+Westeros é um continente ficcional com **enorme diversidade de paisagens** - das tundras geladas de Beyond the Wall às areias de Dorne. Cada região reflete processos ecológicos reais:
+
+- **Beyond the Wall**: Tundra e floresta boreal. Paisagem selvagem, sem intervenção antrópica.
+- **The North**: Grandes florestas boreais contínuas (Wolfswood). Alta cobertura, alta conectividade.
+- **The Riverlands**: Paisagem devastada por guerras e agricultura. Alta fragmentação.
+- **The Reach**: Celeiro de Westeros. Mosaico agrícola diversificado.
+- **Dorne**: Paisagem árida, vegetação esparsa. Matriz desértica.
+:::
+
+::: {.column width="50%"}
+### Por que Westeros?
+
+::: {.info-box}
+Cada região de Westeros foi construída como um **análogo paisagístico** de situações reais:
+
+| Região | Analogia ecológica |
+|:---|:---|
+| Beyond the Wall | Paisagem de referência (controle) |
+| Stark's Region | Alta cobertura florestal contínua |
+| Iron Islands | Abaixo do limiar de percolação |
+| Riverlands | No limiar de fragmentação |
+| The Reach | Alta diversidade composicional |
+| Dorne | Aridez e stepping stones |
+
+: {.striped .hover}
+:::
+:::
+:::
+
+## O Mapa: 11 Macro-regiões, 24 Territórios {.smaller-text}
+
+| Macro-região | Terr. | Perfil paisagístico |
+|:---|:---:|:---|
+| **Beyond the Wall** | 2 | Tundra e floresta boreal extrema. Conectividade natural máxima. |
+| **Stark's Region** | 4 | Grandes florestas boreais. PLAND ~78%, alta conectividade. |
+| **Bolton's Region** | 3 | Transição: florestas fragmentadas por ocupação. |
+| **The Vale** | 1 | Fortaleza montana isolada. Conectividade interna alta, isolamento externo. |
+| **The Riverlands** | 2 | Devastada por guerras. Alta fragmentação, baixa conectividade. |
+| **The Iron Islands** | 1 | Ilha rochosa. PLAND 12,5% - abaixo do limiar de percolação. |
+| **The Westerlands** | 2 | Mineração intensa. Trade-off provisão mineral × regulação. |
+| **The Crownlands** | 2 | Contraste: capital urbanizada vs. ilha preservada. |
+| **The Reach** | 4 | Matriz agrícola diversificada. SHDI alto. |
+| **The Stormlands** | 1 | Floresta temperada sob distúrbio. Tricart intergrade. |
+| **Dorne** | 2 | Paisagem árida. Matriz desértica de baixa permeabilidade. |
+
+: {.striped .hover}
+
+# [4 - AS CASAS E SEUS TEMAS]{.section-header}
+
+## 8 Casas, 8 visões da paisagem {.smaller-text}
+
+Cada casa representa um **tema central da Ecologia da Paisagem**. O baralho narrativo da casa explora esse tema em profundidade ao longo do jogo.
+
+::: {.columns}
+::: {.column width="50%"}
+
+| Casa | Tema central |
+|:---|:---|
+| 🐺 **Stark** | Florestas contínuas, PLAND alto, conectividade |
+| 🐙 **Greyjoy** | Ilhas isoladas, limiar de percolação |
+| 🦁 **Lannister** | Mineração, trade-off provisão/regulação |
+| 🌹 **Tyrell** | Mosaico agrícola, SHDI alto, corredores |
+
+: {.striped .hover}
+
+:::
+
+::: {.column width="50%"}
+
+| Casa | Tema central |
+|:---|:---|
+| ☀ **Martell** | Deserto, stepping stones, aridez |
+| 🦅 **Arryn** | Montanhas, gradiente altitudinal, isolamento |
+| 🐟 **Tully** | Rios fragmentados, matas ripárias |
+| 🦌 **Baratheon** | Tempestades, resiliência vs. resistência |
+
+: {.striped .hover}
+
+:::
+:::
+
+## Habilidades Especiais dos Castelos {.smaller-text}
+
+Cada casa possui um **Castelo Principal** com uma habilidade especial baseada na ecologia local:
+
+| Castelo | Habilidade | Base ecológica |
+|:---|:---|:---|
+| **Winterfell** 🐺 | +1 dado de defesa em Stark's Region | PLAND 78% = cobertura defensiva natural |
+| **Pyke** 🐙 | Ataca/move para qualquer território costeiro | Stepping stones oceânicos |
+| **Casterly Rock** 🦁 | Troca 2 (em vez de 3) Tokens por reforço | SE alto de provisão mineral |
+| **Highgarden** 🌹 | +1 Token de Restauração extra por acerto | SHDI alto = produção abundante |
+| **Sunspear** ☀ | 1º ataque por rodada falha automaticamente | Deserto como barreira natural |
+| **The Eyrie** 🦅 | Só pode ser atacada com ≥3 tokens | Isolamento montano extremo |
+| **Riverrun** 🐟 | Territórios conectados via rios expandidos | Corredores fluviais |
+| **Storm's End** 🦌 | Token perdido sobrevive com dado 5-6 | Resiliência pós-distúrbio (Tricart) |
+
+: {.striped .hover}
+
+# [5 - COMPONENTES E PREPARAÇÃO]{.section-header}
+
+## Componentes do jogo {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+| Componente | Qtd. | Descrição |
+|:---|:---:|:---|
+| Mapa de Westeros | 1 | 24 territórios, 11 macro-regiões |
+| Cartas de Território | 24 | Dados paisagísticos + desafio |
+| Cartas Narrativas | 80 | 10 por casa × 8 casas |
+| Capas de Casa | 8 | Identificação visual |
+| Dados (d6) | 5 | 3 ataque + 2 defesa |
+| Tokens de Exército | 6 cores | Peões para marcar controle |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+
+| Componente | Qtd. | Descrição |
+|:---|:---:|:---|
+| Cartas de Missão | 10 | Objetivos secretos |
+| Tokens de Restauração | 30 | Bônus por acerto |
+| Tabela de Referência | 6 | Fórmulas e conceitos |
+
+: {.striped .hover}
+
+::: {.highlight-box}
+**Cada carta de território tem 9 variáveis:**
+
+PLAND, NP, AREA_MN, SHDI, CONNECT, ED, CORE, SE e um Desafio da Paisagem.
+:::
+:::
+:::
+
+## Preparação: Como montar a partida {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### Passo a passo
+
+1. **Escolher casa** - cada jogador escolhe 1 das 8 casas. Recebe 6 tokens e o baralho narrativo (10 cartas).
+2. **Distribuir territórios** - 24 cartas embaralhadas e distribuídas igualmente. Restantes ficam neutros.
+3. **Posicionar tokens** - coloca **3 tokens no mapa** (≥1 no Castelo da casa). Os outros **3 ficam na reserva**.
+4. **Missão secreta** - cada jogador recebe 1 carta de missão.
+:::
+
+::: {.column width="50%"}
+
+### Distribuição por nº de jogadores
+
+| Jogadores | Terr./jogador | Neutros | No mapa | Reserva |
+|:---:|:---:|:---:|:---:|:---:|
+| 2 | 8 | 8 | 3 | 3 |
+| 3 | 6 | 6 | 3 | 3 |
+| 4 | 5 | 4 | 3 | 3 |
+| 5 | 4 | 4 | 3 | 3 |
+| 6 | 3 | 6 | 3 | 3 |
+
+: {.striped .hover}
+
+::: {.info-box}
+🛡️ **Proteção inicial:** na 1ª rodada, castelos principais **não podem ser atacados**.
+:::
+:::
+:::
+
+# [6 - REGRAS: TURNO DE JOGO]{.section-header}
+
+## As 5 fases do turno {.smaller-text}
+
+Cada turno possui **5 fases obrigatórias**, nesta ordem:
+
+::: {.columns}
+::: {.column width="50%"}
+
+| Fase | Nome | Ícone |
+|:---:|:---|:---:|
+| 1 | Mobilização (Reforços) | 🌲 |
+| 2 | Ataque | ⚔️ |
+| 3 | Desafio da Paisagem | 🌿 |
+| 4 | Narrativa da Casa | 📜 |
+| 5 | Fortificação | 🏰 |
+
+: {.striped .hover}
+
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Regra fundamental**
+
+Cada casa possui **6 tokens**. Todos começam com **3 no mapa** e **3 na reserva**.
+
+Tokens da reserva **só entram no jogo por mérito**:
+
+- ✅ Acertar desafios (Bônus de Excelência)
+- ✅ Controlar macro-região completa
+- ✅ Trocar 3 Tokens de Restauração
+:::
+:::
+:::
+
+## Fase 1 - Mobilização 🌲 {.smaller-text}
+
+No início do turno, o jogador pode:
+
+::: {.columns}
+::: {.column width="55%"}
+
+1. **Reposicionar tokens** livremente entre territórios conectados
+2. **Mobilizar da reserva** - somente por mérito:
+
+| Fonte | Condição |
+|:---|:---|
+| Bônus de Excelência | Acertou Desafio + Narrativa no turno anterior |
+| Macro-região completa | Controlar todos os territórios de uma macro-região |
+| Tokens de Restauração | Trocar 3 Tokens → +1 token no mapa |
+| Habilidade de Castelo | Algumas casas têm mobilização especial |
+
+: {.striped .hover}
+
+:::
+
+::: {.column width="45%"}
+::: {.info-box}
+**Bônus por macro-região completa**
+
+Controlar **todos os territórios** de uma macro-região concede **+1 token da reserva** (ou +1 Token de Restauração para macro-regiões de 1 território).
+
+*Justificativa ecológica:* paisagens contínuas geram mais resiliência e recursos.
+:::
+:::
+:::
+
+## Fase 2 - Ataque ⚔️ {.smaller-text}
+
+O ataque possui **4 passos obrigatórios**:
+
+### Passo 1 - Teste de Mobilização do Atacante 🎲
+
+Antes de atacar, o jogador prova capacidade logística:
+
+1. Escolhe quantos tokens compromete (1 a 3), deixando ≥1 na origem
+2. Lança **1 dado por token comprometido**
+3. Calcula a **média** (soma ÷ nº de dados)
+4. Média deve ser **≥ total acumulado** de tokens movimentados em ataques nesta rodada
+
+::: {.highlight-box}
+**Efeito estratégico:** cada ataque consecutivo exige média mais alta. Comprometer poucos tokens → mais ataques possíveis (porém fracos). Comprometer muitos → mais forte, mas eleva o patamar. **Impede dominação rápida e força decisões táticas.**
+:::
+
+## Passo 2 - Teste do Defensor 🛡️ {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+O defensor testa a organização da sua defesa:
+
+1. Lança dados = nº de tokens no território (máx. 2)
+2. Calcula a **média** → arredonda para baixo
+3. Tokens efetivos = ⌊média⌋ (mínimo 1)
+4. Usa dados = tokens efetivos no combate
+
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Efeito estratégico**
+
+Mesmo um território "forte" (3 tokens) pode ter defesa enfraquecida por má mobilização - simula **surpresa tática** ou desorganização.
+
+O defensor **não pode contar automaticamente** com toda a sua guarnição.
+:::
+:::
+:::
+
+## Passo 3 - Passa ou Repassa 📚 {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+**Desafio educacional obrigatório** antes do combate:
+
+1. Professor/jogador designado lê a **pergunta** da carta do território
+2. **Atacante responde primeiro**:
+   - ✅ Acertou → **relançar 1 dado** no combate
+   - ❌ Errou → pergunta **repassada ao defensor**
+3. Se repassada:
+   - ✅ Defensor acertou → defensor relança 1 dado
+   - ❌ Ambos erraram → combate sem bônus. Ambos perdem 1 Token de Restauração
+
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**Efeito pedagógico**
+
+A cada tentativa de ataque, **pelo menos 1 jogador** é forçado a responder sobre Ecologia da Paisagem.
+
+Mesmo ataques fracassados **geram aprendizado**.
+
+Combinado com o Teste de Mobilização, **impede que conhecimento sozinho garanta dominação**.
+:::
+:::
+:::
+
+## Passo 4 - Combate ⚔️ {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+1. **Atacante** lança dados = tokens comprometidos (máx. 3)
+2. **Defensor** lança dados = tokens efetivos (máx. 2)
+3. Quem venceu o Passa ou Repassa pode **relançar 1 dado**
+4. Dados ordenados do **maior ao menor**, comparados **par a par**
+5. **Empate favorece o defensor**
+6. Perdedor de cada par **remove 1 token** → retorna à reserva
+
+:::
+
+::: {.column width="45%"}
+::: {.info-box}
+**Conquista**
+
+Território a **0 tokens** → **conquistado**: atacante move ≥1 token e pega a carta.
+
+🏆 **Captura:** o atacante captura todos os tokens restantes do defensor - vão para a **reserva do atacante**!
+:::
+
+::: {.highlight-box}
+**Regra de conectividade:** se o território atacante tem CONNECT ≥ 60, o atacante pode relançar **1 dado adicional** (cumulativo com o Passa ou Repassa).
+:::
+:::
+:::
+
+## Fase 3 - Desafio da Paisagem 🌿 {.smaller-text}
+
+**Fase pedagógica central do jogo.** Ao conquistar um território:
+
+::: {.columns}
+::: {.column width="55%"}
+
+1. O jogador lê o desafio em voz alta
+2. Tem **2 minutos** para responder (pode consultar a Tabela de Referência)
+3. Os demais jogadores e/ou o professor avaliam
+
+| Resultado | Consequência |
+|:---|:---|
+| **Acerto completo** | +2 Tokens de Restauração + ocupa |
+| **Acerto parcial** | +1 Token de Restauração + ocupa |
+| **Erro** | Ocupa, mas **1 token volta à reserva** |
+
+: {.striped .hover}
+
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**Exemplo de desafio**
+
+*Território: Winterfell (PLAND 78%, NP 5, CONNECT 85)*
+
+> "Com 78% de cobertura florestal, a vegetação funciona como mancha, corredor ou **matriz**? Justifique usando o conceito de elemento dominante no mosaico paisagístico."
+
+:::
+:::
+:::
+
+## Fase 4 - Narrativa da Casa 📜 {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+No final de **cada turno** (mesmo sem conquistas), o jogador compra 1 carta do baralho da sua casa:
+
+- Lê a narrativa em voz alta
+- Responde ao desafio da carta
+
+| Resultado | Consequência |
+|:---|:---|
+| **Acerto completo** | +3 Tokens de Restauração |
+| **Acerto parcial** | +1 Token de Restauração |
+| **Erro** | 1 token → volta à reserva |
+
+: {.striped .hover}
+
+:::
+
+::: {.column width="45%"}
+::: {.info-box}
+**🎯 BÔNUS DE EXCELÊNCIA**
+
+Se no mesmo turno o jogador acertou **completamente** pelo menos 1 Desafio (Fase 3) **E** a Narrativa (Fase 4):
+
+→ Mobiliza imediatamente **1 token da reserva** para qualquer território seu.
+
+**Esta é a principal forma de crescer suas forças!**
+:::
+:::
+:::
+
+## Fase 5 - Fortificação 🏰 {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+O jogador pode realizar **uma transferência** de tokens entre dois territórios seus **conectados por cadeia contínua de territórios próprios**.
+
+Pode mover quantos tokens quiser nessa transferência.
+
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Analogia ecológica**
+
+A fortificação simula a **conectividade funcional** - recursos só fluem onde há continuidade territorial.
+
+**Paisagem fragmentada = logística comprometida.**
+:::
+
+::: {.highlight-box}
+⚠️ Território com **0 tokens** fica **desguarnecido** e pode ser invadido automaticamente no turno seguinte!
+:::
+:::
+:::
+
+# [7 - DESAFIOS PEDAGÓGICOS]{.section-header}
+
+## Variáveis paisagísticas das cartas {.smaller-text}
+
+Cada carta de território apresenta **9 variáveis** reais da Ecologia da Paisagem:
+
+| Variável | Sigla | Unidade | O que mede |
+|:---|:---:|:---:|:---|
+| Cobertura florestal | PLAND | % | Proporção da paisagem coberta por vegetação nativa |
+| Nº de fragmentos | NP | contagem | Quantidade de manchas de habitat |
+| Área média | AREA_MN | ha | Tamanho médio das manchas |
+| Diversidade de Shannon | SHDI | adim. | Heterogeneidade composicional |
+| Conectividade | CONNECT | 0–100 | Grau de conexão funcional entre manchas |
+| Densidade de borda | ED | m/ha | Comprimento total de borda por unidade de área |
+| Área nuclear | CORE | % | Proporção de habitat protegida do efeito de borda |
+| Serviços ecossistêmicos | SE | 0–100 | Índice composto de provisão, regulação e suporte |
+| Desafio da Paisagem | - | texto | Questão conceitual |
+
+: {.striped .hover}
+
+## Relações que vocês precisam dominar {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### Relações diretas
+
+| Se... | Então... |
+|:---|:---|
+| PLAND ↑ | NP ↓, AREA_MN ↑ |
+| NP ↑ | ED ↑, CORE ↓ |
+| ED ↑ | CORE ↓ |
+| PLAND ↑ | CONNECT ↑ → SE ↑ |
+
+: {.striped .hover}
+
+::: {.info-box}
+**Atenção:** SHDI alto pode vir de PLAND alto **OU** baixo - **diversidade composicional ≠ cobertura florestal**.
+:::
+
+:::
+
+::: {.column width="50%"}
+### Limiares importantes
+
+| Limiar | Valor | Significado |
+|:---|:---:|:---|
+| Percolação | ~59% | Conectividade estrutural em mapas aleatórios |
+| Empírico | 20–30% | Ponto de inflexão para biodiversidade |
+| Espécie–área | $S = cA^z$ | z ≈ 0,25 para fragmentos continentais |
+
+: {.striped .hover}
+
+::: {.highlight-box}
+**Dica para o jogo:** compare os valores entre territórios para justificar suas respostas. Os dados são coerentes entre si!
+:::
+:::
+:::
+
+## Tokens de Restauração: Seu capital ecológico {.smaller-text}
+
+Os Tokens de Restauração representam o **capital ecológico** acumulado ao demonstrar conhecimento:
+
+| Uso | Custo | Efeito |
+|:---|:---:|:---|
+| **Mobilizar token** | 3 tokens | +1 token da reserva para o mapa |
+| **Corredor ecológico** | 4 tokens | Conecta 2 territórios não adjacentes por 1 turno |
+| **Área protegida** | 5 tokens | 1 território imune a ataque por 1 rodada |
+| **Stepping stone** | 2 tokens | Move 1 token entre territórios separados por 1 inimigo |
+
+: {.striped .hover}
+
+::: {.info-box}
+**Acumular Tokens de Restauração = vantagem estratégica.** Quem estuda, joga melhor.
+:::
+
+# [8 - AVALIAÇÃO E PONTUAÇÃO]{.section-header}
+
+## Regra do Castelo: Eliminação 👑 {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+::: {.highlight-box}
+**Regra mais importante do jogo**
+
+Se um jogador conquista o **Castelo Principal** de um oponente → **oponente eliminado**, independentemente de quantos territórios ele ainda possua.
+:::
+
+O conquistador recebe:
+
+- ✅ Todos os **territórios** do eliminado
+- ✅ Todos os **tokens** (mapa + reserva)
+- ✅ A **habilidade especial** do castelo
+
+:::
+
+::: {.column width="50%"}
+
+::: {.info-box}
+**Jogador eliminado → Conselheiro**
+
+O jogador eliminado **não sai da mesa** - torna-se **Conselheiro** do conquistador, podendo ajudar a responder desafios.
+
+**Objetivo pedagógico:** mantém o engajamento e promove aprendizado cooperativo.
+:::
+:::
+:::
+
+## Missões Secretas {.smaller-text}
+
+Cada jogador recebe uma **missão secreta** que define um caminho alternativo de vitória:
+
+| # | Missão | Conceito paisagístico |
+|:---:|:---|:---|
+| 1 | Controlar Stark's Region (4 terr.) | Manter a maior mancha contínua |
+| 2 | Controlar 3 macro-regiões completas | Dominar mosaicos funcionais |
+| 3 | Winterfell + Highgarden + Sunspear | Gradiente boreal → agrícola → árido |
+| 4 | Controlar 12 territórios quaisquer | Expandir PLAND territorial |
+| 5 | Controlar todas as regiões costeiras | Corredor costeiro |
+| 6 | Conquistar Castelo de jogador específico | Exclusão competitiva |
+| 7 | Riverlands + Reach + Crownlands (8 terr.) | Corredor central |
+| 8 | 8 territórios + ≥5 Tokens de Restauração | Equilíbrio conquista–conservação |
+| 9 | Dragonstone + Eyrie + Winterfell | Paisagens com maior área nuclear |
+| 10 | Beyond the Wall + Dorne (4 terr.) | Conectar extremos climáticos |
+
+: {.striped .hover}
+
+## Condições de vitória {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+O jogo termina quando:
+
+1. **Missão secreta cumprida** → vitória imediata
+2. **Dominação total** → eliminou todos via Regra do Castelo
+3. **Tempo esgotado** (90 min) → maior **Pontuação de Paisagem**
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Pontuação de Paisagem** (se empate por tempo):
+
+$$P = (N_{terr} \times 3) + (N_{tokens} \times 2) + (N_{castelos} \times 5) + B_{macro}$$
+
+Onde:
+
+- $N_{terr}$ = nº de territórios controlados
+- $N_{tokens}$ = tokens no mapa
+- $N_{castelos}$ = castelos que possui
+- $B_{macro}$ = bônus por macro-regiões completas
+:::
+:::
+:::
+
+## Como será a avaliação da disciplina {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+
+### Critérios avaliativos: 2ª Avaliação
+
+A **2ª Avaliação Prática** (em grupo) será baseada no desempenho no Serious Game:
+
+| Critério | Peso | O que avalia |
+|:---|:---:|:---|
+| **Acertos nos desafios** | 40% | Domínio dos conceitos de Ecologia da Paisagem |
+| **Qualidade das justificativas** | 25% | Capacidade de argumentação e uso de dados |
+| **Participação e engajamento** | 20% | Envolvimento ativo no jogo e nas discussões |
+| **Uso estratégico dos conceitos** | 15% | Aplicação dos conceitos nas decisões de jogo |
+
+: {.striped .hover}
+
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**O que conta para a nota**
+
+- ✅ Respostas completas e fundamentadas
+- ✅ Uso correto de métricas e conceitos
+- ✅ Colaboração com colegas (inclusive como Conselheiro)
+- ✅ Decisões estratégicas baseadas nos dados das cartas
+
+⚠️ **Não é sobre ganhar o jogo - é sobre demonstrar conhecimento durante o jogo.**
+:::
+:::
+:::
+
+## Variantes de jogo {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### 🤝 Modo Cooperativo - "Restauração de Westeros"
+
+Jogadores trabalham **juntos** contra o tabuleiro. Eventos de degradação são sorteados a cada rodada. Objetivo: acertar desafios para "curar" os territórios.
+
+### 🗣️ Modo Debate - "Conselho de Mestres"
+
+Ao conquistar, o jogador **defende sua resposta** perante os colegas, que podem fazer perguntas. O grupo vota se a resposta é satisfatória.
+
+:::
+
+::: {.column width="50%"}
+
+### ⚡ Modo Rápido - "Skirmish"
+
+Usa apenas **11 territórios** (um por macro-região). Jogo em 30–45 minutos.
+
+### 📖 Modo Narrativa Intensiva - "Crônicas de Westeros"
+
+Cada jogador deve completar **todas as 10 cartas** da sua casa em sequência. Primeiro a completar as 10 cartas **vence automaticamente**. Acerto completo vale 5 Tokens de Restauração.
+
+:::
+:::
+
+## Preparação para o jogo {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### O que estudar
+
+::: {.info-box}
+1. Revise os slides das Aulas 07 a 19
+2. Domine as **9 métricas** e suas relações
+3. Pratique interpretar **valores numéricos** de dados paisagísticos
+4. Releia sobre **limiares de fragmentação**
+5. Revise o conceito **Mancha–Corredor–Matriz**
+6. Estude os **serviços ecossistêmicos** e trade-offs
+7. Revise a **classificação de Tricart**
+:::
+:::
+
+::: {.column width="50%"}
+
+### Materiais disponíveis
+
+::: {.highlight-box}
+📋 **Manual completo** do jogo disponível no AVA
+
+📊 **Tabela de Referência** com fórmulas e conceitos - será distribuída no dia
+
+🗺️ **Mapa de Westeros** impresso
+
+🃏 **Cartas de Território** e **Narrativas** impressas
+
+🎲 **Dados e tokens** fornecidos pelo professor
+:::
+
+::: {.info-box}
+📅 **Data:** 20/05/2026 - 12º Encontro
+
+⏰ **Duração:** 60 – 90 min
+
+👥 **Grupos:** 2 a 6 jogadores por tabuleiro
+:::
+:::
+:::
+
+---
+
+::: {.columns}
+::: {.column width="100%" style="text-align: center;"}
+
+<br>
+<br>
+
+### ⚔️ RISK OF LANDSCAPES ⚔️
+
+<br>
+
+> *"Valar Morghulis - Todas as paisagens mudam.*
+> *Mas podemos decidir como."*
+
+<br>
+
+**Preparem-se. O Inverno está chegando...** 🐺
+
+<br>
+
+E com ele, a 2ª Avaliação. 📚
+
+:::
+:::
