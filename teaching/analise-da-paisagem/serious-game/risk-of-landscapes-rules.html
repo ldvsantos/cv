@@ -500,11 +500,110 @@ footer p{margin-bottom:8px;}
 .back-top:hover{opacity:1;}
 
 /* ═══ RESPONSIVE ═══ */
-@media(max-width:600px){
-  .houses-grid,.mission-grid{grid-template-columns:1fr;}
-  .nav-inner{gap:4px;}
-  nav a{font-size:9px;padding:4px 6px;}
-  .hero h1{letter-spacing:3px;}
+@media(max-width:768px){
+  body{font-size:16px;line-height:1.65;}
+  .container{padding:0 16px;}
+  section{padding:48px 0;}
+
+  /* Nav - hamburger menu */
+  nav{position:fixed;top:0;left:0;right:0;}
+  .nav-inner{
+    flex-wrap:wrap;padding:10px 16px;gap:4px;
+  }
+  .nav-logo{font-size:12px;letter-spacing:1px;width:100%;text-align:center;margin-right:0;padding-bottom:6px;border-bottom:1px solid rgba(139,115,85,0.15);}
+  nav a{font-size:9px;padding:5px 7px;letter-spacing:0.5px;}
+
+  /* Hero */
+  .hero{padding:100px 16px 60px;min-height:auto;}
+  .hero-emblem{font-size:56px;margin-bottom:16px;}
+  .hero h1{letter-spacing:2px;}
+  .hero-quote{font-size:15px;margin-top:20px;}
+  .hero-meta{font-size:10px;letter-spacing:1px;}
+
+  /* Headings */
+  h2{font-size:22px;letter-spacing:2px;margin-bottom:28px;}
+  h3{font-size:17px;margin:24px 0 12px;}
+
+  /* Tables - scrollable wrapper */
+  table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;white-space:nowrap;font-size:14px;}
+  th{font-size:11px;padding:8px 10px;white-space:nowrap;}
+  td{padding:8px 10px;white-space:normal;min-width:80px;}
+
+  /* Boxes */
+  .info-box,.warning-box{padding:16px;font-size:15px;}
+  .lore-box{padding:18px 16px;}
+
+  /* Phases */
+  .phase{padding:18px 16px;}
+  .phase-header{gap:8px;}
+  .phase-number{width:32px;height:32px;font-size:14px;}
+  .phase-title{font-size:15px;}
+  .phase-emoji{font-size:18px;}
+
+  /* Grids: single column */
+  .houses-grid{grid-template-columns:1fr;gap:12px;}
+  .mission-grid{grid-template-columns:1fr;gap:10px;}
+
+  /* Mission cards */
+  .mission{padding:12px 14px;gap:10px;}
+  .mission-num{width:26px;height:26px;font-size:12px;}
+
+  /* Map iframe */
+  #map iframe{height:350px;}
+
+  /* Formula */
+  .formula{font-size:15px;padding:12px;overflow-x:auto;}
+
+  /* Divider */
+  .divider{padding:24px 0;font-size:18px;letter-spacing:8px;}
+
+  /* Footer */
+  footer{padding:40px 16px;font-size:10px;}
+
+  /* Audio overlay */
+  #audio-overlay .ao-dragon{font-size:64px;}
+  #audio-overlay .ao-title{font-size:20px;letter-spacing:2px;}
+  #audio-overlay .ao-sub{font-size:14px;margin-bottom:24px;padding:0 16px;}
+  #audio-overlay .ao-btn{font-size:11px;padding:12px 28px;letter-spacing:2px;}
+
+  /* Audio control & back to top */
+  #audio-ctrl{width:38px;height:38px;font-size:16px;bottom:16px;left:16px;}
+  .back-top{width:38px;height:38px;font-size:16px;bottom:16px;right:16px;}
+
+  /* Print cards button */
+  #cards a[href]{padding:14px 24px!important;font-size:13px!important;letter-spacing:2px!important;}
+}
+
+@media(max-width:420px){
+  body{font-size:15px;}
+  .nav-inner{padding:8px 12px;}
+  nav a{font-size:8px;padding:4px 5px;}
+  .container{padding:0 12px;}
+  section{padding:36px 0;}
+
+  h2{font-size:19px;letter-spacing:1px;margin-bottom:20px;}
+  h3{font-size:15px;}
+
+  .hero{padding:90px 12px 48px;}
+  .hero-emblem{font-size:44px;}
+  .hero-quote{font-size:14px;}
+
+  .phase{padding:14px 12px;}
+  .phase-title{font-size:14px;}
+  .info-box,.warning-box{padding:12px;font-size:14px;}
+  .lore-box{padding:14px 12px;}
+
+  table{font-size:13px;}
+  th{font-size:10px;padding:6px 8px;}
+  td{padding:6px 8px;min-width:60px;}
+
+  .formula{font-size:13px;padding:10px 8px;}
+
+  #map iframe{height:280px;}
+
+  .house-card{padding:14px;}
+  .house-card h4{font-size:14px;}
+  .house-card p{font-size:13px;}
 }
 
 @media print{

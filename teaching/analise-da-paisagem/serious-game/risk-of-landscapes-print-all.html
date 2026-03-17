@@ -225,6 +225,18 @@ body{padding-top:56px;}
 .iron-islands .sigil{border-color:#8A8A8A;background:rgba(138,138,138,0.08);}
 .iron-islands .card-header{border-bottom-color:rgba(138,138,138,0.35);}
 
+.beyond-the-wall .region-name{color:#E0E8F0;}
+.beyond-the-wall .sigil{border-color:#E0E8F0;background:rgba(224,232,240,0.08);}
+.beyond-the-wall .card-header{border-bottom-color:rgba(224,232,240,0.35);}
+
+.starks-region .region-name{color:#A0B4C8;}
+.starks-region .sigil{border-color:#A0B4C8;background:rgba(160,180,200,0.08);}
+.starks-region .card-header{border-bottom-color:rgba(160,180,200,0.35);}
+
+.boltons-region .region-name{color:#A05050;}
+.boltons-region .sigil{border-color:#A05050;background:rgba(160,80,80,0.08);}
+.boltons-region .card-header{border-bottom-color:rgba(160,80,80,0.35);}
+
 /* ═══ CARD BACK (TERRITORY) ═══ */
 .card-back{
   width:71mm;height:120.5mm;
@@ -448,6 +460,7 @@ body{padding-top:56px;}
   <symbol id="sigil-martell" viewBox="0 0 102.83 104.19"><image href="SVG/Martell.svg" width="102.83" height="104.19"/></symbol>
   <symbol id="sigil-targaryen" viewBox="0 0 100 100"><text x="50" y="68" text-anchor="middle" font-size="55" fill="#C84040">🐉</text></symbol>
   <symbol id="sigil-greyjoy" viewBox="0 0 102.83 104.19"><image href="SVG/Greyjoy.svg" width="102.83" height="104.19"/></symbol>
+  <symbol id="sigil-nightswatch" viewBox="0 0 100 100"><text x="50" y="68" text-anchor="middle" font-size="55" fill="#E0E8F0">❄</text></symbol>
 </svg>
 
 <!-- ══════════════════════════════════════════════ -->
@@ -475,24 +488,36 @@ body{padding-top:56px;}
 /* ═══════════════════════════════════════════════════ */
 
 const cards = [
-  {region:"Winterfell",macro:"The North",css:"the-north",sigil:"sigil-stark",
+  {region:"Castle Black",macro:"Beyond the Wall",css:"beyond-the-wall",sigil:"sigil-nightswatch",
+   pland:87.2,np:5,area_mn:17440,shdi:0.42,connect:92,ed:8.5,core:82.4,se:78,
+   challenge:"A Muralha funciona como barreira ecológica: apesar de PLAND altíssimo (87%), a conectividade norte-sul é bloqueada. Diferencie conectividade estrutural de conectividade funcional usando este exemplo."},
+  {region:"Hardhome",macro:"Beyond the Wall",css:"beyond-the-wall",sigil:"sigil-nightswatch",
+   pland:91.2,np:3,area_mn:30400,shdi:0.35,connect:95,ed:5.8,core:88.5,se:82,
+   challenge:"Hardhome é a paisagem mais preservada de Westeros (PLAND=91%). Por que este território serve como paisagem de referência (controle)? Que valor tem para comparações com paisagens degradadas ao sul?"},
+  {region:"Winterfell",macro:"Stark's Region",css:"starks-region",sigil:"sigil-stark",
    pland:78.4,np:12,area_mn:6533,shdi:0.68,connect:88,ed:18.5,core:72.1,se:85,
    challenge:"Winterfell possui 78% de cobertura florestal (Wolfswood). Qual elemento do modelo mancha-corredor-matriz predomina nesta paisagem? Justifique."},
-  {region:"The Dreadfort",macro:"The North",css:"the-north",sigil:"sigil-stark",
-   pland:64.2,np:24,area_mn:2675,shdi:1.05,connect:62,ed:34.8,core:55.3,se:68,
-   challenge:"Compare NP (24) e AREA_MN (2675 ha) com Winterfell (NP=12, AREA_MN=6533). A paisagem de Dreadfort é mais ou menos fragmentada? Justifique com ambas as métricas."},
-  {region:"White Harbor",macro:"The North",css:"the-north",sigil:"sigil-stark",
+  {region:"White Harbor",macro:"Stark's Region",css:"starks-region",sigil:"sigil-stark",
    pland:45.8,np:38,area_mn:1205,shdi:1.42,connect:41,ed:48.2,core:38.6,se:52,
-   challenge:"White Harbor tem o menor PLAND de The North. Usando a relação espécie-área (S = cAᶻ), o que se espera para a biodiversidade local comparada a Winterfell?"},
-  {region:"Moat Cailin",macro:"The North",css:"the-north",sigil:"sigil-stark",
+   challenge:"White Harbor tem o menor PLAND de Stark's Region. Usando a relação espécie-área (S = cAᶻ), o que se espera para a biodiversidade local comparada a Winterfell?"},
+  {region:"Moat Cailin",macro:"Stark's Region",css:"starks-region",sigil:"sigil-stark",
    pland:52.3,np:31,area_mn:1688,shdi:1.28,connect:48,ed:42.7,core:44.2,se:58,
    challenge:"Moat Cailin é um gargalo entre o Norte e o Sul. Que função de corredor (conduto, filtro ou barreira) a paisagem exerce neste ponto estratégico?"},
+  {region:"Last Hearth",macro:"Stark's Region",css:"starks-region",sigil:"sigil-stark",
+   pland:65.3,np:16,area_mn:4081,shdi:0.82,connect:74,ed:24.6,core:60.8,se:72,
+   challenge:"Last Hearth marca a transição boreal onde a cobertura contínua começa a se fragmentar (PLAND=65%). Compare com Winterfell (78%) e Dreadfort (64%): o que o gradiente latitudinal revela sobre a fragmentação progressiva?"},
+  {region:"The Dreadfort",macro:"Bolton's Region",css:"boltons-region",sigil:"sigil-stark",
+   pland:64.2,np:24,area_mn:2675,shdi:1.05,connect:62,ed:34.8,core:55.3,se:68,
+   challenge:"Compare NP (24) e AREA_MN (2675 ha) com Winterfell (NP=12, AREA_MN=6533). A paisagem de Dreadfort é mais ou menos fragmentada? Justifique com ambas as métricas."},
+  {region:"Karhold",macro:"Bolton's Region",css:"boltons-region",sigil:"sigil-stark",
+   pland:42.5,np:40,area_mn:1062,shdi:1.38,connect:36,ed:46.5,core:34.2,se:48,
+   challenge:"Karhold tem NP=40, alto para seu PLAND (42,5%). A relação entre perda de habitat e número de fragmentos é não-linear: a fragmentação se acelera na faixa 30–60% de PLAND. Em que ponto da curva de NP Karhold se encontra?"},
+  {region:"Barrowlands",macro:"Bolton's Region",css:"boltons-region",sigil:"sigil-stark",
+   pland:30.8,np:46,area_mn:670,shdi:1.68,connect:24,ed:58.4,core:22.8,se:40,
+   challenge:"Barrowlands tem fragmentos residuais em matriz agrícola (PLAND=30,8%). A proximidade com as florestas boreais do norte poderia permitir recolonização via efeito resgate. Explique a teoria de metapopulações e como a distância à fonte afeta a dinâmica populacional."},
   {region:"The Eyrie",macro:"The Vale",css:"the-vale",sigil:"sigil-arryn",
    pland:61.5,np:18,area_mn:3417,shdi:0.92,connect:72,ed:28.4,core:58.7,se:76,
    challenge:"A paisagem do Vale é isolada por montanhas, mas tem alta conectividade interna (72). Explique como o relevo pode aumentar a conectividade estrutural mesmo com PLAND moderado."},
-  {region:"Gulltown",macro:"The Vale",css:"the-vale",sigil:"sigil-arryn",
-   pland:38.7,np:42,area_mn:921,shdi:1.55,connect:34,ed:52.6,core:32.4,se:48,
-   challenge:"Gulltown tem 42 fragmentos com área média de 921 ha. Se a largura de borda é 100 m e os fragmentos são circulares, estime a proporção de área nuclear."},
   {region:"Riverrun",macro:"The Riverlands",css:"the-riverlands",sigil:"sigil-tully",
    pland:28.4,np:56,area_mn:507,shdi:1.85,connect:18,ed:68.3,core:22.5,se:35,
    challenge:"Riverrun tem PLAND de 28%. Esta paisagem ultrapassou o limiar crítico de fragmentação (20–30%)? Que consequências ecológicas esperar?"},
@@ -511,12 +536,15 @@ const cards = [
   {region:"Oldtown",macro:"The Reach",css:"the-reach",sigil:"sigil-tyrell",
    pland:26.8,np:52,area_mn:515.4,shdi:1.88,connect:16,ed:70.2,core:18.9,se:45,
    challenge:"Oldtown tem 52 fragmentos (NP). Se 12 deles têm área < 50 ha, qual a porcentagem de fragmentos abaixo do tamanho mínimo viável para grandes mamíferos?"},
+  {region:"Horn Hill",macro:"The Reach",css:"the-reach",sigil:"sigil-tyrell",
+   pland:34.2,np:45,area_mn:760,shdi:1.72,connect:26,ed:60.8,core:26.5,se:50,
+   challenge:"Horn Hill está na zona de transição floresta-campo (PLAND=34,2%, ED=60,8 m/ha). Explique o conceito de ecótono e por que faixas de transição entre ecossistemas podem ter biodiversidade maior que os ecossistemas adjacentes."},
+  {region:"Ashford",macro:"The Reach",css:"the-reach",sigil:"sigil-tyrell",
+   pland:28.6,np:50,area_mn:572,shdi:1.82,connect:32,ed:64.5,core:20.4,se:48,
+   challenge:"Ashford possui corredores de sebes (hedgerows) entre parcelas agrícolas, resultando em CONNECT=32 apesar de PLAND=28,6%. As sebes funcionam como corredores ecológicos lineares? Para quais grupos taxonômicos são eficazes? Explique o conceito de paisagem complementar."},
   {region:"Storm's End",macro:"The Stormlands",css:"the-stormlands",sigil:"sigil-baratheon",
    pland:55.7,np:22,area_mn:2531.8,shdi:1.15,connect:58,ed:36.2,core:48.5,se:65,
    challenge:"Storm's End tem tempestades frequentes. Classifique esta paisagem segundo Tricart: meio estável, intergrades ou instável? Justifique."},
-  {region:"Shipbreaker Bay",macro:"The Stormlands",css:"the-stormlands",sigil:"sigil-baratheon",
-   pland:48.3,np:28,area_mn:1725,shdi:1.35,connect:44,ed:44.3,core:40.8,se:56,
-   challenge:"Compare a conectividade de Shipbreaker Bay (44) com a de The Eyrie (72). Que fatores da matriz explicam essa diferença?"},
   {region:"Sunspear",macro:"Dorne",css:"dorne",sigil:"sigil-martell",
    pland:18.6,np:35,area_mn:531.4,shdi:1.72,connect:15,ed:58.7,core:12.4,se:32,
    challenge:"Sunspear tem o menor PLAND do jogo. Em qual categoria de serviço ecossistêmico (provisão, regulação, cultural, suporte) a perda é mais crítica num ambiente árido?"},
@@ -531,15 +559,12 @@ const cards = [
    challenge:"Dragonstone é uma ilha com 8 fragmentos grandes. Compare com King's Landing (58 fragmentos). O isolamento insular protege ou ameaça a biodiversidade? Argumente ambos os lados."},
   {region:"Pyke",macro:"Iron Islands",css:"iron-islands",sigil:"sigil-greyjoy",
    pland:12.5,np:22,area_mn:568,shdi:1.65,connect:8,ed:62.5,core:6.8,se:22,
-   challenge:"Pyke tem PLAND de 12,5% e área nuclear de apenas 6,8%. Usando o conceito de limiar de percolação, esta paisagem ainda mantém conectividade estrutural?"},
-  {region:"Harlaw",macro:"Iron Islands",css:"iron-islands",sigil:"sigil-greyjoy",
-   pland:16.8,np:18,area_mn:933,shdi:1.52,connect:14,ed:54.8,core:10.5,se:26,
-   challenge:"Proponha um plano de restauração ecológica para Harlaw: (a) qual elemento restaurar — mancha, corredor ou stepping stone? (b) onde posicioná-lo na paisagem?"}
+   challenge:"Pyke tem PLAND de 12,5% e área nuclear de apenas 6,8%. Usando o conceito de limiar de percolação, esta paisagem ainda mantém conectividade estrutural?"}
 ];
 
 const missions = [
   {num:1,title:"Guardião do Wolfswood",
-   objective:"Controlar The North inteiro (Winterfell, The Dreadfort, White Harbor, Moat Cailin)",
+   objective:"Controlar Stark's Region inteira (Winterfell, White Harbor, Moat Cailin, Last Hearth)",
    desc:"As florestas do Norte formam o maior bloco contínuo de vegetação de Westeros. Quem as domina, controla a maior mancha da paisagem.",
    concept:"Conceito: manter a maior mancha contínua preserva área nuclear e resiliência"},
   {num:2,title:"Senhor dos Mosaicos",
@@ -555,7 +580,7 @@ const missions = [
    desc:"Expanda sua cobertura territorial — quanto maior a proporção do continente sob seu domínio, mais recursos ecológicos você mobiliza.",
    concept:"Conceito: PLAND — proporção da paisagem como indicador de dominância"},
   {num:5,title:"Corredor Costeiro",
-   objective:"Controlar White Harbor, Gulltown, Shipbreaker Bay, Sunspear, Pyke e Dragonstone",
+   objective:"Controlar White Harbor, Hardhome, Sunspear, Pyke, Dragonstone e Oldtown",
    desc:"As regiões costeiras formam um corredor contínuo ao redor de Westeros. Conecte-as e controle o fluxo marítimo da paisagem.",
    concept:"Conceito: conectividade linear — corredores como condutos de fluxo"},
   {num:6,title:"Extinção Competitiva",
@@ -563,7 +588,7 @@ const missions = [
    desc:"Na competição entre espécies, a exclusão de um competidor libera recursos. Elimine quem disputa seu nicho ecológico.",
    concept:"Conceito: exclusão competitiva e nicho ecológico"},
   {num:7,title:"Corredor Central",
-   objective:"Controlar The Riverlands + The Reach + The Crownlands (6 territórios)",
+   objective:"Controlar The Riverlands + The Reach + The Crownlands (8 territórios)",
    desc:"O corredor central de Westeros conecta norte e sul. Domine-o e controle os fluxos de organismos e recursos entre as paisagens extremas.",
    concept:"Conceito: corredor ecológico — faixa funcional entre paisagens"},
   {num:8,title:"Equilíbrio Sustentável",
@@ -575,9 +600,9 @@ const missions = [
    desc:"As três paisagens com maior área nuclear de Westeros. Domine os refúgios onde a biodiversidade se protege do efeito de borda.",
    concept:"Conceito: core area — áreas nucleares como refúgio ecológico"},
   {num:10,title:"O Restaurador",
-   objective:"Controlar Iron Islands + Dorne (4 territórios com PLAND mais baixo)",
-   desc:"As paisagens mais degradadas de Westeros precisam de resgate. Conquiste e restaure as terras que os outros abandonaram.",
-   concept:"Conceito: restauração ecológica das paisagens abaixo do limiar"}
+   objective:"Controlar Beyond the Wall + Dorne (4 territórios com paisagens extremas)",
+   desc:"Os extremos climáticos de Westeros precisam de resgate. Conquiste e restaure as terras que os outros subestimaram.",
+   concept:"Conceito: restauração ecológica das paisagens em condições extremas"}
 ];
 
 /* ═══════════════════════════════════════════════════ */
@@ -782,7 +807,7 @@ function buildCover() {
     <div class="cover-emblem"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" fill="#8B7355" style="width:70mm;height:70mm;filter:drop-shadow(0 0 16px rgba(139,115,85,0.6));"><path d="M50 2l-4 18h-8l-6-14-3 14h-7l-8-10 1 14h-6l2 18h6l2 12h-4l1 10h6v8h-5l-2 10h4l1 8h-5v6h8l1 8H18v6h64v-6H58l1-8h8v-6h-5l1-8h4l-2-10h-5v-8h6l1-10h-4l2-12h6l2-18h-6l1-14-8 10h-7l-3-14-6 14h-8L50 2z" opacity=".85"/><path d="M38 58h24v4H38z" opacity=".4"/><path d="M42 68h16v2H42z" opacity=".3"/><rect x="35" y="98" width="30" height="4" rx="1" opacity=".5"/><rect x="30" y="104" width="40" height="3" rx="1" opacity=".4"/></svg></div>
     <div class="cover-author">Análise da Paisagem, UEFS<br>Prof. Luiz Diego Vidal Santos</div>
     <div class="cover-info">
-      20 Cartas de Território (frente + verso)<br>
+      24 Cartas de Território (frente + verso)<br>
       10 Cartas de Missão (frente + verso)<br>
       2 Cartas de Referência (frente + verso)<br>
       1 Mapa de Westeros: Conexões Territoriais<br><br>
@@ -1019,18 +1044,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Territory Fronts ---
   const tfPages = groupIntoPages(cards, 3);
-  let tfHtml = buildSection('CARTAS DE TERRITÓRIO', '20 CARTAS — FRENTE');
+  let tfHtml = buildSection('CARTAS DE TERRITÓRIO', '24 CARTAS — FRENTE');
   tfPages.forEach(page => {
     tfHtml += wrapPage(page.map(renderTerritoryFront).join(''));
   });
   document.getElementById('territory-fronts-section').innerHTML = tfHtml;
 
   // --- Territory Backs ---
-  let tbHtml = buildSection('CARTAS DE TERRITÓRIO', '20 CARTAS — VERSO');
-  for (let p = 0; p < 7; p++) {
+  let tbHtml = buildSection('CARTAS DE TERRITÓRIO', '24 CARTAS — VERSO');
+  for (let p = 0; p < 8; p++) {
     let pageCards = '';
-    const cardsThisPage = p < 6 ? 3 : 2;
-    for (let i = 0; i < cardsThisPage; i++) pageCards += renderTerritoryBack();
+    for (let i = 0; i < 3; i++) pageCards += renderTerritoryBack();
     tbHtml += wrapPage(pageCards);
   }
   document.getElementById('territory-backs-section').innerHTML = tbHtml;
