@@ -29,17 +29,44 @@ nav{
   max-width:1100px;margin:0 auto;
   display:flex;align-items:center;
   padding:10px 24px;gap:8px;
-  overflow-x:auto;
 }
 .nav-logo{
   font-family:'Cinzel',serif;font-weight:900;
   font-size:13px;color:#8B7355;letter-spacing:2px;
   white-space:nowrap;margin-right:auto;
 }
+.nav-primary{
+  display:flex;align-items:center;gap:6px;
+}
 nav a{
   font-family:'Cinzel',serif;font-size:10px;
   color:#8B7355;text-decoration:none;
   letter-spacing:1px;padding:6px 10px;
+  border-radius:3px;white-space:nowrap;
+  transition:background .2s;
+}
+.nav-btn{
+  background:#8B7355!important;color:#1c1c1c!important;
+  border-radius:4px;font-weight:700;
+}
+.nav-hamburger{
+  background:none;border:1px solid #8B7355;color:#8B7355;
+  font-size:18px;padding:4px 8px;border-radius:4px;cursor:pointer;
+  font-family:'Cinzel',serif;line-height:1;
+  transition:background .2s;
+}
+.nav-hamburger:hover{background:rgba(139,115,85,0.15);}
+.nav-dropdown{
+  max-width:1100px;margin:0 auto;
+  display:none;flex-wrap:wrap;gap:4px;
+  padding:8px 24px 10px;
+  border-top:1px solid rgba(139,115,85,0.15);
+}
+.nav-dropdown.open{display:flex;}
+.nav-dropdown a{
+  font-family:'Cinzel',serif;font-size:10px;
+  color:#8B7355;text-decoration:none;
+  letter-spacing:1px;padding:5px 10px;
   border-radius:3px;white-space:nowrap;
   transition:background .2s;
 }
@@ -505,13 +532,15 @@ footer p{margin-bottom:8px;}
   .container{padding:0 16px;}
   section{padding:48px 0;}
 
-  /* Nav - hamburger menu */
+  /* Nav */
   nav{position:fixed;top:0;left:0;right:0;}
-  .nav-inner{
-    flex-wrap:wrap;padding:10px 16px;gap:4px;
-  }
-  .nav-logo{font-size:12px;letter-spacing:1px;width:100%;text-align:center;margin-right:0;padding-bottom:6px;border-bottom:1px solid rgba(139,115,85,0.15);}
-  nav a{font-size:9px;padding:5px 7px;letter-spacing:0.5px;}
+  .nav-inner{padding:8px 16px;gap:6px;}
+  .nav-logo{font-size:11px;letter-spacing:1px;}
+  .nav-primary{gap:4px;}
+  .nav-primary a{font-size:9px;padding:5px 7px;}
+  .nav-hamburger{font-size:16px;padding:3px 6px;}
+  .nav-dropdown{padding:6px 16px 8px;}
+  .nav-dropdown a{font-size:9px;padding:5px 7px;letter-spacing:0.5px;}
 
   /* Hero */
   .hero{padding:100px 16px 60px;min-height:auto;}
@@ -576,8 +605,12 @@ footer p{margin-bottom:8px;}
 
 @media(max-width:420px){
   body{font-size:15px;}
-  .nav-inner{padding:8px 12px;}
-  nav a{font-size:8px;padding:4px 5px;}
+  .nav-inner{padding:6px 10px;gap:4px;}
+  .nav-logo{font-size:10px;}
+  .nav-primary a{font-size:8px;padding:4px 5px;}
+  .nav-hamburger{font-size:14px;padding:2px 5px;}
+  .nav-dropdown{padding:4px 10px 6px;}
+  .nav-dropdown a{font-size:9px;padding:4px 6px;}
   .container{padding:0 12px;}
   section{padding:36px 0;}
 
@@ -624,20 +657,25 @@ footer p{margin-bottom:8px;}
 <nav>
   <div class="nav-inner">
     <div class="nav-logo">⚔ RISK OF LANDSCAPES</div>
-    <a href="#lore">Lore</a>
-    <a href="#overview">Visão Geral</a>
-    <a href="#components">Componentes</a>
-    <a href="#cards">Cartas</a>
-    <a href="#map">Mapa</a>
-    <a href="#metrics">Métricas</a>
-    <a href="#rules">Regras</a>
-    <a href="#houses">Casas</a>
-    <a href="#missions">Missões</a>
-    <a href="#tokens">Tokens</a>
-    <a href="#victory">Vitória</a>
-    <a href="#variants">Variantes</a>
-    <a href="manual-risk-of-landscapes.html" target="_blank" style="background:#8B7355;color:#1c1c1c;border-radius:4px;">📄 Manual</a>
-    <a href="risk-of-landscapes-print-all.html" target="_blank" style="background:#8B7355;color:#1c1c1c;border-radius:4px;">🖨️ Imprimir</a>
+    <div class="nav-primary">
+      <a href="#rules">Regras</a>
+      <a href="#houses">Casas</a>
+      <a href="#missions">Missões</a>
+      <a href="manual-risk-of-landscapes.html" target="_blank" class="nav-btn">📄 Manual</a>
+      <a href="risk-of-landscapes-print-all.html" target="_blank" class="nav-btn">🖨️ Imprimir</a>
+    </div>
+    <button class="nav-hamburger" onclick="document.querySelector('.nav-dropdown').classList.toggle('open')" aria-label="Menu">☰</button>
+  </div>
+  <div class="nav-dropdown">
+    <a href="#lore" onclick="this.parentElement.classList.remove('open')">Lore</a>
+    <a href="#overview" onclick="this.parentElement.classList.remove('open')">Visão Geral</a>
+    <a href="#components" onclick="this.parentElement.classList.remove('open')">Componentes</a>
+    <a href="#cards" onclick="this.parentElement.classList.remove('open')">Cartas</a>
+    <a href="#map" onclick="this.parentElement.classList.remove('open')">Mapa</a>
+    <a href="#metrics" onclick="this.parentElement.classList.remove('open')">Métricas</a>
+    <a href="#tokens" onclick="this.parentElement.classList.remove('open')">Tokens</a>
+    <a href="#victory" onclick="this.parentElement.classList.remove('open')">Vitória</a>
+    <a href="#variants" onclick="this.parentElement.classList.remove('open')">Variantes</a>
   </div>
 </nav>
 
