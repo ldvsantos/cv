@@ -145,9 +145,9 @@ body{padding-top:56px;}
 
 /* ═══ TERRITORY FRONT ═══ */
 .card-header{text-align:center;padding:1mm 0 0.8mm;border-bottom:0.3mm solid rgba(139,115,85,0.4);margin-bottom:0.5mm;}
-.game-title{font-family:'Cinzel',serif;font-size:5.5pt;letter-spacing:2pt;text-transform:uppercase;color:#8B7355;margin-bottom:0.3mm;}
-.region-name{font-family:'Cinzel',serif;font-size:10pt;font-weight:900;letter-spacing:0.6pt;text-transform:uppercase;margin-bottom:0.3mm;}
-.macro-region{font-family:'Cinzel',serif;font-size:7pt;letter-spacing:1.2pt;text-transform:uppercase;opacity:0.75;}
+.game-title{font-family:'Cinzel',serif;font-size:7pt;letter-spacing:2pt;text-transform:uppercase;color:#8B7355;margin-bottom:0.3mm;}
+.region-name{font-family:'Cinzel',serif;font-size:11pt;font-weight:900;letter-spacing:0.6pt;text-transform:uppercase;margin-bottom:0.3mm;}
+.macro-region{font-family:'Cinzel',serif;font-size:8pt;letter-spacing:1.2pt;text-transform:uppercase;opacity:0.75;}
 
 .sigil{
   width:7.5mm;height:7.5mm;margin:0.4mm auto;
@@ -160,8 +160,8 @@ body{padding-top:56px;}
 .data-section{flex:0 0 auto;padding:0.5mm 1mm;}
 .data-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.4mm 1.5mm;}
 .data-item{display:flex;justify-content:space-between;align-items:baseline;padding:0.3mm 0.8mm;border-bottom:0.15mm dotted rgba(139,115,85,0.2);}
-.data-label{font-size:5.5pt;color:#8B7355;text-transform:uppercase;letter-spacing:0.2pt;font-family:'Cinzel',serif;font-weight:700;}
-.data-value{font-size:7.5pt;font-weight:600;color:#f0e6d2;}
+.data-label{font-size:7pt;color:#8B7355;text-transform:uppercase;letter-spacing:0.2pt;font-family:'Cinzel',serif;font-weight:700;}
+.data-value{font-size:9pt;font-weight:600;color:#f0e6d2;}
 
 /* PLAND color coding */
 .pland-high{color:#66BB6A;}
@@ -176,17 +176,20 @@ body{padding-top:56px;}
 .conn-med{background:linear-gradient(90deg,#F57F17,#FFC107);}
 .conn-low{background:linear-gradient(90deg,#C62828,#E53935);}
 
+/* ▼▼▼ DESAFIOS OCULTOS — descomente para imprimir ▼▼▼ */
 .challenge-section{
+  display:none!important; /* REMOVER ESTA LINHA PARA MOSTRAR DESAFIOS */
   flex:1 1 auto;margin-top:0.8mm;padding:1.2mm 1.8mm;
   background:rgba(139,115,85,0.06);
   border:0.25mm solid rgba(139,115,85,0.25);
-  border-radius:1.2mm;display:flex;flex-direction:column;
+  border-radius:1.2mm;flex-direction:column;
 }
-.challenge-title{font-family:'Cinzel',serif;font-size:6pt;text-transform:uppercase;letter-spacing:1.2pt;color:#8B7355;text-align:center;margin-bottom:0.8mm;}
-.challenge-text{font-size:8.5pt;line-height:1.25;color:#d4c8b0;text-align:justify;hyphens:auto;}
+.challenge-title{font-family:'Cinzel',serif;font-size:8pt;text-transform:uppercase;letter-spacing:1.2pt;color:#8B7355;text-align:center;margin-bottom:0.8mm;}
+.challenge-text{font-size:10pt;line-height:1.25;color:#d4c8b0;text-align:justify;hyphens:auto;}
+/* ▲▲▲ FIM — DESAFIOS OCULTOS ▲▲▲ */
 
 .card-footer{text-align:center;padding-top:0.3mm;border-top:0.2mm solid rgba(139,115,85,0.2);margin-top:auto;}
-.footer-text{font-family:'Cinzel',serif;font-size:4pt;letter-spacing:0.8pt;color:rgba(139,115,85,0.5);text-transform:uppercase;}
+.footer-text{font-family:'Cinzel',serif;font-size:5pt;letter-spacing:0.8pt;color:rgba(139,115,85,0.5);text-transform:uppercase;}
 
 /* ═══ MACRO-REGION COLORS ═══ */
 .the-north .region-name{color:#A0B4C8;}
@@ -333,11 +336,11 @@ body{padding-top:56px;}
 .mission-card-type{font-family:'Cinzel',serif;font-size:10pt;font-weight:900;letter-spacing:1.2pt;text-transform:uppercase;color:#C84040;margin:0.8mm 0;}
 .mission-number{width:8mm;height:8mm;margin:1mm auto;border-radius:50%;border:0.4mm solid #8B7355;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:12pt;font-weight:900;color:#C84040;}
 .mission-title{font-family:'Cinzel',serif;font-size:9pt;font-weight:700;text-align:center;color:#f0e6d2;margin:1.5mm 1mm;letter-spacing:0.4pt;}
-.mission-desc{font-size:7pt;line-height:1.3;text-align:center;color:#d4c8b0;margin:0.8mm 1mm;flex:1;}
+.mission-desc{font-size:10pt;line-height:1.3;text-align:center;color:#d4c8b0;margin:0.8mm 1mm;flex:1;}
 .mission-objective{background:rgba(139,115,85,0.08);border:0.25mm solid rgba(139,115,85,0.25);border-radius:1.2mm;padding:1.5mm 2.5mm;margin:1mm 1mm;}
-.mission-obj-title{font-family:'Cinzel',serif;font-size:5.5pt;text-transform:uppercase;letter-spacing:0.8pt;color:#8B7355;text-align:center;margin-bottom:0.8mm;}
-.mission-obj-text{font-size:8pt;line-height:1.25;text-align:center;color:#f0e6d2;font-weight:600;}
-.mission-concept{font-size:6pt;line-height:1.25;text-align:center;color:rgba(139,115,85,0.6);font-style:italic;margin:1mm 1.5mm 0;padding-top:0.8mm;border-top:0.15mm dotted rgba(139,115,85,0.25);}
+.mission-obj-title{font-family:'Cinzel',serif;font-size:8pt;text-transform:uppercase;letter-spacing:0.8pt;color:#8B7355;text-align:center;margin-bottom:0.8mm;}
+.mission-obj-text{font-size:10pt;line-height:1.25;text-align:center;color:#f0e6d2;font-weight:600;}
+.mission-concept{font-size:8pt;line-height:1.25;text-align:center;color:rgba(139,115,85,0.6);font-style:italic;margin:1mm 1.5mm 0;padding-top:0.8mm;border-top:0.15mm dotted rgba(139,115,85,0.25);}
 
 /* ═══ REFERENCE CARD ═══ */
 .ref-card{
@@ -396,19 +399,21 @@ body{padding-top:56px;}
 .nc-corner-bl{bottom:0.4mm;left:0.4mm;transform:scaleY(-1);}
 .nc-corner-br{bottom:0.4mm;right:0.4mm;transform:scale(-1,-1);}
 .nc-header{text-align:center;padding:1mm 0 0.6mm;border-bottom:0.25mm solid var(--hc-dim);margin-bottom:0.4mm;}
-.nc-game{font-family:'Cinzel',serif;font-size:5pt;letter-spacing:1.5pt;text-transform:uppercase;color:#8B7355;margin-bottom:0.2mm;}
-.nc-house{font-family:'Cinzel',serif;font-size:8pt;font-weight:900;letter-spacing:0.8pt;text-transform:uppercase;color:var(--hc);}
-.nc-num{font-family:'Cinzel',serif;font-size:5pt;letter-spacing:1pt;color:var(--hc);opacity:0.5;margin-top:0.2mm;}
+.nc-game{font-family:'Cinzel',serif;font-size:7pt;letter-spacing:1.5pt;text-transform:uppercase;color:#8B7355;margin-bottom:0.2mm;}
+.nc-house{font-family:'Cinzel',serif;font-size:10pt;font-weight:900;letter-spacing:0.8pt;text-transform:uppercase;color:var(--hc);}
+.nc-num{font-family:'Cinzel',serif;font-size:7pt;letter-spacing:1pt;color:var(--hc);opacity:0.5;margin-top:0.2mm;}
 .nc-sigil{width:8mm;height:8mm;margin:0.3mm auto;display:flex;align-items:center;justify-content:center;border-radius:50%;border:0.25mm solid var(--hc-dim);}
 .nc-sigil img{width:6mm;height:6mm;object-fit:contain;}
 .nc-narrative{flex:0 0 auto;margin:0.5mm 0;padding:1.5mm 2mm;background:rgba(139,115,85,0.04);border:0.2mm solid rgba(139,115,85,0.15);border-radius:1mm;}
-.nc-narr-title{font-family:'Cinzel',serif;font-size:5pt;text-transform:uppercase;letter-spacing:1pt;color:#8B7355;text-align:center;margin-bottom:0.6mm;}
-.nc-narr-text{font-size:6.5pt;line-height:1.3;color:#d4c8b0;text-align:justify;hyphens:auto;}
-.nc-challenge{flex:1 1 auto;margin-top:0.4mm;padding:1.2mm 2mm;background:var(--hc-challenge-bg);border:0.25mm solid var(--hc-dim);border-radius:1mm;display:flex;flex-direction:column;}
-.nc-chal-title{font-family:'Cinzel',serif;font-size:5pt;text-transform:uppercase;letter-spacing:1pt;color:var(--hc);text-align:center;margin-bottom:0.5mm;}
-.nc-chal-text{font-size:6.5pt;line-height:1.3;color:#f0e6d2;text-align:justify;hyphens:auto;}
+.nc-narr-title{font-family:'Cinzel',serif;font-size:8pt;text-transform:uppercase;letter-spacing:1pt;color:#8B7355;text-align:center;margin-bottom:0.6mm;}
+.nc-narr-text{font-size:10pt;line-height:1.3;color:#d4c8b0;text-align:justify;hyphens:auto;}
+/* ▼▼▼ DESAFIOS NARRATIVOS OCULTOS — descomente para imprimir ▼▼▼ */
+.nc-challenge{display:none!important; /* REMOVER ESTA LINHA PARA MOSTRAR DESAFIOS */ flex:1 1 auto;margin-top:0.4mm;padding:1.2mm 2mm;background:var(--hc-challenge-bg);border:0.25mm solid var(--hc-dim);border-radius:1mm;flex-direction:column;}
+.nc-chal-title{font-family:'Cinzel',serif;font-size:8pt;text-transform:uppercase;letter-spacing:1pt;color:var(--hc);text-align:center;margin-bottom:0.5mm;}
+.nc-chal-text{font-size:10pt;line-height:1.3;color:#f0e6d2;text-align:justify;hyphens:auto;}
+/* ▲▲▲ FIM — DESAFIOS NARRATIVOS OCULTOS ▲▲▲ */
 .nc-footer{text-align:center;padding-top:0.3mm;border-top:0.15mm solid rgba(139,115,85,0.15);margin-top:auto;}
-.nc-footer-text{font-family:'Cinzel',serif;font-size:4pt;letter-spacing:0.6pt;color:rgba(139,115,85,0.4);text-transform:uppercase;}
+.nc-footer-text{font-family:'Cinzel',serif;font-size:5pt;letter-spacing:0.6pt;color:rgba(139,115,85,0.4);text-transform:uppercase;}
 
 /* House themes */
 .house-stark{--hc:#A0B4C8;--hc-glow:rgba(160,180,200,0.1);--hc-dim:rgba(160,180,200,0.3);--hc-challenge-bg:rgba(160,180,200,0.06);}

@@ -20,6 +20,8 @@ resources:
   - books/**
   - teaching/**/*.html
   - teaching/**/*.pdf
+  - teaching/**/SVG/**
+  - teaching/**/*.mp3
 
 website:
   title: "Prof. Diego Vidal"
