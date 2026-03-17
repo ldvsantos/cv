@@ -57,8 +57,6 @@ execute:
 A estatística descritiva é um ramo da estatística que aplica técnicas para **descrever e sumarizar** um conjunto de dados.
 :::
 
-. . .
-
 ::: {.highlight-box}
 Diferencia-se da **estatística inferencial**, que busca obter afirmações sobre uma **população** com base em uma **amostra**.
 :::
@@ -87,8 +85,6 @@ Diferencia-se da **estatística inferencial**, que busca obter afirmações sobr
 ::: {.info-box}
 **Objetivo:** Encontrar um valor que **resuma a variabilidade** de um conjunto de dados.
 :::
-
-. . .
 
 ::: {.columns}
 :::: {.column width="55%"}
@@ -122,8 +118,6 @@ Investigar os níveis de **crescimento radicular** frente ao uso de fungos micor
 **Média** — Soma de todos os valores dividida pelo número de observações.
 :::
 
-. . .
-
 ::: {.columns}
 :::: {.column width="55%"}
 
@@ -151,8 +145,6 @@ $\sum = 2148$ &nbsp;·&nbsp; $N = 17$ &nbsp;·&nbsp; $\bar{X} = 126{,}35$
 **Moda** — O valor que aparece com **maior frequência** na amostra.
 :::
 
-. . .
-
 ::: {.columns}
 :::: {.column width="55%"}
 
@@ -179,8 +171,6 @@ Distribuição **unimodal**.
 ::: {.info-box}
 **Mediana** — O valor que divide a amostra em **duas metades iguais** quando os dados estão ordenados.
 :::
-
-. . .
 
 ::: {.columns}
 :::: {.column width="55%"}
@@ -226,8 +216,6 @@ Posição: $\frac{N+1}{2} = \frac{18}{2} = 9°$ valor
 ::::
 :::
 
-. . .
-
 ::: {.highlight-box}
 As três medidas estão **próximas**, sugerindo uma distribuição relativamente **simétrica**.
 :::
@@ -241,13 +229,9 @@ As três medidas estão **próximas**, sugerindo uma distribuição relativament
 **Objetivo:** Ter noção da **variabilidade** dos escores em torno da média.
 :::
 
-. . .
-
 ::: {.highlight-box}
 As medidas de dispersão auxiliam na interpretação sobre o quanto os casos são **semelhantes ou diferentes** entre si, frente à variável de interesse.
 :::
-
-. . .
 
 ::: {.box}
 **Medidas que veremos:**
@@ -268,8 +252,6 @@ As medidas de dispersão auxiliam na interpretação sobre o quanto os casos sã
 ::: {.info-box}
 A **variância** mede o quanto cada escore se afasta da média, ao quadrado, dividido por $n - 1$.
 :::
-
-. . .
 
 ![](fig_formula_variancia.png){fig-align="center" width="90%"}
 
@@ -352,8 +334,6 @@ Em média, cada escore se afasta **19,02 cm** da média de 126,35 cm.
 ::::
 :::
 
-. . .
-
 ![](fig_dispersao_desvios.png){fig-align="center" width="70%"}
 
 
@@ -369,8 +349,6 @@ Em média, cada escore se afasta **19,02 cm** da média de 126,35 cm.
 
 Estima a **precisão da média amostral** como estimativa da média populacional.
 :::
-
-. . .
 
 $$EP = \frac{DP}{\sqrt{N}} = \frac{19{,}02}{\sqrt{17}} = 4{,}613$$
 
@@ -391,8 +369,6 @@ $$EP = \frac{DP}{\sqrt{N}} = \frac{19{,}02}{\sqrt{17}} = 4{,}613$$
 ::::
 :::
 
-. . .
-
 ::: {.highlight-box}
 Quanto **maior** o N, **menor** o EP → a estimativa da média é mais **precisa**.
 :::
@@ -408,8 +384,6 @@ Quanto **maior** o N, **menor** o EP → a estimativa da média é mais **precis
 ::: {.info-box}
 O **escore Z** é uma transformação dos escores brutos baseada no desvio-padrão.
 :::
-
-. . .
 
 $$Z = \frac{X - \bar{X}}{s}$$
 
@@ -430,8 +404,6 @@ $$Z = \frac{22 - 20}{2} = 1$$
 A repetição está **1 DP acima** da média.
 :::
 
-. . .
-
 ::: {.highlight-box}
 **1 ponto** no escore Z = **1 desvio-padrão** de distância da média.
 :::
@@ -445,8 +417,6 @@ A repetição está **1 DP acima** da média.
 ::: {.info-box}
 Considere $\bar{X} = 20$ e $DP = 2$:
 :::
-
-. . .
 
 ::: {.columns}
 :::: {.column width="50%"}
@@ -473,8 +443,6 @@ Está **4 DP acima** da média.
 ::::
 :::
 
-. . .
-
 ::: {.highlight-box}
 O escore Z é útil para estimar o **quão longe** um sujeito está da média.
 :::
@@ -497,8 +465,6 @@ Se a distribuição é **normal**, do total da amostra:
 - **95,4%** terão $Z$ entre $\pm 2$
 - **99,7%** terão $Z$ entre $\pm 3$
 :::
-
-. . .
 
 ::: {.highlight-box}
 Quando a distribuição **não é normal**, essa estimativa de % não é precisa e o escore Z perde parte da sua utilidade.
@@ -532,8 +498,6 @@ Ao calcular o IC, você obtém uma **amplitude** onde se estipula que a verdadei
 $$IC = \bar{X} \pm Z_{\alpha/2} \times EP$$
 :::
 
-. . .
-
 ::: {.highlight-box}
 Pode ser calculado em diferentes probabilidades usando o **escore Z**:
 
@@ -551,8 +515,6 @@ Pode ser calculado em diferentes probabilidades usando o **escore Z**:
 ::: {.info-box}
 $\bar{X} = 126{,}35$; $EP = 4{,}61$
 :::
-
-. . .
 
 ::: {.columns}
 :::: {.column width="33%"}
@@ -613,13 +575,9 @@ LS = $126{,}35 + 2{,}575 \times 4{,}61$
 
 ![](fig_intervalo_confianca.png){fig-align="center" width="75%"}
 
-. . .
-
 ::: {.info-box}
 Quanto **maior** o nível de confiança, **mais amplo** é o intervalo — há um *trade-off* entre precisão e confiança.
 :::
-
-. . .
 
 ::: {.highlight-box}
 **Recurso didático:** [Visualização interativa de IC](https://rpsychologist.com/d3/ci/){target="_blank"}
