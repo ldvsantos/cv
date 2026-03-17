@@ -1,6 +1,6 @@
 {
-  "title": "Atividade 01 — O que é paisagem? Leituras e percepções",
-  "description": "Esta atividade faz parte do 1º Encontro — 11/03 (Apresentação e Conceito de Paisagem) da disciplina Análise da Paisagem (UEFS 2026.1).\n\nO objetivo é mobilizar seus conhecimentos prévios e estimular uma reflexão inicial sobre o conceito de paisagem antes de aprofundarmos as definições acadêmicas. Não existem respostas certas ou erradas — o importante é a qualidade da reflexão.\n\nPrazo de entrega: até o início do 2º Encontro (18/03).",
+  "title": "Atividade 01 — Leitura Perceptiva da Paisagem Local",
+  "description": "Esta atividade corresponde à aula extra 1a (Leitura Perceptiva da Paisagem Local) da disciplina Análise da Paisagem (UEFS 2026.1).\n\nO objetivo é articular observação de campo, percepção local e leitura integrada da paisagem por meio dos conceitos de topofilia/topofobia e marca/matriz.\n\nPrazo de entrega: até o início do próximo encontro, salvo orientação em aula.",
   "sections": [
     {
       "title": "IDENTIFICAÇÃO",
@@ -21,97 +21,111 @@
       ]
     },
     {
-      "title": "Sua visão sobre paisagem",
-      "description": "As questões a seguir exploram o que você entende por \"paisagem\" antes de estudarmos formalmente o conceito. Responda com base na sua experiência pessoal e acadêmica até aqui.",
+      "title": "PONTO DE OBSERVAÇÃO E REGISTRO",
+      "description": "Escolha um ponto de observação na sua área de estudo (mirante, topo de elevação, margem de rio, praça, rua principal etc.).",
       "questions": [
         {
-          "title": "Se alguém lhe perguntasse \"o que é paisagem?\", como você responderia em suas próprias palavras?",
-          "description": "Escreva livremente, em pelo menos 3 linhas.",
+          "title": "Local escolhido (bairro/comunidade, município e referência do ponto)",
+          "description": "Informe também data e horário da observação.",
           "type": "PARAGRAPH",
           "required": true
         },
         {
-          "title": "Qual das frases abaixo melhor representa o que você considera \"paisagem\"?",
+          "title": "Descrição visual do fotopanorama: o que a visão alcança e quais feições dominam?",
+          "description": "Mínimo 5 linhas. Destaque arranjo espacial, formas e contrastes.",
+          "type": "PARAGRAPH",
+          "required": true
+        },
+        {
+          "title": "Descrição sensorial do lugar",
+          "description": "Registre sons, cheiros e texturas percebidas no ponto de observação.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "MARCA E MATRIZ",
+      "description": "Aplique a distinção de Berque entre marcas antrópicas e matrizes naturais.",
+      "questions": [
+        {
+          "title": "Quais sinais de ação humana (marcas) são visíveis nessa paisagem?",
+          "description": "Liste e comente ao menos 4 marcas identificáveis.",
+          "type": "PARAGRAPH",
+          "required": true
+        },
+        {
+          "title": "Quais condicionantes naturais (matrizes) estruturam essa paisagem?",
+          "description": "Considere relevo, solo, drenagem, cobertura vegetal, clima local etc. Liste ao menos 4 itens.",
+          "type": "PARAGRAPH",
+          "required": true
+        },
+        {
+          "title": "Qual componente predomina na configuração atual da paisagem observada?",
           "description": "",
           "type": "MULTIPLE_CHOICE",
           "required": true,
           "options": [
-            "Uma vista bonita da natureza (montanhas, rios, florestas).",
-            "Tudo aquilo que os olhos conseguem enxergar a partir de um ponto.",
-            "Um recorte do espaço onde natureza e sociedade interagem.",
-            "Uma área delimitada com características ecológicas próprias.",
-            "Uma representação artística ou fotográfica de um lugar.",
-            "Nenhuma das anteriores — tenho outra definição."
+            "Predomínio de marcas antrópicas",
+            "Predomínio de matrizes naturais",
+            "Equilíbrio relativo entre marcas e matrizes",
+            "Não foi possível definir"
           ]
+        }
+      ]
+    },
+    {
+      "title": "PERCEPÇÃO LOCAL (ENTREVISTAS)",
+      "description": "Realize ao menos 2 entrevistas curtas com moradores e registre trechos representativos.",
+      "questions": [
+        {
+          "title": "Síntese das entrevistas: o que os moradores mais valorizam nessa paisagem?",
+          "description": "Inclua trechos curtos ou paráfrases das falas.",
+          "type": "PARAGRAPH",
+          "required": true
         },
         {
-          "title": "Na sua opinião, quais elementos fazem parte de uma paisagem? (marque todos que considerar relevantes)",
-          "description": "",
+          "title": "Quais mudanças foram relatadas para os últimos 20 anos?",
+          "description": "Indique tendências de degradação, conservação ou transformação de usos.",
+          "type": "PARAGRAPH",
+          "required": true
+        },
+        {
+          "title": "Topofilia x Topofobia",
+          "description": "Marque os valores que melhor resumem as percepções coletadas.",
           "type": "CHECKBOX",
           "required": true,
           "options": [
-            "Relevo (morros, planícies, vales)",
-            "Vegetação (florestas, pastagens, lavouras)",
-            "Corpos d'água (rios, lagoas, açudes)",
-            "Construções humanas (casas, estradas, cercas)",
-            "Atividades econômicas (agricultura, pecuária, mineração)",
-            "Pessoas e suas práticas cotidianas",
-            "Clima e condições atmosféricas",
-            "Sons e cheiros do lugar",
-            "História e memória do lugar"
+            "Topofilia: pertencimento e identidade",
+            "Topofilia: valor estético/cênico",
+            "Topofilia: memória afetiva",
+            "Topofobia: insegurança",
+            "Topofobia: incômodo ambiental (poeira, odor, ruído)",
+            "Topofobia: degradação visível",
+            "Percepções mistas (topofilia e topofobia coexistem)"
           ]
         }
       ]
     },
     {
-      "title": "Leitura de uma paisagem real",
-      "description": "Observe com atenção a imagem exibida abaixo (ou, se preferir, escolha uma paisagem real que você vê da janela de casa ou do caminho até a universidade) e responda às questões.",
+      "title": "SÍNTESE INTEGRADA",
+      "description": "Integre leitura objetiva (estrutura) e subjetiva (percepção/valor) em uma conclusão curta.",
       "questions": [
         {
-          "title": "Descreva o que você vê na paisagem. Tente ser o mais detalhista possível.",
-          "description": "Mencione elementos naturais, antrópicos, cores, formas, texturas e organização espacial. Mínimo 5 linhas.",
+          "title": "Escreva um parágrafo-síntese da paisagem local observada",
+          "description": "Integre: descrição visual, marca/matriz, percepções locais e principais conflitos/potenciais. Mínimo 8 linhas.",
           "type": "PARAGRAPH",
           "required": true
         },
         {
-          "title": "Que processos ou atividades humanas você consegue identificar nessa paisagem? O que eles revelam sobre a relação sociedade-natureza naquele lugar?",
-          "description": "Mínimo 3 linhas.",
-          "type": "PARAGRAPH",
-          "required": true
-        },
-        {
-          "title": "Se você pudesse \"voltar no tempo\" 50 anos, como imagina que essa mesma paisagem seria? E daqui a 50 anos?",
-          "description": "Exercício de imaginação — não há resposta certa. Reflita sobre mudanças possíveis.",
-          "type": "PARAGRAPH",
-          "required": false
-        }
-      ]
-    },
-    {
-      "title": "Conectando percepção e conceito",
-      "description": "",
-      "questions": [
-        {
-          "title": "Após realizar este exercício, você mudaria algo na definição de paisagem que escreveu na Pergunta 3? Se sim, o que mudaria e por quê?",
-          "description": "Mínimo 3 linhas.",
-          "type": "PARAGRAPH",
-          "required": true
-        },
-        {
-          "title": "De 1 a 5, o quanto você se sente confiante para diferenciar \"paisagem\" de conceitos como \"ecossistema\", \"bioma\" e \"território\"?",
+          "title": "Nível de confiança na leitura perceptiva que você realizou",
           "description": "",
           "type": "SCALE",
           "required": true,
           "scale_low": 1,
           "scale_high": 5,
-          "scale_low_label": "Nada confiante",
-          "scale_high_label": "Muito confiante"
-        },
-        {
-          "title": "Espaço livre — registre aqui qualquer dúvida, comentário ou curiosidade que surgiu durante esta atividade.",
-          "description": "",
-          "type": "PARAGRAPH",
-          "required": false
+          "scale_low_label": "Baixa confiança",
+          "scale_high_label": "Alta confiança"
         }
       ]
     }
