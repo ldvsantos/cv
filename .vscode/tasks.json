@@ -16,7 +16,7 @@
     {
       "label": "Preview Apresentação (Quarto)",
       "type": "shell",
-      "command": "Set-Location '${fileDirname}'; quarto preview '${fileBasename}'",
+      "command": "Set-Location '${fileDirname}'; $port=8765; Get-NetTCPConnection -LocalPort $port -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue }; Start-Sleep -Milliseconds 500; $html='${fileBasenameNoExtension}.html'; Start-Process \"http://localhost:${port}/$html\"; python -m http.server $port",
       "group": "none",
       "options": {
         "shell": {
