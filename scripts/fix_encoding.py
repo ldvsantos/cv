@@ -1,7 +1,8 @@
-"""Fix double-encoded UTF-8 in legislacao_ambiental_paisagem.qmd"""
+"""Fix double-encoded UTF-8 characters in a QMD file."""
 import re
+import sys
 
-filepath = r"aulas\analise_paisagem\aulas\legislacao_ambiental_paisagem\legislacao_ambiental_paisagem.qmd"
+filepath = sys.argv[1] if len(sys.argv) > 1 else r"aulas\analise_paisagem\aulas\legislacao_ambiental_paisagem\legislacao_ambiental_paisagem.qmd"
 
 with open(filepath, "r", encoding="utf-8") as f:
     text = f.read()
@@ -57,6 +58,19 @@ for old, new in replacements.items():
 # Limpar Â isolados (residuais)
 fixed = fixed.replace("\u00c2\u00a0", " ")  # non-breaking space
 fixed = re.sub(r"\u00c2(?=[\w\s\.\,\;\:\!\?\-\(\)\[\]\{\}])", "", fixed)
+
+# Padroes adicionais: tracos tipograficos e sobrescritos (double-encoding via cp1252)
+extra_reps = {
+    "\u00e2\u20ac\u201c": "\u2013",  # – en-dash
+    "\u00e2\u20ac\u201d": "\u2014",  # — em-dash
+    "\u00e2\u0081\u00b4": "\u2074",  # ⁴
+    "\u00e2\u0081\u00b5": "\u2075",  # ⁵
+    "\u00e2\u0081\u00b6": "\u2076",  # ⁶
+    "\u00e2\u0081\u00b7": "\u2077",  # ⁷
+    "\u00e2\u0081\u00b8": "\u2078",  # ⁸
+}
+for old, new in extra_reps.items():
+    fixed = fixed.replace(old, new)
 
 with open(filepath, "w", encoding="utf-8") as f:
     f.write(fixed)

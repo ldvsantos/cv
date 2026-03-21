@@ -46,6 +46,76 @@ Compreender a evolução histórica do conceito de paisagem na Geografia, desde 
 :::
 :::
 
+## Retomada: Aula 1.2  -  Percepção e Valoração {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### O que discutimos?
+
+A paisagem não é apenas um mosaico mensurável  -  é também [experiência vivida]{.underline}. Na aula 1.2, vimos que:
+
+- **Tuan (1974)**  -  **Topofilia** e **Topofobia**: o elo afetivo (ou de rejeição) entre pessoa e lugar
+- **Berque (1984)**  -  **Paisagem-marca** (registro da ação humana) e **Paisagem-matriz** (condicionante da ação futura)
+- **Cosgrove (1984)**  -  a paisagem como [forma de ver]{.underline} (*way of seeing*) historicamente construída; mapas como instrumentos de poder
+
+> A análise da paisagem que ignora a [percepção]{.underline} perde metade do fenômeno.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Conceitos-chave para levar adiante**
+
+| Conceito | Ideia central |
+|:---------|:-------------|
+| **Topofilia / Topofobia** | Vínculo afetivo positivo ou negativo com o lugar |
+| **Paisagem-marca** | A paisagem como [produto]{.underline} da sociedade |
+| **Paisagem-matriz** | A paisagem como [molde]{.underline} que condiciona a sociedade |
+| **Paisagem cultural** | IPHAN, UNESCO e Convenção Europeia reconhecem a dimensão cultural da paisagem |
+
+: {.striped .hover}
+:::
+:::
+:::
+
+---
+
+## Retomada: da percepção à análise integrada {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Duas leituras complementares
+
+```{mermaid}
+%%| fig-cap: "A análise integrada articula as duas leituras."
+flowchart TB
+    P["PAISAGEM"] --> O["Leitura Objetiva<br>Métricas, mapas, índices"]
+    P --> S["Leitura Subjetiva<br>Percepção, valores, afeto"]
+    O --> I["Análise Integrada<br>Diagnóstico + Valoração"]
+    S --> I
+    style P fill:#2E7D32,color:#fff,stroke:#1B5E20,stroke-width:2px
+    style O fill:#BBDEFB,stroke:#1565C0
+    style S fill:#FFE0B2,stroke:#E65100
+    style I fill:#C8E6C9,stroke:#2E7D32
+```
+
+A leitura [objetiva]{.underline} (estrutura, métricas, SIG) e a leitura [subjetiva]{.underline} (percepção, topofilia, poder) não se excluem  -  se [complementam]{.underline} no diagnóstico territorial.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Conexão com a aula de hoje**
+
+Na aula 1.2, exploramos **quem percebe** e **como percebe** a paisagem. Agora avançamos para:
+
+- [Como o conceito evoluiu]{.underline} na ciência geográfica (de Humboldt ao geossistema)
+- [Quais tradições]{.underline} moldaram a análise da paisagem no séc. XX
+- [Que distinções operacionais]{.underline} adotaremos na disciplina
+
+A dimensão perceptiva não desaparece  -  ela será retomada no trabalho de campo e no diagnóstico integrado.
+:::
+:::
+:::
+
 # [1  -  DISCUSSÃO DA LEITURA]{.section-header}
 
 ## Bertrand (1971): pontos-chave {.smaller-text}
@@ -60,8 +130,8 @@ Compreender a evolução histórica do conceito de paisagem na Geografia, desde 
 
 **Contribuição central:**
 
-- Paisagem como **combinação dinâmica**
-- Três componentes: **potencial ecológico** + **exploração biológica** + **ação antrópica**
+- Paisagem como [combinação dinâmica]{.underline}
+- Três componentes: [potencial ecológico]{.underline} + [exploração biológica]{.underline} + **ação antrópica**
 - Hierarquia escalar: zona → domínio → região natural → **geossistema** → geofácies → geótopo
 :::
 
@@ -83,35 +153,14 @@ Compreender a evolução histórica do conceito de paisagem na Geografia, desde 
 
 # [2  -  DA *LANDSCHAFT* AO GEOSSISTEMA]{.section-header}
 
-## Linha do tempo conceitual {.smaller-text}
-
-| Período | Autor/Escola | Conceito-chave |
-|:---:|-------------|----------------|
-| 1807-1859 | **Humboldt** | *Landschaft* = fisionomia regional; totalidade perceptível |
-| 1913 | **Passarge** | *Landschaftskunde* = ciência da paisagem; tipologias regionais |
-| 1939 | **Carl Troll** | **Ecologia da paisagem**  -  fotointerpretação aérea + ecologia |
-| 1960s | **Sochava** (URSS) | **Geossistema**  -  sistema aberto: fluxos de energia/matéria |
-| 1968 | **Bertrand** (França) | Geossistema como unidade de análise; classificação hierárquica |
-| 1986 | **Forman & Godron** | *Landscape Ecology*  -  padrão, processo, escala |
-| 1990s | **Naveh & Lieberman** | Paisagem total (*Total Human Ecosystem*) |
-| 2000s-hoje | Abordagens integradoras | Serviços ecossistêmicos, métricas, modelagem, SIG |
-
-: {.striped .hover}
-
-::: {.info-box}
-A trajetória mostra um movimento gradual: de **descrição visual** → **classificação regional** → **análise sistêmica** → **quantificação e modelagem**.
-:::
-
----
-
 ## Retomada: Humboldt e a *Landschaft* {.smaller-text}
 
 ::: {.info-box}
-**Da Aula 03  -  o que já sabemos sobre Humboldt:**
+**Da Aula 01.2  -  o que já sabemos sobre Humboldt:**
 
-- *Landschaft* = **fisionomia regional**, totalidade perceptível
+- *Landschaft* = [fisionomia regional]{.underline}, totalidade perceptível
 - Método do **"Empirismo Raciocinado"**: observação + intuição + síntese
-- A paisagem como resultado da **interação** entre clima, relevo, vegetação e cultura
+- A paisagem como resultado da [interação]{.underline} entre clima, relevo, vegetação e cultura
 - O *Naturgemälde* como primeiro modelo de representação integrada
 
 **Agora avançamos:** o que aconteceu *depois* de Humboldt? Como o conceito evoluiu de uma visão de totalidade para modelos sistêmicos e quantitativos?
@@ -134,7 +183,7 @@ Carl Troll cunhou o termo **Landschaftsökologie** (Ecologia da Paisagem) ao com
 
 ### Proposta
 
-A paisagem é um **mosaico de ecótopos** onde:
+A paisagem é um [mosaico de ecótopos]{.underline} onde:
 
 - Cada ecótopo tem composição e funcionalidade próprias
 - As relações **entre** ecótopos definem a dinâmica da paisagem
@@ -150,8 +199,8 @@ A paisagem é um **mosaico de ecótopos** onde:
 
 1. **Visão aérea** como ferramenta analítica  -  antecipa o sensoriamento remoto
 2. **Ecótopo** como unidade elementar da paisagem
-3. Relações **horizontais** (entre unidades) são tão importantes quanto as **verticais** (dentro de uma unidade)
-4. A paisagem é **funcional**  -  não apenas descritiva
+3. Relações [horizontais]{.underline} (entre unidades) são tão importantes quanto as [verticais]{.underline} (dentro de uma unidade)
+4. A paisagem é [funcional]{.underline}  -  não apenas descritiva
 
 > *"A ecologia da paisagem estuda a estrutura, a função e as mudanças do mosaico de ecossistemas em escala paisagística."*  -  Troll (1939, adaptado)
 :::
@@ -170,7 +219,7 @@ A paisagem é um **mosaico de ecótopos** onde:
 
 - Paisagem como **sistema aberto**: entradas e saídas de energia e matéria
 - **Geossistema** = unidade de estudo que integra geomorfologia, clima, hidrologia, vegetação, solos
-- Enfoque nos **fluxos** e nas **transformações** (dinâmica)
+- Enfoque nos [fluxos]{.underline} e nas [transformações]{.underline} (dinâmica)
 
 ### Bertrand (1968)  -  abordagem francesa
 
@@ -226,10 +275,10 @@ As tradições geográficas iluminam **diferentes dimensões** da paisagem:
 ::: {.column width="50%"}
 ### Características
 
-- Ênfase na **forma** da paisagem (*Gestalt*)
-- Paisagem como **unidade fisiográfica** regional
+- Ênfase na [forma]{.underline} da paisagem (*Gestalt*)
+- Paisagem como [unidade fisiográfica]{.underline} regional
 - Classificação e mapeamento de tipos de paisagem
-- Forte vínculo com **geomorfologia** e **climatologia**
+- Forte vínculo com [geomorfologia]{.underline} e [climatologia]{.underline}
 
 ### Representantes
 
@@ -264,10 +313,10 @@ A tradição alemã ofereceu:
 ::: {.column width="50%"}
 ### Características
 
-- Paisagem como **expressão material** das relações sociedade-natureza
-- Forte influência de **Vidal de la Blache** (gêneros de vida)
-- A paisagem reflete modos de **produção**, **ocupação** e **cultura**
-- Evolução para o **geossistema** (Bertrand) e a trilogia **GTP** (Geossistema-Território-Paisagem)
+- Paisagem como [expressão material]{.underline} das relações sociedade-natureza
+- Forte influência de [Vidal de la Blache]{.underline} (gêneros de vida)
+- A paisagem reflete modos de [produção]{.underline}, [ocupação]{.underline} e [cultura]{.underline}
+- Evolução para o [geossistema]{.underline} (Bertrand) e a trilogia [GTP]{.underline} (Geossistema-Território-Paisagem)
 
 ### Representantes
 
@@ -352,7 +401,7 @@ Esse modelo é **simples**, **visual** e **operacional**  -  por isso dominou a 
 
 - Paisagem como **construção cultural** e **percepção**
 - Não apenas o que se vê, mas **como** e **por que** se vê
-- A paisagem é **vivida**, **significada** e **disputada**
+- A paisagem é [vivida]{.underline}, [significada]{.underline} e **disputada**
 - Rejeição a abordagens exclusivamente quantitativas
 
 ### Representantes
@@ -368,7 +417,7 @@ Esse modelo é **simples**, **visual** e **operacional**  -  por isso dominou a 
 **O que essa tradição acrescenta?
 **
 
-1. A paisagem nunca é "neutra"  -  reflete **valores**, **conflitos** e **desigualdades**
+1. A paisagem nunca é "neutra"  -  reflete [valores]{.underline}, **conflitos** e **desigualdades**
 2. A mesma paisagem pode ser percebida de formas **radicalmente diferentes**
 3. A análise técnica não substitui a **experiência vivida**
 4. Paisagem como **patrimônio**  -  Convenção Europeia da Paisagem (2000)
@@ -378,6 +427,32 @@ Esse modelo é **simples**, **visual** e **operacional**  -  por isso dominou a 
 **Nesta disciplina**, a dimensão cultural/perceptiva será mobilizada quando pertinente, mas o foco será nas dimensões **estrutural, funcional e dinâmica**.
 :::
 :::
+:::
+
+---
+
+## Linha do tempo conceitual — síntese {.smaller-text}
+
+::: {=html}
+<table class="table table-striped table-hover" style="width:100%; font-size:0.88em;">
+<thead>
+<tr><th style="text-align:center; width:13%">Período</th><th style="width:28%">Autor/Escola</th><th>Conceito-chave</th></tr>
+</thead>
+<tbody>
+<tr><td style="text-align:center">1807–1859</td><td><strong>Humboldt</strong></td><td><em>Landschaft</em> = fisionomia regional; totalidade perceptível</td></tr>
+<tr><td style="text-align:center">1913</td><td><strong>Passarge</strong></td><td><em>Landschaftskunde</em> = ciência da paisagem; tipologias regionais</td></tr>
+<tr><td style="text-align:center">1939</td><td><strong>Carl Troll</strong></td><td><strong>Ecologia da paisagem</strong> — fotointerpretação aérea + ecologia</td></tr>
+<tr><td style="text-align:center">1960s</td><td><strong>Sochava</strong> (URSS)</td><td><strong>Geossistema</strong> — sistema aberto: fluxos de energia/matéria</td></tr>
+<tr><td style="text-align:center">1968</td><td><strong>Bertrand</strong> (França)</td><td>Geossistema como unidade de análise; classificação hierárquica</td></tr>
+<tr><td style="text-align:center">1986</td><td><strong>Forman &amp; Godron</strong></td><td><em>Landscape Ecology</em> — padrão, processo, escala</td></tr>
+<tr><td style="text-align:center">1990s</td><td><strong>Naveh &amp; Lieberman</strong></td><td>Paisagem total (<em>Total Human Ecosystem</em>)</td></tr>
+<tr><td style="text-align:center">2000s–hoje</td><td>Abordagens integradoras</td><td>Serviços ecossistêmicos, métricas, modelagem, SIG</td></tr>
+</tbody>
+</table>
+:::
+
+::: {.info-box}
+A trajetória completa: de [descrição visual]{.underline} → [classificação regional]{.underline} → [análise sistêmica]{.underline} → [quantificação e modelagem]{.underline}.
 :::
 
 # [4  -  A CONTRIBUIÇÃO BRASILEIRA]{.section-header}
@@ -477,7 +552,7 @@ Para Milton Santos, paisagem e espaço não são sinônimos:
 
 - **Paisagem** = forma, aparência, materialidade visível
 - **Espaço geográfico** = forma + conteúdo (relações sociais, técnicas, normas)
-- A paisagem é **transtemporal**  -  acumula tempos diferentes
+- A paisagem é [transtemporal]{.underline}  -  acumula tempos diferentes
 - O espaço é **atual**  -  é o presente vivido
 :::
 
@@ -487,8 +562,8 @@ Para Milton Santos, paisagem e espaço não são sinônimos:
 **
 
 1. A paisagem é **acumulação de tempos**  -  camadas históricas sobrepostas
-2. Analisar a paisagem é **ler as heranças** inscritas no espaço
-3. A paisagem **não explica tudo**  -  é preciso ir além da forma para compreender os processos
+2. Analisar a paisagem é [ler as heranças]{.underline} inscritas no espaço
+3. A paisagem [não explica tudo]{.underline}  -  é preciso ir além da forma para compreender os processos
 4. A relação entre forma e função muda conforme o **período técnico**
 
 ### Exemplo
@@ -516,10 +591,10 @@ Uma fazenda de café abandonada no vale do Paraíba: a paisagem (ruínas, pastag
 ### Paisagem É
 
 - ✅ **Mosaico heterogêneo** de coberturas e usos
-- ✅ **Resultado da interação** entre componentes físicos, bióticos e antrópicos
-- ✅ **Multiescalar**  -  existe em várias escalas de análise
+- ✅ [Resultado da interação]{.underline} entre componentes físicos, bióticos e antrópicos
+- ✅ [Multiescalar]{.underline}  -  existe em várias escalas de análise
 - ✅ **Dinâmica**  -  muda no tempo
-- ✅ **Analisável**  -  com métodos qualitativos e quantitativos
+- ✅ [Analisável]{.underline}  -  com métodos qualitativos e quantitativos
 - ✅ **Material**  -  tem expressão espacial concreta
 :::
 
