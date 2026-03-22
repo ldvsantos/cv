@@ -3,8 +3,9 @@
   "tasks": [
     {
       "label": "Renderizar Apresentação (Quarto)",
-      "type": "shell",
-      "command": "quarto render \"${file}\"",
+      "type": "process",
+      "command": "quarto",
+      "args": ["render", "${file}"],
       "group": "build",
       "presentation": {
         "reveal": "always",
