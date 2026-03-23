@@ -1,6 +1,6 @@
 ---
 title: "Estatística Inferencial e Distribuição Normal"
-subtitle: "Aula 04 — Fundamentos da Inferência Estatística<br>Análise de Dados Ambientais"
+subtitle: "Aula 04 | Fundamentos da Inferência Estatística<br>Análise de Dados Ambientais"
 author: "Luiz Diego Vidal Santos"
 format:
   revealjs:
@@ -45,7 +45,7 @@ execute:
 :::
 
 
-# [1 — ESTATÍSTICA INFERENCIAL]{.section-header}
+# [1. ESTATÍSTICA INFERENCIAL]{.section-header}
 
 ## O que é Estatística Inferencial? {.smaller-text}
 
@@ -93,24 +93,18 @@ A inferência advém da relação entre a **teoria estatística** e os **dados r
 :::
 
 
-# [2 — TESTES DE HIPÓTESES]{.section-header}
+# [2. TESTES DE HIPÓTESES]{.section-header}
 
 ## Hipóteses Científicas {.smaller-text}
 
 ::: {.info-box}
-**Hipótese** — Uma expectativa sobre as características morfológicas de uma nova cultivar.
+**Hipótese:** Uma expectativa sobre as características morfológicas de uma nova cultivar.
 :::
-
-. . .
-
 ::: {.highlight-box}
 **Exemplo:** A cultivar Abacaxi BRS Ajubá apresenta maior nível de controle da fusariose que a cultivar BRS Vitória.
 :::
-
-. . .
-
 ::: {.box}
-**Teste de hipótese** — Avaliação, por meio de métodos científicos, da hipótese estabelecida.
+**Teste de hipótese:** Avaliação, por meio de métodos científicos, da hipótese estabelecida.
 :::
 
 
@@ -119,9 +113,6 @@ A inferência advém da relação entre a **teoria estatística** e os **dados r
 ::: {.info-box}
 **Etapas para teste de hipóteses:**
 :::
-
-. . .
-
 ::: {.columns}
 :::: {.column width="50%"}
 
@@ -149,9 +140,6 @@ A inferência advém da relação entre a **teoria estatística** e os **dados r
 ::: {.info-box}
 Ao coletar dados, você se depara com **duas possibilidades**:
 :::
-
-. . .
-
 ::: {.columns}
 :::: {.column width="50%"}
 
@@ -178,7 +166,7 @@ O efeito **existe**.
 :::
 
 
-# [3 — INFERÊNCIA FREQUENTISTA]{.section-header}
+# [3. INFERÊNCIA FREQUENTISTA]{.section-header}
 
 ## Valor-*p* de Fisher {.smaller-text}
 
@@ -191,9 +179,6 @@ O efeito **existe**.
 - Critério probabilístico objetivo: $p < 0{,}05$
 - Teste de Significância da Hipótese Nula (TSHN)
 :::
-
-. . .
-
 ::: {.highlight-box}
 O critério do valor-*p* assume, **arbitrariamente**, uma probabilidade de **5% de chance de erro** na inferência.
 :::
@@ -207,14 +192,11 @@ O critério do valor-*p* assume, **arbitrariamente**, uma probabilidade de **5% 
 :::
 
 
-## Valor-*p* — Exemplo Prático {.smaller-text}
+## Valor-*p*: Exemplo Prático {.smaller-text}
 
 ::: {.info-box}
 A cultivar Abacaxi BRS Ajubá apresenta maior nível ($M = 6{,}32$; $DP = 1{,}33$) de controle da fusariose quando comparada à cultivar BRS Vitória ($M = 8{,}79$; $DP = 1{,}19$; $p < 0{,}05$).
 :::
-
-. . .
-
 ::: {.box}
 **Exemplos de inferência com valor-*p*:**
 
@@ -230,9 +212,6 @@ A cultivar Abacaxi BRS Ajubá apresenta maior nível ($M = 6{,}32$; $DP = 1{,}33
 ::: {.highlight-box}
 O valor de *p* é **fortemente influenciado** pelo tamanho amostral!
 :::
-
-. . .
-
 ::: {.columns}
 :::: {.column width="50%"}
 
@@ -255,24 +234,18 @@ O valor de *p* é **fortemente influenciado** pelo tamanho amostral!
 
 ::::
 :::
-
-. . .
-
 ::: {.info-box}
 O valor de *p* **não reflete**, por si só, a **magnitude** do efeito.
 :::
 
 
-# [4 — ERROS TIPO I E TIPO II]{.section-header}
+# [4. ERROS TIPO I E TIPO II]{.section-header}
 
 ## Matriz de Decisão {.smaller-text}
 
 ::: {.info-box}
 Ao tomar decisões sobre Ho, há **duas formas de errar**:
 :::
-
-. . .
-
 ::: {.columns}
 :::: {.column width="50%"}
 
@@ -283,9 +256,6 @@ Rejeitar Ho quando Ho é **verdadeira**.
 
 → "Afirmo que há efeito, quando **não há**."
 :::
-
-. . .
-
 ::: {.highlight-box}
 **Erro Tipo II** ($\beta$)
 
@@ -303,7 +273,7 @@ Aceitar Ho quando Ho é **falsa**.
 :::
 
 
-## Erros Estatísticos — Resumo Visual {.smaller-text}
+## Erros Estatísticos: Resumo Visual {.smaller-text}
 
 ![](slide8_img.jpg){fig-align="center" width="75%"}
 
@@ -317,9 +287,6 @@ O **equilíbrio** entre Erro Tipo I ($\alpha$) e Erro Tipo II ($\beta$) é funda
 ::: {.info-box}
 Situações que nos levam a cometer Erro Tipo I e Erro Tipo II:
 :::
-
-. . .
-
 ::: {.columns}
 :::: {.column width="33%"}
 
@@ -351,20 +318,17 @@ Instrumento de pesquisa **ruim** ou não validado.
 :::
 
 
-# [5 — TAMANHO DA AMOSTRA E PODER]{.section-header}
+# [5. TAMANHO DA AMOSTRA E PODER]{.section-header}
 
 ## Poder Amostral {.smaller-text}
 
 ::: {.info-box}
-**Poder amostral** — Probabilidade de detectar um efeito do tratamento, **se estiver presente**.
+**Poder amostral:** Probabilidade de detectar um efeito do tratamento, **se estiver presente**.
 
 $$\text{Poder} = 1 - \beta = 1 - 0{,}20 = 0{,}80$$
 
 (Cohen, 1988, 1992)
 :::
-
-. . .
-
 ::: {.columns}
 :::: {.column width="50%"}
 
@@ -391,11 +355,8 @@ Se o poder é 0,80, há **80% de chance** de detectar um efeito real e **20% de 
 ## Tamanho do Efeito {.smaller-text}
 
 ::: {.info-box}
-**Tamanho do efeito** — Medida padronizada da **magnitude** da diferença ou associação encontrada, independente do tamanho amostral (Cohen, 1988).
+**Tamanho do efeito:** Medida padronizada da **magnitude** da diferença ou associação encontrada, independente do tamanho amostral (Cohen, 1988).
 :::
-
-. . .
-
 ::: {.columns}
 :::: {.column width="50%"}
 
@@ -425,9 +386,6 @@ O tamanho do efeito **complementa** o valor-*p*, informando a **relevância prá
 ::: {.info-box}
 Existem diferentes medidas conforme o **tipo de análise** e o **delineamento experimental**:
 :::
-
-. . .
-
 ::: {.columns}
 :::: {.column width="50%"}
 
@@ -472,9 +430,6 @@ Usa a **média e DP das diferenças** intra-sujeito.
 
 Indicado para delineamentos **pareados / antes-depois**.
 :::
-
-. . .
-
 ::: {.highlight-box}
 **$r$ (correlação como efeito)**
 
@@ -503,9 +458,6 @@ $$f = \sqrt{\frac{\eta^2}{1 - \eta^2}}$$
 
 Usado no **G\*Power** para calcular N em ANOVA.
 :::
-
-. . .
-
 ::: {.info-box}
 **Quando usar cada medida?**
 
@@ -526,9 +478,6 @@ Usado no **G\*Power** para calcular N em ANOVA.
 ::: {.info-box}
 Na ANOVA, o tamanho do efeito indica a **proporção da variância** explicada pelo fator estudado.
 :::
-
-. . .
-
 ::: {.columns}
 :::: {.column width="33%"}
 
@@ -570,9 +519,6 @@ Recomendado para **amostras pequenas**.
 
 ::::
 :::
-
-. . .
-
 ::: {.highlight-box}
 | $\eta^2$ / $\omega^2$ | Classificação |
 |:---:|:---|
@@ -584,7 +530,7 @@ Recomendado para **amostras pequenas**.
 :::
 
 
-## G*Power — Interface {.smaller-text}
+## G*Power: Interface {.smaller-text}
 
 ![](slide17_img.jpg){fig-align="center" width="70%"}
 
@@ -596,9 +542,6 @@ O **G*Power** permite calcular o tamanho amostral necessário para diferentes te
 ## Relação N × Efeito × Decisão {.smaller-text}
 
 ![](fig_relacao_n_efeito.png){fig-align="center" width="75%"}
-
-. . .
-
 ::: {.highlight-box}
 Com **N grande** e efeito baixo → risco de **Erro Tipo I** (falso positivo).
 
@@ -606,7 +549,7 @@ Com **N pequeno** e efeito alto → risco de **Erro Tipo II** (falso negativo).
 :::
 
 
-# [6 — DISTRIBUIÇÃO NORMAL]{.section-header}
+# [6. DISTRIBUIÇÃO NORMAL]{.section-header}
 
 ## O que é a Distribuição Normal? {.smaller-text}
 
@@ -620,9 +563,6 @@ A Distribuição Normal é uma das distribuições de probabilidade mais utiliza
 
 Um grande número de fenômenos naturais apresenta esse tipo de distribuição.
 :::
-
-. . .
-
 ::: {.highlight-box}
 A curva normal representa a forma como diferentes valores se **agrupam em torno** de um determinado ponto.
 :::
@@ -644,8 +584,8 @@ A curva normal representa a forma como diferentes valores se **agrupam em torno*
 ::: {.box}
 **Definida por dois parâmetros:**
 
-- **Média** ($\bar{X}$) — centro da distribuição
-- **Desvio-padrão** ($DP$) — largura/dispersão
+- **Média** ($\bar{X}$): centro da distribuição
+- **Desvio-padrão** ($DP$): largura/dispersão
 :::
 
 ::::
@@ -657,7 +597,7 @@ A curva normal representa a forma como diferentes valores se **agrupam em torno*
 :::
 
 
-## Exemplo — Capim Vetiver {.smaller-text}
+## Exemplo: Capim Vetiver {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="45%"}
@@ -698,7 +638,6 @@ $$DP = \sqrt{\frac{245}{7}} = 15{,}66 \text{ cm}$$
 
 ![](fig_curva_normal_vetiver.png){fig-align="center" width="70%"}
 
-. . .
 
 ::: {.columns}
 :::: {.column width="33%"}
@@ -731,53 +670,25 @@ $[29{,}64 - 123{,}60]$
 :::
 
 
-# [7 — DESVIOS DE NORMALIDADE]{.section-header}
+# [7. DESVIOS DE NORMALIDADE]{.section-header}
 
 ## Assimetria {.smaller-text}
 
 ::: {.info-box}
-**Assimetria (Skewness)** — Mede o grau de **desvio da simetria** da distribuição.
+**Assimetria (Skewness):** Mede o grau de **desvio da simetria** da distribuição.
 :::
-
-. . .
-
 ![](fig_assimetria.png){fig-align="center" width="80%"}
-
-. . .
-
 ::: {.highlight-box}
-**Exemplo real:** A distribuição de renda no Brasil é **assimétrica positiva** — muitas pessoas com renda baixa e poucas com renda alta.
-:::
-
-
-## Tipos de Assimetria — Exemplos {.smaller-text}
-
-::: {.columns}
-:::: {.column width="50%"}
-
-![](slide25_img.jpg){fig-align="center" width="95%"}
-
-::::
-:::: {.column width="50%"}
-
-![](slide25_img.png){fig-align="center" width="95%"}
-
-::::
+**Exemplo real:** A distribuição de renda no Brasil é **assimétrica positiva**, com muitas pessoas com renda baixa e poucas com renda alta.
 :::
 
 
 ## Curtose {.smaller-text}
 
 ::: {.info-box}
-**Curtose (Kurtosis)** — Mede o grau de **achatamento** da distribuição.
+**Curtose (Kurtosis):** Mede o grau de **achatamento** da distribuição.
 :::
-
-. . .
-
 ![](fig_curtose.png){fig-align="center" width="65%"}
-
-. . .
-
 ::: {.columns}
 :::: {.column width="33%"}
 
@@ -809,40 +720,18 @@ Dados muito **dispersos**; muitos valores afastados da média.
 :::
 
 
-## Tipos de Curtose — Exemplos {.smaller-text}
-
-::: {.columns}
-:::: {.column width="50%"}
-
-![](slide26_img.png){fig-align="center" width="95%"}
-
-::::
-:::: {.column width="50%"}
-
-![](slide27_img.jpg){fig-align="center" width="95%"}
-
-::::
-:::
-
-
-# [8 — TESTES DE NORMALIDADE]{.section-header}
+# [8. TESTES DE NORMALIDADE]{.section-header}
 
 ## Critérios Descritivos {.smaller-text}
 
 ::: {.info-box}
 **Critérios descritivos** (Tabachnick & Fidell, 2019)
 :::
-
-. . .
-
 ::: {.box}
 **Procedimento:** Transformar o escore de Assimetria e Curtose em **escore Z**:
 
 $$Z = \frac{\text{Assimetria (ou Curtose)}}{\text{Erro-padrão}}$$
 :::
-
-. . .
-
 ::: {.columns}
 :::: {.column width="33%"}
 
@@ -874,7 +763,7 @@ $p < 0{,}001$
 :::
 
 
-## Critérios Descritivos — Exemplo Visual {.smaller-text}
+## Critérios Descritivos: Exemplo Visual {.smaller-text}
 
 ![](slide28_img.png){fig-align="center" width="75%"}
 
@@ -887,18 +776,12 @@ $p < 0{,}001$
 - **Kolmogorov-Smirnov** e **Shapiro-Wilk**
 - Hipótese nula: dados **não são** normalmente distribuídos
 :::
-
-. . .
-
 ::: {.highlight-box}
 Espera-se **rejeitar** a Ho → dados **são** normalmente distribuídos.
 
 Nos testes K-S e S-W, espera-se $p > 0{,}05$ para **acatar** a normalidade.
 :::
-
-. . .
-
-## Testes K-S e Shapiro-Wilk — Referências Visuais {.smaller-text}
+## Testes K-S e Shapiro-Wilk: Referências Visuais {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="50%"}
@@ -928,15 +811,12 @@ Nos testes K-S e S-W, espera-se $p > 0{,}05$ para **acatar** a normalidade.
 
 ::::
 :::
-
-. . .
-
 ::: {.info-box}
-**Recomendação:** Prefira o **Shapiro-Wilk** quando possível — é o teste com maior poder estatístico para detectar desvios de normalidade.
+**Recomendação:** Prefira o **Shapiro-Wilk** quando possível, pois é o teste com maior poder estatístico para detectar desvios de normalidade.
 :::
 
 
-## Resumo — Normalidade na Prática {.smaller-text}
+## Resumo: Normalidade na Prática {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="50%"}
