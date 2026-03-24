@@ -84,6 +84,7 @@ format:
         <a class="skip-link" href="#quarto-content">Pular para o conteúdo</a>
         <script type='application/ld+json'>{"@context":"http://www.schema.org","@type":"person","name":"Luiz Diego Vidal Santos","jobTitle":"Professor Visitante e Pesquisador","gender":"male","description":"Engenheiro Agrônomo, Doutor em Propriedade Intelectual e Inovação. Professor Visitante no PPG em Planejamento Territorial da UEFS. Líder do grupo PLANeT-Inova.","address":{"@type":"PostalAddress","addressLocality":"Aracaju","addressRegion":"SE","addressCountry":"Brasil"},"worksFor":[{"@type":"Organization","name":"UEFS"}]}</script>
         <script>document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll("a h1,a h2,a h3,a h4,a h5,a h6").forEach(function(h){h.classList.remove("anchored");h.removeAttribute("data-anchor-id")})});</script>
+        <script>document.addEventListener("DOMContentLoaded",function(){var p=window.location.pathname,b=p.replace(/-(en|es|fr)\.html$/,'.html').replace(/\.html$/,'').replace(/\/$/,'/index');if(/^\/(?:index|[^\/]+\/index|papers\/(?:publicacoes|livros))$/.test(b)){document.querySelectorAll('.navbar a').forEach(function(a){var t=a.textContent.trim();if(t==='EN')a.href=b+'-en.html';else if(t==='ES')a.href=b+'-es.html';else if(t==='FR')a.href=b+'-fr.html';});}});</script>
 
 
 
