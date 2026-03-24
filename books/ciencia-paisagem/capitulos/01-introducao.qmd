@@ -1,4 +1,4 @@
-﻿# Introdução à Análise da Paisagem {#sec-introducao}
+# Introdução à Análise da Paisagem {#sec-introducao}
 
 ## O que é Análise da Paisagem?
 
@@ -6,27 +6,26 @@ A Análise da Paisagem (*Landscape Analysis*), inserida no campo mais amplo da C
 
 O conceito moderno de paisagem ecológica foi introduzido pelo geógrafo alemão Carl Troll em 1939, ao combinar fotointerpretação de fotografias aéreas com observações ecológicas de campo [@troll1939]. Troll propôs que a paisagem deveria ser entendida não como um cenário visual, mas como um sistema funcional no qual a heterogeneidade espacial condiciona fluxos de energia, matéria e organismos. Essa formulação foi historicamente decisiva, pois deslocou a paisagem do domínio estético e descritivo para o domínio científico quantificável. A consolidação da disciplina ocorreu ao longo de mais de sete décadas, conforme sintetiza a @fig-evolucao-conceito.
 
-```{dot}
-//| label: fig-evolucao-conceito
-//| fig-cap: "Linha do tempo dos principais marcos na consolidação da Análise da Paisagem como disciplina científica."
-//| fig-width: 9
-digraph {
-    rankdir=LR
-    bgcolor="transparent"
-    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=9, margin="0.2,0.1", penwidth=0.8]
-    edge [color="#555555", penwidth=1.2, arrowsize=0.7]
-
-    a [label="1939\nCarl Troll cunha\nLandschaftsökologie", fillcolor="#E8F5E9", color="#2E7D32"]
-    b [label="1969\nNeef publica bases\nteóricas", fillcolor="#C8E6C9", color="#2E7D32"]
-    c [label="1981\nNaveh & Lieberman\nprimeiro livro-texto", fillcolor="#A5D6A7", color="#2E7D32"]
-    d [label="1984\nAllerton Park\nformaliza a disciplina", fillcolor="#81C784", color="#1B5E20"]
-    e [label="1986\nForman & Godron\nLandscape Ecology", fillcolor="#66BB6A", color="#1B5E20"]
-    f [label="1995\nForman publica\nLand Mosaics", fillcolor="#4CAF50", color="#1B5E20", fontcolor="white"]
-    g [label="2002\nMcGarigal & Cushman\nFRAGSTATS", fillcolor="#388E3C", color="#1B5E20", fontcolor="white"]
-    h [label="2015\nTurner & Gardner\n2ª edição", fillcolor="#2E7D32", color="#1B5E20", fontcolor="white"]
-
-    a -> b -> c -> d -> e -> f -> g -> h
-}
+```{mermaid}
+%%| label: fig-evolucao-conceito
+%%| fig-cap: "Linha do tempo dos principais marcos na consolidação da Análise da Paisagem como disciplina científica."
+%%| fig-width: 7
+graph LR
+    A["1939<br>Carl Troll cunha<br>Landschaftsökologie"] --> B["1969<br>Neef publica bases<br>teóricas"]
+    B --> C["1981<br>Naveh & Lieberman<br>primeiro livro-texto"]
+    C --> D["1984<br>Allerton Park<br>formaliza a disciplina"]
+    D --> E["1986<br>Forman & Godron<br>Landscape Ecology"]
+    E --> F["1995<br>Forman publica<br>Land Mosaics"]
+    F --> G["2002<br>McGarigal & Cushman<br>FRAGSTATS"]
+    G --> H["2015<br>Turner & Gardner<br>2ª edição"]
+    style A fill:#E8F5E9,stroke:#2E7D32,color:#000
+    style B fill:#C8E6C9,stroke:#2E7D32,color:#000
+    style C fill:#A5D6A7,stroke:#2E7D32,color:#000
+    style D fill:#81C784,stroke:#1B5E20,color:#000
+    style E fill:#66BB6A,stroke:#1B5E20,color:#000
+    style F fill:#4CAF50,stroke:#1B5E20,color:#fff
+    style G fill:#388E3C,stroke:#1B5E20,color:#fff
+    style H fill:#2E7D32,stroke:#1B5E20,color:#fff
 ```
 
 A @fig-evolucao-conceito revela uma trajetória de quase oito décadas que pode ser dividida em três fases distintas. A fase fundacional (1939–1981) é marcada pela formulação conceitual na Europa Central, onde geógrafos como Troll, Neef e Schmithüsen desenvolveram os fundamentos teóricos da disciplina, enfatizando a paisagem como unidade integradora de processos naturais e culturais. A fase de formalização (1984–1995), impulsionada pelo workshop de Allerton Park (1984) na América do Norte, consolidou a ecologia da paisagem como disciplina científica autônoma com vocabulário, métodos e questões de pesquisa próprios, culminando nas obras de referência de Forman e Godron [-@forman1986] e Forman [-@forman1995]. A fase quantitativa (2002–presente) é caracterizada pelo desenvolvimento de métricas espaciais padronizadas (FRAGSTATS), pela integração com SIG e sensoriamento remoto, e pela publicação de sínteses abrangentes como Turner e Gardner [-@turner2015], que estabelecem o cânone contemporâneo da disciplina.
@@ -39,7 +38,7 @@ A primeira propriedade é a heterogeneidade espacial, entendida como a variaçã
 
 A segunda propriedade é a interação entre unidades, na qual fluxos de organismos, nutrientes, energia, propágulos e distúrbios atravessam fronteiras entre os distintos elementos da paisagem. Uma mancha florestal não existe isoladamente; ela troca organismos com outras manchas (por dispersão através da matriz), recebe nutrientes de áreas agrícolas adjacentes (por escoamento superficial), é afetada por vento e luminosidade provenientes de áreas abertas (efeito de borda) e pode ser atingida por fogo propagado a partir de pastagens vizinhas. Essas interações entre elementos espacialmente distintos são a essência do que distingue a ecologia da paisagem da ecologia de ecossistemas, que tipicamente estuda uma unidade de cada vez.
 
-A terceira propriedade é a escala, pois os processos ecológicos que operam na escala da paisagem (tipicamente 10³ a 10⁵ ha) diferem qualitativamente daqueles que operam em escalas menores, como a parcela (10⁻² ha) ou o ecossistema individual (10⁰ a 10² ha). Na escala da paisagem, processos como dispersão de espécies entre fragmentos, propagação de fogo por mosaicos de vegetação, drenagem de bacias hidrográficas e conectividade funcional entre habitats tornam-se observáveis e quantificáveis, enquanto na escala de parcela esses processos são invisíveis. A escolha da escala de análise não é uma decisão meramente técnica, mas determina quais processos serão detectáveis e quais permanecerão ocultos, tema desenvolvido em profundidade no @sec-escalas.
+A terceira propriedade é a escala, pois os processos ecológicos que operam na escala da paisagem (tipicamente $10^3$ a $10^5$ ha) diferem qualitativamente daqueles que operam em escalas menores, como a parcela ($10^{-2}$ ha) ou o ecossistema individual ($10^0$ a $10^2$ ha). Na escala da paisagem, processos como dispersão de espécies entre fragmentos, propagação de fogo por mosaicos de vegetação, drenagem de bacias hidrográficas e conectividade funcional entre habitats tornam-se observáveis e quantificáveis, enquanto na escala de parcela esses processos são invisíveis. A escolha da escala de análise não é uma decisão meramente técnica, mas determina quais processos serão detectáveis e quais permanecerão ocultos, tema desenvolvido em profundidade no @sec-escalas.
 
 ## As duas tradições
 
@@ -48,6 +47,71 @@ A ecologia da paisagem se desenvolveu ao longo de duas tradições intelectuais 
 A tradição norte-americana, ancorada na ecologia quantitativa e na biologia da conservação, enfatiza os efeitos mensuráveis de padrões espaciais sobre processos ecológicos, com forte aparato estatístico e computacional [@turner2015]. Nessa tradição, a paisagem é operacionalizada como um mosaico de manchas, corredores e matriz cujas propriedades (composição, configuração) podem ser quantificadas por métricas espaciais e correlacionadas com indicadores ecológicos (riqueza de espécies, fluxo gênico, taxa de extinção). O rigor quantitativo é a marca dessa tradição, que produziu ferramentas como o FRAGSTATS e arcabouços como a teoria de metapopulações aplicada a paisagens fragmentadas.
 
 No contexto brasileiro, Jean Paul Metzger [-@metzger2001] articulou uma síntese operacional dessas duas tradições ao propor que a ecologia de paisagens é "o estudo da estrutura, função e dinâmica de áreas heterogêneas compostas por ecossistemas interativos", sublinhando que o diferencial da abordagem é tratar explicitamente o efeito da configuração espacial sobre os processos em estudo. Essa formulação, que combina o rigor quantitativo da tradição ecológica com a atenção ao contexto territorial da tradição geográfica, guia o presente livro.
+
+## A construção histórica do conceito de paisagem
+
+Antes de se tornar um conceito científico operacional, a paisagem percorreu um longo caminho na história do pensamento ocidental — da contemplação estética renascentista à formulação sistêmica contemporânea. Compreender essa trajetória é essencial para evitar reducionismos e reconhecer que a paisagem sempre carregou, simultaneamente, dimensões materiais e imateriais.
+
+### Da pintura ao conceito: a paisagem como forma de ver
+
+O próprio termo *paisagem* (*Landschaft*, *paysage*, *landscape*) emergiu no vocabulário europeu vinculado à representação pictórica do território. Na tradição flamenga do século XVI, pintores como Joachim Patinir inauguraram a paisagem como gênero artístico autônomo, destacando pela primeira vez o cenário natural como tema principal — e não como mero pano de fundo para cenas religiosas ou mitológicas.
+
+::: {#fig-evolucao-pintura layout="[[35,35,30]]" layout-valign="bottom"}
+![Joachim Patinir, *Travessia do Estige* (c. 1520). A paisagem assume o papel central na composição, antecipando o gênero paisagístico.](../img/patinir_travessia_estige.jpg){#fig-patinir}
+
+![Jacob van Ruisdael, *Moinho de vento em Wijk bij Duurstede* (c. 1670). A paisagem holandesa como expressão de identidade territorial e domínio sobre a natureza.](../img/ruisdael_moinho.jpg){#fig-ruisdael}
+
+![Caspar David Friedrich, *O viajante sobre o mar de névoa* (c. 1818). O sujeito contempla a paisagem, inaugurando a dimensão subjetiva e perceptiva.](../img/friedrich_viajante_nevoa.jpg){#fig-friedrich width="75%"}
+
+Três momentos na evolução do conceito visual de paisagem: do cenário naturalista (séc. XVI) à paisagem identitária (séc. XVII) e à paisagem subjetiva do Romantismo (séc. XIX).
+:::
+
+Essa progressão visual — de Patinir a Friedrich — não é apenas história da arte: ela revela uma transformação epistemológica. A paisagem deixa de ser um espaço dado e passa a ser uma construção perceptiva, mediada pelo observador. Essa dimensão subjetiva será recuperada no século XX pela fenomenologia e pela geografia humanística (ver @sec-percepcao).
+
+### O empirismo raciocinado de Humboldt
+
+A passagem da paisagem estética para a paisagem científica tem um marco decisivo: Alexander von Humboldt (1769–1859). Em suas expedições pelas Américas (1799–1804), Humboldt desenvolveu o que chamou de *empirismo raciocinado* (*raisonnierter Empirismus*) — uma abordagem que integrava observação sistemática de fenômenos naturais com a busca por conexões causais entre eles.
+
+::: {#fig-humboldt layout="[[40,60]]" layout-valign="bottom"}
+![Retrato de Alexander von Humboldt, o naturalista-viajante que lançou as bases da ciência da paisagem.](../img/humboldt_retrato.jpg){#fig-humboldt-retrato width="75%"}
+
+![Humboldt e Bonpland ao pé do vulcão Chimborazo. A expedição que originou as primeiras representações integradas da paisagem tropical.](../img/humboldt_bonpland_chimborazo.jpg){#fig-humboldt-chimborazo}
+
+Alexander von Humboldt: a paisagem como objeto de investigação científica integradora.
+:::
+
+O *Naturgemälde* (quadro da natureza), publicado em 1807, é considerado o primeiro diagrama de paisagem: uma representação integrada do vulcão Chimborazo mostrando, numa única imagem, a variação altitudinal de vegetação, temperatura, pressão atmosférica, umidade e composição química do ar. Essa visualização sintetiza os três pilares do método humboldtiano:
+
+1. **Observação empírica rigorosa** — medição sistemática de variáveis ambientais em campo;
+2. **Intuição das conexões** — identificação de correlações entre fenômenos aparentemente independentes;
+3. **Síntese integradora** — representação visual e narrativa que revela o *todo* como mais do que a soma das partes.
+
+![O *Naturgemälde* de Humboldt (1807): primeira representação integrada de uma paisagem como sistema, mostrando as relações entre altitude, vegetação, temperatura e pressão no Chimborazo.](../img/naturgemalde_humboldt.png){#fig-naturgemalde width="90%"}
+
+O legado humboldtiano ecoa diretamente na ciência da paisagem contemporânea: a premissa de que a paisagem é um sistema integrado, no qual padrões de vegetação resultam da interação entre clima, relevo, solos e ação humana, é a formulação fundacional que Troll viria a operacionalizar em 1939 com o conceito de *Landschaftsökologie*.
+
+### Dimensão perceptiva e afetiva da paisagem
+
+A paisagem não é apenas uma configuração material mensurável; ela é também uma experiência vivida. A geografia humanística do século XX recuperou essa dimensão ao propor que a relação entre pessoa e lugar é carregada de afeto, memória e significado.
+
+Yi-Fu Tuan [-@tuan1974] introduziu os conceitos complementares de **topofilia** — o vínculo afetivo positivo entre uma pessoa e um lugar, que gera sentimento de pertencimento — e **topofobia** — a aversão ou medo associado a determinadas paisagens, como áreas degradadas, desmatadas ou de risco. Esses conceitos são operacionalmente relevantes porque influenciam diretamente as atitudes e decisões de manejo: agricultores com forte topofilia tendem a conservar paisagens tradicionais, enquanto a topofobia associada a áreas de vegetação densa pode motivar desmatamento.
+
+Augustin Berque [-@berque1984] aprofundou essa abordagem ao propor a dualidade **paisagem-marca** / **paisagem-matriz**: a paisagem é simultaneamente marca (expressão material de uma sociedade, inscrita no território) e matriz (moldura que condiciona a percepção, a identidade e as práticas futuras dessa sociedade). Uma paisagem de caatinga com cercados de pedra seca é marca da cultura pecuária sertaneja e, ao mesmo tempo, matriz que organiza os modos de vida, os deslocamentos e a identidade das comunidades que ali habitam.
+
+```{mermaid}
+%%| label: fig-marca-matriz
+%%| fig-cap: "A dualidade paisagem-marca e paisagem-matriz segundo Berque: a sociedade inscreve-se no território (marca) e o território condiciona a sociedade (matriz), num ciclo contínuo."
+%%| fig-width: 7
+graph LR
+    S["Sociedade<br>(cultura, práticas,<br>identidade)"]
+    P["Paisagem<br>(território,<br>materialidade)"]
+    S -- "inscreve → MARCA" --> P
+    P -- "condiciona → MATRIZ" --> S
+    style S fill:#FFF3E0,stroke:#E65100,color:#000
+    style P fill:#E8F5E9,stroke:#2E7D32,color:#000
+```
+
+Essa perspectiva integrada — que reconhece a paisagem como simultaneamente objeto material e construção perceptiva — fundamenta a abordagem adotada neste livro: quantificar a estrutura espacial da paisagem sem perder de vista que toda paisagem é percebida, valorada e transformada por sujeitos históricos concretos.
 
 ## Conceitos operacionais
 
@@ -66,6 +130,23 @@ Antes de avançar para os capítulos seguintes, convém estabelecer o significad
 
 Os conceitos sintetizados na @tbl-conceitos-basicos são interdependentes e não podem ser compreendidos isoladamente. A estrutura (composição e configuração) condiciona a função (fluxos ecológicos), que por sua vez retroalimenta a estrutura ao longo do tempo (quando a perda de biodiversidade altera processos de polinização, dispersão e regeneração que mantêm as manchas de habitat). A dinâmica é o registro temporal dessa interação entre estrutura e função, e a escala define a janela de observação dentro da qual essa dinâmica se torna visível. O elemento da paisagem é a unidade operacional mínima da análise, e a paisagem é o nível hierárquico que emerge da interação entre múltiplos elementos.
 
+### Distinções operacionais: paisagem, espaço, território e ambiente
+
+Na literatura geográfica e ecológica, os termos *paisagem*, *espaço*, *território* e *ambiente* são frequentemente utilizados de forma intercambiável, o que gera ambiguidade. Milton Santos [-@santos2006] propôs uma distinção operacional fundamental: **a paisagem é a forma, a herança, o registro material de um momento**; o **espaço é a forma somada ao conteúdo social e funcional que a anima**. Assim, uma paisagem pode ser fotografada e descrita, mas o espaço exige a compreensão dos processos sociais, econômicos e ecológicos que nela operam.
+
+A @tbl-distincoes-operacionais sintetiza essas distinções conforme formulações clássicas da geografia brasileira e da ecologia da paisagem.
+
+| Categoria | Definição operacional | Ênfase analítica |
+|:---|:---|:---|
+| **Paisagem** | Configuração material visível num recorte espaço-temporal; forma + herança | Estrutura e padrões espaciais |
+| **Espaço** | Paisagem + conteúdo social e funcional; forma + vida que a anima | Processos e relações socioecológicas |
+| **Território** | Espaço apropriado e delimitado por relações de poder | Governança, conflitos, gestão |
+| **Ambiente** | Conjunto de condições biofísicas e sociais que afetam os organismos | Sustentabilidade, impactos |
+
+: Distinções operacionais entre paisagem, espaço, território e ambiente, adaptadas de Santos [-@santos2006] e Ab'Sáber [-@absaber2003]. {#tbl-distincoes-operacionais .striped .hover}
+
+Essas distinções não são meramente semânticas: elas determinam quais perguntas são formuláveis e quais métodos são adequados. Quando analisamos a *paisagem*, operamos predominantemente com métricas espaciais e imagens de satélite. Quando investigamos o *espaço*, precisamos integrar dados socioeconômicos e entrevistas. Quando abordamos o *território*, entramos no domínio da governança ambiental e dos conflitos fundiários. E quando tratamos do *ambiente*, mobilizamos indicadores de qualidade ambiental e sustentabilidade. Este livro transita entre essas categorias, mas tem na *paisagem* — como configuração espacial mensurável — seu eixo analítico principal.
+
 ## Relevância para regiões tropicais
 
 Em paisagens tropicais, a Ciência da Paisagem adquire relevância particular por três razões que se reforçam mutuamente e que justificam o desenvolvimento de abordagens adaptadas ao contexto tropical.
@@ -80,6 +161,44 @@ A terceira razão é a sazonalidade pluviométrica que condiciona processos hidr
 ## Paisagens tropicais e urgência analítica
 No Brasil, a Mata Atlântica remanescente ocupa menos de 12% de sua extensão original, distribuída em mais de 245.000 fragmentos cuja área mediana é inferior a 50 hectares [@ribeiro2009]. Essa fragmentação extrema torna a análise da paisagem, particularmente a quantificação de conectividade funcional e a identificação de áreas prioritárias para restauração, uma ferramenta indispensável para a conservação da biodiversidade e a manutenção de serviços ecossistêmicos.
 :::
+
+### Paisagens agrícolas tradicionais como patrimônio vivo
+
+As paisagens tropicais brasileiras não são apenas repositórios de biodiversidade silvestre; são também o resultado de séculos de manejo por comunidades tradicionais que desenvolveram sistemas agrícolas adaptados às condições edafoclimáticas locais. Esses sistemas constituem paisagens culturais que integram biodiversidade, produção e identidade territorial, e sua análise exige ferramentas que combinem métricas espaciais com compreensão sociocultural.
+
+A @tbl-paisagens-tradicionais apresenta exemplos emblemáticos desses sistemas no contexto brasileiro.
+
+| Sistema | Bioma / Região | Princípio de manejo | Legado paisagístico |
+|:---|:---|:---|:---|
+| Roça de toco / Coivara | Amazônia, Mata Atlântica | Agricultura itinerante com pousio longo | Mosaico de capoeiras em diferentes estágios sucessionais |
+| Cabruca | Mata Atlântica (Sul da Bahia) | Cacau cultivado sob dossel florestal nativo | Paisagem agroflorestal que conserva ~60% da estrutura florestal |
+| Fundo de Pasto | Caatinga (Bahia) | Pastoreio extensivo comunitário em áreas de vegetação nativa | Paisagem silvipastoril com manutenção da cobertura nativa |
+| Agrofloresta quilombola | Mata Atlântica, Cerrado | Policultivos em múltiplos estratos | Paisagem multiestrato com alta agrobiodiversidade |
+| Faxinal | Floresta com Araucária (Paraná) | Criação coletiva em áreas comuns florestadas | Paisagem agrossilvipastoril com floresta conservada |
+| Quebradeiras de babaçu | Transição Cerrado-Amazônia | Extrativismo do babaçu com manutenção das palmeiras | Paisagem com cobertura de palmeiras integrada a cultivos |
+| Palma forrageira | Caatinga (Semiárido) | Cultivo de *Opuntia* como forrageira em áreas secas | Paisagem xérica produtiva adaptada ao déficit hídrico |
+
+: Sistemas agrícolas tradicionais brasileiros como paisagens culturais. {#tbl-paisagens-tradicionais .striped .hover}
+
+::: {#fig-paisagens-tradicionais layout="[[35,35,30]]" layout-valign="bottom"}
+![Roça de toco (coivara) na Amazônia: agricultura itinerante que cria mosaicos sucessionais.](../img/coivara_roca_toco.jpg){#fig-coivara}
+
+![Agrofloresta quilombola na Mata Atlântica: policultivo em múltiplos estratos vegetais.](../img/agroflorestal_quilombola.jpg){#fig-agrofloresta}
+
+![Quebradeiras de babaçu: extrativismo que mantém a cobertura de palmeiras na transição Cerrado-Amazônia.](../img/quebradeira_babacu.jpg){#fig-quebradeiras width="75%"}
+
+Paisagens agrícolas tradicionais brasileiras: sistemas de manejo que criam e mantêm paisagens culturais com alta diversidade funcional.
+:::
+
+::: {#fig-paisagens-tradicionais2 layout-ncol=2}
+![Agricultura adaptada na Caatinga: uso de espécies tolerantes à seca em paisagens xéricas.](../img/agricultura_caatinga.jpg){#fig-caatinga-agro}
+
+![Cultivo de palma forrageira (*Opuntia*) no semiárido: paisagem produtiva adaptada ao déficit hídrico.](../img/palma_forrageira.jpg){#fig-palma}
+
+Paisagens agrícolas do semiárido brasileiro: adaptação produtiva às condições limitantes de água e solo.
+:::
+
+A análise dessas paisagens tradicionais demanda uma abordagem integradora que ultrapasse a dicotomia simplista entre "área natural" e "área antrópica". Muitos desses sistemas produzem paisagens cuja heterogeneidade e conectividade funcional superam as de monocultivos e pastagens, o que os torna referências valiosas para o planejamento de paisagens sustentáveis — tema que será desenvolvido na Parte IV deste livro.
 
 ## Estrutura deste livro
 

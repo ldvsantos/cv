@@ -1,4 +1,4 @@
-﻿# Percepção e Representação da Paisagem {#sec-percepcao}
+# Percepção e Representação da Paisagem {#sec-percepcao}
 
 ## Paisagem percebida e paisagem analisada
 
@@ -64,13 +64,13 @@ digraph {
 
     A -> B [label="Escala local\n< 10 ha"]
     C -> D [label="Escala detalhe\n10–100 ha"]
-    E -> F [label="Escala local\n10²–10³ ha"]
-    G -> H [label="Escala regional\n10³–10⁵ ha"]
-    I -> J [label="Escala continental\n> 10⁵ ha"]
+    E -> F [label="Escala local\n$10^2$–$10^3$ ha"]
+    G -> H [label="Escala regional\n$10^3$–$10^5$ ha"]
+    I -> J [label="Escala continental\n> $10^5$ ha"]
 }
 ```
 
-A @fig-fontes-dados evidencia que não existe uma fonte de dados universalmente adequada para todas as análises de paisagem. A escolha depende da extensão da área de estudo, do processo ecológico de interesse e da resolução mínima necessária para detectar os elementos da paisagem relevantes. Para estudos de conectividade em escala de bacia hidrográfica (10³–10⁴ ha), imagens Sentinel-2 (10 m) ou Landsat (30 m) são tipicamente adequadas, pois detectam fragmentos a partir de 0,01 ha e 0,09 ha, respectivamente. Para monitoramento de APP e restauração em escala de propriedade rural (10¹–10² ha), imagens de alta resolução (Planet, 3–5 m) ou levantamentos por VANT (resolução sub-decimétrica) são necessários para mapear a largura real da faixa ripária e avaliar o estágio de regeneração. Para detecção de desmatamento em escala amazônica (10⁶–10⁸ ha), dados MODIS (250 m) permitem alertas diários, enquanto a confirmação e quantificação exigem Landsat ou Sentinel.
+A @fig-fontes-dados evidencia que não existe uma fonte de dados universalmente adequada para todas as análises de paisagem. A escolha depende da extensão da área de estudo, do processo ecológico de interesse e da resolução mínima necessária para detectar os elementos da paisagem relevantes. Para estudos de conectividade em escala de bacia hidrográfica ($10^3$–$10^4$ ha), imagens Sentinel-2 (10 m) ou Landsat (30 m) são tipicamente adequadas, pois detectam fragmentos a partir de 0,01 ha e 0,09 ha, respectivamente. Para monitoramento de APP e restauração em escala de propriedade rural ($10^1$–$10^2$ ha), imagens de alta resolução (Planet, 3–5 m) ou levantamentos por VANT (resolução sub-decimétrica) são necessários para mapear a largura real da faixa ripária e avaliar o estágio de regeneração. Para detecção de desmatamento em escala amazônica ($10^6$–$10^8$ ha), dados MODIS (250 m) permitem alertas diários, enquanto a confirmação e quantificação exigem Landsat ou Sentinel.
 
 A passagem de uma escala a outra não é trivial. Dados de alta resolução contêm variabilidade intra-fragmento (clareiras, sub-bosque, trilhas) que pode ser confundida com fragmentação real se a classificação não for adequadamente generalizada. Dados de baixa resolução, inversamente, homogeneízam a paisagem e suprimem elementos menores que seu grão (corredores estreitos, pequenos fragmentos), subestimando a diversidade estrutural. A calibração entre escalas é um problema ativo na Ciência da Paisagem e será retomado no @sec-escalas.
 
