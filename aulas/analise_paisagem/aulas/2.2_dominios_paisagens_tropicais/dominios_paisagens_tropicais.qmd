@@ -51,7 +51,7 @@ Compreender as bases conceituais dos **geossistemas** e dos **domínios de natur
 
 ::: {.columns}
 ::: {.column width="60%"}
-O conceito de **geossistema** surgiu na escola soviética com Viktor Sochava (1963), que propôs tratar a paisagem como um sistema natural total — integrando litosfera, atmosfera, hidrosfera e biosfera.
+O conceito de **geossistema** surgiu na escola soviética com Viktor Sochava (1963), que propôs tratar a paisagem como um sistema natural total, integrando litosfera, atmosfera, hidrosfera e biosfera.
 
 Georges **Bertrand** (1971) reformulou o conceito para a tradição francesa, acrescentando a **ação antrópica** como componente estruturante do geossistema e propondo uma **taxonomia hierárquica** das unidades de paisagem.
 
@@ -86,37 +86,80 @@ Bertrand propôs seis níveis taxonômicos hierárquicos para classificar as uni
 : Taxonomia hierárquica de Bertrand (1971). {.striped .hover}
 
 ::: {.callout-note}
-O **geossistema** é a unidade central de análise — escala compatível com bacias de 3ª–5ª ordem, onde a interação entre componentes é mais perceptível pela ação humana.
+O **geossistema** é a unidade central de análise (escala compatível com bacias de 3ª–5ª ordem), onde a interação entre componentes é mais perceptível pela ação humana.
 :::
 
 ## Tripé do Geossistema {.smaller-text}
 
 Bertrand concebeu o geossistema como a interação de três componentes:
 
-```{dot}
-//| fig-cap: "Modelo do Geossistema segundo Bertrand (1971): tripé funcional."
-//| fig-width: 7
-digraph {
-    rankdir=TB
-    bgcolor="transparent"
-    node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.25,0.12", penwidth=0.8]
-    edge [color="#555555", penwidth=1.0]
+```{=html}
+<figure style="text-align:center;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 380" width="600" style="max-width:100%; font-family:Helvetica,Arial,sans-serif;">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#555"/>
+    </marker>
+    <marker id="arrRed" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#C62828"/>
+    </marker>
+  </defs>
 
-    G [label="GEOSSISTEMA", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20", penwidth=1.5]
-    PE [label="Potencial Ecológico\nRelevo, Clima, Hidrologia", fillcolor="#BBDEFB", color="#1565C0"]
-    EB [label="Exploração Biológica\nVegetação, Solo, Fauna", fillcolor="#C8E6C9", color="#2E7D32"]
-    AA [label="Ação Antrópica\nUso da terra, Manejo", fillcolor="#FFE0B2", color="#E65100"]
+  <!-- GEOSSISTEMA (topo) -->
+  <rect x="210" y="10" width="200" height="44" rx="8" fill="#2E7D32" stroke="#1B5E20" stroke-width="2"/>
+  <text x="310" y="38" text-anchor="middle" fill="#fff" font-weight="bold" font-size="15">GEOSSISTEMA</text>
 
-    G -> PE
-    G -> EB
-    G -> AA
-    PE -> EB [label="suporte", style=dashed]
-    EB -> AA [label="transformação", style=dashed]
-    AA -> PE [label="impacto", style=dashed, color="#C62828"]
-}
+  <!-- Setas sólidas: Geossistema → 3 caixas -->
+  <line x1="260" y1="54" x2="110" y2="100" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="310" y1="54" x2="310" y2="100" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="360" y1="54" x2="510" y2="100" stroke="#555" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Potencial Ecológico -->
+  <rect x="20" y="105" width="180" height="56" rx="6" fill="#BBDEFB" stroke="#1565C0" stroke-width="1.5"/>
+  <text x="110" y="127" text-anchor="middle" font-weight="bold" font-size="12">Potencial Ecológico</text>
+  <text x="110" y="147" text-anchor="middle" font-size="10" fill="#333">Relevo · Clima · Hidrologia</text>
+
+  <!-- Exploração Biológica -->
+  <rect x="220" y="105" width="180" height="56" rx="6" fill="#C8E6C9" stroke="#2E7D32" stroke-width="1.5"/>
+  <text x="310" y="127" text-anchor="middle" font-weight="bold" font-size="12">Exploração Biológica</text>
+  <text x="310" y="147" text-anchor="middle" font-size="10" fill="#333">Vegetação · Solo · Fauna</text>
+
+  <!-- Ação Antrópica -->
+  <rect x="420" y="105" width="180" height="56" rx="6" fill="#FFE0B2" stroke="#E65100" stroke-width="1.5"/>
+  <text x="510" y="127" text-anchor="middle" font-weight="bold" font-size="12">Ação Antrópica</text>
+  <text x="510" y="147" text-anchor="middle" font-size="10" fill="#333">Uso da terra · Manejo</text>
+
+  <!-- Seta tracejada: PE → EB (suporte) -->
+  <line x1="200" y1="133" x2="218" y2="133" stroke="#555" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <text x="209" y="122" text-anchor="middle" font-size="9" fill="#555" font-style="italic">suporte</text>
+
+  <!-- Seta tracejada: EB → AA (transformação) -->
+  <line x1="400" y1="133" x2="418" y2="133" stroke="#555" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <text x="409" y="122" text-anchor="middle" font-size="9" fill="#555" font-style="italic">transformação</text>
+
+  <!-- Seta tracejada curva: AA → PE (impacto) -->
+  <path d="M510,161 C510,280 110,280 110,161" fill="none" stroke="#C62828" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arrRed)"/>
+  <text x="310" y="270" text-anchor="middle" font-size="10" fill="#C62828" font-style="italic">impacto</text>
+
+  <!-- Legenda -->
+  <line x1="140" y1="320" x2="175" y2="320" stroke="#555" stroke-width="1.5"/>
+  <text x="180" y="324" font-size="9" fill="#555">Fluxo direto</text>
+  <line x1="270" y1="320" x2="305" y2="320" stroke="#555" stroke-width="1.2" stroke-dasharray="5,3"/>
+  <text x="310" y="324" font-size="9" fill="#555">Retroalimentação</text>
+  <line x1="420" y1="320" x2="455" y2="320" stroke="#C62828" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="460" y="324" font-size="9" fill="#C62828">Impacto antrópico</text>
+
+  <text x="310" y="360" text-anchor="middle" font-size="10" fill="#666">Modelo do Geossistema segundo Bertrand (1971): tripé funcional.</text>
+</svg>
+</figure>
 ```
 
-A retroalimentação entre ação antrópica e potencial ecológico é o que diferencia o geossistema de um simples ecossistema — a **sociedade** é vista como componente interno, não externo.
+A retroalimentação entre ação antrópica e potencial ecológico é o que diferencia o geossistema de um simples ecossistema (a **sociedade** é vista como componente interno, não externo).
+
+::: {.callout-note}
+## Ciclo de retroalimentação
+**Potencial Ecológico** dá suporte à **Exploração Biológica**, que sofre **transformação** pela **Ação Antrópica**, cujo **impacto** recai sobre o Potencial Ecológico.
+:::
 
 # [2  -  MONTEIRO: GEOSSISTEMAS NO BRASIL]{.section-header}
 
@@ -128,7 +171,7 @@ Monteiro (1976, 2000) adaptou o conceito de geossistema à realidade brasileira,
 
 - A **dinâmica climática** como motor de diferenciação paisagística no Brasil
 - A necessidade de integrar dados **quantitativos** (climatológicos, hidrológicos) com análise **qualitativa** (uso da terra, percepção)
-- O conceito de **derivações antropogênicas** — transformações impostas pela sociedade sobre o sistema natural
+- O conceito de **derivações antropogênicas** - transformações impostas pela sociedade sobre o sistema natural
 
 Monteiro introduziu o termo **geossistema urbano** para cidades brasileiras, ampliando o conceito para além das paisagens rurais/naturais.
 :::
@@ -155,6 +198,49 @@ Monteiro classificou as derivações antropogênicas em três tipos:
 
 Essas derivações **acumulam-se no tempo**, criando trajetórias de degradação ou de recuperação que só são compreensíveis na perspectiva do geossistema.
 
+## Exemplos de Derivações Antropogênicas {.smaller-text .scrollable}
+
+### Supressão
+
+::: {.columns}
+::: {.column width="33%"}
+![Desmatamento em "espinha de peixe" na Amazônia, padrão associado à abertura de ramais para pecuária extensiva](img/supressao_espinha_peixe.jpg){width="100%"}
+:::
+::: {.column width="33%"}
+![Queimada em floresta tropical, técnica de remoção por fogo que elimina biomassa e altera os ciclos biogeoquímicos do solo](img/supressao_queimada.jpg){width="100%"}
+:::
+::: {.column width="33%"}
+![Solo degradado após supressão da cobertura vegetal, com perda de matéria orgânica e exposição a processos erosivos](img/supressao_solo_degradado.jpg){width="100%"}
+:::
+:::
+
+### Inserção
+
+::: {.columns}
+::: {.column width="50%"}
+![Monocultura de soja em larga escala, exemplo de inserção de componente exógeno em substituição à vegetação nativa](img/insercao_soja_monocultura.jpg){width="100%"}
+:::
+::: {.column width="50%"}
+![Expansão agrícola no MATOPIBA (Cerrado), onde a inserção de pivôs de irrigação e cultivos mecanizados transforma a estrutura superficial da paisagem](img/insercao_expansao_matopiba.jpg){width="100%"}
+:::
+:::
+
+### Alteração funcional
+
+::: {.columns}
+::: {.column width="50%"}
+![Expansão urbana sobre áreas rurais e de várzea, alterando fluxos hídricos, regimes térmicos e conectividade ecológica](img/alteracao_expansao_urbana.jpg){width="100%"}
+:::
+::: {.column width="50%"}
+![Vista aérea de cidade, onde a impermeabilização do solo e a canalização de cursos d'água reconfiguram o geossistema original](img/alteracao_cidade_aerea.jpg){width="100%"}
+:::
+:::
+
+::: {.callout-note}
+## Acúmulo de derivações
+Na prática, as três formas de derivação frequentemente coocorrem em uma mesma paisagem. O desmatamento (supressão) precede a introdução de pastagens exóticas (inserção), que por sua vez modifica o balanço hídrico e os regimes de escoamento (alteração funcional), configurando trajetórias de degradação cumulativa.
+:::
+
 # [3  -  AB'SÁBER: DOMÍNIOS DE NATUREZA]{.section-header}
 
 ## Os Domínios Morfoclimáticos {.smaller-text}
@@ -165,12 +251,12 @@ Essas derivações **acumulam-se no tempo**, criando trajetórias de degradaçã
 ::: {.column width="55%"}
 Aziz **Ab'Sáber** (2003) sintetizou décadas de pesquisa geomorfológica em uma classificação das grandes paisagens brasileiras em **seis domínios morfoclimáticos**:
 
-1. **Amazônico** — terras baixas florestadas
-2. **Cerrado** — chapadões tropicais com cerrados e florestas-galeria
-3. **Mares de Morros** — relevo mamelonizado com Mata Atlântica
-4. **Caatingas** — depressões interplanálticas semiáridas
-5. **Araucárias** — planalto meridional com floresta mista
-6. **Pradarias** — campos do sul com coxilhas
+1. **Amazônico** (terras baixas florestadas)
+2. **Cerrado** (chapadões tropicais com cerrados e florestas-galeria)
+3. **Mares de Morros** (relevo mamelonizado com Mata Atlântica)
+4. **Caatingas** (depressões interplanálticas semiáridas)
+5. **Araucárias** (planalto meridional com floresta mista)
+6. **Pradarias** (campos do sul com coxilhas)
 
 Entre os domínios situam-se as **faixas de transição** (*ecótonos macro-regionais*), onde as características se interpenetram.
 :::
@@ -195,39 +281,53 @@ Ab'Sáber propôs três **níveis taxonômicos** de leitura do meio ambiente:
 
 : Três níveis de compreensão do meio ambiente (Ab'Sáber, 2003). {.striped .hover}
 
-::: {.callout-important}
-O 3º nível — **fisiologia da paisagem** — corresponde à dinâmica dos processos atuais e é o mais suscetível às derivações antropogênicas de Monteiro.
+::: {.callout-importante}
+O 3º nível (**fisiologia da paisagem**) corresponde à dinâmica dos processos atuais e é o mais suscetível às derivações antropogênicas de Monteiro.
 :::
 
 ## Domínio das Caatingas e o Semiárido Baiano {.smaller-text}
 
-![Vegetação da Caatinga no semiárido nordestino](img/caatinga_vegetacao.jpg){width="85%" fig-align="center"}
-
 ::: {.columns}
-::: {.column width="50%"}
-Características do domínio:
-
-- Depressões interplanálticas entre 200–500 m
-- Clima BSh (Köppen): P < 800 mm/ano, chuvas concentradas em 3–5 meses
-- Solos rasos (Neossolos Litólicos, Luvissolos)
-- Vegetação caducifólia: arbustiva a arbórea
-- **Paleoclimas**: evidências de períodos mais úmidos (enclaves de mata)
-
-Aplicação para a Bahia:
-
-- Bacia do Paraguaçu: transição Caatinga–Mata Atlântica
-- Chapada Diamantina: refúgio de altitude (campos rupestres)
-- Raso da Catarina: caatinga hiperxerófila
+::: {.column width="45%"}
+![Vegetação da Caatinga no semiárido nordestino](img/caatinga_vegetacao.jpg){width="100%"}
 :::
 
-::: {.column width="50%"}
-### Exercício orientado
+::: {.column width="55%"}
 
-1. No Google Earth Engine ou QGIS, delimite em sua área de estudo os **compartimentos topográficos** (1º nível de Ab'Sáber)
-2. Sobreponha mapas de solo e cobertura vegetal â†’ **estrutura superficial** (2º nível)
-3. Analise séries NDVI (12 meses) â†’ **fisiologia** (3º nível)
-4. Identifique qual **domínio** ou **faixa de transição** sua área representa
+| Atributo | Caracterização |
+|:---------|:---------------|
+| **Relevo** | Depressões interplanálticas, 200–500 m |
+| **Clima** | BSh (Köppen), P < 800 mm/ano, chuvas em 3–5 meses |
+| **Solos** | Rasos (Neossolos Litólicos, Luvissolos) |
+| **Vegetação** | Caducifólia, arbustiva a arbórea |
+| **Paleoclimas** | Evidências de períodos mais úmidos (enclaves de mata) |
+
+: Síntese do domínio das Caatingas (Ab'Sáber, 2003). {.striped .hover}
+
 :::
+:::
+
+::: {.callout-note}
+## Expressões regionais na Bahia
+A **Bacia do Paraguaçu** marca a transição Caatinga–Mata Atlântica. A **Chapada Diamantina** funciona como refúgio de altitude, abrigando campos rupestres. No extremo oposto, o **Raso da Catarina** representa a caatinga hiperxerófila em sua expressão mais restritiva.
+:::
+
+## Exercício Orientado — Três Níveis de Ab'Sáber {.smaller-text}
+
+Aplique os três níveis de compreensão de Ab'Sáber à sua área de estudo, utilizando **Google Earth Engine** ou **QGIS**:
+
+| Etapa | Nível de Ab'Sáber | Procedimento |
+|:-----:|:-------------------|:-------------|
+| 1 | **Compartimentação topográfica** (1º) | Delimitar planaltos, depressões e planícies a partir de MDE (SRTM/ALOS) |
+| 2 | **Estrutura superficial** (2º) | Sobrepor mapas de solo e cobertura vegetal (MapBiomas / IBGE) |
+| 3 | **Fisiologia da paisagem** (3º) | Analisar séries NDVI (12 meses) para capturar a dinâmica fenológica |
+| 4 | **Enquadramento** | Identificar qual domínio ou faixa de transição a área representa |
+
+: Roteiro de aplicação dos três níveis de Ab'Sáber. {.striped .hover}
+
+::: {.callout-tip}
+## Dica
+Compare os padrões de NDVI entre estação seca e chuvosa. No domínio das Caatingas, a amplitude é tipicamente > 0,3, refletindo a deciduidade da vegetação.
 :::
 
 # [4  -  SÍNTESE E CONEXÕES]{.section-header}
@@ -255,7 +355,7 @@ As três abordagens são **complementares**: Ab'Sáber define o enquadramento ma
 - Determinam o **potencial ecológico** de base
 
 ### Para baixo (escalas menores)
-- Geossistema â†’ geofácies â†’ geótopo de Bertrand
+- Geossistema → geofácies → geótopo de Bertrand
 - Conecta-se às **métricas FRAGSTATS** aplicadas em nível de mancha
 :::
 
