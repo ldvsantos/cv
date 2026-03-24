@@ -8,6 +8,33 @@ Na tradição geográfica europeia, a paisagem cultural (*Kulturlandschaft*) é 
 
 Na prática contemporânea da Ciência da Paisagem, contudo, a paisagem analisada é predominantemente a paisagem representada em formato digital, seja como imagem de satélite, mapa temático de uso e cobertura, modelo digital de elevação ou base cadastral vetorial. A transição da percepção direta (observação em campo, fotointerpretação visual) para a representação computacional (classificação automática de imagens, cálculo algorítmico de métricas) implica ganhos de reprodutibilidade e escala, mas também perdas de informação contextual que devem ser reconhecidas e, quando possível, mitigadas por validação em campo.
 
+## Perspectivas filosóficas da percepção
+
+A dimensão perceptiva e vivencial da paisagem foi sistematizada por três autores que permanecem influentes nas ciências humanas e na geografia ambiental, e cujas contribuições são relevantes para compreender por que populações locais valoram, usam e transformam a paisagem de determinado modo.
+
+**Yi-Fu Tuan** [-@tuan1974] cunhou o conceito de **topofilia** para descrever o elo afetivo entre pessoa e lugar: a paisagem não existe apenas como substrato biofísico mensurável, mas como experiência carregada de afeto, memória e significado. A percepção ambiental que sustenta esse vínculo é mediada por sentidos (visão, olfato, audição, tato), cultura (valores, crenças, tradições), experiência pessoal (história de vida, memória) e atitude (postura de admiração, medo ou indiferença). A mesma paisagem pode gerar topofilia (vínculo positivo) ou **topofobia** (aversão) conforme o sujeito. Para o pesquisador, isso implica que dados de percepção não são ruído a ser eliminado, mas informação estruturada sobre as relações entre comunidades e territórios.
+
+**Augustin Berque** [-@berque1984] propôs a distinção entre **paisagem-marca** e **paisagem-matriz**: a paisagem como marca é o produto das ações da sociedade sobre o território (o que a sociedade fez à paisagem); a paisagem como matriz é o conjunto de condicionamentos que a paisagem impõe sobre a sociedade (o que a paisagem faz à sociedade). Essa dupla relação supera a dicotomia sujeito-objeto, reconhecendo que a paisagem é simultaneamente produto e produtora de práticas sociais. O sistema agrícola de cabruca do sul da Bahia exemplifica essa dualidade: é uma paisagem-marca (o agricultor modelou a floresta para o cultivo do cacau sob sombra) e uma paisagem-matriz (o microclima florestal que essa paisagem gera é pré-requisito para a qualidade do cacau e condiciona o próprio modo de vida das comunidades cacauicultoras), como ilustra a @fig-cabruca-cacau.
+
+![Cacaueiro em produção em sistema de cabruca baiana: floresta modelada que gera o microclima pré-requisito para a qualidade do cacau, constituindo o exemplo mais citado da dualidade paisagem-marca/paisagem-matriz de Berque (1984). Fonte: Wikimedia Commons, CC BY-SA 3.0.](../img/cabruca_cacau.jpg){#fig-cabruca-cacau fig-align="center" width="85%"}
+
+**Denis Cosgrove** [-@cosgrove1984] situou a paisagem no campo do poder simbólico: a "forma de ver a paisagem" (*way of seeing*) não é neutra, mas historicamente construída e associada ao controle territorial. Mapas, pinturas e hoje imagens de satélite são ao mesmo tempo representações e instrumentos de poder, que elegem o que é visível, nomeável e administrável. Essa perspectiva é especialmente relevante para o Brasil, cujas paisagens mais vulneráveis (Caatinga, cerrado do Matopiba, Amazônia de bordas) são aquelas cujas populações tradicionais têm menor acesso a tecnologias de representação e, portanto, menor visibilidade nos processos de planejamento territorial. Os aportes dessas três perspectivas para a análise territorial integrada encontram-se sintetizados na @tbl-percepcao-autores.
+
+| Autor | Conceito central | Aporte à análise de paisagem |
+|:------|:-----------------|:-----------------------------|
+| Tuan (1974) | Topofilia e topofobia | Explica a valoração diferencial do território por populações locais; orienta metodologias participativas |
+| Berque (1984) | Paisagem-marca / paisagem-matriz | Articula dimensão histórica e condicionamento mútuo entre sociedade e território |
+| Cosgrove (1984) | Paisagem como *way of seeing* | Revela relações de poder na representação cartográfica e nos instrumentos de planejamento |
+
+: Perspectivas filosóficas de percepção da paisagem e sua relevância operacional. {#tbl-percepcao-autores .striped .hover}
+
+::: {.callout-note}
+## Paisagem cultural e patrimônio
+A dimensão perceptiva e cultural da paisagem é reconhecida institucionalmente por organismos como o IPHAN (Instituto do Patrimônio Histórico e Artístico Nacional), a UNESCO (com a categoria "Paisagem Cultural da Humanidade") e a Convenção Europeia da Paisagem (Florença, 2000). A Chancela da Paisagem Cultural Brasileira, instituída pelo IPHAN em 2009, protege porções do território nacional nas quais a inter-relação entre natureza, cultura e processos dinâmicos de ocupação é considerada de valor excepcional. Exemplos brasileiros reconhecidos ou candidatos incluem a Cabruca do sul da Bahia, o Sistema Faxinal do sul do Brasil e os territórios de Fundo de Pasto do semiárido baiano — todos casos em que a paisagem é ao mesmo tempo resultado de práticas tradicionais e condição de reprodução dessas práticas.
+:::
+
+![Sistema Faxinal de Sete Saltos, Ponta Grossa – PR: agrossilvopastoril comunitário com araucárias, reconhecido pelo IPHAN como exemplo de paisagem cultural em que a estrutura ecológica e as práticas tradicionais são mutuamente condicionantes.](../img/faxinal_sete_saltos.jpg){#fig-faxinal-paisagem-cultural fig-align="center" width="85%"}
+
 ## Da percepção à representação cartográfica
 
 A transição da percepção visual para a representação cartográfica envolve um conjunto de decisões metodológicas que determinam o que será incluído e excluído da análise, e cujas consequências propagam-se por toda a cadeia analítica subsequente. Toda carta de uso e cobertura do solo é uma abstração que classifica a variabilidade contínua da superfície terrestre em categorias discretas (floresta, pastagem, área urbana, corpo d'água). O número de categorias, os critérios de classificação e a resolução espacial são escolhas que refletem os objetivos da análise e condicionam os resultados. Uma classificação com 5 classes produzirá uma paisagem aparentemente mais homogênea do que uma classificação com 25 classes aplicada à mesma imagem, e métricas como número de manchas, diversidade de Shannon e densidade de bordas serão radicalmente diferentes nos dois casos.
@@ -84,3 +111,28 @@ Paisagens tropicais impõem desafios específicos à representação que exigem 
 A alta diversidade de fitofisionomias dificulta a separação espectral entre classes, particularmente no Cerrado, onde a transição entre campo limpo, campo sujo, cerrado ralo, cerrado típico, cerrado denso e cerradão forma um gradiente contínuo de biomassa e cobertura de dossel que não se discretiza facilmente em classes temáticas. Nesses casos, abordagens baseadas em séries temporais de índices de vegetação (NDVI, EVI) permitem explorar a fenologia como critério de separação, pois formações decíduas e perenifólias apresentam assinaturas temporais distintas mesmo quando suas respostas espectrais em uma única data são semelhantes.
 
 A representação adequada da paisagem é pré-requisito para qualquer análise quantitativa subsequente. Os capítulos da Parte II detalharão os procedimentos de sensoriamento remoto (@sec-sensoriamento), geoprocessamento (@sec-sig), classificação (@sec-uso-cobertura) e cálculo de métricas (@sec-metricas) que transformam representações cartográficas em indicadores quantitativos da estrutura, função e dinâmica da paisagem.
+
+## Bases públicas de dados espaciais para o Brasil
+
+A consolidação de plataformas abertas de distribuição de dados espaciais na última década transformou radicalmente o acesso a informações territoriais no Brasil. A @tbl-bases-publicas organiza as principais bases disponíveis para análises de paisagem no território brasileiro, com indicação do dado, resolução e endereço de acesso.
+
+| Base / Plataforma | Dado principal | Resolução | Acesso |
+|:------------------|:--------------|:---------:|:------:|
+| **MapBiomas** | Uso e cobertura da terra, série 1985–atual | 30 m | mapbiomas.org |
+| **TOPODATA (INPE)** | Modelo Digital de Elevação, declividade, aspecto | 30 m | topodata.inpe.br |
+| **IBGE** | Bases cartográficas, censos, malha de setores | 1:250.000 | ibge.gov.br/geociencias |
+| **ANA / SNIRH** | Bacias hidrográficas, rede de drenagem, outorgas | 1:1.000.000 | snirh.gov.br |
+| **SICAR** | Cadastro Ambiental Rural (APP, RL) | Variável | car.gov.br |
+| **ICMBio** | Limites de unidades de conservação | — | icmbio.gov.br |
+| **CPRM** | Geologia, hidrogeologia, unidades litológicas | 1:1.000.000 | geosgb.cprm.gov.br |
+| **EMBRAPA Solos** | Classes de solos, aptidão agrícola | 1:250.000 | embrapa.br/solos |
+| **PRODES / TerraBrasilis** | Desmatamento na Amazônia, alertas anuais | 30 m | terrabrasilis.inpe.br |
+| **Google Earth Engine** | Processamento de imagens em escala planetária | Variável | earthengine.google.com |
+| **Copernicus Browser** | Imagens Sentinel-1 (SAR) e Sentinel-2 (óptico) | 10–20 m | browser.dataspace.copernicus.eu |
+
+: Principais bases públicas de dados espaciais para análise da paisagem no Brasil. {#tbl-bases-publicas .striped .hover}
+
+::: {.callout-tip}
+## Fluxo mínimo de dados para um diagnóstico de paisagem
+Para a maioria dos estudos de Ciência da Paisagem em bacias hidrográficas brasileiras, quatro bases formam o núcleo mínimo: (1) modelo digital de elevação do TOPODATA para derivar declividade, aspecto e rede de drenagem; (2) mapa de uso e cobertura do MapBiomas para a série temporal de mudanças; (3) base hidrográfica da ANA/SNIRH para delimitação de bacias e sub-bacias; e (4) dados do SICAR para identificar cobertura legal de APP e Reserva Legal nas propriedades inseridas na área de estudo. A sobreposição dessas quatro camadas permite identificar violações de APP, fragmentação do hábitat, trajetórias de mudança de uso e gaps de conectividade num único ambiente SIG.
+:::

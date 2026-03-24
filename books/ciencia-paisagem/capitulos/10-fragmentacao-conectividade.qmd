@@ -43,7 +43,9 @@ digraph {
 }
 ```
 
-A @fig-mecanismos-fragmentacao revela que a perda de biodiversidade não resulta de um mecanismo único, mas de três vias causais convergentes que atuam simultaneamente e se reforçam mutuamente. A via da perda de área (direta) reduz a capacidade de suporte do habitat remanescente. A via do isolamento (indireta) compromete a capacidade de recolonização após extinções locais, transformando o que seria um processo dinâmico de extinção-recolonização (metapopulação funcional) em extinção irreversível. A via do efeito de borda (indireta) degrada a qualidade do habitat remanescente, reduzindo sua funcionalidade mesmo quando sua área nominal é mantida. A interação entre essas vias explica por que os efeitos da fragmentação são tipicamente não-lineares, com limiares abruptos de resposta quando a proporção de habitat cai abaixo de valores críticos.
+A @fig-mecanismos-fragmentacao revela que a perda de biodiversidade não resulta de um mecanismo único, mas de três vias causais convergentes que atuam simultaneamente e se reforçam mutuamente. A via da perda de área (direta) reduz a capacidade de suporte do habitat remanescente. A via do isolamento (indireta) compromete a capacidade de recolonização após extinções locais, transformando o que seria um processo dinâmico de extinção-recolonização (metapopulação funcional) em extinção irreversível. A via do efeito de borda (indireta) degrada a qualidade do habitat remanescente, reduzindo sua funcionalidade mesmo quando sua área nominal é mantida. A interação entre essas vias explica por que os efeitos da fragmentação são tipicamente não-lineares, com limiares abruptos de resposta quando a proporção de habitat cai abaixo de valores críticos. Os estágios progressivos dessa trajetória estão representados na @fig-estagios-fragmentacao.
+
+![Estágios progressivos da fragmentação florestal, da floresta contínua a manchas isoladas: a redução de área núcleo e o aumento de borda intensificam-se de forma não-linear nos estágios avançados, amplificando efeitos de isolamento e degradação de habitat.](../img/estagios_fragmentacao.jpg){#fig-estagios-fragmentacao fig-align="center" width="85%"}
 
 ## Limiares de fragmentação
 
@@ -56,6 +58,25 @@ A existência de limiares tem implicações diretas para o planejamento territor
 A conectividade é a propriedade da paisagem que facilita ou impede o deslocamento de organismos e o fluxo de processos ecológicos entre manchas de habitat [@taylor1993]. A conectividade estrutural refere-se à continuidade física dos habitats no espaço, quantificada por métricas de distância entre manchas (ENN), índice de proximidade (PROX) e proporção de habitat (PLAND). A conectividade funcional incorpora a resposta comportamental dos organismos à estrutura da paisagem, reconhecendo que espécies diferentes percebem a mesma paisagem de formas radicalmente distintas.
 
 Um corredor ripário de 30 m de largura é funcionalmente conectivo para invertebrados, anfíbios e pequenas aves de sub-bosque, mas pode ser uma barreira efetiva para mamíferos de grande porte que o evitam por sua estreiteza. Uma pastagem de 500 m entre dois fragmentos pode ser trivialmente cruzável para um tucano mas intransponível para uma formiga-de-correição. Portanto, a conectividade funcional é intrinsecamente espécie-específica e não pode ser avaliada apenas por métricas estruturais.
+
+A **permeabilidade da matriz** é o conceito-chave que medeia a relação entre estrutura e conectividade funcional. Cada tipo de cobertura do solo impõe um grau diferente de resistência ao deslocamento dos organismos, quantificável como custo de passagem e calibrável por dados de telemetria ou compilações bibliográficas da literatura especializada (@tbl-resistencia-matriz).
+
+| Tipo de cobertura | Permeabilidade | Custo de deslocamento (ref.) |
+|:------------------|:--------------:|:----------------------------:|
+| Floresta nativa contínua | Muito alta | 1 |
+| Floresta secundária / capoeira | Alta | 1–5 |
+| Silvicultura (eucalipto, pinus) | Média-alta | 5–15 |
+| Pastagem com árvores / silvipastoril | Média | 20–40 |
+| Pastagem limpa | Baixa | 40–80 |
+| Monocultura mecanizada (soja, cana) | Muito baixa | 60–100 |
+| Área urbana de baixa densidade | Variável | 100–300 |
+| Área urbana densa / industrial | Barreira | 300–500 |
+| Rodovia pavimentada | Barreira forte | 1000 |
+| Corpo d'água (depende da espécie) | Variável | 10–1000 |
+
+: Valores de referência de resistência ao deslocamento por tipo de cobertura do solo. Valores normalizados com floresta nativa = 1. A parametrização precisa deve ser calibrada com dados de telemetria da espécie focal. Fontes: @taylor1993; @saura2007; compilação de literatura. {#tbl-resistencia-matriz .striped .hover}
+
+Entre floresta nativa (custo = 1) e rodovia pavimentada (custo = 1000), a diferença de permeabilidade corresponde a três ordens de grandeza, o que implica que uma rodovia equivale funcionalmente, como barreira ao deslocamento, a uma distância de floresta mil vezes maior. A qualidade da matriz não é, portanto, um detalhe metodológico, mas um determinante central da conectividade funcional (ver @sec-restauracao-conectividade).
 
 ## Modelos de conectividade
 
@@ -100,7 +121,7 @@ A parametrização de modelos de conectividade requer informações biológicas 
 
 Na prática, quando dados biológicos detalhados não estão disponíveis, são utilizadas espécies guarda-chuva (*umbrella species*), cuja conservação beneficia um conjunto amplo de espécies co-ocorrentes. Mamíferos de grande porte com alta demanda de área (onça-pintada, anta) são frequentemente empregados como espécies guarda-chuva para conectividade, sob a premissa de que uma paisagem conectada para essas espécies será conectada a fortiori para espécies com menores requisitos de área e deslocamento. Essa premissa, contudo, não se aplica a espécies com modos de deslocamento qualitativamente distintos (anfíbios que dependem de corredores aquáticos, por exemplo).
 
-## Restauração da conectividade
+## Restauração da conectividade {#sec-restauracao-conectividade}
 
 A restauração da conectividade em paisagens fragmentadas envolve três estratégias complementares. A primeira, e mais intuitiva, é a implantação de corredores ecológicos (faixas lineares de habitat que ligam fragmentos), discutida em detalhe no @sec-corredores. A segunda é o aumento da permeabilidade da matriz, por meio da substituição de usos intensivos (monocultura, pastagem limpa) por usos que oferecem cobertura parcial e recursos para a fauna (sistemas agroflorestais, silvipastoris, agricultura diversificada), reduzindo a resistência ao deslocamento sem necessariamente criar habitat contíguo. A terceira é a criação de stepping stones (trampolins ecológicos), manchas pequenas de habitat posicionadas estrategicamente entre fragmentos maiores para reduzir a distância efetiva de deslocamento.
 
@@ -118,3 +139,18 @@ Os biomas brasileiros apresentam graus distintos de fragmentação e conectivida
 O Cerrado, com aproximadamente 50% de área convertida, apresenta fragmentação crescente especialmente no arco do desmatamento (Cerrado baiano, goiano e matogrossense), onde grandes blocos de vegetação nativa são convertidos em monoculturas de soja e algodão. A conectividade é mantida por veredas e matas de galeria, que formam a rede de corredores naturais do bioma mas cuja proteção legal (APP) nem sempre se traduz em conservação efetiva.
 
 A Amazônia, apesar de manter mais de 80% de cobertura florestal, apresenta fragmentação severa nas bordas sul e leste (arco do desmatamento), onde o padrão de conversão em "espinha de peixe" (estradas vicinais partindo de eixos rodoviários) cria mosaicos complexos de fragmentos florestais, pastagens, cultivos e regeneração secundária. A conectividade entre os grandes blocos florestais remanescentes depende criticamente da manutenção de corredores em áreas indígenas e unidades de conservação.
+
+## Resiliência e vulnerabilidade em paisagens fragmentadas {#sec-resiliencia-paisagem}
+
+Paisagens fragmentadas que mantêm conectividade funcional acima dos limiares de percolação apresentam maior capacidade de absorver perturbações e retornar a estados funcionais equivalentes ao original, propriedade que a literatura designa como **resiliência da paisagem** [@holling1973]. Quando perturbações excedem a capacidade de amortecimento do sistema, a paisagem cruza um limiar de mudança de estado e pode estabilizar-se num regime alternativo de menor biodiversidade e menor provisão de serviços ecossistêmicos.
+
+A **vulnerabilidade socioambiental** complementa a resiliência ao quantificar a exposição ao risco e a sensibilidade da paisagem e das populações que a habitam, em vez de focar na capacidade de recuperação. O framework IPCC articula a vulnerabilidade como função interativa de exposição (grau de contato com o agente de perturbação), sensibilidade (grau em que o sistema é afetado) e capacidade adaptativa (potencial de ajuste e reestruturação). Na escala da paisagem, a **exposição** expressa-se como proximidade a frentes de desmatamento, estradas não pavimentadas, pivôs de irrigação e expansão urbana; a **sensibilidade**, como proporção de habitat remanescente, grau de fragmentação, tamanho médio dos fragmentos e área-núcleo disponível; e a **capacidade adaptativa**, como permeabilidade da matriz, densidade de corredores ripários, presença de unidades de conservação e disponibilidade de áreas para restauração. A integração dessas dimensões em mapas de vulnerabilidade permite identificar zonas de alerta crítico, onde alta exposição simultânea a alta sensibilidade e baixa capacidade adaptativa aumenta a probabilidade de mudança de estado irreversível.
+
+::: {.callout-important}
+## Limiares e irreversibilidade
+A teoria de percolação indica que paisagens com menos de 30% de habitat remanescente operam próximas a limiares de desconexão estrutural. A teoria de sistemas complexos sugere que, próximos a esses limiares, pequenas perturbações adicionais podem provocar transições de estado abruptas e desproporcionais à perturbação que as desencadeou. Para o planejamento territorial, isso implica que a relação entre invasão antrópica e degradação ecológica é não-linear, sendo que os primeiros 40–50% de conversão de habitat produzem impactos moderados, ao passo que a conversão dos últimos 20–30% pode precipitar colapso funcional desproporcional. A antecipação desses limiares, e não apenas a reação a eventos já observáveis, constitui o principal argumento para integrar análise de resiliência no planejamento preventivo de paisagens.
+:::
+
+A resiliência pode ser incrementada por estratégias paisagísticas complementares que incluem a manutenção de habitat acima dos limiares críticos de proporção e conectividade, a diversificação estrutural da paisagem visando heterogeneidade e múltiplas rotas alternativas, a melhoria da qualidade da matriz (ver @tbl-resistencia-matriz) como meio de ampliar a capacidade adaptativa sem necessariamente aumentar a área protegida, e a alocação estratégica de áreas de restauração em zonas identificadas como gargalos pelos modelos de circuitos. O mosaico heterogêneo e conectado resultante dessas estratégias é o modelo estrutural de referência para paisagens funcionalmente resilientes (@fig-paisagem-resiliente).
+
+![Mosaico heterogêneo e conectado como modelo de paisagem resiliente: a diversidade estrutural (floresta, capoeira, pastagem arborizada, corredores ripários) mantém múltiplas rotas de deslocamento e reservatórios funcionais para organismos e processos.](../img/paisagem_resiliente.jpg){#fig-paisagem-resiliente fig-align="center" width="85%"}
