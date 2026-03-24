@@ -1,0 +1,20 @@
+---
+listing:
+  categories: true
+  contents:
+  - '*/index.qmd'
+  feed: true
+  filter-ui: true
+  sort: date desc
+  sort-ui: true
+  type: default
+page-layout: full
+title: "Blog"
+description: "Articles et réflexions de Luiz Diego Vidal Santos sur la planification territoriale, l'innovation, la propriété intellectuelle et les solutions fondées sur la nature."
+title-block-banner: false
+lang: fr
+---
+
+::: {.text-end .mb-3}
+[Português](index.qmd) | [English](index-en.qmd) | [Español](index-es.qmd) | **Français**
+:::

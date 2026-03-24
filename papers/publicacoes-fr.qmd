@@ -1,0 +1,62 @@
+---
+title: "Publications"
+description: "Ma production académique : articles scientifiques, livres et ebooks sur la planification territoriale, la bioingénierie des sols et les solutions fondées sur la nature."
+lang: fr
+---
+
+::: {.text-end .mb-3}
+[Português](publicacoes.qmd) | [English](publicacoes-en.qmd) | [Español](publicacoes-es.qmd) | **Français**
+:::
+
+Ma production académique, notamment des articles scientifiques publiés dans des revues nationales et internationales, des chapitres d'ouvrages, des communications de conférences et des ebooks en accès libre. Pour des informations complètes et à jour, consultez {{< ai orcid >}} [ORCID](https://orcid.org/0000-0001-8659-8557) ou la {{< fa graduation-cap >}} [Plateforme Lattes](http://lattes.cnpq.br/7491112603328096).
+
+```{=html}
+<div class="row g-4 mt-3">
+
+<!-- Card Articles -->
+<div class="col-md-6">
+<div class="card shadow-sm h-100 border-primary">
+<div class="card-body text-center">
+<div style="font-size:3rem; color:var(--bs-primary);">
+<i class="fa-solid fa-file-lines"></i>
+</div>
+<h3 class="card-title mt-2">Articles scientifiques</h3>
+<p class="card-text">
+<strong>69</strong> articles de revues &bull;
+<strong>3</strong> chapitres d'ouvrages &bull;
+<strong>26</strong> communications de conférences
+</p>
+<p class="card-text text-muted">
+Liste complète des publications extraites automatiquement du Curriculum Lattes, formatées en APA.
+</p>
+<a href="index-fr.html" class="btn btn-primary">
+<i class="fa-solid fa-arrow-right"></i> Voir les articles
+</a>
+</div>
+</div>
+</div>
+
+<!-- Card Ebooks -->
+<div class="col-md-6">
+<div class="card shadow-sm h-100 border-success">
+<div class="card-body text-center">
+<div style="font-size:3rem; color:var(--bs-success);">
+<i class="fa-solid fa-book"></i>
+</div>
+<h3 class="card-title mt-2">Livres & Ebooks</h3>
+<p class="card-text">
+<strong>2</strong> ebooks en accès libre &bull;
+Licence CC BY-NC-SA 4.0
+</p>
+<p class="card-text text-muted">
+Bioingénierie des sols en régions tropicales et Analyse du paysage, avec chapitres, équations et études de cas.
+</p>
+<a href="livros-fr.html" class="btn btn-success">
+<i class="fa-solid fa-arrow-right"></i> Voir les livres
+</a>
+</div>
+</div>
+</div>
+
+</div>
+```

@@ -1,0 +1,120 @@
+---
+title: "Livres"
+description: "Mes ebooks et livres, couvrant le Branding en Agribusiness, la Bioingénierie des Sols, les Solutions fondées sur la Nature et la Propriété Intellectuelle."
+lang: fr
+---
+
+::: {.text-end .mb-3}
+[Português](livros.qmd) | [English](livros-en.qmd) | [Español](livros-es.qmd) | **Français**
+:::
+
+Mes livres et ebooks, disponibles en format numérique.
+
+## Ebooks
+
+```{=html}
+<div class="book-card">
+  <div class="book-cover">
+    <a href="../books/branding-agro/">
+      <img src="../books/branding-agro/img/capa_branding.png" alt="Couverture de l'ebook Branding Management en Agribusiness">
+    </a>
+  </div>
+  <div class="book-info">
+    <p class="book-author">Luiz Diego Vidal Santos</p>
+    <h4 class="book-title">Branding Management en Agribusiness</h4>
+    <p class="book-subtitle">Différenciation, Positionnement et Construction de Marque en Agribusiness</p>
+    <p class="book-desc">Manuel avec 14 chapitres organisés en 3 parties, couvrant les fondamentaux du branding, la différenciation et le positionnement appliqués à l'agribusiness. Comprend la stratégie de portefeuille, le public cible, le branding B2B, la plateforme de marque, des études de cas pratiques et des outils d'auto-évaluation.</p>
+    <div class="book-meta">
+      <span><i class="bi bi-journal-text"></i> 14 chapitres</span>
+      <span><i class="bi bi-unlock"></i> CC BY-NC-SA 4.0</span>
+    </div>
+    <div class="book-actions">
+      <a href="../books/branding-agro/" class="btn btn-dark btn-sm"><i class="fa-solid fa-book-open"></i> Accéder à l'ebook</a>
+    </div>
+  </div>
+</div>
+
+<div class="book-card">
+  <div class="book-cover">
+    <a href="../books/bioengenharia-solos/">
+      <img src="../books/bioengenharia-solos/img/capa_bioengenharia_de_solos.png" alt="Couverture de l'ebook Bioingénierie des Sols en Régions Tropicales">
+    </a>
+  </div>
+  <div class="book-info">
+    <p class="book-author">Luiz Diego Vidal Santos</p>
+    <h4 class="book-title">Bioingénierie des Sols en Régions Tropicales</h4>
+    <p class="book-subtitle">Fondamentaux, Techniques et Applications</p>
+    <p class="book-desc">Manuel technico-scientifique avec 21 chapitres en 4 parties, allant des fondements de la formation des sols et de l'érosion aux techniques de stabilisation avec des matériaux vivants, innovations en géotextiles et biopolymères superabsorbants. Comprend des équations de dimensionnement, des tableaux comparatifs et des études de cas.</p>
+    <div class="book-meta">
+      <span><i class="bi bi-journal-text"></i> 21 chapitres</span>
+      <span><i class="bi bi-unlock"></i> CC BY-NC-SA 4.0</span>
+    </div>
+    <div class="book-actions">
+      <a href="../books/bioengenharia-solos/" class="btn btn-primary btn-sm"><i class="fa-solid fa-book-open"></i> Accéder à l'ebook</a>
+    </div>
+  </div>
+</div>
+
+<div class="book-card">
+  <div class="book-cover">
+    <a href="../books/ciencia-paisagem/">
+      <img src="../books/ciencia-paisagem/img/capa_ciencia_paisagem.png" alt="Couverture de l'ebook Analyse du Paysage">
+    </a>
+  </div>
+  <div class="book-info">
+    <p class="book-author">Luiz Diego Vidal Santos</p>
+    <h4 class="book-title">Analyse du Paysage</h4>
+    <p class="book-subtitle">Fondamentaux, Méthodes et Planification Territoriale</p>
+    <p class="book-desc">Manuel avec 21 chapitres en 4 parties, couvrant les fondamentaux de l'écologie du paysage et des métriques spatiales jusqu'à la télédétection, les SIG, la dynamique d'utilisation des terres, les services écosystémiques, la restauration écologique et la modélisation de scénarios pour la gestion durable des paysages tropicaux.</p>
+    <div class="book-meta">
+      <span><i class="bi bi-journal-text"></i> 21 chapitres</span>
+      <span><i class="bi bi-unlock"></i> CC BY-NC-SA 4.0</span>
+    </div>
+    <div class="book-actions">
+      <a href="../books/ciencia-paisagem/" class="btn btn-success btn-sm"><i class="fa-solid fa-book-open"></i> Accéder à l'ebook</a>
+    </div>
+  </div>
+</div>
+
+<div class="book-card">
+  <div class="book-cover">
+    <a href="../books/pi/">
+      <img src="../books/pi/img/capa_pi.png" alt="Couverture de l'ebook Propriété Intellectuelle et Innovation en Agribusiness">
+    </a>
+  </div>
+  <div class="book-info">
+    <p class="book-author">Luiz Diego Vidal Santos</p>
+    <h4 class="book-title">Propriété Intellectuelle et Innovation en Agribusiness</h4>
+    <p class="book-subtitle">Fondamentaux, Protection et Transfert de Technologie</p>
+    <p class="book-desc">Manuel avec 11 chapitres en 4 parties, couvrant la gestion de l'innovation, la protection des actifs immatériels (brevets, variétés végétales, indications géographiques), l'évaluation de la PI, le transfert de technologie, l'entrepreneuriat technologique agricole, les spin-offs académiques et la PI dans l'agriculture numérique.</p>
+    <div class="book-meta">
+      <span><i class="bi bi-journal-text"></i> 11 chapitres</span>
+      <span><i class="bi bi-unlock"></i> CC BY-NC-SA 4.0</span>
+    </div>
+    <div class="book-actions">
+      <a href="../books/pi/" class="btn btn-warning btn-sm"><i class="fa-solid fa-book-open"></i> Accéder à l'ebook</a>
+    </div>
+  </div>
+</div>
+
+<div class="book-card">
+  <div class="book-cover">
+    <a href="../books/geotecnologias-sig/">
+      <img src="../books/geotecnologias-sig/img/capa_geotecnologias_sig.png" alt="Couverture de l'ebook Géotechnologies et Systèmes d'Information Géographique">
+    </a>
+  </div>
+  <div class="book-info">
+    <p class="book-author">Luiz Diego Vidal Santos</p>
+    <h4 class="book-title">Géotechnologies et Systèmes d'Information Géographique</h4>
+    <p class="book-subtitle">Fondamentaux, Analyse Spatiale et Applications Environnementales</p>
+    <p class="book-desc">Manuel avec 12 chapitres en 4 parties, couvrant les modèles de données spatiales, l'algèbre cartographique et la géostatistique, la télédétection, la classification numérique et l'incertitude, les processus d'érosion et de dégradation, l'hydrologie et la gestion de la sécheresse, le monitoring environnemental minier, l'exploration minérale prédictive et l'intelligence artificielle appliquée aux géosciences.</p>
+    <div class="book-meta">
+      <span><i class="bi bi-journal-text"></i> 12 chapitres</span>
+      <span><i class="bi bi-unlock"></i> CC BY-NC-SA 4.0</span>
+    </div>
+    <div class="book-actions">
+      <a href="../books/geotecnologias-sig/" class="btn btn-info btn-sm"><i class="fa-solid fa-book-open"></i> Accéder à l'ebook</a>
+    </div>
+  </div>
+</div>
+```

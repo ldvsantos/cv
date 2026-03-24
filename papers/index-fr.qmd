@@ -1,0 +1,32 @@
+---
+title: "Articles scientifiques"
+description: "Liste complète de mes publications académiques — articles de revues, chapitres d'ouvrages et actes de conférences sur la planification territoriale, la PI et les SfN."
+bibliography: bibliography.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+nocite: |
+  @*
+lang: fr
+---
+
+::: {.text-end .mb-3}
+[Português](index.qmd) | [English](index-en.qmd) | [Español](index-es.qmd) | **Français**
+:::
+
+::: {.callout-note appearance="simple"}
+{{< fa book >}} Consultez également les [**Livres et Ebooks**](livros-fr.qmd) disponibles.
+:::
+
+Mes publications académiques. Pour des informations complètes et à jour, consultez :
+
+- {{< ai orcid >}} [ORCID - 0000-0001-8659-8557](https://orcid.org/0000-0001-8659-8557)
+- {{< fa graduation-cap >}} [Plateforme Lattes](http://lattes.cnpq.br/7491112603328096)
+
+::: {.callout-tip}
+## Résumé
+69 articles de revues &bull; 3 chapitres d'ouvrages &bull; 26 communications de conférences
+
+Données extraites automatiquement du Curriculum Lattes (XML).
+:::
+
+::: {#refs}
+:::
