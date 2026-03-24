@@ -22,7 +22,7 @@ Acesse as disciplinas para encontrar aulas, leituras recomendadas, videoaulas e 
 ```{=html}
 <div class="discipline-grid">
 
-<a class="discipline-card" href="branding-agro/index.html">
+<a class="discipline-card" href="branding-agro/index.html" style="display:none">
 <div class="disc-icon"><i class="fa-solid fa-tags"></i></div>
 <div class="disc-title">Gestão de Branding no Agronegócio</div>
 <p class="disc-desc">Diferenciação, posicionamento, portfólio, público ideal, branding B2B, plataforma de marca e cases no agro.</p>
@@ -43,7 +43,7 @@ Acesse as disciplinas para encontrar aulas, leituras recomendadas, videoaulas e 
 <span class="disc-badge">21 aulas</span>
 </a>
 
-<a class="discipline-card" href="geotecnologias-sig/index.html">
+<a class="discipline-card" href="geotecnologias-sig/index.html" style="display:none">
 <div class="disc-icon"><i class="fa-solid fa-map-location-dot"></i></div>
 <div class="disc-title">Geotecnologias e SIG</div>
 <p class="disc-desc">Sensoriamento remoto, geoprocessamento, GEE, recursos hídricos e IA aplicada à pesquisa ambiental.</p>
@@ -57,14 +57,14 @@ Acesse as disciplinas para encontrar aulas, leituras recomendadas, videoaulas e 
 <span class="disc-badge">29 aulas</span>
 </a>
 
-<a class="discipline-card" href="estatistica-aplicada/index.html">
+<a class="discipline-card" href="estatistica-aplicada/index.html" style="display:none">
 <div class="disc-icon"><i class="fa-solid fa-chart-line"></i></div>
 <div class="disc-title">Estatística Aplicada à Engenharia Agronômica</div>
 <p class="disc-desc">Testes paramétricos e não-paramétricos, ANOVA, regressão, análise multivariada e séries temporais.</p>
 <span class="disc-badge">7 aulas</span>
 </a>
 
-<a class="discipline-card" href="geotexteis-nbs/index.html">
+<a class="discipline-card" href="geotexteis-nbs/index.html" style="display:none">
 <div class="disc-icon"><i class="fa-solid fa-layer-group"></i></div>
 <div class="disc-title">Geotêxteis e Soluções baseadas na Natureza</div>
 <p class="disc-desc">Tipologia de geossintéticos, dimensionamento, biotêxteis e projetos integrados de retaludamento.</p>
@@ -78,14 +78,14 @@ Acesse as disciplinas para encontrar aulas, leituras recomendadas, videoaulas e 
 <span class="disc-badge">12 aulas</span>
 </a>
 
-<a class="discipline-card" href="sociologia-rural/index.html">
+<a class="discipline-card" href="sociologia-rural/index.html" style="display:none">
 <div class="disc-icon"><i class="fa-solid fa-users"></i></div>
 <div class="disc-title">Sociologia Rural</div>
 <p class="disc-desc">Questão agrária, movimentos sociais, capitalismo no campo, desenvolvimento rural e povos tradicionais.</p>
 <span class="disc-badge">10 aulas</span>
 </a>
 
-<a class="discipline-card" href="propriedade-intelectual/index.html">
+<a class="discipline-card" href="propriedade-intelectual/index.html" style="display:none">
 <div class="disc-icon"><i class="fa-solid fa-lightbulb"></i></div>
 <div class="disc-title">Propriedade Intelectual e Inovação</div>
 <p class="disc-desc">Marco legal da PI, patentes, prospecção tecnológica, patentometria e transferência de tecnologia.</p>
