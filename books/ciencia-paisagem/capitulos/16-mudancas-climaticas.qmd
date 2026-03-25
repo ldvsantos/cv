@@ -40,7 +40,7 @@ A @fig-resiliencia-paisagem sintetiza como diferentes configurações de paisage
 ```{dot}
 //| label: fig-resiliencia-paisagem
 //| fig-cap: "Comparação entre uma paisagem frágil (homogênea, fragmentada) e uma paisagem resiliente (diversificada, conectada) em resposta a perturbações climáticas."
-//| fig-width: 9
+//| fig-width: 6.5
 digraph {
     rankdir=TB
     bgcolor="transparent"

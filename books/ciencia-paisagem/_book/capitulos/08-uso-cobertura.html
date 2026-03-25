@@ -431,13 +431,13 @@ window.Quarto = {
 <h2 data-number="8.2" class="anchored" data-anchor-id="métodos-de-classificação"><span class="header-section-number">8.2</span> Métodos de classificação</h2>
 <p>Os métodos de classificação de imagens de sensoriamento remoto dividem-se em duas grandes categorias. A classificação supervisionada utiliza amostras de treinamento (pixels ou segmentos cujo rótulo é conhecido) para treinar um algoritmo que aprende a relação entre a resposta espectral e as classes definidas, e então atribui cada pixel da imagem à classe mais provável. A classificação não supervisionada (K-means, ISODATA) agrupa automaticamente os pixels com base em similaridade espectral, sem conhecimento prévio das classes, e os clusters resultantes são posteriormente rotulados pelo analista.</p>
 <p>Na classificação supervisionada, os algoritmos mais utilizados incluem o classificador de máxima verossimilhança (<em>Maximum Likelihood</em>), que assume distribuição gaussiana multivariada das classes, a árvore de decisão (<em>Decision Tree</em>), que segmenta o espaço espectral por limiares sucessivos, a floresta aleatória (<em>Random Forest</em>), que agrega múltiplas árvores de decisão para reduzir overfitting e estimar importância de variáveis, e as máquinas de vetores de suporte (<em>Support Vector Machine</em>), que buscam o hiperplano de separação ótima entre classes. Mais recentemente, redes neurais convolucionais (<em>Convolutional Neural Networks</em>, CNN) têm sido aplicadas a classificações de alta resolução com resultados promissores em paisagens tropicais, embora demandem grandes volumes de dados de treinamento. A <a href="#fig-fluxo-classificacao" class="quarto-xref">Figura&nbsp;<span>8.1</span></a> sintetiza o fluxo de trabalho completo da classificação supervisionada.</p>
-<div class="cell" data-fig-width="9" data-layout-align="center">
+<div class="cell" data-fig-width="6.5" data-layout-align="center">
 <div class="cell-output-display">
 <div id="fig-fluxo-classificacao" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-fluxo-classificacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
-<svg width="864" height="480" viewbox="0.00 0.00 1176.10 102.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<svg width="624" height="480" viewbox="0.00 0.00 1176.10 102.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 98)">
 <!-- A -->
 <g id="node1" class="node">

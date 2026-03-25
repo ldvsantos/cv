@@ -15,7 +15,7 @@ Na classificação supervisionada, os algoritmos mais utilizados incluem o class
 ```{dot}
 //| label: fig-fluxo-classificacao
 //| fig-cap: "Fluxo de trabalho da classificação supervisionada de uso e cobertura do solo, destacando o laço iterativo de refinamento."
-//| fig-width: 9
+//| fig-width: 6.5
 digraph {
     rankdir=LR
     bgcolor="transparent"

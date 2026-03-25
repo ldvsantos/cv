@@ -19,7 +19,7 @@ A @fig-tipos-corredores compara esses conceitos.
 ```{dot}
 //| label: fig-tipos-corredores
 //| fig-cap: "Três conceitos de corredor ecológico, distinguindo a perspectiva geométrica (estrutural), biológica (funcional) e de gestão (paisagem)."
-//| fig-width: 9
+//| fig-width: 6.5
 digraph {
     rankdir=TB
     bgcolor="transparent"

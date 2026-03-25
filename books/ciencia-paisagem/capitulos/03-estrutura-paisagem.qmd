@@ -9,7 +9,8 @@ A mancha (*patch*) é uma área relativamente homogênea que difere do seu entor
 ```{dot}
 //| label: fig-mcm-modelo
 //| fig-cap: "Representação esquemática do modelo mancha-corredor-matriz numa paisagem hipotética com fragmentos florestais dispersos numa matriz de pastagem, conectados por um corredor de mata ciliar."
-//| fig-width: 8
+//| fig-width: 7
+//| fig-height: 4
 graph {
     bgcolor="transparent"
     node [fontname="Helvetica", fontsize=10, penwidth=0.8]

@@ -15,7 +15,7 @@ A @fig-servicos-categorias sintetiza essa classificação e suas relações com 
 ```{dot}
 //| label: fig-servicos-categorias
 //| fig-cap: "Relação entre a estrutura da paisagem, as quatro categorias de serviços ecossistêmicos e o bem-estar humano. Os serviços de suporte sustentam as três demais categorias."
-//| fig-width: 9
+//| fig-width: 6.5
 digraph {
     rankdir=TB
     bgcolor="transparent"

@@ -15,7 +15,7 @@ A precipitação é a entrada de água na paisagem, condicionada por fatores cli
 ```{dot}
 //| label: fig-particao-hidrologica
 //| fig-cap: "Partição da precipitação nos principais componentes do ciclo hidrológico, evidenciando como a cobertura do solo modula cada caminho da água pela paisagem."
-//| fig-width: 8.5
+//| fig-width: 6.5
 digraph {
     rankdir=TB
     bgcolor="transparent"

@@ -17,7 +17,7 @@ O modelo digital de elevação (MDE) é um raster fundamental para a análise da
 ```{dot}
 //| label: fig-derivados-mde
 //| fig-cap: "Variáveis topográficas derivadas do MDE e suas aplicações na análise da paisagem."
-//| fig-width: 8
+//| fig-width: 6.5
 digraph {
     rankdir=TB
     bgcolor="transparent"

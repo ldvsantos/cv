@@ -41,7 +41,7 @@ A @fig-modelos-biodiversidade compara essas duas perspectivas.
 ```{dot}
 //| label: fig-modelos-biodiversidade
 //| fig-cap: "Comparação entre o modelo clássico (mancha-matriz binária) e o modelo de heterogeneidade da paisagem para explicar a biodiversidade. No modelo clássico, a diversidade depende do tamanho e isolamento dos fragmentos de habitat. No modelo de heterogeneidade, a diversidade depende da variedade de tipos de cobertura no mosaico."
-//| fig-width: 9
+//| fig-width: 6.5
 digraph {
     rankdir=LR
     bgcolor="transparent"

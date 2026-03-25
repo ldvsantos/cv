@@ -11,7 +11,7 @@ Independentemente de qual componente domina, os mecanismos pelos quais a fragmen
 ```{dot}
 //| label: fig-mecanismos-fragmentacao
 //| fig-cap: "Mecanismos pelos quais a fragmentação de habitat conduz à perda de biodiversidade, distinguindo os efeitos da perda de área, da subdivisão e do aumento de borda."
-//| fig-width: 8
+//| fig-width: 6.5
 digraph {
     rankdir=TB
     bgcolor="transparent"
@@ -89,7 +89,7 @@ Três famílias de modelos são utilizadas para avaliar a conectividade funciona
 ```{dot}
 //| label: fig-modelos-conectividade
 //| fig-cap: "Três abordagens para modelagem de conectividade funcional da paisagem."
-//| fig-width: 8
+//| fig-width: 6.5
 digraph {
     rankdir=LR
     bgcolor="transparent"

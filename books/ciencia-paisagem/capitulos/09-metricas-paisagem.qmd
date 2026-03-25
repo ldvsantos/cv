@@ -13,7 +13,7 @@ As métricas da paisagem são calculadas em três níveis hierárquicos, cada um
 ```{dot}
 //| label: fig-niveis-metricas
 //| fig-cap: "Três níveis hierárquicos de cálculo de métricas da paisagem, mostrando as saídas típicas de cada nível."
-//| fig-width: 8
+//| fig-width: 6.5
 digraph {
     rankdir=TB
     bgcolor="transparent"

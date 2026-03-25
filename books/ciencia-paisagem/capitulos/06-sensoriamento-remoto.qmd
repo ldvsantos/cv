@@ -9,7 +9,7 @@ O princípio físico subjacente é a interação da radiação eletromagnética 
 ```{dot}
 //| label: fig-assinatura-espectral
 //| fig-cap: "Curvas de reflectância espectral típicas de vegetação fotossinteticamente ativa, solo exposto e água limpa. Valores ilustrativos para demonstrar os contrastes espectrais que permitem a discriminação de coberturas."
-//| fig-width: 8
+//| fig-width: 6.5
 digraph {
     bgcolor="transparent"
     node [shape=none, fontname="Helvetica"]

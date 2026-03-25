@@ -13,7 +13,7 @@ As técnicas de detecção de mudanças podem ser classificadas em três famíli
 ```{dot}
 //| label: fig-abordagens-mudanca
 //| fig-cap: "Três famílias de abordagens para detecção de mudanças na paisagem."
-//| fig-width: 8
+//| fig-width: 6.5
 digraph {
     rankdir=TB
     bgcolor="transparent"

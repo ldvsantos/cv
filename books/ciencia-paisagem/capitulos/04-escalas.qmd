@@ -77,7 +77,8 @@ Numa hierarquia típica de paisagem, o nível mais amplo corresponde à região 
 ```{dot}
 //| label: fig-hierarquia
 //| fig-cap: "Hierarquia de níveis de organização espacial e suas escalas características de extensão (ha) e tempo (anos). As setas indicam que cada nível superior impõe restrições sobre o inferior, enquanto o inferior fornece os mecanismos."
-//| fig-width: 7
+//| fig-width: 5
+//| fig-height: 5
 digraph {
     rankdir=TB
     bgcolor="transparent"

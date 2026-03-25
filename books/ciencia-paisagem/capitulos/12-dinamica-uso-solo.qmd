@@ -13,7 +13,7 @@ As mudanças no uso e cobertura do solo não ocorrem ao acaso. Elas são impulsi
 ```{dot}
 //| label: fig-forcas-motrizes-lulc
 //| fig-cap: "Cinco categorias de forças motrizes que condicionam as mudanças de uso e cobertura do solo, convergindo para a transformação observada na paisagem."
-//| fig-width: 8.5
+//| fig-width: 6.5
 digraph {
     rankdir=TB
     bgcolor="transparent"
@@ -82,7 +82,7 @@ Para projetar cenários futuros e avaliar o impacto potencial de políticas púb
 ```{dot}
 //| label: fig-estrutura-modelo-lulc
 //| fig-cap: "Estrutura lógica geral de um modelo de mudança de uso do solo, integrando dados espaciais, variáveis explicativas e regras de transição para projetar cenários futuros."
-//| fig-width: 8.5
+//| fig-width: 6.5
 digraph {
     rankdir=LR
     bgcolor="transparent"
