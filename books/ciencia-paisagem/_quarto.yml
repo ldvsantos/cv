@@ -1,4 +1,4 @@
-project:
+﻿project:
   type: book
   output-dir: _book
 
@@ -92,6 +92,7 @@ format:
     toc: true
     number-sections: true
     colorlinks: true
+    fig-pos: "H"
     include-in-header: cover.tex
     geometry:
       - top=2.5cm
