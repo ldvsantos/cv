@@ -2,17 +2,13 @@
 
 ## Fundamentos sistêmicos
 
-A ecologia da paisagem é, em sua essência, uma ciência sistêmica. Antes de abordar seus conceitos e métodos específicos, convém explicitar os fundamentos do pensamento sistêmico que alicerçam a disciplina, pois é a leitura da paisagem como sistema — e não como coleção de elementos independentes — que distingue essa abordagem de inventários descritivos tradicionais.
+A ecologia da paisagem é, em sua essência, uma ciência sistêmica. Antes de abordar seus conceitos e métodos específicos, convém explicitar os fundamentos do pensamento sistêmico que alicerçam a disciplina, pois é a leitura da paisagem como sistema (e não como coleção de elementos independentes) que distingue essa abordagem de inventários descritivos tradicionais.
 
-Um **sistema** é um conjunto de componentes interconectados que, por meio de suas interações, exibem propriedades emergentes que não podem ser deduzidas da análise isolada das partes. Uma floresta tropical, por exemplo, possui propriedades emergentes (microclima de sub-bosque, ciclagem fechada de nutrientes, corredores de dispersão) que não existem em nenhuma árvore ou parcela isolada, mas emergem da interação entre milhares de organismos organizados espacialmente.
+Um sistema é um conjunto de componentes interconectados que, por meio de suas interações, exibem propriedades emergentes que não podem ser deduzidas da análise isolada das partes. Uma floresta tropical, por exemplo, possui propriedades emergentes (microclima de sub-bosque, ciclagem fechada de nutrientes, corredores de dispersão) que não existem em nenhuma árvore ou parcela isolada, mas emergem da interação entre milhares de organismos organizados espacialmente.
 
-Todo sistema ecológico pode ser caracterizado por cinco propriedades fundamentais:
+Todo sistema ecológico pode ser caracterizado por cinco propriedades fundamentais. A *estrutura* diz respeito à organização interna, ou seja, quais são os componentes e como se arranjam no espaço. A *função* refere-se ao que o sistema faz, às trocas de energia, matéria e informação entre componentes. 
 
-1. **Estrutura** — organização interna: quais são os componentes e como se arranjam no espaço;
-2. **Função** — o que o sistema faz: trocas de energia, matéria e informação entre componentes;
-3. **Entradas e saídas** — fluxos que atravessam os limites do sistema (radiação, precipitação, sedimentos, organismos migrantes);
-4. **Retroalimentação** — mecanismos pelos quais a saída de um processo influencia sua própria entrada, podendo ser negativa (estabilizadora) ou positiva (amplificadora);
-5. **Equilíbrio dinâmico** — estado no qual os fluxos de entrada e saída se compensam ao longo de um período, mantendo a estrutura sem estagnação.
+Já as *entradas e saídas* constituem os fluxos que atravessam os limites do sistema (radiação, precipitação, sedimentos, organismos migrantes). A *retroalimentação* compreende os mecanismos pelos quais a saída de um processo influencia sua própria entrada, podendo ser negativa (estabilizadora) ou positiva (amplificadora). Por fim, o *equilíbrio dinâmico* é o estado no qual os fluxos de entrada e saída se compensam ao longo de um período, mantendo a estrutura sem estagnção.
 
 A @tbl-tipos-sistemas apresenta a classificação dos sistemas conforme o grau de troca com o meio externo, com implicações diretas para a modelagem de paisagens.
 
@@ -20,15 +16,15 @@ A @tbl-tipos-sistemas apresenta a classificação dos sistemas conforme o grau d
 |:-----|:---:|:---:|:---|
 | Isolado | Não | Não | Inexistente na natureza (modelo teórico) |
 | Fechado | Sim | Não | Aproximação: bacia endorreica em curto prazo |
-| **Aberto** | **Sim** | **Sim** | **Geossistema, bacia hidrográfica, fragmento florestal** |
+| **Aberto** | Sim | Sim | Geossistema, bacia hidrográfica, fragmento florestal |
 
 : Tipos de sistemas segundo o grau de troca com o meio externo. Os geossistemas e as paisagens reais são sistemas abertos. {#tbl-tipos-sistemas .striped .hover}
 
-Paisagens são, invariavelmente, **sistemas abertos**: recebem energia solar e precipitação, exportam sedimentos e organismos, e são atravessadas por fluxos de matéria e informação que conectam seus elementos internos entre si e com sistemas adjacentes. Essa abertura implica que nenhuma paisagem pode ser compreendida isoladamente: a bacia hidrográfica a montante condiciona os processos a jusante, e a paisagem circundante (a *matriz*) determina os fluxos que chegam a cada fragmento de habitat.
+Paisagens são, invariavelmente, sistemas abertos, recebem energia solar e precipitação, exportam sedimentos e organismos, e são atravessadas por fluxos de matéria e informação que conectam seus elementos internos entre si e com sistemas adjacentes. Essa abertura implica que nenhuma paisagem pode ser compreendida isoladamente, pois a bacia hidrográfica a montante condiciona os processos a jusante e a paisagem circundante (a *matriz*) determina os fluxos que chegam a cada fragmento de habitat.
 
 ::: {.callout-note}
 ## Limiares e irreversibilidade
-Uma propriedade especialmente relevante para a gestão de paisagens é o conceito de **limiar** (*threshold*): um ponto crítico a partir do qual o sistema transita abruptamente de um estado para outro, frequentemente de difícil reversão. Na ecologia da paisagem, limiares de percolação (~60% de habitat) e limiares de extinção (~30% de habitat) demarcam pontos nos quais a conectividade funcional e a viabilidade de populações se degradam de forma não-linear [@fahrig2003]. Esses limiares serão retomados com tratamento quantitativo no @sec-fragmentacao.
+Uma propriedade especialmente relevante para a gestão de paisagens é o conceito de *limiar* (*threshold*), um ponto crítico a partir do qual o sistema transita abruptamente de um estado para outro, frequentemente de difícil reversão. Na ecologia da paisagem, limiares de percolação (~60% de habitat) e limiares de extinção (~30% de habitat) demarcam pontos nos quais a conectividade funcional e a viabilidade de populações se degradam de forma não-linear [@fahrig2003]. Esses limiares serão retomados com tratamento quantitativo no @sec-fragmentacao.
 :::
 
 ## Ecologia da Paisagem como disciplina
@@ -39,9 +35,11 @@ Risser, Karr e Forman [-@risser1984], no influente workshop de Allerton Park (19
 
 ## Abordagem geográfica
 
-A tradição geográfica, predominante na Europa até a década de 1990 e cujas raízes remontam ao trabalho seminal de Carl Troll [-@troll1939], concebe a paisagem como a expressão territorial da interação entre sociedade e natureza. Nessa perspectiva, a paisagem não é apenas um substrato ecológico, mas um produto cultural moldado por séculos de uso da terra, decisões de manejo e valores estéticos [@naveh2000]. Uma paisagem agrícola do sul da França, por exemplo, não pode ser compreendida apenas em termos de cobertura do solo e fragmentação florestal, pois sua estrutura reflete decisões fundiárias medievais, políticas agrárias europeias e tradições vitícolas centenárias.
+A tradição geográfica, predominante na Europa até a década de 1990 e cujas raízes remontam ao trabalho seminal de Carl Troll [-@troll1939], concebe a paisagem como a expressão territorial da interação entre sociedade e natureza. Nessa perspectiva, a paisagem não é apenas um substrato ecológico, mas um produto cultural moldado por séculos de uso da terra, decisões de manejo e valores estéticos [@naveh2000]. 
 
-No âmbito dessa tradição, Georges Bertrand [-@bertrand1971] propôs um sistema taxonômico hierárquico que organiza a paisagem em seis níveis escalonados (da zona ao geótopo), tendo o **geossistema** como unidade central de análise. O geossistema integra potencial ecológico (geomorfologia, clima, hidrologia), exploração biológica (vegetação, solo, fauna) e ação antrópica numa mesma unidade espacial, oferecendo um arcabouço operacional para o mapeamento e a classificação de paisagens. A @tbl-bertrand-taxon sintetiza os seis níveis taxonômicos e suas escalas características.
+Uma paisagem agrícola do sul da Bahia, por exemplo, não pode ser compreendida apenas em termos de cobertura do solo e fragmentação florestal, pois sua estrutura reflete decisões fundiárias medievais, políticas agrárias e tradições agrícolas centenárias.
+
+No âmbito dessa tradição, Georges Bertrand [-@bertrand1971] propôs um sistema taxonômico hierárquico que organiza a paisagem em seis níveis escalonados (da zona ao geótopo), tendo o *geossistema* como unidade central de análise. O geossistema integra potencial ecológico (geomorfologia, clima, hidrologia), exploração biológica (vegetação, solo, fauna) e ação antrópica numa mesma unidade espacial, oferecendo um arcabouço operacional para o mapeamento e a classificação de paisagens. A @tbl-bertrand-taxon sintetiza os seis níveis taxonômicos e suas escalas características.
 
 | Nível | Unidade | Escala | Exemplo brasileiro |
 |:-----:|:--------|:------:|:------------------|
@@ -60,7 +58,7 @@ O conceito de geossistema tem raízes na escola soviética de Viktor Sochava [-@
 
 ![Geossistema como sistema aberto: interação entre potencial ecológico (geomorfologia, clima, hidrologia), exploração biológica (vegetação, solo, fauna) e ação antrópica. Adaptado de Sochava (1963) e Bertrand (1971).](../img/diagrama_geossistema.png){#fig-geossistema fig-align="center" width="80%"}
 
-O geossistema opera como um **tripé funcional** cujos três componentes se articulam por relações específicas: o potencial ecológico fornece o *suporte* biofísico (substrato, clima, água), a exploração biológica exerce a *transformação* (ciclagem de nutrientes, sucessão vegetal, regulação hídrica), e a ação antrópica produz o *impacto* (manejo, supressão, inserção de elementos). A @tbl-tripe-geossistema detalha essa articulação.
+O geossistema opera como um tripé funcional cujos três componentes se articulam por relações específicas, nas quais o potencial ecológico fornece o *suporte* biofísico (substrato, clima, água), a exploração biológica exerce a *transformação* (ciclagem de nutrientes, sucessão vegetal, regulação hídrica) e a ação antrópica produz o *impacto* (manejo, supressão, inserção de elementos). A @tbl-tripe-geossistema detalha essa articulação.
 
 | Componente | Elementos | Papel no sistema | Relação com os demais |
 |:---|:---|:---|:---|
@@ -70,7 +68,7 @@ O geossistema opera como um **tripé funcional** cujos três componentes se arti
 
 : O tripé funcional do geossistema: suporte–transformação–impacto. {#tbl-tripe-geossistema .striped .hover}
 
-No contexto brasileiro, Carlos Augusto de Figueiredo Monteiro [-@monteiro2000] avançou nessa direção ao formular o conceito de **derivações antropogênicas**, que descreve como as ações humanas produzem desvios progressivos na dinâmica natural da paisagem. A @tbl-derivacoes-monteiro apresenta os três tipos de derivação e exemplos no semiárido nordestino.
+No contexto brasileiro, Carlos Augusto de Figueiredo Monteiro [-@monteiro2000] avançou nessa direção ao formular o conceito de *derivações antropogênicas*, que descreve como as ações humanas produzem desvios progressivos na dinâmica natural da paisagem. A @tbl-derivacoes-monteiro apresenta os três tipos de derivação e exemplos no semiárido nordestino.
 
 | Tipo | Descrição | Exemplo no Semiárido |
 |:-----|:----------|:---------------------|
@@ -82,23 +80,25 @@ No contexto brasileiro, Carlos Augusto de Figueiredo Monteiro [-@monteiro2000] a
 
 Essas derivações acumulam-se no tempo, criando trajetórias compreensíveis apenas na perspectiva sistêmica do geossistema. Uma sequência típica no Nordeste semiárido envolve desmatamento da Caatinga (supressão), introdução de pastagem exótica (inserção) e impermeabilização do solo pela pecuária com posterior assoreamento de açudes (alteração funcional), configurando degradação progressiva e dificilmente reversível [@verburg2009].
 
-::: {#fig-derivacoes layout-ncol=3}
-![**Supressão**: desmatamento em padrão de "espinha de peixe" na Amazônia — remoção sistemática da cobertura florestal a partir de estradas vicinais.](../img/desmatamento_espinha_peixe_amazonia.jpg){#fig-supressao}
+A supressão constitui a forma mais visível de derivação, envolvendo a remoção direta de componentes do sistema natural. Na Amazônia, o desmatamento em padrão de "espinha de peixe" (Fig. @fig-supressao) exemplifica essa modalidade, na qual estradas vicinais servem como eixos de avanço para a conversão florestal em larga escala.
 
-![**Inserção**: expansão da fronteira agrícola no MATOPIBA — introdução de monoculturas de soja em áreas de Cerrado nativo.](../img/insercao_expansao_matopiba.jpg){#fig-insercao}
+![Supressão: desmatamento em padrão de "espinha de peixe" na Amazônia, remoção sistemática da cobertura florestal a partir de estradas vicinais.](../img/desmatamento_espinha_peixe_amazonia.jpg){#fig-supressao fig-align="center" width="80%"}
 
-![**Alteração funcional**: fragmentação extrema da Mata Atlântica — modificação dos fluxos ecológicos e hidrológicos sem remoção total da cobertura.](../img/supressao_fragmentacao_mata.jpg){#fig-alteracao-funcional}
+A inserção distingue-se pela introdução de componentes exógenos, substituindo processos nativos por dinâmicas produtivas importadas. A expansão da fronteira agrícola no MATOPIBA (Fig. @fig-insercao) ilustra essa derivação na região de transição entre cerrado, amazônia e caatinga, onde monoculturas de soja ocupam áreas antes dominadas por vegetação savânica, alterando ciclos hidrológicos e biogeoquímicos regionais.
 
-Exemplos de derivações antropogênicas em paisagens brasileiras: supressão (desmatamento), inserção (fronteira agrícola) e alteração funcional (fragmentação).
-:::
+![Inserção: expansão da fronteira agrícola no MATOPIBA, introdução de monoculturas de soja em áreas de Cerrado nativo.](../img/insercao_expansao_matopiba.jpg){#fig-insercao fig-align="center" width="80%"}
+
+A alteração funcional é, das três derivações, a mais insidiosa, pois modifica os fluxos ecológicos e hidrológicos sem remover necessariamente a cobertura vegetal. A fragmentação extrema da Mata Atlântica (Fig. @fig-alteracao-funcional) constitui exemplo emblemático, pois os remanescentes florestais persistem, mas a ruptura da conectividade entre eles compromete processos de dispersão, fluxo gênico e regulação hidrológica em escala de paisagem.
+
+![Alteração funcional: fragmentação extrema da Mata Atlântica, modificação dos fluxos ecológicos e hidrológicos sem remoção total da cobertura.](../img/supressao_fragmentacao_mata.jpg){#fig-alteracao-funcional fig-align="center" width="80%"}
 
 A contribuição de Aziz Ab'Sáber [-@absaber2003], com a teoria dos domínios morfoclimáticos, complementa esse quadro ao fornecer uma regionalização do território brasileiro baseada na associação entre formas de relevo, condições climáticas e coberturas vegetais, permitindo situar cada paisagem estudada dentro de um contexto macrorregional. Ab'Sáber articulou as grandes paisagens brasileiras em seis domínios morfoclimáticos separados por faixas de transição biogeográfica. O Amazônico corresponde às terras baixas florestadas; o Cerrado, aos chapadões tropicais do Brasil Central; os Mares de Morros, ao relevo mamelonizado com Mata Atlântica sobre o litoral leste; as Caatingas, às depressões interplanálticas semiáridas do interior nordestino; as Araucárias, ao planalto meridional com floresta mista; e as Pradarias, aos campos do sul. A distribuição espacial desses domínios e suas faixas de transição biogeográfica está representada na @fig-dominios-morfoclimaticos.
 
 ![Domínios morfoclimáticos do Brasil segundo Ab'Sáber (2003). Os seis domínios são separados por faixas de transição biogeográfica (*espaços de tensão ecológica*) e constituem o referencial macrorregional para a leitura de paisagens brasileiras.](../img/dominios_morfoclimaticos.jpg){#fig-dominios-morfoclimaticos fig-align="center" width="80%"}
 
-Para a leitura de cada domínio, Ab'Sáber propôs três níveis taxonômicos complementares: (1) a compartimentação topográfica, que desnuda as formas de relevo regional (planaltos, depressões, planícies); (2) a estrutura superficial da paisagem, que integra solos, formações superficiais e mantos de intemperismo; e (3) a **fisiologia da paisagem**, que compreende a dinâmica climática, hidrológica e ecológica atual — este último nível sendo o mais suscetível às derivações antropogênicas de Monteiro e, portanto, o mais sensível para o diagnóstico de paisagens sob pressão.
+Para a leitura de cada domínio, Ab'Sáber propôs três níveis taxonômicos complementares, a saber, a compartimentação topográfica, que desnuda as formas de relevo regional (planaltos, depressões, planícies), a estrutura superficial da paisagem, que integra solos, formações superficiais e mantos de intemperismo, e a *fisiologia da paisagem*, que compreende a dinâmica climática, hidrológica e ecológica atual, sendo este último nível o mais suscetível às derivações antropogênicas de Monteiro e, portanto, o mais sensível para o diagnóstico de paisagens sob pressão.
 
-A contribuição central da abordagem geográfica reside na atenção às forças motrizes (*driving forces*) que determinam a configuração atual da paisagem. Essas forças incluem fatores biofísicos (geomorfologia, clima, pedologia), fatores socioeconômicos (mercados globais, políticas públicas, pressão demográfica, estrutura fundiária) e fatores culturais (práticas tradicionais de manejo, percepção estética, identidade territorial). O reconhecimento dessas forças é essencial para compreender a trajetória temporal de uma paisagem e projetar cenários futuros de mudança, conforme esquematiza a @fig-forcas-motrizes.
+A contribuição central da abordagem geográfica reside na atenção às forças motrizes (*driving forces*) que determinam a configuração atual da paisagem. Essas forças incluem fatores biofísicos (geomorfologia, clima, pedologia), fatores socioeconômicos (mercados globais, políticas públicas, pressão demográfica, estrutura fundiária) e fatores culturais (práticas tradicionais de manejo, percepção estética, identidade territorial). O reconhecimento dessas forças é relevante para compreender a trajetória temporal de uma paisagem e projetar cenários futuros de mudança, conforme esquematiza a @fig-forcas-motrizes.
 
 ```{mermaid}
 %%| label: fig-forcas-motrizes
@@ -117,17 +117,17 @@ graph LR
     style E fill:#C8E6C9,stroke:#2E7D32,color:#000
 ```
 
-A @fig-forcas-motrizes revela três propriedades da relação entre forças motrizes e paisagem que merecem aprofundamento. Em primeiro lugar, as setas convergentes (biofísicas, socioeconômicas e culturais alimentando a estrutura da paisagem) indicam que a estrutura observada é o resultado da interação simultânea de múltiplas forças, e não do domínio de uma única. Em segundo lugar, a seta de retroalimentação (processos ecológicos→estrutura) explicita que a paisagem não é passiva, pois a perda de biodiversidade pode desencadear degradação de solos, alteração hidrológica e mudança de uso que realimentam a estrutura, criando trajetórias de mudança auto-reforçantes. Em paisagens semiáridas do Nordeste brasileiro, por exemplo, a remoção de vegetação nativa expõe o solo à erosão laminar, que reduz a fertilidade edáfica, que por sua vez inviabiliza a regeneração natural, perpetuando a matriz degradada [@verburg2009]. Em terceiro lugar, a ausência de setas diretas entre as forças biofísicas e os processos ecológicos evidencia que essas forças atuam mediadas pela estrutura da paisagem, reforçando o caráter central da configuração espacial como variável integradora.
+Três propriedades da relação entre forças motrizes e paisagem (Fig. @fig-forcas-motrizes) merecem aprofundamento. As setas convergentes indicam que a estrutura observada resulta da interação simultânea de múltiplas forças, e não do domínio de uma única. A seta de retroalimentação (processos ecológicos → estrutura) explicita que a paisagem não é passiva, pois a perda de biodiversidade pode desencadear degradação de solos, alteração hidrológica e mudança de uso que realimentam a estrutura, criando trajetórias auto-reforçantes. Em paisagens semiáridas do Nordeste brasileiro, por exemplo, a remoção de vegetação nativa expõe o solo à erosão laminar, que reduz a fertilidade edáfica, que por sua vez inviabiliza a regeneração natural, perpetuando a matriz degradada [@verburg2009]. A ausência de setas diretas entre as forças biofísicas e os processos ecológicos evidencia, ademais, que essas forças atuam mediadas pela estrutura da paisagem, reforçando o caráter central da configuração espacial como variável integradora.
 
 ### O modelo matriz-mancha-corredor
 
-O arcabouço operacional mais influente para a descrição da estrutura da paisagem é o modelo **matriz-mancha-corredor** (*matrix-patch-corridor*), proposto por Forman e Godron [-@forman1986] e consolidado por Forman [-@forman1995]. Esse modelo decompõe qualquer paisagem em três elementos espaciais fundamentais cuja interação determina os processos ecológicos e hidrológicos dominantes.
+O arcabouço operacional mais influente para a descrição da estrutura da paisagem é o modelo *matriz-mancha-corredor* (*matrix-patch-corridor*), proposto por Forman e Godron [-@forman1986] e consolidado por Forman [-@forman1995]. Esse modelo decompõe qualquer paisagem em três elementos espaciais fundamentais cuja interação determina os processos ecológicos e hidrológicos dominantes.
 
 ![Representação do modelo matriz-mancha-corredor: a paisagem como mosaico de três elementos espaciais fundamentais. A matriz (fundo dominante) envolve manchas de habitat (fragmentos) conectadas por corredores lineares.](../img/matriz_mancha_corredor.jpg){#fig-matriz-mancha-corredor fig-align="center" width="85%"}
 
-A **matriz** é o elemento mais extenso e mais conectado da paisagem, que exerce influência dominante sobre os fluxos de energia, matéria e organismos. Três critérios operacionais permitem identificar a matriz: (1) maior área relativa, (2) maior conectividade da cobertura, e (3) maior influência sobre a dinâmica dos demais elementos. Em paisagens agrícolas do Cerrado, por exemplo, a pastagem ou a monocultura de soja tipicamente constitui a matriz, enquanto os remanescentes de vegetação nativa formam as manchas.
+A *matriz* é o elemento mais extenso e mais conectado da paisagem, que exerce influência dominante sobre os fluxos de energia, matéria e organismos. Três critérios operacionais permitem identificar a matriz, a saber, maior área relativa, maior conectividade da cobertura e maior influência sobre a dinâmica dos demais elementos. Em paisagens agrícolas do Cerrado, por exemplo, a pastagem ou a monocultura de soja tipicamente constitui a matriz, enquanto os remanescentes de vegetação nativa formam as manchas.
 
-As **manchas** (*patches*) são áreas relativamente homogêneas que diferem de seu entorno. A @tbl-tipos-manchas classifica os cinco tipos fundamentais de manchas segundo sua origem, com implicações diretas para a conservação.
+As *manchas* (*patches*) são áreas relativamente homogêneas que diferem de seu entorno. A @tbl-tipos-manchas classifica os cinco tipos fundamentais de manchas segundo sua origem, com implicações diretas para a conservação.
 
 | Tipo de mancha | Origem | Exemplo | Implicação ecológica |
 |:---|:---|:---|:---|
@@ -139,19 +139,19 @@ As **manchas** (*patches*) são áreas relativamente homogêneas que diferem de 
 
 : Tipos de manchas segundo origem e implicações ecológicas, adaptado de Forman [-@forman1995]. {#tbl-tipos-manchas .striped .hover}
 
-Os **corredores** são estruturas lineares que conectam manchas de habitat, facilitando o deslocamento de organismos e o fluxo gênico entre populações isoladas. Podem ser corredores de habitat (faixas contínuas de vegetação nativa), corredores ripários (matas ciliares ao longo de cursos d'água) ou *stepping stones* (manchas discretas suficientemente próximas para permitir deslocamento em etapas). A funcionalidade de um corredor depende não apenas de suas dimensões (largura, comprimento), mas de sua qualidade estrutural e compatibilidade com os requerimentos das espécies-alvo.
+Os *corredores* são estruturas lineares que conectam manchas de habitat, facilitando o deslocamento de organismos e o fluxo gênico entre populações isoladas. Podem ser corredores de habitat (faixas contínuas de vegetação nativa), corredores ripários (matas ciliares ao longo de cursos d'água) ou *stepping stones* (manchas discretas suficientemente próximas para permitir deslocamento em etapas). A funcionalidade de um corredor depende não apenas de suas dimensões (largura, comprimento), mas de sua qualidade estrutural e compatibilidade com os requerimentos das espécies-alvo. A conectividade, definida como o grau em que a paisagem facilita ou impede o deslocamento de organismos entre manchas de habitat [@taylor1993], pode ser estrutural (derivada do arranjo físico da paisagem) ou funcional (dependente da capacidade efetiva de dispersão de cada espécie), e ambas são condicionadas pela permeabilidade da matriz circundante.
 
-::: {#fig-elementos-paisagem layout="[[55,45]]" layout-valign="bottom"}
-![Efeito de borda: a zona de contato entre a mancha florestal e a matriz agrícola apresenta microclima alterado, maior mortalidade de árvores e invasão de espécies generalistas.](../img/efeito_borda.jpg){#fig-efeito-borda}
+Além de manchas e corredores, o efeito de borda constitui um dos processos mais relevantes na ecologia da paisagem. Na zona de contato entre a mancha florestal e a matriz agrícola (Fig. @fig-efeito-borda), o microclima sofre alterações pronunciadas (aumento de temperatura, redução de umidade, maior incidência de vento), que elevam a mortalidade de árvores e favorecem a invasão de espécies generalistas, reduzindo progressivamente a área funcional do fragmento.
 
-![Corredor ecológico conectando fragmentos de Mata Atlântica: estrutura linear que viabiliza o fluxo de organismos entre manchas de habitat isoladas.](../img/corredor_ecologico.jpg){#fig-corredor-ecologico width="80%"}
+![Efeito de borda: a zona de contato entre a mancha florestal e a matriz agrícola apresenta microclima alterado, maior mortalidade de árvores e invasão de espécies generalistas.](../img/efeito_borda.jpg){#fig-efeito-borda fig-align="center" width="80%"}
 
-Elementos da paisagem em ação: o efeito de borda degrada as manchas, enquanto os corredores mitigam o isolamento.
-:::
+A conectividade estrutural proporcionada pelos corredores pode ser observada em remanescentes de Mata Atlântica (Fig. @fig-corredor-ecologico), onde faixas contínuas de vegetação nativa permitem o trânsito de organismos entre fragmentos que, de outra forma, permaneceriam funcionalmente isolados pela matriz agrícola circundante.
+
+![Corredor ecológico conectando fragmentos de Mata Atlântica: estrutura linear que viabiliza o fluxo de organismos entre manchas de habitat isoladas.](../img/corredor_ecologico.jpg){#fig-corredor-ecologico fig-align="center" width="80%"}
 
 ### A trilogia GTP de Bertrand
 
-Em revisão posterior ao sistema original de 1968, Bertrand [-@bertrand2007] propôs a **trilogia GTP** (*Geossistema-Território-Paisagem*), reconhecendo que a paisagem não pode ser apreendida por um único sistema conceitual. Nessa formulação, o **Geossistema** captura a dimensão naturalista (processos biofísicos e produtividade), o **Território** captura a dimensão socioeconômica (apropriação, uso, governança) e a **Paisagem** captura a dimensão cultural e perceptiva (identidade, estética, patrimônio). A trilogia GTP não substitui o geossistema da década de 1970, mas o complementa ao explicitar que a leitura integrada de um espaço geográfico exige a articulação simultânea dessas três entradas.
+Em revisão posterior ao sistema original de 1968, Bertrand [-@bertrand2007] propôs a *trilogia GTP* (*Geossistema-Território-Paisagem*), reconhecendo que a paisagem não pode ser apreendida por um único sistema conceitual. Nessa formulação, o Geossistema captura a dimensão naturalista (processos biofísicos e produtividade), o Território captura a dimensão socioeconômica (apropriação, uso, governança) e a Paisagem captura a dimensão cultural e perceptiva (identidade, estética, patrimônio). A trilogia GTP não substitui o geossistema da década de 1970, mas o complementa ao explicitar que a leitura integrada de um espaço geográfico exige a articulação simultânea dessas três entradas.
 
 ```{mermaid}
 %%| label: fig-gtp
@@ -184,9 +184,9 @@ A primeira propriedade é a dependência escalar dos padrões. O grão (*grain*)
 
 A segunda propriedade é a organização hierárquica da paisagem. A teoria hierárquica propõe que os sistemas ecológicos são organizados em níveis aninhados, nos quais cada nível opera numa faixa de escalas espaço-temporais característica. Níveis superiores impõem restrições (*constraints*) sobre os inferiores, enquanto os níveis inferiores fornecem os mecanismos. O clima regional restringe os tipos de vegetação possíveis numa bacia hidrográfica, enquanto as propriedades do solo local e a competição interespecífica determinam qual comunidade vegetal efetivamente se estabelece num dado sítio. Essa perspectiva obriga o pesquisador a explicitar qual nível hierárquico está sendo analisado e a reconhecer as restrições e mecanismos provenientes dos níveis adjacentes.
 
-É importante distinguir **escala geográfica** de **escala ecológica**. A escala geográfica é definida pelo observador humano (extensão e grão do mapa ou imagem), enquanto a escala ecológica é definida pelo organismo: cada espécie percebe e utiliza a paisagem numa escala própria, determinada por sua área de vida, capacidade de deslocamento e sensibilidade a feições. Um beija-flor opera na escala de dezenas de metros (manchas florais), enquanto uma onça opera na escala de dezenas de quilômetros (mosaico de habitats). A correspondência entre essas duas escalas — a do pesquisador e a do organismo — é condição necessária para que a análise produza inferências ecologicamente válidas.
+É importante distinguir *escala geográfica* de *escala ecológica*. A escala geográfica é definida pelo observador humano (extensão e grão do mapa ou imagem), enquanto a escala ecológica é definida pelo organismo, pois cada espécie percebe e utiliza a paisagem numa escala própria, determinada por sua área de vida, capacidade de deslocamento e sensibilidade a feições. Um beija-flor opera na escala de dezenas de metros (manchas florais), enquanto uma onça opera na escala de dezenas de quilômetros (mosaico de habitats). A correspondência entre essas duas escalas, a do pesquisador e a do organismo, é condição necessária para que a análise produza inferências ecologicamente válidas.
 
-A **multiescalaridade** é, portanto, não apenas uma propriedade da paisagem, mas um requisito metodológico: a boa prática em ecologia da paisagem exige que o pesquisador examine os padrões em múltiplas escalas (*zoom in* e *zoom out*), verificando se as relações detectadas são consistentes ou se mudam de sinal, magnitude ou significância conforme a escala de análise. Processos que parecem dominantes em escala local (por exemplo, efeito de borda sobre a mortalidade de plântulas) podem ser subordinados a processos regionais (como a proporção total de habitat na paisagem) quando a extensão de análise é ampliada.
+A *multiescalaridade* é, portanto, não apenas uma propriedade da paisagem, mas um requisito metodológico, e a boa prática em ecologia da paisagem exige que o pesquisador examine os padrões em múltiplas escalas (*zoom in* e *zoom out*), verificando se as relações detectadas são consistentes ou se mudam de sinal, magnitude ou significância conforme a escala de análise. Processos que parecem dominantes em escala local (por exemplo, efeito de borda sobre a mortalidade de plântulas) podem ser subordinados a processos regionais (como a proporção total de habitat na paisagem) quando a extensão de análise é ampliada.
 
 ## Abordagem integrada
 
@@ -201,30 +201,32 @@ Uma análise da paisagem que se limite a calcular métricas (área, perímetro, 
 
 ### Paisagens dos domínios brasileiros: diversidade e pressão
 
-A aplicação dos conceitos desenvolvidos neste capítulo ao contexto brasileiro exige o reconhecimento da diversidade de paisagens que caracterizam os diferentes domínios morfoclimáticos. A @fig-biomas-brasileiros ilustra a heterogeneidade fisionômica dessas paisagens — do dossel contínuo da Floresta Amazônica ao mosaico aberto da Caatinga — e permite visualizar os tipos de matrizes, manchas e corredores que cada domínio apresenta.
+A aplicação dos conceitos desenvolvidos neste capítulo ao contexto brasileiro exige o reconhecimento da diversidade de paisagens que caracterizam os diferentes domínios morfoclimáticos. A heterogeneidade fisionômica dessas paisagens, do dossel contínuo da Floresta Amazônica ao mosaico aberto da Caatinga, permite visualizar os tipos de matrizes, manchas e corredores que cada domínio apresenta.
 
-::: {#fig-biomas-brasileiros layout="[[30,40,30]]" layout-valign="bottom"}
-![Floresta Amazônica: dossel contínuo de floresta úmida densa — neste domínio, a floresta constitui a matriz e as áreas desmatadas são as manchas de perturbação.](../img/floresta_amazonica.jpg){#fig-amazonia-paisagem width="80%"}
+No domínio Amazônico (Fig. @fig-amazonia-paisagem), a floresta úmida densa constitui a matriz, e as áreas desmatadas desempenham o papel de manchas de perturbação, cuja expansão é condicionada pela malha viária e pela dinâmica de ocupação fundiária.
 
-![Cerrado: formação savânica com mosaico de fisionomias — campo limpo, campo sujo, cerrado *stricto sensu* e cerradão, sob pressão crescente pela expansão agrícola.](../img/cerrado_vegetacao_fixed.jpg){#fig-cerrado-paisagem}
+![Floresta Amazônica, dossel contínuo de floresta úmida densa. Neste domínio, a floresta constitui a matriz e as áreas desmatadas são as manchas de perturbação.](../img/floresta_amazonica.jpg){#fig-amazonia-paisagem fig-align="center" width="80%"}
 
-![Caatinga: vegetação xerófila decídua adaptada ao déficit hídrico — fisionomia aberta com alta variação sazonal de cobertura.](../img/caatinga_vegetacao_fixed.jpg){#fig-caatinga-paisagem width="80%"}
+O Cerrado (Fig. @fig-cerrado-paisagem) apresenta naturalmente um mosaico de fisionomias (campo limpo, campo sujo, cerrado *stricto sensu* e cerradão), cuja conversão para monoculturas tem reduzido a heterogeneidade original e simplificado a estrutura da paisagem em extensas áreas do Brasil Central.
 
-Paisagens de três domínios brasileiros: a diversidade fisionômica exige abordagens analíticas adaptadas a cada contexto.
-:::
+![Cerrado, formação savânica com mosaico de fisionomias (campo limpo, campo sujo, cerrado *stricto sensu* e cerradão), sob pressão crescente pela expansão agrícola.](../img/cerrado_vegetacao_fixed.jpg){#fig-cerrado-paisagem fig-align="center" width="80%"}
 
-::: {#fig-paisagem-mosaico-processos layout-ncol=2}
-![Mosaico de paisagem rural: a heterogeneidade espacial — intercalação de fragmentos florestais, cultivos, pastagens e corpos d'água — é a variável central da ecologia da paisagem.](../img/mosaico_rural.jpg){#fig-mosaico-rural}
+A Caatinga (Fig. @fig-caatinga-paisagem), com sua vegetação xerófila decídua, exibe alta variação sazonal de cobertura, o que impõe desafios específicos ao monitoramento por sensoriamento remoto e à quantificação de métricas de paisagem ao longo do ciclo anual.
 
-![Erosão acelerada em paisagem degradada: quando os limiares sistêmicos são ultrapassados, a retroalimentação positiva (erosão→perda de solo→menor cobertura vegetal→mais erosão) perpetua a degradação.](../img/erosao_solo.jpg){#fig-erosao-paisagem}
+![Caatinga, vegetação xerófila decídua adaptada ao déficit hídrico, com fisionomia aberta e alta variação sazonal de cobertura.](../img/caatinga_vegetacao_fixed.jpg){#fig-caatinga-paisagem fig-align="center" width="80%"}
 
-Mosaicos rurais e degradação: a estrutura da paisagem determina se os processos operam dentro dos limites de resiliência ou cruzam limiares de degradação.
-:::
+A heterogeneidade espacial da paisagem rural (Fig. @fig-mosaico-rural), expressa pela intercalação de fragmentos florestais, cultivos, pastagens e corpos d'água, constitui a variável central da ecologia da paisagem e determina a capacidade do mosaico de sustentar processos ecológicos e serviços ecossistêmicos.
+
+![Mosaico de paisagem rural: a heterogeneidade espacial (intercalação de fragmentos florestais, cultivos, pastagens e corpos d'água) é a variável central da ecologia da paisagem.](../img/mosaico_rural.jpg){#fig-mosaico-rural fig-align="center" width="80%"}
+
+Quando os limiares sistêmicos são ultrapassados, mecanismos de retroalimentação positiva perpetuam a degradação. A erosão acelerada (Fig. @fig-erosao-paisagem) exemplifica esse processo, pois a perda de cobertura vegetal expõe o solo à ação das chuvas, que remove a camada fértil, que por sua vez inviabiliza a regeneração da vegetação, consolidando uma trajetória de degradação que só pode ser revertida por intervenção externa.
+
+![Erosão acelerada em paisagem degradada: quando os limiares sistêmicos são ultrapassados, a retroalimentação positiva (erosão → perda de solo → menor cobertura vegetal → mais erosão) perpetua a degradação.](../img/erosao_solo.jpg){#fig-erosao-paisagem fig-align="center" width="80%"}
 
 ## Questões centrais da disciplina
 
 As questões de pesquisa da ecologia da paisagem podem ser agrupadas em cinco eixos, conforme a síntese proposta por Wu e Hobbs [-@wu2004], que constitui o arcabouço organizador dos capítulos subsequentes deste livro.
 
-O primeiro eixo trata dos padrões, perguntando como se distribui espacialmente a heterogeneidade e como quantificá-la de forma ecologicamente relevante. A resposta a essa pergunta exige métricas espaciais sensíveis aos processos de interesse e dados de cobertura com resolução adequada. O segundo eixo aborda os processos, investigando como fluxos de organismos, nutrientes e distúrbios são condicionados pela estrutura espacial, e se existem limiares de proporção ou configuração de habitat abaixo dos quais os processos se degradam abruptamente. O terceiro refere-se à dinâmica, examinando como a paisagem muda ao longo do tempo, quais são os mecanismos de mudança (conversão, abandono, intensificação), e se existem estados estáveis alternativos dos quais a paisagem não retorna espontaneamente. O quarto eixo concerne à escala, buscando entender como padrões e processos variam entre escalas, como transpor informação entre níveis hierárquicos sem perda de significado, e como lidar com a dependência escalar das métricas. O quinto e último eixo trata da aplicação, perguntando como o conhecimento ecológico da paisagem pode informar o planejamento territorial, a conservação da biodiversidade e a restauração de ecossistemas degradados.
+Os padrões constituem o ponto de partida, com a pergunta sobre como se distribui espacialmente a heterogeneidade e como quantificá-la de forma ecologicamente relevante, o que exige métricas sensíveis aos processos de interesse e dados de cobertura com resolução adequada. A investigação dos processos, por sua vez, busca compreender como fluxos de organismos, nutrientes e distúrbios são condicionados pela estrutura espacial e se existem limiares abaixo dos quais esses processos se degradam abruptamente. A essa pergunta vincula-se a questão da dinâmica, que examina como a paisagem muda ao longo do tempo, quais mecanismos de mudança operam (conversão, abandono, intensificação) e se existem estados estáveis alternativos dos quais a paisagem não retorna espontaneamente. O problema da escala permeia todos os anteriores, pois padrões e processos variam entre escalas e a transposição de informação entre níveis hierárquicos exige atenção à dependência escalar das métricas. A dimensão aplicada fecha o ciclo ao perguntar como o conhecimento ecológico da paisagem pode informar o planejamento territorial, a conservação da biodiversidade e a restauração de ecossistemas degradados.
 
 Esses cinco eixos estruturam implicitamente os capítulos seguintes. A Parte I aborda padrões e escalas, a Parte II fornece as ferramentas de quantificação (sensoriamento remoto, SIG, métricas), a Parte III examina processos e dinâmica (fragmentação, conectividade, mudanças de uso), e a Parte IV trata da aplicação em planejamento e gestão territorial.
