@@ -37,6 +37,10 @@ graph {
 }
 ```
 
+A visualização de um mosaico real (Fig. @fig-paisagem-mosaico) permite contrastar a abstração do modelo teórico com a complexidade de uma paisagem concreta, na qual os limites entre manchas, corredores e matriz raramente são tão nítidos quanto no diagrama.
+
+![Mosaico de paisagem real: a distribuição de manchas de vegetação nativa, corredores ripários e matriz agrícola ilustra o modelo mancha-corredor-matriz em escala de bacia hidrográfica.](../img/paisagem_mosaico.jpg){#fig-paisagem-mosaico fig-align="center" width="85%"}
+
 A @fig-mcm-modelo evidencia propriedades estruturais que devem ser lidas em termos de funcionalidade ecológica. Os três fragmentos (manchas P1, P2 e P3) diferem em posição relativa e, portanto, em grau de isolamento. Enquanto P1 e P2 estão próximos e potencialmente conectados pelo corredor de mata ciliar, P3 encontra-se na porção inferior da paisagem, separado dos demais não apenas pela distância, mas pela continuidade da matriz de pastagem que o envolve. O corredor ripário (C1) liga espacialmente P1 e P2, mas sua funcionalidade como conduto depende de sua largura, integridade e qualidade de habitat, atributos que não são capturados pelo esquema geométrico e que exigem dados de campo ou imagens de alta resolução para serem avaliados. A matriz de pastagem, aparentemente homogênea no diagrama, pode na realidade apresentar gradientes de permeabilidade (pastagens em abandono com regeneração secundária versus pastagens intensivas manejadas), e essa variação interna da matriz condiciona fortemente a conectividade funcional entre os fragmentos [@fahrig2017].
 
 ## Manchas
@@ -97,7 +101,9 @@ A relação entre heterogeneidade e biodiversidade é mediada pela escala e pelo
 
 ## Estrutura em paisagens tropicais brasileiras
 
-No contexto das paisagens brasileiras, o modelo mancha-corredor-matriz assume formas específicas condicionadas pela história de uso da terra e pelas características biogeográficas de cada bioma. Na Mata Atlântica, os fragmentos florestais remanescentes (8–12% da cobertura original) constituem manchas inseridas numa matriz agrícola, pecuária e urbana heterogênea, com corredores frequentemente restritos a matas ciliares estreitas, muitas delas degradadas. A fragmentação é antiga (séculos de colonização) e os fragmentos remanescentes são predominantemente pequenos (mais de 80% menores que 50 ha) e distantes entre si [@ribeiro2009].
+No contexto das paisagens brasileiras, o modelo mancha-corredor-matriz assume formas específicas condicionadas pela história de uso da terra e pelas características biogeográficas de cada bioma. Na Mata Atlântica, os fragmentos florestais remanescentes (8–12% da cobertura original) constituem manchas inseridas numa matriz agrícola, pecuária e urbana heterogênea, com corredores frequentemente restritos a matas ciliares estreitas, muitas delas degradadas. A fragmentação é antiga (séculos de colonização) e os fragmentos remanescentes são predominantemente pequenos (mais de 80% menores que 50 ha) e distantes entre si [@ribeiro2009]. A @fig-mosaico-mata-atlantica ilustra esse padrão, no qual manchas residuais de floresta, imersas numa matriz heterogênea, configuram um mosaico cuja conectividade depende quase exclusivamente dos corredores ripários remanescentes.
+
+![Mosaico de fragmentos florestais na Mata Atlântica: remanescentes pequenos e isolados inseridos em matriz agrícola e urbana, com conectividade restrita a corredores ripários.](../img/mosaico_mata_atlantica_fragmentos.jpg){#fig-mosaico-mata-atlantica fig-align="center" width="85%"}
 
 No Cerrado, a expansão agrícola das últimas décadas (especialmente soja e pastagens plantadas no Cerrado central e ocidental) converte áreas de vegetação nativa em matriz de monoculturas, gerando manchas residuais de cerrado *sensu stricto* e cerradão frequentemente isoladas em áreas de relevo mais acidentado ou de solos menos aptos à mecanização. Os corredores de vegetação ripária (veredas e matas de galeria) constituem os elementos de conectividade mais relevantes e estão parcialmente protegidos pela legislação de APP.
 
