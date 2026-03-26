@@ -1,0 +1,317 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{geometry}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[table]{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage[most]{tcolorbox}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{lastpage}
+
+\geometry{margin=2.2cm, top=2.8cm, bottom=2.5cm}
+\setlength{\headheight}{15pt}
+\renewcommand{\familydefault}{\sfdefault}
+
+% ── Paleta de cores ──
+\definecolor{uefsdark}{RGB}{0,51,102}
+\definecolor{uefsblue}{RGB}{25,84,150}
+\definecolor{uefslight}{RGB}{232,241,250}
+\definecolor{uefsgray}{RGB}{110,110,110}
+\definecolor{uefsaccent}{RGB}{180,60,40}
+
+% ── Seções ──
+\titleformat{\section}
+  {\normalfont\large\bfseries\color{uefsdark}\scshape}{}{0em}{}%%
+  [\vspace{2pt}{\color{uefsdark}\titlerule}]
+\titlespacing{\section}{0pt}{20pt}{8pt}
+
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\color{uefsblue}}{}{0em}{}
+\titlespacing{\subsection}{0pt}{12pt}{4pt}
+
+% ── Listas ──
+\setlist[itemize]{leftmargin=1.5em,topsep=4pt,itemsep=2pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=2em,topsep=4pt,itemsep=4pt,parsep=0pt}
+
+% ── tcolorbox ──
+\tcbset{
+  uefsbox/.style={
+    colback=uefslight, colframe=uefsdark,
+    boxrule=0.4pt, arc=3pt,
+    left=8pt, right=8pt, top=6pt, bottom=6pt,
+    fontupper=\small
+  },
+  ementabox/.style={
+    colback=white, colframe=uefsdark,
+    boxrule=0.8pt, arc=0pt,
+    left=10pt, right=10pt, top=8pt, bottom=8pt,
+    title={\scshape\bfseries Ementa},
+    fonttitle=\large\color{white},
+    coltitle=white, colbacktitle=uefsdark,
+    attach boxed title to top left={yshift=-2mm,xshift=2mm},
+    boxed title style={arc=2pt,boxrule=0pt}
+  }
+}
+
+
+
+% ── Cabeçalho / Rodapé ──
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{uefsdark}\leaders\hrule height \headrulewidth\hfill}}
+\fancyhead[L]{\small\color{uefsgray}UEFS\,--\,PI e Inovação}
+\fancyhead[R]{\small\color{uefsgray}Plano de Ensino 2026.1}
+\fancyfoot[C]{\small\color{uefsgray}Página \thepage\ de \pageref{LastPage}}
+
+\hypersetup{colorlinks=true,linkcolor=uefsblue,urlcolor=uefsblue}
+
+
+\begin{document}
+
+\thispagestyle{empty}
+
+
+
+
+\begin{center}
+\color{uefsdark}\rule{\textwidth}{1.2pt}\\[0.30cm]
+\begin{minipage}{0.12\textwidth}
+\includegraphics[width=\linewidth]{../../aulas/assets/logo-uefs.png}
+\end{minipage}\hfill
+\begin{minipage}{0.84\textwidth}
+\begin{center}
+{\Large\bfseries UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA}\\[0.15cm]
+{\normalsize Departamento de Tecnologia\,(DTEC)}\\[0.06cm]
+{\normalsize Curso de Engenharia Agronômica}
+\end{center}
+\end{minipage}\\[0.30cm]
+\color{uefsdark}\rule{\textwidth}{1.2pt}
+\end{center}
+
+\vspace{0.6cm}
+
+\begin{center}
+{\LARGE\bfseries\color{uefsdark} Propriedade Intelectual e Inovação}\\[0.30cm]
+{\large\bfseries Plano de Ensino\,--\,2026.1}
+\end{center}
+
+\vspace{0.4cm}
+
+% ── Identificação ──
+\begin{tcolorbox}[uefsbox]
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Carga Horária:} & 10 encontros \\
+\textbf{Horário:} & A definir \\
+\textbf{Período:} & 2026.1 \\
+\textbf{Modalidade:} & Presencial \\
+\textbf{Docente:} & Prof.\,Dr.\,Luiz Diego Vidal Santos \\
+\textbf{Contato:} & \href{mailto:ldvsantos@uefs.br}{ldvsantos@uefs.br}\enspace·\enspace\href{https://orcid.org/0000-0001-8659-8557}{ORCID: 0000-0001-8659-8557} \\
+\end{tabularx}
+\end{tcolorbox}
+
+\vspace{0.3cm}
+
+
+
+\begin{tcolorbox}[ementabox]
+Gestão da inovação tecnológica na agropecuária; PI como ativo estratégico no agronegócio; empreendedorismo tecnológico agrícola; políticas de inovação; gestão de projetos de inovação; valoração de ativos de PI; transferência de tecnologia; gestão estratégica de PI em empresas rurais; \textit{spin-offs} acadêmicas; PI na agricultura digital.
+\end{tcolorbox}
+
+
+\section*{Objetivo Geral}
+
+Capacitar o(a) discente a compreender os fundamentos da propriedade intelectual e da gestão da inovação no contexto agropecuário, desenvolvendo competências para proteger, valorar e transferir ativos intangíveis, promover o empreendedorismo tecnológico e gerir projetos de inovação no setor agrícola.
+
+\section*{Objetivos Específicos}
+
+\begin{enumerate}
+
+\item Compreender os fundamentos da gestão da inovação tecnológica aplicada ao setor agropecuário.
+
+\item Analisar a PI como ativo estratégico: patentes, marcas, cultivares, IGs e segredos industriais.
+
+\item Desenvolver competências em empreendedorismo tecnológico agrícola e criação de negócios de base tecnológica.
+
+\item Conhecer as políticas públicas de inovação e instrumentos de fomento para o setor agrícola.
+
+\item Aplicar técnicas de gestão de projetos de inovação com foco em PI.
+
+\item Utilizar métodos de valoração de ativos intangíveis no contexto agropecuário.
+
+\item Compreender processos de transferência de tecnologia e modelos de \textit{spin-offs} acadêmicas.
+
+\item Analisar a proteção de PI na agricultura digital (Agricultura 4.0).
+
+\end{enumerate}
+
+\section*{Habilidades e Competências}
+
+\begin{multicols}{2}
+
+\subsection*{Competências Conceituais}
+
+\begin{itemize}
+
+\item Identificar ativos de PI em empreendimentos agropecuários
+
+\item Definir estratégias de proteção adequadas a cada modalidade
+
+\item Compreender o ambiente regulatório (INPI, Lei de Cultivares, Lei de PI)
+
+\end{itemize}
+
+\subsection*{Competências de Gestão}
+
+\begin{itemize}
+
+\item Elaborar projetos de inovação com componentes de PI
+
+\item Gerir portfólios de PI em empresas rurais
+
+\item Planejar processos de transferência de tecnologia
+
+\end{itemize}
+
+\columnbreak
+
+\subsection*{Competências Analíticas}
+
+\begin{itemize}
+
+\item Avaliar economicamente ativos intangíveis
+
+\item Realizar buscas de anterioridade em bases de patentes
+
+\item Analisar cases de inovação no agronegócio
+
+\end{itemize}
+
+\subsection*{Competências Empreendedoras}
+
+\begin{itemize}
+
+\item Articular inovação, empreendedorismo e PI
+
+\item Compreender ecossistemas de \textit{AgTechs} e incubadoras
+
+\item Propor modelos de negócio baseados em PI agrícola
+
+\end{itemize}
+
+\end{multicols}
+
+\section*{Significado do Componente para a Formação Profissional}
+
+O componente curricular \textit{Propriedade Intelectual e Inovação} é relevante para a formação do(a) engenheiro(a) agrônomo(a), por abordar a dimensão estratégica da proteção do conhecimento e da inovação tecnológica. Em um cenário de crescente intensificação tecnológica (Agricultura 4.0, biotecnologia, sensoriamento remoto), a capacidade de identificar, proteger, valorar e transferir ativos intangíveis é competência diferenciadora para profissionais em pesquisa, desenvolvimento, consultoria e gestão de empreendimentos rurais.
+
+\section*{Cronograma}
+
+
+\begin{small}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\textwidth}{@{}c c X@{}}
+\toprule
+\textbf{Enc.} & \textbf{Sem.} & \textbf{Tema} \\
+\midrule
+01 & 1\textsuperscript{a} & Gestão da Inovação Tecnológica na Agropecuária: fundamentos, tipos, sistemas. \\
+02 & 2\textsuperscript{a} & PI como Ativo Estratégico: patentes, marcas, cultivares, IGs, segredos industriais. \\
+03 & 3\textsuperscript{a} & Empreendedorismo Tecnológico Agrícola: startups, \textit{AgTechs}, inovação. \\
+04 & 4\textsuperscript{a} & Políticas de Inovação: SNPA, Marco Legal de CT\&I, FNDCT, incentivos. \\
+05 & 5\textsuperscript{a} & Gestão de Projetos de Inovação: escopo, riscos, canvas, roadmap. \\
+06 & 6\textsuperscript{a} & Valoração de Ativos de PI: métodos de custo, mercado, renda, opções reais. \\
+07 & 7\textsuperscript{a} & Transferência de Tecnologia: licenciamento, cessão, cooperação, NIT, ICT. \\
+08 & 8\textsuperscript{a} & Gestão Estratégica de PI em Empresas Rurais: portfólio, monitoramento, defesa. \\
+09 & 9\textsuperscript{a} & \textit{Spin-offs} Acadêmicas: empreendedorismo universitário, incubadoras, aceleradoras. \\
+\rowcolor{uefslight!70!white}
+\textbf{10} & \textbf{10\textsuperscript{a}} & \textbf{\textsf{PI NA AGRICULTURA DIGITAL}: dados, IoT, algoritmos, regulação.} \\
+\bottomrule
+\end{tabularx}
+\end{small}
+
+\begin{tcolorbox}[uefsbox]
+\textbf{Estrutura geral:}\enspace Enc.\,01--04 → Fundamentos, PI e Políticas\enspace|\enspace Enc.\,05--07 → Gestão, Valoração e Transferência\enspace|\enspace Enc.\,08--10 → Estratégia, Spin-offs e Agricultura Digital.
+\end{tcolorbox}
+
+
+\section*{Metodologia}
+
+A disciplina será desenvolvida ao longo de 10 encontros. As atividades combinarão exposição dialogada, estudos de caso do agronegócio, análise de documentos de patentes e cultivares, simulações de processos de registro e exercícios de valoração de ativos.
+
+Os materiais incluirão legislação pertinente (Lei de PI, Lei de Cultivares, Marco Legal de CT\&I), bases de patentes (INPI, WIPO), cases de empresas do agro e materiais audiovisuais. A disciplina enfatiza a aplicação prática, com exercícios de busca de anterioridade, valoração de ativos e elaboração de planos de negócio com PI.
+
+
+\begin{tcolorbox}[uefsbox, colframe=uefsaccent, colback=white, title={\bfseries\color{white}\scshape Avaliação}, fonttitle=\normalsize, coltitle=white, colbacktitle=uefsaccent, attach boxed title to top left={yshift=-2mm,xshift=2mm}, boxed title style={arc=2pt,boxrule=0pt}]
+\begin{itemize}[leftmargin=1.2em]
+\item 1\textsuperscript{a}\,Avaliação (Teórica\,--\,individual): fundamentos de PI, inovação, empreendedorismo\,\dotfill\,\textbf{33\,\%}
+\item 2\textsuperscript{a}\,Avaliação (Prática\,--\,individual/grupo): busca de anterioridade, análise de patente\,\dotfill\,\textbf{33\,\%}
+\item 3\textsuperscript{a}\,Avaliação (Projeto Final\,--\,individual/grupo): plano de negócio com PI\,\dotfill\,\textbf{34\,\%}
+\end{itemize}
+\vspace{4pt}
+{\footnotesize Cada avaliação vale até 10,0 pontos. Média final = média aritmética simples.}
+\end{tcolorbox}
+
+
+
+\section*{Referências}
+
+\subsection*{Básica}
+
+\begin{small}
+\hangindent=1.5em\hangafter=1
+JUNGMANN, D.\,M.; BONETTI, E.\,A. \textbf{A caminho da inovação}: proteção e negócios com bens de PI --- guia para o empresário. Brasília: IEL, 2010.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+BARBOSA, D.\,B. \textbf{Uma introdução à propriedade intelectual}. 2.\,ed. Rio de Janeiro: Lumen Juris, 2003.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+BRASIL. \textbf{Lei nº 9.279, de 14 de maio de 1996} (Lei da Propriedade Industrial). Brasília, 1996.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+BRASIL. \textbf{Lei nº 9.456, de 25 de abril de 1997} (Lei de Proteção de Cultivares). Brasília, 1997.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+TIDD, J.; BESSANT, J. \textbf{Gestão da inovação}. 5.\,ed. Porto Alegre: Bookman, 2015.\par\medskip
+\end{small}
+
+\subsection*{Complementar}
+
+\begin{small}
+\hangindent=1.5em\hangafter=1
+BRASIL. \textbf{Lei nº 13.243, de 11 de janeiro de 2016} (Marco Legal de CT\&I). Brasília, 2016.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+INPI. \textbf{Manual de patentes}. Rio de Janeiro: INPI, 2023.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+VIEIRA, A.\,C.\,P.; BUAINAIN, A.\,M. Aplicação da PI no agronegócio. In: \textbf{PI e Inovação no Agronegócio}. Brasília: MAPA, 2015.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+EMBRAPA. \textbf{Política de inovação da Embrapa}. Brasília: Embrapa, 2018.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+OECD/FAO. \textbf{OECD-FAO Agricultural Outlook}. Paris: OECD Publishing, 2024.\par\medskip
+\end{small}
+
+
+
+\vfill
+
+\begin{center}
+\noindent\rule{6cm}{0.4pt}\\[6pt]
+\textbf{Prof.\,Dr.\,Luiz Diego Vidal Santos}\\
+Docente Responsável\\[4pt]
+{\small Feira de Santana\,--\,BA, fevereiro de 2026.}
+\end{center}
+
+\end{document}

@@ -1,0 +1,310 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{geometry}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[table]{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage[most]{tcolorbox}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{lastpage}
+
+\geometry{margin=2.2cm, top=2.8cm, bottom=2.5cm}
+\setlength{\headheight}{15pt}
+\renewcommand{\familydefault}{\sfdefault}
+
+% ── Paleta de cores ──
+\definecolor{uefsdark}{RGB}{0,51,102}
+\definecolor{uefsblue}{RGB}{25,84,150}
+\definecolor{uefslight}{RGB}{232,241,250}
+\definecolor{uefsgray}{RGB}{110,110,110}
+\definecolor{uefsaccent}{RGB}{180,60,40}
+
+% ── Seções ──
+\titleformat{\section}
+  {\normalfont\large\bfseries\color{uefsdark}\scshape}{}{0em}{}%%
+  [\vspace{2pt}{\color{uefsdark}\titlerule}]
+\titlespacing{\section}{0pt}{20pt}{8pt}
+
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\color{uefsblue}}{}{0em}{}
+\titlespacing{\subsection}{0pt}{12pt}{4pt}
+
+% ── Listas ──
+\setlist[itemize]{leftmargin=1.5em,topsep=4pt,itemsep=2pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=2em,topsep=4pt,itemsep=4pt,parsep=0pt}
+
+% ── tcolorbox ──
+\tcbset{
+  uefsbox/.style={
+    colback=uefslight, colframe=uefsdark,
+    boxrule=0.4pt, arc=3pt,
+    left=8pt, right=8pt, top=6pt, bottom=6pt,
+    fontupper=\small
+  },
+  ementabox/.style={
+    colback=white, colframe=uefsdark,
+    boxrule=0.8pt, arc=0pt,
+    left=10pt, right=10pt, top=8pt, bottom=8pt,
+    title={\scshape\bfseries Ementa},
+    fonttitle=\large\color{white},
+    coltitle=white, colbacktitle=uefsdark,
+    attach boxed title to top left={yshift=-2mm,xshift=2mm},
+    boxed title style={arc=2pt,boxrule=0pt}
+  }
+}
+
+
+
+% ── Cabeçalho / Rodapé ──
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{uefsdark}\leaders\hrule height \headrulewidth\hfill}}
+\fancyhead[L]{\small\color{uefsgray}UEFS\,--\,Geotêxteis e NbS}
+\fancyhead[R]{\small\color{uefsgray}Plano de Ensino 2026.1}
+\fancyfoot[C]{\small\color{uefsgray}Página \thepage\ de \pageref{LastPage}}
+
+\hypersetup{colorlinks=true,linkcolor=uefsblue,urlcolor=uefsblue}
+
+
+\begin{document}
+
+\thispagestyle{empty}
+
+
+
+
+\begin{center}
+\color{uefsdark}\rule{\textwidth}{1.2pt}\\[0.30cm]
+\begin{minipage}{0.12\textwidth}
+\includegraphics[width=\linewidth]{../../aulas/assets/logo-uefs.png}
+\end{minipage}\hfill
+\begin{minipage}{0.84\textwidth}
+\begin{center}
+{\Large\bfseries UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA}\\[0.15cm]
+{\normalsize Pós-Doutorado em Geotecnia Ambiental}\\[0.06cm]
+{\normalsize }
+\end{center}
+\end{minipage}\\[0.30cm]
+\color{uefsdark}\rule{\textwidth}{1.2pt}
+\end{center}
+
+\vspace{0.6cm}
+
+\begin{center}
+{\LARGE\bfseries\color{uefsdark} Geotêxteis e Soluções baseadas na Natureza}\\[0.30cm]
+{\large\bfseries Tópicos Especiais\,--\,Seminários POSDOC}
+\end{center}
+
+\vspace{0.4cm}
+
+% ── Identificação ──
+\begin{tcolorbox}[uefsbox]
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Carga Horária:} & 6 encontros intensivos \\
+\textbf{Horário:} & A definir \\
+\textbf{Período:} & 2026 \\
+\textbf{Modalidade:} & Presencial \\
+\textbf{Docente:} & Prof.\,Dr.\,Luiz Diego Vidal Santos \\
+\textbf{Contato:} & \href{mailto:ldvsantos@uefs.br}{ldvsantos@uefs.br}\enspace·\enspace\href{https://orcid.org/0000-0001-8659-8557}{ORCID: 0000-0001-8659-8557} \\
+\end{tabularx}
+\end{tcolorbox}
+
+\vspace{0.3cm}
+
+
+
+\begin{tcolorbox}[ementabox]
+Fundamentos e aplicações estratégicas de geotêxteis; classificação e propriedades mecânicas; especificações de projeto; estudos de caso em seleção e dimensionamento; implementação, monitoramento e avaliação de desempenho; modelagem de vida útil de biotêxteis sob diferentes climas.
+\end{tcolorbox}
+
+
+\section*{Objetivo Geral}
+
+Capacitar o(a) discente a compreender os fundamentos, propriedades e aplicações de geotêxteis convencionais e biodegradáveis, desenvolvendo competências para selecionar, dimensionar, implementar e monitorar soluções geotécnicas baseadas na natureza (NbS) para estabilização de taludes e controle de erosão.
+
+\section*{Objetivos Específicos}
+
+\begin{enumerate}
+
+\item Compreender os fundamentos teóricos e as aplicações estratégicas de geotêxteis.
+
+\item Classificar geotêxteis segundo suas propriedades mecânicas, hidráulicas e de durabilidade.
+
+\item Especificar geotêxteis para projetos de controle de erosão, drenagem, separação e reforço.
+
+\item Analisar estudos de caso em seleção e dimensionamento de geotêxteis para cenários reais.
+
+\item Planejar e avaliar a implementação em campo, incluindo monitoramento e avaliação de desempenho.
+
+\item Modelar a vida útil de biotêxteis sob diferentes regimes climáticos e condições ambientais.
+
+\end{enumerate}
+
+\section*{Habilidades e Competências}
+
+\begin{multicols}{2}
+
+\subsection*{Competências Técnicas}
+
+\begin{itemize}
+
+\item Selecionar e especificar geotêxteis adequados a cada aplicação geotécnica
+
+\item Dimensionar soluções integradas de proteção e estabilização
+
+\item Interpretar normas técnicas (ABNT, ISO, ASTM) para geossintéticos
+
+\end{itemize}
+
+\subsection*{Competências de Campo}
+
+\begin{itemize}
+
+\item Conduzir ensaios de caracterização e monitoramento de desempenho
+
+\item Avaliar vida útil e degradação de biotêxteis em diferentes contextos
+
+\item Planejar técnicas de instalação e controle de qualidade
+
+\end{itemize}
+
+\columnbreak
+
+\subsection*{Competências Analíticas}
+
+\begin{itemize}
+
+\item Modelar degradação sob diferentes regimes climáticos
+
+\item Analisar fatores: UV, temperatura, umidade, microrganismos
+
+\item Avaliar custo-benefício de soluções convencionais vs.\ naturais
+
+\end{itemize}
+
+\subsection*{Competências de Projeto}
+
+\begin{itemize}
+
+\item Elaborar memoriais descritivos e relatórios técnicos
+
+\item Integrar geotêxteis em soluções baseadas na natureza (NbS)
+
+\item Propor soluções alinhadas aos ODS e engenharia ecológica
+
+\end{itemize}
+
+\end{multicols}
+
+\section*{Significado do Componente para a Formação Profissional}
+
+O componente curricular \textit{Geotêxteis e Soluções baseadas na Natureza} é relevante para profissionais de engenharia geotécnica, ambiental e de conservação de solos. Os geotêxteis são elementos fundamentais em obras de contenção, drenagem, filtragem e proteção de superfícies, e o domínio de suas propriedades, critérios de seleção e procedimentos de implementação é competência cada vez mais exigida em projetos de infraestrutura sustentável.
+
+A ênfase em biotêxteis e soluções baseadas na natureza (NbS) reflete a tendência global de integração de materiais naturais e engenharia ecológica, promovendo soluções de menor impacto ambiental e maior alinhamento com os Objetivos de Desenvolvimento Sustentável (ODS).
+
+\section*{Cronograma}
+
+
+\begin{small}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\textwidth}{@{}c c X@{}}
+\toprule
+\textbf{Enc.} & \textbf{Sem.} & \textbf{Tema} \\
+\midrule
+01 & 1\textsuperscript{o} & Seminário POSDOC: visão geral, fundamentos e aplicações estratégicas de geotêxteis. \\
+02 & 2\textsuperscript{o} & Tipologia de Geotêxteis: classificação, propriedades mecânicas e hidráulicas. \\
+03 & 3\textsuperscript{o} & Geotêxteis: tipos, usos práticos, especificações de projeto e normas técnicas. \\
+04 & 4\textsuperscript{o} & Projeto Prático I: seleção e dimensionamento, memorial descritivo. \\
+05 & 5\textsuperscript{o} & Projeto Prático II: implementação, monitoramento e avaliação de desempenho. \\
+\rowcolor{uefslight!70!white}
+\textbf{06} & \textbf{6\textsuperscript{o}} & \textbf{\textsf{VIDA ÚTIL}: modelagem de degradação de biotêxteis sob diferentes climas.} \\
+\bottomrule
+\end{tabularx}
+\end{small}
+
+\begin{tcolorbox}[uefsbox]
+\textbf{Estrutura:}\enspace Enc.\,01--03 → Fundamentos e Tipologia\enspace|\enspace Enc.\,04--05 → Projetos Práticos\enspace|\enspace Enc.\,06 → Modelagem de Vida Útil.
+\end{tcolorbox}
+
+
+\section*{Metodologia}
+
+A disciplina será desenvolvida ao longo de 6 encontros intensivos, com forte caráter prático e orientado a projetos. As atividades combinarão exposição teórica dos fundamentos com análise de estudos de caso, exercícios de dimensionamento e atividades aplicadas de campo.
+
+Os encontros incluirão revisão bibliográfica, análise de normas técnicas, exercícios projetuais, discussão de resultados experimentais e modelagem computacional de degradação de biotêxteis.
+
+
+\begin{tcolorbox}[uefsbox, colframe=uefsaccent, colback=white, title={\bfseries\color{white}\scshape Avaliação}, fonttitle=\normalsize, coltitle=white, colbacktitle=uefsaccent, attach boxed title to top left={yshift=-2mm,xshift=2mm}, boxed title style={arc=2pt,boxrule=0pt}]
+\begin{itemize}[leftmargin=1.2em]
+\item 1\textsuperscript{a}\,Avaliação (Teórica/Seminário\,--\,individual): fundamentos, classificação, propriedades\,\dotfill\,\textbf{50\,\%}
+\item 2\textsuperscript{a}\,Avaliação (Projeto Prático\,--\,individual/dupla): seleção, dimensionamento, relatório\,\dotfill\,\textbf{50\,\%}
+\end{itemize}
+\vspace{4pt}
+{\footnotesize Cada avaliação vale até 10,0 pontos. Média final = média aritmética simples.}
+\end{tcolorbox}
+
+
+
+\section*{Referências}
+
+\subsection*{Básica}
+
+\begin{small}
+\hangindent=1.5em\hangafter=1
+KOERNER, R.\,M. \textbf{Designing with geosynthetics}. 6.\,ed. Upper Saddle River: Prentice Hall, 2012.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+INGOLD, T.\,S. \textbf{Geotextiles and geomembranes handbook}. Oxford: Elsevier, 1994.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+VERTEMATTI, J.\,C. (coord.). \textbf{Manual brasileiro de geossintéticos}. 2.\,ed. São Paulo: Blucher, 2015.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+SCHIECHTL, H.\,M.; STERN, R. \textbf{Ground bioengineering techniques}. Oxford: Blackwell Science, 1996.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+JOHN, N.\,W.\,M. \textbf{Geotextiles}. Glasgow: Blackie and Son, 1987.\par\medskip
+\end{small}
+
+\subsection*{Complementar}
+
+\begin{small}
+\hangindent=1.5em\hangafter=1
+ABNT. \textbf{NBR ISO 10318}: Geossintéticos --- termos e definições. Rio de Janeiro: ABNT, 2013.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+PALMEIRA, E.\,M. \textbf{Geossintéticos em geotecnia e meio ambiente}. São Paulo: Oficina de Textos, 2018.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+MITCHELL, D.\,J.; BARR, C. The use of biotextiles for erosion control. In: \textbf{Eco- and Ground Bio-Engineering}. Dordrecht: Springer, 2007. p.\,243--256.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+VISHNUDAS, S. \textit{et al.} Coir geotextile field studies. \textit{Geotextiles and Geomembranes}, v.\,24, n.\,5, p.\,316--325, 2006.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+SMETS, T. \textit{et al.} Physical soil quality on biotextile efficiency. \textit{Geomorphology}, v.\,153--154, p.\,142--150, 2012.\par\medskip
+\end{small}
+
+
+
+\vfill
+
+\begin{center}
+\noindent\rule{6cm}{0.4pt}\\[6pt]
+\textbf{Prof.\,Dr.\,Luiz Diego Vidal Santos}\\
+Docente Responsável\\[4pt]
+{\small Feira de Santana\,--\,BA, fevereiro de 2026.}
+\end{center}
+
+\end{document}

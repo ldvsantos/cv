@@ -1,0 +1,319 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{geometry}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[table]{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage[most]{tcolorbox}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{lastpage}
+
+\geometry{margin=2.2cm, top=2.8cm, bottom=2.5cm}
+\setlength{\headheight}{15pt}
+\renewcommand{\familydefault}{\sfdefault}
+
+% ── Paleta de cores ──
+\definecolor{uefsdark}{RGB}{0,51,102}
+\definecolor{uefsblue}{RGB}{25,84,150}
+\definecolor{uefslight}{RGB}{232,241,250}
+\definecolor{uefsgray}{RGB}{110,110,110}
+\definecolor{uefsaccent}{RGB}{180,60,40}
+
+% ── Seções ──
+\titleformat{\section}
+  {\normalfont\large\bfseries\color{uefsdark}\scshape}{}{0em}{}%%
+  [\vspace{2pt}{\color{uefsdark}\titlerule}]
+\titlespacing{\section}{0pt}{20pt}{8pt}
+
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\color{uefsblue}}{}{0em}{}
+\titlespacing{\subsection}{0pt}{12pt}{4pt}
+
+% ── Listas ──
+\setlist[itemize]{leftmargin=1.5em,topsep=4pt,itemsep=2pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=2em,topsep=4pt,itemsep=4pt,parsep=0pt}
+
+% ── tcolorbox ──
+\tcbset{
+  uefsbox/.style={
+    colback=uefslight, colframe=uefsdark,
+    boxrule=0.4pt, arc=3pt,
+    left=8pt, right=8pt, top=6pt, bottom=6pt,
+    fontupper=\small
+  },
+  ementabox/.style={
+    colback=white, colframe=uefsdark,
+    boxrule=0.8pt, arc=0pt,
+    left=10pt, right=10pt, top=8pt, bottom=8pt,
+    title={\scshape\bfseries Ementa},
+    fonttitle=\large\color{white},
+    coltitle=white, colbacktitle=uefsdark,
+    attach boxed title to top left={yshift=-2mm,xshift=2mm},
+    boxed title style={arc=2pt,boxrule=0pt}
+  }
+}
+
+
+
+% ── Cabeçalho / Rodapé ──
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{uefsdark}\leaders\hrule height \headrulewidth\hfill}}
+\fancyhead[L]{\small\color{uefsgray}UEFS\,--\,Extensão Rural}
+\fancyhead[R]{\small\color{uefsgray}Plano de Ensino 2026.1}
+\fancyfoot[C]{\small\color{uefsgray}Página \thepage\ de \pageref{LastPage}}
+
+\hypersetup{colorlinks=true,linkcolor=uefsblue,urlcolor=uefsblue}
+
+
+\begin{document}
+
+\thispagestyle{empty}
+
+
+
+
+\begin{center}
+\color{uefsdark}\rule{\textwidth}{1.2pt}\\[0.30cm]
+\begin{minipage}{0.12\textwidth}
+\includegraphics[width=\linewidth]{../../aulas/assets/logo-uefs.png}
+\end{minipage}\hfill
+\begin{minipage}{0.84\textwidth}
+\begin{center}
+{\Large\bfseries UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA}\\[0.15cm]
+{\normalsize Departamento de Tecnologia\,(DTEC)}\\[0.06cm]
+{\normalsize Curso de Engenharia Agronômica}
+\end{center}
+\end{minipage}\\[0.30cm]
+\color{uefsdark}\rule{\textwidth}{1.2pt}
+\end{center}
+
+\vspace{0.6cm}
+
+\begin{center}
+{\LARGE\bfseries\color{uefsdark} Extensão Rural}\\[0.30cm]
+{\large\bfseries Plano de Ensino\,--\,2026.1}
+\end{center}
+
+\vspace{0.4cm}
+
+% ── Identificação ──
+\begin{tcolorbox}[uefsbox]
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Carga Horária:} & 12 encontros \\
+\textbf{Horário:} & A definir \\
+\textbf{Período:} & 2026.1 \\
+\textbf{Modalidade:} & Presencial \\
+\textbf{Docente:} & Prof.\,Dr.\,Luiz Diego Vidal Santos \\
+\textbf{Contato:} & \href{mailto:ldvsantos@uefs.br}{ldvsantos@uefs.br}\enspace·\enspace\href{https://orcid.org/0000-0001-8659-8557}{ORCID: 0000-0001-8659-8557} \\
+\end{tabularx}
+\end{tcolorbox}
+
+\vspace{0.3cm}
+
+
+
+\begin{tcolorbox}[ementabox]
+Fundamentos teórico-conceituais e históricos da extensão rural; objetos de mediação (conhecimento cotidiano, ciência, técnica e tecnologia social); teoria pedagógica e extensão rural; institucionalização da ER no Brasil (difusionismo, FSR, participativo, agroecológico); PNATER e ATER digital; comunicação rural e metodologias participativas (DRP, andragogia); ATER pública e privada; agroecologia e transição agroecológica; segurança alimentar, certificação e indicações geográficas; elaboração de projetos de extensão rural; produção de material didático; avaliação participativa de impacto.
+\end{tcolorbox}
+
+
+\section*{Objetivo Geral}
+
+Capacitar o(a) discente a compreender os fundamentos teóricos, históricos e metodológicos da extensão rural, desenvolvendo competências para planejar, executar e avaliar ações de assistência técnica e extensão rural (ATER) em diferentes contextos socioambientais e produtivos, com ênfase em comunicação dialógica, metodologias participativas e agroecologia.
+
+\section*{Objetivos Específicos}
+
+\begin{enumerate}
+
+\item Analisar a evolução histórica da extensão rural no Brasil, identificando os principais paradigmas.
+
+\item Compreender os objetos de mediação da extensão rural: conhecimento cotidiano, ciência, técnica e tecnologia social.
+
+\item Discutir as teorias pedagógicas aplicadas à extensão rural e suas implicações metodológicas.
+
+\item Aplicar ferramentas de comunicação rural e metodologias participativas (DRP, andragogia).
+
+\item Analisar os modelos institucionais de ATER pública e privada e os marcos legais (PNATER).
+
+\item Compreender os princípios da agroecologia e da transição agroecológica no contexto extensionista.
+
+\item Elaborar projetos de extensão rural, materiais didáticos e instrumentos de avaliação participativa.
+
+\end{enumerate}
+
+\section*{Habilidades e Competências}
+
+\begin{multicols}{2}
+
+\subsection*{Competências Conceituais}
+
+\begin{itemize}
+
+\item Diagnosticar demandas de comunidades rurais com ferramentas participativas
+
+\item Planejar e conduzir ações de extensão com abordagem dialógica
+
+\item Articular saberes técnicos e tradicionais no desenvolvimento rural
+
+\end{itemize}
+
+\subsection*{Competências Metodológicas}
+
+\begin{itemize}
+
+\item Aplicar DRP e metodologias participativas em diagnósticos territoriais
+
+\item Avaliar criticamente políticas públicas de extensão rural
+
+\item Compreender diferentes paradigmas (difusionismo, participativo, agroecológico)
+
+\end{itemize}
+
+\columnbreak
+
+\subsection*{Competências de Projeto}
+
+\begin{itemize}
+
+\item Elaborar projetos de ATER com marco lógico, orçamento e indicadores
+
+\item Planejar processos de transição agroecológica com comunidades
+
+\item Articular conhecimento técnico-científico e saberes locais
+
+\end{itemize}
+
+\subsection*{Competências Comunicativas}
+
+\begin{itemize}
+
+\item Produzir materiais didáticos e de divulgação para públicos rurais
+
+\item Comunicar resultados de intervenções de forma acessível
+
+\item Utilizar mídias digitais para ATER e comunicação rural
+
+\end{itemize}
+
+\end{multicols}
+
+\section*{Significado do Componente para a Formação Profissional}
+
+O componente curricular \textit{Extensão Rural} é estruturante na formação do(a) engenheiro(a) agrônomo(a), por articular conhecimentos técnicos com habilidades de comunicação, mediação e planejamento voltados ao desenvolvimento rural sustentável. A extensão rural é o elo entre a pesquisa agropecuária e a realidade do campo, e o profissional que domina seus fundamentos está preparado para atuar como agente de transformação social, promovendo a adoção de tecnologias apropriadas, a valorização dos saberes locais e a construção coletiva de soluções.
+
+\section*{Cronograma}
+
+
+\begin{small}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\textwidth}{@{}c c X@{}}
+\toprule
+\textbf{Enc.} & \textbf{Sem.} & \textbf{Tema} \\
+\midrule
+01 & 1\textsuperscript{a} & Políticas de Extensão Rural: PNATER, princípios, diretrizes, andragogia. \\
+02 & 2\textsuperscript{a} & ATER Digital e Difusão Tecnológica: inovação, plataformas digitais, apps. \\
+03 & 3\textsuperscript{a} & Comunicação Rural e Metodologias Participativas: DRP, Paulo Freire. \\
+04 & 4\textsuperscript{a} & ATER Pública e Privada: Emater, cooperativas, ONGs, consultorias. \\
+05 & 5\textsuperscript{a} & Casos Práticos de Extensão Rural: experiências brasileiras, lições. \\
+06 & 6\textsuperscript{a} & Avaliação Participativa de Impacto: indicadores, cisternas, quintais produtivos. \\
+07 & 7\textsuperscript{a} & Objetos de Mediação: conhecimento cotidiano, ciência, técnica, tecnologia social. \\
+08 & 8\textsuperscript{a} & Teoria Pedagógica e Extensão: tradicional, nova, tecnicista, crítico-social. \\
+09 & 9\textsuperscript{a} & Agroecologia e Transição Agroecológica: princípios, PNAPO/PLANAPO. \\
+10 & 10\textsuperscript{a} & Segurança Alimentar e Certificação: SAN, soberania, SPG, IGs. \\
+\rowcolor{uefslight!70!white}
+\textbf{11} & \textbf{11\textsuperscript{a}} & \textbf{\textsf{PROJETO}: elaboração de projeto de extensão (diagnóstico, marco lógico).} \\
+\rowcolor{uefslight!70!white}
+\textbf{12} & \textbf{12\textsuperscript{a}} & \textbf{\textsf{MATERIAL DIDÁTICO}: cartilhas, vídeos, mídias digitais para ATER.} \\
+\bottomrule
+\end{tabularx}
+\end{small}
+
+\begin{tcolorbox}[uefsbox]
+\textbf{Estrutura geral:}\enspace Enc.\,01--06 → Políticas, Comunicação e Casos\enspace|\enspace Enc.\,07--10 → Fundamentos e Agroecologia\enspace|\enspace Enc.\,11--12 → Projetos e Materiais.
+\end{tcolorbox}
+
+
+\section*{Metodologia}
+
+A disciplina será desenvolvida ao longo de 12 encontros. As atividades combinarão exposição dialogada, leitura e discussão de textos, análise de casos práticos, dinâmicas de grupo, simulações de DRP (Diagnóstico Rural Participativo) e produção de materiais didáticos.
+
+Serão utilizados textos acadêmicos, documentos de políticas públicas (PNATER), relatos de experiências extensionistas e materiais audiovisuais. A disciplina enfatiza a práxis extensionista, articulando teoria e prática por meio de metodologias ativas e participativas, coerentes com os princípios pedagógicos freireanos.
+
+
+\begin{tcolorbox}[uefsbox, colframe=uefsaccent, colback=white, title={\bfseries\color{white}\scshape Avaliação}, fonttitle=\normalsize, coltitle=white, colbacktitle=uefsaccent, attach boxed title to top left={yshift=-2mm,xshift=2mm}, boxed title style={arc=2pt,boxrule=0pt}]
+\begin{itemize}[leftmargin=1.2em]
+\item 1\textsuperscript{a}\,Avaliação (Teórica\,--\,individual): fundamentos, pedagogia, políticas\,\dotfill\,\textbf{25\,\%}
+\item 2\textsuperscript{a}\,Avaliação (Prática\,--\,em grupo): exercício de DRP simulado\,\dotfill\,\textbf{25\,\%}
+\item 3\textsuperscript{a}\,Avaliação (Projeto\,--\,individual/grupo): projeto de extensão rural completo\,\dotfill\,\textbf{25\,\%}
+\item 4\textsuperscript{a}\,Avaliação (Produção\,--\,individual): material didático para ATER\,\dotfill\,\textbf{25\,\%}
+\end{itemize}
+\vspace{4pt}
+{\footnotesize Cada avaliação vale até 10,0 pontos. Média final = média aritmética simples.}
+\end{tcolorbox}
+
+
+
+\section*{Referências}
+
+\subsection*{Básica}
+
+\begin{small}
+\hangindent=1.5em\hangafter=1
+FREIRE, P. \textbf{Extensão ou comunicação?} 18.\,ed. Rio de Janeiro: Paz e Terra, 2017.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+BRASIL. \textbf{Política Nacional de Assistência Técnica e Extensão Rural (PNATER)}. Brasília: MDA, 2010.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+CAPORAL, F.\,R.; COSTABEBER, J.\,A. \textbf{Agroecologia e extensão rural}: contribuições para o desenvolvimento rural sustentável. Porto Alegre: EMATER/RS, 2004.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+FONSECA, M.\,T.\,L. \textbf{A extensão rural no Brasil}: um projeto educativo para o capital. São Paulo: Loyola, 1985.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+CALLOU, A.\,B.\,F. \textit{et al.} Extensão rural: estado da arte e novos desafios. \textit{Extensão Rural}, v.\,15, n.\,16, p.\,5--32, 2008.\par\medskip
+\end{small}
+
+\subsection*{Complementar}
+
+\begin{small}
+\hangindent=1.5em\hangafter=1
+ALVES, R. \textbf{Filosofia da ciência}: introdução ao jogo e a suas regras. São Paulo: Loyola, 2000.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+KUMMER, L. \textbf{Metodologia participativa no meio rural}: uma visão interdisciplinar. Salvador: GTNM-GTZ, 2007.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+OLIVEIRA, M.\,M. As circunstâncias da criação da extensão rural no Brasil. \textit{Cadernos de Ciência \& Tecnologia}, v.\,16, n.\,2, p.\,97--134, 1999.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+CHAMBERS, R. \textbf{Rural development}: putting the last first. London: Longman, 1983.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+GONÇALVES, L.\,C. \textbf{Extensão rural e conexões}. Lavras: UFLA, 2020.\par\medskip
+\end{small}
+
+
+
+\vfill
+
+\begin{center}
+\noindent\rule{6cm}{0.4pt}\\[6pt]
+\textbf{Prof.\,Dr.\,Luiz Diego Vidal Santos}\\
+Docente Responsável\\[4pt]
+{\small Feira de Santana\,--\,BA, fevereiro de 2026.}
+\end{center}
+
+\end{document}

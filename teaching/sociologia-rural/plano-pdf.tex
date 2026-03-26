@@ -1,0 +1,320 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{geometry}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[table]{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage[most]{tcolorbox}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{lastpage}
+
+\geometry{margin=2.2cm, top=2.8cm, bottom=2.5cm}
+\setlength{\headheight}{15pt}
+\renewcommand{\familydefault}{\sfdefault}
+
+% ── Paleta de cores ──
+\definecolor{uefsdark}{RGB}{0,51,102}
+\definecolor{uefsblue}{RGB}{25,84,150}
+\definecolor{uefslight}{RGB}{232,241,250}
+\definecolor{uefsgray}{RGB}{110,110,110}
+\definecolor{uefsaccent}{RGB}{180,60,40}
+
+% ── Seções ──
+\titleformat{\section}
+  {\normalfont\large\bfseries\color{uefsdark}\scshape}{}{0em}{}%%
+  [\vspace{2pt}{\color{uefsdark}\titlerule}]
+\titlespacing{\section}{0pt}{20pt}{8pt}
+
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\color{uefsblue}}{}{0em}{}
+\titlespacing{\subsection}{0pt}{12pt}{4pt}
+
+% ── Listas ──
+\setlist[itemize]{leftmargin=1.5em,topsep=4pt,itemsep=2pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=2em,topsep=4pt,itemsep=4pt,parsep=0pt}
+
+% ── tcolorbox ──
+\tcbset{
+  uefsbox/.style={
+    colback=uefslight, colframe=uefsdark,
+    boxrule=0.4pt, arc=3pt,
+    left=8pt, right=8pt, top=6pt, bottom=6pt,
+    fontupper=\small
+  },
+  ementabox/.style={
+    colback=white, colframe=uefsdark,
+    boxrule=0.8pt, arc=0pt,
+    left=10pt, right=10pt, top=8pt, bottom=8pt,
+    title={\scshape\bfseries Ementa},
+    fonttitle=\large\color{white},
+    coltitle=white, colbacktitle=uefsdark,
+    attach boxed title to top left={yshift=-2mm,xshift=2mm},
+    boxed title style={arc=2pt,boxrule=0pt}
+  }
+}
+
+
+
+% ── Cabeçalho / Rodapé ──
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{uefsdark}\leaders\hrule height \headrulewidth\hfill}}
+\fancyhead[L]{\small\color{uefsgray}UEFS\,--\,Sociologia Rural}
+\fancyhead[R]{\small\color{uefsgray}Plano de Ensino 2026.1}
+\fancyfoot[C]{\small\color{uefsgray}Página \thepage\ de \pageref{LastPage}}
+
+\hypersetup{colorlinks=true,linkcolor=uefsblue,urlcolor=uefsblue}
+
+
+\begin{document}
+
+\thispagestyle{empty}
+
+
+
+
+\begin{center}
+\color{uefsdark}\rule{\textwidth}{1.2pt}\\[0.30cm]
+\begin{minipage}{0.12\textwidth}
+\includegraphics[width=\linewidth]{../../aulas/assets/logo-uefs.png}
+\end{minipage}\hfill
+\begin{minipage}{0.84\textwidth}
+\begin{center}
+{\Large\bfseries UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA}\\[0.15cm]
+{\normalsize Departamento de Tecnologia\,(DTEC)}\\[0.06cm]
+{\normalsize Curso de Engenharia Agronômica}
+\end{center}
+\end{minipage}\\[0.30cm]
+\color{uefsdark}\rule{\textwidth}{1.2pt}
+\end{center}
+
+\vspace{0.6cm}
+
+\begin{center}
+{\LARGE\bfseries\color{uefsdark} Sociologia Rural}\\[0.30cm]
+{\large\bfseries Plano de Ensino\,--\,2026.1}
+\end{center}
+
+\vspace{0.4cm}
+
+% ── Identificação ──
+\begin{tcolorbox}[uefsbox]
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Carga Horária:} & 10 encontros \\
+\textbf{Horário:} & A definir \\
+\textbf{Período:} & 2026.1 \\
+\textbf{Modalidade:} & Presencial \\
+\textbf{Docente:} & Prof.\,Dr.\,Luiz Diego Vidal Santos \\
+\textbf{Contato:} & \href{mailto:ldvsantos@uefs.br}{ldvsantos@uefs.br}\enspace·\enspace\href{https://orcid.org/0000-0001-8659-8557}{ORCID: 0000-0001-8659-8557} \\
+\end{tabularx}
+\end{tcolorbox}
+
+\vspace{0.3cm}
+
+
+
+\begin{tcolorbox}[ementabox]
+Sociologia rural no Brasil: atores, temas e objetos de estudo; organização social da agricultura familiar; políticas públicas para o meio rural; novas ruralidades e multifuncionalidade da agricultura; paradigmas do desenvolvimento rural; capitalismo no campo e modernização conservadora; movimentos sociais do campo e reforma agrária; comunicação de massa e publicidade rural; direitos humanos no campo; diversidade étnico-racial e povos tradicionais.
+\end{tcolorbox}
+
+
+\section*{Objetivo Geral}
+
+Capacitar o(a) discente a compreender criticamente a estrutura social agrária brasileira, os processos de transformação do meio rural e as relações entre atores sociais, políticas públicas e dinâmicas produtivas, desenvolvendo visão humanística e comprometida com o desenvolvimento rural sustentável.
+
+\section*{Objetivos Específicos}
+
+\begin{enumerate}
+
+\item Compreender os fundamentos teóricos da sociologia rural e suas vertentes no contexto brasileiro.
+
+\item Analisar a organização social da agricultura familiar: lógicas, pluriatividade e reprodução social.
+
+\item Discutir as políticas públicas para o meio rural (PRONAF, PAA, PNAE) e seus impactos.
+
+\item Compreender as novas ruralidades, multifuncionalidade e processos de revalorização do campo.
+
+\item Analisar os paradigmas do desenvolvimento rural e suas implicações para a sustentabilidade.
+
+\item Discutir o capitalismo no campo, a modernização conservadora e os conflitos fundiários.
+
+\item Compreender os movimentos sociais do campo, a reforma agrária e os assentamentos rurais.
+
+\item Analisar a comunicação de massa, publicidade rural e questões de direitos humanos e diversidade.
+
+\end{enumerate}
+
+\section*{Habilidades e Competências}
+
+\begin{multicols}{2}
+
+\subsection*{Competências Conceituais}
+
+\begin{itemize}
+
+\item Analisar criticamente a realidade social do meio rural brasileiro
+
+\item Reconhecer a diversidade de atores e lógicas produtivas no campo
+
+\item Compreender processos históricos de transformação do espaço rural
+
+\end{itemize}
+
+\subsection*{Competências Analíticas}
+
+\begin{itemize}
+
+\item Avaliar políticas públicas e seus impactos sobre comunidades rurais
+
+\item Identificar conflitos fundiários e questões de justiça social
+
+\item Analisar representações do rural na mídia e comunicação de massa
+
+\end{itemize}
+
+\columnbreak
+
+\subsection*{Competências Humanísticas}
+
+\begin{itemize}
+
+\item Debater direitos humanos no campo com embasamento teórico
+
+\item Reconhecer e valorizar a diversidade étnico-racial e povos tradicionais
+
+\item Desenvolver postura ética e inclusiva na atuação profissional
+
+\end{itemize}
+
+\subsection*{Competências Profissionais}
+
+\begin{itemize}
+
+\item Articular saberes sociológicos na prática do(a) engenheiro(a) agrônomo(a)
+
+\item Dialogar com diferentes atores sociais do campo
+
+\item Contribuir para processos de desenvolvimento rural sustentável
+
+\end{itemize}
+
+\end{multicols}
+
+\section*{Significado do Componente para a Formação Profissional}
+
+O componente curricular \textit{Sociologia Rural} é essencial para a formação humanística e crítica do(a) engenheiro(a) agrônomo(a), por oferecer instrumentos teóricos e analíticos para compreender a complexidade social do mundo rural brasileiro. A atuação profissional no campo exige mais do que competência técnica --- demanda sensibilidade para as relações sociais, respeito à diversidade cultural e compromisso com a justiça social.
+
+A disciplina contribui para formar profissionais capazes de dialogar com diferentes atores sociais (agricultores familiares, povos tradicionais, movimentos sociais, agentes públicos), compreender os processos históricos de transformação do campo e avaliar criticamente as políticas e os modelos de desenvolvimento rural.
+
+\section*{Cronograma}
+
+
+\begin{small}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\textwidth}{@{}c c X@{}}
+\toprule
+\textbf{Enc.} & \textbf{Sem.} & \textbf{Tema} \\
+\midrule
+01 & 1\textsuperscript{a} & Sociologia Rural no Brasil: atores, temas, objetos e vertentes teóricas. \\
+02 & 2\textsuperscript{a} & Organização Social da Agricultura Familiar: lógicas, pluriatividade, estratégias. \\
+03 & 3\textsuperscript{a} & Políticas Públicas para o Meio Rural: PRONAF, PAA, PNAE, política fundiária. \\
+04 & 4\textsuperscript{a} & Novas Ruralidades: multifuncionalidade, turismo rural, agroecologia, patrimônio. \\
+05 & 5\textsuperscript{a} & Desenvolvimento Rural: paradigmas, desenvolvimento local, sustentabilidade. \\
+06 & 6\textsuperscript{a} & Capitalismo no Campo: modernização conservadora, agronegócio, conflitos. \\
+07 & 7\textsuperscript{a} & Movimentos Sociais do Campo: MST, Via Campesina, sindicalismo, lutas por terra. \\
+08 & 8\textsuperscript{a} & Comunicação de Massa e Publicidade Rural: rádio, TV, redes sociais, influência. \\
+09 & 9\textsuperscript{a} & Direitos Humanos no Campo: trabalho escravo, violência, acesso à terra. \\
+\rowcolor{uefslight!70!white}
+\textbf{10} & \textbf{10\textsuperscript{a}} & \textbf{\textsf{DIVERSIDADE}: povos indígenas, quilombolas, comunidades tradicionais.} \\
+\bottomrule
+\end{tabularx}
+\end{small}
+
+\begin{tcolorbox}[uefsbox]
+\textbf{Estrutura geral:}\enspace Enc.\,01--05 → Fundamentos, Agricultura Familiar e Desenvolvimento\enspace|\enspace Enc.\,06--10 → Conflitos, Movimentos Sociais e Diversidade.
+\end{tcolorbox}
+
+
+\section*{Metodologia}
+
+A disciplina será desenvolvida ao longo de 10 encontros. As atividades combinarão exposição dialogada, leitura e discussão de textos clássicos e contemporâneos, análise de documentários, debates estruturados, estudos de caso e seminários temáticos.
+
+A disciplina valoriza a participação ativa, o pensamento crítico e a construção coletiva do conhecimento. Os textos de referência serão disponibilizados em formato digital, e os debates serão orientados por roteiros de discussão e questões problematizadoras.
+
+
+\begin{tcolorbox}[uefsbox, colframe=uefsaccent, colback=white, title={\bfseries\color{white}\scshape Avaliação}, fonttitle=\normalsize, coltitle=white, colbacktitle=uefsaccent, attach boxed title to top left={yshift=-2mm,xshift=2mm}, boxed title style={arc=2pt,boxrule=0pt}]
+\begin{itemize}[leftmargin=1.2em]
+\item 1\textsuperscript{a}\,Avaliação (Teórica\,--\,individual): sociologia rural, agricultura familiar, políticas\,\dotfill\,\textbf{30\,\%}
+\item 2\textsuperscript{a}\,Avaliação (Seminário\,--\,em grupo): tema selecionado (capitalismo, movimentos, direitos)\,\dotfill\,\textbf{30\,\%}
+\item 3\textsuperscript{a}\,Avaliação (Ensaio Crítico\,--\,individual): reflexão articulando conteúdo e realidade local\,\dotfill\,\textbf{30\,\%}
+\item Avaliação Contínua: participação em debates e fichamentos\,\dotfill\,\textbf{10\,\%}
+\end{itemize}
+\vspace{4pt}
+{\footnotesize Cada avaliação vale até 10,0 pontos. Média final = média aritmética simples.}
+\end{tcolorbox}
+
+
+
+\section*{Referências}
+
+\subsection*{Básica}
+
+\begin{small}
+\hangindent=1.5em\hangafter=1
+WANDERLEY, M.\,N.\,B. \textbf{O mundo rural como espaço de vida}: reflexões sobre propriedade da terra, agricultura familiar e ruralidade. Porto Alegre: UFRGS, 2009.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+SCHNEIDER, S. \textbf{A pluriatividade na agricultura familiar}. 2.\,ed. Porto Alegre: UFRGS, 2009.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+ABRAMOVAY, R. \textbf{Paradigmas do capitalismo agrário em questão}. 3.\,ed. São Paulo: Edusp, 2007.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+MARTINS, J.\,S. \textbf{Os camponeses e a política no Brasil}. 5.\,ed. Petrópolis: Vozes, 1995.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+FERNANDES, B.\,M. \textbf{A formação do MST no Brasil}. Petrópolis: Vozes, 2000.\par\medskip
+\end{small}
+
+\subsection*{Complementar}
+
+\begin{small}
+\hangindent=1.5em\hangafter=1
+VEIGA, J.\,E. \textbf{O desenvolvimento agrícola}: uma visão histórica. 2.\,ed. São Paulo: Edusp, 2007.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+DELGADO, G.\,C. \textbf{Do capital financeiro na agricultura à economia do agronegócio}. Porto Alegre: UFRGS, 2012.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+PLOEG, J.\,D. van der. \textbf{Camponeses e impérios alimentares}. Porto Alegre: UFRGS, 2008.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+LITTLE, P.\,E. Territórios sociais e povos tradicionais no Brasil. \textit{Série Antropologia}, n.\,322. Brasília: UnB, 2002.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+CARNEIRO, M.\,J. \textbf{Ruralidades contemporâneas}. Rio de Janeiro: Mauad X/FAPERJ, 2012.\par\medskip
+\end{small}
+
+
+
+\vfill
+
+\begin{center}
+\noindent\rule{6cm}{0.4pt}\\[6pt]
+\textbf{Prof.\,Dr.\,Luiz Diego Vidal Santos}\\
+Docente Responsável\\[4pt]
+{\small Feira de Santana\,--\,BA, fevereiro de 2026.}
+\end{center}
+
+\end{document}

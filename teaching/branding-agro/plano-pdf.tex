@@ -1,0 +1,324 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{geometry}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[table]{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage[most]{tcolorbox}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{lastpage}
+
+\geometry{margin=2.2cm, top=2.8cm, bottom=2.5cm}
+\setlength{\headheight}{15pt}
+\renewcommand{\familydefault}{\sfdefault}
+
+% ── Paleta de cores ──
+\definecolor{uefsdark}{RGB}{0,51,102}
+\definecolor{uefsblue}{RGB}{25,84,150}
+\definecolor{uefslight}{RGB}{232,241,250}
+\definecolor{uefsgray}{RGB}{110,110,110}
+\definecolor{uefsaccent}{RGB}{180,60,40}
+
+% ── Seções ──
+\titleformat{\section}
+  {\normalfont\large\bfseries\color{uefsdark}\scshape}{}{0em}{}%%
+  [\vspace{2pt}{\color{uefsdark}\titlerule}]
+\titlespacing{\section}{0pt}{20pt}{8pt}
+
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\color{uefsblue}}{}{0em}{}
+\titlespacing{\subsection}{0pt}{12pt}{4pt}
+
+% ── Listas ──
+\setlist[itemize]{leftmargin=1.5em,topsep=4pt,itemsep=2pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=2em,topsep=4pt,itemsep=4pt,parsep=0pt}
+
+% ── tcolorbox ──
+\tcbset{
+  uefsbox/.style={
+    colback=uefslight, colframe=uefsdark,
+    boxrule=0.4pt, arc=3pt,
+    left=8pt, right=8pt, top=6pt, bottom=6pt,
+    fontupper=\small
+  },
+  ementabox/.style={
+    colback=white, colframe=uefsdark,
+    boxrule=0.8pt, arc=0pt,
+    left=10pt, right=10pt, top=8pt, bottom=8pt,
+    title={\scshape\bfseries Ementa},
+    fonttitle=\large\color{white},
+    coltitle=white, colbacktitle=uefsdark,
+    attach boxed title to top left={yshift=-2mm,xshift=2mm},
+    boxed title style={arc=2pt,boxrule=0pt}
+  }
+}
+
+
+
+% ── Cabeçalho / Rodapé ──
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{uefsdark}\leaders\hrule height \headrulewidth\hfill}}
+\fancyhead[L]{\small\color{uefsgray}UEFS\,--\,Branding no Agronegócio}
+\fancyhead[R]{\small\color{uefsgray}Plano de Ensino 2026.1}
+\fancyfoot[C]{\small\color{uefsgray}Página \thepage\ de \pageref{LastPage}}
+
+\hypersetup{colorlinks=true,linkcolor=uefsblue,urlcolor=uefsblue}
+
+
+\begin{document}
+
+\thispagestyle{empty}
+
+
+
+
+\begin{center}
+\color{uefsdark}\rule{\textwidth}{1.2pt}\\[0.30cm]
+\begin{minipage}{0.12\textwidth}
+\includegraphics[width=\linewidth]{../../aulas/assets/logo-uefs.png}
+\end{minipage}\hfill
+\begin{minipage}{0.84\textwidth}
+\begin{center}
+{\Large\bfseries UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA}\\[0.15cm]
+{\normalsize Departamento de Tecnologia\,(DTEC)}\\[0.06cm]
+{\normalsize Curso de Engenharia Agronômica}
+\end{center}
+\end{minipage}\\[0.30cm]
+\color{uefsdark}\rule{\textwidth}{1.2pt}
+\end{center}
+
+\vspace{0.6cm}
+
+\begin{center}
+{\LARGE\bfseries\color{uefsdark} Gestão de Branding no Agronegócio}\\[0.30cm]
+{\large\bfseries Plano de Ensino\,--\,2026.1}
+\end{center}
+
+\vspace{0.4cm}
+
+% ── Identificação ──
+\begin{tcolorbox}[uefsbox]
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Carga Horária:} & 14 encontros \\
+\textbf{Horário:} & A definir \\
+\textbf{Período:} & 2026.1 \\
+\textbf{Modalidade:} & Presencial \\
+\textbf{Docente:} & Prof.\,Dr.\,Luiz Diego Vidal Santos \\
+\textbf{Contato:} & \href{mailto:ldvsantos@uefs.br}{ldvsantos@uefs.br}\enspace·\enspace\href{https://orcid.org/0000-0001-8659-8557}{ORCID: 0000-0001-8659-8557} \\
+\end{tabularx}
+\end{tcolorbox}
+
+\vspace{0.3cm}
+
+
+
+\begin{tcolorbox}[ementabox]
+Transformações no mercado agropecuário e a necessidade de branding; conceito e evolução do branding; marca como ativo estratégico; branding para pequenos e médios produtores e agroindústrias; estratégia de diferenciação no agro; ideias diferenciadoras e suporte à diferenciação; benefícios como diferenciais de marca; estratégia de produtos e portfólio; público ideal e segmentação; branding B2B no agronegócio; posicionamento de marca; plataforma de marca (propósito, valores, personalidade, tom de voz, narrativa e mapa sensorial); cases de branding no agro brasileiro.
+\end{tcolorbox}
+
+
+\section*{Objetivo Geral}
+
+Capacitar o(a) discente a compreender e aplicar os fundamentos do branding ao contexto do agronegócio brasileiro, desenvolvendo competências para criar, gerenciar e posicionar marcas de produtos e serviços agropecuários, com foco em diferenciação, valor percebido e construção de identidade.
+
+\section*{Objetivos Específicos}
+
+\begin{enumerate}
+
+\item Compreender as transformações do mercado agropecuário e a crescente importância da gestão de marcas.
+
+\item Analisar o conceito de marca como ativo estratégico e os pilares do \textit{brand equity}.
+
+\item Desenvolver estratégias de diferenciação aplicadas ao agronegócio, identificando diferenciais competitivos reais.
+
+\item Construir plataformas de marca completas (propósito, valores, personalidade, tom de voz e narrativa).
+
+\item Aplicar técnicas de segmentação, definição de persona e mapeamento de jornada de compra.
+
+\item Compreender as especificidades do branding B2B no agronegócio (\textit{ingredient branding}, reputação institucional).
+
+\item Analisar criticamente cases reais de branding no agro brasileiro e propor soluções de marca.
+
+\end{enumerate}
+
+\section*{Habilidades e Competências}
+
+\begin{multicols}{2}
+
+\subsection*{Competências Estratégicas}
+
+\begin{itemize}
+
+\item Diagnosticar oportunidades de branding em empreendimentos agropecuários
+
+\item Construir plataformas de marca coerentes e diferenciadas
+
+\item Definir estratégias de posicionamento e comunicação para produtos do agro
+
+\end{itemize}
+
+\subsection*{Competências Analíticas}
+
+\begin{itemize}
+
+\item Elaborar arquiteturas de portfólio e extensões de linha
+
+\item Analisar criticamente cases de branding no agronegócio
+
+\item Avaliar brand equity e valor percebido de marcas agro
+
+\end{itemize}
+
+\columnbreak
+
+\subsection*{Competências Práticas}
+
+\begin{itemize}
+
+\item Construir personas e mapear jornadas de compra no agro
+
+\item Utilizar ferramentas (canvas, mapa perceptual) para posicionamento
+
+\item Desenvolver narrativas de marca autênticas e diferenciadoras
+
+\end{itemize}
+
+\subsection*{Competências Comunicativas}
+
+\begin{itemize}
+
+\item Comunicar propostas de marca com clareza técnica e visão de mercado
+
+\item Apresentar e defender projetos de marca com fundamentação estratégica
+
+\item Articular identidade visual, tom de voz e narrativa de forma integrada
+
+\end{itemize}
+
+\end{multicols}
+
+\section*{Significado do Componente para a Formação Profissional}
+
+O componente curricular \textit{Gestão de Branding no Agronegócio} contribui para a formação de profissionais capacitados a agregar valor a produtos e serviços do setor agropecuário por meio da gestão estratégica de marcas. Em um mercado cada vez mais competitivo e orientado por percepção de valor, a capacidade de diferenciar, posicionar e comunicar marcas é competência essencial para engenheiros(as) agrônomos(as), técnicos(as) em agronegócio e gestores(as) rurais.
+
+A disciplina prepara o(a) discente para atuar na interface entre produção e mercado, identificando oportunidades de branding em diferentes escalas (do produtor familiar a grandes agroindústrias), construindo narrativas de valor e contribuindo para a competitividade e sustentabilidade do agronegócio brasileiro.
+
+\section*{Cronograma}
+
+
+\begin{small}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\textwidth}{@{}c c X@{}}
+\toprule
+\textbf{Enc.} & \textbf{Sem.} & \textbf{Tema} \\
+\midrule
+01 & 1\textsuperscript{a} & Transformações no Mercado Agro: \textit{commodity} vs.\ marca, nova demanda. \\
+02 & 2\textsuperscript{a} & Introdução ao Branding: conceito, evolução e pilares fundamentais. \\
+03 & 3\textsuperscript{a} & Marca como Ativo Estratégico: \textit{brand equity}, valor percebido, proteção. \\
+04 & 4\textsuperscript{a} & Branding para PMEs do Agro: desafios específicos e caminhos práticos. \\
+05 & 5\textsuperscript{a} & Estratégia de Diferenciação: princípios, eixos e armadilhas. \\
+06 & 6\textsuperscript{a} & Ideias Diferenciadoras no Agro: \textit{terroir}, método, história, certificação. \\
+07 & 7\textsuperscript{a} & Suporte e Reforço da Diferenciação: evidências tangíveis e intangíveis. \\
+08 & 8\textsuperscript{a} & Benefícios como Diferenciais: funcionais, emocionais, sociais, autoexpressão. \\
+09 & 9\textsuperscript{a} & Estratégia de Produtos e Portfólio: arquitetura de marca e extensão de linha. \\
+10 & 10\textsuperscript{a} & Público Ideal no Agro: persona, segmentação e jornada de compra. \\
+11 & 11\textsuperscript{a} & Branding B2B no Agronegócio: \textit{ingredient branding}, confiança, reputação. \\
+12 & 12\textsuperscript{a} & Posicionamento de Marca: declaração, mapa perceptual, mensagens-chave. \\
+13 & 13\textsuperscript{a} & Plataforma de Marca: propósito, valores, personalidade, tom de voz, narrativa. \\
+\rowcolor{uefslight!70!white}
+\textbf{14} & \textbf{14\textsuperscript{a}} & \textbf{\textsf{CASES DE BRANDING}: análise crítica, padrões de sucesso, avaliação final.} \\
+\bottomrule
+\end{tabularx}
+\end{small}
+
+\begin{tcolorbox}[uefsbox]
+\textbf{Estrutura geral:}\enspace Enc.\,01--04 → Fundamentos de Branding\enspace|\enspace Enc.\,05--08 → Diferenciação\enspace|\enspace Enc.\,09--13 → Estratégia e Plataforma\enspace|\enspace Enc.\,14 → Cases e Avaliação.
+\end{tcolorbox}
+
+
+\section*{Metodologia}
+
+A disciplina será desenvolvida ao longo de 14 encontros. Cada aula combinará exposição dialogada dos fundamentos conceituais com atividades práticas e exercícios de construção progressiva de marca.
+
+As aulas teóricas utilizarão casos reais do agronegócio brasileiro e internacional como fio condutor, estimulando a análise crítica e a reflexão sobre estratégias de branding. Materiais complementares (artigos, vídeos, guias setoriais) serão disponibilizados em formato digital.
+
+As atividades práticas incluirão exercícios individuais e em grupo de construção de marca, análise de concorrência, definição de persona, elaboração de plataforma de marca e simulações de posicionamento. Ao longo do semestre, cada aluno(a) desenvolverá progressivamente a marca de um produto ou empreendimento agropecuário.
+
+
+\begin{tcolorbox}[uefsbox, colframe=uefsaccent, colback=white, title={\bfseries\color{white}\scshape Avaliação}, fonttitle=\normalsize, coltitle=white, colbacktitle=uefsaccent, attach boxed title to top left={yshift=-2mm,xshift=2mm}, boxed title style={arc=2pt,boxrule=0pt}]
+\begin{itemize}[leftmargin=1.2em]
+\item 1\textsuperscript{a}\,Avaliação (Teórica\,--\,individual): fundamentos, marca como ativo, diferenciação\,\dotfill\,\textbf{25\,\%}
+\item 2\textsuperscript{a}\,Avaliação (Prática\,--\,individual): entrega parcial do projeto de marca\,\dotfill\,\textbf{25\,\%}
+\item 3\textsuperscript{a}\,Avaliação (Teórica\,--\,individual): B2B, portfólio, plataforma e cases\,\dotfill\,\textbf{25\,\%}
+\item 4\textsuperscript{a}\,Avaliação (Projeto Final\,--\,individual): plataforma de marca completa\,\dotfill\,\textbf{25\,\%}
+\end{itemize}
+\vspace{4pt}
+{\footnotesize Cada avaliação vale até 10,0 pontos. Média final = média aritmética simples.}
+\end{tcolorbox}
+
+
+
+\section*{Referências}
+
+\subsection*{Básica}
+
+\begin{small}
+\hangindent=1.5em\hangafter=1
+AAKER, D.\,A. \textbf{Construindo marcas fortes}. Porto Alegre: Bookman, 2007.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+KELLER, K.\,L. \textbf{Gestão estratégica de marcas}. 3.\,ed. São Paulo: Pearson, 2006.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+TROUT, J.; RIVKIN, S. \textbf{Diferenciar ou morrer}: sobrevivendo em nossa era de competição mortal. São Paulo: Futura, 2000.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+RIES, A.; TROUT, J. \textbf{Posicionamento}: a batalha por sua mente. São Paulo: M.\,Books, 2009.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+SEBRAE. \textbf{Marca no Agronegócio}: guia prático para produtores rurais. Brasília: SEBRAE, 2022.\par\medskip
+\end{small}
+
+\subsection*{Complementar}
+
+\begin{small}
+\hangindent=1.5em\hangafter=1
+KOTLER, P.; KELLER, K.\,L. \textbf{Administração de marketing}. 15.\,ed. São Paulo: Pearson, 2018.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+WHEELER, A. \textbf{Design de identidade da marca}: guia essencial para toda a equipe de gestão de marcas. 5.\,ed. Porto Alegre: Bookman, 2019.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+CNA. \textbf{Panorama do Agronegócio Brasileiro}. Brasília: Confederação da Agricultura e Pecuária do Brasil.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+EMBRAPA. \textbf{Publicações sobre inovação, tecnologia e mercado agropecuário}. Brasília: EMBRAPA.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+MAPA. \textbf{Indicações geográficas e selos de qualidade}. Brasília: Ministério da Agricultura.\par\medskip
+\end{small}
+
+
+
+\vfill
+
+\begin{center}
+\noindent\rule{6cm}{0.4pt}\\[6pt]
+\textbf{Prof.\,Dr.\,Luiz Diego Vidal Santos}\\
+Docente Responsável\\[4pt]
+{\small Feira de Santana\,--\,BA, fevereiro de 2026.}
+\end{center}
+
+\end{document}

@@ -1,0 +1,314 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{geometry}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[table]{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage[most]{tcolorbox}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{lastpage}
+
+\geometry{margin=2.2cm, top=2.8cm, bottom=2.5cm}
+\setlength{\headheight}{15pt}
+\renewcommand{\familydefault}{\sfdefault}
+
+% ── Paleta de cores ──
+\definecolor{uefsdark}{RGB}{0,51,102}
+\definecolor{uefsblue}{RGB}{25,84,150}
+\definecolor{uefslight}{RGB}{232,241,250}
+\definecolor{uefsgray}{RGB}{110,110,110}
+\definecolor{uefsaccent}{RGB}{180,60,40}
+
+% ── Seções ──
+\titleformat{\section}
+  {\normalfont\large\bfseries\color{uefsdark}\scshape}{}{0em}{}%%
+  [\vspace{2pt}{\color{uefsdark}\titlerule}]
+\titlespacing{\section}{0pt}{20pt}{8pt}
+
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\color{uefsblue}}{}{0em}{}
+\titlespacing{\subsection}{0pt}{12pt}{4pt}
+
+% ── Listas ──
+\setlist[itemize]{leftmargin=1.5em,topsep=4pt,itemsep=2pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=2em,topsep=4pt,itemsep=4pt,parsep=0pt}
+
+% ── tcolorbox ──
+\tcbset{
+  uefsbox/.style={
+    colback=uefslight, colframe=uefsdark,
+    boxrule=0.4pt, arc=3pt,
+    left=8pt, right=8pt, top=6pt, bottom=6pt,
+    fontupper=\small
+  },
+  ementabox/.style={
+    colback=white, colframe=uefsdark,
+    boxrule=0.8pt, arc=0pt,
+    left=10pt, right=10pt, top=8pt, bottom=8pt,
+    title={\scshape\bfseries Ementa},
+    fonttitle=\large\color{white},
+    coltitle=white, colbacktitle=uefsdark,
+    attach boxed title to top left={yshift=-2mm,xshift=2mm},
+    boxed title style={arc=2pt,boxrule=0pt}
+  }
+}
+
+
+
+% ── Cabeçalho / Rodapé ──
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{uefsdark}\leaders\hrule height \headrulewidth\hfill}}
+\fancyhead[L]{\small\color{uefsgray}UNIVASF\,--\,Geotecnologias e SIG}
+\fancyhead[R]{\small\color{uefsgray}Plano de Ensino 2026.1}
+\fancyfoot[C]{\small\color{uefsgray}Página \thepage\ de \pageref{LastPage}}
+
+\hypersetup{colorlinks=true,linkcolor=uefsblue,urlcolor=uefsblue}
+
+
+\begin{document}
+
+\thispagestyle{empty}
+
+
+
+
+\begin{center}
+\color{uefsdark}\rule{\textwidth}{1.2pt}\\[0.30cm]
+{\Large\bfseries UNIVERSIDADE FEDERAL DO VALE DO SÃO FRANCISCO}\\[0.15cm]
+{\normalsize Colegiado de Geografia}\\[0.06cm]
+{\normalsize }\\[0.30cm]
+\color{uefsdark}\rule{\textwidth}{1.2pt}
+\end{center}
+
+\vspace{0.6cm}
+
+\begin{center}
+{\LARGE\bfseries\color{uefsdark} Geotecnologias e SIG}\\[0.30cm]
+{\large\bfseries Plano de Ensino\,--\,2026.1}
+\end{center}
+
+\vspace{0.4cm}
+
+% ── Identificação ──
+\begin{tcolorbox}[uefsbox]
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Carga Horária:} & 11 encontros \\
+\textbf{Horário:} & A definir \\
+\textbf{Período:} & 2026.1 \\
+\textbf{Modalidade:} & Presencial \\
+\textbf{Docente:} & Prof.\,Dr.\,Luiz Diego Vidal Santos \\
+\textbf{Contato:} & \href{mailto:ldvsantos@uefs.br}{ldvsantos@uefs.br}\enspace·\enspace\href{https://orcid.org/0000-0001-8659-8557}{ORCID: 0000-0001-8659-8557} \\
+\end{tabularx}
+\end{tcolorbox}
+
+\vspace{0.3cm}
+
+
+
+\begin{tcolorbox}[ementabox]
+Fundamentos do geoprocessamento e análise espacial; estruturas de dados; análise de incerteza e acurácia; geotecnologias aplicadas a recursos hídricos e seca; SIG na exploração de recursos minerais; intemperismo, erosão e formação de solos; degradação, desertificação e mudanças climáticas; recursos hídricos e gestão por bacia hidrográfica; monitoramento hidrológico; impactos ambientais da mineração; sensoriamento remoto e mudanças de cobertura vegetal; inteligência artificial e qualidade da pesquisa ambiental (princípios FAIR).
+\end{tcolorbox}
+
+
+\section*{Objetivo Geral}
+
+Capacitar o(a) discente a aplicar geotecnologias (SIG, sensoriamento remoto, modelagem espacial e inteligência artificial) na análise, monitoramento e gestão de recursos naturais, com ênfase em rigor metodológico, validação de resultados e suporte à tomada de decisão.
+
+\section*{Objetivos Específicos}
+
+\begin{enumerate}
+
+\item Dominar os fundamentos do geoprocessamento, incluindo estruturas de dados vetoriais e matriciais.
+
+\item Avaliar incerteza e acurácia em produtos de classificação (matriz de confusão, Kappa, validação espacial).
+
+\item Aplicar geotecnologias ao monitoramento de recursos hídricos, seca e evapotranspiração.
+
+\item Utilizar análise multicriterial (AHP, Fuzzy) em SIG para exploração mineral e tomada de decisão.
+
+\item Analisar processos de intemperismo, erosão, formação e degradação de solos com geotecnologias.
+
+\item Delimitar e caracterizar bacias hidrográficas com análise morfométrica.
+
+\item Aplicar sensoriamento remoto na detecção de mudanças de cobertura vegetal.
+
+\item Utilizar aprendizado de máquina com validação espacialmente robusta e princípios FAIR.
+
+\end{enumerate}
+
+\section*{Habilidades e Competências}
+
+\begin{multicols}{2}
+
+\subsection*{Competências Técnicas}
+
+\begin{itemize}
+
+\item Dominar geoprocessamento e análise espacial em plataformas livres (QGIS, GEE)
+
+\item Avaliar qualidade e incerteza de produtos cartográficos
+
+\item Integrar múltiplas fontes de dados espaciais (satelitais, censitários, hidrológicos)
+
+\end{itemize}
+
+\subsection*{Competências Analíticas}
+
+\begin{itemize}
+
+\item Realizar análises multicriteriais e detecção de mudanças
+
+\item Aplicar métodos de ML com validação espacialmente robusta
+
+\item Interpretar indicadores ambientais e séries temporais
+
+\end{itemize}
+
+\columnbreak
+
+\subsection*{Competências Ambientais}
+
+\begin{itemize}
+
+\item Monitorar recursos hídricos e processos de degradação
+
+\item Analisar impactos da mineração com geoprocessamento
+
+\item Avaliar mudanças de cobertura vegetal e métricas de paisagem
+
+\end{itemize}
+
+\subsection*{Competências Profissionais}
+
+\begin{itemize}
+
+\item Elaborar produtos técnicos reprodutíveis (mapas, relatórios, scripts)
+
+\item Aplicar princípios FAIR e ciência aberta na pesquisa ambiental
+
+\item Subsidiar políticas públicas de gestão territorial
+
+\end{itemize}
+
+\end{multicols}
+
+\section*{Significado do Componente para a Formação Profissional}
+
+O componente curricular \textit{Geotecnologias e SIG} é estruturante para a formação de profissionais de Geografia e áreas afins, por fornecer competências em análise espacial, sensoriamento remoto e modelagem ambiental indispensáveis ao diagnóstico, monitoramento e gestão do território. O domínio de geotecnologias é exigência crescente em licenciamentos, auditorias ambientais, planejamento urbano e regional, gestão de recursos hídricos e minerais.
+
+A ênfase em plataformas livres (QGIS, Google Earth Engine), inteligência artificial aplicada e princípios de ciência aberta (FAIR, reprodutibilidade) prepara o(a) egresso(a) para atuar em órgãos públicos, empresas de consultoria, institutos de pesquisa e organizações ambientais.
+
+\section*{Cronograma}
+
+
+\begin{small}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\textwidth}{@{}c c X@{}}
+\toprule
+\textbf{Enc.} & \textbf{Sem.} & \textbf{Tema} \\
+\midrule
+01 & 1\textsuperscript{a} & Incerteza e Acurácia: matriz de confusão, Kappa, validação espacial. \\
+02 & 2\textsuperscript{a} & Fundamentos do Geoprocessamento: estruturas vetorial/matricial, operações espaciais. \\
+03 & 3\textsuperscript{a} & Geotecnologias e Recursos Hídricos: evapotranspiração, índices de seca, SR hidrológico. \\
+04 & 4\textsuperscript{a} & SIG na Exploração Mineral: análise multicriterial, AHP, tomada de decisão. \\
+05 & 5\textsuperscript{a} & Intemperismo, Erosão e Solos: processos pedogenéticos, RUSLE, SiBCS. \\
+06 & 6\textsuperscript{a} & Degradação, Desertificação e Clima: indicadores espaciais, monitoramento. \\
+07 & 7\textsuperscript{a} & Recursos Hídricos e Bacia Hidrográfica: delimitação, morfometria, Lei 9.433/97. \\
+08 & 8\textsuperscript{a} & Monitoramento Hidrológico: telemetria IoT, altimetria radar, modelos. \\
+09 & 9\textsuperscript{a} & Geoprocessamento na Mineração: DInSAR, NDVI, licenciamento, auditoria. \\
+10 & 10\textsuperscript{a} & SR e Cobertura Vegetal: NDVI/EVI, classificadores RF/SVM/U-Net, BFAST. \\
+\rowcolor{uefslight!70!white}
+\textbf{11} & \textbf{11\textsuperscript{a}} & \textbf{\textsf{IA e Qualidade}: ML, SHAP/LIME, princípios FAIR, Green AI, ética.} \\
+\bottomrule
+\end{tabularx}
+\end{small}
+
+\begin{tcolorbox}[uefsbox]
+\textbf{Estrutura geral:}\enspace Enc.\,01--02 → Fundamentos\enspace|\enspace Enc.\,03--06 → Recursos Naturais e Solos\enspace|\enspace Enc.\,07--09 → Hidrologia e Mineração\enspace|\enspace Enc.\,10--11 → SR, IA e Ciência Aberta.
+\end{tcolorbox}
+
+
+\section*{Metodologia}
+
+A disciplina será desenvolvida ao longo de 11 encontros. As atividades combinarão exposição dialogada dos fundamentos teóricos com sessões práticas em ambiente computacional (QGIS, Google Earth Engine e R).
+
+Cada encontro articulará uma dimensão conceitual (fundamentos, pressupostos e critérios) com uma dimensão aplicada (exercícios com dados reais, produção de mapas e relatórios). A disciplina enfatiza o rigor metodológico, a reprodutibilidade dos procedimentos e a interpretação crítica dos resultados.
+
+
+\begin{tcolorbox}[uefsbox, colframe=uefsaccent, colback=white, title={\bfseries\color{white}\scshape Avaliação}, fonttitle=\normalsize, coltitle=white, colbacktitle=uefsaccent, attach boxed title to top left={yshift=-2mm,xshift=2mm}, boxed title style={arc=2pt,boxrule=0pt}]
+\begin{itemize}[leftmargin=1.2em]
+\item 1\textsuperscript{a}\,Avaliação (Teórica\,I\,--\,individual): fundamentos, incerteza, recursos hídricos, solos\,\dotfill\,\textbf{25\,\%}
+\item 2\textsuperscript{a}\,Avaliação (Prática\,--\,individual/dupla): mapa temático + relatório técnico\,\dotfill\,\textbf{25\,\%}
+\item 3\textsuperscript{a}\,Avaliação (Teórica\,II\,--\,individual): bacias, SR, detecção de mudanças, IA\,\dotfill\,\textbf{25\,\%}
+\item 4\textsuperscript{a}\,Avaliação (Projeto Final\,--\,individual/grupo): análise integrada reprodutível\,\dotfill\,\textbf{25\,\%}
+\end{itemize}
+\vspace{4pt}
+{\footnotesize Cada avaliação vale até 10,0 pontos. Média final = média aritmética simples.}
+\end{tcolorbox}
+
+
+
+\section*{Referências}
+
+\subsection*{Básica}
+
+\begin{small}
+\hangindent=1.5em\hangafter=1
+CÂMARA, G. \textit{et al.} \textbf{Anatomia de Sistemas de Informação Geográfica}. São José dos Campos: INPE, 2004.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+NOVO, E.\,M.\,L.\,M. \textbf{Sensoriamento remoto}: princípios e aplicações. 4.\,ed. São Paulo: Blucher, 2008.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+ROSA, R.; BRITO, J.\,L.\,S. \textbf{Introdução ao geoprocessamento}. Uberlândia: UFU, 1996.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+TUCCI, C.\,E.\,M. \textbf{Hidrologia}: ciência e aplicação. 4.\,ed. Porto Alegre: ABRH/UFRGS, 2002.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+ALLEN, R.\,G. \textit{et al.} \textbf{Crop evapotranspiration}. FAO Irrigation and Drainage Paper 56. Rome: FAO, 1998.\par\medskip
+\end{small}
+
+\subsection*{Complementar}
+
+\begin{small}
+\hangindent=1.5em\hangafter=1
+EMBRAPA. \textbf{Sistema Brasileiro de Classificação de Solos}. 5.\,ed. Brasília: Embrapa, 2018.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+BRASIL. \textbf{Lei nº 9.433, de 8 de janeiro de 1997}. Política Nacional de Recursos Hídricos. Brasília, 1997.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+REICHSTEIN, M. \textit{et al.} Deep learning and process understanding for data-driven Earth system science. \textit{Nature}, v.\,566, p.\,195--204, 2019.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+WILKINSON, M.\,D. \textit{et al.} The FAIR Guiding Principles. \textit{Scientific Data}, v.\,3, 160018, 2016.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+SCHWARTZ, R. \textit{et al.} Green AI. \textit{Communications of the ACM}, v.\,63, n.\,12, p.\,54--63, 2020.\par\medskip
+\end{small}
+
+
+
+\vfill
+
+\begin{center}
+\noindent\rule{6cm}{0.4pt}\\[6pt]
+\textbf{Prof.\,Dr.\,Luiz Diego Vidal Santos}\\
+Docente Responsável\\[4pt]
+{\small Feira de Santana\,--\,BA, fevereiro de 2026.}
+\end{center}
+
+\end{document}
