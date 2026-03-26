@@ -85,10 +85,10 @@ digraph {
     node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, margin="0.3,0.15", penwidth=0.8]
     edge [color="#555555", penwidth=1.2]
 
-    A [label="Região Biogeográfica\n($10^6$ ha, $10^3$ anos)", fillcolor="#1B5E20", fontcolor="white", color="#0D3310"]
-    B [label="Paisagem\n($10^3$–$10^5$ ha, $10^1$–$10^2$ anos)", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20"]
-    C [label="Ecossistema\n($10^1$–$10^3$ ha, $10^0$–$10^1$ anos)", fillcolor="#43A047", fontcolor="white", color="#2E7D32"]
-    D [label="Comunidade/População\n(10⁻¹–$10^1$ ha, 10⁻¹–$10^0$ anos)", fillcolor="#66BB6A", fontcolor="white", color="#43A047"]
+    A [label="Região Biogeográfica\n(10⁶ ha, 10³ anos)", fillcolor="#1B5E20", fontcolor="white", color="#0D3310"]
+    B [label="Paisagem\n(10³–10⁵ ha, 10¹–10² anos)", fillcolor="#2E7D32", fontcolor="white", color="#1B5E20"]
+    C [label="Ecossistema\n(10¹–10³ ha, 10⁰–10¹ anos)", fillcolor="#43A047", fontcolor="white", color="#2E7D32"]
+    D [label="Comunidade/População\n(10⁻¹–10¹ ha, 10⁻¹–10⁰ anos)", fillcolor="#66BB6A", fontcolor="white", color="#43A047"]
 
     A -> B
     B -> C
