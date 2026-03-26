@@ -1,0 +1,305 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{geometry}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[table]{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage[most]{tcolorbox}
+\usepackage{multicol}
+\usepackage{ragged2e}
+
+\geometry{margin=2.2cm, top=2.5cm, bottom=2.5cm}
+\renewcommand{\familydefault}{\sfdefault}
+
+% ── Paleta de cores ──
+\definecolor{uefsdark}{RGB}{0,51,102}
+\definecolor{uefsblue}{RGB}{25,84,150}
+\definecolor{uefslight}{RGB}{232,241,250}
+\definecolor{uefsgray}{RGB}{110,110,110}
+\definecolor{uefsaccent}{RGB}{180,60,40}
+
+% ── Seções ──
+\titleformat{\section}
+  {\normalfont\large\bfseries\color{uefsdark}\scshape}{}{0em}{}%
+  [\vspace{2pt}{\color{uefsdark}\titlerule}]
+\titlespacing{\section}{0pt}{20pt}{8pt}
+
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\color{uefsblue}}{}{0em}{}
+\titlespacing{\subsection}{0pt}{12pt}{4pt}
+
+% ── Listas ──
+\setlist[itemize]{leftmargin=1.5em,topsep=4pt,itemsep=2pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=2em,topsep=4pt,itemsep=4pt,parsep=0pt}
+
+% ── tcolorbox ──
+\tcbset{
+  uefsbox/.style={
+    colback=uefslight, colframe=uefsdark,
+    boxrule=0.4pt, arc=3pt,
+    left=8pt, right=8pt, top=6pt, bottom=6pt,
+    fontupper=\small
+  },
+  ementabox/.style={
+    colback=white, colframe=uefsdark,
+    boxrule=0.8pt, arc=0pt,
+    left=10pt, right=10pt, top=8pt, bottom=8pt,
+    title={\scshape\bfseries Ementa},
+    fonttitle=\large\color{white},
+    coltitle=white, colbacktitle=uefsdark,
+    attach boxed title to top left={yshift=-2mm,xshift=2mm},
+    boxed title style={arc=2pt,boxrule=0pt}
+  }
+}
+
+% ── Cabeçalho / Rodapé ──
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{uefsdark}\leaders\hrule height \headrulewidth\hfill}}
+\fancyhead[L]{\small\color{uefsgray}UEFS\,--\,PLANTERR}
+\fancyhead[R]{\small\color{uefsgray}PLA001\,--\,Plano de Ensino 2026.1}
+\fancyfoot[C]{\small\color{uefsgray}\thepage}
+
+\hypersetup{colorlinks=true,linkcolor=uefsblue,urlcolor=uefsblue}
+
+% ══════════════════════════════════════════════════════════
+\begin{document}
+\thispagestyle{empty}
+
+% ── Capa / Cabeçalho institucional ──
+\begin{center}
+\color{uefsdark}\rule{\textwidth}{1.2pt}\\[0.35cm]
+{\Large\bfseries UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA}\\[0.20cm]
+{\normalsize Departamento de Ciências Humanas e Filosofia}\\[0.08cm]
+{\normalsize Programa de Pós-Graduação em Planejamento Territorial\,--\,PLANTERR}\\[0.20cm]
+\color{uefsdark}\rule{\textwidth}{1.2pt}
+\end{center}
+
+\vspace{0.8cm}
+
+\begin{center}
+{\LARGE\bfseries\color{uefsdark} PLA001\,--\,Métodos e Técnicas para Elaboração de\\Projetos de Pesquisa e Intervenção}\\[0.35cm]
+{\large (Teórica-Prática\,--\,01)}\\[0.60cm]
+{\Large\bfseries Plano de Ensino\,--\,2026.1}\\[0.30cm]
+{\normalsize 15 encontros\,$\times$\,4\,h\enspace|\enspace Quintas-feiras\enspace|\enspace 07h30\,--\,11h30}\\[0.80cm]
+{\normalsize\textbf{Professores:} Prof.\,Dr.\,Luiz Diego Vidal \enspace\&\enspace Prof.\,Dr.\,Danilo Uzeda da Cruz}
+\end{center}
+
+\vspace{0.6cm}
+
+% ══════════════════════════════════════════════════════════
+\section*{Objetivo Geral}
+
+Capacitar os discentes do Mestrado Profissional em Planejamento Territorial na elaboração, condução e avaliação de projetos de pesquisa e intervenção territorial, integrando fundamentos epistemológicos, metodologias qualitativas e quantitativas, e práticas participativas para o diagnóstico e a transformação de realidades socioambientais complexas.
+
+% ══════════════════════════════════════════════════════════
+\section*{Objetivos Específicos}
+
+\begin{enumerate}
+\item Compreender os fundamentos epistemológicos da pesquisa científica e sua aplicação ao planejamento territorial, reconhecendo diferentes paradigmas metodológicos e suas implicações éticas e políticas.
+\item Distinguir projetos de pesquisa acadêmica e projetos de intervenção social, identificando suas especificidades metodológicas, desafios operacionais e contribuições para a transformação territorial.
+\item Formular problemas de pesquisa e questões de intervenção territorialmente contextualizados, alinhados a demandas sociais e ambientais concretas.
+\item Aplicar metodologias qualitativas (entrevistas, diagnóstico participativo, caminhada transversal, cartografia social) na construção de diagnósticos territoriais participativos e culturalmente sensíveis.
+\item Utilizar métodos quantitativos (estatística descritiva e inferencial, testes de hipóteses, análise de correlação e regressão) para análise de dados ambientais e territoriais.
+\item Integrar abordagens qualitativas e quantitativas em desenhos de pesquisa mistos, potencializando a compreensão de fenômenos territoriais complexos.
+\item Planejar, executar e sistematizar atividades de campo em contextos reais de intervenção territorial, articulando teoria e prática.
+\item Avaliar criticamente projetos de políticas públicas e intervenções territoriais quanto à sua fundamentação metodológica, coerência interna e impactos socioambientais.
+\item Desenvolver postura ética, reflexiva e crítica diante dos dilemas da pesquisa aplicada e da intervenção social em contextos de desigualdade e conflito socioambiental.
+\item Comunicar resultados de pesquisa de forma clara, rigorosa e acessível a diferentes públicos (acadêmico, técnico, comunitário, gestor público).
+\end{enumerate}
+
+% ══════════════════════════════════════════════════════════
+\section*{Programa do Componente Curricular}
+
+\subsection*{Unidade\,I\,--\,Fundamentos da Pesquisa Aplicada ao Planejamento Territorial\enspace{\normalfont\small(Enc.\,01--08)}}
+\begin{itemize}
+\item Pesquisa científica: princípios epistemológicos, etapas e importância
+\item Projetos de intervenção e ciências sociais: metodologias e dilemas éticos
+\item Produção do conhecimento e transformação social
+\item Método científico e intervenção territorial
+\item Análise de projetos em políticas sociais, gestão governamental e política ambiental
+\end{itemize}
+
+\subsection*{Unidade\,II\,--\,Metodologias de Pesquisa e Análise de Dados Territoriais\enspace{\normalfont\small(Enc.\,09--15)}}
+\begin{itemize}
+\item Metodologias qualitativas: entrevistas, diagnóstico participativo, caminhada transversal e cartografia social
+\item Metodologias quantitativas: estatística descritiva, medidas de tendência central, inferência estatística, correlação, regressão e testes de hipóteses aplicados a dados ambientais
+\item Pesquisa de campo: planejamento, execução e sistematização de dados primários
+\item Integração quali-quantitativa na análise territorial
+\end{itemize}
+
+% ══════════════════════════════════════════════════════════
+\section*{Significado do Componente para a Formação Profissional}
+
+A disciplina constitui um componente estratégico para a formação de profissionais no Mestrado Profissional em Planejamento Territorial, atendendo às demandas contemporâneas por abordagens integradas, baseadas em evidências e comprometidas com a sustentabilidade socioambiental.
+
+\subsection*{Relevância para o Planejamento Territorial Contemporâneo}
+O planejamento territorial enfrenta desafios cada vez mais complexos, que demandam capacidade analítica para integrar múltiplas dimensões (ambiental, social, econômica, institucional) e escalas (local, regional, nacional). Esta disciplina fornece instrumentos metodológicos essenciais para que profissionais possam: (i)~diagnosticar problemas territoriais de forma rigorosa e sistemática, (ii)~fundamentar decisões em dados empíricos confiáveis, (iii)~avaliar impactos de políticas e projetos, e (iv)~comunicar resultados de forma transparente e acessível.
+
+\subsection*{Articulação entre Teoria e Prática}
+Ao combinar fundamentos epistemológicos com metodologias aplicadas e práticas de campo, a disciplina prepara profissionais para atuar na interface entre academia, gestão pública e organizações da sociedade civil. A ênfase em metodologias participativas reflete a crescente valorização do protagonismo comunitário e dos saberes locais nos processos de planejamento, alinhando-se aos princípios da gestão democrática do território.
+
+\subsection*{Competências para Atuação Profissional}
+O domínio de métodos qualitativos e quantitativos de análise de dados ambientais é cada vez mais exigido em concursos públicos, processos seletivos de organizações não governamentais e consultoria técnica especializada. Profissionais capazes de conduzir diagnósticos territoriais, avaliar políticas públicas e propor intervenções baseadas em evidências possuem diferencial competitivo significativo no mercado de trabalho.
+
+\subsection*{Contribuição para a Dimensão Ambiental do Planejamento}
+Em contexto de crise climática, perda de biodiversidade e agudização de conflitos socioambientais, a capacidade de analisar dados ambientais de forma crítica e contextualizada é indispensável. Esta disciplina capacita profissionais a interpretar indicadores de qualidade ambiental, avaliar impactos de intervenções territoriais e propor soluções que conciliem desenvolvimento socioeconômico e conservação ambiental.
+
+\subsection*{Ética e Responsabilidade Social}
+A disciplina promove reflexão crítica sobre dilemas éticos e políticos da pesquisa aplicada, formando profissionais conscientes de sua responsabilidade social e comprometidos com processos de planejamento territorial justos, inclusivos e ambientalmente sustentáveis.
+
+% ══════════════════════════════════════════════════════════
+\section*{Cronograma}
+
+\begin{small}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\textwidth}{@{}c c X@{}}
+\toprule
+\textbf{Enc.} & \textbf{Data} & \textbf{Tema} \\
+\midrule
+01 & 12/03\,(Qui) & Apresentação do curso \\
+02 & 19/03\,(Qui) & Pesquisa científica: princípios, etapas e importância\,(I) \\
+03 & 26/03\,(Qui) & Pesquisa científica: princípios, etapas e importância\,(II) \\
+04 & 02/04\,(Qui) & Projetos de intervenção e as ciências sociais: metodologias e dilemas \\
+05 & 09/04\,(Qui) & O problema de pesquisa em um projeto de intervenção social -- Produção do conhecimento humano $\times$ conhecimento como fator de (re)produção na sociedade \\
+06 & 16/04\,(Qui) & O método científico e a intervenção social: o que é um projeto de intervenção social? \\
+\rowcolor{uefslight}
+   & \textit{21/04\,(Ter)} & \textit{Feriado -- Tiradentes (não afeta quintas)} \\
+07 & 23/04\,(Qui) & Seminário\,A -- Projetos: Bloco\,1 (Políticas Sociais) \\
+08 & 30/04\,(Qui) & Seminário\,B -- Projetos: Bloco\,2 (Gestão Governamental) \\
+09 & 07/05\,(Qui) & Metodologias qualitativas: entrevista estruturada, semiestruturada e aberta; Diagnóstico Participativo e caminhada transversal; Cartografia social (Proj.\,Quilombo Legal) \\
+10 & 14/05\,(Qui) & Seminário\,C -- Projetos: Bloco\,3 (Política Ambiental) \\
+11 & 21/05\,(Qui) & Metodologias Quantitativas\,I: introdução à estatística, tipos de variáveis, estatística descritiva e medidas de tendência central \\
+12 & 28/05\,(Qui) & Metodologias Quantitativas\,II: inferência estatística, correlação, regressão e testes de hipóteses + Preparação para atividade de campo \\
+\rowcolor{uefslight}
+13 & 02--03/06\,(Seg--Ter) & \textbf{Atividade de campo} -- Projetos sociais e políticas públicas (dois dias, fora do calendário regular) \\
+14 & 04/06\,(Qui) & Sistematização dos dados de campo e análise preliminar \\
+15 & 11/06\,(Qui) & Apresentação dos resultados + Avaliação e Encerramento do Semestre \\
+\bottomrule
+\end{tabularx}
+\end{small}
+
+\begin{tcolorbox}[uefsbox]
+\textbf{Estrutura geral:}\enspace
+Enc.\,01--08 → Bloco Teórico-Metodológico\enspace|\enspace
+Enc.\,09--15 → Bloco Qualitativo-Quantitativo\,+\,Campo\,+\,Avaliação\enspace|\enspace
+Enc.\,13: dois dias consecutivos (Seg--Ter).
+\end{tcolorbox}
+
+% ══════════════════════════════════════════════════════════
+\section*{Metodologia Geral}
+
+A disciplina adota uma abordagem híbrida que integra fundamentos teóricos, metodologias aplicadas e práticas de campo, estruturada em três eixos pedagógicos complementares:
+
+\subsection*{1.\enspace Aulas Expositivas Dialogadas}
+Apresentação dos fundamentos epistemológicos da pesquisa científica, dos métodos de intervenção social e das técnicas de análise de dados ambientais, promovendo debates sobre dilemas éticos e metodológicos no planejamento territorial.
+
+\subsection*{2.\enspace Seminários Temáticos}
+Os discentes organizarão e apresentarão projetos em três blocos (Políticas Sociais, Gestão Governamental e Política Ambiental), exercitando a análise crítica de intervenções territoriais reais, com ênfase em metodologias participativas e na articulação entre dimensões sociais, ambientais e institucionais.
+
+\subsection*{3.\enspace Práticas de Campo e Análise de Dados}
+Aplicação direta das metodologias qualitativas (entrevistas, diagnóstico participativo, cartografia social) e quantitativas (estatística descritiva e inferencial) em contexto real, seguida de sistematização coletiva dos dados coletados, promovendo o aprendizado experiencial e a reflexão sobre desafios práticos da pesquisa aplicada ao território.
+
+\vspace{6pt}
+A avaliação será processual e contínua, baseada em: (i)~participação ativa nos debates, (ii)~qualidade dos seminários apresentados, (iii)~relatório da atividade de campo, e (iv)~capacidade de articulação teórico-prática demonstrada ao longo do semestre.
+
+% ── Avaliação ──
+\begin{tcolorbox}[uefsbox, colframe=uefsaccent, colback=white, title={\bfseries\color{white}\scshape Avaliação}, fonttitle=\normalsize, coltitle=white, colbacktitle=uefsaccent, attach boxed title to top left={yshift=-2mm,xshift=2mm}, boxed title style={arc=2pt,boxrule=0pt}]
+\begin{itemize}[leftmargin=1.2em]
+\item Participação em debates e seminários\,\dotfill\,\textbf{30\,\%}
+\item Apresentação de seminários temáticos\,\dotfill\,\textbf{30\,\%}
+\item Relatório de atividade de campo\,\dotfill\,\textbf{40\,\%}
+\end{itemize}
+\end{tcolorbox}
+
+% ══════════════════════════════════════════════════════════
+\section*{Habilidades e Competências}
+
+\begin{multicols}{2}
+\subsection*{Competências Metodológicas}
+\begin{itemize}
+\item Dominar os fundamentos epistemológicos da pesquisa científica aplicada ao planejamento territorial
+\item Selecionar e aplicar metodologias qualitativas e quantitativas adequadas aos diferentes contextos de intervenção territorial
+\item Integrar múltiplas fontes de dados (ambientais, sociais, institucionais) na análise de problemas territoriais complexos
+\item Utilizar ferramentas estatísticas para análise descritiva e inferencial de dados ambientais
+\end{itemize}
+
+\subsection*{Competências Analíticas e Críticas}
+\begin{itemize}
+\item Avaliar criticamente projetos de intervenção social e políticas públicas territoriais
+\item Identificar e analisar dilemas éticos e metodológicos em contextos de planejamento participativo
+\item Articular conhecimento teórico-conceitual com práticas de diagnóstico e intervenção territorial
+\item Interpretar indicadores ambientais e sociais para subsidiar processos decisórios
+\end{itemize}
+
+\columnbreak
+
+\subsection*{Competências Práticas e Relacionais}
+\begin{itemize}
+\item Conduzir entrevistas estruturadas, semiestruturadas e abertas com diferentes atores sociais
+\item Aplicar metodologias participativas (diagnóstico participativo, caminhada transversal, cartografia social)
+\item Trabalhar em equipe multidisciplinar na construção de diagnósticos territoriais
+\item Comunicar resultados de pesquisa de forma clara e objetiva para públicos técnicos e comunitários
+\end{itemize}
+
+\subsection*{Competências Estratégicas}
+\begin{itemize}
+\item Formular problemas de pesquisa alinhados a demandas de intervenção territorial
+\item Desenhar projetos de intervenção social fundamentados em evidências empíricas
+\item Integrar conhecimento científico e saberes locais na construção de soluções territoriais
+\item Posicionar-se como profissional reflexivo e agente de transformação territorial
+\end{itemize}
+\end{multicols}
+
+% ══════════════════════════════════════════════════════════
+\begin{tcolorbox}[ementabox]
+Pesquisa científica: princípios, etapas e importância. A relação entre pesquisa e intervenção na produção científica. Projetos de intervenção: a ação planejada e teoricamente embasada. Produção do conhecimento científico e tecnológico. Modelos de Pesquisa Social, Tecnológica e de Planejamento Territorial.
+\end{tcolorbox}
+
+% ══════════════════════════════════════════════════════════
+\section*{Bibliografia Básica}
+
+\begin{small}
+\hangindent=1.5em\hangafter=1
+ARMANI, D. \textbf{Como elaborar projetos?}: guia prático para elaboração e gestão de projetos sociais. Porto Alegre: Tomo Editorial, 2009.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+BECKER, H.\,S. \textbf{De que lado estamos?} Uma teoria da ação coletiva. Rio de Janeiro: Zahar, 1977.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+BRACAGIOLI NETO, A.; GEHLEN, I.; OLIVEIRA, V.\,L. \textbf{Planejamento e gestão de projetos para o desenvolvimento rural}. Porto Alegre: UFRGS, 2010.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+BROSE, M. (Org.). \textbf{Metodologia participativa}: uma introdução a 29 instrumentos. Porto Alegre: Tomo Editorial, 2001.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+BUARQUE, S.\,C. \textbf{Metodologia de planejamento do desenvolvimento sustentável}. Brasília: IICA, 1995.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+CRUZ, D.\,U. \textbf{Planejamento participativo e políticas públicas}: participação social e metodologias participativas no Brasil contemporâneo. Feira de Santana: Z Arte, 2016.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+HAGUETTE, T.\,M.\,F. \textbf{Metodologias Qualitativas em Sociologia}. 4.\,ed. Rio de Janeiro: Vozes, 2013. p.\,109--170.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+PEREIRA, M.\,N. \textit{et al.} \textbf{Métodos e Meios de Comunicação em Extensão Rural}. Porto Alegre, 2009. Disponível em: \url{http://www.emater.tche.br/site/arquivos_pdf/teses/METODOSDEEXTENSAOGLOSSARIO.pdf}. Acesso em: 20 jun. 2022.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+THIOLLENT, M. \textbf{Metodologia da pesquisa-ação}. 14.\,ed. São Paulo: Cortez, 2005.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+UZÊDA, L.\,F.\,F.; CRUZ, D.\,U. \textbf{Extensão rural no Brasil}: percursos, metodologias e desafios. Salvador: Pinaúna, 2020.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+YIN, R.\,K. \textbf{Estudo de Caso}: planejamento e métodos. Porto Alegre: Bookman, 2001.
+\end{small}
+
+\end{document}

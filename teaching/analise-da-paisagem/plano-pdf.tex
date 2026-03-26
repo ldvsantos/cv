@@ -1,0 +1,358 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{geometry}
+\usepackage{helvet}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[table]{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage[most]{tcolorbox}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{lastpage}
+
+\geometry{margin=2.2cm, top=2.8cm, bottom=2.5cm}
+\setlength{\headheight}{15pt}
+\renewcommand{\familydefault}{\sfdefault}
+
+% ── Paleta de cores ──
+\definecolor{uefsdark}{RGB}{0,51,102}
+\definecolor{uefsblue}{RGB}{25,84,150}
+\definecolor{uefslight}{RGB}{232,241,250}
+\definecolor{uefsgray}{RGB}{110,110,110}
+\definecolor{uefsaccent}{RGB}{180,60,40}
+
+% ── Seções ──
+\titleformat{\section}
+  {\normalfont\large\bfseries\color{uefsdark}\scshape}{}{0em}{}%
+  [\vspace{2pt}{\color{uefsdark}\titlerule}]
+\titlespacing{\section}{0pt}{20pt}{8pt}
+
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\color{uefsblue}}{}{0em}{}
+\titlespacing{\subsection}{0pt}{12pt}{4pt}
+
+% ── Listas ──
+\setlist[itemize]{leftmargin=1.5em,topsep=4pt,itemsep=2pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=2em,topsep=4pt,itemsep=4pt,parsep=0pt}
+
+% ── tcolorbox ──
+\tcbset{
+  uefsbox/.style={
+    colback=uefslight, colframe=uefsdark,
+    boxrule=0.4pt, arc=3pt,
+    left=8pt, right=8pt, top=6pt, bottom=6pt,
+    fontupper=\small
+  },
+  ementabox/.style={
+    colback=white, colframe=uefsdark,
+    boxrule=0.8pt, arc=0pt,
+    left=10pt, right=10pt, top=8pt, bottom=8pt,
+    title={\scshape\bfseries Ementa},
+    fonttitle=\large\color{white},
+    coltitle=white, colbacktitle=uefsdark,
+    attach boxed title to top left={yshift=-2mm,xshift=2mm},
+    boxed title style={arc=2pt,boxrule=0pt}
+  }
+}
+
+% ── Cabeçalho / Rodapé ──
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{uefsdark}\leaders\hrule height \headrulewidth\hfill}}
+\fancyhead[L]{\small\color{uefsgray}UEFS\,--\,Análise da Paisagem}
+\fancyhead[R]{\small\color{uefsgray}Plano de Ensino 2026.1}
+\fancyfoot[C]{\small\color{uefsgray}Página \thepage\ de \pageref{LastPage}}
+
+\hypersetup{colorlinks=true,linkcolor=uefsblue,urlcolor=uefsblue}
+
+% ══════════════════════════════════════════════════════════
+\begin{document}
+\thispagestyle{empty}
+
+% ── Cabeçalho institucional com logo ──
+\begin{center}
+\color{uefsdark}\rule{\textwidth}{1.2pt}\\[0.30cm]
+\begin{minipage}{0.12\textwidth}
+\includegraphics[width=\linewidth]{../../aulas/assets/logo-uefs.png}
+\end{minipage}\hfill
+\begin{minipage}{0.84\textwidth}
+\begin{center}
+{\Large\bfseries UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA}\\[0.15cm]
+{\normalsize Departamento de Ciências Humanas e Filosofia\,(DCHF)}\\[0.06cm]
+{\normalsize Área de Geografia}
+\end{center}
+\end{minipage}\\[0.30cm]
+\color{uefsdark}\rule{\textwidth}{1.2pt}
+\end{center}
+
+\vspace{0.6cm}
+
+\begin{center}
+{\LARGE\bfseries\color{uefsdark} Análise da Paisagem}\\[0.30cm]
+{\large\bfseries Plano de Ensino\,--\,2026.1}\\[0.25cm]
+{\normalsize 15 encontros\,$\times$\,4\,h\enspace|\enspace Terças-feiras\enspace|\enspace 07h30\,--\,11h30}
+\end{center}
+
+\vspace{0.4cm}
+
+% ── Identificação ──
+\begin{tcolorbox}[uefsbox]
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Carga Horária:} & 60\,h (04 créditos)\,--\,15 encontros de 4\,h \\
+\textbf{Período:} & 25/02/2026 a 08/07/2026 \\
+\textbf{Modalidade:} & Presencial \\
+\textbf{Docente:} & Prof.\,Dr.\,Luiz Diego Vidal Santos \\
+\textbf{Contato:} & \href{mailto:ldvsantos@uefs.br}{ldvsantos@uefs.br}\enspace·\enspace\href{https://orcid.org/0000-0001-8659-8557}{ORCID: 0000-0001-8659-8557} \\
+\end{tabularx}
+\end{tcolorbox}
+
+\vspace{0.3cm}
+
+% ══════════════════════════════════════════════════════════
+\begin{tcolorbox}[ementabox]
+Fundamentos conceituais e epistemológicos da paisagem na Geografia e áreas afins. Abordagens sistêmicas e integradoras (geossistema, ecologia da paisagem e planejamento territorial). Estrutura, funcionamento e dinâmica da paisagem: padrões espaciais, processos, fluxos e conectividade. Métodos de análise e interpretação: cartografia temática, sensoriamento remoto, métricas de paisagem, análise multiescalar e temporal. Aplicações em diagnóstico ambiental, ordenamento territorial, conservação, recuperação de áreas degradadas e avaliação de serviços ecossistêmicos. Elaboração de produtos técnicos: mapas, relatórios interpretativos e proposta de intervenção/gestão territorial.
+\end{tcolorbox}
+
+% ══════════════════════════════════════════════════════════
+\section*{Objetivo Geral}
+
+Capacitar o(a) discente a analisar a paisagem como totalidade complexa, integrando componentes físico-bióticos e socioespaciais, por meio de métodos qualitativos e quantitativos voltados ao diagnóstico e ao planejamento territorial.
+
+% ══════════════════════════════════════════════════════════
+\section*{Objetivos Específicos}
+
+\begin{enumerate}
+\item Discutir a evolução do conceito de paisagem e suas principais matrizes teórico-metodológicas.
+\item Compreender relações entre forma (padrão) e função (processos) em diferentes escalas.
+\item Aplicar técnicas de interpretação de imagens e cartografia temática na leitura da paisagem.
+\item Empregar métricas e indicadores espaciais (fragmentação, conectividade, heterogeneidade) para avaliação ambiental.
+\item Integrar evidências empíricas na elaboração de diagnósticos e propostas de manejo/requalificação territorial.
+\end{enumerate}
+
+% ══════════════════════════════════════════════════════════
+\section*{Habilidades e Competências}
+
+\begin{multicols}{2}
+\subsection*{Competências Conceituais}
+\begin{itemize}
+\item Compreender a paisagem como totalidade complexa e multiescalar
+\item Articular componentes físico-bióticos e socioespaciais na leitura territorial
+\item Interpretar criticamente padrões e processos em diferentes escalas espaço-temporais
+\end{itemize}
+
+\subsection*{Competências Técnico-Analíticas}
+\begin{itemize}
+\item Empregar cartografia temática e interpretação de imagens no diagnóstico territorial
+\item Utilizar indicadores e métricas espaciais para avaliação de estrutura, fragmentação e conectividade
+\item Analisar mudanças e trajetórias de transformação da paisagem
+\end{itemize}
+
+\columnbreak
+
+\subsection*{Competências Aplicadas}
+\begin{itemize}
+\item Elaborar sínteses técnico-científicas (mapas e relatórios) orientadas ao planejamento
+\item Propor diretrizes de conservação e recuperação de áreas degradadas
+\item Conduzir diagnóstico integrado de unidades de paisagem
+\end{itemize}
+
+\subsection*{Competências Profissionais}
+\begin{itemize}
+\item Desenvolver autonomia intelectual, raciocínio analítico e rigor interpretativo
+\item Tomar decisões fundamentadas em evidências empíricas
+\item Comunicar resultados de forma clara e acessível a diferentes públicos
+\end{itemize}
+\end{multicols}
+
+% ══════════════════════════════════════════════════════════
+\section*{Significado do Componente para a Formação Profissional}
+
+O componente curricular \textit{Análise da Paisagem} possui papel estruturante na formação profissional dos(as) discentes, por oferecer referenciais conceituais e metodológicos indispensáveis à leitura integrada do território. Ao longo do componente, o(a) estudante desenvolve competências para compreender a paisagem como totalidade complexa, articulando elementos físico-bióticos e socioespaciais, bem como para reconhecer a interação entre padrões espaciais e processos que condicionam a dinâmica ambiental e a organização do espaço geográfico.
+
+A disciplina contribui diretamente para a construção de um olhar crítico e interpretativo sobre a realidade geográfica, capacitando o(a) futuro(a) profissional a identificar unidades de paisagem, pressões, conflitos de uso, vulnerabilidades e potencialidades a partir de evidências empíricas. Por meio da combinação entre atividades teóricas e práticas, o(a) discente é estimulado(a) a desenvolver autonomia intelectual, raciocínio analítico, rigor interpretativo e capacidade de tomada de decisão.
+
+% ══════════════════════════════════════════════════════════
+\section*{Cronograma}
+
+\begin{small}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\textwidth}{@{}c c X@{}}
+\toprule
+\textbf{Enc.} & \textbf{Data} & \textbf{Tema} \\
+\midrule
+\rowcolor{uefslight}
+--- & 25/02\,(Ter) & \textit{Semana de Integração\,--\,sem conteúdo programático.} \\
+01 & 11/03\,(Ter) & Apresentação do componente; conceito de paisagem; paisagem como síntese. \\
+02 & 18/03\,(Ter) & Evolução do conceito e distinções (espaço, território, ambiente). \\
+\rowcolor{uefslight}
+--- & 25/03\,(Ter) & \textit{Sem aula\,--\,docente em campanha de pesquisa de campo.} \\
+03 & 01/04\,(Ter) & Percepção e valoração da paisagem; domínios de paisagens tropicais. \\
+04 & 08/04\,(Ter) & Abordagens integradoras: geossistema, ecologia da paisagem (matriz--mancha--corredor, conectividade). \\
+05 & 15/04\,(Ter) & Escala, padrão e processo; fluxos, fragmentação e resiliência; cartografia temática e interpretação visual. \\
+\rowcolor{uefslight!70!white}
+\textbf{06} & \textbf{22/04\,(Ter)} & \textbf{Delimitação da área de estudo; matriz de evidências.\enspace\textsf{1\textsuperscript{a}\,AVALIAÇÃO} (Teórica\,I\,--\,individual).} \\
+07 & 29/04\,(Ter) & Sensoriamento remoto\,I: fundamentos operacionais (resoluções, bandas, composições). \\
+\rowcolor{uefslight}
+--- & 06/05\,(Ter) & \textit{Congresso 50+ UEFS\,--\,sem conteúdo programático.} \\
+08 & 13/05\,(Ter) & Sensoriamento remoto\,I: plataformas avançadas (LiDAR, SAR, drones); exercício de feições e padrões. \\
+09 & 20/05\,(Ter) & Sensoriamento remoto\,II: mudanças e trajetórias; produto parcial de mudanças. \\
+10 & 27/05\,(Ter) & Métricas e indicadores; unidades de paisagem e diagnóstico integrado. \\
+11 & 03/06\,(Ter) & Planejamento territorial; legislação ambiental e paisagem. \\
+12 & 10/06\,(Ter) & Zoneamentos aplicados; zoneamento geoecológico; exercício orientado. \\
+\rowcolor{uefslight!70!white}
+\textbf{13} & \textbf{17/06\,(Ter)} & \textbf{\textsf{2\textsuperscript{a}\,AVALIAÇÃO} (Prática\,I\,--\,em grupo): \textit{Serious Game}/Desafio.} \\
+\rowcolor{uefslight}
+--- & 24/06\,(Ter) & \textit{Feriado São João\,--\,sem conteúdo programático.} \\
+14 & 01/07\,(Ter) & Atividade de campo: observação sistemática, registros (fotos/croquis), unidades e processos. \\
+\rowcolor{uefslight!70!white}
+\textbf{15} & \textbf{08/07\,(Ter)} & \textbf{Sistematização do campo; oficina de relatório.\enspace\textsf{3\textsuperscript{a}\,+\,4\textsuperscript{a}\,AVALIAÇÃO}.} \\
+\bottomrule
+\end{tabularx}
+\end{small}
+
+\begin{tcolorbox}[uefsbox]
+\textbf{Estrutura geral:}\enspace
+Enc.\,01--06 → Fundamentos e Abordagens Integradoras + Avaliação\,I\enspace|\enspace
+Enc.\,07--12 → Sensoriamento Remoto, Métricas e Zoneamento\enspace|\enspace
+Enc.\,13--15 → Avaliações Práticas + Campo + Encerramento.
+\end{tcolorbox}
+
+% ══════════════════════════════════════════════════════════
+\section*{Metodologia}
+
+A disciplina adota uma abordagem híbrida, integrando fundamentos teóricos, práticas aplicadas e atividades de campo, estruturada em três eixos pedagógicos:
+
+\subsection*{1.\enspace Aulas Expositivas Dialogadas}
+Apresentação dos fundamentos conceituais e epistemológicos da paisagem, com problematização orientada e discussão de leituras selecionadas. Materiais complementares em formato digital (.pdf), vídeos, podcasts e outros recursos didáticos.
+
+\subsection*{2.\enspace Práticas Aplicadas e Investigativas}
+Estudos de caso e situações-problema: exercícios de análise multiescalar, interpretação cartográfica e de imagens, construção de sínteses espaciais e elaboração de produtos técnicos (mapas e relatórios). Incorporação de \textit{serious games} para engajamento, tomada de decisão e resolução de problemas em cenários simulados.
+
+\subsection*{3.\enspace Práticas de Campo e Análise de Dados}
+Saída de campo com leitura \textit{in situ}, registro fotográfico, croquis e roteiro de observação. Uso de ambiente computacional para organização e análise de dados espaciais (SIG/sensoriamento remoto), garantindo reprodutibilidade e sistematização dos resultados.
+
+% ── Avaliação ──
+\begin{tcolorbox}[uefsbox, colframe=uefsaccent, colback=white, title={\bfseries\color{white}\scshape Avaliação}, fonttitle=\normalsize, coltitle=white, colbacktitle=uefsaccent, attach boxed title to top left={yshift=-2mm,xshift=2mm}, boxed title style={arc=2pt,boxrule=0pt}]
+\begin{itemize}[leftmargin=1.2em]
+\item 1\textsuperscript{a}\,Avaliação (Teórica\,I\,--\,individual): prova presencial (conceitos, abordagens, cartografia)\,\dotfill\,\textbf{25\,\%}
+\item 2\textsuperscript{a}\,Avaliação (Prática\,I\,--\,\textit{Serious Game}\,--\,em grupo): diagnóstico, cenários e diretrizes\,\dotfill\,\textbf{25\,\%}
+\item 3\textsuperscript{a}\,Avaliação (Prática\,II\,--\,Relatório Técnico de Campo\,--\,individual)\,\dotfill\,\textbf{25\,\%}
+\item 4\textsuperscript{a}\,Avaliação (Teórica\,II\,--\,individual): integração de métodos e tomada de decisão\,\dotfill\,\textbf{25\,\%}
+\end{itemize}
+\vspace{4pt}
+{\footnotesize Cada avaliação vale até 10,0 pontos. Média final = média aritmética simples das quatro avaliações.}
+\end{tcolorbox}
+
+% ══════════════════════════════════════════════════════════
+\section*{Programa do Componente Curricular}
+
+\subsection*{Enc.\,01\,--\,Apresentação e fundamentos do conceito de paisagem\enspace{\normalfont\small(11/03)}}
+Organização do componente, objetivos, critérios e produtos esperados. Paisagem na Geografia e interfaces: conceito, usos analíticos e paisagem como síntese.
+
+\subsection*{Enc.\,02\,--\,Evolução do conceito e distinções fundamentais\enspace{\normalfont\small(18/03)}}
+Evolução histórica do conceito nas ciências. Distinções operacionais: espaço, território, ambiente e paisagem. Principais matrizes teórico-metodológicas.
+
+\subsection*{Enc.\,03\,--\,Percepção, valoração e domínios de paisagens tropicais\enspace{\normalfont\small(01/04)}}
+Percepção e valoração da paisagem. Domínios de natureza no Brasil: caracterização e distribuição. Leitura integrada introdutória e exercício de reconhecimento.
+
+\subsection*{Enc.\,04\,--\,Abordagens integradoras e leitura sistêmica\enspace{\normalfont\small(08/04)}}
+Geossistema e integração físico-biótica e socioespacial. Ecologia da paisagem: matriz--mancha--corredor; mosaicos; conectividade. Pressões antrópicas e transformação da paisagem.
+
+\subsection*{Enc.\,05\,--\,Escala, padrão e processo; cartografia temática\enspace{\normalfont\small(15/04)}}
+Escalas espaço-temporais, hierarquias e fragmentação; fluxos, bordas e resiliência. Cartografia temática: relevo, drenagem, uso/cobertura. Elementos de interpretação visual: forma, textura, tonalidade, contexto e associação.
+
+\subsection*{Enc.\,06\,--\,Exercício integrado e 1\textsuperscript{a}\,Avaliação\enspace{\normalfont\small(22/04)}}
+Delimitação da área de estudo; construção de matriz de evidências e síntese descritivo-interpretativa. \textbf{1\textsuperscript{a}\,Avaliação (Teórica\,I\,--\,individual).}
+
+\subsection*{Enc.\,07\,--\,Sensoriamento remoto\,I: fundamentos operacionais\enspace{\normalfont\small(29/04)}}
+Imagens orbitais, resoluções e composições; índices e realce. Uso/cobertura da terra: leitura e classificação. Exercício: identificação de feições e padrões.
+
+\subsection*{Enc.\,08\,--\,Sensoriamento remoto\,I: plataformas avançadas\enspace{\normalfont\small(13/05)}}
+LiDAR, SAR e drones: características e aplicações. Exercício de identificação de feições com dados multifonte. Limitações e potencialidades.
+
+\subsection*{Enc.\,09\,--\,Sensoriamento remoto\,II: mudanças e trajetórias\enspace{\normalfont\small(20/05)}}
+Comparação temporal e detecção de mudanças. Trajetórias de transformação e interpretação socioambiental. Produto parcial: mapa/registro interpretativo.
+
+\subsection*{Enc.\,10\,--\,Métricas, indicadores e diagnóstico integrado\enspace{\normalfont\small(27/05)}}
+Heterogeneidade, fragmentação, conectividade, efeito de borda. Delimitação e caracterização de unidades de paisagem; pressões, conflitos, vulnerabilidades e potencialidades. Síntese interpretativa.
+
+\subsection*{Enc.\,11\,--\,Planejamento territorial e legislação ambiental\enspace{\normalfont\small(03/06)}}
+Princípios, instrumentos e legislação ambiental vigente. Diretrizes: conservação, conectividade, requalificação e recuperação. Exercício: proposição de diretrizes.
+
+\subsection*{Enc.\,12\,--\,Zoneamentos aplicados e geoecológicos\enspace{\normalfont\small(10/06)}}
+Zoneamentos (geoambiental/risco/aptidão): objetivos e critérios. ZEE, ZEEC e ecodinâmica de Tricart. Exercício orientado de elaboração de zoneamento.
+
+\subsection*{Enc.\,13\,--\,2\textsuperscript{a}\,Avaliação\,--\,\textit{Serious Game}\enspace{\normalfont\small(17/06)}}
+Desafio prático em grupo: diagnóstico territorial, definição de prioridades, cenários e diretrizes. Síntese e comunicação dos resultados. \textbf{2\textsuperscript{a}\,Avaliação (Prática\,I\,--\,em grupo).}
+
+\subsection*{Enc.\,14\,--\,Atividade de campo\enspace{\normalfont\small(01/07)}}
+Saída de campo: leitura \textit{in situ}, registro fotográfico, croquis e pontos de interesse. Roteiro de observação: unidades, processos, conflitos e evidências. Organização preliminar do material.
+
+\subsection*{Enc.\,15\,--\,Sistematização e avaliações finais\enspace{\normalfont\small(08/07)}}
+Sistematização das evidências; oficina de escrita do relatório técnico. \textbf{3\textsuperscript{a}\,Avaliação (Prática\,II\,--\,individual):} Relatório Técnico de Campo. \textbf{4\textsuperscript{a}\,Avaliação (Teórica\,II\,--\,individual):} integração de métodos e tomada de decisão.
+
+\vspace{6pt}
+\begin{tcolorbox}[uefsbox]
+\textbf{Produto final recomendado:}\enspace Dossiê de Análise da Paisagem (estudo de caso) contendo: mapa de uso/cobertura; mapa de unidades de paisagem (ou síntese geoambiental); diagnóstico interpretativo; e diretrizes (zoneamento e recomendações).
+\end{tcolorbox}
+
+% ══════════════════════════════════════════════════════════
+\section*{Referências}
+
+\subsection*{Básica}
+
+\begin{small}
+\hangindent=1.5em\hangafter=1
+BERTRAND, G. \textbf{Paisagem e geografia física global}: esboço metodológico. \textit{Cadernos de Ciências da Terra}, São Paulo, v.\,13, p.\,1--27, 1971.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+FORMAN, R.\,T.\,T.; GODRON, M. \textbf{Landscape ecology}. New York: Wiley, 1986.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+METZGER, J.\,P. O que é ecologia de paisagens? \textit{Biota Neotropica}, v.\,1, n.\,1--2, 2001. DOI: 10.1590/S1676-06032001000100006.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+SANTOS, M. \textbf{A natureza do espaço}: técnica e tempo, razão e emoção. São Paulo: Hucitec, 1996.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+TURNER, M.\,G.; GARDNER, R.\,H. \textbf{Landscape ecology in theory and practice}: pattern and process. 2.\,ed. New York: Springer, 2015.
+\end{small}
+
+\subsection*{Complementar}
+
+\begin{small}
+\hangindent=1.5em\hangafter=1
+AB'SÁBER, A.\,N. \textbf{Os domínios de natureza no Brasil}: potencialidades paisagísticas. São Paulo: Ateliê Editorial, 2003.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+JENSEN, J.\,R. \textbf{Remote sensing of the environment}: an earth resource perspective. Upper Saddle River, NJ: Prentice Hall, 2000.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+MCGARIGAL, K.; CUSHMAN, S.\,A.; ENE, E. \textbf{FRAGSTATS v4}: spatial pattern analysis program for categorical and continuous maps (software). Amherst: University of Massachusetts, 2012.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+MONTEIRO, C.\,A.\,F. \textbf{A dinâmica climática e as chuvas no Estado de São Paulo}. São Paulo: Laboratório de Climatologia, IG/USP, 1973.\par\medskip
+
+\hangindent=1.5em\hangafter=1
+TRICART, J. \textbf{Ecodinâmica}. Rio de Janeiro: IBGE; SUPREN, 1977.
+\end{small}
+
+\vfill
+
+\begin{center}
+\noindent\rule{6cm}{0.4pt}\\[6pt]
+\textbf{Prof.\,Dr.\,Luiz Diego Vidal Santos}\\
+Docente Responsável\\[4pt]
+{\small Feira de Santana\,--\,BA, fevereiro de 2026.}
+\end{center}
+
+\end{document}
