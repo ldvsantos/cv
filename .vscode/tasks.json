@@ -2,6 +2,41 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "Quarto Preview Site (Debug Ready)",
+      "type": "shell",
+      "command": "$port=4200; $running=(Get-NetTCPConnection -LocalPort $port -State Listen -ErrorAction SilentlyContinue); if(-not $running){Start-Process powershell -ArgumentList '-NoProfile','-Command','quarto preview --port 4200 --no-browser' -WindowStyle Minimized; Write-Host \"Aguardando Quarto...\"; do{Start-Sleep -Seconds 2; $ok=Get-NetTCPConnection -LocalPort $port -State Listen -ErrorAction SilentlyContinue}while(-not $ok); Write-Host \"Quarto pronto na porta $port!\"}else{Write-Host \"Quarto já rodando na porta $port\"}",
+      "group": "none",
+      "options": {
+        "shell": {
+          "executable": "powershell.exe",
+          "args": ["-NoProfile", "-Command"]
+        }
+      },
+      "presentation": {
+        "reveal": "silent",
+        "panel": "dedicated",
+        "clear": false,
+        "focus": false
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Quarto Preview Site (com Browser)",
+      "type": "shell",
+      "command": "quarto preview --port 4200",
+      "group": "none",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": false
+      },
+      "problemMatcher": [],
+      "isBackground": true,
+      "runOptions": {
+        "instanceLimit": 1
+      }
+    },
+    {
       "label": "Renderizar Apresentação (Quarto)",
       "type": "process",
       "command": "quarto",
@@ -32,6 +67,22 @@
       },
       "problemMatcher": [],
       "isBackground": true
+    },
+    {
+      "label": "Stop Quarto Preview",
+      "type": "shell",
+      "command": "Get-Process -Name quarto -ErrorAction SilentlyContinue | Stop-Process -Force",
+      "options": {
+        "shell": {
+          "executable": "powershell.exe",
+          "args": ["-NoProfile", "-Command"]
+        }
+      },
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared"
+      },
+      "problemMatcher": []
     }
   ]
 }

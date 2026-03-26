@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "compounds": [
+        {
+            "name": "Quarto + Firefox Debug",
+            "configurations": ["Firefox: Debug Site"],
+            "preLaunchTask": "Quarto Preview Site (Debug Ready)",
+            "stopAll": true
+        }
+    ],
+    "configurations": [
+        {
+            "name": "Firefox: Debug Site",
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "url": "http://localhost:4200/",
+            "webRoot": "${workspaceFolder}",
+            "pathMappings": [
+                {
+                    "url": "http://localhost:4200",
+                    "path": "${workspaceFolder}"
+                }
+            ],
+            "skipFiles": [
+                "**/node_modules/**",
+                "**/site_libs/**"
+            ],
+            "clearConsoleOnReload": true
+        }
+    ]
+}
+    ]
+}
