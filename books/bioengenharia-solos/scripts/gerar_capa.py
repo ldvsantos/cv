@@ -29,22 +29,45 @@ def get_font(name, size, bold=False):
         if os.path.exists(path): return ImageFont.truetype(path, size)
     return ImageFont.load_default()
 
-# 1. Fundo Gradiente (Solo -> Vegetação super leve no topo)
-img = Image.new("RGBA", (W, H), c_soil_dark)
-draw = ImageDraw.Draw(img)
-for y in range(H):
-    t = y / H
-    if t < 0.2: # Topo verde (ar/vegetação)
-        tr = t / 0.2
-        r = int(c_vegetation[0]*(1-tr) + c_soil_core[0]*tr)
-        g = int(c_vegetation[1]*(1-tr) + c_soil_core[1]*tr)
-        b = int(c_vegetation[2]*(1-tr) + c_soil_core[2]*tr)
-    else: # Solo e subsolo
-        tr = (t - 0.2) / 0.8
-        r = int(c_soil_core[0]*(1-tr) + c_soil_dark[0]*tr)
-        g = int(c_soil_core[1]*(1-tr) + c_soil_dark[1]*tr)
-        b = int(c_soil_core[2]*(1-tr) + c_soil_dark[2]*tr)
-    draw.line([(0, y), (W, y)], fill=(r,g,b,255))
+# 1. Fundo Gradiente ou Imagem Real
+bg_img_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "img", "talude_biotextil.jpg")
+
+if os.path.exists(bg_img_path):
+    bg_img = Image.open(bg_img_path).convert("RGBA")
+    bg_w, bg_h = bg_img.size
+    aspect_capa = W / H
+    aspect_bg = bg_w / bg_h
+    
+    if aspect_bg > aspect_capa:
+        new_h = H
+        new_w = int(aspect_bg * H)
+        bg_img = bg_img.resize((new_w, new_h), Image.Resampling.LANCZOS)
+        offset = (new_w - W) // 2
+        bg_img = bg_img.crop((offset, 0, offset + W, H))
+    else:
+        new_w = W
+        new_h = int(W / aspect_bg)
+        bg_img = bg_img.resize((new_w, new_h), Image.Resampling.LANCZOS)
+        offset = (new_h - H) // 2
+        bg_img = bg_img.crop((0, offset, W, offset + H))
+    img = bg_img
+else:
+    img = Image.new("RGBA", (W, H), c_soil_dark)
+    draw = ImageDraw.Draw(img)
+    for y in range(H):
+        t = y / H
+        if t < 0.2: # Topo verde (ar/vegetação)
+            tr = t / 0.2
+            r = int(c_vegetation[0]*(1-tr) + c_soil_core[0]*tr)
+            g = int(c_vegetation[1]*(1-tr) + c_soil_core[1]*tr)
+            b = int(c_vegetation[2]*(1-tr) + c_soil_core[2]*tr)
+        else: # Solo e subsolo
+            tr = (t - 0.2) / 0.8
+            r = int(c_soil_core[0]*(1-tr) + c_soil_dark[0]*tr)
+            g = int(c_soil_core[1]*(1-tr) + c_soil_dark[1]*tr)
+            b = int(c_soil_core[2]*(1-tr) + c_soil_dark[2]*tr)
+        draw.line([(0, y), (W, y)], fill=(r,g,b,255))
+
 
 # 2. Camadas do solo estilizadas
 np.random.seed(101)
@@ -97,9 +120,17 @@ img = Image.alpha_composite(img, roots_img)
 
 # Área escura para leitura
 ov = Image.new("RGBA", (W, H), (0,0,0,0))
-ImageDraw.Draw(ov).rectangle([0,0, W, 280], fill=(15, 25, 15, 200))
-ImageDraw.Draw(ov).rectangle([0,280, W, 350], fill=(15, 25, 15, 140))
-ImageDraw.Draw(ov).rectangle([0,1300, W, H], fill=(10, 10, 10, 200))
+ov_draw = ImageDraw.Draw(ov)
+ov_draw.rectangle([0, 0, W, H], fill=(20, 15, 5, 80)) # Overlay geral amarelado/amarronzado sutil
+
+for y in range(0, 450):
+    alpha = int(220 * (1 - y / 450))
+    ov_draw.line([(0, y), (W, y)], fill=(15, 10, 5, alpha))
+
+for y in range(1200, H):
+    t = (y - 1200) / (H - 1200)
+    alpha = int(230 * t)
+    ov_draw.line([(0, y), (W, y)], fill=(10, 5, 0, alpha))
 img = Image.alpha_composite(img, ov)
 
 # 4. Textos

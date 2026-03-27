@@ -24,14 +24,39 @@ def get_font(name, size, bold=False):
         if os.path.exists(path): return ImageFont.truetype(path, size)
     return ImageFont.load_default()
 
-img = Image.new("RGBA", (W, H), BG_TOP)
-draw = ImageDraw.Draw(img)
-for y in range(H):
-    t = y / H
-    r = int(BG_TOP[0] + (BG_BOT[0] - BG_TOP[0]) * t)
-    g = int(BG_TOP[1] + (BG_BOT[1] - BG_TOP[1]) * t)
-    b = int(BG_TOP[2] + (BG_BOT[2] - BG_TOP[2]) * t)
-    draw.line([(0, y), (W, y)], fill=(r,g,b,255))
+bg_img_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "img", "desmatamento_amazonia_sentinel.jpg")
+
+if os.path.exists(bg_img_path):
+    bg_img = Image.open(bg_img_path).convert("RGBA")
+    # Redimensionar (zoom fill)
+    bg_w, bg_h = bg_img.size
+    aspect_capa = W / H
+    aspect_bg = bg_w / bg_h
+    
+    if aspect_bg > aspect_capa:
+        new_h = H
+        new_w = int(aspect_bg * H)
+        bg_img = bg_img.resize((new_w, new_h), Image.Resampling.LANCZOS)
+        offset = (new_w - W) // 2
+        bg_img = bg_img.crop((offset, 0, offset + W, H))
+    else:
+        new_w = W
+        new_h = int(W / aspect_bg)
+        bg_img = bg_img.resize((new_w, new_h), Image.Resampling.LANCZOS)
+        offset = (new_h - H) // 2
+        bg_img = bg_img.crop((0, offset, W, offset + H))
+    
+    img = bg_img
+    draw = ImageDraw.Draw(img)
+else:
+    img = Image.new("RGBA", (W, H), BG_TOP)
+    draw = ImageDraw.Draw(img)
+    for y in range(H):
+        t = y / H
+        r = int(BG_TOP[0] + (BG_BOT[0] - BG_TOP[0]) * t)
+        g = int(BG_TOP[1] + (BG_BOT[1] - BG_TOP[1]) * t)
+        b = int(BG_TOP[2] + (BG_BOT[2] - BG_TOP[2]) * t)
+        draw.line([(0, y), (W, y)], fill=(r,g,b,255))
 
 # Tema Gráfico: Grid de mapa / UI SIG
 theme_img = Image.new("RGBA", (W, H), (0,0,0,0))
@@ -70,8 +95,18 @@ if len(poly_pts) > 2:
 img = Image.alpha_composite(img, theme_img)
 
 ov = Image.new("RGBA", (W, H), (0,0,0,0))
-ImageDraw.Draw(ov).rectangle([0,0, W, 280], fill=(5, 10, 20, 200))
-ImageDraw.Draw(ov).rectangle([0,1300, W, H], fill=(5, 5, 10, 220))
+ov_draw = ImageDraw.Draw(ov)
+ov_draw.rectangle([0, 0, W, H], fill=(5, 10, 25, 90)) # Overlay geral
+
+for y in range(0, 450):
+    alpha = int(220 * (1 - y / 450))
+    ov_draw.line([(0, y), (W, y)], fill=(5, 10, 20, alpha))
+
+for y in range(1200, H):
+    t = (y - 1200) / (H - 1200)
+    alpha = int(230 * t)
+    ov_draw.line([(0, y), (W, y)], fill=(5, 10, 15, alpha))
+
 img = Image.alpha_composite(img, ov)
 
 draw = ImageDraw.Draw(img)

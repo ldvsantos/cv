@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Livro-texto sobre bioengenharia de solos aplicada a regiões tropicais, integrando fundamentos pedológicos, técnicas de estabilização biológica e soluções baseadas na natureza (NBS) para conservação e recuperação de solos degradados.">
+
+<title>17&nbsp; Canaleta Verde – Bioengenharia de Solos em Regiões Tropicais</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../capitulos/17-geotexteis.html" rel="next">
+<link href="../capitulos/15-parede-krainer.html" rel="prev">
+<link href="../img/capa_bioengenharia_de_solos.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-12f6d87c9cc8cd23abdf3d99f8b9f8fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/06-revegetacao.html">Parte II — Técnicas de Bioengenharia</a></li><li class="breadcrumb-item"><a href="../capitulos/16-canaleta-verde.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Canaleta Verde</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Bioengenharia de Solos em Regiões Tropicais</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/ldvsantos/cv/" title="Código fonte" class="quarto-navigation-tool px-1" aria-label="Código fonte"><i class="bi bi-github"></i></a>
+    <a href="../Bioengenharia-de-Solos-em-Regiões-Tropicais.pdf" title="Baixar PDF" class="quarto-navigation-tool px-1" aria-label="Baixar PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Compartilhar" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Compartilhar"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sobre este livro</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../prefacio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">prefacio.html</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte I — Fundamentos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/01-introducao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">O que é Bioengenharia de Solos?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/02-solos-tropicais.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">O Solo como Sistema Aberto</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/03-intemperismo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conceito de Intemperismo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/04-erosao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Conceito e Magnitude</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/05-classificacao-feicoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Importância da Classificação</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte II — Técnicas de Bioengenharia</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/06-revegetacao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Princípios da Revegetação</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/07-palicadas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Paliçadas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/08-bacias-captacao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Bacias de Captação</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/09-feixes-drenos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Feixes Vivos (<em>Fascines</em>)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/10-hidrossemeadura.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Hidrossemeadura</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/11-biomantas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Biomantas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/12-enrocamento.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Enrocamento Vegetado</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/13-cordoes-fascinas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Cordões Vegetativos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/14-gabiao-vivo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Gabião Vivo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/15-parede-krainer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Parede Krainer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/16-canaleta-verde.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Canaleta Verde</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte III — Geotêxteis e Inovação</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/17-geotexteis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Geotêxteis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/18-biotexteis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Biotêxteis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/19-biopolimeros.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Biopolímeros Superabsorventes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte IV — Projeto e Integração</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/20-nbs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Definição</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/21-projeto-integrador.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Objetivo</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte V — Monitoramento e Análise</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/22-modelagem-3d.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Modelagem 3D de Sistemas Radiculares</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../referencias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">referencias.html</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#sec-canaleta-verde" id="toc-sec-canaleta-verde" class="nav-link active" data-scroll-target="#sec-canaleta-verde"><span class="header-section-number">18</span> Canaleta Verde</a>
+  <ul class="collapse">
+  <li><a href="#funções" id="toc-funções" class="nav-link" data-scroll-target="#funções"><span class="header-section-number">18.1</span> Funções</a></li>
+  <li><a href="#dimensionamento-hidráulico" id="toc-dimensionamento-hidráulico" class="nav-link" data-scroll-target="#dimensionamento-hidráulico"><span class="header-section-number">18.2</span> Dimensionamento Hidráulico</a>
+  <ul class="collapse">
+  <li><a href="#equação-de-manning" id="toc-equação-de-manning" class="nav-link" data-scroll-target="#equação-de-manning"><span class="header-section-number">18.2.1</span> Equação de Manning</a></li>
+  <li><a href="#regime-de-escoamento" id="toc-regime-de-escoamento" class="nav-link" data-scroll-target="#regime-de-escoamento"><span class="header-section-number">18.2.2</span> Regime de Escoamento</a></li>
+  <li><a href="#tensão-cisalhante-admissível" id="toc-tensão-cisalhante-admissível" class="nav-link" data-scroll-target="#tensão-cisalhante-admissível"><span class="header-section-number">18.2.3</span> Tensão Cisalhante Admissível</a></li>
+  <li><a href="#seção-trapezoidal" id="toc-seção-trapezoidal" class="nav-link" data-scroll-target="#seção-trapezoidal"><span class="header-section-number">18.2.4</span> Seção Trapezoidal</a></li>
+  </ul></li>
+  <li><a href="#projeto-típico" id="toc-projeto-típico" class="nav-link" data-scroll-target="#projeto-típico"><span class="header-section-number">18.3</span> Projeto Típico</a></li>
+  <li><a href="#vantagens-sobre-canaletas-de-concreto" id="toc-vantagens-sobre-canaletas-de-concreto" class="nav-link" data-scroll-target="#vantagens-sobre-canaletas-de-concreto"><span class="header-section-number">18.4</span> Vantagens sobre Canaletas de Concreto</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ldvsantos/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/06-revegetacao.html">Parte II — Técnicas de Bioengenharia</a></li><li class="breadcrumb-item"><a href="../capitulos/16-canaleta-verde.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Canaleta Verde</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Canaleta Verde</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="sec-canaleta-verde" class="level1" data-number="18">
+<h1 data-number="18"><span class="header-section-number">18</span> Canaleta Verde</h1>
+<p>A canaleta verde (<em>vegetated swale</em> ou <em>bioswale</em>) é um canal de drenagem aberto com seção trapezoidal ou parabólica, revestido com vegetação herbácea densa, que funciona simultaneamente como condutor hidráulico e como sistema de tratamento por infiltração e filtração. Diferentemente das canaletas de concreto (estruturas impermeáveis que apenas transportam o escoamento), a canaleta verde intercepta, desacelera e filtra o escoamento superficial, promovendo a remoção de sedimentos, nutrientes e poluentes difusos antes que atinjam os corpos hídricos receptores. A <a href="#fig-canaleta" class="quarto-xref">Figura&nbsp;<span class="quarto-unresolved-ref">fig-canaleta</span></a> ilustra uma canaleta verde com vegetação herbácea plenamente estabelecida, onde a rugosidade da cobertura vegetal reduz a velocidade do escoamento e a superfície permeável permite infiltração ao longo de todo o percurso.</p>
+<div id="fig-canaleta" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Canaleta verde com vegetação">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-canaleta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/canaleta_verde.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Canaleta verde com vegetação">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-canaleta-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;18.1: Canaleta verde com vegetação herbácea estabelecida — canal de drenagem naturalizado que combina condução hidráulica com tratamento por infiltração.
+</figcaption>
+</figure>
+</div>
+<section id="funções" class="level2" data-number="18.1">
+<h2 data-number="18.1" class="anchored" data-anchor-id="funções"><span class="header-section-number">18.1</span> Funções</h2>
+<p>A canaleta verde desempenha cinco funções hidráulicas e ambientais simultâneas, o que justifica sua classificação como técnica de infraestrutura verde multifuncional. A primeira é a condução controlada do escoamento superficial, substituindo tubulações enterradas por um canal aberto que pode ser inspecionado visualmente e mantido com baixo custo operacional. A segunda é a infiltração para recarga do aquífero, com taxas que dependem da permeabilidade do solo subjacente e da altura da vegetação (canaletas em solos arenosos podem infiltrar 30–60% do volume escoado). A terceira é a filtração de sedimentos e nutrientes pela interação entre o escoamento e a vegetação densa, que funciona como filtro biológico com eficiência de remoção de 60–85% para sólidos suspensos. A quarta é o amortecimento do pico de cheia por laminação, em que a rugosidade vegetal retarda o escoamento e distribui o hidrograma ao longo de um período mais prolongado. A quinta é a integração paisagística com geração de serviços ecossistêmicos (habitat para polinizadores, corredor ecológico, sequestro de carbono). A <a href="#fig-canaleta-hidro" class="quarto-xref">Figura&nbsp;<span class="quarto-unresolved-ref">fig-canaleta-hidro</span></a> mostra a integração entre a canaleta verde e a técnica de hidrossemeadura (ver <a href="#sec-hidrossemeadura" class="quarto-xref"><span class="quarto-unresolved-ref">sec-hidrossemeadura</span></a>), utilizada para o estabelecimento rápido da cobertura vegetal protetora no canal recém-construído.</p>
+<div id="fig-canaleta-hidro" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Canaleta verde com hidrossemeadura">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-canaleta-hidro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/canaleta_hidrossemeadura.png" class="img-fluid figure-img" style="width:80.0%" alt="Canaleta verde com hidrossemeadura">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-canaleta-hidro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;18.2: Canaleta verde com hidrossemeadura — integração de drenagem naturalizada com revegetação por hidrossemeadura para estabelecimento rápido da cobertura vegetal.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="dimensionamento-hidráulico" class="level2" data-number="18.2">
+<h2 data-number="18.2" class="anchored" data-anchor-id="dimensionamento-hidráulico"><span class="header-section-number">18.2</span> Dimensionamento Hidráulico</h2>
+<p>O dimensionamento hidráulico da canaleta verde segue os mesmos princípios aplicados a canais abertos em regime permanente e uniforme, com a particularidade de que o coeficiente de resistência ao escoamento (<span class="math inline">\(n\)</span> de Manning) é significativamente maior do que em canais revestidos com concreto, pois a rugosidade da vegetação é o elemento que confere à canaleta suas funções de filtração e amortecimento.</p>
+<section id="equação-de-manning" class="level3" data-number="18.2.1">
+<h3 data-number="18.2.1" class="anchored" data-anchor-id="equação-de-manning"><span class="header-section-number">18.2.1</span> Equação de Manning</h3>
+<p>A vazão de projeto (<span class="math inline">\(Q\)</span>) é calculada pela equação de Manning para escoamento uniforme em canais abertos</p>
+<p><span class="math display">\[
+Q = \frac{1}{n} \cdot A \cdot R_h^{2/3} \cdot S^{1/2}
+\]</span></p>
+<p>onde <span class="math inline">\(Q\)</span> é a vazão (m³/s), <span class="math inline">\(n\)</span> é o coeficiente de Manning (adimensional, função da rugosidade vegetal), <span class="math inline">\(A\)</span> é a área da seção molhada (m²), <span class="math inline">\(R_h\)</span> é o raio hidráulico (<span class="math inline">\(A/P\)</span>, onde <span class="math inline">\(P\)</span> é o perímetro molhado, em metros), e <span class="math inline">\(S\)</span> é a declividade longitudinal do canal (m/m). Para canais vegetados, o coeficiente <span class="math inline">\(n\)</span> varia com a espécie, a altura e a densidade da vegetação, conforme a <a href="#tbl-manning" class="quarto-xref">Tabela&nbsp;<span class="quarto-unresolved-ref">tbl-manning</span></a>.</p>
+<div id="tbl-manning" class="striped quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-manning-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;18.1: Coeficientes de Manning para canais vegetados.
+</figcaption>
+<div aria-describedby="tbl-manning-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped caption-top table">
+<colgroup>
+<col style="width: 41%">
+<col style="width: 32%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Cobertura vegetal</th>
+<th><em>n</em> de Manning</th>
+<th>Observação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Grama curta (&lt; 10 cm)</td>
+<td>0,030–0,035</td>
+<td>Gramados manejados com roçada frequente</td>
+</tr>
+<tr class="even">
+<td>Grama média (10–25 cm)</td>
+<td>0,035–0,045</td>
+<td>Condição típica de manutenção</td>
+</tr>
+<tr class="odd">
+<td>Grama alta (&gt; 25 cm)</td>
+<td>0,045–0,060</td>
+<td>Maior filtração, menor capacidade de vazão</td>
+</tr>
+<tr class="even">
+<td>Vegetação densa + arbustos</td>
+<td>0,060–0,100</td>
+<td>Máxima retenção de sedimentos</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>A escolha do valor de <span class="math inline">\(n\)</span> implica um compromisso de projeto entre capacidade hidráulica e eficiência de tratamento. Valores baixos de <span class="math inline">\(n\)</span> (grama curta) maximizam a vazão conduzida, mas reduzem a filtração e a infiltração; valores altos de <span class="math inline">\(n\)</span> (vegetação densa) maximizam a remoção de poluentes, mas exigem seções maiores para conduzir a mesma vazão de projeto.</p>
+</section>
+<section id="regime-de-escoamento" class="level3" data-number="18.2.2">
+<h3 data-number="18.2.2" class="anchored" data-anchor-id="regime-de-escoamento"><span class="header-section-number">18.2.2</span> Regime de Escoamento</h3>
+<p>Para que a canaleta funcione como sistema de filtração e infiltração sem causar erosão no leito ou nas laterais, o escoamento deve ser mantido em regime subcrítico, condição verificada pelo número de Froude</p>
+<p><span class="math display">\[
+Fr = \frac{V}{\sqrt{g \cdot y}} &lt; 1{,}0
+\]</span></p>
+<p>onde <span class="math inline">\(V\)</span> é a velocidade média do escoamento (m/s), <span class="math inline">\(g\)</span> é a aceleração gravitacional (9,81 m/s²) e <span class="math inline">\(y\)</span> é a profundidade do escoamento (m). O regime subcrítico (<span class="math inline">\(Fr &lt; 1\)</span>) garante que a energia cinética do escoamento é inferior à energia potencial (profundidade), o que significa que perturbações se propagam para montante e o escoamento é controlável. Em regime supercrítico (<span class="math inline">\(Fr &gt; 1\)</span>), a velocidade excessiva causa erosão na base da canaleta e impede a sedimentação de partículas.</p>
+</section>
+<section id="tensão-cisalhante-admissível" class="level3" data-number="18.2.3">
+<h3 data-number="18.2.3" class="anchored" data-anchor-id="tensão-cisalhante-admissível"><span class="header-section-number">18.2.3</span> Tensão Cisalhante Admissível</h3>
+<p>A estabilidade do revestimento vegetal depende da tensão cisalhante (<span class="math inline">\(\tau\)</span>) exercida pelo escoamento sobre o leito, que não deve exceder a resistência da cobertura vegetal</p>
+<p><span class="math display">\[
+\tau = \gamma_w \cdot R_h \cdot S
+\]</span></p>
+<p>onde <span class="math inline">\(\gamma_w\)</span> é o peso específico da água (9,81 kN/m³), <span class="math inline">\(R_h\)</span> é o raio hidráulico (m) e <span class="math inline">\(S\)</span> é a declividade longitudinal. A <a href="#tbl-tensao" class="quarto-xref">Tabela&nbsp;<span class="quarto-unresolved-ref">tbl-tensao</span></a> apresenta os valores admissíveis de tensão cisalhante e velocidade máxima para diferentes tipos de cobertura, que devem ser respeitados para evitar o arrancamento da vegetação e a consequente erosão do canal.</p>
+<div id="tbl-tensao" class="striped quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tensao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;18.2: Tensão cisalhante e velocidade admissíveis para canais vegetados.
+</figcaption>
+<div aria-describedby="tbl-tensao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 29%">
+<col style="width: 26%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Cobertura</th>
+<th><span class="math inline">\(\tau_{adm}\)</span> (Pa)</th>
+<th><span class="math inline">\(V_{max}\)</span> (m/s)</th>
+<th>Aplicação típica</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Grama curta</td>
+<td>30–50</td>
+<td>1,5–2,0</td>
+<td>Declividades baixas (&lt; 3%)</td>
+</tr>
+<tr class="even">
+<td>Grama densa</td>
+<td>50–100</td>
+<td>2,0–2,5</td>
+<td>Declividades moderadas (3–5%)</td>
+</tr>
+<tr class="odd">
+<td>Grama + arbustos</td>
+<td>100–170</td>
+<td>2,5–3,0</td>
+<td>Declividades maiores ou picos de cheia</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="seção-trapezoidal" class="level3" data-number="18.2.4">
+<h3 data-number="18.2.4" class="anchored" data-anchor-id="seção-trapezoidal"><span class="header-section-number">18.2.4</span> Seção Trapezoidal</h3>
+<p>A seção trapezoidal é a geometria mais utilizada para canaletas verdes, pois combina facilidade construtiva com estabilidade dos taludes laterais. A área da seção molhada (<span class="math inline">\(A\)</span>) e o perímetro molhado (<span class="math inline">\(P\)</span>) são calculados por</p>
+<p><span class="math display">\[
+A = (b + m \cdot y) \cdot y
+\]</span></p>
+<p><span class="math display">\[
+P = b + 2y\sqrt{1 + m^2}
+\]</span></p>
+<p>onde <span class="math inline">\(b\)</span> é a largura da base (m), <span class="math inline">\(m\)</span> é a inclinação dos taludes laterais expressa como relação horizontal/vertical (H:V), e <span class="math inline">\(y\)</span> é a profundidade do escoamento (m). A inclinação lateral mínima recomendada é de 3:1 (H:V), o que facilita a mecanização da roçada, permite o acesso seguro para manutenção e reduz o risco de instabilidade dos taludes laterais.</p>
+</section>
+</section>
+<section id="projeto-típico" class="level2" data-number="18.3">
+<h2 data-number="18.3" class="anchored" data-anchor-id="projeto-típico"><span class="header-section-number">18.3</span> Projeto Típico</h2>
+<p>A <a href="#tbl-projeto" class="quarto-xref">Tabela&nbsp;<span class="quarto-unresolved-ref">tbl-projeto</span></a> sintetiza os parâmetros recomendados para o projeto de canaletas verdes em condições típicas (áreas urbanas, rurais ou viárias). Esses valores devem ser ajustados em função da vazão de projeto (calculada pelo método racional ou por modelagem hidrológica), das características do solo local e dos objetivos de tratamento (filtração, infiltração ou amortecimento).</p>
+<div id="tbl-projeto" class="striped quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-projeto-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;18.3: Parâmetros de projeto para canaleta verde.
+</figcaption>
+<div aria-describedby="tbl-projeto-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 40%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parâmetro</th>
+<th>Valor recomendado</th>
+<th>Justificativa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Largura da base</td>
+<td>0,5–2,0 m</td>
+<td>Mínimo para manutenção mecanizada</td>
+</tr>
+<tr class="even">
+<td>Profundidade</td>
+<td>0,3–0,6 m</td>
+<td>Limita velocidade e garante contato com vegetação</td>
+</tr>
+<tr class="odd">
+<td>Inclinação lateral</td>
+<td>≥ 3:1 (H:V)</td>
+<td>Estabilidade e acessibilidade</td>
+</tr>
+<tr class="even">
+<td>Declividade longitudinal</td>
+<td>1–5%</td>
+<td>&lt; 1% causa empoçamento; &gt; 5% exige proteção adicional</td>
+</tr>
+<tr class="odd">
+<td>Borda livre</td>
+<td>≥ 15 cm</td>
+<td>Segurança contra transbordamento</td>
+</tr>
+<tr class="even">
+<td>Velocidade máxima</td>
+<td>≤ 2,0 m/s</td>
+<td>Proteção do revestimento vegetal</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="vantagens-sobre-canaletas-de-concreto" class="level2" data-number="18.4">
+<h2 data-number="18.4" class="anchored" data-anchor-id="vantagens-sobre-canaletas-de-concreto"><span class="header-section-number">18.4</span> Vantagens sobre Canaletas de Concreto</h2>
+<p>A <a href="#tbl-comparativo" class="quarto-xref">Tabela&nbsp;<span class="quarto-unresolved-ref">tbl-comparativo</span></a> demonstra que a canaleta verde é superior à canaleta de concreto em praticamente todos os critérios ambientais e econômicos, com custo de implantação 50–70% menor, capacidade de infiltração e filtração ausente em canais impermeáveis, e manutenção simplificada (roçada mecânica versus limpeza de detritos em canaleta de concreto). A única vantagem da canaleta de concreto é a maior capacidade hidráulica por unidade de área de seção (menor <span class="math inline">\(n\)</span> de Manning), o que pode ser relevante em áreas com espaço extremamente limitado para a seção do canal.</p>
+<div id="tbl-comparativo" class="striped hover quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-comparativo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;18.4: Comparativo entre canaletas de concreto e canaletas verdes.
+</figcaption>
+<div aria-describedby="tbl-comparativo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th>Critério</th>
+<th>Canaleta de concreto</th>
+<th>Canaleta verde</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Custo de implantação</td>
+<td>R$ 150–400/m</td>
+<td>R$ 40–120/m</td>
+</tr>
+<tr class="even">
+<td>Infiltração</td>
+<td>Nula</td>
+<td>30–60% do volume</td>
+</tr>
+<tr class="odd">
+<td>Remoção de sedimentos</td>
+<td>~ 0%</td>
+<td>60–85%</td>
+</tr>
+<tr class="even">
+<td>Manutenção</td>
+<td>Limpeza mecânica</td>
+<td>Roçada 2–4×/ano</td>
+</tr>
+<tr class="odd">
+<td>Vida útil</td>
+<td>30+ anos</td>
+<td>Permanente (vegetal)</td>
+</tr>
+<tr class="even">
+<td>Emissão de CO₂</td>
+<td>Alta (concreto)</td>
+<td>Sequestro</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Infraestrutura verde
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Canaletas verdes são um componente central da infraestrutura verde urbana (<em>green infrastructure</em>), reconhecidas como solução baseada na natureza (NbS) pela IUCN e pelo Banco Mundial. Sua integração com outras técnicas de bioengenharia, como biomantas (<a href="#sec-biomantas" class="quarto-xref"><span class="quarto-unresolved-ref">sec-biomantas</span></a>) e hidrossemeadura (<a href="#sec-hidrossemeadura" class="quarto-xref"><span class="quarto-unresolved-ref">sec-hidrossemeadura</span></a>), potencializa a eficiência de tratamento e o estabelecimento da cobertura vegetal protetora.</p>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/diegovidalcv\.com\.br\/books\/bioengenharia-solos\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../capitulos/15-parede-krainer.html" class="pagination-link" aria-label="Parede Krainer">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Parede Krainer</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../capitulos/17-geotexteis.html" class="pagination-link" aria-label="Geotêxteis">
+        <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Geotêxteis</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Luiz Diego Vidal Santos, 2026. <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ldvsantos/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Feito com <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
