@@ -308,11 +308,11 @@ for row in range(ROWS):
         variation = np.random.randint(-15, 16)
         color = tuple(max(10, min(255, c + variation)) for c in base)
 
-        # Alpha variável: mais opaco no centro, mais transparente nas bordas
+        # Alpha variável reduzido para mostrar mais a foto de fundo
         dist_center_y = abs((y0 + y1) / 2 - (MOSAIC_Y0 + MOSAIC_Y1) / 2)
         max_dist_y = (MOSAIC_Y1 - MOSAIC_Y0) / 2
-        alpha = int(200 - 80 * (dist_center_y / max_dist_y))
-        alpha = max(80, min(220, alpha))
+        alpha = int(120 - 90 * (dist_center_y / max_dist_y))
+        alpha = max(15, min(140, alpha))
 
         mos_draw.rounded_rectangle(
             [(int(x0), int(y0)), (int(x1), int(y1))],
