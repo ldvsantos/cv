@@ -94,6 +94,7 @@ format:
     colorlinks: true
     fig-pos: "H"
     include-in-header: cover.tex
+    include-after-body: backcover.tex
     geometry:
       - top=2.5cm
       - bottom=2.5cm
