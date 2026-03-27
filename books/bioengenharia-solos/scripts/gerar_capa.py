@@ -1,0 +1,149 @@
+"""
+Gera a capa para "Bioengenharia de Solos em Regiões Tropicais"
+Tema forte em raízes, camadas de solo e sustentação biológica.
+"""
+
+import numpy as np
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
+import os, math, random
+
+W, H = 1357, 1888
+DPI = 150
+
+# Paleta terrosa e orgânica
+c_soil_dark = (35, 20, 15)
+c_soil_core = (55, 30, 20)
+c_vegetation = (50, 140, 70)
+c_light_green = (120, 190, 100)
+c_acc = (230, 200, 140) # areia/raiz
+WHITE = (255, 255, 255)
+SUBTLE = (200, 190, 180)
+
+def get_font(name, size, bold=False):
+    cands = [
+        f"C:/Windows/Fonts/{name}bd.ttf" if bold else f"C:/Windows/Fonts/{name}.ttf",
+        f"C:/Windows/Fonts/{name}-Bold.ttf" if bold else f"C:/Windows/Fonts/{name}-Regular.ttf",
+        "C:/Windows/Fonts/arial.ttf"
+    ]
+    for path in cands:
+        if os.path.exists(path): return ImageFont.truetype(path, size)
+    return ImageFont.load_default()
+
+# 1. Fundo Gradiente (Solo -> Vegetação super leve no topo)
+img = Image.new("RGBA", (W, H), c_soil_dark)
+draw = ImageDraw.Draw(img)
+for y in range(H):
+    t = y / H
+    if t < 0.2: # Topo verde (ar/vegetação)
+        tr = t / 0.2
+        r = int(c_vegetation[0]*(1-tr) + c_soil_core[0]*tr)
+        g = int(c_vegetation[1]*(1-tr) + c_soil_core[1]*tr)
+        b = int(c_vegetation[2]*(1-tr) + c_soil_core[2]*tr)
+    else: # Solo e subsolo
+        tr = (t - 0.2) / 0.8
+        r = int(c_soil_core[0]*(1-tr) + c_soil_dark[0]*tr)
+        g = int(c_soil_core[1]*(1-tr) + c_soil_dark[1]*tr)
+        b = int(c_soil_core[2]*(1-tr) + c_soil_dark[2]*tr)
+    draw.line([(0, y), (W, y)], fill=(r,g,b,255))
+
+# 2. Camadas do solo estilizadas
+np.random.seed(101)
+layer_img = Image.new("RGBA", (W, H), (0,0,0,0))
+layer_draw = ImageDraw.Draw(layer_img)
+
+for i in range(5):
+    y_base = 400 + i * 250
+    pts = [(0, H), (0, y_base)]
+    for x in range(0, W + 100, 50):
+        amp = max(20, 80 - i*10)
+        y = y_base + math.sin(x * 0.005 + i) * amp + math.cos(x * 0.01) * 30
+        pts.append((x, y))
+    pts.append((W, y_base))
+    pts.append((W, H))
+    
+    alpha = 40 - i*5
+    # tom ligeiramente mais escuro a cada perfil
+    layer_draw.polygon(pts, fill=(20, 10, 5, alpha))
+img = Image.alpha_composite(img, layer_img)
+
+# 3. Raízes de Bioengenharia
+roots_img = Image.new("RGBA", (W, H), (0,0,0,0))
+r_draw = ImageDraw.Draw(roots_img)
+
+def draw_root(x, y, angle, length, thickness, depth):
+    if depth == 0 or thickness < 1: return
+    x_end = x + math.cos(angle) * length
+    y_end = y + math.sin(angle) * length
+    # cor da raiz baseada na profundidade e espessura
+    clr = (c_acc[0], c_acc[1], c_acc[2], max(30, int(80 + thickness*15)))
+    r_draw.line([(x, y), (x_end, y_end)], fill=clr, width=int(thickness))
+    
+    # bifurcação
+    if random.random() < 0.7:
+        a_offset = random.uniform(0.2, 0.6)
+        draw_root(x_end, y_end, angle + a_offset, length * 0.7, thickness * 0.6, depth - 1)
+        a_offset2 = random.uniform(0.2, 0.6)
+        draw_root(x_end, y_end, angle - a_offset2, length * 0.7, thickness * 0.6, depth - 1)
+    else:
+        a_offset = random.uniform(-0.3, 0.3)
+        draw_root(x_end, y_end, angle + a_offset, length * 0.9, thickness * 0.8, depth - 1)
+
+for _ in range(8):  # grandes sistemas isolados
+    sx = random.randint(100, W - 100)
+    draw_root(sx, 300, math.pi/2 + random.uniform(-0.2, 0.2), 150, 8, 7)
+
+roots_img = roots_img.filter(ImageFilter.GaussianBlur(radius=0.5))
+img = Image.alpha_composite(img, roots_img)
+
+# Área escura para leitura
+ov = Image.new("RGBA", (W, H), (0,0,0,0))
+ImageDraw.Draw(ov).rectangle([0,0, W, 280], fill=(15, 25, 15, 200))
+ImageDraw.Draw(ov).rectangle([0,280, W, 350], fill=(15, 25, 15, 140))
+ImageDraw.Draw(ov).rectangle([0,1300, W, H], fill=(10, 10, 10, 200))
+img = Image.alpha_composite(img, ov)
+
+# 4. Textos
+draw = ImageDraw.Draw(img)
+font_t = get_font("calibri", 110, bold=True)
+font_st = get_font("calibri", 46)
+font_a = get_font("calibri", 54, bold=True)
+font_i = get_font("calibri", 36)
+font_s = get_font("calibri", 30)
+
+def draw_spaced(draw, txt, xc, y, f, fill, sp):
+    cw = [f.getbbox(c)[2]-f.getbbox(c)[0] for c in txt]
+    tw = sum(cw) + sp*(len(txt)-1)
+    x = xc - tw//2
+    for c, w in zip(txt, cw):
+        draw.text((x,y), c, font=f, fill=fill)
+        x += w + sp
+
+draw_spaced(draw, "BIOENGENHARIA", W//2, 80, font_t, WHITE, 12)
+draw_spaced(draw, "DE SOLOS", W//2, 185, font_t, c_light_green, 15)
+
+draw.line([(W//2 - 300, 320), (W//2 + 300, 320)], fill=(c_light_green[0], c_light_green[1], c_light_green[2], 150), width=2)
+# Subtítulo na box
+sub_bg = Image.new("RGBA", (W, 140), (0,0,0,0))
+ImageDraw.Draw(sub_bg).rounded_rectangle([W//2-500, 5, W//2+500, 135], radius=15, fill=(5,15,10, 180))
+img.paste(Image.alpha_composite(Image.new("RGBA", (W, 140), (0,0,0,0)), sub_bg), (0, 350), sub_bg)
+draw = ImageDraw.Draw(img)
+
+def center_t(draw, text, y, font, fill):
+    bb = font.getbbox(text)
+    draw.text(((W-(bb[2]-bb[0]))//2, y), text, font=font, fill=fill)
+
+center_t(draw, "Fundamentos, Técnicas e Soluções", 365, font_st, WHITE)
+center_t(draw, "Baseadas na Natureza", 420, font_st, WHITE)
+
+# Autor e detalhes em baixo
+draw.line([(W//2 - 350, 1420), (W//2 + 350, 1420)], fill=c_light_green+(120,), width=2)
+center_t(draw, "Luiz Diego Vidal Santos", 1470, font_a, WHITE)
+center_t(draw, "Universidade Estadual de Feira de Santana", 1545, font_i, SUBTLE)
+center_t(draw, "2026  •  CC BY-NC-SA 4.0", 1610, font_s, SUBTLE)
+
+# Salvar
+out = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "img", "capa_bioengenharia_de_solos.png"))
+final = Image.new("RGB", img.size, (0,0,0))
+final.paste(img, mask=img.split()[3])
+final.save(out, "PNG", dpi=(DPI, DPI))
+print(f"Salvo: {out}")
