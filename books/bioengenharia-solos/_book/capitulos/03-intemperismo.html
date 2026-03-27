@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Livro-texto sobre bioengenharia de solos aplicada a regiões tropicais, integrando fundamentos pedológicos, técnicas de estabilização biológica e soluções baseadas na natureza (NBS) para conservação e recuperação de solos degradados.">
+
+<title>4&nbsp; Conceito de Intemperismo – Bioengenharia de Solos em Regiões Tropicais</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../capitulos/04-erosao.html" rel="next">
+<link href="../capitulos/02-solos-tropicais.html" rel="prev">
+<link href="../img/capa_bioengenharia_de_solos.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-12f6d87c9cc8cd23abdf3d99f8b9f8fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/01-introducao.html">Parte I — Fundamentos</a></li><li class="breadcrumb-item"><a href="../capitulos/03-intemperismo.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conceito de Intemperismo</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Bioengenharia de Solos em Regiões Tropicais</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/ldvsantos/cv/" title="Código fonte" class="quarto-navigation-tool px-1" aria-label="Código fonte"><i class="bi bi-github"></i></a>
+    <a href="../Bioengenharia-de-Solos-em-Regiões-Tropicais.pdf" title="Baixar PDF" class="quarto-navigation-tool px-1" aria-label="Baixar PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Compartilhar" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Compartilhar"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sobre este livro</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../prefacio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">prefacio.html</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte I — Fundamentos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/01-introducao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">O que é Bioengenharia de Solos?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/02-solos-tropicais.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">O Solo como Sistema Aberto</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/03-intemperismo.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conceito de Intemperismo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/04-erosao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Conceito e Magnitude</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/05-classificacao-feicoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Importância da Classificação</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte II — Técnicas de Bioengenharia</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/06-revegetacao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Princípios da Revegetação</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/07-palicadas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Paliçadas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/08-bacias-captacao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Bacias de Captação</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/09-feixes-drenos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Feixes Vivos (<em>Fascines</em>)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/10-hidrossemeadura.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Hidrossemeadura</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/11-biomantas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Biomantas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/12-enrocamento.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Enrocamento Vegetado</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/13-cordoes-fascinas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Cordões Vegetativos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/14-gabiao-vivo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Gabião Vivo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/15-parede-krainer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Parede Krainer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/16-canaleta-verde.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Canaleta Verde</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte III — Geotêxteis e Inovação</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/17-geotexteis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Geotêxteis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/18-biotexteis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Biotêxteis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/19-biopolimeros.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Biopolímeros Superabsorventes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte IV — Projeto e Integração</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/20-nbs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Definição</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/21-projeto-integrador.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Objetivo</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte V — Monitoramento e Análise</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/22-modelagem-3d.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Modelagem 3D de Sistemas Radiculares</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../referencias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">referencias.html</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#sec-intemperismo" id="toc-sec-intemperismo" class="nav-link active" data-scroll-target="#sec-intemperismo"><span class="header-section-number">5</span> Intemperismo e Transformação do Solo</a>
+  <ul class="collapse">
+  <li><a href="#intemperismo-físico" id="toc-intemperismo-físico" class="nav-link" data-scroll-target="#intemperismo-físico"><span class="header-section-number">5.1</span> Intemperismo Físico</a>
+  <ul class="collapse">
+  <li><a href="#alívio-de-pressão" id="toc-alívio-de-pressão" class="nav-link" data-scroll-target="#alívio-de-pressão"><span class="header-section-number">5.1.1</span> Alívio de Pressão</a></li>
+  <li><a href="#termoclastia" id="toc-termoclastia" class="nav-link" data-scroll-target="#termoclastia"><span class="header-section-number">5.1.2</span> Termoclastia</a></li>
+  <li><a href="#crescimento-de-cristais" id="toc-crescimento-de-cristais" class="nav-link" data-scroll-target="#crescimento-de-cristais"><span class="header-section-number">5.1.3</span> Crescimento de Cristais</a></li>
+  <li><a href="#ação-biológica-mecânica" id="toc-ação-biológica-mecânica" class="nav-link" data-scroll-target="#ação-biológica-mecânica"><span class="header-section-number">5.1.4</span> Ação Biológica Mecânica</a></li>
+  </ul></li>
+  <li><a href="#intemperismo-químico" id="toc-intemperismo-químico" class="nav-link" data-scroll-target="#intemperismo-químico"><span class="header-section-number">5.2</span> Intemperismo Químico</a>
+  <ul class="collapse">
+  <li><a href="#papel-da-água" id="toc-papel-da-água" class="nav-link" data-scroll-target="#papel-da-água"><span class="header-section-number">5.2.1</span> Papel da Água</a></li>
+  <li><a href="#principais-reações" id="toc-principais-reações" class="nav-link" data-scroll-target="#principais-reações"><span class="header-section-number">5.2.2</span> Principais Reações</a></li>
+  <li><a href="#série-de-goldich" id="toc-série-de-goldich" class="nav-link" data-scroll-target="#série-de-goldich"><span class="header-section-number">5.2.3</span> Série de Goldich</a></li>
+  </ul></li>
+  <li><a href="#índice-de-intemperismo-químico-cia" id="toc-índice-de-intemperismo-químico-cia" class="nav-link" data-scroll-target="#índice-de-intemperismo-químico-cia"><span class="header-section-number">5.3</span> Índice de Intemperismo Químico (CIA)</a></li>
+  <li><a href="#minerais-diagnósticos-dos-solos-tropicais" id="toc-minerais-diagnósticos-dos-solos-tropicais" class="nav-link" data-scroll-target="#minerais-diagnósticos-dos-solos-tropicais"><span class="header-section-number">5.4</span> Minerais Diagnósticos dos Solos Tropicais</a>
+  <ul class="collapse">
+  <li><a href="#caulinita" id="toc-caulinita" class="nav-link" data-scroll-target="#caulinita"><span class="header-section-number">5.4.1</span> Caulinita</a></li>
+  <li><a href="#goethita-feooh" id="toc-goethita-feooh" class="nav-link" data-scroll-target="#goethita-feooh"><span class="header-section-number">5.4.2</span> Goethita (FeOOH)</a></li>
+  <li><a href="#hematita-fe₂o₃" id="toc-hematita-fe₂o₃" class="nav-link" data-scroll-target="#hematita-fe₂o₃"><span class="header-section-number">5.4.3</span> Hematita (Fe₂O₃)</a></li>
+  <li><a href="#gibbsita-aloh₃" id="toc-gibbsita-aloh₃" class="nav-link" data-scroll-target="#gibbsita-aloh₃"><span class="header-section-number">5.4.4</span> Gibbsita (Al(OH)₃)</a></li>
+  </ul></li>
+  <li><a href="#implicações-para-a-bioengenharia" id="toc-implicações-para-a-bioengenharia" class="nav-link" data-scroll-target="#implicações-para-a-bioengenharia"><span class="header-section-number">5.5</span> Implicações para a Bioengenharia</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ldvsantos/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/01-introducao.html">Parte I — Fundamentos</a></li><li class="breadcrumb-item"><a href="../capitulos/03-intemperismo.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conceito de Intemperismo</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conceito de Intemperismo</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="sec-intemperismo" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Intemperismo e Transformação do Solo</h1>
+<p>O intemperismo é o conjunto de processos físicos, químicos e biológicos que transformam rochas consolidadas em materiais inconsolidados (saprolito e solo). Para quem trabalha com bioengenharia, compreender o intemperismo é essencial por uma razão simples: ele é o processo que “fabrica” o substrato sobre o qual todas as intervenções são projetadas. A profundidade do manto de alteração, a mineralogia das argilas formadas e a estrutura do solo resultante são consequências diretas da intensidade e do tipo de intemperismo atuante.</p>
+<p>Em regiões tropicais, o intemperismo é mais intenso e profundo do que em qualquer outra zona climática do planeta. A combinação de temperaturas médias elevadas (&gt; 20 °C), precipitação abundante (&gt; 1.200 mm/ano) e intensa atividade biológica acelera as reações de decomposição mineral, resultando em mantos de alteração que podem alcançar dezenas de metros de espessura. A <a href="#fig-agentes" class="quarto-xref">Figura&nbsp;<span>5.1</span></a> sintetiza os agentes que atuam simultaneamente nesse processo de transformação.</p>
+<section id="intemperismo-físico" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="intemperismo-físico"><span class="header-section-number">5.1</span> Intemperismo Físico</h2>
+<div id="fig-agentes" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Agentes ativos do intemperismo">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-agentes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/agentes_ativos.png" class="img-fluid figure-img" style="width:80.0%" alt="Agentes ativos do intemperismo">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-agentes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5.1: Agentes do intemperismo atuando sobre a rocha: processos físicos, químicos e biológicos que transformam a rocha em solo.
+</figcaption>
+</figure>
+</div>
+<p>O intemperismo físico fragmenta mecanicamente a rocha sem alterar sua composição mineralógica. Trata-se da “quebra” da rocha em pedaços cada vez menores, aumentando a superfície específica exposta e, com isso, acelerando o ataque químico subsequente. É importante compreender que o intemperismo físico não atua sozinho; ele prepara o terreno para o intemperismo químico, que será o agente dominante nos trópicos. Os principais mecanismos em regiões tropicais são descritos a seguir.</p>
+<section id="alívio-de-pressão" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="alívio-de-pressão"><span class="header-section-number">5.1.1</span> Alívio de Pressão</h3>
+<p>Quando rochas formadas em grande profundidade (sob pressão de quilômetros de material sobrejacente) são gradualmente expostas à superfície pela remoção erosiva das camadas superiores, a descompressão gera fraturas subparalelas à topografia, fenômeno conhecido como <em>sheet joints</em> ou <em>sheeting</em>. Esse processo é visível na <a href="#fig-alivio" class="quarto-xref">Figura&nbsp;<span>5.2</span></a>.</p>
+<div id="fig-alivio" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Alívio de pressão em rocha granítica">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-alivio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/alivio_pressao.png" class="img-fluid figure-img" style="width:70.0%" alt="Alívio de pressão em rocha granítica">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-alivio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5.2: Fraturas geradas por alívio de pressão em rochas graníticas — a descompressão gera sistemas de fraturas subparalelas à superfície.
+</figcaption>
+</figure>
+</div>
+<p>Esse mecanismo é particularmente importante em maciços graníticos e gnáissicos nos inselbergs do Nordeste brasileiro, onde as fraturas geradas pelo alívio de pressão criam caminhos preferenciais para a infiltração da água, acelerando o intemperismo químico nos planos de descontinuidade. Em termos práticos, encostas rochosas com <em>sheeting</em> bem desenvolvido são mais suscetíveis a desprendimentos de lajes e blocos, o que deve ser considerado no projeto de intervenções.</p>
+</section>
+<section id="termoclastia" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="termoclastia"><span class="header-section-number">5.1.2</span> Termoclastia</h3>
+<p>A variação diurna de temperatura causa expansão e contração diferencial dos minerais que compõem a rocha. Como cada mineral tem um coeficiente de dilatação térmica diferente, os ciclos de aquecimento e resfriamento geram tensões internas heterogêneas que, com o tempo, produzem microfissuras e fraturam progressivamente a rocha. A <a href="#fig-termoclastia" class="quarto-xref">Figura&nbsp;<span>5.3</span></a> ilustra esse processo.</p>
+<div id="fig-termoclastia" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Termoclastia e amplitude térmica">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-termoclastia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/termoclastia.png" class="img-fluid figure-img" style="width:65.0%" alt="Termoclastia e amplitude térmica">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-termoclastia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5.3: Variação de temperatura diurna em superfícies rochosas — a amplitude térmica gera tensões de expansão e contração nos minerais.
+</figcaption>
+</figure>
+</div>
+<p>Em regiões semiáridas tropicais (como a Caatinga brasileira), a amplitude térmica superficial pode alcançar 60 °C (rocha exposta ao sol a 70 °C versus ar noturno a 10 °C), gerando tensões suficientes para fraturar até rochas muito competentes. A termoclastia é um dos fatores que explicam a produção de cascalho e areia grossa nos pedimentos semiáridos, materiais que podem ser aproveitados como agregados em estruturas de bioengenharia.</p>
+</section>
+<section id="crescimento-de-cristais" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="crescimento-de-cristais"><span class="header-section-number">5.1.3</span> Crescimento de Cristais</h3>
+<p>Em ambientes semiáridos, a evaporação de soluções salinas nos poros e fraturas da rocha gera cristais de sais (cloretos, sulfatos, carbonatos) que exercem pressão de cristalização de até 300 MPa sobre as paredes dos poros, fragmentando progressivamente o substrato. Esse processo, chamado haloclastia, é responsável pela degradação acelerada de rochas em ambientes costeiros e em regiões com solos salinos, sendo especialmente relevante em obras de bioengenharia no Semiárido nordestino.</p>
+</section>
+<section id="ação-biológica-mecânica" class="level3" data-number="5.1.4">
+<h3 data-number="5.1.4" class="anchored" data-anchor-id="ação-biológica-mecânica"><span class="header-section-number">5.1.4</span> Ação Biológica Mecânica</h3>
+<p>As raízes de árvores e arbustos penetram fraturas preexistentes e exercem pressão mecânica de expansão à medida que crescem em diâmetro. Esse processo, chamado <em>root wedging</em>, é capaz de fragmentar blocos de rocha ao longo de décadas. Liquens e fungos contribuem para a fragmentação superficial combinando ação mecânica (hifas que penetram microfissuras) e ação química (exsudação de ácidos orgânicos). Para a bioengenharia, isso tem uma implicação paradoxal: embora o enraizamento seja desejável para estabilizar taludes de solo, raízes penetrando fraturas de rocha podem desestabilizar encostas rochosas.</p>
+</section>
+</section>
+<section id="intemperismo-químico" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="intemperismo-químico"><span class="header-section-number">5.2</span> Intemperismo Químico</h2>
+<p>O intemperismo químico é o processo dominante nos trópicos úmidos, responsável por transformar minerais primários (formados a altas temperaturas e pressões durante a consolidação da rocha) em minerais secundários (argilas e óxidos estáveis nas condições de superfície). A água é o agente principal dessas transformações, e sua abundância nos trópicos explica por que os solos tropicais são os mais profundamente intemperizados do planeta.</p>
+<section id="papel-da-água" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="papel-da-água"><span class="header-section-number">5.2.1</span> Papel da Água</h3>
+<p>A molécula de água desempenha três funções simultâneas e indissociáveis no intemperismo químico. Atua como solvente (dissolvendo íons e moléculas dos minerais por sua elevada constante dielétrica), como reagente (participando diretamente das reações de hidrólise, que são as mais importantes nos trópicos) e como meio de transporte (removendo produtos solúveis por lixiviação e redistribuindo materiais ao longo do perfil).</p>
+<p>A taxa de intemperismo químico aumenta exponencialmente com a temperatura, seguindo a Lei de Arrhenius:</p>
+<p><span class="math display">\[
+k = A \cdot e^{-E_a / RT}
+\]</span></p>
+<p>onde <span class="math inline">\(k\)</span> é a constante de velocidade da reação, <span class="math inline">\(A\)</span> é o fator de frequência (frequência com que as moléculas colidem com orientação favorável), <span class="math inline">\(E_a\)</span> é a energia de ativação (barreira energética que deve ser superada para que a reação ocorra), <span class="math inline">\(R\)</span> é a constante universal dos gases (8,314 J mol⁻¹ K⁻¹) e <span class="math inline">\(T\)</span> é a temperatura absoluta (em kelvin). Em termos práticos, cada aumento de 10 °C na temperatura duplica aproximadamente a velocidade das reações de intemperismo, o que explica por que solos tropicais atingem graus de intemperismo que solos temperados levariam milhões de anos adicionais para alcançar.</p>
+</section>
+<section id="principais-reações" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="principais-reações"><span class="header-section-number">5.2.2</span> Principais Reações</h3>
+<p>A hidrólise constitui a reação mais importante nos trópicos, pois é o mecanismo pelo qual os silicatos (minerais dominantes nas rochas da crosta) são decompostos pela ação de íons H⁺ da água. O exemplo clássico é a hidrólise do feldspato potássico (ortoclásio, um dos minerais mais comuns em granitos) para caulinita (a argila dominante nos solos tropicais):</p>
+<p><span class="math display">\[
+2 \text{KAlSi}_3\text{O}_8 + 2\text{H}^+ + 9\text{H}_2\text{O} \rightarrow \text{Al}_2\text{Si}_2\text{O}_5(\text{OH})_4 + 4\text{H}_4\text{SiO}_4 + 2\text{K}^+
+\]</span></p>
+<p>Note que a reação consome dois moles de feldspato e produz caulinita (que permanece no solo) e sílica dissolvida e potássio em solução (que são exportados pela drenagem). Essa exportação contínua de sílica e bases é responsável pelo empobrecimento químico progressivo dos solos tropicais.</p>
+<p>A oxidação promove a conversão de ferro ferroso (Fe²⁺, solúvel) em ferro férrico (Fe³⁺, insolúvel), formando os óxidos de ferro responsáveis pelas cores vermelhas e amarelas características dos solos tropicais:</p>
+<p><span class="math display">\[
+4\text{Fe}^{2+} + 3\text{O}_2 + 6\text{H}_2\text{O} \rightarrow 4\text{FeOOH} + 8\text{H}^+
+\]</span></p>
+<p>O produto dessa reação (goethita, FeOOH) é um dos minerais mais estáveis nas condições tropicais e desempenha papel fundamental na microagregação dos solos lateríticos, conferindo-lhes estabilidade estrutural mesmo com altos teores de argila. Esse é um aspecto positivo para a bioengenharia, pois a microagregação facilita a infiltração e a penetração radicular.</p>
+<p>A dissolução corresponde à remoção completa de íons solúveis (Ca²⁺, Mg²⁺, K⁺, Na⁺) pela lixiviação, concentrando residualmente os óxidos de ferro e alumínio mais insolúveis. É esse processo de empobrecimento seletivo que transforma, ao longo de milhões de anos, uma rocha rica em diversos minerais em um solo dominado por caulinita, goethita e gibbsita.</p>
+</section>
+<section id="série-de-goldich" class="level3" data-number="5.2.3">
+<h3 data-number="5.2.3" class="anchored" data-anchor-id="série-de-goldich"><span class="header-section-number">5.2.3</span> Série de Goldich</h3>
+<p>A série de estabilidade de Goldich (inversa da série de cristalização de Bowen) ordena os minerais segundo sua resistência ao intemperismo. Minerais formados em altas temperaturas e pressões (primeiros a cristalizar no magma) são os menos estáveis nas condições de superfície e, portanto, os primeiros a serem destruídos pelo intemperismo.</p>
+<div id="tbl-goldich" class="striped quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-goldich-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;5.1: Série de estabilidade de Goldich, onde minerais formados em altas temperaturas (esquerda) são os primeiros a intemperizar.
+</figcaption>
+<div aria-describedby="tbl-goldich-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped caption-top table">
+<thead>
+<tr class="header">
+<th>Mais susceptível →</th>
+<th>→ Menos susceptível</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Olivina</td>
+<td>Quartzo</td>
+</tr>
+<tr class="even">
+<td>Piroxênio</td>
+<td>Muscovita</td>
+</tr>
+<tr class="odd">
+<td>Anfibólio</td>
+<td>Feldspato potássico</td>
+</tr>
+<tr class="even">
+<td>Biotita</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Para a bioengenharia, a série de Goldich tem uma implicação prática imediata. Solos derivados de rochas ricas em olivina e piroxênio (como basaltos) intemperizam rapidamente e produzem solos argilosos profundos (Latossolos), enquanto solos derivados de rochas quartzosas (como arenitos) geram solos arenosos rasos com baixa coesão e alta erodibilidade. A identificação da rocha-mãe permite, portanto, antecipar as propriedades do solo e selecionar as técnicas de bioengenharia mais adequadas.</p>
+</section>
+</section>
+<section id="índice-de-intemperismo-químico-cia" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="índice-de-intemperismo-químico-cia"><span class="header-section-number">5.3</span> Índice de Intemperismo Químico (CIA)</h2>
+<p>Para quantificar objetivamente o grau de intemperismo de um solo ou saprolito, utiliza-se o Chemical Index of Alteration (CIA), proposto por Nesbitt e Young (1982):</p>
+<p><span class="math display">\[
+\text{CIA} = \frac{\text{Al}_2\text{O}_3}{\text{Al}_2\text{O}_3 + \text{CaO}^* + \text{Na}_2\text{O} + \text{K}_2\text{O}} \times 100
+\]</span></p>
+<p>O CIA mede a proporção de alumínio (que permanece no solo como argilas e hidróxidos) em relação à soma de alumínio e bases (cálcio, sódio e potássio, que são progressivamente removidos pela lixiviação). Quanto mais alto o CIA, mais intenso foi o intemperismo. A <a href="#tbl-cia" class="quarto-xref">Tabela&nbsp;<span>5.2</span></a> apresenta a interpretação dos valores.</p>
+<div id="tbl-cia" class="striped quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-cia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;5.2: Interpretação do CIA para diferentes graus de intemperismo.
+</figcaption>
+<div aria-describedby="tbl-cia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped caption-top table">
+<thead>
+<tr class="header">
+<th>CIA</th>
+<th>Grau de intemperismo</th>
+<th>Exemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>50</td>
+<td>Rocha fresca</td>
+<td>Granito inalterado</td>
+</tr>
+<tr class="even">
+<td>60–70</td>
+<td>Moderado</td>
+<td>Solos de zona temperada</td>
+</tr>
+<tr class="odd">
+<td>75–85</td>
+<td>Avançado</td>
+<td>Argissolos tropicais</td>
+</tr>
+<tr class="even">
+<td>85–100</td>
+<td>Extremo</td>
+<td>Latossolos, bauxitas</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="minerais-diagnósticos-dos-solos-tropicais" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="minerais-diagnósticos-dos-solos-tropicais"><span class="header-section-number">5.4</span> Minerais Diagnósticos dos Solos Tropicais</h2>
+<p>Os produtos finais do intemperismo nos trópicos são um conjunto restrito de minerais muito estáveis que dominam a mineralogia dos solos. Conhecê-los é fundamental para a bioengenharia, pois cada mineral confere propriedades geotécnicas e químicas distintas ao solo.</p>
+<section id="caulinita" class="level3" data-number="5.4.1">
+<h3 data-number="5.4.1" class="anchored" data-anchor-id="caulinita"><span class="header-section-number">5.4.1</span> Caulinita</h3>
+<p>A caulinita é uma argila do tipo 1:1 (uma lâmina tetraédrica de sílica ligada a uma lâmina octaédrica de alumina), com espaçamento basal de 7,2 Å. Trata-se do argilomineral mais abundante nos solos tropicais bem drenados, sendo o produto direto da hidrólise dos feldspatos conforme discutido acima. A <a href="#fig-caulinita" class="quarto-xref">Figura&nbsp;<span>5.4</span></a> mostra a aparência característica desse mineral ao microscópio.</p>
+<div id="fig-caulinita" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Caulinita mineral">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-caulinita-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/caulinita.jpg" class="img-fluid figure-img" style="width:60.0%" alt="Caulinita mineral">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-caulinita-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5.4: Caulinita — argilomineral 1:1 dominante nos solos tropicais bem drenados, com baixa CTC e expansibilidade.
+</figcaption>
+</figure>
+</div>
+<p>Para a bioengenharia, as propriedades da caulinita têm implicações diretas. Sua baixa capacidade de troca catiônica (CTC ≈ 3–15 cmolc/kg, contra 80–150 cmolc/kg em argilas montmoriloníticas) significa que solos cauliníticos retêm poucos nutrientes, exigindo adição de matéria orgânica para sustentar o crescimento vegetal. Sua baixa expansibilidade (não incha nem contrai com variações de umidade, diferentemente das argilas 2:1) confere estabilidade volumétrica ao solo, o que é vantajoso para estruturas construídas sobre ele. Sua coesão moderada explica a estabilidade aparente dos solos tropicais secos, mas a perda rápida de resistência quando saturados.</p>
+</section>
+<section id="goethita-feooh" class="level3" data-number="5.4.2">
+<h3 data-number="5.4.2" class="anchored" data-anchor-id="goethita-feooh"><span class="header-section-number">5.4.2</span> Goethita (FeOOH)</h3>
+<p>A goethita é o óxido de ferro responsável pela cor amarela dos solos tropicais. Predomina em ambientes mais úmidos e com menor variação sazonal de umidade (como topos de morro sombreados ou solos de encostas voltadas para o sul no hemisfério sul). A goethita cristaliza com maior teor de água em sua estrutura e reflete a luz na faixa do amarelo-ocre. Em termos geotécnicos, a presença dominante de goethita em relação à hematita indica solos com regime hídrico mais úmido, o que deve ser considerado no dimensionamento da drenagem em projetos de bioengenharia.</p>
+</section>
+<section id="hematita-fe₂o₃" class="level3" data-number="5.4.3">
+<h3 data-number="5.4.3" class="anchored" data-anchor-id="hematita-fe₂o₃"><span class="header-section-number">5.4.3</span> Hematita (Fe₂O₃)</h3>
+<p>A hematita é o óxido de ferro que confere a cor vermelha intensa aos solos tropicais, sendo o resultado da desidratação da goethita em condições de boa drenagem e estação seca definida. A <a href="#fig-hematita" class="quarto-xref">Figura&nbsp;<span>5.5</span></a> ilustra a coloração característica desse mineral.</p>
+<div id="fig-hematita" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Hematita mineral">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hematita-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/hematita.png" class="img-fluid figure-img" style="width:60.0%" alt="Hematita mineral">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hematita-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5.5: Hematita — óxido de ferro que confere a coloração vermelha característica dos solos tropicais bem drenados.
+</figcaption>
+</figure>
+</div>
+<p>A hematita possui papel fundamental na microagregação dos solos tropicais (Latossolos). Ela atua como agente cimentante entre partículas de caulinita, formando microagregados esféricos de 0,1–1,0 mm de diâmetro que conferem ao solo uma estrutura granular extremamente estável e, paradoxalmente, fazem com que solos com 60–80% de argila se comportem hidraulicamente como areias (alta permeabilidade, baixa plasticidade). Essa microagregação é benéfica para a bioengenharia por facilitar a infiltração e o enraizamento, mas é destruída por compactação ou erosão superficial intensa.</p>
+</section>
+<section id="gibbsita-aloh₃" class="level3" data-number="5.4.4">
+<h3 data-number="5.4.4" class="anchored" data-anchor-id="gibbsita-aloh₃"><span class="header-section-number">5.4.4</span> Gibbsita (Al(OH)₃)</h3>
+<p>A gibbsita é um hidróxido de alumínio indicador de intemperismo extremo (ferraltização). Sua presença abundante indica que o solo perdeu praticamente toda a sílica por lixiviação, restando apenas alumínio e ferro como componentes minerais. É o mineral diagnóstico dos Latossolos mais intemperizados e das bauxitas (minério de alumínio). Em termos de bioengenharia, solos com alto teor de gibbsita são extremamente pobres em nutrientes (CTC da gibbsita ≈ 0) e exigem adição massiva de matéria orgânica para qualquer estratégia de revegetação.</p>
+</section>
+</section>
+<section id="implicações-para-a-bioengenharia" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="implicações-para-a-bioengenharia"><span class="header-section-number">5.5</span> Implicações para a Bioengenharia</h2>
+<p>O grau de intemperismo determina diretamente as propriedades geotécnicas do solo e, consequentemente, as decisões de projeto de bioengenharia. A compreensão da mineralogia e da evolução geoquímica do perfil permite antecipar comportamentos e selecionar técnicas com maior probabilidade de sucesso.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Atenção
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Solos extremamente intemperizados (CIA &gt; 85) apresentam um conjunto de propriedades que exige abordagens específicas de bioengenharia. A baixa CTC (dominada por caulinita e gibbsita) demanda reposição contínua de matéria orgânica para viabilizar o crescimento vegetal. A coesão aparente (conferida por cimentação por óxidos e sucção matricial) implica estabilidade temporária que é rapidamente perdida quando o solo satura, tornando essencial o gerenciamento da drenagem. A microagregação por óxidos de ferro gera comportamento pseudo-arenoso (alta permeabilidade em solo argiloso), o que pode parecer contraditório mas facilita tanto o enraizamento quanto a drenagem interna.</p>
+</div>
+</div>
+<p>Essas propriedades influenciam diretamente a seleção de técnicas. A baixa CTC demanda técnicas que agreguem matéria orgânica (mulch, biomantas, hidrossemeadura com compostos orgânicos), enquanto a coesão aparente torna essencial a drenagem superficial e subsuperficial para evitar saturação e colapso. Por outro lado, a microagregação facilita a penetração radicular, favorecendo técnicas vegetativas que se beneficiam da estrutura granular do solo. Em resumo, cada decisão de projeto de bioengenharia em solos tropicais deve ser fundamentada no conhecimento do grau de intemperismo e da mineralogia dominante do perfil.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/diegovidalcv\.com\.br\/books\/bioengenharia-solos\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../capitulos/02-solos-tropicais.html" class="pagination-link" aria-label="O Solo como Sistema Aberto">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">O Solo como Sistema Aberto</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../capitulos/04-erosao.html" class="pagination-link" aria-label="Conceito e Magnitude">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Conceito e Magnitude</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Luiz Diego Vidal Santos, 2026. <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ldvsantos/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Feito com <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Livro-texto sobre bioengenharia de solos aplicada a regiões tropicais, integrando fundamentos pedológicos, técnicas de estabilização biológica e soluções baseadas na natureza (NBS) para conservação e recuperação de solos degradados.">
+
+<title>23&nbsp; Modelagem 3D de Sistemas Radiculares – Bioengenharia de Solos em Regiões Tropicais</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../referencias.html" rel="next">
+<link href="../capitulos/21-projeto-integrador.html" rel="prev">
+<link href="../img/capa_bioengenharia_de_solos.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-12f6d87c9cc8cd23abdf3d99f8b9f8fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/22-modelagem-3d.html">Parte V — Monitoramento e Análise</a></li><li class="breadcrumb-item"><a href="../capitulos/22-modelagem-3d.html"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Modelagem 3D de Sistemas Radiculares</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Bioengenharia de Solos em Regiões Tropicais</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/ldvsantos/cv/" title="Código fonte" class="quarto-navigation-tool px-1" aria-label="Código fonte"><i class="bi bi-github"></i></a>
+    <a href="../Bioengenharia-de-Solos-em-Regiões-Tropicais.pdf" title="Baixar PDF" class="quarto-navigation-tool px-1" aria-label="Baixar PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Compartilhar" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Compartilhar"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo de leitor">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sobre este livro</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../prefacio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">prefacio.html</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte I — Fundamentos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/01-introducao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">O que é Bioengenharia de Solos?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/02-solos-tropicais.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">O Solo como Sistema Aberto</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/03-intemperismo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conceito de Intemperismo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/04-erosao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Conceito e Magnitude</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/05-classificacao-feicoes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Importância da Classificação</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte II — Técnicas de Bioengenharia</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/06-revegetacao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Princípios da Revegetação</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/07-palicadas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Paliçadas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/08-bacias-captacao.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Bacias de Captação</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/09-feixes-drenos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Feixes Vivos (<em>Fascines</em>)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/10-hidrossemeadura.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Hidrossemeadura</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/11-biomantas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Biomantas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/12-enrocamento.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Enrocamento Vegetado</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/13-cordoes-fascinas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Cordões Vegetativos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/14-gabiao-vivo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Gabião Vivo</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/15-parede-krainer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Parede Krainer</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/16-canaleta-verde.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Canaleta Verde</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte III — Geotêxteis e Inovação</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/17-geotexteis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Geotêxteis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/18-biotexteis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Biotêxteis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/19-biopolimeros.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Biopolímeros Superabsorventes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte IV — Projeto e Integração</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/20-nbs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Definição</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/21-projeto-integrador.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Objetivo</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Parte V — Monitoramento e Análise</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/22-modelagem-3d.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Modelagem 3D de Sistemas Radiculares</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../referencias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">referencias.html</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#introdução-à-fotogrametria-aplicada-a-raízes" id="toc-introdução-à-fotogrametria-aplicada-a-raízes" class="nav-link active" data-scroll-target="#introdução-à-fotogrametria-aplicada-a-raízes"><span class="header-section-number">23.1</span> Introdução à Fotogrametria Aplicada a Raízes</a></li>
+  <li><a href="#preparação-do-sítio-experimental" id="toc-preparação-do-sítio-experimental" class="nav-link" data-scroll-target="#preparação-do-sítio-experimental"><span class="header-section-number">23.2</span> Preparação do Sítio Experimental</a>
+  <ul class="collapse">
+  <li><a href="#critérios-de-seleção" id="toc-critérios-de-seleção" class="nav-link" data-scroll-target="#critérios-de-seleção"><span class="header-section-number">23.2.1</span> Critérios de Seleção</a></li>
+  <li><a href="#abertura-da-trincheira-e-exposição-das-raízes" id="toc-abertura-da-trincheira-e-exposição-das-raízes" class="nav-link" data-scroll-target="#abertura-da-trincheira-e-exposição-das-raízes"><span class="header-section-number">23.2.2</span> Abertura da Trincheira e Exposição das Raízes</a></li>
+  <li><a href="#montagem-da-cena" id="toc-montagem-da-cena" class="nav-link" data-scroll-target="#montagem-da-cena"><span class="header-section-number">23.2.3</span> Montagem da Cena</a></li>
+  </ul></li>
+  <li><a href="#aquisição-fotográfica" id="toc-aquisição-fotográfica" class="nav-link" data-scroll-target="#aquisição-fotográfica"><span class="header-section-number">23.3</span> Aquisição Fotográfica</a>
+  <ul class="collapse">
+  <li><a href="#configuração-da-câmera" id="toc-configuração-da-câmera" class="nav-link" data-scroll-target="#configuração-da-câmera"><span class="header-section-number">23.3.1</span> Configuração da Câmera</a></li>
+  <li><a href="#protocolo-de-captura-orbital" id="toc-protocolo-de-captura-orbital" class="nav-link" data-scroll-target="#protocolo-de-captura-orbital"><span class="header-section-number">23.3.2</span> Protocolo de Captura Orbital</a></li>
+  <li><a href="#resolução-espacial-gsd" id="toc-resolução-espacial-gsd" class="nav-link" data-scroll-target="#resolução-espacial-gsd"><span class="header-section-number">23.3.3</span> Resolução Espacial (GSD)</a></li>
+  </ul></li>
+  <li><a href="#processamento-fotogramétrico" id="toc-processamento-fotogramétrico" class="nav-link" data-scroll-target="#processamento-fotogramétrico"><span class="header-section-number">23.4</span> Processamento Fotogramétrico</a>
+  <ul class="collapse">
+  <li><a href="#pipeline-no-meshroom" id="toc-pipeline-no-meshroom" class="nav-link" data-scroll-target="#pipeline-no-meshroom"><span class="header-section-number">23.4.1</span> Pipeline no Meshroom</a></li>
+  <li><a href="#verificação-de-qualidade" id="toc-verificação-de-qualidade" class="nav-link" data-scroll-target="#verificação-de-qualidade"><span class="header-section-number">23.4.2</span> Verificação de Qualidade</a></li>
+  <li><a href="#exportação" id="toc-exportação" class="nav-link" data-scroll-target="#exportação"><span class="header-section-number">23.4.3</span> Exportação</a></li>
+  </ul></li>
+  <li><a href="#análise-no-cloudcompare" id="toc-análise-no-cloudcompare" class="nav-link" data-scroll-target="#análise-no-cloudcompare"><span class="header-section-number">23.5</span> Análise no CloudCompare</a>
+  <ul class="collapse">
+  <li><a href="#limpeza-da-nuvem-de-pontos" id="toc-limpeza-da-nuvem-de-pontos" class="nav-link" data-scroll-target="#limpeza-da-nuvem-de-pontos"><span class="header-section-number">23.5.1</span> Limpeza da Nuvem de Pontos</a></li>
+  <li><a href="#calibração-de-escala" id="toc-calibração-de-escala" class="nav-link" data-scroll-target="#calibração-de-escala"><span class="header-section-number">23.5.2</span> Calibração de Escala</a></li>
+  <li><a href="#visualização-por-profundidade" id="toc-visualização-por-profundidade" class="nav-link" data-scroll-target="#visualização-por-profundidade"><span class="header-section-number">23.5.3</span> Visualização por Profundidade</a></li>
+  </ul></li>
+  <li><a href="#extração-do-rar-por-cortes-transversais" id="toc-extração-do-rar-por-cortes-transversais" class="nav-link" data-scroll-target="#extração-do-rar-por-cortes-transversais"><span class="header-section-number">23.6</span> Extração do RAR por Cortes Transversais</a>
+  <ul class="collapse">
+  <li><a href="#método-de-fatiamento" id="toc-método-de-fatiamento" class="nav-link" data-scroll-target="#método-de-fatiamento"><span class="header-section-number">23.6.1</span> Método de Fatiamento</a></li>
+  <li><a href="#resultados-típicos" id="toc-resultados-típicos" class="nav-link" data-scroll-target="#resultados-típicos"><span class="header-section-number">23.6.2</span> Resultados Típicos</a></li>
+  </ul></li>
+  <li><a href="#estimativa-do-acréscimo-de-coesão" id="toc-estimativa-do-acréscimo-de-coesão" class="nav-link" data-scroll-target="#estimativa-do-acréscimo-de-coesão"><span class="header-section-number">23.7</span> Estimativa do Acréscimo de Coesão</a>
+  <ul class="collapse">
+  <li><a href="#modelo-de-wu-1979" id="toc-modelo-de-wu-1979" class="nav-link" data-scroll-target="#modelo-de-wu-1979"><span class="header-section-number">23.7.1</span> Modelo de Wu (1979)</a></li>
+  <li><a href="#modelo-de-waldron-1977" id="toc-modelo-de-waldron-1977" class="nav-link" data-scroll-target="#modelo-de-waldron-1977"><span class="header-section-number">23.7.2</span> Modelo de Waldron (1977)</a></li>
+  <li><a href="#fator-de-segurança" id="toc-fator-de-segurança" class="nav-link" data-scroll-target="#fator-de-segurança"><span class="header-section-number">23.7.3</span> Fator de Segurança</a></li>
+  </ul></li>
+  <li><a href="#ensaios-complementares" id="toc-ensaios-complementares" class="nav-link" data-scroll-target="#ensaios-complementares"><span class="header-section-number">23.8</span> Ensaios Complementares</a></li>
+  <li><a href="#vantagens-da-análise-3d-sobre-métodos-convencionais" id="toc-vantagens-da-análise-3d-sobre-métodos-convencionais" class="nav-link" data-scroll-target="#vantagens-da-análise-3d-sobre-métodos-convencionais"><span class="header-section-number">23.9</span> Vantagens da Análise 3D sobre Métodos Convencionais</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ldvsantos/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/22-modelagem-3d.html">Parte V — Monitoramento e Análise</a></li><li class="breadcrumb-item"><a href="../capitulos/22-modelagem-3d.html"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Modelagem 3D de Sistemas Radiculares</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-modelagem-3d" class="quarto-section-identifier"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Modelagem 3D de Sistemas Radiculares</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introdução-à-fotogrametria-aplicada-a-raízes" class="level2" data-number="23.1">
+<h2 data-number="23.1" class="anchored" data-anchor-id="introdução-à-fotogrametria-aplicada-a-raízes"><span class="header-section-number">23.1</span> Introdução à Fotogrametria Aplicada a Raízes</h2>
+<p>A quantificação da contribuição mecânica das raízes na estabilidade de taludes é um dos pilares da bioengenharia de solos. Conforme discutido nos capítulos anteriores, os modelos de Wu (<a href="02-solos-tropicais.html" class="quarto-xref"><span>Capítulo 4</span></a>) e Waldron dependem fundamentalmente de dois parâmetros: a resistência à tração das raízes (<span class="math inline">\(\overline{t_R}\)</span>) e a razão de área radicular (<em>Root Area Ratio</em> — RAR). Tradicionalmente, o RAR é estimado por métodos bidimensionais — análise de perfis expostos em trincheiras ou contagem de raízes em quadrículas —, que subestimam o volume radicular em 20–40% por não capturarem a distribuição tridimensional das raízes.</p>
+<p>A fotogrametria digital <em>Structure from Motion</em> (SfM) representa uma alternativa acessível e precisa para superação dessas limitações <span class="citation" data-cites="westoby2012">(<a href="../referencias.html#ref-westoby2012" role="doc-biblioref"><strong>westoby2012?</strong></a>)</span>. A técnica permite reconstruir a geometria 3D completa de objetos a partir de múltiplas fotografias tomadas de ângulos diferentes, utilizando algoritmos de correspondência de pontos homólogos e triangulação. A <a href="#fig-fluxo-sfm" class="quarto-xref">Figura&nbsp;<span>23.1</span></a> ilustra o fluxo de trabalho completo, desde a captura fotográfica até a extração de parâmetros geotécnicos.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-fluxo-sfm" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fluxo-sfm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-fluxo-sfm">flowchart LR
+  A["📷 Captura\nfotográfica\n(80-120 fotos)"] --&gt; B["🔍 Feature\nExtraction\n(SIFT)"]
+  B --&gt; C["🔗 Feature\nMatching"]
+  C --&gt; D["📐 Structure\nfrom Motion"]
+  D --&gt; E["☁️ Nuvem de\npontos densa"]
+  E --&gt; F["🧹 Limpeza\n(CloudCompare)"]
+  F --&gt; G["✂️ Cortes\ntransversais"]
+  G --&gt; H["📊 Cálculo\ndo RAR"]
+  H --&gt; I["🛡️ Δcr e Fator\nde Segurança"]
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fluxo-sfm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;23.1: Fluxograma do protocolo de fotogrametria SfM para modelagem de sistemas radiculares: da captura fotográfica ao cálculo do Fator de Segurança.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>As vantagens da SfM para aplicação em bioengenharia incluem baixo custo (câmera de celular com ≥ 12 MP), portabilidade (uso direto em campo), disponibilidade de software livre (Meshroom, CloudCompare) e resolução submilimétrica (0,1–1,0 mm), suficiente para detectar raízes finas de gramíneas como o vetiver.</p>
+</section>
+<section id="preparação-do-sítio-experimental" class="level2" data-number="23.2">
+<h2 data-number="23.2" class="anchored" data-anchor-id="preparação-do-sítio-experimental"><span class="header-section-number">23.2</span> Preparação do Sítio Experimental</h2>
+<section id="critérios-de-seleção" class="level3" data-number="23.2.1">
+<h3 data-number="23.2.1" class="anchored" data-anchor-id="critérios-de-seleção"><span class="header-section-number">23.2.1</span> Critérios de Seleção</h3>
+<p>A seleção do sítio experimental deve considerar três critérios principais: vegetação de vetiver ou outra espécie de interesse estabelecida há pelo menos 6 meses (período mínimo para enraizamento funcional), inclinação do talude entre 25° e 45° (faixa crítica para erosão e instabilidade), e ausência de interferência antrópica recente. As coordenadas geográficas e um croqui do local devem ser registrados.</p>
+</section>
+<section id="abertura-da-trincheira-e-exposição-das-raízes" class="level3" data-number="23.2.2">
+<h3 data-number="23.2.2" class="anchored" data-anchor-id="abertura-da-trincheira-e-exposição-das-raízes"><span class="header-section-number">23.2.2</span> Abertura da Trincheira e Exposição das Raízes</h3>
+<p>A área de exposição é demarcada com estacas, formando um retângulo de no mínimo 50 × 50 cm ao redor da touceira selecionada. A escavação deve ser cuidadosa, mantendo as raízes íntegras, e aprofundada até a máxima extensão visível — tipicamente 60–100 cm para vetiver com mais de 12 meses. O jato de água a baixa pressão é utilizado para remover o solo aderido sem romper raízes finas.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Dica de Campo
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Após a lavagem com jato d’água, aguarde 5–10 minutos para que as raízes sequem superficialmente antes de fotografar. Raízes secas apresentam melhor contraste com o solo, mas uma leve borrifada de água imediatamente antes da captura melhora a textura visual nas fotos.</p>
+</div>
+</div>
+</section>
+<section id="montagem-da-cena" class="level3" data-number="23.2.3">
+<h3 data-number="23.2.3" class="anchored" data-anchor-id="montagem-da-cena"><span class="header-section-number">23.2.3</span> Montagem da Cena</h3>
+<p>A preparação da cena para fotogrametria requer: (a) posicionamento de escala métrica (trena graduada) em duas direções perpendiculares, (b) distribuição de quatro alvos codificados ao redor da área de interesse, em posições fixas e visíveis em todas as fotos, e (c) instalação de painel de fundo neutro (lona cinza) atrás das raízes para reduzir ruído no processamento.</p>
+</section>
+</section>
+<section id="aquisição-fotográfica" class="level2" data-number="23.3">
+<h2 data-number="23.3" class="anchored" data-anchor-id="aquisição-fotográfica"><span class="header-section-number">23.3</span> Aquisição Fotográfica</h2>
+<section id="configuração-da-câmera" class="level3" data-number="23.3.1">
+<h3 data-number="23.3.1" class="anchored" data-anchor-id="configuração-da-câmera"><span class="header-section-number">23.3.1</span> Configuração da Câmera</h3>
+<p>A câmera deve ser configurada em modo manual (M) ou prioridade de abertura (Av), com ISO 100–400, abertura f/5.6 a f/8 (para máxima profundidade de campo), velocidade ≥ 1/125 s, foco manual fixo e flash desligado. A captura deve ser realizada sob iluminação difusa (céu nublado) ou com sol baixo, evitando sombras projetadas sobre as raízes.</p>
+</section>
+<section id="protocolo-de-captura-orbital" class="level3" data-number="23.3.2">
+<h3 data-number="23.3.2" class="anchored" data-anchor-id="protocolo-de-captura-orbital"><span class="header-section-number">23.3.2</span> Protocolo de Captura Orbital</h3>
+<p>O protocolo de captura segue um padrão de órbitas concêntricas ao redor do sistema radicular, conforme descrito na <a href="#tbl-orbitas" class="quarto-xref">Tabela&nbsp;<span>23.1</span></a>.</p>
+<div id="tbl-orbitas" class="striped hover quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-orbitas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;23.1: Protocolo de captura fotográfica orbital para fotogrametria SfM de raízes.
+</figcaption>
+<div aria-describedby="tbl-orbitas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped table-hover caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 22%">
+<col style="width: 31%">
+<col style="width: 19%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Órbita</th>
+<th style="text-align: center;">Distância (m)</th>
+<th style="text-align: center;">Ângulo entre fotos</th>
+<th style="text-align: center;">Nº de fotos</th>
+<th>Objetivo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1 — Contexto</td>
+<td style="text-align: center;">1,0–1,5</td>
+<td style="text-align: center;">10–15°</td>
+<td style="text-align: center;">24–36</td>
+<td>Cobertura 360°, visão geral</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2 — Média</td>
+<td style="text-align: center;">0,5–0,8</td>
+<td style="text-align: center;">10°</td>
+<td style="text-align: center;">36</td>
+<td>Detalhamento intermediário</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3 — Detalhe</td>
+<td style="text-align: center;">0,3–0,5</td>
+<td style="text-align: center;">Livre</td>
+<td style="text-align: center;">≥ 20</td>
+<td>Close-ups de zonas densas</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>O total mínimo é de 80 fotos (recomendado: 100–120), com sobreposição ≥ 70% entre consecutivas. Cada ponto do objeto deve ser visível em pelo menos 3 fotos de ângulos distintos, e a escala métrica deve aparecer em ≥ 50% das imagens.</p>
+</section>
+<section id="resolução-espacial-gsd" class="level3" data-number="23.3.3">
+<h3 data-number="23.3.3" class="anchored" data-anchor-id="resolução-espacial-gsd"><span class="header-section-number">23.3.3</span> Resolução Espacial (GSD)</h3>
+<p>A viabilidade da detecção de raízes finas depende da resolução espacial das fotos, expressa pelo <em>Ground Sampling Distance</em> (GSD):</p>
+<p><span id="eq-gsd-cap22"><span class="math display">\[GSD = \frac{d \times p}{f} \tag{23.1}\]</span></span></p>
+<p>onde <span class="math inline">\(d\)</span> é a distância câmera-objeto (m), <span class="math inline">\(p\)</span> é o tamanho do pixel no sensor (mm) e <span class="math inline">\(f\)</span> é a distância focal (mm). O critério adotado é <span class="math inline">\(GSD \leq d_{min}/2\)</span>, onde <span class="math inline">\(d_{min}\)</span> é o diâmetro da menor raiz a detectar. Para raízes de vetiver (diâmetro ≈ 0,5 mm), o GSD deve ser ≤ 0,25 mm/pixel — facilmente alcançável com câmeras de 12 MP a 0,5 m de distância.</p>
+</section>
+</section>
+<section id="processamento-fotogramétrico" class="level2" data-number="23.4">
+<h2 data-number="23.4" class="anchored" data-anchor-id="processamento-fotogramétrico"><span class="header-section-number">23.4</span> Processamento Fotogramétrico</h2>
+<section id="pipeline-no-meshroom" class="level3" data-number="23.4.1">
+<h3 data-number="23.4.1" class="anchored" data-anchor-id="pipeline-no-meshroom"><span class="header-section-number">23.4.1</span> Pipeline no Meshroom</h3>
+<p>O processamento é realizado no Meshroom (AliceVision), software livre de fotogrametria SfM. A pipeline padrão compreende 10 nós sequenciais (<a href="#tbl-pipeline-meshroom" class="quarto-xref">Tabela&nbsp;<span>23.2</span></a>).</p>
+<div id="tbl-pipeline-meshroom" class="striped hover quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-pipeline-meshroom-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;23.2: Pipeline de processamento fotogramétrico no Meshroom.
+</figcaption>
+<div aria-describedby="tbl-pipeline-meshroom-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Passo</th>
+<th>Nó</th>
+<th>Configuração</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td>CameraInit</td>
+<td>Auto-detecção</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td>FeatureExtraction</td>
+<td>Descritor SIFT, qualidade Normal</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td>ImageMatching</td>
+<td>VocabularyTree</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td>FeatureMatching</td>
+<td>Sem limite</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td>StructureFromMotion</td>
+<td>Padrão</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6</td>
+<td>DepthMapEstimation</td>
+<td>Resolução Normal</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">7</td>
+<td>DepthMapFiltering</td>
+<td>Padrão</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">8</td>
+<td>Meshing</td>
+<td>maxPoints: 5.000.000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">9</td>
+<td>MeshFiltering</td>
+<td>Suavização fator 1</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">10</td>
+<td>Texturing</td>
+<td>4096 × 4096</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="verificação-de-qualidade" class="level3" data-number="23.4.2">
+<h3 data-number="23.4.2" class="anchored" data-anchor-id="verificação-de-qualidade"><span class="header-section-number">23.4.2</span> Verificação de Qualidade</h3>
+<p>Após o nó StructureFromMotion, o número de câmeras calibradas deve ser ≥ 90% das fotos importadas. Se inferior a 70%, as fotos são insuficientes e deve-se retornar ao campo. O tempo de processamento varia de 30 minutos (80 fotos, GPU NVIDIA GTX 1060) a 8 horas (120 fotos, apenas CPU).</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Requisito de Hardware
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O Meshroom requer GPU NVIDIA com suporte CUDA para processamento em tempo razoável. Se não disponível, alternativas como COLMAP (modo CPU) ou Google Colab (GPU gratuita) podem ser utilizadas.</p>
+</div>
+</div>
+</section>
+<section id="exportação" class="level3" data-number="23.4.3">
+<h3 data-number="23.4.3" class="anchored" data-anchor-id="exportação"><span class="header-section-number">23.4.3</span> Exportação</h3>
+<p>Os produtos do processamento são a nuvem de pontos densa (formato <code>.ply</code>, com cores RGB) e a malha texturizada (formato <code>.obj</code> + <code>.mtl</code> + texturas <code>.png</code>).</p>
+</section>
+</section>
+<section id="análise-no-cloudcompare" class="level2" data-number="23.5">
+<h2 data-number="23.5" class="anchored" data-anchor-id="análise-no-cloudcompare"><span class="header-section-number">23.5</span> Análise no CloudCompare</h2>
+<section id="limpeza-da-nuvem-de-pontos" class="level3" data-number="23.5.1">
+<h3 data-number="23.5.1" class="anchored" data-anchor-id="limpeza-da-nuvem-de-pontos"><span class="header-section-number">23.5.1</span> Limpeza da Nuvem de Pontos</h3>
+<p>O CloudCompare é o software utilizado para análise tridimensional. Após importação do arquivo <code>.ply</code>, a limpeza compreende três etapas: remoção manual de pontos do solo e fundo por segmentação poligonal (Edit → Segment), remoção estatística de outliers pelo <em>Statistical Outlier Removal</em> (SOR Filter, com 6 vizinhos e multiplicador 1,0–2,0), e subamostragem por espaçamento mínimo de 0,5–1,0 mm quando necessário.</p>
+</section>
+<section id="calibração-de-escala" class="level3" data-number="23.5.2">
+<h3 data-number="23.5.2" class="anchored" data-anchor-id="calibração-de-escala"><span class="header-section-number">23.5.2</span> Calibração de Escala</h3>
+<p>A escala é calibrada pela ferramenta <em>Point Picking</em> (Tools → Point Picking), medindo-se a distância entre dois pontos conhecidos na régua graduada e aplicando-se o fator de correção <span class="math inline">\(k = d_{real}/d_{medida}\)</span> via Edit → Multiply/Scale nas três dimensões.</p>
+</section>
+<section id="visualização-por-profundidade" class="level3" data-number="23.5.3">
+<h3 data-number="23.5.3" class="anchored" data-anchor-id="visualização-por-profundidade"><span class="header-section-number">23.5.3</span> Visualização por Profundidade</h3>
+<p>A distribuição vertical das raízes é visualizada pela ferramenta <em>Height Ramp</em> (Edit → Colors → Height Ramp), com coloração no eixo Z e paleta Blue-Green-Yellow-Red (azul = superficial, vermelho = profundo). A <a href="#fig-cloud-compare-exemplo" class="quarto-xref">Figura&nbsp;<span>23.2</span></a> ilustra o resultado típico.</p>
+<div id="fig-cloud-compare-exemplo" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Nuvem de pontos colorida por profundidade no CloudCompare">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cloud-compare-exemplo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/cloudcompare_raizes_vetiver.png" class="img-fluid figure-img" style="width:80.0%" alt="Nuvem de pontos colorida por profundidade no CloudCompare">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cloud-compare-exemplo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;23.2: Exemplo de nuvem de pontos de sistema radicular de vetiver no CloudCompare, com coloração por profundidade (Height Ramp): azul indica raízes superficiais e vermelho indica raízes profundas.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="extração-do-rar-por-cortes-transversais" class="level2" data-number="23.6">
+<h2 data-number="23.6" class="anchored" data-anchor-id="extração-do-rar-por-cortes-transversais"><span class="header-section-number">23.6</span> Extração do RAR por Cortes Transversais</h2>
+<section id="método-de-fatiamento" class="level3" data-number="23.6.1">
+<h3 data-number="23.6.1" class="anchored" data-anchor-id="método-de-fatiamento"><span class="header-section-number">23.6.1</span> Método de Fatiamento</h3>
+<p>O RAR é o parâmetro principal extraído do modelo 3D. O procedimento consiste em fatiar horizontalmente a nuvem de pontos em camadas de 10 cm de espessura, utilizando a ferramenta <em>Cross Section</em> (Tools → Segmentation → Cross Section), com plano de corte XY.</p>
+<p>Para cada fatia na profundidade <span class="math inline">\(z_i\)</span>, a nuvem é rasterizada no plano XY (Tools → Projection → Rasterize, resolução de célula = 1 mm), e o RAR é calculado como:</p>
+<p><span id="eq-rar-cap22"><span class="math display">\[RAR(z_i) = \frac{A_{raiz}}{A_{total}} = \frac{n_{raiz} \times A_{célula}}{n_{total} \times A_{célula}} \tag{23.2}\]</span></span></p>
+<p>onde <span class="math inline">\(n_{raiz}\)</span> é o número de células ocupadas por raízes e <span class="math inline">\(n_{total}\)</span> é o total de células na área delimitadora.</p>
+</section>
+<section id="resultados-típicos" class="level3" data-number="23.6.2">
+<h3 data-number="23.6.2" class="anchored" data-anchor-id="resultados-típicos"><span class="header-section-number">23.6.2</span> Resultados Típicos</h3>
+<p>A <a href="#tbl-rar-exemplo" class="quarto-xref">Tabela&nbsp;<span>23.3</span></a> apresenta valores típicos de RAR para vetiver estabelecido há 18 meses em talude rodoviário com solo argiloso tropical, obtidos por este protocolo.</p>
+<div id="tbl-rar-exemplo" class="striped hover quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-rar-exemplo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;23.3: RAR e acréscimo de coesão por camada de profundidade para vetiver com 18 meses.
+</figcaption>
+<div aria-describedby="tbl-rar-exemplo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped table-hover caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 22%">
+<col style="width: 23%">
+<col style="width: 10%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Camada (cm)</th>
+<th style="text-align: center;"><span class="math inline">\(A_{raiz}\)</span> (cm²)</th>
+<th style="text-align: center;"><span class="math inline">\(A_{total}\)</span> (cm²)</th>
+<th style="text-align: center;">RAR (%)</th>
+<th style="text-align: center;"><span class="math inline">\(\Delta c_r\)</span> — Wu (kPa)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0–10</td>
+<td style="text-align: center;">10,0</td>
+<td style="text-align: center;">2500</td>
+<td style="text-align: center;">0,40</td>
+<td style="text-align: center;">7,2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">10–20</td>
+<td style="text-align: center;">7,5</td>
+<td style="text-align: center;">2500</td>
+<td style="text-align: center;">0,30</td>
+<td style="text-align: center;">5,4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">20–30</td>
+<td style="text-align: center;">5,0</td>
+<td style="text-align: center;">2500</td>
+<td style="text-align: center;">0,20</td>
+<td style="text-align: center;">3,6</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">30–50</td>
+<td style="text-align: center;">3,0</td>
+<td style="text-align: center;">2500</td>
+<td style="text-align: center;">0,12</td>
+<td style="text-align: center;">2,2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">50–100</td>
+<td style="text-align: center;">1,25</td>
+<td style="text-align: center;">2500</td>
+<td style="text-align: center;">0,05</td>
+<td style="text-align: center;">0,9</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>A distribuição é não linear, com concentração nas camadas superficiais: 80% do efeito mecânico ocorre nos primeiros 50 cm.</p>
+</section>
+</section>
+<section id="estimativa-do-acréscimo-de-coesão" class="level2" data-number="23.7">
+<h2 data-number="23.7" class="anchored" data-anchor-id="estimativa-do-acréscimo-de-coesão"><span class="header-section-number">23.7</span> Estimativa do Acréscimo de Coesão</h2>
+<section id="modelo-de-wu-1979" class="level3" data-number="23.7.1">
+<h3 data-number="23.7.1" class="anchored" data-anchor-id="modelo-de-wu-1979"><span class="header-section-number">23.7.1</span> Modelo de Wu (1979)</h3>
+<p>Com os valores de RAR por camada, o acréscimo de coesão conferido pelas raízes é estimado pelo modelo de Wu:</p>
+<p><span id="eq-wu-cap22"><span class="math display">\[\Delta c_r(z) = 1{,}2 \times \overline{t_R} \times RAR(z) \tag{23.3}\]</span></span></p>
+<p>onde <span class="math inline">\(\overline{t_R}\)</span> é a resistência média à tração das raízes e o fator 1,2 corrige a orientação aleatória. Para vetiver, <span class="math inline">\(\overline{t_R}\)</span> varia entre 40 e 180 MPa (média adotada: 75 MPa).</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>Limitação do Modelo de Wu
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O modelo de Wu assume que todas as raízes rompem simultaneamente, o que na prática não ocorre. Estudos de <span class="citation" data-cites="pollen2005">(<a href="../referencias.html#ref-pollen2005" role="doc-biblioref"><strong>pollen2005?</strong></a>)</span> demonstraram superestimação de 50–100% em relação a medições de campo. O modelo é adequado para triagem preliminar, mas projetos executivos devem utilizar o modelo de Waldron ou o modelo de fibras progressivas (FBM).</p>
+</div>
+</div>
+</section>
+<section id="modelo-de-waldron-1977" class="level3" data-number="23.7.2">
+<h3 data-number="23.7.2" class="anchored" data-anchor-id="modelo-de-waldron-1977"><span class="header-section-number">23.7.2</span> Modelo de Waldron (1977)</h3>
+<p>Para maior acurácia, o modelo de Waldron incorpora o ângulo de distorção da raiz (<span class="math inline">\(\theta\)</span>) na zona de cisalhamento:</p>
+<p><span id="eq-waldron-cap22"><span class="math display">\[\Delta S = T_r \times \frac{A_r}{A_s} \times (\sin\theta + \cos\theta \tan\phi') \tag{23.4}\]</span></span></p>
+<p>onde <span class="math inline">\(\phi'\)</span> é o ângulo de atrito efetivo do solo. A <a href="#tbl-comparativo-modelos" class="quarto-xref">Tabela&nbsp;<span>23.4</span></a> compara os dois modelos para os dados da <a href="#tbl-rar-exemplo" class="quarto-xref">Tabela&nbsp;<span>23.3</span></a>.</p>
+<div id="tbl-comparativo-modelos" class="striped hover quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-comparativo-modelos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;23.4: Comparação entre modelos de acréscimo de coesão radicular.
+</figcaption>
+<div aria-describedby="tbl-comparativo-modelos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped table-hover caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 60%">
+<col style="width: 24%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Modelo</th>
+<th style="text-align: center;"><span class="math inline">\(\Delta c_r\)</span> médio (0–30 cm)</th>
+<th>Observação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Wu (1979)</td>
+<td style="text-align: center;">5,4 kPa</td>
+<td>Limite superior (superestima)</td>
+</tr>
+<tr class="even">
+<td>Waldron (1977)</td>
+<td style="text-align: center;">3,8 kPa</td>
+<td>Mais realista (<span class="math inline">\(\theta\)</span> = 55°, <span class="math inline">\(\phi'\)</span> = 25°)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="fator-de-segurança" class="level3" data-number="23.7.3">
+<h3 data-number="23.7.3" class="anchored" data-anchor-id="fator-de-segurança"><span class="header-section-number">23.7.3</span> Fator de Segurança</h3>
+<p>O efeito do reforço radicular na estabilidade é quantificado pelo Fator de Segurança (FS), calculado pelo modelo de talude infinito:</p>
+<p><span id="eq-fs-cap22"><span class="math display">\[FS = \frac{c' + \Delta c_r + (\gamma z \cos^2\beta - u)\tan\phi'}{\gamma z \sin\beta \cos\beta} \tag{23.5}\]</span></span></p>
+<p>onde <span class="math inline">\(c'\)</span> é a coesão efetiva do solo, <span class="math inline">\(\gamma\)</span> é o peso específico, <span class="math inline">\(z\)</span> é a profundidade da superfície de ruptura, <span class="math inline">\(\beta\)</span> é a inclinação do talude e <span class="math inline">\(u\)</span> é a poropressão.</p>
+<p>Para o caso estudado (talude 1V:1,5H, solo argiloso, <span class="math inline">\(c'\)</span> = 5 kPa, <span class="math inline">\(\phi'\)</span> = 25°, <span class="math inline">\(\gamma\)</span> = 18 kN/m³), o FS passou de 1,15 (solo natural) para 1,87 (solo com raízes de vetiver), um incremento de 63%.</p>
+</section>
+</section>
+<section id="ensaios-complementares" class="level2" data-number="23.8">
+<h2 data-number="23.8" class="anchored" data-anchor-id="ensaios-complementares"><span class="header-section-number">23.8</span> Ensaios Complementares</h2>
+<p>Os modelos mecânicos dependem de parâmetros obtidos por ensaios complementares de laboratório (<a href="#tbl-ensaios-cap22" class="quarto-xref">Tabela&nbsp;<span>23.5</span></a>).</p>
+<div id="tbl-ensaios-cap22" class="striped hover quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ensaios-cap22-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;23.5: Ensaios complementares de laboratório para alimentar os modelos mecânicos.
+</figcaption>
+<div aria-describedby="tbl-ensaios-cap22-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped table-hover caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 42%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ensaio</th>
+<th>Parâmetro</th>
+<th>Norma</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tração direta de raízes</td>
+<td><span class="math inline">\(t_R\)</span> (MPa)</td>
+<td>Adaptado ASTM D3822</td>
+</tr>
+<tr class="even">
+<td>Cisalhamento direto</td>
+<td><span class="math inline">\(c'\)</span>, <span class="math inline">\(\phi'\)</span></td>
+<td>ABNT NBR 12770</td>
+</tr>
+<tr class="odd">
+<td>Arrancamento de raízes</td>
+<td><span class="math inline">\(\theta\)</span></td>
+<td>Protocolo in-situ</td>
+</tr>
+<tr class="even">
+<td>Caracterização do solo</td>
+<td>Textura, LL, LP, <span class="math inline">\(\gamma\)</span></td>
+<td>ABNT NBR 6457/7181</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="vantagens-da-análise-3d-sobre-métodos-convencionais" class="level2" data-number="23.9">
+<h2 data-number="23.9" class="anchored" data-anchor-id="vantagens-da-análise-3d-sobre-métodos-convencionais"><span class="header-section-number">23.9</span> Vantagens da Análise 3D sobre Métodos Convencionais</h2>
+<p>A modelagem tridimensional revela características não detectáveis pela análise 2D convencional:</p>
+<ul>
+<li><p>Distribuição assimétrica: raízes crescem preferencialmente para baixo do talude (geotropismo combinado com gravidade), o que significa que o reforço mecânico não é uniforme ao redor da touceira.</p></li>
+<li><p>Conexão entre touceiras: após 12 meses, raízes de touceiras vizinhas se entrelaçam, formando uma “malha viva” que distribui as tensões de cisalhamento de forma mais eficiente que raízes isoladas.</p></li>
+<li><p>Zonas de fragilidade: entre touceiras, o solo pode permanecer desprotegido, o que reforça a recomendação de espaçamento inferior a 20 cm entre mudas.</p></li>
+</ul>
+<p>A <a href="#tbl-tecnicas-3d" class="quarto-xref">Tabela&nbsp;<span>23.6</span></a> compara a fotogrametria SfM com outras técnicas de imagem 3D disponíveis para análise de sistemas radiculares.</p>
+<div id="tbl-tecnicas-3d" class="striped hover quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-tecnicas-3d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;23.6: Comparativo de técnicas de imagem 3D para sistemas radiculares.
+</figcaption>
+<div aria-describedby="tbl-tecnicas-3d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped table-hover caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 20%">
+<col style="width: 12%">
+<col style="width: 27%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Técnica</th>
+<th style="text-align: center;">Resolução</th>
+<th style="text-align: center;">Custo</th>
+<th style="text-align: center;">Portabilidade</th>
+<th style="text-align: left;">Ideal para</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Fotogrametria SfM</strong></td>
+<td style="text-align: center;">0,1–1 mm</td>
+<td style="text-align: center;">Baixo</td>
+<td style="text-align: center;">Campo</td>
+<td style="text-align: left;">Raízes expostas em taludes</td>
+</tr>
+<tr class="even">
+<td>LiDAR terrestre</td>
+<td style="text-align: center;">1–5 mm</td>
+<td style="text-align: center;">Alto</td>
+<td style="text-align: center;">Pesado</td>
+<td style="text-align: left;">Estruturas &gt; 1 m</td>
+</tr>
+<tr class="odd">
+<td>Tomografia (CT)</td>
+<td style="text-align: center;">10–50 µm</td>
+<td style="text-align: center;">Muito alto</td>
+<td style="text-align: center;">Laboratório</td>
+<td style="text-align: left;">Raízes finas in-situ</td>
+</tr>
+<tr class="even">
+<td>Ressonância (MRI)</td>
+<td style="text-align: center;">50–200 µm</td>
+<td style="text-align: center;">Muito alto</td>
+<td style="text-align: center;">Laboratório</td>
+<td style="text-align: left;">Dinâmica de água</td>
+</tr>
+<tr class="odd">
+<td>Scanner 3D estruturado</td>
+<td style="text-align: center;">0,05–0,5 mm</td>
+<td style="text-align: center;">Médio</td>
+<td style="text-align: center;">Lab/campo</td>
+<td style="text-align: left;">Amostras em bancada</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>A fotogrametria SfM é a única técnica que combina portabilidade de campo, resolução submilimétrica e custo acessível, tornando-a a ferramenta ideal para laboratórios de bioengenharia em países tropicais.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Aplicação Prática
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O protocolo descrito neste capítulo pode ser aplicado a qualquer espécie vegetal de interesse para bioengenharia. Para espécies com raízes mais finas que o vetiver (como gramíneas nativas do Cerrado), reduza a distância de captura na Órbita 3 para 0,2–0,3 m e utilize câmera com resolução ≥ 20 MP para garantir GSD ≤ 0,15 mm/pixel.</p>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/diegovidalcv\.com\.br\/books\/bioengenharia-solos\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../capitulos/21-projeto-integrador.html" class="pagination-link" aria-label="Objetivo">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Objetivo</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../referencias.html" class="pagination-link" aria-label="referencias.html">
+        <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">referencias.html</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Luiz Diego Vidal Santos, 2026. <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ldvsantos/cv/issues/new" class="toc-action"><i class="bi bi-github"></i>Criar uma issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Feito com <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
