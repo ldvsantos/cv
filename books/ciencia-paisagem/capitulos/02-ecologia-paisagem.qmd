@@ -52,7 +52,68 @@ No âmbito dessa tradição, Georges Bertrand [-@bertrand1971] propôs um sistem
 
 : Taxonomia hierárquica de Bertrand (1971). O geossistema (nível IV) é compatível com bacias hidrográficas de 3ª a 5ª ordem e constitui a escala na qual a interação entre componentes é diretamente perceptível pela ação humana. {#tbl-bertrand-taxon .striped .hover}
 
+::: {.content-visible when-format="html"}
 ![Representação esquemática da hierarquia taxonômica de Bertrand, da zona ao geótopo, com o geossistema (nível IV) como escala operacional de análise.](../img/diagrama_bertrand_hierarquia.png){#fig-bertrand-hierarquia fig-align="center" width="90%"}
+:::
+
+::: {.content-visible when-format="pdf"}
+
+```{=latex}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  box/.style={rectangle, rounded corners=2pt, minimum height=1.1cm,
+    align=center, font=\small, line width=0.4pt},
+  arr/.style={-stealth, draw=gray!50, line width=0.6pt}
+]
+
+% Nível I — Zona
+\node[box, fill=blue!6, draw=blue!25, minimum width=13cm] (z) at (0,0)
+  {\textbf{I. Zona} \enspace {\footnotesize($10^{7}$--$10^{8}$ ha)}\\[-2pt]
+   {\scriptsize\itshape Zona tropical}};
+
+% Nível II — Domínio
+\node[box, fill=blue!10, draw=blue!30, minimum width=11cm] (d) at (0,-1.5)
+  {\textbf{II. Dom\'{i}nio} \enspace {\footnotesize($10^{6}$--$10^{7}$ ha)}\\[-2pt]
+   {\scriptsize\itshape Dom\'{i}nio das caatingas}};
+
+% Nível III — Região natural
+\node[box, fill=blue!14, draw=blue!35, minimum width=9.5cm] (r) at (0,-3.0)
+  {\textbf{III. Regi\~{a}o natural} \enspace {\footnotesize($10^{5}$--$10^{6}$ ha)}\\[-2pt]
+   {\scriptsize\itshape Depress\~{a}o sertaneja}};
+
+% Nível IV — Geossistema (destacado)
+\node[box, fill=green!15, draw=green!50!black, line width=0.8pt, minimum width=8cm] (g) at (0,-4.5)
+  {\textbf{IV. Geossistema} \enspace {\footnotesize($10^{3}$--$10^{5}$ ha)}\\[-2pt]
+   {\scriptsize\itshape Pediplano cristalino com caatinga arb\'{o}rea}};
+
+% Nível V — Geofácies
+\node[box, fill=blue!6, draw=blue!25, minimum width=6.5cm] (gf) at (0,-6.0)
+  {\textbf{V. Geof\'{a}cies} \enspace {\footnotesize($10^{1}$--$10^{3}$ ha)}\\[-2pt]
+   {\scriptsize\itshape Vertente com solo raso e vegeta\c{c}\~{a}o aberta}};
+
+% Nível VI — Geótopo
+\node[box, fill=blue!4, draw=blue!20, minimum width=5cm] (gt) at (0,-7.5)
+  {\textbf{VI. Ge\'{o}topo} \enspace {\footnotesize($<\!10^{1}$ ha)}\\[-2pt]
+   {\scriptsize\itshape Afloramento rochoso com liquens}};
+
+% Setas entre níveis
+\foreach \i/\j in {z/d, d/r, r/g, g/gf, gf/gt}
+  \draw[arr] (\i.south) -- (\j.north);
+
+% Anotação lateral — escala operacional
+\draw[green!50!black, thick, decorate, decoration={brace, amplitude=5pt, mirror}]
+  ([xshift=3mm]g.north east) -- ([xshift=3mm]g.south east)
+  node[midway, right=8pt, font=\scriptsize\itshape, text=green!40!black, align=left]
+  {Escala operacional\\[-1pt]de an\'{a}lise};
+
+\end{tikzpicture}
+\caption{Representa\c{c}\~{a}o esquem\'{a}tica da hierarquia taxon\^{o}mica de Bertrand, da zona ao ge\'{o}topo, com o geossistema (n\'{i}vel~IV) como escala operacional de an\'{a}lise.}
+\label{fig-bertrand-hierarquia}
+\end{figure}
+```
+
+:::
 
 O conceito de geossistema tem raízes na escola soviética de Viktor Sochava [-@sochava1963], que o definiu como um sistema natural aberto integrando litosfera, hidrosfera, atmosfera e biosfera. Sochava distinguiu o estado de equilíbrio dinâmico, em que a produção e o consumo de biomassa se compensam, do estado de transição, característico de perturbações moderadas reversíveis, e do estado degradado ou de derivação, no qual limiares de irreversibilidade são cruzados. Bertrand avançou ao incorporar a ação antrópica como componente interno do geossistema, e não como perturbação externa à maneira de Sochava, reconhecendo que as sociedades humanas são parte constituinte dos geossistemas brasileiros contemporâneos. A estrutura sistêmica que fundamenta essa leitura integrada está representada na @fig-geossistema.
 

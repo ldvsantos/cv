@@ -50,22 +50,28 @@ digraph {
 
 A @fig-particao-hidrologica revela dois caminhos contrastantes da água na paisagem. O caminho "lento" (à esquerda do diagrama, em verde) passa pela infiltração, percolação profunda, recarga de aquíferos e fluxo de base. Esse caminho é favorecido por solos florestados, profundos e bem estruturados, e resulta em rios com vazão estável ao longo do ano, mesmo durante a estação seca. O caminho "rápido" (à direita, em vermelho) passa pelo escoamento superficial e pelo escoamento subsuperficial rápido, gerando picos de vazão durante e logo após as chuvas. Esse caminho é favorecido por superfícies impermeáveis, solos compactados, pastagens degradadas e encostas íngremes sem cobertura vegetal. A proporção entre esses dois caminhos é fundamentalmente determinada pela estrutura da paisagem, o que significa que mudanças de uso do solo (desmatamento, urbanização, pavimentação) alteram diretamente o regime hidrológico de uma bacia.
 
-Para quantificar essa partição, hidrólogos utilizam o conceito de coeficiente de escoamento (*runoff coefficient*), definido como a razão entre o volume de escoamento superficial e o volume de precipitação que incide sobre a bacia. Um solo florestado em boas condições pode ter coeficiente de escoamento de 5% a 15% (a maior parte da chuva infiltra), enquanto uma superfície urbana impermeabilizada pode atingir 75% a 95% (quase toda a chuva escorre pela superfície). A @tbl-coeficientes apresenta valores típicos para diferentes coberturas.
+Para quantificar mecanisticamente essa conversão chuva-vazão na escala de microbacias, a hidrologia aplica rotineiramente o Método Racional, regido pela equação estrutural da vazão de pico:
 
-| Cobertura do solo | Coeficiente de escoamento (%) | Infiltração relativa |
+$$
+Q = \frac{C \cdot i \cdot A}{3.6}
+$$
+
+Nesta formulação cinemática, $Q$ é a vazão máxima de pico gerada (em m³/s), $i$ é a intensidade pluviométrica do evento extremo (em mm/h), $A$ delimita a área da bacia (em km²), e o fator $3.6$ é uma constante de conversão de unidades. O controle central da paisagem repousa inteiramente sobre $C$, o coeficiente de escoamento superficial (*runoff coefficient*), um número adimensional (0 a 1) que reflete a resiliência dissipativa e a macroporosidade do ecossistema. Um sistema de floresta nativa estabilizado dissipa energia e garante $C$ na faixa de 0.05 a 0.15 (infiltrando até 95% do volume). Em contraste agudo, superfícies asfaltadas ou solos selados elevam $C$ a patamares de 0.75 a 0.95. A @tbl-coeficientes apresenta faixas de operação paramétrica comuns no domínio tropical.
+
+| Cobertura do solo | Coeficiente $C$ (adimensional) | Infiltração relativa |
 |:---|:---:|:---:|
-| Floresta nativa densa | 5 – 15 | Muito alta |
-| Cerrado nativo | 10 – 20 | Alta |
-| Pastagem bem manejada | 20 – 35 | Moderada |
-| Pastagem degradada | 35 – 55 | Baixa |
-| Cultivo com plantio direto | 25 – 40 | Moderada |
-| Cultivo convencional (solo exposto) | 40 – 65 | Baixa |
-| Área urbana com jardins | 50 – 70 | Baixa a muito baixa |
-| Área urbana impermeabilizada | 75 – 95 | Muito baixa |
+| Floresta nativa densa | 0.05 – 0.15 | Muito alta |
+| Cerrado nativo | 0.10 – 0.20 | Alta |
+| Pastagem bem manejada | 0.20 – 0.35 | Moderada |
+| Pastagem degradada | 0.35 – 0.55 | Baixa |
+| Cultivo com plantio direto | 0.25 – 0.40 | Moderada |
+| Cultivo convencional (solo exposto) | 0.40 – 0.65 | Baixa |
+| Área urbana com jardins | 0.50 – 0.70 | Baixa a muito baixa |
+| Área urbana impermeabilizada | 0.75 – 0.95 | Muito baixa |
 
-: Coeficientes de escoamento superficial típicos para diferentes coberturas do solo em condições tropicais. Valores variam com declividade, tipo de solo e intensidade da chuva. {#tbl-coeficientes .striped .hover}
+: Coeficientes termodinâmicos de escoamento ($C$) típicos para componentes de paisagem no domínio tropical. {#tbl-coeficientes .striped .hover}
 
-A @tbl-coeficientes permite uma comparação direta que ilustra o impacto da mudança de uso do solo sobre a hidrologia. Se uma bacia de 1.000 ha recebe 100 mm de chuva em um evento, a floresta nativa gera entre 50.000 e 150.000 m³ de escoamento superficial, enquanto a mesma bacia completamente urbanizada geraria entre 750.000 e 950.000 m³, um aumento de cinco a quinze vezes no volume de água que atinge os córregos em poucas horas. Essa diferença explica por que bacias desmatadas ou urbanizadas estão sujeitas a cheias mais severas e mais frequentes, e por que a manutenção de cobertura vegetal é uma das estratégias mais eficazes de controle de inundações.
+A matriz da @tbl-coeficientes documenta vetores determinísticos sobre o tempo de concentração de cheias, revelando a causalidade física entre uso do solo e desastres. **Exemplo de cálculo:** Suponha a bacia hipotética "Alpha" com $A = 10 \text{ km}^2$, submetida temporalmente a uma chuva torrencial severa ($i = 50 \text{ mm/h}$). Se toda a extensão de "Alpha" for cobertura florestal primária ($C \approx 0.10$), a vazão máxima descarregada no exutório atingirá meros $Q = (0.10 \times 50 \times 10) / 3.6 \approx 13.88 \text{ m}^3\text{/s}$. Contudo, se a mesma bacia "Alpha" for convertida geometricamente em loteamentos urbanos impermeabilizados ($C = 0.85$), o efluxo sofrerá escalada violenta para $Q = (0.85 \times 50 \times 10) / 3.6 \approx 118.05 \text{ m}^3\text{/s}$. Esse incremento quase decuplicado tensiona severamente a seção transversal do canal (tensão cisalhante) ativando processos de solapamento marginal e transbordamento (cheias urbanas). O arranjo espacial predetermina as assinaturas hidrológicas.
 
 ## Efeitos da paisagem sobre a qualidade da água
 

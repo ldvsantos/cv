@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -256,7 +285,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/12-dinamica-uso-solo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Dinâmica do Uso e Cobertura do Solo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Por que a paisagem muda?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -544,11 +573,15 @@ Figura&nbsp;13.1: Partição da precipitação nos principais componentes do cic
 </div>
 </div>
 <p>A <a href="#fig-particao-hidrologica" class="quarto-xref">Figura&nbsp;<span>13.1</span></a> revela dois caminhos contrastantes da água na paisagem. O caminho “lento” (à esquerda do diagrama, em verde) passa pela infiltração, percolação profunda, recarga de aquíferos e fluxo de base. Esse caminho é favorecido por solos florestados, profundos e bem estruturados, e resulta em rios com vazão estável ao longo do ano, mesmo durante a estação seca. O caminho “rápido” (à direita, em vermelho) passa pelo escoamento superficial e pelo escoamento subsuperficial rápido, gerando picos de vazão durante e logo após as chuvas. Esse caminho é favorecido por superfícies impermeáveis, solos compactados, pastagens degradadas e encostas íngremes sem cobertura vegetal. A proporção entre esses dois caminhos é fundamentalmente determinada pela estrutura da paisagem, o que significa que mudanças de uso do solo (desmatamento, urbanização, pavimentação) alteram diretamente o regime hidrológico de uma bacia.</p>
-<p>Para quantificar essa partição, hidrólogos utilizam o conceito de coeficiente de escoamento (<em>runoff coefficient</em>), definido como a razão entre o volume de escoamento superficial e o volume de precipitação que incide sobre a bacia. Um solo florestado em boas condições pode ter coeficiente de escoamento de 5% a 15% (a maior parte da chuva infiltra), enquanto uma superfície urbana impermeabilizada pode atingir 75% a 95% (quase toda a chuva escorre pela superfície). A <a href="#tbl-coeficientes" class="quarto-xref">Tabela&nbsp;<span>13.1</span></a> apresenta valores típicos para diferentes coberturas.</p>
+<p>Para quantificar mecanisticamente essa conversão chuva-vazão na escala de microbacias, a hidrologia aplica rotineiramente o Método Racional, regido pela equação estrutural da vazão de pico:</p>
+<p><span class="math display">\[
+Q = \frac{C \cdot i \cdot A}{3.6}
+\]</span></p>
+<p>Nesta formulação cinemática, <span class="math inline">\(Q\)</span> é a vazão máxima de pico gerada (em m³/s), <span class="math inline">\(i\)</span> é a intensidade pluviométrica do evento extremo (em mm/h), <span class="math inline">\(A\)</span> delimita a área da bacia (em km²), e o fator <span class="math inline">\(3.6\)</span> é uma constante de conversão de unidades. O controle central da paisagem repousa inteiramente sobre <span class="math inline">\(C\)</span>, o coeficiente de escoamento superficial (<em>runoff coefficient</em>), um número adimensional (0 a 1) que reflete a resiliência dissipativa e a macroporosidade do ecossistema. Um sistema de floresta nativa estabilizado dissipa energia e garante <span class="math inline">\(C\)</span> na faixa de 0.05 a 0.15 (infiltrando até 95% do volume). Em contraste agudo, superfícies asfaltadas ou solos selados elevam <span class="math inline">\(C\)</span> a patamares de 0.75 a 0.95. A <a href="#tbl-coeficientes" class="quarto-xref">Tabela&nbsp;<span>13.1</span></a> apresenta faixas de operação paramétrica comuns no domínio tropical.</p>
 <div id="tbl-coeficientes" class="striped hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-coeficientes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Tabela&nbsp;13.1: Coeficientes de escoamento superficial típicos para diferentes coberturas do solo em condições tropicais. Valores variam com declividade, tipo de solo e intensidade da chuva.
+Tabela&nbsp;13.1: Coeficientes termodinâmicos de escoamento (<span class="math inline">\(C\)</span>) típicos para componentes de paisagem no domínio tropical.
 </figcaption>
 <div aria-describedby="tbl-coeficientes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table-striped table-hover caption-top table">
@@ -560,49 +593,49 @@ Tabela&nbsp;13.1: Coeficientes de escoamento superficial típicos para diferente
 <thead>
 <tr class="header">
 <th style="text-align: left;">Cobertura do solo</th>
-<th style="text-align: center;">Coeficiente de escoamento (%)</th>
+<th style="text-align: center;">Coeficiente <span class="math inline">\(C\)</span> (adimensional)</th>
 <th style="text-align: center;">Infiltração relativa</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Floresta nativa densa</td>
-<td style="text-align: center;">5 – 15</td>
+<td style="text-align: center;">0.05 – 0.15</td>
 <td style="text-align: center;">Muito alta</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Cerrado nativo</td>
-<td style="text-align: center;">10 – 20</td>
+<td style="text-align: center;">0.10 – 0.20</td>
 <td style="text-align: center;">Alta</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Pastagem bem manejada</td>
-<td style="text-align: center;">20 – 35</td>
+<td style="text-align: center;">0.20 – 0.35</td>
 <td style="text-align: center;">Moderada</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Pastagem degradada</td>
-<td style="text-align: center;">35 – 55</td>
+<td style="text-align: center;">0.35 – 0.55</td>
 <td style="text-align: center;">Baixa</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Cultivo com plantio direto</td>
-<td style="text-align: center;">25 – 40</td>
+<td style="text-align: center;">0.25 – 0.40</td>
 <td style="text-align: center;">Moderada</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Cultivo convencional (solo exposto)</td>
-<td style="text-align: center;">40 – 65</td>
+<td style="text-align: center;">0.40 – 0.65</td>
 <td style="text-align: center;">Baixa</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Área urbana com jardins</td>
-<td style="text-align: center;">50 – 70</td>
+<td style="text-align: center;">0.50 – 0.70</td>
 <td style="text-align: center;">Baixa a muito baixa</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Área urbana impermeabilizada</td>
-<td style="text-align: center;">75 – 95</td>
+<td style="text-align: center;">0.75 – 0.95</td>
 <td style="text-align: center;">Muito baixa</td>
 </tr>
 </tbody>
@@ -610,7 +643,7 @@ Tabela&nbsp;13.1: Coeficientes de escoamento superficial típicos para diferente
 </div>
 </figure>
 </div>
-<p>A <a href="#tbl-coeficientes" class="quarto-xref">Tabela&nbsp;<span>13.1</span></a> permite uma comparação direta que ilustra o impacto da mudança de uso do solo sobre a hidrologia. Se uma bacia de 1.000 ha recebe 100 mm de chuva em um evento, a floresta nativa gera entre 50.000 e 150.000 m³ de escoamento superficial, enquanto a mesma bacia completamente urbanizada geraria entre 750.000 e 950.000 m³, um aumento de cinco a quinze vezes no volume de água que atinge os córregos em poucas horas. Essa diferença explica por que bacias desmatadas ou urbanizadas estão sujeitas a cheias mais severas e mais frequentes, e por que a manutenção de cobertura vegetal é uma das estratégias mais eficazes de controle de inundações.</p>
+<p>A matriz da <a href="#tbl-coeficientes" class="quarto-xref">Tabela&nbsp;<span>13.1</span></a> documenta vetores determinísticos sobre o tempo de concentração de cheias, revelando a causalidade física entre uso do solo e desastres. <strong>Exemplo de cálculo:</strong> Suponha a bacia hipotética “Alpha” com <span class="math inline">\(A = 10 \text{ km}^2\)</span>, submetida temporalmente a uma chuva torrencial severa (<span class="math inline">\(i = 50 \text{ mm/h}\)</span>). Se toda a extensão de “Alpha” for cobertura florestal primária (<span class="math inline">\(C \approx 0.10\)</span>), a vazão máxima descarregada no exutório atingirá meros <span class="math inline">\(Q = (0.10 \times 50 \times 10) / 3.6 \approx 13.88 \text{ m}^3\text{/s}\)</span>. Contudo, se a mesma bacia “Alpha” for convertida geometricamente em loteamentos urbanos impermeabilizados (<span class="math inline">\(C = 0.85\)</span>), o efluxo sofrerá escalada violenta para <span class="math inline">\(Q = (0.85 \times 50 \times 10) / 3.6 \approx 118.05 \text{ m}^3\text{/s}\)</span>. Esse incremento quase decuplicado tensiona severamente a seção transversal do canal (tensão cisalhante) ativando processos de solapamento marginal e transbordamento (cheias urbanas). O arranjo espacial predetermina as assinaturas hidrológicas.</p>
 </section>
 <section id="efeitos-da-paisagem-sobre-a-qualidade-da-água" class="level2" data-number="13.3">
 <h2 data-number="13.3" class="anchored" data-anchor-id="efeitos-da-paisagem-sobre-a-qualidade-da-água"><span class="header-section-number">13.3</span> Efeitos da paisagem sobre a qualidade da água</h2>
@@ -1047,8 +1080,8 @@ Tabela&nbsp;13.1: Coeficientes de escoamento superficial típicos para diferente
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../capitulos/12-dinamica-uso-solo.html" class="pagination-link" aria-label="Dinâmica do Uso e Cobertura do Solo">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Dinâmica do Uso e Cobertura do Solo</span></span>
+      <a href="../capitulos/12-dinamica-uso-solo.html" class="pagination-link" aria-label="Por que a paisagem muda?">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Por que a paisagem muda?</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

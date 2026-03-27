@@ -8,6 +8,7 @@ Pelo viés do *geossistema* [@bertrand2007], a paisagem é compreendida como com
 
 Essa visão não nasceu pronta. O conceito moderno de paisagem ecológica foi introduzido pelo geógrafo alemão Carl Troll em 1939, ao combinar fotointerpretação de fotografias aéreas com observações ecológicas de campo [@troll1939]. Troll propôs que a paisagem deveria ser entendida não como um cenário visual, mas como um sistema funcional no qual a heterogeneidade espacial condiciona fluxos de energia, matéria e organismos. Com isso, a paisagem saiu do domínio estético e descritivo para o domínio científico quantificável. A consolidação dessa trajetória levou mais de sete décadas, conforme sintetiza a @fig-evolucao-conceito.
 
+::: {.content-visible when-format="html"}
 ```{mermaid}
 %%| label: fig-evolucao-conceito
 %%| fig-cap: "Linha do tempo dos principais marcos na consolidação da Análise da Paisagem como disciplina científica."
@@ -29,6 +30,92 @@ graph LR
     style G fill:#388E3C,stroke:#1B5E20,color:#fff
     style H fill:#2E7D32,stroke:#1B5E20,color:#fff
 ```
+:::
+
+::: {.content-visible when-format="pdf"}
+
+```{=latex}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  every node/.style={font=\small},
+  phase/.style={font=\scriptsize\bfseries, text=white, rounded corners=2pt,
+    inner sep=3pt, minimum height=0.45cm},
+  yearnode/.style={circle, fill=white, draw=green!50!black, line width=0.7pt,
+    inner sep=0pt, minimum size=6mm, font=\footnotesize\bfseries},
+  lbl/.style={align=center, font=\scriptsize, text width=2.1cm}
+]
+
+% === Eixo principal ===
+\draw[green!50!black, line width=1.2pt]
+  (0,0) -- (14,0);
+
+% Marcas de fase (barras coloridas atrás do eixo)
+\fill[green!80!black, opacity=0.08, rounded corners=3pt]
+  (-0.3,-2.8) rectangle (5.3, 2.8);
+\fill[green!60!black, opacity=0.08, rounded corners=3pt]
+  (5.5,-2.8) rectangle (10.3, 2.8);
+\fill[green!40!black, opacity=0.08, rounded corners=3pt]
+  (10.5,-2.8) rectangle (14.3, 2.8);
+
+% Rótulos de fase (topo)
+\node[phase, fill=green!30!black] at (2.5, 2.5)
+  {Fase Fundacional (1939--1981)};
+\node[phase, fill=green!45!black] at (7.9, 2.5)
+  {Formaliza\c{c}\~{a}o (1984--1995)};
+\node[phase, fill=green!60!black] at (12.4, 2.5)
+  {Fase Quantitativa};
+
+% === Nós dos anos (no eixo) ===
+\node[yearnode] (y39)  at ( 0.0, 0) {39};
+\node[yearnode] (y69)  at ( 2.0, 0) {69};
+\node[yearnode] (y81)  at ( 4.0, 0) {81};
+\node[yearnode] (y84)  at ( 6.0, 0) {84};
+\node[yearnode] (y86)  at ( 8.0, 0) {86};
+\node[yearnode] (y95)  at (10.0, 0) {95};
+\node[yearnode] (y02)  at (12.0, 0) {02};
+\node[yearnode] (y15)  at (14.0, 0) {15};
+
+% === Rótulos ACIMA (ímpares: 1,3,5,7) ===
+\node[lbl, above=0.5cm of y39]  (L1) {Carl Troll cunha\\
+  \textit{Landschafts-\\\"okologie}};
+\node[lbl, above=0.5cm of y81]  (L3) {Naveh \&\\Lieberman:\\
+  1\textsuperscript{o} livro-texto};
+\node[lbl, above=0.5cm of y86]  (L5) {Forman \&\\Godron:\\
+  \textit{Landscape\\Ecology}};
+\node[lbl, above=0.5cm of y02]  (L7) {McGarigal \&\\Cushman:\\
+  FRAGSTATS};
+
+% === Rótulos ABAIXO (pares: 2,4,6,8) ===
+\node[lbl, below=0.5cm of y69]  (L2) {Neef publica\\bases te\'{o}ricas};
+\node[lbl, below=0.5cm of y84]  (L4) {Allerton Park\\formaliza a\\disciplina};
+\node[lbl, below=0.5cm of y95]  (L6) {Forman publica\\\textit{Land Mosaics}};
+\node[lbl, below=0.5cm of y15]  (L8) {Turner \&\\Gardner:\\
+  2\textsuperscript{a} edi\c{c}\~{a}o};
+
+% === Linhas de conexão (rótulo → nó) ===
+\draw[gray!50, thin] (L1.south) -- (y39.north);
+\draw[gray!50, thin] (L3.south) -- (y81.north);
+\draw[gray!50, thin] (L5.south) -- (y86.north);
+\draw[gray!50, thin] (L7.south) -- (y02.north);
+
+\draw[gray!50, thin] (L2.north) -- (y69.south);
+\draw[gray!50, thin] (L4.north) -- (y84.south);
+\draw[gray!50, thin] (L6.north) -- (y95.south);
+\draw[gray!50, thin] (L8.north) -- (y15.south);
+
+% === Setas direcionais no eixo ===
+\foreach \a/\b in {y39/y69, y69/y81, y81/y84, y84/y86, y86/y95, y95/y02, y02/y15}
+  \draw[-stealth, green!50!black, line width=0.5pt]
+    ([xshift=3.5mm]\a.east) -- ([xshift=-3.5mm]\b.west);
+
+\end{tikzpicture}
+\caption{Linha do tempo dos principais marcos na consolida\c{c}\~{a}o da An\'{a}lise da Paisagem como disciplina cient\'{i}fica.}
+\label{fig-evolucao-conceito}
+\end{figure}
+```
+
+:::
 
 A @fig-evolucao-conceito revela uma trajetória de quase oito décadas que pode ser lida em três fases. Na fase fundacional (1939–1981), geógrafos da Europa Central como Troll [-@troll1939], Neef [-@neef1967] e Schmithüsen [-@schmithusen1976] desenvolveram os alicerces teóricos, enfatizando a paisagem como unidade integradora de processos naturais e culturais [@naveh2000]. O impulso para a formalização (1984–1995) veio da América do Norte, quando o workshop de Allerton Park consolidou a ecologia da paisagem como disciplina autônoma com vocabulário, métodos e questões de pesquisa próprios [@risser1984], culminando nas obras de Forman e Godron [-@forman1986] e Forman [-@forman1995]. Desde 2002, a fase quantitativa trouxe métricas espaciais padronizadas (FRAGSTATS), integração com SIG e sensoriamento remoto e sínteses abrangentes como Turner e Gardner [-@turner2015], que estabelecem o cânone contemporâneo [@wu2004].
 
