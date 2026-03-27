@@ -44,19 +44,48 @@ def get_font(name, size, bold=False):
     return ImageFont.truetype("C:/Windows/Fonts/arial.ttf", size)
 
 
-# ── Criação da imagem base com gradiente ────────────────────
-img = Image.new("RGBA", (W, H), BG_TOP)
-draw = ImageDraw.Draw(img)
+# ── Criação da imagem base com a Foto "Paisagem Resiliente" ─────────
+bg_img_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "img", "paisagem_resiliente.jpg")
 
-# Gradiente vertical suave
-for y in range(H):
-    t = y / H
-    # curva não-linear para transição mais interessante
-    t2 = t * t * (3 - 2 * t)  # smoothstep
-    r = int(BG_TOP[0] + (BG_BOT[0] - BG_TOP[0]) * t2)
-    g = int(BG_TOP[1] + (BG_BOT[1] - BG_TOP[1]) * t2)
-    b = int(BG_TOP[2] + (BG_BOT[2] - BG_TOP[2]) * t2)
-    draw.line([(0, y), (W, y)], fill=(r, g, b, 255))
+if os.path.exists(bg_img_path):
+    bg_img = Image.open(bg_img_path).convert("RGBA")
+    
+    # Redimensionar a imagem para cobrir a capa inteira (zoom fill)
+    bg_w, bg_h = bg_img.size
+    aspect_capa = W / H
+    aspect_bg = bg_w / bg_h
+    
+    if aspect_bg > aspect_capa:
+        # A imagem é mais larga que a capa, cropar nas laterais
+        new_h = H
+        new_w = int(aspect_bg * H)
+        bg_img = bg_img.resize((new_w, new_h), Image.Resampling.LANCZOS)
+        # Cortar do centro
+        offset = (new_w - W) // 2
+        bg_img = bg_img.crop((offset, 0, offset + W, H))
+    else:
+        # A imagem é mais alta que a capa, cropar em cima/embaixo
+        new_w = W
+        new_h = int(W / aspect_bg)
+        bg_img = bg_img.resize((new_w, new_h), Image.Resampling.LANCZOS)
+        # Cortar do centro (um pouco mais para baixo para focar na árvore/cabras)
+        offset = (new_h - H) // 2
+        bg_img = bg_img.crop((0, offset, W, offset + H))
+        
+    img = bg_img
+    draw = ImageDraw.Draw(img)
+else:
+    # Se não achar a imagem, faz o fundo com gradiente como antes
+    img = Image.new("RGBA", (W, H), BG_TOP)
+    draw = ImageDraw.Draw(img)
+    for y in range(H):
+        t = y / H
+        t2 = t * t * (3 - 2 * t)
+        r = int(BG_TOP[0] + (BG_BOT[0] - BG_TOP[0]) * t2)
+        g = int(BG_TOP[1] + (BG_BOT[1] - BG_TOP[1]) * t2)
+        b = int(BG_TOP[2] + (BG_BOT[2] - BG_TOP[2]) * t2)
+        draw.line([(0, y), (W, y)], fill=(r, g, b, 255))
+
 
 # ── Curvas topográficas (Perlin-like com seno composto) ─────
 topo_layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -134,20 +163,23 @@ for idx, level in enumerate(levels):
 topo_layer = topo_layer.filter(ImageFilter.GaussianBlur(radius=1.2))
 img = Image.alpha_composite(img, topo_layer)
 
-# ── Faixa semitransparente para texto do título ─────────────
+# ── Faixa escurecida/fundo para o texto ficar legível ─────────────
 overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
 ov_draw = ImageDraw.Draw(overlay)
 
-# Faixa escura sutil no topo (y: 0 a 270)
-for y in range(0, 270):
-    alpha = int(90 * (1 - y / 270))
-    ov_draw.line([(0, y), (W, y)], fill=(0, 0, 0, alpha))
+# Overlay geral muito sutil para escurecer a foto
+ov_draw.rectangle([0, 0, W, H], fill=(10, 30, 20, 100))
 
-# Faixa escura sutil embaixo (y: 1200 a H)
+# Faixa escura forte no topo (para o título principal)
+for y in range(0, 450):
+    alpha = int(220 * (1 - y / 450))
+    ov_draw.line([(0, y), (W, y)], fill=(0, 20, 10, alpha))
+
+# Faixa escura forte embaixo (para autor e informações)
 for y in range(1200, H):
     t = (y - 1200) / (H - 1200)
-    alpha = int(70 * t)
-    ov_draw.line([(0, y), (W, y)], fill=(0, 0, 0, alpha))
+    alpha = int(220 * t)
+    ov_draw.line([(0, y), (W, y)], fill=(0, 15, 10, alpha))
 
 img = Image.alpha_composite(img, overlay)
 
