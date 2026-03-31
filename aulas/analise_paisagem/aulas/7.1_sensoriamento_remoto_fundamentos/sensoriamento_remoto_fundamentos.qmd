@@ -238,7 +238,7 @@ Atribuímos bandas aos canais **R-G-B** do monitor:
 ::: {.column width="50%"}
 ### NDVI  -  Índice de Vegetação
 
-$$NDVI = \frac{NIR - RED}{NIR + RED} = \frac{B8 - B4}{B8 + B4}$$
+NDVI = (NIR − RED) / (NIR + RED) = (B8 − B4) / (B8 + B4)
 
 | Valor | Interpretação |
 |:-----:|-------------|
@@ -252,7 +252,7 @@ $$NDVI = \frac{NIR - RED}{NIR + RED} = \frac{B8 - B4}{B8 + B4}$$
 
 ### NDWI  -  Índice de Água
 
-$$NDWI = \frac{GREEN - NIR}{GREEN + NIR} = \frac{B3 - B8}{B3 + B8}$$
+NDWI = (GREEN − NIR) / (GREEN + NIR) = (B3 − B8) / (B3 + B8)
 
 - Valores positivos → superfícies de água
 - Valores negativos → superfícies secas
@@ -261,7 +261,7 @@ $$NDWI = \frac{GREEN - NIR}{GREEN + NIR} = \frac{B3 - B8}{B3 + B8}$$
 ::: {.column width="50%"}
 ### NDBI  -  Índice de Área Construída
 
-$$NDBI = \frac{SWIR - NIR}{SWIR + NIR} = \frac{B11 - B8}{B11 + B8}$$
+NDBI = (SWIR − NIR) / (SWIR + NIR) = (B11 − B8) / (B11 + B8)
 
 - Valores positivos → áreas urbanizadas/construídas
 - Valores negativos → vegetação

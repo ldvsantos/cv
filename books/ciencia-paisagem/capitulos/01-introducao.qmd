@@ -32,11 +32,9 @@ graph LR
 ```
 :::
 
-::: {.content-visible when-format="pdf"}
+::: {#fig-evolucao-conceito .content-visible when-format="pdf" fig-cap="Linha do tempo dos principais marcos na consolidação da Análise da Paisagem como disciplina científica."}
 
 ```{=latex}
-\begin{figure}[H]
-\centering
 \begin{tikzpicture}[
   every node/.style={font=\small},
   phase/.style={font=\scriptsize\bfseries, text=white, rounded corners=2pt,
@@ -110,9 +108,6 @@ graph LR
     ([xshift=3.5mm]\a.east) -- ([xshift=-3.5mm]\b.west);
 
 \end{tikzpicture}
-\caption{Linha do tempo dos principais marcos na consolida\c{c}\~{a}o da An\'{a}lise da Paisagem como disciplina cient\'{i}fica.}
-\label{fig-evolucao-conceito}
-\end{figure}
 ```
 
 :::

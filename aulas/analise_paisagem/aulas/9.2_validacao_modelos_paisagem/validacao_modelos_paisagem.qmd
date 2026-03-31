@@ -167,11 +167,11 @@ Diagonal = acertos. Fora da diagonal = erros de **comissão** (acima) e **omiss�
 ::: {.column width="50%"}
 | Métrica | Fórmula | Interpretação |
 |:--------|:--------|:--------------|
-| **Acurácia Global** | $\frac{\sum \text{diagonal}}{n}$ | % total de acertos |
-| **Acurácia do Produtor** | $\frac{a_{ii}}{\text{total coluna}_i}$ | Probabilidade de a classe real ser mapeada corretamente (1 âˆ’ omissão) |
-| **Acurácia do Usuário** | $\frac{a_{ii}}{\text{total linha}_i}$ | Probabilidade de o pixel mapeado ser realmente da classe (1 âˆ’ comissão) |
-| **Kappa** | $\frac{p_o - p_e}{1 - p_e}$ | Concordância corrigida pelo acaso |
-| **F1-Score** | $\frac{2 \cdot PA \cdot UA}{PA + UA}$ | Média harmônica de PA e UA |
+| **Acurácia Global** | Σdiagonal / n | % total de acertos |
+| **Acurácia do Produtor** | a_ii / total_coluna_i | Probabilidade de a classe real ser mapeada corretamente (1 − omissão) |
+| **Acurácia do Usuário** | a_ii / total_linha_i | Probabilidade de o pixel mapeado ser realmente da classe (1 − comissão) |
+| **Kappa** | (p_o − p_e) / (1 − p_e) | Concordância corrigida pelo acaso |
+| **F1-Score** | (2 · PA · UA) / (PA + UA) | Média harmônica de PA e UA |
 
 : Métricas de acurácia temática. {.striped .hover}
 :::
@@ -179,7 +179,7 @@ Diagonal = acertos. Fora da diagonal = erros de **comissão** (acima) e **omiss�
 ::: {.column width="50%"}
 ### Do exemplo anterior
 
-$$\text{Acurácia Global} = \frac{45 + 40 + 38 + 43}{200} = \frac{166}{200} = 83\%$$
+Acurácia Global = (45 + 40 + 38 + 43) / 200 = 166/200 = 83%
 
 | Classe | PA | UA | F1 |
 |:-------|:---:|:---:|:---:|

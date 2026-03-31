@@ -79,8 +79,8 @@ Aplicar métricas e indicadores de paisagem a um **cenário concreto** (área de
 
 | Métrica | O que mede | Fórmula |
 |---------|----------|---------|
-| **PC** | Probabilidade de conectividade | $PC = \frac{\sum_i \sum_j a_i \cdot a_j \cdot p_{ij}^*}{A_L^2}$ |
-| **IIC** | Índice integral de conectividade | $IIC = \frac{\sum_i \sum_j \frac{a_i \cdot a_j}{1+nl_{ij}}}{A_L^2}$ |
+| **PC** | Probabilidade de conectividade | PC = Σᵢ Σⱼ (aᵢ · aⱼ · p*_ij) / A_L² |
+| **IIC** | Índice integral de conectividade | IIC = Σᵢ Σⱼ [aᵢ · aⱼ / (1 + nl_ij)] / A_L² |
 | **dPC** | Importância relativa de cada mancha | Variação de PC ao remover mancha |
 
 : {.striped .hover}
@@ -166,7 +166,7 @@ Considere uma área de **5.000 ha** no semiárido baiano com os seguintes dados:
 ::: {.column width="50%"}
 ### PLAND  -  Proporção da paisagem
 
-$$PLAND_i = \frac{CA_i}{A_{total}} \times 100$$
+PLANDᵢ = (CAᵢ / A_total) × 100
 
 | Classe | CA (ha) | PLAND (%) |
 |--------|:------:|:---------:|
@@ -188,7 +188,7 @@ $$PLAND_i = \frac{CA_i}{A_{total}} \times 100$$
 ::: {.column width="50%"}
 ### LPI  -  Proporção da maior mancha
 
-$$LPI_i = \frac{max(a_j)}{A_{total}} \times 100$$
+LPIᵢ = max(aⱼ) / A_total × 100
 
 | Classe | Maior mancha (ha) | LPI (%) |
 |--------|:----------------:|:-------:|
@@ -200,11 +200,11 @@ $$LPI_i = \frac{max(a_j)}{A_{total}} \times 100$$
 
 ### Tamanho médio das manchas (MPS)
 
-$$MPS_{caatinga} = \frac{600}{12} = 50 \text{ ha/mancha}$$
+MPS_caatinga = 600 / 12 = 50 ha/mancha
 
 ### Densidade de bordas (ED)
 
-$$ED_{caatinga} = \frac{42.000 \text{ m}}{5.000 \text{ ha}} = 8,4 \text{ m/ha}$$
+ED_caatinga = 42.000 m / 5.000 ha = 8,4 m/ha
 
 ::: {.info-box}
 ED alto + manchas pequenas = **alto efeito de borda** = vulnerabilidade dos fragmentos

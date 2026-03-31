@@ -330,17 +330,17 @@ Quando calculamos métricas de fragmentação, como saber se o padrão observado
 
 ### Modelos neutros da paisagem
 
-Gardner et al. (1987) propuseram gerar **paisagens sintéticas aleatórias** com a mesma proporção de habitat ($PLAND$) e extensão da paisagem real.
+Gardner et al. (1987) propuseram gerar **paisagens sintéticas aleatórias** com a mesma proporção de habitat (PLAND) e extensão da paisagem real.
 
 **Procedimento:**
 
-1. Gerar 100-1000 paisagens aleatórias com mesmo $PLAND$
+1. Gerar 100-1000 paisagens aleatórias com mesmo PLAND
 2. Calcular métricas para cada paisagem simulada
 3. Construir distribuição nula
 4. Comparar valores observados com a distribuição nula
 
-> Se $NP_{real}$ >> $NP_{neutro}$ → processo de fragmentação ativo  
-> Se $AI_{real}$ >> $AI_{neutro}$ → autocorrelação espacial (sucessão, legislação)
+> Se NP_real >> NP_neutro → processo de fragmentação ativo  
+> Se AI_real >> AI_neutro → autocorrelação espacial (sucessão, legislação)
 :::
 
 ::: {.column width="50%"}
@@ -348,13 +348,13 @@ Gardner et al. (1987) propuseram gerar **paisagens sintéticas aleatórias** com
 **Limiar de percolação teórico
 **
 
-Em paisagens binárias aleatórias (With & King, 1997), o **limiar de percolação** ocorre em $PLAND \approx 59{,}28\%$.
+Em paisagens binárias aleatórias (With & King, 1997), o **limiar de percolação** ocorre em PLAND ≈ 59,28%.
 
-Abaixo desse valor, a conectividade colapsa em paisagens aleatórias. Se a paisagem real mantém conectividade com $PLAND < 59\%$, isso indica que a **configuração espacial** (não apenas a quantidade) está preservando a conectividade.
+Abaixo desse valor, a conectividade colapsa em paisagens aleatórias. Se a paisagem real mantém conectividade com PLAND < 59%, isso indica que a **configuração espacial** (não apenas a quantidade) está preservando a conectividade.
 
 ### Aplicação prática
 
-Em paisagens de Mata Atlântica com $PLAND$ entre 5-25%, a agregação de floresta em topos de morro e ao longo de cursos d'água é **significativamente superior** à esperada por distribuição aleatória → evidência do efeito combinado de:
+Em paisagens de Mata Atlântica com PLAND entre 5-25%, a agregação de floresta em topos de morro e ao longo de cursos d'água é **significativamente superior** à esperada por distribuição aleatória → evidência do efeito combinado de:
 
 - Topografia
 - Legislação de APPs

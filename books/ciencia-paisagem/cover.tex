@@ -1,6 +1,11 @@
 \usepackage{tikz}
 \usetikzlibrary{decorations.pathreplacing,positioning}
 
+%%% --- Controle de espaçamento vertical em torno de figuras ---
+\raggedbottom                                           % não estica glue vertical para preencher página
+\setlength{\intextsep}{8pt plus 2pt minus 2pt}         % espaço acima/abaixo de floats in-text (H)
+\setlength{\textfloatsep}{10pt plus 2pt minus 4pt}     % espaço entre float no topo/base e o texto
+
 \AtBeginDocument{%
 %%% --- PÁGINA 1: CAPA (imagem de capa) ---
 \thispagestyle{empty}%
@@ -25,23 +30,23 @@ Edição do Autor\\[0.3cm]
 \clearpage
 %%% --- PÁGINA 3: CRÉDITOS EDITORIAIS E FICHA CATALOGRÁFICA ---
 \thispagestyle{empty}%
-\newgeometry{top=2.5cm,bottom=2cm,left=3cm,right=2cm}%
+\newgeometry{top=2cm,bottom=1.5cm,left=3cm,right=2cm}%
 %% -- Créditos editoriais --
 \noindent\small
-\textbf{Título da obra:} Análise da Paisagem: Fundamentos, Métodos e Planejamento Territorial\\[10pt]
+\textbf{Título da obra:} Análise da Paisagem: Fundamentos, Métodos e Planejamento Territorial\\[6pt]
 \textbf{Autor}\\
-Luiz Diego Vidal Santos\\[8pt]
+Luiz Diego Vidal Santos\\[5pt]
 \textbf{Coordenação editorial}\\
-Luiz Diego Vidal Santos\\[8pt]
+Luiz Diego Vidal Santos\\[5pt]
 \textbf{Revisão do texto}\\
-Luiz Diego Vidal Santos\\[8pt]
+Luiz Diego Vidal Santos\\[5pt]
 \textbf{Capa e projeto gráfico}\\
-Luiz Diego Vidal Santos\\[8pt]
-\textbf{DOI:} \href{https://doi.org/10.5281/zenodo.19268053}{10.5281/zenodo.19268053}\\[8pt]
-\textbf{ORCID:} \href{https://orcid.org/0000-0001-8659-8557}{0000-0001-8659-8557}\\[8pt]
+Luiz Diego Vidal Santos\\[5pt]
+\textbf{DOI:} \href{https://doi.org/10.5281/zenodo.19268053}{10.5281/zenodo.19268053}\\[5pt]
+\textbf{ORCID:} \href{https://orcid.org/0000-0001-8659-8557}{0000-0001-8659-8557}\\[5pt]
 \textcopyright{} 2026, Luiz Diego Vidal Santos. Todos os direitos reservados.\\
 Este livro é distribuído sob licença
-\href{https://creativecommons.org/licenses/by-nc-sa/4.0/}{CC BY-NC-SA 4.0}.\\[14pt]
+\href{https://creativecommons.org/licenses/by-nc-sa/4.0/}{CC BY-NC-SA 4.0}.\\[8pt]
 %% -- Ficha catalográfica oficial (imagem) --
 \begin{center}
 \includegraphics[width=0.92\textwidth]{img/ficha_catalografica.png}
@@ -53,7 +58,7 @@ Universidade Estadual de Feira de Santana --- UEFS\\
 Departamento de Ciências Humanas e Filosofia --- DCHF\\
 Av. Transnordestina, s/n --- Novo Horizonte\\
 Feira de Santana/BA --- CEP: 44.036-900\\
-Fone: (75) 3161-8000\\[6pt]
+Fone: (75) 3161-8000\\[4pt]
 Disponível em: \url{https://diegovidalcv.com.br/books/ciencia-paisagem/}
 \normalsize
 \restoregeometry%

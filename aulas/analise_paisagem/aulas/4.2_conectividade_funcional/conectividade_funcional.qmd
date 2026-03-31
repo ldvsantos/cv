@@ -106,7 +106,7 @@ A **conectividade** entre fragmentos permite:
 ::: {.column width="55%"}
 ### Componentes
 
-A paisagem é representada como um **grafo** $G = (V, E)$:
+A paisagem é representada como um **grafo** G = (V, E):
 
 - **Nós (V)** = manchas de habitat (fragmentos)
 - **Arestas (E)** = conexões potenciais entre manchas
@@ -119,7 +119,7 @@ Cada aresta possui um **peso** baseado na:
 
 ### Propriedade do nó
 
-- **Atributo** = área da mancha ($a_i$) como proxy da qualidade do habitat
+- **Atributo** = área da mancha (aᵢ) como proxy da qualidade do habitat
 :::
 
 ::: {.column width="45%"}
@@ -127,9 +127,9 @@ Cada aresta possui um **peso** baseado na:
 **Limiar de dispersão
 **
 
-Duas manchas são consideradas **conectadas** se a distância entre elas for ≤ a **capacidade de dispersão** da espécie-alvo ($d_{max}$).
+Duas manchas são consideradas **conectadas** se a distância entre elas for ≤ a **capacidade de dispersão** da espécie-alvo (d_max).
 
-| Organismo | $d_{max}$ típico |
+| Organismo | d_max típico |
 |-----------|:---:|
 | Aves florestais (pequenas) | 200-1000 m |
 | Mamíferos médios | 1-5 km |
@@ -146,14 +146,14 @@ Duas manchas são consideradas **conectadas** se a distância entre elas for ≤
 
 ## IIC  -  Integral Index of Connectivity {.smaller-text}
 
-$$IIC = \frac{\sum_{i=1}^{n}\sum_{j=1}^{n} \frac{a_i \times a_j}{1 + nl_{ij}}}{A_L^2}$$
+IIC = Σᵢ Σⱼ [aᵢ × aⱼ / (1 + nl_ij)] / A_L²
 
 Onde:
 
-- $a_i$, $a_j$ = área das manchas $i$ e $j$
-- $nl_{ij}$ = número de ligações (arestas) no caminho mais curto entre $i$ e $j$
-- $A_L$ = área total da paisagem
-- $IIC$ varia de **0** (sem habitat) a **1** (paisagem toda conectada)
+- aᵢ, aⱼ = área das manchas i e j
+- nl_ij = número de ligações (arestas) no caminho mais curto entre i e j
+- A_L = área total da paisagem
+- IIC varia de **0** (sem habitat) a **1** (paisagem toda conectada)
 
 ::: {.info-box}
 O IIC é uma métrica **binária**  -  a conexão existe ou não (baseada no limiar de dispersão). Não considera probabilidades intermediárias.
@@ -163,20 +163,20 @@ O IIC é uma métrica **binária**  -  a conexão existe ou não (baseada no lim
 
 ## PC  -  Probability of Connectivity {.smaller-text}
 
-$$PC = \frac{\sum_{i=1}^{n}\sum_{j=1}^{n} a_i \times a_j \times p^{*}_{ij}}{A_L^2}$$
+PC = Σᵢ Σⱼ (aᵢ × aⱼ × p*_ij) / A_L²
 
-Onde $p^{*}_{ij}$ é o **produto máximo de probabilidades** de dispersão ao longo do caminho ótimo entre $i$ e $j$.
+Onde p*_ij é o **produto máximo de probabilidades** de dispersão ao longo do caminho ótimo entre i e j.
 
 ::: {.columns}
 ::: {.column width="50%"}
 ### Modelo de dispersão
 
-$$p_{ij} = e^{-k \times d_{ij}}$$
+p_ij = exp(−k × d_ij)
 
 Onde:
 
-- $d_{ij}$ = distância de custo entre manchas
-- $k$ = constante de dispersão ($k = -\ln(p_{median}) / d_{median}$)
+- d_ij = distância de custo entre manchas
+- k = constante de dispersão (k = −ln(p_median) / d_median)
 :::
 
 ::: {.column width="50%"}
@@ -199,9 +199,9 @@ O PC é **probabilístico**:
 
 ## dPC  -  Importância individual de cada mancha {.smaller-text}
 
-Para priorizar manchas para conservação, calcula-se a **variação percentual do PC** ao remover a mancha $k$:
+Para priorizar manchas para conservação, calcula-se a **variação percentual do PC** ao remover a mancha k:
 
-$$dPC_k = \frac{PC - PC_{remover\;k}}{PC} \times 100$$
+dPC_k = (PC − PC_sem_mancha_k) / PC × 100
 
 O dPC pode ser decomposto em três frações:
 
@@ -253,7 +253,7 @@ Manchas com alto **dPC_connector** são *key stepping stones*  -  sua perda desc
 1. Mapa de uso da terra classificado (raster)
 2. Código da classe de habitat-alvo
 3. Custos de deslocamento por classe de uso
-4. Capacidade de dispersão da espécie ($d_{max}$)
+4. Capacidade de dispersão da espécie (d_max)
 :::
 :::
 :::
@@ -305,7 +305,7 @@ Os custos são **espécie-dependentes**. Uma ave florestal atribui alto custo a 
 2. **Graph → Calculate Metrics**
    - Selecionar: PC, dPC (com decomposição)
    - Probabilidade de dispersão: modelo exponencial negativo
-   - Distância mediana: $d_{median}$ = capacidade de dispersão da espécie
+   - Distância mediana: d_median = capacidade de dispersão da espécie
 
 3. **Resultados:** tabela de atributos com dPC total, dPC_intra, dPC_flux, dPC_connector por mancha
 
@@ -337,7 +337,7 @@ No Graphab é possível:
 
 1. "Adicionar" novo fragmento (simular restauração)
 2. Recalcular PC
-3. Comparar $\Delta PC$ entre cenários
+3. Comparar ΔPC entre cenários
 
 Isso permite responder:
 
@@ -401,11 +401,11 @@ A **genética da paisagem** (Manel et al., 2003) integra:
 
 ### Princípio operacional
 
-1. Medir **diferenciação genética** ($F_{ST}$) entre populações em manchas distintas
+1. Medir **diferenciação genética** (F_ST) entre populações em manchas distintas
 2. Calcular **distância paisagística** (custo, resistência de circuito)
 3. Testar se o modelo com heterogeneidade da matriz explica mais variação genética que a simples distância geográfica
 
-> Se distância de custo prediz $F_{ST}$ melhor que distância euclidiana → **a matriz importa para o fluxo gênico**
+> Se distância de custo prediz F_ST melhor que distância euclidiana → **a matriz importa para o fluxo gênico**
 :::
 
 ::: {.column width="50%"}
@@ -441,7 +441,7 @@ Storfer et al. (2007) *Heredity*
 1. Baixe o mapa de uso da terra do MapBiomas (2023) para o seu município (30 m)
 2. Importe no Graphab e defina Floresta como habitat-alvo
 3. Atribua custos de deslocamento para cada classe
-4. Gere o grafo com $d_{max} = 1500$ m (ave florestal)
+4. Gere o grafo com d_max = 1500 m (ave florestal)
 5. Calcule PC e dPC com decomposição
 6. Identifique as **5 manchas mais importantes** para conectividade
 7. Proponha **2 áreas prioritárias** para restauração (simule no Graphab)

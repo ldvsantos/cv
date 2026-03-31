@@ -188,7 +188,7 @@ var uso2022 = mapbiomas.select('classification_2022')
 
 ### Como construir
 
-1. Obter áreas de cada classe em $t_1$ e $t_2$
+1. Obter áreas de cada classe em t₁ e t₂
 2. Identificar transições (MapBiomas → aba Transições)
 3. Preencher a matriz (tabela cruzada)
 4. Calcular totais, ganhos e perdas
@@ -201,8 +201,8 @@ var uso2022 = mapbiomas.select('classification_2022')
 
 | Indicador | Fórmula | Interpretação |
 |-----------|---------|-------------|
-| **Perda** | Total $t_1$ − diagonal | Área que saiu da classe |
-| **Ganho** | Total $t_2$ − diagonal | Área que entrou na classe |
+| **Perda** | Total t₁ − diagonal | Área que saiu da classe |
+| **Ganho** | Total t₂ − diagonal | Área que entrou na classe |
 | **Mudança líquida** | Ganho − Perda | Saldo (+ ou −) |
 | **Estabilidade** | Diagonal / Total | % que não mudou |
 

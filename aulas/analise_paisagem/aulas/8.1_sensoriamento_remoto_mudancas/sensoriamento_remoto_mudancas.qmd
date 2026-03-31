@@ -163,7 +163,7 @@ A detecção de mudanças por sensoriamento remoto deve distinguir:
 
 ### Método 2: Diferença de índices (quantitativa)
 
-$$\Delta NDVI = NDVI_{t2} - NDVI_{t1}$$
+ΔNDVI = NDVI_t2 − NDVI_t1
 
 - Valores **positivos** → aumento de vegetação (recuperação)
 - Valores **negativos** → perda de vegetação (degradação)
@@ -180,7 +180,7 @@ $$\Delta NDVI = NDVI_{t2} - NDVI_{t1}$$
 - Cruzar os mapas → **matriz de transição**
 - Identificar tipo e quantidade de mudança por classe
 
-| Classe $t_1$ | Classe $t_2$ | Transição |
+| Classe t₁ | Classe t₂ | Transição |
 |:------------:|:------------:|-----------|
 | Floresta | Pastagem | Desmatamento |
 | Pastagem | Solo exposto | Degradação |
@@ -267,13 +267,13 @@ O MapBiomas classifica a cobertura do Brasil a cada ano desde 1985, permitindo:
 
 A **matriz de transição** mostra a conversão entre classes em dois momentos:
 
-| $t_1$ \ $t_2$ | Floresta | Pastagem | Agricultura | Solo exposto | Total $t_1$ |
+| t₁ \ t₂ | Floresta | Pastagem | Agricultura | Solo exposto | Total t₁ |
 |:--------------:|:--------:|:--------:|:-----------:|:-----------:|:----------:|
 | **Floresta** | **800** | 120 | 30 | 50 | 1000 |
 | **Pastagem** | 20 | **550** | 80 | 50 | 700 |
 | **Agricultura** | 5 | 15 | **170** | 10 | 200 |
 | **Solo exposto** | 10 | 20 | 10 | **60** | 100 |
-| **Total $t_2$** | 835 | 705 | 290 | 170 | **2000** |
+| **Total t₂** | 835 | 705 | 290 | 170 | **2000** |
 
 : {.striped .hover}
 
