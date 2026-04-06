@@ -1,11 +1,11 @@
----
-title: "Testes de Hipóteses — Teste T"
-subtitle: "Aula 08 — Teste T para Amostras Únicas, Independentes e Pareadas<br>Análise de Dados Ambientais"
+﻿---
+title: "Testes de HipÃ³teses (Teste T)"
+subtitle: "Aula 08. Teste T para Amostras Ãšnicas, Independentes e Pareadas<br>AnÃ¡lise de Dados Ambientais"
 author: "Luiz Diego Vidal Santos"
 format:
   revealjs:
     logo: ../../../assets/logo-uefs.webp
-    footer: "UEFS | Análise de Dados Ambientais | Aula 08"
+    footer: "UEFS | AnÃ¡lise de Dados Ambientais | Aula 08"
     slide-number: true
     theme: [simple, ../../../assets/uefs.scss]
     controls: true
@@ -25,26 +25,26 @@ execute:
 ::: {.columns}
 :::: {.column width="60%"}
 
-- [1]{.circle} O que é o Teste T?
+- [1]{.circle} O que Ã© o Teste T?
 - [2]{.circle} Pressupostos do Teste T
-- [3]{.circle} Teste T — Amostra Única
-- [4]{.circle} Teste T — Amostras Independentes
-- [5]{.circle} Pressupostos Específicos & Homoscedasticidade
-- [6]{.circle} Teste T — Amostras Dependentes (Pareadas)
+- [3]{.circle} Teste T (Amostra Ãšnica)
+- [4]{.circle} Teste T (Amostras Independentes)
+- [5]{.circle} Pressupostos EspecÃ­ficos & Homoscedasticidade
+- [6]{.circle} Teste T para Amostras Dependentes (Pareadas)
 - [7]{.circle} Tamanho de Efeito
 
 ::::
 :::: {.column width="40%"}
 
 ::: {.info-box}
-**Objetivo:** Compreender os três tipos de Teste T e quando usar cada um para comparar médias — de forma acessível, com exemplos do campo ambiental e agrário.
+**Objetivo:** Compreender os trÃªs tipos de Teste T e quando usar cada um para comparar mÃ©dias, de forma acessÃ­vel, com exemplos do campo ambiental e agrÃ¡rio.
 :::
 
 ::::
 :::
 
 
-# [1 — O QUE É O TESTE T?]{.section-header}
+# [1. O QUE Ã‰ O TESTE T?]{.section-header}
 
 ## Teste T de Student {.smaller-text}
 
@@ -52,19 +52,19 @@ execute:
 :::: {.column width="55%"}
 
 ::: {.info-box}
-**Definição**
+**DefiniÃ§Ã£o**
 
-O Teste T é um **teste estatístico paramétrico** usado para **comparar médias**.
+O Teste T Ã© um **teste estatÃ­stico paramÃ©trico** usado para **comparar mÃ©dias**.
 
-Em outras palavras: ele responde à pergunta *"essa diferença de médias é real ou aconteceu por acaso?"*
+Em outras palavras: ele responde Ã  pergunta *"essa diferenÃ§a de mÃ©dias Ã© real ou aconteceu por acaso?"*
 :::
 
 . . .
 
 ::: {.highlight-box}
-**Analogia simples:** Imagine que você pesa dois sacos de feijão. Um marca 48 kg e outro 52 kg. Essa diferença de 4 kg é significativa ou é só variação natural entre sacos?
+**Analogia simples:** Imagine que vocÃª pesa dois sacos de feijÃ£o. Um marca 48 kg e outro 52 kg. Essa diferenÃ§a de 4 kg Ã© significativa ou Ã© sÃ³ variaÃ§Ã£o natural entre sacos?
 
-O Teste T responde exatamente isso — mas com rigor estatístico.
+O Teste T responde exatamente isso, mas com rigor estatÃ­stico.
 :::
 
 ::::
@@ -73,7 +73,7 @@ O Teste T responde exatamente isso — mas com rigor estatístico.
 ::: {.box}
 **Quem criou?**
 
-William Sealy Gosset (1876–1937), estatístico da cervejaria Guinness, publicou sob o pseudônimo **"Student"** — pois a empresa proibia publicações com nome real.
+William Sealy Gosset (1876â€“1937), estatÃ­stico da cervejaria Guinness, publicou sob o pseudÃ´nimo **"Student"**, pois a empresa proibia publicaÃ§Ãµes com nome real.
 
 ![William S. Gosset](slide2_img_2.png){width="50%" fig-align="center"}
 :::
@@ -82,7 +82,7 @@ William Sealy Gosset (1876–1937), estatístico da cervejaria Guinness, publico
 :::
 
 
-## Três Tipos de Teste T {.smaller-text}
+## TrÃªs Tipos de Teste T {.smaller-text}
 
 ![](fig_tipos_teste_t.png){width="85%" fig-align="center"}
 
@@ -90,37 +90,37 @@ William Sealy Gosset (1876–1937), estatístico da cervejaria Guinness, publico
 
 | Tipo | Quando usar? | Exemplo ambiental |
 |---|---|---|
-| **Amostra Única** | 1 grupo vs. valor fixo conhecido | Temperatura média local vs. média histórica |
+| **Amostra Ãšnica** | 1 grupo vs. valor fixo conhecido | Temperatura mÃ©dia local vs. mÃ©dia histÃ³rica |
 | **Amostras Independentes** | 2 grupos distintos | Solo coberto vs. solo exposto |
-| **Amostras Dependentes** | 1 grupo em 2 momentos | Volume radicular pré e pós-adubação |
-
-: {.striped .hover}
+| **Amostras Dependentes** | 1 grupo em 2 momentos | Volume radicular prÃ© e pÃ³s-adubaÃ§Ã£o |
 
 
-# [2 — PRESSUPOSTOS DO TESTE T]{.section-header}
 
-## Condições para Aplicar o Teste T {.smaller-text}
+
+# [2. PRESSUPOSTOS DO TESTE T]{.section-header}
+
+## CondiÃ§Ãµes para Aplicar o Teste T {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="50%"}
 
 ::: {.info-box}
-**O que são pressupostos?**
+**O que sÃ£o pressupostos?**
 
-São condições que os dados precisam atender para que o resultado do teste seja confiável. Pense neles como "regras do jogo".
+SÃ£o condiÃ§Ãµes que os dados precisam atender para que o resultado do teste seja confiÃ¡vel. Pense neles como "regras do jogo".
 :::
 
 ::::
 :::: {.column width="50%"}
 
 ::: {.box}
-[1]{.circle} **Distribuição normal** — Os dados devem seguir (aproximadamente) a curva normal
+[1]{.circle} **DistribuiÃ§Ã£o normal.** Os dados devem seguir (aproximadamente) a curva normal
 
-[2]{.circle} **Nível intervalar** — A variável medida deve ser contínua (peso, temperatura, nota...)
+[2]{.circle} **NÃ­vel intervalar.** A variÃ¡vel medida deve ser contÃ­nua (peso, temperatura, nota...)
 
-[3]{.circle} **Independência** — Uma observação não pode influenciar a outra
+[3]{.circle} **IndependÃªncia.** Uma observaÃ§Ã£o nÃ£o pode influenciar a outra
 
-[4]{.circle} **Homogeneidade de variâncias** — As dispersões dos grupos devem ser semelhantes *(apenas para amostras independentes)*
+[4]{.circle} **Homogeneidade de variÃ¢ncias.** As dispersÃµes dos grupos devem ser semelhantes *(apenas para amostras independentes)*
 :::
 
 ::::
@@ -129,13 +129,13 @@ São condições que os dados precisam atender para que o resultado do teste sej
 . . .
 
 ::: {.highlight-box}
-**Dica prática:** Na Aula 04 vimos como verificar a normalidade (Shapiro-Wilk, Kolmogorov-Smirnov). Para a homogeneidade de variâncias, usamos o **Teste de Levene**.
+**Dica prÃ¡tica:** Na Aula 04 vimos como verificar a normalidade (Shapiro-Wilk, Kolmogorov-Smirnov). Para a homogeneidade de variÃ¢ncias, usamos o **Teste de Levene**.
 :::
 
 
-# [3 — TESTE T: AMOSTRA ÚNICA]{.section-header}
+# [3. TESTE T: AMOSTRA ÃšNICA]{.section-header}
 
-## Conceito — Uma Amostra vs. Valor Fixo {.smaller-text}
+## Conceito (Uma Amostra vs. Valor Fixo) {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="55%"}
@@ -143,17 +143,17 @@ São condições que os dados precisam atender para que o resultado do teste sej
 ::: {.info-box}
 **Quando utilizar?**
 
-Quando queremos comparar a **média de um único grupo** com um **valor de referência já conhecido** (média populacional, meta institucional, limite normativo, etc.).
+Quando queremos comparar a **mÃ©dia de um Ãºnico grupo** com um **valor de referÃªncia jÃ¡ conhecido** (mÃ©dia populacional, meta institucional, limite normativo, etc.).
 :::
 
 . . .
 
 ::: {.highlight-box}
-**Exemplos práticos:**
+**Exemplos prÃ¡ticos:**
 
-- A temperatura média em 2024 difere da média histórica (25,3 °C)?
-- A concentração de fósforo em amostras de solo é diferente do limite de 20 mg/dm³?
-- A satisfação dos alunos é menor do que a meta de 9,0?
+- A temperatura mÃ©dia em 2024 difere da mÃ©dia histÃ³rica (25,3 Â°C)?
+- A concentraÃ§Ã£o de fÃ³sforo em amostras de solo Ã© diferente do limite de 20 mg/dmÂ³?
+- A satisfaÃ§Ã£o dos alunos Ã© menor do que a meta de 9,0?
 :::
 
 ::::
@@ -164,7 +164,7 @@ Quando queremos comparar a **média de um único grupo** com um **valor de refer
 flowchart TD
     A["<b style='color:#fff; font-weight:bold'>Amostra Unica</b>"] --> B["Coleta dados\n do grupo"]
     B --> C["Calcula media\n e desvio-padrao"]
-    C --> D{"Media amostra\n ≠ valor fixo?"}
+    C --> D{"Media amostra\n â‰  valor fixo?"}
     D -- "Nao sig." --> E["Diferenca = acaso"]
     D -- "Sig. p<0,05" --> F["Diferenca real"]
 
@@ -180,10 +180,10 @@ flowchart TD
 :::
 
 
-## Exemplo Prático — Satisfação Discente {.smaller-text}
+## Exemplo PrÃ¡tico (SatisfaÃ§Ã£o Discente) {.smaller-text}
 
 ::: {.info-box}
-**Situação:** Um professor desconfia que o nível de satisfação dos seus alunos é inferior à sua **meta de 9,0**. Ele entrevistou 20 alunos (manhã e tarde):
+**SituaÃ§Ã£o:** Um professor desconfia que o nÃ­vel de satisfaÃ§Ã£o dos seus alunos Ã© inferior Ã  sua **meta de 9,0**. Ele entrevistou 20 alunos (manhÃ£ e tarde):
 :::
 
 ::: {.columns}
@@ -191,18 +191,18 @@ flowchart TD
 
 | Turno | Notas |
 |---|---|
-| **Manhã** | 7,0 · 9,0 · 9,5 · 8,9 · 10,0 · 9,8 · 7,9 · 8,9 · 9,1 · 9,3 |
-| **Tarde** | 9,4 · 7,9 · 8,7 · 8,8 · 8,5 · 9,0 · 9,1 · 7,6 · 7,5 · 8,0 |
+| **ManhÃ£** | 7,0 Â· 9,0 Â· 9,5 Â· 8,9 Â· 10,0 Â· 9,8 Â· 7,9 Â· 8,9 Â· 9,1 Â· 9,3 |
+| **Tarde** | 9,4 Â· 7,9 Â· 8,7 Â· 8,8 Â· 8,5 Â· 9,0 Â· 9,1 Â· 7,6 Â· 7,5 Â· 8,0 |
 
-: {.striped .hover}
+
 
 . . .
 
 ::: {.box}
-**Hipóteses:**
+**HipÃ³teses:**
 
-- $H_0$: $\mu = 9{,}0$ (a média é igual à meta)
-- $H_1$: $\mu < 9{,}0$ (a média é menor que a meta)
+- $H_0$: $\mu = 9{,}0$ (a mÃ©dia Ã© igual Ã  meta)
+- $H_1$: $\mu < 9{,}0$ (a mÃ©dia Ã© menor que a meta)
 :::
 
 ::::
@@ -214,21 +214,21 @@ flowchart TD
 :::
 
 
-## Cálculo e Decisão — Amostra Única {.smaller-text}
+## CÃ¡lculo e DecisÃ£o (Amostra Ãšnica) {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="50%"}
 
 ::: {.info-box}
-**Fórmula do Teste T (amostra única):**
+**FÃ³rmula do Teste T (amostra Ãºnica):**
 
 $$t = \frac{\bar{x} - \mu_0}{s / \sqrt{n}}$$
 
 Onde:
 
-- $\bar{x}$ = média da amostra
-- $\mu_0$ = valor de referência (9,0)
-- $s$ = desvio-padrão da amostra
+- $\bar{x}$ = mÃ©dia da amostra
+- $\mu_0$ = valor de referÃªncia (9,0)
+- $s$ = desvio-padrÃ£o da amostra
 - $n$ = tamanho da amostra (20)
 :::
 
@@ -236,27 +236,27 @@ Onde:
 :::: {.column width="50%"}
 
 ::: {.box}
-**Valores críticos:**
+**Valores crÃ­ticos:**
 
 - Graus de liberdade: $gl = n - 1 = 19$
 - $t_{\text{tabelado}}$ (bicaudal, $\alpha$ = 0,05): **2,093**
 
-Se $|t_{\text{calculado}}| > t_{\text{tabelado}}$ → **rejeitamos** $H_0$
+Se $|t_{\text{calculado}}| > t_{\text{tabelado}}$ â†’ **rejeitamos** $H_0$
 :::
 
 . . .
 
 ::: {.highlight-box}
-**Interpretação simples:** Se o valor de *t* calculado ultrapassa o tabelado, a diferença observada **não é mero acaso** — há evidência estatística de que a média difere da meta.
+**InterpretaÃ§Ã£o simples:** Se o valor de *t* calculado ultrapassa o tabelado, a diferenÃ§a observada **nÃ£o Ã© mero acaso**, ou seja, hÃ¡ evidÃªncia estatÃ­stica de que a mÃ©dia difere da meta.
 :::
 
 ::::
 :::
 
 
-# [4 — TESTE T: AMOSTRAS INDEPENDENTES]{.section-header}
+# [4. TESTE T: AMOSTRAS INDEPENDENTES]{.section-header}
 
-## Conceito — Dois Grupos Distintos {.smaller-text}
+## Conceito (Dois Grupos Distintos) {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="55%"}
@@ -264,9 +264,9 @@ Se $|t_{\text{calculado}}| > t_{\text{tabelado}}$ → **rejeitamos** $H_0$
 ::: {.info-box}
 **Quando utilizar?**
 
-Quando queremos comparar as médias de **dois grupos independentes** (que não possuem relação entre si).
+Quando queremos comparar as mÃ©dias de **dois grupos independentes** (que nÃ£o possuem relaÃ§Ã£o entre si).
 
-A ideia é simples: coletamos dados de dois grupos diferentes e verificamos se a diferença entre suas médias é estatisticamente significativa.
+A ideia Ã© simples: coletamos dados de dois grupos diferentes e verificamos se a diferenÃ§a entre suas mÃ©dias Ã© estatisticamente significativa.
 :::
 
 . . .
@@ -274,8 +274,8 @@ A ideia é simples: coletamos dados de dois grupos diferentes e verificamos se a
 ::: {.highlight-box}
 **Exemplos de pesquisas ambientais:**
 
-- Intensificação de pastejo em bovinos de corte: sistema intermitente vs. contínuo
-- Contenção da erosão: geogrid com resina vs. sem resina
+- IntensificaÃ§Ã£o de pastejo em bovinos de corte: sistema intermitente vs. contÃ­nuo
+- ContenÃ§Ã£o da erosÃ£o: geogrid com resina vs. sem resina
 - Salpicamento em solos: com cobertura vegetal vs. sem cobertura
 :::
 
@@ -289,7 +289,7 @@ flowchart TD
     A --> C["Grupo B"]
     B --> D["Media A"]
     C --> E["Media B"]
-    D --> F{"Media A ≠ Media B?"}
+    D --> F{"Media A â‰  Media B?"}
     E --> F
     F -- "Nao sig." --> G["Diferenca = acaso"]
     F -- "Sig. p<0,05" --> H["Diferenca real"]
@@ -308,16 +308,16 @@ flowchart TD
 :::
 
 
-## Exemplo — Erosão em Latossolos {.smaller-text}
+## Exemplo (ErosÃ£o em Latossolos) {.smaller-text}
 
 ::: {.info-box}
-**Pergunta:** Existem diferenças nos níveis de erosão por salpicamento em latossolos com e sem cobertura do solo?
+**Pergunta:** Existem diferenÃ§as nos nÃ­veis de erosÃ£o por salpicamento em latossolos com e sem cobertura do solo?
 :::
 
 ::: {.columns}
 :::: {.column width="45%"}
 
-| Coberto | Não coberto |
+| Coberto | NÃ£o coberto |
 |:---:|:---:|
 | 12 | 10 |
 | 9 | 8 |
@@ -327,7 +327,7 @@ flowchart TD
 | 9 | 7 |
 | 8 | 6 |
 
-: {.striped .hover}
+
 
 ::::
 :::: {.column width="55%"}
@@ -338,20 +338,20 @@ flowchart TD
 :::
 
 
-## Fórmula e Interpretação — Independentes {.smaller-text}
+## FÃ³rmula e InterpretaÃ§Ã£o (Independentes) {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="50%"}
 
 ::: {.info-box}
-**Fórmula do Teste T (amostras independentes):**
+**FÃ³rmula do Teste T (amostras independentes):**
 
 $$t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}$$
 
 Onde:
 
-- $\bar{x}_1, \bar{x}_2$ = médias dos dois grupos
-- $s_1^2, s_2^2$ = variâncias dos dois grupos
+- $\bar{x}_1, \bar{x}_2$ = mÃ©dias dos dois grupos
+- $s_1^2, s_2^2$ = variÃ¢ncias dos dois grupos
 - $n_1, n_2$ = tamanhos amostrais
 :::
 
@@ -359,47 +359,47 @@ Onde:
 :::: {.column width="50%"}
 
 ::: {.box}
-**No exemplo de erosão:**
+**No exemplo de erosÃ£o:**
 
 - **Coberto:** $M = 9{,}57$ ; $DP = 2{,}22$
-- **Não coberto:** $M = 6{,}86$ ; $DP = 2{,}03$
+- **NÃ£o coberto:** $M = 6{,}86$ ; $DP = 2{,}03$
 - $gl = n_1 + n_2 - 2 = 12$
 :::
 
 . . .
 
 ::: {.highlight-box}
-**Hipóteses:**
+**HipÃ³teses:**
 
-- $H_0$: $\mu_1 = \mu_2$ (as médias são iguais)
-- $H_1$: $\mu_1 \neq \mu_2$ (as médias diferem)
+- $H_0$: $\mu_1 = \mu_2$ (as mÃ©dias sÃ£o iguais)
+- $H_1$: $\mu_1 \neq \mu_2$ (as mÃ©dias diferem)
 
-Se $p < 0{,}05$ → a cobertura **influencia significativamente** a erosão.
+Se $p < 0{,}05$ â†’ a cobertura **influencia significativamente** a erosÃ£o.
 :::
 
 ::::
 :::
 
 
-# [5 — PRESSUPOSTOS & HOMOSCEDASTICIDADE]{.section-header}
+# [5. PRESSUPOSTOS & HOMOSCEDASTICIDADE]{.section-header}
 
-## Homogeneidade de Variâncias {.smaller-text}
+## Homogeneidade de VariÃ¢ncias {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="50%"}
 
 ::: {.info-box}
-**O que é homoscedasticidade?**
+**O que Ã© homoscedasticidade?**
 
-Significa que a **variabilidade** (dispersão) dos dados em torno da média é **semelhante** entre os grupos comparados.
+Significa que a **variabilidade** (dispersÃ£o) dos dados em torno da mÃ©dia Ã© **semelhante** entre os grupos comparados.
 
-Não confundir com médias iguais! Os grupos podem ter médias diferentes, mas dispersões parecidas.
+NÃ£o confundir com mÃ©dias iguais! Os grupos podem ter mÃ©dias diferentes, mas dispersÃµes parecidas.
 :::
 
 . . .
 
 ::: {.highlight-box}
-**Analogia:** Imagine dois alvos de tiro ao alvo. As flechas podem acertar centros diferentes (médias diferentes), mas se ambos os conjuntos de flechas estão igualmente espalhados, há homoscedasticidade.
+**Analogia:** Imagine dois alvos de tiro ao alvo. As flechas podem acertar centros diferentes (mÃ©dias diferentes), mas se ambos os conjuntos de flechas estÃ£o igualmente espalhados, hÃ¡ homoscedasticidade.
 :::
 
 ::::
@@ -411,25 +411,25 @@ Não confundir com médias iguais! Os grupos podem ter médias diferentes, mas d
 :::
 
 
-## Correção de Welch {.smaller-text}
+## CorreÃ§Ã£o de Welch {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="55%"}
 
 ::: {.info-box}
-**E se as variâncias forem diferentes?**
+**E se as variÃ¢ncias forem diferentes?**
 
-O Teste T clássico assume variâncias iguais. Quando isso não ocorre (heterocedasticidade), usamos a **correção de Welch**, que ajusta os graus de liberdade.
+O Teste T clÃ¡ssico assume variÃ¢ncias iguais. Quando isso nÃ£o ocorre (heterocedasticidade), usamos a **correÃ§Ã£o de Welch**, que ajusta os graus de liberdade.
 :::
 
 . . .
 
 ::: {.box}
-**Na prática:**
+**Na prÃ¡tica:**
 
-- O software JASP/SPSS já calcula automaticamente as duas versões: com e sem correção de Welch
-- Sempre verifique o **Teste de Levene**: se $p < 0{,}05$, as variâncias são diferentes → use Welch
-- Se $p > 0{,}05$ → variâncias homogêneas → use Student clássico
+- O software JASP/SPSS jÃ¡ calcula automaticamente as duas versÃµes: com e sem correÃ§Ã£o de Welch
+- Sempre verifique o **Teste de Levene**: se $p < 0{,}05$, as variÃ¢ncias sÃ£o diferentes â†’ use Welch
+- Se $p > 0{,}05$ â†’ variÃ¢ncias homogÃªneas â†’ use Student clÃ¡ssico
 :::
 
 ::::
@@ -438,21 +438,21 @@ O Teste T clássico assume variâncias iguais. Quando isso não ocorre (heteroce
 ::: {.highlight-box}
 **Resumo visual:**
 
-| Levene | Variâncias | Usar |
+| Levene | VariÃ¢ncias | Usar |
 |:---:|:---:|:---:|
 | $p > 0{,}05$ | Iguais | Student |
 | $p < 0{,}05$ | Diferentes | Welch |
 
-: {.striped .hover}
+
 :::
 
 ::::
 :::
 
 
-# [6 — TESTE T: AMOSTRAS DEPENDENTES]{.section-header}
+# [6. TESTE T: AMOSTRAS DEPENDENTES]{.section-header}
 
-## Conceito — Pré e Pós-teste {.smaller-text}
+## Conceito (PrÃ© e PÃ³s-teste) {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="55%"}
@@ -460,9 +460,9 @@ O Teste T clássico assume variâncias iguais. Quando isso não ocorre (heteroce
 ::: {.info-box}
 **Quando utilizar?**
 
-Quando **um mesmo grupo** é avaliado em **dois momentos diferentes** (antes e depois de um tratamento, intervenção ou evento).
+Quando **um mesmo grupo** Ã© avaliado em **dois momentos diferentes** (antes e depois de um tratamento, intervenÃ§Ã£o ou evento).
 
-A grande vantagem é que cada sujeito/repetição serve como seu **próprio controle**.
+A grande vantagem Ã© que cada sujeito/repetiÃ§Ã£o serve como seu **prÃ³prio controle**.
 :::
 
 . . .
@@ -470,9 +470,9 @@ A grande vantagem é que cada sujeito/repetição serve como seu **próprio cont
 ::: {.highlight-box}
 **Exemplos ambientais:**
 
-- Volume radicular **antes** e **depois** da adubação nitrogenada
-- Qualidade da água **antes** e **depois** da instalação de mata ciliar
-- Resistência do solo **antes** e **depois** da aplicação de bioestabilizante
+- Volume radicular **antes** e **depois** da adubaÃ§Ã£o nitrogenada
+- Qualidade da Ã¡gua **antes** e **depois** da instalaÃ§Ã£o de mata ciliar
+- ResistÃªncia do solo **antes** e **depois** da aplicaÃ§Ã£o de bioestabilizante
 :::
 
 ::::
@@ -484,31 +484,31 @@ A grande vantagem é que cada sujeito/repetição serve como seu **próprio cont
 :::
 
 
-## Fórmula e Lógica — Dependentes {.smaller-text}
+## FÃ³rmula e LÃ³gica (Dependentes) {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="50%"}
 
 ::: {.info-box}
-**Fórmula do Teste T pareado:**
+**FÃ³rmula do Teste T pareado:**
 
 $$t = \frac{\bar{d}}{s_d / \sqrt{n}}$$
 
 Onde:
 
-- $\bar{d}$ = média das **diferenças** (pós − pré) para cada par
-- $s_d$ = desvio-padrão das diferenças
-- $n$ = número de pares
+- $\bar{d}$ = mÃ©dia das **diferenÃ§as** (pÃ³s âˆ’ prÃ©) para cada par
+- $s_d$ = desvio-padrÃ£o das diferenÃ§as
+- $n$ = nÃºmero de pares
 :::
 
 ::::
 :::: {.column width="50%"}
 
 ::: {.box}
-**Hipóteses:**
+**HipÃ³teses:**
 
-- $H_0$: $\mu_d = 0$ (não há diferença entre os momentos)
-- $H_1$: $\mu_d \neq 0$ (há mudança significativa)
+- $H_0$: $\mu_d = 0$ (nÃ£o hÃ¡ diferenÃ§a entre os momentos)
+- $H_1$: $\mu_d \neq 0$ (hÃ¡ mudanÃ§a significativa)
 :::
 
 . . .
@@ -516,36 +516,36 @@ Onde:
 ::: {.highlight-box}
 **Passo a passo simplificado:**
 
-[1]{.circle} Calcule a diferença (pós − pré) para cada par
+[1]{.circle} Calcule a diferenÃ§a (pÃ³s âˆ’ prÃ©) para cada par
 
-[2]{.circle} Calcule a média e o desvio-padrão dessas diferenças
+[2]{.circle} Calcule a mÃ©dia e o desvio-padrÃ£o dessas diferenÃ§as
 
-[3]{.circle} Aplique a fórmula e compare com $t$ tabelado
+[3]{.circle} Aplique a fÃ³rmula e compare com $t$ tabelado
 :::
 
 ::::
 :::
 
 
-# [7 — TAMANHO DE EFEITO]{.section-header}
+# [7. TAMANHO DE EFEITO]{.section-header}
 
-## O que é o Tamanho de Efeito? {.smaller-text}
+## O que Ã© o Tamanho de Efeito? {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="55%"}
 
 ::: {.info-box}
-**Por que apenas o valor-*p* não basta?**
+**Por que apenas o valor-*p* nÃ£o basta?**
 
-O valor-*p* diz **se** a diferença é estatisticamente significativa, mas **não diz o quanto** ela é grande ou relevante.
+O valor-*p* diz **se** a diferenÃ§a Ã© estatisticamente significativa, mas **nÃ£o diz o quanto** ela Ã© grande ou relevante.
 
-O **tamanho de efeito** quantifica a **magnitude** real da diferença.
+O **tamanho de efeito** quantifica a **magnitude** real da diferenÃ§a.
 :::
 
 . . .
 
 ::: {.highlight-box}
-**Analogia:** Um remédio pode ter efeito "significativo" estatisticamente, mas reduzir a febre em apenas 0,1 °C. Já outro remédio pode reduzir 2,5 °C. O tamanho de efeito diferencia essas situações.
+**Analogia:** Um remÃ©dio pode ter efeito "significativo" estatisticamente, mas reduzir a febre em apenas 0,1 Â°C. JÃ¡ outro remÃ©dio pode reduzir 2,5 Â°C. O tamanho de efeito diferencia essas situaÃ§Ãµes.
 :::
 
 ::::
@@ -557,69 +557,69 @@ O **tamanho de efeito** quantifica a **magnitude** real da diferença.
 :::
 
 
-## d de Cohen — Interpretação {.smaller-text}
+## d de Cohen (InterpretaÃ§Ã£o) {.smaller-text}
 
 ::: {.columns}
 :::: {.column width="50%"}
 
 ::: {.info-box}
-**Fórmula (amostra única):**
+**FÃ³rmula (amostra Ãºnica):**
 
 $$d = \frac{\bar{x} - \mu_0}{s}$$
 
-**Fórmula (amostras independentes):**
+**FÃ³rmula (amostras independentes):**
 
 $$d = \frac{\bar{x}_1 - \bar{x}_2}{s_{\text{pooled}}}$$
 :::
 
 . . .
 
-| *d* de Cohen | Classificação |
+| *d* de Cohen | ClassificaÃ§Ã£o |
 |:---:|:---:|
-| < 0,20 | Irrisório |
-| 0,20 – 0,49 | Pequeno |
-| 0,50 – 0,79 | Médio |
-| ≥ 0,80 | Grande |
+| < 0,20 | IrrisÃ³rio |
+| 0,20 â€“ 0,49 | Pequeno |
+| 0,50 â€“ 0,79 | MÃ©dio |
+| â‰¥ 0,80 | Grande |
 
-: {.striped .hover}
+
 
 ::::
 :::: {.column width="50%"}
 
 ::: {.box}
-**Três medidas de efeito:**
+**TrÃªs medidas de efeito:**
 
-[1]{.circle} ***d* de Cohen** — Para amostras de tamanho e variância semelhantes (assume homoscedasticidade)
+[1]{.circle} ***d* de Cohen.** Para amostras de tamanho e variÃ¢ncia semelhantes (assume homoscedasticidade)
 
-[2]{.circle} **Delta de Glass** — Quando os desvios-padrão dos grupos são muito diferentes; usa o DP do grupo controle
+[2]{.circle} **Delta de Glass.** Quando os desvios-padrÃ£o dos grupos sÃ£o muito diferentes; usa o DP do grupo controle
 
-[3]{.circle} ***g* de Hedges** — Para amostras de tamanhos desiguais ou variâncias heterogêneas; corrige viés de pequena amostra
+[3]{.circle} ***g* de Hedges.** Para amostras de tamanhos desiguais ou variÃ¢ncias heterogÃªneas; corrige viÃ©s de pequena amostra
 :::
 
 ::::
 :::
 
 
-## Resumo — Qual Teste T Usar? {.smaller-text}
+## Resumo (Qual Teste T Usar?) {.smaller-text}
 
 ::: {.info-box}
-**Guia rápido de decisão**
+**Guia rÃ¡pido de decisÃ£o**
 :::
 
-| Situação | Teste T | Exemplo |
+| SituaÃ§Ã£o | Teste T | Exemplo |
 |---|---|---|
-| 1 grupo vs. valor fixo | **Amostra Única** | Notas dos alunos vs. meta de 9,0 |
-| 2 grupos diferentes | **Independentes** | Erosão solo coberto vs. exposto |
-| 1 grupo, 2 momentos | **Dependentes (pareado)** | Vol. radicular pré vs. pós-adubação |
+| 1 grupo vs. valor fixo | **Amostra Ãšnica** | Notas dos alunos vs. meta de 9,0 |
+| 2 grupos diferentes | **Independentes** | ErosÃ£o solo coberto vs. exposto |
+| 1 grupo, 2 momentos | **Dependentes (pareado)** | Vol. radicular prÃ© vs. pÃ³s-adubaÃ§Ã£o |
 
-: {.striped .hover}
+
 
 . . .
 
 ::: {.highlight-box}
 **Checklist antes de rodar o Teste T:**
 
-[1]{.circle} Variável contínua? [2]{.circle} Dados normais? (Shapiro-Wilk) [3]{.circle} Variâncias homogêneas? (Levene — apenas independente) [4]{.circle} Observações independentes?
+[1]{.circle} VariÃ¡vel contÃ­nua? [2]{.circle} Dados normais? (Shapiro-Wilk) [3]{.circle} VariÃ¢ncias homogÃªneas? (Levene, apenas para independentes) [4]{.circle} ObservaÃ§Ãµes independentes?
 :::
 
 
@@ -627,10 +627,10 @@ $$d = \frac{\bar{x}_1 - \bar{x}_2}{s_{\text{pooled}}}$$
 
 ::: {.obrigado-fit-text}
 
-Vamos à Prática!
+Vamos Ã  PrÃ¡tica!
 
 :::
 
 ::: {style="color: white; font-size: 0.8em; margin-top: 1em;"}
-Abra o JASP e aplique o Teste T aos dados de satisfação e erosão.
+Abra o JASP e aplique o Teste T aos dados de satisfaÃ§Ã£o e erosÃ£o.
 :::

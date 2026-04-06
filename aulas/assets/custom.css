@@ -134,6 +134,7 @@ section.title-slide .date,
   background-color: #f5f5f5;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: visible !important;
 }
 
 .info-box {
@@ -146,6 +147,7 @@ section.title-slide .date,
   padding-bottom: 10px;
   background-color: rgba(33, 53, 166, 0.08);
   border-radius: 5px;
+  overflow: visible !important;
 }
 
 .highlight-box {
@@ -154,6 +156,18 @@ section.title-slide .date,
   padding: 10px 15px;
   margin: 10px 0;
   border-radius: 5px;
+  overflow: visible !important;
+}
+
+/* Fórmulas e matemática: NUNCA gerar scroll/rolagem */
+.reveal .math,
+.reveal .MathJax,
+.reveal .MathJax_Display,
+.reveal .katex,
+.reveal .katex-display,
+.reveal mjx-container {
+  overflow: visible !important;
+  max-width: 100%;
 }
 
 .circle {
@@ -431,9 +445,12 @@ section.title-slide.slide.level1:has(.section-header) div {
   /* Tabelas responsivas */
   .reveal table {
     font-size: 0.65em !important;
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+  }
+
+  .reveal table:not(.diagram-scroll table) {
+    display: table;
+    width: 100%;
+    overflow: visible;
   }
   
   /* Footer compacto */
@@ -534,9 +551,12 @@ section.title-slide.slide.level1:has(.section-header) div {
   /* Tabelas */
   .reveal table {
     font-size: 0.75em !important;
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+  }
+
+  .reveal table:not(.diagram-scroll table) {
+    display: table;
+    width: 100%;
+    overflow: visible;
   }
   
   /* Footer */
@@ -578,6 +598,12 @@ section.title-slide.slide.level1:has(.section-header) div {
   .reveal table {
     font-size: 0.8em !important;
   }
+
+  .reveal table:not(.diagram-scroll table) {
+    display: table;
+    width: 100%;
+    overflow: visible;
+  }
   
   /* Footer */
   .reveal .footer {
@@ -613,12 +639,20 @@ section.title-slide.slide.level1:has(.section-header) div {
     white-space: pre-wrap !important;
   }
   
-  /* MathJax/KaTeX overflow */
+  /* MathJax/KaTeX: nunca esconder fórmulas em scroll */
   .reveal .math,
   .reveal .MathJax,
-  .reveal .katex {
-    overflow-x: auto !important;
+  .reveal .MathJax_Display,
+  .reveal .katex,
+  .reveal .katex-display,
+  .reveal mjx-container {
+    overflow: visible !important;
     max-width: 100% !important;
+  }
+
+  /* Caixas nunca devem cortar conteúdo */
+  .box, .info-box, .highlight-box {
+    overflow: visible !important;
   }
   
   /* Callouts responsivos */

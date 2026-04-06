@@ -96,7 +96,6 @@ Efron, B. (1979). Bootstrap Methods: Another Look at the Jackknife. *The Annals 
 | Mediana (sem fórmula de EP) | Não há fórmula | **Indicado** |
 | Razão de médias | Complexo | **Indicado** |
 | Coeficiente de mediação (a×b) | Distribuição desconhecida | **Indicado** |
-{.striped .hover}
 
 ::: {.info-box}
 **Regra prática:** Bootstrap é especialmente útil quando a **distribuição amostral da estatística** é desconhecida ou complexa.
@@ -134,28 +133,33 @@ flowchart LR
 
 ## Passo a Passo {.smaller-text}
 
-::: {.highlight-box}
+::: {.columns}
+:::: {.column width="55%"}
+
 **Algoritmo Bootstrap (não paramétrico):**
 
-1. **Amostra original** $X = \{x_1, x_2, \ldots, x_n\}$
-2. **Sorteie** $n$ valores **com reposição** → gera reamostra $X^*_b$
-3. **Calcule** a estatística de interesse $\hat{\theta}^*_b$ (média, mediana, correlação...)
-4. **Repita** B vezes (tipicamente B = 1000 a 10000)
-5. **Resultado:** Distribuição empírica de $\hat{\theta}^*$ com B valores
-:::
+1. Tenha a **amostra original** com $n$ observações
+2. **Sorteie** $n$ valores **com reposição** → reamostra $b$
+3. **Calcule** a estatística de interesse (média, mediana…)
+4. **Repita** B vezes (1.000 a 10.000)
+5. **Resultado:** distribuição empírica com B valores
 
-**Exemplo concreto:**
+::::
+:::: {.column width="45%"}
 
-Amostra original: {2, 5, 8, 3, 7} (n = 5)
+::: {.highlight-box}
+**Exemplo:** Amostra = {2, 5, 8, 3, 7}
 
-| Reamostra | Valores sorteados | Média |
+| Reamostra | Valores | Média |
 |:---:|:---|:---:|
 | 1 | {5, 2, 8, 2, 7} | 4,80 |
 | 2 | {3, 3, 7, 8, 5} | 5,20 |
 | 3 | {7, 5, 5, 2, 8} | 5,40 |
-| ... | ... | ... |
 | 5000 | {8, 3, 7, 7, 2} | 5,40 |
-{.striped .hover}
+:::
+
+::::
+:::
 
 ---
 
@@ -165,15 +169,15 @@ Amostra original: {2, 5, 8, 3, 7} (n = 5)
 **Com reposição** significa que cada observação pode ser selecionada **mais de uma vez** em cada reamostra.
 :::
 
-- Sem reposição: toda reamostra seria idêntica à original (mesmos n valores, apenas reordenados)
-- Com reposição: cada reamostra é **diferente** da original — captura a **variabilidade amostral**
+- Sem reposição: toda reamostra seria idêntica (mesmos valores, apenas reordenados)
+- Com reposição: cada reamostra é **diferente** — captura a **variabilidade amostral**
 
-**Probabilidade de seleção:**
+Cada observação tem probabilidade $\approx 63\%$ de ser incluída:
 
-$$P(\text{observação } x_i \text{ incluída}) = 1 - \left(1 - \frac{1}{n}\right)^n \approx 1 - e^{-1} \approx 0{,}632$$
+$$P(x_i \in X^*) = 1 - \left(1 - \tfrac{1}{n}\right)^{\!n} \approx 0{,}632$$
 
 ::: {.highlight-box}
-Ou seja, **~63,2%** das observações originais aparecem em cada reamostra. Os **~36,8% restantes** ficam de fora ("out-of-bag").
+**~63,2%** das observações aparecem em cada reamostra. Os **~36,8% restantes** ficam de fora (*out-of-bag*) e podem ser usados para validação.
 :::
 
 ---
@@ -186,7 +190,6 @@ Ou seja, **~63,2%** das observações originais aparecem em cada reamostra. Os *
 | IC percentil simples | 1.000 |
 | IC BCa (corrigido) | 2.000–5.000 |
 | Teste de hipóteses | 5.000–10.000 |
-{.striped .hover}
 
 ::: {.info-box}
 **Na prática:** Use **B = 5000** como padrão. Computadores modernos processam isso em segundos.
@@ -206,7 +209,6 @@ Ou seja, **~63,2%** das observações originais aparecem em cada reamostra. Os *
 | Pressupostos | Nenhum distribucional | Assume distribuição (Normal, Poisson...) |
 | Uso típico | Maioria das situações | Quando distribuição é conhecida |
 | Software | R: `boot()`, SPSS | R: `boot()` com `sim="parametric"` |
-{.striped .hover}
 
 **Bootstrap Paramétrico:**
 
@@ -267,23 +269,36 @@ Ordene as 5000 médias e pegue:
 
 ## Método BCa (Bias-Corrected and Accelerated) {.smaller-text}
 
+::: {.columns}
+:::: {.column width="55%"}
+
 Corrige dois problemas do método percentil:
 
-1. **Viés** ($z_0$): se a mediana bootstrap ≠ estimativa original
-2. **Assimetria** ($a$): se a distribuição bootstrap é assimétrica
+1. **Viés** ($z_0$): proporção de réplicas bootstrap abaixo da estimativa original, convertida em escore Z
+2. **Aceleração** ($a$): mede a assimetria da distribuição bootstrap (via jackknife)
 
-$$IC_{BCa} = [\hat{\theta}^*_{(\alpha_1)};\; \hat{\theta}^*_{(\alpha_2)}]$$
+Os percentis do IC são **ajustados** (não mais fixos em 2,5% e 97,5%):
 
-onde:
+$$IC_{BCa} = \left[\hat{\theta}^*_{(\alpha_1)};\; \hat{\theta}^*_{(\alpha_2)}\right]$$
 
-$$\alpha_1 = \Phi\left(z_0 + \frac{z_0 + z_{\alpha/2}}{1 - a(z_0 + z_{\alpha/2})}\right)$$
+::::
+:::: {.column width="45%"}
+
+::: {.highlight-box}
+**Intuição:** Se não há viés ($z_0 = 0$) nem assimetria ($a = 0$), o BCa equivale ao percentil simples.
+
+Quanto maior o viés ou assimetria, maior o ajuste nos limites do IC.
+:::
 
 ::: {.info-box}
-**Recomendação:** O BCa é o **método preferido** na literatura atual.
+**Recomendação:** BCa é o **método preferido** (Efron & Tibshirani, 1993).
 
-- Efron & Tibshirani (1993): "preferred method"
 - Requer B ≥ 2000
-- Disponível em R (`boot.ci(type="bca")`) e SPSS
+- R: `boot.ci(type="bca")`
+- SPSS: opção nativa
+:::
+
+:::: 
 :::
 
 ---
@@ -296,7 +311,6 @@ $$\alpha_1 = \Phi\left(z_0 + \frac{z_0 + z_{\alpha/2}}{1 - a(z_0 + z_{\alpha/2})
 | Normal | Corrige | Não corrige | 500 | Se dados normais |
 | BCa | Corrige | Corrige | 2.000 | **Sim** |
 | Studentizado | Corrige | Corrige | 5.000 | Mais preciso, mas complexo |
-{.striped .hover}
 
 ---
 
@@ -310,7 +324,6 @@ $$\alpha_1 = \Phi\left(z_0 + \frac{z_0 + z_{\alpha/2}}{1 - a(z_0 + z_{\alpha/2})
 |:---|:---:|:---:|:---:|
 | Plantio Convencional | 12 | 18,3 | 5,2 |
 | Plantio Direto | 12 | 24,7 | 6,8 |
-{.striped .hover}
 
 **Diferença observada:** $\bar{X}_{PD} - \bar{X}_{PC} = 6{,}4$ g/kg
 
@@ -344,7 +357,6 @@ Após 5000 reamostras sob H₀:
 |:---|:---:|:---:|:---:|
 | Teste T (supõe normalidade) | 6,4 | [1,5; 11,3] | 0,013 |
 | Bootstrap BCa (livre) | 6,4 | [1,8; 11,2] | 0,008 |
-{.striped .hover}
 
 ---
 
@@ -406,7 +418,6 @@ O produto $ab$ **não tem distribuição normal**, mesmo que $a$ e $b$ sejam nor
 | R | `mediation::mediate()`, `lavaan` |
 | SPSS | PROCESS macro (Hayes) |
 | JASP | Structural Equation Modeling |
-{.striped .hover}
 
 ---
 
@@ -421,7 +432,6 @@ O produto $ab$ **não tem distribuição normal**, mesmo que $a$ e $b$ sejam nor
 | Convencional | 8 | 1,23 | 0,31 |
 | Plantio Direto | 8 | 2,87 | 0,52 |
 | Agrofloresta | 8 | 3,41 | 0,48 |
-{.striped .hover}
 
 ::: {.info-box}
 Com n = 8, a ANOVA clássica é **arriscada** (poucos dados para verificar normalidade). O bootstrap resolve sem pressupostos.
@@ -438,7 +448,6 @@ Bootstrap com B = 5000 reamostras, IC BCa:
 | PD − Conv | 1,64 | [0,72; 2,51] | **Sim** |
 | Agro − Conv | 2,18 | [1,28; 3,14] | **Sim** |
 | Agro − PD | 0,54 | [−0,38; 1,52] | Não |
-{.striped .hover}
 
 ::: {.highlight-box}
 **Conclusão:** Plantio Direto e Agrofloresta apresentam DMG significativamente superior ao Convencional, mas não diferem entre si.
@@ -455,7 +464,6 @@ Bootstrap com B = 5000 reamostras, IC BCa:
 | Estatística | Sem fórmula de EP (mediana, razão) | Média, proporção |
 | Mediação | Sempre (efeito indireto) | — |
 | Dados ambientais | Séries curtas, extremos | Grandes bases |
-{.striped .hover}
 
 ::: {.info-box}
 **Vantagem principal:** Inferência **válida** sem suposições distribucionais.

@@ -207,6 +207,40 @@ $$U_B = 25 + \frac{5 \times 6}{2} - 32{,}5 = 7{,}5$$
 :::
 
 
+## Interpretação e Relato {.smaller-text}
+
+::: {.columns}
+:::: {.column width="55%"}
+
+::: {.info-box}
+**Resultado do exemplo:**
+
+- $U_A = 17{,}5$ e $U_B = 7{,}5$
+- Usa-se o **menor** valor: $U = 7{,}5$
+- Com $N_1 = N_2 = 5$, valor crítico (α = 0,05) = 2
+- $U = 7{,}5 > U_{crit} = 2$ → **não rejeitamos $H_0$**
+:::
+
+::::
+:::: {.column width="45%"}
+
+::: {.highlight-box}
+**Para $N > 20$**, usa-se a aproximação normal:
+
+$$Z = \frac{U - \frac{N_1 N_2}{2}}{\sqrt{\frac{N_1 N_2 (N_1 + N_2 + 1)}{12}}}$$
+
+Compare $Z$ com ±1,96 (α = 0,05 bicaudal).
+:::
+
+::::
+:::
+
+::: {.info-box}
+**Como reportar:** "O teste Mann-Whitney não indicou diferença significativa entre o Grupo A (Md = 5) e o Grupo B (Md = 9), $U = 7{,}5$, $p > 0{,}05$."
+:::
+
+---
+
 # [4. KRUSKAL-WALLIS]{.section-header}
 
 ## Três ou Mais Grupos Independentes {.smaller-text}
@@ -243,9 +277,9 @@ Soma: **A = 16** · **B = 20** · **C = 19**
 ::: {.highlight-box}
 **Estatística $H$:**
 
-- Calculada com a soma de postos de cada grupo, ponderada por $N$
-- Significância baseada na distribuição **qui-quadrado** ($\chi^2$)
-- Graus de liberdade: $k_{grupos} - 1$
+$$H = \frac{12}{N(N+1)} \sum_{i=1}^{k} \frac{R_i^2}{n_i} - 3(N+1)$$
+
+$N$ = total de observações, $k$ = nº de grupos, $R_i$ = soma dos postos do grupo $i$, $n_i$ = tamanho do grupo $i$. Significância via distribuição $\chi^2$ com $gl = k - 1$.
 :::
 
 ::: {.info-box}
@@ -263,6 +297,35 @@ O SPSS calcula o $p$-valor ajustado para múltiplas comparações.
 ::::
 :::
 
+
+## Resultado: Exemplo Kruskal-Wallis {.smaller-text}
+
+::: {.columns}
+:::: {.column width="55%"}
+
+::: {.info-box}
+**Aplicando a fórmula ao exemplo:**
+
+$H = \frac{12}{10 \times 11}\!\left(\frac{16^2}{3} + \frac{20^2}{3} + \frac{19^2}{4}\right) - 3 \times 11$
+
+$H = 0{,}109 \times 308{,}9 - 33 = 0{,}70$
+
+Com $gl = 2$: $p > 0{,}05$ → **não significativo**.
+:::
+
+::::
+:::: {.column width="45%"}
+
+::: {.highlight-box}
+**Interpretação:** Os três grupos **não diferem** significativamente nos escores ($H(2) = 0{,}70$, $p > 0{,}05$).
+
+Como $H$ não foi significativo, comparações par a par **não são necessárias**.
+:::
+
+::::
+:::
+
+---
 
 # [5. WILCOXON SIGNED-RANK]{.section-header}
 
@@ -315,6 +378,49 @@ Compara escores de um mesmo grupo medido em **dois momentos** (pré vs. pós).
 :::
 
 
+## Cálculo e Resultado: Wilcoxon {.smaller-text}
+
+::: {.columns}
+:::: {.column width="55%"}
+
+::: {.box}
+**Postos das diferenças (excluindo empates):**
+
+| |Diff| | Posto | Sinal |
+|:---:|:---:|:---:|
+| 1 | 2 | + |
+| 1 | 2 | + |
+| 1 | 2 | − |
+| 2 | 4 | + |
+| 3 | 5,5 | + |
+| 3 | 5,5 | + |
+| 4 | 7,5 | + |
+| 4 | 7,5 | + |
+:::
+
+::::
+:::: {.column width="45%"}
+
+::: {.highlight-box}
+**Resultado:**
+
+- $T^+ = 34$, $T^- = 2$
+- $T = \min(T^+, T^-) = 2$
+- Com $n = 8$, $T_{crit}(\alpha = 0{,}05) = 4$
+- $T = 2 < T_{crit} = 4$ → **rejeitamos $H_0$**
+:::
+
+::: {.info-box}
+**Como reportar:** "O teste Wilcoxon indicou aumento significativo dos escores entre pré (Md = 5) e pós (Md = 7), $T = 2$, $p < 0{,}05$, $r = 0{,}70$ (efeito grande)."
+
+Tamanho do efeito: $r = Z / \sqrt{N}$
+:::
+
+::::
+:::
+
+---
+
 # [6. ANOVA DE FRIEDMAN]{.section-header}
 
 ## Três ou Mais Grupos Dependentes {.smaller-text}
@@ -361,6 +467,66 @@ Cada sujeito é medido em **3+ condições/momentos**.
 | **Soma** | | | | **13** | **21** | **26** |
 :::
 
+
+## Resultado: Friedman {.smaller-text}
+
+::: {.columns}
+:::: {.column width="55%"}
+
+::: {.info-box}
+**Fórmula de Friedman:**
+
+$$\chi^2_F = \frac{12}{Nk(k+1)} \sum R_j^2 - 3N(k+1)$$
+
+**Cálculo:**
+
+$\chi^2_F = \frac{12}{10 \times 3 \times 4}(13^2 + 21^2 + 26^2) - 120$
+
+$\chi^2_F = 0{,}1 \times 1286 - 120 = 8{,}6$
+:::
+
+::::
+:::: {.column width="45%"}
+
+::: {.highlight-box}
+**Resultado:**
+
+- $\chi^2_F(2) = 8{,}6$, $p = 0{,}014$
+- **Significativo** → diferenças entre os momentos
+- Comparações par a par: **Follow-up** difere do **Pré-teste**
+
+**Como reportar:** "$\chi^2_F(2) = 8{,}6$, $p = 0{,}014$. Comparações par a par (Bonferroni) indicaram diferença significativa entre Pré e Follow-up ($p < 0{,}05$)."
+:::
+
+::::
+:::
+
+---
+
+## Resumo: Qual Teste Usar? {.smaller-text}
+
+```{mermaid}
+%%| fig-width: 10
+flowchart TD
+  A["Os dados atendem pressupostos<br>de normalidade?"] -->|Sim| B["Testes paramétricos"]
+  A -->|Não| C["Quantos grupos?"]
+  C -->|"2 independentes"| D["Mann-Whitney"]
+  C -->|"3+ independentes"| E["Kruskal-Wallis"]
+  C -->|"2 dependentes"| F["Wilcoxon"]
+  C -->|"3+ dependentes"| G["Friedman"]
+  style A fill:#2135A6,color:#fff
+  style B fill:#586BA6,color:#fff
+  style D fill:#27368C,color:#fff
+  style E fill:#27368C,color:#fff
+  style F fill:#27368C,color:#fff
+  style G fill:#27368C,color:#fff
+```
+
+::: {.info-box}
+**Lembre-se:** Reporte sempre **mediana**, **intervalo interquartil** e **tamanho do efeito** ($r = Z/\sqrt{N}$). Nunca use média e DP com testes não-paramétricos.
+:::
+
+---
 
 ## {.center background-color="#2135A6"}
 
