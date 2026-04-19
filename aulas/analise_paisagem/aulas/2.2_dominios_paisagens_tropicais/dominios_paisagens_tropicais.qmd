@@ -89,7 +89,7 @@ Bertrand propôs seis níveis taxonômicos hierárquicos para classificar as uni
 O **geossistema** é a unidade central de análise (escala compatível com bacias de 3ª–5ª ordem), onde a interação entre componentes é mais perceptível pela ação humana.
 :::
 
-## Tripé do Geossistema {.smaller-text}
+## Tripé do Geossistema {.smaller-text .scrollable}
 
 Bertrand concebeu o geossistema como a interação de três componentes:
 
@@ -171,7 +171,7 @@ Monteiro (1976, 2000) adaptou o conceito de geossistema à realidade brasileira,
 
 - A **dinâmica climática** como motor de diferenciação paisagística no Brasil
 - A necessidade de integrar dados **quantitativos** (climatológicos, hidrológicos) com análise **qualitativa** (uso da terra, percepção)
-- O conceito de **derivações antropogênicas** - transformações impostas pela sociedade sobre o sistema natural
+- O conceito de **derivações antropogênicas**: transformações impostas pela sociedade sobre o sistema natural
 
 Monteiro introduziu o termo **geossistema urbano** para cidades brasileiras, ampliando o conceito para além das paisagens rurais/naturais.
 :::
@@ -243,7 +243,7 @@ Na prática, as três formas de derivação frequentemente coocorrem em uma mesm
 
 # [3  -  AB'SÁBER: DOMÍNIOS DE NATUREZA]{.section-header}
 
-## Os Domínios Morfoclimáticos {.smaller-text}
+## Os Domínios Morfoclimáticos {.smaller-text .scrollable}
 
 ![Mapa dos domínios morfoclimáticos / biomas do Brasil](img/dominios_morfoclimaticos.jpg){width="60%" fig-align="center"}
 
@@ -285,11 +285,11 @@ Ab'Sáber propôs três **níveis taxonômicos** de leitura do meio ambiente:
 O 3º nível (**fisiologia da paisagem**) corresponde à dinâmica dos processos atuais e é o mais suscetível às derivações antropogênicas de Monteiro.
 :::
 
-## Domínio das Caatingas e o Semiárido Baiano {.smaller-text}
+## Domínio das Caatingas e o Semiárido Baiano {.smaller-text .scrollable}
 
 ::: {.columns}
 ::: {.column width="45%"}
-![Vegetação da Caatinga no semiárido nordestino](img/caatinga_vegetacao.jpg){width="100%"}
+![Vegetação da Caatinga no semiárido nordestino](img/caatinga_vegetacao.gif){width="100%"}
 :::
 
 ::: {.column width="55%"}
@@ -312,22 +312,66 @@ O 3º nível (**fisiologia da paisagem**) corresponde à dinâmica dos processos
 A **Bacia do Paraguaçu** marca a transição Caatinga–Mata Atlântica. A **Chapada Diamantina** funciona como refúgio de altitude, abrigando campos rupestres. No extremo oposto, o **Raso da Catarina** representa a caatinga hiperxerófila em sua expressão mais restritiva.
 :::
 
-## Exercício Orientado, Três Níveis de Ab'Sáber {.smaller-text}
+## Chapada Diamantina: Refúgio de Altitude {.smaller-text .scrollable}
 
-Aplique os três níveis de compreensão de Ab'Sáber à sua área de estudo, utilizando **Google Earth Engine** ou **QGIS**:
+::: {.columns}
+::: {.column width="45%"}
+![Vista panorâmica da Chapada Diamantina, planalto elevado que rompe a homogeneidade das depressões semiáridas](img/chapada_diamantina_panorama.jpg){width="100%"}
+:::
 
-| Etapa | Nível de Ab'Sáber | Procedimento |
-|:-----:|:-------------------|:-------------|
-| 1 | **Compartimentação topográfica** (1º) | Delimitar planaltos, depressões e planícies a partir de MDE (SRTM/ALOS) |
-| 2 | **Estrutura superficial** (2º) | Sobrepor mapas de solo e cobertura vegetal (MapBiomas / IBGE) |
-| 3 | **Fisiologia da paisagem** (3º) | Analisar séries NDVI (12 meses) para capturar a dinâmica fenológica |
-| 4 | **Enquadramento** | Identificar qual domínio ou faixa de transição a área representa |
+::: {.column width="55%"}
+No modelo de Ab'Sáber, a **Chapada Diamantina** é classificada como um **enclave** e **refúgio de altitude** dentro do Domínio das Caatingas.
 
-: Roteiro de aplicação dos três níveis de Ab'Sáber. {.striped .hover}
+Enquanto o domínio circundante se caracteriza por depressões interplanálticas (200–500 m), clima BSh e vegetação caducifólia, a Chapada rompe essa homogeneidade com:
+
+- **Topografia elevada** (até 1.109 m)
+- **Campos rupestres**: formação vegetal distinta da caatinga
+- **Dinâmica climática própria**: maior precipitação orográfica e temperaturas mais amenas
+- **Endemismos**: flora e fauna exclusivas de ambientes de altitude
+
+A existência desse refúgio é evidência dos **paleoclimas** mais úmidos que modelaram a paisagem brasileira.
+:::
+:::
+
+## Chapada Diamantina nos Três Níveis de Ab'Sáber {.smaller-text .scrollable}
+
+::: {.columns}
+::: {.column width="45%"}
+![Paisagem de campo rupestre na Chapada Diamantina, com vegetação adaptada a solos quartzíticos de altitude](img/chapada_campos_rupestres.jpg){width="100%"}
+:::
+
+::: {.column width="55%"}
+| Nível de Ab'Sáber | Aplicação à Chapada Diamantina |
+|:-------------------|:-------------------------------|
+| **1º – Compartimentação topográfica** | Planalto elevado (> 800 m) que se destaca das depressões interplanálticas circundantes (200–500 m) |
+| **2º – Estrutura superficial** | Solos quartzíticos com campos rupestres, diferindo dos Neossolos Litólicos e Luvissolos típicos do núcleo das Caatingas |
+| **3º – Fisiologia da paisagem** | Dinâmica climática e ecológica própria: maior umidade, refúgio hídrico e biológico para a região |
+
+: Três níveis de compreensão aplicados à Chapada Diamantina. {.striped .hover}
+
+:::
+:::
 
 ::: {.callout-tip}
-## Dica
-Compare os padrões de NDVI entre estação seca e chuvosa. No domínio das Caatingas, a amplitude é tipicamente > 0,3, refletindo a deciduidade da vegetação.
+## Implicação prática
+A Chapada Diamantina funciona como **"pulmão" hídrico** do semiárido baiano. A Bacia do Paraguaçu, que nasce na Chapada, é a principal fonte de abastecimento de Salvador e Recôncavo.
+:::
+
+## Chapada Diamantina na Taxonomia de Bertrand {.smaller-text .scrollable}
+
+Aplicando a hierarquia de Bertrand (1971) à Chapada Diamantina:
+
+| Nível de Bertrand | Unidade | Enquadramento da Chapada |
+|:------------------:|:--------|:-------------------------|
+| **II – Domínio** | Domínio das Caatingas | Inserida no contexto macro do semiárido nordestino |
+| **III – Região Natural** | Chapada Diamantina | Região natural específica, distinta da Depressão Sertaneja, pela fisiografia de planalto com campos rupestres |
+| **IV – Geossistema** | Subunidades internas | Vales (Pati, Capão), setores de planalto, áreas de uso turístico e agrícola, onde a interação potencial ecológico × ação antrópica é perceptível |
+
+: Enquadramento da Chapada Diamantina na taxonomia de Bertrand. {.striped .hover}
+
+::: {.callout-note}
+## Convergência dos modelos
+A Chapada Diamantina ilustra a **complementaridade** entre Ab'Sáber e Bertrand: o enquadramento macro (domínio) é dado por Ab'Sáber, mas a análise operacional das unidades internas (geossistemas, geofácies) requer a taxonomia de Bertrand. As **derivações antropogênicas** de Monteiro (turismo, garimpo histórico, agricultura de altitude) explicam as trajetórias de transformação da paisagem.
 :::
 
 # [4  -  SÍNTESE E CONEXÕES]{.section-header}
@@ -345,6 +389,23 @@ Compare os padrões de NDVI entre estação seca e chuvosa. No domínio das Caat
 : Comparação entre as três abordagens. {.striped .hover}
 
 As três abordagens são **complementares**: Ab'Sáber define o enquadramento macro, Bertrand fornece a taxonomia operacional e Monteiro insere a dinâmica temporal e antrópica.
+
+## Uma Metáfora para Lembrar {.smaller-text .scrollable}
+
+Pense na paisagem como uma **peça de teatro**:
+
+| Autor | Papel na metáfora | O que fornece |
+|:------|:-------------------|:--------------|
+| **Ab'Sáber** | O **palco** | Define o cenário continental: relevo, clima, domínios morfoclimáticos. É a estrutura fixa sobre a qual tudo acontece. |
+| **Bertrand** | O **roteiro local** | Organiza a cena em atos e escalas (zona → domínio → geossistema → geótopo). Descreve como os componentes interagem em cada nível. |
+| **Monteiro** | As **ações do ator principal** (a humanidade) | Mostra o que o protagonista faz com o palco: suprime, insere, altera. São as derivações antropogênicas que transformam a paisagem ao longo do tempo. |
+
+: A metáfora teatral dos três autores. {.striped .hover}
+
+::: {.callout-tip}
+## Síntese
+Sem o **palco** (Ab'Sáber) não há onde atuar. Sem o **roteiro** (Bertrand) não se sabe a escala da cena. Sem reconhecer as **ações do ator** (Monteiro), não se compreende por que a paisagem muda.
+:::
 
 ## Conexão com a Disciplina {.smaller-text}
 
@@ -373,3 +434,23 @@ As três abordagens são **complementares**: Ab'Sáber define o enquadramento ma
 - **MONTEIRO, C.A.F.** (2000). *Geossistemas: a história de uma procura*. São Paulo: Contexto.
 - **AB'SÁBER, A.N.** (2003). *Os domínios de natureza no Brasil*. São Paulo: Ateliê Editorial.
 - **METZGER, J.P.** (2001). O que é ecologia de paisagens? *Biota Neotropica*, 1(1), 1–9.
+
+# [5  -  EXERCÍCIO]{.section-header}
+
+## Exercício Orientado, Três Níveis de Ab'Sáber {.smaller-text .scrollable}
+
+Aplique os três níveis de compreensão de Ab'Sáber à sua área de estudo, utilizando **Google Earth Engine** ou **QGIS**:
+
+| Etapa | Nível de Ab'Sáber | Procedimento |
+|:-----:|:-------------------|:-------------|
+| 1 | **Compartimentação topográfica** (1º) | Delimitar planaltos, depressões e planícies a partir de MDE (SRTM/ALOS) |
+| 2 | **Estrutura superficial** (2º) | Sobrepor mapas de solo e cobertura vegetal (MapBiomas / IBGE) |
+| 3 | **Fisiologia da paisagem** (3º) | Analisar séries NDVI (12 meses) para capturar a dinâmica fenológica |
+| 4 | **Enquadramento** | Identificar qual domínio ou faixa de transição a área representa |
+
+: Roteiro de aplicação dos três níveis de Ab'Sáber. {.striped .hover}
+
+::: {.callout-tip}
+## Dica
+Compare os padrões de NDVI entre estação seca e chuvosa. No domínio das Caatingas, a amplitude é tipicamente > 0,3, refletindo a deciduidade da vegetação.
+:::

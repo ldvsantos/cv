@@ -165,8 +165,11 @@ section.title-slide .date,
 .reveal .MathJax_Display,
 .reveal .katex,
 .reveal .katex-display,
-.reveal mjx-container {
+.reveal mjx-container,
+.reveal mjx-container[jax="CHTML"] {
   overflow: visible !important;
+  overflow-x: visible !important;
+  overflow-y: visible !important;
   max-width: 100%;
 }
 
@@ -229,11 +232,47 @@ section.title-slide .date,
   box-sizing: border-box !important;
 }
 
-/* ---- Overflow: permitir scroll em slides com muito conteúdo ---- */
+/* ---- Overflow: visível (sem scroll) em slides ---- */
 .reveal .slide-background + section,
-.reveal .slides section.smaller-text,
-.reveal .slides section.slide.level2 {
+.reveal .slides section.smaller-text:not(.scrollable),
+.reveal .slides section.slide.level2:not(.scrollable) {
+  overflow: visible !important;
+}
+
+/* ---- Scrollable: permitir scroll vertical em slides marcados ---- */
+.reveal .slides section.scrollable {
   overflow-y: auto !important;
+  overflow-x: hidden !important;
+  max-height: 100% !important;
+}
+
+/* Garantir que caixas com fórmulas nunca gerem scroll */
+.box mjx-container,
+.info-box mjx-container,
+.highlight-box mjx-container,
+.box .math,
+.info-box .math,
+.highlight-box .math,
+.box .MathJax,
+.info-box .MathJax,
+.highlight-box .MathJax,
+.box .katex-display,
+.info-box .katex-display,
+.highlight-box .katex-display {
+  overflow: visible !important;
+  max-width: 100% !important;
+  font-size: 0.85em !important;
+}
+
+/* Display math dentro de caixas: reduzir para caber */
+.box .math-display,
+.info-box .math-display,
+.highlight-box .math-display,
+.box mjx-container[jax="CHTML"][display="true"],
+.info-box mjx-container[jax="CHTML"][display="true"],
+.highlight-box mjx-container[jax="CHTML"][display="true"] {
+  margin: 0.3em 0 !important;
+  overflow: visible !important;
 }
 
 /* ---- Scroll Container ---- */
