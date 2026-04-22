@@ -801,4 +801,79 @@ Utilize os formulários abaixo para enviar as atividades da disciplina. Certifiq
 Fique atento às datas de entrega no [Plano de Disciplina](plano.qmd).
 :::
 
+### {{< fa thumbtack >}} Mural
+
+Recados, lembretes e o **conteúdo já ministrado** — estude por aqui para a próxima avaliação. Atualizado a cada encontro.
+
+```{=html}
+<div class="mural-board">
+
+<div class="mural-postit">
+  <h4><i class="fa-solid fa-bullhorn"></i> Conteúdo da Prova</h4>
+  <div class="mural-meta">Aviso · 22/04/2026</div>
+  <p>Estudar para a 1ª Avaliação <strong>tudo o que já foi ministrado até aqui</strong>:</p>
+  <ul>
+    <li>Aula 1.1 — Conceito de Paisagem</li>
+    <li>Aula 1.2 — Percepção e Valoração</li>
+    <li>Aula 2.1 — Evolução do Conceito</li>
+    <li>Texto-base de <strong>Bertrand</strong></li>
+  </ul>
+</div>
+
+<div class="mural-postit">
+  <h4>Aula 1.1 — Conceito de Paisagem</h4>
+  <div class="mural-meta">11/03 · 1º Encontro</div>
+  <ul>
+    <li>Apresentação da disciplina e do plano</li>
+    <li>Múltiplas definições: artística, geográfica, ecológica e sistêmica</li>
+    <li>Paisagem como síntese físico-biótica e socioespacial</li>
+    <li>Atividade introdutória em sala</li>
+  </ul>
+  <p><a href="../../aulas/analise_paisagem/aulas/1.1_apresentacao_conceito_paisagem/apresentacao_conceito_paisagem.html" target="_blank">📺 Slides 1.1</a></p>
+</div>
+
+<div class="mural-postit">
+  <h4>Aula 1.2 — Percepção e Valoração</h4>
+  <div class="mural-meta">25/03 · 3º Encontro</div>
+  <ul>
+    <li><strong>Tuan</strong> — topofilia e experiência do lugar</li>
+    <li><strong>Berque</strong> — paisagem-marca e paisagem-matriz</li>
+    <li><strong>Cosgrove</strong> — paisagem como ideologia</li>
+    <li>Valoração estética, simbólica e cultural</li>
+  </ul>
+  <p><a href="../../aulas/analise_paisagem/aulas/1.2_percepcao_valoracao_paisagem/percepcao_valoracao_paisagem.html" target="_blank">📺 Slides 1.2</a></p>
+</div>
+
+<div class="mural-postit">
+  <h4>Aula 2.1 — Evolução do Conceito</h4>
+  <div class="mural-meta">18/03 · 2º Encontro</div>
+  <ul>
+    <li>Da <em>Landschaft</em> alemã ao geossistema</li>
+    <li>Distinções: paisagem vs. ecossistema vs. bioma vs. território</li>
+    <li>Vertentes europeia e norte-americana</li>
+    <li>Bases para a leitura sistêmica</li>
+  </ul>
+  <p><a href="../../aulas/analise_paisagem/aulas/2.1_evolucao_conceito_distincoes/evolucao_conceito_distincoes.html" target="_blank">📺 Slides 2.1</a></p>
+</div>
+
+<div class="mural-postit">
+  <h4><i class="fa-solid fa-file-arrow-up"></i> Atividade 02 — Seminário</h4>
+  <div class="mural-meta">Entrega em grupo · até a próxima aula</div>
+  <p>Envie a apresentação do seminário (PDF/PPTX/ODP ou link público).</p>
+  <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSf0t5CP-fbUzV6AtjCViF49Zggzm0ALpMNUV81jgv_NEDelcg/viewform?usp=sharing" target="_blank">🔗 Abrir formulário</a></p>
+</div>
+
+<div class="mural-postit">
+  <h4><i class="fa-solid fa-book"></i> Texto-base — Bertrand</h4>
+  <div class="mural-meta">Leitura obrigatória</div>
+  <p>Estrutura o conceito de <strong>geossistema</strong> discutido na Aula 2.1.</p>
+  <ul>
+    <li>BERTRAND, G. (1971). Paisagem e geografia física global. <em>Cad. Ciências da Terra</em>, n. 13.</li>
+    <li>BERTRAND, G. (2004). Tradução em <em>RA'EGA</em>, n. 8. <a href="https://doi.org/10.5380/raega.v8i0.3389" target="_blank">DOI 10.5380/raega.v8i0.3389</a></li>
+  </ul>
+</div>
+
+</div>
+```
+
 :::

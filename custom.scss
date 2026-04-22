@@ -256,6 +256,88 @@ h2:has(+ p:first-of-type) + p + .text-center {
   margin-top: 0.75rem;
 }
 
+/* ===== Mural de Recados (Cortiça + Post-its) ===== */
+.mural-board {
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.06) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(0,0,0,0.08) 0%, transparent 40%),
+    repeating-linear-gradient(45deg, #c89368 0 2px, #b07f56 2px 4px),
+    #b88a5e;
+  border: 8px solid #5d3a1a;
+  border-radius: 0.5rem;
+  box-shadow: inset 0 0 40px rgba(0,0,0,0.35), 0 4px 12px rgba(0,0,0,0.2);
+  padding: 1.75rem 1.25rem;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem 1.25rem;
+}
+
+.mural-postit {
+  position: relative;
+  padding: 1.1rem 1rem 1rem;
+  font-family: 'Patrick Hand', 'Comic Sans MS', cursive, sans-serif;
+  color: #2c2c2c;
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.25), inset 0 -10px 20px rgba(0,0,0,0.05);
+  border-radius: 2px;
+  min-height: 200px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #ff6b6b, #b71c1c 70%);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4), inset -2px -2px 3px rgba(0,0,0,0.3);
+    z-index: 2;
+  }
+
+  &:hover { transform: translateY(-2px) rotate(0deg) !important; box-shadow: 4px 8px 16px rgba(0,0,0,0.35); }
+
+  &:nth-child(3n+1) { transform: rotate(-2deg); background: #fff59d; }
+  &:nth-child(3n+2) { transform: rotate(1.5deg); background: #b3e5fc; }
+  &:nth-child(3n)   { transform: rotate(-1deg); background: #c8e6c9; }
+  &:nth-child(5n+4) { background: #f8bbd0; }
+  &:nth-child(7n+5) { background: #ffe0b2; }
+
+  h4 {
+    margin: 0 0 0.4rem 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    border-bottom: 1px dashed rgba(0,0,0,0.25);
+    padding-bottom: 0.3rem;
+  }
+
+  .mural-meta {
+    font-size: 0.78rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+  }
+
+  ul { margin: 0.4rem 0 0.4rem 1.1rem; padding: 0; font-size: 0.9rem; line-height: 1.35; }
+  li { margin-bottom: 0.2rem; }
+  p { margin: 0.3rem 0; font-size: 0.9rem; line-height: 1.35; }
+
+  a {
+    color: #0d47a1;
+    font-weight: 600;
+    text-decoration: underline;
+    word-break: break-word;
+  }
+}
+
+@media (max-width: 600px) {
+  .mural-board { padding: 1rem 0.6rem; }
+  .mural-postit { transform: none !important; }
+}
+
 /* ===== Audio Embed Cards ===== */
 .audio-embed-grid {
   display: flex;
