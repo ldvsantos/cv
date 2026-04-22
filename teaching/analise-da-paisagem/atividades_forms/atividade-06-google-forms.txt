@@ -1,21 +1,21 @@
-============================================================
+﻿============================================================
 ATIVIDADE 06 — ANÁLISE DA PAISAGEM (2026.1)
-9º Encontro (06/05) | Métricas de Paisagem e Conectividade Funcional
+7º–8º Encontros (22/04 e 29/04) | Sensoriamento Remoto e Detecção de Mudanças
 ============================================================
 
 ---------- TÍTULO DO FORMULÁRIO ----------
 
-Atividade 06 — FRAGSTATS, Grafos e Conectividade: Medindo a Estrutura da Paisagem
+Atividade 06 — Sensoriamento Remoto: do Pixel à Paisagem
 
 ---------- DESCRIÇÃO DO FORMULÁRIO ----------
 
-Esta atividade abrange os conteúdos do 9º Encontro (Slides 9a e 9a_extra):
-• Slide 9a — Métricas de paisagem (FRAGSTATS), conectividade funcional, grafos
-• Slide 9a_extra — Exercício de interpretação crítica de indicadores
+Esta atividade abrange os conteúdos do 7º e 8º Encontros:
+• 7º Encontro (22/04), Slides 7a–7b — Fundamentos de SR, composições, índices e feições
+• 8º Encontro (29/04), Slides 8a–8b — Detecção de mudanças multitemporal, MapBiomas
 
-O objetivo é avaliar se você consegue interpretar métricas de paisagem e usá-las para diagnosticar o estado de conservação de uma paisagem.
+O objetivo é verificar se você compreende como imagens de satélite são transformadas em informação sobre a paisagem.
 
-Prazo de entrega: até o início do 10º Encontro (13/05).
+Prazo de entrega: até o início do 9º Encontro (06/05).
 
 ============================================================
 SEÇÃO 1 — IDENTIFICAÇÃO
@@ -30,220 +30,219 @@ Tipo: Resposta curta (obrigatória)
 Título: Matrícula
 
 ============================================================
-SEÇÃO 2 — MÉTRICAS DE PAISAGEM (9º Enc, Slide 9a)
+SEÇÃO 2 — FUNDAMENTOS DE SENSORIAMENTO REMOTO (7º Enc, Slides 7a–7b)
 ============================================================
 
-Título da seção: Quantificando padrões espaciais
-Descrição da seção: As métricas de paisagem traduzem a estrutura espacial em números interpretáveis. Responda com base nas aulas e no exercício prático.
+Título da seção: Imagens, bandas e composições
+Descrição da seção: Questões sobre os conceitos operacionais do sensoriamento remoto aplicado à análise da paisagem.
 
 ----------
 
 Pergunta 3
 Tipo: Múltipla escolha (obrigatória)
-Título: Qual métrica mede a QUANTIDADE de fragmentos de uma determinada classe em uma paisagem?
+Título: Qual composição de bandas permite melhor distinção entre vegetação vigorosa, solo exposto e corpos d'água?
 
-Opção A: AREA_MN (área média dos fragmentos)
-Opção B: NP (número de fragmentos / Number of Patches)
-Opção C: ED (densidade de bordas / Edge Density)
-Opção D: COHESION (índice de coesão)
+Opção A: Cor verdadeira (RGB = bandas do visível), pois mostra "como o olho vê".
+Opção B: Falsa-cor com infravermelho próximo (NIR) no canal R, pois a vegetação reflete fortemente no NIR e solo/água refletem pouco.
+Opção C: Banda pancromática (tons de cinza), pois tem maior resolução.
+Opção D: Qualquer composição serve — não faz diferença.
 
 GABARITO: Opção B.
-Comentário: NP (Number of Patches) é a métrica mais simples —
-conta quantos fragmentos existem. Um NP alto pode indicar
-fragmentação intensa (muitas manchas pequenas) ou riqueza
-paisagística (muitas classes), dependendo do contexto.
+Comentário: A vegetação saudável reflete fortemente no NIR
+(alta atividade fotossintética). Uma composição falsa-cor
+(ex.: NIR-R-G) faz a vegetação aparecer em vermelho vivo,
+o solo em tons claros/ciano e a água em preto/azul-escuro.
+A cor verdadeira (A) é intuitiva, mas dificulta a distinção
+porque vegetação, pastagem seca e solo claro ficam parecidos.
 
 ----------
 
 Pergunta 4
 Tipo: Múltipla escolha (obrigatória)
-Título: Uma paisagem com NP = 150 fragmentos de mata nativa, AREA_MN = 2,3 ha e ED = 45 m/ha indica:
+Título: O NDVI (Índice de Vegetação por Diferença Normalizada) é calculado pela fórmula:
 
-Opção A: Paisagem bem conservada com grandes blocos de vegetação contínua.
-Opção B: Paisagem altamente fragmentada com muitos fragmentos pequenos e alta proporção de borda.
-Opção C: Paisagem sem vegetação nativa.
-Opção D: Impossível interpretar sem mais dados.
+Opção A: NDVI = (NIR + RED) / (NIR − RED)
+Opção B: NDVI = (NIR − RED) / (NIR + RED)
+Opção C: NDVI = RED / NIR
+Opção D: NDVI = (BLUE − GREEN) / (BLUE + GREEN)
 
 GABARITO: Opção B.
-Comentário: 150 fragmentos com área média de apenas 2,3 ha =
-muitos fragmentos pequenos. A alta densidade de borda (ED = 45
-m/ha) confirma — quanto menor o fragmento, maior a razão
-perímetro/área, ou seja, mais borda relativa. Isso significa
-forte efeito de borda, vulnerabilidade elevada e baixa
-funcionalidade ecológica para espécies de interior.
+Comentário: NDVI = (NIR − RED) / (NIR + RED). Varia de −1 a +1.
+Valores altos (+0,6 a +0,9) → vegetação densa e vigorosa.
+Valores baixos (0 a +0,2) → solo exposto, rocha.
+Valores negativos → água.
 
 ----------
 
 Pergunta 5
-Tipo: Caixas de seleção (obrigatória, selecionar VÁRIAS)
-Título: Quais das seguintes métricas são indicadoras de CONECTIVIDADE da paisagem? (marque todas as corretas)
+Tipo: Múltipla escolha (obrigatória)
+Título: Em uma imagem Landsat-8 de março (chuva) sobre a Caatinga, qual das seguintes afirmações é VERDADEIRA?
 
-Opção 1: NP (número de fragmentos)
-Opção 2: CONNECT (índice de conectância — % de conexões entre fragmentos)
-Opção 3: COHESION (índice de coesão — conectividade física)
-Opção 4: SHAPE_MN (forma média das manchas)
-Opção 5: ENN_MN (distância euclidiana média ao vizinho mais próximo)
-Opção 6: PLAND (porcentagem da paisagem ocupada pela classe)
+Opção A: Toda a vegetação terá NDVI alto, sendo impossível distinguir caatinga de pastagem.
+Opção B: A caatinga arbórea terá NDVI mais alto que a pastagem seca, mas na estação chuvosa ambas podem ter valores próximos, dificultando a classificação.
+Opção C: O NDVI da água será o mais alto da cena.
+Opção D: A imagem de março é inútil para qualquer análise no semiárido.
 
-GABARITO: Opções 2, 3 e 5.
-Comentário: CONNECT mede conexões diretas entre fragmentos.
-COHESION mede a conectividade física (quanto os fragmentos estão
-agregados). ENN_MN mede o isolamento médio (quanto menor, mais
-próximos os fragmentos — maior conectividade potencial).
-NP (1) indica quantidade, não conectividade. SHAPE (4) indica
-complexidade de forma. PLAND (6) indica composição, não
-configuração.
+GABARITO: Opção B.
+Comentário: Na estação chuvosa, a Caatinga "reverdece" (folhas
+novas), elevando o NDVI. A pastagem verde também apresenta NDVI
+alto. Isso gera confusão espectral — um dos grandes desafios
+do mapeamento no semiárido. Por isso, é recomendável usar
+imagens de AMBAS as estações (seca e chuva) para classificação.
+A água (C) tem NDVI negativo. D é falso — março é útil, mas
+não suficiente sozinho.
 
 ----------
 
 Pergunta 6
-Tipo: Parágrafo (obrigatória)
-Título: Analise os dados abaixo de duas sub-bacias e indique qual está em melhor condição ecológica. Justifique.
+Tipo: Caixas de seleção (obrigatória, selecionar VÁRIAS)
+Título: Quais dos seguintes sensores/satélites são mais adequados para mapear uso e cobertura da terra em escala municipal? (marque todos os aplicáveis)
 
-SUB-BACIA A: PLAND = 45%, NP = 32, AREA_MN = 14,1 ha, ENN_MN = 120 m, COHESION = 97,2
-SUB-BACIA B: PLAND = 18%, NP = 87, AREA_MN = 2,1 ha, ENN_MN = 430 m, COHESION = 82,5
+Opção 1: Landsat-8/9 (30 m, revisita 16 dias, gratuito)
+Opção 2: Sentinel-2 (10 m, revisita 5 dias, gratuito)
+Opção 3: MODIS (250-1000 m, diário, gratuito)
+Opção 4: Planet/NICFI (3-5 m, mensal, gratuito para trópicos)
+Opção 5: Google Earth (imagens de alta resolução, visualização)
 
-Descrição: Mínimo 6 linhas. Interprete CADA métrica comparativamente.
-
-GABARITO (resposta esperada):
-"A sub-bacia A está em condição ecológica significativamente
-melhor que a B, em todos os indicadores:
-
-- PLAND: A tem 45% de habitat (acima do limiar de percolação),
-  enquanto B tem apenas 18% (abaixo de todos os limiares críticos).
-
-- NP: A tem 32 fragmentos, B tem 87. O NP muito alto em B,
-  combinado com área baixa, indica fragmentação severa.
-
-- AREA_MN: Fragmentos de A têm 14,1 ha em média (suficiente
-  para abrigar espécies de interior), enquanto os de B têm
-  apenas 2,1 ha (quase 100% borda — efeito de borda dominante).
-
-- ENN_MN: Em A, o vizinho mais próximo está a 120 m (facilmente
-  transposto por muitas espécies), enquanto em B está a 430 m
-  (barreira para espécies com baixa mobilidade, como anfíbios
-  e pequenos mamíferos).
-
-- COHESION: A = 97,2 (alta coesão — fragmentos agregados e em
-  boa conectividade física), B = 82,5 (coesão moderada-baixa —
-  fragmentos dispersos).
-
-Diagnóstico: A bacia B é uma paisagem em estágio avançado de
-degradação paisagística — abaixo do limiar de percolação,
-fragmentos pequenos, isolados e com alto efeito de borda. A
-bacia A mantém funcionalidade ecológica, mas está no limite
-(45%) — qualquer perda adicional pode provocar colapso de
-conectividade."
+GABARITO: Opções 1, 2 e 4 (ideais). Opção 5 é aceitável para
+interpretação visual, mas não para classificação digital.
+Comentário: MODIS (3) tem resolução muito grosseira para escala
+municipal — serve para monitoramento regional/global. Landsat e
+Sentinel são os "cavalos de batalha" do mapeamento em escala
+municipal. Planet/NICFI oferece resolução superior e é gratuito
+para países tropicais. Google Earth (5) é útil para visualização
+e validação, mas não permite processamento espectral direto.
 
 ============================================================
-SEÇÃO 3 — CONECTIVIDADE FUNCIONAL E GRAFOS (9º Enc, Slide 9a)
+SEÇÃO 3 — DETECÇÃO DE MUDANÇAS E MAPBIOMAS (8º Enc, Slides 8a–8b)
 ============================================================
 
-Título da seção: Graphab e teoria de grafos aplicada à paisagem
+Título da seção: Como a paisagem muda no tempo — e como medimos isso
 
 ----------
 
 Pergunta 7
 Tipo: Múltipla escolha (obrigatória)
-Título: Na análise de grafos aplicada à Ecologia da Paisagem, os "nós" representam _______ e as "arestas" representam _______.
+Título: A plataforma MapBiomas é fundamental para análise da paisagem no Brasil porque:
 
-Opção A: Nós = fragmentos de habitat; Arestas = conexões funcionais (possibilidade de deslocamento entre fragmentos)
-Opção B: Nós = estradas; Arestas = rios
-Opção C: Nós = cidades; Arestas = rodovias
-Opção D: Nós = espécies; Arestas = relações tróficas
+Opção A: Fornece imagens de satélite brutas que o pesquisador precisa classificar manualmente.
+Opção B: Oferece mapeamento anual de uso e cobertura da terra para todo o Brasil, de 1985 até o presente, com metodologia padronizada e dados abertos.
+Opção C: Substitui completamente o trabalho de campo do pesquisador.
+Opção D: Fornece apenas dados climáticos e pluviométricos.
 
-GABARITO: Opção A.
-Comentário: No contexto da Ecologia da Paisagem, o grafo é
-uma representação topológica onde cada fragmento é um nó e cada
-conexão potencial (baseada na capacidade de dispersão de uma
-espécie-alvo) é uma aresta. Isso permite calcular métricas
-como IIC (Integral Index of Connectivity) e PC (Probability
-of Connectivity).
+GABARITO: Opção B.
+Comentário: O MapBiomas (mapbiomas.org) produz mapas anuais de
+uso/cobertura para todo o Brasil desde 1985, usando Random Forest
+sobre mosaicos Landsat no Google Earth Engine. É aberto, gratuito
+e permite análise multitemporal de 40 anos. NÃO substitui campo
+(C) — requer validação. NÃO fornece imagens brutas (A) — entrega
+dados já classificados.
 
 ----------
 
 Pergunta 8
 Tipo: Múltipla escolha (obrigatória)
-Título: Qual a principal vantagem da análise de conectividade por grafos sobre a simples medição de distância entre fragmentos (ENN)?
+Título: Ao comparar mapas de uso/cobertura de 2000 e 2024 para detectar mudanças, qual dos seguintes cuidados é ESSENCIAL?
 
-Opção A: Considera a capacidade de dispersão do organismo-alvo e a resistência da matriz, não apenas a distância física.
-Opção B: É mais rápida de calcular.
-Opção C: Não precisa de mapa de uso do solo.
-Opção D: Funciona apenas para aves e ignora outros animais.
+Opção A: Usar imagens da mesma estação do ano (ambas na seca ou ambas na chuva) para evitar confundir mudança real com variação sazonal.
+Opção B: Usar imagens de estações diferentes para captar variação máxima.
+Opção C: Usar sensores completamente diferentes para aumentar a diversidade de dados.
+Opção D: Não é necessário nenhum cuidado — basta comparar.
 
 GABARITO: Opção A.
-Comentário: A ENN mede apenas a distância linear em linha reta
-ao fragmento mais próximo. A análise de grafos (Graphab, Conefor)
-incorpora: (a) a distância FUNCIONAL (considerando resistência da
-matriz — uma pastagem é menos resistente que uma rodovia),
-(b) a capacidade de dispersão da espécie-alvo, e (c) a topologia
-da rede (não só o vizinho mais próximo, mas todo o conjunto).
+Comentário: A comparação multitemporal exige consistência de
+aquisição: mesma estação, mesmo sensor (ou sensores compatíveis),
+mesma resolução. Se uma imagem é da seca e outra da chuva, a
+Caatinga aparentará "desmatamento" que é na verdade senescência
+foliar natural. Esse é um dos erros mais comuns em estudos de
+mudança de uso no semiárido.
 
 ----------
 
 Pergunta 9
 Tipo: Parágrafo (obrigatória)
-Título: Um gestor ambiental precisa decidir onde investir R$ 500 mil em restauração florestal para maximizar a conectividade da paisagem. Ele tem duas opções: (A) restaurar 50 ha em um grande fragmento que já tem 200 ha (aumentando para 250 ha); (B) criar 3 corredores de 5 ha cada (total: 15 ha) conectando os 5 maiores fragmentos da bacia. Usando conceitos de conectividade funcional e teoria de grafos, qual estratégia você recomendaria? Por quê?
-Descrição: Mínimo 6 linhas. Não há resposta única — a qualidade da argumentação é o que será avaliado.
-
-GABARITO (resposta esperada — aceitar ambas se bem justificadas):
-
-"Recomendo a opção B (corredores) na maioria dos cenários,
-porque a conectividade funcional depende mais das CONEXÕES entre
-fragmentos do que do tamanho de um único fragmento. Em termos
-de teoria de grafos, adicionar 3 arestas novas ao grafo
-(conectando 5 nós) aumenta drasticamente o componente conectado,
-podendo transformar 5 fragmentos isolados em uma rede funcional.
-
-Na opção A, o investimento aumenta o nó mais forte (que já é
-grande e viável), mas não resolve o isolamento dos demais
-fragmentos. Em linguagem de métricas, a opção A aumentaria o
-PLAND e a AREA do fragmento 1, mas NÃO alteraria ENN, CONNECT
-ou COHESION dos demais.
-
-EXCEÇÃO: Se o grande fragmento é o ÚNICO com população-fonte
-de espécies ameaçadas, aumentá-lo pode ser prioritário para
-garantir viabilidade populacional mínima antes de conectar.
-Nesse caso, a opção A seria mais prudente — mas como segunda
-etapa, os corredores continuariam necessários.
-
-A resposta ideal dependeria de uma análise com Graphab/Conefor:
-simular ambos os cenários e comparar a variação no PC
-(Probability of Connectivity) ou dPC (delta-PC)."
-
-============================================================
-SEÇÃO 4 — LEITURA CRÍTICA DE INDICADORES
-============================================================
-
-Pergunta 10
-Tipo: Parágrafo (obrigatória)
-Título: "Métricas sem contexto são apenas números." Explique esta frase usando um exemplo prático. Em que situações uma métrica pode ser ENGANOSA se interpretada isoladamente?
-Descrição: Mínimo 5 linhas.
+Título: Acesse a plataforma MapBiomas (https://plataforma.brasil.mapbiomas.org/) e busque o município de Feira de Santana - BA. Compare os anos de 2000 e 2023. Descreva: (a) Que mudanças de uso/cobertura são visíveis? (b) Qual classe aumentou e qual diminuiu? (c) Que processo explica essas mudanças?
+Descrição: Mínimo 8 linhas. Se não conseguir acessar, use os dados da Coleção 9 do MapBiomas disponíveis na página.
 
 GABARITO (resposta esperada):
-"Exemplo: o NP (número de fragmentos) de uma paisagem subiu de 30
-para 80 em 20 anos. Isso pode significar duas coisas opostas:
-(a) fragMENTAÇÃO — um grande bloco de mata foi dividido em muitos
-fragmentos pequenos (degradação); OU (b) resTAURAÇÃO — novos
-fragmentos estão surgindo por regeneração em áreas antes desmatadas
-(recuperação). Sem olhar AREA_MN, PLAND e ENN junto com NP, é
-impossível saber qual cenário é real.
+"(a) Entre 2000 e 2023, a principal mudança visível é a expansão
+da classe 'Formação Campestre/Pastagem' sobre áreas que em 2000
+eram classificadas como 'Formação Savânica' ou 'Floresta'. A
+mancha urbana de Feira de Santana também se expandiu visivelmente
+em direção às BR-116 e BR-324.
 
-Outro exemplo: um NDVI médio de 0,45 pode parecer 'adequado',
-mas se antes era 0,65, houve degradação. E se a área de referência
-(conservada) tem NDVI de 0,80, o valor 0,45 está longe do ideal.
+(b) Classe que AUMENTOU: Pastagem (e área urbana). Classe que
+DIMINUIU: Vegetação nativa (Savana/Caatinga arbórea).
 
-As métricas devem SEMPRE ser interpretadas: (1) em conjunto
-(composição + configuração), (2) em comparação temporal
-(trajetória), (3) em relação a referenciais ecológicos
-(limiares de percolação, habitat mínimo viável) e (4) com
-conhecimento da paisagem real (campo, imagens)."
+(c) O processo principal é a conversão de caatinga/cerrado em
+pastagem para pecuária bovina extensiva, padrão histórico do
+semiárido baiano. A expansão urbana é impulsionada pelo
+crescimento demográfico (~600 mil hab.) e pela posição de Feira
+como entroncamento rodoviário. A dinâmica reflete a 'modernização
+conservadora' — expansão agropecuária com concentração fundiária
+sem planejamento de conservação."
+
+Critérios: (a) Identificou mudanças visíveis? (b) Nomeou classes
+com aumento e diminuição? (c) Explicou o processo? Bônus: uso
+de dados quantitativos do MapBiomas (km², %).
 
 ----------
 
+Pergunta 10
+Tipo: Parágrafo (obrigatória)
+Título: Por que a análise multitemporal é mais informativa que a análise de uma data única para compreender a paisagem? Dê um exemplo concreto do semiárido.
+Descrição: Mínimo 5 linhas.
+
+GABARITO (resposta esperada):
+"A análise de uma única data fornece um 'retrato estático' — diz
+como a paisagem está NAQUELE MOMENTO, mas não revela processos,
+tendências ou velocidade de transformação. A análise multitemporal
+revela a TRAJETÓRIA da paisagem: se está se degradando, se
+recuperando ou se mantendo estável.
+
+Exemplo: uma imagem de 2024 do semiárido pode mostrar 30% de
+caatinga. Mas isso não diz se essa caatinga é remanescente (estava
+lá desde sempre), regeneração (era pastagem em 2000 e se recuperou),
+ou se está em declínio (era 50% em 2000 e agora é 30%). Só a
+comparação multitemporal distingue esses cenários. Além disso, no
+semiárido, a variação sazonal confunde análises monotemporais —
+a Caatinga perde folhas na seca e pode parecer 'desmatada'."
+
+============================================================
+SEÇÃO 4 — EXERCÍCIO INTEGRADOR
+============================================================
+
 Pergunta 11
+Tipo: Parágrafo (obrigatória)
+Título: Imagine que você precisa elaborar um mapa multitemporal de mudanças de uso/cobertura para uma bacia hidrográfica do semiárido (2000 → 2024). Descreva: (1) que sensor/satélite usaria e por quê; (2) que período do ano escolheria para as imagens e por quê; (3) que classes de uso definiria; (4) como validaria o resultado.
+Descrição: Mínimo 8 linhas. Pense como um profissional planejando o trabalho.
+
+GABARITO (resposta esperada):
+"1) Sensor: Landsat-8 para 2024 e Landsat-5/7 para 2000 (série
+contínua, gratuito, 30 m, compatível espectralmente). Ou usar
+MapBiomas diretamente para consistência metodológica.
+
+2) Período: setembro-outubro (final da seca) para AMBAS as datas.
+Justificativa: minimiza confusão espectral com variação sazonal;
+a caatinga decídua está sem folhas (NDVI baixo), enquanto áreas
+irrigadas e matas perenes mantêm NDVI alto — facilitando a
+distinção.
+
+3) Classes: (1) Caatinga arbórea-arbustiva, (2) Caatinga
+herbácea/esparsa, (3) Pastagem, (4) Agricultura, (5) Solo
+exposto/degradado, (6) Corpo d'água, (7) Área urbana.
+
+4) Validação: (a) Campo — visita a pontos aleatórios para
+verificar classificação atual (2024); (b) Google Earth imagens
+históricas para 2000; (c) Comparação com MapBiomas (coleção 9)
+para verificar concordância; (d) Cálculo de matriz de confusão
+e índice Kappa."
+
+----------
+
+Pergunta 12
 Tipo: Escala linear (obrigatória)
-Título: De 1 a 5, o quanto você se sente confiante para interpretar uma tabela de métricas FRAGSTATS e produzir um diagnóstico?
+Título: De 1 a 5, o quanto você se sente confiante para interpretar uma imagem de satélite e identificar classes de uso/cobertura?
 Escala: 1 = Nada confiante → 5 = Muito confiante
 
 ============================================================
@@ -256,28 +255,28 @@ CONFIGURAÇÕES DO FORMULÁRIO
 - Mostrar barra de progresso: Sim
 - Embaralhar ordem das perguntas: Não
 - Mensagem de confirmação:
-  "Resposta registrada! No próximo encontro, avançaremos para a
-   delimitação de unidades de paisagem e diagnóstico integrado."
+  "Resposta registrada! No próximo encontro, avançaremos para
+   métricas e indicadores de paisagem (FRAGSTATS, grafos)."
 
 ============================================================
 NOTAS PARA O DOCENTE
 ============================================================
 
 OBJETIVO PEDAGÓGICO:
-Atividade chave do bloco quantitativo. O aluno deve sair capaz
-de: (1) nomear e interpretar as principais métricas, (2) comparar
-cenários usando números, (3) reconhecer limitações das métricas
-isoladas. P6 (comparação de sub-bacias) e P9 (decisão de gestão)
-são as questões centrais — simulam avaliação prática real.
+Consolidar os conteúdos de sensoriamento remoto aplicado e
+garantir que o aluno saiba: (1) escolher composições e índices,
+(2) interpretar imagens, (3) usar MapBiomas e (4) planejar
+uma análise multitemporal. A P9 (MapBiomas) e a P11 (planejamento)
+são as mais ricas pedagogicamente.
 
 PREPARAÇÃO NECESSÁRIA:
-- Os dados de P6 podem ser substituídos por dados reais das
-  sub-bacias trabalhadas pelos alunos no 9º Encontro
+- Verificar se os alunos conseguem acessar o MapBiomas
+- Ter capturas de tela como backup caso a internet falhe
 
-TEMPO ESTIMADO: 35–45 minutos
+TEMPO ESTIMADO: 40–50 minutos
 
 ALINHAMENTO:
 - Matéria da 4ª Avaliação (Teórica II — 14º Encontro, 10/06)
-- Matéria do Serious Game (2ª Avaliação — 11º Encontro, 20/05)
 - Avaliação contínua
+- Prepara para o 9º Encontro (métricas de paisagem)
 ============================================================

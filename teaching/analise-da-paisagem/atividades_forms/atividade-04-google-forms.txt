@@ -1,21 +1,21 @@
-============================================================
+﻿============================================================
 ATIVIDADE 04 — ANÁLISE DA PAISAGEM (2026.1)
-4º–6º Encontros (01/04 a 15/04) | Cartografia Temática e Interpretação Visual
+3º–4º Encontros (25/03 e 01/04) | Escala, Fragmentação e Resiliência
 ============================================================
 
 ---------- TÍTULO DO FORMULÁRIO ----------
 
-Atividade 04 — Leitura Cartográfica e Interpretação Visual da Paisagem
+Atividade 04 — Escalas, Fragmentação e Resiliência da Paisagem
 
 ---------- DESCRIÇÃO DO FORMULÁRIO ----------
 
-Esta atividade abrange os conteúdos do 4º ao 6º Encontro:
-• 4º–5º Encontros (01/04 e 08/04), Slides 4b–5a — Cartografia temática e delimitação de área no QGIS
-• 5º–6º Encontros (08/04 e 15/04), Slides 5b–6 — Interpretação visual, matriz de evidências e síntese
+Esta atividade abrange os conteúdos do 3º e 4º Encontros:
+• 3º Encontro (25/03), Slide 3b — Escalas espaço-temporais, hierarquia e MAUP
+• 4º Encontro (01/04), Slide 4a — Fluxos, fragmentação, conectividade e resiliência
 
-Trata-se de uma atividade prática de leitura integrada de mapas e imagens. Você não precisa usar software — apenas observação, interpretação e escrita.
+O objetivo é verificar se você compreende como a escolha de escala afeta a análise e como a fragmentação compromete a funcionalidade ecológica de uma paisagem.
 
-Prazo de entrega: até o 6º Encontro (15/04) — 1ª Avaliação.
+Prazo de entrega: até o início do 5º Encontro (08/04).
 
 ============================================================
 SEÇÃO 1 — IDENTIFICAÇÃO
@@ -30,221 +30,209 @@ Tipo: Resposta curta (obrigatória)
 Título: Matrícula
 
 ============================================================
-SEÇÃO 2 — LEITURA CARTOGRÁFICA (4º–5º Enc, Slides 4b–5a)
+SEÇÃO 2 — ESCALA E MAUP (3º Enc, Slide 3b)
 ============================================================
 
-Título da seção: Interpretando mapas temáticos
-Descrição da seção: Observe os mapas temáticos fornecidos abaixo e responda.
-
-(Inserir: 2 mapas da mesma área — um mapa de USO E COBERTURA DA TERRA e um mapa HIPSOMÉTRICO/RELEVO. Sugestão: bacia do rio Jacuípe ou entorno de Feira de Santana, gerados previamente no QGIS.)
+Título da seção: Extensão, grão e o problema da unidade de área modificável
+Descrição da seção: A escala determina o que conseguimos ver (e o que deixamos de ver) na paisagem.
 
 ----------
 
 Pergunta 3
-Tipo: Caixas de seleção (obrigatória, selecionar VÁRIAS)
-Título: Observando o mapa de uso e cobertura da terra, quais classes de uso você consegue identificar? (marque todas)
+Tipo: Múltipla escolha (obrigatória)
+Título: Na Ecologia da Paisagem, "extensão" e "grão" são dois componentes da escala. Qual alternativa os define CORRETAMENTE?
 
-Opção 1: Vegetação nativa densa (mata/caatinga arbórea)
-Opção 2: Vegetação nativa esparsa (caatinga arbustiva/herbácea)
-Opção 3: Pastagem
-Opção 4: Agricultura (lavoura temporária ou permanente)
-Opção 5: Solo exposto / área degradada
-Opção 6: Corpo d'água (rio, açude, lagoa)
-Opção 7: Área urbana / edificações
-Opção 8: Silvicultura (eucalipto, pinus)
-Opção 9: Afloramento rochoso
+Opção A: Extensão é o tamanho total da área analisada; grão é a menor unidade espacial distinguível (resolução).
+Opção B: Extensão é o nível de detalhe; grão é a área total coberta pelo sensor.
+Opção C: Extensão e grão são sinônimos para "escala cartográfica".
+Opção D: Extensão refere-se ao tempo; grão refere-se ao espaço.
 
-GABARITO: Depende da imagem fornecida. No entorno de Feira de
-Santana, as classes mais prováveis são: 1, 2, 3, 5, 6 e 7.
-Opções 4 e 8 dependem do recorte. Avaliar se o aluno identificou
-corretamente as classes presentes na imagem.
+GABARITO: Opção A.
+Comentário: Extensão = tamanho da área de estudo (ex.: bacia
+hidrográfica de 500 km²). Grão = resolução mínima (ex.: pixel
+de 30 m no Landsat). Alterar qualquer um dos dois pode mudar
+completamente os padrões observados.
 
 ----------
 
 Pergunta 4
 Tipo: Múltipla escolha (obrigatória)
-Título: Ao comparar o mapa de relevo com o mapa de uso/cobertura, você observa que a vegetação nativa remanescente se concentra principalmente em:
+Título: O MAUP (Modifiable Areal Unit Problem) é um problema clássico em análise espacial. Ele ocorre quando:
 
-Opção A: Nas áreas planas de fundo de vale, próximas aos rios.
-Opção B: Nos topos de morro e encostas mais íngremes, onde a mecanização agrícola é difícil.
-Opção C: Distribuída uniformemente por toda a área.
-Opção D: Exclusivamente nas margens dos rios (mata ciliar).
+Opção A: Dados coletados em uma escala são analisados em outra, e os resultados mudam conforme a unidade de agregação escolhida.
+Opção B: O mapa não tem sistema de coordenadas definido.
+Opção C: A imagem de satélite tem nuvens que escondem parte da área.
+Opção D: O pesquisador não define a projeção cartográfica corretamente.
 
-GABARITO: Opção B (mais provável para paisagens da região).
-Comentário: No semiárido e Mata Atlântica da Bahia, a vegetação
-nativa tende a persistir onde a declividade impede a pecuária
-mecanizada (topos de morro, encostas íngremes). As áreas planas
-são preferencialmente convertidas em pastagem. A mata ciliar (D)
-pode existir, mas raramente é a única remanescente. Este padrão
-revela a relação direta entre geomorfologia e uso do solo.
+GABARITO: Opção A.
+Comentário: O MAUP demonstra que o resultado de uma análise
+espacial depende de COMO as unidades de área são definidas
+(tamanho e forma). Exemplo: a taxa de desmatamento de uma
+região pode parecer muito diferente se calculada por município,
+por bacia hidrográfica ou por quadrícula regular de 10 km².
 
 ----------
 
 Pergunta 5
 Tipo: Parágrafo (obrigatória)
-Título: Que relações você consegue identificar entre o relevo e o uso do solo na área mapeada? Por que essa relação existe?
-Descrição: Mínimo 5 linhas. Mencione pelo menos 2 relações específicas.
+Título: Um pesquisador quer estudar a fragmentação da Caatinga no município de Feira de Santana. Ele poderia usar imagens Sentinel-2 (grão de 10 m) ou MODIS (grão de 250 m). Explique como a escolha do grão afetaria os resultados: que fragmentos seriam detectados em cada caso? A paisagem pareceria mais ou menos fragmentada?
+Descrição: Mínimo 5 linhas.
 
 GABARITO (resposta esperada):
-"1) As áreas de pastagem dominam os topos planos e as encostas
-suaves (declividade < 15%), pois são acessíveis ao gado e à
-eventual mecanização. 2) A vegetação nativa remanescente está
-concentrada nas encostas mais íngremes (> 25%), onde o custo de
-conversão é alto e a legislação (APP de encosta) pode ter
-contribuído para a preservação. 3) Os corpos d'água (açudes)
-ocupam fundos de vale, aproveitando a convergência da drenagem.
-4) O solo exposto aparece em áreas de meia-encosta, possivelmente
-indicando erosão por sobrepastoreio.
+"Com Sentinel-2 (10 m), o pesquisador detectaria fragmentos
+pequenos (>100 m²), como manchas de caatinga em quintais,
+matas ciliares estreitas e até árvores isoladas. A paisagem
+pareceria MAIS fragmentada — muitas manchas pequenas e dispersas.
+Com MODIS (250 m), somente fragmentos maiores que ~6 ha seriam
+visíveis. Fragmentos pequenos seriam 'absorvidos' pela classe
+dominante (pastagem). A paisagem pareceria MENOS fragmentada —
+poucas manchas grandes. O número de fragmentos, a área média
+dos fragmentos e o índice de forma seriam todos diferentes.
+Isso é uma manifestação direta do MAUP: a mesma paisagem 'real'
+gera resultados diferentes conforme a resolução do dado."
 
-Essa relação existe porque o relevo condiciona o uso: áreas planas
-são mais produtivas e acessíveis, sendo as primeiras a serem
-convertidas. Áreas íngremes funcionam como 'refúgios' de
-vegetação nativa — um padrão clássico descrito por Ab'Sáber."
-
-============================================================
-SEÇÃO 3 — INTERPRETAÇÃO VISUAL (5º–6º Enc, Slides 5b–6)
-============================================================
-
-Título da seção: Chaves de interpretação e evidências
-
-(Inserir: uma imagem de satélite de alta resolução — Google Earth ou Sentinel-2 em cor verdadeira — da mesma área dos mapas, para que o aluno aplique chaves de interpretação.)
+Critérios: Deve relacionar grão com detecção de fragmentos e
+demonstrar que o grão afeta métricas de fragmentação.
 
 ----------
 
 Pergunta 6
 Tipo: Múltipla escolha (obrigatória)
-Título: Qual dos seguintes NÃO é um elemento-chave de interpretação visual de imagens?
+Título: Um rio intermitente na Caatinga seca por 6 meses e enche por 6 meses. Se o pesquisador analisar apenas uma imagem de agosto (seca), que erro de interpretação pode cometer?
 
-Opção A: Forma (geometria dos objetos na imagem)
-Opção B: Textura (rugosidade aparente da superfície)
-Opção C: Tonalidade / cor (resposta espectral dos alvos)
-Opção D: Preço do hectare na região
+Opção A: Classificar a área de várzea como solo exposto/pastagem degradada, ignorando sua função sazonal como corredor ecológico.
+Opção B: Superestimar a área de vegetação nativa.
+Opção C: Classificar corretamente todos os elementos da paisagem.
+Opção D: Nenhum erro — uma imagem é suficiente para qualquer análise.
 
-GABARITO: Opção D.
-Comentário: Os elementos clássicos de interpretação visual são:
-forma, tamanho, tonalidade/cor, textura, padrão, sombra, contexto
-(associação) e localização. O preço do hectare é uma informação
-socioeconômica relevante para a análise da paisagem, mas NÃO é
-um elemento de interpretação visual de imagens.
+GABARITO: Opção A.
+Comentário: A escala temporal é tão importante quanto a espacial.
+Uma análise monotemporal no semiárido pode confundir áreas de
+mata ciliar caducifólia (sem folhas na seca) com solo exposto.
+O rio seco pode ser classificado como estrada. A sazonalidade
+exige análise multitemporal.
+
+============================================================
+SEÇÃO 3 — FRAGMENTAÇÃO E CONECTIVIDADE (4º Enc, Slide 4a)
+============================================================
+
+Título da seção: Quando a paisagem se rompe
 
 ----------
 
 Pergunta 7
-Tipo: Parágrafo (obrigatória)
-Título: Observe a imagem de satélite fornecida. Identifique e descreva pelo menos 4 feições diferentes usando as chaves de interpretação (forma, textura, tonalidade, padrão, contexto).
-Descrição: Para cada feição, indique: (1) o que é, (2) que chave(s) usou para identificar, (3) por que tem essa aparência. Mínimo 8 linhas.
+Tipo: Múltipla escolha (obrigatória)
+Título: A teoria da percolação estabelece que, em uma paisagem binária (habitat × não-habitat), a conectividade funcional sofre uma queda brusca quando a proporção de habitat cai abaixo de aproximadamente:
 
-GABARITO (resposta esperada):
-"1) Pastagem: tonalidade verde-clara homogênea; textura lisa
-(sem rugosidade do dossel); forma irregular seguindo limites
-de propriedade; contexto: adjacente a cercas e curral.
+Opção A: 90%
+Opção B: 59,28% (limiar de percolação teórico) — na prática, valores entre 30% e 40% em paisagens reais.
+Opção C: 10%
+Opção D: 50% exatos, sempre.
 
-2) Fragmento de caatinga arbórea: tonalidade verde-escura;
-textura rugosa (copas individuais visíveis); forma irregular
-com bordas recortadas; contexto: localizado em encosta íngreme.
-
-3) Açude: tonalidade azul-escura ou preta; textura lisa
-(superfície da água); forma ovalada ou em 'V' (barragem);
-contexto: fundo de vale com convergência de drenagem.
-
-4) Estrada de terra: tonalidade clara/esbranquiçada; textura
-lisa; forma linear contínua com largura regular (~5 m);
-padrão: conecta propriedades rurais ao núcleo urbano.
-
-5) Solo exposto / área degradada: tonalidade clara (branca
-a amarelada); textura lisa; forma irregular sem limites nítidos;
-contexto: meia-encosta, adjacente a pastagem — possivelmente
-erosão laminar por sobrepastoreio."
-
-Critérios: Avaliada pela quantidade e qualidade das descrições.
-Deve usar vocabulário de interpretação visual (tonalidade, textura,
-forma, padrão, contexto). Mínimo 4 feições.
+GABARITO: Opção B.
+Comentário: O limiar de percolação teórico (em grade) é ~59,28%,
+mas em paisagens reais — com geometria irregular, matriz hostil
+e espécies com diferentes capacidades de dispersão — o limiar
+funcional costuma estar entre 20-40%. Abaixo desse limiar, a
+paisagem se torna "impermeável" para muitas espécies, e os
+fragmentos ficam funcionalmente isolados.
 
 ----------
 
 Pergunta 8
-Tipo: Múltipla escolha (obrigatória)
-Título: Uma "matriz de evidências" na análise da paisagem serve para:
+Tipo: Caixas de seleção (obrigatória, selecionar VÁRIAS)
+Título: Quais dos seguintes processos são consequências diretas da fragmentação de habitat? (marque todos os corretos)
 
-Opção A: Calcular a nota final dos alunos de forma automática.
-Opção B: Sistematizar e triangular dados de diferentes fontes (mapa, imagem, campo, dados secundários), explicitando o que cada evidência revela sobre a paisagem.
-Opção C: Apenas listar os softwares utilizados na pesquisa.
-Opção D: Descrever a metodologia estatística do trabalho.
+Opção 1: Aumento do efeito de borda (microclima alterado, luminosidade, espécies invasoras)
+Opção 2: Redução do tamanho efetivo das populações
+Opção 3: Isolamento genético e aumento da endogamia
+Opção 4: Perda de espécies dependentes do interior do fragmento
+Opção 5: Aumento da biodiversidade em todos os fragmentos
+Opção 6: Alteração de processos ecológicos (polinização, dispersão, predação)
 
-GABARITO: Opção B.
-Comentário: A matriz de evidências é uma ferramenta organizacional
-que cruza UNIDADES DA PAISAGEM (linhas) com FONTES DE EVIDÊNCIA
-(colunas: mapa topográfico, imagem de satélite, dados de campo,
-dados socioeconômicos), permitindo triangulação e robustez na
-interpretação.
+GABARITO: Opções 1, 2, 3, 4 e 6.
+Comentário: A opção 5 é FALSA. Fragmentação NÃO aumenta
+biodiversidade — exceto temporariamente em bordas (por influxo
+de espécies generalistas). A longo prazo, reduz riqueza e
+favorece espécies de borda em detrimento das de interior.
 
 ----------
 
 Pergunta 9
-Tipo: Parágrafo (obrigatória)
-Título: Construa uma mini-matriz de evidências para a área analisada. Escolha 3 unidades/feições da paisagem (linhas) e 3 fontes de evidência (colunas). Preencha cada célula com uma observação curta.
-Descrição: Use formato de tabela (pode ser simplificado). Exemplos de fontes: mapa hipsométrico, imagem de satélite, mapa de uso/cobertura.
+Tipo: Múltipla escolha (obrigatória)
+Título: Em uma paisagem fragmentada, qual estratégia é MAIS eficaz para restaurar a conectividade funcional?
 
-GABARITO (resposta esperada):
+Opção A: Aumentar cada fragmento individualmente sem conectá-los.
+Opção B: Criar corredores ecológicos (matas ciliares, stepping stones) ligando os fragmentos maiores e mais preservados.
+Opção C: Cercar todos os fragmentos com arame farpado para impedir invasão de gado.
+Opção D: Retirar todas as atividades humanas da paisagem.
 
-"UNIDADE / EVIDÊNCIA  | Mapa hipsométrico | Imagem satélite    | Mapa uso/cobertura
----------------------|-------------------|--------------------|--------------------
-Fundo de vale irrigado| Altitude 200-250m,| Verde-brilhante,   | Classe 'Agricultura'
-                     | plano (< 5%)      | pivô circular      | 
-Encosta com caatinga | 300-450m,         | Verde-escuro,      | Classe 'Veg. nativa
-                     | declividade >25%  | textura rugosa     | densa'
-Topo chapada / pasto | >450m, plano      | Verde-claro, lisa,  | Classe 'Pastagem'
-                     |                   | limites geométricos |
-"
-
-Critérios: O aluno deve cruzar pelo menos 3 unidades × 3 fontes.
-Avaliar se as observações são coerentes entre si (triangulação).
-
-============================================================
-SEÇÃO 4 — SÍNTESE DESCRITIVO-INTERPRETATIVA
-============================================================
-
-Pergunta 10
-Tipo: Parágrafo (obrigatória)
-Título: Com base em TUDO que você observou nos mapas e na imagem (Perguntas 3 a 9), escreva uma síntese descritivo-interpretativa da paisagem analisada. Sua síntese deve: (a) descrever os principais elementos e padrões; (b) interpretar as relações entre uso do solo e relevo; (c) apontar pelo menos um processo de degradação ou pressão ambiental visível.
-Descrição: Mínimo 10 linhas. Este é o exercício mais importante da atividade — ele simula o tipo de texto que você escreverá nas avaliações e no relatório final.
-
-GABARITO (resposta esperada):
-"A paisagem analisada corresponde a um trecho da bacia do rio
-Jacuípe, no semiárido baiano, com altitudes entre 200 e 500 m.
-O relevo é predominantemente suave-ondulado, com topos planos
-de chapada e vales encaixados.
-
-O uso do solo reflete uma forte relação com o relevo: as áreas
-planas (topos e fundos de vale) foram quase integralmente
-convertidas em pastagem ou, pontualmente, em agricultura irrigada.
-A vegetação nativa remanescente (caatinga arbórea-arbustiva) está
-concentrada nas encostas mais íngremes, onde a conversão é
-economicamente inviável.
-
-A fragmentação da caatinga é visível — os remanescentes são
-pequenos (< 10 ha), isolados e com bordas recortadas, sugerindo
-um avançado estágio de degradação paisagística. A conectividade
-é mantida precariamente por matas ciliares ao longo de riachos,
-mas várias drenagens já não possuem vegetação marginal.
-
-A principal pressão ambiental identificada é o sobrepastoreio,
-evidenciado por manchas de solo exposto em meia-encosta,
-possivelmente associadas a erosão laminar e em sulcos. Esta
-pressão compromete a capacidade de infiltração do solo e
-intensifica o escoamento superficial, particularmente relevante
-em um contexto semiárido com chuvas concentradas."
-
-Critérios: (a) Descrição de 3+ elementos? (b) Relação relevo-uso
-explícita? (c) Processo de degradação identificado e argumentado?
-Mínimo 10 linhas? Linguagem técnica adequada?
+GABARITO: Opção B.
+Comentário: Corredores e stepping stones restauram a conectividade
+funcional ao permitir fluxo de organismos entre manchas de habitat.
+A (sem conexão, o isolamento persiste). C (protege, mas não
+conecta). D (irreal e desnecessário — paisagens multifuncionais
+podem ser ecologicamente viáveis).
 
 ----------
 
+Pergunta 10
+Tipo: Parágrafo (obrigatória)
+Título: Resiliência e vulnerabilidade são conceitos complementares na Ecologia da Paisagem. Considere duas paisagens: (A) uma bacia com 60% de cobertura nativa contínua e fragmentos conectados por corredores; (B) uma bacia com 15% de cobertura nativa em fragmentos isolados e pequenos. Qual é mais resiliente? Justifique usando os conceitos de conectividade, efeito de borda e limiar de percolação.
+Descrição: Mínimo 6 linhas.
+
+GABARITO (resposta esperada):
+"A paisagem A é significativamente mais resiliente. Primeiro,
+está acima do limiar de percolação (~30-40% em paisagens reais),
+garantindo conectividade funcional — organismos podem se
+deslocar entre fragmentos. Segundo, com 60% de cobertura nativa,
+os fragmentos são maiores, o que reduz a razão borda/área e
+minimiza o efeito de borda (dessecação, luminosidade, invasoras).
+Terceiro, os corredores mantêm fluxo gênico, reduzindo extinção
+local e permitindo recolonização.
+
+A paisagem B está bem abaixo do limiar (~15%), com fragmentos
+isolados e pequenos — portanto altamente vulnerável. O efeito
+de borda pode consumir grande parte dos fragmentos (fragmentos
+< 5 ha podem ser 100% borda). Sem conectividade, populações
+ficam isoladas, sofrem endogamia e estão sujeitas a extinção
+estocástica. Perturbações (fogo, seca) teriam efeito
+desproporcional porque não há capacidade de recolonização."
+
+============================================================
+SEÇÃO 4 — APLICAÇÃO INTEGRADA
+============================================================
+
 Pergunta 11
+Tipo: Parágrafo (obrigatória)
+Título: Desafio integrador: Imagine que você foi contratado(a) para avaliar a qualidade ambiental de uma bacia hidrográfica no semiárido. Descreva, em etapas, as decisões de escala que teria que tomar: (1) Que extensão usar? (2) Que grão (resolução)? (3) Que escala temporal? Justifique cada escolha.
+Descrição: Mínimo 8 linhas.
+
+GABARITO (resposta esperada):
+"1) Extensão: usaria a bacia hidrográfica como unidade de análise
+(delimitação natural pelo divisor de águas), pois é funcionalmente
+coerente — tudo que acontece na bacia afeta o exutório. Se a
+bacia for muito grande (>1.000 km²), trabalharia com sub-bacias.
+
+2) Grão: usaria Sentinel-2 (10 m) para uso/cobertura da terra,
+pois permite detectar fragmentos pequenos, estradas e áreas de
+agricultura. Para relevo, o SRTM (30 m) ou ALOS PALSAR (12,5 m).
+Para dados socioeconômicos, a unidade seria o setor censitário
+ou a propriedade rural (SIGEF/CAR).
+
+3) Escala temporal: analisaria pelo menos 3 datas (seca, chuva,
+transição) para captar a sazonalidade da Caatinga. Para mudanças
+de uso do solo, compararia pelo menos 3 décadas (ex.: 2000, 2010,
+2024) usando Landsat ou MapBiomas. Isso evitaria o erro de
+analisar uma única data e confundir mata caducifólia com solo
+exposto."
+
+----------
+
+Pergunta 12
 Tipo: Escala linear (obrigatória)
-Título: De 1 a 5, o quanto você se sente preparado(a) para a 1ª Avaliação (Teórica I) na próxima semana?
-Escala: 1 = Nada preparado → 5 = Muito preparado
+Título: De 1 a 5, o quanto você se sente confiante para justificar escolhas de escala (extensão, grão e tempo) em um projeto de análise da paisagem?
+Escala: 1 = Nada confiante → 5 = Muito confiante
 
 ============================================================
 CONFIGURAÇÕES DO FORMULÁRIO
@@ -256,29 +244,24 @@ CONFIGURAÇÕES DO FORMULÁRIO
 - Mostrar barra de progresso: Sim
 - Embaralhar ordem das perguntas: Não
 - Mensagem de confirmação:
-  "Resposta registrada! Esta atividade é uma excelente
-   preparação para a 1ª Avaliação. Revise suas respostas
-   e as anotações de aula antes da prova."
+  "Resposta registrada! No 5º Encontro, começaremos a aplicar
+   esses conceitos em exercícios de cartografia temática."
 
 ============================================================
 NOTAS PARA O DOCENTE
 ============================================================
 
 OBJETIVO PEDAGÓGICO:
-Última atividade antes da 1ª Avaliação. Funciona como revisão
-ativa — o aluno aplica TODOS os conceitos dos Encontros 1–5 em
-uma análise integrada real. A P10 (síntese) é o exercício
-mais valioso; pode ser devolvida com feedback escrito.
+Esta atividade fecha o bloco conceitual (1º–4º Encontros) e prepara
+a transição para o bloco metodológico (5º–6º Encontros). O aluno
+deve ser capaz de justificar escolhas de escala e compreender
+as consequências da fragmentação. P5, P10 e P11 são as questões
+mais importantes — avaliam capacidade argumentativa e aplicação.
 
-PREPARAÇÃO NECESSÁRIA:
-- Gerar 2 mapas (uso/cobertura + hipsométrico) da mesma área no QGIS
-- Capturar 1 imagem de satélite (Google Earth ou Sentinel-2)
-- Sugestão: usar a mesma área que os alunos delimitaram no 5º Encontro
-
-TEMPO ESTIMADO: 40–50 minutos
+TEMPO ESTIMADO: 35–45 minutos
 
 ALINHAMENTO:
-- Revisão para a 1ª Avaliação (Teórica I — 6º Encontro, 15/04)
-- Avaliação contínua
-- A síntese (P10) pode servir de rascunho para o relatório final
+- Matéria da 1ª Avaliação (Teórica I — 6º Encontro, 15/04)
+- Avaliação contínua (participação/exercícios)
+- Prepara para os exercícios práticos do 4º–6º Encontros
 ============================================================

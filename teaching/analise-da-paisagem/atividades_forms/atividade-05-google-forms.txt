@@ -1,21 +1,21 @@
-============================================================
+﻿============================================================
 ATIVIDADE 05 — ANÁLISE DA PAISAGEM (2026.1)
-7º–8º Encontros (22/04 e 29/04) | Sensoriamento Remoto e Detecção de Mudanças
+4º–6º Encontros (01/04 a 15/04) | Cartografia Temática e Interpretação Visual
 ============================================================
 
 ---------- TÍTULO DO FORMULÁRIO ----------
 
-Atividade 05 — Sensoriamento Remoto: do Pixel à Paisagem
+Atividade 05 — Leitura Cartográfica e Interpretação Visual da Paisagem
 
 ---------- DESCRIÇÃO DO FORMULÁRIO ----------
 
-Esta atividade abrange os conteúdos do 7º e 8º Encontros:
-• 7º Encontro (22/04), Slides 7a–7b — Fundamentos de SR, composições, índices e feições
-• 8º Encontro (29/04), Slides 8a–8b — Detecção de mudanças multitemporal, MapBiomas
+Esta atividade abrange os conteúdos do 4º ao 6º Encontro:
+• 4º–5º Encontros (01/04 e 08/04), Slides 4b–5a — Cartografia temática e delimitação de área no QGIS
+• 5º–6º Encontros (08/04 e 15/04), Slides 5b–6 — Interpretação visual, matriz de evidências e síntese
 
-O objetivo é verificar se você compreende como imagens de satélite são transformadas em informação sobre a paisagem.
+Trata-se de uma atividade prática de leitura integrada de mapas e imagens. Você não precisa usar software — apenas observação, interpretação e escrita.
 
-Prazo de entrega: até o início do 9º Encontro (06/05).
+Prazo de entrega: até o 6º Encontro (15/04) — 1ª Avaliação.
 
 ============================================================
 SEÇÃO 1 — IDENTIFICAÇÃO
@@ -30,220 +30,221 @@ Tipo: Resposta curta (obrigatória)
 Título: Matrícula
 
 ============================================================
-SEÇÃO 2 — FUNDAMENTOS DE SENSORIAMENTO REMOTO (7º Enc, Slides 7a–7b)
+SEÇÃO 2 — LEITURA CARTOGRÁFICA (4º–5º Enc, Slides 4b–5a)
 ============================================================
 
-Título da seção: Imagens, bandas e composições
-Descrição da seção: Questões sobre os conceitos operacionais do sensoriamento remoto aplicado à análise da paisagem.
+Título da seção: Interpretando mapas temáticos
+Descrição da seção: Observe os mapas temáticos fornecidos abaixo e responda.
+
+(Inserir: 2 mapas da mesma área — um mapa de USO E COBERTURA DA TERRA e um mapa HIPSOMÉTRICO/RELEVO. Sugestão: bacia do rio Jacuípe ou entorno de Feira de Santana, gerados previamente no QGIS.)
 
 ----------
 
 Pergunta 3
-Tipo: Múltipla escolha (obrigatória)
-Título: Qual composição de bandas permite melhor distinção entre vegetação vigorosa, solo exposto e corpos d'água?
+Tipo: Caixas de seleção (obrigatória, selecionar VÁRIAS)
+Título: Observando o mapa de uso e cobertura da terra, quais classes de uso você consegue identificar? (marque todas)
 
-Opção A: Cor verdadeira (RGB = bandas do visível), pois mostra "como o olho vê".
-Opção B: Falsa-cor com infravermelho próximo (NIR) no canal R, pois a vegetação reflete fortemente no NIR e solo/água refletem pouco.
-Opção C: Banda pancromática (tons de cinza), pois tem maior resolução.
-Opção D: Qualquer composição serve — não faz diferença.
+Opção 1: Vegetação nativa densa (mata/caatinga arbórea)
+Opção 2: Vegetação nativa esparsa (caatinga arbustiva/herbácea)
+Opção 3: Pastagem
+Opção 4: Agricultura (lavoura temporária ou permanente)
+Opção 5: Solo exposto / área degradada
+Opção 6: Corpo d'água (rio, açude, lagoa)
+Opção 7: Área urbana / edificações
+Opção 8: Silvicultura (eucalipto, pinus)
+Opção 9: Afloramento rochoso
 
-GABARITO: Opção B.
-Comentário: A vegetação saudável reflete fortemente no NIR
-(alta atividade fotossintética). Uma composição falsa-cor
-(ex.: NIR-R-G) faz a vegetação aparecer em vermelho vivo,
-o solo em tons claros/ciano e a água em preto/azul-escuro.
-A cor verdadeira (A) é intuitiva, mas dificulta a distinção
-porque vegetação, pastagem seca e solo claro ficam parecidos.
+GABARITO: Depende da imagem fornecida. No entorno de Feira de
+Santana, as classes mais prováveis são: 1, 2, 3, 5, 6 e 7.
+Opções 4 e 8 dependem do recorte. Avaliar se o aluno identificou
+corretamente as classes presentes na imagem.
 
 ----------
 
 Pergunta 4
 Tipo: Múltipla escolha (obrigatória)
-Título: O NDVI (Índice de Vegetação por Diferença Normalizada) é calculado pela fórmula:
+Título: Ao comparar o mapa de relevo com o mapa de uso/cobertura, você observa que a vegetação nativa remanescente se concentra principalmente em:
 
-Opção A: NDVI = (NIR + RED) / (NIR − RED)
-Opção B: NDVI = (NIR − RED) / (NIR + RED)
-Opção C: NDVI = RED / NIR
-Opção D: NDVI = (BLUE − GREEN) / (BLUE + GREEN)
+Opção A: Nas áreas planas de fundo de vale, próximas aos rios.
+Opção B: Nos topos de morro e encostas mais íngremes, onde a mecanização agrícola é difícil.
+Opção C: Distribuída uniformemente por toda a área.
+Opção D: Exclusivamente nas margens dos rios (mata ciliar).
 
-GABARITO: Opção B.
-Comentário: NDVI = (NIR − RED) / (NIR + RED). Varia de −1 a +1.
-Valores altos (+0,6 a +0,9) → vegetação densa e vigorosa.
-Valores baixos (0 a +0,2) → solo exposto, rocha.
-Valores negativos → água.
+GABARITO: Opção B (mais provável para paisagens da região).
+Comentário: No semiárido e Mata Atlântica da Bahia, a vegetação
+nativa tende a persistir onde a declividade impede a pecuária
+mecanizada (topos de morro, encostas íngremes). As áreas planas
+são preferencialmente convertidas em pastagem. A mata ciliar (D)
+pode existir, mas raramente é a única remanescente. Este padrão
+revela a relação direta entre geomorfologia e uso do solo.
 
 ----------
 
 Pergunta 5
-Tipo: Múltipla escolha (obrigatória)
-Título: Em uma imagem Landsat-8 de março (chuva) sobre a Caatinga, qual das seguintes afirmações é VERDADEIRA?
+Tipo: Parágrafo (obrigatória)
+Título: Que relações você consegue identificar entre o relevo e o uso do solo na área mapeada? Por que essa relação existe?
+Descrição: Mínimo 5 linhas. Mencione pelo menos 2 relações específicas.
 
-Opção A: Toda a vegetação terá NDVI alto, sendo impossível distinguir caatinga de pastagem.
-Opção B: A caatinga arbórea terá NDVI mais alto que a pastagem seca, mas na estação chuvosa ambas podem ter valores próximos, dificultando a classificação.
-Opção C: O NDVI da água será o mais alto da cena.
-Opção D: A imagem de março é inútil para qualquer análise no semiárido.
+GABARITO (resposta esperada):
+"1) As áreas de pastagem dominam os topos planos e as encostas
+suaves (declividade < 15%), pois são acessíveis ao gado e à
+eventual mecanização. 2) A vegetação nativa remanescente está
+concentrada nas encostas mais íngremes (> 25%), onde o custo de
+conversão é alto e a legislação (APP de encosta) pode ter
+contribuído para a preservação. 3) Os corpos d'água (açudes)
+ocupam fundos de vale, aproveitando a convergência da drenagem.
+4) O solo exposto aparece em áreas de meia-encosta, possivelmente
+indicando erosão por sobrepastoreio.
 
-GABARITO: Opção B.
-Comentário: Na estação chuvosa, a Caatinga "reverdece" (folhas
-novas), elevando o NDVI. A pastagem verde também apresenta NDVI
-alto. Isso gera confusão espectral — um dos grandes desafios
-do mapeamento no semiárido. Por isso, é recomendável usar
-imagens de AMBAS as estações (seca e chuva) para classificação.
-A água (C) tem NDVI negativo. D é falso — março é útil, mas
-não suficiente sozinho.
+Essa relação existe porque o relevo condiciona o uso: áreas planas
+são mais produtivas e acessíveis, sendo as primeiras a serem
+convertidas. Áreas íngremes funcionam como 'refúgios' de
+vegetação nativa — um padrão clássico descrito por Ab'Sáber."
+
+============================================================
+SEÇÃO 3 — INTERPRETAÇÃO VISUAL (5º–6º Enc, Slides 5b–6)
+============================================================
+
+Título da seção: Chaves de interpretação e evidências
+
+(Inserir: uma imagem de satélite de alta resolução — Google Earth ou Sentinel-2 em cor verdadeira — da mesma área dos mapas, para que o aluno aplique chaves de interpretação.)
 
 ----------
 
 Pergunta 6
-Tipo: Caixas de seleção (obrigatória, selecionar VÁRIAS)
-Título: Quais dos seguintes sensores/satélites são mais adequados para mapear uso e cobertura da terra em escala municipal? (marque todos os aplicáveis)
+Tipo: Múltipla escolha (obrigatória)
+Título: Qual dos seguintes NÃO é um elemento-chave de interpretação visual de imagens?
 
-Opção 1: Landsat-8/9 (30 m, revisita 16 dias, gratuito)
-Opção 2: Sentinel-2 (10 m, revisita 5 dias, gratuito)
-Opção 3: MODIS (250-1000 m, diário, gratuito)
-Opção 4: Planet/NICFI (3-5 m, mensal, gratuito para trópicos)
-Opção 5: Google Earth (imagens de alta resolução, visualização)
+Opção A: Forma (geometria dos objetos na imagem)
+Opção B: Textura (rugosidade aparente da superfície)
+Opção C: Tonalidade / cor (resposta espectral dos alvos)
+Opção D: Preço do hectare na região
 
-GABARITO: Opções 1, 2 e 4 (ideais). Opção 5 é aceitável para
-interpretação visual, mas não para classificação digital.
-Comentário: MODIS (3) tem resolução muito grosseira para escala
-municipal — serve para monitoramento regional/global. Landsat e
-Sentinel são os "cavalos de batalha" do mapeamento em escala
-municipal. Planet/NICFI oferece resolução superior e é gratuito
-para países tropicais. Google Earth (5) é útil para visualização
-e validação, mas não permite processamento espectral direto.
-
-============================================================
-SEÇÃO 3 — DETECÇÃO DE MUDANÇAS E MAPBIOMAS (8º Enc, Slides 8a–8b)
-============================================================
-
-Título da seção: Como a paisagem muda no tempo — e como medimos isso
+GABARITO: Opção D.
+Comentário: Os elementos clássicos de interpretação visual são:
+forma, tamanho, tonalidade/cor, textura, padrão, sombra, contexto
+(associação) e localização. O preço do hectare é uma informação
+socioeconômica relevante para a análise da paisagem, mas NÃO é
+um elemento de interpretação visual de imagens.
 
 ----------
 
 Pergunta 7
-Tipo: Múltipla escolha (obrigatória)
-Título: A plataforma MapBiomas é fundamental para análise da paisagem no Brasil porque:
+Tipo: Parágrafo (obrigatória)
+Título: Observe a imagem de satélite fornecida. Identifique e descreva pelo menos 4 feições diferentes usando as chaves de interpretação (forma, textura, tonalidade, padrão, contexto).
+Descrição: Para cada feição, indique: (1) o que é, (2) que chave(s) usou para identificar, (3) por que tem essa aparência. Mínimo 8 linhas.
 
-Opção A: Fornece imagens de satélite brutas que o pesquisador precisa classificar manualmente.
-Opção B: Oferece mapeamento anual de uso e cobertura da terra para todo o Brasil, de 1985 até o presente, com metodologia padronizada e dados abertos.
-Opção C: Substitui completamente o trabalho de campo do pesquisador.
-Opção D: Fornece apenas dados climáticos e pluviométricos.
+GABARITO (resposta esperada):
+"1) Pastagem: tonalidade verde-clara homogênea; textura lisa
+(sem rugosidade do dossel); forma irregular seguindo limites
+de propriedade; contexto: adjacente a cercas e curral.
 
-GABARITO: Opção B.
-Comentário: O MapBiomas (mapbiomas.org) produz mapas anuais de
-uso/cobertura para todo o Brasil desde 1985, usando Random Forest
-sobre mosaicos Landsat no Google Earth Engine. É aberto, gratuito
-e permite análise multitemporal de 40 anos. NÃO substitui campo
-(C) — requer validação. NÃO fornece imagens brutas (A) — entrega
-dados já classificados.
+2) Fragmento de caatinga arbórea: tonalidade verde-escura;
+textura rugosa (copas individuais visíveis); forma irregular
+com bordas recortadas; contexto: localizado em encosta íngreme.
+
+3) Açude: tonalidade azul-escura ou preta; textura lisa
+(superfície da água); forma ovalada ou em 'V' (barragem);
+contexto: fundo de vale com convergência de drenagem.
+
+4) Estrada de terra: tonalidade clara/esbranquiçada; textura
+lisa; forma linear contínua com largura regular (~5 m);
+padrão: conecta propriedades rurais ao núcleo urbano.
+
+5) Solo exposto / área degradada: tonalidade clara (branca
+a amarelada); textura lisa; forma irregular sem limites nítidos;
+contexto: meia-encosta, adjacente a pastagem — possivelmente
+erosão laminar por sobrepastoreio."
+
+Critérios: Avaliada pela quantidade e qualidade das descrições.
+Deve usar vocabulário de interpretação visual (tonalidade, textura,
+forma, padrão, contexto). Mínimo 4 feições.
 
 ----------
 
 Pergunta 8
 Tipo: Múltipla escolha (obrigatória)
-Título: Ao comparar mapas de uso/cobertura de 2000 e 2024 para detectar mudanças, qual dos seguintes cuidados é ESSENCIAL?
+Título: Uma "matriz de evidências" na análise da paisagem serve para:
 
-Opção A: Usar imagens da mesma estação do ano (ambas na seca ou ambas na chuva) para evitar confundir mudança real com variação sazonal.
-Opção B: Usar imagens de estações diferentes para captar variação máxima.
-Opção C: Usar sensores completamente diferentes para aumentar a diversidade de dados.
-Opção D: Não é necessário nenhum cuidado — basta comparar.
+Opção A: Calcular a nota final dos alunos de forma automática.
+Opção B: Sistematizar e triangular dados de diferentes fontes (mapa, imagem, campo, dados secundários), explicitando o que cada evidência revela sobre a paisagem.
+Opção C: Apenas listar os softwares utilizados na pesquisa.
+Opção D: Descrever a metodologia estatística do trabalho.
 
-GABARITO: Opção A.
-Comentário: A comparação multitemporal exige consistência de
-aquisição: mesma estação, mesmo sensor (ou sensores compatíveis),
-mesma resolução. Se uma imagem é da seca e outra da chuva, a
-Caatinga aparentará "desmatamento" que é na verdade senescência
-foliar natural. Esse é um dos erros mais comuns em estudos de
-mudança de uso no semiárido.
+GABARITO: Opção B.
+Comentário: A matriz de evidências é uma ferramenta organizacional
+que cruza UNIDADES DA PAISAGEM (linhas) com FONTES DE EVIDÊNCIA
+(colunas: mapa topográfico, imagem de satélite, dados de campo,
+dados socioeconômicos), permitindo triangulação e robustez na
+interpretação.
 
 ----------
 
 Pergunta 9
 Tipo: Parágrafo (obrigatória)
-Título: Acesse a plataforma MapBiomas (https://plataforma.brasil.mapbiomas.org/) e busque o município de Feira de Santana - BA. Compare os anos de 2000 e 2023. Descreva: (a) Que mudanças de uso/cobertura são visíveis? (b) Qual classe aumentou e qual diminuiu? (c) Que processo explica essas mudanças?
-Descrição: Mínimo 8 linhas. Se não conseguir acessar, use os dados da Coleção 9 do MapBiomas disponíveis na página.
+Título: Construa uma mini-matriz de evidências para a área analisada. Escolha 3 unidades/feições da paisagem (linhas) e 3 fontes de evidência (colunas). Preencha cada célula com uma observação curta.
+Descrição: Use formato de tabela (pode ser simplificado). Exemplos de fontes: mapa hipsométrico, imagem de satélite, mapa de uso/cobertura.
 
 GABARITO (resposta esperada):
-"(a) Entre 2000 e 2023, a principal mudança visível é a expansão
-da classe 'Formação Campestre/Pastagem' sobre áreas que em 2000
-eram classificadas como 'Formação Savânica' ou 'Floresta'. A
-mancha urbana de Feira de Santana também se expandiu visivelmente
-em direção às BR-116 e BR-324.
 
-(b) Classe que AUMENTOU: Pastagem (e área urbana). Classe que
-DIMINUIU: Vegetação nativa (Savana/Caatinga arbórea).
+"UNIDADE / EVIDÊNCIA  | Mapa hipsométrico | Imagem satélite    | Mapa uso/cobertura
+---------------------|-------------------|--------------------|--------------------
+Fundo de vale irrigado| Altitude 200-250m,| Verde-brilhante,   | Classe 'Agricultura'
+                     | plano (< 5%)      | pivô circular      | 
+Encosta com caatinga | 300-450m,         | Verde-escuro,      | Classe 'Veg. nativa
+                     | declividade >25%  | textura rugosa     | densa'
+Topo chapada / pasto | >450m, plano      | Verde-claro, lisa,  | Classe 'Pastagem'
+                     |                   | limites geométricos |
+"
 
-(c) O processo principal é a conversão de caatinga/cerrado em
-pastagem para pecuária bovina extensiva, padrão histórico do
-semiárido baiano. A expansão urbana é impulsionada pelo
-crescimento demográfico (~600 mil hab.) e pela posição de Feira
-como entroncamento rodoviário. A dinâmica reflete a 'modernização
-conservadora' — expansão agropecuária com concentração fundiária
-sem planejamento de conservação."
+Critérios: O aluno deve cruzar pelo menos 3 unidades × 3 fontes.
+Avaliar se as observações são coerentes entre si (triangulação).
 
-Critérios: (a) Identificou mudanças visíveis? (b) Nomeou classes
-com aumento e diminuição? (c) Explicou o processo? Bônus: uso
-de dados quantitativos do MapBiomas (km², %).
-
-----------
+============================================================
+SEÇÃO 4 — SÍNTESE DESCRITIVO-INTERPRETATIVA
+============================================================
 
 Pergunta 10
 Tipo: Parágrafo (obrigatória)
-Título: Por que a análise multitemporal é mais informativa que a análise de uma data única para compreender a paisagem? Dê um exemplo concreto do semiárido.
-Descrição: Mínimo 5 linhas.
+Título: Com base em TUDO que você observou nos mapas e na imagem (Perguntas 3 a 9), escreva uma síntese descritivo-interpretativa da paisagem analisada. Sua síntese deve: (a) descrever os principais elementos e padrões; (b) interpretar as relações entre uso do solo e relevo; (c) apontar pelo menos um processo de degradação ou pressão ambiental visível.
+Descrição: Mínimo 10 linhas. Este é o exercício mais importante da atividade — ele simula o tipo de texto que você escreverá nas avaliações e no relatório final.
 
 GABARITO (resposta esperada):
-"A análise de uma única data fornece um 'retrato estático' — diz
-como a paisagem está NAQUELE MOMENTO, mas não revela processos,
-tendências ou velocidade de transformação. A análise multitemporal
-revela a TRAJETÓRIA da paisagem: se está se degradando, se
-recuperando ou se mantendo estável.
+"A paisagem analisada corresponde a um trecho da bacia do rio
+Jacuípe, no semiárido baiano, com altitudes entre 200 e 500 m.
+O relevo é predominantemente suave-ondulado, com topos planos
+de chapada e vales encaixados.
 
-Exemplo: uma imagem de 2024 do semiárido pode mostrar 30% de
-caatinga. Mas isso não diz se essa caatinga é remanescente (estava
-lá desde sempre), regeneração (era pastagem em 2000 e se recuperou),
-ou se está em declínio (era 50% em 2000 e agora é 30%). Só a
-comparação multitemporal distingue esses cenários. Além disso, no
-semiárido, a variação sazonal confunde análises monotemporais —
-a Caatinga perde folhas na seca e pode parecer 'desmatada'."
+O uso do solo reflete uma forte relação com o relevo: as áreas
+planas (topos e fundos de vale) foram quase integralmente
+convertidas em pastagem ou, pontualmente, em agricultura irrigada.
+A vegetação nativa remanescente (caatinga arbórea-arbustiva) está
+concentrada nas encostas mais íngremes, onde a conversão é
+economicamente inviável.
 
-============================================================
-SEÇÃO 4 — EXERCÍCIO INTEGRADOR
-============================================================
+A fragmentação da caatinga é visível — os remanescentes são
+pequenos (< 10 ha), isolados e com bordas recortadas, sugerindo
+um avançado estágio de degradação paisagística. A conectividade
+é mantida precariamente por matas ciliares ao longo de riachos,
+mas várias drenagens já não possuem vegetação marginal.
 
-Pergunta 11
-Tipo: Parágrafo (obrigatória)
-Título: Imagine que você precisa elaborar um mapa multitemporal de mudanças de uso/cobertura para uma bacia hidrográfica do semiárido (2000 → 2024). Descreva: (1) que sensor/satélite usaria e por quê; (2) que período do ano escolheria para as imagens e por quê; (3) que classes de uso definiria; (4) como validaria o resultado.
-Descrição: Mínimo 8 linhas. Pense como um profissional planejando o trabalho.
+A principal pressão ambiental identificada é o sobrepastoreio,
+evidenciado por manchas de solo exposto em meia-encosta,
+possivelmente associadas a erosão laminar e em sulcos. Esta
+pressão compromete a capacidade de infiltração do solo e
+intensifica o escoamento superficial, particularmente relevante
+em um contexto semiárido com chuvas concentradas."
 
-GABARITO (resposta esperada):
-"1) Sensor: Landsat-8 para 2024 e Landsat-5/7 para 2000 (série
-contínua, gratuito, 30 m, compatível espectralmente). Ou usar
-MapBiomas diretamente para consistência metodológica.
-
-2) Período: setembro-outubro (final da seca) para AMBAS as datas.
-Justificativa: minimiza confusão espectral com variação sazonal;
-a caatinga decídua está sem folhas (NDVI baixo), enquanto áreas
-irrigadas e matas perenes mantêm NDVI alto — facilitando a
-distinção.
-
-3) Classes: (1) Caatinga arbórea-arbustiva, (2) Caatinga
-herbácea/esparsa, (3) Pastagem, (4) Agricultura, (5) Solo
-exposto/degradado, (6) Corpo d'água, (7) Área urbana.
-
-4) Validação: (a) Campo — visita a pontos aleatórios para
-verificar classificação atual (2024); (b) Google Earth imagens
-históricas para 2000; (c) Comparação com MapBiomas (coleção 9)
-para verificar concordância; (d) Cálculo de matriz de confusão
-e índice Kappa."
+Critérios: (a) Descrição de 3+ elementos? (b) Relação relevo-uso
+explícita? (c) Processo de degradação identificado e argumentado?
+Mínimo 10 linhas? Linguagem técnica adequada?
 
 ----------
 
-Pergunta 12
+Pergunta 11
 Tipo: Escala linear (obrigatória)
-Título: De 1 a 5, o quanto você se sente confiante para interpretar uma imagem de satélite e identificar classes de uso/cobertura?
-Escala: 1 = Nada confiante → 5 = Muito confiante
+Título: De 1 a 5, o quanto você se sente preparado(a) para a 1ª Avaliação (Teórica I) na próxima semana?
+Escala: 1 = Nada preparado → 5 = Muito preparado
 
 ============================================================
 CONFIGURAÇÕES DO FORMULÁRIO
@@ -255,28 +256,29 @@ CONFIGURAÇÕES DO FORMULÁRIO
 - Mostrar barra de progresso: Sim
 - Embaralhar ordem das perguntas: Não
 - Mensagem de confirmação:
-  "Resposta registrada! No próximo encontro, avançaremos para
-   métricas e indicadores de paisagem (FRAGSTATS, grafos)."
+  "Resposta registrada! Esta atividade é uma excelente
+   preparação para a 1ª Avaliação. Revise suas respostas
+   e as anotações de aula antes da prova."
 
 ============================================================
 NOTAS PARA O DOCENTE
 ============================================================
 
 OBJETIVO PEDAGÓGICO:
-Consolidar os conteúdos de sensoriamento remoto aplicado e
-garantir que o aluno saiba: (1) escolher composições e índices,
-(2) interpretar imagens, (3) usar MapBiomas e (4) planejar
-uma análise multitemporal. A P9 (MapBiomas) e a P11 (planejamento)
-são as mais ricas pedagogicamente.
+Última atividade antes da 1ª Avaliação. Funciona como revisão
+ativa — o aluno aplica TODOS os conceitos dos Encontros 1–5 em
+uma análise integrada real. A P10 (síntese) é o exercício
+mais valioso; pode ser devolvida com feedback escrito.
 
 PREPARAÇÃO NECESSÁRIA:
-- Verificar se os alunos conseguem acessar o MapBiomas
-- Ter capturas de tela como backup caso a internet falhe
+- Gerar 2 mapas (uso/cobertura + hipsométrico) da mesma área no QGIS
+- Capturar 1 imagem de satélite (Google Earth ou Sentinel-2)
+- Sugestão: usar a mesma área que os alunos delimitaram no 5º Encontro
 
 TEMPO ESTIMADO: 40–50 minutos
 
 ALINHAMENTO:
-- Matéria da 4ª Avaliação (Teórica II — 14º Encontro, 10/06)
+- Revisão para a 1ª Avaliação (Teórica I — 6º Encontro, 15/04)
 - Avaliação contínua
-- Prepara para o 9º Encontro (métricas de paisagem)
+- A síntese (P10) pode servir de rascunho para o relatório final
 ============================================================
