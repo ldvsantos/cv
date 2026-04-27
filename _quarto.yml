@@ -9,6 +9,7 @@ project:
     - "!cv-pdf-en.qmd"
     - "!cv-pdf-es.qmd"
     - "!teaching/**/plano-pdf.qmd"
+    - "!teaching/**/avaliacoes/*_gabarito.qmd"
 resources:
   - CNAME
   - cv-luiz-diego.pdf
