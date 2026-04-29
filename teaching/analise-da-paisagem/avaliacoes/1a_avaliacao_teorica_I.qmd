@@ -1,8 +1,5 @@
 ---
 title: "1ª Avaliação — Análise da Paisagem (Teórica I)"
-subtitle: "Geografia · UEFS · 2026.1"
-author: "Prof. Luiz Diego Vidal Santos"
-date: today
 lang: pt
 format:
   html:
@@ -15,39 +12,81 @@ format:
     papersize: a4
     fontsize: 11pt
     geometry:
-      - top=20mm
-      - bottom=20mm
+      - top=18mm
+      - bottom=18mm
       - left=22mm
       - right=22mm
     pdf-engine: lualatex
     toc: false
     number-sections: false
+    include-in-header:
+      text: |
+        \AtBeginDocument{\renewcommand{\maketitle}{}}
 ---
 
-::: {.text-end .mb-3}
-[← Voltar para Análise da Paisagem](../index.qmd)
+::: {.content-visible when-format="pdf"}
+
+```{=latex}
+\begin{center}
+{\small\bfseries UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA}\\
+{\small DEPARTAMENTO DE CIÊNCIAS HUMANAS E FILOSOFIA}\\
+{\small CURSO DE GEOGRAFIA}
+\end{center}
+
+\vspace{6pt}\hrule\vspace{6pt}
+
+\noindent\textbf{Curso:} Geografia \quad $\cdot$ \quad \textbf{Disciplina:} Análise da Paisagem \quad $\cdot$ \quad \textbf{Semestre:} 2026.1\\
+\noindent\textbf{Docente:} Luiz Diego Vidal Santos \quad $\cdot$ \quad \textbf{Valor:} 10,0 \quad $\cdot$ \quad \textbf{Horário:} 08h00 às 11h30\\[4pt]
+\noindent\textbf{Aluno(a):} \hrulefill\\[4pt]
+\noindent\textbf{Matrícula:} \rule{4cm}{0.4pt} \hfill \textbf{Data:} 29/04/2026 \hfill \textbf{Nota:} \rule{2.5cm}{0.4pt}
+
+\vspace{8pt}\hrule\vspace{10pt}
+
+\begin{center}
+{\large\bfseries 1\textsuperscript{a} Avaliação --- Análise da Paisagem (Teórica I)}
+\end{center}
+
+\vspace{4pt}
+```
+
 :::
 
+::: {.content-visible when-format="html"}
+
+::: {style="text-align:center; font-size:0.9em; line-height:1.4;"}
+**UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA**
+DEPARTAMENTO DE CIÊNCIAS HUMANAS E FILOSOFIA
+CURSO DE GEOGRAFIA
+:::
+
+---
+
 **Curso:** Geografia &nbsp;·&nbsp; **Disciplina:** Análise da Paisagem &nbsp;·&nbsp; **Semestre:** 2026.1
-**Docente:** Luiz Diego Vidal Santos &nbsp;·&nbsp; **Duração:** 2 h &nbsp;·&nbsp; **Valor:** 10,0
+**Docente:** Luiz Diego Vidal Santos &nbsp;·&nbsp; **Valor:** 10,0 &nbsp;·&nbsp; **Horário:** 08h00 às 11h30 &nbsp;·&nbsp; **Data:** 29/04/2026
 
 **Aluno(a):** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-> **Instruções.** Leia com atenção. Marque uma única alternativa por questão de múltipla escolha. Use **caneta azul ou preta**. Consulta vedada. Boa prova.
+---
+
+# 1ª Avaliação — Análise da Paisagem (Teórica I) {.unnumbered}
+
+:::
+
+> **Instruções.** Leia com atenção. Marque uma única alternativa por questão de múltipla escolha. Use caneta azul ou preta. Boa prova.
 
 ---
 
-## Parte I — Múltipla Escolha (5,0 pts · 0,5 cada)
+## Parte I — Múltipla Escolha (5,5 pts · 0,5 cada)
 
-**1.** A passagem do conceito de paisagem do **senso comum** (cenário visual) para o conceito **científico** na Geografia tem como marco inaugural a obra de Alexander von Humboldt. Sobre essa transição, é **correto** afirmar que:
+**1.** A passagem do conceito de paisagem do senso comum (cenário visual) para o conceito científico na Geografia tem como marco inaugural a obra de Alexander von Humboldt. Sobre essa transição, é correto afirmar que:
 
 a) Humboldt rompeu com a observação direta e fundou uma geografia exclusivamente teórica.
 b) Humboldt entendia *Landschaft* como sinônimo de bioma, antecipando a ecologia moderna.
-c) Humboldt propôs o **empirismo raciocinado**, articulando observação rigorosa, sensibilidade estética e síntese geográfica.
+c) Humboldt propôs o empirismo raciocinado, articulando observação rigorosa, sensibilidade estética e síntese geográfica.
 d) Humboldt restringiu o estudo da paisagem aos componentes culturais, abandonando a fisiografia.
 e) Humboldt definiu a paisagem como ente puramente subjetivo, dependente do observador.
 
-**2.** Yi-Fu Tuan (1974) cunhou o termo **topofilia** para descrever:
+**2.** Yi-Fu Tuan (1974) cunhou o termo *topofilia* para descrever:
 
 a) A capacidade dos sensores remotos de identificar feições físicas.
 b) O elo afetivo entre pessoa e lugar, mediado por sentidos, cultura, experiência e atitude.
@@ -55,117 +94,105 @@ c) A divisão hierárquica do espaço em geótopos e geofácies.
 d) A aversão coletiva a ambientes degradados, condicionando o êxodo rural.
 e) A preferência estética por paisagens artificiais sobre naturais.
 
-**3.** A dupla **paisagem-marca / paisagem-matriz**, proposta por Augustin Berque (1984), pode ser corretamente sintetizada como:
+**3.** A dupla paisagem-marca / paisagem-matriz, proposta por Augustin Berque (1984), pode ser corretamente sintetizada como:
 
 a) Paisagem-marca é o registro físico nos sensores; paisagem-matriz é o algoritmo de classificação.
 b) Paisagem-marca é a paisagem percebida; paisagem-matriz é a paisagem cartografada.
-c) Paisagem-marca é o **registro** da ação social sobre o território; paisagem-matriz é o **molde** que condiciona ações futuras da sociedade.
+c) Paisagem-marca é o registro da ação social sobre o território; paisagem-matriz é o molde que condiciona ações futuras da sociedade.
 d) Paisagem-marca refere-se ao patrimônio tombado; paisagem-matriz, ao não tombado.
 e) São sinônimos de paisagem natural e paisagem cultural.
 
-**4.** Em *Social Formation and Symbolic Landscape* (1984), Denis Cosgrove sustenta que a paisagem é uma **forma de ver** (*way of seeing*) historicamente construída. Daí decorre que:
+**4.** Em *Paisagem e Geografia Física Global — esboço metodológico* (1968), Georges Bertrand define a paisagem em uma determinada porção do espaço como:
 
-a) Toda paisagem é um dado neutro e objetivo, independente do observador.
-b) Mapas e representações paisagísticas são instrumentos atravessados por relações de poder.
-c) O conceito de paisagem nasceu na ciência moderna do século XIX, sem antecedentes estéticos.
-d) A paisagem só existe quando há um sensor orbital para registrá-la.
-e) A análise da paisagem dispensa qualquer recurso à história econômica e social.
+a) A simples adição de elementos geográficos disparatados levantados em campo.
+b) Uma unidade exclusivamente fisionômica, restrita à vegetação dominante.
+c) O resultado da combinação dinâmica, portanto instável, de elementos físicos, biológicos e antrópicos que reagem dialeticamente uns sobre os outros, formando um conjunto único e indissociável em perpétua evolução.
+d) Uma categoria puramente cultural, desligada dos suportes geomorfológico e climático.
+e) O equivalente operacional do bioma, identificado pela climatologia separativa.
 
-**5.** Sobre o **geossistema** em Sochava (1963) e Bertrand (1968/1971), assinale a alternativa **correta**:
+**5.** Sobre o geossistema em Sochava (1963) e Bertrand (1968/1971), assinale a alternativa correta:
 
 a) Trata-se de uma unidade fechada, isolada de fluxos externos.
-b) É um sistema **aberto**, que integra potencial ecológico, exploração biológica e ação antrópica.
+b) É um sistema aberto, que integra potencial ecológico, exploração biológica e ação antrópica.
 c) Equivale a um ecossistema, restrito à dimensão biótica.
 d) Foi formulado para substituir o conceito de paisagem na Geografia.
 e) Aplica-se exclusivamente a ambientes urbanos.
 
-**6.** Na hierarquia escalar proposta por Bertrand, a sequência **decrescente** correta é:
+**6.** Em *O lugar do olhar* (2013), Paulo César da Costa Gomes sustenta que a paisagem não é neutra, pois depende da posição, da composição e da exposição dos elementos diante do observador. Sobre essa tese, é correto afirmar que:
 
-a) Geótopo → geofácies → geossistema → região natural → domínio → zona.
-b) Zona → domínio → região natural → **geossistema → geofácies → geótopo**.
-c) Geossistema → zona → domínio → região natural → geofácies → geótopo.
-d) Domínio → zona → geossistema → região natural → geótopo → geofácies.
-e) Região natural → zona → domínio → geofácies → geótopo → geossistema.
+a) A paisagem equivale a um dado puramente objetivo, independente do ponto de observação.
+b) A geografia da visibilidade restringe-se à descrição estética da cena.
+c) A paisagem é uma construção do olhar, historicamente situada, em que escolher o que mostrar e o que ocultar é, em si, um ato político.
+d) Posição, composição e exposição equivalem a parâmetros estritamente cartográficos, sem implicação social.
+e) A tese de Gomes nega a possibilidade de qualquer leitura científica da paisagem.
 
-**7.** A contribuição brasileira de **Aziz Ab'Sáber** ao estudo da paisagem está centrada:
+**7.** A contribuição brasileira de Aziz Ab'Sáber ao estudo da paisagem está centrada:
 
-a) Na proposição dos **domínios morfoclimáticos e fitogeográficos** do Brasil, articulando geomorfologia, clima, solos e vegetação.
+a) Na proposição dos domínios morfoclimáticos e fitogeográficos do Brasil, articulando geomorfologia, clima, solos e vegetação.
 b) Na introdução da fotografia aérea no país.
 c) No método FRAGSTATS de cálculo de métricas de paisagem.
 d) Na criação da Convenção Europeia da Paisagem.
 e) Na definição da paisagem como mero produto cultural.
 
-**8.** Para **Carlos Augusto de Figueiredo Monteiro**, a análise geográfica integrada da paisagem caracteriza-se por:
+**8.** Para Carlos Augusto de Figueiredo Monteiro, a análise geográfica integrada da paisagem caracteriza-se por:
 
 a) Restringir-se à descrição visual de cenários.
 b) Privilegiar a abordagem quantitativa anglo-saxã sobre qualquer leitura sistêmica.
-c) Articular o **geossistema** como instrumento de leitura sistêmica do ambiente, integrando natureza e sociedade na escala regional brasileira.
+c) Articular o geossistema como instrumento de leitura sistêmica do ambiente, integrando natureza e sociedade na escala regional brasileira.
 d) Negar a aplicabilidade do geossistema no Brasil.
 e) Substituir a paisagem pelo conceito de lugar.
 
-**9.** Em **Milton Santos**, o espaço geográfico é compreendido como:
+**9.** Em Milton Santos, o espaço geográfico é compreendido como:
 
 a) Mero substrato físico onde a sociedade se distribui.
 b) Sistema fechado de objetos naturais.
-c) **Sistema indissociável de objetos e de ações**, no qual as **rugosidades** expressam heranças de tempos pretéritos no presente.
+c) Sistema indissociável de objetos e de ações, no qual as rugosidades expressam heranças de tempos pretéritos no presente.
 d) Sinônimo restrito de território nacional.
 e) Categoria descartável diante do conceito de paisagem.
 
-**10.** Para **Roberto Lobato Corrêa**, **paisagem, espaço, território, lugar e região** são:
+**10.** Para Roberto Lobato Corrêa (1995), paisagem e espaço mantêm relação assimétrica, podendo ser corretamente caracterizada como:
 
-a) Conceitos equivalentes e intercambiáveis.
-b) **Categorias-chave da Geografia**, distintas mas complementares, cada uma iluminando uma dimensão do real.
-c) Categorias exclusivas da Geografia Física.
-d) Termos do senso comum sem operacionalidade científica.
-e) Conceitos importados da Ecologia, sem tradição geográfica.
+a) Paisagem e espaço são conceitos equivalentes e intercambiáveis.
+b) O espaço é processo social e histórico, enquanto a paisagem é a sua parte visível, um conjunto de formas materiais (campos, cercas, caminhos, casas, igrejas) resultante da ação transformadora do homem sobre a natureza.
+c) A paisagem é categoria exclusiva da Geografia Física, sem articulação com o espaço social.
+d) O espaço é a dimensão visível e a paisagem é a dimensão invisível das relações de produção.
+e) Ambos são termos do senso comum, sem operacionalidade científica na Geografia Crítica.
+
+**11.** Na hierarquia escalar proposta por Bertrand (1968) para o estudo da paisagem, a sequência decrescente correta é:
+
+a) Geótopo → geofácies → geossistema → região natural → domínio → zona.
+b) Zona → domínio → região natural → geossistema → geofácies → geótopo.
+c) Geossistema → zona → domínio → região natural → geofácies → geótopo.
+d) Domínio → zona → geossistema → região natural → geótopo → geofácies.
+e) Região natural → zona → domínio → geofácies → geótopo → geossistema.
 
 ---
 
-## Parte II — Complementar (3,0 pts · 0,6 cada)
+## Parte II — (4,5 pts · 0,5 cada)
 
 **Complete as lacunas** com o termo correto.
 
-**11.** Carl Troll (1939) cunhou o termo \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ ao combinar a **fotografia aérea** com a **ecologia**, dando origem ao campo hoje conhecido como Ecologia da Paisagem.
+**12.** Para Aziz Ab'Sáber (2003), a paisagem é sempre uma \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, entendida simultaneamente como produto de processos fisiográficos e biológicos antigos, remodelados por processos recentes, e como patrimônio coletivo dos povos que historicamente a receberam como território de atuação.
 
-**12.** Em Bertrand (1971), a paisagem resulta da combinação dinâmica de três conjuntos: o **potencial ecológico**, a **exploração biológica** e a \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.
+**13.** Em Bertrand (1971), a paisagem resulta da combinação dinâmica de três conjuntos: o potencial ecológico, a exploração biológica e a \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.
 
-**13.** Segundo **Paulo César da Costa Gomes**, a paisagem articula-se à dimensão visível do espaço público e à \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ da vida social, sendo lida como **cena** carregada de significados culturais e políticos.
+**14.** Segundo Paulo César da Costa Gomes, a paisagem articula-se à dimensão visível do espaço público e à \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ da vida social, sendo lida como cena carregada de significados culturais e políticos.
 
-**14.** No Brasil, a **Chancela da Paisagem Cultural Brasileira**, instituída em 2009, é um instrumento do \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ (sigla do órgão federal de patrimônio).
+**15.** No Brasil, a Chancela da Paisagem Cultural Brasileira, instituída em 2009, é um instrumento do \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ (sigla do órgão federal de patrimônio).
 
-**15.** A trilogia **GTP**, proposta por Bertrand em revisão posterior do geossistema, articula três entradas analíticas complementares: **Geossistema**, \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ e **Paisagem**.
+**16.** Para Ruy Moreira, a paisagem é \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, entendida como expressão visível do conteúdo socioespacial; quando o conteúdo se transforma, ela tende a acompanhá-lo mais lentamente, gerando defasagem entre os ritmos de mudança.
+
+**17.** _____________________________________________________________________ é o conceito geográfico que designa o espaço apropriado e delimitado por relações de poder (político, econômico, cultural ou simbólico), implicando controle, fronteiras e identidade de grupo ou Estado.
 
 ---
-
-## Parte III — Dissertativa (2,0 pts)
-
-**16.** Em até **25 linhas**, **discuta** a seguinte afirmação:
-
-> *"A análise da paisagem que ignora a percepção perde metade do fenômeno."*
-
-Sua resposta deve, obrigatoriamente:
-
-(a) articular pelo menos **dois autores** discutidos na disciplina (p. ex. Tuan, Berque, Cosgrove, Bertrand, Milton Santos, Ab'Sáber, Monteiro, Lobato Corrêa); (b) diferenciar a leitura **objetiva** (estrutura, métricas, mapas) da leitura **subjetiva** (percepção, valores, afeto) da paisagem; e (c) apresentar **um exemplo concreto**, preferencialmente baiano ou nordestino, em que a integração das duas leituras seja necessária para o diagnóstico territorial.
-
-**Critérios de correção:** domínio conceitual e precisão terminológica (0,8); articulação entre autores e abordagens (0,7); pertinência e qualidade do exemplo (0,5).
-
-\vspace{2cm}
 
 ::: {.content-visible when-format="html"}
 ---
-*Folha de respostas / espaço para a dissertativa segue em página própria na versão impressa.*
+*Folha de respostas segue em página própria na versão impressa.*
 :::
-
-\newpage
 
 **Folha de respostas — Múltipla escolha**
 
-| Questão | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
-|:-------:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:--:|
-| Resposta |   |   |   |   |   |   |   |   |   |    |
-
-\vspace{1cm}
-
-**Espaço para a dissertativa (questão 16)**
-
-\vspace{18cm}
+| Questão | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
+|:-------:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:--:|:--:|
+| Resposta |   |   |   |   |   |   |   |   |   |    |    |
