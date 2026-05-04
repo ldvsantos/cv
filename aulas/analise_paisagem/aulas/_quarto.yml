@@ -6,8 +6,8 @@ format:
     css: ../../assets/custom.css
     width: 1280
     height: 720
-    transition: slide
-    background-transition: fade
+    transition: none
+    background-transition: none
     preview-links: auto
     slide-number: true
     controls: true
@@ -15,11 +15,14 @@ format:
     touch: true
     navigation-mode: linear
     embed-resources: true
-    auto-stretch: true
+    auto-stretch: false
     min-scale: 0.2
     max-scale: 2.0
     margin: 0.04
     scrollable: true
+    view-distance: 1
+    mobile-view-distance: 1
+    menu: false
     logo: ../../assets/logo-uefs.webp
     footer: "DCHF-UEFS | Análise da Paisagem | Prof. Diego Vidal"
     include-after-body:
