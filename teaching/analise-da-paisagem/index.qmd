@@ -565,7 +565,7 @@ Envie pelo [e-mail do professor](mailto:ldvsantos@uefs.br) com o assunto "Sugest
 
 ### {{< fa video >}} Videoaulas
 
-Videoaulas e materiais audiovisuais selecionados para acompanhar os blocos conceituais da disciplina. A sequência abaixo articula paisagem, espaço geográfico, domínios morfoclimáticos, geossistema, pensamento sistêmico e leitura integrada da paisagem.
+Videoaulas e materiais audiovisuais selecionados para acompanhar os blocos conceituais e operacionais da disciplina. A sequência abaixo articula paisagem, espaço geográfico, domínios morfoclimáticos, geossistema, pensamento sistêmico, ecologia da paisagem, cartografia, matriz de evidências e sensoriamento remoto aplicado.
 
 #### Base conceitual
 
@@ -755,12 +755,491 @@ Videoaulas e materiais audiovisuais selecionados para acompanhar os blocos conce
 </div>
 ```
 
+#### Aula 3.1 — Ecologia da paisagem: matriz, mancha e corredor
+
+```{=html}
+<div class="video-grid">
+
+<a class="video-card" href="https://www.youtube.com/watch?v=xt87xzU7RQ4" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/xt87xzU7RQ4/hqdefault.jpg" alt="01 - EP - Introdução Ecologia de Paisagens">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Introdução à ecologia de paisagens</div>
+<p>Abre o bloco com paisagem como mosaico heterogêneo, articulando matriz, manchas, corredores e processos ecológicos.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=kIuqoLaF_yI" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/kIuqoLaF_yI/hqdefault.jpg" alt="Ecologia da Paisagem: Fragmentação, Conectividade e outros processos da paisagem">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Fragmentação, conectividade e processos</div>
+<p>Material central para ligar matriz, manchas e corredores aos processos ecológicos e à leitura estrutural da paisagem.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=HaWjvenMRD8" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/HaWjvenMRD8/hqdefault.jpg" alt="Fragmentação florestal, efeito de borda e corredores ecológicos">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Fragmentação, borda e corredores</div>
+<p>Explica perda de habitat, aumento de borda, isolamento e função dos corredores ecológicos.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=qbUUm1jkQCE" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/qbUUm1jkQCE/hqdefault.jpg" alt="Módulo 2 - Aula 2 - Fragmentação e Conectividade">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Fragmentação e conectividade</div>
+<p>Complementa a discussão sobre estrutura da paisagem, isolamento, conectividade ecológica e conservação.</p>
+</div>
+</a>
+
+</div>
+```
+
+#### Aula 3.2 — Escala, padrão e processo na dinâmica da paisagem
+
+```{=html}
+<div class="video-grid">
+
+<a class="video-card" href="https://www.youtube.com/watch?v=2kvFTq8fSjk" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/2kvFTq8fSjk/hqdefault.jpg" alt="ESCALA CARTOGRÁFICA - GEOBRASIL">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Escala cartográfica</div>
+<p>Introduz escala numérica, dimensão real, dimensão cartográfica e leitura espacial básica.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=FilxJe3ah1E" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/FilxJe3ah1E/hqdefault.jpg" alt="ECOLOGIA DA PAISAGEM: O QUE É (Parte 1)">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">O que é ecologia da paisagem</div>
+<p>Reforça a paisagem como unidade espacial antes da discussão sobre escala de análise.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=XBAbSWkQTs8" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/XBAbSWkQTs8/hqdefault.jpg" alt="07 EP Métricas de Paisagem">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Métricas de paisagem</div>
+<p>Mostra como padrões espaciais podem ser quantificados e relacionados a processos ecológicos.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=G_dAvdLPseM" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/G_dAvdLPseM/hqdefault.jpg" alt="Landscape Ecology in QGIS with the LecoS Plugin">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Ecologia da paisagem no QGIS</div>
+<p>Apoio operacional para demonstrar métricas de paisagem em SIG com o plugin LecoS.</p>
+</div>
+</a>
+
+</div>
+```
+
+#### Aula 4.1 — Fluxos, fragmentação, resiliência e vulnerabilidade
+
+```{=html}
+<div class="video-grid">
+
+<a class="video-card" href="https://www.youtube.com/watch?v=kIuqoLaF_yI" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/kIuqoLaF_yI/hqdefault.jpg" alt="Ecologia da Paisagem: Fragmentação, Conectividade e outros processos da paisagem">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Fragmentação e processos da paisagem</div>
+<p>Articula fragmentação, conectividade, fluxos ecológicos e processos espaciais.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=SNyavXj5syw" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/SNyavXj5syw/hqdefault.jpg" alt="O que é Vulnerabilidade?">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Vulnerabilidade ambiental</div>
+<p>Introduz vulnerabilidade, suscetibilidade e exposição como ponte para a leitura socioambiental.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=RXQirgtxTPo" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/RXQirgtxTPo/hqdefault.jpg" alt="Caatinga - Brasil Escola">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Caatinga e semiárido</div>
+<p>Contextualiza características ambientais da Caatinga e problemas associados à degradação no semiárido.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=qNdfAZKfaK4" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/qNdfAZKfaK4/hqdefault.jpg" alt="Desertificação - Brasil Escola">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Desertificação</div>
+<p>Apoio para discutir degradação de terras secas, limiares e vulnerabilidade socioambiental.</p>
+</div>
+</a>
+
+</div>
+```
+
+#### Aula 4.2 — Conectividade funcional, corredores ecológicos e Graphab
+
+```{=html}
+<div class="video-grid">
+
+<a class="video-card" href="https://www.youtube.com/watch?v=FiC0GQdK5dQ" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/FiC0GQdK5dQ/hqdefault.jpg" alt="Aula EP 08 01 Conectividade">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Conectividade na paisagem</div>
+<p>Introduz conectividade estrutural e funcional, conectividade espaço-temporal e dinâmica da paisagem.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=qbUUm1jkQCE" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/qbUUm1jkQCE/hqdefault.jpg" alt="Módulo 2 - Aula 2 - Fragmentação e Conectividade">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Fragmentação e conectividade</div>
+<p>Base teórica para compreender por que corredores ecológicos e áreas nucleares importam no planejamento.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/playlist?list=PL1x_JPbKGmcw1pMo0OOTr4Y8D4rsr9PRY" target="_blank">
+<div class="video-thumb" style="display:flex; align-items:center; justify-content:center; background:#293241;">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Modelagem de corredores ecológicos</div>
+<p>Playlist de apoio para aprofundar planejamento de corredores e modelagem da conectividade.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=XBAbSWkQTs8" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/XBAbSWkQTs8/hqdefault.jpg" alt="07 EP Métricas de Paisagem">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Métricas de conectividade</div>
+<p>Prepara a leitura de métricas que subsidiam priorização de manchas, corredores e restauração.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/results?search_query=Graphab+tutorial+landscape+connectivity" target="_blank">
+<div class="video-thumb" style="display:flex; align-items:center; justify-content:center; background:#334155;">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Graphab — busca complementar</div>
+<p>Busca operacional para tutoriais de projeto, grafos, custo de deslocamento, IIC, PC e dPC.</p>
+</div>
+</a>
+
+</div>
+```
+
+#### Aula 4.3 — Cartografia temática e leitura integrada da paisagem
+
+```{=html}
+<div class="video-grid">
+
+<a class="video-card" href="https://www.youtube.com/watch?v=EfOBKW7pTMM" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/EfOBKW7pTMM/hqdefault.jpg" alt="GEOBEGA - Cartografia Temática: As Variáveis Visuais dos Mapas">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Cartografia temática e variáveis visuais</div>
+<p>Diferencia mapa de referência, mapa temático e variáveis visuais na representação da paisagem.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=wjVr76GArbs" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/wjVr76GArbs/hqdefault.jpg" alt="Como elaborar mapa hipsométrico com relevo sombreado no QGIS">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Hipsometria e relevo sombreado</div>
+<p>Demonstra geração de mapa hipsométrico e relevo sombreado no QGIS.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=BTiFbdWd8lU" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/BTiFbdWd8lU/hqdefault.jpg" alt="Tutorial de utilização dos dados de infraestrutura e uso da terra do MapBiomas">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">MapBiomas — uso e cobertura</div>
+<p>Apresenta o MapBiomas como fonte pública para dados de uso e cobertura da terra.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=tocT-MB145A" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/tocT-MB145A/hqdefault.jpg" alt="Aquisição de dados de uso e cobertura da Terra do MapBiomas através do QGIS">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">MapBiomas no QGIS</div>
+<p>Apoio operacional para baixar e manipular dados de uso e cobertura da terra no QGIS.</p>
+</div>
+</a>
+
+</div>
+```
+
+#### Aula 5.1 — Delimitação e caracterização da área de estudo
+
+```{=html}
+<div class="video-grid">
+
+<a class="video-card" href="https://www.youtube.com/watch?v=94CyB2huui4" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/94CyB2huui4/hqdefault.jpg" alt="Delimitando a Área de Estudo">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Delimitação da área de estudo</div>
+<p>Introduz critérios práticos para definir recorte espacial, problema, escala e disponibilidade de dados.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=KnsxvFajV6g" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/KnsxvFajV6g/hqdefault.jpg" alt="MAPA de Localização no QGIS (GUIA COMPLETO)">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Mapa de localização no QGIS</div>
+<p>Tutorial central para produzir mapa de localização da área de estudo com elementos cartográficos básicos.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=cZ-ET035ltk" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/cZ-ET035ltk/hqdefault.jpg" alt="Lesson 52 - Buffer in QGIS">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Buffer no QGIS</div>
+<p>Demonstra criação de zonas de influência e áreas de entorno para análise espacial.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=yfTvxVCRkmE" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/yfTvxVCRkmE/hqdefault.jpg" alt="Aula 53 - Recortar no QGIS">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Recorte de camadas</div>
+<p>Mostra como recortar dados espaciais ao limite da área de estudo.</p>
+</div>
+</a>
+
+</div>
+```
+
+#### Aula 5.2 — Interpretação visual da paisagem
+
+```{=html}
+<div class="video-grid">
+
+<a class="video-card" href="https://www.youtube.com/watch?v=RcExqF8QV5o" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/RcExqF8QV5o/hqdefault.jpg" alt="Sensoriamento Remoto e Geoprocessamento: Como interpretar imagens">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Interpretação visual de imagens</div>
+<p>Introduz interpretação visual de imagens orbitais em contexto de geoprocessamento.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=We-326YSYTY" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/We-326YSYTY/hqdefault.jpg" alt="Visual Interpretation of Images (Photointerpretation)">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Fotointerpretação</div>
+<p>Apoio conceitual para tonalidade, cor, textura, forma, sombra, padrão e contexto.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=k4qSgbacRVw" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/k4qSgbacRVw/hqdefault.jpg" alt="Elementos e Fotointerpretação">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Elementos de fotointerpretação</div>
+<p>Ajuda a construir chaves de interpretação visual de paisagens.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=unwApAVQ67s" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/unwApAVQ67s/hqdefault.jpg" alt="Imagens de satélite em tempo real (INPE / DSAT)">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Imagens de satélite recentes</div>
+<p>Apresenta obtenção e visualização de imagens de satélite recentes para leitura da paisagem.</p>
+</div>
+</a>
+
+</div>
+```
+
+#### Aula 6.1 — Matriz de evidências e síntese descritivo-interpretativa
+
+```{=html}
+<div class="video-grid">
+
+<a class="video-card" href="https://www.youtube.com/watch?v=KmCbf0oExdE" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/KmCbf0oExdE/hqdefault.jpg" alt="COMO FAZER UM RELATÓRIO TÉCNICO">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Relatório técnico</div>
+<p>Apoio para estruturar escrita técnica e organizar evidências em síntese descritivo-interpretativa.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=nVhidiVD9hg" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/nVhidiVD9hg/hqdefault.jpg" alt="Gestão Ambiental: Escrita de projetos ambientais">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Escrita de projetos ambientais</div>
+<p>Ajuda a passar do diagnóstico ambiental para proposições técnicas coerentes.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=-c6zPZ4pIuc" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/-c6zPZ4pIuc/hqdefault.jpg" alt="Avaliação socioambiental dos projetos">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Avaliação socioambiental</div>
+<p>Complementa a discussão sobre organização de evidências, avaliação e implicações socioambientais.</p>
+</div>
+</a>
+
+</div>
+```
+
+#### Aula 7.1 — Sensoriamento remoto aplicado I: fundamentos operacionais
+
+```{=html}
+<div class="video-grid">
+
+<a class="video-card" href="https://www.youtube.com/watch?v=RcExqF8QV5o" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/RcExqF8QV5o/hqdefault.jpg" alt="Sensoriamento Remoto e Geoprocessamento: Como interpretar imagens">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Fundamentos de sensoriamento remoto</div>
+<p>Retoma imagem, sensor, alvo, resposta espectral e interpretação visual.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=unwApAVQ67s" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/unwApAVQ67s/hqdefault.jpg" alt="Imagens de satélite em tempo real (INPE / DSAT)">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Imagens de satélite em tempo real</div>
+<p>Apresenta visualização de imagens recentes e aproxima o bloco operacional das bases públicas.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=Tv27SXgtAe4" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/Tv27SXgtAe4/hqdefault.jpg" alt="Como criar um mapa de uso e cobertura do solo utilizando o QGIS">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">Classificação e cobertura do solo</div>
+<p>Introduz a passagem da imagem orbital para mapa temático de uso e cobertura.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=j2B9XzYKVFw" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/j2B9XzYKVFw/hqdefault.jpg" alt="Primeiros passos na plataforma do MapBiomas">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">MapBiomas — primeiros passos</div>
+<p>Apresenta plataforma pública para análise de uso e cobertura da terra.</p>
+</div>
+</a>
+
+<a class="video-card" href="https://www.youtube.com/watch?v=Q4ah_K15Ltg" target="_blank">
+<div class="video-thumb">
+<img src="https://img.youtube.com/vi/Q4ah_K15Ltg/hqdefault.jpg" alt="Visualizar dados de uso e cobertura da terra do MapBiomas com plugin no QGIS">
+<span class="play-icon"><i class="fa-solid fa-circle-play"></i></span>
+</div>
+<div class="video-info">
+<div class="card-title">MapBiomas no QGIS</div>
+<p>Apoio operacional para integrar dados de uso e cobertura da terra ao QGIS.</p>
+</div>
+</a>
+
+</div>
+```
+
 ::: {.callout-tip collapse="true" icon=false}
 ## {{< fa route >}} Sequência recomendada
 
 Para a **Aula 2.2**, comece por Ab'Sáber e domínios morfoclimáticos, avance para geossistemas e finalize com análise geossistêmica da paisagem.
 
 Para a **Aula 2.3**, assista primeiro à Teoria Geral dos Sistemas, depois retome geossistemas, análise geossistêmica, ecodinâmica e DPSIR.
+
+Para as **Aulas 3.1 a 7.1**, use a trilha enxuta publicada acima: primeiro fundamentos de ecologia da paisagem e escala, depois fluxos/conectividade, em seguida cartografia, delimitação e interpretação visual, e por fim matriz de evidências e sensoriamento remoto aplicado.
 :::
 
 ### {{< fa headphones >}} Audioaulas
