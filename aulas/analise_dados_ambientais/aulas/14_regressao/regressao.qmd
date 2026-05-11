@@ -82,14 +82,14 @@ Diferentemente da correlação, a regressão tem uma **direcionalidade**: assume
 ```{mermaid}
 %%| fig-width: 10
 flowchart TD
-    A["Tipo de\nvariável dependente?"]:::root --> B{"VD"}:::node
+    A["Tipo de<br/>variável dependente?"]:::root --> B{"VD"}:::node
     B --> |"Contínua"| C{"Quantas VIs?"}:::node
-    B --> |"Dicotômica\n(0/1)"| D["Regressão\nLogística Binária"]:::result
-    B --> |"Politômica\nnominal"| E["Regressão\nMultinomial"]:::result
-    B --> |"Contagem"| F["Regressão\nde Poisson"]:::leaf
+    B --> |"Dicotômica<br/>(0/1)"| D["Regressão<br/>Logística Binária"]:::result
+    B --> |"Politômica<br/>nominal"| E["Regressão<br/>Multinomial"]:::result
+    B --> |"Contagem"| F["Regressão<br/>de Poisson"]:::leaf
 
-    C --> |"1 VI"| G["Regressão Linear\nSimples"]:::leaf
-    C --> |"≥ 2 VIs"| H["Regressão Linear\nMúltipla"]:::result
+    C --> |"1 VI"| G["Regressão Linear<br/>Simples"]:::leaf
+    C --> |"≥ 2 VIs"| H["Regressão Linear<br/>Múltipla"]:::result
 
     classDef root fill:#2135A6,color:#fff,font-weight:bold,stroke:#27368C
     classDef node fill:#C5CEE8,color:#0D0D0D,stroke:#586BA6
@@ -692,16 +692,16 @@ Pressupostos análogos à logística binária + **independência das alternativa
 flowchart LR
     A["Natureza da VD?"]:::root --> B["Contínua"]:::node
     A --> C["Dicotômica"]:::node
-    A --> D["Politômica\nnominal"]:::node
+    A --> D["Politômica<br/>nominal"]:::node
     A --> E["Contagem"]:::node
 
     B --> F{"Quantas VIs?"}:::node
-    F --> |"1"| G["Regressão Linear\nSimples"]:::leaf
-    F --> |"≥ 2"| H["Regressão Linear\nMúltipla"]:::result
+    F --> |"1"| G["Regressão Linear<br/>Simples"]:::leaf
+    F --> |"≥ 2"| H["Regressão Linear<br/>Múltipla"]:::result
 
-    C --> I["Regressão\nLogística Binária"]:::result
-    D --> J["Regressão\nMultinomial"]:::result
-    E --> K["Regressão\nde Poisson"]:::leaf
+    C --> I["Regressão<br/>Logística Binária"]:::result
+    D --> J["Regressão<br/>Multinomial"]:::result
+    E --> K["Regressão<br/>de Poisson"]:::leaf
 
     classDef root fill:#2135A6,color:#fff,font-weight:bold,stroke:#27368C
     classDef node fill:#C5CEE8,color:#0D0D0D,stroke:#586BA6

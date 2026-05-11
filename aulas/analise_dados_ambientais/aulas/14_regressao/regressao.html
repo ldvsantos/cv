@@ -3953,14 +3953,14 @@ Luiz Diego Vidal Santos
 <p></p><figure class><p></p>
 <div>
 <pre class="mermaid mermaid-js">flowchart TD
-    A[&quot;Tipo de\nvariável dependente?&quot;]:::root --&gt; B{&quot;VD&quot;}:::node
+    A[&quot;Tipo de&lt;br/&gt;variável dependente?&quot;]:::root --&gt; B{&quot;VD&quot;}:::node
     B --&gt; |&quot;Contínua&quot;| C{&quot;Quantas VIs?&quot;}:::node
-    B --&gt; |&quot;Dicotômica\n(0/1)&quot;| D[&quot;Regressão\nLogística Binária&quot;]:::result
-    B --&gt; |&quot;Politômica\nnominal&quot;| E[&quot;Regressão\nMultinomial&quot;]:::result
-    B --&gt; |&quot;Contagem&quot;| F[&quot;Regressão\nde Poisson&quot;]:::leaf
+    B --&gt; |&quot;Dicotômica&lt;br/&gt;(0/1)&quot;| D[&quot;Regressão&lt;br/&gt;Logística Binária&quot;]:::result
+    B --&gt; |&quot;Politômica&lt;br/&gt;nominal&quot;| E[&quot;Regressão&lt;br/&gt;Multinomial&quot;]:::result
+    B --&gt; |&quot;Contagem&quot;| F[&quot;Regressão&lt;br/&gt;de Poisson&quot;]:::leaf
 
-    C --&gt; |&quot;1 VI&quot;| G[&quot;Regressão Linear\nSimples&quot;]:::leaf
-    C --&gt; |&quot;≥ 2 VIs&quot;| H[&quot;Regressão Linear\nMúltipla&quot;]:::result
+    C --&gt; |&quot;1 VI&quot;| G[&quot;Regressão Linear&lt;br/&gt;Simples&quot;]:::leaf
+    C --&gt; |&quot;≥ 2 VIs&quot;| H[&quot;Regressão Linear&lt;br/&gt;Múltipla&quot;]:::result
 
     classDef root fill:#2135A6,color:#fff,font-weight:bold,stroke:#27368C
     classDef node fill:#C5CEE8,color:#0D0D0D,stroke:#586BA6
@@ -4665,16 +4665,16 @@ Luiz Diego Vidal Santos
 <pre class="mermaid mermaid-js">flowchart LR
     A[&quot;Natureza da VD?&quot;]:::root --&gt; B[&quot;Contínua&quot;]:::node
     A --&gt; C[&quot;Dicotômica&quot;]:::node
-    A --&gt; D[&quot;Politômica\nnominal&quot;]:::node
+    A --&gt; D[&quot;Politômica&lt;br/&gt;nominal&quot;]:::node
     A --&gt; E[&quot;Contagem&quot;]:::node
 
     B --&gt; F{&quot;Quantas VIs?&quot;}:::node
-    F --&gt; |&quot;1&quot;| G[&quot;Regressão Linear\nSimples&quot;]:::leaf
-    F --&gt; |&quot;≥ 2&quot;| H[&quot;Regressão Linear\nMúltipla&quot;]:::result
+    F --&gt; |&quot;1&quot;| G[&quot;Regressão Linear&lt;br/&gt;Simples&quot;]:::leaf
+    F --&gt; |&quot;≥ 2&quot;| H[&quot;Regressão Linear&lt;br/&gt;Múltipla&quot;]:::result
 
-    C --&gt; I[&quot;Regressão\nLogística Binária&quot;]:::result
-    D --&gt; J[&quot;Regressão\nMultinomial&quot;]:::result
-    E --&gt; K[&quot;Regressão\nde Poisson&quot;]:::leaf
+    C --&gt; I[&quot;Regressão&lt;br/&gt;Logística Binária&quot;]:::result
+    D --&gt; J[&quot;Regressão&lt;br/&gt;Multinomial&quot;]:::result
+    E --&gt; K[&quot;Regressão&lt;br/&gt;de Poisson&quot;]:::leaf
 
     classDef root fill:#2135A6,color:#fff,font-weight:bold,stroke:#27368C
     classDef node fill:#C5CEE8,color:#0D0D0D,stroke:#586BA6
