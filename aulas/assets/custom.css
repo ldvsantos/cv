@@ -275,6 +275,25 @@ section.title-slide .date,
   overflow: visible !important;
 }
 
+/* ---- Figura compacta para slides em 2 colunas (limita altura) ---- */
+.reveal .slides figure.fig-compact,
+.reveal .slides .fig-compact {
+  margin: 0 auto !important;
+  text-align: center;
+}
+.reveal .slides .fig-compact img,
+.reveal .slides figure.fig-compact > img,
+.reveal .slides img.fig-compact {
+  max-height: 260px !important;
+  width: auto !important;
+  height: auto !important;
+  display: inline-block !important;
+}
+.reveal .slides figure.fig-compact figcaption {
+  font-size: 0.55em;
+  margin-top: 0.2em;
+}
+
 /* ---- Scroll Container ---- */
 .diagram-scroll {
   max-height: 600px;

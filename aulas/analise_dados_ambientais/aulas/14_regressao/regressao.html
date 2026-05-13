@@ -3952,20 +3952,30 @@ Luiz Diego Vidal Santos
 <div>
 <p></p><figure class><p></p>
 <div>
-<pre class="mermaid mermaid-js">flowchart TD
+<pre class="mermaid mermaid-js">%%{init: {&quot;theme&quot;: &quot;base&quot;, &quot;themeVariables&quot;: {&quot;fontFamily&quot;: &quot;Arial, sans-serif&quot;, &quot;primaryTextColor&quot;: &quot;#111827&quot;, &quot;lineColor&quot;: &quot;#111827&quot;, &quot;edgeLabelBackground&quot;: &quot;#FFFFFF&quot;}}}%%
+flowchart TD
     A[&quot;Tipo de&lt;br/&gt;variável dependente?&quot;]:::root --&gt; B{&quot;VD&quot;}:::node
-    B --&gt; |&quot;Contínua&quot;| C{&quot;Quantas VIs?&quot;}:::node
-    B --&gt; |&quot;Dicotômica&lt;br/&gt;(0/1)&quot;| D[&quot;Regressão&lt;br/&gt;Logística Binária&quot;]:::result
-    B --&gt; |&quot;Politômica&lt;br/&gt;nominal&quot;| E[&quot;Regressão&lt;br/&gt;Multinomial&quot;]:::result
-    B --&gt; |&quot;Contagem&quot;| F[&quot;Regressão&lt;br/&gt;de Poisson&quot;]:::leaf
+  B --&gt; B1[&quot;Contínua&quot;]:::option
+  B --&gt; B2[&quot;Dicotômica&lt;br/&gt;(0/1)&quot;]:::option
+  B --&gt; B3[&quot;Politômica&lt;br/&gt;nominal&quot;]:::option
+  B --&gt; B4[&quot;Contagem&quot;]:::option
 
-    C --&gt; |&quot;1 VI&quot;| G[&quot;Regressão Linear&lt;br/&gt;Simples&quot;]:::leaf
-    C --&gt; |&quot;≥ 2 VIs&quot;| H[&quot;Regressão Linear&lt;br/&gt;Múltipla&quot;]:::result
+  B1 --&gt; C{&quot;Quantas VIs?&quot;}:::node
+  B2 --&gt; D[&quot;Regressão&lt;br/&gt;Logística Binária&quot;]:::result
+  B3 --&gt; E[&quot;Regressão&lt;br/&gt;Multinomial&quot;]:::result
+  B4 --&gt; F[&quot;Regressão&lt;br/&gt;de Poisson&quot;]:::leaf
 
-    classDef root fill:#2135A6,color:#fff,font-weight:bold,stroke:#27368C
-    classDef node fill:#C5CEE8,color:#0D0D0D,stroke:#586BA6
-    classDef leaf fill:#586BA6,color:#fff,stroke:#27368C
-    classDef result fill:#27368C,color:#fff,font-weight:bold,stroke:#2135A6
+  C --&gt; C1[&quot;1 VI&quot;]:::option
+  C --&gt; C2[&quot;≥ 2 VIs&quot;]:::option
+  C1 --&gt; G[&quot;Regressão Linear&lt;br/&gt;Simples&quot;]:::leaf
+  C2 --&gt; H[&quot;Regressão Linear&lt;br/&gt;Múltipla&quot;]:::result
+
+    classDef root fill:#111827,color:#FFFFFF,font-weight:bold,stroke:#000000,stroke-width:2px
+    classDef node fill:#FFFFFF,color:#111827,font-weight:bold,stroke:#111827,stroke-width:2px
+  classDef option fill:#FEF3C7,color:#111827,font-weight:bold,stroke:#92400E,stroke-width:2px
+    classDef leaf fill:#E0F2FE,color:#0F172A,font-weight:bold,stroke:#0369A1,stroke-width:2px
+    classDef result fill:#1D4ED8,color:#FFFFFF,font-weight:bold,stroke:#111827,stroke-width:2px
+  linkStyle default stroke:#111827,stroke-width:2px,color:#111827
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -4662,11 +4672,14 @@ Luiz Diego Vidal Santos
 <div>
 <p></p><figure class><p></p>
 <div>
-<pre class="mermaid mermaid-js">flowchart LR
+<pre class="mermaid mermaid-js">%%{init: {&quot;theme&quot;: &quot;base&quot;, &quot;themeVariables&quot;: {&quot;fontFamily&quot;: &quot;Arial, sans-serif&quot;, &quot;primaryTextColor&quot;: &quot;#111827&quot;, &quot;lineColor&quot;: &quot;#111827&quot;, &quot;edgeLabelBackground&quot;: &quot;#FFFFFF&quot;}}}%%
+flowchart LR
     A[&quot;Natureza da VD?&quot;]:::root --&gt; B[&quot;Contínua&quot;]:::node
     A --&gt; C[&quot;Dicotômica&quot;]:::node
     A --&gt; D[&quot;Politômica&lt;br/&gt;nominal&quot;]:::node
     A --&gt; E[&quot;Contagem&quot;]:::node
+
+  class B,C,D,E option
 
     B --&gt; F{&quot;Quantas VIs?&quot;}:::node
     F --&gt; |&quot;1&quot;| G[&quot;Regressão Linear&lt;br/&gt;Simples&quot;]:::leaf
@@ -4676,10 +4689,12 @@ Luiz Diego Vidal Santos
     D --&gt; J[&quot;Regressão&lt;br/&gt;Multinomial&quot;]:::result
     E --&gt; K[&quot;Regressão&lt;br/&gt;de Poisson&quot;]:::leaf
 
-    classDef root fill:#2135A6,color:#fff,font-weight:bold,stroke:#27368C
-    classDef node fill:#C5CEE8,color:#0D0D0D,stroke:#586BA6
-    classDef leaf fill:#586BA6,color:#fff,stroke:#27368C
-    classDef result fill:#27368C,color:#fff,font-weight:bold,stroke:#2135A6
+    classDef root fill:#111827,color:#FFFFFF,font-weight:bold,stroke:#000000,stroke-width:2px
+    classDef node fill:#FFFFFF,color:#111827,font-weight:bold,stroke:#111827,stroke-width:2px
+    classDef option fill:#FEF3C7,color:#111827,font-weight:bold,stroke:#92400E,stroke-width:2px
+    classDef leaf fill:#E0F2FE,color:#0F172A,font-weight:bold,stroke:#0369A1,stroke-width:2px
+    classDef result fill:#1D4ED8,color:#FFFFFF,font-weight:bold,stroke:#111827,stroke-width:2px
+    linkStyle default stroke:#111827,stroke-width:2px,color:#111827
 </pre>
 </div>
 <p></p></figure><p></p>

@@ -81,20 +81,30 @@ Diferentemente da correlação, a regressão tem uma **direcionalidade**: assume
 
 ```{mermaid}
 %%| fig-width: 10
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Arial, sans-serif", "primaryTextColor": "#111827", "lineColor": "#111827", "edgeLabelBackground": "#FFFFFF"}}}%%
 flowchart TD
     A["Tipo de<br/>variável dependente?"]:::root --> B{"VD"}:::node
-    B --> |"Contínua"| C{"Quantas VIs?"}:::node
-    B --> |"Dicotômica<br/>(0/1)"| D["Regressão<br/>Logística Binária"]:::result
-    B --> |"Politômica<br/>nominal"| E["Regressão<br/>Multinomial"]:::result
-    B --> |"Contagem"| F["Regressão<br/>de Poisson"]:::leaf
+  B --> B1["Contínua"]:::option
+  B --> B2["Dicotômica<br/>(0/1)"]:::option
+  B --> B3["Politômica<br/>nominal"]:::option
+  B --> B4["Contagem"]:::option
 
-    C --> |"1 VI"| G["Regressão Linear<br/>Simples"]:::leaf
-    C --> |"≥ 2 VIs"| H["Regressão Linear<br/>Múltipla"]:::result
+  B1 --> C{"Quantas VIs?"}:::node
+  B2 --> D["Regressão<br/>Logística Binária"]:::result
+  B3 --> E["Regressão<br/>Multinomial"]:::result
+  B4 --> F["Regressão<br/>de Poisson"]:::leaf
 
-    classDef root fill:#2135A6,color:#fff,font-weight:bold,stroke:#27368C
-    classDef node fill:#C5CEE8,color:#0D0D0D,stroke:#586BA6
-    classDef leaf fill:#586BA6,color:#fff,stroke:#27368C
-    classDef result fill:#27368C,color:#fff,font-weight:bold,stroke:#2135A6
+  C --> C1["1 VI"]:::option
+  C --> C2["≥ 2 VIs"]:::option
+  C1 --> G["Regressão Linear<br/>Simples"]:::leaf
+  C2 --> H["Regressão Linear<br/>Múltipla"]:::result
+
+    classDef root fill:#111827,color:#FFFFFF,font-weight:bold,stroke:#000000,stroke-width:2px
+    classDef node fill:#FFFFFF,color:#111827,font-weight:bold,stroke:#111827,stroke-width:2px
+  classDef option fill:#FEF3C7,color:#111827,font-weight:bold,stroke:#92400E,stroke-width:2px
+    classDef leaf fill:#E0F2FE,color:#0F172A,font-weight:bold,stroke:#0369A1,stroke-width:2px
+    classDef result fill:#1D4ED8,color:#FFFFFF,font-weight:bold,stroke:#111827,stroke-width:2px
+  linkStyle default stroke:#111827,stroke-width:2px,color:#111827
 ```
 
 ::: {.info-box}
@@ -689,11 +699,14 @@ Pressupostos análogos à logística binária + **independência das alternativa
 
 ```{mermaid}
 %%| fig-width: 10
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Arial, sans-serif", "primaryTextColor": "#111827", "lineColor": "#111827", "edgeLabelBackground": "#FFFFFF"}}}%%
 flowchart LR
     A["Natureza da VD?"]:::root --> B["Contínua"]:::node
     A --> C["Dicotômica"]:::node
     A --> D["Politômica<br/>nominal"]:::node
     A --> E["Contagem"]:::node
+
+  class B,C,D,E option
 
     B --> F{"Quantas VIs?"}:::node
     F --> |"1"| G["Regressão Linear<br/>Simples"]:::leaf
@@ -703,10 +716,12 @@ flowchart LR
     D --> J["Regressão<br/>Multinomial"]:::result
     E --> K["Regressão<br/>de Poisson"]:::leaf
 
-    classDef root fill:#2135A6,color:#fff,font-weight:bold,stroke:#27368C
-    classDef node fill:#C5CEE8,color:#0D0D0D,stroke:#586BA6
-    classDef leaf fill:#586BA6,color:#fff,stroke:#27368C
-    classDef result fill:#27368C,color:#fff,font-weight:bold,stroke:#2135A6
+    classDef root fill:#111827,color:#FFFFFF,font-weight:bold,stroke:#000000,stroke-width:2px
+    classDef node fill:#FFFFFF,color:#111827,font-weight:bold,stroke:#111827,stroke-width:2px
+    classDef option fill:#FEF3C7,color:#111827,font-weight:bold,stroke:#92400E,stroke-width:2px
+    classDef leaf fill:#E0F2FE,color:#0F172A,font-weight:bold,stroke:#0369A1,stroke-width:2px
+    classDef result fill:#1D4ED8,color:#FFFFFF,font-weight:bold,stroke:#111827,stroke-width:2px
+    linkStyle default stroke:#111827,stroke-width:2px,color:#111827
 ```
 
 ::: {.info-box}

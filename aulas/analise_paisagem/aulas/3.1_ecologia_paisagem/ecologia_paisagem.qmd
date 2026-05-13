@@ -28,13 +28,14 @@ execute:
 ::: {.column width="50%"}
 ### Tópicos
 
-- [1]{.circle} Discussão da leitura (Metzger, 2001)
-- [2]{.circle} Ecologia da paisagem: duas abordagens
+- [1]{.circle} Ecologia da paisagem: duas abordagens, hierarquia e crise da biodiversidade
+- [2]{.circle} A paisagem como objeto de estudo: definição, heterogeneidade e formas de representação
 - [3]{.circle} O modelo matriz-mancha-corredor
 - [4]{.circle} Tipos e atributos de manchas
 - [5]{.circle} Corredores: tipos e funções
 - [6]{.circle} Conectividade e implicações para diagnóstico
-- [7]{.circle} Atividade prática: identificação em mosaico
+- [7]{.circle} Discussão da leitura (Metzger, 2001) — *após a leitura*
+- [8]{.circle} Atividade prática: identificação em mosaico
 :::
 
 ::: {.column width="50%"}
@@ -46,60 +47,20 @@ Compreender os fundamentos da **Ecologia da Paisagem**, particularmente o modelo
 :::
 :::
 
-# [1  -  DISCUSSÃO DA LEITURA]{.section-header}
+# [1  -  ECOLOGIA DA PAISAGEM: DUAS ABORDAGENS]{.section-header}
 
-## Metzger (2001): pontos-chave {.smaller-text}
-
-::: {.columns}
-::: {.column width="50%"}
-### O que Metzger propõe?
-
-> A ecologia da paisagem é *"o estudo da estrutura, função e dinâmica de áreas heterogêneas compostas por ecossistemas interativos"*  -  adaptado de Forman & Godron (1986)
-
-**Duas abordagens:**
-
-| Abordagem | Ênfase | Origem |
-|-----------|--------|--------|
-| **Geográfica** | Relação sociedade-natureza; planejamento | Europa (Troll, Naveh) |
-| **Ecológica** | Padrão espacial e processos ecológicos | América do Norte (Forman, Turner) |
-
-: {.striped .hover}
-
-Metzger argumenta que **ambas** são necessárias e complementares.
-:::
-
-::: {.column width="50%"}
-::: {.highlight-box}
-**Questões para discussão
-**
-
-1. Metzger distingue **abordagem geográfica** e **ecológica**. Qual delas se aproxima mais do nosso objetivo na disciplina?
-
-2. O autor define paisagem como "mosaico heterogêneo". Essa definição é **suficiente** para trabalho?
-
-3. Quais são as **três dimensões** de análise que Metzger destaca? (estrutura, função, dinâmica)
-
-4. Como a ecologia da paisagem se diferencia da ecologia de ecossistemas e da biogeografia?
-
-5. O que significa dizer que a paisagem é o "nível de organização mais adequado para estudar processos ecológicos que dependem do arranjo espacial"?
-:::
-:::
-:::
-
-# [2  -  ECOLOGIA DA PAISAGEM: DUAS ABORDAGENS]{.section-header}
-
-## Abordagem geográfica vs. ecológica {.smaller-text}
+## Abordagem geográfica vs. ecológica {.smaller-text .scrollable}
 
 ::: {.columns}
 ::: {.column width="50%"}
 ### Abordagem geográfica
 
-- **Origem:** Europa (Carl Troll, Zev Naveh, Jean-Paul Amat)
-- **Foco:** relação sociedade-natureza, planejamento territorial
-- **Escala:** regional a local
-- **Conceito de paisagem:** totalidade que inclui dimensão humana, cultural e perceptiva
-- **Métodos:** cartografia de síntese, trabalho de campo, análise espacial, integração de componentes
-- **Aplicação:** zoneamento, gestão ambiental, conservação
+- **Origem:** Europa, anos 1930–40 (Carl **Troll**, 1939, Alemanha; depois Naveh, Amat)
+- **Contexto histórico:** difusão da fotografia aérea no período pré-2ª Guerra
+- **Foco:** relação sociedade-natureza, **paisagens culturais** — o lugar do ser humano
+- **Escala:** regional a local; visão **antropocêntrica**
+- **Métodos:** cartografia de síntese, trabalho de campo, integração de componentes
+- **Aplicação:** zoneamento, planejamento territorial, gestão ambiental
 
 ### Herança
 
@@ -108,19 +69,15 @@ Troll, Bertrand, Ab'Sáber, Monteiro → **geossistema** → análise integrada
 
 ::: {.column width="50%"}
 ::: {.info-box}
-**Abordagem ecológica
-**
+**Abordagem ecológica**
 
-- **Origem:** América do Norte (Forman, Turner, McGarigal)
+- **Origem:** EUA, anos 1970–80 (Forman, Turner, McGarigal)
+- **Contexto histórico:** resposta à **crise da biodiversidade** (perda de hábitat, fragmentação)
+- **Base teórica:** **biogeografia de ilhas** (MacArthur & Wilson, 1967) aplicada a fragmentos terrestres
 - **Foco:** efeitos do padrão espacial sobre processos ecológicos
 - **Escala:** paisagem (km² a centenas de km²)
-- **Conceito de paisagem:** mosaico espacial heterogêneo com padrões mensuráveis
-- **Métodos:** métricas de paisagem, SIG, modelagem espacial, sensoriamento remoto
-- **Aplicação:** conservação, fragmentação, conectividade, biogeografia
-
-### Herança
-
-Forman & Godron, MacArthur & Wilson → **biogeografia de ilhas** → ecologia da paisagem quantitativa
+- **Métodos:** métricas de paisagem, SIG, modelagem, sensoriamento remoto
+- **Aplicação:** conservação, conectividade, planejamento da biodiversidade
 :::
 :::
 :::
@@ -129,11 +86,231 @@ Forman & Godron, MacArthur & Wilson → **biogeografia de ilhas** → ecologia d
 **Nesta disciplina**, a abordagem é **integradora**: usamos o referencial geossistêmico (geográfico) para a leitura integrada, e o ferramental da ecologia da paisagem (ecológico) para a análise quantitativa de padrões e processos.
 :::
 
+---
+
+## A paisagem como nível de organização da biodiversidade {.smaller-text .scrollable}
+
+::: {.columns}
+::: {.column width="55%"}
+### Hierarquia da biodiversidade
+
+A paisagem é um dos **níveis hierárquicos** de organização da vida:
+
+**genes → indivíduo → população → espécie → comunidade → ecossistema → paisagem**
+
+A cada nível surgem **processos emergentes** que não existem no nível inferior:
+
+- **Comunidade:** interações entre espécies (polinização, dispersão, predação, parasitismo)
+- **Ecossistema:** ciclagem de nutrientes, fluxos de energia
+- **Paisagem:** **serviços ecossistêmicos**, conectividade, fluxos entre ecossistemas
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**Definição operacional (Forman & Godron, 1986)**
+
+> Estudo da **estrutura**, da **função** e da **mudança** em uma área espacialmente heterogênea composta por ecossistemas que interagem.
+
+O **ecólogo de paisagens** se dedica a estudar essa interação de ecossistemas em um espaço **espacialmente explícito** — naturais ou inseridos pela ação humana.
+:::
+
+*Por isso falamos em "Ecologia **de** paisagens" — paralela a Ecologia de populações, comunidades, ecossistemas.*
+:::
+:::
+
+---
+
+## Por que importa: crise da biodiversidade {.smaller-text .scrollable}
+
+::: {.columns}
+::: {.column width="50%"}
+### O contexto contemporâneo
+
+A Ecologia de paisagens consolidou-se como resposta científica à **crise da biodiversidade** — percepção de que a interferência humana atingiu escala equivalente a uma força geológica (**Antropoceno**).
+
+### Indicadores (WWF — Living Planet Report)
+
+Desde **1970** (linha de base):
+
+- **≈70 %** de declínio nas populações de **vertebrados** monitorados (mamíferos, aves, anfíbios, peixes, répteis)
+- **≈85 %** de declínio em populações associadas a **recursos hídricos** (biota aquática)
+- **Cerrado:** taxa de conversão **superior à da Amazônia** — "primo pobre" da agenda de conservação
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Aplicações contemporâneas**
+
+- **Serviços ecossistêmicos** (tema mais publicado em 2022–23)
+- **Ecologia do movimento** — como organismos enfrentam barreiras na paisagem
+- **Doenças emergentes:** hantavirose, febre amarela, malária, **COVID-19** — surgem da degradação e do contato humano-natureza
+- **Planejamento territorial** e mudanças climáticas
+- **Sensoriamento remoto** e modelagem espacial
+:::
+
+::: {.highlight-box}
+**Campo multidisciplinar:** ecólogos, geógrafos, geólogos, sociólogos, climatologistas, engenheiros florestais, especialistas em SR. *Não é exclusividade de nenhuma área.*
+:::
+:::
+:::
+
+# [2  -  A PAISAGEM COMO OBJETO DE ESTUDO]{.section-header}
+
+## O que é paisagem? {.smaller-text .scrollable}
+
+::: {.columns}
+::: {.column width="50%"}
+### Três níveis de definição
+
+**1. Senso comum (dicionário):**
+
+> *"Porção do território que a vista alcança no lance."*
+
+Definição **antropocêntrica**, baseada na percepção humana.
+
+**2. Forman & Godron (1986) — extensão fixa:**
+
+> Área com **alguns quilômetros de extensão**, composta por um grupo de ecossistemas que interagem e se repetem de maneira similar no espaço.
+
+**3. Modelo de mosaico — independente da escala:**
+
+> Área **espacialmente heterogênea** composta por manchas de ecossistemas, definida pela **percepção do organismo de interesse**.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**A paisagem depende do organismo**
+
+- Uma **ave de rapina** percebe dezenas de km² de mosaico
+- Uma **ave pequena** percebe um fragmento de algumas centenas de m²
+- Um **besouro** percebe poucos metros
+
+→ ≈ **2 milhões de espécies** = ≈ 2 milhões de paisagens potenciais.
+
+O modelo de mosaico nos permite trabalhar em **qualquer escala** — formigas, cupins, onças — desde que o organismo e o atributo de interesse estejam definidos.
+:::
+
+::: {.info-box}
+**Cuidado:** ao olhar com olhos de ecólogo de paisagem, *"a paisagem perde a poesia"* — passamos a ver matriz, mancha, corredor. Vale lembrar que existem outras leituras (estética, cultural, simbólica).
+:::
+:::
+:::
+
+---
+
+## Heterogeneidade: característica fundamental {.smaller-text .scrollable}
+
+::: {.columns}
+::: {.column width="50%"}
+### Gradiente de heterogeneidade
+
+Paisagens variam de **muito heterogêneas** (mosaico fino de muitas classes) a **muito homogêneas** (uma classe dominante).
+
+*Mas atenção:* a homogeneidade observada **depende do instrumento de medição**. A mesma paisagem pode ser homogênea em uma imagem óptica e heterogênea em LiDAR ou em um mosaico temporal.
+
+### Pergunta-chave do curso
+
+> **Heterogeneidade é boa ou ruim para a biodiversidade?**
+
+Veremos respostas que dependem do organismo, da escala e do tipo de heterogeneidade.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Fontes naturais de heterogeneidade**
+
+- Enchentes, deslizamentos, fogo natural
+- Surtos populacionais (ex.: lagartas desfolhadoras)
+- Variação de solos e relevo
+- Ações de organismos engenheiros
+:::
+
+::: {.highlight-box}
+**Fontes antropogênicas**
+
+- Desmatamento; alta frequência de fogo
+- Poluição (química, sonora, luminosa)
+- Espécies invasoras (acidentais ou intencionais)
+- Barramento de rios; alteração de drenagem
+- Conversão para agropecuária; fertilização excessiva
+:::
+:::
+:::
+
+---
+
+## Formas de representar a paisagem {.smaller-text .scrollable}
+
+A representação **depende do objetivo, do organismo e do ferramental disponível**:
+
+::: {.columns}
+::: {.column width="50%"}
+**1. Mosaico de uso da terra** *(mais comum)*
+
+Classes temáticas (ex.: MapBiomas) — áreas naturais, urbanas, agrícolas, água.
+
+**2. Teoria dos grafos / redes**
+
+Manchas como **nós**, conexões como **arestas** — análogo a redes sociais. Identifica clusters, manchas centralizadoras e isoladas.
+
+**3. Gradiente ambiental**
+
+Não há limite binário: hábitats ótimos, subótimos e marginais coexistem ao longo de um gradiente.
+:::
+
+::: {.column width="50%"}
+**4. Ocorrência do organismo**
+
+Mapa de pontos: padrão **agrupado**, **aleatório** ou **regular** — leitura direta da paisagem pela espécie.
+
+**5. Atributo temático**
+
+- Lagarta → **biomassa** (NDVI)
+- Planta → **tipos de solo**
+- Polinizador → **floração**
+
+A paisagem é representada pelo **atributo relevante para o organismo de estudo**.
+:::
+:::
+
+---
+
+## Paisagens modernas: além da estrutura {.smaller-text .scrollable}
+
+Nos últimos ≈ 10 anos, a Ecologia de paisagens ampliou-se para representar **dimensões sensoriais** — não apenas a estrutura física.
+
+::: {.columns}
+::: {.column width="50%"}
+### Paisagens acústicas (*soundscapes*)
+
+A paisagem é representada pelo **espectro sonoro** dos organismos (aves, morcegos, insetos, anfíbios).
+
+**Hipóteses associadas:**
+
+- **Adaptação acústica** — cada espécie comunica-se de forma ótima no ambiente em que evoluiu; mudar o ambiente prejudica a comunicação
+- **Nicho acústico** — cada espécie vocaliza em frequência/horário próprios para evitar sobreposição (análogo à exclusão competitiva)
+:::
+
+::: {.column width="50%"}
+### Paisagens luminosas (*lightscapes*)
+
+Iluminação artificial 12–24 h/dia altera:
+
+- comportamento de espécies noturnas
+- disponibilidade e tipo de presa
+- fotoperíodo de plantas e polinizadores
+
+**Poluição luminosa** é tema **negligenciado** no Brasil, especialmente em **áreas protegidas próximas a cidades**.
+:::
+:::
+
+::: {.info-box}
+**Mensagem:** representar uma paisagem é uma **escolha analítica**. Som, luz, biomassa, solos ou classes de uso — cada representação responde a uma pergunta diferente sobre o mesmo espaço.
+:::
+
 # [3  -  O MODELO MATRIZ-MANCHA-CORREDOR]{.section-header}
 
 ## A paisagem como mosaico {.smaller-text}
-
-![Modelo matriz-mancha-corredor em paisagem real, vista aérea](img/matriz_mancha_corredor.jpg){width="90%" fig-align="center"}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -141,46 +318,19 @@ Forman & Godron, MacArthur & Wilson → **biogeografia de ilhas** → ecologia d
 
 Toda paisagem pode ser decomposta em **três elementos estruturais**:
 
-1. **Matriz**  -  o tipo de cobertura **dominante** que controla a dinâmica da paisagem
+1. **Matriz**  -  cobertura **dominante** que controla a dinâmica
 2. **Manchas** (*patches*)  -  unidades **discretas** que diferem da matriz
-3. **Corredores** (*corridors*)  -  faixas **lineares** que diferem da matriz e conectam manchas
+3. **Corredores** (*corridors*)  -  faixas **lineares** que conectam manchas
 
 ### Princípio fundamental
 
-> O **arranjo espacial** desses três elementos determina os fluxos de energia, matéria e organismos na paisagem.
+> O **arranjo espacial** desses elementos determina os fluxos de energia, matéria e organismos na paisagem.
 
 A mesma quantidade de habitat, arranjada de formas diferentes, produz paisagens com funcionalidades radicalmente distintas.
 :::
 
 ::: {.column width="50%"}
-::: {.highlight-box}
-**Representação esquemática
-**
-
-```
-┌─────────────────────────────────┐
-│  MATRIZ (pastagem)              │
-│                                 │
-│   ┌────┐        ┌──────┐       │
-│   │ M1 │========│  M2  │       │
-│   │    │corredor│      │       │
-│   └────┘        └──────┘       │
-│                                 │
-│          ┌───┐                  │
-│          │M3 │                  │
-│          └───┘                  │
-│                                 │
-│   ┌──────────┐                  │
-│   │   M4     │                  │
-│   │          │                  │
-│   └──────────┘                  │
-└─────────────────────────────────┘
-```
-
-M1-M4 = manchas de habitat (ex.: fragmentos florestais)
-
-O modelo é **simples**, **visual** e **operacional**.
-:::
+![Modelo matriz-mancha-corredor em paisagem real](img/matriz_mancha_corredor.jpg){width="100%" fig-align="center"}
 :::
 :::
 
@@ -234,7 +384,7 @@ A **qualidade da matriz** (permeabilidade, hostilidade, recurso) influencia dire
 
 ---
 
-## Manchas: tipos e origens {.smaller-text}
+## Manchas: tipos e origens {.smaller-text .scrollable}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -272,34 +422,25 @@ Para analisar uma mancha, avaliamos:
 
 ---
 
-## Efeito de borda {.smaller-text}
-
-![Efeito de borda em fragmento florestal](img/efeito_borda.jpg){width="80%" fig-align="center"}
+## Efeito de borda {.smaller-text .scrollable}
 
 ::: {.columns}
-::: {.column width="50%"}
+::: {.column width="40%"}
+![Efeito de borda em fragmento florestal](img/efeito_borda.webp){.fig-compact fig-align="center"}
+
 ### O que é efeito de borda?
 
-A **borda** de uma mancha é a zona de transição entre ela e a matriz. Nessa zona:
+Zona de transição entre mancha e matriz, onde condições ambientais são **alteradas** (luz, vento, temperatura, umidade), espécies generalistas **penetram** e processos de degradação **se propagam**.
 
-- Condições ambientais são **alteradas** (mais luz, vento, temperatura, umidade diferente)
-- Espécies generalistas e invasoras **penetram**
-- Espécies de interior **recuam**
-- Processos de degradação **se propagam** (fogo, erosão, poluição)
-
-### Consequências
-
-- Manchas **pequenas** e **alongadas** têm mais borda relativa
-- Manchas **grandes** e **compactas** preservam mais área de interior
-- O efeito de borda pode penetrar de **30 m a > 300 m** dependendo do ecossistema e do efeito avaliado
+Manchas **pequenas** e **alongadas** têm mais borda relativa; o efeito pode penetrar de **30 m a > 300 m**.
 :::
 
-::: {.column width="50%"}
+::: {.column width="60%"}
 ::: {.info-box}
 **Exemplo numérico
 **
 
-Considere dois fragmentos florestais com a mesma área (100 ha):
+Dois fragmentos florestais com a mesma área (100 ha):
 
 | Atributo | Fragmento circular | Fragmento alongado |
 |----------|:---:|:---:|
@@ -310,24 +451,31 @@ Considere dois fragmentos florestais com a mesma área (100 ha):
 
 : {.striped .hover}
 
-O fragmento alongado perde **mais da metade** de sua área funcional por efeito de borda!
+O fragmento alongado perde **mais da metade** de sua área funcional por efeito de borda.
 
-> **Implicação para planejamento:** ao criar ou proteger fragmentos, prefira formas **compactas** com menor relação perímetro/área.
+> **Implicação:** ao proteger fragmentos, prefira formas **compactas** com menor relação perímetro/área.
 :::
 :::
 :::
 
 # [4  -  CORREDORES]{.section-header}
 
-## Corredores: tipos e funções {.smaller-text}
-
-![Corredor ecológico, mata ciliar conectando fragmentos](img/corredor_ecologico.jpg){width="85%" fig-align="center"}
+## Corredores: tipos e funções {.smaller-text .scrollable}
 
 ::: {.columns}
-::: {.column width="50%"}
+::: {.column width="40%"}
+![Mata ciliar conectando fragmentos](img/corredor_ecologico.webp){.fig-compact fig-align="center"}
+
 ### O que é um corredor?
 
-Faixa **linear** de cobertura que difere da matriz e pode conectar manchas. Tipos:
+Faixa **linear** de cobertura que difere da matriz e pode conectar manchas.
+
+- **Estreitos** (< 50 m) → conduzem, mas não sustentam fauna de interior
+- **Largos** (> 200 m) → funcionam como habitat e via de deslocamento
+:::
+
+::: {.column width="60%"}
+### Tipos
 
 | Tipo | Exemplo |
 |------|---------|
@@ -335,32 +483,14 @@ Faixa **linear** de cobertura que difere da matriz e pode conectar manchas. Tipo
 | **De linha** | Cercas vivas, renques de árvores |
 | **De faixa** | Faixa larga de vegetação entre fragmentos |
 | **De estrada** | Vegetação ao longo de rodovias |
-| **Funcional** | Sem estrutura física contínua, mas com uso comprovado por espécies |
+| **Funcional** | Sem estrutura contínua, mas com uso comprovado |
 
 : {.striped .hover}
 
-### Largura importa
-
-- Corredores **estreitos** (&lt; 50 m) → conduzem, mas não sustentam fauna de interior
-- Corredores **largos** (&gt; 200 m) → funcionam como habitat e via de deslocamento
-:::
-
-::: {.column width="50%"}
 ::: {.highlight-box}
-**Funções dos corredores
-**
+**Funções:** conduto, habitat, filtro, barreira, sumidouro (armadilha ecológica).
 
-1. **Conduto**  -  facilita o movimento entre manchas (dispersão, migração)
-2. **Habitat**  -  sustenta populações residentes (se largo o suficiente)
-3. **Filtro**  -  permite passagem seletiva (alguns organismos sim, outros não)
-4. **Barreira**  -  pode impedir movimento (estrada como barreira para anfíbios)
-5. **Sumidouro**  -  pode atrair organismos que não completam o ciclo de vida (armadilha ecológica)
-
-### A legislação brasileira
-
-O **Código Florestal** (Lei 12.651/2012) define APPs ao longo de cursos d'água  -  funcionam como **corredores ripários obrigatórios**.
-
-> Matar mata ciliar é destruir o principal corredor ecológico da paisagem brasileira.
+O **Código Florestal** (Lei 12.651/2012) define APPs ao longo de cursos d'água — **corredores ripários obrigatórios**.
 :::
 :::
 :::
@@ -410,30 +540,22 @@ Uma paisagem **fragmentada** com alta conectividade pode manter populações vi�
 
 ---
 
-## Fragmentação: o problema central {.smaller-text}
-
-![Fragmentação florestal, vista aérea de desmatamento progressivo](img/fragmentacao_florestal.jpg){width="85%" fig-align="center"}
+## Fragmentação: o problema central {.smaller-text .scrollable}
 
 ::: {.columns}
-::: {.column width="50%"}
+::: {.column width="40%"}
+![Desmatamento progressivo gerando fragmentação florestal](img/fragmentacao_florestal.jpg){.fig-compact fig-align="center"}
+
 ### O que é fragmentação?
 
 Processo pelo qual uma área contínua de habitat é dividida em manchas menores, isoladas por uma matriz de uso diferente.
 
-### Consequências ecológicas
-
-1. **Perda de habitat**  -  redução da área total
-2. **Aumento de borda**  -  degradação proporcional
-3. **Isolamento**  -  redução de fluxo gênico
-4. **Efeito de área**  -  manchas menores sustentam menos espécies
-5. **Perda de espécies de interior**  -  sensíveis a borda
-6. **Invasão por espécies generalistas**  -  homogeneização
+**Consequências:** perda de habitat, aumento de borda, isolamento, efeito de área, perda de espécies de interior, invasão por generalistas.
 :::
 
-::: {.column width="50%"}
+::: {.column width="60%"}
 ::: {.highlight-box}
-**Fragmentação no Brasil
-**
+**Fragmentação no Brasil**
 
 | Bioma | Remanescente (%) | Fragmentação |
 |-------|:---:|:---:|
@@ -487,35 +609,97 @@ Essas análises serão aprofundadas nas aulas de **métricas** (Aulas 17-18) e *
 :::
 :::
 
-# [7  -  ATIVIDADE PRÁTICA]{.section-header}
+# [7  -  DISCUSSÃO DA LEITURA]{.section-header}
 
-## Exercício: identificação no mosaico {.smaller-text}
+## Metzger (2001): pontos-chave {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### O que Metzger propõe?
+
+> A ecologia da paisagem é *"o estudo da estrutura, função e dinâmica de áreas heterogêneas compostas por ecossistemas interativos"*  -  adaptado de Forman & Godron (1986)
+
+**Duas abordagens:**
+
+| Abordagem | Ênfase | Origem |
+|-----------|--------|--------|
+| **Geográfica** | Relação sociedade-natureza; planejamento | Europa (Troll, Naveh) |
+| **Ecológica** | Padrão espacial e processos ecológicos | América do Norte (Forman, Turner) |
+
+: {.striped .hover}
+
+Metzger argumenta que **ambas** são necessárias e complementares.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Tríade analítica da paisagem**
+
+```{=html}
+<svg viewBox="0 0 620 330" width="100%" role="img" aria-label="Fluxograma cíclico entre estrutura, função e mudança da paisagem">
+  <defs>
+    <marker id="arrow-flow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#2135A6"></path>
+    </marker>
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.18"></feDropShadow>
+    </filter>
+  </defs>
+
+  <path d="M160 112 H270" stroke="#2135A6" stroke-width="8" fill="none" marker-end="url(#arrow-flow)"></path>
+  <path d="M350 112 H460" stroke="#2135A6" stroke-width="8" fill="none" marker-end="url(#arrow-flow)"></path>
+  <path d="M510 188 C510 282 110 282 110 188" stroke="#2135A6" stroke-width="8" fill="none" marker-end="url(#arrow-flow)"></path>
+
+  <g filter="url(#soft-shadow)">
+    <rect x="18" y="52" width="150" height="120" rx="16" fill="#E9F0FF" stroke="#2135A6" stroke-width="3"></rect>
+    <rect x="235" y="52" width="150" height="120" rx="16" fill="#EAF7EF" stroke="#2E7D32" stroke-width="3"></rect>
+    <rect x="452" y="52" width="150" height="120" rx="16" fill="#FFF4E0" stroke="#B26A00" stroke-width="3"></rect>
+  </g>
+
+  <text x="93" y="98" text-anchor="middle" font-size="29" font-weight="700" fill="#2135A6">Estrutura</text>
+  <text x="93" y="132" text-anchor="middle" font-size="18" fill="#333333">padrão espacial</text>
+  <text x="93" y="154" text-anchor="middle" font-size="18" fill="#333333">do mosaico</text>
+
+  <text x="310" y="98" text-anchor="middle" font-size="29" font-weight="700" fill="#2E7D32">Função</text>
+  <text x="310" y="132" text-anchor="middle" font-size="18" fill="#333333">fluxos e</text>
+  <text x="310" y="154" text-anchor="middle" font-size="18" fill="#333333">processos</text>
+
+  <text x="527" y="98" text-anchor="middle" font-size="29" font-weight="700" fill="#B26A00">Mudança</text>
+  <text x="527" y="132" text-anchor="middle" font-size="18" fill="#333333">dinâmica</text>
+  <text x="527" y="154" text-anchor="middle" font-size="18" fill="#333333">temporal</text>
+
+  <text x="310" y="262" text-anchor="middle" font-size="21" font-weight="700" fill="#2135A6">retroalimentação</text>
+  <text x="310" y="292" text-anchor="middle" font-size="17" fill="#333333">mudanças reorganizam a estrutura da paisagem</text>
+</svg>
+```
+:::
+:::
+:::
+
+# [8  -  ATIVIDADE PRÁTICA]{.section-header}
+
+## Exercício: identificação no mosaico {.smaller-text .scrollable}
 
 ::: {.columns}
 ::: {.column width="60%"}
 ### Proposta (em duplas, 25 min)
 
-Será projetada uma imagem de satélite (Google Earth ou MapBiomas) de uma **paisagem fragmentada** do entorno de Feira de Santana.
+Será projetada uma imagem de satélite (Google Earth ou MapBiomas) de uma **paisagem fragmentada**.
 
 **Tarefa:**
 
-1. **Identifique a matriz**  -  qual cobertura domina?
-2. **Delimite pelo menos 5 manchas**  -  qual a origem provável de cada uma? (remanescente, de perturbação, introduzida, de recurso)
-3. **Identifique pelo menos 2 corredores** (ou a ausência deles)
-4. **Avalie qualitativamente:**
-   - As manchas são grandes ou pequenas?
-   - São compactas ou alongadas?
-   - Estão próximas ou isoladas?
-   - A paisagem tem alta ou baixa conectividade aparente?
+1. **Identifique a matriz** — qual cobertura domina?
+2. **Delimite ≥ 5 manchas** — origem provável (remanescente, perturbação, introduzida, recurso)
+3. **Identifique ≥ 2 corredores** (ou a ausência deles)
+4. **Avalie qualitativamente:** tamanho, forma, isolamento e conectividade aparente
 5. **Proponha** uma intervenção para aumentar a conectividade
 
-### Socialização (15 min)
+*Socialização: 15 min*
 :::
 
 ::: {.column width="40%"}
 ::: {.info-box}
-**Critérios de avaliação do exercício
-**
+**Critérios de avaliação**
 
 | Critério | Peso |
 |----------|:---:|
@@ -527,7 +711,7 @@ Será projetada uma imagem de satélite (Google Earth ou MapBiomas) de uma **pai
 
 : {.striped .hover}
 
-> Este é um exercício de **diagnóstico visual**  -  será refinado com dados quantitativos nas aulas futuras.
+> **Diagnóstico visual** — refinado com dados quantitativos nas aulas futuras.
 :::
 :::
 :::

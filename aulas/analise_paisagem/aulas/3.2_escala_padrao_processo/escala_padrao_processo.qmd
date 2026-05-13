@@ -277,6 +277,43 @@ Exemplo: fragmentação (padrão) → isolamento de populações (processo) → 
 
 ---
 
+## Disciplina espacialmente explícita: o desafio de mapear processos {.smaller-text .scrollable}
+
+::: {.columns}
+::: {.column width="50%"}
+### Por que "espacialmente explícita"?
+
+Diferente de outras abordagens da ecologia que tratam o espaço de forma **implícita** (médias, proporções), a Ecologia da Paisagem exige a **localização explícita** de cada elemento — onde estão as manchas, como se conectam, qual a vizinhança.
+
+### Padrão vs. processo: assimetria metodológica
+
+- **Padrões** são relativamente **fáceis de mapear**: classificação de imagens de satélite, MapBiomas, fotointerpretação
+- **Processos** (movimentação, dispersão, fluxo gênico) são **difíceis de mapear** — exigem métodos pontuais e custosos
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Técnicas de captura de processos**
+
+- **Telemetria GPS** — colares/transmissores em mamíferos e aves de médio/grande porte
+- **Anilhamento e recaptura** — aves, morcegos, peixes
+- **Avistamento sistemático** — transectos, câmeras-trap
+- **Rastreamento acústico** — hidrofones, gravadores autônomos
+- **Marcadores moleculares** — fluxo gênico via DNA
+
+*Limitação:* poucas espécies podem ser monitoradas; amostras pequenas frente à escala da paisagem.
+:::
+
+::: {.highlight-box}
+**Implicação prática**
+
+Grande parte do que sabemos sobre processos vem de **inferência indireta** a partir do padrão — daí a importância de métricas, modelos de conectividade e simulação.
+:::
+:::
+:::
+
+---
+
 ## Padrão → processo → padrão {.smaller-text}
 
 ::: {.columns}
