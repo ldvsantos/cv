@@ -1,6 +1,6 @@
 {
-  "title": "Atividade 03 — Escalas, Fragmentação e Resiliência da Paisagem",
-  "description": "Esta atividade abrange os conteúdos do 3º e 4º Encontros:\n• 3º Encontro (25/03), Slide 3b — Escalas espaço-temporais, hierarquia e MAUP\n• 4º Encontro (01/04), Slide 4a — Fluxos, fragmentação, conectividade e resiliência\n\nO objetivo é verificar se você compreende como a escolha de escala afeta a análise e como a fragmentação compromete a funcionalidade ecológica de uma paisagem.\n\nPrazo de entrega: até o início do 5º Encontro (08/04).",
+  "title": "Atividade 04 — Geossistema, ECL e Modelo MCM",
+  "description": "Esta atividade abrange os conteúdos do 2º e 3º Encontros:\n• 2º Encontro (18/03), Slide 2a — Evolução do conceito e distinções (paisagem × ecossistema × bioma)\n• 2º Encontro (18/03), Slide 2b — Geossistema e leitura sistêmica (Bertrand)\n• 3º Encontro (25/03), Slide 3a — Ecologia da Paisagem (modelo mancha-corredor-matriz)\n\nO objetivo é consolidar os fundamentos teóricos discutidos nos primeiros encontros.\n\nPrazo de entrega: até o início do 4º Encontro (01/04).",
   "sections": [
     {
       "title": "IDENTIFICAÇÃO",
@@ -21,115 +21,126 @@
       ]
     },
     {
-      "title": "Extensão, grão e o problema da unidade de área modificável",
-      "description": "A escala determina o que conseguimos ver (e o que deixamos de ver) na paisagem.",
+      "title": "Paisagem, ecossistema, bioma e território",
+      "description": "As questões a seguir exigem que você diferencie conceitos frequentemente confundidos.",
       "questions": [
         {
-          "title": "Na Ecologia da Paisagem, \"extensão\" e \"grão\" são dois componentes da escala. Qual alternativa os define CORRETAMENTE?",
+          "title": "Qual alternativa melhor diferencia \"paisagem\" de \"ecossistema\"?",
           "description": "",
           "type": "MULTIPLE_CHOICE",
           "required": true,
           "options": [
-            "Extensão é o tamanho total da área analisada; grão é a menor unidade espacial distinguível (resolução).",
-            "Extensão é o nível de detalhe; grão é a área total coberta pelo sensor.",
-            "Extensão e grão são sinônimos para \"escala cartográfica\".",
-            "Extensão refere-se ao tempo; grão refere-se ao espaço."
+            "Paisagem é visual; ecossistema é funcional.",
+            "Paisagem integra componentes socioespaciais e naturais em múltiplas escalas; ecossistema enfatiza fluxos de energia e ciclagem de matéria em uma comunidade biótica e seu meio abiótico.",
+            "Paisagem é maior que ecossistema.",
+            "Paisagem é subjetiva; ecossistema é objetivo."
           ]
         },
         {
-          "title": "O MAUP (Modifiable Areal Unit Problem) é um problema clássico em análise espacial. Ele ocorre quando:",
+          "title": "A vertente europeia da Ecologia da Paisagem, diferentemente da norte-americana, caracteriza-se por:",
           "description": "",
           "type": "MULTIPLE_CHOICE",
           "required": true,
           "options": [
-            "Dados coletados em uma escala são analisados em outra, e os resultados mudam conforme a unidade de agregação escolhida.",
-            "O mapa não tem sistema de coordenadas definido.",
-            "A imagem de satélite tem nuvens que escondem parte da área.",
-            "O pesquisador não define a projeção cartográfica corretamente."
+            "Foco exclusivo em métricas quantitativas e modelagem computacional.",
+            "Ênfase no planejamento territorial, na integração sociedade-natureza e numa perspectiva holística e humanista.",
+            "Priorização de estudos em escala molecular e genética da conservação.",
+            "Rejeição do conceito de geossistema e adoção do modelo de ecossistema."
           ]
         },
         {
-          "title": "Um pesquisador quer estudar a fragmentação da Caatinga no município de Feira de Santana. Ele poderia usar imagens Sentinel-2 (grão de 10 m) ou MODIS (grão de 250 m). Explique como a escolha do grão afetaria os resultados: que fragmentos seriam detectados em cada caso? A paisagem pareceria mais ou menos fragmentada?",
-          "description": "Mínimo 5 linhas.",
+          "title": "Explique, em suas próprias palavras, por que o conceito de \"bioma\" NÃO substitui o de \"paisagem\" mesmo quando trata da mesma área geográfica.",
+          "description": "Mínimo 4 linhas. Utilize exemplos.",
           "type": "PARAGRAPH",
           "required": true
-        },
-        {
-          "title": "Um rio intermitente na Caatinga seca por 6 meses e enche por 6 meses. Se o pesquisador analisar apenas uma imagem de agosto (seca), que erro de interpretação pode cometer?",
-          "description": "",
-          "type": "MULTIPLE_CHOICE",
-          "required": true,
-          "options": [
-            "Classificar a área de várzea como solo exposto/pastagem degradada, ignorando sua função sazonal como corredor ecológico.",
-            "Superestimar a área de vegetação nativa.",
-            "Classificar corretamente todos os elementos da paisagem.",
-            "Nenhum erro — uma imagem é suficiente para qualquer análise."
-          ]
         }
       ]
     },
     {
-      "title": "Quando a paisagem se rompe",
+      "title": "O modelo de Bertrand e a leitura sistêmica",
       "description": "",
       "questions": [
         {
-          "title": "A teoria da percolação estabelece que, em uma paisagem binária (habitat × não-habitat), a conectividade funcional sofre uma queda brusca quando a proporção de habitat cai abaixo de aproximadamente:",
+          "title": "No modelo taxonômico de Bertrand, o geossistema corresponde a qual nível de organização?",
           "description": "",
           "type": "MULTIPLE_CHOICE",
           "required": true,
           "options": [
-            "90%",
-            "59,28% (limiar de percolação teórico) — na prática, valores entre 30% e 40% em paisagens reais.",
-            "10%",
-            "50% exatos, sempre."
+            "Nível mais amplo (zona – domínio – região natural).",
+            "Nível intermediário entre a região natural e o geofácies.",
+            "Nível mais detalhado (geótopo).",
+            "Não se encaixa na taxonomia — é um conceito à parte."
           ]
         },
         {
-          "title": "Quais dos seguintes processos são consequências diretas da fragmentação de habitat? (marque todos os corretos)",
+          "title": "Quais dos componentes abaixo fazem parte do \"tripé\" do geossistema segundo Bertrand? (marque todos os corretos)",
           "description": "",
           "type": "CHECKBOX",
           "required": true,
           "options": [
-            "Aumento do efeito de borda (microclima alterado, luminosidade, espécies invasoras)",
-            "Redução do tamanho efetivo das populações",
-            "Isolamento genético e aumento da endogamia",
-            "Perda de espécies dependentes do interior do fragmento",
-            "Aumento da biodiversidade em todos os fragmentos",
-            "Alteração de processos ecológicos (polinização, dispersão, predação)"
+            "Potencial ecológico (fatores abióticos: geomorfologia, clima, hidrologia)",
+            "Exploração biológica (vegetação, fauna, solo biológico)",
+            "Ação antrópica (uso do solo, agricultura, urbanização)",
+            "Fluxos de capital (PIB agrícola, renda per capita)",
+            "Legislação ambiental (unidades de conservação, APP, RL)"
           ]
         },
         {
-          "title": "Em uma paisagem fragmentada, qual estratégia é MAIS eficaz para restaurar a conectividade funcional?",
-          "description": "",
-          "type": "MULTIPLE_CHOICE",
-          "required": true,
-          "options": [
-            "Aumentar cada fragmento individualmente sem conectá-los.",
-            "Criar corredores ecológicos (matas ciliares, stepping stones) ligando os fragmentos maiores e mais preservados.",
-            "Cercar todos os fragmentos com arame farpado para impedir invasão de gado.",
-            "Retirar todas as atividades humanas da paisagem."
-          ]
-        },
-        {
-          "title": "Resiliência e vulnerabilidade são conceitos complementares na Ecologia da Paisagem. Considere duas paisagens: (A) uma bacia com 60% de cobertura nativa contínua e fragmentos conectados por corredores; (B) uma bacia com 15% de cobertura nativa em fragmentos isolados e pequenos. Qual é mais resiliente? Justifique usando os conceitos de conectividade, efeito de borda e limiar de percolação.",
-          "description": "Mínimo 6 linhas.",
+          "title": "Imagine um trecho do semiárido baiano com caatinga remanescente, uma área irrigada de fruticultura e uma comunidade rural. Aplique o \"tripé\" do geossistema de Bertrand para descrever esse trecho.",
+          "description": "Identifique, em pelo menos 5 linhas, o potencial ecológico, a exploração biológica e a ação antrópica.",
           "type": "PARAGRAPH",
           "required": true
         }
       ]
     },
     {
-      "title": "Aplicação integrada",
+      "title": "O modelo mancha-corredor-matriz",
       "description": "",
       "questions": [
         {
-          "title": "Desafio integrador: Imagine que você foi contratado(a) para avaliar a qualidade ambiental de uma bacia hidrográfica no semiárido. Descreva, em etapas, as decisões de escala que teria que tomar: (1) Que extensão usar? (2) Que grão (resolução)? (3) Que escala temporal? Justifique cada escolha.",
-          "description": "Mínimo 8 linhas.",
+          "title": "Em uma paisagem agrícola típica do Recôncavo Baiano, com pastagens extensas, fragmentos de Mata Atlântica e rios com mata ciliar, qual correspondência está CORRETA?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Matriz = Mata Atlântica; Manchas = pastagens; Corredores = rios.",
+            "Matriz = pastagem; Manchas = fragmentos de Mata Atlântica; Corredores = matas ciliares ao longo dos rios.",
+            "Matriz = rios; Manchas = pastagens; Corredores = fragmentos de Mata Atlântica.",
+            "Não é possível aplicar o modelo a paisagens agrícolas."
+          ]
+        },
+        {
+          "title": "Por que os corredores ecológicos são considerados estratégicos para a conservação?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Porque aumentam a área total dos fragmentos.",
+            "Porque facilitam o fluxo gênico e o deslocamento de organismos entre manchas de habitat, reduzindo os efeitos do isolamento e da fragmentação.",
+            "Porque impedem a expansão da matriz agrícola.",
+            "Porque substituem a necessidade de unidades de conservação."
+          ]
+        },
+        {
+          "title": "Observe a imagem de satélite abaixo (ou use o Google Earth para localizar uma área rural que você conhece). Identifique e descreva: (a) a matriz, (b) pelo menos duas manchas e (c) pelo menos um corredor. Justifique cada classificação.",
+          "description": "Mínimo 5 linhas. Se usar o Google Earth, indique o nome do município e as coordenadas aproximadas.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Síntese integradora",
+      "description": "",
+      "questions": [
+        {
+          "title": "Compare o geossistema de Bertrand e o modelo mancha-corredor-matriz de Forman. Em que se complementam? Em que divergem? Qual você considera mais útil para analisar a paisagem do semiárido? Justifique.",
+          "description": "Mínimo 6 linhas.",
           "type": "PARAGRAPH",
           "required": true
         },
         {
-          "title": "De 1 a 5, o quanto você se sente confiante para justificar escolhas de escala (extensão, grão e tempo) em um projeto de análise da paisagem?",
+          "title": "De 1 a 5, o quanto você se sente confiante para aplicar o modelo mancha-corredor-matriz a uma paisagem real?",
           "description": "",
           "type": "SCALE",
           "required": true,

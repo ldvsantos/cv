@@ -1,6 +1,6 @@
 {
-  "title": "Atividade 06 — FRAGSTATS, Grafos e Conectividade: Medindo a Estrutura da Paisagem",
-  "description": "Esta atividade abrange os conteúdos do 9º Encontro (Slides 9a e 9a_extra):\n• Slide 9a — Métricas de paisagem (FRAGSTATS), conectividade funcional, grafos\n• Slide 9a_extra — Exercício de interpretação crítica de indicadores\n\nO objetivo é avaliar se você consegue interpretar métricas de paisagem e usá-las para diagnosticar o estado de conservação de uma paisagem.\n\nPrazo de entrega: até o início do 10º Encontro (13/05).",
+  "title": "Atividade 07 — Sensoriamento Remoto: do Pixel à Paisagem",
+  "description": "Esta atividade abrange os conteúdos do 7º e 8º Encontros:\n• 7º Encontro (22/04), Slides 7a–7b — Fundamentos de SR, composições, índices e feições\n• 8º Encontro (29/04), Slides 8a–8b — Detecção de mudanças multitemporal, MapBiomas\n\nO objetivo é verificar se você compreende como imagens de satélite são transformadas em informação sobre a paisagem.\n\nPrazo de entrega: até o início do 9º Encontro (06/05).",
   "sections": [
     {
       "title": "IDENTIFICAÇÃO",
@@ -21,103 +21,114 @@
       ]
     },
     {
-      "title": "Quantificando padrões espaciais",
-      "description": "As métricas de paisagem traduzem a estrutura espacial em números interpretáveis. Responda com base nas aulas e no exercício prático.",
+      "title": "Imagens, bandas e composições",
+      "description": "Questões sobre os conceitos operacionais do sensoriamento remoto aplicado à análise da paisagem.",
       "questions": [
         {
-          "title": "Qual métrica mede a QUANTIDADE de fragmentos de uma determinada classe em uma paisagem?",
+          "title": "Qual composição de bandas permite melhor distinção entre vegetação vigorosa, solo exposto e corpos d'água?",
           "description": "",
           "type": "MULTIPLE_CHOICE",
           "required": true,
           "options": [
-            "AREA_MN (área média dos fragmentos)",
-            "NP (número de fragmentos / Number of Patches)",
-            "ED (densidade de bordas / Edge Density)",
-            "COHESION (índice de coesão)"
+            "Cor verdadeira (RGB = bandas do visível), pois mostra \"como o olho vê\".",
+            "Falsa-cor com infravermelho próximo (NIR) no canal R, pois a vegetação reflete fortemente no NIR e solo/água refletem pouco.",
+            "Banda pancromática (tons de cinza), pois tem maior resolução.",
+            "Qualquer composição serve — não faz diferença."
           ]
         },
         {
-          "title": "Uma paisagem com NP = 150 fragmentos de mata nativa, AREA_MN = 2,3 ha e ED = 45 m/ha indica:",
+          "title": "O NDVI (Índice de Vegetação por Diferença Normalizada) é calculado pela fórmula:",
           "description": "",
           "type": "MULTIPLE_CHOICE",
           "required": true,
           "options": [
-            "Paisagem bem conservada com grandes blocos de vegetação contínua.",
-            "Paisagem altamente fragmentada com muitos fragmentos pequenos e alta proporção de borda.",
-            "Paisagem sem vegetação nativa.",
-            "Impossível interpretar sem mais dados."
+            "NDVI = (NIR + RED) / (NIR − RED)",
+            "NDVI = (NIR − RED) / (NIR + RED)",
+            "NDVI = RED / NIR",
+            "NDVI = (BLUE − GREEN) / (BLUE + GREEN)"
           ]
         },
         {
-          "title": "Quais das seguintes métricas são indicadoras de CONECTIVIDADE da paisagem? (marque todas as corretas)",
+          "title": "Em uma imagem Landsat-8 de março (chuva) sobre a Caatinga, qual das seguintes afirmações é VERDADEIRA?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Toda a vegetação terá NDVI alto, sendo impossível distinguir caatinga de pastagem.",
+            "A caatinga arbórea terá NDVI mais alto que a pastagem seca, mas na estação chuvosa ambas podem ter valores próximos, dificultando a classificação.",
+            "O NDVI da água será o mais alto da cena.",
+            "A imagem de março é inútil para qualquer análise no semiárido."
+          ]
+        },
+        {
+          "title": "Quais dos seguintes sensores/satélites são mais adequados para mapear uso e cobertura da terra em escala municipal? (marque todos os aplicáveis)",
           "description": "",
           "type": "CHECKBOX",
           "required": true,
           "options": [
-            "NP (número de fragmentos)",
-            "CONNECT (índice de conectância — % de conexões entre fragmentos)",
-            "COHESION (índice de coesão — conectividade física)",
-            "SHAPE_MN (forma média das manchas)",
-            "ENN_MN (distância euclidiana média ao vizinho mais próximo)",
-            "PLAND (porcentagem da paisagem ocupada pela classe)"
+            "Landsat-8/9 (30 m, revisita 16 dias, gratuito)",
+            "Sentinel-2 (10 m, revisita 5 dias, gratuito)",
+            "MODIS (250-1000 m, diário, gratuito)",
+            "Planet/NICFI (3-5 m, mensal, gratuito para trópicos)",
+            "Google Earth (imagens de alta resolução, visualização)"
           ]
-        },
-        {
-          "title": "Analise os dados abaixo de duas sub-bacias e indique qual está em melhor condição ecológica. Justifique.",
-          "description": "SUB-BACIA A: PLAND = 45%, NP = 32, AREA_MN = 14,1 ha, ENN_MN = 120 m, COHESION = 97,2 | SUB-BACIA B: PLAND = 18%, NP = 87, AREA_MN = 2,1 ha, ENN_MN = 430 m, COHESION = 82,5. Mínimo 6 linhas. Interprete CADA métrica comparativamente.",
-          "type": "PARAGRAPH",
-          "required": true
         }
       ]
     },
     {
-      "title": "Graphab e teoria de grafos aplicada à paisagem",
+      "title": "Como a paisagem muda no tempo — e como medimos isso",
       "description": "",
       "questions": [
         {
-          "title": "Na análise de grafos aplicada à Ecologia da Paisagem, os \"nós\" representam _______ e as \"arestas\" representam _______.",
+          "title": "A plataforma MapBiomas é fundamental para análise da paisagem no Brasil porque:",
           "description": "",
           "type": "MULTIPLE_CHOICE",
           "required": true,
           "options": [
-            "Nós = fragmentos de habitat; Arestas = conexões funcionais (possibilidade de deslocamento entre fragmentos)",
-            "Nós = estradas; Arestas = rios",
-            "Nós = cidades; Arestas = rodovias",
-            "Nós = espécies; Arestas = relações tróficas"
+            "Fornece imagens de satélite brutas que o pesquisador precisa classificar manualmente.",
+            "Oferece mapeamento anual de uso e cobertura da terra para todo o Brasil, de 1985 até o presente, com metodologia padronizada e dados abertos.",
+            "Substitui completamente o trabalho de campo do pesquisador.",
+            "Fornece apenas dados climáticos e pluviométricos."
           ]
         },
         {
-          "title": "Qual a principal vantagem da análise de conectividade por grafos sobre a simples medição de distância entre fragmentos (ENN)?",
+          "title": "Ao comparar mapas de uso/cobertura de 2000 e 2024 para detectar mudanças, qual dos seguintes cuidados é ESSENCIAL?",
           "description": "",
           "type": "MULTIPLE_CHOICE",
           "required": true,
           "options": [
-            "Considera a capacidade de dispersão do organismo-alvo e a resistência da matriz, não apenas a distância física.",
-            "É mais rápida de calcular.",
-            "Não precisa de mapa de uso do solo.",
-            "Funciona apenas para aves e ignora outros animais."
+            "Usar imagens da mesma estação do ano (ambas na seca ou ambas na chuva) para evitar confundir mudança real com variação sazonal.",
+            "Usar imagens de estações diferentes para captar variação máxima.",
+            "Usar sensores completamente diferentes para aumentar a diversidade de dados.",
+            "Não é necessário nenhum cuidado — basta comparar."
           ]
         },
         {
-          "title": "Um gestor ambiental precisa decidir onde investir R$ 500 mil em restauração florestal para maximizar a conectividade da paisagem. Ele tem duas opções: (A) restaurar 50 ha em um grande fragmento que já tem 200 ha (aumentando para 250 ha); (B) criar 3 corredores de 5 ha cada (total: 15 ha) conectando os 5 maiores fragmentos da bacia. Usando conceitos de conectividade funcional e teoria de grafos, qual estratégia você recomendaria? Por quê?",
-          "description": "Mínimo 6 linhas. Não há resposta única — a qualidade da argumentação é o que será avaliado.",
+          "title": "Acesse a plataforma MapBiomas (https://plataforma.brasil.mapbiomas.org/) e busque o município de Feira de Santana - BA. Compare os anos de 2000 e 2023. Descreva: (a) Que mudanças de uso/cobertura são visíveis? (b) Qual classe aumentou e qual diminuiu? (c) Que processo explica essas mudanças?",
+          "description": "Mínimo 8 linhas. Se não conseguir acessar, use os dados da Coleção 9 do MapBiomas disponíveis na página.",
           "type": "PARAGRAPH",
           "required": true
-        }
-      ]
-    },
-    {
-      "title": "Leitura crítica de indicadores",
-      "description": "",
-      "questions": [
+        },
         {
-          "title": "\"Métricas sem contexto são apenas números.\" Explique esta frase usando um exemplo prático. Em que situações uma métrica pode ser ENGANOSA se interpretada isoladamente?",
+          "title": "Por que a análise multitemporal é mais informativa que a análise de uma data única para compreender a paisagem? Dê um exemplo concreto do semiárido.",
           "description": "Mínimo 5 linhas.",
           "type": "PARAGRAPH",
           "required": true
+        }
+      ]
+    },
+    {
+      "title": "Exercício integrador",
+      "description": "",
+      "questions": [
+        {
+          "title": "Imagine que você precisa elaborar um mapa multitemporal de mudanças de uso/cobertura para uma bacia hidrográfica do semiárido (2000 → 2024). Descreva: (1) que sensor/satélite usaria e por quê; (2) que período do ano escolheria para as imagens e por quê; (3) que classes de uso definiria; (4) como validaria o resultado.",
+          "description": "Mínimo 8 linhas. Pense como um profissional planejando o trabalho.",
+          "type": "PARAGRAPH",
+          "required": true
         },
         {
-          "title": "De 1 a 5, o quanto você se sente confiante para interpretar uma tabela de métricas FRAGSTATS e produzir um diagnóstico?",
+          "title": "De 1 a 5, o quanto você se sente confiante para interpretar uma imagem de satélite e identificar classes de uso/cobertura?",
           "description": "",
           "type": "SCALE",
           "required": true,

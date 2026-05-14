@@ -8,7 +8,7 @@ Uso:
 O que faz:
     1. Cria a pasta "Análise da Paisagem — 2026.1" no Google Drive
     2. Cria subpasta "Atividades (Formulários)"
-    3. Move todos os 7 formulários para a subpasta
+    3. Move todos os 8 formulários para a subpasta
     4. Renomeia cada formulário com prefixo padronizado
     5. Salva os IDs atualizados em formularios_organizados.json
 """
@@ -24,43 +24,48 @@ from create_forms import get_google_service
 SCRIPT_DIR = Path(__file__).resolve().parent
 
 # ---------------------------------------------------------------------------
-# IDs dos 7 formulários criados (execuções anteriores)
+# IDs dos 8 formulários criados (execuções anteriores)
 # ---------------------------------------------------------------------------
 FORMULARIOS = [
     {
-        "formId": "1EhVFxG0Ir3_0mDQ2Vv3lg4oVtQhjxWLLgHxXdohIk-o",
-        "titulo_atual": "Atividade 01 — O que é paisagem? Leituras e percepções",
-        "novo_nome": "[AP 2026.1] Atividade 01 — O que é paisagem? Leituras e percepções",
+        "formId": "1jsgmExs6KHEp8WlJgix1eBDi6IhGWFyjz3JmodDPj78",
+        "titulo_atual": "Atividade 01 — Leitura Perceptiva da Paisagem Local",
+        "novo_nome": "[AP 2026.1] Atividade 01 — Leitura Perceptiva da Paisagem Local",
+    },
+    {
+        "formId": "1SL0g-hBGbrWQQw2EgVMFoaYiTp7Y5-QvZRIk57-GsHc",
+        "titulo_atual": "Atividade 03 — Resenhas: Ecologia da Paisagem",
+        "novo_nome": "[AP 2026.1] Atividade 03 — Resenhas: Ecologia da Paisagem",
     },
     {
         "formId": "1l8oOX1VOS76NAi-AOzSOpvVNlLn36COWnpStqTDRDZ0",
-        "titulo_atual": "Atividade 02 — Geossistema, Ecologia da Paisagem e o Modelo Mancha-Corredor-Matriz",
-        "novo_nome": "[AP 2026.1] Atividade 02 — Geossistema, ECL e Modelo MCM",
+        "titulo_atual": "Atividade 04 — Geossistema, ECL e Modelo MCM",
+        "novo_nome": "[AP 2026.1] Atividade 04 — Geossistema, ECL e Modelo MCM",
     },
     {
         "formId": "1wfO176DLftksxDUGtpyDWHQo1fYUdcX_5WkoAI1kREc",
-        "titulo_atual": "Atividade 03 — Escalas, Fragmentação e Resiliência da Paisagem",
-        "novo_nome": "[AP 2026.1] Atividade 03 — Escalas, Fragmentação e Resiliência",
+        "titulo_atual": "Atividade 05 — Escalas, Fragmentação e Resiliência da Paisagem",
+        "novo_nome": "[AP 2026.1] Atividade 05 — Escalas, Fragmentação e Resiliência",
     },
     {
         "formId": "1hBynSWyQWyMA-HfuajzQ0ZewSFFM5FKFB0w3alpCNOE",
-        "titulo_atual": "Atividade 04 — Leitura Cartográfica e Interpretação Visual da Paisagem",
-        "novo_nome": "[AP 2026.1] Atividade 04 — Cartografia e Interpretação Visual",
+        "titulo_atual": "Atividade 06 — Leitura Cartográfica e Interpretação Visual da Paisagem",
+        "novo_nome": "[AP 2026.1] Atividade 06 — Cartografia e Interpretação Visual",
     },
     {
         "formId": "1bMcN_dboUmwu2he7T6DMPoRk121iLE1sy6PF3XRTGS0",
-        "titulo_atual": "Atividade 05 — Sensoriamento Remoto: do Pixel à Paisagem",
-        "novo_nome": "[AP 2026.1] Atividade 05 — Sensoriamento Remoto: do Pixel à Paisagem",
+        "titulo_atual": "Atividade 07 — Sensoriamento Remoto: do Pixel à Paisagem",
+        "novo_nome": "[AP 2026.1] Atividade 07 — Sensoriamento Remoto: do Pixel à Paisagem",
     },
     {
         "formId": "1XRZlXYvekKgVqJE4MWtW_HvOZIm0ouAWJO1ErUjLHE8",
-        "titulo_atual": "Atividade 06 — FRAGSTATS, Grafos e Conectividade",
-        "novo_nome": "[AP 2026.1] Atividade 06 — FRAGSTATS, Grafos e Conectividade",
+        "titulo_atual": "Atividade 08 — FRAGSTATS, Grafos e Conectividade",
+        "novo_nome": "[AP 2026.1] Atividade 08 — FRAGSTATS, Grafos e Conectividade",
     },
     {
         "formId": "1ldpBU-oTivThjYkHIxIewHsQnEIOmTzp1laEgoWUIL4",
-        "titulo_atual": "Atividade 07 — Do Diagnóstico à Ação",
-        "novo_nome": "[AP 2026.1] Atividade 07 — Diagnóstico, Zoneamento e Diretrizes",
+        "titulo_atual": "Atividade 09 — Do Diagnóstico à Ação",
+        "novo_nome": "[AP 2026.1] Atividade 09 — Diagnóstico, Zoneamento e Diretrizes",
     },
 ]
 

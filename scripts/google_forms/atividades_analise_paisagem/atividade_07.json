@@ -1,6 +1,6 @@
 {
-  "title": "Atividade 07 — Do Diagnóstico à Ação: Unidades de Paisagem, Zoneamento e Diretrizes",
-  "description": "Esta atividade abrange os conteúdos do 9º e 10º Encontros:\n• 9º Encontro (06/05), Slides 9b–9c — Unidades de paisagem e diagnóstico integrado (SWOT/FOFA)\n• 10º Encontro (13/05), Slides 10a–10b — Planejamento territorial, NbS, legislação e zoneamentos\n\nEsta é a ÚLTIMA atividade antes do Serious Game (2ª Avaliação) e da atividade de campo. Funciona como revisão integradora de todo o semestre.\n\nPrazo de entrega: até o início do 11º Encontro (20/05) — Serious Game.",
+  "title": "Atividade 08 — FRAGSTATS, Grafos e Conectividade: Medindo a Estrutura da Paisagem",
+  "description": "Esta atividade abrange os conteúdos do 9º Encontro (Slides 9a e 9a_extra):\n• Slide 9a — Métricas de paisagem (FRAGSTATS), conectividade funcional, grafos\n• Slide 9a_extra — Exercício de interpretação crítica de indicadores\n\nO objetivo é avaliar se você consegue interpretar métricas de paisagem e usá-las para diagnosticar o estado de conservação de uma paisagem.\n\nPrazo de entrega: até o início do 10º Encontro (13/05).",
   "sections": [
     {
       "title": "IDENTIFICAÇÃO",
@@ -21,104 +21,110 @@
       ]
     },
     {
-      "title": "Delimitando e caracterizando unidades",
-      "description": "A delimitação de unidades de paisagem é o passo que transforma dados espaciais em diagnóstico territorial.",
+      "title": "Quantificando padrões espaciais",
+      "description": "As métricas de paisagem traduzem a estrutura espacial em números interpretáveis. Responda com base nas aulas e no exercício prático.",
       "questions": [
         {
-          "title": "Unidades de paisagem são delimitadas pela integração de múltiplos critérios. Qual das opções lista CORRETAMENTE os critérios mais utilizados?",
+          "title": "Qual métrica mede a QUANTIDADE de fragmentos de uma determinada classe em uma paisagem?",
           "description": "",
           "type": "MULTIPLE_CHOICE",
           "required": true,
           "options": [
-            "Apenas o tipo de solo.",
-            "Geomorfologia (relevo), uso/cobertura da terra, geologia, solos e drenagem — combinados por sobreposição cartográfica (álgebra de mapas).",
-            "Apenas o índice de vegetação (NDVI).",
-            "A divisão político-administrativa (limites municipais)."
+            "AREA_MN (área média dos fragmentos)",
+            "NP (número de fragmentos / Number of Patches)",
+            "ED (densidade de bordas / Edge Density)",
+            "COHESION (índice de coesão)"
           ]
         },
         {
-          "title": "A matriz SWOT/FOFA espacializada é uma ferramenta de diagnóstico integrado da paisagem. A diferença entre uma SWOT convencional e uma SWOT \"espacializada\" é que:",
+          "title": "Uma paisagem com NP = 150 fragmentos de mata nativa, AREA_MN = 2,3 ha e ED = 45 m/ha indica:",
           "description": "",
           "type": "MULTIPLE_CHOICE",
           "required": true,
           "options": [
-            "A SWOT espacializada associa cada item (força, fraqueza, oportunidade, ameaça) a uma localização geográfica e a uma unidade de paisagem específica.",
-            "A SWOT espacializada não usa mapa — é apenas uma tabela.",
-            "A SWOT espacializada só funciona para empresas, não para territórios.",
-            "Não há diferença — são iguais."
+            "Paisagem bem conservada com grandes blocos de vegetação contínua.",
+            "Paisagem altamente fragmentada com muitos fragmentos pequenos e alta proporção de borda.",
+            "Paisagem sem vegetação nativa.",
+            "Impossível interpretar sem mais dados."
           ]
         },
         {
-          "title": "Considere uma bacia hidrográfica com 4 unidades de paisagem e preencha uma mini-SWOT espacializada para cada unidade (F, Fr, O, A).",
-          "description": "UP1 — Topo de chapada: relevo plano, pastagem extensiva, solo profundo. | UP2 — Encosta íngreme: caatinga remanescente, declividade > 30%, afloramentos. | UP3 — Fundo de vale: mata ciliar fragmentada, agricultura irrigada, açudes. | UP4 — Meia-encosta: mosaico pastagem/caatinga esparsa, solo raso, erosão visível. Para cada UP, indique pelo menos 1 Força, 1 Fraqueza, 1 Oportunidade e 1 Ameaça. Mínimo 12 linhas no total.",
-          "type": "PARAGRAPH",
-          "required": true
-        }
-      ]
-    },
-    {
-      "title": "Da análise à proposição",
-      "description": "",
-      "questions": [
-        {
-          "title": "Quais dos seguintes instrumentos de zoneamento são aplicáveis ao ordenamento territorial de uma bacia hidrográfica? (marque todos os corretos)",
+          "title": "Quais das seguintes métricas são indicadoras de CONECTIVIDADE da paisagem? (marque todas as corretas)",
           "description": "",
           "type": "CHECKBOX",
           "required": true,
           "options": [
-            "ZEE — Zoneamento Ecológico-Econômico",
-            "ZEEC — Zoneamento Ecológico-Econômico Costeiro",
-            "Plano de Bacia Hidrográfica (PNRH)",
-            "Plano de Manejo de Unidade de Conservação",
-            "Zoneamento Geoambiental",
-            "Zoneamento de Aptidão Agrícola"
+            "NP (número de fragmentos)",
+            "CONNECT (índice de conectância — % de conexões entre fragmentos)",
+            "COHESION (índice de coesão — conectividade física)",
+            "SHAPE_MN (forma média das manchas)",
+            "ENN_MN (distância euclidiana média ao vizinho mais próximo)",
+            "PLAND (porcentagem da paisagem ocupada pela classe)"
           ]
         },
         {
-          "title": "As Soluções baseadas na Natureza (NbS — Nature-based Solutions) são relevantes para o planejamento territorial da paisagem porque:",
-          "description": "",
-          "type": "MULTIPLE_CHOICE",
-          "required": true,
-          "options": [
-            "Substituem toda a infraestrutura convencional (pontes, barragens, estradas).",
-            "Utilizam processos e estruturas ecológicas para enfrentar desafios socioambientais (erosão, enchentes, perda de habitat), gerando co-benefícios (biodiversidade, regulação climática, proteção do solo).",
-            "São mais baratas que qualquer alternativa convencional em 100% dos casos.",
-            "São apenas estéticas e não têm função técnica."
-          ]
-        },
-        {
-          "title": "Retomando a bacia das 4 unidades de paisagem (Pergunta 5), proponha DIRETRIZES específicas para cada unidade. Cada diretriz deve incluir: (1) o QUE fazer, (2) ONDE exatamente, (3) POR QUÊ (qual problema resolve), (4) COM QUE instrumento legal/normativo se alinha.",
-          "description": "Mínimo 12 linhas. Pense como um profissional elaborando um relatório técnico.",
+          "title": "Analise os dados abaixo de duas sub-bacias e indique qual está em melhor condição ecológica. Justifique.",
+          "description": "SUB-BACIA A: PLAND = 45%, NP = 32, AREA_MN = 14,1 ha, ENN_MN = 120 m, COHESION = 97,2 | SUB-BACIA B: PLAND = 18%, NP = 87, AREA_MN = 2,1 ha, ENN_MN = 430 m, COHESION = 82,5. Mínimo 6 linhas. Interprete CADA métrica comparativamente.",
           "type": "PARAGRAPH",
           "required": true
         }
       ]
     },
     {
-      "title": "Simulação de relatório técnico",
-      "description": "Esta seção é preparatória para o Serious Game (3ª Avaliação). Exercite seu raciocínio integrando diagnóstico e proposta.",
+      "title": "Graphab e teoria de grafos aplicada à paisagem",
+      "description": "",
       "questions": [
         {
-          "title": "DESAFIO FINAL — Você é o(a) consultor(a) contratado(a) para elaborar o zoneamento geoambiental de uma microbacia de 50 km² no semiárido. O prefeito quer destinar 60% da área para agropecuária e o Ministério Público exige preservação de todas as APPs + 20% de Reserva Legal. Considerando os conceitos de unidades de paisagem, métricas de fragmentação e NbS, como você conciliaria as duas demandas? Proponha uma distribuição espacial viável.",
-          "description": "Mínimo 10 linhas. Este exercício simula o tipo de decisão do Serious Game.",
+          "title": "Na análise de grafos aplicada à Ecologia da Paisagem, os \"nós\" representam _______ e as \"arestas\" representam _______.",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Nós = fragmentos de habitat; Arestas = conexões funcionais (possibilidade de deslocamento entre fragmentos)",
+            "Nós = estradas; Arestas = rios",
+            "Nós = cidades; Arestas = rodovias",
+            "Nós = espécies; Arestas = relações tróficas"
+          ]
+        },
+        {
+          "title": "Qual a principal vantagem da análise de conectividade por grafos sobre a simples medição de distância entre fragmentos (ENN)?",
+          "description": "",
+          "type": "MULTIPLE_CHOICE",
+          "required": true,
+          "options": [
+            "Considera a capacidade de dispersão do organismo-alvo e a resistência da matriz, não apenas a distância física.",
+            "É mais rápida de calcular.",
+            "Não precisa de mapa de uso do solo.",
+            "Funciona apenas para aves e ignora outros animais."
+          ]
+        },
+        {
+          "title": "Um gestor ambiental precisa decidir onde investir R$ 500 mil em restauração florestal para maximizar a conectividade da paisagem. Ele tem duas opções: (A) restaurar 50 ha em um grande fragmento que já tem 200 ha (aumentando para 250 ha); (B) criar 3 corredores de 5 ha cada (total: 15 ha) conectando os 5 maiores fragmentos da bacia. Usando conceitos de conectividade funcional e teoria de grafos, qual estratégia você recomendaria? Por quê?",
+          "description": "Mínimo 6 linhas. Não há resposta única — a qualidade da argumentação é o que será avaliado.",
+          "type": "PARAGRAPH",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Leitura crítica de indicadores",
+      "description": "",
+      "questions": [
+        {
+          "title": "\"Métricas sem contexto são apenas números.\" Explique esta frase usando um exemplo prático. Em que situações uma métrica pode ser ENGANOSA se interpretada isoladamente?",
+          "description": "Mínimo 5 linhas.",
           "type": "PARAGRAPH",
           "required": true
         },
         {
-          "title": "De 1 a 5, o quanto você se sente preparado(a) para o Serious Game da próxima semana?",
+          "title": "De 1 a 5, o quanto você se sente confiante para interpretar uma tabela de métricas FRAGSTATS e produzir um diagnóstico?",
           "description": "",
           "type": "SCALE",
           "required": true,
           "scale_low": 1,
           "scale_high": 5,
-          "scale_low_label": "Nada preparado",
-          "scale_high_label": "Muito preparado"
-        },
-        {
-          "title": "Que conceitos ou temas você gostaria de revisar antes do Serious Game? Registre dúvidas, inseguranças ou sugestões.",
-          "description": "",
-          "type": "PARAGRAPH",
-          "required": false
+          "scale_low_label": "Nada confiante",
+          "scale_high_label": "Muito confiante"
         }
       ]
     }

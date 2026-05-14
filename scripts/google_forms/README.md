@@ -1,6 +1,6 @@
 # Google Forms Creator — Análise da Paisagem (2026.1)
 
-Script Python que cria automaticamente os 7 formulários de atividades da disciplina **Análise da Paisagem** via [Google Forms API v1](https://developers.google.com/forms/api).
+Script Python que cria automaticamente os formulários de atividades da disciplina **Análise da Paisagem** via [Google Forms API v1](https://developers.google.com/forms/api).
 
 ## Estrutura
 
@@ -14,12 +14,13 @@ scripts/google_forms/
 ├── README.md                # Este arquivo
 └── atividades/
     ├── atividade_01.json    # Aula 01: Percepção de paisagem
-    ├── atividade_02.json    # Aulas 02-04: Geossistema, ECL, MCM
-    ├── atividade_03.json    # Aulas 05-06: Escala, fragmentação
-    ├── atividade_04.json    # Aulas 07-10: Cartografia + interpretação
-    ├── atividade_05.json    # Aulas 13-16: Sensoriamento remoto
-    ├── atividade_06.json    # Aulas 17-18: FRAGSTATS, grafos
-    └── atividade_07.json    # Aulas 19-22: Diagnóstico, zoneamento
+    ├── atividade_02.json    # Atividade 03: resenhas sobre Ecologia da Paisagem
+    ├── atividade_03.json    # Atividade 04: geossistema, ECL, MCM
+    ├── atividade_04.json    # Atividade 05: escala, fragmentação
+    ├── atividade_05.json    # Atividade 06: cartografia + interpretação
+    ├── atividade_06.json    # Atividade 07: sensoriamento remoto
+    ├── atividade_07.json    # Atividade 08: FRAGSTATS, grafos
+    └── atividade_08.json    # Atividade 09: diagnóstico, zoneamento
 ```
 
 ## Pré-requisitos
@@ -103,6 +104,7 @@ A Google Forms API **NÃO** permite configurar via código:
 | Limitar a 1 resposta | Configurar manualmente em ⚙️ Configurações |
 | Mensagem de confirmação | Configurar manualmente em ⚙️ Configurações |
 | Tema/cores | Configurar manualmente na interface |
+| Perguntas de upload de arquivo/PDF | Criar e manter manualmente na interface |
 | Inserir imagens nas perguntas | Upload manual ou via Google Drive API |
 
 **Após criar os formulários, abra cada um e configure esses itens manualmente.**
