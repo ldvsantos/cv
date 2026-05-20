@@ -1,0 +1,549 @@
+---
+title: "Análise da Paisagem"
+subtitle: "Aula Extra: Artigos Empíricos Aplicados<br>Curso de Geografia"
+author: "Luiz Diego Vidal Santos"
+format:
+   revealjs:
+      logo: ../../../assets/logo-uefs.webp
+      footer: "UEFS | Análise da Paisagem | Artigos Empíricos Aplicados"
+      slide-number: true
+      theme: [simple, ../../../assets/uefs.scss]
+      controls: true
+      width: 1280
+      height: 720
+      css: ../../../assets/custom.css
+      include-after-body:
+         - ../../../assets/image-lightbox.html
+         - ../../../assets/progress-bar.html
+      transition: slide
+      background-transition: fade
+      preview-links: auto
+      auto-stretch: false
+      scrollable: true
+      min-scale: 0.2
+      max-scale: 2.0
+      margin: 0.04
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text .scrollable}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Problema, evidência e decisão técnica
+- [2]{.circle} Como ler artigo empírico sem transformar a aula em resenha
+- [3]{.circle} Grupos e perguntas-problema
+- [4]{.circle} Síntese: do dado científico ao critério de leitura da paisagem
+- [5]{.circle} Defesa oral e avaliação
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Usar artigos com dados, mapas, figuras ou experimentos como base para interpretar **escala**, **fragmentação**, **conectividade** e **cartografia temática** em Análise da Paisagem.
+:::
+:::
+:::
+
+# [1  -  PROBLEMA, EVIDÊNCIA E DECISÃO]{.section-header}
+
+## O que esta aula não é {.smaller-text .scrollable}
+
+::: {.columns}
+::: {.column width="50%"}
+### Não é seminário-resumo
+
+O grupo não deve apenas responder:
+
+- Quem são os autores?
+- Qual foi o objetivo?
+- Qual foi a metodologia?
+- Quais foram os resultados?
+
+Essas informações ajudam, mas não são o produto final.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**É uma atividade de decisão técnica**
+
+O grupo deve responder:
+
+1. Que problema o artigo ajuda a resolver?
+2. Que evidências sustentam essa resposta?
+3. O que os dados permitem inferir sobre a paisagem?
+4. Que critério técnico pode orientar uma análise aplicada?
+:::
+:::
+:::
+
+---
+
+## Fluxo da atividade {.smaller-text .scrollable}
+
+| Etapa | Ação | Produto parcial |
+|-------|------|-----------------|
+| 1 | Receber a pergunta-problema | Foco da leitura |
+| 2 | Ler resumo, métodos, figuras, tabelas e conclusão | Evidências selecionadas |
+| 3 | Discutir os dados do artigo | Interpretação técnica |
+| 4 | Aplicar ao tema da aula | Critério de leitura da paisagem |
+| 5 | Defender a solução | Síntese em 1 slide ou 1 página |
+
+: {.striped .hover}
+
+::: {.info-box}
+**Regra central:** toda afirmação do grupo precisa estar ligada a uma evidência do artigo: dado, figura, tabela, mapa, resultado ou conclusão operacional.
+:::
+
+# [2  -  COMO LER O ARTIGO]{.section-header}
+
+## Leitura guiada em 5 perguntas {.smaller-text .scrollable}
+
+::: {.columns}
+::: {.column width="50%"}
+### Perguntas de investigação
+
+1. **Qual é o problema espacial?**
+   - escala, fragmentação, conectividade, uso/cobertura, mudança temporal
+
+2. **Que dados foram usados?**
+   - campo, imagem, mapa, métrica de paisagem, série temporal, amostragem biológica
+
+3. **Que variáveis foram medidas?**
+   - área, borda, isolamento, cobertura, conectividade, riqueza, abundância, classes de uso
+:::
+
+::: {.column width="50%"}
+### Perguntas de aplicação
+
+4. **O que os resultados mostram?**
+   - relação entre padrão espacial e processo ambiental
+
+5. **Que decisão técnica pode sair disso?**
+   - escolher escala, priorizar restauração, avaliar conectividade, interpretar mapa
+
+::: {.highlight-box}
+**A leitura deve sair do artigo e chegar à paisagem.**
+
+Não basta explicar o texto. É preciso transformar evidência científica em procedimento de análise.
+:::
+:::
+:::
+
+---
+
+## O que conta como evidência {.smaller-text .scrollable}
+
+::: {.columns}
+::: {.column width="50%"}
+### Evidências fortes
+
+- Resultado numérico
+- Figura ou mapa do artigo
+- Tabela com variáveis medidas
+- Desenho amostral ou experimento
+- Comparação entre escalas, fragmentos, classes ou períodos
+- Relação estatística entre padrão espacial e resposta ambiental
+:::
+
+::: {.column width="50%"}
+### Evidências fracas
+
+- Frase genérica da introdução
+- Conceito sem dado associado
+- Opinião do grupo sem apoio no artigo
+- Exemplo que não aparece nos resultados
+- Recomendação sem ligação com variável medida
+
+::: {.info-box}
+**Critério de qualidade:** o colega precisa conseguir apontar no artigo onde aquela evidência aparece.
+:::
+:::
+:::
+
+# [3  -  GRUPOS E PERGUNTAS-PROBLEMA]{.section-header}
+
+## Grupo 1: escala, padrão e processo {.smaller-text .scrollable}
+
+::: {.columns}
+::: {.column width="55%"}
+### Artigo
+
+Boscolo, D. e Metzger, J. P. (2009). **Is bird incidence in Atlantic forest fragments influenced by landscape patterns at multiple scales?** *Landscape Ecology*, 24, 907-918.
+
+DOI: [10.1007/s10980-009-9370-8](https://doi.org/10.1007/s10980-009-9370-8)
+
+### Por que este artigo?
+
+- Usa dados empíricos em fragmentos de Mata Atlântica
+- Relaciona aves, padrões da paisagem e múltiplas escalas
+- Mostra que a interpretação muda conforme a escala analisada
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**Problema**
+
+Os resultados de uma análise da paisagem mudam quando a escala de observação muda.
+
+Com base no artigo, como escolher a escala adequada para interpretar padrões e processos?
+:::
+:::
+:::
+
+---
+
+## Grupo 1: tarefa e produto {.smaller-text .scrollable}
+
+| Etapa | O grupo deve responder |
+|-------|------------------------|
+| Dados | Que dados biológicos e espaciais foram usados? |
+| Padrões | Quais variáveis de paisagem foram medidas? |
+| Escala | Como a resposta das aves variou conforme a escala? |
+| Aplicação | Que cuidados devem orientar escala, grão e extensão? |
+
+: {.striped .hover}
+
+::: {.info-box}
+**Produto:** quadro de leitura multiescalar, mostrando como cada escala analisada no artigo muda a interpretação dos padrões e processos da paisagem.
+:::
+
+---
+
+## Grupo 1: como montar o quadro {.smaller-text .scrollable}
+
+O quadro é uma tabela para organizar a leitura do artigo. Ele deve mostrar que **escala**, aqui, não é apenas escala cartográfica; é também a extensão usada para medir a paisagem, como fragmento, entorno, buffer ou mosaico regional.
+
+| Escala analisada | Variável de paisagem | Resposta observada | Interpretação do processo | Cuidado metodológico |
+|------------------|----------------------|--------------------|---------------------------|----------------------|
+| Fragmento/local | Área, forma, borda ou condição interna | Como as aves responderam ao fragmento | Processo mais ligado à qualidade ou tamanho do habitat local | Não explicar a resposta apenas pela paisagem ampla |
+| Entorno próximo | Cobertura florestal, matriz ou isolamento em raio curto | Como a resposta mudou ao incluir o entorno | A matriz pode facilitar ou limitar movimento, abrigo ou alimentação | Definir claramente o raio ou buffer de análise |
+| Paisagem ampla | Configuração dos fragmentos e cobertura no mosaico | Respostas que aparecem em escala maior | Dispersão, conectividade e fluxos dependem do arranjo regional | Não comparar escalas diferentes como se fossem equivalentes |
+| Escala mais explicativa | Variável com relação mais clara nos resultados | Escala que melhor explicou a resposta biológica | Escala mais adequada para aquele organismo/processo | A melhor escala depende da pergunta e do grupo analisado |
+
+: {.striped .hover}
+
+::: {.info-box}
+**Síntese esperada:** o grupo deve explicar qual escala ajudou mais a interpretar os dados do artigo e por que essa escolha importa para uma análise aplicada da paisagem.
+:::
+
+## Grupo 2: fluxos, fragmentação e resiliência {.smaller-text .scrollable}
+
+::: {.columns}
+::: {.column width="55%"}
+### Artigo
+
+Laurance, W. F. et al. (2002). **Ecosystem decay of Amazonian forest fragments: a 22-year investigation.** *Conservation Biology*, 16(3), 605-618.
+
+DOI: [10.1046/j.1523-1739.2002.01025.x](https://doi.org/10.1046/j.1523-1739.2002.01025.x)
+
+### Por que este artigo?
+
+- Usa dados de longo prazo do Projeto Dinâmica Biológica de Fragmentos Florestais
+- Avalia área, borda, isolamento e tempo após fragmentação
+- Permite discutir fragmentação como processo espacial e temporal
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**Problema**
+
+Fragmentos florestais não perdem qualidade ambiental de uma vez. Eles mudam ao longo do tempo.
+
+Com base no artigo, que evidências mostram que a fragmentação é um processo espacial e temporal?
+:::
+:::
+:::
+
+---
+
+## Grupo 2: tarefa e produto {.smaller-text .scrollable}
+
+| Etapa | O grupo deve responder |
+|-------|------------------------|
+| Desenho do estudo | Como os fragmentos foram acompanhados? |
+| Evidências | Que resultados aparecem sobre área, borda, isolamento ou tempo? |
+| Processo | Como esses resultados afetam fluxos ecológicos e resiliência? |
+| Aplicação | Que critérios priorizam monitoramento ou restauração? |
+
+: {.striped .hover}
+
+::: {.info-box}
+**Produto:** linha de tempo causa-efeito ligando fragmentação, borda, isolamento, alterações ecológicas, resiliência e manejo.
+:::
+
+---
+
+## Grupo 2: como montar a linha de tempo {.smaller-text .scrollable}
+
+A linha de tempo deve organizar a fragmentação como um **processo**, não como uma fotografia. O grupo deve mostrar como a paisagem muda depois da formação dos fragmentos e quais efeitos se acumulam.
+
+| Momento ou condição | Evidência do artigo | Processo associado | Implicação para manejo |
+|---------------------|---------------------|--------------------|------------------------|
+| Formação do fragmento | Resultado sobre área, borda ou isolamento | Redução de habitat e aumento de borda | Identificar fragmentos mais vulneráveis |
+| Primeiros efeitos de borda | Mudança em microclima, mortalidade ou estrutura da vegetação | Entrada de vento, luz, ressecamento ou perturbação | Priorizar bordas críticas e zonas de amortecimento |
+| Isolamento e matriz | Resultado sobre distância, entorno ou conectividade | Redução de fluxos ecológicos e recolonização | Avaliar restauração de conexões ou permeabilidade da matriz |
+| Persistência no tempo | Evidência de mudança após anos de fragmentação | Degradação acumulada ou perda de resiliência | Planejar monitoramento, não apenas intervenção pontual |
+| Resposta de manejo | Síntese dos resultados mais fortes | Recuperação, proteção ou redução de pressão | Definir prioridade técnica de restauração ou conservação |
+
+: {.striped .hover}
+
+::: {.info-box}
+**Síntese esperada:** o grupo deve explicar por que a fragmentação envolve área, borda, isolamento e tempo, e não apenas o número de fragmentos no mapa.
+:::
+
+## Grupo 3: conectividade conceitual aplicada {.smaller-text .scrollable}
+
+::: {.columns}
+::: {.column width="55%"}
+### Artigo
+
+Martensen, A. C., Ribeiro, M. C., Banks-Leite, C., Prado, P. I. e Metzger, J. P. (2012). **Associations of forest cover, fragment area, and connectivity with Neotropical understory bird species richness and abundance.** *Conservation Biology*, 26(6), 1100-1111.
+
+DOI: [10.1111/j.1523-1739.2012.01940.x](https://doi.org/10.1111/j.1523-1739.2012.01940.x)
+:::
+
+::: {.column width="45%"}
+### Por que este artigo?
+
+- Usa dados de aves de sub-bosque
+- Relaciona cobertura florestal, área do fragmento e conectividade
+- Ajuda a discutir conectividade com evidência biológica, não só como desenho no mapa
+
+::: {.highlight-box}
+**Problema**
+
+Quando conectividade deve ser prioridade e quando área de fragmento ou cobertura florestal podem ser mais importantes?
+:::
+:::
+:::
+
+---
+
+## Grupo 3: tarefa e produto {.smaller-text .scrollable}
+
+| Etapa | O grupo deve responder |
+|-------|------------------------|
+| Variáveis | Quais variáveis foram analisadas? |
+| Comparação | Qual foi o papel da cobertura, da área e da conectividade? |
+| Interpretação | A conectividade estrutural correspondeu à resposta biológica? |
+| Aplicação | Quando conectar, ampliar ou proteger fragmentos? |
+
+: {.striped .hover}
+
+::: {.info-box}
+**Produto:** matriz de decisão com situação da paisagem, evidência do artigo, critério técnico e ação recomendada.
+:::
+
+---
+
+## Grupo 3: como montar a matriz de decisão {.smaller-text .scrollable}
+
+A matriz de decisão deve transformar os resultados do artigo em uma escolha técnica. O grupo precisa mostrar quando faz sentido **conectar**, **ampliar**, **proteger** ou **restaurar** fragmentos.
+
+| Situação da paisagem | Evidência do artigo | Critério técnico | Ação recomendada |
+|----------------------|---------------------|------------------|------------------|
+| Baixa cobertura florestal no entorno | Resultado sobre cobertura e riqueza/abundância | A paisagem regional limita a resposta biológica | Restaurar cobertura antes de depender só de corredores |
+| Fragmentos pequenos | Resultado sobre área do fragmento | O tamanho pode limitar habitat, borda interna e populações | Ampliar ou proteger fragmentos maiores/remanescentes-chave |
+| Fragmentos isolados | Resultado sobre conectividade ou distância | O fluxo biológico pode estar limitado | Criar conexões, stepping stones ou matriz mais permeável |
+| Boa conectividade, mas baixa qualidade local | Resultado que mostre efeito local importante | Conectar não resolve se o habitat for insuficiente | Combinar conexão com manejo da qualidade do fragmento |
+| Evidência mais forte do estudo | Variável com maior associação à resposta das aves | Priorizar o fator que melhor explica a resposta biológica | Justificar a decisão com dados, não só com desenho do mapa |
+
+: {.striped .hover}
+
+::: {.info-box}
+**Síntese esperada:** o grupo deve mostrar que conectividade é uma decisão dependente da cobertura, da área dos fragmentos e da resposta biológica observada.
+:::
+
+## Grupo 4: cartografia temática e interpretação visual {.smaller-text .scrollable}
+
+::: {.columns}
+::: {.column width="55%"}
+### Artigo
+
+Souza Jr., C. M. et al. (2020). **Reconstructing three decades of land use and land cover changes in Brazilian biomes with Landsat archive and Earth Engine.** *Remote Sensing*, 12(17), 2735.
+
+DOI: [10.3390/rs12172735](https://doi.org/10.3390/rs12172735)
+
+### Por que este artigo?
+
+- Usa dados Landsat e Google Earth Engine
+- Relaciona sensoriamento remoto, classificação temática e série temporal
+- Dialoga diretamente com MapBiomas e leitura de uso/cobertura
+:::
+
+::: {.column width="45%"}
+::: {.highlight-box}
+**Problema**
+
+Um mapa de uso e cobertura da terra será usado para interpretar transformações da paisagem.
+
+Que informações o mapa permite inferir e quais cuidados são necessários antes de transformar o mapa em diagnóstico?
+:::
+:::
+:::
+
+---
+
+## Grupo 4: tarefa e produto {.smaller-text .scrollable}
+
+| Etapa | O grupo deve responder |
+|-------|------------------------|
+| Dados | Qual é a fonte dos dados e a escala/resolução? |
+| Classes | Que classes temáticas são mapeadas? |
+| Série temporal | O que a mudança no tempo permite interpretar? |
+| Incerteza | Quais limites existem antes de usar o mapa como diagnóstico? |
+
+: {.striped .hover}
+
+::: {.info-box}
+**Produto:** lista priorizada de camadas cartográficas e chave de interpretação visual para leitura de uso/cobertura.
+:::
+
+---
+
+## Grupo 4: como montar a lista e a chave visual {.smaller-text .scrollable}
+
+O produto tem duas partes. Primeiro, o grupo escolhe quais camadas cartográficas são indispensáveis. Depois, monta uma chave simples para interpretar visualmente a paisagem e evitar transformar mapa em diagnóstico automático.
+
+| Camada ou informação | Para que serve | Evidência no artigo | Cuidado antes do diagnóstico |
+|----------------------|----------------|---------------------|------------------------------|
+| Uso e cobertura da terra | Identificar classes dominantes e mudanças | Classes temáticas e série temporal | Verificar resolução, legenda e acurácia |
+| Série temporal | Reconhecer expansão, retração ou permanência | Comparação entre anos | Não interpretar um único ano como tendência |
+| Imagem Landsat/MapBiomas | Apoiar leitura de padrões espaciais | Base usada na classificação | Considerar erro de classificação e mistura de pixels |
+| Relevo, drenagem ou estradas | Contextualizar pressões e processos | Camadas complementares sugeridas pelo diagnóstico | Não explicar padrão de uso sem contexto físico e antrópico |
+
+: {.striped .hover}
+
+### Chave de interpretação visual
+
+| Elemento visual | Pergunta para orientar a leitura |
+|-----------------|----------------------------------|
+| Cor/tonalidade | A classe parece vegetação, solo exposto, água, agricultura ou área urbana? |
+| Textura | A superfície é homogênea, rugosa, fina, grosseira ou irregular? |
+| Forma | O padrão é geométrico, linear, irregular, arredondado ou alongado? |
+| Padrão/contexto | A feição aparece perto de estrada, rio, encosta, fragmento ou área urbana? |
+| Mudança temporal | A classe cresceu, diminuiu, permaneceu ou foi substituída? |
+
+: {.striped .hover}
+
+::: {.info-box}
+**Síntese esperada:** o grupo deve explicar quais camadas entram primeiro no diagnóstico, quais sinais visuais sustentam a interpretação e quais incertezas precisam ser mencionadas.
+:::
+
+# [4  -  SÍNTESE DO GRUPO]{.section-header}
+
+## Modelo de síntese em 1 slide {.smaller-text .scrollable}
+
+::: {.columns}
+::: {.column width="50%"}
+### Estrutura obrigatória
+
+1. **Problema**
+   - reescrever em uma frase curta
+
+2. **Evidências do artigo**
+   - 3 a 5 evidências
+   - cada evidência deve indicar figura, tabela, resultado ou trecho
+
+3. **Interpretação técnica**
+   - o que a evidência revela sobre a paisagem
+:::
+
+::: {.column width="50%"}
+### Fechamento aplicado
+
+4. **Critério de leitura da paisagem**
+   - escala, fragmentação, conectividade ou cartografia
+
+5. **Recomendação operacional**
+   - como aplicar o critério em um diagnóstico
+
+::: {.highlight-box}
+**Formato:** 1 slide ou 1 página por grupo.
+
+O foco é clareza, evidência e aplicação.
+:::
+:::
+:::
+
+---
+
+## Modelo de matriz de evidências {.smaller-text .scrollable}
+
+| Evidência do artigo | O que mostra | Interpretação para a paisagem | Critério técnico |
+|---------------------|--------------|-------------------------------|------------------|
+| Figura, tabela ou resultado 1 | Descrever o dado | Explicar o processo | Indicar como usar |
+| Figura, tabela ou resultado 2 | Descrever o dado | Explicar o processo | Indicar como usar |
+| Figura, tabela ou resultado 3 | Descrever o dado | Explicar o processo | Indicar como usar |
+
+: {.striped .hover}
+
+::: {.info-box}
+**Exemplo de critério técnico:** "avaliar conectividade apenas depois de verificar cobertura florestal e área dos fragmentos", ou "não comparar padrões medidos em escalas incompatíveis".
+:::
+
+# [5  -  DEFESA E AVALIAÇÃO]{.section-header}
+
+## Defesa oral {.smaller-text .scrollable}
+
+### Tempo por grupo
+
+| Momento | Tempo |
+|---------|:-----:|
+| Problema e artigo | 1 min |
+| Evidências principais | 3 min |
+| Aplicação técnica | 2 min |
+| Perguntas | 2 min |
+
+: {.striped .hover}
+
+::: {.info-box}
+**Foco da defesa:** apresentar o problema, sustentar a resposta com evidências do artigo e fechar com um critério técnico de leitura da paisagem.
+:::
+
+---
+
+## Critérios de avaliação {.smaller-text .scrollable}
+
+| Critério | Pontos | O que será observado |
+|----------|:-----:|----------------------|
+| Entendimento do artigo e do problema | 2 | O grupo compreendeu o foco empírico do estudo |
+| Uso correto de evidências | 2 | As afirmações foram sustentadas por dados, figuras ou resultados |
+| Aplicação ao tema da aula | 2 | A resposta dialogou com escala, fragmentação, conectividade ou cartografia |
+| Proposta técnica clara | 2 | O grupo formulou critério ou recomendação aplicável |
+| Defesa oral e integração | 2 | A apresentação foi objetiva e conectada aos demais temas |
+
+: {.striped .hover}
+
+::: {.info-box}
+**Total:** 10 pontos.
+:::
+
+## Fechamento {.smaller-text .scrollable}
+
+::: {.columns}
+::: {.column width="50%"}
+### O que deve ficar da aula
+
+- Paisagem é leitura de **padrões e processos**
+- Escala muda a interpretação
+- Fragmentação combina área, borda, isolamento e tempo
+- Conectividade precisa ser ligada ao fluxo ou organismo analisado
+- Mapa temático é evidência, mas também tem incerteza
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Síntese operacional**
+
+Um bom diagnóstico de paisagem não nasce apenas da descrição do mapa.
+
+Ele combina **evidência**, **escala**, **processo** e **decisão técnica**.
+:::
+:::
+:::

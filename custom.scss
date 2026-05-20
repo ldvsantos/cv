@@ -224,6 +224,27 @@ h2:has(+ p:first-of-type) + p + .text-center {
   font-size: 1.15rem;
 }
 
+.slide-card.slide-card--activity-extra {
+  border-left-color: #D97706;
+  background: linear-gradient(135deg, #fff7ed 0%, #ecfdf5 100%);
+}
+
+.slide-card.slide-card--activity-extra .slide-info .card-title {
+  color: #9A3412;
+}
+
+.slide-card .slide-icon.slide-icon--activity-extra {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 0.4rem;
+  background: #D97706;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+}
+
 .slide-card .slide-info h4,
 .slide-card .slide-info .card-title {
   margin: 0 0 0.25rem 0;
