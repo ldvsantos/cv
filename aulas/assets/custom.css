@@ -756,3 +756,60 @@ section.title-slide.slide.level1:has(.section-header) div {
   background-color: var(--uefs-fundo-claro, #F2F2F2);
   z-index: 9998;
 }
+
+/* ============================================================
+   LaTeX/TikZ-style Bloom Pyramid (clean trapezoid stack)
+   ============================================================ */
+.bloom-pyramid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin: 12px auto;
+  font-family: 'Latin Modern Roman', 'CMU Serif', 'Georgia', serif;
+  max-width: 720px;
+}
+.bloom-pyramid .bp-row {
+  position: relative;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 14px;
+  border: 1.5px solid #0D0D0D;
+  box-shadow: 1px 1px 0 #0D0D0D;
+  line-height: 1.15;
+  font-size: 0.78em;
+  letter-spacing: 0.3px;
+}
+.bloom-pyramid .bp-row small {
+  display: block;
+  font-weight: 400;
+  font-size: 0.82em;
+  opacity: 0.92;
+  margin-top: 2px;
+  font-style: italic;
+}
+.bloom-pyramid .bp-row .bp-num {
+  display: inline-block;
+  background: rgba(255,255,255,0.18);
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 50%;
+  width: 1.6em;
+  height: 1.6em;
+  line-height: 1.55em;
+  margin-right: 6px;
+  font-weight: 700;
+}
+/* Trapezoidal shapes (LaTeX/TikZ feel) */
+.bloom-pyramid .bp-1 { width: 30%; clip-path: polygon(15% 0, 85% 0, 100% 100%, 0% 100%); background:#0D0D0D; }
+.bloom-pyramid .bp-2 { width: 42%; clip-path: polygon(12% 0, 88% 0, 100% 100%, 0% 100%); background:#2135A6; }
+.bloom-pyramid .bp-3 { width: 54%; clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%); background:#27368C; }
+.bloom-pyramid .bp-4 { width: 66%; clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%); background:#586BA6; color:#fff; }
+.bloom-pyramid .bp-5 { width: 80%; clip-path: polygon(6% 0, 94% 0, 100% 100%, 0% 100%); background:#C5CEE8; color:#0D0D0D; }
+.bloom-pyramid .bp-6 { width: 94%; clip-path: polygon(4% 0, 96% 0, 100% 100%, 0% 100%); background:#F2F2F2; color:#0D0D0D; border-color:#586BA6; }
+.bloom-pyramid .bp-5 .bp-num,
+.bloom-pyramid .bp-6 .bp-num {
+  background: rgba(13,13,13,0.10);
+  border-color: rgba(13,13,13,0.4);
+  color: #0D0D0D;
+}

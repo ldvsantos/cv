@@ -98,21 +98,30 @@ Na versão revisada, **Criar** (antigo Síntese) é o nível mais alto — acima
 
 ## Pirâmide Cognitiva {.smaller-text}
 
-```{mermaid}
-%%| fig-width: 10
-flowchart BT
-  L1["1. LEMBRAR<br>Recuperar informação da memória"] --> L2["2. ENTENDER<br>Construir significado"]
-  L2 --> L3["3. APLICAR<br>Usar procedimento em situação conhecida"]
-  L3 --> L4["4. ANALISAR<br>Decompor e identificar relações"]
-  L4 --> L5["5. AVALIAR<br>Julgar com critérios"]
-  L5 --> L6["6. CRIAR<br>Gerar algo novo e original"]
-  style L1 fill:#F2F2F2,color:#0D0D0D
-  style L2 fill:#C5CEE8,color:#0D0D0D
-  style L3 fill:#586BA6,color:#fff
-  style L4 fill:#27368C,color:#fff
-  style L5 fill:#2135A6,color:#fff
-  style L6 fill:#0D0D0D,color:#fff
-```
+::: {.bloom-pyramid}
+::: {.bp-row .bp-1}
+[6]{.bp-num} **CRIAR** <small>Gerar algo novo e original</small>
+:::
+::: {.bp-row .bp-2}
+[5]{.bp-num} **AVALIAR** <small>Julgar com critérios e padrões</small>
+:::
+::: {.bp-row .bp-3}
+[4]{.bp-num} **ANALISAR** <small>Decompor e identificar relações</small>
+:::
+::: {.bp-row .bp-4}
+[3]{.bp-num} **APLICAR** <small>Usar procedimento em situação conhecida</small>
+:::
+::: {.bp-row .bp-5}
+[2]{.bp-num} **ENTENDER** <small>Construir significado</small>
+:::
+::: {.bp-row .bp-6}
+[1]{.bp-num} **LEMBRAR** <small>Recuperar informação da memória</small>
+:::
+:::
+
+::: {.info-box}
+Hierarquia cumulativa: cada nível superior pressupõe o domínio dos anteriores. As habilidades de **ordem superior** (HOTS, níveis 4–6) sustentam-se sobre as de **ordem inferior** (LOTS, níveis 1–3).
+:::
 
 
 ## Escada de Categorização {.smaller-text}
@@ -124,7 +133,7 @@ A escada ilustra a **progressão cumulativa** dos níveis cognitivos: cada degra
 :::
 
 
-## Níveis 1 a 3: Habilidades de Ordem Inferior (LOTS) {.smaller-text}
+## Níveis 1 a 3: Habilidades de Ordem Inferior (LOTS) {.smaller-text .scrollable}
 
 ::: {.columns}
 :::: {.column width="55%"}
@@ -150,7 +159,7 @@ A escada ilustra a **progressão cumulativa** dos níveis cognitivos: cada degra
 :::
 
 
-## Níveis 4 a 6: Habilidades de Ordem Superior (HOTS) {.smaller-text}
+## Níveis 4 a 6: Habilidades de Ordem Superior (HOTS) {.smaller-text .scrollable}
 
 ::: {.columns}
 :::: {.column width="55%"}
@@ -194,7 +203,7 @@ A escada ilustra a **progressão cumulativa** dos níveis cognitivos: cada degra
 
 # [VERBOS OPERACIONAIS]{.section-header}
 
-## Guia Rápido de Verbos por Nível {.smaller-text}
+## Guia Rápido de Verbos por Nível {.smaller-text .scrollable}
 
 | Nível | Verbos Recomendados | Evitar |
 |:---|:---|:---|
@@ -217,7 +226,7 @@ A escada ilustra a **progressão cumulativa** dos níveis cognitivos: cada degra
 ![](fig_bloom_analises.png){fig-align="center" width="95%"}
 
 
-## Exemplo Prático: Erosão {.smaller-text}
+## Exemplo Prático: Erosão {.smaller-text .scrollable}
 
 | Nível | Objetivo | Análise | Complexidade |
 |:---:|:---|:---|:---:|
@@ -252,7 +261,7 @@ Note como cada nível exige **mais variáveis**, **mais técnicas** e **raciocí
 > "*Analisar a influência do tipo de cobertura vegetal (caatinga) sobre a taxa de perda de solo na microbacia do Rio Jacuípe, utilizando ANOVA fatorial e regressão múltipla*"
 
 
-## Alinhamento Objetivo–Método–Análise {.smaller-text}
+## Alinhamento Objetivo–Método–Análise {.smaller-text .scrollable}
 
 | Componente | Nível 3 (Aplicar) | Nível 5 (Avaliar) |
 |:---|:---|:---|
@@ -262,7 +271,7 @@ Note como cada nível exige **mais variáveis**, **mais técnicas** e **raciocí
 | **Produto** | Mapa de estimativa | Instrumento validado |
 
 
-## Erros Comuns e Correções {.smaller-text}
+## Erros Comuns e Correções {.smaller-text .scrollable}
 
 | Erro | Problema | Correção |
 |:---|:---|:---|
@@ -276,7 +285,7 @@ Note como cada nível exige **mais variáveis**, **mais técnicas** e **raciocí
 :::
 
 
-## Resumo: Dimensão do Conhecimento {.smaller-text}
+## Resumo: Dimensão do Conhecimento {.smaller-text .scrollable}
 
 Anderson & Krathwohl (2001) adicionaram uma segunda dimensão:
 
