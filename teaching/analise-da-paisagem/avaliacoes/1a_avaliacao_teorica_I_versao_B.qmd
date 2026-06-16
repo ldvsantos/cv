@@ -1,0 +1,204 @@
+---
+title: "1ª Avaliação — Análise da Paisagem (Teórica I) — Versão B"
+lang: pt
+format:
+  html:
+    toc: false
+    page-layout: full
+    embed-resources: true
+    css: ../../../styles.css
+  pdf:
+    documentclass: scrartcl
+    papersize: a4
+    fontsize: 11pt
+    geometry:
+      - top=18mm
+      - bottom=18mm
+      - left=22mm
+      - right=22mm
+    pdf-engine: lualatex
+    toc: false
+    number-sections: false
+    include-in-header:
+      text: |
+        \AtBeginDocument{\renewcommand{\maketitle}{}}
+---
+
+::: {.content-visible when-format="pdf"}
+
+```{=latex}
+\begin{center}
+{\small\bfseries UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA}\\
+{\small DEPARTAMENTO DE CIÊNCIAS HUMANAS E FILOSOFIA}\\
+{\small CURSO DE GEOGRAFIA}
+\end{center}
+
+\vspace{6pt}\hrule\vspace{6pt}
+
+\noindent\textbf{Curso:} Geografia \quad $\cdot$ \quad \textbf{Disciplina:} Análise da Paisagem \quad $\cdot$ \quad \textbf{Semestre:} 2026.1\\
+\noindent\textbf{Docente:} Luiz Diego Vidal Santos \quad $\cdot$ \quad \textbf{Valor:} 10,0 \quad $\cdot$ \quad \textbf{Horário:} 08h00 às 11h30\\[4pt]
+\noindent\textbf{Aluno(a):} \hrulefill\\[4pt]
+\noindent\textbf{Matrícula:} \rule{4cm}{0.4pt} \hfill \textbf{Data:} 29/04/2026 \hfill \textbf{Nota:} \rule{2.5cm}{0.4pt}
+
+\vspace{8pt}\hrule\vspace{10pt}
+
+\begin{center}
+{\large\bfseries 1\textsuperscript{a} Avaliação --- Análise da Paisagem (Teórica I) --- Versão B}
+\end{center}
+
+\vspace{4pt}
+```
+
+:::
+
+::: {.content-visible when-format="html"}
+
+::: {style="text-align:center; font-size:0.9em; line-height:1.4;"}
+**UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA**
+DEPARTAMENTO DE CIÊNCIAS HUMANAS E FILOSOFIA
+CURSO DE GEOGRAFIA
+:::
+
+---
+
+**Curso:** Geografia &nbsp;·&nbsp; **Disciplina:** Análise da Paisagem &nbsp;·&nbsp; **Semestre:** 2026.1
+**Docente:** Luiz Diego Vidal Santos &nbsp;·&nbsp; **Valor:** 10,0 &nbsp;·&nbsp; **Horário:** 08h00 às 11h30 &nbsp;·&nbsp; **Data:** 29/04/2026
+
+**Aluno(a):** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+---
+
+# 1ª Avaliação — Análise da Paisagem (Teórica I) — Versão B {.unnumbered}
+
+:::
+
+> **Instruções.** Leia com atenção. Marque uma única alternativa por questão de múltipla escolha. Use caneta azul ou preta. Boa prova.
+
+---
+
+## Parte I — Múltipla Escolha (5,5 pts · 0,5 cada)
+
+**1.** No método humboldtiano, o *Naturgemälde* expressa uma forma integrada de representar a paisagem. Essa contribuição pode ser corretamente entendida como:
+
+a) Um recurso exclusivamente artístico, sem valor para a ciência geográfica.
+b) Uma separação entre clima, relevo, vegetação e sociedade para evitar sínteses gerais.
+c) Uma representação sintética que articula altitude, clima, vegetação e distribuição espacial dos fenômenos.
+d) Um modelo jurídico de proteção de paisagens culturais.
+e) Um procedimento estatístico para medir fragmentação de habitats.
+
+**2.** Ao passar do uso cotidiano para o uso científico, o conceito de paisagem deixa de significar apenas “cenário visível” e passa a ser tratado, na Geografia, como:
+
+a) Uma imagem subjetiva sem relação com processos materiais.
+b) Uma totalidade complexa, resultante da interação entre componentes físicos, bióticos e socioespaciais.
+c) Um recorte administrativo definido por limites municipais.
+d) Um sinônimo de bioma, determinado exclusivamente pelo clima regional.
+e) Uma categoria estética sem utilidade para diagnóstico territorial.
+
+**3.** Em Yi-Fu Tuan, o conceito de topofilia permite compreender que a paisagem:
+
+a) É percebida apenas por meio de sensores e mapas temáticos.
+b) Pode envolver vínculos afetivos positivos entre pessoas, lugares, memórias e experiências.
+c) Deve ser analisada sem considerar cultura, sentidos ou história pessoal.
+d) Corresponde à aversão generalizada a ambientes rurais.
+e) É uma unidade taxonômica inferior ao geótopo.
+
+**4.** Em Augustin Berque, a relação paisagem-marca / paisagem-matriz indica que:
+
+a) A paisagem-marca é natural e a paisagem-matriz é urbana.
+b) A paisagem-marca corresponde ao mapa e a paisagem-matriz corresponde ao território real.
+c) A paisagem registra ações sociais anteriores e, ao mesmo tempo, condiciona percepções e ações futuras.
+d) A paisagem-marca é sempre preservada pelo IPHAN, enquanto a matriz não recebe proteção.
+e) Marca e matriz são conceitos equivalentes a fragmento e corredor.
+
+**5.** Para Denis Cosgrove, a paisagem pode ser compreendida como uma “forma de ver”. Essa formulação destaca que:
+
+a) A paisagem é uma construção visual e cultural associada a valores, símbolos e relações de poder.
+b) A paisagem é apenas o conjunto de formas naturais anteriores à sociedade.
+c) O olhar sobre a paisagem é neutro e independente da posição social do observador.
+d) A paisagem deve ser reduzida a métricas de área, perímetro e conectividade.
+e) A percepção da paisagem elimina a possibilidade de análise científica.
+
+**6.** A definição de Georges Bertrand para a paisagem enfatiza:
+
+a) A soma de elementos isolados, sem interação dinâmica.
+b) A separação metodológica entre fatores físicos, biológicos e humanos.
+c) A combinação dinâmica e instável de elementos físicos, biológicos e antrópicos em uma porção do espaço.
+d) A substituição da paisagem pelo conceito de território político.
+e) A exclusão da ação humana das unidades de análise.
+
+**7.** A diferença central entre a formulação original de Sochava e a reformulação de Bertrand para o geossistema é que Bertrand:
+
+a) Removeu o componente biológico da análise da paisagem.
+b) Tratou a ação antrópica como componente interno do sistema, não apenas como perturbação externa.
+c) Definiu o geossistema como sinônimo de ecossistema fechado.
+d) Abandonou a ideia de escala na análise da paisagem.
+e) Restringiu o geossistema a áreas urbanas densamente ocupadas.
+
+**8.** Na leitura de Ab'Sáber sobre os domínios de natureza do Brasil, a Chapada Diamantina pode ser interpretada, em relação ao domínio das Caatingas, como:
+
+a) Um exemplo de matriz urbana contínua.
+b) Um enclave ou refúgio de altitude, com condições ambientais distintas do semiárido circundante.
+c) Uma área sem valor paisagístico por não corresponder ao bioma dominante.
+d) Um corredor ripário obrigatório definido pelo Código Florestal.
+e) Um geótopo homogêneo de escala pontual.
+
+**9.** Em Monteiro, as derivações antropogênicas ajudam a interpretar transformações da paisagem. A associação correta é:
+
+a) Supressão: introdução de espécies exóticas; inserção: retirada da vegetação; alteração funcional: ausência de mudanças nos fluxos.
+b) Supressão: remoção de componentes; inserção: introdução de componentes exógenos; alteração funcional: modificação de fluxos e ritmos do sistema.
+c) Supressão: recuperação ecológica; inserção: equilíbrio climático; alteração funcional: conservação integral.
+d) Supressão: leitura perceptiva; inserção: vínculo afetivo; alteração funcional: patrimônio cultural.
+e) Supressão, inserção e alteração funcional são termos equivalentes.
+
+**10.** A Ecologia da Paisagem, conforme discutida em aula, combina duas tradições principais. É correto afirmar que:
+
+a) A tradição geográfica surgiu nos Estados Unidos e rejeitou o planejamento territorial.
+b) A tradição ecológica nasceu na Europa com foco exclusivo em paisagens culturais.
+c) A tradição geográfica enfatiza integração sociedade-natureza e planejamento; a tradição ecológica enfatiza padrão espacial, processos ecológicos e conservação.
+d) Ambas as tradições recusam o uso de cartografia e sensoriamento remoto.
+e) A tradição ecológica considera irrelevante a fragmentação de habitats.
+
+**11.** No modelo matriz-mancha-corredor, proposto por Forman e Godron, é correto afirmar que:
+
+a) A matriz é sempre o fragmento mais preservado da paisagem.
+b) Manchas são unidades lineares que conectam áreas de habitat.
+c) Corredores são áreas dominantes que controlam toda a dinâmica da paisagem.
+d) A matriz é a cobertura dominante, as manchas diferem da matriz e os corredores podem conectar manchas.
+e) O arranjo espacial dos elementos não interfere nos fluxos de organismos, energia ou matéria.
+
+---
+
+## Parte II — Complementar (4,5 pts · 0,5 cada)
+
+**Complete as lacunas** com o termo correto.
+
+**12.** Na análise da paisagem, o objeto de estudo deve ser lido como uma \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, articulando forma, função, processos e significados.
+
+**13.** O elo afetivo positivo entre pessoa e lugar, mediado por sentidos, cultura, experiência e memória, é chamado por Yi-Fu Tuan de \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.
+
+**14.** Em Berque, a paisagem como registro material da ação social sobre o território recebe o nome de paisagem-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.
+
+**15.** Em Cosgrove, a paisagem é uma \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ de ver, historicamente construída e vinculada a valores e relações de poder.
+
+**16.** No tripé de Bertrand, o geossistema resulta da interação entre potencial ecológico, exploração biológica e \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.
+
+**17.** Na hierarquia de Bertrand, a menor unidade homogênea de análise da paisagem é o \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.
+
+**18.** A classificação das grandes paisagens brasileiras proposta por Ab'Sáber é conhecida como domínios \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.
+
+**19.** Na definição operacional de Forman e Godron, a Ecologia da Paisagem estuda a estrutura, a função e a \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ em áreas espacialmente heterogêneas.
+
+**20.** No modelo matriz-mancha-corredor, a cobertura dominante que controla a dinâmica e define o contexto das demais unidades é chamada de \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.
+
+---
+
+::: {.content-visible when-format="html"}
+---
+*Folha de respostas segue em página própria na versão impressa.*
+:::
+
+**Folha de respostas — Múltipla escolha**
+
+| Questão | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
+|:-------:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:--:|:--:|
+| Resposta |   |   |   |   |   |   |   |   |   |    |    |
