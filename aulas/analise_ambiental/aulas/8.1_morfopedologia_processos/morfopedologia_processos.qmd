@@ -1,0 +1,177 @@
+---
+title: "Análise Ambiental"
+subtitle: "Morfopedologia e Processos <br> Relevo-Solo-Água"
+author: "Luiz Diego Vidal Santos"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise Ambiental | Morfopedologia"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    navigation-mode: linear
+    scrollable: true
+    width: 1280
+    height: 720
+    margin: 0.04
+    css: ../../../assets/custom.css
+    include-after-body:
+      - ../../../assets/image-lightbox.html
+      - ../../../assets/progress-bar.html
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Relações relevo-solo-cobertura vegetal
+- [2]{.circle} Drenagem e declividade
+- [3]{.circle} Processos erosivos
+- [4]{.circle} Movimentos de massa
+- [5]{.circle} Assoreamento
+- [6]{.circle} Fragilidade ambiental
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Compreender as relações entre relevo, solos, cobertura vegetal e processos erosivos como base para a leitura morfopedológica da fragilidade ambiental.
+:::
+:::
+:::
+
+# [1  -  RELEVO, SOLO E COBERTURA]{.section-header}
+
+## A leitura morfopedológica {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### O que é morfopedologia
+
+- Abordagem que articula **geomorfologia + pedologia + cobertura vegetal + hidrologia** numa unidade interpretativa.
+- Origem francesa (Tricart, Kilian); apropriação brasileira por Castro e Salomão, Casseti, Cunha & Guerra.
+- Foco: **vertente** como unidade-cenário dos processos.
+
+### Vertente como unidade
+
+| Setor da vertente | Atributos típicos |
+|-------------------|------------------|
+| Topo / interflúvio | Solos profundos, latossólicos, baixa declividade |
+| Meia-encosta | Argissolos / Neossolos, declividade média/alta |
+| Sopé / baixa vertente | Cambissolos, Gleissolos, alta umidade |
+| Planície aluvial | Sedimentos, nível freático raso, APP |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Cobertura vegetal e proteção do solo**
+
+- **Dossel**: dissipa energia cinética da chuva.
+- **Serrapilheira**: protege contra impacto direto e mantém umidade.
+- **Sistema radicular**: agrega o solo, fornece coesão adicional (Aula 14).
+- **Matéria orgânica**: estrutura solo, sustenta microbiota, retem água (Aula 12).
+
+A supressão da cobertura **rompe** essa sequência funcional e desencadeia erosão acelerada.
+:::
+:::
+:::
+
+---
+
+## Drenagem, declividade e suscetível à erosão {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Classes de declividade (EMBRAPA, 2018)
+
+| Classe | Declividade | Aptidão |
+|--------|:-----------:|---------|
+| Plano | 0–3% | Mecanização plena |
+| Suave ondulado | 3–8% | Mecanização com restrições |
+| Ondulado | 8–20% | Cultivo com práticas conservacionistas |
+| Forte ondulado | 20–45% | Pastagem, silvicultura, frutíferas |
+| Montanhoso | 45–75% | Proteção, reflorestamento |
+| Escarpado | > 75% | Proteção integral |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Erosividade e erodibilidade**
+
+- **Erosividade da chuva (R)** — capacidade da chuva de causar erosão (MJ·mm·ha⁻¹·h⁻¹·ano⁻¹).
+- **Erodibilidade do solo (K)** — susceptibilidade intrínseca do solo (Mg·h·MJ⁻¹·mm⁻¹).
+- **MUSLE / RUSLE**: $A = R \cdot K \cdot LS \cdot C \cdot P$.
+
+> A combinação **R × K × LS** define a **fragilidade potencial**; **C × P** introduzem a ação antrópica e produzem a **fragilidade emergente** (Aula 9).
+:::
+:::
+:::
+
+# [2  -  PROCESSOS E FRAGILIDADE]{.section-header}
+
+## Processos erosivos e movimentos de massa {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tipologia das feições erosivas (IPT/Embrapa)
+
+| Feição | Profundidade | Indicador de evolução |
+|--------|:------------:|----------------------|
+| **Splash** (gotej.) | mm | Selamento, perda superficial |
+| **Laminar** | mm–cm | Truncamento de horizontes A |
+| **Sulcos** | cm | Concentração do escoamento |
+| **Ravinas** | 0,1–1 m | Incisão avançada, recuperação ainda viável |
+| **Voçorocas** | > 1 m | Atinge lençol freático, processo regressivo |
+
+: {.striped .hover}
+
+### Movimentos de massa
+
+| Tipo | Característica |
+|------|----------------|
+| Rastejo | Lento, contínuo, sem superfície definida |
+| Escorregamento | Plano de ruptura definido, evento rápido |
+| Queda de blocos | Vertentes íngremes, desabamento livre |
+| Corrida (debris flow) | Massa fluida com alta capacidade de transporte |
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Assoreamento e fragilidade**
+
+- Sedimentos erodidos são transportados e depositados em **canais, reservatórios e planícies**.
+- Reduz volume útil, eleva risco de cheia, degrada qualidade da água.
+- Indicadores de campo: barras arenosas em canal, soterramento de margens, mortandade de mata ciliária.
+
+### Síntese morfopedológica
+
+A caracterização morfopedológica produz a **carta de fragilidade ambiental** (Aula 9) ao cruzar:
+
+- Declividade
+- Tipo de solo (K)
+- Cobertura/uso da terra (C × P)
+- Pluviosidade (R)
+- Densidade de drenagem
+:::
+:::
+:::
+
+# [Referências]{.section-header}
+
+## Bibliografia da aula {.smaller-text}
+
+- GUERRA, A. J. T. Geomorfologia e planejamento ambiental: conceitos e aplicações. **Revista Brasileira de Geomorfologia**, 2018.
+- CASSETI, V. **Geomorfologia**. Goiânia: UFG, 2007.
+- ROSS, J. L. S. **Ecogeografia do Brasil**: subsídios para planejamento ambiental. São Paulo: Oficina de Textos, 2006.

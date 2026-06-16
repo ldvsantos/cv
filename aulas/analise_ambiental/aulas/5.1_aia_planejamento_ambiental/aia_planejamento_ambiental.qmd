@@ -1,0 +1,230 @@
+---
+title: "Análise Ambiental"
+subtitle: "Avaliação de Impacto Ambiental <br> e Planejamento Ambiental"
+author: "Luiz Diego Vidal Santos"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise Ambiental | AIA e Planejamento"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    navigation-mode: linear
+    scrollable: true
+    width: 1280
+    height: 720
+    margin: 0.04
+    css: ../../../assets/custom.css
+    include-after-body:
+      - ../../../assets/image-lightbox.html
+      - ../../../assets/progress-bar.html
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Diagnóstico ambiental
+- [2]{.circle} Prognóstico
+- [3]{.circle} Identificação de impactos
+- [4]{.circle} Medidas mitigadoras
+- [5]{.circle} Medidas compensatórias
+- [6]{.circle} Programas de monitoramento
+- [7]{.circle} Recuperação ambiental
+- [8]{.circle} Entrega do Estudo Orientado nº 4
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Apresentar a Avaliação de Impacto Ambiental (AIA) como instrumento do planejamento ambiental, articulando diagnóstico, prognóstico, medidas mitigadoras/compensatórias e programas de monitoramento.
+:::
+:::
+:::
+
+# [1  -  AIA NO PLANEJAMENTO AMBIENTAL]{.section-header}
+
+## O que é a AIA {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Definição e funções
+
+- **AIA** (Sánchez, 2013): conjunto de procedimentos voltados a **prever**, **analisar** e **comunicar** as consequências ambientais prováveis de uma ação proposta.
+- Funções:
+  - **Técnica** — identificar e quantificar impactos.
+  - **Decisória** — subsidiar autorização ou negação do projeto.
+  - **De negociação** — estabelecer medidas mitigadoras e compensatórias.
+  - **De aprendizado social** — produzir conhecimento territorial público.
+
+### Marco regulatório (Brasil)
+
+| Norma | Conteúdo |
+|-------|----------|
+| Lei 6.938/1981 | PNMA, institui AIA como instrumento |
+| Res. CONAMA 01/1986 | Define impacto e exige EIA/RIMA |
+| Res. CONAMA 237/1997 | Procedimentos do licenciamento (LP/LI/LO) |
+| LC 140/2011 | Competências federativas |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Tipos de estudos**
+
+| Estudo | Quando se aplica |
+|--------|------------------|
+| **EIA/RIMA** | Atividades de **significativo** impacto |
+| **RAS / RCA** | Atividades de médio porte (varia por UF) |
+| **PRAD** | Recuperação de áreas degradadas |
+| **PBA** | Programas Básicos Ambientais (cumprimento de condicionantes da LP) |
+| **AAE** | Avaliação Ambiental Estratégica (planos e políticas) |
+
+: {.striped .hover}
+
+> A AAE atua em escala mais ampla (programas), enquanto o EIA atua em escala de projeto.
+:::
+:::
+:::
+
+---
+
+## Diagnóstico e prognóstico {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Diagnóstico ambiental
+
+Caracterização do estado de referência (cenário **sem** o empreendimento) em três meios:
+
+| Meio | Componentes |
+|------|-------------|
+| **Físico** | Clima, geologia, geomorfologia, solos, hidrologia, hidrogeologia, qualidade do ar e da água |
+| **Biótico** | Flora, fauna terrestre e aquática, ecossistemas, espécies ameaçadas |
+| **Antrópico** | População, atividades econômicas, patrimônio cultural, infraestrutura, governança |
+
+: {.striped .hover}
+
+### Escalas
+
+- **Área de Influência Direta (AID)** — impacto pode ser causalmente atribuído.
+- **Área de Influência Indireta (AII)** — efeitos secundários e sistêmicos.
+- **Área Diretamente Afetada (ADA)** — área física do empreendimento.
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Prognóstico**
+
+Projeção do estado ambiental em dois cenários:
+
+- **Sem o empreendimento** (tendência atual).
+- **Com o empreendimento** (em uma ou mais alternativas locacionais/tecnológicas).
+
+A diferença entre cenários = **impacto previsto**.
+:::
+:::
+:::
+
+# [2  -  IMPACTOS, MITIGAÇÃO, MONITORAMENTO]{.section-header}
+
+## Identificação e avaliação de impactos {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Métodos de identificação
+
+| Método | Característica |
+|--------|----------------|
+| **Lista de verificação** (*checklist*) | Verifica impactos pré-listados |
+| **Matriz de interação** (Leopold) | Cruza ações × fatores ambientais |
+| **Diagrama de fluxos / redes de interação** | Visualiza encadeamentos causais |
+| **Sobreposição cartográfica** (overlay/SIG) | Identifica conflitos espaciais |
+| **Modelos quantitativos** | Disp. de poluição, hidrológicos, MUSLE |
+
+: {.striped .hover}
+
+### Atributos do impacto (CONAMA 01/86)
+
+Natureza, magnitude, abrangência, duração, reversibilidade, sinergia, cumulatividade.
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Hierarquia da mitigação** (BBOP/CSBI)
+
+1. **Evitar** — redesenhar o projeto.
+2. **Minimizar** — reduzir intensidade.
+3. **Restaurar** — reabilitar no local.
+4. **Compensar** — fora do local, em equivalência ecológica.
+
+> Compensação é **último recurso**, não atalho.
+
+### Medidas mitigadoras típicas
+
+| Categoria | Exemplo |
+|-----------|---------|
+| Construtivas | Cortinas de drenagem, sed-traps |
+| Operacionais | Programa de educação ambiental, gestão de resíduos |
+| Compensatórias | UCs (SNUC), pagamento por serviços ambientais |
+| Reparadoras | PRAD, recomposição de APP |
+:::
+:::
+:::
+
+---
+
+## Monitoramento e PBA {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+### Plano de Monitoramento
+
+- Indicadores específicos para cada impacto previsto.
+- **Linha de base** estabelecida antes da implantação (Aula 11).
+- Frequência compatível com a dinâmica do processo monitorado.
+- Limiares de alerta e de ação corretiva.
+
+### Programas Básicos Ambientais (PBA)
+
+Detalham as condicionantes da LP. Exemplos típicos:
+
+- Programa de Gestão Ambiental (PGA)
+- Programa de Comunicação Social (PCS)
+- Programa de Educação Ambiental (PEA)
+- Programa de Recuperação de Áreas Degradadas (PRAD)
+- Programa de Monitoramento da Qualidade da Água
+- Programa de Monitoramento de Fauna e Flora
+- Programa de Gerenciamento de Riscos (PGR)
+:::
+
+::: {.column width="45%"}
+::: {.info-box}
+**Estudo Orientado nº 4**
+
+Selecionar um EIA/RIMA público (SIBE/IBAMA ou órgão estadual) e identificar:
+
+1. Áreas de influência (ADA, AID, AII).
+2. Trinta principais impactos previstos.
+3. Lacunas no diagnóstico ambiental.
+4. Coerência da hierarquia de mitigação.
+5. Adequação do plano de monitoramento.
+:::
+:::
+:::
+
+# [Referências]{.section-header}
+
+## Bibliografia da aula {.smaller-text}
+
+- SÁNCHEZ, L. E. **Avaliação de impacto ambiental**: conceitos e métodos, cap. 7. 2. ed. São Paulo: Oficina de Textos, 2013.
+- BRASIL/MMA. **Procedimentos de licenciamento ambiental do Brasil**. Brasília: MMA, 2016.

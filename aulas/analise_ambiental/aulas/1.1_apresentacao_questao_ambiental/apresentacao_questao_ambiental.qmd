@@ -1,0 +1,269 @@
+---
+title: "Análise Ambiental"
+subtitle: "Apresentação da Disciplina e <br> Questão Ambiental Contemporânea"
+author: "Luiz Diego Vidal Santos"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise Ambiental | Apresentação"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    navigation-mode: linear
+    scrollable: true
+    width: 1280
+    height: 720
+    margin: 0.04
+    css: ../../../assets/custom.css
+    include-after-body:
+      - ../../../assets/image-lightbox.html
+      - ../../../assets/progress-bar.html
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Visão Geral da Aula {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Tópicos
+
+- [1]{.circle} Apresentação da disciplina, ementa e plano de trabalho
+- [2]{.circle} Crise ambiental contemporânea
+- [3]{.circle} Degradação dos solos e escassez hídrica
+- [4]{.circle} Mudanças no uso da terra
+- [5]{.circle} Planejamento ambiental
+- [6]{.circle} Papel da Geografia na análise integrada
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Aula**
+
+Apresentar o componente curricular e situar a análise ambiental no horizonte da crise ambiental contemporânea, demarcando o papel da Geografia na leitura integrada das relações sociedade-natureza.
+:::
+:::
+:::
+
+# [1  -  APRESENTAÇÃO DA DISCIPLINA]{.section-header}
+
+## O componente curricular {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Dados gerais
+
+| Item | Detalhe |
+|------|---------|
+| **Disciplina** | Análise Ambiental |
+| **Carga horária** | 64 h (16 encontros) |
+| **Período** | 2026.2 |
+| **Modalidade** | Presencial |
+| **Avaliações** | 1ª Teórica (Sem. 10) + 2ª Prática (Sem. 16) + 4 Estudos Orientados |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Por que Análise Ambiental?**
+
+Analisar o ambiente é articular **meio físico**, **meio biótico** e **meio antrópico** em diferentes **escalas espaço-temporais**, gerando:
+
+- **Diagnóstico** (estado atual)
+- **Prognóstico** (tendência)
+- **Proposição** (intervenção)
+
+A análise ambiental fundamenta AIA, planos de bacia, ZEE, PRAD e licenciamento.
+:::
+:::
+:::
+
+---
+
+## Estrutura do semestre {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Três blocos temáticos
+
+| Bloco | Aulas | Foco |
+|:-----:|:-----:|------|
+| **I — Fundamentos** | 1–5 | Sociedade-natureza, conceitos, AIA |
+| **II — Análise integrada** | 6–10 | Bacias, morfopedologia, geossistemas + 1ª Avaliação |
+| **III — Indicadores e intervenção** | 11–16 | Qualidade do solo, degradação, bioengenharia, legislação |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Estudos Orientados (1 a 4)**
+
+Leituras dirigidas (LEFF, PORTO-GONÇALVES, MENDONÇA, SÁNCHEZ) com fichamento estruturado:
+
+1. Contexto e tese central
+2. Conceitos operacionais
+3. Aplicação ao território de estudo
+4. Crítica e síntese
+:::
+:::
+:::
+
+# [2  -  CRISE AMBIENTAL CONTEMPORÂNEA]{.section-header}
+
+## Antropoceno e Limites Planetários {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Marco conceitual
+
+- **Antropoceno** (Crutzen & Stoermer, 2000): proposta de nova época geológica em que a ação humana se tornou força geomorfológica e biogeoquímica dominante.
+- **Grande Aceleração** (pós-1950): aumento exponencial de população, energia, GEE, fertilizantes, perda florestal e consumo hídrico.
+- **Limites Planetários** (Rockström *et al.*, 2009; Steffen *et al.*, 2015): nove fronteiras de segurança operacional do sistema Terra.
+
+### Limites já ultrapassados
+
+- Mudança climática
+- Integridade da biosfera
+- Ciclo do nitrogênio e do fósforo
+- Mudança no uso da terra
+- Novas entidades químicas
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Da crise global à crise territorial**
+
+A crise se manifesta em diferentes escalas:
+
+| Escala | Manifestação |
+|--------|--------------|
+| Global | Aquecimento, perda de biodiversidade, acidificação dos oceanos |
+| Regional | Desertificação, escassez hídrica, queimadas |
+| Local | Erosão, voçorocas, assoreamento, contaminação do solo e da água |
+
+: {.striped .hover}
+
+> A Análise Ambiental opera predominantemente nas escalas **regional** e **local**, mas sempre referidas ao contexto global.
+:::
+:::
+:::
+
+---
+
+## Degradação dos solos e escassez hídrica {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Degradação do solo no Brasil
+
+- ~30% dos solos cultivados apresentam algum grau de degradação física, química ou biológica (Embrapa, FAO/GLASOD).
+- Erosão hídrica subtrai bilhões de toneladas de solo/ano, com perdas de C, N, P e cátions trocáveis.
+- **Áreas susceptíveis à desertificação (ASD)** no Semiárido nordestino: ~1,3 milhão de km² (PAN-Brasil, MMA).
+- **Compactação**, **selamento superficial** e **perda de matéria orgânica** reduzem infiltração e elevam o escoamento.
+:::
+
+::: {.column width="50%"}
+### Escassez hídrica
+
+| Vetor | Manifestação |
+|-------|--------------|
+| **Climático** | Secas plurianuais (NE), eventos extremos |
+| **Estrutural** | Distribuição assimétrica (densidade hidrográfica × demanda) |
+| **Antrópico** | Sobreoutorga, perdas em reservatórios, contaminação difusa |
+| **Paisagístico** | Perda de cobertura, drenagem rápida, assoreamento |
+
+: {.striped .hover}
+
+::: {.info-box}
+A hidrologia é uma **expressão integrada da paisagem**: solo, relevo, vegetação e uso da terra modulam infiltração, escoamento e recarga.
+:::
+:::
+:::
+
+---
+
+## Mudanças no uso da terra {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Vetores principais (Brasil)
+
+- Expansão da fronteira agropecuária (Cerrado, MATOPIBA, Amazônia)
+- Substituição de pastagens nativas por monocultivos
+- Conversão de Caatinga para agricultura irrigada e mineração
+- Expansão urbana periurbana (selamento, ilhas de calor)
+- Mineração industrial e garimpo
+
+### Consequências paisagísticas
+
+- Fragmentação de habitat (Aula 9)
+- Perda de conectividade hidrossedimentológica (Aula 7)
+- Redução do estoque de carbono no solo (Aula 12)
+- Aumento das feições erosivas (Aula 13)
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Bases de monitoramento livres**
+
+| Base | O que oferece |
+|------|---------------|
+| **MapBiomas** | Coleções anuais de uso/cobertura desde 1985 (Brasil e países da Pan-Amazônia) |
+| **PRODES/DETER (INPE)** | Desmatamento Amazônia/Cerrado |
+| **TerraClass** | Tipologia de uso pós-desmatamento |
+| **SICAR** | Cadastro Ambiental Rural |
+| **ANA/SNIRH** | Outorgas, séries hidrológicas, qualidade da água |
+
+: {.striped .hover}
+:::
+:::
+:::
+
+# [3  -  PAPEL DA GEOGRAFIA]{.section-header}
+
+## Geografia e análise integrada {.smaller-text}
+
+::: {.columns}
+::: {.column width="55%"}
+A Geografia oferece um **olhar integrador** para a questão ambiental porque opera sobre três entradas simultâneas:
+
+1. **Espacialidade** — o ambiente se distribui de modo heterogêneo no território.
+2. **Temporalidade** — processos têm dinâmica (anos a milênios) e herança.
+3. **Relação sociedade-natureza** — os elementos do ambiente se realizam como objetos sociais (apropriação, regulação, conflito).
+
+### Categorias-chave que estruturarão a disciplina
+
+- **Ambiente** — totalidade física, biótica e socioespacial em interação (Aula 4)
+- **Paisagem** — expressão integrada e visível dessas relações (Aulas 3, 9)
+- **Território** — ambiente apropriado, normatizado, gestado (Aula 3)
+- **Bacia hidrográfica** — unidade analítica privilegiada (Aula 7)
+:::
+
+::: {.column width="45%"}
+::: {.info-box}
+**Atribuição do(a) analista ambiental**
+
+| Função | Produto |
+|--------|---------|
+| Caracterizar | Mapas temáticos, perfis, séries |
+| Diagnosticar | Carta de fragilidade, mapa de conflitos |
+| Prognosticar | Cenários, modelos de mudança |
+| Propor | Diretrizes, PRAD, PBA, ZEE |
+| Monitorar | Indicadores e protocolos de campo |
+
+: {.striped .hover}
+:::
+:::
+:::
+
+# [Referências]{.section-header}
+
+## Bibliografia da aula {.smaller-text}
+
+- LEFF, E. **Epistemologia ambiental**, cap. 2: Interdisciplinaridade, ambiente e desenvolvimento sustentável. São Paulo: Cortez, 2001.
+- PORTO-GONÇALVES, C. W. **Os (des)caminhos do meio ambiente**. São Paulo: Contexto, 2006.

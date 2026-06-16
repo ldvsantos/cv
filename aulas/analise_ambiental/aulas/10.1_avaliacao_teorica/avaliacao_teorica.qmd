@@ -1,0 +1,162 @@
+---
+title: "Análise Ambiental"
+subtitle: "Avaliação Teórica (Prova Escrita Dissertativa)"
+author: "Luiz Diego Vidal Santos"
+format:
+  revealjs:
+    logo: ../../../assets/logo-uefs.webp
+    footer: "UEFS | Análise Ambiental | 1ª Avaliação Teórica"
+    slide-number: true
+    theme: [simple, ../../../assets/uefs.scss]
+    controls: true
+    navigation-mode: linear
+    scrollable: true
+    width: 1280
+    height: 720
+    margin: 0.04
+    css: ../../../assets/custom.css
+    include-after-body:
+      - ../../../assets/image-lightbox.html
+      - ../../../assets/progress-bar.html
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+execute:
+  echo: false
+---
+
+## Avaliação Teórica {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Eixos avaliados
+
+- [1]{.circle} Questão ambiental e sociedade-natureza
+- [2]{.circle} Geografia socioambiental
+- [3]{.circle} Conceitos de análise ambiental
+- [4]{.circle} AIA e planejamento
+- [5]{.circle} Bacias hidrográficas
+- [6]{.circle} Morfopedologia
+- [7]{.circle} Geossistemas, ecodinâmica e fragilidade
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Objetivo da Avaliação**
+
+Verificar a integração dos conteúdos das Aulas 1 a 9 por meio de questões dissertativas que articulem fundamentação teórica e operacionalização conceitual em análise ambiental.
+:::
+:::
+:::
+
+# [Instruções e Critérios]{.section-header}
+
+## Estrutura da prova {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Formato
+
+- **Tipo**: dissertativa individual, sem consulta.
+- **Duração**: 3 h.
+- **Questões**: 5 (de 8 propostas, escolher 5).
+- **Distribuição**: cada questão vale 2,0 pontos (total 10,0).
+- **Extensão máxima**: 25 linhas por questão.
+
+### Critérios de correção
+
+| Critério | Peso |
+|----------|:----:|
+| Domínio conceitual | 0,5 |
+| Articulação entre autores e abordagens | 0,5 |
+| Aplicação ao território (caso real) | 0,5 |
+| Clareza e organização textual | 0,3 |
+| Uso adequado de evidências e dados | 0,2 |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Eixos avaliados**
+
+1. Modernidade e questão ambiental (Aulas 1-2)
+2. Geografia socioambiental (Aula 3)
+3. Conceitos operacionais (Aula 4)
+4. AIA e planejamento (Aula 5)
+5. Bacia hidrográfica e análise integrada (Aulas 6-7)
+6. Morfopedologia (Aula 8)
+7. Geossistemas, ecodinâmica e fragilidade (Aula 9)
+:::
+:::
+:::
+
+---
+
+## Roteiro de estudo {.smaller-text}
+
+::: {.columns}
+::: {.column width="50%"}
+### Conceitos-chave
+
+| Conceito | Autor de referência |
+|----------|---------------------|
+| Apropriação e conflitos | Porto-Gonçalves; Acselrad |
+| Geografia socioambiental | Mendonça |
+| Impacto e medidas | Sánchez |
+| Geossistema | Bertrand |
+| Ecodinâmica | Tricart |
+| Fragilidade | Ross |
+| Bacia hidrográfica | Botelho & Silva; Christofoletti |
+| Morfopedologia | Castro & Salomão; Casseti |
+
+: {.striped .hover}
+:::
+
+::: {.column width="50%"}
+::: {.info-box}
+**Sugestões de estudo**
+
+1. Releia os fichamentos dos Estudos Orientados 1–4.
+2. Reorganize as cartas conceituais das aulas em mapa mental único.
+3. Pratique a articulação em dois eixos:
+   - **Concepção** (autor, conceito, contexto)
+   - **Aplicação** (caso real, dado, problema territorial)
+4. Lembre-se: a prova privilegia **articulação** sobre repetição memorística.
+:::
+:::
+:::
+
+---
+
+## Exemplos de questões {.smaller-text}
+
+::: {.info-box}
+**Exemplo 1 — articulando conceitos**
+
+A partir de Mendonça (2001) e Bertrand (2004), discuta como a abordagem socioambiental e a abordagem geossistêmica se complementam para a Análise Ambiental, exemplificando com um caso do território baiano.
+:::
+
+::: {.highlight-box}
+**Exemplo 2 — aplicação**
+
+Selecione uma sub-bacia hipotética com declividades de 20–45%, solos rasos e pastagem extensiva. Aplique o método de fragilidade ambiental (Ross, 1994) descrevendo: variantes potencial e emergente, classificação esperada e implicações para a recomendação de uso.
+:::
+
+::: {.info-box}
+**Exemplo 3 — crítica**
+
+A Res. CONAMA 01/1986 define impacto como alteração decorrente de ação humana. Em que medida essa definição capta (ou não) impactos **cumulativos** e **sinérgicos** discutidos por Sánchez (2013)? Que implicações essa lacuna tem para o licenciamento de múltiplos empreendimentos numa mesma bacia?
+:::
+
+# [Referências]{.section-header}
+
+## Bibliografia de revisão {.smaller-text}
+
+- LEFF, E. **Epistemologia ambiental**. São Paulo: Cortez, 2001.
+- PORTO-GONÇALVES, C. W. **Os (des)caminhos do meio ambiente**. São Paulo: Contexto, 2006.
+- MENDONÇA, F. Geografia socioambiental. **Terra Livre**, n. 16, p. 113-132, 2001.
+- SÁNCHEZ, L. E. **Avaliação de impacto ambiental**: conceitos e métodos. 2. ed. São Paulo: Oficina de Textos, 2013.
+- BERTRAND, G. Paisagem e geografia física global: esboço metodológico. **RA'E GA**, v. 8, 2004. DOI: [10.5380/raega.v8i0.3389](https://doi.org/10.5380/raega.v8i0.3389).
+- TRICART, J. **Ecodinâmica**. Rio de Janeiro: IBGE, 1977.
+- ROSS, J. L. S. Análise empírica da fragilidade dos ambientes naturais e antropizados. **Revista do Departamento de Geografia**, v. 8, 1994. DOI: [10.7154/RDG.1994.0008.0006](https://doi.org/10.7154/RDG.1994.0008.0006).
